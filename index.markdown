@@ -1,9 +1,10 @@
 
-* Intro
-* Properties
-    * Properties of Money
-    * Peer-to-peer Electronic Cash
-* Better currency
+* Why this book (Intro)
+* ELI5 (10 min version)
+* What is a cryptocurrency?
+    * Peer-to-peer electronic cash
+    * Properties of money
+* A better currency
     * The charity EatBCH feeds Venezuelans
     * Protection against hyperinflation in Venezuela
     * India voids 500 and 1000 rupee bills
@@ -19,4 +20,5 @@
     * Decentralized-ish voting
     * Uncensorable Twitter
     * Tokens
+    * Decentralized storage?
 
