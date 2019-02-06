@@ -1,11 +1,12 @@
 # Why this book
 
+
 Whenever the topic of cryptocurrencies&mdash;where Bitcoin and Ethereum are the most known&mdash;come up in conversations they're almost always not understood or dismissed.
 
 Arguments mostly come in one of these forms:
 
 * It's just a scam
-* It's just a speculative craze like Beanies[^beanies] or tulips[^tulips]
+* It's just a speculative bubble like Beanie Babies[^beanies] or the Tulip mania[^tulips]
 * It's an environmental disaster
 * They don't do anything better than other payment systems like PayPal or VISA
 * There's no legal use case
@@ -25,11 +26,19 @@ Finally it's not about any specific implementation. Bitcoin is the first cryptoc
 And of course none of this is investment advice.
 
 
-[^beanies]: Beanie babies? And how we can draw the connection to cryptos.
+[^beanies]: How does it relate to cryptos?
+
+    At it's height people would sell&mdash;and buy&mdash;these toys at 10x their original price and was responsible for 10% of eBay's sales. The creator was at one point one of the richest men in the world.
+
+    <https://en.wikipedia.org/wiki/Beanie_Babies>
+
+    <http://fortune.com/2015/03/11/beanie-babies-failure-lessons/>
 
 [^tulips]: Describe tulip fever and how it relates to cryptocurrencies.
 
     Although commonly refered to it wasn't as bad as it's often portrayed as. But it was still quite bad.
+
+    <https://en.wikipedia.org/wiki/Tulip_mania>
 
 [^cryptos]: Although there are hundreds and perhaps thousands most are just copies or outright scams. Be safe out there.
 
