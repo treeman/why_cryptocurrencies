@@ -3,6 +3,10 @@
 
 <http://money.visualcapitalist.com/infographic-the-properties-of-money/>
 
+Anything that fulfills these properties can be considered as money[^wikipedia]
+
+# Functions
+
 ## Medium of Exchange
 
 * **Definition**: Can be used to intermediate the exchange of goods and services.
@@ -21,6 +25,8 @@
 * **Use**: Can be spent or exchanged at a later date without penalty.
 * **Example**: An ounce of gold could buy a toga in Roman times, yet it can still buy a nice suit today.
 
+# Properties
+
 In other words:
 
 1. **Divisible**: Can be divided into smaller units of value.
@@ -32,3 +38,22 @@ In other words:
 1. **Limited in Supply**: The supply of money in circulation ensures values remain relatively constant.
 
 
+Fiat money doesn't derive it's value from use as a physical commodity but from being declared by a government to be legal tender. That is it must be accepted as a form of payment within the boundaries of the country for all debts, public and private.
+
+
+# Is cryptocurrencies money?
+
+Some countries&emdash;[like Sweden][skatt-bitcoin]&emdash;have ruled that Bitcoin isn't a currency because there is no responsible issuer and not a legal tender in any country.
+
+[^wikipedia]: <https://en.wikipedia.org/wiki/Money>
+
+[skatt-bitcoin]: <https://www4.skatteverket.se/rattsligvagledning/373946.html?date=2018-12-17> "Swedish link: Skatteverket divestment of Bitcoin (2018-12-17)"
+
+
+Ruled tax free (no VAT) in 2015:
+https://www.ibtimes.com/bitcoin-exchanges-ruled-tax-free-top-european-court-2151805
+http://curia.europa.eu/juris/document/document.jsf?text=&docid=170305&pageIndex=0&doclang=en&mode=req&dir=&occ=first&part=1&cid=604646
+
+
+
+http://money.visualcapitalist.com/what-is-money-infographic/
