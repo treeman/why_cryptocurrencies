@@ -42,3 +42,7 @@ And of course none of this is investment advice.
 
 [^cryptos]: Although there are hundreds and perhaps thousands most are just copies or outright scams. Be safe out there.
 
+# How to read this book
+
+
+

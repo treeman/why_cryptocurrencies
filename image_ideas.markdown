@@ -11,3 +11,5 @@ More:
 * The bank has IOUs to a person
 * Maybe explain how the global ledger tracks the balance of all transactions
 
+* Example of money historically
+

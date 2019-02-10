@@ -1,4 +1,28 @@
-# Properties of money
+# Properties of money (or, what is money?)
+
+There aren't any hard rules for what money is. This is perhaps surprising but if we look at what has been used as money historically we see things like:
+
+* Many different kinds of coins
+* A 20kg copper coin: <https://www.riksbank.se/en-gb/about-the-riksbank/history/1600-1699/the-worlds-largest-coin/>
+* Rai stones: <https://en.wikipedia.org/wiki/Rai_stones>
+* Beaver pelts
+* Cigarettes in prison
+* Rubber bands on the school yard
+* Dollar notes
+* Gold bars
+* Sea shells
+
+What is money changes depending on both time and place.
+
+Money is actually a social construct. (expand on this...)
+<https://thesocietypages.org/socimages/2014/04/24/money-as-a-social-construction/>
+<https://hackernoon.com/money-is-a-social-construct-and-thats-why-you-should-run-a-bitcoin-full-node-ea0330cb69a5?gi=257add0b9b0b>
+
+This raises some interesting questions:
+
+* Can anything be used as money?
+* Are there "good" and "bad" forms of money?
+
 
 
 <http://money.visualcapitalist.com/infographic-the-properties-of-money/>
@@ -45,6 +69,8 @@ Fiat money doesn't derive it's value from use as a physical commodity but from b
 
 Some countries&emdash;[like Sweden][skatt-bitcoin]&emdash;have ruled that Bitcoin isn't a currency because there is no responsible issuer and not a legal tender in any country.
 
+Others have ruled in favor of Bitcoin as a currency. For example [EU ruled][] that cryptocurrency exchanges doesn't require VAT and are tax free.
+
 [^wikipedia]: <https://en.wikipedia.org/wiki/Money>
 
 [skatt-bitcoin]: <https://www4.skatteverket.se/rattsligvagledning/373946.html?date=2018-12-17> "Swedish link: Skatteverket divestment of Bitcoin (2018-12-17)"
@@ -57,3 +83,6 @@ http://curia.europa.eu/juris/document/document.jsf?text=&docid=170305&pageIndex=
 
 
 http://money.visualcapitalist.com/what-is-money-infographic/
+
+
+

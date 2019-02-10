@@ -6,6 +6,8 @@ Is the title of the Bitcoin whitepaper where Bitcoin's anonymous creator Satoshi
 
 The important difference between a cryptocurrency and digital payments we have today is not having to trust a third party. Payments are peer-to-peer just as if you gave someone a bill or a gold coin. Sending money to people via your bank is not peer-to-peer as you rely on your bank to send it for you. VISA, PayPal, Swish, Apple Pay and any other digital payments have the same problem except cryptocurrencies.
 
+Transfers are therefore **permissionless** and **trustless**.
+
 Additionally digital money isn't like cash where you alone have possession. What you really have is an IOU from the bank where they promise to give you your money when ask for it. You cannot stuff the IOU in a mattress and have complete control of your money. But this is possible with a cryptocurrency&emdash;you can write down your keys to your wallet and store it wherever you want.[^keys]
 
 <https://coincentral.com/byzantine-generals-problem/>
