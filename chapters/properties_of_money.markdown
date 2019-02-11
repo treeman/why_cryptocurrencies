@@ -8,9 +8,10 @@ There aren't any hard rules for what money is. This is perhaps surprising but if
 * Beaver pelts
 * Cigarettes in prison
 * Rubber bands on the school yard
-* Dollar notes
+* Dollar bills
 * Gold bars
 * Sea shells
+(images of the above)
 
 What is money changes depending on both time and place.
 
@@ -18,11 +19,73 @@ Money is actually a social construct. (expand on this...)
 <https://thesocietypages.org/socimages/2014/04/24/money-as-a-social-construction/>
 <https://hackernoon.com/money-is-a-social-construct-and-thats-why-you-should-run-a-bitcoin-full-node-ea0330cb69a5?gi=257add0b9b0b>
 
+Therefore it's more illuminating to look at how money is used. Many economists and experts agree that money is a:
+
+* Medium of exchange
+* Unit of account
+* Store of value
+(images of the above? with explanations)
+
+(Should we give examples?)
+
+
 This raises some interesting questions:
 
 * Can anything be used as money?
 * Are there "good" and "bad" forms of money?
 
+To fulfil the above functions money should therefore be:
+
+1. **Divisible**: Can be divided into smaller units of value.
+1. **Fungible**: One unit is viewed as interchangeable with another.
+1. **Portable**: Individuals can carry money with them and transfer it to others.
+1. **Durable**: An item must be able to withstand being used repeatedly.
+1. **Acceptable**: Everyone must be able to use the money for transactions.
+1. **Uniform**: All versions of the same denomination must have the same purchasing power.
+1. **Limited in Supply**: The supply of money in circulation ensures values remain relatively constant.
+
+(Go through the above money examples and see how they hold up)
+
+## Divisible
+
++ Cigarettes can be divided into packs and individual cigarettes.
+
+= Gold bars can be split into smaller bars or coins. Coins usually come in different denominations. Although you run into trouble if you don't have the correct denominations, you can't split a gold bar into coins on the street for example.
+
+- This is a problem with "barter economy". How do you pay for a single piece of bread if you can only pay with cows?
+
+## Fungible
+
+- Beaver pelts aren't very fungible. Some are of higher quality and others are of lower.
++ Fiat is fungible by law.
+
+## Portable
+
+- Take the 20kg copper coin as a ridiculous example.
+= Gold and paper money also isn't super portable. They're heavy and require a lot of space.
++ Digital money is portable. Money in your mobile phone is excellent.
+
+## Durable
+
+- Sea shells break down quickly after use.
+= Fiat coins and bills are much better but they too fade and gets ripped and needs to be replaced.
++ Gold is practically indestructible.
+
+## Acceptable
+
++ Fiat is near universal. Although movements towards a "cash free society" has deminished the usefuleness of cash in some places.
+= Gold can be seen as an international money, but you cannot use pure gold coins to buy stuff in stores.
+- School yard rubber bands only work within a small subset of students
+
+## Uniform
+
++ Fiat coins and bills. Gold in specific quantities.
+
+## Limited in supply
+
++ Gold
+= Fiat
+- Sea shells
 
 
 <http://money.visualcapitalist.com/infographic-the-properties-of-money/>
