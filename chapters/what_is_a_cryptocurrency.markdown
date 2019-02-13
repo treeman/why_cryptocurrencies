@@ -1,4 +1,6 @@
-# What is a cryptocurrency?
+---
+title: What is a cryptocurrency?
+---
 
 To be able to talk about cryptocurrencies and what value they might bring we need to at least understand what they do differently.
 

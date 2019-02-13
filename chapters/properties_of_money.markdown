@@ -1,4 +1,6 @@
-# Properties of money (or, what is money?)
+---
+title: What is money?
+---
 
 There aren't any hard rules for what money is. This is perhaps surprising but if we look at what has been used as money historically we see things like:
 

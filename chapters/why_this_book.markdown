@@ -1,5 +1,6 @@
-# Why this book
-
+---
+title: Why this book
+---
 
 Whenever the topic of cryptocurrencies&mdash;where Bitcoin and Ethereum are the most known&mdash;come up in conversations they're almost always not understood or dismissed.
 

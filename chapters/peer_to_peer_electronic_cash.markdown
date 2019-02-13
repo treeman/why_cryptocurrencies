@@ -1,4 +1,6 @@
-# Peer-to-peer electronic cash
+---
+title: Peer-to-peer electronic cash
+---
 
 "Bitcoin: A Peer-to-Peer Electronic Cash System"
 
