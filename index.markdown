@@ -6,16 +6,17 @@
     * Properties of money
 * A better currency
     * The financial crisis, bad loans and bail-outs
-    * The charity EatBCH feeds Venezuelans
-    * Protection against hyperinflation in Venezuela
+    * Borderless (The charity EatBCH feeds Venezuelans)
+    * Protection against hyperinflation (see Venezuela)
+    * Protection against government seizures (see Greece, etc?)
     * India voids 500 and 1000 rupee bills
 * Better digital payments
-    * Donations to WikiLeaks
+    * Uncensorable donations (Donations to WikiLeaks)
     * Payments to gray area businesses
     * Banking the unbanked
     * Safer & cheaper for merchants
     * Black markets
-* Other use
+* Other use (?)
     * New asset class
     * Provably fair gambling/betting
     * Decentralized-ish voting

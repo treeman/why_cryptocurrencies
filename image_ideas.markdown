@@ -10,6 +10,11 @@ Image explanations:
 More:
 * The bank has IOUs to a person
 * Maybe explain how the global ledger tracks the balance of all transactions
-
 * Example of money historically
+* Medium of exchange
+* Unit of account
+* Store of value
 
+
+Generated/plots:
+* Bitcoin's emission rate. Monero's emission rate.
