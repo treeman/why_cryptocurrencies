@@ -2,17 +2,33 @@
 title: What is money?
 ---
 
+**Legar tender**
+
 There aren't any hard rules for what money is. This is perhaps surprising but if we look at what has been used as money historically we see things like:
 
-* Many different kinds of coins
-* A 20kg copper coin: <https://www.riksbank.se/en-gb/about-the-riksbank/history/1600-1699/the-worlds-largest-coin/>
-* Rai stones: <https://en.wikipedia.org/wiki/Rai_stones>
-* Beaver pelts
-* Cigarettes in prison
-* Rubber bands on the school yard
-* Dollar bills
-* Gold bars
 * Sea shells
+    <https://en.wikipedia.org/wiki/Shell_money>
+* (1000 - 1400) Rai stones: <https://en.wikipedia.org/wiki/Rai_stones>
+* \(1644) A 20kg copper coin: <https://www.riksbank.se/en-gb/about-the-riksbank/history/1600-1699/the-worlds-largest-coin/>
+* \(19th century) Gold
+* \(1994) Cigarettes in prison
+    Shawshank redemption <https://www.imdb.com/title/tt0111161/>
+* \(21th century) Euro
+
+    ![](https://i.dailymail.co.uk/i/pix/2016/02/16/10/004918B700000258-3449097-image-a-18_1455617645563.jpg){ width=200 }  
+
+    21th century <https://www.dailymail.co.uk/news/article-3449097/Europe-prepares-scrap-500-note-saying-large-bills-help-fund-terrorism-denominations-kept-Russia.html>
+* \(2017) Marbles on the school yard "rutan"
+* Hyperinflation germany
+
+    <figure>
+      ![](https://mondrian.mashable.com/uploads%252F2016%252F7%252F26%252Fgermaninflation_16.jpg%252Ffit-in__1440x1440.jpg?signature=lxEf1wsHHE3quSjlZbFBwlnKYjg=){ width=400 }
+      <figcaption>
+        1923  
+        Children stand next to a tower of 100,000 marks, equal in value to one US dollar.  
+        Image: Bettmann/Getty Images
+      </figcaption>
+    <figure>
 (images of the above)
 
 What is money changes depending on both time and place.

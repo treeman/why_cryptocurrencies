@@ -1,0 +1,107 @@
+$century-supra: 'Century Supra';
+@font-face {
+    font-family: $century-supra;
+    src: url('/fonts/century_supra_t3_regular.woff2') format('woff2');
+    src: url('/fonts/century_supra_t3_regular.woff') format('woff');
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: $century-supra;
+    src: url('/fonts/century_supra_t3_italic.woff2') format('woff2');
+    src: url('/fonts/century_supra_t3_italic.woff') format('woff');
+    font-style: italic;
+    font-weight: normal;
+}
+@font-face {
+    font-family: $century-supra;
+    src: url('/fonts/century_supra_t3_bold.woff2') format('woff2');
+    src: url('/fonts/century_supra_t3_bold.woff') format('woff');
+    font-style: normal;
+    font-weight: bold;
+}
+@font-face {
+    font-family: $century-supra;
+    src: url('/fonts/century_supra_t3_bold_italic.woff2') format('woff2');
+    src: url('/fonts/century_supra_t3_bold_italic.woff') format('woff');
+    font-style: italic;
+    font-weight: bold;
+}
+
+$concourse: 'Concourse';
+@font-face {
+    font-family: $concourse;
+    src: url('/fonts/concourse_t3_regular.woff2') format('woff2');
+    src: url('/fonts/concourse_t3_regular.woff') format('woff');
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: $concourse;
+    src: url('/fonts/concourse_t3_italic.woff2') format('woff2');
+    src: url('/fonts/concourse_t3_italic.woff') format('woff');
+    font-style: italic;
+    font-weight: normal;
+}
+@font-face {
+    font-family: $concourse;
+    src: url('/fonts/concourse_t3_bold.woff2') format('woff2');
+    src: url('/fonts/concourse_t3_bold.woff') format('woff');
+    font-style: normal;
+    font-weight: bold;
+}
+@font-face {
+    font-family: $concourse;
+    src: url('/fonts/concourse_t3_bold_italic.woff2') format('woff2');
+    src: url('/fonts/concourse_t3_bold_italic.woff') format('woff');
+    font-style: italic;
+    font-weight: bold;
+}
+
+$hack: 'Hack';
+@font-face {
+    font-family: $hack;
+    src: url('/fonts/Hack-Regular.woff2') format('woff2');
+    src: url('/fonts/Hack-Regular.woff') format('woff');
+    font-style: normal;
+}
+@font-face {
+    font-family: $hack;
+    src: url('/fonts/Hack-Italic.woff2') format('woff2');
+    src: url('/fonts/Hack-Italic.woff') format('woff');
+    font-style: italic;
+}
+@font-face {
+    font-family: $hack;
+    src: url('/fonts/Hack-Bold.woff2') format('woff2');
+    src: url('/fonts/Hack-Bold.woff') format('woff');
+    font-style: normal;
+    font-weight: bold;
+}
+@font-face {
+    font-family: $hack;
+    src: url('/fonts/Hack-BoldItalic.woff2') format('woff2');
+    src: url('/fonts/Hack-BoldItalic.woff') format('woff');
+    font-style: italic;
+    font-weight: bold;
+}
+
+
+$serif-font-family: $century-supra, Georgia, serif;
+$sans-serif-font-family: $concourse, Helvetica, sans-serif;
+$code-font-family: $hack, monospace;
+
+
+%sans-serif {
+    text-rendering: optimizeLegibility;
+    font-family: $sans-serif-font-family;
+    font-feature-settings: "ss06" on, "onum" off, "kern" on;
+}
+
+%serif {
+    text-rendering: optimizeLegibility;
+    font-family: $serif-font-family;
+    font-feature-settings: "kern" on;
+}
+
+
