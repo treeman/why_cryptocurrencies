@@ -28,10 +28,10 @@ There aren't any hard rules for what money is. This is perhaps surprising but if
     ![](https://i.dailymail.co.uk/i/pix/2016/02/16/10/004918B700000258-3449097-image-a-18_1455617645563.jpg){ width=200 }  
 
     21th century <https://www.dailymail.co.uk/news/article-3449097/Europe-prepares-scrap-500-note-saying-large-bills-help-fund-terrorism-denominations-kept-Russia.html>
-* \(2017) Marbles on the school yard "rutan"
-(images of the above)
 * \(2013) Dogecoin
     Created as a "joke currency" it quickly gained popularity as a tipping tool online. You can still find merchants who accept it online today for things like domain names, web hosting, VPNs or games.
+* \(2017) Marbles on the school yard "rutan"
+(images of the above)
 
 What is money changes depending on both time and place.
 
