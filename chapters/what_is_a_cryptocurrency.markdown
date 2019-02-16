@@ -3,30 +3,24 @@ title: What is a cryptocurrency?
 subtitle: Peer-to-peer electronic cash
 ---
 
-* [What is money?](#)
-* [Are cryptocurrencies money?](#)
-* [How does cryptocurrencies work?](#)
-* [Properties of a cryptocurrency](#)
-* [Look out for the blockchain buzzword](#)
+If we're going to talk about cryptocurrencies and whether they're useful or not we need to know what they do. If we don't know what they do and what they are how can we tell what value they give?
 
-----
+Technical understanding of how they work is beneficial but not required to discuss their usefulness. It's enough to know what they do differently compared to alternatives and what properties they have. If you find it too hard to accept they can live up to their claims I encourage you to do further research, it's outside the scope of this book.
 
+"Digital cash" is probably the shortest description of what a cryptocurrency is. It takes properties of physical cash&mdash;coins and bills&mdash;and makes them digital:
 
-To be able to talk about cryptocurrencies and what value they might bring we need to at least understand what they do differently.
++ You don't need anyones permission when giving cash in person
++ You don't need to trust a third party to confirm payments, you just give them cash in hand
 
-In short: **Permissionless and trustless digital transfers**.
+This also applies to cryptocurrencies which you can do digitally. Additionally there's no central authority who controls it:
 
-[Peer-to-peer electronic cash](#)
++ New coins follow a fixed issuance schedule
 
-[Properties of money](#)
+That's essentially what cryptocurrencies brings to the table.
 
+* [How does cryptocurrencies work?](/how_does_cryptocurrencies_work)
+* [Properties of a cryptocurrency](/properties_of_a_cryptocurrency)
+* [Look out for snake oil](/look_out_for_the_blockchain_buzzword)
+* [What is money?](/what_is_money)
+* [Are cryptocurrencies money?](/are_cryptocurrencies_money)
 
-There are many projects who call themselves cryptocurrencies while not fulfilling the criteria. For example I don't consider these real cryptocurrencies:
-
-* Onecoin
-* Bitconnect
-* Stablecoins like [Tether][] or JP Morgan's [JPM coin][].
-
-[Byzantine fault tolerance]: https://en.wikipedia.org/wiki/Byzantine_fault_tolerance
-[Tether]: https://tether.to/
-[JPM coin]: https://decryptmedia.com/5173/jp-morgan-coin-cryptocurrency

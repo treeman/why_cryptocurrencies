@@ -1,6 +1,6 @@
 ---
-title: Peer-to-peer electronic cash
-subtitle: Peer?
+title: Properties of a cryptocurrency
+subtitle: asdf
 ---
 
 "Bitcoin: A Peer-to-Peer Electronic Cash System"
@@ -13,7 +13,6 @@ Transfers are therefore **permissionless** and **trustless**.
 
 Additionally digital money isn't like cash where you alone have possession. What you really have is an IOU from the bank where they promise to give you your money when ask for it. You cannot stuff the IOU in a mattress and have complete control of your money. But this is possible with a cryptocurrency&emdash;you can write down your keys to your wallet and store it wherever you want.[^keys]
 
-<https://coincentral.com/byzantine-generals-problem/>
 
 Cryptocurrencies have some other features as well:
 
@@ -54,4 +53,3 @@ Move to next section?
 [whitepaper-blockchain]: https://bitcoin.stackexchange.com/questions/35959/how-is-the-whitepaper-decoded-from-the-blockchain-tx-with-1000x-m-of-n-multisi/35970 "Stackexchange: How is the whitepaper decoded from the blockchain"
 
 [^keys]: But please make sure to encrypt them.
-

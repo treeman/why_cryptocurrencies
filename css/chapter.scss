@@ -71,7 +71,8 @@
  * Links
  */
 @mixin a-underline($color) {
-    box-shadow: inset 0 -0.14rem $color;
+    //box-shadow: inset 0 -0.14rem $color;
+    box-shadow: inset 0 -3px $color;
     color: $body-font-color;
     text-decoration: none;
     padding-bottom: 1px;
