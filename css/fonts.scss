@@ -87,7 +87,7 @@ $code-font-family: $hack, monospace;
 %sans-serif {
     text-rendering: optimizeLegibility;
     font-family: $sans-serif-font-family;
-    font-feature-settings: "ss06" on, "onum" off, "kern" on;
+    font-feature-settings: "onum" off, "kern" on;
 }
 
 %serif {

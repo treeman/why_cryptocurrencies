@@ -1,6 +1,16 @@
 ---
 title: What is a cryptocurrency?
+subtitle: Peer-to-peer electronic cash
 ---
+
+* [What is money?](#)
+* [Are cryptocurrencies money?](#)
+* [How does cryptocurrencies work?](#)
+* [Properties of a cryptocurrency](#)
+* [Look out for the blockchain buzzword](#)
+
+----
+
 
 To be able to talk about cryptocurrencies and what value they might bring we need to at least understand what they do differently.
 

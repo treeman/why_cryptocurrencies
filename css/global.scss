@@ -6,8 +6,8 @@ $body-link-visited-color: green;
 
 * {
     // Predictable styling.
-    //margin: 0;
-    //padding: 0;
+    margin: 0;
+    padding: 0;
     // Better box model, includes border in width calculations.
     box-sizing: border-box;
     // Flexbox overrides min-width which makes <pre> not overflow properly
@@ -52,6 +52,11 @@ body {
 }
 
 
+p {
+    margin-bottom: 1rem;
+}
+
+
 /*
  * Headers
  */
@@ -65,7 +70,7 @@ h1 {
 h2 {
     font-size: 1.22rem;
     margin-top: 1.2em;
-    margin-bottom: 0.2em;
+    margin-bottom: 0.3em;
 }
 h3 {
     font-size: 1.1rem;

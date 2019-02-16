@@ -1,5 +1,6 @@
 ---
 title: Why this book
+subtitle: The right perspective
 ---
 
 Whenever the topic of cryptocurrencies&mdash;where Bitcoin and Ethereum are the most known&mdash;come up in conversations they're almost always misunderstood or dismissed.
@@ -50,7 +51,7 @@ And of course none of this is investment advice.
 
 # How to read this book
 
-E
+Each chapter is supposed to be standalone so you can jump around and read it however you want. The only prerequisite is to have a basic understanding of what a cryptocurrency does which I describe in the first chapter.
 
 
 [^beanies]: How does it relate to cryptos?

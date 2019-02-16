@@ -1,5 +1,6 @@
 ---
 title: What is money?
+subtitle: A philosophical question
 ---
 
 **Legar tender**
@@ -149,7 +150,7 @@ Fiat money doesn't derive it's value from use as a physical commodity but from b
 
 # Is cryptocurrencies money?
 
-Some countries&emdash;[like Sweden][skatt-bitcoin]&emdash;have ruled that Bitcoin isn't a currency because there is no responsible issuer and not a legal tender in any country.
+Some countries&mdash;[like Sweden][skatt-bitcoin]&mdash;have ruled that Bitcoin isn't a currency because there is no responsible issuer and not a legal tender in any country.
 
 Others have ruled in favor of Bitcoin as a currency. For example [EU ruled][] that cryptocurrency exchanges doesn't require VAT and are tax free.
 
@@ -158,9 +159,7 @@ Others have ruled in favor of Bitcoin as a currency. For example [EU ruled][] th
 [skatt-bitcoin]: <https://www4.skatteverket.se/rattsligvagledning/373946.html?date=2018-12-17> "Swedish link: Skatteverket divestment of Bitcoin (2018-12-17)"
 
 
-Ruled tax free (no VAT) in 2015:
-https://www.ibtimes.com/bitcoin-exchanges-ruled-tax-free-top-european-court-2151805
-http://curia.europa.eu/juris/document/document.jsf?text=&docid=170305&pageIndex=0&doclang=en&mode=req&dir=&occ=first&part=1&cid=604646
+[EU ruled]: http://curia.europa.eu/juris/document/document.jsf?text=&docid=170305&pageIndex=0&doclang=en&mode=req&dir=&occ=first&part=1&cid=604646
 
 Let's look at the different properties of money instead:
 

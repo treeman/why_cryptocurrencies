@@ -1,5 +1,7 @@
-# Cryptocurrency value in ten minutes
-*ELI5 - what is the inherent values of cryptocurrencies?*
+---
+title: Cryptocurrency value in ten minutes
+subtitle: ELI5 - what is the inherent values of cryptocurrencies?
+---
 
 In short the value is derived from these central propertes:
 
