@@ -10,7 +10,9 @@ Curiously enough they don't explain what cryptocurrencies are or what they can b
 
 Maybe this is why most people only see cryptocurrencies as a form of investment&mdash;after all there's few things as interesting as the possibility of becoming rich very quickly.
 
-Even if you'd like to know more, what hope does average Joe have when even the famous security technologist Bruce Schneier concludes that "Honestly, cryptocurrencies are useless"? [^schneier]
+Even if you'd like to know more, what hope does average Joe have when even the famous security technologist Bruce Schneier concludes that:
+
+> Honestly, cryptocurrencies are useless [^schneier]
 
 It's almost a universal phenomena. I've heard these arguments from students, co-workers, friends, family and highly technical online communities:
 

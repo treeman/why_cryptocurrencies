@@ -1,3 +1,9 @@
+$body-font-color: #000;
+$body-background-color: #fff;
+$body-link-color: #ccc;
+$body-link-hover-color: purple;
+$body-link-visited-color: green;
+
 * {
     // Predictable styling.
     //margin: 0;
@@ -40,5 +46,35 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+
+    color: $body-font-color;
+    background-color: $body-background-color;
+}
+
+
+/*
+ * Headers
+ */
+h1, h2, h3, h4 {
+    @extend %sans-serif;
+    line-height: 1;
+}
+h1 {
+    font-size: 1.45rem;
+}
+h2 {
+    font-size: 1.22rem;
+    margin-top: 1.2em;
+    margin-bottom: 0.2em;
+}
+h3 {
+    font-size: 1.1rem;
+    margin-top: 1em;
+    margin-bottom: 0.2em;
+}
+h4 {
+    font-size: 0.91rem;
+    margin-top: 1em;
+    margin-bottom: 0.2em;
 }
 
