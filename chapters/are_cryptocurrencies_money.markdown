@@ -3,16 +3,24 @@ title: Are cryptocurrencies money?
 subtitle: Does it really matter?
 ---
 
-Some countries&mdash;[like Sweden][skatt-bitcoin]&mdash;have ruled that Bitcoin isn't a currency because there is no responsible issuer and not a legal tender in any country.
+# What do law makers say?
 
-Others have ruled in favor of Bitcoin as a currency. For example [EU ruled][] that cryptocurrency exchanges doesn't require VAT and are tax free.
+Several countries&mdash;[like Sweden][skatt-bitcoin]&mdash;have ruled that Bitcoin isn't a currency because there is no responsible issuer and not a legal tender in any country.
+
+Cryptocurrencies just doesn't fit into the existing rules to be classified as a fiat currency. One of the defining rules of fiat is to have a responsible issuer&mdash;something Bitcoin was created to remove.
+
+There are others who've ruled in favor of Bitcoin as a currency. For example [EU ruled][] that VAT is not applicable to the conversion between fiat currency and Bitcoin, however VAT still applies when used for goods and services.
+
+Regardless if Bitcoin is classified as a traditional currency it can still be and function as money. After all many historical examples of money can't be called fiat currency either.
 
 [^wikipedia]: <https://en.wikipedia.org/wiki/Money>
 
 [skatt-bitcoin]: <https://www4.skatteverket.se/rattsligvagledning/373946.html?date=2018-12-17> "Swedish link: Skatteverket divestment of Bitcoin (2018-12-17)"
 
-
 [EU ruled]: http://curia.europa.eu/juris/document/document.jsf?text=&docid=170305&pageIndex=0&doclang=en&mode=req&dir=&occ=first&part=1&cid=604646
+
+
+# Properties of money
 
 Let's look at the different properties of money instead:
 
@@ -69,6 +77,8 @@ For instance cryptos are more divisible, portable, durable and has a tighter con
 What cryptos lack is mainly adoption. Not enough people are using it. In modern times gold has this problem as well, I doubt you'll find regular merchants who accept gold as payment anymore. In fact it's more likely that you'll find merchants who accept cryptocurrencies than gold.
 
 
+# Functions of money
+
 ## Medium of exchange
 
 It can be used. Most aren't.
@@ -84,7 +94,7 @@ This doesn't hold, at all.
 While cryptocurrencies have nice properties it's primarily a speculation vehicle and it's been notoriously
 
 
-# So, is cryptocurrencies money?
+# So, are cryptocurrencies money?
 
 It has the properties for being a very good type of money. Maybe even a better money than any alternative so far.
 

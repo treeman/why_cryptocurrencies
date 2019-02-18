@@ -1,6 +1,6 @@
 ---
 title: What is money?
-subtitle: A philosophical question
+subtitle: There are no hard rules
 ---
 
 **Legar tender**
