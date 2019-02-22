@@ -26,8 +26,9 @@ In other words cryptocurrency transfers are **trustless** and **permissionless**
 
 
 Move to next section?
+
 * They have a predetermined emission rate.
-* They're easily divisible. For example one bitcoin can be divided into one million parts&emdash;satoshis.
+* They're easily divisible. For example one bitcoin can be divided into one million parts&mdash;satoshis.
 
 
 [^whitepaper]: The whitepaper is surprisingly easy to read and I highly recommend you [read it][whitepaper].

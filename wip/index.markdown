@@ -7,6 +7,7 @@
     * Look out for snake oil
     * What is money?
     * Are cryptocurrencies money?
+
 * A better currency
     * The financial crisis, bad loans and bail-outs
     * Borderless (The charity EatBCH feeds Venezuelans)

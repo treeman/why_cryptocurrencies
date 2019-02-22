@@ -12,7 +12,7 @@ Technical understanding of how they work is beneficial but not required to discu
 + You don't need anyones permission when giving cash in person
 + You don't need to trust a third party to confirm payments, you just give them cash in hand
 
-This also applies to cryptocurrencies which you can do digitally. Additionally there's no central authority who controls it:
+Additionally there's no central authority who controls it:
 
 + New coins follow a fixed issuance schedule
 

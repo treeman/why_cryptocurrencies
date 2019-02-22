@@ -1,8 +1,21 @@
-$body-font-color: #000;
+//$body-font-color: #000;
+$body-font-color: #343535;
 $body-background-color: #fff;
 $body-link-color: #ccc;
-$body-link-hover-color: purple;
+//$body-link-hover-color: purple;
+$body-link-hover-color: #ffa200;
+//$body-link-hover-color: #5dcb79;
+//$body-link-hover-color: #343535;
+//$body-link-hover-color: #ff6600;
 $body-link-visited-color: green;
+
+// Common cryptocurrency colors:
+// BCH green        #5DCB79
+// BTC orange       #F59332
+// ETH light gray   #7e8891
+//     darker gray  #343535
+// XMR orange       #ff6600
+//     gray         #4c4c4c
 
 * {
     // Predictable styling.
@@ -55,7 +68,7 @@ body {
 
 
 p {
-    margin-bottom: 1rem;
+    margin-bottom: 1em;
 }
 
 

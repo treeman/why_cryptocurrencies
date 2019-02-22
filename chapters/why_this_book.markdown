@@ -1,6 +1,6 @@
 ---
 title: Why this book
-subtitle: The right perspective
+subtitle: Another perspective
 ---
 
 Whenever the topic of cryptocurrencies&mdash;where Bitcoin and Ethereum are the most known&mdash;come up in conversations they're almost always misunderstood or dismissed.
@@ -28,12 +28,22 @@ It's almost a universal phenomena. I've heard these arguments from students, co-
 It seems everyone has an opinion but few seem capable of explaining what it is or what it does differently.
 Of course most aren't dismissive but simply don't understand what it's all about. Many are curious and want to learn more.
 
-As a cryptocurrency fan I'm often in the position to defend it and try to bring up how it can be useful, what use cases exist and even how it can help society. I've tried to answer these questions several times but it gets old fast.
-
-This is why I've decided to collect my thoughts of why cryptocurrencies exist, what they can do and what value they bring. Hopefully I can answer the question: "Why cryptocurrencies?".
+As a cryptocurrency fan I'm often in the position to defend it and try to bring up how it can be useful, what use cases exist and even how it can help society. I've tried to answer these questions several times but it gets old fast. Hence this book.
 
 
-# What this isn't
+# What this book is
+
+This book means to describe what cryptocurrencies are useful for and what value they can bring.
+
+With examples, stories and discussions I will try to show you that:
+
+* Cryptocurrencies aren't just scams
+* It's more than just a speculative asset
+* There are legal use cases
+* They do many things better than any alternative
+
+
+# What this book isn't
 
 There are many problems with cryptocurrencies as they exist today. This isn't an attempt to explain them away or to look at work being done to counter them. If you're curious here are some of the biggest problems as I see it:
 
@@ -51,10 +61,21 @@ And of course none of this is investment advice.
 
 # How to read this book
 
-Each chapter is supposed to be standalone so you can jump around and read it however you want. The only prerequisite is to have a basic understanding of what a cryptocurrency does which I describe in the first chapter.
+Each chapter is supposed to be standalone so you can jump around and read it however you want. The only prerequisite is to have a basic understanding of what a cryptocurrency does which I describe in [the first chapter][].
+
+If you want to receive an email when I post a new chapter please [subscribe here][]. I will only use it to email you about this book and you can unsubscribe at any time.
+
+There is also an [RSS feed][] if you prefer that.
 
 
-[^beanies]: How does it relate to cryptos?
+[^schneier]: Schneier brings an interesting perspective and he's right about one very important aspect: Contrary to popular belief cryptocurrencies doesn't remove all trust. It just removes and shifts some.
+
+    To counter his point that "cryptocurrencies are useless" all you have to do is provide one counterexample where they're useful. That's what this book is about.
+
+    <https://www.schneier.com/blog/archives/2019/02/blockchain_and_.html>
+
+
+[^beanies]: TODO How does it relate to cryptos?
 
     At it's height people would sell&mdash;and buy&mdash;these toys at 10x their original price and was responsible for 10% of eBay's sales. The creator was at one point one of the richest men in the world.
 
@@ -63,26 +84,28 @@ Each chapter is supposed to be standalone so you can jump around and read it how
     <http://fortune.com/2015/03/11/beanie-babies-failure-lessons/>
 
 
-[^tulips]: Describe tulip fever and how it relates to cryptocurrencies.
+[^tulips]: TODO Describe tulip fever and how it relates to cryptocurrencies.
 
     Although commonly refered to it wasn't as bad as it's often portrayed as. But it was still quite bad.
 
     <https://en.wikipedia.org/wiki/Tulip_mania>
 
 
+[^monero]: Bitcoin, like almost all cryptocurrencies, use a public ledger where you can lookup how many coins any address has and you can also trace all coins to the beginning of time.
+
+    There are cryptocurrencies like [Monero][] which hides inputs, outputs and amounts for all transactions making this impossible.
+
+
 [^cryptos]: Although there are hundreds and perhaps thousands most are just copies or outright scams. Be safe out there.
 
 
-[^schneier]: Schneier brings an interesting perspective and he's right about one very important aspect: Contrary to popular belief cryptocurrencies doesn't remove all trust. It just removes some of it.
 
-    To counter his point that "cryptocurrencies are useless" all you have to do is provide one counterexample where they're useful. This book is full of them.
 
-    <https://www.schneier.com/blog/archives/2019/02/blockchain_and_.html>
+[the first chapter]: /what_is_a_cryptocurrency/
+[RSS feed]: #
+[subscribe here]: #
 
-[^monero]: Bitcoin, like almost all cryptocurrencies, use a public ledger where you can lookup how many coins any address has and you can also trace all coins to the beginning of time.
-
-    There are cryptocurrencies like Monero which hides inputs, outputs and amounts for all transactions making this impossible.
-
+[Monero]: https://www.getmonero.org/
 
 [schneier]: https://www.schneier.com/blog/archives/2019/02/blockchain_and_.html
 [cnn-bitcoin-rallies]: https://money.cnn.com/2017/12/06/investing/bitcoin-rally-hits-12000/index.html

@@ -30,3 +30,11 @@ Instead of using cryptocurrencies, where anyone can join in and vote, they want 
 The main problem for businesses with cryptocurrencies is they're open for anyone to join in and vote. So they want to make a private blockchain 
 
 
+Here are some legit cryptocurrencies, but there are others:
+
+* Bitcoin (BTC)
+* Bitcoin Cash (BCH)
+* Ethereum (ETH)
+* Monero (XMR)
+* Litecoin (LTC)
+* Dogecoin (DGC)

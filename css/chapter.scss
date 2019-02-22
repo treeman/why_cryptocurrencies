@@ -36,6 +36,9 @@
     ul, ol {
         list-style: none;
         margin: 1rem 0 1rem $left;
+        p {
+            margin-bottom: 0.6em;
+        }
     }
     ol {
         counter-reset: foobar;
@@ -45,23 +48,26 @@
         font-size: 95%;
         line-height: 1.35;
     }
-    ol li::before {
+    ol > li::before {
         float: left;
         margin-left: -$left;
     }
-    ul li::before {
+    ul > li::before {
         float: left;
         margin-left: -$left;
     }
 
-    ol li::before {
+    ol > li::before {
         @extend %sans-serif;
         counter-increment: foobar;
         content: counter(foobar);
+        color: #4c4c4c;
     }
-    ul li::before {
+    ul > li::before {
         @extend %sans-serif;
         content: "»";
+        content: "⭑";
+        color: #4c4c4c;
         //content: "₿";
         //font-size: 0.7em;
     }
@@ -130,5 +136,6 @@ $hr-color: #3b3b3b;
     font-size: 0.72rem;
     padding: 0 0.3em;
     color: $body-font-color;
+    //color: #f59332;
     background: $body-background-color;
 }
