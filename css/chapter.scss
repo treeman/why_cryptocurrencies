@@ -139,3 +139,20 @@ $hr-color: #3b3b3b;
     //color: #f59332;
     background: $body-background-color;
 }
+
+
+/*
+ * Tables
+ */
+.chapter table {
+    @extend %sans-serif;
+    //@extend %serif;
+    // Need tabular numbers to align properly
+    font-feature-settings: 'kern' on, 'tnum' on;
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+}
+.chapter th, .chapter td {
+    padding: 0.1em 1em 0.1em 0em;
+}
+
