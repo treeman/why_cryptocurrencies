@@ -25,6 +25,7 @@
     * Provably fair gambling/betting
     * Decentralized-ish voting
     * Uncensorable Twitter
-    * Tokens
+    * Tokens?
     * Decentralized storage?
+    * Timestamping service (show that you knew about a vulnerability)
 
