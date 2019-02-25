@@ -1,9 +1,10 @@
 #lang racket/base
 
+(require txexpr pollen/decode pollen/misc/tutorial pollen/tag)
 (require "rkt/tags.rkt")
-(provide (all-from-out "rkt/tags.rkt"))
 
-(require txexpr pollen/decode pollen/misc/tutorial)
+(provide (all-from-out "rkt/tags.rkt"))
+(provide (all-defined-out))
 
 (define (root . args)
   (txexpr 'root empty (decode-elements args
@@ -11,11 +12,7 @@
     #:string-proc (compose1 smart-quotes smart-dashes))))
 
 (module setup racket/base
-  (require racket/runtime-path)
-
   (provide (all-defined-out))
-  ;(define main-export 'doc)
-  (define template-prefix "site")
-  )
+  (define template-prefix "site"))
 
 

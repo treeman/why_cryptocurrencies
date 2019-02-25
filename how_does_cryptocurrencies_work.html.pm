@@ -10,18 +10,17 @@ As stated in the introduction the focus isn't on technical details but it's a ha
 If you want to create a digital currency you only really need to keep track of how many coins everyone have. For example your bank might have entries in a ledger like this:
 
 ◊table{
-Person      Swedish krona (SEK)
-Alice       7 000 SEK
-Bob         1 000 SEK
-Eve           500 SEK
+  Person      Swedish krona (SEK)
+  Alice       7 000 SEK
+  Bob         1 000 SEK
 }
 
 When Alice wants to send 500 SEK to Bob then the bank simply updates the ledger:
 
 ◊table{
-Person      Swedish krona (SEK)
-Alice       6 500 SEK (-500 SEK)
-Bob         1 500 SEK (+500 SEK)
+  Person      Swedish krona (SEK)
+  Alice       6 500 SEK (-500 SEK)
+  Bob         1 500 SEK (+500 SEK)
 }
 
 Cryptocurrencies work this way as well. In fact the ledger in a cryptocurrency, often referred to as the "blockchain", contains the balance of all addresses. [^stores-transactions]
@@ -40,21 +39,21 @@ So far cryptocurrencies doesn't do anything new. The hard problem is how do you 
 
 For example Alice wants to buy a computer from Bob and wants to pay with Bitcoin. The computer costs 1 BTC and the Bitcoin ledger looks like this:
 
--------     ------
-Alice 1     1 BTC
-Alice 2     0 BTC
-Bob         0 BTC
--------     ------
+◊table{
+  Alice 1     1 BTC
+  Alice 2     0 BTC
+  Bob         0 BTC
+}
 
 What Alice tries to do is send 1 BTC to the merchant Bob and then send the same 1 BTC to her other address "Alice 2"---you can have as many addresses as you want.
 
 If we didn't prevent this the ledger might look like this:
 
--------     ------
-Alice 1     -1 BTC (-2 BTC)
-Alice 2     1 BTC (+1 BTC)
-Bob         1 BTC (+1 BTC)
--------     ------
+◊table{
+  Alice 1     -1 BTC (-2 BTC)
+  Alice 2     1 BTC (+1 BTC)
+  Bob         1 BTC (+1 BTC)
+}
 
 We copied our coin and printed 1 BTC out of thin air so now the ledger contains a negative balance. This is known as "double spending".
 
