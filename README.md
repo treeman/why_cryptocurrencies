@@ -39,11 +39,9 @@ What is a cryptocurrency?
 * Remove index.html from prev link
 
 * Table
+    Control left/center/right aligned?
 * Footnotes
 * Quotes
 * Images
 * Code
-
-* Maybe consider: https://superuser.com/questions/181517/how-to-execute-a-command-whenever-a-file-changes
-  to avoid complete invalidation on css changes?
 
