@@ -1,11 +1,11 @@
----
-title: How does cryptocurrencies work?
-subtitle: Byzantine?
----
+#lang pollen
+
+◊(define-meta title "How does cryptocurrencies work?")
+◊(define-meta subtitle "Byzantine?")
 
 As stated in the introduction the focus isn't on technical details but it's a hard balance to make between keeping it simple and explaining how cryptocurrencies work. If this chapter is too technical you can safely skip to the [next chapter][].
 
-# The ledger
+◊subhead{The ledger}
 
 If you want to create a digital currency you only really need to keep track of how many coins everyone have. For example your bank might have entries in a ledger like this:
 
@@ -24,14 +24,14 @@ Bob         1 500 SEK (+500 SEK)
 Cryptocurrencies work this way as well. In fact the ledger in a cryptocurrency, often referred to as the "blockchain", contains the balance of all addresses. [^stores-transactions]
 
 
-# Your keys, your coins
+◊subhead{Your keys, your coins}
 
 To be able to create a transaction you need to have the private keys to the address you want to send from. Think of it as a secret password that unlocks your account. This prevents anyone else from stealing your coins, unless of course they steal your private key!
 
 The keys uses a [public-key cryptography][] scheme which I won't explain more, look it up if you're interested.
 
 
-# Copying a coin & double spending
+◊subhead{Copying a coin & double spending}
 
 So far cryptocurrencies doesn't do anything new. The hard problem is how do you prevent someone from copying a coin and sending the copies the different receivers?
 
@@ -60,18 +60,18 @@ This isn't really a problem with physical cash since you can't just copy gold co
 But this is a hard problem for a digital currency that tries to remove the central authority. This is why before Bitcoin no decentralized digital currencies existed.
 
 
-# The Byzantine Generals Problem
+◊subhead{The Byzantine Generals Problem}
 
 To solve double spending it's enough to choose one of double spending transactions. But how do you do that when there are many unrelated people, some who wants to cheat?
 
 This is the same problem known as the Byzantine Generals Problem:
 
-<https://coincentral.com/byzantine-generals-problem/>
+◊link{https://coincentral.com/byzantine-generals-problem/}
 
-[Byzantine fault tolerance]: https://en.wikipedia.org/wiki/Byzantine_fault_tolerance
+◊link[◊|byzantine|]{Byzantine fault tolerance}
 
 
-# Miners
+◊subhead{Miners}
 
 If you've heard about cryptocurrencies then maybe you've also heard about cryptocurrency miners or Bitcoin miners.
 
@@ -80,7 +80,7 @@ A crucial mistake people make is to think more miners, or more energy used, mean
 In fact we could spend 100x more energy on securing the chain and process the same amount of transactions or we could spend 1/100th of the energy and process more transactions. Transaction throughput is a separate problem.
 
 
-# Where do your transactions go?
+◊subhead{Where do your transactions go?}
 
 When you want to send someone a transaction you don't
 
@@ -96,3 +96,6 @@ When you want to send someone a transaction you don't
 
 [public-key cryptography]: https://en.wikipedia.org/wiki/Public-key_cryptograph://en.wikipedia.org/wiki/Public-key_cryptography 
 [next chapter]: /properties_of_a_cryptocurrency
+
+
+◊(define byzantine "https://en.wikipedia.org/wiki/Byzantine_fault_tolerance")

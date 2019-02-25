@@ -1,22 +1,3 @@
-//$body-font-color: #000;
-$body-font-color: #343535;
-$body-background-color: #fff;
-$body-link-color: #ccc;
-//$body-link-hover-color: purple;
-$body-link-hover-color: #ffa200;
-//$body-link-hover-color: #5dcb79;
-//$body-link-hover-color: #343535;
-//$body-link-hover-color: #ff6600;
-$body-link-visited-color: green;
-
-// Common cryptocurrency colors:
-// BCH green        #5DCB79
-// BTC orange       #F59332
-// ETH light gray   #7e8891
-//     darker gray  #343535
-// XMR orange       #ff6600
-//     gray         #4c4c4c
-
 * {
     // Predictable styling.
     margin: 0;
@@ -96,5 +77,69 @@ h4 {
     font-size: 0.91rem;
     margin-top: 1em;
     margin-bottom: 0.2em;
+}
+
+
+/*
+ * Links: replicate underline that clears descenders
+ * Source: https://edwardtufte.github.io/tufte-css/
+ * who credits Adam Schwartz
+ */
+@mixin a-text-shadow($col) {
+    text-shadow: 0.03em 0 $col, -0.03em 0 $col, 0 0.03em $col, 0 -0.03em $col,
+                 0.06em 0 $col, -0.06em 0 $col, 0.09em 0 $col, -0.09em 0 $col,
+                 0.12em 0 $col, -0.12em 0 $col, 0.15em 0 $col, -0.15em 0 $col;
+}
+
+@mixin a-background($col) {
+    background: -webkit-linear-gradient($body-background-color, $body-background-color),
+        -webkit-linear-gradient($body-background-color, $body-background-color),
+        -webkit-linear-gradient($col, $col);
+    background: linear-gradient($body-background-color, $body-background-color),
+        linear-gradient($body-background-color, $body-background-color),
+        linear-gradient($col, $col);
+
+    $background-size: 0.05em 1px, 0.05em 1px, 1px 1px;
+    -webkit-background-size: $background-size;
+    -moz-background-size: $background-size;
+    background-size: $background-size;
+
+    background-repeat: no-repeat, no-repeat, repeat-x;
+    @include a-text-shadow($body-background-color);
+    background-position: 0% 93%, 100% 93%, 0% 93%;
+}
+
+a:link {
+    text-decoration: none;
+    @include a-background(#333);
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+    a:link { background-position-y: 87%, 87%, 87%; }
+}
+
+a:link::selection, a:link::-moz-selection {
+    @include a-text-shadow($body-selection-color);
+    background: $body-selection-color;
+}
+
+a:link, a:visited {
+    color: inherit;
+}
+a:hover {
+    // Colorize the underline, different from tufte-css
+    //@include a-background($body-link-hover-color);
+    color: $body-link-hover-color;
+}
+
+
+/*
+ * Selection
+ */
+::selection {
+  background: $body-selection-color; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: $body-selection-color; /* Gecko Browsers */
 }
 

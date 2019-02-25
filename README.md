@@ -32,4 +32,18 @@ What is a cryptocurrency?
     How to autogenerate?
 * Get domain
 * Style footnote links
+* Style homepage
+
+# Pollen
+
+* Remove index.html from prev link
+
+* Table
+* Footnotes
+* Quotes
+* Images
+* Code
+
+* Maybe consider: https://superuser.com/questions/181517/how-to-execute-a-command-whenever-a-file-changes
+  to avoid complete invalidation on css changes?
 

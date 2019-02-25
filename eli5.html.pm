@@ -1,7 +1,7 @@
----
-title: Why cryptocurrencies in five minutes
-subtitle: ELI5 - what is the inherent values of cryptocurrencies?
----
+#lang pollen
+
+◊(define-meta title "Why cryptocurrencies in five minutes")
+◊(define-meta subtitle "ELI5 - what is the inherent values of cryptocurrencies?")
 
 In short the value is derived from these central propertes:
 

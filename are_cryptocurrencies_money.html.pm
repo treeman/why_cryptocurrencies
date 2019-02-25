@@ -1,7 +1,7 @@
----
-title: Are cryptocurrencies money?
-subtitle: Does it really matter?
----
+#lang pollen
+
+◊(define-meta title "Are cryptocurrencies money?")
+◊(define-meta subtitle "Does it really matter?")
 
 # What do law makers say?
 

@@ -1,7 +1,7 @@
----
-title: Why this book
-subtitle: Another perspective
----
+#lang pollen
+
+◊(define-meta title "Why this book?")
+◊(define-meta subtitle "Another perspective")
 
 Whenever the topic of cryptocurrencies&mdash;where Bitcoin and Ethereum are the most known&mdash;come up in conversations they're almost always misunderstood or dismissed.
 

@@ -1,8 +1,3 @@
-*.hi
-_*
-*.o
-*~
-*.swp
-*.bak
-site
-
+*.html
+*.css
+compiled/

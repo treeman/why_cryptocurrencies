@@ -1,7 +1,7 @@
----
-title: What is money?
-subtitle: There are no hard rules
----
+#lang pollen
+
+◊(define-meta title "What is money?")
+◊(define-meta subtitle "There are no hard rules")
 
 **Legar tender**
 

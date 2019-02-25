@@ -1,7 +1,7 @@
----
-title: Properties of a cryptocurrency
-subtitle: asdf
----
+#lang pollen
+
+◊(define-meta title "Properties of a cryptocurrency")
+◊(define-meta subtitle "asdf")
 
 "Bitcoin: A Peer-to-Peer Electronic Cash System"
 

@@ -1,7 +1,7 @@
----
-title: Look out for snake oil
-subtitle: If you see the term "blockchain", run far away
----
+#lang pollen
+
+◊(define-meta title "Look out for snake oil")
+◊(define-meta subtitle "If you see the term \"blockchain\", run far away")
 
 There are many projects who call themselves cryptocurrencies while not fulfilling the criteria. For example I don't consider these real cryptocurrencies:
 

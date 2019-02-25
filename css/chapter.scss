@@ -21,6 +21,7 @@
  * Quotes
  */
 .chapter blockquote {
+    font-style: italic;
     font-size: 95%;
     line-height: 1.4;
     margin: 0 2em;
@@ -61,38 +62,12 @@
         @extend %sans-serif;
         counter-increment: foobar;
         content: counter(foobar);
-        color: #4c4c4c;
+        color: $body-list-sym-color;
     }
     ul > li::before {
         @extend %sans-serif;
-        content: "»";
         content: "⭑";
-        color: #4c4c4c;
-        //content: "₿";
-        //font-size: 0.7em;
-    }
-}
-
-/*
- * Links
- */
-@mixin a-underline($color) {
-    //box-shadow: inset 0 -0.14rem $color;
-    box-shadow: inset 0 -3px $color;
-    color: $body-font-color;
-    text-decoration: none;
-    padding-bottom: 1px;
-}
-
-.chapter {
-    a {
-        @include a-underline($body-link-color);
-    }
-    a:hover {
-        @include a-underline($body-link-hover-color);
-    }
-    a:visited {
-        @include a-underline($body-link-visited-color);
+        color: $body-list-sym-color;
     }
 }
 
@@ -100,13 +75,11 @@
 /*
  * Horizontal rules
  */
-$hr-color: #3b3b3b;
-
 .chapter hr {
     margin: 1em auto;
 
     border: 0;
-    border-bottom: 1px solid #3b3b3b;
+    border-bottom: 1px solid $body-hr-color;
 }
 
 
@@ -117,9 +90,9 @@ $hr-color: #3b3b3b;
     overflow: visible; // For IE
     padding: 0;
     border: none;
-    border-top: 1px solid $hr-color;
+    border-top: 1px solid $body-hr-color;
 
-    color: #3b3b3b;
+    color: $body-hr-color;
     text-align: center;
     margin: 0 auto;
     width: 90%;
