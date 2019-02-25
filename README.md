@@ -28,20 +28,22 @@ What is a cryptocurrency?
 * Email subscription
 * Navigation sidebars
 * Next/prev footer nav
-* Main index page
-    How to autogenerate?
 * Get domain
-* Style footnote links
-* Style homepage
 
 # Pollen
 
 * Remove index.html from prev link
-
 * Table
     Control left/center/right aligned?
-* Footnotes
-* Quotes
-* Images
-* Code
 
+# Styling
+
+* Use sections on the page? h1 for page title, h2 for section headings, h3 for subsections?
+* See code like: https://beautifulracket.com/
+* Sidenotes/marginnotes instead of footnotes
+  https://groups.google.com/forum/#!topic/pollenpub/laWL4SWx0Zc
+* Style footnote links
+* Style homepage
+* Quotes
+* Code
+* Images
