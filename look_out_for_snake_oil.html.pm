@@ -12,8 +12,8 @@ There are many projects who call themselves cryptocurrencies while not fulfillin
   ◊li{Stablecoins like ◊link[tether]{Tether} or JP Morgan's ◊link[JPM-coin]{JPM coin}.}
 }
 
-(define tether "https://tether.to/")
-(define JPM-coin "https://decryptmedia.com/5173/jp-morgan-coin-cryptocurrency")
+◊(define tether "https://tether.to/")
+◊(define JPM-coin "https://decryptmedia.com/5173/jp-morgan-coin-cryptocurrency")
 
 After the invention of proof-of-work there have been attempts to solve the Byzantine generals problem in other ways. For example instead of miners who expend energy proof-of-stake works by allowing users with coins vote. There are different security trade-offs and the jury is still out if they really solve the problem sufficiently.
 
@@ -21,7 +21,7 @@ Then there's the phenomena where a technology gets hyped up and businesses all o
 
 That's been true of "big data", "neural networks" and now "blockchain".
 
----
+◊hr{}
 
 
 Instead of using cryptocurrencies, where anyone can join in and vote, they want to remove the consensus mechanism and use a private blockchain. But doing that removes all advantages and benefits.
@@ -34,9 +34,12 @@ The main problem for businesses with cryptocurrencies is they're open for anyone
 
 Here are some legit cryptocurrencies, but there are others:
 
-* Bitcoin (BTC)
-* Bitcoin Cash (BCH)
-* Ethereum (ETH)
-* Monero (XMR)
-* Litecoin (LTC)
-* Dogecoin (DGC)
+◊ul{
+  ◊li{Bitcoin (BTC)}
+  ◊li{Bitcoin Cash (BCH)}
+  ◊li{Ethereum (ETH)}
+  ◊li{Monero (XMR)}
+  ◊li{Litecoin (LTC)}
+  ◊li{Dogecoin (DGC)}
+}
+

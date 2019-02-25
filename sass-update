@@ -1,5 +1,10 @@
 #!/bin/bash
 
+if [ ! -f css/main.css ]; then
+    sassc sass/main.scss --style compressed > css/main.css
+    echo "created: css/main.css"
+fi
+
 inotifywait -e close_write,moved_to,create -m sass/ |
 while read -r directory events filename; do
     sassc sass/main.scss --style compressed > css/main.css

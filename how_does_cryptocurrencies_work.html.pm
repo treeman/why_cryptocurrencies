@@ -9,17 +9,20 @@ As stated in the introduction the focus isn't on technical details but it's a ha
 
 If you want to create a digital currency you only really need to keep track of how many coins everyone have. For example your bank might have entries in a ledger like this:
 
+◊table{
 Person      Swedish krona (SEK)
--------     ------
 Alice       7 000 SEK
 Bob         1 000 SEK
+Eve           500 SEK
+}
 
 When Alice wants to send 500 SEK to Bob then the bank simply updates the ledger:
 
+◊table{
 Person      Swedish krona (SEK)
--------     ------
 Alice       6 500 SEK (-500 SEK)
 Bob         1 500 SEK (+500 SEK)
+}
 
 Cryptocurrencies work this way as well. In fact the ledger in a cryptocurrency, often referred to as the "blockchain", contains the balance of all addresses. [^stores-transactions]
 
