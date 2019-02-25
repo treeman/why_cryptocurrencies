@@ -5,9 +5,9 @@
 
 # What do law makers say?
 
-Several countries&mdash;[like Sweden][skatt-bitcoin]&mdash;have ruled that Bitcoin isn't a currency because there is no responsible issuer and not a legal tender in any country.
+Several countries---[like Sweden][skatt-bitcoin]---have ruled that Bitcoin isn't a currency because there is no responsible issuer and not a legal tender in any country.
 
-Cryptocurrencies just doesn't fit into the existing rules to be classified as a fiat currency. One of the defining rules of fiat is to have a responsible issuer&mdash;something Bitcoin was created to remove.
+Cryptocurrencies just doesn't fit into the existing rules to be classified as a fiat currency. One of the defining rules of fiat is to have a responsible issuer---something Bitcoin was created to remove.
 
 There are others who've ruled in favor of Bitcoin as a currency. For example [EU ruled][] that VAT is not applicable to the conversion between fiat currency and Bitcoin, however VAT still applies when used for goods and services.
 

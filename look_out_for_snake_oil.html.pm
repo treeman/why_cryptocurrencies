@@ -5,13 +5,15 @@
 
 There are many projects who call themselves cryptocurrencies while not fulfilling the criteria. For example I don't consider these real cryptocurrencies:
 
-* Onecoin
-* Bitconnect
-* Ripple
-* Stablecoins like [Tether][] or JP Morgan's [JPM coin][].
+◊ul{
+  ◊li{Onecoin}
+  ◊li{Bitconnect}
+  ◊li{Ripple}
+  ◊li{Stablecoins like ◊link[tether]{Tether} or JP Morgan's ◊link[JPM-coin]{JPM coin}.}
+}
 
-[Tether]: https://tether.to/
-[JPM coin]: https://decryptmedia.com/5173/jp-morgan-coin-cryptocurrency
+(define tether "https://tether.to/")
+(define JPM-coin "https://decryptmedia.com/5173/jp-morgan-coin-cryptocurrency")
 
 After the invention of proof-of-work there have been attempts to solve the Byzantine generals problem in other ways. For example instead of miners who expend energy proof-of-stake works by allowing users with coins vote. There are different security trade-offs and the jury is still out if they really solve the problem sufficiently.
 

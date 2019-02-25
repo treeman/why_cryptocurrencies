@@ -5,25 +5,31 @@
 
 In short the value is derived from these central propertes:
 
-* Permissionless transfers
-* Trustless transfers
-* Fixed issuance schedule
+◊ul{
+  ◊li{Permissionless transfers}
+  ◊li{Trustless transfers}
+  ◊li{Fixed issuance schedule}
+}
 
 Maybe a list of things? With chapter references?
 
 For merchants:
 
-* No risk of your payment processor freezing your account
-* You can still accept digital payments even though no banks wants your business (porn or marijuana)
-* No credit card charge back fraud
-* No middleman fees
+◊ul{
+  ◊li{No risk of your payment processor freezing your account}
+  ◊li{You can still accept digital payments even though no banks wants your business (porn or marijuana)}
+  ◊li{No credit card charge back fraud}
+  ◊li{No middleman fees}
+}
 
 For people:
 
-* You own your coins
-* You can send coins to anyone in the world, basically instantly and free
-* Digital payments for everyone without access to a bank
-* Financial privacy
-* Reduced currency manipulation by governments and banks
+◊ul{
+  ◊li{You own your coins}
+  ◊li{You can send coins to anyone in the world, basically instantly and free}
+  ◊li{Digital payments for everyone without access to a bank}
+  ◊li{Financial privacy}
+  ◊li{Reduced currency manipulation by governments and banks}
+}
 
 

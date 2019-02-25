@@ -3,7 +3,7 @@
 ◊(define-meta title "How does cryptocurrencies work?")
 ◊(define-meta subtitle "Byzantine?")
 
-As stated in the introduction the focus isn't on technical details but it's a hard balance to make between keeping it simple and explaining how cryptocurrencies work. If this chapter is too technical you can safely skip to the [next chapter][].
+As stated in the introduction the focus isn't on technical details but it's a hard balance to make between keeping it simple and explaining how cryptocurrencies work. If this chapter is too technical you can safely skip to the ◊link[next-chapter]{next chapter}.
 
 ◊subhead{The ledger}
 
@@ -28,7 +28,7 @@ Cryptocurrencies work this way as well. In fact the ledger in a cryptocurrency, 
 
 To be able to create a transaction you need to have the private keys to the address you want to send from. Think of it as a secret password that unlocks your account. This prevents anyone else from stealing your coins, unless of course they steal your private key!
 
-The keys uses a [public-key cryptography][] scheme which I won't explain more, look it up if you're interested.
+The keys uses a ◊link[public-key-cryptography]{public-key cryptography} scheme which I won't explain more, look it up if you're interested.
 
 
 ◊subhead{Copying a coin & double spending}
@@ -43,7 +43,7 @@ Alice 2     0 BTC
 Bob         0 BTC
 -------     ------
 
-What Alice tries to do is send 1 BTC to the merchant Bob and then send the same 1 BTC to her other address "Alice 2"&mdash;you can have as many addresses as you want.
+What Alice tries to do is send 1 BTC to the merchant Bob and then send the same 1 BTC to her other address "Alice 2"---you can have as many addresses as you want.
 
 If we didn't prevent this the ledger might look like this:
 
@@ -68,7 +68,7 @@ This is the same problem known as the Byzantine Generals Problem:
 
 ◊link{https://coincentral.com/byzantine-generals-problem/}
 
-◊link[◊|byzantine|]{Byzantine fault tolerance}
+◊link[byzantine]{Byzantine fault tolerance}
 
 
 ◊subhead{Miners}
@@ -85,17 +85,15 @@ In fact we could spend 100x more energy on securing the chain and process the sa
 When you want to send someone a transaction you don't
 
 
-[^chargeback]: In the credit card world this is known as [chargeback fraud][].
+[^chargeback]: In the credit card world this is known as ◊link[chargeback-fraud]{chargeback fraud}.
 
-[chargeback fraud]: https://en.wikipedia.org/wiki/Chargeback_fraud
 
 [^stores-transactions]: It's a slight simplification to say that the blockchain stores balances.  It actually stores all transactions from which you can calculate all balances.
 
     To lighten the load you can run your software in a pruned mode which discards the transactions and only keeps the balances.
 
-
-[public-key cryptography]: https://en.wikipedia.org/wiki/Public-key_cryptograph://en.wikipedia.org/wiki/Public-key_cryptography 
-[next chapter]: /properties_of_a_cryptocurrency
-
-
+◊(define chargeback-fraud "https://en.wikipedia.org/wiki/Chargeback_fraud")
+◊(define public-key-cryptography "https://en.wikipedia.org/wiki/Public-key_cryptograph://en.wikipedia.org/wiki/Public-key_cryptography ")
+◊(define next-chapter "/properties_of_a_cryptocurrency")
 ◊(define byzantine "https://en.wikipedia.org/wiki/Byzantine_fault_tolerance")
+
