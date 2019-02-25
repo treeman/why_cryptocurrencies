@@ -15,10 +15,13 @@
 
 (define (link . args)
   (match args
+    [(list (list url title) text)
+       `(a ((href ,url) (title ,title)) ,text)]
     [(list url text)
        `(a ((href ,url)) ,text)]
     [(list url)
-       `(a ((href ,url)) ,url)]))
+       `(a ((href ,url)) ,url)]
+    [_ "BAD LINK"]))
 
 (define (subhead txt)
   `(h2 ,txt))
@@ -31,13 +34,13 @@
   ;(define main-export 'doc)
   (define template-prefix "site")
 
-  ; https://docs.racket-lang.org/reference/Filesystem.html#%28form._%28%28lib._racket%2Fruntime-path..rkt%29._define-runtime-path%29%29
+  ; https://docs.racket-lang.org/reference/Filesystem.html#%28form._%28%28lib._racket%2Fruntime-path..rkt%29._define-runtime-path%29%29}
   ; TODO loop through and search for all .scss bindings
   ;(define-runtime-path global-scss "css/global.scss")
   ;(define cache-watchlist (list global-scss))
 
-  (define scss-files (glob "css/*.scss"))
-  (define cache-watchlist scss-files)
+  ;(define scss-files (glob "css/*.scss"))
+  ;(define cache-watchlist scss-files)
 
   )
 
