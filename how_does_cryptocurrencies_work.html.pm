@@ -39,7 +39,7 @@ So far cryptocurrencies doesn't do anything new. The hard problem is how do you 
 
 For example Alice wants to buy a computer from Bob and wants to pay with Bitcoin. The computer costs 1 BTC and the Bitcoin ledger looks like this:
 
-◊table{
+◊table[#:header #f]{
   Alice 1     1 BTC
   Alice 2     0 BTC
   Bob         0 BTC
@@ -49,7 +49,7 @@ What Alice tries to do is send 1 BTC to the merchant Bob and then send the same 
 
 If we didn't prevent this the ledger might look like this:
 
-◊table{
+◊table[#:header #f]{
   Alice 1     -1 BTC (-2 BTC)
   Alice 2     1 BTC (+1 BTC)
   Bob         1 BTC (+1 BTC)

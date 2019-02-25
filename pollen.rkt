@@ -12,7 +12,10 @@
     #:string-proc (compose1 smart-quotes smart-dashes))))
 
 (module setup racket/base
+  (require racket/runtime-path)
   (provide (all-defined-out))
-  (define template-prefix "site"))
+  (define template-prefix "site")
+  (define-runtime-path tags "rkt/tags.rkt")
+  (define cache-watchlist (list tags)))
 
 

@@ -17,16 +17,20 @@
 (define (subhead txt)
   `(h2 ,txt))
 
-(define (table . rows)
+(define (table #:header [header #t] . rows)
   (define cleaned-rows (filter-not whitespace? rows))
   (define header-row (car cleaned-rows))
   (define body-rows (cdr cleaned-rows))
   (define (make-row row cell-t)
     `(tr ,@(map (λ (cell) `(,cell-t ,(string-trim cell)))
                 (filter-not whitespace? (string-split row "  ")))))
-  `(table
-     (thead
-       ,(make-row header-row 'th))
-     (tbody
-       ,@(map (λ (x) (make-row x 'td)) body-rows))))
+  (if header
+      `(table
+         (thead
+           ,(make-row header-row 'th))
+         (tbody
+           ,@(map (λ (x) (make-row x 'td)) body-rows)))
+      `(table
+         (tbody
+           ,@(map (λ (x) (make-row x 'td)) cleaned-rows)))))
 
