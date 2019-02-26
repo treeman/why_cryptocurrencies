@@ -144,3 +144,20 @@ a:hover {
   background: $body-selection-color; /* Gecko Browsers */
 }
 
+
+/*
+ * Footer
+ */
+body > footer {
+    width: 100%;
+    nav {
+        display: flex;
+        justify-content: center;
+    }
+
+    .prev, .parent, .home, .next {
+        margin: 0 0.5em;
+    }
+
+}
+

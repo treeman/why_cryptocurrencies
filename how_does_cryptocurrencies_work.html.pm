@@ -15,7 +15,7 @@ If you want to create a digital currency you only really need to keep track of h
   Bob         1 000 SEK
 }
 
-When Alice wants to send 500 SEK to Bob then the bank simply updates the ledger:
+When Alice wants to send 500 SEK to Bob the bank simply updates the ledger:
 
 ◊table{
   Person      Swedish krona (SEK)
@@ -77,7 +77,7 @@ This is the same problem known as the Byzantine Generals Problem:
 
 If you've heard about cryptocurrencies then maybe you've also heard about cryptocurrency miners or Bitcoin miners.
 
-A crucial mistake people make is to think more miners, or more energy used, means more transactions can be handled. This is not true. Miners *only* care about securing the chain and to prevent your transactions from being reverted or double spent. [^chargeback]
+A crucial mistake people make is to think more miners, or more energy used, means more transactions can be handled. This is not true. Miners ◊strong{only} care about securing the chain and to prevent your transactions from being reverted or double spent. [^chargeback]
 
 In fact we could spend 100x more energy on securing the chain and process the same amount of transactions or we could spend 1/100th of the energy and process more transactions. Transaction throughput is a separate problem.
 

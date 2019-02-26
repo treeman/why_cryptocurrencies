@@ -1,7 +1,11 @@
 ◊(local-require pollen/tag)
 ◊(define title (select-from-metas 'title here))
 ◊(define subtitle (select-from-metas 'subtitle here))
-◊(define prev-page (previous here))
+◊(define prev-page
+   (let ((p (previous here)))
+     (if (equal? p 'index.html)
+         #f
+         p)))
 ◊(define next-page (next here))
 ◊(define parent-page (parent here))
 ◊(define here-children (children here))
@@ -11,9 +15,9 @@
       (apply ul
         (for/list ([child (in-list children)])
           (li (link (symbol->string child) (select-from-metas 'title child))))))))
-◊(define (page-ref page)
+◊(define (ref page txt)
   (->html
-    (link (symbol->string page) (select-from-metas 'title page))))
+    (link (symbol->string page) txt)))
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -34,25 +38,31 @@
         ◊when/splice[here-children]{
             ◊(make-subnav here-children)
         }
+      </article>
 
+      <footer>
         <nav class="movenav">
           ◊when/splice[prev-page]{
             <span class="prev">
-              ← ◊page-ref{◊|prev-page|}
-            </span>
-          }
-          ◊when/splice[next-page]{
-            <span class="next">
-              ◊page-ref{◊|next-page|} →
+              ◊(ref prev-page (string-append  "← " (select-from-metas 'title prev-page)))
             </span>
           }
           ◊when/splice[parent-page]{
             <span class="parent">
-              ◊page-ref{◊|parent-page|}
+              ◊(ref parent-page "Chapter")
+            </span>
+          }
+          <span class="home">
+            <a href="/">Home</a>
+          </span>
+
+          ◊when/splice[next-page]{
+            <span class="next">
+              ◊(ref next-page (string-append (select-from-metas 'title next-page) " →"))
             </span>
           }
         </nav>
-      </article>
+      </footer>
 
     </body>
 </html>
@@ -60,3 +70,4 @@
 ◊;→
 ◊;↑
 ◊;↓
+

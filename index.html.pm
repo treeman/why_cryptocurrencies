@@ -1,7 +1,7 @@
 #lang pollen
 
 ◊(define-meta template "homepage.html")
-◊(define-meta title "Why cryptocurrencies? The book")
+◊(define-meta title "Why cryptocurrencies?")
 
 ◊(define current-pagetree (load-pagetree "index.ptree"))
 ◊(define (node-toc pagenode)
