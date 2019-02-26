@@ -35,6 +35,7 @@ What is a cryptocurrency?
 * Remove index.html from prev link
 * Table
     Control left/center/right aligned?
+* Move post process to own rkt file
 
 # Styling
 
