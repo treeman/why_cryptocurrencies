@@ -13,7 +13,9 @@ Maybe this is why most people only see cryptocurrencies as a form of investment-
 
 Even if you'd like to know more, what hope does average Joe have when even the famous security technologist Bruce Schneier concludes that:
 
-> Honestly, cryptocurrencies are useless [^schneier]
+◊qt[#:author "Bruce Schneier" #:src "Blockchain and Trust" #:url "https://www.schneier.com/blog/archives/2019/02/blockchain_and_.html"]{
+  Honestly, cryptocurrencies are useless
+}
 
 It's almost a universal phenomena. I've heard these arguments from students, co-workers, friends, family and highly technical online communities:
 

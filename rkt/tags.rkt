@@ -35,3 +35,18 @@
                     `((class "centered"))
                     `()))
   `(table ,attrs ,@content))
+
+(define (epigraph  . txt)
+  `(div ((class "epigraph"))
+       ,@txt))
+
+(define (qt #:author author #:src src #:url [url #f] . txt)
+  (define ref (if url
+                  (link url src)
+                  src))
+  `(blockquote
+      ,@txt
+      (footer (span ((class "author")) ,author ", ")
+              (span ((class "src")) "“" ,ref "”"))))
+              ;(span ((class "src") ,src)))))
+

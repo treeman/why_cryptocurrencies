@@ -3,7 +3,11 @@
 ◊(define-meta title "Properties of a cryptocurrency")
 ◊(define-meta subtitle "asdf")
 
-"Bitcoin: A Peer-to-Peer Electronic Cash System"
+◊epigraph{
+  ◊qt[#:author "Satoshi Nakamoto" #:src "A Peer-to-Peer Electronic Cash System" #:url "/files/bitcoin.pdf"]{
+     What is needed is an electronic payment system based on cryptographic proof instead of trust, allowing any two willing parties to transact directly with each other without the need for a trusted third party.
+  }
+}
 
 Is the title of the Bitcoin whitepaper where Bitcoin's anonymous creator Satoshi Nakamoto describes how Bitcoin works.[^whitepaper] I think the title is the perfect explanation for what a cryptocurrency is: it's cash but in digital form.
 

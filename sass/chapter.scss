@@ -21,11 +21,28 @@
  * Quotes
  */
 .chapter blockquote {
+    //width: 100%;
     font-style: italic;
-    font-size: 95%;
+    //font-size: 95%;
     line-height: 1.4;
-    margin: 0 2em;
+    margin: 2em 2em;
 }
+
+.chapter blockquote > footer {
+    //width: 55%;
+    font-size: 80%;
+    text-align: right;
+    //float: right;
+    font-style: normal;
+}
+
+.chapter .epigraph {
+    margin: 2em 0;
+}
+//.chapter blockquote.epigraph {
+    //font-style: italic;
+    //line-height: 1.4;
+//}
 
 
 /*

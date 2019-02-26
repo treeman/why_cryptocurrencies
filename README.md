@@ -38,12 +38,13 @@ What is a cryptocurrency?
 
 # Styling
 
-* Use sections on the page? h1 for page title, h2 for section headings, h3 for subsections?
-* See code like: https://beautifulracket.com/
 * Sidenotes/marginnotes instead of footnotes
   https://groups.google.com/forum/#!topic/pollenpub/laWL4SWx0Zc
+
+* Quotes
+* Images
+* Code
+  see https://beautifulracket.com/
 * Style footnote links
 * Style homepage
-* Quotes
-* Code
-* Images
+* Use sections on the page? h1 for page title, h2 for section headings, h3 for subsections?
