@@ -72,18 +72,18 @@
   ;`(span ((class "mndref")) ,@def))
   ;`(span ((class "marginnote")) ,mn-ref))
 
-;(define+provide/contract (replace-notes x)
-(define (replace-notes x)
-  ;(txexpr-elements? . -> . txexpr-elements?)
-  ;(let loop ([x x])
-    ;(match x
-      ;[(? pair? x) #:when (not (attrs? x))
-                   ;(define xs (map loop (filter-not empty-string? x)))
-                   ;(append-map merge-newline-slice x)]
-      ;[_ x])))
-  (match x
-    [(? symbol?) 
-       (if (equal? x 'mn-wp)
-           "FOUND IT!"
-           x)]
-    [else x]))
+;;(define+provide/contract (replace-notes x)
+;(define (replace-notes x)
+  ;;(txexpr-elements? . -> . txexpr-elements?)
+  ;;(let loop ([x x])
+    ;;(match x
+      ;;[(? pair? x) #:when (not (attrs? x))
+                   ;;(define xs (map loop (filter-not empty-string? x)))
+                   ;;(append-map merge-newline-slice x)]
+      ;;[_ x])))
+  ;(match x
+    ;[(? symbol?) 
+       ;(if (equal? x 'mn-wp)
+           ;"FOUND IT!"
+           ;x)]
+    ;[else x]))
