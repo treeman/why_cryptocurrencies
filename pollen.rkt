@@ -2,20 +2,20 @@
 
 (require txexpr pollen/decode pollen/misc/tutorial pollen/tag)
 (require "rkt/tags.rkt")
+(require "rkt/post-process.rkt")
 
 (provide (all-from-out "rkt/tags.rkt"))
+(provide (all-from-out "rkt/post-process.rkt"))
 (provide (all-defined-out))
 
-(define (root . args)
-  (txexpr 'root empty (decode-elements args
-    #:txexpr-elements-proc decode-paragraphs
-    #:string-proc (compose1 smart-quotes smart-dashes))))
-
 (module setup racket/base
+  (require file/glob)
   (require racket/runtime-path)
-  (provide (all-defined-out))
-  (define template-prefix "site")
-  (define-runtime-path tags "rkt/tags.rkt")
-  (define cache-watchlist (list tags)))
 
+  (provide (all-defined-out))
+
+  (define template-prefix "site")
+
+  (define rkt-files (glob "rkt/*.rkt"))
+  (define cache-watchlist rkt-files))
 
