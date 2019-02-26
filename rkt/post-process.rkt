@@ -1,31 +1,10 @@
 #lang racket/base
 
 (require txexpr pollen/decode pollen/misc/tutorial pollen/tag)
+(require "tags.rkt")
 
-(provide (all-defined-out))
-
-
-(require racket/list
-         racket/match
-         sugar/list
-         sugar/define
-         sugar/test)
-
-;(define+provide/contract (replace-notes x)
-(define (replace-notes x)
-  ;(txexpr-elements? . -> . txexpr-elements?)
-  ;(let loop ([x x])
-    ;(match x
-      ;[(? pair? x) #:when (not (attrs? x))
-                   ;(define xs (map loop (filter-not empty-string? x)))
-                   ;(append-map merge-newline-slice x)]
-      ;[_ x])))
-  (match x
-    [(? symbol?) 
-       (if (equal? x 'mn-wp)
-           "FOUND IT!"
-           x)]
-    [else x]))
+;(provide (all-defined-out))
+(provide root)
 
 
 ; Replace "/index.html" with ""

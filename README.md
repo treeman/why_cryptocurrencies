@@ -32,8 +32,7 @@ What is a cryptocurrency?
 
 # Pollen
 
-* See tags.rkt and replace margin-note defs
-* Cleanup implementation and modulerize
+* Process text in marginnote, paragraphs quotes etc.
 * Create numbered sidenotes in the same fashion
 
 * Convert "..." to ellipsis

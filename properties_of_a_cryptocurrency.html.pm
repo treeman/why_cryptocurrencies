@@ -9,12 +9,13 @@
   }
 }
 
+
 In the beginning ◊mn{wp} there was nothing.
 
 ◊mndef["wp"]{
-  Some kind of monster.
+  Some kind of...
 
-  That I am.
+  Monster!
 }
 
 Is the title of the Bitcoin whitepaper where Bitcoin's anonymous creator Satoshi Nakamoto describes how Bitcoin works.[^whitepaper] I think the title is the perfect explanation for what a cryptocurrency is: it's cash but in digital form.
@@ -32,6 +33,8 @@ Cryptocurrencies have some other features as well:
   ◊li{You cannot counter-fit coins.}
   ◊li{You cannot double-spend coins. Said in another way you cannot copy a coin to send it to two different people.}
 }
+
+
 
 img: Bitcoin's emission rate. Monero's emission rate.
 
