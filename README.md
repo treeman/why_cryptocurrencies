@@ -32,6 +32,8 @@ What is a cryptocurrency?
 
 # Pollen
 
+* Convert "..." to ellipsis
+
 * Remove index.html from prev link
 * Table
     Control left/center/right aligned?
@@ -41,10 +43,11 @@ What is a cryptocurrency?
 * Sidenotes/marginnotes instead of footnotes
   https://groups.google.com/forum/#!topic/pollenpub/laWL4SWx0Zc
 
-* Quotes
 * Images
+
 * Code
   see https://beautifulracket.com/
 * Style footnote links
 * Style homepage
 * Use sections on the page? h1 for page title, h2 for section headings, h3 for subsections?
+
