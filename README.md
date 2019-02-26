@@ -32,6 +32,10 @@ What is a cryptocurrency?
 
 # Pollen
 
+* See tags.rkt and replace margin-note defs
+* Cleanup implementation and modulerize
+* Create numbered sidenotes in the same fashion
+
 * Convert "..." to ellipsis
 
 * Remove index.html from prev link
@@ -39,6 +43,8 @@ What is a cryptocurrency?
     Control left/center/right aligned?
 
 # Styling
+
+* Style margin notes
 
 * Sidenotes/marginnotes instead of footnotes
   https://groups.google.com/forum/#!topic/pollenpub/laWL4SWx0Zc

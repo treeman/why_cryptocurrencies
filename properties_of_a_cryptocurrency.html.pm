@@ -9,6 +9,14 @@
   }
 }
 
+In the beginning ◊mn{wp} there was nothing.
+
+◊mndef["wp"]{
+  Some kind of monster.
+
+  That I am.
+}
+
 Is the title of the Bitcoin whitepaper where Bitcoin's anonymous creator Satoshi Nakamoto describes how Bitcoin works.[^whitepaper] I think the title is the perfect explanation for what a cryptocurrency is: it's cash but in digital form.
 
 The important difference between a cryptocurrency and digital payments we have today is not having to trust a third party. Payments are peer-to-peer just as if you gave someone a bill or a gold coin. Sending money to people via your bank is not peer-to-peer as you rely on your bank to send it for you. VISA, PayPal, Swish, Apple Pay and any other digital payments have the same problem except cryptocurrencies.
