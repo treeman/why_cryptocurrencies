@@ -75,6 +75,11 @@
 ;(check-equal? (block-txexpr? `(span (p "txt"))) #t)
 ;(check-equal? (block-txexpr? `(span "txt")) #t)
 
+(define (expand? x)
+  (match x
+    [(list (list ...)) #t]
+    [else #f]))
+
 (define (expanded wrapped)
   (foldr (λ (x acc)
             (match x
@@ -180,4 +185,12 @@
 (printf "expanded:\n")
 (check-equal? (expanded `(foo)) `(foo))
 (check-equal? (expanded `((foo))) `(foo))
+
+(printf "check:\n")
+(check-equal? (expand? `(foo)) #f "base")
+(check-equal? (expand? `("a" "b")) #f "strings")
+(check-equal? (expand? `((div "a") (div "b"))) #f "divs")
+(check-equal? (expand? `((foo))) #t "nested")
+
+
 
