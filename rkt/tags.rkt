@@ -1,9 +1,12 @@
 #lang racket/base
 
 (require pollen/tag pollen/decode)
+;(require pollen/template)
 (require racket/match racket/string racket/list)
+(require "string-proc.rkt")
+(require "txexpr-elements-proc.rkt")
 
-(provide link subhead table epigraph qt mndef mn replace-notes)
+(provide link subhead table epigraph qt mndef mn)
 
 (define (link . args)
   (match args
@@ -55,7 +58,11 @@
 (define (mndef ref-in . def)
   (define id (format "mn-~a" ref-in))
   (define ref (string->symbol id))
-  (hash-set! mndefs ref def))
+  ; Need to avoid entity-proc which includes replace-notes
+  (define content (decode-elements def
+                                   #:txexpr-elements-proc txexpr-elements-proc
+                                   #:string-proc string-proc))
+  (hash-set! mndefs ref content))
 
 (define (mn ref-in)
   (define id (format "mn-~a" ref-in))
@@ -70,7 +77,18 @@
     [(? symbol?)
        (let ((def (hash-ref mndefs x #f)))
          (if def
-             `(span ((class "marginnote")) ,@def)
-             x))]
+             (let ((c `(span ,@def)))
+               ;`(span "inside"))
+               ;(->html c))
+             ;`(span ,@def)
+               ;(format "~a" c))
+              `(span ,@def))
+             ;`(span ((class "marginnote")) ,@def)
+              x))]
     [else x]))
+
+
+
+;; FIXME decode-paragraphs cannot handle this:
+;; `(span (p "inside")))
 

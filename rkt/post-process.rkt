@@ -1,17 +1,17 @@
 #lang racket/base
 
-(require txexpr pollen/decode pollen/misc/tutorial pollen/tag)
-(require "tags.rkt")
+(require "string-proc.rkt")
+(require "entity-proc.rkt")
+(require "txexpr-elements-proc.rkt")
 
-;(provide (all-defined-out))
-(provide root)
+(require txexpr pollen/decode)
 
-
-; Replace "/index.html" with ""
-; Replace "..." with ellipsis
+;; FIXME
+;; Replace "/index.html" with ""
+;; Replace "..." with ellipsis
 (define (root . args)
   (txexpr 'root empty (decode-elements args
-    #:txexpr-elements-proc decode-paragraphs
-    #:entity-proc replace-notes
-    #:string-proc (compose1 smart-quotes smart-dashes))))
+    #:txexpr-elements-proc txexpr-elements-proc
+    #:entity-proc entity-proc
+    #:string-proc string-proc)))
 
