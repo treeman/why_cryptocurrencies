@@ -1,0 +1,78 @@
+/*
+ * Quotes
+ */
+blockquote {
+    //width: 100%;
+    font-style: italic;
+    //font-size: 95%;
+    line-height: 1.4;
+    margin: 2em 2em;
+}
+
+blockquote > footer {
+    //width: 55%;
+    font-size: 80%;
+    text-align: right;
+    //float: right;
+    font-style: normal;
+}
+
+.epigraph {
+    margin: 2em 0;
+}
+//.chapter blockquote.epigraph {
+    //font-style: italic;
+    //line-height: 1.4;
+//}
+
+
+/*
+ * Horizontal rules
+ */
+.chapter hr {
+    margin: 1em auto;
+
+    border: 0;
+    border-bottom: 1px solid $body-hr-color;
+}
+
+
+/*
+ * Tables
+ */
+table {
+    @extend %sans-serif;
+    //@extend %serif;
+    // Need tabular numbers to align properly
+    font-feature-settings: 'kern' on, 'tnum' on;
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+}
+th, td {
+    text-align: left;
+    padding: 0.1em 1.5em 0.1em 0em;
+}
+table.centered {
+    margin: 0 auto;
+    margin-bottom: 1rem;
+}
+
+
+/*
+ * Notes
+ */
+label {
+    cursor: pointer;
+}
+input.margin-toggle { display: none; }
+label.margin-toggle:not(.sidenote-number) { display: none; }
+
+@media (max-width: 760px) {
+    .marginnote { display: none; }
+
+    label.margin-toggle:not(.sidenote-number) { display: inline; }
+    .margin-toggle:checked + .marginnote {
+        display: block;
+    }
+}
+
