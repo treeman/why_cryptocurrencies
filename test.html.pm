@@ -3,7 +3,7 @@
 ◊(define-meta template "homepage.html")
 ◊(define-meta title "test")
 
-◊article{
+◊article[#:class "chapter"]{
   ◊div{div}
 
   In the beginning ◊mn{wp} there was nothing.
@@ -13,8 +13,18 @@
 
     Monster!
   }
+
+◊sndef["two"]{
+    Second definition.
 }
 
-Oh yes.
+Oh yes. Time to test ◊sn{one} sidenotes. Do they work well?
+
+Maybe they ◊sn{two} do? Who knows?
+
+◊sndef["one"]{
+    One definition.
+}
 
 
+}

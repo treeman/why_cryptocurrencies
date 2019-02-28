@@ -5,7 +5,7 @@
 (require "post-process.rkt")
 (require "string-process.rkt")
 
-(provide link subhead table epigraph qt mndef mn root)
+(provide link subhead table epigraph qt mn mndef sn sndef root)
 
 (define (link . args)
   (match args
@@ -52,10 +52,11 @@
               (span ((class "src")) "“" ,ref "”"))))
 
 
-;;; Store margin-note definitions
-(define mndefs (make-hash))
-(define (mndef ref-in . def)
-  (define id (format "mn-~a" ref-in))
+;;; Margin-notes and side-notes
+(define note-defs (make-hash))
+
+(define (note-def prefix ref-in def)
+  (define id (format "~a-~a" prefix ref-in))
   (define ref (string->symbol id))
   ;; Not sure if we should expand paragraphs etc or not?
   (define content (decode-elements def
@@ -63,22 +64,47 @@
                                    ;;#:txexpr-elements-proc txexpr-elements-proc
                                    #:string-proc string-proc))
   ;(define content def)
-  (hash-set! mndefs ref content))
+  (hash-set! note-defs ref content)
+  "")
 
-(define (mn ref-in)
-  (define id (format "mn-~a" ref-in))
+(define (note-ref #:prefix prefix
+                  #:label-class label-class
+                  #:label-content label-content
+                  #:span-class span-class
+                  #:ref ref-in)
+  (define id (format "~a-~a" prefix ref-in))
   (define ref (string->symbol id))
   (define (replace ref)
-    (define def (hash-ref mndefs ref #f))
+    (define def (hash-ref note-defs ref #f))
     (unless def (error (format "missing ref '~s'" ref)))
     ;; Use splice-me to be able to return multiple elements inline.
     `(splice-me
-      (label ((class "margin-toggle") (for ,id)) "⊕")
+      (label ((class ,label-class) (for ,id)) ,label-content)
       (input ((id ,id) (class "margin-toggle") (type "checkbox")))
-      (span ((class "marginnote")) ,@def)))
+      (span ((class ,span-class)) ,@def)))
 
   (register-replacement ref replace)
   ref)
+
+(define (mndef ref-in . def)
+  (note-def "mn" ref-in def))
+
+(define (mn ref-in)
+  (note-ref #:prefix "mn"
+            #:label-class "margin-toggle"
+            #:label-content "⊕"
+            #:span-class "marginnote"
+            #:ref ref-in))
+
+(define (sndef ref-in . def)
+  (note-def "sn" ref-in def))
+
+(define (sn ref-in)
+  (note-ref #:prefix "sn"
+            #:label-class "margin-toggle sidenote-number"
+            #:label-content ""
+            #:span-class "marginnote"
+            #:ref ref-in))
 
 
 ;;; Root transformations
