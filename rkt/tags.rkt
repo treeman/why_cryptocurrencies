@@ -1,12 +1,11 @@
 #lang racket/base
 
-(require pollen/tag pollen/decode)
-;(require pollen/template)
+(require pollen/tag pollen/decode txexpr)
 (require racket/match racket/string racket/list)
-(require "string-proc.rkt")
-(require "txexpr-elements-proc.rkt")
+(require "post-process.rkt")
+(require "string-process.rkt")
 
-(provide link subhead table epigraph qt mndef mn replace-stubs)
+(provide link subhead table epigraph qt mndef mn root)
 
 (define (link . args)
   (match args
@@ -53,18 +52,6 @@
               (span ((class "src")) "“" ,ref "”"))))
 
 
-;; FIXME move
-(define replacements (make-hash))
-(define (register-replacement sym f)
-  (hash-set! replacements sym f))
-
-(define (replace-stubs x)
-  (let ((f (hash-ref replacements x #f)))
-    (if f
-      (f x)
-      x)))
-
-
 ;;; Store margin-note definitions
 (define mndefs (make-hash))
 (define (mndef ref-in . def)
@@ -92,4 +79,20 @@
 
   (register-replacement ref replace)
   ref)
+
+
+;;; Root transformations
+
+;; FIXME
+;; Replace "/index.html" with ""
+;; Replace "..." with ellipsis
+(define (root . args)
+  (define decoded (decode-elements args
+    #:txexpr-elements-proc decode-paragraphs
+    #:entity-proc replace-stubs
+    #:string-proc string-proc))
+
+  ;; Expand splices afterwards
+  ;; 'splice-me is consired inline so doesn't break paragraph calculations
+  (txexpr 'root empty (expand-splices decoded)))
 
