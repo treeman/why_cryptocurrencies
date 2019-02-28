@@ -6,7 +6,7 @@
 (require "string-proc.rkt")
 (require "txexpr-elements-proc.rkt")
 
-(provide link subhead table epigraph qt mndef mn)
+(provide link subhead table epigraph qt mndef mn replace-notes)
 
 (define (link . args)
   (match args
