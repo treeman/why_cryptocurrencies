@@ -32,7 +32,7 @@ What is a cryptocurrency?
 
 # Pollen
 
-* decode-paragraphs bug!
+* Insert symbol which we replace after paragraph generation instead to avoid paragraphs to fuck up.
 * Create numbered sidenotes in the same fashion
 
 * Convert "..." to ellipsis

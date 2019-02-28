@@ -283,22 +283,21 @@
       `(,in) ; Special case for when we're already done.
       (separate in)))
 
-(check-equal? (split-p '(div (p "txt")))
-                       '((div (p "txt"))))
-(check-equal? (split-p '("foo" (span "zing") (div "bar") "zam"))
-                       '(("foo" (span "zing")) (div "bar") ("zam")))
-(check-equal? (split-p '("foo" "\n\n" (div "bar") "\n\n" (div "zam")))
-                       '(("foo") (div "bar") (div "zam")))
-(check-equal? (split-p '("foo" "bar" (div "a") "quux" "zomg"))
-                       '(("foo" "bar") (div "a") ("quux" "zomg")))
-
+;(check-equal? (split-p '(div (p "txt")))
+                       ;'((div (p "txt"))))
+;(check-equal? (split-p '("foo" (span "zing") (div "bar") "zam"))
+                       ;'(("foo" (span "zing")) (div "bar") ("zam")))
+;(check-equal? (split-p '("foo" "\n\n" (div "bar") "\n\n" (div "zam")))
+                       ;'(("foo") (div "bar") (div "zam")))
+;(check-equal? (split-p '("foo" "bar" (div "a") "quux" "zomg"))
+                       ;'(("foo" "bar") (div "a") ("quux" "zomg")))
 
 (define (decode-p in)
   (define (prep-paragraph-flow elems)
     (decode-linebreaks (merge-newlines (trimf elems whitespace?))))
 
   (define elements (prep-paragraph-flow in))
-  ;(printf "elements: ~s\n" elements)
+  (printf "elements: ~s\n" elements)
 
   (if (block-txexpr? elements)
       elements
@@ -306,7 +305,7 @@
 
 (define (decode-p-elems elements)
   (define split (split-p elements))
-  ;(printf "split: ~v~n" split)
+  (printf "split: ~v~n" split)
 
   (define (wrap xs)
     (foldr (λ (x acc)
@@ -315,34 +314,101 @@
                 [_ (cons `(p ,@x) acc)]))
            '()
            xs))
-  (match split
-    [(list e) #:when (not (block-txexpr? e)) e] ; Avoid wrap on ("foo")
-    [else (wrap split)]))
+  (define res (match split
+                [(list e) #:when (not (block-txexpr? e)) e] ; Avoid wrap on ("foo")
+                [else (wrap split)]))
+  (printf "res: ~v~n" res)
+  res)
 
-(check-equal? (decode-p '(div (p "txt")))
-                        '(div (p "txt")))
-(check-equal? (decode-p '("First para" "\n\n" "Second para"))
-                        '((p "First para") (p "Second para")))
-(check-equal? (decode-p '("First para" "\n\n" "Second para" "\n" "Second line"))
-                        '((p "First para") (p "Second para" (br) "Second line")))
-(check-equal? (decode-p '("First para" "\n\n" (div "Second block")))
-                        '((p "First para") (div "Second block")))
-(check-equal? (decode-p '((div "First block") "\n\n" (div "Second block")))
-                        '((div "First block") (div "Second block")))
-(check-equal? (decode-p '("foo" "\n\n" (div "bar") (div "zam")))
-                        '((p "foo") (div "bar") (div "zam")))
-(check-equal? (decode-p '("foo" "\n\n" (div "bar") "\n\n" (div "zam")))
-                        '((p "foo") (div "bar") (div "zam")))
-(check-equal? (decode-p '("foo"))
-                        '("foo"))
-(check-equal? (decode-p '((div "foo")))
-                        '((div "foo")))
-(check-equal? (decode-p '("foo" "\n\n" (div "bar")))
-                        '((p "foo") (div "bar")))
-(check-equal? (decode-p '("foo" (div "bar")))
-                        '((p "foo") (div "bar")))
-(check-equal? (decode-p '("foo" (div "bar") "zam"))
-                        '((p "foo") (div "bar") (p "zam")))
-(check-equal? (decode-p '("foo" (span "zing") (div "bar") "zam"))
-                        '((p "foo" (span "zing")) (div "bar") (p "zam")))
+;(check-equal? (decode-p '(div (p "txt")))
+                        ;'(div (p "txt")))
+;(check-equal? (decode-p '("First para" "\n\n" "Second para"))
+                        ;'((p "First para") (p "Second para")))
+;(check-equal? (decode-p '("First para" "\n\n" "Second para" "\n" "Second line"))
+                        ;'((p "First para") (p "Second para" (br) "Second line")))
+;(check-equal? (decode-p '("First para" "\n\n" (div "Second block")))
+                        ;'((p "First para") (div "Second block")))
+;(check-equal? (decode-p '((div "First block") "\n\n" (div "Second block")))
+                        ;'((div "First block") (div "Second block")))
+;(check-equal? (decode-p '("foo" "\n\n" (div "bar") (div "zam")))
+                        ;'((p "foo") (div "bar") (div "zam")))
+;(check-equal? (decode-p '("foo" "\n\n" (div "bar") "\n\n" (div "zam")))
+                        ;'((p "foo") (div "bar") (div "zam")))
+;(check-equal? (decode-p '("foo"))
+                        ;'("foo"))
+;(check-equal? (decode-p '((div "foo")))
+                        ;'((div "foo")))
+;(check-equal? (decode-p '("foo" "\n\n" (div "bar")))
+                        ;'((p "foo") (div "bar")))
+;(check-equal? (decode-p '("foo" (div "bar")))
+                        ;'((p "foo") (div "bar")))
+;(check-equal? (decode-p '("foo" (div "bar") "zam"))
+                        ;'((p "foo") (div "bar") (p "zam")))
+;(check-equal? (decode-p '("foo" (span "zing") (div "bar") "zam"))
+                        ;'((p "foo" (span "zing")) (div "bar") (p "zam")))
+;(check-equal? (decode-p '(span (p "txt")))
+                        ;'(span (p "txt")))
+;(check-equal? (decode-p '((span (span (p "txt") (p "more")))))
+                        ;'((span (span (p "txt") (p "more")))))
+
+;elements:
+;'((div "div")
+  ;"\n\n"
+  ;"In the beginning "
+  ;(span (label ((class "margin-toggle")
+                ;(for "mn-wp")) "⊕")
+        ;(input ((id "mn-wp")
+                ;(class "margin-toggle")
+                ;(type "checkbox")))
+        ;(span (p "Some kind of...") (p "Monster!")))
+  ;" there was nothing.")
+;res:
+;'((div "div")
+  ;(p "In the beginning "
+     ;(span (label ((class "margin-toggle")
+                   ;(for "mn-wp")) "⊕")
+           ;(input ((id "mn-wp")
+                   ;(class "margin-toggle")
+                   ;(type "checkbox")))
+           ;(span (p "Some kind of...")
+                 ;(p "Monster!")))
+     ;" there was nothing."))
+
+;'((article (div "div")
+           ;(p "In the beginning "
+              ;(span (label ((class "margin-toggle") (for "mn-wp")) "⊕")
+                    ;(input ((id "mn-wp") (class "margin-toggle") (type "checkbox")))
+                    ;(span (p "Some kind of...") (p "Monster!")))
+              ;" there was nothing."))
+  ;(p "Oh yes."))
+
+;'(root (article (div "div")
+                ;(p "In the beginning "
+                   ;(span (label ((class "margin-toggle") (for "mn-wp")) "⊕")
+                         ;(input ((id "mn-wp") (class "margin-toggle") (type "checkbox")))
+                         ;(span (p "Some kind of...") (p "Monster!")))
+                   ;" there was nothing."))
+       ;(p "Oh yes."))
+
+;'(root (article (div "div")
+                ;(p "In the beginning "
+                   ;(span (label ((class "margin-toggle") (for "mn-wp")) "⊕") (input ((id "mn-wp") (class "margin-toggle") (type "checkbox"))) (span (p "Some kind of...") (p "Monster!"))) " there was nothing."))
+       ;(p "Oh yes."))
+
+;(define tx
+;'(root (article (div "div")
+                ;(p "In the beginning "
+                   ;(span (label ((class "margin-toggle") (for "mn-wp")) "⊕")
+                         ;(input ((id "mn-wp") (class "margin-toggle") (type "checkbox")))
+                         ;(span (p "Some kind of...") (p "Monster!")))
+                   ;" there was nothing."))
+       ;(p "Oh yes.")))
+
+;(require pollen/template)
+;(define html (->html tx))
+
+;(printf "tx:~n~v~n" tx)
+;(printf "html:~n~v~n" html)
+
+;<root><article><div>div</div><p>In the beginning <span><label class=\"margin-toggle\" for=\"mn-wp\">⊕</label><input id=\"mn-wp\" class=\"margin-toggle\" type=\"checkbox\"/><span><p>Some kind of...</p><p>Monster!</p></span></span> there was nothing.</p></article><p>Oh yes.</p></root>
 

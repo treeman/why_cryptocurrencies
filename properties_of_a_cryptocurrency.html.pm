@@ -3,14 +3,6 @@
 ◊(define-meta title "Properties of a cryptocurrency")
 ◊(define-meta subtitle "asdf")
 
-In the beginning ◊mn{wp} there was nothing.
-
-◊mndef["wp"]{
-  Some kind of...
-
-  Monster!
-}
-
 ◊epigraph{
   ◊qt[#:author "Satoshi Nakamoto" #:src "A Peer-to-Peer Electronic Cash System" #:url "/files/bitcoin.pdf"]{
      What is needed is an electronic payment system based on cryptographic proof instead of trust, allowing any two willing parties to transact directly with each other without the need for a trusted third party.

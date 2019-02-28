@@ -67,7 +67,7 @@
 (define (mn ref-in)
   (define id (format "mn-~a" ref-in))
   (define ref (string->symbol id))
-  `(span
+  `(splice-me
       (label ((class "margin-toggle") (for ,id)) "⊕")
       (input ((id ,id) (class "margin-toggle") (type "checkbox")))
       ,ref))
@@ -77,13 +77,7 @@
     [(? symbol?)
        (let ((def (hash-ref mndefs x #f)))
          (if def
-             (let ((c `(span ,@def)))
-               ;`(span "inside"))
-               ;(->html c))
-             ;`(span ,@def)
-               ;(format "~a" c))
-              `(span ,@def))
-             ;`(span ((class "marginnote")) ,@def)
+             `(aside ((class "marginnote")) ,@def)
               x))]
     [else x]))
 
