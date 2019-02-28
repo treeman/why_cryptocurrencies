@@ -6,7 +6,7 @@
 (require "string-proc.rkt")
 (require "txexpr-elements-proc.rkt")
 
-(provide link subhead table epigraph qt mndef mn replace-notes)
+(provide link subhead table epigraph qt mndef mn replace-stubs)
 
 (define (link . args)
   (match args
@@ -52,37 +52,44 @@
       (footer (span ((class "author")) ,author ", ")
               (span ((class "src")) "“" ,ref "”"))))
 
-;; Store margin-note definitions
-(define mndefs (make-hash))
 
+;; FIXME move
+(define replacements (make-hash))
+(define (register-replacement sym f)
+  (hash-set! replacements sym f))
+
+(define (replace-stubs x)
+  (let ((f (hash-ref replacements x #f)))
+    (if f
+      (f x)
+      x)))
+
+
+;;; Store margin-note definitions
+(define mndefs (make-hash))
 (define (mndef ref-in . def)
   (define id (format "mn-~a" ref-in))
   (define ref (string->symbol id))
-  ; Need to avoid entity-proc which includes replace-notes
+  ;; Not sure if we should expand paragraphs etc or not?
   (define content (decode-elements def
-                                   #:txexpr-elements-proc txexpr-elements-proc
+                                   ;; Firefox reports paragraphs inside as errors
+                                   ;;#:txexpr-elements-proc txexpr-elements-proc
                                    #:string-proc string-proc))
+  ;(define content def)
   (hash-set! mndefs ref content))
 
 (define (mn ref-in)
   (define id (format "mn-~a" ref-in))
   (define ref (string->symbol id))
-  `(splice-me
+  (define (replace ref)
+    (define def (hash-ref mndefs ref #f))
+    (unless def (error (format "missing ref '~s'" ref)))
+    ;; Use splice-me to be able to return multiple elements inline.
+    `(splice-me
       (label ((class "margin-toggle") (for ,id)) "⊕")
       (input ((id ,id) (class "margin-toggle") (type "checkbox")))
-      ,ref))
+      (span ((class "marginnote")) ,@def)))
 
-(define (replace-notes x)
-  (match x
-    [(? symbol?)
-       (let ((def (hash-ref mndefs x #f)))
-         (if def
-             `(aside ((class "marginnote")) ,@def)
-              x))]
-    [else x]))
-
-
-
-;; FIXME decode-paragraphs cannot handle this:
-;; `(span (p "inside")))
+  (register-replacement ref replace)
+  ref)
 

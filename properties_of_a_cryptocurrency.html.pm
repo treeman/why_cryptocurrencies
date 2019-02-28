@@ -10,7 +10,7 @@
 }
 
 
-Is the title of the Bitcoin whitepaper where Bitcoin's anonymous creator Satoshi Nakamoto describes how Bitcoin works.[^whitepaper] I think the title is the perfect explanation for what a cryptocurrency is: it's cash but in digital form.
+Is the title of the Bitcoin whitepaper where Bitcoin's anonymous creator Satoshi Nakamoto describes how Bitcoin works.◊mn{wp} I think the title is the perfect explanation for what a cryptocurrency is: it's cash but in digital form.
 
 The important difference between a cryptocurrency and digital payments we have today is not having to trust a third party. Payments are peer-to-peer just as if you gave someone a bill or a gold coin. Sending money to people via your bank is not peer-to-peer as you rely on your bank to send it for you. VISA, PayPal, Swish, Apple Pay and any other digital payments have the same problem except cryptocurrencies.
 
@@ -41,7 +41,8 @@ Move to next section?
 }
 
 
-[^whitepaper]: The whitepaper is surprisingly easy to read and I highly recommend you [read it][whitepaper].
+◊mndef["wp"]{
+    The whitepaper is surprisingly easy to read and I highly recommend you [read it][whitepaper].
 
     If you prefer there's a simplified explanation with annotations available here:
 
@@ -58,6 +59,7 @@ Move to next section?
     ◊code{b1674191a88ec5cdd733e4240a81803105dc412d6c6708d53ab94fc248f4f553}
 
     The whitepaper is also embedded in the blockchain. Instructions on how to parse it ◊link[whitepaper-blockchain]{here}.
+}
 
 ◊(define whitepaper
    `("https://www.bitcoin.com/bitcoin.pdf"

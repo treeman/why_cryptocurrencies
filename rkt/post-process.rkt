@@ -5,6 +5,7 @@
 (require "string-proc.rkt")
 (require "entity-proc.rkt")
 (require "txexpr-elements-proc.rkt")
+(require "tags.rkt")
 
 (require txexpr pollen/decode)
 (require racket/match racket/list)
@@ -33,9 +34,11 @@
 (define (root . args)
   (define decoded (decode-elements args
     #:txexpr-elements-proc txexpr-elements-proc
-    #:entity-proc entity-proc
+    ;#:entity-proc entity-proc
+    #:entity-proc replace-stubs
     #:string-proc string-proc))
+
   ;; Expand splices afterwards
-  ;; 'splice-me is also considered a block-txexpr to prevent content from being altered (too much)
+  ;; 'splice-me is consired inline so doesn't break paragraph calculations
   (txexpr 'root empty (expand-splices decoded)))
 

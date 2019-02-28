@@ -6,13 +6,13 @@
 ◊article{
   ◊div{div}
 
-In the beginning ◊mn{wp} there was nothing.
+  In the beginning ◊mn{wp} there was nothing.
 
-◊mndef["wp"]{
-  Some kind of...
+  ◊mndef["wp"]{
+    Some "kind" of...
 
-  Monster!
-}
+    Monster!
+  }
 }
 
 Oh yes.
