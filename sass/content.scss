@@ -3,37 +3,14 @@
  */
 blockquote {
     //width: 100%;
-    font-style: italic;
+    font-style: italic; // Regular shouldn't be italic?
     //font-size: 95%;
     line-height: 1.4;
     margin: 2em 2em;
 }
 
-blockquote > footer {
-    //width: 55%;
-    font-size: 80%;
-    text-align: right;
-    //float: right;
-    font-style: normal;
-}
-
 .epigraph {
     margin: 2em 0;
-}
-//.chapter blockquote.epigraph {
-    //font-style: italic;
-    //line-height: 1.4;
-//}
-
-
-/*
- * Horizontal rules
- */
-.chapter hr {
-    margin: 1em auto;
-
-    border: 0;
-    border-bottom: 1px solid $body-hr-color;
 }
 
 
@@ -61,18 +38,87 @@ table.centered {
 /*
  * Notes
  */
-label {
-    cursor: pointer;
+body {
+    counter-reset: sidenote-counter;
 }
+
+.sidenote, .marginnote {
+    @extend %sans-serif;
+    font-size: 0.8rem;
+    float: right;
+    clear: right;
+    margin-right: -50%;
+    width: 50%;
+    padding-left: 0.3em;
+    padding-bottom: 0.5em;
+    position: relative;
+}
+//.sidenote { background-color: lightblue; }
+//.marginnote { background-color: aqua; }
+
+.sidenote .snp:not(:first-child), .marginnote .snp:not(:first-child) {
+    margin-top: 1em;
+    display: inline-block;
+    clear: both;
+    width: 100%;
+}
+// No inline-block for the first in sidenotes to allow ref number
+// to live on the same line.
+.marginnote .snp {
+    clear: both;
+    width: 100%;
+    display: inline-block;
+}
+
+.sidenote-number {
+    counter-increment: sidenote-counter;
+}
+
+.sidenote-number:after, .sidenote:before {
+    font-family: $sans-serif-font-family;
+    font-feature-settings: "onum" off, "kern" on, "sups" on;
+}
+
+.sidenote-number:after {
+    content: counter(sidenote-counter);
+}
+.sidenote:before {
+    content: counter(sidenote-counter);
+    float: left;
+    padding-right: 0.2em;
+    display: inline;
+    //content: counter(sidenote-counter);
+    //position: relative;
+    //top: -10px;
+}
+
+
 input.margin-toggle { display: none; }
+label.sidenote-number { display: inline; }
 label.margin-toggle:not(.sidenote-number) { display: none; }
 
-@media (max-width: 760px) {
-    .marginnote { display: none; }
 
-    label.margin-toggle:not(.sidenote-number) { display: inline; }
-    .margin-toggle:checked + .marginnote {
+@media (max-width: 760px) {
+    label.margin-toggle:not(.sidenote-number) {
+        display: inline;
+    }
+    .sidenote, .marginnote {
+        display: none;
+    }
+    .margin-toggle:checked + .sidenote,
+    .margin-toggle:checked + .marginnote
+    {
         display: block;
+        float: left;
+        left: 1rem;
+        clear: both;
+        width: 95%;
+        margin: 1rem 2.5%;
+        vertical-align: baseline;
+        position: relative;
+    }
+    label {
+        cursor: pointer;
     }
 }
 

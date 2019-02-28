@@ -1,5 +1,6 @@
 .chapter {
     max-width: 800px;
+    //background-color: lightyellow;
 }
 
 /*
@@ -59,3 +60,15 @@
         color: $body-list-sym-color;
     }
 }
+
+
+/*
+ * Horizontal rules
+ */
+.chapter hr {
+    margin: 1em auto;
+
+    border: 0;
+    border-bottom: 1px solid $body-hr-color;
+}
+

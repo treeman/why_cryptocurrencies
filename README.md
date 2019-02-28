@@ -32,21 +32,19 @@ What is a cryptocurrency?
 
 # Pollen
 
-* Insert symbol which we replace after paragraph generation instead to avoid paragraphs to fuck up.
-* Create numbered sidenotes in the same fashion
-
 * Convert "..." to ellipsis
-
 * Remove index.html from prev link
 * Table
     Control left/center/right aligned?
 
 # Styling
 
-* Style margin notes
-
-* Sidenotes/marginnotes instead of footnotes
-  https://groups.google.com/forum/#!topic/pollenpub/laWL4SWx0Zc
+* Style notes
+    * Handle screen resize
+    * Style inline
+    * Link hover styling
+    * Margin note char
+    * Maybe offset everything to make space for sidenote?
 
 * Images
 

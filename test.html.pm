@@ -6,7 +6,7 @@
 ◊article[#:class "chapter"]{
   ◊div{div}
 
-  In the beginning ◊mn{wp} there was nothing.
+  In the beginning◊mn{wp} there was nothing.
 
   ◊mndef["wp"]{
     Some "kind" of...
@@ -18,12 +18,17 @@
     Second definition.
 }
 
-Oh yes. Time to test ◊sn{one} sidenotes. Do they work well?
+Oh yes. Time to test sidenotes.◊sn{one} Do they work well?◊sn{two}
 
-Maybe they ◊sn{two} do? Who knows?
+abcdefghijklmopqrstuvwxyz abcdefghijklmopqrstuvwxyz
+abcdefghijklmopqrstuvwxyz
+
+Additionally digital money isn’t like cash where you alone have possession. What you really have is an IOU from the bank where they promise to give you your money when ask for it. You cannot stuff the IOU in a mattress and have complete control of your money. But this is possible with a cryptocurrency—you can write down your keys to your wallet and store it wherever you want
 
 ◊sndef["one"]{
-    One definition.
+    One definition.  We can write a lot of things here.
+    
+    But should we allow paragraphs here? 
 }
 
 

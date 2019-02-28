@@ -58,12 +58,19 @@
 (define (note-def prefix ref-in def)
   (define id (format "~a-~a" prefix ref-in))
   (define ref (string->symbol id))
-  ;; Not sure if we should expand paragraphs etc or not?
-  (define content (decode-elements def
-                                   ;; Firefox reports paragraphs inside as errors
-                                   ;;#:txexpr-elements-proc txexpr-elements-proc
-                                   #:string-proc string-proc))
-  ;(define content def)
+
+  ;; Because p doesn't allow block elements
+  ;; and span doesn't allow p elements
+  ;; use a special span .snp element to emulate paragraphs.
+  ;; This is workaround is required as we want to inject a whole sidenote
+  ;; inline to use the checkbox css toggling to avoid javascript.
+  (define (wrap xs)
+    (list* 'span '((class "snp")) xs))
+  (define content
+    (decode-elements def
+                     #:txexpr-elements-proc (λ (x) (decode-paragraphs x wrap))
+                     #:string-proc string-proc))
+
   (hash-set! note-defs ref content)
   "")
 
@@ -103,7 +110,7 @@
   (note-ref #:prefix "sn"
             #:label-class "margin-toggle sidenote-number"
             #:label-content ""
-            #:span-class "marginnote"
+            #:span-class "sidenote"
             #:ref ref-in))
 
 
