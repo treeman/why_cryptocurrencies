@@ -9,10 +9,8 @@
         <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
     </head>
     <body>
-      ◊;(->html doc #:splice? #t)
-      ◊;(format "DOC ~v~n" doc)
-      ◊;(define html (->html doc))
-      ◊;(format "HTML ~v~n" html)
-      ◊(->html doc #:splice #t)
+      <div class="homepage">
+        ◊(->html doc #:splice #t)
+      </div
     </body>
 </html>

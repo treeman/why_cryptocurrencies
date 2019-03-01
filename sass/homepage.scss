@@ -1,0 +1,40 @@
+.homepage {
+    max-width: 800px;
+    padding-top: 1em;
+}
+
+.toc section:not(:first-child) {
+    padding-top: 1.2rem;
+}
+
+.toc {
+    a {
+        text-decoration: none;
+        background: none;
+        shadow: none;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+}
+
+.toc h1 {
+    font-size: 1.1rem;
+    //margin: 0;
+    //padding: 0;
+    //margin-bottom: 0.3rem;
+    //margin-bottom: 0.45rem;
+    //padding-bottom: 0.2rem;
+    //border-bottom: 1px dashed $body-hr-color;
+    //width: 14rem;
+}
+.toc ul {
+    margin-top: 0.5rem;
+    list-style: none;
+
+    li {
+        margin-left: 0.6rem;
+        margin-top: 0.3rem;
+    }
+}
+
