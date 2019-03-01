@@ -7,11 +7,15 @@ Whenever the topic of cryptocurrencies---where Bitcoin and Ethereum are the most
 
 If you're a cryptocurrency skeptic I honestly can't blame you. All you ever hear about it on the news is how ◊link[cnn-bitcoin-rallies]{Bitcoin rallies} and how ◊link[independent-worthless]{Cryptocurrencies are about to become worthless}. Maybe they'll throw in claims that it's ◊link[cnn-environment]{an environmental disaster} or only used for ◊link[independent-illegal]{illegal purposes} for good measure.
 
-Curiously enough they don't explain what cryptocurrencies are or what they can be useful for. But it's to be expected as news today mostly is on eye catching stories, it's why unsettling events like murder or terrorist attacks gain en extreme amount of attention although they're in reality very rare.
+Curiously enough they don't explain what cryptocurrencies are or what they can be useful for. But it's to be expected as news today mostly is on eye-catching stories, ◊mn{news} it's why unsettling events like murder or terrorist attacks gain en extreme amount of attention although they're in reality very rare.
 
-Maybe this is why most people only see cryptocurrencies as a form of investment---after all there's few things as interesting as the possibility of becoming rich very quickly.
+◊ndef["news"]{
+    It's interesting when the news talks about something you have a good understanding of: they're often completely wrong. Makes you wonder, how wrong are they about things you don't know about?
+}
 
-Even if you'd like to know more, what hope does average Joe have when even the famous security technologist Bruce Schneier concludes that:
+Maybe this is why most people --- even cryptocurrency fans --- only see cryptocurrencies as a form of investment. After all there's few things as interesting as the possibility of becoming rich very quickly.
+
+Even if you'd like to know more what hope does average Joe have when even the famous security technologist Bruce Schneier concludes that:
 
 ◊qt[#:author "Bruce Schneier" #:src "Blockchain and Trust" #:url "https://www.schneier.com/blog/archives/2019/02/blockchain_and_.html"]{
   Honestly, cryptocurrencies are useless
@@ -29,20 +33,21 @@ Even if you'd like to know more, what hope does average Joe have when even the f
   ◊li{There's no legal use case}
 }
 
-It seems everyone has an opinion but few seem capable of explaining what it is or what it does differently.
-Of course most aren't dismissive but simply don't understand what it's all about. Many are curious and want to learn more.
+It seems everyone has an opinion but few seem capable of explaining what it is or what it does differently.  Of course most aren't dismissive but simply don't understand what it's all about. Many are curious and want to learn more.
 
-As a cryptocurrency fan I'm often in the position to defend it and try to bring up how it can be useful, what use cases exist and even how it can help society. I've tried to answer these questions several times but it gets old fast. Hence this book.
+With this book I hope to show how cryptocurrencies can be useful, what use cases exist and how it can help people I'm now writing this book. I'm not trying to make anyone a cryptocurrency fan, I just hope to give bring some nuance and to help answer questions curious people have about cryptocurrencies.
+
+And I must admit I'm also being selfish, writing a book is on my bucket list.
 
 
 ◊subhead{What this book is}
 
-This book means to describe what cryptocurrencies are useful for and what value they can bring.
+This book tries to describe what cryptocurrencies are useful for and what value they can bring.
 
 With examples, stories and discussions I will try to show you that:
 
 ◊ul{
-  ◊li{Cryptocurrencies aren't just scams}
+  ◊li{Cryptocurrencies aren't just scams◊sn{scams}}
   ◊li{It's more than just a speculative asset}
   ◊li{There are legal use cases}
   ◊li{They do many things better than any alternative}
@@ -51,7 +56,7 @@ With examples, stories and discussions I will try to show you that:
 
 ◊subhead{What this book isn't}
 
-There are many problems with cryptocurrencies as they exist today. This isn't an attempt to explain them away or to look at work being done to counter them. If you're curious here are some of the biggest problems as I see it:
+There are many problems with cryptocurrencies as they exist today. This isn't an attempt to explain them away or to look at work being done to counter them. For completeness hare are some of the biggest problems as I see it:
 
 ◊ul{
   ◊li{How can a cryptocurrency scale globally?}
@@ -60,7 +65,9 @@ There are many problems with cryptocurrencies as they exist today. This isn't an
   ◊li{User experience is far from the level of VISA or Apple Pay.}
 }
 
-Instead we'll take a look at what cryptocurrencies are useful for today and what value they can bring if they fulfil their potential.
+Instead of focusing on the problems we'll take a look at what cryptocurrencies are useful for today and what value they can bring if they fulfil their potential.
+
+A problem focused view is excellent for an engineer and a problem solver but it can be very limiting as well. For example the computer and the internet had many problems and drawbacks when they first were invented and look at where we are now.
 
 We'll not go into technical detail and stick to high level concepts. Neither will we focus on a single implementation---Bitcoin is the first cryptocurrency but there are hundreds more◊sn{cryptos}---this is about the properties of a cryptocurrency which can be provided in several different ways.
 
@@ -111,7 +118,11 @@ There is also an ◊link[rss]{RSS feed} if you prefer that.
 
 
 ◊ndef["cryptos"]{
-    Although there are hundreds and perhaps thousands most are just copies or outright scams. Be safe out there.
+    Although there are hundreds and perhaps thousands most are just copies or outright scams.
+}
+
+◊ndef["scams"]{
+    But take care, there are ◊strong{lot's} of scams out there.
 }
 
 
