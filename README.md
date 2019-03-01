@@ -23,6 +23,19 @@ What is a cryptocurrency?
     * Reformat/restructure
     * Rewrite functions of money
 
+# TODO
+
+Before Veronica:
+* Polish sidenote todos in Why this book
+
+Before Jimmie:
+* How does cryptocurrencies work?
+* Properties of a cryptocurrency
+
+
+
+
+
 # Site
 
 * Rewrite in pollen
