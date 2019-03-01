@@ -46,7 +46,7 @@ Move to next section?
 
     There have been suggestions to ◊link[alter-wp]{alter the whitepaper hosted on bitcoin.org}. Yes it's completely unacceptable but here we are. If you want to make sure you're reading the original one you can compare the pdf's sha256 hash with this:
 
-    ◊code{b1674191a88ec5cdd733e4240a81803105dc412d6c6708d53ab94fc248f4f553}
+    ◊icode{b1674191a88ec5cdd733e4240a81803105dc412d6c6708d53ab94fc248f4f553}
 
     If you want to go even further the whitepaper is also embedded in the blockchain which guarantees nobody can change it, as long as you know how to retrieve it.  Instructions available ◊link[wp-blockchain]{here}.
 }
