@@ -20,6 +20,25 @@
     }
 }
 
+.where a {
+    text-decoration: none;
+    background: none;
+    shadow: none;
+}
+.where a:hover {
+    text-decoration: underline;
+}
+
+.where {
+    font-size: 0.8rem;
+    @extend %sans-serif;
+}
+.where .home {
+    @extend %sans-serif-c;
+}
+.where .up {
+}
+
 
 /*
  * Lists
@@ -277,7 +296,7 @@ $sidenote-float-width: 1280px;
     }
 }
 .side-space > header {
-    //display: none;
+    display: none;
     margin: 1rem 0;
 
     h1 {
@@ -297,6 +316,7 @@ $sidenote-float-width: 1280px;
 }
 
 .side-space > h1 {
+    display: none;
     font-size: 0.9rem;
     //margin-top: 2rem;
     margin-bottom: 0.45rem;
@@ -306,6 +326,7 @@ $sidenote-float-width: 1280px;
 }
 .side-space {
     ul {
+        display: none;
         list-style: none;
     }
     li {

@@ -28,9 +28,14 @@
     </head>
     <body>
       <article class="chapter">
+        <nav class="where">
+          <a href="/" class="home">Why Cryptocurrencies?</a>
+          /
+          <a href="#" class="up">What is a cryptocurrency?</a>
+        </nav>
         <header>
-            <h1>◊|title|</h1>
-            <h2>◊|subtitle|</h2>
+          <h1>◊|title|</h1>
+          <h2>◊|subtitle|</h2>
         </header>
 
         ◊(->html doc #:splice? #t)
@@ -60,7 +65,8 @@
         <nav class="movenav">
           ◊when/splice[prev-page]{
             <span class="prev">
-              ◊(ref prev-page (string-append  "← " (select-from-metas 'title prev-page)))
+              ◊;(ref prev-page (string-append  "← " (select-from-metas 'title prev-page)))
+              ◊(ref prev-page "← Previous page")
             </span>
           }
           ◊when/splice[parent-page]{
@@ -74,7 +80,8 @@
 
           ◊when/splice[next-page]{
             <span class="next">
-              ◊(ref next-page (string-append (select-from-metas 'title next-page) " →"))
+              ◊(ref next-page "Next page →")
+              ◊;(ref next-page (string-append (select-from-metas 'title next-page) " →"))
             </span>
           }
         </nav>
