@@ -40,6 +40,11 @@ What is a cryptocurrency?
 
 # Styling
 
+* Book title to the side
+* Simple nav links to the side
+* Use small caps somewhere?
+* Left/right links at the side of the screen
+
 * Link bullet points break in proximity to sidenotes
 * Quotes
 * Images
