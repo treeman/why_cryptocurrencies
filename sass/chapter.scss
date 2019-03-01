@@ -80,15 +80,28 @@
  * Quotes
  */
 blockquote {
-    //width: 100%;
-    font-style: italic; // Regular shouldn't be italic?
-    //font-size: 95%;
+    font-size: 95%;
     line-height: 1.4;
     margin: 2em 2em;
+}
+blockquote > footer {
+    font-size: 80%;
+    text-align: right;
+}
+blockquote > footer > cite {
+    font-style: italic;
 }
 
 .epigraph {
     margin: 2em 0;
+
+    blockquote {
+        font-size: 1rem;
+        font-style: italic; // Regular shouldn't be italic?
+    }
+    blockquote > footer {
+        font-style: normal;
+    }
 }
 
 
