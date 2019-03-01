@@ -25,6 +25,20 @@ What is a cryptocurrency?
 
 # Site
 
+* Rewrite in pollen
+    https://news.ycombinator.com/item?id=15335010
+    https://docs.racket-lang.org/pollen/
+
+* Review tufte-css
+    https://edwardtufte.github.io/tufte-css/
+    * Restyle quotes
+    * Sidenotes
+    * Slightly larger text on smaller screens
+    * Fullscreen images
+    * Notes next to images
+    * Images in sidenotes?
+    * Turn footnotes into sidenotes
+
 * Email subscription
 * Navigation sidebars
 * Next/prev footer nav

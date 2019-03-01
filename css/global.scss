@@ -1,0 +1,144 @@
+* {
+    // Predictable styling.
+    margin: 0;
+    padding: 0;
+    // Better box model, includes border in width calculations.
+    box-sizing: border-box;
+    // Flexbox overrides min-width which makes <pre> not overflow properly
+    // https://weblog.west-wind.com/posts/2016/Feb/15/Flexbox-Containers-PRE-tags-and-managing-Overflow
+    min-width: 0;
+}
+
+
+html {
+    font-size: 22px;
+    line-height: 1.45;
+}
+
+@media only screen and (max-width: 700px) {
+    html {
+        font-size: 20px;
+    }
+}
+@media only screen and (max-width: 600px) {
+    html {
+        font-size: 18px;
+    }
+}
+@media only screen and (max-width: 520px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+
+/*
+ * Main body
+ */
+body {
+    @extend %serif;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    color: $body-font-color;
+    background-color: $body-background-color;
+
+    margin: 1em;
+}
+
+
+p {
+    margin-bottom: 1em;
+}
+
+
+/*
+ * Headers
+ */
+h1, h2, h3, h4 {
+    @extend %sans-serif;
+    line-height: 1;
+}
+h1 {
+    font-size: 1.45rem;
+}
+h2 {
+    font-size: 1.22rem;
+    margin-top: 1.2em;
+    margin-bottom: 0.3em;
+}
+h3 {
+    font-size: 1.1rem;
+    margin-top: 1em;
+    margin-bottom: 0.2em;
+}
+h4 {
+    font-size: 0.91rem;
+    margin-top: 1em;
+    margin-bottom: 0.2em;
+}
+
+
+/*
+ * Links: replicate underline that clears descenders
+ * Source: https://edwardtufte.github.io/tufte-css/
+ * who credits Adam Schwartz
+ */
+@mixin a-text-shadow($col) {
+    text-shadow: 0.03em 0 $col, -0.03em 0 $col, 0 0.03em $col, 0 -0.03em $col,
+                 0.06em 0 $col, -0.06em 0 $col, 0.09em 0 $col, -0.09em 0 $col,
+                 0.12em 0 $col, -0.12em 0 $col, 0.15em 0 $col, -0.15em 0 $col;
+}
+
+@mixin a-background($col) {
+    background: -webkit-linear-gradient($body-background-color, $body-background-color),
+        -webkit-linear-gradient($body-background-color, $body-background-color),
+        -webkit-linear-gradient($col, $col);
+    background: linear-gradient($body-background-color, $body-background-color),
+        linear-gradient($body-background-color, $body-background-color),
+        linear-gradient($col, $col);
+
+    $background-size: 0.05em 1px, 0.05em 1px, 1px 1px;
+    -webkit-background-size: $background-size;
+    -moz-background-size: $background-size;
+    background-size: $background-size;
+
+    background-repeat: no-repeat, no-repeat, repeat-x;
+    @include a-text-shadow($body-background-color);
+    background-position: 0% 93%, 100% 93%, 0% 93%;
+}
+
+a:link {
+    text-decoration: none;
+    @include a-background(#333);
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+    a:link { background-position-y: 87%, 87%, 87%; }
+}
+
+a:link::selection, a:link::-moz-selection {
+    @include a-text-shadow($body-selection-color);
+    background: $body-selection-color;
+}
+
+a:link, a:visited {
+    color: inherit;
+}
+a:hover {
+    // Colorize the underline, different from tufte-css
+    @include a-background($body-link-hover-color);
+}
+
+
+/*
+ * Selection
+ */
+::selection {
+  background: $body-selection-color; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: $body-selection-color; /* Gecko Browsers */
+}
+
