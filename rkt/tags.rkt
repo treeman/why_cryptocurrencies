@@ -5,7 +5,7 @@
 (require "post-process.rkt")
 (require "string-process.rkt")
 
-(provide link subhead table epigraph qt mn sn ndef root icode code)
+(provide (all-defined-out))
 
 (define (link . args)
   (match args
@@ -55,6 +55,9 @@
   `(code ,@args))
 (define (code . args)
   `(pre (code ,@args)))
+
+(define (sans . args)
+  `(span ((class "sans")) ,@args))
 
 
 ;;; Margin-notes and side-notes

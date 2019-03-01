@@ -32,7 +32,6 @@ What is a cryptocurrency?
 
 # Pollen
 
-* merge sndef and mndef?, bothersome to switch between
 * Convert "..." to ellipsis
 * Remove index.html from prev link
 * Table
@@ -40,16 +39,10 @@ What is a cryptocurrency?
 
 # Styling
 
-* Able to tag sans-serif fonts (see how does cryptocurrencies work?)
-* Book title to the side
-* Simple nav links to the side
-* Use small caps somewhere?
-* Left/right links at the side of the screen
-* Offset bottom links to be below article?
-
 * Link bullet points break in proximity to sidenotes
 * Quotes
 * Images
+* Left/right links at the side of the screen
 
 * Code
   see https://beautifulracket.com/

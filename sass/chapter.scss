@@ -176,6 +176,14 @@ pre {
 }
 
 
+/*
+ * Misc
+ */
+.sans {
+    @extend %sans-serif;
+}
+
+
 
 /*
  * Side content

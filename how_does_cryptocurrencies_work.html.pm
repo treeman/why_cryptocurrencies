@@ -23,7 +23,7 @@ When Alice wants to send 500 SEK to Bob the bank simply updates the ledger:
   Bob         1 500 SEK (+500 SEK)
 }
 
-Cryptocurrencies work this way as well. In fact the ledger in a cryptocurrency, often referred to as the "blockchain", contains the balance of all addresses. [^stores-transactions]
+Cryptocurrencies work this way as well. In fact the ledger in a cryptocurrency, often referred to as the "blockchain", contains the balance of all addresses. ◊mn{stores-transactions}
 
 
 ◊subhead{Your keys, your coins}
@@ -37,7 +37,7 @@ The keys uses a ◊link[public-key-cryptography]{public-key cryptography} scheme
 
 So far cryptocurrencies doesn't do anything new. The hard problem is how do you prevent someone from copying a coin and sending the copies the different receivers?
 
-For example Alice wants to buy a computer from Bob and wants to pay with Bitcoin. The computer costs 1 BTC and the Bitcoin ledger looks like this:
+For example Alice wants to buy a computer from Bob and wants to pay with Bitcoin. The computer costs ◊sans{1 BTC} and the Bitcoin ledger looks like this:
 
 ◊table[#:header #f]{
   Alice 1     1 BTC
@@ -45,7 +45,7 @@ For example Alice wants to buy a computer from Bob and wants to pay with Bitcoin
   Bob         0 BTC
 }
 
-What Alice tries to do is send 1 BTC to the merchant Bob and then send the same 1 BTC to her other address "Alice 2"---you can have as many addresses as you want.
+What Alice tries to do is send ◊sans{1 BTC} to the merchant Bob and then send the same ◊sans{1 BTC} to her other address "Alice 2"---you can have as many addresses as you want.
 
 If we didn't prevent this the ledger might look like this:
 
@@ -55,7 +55,7 @@ If we didn't prevent this the ledger might look like this:
   Bob         1 BTC (+1 BTC)
 }
 
-We copied our coin and printed 1 BTC out of thin air so now the ledger contains a negative balance. This is known as "double spending".
+We copied our coin and printed ◊sans{1 BTC} out of thin air so now the ledger contains a negative balance. This is known as "double spending".
 
 This isn't really a problem with physical cash since you can't just copy gold coins or paper notes. It isn't a problem for banks either since the bank can just deny one or both of the transactions.
 
@@ -77,7 +77,7 @@ This is the same problem known as the Byzantine Generals Problem:
 
 If you've heard about cryptocurrencies then maybe you've also heard about cryptocurrency miners or Bitcoin miners.
 
-A crucial mistake people make is to think more miners, or more energy used, means more transactions can be handled. This is not true. Miners ◊strong{only} care about securing the chain and to prevent your transactions from being reverted or double spent. [^chargeback]
+A crucial mistake people make is to think more miners, or more energy used, means more transactions can be handled. This is not true. Miners ◊strong{only} care about securing the chain and to prevent your transactions from being reverted or double spent. ◊mn{chargeback}
 
 In fact we could spend 100x more energy on securing the chain and process the same amount of transactions or we could spend 1/100th of the energy and process more transactions. Transaction throughput is a separate problem.
 
@@ -87,15 +87,19 @@ In fact we could spend 100x more energy on securing the chain and process the sa
 When you want to send someone a transaction you don't
 
 
-[^chargeback]: In the credit card world this is known as ◊link[chargeback-fraud]{chargeback fraud}.
+◊ndef["chargeback"]{
+    In the credit card world reverting transactions leads to ◊link[chargeback-fraud]{chargeback fraud}.
+}
 
 
-[^stores-transactions]: It's a slight simplification to say that the blockchain stores balances.  It actually stores all transactions from which you can calculate all balances.
+◊ndef["stores-transactions"]{
+    It's a slight simplification to say the blockchain stores balances.  It actually stores all transactions from which you can calculate all balances.
 
     To lighten the load you can run your software in a pruned mode which discards the transactions and only keeps the balances.
+}
 
 ◊(define chargeback-fraud "https://en.wikipedia.org/wiki/Chargeback_fraud")
 ◊(define public-key-cryptography "https://en.wikipedia.org/wiki/Public-key_cryptograph://en.wikipedia.org/wiki/Public-key_cryptography ")
-◊(define next-chapter "/properties_of_a_cryptocurrency")
+◊(define next-chapter "/properties_of_a_cryptocurrency.html")
 ◊(define byzantine "https://en.wikipedia.org/wiki/Byzantine_fault_tolerance")
 
