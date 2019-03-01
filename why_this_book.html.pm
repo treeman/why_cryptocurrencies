@@ -76,14 +76,14 @@ If you want to receive an email when I post a new chapter please ◊link[subscri
 There is also an ◊link[rss]{RSS feed} if you prefer that.
 
 
-◊sndef["schneier"]{
+◊ndef["schneier"]{
     Schneier brings an interesting perspective and he's right about one very important aspect: Contrary to popular belief cryptocurrencies doesn't remove all trust. It just removes and shifts some.
 
     To counter his point that "cryptocurrencies are useless" all you have to do is provide one counterexample where they're useful. That's what this book is about.
 }
 
 
-◊sndef["beanies"]{
+◊ndef["beanies"]{
     TODO How does it relate to cryptos?
 
     At it's height people would sell---and buy---these toys at 10x their original price and was responsible for 10% of eBay's sales. The creator was at one point one of the richest men in the world.
@@ -94,7 +94,7 @@ There is also an ◊link[rss]{RSS feed} if you prefer that.
 }
 
 
-◊sndef["tulips"]{
+◊ndef["tulips"]{
     TODO Describe tulip fever and how it relates to cryptocurrencies.
 
     Although commonly refered to it wasn't as bad as it's often portrayed as. But it was still quite bad.
@@ -103,14 +103,14 @@ There is also an ◊link[rss]{RSS feed} if you prefer that.
 }
 
 
-◊sndef["monero"]{
+◊ndef["monero"]{
     Bitcoin, like almost all cryptocurrencies, use a public ledger where you can lookup how many coins any address has and you can also trace all coins to the beginning of time.
 
     There are cryptocurrencies like ◊link[Monero]{Monero} which hides inputs, outputs and amounts for all transactions making this impossible.
 }
 
 
-◊sndef["cryptos"]{
+◊ndef["cryptos"]{
     Although there are hundreds and perhaps thousands most are just copies or outright scams. Be safe out there.
 }
 

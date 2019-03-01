@@ -5,7 +5,7 @@
 (require "post-process.rkt")
 (require "string-process.rkt")
 
-(provide link subhead table epigraph qt mn mndef sn sndef root icode code)
+(provide link subhead table epigraph qt mn sn ndef root icode code)
 
 (define (link . args)
   (match args
@@ -60,8 +60,8 @@
 ;;; Margin-notes and side-notes
 (define note-defs (make-hash))
 
-(define (note-def prefix ref-in def)
-  (define id (format "~a-~a" prefix ref-in))
+(define (ndef ref-in . def)
+  (define id (format "nd-~a" ref-in))
   (define ref (string->symbol id))
 
   ;; Because p doesn't allow block elements
@@ -79,12 +79,11 @@
   (hash-set! note-defs ref content)
   "")
 
-(define (note-ref #:prefix prefix
-                  #:label-class label-class
+(define (note-ref #:label-class label-class
                   #:label-content label-content
                   #:span-class span-class
                   #:ref ref-in)
-  (define id (format "~a-~a" prefix ref-in))
+  (define id (format "nd-~a" ref-in))
   (define ref (string->symbol id))
   (define (replace ref)
     (define def (hash-ref note-defs ref #f))
@@ -98,22 +97,14 @@
   (register-replacement ref replace)
   ref)
 
-(define (mndef ref-in . def)
-  (note-def "mn" ref-in def))
-
 (define (mn ref-in)
-  (note-ref #:prefix "mn"
-            #:label-class "margin-toggle"
+  (note-ref #:label-class "margin-toggle"
             #:label-content "†"
             #:span-class "marginnote"
             #:ref ref-in))
 
-(define (sndef ref-in . def)
-  (note-def "sn" ref-in def))
-
 (define (sn ref-in)
-  (note-ref #:prefix "sn"
-            #:label-class "margin-toggle sidenote-number"
+  (note-ref #:label-class "margin-toggle sidenote-number"
             #:label-content ""
             #:span-class "sidenote"
             #:ref ref-in))

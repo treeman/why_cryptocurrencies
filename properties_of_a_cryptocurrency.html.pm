@@ -39,7 +39,7 @@ Move to next section?
 }
 
 
-◊sndef["wp"]{
+◊ndef["wp"]{
     The whitepaper is surprisingly easy to read and I highly recommend you ◊link[wp]{read it}. If you prefer there's a simplified explanation with annotations ◊link[ann-wp]{available here}. And in ◊link[pod-wp]{podcast form}.
 
     Note that the whitepaper was created in 2008 and some terminology and implementation details have changed, but the high level description is just as true today more than 10 years later.
@@ -65,7 +65,7 @@ Move to next section?
    `("https://bitcoin.stackexchange.com/questions/35959/how-is-the-whitepaper-decoded-from-the-blockchain-tx-with-1000x-m-of-n-multisi/35970"
      "Stackexchange: How is the whitepaper decoded from the blockchain"))
 
-◊sndef["keys"]{
+◊ndef["keys"]{
     But please make sure to encrypt your seed otherwise a thief can easily steal your coins if he finds it.
 }
 
