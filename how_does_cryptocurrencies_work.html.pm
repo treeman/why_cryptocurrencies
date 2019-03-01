@@ -15,7 +15,7 @@ If you want to create a digital currency you only really need to keep track of h
   Bob         1 000 SEK
 }
 
-When Alice wants to send 500 SEK to Bob the bank simply updates the ledger:
+When Alice wants to send ◊sans{500 SEK} to Bob the bank simply updates the ledger:
 
 ◊table{
   Person      Swedish krona (SEK)
@@ -45,7 +45,11 @@ For example Alice wants to buy a computer from Bob and wants to pay with Bitcoin
   Bob         0 BTC
 }
 
-What Alice tries to do is send ◊sans{1 BTC} to the merchant Bob and then send the same ◊sans{1 BTC} to her other address "Alice 2"---you can have as many addresses as you want.
+What Alice tries to do is send ◊sans{1 BTC} to the merchant Bob and then send the same ◊sans{1 BTC} to her other address ◊sans{Alice 2}.◊mn{addresses}
+
+◊ndef["addresses"]{
+    You can have as many addresses you want. This is a consequence of the permissionless nature of Bitcoin.
+}
 
 If we didn't prevent this the ledger might look like this:
 
@@ -55,7 +59,7 @@ If we didn't prevent this the ledger might look like this:
   Bob         1 BTC (+1 BTC)
 }
 
-We copied our coin and printed ◊sans{1 BTC} out of thin air so now the ledger contains a negative balance. This is known as "double spending".
+We copied our coin and printed ◊sans{1 BTC} out of thin air so now the ledger contains a negative balance. This is a form of "double spending", spending the same coin twice.
 
 This isn't really a problem with physical cash since you can't just copy gold coins or paper notes. It isn't a problem for banks either since the bank can just deny one or both of the transactions.
 
@@ -84,7 +88,15 @@ In fact we could spend 100x more energy on securing the chain and process the sa
 
 ◊subhead{Where do your transactions go?}
 
-When you want to send someone a transaction you don't
+When you want to pay a merchant you don't send it directly to them like you would pay them with cash in hand. Instead you send the transaction out to the network which gets forwarded to the miners who then adds it to the blockchain.
+
+The merchant can now look up the transaction in the blockchain to confirm they've received it and can then give you the goods without fear of the transaction being reversed.◊mn{reversed}
+
+◊ndef["reversed"]{
+    It's not completely true that there is no risk of fraud. The security model isn't absolute but probabilistic and the deeper in the blockchain the transaction is the harder it is to reverse.
+
+    In ◊link[wp]{the whitepaper} 6 confirmations---roughly 1 hour---is recommended to be sure you won't get defrauded. Today with the considerable security today of the Bitcoin blockchain a single confirmation is enough for most normal payments.
+}
 
 
 ◊ndef["chargeback"]{

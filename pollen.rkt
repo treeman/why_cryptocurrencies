@@ -2,8 +2,10 @@
 
 (require txexpr pollen/decode pollen/misc/tutorial pollen/tag)
 (require "rkt/tags.rkt")
+(require "rkt/links.rkt")
 
 (provide (all-from-out "rkt/tags.rkt"))
+(provide (all-from-out "rkt/links.rkt"))
 (provide (all-defined-out))
 
 (module setup racket/base

@@ -51,9 +51,6 @@ Move to next section?
     If you want to go even further the whitepaper is also embedded in the blockchain which guarantees nobody can change it, as long as you know how to retrieve it.  Instructions available ◊link[wp-blockchain]{here}.
 }
 
-◊(define wp
-   `("/files/bitcoin.pdf"
-     "Bitcoin: A Peer-to-Peer Electronic Cash System"))
 ◊(define ann-wp
    "https://www.bitcoin.com/guides/bitcoin-white-paper-beginner-guide")
 ◊(define pod-wp
