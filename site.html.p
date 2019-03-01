@@ -30,8 +30,10 @@
       <article class="chapter">
         <nav class="where">
           <a href="/" class="home">Why Cryptocurrencies?</a>
-          <span class="divider">/</span>
-          <a href="#" class="up">What is a cryptocurrency?</a>
+          ◊when/splice[parent-page]{
+            <span class="divider">/</span>
+            ◊(ref parent-page (select-from-metas 'title parent-page))
+          }
         </nav>
         <header>
           <h1>◊|title|</h1>
@@ -45,21 +47,7 @@
         }
       </article>
 
-      <nav class="side-space">
-        <header>
-          <h1><a href="/">Why Cryptocurrencies?</a></h1>
-          <h2>What are they useful for?</h2>
-        </header>
-
-        <h1><a href="#">What is a cryptocurrency?</a></h1>
-        <ul>
-          <li class="curr">How does cryptocurrencies work?</li>
-          <li>Properties of a cryptocurrency</li>
-          <li>Look out for snake oil</li>
-          <li>What is money?</li>
-          <li>Are cryptocurrencies money?</li>
-        </ul>
-      </nav>
+      <div class="side-space"></div>
 
       <footer>
         <nav class="movenav">
