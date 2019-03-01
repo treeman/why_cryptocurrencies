@@ -16,7 +16,7 @@ The important difference between a cryptocurrency and digital payments we have t
 
 Transfers are therefore ◊em{permissionless} and ◊em{trustless}.
 
-Additionally digital money isn't like cash where you alone have possession. What you really have is an IOU from the bank where they promise to give you your money when ask for it. You cannot stuff the IOU in a mattress and have complete control of your money. But this is possible with a cryptocurrency---you can write down your keys to your wallet and store it wherever you want.[^keys]
+Additionally digital money isn't like cash where you alone have possession. What you really have is an IOU from the bank where they promise to give you your money when ask for it. You cannot stuff the IOU in a mattress and have complete control of your money. But this is possible with a cryptocurrency---you can write down your keys to your wallet and store it wherever you want.◊sn{keys}
 
 
 Cryptocurrencies have some other features as well:
@@ -25,8 +25,6 @@ Cryptocurrencies have some other features as well:
   ◊li{You cannot counter-fit coins.}
   ◊li{You cannot double-spend coins. Said in another way you cannot copy a coin to send it to two different people.}
 }
-
-
 
 img: Bitcoin's emission rate. Monero's emission rate.
 
@@ -42,33 +40,32 @@ Move to next section?
 
 
 ◊sndef["wp"]{
-    The whitepaper is surprisingly easy to read and I highly recommend you [read it][whitepaper].
-
-    If you prefer there's a simplified explanation with annotations available here:
-
-    ◊link{https://www.bitcoin.com/guides/bitcoin-white-paper-beginner-guide}
-
-    And in podcast format:
-
-    ◊link{https://bitcoinnews.com/bitcoinnews-com-daily-podcast-5th-november-2018-the-bitcoin-white-paper/}
+    The whitepaper is surprisingly easy to read and I highly recommend you ◊link[wp]{read it}. If you prefer there's a simplified explanation with annotations ◊link[ann-wp]{available here}. And in ◊link[pod-wp]{podcast form}.
 
     Note that the whitepaper was created in 2008 and some terminology and implementation details have changed, but the high level description is just as true today more than 10 years later.
 
-    There have been suggestions to [alter the whitepaper hosted on bitcoin.org][] so if you want to make sure you're reading the original one you can compare the pdf's sha256 hash with this:
+    There have been suggestions to ◊link[alter-wp]{alter the whitepaper hosted on bitcoin.org}. Yes it's completely unacceptable but here we are. If you want to make sure you're reading the original one you can compare the pdf's sha256 hash with this:
 
     ◊code{b1674191a88ec5cdd733e4240a81803105dc412d6c6708d53ab94fc248f4f553}
 
-    The whitepaper is also embedded in the blockchain. Instructions on how to parse it ◊link[whitepaper-blockchain]{here}.
+    If you want to go even further the whitepaper is also embedded in the blockchain which guarantees nobody can change it, as long as you know how to retrieve it.  Instructions available ◊link[wp-blockchain]{here}.
 }
 
-◊(define whitepaper
-   `("https://www.bitcoin.com/bitcoin.pdf"
+◊(define wp
+   `("/files/bitcoin.pdf"
      "Bitcoin: A Peer-to-Peer Electronic Cash System"))
-◊(define alter-whitepaper
+◊(define ann-wp
+   "https://www.bitcoin.com/guides/bitcoin-white-paper-beginner-guide")
+◊(define pod-wp
+   "https://bitcoinnews.com/bitcoinnews-com-daily-podcast-5th-november-2018-the-bitcoin-white-paper/")
+◊(define alter-wp
    `("https://github.com/bitcoin-dot-org/bitcoin.org/issues/1325"
      "Amendments to the Bitcoin paper"))
-◊(define whitepaper-blockchain
+◊(define wp-blockchain
    `("https://bitcoin.stackexchange.com/questions/35959/how-is-the-whitepaper-decoded-from-the-blockchain-tx-with-1000x-m-of-n-multisi/35970"
      "Stackexchange: How is the whitepaper decoded from the blockchain"))
 
-[^keys]: But please make sure to encrypt them.
+◊sndef["keys"]{
+    But please make sure to encrypt your seed otherwise a thief can easily steal your coins if he finds it.
+}
+

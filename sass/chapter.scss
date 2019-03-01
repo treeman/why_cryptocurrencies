@@ -1,6 +1,9 @@
 .chapter {
     max-width: 800px;
     //background-color: lightyellow;
+    flex: 1 1 auto;
+    padding-top: 1em;
+    //padding: 1em;
 }
 
 /*
@@ -71,4 +74,106 @@
     border: 0;
     border-bottom: 1px solid $body-hr-color;
 }
+
+
+/*
+ * Side content
+ */
+.side-space {
+    // Serves to take up space. Inline content from the chapter is floated on top.
+    width: 420px;
+    //background-color: antiquewhite;
+    display: none;
+}
+
+.sidenote, .marginnote {
+    @extend %sans-serif;
+    font-size: 0.8rem;
+}
+
+// Ad-hoc paragraph styling
+.sidenote .snp:not(:first-child),
+.marginnote .snp:not(:first-child) {
+    margin-top: 0.8em;
+    display: inline-block;
+    clear: both;
+    width: 100%;
+}
+// No inline-block for the first in sidenotes to allow ref number
+// to live on the same line.
+.marginnote .snp {
+    clear: both;
+    width: 100%;
+    display: inline-block;
+}
+
+
+.sidenote-number {
+    counter-increment: sidenote-counter;
+}
+.sidenote-number:after, .sidenote:before {
+    font-family: $sans-serif-font-family;
+    font-feature-settings: "onum" off, "kern" on, "sups" on;
+}
+.sidenote-number:after {
+    content: counter(sidenote-counter);
+}
+.sidenote:before {
+    content: counter(sidenote-counter);
+    float: left;
+    padding-right: 0.2em;
+    display: inline;
+}
+
+input.margin-toggle {
+    display: none;
+}
+label.sidenote-number {
+    display: inline;
+}
+label.margin-toggle:not(.sidenote-number) {
+    display: none;
+}
+
+$sidenote-float-width: 1280px;
+@media (max-width: $sidenote-float-width - 1) {
+    label.margin-toggle:not(.sidenote-number) {
+        display: inline;
+    }
+    label {
+        cursor: pointer;
+    }
+    label:hover {
+        color: $body-link-hover-color;
+    }
+    // Notes hidden by default
+    .sidenote, .marginnote {
+        display: none;
+    }
+    .margin-toggle:checked + .sidenote,
+    .margin-toggle:checked + .marginnote {
+        display: block;
+        margin: 1rem;
+    }
+    //.sidenote { background-color: lightblue; }
+    //.marginnote { background-color: aqua; }
+}
+@media (min-width: $sidenote-float-width) {
+    .side-space {
+        display: block;
+    }
+    .sidenote, .marginnote {
+        float: right;
+        clear: right;
+        margin-right: -420px;
+        margin-bottom: 2rem;
+        width: 380px;
+        position: relative;
+        display: inline-block;
+        //background-color: moccasin;
+    }
+    //.sidenote { background-color: pink; }
+    //.marginnote { background-color: plum; }
+}
+
 

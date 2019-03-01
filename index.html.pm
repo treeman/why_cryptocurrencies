@@ -35,12 +35,3 @@
 
 ◊(toc current-pagetree)
 
-
-In the beginning ◊mn{wp} there was nothing.
-
-◊mndef["wp"]{
-  Some kind of...
-
-  Monster!
-}
-

@@ -40,6 +40,9 @@
         }
       </article>
 
+      <div class="side-space">
+      </div>
+
       <footer>
         <nav class="movenav">
           ◊when/splice[prev-page]{

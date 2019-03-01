@@ -99,7 +99,7 @@
 (define (mn ref-in)
   (note-ref #:prefix "mn"
             #:label-class "margin-toggle"
-            #:label-content "⊕"
+            #:label-content "†"
             #:span-class "marginnote"
             #:ref ref-in))
 
