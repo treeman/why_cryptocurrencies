@@ -32,6 +32,7 @@ What is a cryptocurrency?
 
 # Pollen
 
+* merge sndef and mndef?, bothersome to switch between
 * Convert "..." to ellipsis
 * Remove index.html from prev link
 * Table
@@ -39,13 +40,8 @@ What is a cryptocurrency?
 
 # Styling
 
-* Style notes
-    * Handle screen resize
-    * Style inline
-    * Link hover styling
-    * Margin note char
-    * Maybe offset everything to make space for sidenote?
-
+* Link bullet points break in proximity to sidenotes
+* Quotes
 * Images
 
 * Code

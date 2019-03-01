@@ -17,13 +17,13 @@ Even if you'd like to know more, what hope does average Joe have when even the f
   Honestly, cryptocurrencies are useless
 }
 
-It's almost a universal phenomena. I've heard these arguments from students, co-workers, friends, family and highly technical online communities:
+◊sn{schneier} It's almost a universal phenomena. I've heard these arguments from students, co-workers, friends, family and highly technical online communities:
 
 ◊ul{
   ◊li{It's a scam}
   ◊li{It's just a speculative bubble and cryptocurrencies are really worthless
 
-    Here many draw parallels to Beanie Babies[^beanies] or the Tulip mania[^tulips].
+    Here many draw parallels to Beanie Babies◊sn{beanies} or the Tulip mania◊sn{tulips}.
   }
   ◊li{They don't do anything better than other payment systems like PayPal or VISA}
   ◊li{There's no legal use case}
@@ -56,13 +56,13 @@ There are many problems with cryptocurrencies as they exist today. This isn't an
 ◊ul{
   ◊li{How can a cryptocurrency scale globally?}
   ◊li{How can payments be made secure enough for retail in a couple of seconds?}
-  ◊li{Bitcoin uses a public ledger where all payments are visible, what about privacy? [^monero]}
+  ◊li{Bitcoin uses a public ledger where all payments are visible, what about privacy? ◊sn{monero}}
   ◊li{User experience is far from the level of VISA or Apple Pay.}
 }
 
 Instead we'll take a look at what cryptocurrencies are useful for today and what value they can bring if they fulfil their potential.
 
-We'll not go into technical detail and stick to high level concepts. Neither will we focus on a single implementation---Bitcoin is the first cryptocurrency but there are hundreds more[^cryptos]---this is about the properties of a cryptocurrency which can be provided in several different ways.
+We'll not go into technical detail and stick to high level concepts. Neither will we focus on a single implementation---Bitcoin is the first cryptocurrency but there are hundreds more◊sn{cryptos}---this is about the properties of a cryptocurrency which can be provided in several different ways.
 
 And of course none of this is investment advice.
 
@@ -76,35 +76,43 @@ If you want to receive an email when I post a new chapter please ◊link[subscri
 There is also an ◊link[rss]{RSS feed} if you prefer that.
 
 
-[^schneier]: Schneier brings an interesting perspective and he's right about one very important aspect: Contrary to popular belief cryptocurrencies doesn't remove all trust. It just removes and shifts some.
+◊sndef["schneier"]{
+    Schneier brings an interesting perspective and he's right about one very important aspect: Contrary to popular belief cryptocurrencies doesn't remove all trust. It just removes and shifts some.
 
     To counter his point that "cryptocurrencies are useless" all you have to do is provide one counterexample where they're useful. That's what this book is about.
+}
 
-    ◊link{https://www.schneier.com/blog/archives/2019/02/blockchain_and_.html}
 
-
-[^beanies]: TODO How does it relate to cryptos?
+◊sndef["beanies"]{
+    TODO How does it relate to cryptos?
 
     At it's height people would sell---and buy---these toys at 10x their original price and was responsible for 10% of eBay's sales. The creator was at one point one of the richest men in the world.
 
     ◊link{https://en.wikipedia.org/wiki/Beanie_Babies}
 
     ◊link{http://fortune.com/2015/03/11/beanie-babies-failure-lessons/}
+}
 
 
-[^tulips]: TODO Describe tulip fever and how it relates to cryptocurrencies.
+◊sndef["tulips"]{
+    TODO Describe tulip fever and how it relates to cryptocurrencies.
 
     Although commonly refered to it wasn't as bad as it's often portrayed as. But it was still quite bad.
 
     ◊link{https://en.wikipedia.org/wiki/Tulip_mania}
+}
 
 
-[^monero]: Bitcoin, like almost all cryptocurrencies, use a public ledger where you can lookup how many coins any address has and you can also trace all coins to the beginning of time.
+◊sndef["monero"]{
+    Bitcoin, like almost all cryptocurrencies, use a public ledger where you can lookup how many coins any address has and you can also trace all coins to the beginning of time.
 
     There are cryptocurrencies like ◊link[Monero]{Monero} which hides inputs, outputs and amounts for all transactions making this impossible.
+}
 
 
-[^cryptos]: Although there are hundreds and perhaps thousands most are just copies or outright scams. Be safe out there.
+◊sndef["cryptos"]{
+    Although there are hundreds and perhaps thousands most are just copies or outright scams. Be safe out there.
+}
 
 
 ◊(define the-first-chapter "what_is_a_cryptocurrency.html")
