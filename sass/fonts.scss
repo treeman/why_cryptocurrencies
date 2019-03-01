@@ -50,6 +50,20 @@ $concourse: 'Concourse';
     font-weight: bold;
 }
 
+$concourse-c: 'Concourse Caps';
+@font-face {
+    font-family: $concourse-c;
+    src: url('/fonts/concourse_c4_regular.woff') format('woff');
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: $concourse-c;
+    src: url('/fonts/concourse_c4_bold.woff') format('woff');
+    font-style: normal;
+    font-weight: bold;
+}
+
 $hack: 'Hack';
 @font-face {
     font-family: $hack;
@@ -81,12 +95,18 @@ $hack: 'Hack';
 
 $serif-font-family: $century-supra, Georgia, serif;
 $sans-serif-font-family: $concourse, Helvetica, sans-serif;
+$sans-serif-c-font-family: $concourse-c, $concourse, Helvetica, sans-serif;
 $code-font-family: $hack, monospace;
 
 
 %sans-serif {
     text-rendering: optimizeLegibility;
     font-family: $sans-serif-font-family;
+    font-feature-settings: "onum" off, "kern" on;
+}
+%sans-serif-c {
+    text-rendering: optimizeLegibility;
+    font-family: $sans-serif-c-font-family;
     font-feature-settings: "onum" off, "kern" on;
 }
 

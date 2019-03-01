@@ -259,3 +259,59 @@ $sidenote-float-width: 1280px;
 }
 
 
+/*
+ * Side nav
+ */
+.side-space {
+    //padding: 0.4em;
+    padding-left: 40px;
+    font-size: 0.8rem;
+
+    a {
+        text-decoration: none;
+        background: none;
+        shadow: none;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+}
+.side-space > header {
+    //display: none;
+    margin: 1rem 0;
+
+    h1 {
+        @extend %sans-serif-c;
+        //@extend %sans-serif;
+        //letter-spacing: 0.05em;
+        font-size: 1.2rem;
+        margin: 0;
+    }
+    h2 {
+        display: none;
+        //@extend %sans-serif-c;
+        font-weight: normal;
+        font-size: 0.8rem;
+        margin: 0;
+    }
+}
+
+.side-space > h1 {
+    font-size: 0.9rem;
+    //margin-top: 2rem;
+    margin-bottom: 0.45rem;
+    padding-bottom: 0.2rem;
+    border-bottom: 1px dashed $body-hr-color;
+    width: 14rem;
+}
+.side-space {
+    ul {
+        list-style: none;
+    }
+    li {
+    }
+    li.curr {
+        font-weight: bold;
+    }
+}
+
