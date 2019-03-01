@@ -30,7 +30,7 @@
       <article class="chapter">
         <nav class="where">
           <a href="/" class="home">Why Cryptocurrencies?</a>
-          /
+          <span class="divider">/</span>
           <a href="#" class="up">What is a cryptocurrency?</a>
         </nav>
         <header>

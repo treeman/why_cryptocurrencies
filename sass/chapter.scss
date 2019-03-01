@@ -2,7 +2,7 @@
     max-width: 800px;
     //background-color: lightyellow;
     flex: 1 1 auto;
-    padding-top: 1em;
+    padding-top: 0.5rem;
     //padding: 1em;
 }
 
@@ -32,11 +32,17 @@
 .where {
     font-size: 0.8rem;
     @extend %sans-serif;
+    margin-bottom: 0.8rem;
+    color: $eth-dark-gray;
 }
 .where .home {
-    @extend %sans-serif-c;
+    //@extend %sans-serif-c;
 }
 .where .up {
+}
+.where .divider {
+    font-size: 0.65rem;
+    color: $eth-light-gray;
 }
 
 
