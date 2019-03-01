@@ -40,10 +40,12 @@ What is a cryptocurrency?
 
 # Styling
 
+* Able to tag sans-serif fonts (see how does cryptocurrencies work?)
 * Book title to the side
 * Simple nav links to the side
 * Use small caps somewhere?
 * Left/right links at the side of the screen
+* Offset bottom links to be below article?
 
 * Link bullet points break in proximity to sidenotes
 * Quotes
