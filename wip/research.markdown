@@ -6,3 +6,5 @@ https://www.masslive.com//boston/2019/02/man-walks-through-boston-logan-airport-
 https://www.reddit.com/r/btc/comments/arbqwt/anarchapulco_ron_paul_takes_the_stage_attacks_the/
 https://dashnews.org/9-reasons-cryptocurrency-is-better-than-credit-cards-today/
 
+https://news.ycombinator.com/item?id=19281192
+

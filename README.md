@@ -6,11 +6,11 @@ Why this book
 Why cryptocurrencies in five minutes
     * Everything
 What is a cryptocurrency?
-  How does cryptocurrencies work?
-    * Everything
   Properties of a cryptocurrency
     * Rewrite
     * Emission rate images
+  How does cryptocurrencies work?
+    * Everything
   Look out for snake oil
     * Rewrite
     * Logos
@@ -28,9 +28,11 @@ What is a cryptocurrency?
 Before Veronica:
 * Polish sidenote todos in Why this book
 
+* Need to create a fluid connection between properties to how cryptos work
+
 Before Jimmie:
-* How does cryptocurrencies work?
 * Properties of a cryptocurrency
+* How does cryptocurrencies work?
 
 
 
@@ -38,23 +40,14 @@ Before Jimmie:
 
 # Site
 
-* Rewrite in pollen
-    https://news.ycombinator.com/item?id=15335010
-    https://docs.racket-lang.org/pollen/
-
 * Review tufte-css
     https://edwardtufte.github.io/tufte-css/
-    * Restyle quotes
-    * Sidenotes
     * Slightly larger text on smaller screens
     * Fullscreen images
     * Notes next to images
     * Images in sidenotes?
-    * Turn footnotes into sidenotes
 
 * Email subscription
-* Navigation sidebars
-* Next/prev footer nav
 * Get domain
 
 # Pollen
@@ -70,6 +63,7 @@ Before Jimmie:
 * Quotes
 * Images
 * Left/right links at the side of the screen
+* Style subnav in top chapters
 
 * Code
   see https://beautifulracket.com/
