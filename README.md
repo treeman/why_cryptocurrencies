@@ -34,10 +34,6 @@ Before Jimmie:
 * Properties of a cryptocurrency
 * How does cryptocurrencies work?
 
-
-
-
-
 # Site
 
 * Review tufte-css
