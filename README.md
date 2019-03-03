@@ -52,8 +52,6 @@ Before Jimmie:
 
 # Pollen
 
-* Convert "..." to ellipsis
-* Remove index.html from prev link
 * Table
     Control left/center/right aligned?
 
@@ -70,4 +68,6 @@ Before Jimmie:
 * Style footnote links
 * Style homepage
 * Use sections on the page? h1 for page title, h2 for section headings, h3 for subsections?
+* Plot generation
+  https://jakevdp.github.io/blog/2012/10/07/xkcd-style-plots-in-matplotlib/
 
