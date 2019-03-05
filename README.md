@@ -38,7 +38,7 @@ Before Jimmie:
 
 * Review tufte-css
     https://edwardtufte.github.io/tufte-css/
-    * Slightly larger text on smaller screens
+    * Slightly larger text on smaller screens?
     * Fullscreen images
     * Notes next to images
     * Images in sidenotes?
@@ -55,11 +55,10 @@ Before Jimmie:
 
 * Images
 * Left/right links at the side of the screen
-* Style subnav in top chapters
+* Style subnav in section chapters
 
 * Code
   see https://beautifulracket.com/
-* Style footnote links
 * Style homepage
 * Use sections on the page? h1 for page title, h2 for section headings, h3 for subsections?
 * Plot generation
