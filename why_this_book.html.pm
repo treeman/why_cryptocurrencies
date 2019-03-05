@@ -23,7 +23,7 @@ Even if you'd like to know more what hope does average Joe have when even the fa
 
 ◊sn{schneier} It's almost a universal phenomena. I've heard these arguments from students, co-workers, friends, family and highly technical online communities:
 
-◊ul{
+◊ol{
   ◊li{It's a scam}
   ◊li{It's just a speculative bubble and cryptocurrencies are really worthless
 
@@ -31,6 +31,7 @@ Even if you'd like to know more what hope does average Joe have when even the fa
   }
   ◊li{They don't do anything better than other payment systems like PayPal or VISA}
   ◊li{There's no legal use case}
+  ◊li{They don't do anything valuable}
 }
 
 It seems everyone has an opinion but few seem capable of explaining what it is or what it does differently.  Of course most aren't dismissive but simply don't understand what it's all about. Many are curious and want to learn more.
@@ -42,15 +43,14 @@ And I must admit I'm also being selfish, writing a book is on my bucket list.
 
 ◊subhead{What this book is}
 
-This book tries to describe what cryptocurrencies are useful for and what value they can bring.
+This book tries to describe what cryptocurrencies are useful for and what value they can bring. In particular I hope to show you that:
 
-With examples, stories and discussions I will try to show you that:
-
-◊ul{
+◊ol{
   ◊li{Cryptocurrencies aren't just scams◊sn{scams}}
   ◊li{It's more than just a speculative asset}
-  ◊li{There are legal use cases}
   ◊li{They do many things better than any alternative}
+  ◊li{There are legal use cases}
+  ◊li{They have valuable use cases}
 }
 
 

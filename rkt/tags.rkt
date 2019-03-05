@@ -115,9 +115,6 @@
 
 ;;; Root transformations
 
-;; FIXME
-;; Replace "/index.html" with ""
-;; Replace "..." with ellipsis
 (define (root . args)
   (define decoded (decode-elements args
     #:txexpr-elements-proc decode-paragraphs
