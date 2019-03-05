@@ -10,7 +10,16 @@
     </head>
     <body>
       <div class="homepage">
+        <header>
+          <h1>Why Cryptocurrencies?</h1>
+          <h2>Jonas Hietala</h2>
+        </header>
+
         ◊(->html doc #:splice #t)
+
+        <footer>
+          Free from trackers, ads and any other cost.
+        </footer>
       </div
     </body>
 </html>
