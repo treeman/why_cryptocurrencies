@@ -36,31 +36,30 @@ Before Jimmie:
 
 # Site
 
+* Email list
+* Get domain
+
+# Pollen
+
+* Feed
+
+# Styling
+
+* Images
+* Style subnav in section chapters
+
+* Code
+  see https://beautifulracket.com/
+* Style homepage
+* Plot generation
+  https://jakevdp.github.io/blog/2012/10/07/xkcd-style-plots-in-matplotlib/
+
 * Review tufte-css
     https://edwardtufte.github.io/tufte-css/
     * Slightly larger text on smaller screens?
     * Fullscreen images
     * Notes next to images
     * Images in sidenotes?
-
-* Email subscription
-* Get domain
-
-# Pollen
-
-* Table
-    Control left/center/right aligned?
-
-# Styling
-
-* Images
-* Left/right links at the side of the screen
-* Style subnav in section chapters
-
-* Code
-  see https://beautifulracket.com/
-* Style homepage
-* Use sections on the page? h1 for page title, h2 for section headings, h3 for subsections?
-* Plot generation
-  https://jakevdp.github.io/blog/2012/10/07/xkcd-style-plots-in-matplotlib/
+    * Use sections on the page? h1 for page title, h2 for section headings, h3 for subsections?
+        Probably not
 
