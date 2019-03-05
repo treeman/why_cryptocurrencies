@@ -53,23 +53,26 @@
         <nav class="movenav">
           ◊when/splice[prev-page]{
             <span class="prev">
-              ◊;(ref prev-page (string-append  "← " (select-from-metas 'title prev-page)))
-              ◊(ref prev-page "← Previous page")
+              ◊(ref prev-page (string-append  "← " (select-from-metas 'title prev-page)))
+              ◊;(ref prev-page "← Previous page")
             </span>
           }
-          ◊when/splice[parent-page]{
-            <span class="parent">
-              ◊(ref parent-page "Chapter")
+          <span class="middle">
+            ◊when/splice[parent-page]{
+              <span class="parent">
+                ◊;(ref parent-page "Chapter")
+                ◊(ref parent-page "↑ Chapter")
+              </span>
+            }
+            <span class="home">
+              <a href="/">~ Home</a>
             </span>
-          }
-          <span class="home">
-            <a href="/">Home</a>
           </span>
 
           ◊when/splice[next-page]{
             <span class="next">
-              ◊(ref next-page "Next page →")
-              ◊;(ref next-page (string-append (select-from-metas 'title next-page) " →"))
+              ◊;(ref next-page "Next page →")
+              ◊(ref next-page (string-append (select-from-metas 'title next-page) " →"))
             </span>
           }
         </nav>

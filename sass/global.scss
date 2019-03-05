@@ -148,15 +148,59 @@ a:hover {
  * Footer
  */
 body > footer {
+    @extend %sans-serif;
+
     width: 100%;
+    height: 3em;
+
     nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        font-size: 0.95rem;
+    }
+
+    .prev, .parent, .home, .next {
+        margin: 0 0.3em;
+    }
+    .prev {
+        order: 1;
+    }
+    .next {
+        order: 2;
+    }
+    .middle {
+        order: 0;
+        width: 100%;
         display: flex;
         justify-content: center;
     }
 
-    .prev, .parent, .home, .next {
-        margin: 0 0.5em;
+    a:link {
+        text-decoration: none;
+        background: none;
+        text-shadow: none;
     }
+    a:hover {
+        text-decoration: underline;
+    }
+}
 
+@media (min-width: 800px) {
+    body > footer {
+        .prev, .parent, .home, .next {
+            margin: 0 0.6em;
+        }
+        .prev {
+            order: 0;
+        }
+        .middle {
+            order: 1;
+            width: auto;
+        }
+        .next {
+            order: 2;
+        }
+    }
 }
 
