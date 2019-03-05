@@ -35,8 +35,8 @@ Before Jimmie:
 * How does cryptocurrencies work?
 
 About the book
-    Why write it?
-    What this book is/isn't
+    (Why write it?)
+    (What this book is/isn't)
     How to read this book
     Free & reader-supported
     (Acknowledgements)

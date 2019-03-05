@@ -18,7 +18,10 @@
         ◊(->html doc #:splice #t)
 
         <footer>
-          Free from trackers, ads and any other cost.
+          <form id="f-subscribe">
+            <input id="email" class="email" value="" name="email" placeholder="Your email address"/>
+            <input id="subscribe" class="submit" type="submit" value="Sign me up!" name="subscribe"/>
+          </form>
         </footer>
       </div
     </body>

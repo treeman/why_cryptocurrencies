@@ -1,8 +1,12 @@
 #lang pollen
 
 index.html
-why_this_book.html
 eli5.html
+◊about_the_book.html{
+    how_to_use.html
+    free.html
+    about_me.html
+}
 ◊what_is_a_cryptocurrency.html{
     properties_of_a_cryptocurrency.html
     how_does_cryptocurrencies_work.html

@@ -1,7 +1,7 @@
 #lang pollen
 
-◊(define-meta title "Why this book?")
-◊(define-meta subtitle "Another perspective")
+◊(define-meta title "About the book")
+◊(define-meta subtitle "A perspective beyond the hype")
 
 Whenever the topic of cryptocurrencies---where Bitcoin and Ethereum are the most known---come up in conversations they're almost always misunderstood or dismissed.
 
@@ -74,15 +74,6 @@ We'll not go into technical detail and stick to high level concepts. Neither wil
 And of course none of this is investment advice.
 
 
-◊subhead{How to read this book}
-
-Each chapter is supposed to be standalone so you can jump around and read it however you want. The only prerequisite is to have a basic understanding of what a cryptocurrency does which I describe in ◊link[the-first-chapter]{the first chapter}.
-
-If you want to receive an email when I post a new chapter please ◊link[subscribe]{subscribe here}. I will only use it to email you about this book and you can unsubscribe at any time.
-
-There is also an ◊link[rss]{RSS feed} if you prefer that.
-
-
 ◊ndef["schneier"]{
     Schneier brings an interesting perspective and he's right about one very important aspect: Contrary to popular belief cryptocurrencies doesn't remove all trust. It just removes and shifts some.
 
@@ -125,11 +116,6 @@ There is also an ◊link[rss]{RSS feed} if you prefer that.
     But take care, there are ◊strong{lot's} of scams out there.
 }
 
-
-◊(define the-first-chapter "what_is_a_cryptocurrency.html")
-◊(define rss "#")
-◊(define subscribe "#")
-
 ◊(define Monero "https://www.getmonero.org/")
 
 ◊(define schneier "https://www.schneier.com/blog/archives/2019/02/blockchain_and_.html")
@@ -137,5 +123,4 @@ There is also an ◊link[rss]{RSS feed} if you prefer that.
 ◊(define independent-worthless "https://www.independent.co.uk/voices/bitcoin-cryptocurrency-price-crash-bank-of-england-agustin-carstens-a8645356.html")
 ◊(define cnn-environment "https://money.cnn.com/2017/12/07/technology/bitcoin-energy-environment/index.html")
 ◊(define independent-illegal "https://www.independent.co.uk/life-style/gadgets-and-tech/news/bitcoin-price-fall-criminals-blockchain-anonymous-cryptocurrency-zcash-monero-dash-a8174716.html")
-
 
