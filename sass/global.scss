@@ -126,8 +126,9 @@ a:link, a:visited {
     color: inherit;
 }
 a:hover {
-    // Colorize the underline, different from tufte-css
     //@include a-background($body-link-hover-color);
+    background: none;
+    shadow: none;
     color: $body-link-hover-color;
 }
 

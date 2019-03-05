@@ -86,7 +86,7 @@ There is also an ◊link[rss]{RSS feed} if you prefer that.
 ◊ndef["schneier"]{
     Schneier brings an interesting perspective and he's right about one very important aspect: Contrary to popular belief cryptocurrencies doesn't remove all trust. It just removes and shifts some.
 
-    To counter his point that "cryptocurrencies are useless" all you have to do is provide one counterexample where they're useful. That's what this book is about.
+    To counter his point that "cryptocurrencies are useless" all you have to do is provide one counterexample where they're useful. That's honestly not difficult at all.
 }
 
 

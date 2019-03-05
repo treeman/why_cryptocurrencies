@@ -53,8 +53,6 @@ Before Jimmie:
 
 # Styling
 
-* Link bullet points break in proximity to sidenotes
-* Quotes
 * Images
 * Left/right links at the side of the screen
 * Style subnav in top chapters
