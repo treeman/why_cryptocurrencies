@@ -12,6 +12,7 @@
 ◊(define (make-subnav children)
   (->html
     (nav #:class "subnav"
+      `(span ((class "chapters")) "Chapters in this section")
       (apply ul
         (for/list ([child (in-list children)])
           (li (link (symbol->string child) (select-from-metas 'title child))))))))
@@ -74,7 +75,7 @@
             ◊when/splice[parent-page]{
               <span class="parent">
                 ◊;(ref parent-page "Chapter")
-                ◊(ref parent-page "↑ Chapter")
+                ◊(ref parent-page "↑ Section")
               </span>
             }
             <span class="home">

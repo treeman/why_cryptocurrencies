@@ -161,6 +161,7 @@ a:hover.xref {
         color: $body-font-color;
         //background-color: $btc-orange;
         background-color: $bch-green;
+        //background-color: $body-selection-color;
     }
 }
 .prev-pan, .next-pan {
@@ -175,7 +176,6 @@ a:hover.xref {
     justify-content: center;
     align-content: center;
     flex-direction: column;
-    color: $xmr-gray;
 
     .content {
         display: inline-block;
