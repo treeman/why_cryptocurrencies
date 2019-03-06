@@ -1,5 +1,5 @@
 .homepage {
-    max-width: 800px;
+    max-width: 600px;
     padding-top: 1em;
 }
 
@@ -55,5 +55,43 @@
         margin-left: 0.6rem;
         margin-top: 0.3rem;
     }
+}
+
+.follow {
+    @extend %sans-serif;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.follow > .links {
+    margin: 0.3rem;
+    font-size: 0.8rem;
+}
+.subscribe > .email, .subscribe > .submit {
+    @extend %serif;
+    font-size: 0.75rem;
+    border: 1px solid #ddd;
+    background: $body-background-color;
+    padding: 0.5em;
+}
+
+.subscribe:hover > .email,
+.subscribe:hover > .submit {
+    border: 1px solid #aaa;
+    color: $body-font-color;
+}
+.subscribe > .submit:hover {
+    color: $body-xref-hover-color;
+    cursor: pointer;
+}
+.subscribe {
+    display: flex;
+}
+.subscribe > .email {
+    flex: 4;
+    margin-right: 0.2rem;
+}
+.subscribe > .submit {
+    flex: 1;
 }
 

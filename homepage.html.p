@@ -17,21 +17,17 @@
 
         ◊(->html doc #:splice #t)
 
-        <footer>
-          <span class="">
-            There's a mailing list if you want to get updated:
-          </span>
-          <form id="f-subscribe">
-            <input id="email" class="email" value="" name="email" placeholder="Your email address"/>
-            <input id="subscribe" class="submit" type="submit" value="Sign me up!" name="subscribe"/>
+        <section class="follow">
+          <form id="f-subscribe" class="subscribe">
+            <input id="email" class="email" value="" name="email"
+                   placeholder="Enter your email to join the mailing list"/>
+            <input id="subscribe" class="submit" type="submit" value="Subscribe"
+                   name="subscribe"/>
           </form>
-          <span class="">
-            Or you can use the ◊(->html ◊link[rss-feed]{RSS feed}).
-          </span>
-          <span class="">
-            The source code for this site is ◊(->html ◊link[source-code]{on Github}). New chapters will get added via pull requests which is another way to get updates.
-          </span>
-        </footer>
+          <div class="links">
+            See the ◊(->html ◊link[rss-feed]{RSS feed}) and source code on ◊(->html ◊link[source-code]{Github}).
+          </div>
+        </section>
       </div
     </body>
 </html>
