@@ -52,6 +52,7 @@ About the book
 
 # Styling
 
+* Right/left navigation on the side
 * Images
 * Style subnav in section chapters
 * Differ between relative links and links to outside?

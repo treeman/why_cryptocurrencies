@@ -131,6 +131,9 @@ a:hover {
     shadow: none;
     color: $body-link-hover-color;
 }
+a:hover.xref {
+    color: $body-xref-hover-color;
+}
 
 
 /*

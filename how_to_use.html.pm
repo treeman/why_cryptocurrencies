@@ -13,6 +13,8 @@ There is also an ◊link[rss]{RSS feed} if you prefer that.
 ◊(define rss "#")
 ◊(define subscribe "#")
 
+Links to outside are colored heavy orange and internal links are of a brighter orange.
+
 Should describe navigation and styling?
 
 No javascript.

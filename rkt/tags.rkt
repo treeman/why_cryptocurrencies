@@ -7,14 +7,27 @@
 
 (provide (all-defined-out))
 
+(define (xref? url)
+  (cond
+    ((regexp-match #rx"^https?://" url) #t)
+    (else #f)))
+
 (define (link . args)
   (match args
     [(list (list url title) text)
-       `(a ((href ,url) (title ,title)) ,text)]
+     (make-link url text #:title title)]
     [(list url text)
-       `(a ((href ,url)) ,text)]
+     (make-link url text)]
     [(list url)
-       `(a ((href ,url)) ,url)]))
+     (make-link url url)]))
+
+(define (make-link url text #:title [title #f])
+  (define attrs `((href ,url)))
+  (when title
+    (set! attrs (cons `(title ,title) attrs)))
+  (when (xref? url)
+    (set! attrs (cons `(class "xref") attrs)))
+  `(a ,attrs ,text))
 
 (define (subhead txt)
   `(h2 ,txt))
