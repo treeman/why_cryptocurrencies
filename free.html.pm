@@ -15,14 +15,18 @@ If you think the book was worth your time please consider donating. I'm relying 
 
 ◊subhead{Donations is a perfect use for cryptocurrencies}
 
-You can send any amount of money, big or small, from anywhere in the world nearly instantly to me without any middleman. Isn't that pretty amazing?
+You can send any amount of money, big or small, from anywhere in the world nearly instantly to me without any middleman. That's not possible with anything else.
 
-Bitcoin (BTC)
-Bitcoin Cash (BCH)
-Monero (XMR)
-Ethereum (ETH)
-Litecoin (LTC)
-Dogecoin (DGC)
+TODO QR codes & addresses
+
+◊ul{
+  ◊li{Bitcoin (BTC)}
+  ◊li{Bitcoin Cash (BCH)}
+  ◊li{Monero (XMR)}
+  ◊li{Ethereum (ETH)}
+  ◊li{Litecoin (LTC)}
+  ◊li{Dogecoin (DGC)}
+}
 
 If you're missing a coin you ◊em{really} want to use please contact me. If it's not too much hassle I will consider it but please no ◊link[snake-oil]{snake oil}.
 

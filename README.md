@@ -1,10 +1,17 @@
 # Unfinished chapters
 
-Why this book
-    * Describe beanie babies
-    * Describe tulip fever
 Why cryptocurrencies in five minutes
     * Everything
+About the book
+  * Describe beanie babies
+  * Describe tulip fever
+  How to use
+    * Just read through once more, should be done
+  Free & reader-supported
+    * Donation QR codes & addresses
+  About me, the author
+    * Title?
+    * Finish the end
 What is a cryptocurrency?
   Properties of a cryptocurrency
     * Rewrite
