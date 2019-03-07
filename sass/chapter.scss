@@ -73,7 +73,7 @@
     }
     ul > li::before {
         @extend %sans-serif;
-        content: "⭑";
+        //content: "⭑";
         //content: "~";
         //content: "≈";
         //content: "→";
@@ -93,6 +93,43 @@
         // Avoid floats here as sidenotes may interfere
         margin-left: -2em;
         padding-right: 1.5em;
+    }
+}
+
+.chapter > .subnav {
+    margin-top: 1.5rem;
+    @extend %sans-serif;
+
+    .chapters {
+        font-size: 1.1rem;
+        font-weight: bold;
+    }
+
+    ul {
+        list-style: none;
+        margin: 0;
+    }
+    ul > li {
+        font-size: 100%;
+        margin-left: 0.6rem;
+        margin-top: 0.3rem;
+    }
+    ul > li::before {
+        display: none;
+    }
+
+    //ol {
+        //margin-top: 0.5rem;
+    //}
+    //ol > li {
+        //font-size: 100%;
+    //}
+    a {
+        background: none;
+        text-shadow: none;
+    }
+    a:hover {
+        text-decoration: underline;
     }
 }
 

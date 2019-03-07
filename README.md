@@ -34,13 +34,6 @@ Before Jimmie:
 * Properties of a cryptocurrency
 * How does cryptocurrencies work?
 
-About the book
-    (Why write it?)
-    (What this book is/isn't)
-    How to read this book
-    Free & reader-supported
-    (Acknowledgements)
-
 # Site
 
 * Email list
@@ -52,6 +45,7 @@ About the book
 * Insert nonbreaking spaces
     ◊string->symbol{nbsp}
     Needed in how does cryptocurrencies work
+* Show unfinished chapters on toc page
 
 # Styling
 

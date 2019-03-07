@@ -17,12 +17,17 @@
 
         ◊(->html doc #:splice #t)
 
-        <footer>
-          <form id="f-subscribe">
-            <input id="email" class="email" value="" name="email" placeholder="Your email address"/>
-            <input id="subscribe" class="submit" type="submit" value="Sign me up!" name="subscribe"/>
+        <section class="follow">
+          <form id="f-subscribe" class="subscribe">
+            <input id="email" class="email" value="" name="email"
+                   placeholder="Enter your email to join the mailing list"/>
+            <input id="subscribe" class="submit" type="submit" value="Subscribe"
+                   name="subscribe"/>
           </form>
-        </footer>
+          <div class="links">
+            See the ◊(->html ◊link[rss-feed]{RSS feed}) and source code on ◊(->html ◊link[source-code]{Github}).
+          </div>
+        </section>
       </div
     </body>
 </html>
