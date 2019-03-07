@@ -3,6 +3,10 @@
 ◊(define-meta title "How does cryptocurrencies work?")
 ◊(define-meta subtitle "Byzantine?")
 
+◊; Table format
+◊(define (tf . args)
+    (sans-tnum (apply nbsp args)))
+
 As stated in the introduction the focus isn't on technical details but it's a hard balance to make between keeping it simple and explaining how cryptocurrencies work. If this chapter is too technical you can safely skip to the ◊link[next-chapter]{next chapter}.
 
 ◊subhead{The ledger}
@@ -15,7 +19,7 @@ If you want to create a digital currency you only really need to keep track of h
   Bob         1 000 SEK
 }
 
-When Alice wants to send ◊sans{500 SEK} to Bob the bank simply updates the ledger:
+When Alice wants to send ◊tf{500 SEK} to Bob the bank simply updates the ledger:
 
 ◊table{
   Person      Swedish krona (SEK)
@@ -37,7 +41,7 @@ The keys uses a ◊link[public-key-cryptography]{public-key cryptography} scheme
 
 So far cryptocurrencies doesn't do anything new. The hard problem is how do you prevent someone from copying a coin and sending the copies the different receivers?
 
-For example Alice wants to buy a computer from Bob and wants to pay with Bitcoin. The computer costs ◊sans{1 BTC} and the Bitcoin ledger looks like this:
+For example Alice wants to buy a computer from Bob and wants to pay with Bitcoin. The computer costs ◊tf{1 BTC} and the Bitcoin ledger looks like this:
 
 ◊table[#:header #f]{
   Alice 1     1 BTC
@@ -45,7 +49,7 @@ For example Alice wants to buy a computer from Bob and wants to pay with Bitcoin
   Bob         0 BTC
 }
 
-What Alice tries to do is send ◊sans{1 BTC} to the merchant Bob and then send the same ◊sans{◊nbsp{1 BTC}} to her other address ◊sans{Alice 2}.◊mn{addresses}
+What Alice tries to do is send ◊tf{1 BTC} to the merchant Bob and then send the same ◊tf{1 BTC} to her other address ◊tf{Alice 2}.◊mn{addresses}
 
 ◊ndef["addresses"]{
     You can have as many addresses you want. This is a consequence of the permissionless nature of Bitcoin.
@@ -59,7 +63,7 @@ If we didn't prevent this the ledger might look like this:
   Bob         1 BTC (+1 BTC)
 }
 
-We copied our coin and printed ◊sans{1 BTC} out of thin air so now the ledger contains a negative balance. This is a form of "double spending", spending the same coin twice.
+We copied our coin and printed ◊tf{1 BTC} out of thin air so now the ledger contains a negative balance. This is a form of "double spending", spending the same coin twice.
 
 This isn't really a problem with physical cash since you can't just copy gold coins or paper notes. It isn't a problem for banks either since the bank can just deny one or both of the transactions.
 

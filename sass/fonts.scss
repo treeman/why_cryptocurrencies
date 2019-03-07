@@ -104,6 +104,10 @@ $code-font-family: $hack, monospace;
     font-family: $sans-serif-font-family;
     font-feature-settings: "onum" off, "kern" on;
 }
+%sans-serif-tnum {
+    @extend %sans-serif;
+    font-feature-settings: 'kern' on, 'tnum' on;
+}
 %sans-serif-c {
     text-rendering: optimizeLegibility;
     font-family: $sans-serif-c-font-family;

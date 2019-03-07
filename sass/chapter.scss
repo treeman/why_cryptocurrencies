@@ -178,10 +178,7 @@ blockquote > footer > cite {
  * Tables
  */
 table {
-    @extend %sans-serif;
-    //@extend %serif;
-    // Need tabular numbers to align properly
-    font-feature-settings: 'kern' on, 'tnum' on;
+    @extend %sans-serif-tnum;
     font-size: 0.95rem;
     margin-bottom: 1rem;
 }
@@ -225,6 +222,9 @@ pre {
  */
 .sans {
     @extend %sans-serif;
+}
+.sans-tnum {
+    @extend %sans-serif-tnum;
 }
 
 
