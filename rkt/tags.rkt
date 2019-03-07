@@ -72,6 +72,20 @@
 (define (sans . args)
   `(span ((class "sans")) ,@args))
 
+;; Replace spaces in strings found in args with 'nbsp
+;; which will be escaped to &nbsp; a non-breaking space.
+(define (nbsp . args)
+  ;; Split a string and insert 'nbspc between
+  (define (replace s)
+    `(splice-me ,@(add-between (string-split s " ")
+                               'nbsp)))
+  ;; Use splice-me to flatten the result
+  `(splice-me ,@(map (λ (x)
+                        (if (string? x)
+                          (replace x)
+                          x))
+                     args)))
+
 
 ;;; Margin-notes and side-notes
 (define note-defs (make-hash))

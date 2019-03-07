@@ -45,7 +45,7 @@ For example Alice wants to buy a computer from Bob and wants to pay with Bitcoin
   Bob         0 BTC
 }
 
-What Alice tries to do is send ◊sans{1 BTC} to the merchant Bob and then send the same ◊sans{1 BTC} to her other address ◊sans{Alice 2}.◊mn{addresses}
+What Alice tries to do is send ◊sans{1 BTC} to the merchant Bob and then send the same ◊sans{◊nbsp{1 BTC}} to her other address ◊sans{Alice 2}.◊mn{addresses}
 
 ◊ndef["addresses"]{
     You can have as many addresses you want. This is a consequence of the permissionless nature of Bitcoin.
