@@ -42,13 +42,12 @@ Before Jimmie:
 # Pollen
 
 * Feed
-* Insert nonbreaking spaces
-    ◊string->symbol{nbsp}
-    Needed in how does cryptocurrencies work
 * Show unfinished chapters on toc page
+* Subscribe/rss/github in the footer of all pages
 
 # Styling
 
+* Bigger difference between internal & external links
 * Images
 * Style subnav in section chapters
 * Style homepage

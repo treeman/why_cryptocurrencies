@@ -9,6 +9,6 @@
   `("/files/bitcoin.pdf"
     "Bitcoin: A Peer-to-Peer Electronic Cash System"))
 (define source-code
-  `("#"
+  `("https://github.com/"
     "Source code to this site"))
 

@@ -72,6 +72,9 @@
 (define (sans . args)
   `(span ((class "sans")) ,@args))
 
+(define (sans-tnum . args)
+  `(span ((class "sans-tnum")) ,@args))
+
 ;; Replace spaces in strings found in args with 'nbsp
 ;; which will be escaped to &nbsp; a non-breaking space.
 (define (nbsp . args)
