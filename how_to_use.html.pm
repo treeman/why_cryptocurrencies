@@ -8,13 +8,18 @@ Each chapter is supposed to be standalone so you can jump around and read it how
 This book is a work in progress and if you want to keep up to date you have three options:
 
 ◊ul{
-  ◊li{Join the email list}
   ◊li{Subscribe to the ◊link[rss-feed]{RSS feed}}
   ◊li{Follow the changes on ◊link[source-code]{Github}}
+  ◊li{Join the email list
+
+      ◊|subscription-form|}
 }
 
 Links to outside are colored heavy orange and internal links are of a brighter orange. For example compare the link to ◊link[source-code]{Github} and to the ◊link["/"]{home page}. There is no tracking on this site but there may very well be on external sites, this serves as a small signifier if you care about that.
 
 Links to previous and next chapter can be found at the bottom as well as at the edge of the screen.
 
+While I do my very best I don't use an editor so there may be errors in the book. Therefore I would be most grateful for any feedback, ideas or error corrections you the reader may find. You can ◊link[mailto]{email me} or create a pull request or an issue ◊link[source-code]{on Github}.
+
 ◊(define the-first-chapter "what_is_a_cryptocurrency.html")
+

@@ -18,14 +18,9 @@
         ◊(->html doc #:splice #t)
 
         <section class="follow">
-          <form id="f-subscribe" class="subscribe">
-            <input id="email" class="email" value="" name="email"
-                   placeholder="Enter your email to join the mailing list"/>
-            <input id="subscribe" class="submit" type="submit" value="Subscribe"
-                   name="subscribe"/>
-          </form>
+          ◊(->html subscription-form)
           <div class="links">
-            See the ◊(->html ◊link[rss-feed]{RSS feed}) and source code on ◊(->html ◊link[source-code]{Github}).
+            See the ◊(->html ◊link[rss-feed]{RSS feed}), source code on ◊(->html ◊link[source-code]{Github}) or ◊(->html ◊link[mailto]{contact me}).
           </div>
         </section>
       </div
