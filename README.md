@@ -49,22 +49,23 @@ About the book
 # Pollen
 
 * Feed
+* Insert nonbreaking spaces
+    ◊string->symbol{nbsp}
+    Needed in how does cryptocurrencies work
 
 # Styling
 
-* Right/left navigation on the side
 * Images
 * Style subnav in section chapters
-
+* Style homepage
 * Code
   see https://beautifulracket.com/
-* Style homepage
 * Plot generation
   https://jakevdp.github.io/blog/2012/10/07/xkcd-style-plots-in-matplotlib/
+* Feel out edge colors, too bright?
 
 * Review tufte-css
     https://edwardtufte.github.io/tufte-css/
-    * Slightly larger text on smaller screens?
     * Fullscreen images
     * Notes next to images
     * Images in sidenotes?
