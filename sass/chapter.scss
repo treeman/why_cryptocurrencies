@@ -337,3 +337,39 @@ $sidenote-float-width: 1280px;
     //.sidenote { background-color: pink; }
     //.marginnote { background-color: plum; }
 }
+
+
+/*
+ * Donations
+ */
+.donations {
+    margin: 1rem 0;
+}
+.donation-label {
+    @extend %sans-serif;
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: $body-font-color;
+    cursor: pointer;
+    text-decoration: underline;
+}
+.donation-label:hover {
+    color: $body-link-hover-color;
+}
+.donation-toggle {
+    display: none;
+}
+.donation-content {
+    display: none;
+}
+.donation-toggle:checked + .donation-content {
+    display: block;
+}
+.donation-content > .qr {
+    margin-right: 0.5em;
+}
+.donation-content > .address {
+    font-family: $hack;
+    font-size: 0.8rem;
+}
+

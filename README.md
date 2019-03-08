@@ -41,16 +41,22 @@ Before Jimmie:
 * Properties of a cryptocurrency
 * How does cryptocurrencies work?
 
+Before release:
+* Email list
+* Remove unfinished chapters
+* Donation links
+* Domain + https hosting
+
 # Site
 
 * Email list
 * Get domain
+* Donation QR codes
 
 # Pollen
 
 * Feed
 * Show unfinished chapters on toc page
-* Subscribe/rss/github in the footer of all pages
 
 # Styling
 

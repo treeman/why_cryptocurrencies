@@ -17,15 +17,13 @@ If you think the book was worth your time please consider donating. I'm relying 
 
 You can send any amount of money, big or small, from anywhere in the world nearly instantly to me without any middleman. That's not possible with anything else.
 
-TODO QR codes & addresses
-
-◊ul{
-  ◊li{Bitcoin (BTC)}
-  ◊li{Bitcoin Cash (BCH)}
-  ◊li{Monero (XMR)}
-  ◊li{Ethereum (ETH)}
-  ◊li{Litecoin (LTC)}
-  ◊li{Dogecoin (DGC)}
+◊div[#:class "donations"]{
+    ◊crypto{Bitcoin (BTC)}
+    ◊crypto{Bitcoin Cash (BCH)}
+    ◊crypto{Dogecoin (DGC)}
+    ◊crypto{Ethereum (ETH)}
+    ◊crypto{Litecoin (LTC)}
+    ◊crypto{Monero (XMR)}
 }
 
 If you're missing a coin you ◊em{really} want to use please contact me. If it's not too much hassle I will consider it but please no ◊link[snake-oil]{snake oil}.
@@ -35,4 +33,16 @@ If you're missing a coin you ◊em{really} want to use please contact me. If it'
 }
 
 ◊(define snake-oil "/look_out_for_snake_oil.html")
+
+◊(define (crypto name)
+   ;; TODO better id
+   ;; TODO should add a QR code image
+   ;; TODO should add real donation addreses
+   (define id name)
+   `(div ((class "donation"))
+      (label ((class "donation-label") (for ,id)) ,name)
+      (input ((id ,id) (class "donation-toggle") (type "checkbox")))
+      (span ((class "donation-content"))
+            (span ((class "qr")) "QR code")
+            (span ((class "address")) "bitcoincash:qz4m05qjhd66ggqvugxqm9jprk348nyalgg462vszc"))))
 
