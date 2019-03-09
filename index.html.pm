@@ -67,14 +67,14 @@
       "Banking the unbanked"
       "Safer & cheaper for merchants"
       "Black markets"))
-    ("Other use (?)"
-     ("New asset class"
-      "Provably fair gambling/betting"
-      "Decentralized-ish voting"
+    ("Auxiliary use"
+     ("Provably fair gambling"
+      "Verifiable voting"
       "Uncensorable Twitter"
-      "Tokens?"
-      "Decentralized storage?"
-      "Timestamping service (show that you knew about a vulnerability)"))))
+      "Timestamping service"
+      "Tokens"
+      "New asset class?"
+      ))))
 
 ◊(toc content)
 

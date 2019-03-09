@@ -8,3 +8,11 @@ https://dashnews.org/9-reasons-cryptocurrency-is-better-than-credit-cards-today/
 
 https://news.ycombinator.com/item?id=19281192
 
+https://medium.com/splytcore/simple-decryption-of-satoshi-nakamotos-hidden-message-in-the-blockchain-42b5fe9b3c72
+    https://blockchair.com/bitcoin/block/0
+
+    Coinbase data:
+    The Times 03/Jan/2009 Chancellor on brink of second bailout for banks
+
+    https://imgur.com/pGYXHJh
+
