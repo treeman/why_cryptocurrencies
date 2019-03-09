@@ -56,7 +56,6 @@ Before release:
 # Pollen
 
 * Feed
-* Show unfinished chapters on toc page
 
 # Styling
 
