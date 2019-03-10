@@ -15,7 +15,7 @@ This book is a work in progress and if you want to keep up to date you have thre
       ◊|subscription-form|}
 }
 
-Links to outside are colored heavy orange and internal links are of a brighter orange. For example compare the link to ◊link[source-code]{Github} and to the ◊link["/"]{home page}. There is no tracking on this site but there may very well be on external sites, this serves as a small signifier if you care about that.
+External links are colored green and internal links are bright orange. For example compare the external link to ◊link[source-code]{Github} with the link to the ◊link["/"]{home page}. There is no tracking on this site but there may very well be on external sites, this serves as a small signifier for those who cares about that.
 
 Links to previous and next chapter can be found at the bottom as well as at the edge of the screen.
 
