@@ -10,8 +10,6 @@ About the book
   Free & reader-supported
     * Donation QR codes & addresses
   About me, the author
-    * Title?
-    * Finish the end
 What is a cryptocurrency?
   Properties of a cryptocurrency
     * Rewrite
@@ -35,11 +33,11 @@ What is a cryptocurrency?
 Before Veronica:
 * Polish sidenote todos in Why this book
 
-* Need to create a fluid connection between properties to how cryptos work
-
 Before Jimmie:
 * Properties of a cryptocurrency
 * How does cryptocurrencies work?
+
+* Need to create a fluid connection between properties to how cryptos work
 
 Before release:
 * Email list

@@ -6,7 +6,7 @@
 There are many projects who call themselves cryptocurrencies while not fulfilling the criteria. For example I don't consider these real cryptocurrencies:
 
 ◊ul{
-  ◊li{Onecoin}
+  ◊li{Onecoin◊mn{onecoin}}
   ◊li{Bitconnect}
   ◊li{Ripple}
   ◊li{Stablecoins like ◊link[tether]{Tether} or JP Morgan's ◊link[JPM-coin]{JPM coin}.}
@@ -43,3 +43,8 @@ Here are some legit cryptocurrencies, but there are others:
   ◊li{Dogecoin (DGC)}
 }
 
+◊ndef["onecoin"]{
+    Leaders of OneCoin got charged for ◊link[onecoin]{operating it as a pyramid scheme.}
+}
+
+◊(define onecoin "https://www.bloomberg.com/news/articles/2019-03-08/onecoin-leaders-charged-in-u-s-with-operating-pyramid-scheme")

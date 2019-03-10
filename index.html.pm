@@ -44,6 +44,8 @@
     (map page-toc content)))
 
 ◊(define content
+  ;; Unfortunately duplication with index.ptree but merging in a general sense
+  ;; was complex and couldn't eliminate all duplication anyway.
   `("Why cryptocurrencies in five minutes"
     (about_the_book.html
      (how_to_use.html
