@@ -46,7 +46,6 @@ Before release:
 * Remove unfinished chapters
 * Donation links
 * Domain + https hosting
-* Polish planned chapters
 
 # Site
 

@@ -55,18 +55,19 @@
       look_out_for_snake_oil.html
       what_is_money.html
       are_cryptocurrencies_money.html))
-    (a_better_currency.html
-     ("The financial crisis, bad loans and bail-outs"
-      "Borderless (The charity EatBCH feeds Venezuelans)"
-      "Protection against hyperinflation (see Venezuela)"
-      "Protection against government seizures (see Greece, etc?)"
-      "India voids 500 and 1000 rupee bills"))
     ("Better digital payments"
-     ("Uncensorable donations (Donations to WikiLeaks)"
-      "Payments to gray area businesses"
+     ("Safer & cheaper for merchants"
+      "Uncensorable donations"
+      "“Undesirable” businesses"
+      "PayPal freeze merchant accounts"
       "Banking the unbanked"
-      "Safer & cheaper for merchants"
       "Black markets"))
+    ("A better currency"
+     ("The financial crisis, bad loans and bail-outs"
+      "A borderless currency"
+      "Protection against hyperinflation"
+      "India voids 500 and 1000 rupee bills"
+      "Protection against government seizures"))
     ("Auxiliary use"
      ("Provably fair gambling"
       "Verifiable voting"
