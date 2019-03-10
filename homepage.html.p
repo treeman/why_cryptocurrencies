@@ -18,6 +18,9 @@
         ◊(->html doc #:splice #t)
 
         <section class="follow">
+          <div class="wip">
+            The book is a work in progress. If you want to keep up to date:
+          </div>
           ◊(->html subscription-form)
           <div class="links">
             See the ◊(->html ◊link[rss-feed]{RSS feed}), source code on ◊(->html ◊link[source-code]{Github}) or ◊(->html ◊link[mailto]{contact me}).
