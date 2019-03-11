@@ -15,13 +15,15 @@ Curiously enough they don't explain what cryptocurrencies are or what they can b
 
 Maybe this is why most people --- even cryptocurrency fans --- only see cryptocurrencies as a form of investment. After all there's few things as interesting as the possibility of becoming rich very quickly.
 
-Even if you'd like to know more what hope does average Joe have when even the famous security technologist Bruce Schneier concludes that:
+Even if you'd like to know more what hope does average Joe have when even the famous security technologist Bruce Schneier ◊link[blockchain-and-trust]{concludes that}◊sn{schneier}
 
-◊qt[#:author "Bruce Schneier" #:src "Blockchain and Trust" #:url "https://www.schneier.com/blog/archives/2019/02/blockchain_and_.html"]{
+◊qt[#:author "Bruce Schneier" #:src "Blockchain and Trust" #:url blockchain-and-trust]{
   Honestly, cryptocurrencies are useless
 }
 
-◊sn{schneier} It's almost a universal phenomena. I've heard these arguments from students, co-workers, friends, family and highly technical online communities:
+◊(define blockchain-and-trust "https://www.schneier.com/blog/archives/2019/02/blockchain_and_.html")
+
+It's almost a universal phenomena. I've heard these arguments from students, co-workers, friends, family and highly technical online communities:
 
 ◊ol{
   ◊li{It's a scam}
@@ -56,7 +58,7 @@ This book tries to describe what cryptocurrencies are useful for and what value 
 
 ◊subhead{What this book isn't}
 
-There are many problems with cryptocurrencies as they exist today. This isn't an attempt to explain them away or to look at work being done to counter them. For completeness hare are some of the biggest problems as I see it:
+There are many problems with cryptocurrencies as they exist today. This isn't an attempt to explain them away or to look at work being done to counter them. For completeness here are some of the biggest problems as I see it:
 
 ◊ul{
   ◊li{How can a cryptocurrency scale globally?}
@@ -65,11 +67,21 @@ There are many problems with cryptocurrencies as they exist today. This isn't an
   ◊li{User experience is far from the level of VISA or Apple Pay.}
 }
 
-Instead of focusing on the problems we'll take a look at what cryptocurrencies are useful for today and what value they can bring if they fulfil their potential.
+A problem focused view is excellent for an engineer or a problem solver but it also limit foresight. For example the computer had many problems and drawbacks when first introduced but today we ridicule statements like:
 
-A problem focused view is excellent for an engineer and a problem solver but it can be very limiting as well. For example the computer and the internet had many problems and drawbacks when they first were invented and look at where we are now.
+◊qt[#:author "Thomas Watson, president of IBM" #:date 1943]{
+    I think there is a world market for maybe five computers
+}
 
-We'll not go into technical detail and stick to high level concepts. Neither will we focus on a single implementation---Bitcoin is the first cryptocurrency but there are hundreds more◊sn{cryptos}---this is about the properties of a cryptocurrency which can be provided in several different ways.
+◊qt[#:author "Ken Olsen, founder of Digital Equipment Corporation" #:date 1977]{
+    There is no reason anyone would want a computer in their home
+}
+
+Instead of getting stuck at these problems, which I believe can be addressed, we'll take a look at what cryptocurrencies are useful for today and what value they bring.
+
+We won't go into too much technical detail and try to stick to high level concepts. This is enough to answer what value cryptocurrencies give.
+
+Neither will we focus on a single implementation---Bitcoin is the first cryptocurrency but there are hundreds more◊sn{cryptos}---this is about the properties of a cryptocurrency which can be provided in several different ways.
 
 And of course none of this is investment advice.
 
@@ -84,18 +96,12 @@ And of course none of this is investment advice.
 ◊ndef["beanies"]{
     Beanie Babies is a type of toys which people used to speculate with. It become a mania where people would sell---and buy---these toys at 10x or 100x their original price and was at one time responsible for 10% of eBay's sales. The mania managed to make the creator, Ty Warner, one of the richest men in the world before it crashed.
 
-    Here people say that cryptocurrencies too is only propped up by a speculative mania and that their value will crash to nothing, just like the Beanie Babies.
-
     If you're looking for the digital version of Beanie Babies then look no further than ◊link[cryptokitties]{CryptoKitties} where someone spent $114,000 on a virtual kitten in a blockchain game running on Ethereum.
 }
 
 
 ◊ndef["tulips"]{
-    TODO Describe tulip fever and how it relates to cryptocurrencies.
-
-    Although commonly refered to it wasn't as bad as it's often portrayed as. But it was still quite bad.
-
-    ◊link{https://en.wikipedia.org/wiki/Tulip_mania}
+    Tulip mania is on of the first recorded speculative bubbles which occurred 1636--1637 in Netherlands. There people speculated in tulip bulbs which reached spectacular prices before crashing down abruptly.
 }
 
 
@@ -111,7 +117,7 @@ And of course none of this is investment advice.
 }
 
 ◊ndef["scams"]{
-    But take care, there are ◊strong{lot's} of scams out there.
+    But please take care and do your research, there are ◊strong{many} scams out there.
 }
 
 ◊(define Monero "https://www.getmonero.org/")

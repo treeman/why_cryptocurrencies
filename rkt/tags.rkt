@@ -2,6 +2,7 @@
 
 (require pollen/tag pollen/decode txexpr)
 (require racket/match racket/string racket/list)
+(require racket/format)
 (require "post-process.rkt")
 (require "string-process.rkt")
 
@@ -55,14 +56,24 @@
   `(div ((class "epigraph"))
        ,@txt))
 
-(define (qt #:author author #:src src #:url [url #f] . txt)
+(define (qt #:author author #:src [src #f] #:url [url #f] #:date [date #f] . txt)
   (define ref (if url
                   (link url src)
                   src))
+  (define cite `((span ((class "author")) ,author ", ")))
+  (when (or url src)
+    (let ((ref (if url
+                  (link url src)
+                  src)))
+      (set! cite (append cite
+                         `((span ((class "src")) "“" ,ref "”"))))))
+  (when date
+    (set! cite (append cite
+                       `((span ((class "date")) ,(~a date))))))
+
   `(blockquote
-      ,@txt
-      (footer (span ((class "author")) ,author ", ")
-              (span ((class "src")) "“" ,ref "”"))))
+    ,@txt
+    (footer ,@cite)))
 
 (define (icode . args)
   `(code ,@args))

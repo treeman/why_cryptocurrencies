@@ -3,8 +3,6 @@
 Why cryptocurrencies in five minutes
     * Everything
 About the book
-  * Describe beanie babies
-  * Describe tulip fever
   How to use
   Free & reader-supported
     * Donation QR codes & addresses
@@ -59,9 +57,8 @@ Before release:
 
 # Styling
 
+* Donation links in Free & reader-supported
 * Images
-* Style subnav in section chapters
-* Style homepage
 * Code
   see https://beautifulracket.com/
 * Plot generation
