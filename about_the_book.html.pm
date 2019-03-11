@@ -77,18 +77,16 @@ And of course none of this is investment advice.
 ◊ndef["schneier"]{
     Schneier brings an interesting perspective and he's right about one very important aspect: Contrary to popular belief cryptocurrencies doesn't remove all trust. It just removes and shifts some.
 
-    To counter his point that "cryptocurrencies are useless" all you have to do is provide one counterexample where they're useful. That's honestly not difficult at all.
+    To counter his point that "cryptocurrencies are useless" all you have to do is provide one counterexample where they're useful. I will give several.
 }
 
 
 ◊ndef["beanies"]{
-    TODO How does it relate to cryptos?
+    Beanie Babies is a type of toys which people used to speculate with. It become a mania where people would sell---and buy---these toys at 10x or 100x their original price and was at one time responsible for 10% of eBay's sales. The mania managed to make the creator, Ty Warner, one of the richest men in the world before it crashed.
 
-    At it's height people would sell---and buy---these toys at 10x their original price and was responsible for 10% of eBay's sales. The creator was at one point one of the richest men in the world.
+    Here people say that cryptocurrencies too is only propped up by a speculative mania and that their value will crash to nothing, just like the Beanie Babies.
 
-    ◊link{https://en.wikipedia.org/wiki/Beanie_Babies}
-
-    ◊link{http://fortune.com/2015/03/11/beanie-babies-failure-lessons/}
+    If you're looking for the digital version of Beanie Babies then look no further than ◊link[cryptokitties]{CryptoKitties} where someone spent $114,000 on a virtual kitten in a blockchain game running on Ethereum.
 }
 
 
@@ -123,4 +121,5 @@ And of course none of this is investment advice.
 ◊(define independent-worthless "https://www.independent.co.uk/voices/bitcoin-cryptocurrency-price-crash-bank-of-england-agustin-carstens-a8645356.html")
 ◊(define cnn-environment "https://money.cnn.com/2017/12/07/technology/bitcoin-energy-environment/index.html")
 ◊(define independent-illegal "https://www.independent.co.uk/life-style/gadgets-and-tech/news/bitcoin-price-fall-criminals-blockchain-anonymous-cryptocurrency-zcash-monero-dash-a8174716.html")
+◊(define cryptokitties "https://www.cnbc.com/2017/12/06/meet-cryptokitties-the-new-digital-beanie-babies-selling-for-100k.html")
 
