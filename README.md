@@ -6,7 +6,6 @@ About the book
   * Describe beanie babies
   * Describe tulip fever
   How to use
-    * Just read through once more, should be done
   Free & reader-supported
     * Donation QR codes & addresses
   About me, the author
@@ -44,6 +43,9 @@ Before release:
 * Remove unfinished chapters
 * Donation links
 * Domain + https hosting
+* woff2 fonts
+* Correct link to github
+* Correct link to feed
 
 # Site
 
@@ -57,7 +59,6 @@ Before release:
 
 # Styling
 
-* Bigger difference between internal & external links
 * Images
 * Style subnav in section chapters
 * Style homepage

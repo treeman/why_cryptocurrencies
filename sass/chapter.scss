@@ -312,6 +312,7 @@ $sidenote-float-width: 1280px;
     .sidenote, .marginnote {
         display: none;
     }
+
     .margin-toggle:checked + .sidenote,
     .margin-toggle:checked + .marginnote {
         display: block;

@@ -19,6 +19,15 @@ External links are colored green and internal links are bright orange. For examp
 
 Links to previous and next chapter can be found at the bottom as well as at the edge of the screen.
 
+Sidenotes use numbers in the text◊sn{sn} and marginnotes◊mn{mn} are notes without numbered references. On small screens like mobile phones the notes are hidden and can be shown by clicking on the sidenote number or the † symbol for marginnotes.
+
+◊ndef["sn"]{
+    This is a sidenote.
+}
+◊ndef["mn"]{
+    This is a marginnote.
+}
+
 While I do my very best apart from close friends I don't use an editor so there may be errors in the book. Therefore I would be most grateful for any feedback, ideas or error corrections you the reader may find. You can ◊link[mailto]{email me} or create a pull request or an issue ◊link[source-code]{on Github}.
 
 ◊(define the-first-chapter "what_is_a_cryptocurrency.html")
