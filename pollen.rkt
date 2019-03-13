@@ -19,8 +19,7 @@
 
   (define template-prefix "site")
   ;; splice-me needs to NOT be a block tag to allow us to inject
-  ;; elements inside paragraphs
-  ;(define block-tags (cons 'splice-me default-block-tags))
+  (define block-tags (cons 'img default-block-tags))
 
   (define rkt-files (glob "rkt/*.rkt"))
   (define cache-watchlist rkt-files))

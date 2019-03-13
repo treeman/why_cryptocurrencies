@@ -100,6 +100,14 @@
                           x))
                      args)))
 
+(define (img #:src src #:title [title #f] #:alt [alt #f] caption)
+  ;; Add title + alt
+  ;; should be able to style it
+  `(figure
+     (img ((src ,(~a src))))
+     (figcaption ,caption)))
+  ;`(img ((src ,(~a src)))))
+
 
 ;;; Margin-notes and side-notes
 (define note-defs (make-hash))

@@ -63,7 +63,6 @@ Before release:
   see https://beautifulracket.com/
 * Plot generation
   https://jakevdp.github.io/blog/2012/10/07/xkcd-style-plots-in-matplotlib/
-* Feel out edge colors, too bright?
 
 * Review tufte-css
     https://edwardtufte.github.io/tufte-css/

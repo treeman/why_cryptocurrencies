@@ -62,7 +62,9 @@ As there is no trusted third party there isn't a single entity who controls the 
 
 Most cryptocurrencies are deflationary with an absolute limit on the supply, but it's not a requirement. For example Bitcoin has a hard limit of 21 million bitcoins whereas in Monero new coins will always be created.
 
-img: Bitcoin's emission rate. Monero's emission rate.
+◊img[#:src "/images/emission-rates.svg"]{Emission rate}
+
+If deflation in a currency is good or bad depends on who you ask. Keynesian economists argues it's bad while the Austrian school argues it's good. Either way it's not an argument against cryptocurrencies in general as they can be either inflationary or deflationary.
 
 
 ◊subhead{Amounts don't matter}
