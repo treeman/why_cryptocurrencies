@@ -60,11 +60,17 @@ As there is no trusted third party there isn't a single entity who controls the 
     The new coins are rewards for miners who secure the network, but more on that in the ◊link[next-chapter]{next chapter}.
 }
 
-Most cryptocurrencies are deflationary with an absolute limit on the supply, but it's not a requirement. For example Bitcoin has a hard limit of 21 million bitcoins whereas in Monero new coins will always be created.
+Most cryptocurrencies are deflationary with an absolute limit on the supply, but it's not a requirement. For example Bitcoin has a hard limit of 21 million bitcoins◊sn{bitcoin-supply} whereas in Monero new coins will always be created.
 
 ◊img[#:src "/images/emission-rates.svg"]{Emission rate}
 
 If deflation in a currency is good or bad depends on who you ask. Keynesian economists argues it's bad while the Austrian school argues it's good. Either way it's not an argument against cryptocurrencies in general as they can be either inflationary or deflationary.
+
+In any case most cryptocurrencies choose to avoid the exponential increase in supply like fiat has.
+
+◊ndef["bitcoin-supply"]{
+     The emission rate in Bitcoin was chosen to approximate the rate gold is mined.
+}
 
 
 ◊subhead{Amounts don't matter}
