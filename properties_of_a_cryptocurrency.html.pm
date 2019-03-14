@@ -60,16 +60,18 @@ As there is no trusted third party there isn't a single entity who controls the 
     The new coins are rewards for miners who secure the network, but more on that in the ◊link[next-chapter]{next chapter}.
 }
 
-Most cryptocurrencies are deflationary with an absolute limit on the supply, but it's not a requirement. For example Bitcoin has a hard limit of 21 million bitcoins◊sn{bitcoin-supply} whereas in Monero new coins will always be created.
+Most cryptocurrencies are deflationary with an absolute limit on the supply, but it's not a requirement.
 
-◊img[#:src "/images/emission-rates.svg"]{Emission rate}
+◊;img[#:src "/images/emission-rates.svg" #:class "articlewidth" #:margin #t]{Emission rate}
+◊;img[#:src "/images/emission-rates.svg" #:class "fullwidth" #:margin #t]{Emission rate}
+◊img[#:src "/images/emission-rates.svg" #:margin #f]{
+    Bitcoin has a hard limit of 21 million bitcoins while in Monero new coins will always be created.◊sn{bitcoin-supply}
+}
 
-If deflation in a currency is good or bad depends on who you ask. Keynesian economists argues it's bad while the Austrian school argues it's good. Either way it's not an argument against cryptocurrencies in general as they can be either inflationary or deflationary.
-
-In any case most cryptocurrencies choose to avoid the exponential increase in supply like fiat has.
+If deflation in a currency is good or bad depends on who you ask. Keynesian economists argues it's bad while the Austrian school argues it's good. Either way it's not an argument against cryptocurrencies in general as they can be either inflationary or deflationary.  Most cryptocurrencies choose to avoid an exponential increase in supply.
 
 ◊ndef["bitcoin-supply"]{
-     The emission rate in Bitcoin was chosen to approximate the rate gold is mined.
+     The emission rate in Bitcoin was chosen to approximate the rate gold is mined. In Monero the tail emission is there to replace lost coins and to make sure rewards for miners don't run out.
 }
 
 

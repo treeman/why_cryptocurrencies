@@ -263,10 +263,8 @@ pre {
     display: inline-block;
 }
 
-.snp {
-    code {
-        overflow-wrap: break-word;
-    }
+.snp > code {
+    overflow-wrap: break-word;
 }
 
 
@@ -372,5 +370,61 @@ $sidenote-float-width: 1280px;
 .donation-content > .address {
     font-family: $hack;
     font-size: 0.8rem;
+}
+
+
+/*
+ * Figures
+ */
+figure {
+    margin-bottom: 1rem;
+    text-align: center;
+
+    > .img {
+        max-width: 100%;
+    }
+    > figcaption {
+        @extend %sans-serif;
+        font-size: 0.9rem;
+    }
+}
+figure.articlewidth, figure.fullwidth {
+    > img {
+        width: 100%;
+    }
+}
+figcaption.margin {
+    @extend %sans-serif;
+}
+
+@media (min-width: $sidenote-float-width) {
+    figure.fullwidth {
+        width: 1220px;
+    }
+    figcaption.margin {
+        font-size: 0.8rem;
+        float: right;
+        clear: right;
+        margin-right: -420px;
+        margin-bottom: 2rem;
+        width: 380px;
+        position: relative;
+        display: inline-block;
+        text-align: left;
+    }
+    // Override the above in a fullwidth image. Not sure how to avoid this?
+    figure.fullwidth > figcaption.margin {
+        font-size: 0.9rem;
+        float: none;
+        margin: 0;
+        position: static;
+        display: block;
+        text-align: center;
+        width: 100%;
+    }
+}
+
+figure .sidenote, figure .marginnote {
+    text-align: left;
 }
 

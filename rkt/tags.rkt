@@ -100,13 +100,25 @@
                           x))
                      args)))
 
-(define (img #:src src #:title [title #f] #:alt [alt #f] caption)
-  ;; Add title + alt
-  ;; should be able to style it
+(define (img #:src src #:title [title #f] #:alt [alt #f] #:class [c #f]
+             #:margin [margin #f] . caption)
+  (define attrs `())
+  (when c
+    (set! attrs (cons `(class ,c) attrs)))
+  (when title
+    (set! attrs (cons `(title ,title) attrs)))
+  (when alt
+    (set! attrs (cons `(alt alt) attrs)))
+
+  (define figcaption
+    (if margin
+      `(figcaption ((class "margin")) ,@caption)
+      `(figcaption ,@caption)))
+
   `(figure
+     ,attrs
      (img ((src ,(~a src))))
-     (figcaption ,caption)))
-  ;`(img ((src ,(~a src)))))
+     ,figcaption))
 
 
 ;;; Margin-notes and side-notes
