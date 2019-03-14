@@ -77,7 +77,9 @@
       "Timestamping service"
       "Tokens"
       "New asset class?"
-      ))))
+      ))
+    (appendix.html
+     (bitcoin_whitepaper.html))))
 
 ◊(toc content)
 

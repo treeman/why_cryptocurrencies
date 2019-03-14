@@ -13,21 +13,25 @@
     ((regexp-match #rx"^https?://" url) #t)
     (else #f)))
 
-(define (link . args)
+(define (link #:class [c #f] . args)
   (match args
     [(list (list url title) text)
-     (make-link url text #:title title)]
+     (make-link url text #:title title #:class c)]
     [(list url text)
-     (make-link url text)]
+     (make-link url text #:class c)]
     [(list url)
-     (make-link url url)]))
+     (make-link url url #:class c)]))
 
-(define (make-link url text #:title [title #f])
+(define (make-link url text #:title [title #f] #:class [c #f])
   (define attrs `((href ,url)))
   (when title
     (set! attrs (cons `(title ,title) attrs)))
   (when (xref? url)
-    (set! attrs (cons `(class "xref") attrs)))
+    (set! c (if c
+              (string-append c " xref")
+              "xref")))
+  (when c
+    (set! attrs (cons `(class ,c) attrs)))
   `(a ,attrs ,text))
 
 (define (subhead txt)

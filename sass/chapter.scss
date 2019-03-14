@@ -428,3 +428,19 @@ figure .sidenote, figure .marginnote {
     text-align: left;
 }
 
+
+/*
+ * Misc
+ */
+.whitepaper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 1rem;
+
+    a {
+        @extend %sans-serif;
+        font-size: 1.05rem;
+    }
+}
+

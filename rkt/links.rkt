@@ -7,8 +7,8 @@
     "Feed to the site"))
 
 (define wp
-  `("/files/bitcoin.pdf"
-    "Bitcoin: A Peer-to-Peer Electronic Cash System"))
+  `("/bitcoin_whitepaper.html"
+    "The Bitcoin Whitepaper"))
 
 (define source-code
   `("https://github.com/"

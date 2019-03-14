@@ -37,6 +37,7 @@ Before release:
 * Domain + https hosting
 * Correct link to github
 * Correct link to feed
+* Appendix
 
 # Site
 
@@ -50,6 +51,7 @@ Before release:
 
 # Styling
 
+* Appendix
 * Donation links in Free & reader-supported
 * Code
   see https://beautifulracket.com/
