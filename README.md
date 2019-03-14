@@ -27,9 +27,6 @@ What is a cryptocurrency?
 
 # TODO
 
-Before Veronica:
-* Polish sidenote todos in Why this book
-
 Before Jimmie:
 * Properties of a cryptocurrency
 * How does cryptocurrencies work?
@@ -58,17 +55,6 @@ Before release:
 # Styling
 
 * Donation links in Free & reader-supported
-* Images
 * Code
   see https://beautifulracket.com/
-* Plot generation
-  https://jakevdp.github.io/blog/2012/10/07/xkcd-style-plots-in-matplotlib/
-
-* Review tufte-css
-    https://edwardtufte.github.io/tufte-css/
-    * Fullscreen images
-    * Notes next to images
-    * Images in sidenotes?
-    * Use sections on the page? h1 for page title, h2 for section headings, h3 for subsections?
-        Probably not
 
