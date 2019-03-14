@@ -67,8 +67,19 @@ def y_fmt(y, pos):
     return '{val:d} M'.format(val=int(y/1000000))
 ax.get_yaxis().set_major_formatter(FuncFormatter(y_fmt))
 
-plt.plot(btc_years, btc_supply, label='Bitcoin')
-plt.plot(xmr_x, xmr_y, label='Monero')
+ax.spines['right'].set_color('none')
+ax.spines['top'].set_color('none')
+
+ax.set_xticks((2009, 2014, 2020, 2030, 2040, 2050))
+ax.set_yticks((0, 10000000, 21000000))
+ax.tick_params(axis=u'both', which=u'both',width=2)
+
+plt.annotate(
+    'we are here',
+    xy=(2020, 16800000), arrowprops=dict(arrowstyle='->'), xytext=(2025, 13100000))
+
+plt.plot(btc_years, btc_supply, '#f59332', label='Bitcoin')
+plt.plot(xmr_x, xmr_y, 'tab:blue', label='Monero')
 
 plt.legend(loc='lower right')
 

@@ -62,8 +62,6 @@ As there is no trusted third party there isn't a single entity who controls the 
 
 Most cryptocurrencies are deflationary with an absolute limit on the supply, but it's not a requirement.
 
-◊;img[#:src "/images/emission-rates.svg" #:class "articlewidth" #:margin #t]{Emission rate}
-◊;img[#:src "/images/emission-rates.svg" #:class "fullwidth" #:margin #t]{Emission rate}
 ◊img[#:src "/images/emission-rates.svg" #:margin #f]{
     Bitcoin has a hard limit of 21 million bitcoins while in Monero new coins will always be created.◊sn{bitcoin-supply}
 }

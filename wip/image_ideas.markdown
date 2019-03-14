@@ -21,5 +21,3 @@ More:
 * Store of value
     Buy something with gold then and now
 
-Generated/plots:
-* Bitcoin's emission rate. Monero's emission rate.
