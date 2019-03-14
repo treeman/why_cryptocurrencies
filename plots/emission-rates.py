@@ -40,8 +40,9 @@ def xmr(x):
     return [supply[i] for i in x]
 
 
+# Use actual blocktime of 9.4 min
 btc_years = np.arange(2009, 2051, 1)
-btc_blocks = [(y - 2009)*365*24*6 for y in btc_years]
+btc_blocks = [int((y - 2009)*365*24*60/9.4) for y in btc_years]
 btc_supply = btc(btc_blocks)
 
 # Just approximate values... It's not exact anyway.
