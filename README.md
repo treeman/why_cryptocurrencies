@@ -9,8 +9,6 @@ About the book
   About me, the author
 What is a cryptocurrency?
   Properties of a cryptocurrency
-    * Rewrite
-    * Emission rate images
   How does cryptocurrencies work?
     * Everything
   Look out for snake oil
@@ -28,7 +26,6 @@ What is a cryptocurrency?
 # TODO
 
 Before Jimmie:
-* Properties of a cryptocurrency
 * How does cryptocurrencies work?
 
 * Need to create a fluid connection between properties to how cryptos work
@@ -38,7 +35,6 @@ Before release:
 * Remove unfinished chapters
 * Donation links
 * Domain + https hosting
-* woff2 fonts
 * Correct link to github
 * Correct link to feed
 
