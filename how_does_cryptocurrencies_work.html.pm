@@ -155,12 +155,14 @@ But what happens if there are two chains? One where Sneaky Steve sends money to 
 
 This all relies on a majority of miners being honest---it is the core assumption for POW to work at all. Honest miners work for profit so they absolutely don't want to risk their block being rejected by the other miners and lose their reward.◊sn{orphan} Therefore the rational thing to do is to work on the longest chain.
 
-If most miners are honest then one chain will become longer. In our example Honest Harry simply waits too see which chain wins and decide from there. Coming to consensus by following the longest chain is often referred to as ◊em{Nakamoto consensus}.◊mn{fork}
+If most miners are honest then one chain will become longer. In our example Honest Harry simply waits too see which chain wins and decide from there.◊sn{fork} Coming to consensus by following the longest chain is often referred to as ◊em{Nakamoto consensus}.
+
+◊(define nb 'nbsp)
 
 ◊ndef["fork"]{
     When two separate chains appear we say that the blockchain forks. New cryptocurrencies might be created from existing ones by forking off at a point in time and start following new rules.
 
-    See for example Bitcoin Cash--Bitcoin or the Ethereum--Ethereum Classic split. Which of the two chains is the "correct" is of course subjective.
+    See for example Bitcoin Cash--Bitcoin or the Ethereum◊|nb|--◊|nb|Ethereum Classic split. Which of the two chains is the "correct" is of course subjective.
 }
 
 ◊todo{IMG two chains, one shorter}
