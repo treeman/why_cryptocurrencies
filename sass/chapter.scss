@@ -456,3 +456,13 @@ figure .sidenote, figure .marginnote {
     }
 }
 
+.story {
+    padding-top: 1rem;
+    //padding-left: 1rem;
+    //padding-right: 1rem;
+    margin: 1.5rem 0;
+    border-top: 1px dashed $body-hr-color;
+    border-bottom: 1px dashed $body-hr-color;
+}
+
+

@@ -29,8 +29,6 @@ What is a cryptocurrency?
 Before Jimmie:
 * How does cryptocurrencies work?
 
-* Need to create a fluid connection between properties to how cryptos work
-
 Before release:
 * Email list
 * Remove unfinished chapters

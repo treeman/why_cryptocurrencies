@@ -115,6 +115,7 @@ $code-font-family: $hack, monospace;
     font-feature-settings: "onum" off, "kern" on;
 }
 %sans-serif-tnum {
+    text-rendering: optimizeLegibility;
     @extend %sans-serif;
     font-feature-settings: 'kern' on, 'tnum' on;
 }
