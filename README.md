@@ -11,7 +11,8 @@ What is a cryptocurrency?
   Properties of a cryptocurrency
     3 images
   How does cryptocurrencies work?
-    * Everything
+    Several images
+    re-read
   Look out for snake oil
     * Rewrite
     * Logos
