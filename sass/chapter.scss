@@ -444,3 +444,15 @@ figure .sidenote, figure .marginnote {
     }
 }
 
+.todo {
+    @extend %sans-serif;
+    font-size: 0.8rem;
+    margin: 1rem 1rem;
+
+    .pre {
+        font-weight: bold;
+    }
+    .txt {
+    }
+}
+

@@ -1,11 +1,7 @@
 #lang pollen
 
 ◊(define-meta title "How does cryptocurrencies work?")
-◊(define-meta subtitle "Byzantine?")
-
-◊; Table format
-◊(define (tf . args)
-    (sans-tnum (apply nbsp args)))
+◊;(define-meta subtitle "Byzantine fault tolerance")
 
 As stated in the introduction the focus isn't on technical details but it's a hard balance to make between keeping it simple and explaining how cryptocurrencies work. If this chapter is too technical you can safely skip to the ◊link[next-chapter]{next chapter}.
 
@@ -34,7 +30,7 @@ Cryptocurrencies work this way as well. In fact the ledger in a cryptocurrency, 
 
 To be able to create a transaction you need to have the private keys to the address you want to send from. Think of it as a secret password that unlocks your account. This prevents anyone else from stealing your coins, unless of course they steal your private key!
 
-The keys uses a ◊link[public-key-cryptography]{public-key cryptography} scheme which I won't explain more, look it up if you're interested.
+It uses ◊link[public-key-cryptography]{public-key cryptography} which allows you to prove you have the private key without showing the private key itself. Compare it to credit card numbers which act as both a private and public key. I won't explain how it works in detail, look it up if you're interested.
 
 
 ◊subhead{Copying a coin & double spending}
@@ -51,6 +47,8 @@ For example Alice wants to buy a computer from Bob and wants to pay with Bitcoin
 
 What Alice tries to do is send ◊tf{1 BTC} to the merchant Bob and then send the same ◊tf{1 BTC} to her other address ◊tf{Alice 2}.◊mn{addresses}
 
+◊todo{IMG alice doublespend}
+
 ◊ndef["addresses"]{
     You can have as many addresses you want. This is a consequence of the permissionless nature of Bitcoin.
 }
@@ -58,27 +56,34 @@ What Alice tries to do is send ◊tf{1 BTC} to the merchant Bob and then send th
 If we didn't prevent this the ledger might look like this:
 
 ◊table[#:header #f]{
-  Alice 1     -1 BTC (-2 BTC)
-  Alice 2     1 BTC (+1 BTC)
-  Bob         1 BTC (+1 BTC)
+  Alice 1     -1 BTC    (-2 BTC)
+  Alice 2     1 BTC     (+1 BTC)
+  Bob         1 BTC     (+1 BTC)
 }
 
-We copied our coin and printed ◊tf{1 BTC} out of thin air so now the ledger contains a negative balance. This is a form of "double spending", spending the same coin twice.
+We copied our coin and printed ◊tf{1 BTC} out of thin air so now the ledger contains a negative balance. This is a form of ◊em{double spending}---spending the same coin twice.
 
-This isn't really a problem with physical cash since you can't just copy gold coins or paper notes. It isn't a problem for banks either since the bank can just deny one or both of the transactions.
+This isn't really a problem with physical cash since you can't just copy gold coins or paper notes. It's not a problem for banks either since the bank can just deny one or both of the transactions.
 
-But this is a hard problem for a digital currency that tries to remove the central authority. This is why before Bitcoin no decentralized digital currencies existed.
+But this is a hard problem for a digital currency that tries to remove the central authority. This is why before Bitcoin no decentralized◊sn{decentralized} digital currency existed.
+
+◊ndef["decentralized"]{
+    Decentralization is a common term used to refer to the lack of trusted third party. Instead multiple unrelated entities come together and decide as a group.
+}
 
 
 ◊subhead{The Byzantine Generals Problem}
 
-To solve double spending it's enough to choose one of double spending transactions. But how do you do that when there are many unrelated people, some who wants to cheat?
+To solve double spending it's enough to choose one of double spending transactions. But how do you do that when there are many unrelated people---some who wants to cheat?
 
-This is the same problem known as the Byzantine Generals Problem:
+This is the same problem known as the ◊em{Byzantine Generals Problem}:
 
-◊link{https://coincentral.com/byzantine-generals-problem/}
+In the Eastern Roman Empire, also referred to The Byzantine Empire, a couple of generals surround an enemy city. The city is very well defended and if they attack individually they will get crushed. They will have to work together and coordinate to attack at the same time or to retreat as a unit. If they don't then a massive defeat will follow.
 
-◊link[byzantine]{Byzantine fault tolerance}
+This would be very easy if they could trust each other. Unfortunately they cannot trust the messages---either the messenger or the message itself could be replaced---and even some of the generals could be traitors.
+
+◊todo{IMG 5 generals surrounding a city, 2 traitors}
+
 
 
 ◊subhead{Miners}
@@ -115,7 +120,11 @@ The merchant can now look up the transaction in the blockchain to confirm they'v
 }
 
 ◊(define chargeback-fraud "https://en.wikipedia.org/wiki/Chargeback_fraud")
-◊(define public-key-cryptography "https://en.wikipedia.org/wiki/Public-key_cryptograph://en.wikipedia.org/wiki/Public-key_cryptography ")
-◊(define next-chapter "/properties_of_a_cryptocurrency.html")
+◊(define public-key-cryptography "https://en.wikipedia.org/wiki/Public-key_cryptography")
+◊(define next-chapter "/look_out_for_snake_oil.html")
 ◊(define byzantine "https://en.wikipedia.org/wiki/Byzantine_fault_tolerance")
+
+◊; Table format
+◊(define (tf . args)
+    (sans-tnum (apply nbsp args)))
 

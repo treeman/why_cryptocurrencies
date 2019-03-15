@@ -90,6 +90,11 @@
 (define (sans-tnum . args)
   `(span ((class "sans-tnum")) ,@args))
 
+(define (todo . args)
+  `(div ((class "todo"))
+    (span ((class "pre")) "TODO ")
+    (span ((class "txt")) ,@args)))
+
 ;; Replace spaces in strings found in args with 'nbsp
 ;; which will be escaped to &nbsp; a non-breaking space.
 (define (nbsp . args)

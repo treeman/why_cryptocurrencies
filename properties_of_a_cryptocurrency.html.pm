@@ -15,6 +15,10 @@ The important difference between a cryptocurrency and digital payments we have t
 
 Sending money to people via your bank is not peer-to-peer as you rely on your bank to send it for you. VISA, PayPal, Swish, Apple Pay and other digital payments have the same problem, all except cryptocurrencies.
 
+◊todo{IMG giving coins}
+◊todo{IMG sending via VISA}
+◊todo{IMG paying via crypto}
+
 Transfers are therefore ◊em{trustless}◊sn{pundits} and ◊em{permissionless}.
 
 ◊ndef["pundits"]{
@@ -48,7 +52,7 @@ This means if you've sent someone coins you can only get them back if they agree
 ◊ndef["DAO"]{
     It is possible to revert transfers... If everyone agrees.
 
-    A famous event was when Ethereum altereted their rules in the DAO hard fork. Many agreed but not everyone so Ethereum split into two coins where Ethereum Classic kept the old rules.
+    Ethereum famously altereted their rules in the DAO hard fork. Many agreed but not everyone so Ethereum split into two coins where Ethereum Classic kept the old rules.
 }
 
 
@@ -62,7 +66,7 @@ As there is no trusted third party there isn't a single entity who controls the 
 
 Most cryptocurrencies are deflationary with an absolute limit on the supply, but it's not a requirement.
 
-◊img[#:src "/images/emission-rates.svg" #:margin #f]{
+◊img[#:src "/images/emission-rates.svg"]{
     Bitcoin has a hard limit of 21 million bitcoins while in Monero new coins will always be created.◊sn{bitcoin-supply}
 }
 

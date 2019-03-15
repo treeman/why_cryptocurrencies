@@ -9,6 +9,7 @@ About the book
   About me, the author
 What is a cryptocurrency?
   Properties of a cryptocurrency
+    3 images
   How does cryptocurrencies work?
     * Everything
   Look out for snake oil
