@@ -143,7 +143,6 @@ Importantly you're not allowed to add any invalid transactions, like sending coi
 
 In return for adding the block you get a reward, both a fixed one for finding a new block and you can collect transaction fees for the transactions you include in the block.◊mn{gold}
 
-
 ◊ndef["gold"]{
     As I'm writing this the current blockreward for Bitcoin is 12.5 BTC or around $50,000.
 }
@@ -162,50 +161,35 @@ If most miners are honest then one chain will become longer. In our example Bob 
 
 This touches on the immutability of the blockchain. As long as more than 50% of miners don't want to change the chain it will always be longest and correct. But if they do then they can rewrite the rules.
 
-
-This prevents someone like Alice to reverse their transaction after paying Bob.◊sn{chargeback}
-
-
 ◊ndef["orphan"]{
     This might happen unintentionally if two blocks are produced at the same time. One of them gets ◊em{orphaned}.
 }
-
-
-◊ndef["hashing"]{
-    Hashing
-}
-
-
-◊hr{}
-
 
 ◊ndef["valid"]{
     Remember that to prevent double spending one transaction must be chosen, which one doesn't matter.
 }
 
 
-A crucial mistake people make is to think more miners, or more energy used, means more transactions can be handled. This is not true. Miners ◊strong{only} care about securing the chain and to prevent your transactions from being reverted or double spent. 
+
+◊subhead{Transaction security}
+
+If someone like Alice wants to reverse their transaction◊sn{chargeback} after paying Bob she would have to create a longer chain than the rest of the network which in the long run is only possible if she does control 50% of all mining. For Bitcoin this is very, very hard and in practice impossible.
+
+The deeper a transaction is in the blockchain---the more confirmations it has---the harder a transaction is to reverse. Bitcoin's security isn't absolute but probabilistic. ◊link[wp]{Bitcoin's whitepaper} goes into more details and recommends 6 confirmations---roughly one hour---to be sure you don't get defrauded. Today for most normal payments a single confirmation is usually enough.
+
+A crucial mistake people make is to think more miners, or more energy used, means more transactions can be handled. This is not true. Miners ◊strong{only} care about securing the chain and to prevent your transactions from being reversed.
 
 In fact we could spend 100x more energy on securing the chain and process the same amount of transactions or we could spend 1% of the energy and process more transactions. Transaction throughput is a separate problem.
 
 
-◊subhead{Where do your transactions go?}
+◊subhead{More details}
 
-When you want to pay a merchant you don't send it directly to them like you would pay them with cash in hand. Instead you send the transaction out to the network which gets forwarded to the miners who then adds it to the blockchain.
-
-The merchant can now look up the transaction in the blockchain to confirm they've received it and can then give you the goods without fear of the transaction being reversed.◊mn{reversed}
-
-◊ndef["reversed"]{
-    It's not completely true that there is no risk of fraud. The security model isn't absolute but probabilistic and the deeper in the blockchain the transaction is the harder it is to reverse.
-
-    In ◊link[wp]{the whitepaper} 6 confirmations---roughly 1 hour---is recommended to be sure you won't get defrauded. Today with the considerable security today of the Bitcoin blockchain a single confirmation is enough for most normal payments.
-}
+If you still have questions and want more details I encourage you to do more research. ◊link[wp]{Bitcoin's whitepaper} is always a good place to begin and I've tried to include key concepts you can search for. There are many good resources online which go into much more details than I have here.
 
 
 ◊ndef["chargeback"]{
     In the credit card world reverting transactions leads to ◊link[chargeback-fraud]{chargeback fraud}.
 }
-
 
 ◊ndef["stores-transactions"]{
     It's a slight simplification to say the blockchain stores balances.  It actually stores all transactions from which you can calculate all balances.
