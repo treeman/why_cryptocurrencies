@@ -27,6 +27,8 @@ What is a cryptocurrency?
 
 # TODO
 
+* Fix after Veronica's feedback
+
 Before Jimmie:
 * How does cryptocurrencies work?
 

@@ -9,6 +9,8 @@ If I some day finish the book and decide to release it in other formats I may ch
 
 ◊subhead{Then why donate?}
 
+◊todo{Scrap this section and rewrite}
+
 Because without revenue the book dies.
 
 If you think the book was worth your time please consider donating. I'm relying on your generosity to fund writing it. And if you don't think the book was worth your time, sorry for wasting it.

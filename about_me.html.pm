@@ -9,6 +9,8 @@ Many topics interest me but few manage to hold my attention for very long. Progr
 
 I am not a cryptocurrency visionary. In fact when I first heard about Bitcoin in 2010 I fired up a wallet, played around with it for a couple of minutes and then promptly forgot about it. The understanding came many years later.
 
+◊todo{Rewrite and make it more personal. Come back to bucket list. Who am I writing this book? What makes me qualified?}
+
 ◊(link mailto email)
 
 ◊(define blog `("http://www.jonashietala.se/" "My personal blog"))
