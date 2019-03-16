@@ -85,7 +85,10 @@ In the Eastern Roman Empire, also referred to The Byzantine Empire, a couple of 
 
 This would be very easy if they could trust each other. Unfortunately they cannot trust the messages---either the messenger or the message itself could be replaced---and even some of the generals could be traitors.
 
+◊img[#:src "/img-src/generals.png"]{}
+
 ◊todo{IMG 5 generals surrounding a city, 2 traitors}
+
 
 It quickly becomes complicated if they need to decide on a day to attack and if they send several messages
 
@@ -195,7 +198,7 @@ In fact we could spend 100x more energy on securing the chain and process the sa
 
 There are alternatives to proof-of-work but none have so far been proven to work well. The most popular is proof-of-stake where instead of miners expending energy you have coin holders who vote.
 
-One problem is the ◊em{nothing at stake problem} where a coin holder can vote on all forks where a proof-of-work miner can only vote on one of the forks. It causes a situation where everyone are incentivized to vote on all forks. An attacker can abuse it to reverse a transaction by only mining on their fork, which is initially a block behind, to overtake the main chain and reverse their transaction.
+One problem is the ◊em{nothing at stake problem} where a coin holder can vote on all forks where a proof-of-work miner can only vote on one of the forks. It causes a situation where everyone are incentivized to vote on all forks. An attacker can abuse it to reverse a transaction by only mining on their fork, which is initially a block behind, to overtake the main chain and reverse their transaction. This only requires a small percentage of total voting power in contrast to proof-of-work where you need 50%.
 
 
 ◊subhead{More details}
