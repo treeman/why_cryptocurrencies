@@ -6,12 +6,14 @@
 There are many projects who call themselves cryptocurrencies while not fulfilling the criteria. For example I don't consider these real cryptocurrencies:
 
 ◊ul{
-  ◊li{Onecoin and Bitconnect which are real pyramid schemes◊sn{pyramid-schemes}}
+  ◊li{OneCoin and Bitconnect, they're pyramid schemes◊sn{pyramid-schemes}}
   ◊li{Ripple}
   ◊li{Stablecoins like ◊link[tether]{Tether} or JP Morgan's ◊link[JPM-coin]{JPM coin}}
-  ◊li{Smart tokens like the ERC20 tokens running on top of Ethereum◊sn{ICOs}}
   ◊li{Sidechains, for example the Lightning Network}
+  ◊li{Smart tokens like the ERC20 tokens running on top of Ethereum◊sn{ICOs}}
 }
+
+Some might be useful but they don't share the same properties with cryptocurrencies like Bitcoin and they don't work the same way.
 
 ◊(define tether "https://tether.to/")
 ◊(define JPM-coin "https://decryptmedia.com/5173/jp-morgan-coin-cryptocurrency")
