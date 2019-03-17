@@ -343,6 +343,7 @@ $sidenote-float-width: 1280px;
  */
 .donations {
     margin: 1rem 0;
+    margin-left: 0.5rem;
 }
 .donation-label {
     @extend %sans-serif;
@@ -350,7 +351,7 @@ $sidenote-float-width: 1280px;
     font-weight: bold;
     color: $body-font-color;
     cursor: pointer;
-    text-decoration: underline;
+    //text-decoration: underline;
 }
 .donation-label:hover {
     color: $body-link-hover-color;
