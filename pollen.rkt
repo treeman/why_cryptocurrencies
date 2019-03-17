@@ -17,7 +17,7 @@
 
   (provide (all-defined-out))
 
-  (define template-prefix "site")
+  (define template-prefix "chapter")
   ;; splice-me needs to NOT be a block tag to allow us to inject
   (define block-tags (cons 'img default-block-tags))
 
