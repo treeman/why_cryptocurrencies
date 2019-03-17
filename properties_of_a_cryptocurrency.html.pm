@@ -9,6 +9,9 @@
   }
 }
 
+◊todo{These are the most important properties as I see it}
+
+
 ◊subhead{No trusted third party}
 
 The important difference between a cryptocurrency and digital payments we have today is the removal of a third party. Payments are peer-to-peer just as if you gave someone a dollar bill or a gold coin.

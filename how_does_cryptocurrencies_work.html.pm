@@ -5,6 +5,9 @@
 
 As stated in the introduction the focus isn't on technical details but it's a hard balance to make between keeping it simple and explaining how cryptocurrencies work. If this chapter is too technical you can safely skip to the ◊link[next-chapter]{next chapter}.
 
+◊todo{See the whitepaper or reference implementations}
+
+
 ◊subhead{The ledger}
 
 If you want to create a digital currency you only really need to keep track of how many coins everyone have. For example your bank might have entries in a ledger like this:
@@ -75,6 +78,8 @@ But this is a hard problem for a digital currency that tries to remove the centr
 
 
 ◊subhead{The Byzantine Generals Problem}
+
+◊todo{reference}
 
 To solve double spending it's enough to choose one of double spending transactions. But how do you do that when there are many unrelated people---some who wants to cheat?
 
