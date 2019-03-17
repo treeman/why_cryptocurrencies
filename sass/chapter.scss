@@ -364,10 +364,10 @@ $sidenote-float-width: 1280px;
 .donation-toggle:checked + .donation-content {
     display: block;
 }
-.donation-content > .qr {
+.donation-content .qr {
     margin-right: 0.5em;
 }
-.donation-content > .address {
+.donation-content .address {
     font-family: $hack;
     font-size: 0.8rem;
 }
