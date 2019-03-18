@@ -1,6 +1,14 @@
 ◊(local-require pollen/tag)
 ◊(define title (select-from-metas 'title here))
 ◊(define subtitle (select-from-metas 'subtitle here))
+◊(define no-side-space (select-from-metas 'no-side-space here))
+◊(define no-section-chapters-headers (select-from-metas 'no-section-chapters-header here))
+◊(define article-class
+   (let ((extra (select-from-metas 'extra-article-class here)))
+     (if extra
+         (string-append "chapter " extra)
+         "chapter")))
+
 ◊(define prev-page
    (let ((p (previous here)))
      (if (equal? p 'index.html)
@@ -12,7 +20,9 @@
 ◊(define (make-subnav children)
   (->html
     (nav #:class "subnav"
-      `(span ((class "chapters")) "Chapters in this section")
+      (if no-section-chapters-headers
+        ""
+        `(span ((class "chapters")) "Chapters in this section"))
       (apply ul
         (for/list ([child (in-list children)])
           (li (link (symbol->string child) (select-from-metas 'title child))))))))
@@ -28,7 +38,7 @@
         <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
     </head>
     <body>
-      <article class="chapter">
+      <article class="◊|article-class|">
         <nav class="where">
           <a href="/" class="home">Why Cryptocurrencies?</a>
           ◊when/splice[parent-page]{
@@ -48,7 +58,7 @@
         }
       </article>
 
-      <div class="side-space"></div>
+      ◊(unless no-side-space (->html `(div ((class "side-space")))))
 
       <nav class="edge-wrapper">
         ◊when/splice[prev-page]{

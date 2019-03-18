@@ -2,6 +2,7 @@
 
 ◊(define-meta title "The Bitcoin Whitepaper")
 ◊(define-meta subtitle "What started it all")
+◊(define-meta no-side-space #t)
 
 ◊div[#:class "whitepaper"]{
     ◊link[bitcoin-pdf]{Bitcoin: A Peer-to-Peer Electronic Cash System}
