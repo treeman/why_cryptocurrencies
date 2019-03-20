@@ -50,10 +50,6 @@ Before release:
 # Pollen
 
 * Feed
-* Template for appendix
-    1. No side space nav
-    2. Centered content
-    3. No "Chapters in this section" header
 
 # Styling
 
