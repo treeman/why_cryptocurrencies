@@ -10,10 +10,10 @@ If you're a cryptocurrency skeptic I honestly can't blame you. All you ever hear
 Curiously enough they don't explain what cryptocurrencies are or what they can be useful for. But it's to be expected as news today mostly is on eye-catching stories, ◊mn{news} it's why unsettling events like murder or terrorist attacks gain en extreme amount of attention although they're in reality very rare.
 
 ◊ndef["news"]{
-    It's interesting when the news talks about something you have a good understanding of: they're often completely wrong. Makes you wonder, how wrong are they about things you don't know about?
+    It's interesting when the news handles something you have a good understanding of---they're often completely wrong. Makes you wonder, how wrong are they about things you're not familiar with?
 }
 
-Maybe this is why most people --- even cryptocurrency fans --- only see cryptocurrencies as a form of investment. After all there's few things as interesting as the possibility of becoming rich very quickly.
+Maybe this is why most people --- even cryptocurrency fans --- only see cryptocurrencies as a form of investment. After all there are few things as interesting as the possibility of becoming rich very quickly.
 
 Even if you'd like to know more what hope does average Joe have when even the famous security technologist Bruce Schneier ◊link[blockchain-and-trust]{concludes that}◊sn{schneier}
 
@@ -38,6 +38,7 @@ It's almost a universal phenomena. I've heard these arguments from students, co-
 
 It seems everyone has an opinion but few seem capable of explaining what it is or what it does differently.  Of course most aren't dismissive but simply don't understand what it's all about. Many are curious and want to learn more.
 
+◊todo{rewrite:}
 With this book I hope to show how cryptocurrencies can be useful, what use cases exist and how it can help people I'm now writing this book. I'm not trying to make anyone a cryptocurrency fan, I just hope to give bring some nuance and to help answer questions curious people have about cryptocurrencies.
 
 And I must admit I'm also being selfish, writing a book is on my bucket list.
@@ -79,6 +80,7 @@ A problem focused view is excellent for an engineer or a problem solver but it a
 
 Instead of getting stuck at these problems, which I believe can be addressed, we'll take a look at what cryptocurrencies are useful for today and what value they bring.
 
+◊todo{rewrite:}
 We won't go into too much technical detail and try to stick to high level concepts. This is enough to answer what value cryptocurrencies give.
 
 Neither will we focus on a single implementation---Bitcoin is the first cryptocurrency but there are hundreds more◊sn{cryptos}---this is about the properties of a cryptocurrency which can be provided in several different ways.
@@ -87,7 +89,7 @@ And of course none of this is investment advice.
 
 
 ◊ndef["schneier"]{
-    Schneier brings an interesting perspective and he's right about one very important aspect: Contrary to popular belief cryptocurrencies doesn't remove all trust. It just removes and shifts some.
+    Schneier brings an interesting perspective and he's right about one very important aspect: Contrary to popular belief cryptocurrencies don't remove all trust. Trust is either removed or shifted.
 
     To counter his point that "cryptocurrencies are useless" all you have to do is provide one counterexample where they're useful. I will give several.
 }

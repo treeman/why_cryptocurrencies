@@ -10,6 +10,6 @@ Technical understanding of how they work is beneficial but not required to discu
 ◊sans{◊em{Bitcoin: A Peer-to-Peer Electronic Cash System}} is the title of ◊link[wp]{the Bitcoin whitepaper} and I think it's a perfect explanation of what a cryptocurrency is: it's like cash but in digital form.◊mn{read-wp}
 
 ◊ndef["read-wp"]{
-    It's a good read, I recommend you look it up. There are annotated versions and podcasts if prefer.
+    It's a good read, I recommend you look it up. If you prefer an annotated version or a podcast there are those as well.
 }
 
