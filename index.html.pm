@@ -72,15 +72,15 @@
     ("Brave new world"
      ("Separation of money and state"
       "A swiss bank account in your pocket"
-      "Black markets"))
-    ("Auxiliary use"
+      "Black markets"
+      "The cashless dystopia"
+      "New asset class?"))
+    ("Extensions"
      ("Provably fair gambling"
       "Verifiable voting"
       "Uncensorable Twitter"
       "Timestamping service"
-      "Tokens"
-      "New asset class?"
-      ))
+      "Tokens"))
     (appendix.html
      (bitcoin_whitepaper.html))))
 

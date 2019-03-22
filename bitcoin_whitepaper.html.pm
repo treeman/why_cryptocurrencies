@@ -35,9 +35,6 @@ If you want to go even further the whitepaper is also embedded in the blockchain
 ◊(define alter-wp
    `("https://github.com/bitcoin-dot-org/bitcoin.org/issues/1325"
      "Amendments to the Bitcoin paper"))
-◊(define wp-blockchain
-   `("https://bitcoin.stackexchange.com/questions/35959/how-is-the-whitepaper-decoded-from-the-blockchain-tx-with-1000x-m-of-n-multisi/35970"
-     "Stackexchange: How is the whitepaper decoded from the blockchain"))
 ◊(define track-alterations
     `("https://blockchair.com/bitcoin/whitepaper/"
       "Blockchair tracks whitepaper versions found online"))

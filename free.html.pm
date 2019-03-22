@@ -11,7 +11,7 @@ If you find the book interesting and want to show appreciation the best way is t
 
 ◊subhead{Donations is a perfect use for cryptocurrencies}
 
-You can also send donations, big or small, from anywhere in the world nearly instantly with small fees and no possibility of censorship. This is not possible with anything else. Or just ◊link[mailto]{send me an email}.
+You can also send donations, big or small, from anywhere in the world nearly instantly with small fees and no possibility of censorship. This is not possible with anything else.
 
 ◊div[#:class "donations"]{
     ◊crypto["#" "bitcoincash:qz4m05qjhd66ggqvugxqm9jprk348nyalgg462vszc"]{Bitcoin (BTC)}

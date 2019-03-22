@@ -9,12 +9,16 @@
   }
 }
 
-◊todo{These are the most important properties as I see it}
+These are the most important inherent properties of cryptocurrencies as I see it. They highlight the difference between cryptocurrencies other payment systems and from them we can derive usefulness.
 
 
 ◊subhead{No trusted third party}
 
-The important difference between a cryptocurrency and digital payments we have today is the removal of a third party. Payments are peer-to-peer just as if you gave someone a dollar bill or a gold coin.
+The important difference between a cryptocurrency and digital payments we have today is the removal of a third party. Payments are peer-to-peer just as if you gave someone a dollar bill or a gold coin.◊sn{p2p}
+
+◊ndef["p2p"]{
+    Technically you don't interact with each other directly but with a distributed ledger. You trust the system as a whole, not one particular entity.
+}
 
 Sending money to people via your bank is not peer-to-peer as you rely on your bank to send it for you. VISA, PayPal, Swish, Apple Pay and other digital payments have the same problem, all except cryptocurrencies.
 
@@ -27,12 +31,12 @@ Sending money to people via your bank is not peer-to-peer as you rely on your ba
 Transfers are therefore ◊em{trustless}◊sn{pundits} and ◊em{permissionless}.
 
 ◊ndef["pundits"]{
-    Some will be quick to point out that transfers aren't trustless. You need to trust your wallet, the OS, the hardware etc. Which is true. The context here is not having to trust a third party to make transfers for you, not eliminating trust of all kinds---which is impossible.
+    Some will be quick to point out that transfers aren't trustless. You need to trust your wallet, the OS, the hardware etc. Which is true. The context here is not having to trust a third party to handle transfers for you, not eliminating trust of all kinds---which is impossible.
 }
 
-Trustless means you don't have to rely on a third party to make the transfer for you and permissionless means you don't have to worry about your transactions being blocked. Nobody can freeze your account or prevent you from opening one.
+Trustless means you don't have to rely on a third party to make or confirm the transfer for you and permissionless means you don't have to worry about your transactions being blocked. Nobody can freeze your account or prevent you from opening one.
 
-You also don't have to trust a third party to hold your money like you do when you have money in your bank.◊sn{in-banks} What you really have is an IOU from the bank where they promise to give you your money when ask for it. With cryptocurrencies you can write down the keys to your wallet and you alone have access to it.◊sn{keys}
+You also don't have to trust a third party to hold your money like you do when you have money in a bank.◊sn{in-banks} What you really have is an IOU from the bank where they promise to give you your money when you ask for it. With cryptocurrencies you can write down the keys to your wallet and you alone have access to it.◊sn{keys}
 
 ◊ndef["in-banks"]{
     You can let a third party hold them if you want and it's probably a good choice for many.
@@ -41,7 +45,7 @@ You also don't have to trust a third party to hold your money like you do when y
 
 ◊subhead{Avoid fake coins}
 
-Problems with counter-fit coins and bills go far back. From biting coins to test their hardness to today's advanced techniques counterfeit prevention has always been an important feature for cash.
+Problems with counter-fit coins and bills go far back. From biting coins to test their hardness to today's advanced techniques, counterfeit prevention has always been an important feature for cash.
 
 With cryptocurrencies anyone can independently verify the integrity of the coins you send and receive. Details on how is in the ◊link[next-chapter]{next chapter} but I assure you no biting is needed.
 
@@ -53,6 +57,8 @@ You cannot counter-fit coins and you cannot send the same coin to multiple peopl
 Just like cash cryptocurrency transfers are irreversible.◊sn{DAO}
 
 This means if you've sent someone coins you can only get them back if they agree to give them back. It prevents credit card chargeback fraud but it makes theft worse.
+
+Transactions might also hold extra data so you can treat it as an effectively immutable data storage. It's very inefficient but could still be useful. The Bitcoin whitepaper is for example stored ◊link[wp-blockchain]{on the Bitcoin blockchain}.
 
 ◊ndef["DAO"]{
     It is possible to revert transfers... If everyone agrees.
@@ -75,7 +81,13 @@ Most cryptocurrencies are deflationary with an absolute limit on the supply, but
     Bitcoin has a hard limit of 21 million bitcoins while in Monero new coins will always be created.◊sn{bitcoin-supply}
 }
 
-If deflation in a currency is good or bad depends on who you ask. Keynesian economists argues it's bad while the Austrian school argues it's good. Either way it's not an argument against cryptocurrencies in general as they can be either inflationary or deflationary.  Most cryptocurrencies choose to avoid an exponential increase in supply.
+If deflation in a currency is good or bad depends on who you ask. Keynesian economists argues it's bad while the Austrian school argues it's good. But you should also be sceptical of both camps---economics is highly complex and theories are difficult, or impossible, to verify:
+
+◊qt[#:author "Daniel Kahneman" #:src "Thinking, Fast and Slow"]{
+    acquisition of skills requires a regular environment, an adequate opportunity to practice, and rapid and unequivocal feedback about the correctness of thoughts and actions.
+}
+
+Either way it's not an argument against cryptocurrencies in general as they can be either inflationary or deflationary.  Most cryptocurrencies choose to avoid an exponential increase in supply.
 
 ◊ndef["bitcoin-supply"]{
      The emission rate in Bitcoin was chosen to approximate the rate gold is mined. In Monero the tail emission is there to replace lost coins and to make sure rewards for miners don't run out.

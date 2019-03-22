@@ -34,6 +34,11 @@ What is a cryptocurrency?
     * More source references or make it clear I'm the author
     * How to address the reader
       "Out of scope of this book"
+* References
+    Beanie babies 10% of Ebay's sales
+    Beanie babies Ty richest men in the world
+    CryptoKitties $114,000 purchase
+    Tulip mania reference?
 
 Before Jimmie:
 * How does cryptocurrencies work?

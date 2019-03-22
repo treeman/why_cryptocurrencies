@@ -17,6 +17,10 @@
 * Control of your own money
 
 
+ “If you want a picture of the future, imagine a boot stamping on a human face—for ever.”
+― George Orwell, 1984 
+
+
 # Intro
 
 Whenever cryptocurrencies, where Bitcoin and Ethereum are the most known, come up in conversations the focus is always on one question:

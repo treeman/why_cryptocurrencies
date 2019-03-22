@@ -4,7 +4,7 @@
 ◊;(define-meta subtitle "I'm just a dude")
 ◊(define-meta no-side-space #t)
 
-I wonder what you might think of someone who's writing a book about cryptocurrencies? Maybe you'll think of a teenage multi-millionaire or an old neckbeard who thinks all software must be free? Or perhaps an anarchist shouting "governments are evil" and "taxation is theft"?
+I wonder what you might think of someone who's writing a book about cryptocurrencies? Maybe you'll think of a teenage multi-millionaire or an old neckbeard raving about free software? Or perhaps an anarchist shouting "governments are evil" and "taxation is theft"?
 
 But I am none of that. I'm just a normal person, perhaps a bit introverted but still. I only have a short beard and I pay my taxes and enjoy the benefits we get here in Sweden. Unfortunately I'm neither a teenager nor a multi-millionaire.
 
@@ -12,7 +12,7 @@ I first heard about bitcoin in 2010, about one year after it's creation. I insta
 
 It wasn't until four or maybe five years later I looked at Bitcoin again. I studied computer science and we had a course in cryptography, a very fun course I might add, where we had a section about cryptocurrencies. We went through the technical details, which were part of the exam, but it made me curious about Bitcoin on a higher level. It made me read the whitepaper and I started following the development and news on social media.
 
-I'm still at the point where I'm not actively involved in cryptocurrencies. I hang out on reddit and follow the development. I own a little but I'm not writing code or working for a project. While I am a software developer I don't have a cryptocurrency project I burn for enough to work on it on my free time. Ever since I started programming fulltime I just don't have energy for it like I had during my University time.
+I'm still at the point where I'm not actively involved in cryptocurrencies. I hang out on reddit and follow the development and I own a little but I'm not writing code or working for a project. While I am a software developer I don't have a cryptocurrency project I burn for enough to work on it on my free time. Ever since I started programming fulltime I just don't have energy for it like I had during my University years.
 
 Instead my time has been taken up by my 1.5 year old kid, my girlfriend and other hobbies. After my parental leave we decided that I should work part time to avoid long days at pre-school.
 

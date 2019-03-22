@@ -7,7 +7,7 @@ Whenever the topic of cryptocurrencies---where Bitcoin and Ethereum are the most
 
 If you're a cryptocurrency skeptic I honestly can't blame you. All you ever hear about it on the news is how ◊link[cnn-bitcoin-rallies]{Bitcoin rallies} and how ◊link[independent-worthless]{Cryptocurrencies are about to become worthless}. Maybe they'll throw in claims that it's ◊link[cnn-environment]{an environmental disaster} or only used for ◊link[independent-illegal]{illegal purposes} for good measure.
 
-Curiously enough they don't explain what cryptocurrencies are or what they can be useful for. But it's to be expected as news today mostly is on eye-catching stories, ◊mn{news} it's why unsettling events like murder or terrorist attacks gain en extreme amount of attention although they're in reality very rare.
+Curiously enough they don't explain what cryptocurrencies are or what they can be useful for. But it's to be expected as news today focuses on eye-catching stories, ◊mn{news} it's why unsettling events like murder or terrorist attacks gain en extreme amount of attention although they're in reality very rare.
 
 ◊ndef["news"]{
     It's interesting when the news handles something you have a good understanding of---they're often completely wrong. Makes you wonder, how wrong are they about things you're not familiar with?
@@ -15,7 +15,7 @@ Curiously enough they don't explain what cryptocurrencies are or what they can b
 
 Maybe this is why most people --- even cryptocurrency fans --- only see cryptocurrencies as a form of investment. After all there are few things as interesting as the possibility of becoming rich very quickly.
 
-Even if you'd like to know more what hope does average Joe have when even the famous security technologist Bruce Schneier ◊link[blockchain-and-trust]{concludes that}◊sn{schneier}
+What hope does average Joe have when even the famous security technologist Bruce Schneier ◊link[blockchain-and-trust]{concludes that}:◊mn{schneier}
 
 ◊qt[#:author "Bruce Schneier" #:src "Blockchain and Trust" #:url blockchain-and-trust]{
   Honestly, cryptocurrencies are useless
@@ -29,7 +29,7 @@ It's almost a universal phenomena. I've heard these arguments from students, co-
   ◊li{It's a scam}
   ◊li{It's just a speculative bubble and cryptocurrencies are really worthless
 
-    Here many draw parallels to Beanie Babies◊sn{beanies} or the Tulip mania◊sn{tulips}.
+    Here many draw parallels to Beanie Babies◊sn{beanies} or the Tulip mania◊sn{tulips}. And to be fair cryptocurrencies have displayed bubble behavior---several times.
   }
   ◊li{They don't do anything better than other payment systems like PayPal or VISA}
   ◊li{There's no legal use case}
@@ -38,15 +38,14 @@ It's almost a universal phenomena. I've heard these arguments from students, co-
 
 It seems everyone has an opinion but few seem capable of explaining what it is or what it does differently.  Of course most aren't dismissive but simply don't understand what it's all about. Many are curious and want to learn more.
 
-◊todo{rewrite:}
-With this book I hope to show how cryptocurrencies can be useful, what use cases exist and how it can help people I'm now writing this book. I'm not trying to make anyone a cryptocurrency fan, I just hope to give bring some nuance and to help answer questions curious people have about cryptocurrencies.
+With this book I hope to show how cryptocurrencies can be useful, what use cases exist and how it can help people. I'm not trying to make anyone a cryptocurrency fan, I just hope to give bring some nuance and to help answer some common questions.
 
-And I must admit I'm also being selfish, writing a book is on my bucket list.
+And I must admit I'm also being selfish---writing a book is on my bucket list.
 
 
 ◊subhead{What this book is}
 
-This book tries to describe what cryptocurrencies are useful for and what value they can bring. In particular I hope to show you that:
+This book tries to describe what value cryptocurrencies have. In particular I hope to show you that:
 
 ◊ol{
   ◊li{Cryptocurrencies aren't just scams◊sn{scams}}
@@ -78,14 +77,13 @@ A problem focused view is excellent for an engineer or a problem solver but it a
     There is no reason anyone would want a computer in their home
 }
 
-Instead of getting stuck at these problems, which I believe can be addressed, we'll take a look at what cryptocurrencies are useful for today and what value they bring.
+Instead of putting on blinders and getting stuck at these problems, which I believe can be addressed, we'll focus on the positive aspects. We won't go into too much technical detail and try to stick to high level concepts. If we take this approach we might find that these problems are worth fighting against---or not.
 
-◊todo{rewrite:}
-We won't go into too much technical detail and try to stick to high level concepts. This is enough to answer what value cryptocurrencies give.
+Neither will we focus on a single implementation---Bitcoin is the first cryptocurrency but there are hundreds more◊sn{cryptos}. This is about the properties which can be provided in several different ways.
 
-Neither will we focus on a single implementation---Bitcoin is the first cryptocurrency but there are hundreds more◊sn{cryptos}---this is about the properties of a cryptocurrency which can be provided in several different ways.
-
-And of course none of this is investment advice.
+◊center{
+  ◊strong{And of course none of this is investment advice.}
+}
 
 
 ◊ndef["schneier"]{
@@ -96,9 +94,9 @@ And of course none of this is investment advice.
 
 
 ◊ndef["beanies"]{
-    Beanie Babies is a type of toys which people used to speculate with. It become a mania where people would sell---and buy---these toys at 10x or 100x their original price and was at one time responsible for 10% of eBay's sales. The mania managed to make the creator, Ty Warner, one of the richest men in the world before it crashed.
+    Beanie Babies is a type of toys which people used to speculate with. It become a mania where people would sell---and buy---these toys at 10x or 100x their original price. At one time they were responsible for 10% of eBay's sales. The mania managed to make the creator, Ty Warner, one of the richest men in the world before it crashed.
 
-    If you're looking for the digital version of Beanie Babies then look no further than ◊link[cryptokitties]{CryptoKitties} where someone spent $114,000 on a virtual kitten in a blockchain game running on Ethereum.
+    If you're looking for the digital version of Beanie Babies then look no further than ◊link[cryptokitties]{CryptoKitties}, a blockchain game running on Ethereum. There someone spent $114,000 on a virtual kitten.
 }
 
 
