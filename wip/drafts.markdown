@@ -20,6 +20,8 @@
  “If you want a picture of the future, imagine a boot stamping on a human face—for ever.”
 ― George Orwell, 1984 
 
+https://www.merriam-webster.com/dictionary/fiat
+
 
 # Intro
 
