@@ -6,36 +6,19 @@
 
 I wonder what you might think of someone who's writing a book about cryptocurrencies? Maybe you'll think of a teenage multi-millionaire or an old neckbeard who thinks all software must be free? Or perhaps an anarchist shouting "governments are evil" and "taxation is theft"?
 
-But I am none of that. I'm just a normal person, perhaps a bit introverted but still. I only have a short beard and I pay my taxes and enjoy the benefits we get here in Sweden. Unfortunately I'm neither a teenager nor a multi-millionaire.
+But I am none of that. I'm just a normal person, perhaps a bit introverted but still. I only have a short beard and I pay my taxes and enjoy the benefits we get here in Sweden. Unfortunately I'm neither a teenager nor a multi-millionaire either.
 
-I first heard about bitcoin in 2010, about one year after it's creation, and I installed a wallet and played around a little. It was just another internet thing that failed to hold my attention long enough for me to dig deeper. After about 10 or 15 minutes I promptly forgot about it.
+I first heard about bitcoin in 2010, about one year after it's creation. I installed a wallet and played around with it a little. It was just another internet thing and like many other it failed to hold my attention long enough for me to dig deeper. After about 10 or 15 minutes I removed it and promptly forgot about it (no, I've lost all keys from that time).
 
-It took many years until I looked at Bitcoin again.
+It wasn't until four or maybe five years later I looked at Bitcoin again. I studied computer science and we had a course in cryptography, a very fun course I might add, where we had a section about cryptocurrencies. We went through the technical details, which were part of the exam, but it made me curious about Bitcoin on a higher level. It made me read the whitepaper and I started following the development and news on social media.
 
+I'm still at the point where I'm not actively involved in cryptocurrencies. While I am a software developer I don't have a cryptocurrency project I'm burning for. Ever since I started programming fulltime I just don't have energy for it on my free time like I had during my University time.
 
-◊hr{}
+Instead my time has been taken up by my 1.5 year old kid, my girlfriend and other hobbies. After my parental leave we decided that I should work part time to avoid long days at pre-school.
 
-◊todo{Rewrite and make it more personal. Come back to bucket list. Who am I writing this book? What makes me qualified?}
+Working less has also opened up time and energy for me to work on a side project. Writing a book has been on my bucket-list so why not do it now? Interest in cryptocurrencies is at very high levels and even my dad asked me about it. It feels like there's a need for information I might be able to fill.
 
-Small background
-
-When I first heard about crypto
-
-My second time when I heard about it in uni
-
-How cryptocurrencies relate to what I do now
-
-Callback to bucket list & life situation
-
-◊hr{}
-
-I'm a software developer with a knack for falling down rabbit holes.
-
-Many topics interest me but few manage to hold my attention for very long. Programming is one of the few that has stuck around. I have a ◊link[blog]{blog} where I write about random stuff, mostly for myself.
-
-I am not a cryptocurrency visionary. In fact when I first heard about Bitcoin in 2010 I fired up a wallet, played around with it for a couple of minutes and then promptly forgot about it. The understanding came many years later.
-
-◊(link mailto email)
+I have a ◊link[blog]{blog} where I write about random stuff, mostly for myself.
 
 ◊(define blog `("http://www.jonashietala.se/" "My personal blog"))
 
