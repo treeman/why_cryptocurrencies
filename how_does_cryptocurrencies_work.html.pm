@@ -1,6 +1,6 @@
 #lang pollen
 
-◊(define-meta title "How does cryptocurrencies work?")
+◊(define-meta title "How do cryptocurrencies work?")
 ◊(define-meta subtitle "Decentralized consensus")
 
 As stated in the introduction the focus isn't on technical details but it's a hard balance to make between keeping it simple and explaining how cryptocurrencies work. If this chapter is too technical you can safely skip to the ◊link[next-chapter]{next chapter}.

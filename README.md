@@ -32,7 +32,6 @@ What is a cryptocurrency?
       Too much repetition of what I aim to do
     * Use more commas
     * More source references or make it clear I'm the author
-    * Rewrite cost
     * How to address the reader
       "Out of scope of this book"
 
