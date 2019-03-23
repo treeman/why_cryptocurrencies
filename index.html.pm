@@ -82,7 +82,8 @@
       "Timestamping service"
       "Tokens"))
     (appendix.html
-     (bitcoin_whitepaper.html))))
+     (bitcoin_whitepaper.html
+      "Further research"))))
 
 ◊(toc content)
 
