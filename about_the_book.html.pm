@@ -7,7 +7,7 @@ Whenever the topic of cryptocurrencies---where Bitcoin and Ethereum are the most
 
 If you're a cryptocurrency skeptic I honestly can't blame you. All you ever hear about it on the news is how ◊link[cnn-bitcoin-rallies]{Bitcoin rallies} and how ◊link[independent-worthless]{Cryptocurrencies are about to become worthless}. Maybe they'll throw in claims that it's ◊link[cnn-environment]{an environmental disaster} or only used for ◊link[independent-illegal]{illegal purposes} for good measure.
 
-Curiously enough they don't explain what cryptocurrencies are or what they can be useful for. But it's to be expected as news today focuses on eye-catching stories, ◊mn{news} it's why unsettling events like murder or terrorist attacks gain en extreme amount of attention although they're in reality very rare.
+Curiously enough they don't explain what cryptocurrencies are or what they can be useful for. But it's to be expected as news today focuses on eye-catching stories, ◊mn{news} it's why unsettling events like murder gets a disproportional amount of focus.
 
 ◊ndef["news"]{
     It's interesting when the news handles something you have a good understanding of---they're often completely wrong. Makes you wonder, how wrong are they about things you're not familiar with?
@@ -77,7 +77,7 @@ A problem focused view is excellent for an engineer or a problem solver but it a
     There is no reason anyone would want a computer in their home
 }
 
-Instead of putting on blinders and getting stuck at these problems, which I believe can be addressed, we'll focus on the positive aspects. We won't go into too much technical detail and try to stick to high level concepts. If we take this approach we might find that these problems are worth fighting against---or not.
+Instead of putting on blinders and getting stuck at these problems, which I believe can be addressed, we'll focus on the positive aspects. We won't go into too much technical detail and instead focus on higher level concepts.
 
 Neither will we focus on a single implementation---Bitcoin is the first cryptocurrency but there are hundreds more◊sn{cryptos}. This is about the properties which can be provided in several different ways.
 

@@ -63,7 +63,7 @@ Transactions might also hold extra data so you can treat it as an effectively im
 ◊ndef["DAO"]{
     It is possible to revert transfers... If everyone agrees.
 
-    Ethereum famously altereted their rules in the DAO hard fork. Many agreed but not everyone so Ethereum split into two coins where Ethereum Classic kept the old rules.
+    Ethereum famously altereted their rules in the DAO hard fork. Many agreed but not everyone, so Ethereum split into two coins where Ethereum Classic kept the old rules.
 }
 
 
@@ -81,7 +81,7 @@ Most cryptocurrencies are deflationary with an absolute limit on the supply, but
     Bitcoin has a hard limit of 21 million bitcoins while in Monero new coins will always be created.◊sn{bitcoin-supply}
 }
 
-If deflation in a currency is good or bad depends on who you ask. Keynesian economists argues it's bad while the Austrian school argues it's good. But you should also be sceptical of both camps---economics is highly complex and theories are difficult, or impossible, to verify:
+If deflation in a currency is good or bad depends on who you ask. Keynesian economists argues it's bad while the Austrian school argues it's good. But you should also be sceptical of both camps---economics is highly complex and theories are difficult, or impossible, to verify. To quote a nobel price winner in economy:
 
 ◊qt[#:author "Daniel Kahneman" #:src "Thinking, Fast and Slow"]{
     acquisition of skills requires a regular environment, an adequate opportunity to practice, and rapid and unequivocal feedback about the correctness of thoughts and actions.

@@ -3,7 +3,7 @@
 ◊(define-meta title "How to use this book")
 ◊(define-meta subtitle "Just some minor things")
 
-Each chapter is supposed to be standalone so you can jump around and read it however you want. The only prerequisite is to have a basic understanding of what a cryptocurrency does which I describe in ◊link[the-first-chapter]{the first chapter}. But if you really want to you can skip that as well and go back later if you need to.
+Each chapter is supposed to be standalone so you can jump around and read it however you want. The only prerequisite is to have a basic understanding of what a cryptocurrency does, which is described in ◊link[the-first-chapter]{the first chapter}. But if you really want to you can skip that as well and go back later if you need to.
 
 This book is a work in progress and if you want to keep up to date you have three options:
 
@@ -17,7 +17,7 @@ This book is a work in progress and if you want to keep up to date you have thre
 
 External links are colored green and internal links are bright orange. For example compare the external link to ◊link[source-code]{Github} with the link to the ◊link["/"]{home page}. There is no tracking on this site but there may very well be on external sites, this serves as a small signifier for those who cares about that. It also makes it easier to download the site and read it offline.
 
-Links to the previous and the next chapter can be found at the bottom as well as at the edge of the screen.
+Links to the previous and the next chapter can be found at the bottom as well as at the edge of the screen (hover on the edges to see).
 
 Sidenotes use numbers in the text◊sn{sn} and marginnotes◊mn{mn} are notes without numbered references. On small screens like mobile phones the notes are hidden and can be shown by clicking on the sidenote number or the † symbol for marginnotes.
 
