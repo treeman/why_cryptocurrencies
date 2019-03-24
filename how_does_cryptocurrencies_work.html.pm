@@ -3,9 +3,9 @@
 ◊(define-meta title "How do cryptocurrencies work?")
 ◊(define-meta subtitle "Decentralized consensus")
 
-As stated in the introduction the focus isn't on technical details but it's a hard balance to make between keeping it simple and explaining how cryptocurrencies work. If this chapter is too technical you can safely skip to the ◊link[next-chapter]{next chapter}.
+As stated in the introduction the focus isn't on technical details but, it's a hard balance to make between keeping it simple and explaining how cryptocurrencies work. If this chapter is too technical you can safely skip to the ◊link[next-chapter]{next chapter}, it's not required knowledge.
 
-◊todo{See the whitepaper or reference implementations}
+This is my attempt at an explanation based on my understanding. ◊link[wp]{The whitepaper contains some details} but for deeper look you might need to examine the source code of popular cryptocurrency clients.
 
 
 ◊subhead{The ledger}
@@ -33,7 +33,13 @@ Cryptocurrencies work this way as well. In fact the ledger in a cryptocurrency, 
 
 To be able to create a transaction you need to have the private keys to the address you want to send from. Think of it as a secret password that unlocks your account. This prevents anyone else from stealing your coins, unless of course they steal your private key!
 
-It uses ◊link[public-key-cryptography]{public-key cryptography} which allows you to prove you have the private key without showing the private key itself. Compare it to credit card numbers which act as both a private and public key. I won't explain how it works in detail, look it up if you're interested.
+It uses ◊link[public-key-cryptography]{public-key cryptography} which allows you to prove you have the private key without showing the private key itself. Compare it to credit card numbers which act as both a private and public key. Explaining how the cryptographic primitives work is out of the scope of this book.◊mn{pubkey}
+
+◊ndef["pubkey"]{
+    If you're intrigued by the promise of public-key cryptography I encourage you to look it up, it's quite fascinating how it works.
+
+    If you're interested in the history of cryptography I can recommend the book "The Code-Breakers" by David Kahn. You can enjoy it even without much math knowledge.
+}
 
 
 ◊subhead{Copying a coin & double spending}
@@ -218,7 +224,7 @@ If you still have questions and want more details I encourage you to do more res
 ◊ndef["stores-transactions"]{
     It's a slight simplification to say the blockchain stores balances.  It actually stores all transactions from which you can calculate all balances.
 
-    To lighten the load you can run your software in a pruned mode which discards the transactions and only keeps the balances.
+    To lighten the load you can run your software in a pruned mode which discards the transactions after validation and only keeps the balances.
 }
 
 ◊(define chargeback-fraud "https://en.wikipedia.org/wiki/Chargeback_fraud")

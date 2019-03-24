@@ -100,6 +100,10 @@ In contrast to cash or gold where large amounts can be very cumbersome to handle
 
 It's also easy to split coins into small parts.◊sn{satoshis} In fact you don't have to think about dividing at all---you use a wallet just like a credit card---a transfer is always exact.
 
+◊ndef["satoshis"]{
+    For example one bitcoin can be divided into one million parts---called satoshis. But there is no real technical limit, only a usability concern.
+}
+
 
 ◊subhead{Borderless}
 
@@ -112,9 +116,15 @@ Technically you could do transfers completely offline---on paper---but they woul
 }
 
 
-◊ndef["satoshis"]{
-    For example one bitcoin can be divided into one million parts---called satoshis. But there is no real technical limit, only a usability concern.
-}
+◊subhead{Anonymity}
+
+Bitcoin uses a public ledger where all transactions are public, so it isn't anonymous. It is pseudonymous---while you can see transactions and addresses you don't know who owns an address. But when you pay someone they lean your address and can then trace your past and future payments from that address. You can use a blockchain explorer to see for yourself, for example ◊link[blockchair]{blockchair}.
+
+Most cryptocurrencies work the same way as Bitcoin does. There are some where you can choose to hide some transactions---but not all. ZCash is probably the most well known example.
+
+Other projects like Monero tries to hide all transactions. Here you cannot trace transactions on the blockchain and it makes blacklisting addresses impossible.
+
+
 
 
 ◊(define next-chapter "/how_does_cryptocurrencies_work.html")
@@ -122,3 +132,5 @@ Technically you could do transfers completely offline---on paper---but they woul
 ◊ndef["keys"]{
     But please make sure to encrypt your seed otherwise a thief can easily steal your coins if he finds it.
 }
+
+◊(define blockchair "https://blockchair.com/")
