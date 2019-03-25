@@ -221,6 +221,9 @@ One problem is the ◊em{nothing at stake problem} where a coin holder can vote 
 If you still have questions and want more details I encourage you to do more research. ◊link[wp]{Bitcoin's whitepaper} is always a good place to begin and I've tried to include key concepts you can search for. There are many good resources online which go into much more details than I have here.
 
 
+◊subhead{Summary}
+
+
 ◊ndef["chargeback"]{
     In the credit card world reverting transactions leads to ◊link[chargeback-fraud]{chargeback fraud}.
 }
