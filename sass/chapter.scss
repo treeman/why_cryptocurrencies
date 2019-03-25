@@ -162,6 +162,7 @@ blockquote > footer > cite {
     font-style: italic;
 }
 
+
 .epigraph {
     margin: 2em 0;
 
@@ -333,6 +334,9 @@ $sidenote-float-width: 1280px;
         position: relative;
         display: inline-block;
         //background-color: moccasin;
+    }
+    blockquote .marginnote, blockquote .sidenote {
+        margin-right: -462px;
     }
     //.sidenote { background-color: pink; }
     //.marginnote { background-color: plum; }

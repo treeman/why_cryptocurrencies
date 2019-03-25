@@ -5,7 +5,7 @@
 
 Whenever the topic of cryptocurrencies---where Bitcoin and Ethereum are the most known---come up in conversations they're almost always misunderstood or dismissed.
 
-If you're a cryptocurrency skeptic I honestly can't blame you. All you ever hear about it on the news is how ◊link[cnn-bitcoin-rallies]{Bitcoin rallies} and how ◊link[independent-worthless]{Cryptocurrencies are about to become worthless}. Maybe they'll throw in claims that it's ◊link[cnn-environment]{an environmental disaster} or only used for ◊link[independent-illegal]{illegal purposes} for good measure.
+If you're a cryptocurrency skeptic I honestly can't blame you. All you ever hear about it on the news is how ◊link[cnn-bitcoin-rallies]{Bitcoin rallies} and then how ◊link[independent-worthless]{Cryptocurrencies are about to become worthless}. Maybe you'll see claims that it's ◊link[cnn-environment]{an environmental disaster} or only used for ◊link[independent-illegal]{illegal purposes}.
 
 Curiously enough they don't explain what cryptocurrencies are or what they can be useful for. But it's to be expected as news today focuses on eye-catching stories, ◊mn{news} it's why unsettling events like murder gets a disproportional amount of focus.
 
@@ -15,15 +15,15 @@ Curiously enough they don't explain what cryptocurrencies are or what they can b
 
 Maybe this is why most people --- even cryptocurrency fans --- only see cryptocurrencies as a form of investment. After all there are few things as interesting as the possibility of becoming rich very quickly.
 
-What hope does average Joe have when even the famous security technologist Bruce Schneier ◊link[blockchain-and-trust]{concludes that}:◊mn{schneier}
+What hope does average Joe have when even the famous security technologist Bruce Schneier ◊link[blockchain-and-trust]{concludes that}:
 
 ◊qt[#:author "Bruce Schneier" #:src "Blockchain and Trust" #:url blockchain-and-trust]{
-  Honestly, cryptocurrencies are useless
+  Honestly, cryptocurrencies are useless ◊mn{schneier}
 }
 
 ◊(define blockchain-and-trust "https://www.schneier.com/blog/archives/2019/02/blockchain_and_.html")
 
-It's almost a universal phenomena. I've heard these arguments from students, co-workers, friends, family and highly technical online communities:
+It's almost a universal phenomena. I've heard these arguments from students, co-workers, friends, family and in highly technical online communities:
 
 ◊ol{
   ◊li{It's a scam}
@@ -45,7 +45,7 @@ And I must admit I'm also being selfish---writing a book is on my bucket list.
 
 ◊subhead{What this book is}
 
-This book tries to describe what value cryptocurrencies have. In particular I hope to show you that:
+This book tries to describe what value cryptocurrencies have using several examples. In particular I will argue that:
 
 ◊ol{
   ◊li{Cryptocurrencies aren't just scams◊sn{scams}}
@@ -54,6 +54,8 @@ This book tries to describe what value cryptocurrencies have. In particular I ho
   ◊li{There are legal use cases}
   ◊li{They have valuable use cases}
 }
+
+Of course everything new brings positive and negative aspects with it. It's up to you to decide where on the spectrum cryptocurrencies lie.
 
 
 ◊subhead{What this book isn't}
@@ -77,12 +79,12 @@ A problem focused view is excellent for an engineer or a problem solver but it a
     There is no reason anyone would want a computer in their home
 }
 
-Instead of putting on blinders and getting stuck at these problems, which I believe can be addressed, we'll focus on the positive aspects. We won't go into too much technical detail and instead focus on higher level concepts.
+Instead of putting on blinders and getting stuck at these problems, which I believe can be addressed, we'll focus on existing use cases and the potential cryptocurrencies have.
 
-Neither will we focus on a single implementation---Bitcoin is the first cryptocurrency but there are hundreds more◊sn{cryptos}. This is about the properties which can be provided in several different ways.
+This is not a deep dive on a technical level. Neither will we focus on a single implementation---Bitcoin is the first cryptocurrency but there are hundreds more◊sn{cryptos}.
 
 ◊center{
-  ◊strong{And of course none of this is investment advice.}
+  ◊strong[#:style "font-size: 1.1rem"]{And of course none of this is investment advice.}
 }
 
 
@@ -94,14 +96,14 @@ Neither will we focus on a single implementation---Bitcoin is the first cryptocu
 
 
 ◊ndef["beanies"]{
-    Beanie Babies is a type of toys which people used to speculate with. It become a mania where people would sell---and buy---these toys at 10x or 100x their original price. At one time they were responsible for 10% of eBay's sales. The mania managed to make the creator, Ty Warner, one of the richest men in the world before it crashed.
+    Beanie Babies is a type of toys which people used to speculate with. It become a mania where people would sell---and buy---these toys at 10x or 100x their original price. The mania managed to make the creator, Ty Warner, one of the richest men in the world before it crashed (he's still insanely rich though).
 
     If you're looking for the digital version of Beanie Babies then look no further than ◊link[cryptokitties]{CryptoKitties}, a blockchain game running on Ethereum. There someone spent $114,000 on a virtual kitten.
 }
 
 
 ◊ndef["tulips"]{
-    Tulip mania is on of the first recorded speculative bubbles which occurred 1636--1637 in Netherlands. There people speculated in tulip bulbs which reached spectacular prices before crashing down abruptly.
+    ◊link[tulip-mania]{Tulip mania} is one of the first recorded speculative bubbles which occurred 1636--1637 in Netherlands. There people speculated on tulip bulbs which reached spectacular prices before crashing down abruptly.
 }
 
 
@@ -128,4 +130,4 @@ Neither will we focus on a single implementation---Bitcoin is the first cryptocu
 ◊(define cnn-environment "https://money.cnn.com/2017/12/07/technology/bitcoin-energy-environment/index.html")
 ◊(define independent-illegal "https://www.independent.co.uk/life-style/gadgets-and-tech/news/bitcoin-price-fall-criminals-blockchain-anonymous-cryptocurrency-zcash-monero-dash-a8174716.html")
 ◊(define cryptokitties "https://www.cnbc.com/2017/12/06/meet-cryptokitties-the-new-digital-beanie-babies-selling-for-100k.html")
-
+◊(define tulip-mania "https://www.britannica.com/event/Tulip-Mania")

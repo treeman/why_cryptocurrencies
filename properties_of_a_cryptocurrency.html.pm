@@ -9,7 +9,7 @@
   }
 }
 
-These are the most important inherent properties of cryptocurrencies as I see it. They highlight the difference between cryptocurrencies other payment systems and from them we can derive usefulness.
+These are the most important inherent properties of cryptocurrencies as I see it. They highlight the difference between cryptocurrencies other payment systems and they're what makes them useful.
 
 
 ◊subhead{No trusted third party}
@@ -61,9 +61,9 @@ This means if you've sent someone coins you can only get them back if they agree
 Transactions might also hold extra data so you can treat it as an effectively immutable data storage. It's very inefficient but could still be useful. The Bitcoin whitepaper is for example stored ◊link[wp-blockchain]{on the Bitcoin blockchain}.
 
 ◊ndef["DAO"]{
-    It is possible to revert transfers... If everyone agrees.
+    It is possible to reverse transfers... If everyone agrees.
 
-    Ethereum famously altereted their rules in the DAO hard fork. Many agreed but not everyone, so Ethereum split into two coins where Ethereum Classic kept the old rules.
+    Ethereum famously altereted their rules in ◊link[dao]{the DAO hard fork}. Many agreed but not everyone, so Ethereum split into two coins where Ethereum Classic kept the old rules.
 }
 
 
@@ -81,20 +81,29 @@ Most cryptocurrencies are deflationary with an absolute limit on the supply, but
     Bitcoin has a hard limit of 21 million bitcoins while in Monero new coins will always be created.◊sn{bitcoin-supply}
 }
 
-If deflation in a currency is good or bad depends on who you ask. Keynesian economists argues it's bad while the Austrian school argues it's good. But you should also be sceptical of both camps---economics is highly complex and theories are difficult, or impossible, to verify. To quote a nobel price winner in economy:
+If deflation in a currency is good or bad depends on who you ask. Keynesian economists ◊link[inflation-good]{argues inflation is good} while the Austrian school ◊link[inflation-bad]{argues inflation is bad}.
+
+I sure don't know who's right. It's probably best to be sceptical of both camps---economics is highly complex and theories are difficult, or impossible, to verify. To quote a nobel price winner in economics:
+
+◊(define inflation-good "http://inflationmatters.com/keynesian-inflation-theory/")
+◊(define inflation-bad "https://austrianeconomics.fandom.com/wiki/Inflation")
 
 ◊qt[#:author "Daniel Kahneman" #:src "Thinking, Fast and Slow"]{
-    acquisition of skills requires a regular environment, an adequate opportunity to practice, and rapid and unequivocal feedback about the correctness of thoughts and actions.
+    acquisition of skills requires a regular environment, an adequate opportunity to practice, and rapid and unequivocal feedback about the correctness of thoughts and actions. ◊mn{tfas}
 }
 
 Either way it's not an argument against cryptocurrencies in general as they can be either inflationary or deflationary.  Most cryptocurrencies choose to avoid an exponential increase in supply.
+
+◊ndef["tfas"]{
+    The book "Thinking, Fast and Slow" is fantastically thought provoking.
+}
 
 ◊ndef["bitcoin-supply"]{
      The emission rate in Bitcoin was chosen to approximate the rate gold is mined. In Monero the tail emission is there to replace lost coins and to make sure rewards for miners don't run out.
 }
 
 
-◊subhead{Amounts don't matter}
+◊subhead{Large and small amounts behave the same}
 
 In contrast to cash or gold where large amounts can be very cumbersome to handle there is no difference between large or small transfers in a cryptocurrency. Transaction costs are the same for small transfers as for large transfers and they are just as secure. Wallets can store as much as you're comfortable with.
 
@@ -112,19 +121,17 @@ Cryptocurrencies are inherently global. They are useable wherever you are as lon
 Technically you could do transfers completely offline---on paper---but they would be unconfirmed and might not be valid when you do want to use them.
 
 ◊ndef["cold-storage"]{
-    Referred to as cold storage.
+    Offline wallets with no computer contact is called cold storage. It's an excellent way to store large amounts you're not planning to use for some time.
 }
 
 
-◊subhead{Anonymity}
+◊subhead{Anonymous}
 
-Bitcoin uses a public ledger where all transactions are public, so it isn't anonymous. It is pseudonymous---while you can see transactions and addresses you don't know who owns an address. But when you pay someone they lean your address and can then trace your past and future payments from that address. You can use a blockchain explorer to see for yourself, for example ◊link[blockchair]{blockchair}.
+Bitcoin uses a public ledger where all transactions are public, so it isn't anonymous. It's pseudonymous---while you can see transactions and addresses you don't know who owns an address. But when you pay someone they learn your address and can then trace your past and future payments from that address. You can use a ◊link[blockchair]{blockchain explorer} to see for yourself.
 
 Most cryptocurrencies work the same way as Bitcoin does. There are some where you can choose to hide some transactions---but not all. ZCash is probably the most well known example.
 
-Other projects like Monero tries to hide all transactions. Here you cannot trace transactions on the blockchain and it makes blacklisting addresses impossible.
-
-
+Other projects like Monero tries to hide all transactions. Here you cannot trace transactions on the blockchain and it makes blacklisting addresses impossible. Therefore I will call cryptocurrencies anonymous, just keep in mind not all are.
 
 
 ◊(define next-chapter "/how_does_cryptocurrencies_work.html")
@@ -134,3 +141,5 @@ Other projects like Monero tries to hide all transactions. Here you cannot trace
 }
 
 ◊(define blockchair "https://blockchair.com/")
+◊(define dao "https://fullstacks.org/materials/ethereumbook/16_appdx-forks-history.html")
+

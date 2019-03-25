@@ -28,16 +28,11 @@ What is a cryptocurrency?
 # TODO
 
 * Fix after Veronica's feedback
-    * Rewrite about the book, too much repetition
-      Too much repetition of what I aim to do
     * Use more commas
     * More source references or make it clear I'm the author
     * How to address the reader
       "Out of scope of this book"
 * References
-    Beanie babies 10% of Ebay's sales
-    Beanie babies Ty richest men in the world
-    CryptoKitties $114,000 purchase
     Tulip mania reference?
 
 Before Jimmie:

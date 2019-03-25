@@ -14,7 +14,7 @@ It wasn't until four or maybe five years later I looked at Bitcoin again. I stud
 
 I'm still at the point where I'm not actively involved in cryptocurrencies. I hang out on reddit, follow the development and I own a little but I'm not writing code or working for a project. While I am a software developer I don't have a cryptocurrency project I burn for enough to work on it on my free time. Unfortunately ever since I started programming fulltime I just don't have energy for it like I had during my University years.
 
-The free time I do have has been taken up by my 1.5 year old boy my girlfriend and other hobbies. Saying no to something is saying yes to something else.
+The free time I do have has been taken up by my 1.5 year old boy, my girlfriend and other hobbies. Saying no to something is saying yes to something else.
 
 After my parental leave we decided that I should work part time to avoid long days at pre-school for the boy.  Working less has also opened up time and energy for me to work on a side project. Writing a book has been on my bucket-list so why not do it now? My girlfriend has always been super supportive.
 

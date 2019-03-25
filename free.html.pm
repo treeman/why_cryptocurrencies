@@ -25,7 +25,7 @@ You can also send donations, big or small, from anywhere in the world nearly ins
 If you're missing a coin you ◊em{really} want to use please ◊link[mailto]{contact me}. If it's not too much hassle I will consider it but please no ◊link[snake-oil]{snake oil}.
 
 ◊ndef["browser-mining"]{
-    Some sites have replaced ads on their sites and instead use visitors' computers to mine for them. A novel way to use cryptocurrencies but with questionable efficiency. Some do this without asking or notifying you which is definitely scammy.
+    Some sites have replaced ads on their sites and instead use visitors' computers to mine for them. A novel way to use cryptocurrencies but with questionable efficiency. Some do this without asking or notifying you which is definitely scammy. Therefore many adblockers block them outright.
 }
 
 ◊(define snake-oil "/look_out_for_snake_oil.html")
