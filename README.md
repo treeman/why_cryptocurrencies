@@ -11,6 +11,7 @@ What is a cryptocurrency?
   Properties of a cryptocurrency
     3 images
   How does cryptocurrencies work?
+    rewrite/reformulate later part
     Several images
     re-read
   Look out for snake oil
@@ -26,14 +27,6 @@ What is a cryptocurrency?
     * Rewrite functions of money
 
 # TODO
-
-* Fix after Veronica's feedback
-    * Use more commas
-    * More source references or make it clear I'm the author
-    * How to address the reader
-      "Out of scope of this book"
-* References
-    Tulip mania reference?
 
 Before Jimmie:
 * How does cryptocurrencies work?

@@ -5,7 +5,7 @@
 
 As stated in the introduction the focus isn't on technical details but, it's a hard balance to make between keeping it simple and explaining how cryptocurrencies work. If this chapter is too technical you can safely skip to the ◊link[next-chapter]{next chapter}, it's not required knowledge.
 
-This is my attempt at an explanation based on my understanding. ◊link[wp]{The whitepaper contains some details} but for deeper look you might need to examine the source code of popular cryptocurrency clients.
+This is my attempt at an explanation based on my understanding. ◊link[wp]{The whitepaper contains some details} but for a deeper look you might need to examine the source code of popular cryptocurrency clients.
 
 
 ◊subhead{The ledger}
@@ -33,10 +33,10 @@ Cryptocurrencies work this way as well. In fact the ledger in a cryptocurrency, 
 
 To be able to create a transaction you need to have the private keys to the address you want to send from. Think of it as a secret password that unlocks your account. This prevents anyone else from stealing your coins, unless of course they steal your private key!
 
-It uses ◊link[public-key-cryptography]{public-key cryptography} which allows you to prove you have the private key without showing the private key itself. Compare it to credit card numbers which act as both a private and public key. Explaining how the cryptographic primitives work is out of the scope of this book.◊mn{pubkey}
+It uses ◊link[public-key-cryptography]{public-key cryptography} which allows you to prove you have the private key without sharing the private key itself. Compare it to credit card numbers which act as both a private and public key. Explaining how the cryptographic primitives work is out of the scope of this book.◊mn{pubkey}
 
 ◊ndef["pubkey"]{
-    If you're intrigued by the promise of public-key cryptography I encourage you to look it up, it's quite fascinating how it works.
+    If you're intrigued by the promise of public-key cryptography I encourage you to look it up, it's quite fascinating.
 
     If you're interested in the history of cryptography I can recommend the book "The Code-Breakers" by David Kahn. You can enjoy it even without much math knowledge.
 }
@@ -55,13 +55,9 @@ For example Sneaky Steve wants to buy a computer from Honest Harry and wants to 
   Honest Harry         0 BTC
 }
 
-What Sneaky Steve tries to do is send ◊tf{1 BTC} to the merchant Honest Harry and then send the same ◊tf{1 BTC} to his other address ◊tf{Sneaky Steve 2}.◊mn{addresses}
+What Sneaky Steve tries to do is send ◊tf{1 BTC} to the merchant Honest Harry and then send the same ◊tf{1 BTC} to his other address ◊tf{Sneaky Steve 2}. You can have as many addresses you want. This is a consequence of the permissionless nature of Bitcoin.
 
 ◊todo{IMG alice doublespend}
-
-◊ndef["addresses"]{
-    You can have as many addresses you want. This is a consequence of the permissionless nature of Bitcoin.
-}
 
 If we didn't prevent this the ledger might look like this:
 
@@ -89,7 +85,7 @@ But this is a hard problem for a digital currency that tries to remove the centr
 
 To solve double spending it's enough to choose one of double spending transactions. But how do you do that when there are many unrelated people---some who wants to cheat?
 
-This is the same problem known as the ◊em{Byzantine Generals Problem}:
+This is the same problem known as the ◊link[byzantine-generals]{◊em{Byzantine Generals Problem}}. Here's my description of a variation:
 
 ◊div[#:class "story"]{
 In the Eastern Roman Empire, also referred to The Byzantine Empire, a couple of generals surround an enemy city. The city is very well defended and if they attack individually they will get crushed. They will have to work together and coordinate to attack at the same time or to retreat as a unit. If they don't then a massive defeat will follow.
@@ -109,6 +105,8 @@ If given conflicting messages they might see that something is amiss, but they c
 }
 
 To relate it back to cryptocurrencies the choice between "attack" and "retreat" is similar to choosing between two transactions in a double spend. You know there are bad actors---like Sneaky Steve who wants to double spend---but who can you trust?
+
+◊(define byzantine-generals "https://www.microsoft.com/en-us/research/publication/byzantine-generals-problem/")
 
 
 ◊subhead{Sybil attack}
@@ -139,15 +137,21 @@ The work is to find a solution to a computing problem. The problem itself is not
 ◊ul{
     ◊li{◊strong{Hard enough}
 
-        In Bitcoin one solution is expected every 10 minutes. The difficulty is continuously adjusted.
+        In Bitcoin one solution is expected every 10 minutes. The difficulty is continuously adjusted to allow miners to join and leave.
     }
     ◊li{◊strong{Memoryless}
 
-        It means working on a problem longer doesn't bring any advantage. You're just as likely---or unlikely---to solve it after just starting as if you've worked on it an hour. It's essentially random.
+        It means working on a problem longer doesn't bring any advantage. You're just as likely---or unlikely---to solve it after just starting as if you've worked on it an hour. Finding a solution is essentially random.
     }
 }
 
-A solution is proof that you've done the work---it's proof that you've expended energy. Yes it's like a lottery and you can get lucky, but in the long run it balances out.
+A solution is proof that you've done the work---it's proof that you've expended energy. It's like a lottery and you can get lucky, but in the long run it balances out.
+
+The proof can then be used as sybil resistance.
+
+◊todo{rewrite from here}
+
+◊hr{}
 
 The solution allows you to update the ledger by adding a block with many transactions to the blockchain. Other miners now have to restart and work to add a block on top of your new block, the problem is slightly different for each block so you cannot add a block anywhere.
 
