@@ -18,3 +18,4 @@ https://medium.com/splytcore/simple-decryption-of-satoshi-nakamotos-hidden-messa
 
 https://www.cbsnews.com/news/kroger-visa-fee-dispute-grocery-bans-cards-from-more-stores/
 
+https://news.ycombinator.com/item?id=19493033
