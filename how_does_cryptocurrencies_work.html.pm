@@ -147,17 +147,48 @@ The work is to find a solution to a computing problem. The problem itself is not
 
 A solution is proof that you've done the work---it's proof that you've expended energy. It's like a lottery and you can get lucky, but in the long run it balances out.
 
-The proof can then be used as sybil resistance.
+Since you require a significant investment to find a block this proof can be used as sybil resistance.
 
-◊todo{rewrite from here}
+◊todo{IMG no sybil attack}
+
+
+◊subhead{The blockchain}
+
+When a miner finds a solution she can then update the ledger by adding a block to the blockchain. A block is basically a collection of transactions.
+
+◊todo{IMG adding a block}
+
+A blockchain is what it sounds like: a chain of blocks where a new block builds on previous blocks. When a miner searches for a solution she must target a block on a specific height---the problem is slightly different for every block.
+
+The transactions must follow common rules, called consensus rules, otherwise other miners and users who use the blockchain will discard the block. For example a transaction cannot spend coins from an empty wallet or spend coins without having access to the private key of an address.
+
+
+◊subhead{Forks}
+
+But what happens if two miners find a block at the same height?
+
+◊todo{IMG two block forks}
+
+The chain will split and there will be a fork.
+
+
+◊subhead{The 51% security assumption}
+
+
+◊subhead{An economic invention}
+
 
 ◊hr{}
 
-The solution allows you to update the ledger by adding a block with many transactions to the blockchain. Other miners now have to restart and work to add a block on top of your new block, the problem is slightly different for each block so you cannot add a block anywhere.
+◊todo{rewrite from here}
 
-Importantly you're not allowed to add any invalid transactions, like sending coins from an empty wallet or double spends.
+The POW solution allows you to update the ledger by adding a block with many transactions to the blockchain. Other miners now have to restart and work to add a block on top of your new block, the problem is slightly different for each block so you cannot add a block anywhere.
 
 ◊todo{IMG a straight blockchain}
+
+Importantly you're not allowed to add any invalid transactions, like sending coins from an empty wallet or double spends. Otherwise all other miners and users would simply reject it.
+
+◊todo{IMG reject blocks with invalid transactions}
 
 In return for adding the block you get a reward, both a fixed one for finding a new block and you can collect transaction fees for the transactions you include in the block.◊mn{gold}
 
@@ -166,6 +197,7 @@ In return for adding the block you get a reward, both a fixed one for finding a 
 }
 
 Important to note is that everyone doesn't have to be a miner. From our example Honest Harry can confirm for himself that Sneaky Steve has money for his transaction. The blockchain is open for anyone to read and validate.
+
 
 But what happens if there are two chains? One where Sneaky Steve sends money to Honest Harry and one where Sneaky Steve sends money to himself? Which one is the correct one?
 
