@@ -3,7 +3,9 @@
 ◊(define-meta title "Completely free")
 ◊(define-meta subtitle "Read it online for free without cost of any kind")
 
-This book is completely free for you to read online and will be so forever. There will be no ads, no tracking and no crypto mining in the browser.◊sn{browser-mining} For all you noscript users the site will work perfectly well without javascript---in fact I aim to avoid it altogether.
+This book is completely free for you to read online and will be so forever. There will be no ads, no tracking and no crypto mining in the browser.◊sn{browser-mining}
+
+For all you noscript users the site will work perfectly well without javascript---in fact I aim to avoid it altogether. Note that I use custom fonts which noscript blocks by default.
 
 When I some day finish the book and decide to release it in other formats I may charge for them, but the web version will always be free.
 
