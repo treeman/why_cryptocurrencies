@@ -38,15 +38,12 @@ Before release:
 * Donation links
 * Domain + https hosting
 * Correct link to github
-* Correct link to feed
-* Appendix
+* Feed
 
 # Site
 
 * Email list
 * Donation QR codes
-* Display notice about custom fonts for noscript users, otherwise it's fugly
-    Maybe look up fonts that look similar and use them as backups
 
 # Pollen
 
