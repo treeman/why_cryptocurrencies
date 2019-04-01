@@ -43,6 +43,13 @@ Before release:
 # Site
 
 * Email list
+    https://volleyy.com/
+    mailchimp
+    https://news.ycombinator.com/item?id=19365983
+    https://aws.amazon.com/blogs/messaging-and-targeting/introducing-email-templates-and-bulk-sending/
+    https://www.mailerlite.com/
+    https://www.campaignmonitor.com/
+    https://www.aweber.com/
 * Donation QR codes
 
 # Pollen
@@ -51,6 +58,7 @@ Before release:
 
 # Styling
 
+* Feed + mail subscription below each post
 * Appendix
 * Donation links in Free & reader-supported
 * Code
