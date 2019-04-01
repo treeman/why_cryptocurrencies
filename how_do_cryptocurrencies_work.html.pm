@@ -147,7 +147,7 @@ The work is to find a solution to a computing problem. The problem itself is not
 
 A solution is proof that you've done the work---it's proof that you've expended energy. It's like a lottery and you can get lucky, but in the long run it balances out.
 
-Since you require a significant investment to find a block this proof can be used as sybil resistance.
+Since you require a significant investment to find a block this can be used as sybil resistance.
 
 ◊todo{IMG no sybil attack}
 
@@ -158,24 +158,98 @@ When a miner finds a solution she can then update the ledger by adding a block t
 
 ◊todo{IMG adding a block}
 
-A blockchain is what it sounds like: a chain of blocks where a new block builds on previous blocks. When a miner searches for a solution she must target a block on a specific height---the problem is slightly different for every block.
+A blockchain is what it sounds like: a chain of blocks where a new block builds on previous blocks. When a miner searches for a solution she must target a block on a specific height---the POW problem is slightly different for every block.
 
 The transactions must follow common rules, called consensus rules, otherwise other miners and users who use the blockchain will discard the block. For example a transaction cannot spend coins from an empty wallet or spend coins without having access to the private key of an address.
+
+In return for adding the block you get to collect the rewards. One for finding a block◊sn{blockreward} and you can also collect transaction fees for the transactions you include in the block.
+
+◊ndef["blockreward"]{
+    As I'm writing this the current blockreward for Bitcoin is 12.5 BTC or around $50,000. With one block expected every 10 min that's about $7,200,000 per day. Bitcoin mining is big business.
+}
 
 
 ◊subhead{Forks}
 
-But what happens if two miners find a block at the same height?
+But what happens if two miners find a block at the same height? For example one where Sneaky Steve sends money to Honest Harry and one where Sneaky Steve sends money to himself?
 
-◊todo{IMG two block forks}
+◊todo{IMG two block forks with double spends}
 
-The chain will split and there will be a fork.
+The chain will split and there will be a fork.◊sn{code-fork} Each miner will independently choose which one they will build on and one will naturally become longer:
+
+◊ndef["code-fork"]{
+    Forking a cryptocurrency is different from forking the code, although both are common.
+}
+
+◊todo{IMG two chains, one longer}
+
+The longer chain is to be considered "the correct" chain and the shorter chain will be abandoned.◊sn{orphan} Coming to consensus by following the longest chain is often referred to as ◊em{Nakamoto consensus}.
+
+◊ndef["orphan"]{
+    When a shorter chain gets abandoned we say it gets ◊em{orphaned}. It is a natural consequence of the system but high orphan rates are problematic because they hurt smaller miners more than larger miners.
+}
+
+In the example Honest Harry should wait until he knows which chain is longer and then decide from there.
+
+◊todo{IMG transaction to Honest Harry, or not}
 
 
-◊subhead{The 51% security assumption}
+◊subhead{The 50% security assumption}
+
+The whole system relies on a majority of miners being honest---it's the core security assumption behind proof-of-work.
+
+Honest miners work for profit so they absolutely don’t want to risk their block being rejected by the other miners and lose their reward. Therefore the rational thing to do is to work on the longest chain.
+
+The primary way to try to cheat the system and to double-spend is to reverse 
+
+If Sneaky Steve wants to trick Honest Harry he needs to:
+
+◊ol{
+    ◊li{Make Honest Harry think he gets money}
+    ◊li{Reverse the transaction to Honest Harry}
+}
+
+This touches on the immutability of the blockchain. As long as more than 50% of miners don’t want to change the chain it will always be longest and correct. But if they do then they can reverse transactions.
 
 
 ◊subhead{An economic invention}
+
+
+◊subhead{Network upgrades and new cryptocurrencies}
+
+There is another situation where forks can arise: when consensus rules are changed. Here are some examples of consensus changes:
+
+◊ul{
+    ◊li{Removing the 21 million supply cap in Bitcoin}
+    ◊li{Blacklisting an address}
+    ◊li{Allowing a new transaction type (smart contracts)}
+    ◊li{Tweaking the POW algorithm}
+    ◊li{Raising the 1 MB blocksize limit in Bitcoin}
+}
+
+Some cryptocurrencies, for example Monero and Bitcoin Cash, have regular network upgrades where consensus rules are changed.◊sn{hard-soft}
+
+◊ndef["hard-soft"]{
+    I have deliberatly simplified my usage of fork terminology. On a technical level it's useful to distinguish between two types of forks: ◊em{hard-forks} and ◊em{soft-forks}.
+
+    A hard-fork is a backwards incompatible change and all nodes must upgrade to avoid ending up on the old chain. The blocksize increases in Bitcoin Cash are examples of hard-forks.
+
+    A soft-fork instead doesn't break older node implementations. They will simply ignore the new soft-fork rules, they will not fully validate the chain anymore but they will follow it. The rules are instead enforced by the miners who must upgrade. SegWit in Bitcoin is an example of a soft-fork.
+}
+
+Because a network upgrade is a fork there will be two chains. Sometimes the minority chain lives on as a new cryptocurrency. Ethereum Classic is for example the continuation of the old chain ◊link[dao]{after an Ethereum fork}.
+
+Other times the fork is initiated people who want to create a new cryptocurrency from another one, but the mechanism is exactly the same.
+
+◊(define nb 'nbsp)
+
+You may then wonder---what decides which is the correct one? This is a heated debate where for example Bitcoin Cash supporters claim their chain is really the right Bitcoin.  If I had to draw a parallel I'd say it's similar to the Israeli--Palestinian conflict where two groups want to claim the same space (this is a ◊em{massive} simplification of course).
+
+Here social consensus decide which of the chains is called "Original Coin" and which is called "New Coin".
+
+◊(define dao "https://fullstacks.org/materials/ethereumbook/16_appdx-forks-history.html")
+
+
 
 
 ◊hr{}
@@ -207,8 +281,6 @@ This all relies on a majority of miners being honest---it is the core assumption
 
 If most miners are honest then one chain will become longer. In our example Honest Harry simply waits too see which chain wins and decide from there.◊sn{fork} Coming to consensus by following the longest chain is often referred to as ◊em{Nakamoto consensus}.
 
-◊(define nb 'nbsp)
-
 ◊ndef["fork"]{
     When two separate chains appear we say that the blockchain forks. New cryptocurrencies might be created from existing ones by forking off at a point in time and start following new rules.
 
@@ -219,10 +291,6 @@ If most miners are honest then one chain will become longer. In our example Hone
 
 This touches on the immutability of the blockchain. As long as more than 50% of miners don't want to change the chain it will always be longest and correct. But if they do then they can reverse transactions.
 
-
-◊ndef["orphan"]{
-    This might happen unintentionally if two blocks are produced at the same time. One of them gets ◊em{orphaned}.
-}
 
 ◊ndef["valid"]{
     Remember that to prevent double spending one transaction must be chosen, which one doesn't matter.

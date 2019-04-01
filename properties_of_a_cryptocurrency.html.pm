@@ -134,7 +134,7 @@ Most cryptocurrencies work the same way as Bitcoin does. There are some where yo
 Other projects like Monero tries to hide all transactions. Here you cannot trace transactions on the blockchain and it makes blacklisting addresses impossible. Therefore I will call cryptocurrencies anonymous, just keep in mind not all are.
 
 
-◊(define next-chapter "/how_does_cryptocurrencies_work.html")
+◊(define next-chapter "/how_do_cryptocurrencies_work.html")
 
 ◊ndef["keys"]{
     But please make sure to encrypt your seed otherwise a thief can easily steal your coins if he finds it.
