@@ -9,7 +9,8 @@ About the book
   About me, the author
 What is a cryptocurrency?
   Properties of a cryptocurrency
-    3 images
+    Images
+    Rewrite
   How does cryptocurrencies work?
     rewrite/reformulate later part
     Several images
@@ -43,8 +44,9 @@ Before release:
 # Site
 
 * Email list
-* Get domain
 * Donation QR codes
+* Display notice about custom fonts for noscript users, otherwise it's fugly
+    Maybe look up fonts that look similar and use them as backups
 
 # Pollen
 
