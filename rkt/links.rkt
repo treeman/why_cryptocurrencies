@@ -11,7 +11,7 @@
     "The Bitcoin Whitepaper"))
 
 (define source-code
-  `("https://github.com/"
+  `("https://github.com/treeman/why_cryptocurrencies"
     "Source code to this site"))
 
 (define email "contact@whycryptocurrencies.com")
@@ -23,3 +23,4 @@
 (define wp-blockchain
    `("https://bitcoin.stackexchange.com/questions/35959/how-is-the-whitepaper-decoded-from-the-blockchain-tx-with-1000x-m-of-n-multisi/35970"
      "Stackexchange: How is the whitepaper decoded from the blockchain"))
+
