@@ -51,12 +51,12 @@
      (how_to_use.html
       free.html
       about_me.html))
-    (what_is_a_cryptocurrency.html
-     (properties_of_a_cryptocurrency.html
-      how_do_cryptocurrencies_work.html
-      look_out_for_snake_oil.html
-      what_is_money.html
-      are_cryptocurrencies_money.html))
+    ("What is a cryptocurrency?"
+     ("Properties of a cryptocurrency"
+      "How do cryptocurrencies work?"
+      "Look out for snake oil"
+      "What is money?"
+      "Are cryptocurrencies money?"))
     ("Better digital payments"
      ("Safer & cheaper for merchants"
       "Uncensorable donations"
