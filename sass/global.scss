@@ -205,6 +205,53 @@ a:hover.xref {
 }
 
 
+
+/*
+ * Follow
+ */
+.follow {
+    @extend %sans-serif;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.follow > .links {
+    margin: 0.3rem;
+    font-size: 0.8rem;
+}
+.follow > .wip {
+    margin: 0.3rem;
+    font-size: 0.8rem;
+}
+.subscribe > .email, .subscribe > .submit {
+    @extend %serif;
+    font-size: 0.75rem;
+    border: 1px solid #ddd;
+    background: $body-background-color;
+    padding: 0.5em;
+}
+
+.subscribe:hover > .email,
+.subscribe:hover > .submit {
+    border: 1px solid #aaa;
+    color: $body-font-color;
+}
+.subscribe > .submit:hover {
+    color: $body-xref-hover-color;
+    cursor: pointer;
+}
+.subscribe {
+    display: flex;
+}
+.subscribe > .email {
+    flex: 4;
+    margin-right: 0.2rem;
+}
+.subscribe > .submit {
+    flex: 1;
+}
+
+
 /*
  * Footer
  */
@@ -220,6 +267,25 @@ body > footer {
         flex-wrap: wrap;
         justify-content: center;
         font-size: 0.95rem;
+
+        a:link {
+            text-decoration: none;
+            background: none;
+            text-shadow: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    }
+
+    .follow-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 1rem;
+    }
+    .follow-wrapper > .follow {
+        margin-top: 0;
     }
 
     .prev, .parent, .home, .next {
@@ -236,15 +302,6 @@ body > footer {
         width: 100%;
         display: flex;
         justify-content: center;
-    }
-
-    a:link {
-        text-decoration: none;
-        background: none;
-        text-shadow: none;
-    }
-    a:hover {
-        text-decoration: underline;
     }
 }
 
@@ -265,4 +322,3 @@ body > footer {
         }
     }
 }
-
