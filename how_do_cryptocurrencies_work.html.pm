@@ -26,19 +26,19 @@ When Sneaky Steve wants to send ◊tf{500 SEK} to Honest Harry the bank simply u
   Honest Harry         1 500 SEK (+500 SEK)
 }
 
-Cryptocurrencies work this way as well. In fact the ledger in a cryptocurrency, often referred to as the "blockchain", contains the balance of all addresses. ◊mn{stores-transactions}
+Cryptocurrencies work this way as well. In fact the ledger in a cryptocurrency, often referred to as the "blockchain", contains the balance of all addresses. ◊sn{stores-transactions}
 
 
 ◊subhead{Your keys, your coins}
 
 To be able to create a transaction you need to have the private keys to the address you want to send from. Think of it as a secret password that unlocks your account. This prevents anyone else from stealing your coins, unless of course they steal your private key!
 
-It uses ◊link[public-key-cryptography]{public-key cryptography} which allows you to prove you have the private key without sharing the private key itself. Compare it to credit card numbers which act as both a private and public key. Explaining how the cryptographic primitives work is out of the scope of this book.◊mn{pubkey}
+It uses ◊link[public-key-cryptography]{public-key cryptography} which allows you to prove you have the private key without sharing the private key itself.◊sn{pubkey} Compare it to credit card numbers which act as both a private and public key. Explaining how the cryptographic primitives work is out of the scope of this book.
 
 ◊ndef["pubkey"]{
     If you're intrigued by the promise of public-key cryptography I encourage you to look it up, it's quite fascinating.
 
-    If you're interested in the history of cryptography I can recommend the book "The Code-Breakers" by David Kahn. You can enjoy it even without much math knowledge.
+    If you're interested in the history of cryptography I can also recommend the book "The Code-Breakers" by David Kahn. You can enjoy it even without much math knowledge.
 }
 
 

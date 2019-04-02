@@ -99,7 +99,7 @@ Either way it's not an argument against cryptocurrencies in general as they can 
 }
 
 ◊ndef["bitcoin-supply"]{
-     The emission rate in Bitcoin was chosen to approximate the rate gold is mined. In Monero the tail emission is there to replace lost coins and to make sure rewards for miners don't run out.
+     The emission rate in Bitcoin approximates the rate gold is mined. In Monero the tail emission is there to replace lost coins and to make sure rewards for miners don't run out.
 }
 
 

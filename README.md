@@ -40,6 +40,8 @@ Before release:
 * Correct link to github
 * Feed
 * Remove unfinished eli5
+* New concept should use em, even when in links
+* Make sure to excplain new concepts
 
 # Site
 
