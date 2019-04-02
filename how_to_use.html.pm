@@ -10,7 +10,7 @@ This book is a work in progress and if you want to keep up to date you have thre
 ◊ul{
   ◊li{Subscribe to the ◊link[rss-feed]{RSS feed}}
   ◊li{Follow the changes on ◊link[source-code]{Github}}
-  ◊li{Join the email list
+  ◊li{Join the mailing list
 
       ◊|subscription-form|}
 }
