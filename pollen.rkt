@@ -34,6 +34,7 @@
                       "plots"
                       "clean"
                       "sass-update"
+                      "sync"
                       "README.md"))))
   (define omitted-path? (λ (path)
                            (set-member? omitted-paths path)))
