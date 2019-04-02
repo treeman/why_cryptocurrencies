@@ -37,7 +37,7 @@
 (define (subhead txt)
   `(h2 ,txt))
 
-(define (table #:header [header #t] #:centered [centered #t] . rows)
+(define (stable #:header [header #t] #:centered [centered #t] . rows)
   (define cleaned-rows (filter-not whitespace? rows))
   (define header-row (car cleaned-rows))
   (define body-rows (cdr cleaned-rows))

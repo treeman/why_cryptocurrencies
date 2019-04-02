@@ -12,7 +12,7 @@ This is my attempt at an explanation based on my understanding. ◊link[wp]{The 
 
 If you want to create a digital currency you only really need to keep track of how many coins everyone have. For example your bank might have entries in a ledger like this:
 
-◊table{
+◊stable{
   Person      Swedish krona
   Sneaky Steve       7 000 SEK
   Honest Harry         1 000 SEK
@@ -20,7 +20,7 @@ If you want to create a digital currency you only really need to keep track of h
 
 When Sneaky Steve wants to send ◊tf{500 SEK} to Honest Harry the bank simply updates the ledger:
 
-◊table{
+◊stable{
   Person      Swedish krona
   Sneaky Steve       6 500 SEK (-500 SEK)
   Honest Harry         1 500 SEK (+500 SEK)
@@ -48,7 +48,7 @@ So far cryptocurrencies doesn't do anything new. The hard problem is how do you 
 
 For example Sneaky Steve wants to buy a computer from Honest Harry and wants to pay with Bitcoin. The computer costs ◊tf{1 BTC} and the Bitcoin ledger looks like this:
 
-◊table{
+◊stable{
   Address     Bitcoin
   Sneaky Steve 1     1 BTC
   Sneaky Steve 2     0 BTC
@@ -61,7 +61,7 @@ What Sneaky Steve tries to do is send ◊tf{1 BTC} to the merchant Honest Harry 
 
 If we didn't prevent this the ledger might look like this:
 
-◊table{
+◊stable{
   Address     Bitcoin   Diff
   Sneaky Steve 1     -1 BTC    (-2 BTC)
   Sneaky Steve 2     1 BTC     (+1 BTC)
@@ -132,7 +132,7 @@ If you've heard about cryptocurrencies then maybe you've also heard about crypto
 
 The core idea is: if you want to choose which transaction is valid◊sn{valid} you have to do work. The process is known as ◊em{proof-of-work}, shortened to POW.
 
-The work is to find a solution to a computing problem. The problem itself is not that important and it doesn't have any meaning outside of mining. There are two important properties it should have:
+The work is to find a solution to a computing problem◊sn{asics}. The problem itself is not that important and it doesn't have any meaning outside of mining. There are two important properties it should have:
 
 ◊ul{
     ◊li{◊strong{Hard enough}
@@ -150,6 +150,16 @@ A solution is proof that you've done the work---it's proof that you've expended 
 Since you require a significant investment to find a block this can be used as sybil resistance.
 
 ◊todo{IMG no sybil attack}
+
+Important to note is that everyone doesn't have to be a miner. The blockchain is open for anyone to read and validate, it's only writing that's exclusive to miners.
+
+◊ndef["asics"]{
+    In Bitcoin specialized hardware, ◊link[ASICs]{ASICs}, are used which are many magnitudes faster than regular computers at solving POW problems.
+
+    They can only be used for a specific type of POW algorithm and cannot be used to mine on any cryptocurrency.
+}
+
+◊(define ASICs "https://en.wikipedia.org/wiki/Application-specific_integrated_circuit")
 
 
 ◊subhead{The blockchain}
@@ -194,25 +204,125 @@ In the example Honest Harry should wait until he knows which chain is longer and
 ◊todo{IMG transaction to Honest Harry, or not}
 
 
+◊subhead{Reversing transactions}
+
+If Sneaky Steve can't trick Honest Harry by showing him a fake transaction he can try to reverse his payment after receiving goods from Honest Harry.◊sn{chargeback}
+
+It works like this:
+
+◊ol{
+    ◊li{Make a transaction to Honest Harry which is confirmed on the blockchain.}
+    ◊li{Create a longer hidden chain where Sneaky Steve instead keeps the money.}
+    ◊li{After receiving the goods Sneaky Steve publishes the second chain.
+
+        Because people automatically follow the longer chain this effectively reverses the transaction to Honest Harry and Sneaky Steve has successfully commited fraud.
+    }
+}
+
+◊todo{IMG successful reversal}
+
+This is a different type of double spending and it's the primary attack vector ◊link[wp]{the whitepaper} is concerned about. It's called a ◊link[51-attack]{51% attack}, for reasons we'll soon explain.
+
+◊ndef["chargeback"]{
+    In the credit card world this type of fraud is called ◊link[chargeback-fraud]{chargeback fraud} or friendly fraud.
+}
+
+
+◊(define 51-attack "https://www.investopedia.com/terms/1/51-attack.asp")
+
+
 ◊subhead{The 50% security assumption}
 
 The whole system relies on a majority of miners being honest---it's the core security assumption behind proof-of-work.
 
 Honest miners work for profit so they absolutely don’t want to risk their block being rejected by the other miners and lose their reward. Therefore the rational thing to do is to work on the longest chain.
 
-The primary way to try to cheat the system and to double-spend is to reverse 
+This means for Sneaky Steve to successfully reverse a transaction he needs to control more than half of all mining power---otherwise his hidden chain can never become the longest. It's called a 51% attack because you need to control at least 51% of all mining power to pull it off consistently.◊sn{51-attack-btg}
 
-If Sneaky Steve wants to trick Honest Harry he needs to:
+◊ndef["51-attack-btg"]{
+    Bitcoin Gold ◊link[51-btg]{was successfully 51% attacked} and exchanges were double spent. The attacker managed to reverse transactions 22 blocks deep.
 
-◊ol{
-    ◊li{Make Honest Harry think he gets money}
-    ◊li{Reverse the transaction to Honest Harry}
+    This is the danger for smaller cryptocurrencies who don't have much mining power securing the chain. 51% attacking Bitcoin would be ◊strong{much} harder.
 }
 
-This touches on the immutability of the blockchain. As long as more than 50% of miners don’t want to change the chain it will always be longest and correct. But if they do then they can reverse transactions.
+◊(define 51-btg "https://forum.bitcoingold.org/t/double-spend-attacks-on-exchanges/1362")
+
+◊todo{IMG without 50% of mining Sneaky Steve will always fail}
+
+This touches on the immutability of the blockchain. As long as more than 50% of miners don't want to change the chain it will always be longest and correct. But if they do then they can reverse transactions.
 
 
-◊subhead{An economic invention}
+◊subhead{Transaction security}
+
+The deeper a transaction is in the blockchain---the more confirmations it has---the harder a transaction is to reverse. Bitcoin's security isn't absolute but probabilistic. ◊link[wp]{Bitcoin's whitepaper} goes into more details and recommends 6 confirmations---roughly one hour---to be sure you don't get defrauded. Today for most normal payments a single confirmation is usually enough.◊sn{0-conf}
+
+◊todo{IMG confirmations in the blockchain}
+
+A crucial mistake people make is to think more miners, or more energy used, means more transactions can be handled. This is not true. Miners ◊strong{only} care about securing the chain and to prevent your transactions from being reversed.
+
+In fact we could spend 100x more energy on securing the chain and process the same amount of transactions or we could spend 1% of the energy and process more transactions. Transaction throughput is a separate problem.
+
+◊ndef["0-conf"]{
+    You can actually even accept transactions without any confirmation, called ◊em{0-conf}. They are much less secure than a transaction with a confirmation but since most miners respect the first seen rule it's fairly safe for small purchases.
+
+    There are investigations on how to make 0-conf more secure. One of the more interesting proposals is ◊link[z-forfeits]{0-conf forfeits} where you need to provide a larger sum as hostage and if you try to double spend you lose them.
+}
+
+◊(define z-forfeits "https://gist.github.com/awemany/619a5722d129dec25abf5de211d971bd")
+
+
+◊subhead{An economic innovation}
+
+While cryptocurrencies combine several different technologies in an interesting way the true innovation is how they're secured by economic incentives.
+
+A minority miner with less than 50% will probably lose the blockreward in the long run if she tries to cheat and is exponentially more likely to lose the longer the attacking chain needs to be.
+
+As noted earlier the current block reward is 12.5 BTC or about $50,000. Losing out on just one blockreward is a big loss in the cutthroat mining business. Therefore miners are heavily incentivized to be honest and play by the rules---it's the economically rational thing to do.
+
+The situation is a little different in a 51% attack. There the attacker will always win the longest chain race and on the surface attacking the chain is a rational action.
+
+First some quick napkin math to estimate the cost to require 51% of mining power:
+
+◊; Couldn't really be bothered to update the existing string to table to support x-expressions...
+◊table[#:class "centered"]{ ◊tbody{
+    ◊tr{ ◊td{◊link[btc-hashrate]{Total Bitcoin hash rate}}   ◊td{44,078,986 TH/s} }
+    ◊tr{ ◊td{◊link[s9-hashrate]{Antminer S9i hash rate}}     ◊td{14 TH/s (+-5%)} }
+    ◊tr{ ◊td{◊link[s9-cost]{Antminer S9i cost}}              ◊td{$400} }
+    ◊tr{ ◊td{Number of S9i to cover the whole network}       ◊td{3,148,499} }
+    ◊tr{ ◊td{Total network miner cost}                       ◊td{$1,259,399,600} }
+}}
+
+So about $650 million for just the miners themselves (assuming you could purchase that many). On top of that we need power supply, cooling, storage and maintenance for more than a million miners. Suffice to say it's a very large investment to come close to 51%, but not totally impossible.
+
+Even if someone manages to gain enough mining power to execute the attack she still needs to be careful. A 51% attack can be detected and there can be negative consequences:
+
+◊ul{
+    ◊li{The Bitcoin price might crash.}
+    ◊li{Exchanges might blacklist the stolen funds.}
+    ◊li{The community might change POW and make all mining rigs worthless.◊sn{monero-POW}}
+}
+
+Bitcoin miners are rewarded in bitcoin and they also can't be spent until after 100 blocks---roughly 16 hours. Executing a 51% attack that crashes the price would directly harm the rewards. If the community goes for the nuclear option and change POW then the massive initial investment might be lost.
+
+These huge risks needs to weighed against what profits a 51% attack could generate. Maybe they could defraud exchanges for $50 million? A 51% miner would make that back in about two weeks---risk free.◊sn{btg2}
+
+◊ndef["btg2"]{
+    The case is a little different for cryptocurrencies that share POW algorithm with others. There miners could attack the minority chain and jump back to the majority chain after executing the attack.
+}
+
+The economic incentives are so strong that it might be rational even for a 51% miner to be honest. In fact Bitcoin has ◊link[ghash]{had pools with 51% before} but nothing has happened.
+
+◊(define ghash "https://www.coindesk.com/bitcoin-mining-detente-ghash-io-51-issue")
+
+
+◊ndef["monero-POW"]{
+    As an example Monero has changed POW several times bricking existing ASICs. The expensive mining rigs are now practically useless.
+}
+
+◊(define btc-hashrate "https://www.blockchain.com/charts/hash-rate")
+◊(define s9-hashrate "https://shop.bitmain.com/promote/antminer_s9i_asic_bitcoin_miner/specification")
+◊(define s9-cost "https://www.cryptocompare.com/mining/blokforge/antminer-s9i-14-ths/")
+
 
 
 ◊subhead{Network upgrades and new cryptocurrencies}
@@ -250,83 +360,28 @@ Here social consensus decide which of the chains is called "Original Coin" and w
 ◊(define dao "https://fullstacks.org/materials/ethereumbook/16_appdx-forks-history.html")
 
 
-
-
-◊hr{}
-
-◊todo{rewrite from here}
-
-The POW solution allows you to update the ledger by adding a block with many transactions to the blockchain. Other miners now have to restart and work to add a block on top of your new block, the problem is slightly different for each block so you cannot add a block anywhere.
-
-◊todo{IMG a straight blockchain}
-
-Importantly you're not allowed to add any invalid transactions, like sending coins from an empty wallet or double spends. Otherwise all other miners and users would simply reject it.
-
-◊todo{IMG reject blocks with invalid transactions}
-
-In return for adding the block you get a reward, both a fixed one for finding a new block and you can collect transaction fees for the transactions you include in the block.◊mn{gold}
-
-◊ndef["gold"]{
-    As I'm writing this the current blockreward for Bitcoin is 12.5 BTC or around $50,000.
-}
-
-Important to note is that everyone doesn't have to be a miner. From our example Honest Harry can confirm for himself that Sneaky Steve has money for his transaction. The blockchain is open for anyone to read and validate.
-
-
-But what happens if there are two chains? One where Sneaky Steve sends money to Honest Harry and one where Sneaky Steve sends money to himself? Which one is the correct one?
-
-◊todo{IMG alice double spend, two chains}
-
-This all relies on a majority of miners being honest---it is the core assumption for POW to work at all. Honest miners work for profit so they absolutely don't want to risk their block being rejected by the other miners and lose their reward.◊sn{orphan} Therefore the rational thing to do is to work on the longest chain.
-
-If most miners are honest then one chain will become longer. In our example Honest Harry simply waits too see which chain wins and decide from there.◊sn{fork} Coming to consensus by following the longest chain is often referred to as ◊em{Nakamoto consensus}.
-
-◊ndef["fork"]{
-    When two separate chains appear we say that the blockchain forks. New cryptocurrencies might be created from existing ones by forking off at a point in time and start following new rules.
-
-    See for example Bitcoin Cash--Bitcoin or the Ethereum◊|nb|--◊|nb|Ethereum Classic split. Which of the two chains is the "correct" is of course subjective.
-}
-
-◊todo{IMG two chains, one shorter}
-
-This touches on the immutability of the blockchain. As long as more than 50% of miners don't want to change the chain it will always be longest and correct. But if they do then they can reverse transactions.
-
-
 ◊ndef["valid"]{
     Remember that to prevent double spending one transaction must be chosen, which one doesn't matter.
 }
-
-
-
-◊subhead{Transaction security}
-
-If someone like Sneaky Steve wants to reverse their transaction◊sn{chargeback} after paying Honest Harry he would have to create a longer chain than the rest of the network which in the long run is only possible if he does control 50% of all mining. For Bitcoin this is very, very hard and in practice impossible.
-
-The deeper a transaction is in the blockchain---the more confirmations it has---the harder a transaction is to reverse. Bitcoin's security isn't absolute but probabilistic. ◊link[wp]{Bitcoin's whitepaper} goes into more details and recommends 6 confirmations---roughly one hour---to be sure you don't get defrauded. Today for most normal payments a single confirmation is usually enough.
-
-A crucial mistake people make is to think more miners, or more energy used, means more transactions can be handled. This is not true. Miners ◊strong{only} care about securing the chain and to prevent your transactions from being reversed.
-
-In fact we could spend 100x more energy on securing the chain and process the same amount of transactions or we could spend 1% of the energy and process more transactions. Transaction throughput is a separate problem.
 
 
 ◊subhead{Alternative consensus models}
 
 There are alternatives to proof-of-work but none have so far been proven to work well. The most popular is proof-of-stake where instead of miners expending energy you have coin holders who vote.
 
-One problem is the ◊em{nothing at stake problem} where a coin holder can vote on all forks where a proof-of-work miner can only vote on one of the forks. It causes a situation where everyone are incentivized to vote on all forks. An attacker can abuse it to reverse a transaction by only mining on their fork, which is initially a block behind, to overtake the main chain and reverse their transaction. This only requires a small percentage of total voting power in contrast to proof-of-work where you need 50%.
+One problem is the ◊link[nothing-at-stake]{nothing at stake problem} where a coin holder can vote on all forks where a proof-of-work miner can only vote on one of the forks.
+
+It causes a situation where everyone are incentivized to vote on all forks. An attacker can abuse it to reverse a transaction by only mining on their fork, which is initially a block behind, to overtake the main chain and reverse their transaction. This only requires a small percentage of total voting power in contrast to proof-of-work where you need 50%.
+
+◊(define nothing-at-stake "https://ethereum.stackexchange.com/questions/2402/what-exactly-is-the-nothing-at-stake-problem")
 
 
 ◊subhead{More details}
 
-If you still have questions and want more details I encourage you to do more research. ◊link[wp]{Bitcoin's whitepaper} is always a good place to begin and I've tried to include key concepts you can search for. There are many good resources online which go into much more details than I have here.
+The chapter became very long despite skipping out on details here and there. If you want to go deeper I encourage you to do more research on your own.
 
+◊link[wp]{Bitcoin's whitepaper} is always a good place to begin and there are many good resources online. I've tried to include key concepts which you use as a starting point in your search.
 
-◊subhead{Summary}
-
-
-◊ndef["chargeback"]{
-    In the credit card world reverting transactions leads to ◊link[chargeback-fraud]{chargeback fraud}.
-}
 
 ◊ndef["stores-transactions"]{
     It's a slight simplification to say the blockchain stores balances.  It actually stores all transactions from which you can calculate all balances.

@@ -39,6 +39,7 @@ Before release:
 * Domain + https hosting
 * Correct link to github
 * Feed
+* Remove unfinished eli5
 
 # Site
 
