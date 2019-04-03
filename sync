@@ -1,0 +1,83 @@
+#!/usr/bin/env perl
+
+use autodie;
+use Modern::Perl;
+use File::Basename;
+use Getopt::Long;
+
+my $site_bucket = "whycryptocurrencies.com";
+
+my $help;
+my $sync_site;
+
+GetOptions(
+    'help|h' => \$help,
+    'site' => \$sync_site,
+);
+
+# Fetch path to current directory
+my $site = "/tmp/why_cryptocurrencies";
+
+if ($help || !$sync_site) {
+    help();
+}
+
+if ($sync_site) {
+    say "Publishing site...\n";
+    system("raco pollen publish");
+
+    say "Syncing site...\n";
+
+    # Sync media files (cache: 10 weeks)
+    say "Syncing images";
+    sync ($site_bucket, "$site/images", "max-age=6048000");
+
+    # Sync fonts (cache: 10 weeks)
+    say "Syncing fonts";
+    sync ($site_bucket, "$site/fonts", "max-age=6048000");
+
+    # Sync css (cache: 1 hour)
+    say "Syncing css";
+    sync ($site_bucket, "$site/css", "max-age=3600", "-m text/css");
+
+    # Sync rest (cache: 1 min)
+    say "Syncing rest";
+    sync ($site_bucket, "$site/", "max-age=60, must-revalidate");
+
+    say "Removing deleted";
+    sync ($site_bucket, "$site/", "", "--delete-removed");
+}
+
+sub sync {
+    my $cmd = sync_cmd (@_);
+    system("$cmd 2>&1");
+}
+
+sub capture_sync {
+    my $cmd = sync_cmd (@_);
+    my @output = `$cmd`;
+    return @output;
+}
+
+sub sync_cmd {
+    my ($bucket, $dir, $cache, $option) = @_;
+
+    my $header = "";
+    $header = "--add-header=\"Cache-Control: $cache\"" if $cache;
+
+    $option = "" unless $option;
+
+    return "s3cmd sync $option --acl-public $header $dir s3://$bucket/";
+}
+
+sub help {
+    say "
+    $0 --site
+        sync site
+    $0 --help
+        help
+    ";
+
+    exit;
+}
+
