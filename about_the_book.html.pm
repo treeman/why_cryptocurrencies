@@ -2,6 +2,8 @@
 
 ◊(define-meta title "About the book")
 ◊(define-meta subtitle "A perspective beyond the hype")
+◊(define-meta updated "2019-04-3T15:06:00")
+◊(define-meta uuid "7ea80c78-aff2-46a1-8d05-1253d7033dc6")
 
 Whenever the topic of cryptocurrencies---where Bitcoin and Ethereum are the most known---come up in conversations they're almost always misunderstood or dismissed.
 

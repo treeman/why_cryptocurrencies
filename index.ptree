@@ -1,6 +1,5 @@
 #lang pollen
 
-index.html
 ◊about_the_book.html{
     how_to_use.html
     free.html

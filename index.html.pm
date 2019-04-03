@@ -1,7 +1,6 @@
 #lang pollen
 
 ◊(define-meta template "homepage.html")
-◊(define-meta title "Why cryptocurrencies?")
 
 ◊(define (page-toc page)
   (define (node page)

@@ -2,6 +2,8 @@
 
 (provide (all-defined-out))
 
+(define root-url "https://whycryptocurrencies.com")
+
 (define rss-feed
   `("/feed.xml"
     "Feed to the site"))

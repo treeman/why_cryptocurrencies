@@ -5,6 +5,8 @@
 
 (provide (all-defined-out))
 
+(define main-title "Why cryptocurrencies?")
+
 (define subscription-form
   `(form ((id "f-subscribe") (class "subscribe"))
          (input ((id "email") (class "email") (value "") (name "email")
@@ -23,3 +25,5 @@
             " or " ,(link mailto "contact me")
             ".")))
 
+(define (abs-url url)
+  (format "~a/~a" root-url url))
