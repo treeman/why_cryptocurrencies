@@ -10,7 +10,7 @@
 
 The whitepaper is surprisingly easy to read and I highly recommend you read it. If you prefer a simplified explanation with annotations I can recommend ◊link[ann-wp]{this guide}. If you would rather have it in podcast form ◊link[pod-wp]{here's one}.
 
-Note that the whitepaper was created in 2008 and some terminology and implementation details have changed, for example ◊em{nodes} in the paper refers to mining nodes while today most people run nodes but don't mine. But the high level description is just as true today more than 10 years later.
+Note that the whitepaper was created in 2008 and some terminology and implementation details have changed. For example ◊em{nodes} in the paper refers to mining nodes, while today most people run nodes but don't mine. But the high level description is just as true today more than 10 years later.
 
 
 ◊subhead{Alterations}

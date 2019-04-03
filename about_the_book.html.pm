@@ -13,7 +13,7 @@ Curiously enough they don't explain what cryptocurrencies are or what they can b
     It's interesting when the news handles something you have a good understanding of---they're often completely wrong. Makes you wonder, how wrong are they about things you're not familiar with?
 }
 
-Maybe this is why most people --- even cryptocurrency fans --- only see cryptocurrencies as a form of investment. After all there are few things as interesting as the possibility of becoming rich very quickly.
+Maybe this is why most people --- even cryptocurrency fans --- only see cryptocurrencies as a form of investment? After all there are few things as exciting as the possibility of becoming rich very quickly.
 
 What hope does average Joe have when even the famous security technologist Bruce Schneier ◊link[blockchain-and-trust]{concludes that}:
 
@@ -36,9 +36,9 @@ It's almost a universal phenomena. I've heard these arguments from students, co-
   ◊li{They don't do anything valuable}
 }
 
-It seems everyone has an opinion but few seem capable of explaining what it is or what it does differently.  Of course most aren't dismissive but simply don't understand what it's all about. Many are curious and want to learn more.
+It seems everyone has an opinion but few are capable of explaining what they are or what they do differently.  Of course most aren't dismissive but simply don't understand what it's all about. Many are curious and want to learn more.
 
-With this book I hope to show how cryptocurrencies can be useful, what use cases exist and how it can help people. I'm not trying to make anyone a cryptocurrency fan, I just hope to give bring some nuance and to help answer some common questions.
+With this book I hope to show how cryptocurrencies can be useful, what use cases exist and how they can help people. I'll briefly go over how they work in a more conceptual level and I might throw in some historical notes here and there. I'm not trying to make anyone a cryptocurrency fan, I just hope to give bring some nuance and to help answer some common questions.
 
 And I must admit I'm also being selfish---writing a book is on my bucket list.
 
@@ -55,21 +55,21 @@ This book tries to describe what value cryptocurrencies have using several examp
   ◊li{They have valuable use cases}
 }
 
-Of course everything new brings positive and negative aspects with it. It's up to you to decide where on the spectrum cryptocurrencies lie.
+Of course everything new brings positive and negative aspects with it. It's up to you to decide where on the global spectrum of good and bad cryptocurrencies lie.
 
 
 ◊subhead{What this book isn't}
 
-There are many problems with cryptocurrencies as they exist today. This isn't an attempt to explain them away or to look at work being done to counter them. For completeness here are some of the biggest problems as I see it:
+There are many problems with cryptocurrencies as they exist today. This isn't an attempt to explain them away or to look at work being done to address them. For completeness here are some of the biggest problems as I see it:
 
 ◊ul{
   ◊li{How can a cryptocurrency scale globally?}
-  ◊li{How can payments be made secure enough for retail in a couple of seconds?}
+  ◊li{How can payments be made secure enough for retail, in a couple of seconds?}
   ◊li{Bitcoin uses a public ledger where all payments are visible, what about privacy? ◊sn{monero}}
   ◊li{User experience is far from the level of VISA or Apple Pay.}
 }
 
-A problem focused view is excellent for an engineer or a problem solver but it also limit foresight. For example the computer had many problems and drawbacks when first introduced but today we ridicule statements like:
+A problem centric view is excellent for an engineer or a problem solver but it also limit foresight. For example the computer had many problems and drawbacks when first introduced but today we ridicule statements like:
 
 ◊qt[#:author "Thomas Watson, president of IBM" #:date 1943]{
     I think there is a world market for maybe five computers
@@ -79,7 +79,7 @@ A problem focused view is excellent for an engineer or a problem solver but it a
     There is no reason anyone would want a computer in their home
 }
 
-Instead of putting on blinders and getting stuck at these problems, which I believe can be addressed, we'll focus on existing use cases and the potential cryptocurrencies have.
+Instead of putting on blinders and getting stuck at these problems, which I believe can be addressed, we'll focus on the potential cryptocurrencies have. Only with this vantage point can we see if the problems are worth working on, or if we instead should scrap the whole idea.
 
 This is not a deep dive on a technical level. Neither will we focus on a single implementation---Bitcoin is the first cryptocurrency but there are hundreds more◊sn{cryptos}.
 
@@ -89,7 +89,7 @@ This is not a deep dive on a technical level. Neither will we focus on a single 
 
 
 ◊ndef["schneier"]{
-    Schneier brings an interesting perspective and he's right about one very important aspect: Contrary to popular belief cryptocurrencies don't remove all trust. Trust is either removed or shifted.
+    Schneier brings an interesting perspective and he's right about one very important aspect: contrary to popular belief cryptocurrencies don't remove ◊strong{all} trust.
 
     To counter his point that "cryptocurrencies are useless" all you have to do is provide one counterexample where they're useful. I will give several.
 }

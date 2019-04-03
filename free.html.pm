@@ -16,12 +16,12 @@ If you find the book interesting and want to show appreciation the best way is t
 You can also send donations, big or small, from anywhere in the world nearly instantly with small fees and no possibility of censorship. This is not possible with anything else.
 
 ◊div[#:class "donations"]{
-    ◊crypto["#" "bitcoincash:qz4m05qjhd66ggqvugxqm9jprk348nyalgg462vszc"]{Bitcoin (BTC)}
-    ◊crypto["#" "bitcoincash:qz4m05qjhd66ggqvugxqm9jprk348nyalgg462vszc"]{Bitcoin Cash (BCH)}
-    ◊crypto["#" "bitcoincash:qz4m05qjhd66ggqvugxqm9jprk348nyalgg462vszc"]{Dogecoin (DGC)}
-    ◊crypto["#" "bitcoincash:qz4m05qjhd66ggqvugxqm9jprk348nyalgg462vszc"]{Ethereum (ETH)}
-    ◊crypto["#" "bitcoincash:qz4m05qjhd66ggqvugxqm9jprk348nyalgg462vszc"]{Litecoin (LTC)}
-    ◊crypto["#" "bitcoincash:qz4m05qjhd66ggqvugxqm9jprk348nyalgg462vszc"]{Monero (XMR)}
+    ◊crypto["#" "xxx"]{Bitcoin (BTC)}
+    ◊crypto["#" "xxx"]{Bitcoin Cash (BCH)}
+    ◊crypto["#" "xxx"]{Dogecoin (DGC)}
+    ◊crypto["#" "xxx"]{Ethereum (ETH)}
+    ◊crypto["#" "xxx"]{Litecoin (LTC)}
+    ◊crypto["#" "xxx"]{Monero (XMR)}
 }
 
 If you're missing a coin you ◊em{really} want to use please ◊link[mailto]{contact me}. If it's not too much hassle I will consider it but please no ◊link[snake-oil]{snake oil}.

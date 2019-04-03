@@ -28,7 +28,7 @@ Sidenotes use numbers in the text◊sn{sn} and marginnotes◊mn{mn} are notes wi
     This is a marginnote.
 }
 
-While I do my very best apart from close friends I don't use an editor so there may be errors in the book. Therefore I would be most grateful for any feedback, ideas or error corrections you the reader may find. You can ◊link[mailto]{email me} or create a pull request or an issue ◊link[source-code]{on Github}.
+While I do my very best apart from close friends I don't have an editor, so there may be errors in the book. Therefore I would be most grateful for any feedback, ideas or error corrections you the reader may find. You can ◊link[mailto]{email me} or create a pull request or an issue ◊link[source-code]{on Github}.
 
 ◊(define the-first-chapter "what_is_a_cryptocurrency.html")
 

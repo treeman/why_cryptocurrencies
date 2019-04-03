@@ -19,7 +19,7 @@
             ,subscription-form
           (div ((class "links"))
             "See the " ,(link rss-feed "RSS feed")
-            " source code on " ,(link source-code "Github")
+            ", source code on " ,(link source-code "Github")
             " or " ,(link mailto "contact me")
             ".")))
 
