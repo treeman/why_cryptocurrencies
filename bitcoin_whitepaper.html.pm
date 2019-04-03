@@ -2,6 +2,8 @@
 
 ◊(define-meta title "The Bitcoin Whitepaper")
 ◊(define-meta subtitle "What started it all")
+◊(define-meta updated "2019-04-03T19:59:58+0200")
+◊(define-meta uuid "581c4917-d862-49cb-9d01-495a9106081b")
 ◊(define-meta no-side-space #t)
 
 ◊div[#:class "whitepaper"]{

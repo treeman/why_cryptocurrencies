@@ -1,4 +1,3 @@
-◊(define posts (pagetree->list (get-pagetree "index.ptree")))
 ◊(define (skip-feed post)
   (select-from-metas 'skip-feed post))
 ◊(define (title post)
@@ -7,36 +6,48 @@
   (select-from-metas 'subtitle post))
 ◊(define (uuid post)
   (select-from-metas 'uuid post))
+◊(define (published post)
+  (select-from-metas 'published post))
 ◊(define (updated post)
   (select-from-metas 'updated post))
-◊(define (summary post)
+◊(define (content post)
   ; Wrap html in CDATA tag as it might ge interpreted as XML tags.
-  ; Also yes we embedd the full post in our RSS.
   (string-append
     "<![CDATA["
     (->html (get-doc post) #:splice? #t)
     "]]>"))
+◊(define (validate post)
+  (check-meta 'title post)
+  (check-meta 'uuid post)
+  (check-meta 'updated post)
+  post)
+◊(define (check-meta sym post)
+  (when (not (select-from-metas sym post))
+    (printf "MISSING REQUIRED META '~a from ~a\n" sym post)))
+◊(define posts
+  (map validate
+    (filter (λ (post)
+               (not (skip-feed post)))
+      (pagetree->list (get-pagetree "index.ptree")))))
 ◊(define (entry post)
-  (if (skip-feed post)
-    `()
-    (->html
-      `((entry
-         ,@(entry-content post)
-         "\n")
-        "\n"))))
+  (->html
+    `((entry
+       ,@(entry-content post)
+       "\n")
+      "\n")))
 ◊(define (entry-content post)
   (add-between
     (filter-entry-content
       `((title ,(title post))
         (subtitle ,(subtitle post))
+        (published ,(published post))
         (updated ,(updated post))
         (id ,(uuid post))
         (link ((href ,(abs-url post))))
-        (summary [[type "html"]] ,(summary post))))
+        (content [[type "html"]] ,(content post))))
     "\n\t"))
 ◊(define (filter-entry-content cs)
   ; We don't require subtitles be in all posts, this is a general implementation.
-  ; But maybe we should disallow missing uuid and updated date?
   (filter (λ (x)
              (cadr x))
     cs))

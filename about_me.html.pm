@@ -1,7 +1,8 @@
 #lang pollen
 
 ◊(define-meta title "About me, the author")
-◊;(define-meta subtitle "I'm just a dude")
+◊(define-meta updated "2019-04-03T19:59:38+0200")
+◊(define-meta uuid "b1aaa891-a7c6-4bf4-a01c-4c43c0446abf")
 ◊(define-meta no-side-space #t)
 
 I wonder what you might think of someone who's writing a book about cryptocurrencies? Maybe you'll think of a teenage multi-millionaire or an old neckbeard raving about free software? Or perhaps an anarchist using slogans like "governments are evil" and "taxation is theft"?
