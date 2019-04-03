@@ -5,9 +5,9 @@
 ◊(define (subtitle post)
   (select-from-metas 'subtitle post))
 ◊(define (uuid post)
-  (select-from-metas 'uuid post))
-◊(define (published post)
-  (select-from-metas 'published post))
+  (string-append
+    "urn:uuid:"
+    (select-from-metas 'uuid post)))
 ◊(define (updated post)
   (select-from-metas 'updated post))
 ◊(define (content post)
@@ -40,7 +40,6 @@
     (filter-entry-content
       `((title ,(title post))
         (subtitle ,(subtitle post))
-        (published ,(published post))
         (updated ,(updated post))
         (id ,(uuid post))
         (link ((href ,(abs-url post))))
@@ -51,6 +50,13 @@
   (filter (λ (x)
              (cadr x))
     cs))
+◊(define latest-update
+   (foldr (λ (a b)
+             (if (string>? a b)
+                 a
+                 b))
+     ""
+     (map updated posts)))
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>◊|main-title|</title>
@@ -61,7 +67,7 @@
     <email>◊|email|</email>
   </author>
   <id>◊(uuid here)</id>
-  <updated></updated>
+  <updated>◊|latest-update|</updated>
   ◊(map entry posts)
 </feed>
 
