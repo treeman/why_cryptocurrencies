@@ -7,7 +7,7 @@
 
 This book is completely free for you to read online and will be so forever. There will be no ads, no tracking and no crypto mining in the browser.◊sn{browser-mining}
 
-For all you noscript users the site will work perfectly well without javascript---in fact I aim to avoid it altogether. I do use web fonts hosted on this site which noscript blocks by default.
+For all you noscript users the site will work perfectly well without javascript---in fact I aim to avoid it altogether. I do use ◊link[mbtype]{custom fonts} hosted on this site which noscript blocks by default.
 
 When I some day finish the book and decide to release it in other formats I may charge for them, but the web version will always be free.
 
@@ -50,3 +50,4 @@ If you're missing a coin you ◊em{really} want to use please ◊link[mailto]{co
             (div ((class "address")) ,address)
             (img ((class "qr") (src ,qr))))))
 
+◊(define mbtype "https://mbtype.com/")

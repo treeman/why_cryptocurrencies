@@ -3,3 +3,4 @@
 *.xml
 compiled/
 img-src
+_site/
