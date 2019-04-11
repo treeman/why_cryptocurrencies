@@ -1,0 +1,69 @@
+#!/usr/bin/python3
+
+import glob
+import subprocess
+import os.path
+import shutil
+import errno
+
+# Can upload with rsync -a -v _site/ <dest>/
+
+# Could extend this with using a cache of sha256 output files
+# to see if we should regenerate or not,
+# but just cleaning _site/ is easier before build
+# and using raco to update during development.
+def main():
+    dirname = os.path.dirname(__file__)
+    output_dir = os.path.join(dirname, "_site/")
+
+    print("Generating site to", output_dir)
+
+    # First make sure we've generated all files.
+    for f in glob.glob('*.pm'):
+        output = os.path.splitext(f)[0]
+        if os.path.isfile(output):
+            print("Skip", f)
+            continue
+        subprocess.call(["raco", "pollen", "render", f])
+
+    # sassc sass/main.scss --style compressed > css/main.css
+    with open('css/main.css', 'w') as main:
+        print("Generating css/main.css")
+        subprocess.call(["sassc", "sass/main.scss", "--style", "compressed"],
+            stdout=main)
+
+    # Clean destination directory.
+    if not os.path.exists(output_dir):
+        print("Creating", output_dir)
+        os.makedirs(output_dir)
+    else:
+        print("Cleaning", output_dir)
+        for root, dirs, files in os.walk(output_dir):
+            for f in files:
+                os.unlink(os.path.join(root, f))
+            for d in dirs:
+                shutil.rmtree(os.path.join(root, d))
+
+    # Then copy all relevant files.
+    for match in ["*.html", "*.xml", "css/", "files/",
+                  "images/", "fonts/"]:
+        for src in glob.glob(match):
+            dst = os.path.join(output_dir, src)
+            src = os.path.join(dirname, src)
+            copy(src, dst)
+    print("Done")
+
+
+# Copying in python seems... Difficult.
+def copy(src, dst):
+    try:
+        shutil.copytree(src, dst)
+    except OSError as exc: # python >2.5
+        if exc.errno == errno.ENOTDIR:
+            shutil.copy(src, dst)
+        else: raise
+
+if __name__ == '__main__':
+    main()
+
+
