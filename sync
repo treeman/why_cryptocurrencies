@@ -16,7 +16,8 @@ GetOptions(
 );
 
 # Fetch path to current directory
-my $site = "/tmp/why_cryptocurrencies";
+my $root = dirname(__FILE__);
+my $site = "_site";
 
 if ($help || !$sync_site) {
     help();
@@ -24,7 +25,7 @@ if ($help || !$sync_site) {
 
 if ($sync_site) {
     say "Publishing site...\n";
-    system("raco pollen publish");
+    system("$root/generate");
 
     say "Syncing site...\n";
 
