@@ -304,7 +304,7 @@ $sidenote-float-width: 1280px;
         display: inline;
     }
     .margin-symbol, .sidenote-number:after, .sidenote:before {
-        color: #6087dd;
+        color: $sidenote-clickable-color;
     }
     label.margin-toggle {
         cursor: pointer;

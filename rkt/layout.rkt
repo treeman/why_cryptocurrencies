@@ -10,11 +10,7 @@
 (define subscription-form
     `(form ((action "https://volleyy.com/s/470eafb/")
             (method "post")
-            (target "popupwindow")
-            (onsubmit "window.open('https://volleyy.com/s/470eafb/',
-                                   'popupwindow',
-                                   'scrollbars=yes,width=800,height=600');
-                       return true;")
+            (target "_blank")
             (class "subscribe"))
         (input ((placeholder "Enter your email to join the mailing list")
                 (id "_vly-email")

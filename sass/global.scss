@@ -231,10 +231,13 @@ a:hover.xref {
     padding: 0.5em;
 }
 
-.subscribe:hover > .email,
-.subscribe:hover > .submit {
+.subscribe > .email:hover,
+.subscribe > .submit:hover {
     border: 1px solid #aaa;
     color: $body-font-color;
+}
+.subscribe > .email:invalid {
+    color: $email-invalid-color;
 }
 .subscribe > .submit:hover {
     color: $body-xref-hover-color;
