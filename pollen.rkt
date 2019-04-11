@@ -22,7 +22,6 @@
   (define template-prefix "chapter")
   ;; splice-me needs to NOT be a block tag to allow us to inject
   (define block-tags (cons 'img default-block-tags))
-  (define linebreak-separator "  \n")
 
   ;; Ignore stuff during 'raco pollen publish'
   (define publish-directory "/tmp/why_cryptocurrencies/")
@@ -37,6 +36,8 @@
                       "clean"
                       "sass-update"
                       "sync"
+                      "_site"
+                      "generate"
                       "README.md"))))
   (define omitted-path? (λ (path)
                            (set-member? omitted-paths path)))

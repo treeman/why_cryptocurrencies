@@ -10,7 +10,7 @@ Each chapter is supposed to be standalone so you can jump around and read it how
 This book is a work in progress and if you want to keep up to date you have three options:
 
 ◊ul{
-  ◊li{Subscribe to the ◊link[rss-feed]{RSS feed}}
+  ◊li{Subscribe to the ◊link[feed-url]{feed}}
   ◊li{Follow the changes on ◊link[source-code]{Github}}
   ◊li{Join the mailing list
 
@@ -21,16 +21,17 @@ External links are colored green and internal links are bright orange. For examp
 
 Links to the previous and the next chapter can be found at the bottom as well as at the edge of the screen (hover on the edges to see).
 
-Sidenotes use numbers in the text◊sn{sn} and marginnotes◊mn{mn} are notes without numbered references. On small screens like mobile phones the notes are hidden and can be shown by clicking on the sidenote number or the † symbol for marginnotes.
+Sidenotes use numbers in the text◊sn{sn} and marginnotes◊mn{mn} are notes without numbered references. On small screens like mobile phones the notes are hidden and can be shown by clicking on the sidenote number or the marginnote symbol ◊sans{†}.
 
 ◊ndef["sn"]{
-    This is a sidenote.
+    This is a sidenote. They're inspired by ◊link[tufte]{Tufte CSS}, feel free to check out the ◊link[source-code]{source of this site} as well if you're curious.
 }
 ◊ndef["mn"]{
-    This is a marginnote.
+    And this is a marginnote.
 }
 
 While I do my very best apart from close friends I don't have an editor, so there may be errors in the book. Therefore I would be most grateful for any feedback, ideas or error corrections you the reader may find. You can ◊link[mailto]{email me} or create a pull request or an issue ◊link[source-code]{on Github}.
 
 ◊(define the-first-chapter "what_is_a_cryptocurrency.html")
+◊(define tufte "https://edwardtufte.github.io/tufte-css/")
 

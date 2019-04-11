@@ -273,10 +273,6 @@ pre {
 .sidenote-number {
     counter-increment: sidenote-counter;
 }
-.sidenote-number:after, .sidenote:before {
-    font-family: $sans-serif-font-family;
-    font-feature-settings: "onum" off, "kern" on, "sups" on;
-}
 .sidenote-number:after {
     content: counter(sidenote-counter);
 }
@@ -285,6 +281,11 @@ pre {
     float: left;
     padding-right: 0.2em;
     display: inline;
+}
+.margin-symbol, .sidenote-number:after, .sidenote:before {
+    font-family: $sans-serif-font-family;
+    vertical-align: super;
+    font-size: 0.7em;
 }
 
 input.margin-toggle {
@@ -302,7 +303,10 @@ $sidenote-float-width: 1280px;
     label.margin-toggle:not(.sidenote-number) {
         display: inline;
     }
-    label {
+    .margin-symbol, .sidenote-number:after, .sidenote:before {
+        color: #6087dd;
+    }
+    label.margin-toggle {
         cursor: pointer;
     }
     label:hover {
@@ -356,7 +360,7 @@ $sidenote-float-width: 1280px;
     font-weight: bold;
     color: $body-font-color;
     cursor: pointer;
-    //text-decoration: underline;
+    text-decoration: underline;
 }
 .donation-label:hover {
     color: $body-link-hover-color;
@@ -369,6 +373,8 @@ $sidenote-float-width: 1280px;
 }
 .donation-toggle:checked + .donation-content {
     display: block;
+    text-align: center;
+    padding-top: 0.2rem;
 }
 .donation-content .qr {
     margin-right: 0.5em;
@@ -376,6 +382,7 @@ $sidenote-float-width: 1280px;
 .donation-content .address {
     font-family: $hack;
     font-size: 0.8rem;
+    word-wrap: break-word;
 }
 
 

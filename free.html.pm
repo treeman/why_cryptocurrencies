@@ -7,7 +7,7 @@
 
 This book is completely free for you to read online and will be so forever. There will be no ads, no tracking and no crypto mining in the browser.◊sn{browser-mining}
 
-For all you noscript users the site will work perfectly well without javascript---in fact I aim to avoid it altogether. Note that I use custom fonts which noscript blocks by default.
+For all you noscript users the site will work perfectly well without javascript---in fact I aim to avoid it altogether. I do use web fonts hosted on this site which noscript blocks by default.
 
 When I some day finish the book and decide to release it in other formats I may charge for them, but the web version will always be free.
 
@@ -17,13 +17,19 @@ If you find the book interesting and want to show appreciation the best way is t
 
 You can also send donations, big or small, from anywhere in the world nearly instantly with small fees and no possibility of censorship. This is not possible with anything else.
 
-◊div[#:class "donations"]{
-    ◊crypto["#" "xxx"]{Bitcoin (BTC)}
-    ◊crypto["#" "xxx"]{Bitcoin Cash (BCH)}
-    ◊crypto["#" "xxx"]{Dogecoin (DGC)}
-    ◊crypto["#" "xxx"]{Ethereum (ETH)}
-    ◊crypto["#" "xxx"]{Litecoin (LTC)}
-    ◊crypto["#" "xxx"]{Monero (XMR)}
+◊section[#:class "donations"]{
+    ◊crypto["/images/donations/btc.svg"
+            "1KDBPbyVhiqotSgnUJzFbdfjn3hUsSgq6W"]{
+        Bitcoin (BTC)
+    }
+    ◊crypto["/images/donations/bch.svg"
+            "bitcoincash:qqpunsxkhpkuqw4wgpy3tfkqd3ur2ens0gtzf3lzdy"]{
+        Bitcoin Cash (BCH)
+    }
+    ◊crypto["/images/donations/xmr.svg"
+            "45T1KEsECksHE2ngx7m8FRFb8rEBcDz2w37vP7Jt7sNXZfQBZWmKn2pRKBuiefGGYvjQ7amk4gvFCamzisvdh9qhUZpjbeg"]{
+        Monero (XMR)
+    }
 }
 
 If you're missing a coin you ◊em{really} want to use please ◊link[mailto]{contact me}. If it's not too much hassle I will consider it but please no ◊link[snake-oil]{snake oil}.
@@ -41,6 +47,6 @@ If you're missing a coin you ◊em{really} want to use please ◊link[mailto]{co
       (label ((class "donation-label") (for ,id)) ,name)
       (input ((id ,id) (class "donation-toggle") (type "checkbox")))
       (span ((class "donation-content"))
-            (img ((class "qr") (src ,qr)))
-            (div ((class "address")) ,address))))
+            (div ((class "address")) ,address)
+            (img ((class "qr") (src ,qr))))))
 

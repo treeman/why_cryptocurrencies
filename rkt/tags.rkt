@@ -171,11 +171,10 @@
   ref)
 
 (define (mn ref-in)
-  (note-ref #:label-class "margin-toggle"
+  (note-ref #:label-class "margin-toggle margin-symbol"
             #:label-content "†"
             #:span-class "marginnote"
             #:ref ref-in))
-
 (define (sn ref-in)
   (note-ref #:label-class "margin-toggle sidenote-number"
             #:label-content ""

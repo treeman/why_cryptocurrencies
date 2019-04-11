@@ -28,19 +28,19 @@ What hope does average Joe have when even the famous security technologist Bruce
 It's almost a universal phenomena. I've heard these arguments from students, co-workers, friends, family and in highly technical online communities:
 
 ◊ol{
-  ◊li{It's a scam}
-  ◊li{It's just a speculative bubble and cryptocurrencies are really worthless
+  ◊li{It's a scam.}
+  ◊li{It's just a speculative bubble and cryptocurrencies are really worthless.
 
     Here many draw parallels to Beanie Babies◊sn{beanies} or the Tulip mania◊sn{tulips}. And to be fair cryptocurrencies have displayed bubble behavior---several times.
   }
-  ◊li{They don't do anything better than other payment systems like PayPal or VISA}
-  ◊li{There's no legal use case}
-  ◊li{They don't do anything valuable}
+  ◊li{They don't do anything better than other payment systems like PayPal or VISA.}
+  ◊li{There's no legal use case.}
+  ◊li{They don't do anything valuable.}
 }
 
 It seems everyone has an opinion but few are capable of explaining what they are or what they do differently.  Of course most aren't dismissive but simply don't understand what it's all about. Many are curious and want to learn more.
 
-With this book I hope to show how cryptocurrencies can be useful, what use cases exist and how they can help people. I'll briefly go over how they work in a more conceptual level and I might throw in some historical notes here and there. I'm not trying to make anyone a cryptocurrency fan, I just hope to give bring some nuance and to help answer some common questions.
+With this book I hope to show how cryptocurrencies can be useful, what use cases exist and how they can help people. I'll briefly go over how they work in a more conceptual level and I might throw in some historical notes here and there. I'm not trying to make anyone a cryptocurrency fan, I just hope to bring some nuance and to help answer some common questions.
 
 And I must admit I'm also being selfish---writing a book is on my bucket list.
 
@@ -50,11 +50,11 @@ And I must admit I'm also being selfish---writing a book is on my bucket list.
 This book tries to describe what value cryptocurrencies have using several examples. In particular I will argue that:
 
 ◊ol{
-  ◊li{Cryptocurrencies aren't just scams◊sn{scams}}
-  ◊li{It's more than just a speculative asset}
-  ◊li{They do many things better than any alternative}
-  ◊li{There are legal use cases}
-  ◊li{They have valuable use cases}
+  ◊li{Cryptocurrencies aren't just scams.◊sn{scams}}
+  ◊li{It's more than just a speculative asset.}
+  ◊li{They do many things better than any alternative.}
+  ◊li{There are legal use cases.}
+  ◊li{They have valuable use cases.}
 }
 
 Of course everything new brings positive and negative aspects with it. It's up to you to decide where on the global spectrum of good and bad cryptocurrencies lie.
@@ -83,7 +83,7 @@ A problem centric view is excellent for an engineer or a problem solver but it a
 
 Instead of putting on blinders and getting stuck at these problems, which I believe can be addressed, we'll focus on the potential cryptocurrencies have. Only with this vantage point can we see if the problems are worth working on, or if we instead should scrap the whole idea.
 
-This is not a deep dive on a technical level. Neither will we focus on a single implementation---Bitcoin is the first cryptocurrency but there are hundreds more◊sn{cryptos}.
+This is not a deep dive on a technical level. Neither will we focus on a single implementation---Bitcoin is the first cryptocurrency but there are hundreds more.◊sn{cryptos}
 
 ◊center{
   ◊strong[#:style "font-size: 1.1rem"]{And of course none of this is investment advice.}
@@ -98,7 +98,7 @@ This is not a deep dive on a technical level. Neither will we focus on a single 
 
 
 ◊ndef["beanies"]{
-    Beanie Babies is a type of toys which people used to speculate with. It become a mania where people would sell---and buy---these toys at 10x or 100x their original price. The mania managed to make the creator, Ty Warner, one of the richest men in the world before it crashed (he's still insanely rich though).
+    Beanie Babies is a type of toys which people used to speculate with. ◊link[beanie]{It become a mania} where people would sell---and buy---these toys at 10x, 100x or even 1000x their original price. The mania managed to make the creator, Ty Warner, one of the richest men in the world before it crashed (he's still insanely rich though).
 
     If you're looking for the digital version of Beanie Babies then look no further than ◊link[cryptokitties]{CryptoKitties}, a blockchain game running on Ethereum. There someone spent $114,000 on a virtual kitten.
 }
@@ -133,3 +133,4 @@ This is not a deep dive on a technical level. Neither will we focus on a single 
 ◊(define independent-illegal "https://www.independent.co.uk/life-style/gadgets-and-tech/news/bitcoin-price-fall-criminals-blockchain-anonymous-cryptocurrency-zcash-monero-dash-a8174716.html")
 ◊(define cryptokitties "https://www.cnbc.com/2017/12/06/meet-cryptokitties-the-new-digital-beanie-babies-selling-for-100k.html")
 ◊(define tulip-mania "https://www.britannica.com/event/Tulip-Mania")
+◊(define beanie "https://nypost.com/2015/02/22/how-the-beanie-baby-craze-was-concocted-then-crashed/")
