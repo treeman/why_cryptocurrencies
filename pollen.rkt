@@ -5,11 +5,13 @@
 (require "rkt/tags.rkt")
 (require "rkt/links.rkt")
 (require "rkt/layout.rkt")
+(require "rkt/feed.rkt")
 
 (provide (all-from-out racket/list)) ; make add-between available for templates
 (provide (all-from-out "rkt/tags.rkt"))
 (provide (all-from-out "rkt/links.rkt"))
 (provide (all-from-out "rkt/layout.rkt"))
+(provide (all-from-out "rkt/feed.rkt"))
 (provide (all-defined-out))
 
 (module setup racket/base
@@ -22,7 +24,6 @@
   (define template-prefix "chapter")
   ;; splice-me needs to NOT be a block tag to allow us to inject
   (define block-tags (cons 'img default-block-tags))
-  (define linebreak-separator "  \n")
 
   ;; Ignore stuff during 'raco pollen publish'
   (define publish-directory "/tmp/why_cryptocurrencies/")
@@ -37,6 +38,8 @@
                       "clean"
                       "sass-update"
                       "sync"
+                      "_site"
+                      "generate"
                       "README.md"))))
   (define omitted-path? (λ (path)
                            (set-member? omitted-paths path)))

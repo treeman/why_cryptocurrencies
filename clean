@@ -1,5 +1,6 @@
 #!/bin/bash
 
 rm *.html
-rm **/*.html
 rm **/*.css
+rm *.xml
+

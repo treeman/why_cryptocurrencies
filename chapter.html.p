@@ -37,6 +37,7 @@
         <title>◊|head-title|</title>
         <link rel="stylesheet" type="text/css" href="/css/main.css" />
         <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
+        <link rel="alternate" type="application/atom+xml" title="Atom 0.3" href="/feed.xml" />
     </head>
     <body>
       <article class="◊|article-class|">

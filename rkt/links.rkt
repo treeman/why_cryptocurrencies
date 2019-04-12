@@ -4,7 +4,7 @@
 
 (define root-url "https://whycryptocurrencies.com")
 
-(define rss-feed
+(define feed-url
   `("/feed.xml"
     "Feed to the site"))
 
