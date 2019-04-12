@@ -52,7 +52,7 @@
       about_me.html))
     ("What is a cryptocurrency?"
      ("Properties of a cryptocurrency"
-      "How do cryptocurrencies work?"
+      how_do_cryptocurrencies_work.html
       "Look out for snake oil"
       "What is money?"
       "Are cryptocurrencies money?"))
