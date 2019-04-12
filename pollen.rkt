@@ -21,7 +21,7 @@
 
   (define template-prefix "chapter")
   ;; splice-me needs to NOT be a block tag to allow us to inject
-  (define block-tags (cons 'img default-block-tags))
+  (define block-tags (append '(img table tbody tr) default-block-tags))
 
   ;; Ignore stuff during 'raco pollen publish'
   (define publish-directory "/tmp/why_cryptocurrencies/")

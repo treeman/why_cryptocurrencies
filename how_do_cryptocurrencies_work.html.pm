@@ -323,11 +323,11 @@ First some quick napkin math to estimate the cost to require 51% of mining power
 
 ◊; Couldn't really be bothered to update the existing string to table to support x-expressions...
 ◊table[#:class "centered"]{ ◊tbody{
-    ◊tr{ ◊td{◊link[btc-hashrate]{Total Bitcoin hash rate}}   ◊td{44,078,986 TH/s} }
-    ◊tr{ ◊td{◊link[s9-hashrate]{Antminer S9i hash rate}}     ◊td{14 TH/s (+-5%)} }
-    ◊tr{ ◊td{◊link[s9-cost]{Antminer S9i cost}}              ◊td{$400} }
-    ◊tr{ ◊td{Number of S9i to cover the whole network}       ◊td{3,148,499} }
-    ◊tr{ ◊td{Total network miner cost}                       ◊td{$1,259,399,600} }
+    ◊tr{◊td{◊link[btc-hashrate]{Total Bitcoin hash rate}}   ◊td{44,078,986 TH/s}}
+    ◊tr{◊td{◊link[s9-hashrate]{Antminer S9i hash rate}}     ◊td{14 TH/s (+-5%)}}
+    ◊tr{◊td{◊link[s9-cost]{Antminer S9i cost}}              ◊td{$400}}
+    ◊tr{◊td{Number of S9i to cover the whole network}       ◊td{3,148,499}}
+    ◊tr{◊td{Total network miner cost}                       ◊td{$1,259,399,600}}
 }}
 
 So about $650 million for just the miners themselves (assuming you could purchase that many). On top of that we need power supply, cooling, storage and maintenance for more than a million miners. Suffice to say it's a very large investment to come close to 51%, but not totally impossible.
