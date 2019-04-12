@@ -213,9 +213,9 @@ The chain will split and there will be a ◊em{fork}.◊sn{code-fork} Each miner
     Here there are two chains after a fork, one of height two and one of height four.
 }
 
-◊todo{Mention that miners are incentivized to work on the longer chain, otherwise they risk losing their rewards}
-
 The longer chain is to be considered "the correct" chain and the shorter chain will be abandoned.◊sn{orphan} Coming to consensus by following the longest chain is often referred to as ◊em{Nakamoto consensus}.
+
+Because miners will lose all rewards on the abandoned chain they are heavily incentivized to work on the longest chain. Therefore the shorter chain will get abandoned quickly.
 
 ◊ndef["orphan"]{
     When a shorter chain gets abandoned we say it gets ◊em{orphaned}. It is a natural consequence of the system but high orphan rates are problematic because they hurt smaller miners more than larger miners.
@@ -309,13 +309,20 @@ In fact we could spend 100x more energy on securing the chain and process the sa
 
 ◊subhead{An economic innovation}
 
-While cryptocurrencies combine several different technologies in an interesting way the true innovation is how they're secured by economic incentives.
+◊todo{Rewrite this section}
 
-◊todo{Rewrite a bit here, refer to game theory and fork scenario before going into security}
+While cryptocurrencies combine several different technologies in an interesting way the true innovation is how they're secured by economic incentives---the most profitable way for miners is to follow the network rules.
+
+For example in a fork with two competing chains the most profitable move is to jump to the longest chain as quickly as possible.
 
 A minority miner with less than 50% will probably lose the blockreward in the long run if she tries to cheat and is exponentially more likely to lose the longer the attacking chain needs to be.
 
 As noted earlier the current block reward is 12.5 BTC or about $50,000. Losing out on just one blockreward is a big loss in the cutthroat mining business. Therefore miners are heavily incentivized to be honest and play by the rules---it's the economically rational thing to do.
+
+
+◊subhead{Economics of a 51% attack}
+
+◊todo{Rewrite this section}
 
 The situation is a little different in a 51% attack. There the attacker will always win the longest chain race and on the surface attacking the chain is a rational action.
 
@@ -348,7 +355,7 @@ These huge risks needs to weighed against what profits a 51% attack could genera
     The case is a little different for cryptocurrencies that share POW algorithm with others. There miners could attack the minority chain and jump back to the majority chain after executing the attack.
 }
 
-The economic incentives are so strong that it might be rational even for a 51% miner to be honest. In fact Bitcoin has ◊link[ghash]{had pools with 51% before} but nothing has happened.
+The economic incentives are so strong that it might actually be rational even for a 51% miner to be honest. In fact Bitcoin has ◊link[ghash]{had pools with 51% before} without incidents.
 
 ◊(define ghash "https://www.coindesk.com/bitcoin-mining-detente-ghash-io-51-issue")
 
