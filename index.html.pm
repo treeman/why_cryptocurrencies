@@ -50,8 +50,8 @@
      (how_to_use.html
       free.html
       about_me.html))
-    ("What is a cryptocurrency?"
-     ("Properties of a cryptocurrency"
+    (what_is_a_cryptocurrency.html
+     (properties_of_a_cryptocurrency.html
       "How do cryptocurrencies work?"
       "Look out for snake oil"
       "What is money?"

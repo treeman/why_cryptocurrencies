@@ -5,6 +5,9 @@
     free.html
     about_me.html
 }
+◊what_is_a_cryptocurrency.html{
+    properties_of_a_cryptocurrency.html
+}
 ◊appendix.html{
     bitcoin_whitepaper.html
 }
