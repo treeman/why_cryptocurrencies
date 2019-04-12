@@ -53,7 +53,7 @@
     ("What is a cryptocurrency?"
      ("Properties of a cryptocurrency"
       "How do cryptocurrencies work?"
-      "Look out for snake oil"
+      look_out_for_snake_oil.html
       "What is money?"
       "Are cryptocurrencies money?"))
     ("Better digital payments"
