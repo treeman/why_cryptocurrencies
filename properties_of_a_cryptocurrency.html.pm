@@ -11,7 +11,7 @@
   }
 }
 
-These are the most important inherent properties of cryptocurrencies as I see it. They highlight the difference between cryptocurrencies other payment systems and they're what makes them useful.
+These are the most important inherent properties of cryptocurrencies as I see it. They highlight the difference between cryptocurrencies and other payment systems. Ultimately they're what makes cryptocurrencies useful.
 
 
 ◊subhead{No trusted third party}
@@ -81,15 +81,15 @@ As there is no trusted third party there isn't a single entity who controls the 
     The new coins are rewards for miners who secure the network, but more on that in the ◊link[next-chapter]{next chapter}.
 }
 
-Most cryptocurrencies are deflationary with an absolute limit on the supply, but it's not a requirement.
+
 
 ◊img[#:src "/images/emission-rates.svg"]{
     Bitcoin has a hard limit of 21 million bitcoins while in Monero new coins will always be created.◊sn{bitcoin-supply}
 }
 
-If deflation in a currency is good or bad depends on who you ask. Keynesian economists ◊link[inflation-good]{argues inflation is good} while the Austrian school ◊link[inflation-bad]{argues inflation is bad}.
+If deflation in a currency is good or bad depends on who you ask. Keynesian economists ◊link[inflation-good]{argues inflation is good} while the Austrian school ◊link[inflation-bad]{argues inflation is bad}.◊sn{austrian-podcast}
 
-I sure don't know who's right. It's probably best to be skeptical of both camps---economics is highly complex and theories are difficult, or impossible, to verify. To quote a nobel price winner in economics:
+I sure don't know who's right. It's probably best to be skeptical of both camps---economics operate in an extremely complex and irregular environment. Economic theories are difficult, or impossible, to verify.
 
 ◊(define inflation-good "http://inflationmatters.com/keynesian-inflation-theory/")
 ◊(define inflation-bad "https://austrianeconomics.fandom.com/wiki/Inflation")
@@ -98,7 +98,7 @@ I sure don't know who's right. It's probably best to be skeptical of both camps-
     acquisition of skills requires a regular environment, an adequate opportunity to practice, and rapid and unequivocal feedback about the correctness of thoughts and actions. ◊mn{tfas}
 }
 
-Either way it's not an argument against cryptocurrencies in general as they can be either inflationary or deflationary, although most are deflationary.
+Either way it's not an argument against cryptocurrencies in general as they can be made either inflationary or deflationary.
 
 ◊ndef["tfas"]{
     The book "Thinking, Fast and Slow" is fantastically thought provoking.
@@ -107,6 +107,12 @@ Either way it's not an argument against cryptocurrencies in general as they can 
 ◊ndef["bitcoin-supply"]{
      The emission rate in Bitcoin approximates the rate gold is mined. In Monero the tail emission is there to replace lost coins and to make sure rewards for miners don't run out.
 }
+
+◊ndef["austrian-podcast"]{
+    If you're curious about Austrian Economics, which most cryptocurrencies follow, I can recommend ◊link[aus-link]{this podcast episode}. It's not something you hear about often but it presents an interesting viewpoint and shouldn't be dismissed.
+}
+
+◊(define aus-link "https://podcast.bitcoin.com/e799-Austrian-Economics-for-Bitcoiners-with-Jeffrey-Tucker-part-1")
 
 
 ◊subhead{Large and small amounts behave the same}
