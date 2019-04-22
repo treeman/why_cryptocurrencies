@@ -5,11 +5,13 @@
 (require "rkt/tags.rkt")
 (require "rkt/links.rkt")
 (require "rkt/layout.rkt")
+(require "rkt/index.rkt")
 
 (provide (all-from-out racket/list)) ; make add-between available for templates
 (provide (all-from-out "rkt/tags.rkt"))
 (provide (all-from-out "rkt/links.rkt"))
 (provide (all-from-out "rkt/layout.rkt"))
+(provide (all-from-out "rkt/index.rkt"))
 (provide (all-defined-out))
 
 (module setup racket/base

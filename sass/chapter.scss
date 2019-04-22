@@ -119,18 +119,16 @@
         display: none;
     }
 
-    //ol {
-        //margin-top: 0.5rem;
-    //}
-    //ol > li {
-        //font-size: 100%;
-    //}
     a {
         background: none;
         text-shadow: none;
     }
     a:hover {
         text-decoration: underline;
+    }
+
+    .planned {
+        color: $planned-chapter-link;
     }
 }
 

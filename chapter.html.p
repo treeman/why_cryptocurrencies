@@ -9,7 +9,6 @@
      (if extra
          (string-append "chapter " extra)
          "chapter")))
-
 ◊(define prev-page
    (let ((p (previous here)))
      (if (equal? p 'index.html)
@@ -17,16 +16,6 @@
          p)))
 ◊(define next-page (next here))
 ◊(define parent-page (parent here))
-◊(define here-children (children here))
-◊(define (make-subnav children)
-  (->html
-    (nav #:class "subnav"
-      (if no-section-chapters-headers
-        ""
-        `(span ((class "chapters")) "Chapters in this section"))
-      (apply ul
-        (for/list ([child (in-list children)])
-          (li (link (symbol->string child) (select-from-metas 'title child))))))))
 ◊(define (ref page txt)
   (->html
     (link (symbol->string page) txt)))
@@ -55,9 +44,7 @@
 
         ◊(->html doc #:splice? #t)
 
-        ◊when/splice[here-children]{
-            ◊(make-subnav here-children)
-        }
+        ◊(unless no-section-chapters-headers (->html (make-section-nav here)))
       </article>
 
       ◊(unless no-side-space (->html `(div ((class "side-space")))))
