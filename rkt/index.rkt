@@ -5,49 +5,74 @@
 (require "tags.rkt")
 (require "links.rkt")
 
-(provide toc make-section-nav make-toc)
+(provide toc toc-pagetree make-toc make-section-nav)
 
 (define toc
-  ;; Unfortunately duplication with index.ptree but merging in a general sense
-  ;; was complex and couldn't eliminate all duplication anyway.
+  ;; This replaces the previously hand-made pagetree in index.ptree.
+  ;; String entries gets removed and are treated as planned chapters.
   `("Why cryptocurrencies in five minutes"
     (about_the_book.html
-     (how_to_use.html
-      free.html
-      about_me.html))
+     how_to_use.html
+     free.html
+     about_me.html)
     (what_is_a_cryptocurrency.html
-     (properties_of_a_cryptocurrency.html
-      "How do cryptocurrencies work?"
-      "Look out for snake oil"
-      "What is money?"
-      "Are cryptocurrencies money?"))
+     properties_of_a_cryptocurrency.html
+     "How do cryptocurrencies work?"
+     "Look out for snake oil"
+     "What is money?"
+     "Are cryptocurrencies money?")
     ("Better digital payments"
-     ("Safer & cheaper for merchants"
-      "Uncensorable donations"
-      "“Undesirable” businesses"
-      "Avoid freezing of merchant accounts"
-      "Banking the unbanked"))
+     "Safer & cheaper for merchants"
+     "Uncensorable donations"
+     "“Undesirable” businesses"
+     "Avoid freezing of merchant accounts"
+     "Banking the unbanked")
     ("A better currency"
-     ("The financial crisis, bad loans and bail-outs"
-      "A borderless currency"
-      "Protection against hyperinflation"
-      "India voids 500 and 1000 rupee bills"
-      "Protection against government seizures"))
+     "The financial crisis, bad loans and bail-outs"
+     "A borderless currency"
+     "Protection against hyperinflation"
+     "India voids 500 and 1000 rupee bills"
+     "Protection against government seizures")
     ("Brave new world"
-     ("Separation of money and state"
-      "A swiss bank account in your pocket"
-      "Black markets"
-      "The cashless dystopia"
-      "New asset class?"))
+     "Separation of money and state"
+     "A swiss bank account in your pocket"
+     "Black markets"
+     "The cashless dystopia"
+     "New asset class?")
     ("Extensions"
-     ("Provably fair gambling"
-      "Verifiable voting"
-      "Uncensorable Twitter"
-      "Timestamping service"
-      "Tokens"))
+     "Provably fair gambling"
+     "Verifiable voting"
+     "Uncensorable Twitter"
+     "Timestamping service"
+     "Tokens")
     (appendix.html
-     (bitcoin_whitepaper.html
-      "Further research"))))
+     bitcoin_whitepaper.html
+     "Further research")))
+
+;; Take a tree containing unfinished entries as strings
+;; and construct a pagetree out of it.
+(define (tree-to-pagetree pt)
+  (define (transform-elem x)
+    (if (symbol? x)
+      x
+      #f))
+  (define (transform-pair x)
+    (let ((head (transform-elem (car x))))
+      (if head
+        (cons head (transform-list (cdr x)))
+        #f)))
+  (define (transform x)
+    (if (pair? x)
+      (transform-pair x)
+      (transform-elem x)))
+  (define (transform-list xs)
+    (filter (λ (x) x)
+      (map transform xs)))
+
+  `(pagetree-root
+    ,@(transform-list pt)))
+
+(define toc-pagetree (tree-to-pagetree toc))
 
 (define (node page)
   (if (pair? page)
@@ -56,7 +81,7 @@
 
 (define (children page)
   (if (pair? page)
-      (cadr page)
+      (cdr page)
       #f))
 
 (define (title node)
