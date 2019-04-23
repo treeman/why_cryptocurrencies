@@ -129,6 +129,17 @@
      (img ((src ,(~a src))))
      ,figcaption))
 
+(define (raw-img #:src src #:title [title #f] #:alt [alt #f] #:class [c #f])
+  (define attrs `(src ,(~a src)))
+  (when c
+    (set! attrs (cons `(class ,c) attrs)))
+  (when title
+    (set! attrs (cons `(title ,title) attrs)))
+  (when alt
+    (set! attrs (cons `(alt alt) attrs)))
+
+   `(img ((src ,(~a src)))))
+
 
 ;;; Margin-notes and side-notes
 (define note-defs (make-hash))

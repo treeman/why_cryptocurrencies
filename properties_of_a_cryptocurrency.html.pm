@@ -20,6 +20,8 @@ The important difference between a cryptocurrency and digital payments we have t
 
 ◊ndef["p2p"]{
     Technically you don't interact with each other directly but with a distributed ledger. You trust the system as a whole, not one particular entity.
+
+    ◊raw-img[#:src "images/sending_network.png"]{}
 }
 
 Sending money to people via your bank is not peer-to-peer as you rely on your bank to send it for you. VISA, PayPal, Swish, Apple Pay and other digital payments have the same problem, all except cryptocurrencies.
