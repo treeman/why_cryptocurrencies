@@ -11,7 +11,20 @@
   }
 }
 
-These are the most important inherent properties of cryptocurrencies as I see it. They highlight the difference between cryptocurrencies and other payment systems. Ultimately they're what makes cryptocurrencies useful.
+These are the most important inherent properties of cryptocurrencies as I see it:
+
+◊ul{
+    ◊li{No trusted third party}
+    ◊li{Avoid fake coins}
+    ◊li{Irreversible}
+    ◊li{Predetermined emission rate}
+    ◊li{Anonymous}
+    ◊li{Large and small amounts behave the same}
+    ◊li{Borderless}
+}
+
+They highlight the difference between cryptocurrencies and other payment systems and ultimately they're what makes cryptocurrencies useful.
+
 
 
 ◊subhead{No trusted third party}
@@ -121,6 +134,23 @@ Either way it's not an argument against cryptocurrencies in general as they can 
 ◊(define aus-link "https://podcast.bitcoin.com/e799-Austrian-Economics-for-Bitcoiners-with-Jeffrey-Tucker-part-1")
 
 
+◊subhead{Anonymous}
+
+Bitcoin uses a public ledger where all transactions are public, so it isn't anonymous. It's pseudonymous---while you can see transactions and addresses you don't know who owns an address. But you know someones address and can then trace all past and future transactions moving through that address. You can use a ◊link[blockchair]{blockchain explorer} to see for yourself.
+
+There are cryptocurrencies that tries to hide all transactions.◊sn{monero} On them you cannot trace transactions on the blockchain and it makes blacklisting addresses impossible.
+
+Since these projects exists I will call cryptocurrencies anonymous, just keep in mind not all are.
+
+◊ndef["monero"]{
+    Monero is perhaps the most well known cryptocurrency that hides transactions by default.
+
+    There are others where you can opt-in to hide some transactions but otherwise they can be traced. This also exists as a service on top of Bitcoin, see for example ◊link[coinjoin]{CoinJoin}.
+}
+
+
+
+
 ◊subhead{Large and small amounts behave the same}
 
 In contrast to cash or gold where large amounts can be very cumbersome to handle there is no difference between large or small transfers in a cryptocurrency. Transaction costs are the same for small transfers as for large transfers and they are just as secure. Wallets can store as much as you're comfortable with.
@@ -140,21 +170,6 @@ Technically you could do transfers completely offline---on paper---but they woul
 
 ◊ndef["cold-storage"]{
     Offline wallets with no computer contact is called cold storage. It's an excellent way to store large amounts you're not planning to use for some time.
-}
-
-
-◊subhead{Anonymous}
-
-Bitcoin uses a public ledger where all transactions are public, so it isn't anonymous. It's pseudonymous---while you can see transactions and addresses you don't know who owns an address. But you know someones address and can then trace all past and future transactions moving through that address. You can use a ◊link[blockchair]{blockchain explorer} to see for yourself.
-
-There are cryptocurrencies that tries to hide all transactions.◊sn{monero} On them you cannot trace transactions on the blockchain and it makes blacklisting addresses impossible.
-
-Since these projects exists I will call cryptocurrencies anonymous, just keep in mind not all are.
-
-◊ndef["monero"]{
-    Monero is perhaps the most well known cryptocurrency that hides transactions by default.
-
-    There are others where you can opt-in to hide some transactions but otherwise they can be traced. This also exists as a service on top of Bitcoin, see for example ◊link[coinjoin]{CoinJoin}.
 }
 
 
