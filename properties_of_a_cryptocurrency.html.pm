@@ -57,6 +57,10 @@ With cryptocurrencies anyone can independently verify the integrity of the coins
 
 You cannot counter-fit coins and you cannot send the same coin to multiple people ◊em{(double-spend)}. This is what allows cryptocurrencies to operate without a trusted third party.
 
+◊img[#:src "/images/double-spend.png"]{
+    Double spending by sending the same coin both to a merchant and to himself.
+}
+
 
 ◊subhead{Irreversible}
 
@@ -139,13 +143,20 @@ Technically you could do transfers completely offline---on paper---but they woul
 
 ◊subhead{Anonymous}
 
-Bitcoin uses a public ledger where all transactions are public, so it isn't anonymous. It's pseudonymous---while you can see transactions and addresses you don't know who owns an address. But when you pay someone they learn your address and can then trace your past and future payments from that address. You can use a ◊link[blockchair]{blockchain explorer} to see for yourself.
+Bitcoin uses a public ledger where all transactions are public, so it isn't anonymous. It's pseudonymous---while you can see transactions and addresses you don't know who owns an address. But you know someones address and can then trace all past and future transactions moving through that address. You can use a ◊link[blockchair]{blockchain explorer} to see for yourself.
 
-Most cryptocurrencies work the same way as Bitcoin does. There are some where you can choose to hide some transactions---but not all. ZCash is probably the most well known example.
+There are cryptocurrencies that tries to hide all transactions.◊sn{monero} On them you cannot trace transactions on the blockchain and it makes blacklisting addresses impossible.
 
-Other projects like Monero tries to hide all transactions. Here you cannot trace transactions on the blockchain and it makes blacklisting addresses impossible. Therefore I will call cryptocurrencies anonymous, just keep in mind not all are.
+Since these projects exists I will call cryptocurrencies anonymous, just keep in mind not all are.
+
+◊ndef["monero"]{
+    Monero is perhaps the most well known cryptocurrency that hides transactions by default.
+
+    There are others where you can opt-in to hide some transactions but otherwise they can be traced. This also exists as a service on top of Bitcoin, see for example ◊link[coinjoin]{CoinJoin}.
+}
 
 
+◊(define coinjoin "https://en.bitcoin.it/wiki/CoinJoin")
 ◊(define next-chapter "/how_do_cryptocurrencies_work.html")
 
 ◊ndef["keys"]{
