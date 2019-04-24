@@ -127,11 +127,15 @@
 
 ;; Make a section navigation page, used on section pages to
 ;; list the chapters in that section.
-(define (make-section-nav page)
+(define (make-section-nav #:section-header? section-header? page)
   (define chapters (children (toc-entry page)))
+  (define header
+    (if section-header?
+        `(span ((class "chapters")) "Chapters in this section")
+        ""))
   (if chapters
     `(nav ((class "subnav"))
-        (span ((class "chapters")) "Chapters in this section")
+        ,header
         ,(make-subnav chapters))
     ""))
 

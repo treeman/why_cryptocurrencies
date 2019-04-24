@@ -2,8 +2,8 @@
 ◊(define title (select-from-metas 'title here))
 ◊(define head-title (string-append main-title ": " title))
 ◊(define subtitle (select-from-metas 'subtitle here))
-◊(define no-side-space (select-from-metas 'no-side-space here))
-◊(define no-section-chapters-headers (select-from-metas 'no-section-chapters-header here))
+◊(define side-space? (not (select-from-metas 'no-side-space here)))
+◊(define section-chapters-headers? (not (select-from-metas 'no-section-chapters-header here)))
 ◊(define article-class
    (let ((extra (select-from-metas 'extra-article-class here)))
      (if extra
@@ -44,10 +44,11 @@
 
         ◊(->html doc #:splice? #t)
 
-        ◊(unless no-section-chapters-headers (->html (make-section-nav here)))
+        ◊(->html (make-section-nav #:section-header? section-chapters-headers?
+                                    here))
       </article>
 
-      ◊(unless no-side-space (->html `(div ((class "side-space")))))
+      ◊(when side-space? (->html `(div ((class "side-space")))))
 
       <nav class="edge-wrapper">
         ◊when/splice[prev-page]{
