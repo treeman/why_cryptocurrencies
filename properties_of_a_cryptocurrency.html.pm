@@ -66,7 +66,7 @@ You also don't have to trust a third party to hold your money like you do when y
 
 ◊subhead{Avoid fake coins}
 
-Problems with counter-fit coins and bills go far back. From biting coins to test their hardness to today's advanced techniques, counterfeit prevention has always been an important feature for cash.
+Problems with counterfeit coins and bills go far back. From biting coins to test their hardness to today's advanced techniques, counterfeit prevention has always been an important feature for cash.
 
 With cryptocurrencies anyone can independently verify the integrity of the coins you send and receive. Details on how is in the ◊link[next-chapter]{next chapter} but I assure you no biting is needed.
 
