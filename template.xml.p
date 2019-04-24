@@ -10,12 +10,6 @@
     (select-from-metas 'uuid post)))
 ◊(define (updated post)
   (select-from-metas 'updated post))
-◊(define (content post)
-  ; Wrap html in CDATA tag as it might ge interpreted as XML tags.
-  (string-append
-    "<![CDATA["
-    (->html (get-doc post) #:splice? #t)
-    "]]>"))
 ◊(define (validate post)
   (check-meta 'title post)
   (check-meta 'uuid post)
@@ -43,7 +37,7 @@
         (updated ,(updated post))
         (id ,(uuid post))
         (link ((href ,(abs-url post))))
-        (content [[type "html"]] ,(content post))))
+        (content [[type "html"]] ,(feed-content post))))
     "\n\t"))
 ◊(define (filter-entry-content cs)
   ; We don't require subtitles be in all posts, this is a general implementation.
