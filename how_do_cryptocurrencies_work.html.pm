@@ -307,6 +307,11 @@ In fact we could spend 100x more energy on securing the chain and process the sa
 ◊(define z-forfeits "https://gist.github.com/awemany/619a5722d129dec25abf5de211d971bd")
 
 
+◊subhead{Transaction history}
+
+◊todo{Write about this}
+
+
 ◊subhead{An economic innovation}
 
 ◊todo{Rewrite this section}
