@@ -55,7 +55,7 @@ Transfers are therefore ◊em{trustless}◊sn{pundits} and ◊em{permissionless}
     Some will be quick to point out that transfers aren't trustless. You need to trust your wallet, the OS, the hardware etc. Which is true. The context here is not having to trust a third party to handle transfers for you, not eliminating trust of all kinds---which is impossible.
 }
 
-Trustless means you don't have to rely on a third party to make or confirm the transfer for you and permissionless means you don't have to worry about your transactions being blocked. Nobody can freeze your account or prevent you from opening one.
+Trustless means you don't have to rely on a third party to make or confirm the transfer for you and permissionless means you don't have to worry about your transactions being blocked. Nobody can freeze your account or prevent you from opening one. Cryptocurrencies are ◊em{uncensorable}.
 
 You also don't have to trust a third party to hold your money like you do when you have money in a bank.◊sn{in-banks} What you really have is an IOU from the bank where they promise to give you your money when you ask for it. With cryptocurrencies you can write down the keys to your wallet and you alone have access to it.◊sn{keys}
 
