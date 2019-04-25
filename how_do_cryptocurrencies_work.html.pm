@@ -190,9 +190,22 @@ The transactions must follow common rules, called consensus rules, otherwise oth
 
 In return for adding the block you get to collect the rewards. One for finding a block◊sn{blockreward} and you can also collect transaction fees for the transactions you include in the block.
 
+The blockchain is public and anyone can see all transactions. You can use a ◊link[blockchair]{blockchain explorer} to see for yourself. See for example the full history of ◊link[blockchair-addr]{this random address} or ◊link[blockchair-tx]{this transaction} which contains one input and two outputs.◊sn{outputs}
+
+Cryptocurrencies like Monero also have a public blockchain---see ◊link[xmrchain]{this blockchain explorer}---but they hide transaction amounts, where the coins are coming from and where they're going. Exactly how it works is outside the scope of this book.
+
 ◊ndef["blockreward"]{
     As I'm writing this the current blockreward for Bitcoin is 12.5 BTC or around $50,000. With one block expected every 10 min that's about $7,200,000 per day. Bitcoin mining is big business.
 }
+
+◊ndef["outputs"]{
+    One output is usually a ◊em{change output} where you send change back to one of your own addresses.
+}
+
+◊(define blockchair "https://blockchair.com/")
+◊(define blockchair-tx "https://blockchair.com/bitcoin/transaction/0c4c723ea0b78722a79c3e34fb714b92e5aac355041f490cd56937c14458d44f")
+◊(define blockchair-addr "https://blockchair.com/bitcoin/address/33esJQRYoc5V98bGxJi3sAQxQj3iAAVXSx")
+◊(define xmrchain "https://xmrchain.net/")
 
 
 ◊subhead{Forks}
@@ -246,11 +259,10 @@ It works like this:
     Satisfied, Honest Harry gives Sneaky Steve a new pair of beautiful jeans.
 }
 ◊img[#:src "/images/reversal4.png"]{
-    Sneaky Steve walks away with his jeans, all while planning to cheat Honest Harry.
+    Sneaky Steve walks away with his jeans, all while secretly working on his own chain.
 }
 ◊img[#:src "/images/reversal2.png"]{
-    After Sneaky Steve has walked away he releases his hidden chain of length four, which ◊strong{doesn't contain his payment to Honest Harry}.
-    Since the new chain is longer the old chain will get discarded and the payment to Honest Harry will also disappear. It will seem like the payment never happened.
+    After Sneaky Steve has walked away he releases his hidden chain of length four, which ◊strong{doesn't contain his payment to Honest Harry}.  Since the new chain is longer the old chain will get discarded and the payment to Honest Harry will also disappear. It will seem like the payment never happened.
 }
 
 This is a different type of double spend and it's the primary attack vector ◊link[wp]{the whitepaper} is concerned about. It's called a ◊link[51-attack]{51% attack}, for reasons we'll soon explain.
@@ -263,32 +275,17 @@ This is a different type of double spend and it's the primary attack vector ◊l
 ◊(define 51-attack "https://www.investopedia.com/terms/1/51-attack.asp")
 
 
-◊subhead{The 50% security assumption}
-
-The whole system relies on a majority of miners being honest---it's the core security assumption behind proof-of-work.
-
-Honest miners work for profit so they absolutely don’t want to risk their block being rejected by the other miners and lose their reward. Therefore the rational thing to do is to work on the longest chain.
-
-This means for Sneaky Steve to successfully reverse a transaction he needs to control more than half of all mining power---otherwise his hidden chain can never become the longest. It's called a 51% attack because you need to control at least 51% of all mining power to pull it off consistently.◊sn{51-attack-btg}
-
-◊ndef["51-attack-btg"]{
-    Bitcoin Gold ◊link[51-btg]{was successfully 51% attacked} and exchanges were double spent. The attacker managed to reverse transactions 22 blocks deep.
-
-    This is the danger for smaller cryptocurrencies who don't have much mining power securing the chain. 51% attacking Bitcoin would be ◊strong{much} harder.
-}
-
-◊(define 51-btg "https://forum.bitcoingold.org/t/double-spend-attacks-on-exchanges/1362")
-
-This touches on the immutability of the blockchain. As long as more than 50% of miners don't want to change the chain it will always be longest and correct. But if they do then they can reverse transactions.
-
-
 ◊subhead{Transaction security}
 
-The deeper a transaction is in the blockchain---the more confirmations it has---the harder a transaction is to reverse. Bitcoin's security isn't absolute but probabilistic. ◊link[wp]{Bitcoin's whitepaper} goes into more details and recommends 6 confirmations---roughly one hour---to be sure you don't get defrauded. Today for most normal payments a single confirmation is usually enough.◊sn{0-conf}
+The deeper a transaction is in the blockchain---the more confirmations it has---the harder a transaction is to reverse.
 
 ◊img[#:src "/images/confirmations.png"]{
     Confirmations for different blocks. ◊br{}Each block added to the blockchain makes every earlier block---and transaction---more secure.
 }
+
+Bitcoin's security isn't absolute but probabilistic. An intuitive way to think about it is to find one block you need to get lucky. To find more blocks you need to get lucky several times, which you have to do if you want to reverse a transaction with more confirmations.
+
+◊link[wp]{Bitcoin's whitepaper} goes into more details and recommends 6 confirmations---roughly one hour---to be sure you don't get defrauded. Today for most normal payments a single confirmation is usually enough.◊sn{0-conf}
 
 A crucial mistake people make is to think more miners, or more energy used, means more transactions can be handled. This is not true. Miners ◊strong{only} care about securing the chain and to prevent your transactions from being reversed.
 
@@ -307,31 +304,30 @@ In fact we could spend 100x more energy on securing the chain and process the sa
 ◊(define z-forfeits "https://gist.github.com/awemany/619a5722d129dec25abf5de211d971bd")
 
 
-◊subhead{Transaction history}
+◊subhead{The 50% security assumption}
 
-◊todo{Write about this}
+The whole system relies on a majority of miners being honest---it's the core security assumption behind proof-of-work.
 
+Honest miners work for profit so they absolutely don’t want to risk their block being rejected by the other miners and lose their reward. Therefore the rational thing to do is to work on the longest chain.
 
-◊subhead{An economic innovation}
+This means for Sneaky Steve to successfully reverse a transaction he needs to control more than half of all mining power---otherwise his hidden chain can never become the longest.  It's called a 51% attack because you need to control at least 51% of all mining power to pull it off consistently.◊sn{51-attack-btg}
 
-◊todo{Rewrite this section}
+◊ndef["51-attack-btg"]{
+    Bitcoin Gold ◊link[51-btg]{was successfully 51% attacked} and exchanges were double spent. The attacker managed to reverse transactions 22 blocks deep.
 
-While cryptocurrencies combine several different technologies in an interesting way the true innovation is how they're secured by economic incentives---the most profitable way for miners is to follow the network rules.
+    This is the danger for smaller cryptocurrencies who don't have much mining power securing the chain. 51% attacking Bitcoin would be ◊strong{much} harder.
+}
 
-For example in a fork with two competing chains the most profitable move is to jump to the longest chain as quickly as possible.
+◊(define 51-btg "https://forum.bitcoingold.org/t/double-spend-attacks-on-exchanges/1362")
 
-A minority miner with less than 50% will probably lose the blockreward in the long run if she tries to cheat and is exponentially more likely to lose the longer the attacking chain needs to be.
-
-As noted earlier the current block reward is 12.5 BTC or about $50,000. Losing out on just one blockreward is a big loss in the cutthroat mining business. Therefore miners are heavily incentivized to be honest and play by the rules---it's the economically rational thing to do.
+This touches on the immutability of the blockchain. As long as more than 50% of miners don't want to change the chain it will always be longest and correct. But if they do then they can reverse transactions.
 
 
 ◊subhead{Economics of a 51% attack}
 
-◊todo{Rewrite this section}
+How secure is Bitcoin, really? What do we need to pull off a 51% attack?
 
-The situation is a little different in a 51% attack. There the attacker will always win the longest chain race and on the surface attacking the chain is a rational action.
-
-First some quick napkin math to estimate the cost to require 51% of mining power:
+Here's some quick napkin math to estimate the cost to achieve 51% of mining power:
 
 ◊; Couldn't really be bothered to update the existing string to table to support x-expressions...
 ◊table[#:class "centered"]{ ◊tbody{
@@ -342,31 +338,49 @@ First some quick napkin math to estimate the cost to require 51% of mining power
     ◊tr{◊td{Total network miner cost}                       ◊td{$1,259,399,600}}
 }}
 
-So about $650 million for just the miners themselves (assuming you could purchase that many). On top of that we need power supply, cooling, storage and maintenance for more than a million miners. Suffice to say it's a very large investment to come close to 51%, but not totally impossible.
+So about $650 million for just the miners themselves (assuming you could purchase that many). On top of that we need power supply, cooling, storage and maintenance for more than a million miners. We're looking at a massive warehouse, or several. Suffice to say it's a very large investment, but maybe not impossible to get.
 
-Even if someone manages to gain enough mining power to execute the attack she still needs to be careful. A 51% attack can be detected and there can be negative consequences:
+If we manage to get enough miners it should allow us to double-spend and defraud exchanges and merchants. It almost sounds like we can get free money, but it's not that simple.
+
+A 51% can be detected and there can be severe negative consequences:
 
 ◊ul{
     ◊li{The Bitcoin price might crash.}
     ◊li{Exchanges might blacklist the stolen funds.}
     ◊li{The community might change POW and make all mining rigs worthless.◊sn{monero-POW}}
+    ◊li{It's hard to keep warehouses full of mining rigs of that scale a secret, there's a big risk to get caught.}
 }
 
-Bitcoin miners are rewarded in bitcoin and they also can't be spent until after 100 blocks---roughly 16 hours. Executing a 51% attack that crashes the price would directly harm the rewards. If the community goes for the nuclear option and change POW then the massive initial investment might be lost.
+Bitcoin miners are rewarded in bitcoin and they also can't be spent until after 100 blocks---roughly 16 hours. Executing a 51% attack that crashes the price would directly harm the rewards. If the community goes for the nuclear option and change POW then the massive initial investment into mining equipment might be lost.
 
-These huge risks needs to weighed against what profits a 51% attack could generate. Maybe they could defraud exchanges for $50 million? A 51% miner would make that back in about two weeks---risk free.◊sn{btg2}
+These risks needs to weighed against what profits a 51% attack could generate. Maybe exchanges could get defrauded for $50 million? A 51% miner would make that back in about two weeks---risk free.◊sn{btg2}
+
+The economic incentives are so strong that it might be rational even for a 51% for-profit miner to be honest. In fact Bitcoin has ◊link[ghash]{had pools with 51% before} without incidents.
+
+The biggest security risk for Bitcoin might instead be actors of state levels who wants to destroy it no matter the costs. For example if the United States would spend billions on a "War on Bitcoin".
+
+
+◊subhead{An economic innovation}
+
+While cryptocurrencies combine several different technologies in an interesting way the true innovation is how they're secured by economic incentives---the most profitable way for miners is to follow the network rules.
+
+As noted earlier the current block reward for Bitcion is 12.5 BTC---about $50,000. Losing out on just one blockreward is a big loss in the cutthroat mining business, so miners are heavily incentivized to always work on the longest chain.
+
+For example in a fork with two competing chains the most profitable move is to jump to the longest chain as quickly as possible. This ensures a double-spend gets resolved quickly.
+
+It also doesn't make sense for a minority miner to try to double-spend, it will only cause them to lose money in the long run. Therefore only a miner with 51% can compromise the network security, and even then it might be more profitable to play by the rules.
+
+
 
 ◊ndef["btg2"]{
     The case is a little different for cryptocurrencies that share POW algorithm with others. There miners could attack the minority chain and jump back to the majority chain after executing the attack.
 }
 
-The economic incentives are so strong that it might actually be rational even for a 51% miner to be honest. In fact Bitcoin has ◊link[ghash]{had pools with 51% before} without incidents.
-
 ◊(define ghash "https://www.coindesk.com/bitcoin-mining-detente-ghash-io-51-issue")
 
 
 ◊ndef["monero-POW"]{
-    As an example Monero has changed POW several times bricking existing ASICs. The expensive mining rigs are now practically useless.
+    As an example Monero has changed POW several times bricking existing ASICs. The expensive mining rigs are now practically worthless.
 }
 
 ◊(define btc-hashrate "https://www.blockchain.com/charts/hash-rate")
@@ -380,11 +394,11 @@ The economic incentives are so strong that it might actually be rational even fo
 There is another situation where forks can arise: when consensus rules are changed. Here are some examples of consensus changes:
 
 ◊ul{
-    ◊li{Removing the 21 million supply cap in Bitcoin}
-    ◊li{Blacklisting an address}
-    ◊li{Allowing a new transaction type (smart contracts)}
-    ◊li{Tweaking the POW algorithm}
-    ◊li{Raising the 1 MB blocksize limit in Bitcoin}
+    ◊li{Removing the 21 million supply cap in Bitcoin.}
+    ◊li{Blacklisting or stealing coins from an address.}
+    ◊li{Allowing a new transaction type.}
+    ◊li{Tweaking the POW algorithm.}
+    ◊li{Raising the 1 MB blocksize limit in Bitcoin.}
 }
 
 Some cryptocurrencies, for example Monero and Bitcoin Cash, have regular network upgrades where consensus rules are changed.◊sn{hard-soft}
@@ -392,23 +406,20 @@ Some cryptocurrencies, for example Monero and Bitcoin Cash, have regular network
 ◊ndef["hard-soft"]{
     I have deliberatly simplified my usage of fork terminology. On a technical level it's useful to distinguish between two types of forks: ◊em{hard-forks} and ◊em{soft-forks}.
 
-    A hard-fork is a backwards incompatible change and all nodes must upgrade to avoid ending up on the old chain. The blocksize increases in Bitcoin Cash are examples of hard-forks.
+    A hard-fork is a backwards incompatible change and all nodes must upgrade to avoid ending up on the old chain. The blocksize increase in Bitcoin Cash is for example a hard-fork.
 
-    A soft-fork instead doesn't break older node implementations. They will simply ignore the new soft-fork rules, they will not fully validate the chain anymore but they will follow it. The rules are instead enforced by the miners who must upgrade. SegWit in Bitcoin is an example of a soft-fork.
+    A soft-fork instead doesn't break older node implementations. They will simply ignore the new soft-fork rules---they will not fully validate the chain anymore but they will follow it. The rules are instead enforced by the miners who must upgrade. SegWit in Bitcoin is for example a soft-fork.
 }
 
-Because a network upgrade is a fork there will be two chains. Sometimes the minority chain lives on as a new cryptocurrency. Ethereum Classic is for example the continuation of the old chain ◊link[dao]{after an Ethereum fork}.
+Because a network upgrade is a fork there will be two chains (as long as someone mines them). Sometimes the minority chain lives on as a new cryptocurrency, Ethereum Classic is for example the continuation of the old chain ◊link[dao]{after an Ethereum fork}.
 
-Other times the fork is initiated people who want to create a new cryptocurrency from another one, but the mechanism is exactly the same.
+Other times the fork is initiated by people who want to create a new cryptocurrency from another one, but the mechanism is exactly the same. This means you can fork Bitcoin at any point if you want, the tricky part is getting other people to join you.
 
-◊(define nb 'nbsp)
+You may then wonder---what decides which is the correct one? There is no clear answer, social consensus decide which of the chains is called "Original Coin" and which is called "New Coin".
 
-You may then wonder---what decides which is the correct one? This is a heated debate where for example Bitcoin Cash supporters claim their chain is really the right Bitcoin.  If I had to draw a parallel I'd say it's similar to the Israeli--Palestinian conflict where two groups want to claim the same space (this is a ◊em{massive} simplification of course).
-
-Here social consensus decide which of the chains is called "Original Coin" and which is called "New Coin".
 
 ◊(define dao "https://fullstacks.org/materials/ethereumbook/16_appdx-forks-history.html")
-
+◊(define nb 'nbsp)
 
 ◊ndef["valid"]{
     Remember that to prevent double spending one transaction must be chosen, which one doesn't matter.
@@ -431,6 +442,11 @@ It causes a situation where everyone are incentivized to vote on all forks. An a
 The chapter became very long despite skipping out on details here and there. If you want to go deeper I encourage you to do more research on your own.
 
 ◊link[wp]{Bitcoin's whitepaper} is always a good place to begin and there are many good resources online. I've tried to include key concepts which you use as a starting point in your search.
+
+
+◊subhead{Summary}
+
+◊todo{}
 
 
 ◊ndef["stores-transactions"]{
