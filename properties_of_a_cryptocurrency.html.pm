@@ -66,14 +66,14 @@ You also don't have to trust a third party to hold your money like you do when y
 
 ◊subhead{Avoid fake coins}
 
-Problems with counter-fit coins and bills go far back. From biting coins to test their hardness to today's advanced techniques, counterfeit prevention has always been an important feature for cash.
+Problems with counterfeit coins and bills go far back. From biting coins to test their hardness to today's advanced techniques, counterfeit prevention has always been an important feature for cash.
 
 With cryptocurrencies anyone can independently verify the integrity of the coins you send and receive. Details on how is in the ◊link[next-chapter]{next chapter} but I assure you no biting is needed.
 
-You cannot counter-fit coins and you cannot send the same coin to multiple people ◊em{(double-spend)}. This is what allows cryptocurrencies to operate without a trusted third party.
+You cannot counterfeit coins and you cannot send the same coin to multiple people ◊em{(double-spend)}. This is what allows cryptocurrencies to operate without a trusted third party.
 
 ◊img[#:src "/images/double-spend.png"]{
-    Double spending by sending the same coin both to a merchant and to himself.
+    A double spending occurs when someone sends the same coin both to a merchant and back to himself.
 }
 
 
@@ -88,7 +88,7 @@ Transactions might also hold extra data so you can treat it as an effectively im
 ◊ndef["DAO"]{
     It is possible to reverse transfers... If everyone agrees.
 
-    Ethereum famously altereted their rules in ◊link[dao]{the DAO hard fork}. Many agreed but not everyone, so Ethereum split into two coins where Ethereum Classic kept the old rules.
+    Ethereum famously altered their rules in ◊link[dao]{the DAO hard fork}. Many agreed but not everyone, so Ethereum split into two coins where Ethereum Classic kept the old rules.
 }
 
 
@@ -136,14 +136,14 @@ Either way it's not an argument against cryptocurrencies in general as they can 
 
 ◊subhead{Anonymous}
 
-Bitcoin uses a public ledger where all transactions are public, so it isn't anonymous. It's pseudonymous---while you can see transactions and addresses you don't know who owns an address. But you know someones address and can then trace all past and future transactions moving through that address. You can use a ◊link[blockchair]{blockchain explorer} to see for yourself.
+Bitcoin uses a public ledger where all transactions are public, so it isn't anonymous. It's pseudo-anonymous---while you can see transactions and addresses you don't know who owns an address. But you know someones address and can then trace all past and future transactions moving through that address. You can use a ◊link[blockchair]{blockchain explorer} to see for yourself.
 
 There are cryptocurrencies that tries to hide all transactions.◊sn{monero} On them you cannot trace transactions on the blockchain and it makes blacklisting addresses impossible.
 
 Since these projects exists I will call cryptocurrencies anonymous, just keep in mind not all are.
 
 ◊ndef["monero"]{
-    Monero is perhaps the most well known cryptocurrency that hides transactions by default.
+    Monero is perhaps the most well known cryptocurrency that hides transactions' details by default.
 
     There are others where you can opt-in to hide some transactions but otherwise they can be traced. This also exists as a service on top of Bitcoin, see for example ◊link[coinjoin]{CoinJoin}.
 }
