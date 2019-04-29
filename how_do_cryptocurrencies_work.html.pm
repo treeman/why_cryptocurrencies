@@ -10,7 +10,7 @@ As stated in the introduction the focus isn't on technical details, but it's a h
 
 ◊(define summary "#summary")
 
-This is my attempt to explane how a standard cryptocurrency like Bitcoin works. Other cryptocurrencies may diverge on various points but the fundamentals are the same.◊sn{others}
+This is my attempt to explain how a standard cryptocurrency like Bitcoin works. Other cryptocurrencies may diverge on various points but the fundamentals are the same.◊sn{others}
 
 ◊ndef["others"]{
     For example Ethereum adds Turing complete smart contracts and CryptoNote protocols (like Monero) hides transaction details.
@@ -61,7 +61,7 @@ For example Sneaky Steve wants to buy a computer from Honest Harry and wants to 
   Address     Bitcoin
   Sneaky Steve 1     1 BTC
   Sneaky Steve 2     0 BTC
-  Honest Harry         0 BTC
+  Honese Harry         0 BTC
 }
 
 What Sneaky Steve tries to do is send ◊tf{1 BTC} to the merchant Honest Harry and then send the same ◊tf{1 BTC} to his other address ◊tf{Sneaky Steve 2}. You can have as many addresses you want. This is a consequence of the permissionless nature of Bitcoin.
@@ -258,7 +258,7 @@ The chain will split and there will be a ◊em{fork}.◊sn{code-fork} Each miner
 
 The longer chain is to be considered "the correct" chain and the shorter chain will be abandoned.◊sn{orphan} Coming to consensus by following the longest chain is often referred to as ◊em{Nakamoto consensus}.
 
-Because rewards on each chain can only be used on that particular chain any rewards on the abandoned chain will be effectively worthless. Therefore they are heavily incentivized to work on the longest chain and so the shorter chain will get abandoned quickly.
+Because rewards on each chain can only be used on that particular chain any rewards on the abandoned chain will be effectively worthless. Therefore the miners are heavily incentivized to work on the longest chain and so the shorter chain will get abandoned quickly.
 
 ◊ndef["orphan"]{
     When a shorter chain gets abandoned we say it gets ◊em{orphaned}. It is a natural consequence of the system but high orphan rates are problematic because they hurt smaller miners more than larger miners.
@@ -394,7 +394,7 @@ The biggest security risk for Bitcoin might instead be actors of state levels wh
 
 While cryptocurrencies combine several different technologies in an interesting way the true innovation is how they're secured by economic incentives---the most profitable way for miners is to follow the network rules.
 
-As noted earlier the current block reward for Bitcion is 12.5 BTC---about $50,000. Losing out on just one blockreward is a big loss in the cutthroat mining business, so miners are heavily incentivized to always work on the longest chain.
+As noted earlier the current block reward for Bitcoin is 12.5 BTC---about $50,000. Losing out on just one block reward is a big loss in the cutthroat mining business, so miners are heavily incentivized to always work on the longest chain.
 
 For example in a fork with two competing chains the most profitable move is to jump to the longest chain as quickly as possible. This ensures a double-spend gets resolved quickly.
 
