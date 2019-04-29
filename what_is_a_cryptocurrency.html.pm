@@ -7,7 +7,7 @@
 
 If we're going to talk about cryptocurrencies we need to know what they are. Otherwise how can we tell what value---if any---they have?
 
-I think the best description of what a cryptocurrency is can be found in the title of the original whitepaper: ◊link[wp]{Bitcoin: A Peer-to-Peer Electronic Cash System}. It's like cash, but in digital form.◊mn{read-wp}
+I think the best description of what a cryptocurrency is can be found in the title of the original white paper: ◊link[wp]{Bitcoin: A Peer-to-Peer Electronic Cash System}. It's like cash, but in digital form.◊mn{read-wp}
 
 Technical understanding of how they work is beneficial, but it's not required to see how they can be useful. We can come quite far by just knowing what they do differently compared to alternatives, on a higher level.
 

@@ -83,7 +83,7 @@ Just like cash cryptocurrency transfers are irreversible.◊sn{DAO}
 
 This means if you've sent someone coins you can only get them back if they agree to give them back. It prevents credit card chargeback fraud but it makes theft worse.
 
-Transactions might also hold extra data so you can treat it as an effectively immutable data storage. It's very inefficient but could still be useful. The Bitcoin whitepaper is for example stored ◊link[wp-blockchain]{on the Bitcoin blockchain}.
+Transactions might also hold extra data so you can treat it as an effectively immutable data storage. It's very inefficient but could still be useful. The Bitcoin white paper is for example stored ◊link[wp-blockchain]{on the Bitcoin blockchain}.
 
 ◊ndef["DAO"]{
     It is possible to reverse transfers... If everyone agrees.
@@ -164,7 +164,7 @@ It's also easy to split coins into small parts.◊sn{satoshis} In fact you don't
 
 ◊subhead{Borderless}
 
-Cryptocurrencies are inherently global. They are useable wherever you are as long as you have an internet connection. You can even send to wallets which are offline◊sn{cold-storage} but to retrieve them you need to access the internet.
+Cryptocurrencies are inherently global. They are usable wherever you are as long as you have an internet connection. You can even send to wallets which are offline◊sn{cold-storage} but to retrieve them you need to access the internet.
 
 Technically you could do transfers completely offline---on paper---but they would be unconfirmed and might not be valid when you do want to use them.
 
