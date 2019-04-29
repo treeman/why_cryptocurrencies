@@ -1,5 +1,6 @@
 #lang pollen
 
+
 ◊(define-meta title "How do cryptocurrencies work?")
 ◊(define-meta subtitle "Decentralized consensus")
 ◊(define-meta updated "2019-04-03T20:03:32+0200")
@@ -112,7 +113,7 @@ This would be very easy if they could trust each other. Unfortunately they canno
 
 
 ◊img[#:src "/images/generals_decisions.png"]{
-    One general sends out messengers declaring his intent to attack to the generals next to him, who then sends messengers of their own, and so on until all generals have received the message. However two of the messengers are traitors and change the message from "retreat" to "attack".
+    One general sends out messengers declaring his intent to attack to the generals next to him, who then sends messengers of their own, and so on until all generals have received the message. However two of the messengers are traitors and change the message from "attack" to "retreat".
 }
 
     In this simple example three of the generals now believe they will attack while two are preparing to retreat. In a more complex scenario they might receive conflicting messages and notice something is amiss, but they don't know what's real and what's not.
@@ -257,7 +258,7 @@ The chain will split and there will be a ◊em{fork}.◊sn{code-fork} Each miner
 
 The longer chain is to be considered "the correct" chain and the shorter chain will be abandoned.◊sn{orphan} Coming to consensus by following the longest chain is often referred to as ◊em{Nakamoto consensus}.
 
-Because miners will lose all rewards on the abandoned chain they are heavily incentivized to work on the longest chain. Therefore the shorter chain will get abandoned quickly.
+Because rewards on each chain can only be used on that particular chain any rewards on the abandoned chain will be effectively worthless. Therefore they are heavily incentivized to work on the longest chain and so the shorter chain will get abandoned quickly.
 
 ◊ndef["orphan"]{
     When a shorter chain gets abandoned we say it gets ◊em{orphaned}. It is a natural consequence of the system but high orphan rates are problematic because they hurt smaller miners more than larger miners.
