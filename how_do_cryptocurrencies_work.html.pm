@@ -5,9 +5,15 @@
 ◊(define-meta updated "2019-04-03T20:03:32+0200")
 ◊(define-meta uuid "320751d9-9a28-4e91-9469-b44b83e12475")
 
-As stated in the introduction the focus isn't on technical details, but it's a hard balance to make between keeping it simple and explaining how cryptocurrencies work. If this chapter is too technical you can safely skip to the ◊link[next-chapter]{next chapter}, it's not required knowledge.
+As stated in the introduction the focus isn't on technical details, but it's a hard balance to make between keeping it simple and explaining how cryptocurrencies work. If this chapter is too technical you can safely skip to the ◊link[next-chapter]{next chapter} or just read ◊link[summary]{the summary}, it's not required knowledge.
 
-This is my attempt at an explanation based on my understanding. ◊link[wp]{The whitepaper contains some details} but for a deeper look you might need to examine the source code of popular cryptocurrency clients and follow their development.
+◊(define summary "#summary")
+
+This is my attempt to explane how a standard cryptocurrency like Bitcoin works. Other cryptocurrencies may diverge on various points but the fundamentals are the same.◊sn{others}
+
+◊ndef["others"]{
+    For example Ethereum adds Turing complete smart contracts and CryptoNote protocols (like Monero) hides transaction details.
+}
 
 
 ◊subhead{The ledger}
@@ -74,7 +80,7 @@ We copied our coin and printed ◊tf{1 BTC} out of thin air so now the ledger co
 
 This isn't really a problem with physical cash since you can't just copy gold coins or paper notes. It's not a problem for banks either since the bank can just deny one or both of the transactions.
 
-But this is a hard problem for a digital currency that tries to remove the central authority. This is why before Bitcoin no decentralized◊sn{decentralized} digital currency existed.
+But this is a hard problem for a digital currency that tries to remove the central authority. This is why before Bitcoin no ◊em{decentralized}◊sn{decentralized} digital currency existed.
 
 ◊ndef["decentralized"]{
     Decentralization is a common term used to refer to the lack of trusted third party. Instead multiple unrelated entities come together and decide as a group.
@@ -194,6 +200,28 @@ The blockchain is public and anyone can see all transactions. You can use a ◊l
 
 Cryptocurrencies like Monero also have a public blockchain---see ◊link[xmrchain]{this blockchain explorer}---but they hide transaction amounts, where the coins are coming from and where they're going. Exactly how it works is outside the scope of this book.
 
+The blockchain is duplicated, stored and maintained with many different people, you might think of it as similar to how torrents work. When you send and receive transactions you're really interacting with the blockchain and not with each other directly.◊sn{node-types}
+
+◊img[#:src "images/sending_network.png"]{
+    A payment is sent to the network and not directly to the receiver. The transaction then gets forwarded to miners who eventually add it to the blockchain. The receiver then confirms the payment in the blockchain, without trusting the payee.
+}
+
+
+
+◊ndef["node-types"]{
+    There are several differnet ways to interact with the blockchain. For the end user there are three main ways, with different trade-offs:
+
+    1. Run a full node
+    2. Use an SPV wallet
+    3. Use a light wallet
+
+    A full node stores a complete copy of the blockchain on your computer and verifies all transactions. This is the most trustless way but also the most resource intensive.
+
+    An ◊link[spv-jonald]{SPV wallet} confirms that the proof-of-work is valid and that your transaction is inside the block but it does not validate the transactions. This means it's trusting that the longest chain is always valid---a reasonable assumption---and is much less resource intensive.
+
+    A light wallet interacts with a third party node but does not validate anything itself. The least resource intensive but you also need to trust a third party service.
+}
+
 ◊ndef["blockreward"]{
     As I'm writing this the current blockreward for Bitcoin is 12.5 BTC or around $50,000. With one block expected every 10 min that's about $7,200,000 per day. Bitcoin mining is big business.
 }
@@ -202,6 +230,7 @@ Cryptocurrencies like Monero also have a public blockchain---see ◊link[xmrchai
     One output is usually a ◊em{change output} where you send change back to one of your own addresses.
 }
 
+◊(define spv-jonald "https://medium.com/@jonaldfyookball/why-every-bitcoin-user-should-understand-spv-security-520d1d45e0b9")
 ◊(define blockchair "https://blockchair.com/")
 ◊(define blockchair-tx "https://blockchair.com/bitcoin/transaction/0c4c723ea0b78722a79c3e34fb714b92e5aac355041f490cd56937c14458d44f")
 ◊(define blockchair-addr "https://blockchair.com/bitcoin/address/33esJQRYoc5V98bGxJi3sAQxQj3iAAVXSx")
@@ -441,12 +470,18 @@ It causes a situation where everyone are incentivized to vote on all forks. An a
 
 The chapter became very long despite skipping out on details here and there. If you want to go deeper I encourage you to do more research on your own.
 
-◊link[wp]{Bitcoin's whitepaper} is always a good place to begin and there are many good resources online. I've tried to include key concepts which you use as a starting point in your search.
+◊link[wp]{Bitcoin's whitepaper} is always a good place to begin and there are many good resources online. I've tried to include key concepts which you can use as starting points in your search.
 
 
 ◊subhead{Summary}
 
-◊todo{}
+◊ol{
+    ◊li{The blockchain is like a ledger which stores balances}
+    ◊li{The crucial problem is deciding between double spends (spending a coin twice)}
+    ◊li{Proof-of-work makes miners expend energy and compete for rewards}
+    ◊li{Miners are used to resolve double spends}
+    ◊li{The security assumption is that most miners work for profit}
+}
 
 
 ◊ndef["stores-transactions"]{
