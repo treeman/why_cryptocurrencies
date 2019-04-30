@@ -53,7 +53,7 @@ It uses ◊link[public-key-cryptography]{◊em{public-key cryptography}} which a
 
 ◊subhead{Copying a coin & double spending}
 
-So far cryptocurrencies doesn't do anything new. The hard problem is how do you prevent someone from copying a coin and sending the copies the different receivers?
+So far cryptocurrencies don't do anything new. The hard problem is how do you prevent someone from copying a coin and sending the copies the different receivers?
 
 For example Sneaky Steve wants to buy a computer from Honest Harry and wants to pay with Bitcoin. The computer costs ◊tf{1 BTC} and the Bitcoin ledger looks like this:
 
@@ -152,12 +152,16 @@ If you've heard about cryptocurrencies then maybe you've also heard about crypto
 
 The core idea is: if you want to choose which transaction is valid◊sn{valid} you have to do work. The process is known as ◊em{proof-of-work}, shortened to POW.
 
-The work is to find a solution to a computing problem◊sn{asics}. The problem itself is not that important and it doesn't have any meaning outside of mining. There are two important properties it should have:
+The work is to find a solution to a computing problem◊sn{asics}. The problem itself is not that important and it doesn't have any meaning outside of mining.◊sn{useful-pow} There some important properties it should have:
 
 ◊ul{
     ◊li{◊strong{Hard enough}
 
         In Bitcoin one solution is expected every 10 minutes. The difficulty is continuously adjusted to allow miners to join and leave.
+    }
+    ◊li{◊strong{Easy to verify}
+
+        While a problem should be hard to solve it must be very easy to verify. It should be easy for mobile phones to verify for example.
     }
     ◊li{◊strong{Memoryless}
 
@@ -179,6 +183,13 @@ Important to note is that everyone doesn't have to be a miner. The blockchain is
     They can only be used for a specific type of POW algorithm and cannot be used to mine on any cryptocurrency.
 }
 
+◊ndef["useful-pow"]{
+    It's difficult to create a problem that satisfy the POW properties while having a useful side-effect. For example ◊link[protein-folding]{The Protein Folding Problem} is not easy to verify and it's hard to adjust the problem difficulty.
+
+    Additionally if there was a useful side-effect it might alter the economic incentives of mining. If mining is purely done to secure a cryptocurrency then the miners investment rests on the success of the cryptocurrency. A secondary use for specialized mining hardware lessens the incentive to secure the chain.
+}
+
+◊(define protein-folding "https://en.wikibooks.org/wiki/Structural_Biochemistry/Proteins/Protein_Folding_Problem")
 ◊(define ASICs "https://en.wikipedia.org/wiki/Application-specific_integrated_circuit")
 ◊(define royal-flush "https://www.mathcelebrity.com/5cardbasic.php?hand=AAKQJ&pl=Royal+Flush")
 
@@ -295,7 +306,7 @@ It works like this:
     After Sneaky Steve has walked away he releases his hidden chain of length four, which ◊strong{doesn't contain his payment to Honest Harry}.  Since the new chain is longer the old chain will get discarded and the payment to Honest Harry will also disappear. It will seem like the payment never happened.
 }
 
-This is a different type of double spend and it's the primary attack vector ◊link[wp]{the whitepaper} is concerned about. It's called a ◊link[51-attack]{51% attack}, for reasons we'll soon explain.
+This is a different type of double spend and it's the primary attack vector ◊link[wp]{the white paper} is concerned about. It's called a ◊link[51-attack]{51% attack}, for reasons we'll soon explain.
 
 ◊ndef["chargeback"]{
     In the credit card world this type of fraud is called ◊link[chargeback-fraud]{chargeback fraud} or friendly fraud.
