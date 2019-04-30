@@ -1,7 +1,7 @@
 #lang pollen
 
 ◊(define-meta title "Look out for snake oil")
-◊(define-meta subtitle "There are many fakes and wannabees")
+◊(define-meta subtitle "The space is new, hyped and full of misleading information")
 ◊(define-meta updated "2019-04-03T19:59:58+0200")
 ◊(define-meta uuid "635e169f-885a-4d29-a266-4c9ef4981f47")
 
@@ -13,6 +13,9 @@
     If you have repeat custom... or maybe the shops in the local area could make a shared tab or something in anticipation of... you know somebody in the local area ... technology expert could make a local bitcoin tab that's interoperable between the shops and some sort of app to do it.
   }
 }
+
+
+◊subhead{Not really cryptocurrencies}
 
 There are many projects who call themselves cryptocurrencies while not fulfilling the criteria. For example I don't consider these real cryptocurrencies:
 
@@ -32,23 +35,23 @@ Some might be useful but they don't have the same properties as cryptocurrencies
 
 ◊subhead{The blockchain hype}
 
-Then there's the phenomena where a technology gets hyped up and businesses all over rush to adopt it in any way they can, even if it's totally the wrong solution for their problems.
+There's the phenomena where a technology gets hyped up and businesses all over rush to adopt it in any way they can, even if it's totally the wrong solution for their problems.
 
-Removing the consensus mechanism from a cryptocurrency, so they can just use the blockchain, removes what makes a cryptocurrency useful. The blockchain data-structure by itself is neither new nor interesting.
+Removing the consensus mechanism from a cryptocurrency, so they can just use the blockchain, removes what makes cryptocurrencies useful. The blockchain data-structure by itself is neither new nor interesting.
 
 Be aware of "the blockchain" being used only as a buzzword.
 
 
 ◊subhead{Warning signs to look out for}
 
+When evaluating a cryptocurrency here are some red flags to look out for:
+
 ◊ul{
     ◊li{Heavily slanted initial coin supply.◊sn{supply}}
-    ◊li{Central authorities.
-
-        The point of cryptocurrencies is to remove them.}
+    ◊li{Central authorities.}
     ◊li{Promises that sound too good to be true.
 
-        For example promising instant transactions and infinite scalability, while compromising the decentralization and security of the network.
+        For example promising instant transactions and infinite scalability. While they're really compromising the decentralization and security of the network.
     }
     ◊li{Propaganda.
 
@@ -59,6 +62,9 @@ Be aware of "the blockchain" being used only as a buzzword.
 
         Like having expensive and unreliable transactions or having to be online to receive payments.
     }
+    ◊li{Problems are hand-waved away.
+
+        “We'll figure it out” or “It'll be ready in 18 months” (forever).}
 }
 
 There are many traps to fall into in this space. I think the best antidote is to try and learn as much as possible, and never be afraid to question things.
