@@ -42,7 +42,7 @@ Cryptocurrencies work this way as well. In fact the ledger in a cryptocurrency, 
 
 To be able to create a transaction you need to have the private keys to the address you want to send from. Think of it as a secret password that unlocks your account. This prevents anyone else from stealing your coins, unless of course they steal your private key!
 
-It uses ◊link[public-key-cryptography]{◊em{public-key cryptography}} which allows you to prove you have the private key without sharing the private key itself.◊sn{pubkey} Compare it to credit card numbers which act as both a private and public key. Explaining how the cryptographic primitives work is out of the scope of this book.
+It uses ◊link[public-key-cryptography]{◊em{public-key cryptography}} which allows you to prove you control the private key without sharing the private key itself. Compare it to credit card numbers which act as both a private and public key. Explaining how the cryptographic primitives work is out of the scope of this book.◊sn{pubkey}
 
 ◊ndef["pubkey"]{
     If you're intrigued by the promise of public-key cryptography I encourage you to look it up, it's quite fascinating.
@@ -64,7 +64,7 @@ For example Sneaky Steve wants to buy a computer from Honest Harry and wants to 
   Honese Harry         0 BTC
 }
 
-What Sneaky Steve tries to do is send ◊tf{1 BTC} to the merchant Honest Harry and then send the same ◊tf{1 BTC} to his other address ◊tf{Sneaky Steve 2}. You can have as many addresses you want. This is a consequence of the permissionless nature of Bitcoin.
+What Sneaky Steve tries to do is send ◊tf{1 BTC} to the merchant Honest Harry and then send the same ◊tf{1 BTC} to his other address ◊tf{Sneaky Steve 2}. It's possible because you can have as many addresses you want, this is a consequence of the permissionless nature of Bitcoin.
 
 ◊img[#:src "/images/double-spend.png"]{Sneaky Steve sends a digital coin both to Honest Harry and himself.}
 
@@ -77,7 +77,7 @@ If we didn't prevent this the ledger might look like this:
   Honest Harry         1 BTC     (+1 BTC)
 }
 
-We copied our coin and printed ◊tf{1 BTC} out of thin air so now the ledger contains a negative balance. This is a form of ◊em{double spending}---spending the same coin twice.
+We copied our coin and printed ◊tf{1 BTC} out of thin air, so now the ledger contains a negative balance. This is a form of ◊em{double spending}---spending the same coin twice.
 
 This isn't really a problem with physical cash since you can't just copy gold coins or paper notes. It's not a problem for banks either since the bank can just deny one or both of the transactions.
 
@@ -85,12 +85,18 @@ But this is a hard problem for a digital currency that tries to remove the centr
 
 ◊ndef["decentralized"]{
     Decentralization is a common term used to refer to the lack of trusted third party. Instead multiple unrelated entities come together and decide as a group.
+
+    There are different types of decentralization in a cryptocurrency to consider. For example:
+
+    1. Mining centralization
+    2. Development centralization
+    3. Node centralization
 }
 
 
 ◊subhead{The Byzantine Generals Problem}
 
-To solve double spending it's enough to choose one of double spending transactions. But how do you do that when there are many unrelated people---some who wants to cheat?
+To resolve double spending it's enough to choose one of double spending transactions. But how do you do that when there are many unrelated people---some who wants to cheat?
 
 This is the same problem known as the ◊link[byzantine-generals]{◊em{Byzantine Generals Problem}}. Here's my description of a simple variation:
 
@@ -108,7 +114,7 @@ If they try to act without a majority they will for sure get defeated, they must
 This would be very easy if they could trust each other. Unfortunately they cannot trust the messages---either the messenger or the message itself could be replaced---and even some of the generals could be traitors.◊sn{cryptography}
 
 ◊ndef["cryptography"]{
-    One countermeasure is to encrypt messages. It doesn't protect against a traitor who knows the code, like one of the generals. In ancient times the encryption weren't very advanced either and could possibly be broken, see the ◊link[ceasar-cipher]{Ceasar cipher} as an example.
+    One countermeasure is to encrypt messages. Unfortunately it doesn't protect against a traitor who knows the code, like one of the generals. Also in ancient times encryption weren't very advanced and could possibly be broken, see the ◊link[ceasar-cipher]{Ceasar cipher} as an example.
 }
 
 
@@ -235,7 +241,7 @@ The blockchain is duplicated, stored and maintained with many different people, 
 }
 
 ◊ndef["blockreward"]{
-    As I'm writing this the current blockreward for Bitcoin is 12.5 BTC or around $50,000. With one block expected every 10 min that's about $7,200,000 per day. Bitcoin mining is big business.
+    As I'm writing this the current ◊em{block reward} for Bitcoin is 12.5 BTC, about $50,000. With one block expected every 10 min that's about $7,200,000 per day. Bitcoin mining is big business.
 }
 
 ◊ndef["outputs"]{
@@ -324,18 +330,18 @@ The deeper a transaction is in the blockchain---the more confirmations it has---
     Confirmations for different blocks. ◊br{}Each block added to the blockchain makes every earlier block---and transaction---more secure.
 }
 
-Bitcoin's security isn't absolute but probabilistic. An intuitive way to think about it is to find one block you need to get lucky. To find more blocks you need to get lucky several times, which you have to do if you want to reverse a transaction with more confirmations.
+Bitcoin's security isn't absolute but probabilistic. One way to think about it is to find one block you need to get lucky. To find more blocks you need to get lucky several times, which you have to do if you want to reverse a transaction with more confirmations.
 
-◊link[wp]{Bitcoin's whitepaper} goes into more details and recommends 6 confirmations---roughly one hour---to be sure you don't get defrauded. Today for most normal payments a single confirmation is usually enough.◊sn{0-conf}
+◊link[wp]{Bitcoin's white paper} goes into more details and recommends 6 confirmations---roughly one hour---to be sure you don't get defrauded. Today for most normal payments a single confirmation is enough.◊sn{0-conf}
 
 A crucial mistake people make is to think more miners, or more energy used, means more transactions can be handled. This is not true. Miners ◊strong{only} care about securing the chain and to prevent your transactions from being reversed.
 
-In fact we could spend 100x more energy on securing the chain and process the same amount of transactions or we could spend 1% of the energy and process more transactions. Transaction throughput is a separate problem.◊sn{more-energy}
+In fact we could spend 100x more energy on mining and process the same amount of transactions or we could spend 1% of the energy and process more transactions. Transaction throughput is a separate problem.◊sn{more-energy}
 
 ◊ndef["0-conf"]{
-    You can actually even accept transactions without any confirmation, called ◊em{0-conf}. They are much less secure than a transaction with a confirmation but since most miners respect the first seen rule it's fairly safe for small purchases.
+    You can actually even accept transactions without any confirmation, called ◊em{0-conf}. They are much less secure than a confirmed transaction but since most miners respect the first seen rule it's fairly safe for small purchases.
 
-    There are investigations on how to make 0-conf more secure. One of the more interesting proposals is ◊link[z-forfeits]{0-conf forfeits} where you need to provide a larger sum as hostage and if you try to double spend you lose them.
+    There are investigations on how to make 0-conf more secure. One of the more interesting proposals is ◊link[z-forfeits]{0-conf forfeits} where you provide a larger sum as hostage and if you try to double spend you lose them.
 }
 
 ◊ndef["more-energy"]{
@@ -392,7 +398,7 @@ A 51% can be detected and there can be severe negative consequences:
     ◊li{It's hard to keep warehouses full of mining rigs of that scale a secret, there's a big risk to get caught.}
 }
 
-Bitcoin miners are rewarded in bitcoin and they also can't be spent until after 100 blocks---roughly 16 hours. Executing a 51% attack that crashes the price would directly harm the rewards. If the community goes for the nuclear option and change POW then the massive initial investment into mining equipment might be lost.
+Bitcoin miners are rewarded in bitcoin and they also can't be spent until after 100 blocks---roughly 16 hours. Executing a 51% attack that crashes the price would directly affect the rewards. If the community goes for the nuclear option and change POW then the massive initial investment into mining equipment might be lost.
 
 These risks needs to weighed against what profits a 51% attack could generate. Maybe exchanges could get defrauded for $50 million? A 51% miner would make that back in about two weeks---risk free.◊sn{btg2}
 
@@ -403,7 +409,7 @@ The biggest security risk for Bitcoin might instead be actors of state levels wh
 
 ◊subhead{An economic innovation}
 
-While cryptocurrencies combine several different technologies in an interesting way the true innovation is how they're secured by economic incentives---the most profitable way for miners is to follow the network rules.
+While cryptocurrencies combine several different technologies in an interesting way the real innovation is how they're secured by economic incentives---the most profitable way for miners is to follow the network rules.
 
 As noted earlier the current block reward for Bitcoin is 12.5 BTC---about $50,000. Losing out on just one block reward is a big loss in the cutthroat mining business, so miners are heavily incentivized to always work on the longest chain.
 
@@ -412,9 +418,8 @@ For example in a fork with two competing chains the most profitable move is to j
 It also doesn't make sense for a minority miner to try to double-spend, it will only cause them to lose money in the long run. Therefore only a miner with 51% can compromise the network security, and even then it might be more profitable to play by the rules.
 
 
-
 ◊ndef["btg2"]{
-    The case is a little different for cryptocurrencies that share POW algorithm with others. There miners could attack the minority chain and jump back to the majority chain after executing the attack.
+    The case is a little different for cryptocurrencies that share POW algorithm with others. The miners could attack the minority chain and jump back to the majority chain after executing the attack.
 }
 
 ◊(define ghash "https://www.coindesk.com/bitcoin-mining-detente-ghash-io-51-issue")
@@ -447,9 +452,9 @@ Some cryptocurrencies, for example Monero and Bitcoin Cash, have regular network
 ◊ndef["hard-soft"]{
     I have deliberatly simplified my usage of fork terminology. On a technical level it's useful to distinguish between two types of forks: ◊em{hard-forks} and ◊em{soft-forks}.
 
-    A hard-fork is a backwards incompatible change and all nodes must upgrade to avoid ending up on the old chain. The blocksize increase in Bitcoin Cash is for example a hard-fork.
+    A hard-fork is a backwards incompatible change and all nodes must upgrade to avoid ending up on the old chain. Bitcoin Cash forked off from Bitcoin using a hard-fork for example.
 
-    A soft-fork instead doesn't break older node implementations. They will simply ignore the new soft-fork rules---they will not fully validate the chain anymore but they will follow it. The rules are instead enforced by the miners who must upgrade. SegWit in Bitcoin is for example a soft-fork.
+    A soft-fork instead doesn't break older node implementations. They will simply ignore the new soft-fork rules---they will not fully validate the chain anymore but they will follow it. The rules are instead enforced by the miners who must upgrade. SegWit in Bitcoin was for example implemented using a soft-fork.
 }
 
 Because a network upgrade is a fork there will be two chains (as long as someone mines them). Sometimes the minority chain lives on as a new cryptocurrency, Ethereum Classic is for example the continuation of the old chain ◊link[dao]{after an Ethereum fork}.
@@ -463,13 +468,13 @@ You may then wonder---what decides which is the correct one? There is no clear a
 ◊(define nb 'nbsp)
 
 ◊ndef["valid"]{
-    Remember that to prevent double spending one transaction must be chosen, which one doesn't matter.
+    Remember that to resolve double spending one transaction must be chosen, which one doesn't matter.
 }
 
 
 ◊subhead{Alternative consensus models}
 
-There are alternatives to proof-of-work but none have so far been proven to work well. The most popular is proof-of-stake where instead of miners expending energy you have coin holders who vote.
+There are alternatives to proof-of-work but none have so far been proven to work well. The most popular is ◊em{proof-of-stake} where instead of miners expending energy you have coin holders who vote.
 
 One problem is the ◊link[nothing-at-stake]{nothing at stake problem} where a coin holder can vote on all forks where a proof-of-work miner can only vote on one of the forks.
 
@@ -482,14 +487,14 @@ It causes a situation where everyone are incentivized to vote on all forks. An a
 
 The chapter became very long despite skipping out on details here and there. If you want to go deeper I encourage you to do more research on your own.
 
-◊link[wp]{Bitcoin's whitepaper} is always a good place to begin and there are many good resources online. I've tried to include key concepts which you can use as starting points in your search.
+◊link[wp]{Bitcoin's white paper} is always a good place to begin and there are many good resources online. I've tried to include key concepts which you can use as starting points in your search.
 
 
 ◊subhead{Summary}
 
 ◊ol{
     ◊li{The blockchain is like a ledger which stores balances}
-    ◊li{The crucial problem is deciding between double spends (spending a coin twice)}
+    ◊li{The crucial problem is deciding between double spends (using a coin twice)}
     ◊li{Proof-of-work makes miners expend energy and compete for rewards}
     ◊li{Miners are used to resolve double spends}
     ◊li{The security assumption is that most miners work for profit}
