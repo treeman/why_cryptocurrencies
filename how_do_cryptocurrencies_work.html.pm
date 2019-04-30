@@ -161,7 +161,7 @@ The work is to find a solution to a computing problem◊sn{asics}. The problem i
     }
     ◊li{◊strong{Easy to verify}
 
-        While a problem should be hard to solve it must be very easy to verify. It should be easy for mobile phones to verify for example.
+        While a problem should be hard to solve it must be very easy to verify. It should be easy to verify on mobile phones for example.
     }
     ◊li{◊strong{Memoryless}
 
