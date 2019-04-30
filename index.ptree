@@ -1,11 +1,4 @@
 #lang pollen
 
-◊about_the_book.html{
-    how_to_use.html
-    free.html
-    about_me.html
-}
-◊look_out_for_snake_oil.html{}
-◊appendix.html{
-    bitcoin_whitepaper.html
-}
+◊|toc-pagetree|
+

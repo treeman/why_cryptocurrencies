@@ -129,6 +129,9 @@
      (img ((src ,(~a src))))
      ,figcaption))
 
+(define (raw-img #:src src)
+  `(img ((src ,(~a src)))))
+
 
 ;;; Margin-notes and side-notes
 (define note-defs (make-hash))

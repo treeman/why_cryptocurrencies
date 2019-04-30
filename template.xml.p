@@ -22,7 +22,7 @@
   (map validate
     (filter (λ (post)
                (not (skip-feed post)))
-      (pagetree->list (get-pagetree "index.ptree")))))
+      (pagetree->list toc-pagetree))))
 ◊(define (entry post)
   (->html
     `((entry
