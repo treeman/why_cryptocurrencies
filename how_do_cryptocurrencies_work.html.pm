@@ -158,10 +158,14 @@ The work is to find a solution to a computing problem◊sn{asics}. The problem i
     ◊li{◊strong{Hard enough}
 
         In Bitcoin one solution is expected every 10 minutes. The difficulty is continuously adjusted to allow miners to join and leave.
+
+        An example is playing a game of Yatzy, where the goal is to cast dice and get them all have the same number, and you change the number of dice in play.
     }
     ◊li{◊strong{Easy to verify}
 
         While a problem should be hard to solve it must be very easy to verify. It should be easy to verify on mobile phones for example.
+
+        For instance while multiplying two ◊link[primes]{prime numbers} is easy, it can be very difficult to determine which two primes given only the product. This is used to make a type of ◊link[public-key-cryptography]{public-key cryptography} safe.
     }
     ◊li{◊strong{Memoryless}
 
@@ -171,9 +175,9 @@ The work is to find a solution to a computing problem◊sn{asics}. The problem i
     }
 }
 
-A solution is proof that you've done the work---it's proof that you've expended energy. It's like a lottery and you can get lucky, but in the long run it balances out.
+Cryptographic hash functions are excellent choices, Bitcoin uses SHA-256 for example. For more details I recommend ◊link[mine-pen-paper]{this post (2014)} which shows how to mine Bitcoin with pen and paper.
 
-Since you require a significant investment to find a block this can be used as sybil resistance. You can't just create thousands of fake identities for free.
+A solution is proof that you've done the work---it's proof that you've expended energy. It's like a lottery and you can get lucky, but in the long run it balances out.  Since you require a significant investment to find a block this can be used as sybil resistance. You can't just create thousands of fake identities for free.
 
 Important to note is that everyone doesn't have to be a miner. The blockchain is open for anyone to read and validate, it's only writing that's exclusive to miners.
 
@@ -192,19 +196,27 @@ Important to note is that everyone doesn't have to be a miner. The blockchain is
 ◊(define protein-folding "https://en.wikibooks.org/wiki/Structural_Biochemistry/Proteins/Protein_Folding_Problem")
 ◊(define ASICs "https://en.wikipedia.org/wiki/Application-specific_integrated_circuit")
 ◊(define royal-flush "https://www.mathcelebrity.com/5cardbasic.php?hand=AAKQJ&pl=Royal+Flush")
+◊(define primes "https://whatis.techtarget.com/definition/prime-number")
+◊(define mine-pen-paper "http://www.righto.com/2014/09/mining-bitcoin-with-pencil-and-paper.html")
 
 
 ◊subhead{The blockchain}
 
 When a miner finds a solution she can then update the ledger by adding a block to the blockchain. A block is basically a collection of transactions.
 
-A blockchain is what it sounds like: a chain of blocks where a new block builds on previous blocks. When a miner searches for a solution she must target a block on a specific height---the POW problem is slightly different for every block.
+A blockchain is what it sounds like: a chain of blocks where a new block builds on previous blocks. When a miner searches for a solution she must target a block on a specific height---the POW problem includes a reference to the previous block. It only fits at a specific place in the chain.◊sn{specific-height} When a new block is added all miners need to work on a new problem targeting that block.
+
+◊ndef["specific-height"]{
+    This is why ◊link["#forks"]{◊em{forks}} naturally happen.
+
+    It's also a necessity to prevent miners from pooling blocks and using them to assemble a very long chain at a later date in an attempt to reverse transactions.
+}
 
 ◊img[#:src "/images/add_block.png"]{
     The blocks in the blockchain are linked with a key obtained by solving the POW problem.
 }
 
-The transactions must follow common rules, called consensus rules, otherwise other miners and users who use the blockchain will discard the block. For example a transaction cannot spend coins from an empty wallet or spend coins without having access to the private key of an address.
+The transactions must follow common rules, called ◊em{consensus rules}, otherwise other miners and users who use the blockchain will discard the block. For example a transaction cannot spend coins from an empty wallet or spend coins without having access to the private key of an address.
 
 In return for adding the block you get to collect the rewards. One for finding a block◊sn{blockreward} and you can also collect transaction fees for the transactions you include in the block.
 
@@ -235,7 +247,7 @@ The blockchain is duplicated, stored and maintained with many different people, 
 }
 
 ◊ndef["blockreward"]{
-    As I'm writing this the current blockreward for Bitcoin is 12.5 BTC or around $50,000. With one block expected every 10 min that's about $7,200,000 per day. Bitcoin mining is big business.
+    As I'm writing this the current block reward for Bitcoin is 12.5 BTC or around $50,000. With one block expected every 10 min that's about $7,200,000 per day. Bitcoin mining is big business.
 }
 
 ◊ndef["outputs"]{
