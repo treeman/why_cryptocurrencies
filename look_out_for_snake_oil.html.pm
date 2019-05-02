@@ -8,9 +8,9 @@
 ◊epigraph{
   ◊qt[#:author "Adam Back" #:src "Baltic Honeybadger 2017 Bitcoin Conference"
       #:url "https://www.youtube.com/watch?v=DHc81OL_hk4&feature=youtu.be&t=21235"]{
-    So I mean for today, you could have, some bitcoin business have a tab, so you pay them and then you work your tab there and presumably you cash your tab out if you don't use it.
+    So I mean for today, you could have, some Bitcoin business have a tab, so you pay them and then you work your tab there and presumably you cash your tab out if you don't use it.
 
-    If you have repeat custom... or maybe the shops in the local area could make a shared tab or something in anticipation of... you know somebody in the local area ... technology expert could make a local bitcoin tab that's interoperable between the shops and some sort of app to do it.
+    If you have repeat custom... or maybe the shops in the local area could make a shared tab or something in anticipation of... you know somebody in the local area ... technology expert could make a local Bitcoin tab that's interoperable between the shops and some sort of app to do it.
   }
 }
 
@@ -22,7 +22,7 @@ There are many projects who call themselves cryptocurrencies while not fulfillin
 ◊ul{
   ◊li{OneCoin and Bitconnect, they're plain pyramid schemes.◊sn{pyramid-schemes}}
   ◊li{Ripple.}
-  ◊li{Stablecoins like ◊link[tether]{Tether} or JP Morgan's ◊link[JPM-coin]{JPM coin}.}
+  ◊li{Stablecoins like ◊link[tether]{Tether}◊sn{tether} or JP Morgan's ◊link[JPM-coin]{JPM coin}.}
   ◊li{Sidechains, for example the Lightning Network.}
   ◊li{Smart tokens like the ERC20 tokens running on top of Ethereum.◊sn{ICOs}}
 }
@@ -31,6 +31,11 @@ Some might be useful but they don't have the same properties as cryptocurrencies
 
 ◊(define tether "https://tether.to/")
 ◊(define JPM-coin "https://decryptmedia.com/5173/jp-morgan-coin-cryptocurrency")
+◊(define tether-backed-74 "https://www.bloomberg.com/news/articles/2019-04-30/tether-says-stablecoin-is-only-backed-74-by-cash-securities")
+
+◊ndef["tether"]{
+    After years of suspicion Tether recently admitted ◊link[tether-backed-74]{it's only backed 74% by cash}.
+}
 
 
 ◊subhead{The blockchain hype}
@@ -44,30 +49,31 @@ Be aware of "the blockchain" being used only as a buzzword.
 
 ◊subhead{Warning signs to look out for}
 
-When evaluating a cryptocurrency here are some red flags to look out for:
+When evaluating cryptocurrencies here are some red flags to look out for:
 
 ◊ul{
     ◊li{Heavily slanted initial coin supply.◊sn{supply}}
     ◊li{Central authorities.}
+    ◊li{Bad consensus algorithms or centralized governance protocols.}
     ◊li{Promises that sound too good to be true.
 
         For example promising instant transactions and infinite scalability. While they're really compromising the decentralization and security of the network.
     }
     ◊li{Propaganda.
 
-        Social media is shock-full of people---or trolls---who tries to sell snake oil to you. Slander, lies and ◊link[bitcoin-censorship]{censorship}◊sn{censorship} is a daily occurrence.
+        Social media is shock-full of people---or trolls---who tries to sell snake oil to you. Slander, lies and censorship◊sn{censorship} is a daily occurrence.
     }
-    ◊li{Bad consensus algorithms or centralized governance protocols.}
     ◊li{Large drawbacks.
 
         Like having expensive and unreliable transactions or having to be online to receive payments.
     }
     ◊li{Problems are hand-waved away.
 
-        “We'll figure it out” or “It'll be ready in 18 months” (forever).}
+        “We'll figure it out” or “It'll be ready in 18 months” (forever).
+    }
 }
 
-There are many traps to fall into in this space. I think the best antidote is to try and learn as much as possible, and never be afraid to question things.
+There are many traps to fall into in this space. I think the best antidote is to try and learn as much as possible, and never be afraid to question.
 
 
 ◊ndef["pyramid-schemes"]{
@@ -87,7 +93,9 @@ There are many traps to fall into in this space. I think the best antidote is to
 }
 
 ◊ndef["censorship"]{
-    Imagine the irony of censorship being a problem surrounding censorship free money.
+    Imagine the irony of censorship being a problem in communities supporting censorship-free money.
+
+    Unfortunately ◊link[bitcoin-censorship]{examples} of ◊link[r/cryptocurrency-censorship]{censorship} on ◊link[bitcoin-censorship3]{Reddit} are ◊link[bitcoin-censorship2]{plentiful}.
 }
 
 ◊(define dash "https://bitcointalk.org/index.php?topic=999886.0")
@@ -95,5 +103,7 @@ There are many traps to fall into in this space. I think the best antidote is to
 ◊(define onecoin "https://www.bloomberg.com/news/articles/2019-03-08/onecoin-leaders-charged-in-u-s-with-operating-pyramid-scheme")
 ◊(define fbi-bitconnect "https://www.fbi.gov/resources/victim-services/seeking-victim-information/seeking-victims-in-bitconnect-investigation")
 ◊(define bitcoin-censorship "https://medium.com/@johnblocke/a-brief-and-incomplete-history-of-censorship-in-r-bitcoin-c85a290fe43")
+◊(define bitcoin-censorship2 "https://www.reddit.com/r/btc/comments/83vgdm/a_collection_of_evidence_regarding_bitcoins/")
+◊(define bitcoin-censorship3 "https://www.reddit.com/r/noncensored_bitcoin/comments/7414nf/september_2017_stats_post/")
 ◊(define r/cryptocurrency-censorship "https://www.trustnodes.com/2019/05/01/the-cryptocurrency-sub-tests-censorship-after-bitcoin-core-supporter-suddenly-becomes-top-mod")
 
