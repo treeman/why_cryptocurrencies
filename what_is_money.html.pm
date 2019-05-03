@@ -13,7 +13,7 @@
 
 Money is something completely necessary in our society, most people probably come in contact with money every day. We might worry when paying our expenses, that we don't have enough or even be glad for how much we have. But we seldom stop and think of what money really is.
 
-Not just how the physical coins and pieces of paper are made, but why does money exist? What makes it valuable? Are there different kinds of money? And are there good and bad forms of money?
+Not just how the physical coins and pieces of paper are made, but why does money exist? What makes it valuable? Are there different kinds of money? And are there good and bad forms of money?◊mn{money-or-currency}
 
 Before getting interested in cryptocurrencies I too had never asked these questions. I will try to provide some insight into this admittedly complex topic.
 
@@ -22,91 +22,146 @@ Before getting interested in cryptocurrencies I too had never asked these questi
 
 ◊todo{Switch out images to royalty free ones, alternatively replace with my own sketchy images}
 
-First let's look at some interesting historical examples of things that has been used as money. Some are predictable but others are quite perplexing.
+◊todo{Source for these claims}
+
+First let's look at some interesting historical examples of things that have been used as money. Some are predictable but others are quite perplexing.
+
+◊ndef["money-or-currency"]{
+    The words money and currency are often used interchangeably. Although I might be sloppy in my usage there is a subtle difference. Money refers to an intangible concept---you cannot reach out and grab it. Currency instead might refer to the physical coins themselves.
+
+    If that's the definition then maybe cryptocurrencies should be called crypto-money?
+}
 
 ◊section[#:class "money-examples"]{
     ◊money["Shells"
+           #:date "1200 B.C."
            #:img "/images/sea-shells-1994213_640.jpg"]{
-        Shells are bla bla...
+        Sea shells has been used as money for centuries, it was commonly used in parts of Africa and Asia but also in other parts of the world. During the slave trade in Africa vast quantities exchanged hands.
     }
-    ◊money["Gold coins in ancient Greece"
+    ◊money["Coins in ancient Greece"
+           #:date "500 B.C."
            #:img "https://upload.wikimedia.org/wikipedia/commons/4/40/EucratidesStatere.jpg"]{
-        Gold coins...
+        The Greeks used coins made from precious metal like silver, bronze and gold. They also stamped the coins with beautiful portraits for a truly modern look (already 3500 years ago).
     }
     ◊money["Rai stones"
-           #:date "1000 - 1400"
+           #:date "1000 - 1400 A.D."
            #:img "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Yap_Stone_Money.jpg/737px-Yap_Stone_Money.jpg"]{
-        Rai stones...
+        Rai stones is a form of stone money on the Yap Islands. They can be up to 4 m in diameter but most are much smaller, down to around 3.5 cm in diameter. Instead of moving the big ones you can instead tell people you've transferred them.
     }
     ◊money["A 20kg copper coin"
            #:date "1644"
            #:img "https://www.riksbank.se/imagevault/publishedmedia/2b6uukujdt950gdjqfvx/Kopparmynt_1624.png"]{
 
-        Another example of, honestly quite stupid, form of money is ◊link[largest-coin]{the world's largest coin.} It's a copper coin weighing 20kg, issued in Sweden.
+        Another example of---let's just say interesting---form of money is ◊link[largest-coin]{the world's largest coin.} It's a copper coin weighing 20kg, issued in Sweden.
 
-        Since copper was worth much less than silver very large coins had to be made to offset the difference. At that time coins did contain raw materials according to their value, which is not the case today.
+        Since copper was worth much less than silver, very large coins had to be made to offset the difference. At that time coins did contain raw materials according to their value, which is not the case today.
     }
     ◊money["Bank notes in hyperinflating Germany"
            #:date "1923"
            #:img "https://mondrian.mashable.com/uploads%252F2016%252F7%252F26%252Fgermaninflation_16.jpg%252Ffit-in__1440x1440.jpg?signature=lxEf1wsHHE3quSjlZbFBwlnKYjg="]{
-        Bank notes
+        Bank notes, paper money, is easier to handle than physical coins, but they do have problems of their own. After the first world war in Germany hyperinflation set in and quickly made existing notes worthless. It got so bad it was cheaper to use the notes as wallpaper instead of buying wallpaper.
     }
     ◊money["Cigarettes in prison"
            #:date "1994"
            #:img "https://productplacementblog.com/wp-content/uploads/2019/01/Lucky-Strike-Cigarettes-in-The-Shawshank-Redemption-1-800x450.jpg"]{
-        Shawshank Redemption
+        Like depicted in the movie Shawshank Redemption cigarettes are used in some prisons as a form of money. Today some prisons have started to ban smoking, so they instead use things like stamps.
     }
     ◊money["Euro bank notes"
            #:date "21th century"
            #:img "https://i.dailymail.co.uk/i/pix/2016/02/16/10/004918B700000258-3449097-image-a-18_1455617645563.jpg"]{
-        Notes...
+        There are many kinds of fiat currencies, for example the Euro. Modern coins are not made of valuable metal and paper notes are used for large denominations.
     }
     ◊money["Dogecoin"
            #:date "2013"
            #:img "https://dogecoin.com/imgs/dogecoin-300.png"]{
-        Created as a "joke currency" it quickly gained popularity as a tipping tool online. You can still find merchants who accept it online today for things like domain names, web hosting, VPNs or games.
+        Dogecoin is a cryptocurrency, while created as a "joke currency" it quickly gained popularity as a tipping tool online. You can still find merchants who accept it today for things like domain names, web hosting, VPNs or games.
     }
     ◊money["Marbles on the school yard"
            #:date "2017"
            #:img "https://images-na.ssl-images-amazon.com/images/I/81OSKE1n6gL._SL1500_.jpg"]{
-        The game "rutan".
+        Kids on the schoolyard often come up with interesting types of money. For example collectible card games or game components. Like marbles used in a Swedish game "rutan". Those with many marbles had the highest status in class.
     }
 }
 
 ◊(define largest-coin "https://www.riksbank.se/en-gb/about-the-riksbank/history/1600-1699/the-worlds-largest-coin/")
 
 ◊(define (money title #:img img #:date [date #f] . text)
+   (define xdate (if date
+                     `(div ((class "date")) ,date)
+                     ""))
    `(div ((class "example"))
       (img ((src ,img)))
       (div ((class "txt"))
-        (h3 ,title)
+        (div ((class "header"))
+          (h3 ,title)
+          ,xdate)
         ,@text)))
-
-
-◊ol{
-    ◊li{Sea shells}
-    ◊li{Gold coins (ancient Greeks)}
-    ◊li{Rai stones (1000 - 1400)}
-    ◊li{20kg copper coin (1644)}
-    ◊li{Hyperinflation in Germany (1923)}
-    ◊li{Cigarettes in prison (1994)}
-    ◊li{Euro bank notes (21th century)}
-    ◊li{Dogecoin (2013)}
-    ◊li{Marbles on the school yard "Rutan" (2017)}
-}
 
 
 ◊subhead{Bartering, and why do we need money?}
 
+How would life look like if we don't have money? We would have to turn to bartering---trading goods or services directly.◊sn{bartering}
+
+For example imagine if you're a farmer and you have a bunch of pigs. To buy a new tractor you need to trade with the tractor seller, and maybe you can buy the tractor for 10 pigs.
+
+◊todo{IMG farmer trades 10 pigs for a tractor}
+
+But there are problems with this system:
+
+◊ol{
+    ◊li{What if the tractor seller doesn't want your pigs?
+
+        You would have to trade with others and find something the seller would accept.
+    }
+    ◊li{What if you want to buy a loaf of bread?
+
+        You would have to kill a pig and offer parts to him.
+    }
+}
+
+In short it's extremely inefficient. In our example the farmer might have to do many trades just to find something the seller can accept. He might also lose value in the process by having to kill pigs prematurely.
+
+◊todo{IMG farmer trying to trade for a tractor, with many intermediate steps}
+
+This is why we as a society prefer to use money. Even if the thing we use as money itself is worthless---like pieces of paper---the function it serves is very valuable.
+
+◊ndef["bartering"]{
+    Bartering can happen on a small scale today. For example in your social circle you might trade favors instead of money.
+
+    In an economical collapse, like in the case of hyperinflation, bartering might make sense on a larger scale as well.
+}
+
 
 ◊subhead{State theory of money}
 
-◊em{Legal tender}
+One common answer to the question "what gives money value?" is ◊link[state-theory-of-money]{the State Theory of Money} (many refer to it unknowingly).
+
+The basic thesis is that it's the state that gives value to money.
+
+◊ol{
+    ◊li{Fiat currency is declared by the state to be ◊em{legal tender}, which means merchants have to accept it by law.}
+    ◊li{The state◊sn{fed} is responsible to regulate inflation.}
+    ◊li{Banks are insured by the state, increasing safety of the currency.}
+    ◊li{Before dropping the gold standard, fiat currencies were backed up by gold.}
+}
+
+While this might on the surface explain why fiat currencies are valuable, it fails to explain why other forms of money become valuable.
+
+◊ndef["fed"]{
+    In the US it's actually the Federal Reserve System, a central bank, that controls printing of money.
+}
+
+◊(define state-theory-of-money "https://socialsciences.mcmaster.ca/econ/ugcm/3ll3/knapp/StateTheoryMoney.pdf")
+
 
 ◊subhead{Subjective theory of value}
 
+Instead a better explanation is given by the ◊link[subjective-theory-of-value]{subjective theory of value}.
 
-◊subhead{How is it used?}
+◊(define subjective-theory-of-value "")
+
+
+◊subhead{What functions does money serve?}
 
 ◊ol{
     ◊li{Medium of exchange}
@@ -122,7 +177,7 @@ This raises some interesting questions:
 }
 
 
-◊subhead{What is good money?}
+◊subhead{What properties does good money have?}
 
 ◊ol{
     ◊li{ ◊strong{Divisible}: Can be divided into smaller units of value.}
