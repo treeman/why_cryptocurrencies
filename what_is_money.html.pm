@@ -1,7 +1,140 @@
 #lang pollen
 
 ◊(define-meta title "What is money?")
-◊(define-meta subtitle "There are no hard rules")
+◊(define-meta subtitle "It's subjective")
+◊(define-meta updated "2019-05-03T06:32:07+0200Z")
+◊(define-meta uuid "67cd34c5-058b-4908-a4a6-aed09aff22cc")
+
+◊epigraph{
+  ◊qt[#:author "J.P. Morgan" #:date "1912"]{
+     Money is gold, and nothing else.
+  }
+}
+
+Money is something completely necessary in our society, most people probably come in contact with money every day. We might worry when paying our expenses, that we don't have enough or even be glad for how much we have. But we seldom stop and think of what money really is.
+
+Not just how the physical coins and pieces of paper are made, but why does money exist? What makes it valuable? Are there different kinds of money? And are there good and bad forms of money?
+
+Before getting interested in cryptocurrencies I too had never asked these questions. I will try to provide some insight into this admittedly complex topic.
+
+
+◊subhead{Historical examples of money}
+
+◊todo{Switch out images to royalty free ones, alternatively replace with my own sketchy images}
+
+First let's look at some interesting historical examples of things that has been used as money. Some are predictable but others are quite perplexing.
+
+◊section[#:class "money-examples"]{
+    ◊money["Shells"
+           #:img "/images/sea-shells-1994213_640.jpg"]{
+        Shells are bla bla...
+    }
+    ◊money["Gold coins in ancient Greece"
+           #:img "https://upload.wikimedia.org/wikipedia/commons/4/40/EucratidesStatere.jpg"]{
+        Gold coins...
+    }
+    ◊money["Rai stones"
+           #:date "1000 - 1400"
+           #:img "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Yap_Stone_Money.jpg/737px-Yap_Stone_Money.jpg"]{
+        Rai stones...
+    }
+    ◊money["A 20kg copper coin"
+           #:date "1644"
+           #:img "https://www.riksbank.se/imagevault/publishedmedia/2b6uukujdt950gdjqfvx/Kopparmynt_1624.png"]{
+
+        Another example of, honestly quite stupid, form of money is ◊link[largest-coin]{the world's largest coin.} It's a copper coin weighing 20kg, issued in Sweden.
+
+        Since copper was worth much less than silver very large coins had to be made to offset the difference. At that time coins did contain raw materials according to their value, which is not the case today.
+    }
+    ◊money["Bank notes in hyperinflating Germany"
+           #:date "1923"
+           #:img "https://mondrian.mashable.com/uploads%252F2016%252F7%252F26%252Fgermaninflation_16.jpg%252Ffit-in__1440x1440.jpg?signature=lxEf1wsHHE3quSjlZbFBwlnKYjg="]{
+        Bank notes
+    }
+    ◊money["Cigarettes in prison"
+           #:date "1994"
+           #:img "https://productplacementblog.com/wp-content/uploads/2019/01/Lucky-Strike-Cigarettes-in-The-Shawshank-Redemption-1-800x450.jpg"]{
+        Shawshank Redemption
+    }
+    ◊money["Euro bank notes"
+           #:date "21th century"
+           #:img "https://i.dailymail.co.uk/i/pix/2016/02/16/10/004918B700000258-3449097-image-a-18_1455617645563.jpg"]{
+        Notes...
+    }
+    ◊money["Dogecoin"
+           #:date "2013"
+           #:img "https://dogecoin.com/imgs/dogecoin-300.png"]{
+        Created as a "joke currency" it quickly gained popularity as a tipping tool online. You can still find merchants who accept it online today for things like domain names, web hosting, VPNs or games.
+    }
+    ◊money["Marbles on the school yard"
+           #:date "2017"
+           #:img "https://images-na.ssl-images-amazon.com/images/I/81OSKE1n6gL._SL1500_.jpg"]{
+        The game "rutan".
+    }
+}
+
+◊(define largest-coin "https://www.riksbank.se/en-gb/about-the-riksbank/history/1600-1699/the-worlds-largest-coin/")
+
+◊(define (money title #:img img #:date [date #f] . text)
+   `(div ((class "example"))
+      (img ((src ,img)))
+      (div ((class "txt"))
+        (h3 ,title)
+        ,@text)))
+
+
+◊ol{
+    ◊li{Sea shells}
+    ◊li{Gold coins (ancient Greeks)}
+    ◊li{Rai stones (1000 - 1400)}
+    ◊li{20kg copper coin (1644)}
+    ◊li{Hyperinflation in Germany (1923)}
+    ◊li{Cigarettes in prison (1994)}
+    ◊li{Euro bank notes (21th century)}
+    ◊li{Dogecoin (2013)}
+    ◊li{Marbles on the school yard "Rutan" (2017)}
+}
+
+
+◊subhead{Bartering, and why do we need money?}
+
+
+◊subhead{State theory of money}
+
+◊em{Legal tender}
+
+◊subhead{Subjective theory of value}
+
+
+◊subhead{How is it used?}
+
+◊ol{
+    ◊li{Medium of exchange}
+    ◊li{Unit of account}
+    ◊li{Store of value}
+}
+
+This raises some interesting questions:
+
+◊ul{
+    ◊li{Can anything be used as money?}
+    ◊li{Are there "good" and "bad" forms of money?}
+}
+
+
+◊subhead{What is good money?}
+
+◊ol{
+    ◊li{ ◊strong{Divisible}: Can be divided into smaller units of value.}
+    ◊li{ ◊strong{Fungible}: One unit is viewed as interchangeable with another.}
+    ◊li{ ◊strong{Portable}: Individuals can carry money with them and transfer it to others.}
+    ◊li{ ◊strong{Durable}: An item must be able to withstand being used repeatedly.}
+    ◊li{ ◊strong{Acceptable}: Everyone must be able to use the money for transactions.}
+    ◊li{ ◊strong{Uniform}: All versions of the same denomination must have the same purchasing power.}
+    ◊li{ ◊strong{Limited in Supply}: The supply of money in circulation ensures values remain relatively constant.}
+}
+
+◊subhead{Old}
 
 **Legar tender**
 

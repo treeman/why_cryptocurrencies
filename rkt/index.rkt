@@ -19,7 +19,7 @@
      properties_of_a_cryptocurrency.html
      "How do cryptocurrencies work?"
      "Look out for snake oil"
-     "What is money?"
+     what_is_money.html
      "Are cryptocurrencies money?")
     ("Better digital payments"
      "Safer & cheaper for merchants"
