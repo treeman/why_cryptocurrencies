@@ -17,7 +17,7 @@
      about_me.html)
     (what_is_a_cryptocurrency.html
      properties_of_a_cryptocurrency.html
-     "How do cryptocurrencies work?"
+     how_do_cryptocurrencies_work.html
      "Look out for snake oil"
      "What is money?"
      "Are cryptocurrencies money?")
