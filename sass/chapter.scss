@@ -119,18 +119,16 @@
         display: none;
     }
 
-    //ol {
-        //margin-top: 0.5rem;
-    //}
-    //ol > li {
-        //font-size: 100%;
-    //}
     a {
         background: none;
         text-shadow: none;
     }
     a:hover {
         text-decoration: underline;
+    }
+
+    .planned {
+        color: $planned-chapter-link;
     }
 }
 
@@ -265,6 +263,10 @@ pre {
     display: inline-block;
 }
 
+.sidenote img, .marginnote img {
+    max-width: 100%;
+}
+
 .snp > code {
     overflow-wrap: break-word;
 }
@@ -321,6 +323,16 @@ $sidenote-float-width: 1280px;
     .margin-toggle:checked + .marginnote {
         display: block;
         margin: 1rem;
+        // Center images, paragraphs reset.
+        text-align: center;
+    }
+    .sidenote, .marginnote {
+        .snp {
+            // Reset centering to default.
+            text-align: left;
+            // Dsiplay as block to not be cut by images.
+            display: block;
+        }
     }
     //.sidenote { background-color: lightblue; }
     //.marginnote { background-color: aqua; }

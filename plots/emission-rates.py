@@ -3,6 +3,9 @@ import matplotlib.pyplot as plt
 import math
 from matplotlib.ticker import FuncFormatter
 
+from matplotlib import patheffects
+import matplotlib as mpl
+
 import matplotlib.patches as mpatches
 
 def btc(x):
@@ -60,6 +63,10 @@ xmr_y = [0, 6967312, 11319909, 14382647, 15671138, 16849637, 17460360, 17679028,
 # It's just for the high level understanding. Plus xkcd style is pretty
 plt.xkcd()
 
+# Removes remaining white lines after xkcdifying the plot.
+# Changing the background didn't fix it.
+mpl.rcParams['path.effects'] = [patheffects.withStroke(linewidth=0)]
+
 fig = plt.figure()
 ax = fig.add_subplot(1, 1, 1)
 
@@ -85,6 +92,6 @@ plt.legend(loc='lower right')
 
 plt.figtext(0.03, 0.91, 'Circulating supply')
 
-plt.savefig('emission-rates.svg', format="svg")
+plt.savefig('emission-rates.svg', format="svg", transparent=True)
 print "done"
 

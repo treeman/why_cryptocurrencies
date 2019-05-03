@@ -2,14 +2,13 @@
 ◊(define title (select-from-metas 'title here))
 ◊(define head-title (string-append main-title ": " title))
 ◊(define subtitle (select-from-metas 'subtitle here))
-◊(define no-side-space (select-from-metas 'no-side-space here))
-◊(define no-section-chapters-headers (select-from-metas 'no-section-chapters-header here))
+◊(define side-space? (not (select-from-metas 'no-side-space here)))
+◊(define section-chapters-headers? (not (select-from-metas 'no-section-chapters-header here)))
 ◊(define article-class
    (let ((extra (select-from-metas 'extra-article-class here)))
      (if extra
          (string-append "chapter " extra)
          "chapter")))
-
 ◊(define prev-page
    (let ((p (previous here)))
      (if (equal? p 'index.html)
@@ -17,16 +16,6 @@
          p)))
 ◊(define next-page (next here))
 ◊(define parent-page (parent here))
-◊(define here-children (children here))
-◊(define (make-subnav children)
-  (->html
-    (nav #:class "subnav"
-      (if no-section-chapters-headers
-        ""
-        `(span ((class "chapters")) "Chapters in this section"))
-      (apply ul
-        (for/list ([child (in-list children)])
-          (li (link (symbol->string child) (select-from-metas 'title child))))))))
 ◊(define (ref page txt)
   (->html
     (link (symbol->string page) txt)))
@@ -55,12 +44,11 @@
 
         ◊(->html doc #:splice? #t)
 
-        ◊when/splice[here-children]{
-            ◊(make-subnav here-children)
-        }
+        ◊(->html (make-section-nav #:section-header? section-chapters-headers?
+                                    here))
       </article>
 
-      ◊(unless no-side-space (->html `(div ((class "side-space")))))
+      ◊(when side-space? (->html `(div ((class "side-space")))))
 
       <nav class="edge-wrapper">
         ◊when/splice[prev-page]{

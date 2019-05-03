@@ -51,6 +51,12 @@ def main():
             dst = os.path.join(output_dir, src)
             src = os.path.join(dirname, src)
             copy(src, dst)
+    # Need to remove files generated from .p extensions.
+    # Easier to just do it after than change capture above.
+    for pfile in glob.glob("*.p"):
+        actual = os.path.join(output_dir, os.path.splitext(pfile)[0])
+        if os.path.isfile(actual):
+            os.unlink(actual)
     print("Done")
 
 
