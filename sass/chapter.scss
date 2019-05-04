@@ -45,6 +45,13 @@
     color: $eth-light-gray;
 }
 
+/*
+ * Headers
+ */
+.chapter h2 > a:hover {
+    color: $body-font-color;
+}
+
 
 /*
  * Lists

@@ -17,7 +17,7 @@ Note that the white paper was created in 2008 and some terminology and implement
 
 ◊subhead{Alterations}
 
-I'm sad I have to include this but there have been suggestions to ◊link[alter-wp]{alter the whitepaper hosted on bitcoin.org}. Rewriting an academic paper and rewriting Bitcoin's history for personal business interests is of course completely unacceptable, but here we are.
+I'm sad I have to include this but there have been suggestions to ◊link[alter-wp]{alter the white paper hosted on bitcoin.org}. Rewriting an academic paper and rewriting Bitcoin's history for personal business interests is of course completely unacceptable, but here we are.
 
 Therefore you might want to make sure you're reading the original unaltered white paper. There are those who ◊link[track-alterations]{try to keep track} of the different versions found online but it's always best to do it yourself. You can compare the pdf's sha256 hash with this:
 
@@ -39,4 +39,5 @@ If you want to go even further the white paper is also embedded in the blockchai
      "Amendments to the Bitcoin paper"))
 ◊(define track-alterations
     `("https://blockchair.com/bitcoin/whitepaper/"
-      "Blockchair tracks whitepaper versions found online"))
+      "Blockchair tracks white paper versions found online"))
+
