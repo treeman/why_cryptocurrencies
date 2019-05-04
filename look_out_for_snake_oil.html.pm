@@ -14,6 +14,8 @@
   }
 }
 
+A snake oil salesperson sells, or promotes, a valueless or fraudulent solution. The cryptocurrency space is full of such people and broken solutions.
+
 
 ◊subhead{Not really cryptocurrencies}
 
@@ -28,6 +30,8 @@ There are many projects who call themselves cryptocurrencies while not fulfillin
 }
 
 Some might be useful but they don't have the same properties as cryptocurrencies like Bitcoin, and they don't work the same way.
+
+For example stablecoins depend on a third party issuer and redeemer---the very thing cryptocurrencies are meant to remove. Sidechains have fundamentally different security trade-offs and they work differently. They are built on top of---but they are not---a cryptocurrency.
 
 ◊(define tether "https://tether.to/")
 ◊(define JPM-coin "https://decryptmedia.com/5173/jp-morgan-coin-cryptocurrency")
@@ -57,7 +61,7 @@ When evaluating cryptocurrencies here are some red flags to look out for:
     ◊li{Bad consensus algorithms or centralized governance protocols.}
     ◊li{Promises that sound too good to be true.
 
-        For example promising instant transactions and infinite scalability. While they're really compromising the decentralization and security of the network.
+        For example promising instant transactions and infinite scalability. While they're really compromising the decentralization and security of the network. Proof-of-stake coins are usually guilty of this.
     }
     ◊li{Propaganda.
 
