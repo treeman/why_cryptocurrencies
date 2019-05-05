@@ -98,6 +98,11 @@ First let's look at some interesting historical examples of things that have bee
         ,@text)))
 
 
+◊subhead{The gold standard}
+
+Just an historical note.
+
+
 ◊subhead{Bartering, and why do we need money?}
 
 How would life look like if we don't have money? We would have to turn to bartering---trading goods or services directly.◊sn{bartering}
@@ -163,31 +168,109 @@ Instead a better explanation is given by the ◊link[subjective-theory-of-value]
 
 ◊subhead{What functions does money serve?}
 
+If more or less anything can be used as money, it makes more sense to look at how money is used. Knowledgeable people seem to agree money has three major functions:
+
+◊todo{Images for these examples}
+
 ◊ol{
-    ◊li{Medium of exchange}
-    ◊li{Unit of account}
-    ◊li{Store of value}
+    ◊li{◊strong{Medium of exchange}
+        
+        It can be used to intermediate the exchange of goods and services.
+       
+        For example the use of sea shells as money. The shells themselves aren't particularly useful, but their use as a medium of exchange is.
+    }
+    ◊li{◊strong{Unit of account}
+    
+        A standard unit to measure the market value of goods and services.
+
+        For instance car prices in across Sweden can be compared in SEK.◊sn{cars-south}
+    }
+    ◊li{◊strong{Store of value}
+
+        It maintains sits value over time.    
+
+        A piece of gold could for example buy clothes in both ancient Greece and today.
+    }
 }
 
-This raises some interesting questions:
+◊ndef["cars-south"]{
+    Used cars are usually cheaper in the south of Sweden, for some reason unknown to me.
+}
+
+Note that these are functions of usage and adoption. For instance if something has been a store of value a period of time it doesn't mean it will continue to be a good store of value in the future.
+
+But it does raise some interesting question:
 
 ◊ul{
     ◊li{Can anything be used as money?}
     ◊li{Are there "good" and "bad" forms of money?}
 }
 
+As seen from historical examples of money I think it's safe to conclude that yes, basically anything can be used as money. But to evaluate if money is good or bad we need to look at other properties.
+
 
 ◊subhead{What properties does good money have?}
 
+These are usually the intrinsic properties money should have:
+
+◊todo{Reword these}
+
 ◊ol{
-    ◊li{ ◊strong{Divisible}: Can be divided into smaller units of value.}
-    ◊li{ ◊strong{Fungible}: One unit is viewed as interchangeable with another.}
-    ◊li{ ◊strong{Portable}: Individuals can carry money with them and transfer it to others.}
-    ◊li{ ◊strong{Durable}: An item must be able to withstand being used repeatedly.}
-    ◊li{ ◊strong{Acceptable}: Everyone must be able to use the money for transactions.}
-    ◊li{ ◊strong{Uniform}: All versions of the same denomination must have the same purchasing power.}
-    ◊li{ ◊strong{Limited in Supply}: The supply of money in circulation ensures values remain relatively constant.}
+    ◊li{◊strong{Acceptable}
+
+        Everyone must be able to use the money for transactions.
+
+        If for example only the very rich can use it, then it's not good money.
+    }
+    ◊li{◊strong{Divisible}
+
+        Can be divided into smaller units of value.
+
+        If it's difficult to subdivide then it's hard to use in practice. It's why cash always come with coins and notes with different values.
+    }
+    ◊li{◊strong{Durable}
+
+        An item must be able to withstand being used repeatedly.
+
+        Food is for example not durable and makes for poor money.
+    }
+    ◊li{◊strong{Fungible}
+
+        One unit is viewed as interchangeable with another.
+
+        For instance shares in a company should be the same, even if bought at different times and at different prices.
+    }
+    ◊li{◊strong{Limited in supply}
+
+        The supply of money in circulation ensures values remain relatively constant.
+
+        It's important that money can't be counterfeit, otherwise it would be possible to produce an unlimited amount of money.
+    }
+    ◊li{◊strong{Portable}
+
+        Individuals can carry money with them and transfer it to others.
+
+        Money should be practical.
+    }
+    ◊li{◊strong{Uniform}
+
+        All versions of the same denomination must have the same purchasing power.
+
+        Coins made of precious metal and of the same type should contain the same amount.
+    }
 }
+
+
+◊stable{
+    -           Divisible  Fungible  Portable  Durable  Acceptable  Uniform  Limited supply
+    Shells      Ok         Ok        Ok        Decent   Ok          Decent   Decent
+    Gold coins  Ok         Ok        Ok        Ok       Ok          Ok       Ok
+    Rai stones  Ok         Ok        Bad       Ok       Decent      Ok       Ok          
+    Cigarettes  Bad        Ok        Ok        Decent   Ok          Ok       Decent
+    Bank notes  Ok         Ok        Ok        Decent   Ok          Ok       Decent
+    Marbles     Bad        Decent    Ok        Ok       Ok          Decent   Decent
+}
+
 
 ◊subhead{Old}
 
@@ -324,14 +407,17 @@ Anything that fulfills these properties can be considered as money[^wikipedia]
 
 In other words:
 
-1. **Divisible**: Can be divided into smaller units of value.
-1. **Fungible**: One unit is viewed as interchangeable with another.
-1. **Portable**: Individuals can carry money with them and transfer it to others.
-1. **Durable**: An item must be able to withstand being used repeatedly.
 1. **Acceptable**: Everyone must be able to use the money for transactions.
-1. **Uniform**: All versions of the same denomination must have the same purchasing power.
+1. **Divisible**: Can be divided into smaller units of value.
+1. **Durable**: An item must be able to withstand being used repeatedly.
+1. **Fungible**: One unit is viewed as interchangeable with another.
 1. **Limited in Supply**: The supply of money in circulation ensures values remain relatively constant.
+1. **Portable**: Individuals can carry money with them and transfer it to others.
+1. **Uniform**: All versions of the same denomination must have the same purchasing power.
 
 
 Fiat money doesn't derive it's value from use as a physical commodity but from being declared by a government to be legal tender. That is it must be accepted as a form of payment within the boundaries of the country for all debts, public and private.
+
+http://money.visualcapitalist.com/infographic-the-properties-of-money/
+https://www.aier.org/
 
