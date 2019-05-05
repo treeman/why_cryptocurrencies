@@ -20,7 +20,7 @@
      how_do_cryptocurrencies_work.html
      "Look out for snake oil"
      "What is money?"
-     "Are cryptocurrencies money?")
+     are_cryptocurrencies_money.html)
     ("Better digital payments"
      "Safer & cheaper for merchants"
      "Uncensorable donations"
