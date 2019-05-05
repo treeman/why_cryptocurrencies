@@ -34,8 +34,12 @@
     (set! attrs (cons `(class ,c) attrs)))
   `(a ,attrs ,text))
 
-(define (subhead txt)
-  `(h2 ,txt))
+(define (subhead x)
+  `(a ((name ,(to-name x)))
+     (h2 ,x)))
+
+(define (to-name x)
+  (string-replace (string-downcase x) " " "-"))
 
 (define (stable #:header [header #t] #:centered [centered #t] . rows)
   (define cleaned-rows (filter-not whitespace? rows))
@@ -128,6 +132,9 @@
      ,attrs
      (img ((src ,(~a src))))
      ,figcaption))
+
+(define (raw-img #:src src)
+  `(img ((src ,(~a src)))))
 
 
 ;;; Margin-notes and side-notes

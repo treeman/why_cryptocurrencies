@@ -2,6 +2,9 @@
 *.css
 *.xml
 compiled/
-img-src
 _site/
 fonts/*
+*-autosave.kra
+*~
+img-src/*.png
+img-src/*.svg
