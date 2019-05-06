@@ -18,7 +18,7 @@
     (what_is_a_cryptocurrency.html
      properties_of_a_cryptocurrency.html
      how_do_cryptocurrencies_work.html
-     "Look out for snake oil"
+     look_out_for_snake_oil.html
      what_is_money.html
      "Are cryptocurrencies money?")
     ("Better digital payments"
