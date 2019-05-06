@@ -64,12 +64,12 @@ All in all cryptocurrencies fulfill the properties excellently.
 ◊(define us-blacklist "https://home.treasury.gov/news/press-releases/sm556")
 
 
-◊subhead{Comparisons with other forms of money}
+◊subhead{Comparing properties with other forms of money}
 
-This is a table of how I think cryptocurrencies compares to other good forms of money. I differentiate between the two forms of fiat, digital and physical. Gold can be either gold coins or gold bars---basically some physical form of gold.
+This is a table of how I think cryptocurrencies compares to other good forms of money. I differentiate between the two forms of fiat---digital and physical---because they have different properties. Gold can be either gold coins or gold bars---basically some physical form of gold.
 
 ◊table[#:class "centered crypto-eval"]{◊tbody{
-    ◊tr{◊td{}   ◊tds{Fiat (digital)} ◊tds{Cash (physical)} ◊tds{Gold} ◊tds{Cryptocurrencies}}
+    ◊tr{◊td{}   ◊tds{Fiat (digital)} ◊tds{Fiat (physical)} ◊tds{Gold} ◊tds{Cryptocurrencies}}
     ◊tr{◊tds{Acceptable}     ◊en{poor}      ◊en{excellent} ◊en{excellent} ◊en{excellent}}
     ◊tr{◊tds{Divisible}      ◊en{excellent} ◊en{good}      ◊en{good}      ◊en{excellent}}
     ◊tr{◊tds{Durable}        ◊en{excellent} ◊en{good}      ◊en{excellent} ◊en{good}}
@@ -139,7 +139,7 @@ We've looked at the properties, but how well does it function as money, today?
 ◊ol{
     ◊li{◊strong{Medium of exchange}
 
-        Cryptocurrencies work well as a medium of exchange.
+        Cryptocurrencies work well as a medium of exchange, but it's not commonly used.
     }
     ◊li{◊strong{Unit of account}
 
@@ -183,21 +183,57 @@ Perhaps it's to be expected that cryptocurrencies aren't global money yet---it's
 }
 
 
+◊subhead{How well do other forms of money function?}
+
+Again let's try to compare cryptocurrencies with the other forms of money. This time I combine digital and physical, since they function the same in practice.
+
+◊table[#:class "centered crypto-eval"]{◊tbody{
+    ◊tr{◊td{}                       ◊tds{Fiat}      ◊tds{Gold}     ◊tds{Cryptocurrencies}}
+    ◊tr{◊tds{Medium of exchange}    ◊en{excellent}  ◊en{good} ◊en{good}}
+    ◊tr{◊tds{Unit of account}       ◊en{excellent}  ◊en{poor}      ◊en{poor}}
+    ◊tr{◊tds{Store of value}        ◊en{poor}       ◊en{excellent} ◊en{poor}}
+}}
+
+With the motivations:
+
+◊ol{
+    ◊li{Both gold and cryptocurrencies can work well as a ◊strong{medium of exchange}. But they're not commonly used as such, which decreases their value as a medium of exchange. There's a feedback loop here: the more they're used the better they are, and the reverse holds true as well.}
+
+    ◊li{Nobody prices goods as "0.2 ounce of gold" or "0.13 BTC", neither gold nor cryptocurrencies is currently used as a ◊strong{unit of account}.}
+
+    ◊li{Fiat is not a good ◊strong{store of value}. If you store money in your bank account or beneath your mattress inflation will eat away the value. Cryptocurrencies, despite the increase in price, are far too volatile.}
+}
+
+◊ndef["medium-of-exchange"]{
+    I was thinking of giving both gold and cryptocurrencies a poor or possibly a good rating as a medium of exchange, because they're not used that much. However I rate them as how well they can be used, not if they are used.
+}
+
+While cryptocurrencies match up poorly, there is no perfect alternative.
+
+
 ◊subhead{What do law makers say?}
 
-Several countries---◊link[skatt-bitcoin]{like Sweden}---have ruled that Bitcoin isn't a currency because there is no responsible issuer and it's not a legal tender in any country.
+Several countries---◊link[skatt-bitcoin]{like Sweden}---have ruled that Bitcoin isn't a currency. The reason is there's no responsible issuer and it's not legal tender◊sn{legal-tender} in any country.
 
-Cryptocurrencies just doesn't fit into the existing rules to be classified as a fiat currency. One of the defining rules of fiat is to have a responsible issuer---something Bitcoin was created to remove.
+◊ndef["legal-tender"]{
+    Remember that legal tender declares that you have to accept it as money by law.
+}
+
+Cryptocurrencies just doesn't fit into existing rules of fiat currencies. This often happens with new innovations that break the mold---the laws cannot keep up.◊sn{patents} For instance cryptocurrencies removes the third party requirement, something previously thought impossible.
+
+◊ndef["patents"]{
+    Another beautiful example of laws not keeping up with technology is patents. ◊link[software-patents]{Software patents works absolutely horribly}, yet software is continuously pushed into the existing framework that doesn't really fit.
+
+    One example is ◊link[one-click]{Amazon's one-click checkout patent}.
+}
 
 There are others who've ruled in favor of Bitcoin as a currency. For example ◊link[eu-ruled]{EU ruled} that VAT is not applicable to the conversion between fiat currency and Bitcoin, however VAT still applies when used for goods and services.
 
-Regardless if Bitcoin is classified as a traditional currency it can still be and function as money. After all many historical examples of money can't be called fiat currency either.
-
+◊(define software-patents "https://www.eff.org/deeplinks/2013/02/deep-dive-software-patents-and-rise-patent-trolls")
+◊(define one-click "https://patents.google.com/patent/US5960411")
 ◊(define skatt-bitcoin
     `("https://www4.skatteverket.se/rattsligvagledning/373946.html?date=2018-12-17" "Swedish link: Skatteverket divestment of Bitcoin (2018-12-17)"))
-
 ◊(define eu-ruled "http://curia.europa.eu/juris/document/document.jsf?text=&docid=170305&pageIndex=0&doclang=en&mode=req&dir=&occ=first&part=1&cid=604646")
-
 ◊(define prev-chapter "#")
 
 
