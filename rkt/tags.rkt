@@ -64,11 +64,13 @@
   `(div ((class "epigraph"))
        ,@txt))
 
-(define (qt #:author author #:src [src #f] #:url [url #f] #:date [date #f] . txt)
+(define (qt #:author [author #f] #:src [src #f] #:url [url #f] #:date [date #f] . txt)
   (define ref (if url
                   (link url src)
                   src))
-  (define cite `((span ((class "author")) ,author ", ")))
+  (define cite (if author
+                   `((span ((class "author")) ,author ", "))
+                   `()))
   (when (or url src)
     (let ((ref (if url
                   (link url src)
