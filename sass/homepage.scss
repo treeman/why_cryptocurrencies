@@ -40,13 +40,6 @@
 
 .toc h1 {
     font-size: 1.1rem;
-    //margin: 0;
-    //padding: 0;
-    //margin-bottom: 0.3rem;
-    //margin-bottom: 0.45rem;
-    //padding-bottom: 0.2rem;
-    //border-bottom: 1px dashed $body-hr-color;
-    //width: 14rem;
 }
 .toc ul {
     margin-top: 0.5rem;
@@ -58,7 +51,5 @@
     }
 }
 .toc .planned {
-    //color: $eth-light-gray;
-    color: #b3b0ac;
-    color: #aaacaf;
+    color: $planned-chapter-link;
 }
