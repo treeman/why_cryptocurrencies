@@ -298,7 +298,7 @@ It's not really a requirement that the money must have an intrinsic value, the r
 
 The term ◊em{sound money} refers to money that is not prone to sudden changes in long term purchasing power. If the supply of money differs from the demand, which will happen with fiat due to the disconnect between banks and the market, then there will be changes.
 
-While fiat has many positive properties it doesn't fulfill the properties of money completely and is considered unsound money.
+While fiat has many positive properties, after the move away from the gold standard, it's now considered unsound money.
 
 
 ◊ndef["fractional-banking-good"]{
