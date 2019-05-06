@@ -28,7 +28,7 @@ To decide if cryptocurrencies are good forms of money or not, we'll take a look 
     }
     ◊li{◊strong{Durable}
 
-        Coins can be used an infinite amount of times. The only drawback is keeping your private key secure, so you don't lose your coins.
+        Coins can be used an infinite amount of times. The only drawback is keeping your private key secure, so you don't lose your coins.◊sn{backups}
     }
     ◊li{◊strong{Fungible}
 
@@ -49,6 +49,13 @@ To decide if cryptocurrencies are good forms of money or not, we'll take a look 
 }
 
 All in all cryptocurrencies fulfill the properties excellently.
+
+Cryptocurrencies can also be considered to be sound money---the value is entirely market driven and there is no manipulation of the supply.◊sn{backed}
+
+◊ndef["backed"]{
+    Traditionally sound money refers to money backed by precious material. Cryptocurrencies are instead backed by cryptography, and in Bitcoin's case the supply mimics the gold supply.
+}
+
 
 ◊ndef["acceptable"]{
     The only requirement is a mobile phone and an internet connection. A fairly small requirement given the stated purpose being ◊em{digital} cash.
@@ -90,7 +97,7 @@ I know this might be controversial, so let me motivate some of the entries.
 
     ◊li{Banks can freeze your digital assets, for example if you fail to disclose the source of funds. Therefore it gets a lower score on ◊strong{fungibility}.◊sn{again-monero}}
 
-    ◊li{Both digital and physical fiat gets a poor score on ◊strong{limited supply}. Per the discussion in the previous chapter, banks and central banks can increase the supply as they see fit.}
+    ◊li{Both digital and physical fiat gets a poor score on ◊strong{limited supply}. Per the discussion in the previous chapter, banks and central banks can increase the supply as they see fit. Fiat money is unsound.}
 
     ◊li{Cryptocurrencies are simply much more ◊strong{portable} than the other options. Carrying large amounts in cash or gold is cumbersome and digital fiat isn't easy to move across borders.◊sn{borders}}
 
@@ -102,6 +109,10 @@ Even if you disagree about certain choices, it's hard to disagree that cryptocur
 But of course this doesn't give the whole picture. For example a big difference between cryptocurrencies and gold is that cryptocurrencies are digital. This isn't only positive---cryptocurrency implementations can have bugs that might have severe negative consequences.◊sn{bugs}
 
 Another difference is that gold has stood the test of time. It's been used as money for thousands of years, while cryptocurrencies are just more than 10 years old.
+
+◊ndef["backups"]{
+    Because phones can break or be stolen, you should write down a seed as backup. It's a good idea to secure it from fire, theft and simply losing it.
+}
 
 ◊ndef["again-monero"]{
     I note again that there exists fungible cryptocurrencies.
@@ -147,12 +158,12 @@ We've looked at the properties, but how well does it function as money, today?
     }
     ◊li{◊strong{Store of value}
 
-        The valuation is highly driven by speculation and has been notoriously volatile.◊sn{sov}
+        The valuation is highly speculation driven and has been notoriously volatile.◊sn{sov}
     }
 }
 
 ◊ndef["sov"]{
-    ◊todo{Store of value comments}
+    There is a clique of Bitcoin supporters who claim the primary, and sometimes even the only, function of Bitcoin is as a store of value. Unfortunately it's based on wishful thinking and not reality. Something that goes from $17,000 to $4,000 in one year (Jan 2018--2019) is not a good store of value.
 }
 
 While cryptocurrencies are used as money in certain communities and for certain goods◊sn{goods}, it is not in widespread use. It does not function very well as money globally, today.
@@ -185,7 +196,7 @@ Perhaps it's to be expected that cryptocurrencies aren't global money yet---it's
 
 ◊subhead{How well do other forms of money function?}
 
-Again let's try to compare cryptocurrencies with the other forms of money. This time I combine digital and physical, since they function the same in practice.
+Again let's try to compare cryptocurrencies with the other forms of money. This time I combine digital and physical fiat, since they function the same in practice.
 
 ◊table[#:class "centered crypto-eval"]{◊tbody{
     ◊tr{◊td{}                       ◊tds{Fiat}      ◊tds{Gold}     ◊tds{Cryptocurrencies}}
@@ -197,18 +208,22 @@ Again let's try to compare cryptocurrencies with the other forms of money. This 
 With the motivations:
 
 ◊ol{
-    ◊li{Both gold and cryptocurrencies can work well as a ◊strong{medium of exchange}. But they're not commonly used as such, which decreases their value as a medium of exchange. There's a feedback loop here: the more they're used the better they are, and the reverse holds true as well.}
+    ◊li{Both gold and cryptocurrencies can work well as a ◊strong{medium of exchange}. But they're not commonly used as such, which makes them perform worse.
 
-    ◊li{Nobody prices goods as "0.2 ounce of gold" or "0.13 BTC", neither gold nor cryptocurrencies is currently used as a ◊strong{unit of account}.}
+        There's a feedback loop here: the more they're used---the better they are, and the reverse holds true as well.}
+
+    ◊li{Nobody prices goods as "0.2 ounce of gold" or "0.13 BTC", neither gold nor cryptocurrencies are currently used as a ◊strong{unit of account}.}
 
     ◊li{Fiat is not a good ◊strong{store of value}. If you store money in your bank account or beneath your mattress inflation will eat away the value. Cryptocurrencies, despite the increase in price, are far too volatile.}
 }
 
-◊ndef["medium-of-exchange"]{
-    I was thinking of giving both gold and cryptocurrencies a poor or possibly a good rating as a medium of exchange, because they're not used that much. However I rate them as how well they can be used, not if they are used.
-}
-
 While cryptocurrencies match up poorly, there is no perfect alternative.
+
+Note that unlike the fundamental properties---which don't change that much---how well money functions change with the times. For example a few hundred years ago gold coins would be used everywhere.◊sn{bad-example?}
+
+◊ndef["bad-example?"]{
+    Maybe a bad example---cryptocurrencies and modern fiat didn't exist so far back. But hopefully you get my point: gold was once an excellent medium of exchange and unit of account. It changes.
+}
 
 
 ◊subhead{What do law makers say?}
@@ -239,4 +254,7 @@ There are others who've ruled in favor of Bitcoin as a currency. For example ◊
 
 ◊subhead{Conclusion}
 
+Cryptocurrencies fulfil the properties of money very well. In fact they fulfil them better than any alternative. Unlike fiat they can be considered sound money---the valuation is entirely market driven.
+
+However they do not function well as global money today. They're too volatile and adoption isn't there yet.
 
