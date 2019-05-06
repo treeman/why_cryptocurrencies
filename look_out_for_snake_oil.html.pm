@@ -22,7 +22,7 @@ A snake oil salesperson sells, or promotes, a valueless or fraudulent solution. 
 There are many projects who call themselves cryptocurrencies while not fulfilling the criteria. For example I don't consider these real cryptocurrencies:
 
 ◊ul{
-  ◊li{OneCoin and Bitconnect, they're plain pyramid schemes.◊sn{pyramid-schemes}}
+  ◊li{OneCoin and Bitconnect---they're plain pyramid schemes.◊sn{pyramid-schemes}}
   ◊li{Ripple.}
   ◊li{Stablecoins like ◊link[tether]{Tether}◊sn{tether} or JP Morgan's ◊link[JPM-coin]{JPM coin}.}
   ◊li{Sidechains, for example the Lightning Network.}
