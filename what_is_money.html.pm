@@ -22,31 +22,31 @@ Before getting interested in cryptocurrencies I too had never asked these questi
 
 ◊todo{Switch out images to royalty free ones, alternatively replace with my own sketchy images}
 
-◊todo{Source for these claims}
-
 First let's look at some interesting historical examples of things that have been used as money. Some are predictable but others are quite perplexing.
 
 ◊ndef["money-or-currency"]{
-    The words money and currency are often used interchangeably. Although I might be sloppy in my usage there is a subtle difference. Money refers to an intangible concept---you cannot reach out and grab it. Currency instead might refer to the physical coins themselves.
+    The words money and currency are often used interchangeably. Although I might be sloppy in my usage there is a subtle difference. Money refers to an intangible concept---you cannot reach out and grab it. Currency instead refers to the physical coins themselves.
 
-    If that's the definition then maybe cryptocurrencies should be called crypto-money?
+    If that's the definition then maybe cryptocurrencies should instead be called crypto-money?
+
+    Even though we cannot reach out and grab them, the coins do exist. Similar to how digital pictures exist---they're not an abstract concept. Therefore I, as much of the community, will still call cryptocurrencies a type of currency.
 }
 
 ◊section[#:class "money-examples"]{
     ◊money["Shells"
            #:date "1200 B.C."
            #:img "/images/sea-shells-1994213_640.jpg"]{
-        Sea shells has been used as money for centuries, it was commonly used in parts of Africa and Asia but also in other parts of the world. During the slave trade in Africa vast quantities exchanged hands.
+        Sea shells ◊link[sea-shells]{have been used as money for centuries}, it was commonly used in parts of Africa and Asia but also in other parts of the world. ◊link[shells-slaves]{During the slave trade} in Africa vast quantities exchanged hands.
     }
     ◊money["Coins in ancient Greece"
            #:date "500 B.C."
            #:img "https://upload.wikimedia.org/wikipedia/commons/4/40/EucratidesStatere.jpg"]{
-        The Greeks used coins made from precious metal like silver, bronze and gold. They also stamped the coins with beautiful portraits for a truly modern look (already 3500 years ago).
+        The Greeks ◊link[ancient-greece-coinage]{used coins} made from precious metal like silver, bronze and gold. They also stamped the coins with beautiful portraits for a truly modern look (already 3500 years ago).
     }
     ◊money["Rai stones"
            #:date "1000 - 1400 A.D."
            #:img "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Yap_Stone_Money.jpg/737px-Yap_Stone_Money.jpg"]{
-        Rai stones is a form of stone money on the Yap Islands. They can be up to 4 m in diameter but most are much smaller, down to around 3.5 cm in diameter. Instead of moving the big ones you can instead tell people you've transferred them.
+        ◊link[rai-stones]{Rai stones} is a form of stone money on the Yap Islands. They can be up to 4 m in diameter but most are much smaller, down to around 3.5 cm in diameter. Instead of moving the big ones you can instead tell people you've transferred them. ◊link[rai-stones-pictures]{Here are some great pictures}.
     }
     ◊money["A 20kg copper coin"
            #:date "1644"
@@ -59,12 +59,12 @@ First let's look at some interesting historical examples of things that have bee
     ◊money["Bank notes in hyperinflating Germany"
            #:date "1923"
            #:img "https://mondrian.mashable.com/uploads%252F2016%252F7%252F26%252Fgermaninflation_16.jpg%252Ffit-in__1440x1440.jpg?signature=lxEf1wsHHE3quSjlZbFBwlnKYjg="]{
-        Bank notes, paper money, is easier to handle than physical coins, but they do have problems of their own. After the first world war in Germany hyperinflation set in and quickly made existing notes worthless. It got so bad it was cheaper to use the notes as wallpaper instead of buying wallpaper.
+        Bank notes, paper money, is easier to handle than physical coins, but they do have problems of their own. After the first world war in Germany hyperinflation set in and quickly made existing notes worthless. It got so bad it was cheaper to ◊link[germany-wallpaper]{use the notes as wallpaper} instead of buying wallpaper.
     }
     ◊money["Cigarettes in prison"
-           #:date "1994"
+           #:date "20th century"
            #:img "https://productplacementblog.com/wp-content/uploads/2019/01/Lucky-Strike-Cigarettes-in-The-Shawshank-Redemption-1-800x450.jpg"]{
-        Like depicted in the movie Shawshank Redemption cigarettes are used in some prisons as a form of money. Today some prisons have started to ban smoking, so they instead use things like stamps.
+        Like depicted in the movie Shawshank Redemption cigarettes are used in some prisons ◊link[prison-cigarettes]{as a form of money}. Today some prisons have started to ban smoking, so they instead use things like ◊link[prison-stamps]{stamps} or ◊link[prison-ramen]{ramen}.
     }
     ◊money["Euro bank notes"
            #:date "21th century"
@@ -79,11 +79,14 @@ First let's look at some interesting historical examples of things that have bee
     ◊money["Marbles on the school yard"
            #:date "2017"
            #:img "https://images-na.ssl-images-amazon.com/images/I/81OSKE1n6gL._SL1500_.jpg"]{
-        Kids on the schoolyard often come up with interesting forms of money. For example collectible card games or game components. Like marbles used in a Swedish game "rutan". Those with many marbles had the highest status in class.
+        Kids on the schoolyard often come up with interesting forms of money. For example collectible card games or game components.◊sn{pokemon} Like marbles used in a Swedish game "rutan". Those with many marbles had the highest status in class.
     }
 }
 
-◊(define largest-coin "https://www.riksbank.se/en-gb/about-the-riksbank/history/1600-1699/the-worlds-largest-coin/")
+◊ndef["pokemon"]{
+    I'm not really up to date with the games kids play these days. I still live with the memories of Pokémon. Good times.
+}
+
 
 ◊(define (money title #:img img #:date [date #f] . text)
    (define xdate (if date
@@ -100,12 +103,12 @@ First let's look at some interesting historical examples of things that have bee
 
 ◊subhead{The gold standard}
 
-Just an historical note.
+There's an important historical point to make about fiat. First used 1821 in the United Kingdom, the ◊link[gold-standard]{gold standard} made sure to back each currency unit with gold. So if you had $1,000 in bank notes you could exchange them to $1,000 worth of gold. This was used in various ways up until 1971, when it was finally abandoned completely.
 
 
 ◊subhead{Bartering, and why do we need money?}
 
-How would life look like if we don't have money? We would have to turn to bartering---trading goods or services directly.◊sn{bartering}
+How would life look like if we didn't have money? We would have to turn to bartering---trading goods or services directly.◊sn{bartering}
 
 For example imagine if you're a farmer and you have a bunch of pigs. To buy a new tractor you need to trade with the tractor seller, and maybe you can buy the tractor for 10 pigs.
 
@@ -120,15 +123,15 @@ But there are problems with this system:
     }
     ◊li{What if you want to buy a loaf of bread?
 
-        You would have to kill a pig and offer parts to him.
+        You would have to kill a pig and offer parts to him. Maybe the pigs haven't grown up yet---you'll lose a lot if you kill one too early.
     }
 }
 
-In short it's extremely inefficient. In our example the farmer might have to do many trades just to find something the seller can accept. He might also lose value in the process by having to kill pigs prematurely.
+In short it's extremely inefficient.
 
 ◊todo{IMG farmer trying to trade for a tractor, with many intermediate steps}
 
-This is why we as a society prefer to use money. Even if the thing we use as money itself is worthless---like pieces of paper---the function it serves is very valuable.
+This is why we as a society prefer to use money. Even if the thing we use as money itself is basically worthless---like pieces of paper---the function it serves is very valuable.
 
 ◊ndef["bartering"]{
     Bartering can happen on a small scale today. For example in your social circle you might trade favors instead of money.
@@ -156,14 +159,20 @@ While this might on the surface explain why fiat currencies are valuable, it fai
     In the US it's actually the Federal Reserve System, a central bank, that controls printing of money.
 }
 
-◊(define state-theory-of-money "https://socialsciences.mcmaster.ca/econ/ugcm/3ll3/knapp/StateTheoryMoney.pdf")
-
 
 ◊subhead{Subjective theory of value}
 
-Instead a better explanation is given by the ◊link[subjective-theory-of-value]{subjective theory of value}.
+Instead a better explanation is given by the ◊link[subjective-theory-of-value]{subjective theory of value}. It describes how goods are valued, but it serves just as well to explain why money is valuable.
 
-◊(define subjective-theory-of-value "")
+In short it says ◊em{value is subjective}.
+
+That might sound too simplistic or like a tautology. But what it means is there's no global deciding function that gives value. Instead each person independently assigns value.
+
+For instance medicine can be extremely valuable for those who needs it, but have little value to others. So if you have the medicine, but don't need it, you'll gladly sell. But someone who needs it would be very reluctant to sell, unless for a very high price.
+
+What does it mean for money? That ◊strong{the value of money is emergent from a group of individuals}. If for example everyone in your social group declares that tomorrow they'll use Pokémon trading cards as money, then they suddenly become very valuable to you. The more people who use a form of money, the better it works and the more value it will have.
+
+States doesn't give money value---but it can contribute. For example declaring fiat legal tender makes more people accept it, which in turn increases it's value.
 
 
 ◊subhead{What functions does money serve?}
@@ -305,9 +314,6 @@ While fiat has many positive properties, after the move away from the gold stand
     There are those who ◊link[fractional-banking-atlanta]{argue that Fractional Banking is a net positive for society}. And ◊link[fractional-banking-bad]{those who disagree}.
 }
 
-◊(define fractional-banking "https://corporatefinanceinstitute.com/resources/knowledge/finance/fractional-banking/")
-◊(define fractional-banking-atlanta "https://www.frbatlanta.org/education/classroom-economist/fractional-reserve-banking/economists-perspective-transcript")
-◊(define fractional-banking-bad "https://mises.org/library/faults-fractional-reserve-banking")
 
 
 ◊ndef["marble-coin"]{
@@ -347,10 +353,27 @@ I can come up with two major reasons:
 
 In our context knowing what differentiates good from bad forms of money helps us reason about cryptocurrencies, and to see if it can live up to it's namesake. But more on that in the ◊link[next-chapter]{next chapter}.
 
+
+◊(define sea-shells "https://www.nbbmuseum.be/en/2007/01/cowry-shells.htm")
+◊(define shells-slaves "https://www.culturesofwestafrica.com/cowrie-shell-monetary-symbolic-value/")
+◊(define ancient-greece-coinage "https://www.ancient.eu/Greek_Coinage/")
+◊(define rai-stones "http://www.bbc.com/travel/story/20180502-the-tiny-island-with-human-sized-money")
+◊(define rai-stones-pictures "https://www.thevintagenews.com/2017/12/28/rai-stones/")
+◊(define germany-wallpaper "https://mashable.com/2016/07/27/german-hyperinflation/")
 ◊(define next-chapter "are_cryptocurrencies_money.html")
+◊(define prison-stamps "https://www.therichest.com/business/economy/five-surprising-things-prisoners-use-as-currency/")
+◊(define prison-ramen "https://www.npr.org/sections/thesalt/2016/08/26/491236253/ramen-noodles-are-now-the-prison-currency-of-choice?t=1557205041822")
+◊(define prison-cigarettes "")
+◊(define fractional-banking "https://corporatefinanceinstitute.com/resources/knowledge/finance/fractional-banking/")
+◊(define fractional-banking-atlanta "https://www.frbatlanta.org/education/classroom-economist/fractional-reserve-banking/economists-perspective-transcript")
+◊(define fractional-banking-bad "https://mises.org/library/faults-fractional-reserve-banking")
+◊(define largest-coin "https://www.riksbank.se/en-gb/about-the-riksbank/history/1600-1699/the-worlds-largest-coin/")
+◊(define state-theory-of-money "https://socialsciences.mcmaster.ca/econ/ugcm/3ll3/knapp/StateTheoryMoney.pdf")
+◊(define subjective-theory-of-value "https://wiki.mises.org/wiki/Subjective_theory_of_value")
+◊(define gold-standard "https://www.britannica.com/topic/gold-standard")
 
 ◊; http://money.visualcapitalist.com/infographic-the-properties-of-money/
 ◊; https://www.aier.org/
 ◊; https://thesocietypages.org/socimages/2014/04/24/money-as-a-social-construction/
 ◊; https://hackernoon.com/money-is-a-social-construct-and-thats-why-you-should-run-a-bitcoin-full-node-ea0330cb69a5?gi=257add0b9b0b
-
+◊; https://www.bbc.com/news/business-45523636
