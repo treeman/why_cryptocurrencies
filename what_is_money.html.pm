@@ -20,8 +20,6 @@ Before getting interested in cryptocurrencies I too had never asked these questi
 
 ◊subhead{Historical examples of money}
 
-◊todo{Switch out images to royalty free ones, alternatively replace with my own sketchy images}
-
 First let's look at some interesting historical examples of things that have been used as money. Some are predictable but others are quite perplexing.
 
 ◊ndef["money-or-currency"]{
@@ -35,50 +33,49 @@ First let's look at some interesting historical examples of things that have bee
 ◊section[#:class "money-examples"]{
     ◊money["Shells"
            #:date "1200 B.C."
-           #:img "/images/sea-shells-1994213_640.jpg"]{
+           #:img "/images/cowry.png"]{
         Sea shells ◊link[sea-shells]{have been used as money for centuries}, it was commonly used in parts of Africa and Asia but also in other parts of the world. ◊link[shells-slaves]{During the slave trade} in Africa vast quantities exchanged hands.
     }
     ◊money["Coins in ancient Greece"
            #:date "500 B.C."
-           #:img "https://upload.wikimedia.org/wikipedia/commons/4/40/EucratidesStatere.jpg"]{
+           #:img "images/greek_coin.png"]{
         The Greeks ◊link[ancient-greece-coinage]{used coins} made from precious metal like silver, bronze and gold. They also stamped the coins with beautiful portraits for a truly modern look (already 3500 years ago).
     }
     ◊money["Rai stones"
            #:date "1000 - 1400 A.D."
-           #:img "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Yap_Stone_Money.jpg/737px-Yap_Stone_Money.jpg"]{
+           #:img "images/rai_stones.png"]{
         ◊link[rai-stones]{Rai stones} is a form of stone money on the Yap Islands. They can be up to 4 m in diameter but most are much smaller, down to around 3.5 cm in diameter. Instead of moving the big ones you can instead tell people you've transferred them. ◊link[rai-stones-pictures]{Here are some great pictures}.
     }
     ◊money["A 20kg copper coin"
            #:date "1644"
-           #:img "https://www.riksbank.se/imagevault/publishedmedia/2b6uukujdt950gdjqfvx/Kopparmynt_1624.png"]{
-
+           #:img "images/20kg_copper.png"]{
         Another example of---let's just say interesting---form of money is ◊link[largest-coin]{the world's largest coin.} It's a copper coin weighing 20kg, issued in Sweden.
 
         Since copper was worth much less than silver, very large coins had to be made to offset the difference. At that time coins did contain raw materials according to their value, which is not the case today.
     }
     ◊money["Bank notes in hyperinflating Germany"
            #:date "1923"
-           #:img "https://mondrian.mashable.com/uploads%252F2016%252F7%252F26%252Fgermaninflation_16.jpg%252Ffit-in__1440x1440.jpg?signature=lxEf1wsHHE3quSjlZbFBwlnKYjg="]{
+           #:img "images/german_notes.png"]{
         Bank notes, paper money, is easier to handle than physical coins, but they do have problems of their own. After the first world war in Germany hyperinflation set in and quickly made existing notes worthless. It got so bad it was cheaper to ◊link[germany-wallpaper]{use the notes as wallpaper} instead of buying wallpaper.
     }
     ◊money["Cigarettes in prison"
            #:date "20th century"
-           #:img "https://productplacementblog.com/wp-content/uploads/2019/01/Lucky-Strike-Cigarettes-in-The-Shawshank-Redemption-1-800x450.jpg"]{
+           #:img "images/prison_money.png"]{
         Like depicted in the movie Shawshank Redemption cigarettes are used in some prisons ◊link[prison-cigarettes]{as a form of money}. Today some prisons have started to ban smoking, so they instead use things like ◊link[prison-stamps]{stamps} or ◊link[prison-ramen]{ramen}.
     }
     ◊money["Euro bank notes"
            #:date "21th century"
-           #:img "https://i.dailymail.co.uk/i/pix/2016/02/16/10/004918B700000258-3449097-image-a-18_1455617645563.jpg"]{
+           #:img "images/bank_notes.png"]{
         There are many kinds of ◊em{fiat currencies},◊sn{fiat-commodity} for example the Euro. Modern coins are not made of valuable metal and paper notes are used for large denominations.
     }
     ◊money["Dogecoin"
            #:date "2013"
-           #:img "https://dogecoin.com/imgs/dogecoin-300.png"]{
+           #:img "images/doge.png"]{
         Dogecoin is a cryptocurrency, while created as a "joke currency", it quickly gained popularity as a tipping tool online. You can still find merchants who accept it today for things like domain names, web hosting, VPNs or games.
     }
     ◊money["Marbles on the school yard"
            #:date "2017"
-           #:img "https://images-na.ssl-images-amazon.com/images/I/81OSKE1n6gL._SL1500_.jpg"]{
+           #:img "images/marbles.png"]{
         Kids on the schoolyard often come up with interesting forms of money. For example collectible card games or game components.◊sn{pokemon} Like marbles used in a Swedish game "rutan". Those with many marbles had the highest status in class.
     }
 }
