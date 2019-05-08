@@ -15,7 +15,7 @@ As we saw in the ◊link[prev-chapter]{previous chapter}, practically anything c
 
 ◊subhead{Evaluating the properties of money}
 
-To decide if cryptocurrencies are good forms of money or not, we'll take a look at the properties good money should have and cryptocurrencies hold up.
+To decide if cryptocurrencies are good forms of money or not, we'll take a look at the properties good money should have and cryptocurrencies hold up. See the ◊link[prev-chapter]{previous chapter} for discussion about the properties.
 
 ◊ol{
     ◊li{◊strong{Acceptable}
@@ -48,7 +48,7 @@ To decide if cryptocurrencies are good forms of money or not, we'll take a look 
     }
 }
 
-All in all cryptocurrencies fulfill the properties excellently.
+All in all cryptocurrencies fulfil the properties excellently.
 
 Cryptocurrencies can also be considered to be sound money---the value is entirely market driven and there is no manipulation of the supply.◊sn{backed}
 
@@ -73,7 +73,7 @@ Cryptocurrencies can also be considered to be sound money---the value is entirel
 
 ◊subhead{Comparing properties with other forms of money}
 
-This is a table of how I think cryptocurrencies compares to other good forms of money. I differentiate between the two forms of fiat---digital and physical---because they have different properties. Gold can be either gold coins or gold bars---basically some physical form of gold.
+This is a table of how I think cryptocurrencies compares to other good forms of money. I differentiate between the two forms of fiat---digital and physical---because they have different properties. Gold can be either gold coins or gold bars---basically some suitable physical form of gold.
 
 ◊table[#:class "centered crypto-eval"]{◊tbody{
     ◊tr{◊td{}   ◊tds{Fiat (digital)} ◊tds{Fiat (physical)} ◊tds{Gold} ◊tds{Cryptocurrencies}}
@@ -93,7 +93,7 @@ I know this might be controversial, so let me motivate some of the entries.
 
     ◊li{Digital money is inherently easier to ◊strong{divide} than physical variants. You can always send an exact amount without having to mix and match change.}
 
-    ◊li{Paper notes can easily wear out or burn up. While cryptocurrencies cannot themselves burn up, the security backups and your phone can. Therefore they score lower than gold on ◊strong{durability}, which is near indestructible.}
+    ◊li{Paper notes can easily wear out or burn up. While cryptocurrencies cannot themselves burn up, the security backups and your phone can. Therefore they score lower than gold on ◊strong{durability}, which is near indestructible.◊sn{durability}}
 
     ◊li{Banks can freeze your digital assets, for example if you fail to disclose the source of funds. Therefore it gets a lower score on ◊strong{fungibility}.◊sn{again-monero}}
 
@@ -102,6 +102,10 @@ I know this might be controversial, so let me motivate some of the entries.
     ◊li{Cryptocurrencies are simply much more ◊strong{portable} than the other options. Carrying large amounts in cash or gold is cumbersome and digital fiat isn't easy to move across borders.◊sn{borders}}
 
     ◊li{While physical money can be made ◊strong{uniform}, it's not a guarantee to the same extent as it can be digitally.}
+}
+
+◊ndef["durability"]{
+    The definition of durability is only concerned with reuse, where cryptocurrencies score excellently. But I wanted to include the storage drawback which didn't fit anywhere else.
 }
 
 Even if you disagree about certain choices, it's hard to disagree that cryptocurrencies come out of the comparison pretty well.
