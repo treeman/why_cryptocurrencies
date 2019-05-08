@@ -19,7 +19,7 @@ A snake oil salesperson sells, or promotes, a valueless or fraudulent solution. 
 
 ◊subhead{Not really cryptocurrencies}
 
-There are many projects who call themselves cryptocurrencies while not fulfilling the criteria. For example I don't consider these real cryptocurrencies:
+There are many projects in the cryptocurrency space which, curiously enough, aren't actually cryptocurrencies. Some even go so far as to call them cryptocurrencies even though they don't fulfil the criteria. For example I don't consider these real cryptocurrencies:
 
 ◊ul{
   ◊li{OneCoin and Bitconnect---they're plain pyramid schemes.◊sn{pyramid-schemes}}
