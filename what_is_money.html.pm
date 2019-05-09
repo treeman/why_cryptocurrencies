@@ -121,18 +121,18 @@ There's an important historical point to make about fiat. First used 1821 in the
 
 How would life look like if we didn't have money? We would have to turn to bartering---trading goods or services directly.◊sn{bartering}
 
-For example imagine if you're a farmer and you have a bunch of pigs. To buy a new tractor you need to trade with the tractor seller, and maybe you can buy the tractor for 10 pigs.
-
-◊todo{IMG farmer trades 10 pigs for a tractor}
+◊img[#:src "images/pig_chair_exchange.png"]{
+    For example imagine if you're a farmer and you have a bunch of pigs. To buy a new chair you need to trade with the carpenter, and maybe you can buy the chair for a single pig.
+}
 
 But there are problems with this system:
 
 ◊ol{
-    ◊li{What if the tractor seller doesn't want your pigs?
+    ◊li{What if the carpenter doesn't want your pig?
 
         You would have to trade with others and find something the seller would accept.
     }
-    ◊li{What if you want to buy a loaf of bread?
+    ◊li{What if you want to buy a loaf of bread, worth much less than a single pig?
 
         You would have to kill a pig and offer parts to him. Maybe the pigs haven't grown up yet---you'll lose a lot if you kill one too early.
     }
@@ -140,7 +140,9 @@ But there are problems with this system:
 
 In short it's extremely inefficient.
 
-◊todo{IMG farmer trying to trade for a tractor, with many intermediate steps}
+◊img[#:src "images/pig_chair_exchange_long.png"]{
+    It can sometimes be very cumbersome to trade for something the carpenter wants---in this case bottle of rum. Each step in the process needs a matching buyer and seller.
+}
 
 This is why we as a society prefer to use money. Even if the thing we use as money itself is basically worthless---like pieces of paper---the function it serves is very valuable.
 
@@ -155,7 +157,7 @@ This is why we as a society prefer to use money. Even if the thing we use as mon
 
 One common answer to the question "what gives money value?" is ◊link[state-theory-of-money]{the State Theory of Money} (many refer to it unknowingly).
 
-The basic thesis is that it's the state that gives value to money.
+The basic thesis is that it's the state that gives value to money:
 
 ◊ol{
     ◊li{Fiat currency is declared by the state to be ◊em{legal tender}.
@@ -169,8 +171,11 @@ The basic thesis is that it's the state that gives value to money.
 While this might on the surface explain why fiat currencies are valuable, it fails to explain why other forms of money become valuable.
 
 ◊ndef["fed"]{
-    In the US it's actually the Federal Reserve System, a central bank, that controls printing of money.
+    In the US it's actually the ◊link[federal-reserve]{Federal Reserve System}, a central bank, that controls printing of money. Most other countries use a similar system. In the EU it's called the ◊link[ecb]{European Central Bank}.
 }
+
+◊(define federal-reserve "https://www.investopedia.com/terms/f/federalreservebank.asp")
+◊(define ecb "https://www.ecb.europa.eu/home/html/index.en.html")
 
 
 ◊subhead{Subjective theory of value}
@@ -206,8 +211,6 @@ If more or less anything can be used as money, it makes more sense to look at ho
 
 ◊(define 3-fun-money "https://www.khanacademy.org/economics-finance-domain/ap-macroeconomics/ap-financial-sector/definition-measurement-and-functions-of-money-ap/a/definition-measurement-and-functions-of-money")
 ◊(define 4-fun-money "https://opentextbc.ca/principlesofeconomics/chapter/27-1-defining-money-by-its-functions/")
-
-◊todo{Images for these examples}
 
 ◊ol{
     ◊li{◊strong{Medium of exchange}
@@ -338,10 +341,10 @@ The large ◊strong{Rai stones} and the ◊strong{20kg copper coin} are great ex
     Both Rai stones and the Swedish copper coins have smaller versions as well, making them a bit more practical.
 }
 
-◊strong{Cigarettes}, ◊strong{marbles}, ◊strong{stamps} and other types of commodities are decent forms of money---on a small scale. They have some durability issues (wear and tear) and they're not perfectly uniform. But most of all they can be mass produced preventing it's use on a larger scale.◊sn{marble-coin}
+◊strong{Cigarettes}, ◊strong{marbles}, ◊strong{stamps} and other types of commodities are decent forms of money---on a small scale. They have some durability issues (wear and tear) and they're not perfectly uniform. But most of all they can be mass produced preventing their use on a larger scale.◊sn{marble-coin}
 
 ◊ndef["marble-coin"]{
-    We can run a thought experiment: what if we wanted to use marbles as money on a global scale?
+    Let's run a thought experiment: what if we wanted to use marbles as money on a global scale?
 
     If we control the creation of a special kind of marble, we can make them durable and uniform. We can also add some sort of counterfeit protection---maybe embed holograms with cryptographic messages---to ensure a limited supply. And of course it's easy to create different kinds of denominations.
 
