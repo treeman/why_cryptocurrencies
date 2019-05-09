@@ -320,13 +320,14 @@ $sidenote-float-width: 1280px;
     .margin-toggle:checked + .marginnote {
         display: block;
         margin: 1rem;
-        // Center images, paragraphs reset.
-        text-align: center;
+
+        img {
+            display: block;
+            margin: 0 auto;
+        }
     }
     .sidenote, .marginnote {
         .snp {
-            // Reset centering to default.
-            text-align: left;
             // Dsiplay as block to not be cut by images.
             display: block;
         }
