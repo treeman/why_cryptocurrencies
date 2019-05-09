@@ -1,14 +1,33 @@
-import numpy as np
 import matplotlib.pyplot as plt
+import numpy as np
 import math
 from matplotlib.ticker import FuncFormatter
 
 from matplotlib import patheffects
 import matplotlib as mpl
+import csv
+import datetime as dt
 
 import matplotlib.patches as mpatches
+import matplotlib.dates as mdates
 
-# https://www.macrotrends.net/1333/historical-gold-prices-100-year-chart
+# def prices(url):
+    # with open(url, 'r') as infile:
+        # reader = csv.DictReader(infile)
+
+        # date = []
+        # price = []
+        # for row in reader:
+            # d = dt.datetime.strptime(row['Date'], '%Y-%m')
+            # if d.year < 1970:
+                # continue
+            # date.append(d)
+            # price.append(float(row['Price']))
+        # return (date, price)
+
+# (date, price) = prices('monthly_gold_prices.csv')
+
+# # https://www.macrotrends.net/1333/historical-gold-prices-100-year-chart
 years = [2018, 2017, 2016, 2015, 2014, 2013, 2012, 2011, 2010, 2009, 2008, 2007, 2006, 2005, 2004,
          2003, 2002, 2001, 2000, 1999, 1998, 1997, 1996, 1995, 1994, 1993, 1992, 1991, 1990, 1989,
          1988, 1987, 1986, 1985, 1984, 1983, 1982, 1981, 1980, 1979, 1978, 1977, 1976, 1975, 1974,
@@ -32,14 +51,16 @@ ax = fig.add_subplot(1, 1, 1)
 def y_fmt(y, pos):
     return '${:,.0f}'.format(y)
 ax.get_yaxis().set_major_formatter(FuncFormatter(y_fmt))
+ax.get_xaxis().set_major_formatter(mdates.DateFormatter('%Y'))
 
 ax.spines['right'].set_color('none')
 ax.spines['top'].set_color('none')
 
-ax.set_xticks((1969, 1980, 1990, 2000, 2010, 2018))
-ax.set_yticks((0, 500, 1000, 1500))
+ax.set_xticks([dt.date(y, 1, 1) for y in [1970, 1980, 1990, 2000, 2010, 2018]])
+ax.set_yticks((0, 500, 1000, 1500, 2000))
 
 plt.plot(years, closing_price, '#343535')
+# plt.plot(date, price, '#343535')
 
 plt.savefig('gold-valuation.svg', format="svg", transparent=True)
 print "done"
