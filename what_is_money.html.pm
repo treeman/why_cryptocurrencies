@@ -253,10 +253,14 @@ Now we may wonder:
 As seen from historical examples I think it's safe to conclude that yes, basically anything can be used as money. But to evaluate if money is good or bad we need to look at other properties.
 
 ◊ndef["gold-sov"]{
-    Gold is the classical example of a store of value. But it has also seen large up and down movements in valuation.
+    Gold is the classical example of a store of value. But it has also seen ◊link[gold-valuation]{large up and down movements in valuation}.
 
-    ◊todo{IMG of gold valuation}
+    ◊raw-img[#:src "images/gold-valuation.svg"]{}
+
+    For example in 2010 it increased 27.74% and in 2013 it decreased 27.79%.
 }
+
+◊(define gold-valuation "https://www.macrotrends.net/1333/historical-gold-prices-100-year-chart")
 
 
 ◊subhead{What properties does good money have?}
