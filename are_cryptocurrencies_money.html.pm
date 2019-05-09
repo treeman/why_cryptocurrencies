@@ -1,7 +1,7 @@
 #lang pollen
 
 ◊(define-meta title "Are cryptocurrencies money?")
-◊(define-meta subtitle "Rather, are cryptocurrencies a good form of money? And are they used as it?")
+◊(define-meta subtitle "Are cryptocurrencies a good form of money?")
 ◊(define-meta updated "2019-05-05T14:43:50+0200Z")
 ◊(define-meta uuid "f04af7c8-5fee-45c4-a5a4-80a3f6fbd31b")
 
@@ -9,7 +9,7 @@ As we saw in the ◊link[prev-chapter]{previous chapter}, practically anything c
 
 ◊ol{
     ◊li{Are cryptocurrencies a good form of money?}
-    ◊li{How well would they function as money, today?}
+    ◊li{How well do they function as money, today?}
 }
 
 
