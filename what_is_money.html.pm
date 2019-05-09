@@ -108,7 +108,7 @@ First let's look at some interesting historical examples of things that have bee
 
 ◊subhead{The gold standard}
 
-There's an important historical point to make about fiat. First used 1821 in the United Kingdom, the ◊link[gold-standard]{gold standard}◊sn{gold-standard} made sure to back each currency unit with gold. So if you had $1,000 in bank notes you could exchange them to $1,000 worth of gold. This was used in various ways up until 1971, when it was finally abandoned completely.
+There's an important historical point to make about fiat. First used 1821 in the United Kingdom, the ◊link[gold-standard]{gold standard} made sure to back each currency unit with gold.◊sn{gold-standard} So if you had $1,000 in bank notes you could exchange them to $1,000 worth of gold. This was used in various ways up until 1971, when it was finally abandoned completely.
 
 ◊ndef["gold-standard"]{
     Like a lot of things we'll touch, whether the gold standard is good or bad is ◊link[gold-debate]{hotly debated}.
@@ -131,6 +131,10 @@ But there are problems with this system:
     ◊li{What if the carpenter doesn't want your pig?
 
         You would have to trade with others and find something the seller would accept.
+
+        ◊img[#:src "images/pig_chair_exchange_long.png"]{
+            It can sometimes be very cumbersome to trade for something the carpenter wants---in this case bottle of rum. Each step in the process needs a matching buyer and seller.
+        }
     }
     ◊li{What if you want to buy a loaf of bread, worth much less than a single pig?
 
@@ -139,10 +143,6 @@ But there are problems with this system:
 }
 
 In short it's extremely inefficient.
-
-◊img[#:src "images/pig_chair_exchange_long.png"]{
-    It can sometimes be very cumbersome to trade for something the carpenter wants---in this case bottle of rum. Each step in the process needs a matching buyer and seller.
-}
 
 This is why we as a society prefer to use money. Even if the thing we use as money itself is basically worthless---like pieces of paper---the function it serves is very valuable.
 
@@ -198,7 +198,7 @@ For instance medicine can be extremely valuable for those who needs it, but have
 
 What does it mean for money? That ◊strong{the value of money is emergent from a group of individuals}. If for example everyone in your social group declares that tomorrow they'll use Pokémon trading cards as money, then they suddenly become very valuable to you. The more people who use a form of money, the better it works and the more value it will have.
 
-States doesn't give money value---but it can contribute. For example declaring fiat legal tender makes more people accept it, which in turn increases it's value.
+States don't give money value---but it can contribute. For example declaring fiat legal tender makes more people accept it, which in turn increases it's value.
 
 
 ◊subhead{What functions does money serve?}
