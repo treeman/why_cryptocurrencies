@@ -34,12 +34,12 @@ First let's look at some interesting historical examples of things that have bee
     ◊money["Shells"
            #:date "1200 B.C."
            #:img "/images/cowry.png"]{
-        Sea shells ◊link[sea-shells]{have been used as money for centuries}, it was commonly used in parts of Africa and Asia but also in other parts of the world. ◊link[shells-slaves]{During the slave trade} in Africa vast quantities exchanged hands.
+        Sea shells ◊link[sea-shells]{have been used as money for centuries}, it was commonly used in parts of Africa and Asia but also in other parts of the world. Even ◊link[shells-slaves]{during the slave trade} in Africa vast quantities exchanged hands.
     }
     ◊money["Coins in ancient Greece"
            #:date "500 B.C."
            #:img "images/greek_coin.png"]{
-        The Greeks ◊link[ancient-greece-coinage]{used coins} made from precious metal like silver, bronze and gold. They also stamped the coins with beautiful portraits for a truly modern look (already 3500 years ago).
+        The Greeks ◊link[ancient-greece-coinage]{used coins} made from precious metal like silver, bronze and gold. They also stamped the coins with beautiful portraits for a truly modern look.
     }
     ◊money["Rai stones"
            #:date "1000 - 1400 A.D."
