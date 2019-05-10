@@ -76,7 +76,7 @@ Cryptocurrencies can also be considered to be sound money---the value is entirel
 This is a table of how I think cryptocurrencies compares to other good forms of money. I differentiate between the two forms of fiat---digital and physical---because they have different properties. Gold can be either gold coins or gold bars---basically some suitable physical form of gold.
 
 ◊table[#:class "centered crypto-eval"]{◊tbody{
-    ◊tr{◊td{}   ◊tds{Fiat (digital)} ◊tds{Fiat (physical)} ◊tds{Gold} ◊tds{Cryptocurrencies}}
+    ◊tr{◊td{}   ◊ths{Fiat (digital)} ◊ths{Fiat (physical)} ◊ths{Gold} ◊ths{Cryptocurrencies}}
     ◊tr{◊tds{Acceptable}     ◊en{poor}      ◊en{excellent} ◊en{excellent} ◊en{excellent}}
     ◊tr{◊tds{Divisible}      ◊en{excellent} ◊en{good}      ◊en{good}      ◊en{excellent}}
     ◊tr{◊tds{Durable}        ◊en{excellent} ◊en{good}      ◊en{excellent} ◊en{good}}
@@ -132,8 +132,10 @@ Another difference is that gold has stood the test of time. It's been used as mo
     Both ◊link[monero-bug]{Monero} and ◊link[bitcoin-bug]{Bitcoin} has for example had major bugs that could've allowed an attacker to create coins for free. Neither were exploited, this time.
 }
 
+◊(define (ths txt)
+   `(td ((class "ths")) ,txt))
 ◊(define (tds txt)
-   `(td (strong ,txt)))
+   `(td ((class "tds")) ,txt))
 ◊(define (en type)
    ; Errors on unsupported type
    (define txt
@@ -163,11 +165,17 @@ We've looked at the properties, but how well does it function as money, today?
     ◊li{◊strong{Store of value}
 
         The valuation is highly speculation driven and has been notoriously volatile.◊sn{sov}
+
+        ◊img[#:src "images/btc-valuation.svg"]{
+            ◊link[btc-valuation]{Bitcoin closing price per month}.  It doesn't do the peak in late 2017 justice, as it peaked at an all time high of $19,870 (some exchanges had it even higher).
+        }
     }
 }
 
+◊(define btc-valuation "https://finance.yahoo.com/quote/BTC-USD/history?period1=1279317600&period2=1557439200&interval=1mo&filter=history&frequency=1mo")
+
 ◊ndef["sov"]{
-    There is a clique of Bitcoin supporters who claim the primary, and sometimes even the only, function of Bitcoin is as a store of value. Unfortunately it's based on wishful thinking and not reality. Something that goes from $17,000 to $4,000 in one year (Jan 2018--2019) is not a good store of value.
+    There is a clique of Bitcoin supporters who claim the primary, and sometimes even the only, function of Bitcoin is as a store of value. Unfortunately it's based on wishful thinking and not reality.
 }
 
 While cryptocurrencies are used as money in certain communities and for certain goods◊sn{goods}, it is not in widespread use. It does not function very well as money globally, today.
@@ -203,7 +211,7 @@ Perhaps it's to be expected that cryptocurrencies aren't global money yet---it's
 Again let's try to compare cryptocurrencies with the other forms of money. This time I combine digital and physical fiat, since they function the same in practice.
 
 ◊table[#:class "centered crypto-eval"]{◊tbody{
-    ◊tr{◊td{}                       ◊tds{Fiat}      ◊tds{Gold}     ◊tds{Cryptocurrencies}}
+    ◊tr{◊td{}                       ◊ths{Fiat}      ◊ths{Gold}     ◊ths{Cryptocurrencies}}
     ◊tr{◊tds{Medium of exchange}    ◊en{excellent}  ◊en{good} ◊en{good}}
     ◊tr{◊tds{Unit of account}       ◊en{excellent}  ◊en{poor}      ◊en{poor}}
     ◊tr{◊tds{Store of value}        ◊en{poor}       ◊en{excellent} ◊en{poor}}

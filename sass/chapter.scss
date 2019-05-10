@@ -526,14 +526,27 @@ table.crypto-eval {
     th, td {
         padding: 0.1em 1.0em 0.1em 0.5em;
     }
+    td {
+        text-align: right;
+    }
+    td.ths {
+        font-weight: bold;
+        text-align: center;
+    }
+    td.tds {
+        font-weight: bold;
+    }
     td.poor {
         background-color: $xmr-orange;
+        text-align: center;
     }
     td.good {
         background-color: #5db0cc;
+        text-align: center;
     }
     td.excellent {
         background-color: $bch-green;
+        text-align: center;
     }
 }
 
