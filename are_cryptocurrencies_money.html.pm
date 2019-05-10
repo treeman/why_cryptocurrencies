@@ -261,7 +261,7 @@ There are others who've ruled in favor of Bitcoin as a currency. For example ◊
 ◊(define skatt-bitcoin
     `("https://www4.skatteverket.se/rattsligvagledning/373946.html?date=2018-12-17" "Swedish link: Skatteverket divestment of Bitcoin (2018-12-17)"))
 ◊(define eu-ruled "http://curia.europa.eu/juris/document/document.jsf?text=&docid=170305&pageIndex=0&doclang=en&mode=req&dir=&occ=first&part=1&cid=604646")
-◊(define prev-chapter "#")
+◊(define prev-chapter "/what_is_money.html")
 
 
 ◊subhead{Conclusion}
