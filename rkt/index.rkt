@@ -21,8 +21,8 @@
      look_out_for_snake_oil.html
      "What is money?"
      "Are cryptocurrencies money?")
-    ("Better digital payments"
-     "Safer & cheaper for merchants"
+    (better_digital_payments.html
+     safer_cheaper_for_merchants.html
      "Uncensorable donations"
      "“Undesirable” businesses"
      "Avoid freezing of merchant accounts"
