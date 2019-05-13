@@ -60,7 +60,7 @@ First let's look at some interesting historical examples of things that have bee
 
         ◊link[germany-wallpaper]{This is what happened in Germany} after the first world war. They had massive debts after losing the war, so they tried to print enough money to pay off the debts.◊sn{germany-stories}
 
-        While the inflation was slow it first it quickly ramped up. It culminated in 1924 with a ◊link[germany-notes]{100 billion mark note}, while only four years earlier 100 mark notes were used.
+        While the inflation was slow at first it quickly ramped up. It culminated in 1924 with a ◊link[germany-notes]{100 billion mark note}, while only four years earlier 100 mark notes were used.
     }
     ◊money["Cigarettes in prison"
            #:date "20th century"
