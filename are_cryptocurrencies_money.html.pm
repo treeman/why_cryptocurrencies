@@ -24,13 +24,13 @@ To decide if cryptocurrencies are good forms of money or not, we'll take a look 
     }
     ◊li{◊strong{Divisible}
 
-        There is no real technical limit to how much a cryptocurrency unit can be divided into, and it's all automatic.
+        There is no real technical limit to how much a cryptocurrency unit can be divided, and it's all automatic.
     }
     ◊li{◊strong{Durable}
 
         Coins can be used an infinite amount of times. The only drawback is keeping your private key secure, so you don't lose your coins.◊sn{backups}
     }
-    ◊li{◊strong{Fungible}
+    ◊li{◊strong{Fungible & Uniform}
 
         One coin is like any other.◊sn{fungibility}
     }
@@ -42,10 +42,6 @@ To decide if cryptocurrencies are good forms of money or not, we'll take a look 
 
         You can carry any amount you want in your wallet. One billion worth of cryptocurrency is as easy to carry as one cent. There's no difference in transacting large amounts or small amounts.
     }
-    ◊li{◊strong{Uniform}
-
-        All coins are created as equals.
-    }
 }
 
 All in all cryptocurrencies fulfil the properties excellently.
@@ -56,14 +52,12 @@ Cryptocurrencies can also be considered to be sound money---the value is entirel
     Traditionally sound money refers to money backed by precious material. Cryptocurrencies are instead backed by cryptography, and in Bitcoin's case the supply mimics the gold supply.
 }
 
-
 ◊ndef["acceptable"]{
     The only requirement is a mobile phone and an internet connection. A fairly small requirement given the stated purpose being ◊em{digital} cash.
 }
 
-
 ◊ndef["fungibility"]{
-    Transaction history can be traced in Bitcoin. It could be used to blacklist certain addresses and it might in the long run break fungibility, where coins having touched that address becomes less valuable.
+    Transaction history can be traced in Bitcoin. It could be used to ◊link[us-blacklist]{blacklist certain addresses} and it might in the long run break fungibility, where coins having touched a blacklisted address becomes less valuable.
 
     Cryptocurrencies like Monero counteract this.
 }
@@ -76,36 +70,38 @@ Cryptocurrencies can also be considered to be sound money---the value is entirel
 This is a table of how I think cryptocurrencies compares to other good forms of money. I differentiate between the two forms of fiat---digital and physical---because they have different properties. Gold can be either gold coins or gold bars---basically some suitable physical form of gold.
 
 ◊table[#:class "centered crypto-eval"]{◊tbody{
-    ◊tr{◊td{}   ◊ths{Fiat (digital)} ◊ths{Fiat (physical)} ◊ths{Gold} ◊ths{Cryptocurrencies}}
-    ◊tr{◊tds{Acceptable}     ◊en{poor}      ◊en{excellent} ◊en{excellent} ◊en{excellent}}
-    ◊tr{◊tds{Divisible}      ◊en{excellent} ◊en{good}      ◊en{good}      ◊en{excellent}}
-    ◊tr{◊tds{Durable}        ◊en{excellent} ◊en{good}      ◊en{excellent} ◊en{good}}
-    ◊tr{◊tds{Fungible}       ◊en{good}      ◊en{excellent} ◊en{excellent} ◊en{excellent}}
-    ◊tr{◊tds{Limited supply} ◊en{poor}      ◊en{poor}      ◊en{excellent} ◊en{excellent}}
-    ◊tr{◊tds{Portable}       ◊en{good}      ◊en{good}      ◊en{good}      ◊en{excellent}}
-    ◊tr{◊tds{Uniform}        ◊en{excellent} ◊en{good}      ◊en{good}      ◊en{excellent}}
+    ◊tr{◊td{}               ◊ths{Fiat (digital)} ◊ths{Fiat (physical)} ◊ths{Gold} ◊ths{Cryptocurrencies}}
+    ◊tr{◊tds{1. Acceptable}            ◊en{poor}      ◊en{excellent} ◊en{excellent} ◊en{excellent}}
+    ◊tr{◊tds{2. Divisible}             ◊en{excellent} ◊en{good}      ◊en{good}      ◊en{excellent}}
+    ◊tr{◊tds{3. Durable}               ◊en{excellent} ◊en{good}      ◊en{excellent} ◊en{good}}
+    ◊tr{◊tds{4. Fungible & Uniform}    ◊en{excellent} ◊en{excellent} ◊en{excellent} ◊en{excellent}}
+    ◊tr{◊tds{5. Limited supply}        ◊en{poor}      ◊en{poor}      ◊en{excellent} ◊en{excellent}}
+    ◊tr{◊tds{6. Portable}              ◊en{good}      ◊en{good}      ◊en{good}      ◊en{excellent}}
 }}
 
 I know this might be controversial, so let me motivate some of the entries.
 
 ◊ol{
-    ◊li{Digital fiat gets a poor score on ◊strong{acceptable} because it requires a bank account to use. This isn't something everyone can get---banks are in the right to reject you if they want. We'll revisit this topic in a future chapter.}
+    ◊li{Digital fiat gets a poor score on ◊strong{acceptable} because it requires a bank account to use. This isn't something everyone can get---banks are in the right to reject you if they want. We'll revisit this topic in a future chapter.◊sn{acceptable}
+    }
 
     ◊li{Digital money is inherently easier to ◊strong{divide} than physical variants. You can always send an exact amount without having to mix and match change.}
 
     ◊li{Paper notes can easily wear out or burn up. While cryptocurrencies cannot themselves burn up, the security backups and your phone can. Therefore they score lower than gold on ◊strong{durability}, which is near indestructible.◊sn{durability}}
 
-    ◊li{Banks can freeze your digital assets, for example if you fail to disclose the source of funds. Therefore it gets a lower score on ◊strong{fungibility}.◊sn{again-monero}}
+    ◊li{I see no major problems with ◊strong{fungibility} or ◊strong{uniformity}.◊sn{again-monero}}
 
-    ◊li{Both digital and physical fiat gets a poor score on ◊strong{limited supply}. Per the discussion in the previous chapter, banks and central banks can increase the supply as they see fit. Fiat money is unsound.}
+    ◊li{Both digital and physical fiat gets a poor score on ◊strong{limited supply}. Per the discussion in ◊link[prev-chapter]{the previous chapter} fiat money is unsound.}
 
     ◊li{Cryptocurrencies are simply much more ◊strong{portable} than the other options. Carrying large amounts in cash or gold is cumbersome and digital fiat isn't easy to move across borders.◊sn{borders}}
+}
 
-    ◊li{While physical money can be made ◊strong{uniform}, it's not a guarantee to the same extent as it can be digitally.}
+◊ndef["acceptable"]{
+    You could argue that because you need a device with internet access, cryptocurrencies should get a lower score on ◊em{acceptable}. But you could also argue that having to transact in person is another drawback. To me they cancel out.
 }
 
 ◊ndef["durability"]{
-    The definition of durability is only concerned with reuse, where cryptocurrencies score excellently. But I wanted to include the storage drawback which didn't fit anywhere else.
+    The definition of ◊em{durability} is only concerned with reuse, where cryptocurrencies score excellently. But I wanted to include the storage drawback which didn't fit anywhere else.
 }
 
 Even if you disagree about certain choices, it's hard to disagree that cryptocurrencies come out of the comparison pretty well.
@@ -115,7 +111,7 @@ But of course this doesn't give the whole picture. For example a big difference 
 Another difference is that gold has stood the test of time. It's been used as money for thousands of years, while cryptocurrencies are just more than 10 years old.
 
 ◊ndef["backups"]{
-    Because phones can break or be stolen, you should write down a seed as backup. It's a good idea to secure it from fire, theft and simply losing it.
+    Because phones can break or be stolen, you should write down your private key as backup. It's a good idea to secure it from fire, theft and simply losing it.
 }
 
 ◊ndef["again-monero"]{
@@ -212,9 +208,9 @@ Again let's try to compare cryptocurrencies with the other forms of money. This 
 
 ◊table[#:class "centered crypto-eval"]{◊tbody{
     ◊tr{◊td{}                       ◊ths{Fiat}      ◊ths{Gold}     ◊ths{Cryptocurrencies}}
-    ◊tr{◊tds{Medium of exchange}    ◊en{excellent}  ◊en{good} ◊en{good}}
-    ◊tr{◊tds{Unit of account}       ◊en{excellent}  ◊en{poor}      ◊en{poor}}
-    ◊tr{◊tds{Store of value}        ◊en{poor}       ◊en{excellent} ◊en{poor}}
+    ◊tr{◊tds{1. Medium of exchange}    ◊en{excellent}  ◊en{good} ◊en{good}}
+    ◊tr{◊tds{2. Unit of account}       ◊en{excellent}  ◊en{poor}      ◊en{poor}}
+    ◊tr{◊tds{3. Store of value}        ◊en{poor}       ◊en{excellent} ◊en{poor}}
 }}
 
 With the motivations:
