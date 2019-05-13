@@ -53,10 +53,14 @@ First let's look at some interesting historical examples of things that have bee
 
         Since copper was worth much less than silver, very large coins had to be made to offset the difference. At that time coins did contain raw materials according to their value, which is not the case today.
     }
-    ◊money["Bank notes in hyperinflating Germany"
-           #:date "1923"
+    ◊money["A 100 billion mark note"
+           #:date "1924"
            #:img "images/german_notes.png"]{
-        Bank notes, paper money, is easier to handle than physical coins, but they do have problems of their own. After the first world war in Germany hyperinflation set in and quickly made existing notes worthless. It got so bad it was cheaper to ◊link[germany-wallpaper]{use the notes as wallpaper} instead of buying wallpaper.
+        Bank notes---paper money---are easy to use but they do have problems of their own. Unless kept in check, by for example ◊link[rel-gold-standard]{the gold standard}, they can be mass produced to cause hyperinflation.
+
+        ◊link[germany-wallpaper]{This is what happened in Germany} after the first world war. They had massive debts after losing the war, so they tried to print enough money to pay off the debts.◊sn{germany-stories}
+
+        While the inflation was slow it first it quickly ramped up. It culminated in 1924 with a ◊link[germany-notes]{100 billion mark note}, while only four years earlier 100 mark notes were used.
     }
     ◊money["Cigarettes in prison"
            #:date "20th century"
@@ -80,6 +84,10 @@ First let's look at some interesting historical examples of things that have bee
     }
 }
 
+◊ndef["germany-stories"]{
+    There are many ◊link[germany-wallpaper]{interesting stories} (with pictures). For example kids playing with stacks of money, how it was cheaper to use the notes themselves as wallpaper or how kids created kites with the notes.
+}
+
 ◊ndef["pokemon"]{
     I'm not really up to date with the games kids play these days. I still live with the memories of Pokémon. Good times.
 }
@@ -90,7 +98,9 @@ First let's look at some interesting historical examples of things that have bee
     ◊em{Commodity money} refers to money which derives its value from the commodity it's made of. For example coins made of gold. That the value comes from the commodity itself is questionable, see the discussion in ◊link[rel-subjective-theory-of-value]{subjective theory of value}.
 }
 
+◊(define rel-gold-standard "#the-gold-standard")
 ◊(define rel-subjective-theory-of-value "#subjective-theory-of-value")
+◊(define germany-notes "https://en.wikipedia.org/wiki/German_Papiermark#Weimar_Republic_(1920%E2%80%9324)")
 
 
 ◊(define (money title #:img img #:date [date #f] . text)
@@ -227,7 +237,7 @@ If more or less anything can be used as money, it makes more sense to look at ho
     }
     ◊li{◊strong{Store of value}
 
-        It maintains it's value over time.
+        It maintains its value over time.
 
         A piece of gold could for example buy clothes in both ancient Greece and today.
     }
@@ -268,7 +278,7 @@ As seen from historical examples I think it's safe to conclude that yes, basical
 To function as money ◊link[money-props]{money should have these properties}:◊sn{money-props}
 
 ◊ndef["money-props"]{
-    Which properties money should have also differs. Some list ◊em{recognisability} and others leave out ◊em{fungibility}. Again I chose to go with what appears to be the popular description.
+    Which properties money should have also differs. Some list ◊em{recognisable} and others leave out ◊em{fungible} (keeping ◊em{uniform}). Again I chose to go with what appears to be the popular description.
 }
 
 ◊(define money-props "http://money.visualcapitalist.com/tag/properties-of-money/")
@@ -292,17 +302,19 @@ To function as money ◊link[money-props]{money should have these properties}:�
 
         Food is for example not durable and makes for poor money.
     }
-    ◊li{◊strong{Fungible}
+    ◊li{◊strong{Fungible & Uniform}
 
-        One unit is viewed as interchangeable with another.
+        Two items of the same type should always be considered equal.
 
-        For instance shares in a company should be the same, even if bought at different times and at different prices.
+        The difference between ◊em{fungibility} and ◊em{uniformity} is confusing, so I will bundle them together.◊sn{fungible-uniform}
+
+        It means shares in a company should be worth the same, even if bought at different times and at different prices. And all gold coins of the same denomination should contain the same amount of gold.
     }
     ◊li{◊strong{Limited in supply}
 
         There should be a limited and predictable amount of money.◊sn{limited-supply}
 
-        A limited amount is needed for the money to hold it's value.  It's important that money can't be counterfeit, otherwise it would be possible to produce an unlimited amount of money.
+        A limited amount is needed for the money to hold it's value. It's important that money can't be counterfeit, otherwise it would be possible to produce an unlimited amount of money.
     }
     ◊li{◊strong{Portable}
 
@@ -310,20 +322,16 @@ To function as money ◊link[money-props]{money should have these properties}:�
 
         Money should be practical.
     }
-    ◊li{◊strong{Uniform}
-
-        All versions of the same denomination must have the same purchasing power.◊sn{uniform}
-
-        For example coins made of precious metal and of the same type should contain the same amount, otherwise they're not uniform.
-    }
 }
 
 We can summarize the properties as: money should be practical and efficient.
 
-◊ndef["uniform"]{
-    The difference between ◊em{fungibility} and ◊em{uniformity} is a bit confusing. Some even leave out fungibility when describing the properties of money.
+It makes sense as the point of money is to increase efficiency. And if money isn't practical, it's not a good medium of exchange.
 
-    To me, fungibility concerns usage and uniformity describes how two pieces of a currency appears right now. Perfect uniformity implies they must be fungible. Combined they say: two coins of the same type should always be considered equal.
+◊ndef["fungible-uniform"]{
+    ◊em{Fungibility} refers to one unit being interchangeable with another while ◊em{uniformity} refers to two versions of the same denomination having the same purchasing power.
+
+    Perfect uniformity implies fungibility, but non-uniform goods can still be fungible. For example barrels of oil aren't uniform---their quality differ. But oil can be classified into different qualities, where they are treated as the same. Thus oil of the same quality is fungible.
 }
 
 ◊ndef["limited-supply"]{
@@ -345,7 +353,7 @@ The large ◊strong{Rai stones} and the ◊strong{20kg copper coin} are great ex
     Both Rai stones and the Swedish copper coins have smaller versions as well, making them a bit more practical.
 }
 
-◊strong{Cigarettes}, ◊strong{marbles}, ◊strong{stamps} and other types of commodities are decent forms of money---on a small scale. They have some durability issues (wear and tear) and they're not perfectly uniform. But most of all they can be mass produced preventing their use on a larger scale.◊sn{marble-coin}
+◊strong{Cigarettes}, ◊strong{marbles}, ◊strong{stamps} and other types of commodities are decent forms of money---on a small scale. They have some durability issues (wear and tear) and they're not perfectly uniform. But most importantly, they can be mass produced preventing their use on a larger scale.◊sn{marble-coin}
 
 ◊ndef["marble-coin"]{
     Let's run a thought experiment: what if we wanted to use marbles as money on a global scale?
@@ -376,7 +384,7 @@ The money we usually use today is a little different from coins made of precious
 
 ◊(define intrinsic-value-fallacy "https://fee.org/articles/the-fallacy-of-intrinsic-value/")
 
-It's not really a requirement that the money must have an intrinsic value, the real problem is that the supply isn't actually limited.  Banks inflate the supply using ◊link[fractional-banking]{Fractional Banking} and central banks can print money, both physical and digital, without any limit.◊sn{fractional-banking-good}
+It's not really a requirement that the money must have an intrinsic value, the real problem is that the supply isn't actually limited.  Banks inflate the supply using ◊link[fractional-banking]{Fractional Banking} while central banks can print money, both physical and digital, without any limit.◊sn{fractional-banking-good}
 
 ◊ndef["fractional-banking-good"]{
     There are those who ◊link[fractional-banking-atlanta]{argue that Fractional Banking is a net positive for society}. And ◊link[fractional-banking-bad]{those who disagree}. Regardless, it is a negative with respect to the properties of money we use.
