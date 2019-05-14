@@ -108,7 +108,15 @@ Even if you disagree about certain choices, it's hard to disagree that cryptocur
 
 But of course this doesn't give the whole picture. For example a big difference between cryptocurrencies and gold is that cryptocurrencies are digital. This isn't only positive---cryptocurrency implementations can have bugs that might have severe negative consequences.◊sn{bugs}
 
-Another difference is that gold has stood the test of time. It's been used as money for thousands of years, while cryptocurrencies are just more than 10 years old.
+Another difference is that gold has stood the test of time. It's been used as money for thousands of years, while cryptocurrencies are just more than 10 years old.◊sn{age-of-fiat}
+
+◊ndef["age-of-fiat"]{
+    A fun fact: ◊link[avg-life-fiat]{The average life expectancy for a fiat currency is 27 years}.
+}
+
+◊(define avg-life-fiat "https://web.archive.org/web/20150801064652/http://dollardaze.org/blog/?page_id=00017")
+
+A third major difference is that digital fiat can get frozen any time by your bank, while physical payments and cryptocurrencies are uncensorable.
 
 ◊ndef["backups"]{
     Because phones can break or be stolen, you should write down your private key as backup. It's a good idea to secure it from fire, theft and simply losing it.
@@ -178,7 +186,11 @@ While cryptocurrencies are used as money in certain communities and for certain 
 
 ◊ndef["goods"]{
     Cryptocurrencies are quite popular for privacy-concerned users. For example most serious sellers of VPNs, domain names and VPS hosting provide payments via cryptocurrencies.
+
+    Please remember that ◊link[rel-anonymous]{Bitcoin isn't really anonymous}.
 }
+
+◊(define rel-anonymous "/properties_of_a_cryptocurrency.html#anonymous")
 
 There are mainly two things holding it back today:
 
