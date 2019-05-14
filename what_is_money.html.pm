@@ -143,7 +143,7 @@ But there are problems with this system:
         You would have to trade with others and find something the seller would accept.
 
         ◊img[#:src "images/pig_chair_exchange_long.png"]{
-            It can sometimes be very cumbersome to trade for something the carpenter wants---in this case bottle of rum. Each step in the process needs a matching buyer and seller.
+            It can sometimes be very cumbersome to trade for something the carpenter wants---in this case a bottle of rum. Each step in the process needs a matching buyer and seller.
         }
     }
     ◊li{What if you want to buy a loaf of bread, worth much less than a single pig?
@@ -388,6 +388,8 @@ It's not really a requirement that the money must have an intrinsic value, the r
 
 ◊ndef["fractional-banking-good"]{
     There are those who ◊link[fractional-banking-atlanta]{argue that Fractional Banking is a net positive for society}. And ◊link[fractional-banking-bad]{those who disagree}. Regardless, it is a negative with respect to the properties of money we use.
+
+    The basic idea behind fractional banking is that the bank gives out more money than it really has. So for example if I deposit 1000 SEK into the bank, the bank can now also loan out 900 SEK to you (how much the bank is allowed to loan differs). It has increased the money supply with 900 SEK from "thin air".
 }
 
 The term ◊link[sound-money]{◊em{sound money}} refers to money that is not prone to sudden changes in long term purchasing power. If the supply of money differs from the demand, which will happen with fiat due to the disconnect between banks and the market, then there will be changes. While fiat has many positive properties, after the move away from the gold standard, it's now considered unsound money.
