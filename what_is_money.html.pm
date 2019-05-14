@@ -334,7 +334,7 @@ While fiat has many positive properties, after the move away from the gold stand
 
 What does it matter if money is good or bad? If fiat is good enough, why bother?
 
-I can come up with two major reasons:
+I see two major reasons:
 
 ◊ol{
     ◊li{The point of money is to increase economic efficiency.
