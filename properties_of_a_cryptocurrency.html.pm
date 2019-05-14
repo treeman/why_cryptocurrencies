@@ -177,7 +177,7 @@ Technically you could do transfers completely offline---on paper---but they woul
 ◊(define next-chapter "/how_do_cryptocurrencies_work.html")
 
 ◊ndef["keys"]{
-    But please make sure to encrypt your seed otherwise a thief can easily steal your coins if he finds it.
+    But please make sure to encrypt your ◊em{seed} (a human-readable representation of your keys) otherwise a thief can easily steal your coins if he finds it.
 }
 
 ◊(define blockchair "https://blockchair.com/")
