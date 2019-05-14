@@ -20,70 +20,88 @@ Before getting interested in cryptocurrencies I too had never asked these questi
 
 ◊subhead{Historical examples of money}
 
-◊todo{Switch out images to royalty free ones, alternatively replace with my own sketchy images}
-
-◊todo{Source for these claims}
-
 First let's look at some interesting historical examples of things that have been used as money. Some are predictable but others are quite perplexing.
 
 ◊ndef["money-or-currency"]{
-    The words money and currency are often used interchangeably. Although I might be sloppy in my usage there is a subtle difference. Money refers to an intangible concept---you cannot reach out and grab it. Currency instead might refer to the physical coins themselves.
+    The words money and currency are often used interchangeably. Although I might be sloppy in my usage there is a subtle difference. Money refers to an intangible concept---you cannot reach out and grab it. Currency instead refers to the physical coins themselves.
 
-    If that's the definition then maybe cryptocurrencies should be called crypto-money?
+    If that's the definition then maybe cryptocurrencies should instead be called crypto-money?
+
+    Even though we cannot reach out and grab them, the coins do exist. Similar to how digital pictures exist---they're not an abstract concept. Therefore I, as much of the community, will still call cryptocurrencies a type of currency.
 }
 
 ◊section[#:class "money-examples"]{
     ◊money["Shells"
            #:date "1200 B.C."
-           #:img "/images/sea-shells-1994213_640.jpg"]{
-        Sea shells has been used as money for centuries, it was commonly used in parts of Africa and Asia but also in other parts of the world. During the slave trade in Africa vast quantities exchanged hands.
+           #:img "/images/cowry.png"]{
+        Sea shells ◊link[sea-shells]{have been used as money for centuries}, it was commonly used in parts of Africa and Asia but also in other parts of the world. Even ◊link[shells-slaves]{during the slave trade} in Africa vast quantities exchanged hands.
     }
     ◊money["Coins in ancient Greece"
            #:date "500 B.C."
-           #:img "https://upload.wikimedia.org/wikipedia/commons/4/40/EucratidesStatere.jpg"]{
-        The Greeks used coins made from precious metal like silver, bronze and gold. They also stamped the coins with beautiful portraits for a truly modern look (already 3500 years ago).
+           #:img "images/greek_coin.png"]{
+        The Greeks ◊link[ancient-greece-coinage]{used coins} made from precious metal like silver, bronze and gold. They also stamped the coins with beautiful portraits for a truly modern look.
     }
     ◊money["Rai stones"
            #:date "1000 - 1400 A.D."
-           #:img "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Yap_Stone_Money.jpg/737px-Yap_Stone_Money.jpg"]{
-        Rai stones is a form of stone money on the Yap Islands. They can be up to 4 m in diameter but most are much smaller, down to around 3.5 cm in diameter. Instead of moving the big ones you can instead tell people you've transferred them.
+           #:img "images/rai_stones.png"]{
+        ◊link[rai-stones]{Rai stones} is a form of stone money on the Yap Islands. They can be up to 4 m in diameter but most are much smaller, down to around 3.5 cm in diameter. Instead of moving the big ones you can instead tell people you've transferred them. ◊link[rai-stones-pictures]{Here are some great pictures}.
     }
     ◊money["A 20kg copper coin"
            #:date "1644"
-           #:img "https://www.riksbank.se/imagevault/publishedmedia/2b6uukujdt950gdjqfvx/Kopparmynt_1624.png"]{
-
+           #:img "images/20kg_copper.png"]{
         Another example of---let's just say interesting---form of money is ◊link[largest-coin]{the world's largest coin.} It's a copper coin weighing 20kg, issued in Sweden.
 
         Since copper was worth much less than silver, very large coins had to be made to offset the difference. At that time coins did contain raw materials according to their value, which is not the case today.
     }
-    ◊money["Bank notes in hyperinflating Germany"
-           #:date "1923"
-           #:img "https://mondrian.mashable.com/uploads%252F2016%252F7%252F26%252Fgermaninflation_16.jpg%252Ffit-in__1440x1440.jpg?signature=lxEf1wsHHE3quSjlZbFBwlnKYjg="]{
-        Bank notes, paper money, is easier to handle than physical coins, but they do have problems of their own. After the first world war in Germany hyperinflation set in and quickly made existing notes worthless. It got so bad it was cheaper to use the notes as wallpaper instead of buying wallpaper.
+    ◊money["A 100 billion mark note"
+           #:date "1924"
+           #:img "images/german_notes.png"]{
+        Bank notes---paper money---are easy to use but they do have problems of their own. Unless kept in check, by for example ◊link[rel-gold-standard]{the gold standard}, they can be mass produced to cause hyperinflation.
+
+        ◊link[germany-wallpaper]{This is what happened in Germany} after the first world war. They had massive debts after losing the war, so they tried to print enough money to pay off the debts.◊sn{germany-stories}
+
+        While the inflation was slow at first it quickly ramped up. It culminated in 1924 with a ◊link[germany-notes]{100 billion mark note}, while only four years earlier 100 mark notes were used.
     }
     ◊money["Cigarettes in prison"
-           #:date "1994"
-           #:img "https://productplacementblog.com/wp-content/uploads/2019/01/Lucky-Strike-Cigarettes-in-The-Shawshank-Redemption-1-800x450.jpg"]{
-        Like depicted in the movie Shawshank Redemption cigarettes are used in some prisons as a form of money. Today some prisons have started to ban smoking, so they instead use things like stamps.
+           #:date "20th century"
+           #:img "images/prison_money.png"]{
+        Like depicted in the movie Shawshank Redemption cigarettes are used in some prisons ◊link[prison-cigarettes]{as a form of money}. Today some prisons have started to ban smoking, so they instead use things like ◊link[prison-stamps]{stamps} or ◊link[prison-ramen]{ramen}.
     }
     ◊money["Euro bank notes"
            #:date "21th century"
-           #:img "https://i.dailymail.co.uk/i/pix/2016/02/16/10/004918B700000258-3449097-image-a-18_1455617645563.jpg"]{
-        There are many kinds of fiat currencies, for example the Euro. Modern coins are not made of valuable metal and paper notes are used for large denominations.
+           #:img "images/bank_notes.png"]{
+        There are many kinds of ◊em{fiat currencies},◊sn{fiat-commodity} for example the Euro. Modern coins are not made of valuable metal and paper notes are used for large denominations.
     }
     ◊money["Dogecoin"
            #:date "2013"
-           #:img "https://dogecoin.com/imgs/dogecoin-300.png"]{
+           #:img "images/doge.png"]{
         Dogecoin is a cryptocurrency, while created as a "joke currency", it quickly gained popularity as a tipping tool online. You can still find merchants who accept it today for things like domain names, web hosting, VPNs or games.
     }
     ◊money["Marbles on the school yard"
            #:date "2017"
-           #:img "https://images-na.ssl-images-amazon.com/images/I/81OSKE1n6gL._SL1500_.jpg"]{
-        Kids on the schoolyard often come up with interesting forms of money. For example collectible card games or game components. Like marbles used in a Swedish game "rutan". Those with many marbles had the highest status in class.
+           #:img "images/marbles.png"]{
+        Kids on the schoolyard often come up with interesting forms of money. For example collectible card games or game components.◊sn{pokemon} Like marbles used in a Swedish game "rutan". Those with many marbles had the highest status in class.
     }
 }
 
-◊(define largest-coin "https://www.riksbank.se/en-gb/about-the-riksbank/history/1600-1699/the-worlds-largest-coin/")
+◊ndef["germany-stories"]{
+    There are many ◊link[germany-wallpaper]{interesting stories} (with pictures). For example kids playing with stacks of money, how it was cheaper to use the notes themselves as wallpaper or how kids created kites with the notes.
+}
+
+◊ndef["pokemon"]{
+    I'm not really up to date with the games kids play these days. I still live with the memories of Pokémon. Good times.
+}
+
+◊ndef["fiat-commodity"]{
+    There is a popular classification of money into different types. ◊em{Fiat money} is what we typically use today---government issued money.
+
+    ◊em{Commodity money} refers to money which derives its value from the commodity it's made of. For example coins made of gold. That the value comes from the commodity itself is questionable, see the discussion in ◊link[rel-subjective-theory-of-value]{subjective theory of value}.
+}
+
+◊(define rel-gold-standard "#the-gold-standard")
+◊(define rel-subjective-theory-of-value "#subjective-theory-of-value")
+◊(define germany-notes "https://en.wikipedia.org/wiki/German_Papiermark#Weimar_Republic_(1920%E2%80%9324)")
+
 
 ◊(define (money title #:img img #:date [date #f] . text)
    (define xdate (if date
@@ -100,40 +118,48 @@ First let's look at some interesting historical examples of things that have bee
 
 ◊subhead{The gold standard}
 
-Just an historical note.
+There's an important historical point to make about fiat. First used 1821 in the United Kingdom, the ◊link[gold-standard]{gold standard} made sure to back each currency unit with gold.◊sn{gold-standard} So if you had $1,000 in bank notes you could exchange them to $1,000 worth of gold. This was used in various ways up until 1971, when it was finally abandoned completely.
+
+◊ndef["gold-standard"]{
+    Like a lot of things we'll touch, whether the gold standard is good or bad is ◊link[gold-debate]{hotly debated}.
+}
+
+◊(define gold-debate "https://www.thebalance.com/what-is-the-gold-standard-3306137")
 
 
 ◊subhead{Bartering, and why do we need money?}
 
-How would life look like if we don't have money? We would have to turn to bartering---trading goods or services directly.◊sn{bartering}
+How would life look like if we didn't have money? We would have to turn to bartering---trading goods or services directly.◊sn{bartering}
 
-For example imagine if you're a farmer and you have a bunch of pigs. To buy a new tractor you need to trade with the tractor seller, and maybe you can buy the tractor for 10 pigs.
-
-◊todo{IMG farmer trades 10 pigs for a tractor}
+◊img[#:src "images/pig_chair_exchange.png"]{
+    For example imagine if you're a farmer and you have a bunch of pigs. To buy a new chair you need to trade with the carpenter, and maybe you can buy the chair for a single pig.
+}
 
 But there are problems with this system:
 
 ◊ol{
-    ◊li{What if the tractor seller doesn't want your pigs?
+    ◊li{What if the carpenter doesn't want your pig?
 
         You would have to trade with others and find something the seller would accept.
-    }
-    ◊li{What if you want to buy a loaf of bread?
 
-        You would have to kill a pig and offer parts to him.
+        ◊img[#:src "images/pig_chair_exchange_long.png"]{
+            It can sometimes be very cumbersome to trade for something the carpenter wants---in this case a bottle of rum. Each step in the process needs a matching buyer and seller.
+        }
+    }
+    ◊li{What if you want to buy a loaf of bread, worth much less than a single pig?
+
+        You would have to kill a pig and offer parts to him. Maybe the pigs haven't grown up yet---you'll lose a lot if you kill one too early.
     }
 }
 
-In short it's extremely inefficient. In our example the farmer might have to do many trades just to find something the seller can accept. He might also lose value in the process by having to kill pigs prematurely.
+In short it's extremely inefficient.
 
-◊todo{IMG farmer trying to trade for a tractor, with many intermediate steps}
-
-This is why we as a society prefer to use money. Even if the thing we use as money itself is worthless---like pieces of paper---the function it serves is very valuable.
+This is why we as a society prefer to use money. Even if the thing we use as money itself is basically worthless---like pieces of paper---the function it serves is very valuable.
 
 ◊ndef["bartering"]{
     Bartering can happen on a small scale today. For example in your social circle you might trade favors instead of money.
 
-    In an economical collapse, like in the case of hyperinflation, bartering might make sense on a larger scale as well.
+    In an economical collapse, like in the case of hyperinflation or a zombie invasion, bartering might make sense on a larger scale as well.
 }
 
 
@@ -141,10 +167,12 @@ This is why we as a society prefer to use money. Even if the thing we use as mon
 
 One common answer to the question "what gives money value?" is ◊link[state-theory-of-money]{the State Theory of Money} (many refer to it unknowingly).
 
-The basic thesis is that it's the state that gives value to money.
+The basic thesis is that it's the state that gives value to money:
 
 ◊ol{
-    ◊li{Fiat currency is declared by the state to be ◊em{legal tender}, which means merchants have to accept it by law.}
+    ◊li{Fiat currency is declared by the state to be ◊em{legal tender}.
+
+        Which, among other things, means merchants have to accept it by law.}
     ◊li{The state◊sn{fed} is responsible to regulate inflation.}
     ◊li{Banks are insured by the state, increasing safety of the currency.}
     ◊li{Before dropping the gold standard, fiat currencies were backed up by gold.}
@@ -153,24 +181,46 @@ The basic thesis is that it's the state that gives value to money.
 While this might on the surface explain why fiat currencies are valuable, it fails to explain why other forms of money become valuable.
 
 ◊ndef["fed"]{
-    In the US it's actually the Federal Reserve System, a central bank, that controls printing of money.
+    In the US it's actually the ◊link[federal-reserve]{Federal Reserve System}, a central bank, that controls printing of money. Most other countries use a similar system. In the EU it's called the ◊link[ecb]{European Central Bank}.
 }
 
-◊(define state-theory-of-money "https://socialsciences.mcmaster.ca/econ/ugcm/3ll3/knapp/StateTheoryMoney.pdf")
+◊(define federal-reserve "https://www.investopedia.com/terms/f/federalreservebank.asp")
+◊(define ecb "https://www.ecb.europa.eu/home/html/index.en.html")
 
 
 ◊subhead{Subjective theory of value}
 
-Instead a better explanation is given by the ◊link[subjective-theory-of-value]{subjective theory of value}.
+Instead a better explanation is given by the ◊link[subjective-theory-of-value]{subjective theory of value}. It describes how goods are valued, but it serves just as well to explain why money is valuable.
 
-◊(define subjective-theory-of-value "")
+In short it says ◊em{value is subjective}.
+
+It might sound too simplistic or like a tautology. But what it means is there's no global deciding function that gives value. Instead each person independently assigns value.◊sn{subjective-commodity}
+
+◊ndef["subjective-commodity"]{
+    In the context of commodity money it means they can be more valuable than what they're made of. Which can happen if their value as a medium of exchange is more than the value of the raw materials.
+
+    A related fact is that the material in US nickels ◊link[nickels-metal]{can be worth more than the value of the nickel itself}. (The melt value varies).
+}
+
+◊(define nickels-metal "https://www.thepennyhoarder.com/smart-money/hoarding-nickels-pocket-change-might-worth-think/")
+
+For instance medicine can be extremely valuable for those who needs it, but have little value to others. So if you have the medicine, but don't need it, you'll gladly sell. But someone who needs it would be very reluctant to sell, unless for a very high price.
+
+What does it mean for money? That ◊strong{the value of money is emergent from a group of individuals}. If for example everyone in your social group declares that tomorrow they'll use Pokémon trading cards as money, then they suddenly become very valuable to you. The more people who use a form of money, the better it works and the more value it will have.
+
+States don't give money value---but it can contribute. For example declaring fiat legal tender makes more people accept it, which in turn increases it's value.
 
 
 ◊subhead{What functions does money serve?}
 
-If more or less anything can be used as money, it makes more sense to look at how money is used. Knowledgeable people seem to agree money has three major functions:
+If more or less anything can be used as money, it makes more sense to look at how money is used. ◊link[3-fun-money]{Knowledgeable people} seem to agree money has three major functions:◊sn{4-fun-money}
 
-◊todo{Images for these examples}
+◊ndef["4-fun-money"]{
+    ◊link[4-fun-money]{Some also use a fourth function}: ◊em{standard of deferred payment}. I chose to focus on the three functions, it seems to me it's the popular way.
+}
+
+◊(define 3-fun-money "https://www.khanacademy.org/economics-finance-domain/ap-macroeconomics/ap-financial-sector/definition-measurement-and-functions-of-money-ap/a/definition-measurement-and-functions-of-money")
+◊(define 4-fun-money "https://opentextbc.ca/principlesofeconomics/chapter/27-1-defining-money-by-its-functions/")
 
 ◊ol{
     ◊li{◊strong{Medium of exchange}
@@ -187,7 +237,7 @@ If more or less anything can be used as money, it makes more sense to look at ho
     }
     ◊li{◊strong{Store of value}
 
-        It maintains it's value over time.
+        It maintains its value over time.
 
         A piece of gold could for example buy clothes in both ancient Greece and today.
     }
@@ -197,27 +247,41 @@ If more or less anything can be used as money, it makes more sense to look at ho
     Used cars are usually cheaper in the south of Sweden, for some reason unknown to me.
 }
 
+Medium of exchange is the ◊link[most-important]{most important} defining property of money, the other properties follow.
+
+◊(define most-important "https://mises.org/library/mises-basics-money")
+
 Note that these are functions of usage and adoption. For instance if something has been a store of value a period of time it doesn't mean it will continue to be a good store of value in the future.◊sn{gold-sov}
 
-But it does raise some interesting question:
+Now we may wonder:
 
 ◊ul{
     ◊li{Can anything be used as money?}
     ◊li{Are there "good" and "bad" forms of money?}
 }
 
-As seen from historical examples of money I think it's safe to conclude that yes, basically anything can be used as money. But to evaluate if money is good or bad we need to look at other properties.
+As seen from historical examples I think it's safe to conclude that yes, basically anything can be used as money. But to evaluate if money is good or bad we need to look at other properties.
 
 ◊ndef["gold-sov"]{
-    Gold is the classical example of a store of value. But it has also seen large up and down movements in valuation.
+    Gold is the classical example of a store of value. But it has also seen large up and down movements in valuation. ◊link[gold-valuation]{This is the yearly closing price of gold}:
 
-    ◊todo{IMG of gold valuation}
+    ◊raw-img[#:src "images/gold-valuation.svg"]{}
+
+    For example in 2010 it increased 27.74% and in 2013 it decreased 27.79%.
 }
+
+◊(define gold-valuation "https://www.macrotrends.net/1333/historical-gold-prices-100-year-chart")
 
 
 ◊subhead{What properties does good money have?}
 
-To function as money, economists seem to agree that money should have these properties:
+To function as money ◊link[money-props]{money should have these properties}:◊sn{money-props}
+
+◊ndef["money-props"]{
+    Which properties money should have also differs. Some list ◊em{recognisable} and others leave out ◊em{fungible} (keeping ◊em{uniform}). Again I chose to go with what appears to be the popular description.
+}
+
+◊(define money-props "http://money.visualcapitalist.com/tag/properties-of-money/")
 
 ◊ol{
     ◊li{◊strong{Acceptable}
@@ -238,17 +302,19 @@ To function as money, economists seem to agree that money should have these prop
 
         Food is for example not durable and makes for poor money.
     }
-    ◊li{◊strong{Fungible}
+    ◊li{◊strong{Fungible & Uniform}
 
-        One unit is viewed as interchangeable with another.
+        Two items of the same type should always be considered equal.
 
-        For instance shares in a company should be the same, even if bought at different times and at different prices.
+        The difference between ◊em{fungibility} and ◊em{uniformity} is confusing, so I will bundle them together.◊sn{fungible-uniform}
+
+        It means shares in a company should be worth the same, even if bought at different times and at different prices. And all gold coins of the same denomination should contain the same amount of gold.
     }
     ◊li{◊strong{Limited in supply}
 
         There should be a limited and predictable amount of money.◊sn{limited-supply}
 
-        A limited amount is needed for the money to hold it's value.  It's important that money can't be counterfeit, otherwise it would be possible to produce an unlimited amount of money.
+        A limited amount is needed for the money to hold it's value. It's important that money can't be counterfeit, otherwise it would be possible to produce an unlimited amount of money.
     }
     ◊li{◊strong{Portable}
 
@@ -256,18 +322,16 @@ To function as money, economists seem to agree that money should have these prop
 
         Money should be practical.
     }
-    ◊li{◊strong{Uniform}
-
-        All versions of the same denomination must have the same purchasing power.◊sn{uniform}
-
-        Coins made of precious metal and of the same type should contain the same amount.
-    }
 }
 
 We can summarize the properties as: money should be practical and efficient.
 
-◊ndef["uniform"]{
-    The difference between fungibility and uniformity is a bit confusing. To me, fungibility concerns history and uniformity concerns how two pieces of a currency appears right now. They essentially say: two coins of the same type should always be considered equal.
+It makes sense as the point of money is to increase efficiency. And if money isn't practical, it's not a good medium of exchange.
+
+◊ndef["fungible-uniform"]{
+    ◊em{Fungibility} refers to one unit being interchangeable with another while ◊em{uniformity} refers to two versions of the same denomination having the same purchasing power.
+
+    Perfect uniformity implies fungibility, but non-uniform goods can still be fungible. For example barrels of oil aren't uniform---their quality differ. But oil can be classified into different qualities, where they are treated as the same. Thus oil of the same quality is fungible.
 }
 
 ◊ndef["limited-supply"]{
@@ -279,39 +343,20 @@ We can summarize the properties as: money should be practical and efficient.
 
 How do our historical examples of money hold up? They don't include examples of outright bad forms◊sn{really-bad}, but some are indeed better than others.
 
-The large ◊strong{Rai stones} and the ◊strong{20kg copper coin} are great examples of money that isn't portable. Therefore they are bad forms of money.◊sn{smaller-denominations}
-
-◊strong{Cigarettes}, ◊strong{marbles}, ◊strong{stamps} and other types of commodities are decent forms of money---on a small scale. They have some durability issues (wear and tear) and they're not perfectly uniform. But most of all they can be mass produced preventing it's use on a larger scale.◊sn{marble-coin}
-
-◊strong{Sea shells} is also a pretty good form of money---assuming they're not too plentiful. If used in a local market---for example on an island---there's always a risk of the market being overrun by shells from other islands, where they're more common.
-
-◊strong{Metal coins} is a very good form of money, especially if made by scarce material. Gold is naturally very scarce, ensuring a limited supply, and coins are easy to use and very durable. This is the reason coins have been the dominating type of currency for over 2000 years.
-
-Whether ◊strong{cryptocurrencies} are good or bad is a topic for the ◊link[next-chapter]{next chapter}.
-
-
-◊subhead{The problem with fiat currencies}
-
-The money we usually use today is a little different from coins made of precious materials. We use coins made with cheap metal, paper notes and our money is often just stored digitally at a bank.
-
-It's not really a requirement that the money must have an intrinsic value, the real problem is that the supply isn't actually limited.  Banks inflate the supply using ◊link[fractional-banking]{Fractional Banking} and central banks can print money, both physical and digital, without any limit.◊sn{fractional-banking-good}
-
-The term ◊em{sound money} refers to money that is not prone to sudden changes in long term purchasing power. If the supply of money differs from the demand, which will happen with fiat due to the disconnect between banks and the market, then there will be changes.
-
-While fiat has many positive properties, after the move away from the gold standard, it's now considered unsound money.
-
-
-◊ndef["fractional-banking-good"]{
-    There are those who ◊link[fractional-banking-atlanta]{argue that Fractional Banking is a net positive for society}. And ◊link[fractional-banking-bad]{those who disagree}.
+◊ndef["really-bad"]{
+    Food or sand would be examples of really bad money. Food spoils quickly while sand exist in extreme quantities.
 }
 
-◊(define fractional-banking "https://corporatefinanceinstitute.com/resources/knowledge/finance/fractional-banking/")
-◊(define fractional-banking-atlanta "https://www.frbatlanta.org/education/classroom-economist/fractional-reserve-banking/economists-perspective-transcript")
-◊(define fractional-banking-bad "https://mises.org/library/faults-fractional-reserve-banking")
+The large ◊strong{Rai stones} and the ◊strong{20kg copper coin} are great examples of money that isn't portable. Therefore they are bad forms of money.◊sn{smaller-denominations}
 
+◊ndef["smaller-denominations"]{
+    Both Rai stones and the Swedish copper coins have smaller versions as well, making them a bit more practical.
+}
+
+◊strong{Cigarettes}, ◊strong{marbles}, ◊strong{stamps} and other types of commodities are decent forms of money---on a small scale. They have some durability issues (wear and tear) and they're not perfectly uniform. But most importantly, they can be mass produced preventing their use on a larger scale.◊sn{marble-coin}
 
 ◊ndef["marble-coin"]{
-    We can run a thought experiment: what if we wanted to use marbles as money on a global scale?
+    Let's run a thought experiment: what if we wanted to use marbles as money on a global scale?
 
     If we control the creation of a special kind of marble, we can make them durable and uniform. We can also add some sort of counterfeit protection---maybe embed holograms with cryptographic messages---to ensure a limited supply. And of course it's easy to create different kinds of denominations.
 
@@ -320,14 +365,36 @@ While fiat has many positive properties, after the move away from the gold stand
     And now we've reinvented the coin. A coin is actually remarkably efficient!
 }
 
+◊strong{Sea shells} is a good form of money---assuming they're not too plentiful. If used in a local market---for example on an island---there's always a risk of the market being overrun by shells from other islands, where they're more common. They're durable, light weight and easy to use.
 
-◊ndef["really-bad"]{
-    Food or sand would be examples of really bad money. Food spoils quickly while sand exist in extreme quantities.
+◊strong{Metal coins} is a very good form of money, especially if made by scarce material. Gold is naturally very scarce, ensuring a limited supply, and coins are easy to use and very durable. This is the reason coins have been the dominating type of currency for over 2000 years.
+
+Whether ◊strong{cryptocurrencies} are good or bad is a topic for the ◊link[next-chapter]{next chapter}.
+
+
+◊subhead{The problem with fiat currencies}
+
+The money we usually use today is a little different from coins made of precious materials. We use coins made with cheap metal, paper notes and our money is often just stored digitally at a bank. After abandoning the gold standard there is nothing physically backing up the value of money.◊sn{intrinsic-value}
+
+◊ndef["intrinsic-value"]{
+    Some say cryptocurrencies can't be money because it lacks intrinsic value---like gold has. But fiat currencies don't have intrinsic value either. The only value comes from the function as money.
+
+    See ◊link[intrinsic-value-fallacy]{The Fallacy of "Intrinsic Value"}.
 }
 
-◊ndef["smaller-denominations"]{
-    Both Rai stones and the Swedish copper coins have smaller coins as well, making them a bit more practical.
+◊(define intrinsic-value-fallacy "https://fee.org/articles/the-fallacy-of-intrinsic-value/")
+
+It's not really a requirement that the money must have an intrinsic value, the real problem is that the supply isn't actually limited.  Banks inflate the supply using ◊link[fractional-banking]{Fractional Banking} while central banks can print money, both physical and digital, without any limit.◊sn{fractional-banking-good}
+
+◊ndef["fractional-banking-good"]{
+    There are those who ◊link[fractional-banking-atlanta]{argue that Fractional Banking is a net positive for society}. And ◊link[fractional-banking-bad]{those who disagree}. Regardless, it is a negative with respect to the properties of money we use.
+
+    The basic idea behind fractional banking is that the bank gives out more money than it really has. So for example if I deposit 1000 SEK into the bank, the bank can now also loan out 900 SEK to you (how much the bank is allowed to loan differs). It has increased the money supply with 900 SEK from "thin air".
 }
+
+The term ◊link[sound-money]{◊em{sound money}} refers to money that is not prone to sudden changes in long term purchasing power. If the supply of money differs from the demand, which will happen with fiat due to the disconnect between banks and the market, then there will be changes. While fiat has many positive properties, after the move away from the gold standard, it's now considered unsound money.
+
+◊(define sound-money "https://www.soundmoneydefense.org/sound-money-explained")
 
 
 ◊subhead{Why do we need good money?}
@@ -347,10 +414,27 @@ I see two major reasons:
 
 In our context knowing what differentiates good from bad forms of money helps us reason about cryptocurrencies, and to see if it can live up to it's namesake. But more on that in the ◊link[next-chapter]{next chapter}.
 
+
+◊(define sea-shells "https://www.nbbmuseum.be/en/2007/01/cowry-shells.htm")
+◊(define shells-slaves "https://www.culturesofwestafrica.com/cowrie-shell-monetary-symbolic-value/")
+◊(define ancient-greece-coinage "https://www.ancient.eu/Greek_Coinage/")
+◊(define rai-stones "http://www.bbc.com/travel/story/20180502-the-tiny-island-with-human-sized-money")
+◊(define rai-stones-pictures "https://www.thevintagenews.com/2017/12/28/rai-stones/")
+◊(define germany-wallpaper "https://mashable.com/2016/07/27/german-hyperinflation/")
 ◊(define next-chapter "are_cryptocurrencies_money.html")
+◊(define prison-stamps "https://www.therichest.com/business/economy/five-surprising-things-prisoners-use-as-currency/")
+◊(define prison-ramen "https://www.npr.org/sections/thesalt/2016/08/26/491236253/ramen-noodles-are-now-the-prison-currency-of-choice?t=1557205041822")
+◊(define prison-cigarettes "")
+◊(define fractional-banking "https://corporatefinanceinstitute.com/resources/knowledge/finance/fractional-banking/")
+◊(define fractional-banking-atlanta "https://www.frbatlanta.org/education/classroom-economist/fractional-reserve-banking/economists-perspective-transcript")
+◊(define fractional-banking-bad "https://mises.org/library/faults-fractional-reserve-banking")
+◊(define largest-coin "https://www.riksbank.se/en-gb/about-the-riksbank/history/1600-1699/the-worlds-largest-coin/")
+◊(define state-theory-of-money "https://socialsciences.mcmaster.ca/econ/ugcm/3ll3/knapp/StateTheoryMoney.pdf")
+◊(define subjective-theory-of-value "https://wiki.mises.org/wiki/Subjective_theory_of_value")
+◊(define gold-standard "https://www.britannica.com/topic/gold-standard")
 
 ◊; http://money.visualcapitalist.com/infographic-the-properties-of-money/
 ◊; https://www.aier.org/
 ◊; https://thesocietypages.org/socimages/2014/04/24/money-as-a-social-construction/
 ◊; https://hackernoon.com/money-is-a-social-construct-and-thats-why-you-should-run-a-bitcoin-full-node-ea0330cb69a5?gi=257add0b9b0b
-
+◊; https://www.bbc.com/news/business-45523636
