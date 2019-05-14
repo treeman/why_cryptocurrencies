@@ -106,17 +106,18 @@ I know this might be controversial, so let me motivate some of the entries.
 
 Even if you disagree about certain choices, it's hard to disagree that cryptocurrencies come out of the comparison pretty well.
 
-But of course this doesn't give the whole picture. For example a big difference between cryptocurrencies and gold is that cryptocurrencies are digital. This isn't only positive---cryptocurrency implementations can have bugs that might have severe negative consequences.◊sn{bugs}
+But of course this doesn't give the whole picture. There are other significant differences, for example:
 
-Another difference is that gold has stood the test of time. It's been used as money for thousands of years, while cryptocurrencies are just more than 10 years old.◊sn{age-of-fiat}
+◊ul{
+    ◊li{A big difference between cryptocurrencies and gold is that cryptocurrencies are digital. This isn't only positive---cryptocurrency implementations can have bugs that might have severe negative consequences.◊sn{bugs}}
+    ◊li{Digital fiat can get frozen any time by your bank, while physical payments and cryptocurrencies are uncensorable.}
+    ◊li{The legitimacy of cryptocurrency coins can be verified very easily. It's possible check for fake cash and gold coins, but it requires expertise and certain tools.}
+    ◊li{Gold has stood the test of time. It's been used as money for thousands of years, while cryptocurrencies are just more than 10 years old.◊sn{age-of-fiat}}
+}
 
 ◊ndef["age-of-fiat"]{
     A fun fact: ◊link[avg-life-fiat]{The average life expectancy for a fiat currency is 27 years}.
 }
-
-◊(define avg-life-fiat "https://web.archive.org/web/20150801064652/http://dollardaze.org/blog/?page_id=00017")
-
-A third major difference is that digital fiat can get frozen any time by your bank, while physical payments and cryptocurrencies are uncensorable.
 
 ◊ndef["backups"]{
     Because phones can break or be stolen, you should write down your private key as backup. It's a good idea to secure it from fire, theft and simply losing it.
@@ -135,6 +136,8 @@ A third major difference is that digital fiat can get frozen any time by your ba
 
     Both ◊link[monero-bug]{Monero} and ◊link[bitcoin-bug]{Bitcoin} has for example had major bugs that could've allowed an attacker to create coins for free. Neither were exploited, this time.
 }
+
+◊(define avg-life-fiat "https://web.archive.org/web/20150801064652/http://dollardaze.org/blog/?page_id=00017")
 
 ◊(define (ths txt)
    `(td ((class "ths")) ,txt))
