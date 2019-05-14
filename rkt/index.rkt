@@ -22,7 +22,7 @@
      "What is money?"
      "Are cryptocurrencies money?")
     (better_digital_payments.html
-     safer_cheaper_for_merchants.html
+     faster_cheaper.html
      "Uncensorable donations"
      "“Undesirable” businesses"
      "Avoid freezing of merchant accounts"
