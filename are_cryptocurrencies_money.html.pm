@@ -91,7 +91,7 @@ I know this might be controversial, so let me motivate some of the entries.
 
     ◊li{I see no major problems with ◊strong{fungibility} or ◊strong{uniformity}.◊sn{again-monero}}
 
-    ◊li{Both digital and physical fiat gets a poor score on ◊strong{limited supply}. Per the discussion in ◊link[prev-chapter]{the previous chapter} fiat money is unsound.}
+    ◊li{Both digital and physical fiat gets a poor score on ◊strong{limited supply}. Per the discussion in ◊link[prev-chapter]{the previous chapter}---fiat money is unsound.}
 
     ◊li{Cryptocurrencies are simply much more ◊strong{portable} than the other options. Carrying large amounts in cash or gold is cumbersome and digital fiat isn't easy to move across borders.◊sn{borders}}
 }
@@ -158,7 +158,7 @@ But of course this doesn't give the whole picture. There are other significant d
 
 ◊subhead{Do cryptocurrencies function as money?}
 
-We've looked at the properties, but how well does it function as money, today?
+We've looked at the properties, but how well do they function as money, today?
 
 ◊ol{
     ◊li{◊strong{Medium of exchange}
@@ -210,7 +210,7 @@ There are mainly two things holding it back today:
 
 Both of these are functions of how new cryptocurrencies are. When the market matures, the volatility will naturally decrease. Barring any large weaknesses the network effect will only grow larger---cryptocurrencies do provide some good benefits.
 
-Perhaps it's to be expected that cryptocurrencies aren't global money yet---it's only a little more than 10 years old after all.
+Perhaps it's to be expected that cryptocurrencies aren't global money yet---they're only a decade old after all.
 
 ◊ndef["shock-of-the-old"]{
     For a different perspective of how technology gets adopted I recommend "The Shock of the Old" by David Edgerton. He argues that technology must be significantly better than the previous to see use---and he makes a very compelling argument.
@@ -242,7 +242,7 @@ With the motivations:
 
 While cryptocurrencies match up poorly, there is no perfect alternative.
 
-Note that unlike the fundamental properties---which don't change that much---how well money functions change with the times. For example a few hundred years ago gold coins would be used everywhere.◊sn{bad-example?}
+Note that unlike the fundamental properties---which don't change that much---how well money function change with the times. For example a few hundred years ago gold coins would be used everywhere.◊sn{bad-example?}
 
 ◊ndef["bad-example?"]{
     Maybe a bad example---cryptocurrencies and modern fiat didn't exist so far back. But hopefully you get my point: gold was once an excellent medium of exchange and unit of account. It changes.
