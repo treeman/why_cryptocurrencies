@@ -80,7 +80,7 @@ First let's look at some interesting historical examples of things that have bee
     ◊money["Marbles on the school yard"
            #:date "2017"
            #:img "images/marbles.png"]{
-        Kids on the schoolyard often come up with interesting forms of money. For example collectible card games or game components.◊sn{pokemon} Like marbles used in a Swedish game "rutan". Those with many marbles had the highest status in class.
+        Kids on the schoolyard often come up with interesting forms of money. For example collectible card games or game components. Like marbles used in a Swedish game, those with many marbles had the highest status in class.◊sn{pokemon}
     }
 }
 
@@ -129,7 +129,7 @@ There's an important historical point to make about fiat. First used 1821 in the
 
 ◊subhead{Bartering, and why do we need money?}
 
-How would life look like if we didn't have money? We would have to turn to bartering---trading goods or services directly.◊sn{bartering}
+What would life look like if we didn't have money? We would have to turn to bartering---trading goods or services directly.◊sn{bartering}
 
 ◊img[#:src "images/pig_chair_exchange.png"]{
     For example imagine if you're a farmer and you have a bunch of pigs. To buy a new chair you need to trade with the carpenter, and maybe you can buy the chair for a single pig.
@@ -148,7 +148,7 @@ But there are problems with this system:
     }
     ◊li{What if you want to buy a loaf of bread, worth much less than a single pig?
 
-        You would have to kill a pig and offer parts to him. Maybe the pigs haven't grown up yet---you'll lose a lot if you kill one too early.
+        You would have to kill a pig and offer parts to him. Maybe the pig hasn't grown up yet---you'll lose a lot if you kill it too early.
     }
 }
 
@@ -170,7 +170,7 @@ One common answer to the question "what gives money value?" is ◊link[state-the
 The basic thesis is that it's the state that gives value to money:
 
 ◊ol{
-    ◊li{Fiat currency is declared by the state to be ◊em{legal tender}.
+    ◊li{Fiat currency is declared by the state to be ◊link[legal-tender]{◊em{legal tender}}.
 
         Which, among other things, means merchants have to accept it by law.}
     ◊li{The state◊sn{fed} is responsible to regulate inflation.}
@@ -184,6 +184,7 @@ While this might on the surface explain why fiat currencies are valuable, it fai
     In the US it's actually the ◊link[federal-reserve]{Federal Reserve System}, a central bank, that controls printing of money. Most other countries use a similar system. In the EU it's called the ◊link[ecb]{European Central Bank}.
 }
 
+◊(define legal-tender "https://en.wikipedia.org/wiki/Legal_tender")
 ◊(define federal-reserve "https://www.investopedia.com/terms/f/federalreservebank.asp")
 ◊(define ecb "https://www.ecb.europa.eu/home/html/index.en.html")
 
@@ -387,9 +388,9 @@ The money we usually use today is a little different from coins made of precious
 It's not really a requirement that the money must have an intrinsic value, the real problem is that the supply isn't actually limited.  Banks inflate the supply using ◊link[fractional-banking]{Fractional Banking} while central banks can print money, both physical and digital, without any limit.◊sn{fractional-banking-good}
 
 ◊ndef["fractional-banking-good"]{
-    There are those who ◊link[fractional-banking-atlanta]{argue that Fractional Banking is a net positive for society}. And ◊link[fractional-banking-bad]{those who disagree}. Regardless, it is a negative with respect to the properties of money we use.
+    The basic idea behind Fractional Banking is that the bank gives out more money than it really has. So for example if I deposit 1000 SEK into the bank, the bank can now also loan out 900 SEK to you (how much the bank is allowed to loan differs). It has increased the money supply with 900 SEK from "thin air".
 
-    The basic idea behind fractional banking is that the bank gives out more money than it really has. So for example if I deposit 1000 SEK into the bank, the bank can now also loan out 900 SEK to you (how much the bank is allowed to loan differs). It has increased the money supply with 900 SEK from "thin air".
+    There are those who ◊link[fractional-banking-atlanta]{argue that Fractional Banking is a net positive for society}. And ◊link[fractional-banking-bad]{those who disagree}. Regardless, it is a negative with respect to the properties of money we use.
 }
 
 The term ◊link[sound-money]{◊em{sound money}} refers to money that is not prone to sudden changes in long term purchasing power. If the supply of money differs from the demand, which will happen with fiat due to the disconnect between banks and the market, then there will be changes. While fiat has many positive properties, after the move away from the gold standard, it's now considered unsound money.
