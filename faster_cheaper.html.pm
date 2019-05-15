@@ -37,14 +37,14 @@ Cryptocurrencies work differently. You do get a payment notification after a few
 
 ◊table[#:class "centered"]{◊tbody{
     ◊tr{◊td{}                   ◊tds{Notification}   ◊tds{Settlement}     ◊tds{Irreversible}}
-    ◊tr{◊tds{Credit cards}       ◊td{seconds}        ◊td{days}           ◊td{months}}
-    ◊;tr{◊tds{Bank tranfers}      ◊td{days}           ◊td{days}           ◊td{months}}
-    ◊;tr{◊tds{Western Union}      ◊td{days}           ◊td{days}           ◊td{months}}
+    ◊tr{◊tds{VISA/Mastercard}   ◊td{seconds}        ◊td{days}           ◊td{months}}
+    ◊;tr{◊tds{Mobile payments}    ◊td{days}           ◊td{days}           ◊td{months}}
     ◊tr{◊tds{Cryptocurrencies}   ◊td{seconds}        ◊td{an hour}        ◊td{an hour}}
 }}
 
 ◊(define (tds txt)
    `(td (strong ,txt)))
+
 
 ◊subhead{Fees}
 
@@ -52,12 +52,22 @@ BCH:                $◊link[bitcoin-fees]{0.0015} flat fee (2019-05-10)
 
 ◊(define bitcoin-fees
     `("https://bitcoinfees.cash/"
-      "Bitcoin Cash fees"))
+      "Bitcoin Cash and Bitcoin fees"))
 
 Fees are depending on the business and amount
 VISA/mastercard:    1-3%
 PayPal:             2-5%
 Western Union:      Varies a lot but typically much more expensive
+
+◊table[#:class "centered"]{◊tbody{
+    ◊tr{◊td{}                   ◊tds{Fixed fee}     ◊tds{Rate}}
+    ◊tr{◊tds{VISA/Mastercard}   ◊td{}          ◊td{1--3%}}
+    ◊tr{◊tds{PayPal}            ◊td{$0.30}          ◊td{2.9--4.4%}}
+    ◊tr{◊tds{Bitcoin Cash}      ◊td{$0.0015}        ◊td{-}}
+}}
+
+◊;https://www.creditdonkey.com/credit-card-processing-fees.html
+◊;https://www.paypal.com/us/webapps/mpp/paypal-fees
 
 
 ◊subhead{Charge back fraud}
