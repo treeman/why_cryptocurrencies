@@ -79,7 +79,7 @@ This is a table of how I think cryptocurrencies compares to other good forms of 
     ◊tr{◊tds{6. Portable}              ◊en{good}      ◊en{good}      ◊en{good}      ◊en{excellent}}
 }}
 
-I know this might be controversial, so let me motivate some of the entries.
+I know this might be controversial, so let me motivate some of the entries:
 
 ◊ol{
     ◊li{Digital fiat gets a poor score on ◊strong{acceptable} because it requires a bank account to use. This isn't something everyone can get---banks are in the right to reject you if they want. We'll revisit this topic in a future chapter.◊sn{acceptable}
@@ -104,9 +104,7 @@ I know this might be controversial, so let me motivate some of the entries.
     The definition of ◊em{durability} is only concerned with reuse, where cryptocurrencies score excellently. But I wanted to include the storage drawback which didn't fit anywhere else.
 }
 
-Even if you disagree about certain choices, it's hard to disagree that cryptocurrencies come out of the comparison pretty well.
-
-But of course this doesn't give the whole picture. There are other significant differences, for example:
+Even if you disagree about certain choices, it's hard to disagree that cryptocurrencies come out of the comparison pretty well. But of course this doesn't give the whole picture. There are other significant differences, for example:
 
 ◊ul{
     ◊li{A big difference between cryptocurrencies and gold is that cryptocurrencies are digital. This isn't only positive---cryptocurrency implementations can have bugs that might have severe negative consequences.◊sn{bugs}}
@@ -249,7 +247,7 @@ Note that unlike the fundamental properties---which don't change that much---how
 }
 
 
-◊subhead{What do law makers say?}
+◊subhead{What do lawmakers say?}
 
 Several countries---◊link[skatt-bitcoin]{like Sweden}---have ruled that Bitcoin isn't a currency. The reason is there's no responsible issuer and it's not legal tender◊sn{legal-tender} in any country.
 
