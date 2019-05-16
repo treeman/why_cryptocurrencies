@@ -97,7 +97,7 @@
   `(span ((class "sans-tnum")) ,@args))
 
 (define (todo . args)
-  `(div ((class "todo"))
+  `(span ((class "todo"))
     (span ((class "pre")) "TODO ")
     (span ((class "txt")) ,@args)))
 
