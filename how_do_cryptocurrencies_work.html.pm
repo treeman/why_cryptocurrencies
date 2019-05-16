@@ -40,14 +40,18 @@ Cryptocurrencies work this way as well. In fact the ledger in a cryptocurrency, 
 
 ◊subhead{Your keys, your coins}
 
-To be able to create a transaction you need to have the private keys to the address you want to send from. Think of it as a secret password that unlocks your account. This prevents anyone else from stealing your coins, unless of course they steal your private key!
+To be able to create a transaction you need to have the ◊em{private keys} to the address you want to send from. Think of it as a secret password that unlocks your account. This prevents anyone else from stealing your coins, unless of course they steal your private key!◊sn{private-key}
+
+◊ndef["private-key"]{
+    You typically don't use the private key directly. Instead you can interact with a ◊em{seed}, which encodes the private key hash into a human-readable format. It's commonly made of 12 or 24 words.
+}
 
 It uses ◊link[public-key-cryptography]{◊em{public-key cryptography}} which allows you to prove you control the private key without sharing the private key itself. Compare it to credit card numbers which act as both a private and public key. Explaining how the cryptographic primitives work is out of the scope of this book.◊sn{pubkey}
 
 ◊ndef["pubkey"]{
     If you're intrigued by the promise of public-key cryptography I encourage you to look it up, it's quite fascinating.
 
-    If you're interested in the history of cryptography I can also recommend the book "The Code-Breakers" by David Kahn. You can enjoy it even without much math knowledge.
+    If the history of cryptography interests you I can also recommend the book "The Code-Breakers" by David Kahn. You can enjoy it even without much math knowledge.
 }
 
 
