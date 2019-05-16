@@ -19,9 +19,9 @@ It does this by cutting out the middle man. But there is a trade-off---it shifts
 
 It's important that we know what a settlement is: it's when the actual funds are transferred. Not to be confused with the authorization message you get a few seconds after paying. The money only changes (virtual) hands much later.
 
-Credit card transactions can take days to settle, and they can be reversed several months after via charge backs.◊sn{who-pays?}
+Credit card transactions can take days to settle, and they can be reversed several months after via charge backs.◊sn{who-pays?} Mobile payments, via Apple Pay and similar, are often tied to credit cards and have similar properties.
 
-For us consumers this is a very good feature. If someone steals your credit card or a merchant is fraudulent, you can reverse the transactions by calling your issuer. For merchants and banks it can be a big problem, see ◊link[rel-charge-back-fraud]{charge back fraud}.
+The ability to do charge backs is a very good feature for us consumers. If someone steals your credit card or a merchant is fraudulent, you can reverse the transactions by calling your issuer. For merchants and banks charge backs can be a big problem, see ◊link[rel-charge-back-fraud]{charge back fraud}.
 
 ◊ndef["who-pays?"]{
     ◊todo{who pays?}
@@ -33,20 +33,35 @@ Cryptocurrencies work differently. You do get a payment notification after a few
     ◊todo{0-conf}
 }
 
+While wire transfers aren't used as payments, it's a useful comparison. They are typically much slower than other payment systems (although they're harder to reverse).◊sn{wire-transfer}
+
+
+◊ndef["wire-transfer"]{
+    Inside the EU ◊link[sepa]{SEPA} has massively improved the state of wire transfers across borders. Transactions often go through the same day and they're cheaper than other types of wire transfers.
+}
+
+◊(define sepa "https://en.wikipedia.org/wiki/Single_Euro_Payments_Area")
+
 ◊(define transaction-security "/how_do_cryptocurrencies_work.html#transaction-security")
 
-◊table[#:class "centered"]{◊tbody{
-    ◊tr{◊td{}                   ◊tds{Notification}   ◊tds{Settlement}     ◊tds{Irreversible}}
-    ◊tr{◊tds{VISA/Mastercard}   ◊td{seconds}        ◊td{days}           ◊td{months}}
-    ◊;tr{◊tds{Mobile payments}    ◊td{days}           ◊td{days}           ◊td{months}}
-    ◊tr{◊tds{Cryptocurrencies}   ◊td{seconds}        ◊td{an hour}        ◊td{an hour}}
-}}
+◊figure{
+    ◊table[#:class "centered"]{◊tbody{
+        ◊tr{◊td{}                   ◊tds{Notification}  ◊tds{Settlement}    ◊tds{Irreversible}}
+        ◊tr{◊tds{Wire transfer}     ◊td{days}           ◊td{days}           ◊td{days}}
+        ◊tr{◊tds{VISA/Mastercard}   ◊td{seconds}        ◊td{days}           ◊td{months}}
+        ◊tr{◊tds{Mobile payments}   ◊td{seconds}        ◊td{days}           ◊td{months}}
+        ◊tr{◊tds{Cryptocurrencies}  ◊td{seconds}        ◊td{an hour}        ◊td{an hour}}
+    }}
+    ◊figcaption{A summary of the speed of various payment systems}
+}
 
 ◊(define (tds txt)
    `(td (strong ,txt)))
 
 
 ◊subhead{Fees}
+
+It's difficult to make a good comparison between fees because they can vary a lot depending on 
 
 BCH:                $◊link[bitcoin-fees]{0.0015} flat fee (2019-05-10)
 
@@ -55,22 +70,25 @@ BCH:                $◊link[bitcoin-fees]{0.0015} flat fee (2019-05-10)
       "Bitcoin Cash and Bitcoin fees"))
 
 Fees are depending on the business and amount
-VISA/mastercard:    1-3%
-PayPal:             2-5%
-Western Union:      Varies a lot but typically much more expensive
 
-◊table[#:class "centered"]{◊tbody{
-    ◊tr{◊td{}                   ◊tds{Fixed fee}     ◊tds{Rate}}
-    ◊tr{◊tds{VISA/Mastercard}   ◊td{}          ◊td{1--3%}}
-    ◊tr{◊tds{PayPal}            ◊td{$0.30}          ◊td{2.9--4.4%}}
-    ◊tr{◊tds{Bitcoin Cash}      ◊td{$0.0015}        ◊td{-}}
-}}
+◊figure{
+    ◊table[#:class "centered"]{◊tbody{
+        ◊tr{◊td{}                   ◊tds{Transaction fee}}
+        ◊tr{◊tds{Wire transfer}     ◊td{$0--20}}
+        ◊tr{◊tds{VISA/Mastercard}   ◊td{1--3%}}
+        ◊tr{◊tds{PayPal}            ◊td{2.9--4.4% + $0.30}}
+        ◊tr{◊tds{Bitcoin Cash}      ◊td{$0.0015}}
+    }}
+    ◊figcaption{A summary of generalized transaction fees of various payment systems}
+}
 
 ◊;https://www.creditdonkey.com/credit-card-processing-fees.html
 ◊;https://www.paypal.com/us/webapps/mpp/paypal-fees
 
 
 ◊subhead{Charge back fraud}
+
+The ability to do charge backs 
 
 The major problem with current digital payments is the existence of ◊link[charge-back-fraud]{charge back fraud} (sometimes called friendly fraud).
 
