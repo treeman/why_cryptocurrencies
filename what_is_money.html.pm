@@ -13,7 +13,7 @@
 
 Money is something completely necessary in our society, most people probably come in contact with money every day. We might worry when paying our expenses, that we don't have enough or even be glad for how much we have. But we seldom stop and think of what money really is.
 
-Not just how the physical coins and pieces of paper are made, but why does money exist? What makes it valuable? Are there different kinds of money? And are there good and bad forms of money?◊mn{money-or-currency}
+Not just how the physical coins and pieces of paper are made, but why does money exist? What makes it valuable? Are there different kinds of money? And are some forms of money better than others?◊mn{money-or-currency}
 
 Before getting interested in cryptocurrencies I too had never asked these questions. I will try to provide some insight into this admittedly complex topic.
 
@@ -121,7 +121,7 @@ First let's look at some interesting historical examples of things that have bee
 There's an important historical point to make about fiat. First used 1821 in the United Kingdom, the ◊link[gold-standard]{gold standard} made sure to back each currency unit with gold.◊sn{gold-standard} So if you had $1,000 in bank notes you could exchange them to $1,000 worth of gold. This was used in various ways up until 1971, when it was finally abandoned completely.
 
 ◊ndef["gold-standard"]{
-    Like a lot of things we'll touch, whether the gold standard is good or bad is ◊link[gold-debate]{hotly debated}.
+    Like a lot of things we'll touch, whether the gold standard is preferable or not is ◊link[gold-debate]{hotly debated}.
 }
 
 ◊(define gold-debate "https://www.thebalance.com/what-is-the-gold-standard-3306137")
@@ -261,7 +261,7 @@ Now we may wonder:
     ◊li{Are there "good" and "bad" forms of money?}
 }
 
-As seen from historical examples I think it's safe to conclude that yes, basically anything can be used as money. But to evaluate if money is good or bad we need to look at other properties.
+As seen from historical examples I think it's safe to conclude that yes, basically anything can be used as money. But to compare how well different forms of money work we need to look at other properties.
 
 ◊ndef["gold-sov"]{
     Gold is the classical example of a store of value. But it has also seen large up and down movements in valuation. ◊link[gold-valuation]{This is the yearly closing price of gold}:
@@ -340,7 +340,7 @@ It makes sense as the point of money is to increase efficiency. And if money isn
 }
 
 
-◊subhead{Historical examples of good and bad forms of money}
+◊subhead{How well do our historical examples work as money?}
 
 How do our historical examples of money hold up? They don't include examples of outright bad forms◊sn{really-bad}, but some are indeed better than others.
 
@@ -348,7 +348,7 @@ How do our historical examples of money hold up? They don't include examples of 
     Food or sand would be examples of really bad money. Food spoils quickly while sand exist in extreme quantities.
 }
 
-The large ◊strong{Rai stones} and the ◊strong{20kg copper coin} are great examples of money that isn't portable. Therefore they are bad forms of money.◊sn{smaller-denominations}
+The large ◊strong{Rai stones} and the ◊strong{20kg copper coin} are great examples of money that isn't portable. Therefore they don't work very well as money.◊sn{smaller-denominations}
 
 ◊ndef["smaller-denominations"]{
     Both Rai stones and the Swedish copper coins have smaller versions as well, making them a bit more practical.
@@ -366,11 +366,15 @@ The large ◊strong{Rai stones} and the ◊strong{20kg copper coin} are great ex
     And now we've reinvented the coin. A coin is actually remarkably efficient!
 }
 
-◊strong{Sea shells} is a good form of money---assuming they're not too plentiful. If used in a local market---for example on an island---there's always a risk of the market being overrun by shells from other islands, where they're more common. They're durable, light weight and easy to use.
+◊strong{Sea shells} work well as money---assuming they're not too plentiful. If used in a local market---for example on an island---there's always a risk of the market being overrun by shells from other islands, where they're more common. They're durable, lightweight and easy to use.
 
-◊strong{Metal coins} is a very good form of money, especially if made by scarce material. Gold is naturally very scarce, ensuring a limited supply, and coins are easy to use and very durable. This is the reason coins have been the dominating type of currency for over 2000 years.
+◊strong{Metal coins} is a very good form of money, especially if made by scarce material. Gold is naturally very scarce, ensuring a limited supply, and coins are easy to use and very durable. This is the reason coins have been the dominating type of currency for over 2000 years.◊sn{gold-counterfeit}
 
-Whether ◊strong{cryptocurrencies} are good or bad is a topic for the ◊link[next-chapter]{next chapter}.
+How well ◊strong{cryptocurrencies} work as money is a topic for the ◊link[next-chapter]{next chapter}.
+
+◊ndef["gold-counterfeit"]{
+    Even gold coins have problems. For instance it's quite difficult to separate real from fake coins---it requires expertise and specialized tools.
+}
 
 
 ◊subhead{The problem with fiat currencies}
@@ -400,20 +404,20 @@ The term ◊link[sound-money]{◊em{sound money}} refers to money that is not pr
 
 ◊subhead{Why do we need good money?}
 
-What does it matter if money is good or bad? If fiat is good enough, why bother?
+Outside of curiosity, why does it matter if there are better forms of money? If fiat is good enough, why bother?
 
 I see two major reasons:
 
 ◊ol{
     ◊li{The point of money is to increase economic efficiency.
 
-        Good forms of money are more efficient than bad forms.}
-    ◊li{Using bad forms of money can lead to large economic problems.
+        Better forms of money are more efficient.}
+    ◊li{Money with poor properties can lead to large economic problems.
 
         For instance how the ability to print fiat money from thin air can lead to hyperinflation.}
 }
 
-In our context knowing what differentiates good from bad forms of money helps us reason about cryptocurrencies, and to see if it can live up to it's namesake. But more on that in the ◊link[next-chapter]{next chapter}.
+In our context knowing what makes money perform well helps us reason about cryptocurrencies, and to see if it can live up to it's namesake. But more on that in the ◊link[next-chapter]{next chapter}.
 
 
 ◊(define sea-shells "https://www.nbbmuseum.be/en/2007/01/cowry-shells.htm")
