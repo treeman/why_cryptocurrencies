@@ -1,8 +1,8 @@
 #lang pollen
 
 ◊(define-meta title "Are cryptocurrencies money?")
-◊(define-meta subtitle "Are cryptocurrencies a good form of money?")
-◊(define-meta updated "2019-05-05T14:43:50+0200Z")
+◊(define-meta subtitle "How well do they function as money?")
+◊(define-meta updated "2019-05-17T12:03:20+0200Z")
 ◊(define-meta uuid "f04af7c8-5fee-45c4-a5a4-80a3f6fbd31b")
 
 As we saw in the ◊link[prev-chapter]{previous chapter}, practically anything can be used as money. Therefore it's more useful to ask:
@@ -15,12 +15,12 @@ As we saw in the ◊link[prev-chapter]{previous chapter}, practically anything c
 
 ◊subhead{Evaluating the properties of money}
 
-To decide if cryptocurrencies are good forms of money or not, we'll take a look at the properties good money should have and cryptocurrencies hold up. See the ◊link[prev-chapter]{previous chapter} for discussion about the properties.
+To decide how well cryptocurrencies can function as money, we'll take a look at the properties good money should have and see how cryptocurrencies hold up. See the ◊link[prev-chapter]{previous chapter} for historical context and a discussion about the properties of money.
 
 ◊ol{
     ◊li{◊strong{Acceptable}
 
-        Nobody is excluded from using cryptocurrencies---they're open to everyone by design.◊sn{acceptable}
+        Nobody is excluded from using cryptocurrencies---they're open to everyone by design.◊sn{crypto-acceptable}
     }
     ◊li{◊strong{Divisible}
 
@@ -52,7 +52,7 @@ Cryptocurrencies can also be considered to be sound money---the value is entirel
     Traditionally sound money refers to money backed by precious material. Cryptocurrencies are instead backed by cryptography, and in Bitcoin's case the supply mimics the gold supply.
 }
 
-◊ndef["acceptable"]{
+◊ndef["crypto-acceptable"]{
     The only requirement is a mobile phone and an internet connection. A fairly small requirement given the stated purpose being ◊em{digital} cash.
 }
 
@@ -67,7 +67,7 @@ Cryptocurrencies can also be considered to be sound money---the value is entirel
 
 ◊subhead{Comparing properties with other forms of money}
 
-This is a table of how I think cryptocurrencies compares to other good forms of money. I differentiate between the two forms of fiat---digital and physical---because they have different properties. Gold can be either gold coins or gold bars---basically some suitable physical form of gold.
+This is a table of how I think cryptocurrencies compares to other forms of money. I differentiate between the two forms of fiat---digital and physical---because they have different properties. Gold can be either gold coins or gold bars---basically some suitable physical form of gold.
 
 ◊table[#:class "centered crypto-eval"]{◊tbody{
     ◊tr{◊td{}               ◊ths{Fiat (digital)} ◊ths{Fiat (physical)} ◊ths{Gold} ◊ths{Cryptocurrencies}}
@@ -156,7 +156,7 @@ Even if you disagree about certain choices, it's hard to disagree that cryptocur
 
 ◊subhead{Do cryptocurrencies function as money?}
 
-We've looked at the properties, but how well do they function as money, today?
+We've looked at the properties---but how well do they function as money, today?
 
 ◊ol{
     ◊li{◊strong{Medium of exchange}
@@ -172,7 +172,7 @@ We've looked at the properties, but how well do they function as money, today?
         The valuation is highly speculation driven and has been notoriously volatile.◊sn{sov}
 
         ◊img[#:src "images/btc-valuation.svg"]{
-            ◊link[btc-valuation]{Bitcoin closing price per month}.  It doesn't do the peak in late 2017 justice, as it peaked at an all time high of $19,870 (some exchanges had it even higher).
+            ◊link[btc-valuation]{Bitcoin closing price per month}.  It doesn't do the peak in December 2017 justice, as it peaked at an all time high of $19,870 (some exchanges had it even higher).
         }
     }
 }
@@ -180,7 +180,7 @@ We've looked at the properties, but how well do they function as money, today?
 ◊(define btc-valuation "https://finance.yahoo.com/quote/BTC-USD/history?period1=1279317600&period2=1557439200&interval=1mo&filter=history&frequency=1mo")
 
 ◊ndef["sov"]{
-    There is a clique of Bitcoin supporters who claim the primary, and sometimes even the only, function of Bitcoin is as a store of value. Unfortunately it's based on wishful thinking and not reality.
+    There is a clique of Bitcoin supporters who claim the primary, and sometimes even the only, function of Bitcoin is as a store of value. Unfortunately it's based on wishful thinking (from a short-term investment view) and not reality.
 }
 
 While cryptocurrencies are used as money in certain communities and for certain goods◊sn{goods}, it is not in widespread use. It does not function very well as money globally, today.
@@ -202,17 +202,21 @@ There are mainly two things holding it back today:
 
     ◊li{◊strong{The network effect}
 
-        Money is better the more people who accept it. Getting to start accepting a new form of money is difficult---even if it's better than the alternatives.◊sn{shock-of-the-old}
+        Money is better the more people who accept it. Getting people to start accepting a new form of money is difficult---even if it's better than the alternatives.◊sn{shock-of-the-old}
     }
 }
 
-Both of these are functions of how new cryptocurrencies are. When the market matures, the volatility will naturally decrease. Barring any large weaknesses the network effect will only grow larger---cryptocurrencies do provide some good benefits.
+Both of these are functions of how new cryptocurrencies are. When the market matures, the volatility will naturally decrease. Barring any large weaknesses the network effect will only grow larger---cryptocurrencies do provide some very good benefits, as we shall see.
 
 Perhaps it's to be expected that cryptocurrencies aren't global money yet---they're only a decade old after all.
 
 ◊ndef["shock-of-the-old"]{
-    For a different perspective of how technology gets adopted I recommend "The Shock of the Old" by David Edgerton. He argues that technology must be significantly better than the previous to see use---and he makes a very compelling argument.
+    For a different perspective of how technology gets adopted I recommend "The Shock of the Old" by David Edgerton. He argues that technology must be significantly better than the previous to see use, and even then the adoption is not as swift as one might think.
+
+    Another perspective on network effects is given by Kevin Simler in his blog post ◊link[going-critical]{Going Critical}.
 }
+
+◊(define going-critical "https://www.meltingasphalt.com/interactive/going-critical/")
 
 
 ◊subhead{How well do other forms of money function?}
@@ -275,7 +279,6 @@ There are others who've ruled in favor of Bitcoin as a currency. For example ◊
 
 ◊subhead{Conclusion}
 
-Cryptocurrencies fulfil the properties of money very well. In fact they fulfil them better than any alternative. Unlike fiat they can be considered sound money---the valuation is entirely market driven.
+Cryptocurrencies fulfil the properties of money very well---in fact they fulfil them better than any alternative. Unlike fiat they can also be considered sound money as the valuation is entirely market driven.
 
-However they do not function well as global money today. They're too volatile and adoption isn't there yet.
-
+While they are used as money in certain communities, they do not function well as global money today. They're very volatile and adoption isn't there yet.
