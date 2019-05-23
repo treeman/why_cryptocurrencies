@@ -245,16 +245,6 @@ pre {
 /*
  * Misc
  */
-.sans {
-    @extend %sans-serif;
-}
-.sans-tnum {
-    @extend %sans-serif-tnum;
-}
-
-.chapter .subscribe {
-    max-width: 25em;
-}
 
 
 /*
@@ -347,13 +337,14 @@ label.margin-toggle:not(.sidenote-number) {
     .margin-toggle:checked + .marginnote {
         display: block;
         margin: 1rem;
-        // Center images, paragraphs reset.
-        text-align: center;
+
+        img {
+            display: block;
+            margin: 0 auto;
+        }
     }
     .sidenote, .marginnote {
         .snp {
-            // Reset centering to default.
-            text-align: left;
             // Dsiplay as block to not be cut by images.
             display: block;
         }
@@ -507,8 +498,6 @@ figure .sidenote, figure .marginnote {
 
 .story {
     padding-top: 1rem;
-    //padding-left: 1rem;
-    //padding-right: 1rem;
     margin: 1.5rem 0;
     border-top: 1px dashed $body-hr-color;
     border-bottom: 1px dashed $body-hr-color;
@@ -547,6 +536,72 @@ table.crypto-eval {
     td.excellent {
         background-color: $bch-green;
         text-align: center;
+    }
+}
+
+.sans {
+    @extend %sans-serif;
+}
+.sans-tnum {
+    @extend %sans-serif-tnum;
+}
+
+.chapter .subscribe {
+    max-width: 25em;
+}
+
+.money-examples .example {
+    width: 100%;
+    margin-bottom: 1em;
+    display: flex;
+
+    .txt {
+        margin: 0 0.5em;
+    }
+
+    img {
+        flex-shrink: 0;
+        align-self: center;
+        max-width: 10em;
+        margin-bottom: 1em;
+    }
+    h3 {
+        margin-top: 0;
+    }
+    .header {
+        font-size: 1.1rem;
+        @extend %sans-serif;
+        line-height: 1;
+        display: flex;
+    }
+    .date {
+        margin-left: 0.5rem;
+    }
+}
+
+@media only screen and (min-width: 521px) {
+    .money-examples .example:nth-child(even) {
+        justify-content: space-between;
+        img {
+            order: 9;
+            margin-right: 0;
+        }
+    }
+}
+
+@media only screen and (max-width: 520px) {
+    .money-examples .example {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        flex-direction: column;
+
+        .txt {
+            width: 100%;
+            order: 1;
+        }
+        img {
+            order: 0;
+        }
     }
 }
 

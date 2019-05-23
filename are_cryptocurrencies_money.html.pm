@@ -1,8 +1,8 @@
 #lang pollen
 
 ◊(define-meta title "Are cryptocurrencies money?")
-◊(define-meta subtitle "How well do they function as money?")
-◊(define-meta updated "2019-05-17T12:03:20+0200Z")
+◊(define-meta subtitle "How well do they work as money?")
+◊(define-meta updated "2019-05-23T07:24:21+0200Z")
 ◊(define-meta uuid "f04af7c8-5fee-45c4-a5a4-80a3f6fbd31b")
 
 As we saw in the ◊link[prev-chapter]{previous chapter}, practically anything can be used as money. Therefore it's more useful to ask:
