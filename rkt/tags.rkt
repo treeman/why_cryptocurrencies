@@ -41,7 +41,10 @@
 (define (to-name x)
   (string-replace (string-downcase x) " " "-"))
 
-(define (stable #:header [header #t] #:centered [centered #t] . rows)
+(define (stable #:header [header #t]
+                #:centered [centered #t]
+                #:fullwidth [fullwidth #f]
+                . rows)
   (define cleaned-rows (filter-not whitespace? rows))
   (define header-row (car cleaned-rows))
   (define body-rows (cdr cleaned-rows))
@@ -55,9 +58,17 @@
                           ,@(map (λ (x) (make-row x 'td)) body-rows)))
                       `((tbody
                           ,@(map (λ (x) (make-row x 'td)) cleaned-rows)))))
-  (define attrs (if centered
-                    `((class "centered"))
-                    `()))
+  (define classes "")
+  (when centered
+    (set! classes (string-append classes "centered")))
+  (when fullwidth
+    (set! classes (string-append classes " fullwidth")))
+  ;(define attrs (if centered
+                    ;`((class "centered"))
+                    ;`()))
+  (define attrs (if (empty? classes)
+                    `()
+                    `((class ,classes))))
   `(table ,attrs ,@content))
 
 (define (epigraph  . txt)
