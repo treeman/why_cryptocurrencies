@@ -22,7 +22,7 @@
      what_is_money.html
      are_cryptocurrencies_money.html)
     (better_digital_payments.html
-     faster_cheaper.html
+     cheaper_faster.html
      "Uncensorable donations"
      "“Undesirable” businesses"
      "Avoid freezing of merchant accounts"

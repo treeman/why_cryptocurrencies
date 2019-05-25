@@ -76,9 +76,6 @@
        ,@txt))
 
 (define (qt #:author [author #f] #:src [src #f] #:url [url #f] #:date [date #f] . txt)
-  (define ref (if url
-                  (link url src)
-                  src))
   (define cite (if author
                    `((span ((class "author")) ,author ", "))
                    `()))

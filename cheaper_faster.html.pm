@@ -1,6 +1,6 @@
 #lang pollen
 
-◊(define-meta title "Faster & cheaper")
+◊(define-meta title "Cheaper & faster")
 ◊;(define-meta subtitle "Settlements are faster")
 ◊(define-meta updated "2019-05-10T08:34:23+0200Z")
 ◊(define-meta uuid "ac14d4a1-3796-4f5b-9350-b56e796625a1")
@@ -8,11 +8,69 @@
 Cryptocurrencies provide two major advantages compared to other digital payments:
 
 ◊ul{
-    ◊li{Faster settlements}
     ◊li{Lower fees}
+    ◊li{Faster settlements}
 }
 
 It does this by cutting out the middle man. But there is a trade-off---it shifts the risk management from the merchant to the customer.
+
+
+◊subhead{Who pays the fees?}
+
+◊qt[#:author "Mike Schlotman, Kroger's executive vice president and CFO"
+    #:src "Press Release"
+    #:url "http://ir.kroger.com/file/Index?KeyFile=396935873"]{
+    Visa has been misusing its position and charging retailers excessive fees for a long time. They conceal from customers what Visa and its banks charge retailers to accept Visa credit cards.
+}
+
+Wait a minute, isn't paying with credit cards, debit cards, PayPal etc already free? I've never paid a fee---except maybe a yearly fee for having a card. Some credit cards even give you a bonus for every purchase! So what's the deal?
+
+That's because you as a customer don't see the high fees---but the merchant does. Fees of 1-4% per transaction can be very demanding, especially for low-margin businesses.
+
+To make up for the fees (and to compensate for charge back fraud) merchants instead raise their prices. So you as a customer actually pay for the fees, they're just indirect.
+
+
+◊subhead{Cryptocurrency fees}
+
+◊figure{
+    ◊table[#:class "centered"]{◊tbody{
+        ◊tr{◊tds{Bitcoin Cash}  ◊tds{Monero}    ◊tds{Dogecoin}  ◊tds{Litecoin}  ◊tds{Bitcoin}}
+        ◊tr{◊td{$0.0012}        ◊td{$0.0028}    ◊td{$0.003}     ◊td{$0.0162}    ◊td{$2.46}}
+    }}
+    ◊figcaption{◊link[median-tx-fee]{Median transaction fee 2019-05-25}}
+}
+
+
+◊(define median-tx-fee "https://bitinfocharts.com/comparison/mediantransactionvalue-btc-ltc-bch-xmr-doge.html")
+◊;https://www.monero.how/monero-transaction-fees
+
+◊subhead{Fees}
+
+A general comparison of fees is difficult because they differ depending on the amount of transactions, the size of transactions, the type of your business and country. There are several different types of fee models---a fixed fee per transaction, a percentage of the transaction value and combinations of the two. Nevertheless I will still try to make a general comparison, just be aware it's quite rough.
+
+It's difficult to make a good comparison between fees because they can vary a lot depending on 
+
+BCH:                $◊link[bitcoin-fees]{0.0015} flat fee (2019-05-10)
+
+◊(define bitcoin-fees
+    `("https://bitcoinfees.cash/"
+      "Bitcoin Cash and Bitcoin fees"))
+
+Fees are depending on the business and amount
+
+◊figure{
+    ◊table[#:class "centered"]{◊tbody{
+        ◊tr{◊td{}                   ◊tds{Transaction fee}}
+        ◊tr{◊tds{Wire transfer}     ◊td{$0--20}}
+        ◊tr{◊tds{VISA/Mastercard}   ◊td{1--3%}}
+        ◊tr{◊tds{PayPal}            ◊td{2.9--4.4% + $0.30}}
+        ◊tr{◊tds{Bitcoin Cash}      ◊td{$0.0015}}
+    }}
+    ◊figcaption{A summary of generalized transaction fees of various payment systems}
+}
+
+◊;https://www.creditdonkey.com/credit-card-processing-fees.html
+◊;https://www.paypal.com/us/webapps/mpp/paypal-fees
 
 
 ◊subhead{Settlements}
@@ -57,33 +115,6 @@ While wire transfers aren't used as payments, it's a useful comparison. They are
 
 ◊(define (tds txt)
    `(td (strong ,txt)))
-
-
-◊subhead{Fees}
-
-It's difficult to make a good comparison between fees because they can vary a lot depending on 
-
-BCH:                $◊link[bitcoin-fees]{0.0015} flat fee (2019-05-10)
-
-◊(define bitcoin-fees
-    `("https://bitcoinfees.cash/"
-      "Bitcoin Cash and Bitcoin fees"))
-
-Fees are depending on the business and amount
-
-◊figure{
-    ◊table[#:class "centered"]{◊tbody{
-        ◊tr{◊td{}                   ◊tds{Transaction fee}}
-        ◊tr{◊tds{Wire transfer}     ◊td{$0--20}}
-        ◊tr{◊tds{VISA/Mastercard}   ◊td{1--3%}}
-        ◊tr{◊tds{PayPal}            ◊td{2.9--4.4% + $0.30}}
-        ◊tr{◊tds{Bitcoin Cash}      ◊td{$0.0015}}
-    }}
-    ◊figcaption{A summary of generalized transaction fees of various payment systems}
-}
-
-◊;https://www.creditdonkey.com/credit-card-processing-fees.html
-◊;https://www.paypal.com/us/webapps/mpp/paypal-fees
 
 
 ◊subhead{Charge back fraud}

@@ -81,7 +81,7 @@ You cannot counterfeit coins and you cannot send the same coin to multiple peopl
 
 Just like cash cryptocurrency transfers are irreversible.◊sn{DAO}
 
-This means if you've sent someone coins you can only get them back if they agree to give them back. It prevents credit card chargeback fraud but it makes theft worse.
+This means if you've sent someone coins you can only get them back if they agree to give them back. It prevents credit card charge back fraud but it makes theft worse.
 
 Transactions might also hold extra data so you can treat it as an effectively immutable data storage. It's very inefficient but could still be useful. The Bitcoin white paper is for example stored ◊link[wp-blockchain]{on the Bitcoin blockchain}.
 
