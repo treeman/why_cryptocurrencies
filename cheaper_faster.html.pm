@@ -32,17 +32,23 @@ To make up for the fees (and to compensate for charge back fraud) merchants inst
 
 ◊subhead{Cryptocurrency fees}
 
+Fees in cryptocurrencies are relatively straightforward: each transaction has a fixed fee, independent of the transaction value. The one who sends the transaction pays the fee.◊sn{crypto-fee}
+
+◊ndef["crypto-fee"]{
+    Because cryptocurrencies are so volatile, the expected fee converted to fiat varies. The fees are also set by demand, but most cryptocurrencies have ample space to keep the fees very low.
+}
+
 ◊figure{
     ◊table[#:class "centered"]{◊tbody{
         ◊tr{◊tds{Bitcoin Cash}  ◊tds{Monero}    ◊tds{Dogecoin}  ◊tds{Litecoin}  ◊tds{Bitcoin}}
         ◊tr{◊td{$0.0012}        ◊td{$0.0028}    ◊td{$0.003}     ◊td{$0.0162}    ◊td{$2.46}}
     }}
-    ◊figcaption{◊link[median-tx-fee]{Median transaction fee 2019-05-25}}
+    ◊figcaption{The ◊link[median-tx-fee]{median transaction fee} for common POW cryptocurrencies 2019-05-25. (◊link[median-tx-fee-monero]{Link for Monero})}
 }
 
 
 ◊(define median-tx-fee "https://bitinfocharts.com/comparison/mediantransactionvalue-btc-ltc-bch-xmr-doge.html")
-◊;https://www.monero.how/monero-transaction-fees
+◊(define median-tx-fee-monero "https://www.monero.how/monero-transaction-fees")
 
 ◊subhead{Fees}
 
@@ -62,7 +68,7 @@ Fees are depending on the business and amount
     ◊table[#:class "centered"]{◊tbody{
         ◊tr{◊td{}                   ◊tds{Transaction fee}}
         ◊tr{◊tds{Wire transfer}     ◊td{$0--20}}
-        ◊tr{◊tds{VISA/Mastercard}   ◊td{1--3%}}
+        ◊tr{◊tds{Plastic cards}     ◊td{1--4%}}
         ◊tr{◊tds{PayPal}            ◊td{2.9--4.4% + $0.30}}
         ◊tr{◊tds{Bitcoin Cash}      ◊td{$0.0015}}
     }}
@@ -77,7 +83,9 @@ Fees are depending on the business and amount
 
 It's important that we know what a settlement is: it's when the actual funds are transferred. Not to be confused with the authorization message you get a few seconds after paying. The money only changes (virtual) hands much later.
 
-Credit card transactions can take days to settle, and they can be reversed several months after via charge backs.◊sn{who-pays?} Mobile payments, via Apple Pay and similar, are often tied to credit cards and have similar properties.
+Credit card transactions can take days to settle, and they can be reversed several months after via charge backs.◊sn{who-pays?}
+
+Mobile payments, via Apple Pay and similar, are often tied to credit cards and have similar properties.
 
 The ability to do charge backs is a very good feature for us consumers. If someone steals your credit card or a merchant is fraudulent, you can reverse the transactions by calling your issuer. For merchants and banks charge backs can be a big problem, see ◊link[rel-charge-back-fraud]{charge back fraud}.
 
@@ -106,7 +114,7 @@ While wire transfers aren't used as payments, it's a useful comparison. They are
     ◊table[#:class "centered"]{◊tbody{
         ◊tr{◊td{}                   ◊tds{Notification}  ◊tds{Settlement}    ◊tds{Irreversible}}
         ◊tr{◊tds{Wire transfer}     ◊td{days}           ◊td{days}           ◊td{days}}
-        ◊tr{◊tds{VISA/Mastercard}   ◊td{seconds}        ◊td{days}           ◊td{months}}
+        ◊tr{◊tds{Plastic cards}     ◊td{seconds}        ◊td{days}           ◊td{months}}
         ◊tr{◊tds{Mobile payments}   ◊td{seconds}        ◊td{days}           ◊td{months}}
         ◊tr{◊tds{Cryptocurrencies}  ◊td{seconds}        ◊td{an hour}        ◊td{an hour}}
     }}
@@ -118,8 +126,6 @@ While wire transfers aren't used as payments, it's a useful comparison. They are
 
 
 ◊subhead{Charge back fraud}
-
-The ability to do charge backs 
 
 The major problem with current digital payments is the existence of ◊link[charge-back-fraud]{charge back fraud} (sometimes called friendly fraud).
 
