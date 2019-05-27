@@ -8,8 +8,8 @@
 Cryptocurrencies provide two major advantages compared to other digital payments:
 
 ◊ul{
-    ◊li{Lower fees}
-    ◊li{Faster}
+    ◊li{◊link[rel-fees]{Lower fees}}
+    ◊li{◊link[rel-speed]{Faster}}
 }
 
 It does this by cutting out the middle man. But there is a trade-off---it shifts the risk management from the merchant to the customer.
@@ -155,7 +155,7 @@ It goes something like this:
     ◊li{Get your money back}
 }
 
-This can be a big problem for some merchants, especially those ◊link[fraud-digital]{serving digital goods}, who often has to swallow it as a loss. To make matters worse merchants also have to pay non-negotiable and non-refundable ◊link[charge-back-fees]{charge back fees}.◊sn{bank-chargeback}
+This can be a big problem for some merchants, especially those ◊link[fraud-digital]{serving digital goods}, who often has to swallow it as a loss. To make matters worse merchants also have to pay non-negotiable and non-refundable ◊link[charge-back-fees]{charge back fees} even when disputing.◊sn{bank-chargeback}
 
 ◊(define charge-back-fees "https://chargebacks911.com/knowledge-base/chargeback-fees/")
 ◊(define fraud-digital "https://chargeback.com/growing-cost-of-fraud-for-digital-goods/")
@@ -218,7 +218,7 @@ Traditional payment systems have chosen to protect costumers (or maybe that's th
 While it's of course bad to not have consumer protection, there might be other solutions. For example offering optional fraud insurance or offering custodial wallets with extra protection.◊sn{crypto-protection}
 
 ◊ndef["crypto-protection"]{
-    I haven't seen any "fraud insurance" yet, 
+    I haven't seen any "fraud insurance" yet, but don't see a reason why it can't be created if there's a need for it.
 }
 
 In addition it might make risk management more practical. While it's basically impossible for merchants to audit all their customers, it's plausible for customers to check out a merchant. In fact we do it all the time: "this website looks shady!" or "my friend uses them all the time". Merchants are known and have a reputation while customers are anonymous.
@@ -246,6 +246,8 @@ The drawback might be alleviated in the future by optional insurance or other sy
 ◊;https://chargeback.com/mastercard-chargeback-time-limits/
 ◊(define charge-back-fraud "https://en.wikipedia.org/wiki/Chargeback_fraud")
 ◊(define rel-charge-back-fraud "#charge-back-fraud")
+◊(define rel-fees "#fee-comparisons")
+◊(define rel-speed "#speed-comparisons")
 
 ◊(define bitcoin-fees
     `("https://bitcoinfees.cash/"
