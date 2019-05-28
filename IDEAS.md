@@ -6,6 +6,11 @@
 Give a man a gun and he can rob a bank, but give a man a bank, and he can rob the world
 - Tyrell Wellick, Mr. Robot
 
+“He who controls the spice controls the universe.”
+― Frank Herbert, Dune 
+
+“Fear is the mind-killer.”
+― Frank Herbert , Dune 
 
 # Better digital payments
 
@@ -148,4 +153,3 @@ https://www.cbsnews.com/news/kroger-visa-fee-dispute-grocery-bans-cards-from-mor
 https://news.ycombinator.com/item?id=19493033
 
 https://www.merriam-webster.com/dictionary/fiat
-

@@ -1,7 +1,7 @@
 #lang pollen
 
 ◊(define-meta title "Cheaper & faster")
-◊;(define-meta subtitle "Settlements are faster")
+◊(define-meta subtitle "Avoids middleman fees and settles quickly")
 ◊(define-meta updated "2019-05-10T08:34:23+0200Z")
 ◊(define-meta uuid "ac14d4a1-3796-4f5b-9350-b56e796625a1")
 
@@ -12,7 +12,7 @@ Cryptocurrencies provide two major advantages compared to other digital payments
     ◊li{◊link[rel-speed]{Faster}}
 }
 
-It does this by cutting out the middle man. But there is a trade-off---it shifts the risk management from the merchant to the customer.
+It does this by cutting out the middleman. But there is a trade-off---it shifts the risk management from the merchant to the customer.
 
 
 ◊subhead{Cryptocurrency fees}
@@ -40,7 +40,7 @@ For the most part cryptocurrencies have very cheap fees---enough to call them ne
 In fact BTC fees of $2-3 is still very low compared the fees during the bull run in December 2017, which reached an average of $50(!!) per transaction. This is because transaction throughput in Bitcoin is maxed out, and to get your transaction accepted you need to pay more than others.◊sn{fee-market}
 
 ◊ndef["fee-market"]{
-    There are some Bitcoin developers who claims high fees are necessary for the survival of Bitcoin. Gregory Maxwell was famously "◊link[nullc-champaign]{pulling out the champaign}" when Bitcoin had $50 as he thought it was a sign that the market supported his ◊em{"fee market"} theory.
+    There are some Bitcoin developers who claims high fees are necessary for the survival of Bitcoin. Gregory Maxwell was famously "◊link[nullc-champaign]{pulling out the champaign}" when Bitcoin had $50 fees. He thought it was a sign that the market supported his ◊em{"fee market"} theory.
 
     The issue is basically that Bitcoin's block reward will eventually run out (after several decades), so who will pay the miners to secure the network? The "fee market" idea is that transactions must be very expensive for it to be worth it for miners.
 
@@ -48,13 +48,15 @@ In fact BTC fees of $2-3 is still very low compared the fees during the bull run
 
     1. Many cheap instead of few expensive transactions
     2. Prevent the blocksize reward from going to zero
+
+    See ◊link[fee-market-myth]{the fee market myth} for more info (it was written a year before the ridiculous $50 fees).
 }
 
-You may think the fees are so high because Bitcoin is much more popular than other cryptocurrencies, but that's not the whole story.  In fact it would be very easy to lower the fees, Bitcoin Cash can for example handle at least 20 times the transaction count of Bitcoin while keeping the same low fees.
+You may think the fees are so high because Bitcoin is much more popular than other cryptocurrencies, but that's not the whole story.  In fact it would be very easy to lower the fees---Bitcoin Cash can for example handle at least 20 times the transaction count of Bitcoin while keeping the same low fees.
 
 Bitcoin just doesn't work as a currency with these high and unreliable fees, but it's not representative of cryptocurrencies in general.
 
-
+◊(define fee-market-myth "https://medium.com/@johnblocke/the-fee-market-myth-b9d189e45096")
 ◊(define median-tx-fee "https://bitinfocharts.com/comparison/median_transaction_fee-btc-ltc-bch-xmr-doge.html")
 ◊(define median-tx-fee-monero "https://www.monero.how/monero-transaction-fees")
 ◊(define nullc-champaign "https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2017-December/015455.html")
@@ -65,7 +67,7 @@ Bitcoin just doesn't work as a currency with these high and unreliable fees, but
 ◊subhead{Who pays the fees?}
 
 ◊qt[#:author "Mike Schlotman, Kroger's executive vice president and CFO"
-    #:src "Press Release"
+    #:date "Mars 2019"
     #:url "http://ir.kroger.com/file/Index?KeyFile=396935873"]{
     Visa has been misusing its position and charging retailers excessive fees for a long time. They conceal from customers what Visa and its banks charge retailers to accept Visa credit cards.
 }
@@ -84,30 +86,33 @@ This is my attempt to summarize and compare the fees of different digital paymen
 ◊ndef["comparisons"]{
     Fees can differ depending on the amount of transactions, the transaction value, the type of your business, your country and your chosen fee model. Not to mention different providers have different fee structures.
 
-    See ◊link[credit-card-processing-fees]{this} as a an introduction to credit card processing fees.
+    See ◊link[credit-card-processing-fees]{this} introduction to credit card processing fees.
 }
 
 ◊(define credit-card-processing-fees "https://www.creditdonkey.com/credit-card-processing-fees.html")
 
-There are different types of cards; debit and credit cards, and different providers like VISA, Mastercard or American Express. I'll treat them as one category for simplicity. Wire transfers also vary a lot, international transfers outside of ◊link[sepa]{SEPA} can be very expensive depending on your bank.
+There are different types of cards; debit and credit cards, and different providers like VISA, Mastercard or American Express. I'll treat them as one category for simplicity. Wire transfers also vary a lot, international transfers outside of ◊link[sepa]{SEPA} can be very expensive depending on your bank and country.
 
 Mobile payments have become very popular recently.◊sn{mobile-payments} As a representative I'll choose Swish, which is very popular here in Sweden. It's connected to your bank and have free person-to-person transactions, but unsurprisingly there are fees for businesses.
 
 ◊ndef["mobile-payments"]{
-    The popularity of mobile payments is easy to understand. They're convenient, cheap and fast. Perhaps most importantly they're directly integrated to your existing bank account, a definite advantage over cryptocurrencies (which are used in a very similar way, and are just as cheap and fast).
+    The popularity of mobile payments is easy to understand. They're convenient, cheap and fast. Perhaps most importantly they're directly integrated to your existing bank account---a definite advantage over cryptocurrencies (which are used in a very similar way, and are just as cheap and fast).
 }
 
 ◊figure{
     ◊table[#:class "centered"]{◊tbody{
-        ◊tr{◊td{}                               ◊tds{Transaction fee}}
-        ◊tr{◊tds{Wire transfer}                 ◊td{$0--20}}
-        ◊tr{◊tds{Cards}                         ◊td{1--4%}}
-        ◊tr{◊tds{◊link[paypal-fees]{PayPal}}    ◊td{2.9--4.4% + $0.30}}
-        ◊tr{◊tds{◊link[swish]{Swish}}           ◊td{$0.16--$0.26}}
-        ◊tr{◊tds{Bitcoin Cash}                  ◊td{$0.0012}}
+        ◊tr{◊td{}                                           ◊tds{Transaction fee}}
+        ◊tr{◊tds{◊link[wire-transfer-fees]{Wire transfer}}  ◊td{$0--50}}
+        ◊tr{◊tds{◊link[card-fees]{Cards}}                   ◊td{1--4%}}
+        ◊tr{◊tds{◊link[paypal-fees]{PayPal}}                ◊td{2.9--4.4% + $0.30}}
+        ◊tr{◊tds{◊link[swish]{Swish}}                       ◊td{$0.16--$0.26}}
+        ◊tr{◊tds{◊link[rel-crypto-fees]{Bitcoin Cash}}      ◊td{$0.0012}}
     }}
     ◊figcaption{A summary of generalized transaction fees of various payment systems.}
 }
+
+◊(define card-fees "https://www.cardfellow.com/blog/average-fees-for-credit-card-processing/")
+◊(define wire-transfer-fees "https://www.nerdwallet.com/blog/banking/wire-transfers-what-banks-charge/")
 
 I've also left out any monthly and yearly fee, which you'll probably have for regular payment services as well. For example you might rent credit card terminals for such a fee. Swish, which has comparatively low transaction fees, also have a $10--$50 yearly fee.◊sn{bank-fees}
 
@@ -117,6 +122,12 @@ I've also left out any monthly and yearly fee, which you'll probably have for re
 
 As we can see cryptocurrencies are decidedly cheaper than the other options. Even Swish, which is much cheaper than PayPal or cards, is 100x more expensive than Bitcoin Cash. There are also no yearly fees of any kind just to have access to it.
 
+As the ◊link[what-is-money]{purpose of money} is to increase economic efficiency, a 1--4% tax on nearly all digital payments is really counter-productive.◊sn{insurance} Therefore a move towards cheap payment solutions like Swish or cryptocurrencies would be very beneficial economically.
+
+◊ndef["insurance"]{
+    Yes, parts of the fees represents fraud protection. But that too comes ◊link[rel-charge-back-fraud]{with a cost}, and if viewed from a global economic perspective it might even be detrimental.
+}
+
 ◊(define paypal-fees "https://www.paypal.com/us/webapps/mpp/paypal-fees")
 ◊(define swish
     `("https://www.getswish.se/foretag/vara-erbjudanden/"
@@ -125,10 +136,10 @@ As we can see cryptocurrencies are decidedly cheaper than the other options. Eve
 
 ◊subhead{Payment speed}
 
-Shifting focus a little, let's take a look at payment speed. There are actually different stages of a digital payment:◊sn{visa-stages}
+Shifting focus a little, let's take a look at payment speed. We can identify different stages of a digital payment:◊sn{visa-stages}
 
 ◊ndef["visa-stages"]{
-    This is a simplification of how credit card payments work. See ◊link[how-visas-payment-system-works]{this blog post} for an overview of VISA's payment system.
+    Credit card payments are more complex. See ◊link[how-visas-payment-system-works]{this blog post} for an overview of VISA's payment system.
 }
 
 ◊(define how-visas-payment-system-works "http://blog.unibulmerchantservices.com/how-visas-payment-system-works/")
@@ -139,7 +150,11 @@ Shifting focus a little, let's take a look at payment speed. There are actually 
     ◊li{Irreversible}
 }
 
-You'll get a ◊em{notification} a few seconds after your payment. For a credit card this ensures the customer has a valid card and has entered the right PIN-code, but no money has been transferred yet. The money changes (virtual) hands during the ◊em{settlement}, which might be several days later. Finally a transaction might still be reversed much later, when this is no longer possible I call the transaction ◊em{irreversible}.
+You'll get a ◊em{notification} a few seconds after your payment.◊sn{0-conf-notification} For a credit card this ensures the customer has a valid card and has entered the right PIN-code, but no money has been transferred yet. The money changes (virtual) hands during the ◊em{settlement}, which might be several days later. Finally a transaction might still be reversed much later, when this is no longer possible I call the transaction ◊em{irreversible}.
+
+◊ndef["0-conf-notification"]{
+    Accepting a cryptocurrency transaction which haven't any confirmation yet, called ◊em{0-conf}, is often criticised in the cryptocurrency community. But it's really no different than accepting a credit card payment instantly---they're both uncertain.
+}
 
 
 ◊subhead{Charge back fraud}
@@ -213,15 +228,15 @@ It seems payment systems needs to choose between these two options:
     ◊li{Protect merchants from charge back fraud but don't provide protection for costumers.}
 }
 
-Traditional payment systems have chosen to protect costumers (or maybe that's the only option they can realistically choose---for technical reasons). Cryptocurrencies instead try to prevent charge back fraud.
+Traditional payment systems have chosen to protect costumers (or maybe that's the only option they can realistically choose---for social and technical reasons). Cryptocurrencies instead try to prevent transaction reversal and charge back fraud.
 
 While it's of course bad to not have consumer protection, there might be other solutions. For example offering optional fraud insurance or offering custodial wallets with extra protection.◊sn{crypto-protection}
 
 ◊ndef["crypto-protection"]{
-    I haven't seen any "fraud insurance" yet, but don't see a reason why it can't be created if there's a need for it.
+    I haven't seen any "fraud insurance" yet, but don't see a reason why it can't be created if there's a need for it. Especially when combined with a custodial wallet.
 }
 
-In addition it might make risk management more practical. While it's basically impossible for merchants to audit all their customers, it's plausible for customers to check out a merchant. In fact we do it all the time: "this website looks shady!" or "my friend uses them all the time". Merchants are known and have a reputation while customers are anonymous.
+In addition it might make risk management more practical. While it's basically impossible for merchants to audit all their customers, it's plausible for customers to check out a merchant. In fact we do it all the time: "this website looks shady!" or "my friend uses them all the time". Merchants are known and have a reputation while customers are innumerable and anonymous.
 
 
 ◊subhead{Conclusion}
@@ -230,11 +245,12 @@ We've seen that there are large benefits to cryptocurrency payments, and one lar
 
 ◊ul{
     ◊plus{Cheaper}
-    ◊plus{Removes the risk for charge back fraud}
-    ◊neg{No fraud protection for costumers}
+    ◊plus{Settles quickly}
+    ◊plus{Reduces or removes the risk for charge back fraud}
+    ◊neg{No inherent fraud protection for costumers}
 }
 
-The drawback might be alleviated in the future by optional insurance or other systems built on top.
+The drawback might be alleviated with optional systems on top, letting us have the best of both worlds.
 
 ◊(define (plus . txt)
    `(li ((class "plus")) ,@txt))
@@ -248,6 +264,8 @@ The drawback might be alleviated in the future by optional insurance or other sy
 ◊(define rel-charge-back-fraud "#charge-back-fraud")
 ◊(define rel-fees "#fee-comparisons")
 ◊(define rel-speed "#speed-comparisons")
+◊(define rel-crypto-fees "#cryptocurrency-fees")
+◊(define what-is-money "what_is_money.html")
 
 ◊(define bitcoin-fees
     `("https://bitcoinfees.cash/"

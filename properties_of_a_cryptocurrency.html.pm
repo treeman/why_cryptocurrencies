@@ -6,7 +6,10 @@
 ◊(define-meta uuid "176f3433-baba-49d6-ab43-9c08061f0682")
 
 ◊epigraph{
-  ◊qt[#:author "Satoshi Nakamoto" #:src "A Peer-to-Peer Electronic Cash System" #:url "/files/bitcoin.pdf"]{
+  ◊qt[#:author "Satoshi Nakamoto"
+      #:src "A Peer-to-Peer Electronic Cash System"
+      #:url "/files/bitcoin.pdf"
+      #:quote-src #t]{
      What is needed is an electronic payment system based on cryptographic proof instead of trust, allowing any two willing parties to transact directly with each other without the need for a trusted third party.
   }
 }

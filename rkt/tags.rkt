@@ -75,23 +75,36 @@
   `(div ((class "epigraph"))
        ,@txt))
 
-(define (qt #:author [author #f] #:src [src #f] #:url [url #f] #:date [date #f] . txt)
-  (define cite (if author
-                   `((span ((class "author")) ,author ", "))
-                   `()))
-  (when (or url src)
-    (let ((ref (if url
-                  (link url src)
-                  src)))
+(define (qt #:author [author #f] #:src [src #f] #:url [url #f] #:date [date #f] #:quote-src [quote-src #f] . txt)
+  (define cite `())
+
+  ; Convert date to string, for ease of use later.
+  (when date (set! date (~a date)))
+
+  ; Set up link
+  (when url
+    (cond
+      [src (set! src (link url src))]
+      [date (set! date (link url date))]
+      [author (set! author (link url author))]
+      [else (error "Quote with url but without ref")]))
+
+  (when author
+    (set! cite (append cite
+                       `((span ((class "author")) ,author)))))
+  (when src
+    (let ((ref (if quote-src
+                  `("“" ,src "”")
+                  `(,src))))
       (set! cite (append cite
-                         `((span ((class "src")) "“" ,ref "”"))))))
+                         `((span ((class "src")) ,@ref))))))
   (when date
     (set! cite (append cite
-                       `((span ((class "date")) ,(~a date))))))
+                       `((span ((class "date")) ,date)))))
 
   `(blockquote
-    ,@txt
-    (footer ,@cite)))
+     ,@txt
+     (footer ,@(add-between cite ", "))))
 
 (define (icode . args)
   `(code ,@args))
@@ -153,6 +166,9 @@
 (define (ndef ref-in . def)
   (define id (format "nd-~a" ref-in))
   (define ref (string->symbol id))
+
+  (when (hash-has-key? note-defs ref)
+    (error (format "duplicate ndef '~a'" ref-in)))
 
   ;; Because p doesn't allow block elements
   ;; and span doesn't allow p elements
