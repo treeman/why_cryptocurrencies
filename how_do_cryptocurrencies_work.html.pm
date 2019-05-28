@@ -3,7 +3,7 @@
 
 ◊(define-meta title "How do cryptocurrencies work?")
 ◊(define-meta subtitle "Decentralized consensus")
-◊(define-meta updated "2019-04-03T20:03:32+0200")
+◊(define-meta updated "2019-04-03T20:03:32+02:00")
 ◊(define-meta uuid "320751d9-9a28-4e91-9469-b44b83e12475")
 
 As stated in the introduction the focus isn't on technical details, but it's a hard balance to make between keeping it simple and explaining how cryptocurrencies work. If this chapter is too technical you can safely skip to the ◊link[next-chapter]{next chapter} or just read ◊link[summary]{the summary}, it's not required knowledge.

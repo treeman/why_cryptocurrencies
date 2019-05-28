@@ -2,7 +2,7 @@
 
 ◊(define-meta title "Look out for snake oil")
 ◊(define-meta subtitle "The space is new, hyped and full of misleading information")
-◊(define-meta updated "2019-04-03T19:59:58+0200")
+◊(define-meta updated "2019-04-03T19:59:58+02:00")
 ◊(define-meta uuid "635e169f-885a-4d29-a266-4c9ef4981f47")
 
 ◊epigraph{

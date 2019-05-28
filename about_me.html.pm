@@ -1,7 +1,7 @@
 #lang pollen
 
 ◊(define-meta title "About me, the author")
-◊(define-meta updated "2019-04-03T19:59:38+0200")
+◊(define-meta updated "2019-04-03T19:59:38+02:00")
 ◊(define-meta uuid "b1aaa891-a7c6-4bf4-a01c-4c43c0446abf")
 ◊(define-meta no-side-space #t)
 
