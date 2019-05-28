@@ -209,7 +209,7 @@ For instance medicine can be extremely valuable for those who needs it, but have
 
 What does it mean for money? That ◊strong{the value of money is emergent from a group of individuals}. If for example everyone in your social group declares that tomorrow they'll use Pokémon trading cards as money, then they suddenly become very valuable to you. The more people who use a form of money, the better it works and the more value it will have.
 
-States don't give money value---but it can contribute. For example declaring fiat legal tender makes more people accept it, which in turn increases it's value.
+States don't give money value---but it can contribute. For example declaring fiat legal tender makes more people accept it, which in turn increases its value.
 
 
 ◊subhead{What functions does money serve?}
