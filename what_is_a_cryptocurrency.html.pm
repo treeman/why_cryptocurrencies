@@ -2,7 +2,7 @@
 
 ◊(define-meta title "What is a cryptocurrency?")
 ◊(define-meta subtitle "Peer-to-peer electronic cash")
-◊(define-meta updated "2019-04-03T20:03:32+0200")
+◊(define-meta updated "2019-04-03T20:03:32+02:00")
 ◊(define-meta uuid "c3deb792-1d85-4a2b-a122-f11361487c82")
 
 If we're going to talk about cryptocurrencies we need to know what they are. Otherwise how can we tell what value---if any---they have?

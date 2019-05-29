@@ -33,7 +33,7 @@
   (add-between
     (filter-entry-content
       `((title ,(title post))
-        (subtitle ,(subtitle post))
+        ;(subtitle ,(subtitle post))
         (updated ,(updated post))
         (id ,(uuid post))
         (link ((href ,(abs-url post))))
