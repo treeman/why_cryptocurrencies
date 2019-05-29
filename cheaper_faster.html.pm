@@ -2,7 +2,7 @@
 
 ◊(define-meta title "Cheaper & faster")
 ◊(define-meta subtitle "Avoids middleman fees and settles quickly")
-◊(define-meta updated "2019-05-10T08:34:23+0200Z")
+◊(define-meta updated "2019-05-29T06:35:29+02:00")
 ◊(define-meta uuid "ac14d4a1-3796-4f5b-9350-b56e796625a1")
 
 Cryptocurrencies provide two major advantages compared to other digital payments:

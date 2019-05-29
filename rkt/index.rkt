@@ -23,9 +23,9 @@
      are_cryptocurrencies_money.html)
     (better_digital_payments.html
      cheaper_faster.html
-     "Uncensorable donations"
      "“Undesirable” businesses"
-     "Avoid freezing of merchant accounts"
+     "Freezing of merchant accounts"
+     "Uncensorable donations"
      "Banking the unbanked")
     ("A better currency"
      "The financial crisis, bad loans and bail-outs"

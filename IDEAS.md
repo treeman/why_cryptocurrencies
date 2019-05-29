@@ -65,6 +65,9 @@ The charity EatBCH feeds Venezuelans.  Sending money to an inaccessible country 
 <https://twitter.com/eatBCH>
 <https://news.bitcoin.com/meet-the-charity-eat-bch-the-p2p-electronic-cash-to-food-system/>
 
+https://cryptoslate.com/venezuelan-crisis-cryptocurrency-privacy/
+https://www.nytimes.com/2019/02/23/opinion/sunday/venezuela-bitcoin-inflation-cryptocurrencies.html
+
 ## Banking the unbanked
 
 <https://www.businessinsider.com/the-worlds-unbanked-population-in-6-charts-2017-8?r=UK&IR=T#finally-the-most-common-reason-people-cited-for-not-having-a-bank-account-was-they-did-not-have-enough-money-with-only-4-of-people-saying-the-only-reason-they-didnt-have-one-was-because-they-didnt-need-one-6>
