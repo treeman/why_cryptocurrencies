@@ -12,7 +12,7 @@ Cryptocurrencies provide two major advantages compared to other digital payments
     ◊li{◊link[rel-speed]{Faster}}
 }
 
-It does this by cutting out the middleman. But there is a trade-off---it shifts the risk management from the merchant to the customer.
+It does this by cutting out the middleman. But there is a ◊link[rel-risk-tradeoff]{trade-off}---it shifts the risk management from the merchant to the customer. Merchants no longer have to worry about ◊link[rel-charge-back-fraud]{charge back fraud} but instead customers lose the ability to do charge backs.
 
 
 ◊subhead{Cryptocurrency fees}
@@ -24,10 +24,10 @@ Fees in cryptocurrencies are relatively straightforward: each transaction has a 
 }
 
 ◊figure{
-    ◊table[#:class "centered"]{◊tbody{
+    ◊table-body{
         ◊tr{◊tds{Bitcoin Cash}  ◊tds{Monero}    ◊tds{Dogecoin}  ◊tds{Litecoin}  ◊tds{Bitcoin}}
         ◊tr{◊td{$0.0012}        ◊td{$0.0028}    ◊td{$0.003}     ◊td{$0.0162}    ◊td{$2.46}}
-    }}
+    }
     ◊figcaption{The ◊link[median-tx-fee]{median transaction fee} for common cryptocurrencies 2019-05-25. (◊link[median-tx-fee-monero]{Link for Monero})◊sn{zero-fee-cryptos}}
 }
 
@@ -35,7 +35,7 @@ Fees in cryptocurrencies are relatively straightforward: each transaction has a 
     There are cryptocurrencies boasting zero fees, but they use unproven consensus algorithms or centralized governance. That's why I only include coins using proof-of-work.
 }
 
-For the most part cryptocurrencies have very cheap fees---enough to call them negligible. But there's an elephant in the room: Bitcoin has very large fees.
+For the most part cryptocurrencies have very low fees---enough to call them negligible. But there's an elephant in the room: Bitcoin has very large fees.
 
 In fact BTC fees of $2-3 is still very low compared the fees during the bull run in December 2017, which reached an average of $50(!!) per transaction. This is because transaction throughput in Bitcoin is maxed out, and to get your transaction accepted you need to pay more than others.◊sn{fee-market}
 
@@ -54,13 +54,22 @@ In fact BTC fees of $2-3 is still very low compared the fees during the bull run
 
 You may think the fees are so high because Bitcoin is much more popular than other cryptocurrencies, but that's not the whole story.  In fact it would be very easy to lower the fees---Bitcoin Cash can for example handle at least 20 times the transaction count of Bitcoin while keeping the same low fees.
 
-Bitcoin just doesn't work as a currency with these high and unreliable fees, but it's not representative of cryptocurrencies in general.
+Bitcoin just doesn't work as a currency with these high and unreliable fees, but it's not representative of cryptocurrencies in general.◊sn{bch-btc}
 
+◊ndef["bch-btc"]{
+    See ◊link[history-blocksize]{this timeline} for the history of the blocksize debate (it only goes up to Dec 2017, but as of May 2019 no significant development has happened). Because Bitcoin didn't raise the blocksize ◊link[bch]{Bitcoin Cash} was created in 2017, keeping fees low and transaction capacity high.
+
+    There are ◊strong{◊link[hearn]{no valid}} reasons against a moderate blocksize increase, yet there are Bitcoin developers who to this day think we should ◊link[luke-300kb]{decrease it to 300kb}. Ideas like this is why Bitcoin no longer works as a currency.
+}
+
+◊(define hearn "https://blog.plan99.net/the-resolution-of-the-bitcoin-experiment-dabb30201f7?gi=c2a62f310034")
+◊(define bch "https://www.bitcoin.com/what-is-bitcoin-cash/")
 ◊(define fee-market-myth "https://medium.com/@johnblocke/the-fee-market-myth-b9d189e45096")
 ◊(define median-tx-fee "https://bitinfocharts.com/comparison/median_transaction_fee-btc-ltc-bch-xmr-doge.html")
 ◊(define median-tx-fee-monero "https://www.monero.how/monero-transaction-fees")
 ◊(define nullc-champaign "https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2017-December/015455.html")
 ◊(define luke-300kb "https://news.bitcoin.com/core-developers-300kb-block-proposal-bolstered-in-bid-to-push-lightning-adoption/")
+◊(define history-blocksize "https://hackernoon.com/the-great-bitcoin-scaling-debate-a-timeline-6108081dbada")
 
 
 
@@ -96,18 +105,20 @@ There are different types of cards; debit and credit cards, and different provid
 Mobile payments have become very popular recently.◊sn{mobile-payments} As a representative I'll choose Swish, which is very popular here in Sweden. It's connected to your bank and have free person-to-person transactions, but unsurprisingly there are fees for businesses.
 
 ◊ndef["mobile-payments"]{
-    The popularity of mobile payments is easy to understand. They're convenient, cheap and fast. Perhaps most importantly they're directly integrated to your existing bank account---a definite advantage over cryptocurrencies (which are used in a very similar way, and are just as cheap and fast).
+    The popularity of mobile payments is easy to understand. They're convenient, cheap and fast. In fact they work exactly like cryptocurrency wallets do---just pay with a simple app on your phone.
+
+    A definite advantage over cryptocurrencies is mobile payments being directly integrated to your existing bank account.
 }
 
 ◊figure{
-    ◊table[#:class "centered"]{◊tbody{
+    ◊table-body{
         ◊tr{◊td{}                                           ◊tds{Transaction fee}}
         ◊tr{◊tds{◊link[wire-transfer-fees]{Wire transfer}}  ◊td{$0--50}}
         ◊tr{◊tds{◊link[card-fees]{Cards}}                   ◊td{1--4%}}
         ◊tr{◊tds{◊link[paypal-fees]{PayPal}}                ◊td{2.9--4.4% + $0.30}}
         ◊tr{◊tds{◊link[swish]{Swish}}                       ◊td{$0.16--$0.26}}
         ◊tr{◊tds{◊link[rel-crypto-fees]{Bitcoin Cash}}      ◊td{$0.0012}}
-    }}
+    }
     ◊figcaption{A summary of generalized transaction fees of various payment systems.}
 }
 
@@ -182,9 +193,9 @@ This can be a big problem for some merchants, especially those ◊link[fraud-dig
 
 ◊subhead{Speed comparisons}
 
-Credit card transactions can take days to settle, and they can be ◊link[mastercard-chargeback]{reversed several months after} via charge backs. Mobile payments, via Apple Pay and similar, are often tied to credit cards and have similar properties. I did not find information for how charge backs with Swish works, I would assume they work similar to wire transfers.
+Credit card transactions can take days to settle, and they can be ◊link[mastercard-chargeback]{reversed several months after} via charge backs. Mobile payments---via Apple Pay and similar---are often tied to credit cards and share their properties while others---like Swish---instead connect to your bank account directly.
 
-While wire transfers aren't used as payments, it's a useful comparison. They are typically much slower than other payment systems.◊sn{wire-transfer}
+Wire transfers aren't usually used for payments, but it's still a useful comparison to make.◊sn{wire-transfer} They are typically much slower than other payment systems but they're generally harder to reverse as they don't offer the same charge back protection as credit cards do.
 
 ◊ndef["wire-transfer"]{
     Inside the EU ◊link[sepa]{SEPA} has massively improved the state of wire transfers across borders. Transactions often go through the same day and they're cheaper than other types of wire transfers.
@@ -195,13 +206,13 @@ The unique property of cryptocurrencies is that they ◊link[transaction-securit
 ◊(define mastercard-chargeback "https://chargeback.com/mastercard-chargeback-time-limits/")
 
 ◊figure{
-    ◊table[#:class "centered"]{◊tbody{
+    ◊table-body{
         ◊tr{◊td{}                   ◊tds{Notification}  ◊tds{Settlement}    ◊tds{Irreversible}}
         ◊tr{◊tds{Wire transfer}     ◊td{days}           ◊td{days}           ◊td{days}}
         ◊tr{◊tds{Cards}             ◊td{seconds}        ◊td{days}           ◊td{months}}
         ◊tr{◊tds{Mobile payments}   ◊td{seconds}        ◊td{days}           ◊td{days--months}}
         ◊tr{◊tds{Cryptocurrencies}  ◊td{seconds}        ◊td{an hour}        ◊td{an hour}}
-    }}
+    }
     ◊figcaption{A summary of the speed of various payment systems.}
 }
 
@@ -230,7 +241,7 @@ It seems payment systems needs to choose between these two options:
 
 Traditional payment systems have chosen to protect costumers (or maybe that's the only option they can realistically choose---for social and technical reasons). Cryptocurrencies instead try to prevent transaction reversal and charge back fraud.
 
-While it's of course bad to not have consumer protection, there might be other solutions. For example offering optional fraud insurance or offering custodial wallets with extra protection.◊sn{crypto-protection}
+While it's of course bad to not have consumer protection, there might be other solutions. For example offering optional fraud insurance or offering ◊em{custodial wallets} with extra protection. (A custodial wallet is managed by a third party, similar to a bank account).◊sn{crypto-protection}
 
 ◊ndef["crypto-protection"]{
     I haven't seen any "fraud insurance" yet, but don't see a reason why it can't be created if there's a need for it. Especially when combined with a custodial wallet.
@@ -250,7 +261,7 @@ We've seen that there are large benefits to cryptocurrency payments, and one lar
     ◊neg{No inherent fraud protection for costumers}
 }
 
-The drawback might be alleviated with optional systems on top, letting us have the best of both worlds.
+The drawback might be alleviated with optional systems in the future, letting us have the best of both worlds.
 
 ◊(define (plus . txt)
    `(li ((class "plus")) ,@txt))
@@ -265,6 +276,7 @@ The drawback might be alleviated with optional systems on top, letting us have t
 ◊(define rel-fees "#fee-comparisons")
 ◊(define rel-speed "#speed-comparisons")
 ◊(define rel-crypto-fees "#cryptocurrency-fees")
+◊(define rel-risk-tradeoff "#the-risk-management-trade-off")
 ◊(define what-is-money "what_is_money.html")
 
 ◊(define bitcoin-fees

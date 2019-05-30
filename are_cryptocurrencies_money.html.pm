@@ -69,7 +69,7 @@ Cryptocurrencies can also be considered to be sound money---the value is entirel
 
 This is a table of how I think cryptocurrencies compares to other forms of money. I differentiate between the two forms of fiat---digital and physical---because they have different properties. Gold can be either gold coins or gold bars---basically some suitable physical form of gold.
 
-◊table[#:class "centered crypto-eval"]{◊tbody{
+◊table-body[#:class "crypto-eval"]{
     ◊tr{◊td{}               ◊ths{Fiat (digital)} ◊ths{Fiat (physical)} ◊ths{Gold} ◊ths{Cryptocurrencies}}
     ◊tr{◊tds{1. Acceptable}            ◊en{poor}      ◊en{excellent} ◊en{excellent} ◊en{excellent}}
     ◊tr{◊tds{2. Divisible}             ◊en{excellent} ◊en{good}      ◊en{good}      ◊en{excellent}}
@@ -77,7 +77,7 @@ This is a table of how I think cryptocurrencies compares to other forms of money
     ◊tr{◊tds{4. Fungible & Uniform}    ◊en{excellent} ◊en{excellent} ◊en{excellent} ◊en{excellent}}
     ◊tr{◊tds{5. Limited supply}        ◊en{poor}      ◊en{poor}      ◊en{excellent} ◊en{excellent}}
     ◊tr{◊tds{6. Portable}              ◊en{good}      ◊en{good}      ◊en{good}      ◊en{excellent}}
-}}
+}
 
 I know this might be controversial, so let me motivate some of the entries:
 
@@ -223,12 +223,12 @@ Perhaps it's to be expected that cryptocurrencies aren't global money yet---they
 
 Again let's try to compare cryptocurrencies with the other forms of money. This time I combine digital and physical fiat, since they function the same in practice.
 
-◊table[#:class "centered crypto-eval"]{◊tbody{
+◊table-body[#:class "crypto-eval"]{
     ◊tr{◊td{}                       ◊ths{Fiat}      ◊ths{Gold}     ◊ths{Cryptocurrencies}}
     ◊tr{◊tds{1. Medium of exchange}    ◊en{excellent}  ◊en{good} ◊en{good}}
     ◊tr{◊tds{2. Unit of account}       ◊en{excellent}  ◊en{poor}      ◊en{poor}}
     ◊tr{◊tds{3. Store of value}        ◊en{poor}       ◊en{excellent} ◊en{poor}}
-}}
+}
 
 With the motivations:
 
