@@ -261,7 +261,7 @@ We've seen that there are large benefits to cryptocurrency payments, and one lar
     ◊neg{No inherent fraud protection for costumers}
 }
 
-The drawback might be alleviated with optional systems on top, letting us have the best of both worlds.
+The drawback might be alleviated with optional systems in the future, letting us have the best of both worlds.
 
 ◊(define (plus . txt)
    `(li ((class "plus")) ,@txt))
