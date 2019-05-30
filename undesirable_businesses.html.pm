@@ -21,17 +21,35 @@ Here are some examples of affected businesses:
     ◊li{Adult entertainment (anything remotely related to porn)}
     ◊li{Auctions}
     ◊li{Cannabis and marijuana}
-    ◊li{Cryptocurrencies (quite ironic)}
+    ◊li{Cryptocurrencies (ironic, don't you think?)◊sn{crypto-banks}}
     ◊li{Gambling}
 }
+
+◊ndef["crypto-banks"]{
+    There are ◊link[banks-bitcoin]{many} ◊link[barclays-bitcoin]{stories} of banks closing down your account if they find out you've traded cryptocurrencies. Naturally without warning, explanation or recourse.
+}
+
+◊(define banks-bitcoin "https://www.ccn.com/banks-still-closing-accounts-bitcoin-activity")
+◊(define barclays-bitcoin "https://www.telegraph.co.uk/finance/personalfinance/investing/11537972/Barclays-closed-down-my-bank-account-after-Bitcoin-trade.html")
 
 For whatever reason, these businesses are deemed high risk and undesirable. Despite them being legal they might not be able to accept digital payments.
 
 
 ◊subhead{Pot stores are cash-only}
 
+◊;http://stayregular.net/blog/the-state-of-payment-processing-for-cannabis-e-commerce
+◊;https://www.cardfellow.com/blog/credit-card-processing-for-marijuana-businesses/
+◊;https://www.governing.com/topics/finance/sl-marijuana-businesses.html
+◊;https://www.nytimes.com/2018/01/04/magazine/where-pot-entrepreneurs-go-when-the-banks-just-say-no.html?searchResultPosition=7
+
 
 ◊subhead{Expensive and dubious workarounds}
+
+But wait a minute, some of the businesses do accept credit cards? Has the problem been solved?
+
+Not really.
+
+◊;https://web.archive.org/web/20180814120031/https://dev.to/jwoertink/programming-in-the-adult-entertainment-industry-is-broken-hgn
 
 
 ◊subhead{Are cryptocurrencies the solution?}
