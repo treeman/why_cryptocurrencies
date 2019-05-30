@@ -24,10 +24,10 @@ Fees in cryptocurrencies are relatively straightforward: each transaction has a 
 }
 
 ◊figure{
-    ◊table[#:class "centered"]{◊tbody{
+    ◊table-body{
         ◊tr{◊tds{Bitcoin Cash}  ◊tds{Monero}    ◊tds{Dogecoin}  ◊tds{Litecoin}  ◊tds{Bitcoin}}
         ◊tr{◊td{$0.0012}        ◊td{$0.0028}    ◊td{$0.003}     ◊td{$0.0162}    ◊td{$2.46}}
-    }}
+    }
     ◊figcaption{The ◊link[median-tx-fee]{median transaction fee} for common cryptocurrencies 2019-05-25. (◊link[median-tx-fee-monero]{Link for Monero})◊sn{zero-fee-cryptos}}
 }
 
@@ -111,14 +111,14 @@ Mobile payments have become very popular recently.◊sn{mobile-payments} As a re
 }
 
 ◊figure{
-    ◊table[#:class "centered"]{◊tbody{
+    ◊table-body{
         ◊tr{◊td{}                                           ◊tds{Transaction fee}}
         ◊tr{◊tds{◊link[wire-transfer-fees]{Wire transfer}}  ◊td{$0--50}}
         ◊tr{◊tds{◊link[card-fees]{Cards}}                   ◊td{1--4%}}
         ◊tr{◊tds{◊link[paypal-fees]{PayPal}}                ◊td{2.9--4.4% + $0.30}}
         ◊tr{◊tds{◊link[swish]{Swish}}                       ◊td{$0.16--$0.26}}
         ◊tr{◊tds{◊link[rel-crypto-fees]{Bitcoin Cash}}      ◊td{$0.0012}}
-    }}
+    }
     ◊figcaption{A summary of generalized transaction fees of various payment systems.}
 }
 
@@ -206,13 +206,13 @@ The unique property of cryptocurrencies is that they ◊link[transaction-securit
 ◊(define mastercard-chargeback "https://chargeback.com/mastercard-chargeback-time-limits/")
 
 ◊figure{
-    ◊table[#:class "centered"]{◊tbody{
+    ◊table-body{
         ◊tr{◊td{}                   ◊tds{Notification}  ◊tds{Settlement}    ◊tds{Irreversible}}
         ◊tr{◊tds{Wire transfer}     ◊td{days}           ◊td{days}           ◊td{days}}
         ◊tr{◊tds{Cards}             ◊td{seconds}        ◊td{days}           ◊td{months}}
         ◊tr{◊tds{Mobile payments}   ◊td{seconds}        ◊td{days}           ◊td{days--months}}
         ◊tr{◊tds{Cryptocurrencies}  ◊td{seconds}        ◊td{an hour}        ◊td{an hour}}
-    }}
+    }
     ◊figcaption{A summary of the speed of various payment systems.}
 }
 
