@@ -58,18 +58,33 @@
                           ,@(map (λ (x) (make-row x 'td)) body-rows)))
                       `((tbody
                           ,@(map (λ (x) (make-row x 'td)) cleaned-rows)))))
-  (define classes "")
-  (when centered
-    (set! classes (string-append classes "centered")))
+  (create-table centered fullwidth `() content))
+
+(define (table-body #:centered [centered #t]
+                    #:fullwidth [fullwidth #f]
+                    #:class [c #f]
+                    . rows)
+  (define table-classes (if c `(,c) `()))
+  (create-table centered fullwidth table-classes
+                `((tbody ,@rows))))
+
+(define (create-table centered fullwidth table-classes content)
+  (define div-classes `())
   (when fullwidth
-    (set! classes (string-append classes " fullwidth")))
-  ;(define attrs (if centered
-                    ;`((class "centered"))
-                    ;`()))
-  (define attrs (if (empty? classes)
-                    `()
-                    `((class ,classes))))
-  `(table ,attrs ,@content))
+    (set! div-classes (cons "fullwidth" div-classes)))
+  (when centered
+    (set! div-classes (cons "centered" div-classes)))
+  (define table
+    `(table ,(attrs-from-classes table-classes) ,@content))
+  (if (empty? div-classes)
+      table
+      `(div ,(attrs-from-classes div-classes) ,table)))
+
+(define (attrs-from-classes classes)
+  (if (empty? classes)
+      `()
+      `((class ,(string-join classes)))))
+
 
 (define (epigraph  . txt)
   `(div ((class "epigraph"))
