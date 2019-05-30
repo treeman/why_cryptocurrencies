@@ -59,7 +59,7 @@ Bitcoin just doesn't work as a currency with these high and unreliable fees, but
 ◊ndef["bch-btc"]{
     See ◊link[history-blocksize]{this timeline} for the history of the blocksize debate (it only goes up to Dec 2017, but as of May 2019 no significant development has happened). Because Bitcoin didn't raise the blocksize ◊link[bch]{Bitcoin Cash} was created in 2017, keeping fees low and transaction capacity high.
 
-    There are ◊strong{◊link[hearn]{no valid}} reasons against a moderate blocksize increase, yet there are Bitcoin developers who to this day think we should ◊link[luke-300kb]{decrease it to 300kb}. This is why Bitcoin no longer works as a currency.
+    There are ◊strong{◊link[hearn]{no valid}} reasons against a moderate blocksize increase, yet there are Bitcoin developers who to this day think we should ◊link[luke-300kb]{decrease it to 300kb}. Ideas like this is why Bitcoin no longer works as a currency.
 }
 
 ◊(define hearn "https://blog.plan99.net/the-resolution-of-the-bitcoin-experiment-dabb30201f7?gi=c2a62f310034")
