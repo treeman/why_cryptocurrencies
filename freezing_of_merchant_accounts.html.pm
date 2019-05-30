@@ -101,33 +101,41 @@ The ◊link[neo900]{Neo900} project I quoted at the start of this chapter? They 
 ◊(define hackernews "https://news.ycombinator.com/")
 
 
+◊subhead{Other examples}
+
+If you search for it online, there are thousands of stories like these. This is just a few examples to get the curious started:
+
+◊ul{
+    ◊li{◊link[kyc-failure]{PayPal Know Your Customer failure}}
+    ◊li{◊link[paypal-12years]{We got banned from PayPal after 12 years of business }}
+    ◊li{◊link[paypal-70000]{Paypal just froze over $70,000 in my account}}
+    ◊li{◊link[paypal-8years]{PayPal destroyed my business of 8 years in a day}}
+    ◊li{◊link[startups-stripe]{Why Should Startups Avoid Stripe?}}
+    ◊li{◊link[paypal-deletes-stream]{PayPal Deletes My Account Mid Stream}}
+}
+
+Some of these had a happy ending but others did not.
+
+◊(define kyc-failure "https://www.cogini.com/blog/paypal-know-your-customer-failure/")
+◊(define paypal-12years "https://blog.niteo.co/paypal-ban-after-12-years/")
+◊(define paypal-70000 "https://www.reddit.com/r/Entrepreneur/comments/1rkkd7/paypal_just_froze_over_70000_in_my_account_say/")
+◊(define paypal-8years "http://www.aboutpaypal.org/paypal-destroyed-business-8-years-day/")
+◊(define startups-stripe "https://kinsta.com/blog/startups-avoid-stripe/")
+◊(define paypal-deletes-stream "https://www.youtube.com/watch?v=Js1kOPu0T4g")
+
+
 ◊subhead{Money under your mattress}
 
 With cryptocurrencies you can accept digital payments that go directly into a wallet you control yourself. Then it's impossible to get your cryptocurrency account frozen, it's really like storing them under your (digital) mattress.
 
 This of course requires that you use a wallet which holds the coins itself, and not a custodial wallet---which a third party manages for you. It's why so much emphasis is placed on controlling your own keys---otherwise you won't get all benefits.
 
-I'm not advocating either way, just realize there are trade-offs with controlling your own keys or not. If you want the ease of use of a custodial wallet then you'll sacrifice permissionless. With cryptocurrencies you have a choice.
+I'm not advocating either way, just realize there are trade-offs with controlling your own keys or not. If you want the ease of use of a custodial wallet then you'll sacrifice permissionless.
+
+With cryptocurrencies you have a choice and a possibility to avoid your account getting arbitrarily frozen.
 
 
 ◊(define prev "/undesirable_businesses.html")
-
-◊; PayPal
-◊; https://www.cogini.com/blog/paypal-know-your-customer-failure/
-◊; https://blog.niteo.co/paypal-ban-after-12-years/
-◊; https://www.reddit.com/r/Entrepreneur/comments/1rkkd7/paypal_just_froze_over_70000_in_my_account_say/
-◊; https://news.ycombinator.com/item?id=13851120
-
-◊; Stripe
-◊; Gabe (but white nationalists? A better example?)
-◊; https://news.ycombinator.com/item?id=18135927
-◊; https://thinkprogress.org/payment-processor-stripe-freezes-account-of-far-right-friendly-gab-5e525b537343/
-◊;
-◊; https://kinsta.com/blog/startups-avoid-stripe/
-
-◊; Owen Benjamin (podcaster)
-◊;https://www.youtube.com/watch?v=Js1kOPu0T4g
-◊;https://www.youtube.com/watch?v=DViuUEqbmw0&t=1h39m0s
 
 ◊; Comic
 ◊;https://paypalsucks.org/toon1.shtml
