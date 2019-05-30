@@ -241,7 +241,7 @@ It seems payment systems needs to choose between these two options:
 
 Traditional payment systems have chosen to protect costumers (or maybe that's the only option they can realistically choose---for social and technical reasons). Cryptocurrencies instead try to prevent transaction reversal and charge back fraud.
 
-While it's of course bad to not have consumer protection, there might be other solutions. For example offering optional fraud insurance or offering custodial wallets with extra protection. (A custodial wallet is managed by a third party, similar to a bank account).◊sn{crypto-protection}
+While it's of course bad to not have consumer protection, there might be other solutions. For example offering optional fraud insurance or offering ◊em{custodial wallets} with extra protection. (A custodial wallet is managed by a third party, similar to a bank account).◊sn{crypto-protection}
 
 ◊ndef["crypto-protection"]{
     I haven't seen any "fraud insurance" yet, but don't see a reason why it can't be created if there's a need for it. Especially when combined with a custodial wallet.
