@@ -14,7 +14,7 @@
 
 In this section we'll explore benefits cryptocurrencies have over other digital payment systems, such as VISA, Mastercard, PayPal or Apple Pay.
 
-The big benefit is cryptocurrencies being permissionless: anyone can pay and anyone can accept them---for any business. Certain types of businesses, like pot stores or gambling sites, have problems accepting credit cards. Small businesses are also always at risk of having their accounts frozen without warning or recourse.◊sn{minecraft} There are also people who cannot get bank accounts---and are in effect frozen out of large parts of the society.
+The big benefit is cryptocurrencies being permissionless: anyone can pay and anyone can accept them---for any business. Certain types of businesses, like pot stores or gambling sites, have problems accepting credit cards. Small businesses are also always at risk of having their accounts frozen without warning or recourse.◊sn{minecraft} Similarly there are people who cannot get bank accounts---and are in effect frozen out of large parts of the society.
 
 But there are other benefits as well. Cryptocurrencies have lower fees and they drastically reduce and often eliminates the risk of charge back fraud---a big expense for merchants.
 
