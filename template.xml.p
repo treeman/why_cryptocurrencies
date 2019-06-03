@@ -37,7 +37,7 @@
         (updated ,(updated post))
         (id ,(uuid post))
         (link ((href ,(abs-url post))))
-        (content [[type "html"]] ,(feed-content post))))
+        (summary [[type "html"]] ,(feed-summary post))))
     "\n\t"))
 ◊(define (filter-entry-content cs)
   ; We don't require subtitles be in all posts, this is a general implementation.

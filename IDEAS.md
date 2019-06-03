@@ -165,5 +165,8 @@ https://news.ycombinator.com/item?id=19493033
 
 https://www.merriam-webster.com/dictionary/fiat
 
-North Macedonia limits payment in cash up to 500 euros
+North Macedonia limits payment in cash up to 500 euros:
 http://www.china.org.cn/world/Off_the_Wire/2019-06/01/content_74845553.htm
+
+Negative interest rates:
+https://news.ycombinator.com/item?id=20079686

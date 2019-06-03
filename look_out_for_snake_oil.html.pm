@@ -111,3 +111,4 @@ There are many traps to fall into in this space. I think the best antidote is to
 ◊(define bitcoin-censorship3 "https://www.reddit.com/r/noncensored_bitcoin/comments/7414nf/september_2017_stats_post/")
 ◊(define r/cryptocurrency-censorship "https://www.trustnodes.com/2019/05/01/the-cryptocurrency-sub-tests-censorship-after-bitcoin-core-supporter-suddenly-becomes-top-mod")
 
+
