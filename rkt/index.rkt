@@ -21,11 +21,11 @@
      look_out_for_snake_oil.html
      what_is_money.html
      are_cryptocurrencies_money.html)
-    ("Better digital payments"
-     "Safer & cheaper for merchants"
-     "Uncensorable donations"
+    (better_digital_payments.html
+     cheaper_faster.html
      "“Undesirable” businesses"
-     "Avoid freezing of merchant accounts"
+     "Freezing of merchant accounts"
+     "Uncensorable donations"
      "Banking the unbanked")
     ("A better currency"
      "The financial crisis, bad loans and bail-outs"

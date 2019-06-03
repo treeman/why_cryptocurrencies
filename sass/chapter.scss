@@ -605,4 +605,10 @@ table.crypto-eval {
         }
     }
 }
+ul > li.plus:before {
+    content: "+";
+}
+ul > li.neg:before {
+    content: "-";
+}
 

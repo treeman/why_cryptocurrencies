@@ -6,6 +6,11 @@
 Give a man a gun and he can rob a bank, but give a man a bank, and he can rob the world
 - Tyrell Wellick, Mr. Robot
 
+“He who controls the spice controls the universe.”
+― Frank Herbert, Dune 
+
+“Fear is the mind-killer.”
+― Frank Herbert , Dune 
 
 # Better digital payments
 
@@ -59,6 +64,9 @@ Credit card processing fees are quite complex.
 The charity EatBCH feeds Venezuelans.  Sending money to an inaccessible country using cryptocurrencies.
 <https://twitter.com/eatBCH>
 <https://news.bitcoin.com/meet-the-charity-eat-bch-the-p2p-electronic-cash-to-food-system/>
+
+https://cryptoslate.com/venezuelan-crisis-cryptocurrency-privacy/
+https://www.nytimes.com/2019/02/23/opinion/sunday/venezuela-bitcoin-inflation-cryptocurrencies.html
 
 ## Banking the unbanked
 
