@@ -5,7 +5,7 @@
 ◊(define-meta updated "2019-05-29T06:35:29+02:00")
 ◊(define-meta uuid "ac14d4a1-3796-4f5b-9350-b56e796625a1")
 
-If you want to accept digital payments today you need to partner with a payment processor, for example Stripe or PayPal. Usually that's not a problem---but what if they say no?◊sn{banks}
+If you want to accept digital payments today you need to partner with a payment processor, for example Stripe or PayPal. Usually that's not a problem---but what if they say no?◊mn{banks}
 
 ◊ndef["banks"]{
     While I will focus on payment processors in this chapter, the problem is much bigger than that. Often banks don't want anything to do with the business either. Sometimes they even close personal accounts of business owners---because of the nature of the business.
@@ -20,7 +20,7 @@ Here are some examples of affected businesses:
 ◊ul{
     ◊li{Adult entertainment (anything remotely related to porn)}
     ◊li{Auctions}
-    ◊li{Cannabis and marijuana}
+    ◊li{Cannabis}
     ◊li{Cryptocurrencies (ironic, don't you think?)◊sn{crypto-banks}}
     ◊li{Gambling}
 }
@@ -37,6 +37,17 @@ For whatever reason, these businesses are deemed high risk and undesirable. Desp
 
 ◊subhead{Pot stores are cash-only}
 
+Pot stores in the United States are in a weird legal place. While they're legal---◊link[cannabis-legality]{to various degrees}---in many states they're illegal under federal law. Kind of like ◊link[scat]{Schrödinger's cat}: they're legal yet simultaneously illegal.
+
+Due to this legal uncertainty most banks and payment processors simply won't touch them, forcing the stores to be entirely cash-only.◊sn{pot-banks}
+
+◊ndef["pot-banks"]{
+    Not having access to banks means they also have to store the cash themselves and they have trouble getting loans.
+}
+
+◊(define scat "https://en.wikipedia.org/wiki/Schr%C3%B6dinger%27s_cat")
+◊(define cannabis-legality "https://en.wikipedia.org/wiki/Legality_of_cannabis_by_U.S._jurisdiction")
+
 ◊;http://stayregular.net/blog/the-state-of-payment-processing-for-cannabis-e-commerce
 ◊;https://www.cardfellow.com/blog/credit-card-processing-for-marijuana-businesses/
 ◊;https://www.governing.com/topics/finance/sl-marijuana-businesses.html
@@ -45,7 +56,7 @@ For whatever reason, these businesses are deemed high risk and undesirable. Desp
 
 ◊subhead{Expensive and dubious workarounds}
 
-But wait a minute, some of the businesses do accept credit cards? Has the problem been solved?
+But wait a minute, some "undesirable" companies do accept credit cards? Has the problem been solved?
 
 Not really.
 
@@ -60,7 +71,7 @@ As we discussed in ◊link[are-cryptos-money]{Are cryptocurrencies money?} they'
 
 While cryptocurrencies improves the situation today◊sn{localbitcoins}, we would really need to bypass all third-parties for a great solution. This means you should be able to pay all expenses with cryptocurrencies---so you can't get blocked by an exchange.
 
-But there are related problems cryptocurrencies can't solve. Banks serve a very important function: they lend businesses money, and there's no good solution if they say no.
+But there are related problems cryptocurrencies can't solve. Banks serve a very important function: they lend businesses money, and there's no good solution if they say no. It can also be more secure to let banks store large sums of money than keeping it yourself.
 
 ◊ndef["localbitcoins"]{
     It's not as big of a problem if an exchange blocks you compared to being able to accept money in the first place, it's easier to move to another exchange. There are also ◊link[localbitcoins]{peer-to-peer} ◊link[local.bitcoin.com]{variants} where you can trade cryptocurrencies in person, bypassing the problem.
