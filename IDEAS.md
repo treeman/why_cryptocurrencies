@@ -131,6 +131,14 @@ Cryptocurrencies have weak relationships with established asset classes, which c
 <https://www.bloomberg.com/graphics/2018-bitcoin-investment/>
 
 
+## Voting
+
+A peer-to-peer voting algorithm, without blockchain
+http://vixra.org/pdf/1905.0239v1.pdf
+
+
+
+
 # Misc links
 
 https://coinsutra.com/bitcoin-documentaries/
@@ -156,3 +164,6 @@ https://www.cbsnews.com/news/kroger-visa-fee-dispute-grocery-bans-cards-from-mor
 https://news.ycombinator.com/item?id=19493033
 
 https://www.merriam-webster.com/dictionary/fiat
+
+North Macedonia limits payment in cash up to 500 euros
+http://www.china.org.cn/world/Off_the_Wire/2019-06/01/content_74845553.htm
