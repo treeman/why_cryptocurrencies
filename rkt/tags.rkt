@@ -35,8 +35,8 @@
   `(a ,attrs ,text))
 
 (define (subhead x)
-  `(a ((name ,(to-name x)))
-     (h2 ,x)))
+  `(h2
+    (a [[name ,(to-name x)]] ,x)))
 
 (define (to-name x)
   (string-replace (string-downcase x) " " "-"))
