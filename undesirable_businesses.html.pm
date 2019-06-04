@@ -63,6 +63,50 @@ Not really.
 ◊;https://web.archive.org/web/20180814120031/https://dev.to/jwoertink/programming-in-the-adult-entertainment-industry-is-broken-hgn
 
 
+◊subhead{Why does it matter?}
+
+◊qt[#:author "Martin Niemöller"
+    #:src "a poetic form of a post-war confession"
+    #:url "https://en.wikipedia.org/wiki/First_they_came%E2%80%A6"]{
+    First they came for the socialists, and I did not speak out---
+        ◊tab{because I was not a socialist.}
+
+    Then they came for the trade unionists, and I did not speak out---
+        ◊tab{because I was not a trade unionist.}
+
+    Then they came for the Jews, and I did not speak out---
+        ◊tab{because I was not a Jew.}
+
+    Then they came for me---
+        ◊tab{and there was no one left to speak for me.}
+}
+
+◊(define (tab . txt)
+   `(span ((class "qt-tab")) ,@txt))
+
+You might wonder what does it matter if these businesses disappear. Maybe you don't gamble, don't use cannabis and find porn deplorable---which is fine. But what about other people?◊sn{privacy}
+
+◊ndef["privacy"]{
+    Incidentally it's also a powerful argument for privacy. Maybe you personally don't have anything to hide---but others do.
+
+    For example a gay teenage boy who would get thrown out if his parents found out, or even get killed if he lives in the wrong country.
+
+    Maybe someone who likes sexual acts, which would be embarrassing if they were known? Think of politicians and how easily their careers can be destroyed by embarrassing facts.
+
+    Or people trying to hide in oppressive regimes. Like how ◊link[re-education]{up to one million detained in China’s mass “re-education” drive}.
+
+    Don't they have a right to privacy?
+}
+
+
+The cannabis business is experiencing ◊link[cannabis-growth]{explosive growth}, hinting at how many people do care. Porn is another thing that is very popular, but very few would admit they watch it. I can see why people are against these, but what's the problem with auctions (other than being an easy target for ◊link[rel-charge-back-fraud]{charge back fraud})?
+
+Why should people running and using ◊strong{legal} businesses be punished for arbitrary reasons? It's quite important for a society with laws that they're actually followed. Otherwise the whole system deteriorates and might eventually collapse.
+
+◊(define re-education "https://www.amnesty.org/en/latest/news/2018/09/china-up-to-one-million-detained/")
+◊(define cannabis-growth "https://www.marijuanaseo.com/cannabis-industry-statistics/")
+
+
 ◊subhead{Are cryptocurrencies the solution?}
 
 Cryptocurrencies give you permissionless digital payments---it solves the problem of accepting payments very well. But it's not a full solution, at least today.
@@ -86,6 +130,7 @@ But there are related problems cryptocurrencies can't solve. Banks serve a very 
 ◊(define coinbase-close-accounts "https://news.bitcoin.com/coinbase-and-its-troubling-history-of-customer-account-closures/")
 ◊(define localbitcoins "https://localbitcoins.com/")
 ◊(define local.bitcoin.com "https://local.bitcoin.com/")
+◊(define rel-charge-back-fraud "#charge-back-fraud")
 
 ◊;https://www.engadget.com/2015/12/02/paypal-square-and-big-bankings-war-on-the-sex-industry/?guccounter=1
 
