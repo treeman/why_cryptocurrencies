@@ -28,11 +28,13 @@
 (define (summary post)
   (match post
     [(cons 'root xs)
-       (cons 'root
+       (append
+         '(root)
          (takef xs (λ (x)
                       (match x
                         [(cons 'h2 _) #f]
-                        [else #t]))))]
+                        [else #t])))
+         `((p "...")))]
     [else (error "Expected root to begin post")]))
 
 (module+ test
@@ -45,7 +47,8 @@
 
   (define expected `(root (div "x")
                           (div (h1 "title") (h2 "subtitle"))
-                          (p "some stuff")))
+                          (p "some stuff")
+                          (p "...")))
   (check-equal? (summary post) expected)
   )
 
