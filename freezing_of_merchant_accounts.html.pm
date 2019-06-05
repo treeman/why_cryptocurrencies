@@ -1,7 +1,7 @@
 #lang pollen
 
 ◊(define-meta title "Freezing of merchant accounts")
-◊(define-meta subtitle "The account your business relies on can at any time be frozen")
+◊(define-meta subtitle "The account your business relies on can be frozen at any time")
 ◊(define-meta updated "2019-05-29T06:35:29+02:00")
 ◊(define-meta uuid "ac14d4a1-3796-4f5b-9350-b56e796625a1")
 
@@ -26,35 +26,38 @@ Imagine coming in to work one day and having this conversion with your boss:
 
     "What?"
 
-    "Don't worry, you'll still get your salary but we'll pay it all in 6 months."
+    "Don't worry, you'll still get your full salary but we'll pay it in 6 months."
 
     "But why?"
 
     "You apparently didn't put one of the new coversheets on your TPS reports."◊sn{office-space}
 
-    "A TPS report...??"
+    "TPS reports...??"
 }
 
 ◊ndef["office-space"]{
     This is a reference to movie ◊link[office-space]{Office Space}, a black comedy about working in an office.
 }
 
-Don't focus on the TPS report, the point is you got your salary ◊strong{frozen for 6 months} for an ◊strong{arbitrary} and ◊strong{unknown} reason.◊sn{6-months}
+Don't worry if you don't know what a TPS report is, the point is you got your salary ◊strong{frozen for 6 months} for an ◊strong{arbitrary} and ◊strong{unknown} reason.◊sn{6-months}
 
 ◊ndef["6-months"]{
     You think 6 months is too long? PayPal freezes your account for 180 days by default. There are also several stories of PayPal ◊strong{never} releasing the funds.
+
+    This is possible because PayPal isn't really a bank (in most countries) and can get away with more than regulated banks can.
 }
 
-Now imagine the consequences. Would you be able to pay your rent? Buy food for yourself and your kids? Repair your fridge if it breaks? Given that ◊link[american-savings]{only 39% of Americans have enough savings to cover a $1,000 emergency} you should be very glad if you can honestly answer yes to these questions. Many would panic if their salary is just a little bit late, let alone half a year.
+Now imagine the consequences.
 
-Yet this has played out again and again for businesses all over the world who has gotten their account frozen for an unknown amount of time for arbitrary or unknown reasons.
+Would you be able to pay your rent? Buy food for yourself and your kids? Repair your fridge if it breaks? Given that ◊link[american-savings]{only 39% of Americans have enough savings to cover a $1,000 emergency} you should be very glad if you can honestly answer yes to these questions. Many would panic if their salary is just a little bit late, let alone half a year.
 
-Actually let me take that back, it's actually much worse. It's like your employer freezing your credit card and your savings account ◊em{in addition} to withholding your salary.
+Yet this has played out ◊link[rel-examples]{again and again} for businesses all over the world who has gotten their account frozen for an unknown amount of time for arbitrary or unknown reasons.
+
+Actually let me take that back, it's actually much worse. It's like your employer freezing your credit card and your savings account ◊strong{in addition} to withholding your salary.
 
 Imagine what you would do now, without a salary and without your savings...
 
-
-
+◊(define rel-examples "/freezing_of_merchant_accounts.html#other-examples")
 ◊(define american-savings "https://www.cnbc.com/2018/01/18/few-americans-have-enough-savings-to-cover-a-1000-emergency.html")
 
 
@@ -62,7 +65,7 @@ Imagine what you would do now, without a salary and without your savings...
 
 Just to be a little gratuitous and to drive home my point on how bad this can be---it doesn't end there.
 
-When PayPal freezes your account, they don't block incoming payments. So people can continue paying for stuff---but you're not getting their money---so you still have to give them the stuff they've paid for.◊sn{digital}
+When PayPal freezes your account, they don't block incoming payments. People can continue paying for stuff---but you're not getting their money---yet you still have to give them the stuff they've paid for.◊sn{digital}
 
 ◊ndef["digital"]{
     It might be easy to deliver digital goods, but physical goods may be created on demand. In addition salaries, rent and other expenses needs to be paid. Cash flow is a very important issue for most companies.
@@ -110,8 +113,8 @@ If you search for it online, there are thousands of stories like these. This is 
     ◊li{◊link[paypal-12years]{We got banned from PayPal after 12 years of business }}
     ◊li{◊link[paypal-70000]{Paypal just froze over $70,000 in my account}}
     ◊li{◊link[paypal-8years]{PayPal destroyed my business of 8 years in a day}}
-    ◊li{◊link[startups-stripe]{Why Should Startups Avoid Stripe?}}
     ◊li{◊link[paypal-deletes-stream]{PayPal Deletes My Account Mid Stream}}
+    ◊li{◊link[startups-stripe]{Why Should Startups Avoid Stripe?}}
 }
 
 Some of these had a happy ending but others did not.
@@ -126,13 +129,20 @@ Some of these had a happy ending but others did not.
 
 ◊subhead{Money under your mattress}
 
-With cryptocurrencies you can accept digital payments that go directly into a wallet you control yourself. Then it's impossible to get your cryptocurrency account frozen, it's really like storing them under your (digital) mattress.
+With cryptocurrencies you can accept digital payments that go directly into a wallet you control yourself. Then it's impossible to get your cryptocurrency account frozen: it's really like storing them under your own (digital) mattress.◊sn{tradeoff-holding}
+
+◊ndef["tradeoff-holding"]{
+    As always, there are trade-offs. Storing money at home drastically increases the risk of theft so keeping it at a trustworthy bank might be a wise choice.
+
+    With cryptocurrencies a good compromise might be to receive payments to your own wallet and automatically transfer them to a more secure storage when the sum becomes too large.
+}
+
 
 This of course requires that you use a wallet which holds the coins itself, and not a custodial wallet---which a third party manages for you. It's why so much emphasis is placed on controlling your own keys---otherwise you won't get all benefits.
 
 I'm not advocating either way, just realize there are trade-offs with controlling your own keys or not. If you want the ease of use of a custodial wallet then you'll sacrifice permissionless.
 
-With cryptocurrencies you have a choice and a possibility to avoid your account getting arbitrarily frozen.
+With cryptocurrencies at least you have a choice and a possibility to avoid your account getting arbitrarily frozen.
 
 
 ◊(define prev "/undesirable_businesses.html")
