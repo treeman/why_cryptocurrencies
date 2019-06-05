@@ -3,7 +3,7 @@
 
 ◊(define-meta title "How do cryptocurrencies work?")
 ◊(define-meta subtitle "Decentralized consensus")
-◊(define-meta updated "2019-04-03T20:03:32+02:00")
+◊(define-meta updated "2019-04-03T20:05:00+02:00")
 ◊(define-meta uuid "320751d9-9a28-4e91-9469-b44b83e12475")
 
 As stated in the introduction the focus isn't on technical details, but it's a hard balance to make between keeping it simple and explaining how cryptocurrencies work. If this chapter is too technical you can safely skip to the ◊link[next-chapter]{next chapter} or just read ◊link[summary]{the summary}, it's not required knowledge.
@@ -393,13 +393,13 @@ How secure is Bitcoin, really? What do we need to pull off a 51% attack?
 Here's some quick napkin math to estimate the cost to achieve 51% of mining power:
 
 ◊; Couldn't really be bothered to update the existing string to table to support x-expressions...
-◊table[#:class "centered"]{ ◊tbody{
+◊table-body{
     ◊tr{◊td{◊link[btc-hashrate]{Total Bitcoin hash rate}}   ◊td{44,078,986 TH/s}}
     ◊tr{◊td{◊link[s9-hashrate]{Antminer S9i hash rate}}     ◊td{14 TH/s (+-5%)}}
     ◊tr{◊td{◊link[s9-cost]{Antminer S9i cost}}              ◊td{$400}}
     ◊tr{◊td{Number of S9i to cover the whole network}       ◊td{3,148,499}}
     ◊tr{◊td{Total network miner cost}                       ◊td{$1,259,399,600}}
-}}
+}
 
 So about $650 million for just the miners themselves (assuming you could purchase that many). On top of that we need power supply, cooling, storage and maintenance for more than a million miners. We're looking at a massive warehouse, or several. Suffice to say it's a very large investment, but maybe not impossible to get.
 

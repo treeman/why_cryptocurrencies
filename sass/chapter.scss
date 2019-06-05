@@ -202,9 +202,7 @@ table {
     font-size: 0.95rem;
     margin-bottom: 1rem;
 
-    // Horizontal scrollbars for wider tables on narrow screens.
-    // Use centering via flex instead of 0 auto, which didn't work for some reason.
-    display: flex;
+    display: block;
     overflow-x: auto;
     white-space: nowrap;
 }
@@ -212,7 +210,10 @@ th, td {
     text-align: left;
     padding: 0.1em 1.5em 0.1em 0em;
 }
-table.centered {
+// Had tons of trouble centering a table which could also
+// overflow on x.
+.centered {
+    display: flex;
     justify-content: center;
 }
 
@@ -507,7 +508,7 @@ figure .sidenote, figure .marginnote {
     max-width: 600px;
 }
 
-table.fullwidth {
+.fullwidth {
     @extend %fullwidth;
 }
 
