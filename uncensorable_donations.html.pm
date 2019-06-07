@@ -37,7 +37,7 @@ China has gone to extreme lengths to censor these events.  Twitter is censored b
 
 }
 
-But I think there's a more relevant example for us concerned with uncensorable payments. This is a story about ◊link[wikileaks]{WikiLeaks}.
+But I think there's a more relevant example for us concerned with uncensorable payments: ◊link[wikileaks]{WikiLeaks}.
 
 
 ◊(define bbc-tiananmen "https://www.bbc.com/news/blogs-china-blog-48455582")
@@ -49,7 +49,9 @@ But I think there's a more relevant example for us concerned with uncensorable p
 ◊(define charity-water "https://www.charitywater.org/")
 
 
-◊subhead{WikiLeaks}
+◊subhead{The story of WikiLeaks}
+
+◊h3{Beginning}
 
 Oct 4, 2006
 
@@ -57,7 +59,7 @@ Oct 4, 2006
 ◊; https://medium.com/@joshuashawnmichaelhehe/a-history-of-wikileaks-9332028f37fd
 
 
-◊subhead{The Chelsea Manning leaks}
+◊h3{The Chelsea Manning leaks}
 
 October 22nd, 2010
 
@@ -77,12 +79,12 @@ October 22nd, 2010
 ◊; https://www.middleeasteye.net/news/chelsea-manning-seven-leaks-rocked-middle-east
 
 
-◊subhead{Sexual assault allegations against Julian Assange}
+◊h3{Sexual assault allegations against Julian Assange}
 
 Nov, 2010
 
 
-◊subhead{PayPal freezes WikiLeaks donations}
+◊h3{PayPal freezes WikiLeaks donations}
 
 Dec 4, 2010
 
@@ -99,7 +101,7 @@ The banking blockade against WikiLeaks was subsequently found to be illegal in t
 }
 
 
-◊subhead{WikiLeaks accepts Bitcoin}
+◊h3{WikiLeaks accepts Bitcoin}
 
 Jun 14, 2011
 
@@ -107,12 +109,12 @@ Jun 14, 2011
 ◊;https://www.coindesk.com/assange-bitcoin-wikileaks-helped-keep-alive
 
 
-◊subhead{Asylum from Ecuador}
+◊h3{Assange receives asylum from Ecuador}
 
 June, 2012
 
 
-◊subhead{More leaks}
+◊h3{More leaks}
 
 ◊; Vault 7
 ◊; CIA hacking tools
@@ -123,14 +125,15 @@ June, 2012
 
 ◊;release of the Vatican letters.
 
-◊subhead{Arrested on behalf of the United States authorities}
+◊h3{Assange arrested on behalf of the United States authorities}
 
 April 11, 2019
 
 ◊;https://www.theguardian.com/media/live/2019/apr/11/wikileaks-founder-julian-assange-arrested-at-the-ecuadorean-embassy-live-updates
 
 
-◊subhead{Treatment of whistle blowers}
+◊subhead{Hiding the skeleton in the closet}
 
 ◊;https://news.ycombinator.com/item?id=19632449
 ◊;https://www.lrb.co.uk/v36/n05/andrew-ohagan/ghosting
+
