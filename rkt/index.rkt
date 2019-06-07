@@ -25,7 +25,7 @@
      cheaper_faster.html
      "“Undesirable” businesses"
      "Freezing of merchant accounts"
-     "Uncensorable donations"
+     uncensorable_donations.html
      "Banking the unbanked")
     ("A better currency"
      "The financial crisis, bad loans and bail-outs"
