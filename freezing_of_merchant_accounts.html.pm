@@ -13,7 +13,8 @@
     }
 }
 
-This chapter is very similar to the ◊link[prev]{previous one}, but we'll view the issue from another angle. Instead of focusing on getting permission to accept payments at all we'll focus on the problem that accounts can be frozen at any time, for arbitrary reasons.
+
+This chapter continues on the same idea as the ◊link[prev]{previous one}, but we'll view the issue from another angle. Instead of focusing on getting permission to accept payments at all we'll focus on the problem that accounts can be frozen at any time, for arbitrary reasons.
 
 
 ◊subhead{Freezing funds, not just payments}
@@ -53,7 +54,7 @@ Would you be able to pay your rent? Buy food for yourself and your kids? Repair 
 
 Yet this has played out ◊link[rel-examples]{again and again} for businesses all over the world who has gotten their account frozen for an unknown amount of time for arbitrary or unknown reasons.
 
-Actually let me take that back, it's actually much worse. It's like your employer freezing your credit card and your savings account ◊strong{in addition} to withholding your salary.
+Actually, let me take that back. What happens is actually much worse---businesses also get funds frozen. It's like if your employer would freeze your credit card, your savings account ◊strong{and} hold off your salary.
 
 Imagine what you would do now, without a salary and without your savings...
 
@@ -63,9 +64,7 @@ Imagine what you would do now, without a salary and without your savings...
 
 ◊subhead{Confiscating future payments}
 
-Just to be a little gratuitous and to drive home my point on how bad this can be---it doesn't end there.
-
-When PayPal freezes your account, they don't block incoming payments. People can continue paying for stuff---but you're not getting their money---yet you still have to give them the stuff they've paid for.◊sn{digital}
+Just to be a little gratuitous and to drive home my point on how bad this can be---it doesn't end there. When PayPal freezes your account, they don't block incoming payments. People can continue paying for stuff---but you're not getting their money---yet you still have to give them the stuff they've paid for.◊sn{digital}
 
 ◊ndef["digital"]{
     It might be easy to deliver digital goods, but physical goods may be created on demand. In addition salaries, rent and other expenses needs to be paid. Cash flow is a very important issue for most companies.
@@ -74,7 +73,7 @@ When PayPal freezes your account, they don't block incoming payments. People can
 ◊qt[#:url "https://notch.tumblr.com/post/1096322756/working-on-a-friday-update-crying-over-paypal"
     #:author "Notch, creator of Minecraft"
     #:date "Sep 2010"]{
-    There’s over 600,000 euro in there. Money I was planning on investing in the new company.
+    There’s over 600000 euro in there. Money I was planning on investing in the new company.
 
     ...
 
@@ -140,7 +139,7 @@ With cryptocurrencies you can accept digital payments that go directly into a wa
 
 This of course requires that you use a wallet which holds the coins itself, and not a custodial wallet---which a third party manages for you. It's why so much emphasis is placed on controlling your own keys---otherwise you won't get all benefits.
 
-I'm not advocating either way, just realize there are trade-offs with controlling your own keys or not. If you want the ease of use of a custodial wallet then you'll sacrifice permissionless.
+I'm not advocating either way, just realize there are trade-offs with controlling your own keys or not. If you want the ease of use of a custodial wallet then you'll sacrifice control of your account.
 
 With cryptocurrencies at least you have a choice and a possibility to avoid your account getting arbitrarily frozen.
 
