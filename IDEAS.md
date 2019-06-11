@@ -14,48 +14,6 @@ Give a man a gun and he can rob a bank, but give a man a bank, and he can rob th
 
 # Better digital payments
 
-## Censorship
-
-PayPal freezes accounts:
-<https://wikileaks.org/PayPal-freezes-WikiLeaks-donations.html>
-<https://news.ycombinator.com/item?id=19867120#19867381>
-
-Accepting money:
-For example Marijuana businesses have [trouble with credit card processing restrictions](https://www.cardfellow.com/blog/credit-card-processing-for-marijuana-businesses/) and have to resort to cash payments despite operating legally. Other examples include porn, escort services and gambling.
-
-Programming in Adult Entertainment (billing is the issue) <https://dev.to/jwoertink/programming-in-the-adult-entertainment-industry-is-broken-hgn>
-(Wayback link): <https://web.archive.org/web/20180814120031/https://dev.to/jwoertink/programming-in-the-adult-entertainment-industry-is-broken-hgn>
-
-Cannabis e-commerce: <http://stayregular.net/blog/the-state-of-payment-processing-for-cannabis-e-commerce>
-
-## Safer and cheaper for merchants
-
-Safer: Avoid charge back fraud
-
-
-Cheaper:
-
-BCH:                $0.003
-
-Fees are depending on the business and amount
-VISA/mastercard:    1-3%
-PayPal:             2-5%
-Western Union:      Varies a lot but typically much more expensive than the other options
-
-[MasterCard explains interchange fees](https://www.mastercard.us/en-us/about-mastercard/what-we-do/interchange.html):
-
-> Interchange is a small fee paid by a merchant's bank (acquirer) to a cardholder's bank (issuer) to compensate the issuer for the value and benefits that merchants receive when they accept electronic payments. It enables banks that issue electronic payments to deliver tremendous value to merchants, governments and consumers.
-
-In particular:
-
-> Merchants benefit from guaranteed payment; increased sales; fraud protection; lower processing costs than those associated with other forms of payment such as checks and cash; and the ability to attract and retain customers with a fast, efficient buying experience.
-
-<https://www.cardfellow.com/blog/credit-card-processing-fees/>
-
-Credit card processing fees are quite complex.
-
-> Credit card processing fees are either flat fees, transaction fees, or based on volume. Assessments are listed above, and interchange fees (or at least a portion of them) are published by Visa and MasterCard. The only inconsistent portion of cost is the processor’s markup. Unfortunately, the scope of different fees and pricing models utilized in the marketplace makes accurately comparing markups a daunting task.
-
 
 # A better currency
 
@@ -71,6 +29,16 @@ https://www.nytimes.com/2019/02/23/opinion/sunday/venezuela-bitcoin-inflation-cr
 ## Banking the unbanked
 
 <https://www.businessinsider.com/the-worlds-unbanked-population-in-6-charts-2017-8?r=UK&IR=T#finally-the-most-common-reason-people-cited-for-not-having-a-bank-account-was-they-did-not-have-enough-money-with-only-4-of-people-saying-the-only-reason-they-didnt-have-one-was-because-they-didnt-need-one-6>
+
+
+# Blind leading the blind
+
+”Även om erfarenheten med negativa räntor är begränsade drar vi slutsatsen att det har bidragit till ytterligare penningpolitiska stimulanser och enklare ekonomiska villkor”, skriver IMF:s finansiella rådgivare Jose Viñals.
+https://www.svd.se/imf-stottar-stefan-ingves-minusranta
+
+** ”På senare tid har Riksbanken fört en politik som kan vara den sämsta i västvärlden.” **
+Ekonomen och mottagaren av ekonomipriset till Nobels minne Paul Krugman om hur Stefan Ingves skött jobbet på Riksbanken. (Januari)
+https://www.svd.se/har-ar-arets-citat-fran-naringslivet
 
 
 # Brave new world
