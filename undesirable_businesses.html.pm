@@ -13,7 +13,7 @@ If you want to accept digital payments today you need to partner with a payment 
     For example ◊link[chase-porn]{Chase closed hundreds of porn stars' accounts} and Wells Fargo ◊link[wells-fargo-supporter]{closed the bank account} of a supporter of medical marijuana.
 }
 
-This is the reality for certain businesses with high ◊link[chargeback-fraud]{chargebacks} rate or exists in a legal and ◊link[porn-bank-moral]{moral} gray area. If you view it from the payment processor's point-of-view it might make sense---they're just minimizing their risk. But that's of little comfort to the ones being rejected.
+This is the reality for certain businesses with high ◊link[chargeback-fraud]{chargebacks} rate or that exists in a legal and ◊link[porn-bank-moral]{moral} gray area. If you view it from the payment processor's point-of-view it might make sense---they're just minimizing their risk. But that's of little comfort to the ones being rejected.
 
 Here are some examples of affected businesses:
 
@@ -39,7 +39,9 @@ For whatever reason, these businesses are deemed high risk and undesirable. Desp
 
 Pot stores in the United States are in a weird legal place. While they're legal---◊link[cannabis-legality]{to various degrees}---in many states they're illegal under federal law. Kind of like ◊link[scat]{Schrödinger's cat}: they're legal yet simultaneously illegal.
 
-Due to this legal uncertainty most banks and payment processors simply won't touch them, forcing the stores to be entirely cash-only.◊sn{pot-banks}
+Because banks in the US are regulated ◊link[us-bank-regulations]{both on a state and federal level}, banks don't want anything to do with them. Payment processors take a similar stance, forcing the stores to be entirely cash-only.◊sn{pot-banks}
+
+◊(define us-bank-regulations "https://en.wikipedia.org/wiki/Bank_regulation_in_the_United_States")
 
 ◊ndef["pot-banks"]{
     Not having access to banks means they also have to store the cash themselves and they have trouble getting loans.
@@ -53,7 +55,7 @@ They are absolutely dependent on nearby ATMs, because the move towards cashless 
     The ATMs are run by separate businesses and usually don't have any problems with banks.
 }
 
-Not having access to digital payments hurts, but it's not all doom and gloom. Using cash works---in physical stores. There might also be (uncertain) ◊link[state-payment-cannabis]{ways to accept digital payments} making online pot stores possible.
+Not having access to digital payments hurts, but it's not all doom and gloom. Cash does work---in physical stores. There might also be (uncertain) ◊link[state-payment-cannabis]{ways to accept digital payments}, a basic requirement for online pot stores.
 
 ◊(define pot-banks-no "https://www.nytimes.com/2018/01/04/magazine/where-pot-entrepreneurs-go-when-the-banks-just-say-no.html")
 ◊(define scat "https://en.wikipedia.org/wiki/Schr%C3%B6dinger%27s_cat")
@@ -75,15 +77,22 @@ But wait a minute, some "undesirable" companies do accept credit cards? Has the 
 
 Porn is a business with very high rates of ◊link[chargeback-fraud]{charge backs}. Just think about it: what happens if your significant other would come across a charge to "XXX-Teens" or similar? Of course you'd exclaim "my card must've been compromised!" and you quickly call your bank and issue a charge back.
 
-Therefore, to be able to accept credit cards at all, porn sites can use several different payment processors. If the card fails at the first one, move on to the next one to try again. Each will do more shady stuff than the previous. They can for example do things like:
+Therefore most payment processors ◊link[stripe-restricted]{explicitly forbid} porn sites, making it very difficult to accept credit cards directly.
 
-◊ol{
-    ◊li{Request a wire transfer number.}
-    ◊li{Say they're a "social network company" instead of a "porn company".}
-    ◊li{Have a third party request the payment on their behalf.}
+
+◊img[#:src "/images/reversal1.png"]{
+    ◊todo{No porn accepted here}
 }
 
-These things are on the gray area legal wise◊sn{legal?}, and so the payment processors that does this have higher fees---MUCH higher fees. While regular credit card payments may come with 1-4% fees these fees might be as high as ◊strong{30%}. That's ludicrously expensive for low margin businesses.
+Instead they have a third party request the payment on their behalf and do some shady stuff. They can for example claim the payment is for another type of business, which isn't banned by the payment processor.
+
+◊img[#:src "/images/reversal1.png"]{
+    ◊todo{"social network company"? Ok!}
+}
+
+◊(define stripe-restricted "https://stripe.com/restricted-businesses")
+
+These things are on the gray area legal wise◊sn{legal?}, so the companies that does this have high fees---VERY high fees. While regular payment processors may have ~3-4% fees these can be as high as ◊strong{30%}. That's ludicrously expensive for low margin businesses.
 
 ◊ndef["legal?"]{
     I'm not taking a stand if this practice is legal or not. Just noting that they don't really have many options.
@@ -134,7 +143,7 @@ You might wonder what does it matter if these businesses disappear. Maybe you do
 
 The cannabis business is experiencing ◊link[cannabis-growth]{explosive growth}, hinting at how many people do care. Porn is another thing that is very popular---but very few would admit they watch it. I can see why some people object against them... But what's the problem with auctions? (Other than being an easy target for ◊link[rel-charge-back-fraud]{charge back fraud}.)
 
-Why should people running and using ◊strong{legal} businesses be punished for arbitrary reasons? A society that punishes people for doing something legal seems insane to me. (Yes legality is different from morality, a topic we'll revisited in the chapter about ◊link[black-markets]{black markets}.)
+Why should people running and using ◊strong{legal} businesses be punished for arbitrary reasons? A society that punishes people for doing something legal seems insane to me. (Yes legality is different from morality, a topic we'll revisit in the chapter about ◊link[black-markets]{black markets}.)
 
 ◊(define re-education "https://www.amnesty.org/en/latest/news/2018/09/china-up-to-one-million-detained/")
 ◊(define cannabis-growth "https://www.marijuanaseo.com/cannabis-industry-statistics/")
