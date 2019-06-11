@@ -12,9 +12,12 @@
     }
 }
 
-When you think about donations, you wouldn't assume they have the same problems as payments have. For example if you want to donate money to a charity, like ◊link[charity-water]{Charity Water}, they don't have to be worried of ◊link[charge-back-fraud]{charge back fraud}.
+When you think about donations, you wouldn't assume they have the same problems as payments have. For example if you want to donate money to a charity, like ◊link[charity-water]{Charity Water}, they don't have to be worried of ◊link[charge-back-fraud]{charge back fraud}. But the same problem with third-party censorship as explored in the ◊link[freezing-chapter]{previous} two ◊link[undesirable-chapter]{chapters} is relevant here as well.
 
-But there are certain types of donations where having a trusted third party is detrimental: think of journalism in oppressive regimes working against censorship while placing their lives on line. A third party might block donations or break the journalistic anonymity making donations for truth-seeking journalists impossible.
+Think of journalism in oppressive regimes while placing their lives on line. A third party might block donations or break the journalistic anonymity making donations for truth-seeking journalists very difficult.
+
+
+◊subhead{Censorship is real}
 
 A ◊link[bbc-tiananmen]{powerful example} of the dangers of censorship is the ◊link[wikipedia-tiananmen]{Tiananmen Square Massacre} in China 1989. It was a student led protest which was forcefully suppressed by hundreds of thousands military troops, killing large numbers of demonstrators and bystanders.
 
@@ -137,3 +140,6 @@ April 11, 2019
 ◊;https://news.ycombinator.com/item?id=19632449
 ◊;https://www.lrb.co.uk/v36/n05/andrew-ohagan/ghosting
 
+
+◊(define freezing-chapter "freezing_of_merchant_accounts.html")
+◊(define undesirable-chapter "undesirable_businesses.html")
