@@ -37,7 +37,7 @@ Imagine coming in to work one day and having this conversion with your boss:
 }
 
 ◊ndef["office-space"]{
-    This is a reference to movie ◊link[office-space]{Office Space}, a black comedy about working in an office.
+    This is a reference to movie ◊link[office-space]{Office Space}, a black comedy about working in an office. There a worker gets reprimanded for an extremely minor and unimportant issue.
 }
 
 Don't worry if you don't know what a TPS report is, the point is you got your salary ◊strong{frozen for 6 months} for an ◊strong{arbitrary} and ◊strong{unknown} reason.◊sn{6-months}
@@ -89,7 +89,7 @@ They didn't just freeze your account, they're actively making it worse by confis
 
 ◊subhead{Small businesses & projects may be ruined}
 
-If you run a very popular business, like Minecraft, you'll probably get through without much issue. You're already making enough money to cover expenses and the attention in news and social media will make sure the issue gets resolved quickly.◊sn{attention}
+If you run a very popular business---like Minecraft---you'll probably get through without much issue. You're already making enough money to cover expenses and the attention in news and social media will make sure the issue gets resolved quickly.◊sn{attention}
 
 ◊ndef["attention"]{
     Creating an uproar on social media is still the best way to resolve issues with companies that have very poor customer service. For example if you have an issue with Google hopefully your post on ◊link[hackernews]{Hacker News} gathers enough attention to catch the eye of someone working there.
