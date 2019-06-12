@@ -23,7 +23,7 @@
      are_cryptocurrencies_money.html)
     (better_digital_payments.html
      cheaper_faster.html
-     "“Undesirable” businesses"
+     undesirable_businesses.html
      "Freezing of merchant accounts"
      "Uncensorable donations"
      "Banking the unbanked")
