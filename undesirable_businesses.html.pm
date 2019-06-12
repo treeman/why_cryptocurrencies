@@ -55,7 +55,7 @@ They are absolutely dependent on nearby ATMs, because the move towards cashless 
     The ATMs are run by separate businesses and usually don't have any problems with banks.
 }
 
-Not having access to digital payments hurts, but it's not all doom and gloom. Cash does work---in physical stores. There might also be (uncertain) ◊link[state-payment-cannabis]{ways to accept digital payments}, a basic requirement for online pot stores.
+Not having access to digital payments hurts, but it's not all doom and gloom. Cash does work---in physical stores. There might also be (uncertain) ◊link[state-payment-cannabis]{ways to accept digital payments}, a basic requirement for online stores.
 
 ◊(define pot-banks-no "https://www.nytimes.com/2018/01/04/magazine/where-pot-entrepreneurs-go-when-the-banks-just-say-no.html")
 ◊(define scat "https://en.wikipedia.org/wiki/Schr%C3%B6dinger%27s_cat")
@@ -69,30 +69,30 @@ Not having access to digital payments hurts, but it's not all doom and gloom. Ca
 
 ◊subhead{Expensive and dubious workarounds}
 
-But wait a minute, some "undesirable" companies do accept credit cards? Has the problem been solved? Not really.◊sn{programming-adult}
+But wait a minute, some "undesirable" companies do accept credit cards? Has the problem been solved? Unfortunately, not really.◊sn{programming-adult}
 
 ◊ndef["programming-adult"]{
     There was a ◊link[programming-adult-blog]{popular blog post} detailing the struggles of porn sites accepting digital payments. The post itself has been deleted because of people ◊link[programming-adult-hn]{accusing him} of admitting to fraud (the workarounds are of dubious legality). If you're savvy you might be able to find the original post on the ◊link[wayback-machine]{Wayback machine}.
 }
 
-Porn is a business with very high rates of ◊link[chargeback-fraud]{charge backs}. Just think about it: what happens if your significant other would come across a charge to "XXX-Teens" or similar? Of course you'd exclaim "my card must've been compromised!" and you quickly call your bank and issue a charge back.
+For example porn is a business with very high rates of ◊link[chargeback-fraud]{charge backs}. Just think about it: what happens if your significant other would come across a charge to "XXX-Teens" or similar? Of course you'd exclaim "my card must've been compromised!" and you quickly call your bank and issue a charge back.
 
 Therefore most payment processors ◊link[stripe-restricted]{explicitly forbid} porn sites, making it very difficult to accept credit cards directly.
 
 
-◊img[#:src "/images/reversal1.png"]{
-    ◊todo{No porn accepted here}
+◊img[#:src "/images/xxx-payments1.png"]{
+    Payment processors usually don't want anything to do with porn sites.
 }
 
 Instead they have a third party request the payment on their behalf and do some shady stuff. They can for example claim the payment is for another type of business, which isn't banned by the payment processor.
 
-◊img[#:src "/images/reversal1.png"]{
-    ◊todo{"social network company"? Ok!}
+◊img[#:src "/images/xxx-payments2.png"]{
+    Another party acting as an intermediary might get accepted by the payment processor, especially if they disguise themselves.
 }
 
 ◊(define stripe-restricted "https://stripe.com/restricted-businesses")
 
-These things are on the gray area legal wise◊sn{legal?}, so the companies that does this have high fees---VERY high fees. While regular payment processors may have ~3-4% fees these can be as high as ◊strong{30%}. That's ludicrously expensive for low margin businesses.
+These things are on the gray area legal wise◊sn{legal?}, so the companies that does this have high fees---VERY high fees. While regular payment processors may have ~3-4% fees, these intermediary fees can be as high as ◊strong{30%}. That's ludicrously expensive for low margin businesses.
 
 ◊ndef["legal?"]{
     I'm not taking a stand if this practice is legal or not. Just noting that they don't really have many options.
@@ -154,9 +154,9 @@ Why should people running and using ◊strong{legal} businesses be punished for 
 
 Cryptocurrencies give you permissionless digital payments---it solves the problem of accepting payments very well. But it's not a full solution, at least today.
 
-As we discussed in ◊link[are-cryptos-money]{Are cryptocurrencies money?} they're still very volatile and not widely accepted. Businesses still need to convert cryptocurrencies to fiat to be able to pay their bills and salaries, and the workers in turn need to pay their bills. To sell them for fiat you still need to go through exchanges who---you guessed it---can ◊link[coinbase-close-accounts]{refuse to do business with you}.
+As we discussed in ◊link[are-cryptos-money]{Are cryptocurrencies money?} they're very volatile and not widely accepted. Businesses still need to convert cryptocurrencies to fiat to be able to pay their bills and salaries, and the workers in turn need to pay their bills. To sell them for fiat you still need to go through exchanges who---you guessed it---can ◊link[coinbase-close-accounts]{refuse to do business with you}.◊sn{localbitcoins}
 
-While cryptocurrencies improves the situation today◊sn{localbitcoins}, we would really need to bypass all third-parties for a great solution. This means you should be able to pay all expenses with cryptocurrencies---so you can't get blocked by a third party anywhere on the line.
+While cryptocurrencies improves the situation today, we would really need to bypass all third-parties for a great solution. This means you should be able to pay all expenses with cryptocurrencies---so you can't get blocked by a third party anywhere on the line.
 
 But there are related problems cryptocurrencies can't solve. Banks serve a very important function: they lend businesses money, and there's no good solution if they say no. It can also be more secure to let banks store large sums of money than keeping it yourself.
 
