@@ -12,7 +12,13 @@
     }
 }
 
-When you think about donations, you wouldn't assume they have the same problems as payments have. For example if you want to donate money to a charity, like ◊link[charity-water]{Charity Water}, they don't have to be worried of ◊link[charge-back-fraud]{charge back fraud}. But the same problem with third-party censorship as explored in the ◊link[freezing-chapter]{previous} two ◊link[undesirable-chapter]{chapters} is relevant here as well.
+In the ◊link[freezing-chapter]{last} two ◊link[undesirable-chapter]{chapters} we looked at the issues with digital payments, but when you think about donations you wouldn't assume they have the same problems as payments have. For example if you want to donate money to a charity, like ◊link[charity-water]{Charity Water}, they don't have to be worried of ◊link[charge-back-fraud]{charge back fraud}.◊sn{charity-fees} But the same problem with third-party censorship is relevant here as well.
+
+◊ndef["charity-fees"]{
+    Most payment processors have lower fees for charities, but they're still much more expensive than the ◊link[cheaper-faster]{low cryptocurrency fees}.
+}
+
+◊(define cheaper-faster "/cheaper_faster.html#cryptocurrency-fees")
 
 Think of journalism in oppressive regimes while placing their lives on line. A third party might block donations or break the journalistic anonymity making donations for truth-seeking journalists very difficult.
 
@@ -29,7 +35,7 @@ A ◊link[bbc-tiananmen]{powerful example} of the dangers of censorship is the �
     "And he killed them."
 }
 
-China has gone to extreme lengths to censor these events.  Twitter is censored by default in China◊sn{china-censorship} and anyone caught tweeting on Tiananmen can ◊link[twitter-detained]{get you arrested}.◊sn{reeducation} On the anniversary they have police escorts for the victim's families who wants to visit the graves, to keep them away from journalists.
+China has gone to extreme lengths to censor these events.  Twitter is censored by default in China◊sn{china-censorship} and anyone caught tweeting on Tiananmen can ◊link[twitter-detained]{get you arrested}.◊sn{reeducation} On the anniversary they have police escorts for the victim's families who wants to visit the graves---to keep them away from journalists.
 
 ◊ndef["reeducation"]{
     You'll probably be placed in a “◊link[china-reeducation]{re-education camp}”, they're quite similar to camps in Stalin's Soviet or Hitler's Germany.
@@ -37,8 +43,11 @@ China has gone to extreme lengths to censor these events.  Twitter is censored b
 
 
 ◊ndef["china-censorship"]{
-
+    The ◊link[china-censorship]{censorship in China} is absolutely massive. They try to scan and filter all internet traffic in China, often called “◊link[great-firewall-of-china]{The Great Firewall of China}”, and they're doing a pretty good job. For example they completely ban Facebook, Twitter, Snapchat, Google, Youtube, Wikipedia, WikiLeaks, Netflix and ◊strong{many} others. It might be possible to work around the restrictions using a VPN, but many doesn't work in China either.
 }
+
+◊(define china-censorship "https://en.wikipedia.org/wiki/Censorship_in_China")
+◊(define great-firewall-of-china "https://www.howtogeek.com/162092/htg-explains-how-the-great-firewall-of-china-works/")
 
 But I think there's a more relevant example for us concerned with uncensorable payments: ◊link[wikileaks]{WikiLeaks}.
 
