@@ -54,7 +54,7 @@ Would you be able to pay your rent? Buy food for yourself and your kids? Repair 
 
 Yet this has played out ◊link[rel-examples]{again and again} for businesses all over the world who has gotten their account frozen for an unknown amount of time for arbitrary or unknown reasons.
 
-Actually, let me take that back. What happens is actually much worse---businesses also get funds frozen. It's like if your employer would freeze your credit card, your savings account ◊strong{and} hold off your salary.
+Actually, let me take that back. What happens is actually much worse---businesses also get ◊strong{funds} frozen. It's like if your employer would freeze your credit card, your savings account and hold off your salary.
 
 Imagine what you would do now, without a salary and without your savings...
 
