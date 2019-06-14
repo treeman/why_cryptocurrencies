@@ -24,7 +24,7 @@
     (better_digital_payments.html
      cheaper_faster.html
      undesirable_businesses.html
-     "Freezing of merchant accounts"
+     freezing_of_merchant_accounts.html
      "Uncensorable donations"
      "Banking the unbanked")
     ("A better currency"
