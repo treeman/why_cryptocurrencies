@@ -5,17 +5,14 @@
 ◊(define-meta updated "2019-06-12T08:51:00+02:00")
 ◊(define-meta uuid "875332fd-f5ad-4275-8254-008a2e74a4a0")
 
+◊epigraph{
+    ◊qt[#:src "Global Findex database"
+        #:url findex-report
+        #:date "2017"]{
+        A  growing  body  of  research  reveals  many  potential  development  benefits  from  financial inclusion — especially from the use of digital financial services, including  mobile  money  services,  payment  cards,  and  other  financial  technology  (or  fintech)  applications.
+    }
+}
 
-
-
-
-    How many unbanked adults have a mobile phone? Globally, about 1.1 billion — or about two-thirds of all unbanked adults
-
-    ...
-
-    Fewer unbanked adults have both a mobile phone and access to the internet in some form— whether through a smartphone, a home computer, an internet café, or some other way. Globally, the share is about a quarter.
-
-So about 420 million (of 1.7 billion adults) have access to internet while being unbanked.
 
 ◊subhead{Who are the unbanked?}
 
@@ -44,18 +41,12 @@ So about 420 million (of 1.7 billion adults) have access to internet while being
 ◊; Iraq isn't filled in
 ◊; philipines/malaysia
 
+There are ◊strong{◊link[findex-report]{1.7 billion adults}} without a bank account in the world. To get a sense for what countries they come from, take a look at this world map:
+
 ◊img[#:src "images/unbanked-map.png" #:class "fullwidth"]{
     Adults without a bank account, 2017.
     Source ◊link[findex-report]{Global Findex database}.
 }
-
-> 150 mil
-    China > 200 mil
-    India 190 mil
-100--150 (skip!)
-50--100 mil
-10--50 mil
-< 10 mil skip
 
 ◊;#f0f9e8   92, 7, 98           < (no labeL)0
 ◊;#bae4bc   123, 18, 89         1 - 10 mil
@@ -65,10 +56,53 @@ So about 420 million (of 1.7 billion adults) have access to internet while being
 ◊;#0868ac   205, 95, 67         > 150 mil
 ◊;http://datawrapper.dwcdn.net/AmFVU/2/
 
+While this map helps us identify countries with a high fraction of unbanked, it doesn't really tell us where the large number of unbanked come from. Instead here's a map visualizing the number of unbanked in the world:
+
 ◊img[#:src "images/unbanked-count-map.png" #:class "fullwidth"]{
-    The number of adults without a bank account, 2017. See an ◊link[findex-interactive]{interactive version}.
-    Source ◊link[findex-report]{Global Findex database}.
+    The number of adults without a bank account, 2017.
+    Source ◊link[findex-report]{Global Findex database} (◊link[findex-interactive]{interactive}).
 }
+
+Perhaps surprisingly almost half of all unbanked live in just seven countries: China, India, Indonesia, Mexico, Nigeria, Pakistan and Bangladesh. In fact China (224 million) and India (191 million) alone make up nearly a quarter of all unbanked in the world.
+
+While the fraction of unbanked adults are high in the developing countries, with poor access to electricity and internet, a surprisingly large number of unbanked live in developed countries. For example USA has 18 million unbanked and in France there are 3 million unbanked.
+
+The question "But how do the unbanked pay for internet?" is always asked when discussing the unbanked. The report has this to say:
+
+◊qt{
+    Fewer unbanked adults have both a mobile phone and access to the internet in some form— whether through a smartphone, a home computer, an internet café, or some other way. Globally, the share is about a quarter.
+}
+
+So about 420 million do have access to internet while being unbanked. I don't know if that's true or not, but anecdotally it seems all homeless people owns a smartphone of some sort. And you can even get internet in Venezuela◊sn{venezuela-internet}, despite an unreliable power grid.
+
+◊ndef["venezuela-internet"]{
+    Reportedly Venezuela has one of the worst internet speeds in the world. Yet they still ◊link[venezuela-social-media]{use social media actively}. Surprisingly they also ◊link[venezuela-mining]{mine Bitcoin}.
+}
+
+◊(define venezuela-mining "https://news.bitcoin.com/venezuelan-bitcoin-saves-family/")
+◊(define venezuela-social-media "https://news.abs-cbn.com/overseas/02/01/19/venezuela-opposition-clings-to-social-media-lifeline")
+
+
+◊;I've only touched on some statistics, please see the ◊link[findex-report]{full report} for more.
+
+
+◊subhead{What's the problem?}
+
+◊todo{Note how even highly successful and rich porn stars may end up (temporarily) unbanked}
+
+◊todo{Remark on how I didn't get to open an account at Handelsbanken because I didn't want to move over all my accounts and work payment to them (I did get an account when took a mortgage from them)}
+
+
+As you might expect it's often the developing countries, with poor access to electricity and internet, that have a high ratio of unbanked adults. And really, if nobody in the country has a bank account---it probably doesn't matter that much.
+
+China (224 million), India (191 million) Mexico (58 million), USA (18 million), France (3 million)
+
+Nearly half of all unbanked adults live in just seven economies: 
 
 ◊(define findex-report "https://globalfindex.worldbank.org/sites/globalfindex/files/2018-04/2017%20Findex%20full%20report_0.pdf")
 ◊(define findex-interactive "http://datawrapper.dwcdn.net/AmFVU/2/")
+
+
+◊; A  growing  body  of  research  reveals  many  potential  development  benefits  from  financial inclusion — especially from the use of digital financial services, including  mobile  money  services,  payment  cards,  and  other  financial  technology  (or  fintech)  applications.  While  the  evidence  is  somewhat  mixed,  even  studies  that  do  not  find  positive  results  often  point  to  possibilities  for  achieving  better  out-comes through careful attention to local needs.
+
+◊;The  benefits  from  financial  inclusion  can  be  wide  ranging.  For  example,  stud-ies  have  shown  that  mobile  money  services—  which  allow  users  to  store  and  transfer  funds  through  a  mobile  phone—  can  help  improve  people’s  income-  earning  potential  and  thus  reduce  poverty.  A  study  in  Kenya  found  that  access  to mobile money services delivered big benefits, especially for women. It enabled women-headed  households  to  increase  their  savings  by  more  than  a  fifth;  allowed  185,000  women  to  leave  farming  and  develop  business  or  retail  activi-ties;  and  helped  reduce  extreme  poverty  among  women-headed  households  by  22 percent.
