@@ -95,7 +95,7 @@ Instead they have a third party request the payment on their behalf and do some 
 These things are on the gray area legal wise◊sn{legal?}, so the companies that does this have high fees---VERY high fees. While regular payment processors may have ~3-4% fees, these intermediary fees can be as high as ◊strong{30%}. That's ludicrously expensive for low margin businesses.
 
 ◊ndef["legal?"]{
-    I'm not taking a stand if this practice is legal or not. Just noting that they don't really have many options.
+    I don't know if this practice is legal or not, I just want to note they don't really have many options.
 }
 
 
