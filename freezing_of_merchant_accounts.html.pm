@@ -109,11 +109,12 @@ If you search for it online, there are thousands of stories like these. This is 
 
 ◊ul{
     ◊li{◊link[kyc-failure]{PayPal Know Your Customer failure}}
-    ◊li{◊link[paypal-12years]{We got banned from PayPal after 12 years of business }}
+    ◊li{◊link[paypal-12years]{We got banned from PayPal after 12 years of business}}
     ◊li{◊link[paypal-70000]{Paypal just froze over $70,000 in my account}}
     ◊li{◊link[paypal-8years]{PayPal destroyed my business of 8 years in a day}}
     ◊li{◊link[paypal-deletes-stream]{PayPal Deletes My Account Mid Stream}}
     ◊li{◊link[startups-stripe]{Why Should Startups Avoid Stripe?}}
+    ◊li{◊link[keys4coins-stripe]{Why Stripe is the worst choice for your new startup business}}
 }
 
 Some of these had a happy ending but others did not.
@@ -124,6 +125,7 @@ Some of these had a happy ending but others did not.
 ◊(define paypal-8years "http://www.aboutpaypal.org/paypal-destroyed-business-8-years-day/")
 ◊(define startups-stripe "https://kinsta.com/blog/startups-avoid-stripe/")
 ◊(define paypal-deletes-stream "https://www.youtube.com/watch?v=Js1kOPu0T4g")
+◊(define keys4coins-stripe "https://medium.com/@OlavOlsm/why-stripe-is-the-worst-choice-for-your-new-startup-business-e4d9f515e116")
 
 
 ◊subhead{Money under your mattress}
