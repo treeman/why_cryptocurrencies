@@ -1,7 +1,7 @@
 #lang pollen
 
-◊(define-meta title "Banking the unbanked")
-◊;(define-meta subtitle "")
+◊(define-meta title "For the unbanked")
+◊(define-meta subtitle "Digital payments for those without a bank account")
 ◊(define-meta updated "2019-06-12T08:51:00+02:00")
 ◊(define-meta uuid "875332fd-f5ad-4275-8254-008a2e74a4a0")
 
@@ -9,9 +9,11 @@
     ◊qt[#:src "Global Findex database"
         #:url findex-report
         #:date "2017"]{
-        A  growing  body  of  research  reveals  many  potential  development  benefits  from  financial inclusion — especially from the use of digital financial services, including  mobile  money  services,  payment  cards,  and  other  financial  technology  (or  fintech)  applications.
+    A growing body of research reveals many potential development benefits from financial inclusion — especially from the use of digital financial services, including mobile money services, payment cards, and other financial technology (or fintech) applications.
     }
 }
+
+In the previous chapters we've looked at some problems with having to get permission to accept digital payments, and what happens when we don't. This time we'll look at the reverse problem: when you can't make digital payments.
 
 
 ◊subhead{Who are the unbanked?}
@@ -63,7 +65,7 @@ While this map helps us identify countries with a high fraction of unbanked, it 
     Source ◊link[findex-report]{Global Findex database} (◊link[findex-interactive]{interactive}).
 }
 
-Perhaps surprisingly almost half of all unbanked live in just seven countries: China, India, Indonesia, Mexico, Nigeria, Pakistan and Bangladesh. In fact China (224 million) and India (191 million) alone make up nearly a quarter of all unbanked in the world.
+Almost half of all unbanked live in just seven countries: China, India, Indonesia, Mexico, Nigeria, Pakistan and Bangladesh. In fact China (224 million) and India (191 million) alone make up nearly a quarter of all unbanked in the world.
 
 While the fraction of unbanked adults are high in the developing countries, with poor access to electricity and internet, a surprisingly large number of unbanked live in developed countries. For example USA has 18 million unbanked and in France there are 3 million unbanked.
 
@@ -73,10 +75,18 @@ The question "But how do the unbanked pay for internet?" is always asked when di
     Fewer unbanked adults have both a mobile phone and access to the internet in some form— whether through a smartphone, a home computer, an internet café, or some other way. Globally, the share is about a quarter.
 }
 
-So about 420 million do have access to internet while being unbanked. I don't know if that's true or not, but anecdotally it seems all homeless people owns a smartphone of some sort. And you can even get internet in Venezuela◊sn{venezuela-internet}, despite an unreliable power grid.
+So about 420 million do have access to internet while being unbanked. I don't know if that's true or not, but anecdotally it seems almost all homeless people owns a smartphone of some sort. You can even get internet in Venezuela◊sn{venezuela-internet}, despite an unreliable power grid. And ◊link[undesirable-chapter]{remember} that even rich and successful can become temporarily unbankanked, if their banks arbitrarily decide porn stars or marijuana supporters isn't something they want to be associated with.◊sn{handelsbanken}
+
+◊(define undesirable-chapter "undesirable_businesses.html")
 
 ◊ndef["venezuela-internet"]{
-    Reportedly Venezuela has one of the worst internet speeds in the world. Yet they still ◊link[venezuela-social-media]{use social media actively}. Surprisingly they also ◊link[venezuela-mining]{mine Bitcoin}.
+    Reportedly Venezuela has one of the worst internet speeds in the world. Yet they still ◊link[venezuela-social-media]{use social media actively}. Interestingly they also ◊link[venezuela-mining]{mine Bitcoin}.
+}
+
+◊ndef["handelsbanken"]{
+    Here in Sweden I had an interesting encounter with Handelsbanken, one of the largest banks here. I asked if I could get an account there, I wanted to try out their internet bank, but I couldn't get one unless I moved over all my accounts and used them to receive my work payment. Isn't that... insane?
+
+    I did finally get an account there when we took a mortgage there, but I don't use them as my main bank.
 }
 
 ◊(define venezuela-mining "https://news.bitcoin.com/venezuelan-bitcoin-saves-family/")
@@ -87,10 +97,6 @@ So about 420 million do have access to internet while being unbanked. I don't kn
 
 
 ◊subhead{What's the problem?}
-
-◊todo{Note how even highly successful and rich porn stars may end up (temporarily) unbanked}
-
-◊todo{Remark on how I didn't get to open an account at Handelsbanken because I didn't want to move over all my accounts and work payment to them (I did get an account when took a mortgage from them)}
 
 
 As you might expect it's often the developing countries, with poor access to electricity and internet, that have a high ratio of unbanked adults. And really, if nobody in the country has a bank account---it probably doesn't matter that much.
