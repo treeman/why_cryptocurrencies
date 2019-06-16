@@ -3,10 +3,14 @@
 (require pollen/tag pollen/decode txexpr)
 (require racket/match racket/string racket/list)
 (require racket/format)
+(require racket/runtime-path)
+(require "toc.rkt")
+(require "links.rkt")
 (require "post-process.rkt")
 (require "string-process.rkt")
 
 (provide (all-defined-out))
+
 
 (define (xref? url)
   (cond
@@ -26,13 +30,60 @@
   (define attrs `((href ,url)))
   (when title
     (set! attrs (cons `(title ,title) attrs)))
-  (when (xref? url)
+  (if (xref? url)
     (set! c (if c
               (string-append c " xref")
-              "xref")))
+              "xref"))
+    (unless (valid-iref? url)
+      (printf "INVALID IREF '~v'~n" url)))
+      ;(error (format "INVALID IREF '~v'~n" url))))
   (when c
     (set! attrs (cons `(class ,c) attrs)))
   `(a ,attrs ,text))
+
+;; Verify if an internal url is valid.
+(define (valid-iref? url)
+  (or
+    (regexp-match #rx"^#" url)
+    (string=? "/" url)
+    (string=? "/feed.xml" url)
+    (regexp-match #rx"^mailto:" url)
+    (ch-ref? url)
+    (file-ref? url)))
+
+(define-runtime-path files-path "../files/")
+(define-runtime-path images-path "../images/")
+
+(define (file-ref? url)
+  (match (regexp-match #rx"^/files/(.+)" url)
+    [(list _ x)
+       (file-exists? (build-path files-path x))]
+    [else
+      #f]))
+(define (ch-ref? url)
+  (match (regexp-match #rx"^/([^#]+)" url)
+    [(list _ x)
+      (in-toc? (string->symbol x))]
+    [else
+      #f]))
+
+(module+ test
+  (require rackunit)
+  (check-false (ch-ref? "eli5.html")) ; Require leading /
+  (check-not-false (ch-ref? "/eli5.html"))
+  (check-not-false (ch-ref? "/eli5.html#xyz"))
+  (check-false (ch-ref? "/blaha.html"))
+
+  (check-not-false (file-ref? "/files/bitcoin.pdf"))
+  (check-false (file-ref? "/files/blaha"))
+
+  (check-not-false (valid-iref? "#header"))
+  (check-not-false (valid-iref? "/eli5.html"))
+  (check-not-false (valid-iref? "/eli5.html#xyz"))
+  (check-not-false (valid-iref? "/"))
+  (check-false (valid-iref? "blaha"))
+  )
+
 
 (define (subhead x)
   `(h2

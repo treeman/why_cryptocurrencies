@@ -275,6 +275,7 @@ The drawback might be alleviated with optional systems in the future, letting us
 ◊(define (neg . txt)
    `(li ((class "neg")) ,@txt))
 
+◊(define what-is-money "/what_is_money.html")
 ◊;http://blog.unibulmerchantservices.com/how-visas-payment-system-works/
 ◊;https://chargeback.com/chargeback-process/
 ◊;https://chargeback.com/mastercard-chargeback-time-limits/
@@ -284,7 +285,6 @@ The drawback might be alleviated with optional systems in the future, letting us
 ◊(define rel-speed "#speed-comparisons")
 ◊(define rel-crypto-fees "#cryptocurrency-fees")
 ◊(define rel-risk-tradeoff "#the-risk-management-trade-off")
-◊(define what-is-money "what_is_money.html")
 
 ◊(define bitcoin-fees
     `("https://bitcoinfees.cash/"

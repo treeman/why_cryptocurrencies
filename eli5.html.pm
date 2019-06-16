@@ -45,7 +45,7 @@ While cryptocurrencies are mostly seen as speculative assets---get rich quick sc
     }
 }
 
-Of course cryptocurrencies don't solve everything perfectly, they're held back by adoption and price volatility in particular. And as with all new technology there will be positive and negative change associated with them.
+Of course cryptocurrencies don't solve everything perfectly, they're held back by adoption and price volatility in particular. And as with all new technology they will be associated with positive and negative change.
 
 If you want to learn more just continue reading, or go to ◊link[what-chapter]{What is a cryptocurrency?} and continue from there. You can also ◊link[home]{jump} to whatever chapter interests you---they're supposed to be self-contained.
 
@@ -58,9 +58,9 @@ If you want to learn more just continue reading, or go to ◊link[what-chapter]{
 }
 
 ◊(define home "/")
-◊(define book-chapter "about_the_book.html")
-◊(define what-chapter "what_is_a_cryptocurrency.html")
-◊(define properties-chapter "properties_of_a_cryptocurrency.html")
-◊(define cheaper-chapter "cheaper_faster.html")
-◊(define anonymous "properties_of_a_cryptocurrency.html#anonymous")
+◊(define book-chapter "/about_the_book.html")
+◊(define what-chapter "/what_is_a_cryptocurrency.html")
+◊(define properties-chapter "/properties_of_a_cryptocurrency.html")
+◊(define cheaper-chapter "/cheaper_faster.html")
+◊(define anonymous "/properties_of_a_cryptocurrency.html#anonymous")
 

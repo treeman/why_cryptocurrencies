@@ -7,6 +7,7 @@
 (require "rkt/layout.rkt")
 (require "rkt/index.rkt")
 (require "rkt/feed.rkt")
+(require "rkt/toc.rkt")
 
 (provide (all-from-out racket/list)) ; make add-between available for templates
 (provide (all-from-out "rkt/tags.rkt"))
@@ -14,6 +15,7 @@
 (provide (all-from-out "rkt/layout.rkt"))
 (provide (all-from-out "rkt/index.rkt"))
 (provide (all-from-out "rkt/feed.rkt"))
+(provide (all-from-out "rkt/toc.rkt"))
 (provide (all-defined-out))
 
 (module setup racket/base
