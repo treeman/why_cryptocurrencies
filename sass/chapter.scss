@@ -1,8 +1,21 @@
+$fullwidth: 1220px;
+$sidenote-float-width: 1280px;
+
 .chapter {
     max-width: 800px;
     //background-color: lightyellow;
     flex: 1 1 auto;
     margin: 0.5rem 1.2rem;
+}
+
+%fullwidth {
+    width: 100%;
+}
+
+@media (min-width: $sidenote-float-width) {
+    %fullwidth {
+        width: $fullwidth;
+    }
 }
 
 
@@ -43,6 +56,13 @@
 .where .divider {
     font-size: 0.65rem;
     color: $eth-light-gray;
+}
+
+/*
+ * Headers
+ */
+.chapter h2 > a:hover {
+    color: $body-font-color;
 }
 
 
@@ -119,18 +139,16 @@
         display: none;
     }
 
-    //ol {
-        //margin-top: 0.5rem;
-    //}
-    //ol > li {
-        //font-size: 100%;
-    //}
     a {
         background: none;
         text-shadow: none;
     }
     a:hover {
         text-decoration: underline;
+    }
+
+    .planned {
+        color: $planned-chapter-link;
     }
 }
 
@@ -183,14 +201,20 @@ table {
     @extend %sans-serif-tnum;
     font-size: 0.95rem;
     margin-bottom: 1rem;
+
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
 }
 th, td {
     text-align: left;
     padding: 0.1em 1.5em 0.1em 0em;
 }
-table.centered {
-    margin: 0 auto;
-    margin-bottom: 1rem;
+// Had tons of trouble centering a table which could also
+// overflow on x.
+.centered {
+    display: flex;
+    justify-content: center;
 }
 
 
@@ -222,16 +246,6 @@ pre {
 /*
  * Misc
  */
-.sans {
-    @extend %sans-serif;
-}
-.sans-tnum {
-    @extend %sans-serif-tnum;
-}
-
-.chapter .subscribe {
-    max-width: 25em;
-}
 
 
 /*
@@ -263,6 +277,10 @@ pre {
     clear: both;
     width: 100%;
     display: inline-block;
+}
+
+.sidenote img, .marginnote img {
+    max-width: 100%;
 }
 
 .snp > code {
@@ -298,7 +316,6 @@ label.margin-toggle:not(.sidenote-number) {
     display: none;
 }
 
-$sidenote-float-width: 1280px;
 @media (max-width: $sidenote-float-width - 1) {
     label.margin-toggle:not(.sidenote-number) {
         display: inline;
@@ -321,6 +338,17 @@ $sidenote-float-width: 1280px;
     .margin-toggle:checked + .marginnote {
         display: block;
         margin: 1rem;
+
+        img {
+            display: block;
+            margin: 0 auto;
+        }
+    }
+    .sidenote, .marginnote {
+        .snp {
+            // Dsiplay as block to not be cut by images.
+            display: block;
+        }
     }
     //.sidenote { background-color: lightblue; }
     //.marginnote { background-color: aqua; }
@@ -412,7 +440,7 @@ figcaption.margin {
 
 @media (min-width: $sidenote-float-width) {
     figure.fullwidth {
-        width: 1220px;
+        width: $fullwidth;
     }
     figcaption.margin {
         font-size: 0.8rem;
@@ -471,8 +499,6 @@ figure .sidenote, figure .marginnote {
 
 .story {
     padding-top: 1rem;
-    //padding-left: 1rem;
-    //padding-right: 1rem;
     margin: 1.5rem 0;
     border-top: 1px dashed $body-hr-color;
     border-bottom: 1px dashed $body-hr-color;
@@ -482,3 +508,110 @@ figure .sidenote, figure .marginnote {
     max-width: 600px;
 }
 
+.fullwidth {
+    @extend %fullwidth;
+}
+
+table.crypto-eval {
+    th, td {
+        padding: 0.1em 1.0em 0.1em 0.5em;
+    }
+    td {
+        text-align: left;
+    }
+    td.ths {
+        font-weight: bold;
+        text-align: center;
+    }
+    td.tds {
+        font-weight: bold;
+    }
+    td.poor {
+        background-color: $xmr-orange;
+        text-align: center;
+    }
+    td.good {
+        background-color: #5db0cc;
+        text-align: center;
+    }
+    td.excellent {
+        background-color: $bch-green;
+        text-align: center;
+    }
+}
+
+.sans {
+    @extend %sans-serif;
+}
+.sans-tnum {
+    @extend %sans-serif-tnum;
+}
+
+.chapter .subscribe {
+    max-width: 25em;
+}
+
+.money-examples .example {
+    width: 100%;
+    margin-bottom: 1em;
+    display: flex;
+
+    .txt {
+        margin: 0 0.5em;
+    }
+
+    img {
+        flex-shrink: 0;
+        align-self: center;
+        max-width: 10em;
+        margin-bottom: 1em;
+    }
+    h3 {
+        margin-top: 0;
+    }
+    .header {
+        font-size: 1.1rem;
+        @extend %sans-serif;
+        line-height: 1;
+        display: flex;
+    }
+    .date {
+        margin-left: 0.5rem;
+    }
+}
+
+@media only screen and (min-width: 521px) {
+    .money-examples .example:nth-child(even) {
+        justify-content: space-between;
+        img {
+            order: 9;
+            margin-right: 0;
+        }
+    }
+}
+
+@media only screen and (max-width: 520px) {
+    .money-examples .example {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        flex-direction: column;
+
+        .txt {
+            width: 100%;
+            order: 1;
+        }
+        img {
+            order: 0;
+        }
+    }
+}
+ul > li.plus:before {
+    content: "+";
+}
+ul > li.neg:before {
+    content: "-";
+}
+
+.qt-tab {
+    padding-left: 1.2rem;
+}

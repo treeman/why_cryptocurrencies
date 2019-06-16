@@ -10,12 +10,6 @@
     (select-from-metas 'uuid post)))
 ◊(define (updated post)
   (select-from-metas 'updated post))
-◊(define (content post)
-  ; Wrap html in CDATA tag as it might ge interpreted as XML tags.
-  (string-append
-    "<![CDATA["
-    (->html (get-doc post) #:splice? #t)
-    "]]>"))
 ◊(define (validate post)
   (check-meta 'title post)
   (check-meta 'uuid post)
@@ -28,7 +22,7 @@
   (map validate
     (filter (λ (post)
                (not (skip-feed post)))
-      (pagetree->list (get-pagetree "index.ptree")))))
+      (pagetree->list toc-pagetree))))
 ◊(define (entry post)
   (->html
     `((entry
@@ -39,11 +33,11 @@
   (add-between
     (filter-entry-content
       `((title ,(title post))
-        (subtitle ,(subtitle post))
+        ;(subtitle ,(subtitle post))
         (updated ,(updated post))
         (id ,(uuid post))
         (link ((href ,(abs-url post))))
-        (content [[type "html"]] ,(content post))))
+        (summary [[type "html"]] ,(feed-summary post))))
     "\n\t"))
 ◊(define (filter-entry-content cs)
   ; We don't require subtitles be in all posts, this is a general implementation.

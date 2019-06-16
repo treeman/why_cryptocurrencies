@@ -34,10 +34,17 @@
     (set! attrs (cons `(class ,c) attrs)))
   `(a ,attrs ,text))
 
-(define (subhead txt)
-  `(h2 ,txt))
+(define (subhead x)
+  `(h2
+    (a [[name ,(to-name x)]] ,x)))
 
-(define (stable #:header [header #t] #:centered [centered #t] . rows)
+(define (to-name x)
+  (string-replace (string-downcase x) " " "-"))
+
+(define (stable #:header [header #t]
+                #:centered [centered #t]
+                #:fullwidth [fullwidth #f]
+                . rows)
   (define cleaned-rows (filter-not whitespace? rows))
   (define header-row (car cleaned-rows))
   (define body-rows (cdr cleaned-rows))
@@ -51,33 +58,68 @@
                           ,@(map (λ (x) (make-row x 'td)) body-rows)))
                       `((tbody
                           ,@(map (λ (x) (make-row x 'td)) cleaned-rows)))))
-  (define attrs (if centered
-                    `((class "centered"))
-                    `()))
-  `(table ,attrs ,@content))
+  (create-table centered fullwidth `() content))
+
+(define (table-body #:centered [centered #t]
+                    #:fullwidth [fullwidth #f]
+                    #:class [c #f]
+                    . rows)
+  (define table-classes (if c `(,c) `()))
+  (create-table centered fullwidth table-classes
+                `((tbody ,@rows))))
+
+(define (create-table centered fullwidth table-classes content)
+  (define div-classes `())
+  (when fullwidth
+    (set! div-classes (cons "fullwidth" div-classes)))
+  (when centered
+    (set! div-classes (cons "centered" div-classes)))
+  (define table
+    `(table ,(attrs-from-classes table-classes) ,@content))
+  (if (empty? div-classes)
+      table
+      `(div ,(attrs-from-classes div-classes) ,table)))
+
+(define (attrs-from-classes classes)
+  (if (empty? classes)
+      `()
+      `((class ,(string-join classes)))))
+
 
 (define (epigraph  . txt)
   `(div ((class "epigraph"))
        ,@txt))
 
-(define (qt #:author author #:src [src #f] #:url [url #f] #:date [date #f] . txt)
-  (define ref (if url
-                  (link url src)
-                  src))
-  (define cite `((span ((class "author")) ,author ", ")))
-  (when (or url src)
-    (let ((ref (if url
-                  (link url src)
-                  src)))
+(define (qt #:author [author #f] #:src [src #f] #:url [url #f] #:date [date #f] #:quote-src [quote-src #f] . txt)
+  (define cite `())
+
+  ; Convert date to string, for ease of use later.
+  (when date (set! date (~a date)))
+
+  ; Set up link
+  (when url
+    (cond
+      [src (set! src (link url src))]
+      [date (set! date (link url date))]
+      [author (set! author (link url author))]
+      [else (error "Quote with url but without ref")]))
+
+  (when author
+    (set! cite (append cite
+                       `((span ((class "author")) ,author)))))
+  (when src
+    (let ((ref (if quote-src
+                  `("“" ,src "”")
+                  `(,src))))
       (set! cite (append cite
-                         `((span ((class "src")) "“" ,ref "”"))))))
+                         `((span ((class "src")) ,@ref))))))
   (when date
     (set! cite (append cite
-                       `((span ((class "date")) ,(~a date))))))
+                       `((span ((class "date")) ,date)))))
 
   `(blockquote
-    ,@txt
-    (footer ,@cite)))
+     ,@txt
+     (footer ,@(add-between cite ", "))))
 
 (define (icode . args)
   `(code ,@args))
@@ -91,7 +133,7 @@
   `(span ((class "sans-tnum")) ,@args))
 
 (define (todo . args)
-  `(div ((class "todo"))
+  `(span ((class "todo"))
     (span ((class "pre")) "TODO ")
     (span ((class "txt")) ,@args)))
 
@@ -129,6 +171,9 @@
      (img ((src ,(~a src))))
      ,figcaption))
 
+(define (raw-img #:src src)
+  `(img ((src ,(~a src)))))
+
 
 ;;; Margin-notes and side-notes
 (define note-defs (make-hash))
@@ -136,6 +181,9 @@
 (define (ndef ref-in . def)
   (define id (format "nd-~a" ref-in))
   (define ref (string->symbol id))
+
+  (when (hash-has-key? note-defs ref)
+    (error (format "duplicate ndef '~a'" ref-in)))
 
   ;; Because p doesn't allow block elements
   ;; and span doesn't allow p elements

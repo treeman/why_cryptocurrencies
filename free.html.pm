@@ -2,7 +2,7 @@
 
 ◊(define-meta title "Completely free")
 ◊(define-meta subtitle "Read it online for free without cost of any kind")
-◊(define-meta updated "2019-04-03T19:59:17+0200")
+◊(define-meta updated "2019-04-03T19:59:17+02:00")
 ◊(define-meta uuid "4ede8ca8-fd2e-4112-9d00-e383f94e1a01")
 
 This book is completely free for you to read online and will be so forever. There will be no ads, no tracking and no crypto mining in the browser.◊sn{browser-mining}
