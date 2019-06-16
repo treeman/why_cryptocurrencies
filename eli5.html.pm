@@ -5,7 +5,7 @@
 ◊(define-meta updated "2019-06-16T05:49:19+02:00")
 ◊(define-meta uuid "cef34868-0317-4c6f-8b9f-cfb66464f2a8")
 
-While cryptocurrencies are mostly seen as a speculative asset---a get rich quick scheme---they have valuable properties and valuable use cases. For example:
+While cryptocurrencies are mostly seen as speculative assets---get rich quick schemes---they have valuable properties and valuable use cases. For example:
 
 ◊ul{
     ◊li{◊strong{Cheaper payments}
@@ -16,7 +16,7 @@ While cryptocurrencies are mostly seen as a speculative asset---a get rich quick
 
         You receive money under an hour, while it takes days to receive other digital payments which can also be reversed weeks or months later.
 
-        This also means merchants don't have to be worried of having a purchase reversed, which usually means they have to swallow the loss.
+        This also means merchants don't have to worry about having a purchase reversed, which usually means they have to swallow the loss.
         }
 
     ◊li{◊strong{For anyone}
@@ -45,7 +45,9 @@ While cryptocurrencies are mostly seen as a speculative asset---a get rich quick
     }
 }
 
-If you want to learn more I suggest you start with ◊link[book-chapter]{About the book} or ◊link[what-chapter]{What is a cryptocurrency?} and continue from there. You can also ◊link[home]{jump} to whatever chapter that interests you---they're supposed to be self-contained.
+Of course cryptocurrencies don't solve everything perfectly, they're held back by adoption and price volatility in particular. And as with all new technology there will be positive and negative change associated with them.
+
+If you want to learn more just continue reading, or go to ◊link[what-chapter]{What is a cryptocurrency?} and continue from there. You can also ◊link[home]{jump} to whatever chapter interests you---they're supposed to be self-contained.
 
 ◊ndef["bitcoin-fees"]{
     If you've heard about the ridiculously high Bitcoin fees then don't worry---it's the exception not the rule. Please read the chapter ◊link[cheaper-chapter]{Cheaper & faster} for more info.
