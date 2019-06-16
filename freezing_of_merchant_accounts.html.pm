@@ -52,7 +52,7 @@ Now imagine the consequences.
 
 Would you be able to pay your rent? Buy food for yourself and your kids? Repair your fridge if it breaks? Given that ◊link[american-savings]{only 39% of Americans have enough savings to cover a $1,000 emergency} you should be very glad if you can honestly answer yes to these questions. Many would panic if their salary is just a little bit late, let alone half a year.
 
-Yet this has played out ◊link[rel-examples]{again and again} for businesses all over the world who has gotten their account frozen for an unknown amount of time for arbitrary or unknown reasons.
+Yet this has played out ◊link[rel-examples]{again and again} for businesses all over the world who have gotten their account frozen for an unknown amount of time for arbitrary or unknown reasons.
 
 Actually, let me take that back. What happens is actually much worse---businesses also get ◊strong{funds} frozen. It's like if your employer would freeze your credit card, your savings account and hold off your salary.
 
