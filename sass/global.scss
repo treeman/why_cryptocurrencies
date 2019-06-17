@@ -134,6 +134,9 @@ a:hover {
 a:hover.xref {
     color: $body-xref-hover-color;
 }
+a:hover.invalid-iref {
+    color: $body-invalid-iref-hover-color;
+}
 
 
 /*
