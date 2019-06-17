@@ -14,7 +14,7 @@ While cryptocurrencies are mostly seen as speculative assets---get rich quick sc
 
     ◊li{◊strong{Settles faster}
 
-        You receive money ◊link[settlement-time]{under an hour}, while it takes days to receive other digital payments---which can also be reversed weeks or months later.
+        You receive money ◊link[settlement-time]{under an hour}, while it takes days to receive other digital payments---which can also be reversed weeks or months later. (Of course payment notification is instant, like other payment systems.)
 
         This means merchants don't have to worry about having a purchase reversed, which usually means they have to swallow the loss.◊sn{chargeback-fraud}
         }
@@ -54,7 +54,7 @@ If you want to learn more and see more examples just continue reading, or go to 
 }
 
 ◊ndef["bitcoin-privacy"]{
-    Please note that Bitcoin (and most other cryptocurrencies) are only ◊em{pseudo-anonymous}. There are others---like Monero---who improves the situation. ◊link[anonymous]{Read this} for more info.
+    Please note that Bitcoin (and most other cryptocurrencies) are only ◊em{pseudo-anonymous}. There are others---like Monero---that improves the situation. ◊link[anonymous]{Read this} for more info.
 }
 
 ◊ndef["chargeback-fraud"]{
