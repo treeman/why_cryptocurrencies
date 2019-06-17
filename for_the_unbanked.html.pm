@@ -18,48 +18,32 @@ In the previous chapters we've looked at some problems with having to get permis
 
 ◊subhead{Who are the unbanked?}
 
-◊; Color scheme for map
-◊; http://colorbrewer2.org/#type=sequential&scheme=BuPu&n=6
-◊; multi-hue
-◊;#edf8fb (skip, too similar to background)
-◊;#bfd3e6     209, 17, 90       0-10
-◊;#9ebcda     210, 28, 85       11-35
-◊;#8c96c6     230, 29, 78       36-60
-◊;#8856a7     277, 49, 65       61-80
-◊;#810f7c     303, 88, 51       81-100
-◊;            39,  57, 84       no data
-
-
-◊; RGB
-◊;237,248,251
-◊;191,211,230
-◊;158,188,218
-◊;140,150,198
-◊;136,86,167
-◊;129,15,124
-
-◊; FIXME
-◊; regenrate
-◊; Iraq isn't filled in
-◊; philipines/malaysia
 
 There are ◊strong{◊link[findex-report]{1.7 billion adults}} without a bank account in the world. To get a sense for what countries they come from, take a look at this world map:
 
+◊; http://colorbrewer2.org/#type=sequential&scheme=PuRd&n=5
+◊; multi-hue
+◊; #f1eef6  0-10
+◊; #d7b5d8  11-35
+◊; #df65b0  36-60
+◊; #dd1c77  61-80
+◊; #980043  81-100
 ◊img[#:src "images/unbanked-map.png" #:class "fullwidth"]{
     Adults without a bank account, 2017.
     Source ◊link[findex-report]{Global Findex database}.
 }
 
-◊;#f0f9e8   92, 7, 98           < (no labeL)0
-◊;#bae4bc   123, 18, 89         1 - 10 mil
-◊;#7bccc4   174, 40, 80         10 - 50 mil
-◊;#43a2ca   198, 67, 79         50 - 100 mil
-◊;                              100 - 150 mil (no country!)
-◊;#0868ac   205, 95, 67         > 150 mil
-◊;http://datawrapper.dwcdn.net/AmFVU/2/
 
 While this map helps us identify countries with a high fraction of unbanked, it doesn't really tell us where the large number of unbanked come from. Instead here's a map visualizing the number of unbanked in the world:
 
+◊; http://colorbrewer2.org/#type=sequential&scheme=PuRd&n=5
+◊; multi-hue
+◊;#f0f9e8   < (no labeL)0
+◊;#bae4bc   1 - 10 mil
+◊;#7bccc4   10 - 50 mil
+◊;#43a2ca   50 - 100 mil
+◊;          100 - 150 mil (no country!)
+◊;#0868ac   > 150 mil
 ◊img[#:src "images/unbanked-count-map.png" #:class "fullwidth"]{
     The number of adults without a bank account, 2017.
     Source ◊link[findex-report]{Global Findex database} (◊link[findex-interactive]{interactive}).
@@ -75,7 +59,7 @@ The question "But how do the unbanked pay for internet?" is always asked when di
     Fewer unbanked adults have both a mobile phone and access to the internet in some form— whether through a smartphone, a home computer, an internet café, or some other way. Globally, the share is about a quarter.
 }
 
-So about 420 million do have access to internet while being unbanked. I don't know if that's true or not, but anecdotally it seems almost all homeless people owns a smartphone of some sort. You can even get internet in Venezuela◊sn{venezuela-internet}, despite an unreliable power grid. And ◊link[undesirable-chapter]{remember} that even rich and successful can become temporarily unbankanked, if their banks arbitrarily decide porn stars or marijuana supporters isn't something they want to be associated with.◊sn{handelsbanken}
+So about ◊strong{420 million} do have access to internet while being unbanked. I don't know if that's true or not, but anecdotally it seems almost all homeless people owns a smartphone of some sort. You can even get internet in Venezuela◊sn{venezuela-internet}, despite an unreliable power grid. And ◊link[undesirable-chapter]{remember} that even rich and successful can become temporarily unbankanked, if their banks arbitrarily decide porn stars or marijuana supporters isn't something they want to be associated with.◊sn{handelsbanken}
 
 ◊(define undesirable-chapter "undesirable_businesses.html")
 
@@ -84,9 +68,9 @@ So about 420 million do have access to internet while being unbanked. I don't kn
 }
 
 ◊ndef["handelsbanken"]{
-    Here in Sweden I had an interesting encounter with Handelsbanken, one of the largest banks here. I asked if I could get an account there, I wanted to try out their internet bank, but I couldn't get one unless I moved over all my accounts and used them to receive my work payment. Isn't that... insane?
+    Here in Sweden I had an interesting encounter with Handelsbanken, one of the largest banks here. I asked if I could get an account there, I wanted to try out their internet bank, but I couldn't get one unless I moved over all my accounts and used them to receive my salary.
 
-    I did finally get an account there when we took a mortgage there, but I don't use them as my main bank.
+    I did finally get an account there when we took a mortgage with them, but I don't use them as my main bank.
 }
 
 ◊(define venezuela-mining "https://news.bitcoin.com/venezuelan-bitcoin-saves-family/")
@@ -98,12 +82,27 @@ So about 420 million do have access to internet while being unbanked. I don't kn
 
 ◊subhead{What's the problem?}
 
+◊todo{Rewrite all this}
 
-As you might expect it's often the developing countries, with poor access to electricity and internet, that have a high ratio of unbanked adults. And really, if nobody in the country has a bank account---it probably doesn't matter that much.
+One of the best ways to fight poverty is economic growth. Ability to make digital payments is a cornerstone for inclusion into the ever-more digitalized world.
 
-China (224 million), India (191 million) Mexico (58 million), USA (18 million), France (3 million)
+◊qt{
+    The benefits from financial inclusion can be wide ranging. For example, studies have shown that mobile money services--- which allow users to store and transfer funds through a mobile phone---can help improve people’s income earning potential and thus reduce poverty. A study in Kenya found that access to mobile money services delivered big benefits, especially for women. It enabled women-headed households to increase their savings by more than a fifth; allowed 185,000 women to leave farming and develop business or retail activities; and helped reduce extreme poverty among women-headed households by 22 percent.
+}
 
-Nearly half of all unbanked adults live in just seven economies: 
+But the problem isn't exclusive to poor countries. In Sweden for example almost everyone and everything uses digital payments. Some shops don't accept cash anymore (and they talk about it like it's a benefit to us customers) and they prefer to use Swish instead---which unfortunately also requires a bank account.
+
+What happens to the people without credit cards in Sweden? Or perhaps tourists if their card doesn't work? They're luckily few... But they're people too! With the current development they might not even be able to use public bathrooms!◊sn{public-bathroom}
+
+◊ndef["public-bathroom"]{
+    In fact when I last visited a public bathroom in a shopping mall they had a new payment system there. Instead of inserting a coin to get the door open---you guessed it---you had to pay with a credit card or with Swish. I guess the kids, who aren't allowed to have a credit card or Swish yet, can go pee in the corner.
+}
+
+In China mobile payments are growing like mad. If you're a tourist you need to get them, otherwise you'll have a tough time. This in combination with China's ◊em{social credit}, which ranks people's behaviors to make sure they're in line with the party, is a recipe for disaster. If you score badly you might not be allowed to fly and maybe you'll lose the privilege of digital payments.
+
+◊; WeChat is Watching: Living in China with the app that knows everything about me
+◊; https://news.ycombinator.com/item?id=20173549
+
 
 ◊(define findex-report "https://globalfindex.worldbank.org/sites/globalfindex/files/2018-04/2017%20Findex%20full%20report_0.pdf")
 ◊(define findex-interactive "http://datawrapper.dwcdn.net/AmFVU/2/")
