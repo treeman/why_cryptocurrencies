@@ -30,11 +30,14 @@
   (define attrs `((href ,url)))
   (when title
     (set! attrs (cons `(title ,title) attrs)))
-  (if (xref? url)
+  (define (add-class x)
     (set! c (if c
-              (string-append c " xref")
-              "xref"))
+              (string-append c " " x)
+              x)))
+  (if (xref? url)
+    (add-class "xref")
     (unless (valid-iref? url)
+      (add-class "invalid-iref")
       (printf "INVALID IREF '~v'~n" url)))
       ;(error (format "INVALID IREF '~v'~n" url))))
   (when c
