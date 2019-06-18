@@ -5,6 +5,9 @@
 ◊(define-meta updated "2019-06-07T07:38:13+02:00")
 ◊(define-meta uuid "f35cab59-0629-4173-9de0-a07a0eef33dc")
 
+◊; US efforts to jail Assange for espionage are a grave threat to a free media (theguardian.com)
+◊; https://news.ycombinator.com/item?id=20173534
+
 ◊epigraph{
     ◊qt[#:author "WikiLeaks"
         #:url "https://wikileaks.org/wiki/Draft:About"]{
