@@ -1,0 +1,5 @@
+#!/bin/bash
+
+raco pollen reset
+./clean
+./generate

@@ -189,8 +189,8 @@ I will bring up the events surrounding Julian Assange, because they are relevant
 ◊;https://www.lrb.co.uk/v36/n05/andrew-ohagan/ghosting
 
 
-◊(define freezing-chapter "freezing_of_merchant_accounts.html")
-◊(define undesirable-chapter "undesirable_businesses.html")
+◊(define freezing-chapter "/freezing_of_merchant_accounts.html")
+◊(define undesirable-chapter "/undesirable_businesses.html")
 
 
 ◊subhead{Cryptocurrency donations cannot be prevented}

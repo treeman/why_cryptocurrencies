@@ -419,6 +419,7 @@ I see two major reasons:
 
 In our context knowing what makes money perform well helps us reason about cryptocurrencies, and to see if it can live up to it's namesake. But more on that in the ◊link[next-chapter]{next chapter}.
 
+◊(define next-chapter "/are_cryptocurrencies_money.html")
 
 ◊(define sea-shells "https://www.nbbmuseum.be/en/2007/01/cowry-shells.htm")
 ◊(define shells-slaves "https://www.culturesofwestafrica.com/cowrie-shell-monetary-symbolic-value/")
@@ -426,10 +427,9 @@ In our context knowing what makes money perform well helps us reason about crypt
 ◊(define rai-stones "http://www.bbc.com/travel/story/20180502-the-tiny-island-with-human-sized-money")
 ◊(define rai-stones-pictures "https://www.thevintagenews.com/2017/12/28/rai-stones/")
 ◊(define germany-wallpaper "https://mashable.com/2016/07/27/german-hyperinflation/")
-◊(define next-chapter "are_cryptocurrencies_money.html")
 ◊(define prison-stamps "https://www.therichest.com/business/economy/five-surprising-things-prisoners-use-as-currency/")
 ◊(define prison-ramen "https://www.npr.org/sections/thesalt/2016/08/26/491236253/ramen-noodles-are-now-the-prison-currency-of-choice?t=1557205041822")
-◊(define prison-cigarettes "")
+◊(define prison-cigarettes "https://www.cengage.com/economics/tomlinson/transcripts/8520.pdf")
 ◊(define fractional-banking "https://corporatefinanceinstitute.com/resources/knowledge/finance/fractional-banking/")
 ◊(define fractional-banking-atlanta "https://www.frbatlanta.org/education/classroom-economist/fractional-reserve-banking/economists-perspective-transcript")
 ◊(define fractional-banking-bad "https://mises.org/library/faults-fractional-reserve-banking")
