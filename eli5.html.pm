@@ -36,7 +36,7 @@ While cryptocurrencies are mostly seen as speculative assets---get rich quick sc
 
     ◊li{◊strong{Reduced currency manipulation}
 
-        There's no central authority that can increase the supply as they like or invalidate the coins you have.
+        There's no central authority that can increase the supply as they like or invalidate the coins you have. It takes away the power over money from the state and gives it to the people.
     }
 
     ◊li{◊strong{Financial privacy}
