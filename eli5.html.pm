@@ -2,7 +2,7 @@
 
 ◊(define-meta title "Why cryptocurrencies in five minutes")
 ◊(define-meta subtitle "ELI5 - what is the inherent values of cryptocurrencies?")
-◊(define-meta updated "2019-06-16T05:49:19+02:00")
+◊(define-meta updated "2019-06-18T15:05:18+02:00")
 ◊(define-meta uuid "cef34868-0317-4c6f-8b9f-cfb66464f2a8")
 
 While cryptocurrencies are mostly seen as speculative assets---get rich quick schemes---they have valuable properties and valuable use cases. For example:
