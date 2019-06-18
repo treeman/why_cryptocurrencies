@@ -49,8 +49,6 @@ China has gone to extreme lengths to censor these events.  Twitter is censored b
 ◊(define china-censorship "https://en.wikipedia.org/wiki/Censorship_in_China")
 ◊(define great-firewall-of-china "https://www.howtogeek.com/162092/htg-explains-how-the-great-firewall-of-china-works/")
 
-But I think there's a more relevant example for us concerned with uncensorable payments: ◊link[wikileaks]{WikiLeaks}.
-
 
 ◊(define bbc-tiananmen "https://www.bbc.com/news/blogs-china-blog-48455582")
 ◊(define wikipedia-tiananmen "https://en.wikipedia.org/wiki/Tiananmen_Square_protests_of_1989")
@@ -61,87 +59,125 @@ But I think there's a more relevant example for us concerned with uncensorable p
 ◊(define charity-water "https://www.charitywater.org/")
 
 
-◊subhead{The story of WikiLeaks}
+◊subhead{A short history of WikiLeaks}
 
-◊h3{Beginning}
+◊link[wikileaks]{WikiLeaks} is a very relevant example for us concerned with uncensorable payments. This is ◊strong{not} a glorification of WikiLeaks, in fact they have done some ◊link[wikileaks-immoral]{immoral things} like endangering individuals via their leaks. Instead it's an example of how exposing government atrocities can lead to your donations being censored---nothing more and nothing less.
 
-Oct 4, 2006
+I will bring up the events surrounding Julian Assange, because they are relevant to the story of government abuse, but it's not about him or any other person in particular. Even if Julian Assange is guilty of rape it does not change the importance of WikiLeaks as a concept, which goes above individuals.◊sn{association-fallacy}
 
-◊; https://www.technologyreview.com/s/421949/everything-you-need-to-know-about-wikileaks/
-◊; https://medium.com/@joshuashawnmichaelhehe/a-history-of-wikileaks-9332028f37fd
-
-
-◊h3{The Chelsea Manning leaks}
-
-October 22nd, 2010
-
-◊ol{
-    ◊li{Helicopter attack}
-    ◊li{US avoided UK cluster bomb ban}
-    ◊li{Abu Omar abduction}
-    ◊li{Executions of civilians, an infant and an elderly}
-    ◊li{Iraq civilian death toll}
-    ◊li{The Arab Spring (skip?)}
-    ◊li{Saudi urged US to attack Iran (skip?)}
-}
-
-◊; Helicopter attack
-◊; https://www.youtube.com/watch?v=-Hx-jA2m_hY
-
-◊; https://www.middleeasteye.net/news/chelsea-manning-seven-leaks-rocked-middle-east
-
-
-◊h3{Sexual assault allegations against Julian Assange}
-
-Nov, 2010
-
-
-◊h3{PayPal freezes WikiLeaks donations}
-
-Dec 4, 2010
-
-◊;https://wikileaks.org/PayPal-freezes-WikiLeaks-donations.html
-◊;https://www.wired.com/2010/12/paypal-wikileaks/
-
-◊; The banking blockade against WikiLeaks was subsequently found to be illegal in the European courts and most of the companies involved, including PayPal, Visa and MasterCard, have conceded defeat.
-◊;https://wikileaks.org/Protesters-against-WikiLeaks.html
-
-◊qt[#:url "https://wikileaks.org/Protesters-against-WikiLeaks.html"
-    #:author "WikiLeaks"
-    #:date "Nov, 2014"]{
-The banking blockade against WikiLeaks was subsequently found to be illegal in the European courts and most of the companies involved, including PayPal, Visa and MasterCard, have conceded defeat.
+◊ndef["association-fallacy"]{
+    Trying to discredit WikiLeaks by discrediting Assange is ◊em{◊link[association-fallacy]{guilt by association}}, a logical fallacy. It's like saying "Ghandi was a pedophile, therefore everything he did should be disregarded."
 }
 
 
-◊h3{WikiLeaks accepts Bitcoin}
-
-Jun 14, 2011
-
-◊;https://mobile.twitter.com/wikileaks/status/80774521350668288
-◊;https://www.coindesk.com/assange-bitcoin-wikileaks-helped-keep-alive
+◊(define association-fallacy "https://en.wikipedia.org/wiki/Association_fallacy")
+◊(define wikileaks-immoral "https://www.wired.com/2016/07/wikileaks-officially-lost-moral-high-ground/")
 
 
-◊h3{Assange receives asylum from Ecuador}
+◊section[#:class "wikileaks"]{
 
-June, 2012
+◊entry["Beginning"
+        #:date "Oct 4, 2006"]{
+    xyz
 
-
-◊h3{More leaks}
-
-◊; Vault 7
-◊; CIA hacking tools
-◊ol{
-    ◊li{CIA hackers targeted smartphones and computers.}
+    ◊; https://www.technologyreview.com/s/421949/everything-you-need-to-know-about-wikileaks/
+    ◊; https://medium.com/@joshuashawnmichaelhehe/a-history-of-wikileaks-9332028f37fd
 }
-◊;https://wikileaks.org/ciav7p1/#PRESS
 
-◊;release of the Vatican letters.
 
-◊h3{Assange arrested on behalf of the United States authorities}
+◊entry["The Chelsea Manning leaks"
+       #:date "October 22, 2010"]{
 
-April 11, 2019
+    ◊ol{
+        ◊li{Helicopter attack}
+        ◊li{US avoided UK cluster bomb ban}
+        ◊li{Abu Omar abduction}
+        ◊li{Executions of civilians, an infant and an elderly}
+        ◊li{Iraq civilian death toll}
+        ◊li{The Arab Spring (skip?)}
+        ◊li{Saudi urged US to attack Iran (skip?)}
+    }
+
+    ◊; Helicopter attack
+    ◊; https://www.youtube.com/watch?v=-Hx-jA2m_hY
+
+    ◊; https://www.middleeasteye.net/news/chelsea-manning-seven-leaks-rocked-middle-east
+}
+
+
+◊entry["Sexual assault allegations against Julian Assange"
+        #:date "Nov, 2010"]{
+
+}
+
+
+◊entry["PayPal freezes WikiLeaks donations"
+       #:date "Dec 4, 2010"]{
+
+    ◊;https://wikileaks.org/PayPal-freezes-WikiLeaks-donations.html
+    ◊;https://www.wired.com/2010/12/paypal-wikileaks/
+
+    ◊; The banking blockade against WikiLeaks was subsequently found to be illegal in the European courts and most of the companies involved, including PayPal, Visa and MasterCard, have conceded defeat.
+    ◊;https://wikileaks.org/Protesters-against-WikiLeaks.html
+
+    ◊qt[#:url "https://wikileaks.org/Protesters-against-WikiLeaks.html"
+        #:author "WikiLeaks"
+        #:date "Nov, 2014"]{
+    The banking blockade against WikiLeaks was subsequently found to be illegal in the European courts and most of the companies involved, including PayPal, Visa and MasterCard, have conceded defeat.
+    }
+
+}
+
+
+◊entry["WikiLeaks accepts Bitcoin"
+       #:date "Jun 14, 2011"]{
+
+    ◊;https://mobile.twitter.com/wikileaks/status/80774521350668288
+    ◊;https://www.coindesk.com/assange-bitcoin-wikileaks-helped-keep-alive
+
+}
+
+
+◊entry["Assange receives asylum from Ecuador"
+       #:date "June, 2012"]{
+}
+
+
+◊entry["More leaks"]{
+
+    ◊; Vault 7
+    ◊; CIA hacking tools
+    ◊ol{
+        ◊li{CIA hackers targeted smartphones and computers.}
+    }
+    ◊;https://wikileaks.org/ciav7p1/#PRESS
+
+    ◊;release of the Vatican letters.
+
+}
+
+◊entry["Assange arrested on behalf of the United States authorities"
+       #:date "April 11, 2019"]{
 
 ◊;https://www.theguardian.com/media/live/2019/apr/11/wikileaks-founder-julian-assange-arrested-at-the-ecuadorean-embassy-live-updates
+
+
+}
+
+}
+
+
+◊(define (entry title #:date [date #f] . text)
+   (define xdate (if date
+                     `(div ((class "date")) ,date)
+                     ""))
+   `(div ((class "entry"))
+      (div ((class "txt"))
+        (div ((class "header"))
+          (h3 ,title)
+          ,xdate)
+        ,@text)))
+
 
 
 ◊subhead{Hiding the skeleton in the closet}
@@ -152,3 +188,21 @@ April 11, 2019
 
 ◊(define freezing-chapter "freezing_of_merchant_accounts.html")
 ◊(define undesirable-chapter "undesirable_businesses.html")
+
+
+◊subhead{Cryptocurrency donations cannot be prevented}
+
+While the US government was able to coerce payment processors to drop WikiLeaks (temporarily) they could never prevent Bitcoin donations. The best they can do is try to stop WikiLeaks from exchanging to fiat by coercing exchanges instead. But that's easier to work around, for example by selling bitcoins in person for cash or by avoiding fiat altogether.◊sn{hosting}
+
+◊ndef["hosting"]{
+    It's easy to pay for web hosting using only cryptocurrencies for example.
+}
+
+Even China, with the world's largest internet censorship, cannot censor cryptocurrency transactions. Even if they took control of a majority of Bitcoin's hashrate (most mining is currently located in China) and used that power to censor certain addresses, that would create ◊link[forks]{two separate coins} and WikiLeaks could continue using the other one.◊sn{contentious} Or WikiLeaks could use another cryptocurrency entirely, one with hashrate outside of China or one where miners can't tell where the transactions are going.
+
+◊ndef["contentious"]{
+    If China were to take over the Bitcoin network most probably the community would recognize it as an attack and agree to move on with new rules which neutralize the attack. This is absolutely the worst attack possible against a cryptocurrency, called a ◊em{51% attack}.
+}
+
+◊(define forks "/how_do_cryptocurrencies_work.html#network-upgrades-and-new-cryptocurrencies")
+

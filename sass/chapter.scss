@@ -580,6 +580,28 @@ table.crypto-eval {
     }
 }
 
+.wikileaks .entry {
+    width: 100%;
+    margin-bottom: 1em;
+    //display: flex;
+
+    .txt {
+        //margin: 0 0.5em;
+    }
+    h3 {
+        margin-top: 0;
+    }
+    .header {
+        font-size: 1.1rem;
+        @extend %sans-serif;
+        line-height: 1;
+        display: flex;
+    }
+    .date {
+        margin-left: 0.5rem;
+    }
+}
+
 @media only screen and (min-width: 521px) {
     .money-examples .example:nth-child(even) {
         justify-content: space-between;
