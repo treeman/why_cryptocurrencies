@@ -79,83 +79,99 @@ I will bring up the events surrounding Julian Assange, because they are relevant
 
 ◊section[#:class "wikileaks"]{
 
-◊entry["Beginning"
-        #:date "Oct 4, 2006"]{
+  ◊entry["Beginning"
+          #:date "Oct 4, 2006"]{
     xyz
 
     ◊; https://www.technologyreview.com/s/421949/everything-you-need-to-know-about-wikileaks/
     ◊; https://medium.com/@joshuashawnmichaelhehe/a-history-of-wikileaks-9332028f37fd
-}
+  }
 
 
-◊entry["The Chelsea Manning leaks"
-       #:date "October 22, 2010"]{
+  ◊entry["The Chelsea Manning leaks"
+         #:date "October 22, 2010"]{
 
     First I must caution you. It's very easy to become numb when you read about what I will write about. The sheer amount of horror is enough to overwhelm you and might cause your brain to suppress your emotions, maybe out of self-defense. But try to remember that this happened to real people, it's not just a mass of text and numbers. Don't relegate this as just another statistic.
 
     Chelsea Manning (formerly Bradley Manning) is a former soldier of the United States who provided WikiLeaks with nearly 750,000 military and diplomatic documents. Some of the content was absolutely shocking and caused global outrage, I've tried to pick out some of the most important ones:
 
-    ◊strong{◊link[collateral-murder-wikileaks]{Collateral murder}}
-
-    WikiLeaks uploaded a video of a Baghdad helicopter attack in July 12, 2007 with the title "Collateral murder". It's a video of how an attack helicopter kills a dozen people, including two Reuters news staff.
-
-    Here are some ◊link[collateral-murder-transcripts]{transcripts} of the ◊link[collateral-murder-full]{full video} (although at 2019-06-19 the timestamps are slightly off, I've tried to match them up better):
-
-    (+24 sec delay or something?)
-
-    ◊qt{
-        02:10 	He's got an RPG [Rocket Propelled Grenade]?
-        02:11 	All right, we got a guy with an RPG.
-    }
-
-    Except now we know it's not an RPG but a camera held by a Reuters journalist.
-
-    ◊qt{
-        03:23 All right, hahaha, I hit [shot] 'em...
-
-        ...
-
-        04:31 	Oh, yeah, look at those dead bastards.
-        04:36 	Nice.
-    }
-
-    ◊qt{
-        06:33 	Come on, buddy.
-        06:38 	All you gotta do is pick up a weapon.
-    }
-
-    They're looking at an injured person crawling on the ground wanting him to pick up a weapon, so they're allowed to kill him.
-
-    ◊qt{
-        07:36 	Picking up the wounded?
-        07:38 	Yeah, we're trying to get permission to engage.
-        07:41 	Come on, let us shoot!
-    }
-
-    Then a van enters the scene and they're rushing in to help the wounded. But now the rules aren't that important anymore---they want to shoot!
-
-    ◊qt{
-        10:11 	Oh yeah, look at that. Right through the windshield!
-        10:14 	Ha ha!
-        10:16 	All right. There were uh approximately four to five individuals in that truck, so I'm counting about twelve to fifteen.
-    }
-
-    There were two children behind that windshield who got seriously injured. Their father was killed for trying to help the wounded on the street.
-
-
-
-    ◊; https://www.theguardian.com/world/2010/apr/05/wikileaks-us-army-iraq-attack
-
-    When Reuters tried to get answers for how their reporters died the U.S. military claimed they didn't know how they got killed, and that all dead were insurgents. They also didn't know how the children got injured. This despite them having the same video footage, so of course they were trying to cover it up.
-
-    Afterwards the military investigated the issue and concluded that the actions of the soldiers where in accordance with the law of armed conflict and its own "Rules of Engagement".
-
     ◊ol{
-        ◊li{Helicopter attack}
-        ◊li{US avoided UK cluster bomb ban}
-        ◊li{Abu Omar abduction}
-        ◊li{Executions of civilians, an infant and an elderly}
-        ◊li{Iraq civilian death toll}
+      ◊leak["Collateral murder" #:url collateral-murder-wikileaks]{
+
+        WikiLeaks uploaded a video of a Baghdad helicopter attack in July 12, 2007 with the title "Collateral murder". It's a video of how an attack helicopter kills a dozen (innocent) people, including two Reuters news staff.
+
+        Here are some ◊link[collateral-murder-transcripts]{transcripts} of the ◊link[collateral-murder-full]{full video} (although at 2019-06-19 the timestamps are slightly off, I've tried to match them up better):
+
+        ◊todo{+24 sec delay or something?}
+
+        ◊div[#:class "transcript-wrapper"]{
+
+          ◊transcript{
+              02:10  He's got an RPG [Rocket Propelled Grenade]?
+              02:11  All right, we got a guy with an RPG.
+          }
+
+          Except now we know it's not an RPG but a camera held by a Reuters journalist.
+
+          ◊transcript{
+              03:23  All right, hahaha, I hit [shot] 'em...
+              ...
+              04:31  Oh, yeah, look at those dead bastards.
+              04:36  Nice.
+              ...
+              06:33  Come on, buddy.
+              06:38  All you gotta do is pick up a weapon.
+          }
+
+          After killing a bunch of people they're looking at an injured person crawling on the ground wanting him to pick up a weapon---so they're allowed to kill him.
+
+          ◊transcript{
+              07:36  Picking up the wounded?
+              07:38  Yeah, we're trying to get permission to engage.
+              07:41  Come on, let us shoot!
+          }
+
+          Then a van enters the scene and they're rushing in to help the wounded. But now the rules aren't that important anymore---they want to shoot!
+
+          ◊transcript{
+              10:11  Oh yeah, look at that. Right through the windshield!
+              10:14  Ha ha!
+              10:16  All right. There were uh approximately four to five individuals in that truck, so I'm counting about twelve to fifteen.
+          }
+
+          There were two children behind that windshield who got seriously injured. Their father was killed for trying to help the wounded on the street.
+
+        }
+
+
+
+        ◊; https://www.theguardian.com/world/2010/apr/05/wikileaks-us-army-iraq-attack
+
+        When Reuters tried to get answers for how their reporters died the U.S. military claimed they didn't know how they got killed, and that all dead were insurgents. They also didn't know how the children got injured, despite them having the video footage.
+
+        Afterwards the military investigated the issue and concluded that the actions of the soldiers where in accordance with the law of armed conflict and its own "Rules of Engagement".
+      }
+
+      ◊leak["US avoided UK cluster bomb ban"]{
+
+        Clusterbombs
+      }
+      ◊leak["Abu Omar abduction"]{
+      }
+      ◊leak["Execution of children"
+            #:url "https://www.mcclatchydc.com/news/special-reports/article24696685.html"]{
+
+        In 2006, a group of U.S. soldiers entered a house in Iraq where they executed at least 10 civilians. This included an infant and four other children---all five years or younger---and elderly women. They then called in an airstrike to cover up the evidence, but postmortems showed they had been handcuffed and shot in the head.
+
+        We're quick to call them terrorists, but viewed from another angle the U.S. soldiers are the terrorists. Just imagine if foreign soldiers would come to your house and handcuff your mother, your wife and your little baby girl... And execute them?
+
+        ◊qt[#:author "Unknown"]{
+            One man's terrorist is another man's freedom fighter
+        }
+      }
+      ◊leak["Iraq civilian death toll"]{
+      }
+
     }
 
     ◊; Helicopter attack
@@ -167,17 +183,17 @@ I will bring up the events surrounding Julian Assange, because they are relevant
 
     ◊; https://www.middleeasteye.net/news/chelsea-manning-seven-leaks-rocked-middle-east
 
-}
+  }
 
 
-◊entry["Sexual assault allegations against Julian Assange"
-        #:date "Nov, 2010"]{
+  ◊entry["Sexual assault allegations against Julian Assange"
+          #:date "Nov, 2010"]{
 
-}
+  }
 
 
-◊entry["PayPal freezes WikiLeaks donations"
-       #:date "Dec 4, 2010"]{
+  ◊entry["PayPal freezes WikiLeaks donations"
+         #:date "Dec 4, 2010"]{
 
     ◊;https://wikileaks.org/PayPal-freezes-WikiLeaks-donations.html
     ◊;https://www.wired.com/2010/12/paypal-wikileaks/
@@ -191,29 +207,29 @@ I will bring up the events surrounding Julian Assange, because they are relevant
     The banking blockade against WikiLeaks was subsequently found to be illegal in the European courts and most of the companies involved, including PayPal, Visa and MasterCard, have conceded defeat.
     }
 
-}
+  }
 
 
-◊entry["WikiLeaks accepts Bitcoin"
-       #:date "Jun 14, 2011"]{
+  ◊entry["WikiLeaks accepts Bitcoin"
+         #:date "Jun 14, 2011"]{
 
     ◊;https://mobile.twitter.com/wikileaks/status/80774521350668288
     ◊;https://www.coindesk.com/assange-bitcoin-wikileaks-helped-keep-alive
 
-}
+  }
 
 
-◊entry["Assange receives asylum from Ecuador"
-       #:date "June, 2012"]{
-}
+  ◊entry["Assange receives asylum from Ecuador"
+         #:date "June, 2012"]{
+  }
 
 
-◊entry["Chelsea Manning court-martial"
-       #:date "July, 2013"]{
-}
+  ◊entry["Chelsea Manning court-martial"
+         #:date "July, 2013"]{
+  }
 
 
-◊entry["More leaks"]{
+  ◊entry["More leaks"]{
 
     ◊; Vault 7
     ◊; CIA hacking tools
@@ -224,17 +240,17 @@ I will bring up the events surrounding Julian Assange, because they are relevant
 
     ◊;release of the Vatican letters.
 
-}
+  }
 
-◊entry["Assange arrested on behalf of the United States authorities"
-       #:date "April 11, 2019"]{
+  ◊entry["Assange arrested on behalf of the United States authorities"
+         #:date "April 11, 2019"]{
 
     Chelsea Manning was also jailed again for her refusal to testify against Julian Assange.
 
 ◊;https://www.theguardian.com/media/live/2019/apr/11/wikileaks-founder-julian-assange-arrested-at-the-ecuadorean-embassy-live-updates
 
 
-}
+  }
 
 }
 
@@ -249,6 +265,25 @@ I will bring up the events surrounding Julian Assange, because they are relevant
           (h3 ,title)
           ,xdate)
         ,@text)))
+
+◊(define (leak title #:url [url #f] . text)
+   (define xtitle (if url
+                      (link url title)
+                      title))
+   `(li ((class "leak"))
+      (div [[class "title"]] ,xtitle)
+      ,@text))
+
+◊(define (transcript . rows)
+   (define (make-row row)
+     (if (string=? row "\n")
+       ""
+       (let ((cols (string-split row "  ")))
+         `(div ((class "row"))
+            (span ((class "time")) ,(car cols))
+            (span ((class "txt")) ,@(cdr cols))))))
+   `(div ((class "transcript"))
+      ,@(map make-row rows)))
 
 ◊(define collateral-murder-wikileaks "https://collateralmurder.wikileaks.org/")
 ◊(define collateral-murder-17 "https://www.youtube.com/watch?time_continue=1&v=5rXPrfnU3G0")
