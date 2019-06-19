@@ -91,20 +91,82 @@ I will bring up the events surrounding Julian Assange, because they are relevant
 ◊entry["The Chelsea Manning leaks"
        #:date "October 22, 2010"]{
 
+    First I must caution you. It's very easy to become numb when you read about what I will write about. The sheer amount of horror is enough to overwhelm you and might cause your brain to suppress your emotions, maybe out of self-defense. But try to remember that this happened to real people, it's not just a mass of text and numbers. Don't relegate this as just another statistic.
+
+    Chelsea Manning (formerly Bradley Manning) is a former soldier of the United States who provided WikiLeaks with nearly 750,000 military and diplomatic documents. Some of the content was absolutely shocking and caused global outrage, I've tried to pick out some of the most important ones:
+
+    ◊strong{◊link[collateral-murder-wikileaks]{Collateral murder}}
+
+    WikiLeaks uploaded a video of a Baghdad helicopter attack in July 12, 2007 with the title "Collateral murder". It's a video of how an attack helicopter kills a dozen people, including two Reuters news staff.
+
+    Here are some ◊link[collateral-murder-transcripts]{transcripts} of the ◊link[collateral-murder-full]{full video} (although at 2019-06-19 the timestamps are slightly off, I've tried to match them up better):
+
+    (+24 sec delay or something?)
+
+    ◊qt{
+        02:10 	He's got an RPG [Rocket Propelled Grenade]?
+        02:11 	All right, we got a guy with an RPG.
+    }
+
+    Except now we know it's not an RPG but a camera held by a Reuters journalist.
+
+    ◊qt{
+        03:23 All right, hahaha, I hit [shot] 'em...
+
+        ...
+
+        04:31 	Oh, yeah, look at those dead bastards.
+        04:36 	Nice.
+    }
+
+    ◊qt{
+        06:33 	Come on, buddy.
+        06:38 	All you gotta do is pick up a weapon.
+    }
+
+    They're looking at an injured person crawling on the ground wanting him to pick up a weapon, so they're allowed to kill him.
+
+    ◊qt{
+        07:36 	Picking up the wounded?
+        07:38 	Yeah, we're trying to get permission to engage.
+        07:41 	Come on, let us shoot!
+    }
+
+    Then a van enters the scene and they're rushing in to help the wounded. But now the rules aren't that important anymore---they want to shoot!
+
+    ◊qt{
+        10:11 	Oh yeah, look at that. Right through the windshield!
+        10:14 	Ha ha!
+        10:16 	All right. There were uh approximately four to five individuals in that truck, so I'm counting about twelve to fifteen.
+    }
+
+    There were two children behind that windshield who got seriously injured. Their father was killed for trying to help the wounded on the street.
+
+
+
+    ◊; https://www.theguardian.com/world/2010/apr/05/wikileaks-us-army-iraq-attack
+
+    When Reuters tried to get answers for how their reporters died the U.S. military claimed they didn't know how they got killed, and that all dead were insurgents. They also didn't know how the children got injured. This despite them having the same video footage, so of course they were trying to cover it up.
+
+    Afterwards the military investigated the issue and concluded that the actions of the soldiers where in accordance with the law of armed conflict and its own "Rules of Engagement".
+
     ◊ol{
         ◊li{Helicopter attack}
         ◊li{US avoided UK cluster bomb ban}
         ◊li{Abu Omar abduction}
         ◊li{Executions of civilians, an infant and an elderly}
         ◊li{Iraq civilian death toll}
-        ◊li{The Arab Spring (skip?)}
-        ◊li{Saudi urged US to attack Iran (skip?)}
     }
 
     ◊; Helicopter attack
     ◊; https://www.youtube.com/watch?v=-Hx-jA2m_hY
+    ◊; 17 min version:
+    ◊; https://www.youtube.com/watch?time_continue=1&v=5rXPrfnU3G0
+    ◊; Full version:
+    ◊; https://www.youtube.com/watch?time_continue=820&v=is9sxRfU-ik
 
     ◊; https://www.middleeasteye.net/news/chelsea-manning-seven-leaks-rocked-middle-east
+
 }
 
 
@@ -146,6 +208,11 @@ I will bring up the events surrounding Julian Assange, because they are relevant
 }
 
 
+◊entry["Chelsea Manning court-martial"
+       #:date "July, 2013"]{
+}
+
+
 ◊entry["More leaks"]{
 
     ◊; Vault 7
@@ -161,6 +228,8 @@ I will bring up the events surrounding Julian Assange, because they are relevant
 
 ◊entry["Assange arrested on behalf of the United States authorities"
        #:date "April 11, 2019"]{
+
+    Chelsea Manning was also jailed again for her refusal to testify against Julian Assange.
 
 ◊;https://www.theguardian.com/media/live/2019/apr/11/wikileaks-founder-julian-assange-arrested-at-the-ecuadorean-embassy-live-updates
 
@@ -181,6 +250,10 @@ I will bring up the events surrounding Julian Assange, because they are relevant
           ,xdate)
         ,@text)))
 
+◊(define collateral-murder-wikileaks "https://collateralmurder.wikileaks.org/")
+◊(define collateral-murder-17 "https://www.youtube.com/watch?time_continue=1&v=5rXPrfnU3G0")
+◊(define collateral-murder-full "https://www.youtube.com/watch?time_continue=820&v=is9sxRfU-ik")
+◊(define collateral-murder-transcripts "https://collateralmurder.wikileaks.org/en/transcript.html")
 
 
 ◊subhead{Hiding the skeleton in the closet}
