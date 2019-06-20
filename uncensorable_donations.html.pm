@@ -168,7 +168,7 @@ I will bring up the events surrounding Julian Assange, because they are relevant
 
         In 2006, a group of U.S. soldiers entered a house in Iraq where they executed at least 10 people (9 civilians). This included an infant and four other children---all five years or younger---and elderly women. They then called in an airstrike to cover up the evidence, but postmortems showed they had been handcuffed and shot in the head.
 
-        We're quick to call them terrorists, but viewed from another angle the U.S. soldiers are the terrorists. Just imagine if foreign soldiers came to your house and execute your mother, your wife and your 6 months baby...
+        We're quick to call them terrorists, but viewed from another angle the U.S. soldiers are the terrorists. Just imagine if foreign soldiers came to your house and executed your mother, your wife and your 6 months baby...
 
         ◊; Better link?
         ◊; http://alexanderhiggins.com/wikileaks-cable-suggests-the-us-executed-handcuffed-women-and-children-under-5-including-an-infant/
@@ -177,7 +177,7 @@ I will bring up the events surrounding Julian Assange, because they are relevant
             One man's terrorist is another man's freedom fighter
         }
 
-        The soldiers were cleared of any wrongdoing by the U.S military.
+        The soldiers were cleared of any wrongdoing by the U.S military, after they initially denied the events.
       }
 
       ◊leak["Numbers of civilian deaths in Iraq"]{
@@ -191,7 +191,7 @@ I will bring up the events surrounding Julian Assange, because they are relevant
 
     Now I don't know about you, but I feel really bad reading these. Countless of civilians killed---while soldiers are laughing---and systematic cover-ups to hide it all.
 
-    To me Chelsea Manning is a hero for bringing this to light. Yet how was she thanked? Like all whistleblowers she was made an example of: she was court-martialed and imprisoned between 2010 until 2017 when her sentence was commuted.
+    To me Chelsea Manning is a hero for bringing this to light. Yet how was she thanked? Like all whistleblowers she was made an example of: she was court-martialed, sentenced to 35 years and imprisoned.
 
 
 
@@ -220,7 +220,7 @@ I will bring up the events surrounding Julian Assange, because they are relevant
 
     In the next development ◊link[paypal-freezes-wikileaks]{PayPal freezes WikiLeaks donations} with the reason "our payment service cannot be used for any activities that encourage, promote, facilitate or instruct others to engage in illegal activity."
 
-    Even if you don't like conspiracy theories, it's not a stretch to say the U.S. government put pressure on PayPal in their efforts to shut down WikiLeaks.
+    Even if you don't like conspiracy theories, it's not a stretch to say the U.S. government put pressure on PayPal in their effort to shut down WikiLeaks.
 
     ◊;https://wikileaks.org/PayPal-freezes-WikiLeaks-donations.html
     ◊;https://www.wired.com/2010/12/paypal-wikileaks/
@@ -243,6 +243,36 @@ I will bring up the events surrounding Julian Assange, because they are relevant
   ◊entry["WikiLeaks accepts Bitcoin"
          #:date "Jun 14, 2011"]{
 
+    After being shunned by banks and payment processors WikiLeaks turned to Bitcoin, because nobody---not even the U.S. government---can block Bitcoin transactions.
+
+    Why did it take over a year before WikiLeaks started accepting Bitcoin? Satoshi made this appeal in the de-facto discussion forum at the time:
+
+    ◊qt[#:author "Satoshi"
+        #:url "http://archive.fo/Gvonb#msg26999"
+        #:date "Dec 5, 2010"]{
+        ◊qt{
+            Basically, bring it on.  Let's encourage Wikileaks to use Bitcoins and I'm willing to face any risk or fallout from that act.
+        }
+
+        No, don't "bring it on".
+
+        The project needs to grow gradually so the software can be strengthened along the way.
+
+        I make this appeal to WikiLeaks not to try to use Bitcoin.  Bitcoin is a small beta community in its infancy.  You would not stand to get more than pocket change, and the heat you would bring would likely destroy us at this stage.
+    }
+
+    Which ◊link[assange-bitcoin-ama-msg]{Assange writes} as the reason they put off introducing Bitcoin donations.
+
+    ◊;https://www.reddit.com/r/technology/comments/2ghp54/i_am_julian_assange_ama_about_my_new_book_when/ckjcmyw/
+
+    ◊;This was 6 days before Satoshi vanished from the community.
+
+    ◊;◊qt[#:author "Satoshi"
+        ◊;#:url "https://archive.fo/2acvG#msg29280"
+        ◊;#:date "Dec 11, 2010"]{
+        ◊;It would have been nice to get this attention in any other context.  WikiLeaks has kicked the hornet's nest, and the swarm is headed towards us.
+    ◊;}
+
     ◊;https://mobile.twitter.com/wikileaks/status/80774521350668288
     ◊;https://www.coindesk.com/assange-bitcoin-wikileaks-helped-keep-alive
     ◊; Actual source of Assange talking about bitcoin:
@@ -253,11 +283,6 @@ I will bring up the events surrounding Julian Assange, because they are relevant
 
   ◊entry["Assange receives asylum from Ecuador"
          #:date "June, 2012"]{
-  }
-
-
-  ◊entry["Chelsea Manning court-martial"
-         #:date "July, 2013"]{
   }
 
 
@@ -274,8 +299,19 @@ I will bring up the events surrounding Julian Assange, because they are relevant
 
   }
 
+
+  ◊entry["Chelsea Manning's sentence is commuted"
+         #:date "Jan 17, 2017"]{
+
+    President Barack Obama ◊link[manning-commutes]{commutes Chelsea Manning's prison sentence}. Important to note is that it only reduces her sentence, it doesn't change the fact that she was convicted.◊sn{pardon} She spent almost 7 years of her original 35 year sentence in prison.
+
+    ◊ndef["pardon"]{
+        In contrast a ◊em{pardon} would completely absolve her of any wrongdoing.
+    }
+  }
+
   ◊entry["Assange arrested on behalf of the United States authorities"
-         #:date "April 11, 2019"]{
+         #:date "April, 2019"]{
 
     Chelsea Manning was also jailed again for her refusal to testify against Julian Assange.
 
@@ -292,10 +328,10 @@ I will bring up the events surrounding Julian Assange, because they are relevant
                      `(div ((class "date")) ,date)
                      ""))
    `(div ((class "entry"))
+      (div ((class "header"))
+        (h3 ,title)
+        ,xdate)
       (div ((class "txt"))
-        (div ((class "header"))
-          (h3 ,title)
-          ,xdate)
         ,@text)))
 
 ◊(define (leak title #:url [url #f] . text)
@@ -324,6 +360,8 @@ I will bring up the events surrounding Julian Assange, because they are relevant
 
 ◊(define paypal-freezes-wikileaks "https://wikileaks.org/PayPal-freezes-WikiLeaks-donations.html")
 ◊(define banking-blockade "https://wikileaks.org/Banking-Blockade.html")
+◊(define assange-bitcoin-ama-msg "https://www.reddit.com/r/technology/comments/2ghp54/i_am_julian_assange_ama_about_my_new_book_when/ckjcmyw/")
+◊(define manning-commutes "https://www.nytimes.com/2017/01/17/us/politics/obama-commutes-bulk-of-chelsea-mannings-sentence.html")
 
 
 ◊subhead{Hiding the skeleton in the closet}
@@ -338,7 +376,7 @@ I will bring up the events surrounding Julian Assange, because they are relevant
 
 ◊subhead{Cryptocurrency donations cannot be prevented}
 
-While the US government was able to coerce payment processors to drop WikiLeaks (temporarily) they could never prevent Bitcoin donations. The best they can do is try to stop WikiLeaks from exchanging to fiat by coercing exchanges instead. But that's easier to work around, for example by selling bitcoins in person for cash or by avoiding fiat altogether.◊sn{hosting}
+While the US government was able to coerce payment processors and banks to drop WikiLeaks (temporarily) they could never prevent Bitcoin donations. The best they can do is try to stop WikiLeaks from exchanging to fiat by coercing exchanges instead. But that's easier to work around, for example by selling bitcoins in person for cash or by avoiding fiat altogether.◊sn{hosting}
 
 ◊ndef["hosting"]{
     It's easy to pay for web hosting using only cryptocurrencies for example.

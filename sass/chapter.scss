@@ -592,13 +592,13 @@ table.crypto-eval {
     h3 {
         margin-top: 0;
     }
-    .header {
+    > .header {
         font-size: 1.1rem;
         @extend %sans-serif;
         line-height: 1;
         display: flex;
     }
-    .date {
+    > .header > .date {
         margin-left: 0.5rem;
     }
 }

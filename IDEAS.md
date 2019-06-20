@@ -12,6 +12,10 @@ Give a man a gun and he can rob a bank, but give a man a bank, and he can rob th
 “Fear is the mind-killer.”
 ― Frank Herbert , Dune 
 
+"Bitcoin is an extremely important innovation, but not in the way most people think. Bitcoin's real innovation is a globally verifiable proof publishing at a certain time. The whole system is built on that concept and many other systems can also be built on it. The blockchain nails down history, breaking Orwell's dictum of "He who controls the present controls the past and he who controls the past controls the future."
+- Julian Assange
+In the thread: <https://www.reddit.com/r/technology/comments/2ghp54/i_am_julian_assange_ama_about_my_new_book_when/>
+
 # Better digital payments
 
 
