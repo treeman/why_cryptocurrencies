@@ -93,7 +93,18 @@ I will bring up the events surrounding Julian Assange, because they are relevant
 
     First I must caution you. It's very easy to become numb when you read about what I will write about. The sheer amount of horror is enough to overwhelm you and might cause your brain to suppress your emotions, maybe out of self-defense. But try to remember that this happened to real people, it's not just a mass of text and numbers. Don't relegate this as just another statistic.
 
-    Chelsea Manning (formerly Bradley Manning) is a former soldier of the United States who provided WikiLeaks with nearly 750,000 military and diplomatic documents. Some of the content was absolutely shocking and caused global outrage, I've tried to pick out some notable leaks:
+    Chelsea Manning (formerly Bradley Manning) is a former soldier of the United States who provided WikiLeaks with nearly 750,000 military and diplomatic documents. Some of the content was absolutely shocking and caused global outrage, I've tried to pick out some notable leaks◊sn{more-leaks}:
+
+    ◊ndef["more-leaks"]{
+        It's hard to do justice as there are ◊strong{many} more leaks, I find it overwhelming. See for example:
+
+        1. U.S. avoided the U.K. cluster bomb ban
+        ◊; https://www.theguardian.com/world/2010/dec/01/wikileaks-cables-cluster-bombs-britain
+        2. Abu Omar abduction
+        ◊; https://www.spiegel.de/international/europe/cia-rendition-case-us-pressured-italy-to-influence-judiciary-a-735268.html
+        3. The Arab Spring
+        4. Saudi urged U.S. to attack Iran
+    }
 
     ◊ol{
       ◊leak["Collateral murder" #:url collateral-murder-wikileaks]{
@@ -169,16 +180,6 @@ I will bring up the events surrounding Julian Assange, because they are relevant
         The soldiers were cleared of any wrongdoing by the U.S military.
       }
 
-      ◊leak["US avoided UK cluster bomb ban"]{
-
-        Clusterbombs
-
-        ◊; https://www.theguardian.com/world/2010/dec/01/wikileaks-cables-cluster-bombs-britain
-      }
-      ◊leak["Abu Omar abduction"]{
-
-        ◊; https://www.spiegel.de/international/europe/cia-rendition-case-us-pressured-italy-to-influence-judiciary-a-735268.html
-      }
       ◊leak["Numbers of civilian deaths in Iraq"]{
 
         While U.S. officials had previously said no logs existed of civilian deaths in Iraq leaked cables told another story. 66,081 civilian deaths had been logged out of a total of 109,000 deaths between 2004 and 2009, a horrifyingly bad ratio. 66 thousand innocent people died in those five years, that's like 22 World Trade center attacks (where 2,977 people died).
