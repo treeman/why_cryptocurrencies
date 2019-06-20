@@ -107,11 +107,9 @@ $list-p-margin: 0.6em;
         //content: "†";
         color: $body-list-sym-color;
     }
-    ul > li, ol > li {
+    ul > li > p:first-child, ol > li > p:first-child {
         // To avoid li signifier on a line of it's own
-        p:first-child {
-            margin-top: $first-list-offset;
-        }
+        margin-top: $first-list-offset;
     }
     ul > li::before, ol > li::before {
         // Avoid floats here as sidenotes may interfere
@@ -615,26 +613,24 @@ table.crypto-eval {
     }
 
     .transcript {
-        margin: 1rem;
-        margin-left: 2rem;
+        margin: 1rem 0;
+        padding-left: 1rem;
+        //margin: 1rem;
+        //margin-left: 2rem;
         //padding: 0.3rem 0;
         //border-top: 1px dashed $body-hr-color;
         //border-bottom: 1px dashed $body-hr-color;
         font-size: 95%;
         line-height: 1.4;
-    }
-
-    // Workaround, nothing happens with margins.
-    blockquote {
-        padding: 2em;
+        border-left: 1px solid $body-hr-color;
     }
 }
 
 .wikileaks .transcript-wrapper {
     margin: 1.5em 0;
     //margin-left: 1em;
-    border-top: 1px solid $body-hr-color;
-    border-bottom: 1px solid $body-hr-color;
+    border-top: 1px dashed $body-hr-color;
+    border-bottom: 1px dashed $body-hr-color;
 }
 
 

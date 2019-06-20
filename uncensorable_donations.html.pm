@@ -93,7 +93,7 @@ I will bring up the events surrounding Julian Assange, because they are relevant
 
     First I must caution you. It's very easy to become numb when you read about what I will write about. The sheer amount of horror is enough to overwhelm you and might cause your brain to suppress your emotions, maybe out of self-defense. But try to remember that this happened to real people, it's not just a mass of text and numbers. Don't relegate this as just another statistic.
 
-    Chelsea Manning (formerly Bradley Manning) is a former soldier of the United States who provided WikiLeaks with nearly 750,000 military and diplomatic documents. Some of the content was absolutely shocking and caused global outrage, I've tried to pick out some of the most important ones:
+    Chelsea Manning (formerly Bradley Manning) is a former soldier of the United States who provided WikiLeaks with nearly 750,000 military and diplomatic documents. Some of the content was absolutely shocking and caused global outrage, I've tried to pick out some notable leaks:
 
     ◊ol{
       ◊leak["Collateral murder" #:url collateral-murder-wikileaks]{
@@ -152,27 +152,48 @@ I will bring up the events surrounding Julian Assange, because they are relevant
         Afterwards the military investigated the issue and concluded that the actions of the soldiers where in accordance with the law of armed conflict and its own "Rules of Engagement".
       }
 
-      ◊leak["US avoided UK cluster bomb ban"]{
-
-        Clusterbombs
-      }
-      ◊leak["Abu Omar abduction"]{
-      }
       ◊leak["Execution of children"
             #:url "https://www.mcclatchydc.com/news/special-reports/article24696685.html"]{
 
-        In 2006, a group of U.S. soldiers entered a house in Iraq where they executed at least 10 civilians. This included an infant and four other children---all five years or younger---and elderly women. They then called in an airstrike to cover up the evidence, but postmortems showed they had been handcuffed and shot in the head.
+        In 2006, a group of U.S. soldiers entered a house in Iraq where they executed at least 10 people (9 civilians). This included an infant and four other children---all five years or younger---and elderly women. They then called in an airstrike to cover up the evidence, but postmortems showed they had been handcuffed and shot in the head.
 
-        We're quick to call them terrorists, but viewed from another angle the U.S. soldiers are the terrorists. Just imagine if foreign soldiers would come to your house and handcuff your mother, your wife and your little baby girl... And execute them?
+        We're quick to call them terrorists, but viewed from another angle the U.S. soldiers are the terrorists. Just imagine if foreign soldiers came to your house and execute your mother, your wife and your 6 months baby...
+
+        ◊; Better link?
+        ◊; http://alexanderhiggins.com/wikileaks-cable-suggests-the-us-executed-handcuffed-women-and-children-under-5-including-an-infant/
 
         ◊qt[#:author "Unknown"]{
             One man's terrorist is another man's freedom fighter
         }
+
+        The soldiers were cleared of any wrongdoing by the U.S military.
       }
-      ◊leak["Iraq civilian death toll"]{
+
+      ◊leak["US avoided UK cluster bomb ban"]{
+
+        Clusterbombs
+
+        ◊; https://www.theguardian.com/world/2010/dec/01/wikileaks-cables-cluster-bombs-britain
+      }
+      ◊leak["Abu Omar abduction"]{
+
+        ◊; https://www.spiegel.de/international/europe/cia-rendition-case-us-pressured-italy-to-influence-judiciary-a-735268.html
+      }
+      ◊leak["Numbers of civilian deaths in Iraq"]{
+
+        While U.S. officials had previously said no logs existed of civilian deaths in Iraq leaked cables told another story. 66,081 civilian deaths had been logged out of a total of 109,000 deaths between 2004 and 2009, a horrifyingly bad ratio. 66 thousand innocent people died in those five years, that's like 22 World Trade center attacks (where 2,977 people died).
+
+        Leaker cables also indicated that U.S. authorities had failed to investigate hundreds of reports of torture, rape, abuse and murder by Iraqi security officials.
       }
 
     }
+
+    Now I don't know about you, but I feel really bad reading these. Countless of civilians killed---while soldiers are laughing---and systematic cover-ups to hide it all.
+
+    To me Chelsea Manning is a hero for bringing this to light. Yet how was she thanked? Like all whistleblowers she was made an example of: she was court-martialed and imprisoned between 2010 until 2017 when her sentence was commuted.
+
+
+
 
     ◊; Helicopter attack
     ◊; https://www.youtube.com/watch?v=-Hx-jA2m_hY
@@ -189,24 +210,32 @@ I will bring up the events surrounding Julian Assange, because they are relevant
   ◊entry["Sexual assault allegations against Julian Assange"
           #:date "Nov, 2010"]{
 
+    Shortly after the massive leaks Julian Assange was accused of sexual assault in Sweden. The timing might be an extraordinary coincidence, like the Gods poking fun at us. Or if you're a conspiracy theorist you might say they're manufactured by the U.S. government, in a way to reach Julian Assange.
   }
 
 
   ◊entry["PayPal freezes WikiLeaks donations"
          #:date "Dec 4, 2010"]{
 
+    In the next development ◊link[paypal-freezes-wikileaks]{PayPal freezes WikiLeaks donations} with the reason "our payment service cannot be used for any activities that encourage, promote, facilitate or instruct others to engage in illegal activity."
+
+    Even if you don't like conspiracy theories, it's not a stretch to say the U.S. government put pressure on PayPal in their efforts to shut down WikiLeaks.
+
     ◊;https://wikileaks.org/PayPal-freezes-WikiLeaks-donations.html
     ◊;https://www.wired.com/2010/12/paypal-wikileaks/
+  }
 
-    ◊; The banking blockade against WikiLeaks was subsequently found to be illegal in the European courts and most of the companies involved, including PayPal, Visa and MasterCard, have conceded defeat.
-    ◊;https://wikileaks.org/Protesters-against-WikiLeaks.html
+  ◊entry["Banking blockade"
+         #:date "Dec 7, 2010"]{
+    This further developed into a ◊link[banking-blockade]{Banking Blockade} which the Bank of America, VISA, MasterCard and Western Union also joined. WikiLeaks claim this destroyed 95% of their revenue and they had to resort to cash reserves.
+
+    The blockade was later found to be illegal and today WikiLeaks accept donations via PayPal and credit cards, but they suffered large damage at the crucial time when the world was in uproar over the leaks.
 
     ◊qt[#:url "https://wikileaks.org/Protesters-against-WikiLeaks.html"
         #:author "WikiLeaks"
         #:date "Nov, 2014"]{
     The banking blockade against WikiLeaks was subsequently found to be illegal in the European courts and most of the companies involved, including PayPal, Visa and MasterCard, have conceded defeat.
     }
-
   }
 
 
@@ -215,6 +244,8 @@ I will bring up the events surrounding Julian Assange, because they are relevant
 
     ◊;https://mobile.twitter.com/wikileaks/status/80774521350668288
     ◊;https://www.coindesk.com/assange-bitcoin-wikileaks-helped-keep-alive
+    ◊; Actual source of Assange talking about bitcoin:
+    ◊; https://www.reddit.com/r/technology/comments/2ghp54/i_am_julian_assange_ama_about_my_new_book_when/
 
   }
 
@@ -289,6 +320,9 @@ I will bring up the events surrounding Julian Assange, because they are relevant
 ◊(define collateral-murder-17 "https://www.youtube.com/watch?time_continue=1&v=5rXPrfnU3G0")
 ◊(define collateral-murder-full "https://www.youtube.com/watch?time_continue=820&v=is9sxRfU-ik")
 ◊(define collateral-murder-transcripts "https://collateralmurder.wikileaks.org/en/transcript.html")
+
+◊(define paypal-freezes-wikileaks "https://wikileaks.org/PayPal-freezes-WikiLeaks-donations.html")
+◊(define banking-blockade "https://wikileaks.org/Banking-Blockade.html")
 
 
 ◊subhead{Hiding the skeleton in the closet}
