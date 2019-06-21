@@ -16,6 +16,16 @@ Give a man a gun and he can rob a bank, but give a man a bank, and he can rob th
 - Julian Assange
 In the thread: <https://www.reddit.com/r/technology/comments/2ghp54/i_am_julian_assange_ama_about_my_new_book_when/>
 
+
+ “War is peace.
+Freedom is slavery.
+Ignorance is strength.”
+― George Orwell, 1984 
+
+“Who controls the past controls the future. Who controls the present controls the past.”
+
+― George Orwell, 1984 
+
 # Better digital payments
 
 

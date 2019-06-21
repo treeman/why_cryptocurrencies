@@ -191,7 +191,7 @@ I will bring up the events surrounding Julian Assange, because they are relevant
 
     Now I don't know about you, but I feel really bad reading these. Countless of civilians killed---while soldiers are laughing---and systematic cover-ups to hide it all.
 
-    To me Chelsea Manning is a hero for bringing this to light. Yet how was she thanked? Like all whistleblowers she was made an example of: she was court-martialed, sentenced to 35 years and imprisoned.
+    To me Chelsea Manning is a hero for bringing this to light. Yet how was she thanked? Like all whistleblowers she was made an example of: she was court-martialed and sentenced to 35 years in prison.
 
 
 
@@ -288,6 +288,8 @@ I will bring up the events surrounding Julian Assange, because they are relevant
 
   ◊entry["More leaks"]{
 
+    ◊todo{How to handle the other leaks? Just gloss over them?}
+
     ◊; Vault 7
     ◊; CIA hacking tools
     ◊ol{
@@ -364,29 +366,69 @@ I will bring up the events surrounding Julian Assange, because they are relevant
 ◊(define manning-commutes "https://www.nytimes.com/2017/01/17/us/politics/obama-commutes-bulk-of-chelsea-mannings-sentence.html")
 
 
-◊subhead{Hiding the skeleton in the closet}
+◊subhead{Hiding skeletons in the closet}
 
-◊;https://news.ycombinator.com/item?id=19632449
-◊;https://www.lrb.co.uk/v36/n05/andrew-ohagan/ghosting
+◊todo{Needs a better red thread}
+
+There's a minor theme in the WikiLeaks story: It's how the U.S. government instead of admitting these horrible events, punishing the responsible and importantly making sure they never happen again---seem to do everything to cover them up.
+
+This idea that American soldiers are unconditionally heroes, regardless of they've done, makes me both angry and sad. Donald Trump has for example expressed concerns over soldiers being prosecuted for war crimes, and ◊link[trump-pardons]{considers pardoning them}. This includes a ◊link[gallagher]{Navy Seals soldier} that (allegedly) stabbed a 15-year old defenseless kid with a knife and shot unarmed civilians. That's not a hero.
+
+But of course this isn't a U.S. only phenomena. Just look at how Lenin and Stalin were glorified in Sovjet. Or how Genghis Khan is looked up to---despite murdering countless of people. Maybe you've heard that 1 of 200 people of all people alive today are related to Genghis Khan? That's because he raped young girls wherever he went.◊sn{dan-hitler}
+
+◊ndef["dan-hitler"]{
+    Dan Carlin, creator of the excellent ◊link[hardcore-history]{Hardcore History} podcast, brought up an interesting question: how long will it take for people to celebrate Hitler?
+
+    It seems absurd to us now, but remember that for example Genghis Khan did similarly awful things yet there's ◊link[khan-eurovision]{a song in the 1979 Eurovision Song Contest} about him and how "all women fell for him".
+}
+
+Also here in Sweden, and in neighbouring Scandinavian countries, we have this glorified view of Vikings. But the word Viking originally refers to actions of a group; "to viking", "to pirate" or "to pillage". And pillaging means killing, stealing, raping and taking people as slaves. Not unlike the actions of the U.S. soldiers who executed children---which we find so revolting.
 
 
-◊(define freezing-chapter "/freezing_of_merchant_accounts.html")
-◊(define undesirable-chapter "/undesirable_businesses.html")
+◊(define word-viking "https://norse-mythology.net/what-does-the-word-viking-mean/")
+◊(define khan-eurovision "https://www.youtube.com/watch?v=NvS351QKFV4")
+◊(define hardcore-history "https://www.dancarlin.com/hardcore-history-series/")
+
+◊(define trump-pardons "https://www.usnews.com/news/politics/articles/2019-05-24/trump-considers-pardons-for-soldiers-accused-of-war-crimes")
+◊(define gallagher "https://en.wikipedia.org/wiki/Eddie_Gallagher_(soldier)")
+
+
+◊subhead{Burrying the truth will allow it to continue}
+
+I know what some of you might say and what we others might feel: "I don't want to know about these horrible things". It's true that you'll feel better if you're unaware and you'll probably personally be better off if you act like these never happened.
+
+But if we practice collective 'forgettance', where we all pretend these never happened, they will continue to happen. This is why what Chelsea Manning and WikiLeaks revealed about the Iraq war is so important: we're forced to confront the truth.◊sn{prevent-future}
+
+◊ndef["prevent-future"]{
+    I'm not so naive to say the leaks will prevent future atrocities---they won't. But knowledge of what actually happens is a necessary first step for change to be possible at all.
+}
+
+
+◊qt[#:author "George Orwell"
+    #:src "1984"]{
+    ... if all records told the same tale--then the lie passed into history and became truth. 'Who controls the past,' ran the Party slogan, 'controls the future: who controls the present controls the past.' ... 'Reality control', they called it: in Newspeak, 'doublethink'.
+}
+
+
+
+
 
 
 ◊subhead{Cryptocurrency donations cannot be prevented}
 
-While the US government was able to coerce payment processors and banks to drop WikiLeaks (temporarily) they could never prevent Bitcoin donations. The best they can do is try to stop WikiLeaks from exchanging to fiat by coercing exchanges instead. But that's easier to work around, for example by selling bitcoins in person for cash or by avoiding fiat altogether.◊sn{hosting}
+While the US government was able to coerce payment processors and banks to drop WikiLeaks, they could never prevent Bitcoin donations. Even China, with the world's largest internet censorship, cannot censor cryptocurrency transactions.◊sn{china-mining} The best they can do is force exchanges to cooperate. But that can be worked around, for example by selling bitcoins in person for cash or by avoiding fiat altogether.
 
-◊ndef["hosting"]{
-    It's easy to pay for web hosting using only cryptocurrencies for example.
+◊ndef["china-mining"]{
+    China does have most of the Bitcoin hashrate inside their country. They could theoretically take majority control of Bitcoin's hashrate and censor transactions that way (this is the worst attack possible against a cryptocurrency, called a ◊em{51% attack}). If this happened the Bitcoin community would most likely recognize it as an attack and a chain split would happen, making existing miners worthless.
 }
 
-Even China, with the world's largest internet censorship, cannot censor cryptocurrency transactions. Even if they took control of a majority of Bitcoin's hashrate (most mining is currently located in China) and used that power to censor certain addresses, that would create ◊link[forks]{two separate coins} and WikiLeaks could continue using the other one.◊sn{contentious} Or WikiLeaks could use another cryptocurrency entirely, one with hashrate outside of China or one where miners can't tell where the transactions are going.
+◊todo{How to end the chapter?}
 
-◊ndef["contentious"]{
-    If China were to take over the Bitcoin network most probably the community would recognize it as an attack and agree to move on with new rules which neutralize the attack. This is absolutely the worst attack possible against a cryptocurrency, called a ◊em{51% attack}.
-}
 
 ◊(define forks "/how_do_cryptocurrencies_work.html#network-upgrades-and-new-cryptocurrencies")
 
+◊(define freezing-chapter "/freezing_of_merchant_accounts.html")
+◊(define undesirable-chapter "/undesirable_businesses.html")
+
+◊;https://news.ycombinator.com/item?id=19632449
+◊;https://www.lrb.co.uk/v36/n05/andrew-ohagan/ghosting
