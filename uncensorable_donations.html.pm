@@ -15,7 +15,7 @@
     }
 }
 
-In the ◊link[freezing-chapter]{last} two ◊link[undesirable-chapter]{chapters} we looked at the issues with digital payments, but when you think about donations you wouldn't assume they have the same problems as payments have. For example if you want to donate money to a charity, like ◊link[charity-water]{Charity Water}, they don't have to be worried of ◊link[charge-back-fraud]{charge back fraud}.◊sn{charity-fees} But the same problem with third-party censorship is relevant here as well.
+In the ◊link[freezing-chapter]{last} two ◊link[undesirable-chapter]{chapters} we looked at the issues with digital payments, but when you think about donations you wouldn't assume they have the same problems as payments have. For example when donating money to a charity, like ◊link[charity-water]{Charity Water}, they don't have to be worried of ◊link[charge-back-fraud]{charge back fraud} because you're voluntarily giving them money.◊sn{charity-fees} But the same problem with third-party censorship is relevant here as well.
 
 ◊ndef["charity-fees"]{
     Most payment processors have lower fees for charities, but they're still much more expensive than the ◊link[cheaper-faster]{low cryptocurrency fees}.
@@ -38,7 +38,7 @@ A ◊link[bbc-tiananmen]{powerful example} of the dangers of censorship is the �
     "And he killed them."
 }
 
-China has gone to extreme lengths to censor these events.  Twitter is censored by default in China◊sn{china-censorship} and anyone caught tweeting on Tiananmen can ◊link[twitter-detained]{get you arrested}.◊sn{reeducation} On the anniversary they have police escorts for the victim's families who wants to visit the graves---to keep them away from journalists.
+China has gone to extreme lengths to cover up these events. Twitter is censored by default in China◊sn{china-censorship} and anyone caught tweeting on Tiananmen can ◊link[twitter-detained]{get you arrested}.◊sn{reeducation} On the anniversary they have police escorts for the victim's families who wants to visit the graves---to keep them away from journalists.
 
 ◊ndef["reeducation"]{
     You'll probably be placed in a “◊link[china-reeducation]{re-education camp}”, they're quite similar to camps in Stalin's Soviet or Hitler's Germany.
@@ -46,7 +46,7 @@ China has gone to extreme lengths to censor these events.  Twitter is censored b
 
 
 ◊ndef["china-censorship"]{
-    The ◊link[china-censorship]{censorship in China} is absolutely massive. They try to scan and filter all internet traffic in China, often called “◊link[great-firewall-of-china]{The Great Firewall of China}”, and they're doing a pretty good job. For example they completely ban Facebook, Twitter, Snapchat, Google, Youtube, Wikipedia, WikiLeaks, Netflix and ◊strong{many} others. It might be possible to work around the restrictions using a VPN, but many doesn't work in China either.
+    The ◊link[china-censorship]{censorship in China} is absolutely massive. They try to scan and filter all internet traffic in China, often called “◊link[great-firewall-of-china]{The Great Firewall of China}”, and they're doing a pretty good job. For example they completely ban Facebook, Twitter, Snapchat, Google, Youtube, Wikipedia, WikiLeaks, Netflix and ◊strong{many} others. It might be possible to work around the restrictions using a VPN, but many don't work in China either.
 }
 
 ◊(define china-censorship "https://en.wikipedia.org/wiki/Censorship_in_China")
@@ -180,16 +180,24 @@ I will bring up the events surrounding Julian Assange, because they are relevant
         The soldiers were cleared of any wrongdoing by the U.S military, after they initially denied the events.
       }
 
-      ◊leak["Numbers of civilian deaths in Iraq"]{
+      ◊leak["Civilian deaths in Iraq"]{
 
-        While U.S. officials had previously said no logs existed of civilian deaths in Iraq leaked cables told another story. 66,081 civilian deaths had been logged out of a total of 109,000 deaths between 2004 and 2009, a horrifyingly bad ratio. 66 thousand innocent people died in those five years, that's like 22 World Trade center attacks (where 2,977 people died).
+        While U.S. officials had previously said no logs existed of civilian deaths in Iraq leaked cables told another story. 66,081 civilian deaths had been logged out of a total of 109,000 deaths between 2004 and 2009, that's 60.6% innocent people---a horrifyingly bad ratio.◊sn{wtc}
 
-        Leaker cables also indicated that U.S. authorities had failed to investigate hundreds of reports of torture, rape, abuse and murder by Iraqi security officials.
+        Leaked cables also indicated that U.S. authorities had failed to investigate hundreds of reports of torture, rape, abuse and murder by Iraqi security officials.
+      }
+
+      ◊ndef["wtc"]{
+          66 thousand innocent people dead in five years. That's like 22 World Trade center attacks (where 2,977 people died), more than four a year.
       }
 
     }
 
-    Now I don't know about you, but I feel really bad reading these. Countless of civilians killed---while soldiers are laughing---and systematic cover-ups to hide it all.
+    Now I don't know about you, but I feel really bad reading these. Countless of civilians killed---while soldiers are laughing---and systematic cover-ups to hide it all.◊sn{purpose}
+
+    ◊ndef["purpose"]{
+        You just can't help but wonder---for what purpose? Imaginary nuclear weapons, bringing democracy and "peace" to Iraq, helping U.S. allies or simply having a purpose for their massive war machine?
+    }
 
     To me Chelsea Manning is a hero for bringing this to light. Yet how was she thanked? Like all whistleblowers she was made an example of: she was court-martialed and sentenced to 35 years in prison.
 
@@ -211,7 +219,7 @@ I will bring up the events surrounding Julian Assange, because they are relevant
   ◊entry["Sexual assault allegations against Julian Assange"
           #:date "Nov, 2010"]{
 
-    Shortly after the massive leaks Julian Assange was accused of sexual assault in Sweden. The timing might be an extraordinary coincidence, like the Gods poking fun at us. Or if you're a conspiracy theorist you might say they're manufactured by the U.S. government, in a way to reach Julian Assange.
+    Shortly after the massive leaks Julian Assange was accused of sexual assault in Sweden. The timing might be an extraordinary coincidence---like the Gods poking fun at us---or if you're a conspiracy theorist you might say they're manufactured by the U.S. government, in a way to reach Julian Assange.
   }
 
 
@@ -372,7 +380,7 @@ I will bring up the events surrounding Julian Assange, because they are relevant
 
 There's a minor theme in the WikiLeaks story: It's how the U.S. government instead of admitting these horrible events, punishing the responsible and importantly making sure they never happen again---seem to do everything to cover them up.
 
-This idea that American soldiers are unconditionally heroes, regardless of they've done, makes me both angry and sad. Donald Trump has for example expressed concerns over soldiers being prosecuted for war crimes, and ◊link[trump-pardons]{considers pardoning them}. This includes a ◊link[gallagher]{Navy Seals soldier} that (allegedly) stabbed a 15-year old defenseless kid with a knife and shot unarmed civilians. That's not a hero.
+This idea that American soldiers are unconditionally heroes, regardless of they've done, makes me both angry and sad. Donald Trump has for example expressed concerns over soldiers being prosecuted for war crimes, and ◊link[trump-pardons]{considers pardoning them}. This includes a ◊link[gallagher]{Navy Seals soldier} who (allegedly) stabbed a 15-year old defenseless kid with a knife and shot unarmed civilians. That's not a hero.
 
 But of course this isn't a U.S. only phenomena. Just look at how Lenin and Stalin were glorified in Sovjet. Or how Genghis Khan is looked up to---despite murdering countless of people. Maybe you've heard that 1 of 200 people of all people alive today are related to Genghis Khan? That's because he raped young girls wherever he went.◊sn{dan-hitler}
 
