@@ -28,7 +28,12 @@ Think of journalism in oppressive regimes while placing their lives on line. A t
 
 ◊subhead{Censorship is real}
 
-A ◊link[bbc-tiananmen]{powerful example} of the dangers of censorship is the ◊link[wikipedia-tiananmen]{Tiananmen Square Massacre} in China 1989. It was a student led protest which was forcefully suppressed by hundreds of thousands military troops, killing large numbers of demonstrators and bystanders.
+A ◊link[bbc-tiananmen]{powerful example} of the dangers of censorship is the ◊link[wikipedia-tiananmen]{Tiananmen Square Massacre} in China 1989. It was a student led protest which was forcefully suppressed by hundreds of thousands military troops, killing large numbers of demonstrators and bystanders.◊sn{hong-kong}
+
+◊ndef["hong-kong"]{
+    Some have ◊link[hong-kong-protests]{drawn parallels} between then recent protests in Hong Kong and Tiananmen. But with smartphones everywhere it would be close to impossible to cover up a similar massacre.
+}
+
 
 ◊qt[#:author "Margaret Holt"
     #:src "BBC: Tiananmen 30 years on - China's great act of 'forgettance'"
@@ -38,7 +43,7 @@ A ◊link[bbc-tiananmen]{powerful example} of the dangers of censorship is the �
     "And he killed them."
 }
 
-China has gone to extreme lengths to cover up these events. Twitter is censored by default in China◊sn{china-censorship} and anyone caught tweeting on Tiananmen can ◊link[twitter-detained]{get you arrested}.◊sn{reeducation} On the anniversary they have police escorts for the victim's families who wants to visit the graves---to keep them away from journalists.
+China has gone to extreme lengths to cover up these events. Twitter is censored by default in China◊sn{china-censorship} and anyone caught tweeting about Tiananmen might ◊link[twitter-detained]{get arrested}.◊sn{reeducation} On the anniversary they have police escorts for the victim's families who wants to visit the graves---to keep them away from journalists.
 
 ◊ndef["reeducation"]{
     You'll probably be placed in a “◊link[china-reeducation]{re-education camp}”, they're quite similar to camps in Stalin's Soviet or Hitler's Germany.
@@ -51,8 +56,7 @@ China has gone to extreme lengths to cover up these events. Twitter is censored 
 
 ◊(define china-censorship "https://en.wikipedia.org/wiki/Censorship_in_China")
 ◊(define great-firewall-of-china "https://www.howtogeek.com/162092/htg-explains-how-the-great-firewall-of-china-works/")
-
-
+◊(define hong-kong-protests "https://thefederalist.com/2019/07/25/hong-kong-protest-beijings-new-tiananmen-square/")
 ◊(define bbc-tiananmen "https://www.bbc.com/news/blogs-china-blog-48455582")
 ◊(define wikipedia-tiananmen "https://en.wikipedia.org/wiki/Tiananmen_Square_protests_of_1989")
 ◊(define twitter-detained "https://pen.org/press-release/deng-chuanbin-arrest/")
@@ -64,12 +68,14 @@ China has gone to extreme lengths to cover up these events. Twitter is censored 
 
 ◊subhead{A short history of WikiLeaks}
 
-◊link[wikileaks]{WikiLeaks} is a very relevant example for us concerned with uncensorable payments. This is ◊strong{not} a glorification of WikiLeaks, in fact they have done some ◊link[wikileaks-immoral]{immoral things} like endangering individuals via their leaks. Instead it's an example of how exposing government atrocities can lead to your donations being censored---nothing more and nothing less.
+◊link[wikileaks]{WikiLeaks} is a very relevant example for us concerned with uncensorable payments. We will focus on the Chelsea Manning leaks and the aftermath, where WikiLeaks got their donation channels shut down.
 
 I will bring up the events surrounding Julian Assange, because they are relevant to the story of government abuse, but it's not about him or any other person in particular. Even if Julian Assange is guilty of rape it does not change the importance of WikiLeaks as a concept, which goes above individuals.◊sn{association-fallacy}
 
+This is ◊strong{not} a glorification of WikiLeaks, in fact they have done some ◊link[wikileaks-immoral]{immoral things} like endangering individuals. Instead it's an example of how exposing government atrocities can lead to your donations being censored---nothing more and nothing less.
+
 ◊ndef["association-fallacy"]{
-    Trying to discredit WikiLeaks by discrediting Assange is ◊em{◊link[association-fallacy]{guilt by association}}, a logical fallacy. It's like saying "Ghandi was a pedophile, therefore everything he did should be disregarded."
+    Trying to discredit WikiLeaks by discrediting Assange is ◊em{◊link[association-fallacy]{guilt by association}}---a logical fallacy. It's like saying "Ghandi was a pedophile, therefore everything he did should be disregarded."
 }
 
 
@@ -91,7 +97,7 @@ I will bring up the events surrounding Julian Assange, because they are relevant
   ◊entry["The Chelsea Manning leaks"
          #:date "October 22, 2010"]{
 
-    First I must caution you. It's very easy to become numb when you read about what I will write about. The sheer amount of horror is enough to overwhelm you and might cause your brain to suppress your emotions, maybe out of self-defense. But try to remember that this happened to real people, it's not just a mass of text and numbers. Don't relegate this as just another statistic.
+    First I must caution you: it's very easy to become numb when you read about these leaks. The sheer amount of horror is enough to overwhelm you and might cause your brain to suppress your emotions, maybe out of self-defense. But try to remember that this happened to real people---it's not just a mass of text and numbers. Please don't relegate this as just another forgettable statistic.
 
     Chelsea Manning (formerly Bradley Manning) is a former soldier of the United States who provided WikiLeaks with nearly 750,000 military and diplomatic documents. Some of the content was absolutely shocking and caused global outrage, I've tried to pick out some notable leaks◊sn{more-leaks}:
 
@@ -173,11 +179,12 @@ I will bring up the events surrounding Julian Assange, because they are relevant
         ◊; Better link?
         ◊; http://alexanderhiggins.com/wikileaks-cable-suggests-the-us-executed-handcuffed-women-and-children-under-5-including-an-infant/
 
+        The soldiers were cleared of any wrongdoing by the U.S military, after they initially denied the events.
+
         ◊qt[#:author "Unknown"]{
             One man's terrorist is another man's freedom fighter
         }
 
-        The soldiers were cleared of any wrongdoing by the U.S military, after they initially denied the events.
       }
 
       ◊leak["Civilian deaths in Iraq"]{
@@ -193,10 +200,10 @@ I will bring up the events surrounding Julian Assange, because they are relevant
 
     }
 
-    Now I don't know about you, but I feel really bad reading these. Countless of civilians killed---while soldiers are laughing---and systematic cover-ups to hide it all.◊sn{purpose}
+    Now I don't know about you, but I feel upset about this. Countless of civilians killed---while soldiers are laughing---and systematic cover-ups to hide it all.◊sn{purpose}
 
     ◊ndef["purpose"]{
-        You just can't help but wonder---for what purpose? Imaginary nuclear weapons, bringing democracy and "peace" to Iraq, helping U.S. allies or simply having a purpose for their massive war machine?
+        You just can't help but wonder---for what purpose? Imaginary nuclear weapons, bringing democracy and "peace" to Iraq, helping U.S. allies or simply needing a purpose for their massive war machine?
     }
 
     To me Chelsea Manning is a hero for bringing this to light. Yet how was she thanked? Like all whistleblowers she was made an example of: she was court-martialed and sentenced to 35 years in prison.
@@ -226,7 +233,11 @@ I will bring up the events surrounding Julian Assange, because they are relevant
   ◊entry["PayPal freezes WikiLeaks donations"
          #:date "Dec 4, 2010"]{
 
-    In the next development ◊link[paypal-freezes-wikileaks]{PayPal freezes WikiLeaks donations} with the reason "our payment service cannot be used for any activities that encourage, promote, facilitate or instruct others to engage in illegal activity."
+    A month later ◊link[paypal-freezes-wikileaks]{PayPal freezes WikiLeaks donations} with the reason:
+
+    ◊qt{
+        Our payment service cannot be used for any activities that encourage, promote, facilitate or instruct others to engage in illegal activity.
+    }
 
     Even if you don't like conspiracy theories, it's not a stretch to say the U.S. government put pressure on PayPal in their effort to shut down WikiLeaks.
 
@@ -238,13 +249,7 @@ I will bring up the events surrounding Julian Assange, because they are relevant
          #:date "Dec 7, 2010"]{
     This further developed into a ◊link[banking-blockade]{Banking Blockade} which the Bank of America, VISA, MasterCard and Western Union also joined. WikiLeaks claim this destroyed 95% of their revenue and they had to resort to cash reserves.
 
-    The blockade was later found to be illegal and today WikiLeaks accept donations via PayPal and credit cards, but they suffered large damage at the crucial time when the world was in uproar over the leaks.
-
-    ◊qt[#:url "https://wikileaks.org/Protesters-against-WikiLeaks.html"
-        #:author "WikiLeaks"
-        #:date "Nov, 2014"]{
-    The banking blockade against WikiLeaks was subsequently found to be illegal in the European courts and most of the companies involved, including PayPal, Visa and MasterCard, have conceded defeat.
-    }
+    The blockade was later ◊link[illegal-blockade]{found to be illegal} and today WikiLeaks again accept donations via PayPal and credit cards, but they suffered large damage at the crucial time when the world was in uproar over the leaks.
   }
 
 
@@ -269,7 +274,7 @@ I will bring up the events surrounding Julian Assange, because they are relevant
         I make this appeal to WikiLeaks not to try to use Bitcoin.  Bitcoin is a small beta community in its infancy.  You would not stand to get more than pocket change, and the heat you would bring would likely destroy us at this stage.
     }
 
-    Which ◊link[assange-bitcoin-ama-msg]{Assange writes} as the reason they put off introducing Bitcoin donations.
+    Which ◊link[assange-bitcoin-ama-msg]{Assange cites} as the reason they put off introducing Bitcoin donations.
 
     ◊;https://www.reddit.com/r/technology/comments/2ghp54/i_am_julian_assange_ama_about_my_new_book_when/ckjcmyw/
 
@@ -291,22 +296,9 @@ I will bring up the events surrounding Julian Assange, because they are relevant
 
   ◊entry["Assange receives asylum from Ecuador"
          #:date "June, 2012"]{
-  }
 
-
-  ◊entry["More leaks"]{
-
-    ◊todo{How to handle the other leaks? Just gloss over them?}
-
-    ◊; Vault 7
-    ◊; CIA hacking tools
-    ◊ol{
-        ◊li{CIA hackers targeted smartphones and computers.}
-    }
-    ◊;https://wikileaks.org/ciav7p1/#PRESS
-
-    ◊;release of the Vatican letters.
-
+◊;https://www.theguardian.com/media/2012/jun/19/julian-assange-wikileaks-asylum-ecuador
+◊;https://www.theguardian.com/media/2012/aug/16/julian-assange-ecuador-embassy-asylum-live
   }
 
 
@@ -370,6 +362,7 @@ I will bring up the events surrounding Julian Assange, because they are relevant
 
 ◊(define paypal-freezes-wikileaks "https://wikileaks.org/PayPal-freezes-WikiLeaks-donations.html")
 ◊(define banking-blockade "https://wikileaks.org/Banking-Blockade.html")
+    ◊(define illegal-blockade "https://wikileaks.org/Protesters-against-WikiLeaks.html")
 ◊(define assange-bitcoin-ama-msg "https://www.reddit.com/r/technology/comments/2ghp54/i_am_julian_assange_ama_about_my_new_book_when/ckjcmyw/")
 ◊(define manning-commutes "https://www.nytimes.com/2017/01/17/us/politics/obama-commutes-bulk-of-chelsea-mannings-sentence.html")
 
