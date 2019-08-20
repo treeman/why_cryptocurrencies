@@ -294,11 +294,17 @@ This is ◊strong{not} a glorification of WikiLeaks, in fact they have done some
   }
 
 
-  ◊entry["Assange receives asylum from Ecuador"
+  ◊entry["Assange applies for political asylum from Ecuador"
          #:date "June, 2012"]{
 
 ◊;https://www.theguardian.com/media/2012/jun/19/julian-assange-wikileaks-asylum-ecuador
 ◊;https://www.theguardian.com/media/2012/aug/16/julian-assange-ecuador-embassy-asylum-live
+
+◊;https://shadowproof.com/2012/05/30/uk-supreme-court-rejects-julian-assanges-extradition-appeal/
+
+    A couple of weeks after the UK's Supreme Court rules that Assange ◊link[assange-loses-extradition-appeal]{should be extradited} to Sweden he walked into the Ecuadorean embassy in London and sought political asylum. The stated reason was fears that Sweden would send him to the US where he would risk the death penalty under espionage charges.
+
+    Assange was ◊link[assange-asylum-granted]{granted asylum} August 16th and his stay at the embassy would be longer than anyone would have thought.
   }
 
 
@@ -312,10 +318,22 @@ This is ◊strong{not} a glorification of WikiLeaks, in fact they have done some
     }
   }
 
-  ◊entry["Assange arrested on behalf of the United States authorities"
+  ◊entry["Assange arrested at the embassy"
          #:date "April, 2019"]{
 
     Chelsea Manning was also jailed again for her refusal to testify against Julian Assange.
+
+    Following the arrest Assange was ◊link[assange-indicted]{indicted on 17 counts of violating the Espionage Act} by the United States. They have asked Britain to extradite him, but no decision has been made yet.
+
+    The Swedish sexual assault investigation has been reopened again after the arrest.
+
+    Assange lived in the Ecuadorean embassy for almost 7 years, without stepping foot outside.
+
+◊; Arrested:
+◊; https://news.ycombinator.com/item?id=19632449
+
+◊; Indicted under Espionage Act
+◊; https://news.ycombinator.com/item?id=19995363
 
 ◊;https://www.theguardian.com/media/live/2019/apr/11/wikileaks-founder-julian-assange-arrested-at-the-ecuadorean-embassy-live-updates
 
@@ -323,6 +341,12 @@ This is ◊strong{not} a glorification of WikiLeaks, in fact they have done some
   }
 
 }
+
+◊; UN panel 'rules in Assange's favour'
+◊;https://news.ycombinator.com/item?id=11032787
+
+◊; Timeline of Assange:
+◊; https://www.bbc.com/news/world-europe-11949341
 
 
 ◊(define (entry title #:date [date #f] . text)
@@ -355,6 +379,11 @@ This is ◊strong{not} a glorification of WikiLeaks, in fact they have done some
    `(div ((class "transcript"))
       ,@(map make-row rows)))
 
+◊(define assange-timeline "https://www.bbc.com/news/world-europe-11949341")
+◊(define assange-loses-extradition-appeal "https://www.bbc.com/news/uk-18260914")
+◊(define assange-asylum-granted "https://www.bbc.com/news/uk-19281492")
+◊(define assange-indicted "https://www.nytimes.com/2019/05/23/us/politics/assange-indictment.html")
+
 ◊(define collateral-murder-wikileaks "https://collateralmurder.wikileaks.org/")
 ◊(define collateral-murder-17 "https://www.youtube.com/watch?time_continue=1&v=5rXPrfnU3G0")
 ◊(define collateral-murder-full "https://www.youtube.com/watch?time_continue=820&v=is9sxRfU-ik")
@@ -369,21 +398,37 @@ This is ◊strong{not} a glorification of WikiLeaks, in fact they have done some
 
 ◊subhead{Hiding skeletons in the closet}
 
-◊todo{Needs a better red thread}
-
-There's a minor theme in the WikiLeaks story: It's how the U.S. government instead of admitting these horrible events, punishing the responsible and importantly making sure they never happen again---seem to do everything to cover them up.
+There's a minor theme in the WikiLeaks story: It's how the U.S. government instead of admitting these horrible events, punishing the responsible and making sure they never happen again, seem to do everything to cover them up.
 
 This idea that American soldiers are unconditionally heroes, regardless of they've done, makes me both angry and sad. Donald Trump has for example expressed concerns over soldiers being prosecuted for war crimes, and ◊link[trump-pardons]{considers pardoning them}. This includes a ◊link[gallagher]{Navy Seals soldier} who (allegedly) stabbed a 15-year old defenseless kid with a knife and shot unarmed civilians. That's not a hero.
 
-But of course this isn't a U.S. only phenomena. Just look at how Lenin and Stalin were glorified in Sovjet. Or how Genghis Khan is looked up to---despite murdering countless of people. Maybe you've heard that 1 of 200 people of all people alive today are related to Genghis Khan? That's because he raped young girls wherever he went.◊sn{dan-hitler}
+But of course this isn't a U.S. only phenomena. Here are other examples:
+
+◊ol{
+  ◊li{How Genghis Khan is looked up to.
+
+    Maybe you've heard that 1 of 200 people of all people alive today are related to Genghis Khan? That's because he raped young girls wherever he went.◊sn{dan-hitler}
+  }
+  ◊li{In Scandinavian countries we talk about us being Vikings with pride.
+
+    But the word Viking originally refers to actions of a group; "to viking", "to pirate" or "to pillage". And pillaging means killing, stealing, raping and taking people as slaves. Not unlike the actions of the U.S. soldiers who executed children---which we find so revolting.
+  }
+  ◊li{How leaders like Ceasar, Kim Jong-il and Stalin were glorified.
+
+    It was in fact forbidden to talk about them negatively.
+  }
+  ◊li{As previously mentioned the Chinese cover up of the Tiananmen Square Massacre.}
+}
 
 ◊ndef["dan-hitler"]{
-    Dan Carlin, creator of the excellent ◊link[hardcore-history]{Hardcore History} podcast, brought up an interesting question: how long will it take for people to celebrate Hitler?
+    Dan Carlin, creator of the excellent ◊link[hardcore-history]{Hardcore History} podcast, brought up an interesting question:
+
+    ◊em{How long will it take for people to celebrate Hitler?}
 
     It seems absurd to us now, but remember that for example Genghis Khan did similarly awful things yet there's ◊link[khan-eurovision]{a song in the 1979 Eurovision Song Contest} about him and how "all women fell for him".
 }
 
-Also here in Sweden, and in neighbouring Scandinavian countries, we have this glorified view of Vikings. But the word Viking originally refers to actions of a group; "to viking", "to pirate" or "to pillage". And pillaging means killing, stealing, raping and taking people as slaves. Not unlike the actions of the U.S. soldiers who executed children---which we find so revolting.
+It unfortunately seem like a human thing to try to hide your misdeeds instead of coming clean, even when they're exposed.
 
 
 ◊(define word-viking "https://norse-mythology.net/what-does-the-word-viking-mean/")
@@ -396,6 +441,11 @@ Also here in Sweden, and in neighbouring Scandinavian countries, we have this gl
 
 ◊subhead{Burrying the truth will allow it to continue}
 
+◊qt[#:author "George Orwell"
+    #:src "1984"]{
+    ... if all records told the same tale--then the lie passed into history and became truth. 'Who controls the past,' ran the Party slogan, 'controls the future: who controls the present controls the past.' ... 'Reality control', they called it: in Newspeak, 'doublethink'.
+}
+
 I know what some of you might say and what we others might feel: "I don't want to know about these horrible things". It's true that you'll feel better if you're unaware and you'll probably personally be better off if you act like these never happened.
 
 But if we practice collective 'forgettance', where we all pretend these never happened, they will continue to happen. This is why what Chelsea Manning and WikiLeaks revealed about the Iraq war is so important: we're forced to confront the truth.◊sn{prevent-future}
@@ -405,10 +455,6 @@ But if we practice collective 'forgettance', where we all pretend these never ha
 }
 
 
-◊qt[#:author "George Orwell"
-    #:src "1984"]{
-    ... if all records told the same tale--then the lie passed into history and became truth. 'Who controls the past,' ran the Party slogan, 'controls the future: who controls the present controls the past.' ... 'Reality control', they called it: in Newspeak, 'doublethink'.
-}
 
 
 
