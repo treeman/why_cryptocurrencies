@@ -70,12 +70,14 @@ China has gone to extreme lengths to cover up these events. Twitter is censored 
 
 ◊link[wikileaks]{WikiLeaks} is a very relevant example for us concerned with uncensorable payments. We will focus on the Chelsea Manning leaks and the aftermath, where WikiLeaks got their donation channels shut down.
 
-I will bring up the events surrounding Julian Assange, because they are relevant to the story of government abuse, but it's not about him or any other person in particular. Even if Julian Assange is guilty of rape it does not change the importance of WikiLeaks as a concept, which goes above individuals.◊sn{association-fallacy}
+I will bring up the events surrounding Julian Assange, because they are relevant to the story of government abuse, but it's not about him or any other person in particular. Even if Julian Assange is guilty of rape it does not change the importance of the leaks or WikiLeaks as a concept, which goes above individuals.◊sn{association-fallacy}
 
 This is ◊strong{not} a glorification of WikiLeaks, in fact they have done some ◊link[wikileaks-immoral]{immoral things} like endangering individuals. Instead it's an example of how exposing government atrocities can lead to your donations being censored---nothing more and nothing less.
 
 ◊ndef["association-fallacy"]{
-    Trying to discredit WikiLeaks by discrediting Assange is ◊em{◊link[association-fallacy]{guilt by association}}---a logical fallacy. It's like saying "Ghandi was a pedophile, therefore everything he did should be disregarded."
+    Trying to discredit WikiLeaks by discrediting Assange is ◊em{◊link[association-fallacy]{guilt by association}}---a logical fallacy.
+
+    If we think that good deeds can only be done by perfectly good people then it follows that only ◊em{Superman} can do good. But in reality people are more like ◊em{Iron Man}: narcissistic but wants to save people.
 }
 
 
@@ -302,9 +304,14 @@ This is ◊strong{not} a glorification of WikiLeaks, in fact they have done some
 
 ◊;https://shadowproof.com/2012/05/30/uk-supreme-court-rejects-julian-assanges-extradition-appeal/
 
-    A couple of weeks after the UK's Supreme Court rules that Assange ◊link[assange-loses-extradition-appeal]{should be extradited} to Sweden he walked into the Ecuadorean embassy in London and sought political asylum. The stated reason was fears that Sweden would send him to the US where he would risk the death penalty under espionage charges.
+    A couple of weeks after the UK's Supreme Court rules that Assange ◊link[assange-loses-extradition-appeal]{should be extradited} to Sweden he walked into the Ecuadorean embassy in London and sought political asylum. The stated reason was fears that Sweden would send him to the U.S. where he would risk the death penalty under espionage charges.◊sn{sweden-extradition}
 
     Assange was ◊link[assange-asylum-granted]{granted asylum} August 16th and his stay at the embassy would be longer than anyone would have thought.
+
+    ◊ndef["sweden-extradition"]{
+        The fears of Sweden extraditing Assange to the U.S. might not be ungrounded.
+◊;https://en.wikipedia.org/wiki/Repatriation_of_Ahmed_Agiza_and_Muhammad_al-Zery
+    }
   }
 
 
@@ -340,6 +347,15 @@ This is ◊strong{not} a glorification of WikiLeaks, in fact they have done some
 
   }
 
+
+}
+
+To recap the main points of the story:
+
+◊ol{
+    ◊li{WikiLeaks exposes atrocities commited by the U.S.}
+    ◊li{Donations to WikiLeaks are frozen.}
+    ◊li{Julian Assange and Chelsea Manning are made example of.}
 }
 
 ◊; UN panel 'rules in Assange's favour'
@@ -405,6 +421,7 @@ This idea that American soldiers are unconditionally heroes, regardless of they'
 But of course this isn't a U.S. only phenomena. Here are other examples:
 
 ◊ol{
+  ◊li{◊link[rel-tiananmen]{As previously mentioned} the Chinese cover up of the Tiananmen Square Massacre.}
   ◊li{How Genghis Khan is looked up to.
 
     Maybe you've heard that 1 of 200 people of all people alive today are related to Genghis Khan? That's because he raped young girls wherever he went.◊sn{dan-hitler}
@@ -413,11 +430,11 @@ But of course this isn't a U.S. only phenomena. Here are other examples:
 
     But the word Viking originally refers to actions of a group; "to viking", "to pirate" or "to pillage". And pillaging means killing, stealing, raping and taking people as slaves. Not unlike the actions of the U.S. soldiers who executed children---which we find so revolting.
   }
-  ◊li{How leaders like Ceasar, Kim Jong-il and Stalin were glorified.
+  ◊li{How leaders like Ceasar and Kim Jong-il were glorified.
 
-    It was in fact forbidden to talk about them negatively.
+    It was even forbidden to talk about them negatively.
   }
-  ◊li{As previously mentioned the Chinese cover up of the Tiananmen Square Massacre.}
+  ◊li{How Soviet tried to cover up the ◊link[chernobyl-accident]{Chernobyl nuclear disaster}.◊sn{chernobyl-TV}}
 }
 
 ◊ndef["dan-hitler"]{
@@ -425,10 +442,22 @@ But of course this isn't a U.S. only phenomena. Here are other examples:
 
     ◊em{How long will it take for people to celebrate Hitler?}
 
-    It seems absurd to us now, but remember that for example Genghis Khan did similarly awful things yet there's ◊link[khan-eurovision]{a song in the 1979 Eurovision Song Contest} about him and how "all women fell for him".
+    It seems absurd to us now, but remember that Genghis Khan did similarly awful things yet there's ◊link[khan-eurovision]{a song in the 1979 Eurovision Song Contest} about him and how "all women fell for him".
 }
 
-It unfortunately seem like a human thing to try to hide your misdeeds instead of coming clean, even when they're exposed.
+◊ndef["chernobyl-TV"]{
+    I recently finished watching the ◊link[chernobyl-TV]{Chernobyl} TV-series and I think it lives up to the hype. Among other things it captures the feeling of the cover-ups very well.
+}
+
+Unfortunately it seems like a human thing to try to hide your misdeeds instead of coming clean, even when they're exposed.
+
+◊qt[#:author "A fidgeting child"]{
+    No mum, I didn't break your vase!
+}
+
+◊(define chernobyl-accident "https://www.world-nuclear.org/information-library/safety-and-security/safety-of-plants/chernobyl-accident.aspx")
+◊(define chernobyl-TV "https://www.imdb.com/title/tt7366338/")
+◊(define rel-tiananmen "#censorship-is-real")
 
 
 ◊(define word-viking "https://norse-mythology.net/what-does-the-word-viking-mean/")
@@ -455,21 +484,15 @@ But if we practice collective 'forgettance', where we all pretend these never ha
 }
 
 
-
-
-
-
-
-
 ◊subhead{Cryptocurrency donations cannot be prevented}
 
-While the US government was able to coerce payment processors and banks to drop WikiLeaks, they could never prevent Bitcoin donations. Even China, with the world's largest internet censorship, cannot censor cryptocurrency transactions.◊sn{china-mining} The best they can do is force exchanges to cooperate. But that can be worked around, for example by selling bitcoins in person for cash or by avoiding fiat altogether.
+While the U.S. government was able to coerce payment processors and banks to drop WikiLeaks, they could never prevent Bitcoin donations. Even China, with the world's largest internet censorship, cannot censor cryptocurrency transactions.◊sn{china-mining} The best they can do is force exchanges to cooperate---but that can be worked around, for example by selling bitcoins in person for cash or by avoiding fiat altogether.
+
+It doesn't matter who you are or where you are, you can always accept donations digitally via cryptocurrencies. Even the most powerful nations in the world cannot prevent them, this is something unique.
 
 ◊ndef["china-mining"]{
     China does have most of the Bitcoin hashrate inside their country. They could theoretically take majority control of Bitcoin's hashrate and censor transactions that way (this is the worst attack possible against a cryptocurrency, called a ◊em{51% attack}). If this happened the Bitcoin community would most likely recognize it as an attack and a chain split would happen, making existing miners worthless.
 }
-
-◊todo{How to end the chapter?}
 
 
 ◊(define forks "/how_do_cryptocurrencies_work.html#network-upgrades-and-new-cryptocurrencies")
