@@ -15,7 +15,13 @@
     }
 }
 
-In the ◊link[freezing-chapter]{last} two ◊link[undesirable-chapter]{chapters} we looked at the issues with digital payments, but when you think about donations you wouldn't assume they have the same problems as payments have. For example when donating money to a charity, like ◊link[charity-water]{Charity Water}, they don't have to be worried of ◊link[charge-back-fraud]{charge back fraud} because you're voluntarily giving them money.◊sn{charity-fees} But the same problem with third-party censorship is relevant here as well.
+In the ◊link[freezing-chapter]{last} two ◊link[undesirable-chapter]{chapters} we looked at the issues with digital payments, but when you think about donations you wouldn't assume they have the same problems as payments have. For example when donating money to a charity, like ◊link[charity-water]{Charity Water}, they don't have to be worried of ◊link[charge-back-fraud]{charge back fraud} because you're voluntarily giving them money.◊sn{voluntary} But the same problem with third-party censorship is relevant here as well.
+
+◊ndef["voluntary"]{
+    However even charities can be prosecuted for not fulfilling their promises, it's an experience the founder of Charity Water writes in his book ◊link[thirst-book]{Thirst}. They would probably do charge backs if they could, so it's not a completely irrelevant worry.
+}
+
+◊(define thirst-book "https://www.charitywater.org/thirst")
 
 ◊ndef["charity-fees"]{
     Most payment processors have lower fees for charities, but they're still much more expensive than the ◊link[cheaper-faster]{low cryptocurrency fees}.
@@ -23,7 +29,7 @@ In the ◊link[freezing-chapter]{last} two ◊link[undesirable-chapter]{chapters
 
 ◊(define cheaper-faster "/cheaper_faster.html#cryptocurrency-fees")
 
-Think of journalism in oppressive regimes while placing their lives on line. A third party might block donations or break the journalistic anonymity making donations for truth-seeking journalists very difficult.
+Think of journalists in oppressive regimes who are placing their lives on line. A payment processor (which are necessary for digital donations) might block donations or break the journalistic anonymity making donations for truth-seeking journalists very difficult.
 
 
 ◊subhead{Censorship is real}
@@ -43,7 +49,7 @@ A ◊link[bbc-tiananmen]{powerful example} of the dangers of censorship is the �
     "And he killed them."
 }
 
-China has gone to extreme lengths to cover up these events. Twitter is censored by default in China◊sn{china-censorship} and anyone caught tweeting about Tiananmen might ◊link[twitter-detained]{get arrested}.◊sn{reeducation} On the anniversary they have police escorts for the victim's families who wants to visit the graves---to keep them away from journalists.
+China has gone to great lengths to cover up these events. Twitter is censored by default in China◊sn{china-censorship} and anyone caught tweeting about Tiananmen might ◊link[twitter-detained]{get arrested}.◊sn{reeducation} On the anniversary they have police escorts for the victim's families who wants to visit the graves---to keep them away from journalists.
 
 ◊ndef["reeducation"]{
     You'll probably be placed in a “◊link[china-reeducation]{re-education camp}”, they're quite similar to camps in Stalin's Soviet or Hitler's Germany.
@@ -70,14 +76,14 @@ China has gone to extreme lengths to cover up these events. Twitter is censored 
 
 ◊link[wikileaks]{WikiLeaks} is a relevant example for us concerned with uncensorable payments. We will focus on the Chelsea Manning leaks and the aftermath, where WikiLeaks got their donation channels shut down for exposing government atrocities.
 
-I will bring up the events surrounding Julian Assange, because they are relevant to the story of government abuse, but it's not about him or any other person in particular. Even if Julian Assange is guilty of rape it does not change the importance of the leaks or WikiLeaks as a concept, which goes above individuals.◊sn{association-fallacy}
+I will bring up the ◊link[assange-events]{events surrounding Julian Assange}, because they give context and might be relevant to the story of government abuse, but it's not about him or any other person in particular. Even if Julian Assange is guilty of rape it does not change the importance of the leaks or WikiLeaks as a concept, which goes above individuals.◊sn{association-fallacy}
 
-This is ◊strong{not} a glorification of WikiLeaks---they have ◊link[wikileaks-immoral]{endangered individuals} via their leaks. Instead it's an example of how exposing government atrocities can lead to your donations being censored---nothing more and nothing less.
+This is ◊strong{not} a glorification of WikiLeaks---they have ◊link[wikileaks-immoral]{endangered individuals} via their leaks. Instead I hope to show that uncensorable donations are important, because exposing government atrocities can lead to your donations being censored.
 
 ◊ndef["association-fallacy"]{
     Trying to discredit WikiLeaks by discrediting Assange is ◊em{◊link[association-fallacy]{guilt by association}}---a logical fallacy.
 
-    If we think that good deeds can only be done by perfectly good people then it follows that only ◊em{Superman} can do good. But in reality people are flawed like ◊em{Iron Man}, who's narcissistic and alcoholic but also a hero.
+    If we think that good deeds can only be done by perfectly good people then it follows that only Superman can do good. But in reality people are flawed like Iron Man, who's narcissistic and alcoholic but also a hero.
 }
 
 
@@ -97,11 +103,11 @@ This is ◊strong{not} a glorification of WikiLeaks---they have ◊link[wikileak
 
 
   ◊entry["The Chelsea Manning leaks"
-         #:date "October 22, 2010"]{
+         #:date "July 5, 2010"]{
 
     ◊div[#:class "caution"]{First I must caution you: it's very easy to become numb when you read about these leaks. The sheer amount of horror is enough to overwhelm you and might cause your brain to suppress your emotions, maybe out of self-defense. But try to remember that this happened to real people---it's not just a mass of text and numbers. Please don't relegate this as just another forgettable statistic.}
 
-    Chelsea Manning (formerly Bradley Manning) is a former soldier of the United States who provided WikiLeaks with nearly 750,000 military and diplomatic documents. Some of the content was absolutely shocking and caused global outrage, I've tried to pick out some notable leaks◊sn{more-leaks}:
+    Chelsea Manning (formerly Bradley Manning) is a former soldier of the United States who provided WikiLeaks with nearly 750,000 military and diplomatic documents. They were released in batches and spread out over a period of time. Some of the content was absolutely shocking and caused global outrage, I've tried to pick out some notable leaks◊sn{more-leaks}:
 
     ◊ndef["more-leaks"]{
         It's hard to do justice as there are ◊strong{many} more leaks, I find it overwhelming. See for example:
@@ -118,7 +124,11 @@ This is ◊strong{not} a glorification of WikiLeaks---they have ◊link[wikileak
 
         WikiLeaks uploaded a video of a Baghdad helicopter attack in July 12, 2007 with the title "Collateral murder". It's a video of how an attack helicopter kills a dozen (innocent) people, including two Reuters news staff.
 
-        Here are some ◊link[collateral-murder-transcripts]{transcripts} of the ◊link[collateral-murder-full]{full video} (although at 2019-06-19 the timestamps are slightly off, I've tried to match them up better):
+        Here are some ◊link[collateral-murder-transcripts]{transcripts}◊sn{timestamps} of the ◊link[collateral-murder-full]{full video}:
+
+        ◊ndef["timestamps"]{
+            At 2019-06-19 the timestamps are slightly off, I've tried to match them up better
+        }
 
         ◊todo{+24 sec delay or something?}
 
@@ -173,12 +183,12 @@ This is ◊strong{not} a glorification of WikiLeaks---they have ◊link[wikileak
       ◊leak["Execution of children"
             #:url "https://www.mcclatchydc.com/news/special-reports/article24696685.html"]{
 
-        In 2006, a group of U.S. soldiers entered a house in Iraq where they executed at least 10 people (9 civilians). This included an infant and four other children---all five years or younger---and elderly women. They then called in an airstrike to cover up the evidence, but postmortems showed they had been handcuffed and shot in the head.◊sn{children-bodies}
+        In 2006, a group of U.S. soldiers entered a house in Iraq where they executed at least 10 people (9 civilians). Including an infant and four other children---all five years or younger---and elderly women. They then called in an airstrike to cover up the evidence, but postmortems showed they had been handcuffed and shot in the head.◊sn{children-bodies}
 
         ◊ndef["children-bodies"]{
             Even the infant was shot in the head.
 
-            A photographer ◊link[children-bodies]{captured pictures of the bodies}. (GRAPHIC IMAGES)
+            A photographer ◊link[children-bodies]{captured pictures of the bodies}. (WARNING FOR GRAPHIC IMAGES)
 
             ◊; Other:
             ◊; http://alexanderhiggins.com/wikileaks-cable-suggests-the-us-executed-handcuffed-women-and-children-under-5-including-an-infant/
@@ -232,18 +242,22 @@ This is ◊strong{not} a glorification of WikiLeaks---they have ◊link[wikileak
 
 
   ◊entry["Sexual assault allegations against Julian Assange"
-          #:date "Nov, 2010"]{
+          #:date "Aug 2010"]{
 
-    ◊todo{Not correct}
+    Shortly after the massive leaks Julian Assange was ◊link[assange-rape]{accused of sexual assault} in Sweden. The timing might be a coincidence◊sn{truth-fiction} or if you're a conspiracy theorist you might say they're manufactured by the U.S. government, in a way to reach Julian Assange.
 
-    Shortly after the massive leaks Julian Assange was accused of sexual assault in Sweden. The timing might be an extraordinary coincidence---like the Gods poking fun at us---or if you're a conspiracy theorist you might say they're manufactured by the U.S. government, in a way to reach Julian Assange.
+    ◊ndef["truth-fiction"]{
+        Like the saying goes: "truth is stranger than fiction".
+    }
+
+    In November, when Assange had already traveled to London (the charges were dropped to be picked up again), an ◊link[assange-international-arrest]{international arrest} warrant is issued by the Swedish police via Interpol.
   }
 
 
   ◊entry["PayPal freezes WikiLeaks donations"
          #:date "Dec 4, 2010"]{
 
-    A month later ◊link[paypal-freezes-wikileaks]{PayPal freezes WikiLeaks donations} with the reason:◊sn{paypal}
+    Later ◊link[paypal-freezes-wikileaks]{PayPal freezes WikiLeaks donations} with the reason:◊sn{paypal}
 
     ◊ndef["paypal"]{
         As far as reasons for shutting down services, PayPal ◊link[freezing-of-merchant-accounts]{doesn't have a good record}. This is at least believable.
@@ -266,9 +280,9 @@ This is ◊strong{not} a glorification of WikiLeaks---they have ◊link[wikileak
     The blockade was later ◊link[illegal-blockade]{found to be illegal} and today WikiLeaks again accept donations via PayPal and credit cards, but they suffered large damage at the crucial time when the world was in uproar over the leaks.◊sn{shutdown-successful}
 
     ◊ndef["shutdown-successful"]{
-        ◊todo{success!}
+        If the goal was to divert attention and to silence WikiLeaks until the whole thing blew over, you might say it was a success.
 
-        Guantanamo wasn't shut down.
+        For instance today, in 2019, the torture and abuse still continues in Guantánamo, despite ex-president ◊link[obama-guantanamo]{Barack Obama's promise} to close it.
     }
   }
 
@@ -322,13 +336,12 @@ This is ◊strong{not} a glorification of WikiLeaks---they have ◊link[wikileak
 
 ◊;https://shadowproof.com/2012/05/30/uk-supreme-court-rejects-julian-assanges-extradition-appeal/
 
-    A couple of weeks after the UK's Supreme Court rules that Assange ◊link[assange-loses-extradition-appeal]{should be extradited} to Sweden he walked into the Ecuadorean embassy in London and sought political asylum. The stated reason was fears that Sweden would send him to the U.S. where he would risk the death penalty under espionage charges.◊sn{sweden-extradition}
+    A couple of weeks after the UK's Supreme Court final ruling that Assange ◊link[assange-loses-extradition-appeal]{should be extradited} to Sweden he walked into the Ecuadorean embassy in London and applied for political asylum. The stated reason was fears that Sweden would send him to the U.S. where he would risk the death penalty under espionage charges.◊sn{sweden-extradition}
 
     Assange was ◊link[assange-asylum-granted]{granted asylum} August 16th and his stay at the embassy would be longer than anyone would have thought.
 
     ◊ndef["sweden-extradition"]{
-        The fears of Sweden extraditing Assange to the U.S. might not be ungrounded.
-◊;https://en.wikipedia.org/wiki/Repatriation_of_Ahmed_Agiza_and_Muhammad_al-Zery
+        The fears of Sweden extraditing Assange to the U.S. might not be unfounded. In 2001 the ◊link[repatriation-sweden]{Swedish police watched CIA forcefully detain} two Egyptian refugees on Swedish soil, later facing torture in Eqyptian prison.
     }
   }
 
@@ -345,6 +358,8 @@ This is ◊strong{not} a glorification of WikiLeaks---they have ◊link[wikileak
 
   ◊entry["Assange arrested at the embassy"
          #:date "April, 2019"]{
+
+    ◊todo{Rewrite}
 
     Chelsea Manning was also jailed again for her refusal to testify against Julian Assange.
 
@@ -367,6 +382,8 @@ This is ◊strong{not} a glorification of WikiLeaks---they have ◊link[wikileak
 
 
 }
+
+◊todo{Rewrite/Remove}
 
 To recap the main points of the story:
 
@@ -418,6 +435,10 @@ To recap the main points of the story:
 ◊(define assange-loses-extradition-appeal "https://www.bbc.com/news/uk-18260914")
 ◊(define assange-asylum-granted "https://www.bbc.com/news/uk-19281492")
 ◊(define assange-indicted "https://www.nytimes.com/2019/05/23/us/politics/assange-indictment.html")
+◊(define assange-rape "https://www.bbc.com/news/world-11047025")
+◊(define assange-international-arrest "https://www.bbc.com/news/world-europe-11803703")
+◊(define assange-events "https://www.bbc.com/news/world-europe-11949341")
+◊(define obama-guantanamo "https://www.nbcnews.com/news/us-news/president-obama-expected-make-statement-guantanamo-n524131")
 
 ◊(define collateral-murder-wikileaks "https://collateralmurder.wikileaks.org/")
 ◊(define collateral-murder-17 "https://www.youtube.com/watch?time_continue=1&v=5rXPrfnU3G0")
@@ -436,6 +457,7 @@ To recap the main points of the story:
 ◊(define tunisian-revolution "https://en.wikipedia.org/wiki/Wikileaks_Revolution")
 ◊(define guantanamo "https://www.theguardian.com/world/2011/apr/25/guantanamo-files-lift-lid-prison")
 ◊(define children-bodies "https://web.archive.org/web/20150416062019/http://www.chris-floyd.com/march/")
+◊(define repatriation-sweden "https://en.wikipedia.org/wiki/Repatriation_of_Ahmed_Agiza_and_Muhammad_al-Zery")
 
 ◊(define freezing-of-merchant-accounts "/freezing_of_merchant_accounts.html#other-examples")
 
@@ -500,7 +522,7 @@ Unfortunately it seems like a human thing to try to hide your misdeeds instead o
 
 ◊qt[#:author "George Orwell"
     #:src "1984"]{
-    ... if all records told the same tale--then the lie passed into history and became truth. 'Who controls the past,' ran the Party slogan, 'controls the future: who controls the present controls the past.' ... 'Reality control', they called it: in Newspeak, 'doublethink'.
+    ... if all records told the same tale---then the lie passed into history and became truth. 'Who controls the past,' ran the Party slogan, 'controls the future: who controls the present controls the past.' ... 'Reality control', they called it: in Newspeak, 'doublethink'.
 }
 
 I know what some of you might say and what we others might feel: "I don't want to know about these horrible things". It's true that you'll feel better if you're unaware and you'll probably personally be better off if you act like these never happened.
@@ -516,7 +538,7 @@ But if we practice collective 'forgettance', where we all pretend these never ha
 
 While the U.S. government was able to coerce payment processors and banks to drop WikiLeaks, they could never prevent Bitcoin donations. Even China, with the world's largest internet censorship, cannot censor cryptocurrency transactions.◊sn{china-mining} The best they can do is force exchanges to cooperate---but that can be worked around, for example by selling bitcoins in person for cash or by avoiding fiat altogether.
 
-It doesn't matter who you are or where you are, you can always accept donations digitally via cryptocurrencies. Even the most powerful nations in the world cannot prevent them, this is something unique.
+It doesn't matter who you are or where you are, you can always accept donations digitally via cryptocurrencies. Even the most powerful nations in the world cannot prevent them, this is something unique and is a perfect use-case for cryptocurrencies.
 
 ◊ndef["china-mining"]{
     China does have most of the Bitcoin hashrate inside their country. They could theoretically take majority control of Bitcoin's hashrate and censor transactions that way (this is the worst attack possible against a cryptocurrency, called a ◊em{51% attack}). If this happened the Bitcoin community would most likely recognize it as an attack and a chain split would happen, making existing miners worthless.
