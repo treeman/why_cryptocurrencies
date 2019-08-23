@@ -356,18 +356,24 @@ This is ◊strong{not} a glorification of WikiLeaks---they have ◊link[wikileak
     }
   }
 
+  ◊entry["Chelsea Manning is jailed again"
+         #:date "Mar, 2019"]{
+    Chelsea Manning is ◊link[manning-jailed-again]{jailed again} for her refusal to testify against Julian Assange. She objected to the secrecy of the grand jury process and says she has already revealed everything she knows at her court martial.
+  }
+
   ◊entry["Assange arrested at the embassy"
          #:date "April, 2019"]{
 
-    ◊todo{Rewrite}
+    After almost 7 years at the Ecuadorien embassy, Julian Assange finally leaves the embassy and is arrested.◊sn{second-arrest}
 
-    Chelsea Manning was also jailed again for her refusal to testify against Julian Assange.
+    While he was immediately ◊link[assange-indicted]{indicted on 17 counts of violating the Espionage Act} by the United States his release was news for the Swedish prosecutors. Still the Swedish investigation has once again been reopened. At the moment Assange is waiting for UK to rule on extradition requests from both Sweden and the U.S.
 
-    Following the arrest Assange was ◊link[assange-indicted]{indicted on 17 counts of violating the Espionage Act} by the United States. They have asked Britain to extradite him, but no decision has been made yet.
+    ◊ndef["second-arrest"]{
+        Confusingly he was actually arrested twice. First for ◊link[assange-arrest-uk]{skipping a UK court warrant} and a second time at the ◊link[assange-arrest-us]{request of the US} seeking his extradition.
 
-    The Swedish sexual assault investigation has been reopened again after the arrest.
+        ◊; https://www.theguardian.com/uk-news/2019/apr/11/julian-assange-arrested-at-ecuadorian-embassy-wikileaks
+    }
 
-    Assange lived in the Ecuadorean embassy for almost 7 years, without stepping foot outside.
 
 ◊; Arrested:
 ◊; https://news.ycombinator.com/item?id=19632449
@@ -379,18 +385,6 @@ This is ◊strong{not} a glorification of WikiLeaks---they have ◊link[wikileak
 
 
   }
-
-
-}
-
-◊todo{Rewrite/Remove}
-
-To recap the main points of the story:
-
-◊ol{
-    ◊li{WikiLeaks exposes atrocities commited by the U.S.}
-    ◊li{Donations to WikiLeaks are frozen.}
-    ◊li{Julian Assange and Chelsea Manning are made example of.}
 }
 
 ◊; UN panel 'rules in Assange's favour'
@@ -447,9 +441,10 @@ To recap the main points of the story:
 
 ◊(define paypal-freezes-wikileaks "https://wikileaks.org/PayPal-freezes-WikiLeaks-donations.html")
 ◊(define banking-blockade "https://wikileaks.org/Banking-Blockade.html")
-    ◊(define illegal-blockade "https://wikileaks.org/Protesters-against-WikiLeaks.html")
+◊(define illegal-blockade "https://wikileaks.org/Protesters-against-WikiLeaks.html")
 ◊(define assange-bitcoin-ama-msg "https://www.reddit.com/r/technology/comments/2ghp54/i_am_julian_assange_ama_about_my_new_book_when/ckjcmyw/")
 ◊(define manning-commutes "https://www.nytimes.com/2017/01/17/us/politics/obama-commutes-bulk-of-chelsea-mannings-sentence.html")
+◊(define manning-jailed-again "https://www.theguardian.com/us-news/2019/mar/08/chelsea-manning-judge-jails-wikileaks-case")
 
 ◊(define uk-cluster-bomb-ban "https://www.theguardian.com/world/2010/dec/01/wikileaks-cables-cluster-bombs-britain")
 ◊(define abu-omar "https://www.spiegel.de/international/europe/cia-rendition-case-us-pressured-italy-to-influence-judiciary-a-735268.html")
@@ -458,6 +453,9 @@ To recap the main points of the story:
 ◊(define guantanamo "https://www.theguardian.com/world/2011/apr/25/guantanamo-files-lift-lid-prison")
 ◊(define children-bodies "https://web.archive.org/web/20150416062019/http://www.chris-floyd.com/march/")
 ◊(define repatriation-sweden "https://en.wikipedia.org/wiki/Repatriation_of_Ahmed_Agiza_and_Muhammad_al-Zery")
+
+◊(define assange-arrest-uk "https://www.bbc.com/news/uk-47891737")
+◊(define assange-arrest-us "https://www.theguardian.com/uk-news/2019/apr/11/julian-assange-arrested-at-ecuadorian-embassy-wikileaks")
 
 ◊(define freezing-of-merchant-accounts "/freezing_of_merchant_accounts.html#other-examples")
 
