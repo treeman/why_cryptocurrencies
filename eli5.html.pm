@@ -2,7 +2,7 @@
 
 ◊(define-meta title "Why cryptocurrencies in five minutes")
 ◊(define-meta subtitle "ELI5 - what is the inherent values of cryptocurrencies?")
-◊(define-meta updated "2019-06-16T05:49:19+02:00")
+◊(define-meta updated "2019-06-18T15:05:18+02:00")
 ◊(define-meta uuid "cef34868-0317-4c6f-8b9f-cfb66464f2a8")
 
 While cryptocurrencies are mostly seen as speculative assets---get rich quick schemes---they have valuable properties and valuable use cases. For example:
@@ -19,29 +19,29 @@ While cryptocurrencies are mostly seen as speculative assets---get rich quick sc
         This means merchants don't have to worry about having a purchase reversed, which usually means they have to swallow the loss.◊sn{chargeback-fraud}
         }
 
-    ◊li{◊strong{For anyone}
-
-        Cryptocurrencies makes digital payments available for anyone. For example businesses ◊link[undesirable]{who cannot accept credit cards} or people ◊link[unbanked]{without a bank account}.
-        }
-
     ◊li{◊strong{No risk of having your account frozen}
 
-        There's a big risk for merchants who can get their account---and their funds---◊link[freeze]{frozen at any time}, possibly destroying their business.
+        There's no third party who can freeze your account---and your funds. Merchants don't have to fear having their funds ◊link[freeze]{arbitrarily frozen} (possibly destroying their business) and there's no bank that can confiscate your money.
     }
 
-    ◊li{◊strong{Send to anywhere in the world}
+    ◊li{◊strong{For anyone}
 
-        As long as there's internet you can ◊link[borderless]{send money anywhere}, basically instantly and for free.
+        Cryptocurrencies can be used by anyone. It's for businesses ◊link[undesirable]{who cannot accept credit cards}, for people ◊link[unbanked]{without a bank account} and people in dysfunctional countries. Nobody can prevent you from sending or receiving cryptocurrencies.
     }
 
-    ◊li{◊strong{Reduces currency manipulation}
+    ◊li{◊strong{Global money}
 
-        There's no central authority that can increase the supply as they like or who can invalidate the coins you have.
+        As long as there's internet you can ◊link[borderless]{send money anywhere}, basically instantly and for free. They aren't tied to a government, country or region and can be used everywhere.
+    }
+
+    ◊li{◊strong{Reduced currency manipulation}
+
+        There's no central authority that can increase the supply as they like or invalidate the coins you have. It takes away the power over money from the state and gives it to the people.
     }
 
     ◊li{◊strong{Financial privacy}
 
-        Credit card companies and payment processors can track your spending and sell the information. Cryptocurrencies allows you to reclaim some of your privacy.◊sn{bitcoin-privacy}
+        Banks, credit card companies and payment processors have all your financial transactions on record. Cryptocurrencies allows you to reclaim some of your privacy.◊sn{bitcoin-privacy}
     }
 }
 
