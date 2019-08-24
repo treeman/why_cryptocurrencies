@@ -142,14 +142,12 @@ Even if you disagree about certain choices, it's hard to disagree that cryptocur
 ◊(define (tds txt)
    `(td ((class "tds")) ,txt))
 ◊(define (en type)
-    (printf "type: ~v~n" type)
    (define txt
      (cond
        ((equal? type "poor") "Poor")
        ((equal? type "good") "Good")
        ((equal? type "excellent") "Excellent")
        (#t (error "unknown en argument" type))))
-    (printf "txt: ~v~n" txt)
    `(td ((class ,type)) ,txt))
 
 ◊(define monero-bug "https://www.getmonero.org/2017/05/17/disclosure-of-a-major-bug-in-cryptonote-based-currencies.html")
