@@ -18,7 +18,7 @@
 ◊(define parent-page (parent here))
 ◊(define (ref page txt)
   (->html
-    (link (symbol->string page) txt)))
+    (link (string-append "/" (symbol->string page)) txt)))
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -52,12 +52,12 @@
 
       <nav class="edge-wrapper">
         ◊when/splice[prev-page]{
-          <a class="prev-pan" href="◊(symbol->string prev-page)">
+          <a class="prev-pan" href="/◊(symbol->string prev-page)">
             <span class="content"> ‹ </span>
           </a>
         }
         ◊when/splice[next-page]{
-          <a class="next-pan" href="◊(symbol->string next-page)">
+          <a class="next-pan" href="/◊(symbol->string next-page)">
             <span class="content"> › </span>
           </a>
         }

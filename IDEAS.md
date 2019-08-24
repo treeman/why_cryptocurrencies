@@ -26,6 +26,9 @@ The charity EatBCH feeds Venezuelans.  Sending money to an inaccessible country 
 https://cryptoslate.com/venezuelan-crisis-cryptocurrency-privacy/
 https://www.nytimes.com/2019/02/23/opinion/sunday/venezuela-bitcoin-inflation-cryptocurrencies.html
 
+I wanted to help someone in #Venezuela , so I'm tutoring a novice #JavaScript developer as he writes #opensource software. I pay him $100 per week. It's making a huge difference in his life. With #BitcoinCash we don't have to consider what governments or banks think about it.
+https://mobile.twitter.com/christroutner/status/1142080363981709313
+
 ## Banking the unbanked
 
 <https://www.businessinsider.com/the-worlds-unbanked-population-in-6-charts-2017-8?r=UK&IR=T#finally-the-most-common-reason-people-cited-for-not-having-a-bank-account-was-they-did-not-have-enough-money-with-only-4-of-people-saying-the-only-reason-they-didnt-have-one-was-because-they-didnt-need-one-6>

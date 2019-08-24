@@ -34,7 +34,7 @@ Sidenotes use numbers in the text◊sn{sn} and marginnotes◊mn{mn} are notes wi
 
 While I do my very best to avoid errors I don't have an editor, only some close friends who help out. Therefore I would be most grateful for any feedback, ideas or error corrections you the reader may find. You can ◊link[mailto]{email me} or create a pull request or an issue ◊link[source-code]{on Github}.
 
-◊(define the-first-chapter "what_is_a_cryptocurrency.html")
+◊(define the-first-chapter "/what_is_a_cryptocurrency.html")
 ◊(define tufte "https://edwardtufte.github.io/tufte-css/")
 ◊(define mbtype "https://mbtype.com/")
 
