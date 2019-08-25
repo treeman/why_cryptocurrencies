@@ -1,7 +1,7 @@
 #lang racket/base
 
 (require txexpr pollen/decode pollen/misc/tutorial pollen/tag)
-(require racket/list)
+(require racket/list racket/string)
 (require "rkt/tags.rkt")
 (require "rkt/links.rkt")
 (require "rkt/layout.rkt")
@@ -9,7 +9,7 @@
 (require "rkt/feed.rkt")
 (require "rkt/toc.rkt")
 
-(provide (all-from-out racket/list)) ; make add-between available for templates
+(provide (all-from-out racket/list racket/string)) ; make util functions available
 (provide (all-from-out "rkt/tags.rkt"))
 (provide (all-from-out "rkt/links.rkt"))
 (provide (all-from-out "rkt/layout.rkt"))
