@@ -15,6 +15,13 @@
 
 In the previous chapters we've looked at some problems with having to get permission to accept digital payments, and what happens when we don't. This time we'll look at the reverse problem: when you can't make digital payments.
 
+To make digital payments you typically need a bank account◊sn{banks-required} and those without are often called ◊em{unbanked}. Paying bills digitally, using credit cards and even mobile payments all require a bank account. If you don't have a bank account, you're essentially shut-out from all these services.
+
+
+◊ndef["banks-required"]{
+    Maybe there's a way to work around the bank requirement, possibly by using in-game currencies, but they're severely limited compared to digital payments we normally think about. In practice you need a bank account for useful digital payments.
+}
+
 
 ◊subhead{Who are the unbanked?}
 
@@ -45,7 +52,7 @@ While this map helps us identify countries with a high fraction of unbanked, it 
 ◊;          100 - 150 mil (no country!)
 ◊;#0868ac   > 150 mil
 ◊img[#:src "images/unbanked-count-map.png" #:class "fullwidth"]{
-    The number of adults without a bank account, 2017.
+    The number of adults without a bank account, 2017. ◊todo{A color needs a legend}
     Source ◊link[findex-report]{Global Findex database} (◊link[findex-interactive]{interactive}).
 }
 
@@ -53,24 +60,27 @@ Almost half of all unbanked live in just seven countries: China, India, Indonesi
 
 While the fraction of unbanked adults are high in the developing countries, with poor access to electricity and internet, a surprisingly large number of unbanked live in developed countries. For example USA has 18 million unbanked and in France there are 3 million unbanked.
 
+
+◊subhead{Unbanked with internet}
+
 The question "But how do the unbanked pay for internet?" is always asked when discussing the unbanked. The report has this to say:
 
 ◊qt{
     Fewer unbanked adults have both a mobile phone and access to the internet in some form— whether through a smartphone, a home computer, an internet café, or some other way. Globally, the share is about a quarter.
 }
 
-So about ◊strong{420 million} do have access to internet while being unbanked. I don't know if that's true or not, but anecdotally it seems almost all homeless people owns a smartphone of some sort. You can even get internet in Venezuela◊sn{venezuela-internet}, despite an unreliable power grid. And ◊link[undesirable-chapter]{remember} that even rich and successful can become temporarily unbankanked, if their banks arbitrarily decide porn stars or marijuana supporters isn't something they want to be associated with.◊sn{handelsbanken}
+So about ◊strong{420 million} do have access to internet while being unbanked. I don't know if that's true or not, but anecdotally it seems almost all homeless people I've seen owns a smart phone of some sort. You can even get internet in Venezuela◊sn{venezuela-internet}, despite an unreliable power grid. And ◊link[undesirable-chapter]{remember} that even rich and successful can become temporarily unbanked, for example if banks arbitrarily decide porn stars and marijuana supporters aren't something they want to be associated with.◊sn{handelsbanken}
 
-◊(define undesirable-chapter "undesirable_businesses.html")
+◊(define undesirable-chapter "/undesirable_businesses.html")
 
 ◊ndef["venezuela-internet"]{
     Reportedly Venezuela has one of the worst internet speeds in the world. Yet they still ◊link[venezuela-social-media]{use social media actively}. Interestingly they also ◊link[venezuela-mining]{mine Bitcoin}.
 }
 
 ◊ndef["handelsbanken"]{
-    Here in Sweden I had an interesting encounter with Handelsbanken, one of the largest banks here. I asked if I could get an account there, I wanted to try out their internet bank, but I couldn't get one unless I moved over all my accounts and used them to receive my salary.
+    Here in Sweden I had an interesting encounter with Handelsbanken, one of the largest banks here. I asked if I could get an account there, because I wanted to try out their internet bank as it's important to me, but I couldn't get one unless I moved over all my accounts and used them to receive my salary.
 
-    I did finally get an account there when we took a mortgage with them, but I don't use them as my main bank.
+    I did finally get an account there when we took a mortgage with them, but I still don't use them as my main bank.
 }
 
 ◊(define venezuela-mining "https://news.bitcoin.com/venezuelan-bitcoin-saves-family/")
@@ -82,12 +92,55 @@ So about ◊strong{420 million} do have access to internet while being unbanked.
 
 ◊subhead{What's the problem?}
 
-◊todo{Rewrite all this}
+There are two big problems with unbanked as I see it. One on a country level and one for individuals:
+
+◊ol{
+    ◊li{Countries miss out on economic growth}
+    ◊li{Individuals may be shut-out from society}
+}
+
+◊h3{Economic growth}
 
 One of the best ways to fight poverty is economic growth. Ability to make digital payments is a cornerstone for inclusion into the ever-more digitalized world.
 
 ◊qt{
-    The benefits from financial inclusion can be wide ranging. For example, studies have shown that mobile money services--- which allow users to store and transfer funds through a mobile phone---can help improve people’s income earning potential and thus reduce poverty. A study in Kenya found that access to mobile money services delivered big benefits, especially for women. It enabled women-headed households to increase their savings by more than a fifth; allowed 185,000 women to leave farming and develop business or retail activities; and helped reduce extreme poverty among women-headed households by 22 percent.
+    A growing body of research reveals many potential development benefits from financial inclusion — especially from the use of digital financial services, including mobile money services, payment cards, and other financial technology (or fintech) applications. While the evidence is somewhat mixed, even studies that do not find positive results often point to possibilities for achieving better out-comes through careful attention to local needs.
+}
+
+Digital payments naturally increase efficiency in the economy, since they allow for more convenient and global payments.
+
+Consider a country with a high ratio of unbanked versus a country where most have access to bank accounts. The former will fall behind and become more isolated.◊sn{china-isolation}
+
+◊ndef["china-isolation"]{
+    An historical example is when China decided to isolate itself from the rest of the world. They had all they needed and were ahead the rest of the world in many areas. But after they isolated themselves the rest of the world catched up.
+
+    ◊todo{examples & sources}
+
+    Yet another example of how globalization effected the world economy look up ◊link[the-box]{The Box: How the Shipping Container Made the World Smaller and the World Economy Bigger}.
+}
+
+◊(define the-box "https://www.amazon.com/Box-Shipping-Container-Smaller-Economy/dp/0691136408")
+◊(define what-is-money "/what_is_money.html")
+
+
+◊h3{Shut-out from society}
+
+
+◊ol{
+    ◊li{Missing out on economic growth}
+    ◊li{Shut-out from society}
+    ◊li{Digital payments is a privacy nightmare}
+}
+
+◊todo{Rewrite all this}
+
+
+One of the best ways to fight poverty is economic growth. Ability to make digital payments is a cornerstone for inclusion into the ever-more digitalized world.
+
+◊qt{
+    The benefits from financial inclusion can be wide ranging. For example, studies have shown that mobile money services--- which allow users to store and transfer funds through a mobile phone---can help improve people’s income earning potential and thus reduce poverty.
+
+    A study in Kenya found that access to mobile money services delivered big benefits, especially for women. It enabled women-headed households to increase their savings by more than a fifth; allowed 185,000 women to leave farming and develop business or retail activities; and helped reduce extreme poverty among women-headed households by 22 percent.
 }
 
 But the problem isn't exclusive to poor countries. In Sweden for example almost everyone and everything uses digital payments. Some shops don't accept cash anymore (and they talk about it like it's a benefit to us customers) and they prefer to use Swish instead---which unfortunately also requires a bank account.
@@ -111,3 +164,10 @@ In China mobile payments are growing like mad. If you're a tourist you need to g
 ◊; A  growing  body  of  research  reveals  many  potential  development  benefits  from  financial inclusion — especially from the use of digital financial services, including  mobile  money  services,  payment  cards,  and  other  financial  technology  (or  fintech)  applications.  While  the  evidence  is  somewhat  mixed,  even  studies  that  do  not  find  positive  results  often  point  to  possibilities  for  achieving  better  out-comes through careful attention to local needs.
 
 ◊;The  benefits  from  financial  inclusion  can  be  wide  ranging.  For  example,  stud-ies  have  shown  that  mobile  money  services—  which  allow  users  to  store  and  transfer  funds  through  a  mobile  phone—  can  help  improve  people’s  income-  earning  potential  and  thus  reduce  poverty.  A  study  in  Kenya  found  that  access  to mobile money services delivered big benefits, especially for women. It enabled women-headed  households  to  increase  their  savings  by  more  than  a  fifth;  allowed  185,000  women  to  leave  farming  and  develop  business  or  retail  activi-ties;  and  helped  reduce  extreme  poverty  among  women-headed  households  by  22 percent.
+
+
+◊subhead{Cryptocurrencies are for everyone}
+
+Cryptocurrencies are ◊em{permissionless}, you don't need permission from anyone to use it, meaning everyone can use it.
+
+

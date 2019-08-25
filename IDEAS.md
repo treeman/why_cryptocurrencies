@@ -12,8 +12,6 @@ Give a man a gun and he can rob a bank, but give a man a bank, and he can rob th
 “Fear is the mind-killer.”
 ― Frank Herbert , Dune 
 
-# Better digital payments
-
 
 # A better currency
 
@@ -77,6 +75,12 @@ What if I told you the same medicine could be bought in India for a fraction of 
 This is exactly what cryptocurrencies and dark net markets gives you.
 
 <https://podcast.bitcoin.com/e219-Black-Markets-On-The-Blockchain>
+
+
+## Cashless dystopia
+
+WeChat is Watching: Living in China with the app that knows everything about me
+<https://news.ycombinator.com/item?id=20173549>
 
 
 # Other use
