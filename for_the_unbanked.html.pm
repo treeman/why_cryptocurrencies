@@ -104,18 +104,16 @@ There are two big problems with unbanked as I see it. One on a country level and
 
 ◊h3{Economic growth}
 
-One of the best ways to fight poverty is economic growth. Ability to make digital payments is a cornerstone for inclusion into the ever-more digitalized world.
+One of the best ways to fight poverty is economic growth.
 
-◊qt{
-    A growing body of research reveals many potential development benefits from financial inclusion — especially from the use of digital financial services, including mobile money services, payment cards, and other financial technology (or fintech) applications. While the evidence is somewhat mixed, even studies that do not find positive results often point to possibilities for achieving better out-comes through careful attention to local needs.
-}
+Ability to make digital payments is a cornerstone for inclusion into the ever-more digitalized world.
 
-Digital payments naturally increase efficiency in the economy, since they allow for more convenient and global payments.
+Digital payments naturally increase efficiency in the economy, since they allow for more convenient and global payments. They're also a cornerstone for inclusion into the ever-more digitalized world and for countries to partake in the economic growth caused by globalization.
 
 Consider a country with a high ratio of unbanked versus a country where most have access to bank accounts. The former will fall behind and become more isolated.◊sn{china-isolation}
 
 ◊ndef["china-isolation"]{
-    An historical example is when China decided to isolate itself from the rest of the world. They had all they needed and were ahead the rest of the world in many areas. But after they isolated themselves the rest of the world catched up.
+    An historical example is when China decided to isolate itself from the rest of the world. They had all they needed and were ahead the rest of the world in many areas. But after they isolated themselves the rest of the world caught up.
 
     ◊todo{examples & sources}
 
@@ -124,6 +122,13 @@ Consider a country with a high ratio of unbanked versus a country where most hav
 
 ◊(define the-box "https://www.amazon.com/Box-Shipping-Container-Smaller-Economy/dp/0691136408")
 ◊(define what-is-money "/what_is_money.html")
+
+
+◊qt{
+    The benefits from financial inclusion can be wide ranging. For example, studies have shown that mobile money services---which allow users to store and transfer funds through a mobile phone---can help improve people’s income earning potential and thus reduce poverty.
+
+    A study in Kenya found that access to mobile money services delivered big benefits, especially for women. It enabled women-headed households to increase their savings by more than a fifth; allowed 185,000 women to leave farming and develop business or retail activities; and helped reduce extreme poverty among women-headed households by 22 percent.
+}
 
 
 ◊h3{Shut-out from society}
