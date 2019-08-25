@@ -138,7 +138,7 @@ As I went on a small business trip just a couple of weeks ago to the middle part
     Similar story of a co-worker who moved to Sweden. There was a delay for him to get his social security number, and thus his bank account, so he had to be taken care of by people at work until it got sorted out.
 }
 
-I don't really know how people without a bank account manage in Sweden. Or what tourists will do if their credit card stops working? With the current development they might not even be able to use public bathrooms!◊sn{public-bathroom}
+I don't really know how people without a bank account manage in Sweden or what tourists will do if their credit card stops working? With the current development they might not even be able to use public bathrooms!◊sn{public-bathroom}
 
 ◊ndef["public-bathroom"]{
     In fact when I last visited a public bathroom in a shopping mall they had a new payment system there. Instead of inserting a coin to get the door open---you guessed it---you had to pay with a credit card or with Swish. I guess the kids or tourists, who don't have a credit card or Swish yet, has to hold it in.
@@ -165,5 +165,5 @@ Cryptocurrencies are ◊em{permissionless}, you don't need permission from anyon
 
 There are also no extra fees except for the small cost to
 
-Of course "just use cryptocurrencies" isn't the answer to all problems for the unbanked. They aren't a replacement for banks in the first place. But it is a helpful tool which, as adoption grow, might be helpful for many.
+Of course "just use cryptocurrencies" isn't the answer to all problems for the unbanked, they aren't a replacement for banks in the first place. But it is a helpful tool which, as adoption grow, might be helpful for many.
 
