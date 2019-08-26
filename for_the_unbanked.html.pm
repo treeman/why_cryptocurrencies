@@ -78,7 +78,7 @@ So about ◊strong{420 million} do have access to internet while being unbanked.
 }
 
 ◊ndef["handelsbanken"]{
-    Here in Sweden I had an interesting encounter with Handelsbanken, one of the largest banks here. I asked if I could get an account there, because I wanted to try out their internet bank as it's important to me, but I couldn't get one unless I moved over all my accounts and used them to receive my salary.
+    Here in Sweden I had a fascinating encounter with Handelsbanken, one of the largest banks here. I asked if I could open an account there, because I wanted to try out their internet bank, but I couldn't get one unless I moved over all my accounts and used them to receive my salary.
 
     I did finally get an account there when we took a mortgage with them, but I still don't use them as my main bank.
 }
@@ -100,6 +100,8 @@ There are two big problems with unbanked as I see it. One on a country level and
 }
 
 ◊h3{Economic growth}
+
+◊todo{Rewrite this}
 
 One of the best ways to fight poverty is economic growth. Ability to make digital payments is a cornerstone for inclusion into the ever-more digitalized world.
 
@@ -169,5 +171,7 @@ In China mobile payments are growing like mad. If you're a tourist you need to g
 ◊subhead{Cryptocurrencies are for everyone}
 
 Cryptocurrencies are ◊em{permissionless}, you don't need permission from anyone to use it, meaning everyone can use it.
+
+◊todo{A better ending?}
 
 
