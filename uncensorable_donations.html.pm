@@ -18,7 +18,7 @@
 In the ◊link[freezing-chapter]{last} two ◊link[undesirable-chapter]{chapters} we looked at the issues with digital payments, but when you think about donations you wouldn't assume they have the same problems as payments have. For example when donating money to a charity, like ◊link[charity-water]{Charity Water}, they don't have to be worried of ◊link[charge-back-fraud]{charge back fraud} because you're voluntarily giving them money.◊sn{voluntary} But the same problem with third-party censorship is relevant here as well.
 
 ◊ndef["voluntary"]{
-    However even charities can be prosecuted for not fulfilling their promises, it's an experience the founder of Charity Water writes in his book ◊link[thirst-book]{Thirst}. They would probably do charge backs if they could, so it's not a completely irrelevant worry.
+    However even charities can be prosecuted for not fulfilling their promises, it's an experience the founder of Charity Water writes in his book ◊link[thirst-book]{Thirst}. So charge backs isn't a completely irrelevant worry.
 }
 
 ◊(define thirst-book "https://www.charitywater.org/thirst")
@@ -34,7 +34,7 @@ Think of journalists in oppressive regimes who are placing their lives on line. 
 
 ◊subhead{Censorship is real}
 
-A ◊link[bbc-tiananmen]{powerful example} of the dangers of censorship is the ◊link[wikipedia-tiananmen]{Tiananmen Square Massacre} in China 1989. It was a student led protest which was forcefully suppressed by hundreds of thousands military troops, killing large numbers of demonstrators and bystanders.◊sn{hong-kong}
+A ◊link[bbc-tiananmen]{powerful example} of censorship is the ◊link[wikipedia-tiananmen]{Tiananmen Square Massacre} in China 1989. It was a student led protest which was forcefully suppressed by hundreds of thousands military troops, killing large numbers of demonstrators and bystanders.◊sn{hong-kong}
 
 ◊ndef["hong-kong"]{
     Some have ◊link[hong-kong-protests]{drawn parallels} between then recent protests in Hong Kong and Tiananmen. But with smartphones everywhere it would be close to impossible to cover up a similar massacre.
@@ -78,7 +78,7 @@ China has gone to great lengths to cover up these events. Twitter is censored by
 
 I will bring up the ◊link[assange-events]{events surrounding Julian Assange}, because they give context and might be relevant to the story of government abuse, but it's not about him or any other person in particular. Even if Julian Assange is guilty of rape it does not change the importance of the leaks or WikiLeaks as a concept, which goes above individuals.◊sn{association-fallacy}
 
-This is ◊strong{not} a glorification of WikiLeaks---they have ◊link[wikileaks-immoral]{endangered individuals} via their leaks. Instead I hope to show that uncensorable donations are important, because exposing government atrocities can lead to your donations being censored.
+This is ◊strong{not} a glorification of WikiLeaks---they have ◊link[wikileaks-immoral]{endangered individuals} via their leaks. Instead I hope to show that uncensorable donations are important, because exposing government atrocities can lead to your donations being censored (and government atrocities should be exposed).
 
 ◊ndef["association-fallacy"]{
     Trying to discredit WikiLeaks by discrediting Assange is ◊em{◊link[association-fallacy]{guilt by association}}---a logical fallacy.
@@ -194,9 +194,9 @@ This is ◊strong{not} a glorification of WikiLeaks---they have ◊link[wikileak
             ◊; http://alexanderhiggins.com/wikileaks-cable-suggests-the-us-executed-handcuffed-women-and-children-under-5-including-an-infant/
         }
 
-        We're quick to call them terrorists, but viewed from another angle the U.S. soldiers are the terrorists. Just imagine if foreign soldiers came to your house and executed your mother, your wife and your 6 months baby...
+        We're quick to call them terrorists, but viewed from another angle the U.S. soldiers are the terrorists. Just imagine foreign soldiers entering your neighbours house and executing everyone there, including the children...
 
-        The soldiers were cleared of any wrongdoing by the U.S military, after the military initially denied the events.
+        The soldiers were cleared of any wrongdoing by the U.S. military, after the military initially denied the events happened at all.
 
         ◊qt[#:author "Unknown"]{
             One man's terrorist is another man's freedom fighter
@@ -207,7 +207,7 @@ This is ◊strong{not} a glorification of WikiLeaks---they have ◊link[wikileak
       ◊leak["Civilian deaths in Iraq"
             #:url "https://abcnews.go.com/Politics/wikileaks-iraqi-civilian-deaths-higher-reported/story?id=11953723"]{
 
-        While U.S. officials had previously said no logs existed of civilian deaths in Iraq leaked cables told another story. 66,081 civilian deaths had been logged out of a total of 109,000 deaths between 2004 and 2009, that's 60.6% innocent people---a horrifyingly bad ratio.◊sn{wtc}
+        While U.S. officials had previously said no logs existed of civilian deaths in Iraq, leaked cables told another story. 66,081 civilian deaths had been logged out of a total of 109,000 deaths between 2004 and 2009, that's 60.6% innocent people---a horrifyingly bad ratio.◊sn{wtc}
 
         Leaked cables also indicated that U.S. authorities had failed to investigate hundreds of reports of torture, rape, abuse and murder by Iraqi security officials.
       }
@@ -221,7 +221,9 @@ This is ◊strong{not} a glorification of WikiLeaks---they have ◊link[wikileak
     Countless of civilians killed---while soldiers are laughing---and systematic cover-ups to hide it all.◊sn{purpose}
 
     ◊ndef["purpose"]{
-        You just can't help but wonder---for what purpose? Imaginary nuclear weapons, bringing democracy and "peace" to Iraq, helping U.S. allies or simply needing a purpose for their massive war machine?
+        You just can't help but wonder---for what purpose? Imaginary nuclear weapons, bringing "democracy and peace" to Iraq, securing oil supply, helping U.S. allies or simply needing a purpose for their massive war machine?
+
+        The value of non-American lives in this war is ridiculously low.
     }
 
     To me Chelsea Manning is a hero for bringing this to light. Yet how was she thanked? Like all whistleblowers she was made an example of: she was court-martialed and sentenced to 35 years in prison.
@@ -250,7 +252,7 @@ This is ◊strong{not} a glorification of WikiLeaks---they have ◊link[wikileak
         Like the saying goes: "truth is stranger than fiction".
     }
 
-    In November, when Assange had already traveled to London (the charges were dropped to be picked up again), an ◊link[assange-international-arrest]{international arrest} warrant is issued by the Swedish police via Interpol.
+    In November, when Assange had already traveled to London (the charges were dropped to be picked up again after he left Sweden), an ◊link[assange-international-arrest]{international arrest} warrant is issued by the Swedish police via Interpol.
   }
 
 
@@ -280,7 +282,7 @@ This is ◊strong{not} a glorification of WikiLeaks---they have ◊link[wikileak
     The blockade was later ◊link[illegal-blockade]{found to be illegal} and today WikiLeaks again accept donations via PayPal and credit cards, but they suffered large damage at the crucial time when the world was in uproar over the leaks.◊sn{shutdown-successful}
 
     ◊ndef["shutdown-successful"]{
-        If the goal was to divert attention and to silence WikiLeaks until the whole thing blew over, you might say it was a success.
+        If the goal was to divert attention and to put breaks on WikiLeaks until the whole thing blew over, you might say it was a success.
 
         For instance today, in 2019, the torture and abuse still continues in Guantánamo, despite ex-president ◊link[obama-guantanamo]{Barack Obama's promise} to close it.
     }
@@ -292,7 +294,7 @@ This is ◊strong{not} a glorification of WikiLeaks---they have ◊link[wikileak
 
     After being shunned by banks and payment processors WikiLeaks turned to Bitcoin, because nobody---not even the U.S. government---can block Bitcoin transactions.
 
-    Why did it take over a year before WikiLeaks started accepting Bitcoin? Satoshi made this appeal in the de-facto discussion forum at the time:
+    Why did it take almost a year before WikiLeaks started accepting Bitcoin? Satoshi made this appeal in the de-facto discussion forum at the time:
 
     ◊qt[#:author "Satoshi"
         #:url "http://archive.fo/Gvonb#msg26999"
@@ -308,7 +310,7 @@ This is ◊strong{not} a glorification of WikiLeaks---they have ◊link[wikileak
         I make this appeal to WikiLeaks not to try to use Bitcoin.  Bitcoin is a small beta community in its infancy.  You would not stand to get more than pocket change, and the heat you would bring would likely destroy us at this stage.
     }
 
-    Which ◊link[assange-bitcoin-ama-msg]{Assange cites} as the reason they put off introducing Bitcoin donations.
+    Which ◊link[assange-bitcoin-ama-msg]{Assange cites} as the reason they held off introducing Bitcoin donations.
 
     ◊;https://www.reddit.com/r/technology/comments/2ghp54/i_am_julian_assange_ama_about_my_new_book_when/ckjcmyw/
 
@@ -336,7 +338,7 @@ This is ◊strong{not} a glorification of WikiLeaks---they have ◊link[wikileak
 
 ◊;https://shadowproof.com/2012/05/30/uk-supreme-court-rejects-julian-assanges-extradition-appeal/
 
-    A couple of weeks after the UK's Supreme Court final ruling that Assange ◊link[assange-loses-extradition-appeal]{should be extradited} to Sweden he walked into the Ecuadorean embassy in London and applied for political asylum. The stated reason was fears that Sweden would send him to the U.S. where he would risk the death penalty under espionage charges.◊sn{sweden-extradition}
+    A couple of weeks after the Supreme Court's final ruling in U.K. that Assange ◊link[assange-loses-extradition-appeal]{should be extradited} to Sweden he walked into the Ecuadorean embassy in London and applied for political asylum. The stated reason was fears that Sweden would send him to the U.S. where he would risk the death penalty under espionage charges.◊sn{sweden-extradition}
 
     Assange was ◊link[assange-asylum-granted]{granted asylum} August 16th and his stay at the embassy would be longer than anyone would have thought.
 
@@ -349,7 +351,7 @@ This is ◊strong{not} a glorification of WikiLeaks---they have ◊link[wikileak
   ◊entry["Chelsea Manning's sentence is commuted"
          #:date "Jan 17, 2017"]{
 
-    President Barack Obama ◊link[manning-commutes]{commutes Chelsea Manning's prison sentence}. Important to note is that it only reduces her sentence, it doesn't change the fact that she was convicted.◊sn{pardon} She spent almost 7 years of her original 35 year sentence in prison.
+    President Barack Obama ◊link[manning-commutes]{commutes Chelsea Manning's prison sentence}. Important to note it only reduces her sentence, it doesn't change the fact that she was convicted.◊sn{pardon} She spent almost 7 years of her original 35 year sentence in prison.
 
     ◊ndef["pardon"]{
         In contrast a ◊em{pardon} would completely absolve her of any wrongdoing.
@@ -366,10 +368,12 @@ This is ◊strong{not} a glorification of WikiLeaks---they have ◊link[wikileak
 
     After almost 7 years at the Ecuadorien embassy, Julian Assange finally leaves the embassy and is arrested.◊sn{second-arrest}
 
-    While he was immediately ◊link[assange-indicted]{indicted on 17 counts of violating the Espionage Act} by the United States his release was news for the Swedish prosecutors. Still the Swedish investigation has once again been reopened. At the moment Assange is waiting for UK to rule on extradition requests from both Sweden and the U.S.
+    While he was immediately ◊link[assange-indicted]{indicted on 17 counts of violating the Espionage Act} by the U.S. his release was news for the Swedish prosecutors. When Assange first sought asylum many people said it was only to avoid the Swedish charges and he used fears of the U.S. as a pretext, but in hindsight the fears might've been real.
+
+    Still the Swedish investigation has once again been reopened. At the moment Assange is waiting for the U.K. to rule on extradition requests from both Sweden and the U.S.
 
     ◊ndef["second-arrest"]{
-        Confusingly he was actually arrested twice. First for ◊link[assange-arrest-uk]{skipping a UK court warrant} and a second time at the ◊link[assange-arrest-us]{request of the US} seeking his extradition.
+        Confusingly he was actually arrested twice. First for ◊link[assange-arrest-uk]{skipping a U.K. court warrant} and a second time at the ◊link[assange-arrest-us]{request of the U.S.} seeking his extradition.
 
         ◊; https://www.theguardian.com/uk-news/2019/apr/11/julian-assange-arrested-at-ecuadorian-embassy-wikileaks
     }
@@ -464,7 +468,7 @@ This is ◊strong{not} a glorification of WikiLeaks---they have ◊link[wikileak
 
 There's a minor theme in the WikiLeaks story: How the U.S. government instead of admitting these horrible events, punishing the responsible and making sure they never happen again, seem to do everything to cover them up.
 
-This idea that American soldiers are unconditionally heroes, regardless of they've done, makes me both angry and sad. Donald Trump has for example expressed concerns over soldiers being prosecuted for war crimes, and ◊link[trump-pardons]{considers pardoning them}. This includes a ◊link[gallagher]{Navy Seals soldier} who (allegedly) stabbed a 15-year old defenseless kid with a knife and shot unarmed civilians. That's not a hero.
+This idea that American soldiers are unconditionally heroes, regardless of they've done, makes me both angry and sad. Donald Trump has for example expressed concerns over soldiers being prosecuted for war crimes, and ◊link[trump-pardons]{considers pardoning them}. This includes a ◊link[gallagher]{Navy Seals soldier} who (allegedly) killed a 15-year old defenseless kid with his hunting knife and shot unarmed civilians. That's not a hero.
 
 But of course this isn't a U.S. only phenomena. Here are other examples:
 
@@ -500,7 +504,7 @@ But of course this isn't a U.S. only phenomena. Here are other examples:
 Unfortunately it seems like a human thing to try to hide your misdeeds instead of coming clean, even when they're exposed.
 
 ◊qt[#:author "A fidgeting child"]{
-    No mom, I did not break your vase!
+    No mom, it was not me!
 }
 
 ◊(define chernobyl-accident "https://www.world-nuclear.org/information-library/safety-and-security/safety-of-plants/chernobyl-accident.aspx")
@@ -534,7 +538,7 @@ But if we practice collective 'forgettance', where we all pretend these never ha
 
 ◊subhead{Cryptocurrency donations cannot be prevented}
 
-While the U.S. government was able to coerce payment processors and banks to drop WikiLeaks, they could never prevent Bitcoin donations. Even China, with the world's largest internet censorship, cannot censor cryptocurrency transactions.◊sn{china-mining} The best they can do is force exchanges to cooperate---but that can be worked around, for example by selling bitcoins in person for cash or by avoiding fiat altogether.
+While the U.S. government was able to coerce payment processors and banks to drop WikiLeaks, they could never prevent Bitcoin donations. Even China, with the world's largest internet censorship, cannot censor cryptocurrency transactions.◊sn{china-mining} The best they can do is force some exchanges to cooperate---but that can be worked around, for example by selling bitcoins in person for cash or by avoiding fiat altogether.
 
 It doesn't matter who you are or where you are, you can always accept donations digitally via cryptocurrencies. Even the most powerful nations in the world cannot prevent them, this is something unique for cryptocurrencies.
 
@@ -550,3 +554,4 @@ It doesn't matter who you are or where you are, you can always accept donations 
 
 ◊;https://news.ycombinator.com/item?id=19632449
 ◊;https://www.lrb.co.uk/v36/n05/andrew-ohagan/ghosting
+
