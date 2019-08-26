@@ -12,6 +12,21 @@ Give a man a gun and he can rob a bank, but give a man a bank, and he can rob th
 “Fear is the mind-killer.”
 ― Frank Herbert , Dune 
 
+"Bitcoin is an extremely important innovation, but not in the way most people think. Bitcoin's real innovation is a globally verifiable proof publishing at a certain time. The whole system is built on that concept and many other systems can also be built on it. The blockchain nails down history, breaking Orwell's dictum of "He who controls the present controls the past and he who controls the past controls the future."
+- Julian Assange
+In the thread: <https://www.reddit.com/r/technology/comments/2ghp54/i_am_julian_assange_ama_about_my_new_book_when/>
+
+
+ “War is peace.
+Freedom is slavery.
+Ignorance is strength.”
+― George Orwell, 1984 
+
+“Who controls the past controls the future. Who controls the present controls the past.”
+
+― George Orwell, 1984 
+
+# Better digital payments
 
 # A better currency
 
@@ -31,6 +46,7 @@ https://mobile.twitter.com/christroutner/status/1142080363981709313
 
 <https://www.businessinsider.com/the-worlds-unbanked-population-in-6-charts-2017-8?r=UK&IR=T#finally-the-most-common-reason-people-cited-for-not-having-a-bank-account-was-they-did-not-have-enough-money-with-only-4-of-people-saying-the-only-reason-they-didnt-have-one-was-because-they-didnt-need-one-6>
 
+https://globalfindex.worldbank.org/sites/globalfindex/files/2018-04/2017%20Findex%20full%20report_0.pdf
 
 # Blind leading the blind
 

@@ -8,10 +8,11 @@ use Getopt::Long;
 my $site_bucket = "whycryptocurrencies.com";
 
 my $help;
-my $sync_site;
+my $draft;
 
 GetOptions(
     'help|h' => \$help,
+    'draft' => \$draft,
 );
 
 # Fetch path to current directory
@@ -20,6 +21,10 @@ my $site = "_site";
 
 if ($help) {
     help();
+}
+if ($draft) {
+    $site_bucket = "cryptobook.hietala.xyz";
+    say "DRAFT";
 }
 
 say "Publishing site...\n";
@@ -70,8 +75,8 @@ sub sync_cmd {
 
 sub help {
     say "
-    $0 --site
-        sync site
+    $0 --draft
+        sync draft
     $0 --help
         help
     ";
