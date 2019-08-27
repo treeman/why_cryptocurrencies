@@ -29,8 +29,19 @@ In the ◊link[freezing-chapter]{last} two ◊link[undesirable-chapter]{chapters
 
 ◊(define cheaper-faster "/cheaper_faster.html#cryptocurrency-fees")
 
-Think of journalists in oppressive regimes who are placing their lives on line. A payment processor (which are necessary for digital donations) might block donations or break the journalistic anonymity making donations for truth-seeking journalists very difficult.
+◊;Consider a journalist in an oppressive regimes who's placing her life on line. A payment processor (which are necessary for digital donations) might block donations or break the journalistic anonymity, making donations for this truth-seeking journalist very difficult or outright dangerous.
 
+◊;Imagine 
+
+Imagine a country doing something really horrible, ◊link[killing-fields]{like purging intellectuals and political opponents}, that would put the government in a bad light. Journalists trying to report on this event may find it difficult or impossible to accept donations so they can continue their work. A payment processor (which are necessary for digital donations) might block donations or break the journalistic anonymity◊sn{crypto-privacy}, making donations for truth-seeking journalists very difficult or outright dangerous.
+
+◊ndef["crypto-privacy"]{
+    Cryptocurrencies also ◊link[crypto-anonymous]{gives better privacy} than other digital payment systems.
+}
+
+◊(define crypto-anonymous "/properties_of_a_cryptocurrency.html#anonymous")
+
+◊(define killing-fields "https://allthatsinteresting.com/cambodian-genocide")
 
 ◊subhead{Censorship is real}
 
@@ -38,7 +49,11 @@ A ◊link[bbc-tiananmen]{powerful example} of censorship is the ◊link[wikipedi
 
 ◊ndef["hong-kong"]{
     Some have ◊link[hong-kong-protests]{drawn parallels} between then recent protests in Hong Kong and Tiananmen. But with smartphones everywhere it would be close to impossible to cover up a similar massacre.
+
+    The Hong Kong Free Press, an independent news source in China, ◊link[hk-fp]{accepts Bitcoin donations}.
 }
+
+◊(define hk-fp "https://www.hongkongfp.com/support-hkfp/")
 
 
 ◊qt[#:author "Margaret Holt"
@@ -55,10 +70,19 @@ China has gone to great lengths to cover up these events. Twitter is censored by
     You'll probably be placed in a “◊link[china-reeducation]{re-education camp}”, they're quite similar to camps in Stalin's Soviet or Hitler's Germany.
 }
 
-
 ◊ndef["china-censorship"]{
     The ◊link[china-censorship]{censorship in China} is absolutely massive. They try to scan and filter all internet traffic in China, often called “◊link[great-firewall-of-china]{The Great Firewall of China}”, and they're doing a pretty good job. For example they completely ban Facebook, Twitter, Snapchat, Google, Youtube, Wikipedia, WikiLeaks, Netflix and ◊strong{many} others. It might be possible to work around the restrictions using a VPN, but many don't work in China either.
 }
+
+Censorship is a ◊link[censorship-global]{global problem} and is a big problem in for example Eritrea, North Korea, Saudi Arabia and Ethiopia. A more modern problem is manipulation on social media, with the goal to control public opinion. One way is to use trolls (fake user accounts) and another is to ◊link[reddit-censorship]{censor opinions} that don't fit your narrative.
+
+◊(define reddit-censorship "https://www.breitbart.com/tech/2016/06/12/reddit-topics-censored-users-banned-linking-orlando-shootings-islam/")
+
+◊(define censorship-global "https://cpj.org/2015/04/10-most-censored-countries.php")
+◊(define russia-censorship "https://www.washingtonpost.com/news/act-four/wp/2016/02/09/how-censorship-works-in-vladimir-putins-russia/")
+
+◊; Manipulation on social media, in order to control public opinion, is quickly becoming a big problem. In some subreddits on Reddit it's done by ruthlessly censoring any opposing opinions.
+◊; How much power does Facebook or Google have really have? What if they decide to censor a political party to sway elections?
 
 ◊(define china-censorship "https://en.wikipedia.org/wiki/Censorship_in_China")
 ◊(define great-firewall-of-china "https://www.howtogeek.com/162092/htg-explains-how-the-great-firewall-of-china-works/")
@@ -74,11 +98,11 @@ China has gone to great lengths to cover up these events. Twitter is censored by
 
 ◊subhead{A short history of WikiLeaks}
 
-◊link[wikileaks]{WikiLeaks} is a relevant example for us concerned with uncensorable payments. We will focus on the Chelsea Manning leaks and the aftermath, where WikiLeaks got their donation channels shut down for exposing government atrocities.
+◊link[wikileaks]{WikiLeaks} is a relevant example for illustrating the importance of uncensorable payments as it shows the influence powerful actors have over payment processors, and in turn the funding for WikiLeaks. We will focus on the Chelsea Manning leaks and the aftermath, where WikiLeaks got their donation channels shut down for exposing government atrocities.
 
 I will bring up the ◊link[assange-events]{events surrounding Julian Assange}, because they give context and might be relevant to the story of government abuse, but it's not about him or any other person in particular. Even if Julian Assange is guilty of rape it does not change the importance of the leaks or WikiLeaks as a concept, which goes above individuals.◊sn{association-fallacy}
 
-This is ◊strong{not} a glorification of WikiLeaks---they have ◊link[wikileaks-immoral]{endangered individuals} via their leaks. Instead I hope to show that uncensorable donations are important, because exposing government atrocities can lead to your donations being censored (and government atrocities should be exposed).
+This is ◊strong{not} a glorification of WikiLeaks---they have ◊link[wikileaks-immoral]{endangered individuals} via their leaks. Instead I hope to show that uncensorable donations are important, because exposing government atrocities can lead to your donations being blocked (and government atrocities should be exposed).
 
 ◊ndef["association-fallacy"]{
     Trying to discredit WikiLeaks by discrediting Assange is ◊em{◊link[association-fallacy]{guilt by association}}---a logical fallacy.
@@ -194,7 +218,7 @@ This is ◊strong{not} a glorification of WikiLeaks---they have ◊link[wikileak
             ◊; http://alexanderhiggins.com/wikileaks-cable-suggests-the-us-executed-handcuffed-women-and-children-under-5-including-an-infant/
         }
 
-        We're quick to call them terrorists, but viewed from another angle the U.S. soldiers are the terrorists. Just imagine foreign soldiers entering your neighbours house and executing everyone there, including the children...
+        We're quick to call them terrorists, but viewed from another angle the U.S. soldiers are the terrorists. Just imagine foreign soldiers entering your neighbour's house and executing everyone there, including the children...
 
         The soldiers were cleared of any wrongdoing by the U.S. military, after the military initially denied the events happened at all.
 
@@ -370,7 +394,7 @@ This is ◊strong{not} a glorification of WikiLeaks---they have ◊link[wikileak
 
     While he was immediately ◊link[assange-indicted]{indicted on 17 counts of violating the Espionage Act} by the U.S. his release was news for the Swedish prosecutors. When Assange first sought asylum many people said it was only to avoid the Swedish charges and he used fears of the U.S. as a pretext, but in hindsight the fears might've been real.
 
-    Still the Swedish investigation has once again been reopened. At the moment Assange is waiting for the U.K. to rule on extradition requests from both Sweden and the U.S.
+    At the moment, the Swedish investigation is once again open and Assange is waiting for the U.K. to rule on extradition requests from both Sweden and the U.S.
 
     ◊ndef["second-arrest"]{
         Confusingly he was actually arrested twice. First for ◊link[assange-arrest-uk]{skipping a U.K. court warrant} and a second time at the ◊link[assange-arrest-us]{request of the U.S.} seeking his extradition.
@@ -468,9 +492,10 @@ This is ◊strong{not} a glorification of WikiLeaks---they have ◊link[wikileak
 
 There's a minor theme in the WikiLeaks story: How the U.S. government instead of admitting these horrible events, punishing the responsible and making sure they never happen again, seem to do everything to cover them up.
 
-This idea that American soldiers are unconditionally heroes, regardless of they've done, makes me both angry and sad. Donald Trump has for example expressed concerns over soldiers being prosecuted for war crimes, and ◊link[trump-pardons]{considers pardoning them}. This includes a ◊link[gallagher]{Navy Seals soldier} who (allegedly) killed a 15-year old defenseless kid with his hunting knife and shot unarmed civilians. That's not a hero.
+This idea that American soldiers are unconditionally heroes, regardless of they've done, makes me both angry and sad. Donald Trump has for example expressed concerns over soldiers being prosecuted for war crimes, and ◊link[trump-pardons]{considers pardoning them}. This includes a ◊link[gallagher]{Navy Seals soldier} who (allegedly) killed a 15-year old defenseless kid with his hunting knife and shot unarmed civilians. Those aren't the actions of a hero.
 
-But of course this isn't a U.S. only phenomena. Here are other examples:
+
+But of course covering up or rationalizing events isn't a U.S. only phenomena. Here are other examples:
 
 ◊ol{
   ◊li{◊link[rel-tiananmen]{As previously mentioned} the Chinese cover up of the Tiananmen Square Massacre.}
@@ -520,7 +545,7 @@ Unfortunately it seems like a human thing to try to hide your misdeeds instead o
 ◊(define gallagher "https://en.wikipedia.org/wiki/Eddie_Gallagher_(soldier)")
 
 
-◊subhead{Burrying the truth will allow it to continue}
+◊subhead{Burying the truth will allow it to continue}
 
 ◊qt[#:author "George Orwell"
     #:src "1984"]{
