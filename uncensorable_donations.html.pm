@@ -30,11 +30,7 @@ In the ◊link[freezing-chapter]{last} two ◊link[undesirable-chapter]{chapters
 
 ◊(define cheaper-faster "/cheaper_faster.html#cryptocurrency-fees")
 
-◊;Consider a journalist in an oppressive regimes who's placing her life on line. A payment processor (which are necessary for digital donations) might block donations or break the journalistic anonymity, making donations for this truth-seeking journalist very difficult or outright dangerous.
-
-◊;Imagine 
-
-Imagine a country doing something really horrible, ◊link[killing-fields]{like purging intellectuals and political opponents}, that would put the government in a bad light. Journalists trying to report on this event may find it difficult or impossible to accept donations so they can continue their work. A payment processor (which are necessary for digital donations) might block donations or break the journalistic anonymity◊sn{crypto-privacy}, making donations for truth-seeking journalists very difficult or outright dangerous.
+Imagine a country doing something really horrible, ◊link[killing-fields]{like purging intellectuals and political opponents}, that would put the government in a bad light. Journalists trying to report on this event may find it difficult or impossible to accept donations so they can continue their work. A payment processor (which are necessary for digital donations)---perhaps under pressure from the government---might block donations or break the journalistic anonymity◊sn{crypto-privacy}, making donations for truth-seeking journalists very difficult or outright dangerous.
 
 ◊ndef["crypto-privacy"]{
     Cryptocurrencies also ◊link[crypto-anonymous]{gives better privacy} than other digital payment systems.

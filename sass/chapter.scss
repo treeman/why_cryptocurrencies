@@ -592,11 +592,7 @@ table.crypto-eval {
 .wikileaks .entry {
     width: 100%;
     margin-bottom: 1em;
-    //display: flex;
 
-    .txt {
-        //margin: 0 0.5em;
-    }
     h3 {
         margin-top: 0;
     }
@@ -605,9 +601,11 @@ table.crypto-eval {
         @extend %sans-serif;
         line-height: 1;
         display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 0.3rem;
     }
-    > .header > .date {
-        margin-left: 0.5rem;
+    > .header > h3 {
+        margin-right: 0.5rem;
     }
 
     .caution {
