@@ -1,8 +1,9 @@
 #lang pollen
 
 ◊(define-meta title "Uncensorable donations")
-◊;(define-meta subtitle "Avoids middleman fees and settles quickly")
-◊(define-meta updated "2019-06-07T07:38:13+02:00")
+◊(define-meta subtitle "Donations governments cannot stop")
+◊(define-meta updated "2019-08-28T08:23:58+02:00")
+
 ◊(define-meta uuid "f35cab59-0629-4173-9de0-a07a0eef33dc")
 
 ◊; US efforts to jail Assange for espionage are a grave threat to a free media (theguardian.com)
@@ -151,44 +152,42 @@ This is ◊strong{not} a glorification of WikiLeaks---they have ◊link[wikileak
         Here are some ◊link[collateral-murder-transcripts]{transcripts}◊sn{timestamps} of the ◊link[collateral-murder-full]{full video}:
 
         ◊ndef["timestamps"]{
-            At 2019-06-19 the timestamps are slightly off, I've tried to match them up better
+            At 2019-08-28 the transcript timestamps are slightly off compared to the full video, I've tried to match them up better.
         }
-
-        ◊todo{+24 sec delay or something?}
 
         ◊div[#:class "transcript-wrapper"]{
 
           ◊transcript{
-              02:10  He's got an RPG [Rocket Propelled Grenade]?
-              02:11  All right, we got a guy with an RPG.
+              02:34  He's got an RPG [Rocket Propelled Grenade]?
+              02:35  All right, we got a guy with an RPG.
           }
 
           Except now we know it's not an RPG but a camera held by a Reuters journalist.
 
           ◊transcript{
-              03:23  All right, hahaha, I hit [shot] 'em...
+              03:45  All right, hahaha, I hit [shot] 'em...
               ...
-              04:31  Oh, yeah, look at those dead bastards.
-              04:36  Nice.
+              04:55  Oh, yeah, look at those dead bastards.
+              05:00  Nice.
               ...
-              06:33  Come on, buddy.
-              06:38  All you gotta do is pick up a weapon.
+              06:57  Come on, buddy.
+              07:01  All you gotta do is pick up a weapon.
           }
 
           After killing a bunch of people they're looking at an injured person crawling on the ground wanting him to pick up a weapon---so they're allowed to kill him.
 
           ◊transcript{
-              07:36  Picking up the wounded?
-              07:38  Yeah, we're trying to get permission to engage.
-              07:41  Come on, let us shoot!
+              07:59  Picking up the wounded?
+              08:01  Yeah, we're trying to get permission to engage.
+              08:04  Come on, let us shoot!
           }
 
           Then a van enters the scene and they're rushing in to help the wounded. But now the rules aren't that important anymore---they want to shoot!
 
           ◊transcript{
-              10:11  Oh yeah, look at that. Right through the windshield!
-              10:14  Ha ha!
-              10:16  All right. There were uh approximately four to five individuals in that truck, so I'm counting about twelve to fifteen.
+              10:35  Oh yeah, look at that. Right through the windshield!
+              10:37  Ha ha!
+              10:39  All right. There were uh approximately four to five individuals in that truck, so I'm counting about twelve to fifteen.
           }
 
           There were two children behind that windshield who got seriously injured. Their father was killed for trying to help the wounded on the street.
@@ -463,8 +462,8 @@ This is ◊strong{not} a glorification of WikiLeaks---they have ◊link[wikileak
 ◊(define obama-guantanamo "https://www.nbcnews.com/news/us-news/president-obama-expected-make-statement-guantanamo-n524131")
 
 ◊(define collateral-murder-wikileaks "https://collateralmurder.wikileaks.org/")
-◊(define collateral-murder-17 "https://www.youtube.com/watch?time_continue=1&v=5rXPrfnU3G0")
-◊(define collateral-murder-full "https://www.youtube.com/watch?time_continue=820&v=is9sxRfU-ik")
+◊(define collateral-murder-17 "https://www.youtube.com/watch?v=5rXPrfnU3G0")
+◊(define collateral-murder-full "https://www.youtube.com/watch?v=is9sxRfU-ik")
 ◊(define collateral-murder-transcripts "https://collateralmurder.wikileaks.org/en/transcript.html")
 
 ◊(define paypal-freezes-wikileaks "https://wikileaks.org/PayPal-freezes-WikiLeaks-donations.html")
