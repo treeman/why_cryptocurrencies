@@ -69,12 +69,15 @@ $sidenote-float-width: 1280px;
 /*
  * Lists
  */
+$first-list-offset: -1.3rem;
+$list-p-margin: 0.6em;
+
 .chapter {
     ul, ol {
         list-style: none;
         margin: 1rem 0 1rem 2em;
         p {
-            margin-bottom: 0.6em;
+            margin-bottom: $list-p-margin;
         }
     }
     ol {
@@ -104,11 +107,9 @@ $sidenote-float-width: 1280px;
         //content: "†";
         color: $body-list-sym-color;
     }
-    ul > li, ol > li {
+    ul > li > p:first-child, ol > li > p:first-child {
         // To avoid li signifier on a line of it's own
-        p:first-child {
-            margin-top: -1.3rem;
-        }
+        margin-top: $first-list-offset;
     }
     ul > li::before, ol > li::before {
         // Avoid floats here as sidenotes may interfere
@@ -170,7 +171,7 @@ $sidenote-float-width: 1280px;
 blockquote {
     font-size: 95%;
     line-height: 1.4;
-    margin: 2em 2em;
+    margin: 2em;
 }
 blockquote > footer {
     font-size: 80%;
@@ -579,6 +580,87 @@ table.crypto-eval {
         margin-left: 0.5rem;
     }
 }
+
+.wikileaks {
+    padding-top: 1em;
+    margin-bottom: 1em;
+    //margin: 1.5em 0;
+    border-top: 1px dashed $body-hr-color;
+    border-bottom: 1px dashed $body-hr-color;
+}
+
+.wikileaks .entry {
+    width: 100%;
+    margin-bottom: 1em;
+
+    h3 {
+        margin-top: 0;
+    }
+    > .header {
+        font-size: 1.1rem;
+        @extend %sans-serif;
+        line-height: 1;
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 0.3rem;
+    }
+    > .header > h3 {
+        margin-right: 0.5rem;
+    }
+
+    .caution {
+        margin-top: 0.5em;
+        margin-bottom: 0.8em;
+        margin-left: 1em;
+        font-size: 90%;
+    }
+}
+
+.wikileaks li.leak {
+    margin-bottom: 2em;
+
+    > .title {
+        margin-top: $first-list-offset;
+        margin-bottom: $list-p-margin;
+        font-weight: bold;
+    }
+
+    .transcript {
+        margin: 1rem 0;
+        padding-left: 1rem;
+        //margin: 1rem;
+        //margin-left: 2rem;
+        //padding: 0.3rem 0;
+        //border-top: 1px dashed $body-hr-color;
+        //border-bottom: 1px dashed $body-hr-color;
+        font-size: 95%;
+        line-height: 1.4;
+        border-left: 1px solid $body-hr-color;
+    }
+}
+
+.wikileaks .transcript-wrapper {
+    margin: 1.5em 0;
+    //margin-left: 1em;
+    border-top: 1px dashed $body-hr-color;
+    border-bottom: 1px dashed $body-hr-color;
+}
+
+
+.wikileaks .transcript > .row {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+
+    > .time {
+        margin-right: 1.5rem;
+        flex: none;
+    }
+    > .txt {
+
+    }
+}
+
 
 @media only screen and (min-width: 521px) {
     .money-examples .example:nth-child(even) {
