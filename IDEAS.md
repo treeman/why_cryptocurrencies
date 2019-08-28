@@ -42,12 +42,6 @@ https://www.nytimes.com/2019/02/23/opinion/sunday/venezuela-bitcoin-inflation-cr
 I wanted to help someone in #Venezuela , so I'm tutoring a novice #JavaScript developer as he writes #opensource software. I pay him $100 per week. It's making a huge difference in his life. With #BitcoinCash we don't have to consider what governments or banks think about it.
 https://mobile.twitter.com/christroutner/status/1142080363981709313
 
-## Banking the unbanked
-
-<https://www.businessinsider.com/the-worlds-unbanked-population-in-6-charts-2017-8?r=UK&IR=T#finally-the-most-common-reason-people-cited-for-not-having-a-bank-account-was-they-did-not-have-enough-money-with-only-4-of-people-saying-the-only-reason-they-didnt-have-one-was-because-they-didnt-need-one-6>
-
-https://globalfindex.worldbank.org/sites/globalfindex/files/2018-04/2017%20Findex%20full%20report_0.pdf
-
 # Blind leading the blind
 
 ”Även om erfarenheten med negativa räntor är begränsade drar vi slutsatsen att det har bidragit till ytterligare penningpolitiska stimulanser och enklare ekonomiska villkor”, skriver IMF:s finansiella rådgivare Jose Viñals.

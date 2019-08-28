@@ -52,7 +52,7 @@ While this map helps us identify countries with a high fraction of unbanked, it 
 ◊;          100 - 150 mil (no country!)
 ◊;#0868ac   > 150 mil
 ◊img[#:src "images/unbanked-count-map.png" #:class "fullwidth"]{
-    The number of adults without a bank account, 2017. ◊todo{A color needs a legend}
+    The number of adults without a bank account, 2017.
     Source ◊link[findex-report]{Global Findex database} (◊link[findex-interactive]{interactive}).
 }
 
@@ -62,6 +62,34 @@ While the fraction of unbanked adults are high in the developing countries, with
 
 
 ◊subhead{Why are they unbanked?}
+
+The ◊link[findex-report]{Global Findex database} also tried to look at why people stay unbanked.◊sn{read-it}
+
+◊ndef["read-it"]{
+    If this is interesting to you I suggest you ◊link[findex-report]{give it a read}. There are tons of different statistics and I only refer to a fraction of the data available.
+}
+
+Not enough money
+61%    19%
+Do not need an account
+30%     3%
+Accounts too expensive
+26%     1%
+Family member already has an account
+26%     5%
+Financial institutions too far away
+22%     1%
+Lack of necessary documentation
+20%     2%
+Lack of trust
+16%     1%
+Religious reasons
+6%      0%
+(People could select several options)
+
+The biggest stated reason for not having a bank account was not having enough money, almost one fifth stated it as the sole reason.
+
+Most cite several different reasons, making it hard to rank the issues in importance. For example many say they don't need an account, but if the other barriers were to disappear they might find accounts useful if only they had access to them. At least this gives a sense of what issues are present.
 
 
 ◊subhead{Unbanked with internet}
@@ -153,26 +181,39 @@ I don't really know how people without a bank account manage in Sweden or what t
 
 In China mobile payments are growing like mad. If you're a tourist you should get them, otherwise you'll have a tough time. This in combination with China's ◊em{social credit}, which ranks people's behaviors to make sure they're in line with the party, is a recipe for disaster. If you score badly you might not be allowed to fly and maybe you'll lose the privilege of digital payments.
 
-◊; WeChat is Watching: Living in China with the app that knows everything about me
-◊; https://news.ycombinator.com/item?id=20173549
-
 
 ◊(define findex-report "https://globalfindex.worldbank.org/sites/globalfindex/files/2018-04/2017%20Findex%20full%20report_0.pdf")
 ◊(define findex-interactive "http://datawrapper.dwcdn.net/AmFVU/2/")
 
 
-◊; A  growing  body  of  research  reveals  many  potential  development  benefits  from  financial inclusion — especially from the use of digital financial services, including  mobile  money  services,  payment  cards,  and  other  financial  technology  (or  fintech)  applications.  While  the  evidence  is  somewhat  mixed,  even  studies  that  do  not  find  positive  results  often  point  to  possibilities  for  achieving  better  out-comes through careful attention to local needs.
+◊subhead{What might cryptocurrencies help with?}
 
-◊;The  benefits  from  financial  inclusion  can  be  wide  ranging.  For  example,  stud-ies  have  shown  that  mobile  money  services—  which  allow  users  to  store  and  transfer  funds  through  a  mobile  phone—  can  help  improve  people’s  income-  earning  potential  and  thus  reduce  poverty.  A  study  in  Kenya  found  that  access  to mobile money services delivered big benefits, especially for women. It enabled women-headed  households  to  increase  their  savings  by  more  than  a  fifth;  allowed  185,000  women  to  leave  farming  and  develop  business  or  retail  activi-ties;  and  helped  reduce  extreme  poverty  among  women-headed  households  by  22 percent.
+Of course "just use cryptocurrencies" isn't the answer to all problems for the unbanked---they aren't a replacement for banks in the first place. But it is a helpful tool which, as adoption grow, might be helpful for many without bank access.
 
+◊ol{
+    ◊li{Cryptocurrencies are for everyone.
 
-◊subhead{Cryptocurrencies are for everyone}
+        Cryptocurrencies are ◊em{permissionless}: ◊link[no-third-party]{you don't need permission} from anyone to use them. It doesn't matter if you're homeless, a porn star or a tourist---you can always have access to digital payments and you cannot be shut-out.
+    }
+    ◊li{There is no KYC process.
 
-Cryptocurrencies are ◊em{permissionless}, you don't need permission from anyone to use it, meaning everyone are allowed to use it. It doesn't matter if you're homeless, a porn star or a tourist---you can always have access to digital payments.
+        Because cryptocurrencies are permissionless there is no KYC (◊link[kyc]{Know your customer}) process, which banks are required to perform. That's good for people who might not have proper documentation such as ID-cards or birth certificates.
+    }
+    ◊li{The ◊link[cheaper-faster]{fees are low}.
 
-◊todo{Finish this}
+        There are no fees for opening or having an account like with traditional banks and there are no KYC associated costs. There is only a small transaction cost you pay when using a cryptocurrency.
+    }
+    ◊li{You ◊link[no-third-party]{don't need to trust a third party}.
 
-There are also no extra fees except for the small cost to
+        In countries with high corruption you might not trust your local bank enough to handle your money. With cryptocurrencies you can hold your money yourself and there's no need for a third party to use it (such as a bank making the payment for you).
+    }
+    ◊li{There's no need to visit a financial institution.
 
-Of course "just use cryptocurrencies" isn't the answer to all problems for the unbanked, they aren't a replacement for banks in the first place. But it is a helpful tool which, as adoption grow, might be helpful for many.
+        As long as you have internet access you always have access to your money and can make payments. Getting started is as simple as installing an app on your phone.
+    }
+}
+
+◊(define kyc "https://en.wikipedia.org/wiki/Know_your_customer")
+◊(define cheaper-faster "/cheaper_faster.html")
+◊(define no-third-party "/properties_of_a_cryptocurrency.html#no-trusted-third-party")
 
