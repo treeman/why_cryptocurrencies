@@ -393,7 +393,7 @@ This is ◊strong{not} a glorification of WikiLeaks---they have ◊link[wikileak
 
     While he was immediately ◊link[assange-indicted]{indicted on 17 counts of violating the Espionage Act} by the U.S. his release was news for the Swedish prosecutors. When Assange first sought asylum many people said it was only to avoid the Swedish charges and he used fears of the U.S. as a pretext, but in hindsight the fears might've been real.
 
-    At the moment, the Swedish investigation is once again open and Assange is waiting for the U.K. to rule on extradition requests from both Sweden and the U.S.
+    At the moment, the Swedish investigation is open once again and Assange is waiting for the U.K. to rule on extradition requests from both Sweden and the U.S.
 
     ◊ndef["second-arrest"]{
         Confusingly he was actually arrested twice. First for ◊link[assange-arrest-uk]{skipping a U.K. court warrant} and a second time at the ◊link[assange-arrest-us]{request of the U.S.} seeking his extradition.
