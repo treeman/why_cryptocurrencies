@@ -69,6 +69,8 @@ The ◊link[findex-report]{Global Findex database} also tried to look at why peo
     If this is interesting to you I suggest you ◊link[findex-report]{give it a read}. There are tons of different statistics and I only refer to a fraction of the data available.
 }
 
+◊todo{A nice bar chart here}
+
 Not enough money
 61%    19%
 Do not need an account
@@ -126,11 +128,11 @@ So about ◊strong{420 million} do have access to internet while being unbanked.
 There are two big problems with unbanked as I see it. One on a country level and one for unbanked individuals:
 
 ◊ol{
-    ◊li{Countries miss out on economic growth}
-    ◊li{Individuals may be shut-out from society}
+    ◊li{Countries miss out on ◊link[rel-economic-growth]{economic growth}.}
+    ◊li{Individuals may be ◊link[rel-shut-out]{shut-out from society}.}
 }
 
-◊h3{Economic growth}
+◊problem-header{Economic growth}
 
 ◊todo{Rewrite this}
 
@@ -147,7 +149,7 @@ Consider a country with a high ratio of unbanked versus a country where most hav
 
     ◊todo{examples & sources}
 
-    Yet another example of how globalization effected the world economy look up ◊link[the-box]{The Box: How the Shipping Container Made the World Smaller and the World Economy Bigger}.
+    For an interesting angle on how globalization effected the world economy I recommend ◊link[the-box]{The Box: How the Shipping Container Made the World Smaller and the World Economy Bigger}.
 }
 
 ◊(define the-box "https://www.amazon.com/Box-Shipping-Container-Smaller-Economy/dp/0691136408")
@@ -161,7 +163,7 @@ Consider a country with a high ratio of unbanked versus a country where most hav
 }
 
 
-◊h3{Shut-out from society}
+◊problem-header{Shut-out from society}
 
 Now it might be relatively fine for you to live in a country without using a bank account---if most don't have one either. But what if you live in a country where digital payments are an integral part of society?
 
@@ -180,6 +182,13 @@ I don't really know how people without a bank account manage in Sweden or what t
 }
 
 In China mobile payments are growing like mad. If you're a tourist you should get them, otherwise you'll have a tough time. This in combination with China's ◊em{social credit}, which ranks people's behaviors to make sure they're in line with the party, is a recipe for disaster. If you score badly you might not be allowed to fly and maybe you'll lose the privilege of digital payments.
+
+◊(define rel-economic-growth "#economic-growth")
+◊(define rel-shut-out "#shut-out-from-society")
+
+◊(define (problem-header x)
+   `(h3
+     (a [[name ,(to-name x)]] ,x)))
 
 
 ◊(define findex-report "https://globalfindex.worldbank.org/sites/globalfindex/files/2018-04/2017%20Findex%20full%20report_0.pdf")
