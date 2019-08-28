@@ -602,10 +602,14 @@ table.crypto-eval {
         line-height: 1;
         display: flex;
         flex-wrap: wrap;
-        margin-bottom: 0.3rem;
+        //margin-bottom: 0.3rem;
     }
     > .header > h3 {
         margin-right: 0.5rem;
+        margin-bottom: 0.3rem;
+    }
+    > .header > .date {
+        margin-bottom: 0.3rem;
     }
 
     .caution {
