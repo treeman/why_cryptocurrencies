@@ -58,15 +58,15 @@ While this map helps us identify countries with a high fraction of unbanked, it 
 
 Almost half of all unbanked live in just seven countries: China, India, Indonesia, Mexico, Nigeria, Pakistan and Bangladesh. In fact China (224 million) and India (191 million) alone make up nearly a quarter of all unbanked in the world.
 
-While the fraction of unbanked adults are high in the developing countries, with poor access to electricity and internet, a surprisingly large number of unbanked live in developed countries. For example USA has 18 million unbanked and in France there are 3 million unbanked.
+While the fraction of unbanked adults are high in the developing countries, with poor access to electricity and internet, a surprisingly large number of unbanked also live in developed countries. For example the USA has 18 million unbanked and in France there are 3 million unbanked.
 
 
 ◊subhead{Why are they unbanked?}
 
-The ◊link[findex-report]{Global Findex database} also tried to look at why people stay unbanked.◊sn{read-it}
+The ◊link[findex-report]{Global Findex database} also tried to look at why people stay unbanked:◊sn{read-it}
 
 ◊ndef["read-it"]{
-    If this is interesting to you I suggest you ◊link[findex-report]{give it a read}. There are tons of different statistics and I only refer to a fraction of the data available.
+    If this is interesting to you I suggest you ◊link[findex-report]{give the report a read}. There are tons of different statistics and I only refer to a fraction of the data available.
 }
 
 ◊todo{A nice bar chart here}
@@ -89,14 +89,12 @@ Religious reasons
 6%      0%
 (People could select several options)
 
-The biggest stated reason for not having a bank account was not having enough money, almost one fifth stated it as the sole reason.
-
 Most cite several different reasons, making it hard to rank the issues in importance. For example many say they don't need an account, but if the other barriers were to disappear they might find accounts useful if only they had access to them. At least this gives a sense of what issues are present.
 
 
 ◊subhead{Unbanked with internet}
 
-The question "But how do the unbanked pay for internet?" is always asked when discussing the unbanked. The report has this to say:
+The question "But how do the unbanked pay for internet?" is always asked when discussing the unbanked. ◊link[findex-report]{The report} has this to say:
 
 ◊qt{
     Fewer unbanked adults have both a mobile phone and access to the internet in some form— whether through a smartphone, a home computer, an internet café, or some other way. Globally, the share is about a quarter.
@@ -125,7 +123,7 @@ So about ◊strong{420 million} do have access to internet while being unbanked.
 
 ◊subhead{What's the problem?}
 
-There are two big problems with unbanked as I see it. One on a country level and one for unbanked individuals:
+There are two big problems with unbanked related to digital payments as I see it, one on a country level and one for individuals:
 
 ◊ol{
     ◊li{Countries miss out on ◊link[rel-economic-growth]{economic growth}.}
@@ -134,33 +132,45 @@ There are two big problems with unbanked as I see it. One on a country level and
 
 ◊problem-header{Economic growth}
 
-◊todo{Rewrite this}
-
-One of the best ways to fight poverty is economic growth.
-
-Ability to make digital payments is a cornerstone for inclusion into the ever-more digitalized world.
-
-Digital payments naturally increase efficiency in the economy, since they allow for more convenient and global payments. They're also a cornerstone for inclusion into the ever-more digitalized world and for countries to partake in the economic growth caused by globalization.
-
-Consider a country with a high ratio of unbanked versus a country where most have access to bank accounts. The former will fall behind and become more isolated.◊sn{china-isolation}
-
-◊ndef["china-isolation"]{
-    An historical example is when China decided to isolate itself from the rest of the world. They had all they needed and were ahead the rest of the world in many areas. But after they isolated themselves the rest of the world caught up.
-
-    ◊todo{examples & sources}
-
-    For an interesting angle on how globalization effected the world economy I recommend ◊link[the-box]{The Box: How the Shipping Container Made the World Smaller and the World Economy Bigger}.
-}
-
-◊(define the-box "https://www.amazon.com/Box-Shipping-Container-Smaller-Economy/dp/0691136408")
-◊(define what-is-money "/what_is_money.html")
-
-
-◊qt{
+◊qt[#:src "Global Findex database"
+    #:url findex-report
+    #:date "2017"]{
     The benefits from financial inclusion can be wide ranging. For example, studies have shown that mobile money services---which allow users to store and transfer funds through a mobile phone---can help improve people’s income earning potential and thus reduce poverty.
 
     A study in Kenya found that access to mobile money services delivered big benefits, especially for women. It enabled women-headed households to increase their savings by more than a fifth; allowed 185,000 women to leave farming and develop business or retail activities; and helped reduce extreme poverty among women-headed households by 22 percent.
 }
+
+One of the best ways to fight poverty is ◊link[economic-growth-poverty]{economic growth}. This is fairly undisputed, although the link may be indirect. As I see it convenient digital payments contribute to economic growth in two ways:
+
+◊ol{
+    ◊li{Increased economic efficiency.
+
+        Since digital payments allow for more convenient payments, especially over longer distances, they increase the efficiency in the economy leading to economic growth.
+    }
+    ◊li{A cornerstone for inclusion into the ever-more digitalized world.
+
+        Globalization, or how the world has become more interconnected, has been a theme in the last century or two. It has never been easier to travel to the other side of the world, to talk to them over the internet or have them ship goods to you for very low fees.◊sn{containers}
+
+        If people don't have access to digital payments the country risks becoming more isolated◊sn{china-isolation} and might out on the economic growth ◊link[globalization-economic-growth]{caused by globalization}. (◊nbsp{Of course} there are downsides with globalization as well, just look at the ◊link[trump-trade-war]{trade war} between the U.S. and China).
+    }
+}
+
+◊(define trump-trade-war "https://www.bbc.com/news/world-43512098")
+◊(define globalization-economic-growth "https://www.thebalance.com/globalization-and-its-impact-on-economic-growth-1978843")
+
+◊ndef["containers"]{
+    For an interesting angle on how globalization effected the world economy I recommend ◊link[the-box]{The Box: How the Shipping Container Made the World Smaller and the World Economy Bigger}.
+}
+
+◊ndef["china-isolation"]{
+    An historical example is when China decided to ◊link[china-isolation]{isolate itself} from the rest of the world. They had all they needed and were ahead the rest of the world in many areas, but after they isolated themselves the rest of the world caught up.
+}
+
+◊(define china-isolation "https://en.wikipedia.org/wiki/Haijin")
+◊(define economic-growth-poverty "https://www.cato.org/publications/commentary/ending-mass-poverty")
+◊(define the-box "https://www.amazon.com/Box-Shipping-Container-Smaller-Economy/dp/0691136408")
+◊(define what-is-money "/what_is_money.html")
+
 
 
 ◊problem-header{Shut-out from society}
@@ -197,7 +207,14 @@ In China mobile payments are growing like mad. If you're a tourist you should ge
 
 ◊subhead{What might cryptocurrencies help with?}
 
-Of course "just use cryptocurrencies" isn't the answer to all problems for the unbanked---they aren't a replacement for banks in the first place. But it is a helpful tool which, as adoption grow, might be helpful for many without bank access.
+Of course "just use cryptocurrencies" isn't the answer to all problems for the unbanked---they aren't a replacement for banks in the first place.◊sn{banking-the-unbanked} But it is a helpful tool which, as adoption grow, might be helpful for many without bank access.
+
+◊ndef["banking-the-unbanked"]{
+    "Banking the unbanked" is something cryptocurrency advocates like to use, and I even had it as the title of this chapter when I initially planned out the chapters. But it's misleading as banks does things cryptocurrencies doesn't:
+
+    1. Give out loans.
+    2. Safeguard your money (while you can hold cryptocurrencies yourself, it makes sense for many to let others hold them for you).
+}
 
 ◊ol{
     ◊li{Cryptocurrencies are for everyone.
