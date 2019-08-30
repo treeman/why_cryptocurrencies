@@ -26,9 +26,43 @@ Ignorance is strength.”
 
 ― George Orwell, 1984 
 
-# Better digital payments
+
+“All the perplexities, confusion and distress in America arise, not from defects in their Constitution or Confederation, not from want of honor or virtue, so much as from the downright ignorance of the nature of coin, credit and circulation.” — John Adams
+
+"It is well enough that people of the nation do not understand our banking and monetary system, for if they did, I believe there would be a revolution before tomorrow morning." — Henry Ford
+
+"Let me issue and control a nation's money and I care not who writes the laws." — Mayer Amschel Rothschild
+
+"I believe that banking institutions are more dangerous to our liberties than standing armies. Already they have raised up a monied aristocracy that has set the government at defiance. The issuing power (of money) should be taken away from the banks and restored to the people to whom it properly belongs.” — Thomas Jefferson
+
+
+  ◊qt[#:author "Frank Herbert"
+      #:src "Dune"]{
+      He who controls the spice controls the universe.
+  }
+
+<https://www.reddit.com/r/btc/comments/cuqqe5/let_me_issue_and_control_a_nations_money_and_i/>
 
 # A better currency
+
+## Financial crisis
+
+Satoshi quote
+
+## Blind leading the blind
+
+”Även om erfarenheten med negativa räntor är begränsade drar vi slutsatsen att det har bidragit till ytterligare penningpolitiska stimulanser och enklare ekonomiska villkor”, skriver IMF:s finansiella rådgivare Jose Viñals.
+https://www.svd.se/imf-stottar-stefan-ingves-minusranta
+
+** ”På senare tid har Riksbanken fört en politik som kan vara den sämsta i västvärlden.” **
+Ekonomen och mottagaren av ekonomipriset till Nobels minne Paul Krugman om hur Stefan Ingves skött jobbet på Riksbanken. (Januari)
+https://www.svd.se/har-ar-arets-citat-fran-naringslivet
+
+Also the "magic money tree"
+
+## Protection against government seizures
+
+India voids 500 and 1000 rupee bills
 
 ## A borderless currency
 
@@ -42,14 +76,13 @@ https://www.nytimes.com/2019/02/23/opinion/sunday/venezuela-bitcoin-inflation-cr
 I wanted to help someone in #Venezuela , so I'm tutoring a novice #JavaScript developer as he writes #opensource software. I pay him $100 per week. It's making a huge difference in his life. With #BitcoinCash we don't have to consider what governments or banks think about it.
 https://mobile.twitter.com/christroutner/status/1142080363981709313
 
-# Blind leading the blind
+Why China has banned cryptocurrencies: capital flight from the country
 
-”Även om erfarenheten med negativa räntor är begränsade drar vi slutsatsen att det har bidragit till ytterligare penningpolitiska stimulanser och enklare ekonomiska villkor”, skriver IMF:s finansiella rådgivare Jose Viñals.
-https://www.svd.se/imf-stottar-stefan-ingves-minusranta
+## Avoids hyperinflation
 
-** ”På senare tid har Riksbanken fört en politik som kan vara den sämsta i västvärlden.” **
-Ekonomen och mottagaren av ekonomipriset till Nobels minne Paul Krugman om hur Stefan Ingves skött jobbet på Riksbanken. (Januari)
-https://www.svd.se/har-ar-arets-citat-fran-naringslivet
+Fixed setup, nobody can initiate hyperinflation
+Venezuela
+
 
 
 # Brave new world

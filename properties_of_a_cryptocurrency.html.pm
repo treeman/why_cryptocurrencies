@@ -116,7 +116,7 @@ I sure don't know who's right. It's probably best to be skeptical of both camps-
 ◊(define inflation-good "http://inflationmatters.com/keynesian-inflation-theory/")
 ◊(define inflation-bad "https://austrianeconomics.fandom.com/wiki/Inflation")
 
-◊qt[#:author "Daniel Kahneman" #:src "Thinking, Fast and Slow"]{
+◊qt[#:author "Daniel Kahneman" #:src "\"Thinking, Fast and Slow\""]{
     acquisition of skills requires a regular environment, an adequate opportunity to practice, and rapid and unequivocal feedback about the correctness of thoughts and actions. ◊mn{tfas}
 }
 

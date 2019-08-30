@@ -22,12 +22,12 @@
      freezing_of_merchant_accounts.html
      uncensorable_donations.html
      for_the_unbanked.html)
-    ("A better currency"
-     "The financial crisis, bad loans and bail-outs"
+    (better_currency.html
+     financial_crisis.html
+     "The blind leading the blind"
+     "Protection against government seizures"
      "A borderless currency"
-     "Protection against hyperinflation"
-     "India voids 500 and 1000 rupee bills"
-     "Protection against government seizures")
+     "Avoids hyperinflation")
     ("Brave new world"
      "Separation of money and state"
      "A swiss bank account in your pocket"
