@@ -64,6 +64,9 @@ Also the "magic money tree"
 
 India voids 500 and 1000 rupee bills
 
+Macedonia bans fiat cash payments above 560
+<https://www.reddit.com/r/btc/comments/bvx83n/macedonia_bans_fiat_cash_payments_above_560/>
+
 ## A borderless currency
 
 The charity EatBCH feeds Venezuelans.  Sending money to an inaccessible country using cryptocurrencies.
@@ -74,7 +77,8 @@ https://cryptoslate.com/venezuelan-crisis-cryptocurrency-privacy/
 https://www.nytimes.com/2019/02/23/opinion/sunday/venezuela-bitcoin-inflation-cryptocurrencies.html
 
 I wanted to help someone in #Venezuela , so I'm tutoring a novice #JavaScript developer as he writes #opensource software. I pay him $100 per week. It's making a huge difference in his life. With #BitcoinCash we don't have to consider what governments or banks think about it.
-https://mobile.twitter.com/christroutner/status/1142080363981709313
+<https://mobile.twitter.com/christroutner/status/1142080363981709313>
+<https://www.reddit.com/r/btc/comments/c3brvi/chris_troutner_i_wanted_to_help_someone_in/>
 
 Why China has banned cryptocurrencies: capital flight from the country
 
@@ -156,8 +160,72 @@ http://vixra.org/pdf/1905.0239v1.pdf
 
 
 
+# Research/misc links
 
-# Misc links
+<https://www.reddit.com/r/btc/comments/ca8l9c/devices_on_standby_in_the_us_alone_could_power/>
+<https://www.reddit.com/r/btc/comments/c6cfbf/let_me_tell_you_a_tale_about_ecuador_that_abused/>
+<https://www.reddit.com/r/btc/comments/c7vshk/local_us_government_to_use_bitcoin_cash_slp_tokens/>
+<https://www.reddit.com/r/btc/comments/cb7qw1/ama_destroying_myths_about_the_use_of/>
+<https://www.reddit.com/r/Bitcoin/comments/2ityg2/warning_bitcoin_address_blacklists_have_been/>
+<https://www.reddit.com/r/Bitcoin/comments/3ep1wa/varoufakis_reveals_cloak_and_dagger_plan_b_for/>
+
+What's the use for Bitcoin?
+<https://news.ycombinator.com/item?id=9311843>
+
+Bitcoin's academic pedigree
+<https://news.ycombinator.com/item?id=15134670>
+
+Sweden's cashless society is no longer a utopia
+<https://news.ycombinator.com/item?id=18422422>
+
+What is money?
+<https://news.bitcoin.com/back-to-basics-what-is-money/?utm_source=OneSignal%20Push&utm_medium=notification&utm_campaign=Push%20Notifications>
+
+China bans 23M from buying travel tickets as part of 'social credit' system
+<https://news.ycombinator.com/item?id=19281192>
+
+25M Brits would struggle in a cashless society
+<https://news.ycombinator.com/item?id=19407730>
+
+Why are Venezuelans seeking refuge in cryptos?
+<https://www.bbc.com/news/business-47553048>
+
+Life on the wrong side of China’s social credit system
+<https://news.ycombinator.com/item?id=19493033>
+
+<https://www.cbc.ca/news/business/banking-information-shared-with-third-parties-1.5102931>
+
+China forced organ harvesting
+<https://news.ycombinator.com/item?id=20249489>
+
+Safe deposit boxes aren't safe
+<https://news.ycombinator.com/item?id=20545276>
+
+More money than anyone imagined: an explanation for why the bubble never burst 
+<https://news.ycombinator.com/item?id=20535390>
+
+Administration Using the Full Power of the Surveillance State on Whistleblowers
+<https://news.ycombinator.com/item?id=20615084>
+
+"I Don't Want My Money Trapped Here" - Hong Kong Hit By Capital Exodus As Protests Drag On
+<https://www.zerohedge.com/news/2019-08-18/i-dont-want-my-money-trapped-here-hong-kong-hit-capital-exodus-protests-drag>
+
+<https://news.bitcoin.com/the-most-important-aspect-of-bitcoin-is-the-separation-of-money-and-state/>
+
+Germany in Uproar as Negative Rates Threaten Saving Obsession 
+<https://news.ycombinator.com/item?id=20792765>
+
+Credit cards have a privacy problem
+<https://news.ycombinator.com/item?id=20800115>
+
+Hong Kong ISP Association’s Statement on Selective Blocking of Internet Services
+<https://news.ycombinator.com/item?id=20824759>
+
+<https://www.bloomberg.com/opinion/articles/2019-05-06/banks-look-safer-with-deposits>
+
+Lot's of economic books:
+<https://www.reddit.com/r/btc/comments/cp9ows/just_a_few_of_the_books_i_read_cover_to_cover/>
+
 
 https://coinsutra.com/bitcoin-documentaries/
 
