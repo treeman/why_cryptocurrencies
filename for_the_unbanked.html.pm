@@ -15,7 +15,7 @@
 
 In the previous chapters we've looked at some problems with having to get permission to accept digital payments, and what happens when we don't. This time we'll look at the reverse problem: when you can't make digital payments.
 
-To make digital payments you typically need a bank account◊sn{banks-required} and those without are often called ◊em{unbanked}. Paying bills digitally, using credit cards and even mobile payments all require a bank account. If you don't have a bank account, you're essentially shut-out from all these services.
+To make digital payments you typically need a bank account◊sn{banks-required} and those without are often called ◊em{unbanked}. Paying bills digitally, using credit cards and even mobile payments all require a bank account. If you don't have a bank account, you're essentially shut-out from the digital economy.
 
 
 ◊ndef["banks-required"]{
@@ -63,14 +63,14 @@ While the fraction of unbanked adults are high in the developing countries, with
 
 ◊subhead{Why are they unbanked?}
 
-The ◊link[findex-report]{Global Findex database} also tried to look at why people stay unbanked:◊sn{read-it}
+The ◊link[findex-report]{Global Findex database} also tried examine why people stay unbanked:◊sn{read-it}
 
 ◊ndef["read-it"]{
     If this is interesting to you I suggest you ◊link[findex-report]{give the report a read}. There are tons of different statistics and I only refer to a fraction of the data available.
 }
 
 ◊img[#:src "images/why-unbanked.svg"]{
-    Reported reason for adults not having a bank account. More than one reason could be given.
+    Reported reason for adults not having a bank account, 2017. More than one reason could be given.
     Source ◊link[findex-report]{Global Findex database}.
 }
 
@@ -90,7 +90,7 @@ So about ◊strong{420 million} do have access to internet while being unbanked.
 ◊(define undesirable-chapter "/undesirable_businesses.html")
 
 ◊ndef["venezuela-internet"]{
-    Reportedly Venezuela has one of the worst internet speeds in the world. Yet they still ◊link[venezuela-social-media]{use social media actively}. Interestingly they also ◊link[venezuela-mining]{mine Bitcoin}.
+    Reportedly Venezuela has one of the worst internet speeds in the world. Yet they still ◊link[venezuela-social-media]{use social media actively} and interestingly they also ◊link[venezuela-mining]{mine Bitcoin}.
 }
 
 ◊ndef["handelsbanken"]{
@@ -160,11 +160,11 @@ One of the best ways to fight poverty is ◊link[economic-growth-poverty]{econom
 
 ◊problem-header{Shut-out from society}
 
-Now it might be relatively fine for you to live in a country without using a bank account---if most don't have one either. But what if you live in a country where digital payments are an integral part of society?
+Now it might be fine for you to live in a country without using a bank account---if most don't have one either. But what if you live in a country where digital payments are an integral part of society?
 
 For example here in Sweden almost everyone and everything uses digital payments. It would be ◊strong{extremely} difficult for you to live here without a credit card or a bank to pay your bills.
 
-As I went on a small business trip just a couple of weeks ago to the middle parts of Sweden I accidentally forgot my wallet---with my credit cards and identification card. I borrowed some cash from a friend, thinking I could use them to pay for lunch and dinner, but surprisingly most restaurants didn't accept cash. So I still had to ask my co-workers to pay for me...◊sn{moved-to-sweden}
+As I went on a small business trip just a couple of weeks ago to the middle parts of Sweden I accidentally forgot my wallet, including my credit cards and identification card. I borrowed some cash from a friend, thinking I could use them to pay for lunch and dinner, but surprisingly most restaurants didn't accept cash. So I still had to ask my co-workers to pay for me...◊sn{moved-to-sweden}
 
 ◊ndef["moved-to-sweden"]{
     Similar story of a co-worker who moved to Sweden. There was a delay for him to get his social security number, and thus his bank account, so he had to be taken care of by people at work until it got sorted out.
@@ -173,7 +173,7 @@ As I went on a small business trip just a couple of weeks ago to the middle part
 I don't really know how people without a bank account manage in Sweden or what tourists will do if their credit card stops working? With the current development they might not even be able to use public bathrooms!◊sn{public-bathroom}
 
 ◊ndef["public-bathroom"]{
-    In fact when I last visited a public bathroom in a shopping mall they had a new payment system there. Instead of inserting a coin to get the door open---you guessed it---you had to pay with a credit card or with Swish. I guess the kids or tourists, who don't have a credit card or Swish yet, has to hold it in.
+    In fact when I last visited a public bathroom in a shopping mall they had a new payment system there. Instead of inserting a coin to get the door open---you guessed it---you had to pay with a credit card or with Swish (a mobile payment app, connected to your bank account). I guess the kids or tourists, who don't have a credit card or Swish, has to hold it in.
 }
 
 In China mobile payments are growing like mad. If you're a tourist you should get them, otherwise you'll have a tough time. This in combination with China's ◊em{social credit}, which ranks people's behaviors to make sure they're in line with the party, is a recipe for disaster. If you score badly you might not be allowed to fly and maybe you'll lose the privilege of digital payments.
@@ -182,7 +182,7 @@ In China mobile payments are growing like mad. If you're a tourist you should ge
 ◊(define rel-shut-out "#shut-out-from-society")
 
 ◊(define (problem-header x)
-   `(h3
+   `(h3 [[class "economic-problem"]]
      (a [[name ,(to-name x)]] ,x)))
 
 
@@ -195,10 +195,10 @@ In China mobile payments are growing like mad. If you're a tourist you should ge
 Of course "just use cryptocurrencies" isn't the answer to all problems for the unbanked---they aren't a replacement for banks in the first place.◊sn{banking-the-unbanked} But it is a helpful tool which, as adoption grow, might be helpful for many without bank access.
 
 ◊ndef["banking-the-unbanked"]{
-    "Banking the unbanked" is something cryptocurrency advocates like to use, and I even had it as the title of this chapter when I initially planned out the chapters. But it's misleading as banks does things cryptocurrencies doesn't:
+    "Banking the unbanked" is a term cryptocurrency advocates like to use, and I even used it as the title of this chapter during the initial planning phase. But it's misleading as banks do things cryptocurrencies don't, for instance:
 
-    1. Give out loans.
-    2. Safeguard your money (while you can hold cryptocurrencies yourself, it makes sense for many to let others hold them for you).
+    1. Gives out loans.
+    2. Safeguards your money (while you can hold cryptocurrencies yourself, it makes sense for many to let others hold them for you).
 }
 
 ◊ol{
@@ -214,7 +214,7 @@ Of course "just use cryptocurrencies" isn't the answer to all problems for the u
 
         There are no fees for opening or having an account like with traditional banks and there are no KYC associated costs. There is only a small transaction cost you pay when using a cryptocurrency.
     }
-    ◊li{You ◊link[no-third-party]{don't need to trust a third party}.
+    ◊li{You ◊link[no-third-party]{don't need to trust a third party} with your money.
 
         In countries with high corruption you might not trust your local bank enough to handle your money. With cryptocurrencies you can hold your money yourself and there's no need for a third party to use it (such as a bank making the payment for you).
     }
