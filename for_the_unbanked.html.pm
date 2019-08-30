@@ -69,25 +69,10 @@ The ◊link[findex-report]{Global Findex database} also tried to look at why peo
     If this is interesting to you I suggest you ◊link[findex-report]{give the report a read}. There are tons of different statistics and I only refer to a fraction of the data available.
 }
 
-◊todo{A nice bar chart here}
-
-Not enough money
-61%    19%
-Do not need an account
-30%     3%
-Accounts too expensive
-26%     1%
-Family member already has an account
-26%     5%
-Financial institutions too far away
-22%     1%
-Lack of necessary documentation
-20%     2%
-Lack of trust
-16%     1%
-Religious reasons
-6%      0%
-(People could select several options)
+◊img[#:src "images/why-unbanked.svg"]{
+    Reported reason for adults not having a bank account. More than one reason could be given.
+    Source ◊link[findex-report]{Global Findex database}.
+}
 
 Most cite several different reasons, making it hard to rank the issues in importance. For example many say they don't need an account, but if the other barriers were to disappear they might find accounts useful if only they had access to them. At least this gives a sense of what issues are present.
 
