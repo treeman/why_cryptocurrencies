@@ -21,7 +21,8 @@
      undesirable_businesses.html
      freezing_of_merchant_accounts.html
      uncensorable_donations.html
-     "Banking the unbanked")
+     "Banking the unbanked"
+     "Borderless payments")
     ("A better currency"
      "The financial crisis, bad loans and bail-outs"
      "A borderless currency"
