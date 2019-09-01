@@ -51,8 +51,6 @@ Ignorance is strength.”
 
 Satoshi quote
 
-
-
 Cashing In: How to Make Negative Interest Rates Work 
 <https://news.ycombinator.com/item?id=20079686>
 
@@ -117,11 +115,13 @@ Why are Venezuelans seeking refuge in cryptos?
 
 <https://www.reddit.com/r/btc/comments/cb7qw1/ama_destroying_myths_about_the_use_of/>
 
+Remittance (or move this to a chapter below a better payment system??)
+
 ## Avoids hyperinflation
 
 Fixed setup, nobody can initiate hyperinflation
 Venezuela
-
+Zimbabwe
 
 
 # Brave new world
@@ -220,7 +220,10 @@ A peer-to-peer voting algorithm, without blockchain
 # Bitcoin documentaries
 
 <https://coinsutra.com/bitcoin-documentaries/>
-* The Rise & Rise of Bitcoin
+* The Rise & Rise of Bitcoin (2014)
+    "The idea was to create money whose value couldn't be manipulated by a central authority."
+    Cyprus, stole money from the people's bank accounts
+    Good for understanding the beginning history of Bitcoin
 * Bitcoin-Shape The Future
 * The Bitcoin Gospel
 * The Blockchain and Us
@@ -228,7 +231,9 @@ A peer-to-peer voting algorithm, without blockchain
 * Bitcoin Full Documentary
 * Bitcoin Documentary By Discovery Channel
 * The Bitcoin Phenomenon
-* Banking On Bitcoin
+* Banking On Bitcoin (2016)
+    "If privacy is outlawed, only outlaws will have privacy"
+    Start up again at 50 min
 
 # Books
 
@@ -273,4 +278,10 @@ Hong Kong ISP Association’s Statement on Selective Blocking of Internet Servic
 
 Lot's of economic books:
 <https://www.reddit.com/r/btc/comments/cp9ows/just_a_few_of_the_books_i_read_cover_to_cover/>
+
+JPMorgan: We Believe The Dollar Could Lose Its Status As World's Reserve Currency
+<https://www.zerohedge.com/news/2019-07-23/jpmorgan-we-believe-dollar-could-lose-its-status-worlds-reserve-currency>
+
+# Unsorted
+
 
