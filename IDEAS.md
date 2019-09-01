@@ -45,10 +45,6 @@ Ignorance is strength.”
 
 # Better digital payments
 
-## Borderless payments
-
-Should focus on remittance
-
 # A better currency
 
 <https://www.bloomberg.com/opinion/articles/2019-05-06/banks-look-safer-with-deposits>
@@ -99,6 +95,8 @@ Safe deposit boxes aren't safe
 
 This chapter should focus on capital flight and further integration into the global economy.
 How Venezuelans are seeking refuge in cryptos?
+
+Also remittance.
 
 The charity EatBCH feeds Venezuelans.  Sending money to an inaccessible country using cryptocurrencies.
 <https://twitter.com/eatBCH>
