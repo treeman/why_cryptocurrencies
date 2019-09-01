@@ -10,9 +10,6 @@
       #:src "Mr. Robot"]{
     Give a man a gun and he can rob a bank, but give a man a bank, and he can rob the world.
   }
-  ◊qt[#:author "Henry Ford"]{
-      It is well enough that people of the nation do not understand our banking and monetary system, for if they did, I believe there would be a revolution before tomorrow morning.
-  }
 }
 
 xyz

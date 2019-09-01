@@ -23,7 +23,7 @@ Before getting interested in cryptocurrencies I too had never asked these questi
 First let's look at some interesting historical examples of things that have been used as money. Some are predictable but others are quite perplexing.
 
 ◊ndef["money-or-currency"]{
-    The words money and currency are often used interchangeably. Although I might be sloppy in my usage there is a subtle difference. Money refers to an intangible concept---you cannot reach out and grab it. Currency instead refers to the physical coins themselves.
+    The terms ◊em{money} and ◊em{currency} are often used interchangeably. Although I might be sloppy in my usage there is a subtle difference. Money refers to an intangible concept---you cannot reach out and grab it. Currency instead refers to the physical coins themselves.
 
     If that's the definition then maybe cryptocurrencies should instead be called crypto-money?
 

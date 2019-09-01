@@ -24,7 +24,7 @@
      for_the_unbanked.html)
     (better_currency.html
      financial_crisis.html
-     "The blind leading the blind"
+     blind_leading_the_blind.html
      "Protection against government seizures"
      "A borderless currency"
      "Avoids hyperinflation")

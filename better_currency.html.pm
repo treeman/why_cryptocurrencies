@@ -9,22 +9,31 @@
   ◊qt[#:author "Thomas Jefferson"]{
     I believe that banking institutions are more dangerous to our liberties than standing armies. Already they have raised up a monied aristocracy that has set the government at defiance. The issuing power (of money) should be taken away from the banks and restored to the people to whom it properly belongs.
   }
-
-  ◊qt[#:author "Mayer Amschel Rothschild"]{
-    Let me issue and control a nation's money and I care not who writes the laws.
-  }
 }
 
-Our focus during the last section was on the use of cryptocurrencies as a payment system. But in fact Bitcoin wasn't invented to be "just" an improved PayPal, it was made to be something more---which could have much further reaching consequences---a completely new form of money.
+Our focus during the last section was on the use of cryptocurrencies as a payment system. But in fact Bitcoin wasn't invented to be "just" an improved PayPal, it was made to be something more---which could have much further reaching consequences---a completely new form of money.◊mn{currency-money}
 
-We previously asked ourself ◊link[what-is-money]{what money is} and we found that money is a tool to make trade more efficient. There are a number of properties good money should have, such as being durable and divisible, and there's a case to be made that cryptocurrencies can be ◊link[are-cryptos-money]{considered a form of money}---with many unique and beneficial properties.
+◊ndef["currency-money"]{
+    The term ◊em{money} refers to an intangible concept and ◊em{currency} is the actual thing used as money.
 
-In this section we'll focus on benefits of using cryptocurrencies as money. Cryptocurrencies have ◊link[crypto-properties]{several good properties}, but for this section the most important one is the lack of central control over the money supply. It's similar to gold in this respect, except that cryptocurrency validity can be verified instantly but it's much more ◊link[fake-gold]{difficult with gold}.
+    For example cryptocurrencies is money---you cannot pay me with "3 cryptocurrency". And Bitcoin (BTC) is a currency because you can send 3 BTC to me.
+}
+
+We previously asked ourself ◊link[what-is-money]{what money is} and we found that money is a tool to make trade more efficient. There are a number of properties good money should have, such as being durable and divisible, and there's a case to be made that cryptocurrencies can be ◊link[are-cryptos-money]{considered a form of money}---with some beneficial and unique properties.
+
+In this section we'll focus on benefits of using cryptocurrencies as money. Cryptocurrencies have ◊link[crypto-properties]{several good properties}, but for this section the most important one is the lack of central control over the money supply. It's similar to gold in this respect, except that cryptocurrencies can be validated instantly but it's much more ◊link[fake-gold]{difficult with gold}.
+
+◊qt[#:author "Mayer Amschel Rothschild"]{
+    Let me issue and control a nation's money and I care not who writes the laws.
+}
 
 
-◊; https://www.youtube.com/watch?v=lbarjpJhSLw
 
 ◊(define crypto-properties "/properties_of_a_cryptocurrency.html")
 ◊(define what-is-money "/what_is_money.html")
 ◊(define are-cryptos-money "/are_cryptocurrencies_money.html")
 ◊(define fake-gold "https://www.reuters.com/article/us-gold-swiss-fakes-exclusive/exclusive-fake-branded-bars-slip-dirty-gold-into-world-markets-idUSKCN1VI0DD?utm_source=reddit.com")
+
+
+◊; https://www.youtube.com/watch?v=lbarjpJhSLw
+◊; <https://www.bloomberg.com/opinion/articles/2019-05-06/banks-look-safer-with-deposits>
