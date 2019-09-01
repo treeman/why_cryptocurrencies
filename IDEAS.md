@@ -233,6 +233,10 @@ A peer-to-peer voting algorithm, without blockchain
 2. After the Music Stopped: The Financial Crisis, the Response, and the Work Ahead 
 3. The case against the FED
 
+# Videos
+
+The Money Masters
+<https://www.youtube.com/watch?v=lbarjpJhSLw>
 
 # Research/misc links
 
