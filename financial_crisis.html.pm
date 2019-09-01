@@ -29,3 +29,7 @@ xyz
 ◊;https://thenextweb.com/hardfork/2018/10/12/bitcoin-easter-egg/
 ◊;https://www.thetimes03jan2009.com/
 
+This refers to The ◊link[times-img]{Times issued the 3rd of January}, 2009 with the title "Chancellor on brink of second bailout for banks" and the subtitle "Billions may be needed as lending squeeze tightens". You can ◊link[times-20090103]{read it online} (although the title is different compared to the printed copy).
+
+◊(define times-img "https://imgur.com/pGYXHJh")
+◊(define times-20090103 "https://www.thetimes.co.uk/article/chancellor-alistair-darling-on-brink-of-second-bailout-for-banks-n9l382mn62h")

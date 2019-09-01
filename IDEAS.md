@@ -45,9 +45,22 @@ Ignorance is strength.”
 
 # A better currency
 
+<https://www.bloomberg.com/opinion/articles/2019-05-06/banks-look-safer-with-deposits>
+
 ## Financial crisis
 
 Satoshi quote
+
+
+
+Cashing In: How to Make Negative Interest Rates Work 
+<https://news.ycombinator.com/item?id=20079686>
+
+Germany in Uproar as Negative Rates Threaten Saving Obsession 
+<https://news.ycombinator.com/item?id=20792765>
+
+More money than anyone imagined: an explanation for why the bubble never burst 
+<https://news.ycombinator.com/item?id=20535390>
 
 ## Blind leading the blind
 
@@ -67,6 +80,17 @@ India voids 500 and 1000 rupee bills
 Macedonia bans fiat cash payments above 560
 <https://www.reddit.com/r/btc/comments/bvx83n/macedonia_bans_fiat_cash_payments_above_560/>
 
+North Macedonia limits payment in cash up to 500 euros:
+<http://www.china.org.cn/world/Off_the_Wire/2019-06/01/content_74845553.htm>
+
+Man walks through Boston Logan Airport with $50K in a backpack; government wants to keep it
+<https://www.masslive.com//boston/2019/02/man-walks-through-boston-logan-airport-with-50k-in-a-backpack-government-wants-to-keep-it.html>
+
+Safe deposit boxes aren't safe
+<https://news.ycombinator.com/item?id=20545276>
+
+<https://www.reddit.com/r/btc/comments/c6cfbf/let_me_tell_you_a_tale_about_ecuador_that_abused/>
+
 ## A borderless currency
 
 The charity EatBCH feeds Venezuelans.  Sending money to an inaccessible country using cryptocurrencies.
@@ -82,6 +106,14 @@ I wanted to help someone in #Venezuela , so I'm tutoring a novice #JavaScript de
 
 Why China has banned cryptocurrencies: capital flight from the country
 
+"I Don't Want My Money Trapped Here" - Hong Kong Hit By Capital Exodus As Protests Drag On
+<https://www.zerohedge.com/news/2019-08-18/i-dont-want-my-money-trapped-here-hong-kong-hit-capital-exodus-protests-drag>
+
+Why are Venezuelans seeking refuge in cryptos?
+<https://www.bbc.com/news/business-47553048>
+
+<https://www.reddit.com/r/btc/comments/cb7qw1/ama_destroying_myths_about_the_use_of/>
+
 ## Avoids hyperinflation
 
 Fixed setup, nobody can initiate hyperinflation
@@ -90,6 +122,21 @@ Venezuela
 
 
 # Brave new world
+
+## Separation of money and state
+
+<https://news.bitcoin.com/the-most-important-aspect-of-bitcoin-is-the-separation-of-money-and-state/>
+
+## Swiss bank account
+
+Credit cards have a privacy problem
+<https://news.ycombinator.com/item?id=20800115>
+
+Administration Using the Full Power of the Surveillance State on Whistleblowers
+<https://news.ycombinator.com/item?id=20615084>
+
+
+<https://www.cbc.ca/news/business/banking-information-shared-with-third-parties-1.5102931>
 
 ## Black markets
 
@@ -129,6 +176,14 @@ This is exactly what cryptocurrencies and dark net markets gives you.
 WeChat is Watching: Living in China with the app that knows everything about me
 <https://news.ycombinator.com/item?id=20173549>
 
+China bans 23M from buying travel tickets as part of 'social credit' system
+<https://news.ycombinator.com/item?id=19281192>
+
+25M Brits would struggle in a cashless society
+<https://news.ycombinator.com/item?id=19407730>
+
+Sweden's cashless society is no longer a utopia
+<https://news.ycombinator.com/item?id=18422422>
 
 # Other use
 
@@ -156,18 +211,37 @@ Cryptocurrencies have weak relationships with established asset classes, which c
 ## Voting
 
 A peer-to-peer voting algorithm, without blockchain
-http://vixra.org/pdf/1905.0239v1.pdf
+<http://vixra.org/pdf/1905.0239v1.pdf>
 
+
+# Bitcoin documentaries
+
+<https://coinsutra.com/bitcoin-documentaries/>
+* The Rise & Rise of Bitcoin
+* Bitcoin-Shape The Future
+* The Bitcoin Gospel
+* The Blockchain and Us
+* Bitcoin in Uganda – Empowering People
+* Bitcoin Full Documentary
+* Bitcoin Documentary By Discovery Channel
+* The Bitcoin Phenomenon
+* Banking On Bitcoin
+
+# Books
+
+1. On writing well
+2. After the Music Stopped: The Financial Crisis, the Response, and the Work Ahead 
+3. The case against the FED
 
 
 # Research/misc links
 
 <https://www.reddit.com/r/btc/comments/ca8l9c/devices_on_standby_in_the_us_alone_could_power/>
-<https://www.reddit.com/r/btc/comments/c6cfbf/let_me_tell_you_a_tale_about_ecuador_that_abused/>
 <https://www.reddit.com/r/btc/comments/c7vshk/local_us_government_to_use_bitcoin_cash_slp_tokens/>
-<https://www.reddit.com/r/btc/comments/cb7qw1/ama_destroying_myths_about_the_use_of/>
-<https://www.reddit.com/r/Bitcoin/comments/2ityg2/warning_bitcoin_address_blacklists_have_been/>
 <https://www.reddit.com/r/Bitcoin/comments/3ep1wa/varoufakis_reveals_cloak_and_dagger_plan_b_for/>
+
+LukeJr blacklist gentoo
+<https://www.reddit.com/r/Bitcoin/comments/2ityg2/warning_bitcoin_address_blacklists_have_been/>
 
 What's the use for Bitcoin?
 <https://news.ycombinator.com/item?id=9311843>
@@ -175,84 +249,21 @@ What's the use for Bitcoin?
 Bitcoin's academic pedigree
 <https://news.ycombinator.com/item?id=15134670>
 
-Sweden's cashless society is no longer a utopia
-<https://news.ycombinator.com/item?id=18422422>
 
 What is money?
 <https://news.bitcoin.com/back-to-basics-what-is-money/?utm_source=OneSignal%20Push&utm_medium=notification&utm_campaign=Push%20Notifications>
 
-China bans 23M from buying travel tickets as part of 'social credit' system
-<https://news.ycombinator.com/item?id=19281192>
-
-25M Brits would struggle in a cashless society
-<https://news.ycombinator.com/item?id=19407730>
-
-Why are Venezuelans seeking refuge in cryptos?
-<https://www.bbc.com/news/business-47553048>
 
 Life on the wrong side of China’s social credit system
 <https://news.ycombinator.com/item?id=19493033>
 
-<https://www.cbc.ca/news/business/banking-information-shared-with-third-parties-1.5102931>
-
 China forced organ harvesting
 <https://news.ycombinator.com/item?id=20249489>
-
-Safe deposit boxes aren't safe
-<https://news.ycombinator.com/item?id=20545276>
-
-More money than anyone imagined: an explanation for why the bubble never burst 
-<https://news.ycombinator.com/item?id=20535390>
-
-Administration Using the Full Power of the Surveillance State on Whistleblowers
-<https://news.ycombinator.com/item?id=20615084>
-
-"I Don't Want My Money Trapped Here" - Hong Kong Hit By Capital Exodus As Protests Drag On
-<https://www.zerohedge.com/news/2019-08-18/i-dont-want-my-money-trapped-here-hong-kong-hit-capital-exodus-protests-drag>
-
-<https://news.bitcoin.com/the-most-important-aspect-of-bitcoin-is-the-separation-of-money-and-state/>
-
-Germany in Uproar as Negative Rates Threaten Saving Obsession 
-<https://news.ycombinator.com/item?id=20792765>
-
-Credit cards have a privacy problem
-<https://news.ycombinator.com/item?id=20800115>
 
 Hong Kong ISP Association’s Statement on Selective Blocking of Internet Services
 <https://news.ycombinator.com/item?id=20824759>
 
-<https://www.bloomberg.com/opinion/articles/2019-05-06/banks-look-safer-with-deposits>
 
 Lot's of economic books:
 <https://www.reddit.com/r/btc/comments/cp9ows/just_a_few_of_the_books_i_read_cover_to_cover/>
 
-
-https://coinsutra.com/bitcoin-documentaries/
-
-https://honest.cash/Olsm/why-stripe-is-the-worst-choice-for-your-new-startup-business-1569/
-https://www.masslive.com//boston/2019/02/man-walks-through-boston-logan-airport-with-50k-in-a-backpack-government-wants-to-keep-it.html
-
-https://www.reddit.com/r/btc/comments/arbqwt/anarchapulco_ron_paul_takes_the_stage_attacks_the/
-https://dashnews.org/9-reasons-cryptocurrency-is-better-than-credit-cards-today/
-
-https://news.ycombinator.com/item?id=19281192
-
-https://medium.com/splytcore/simple-decryption-of-satoshi-nakamotos-hidden-message-in-the-blockchain-42b5fe9b3c72
-    https://blockchair.com/bitcoin/block/0
-
-    Coinbase data:
-    The Times 03/Jan/2009 Chancellor on brink of second bailout for banks
-
-    https://imgur.com/pGYXHJh
-
-https://www.cbsnews.com/news/kroger-visa-fee-dispute-grocery-bans-cards-from-more-stores/
-
-https://news.ycombinator.com/item?id=19493033
-
-https://www.merriam-webster.com/dictionary/fiat
-
-North Macedonia limits payment in cash up to 500 euros:
-http://www.china.org.cn/world/Off_the_Wire/2019-06/01/content_74845553.htm
-
-Negative interest rates:
-https://news.ycombinator.com/item?id=20079686

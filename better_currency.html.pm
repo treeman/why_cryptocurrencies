@@ -15,7 +15,7 @@
   }
 }
 
-Our focus during the last section has been on the use of cryptocurrencies as a payment system. But in fact Bitcoin wasn't invented to be "just" an improved PayPal, it was made to be something more---which could have much further reaching consequences---a completely new form of money.
+Our focus during the last section was on the use of cryptocurrencies as a payment system. But in fact Bitcoin wasn't invented to be "just" an improved PayPal, it was made to be something more---which could have much further reaching consequences---a completely new form of money.
 
 We previously asked ourself ◊link[what-is-money]{what money is} and we found that money is a tool to make trade more efficient. There are a number of properties good money should have, such as being durable and divisible, and there's a case to be made that cryptocurrencies can be ◊link[are-cryptos-money]{considered a form of money}---with many unique and beneficial properties.
 
