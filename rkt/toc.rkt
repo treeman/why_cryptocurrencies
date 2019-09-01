@@ -26,7 +26,7 @@
      financial_crisis.html
      blind_leading_the_blind.html
      "Protection against government seizures"
-     "A borderless currency"
+     "A global currency"
      "Avoids hyperinflation")
     ("Brave new world"
      "Separation of money and state"

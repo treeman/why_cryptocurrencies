@@ -91,7 +91,10 @@ Safe deposit boxes aren't safe
 
 <https://www.reddit.com/r/btc/comments/c6cfbf/let_me_tell_you_a_tale_about_ecuador_that_abused/>
 
-## A borderless currency
+## A global currency
+
+This chapter should focus on capital flight and further integration into the global economy.
+How Venezuelans are seeking refuge in cryptos?
 
 The charity EatBCH feeds Venezuelans.  Sending money to an inaccessible country using cryptocurrencies.
 <https://twitter.com/eatBCH>
