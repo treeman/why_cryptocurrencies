@@ -25,10 +25,10 @@
      "Borderless payments")
     ("A better currency"
      "The financial crisis, bad loans and bail-outs"
-     "A borderless currency"
-     "Protection against hyperinflation"
-     "India voids 500 and 1000 rupee bills"
-     "Protection against government seizures")
+     "The blind leading the blind"
+     "Protection against government seizures"
+     "A global currency"
+     "Avoids hyperinflation")
     ("Brave new world"
      "Separation of money and state"
      "A swiss bank account in your pocket"
