@@ -25,7 +25,7 @@
     ("A better currency"
      "The financial crisis, bad loans and bail-outs"
      "The blind leading the blind"
-     "Protection against government seizures"
+     protection_against_government_seizures.html
      "A global currency"
      "Avoids hyperinflation")
     ("Brave new world"
