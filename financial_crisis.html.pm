@@ -12,7 +12,11 @@
   }
 }
 
-xyz
+◊ol{
+    ◊li{Background on the financial crisis}
+    ◊li{How the banks were bailed out}
+    ◊li{The aftermath, nothing really changed}
+}
 
 
 
