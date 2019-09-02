@@ -62,6 +62,9 @@ Germany in Uproar as Negative Rates Threaten Saving Obsession
 More money than anyone imagined: an explanation for why the bubble never burst 
 <https://news.ycombinator.com/item?id=20535390>
 
+Iceland jails bankers:
+<https://www.bloomberg.com/news/features/2016-03-31/welcome-to-iceland-where-bad-bankers-go-to-prison>
+
 ## Blind leading the blind
 
 ”Även om erfarenheten med negativa räntor är begränsade drar vi slutsatsen att det har bidragit till ytterligare penningpolitiska stimulanser och enklare ekonomiska villkor”, skriver IMF:s finansiella rådgivare Jose Viñals.
