@@ -35,10 +35,10 @@
      "The cashless dystopia"
      "New asset class?")
     ("Extensions"
-     "Provably fair gambling"
-     "Verifiable voting"
-     "Uncensorable Twitter"
      "Timestamping service"
+     "Provably fair gambling"
+     "Uncensorable Twitter"
+     "Verifiable voting"
      "Tokens")
     (appendix.html
      bitcoin_whitepaper.html
