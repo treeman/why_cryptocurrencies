@@ -26,7 +26,7 @@
      "The financial crisis, bad loans and bail-outs"
      "The blind leading the blind"
      "Protection against government seizures"
-     "A global currency"
+     global_currency.html
      "Avoids hyperinflation")
     ("Brave new world"
      "Separation of money and state"
