@@ -240,7 +240,6 @@ A peer-to-peer voting algorithm, without blockchain
 * The Bitcoin Phenomenon
 * Banking On Bitcoin (2016)
     "If privacy is outlawed, only outlaws will have privacy"
-    Start up again at 50 min
 
 # Books
 
@@ -268,6 +267,8 @@ Supposeduly safe securities are mostly shit.
 
 Fish doesn't sell. Throw it in the garbage and take the loss?
 No way, we throw the fish into seafood stew! That is a CDO.
+
+    Continue at 1:41
 
 # Research/misc links
 
