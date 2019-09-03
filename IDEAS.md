@@ -43,6 +43,8 @@ Ignorance is strength.”
 
 <https://www.reddit.com/r/btc/comments/cuqqe5/let_me_issue_and_control_a_nations_money_and_i/>
 
+# Better digital payments
+
 # A better currency
 
 <https://www.bloomberg.com/opinion/articles/2019-05-06/banks-look-safer-with-deposits>
@@ -59,6 +61,9 @@ Germany in Uproar as Negative Rates Threaten Saving Obsession
 
 More money than anyone imagined: an explanation for why the bubble never burst 
 <https://news.ycombinator.com/item?id=20535390>
+
+Iceland jails bankers:
+<https://www.bloomberg.com/news/features/2016-03-31/welcome-to-iceland-where-bad-bankers-go-to-prison>
 
 ## Blind leading the blind
 
@@ -89,7 +94,12 @@ Safe deposit boxes aren't safe
 
 <https://www.reddit.com/r/btc/comments/c6cfbf/let_me_tell_you_a_tale_about_ecuador_that_abused/>
 
-## A borderless currency
+## A global currency
+
+This chapter should focus on capital flight and further integration into the global economy.
+How Venezuelans are seeking refuge in cryptos?
+
+Also remittance.
 
 The charity EatBCH feeds Venezuelans.  Sending money to an inaccessible country using cryptocurrencies.
 <https://twitter.com/eatBCH>

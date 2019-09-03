@@ -12,7 +12,11 @@
   }
 }
 
-xyz
+◊ol{
+    ◊li{Background on the financial crisis}
+    ◊li{How the banks were bailed out}
+    ◊li{The aftermath, nothing really changed}
+}
 
 
 
@@ -30,3 +34,13 @@ This refers to The ◊link[times-img]{Times issued the 3rd of January}, 2009 wit
 
 ◊(define times-img "https://imgur.com/pGYXHJh")
 ◊(define times-20090103 "https://www.thetimes.co.uk/article/chancellor-alistair-darling-on-brink-of-second-bailout-for-banks-n9l382mn62h")
+
+
+◊; Cashing In: How to Make Negative Interest Rates Work 
+◊; <https://news.ycombinator.com/item?id=20079686>
+
+◊; Germany in Uproar as Negative Rates Threaten Saving Obsession 
+◊; <https://news.ycombinator.com/item?id=20792765>
+
+◊; More money than anyone imagined: an explanation for why the bubble never burst 
+◊; <https://news.ycombinator.com/item?id=20535390>
