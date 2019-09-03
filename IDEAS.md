@@ -243,6 +243,22 @@ A peer-to-peer voting algorithm, without blockchain
 The Money Masters
 <https://www.youtube.com/watch?v=lbarjpJhSLw>
 
+
+## The Big Short
+
+    It ain't what you don't know that gets you into trouble.
+    It's what you know for sure that just ain't so.
+            Mark Twain
+
+Mortgage backed securities (mortgage bonds)
+But ran out of mortgages. The banks started filling these bonds with riskier and riskier mortgages (subprime).
+Supposeduly safe securities are mostly shit.
+
+    bad loans, it's a time bomb
+
+Fish doesn't sell. Throw it in the garbage and take the loss?
+No way, we throw the fish into seafood stew! That is a CDO.
+
 # Research/misc links
 
 <https://www.reddit.com/r/btc/comments/ca8l9c/devices_on_standby_in_the_us_alone_could_power/>
