@@ -24,10 +24,10 @@ If it was the other way around, "guilty until proven innocent", then it would op
 ◊(define presumption-of-innocence "https://en.wikipedia.org/wiki/Presumption_of_innocence")
 ◊(define un-universal-human-rights "https://www.un.org/en/universal-declaration-human-rights/")
 
-However in the United States there's something called ◊link[civil-forfeiture]{◊em{civial asset forfeiture}}. It's a legal tool which allows the police to seize your car, home, money or other assets without ever charging you with a crime. You read that right, they can seize your assets ◊strong{without charging you with a crime}. There ◊link[10-cases-forfeiture]{are tons} of stories of ◊link[7-cases-forfeiture]{innocent people} having their ◊link[ef-cases]{money or property confiscated}, for example:
+However in the United States there's something called ◊link[civil-forfeiture]{◊em{civial asset forfeiture}}. It's a legal tool which allows the police to seize your car, home, money or other assets without ever charging you with a crime. You read that right, they can seize your assets ◊strong{without charging you with a crime}. There are ◊link[10-cases-forfeiture]{tons of stories} of ◊link[7-cases-forfeiture]{innocent people} having their ◊link[ef-cases]{money or property confiscated}, for example:
 
 ◊ul{
-    ◊li{NYPD officers ◊link[nypd-civil-forfeiture]{steals $4,800} in a warrantless search.
+    ◊li{NYPD officers ◊link[nypd-civil-forfeiture]{stole $4,800} in a warrantless search.
 
         When he went to retrieve his money he was told it was too late and it had already been deposited into the NYPD's pension fund.
     }
@@ -42,6 +42,27 @@ However in the United States there's something called ◊link[civil-forfeiture]{
 }
 
 On a technical level it's not the owner that's charge with a crime, but the property itself. That's why it's legal for the police to seize a house because someone sold drugs in the house, even if the owners don't know about it.
+
+This really flips the "innocent until proven guilty" mantra on it's head. You're often---but not always!---able to contest the seizure to get back your assets. If you're lucky you'll get them back, but more likely you'll get locked down in a year long legal battle with super expensive lawyer fees. Unfortunately it's more expensive to contest the seizure so many are forced to accept the loss.
+
+Maybe there were some good intentions when these laws mere made, but today they simply don't work as intended. I'll leave it to Columbia's former police chief to explain:
+
+◊qt[#:author "Columbia's Police Chief Ken Burton"
+    #:url "https://www.themaneater.com/stories/outlook/police-chief-ken-burton-calls-forfeiture-funds-pen"
+    #:date "2012"]{
+    It’s usually based on a need---well, I take that back, There’s some limitations on it. ... Actually, there’s not really on the forfeiture stuff. We just usually base it on ◊strong{something that would be nice to have} that we can’t get in the budget, for instance. We try not to use it for things that we need to depend on because we need to have those purchased. It’s kind of like pennies from heaven---◊strong{it gets you a toy} or something that you need is the way that we typically look at it to be perfectly honest.
+
+    (Emphasis mine)
+}
+
+The money has gone to ◊link[steak-forfeiture]{extravagant Christmas parties, sirloin beef and a $8,200 security system} for the District Attorney's private home. And of course some managed to spend it on ◊link[forfeiture-alcohol]{alcohol, prostitutes and marijuana}(!). Then there's the case where another District Attorney ◊link[forfeiture-hawaii]{spend $27,000 to take his whole office to Hawaii}, including the approving district judge.
+
+In practice civil asset forfeiture is state-sanctioned theft where the police are acting like ◊link[highway-robbers]{highway robbers}.
+
+◊(define highway-robbers "https://www.aclu.org/press-releases/aclu-announces-settlement-highway-robbery-cases-texas")
+◊(define forfeiture-hawaii "https://www.npr.org/templates/story/story.php?storyId=104065589&t=1567527486222")
+◊(define forfeiture-alcohol "https://www.policemag.com/348174/prosecutor-mich-cops-spent-forfeiture-funds-on-alcohol-prostitutes")
+◊(define steak-forfeiture "https://www.economist.com/democracy-in-america/2013/10/15/fighting-crime-through-superior-steak")
 
 ◊(define houston-forfeiture "https://ij.org/case/houston-forfeiture")
 ◊(define parents-house-seized "https://edition.cnn.com/2014/09/03/us/philadelphia-drug-bust-house-seizure/")
@@ -60,12 +81,6 @@ On a technical level it's not the owner that's charge with a crime, but the prop
 
 
 
-◊qt[#:author "Columbia Police Chief Ken Burton"
-    #:url "https://www.themaneater.com/stories/outlook/police-chief-ken-burton-calls-forfeiture-funds-pen"]{
-    It’s usually based on a need---well, I take that back, There’s some limitations on it. ... Actually, there’s not really on the forfeiture stuff. We just usually base it on ◊strong{something that would be nice to have} that we can’t get in the budget, for instance. We try not to use it for things that we need to depend on because we need to have those purchased. It’s kind of like pennies from heaven---◊strong{it gets you a toy} or something that you need is the way that we typically look at it to be perfectly honest.
-
-    (Emphasis mine)
-}
 
 
 ◊(define civil-forfeiture "http://endforfeiture.com/")
