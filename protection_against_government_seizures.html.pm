@@ -15,10 +15,66 @@ TODO
 ◊; https://www.vox.com/world/2016/11/29/13763070/india-modi-cash-demonetization-protests
 ◊; https://www.theguardian.com/world/2016/nov/10/rupee-note-cancellation-panic-in-india-banks-500-1000
 
-◊subhead{Civil forfeiture}
+◊subhead{Civil asset forfeiture}
+
+Perhaps you've heard the phrase "innocent until proven guilty"? It's called ◊link[presumption-of-innocence]{presumption of innocence} and it's a cornerstone in the modern justice system which says the default stance is that you're innocent of a crime and it's up to the prosecution to prove otherwise. It's an old legal principle that the United Nations has declared an ◊link[un-universal-human-rights]{universal human right} (see article 11).
+
+If it was the other way around, "guilty until proven innocent", then it would open up abuse from inside the justice system and innocent people would end up in jail. Only people who could afford the time and money to defend themselves could avoid jail. The presumption of innocence a necessary requirement to keep the justice system fair.
+
+◊(define presumption-of-innocence "https://en.wikipedia.org/wiki/Presumption_of_innocence")
+◊(define un-universal-human-rights "https://www.un.org/en/universal-declaration-human-rights/")
+
+However in the United States there's something called ◊link[civil-forfeiture]{◊em{civial asset forfeiture}}. It's a legal tool which allows the police to seize your car, home, money or other assets without ever charging you with a crime. You read that right, they can seize your assets ◊strong{without charging you with a crime}. There ◊link[10-cases-forfeiture]{are tons} of stories of ◊link[7-cases-forfeiture]{innocent people} having their ◊link[ef-cases]{money or property confiscated}, for example:
+
+◊ul{
+    ◊li{NYPD officers ◊link[nypd-civil-forfeiture]{steals $4,800} in a warrantless search.
+
+        When he went to retrieve his money he was told it was too late and it had already been deposited into the NYPD's pension fund.
+    }
+    ◊li{A couple had their ◊link[parents-house-seized]{house seized} after their son sold heroin.
+
+        One day the police showed up and turned their power off, locked the doors with screws and forced them out on the street because their son had been arrested for selling $40 worth of heroin.
+    }
+    ◊li{A nurse got $41,377 ◊link[houston-forfeiture]{confiscated before boarding a flight}.
+
+        She was planning to start a medical clinic for women and children. She was never charged with a crime and was pressured to sign an unconstitutional agreement waiving important rights, including right to interest on the cash and her right to sue back.
+    }
+}
+
+On a technical level it's not the owner that's charge with a crime, but the property itself. That's why it's legal for the police to seize a house because someone sold drugs in the house, even if the owners don't know about it.
+
+◊(define houston-forfeiture "https://ij.org/case/houston-forfeiture")
+◊(define parents-house-seized "https://edition.cnn.com/2014/09/03/us/philadelphia-drug-bust-house-seizure/")
+◊(define 10-cases-forfeiture "https://listverse.com/2015/06/29/10-egregious-abuses-of-civil-asset-forfeiture/")
+◊(define 7-cases-forfeiture "https://dailycaller.com/2015/01/30/the-7-most-egregious-examples-of-civil-asset-forfeiture/")
+◊(define ef-cases "http://endforfeiture.com/#cases")
+
+◊; https://listverse.com/2015/06/29/10-egregious-abuses-of-civil-asset-forfeiture/
+◊; https://www.aclu.org/other/morrow-v-city-tenaha-et-al-plaintiff-biographies?redirect=morrow-v-city-tenaha-et-al-plaintiff-biographies
+◊; https://dailycaller.com/2015/01/30/the-7-most-egregious-examples-of-civil-asset-forfeiture/
+
+◊; Lot's of interesting examples of where the money is going...
+◊; https://www.washingtonpost.com/news/opinions/wp/2014/01/15/gawker-on-asset-forfeiture-abuse-at-nypd/
+
+◊(define nypd-civil-forfeiture "https://gothamist.com/news/how-the-nypds-use-of-civil-forfeiture-robs-innocent-new-yorkers")
+
+
+
+◊qt[#:author "Columbia Police Chief Ken Burton"
+    #:url "https://www.themaneater.com/stories/outlook/police-chief-ken-burton-calls-forfeiture-funds-pen"]{
+    It’s usually based on a need---well, I take that back, There’s some limitations on it. ... Actually, there’s not really on the forfeiture stuff. We just usually base it on ◊strong{something that would be nice to have} that we can’t get in the budget, for instance. We try not to use it for things that we need to depend on because we need to have those purchased. It’s kind of like pennies from heaven---◊strong{it gets you a toy} or something that you need is the way that we typically look at it to be perfectly honest.
+
+    (Emphasis mine)
+}
+
+
+◊(define civil-forfeiture "http://endforfeiture.com/")
+
+◊; https://www.heritage.org/research/reports/2014/03/civil-asset-forfeiture-7-things-you-should-know
 
 ◊; https://www.wsj.com/articles/SB10001424053111903480904576512253265073870
 ◊; https://www.washingtonpost.com/news/opinions/wp/2014/01/15/gawker-on-asset-forfeiture-abuse-at-nypd/
+◊; https://www.nationalreview.com/2017/03/civil-asset-forfeiture-clarence-thomas/
 
 ◊subhead{North Macedonia limits payment in cash up to 500 euros}
 
