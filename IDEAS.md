@@ -265,10 +265,26 @@ Supposeduly safe securities are mostly shit.
 
     bad loans, it's a time bomb
 
-Fish doesn't sell. Throw it in the garbage and take the loss?
+Old fish doesn't sell. Throw it in the garbage and take the loss?
 No way, we throw the fish into seafood stew! That is a CDO.
 
-    Continue at 1:41
+But at least we're going to see some of them go to jail.
+Except they took the money the American people gave them and gave themselves huge bonuses.
+
+A single banker went to jail.
+
+In 2015, several banks began selling billions in something called a "bespoke tranche opportunity."
+Which, according to Bloomberg News, is just another name for a CDO.
+
+
+https://www.goodreads.com/work/quotes/6654434-the-big-short-inside-the-doomsday-machine
+https://www.bustle.com/articles/136540-9-big-short-quotes-thatll-remind-you-how-tragic-this-comedy-really-is
+
+## The Big Short: Inside the Doomsday Machine, Michael Lewis
+
+ “What are the odds that people will make smart decisions about money if they don’t need to make smart decisions—if they can get rich making dumb decisions?”
+― Michael Lewis, The Big Short: Inside the Doomsday Machine 
+
 
 # Research/misc links
 
