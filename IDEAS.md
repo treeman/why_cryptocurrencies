@@ -41,6 +41,10 @@ Ignorance is strength.”
       He who controls the spice controls the universe.
   }
 
+“Compound interest is the eighth wonder of the world. He who understands it, earns it ... he who doesn't ... pays it.”
+
+― Albert Einstein 
+
 <https://www.reddit.com/r/btc/comments/cuqqe5/let_me_issue_and_control_a_nations_money_and_i/>
 
 # Better digital payments
@@ -239,6 +243,50 @@ A peer-to-peer voting algorithm, without blockchain
     Good for understanding the beginning history of Bitcoin
 * Bitcoin the end of money as we know it (2015)
     Magic internet money
+    "Politicians credit the strong economy to their wise decisions
+     Businesses junmped into new profitable markets, ignoring risk.
+     In fact the experts said there was no risk."
+    Rome 33 AD, the first government bailout. Emperor Tiberius.
+    New kind of money: IOUs, trading debt and trusting the word of people
+    Excellent history of money
+    1929, the great depression
+        forcing all citizens to sell their gold because they couldn't print enough money
+    1971 Nixon severed the convertibility of the dollar into gold or other reserve assets...
+    Now the dollar is only based on one thing: trust
+    The U.S. spends 400 billion in interest every year
+        When a government spends more to pay interest than it collect in taxes... It prints more money
+    "The magic money machine" - money isn't created, it just magically appears in the bank's balance
+    The FED is not a government agency. It's a private entity and its shareholders are banks which earn a dividend. As much as 80 billion dollars per year, total.
+        (Which banks? It's a secret)
+    The magic money machine answers to no one.
+    The FED is practicing planning economy. It is bound to make mistakes even with the best of intentions.
+    Inflation is a far bigger tax than income tax. Income tax you pay it once, inflation you pay every single year!
+    $1 at 1913 invested would be $7, +624%
+    $1 at 1913 held would be a near-total loss -96%
+
+    Our financial crisis had everything to do with virtual dollars. Too many people with very little income borrowed a lot of money they could never repay.
+    But the banks didn't care. They didn't have to. They quickly made and sold shaky loans to someone else, for a profit.
+    Selling bad loans was a good business, until the whole thing blew up in a global financial crisis.
+
+    The magic money machine destroyed 30 million real jobs.
+    Ex-barclays bankers charged with Libor rigging (CNN Money)
+    "In medieval Europe, a banker who couldn't pay depositors was hanged. Today, that same banker would get bailed out, paid bonuses and enjoy some tax benefits, too."
+    2014 allows bankers to once again make risky derivatives bets with bank deposits.
+
+    Old car laws
+    http://mentalfloss.com/article/71555/ridiculous-uk-traffic-laws-yore
+
+    U.S. has laws to prevent people from creating their own money
+        See the Liberty Dollar
+    Nobody really knows how many dollars exist
+        Nobody knows how much banks are printing to pad their own pockets
+    Each credit card purchase require personal information and credit card databases are regularly hacked
+    15 - 30% remittance to remote areas
+    5% for competitors, 10% western union
+    "Bitcoin is a mirage" - Warren Buffet
+
+    "I 'm sure that in 20 years there will either be very large transaction volume or no volume." -- Satoshi Nakamoto
+        https://bitcointalk.org/index.php?topic=48.msg329#msg329
 * Banking On Bitcoin (2016)
     "If privacy is outlawed, only outlaws will have privacy"
 * Bitcoin-Shape The Future
@@ -329,9 +377,6 @@ Lot's of economic books:
 
 JPMorgan: We Believe The Dollar Could Lose Its Status As World's Reserve Currency
 <https://www.zerohedge.com/news/2019-07-23/jpmorgan-we-believe-dollar-could-lose-its-status-worlds-reserve-currency>
-
-Judge Rules Terrorism Watchlist Violates Constitutional Rights
-<https://news.ycombinator.com/item?id=20883017>
 
 # Unsorted
 

@@ -2,7 +2,7 @@
 
 ◊(define-meta title "For the unbanked")
 ◊(define-meta subtitle "Digital payments for those without a bank account")
-◊(define-meta updated "2019-06-12T08:51:00+02:00")
+◊(define-meta updated "2019-09-05T08:14:17+02:00")
 ◊(define-meta uuid "875332fd-f5ad-4275-8254-008a2e74a4a0")
 
 ◊epigraph{
@@ -15,16 +15,14 @@
 
 In the previous chapters we've looked at some problems with having to get permission to accept digital payments, and what happens when we don't. This time we'll look at the reverse problem: when you can't make digital payments.
 
-To make digital payments you typically need a bank account◊sn{banks-required} and those without are often called ◊em{unbanked}. Paying bills digitally, using credit cards and even mobile payments all require a bank account. If you don't have a bank account, you're essentially shut-out from all these services.
-
+To make digital payments you typically need a bank account◊sn{banks-required} and those without one are often called ◊em{unbanked}. Paying bills digitally, using credit cards and even mobile payments all require a bank account. If you don't have a bank account, you're essentially shut-out from the digital economy.
 
 ◊ndef["banks-required"]{
-    Maybe there's a way to work around the bank requirement, possibly by using in-game currencies, but they're severely limited compared to digital payments we normally think about. In practice you need a bank account for useful digital payments.
+    Maybe there's a way to work around the bank requirement, possibly by using in-game currencies, but they're severely limited compared to the digital payments we usually think about. In practice you need a bank account for useful digital payments.
 }
 
 
 ◊subhead{Who are the unbanked?}
-
 
 There are ◊strong{◊link[findex-report]{1.7 billion adults}} without a bank account in the world. To get a sense for what countries they come from, take a look at this world map:
 
@@ -63,15 +61,21 @@ While the fraction of unbanked adults are high in the developing countries, with
 
 ◊subhead{Why are they unbanked?}
 
-The ◊link[findex-report]{Global Findex database} also tried to look at why people stay unbanked:◊sn{read-it}
+The ◊link[findex-report]{Global Findex database} also tried examine why people stay unbanked:◊sn{read-it}
 
 ◊ndef["read-it"]{
     If this is interesting to you I suggest you ◊link[findex-report]{give the report a read}. There are tons of different statistics and I only refer to a fraction of the data available.
 }
 
 ◊img[#:src "images/why-unbanked.svg"]{
-    Reported reason for adults not having a bank account. More than one reason could be given.
+    Reported reason for adults not having a bank account, 2017. More than one reason could be given.
     Source ◊link[findex-report]{Global Findex database}.
+}
+
+The most commonly cited barrier was not having enough money. Around 60% said they had too little money to use a bank account, with almost 20% citing it as the sole reason.◊sn{too-little-money}
+
+◊ndef["too-little-money"]{
+    I assume it might mean poor people who might not have any savings but live day to day. But it's not clear where to draw the line between having too little money, accounts being to expensive and not having a use for an account. It feels these issues should go together to some extent.
 }
 
 Most cite several different reasons, making it hard to rank the issues in importance. For example many say they don't need an account, but if the other barriers were to disappear they might find accounts useful if only they had access to them. At least this gives a sense of what issues are present.
@@ -82,19 +86,21 @@ Most cite several different reasons, making it hard to rank the issues in import
 The question "But how do the unbanked pay for internet?" is always asked when discussing the unbanked. ◊link[findex-report]{The report} has this to say:
 
 ◊qt{
+    How many unbanked adults have a mobile phone? Globally, about 1.1 billion — or about two-thirds of all unbanked adults. In India and Mexico more than 50 per-cent of the unbanked have a mobile phone; in China 82 percent do.
+
     Fewer unbanked adults have both a mobile phone and access to the internet in some form— whether through a smartphone, a home computer, an internet café, or some other way. Globally, the share is about a quarter.
 }
 
-So about ◊strong{420 million} do have access to internet while being unbanked. I don't know if that's true or not, but anecdotally it seems almost all homeless people I've seen owns a smart phone of some sort. You can even get internet in Venezuela◊sn{venezuela-internet}, despite an unreliable power grid. And ◊link[undesirable-chapter]{remember} that even rich and successful can become temporarily unbanked, for example if banks arbitrarily decide porn stars and marijuana supporters aren't something they want to be associated with.◊sn{handelsbanken}
+So about ◊strong{420 million} do have access to internet while being unbanked. I don't know if that's true or not, but anecdotally it seems almost all homeless people I've seen owns a smartphone of some sort. You can even get internet in Venezuela◊sn{venezuela-internet}, despite an unreliable power grid. And ◊link[undesirable-chapter]{remember} that even rich and successful can become temporarily unbanked, for example if banks arbitrarily decide porn stars and marijuana supporters aren't something they want to be associated with.◊sn{handelsbanken}
 
 ◊(define undesirable-chapter "/undesirable_businesses.html")
 
 ◊ndef["venezuela-internet"]{
-    Reportedly Venezuela has one of the worst internet speeds in the world. Yet they still ◊link[venezuela-social-media]{use social media actively}. Interestingly they also ◊link[venezuela-mining]{mine Bitcoin}.
+    Reportedly Venezuela has one of the worst internet speeds in the world. Yet they still ◊link[venezuela-social-media]{use social media actively} and interestingly they also ◊link[venezuela-mining]{mine Bitcoin}.
 }
 
 ◊ndef["handelsbanken"]{
-    Here in Sweden I had a fascinating encounter with Handelsbanken, one of the largest banks here. I asked if I could open an account there, because I wanted to try out their internet bank, but I couldn't get one unless I moved over all my accounts and used them to receive my salary.
+    Here in Sweden I had a fascinating encounter with Handelsbanken, one of the largest banks here. I asked if I could open an account there (because I wanted to try out their internet bank) but I couldn't get one unless I moved over all my accounts and used them to receive my salary.
 
     I did finally get an account there when we took a mortgage with them, but I still don't use them as my main bank.
 }
@@ -108,14 +114,16 @@ So about ◊strong{420 million} do have access to internet while being unbanked.
 
 ◊subhead{What's the problem?}
 
-There are two big problems with unbanked related to digital payments as I see it, one on a country level and one for individuals:
+There are two big problems with being unbanked related to digital payments as I see it, one on a country level and one for individuals:
 
 ◊ol{
-    ◊li{Countries miss out on ◊link[rel-economic-growth]{economic growth}.}
-    ◊li{Individuals may be ◊link[rel-shut-out]{shut-out from society}.}
+    ◊li{Countries miss out on economic growth.}
+    ◊li{Individuals may be shut-out from society.}
 }
 
 ◊problem-header{Economic growth}
+
+Continuing the quote from the beginning of the chapter:
 
 ◊qt[#:src "Global Findex database"
     #:url findex-report
@@ -125,7 +133,7 @@ There are two big problems with unbanked related to digital payments as I see it
     A study in Kenya found that access to mobile money services delivered big benefits, especially for women. It enabled women-headed households to increase their savings by more than a fifth; allowed 185,000 women to leave farming and develop business or retail activities; and helped reduce extreme poverty among women-headed households by 22 percent.
 }
 
-One of the best ways to fight poverty is ◊link[economic-growth-poverty]{economic growth}. This is fairly undisputed, although the link may be indirect. As I see it convenient digital payments contribute to economic growth in two ways:
+One of the best ways to fight poverty is ◊link[economic-growth-poverty]{economic growth}. This is fairly undisputed, although the link may be indirect. As I see it, convenient digital payments contribute to economic growth in two ways:
 
 ◊ol{
     ◊li{Increased economic efficiency.
@@ -136,7 +144,7 @@ One of the best ways to fight poverty is ◊link[economic-growth-poverty]{econom
 
         Globalization, or how the world has become more interconnected, has been a theme in the last century or two. It has never been easier to travel to the other side of the world, to talk to them over the internet or have them ship goods to you for very low fees.◊sn{containers}
 
-        If people don't have access to digital payments the country risks becoming more isolated◊sn{china-isolation} and might out on the economic growth ◊link[globalization-economic-growth]{caused by globalization}. (◊nbsp{Of course} there are downsides with globalization as well, just look at the ◊link[trump-trade-war]{trade war} between the U.S. and China).
+        If people don't have access to digital payments the country risks becoming more isolated◊sn{china-isolation} and might miss out on the economic growth ◊link[globalization-economic-growth]{caused by globalization}. (◊nbsp{Of course} there are downsides with globalization as well, just look at the ◊link[trump-trade-war]{trade war} between the U.S. and China).
     }
 }
 
@@ -160,29 +168,29 @@ One of the best ways to fight poverty is ◊link[economic-growth-poverty]{econom
 
 ◊problem-header{Shut-out from society}
 
-Now it might be relatively fine for you to live in a country without using a bank account---if most don't have one either. But what if you live in a country where digital payments are an integral part of society?
+It might be relatively fine for you to live in a country without using a bank account---as long as others don't use one either. But what if you live in a country where digital payments are an integral part of society?
 
 For example here in Sweden almost everyone and everything uses digital payments. It would be ◊strong{extremely} difficult for you to live here without a credit card or a bank to pay your bills.
 
-As I went on a small business trip just a couple of weeks ago to the middle parts of Sweden I accidentally forgot my wallet---with my credit cards and identification card. I borrowed some cash from a friend, thinking I could use them to pay for lunch and dinner, but surprisingly most restaurants didn't accept cash. So I still had to ask my co-workers to pay for me...◊sn{moved-to-sweden}
+As I went on a small business trip just a couple of weeks ago to the middle parts of Sweden I accidentally forgot my wallet, including my credit cards and identification card. I borrowed some cash from a friend, thinking I could use them to pay for lunch and dinner, but surprisingly most restaurants didn't accept cash. So I still had to ask my co-workers to pay for me...◊sn{moved-to-sweden}
 
 ◊ndef["moved-to-sweden"]{
-    Similar story of a co-worker who moved to Sweden. There was a delay for him to get his social security number, and thus his bank account, so he had to be taken care of by people at work until it got sorted out.
+    A similar story of a co-worker who moved to Sweden. There was a delay for him to get his social security number, and thus his bank account, so he had to be taken care of by people at work until it got sorted out.
 }
 
 I don't really know how people without a bank account manage in Sweden or what tourists will do if their credit card stops working? With the current development they might not even be able to use public bathrooms!◊sn{public-bathroom}
 
 ◊ndef["public-bathroom"]{
-    In fact when I last visited a public bathroom in a shopping mall they had a new payment system there. Instead of inserting a coin to get the door open---you guessed it---you had to pay with a credit card or with Swish. I guess the kids or tourists, who don't have a credit card or Swish yet, has to hold it in.
+    In fact when I last visited a public bathroom in a shopping mall they had a new payment system there. Instead of inserting a coin to get the door open---you guessed it---you had to pay with a credit card or with Swish (a mobile payment app, connected to your bank account). I guess the kids or tourists, who don't have a credit card or Swish, has to hold it in.
 }
 
-In China mobile payments are growing like mad. If you're a tourist you should get them, otherwise you'll have a tough time. This in combination with China's ◊em{social credit}, which ranks people's behaviors to make sure they're in line with the party, is a recipe for disaster. If you score badly you might not be allowed to fly and maybe you'll lose the privilege of digital payments.
+In China mobile payments are growing like mad. If you're a tourist you should get them, otherwise you'll have a tough time. This in combination with China's ◊em{social credit}, which ranks people's behaviors to make sure they're in line with the party, is a recipe for disaster. If you score badly you might not be allowed to fly and maybe you'll lose the privilege of using digital payments.
 
 ◊(define rel-economic-growth "#economic-growth")
 ◊(define rel-shut-out "#shut-out-from-society")
 
 ◊(define (problem-header x)
-   `(h3
+   `(h3 [[class "economic-problem"]]
      (a [[name ,(to-name x)]] ,x)))
 
 
@@ -190,15 +198,17 @@ In China mobile payments are growing like mad. If you're a tourist you should ge
 ◊(define findex-interactive "http://datawrapper.dwcdn.net/AmFVU/2/")
 
 
-◊subhead{What might cryptocurrencies help with?}
+◊subhead{What might cryptocurrencies help the unbanked with?}
 
 Of course "just use cryptocurrencies" isn't the answer to all problems for the unbanked---they aren't a replacement for banks in the first place.◊sn{banking-the-unbanked} But it is a helpful tool which, as adoption grow, might be helpful for many without bank access.
 
-◊ndef["banking-the-unbanked"]{
-    "Banking the unbanked" is something cryptocurrency advocates like to use, and I even had it as the title of this chapter when I initially planned out the chapters. But it's misleading as banks does things cryptocurrencies doesn't:
+There are a number of benefits cryptocurrencies have:
 
-    1. Give out loans.
-    2. Safeguard your money (while you can hold cryptocurrencies yourself, it makes sense for many to let others hold them for you).
+◊ndef["banking-the-unbanked"]{
+    "Banking the unbanked" is a term cryptocurrency advocates like to use, and I even used it as the title of this chapter during the initial planning phase. But it's misleading as banks do things cryptocurrencies don't, for instance:
+
+    1. Gives out loans.
+    2. Safeguards your money (while you can hold cryptocurrencies yourself, it makes sense for many to let others hold them for you).
 }
 
 ◊ol{
@@ -208,13 +218,13 @@ Of course "just use cryptocurrencies" isn't the answer to all problems for the u
     }
     ◊li{There is no KYC process.
 
-        Because cryptocurrencies are permissionless there is no KYC (◊link[kyc]{Know your customer}) process, which banks are required to perform. That's good for people who might not have proper documentation such as ID-cards or birth certificates.
+        Because cryptocurrencies are permissionless there is no ◊link[kyc]{Know your customer} (KYC) process, which banks are required to perform. That's good for people who might not have proper documentation such as ID-cards or birth certificates.
     }
     ◊li{The ◊link[cheaper-faster]{fees are low}.
 
-        There are no fees for opening or having an account like with traditional banks and there are no KYC associated costs. There is only a small transaction cost you pay when using a cryptocurrency.
+        There are no fees for opening or having an account---like with traditional banks---and there are no KYC associated costs. There is only a small transaction cost you pay when using a cryptocurrency.
     }
-    ◊li{You ◊link[no-third-party]{don't need to trust a third party}.
+    ◊li{You ◊link[no-third-party]{don't need to trust a third party} with your money.
 
         In countries with high corruption you might not trust your local bank enough to handle your money. With cryptocurrencies you can hold your money yourself and there's no need for a third party to use it (such as a bank making the payment for you).
     }
@@ -224,7 +234,15 @@ Of course "just use cryptocurrencies" isn't the answer to all problems for the u
     }
 }
 
+These are directly related to the ◊link[rel-why-unbanked?]{reasons why people stay unbanked}, many which cryptocurrencies might help solve. For example, the 30% who say bank accounts are too expensive and the 20% who say they lack documentation, may find cryptocurrencies a viable alternative as it is much cheaper than bank accounts and don't require any documentation. Cryptocurrencies also does away with the requirement of having to trust a bank, which 15% of the unbanked cited as a reason for not having an account.
+
+These benefits makes it possible for the 420 million unbanked who have internet access to use cryptocurrencies and gain ◊link[global-currency]{access to the global economy}.
+
+◊(define rel-why-unbanked? "#why-are-they-unbanked?")
+
 ◊(define kyc "https://en.wikipedia.org/wiki/Know_your_customer")
 ◊(define cheaper-faster "/cheaper_faster.html")
 ◊(define no-third-party "/properties_of_a_cryptocurrency.html#no-trusted-third-party")
+◊(define global-currency "/global_currency.html")
+
 

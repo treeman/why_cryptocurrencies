@@ -24,6 +24,8 @@
      for_the_unbanked.html)
     (better_currency.html
      financial_crisis.html
+    ("A better currency"
+     "The financial crisis, bad loans and bail-outs"
      "The blind leading the blind"
      "Protection against government seizures"
      "A global currency"
@@ -35,10 +37,10 @@
      "The cashless dystopia"
      "New asset class?")
     ("Extensions"
-     "Provably fair gambling"
-     "Verifiable voting"
-     "Uncensorable Twitter"
      "Timestamping service"
+     "Provably fair gambling"
+     "Uncensorable Twitter"
+     "Verifiable voting"
      "Tokens")
     (appendix.html
      bitcoin_whitepaper.html
