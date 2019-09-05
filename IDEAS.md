@@ -76,6 +76,9 @@ https://www.svd.se/har-ar-arets-citat-fran-naringslivet
 
 Also the "magic money tree"
 
+https://www.svd.se/professor-riksbanken-har-inget-mirakelmedel
+https://www.svd.se/experter-oeniga-om-rantan-fruktar-sankning
+
 ## Protection against government seizures
 
 India voids 500 and 1000 rupee bills
@@ -194,6 +197,9 @@ China bans 23M from buying travel tickets as part of 'social credit' system
 
 Sweden's cashless society is no longer a utopia
 <https://news.ycombinator.com/item?id=18422422>
+
+Debate rages in Austria over enshrining use of cash in the constitution
+<https://www.euractiv.com/section/data-protection/news/debate-rages-in-austria-over-enshrining-use-of-cash-in-the-constitution/>
 
 # Other use
 
