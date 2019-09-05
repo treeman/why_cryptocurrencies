@@ -24,10 +24,10 @@
      for_the_unbanked.html)
     ("A better currency"
      "The financial crisis, bad loans and bail-outs"
-     "A borderless currency"
-     "Protection against hyperinflation"
-     "India voids 500 and 1000 rupee bills"
-     "Protection against government seizures")
+     "The blind leading the blind"
+     "Protection against government seizures"
+     "A global currency"
+     "Avoids hyperinflation")
     ("Brave new world"
      "Separation of money and state"
      "A swiss bank account in your pocket"
@@ -35,10 +35,10 @@
      "The cashless dystopia"
      "New asset class?")
     ("Extensions"
-     "Provably fair gambling"
-     "Verifiable voting"
-     "Uncensorable Twitter"
      "Timestamping service"
+     "Provably fair gambling"
+     "Uncensorable Twitter"
+     "Verifiable voting"
      "Tokens")
     (appendix.html
      bitcoin_whitepaper.html
