@@ -328,6 +328,9 @@ Lot's of economic books:
 JPMorgan: We Believe The Dollar Could Lose Its Status As World's Reserve Currency
 <https://www.zerohedge.com/news/2019-07-23/jpmorgan-we-believe-dollar-could-lose-its-status-worlds-reserve-currency>
 
+Judge Rules Terrorism Watchlist Violates Constitutional Rights
+<https://news.ycombinator.com/item?id=20883017>
+
 # Unsorted
 
 
