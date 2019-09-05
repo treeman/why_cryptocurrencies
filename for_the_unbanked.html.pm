@@ -2,7 +2,7 @@
 
 ◊(define-meta title "For the unbanked")
 ◊(define-meta subtitle "Digital payments for those without a bank account")
-◊(define-meta updated "2019-06-12T08:51:00+02:00")
+◊(define-meta updated "2019-09-05T08:14:17+02:00")
 ◊(define-meta uuid "875332fd-f5ad-4275-8254-008a2e74a4a0")
 
 ◊epigraph{
@@ -198,9 +198,11 @@ In China mobile payments are growing like mad. If you're a tourist you should ge
 ◊(define findex-interactive "http://datawrapper.dwcdn.net/AmFVU/2/")
 
 
-◊subhead{What might cryptocurrencies help with?}
+◊subhead{What might cryptocurrencies help the unbanked with?}
 
 Of course "just use cryptocurrencies" isn't the answer to all problems for the unbanked---they aren't a replacement for banks in the first place.◊sn{banking-the-unbanked} But it is a helpful tool which, as adoption grow, might be helpful for many without bank access.
+
+There are a number of benefits cryptocurrencies have:
 
 ◊ndef["banking-the-unbanked"]{
     "Banking the unbanked" is a term cryptocurrency advocates like to use, and I even used it as the title of this chapter during the initial planning phase. But it's misleading as banks do things cryptocurrencies don't, for instance:
@@ -216,7 +218,7 @@ Of course "just use cryptocurrencies" isn't the answer to all problems for the u
     }
     ◊li{There is no KYC process.
 
-        Because cryptocurrencies are permissionless there is no KYC (◊link[kyc]{Know your customer}) process, which banks are required to perform. That's good for people who might not have proper documentation such as ID-cards or birth certificates.
+        Because cryptocurrencies are permissionless there is no ◊link[kyc]{Know your customer} (KYC) process, which banks are required to perform. That's good for people who might not have proper documentation such as ID-cards or birth certificates.
     }
     ◊li{The ◊link[cheaper-faster]{fees are low}.
 
@@ -232,7 +234,15 @@ Of course "just use cryptocurrencies" isn't the answer to all problems for the u
     }
 }
 
+These are directly related to the ◊link[rel-why-unbanked?]{reasons why people stay unbanked}, many which cryptocurrencies might help solve. For example 30% says bank accounts are too expensive and 20% says they lack the necessary documentation to open one. Cryptocurrencies are much cheaper and you they don't require any documentation to use. 15% says they don't trust their banks and with cryptocurrencies you don't need to.
+
+These benefits makes it possible for the 420 million unbanked who have internet access to use cryptocurrencies and gain ◊link[global-currency]{access to the global economy}.
+
+◊(define rel-why-unbanked? "#why-are-they-unbanked?")
+
 ◊(define kyc "https://en.wikipedia.org/wiki/Know_your_customer")
 ◊(define cheaper-faster "/cheaper_faster.html")
 ◊(define no-third-party "/properties_of_a_cryptocurrency.html#no-trusted-third-party")
+◊(define global-currency "/global_currency.html")
+
 
