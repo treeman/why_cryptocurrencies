@@ -116,15 +116,17 @@ I sure don't know who's right. It's probably best to be skeptical of both camps-
 ◊(define inflation-good "http://inflationmatters.com/keynesian-inflation-theory/")
 ◊(define inflation-bad "https://austrianeconomics.fandom.com/wiki/Inflation")
 
-◊qt[#:author "Daniel Kahneman" #:src "Thinking, Fast and Slow"]{
+◊qt[#:author "Daniel Kahneman" #:src "\"Thinking, Fast and Slow\""]{
     acquisition of skills requires a regular environment, an adequate opportunity to practice, and rapid and unequivocal feedback about the correctness of thoughts and actions. ◊mn{tfas}
 }
 
 Either way it's not an argument against cryptocurrencies in general as they can be made either inflationary or deflationary.
 
 ◊ndef["tfas"]{
-    The book "Thinking, Fast and Slow" is fantastically thought provoking.
+    The book ◊link[thinking-fast-and-slow]{"Thinking, Fast and Slow"} is fantastically thought provoking.
 }
+
+◊(define thinking-fast-and-slow "https://www.amazon.com/Thinking-Fast-Slow-Daniel-Kahneman/dp/0374533555")
 
 ◊ndef["bitcoin-supply"]{
      The emission rate in Bitcoin approximates the rate gold is mined. In Monero the tail emission is there to replace lost coins and to make sure rewards for miners don't run out.

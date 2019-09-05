@@ -277,7 +277,7 @@ There are others who've ruled in favor of Bitcoin as a currency. For example ◊
 ◊(define prev-chapter "/what_is_money.html")
 
 
-◊subhead{Conclusion}
+◊subhead{So, are cryptocurrencies money?}
 
 Cryptocurrencies fulfil the properties of money very well---in fact they fulfil them better than any alternative. Unlike fiat they can also be considered sound money as the valuation is entirely market driven.
 

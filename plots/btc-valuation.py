@@ -33,6 +33,17 @@ def prices(url):
 # It's just for the high level understanding. Plus xkcd style is pretty
 plt.xkcd()
 
+mycol = '#343535'
+
+plt.rcParams["font.family"] = "Concourse T4"
+plt.rcParams["axes.linewidth"] = 1
+plt.rcParams["axes.edgecolor"] = mycol
+plt.rcParams["text.color"] = mycol
+plt.rcParams["xtick.color"] = mycol
+plt.rcParams["ytick.color"] = mycol
+plt.rcParams["ytick.minor.width"] = 0
+
+
 # Removes remaining white lines after xkcdifying the plot.
 # Changing the background didn't fix it.
 mpl.rcParams['path.effects'] = [patheffects.withStroke(linewidth=0)]
@@ -48,11 +59,14 @@ ax.get_xaxis().set_major_formatter(mdates.DateFormatter('%Y'))
 ax.spines['right'].set_color('none')
 ax.spines['top'].set_color('none')
 
+ax.xaxis.set_tick_params(width=2)
+ax.yaxis.set_tick_params(width=2)
+
 # ax.set_xticks([dt.date(y, 1, 1) for y in [1970, 1980, 1990, 2000, 2010, 2018]])
 # ax.set_yticks((0, 500, 1000, 1500, 2000))
 
-plt.plot(date, price, '#343535')
+plt.plot(date, price, mycol)
 
-plt.savefig('btc-valuation.svg', format="svg", transparent=True)
+plt.savefig('btc-valuation.svg', format="svg", transparent=True, bbox_inches='tight')
 print "done"
 

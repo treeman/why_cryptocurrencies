@@ -21,7 +21,7 @@
      undesirable_businesses.html
      freezing_of_merchant_accounts.html
      uncensorable_donations.html
-     "Banking the unbanked")
+     for_the_unbanked.html)
     ("A better currency"
      "The financial crisis, bad loans and bail-outs"
      "The blind leading the blind"
