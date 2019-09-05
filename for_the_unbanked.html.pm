@@ -234,7 +234,7 @@ There are a number of benefits cryptocurrencies have:
     }
 }
 
-These are directly related to the ◊link[rel-why-unbanked?]{reasons why people stay unbanked}, many which cryptocurrencies might help solve. For example 30% says bank accounts are too expensive and 20% says they lack the necessary documentation  but cryptocurrencies are much cheaper and you they don't require any documentation to use. And 15% says they don't trust their banks but with cryptocurrencies you don't need to.
+These are directly related to the ◊link[rel-why-unbanked?]{reasons why people stay unbanked}, many which cryptocurrencies might help solve. For example, the 30% who say bank accounts are too expensive and the 20% who say they lack documentation, may find cryptocurrencies a viable alternative as it is much cheaper than bank accounts and don't require any documentation. Cryptocurrencies also does away with the requirement of having to trust a bank, which 15% of the unbanked cited as a reason for not having an account.
 
 These benefits makes it possible for the 420 million unbanked who have internet access to use cryptocurrencies and gain ◊link[global-currency]{access to the global economy}.
 
