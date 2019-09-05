@@ -246,7 +246,6 @@ A peer-to-peer voting algorithm, without blockchain
 * The Bitcoin Phenomenon
 * Banking On Bitcoin (2016)
     "If privacy is outlawed, only outlaws will have privacy"
-    Start up again at 50 min
 
 # Books
 
@@ -258,6 +257,40 @@ A peer-to-peer voting algorithm, without blockchain
 
 The Money Masters
 <https://www.youtube.com/watch?v=lbarjpJhSLw>
+
+
+## The Big Short
+
+    It ain't what you don't know that gets you into trouble.
+    It's what you know for sure that just ain't so.
+            Mark Twain
+
+Mortgage backed securities (mortgage bonds)
+But ran out of mortgages. The banks started filling these bonds with riskier and riskier mortgages (subprime).
+Supposeduly safe securities are mostly shit.
+
+    bad loans, it's a time bomb
+
+Old fish doesn't sell. Throw it in the garbage and take the loss?
+No way, we throw the fish into seafood stew! That is a CDO.
+
+But at least we're going to see some of them go to jail.
+Except they took the money the American people gave them and gave themselves huge bonuses.
+
+A single banker went to jail.
+
+In 2015, several banks began selling billions in something called a "bespoke tranche opportunity."
+Which, according to Bloomberg News, is just another name for a CDO.
+
+
+https://www.goodreads.com/work/quotes/6654434-the-big-short-inside-the-doomsday-machine
+https://www.bustle.com/articles/136540-9-big-short-quotes-thatll-remind-you-how-tragic-this-comedy-really-is
+
+## The Big Short: Inside the Doomsday Machine, Michael Lewis
+
+ “What are the odds that people will make smart decisions about money if they don’t need to make smart decisions—if they can get rich making dumb decisions?”
+― Michael Lewis, The Big Short: Inside the Doomsday Machine 
+
 
 # Research/misc links
 
