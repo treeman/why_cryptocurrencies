@@ -315,14 +315,20 @@ The Money Masters
     It's what you know for sure that just ain't so.
             Mark Twain
 
+
+https://www.youtube.com/watch?v=anSPG0TPf84
+Margot Robbie: [In a bubble bath with a glass of champagne] Basically, Lewis Ranieri's mortgage bonds were amazingly profitable for the big banks. They made billions and billions on their 2% fee they got for selling each of these bonds. But then, they started running out of mortgages to put in them. After all, there are only so many homes and so many people with good enough jobs to buy them, right? So, the banks started filling these bonds with riskier and riskier mortgages. [Butler pours more champagne into her glass] (Thank you, Benjamin) That way, they can keep that profit machine churning, alright? By the way, these risky mortgages are called "subprime." So, whenever you hear the word "subprime," think "shit." Our friend, Michael Burry, found out that these mortgage bonds that were supposedly 65% AAA, were actually just, mostly, full of shit, so now, he's going to "short" the bonds, which means "to bet against." Got it? Good...[Takes a sip of champagne] Now, fuck off.
+
+
 Mortgage backed securities (mortgage bonds)
 But ran out of mortgages. The banks started filling these bonds with riskier and riskier mortgages (subprime).
 Supposeduly safe securities are mostly shit.
 
     bad loans, it's a time bomb
 
-Old fish doesn't sell. Throw it in the garbage and take the loss?
-No way, we throw the fish into seafood stew! That is a CDO.
+https://www.youtube.com/watch?v=Vrv9odqUvlw
+OK, I'm a chef on a Sunday afternoon, setting the menu at a big restaurant. I ordered my fish on Friday, which is the mortgage bond that Michael Burry shorted. But some of the fresh fish doesn't sell. I don't know why. Maybe it just came out halibut has the intelligence of a dolphin. So, what am I going to do? Throw all this unsold fish, which is the BBB level of the bond, in the garbage, and take the loss? No way. Being the crafty and morally onerous chef that I am, whatever crappy levels of the bond I don't sell, I throw into a seafood stew. See, it's not old fish. It's a whole new thing! And the best part is, they're eating 3-day-old halibut. *That* is a CDO. 
+
 
 But at least we're going to see some of them go to jail.
 Except they took the money the American people gave them and gave themselves huge bonuses.

@@ -6,12 +6,12 @@
 ◊(define-meta uuid "10e625f0-2470-49a9-ae74-36f0c78d943b")
 
 ◊epigraph{
-  ◊qt[#:author "Thomas Jefferson"]{
-    I believe that banking institutions are more dangerous to our liberties than standing armies. Already they have raised up a monied aristocracy that has set the government at defiance. The issuing power (of money) should be taken away from the banks and restored to the people to whom it properly belongs.
+  ◊qt[#:author "Mayer Amschel Rothschild"]{
+    Let me issue and control a nation's money and I care not who writes the laws.
   }
 }
 
-Our focus during the last section was on the use of cryptocurrencies as a payment system. But in fact Bitcoin wasn't invented to be "just" an improved PayPal, it was made to be something more---which could have much further reaching consequences---a completely new form of money.◊mn{currency-money}
+Our focus during the last section was on the use of cryptocurrencies as a payment system. But in fact Bitcoin wasn't invented to be just an improved PayPal, it was made to be something more, with much larger consequences: a completely new form of money.◊mn{currency-money}
 
 ◊ndef["currency-money"]{
     The term ◊em{money} refers to an intangible concept and ◊em{currency} is the actual thing used as money.
@@ -21,11 +21,7 @@ Our focus during the last section was on the use of cryptocurrencies as a paymen
 
 We previously asked ourself ◊link[what-is-money]{what money is} and we found that money is a tool to make trade more efficient. There are a number of properties good money should have, such as being durable and divisible, and there's a case to be made that cryptocurrencies can be ◊link[are-cryptos-money]{considered a form of money}---with some beneficial and unique properties.
 
-In this section we'll focus on benefits of using cryptocurrencies as money. Cryptocurrencies have ◊link[crypto-properties]{several good properties}, but for this section the most important one is the lack of central control over the money supply. It's similar to gold in this respect, except that cryptocurrencies can be validated instantly but it's much more ◊link[fake-gold]{difficult with gold}.
-
-◊qt[#:author "Mayer Amschel Rothschild"]{
-    Let me issue and control a nation's money and I care not who writes the laws.
-}
+In this section we'll focus on benefits of using cryptocurrencies as money. Cryptocurrencies have ◊link[crypto-properties]{several good properties}, but for this section the most important one is the lack of central control over the money supply. It's similar to gold in this respect, except that cryptocurrencies can be validated instantly which is much more ◊link[fake-gold]{difficult with gold}.
 
 
 

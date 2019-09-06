@@ -180,7 +180,12 @@ blockquote > footer {
 blockquote > footer > cite {
     font-style: italic;
 }
-
+// Should we shut it down for small text?
+//blockquote > footer a:link {
+    //text-decoration: underline;
+    //background: none;
+    //text-shadow: none;
+//}
 
 .epigraph {
     margin: 2em 0;
@@ -256,7 +261,8 @@ pre {
     // Serves to take up space. Inline content from the chapter is floated on top.
     width: 420px;
     //background-color: antiquewhite;
-    display: none;
+    // Avoids swallowing clicks and interactions intended for wider images
+    visibility: hidden;
 }
 
 .sidenote, .marginnote {

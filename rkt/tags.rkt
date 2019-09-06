@@ -154,6 +154,7 @@
   (when url
     (cond
       [src (set! src (link url src))]
+      [quote-src (set! quote-src (link url quote-src))]
       [date (set! date (link url date))]
       [author (set! author (link url author))]
       [else (error "Quote with url but without ref")]))
@@ -161,9 +162,9 @@
   (when author
     (set! cite (append cite
                        `((span ((class "author")) ,author)))))
-  (when src
+  (when (or src quote-src)
     (let ((ref (if quote-src
-                  `("“" ,src "”")
+                  `("“" ,quote-src "”")
                   `(,src))))
       (set! cite (append cite
                          `((span ((class "src")) ,@ref))))))
