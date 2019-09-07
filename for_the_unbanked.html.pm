@@ -2,7 +2,7 @@
 
 ◊(define-meta title "For the unbanked")
 ◊(define-meta subtitle "Digital payments for those without a bank account")
-◊(define-meta updated "2019-09-05T08:14:17+02:00")
+◊(define-meta updated "2019-09-07T12:01:33+02:00")
 ◊(define-meta uuid "875332fd-f5ad-4275-8254-008a2e74a4a0")
 
 ◊epigraph{
@@ -58,10 +58,12 @@ Almost half of all unbanked live in just seven countries: China, India, Indonesi
 
 While the fraction of unbanked adults are high in the developing countries, with poor access to electricity and internet, a surprisingly large number of unbanked also live in developed countries. For example the USA has 18 million unbanked and in France there are 3 million unbanked.
 
+The unbanked are in general less educated, where 62% of unbanked have a primary education or less, compared to around half overall in developing economies. Twice as many unbanked live in the poorest households as in the richest ones and 56% of all unbanked are women.◊sn{read-it}
+
 
 ◊subhead{Why are they unbanked?}
 
-The ◊link[findex-report]{Global Findex database} also tried examine why people stay unbanked:◊sn{read-it}
+The ◊link[findex-report]{Global Findex database} also tried examine why people stay unbanked:
 
 ◊ndef["read-it"]{
     If this is interesting to you I suggest you ◊link[findex-report]{give the report a read}. There are tons of different statistics and I only refer to a fraction of the data available.
@@ -200,7 +202,7 @@ In China mobile payments are growing like mad. If you're a tourist you should ge
 
 ◊subhead{What might cryptocurrencies help the unbanked with?}
 
-Of course "just use cryptocurrencies" isn't the answer to all problems for the unbanked---they aren't a replacement for banks in the first place.◊sn{banking-the-unbanked} But it is a helpful tool which, as adoption grow, might be helpful for many without bank access.
+Of course "just use cryptocurrencies" isn't the answer to all problems for the unbanked. Cryptocurrencies won't magically give poor people money, make them educated and they can't even completely replace banks◊sn{banking-the-unbanked}. But it is a helpful tool which, as adoption grow, might be helpful for many without bank access.
 
 There are a number of benefits cryptocurrencies have:
 
