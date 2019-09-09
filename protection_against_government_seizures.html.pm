@@ -7,14 +7,40 @@
 
 ◊epigraph{
   ◊qt[#:author "Gollum"
-      #:src "\"The Lord of the Rings: The Fellowship of the Ring\""]{
+      #:quote-src #t
+      #:src "The Lord of the Rings: The Fellowship of the Ring"]{
     It came to me. My own. My love. My own. My precious.
   }
 }
 
-TODO
+In this chapter we'll see how governments around the world sometimes directly or indirectly take your money, and how cryptocurrencies might help you avoid it.
 
-◊subhead{Limiting cash purchases}
+No, this chapter is ◊strong{not} about tax evasion---do your taxes people.
+
+It's about laws meant to fight crime end up hurting innocent people and how they limit people's freedom.◊sn{legal-moral} We'll also see what inflation means for your savings and what might happen to them if your country ends up in an economic crisis. And of course, as this is about cryptocurrencies, how they might help.
+
+◊ndef["legal-moral"]{
+    We'll explore the idea that legality doesn't imply morality---meaning just because it's legal doesn't make it right---in the chapter about ◊link[rel-darknet]{darknet markets}.
+}
+
+◊(define rel-darknet "/darknet-markets")
+
+
+◊subhead{Limiting cash}
+
+In their ever-increasing attempts to counter money-laundering governments all over the world have implemented limits to cash deposits to banks, cash purchases and even how much cash you can carry. Know-your-customer (KYC) laws for example require banks in the U.S. to report any cash deposits of $10,000, or multiple transactions adding up to that amount, to the IRS. They then have to be ready to provide extensive documentation to prove where the money is coming from.◊sn{structuring}
+
+◊ndef["structuring"]{
+    The act of managing your deposits in a way to avoid triggering the report is called ◊link[structuring]{◊em{structuring}} and is---you guessed it---illegal. Of course this might also affect innocent people or legitimate businesses who just happen to deposit using a suspicious pattern.
+}
+
+◊(define structuring "https://en.wikipedia.org/wiki/Structuring")
+
+In the U.S. you also have to declare cash amounts over $10,000 you want to leave or enter the country with, otherwise you'll face a high risk of having it all confiscated. Many countries have similar restrictions but North Macedonia takes it a step further: to prevent "money laundering and terrorism financing" cash payments above 30,000 MKD (around €500) are banned.
+
+Instead we're encouraged to use digital payments (ignoring the ◊link[rel-unbanked]{unfortunate without the ability} to do so). Cryptocurrencies also don't have any kind of restriction for how much you can send, receive or transport and even if similar limits are placed on them there's no practical way to enforce them.
+
+◊(define rel-unbanked "/for_the_unbanked.html")
 
 ◊em{North Macedonia limits payment in cash up to 500 euros}
 
@@ -24,6 +50,13 @@ TODO
 ◊em{Man walks through Boston Logan Airport with $50K in a backpack; government wants to keep it}
 
 ◊; https://www.masslive.com//boston/2019/02/man-walks-through-boston-logan-airport-with-50k-in-a-backpack-government-wants-to-keep-it.html
+
+
+◊em{91-year old Swedish woman couldn't deposit her old bills, because she couldn't prove where she got them.}
+◊; https://www.svt.se/nyheter/lokalt/skane/91-arig-kvinna-vagras-losa-in-sina-sedlar
+
+◊em{Gunnar löste in 311 500 kronor – Riksbanken behöll pengarna}
+◊; https://www.svt.se/nyheter/konsument/han-loste-in-311-500-kronor-riksbanken-beholl-pengarna
 
 
 ◊subhead{Civil asset forfeiture}
@@ -148,7 +181,7 @@ Fine. Let's say you know about all these ways someone can take your money and yo
 
 ◊(define xkcd-security "https://www.xkcd.com/538/")
 
-Tough luck. In India they found an innovative way to ◊link[india-fight-corruption]{"fight corruption"} when they abolished the 500 and 1,000 rupee notes---that's ◊link[india-86%]{86%} of all cash in circulation made invalid in one stroke.
+Tough luck. In India they found an innovative way to “◊link[india-fight-corruption]{fight corruption}” when they abolished the 500 and 1,000 rupee notes---that's ◊link[india-86%]{86%} of all cash in circulation made invalid in one stroke.
 
 Many turned to gold, jewelry and anything that could reasonably hold value to prevent their money and savings from disappearing in a puff of smoke. Cryptocurrencies could've also been used for protection because nobody can invalidate what you have, similar to having a physical gold bar.
 
