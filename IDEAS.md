@@ -43,8 +43,6 @@ Ignorance is strength.”
 
 <https://www.reddit.com/r/btc/comments/cuqqe5/let_me_issue_and_control_a_nations_money_and_i/>
 
-# Better digital payments
-
 # A better currency
 
 <https://www.bloomberg.com/opinion/articles/2019-05-06/banks-look-safer-with-deposits>

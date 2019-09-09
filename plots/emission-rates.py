@@ -63,11 +63,21 @@ xmr_y = [0, 6967312, 11319909, 14382647, 15671138, 16849637, 17460360, 17679028,
 # It's just for the high level understanding. Plus xkcd style is pretty
 plt.xkcd()
 
+mycol = '#343535'
+
+plt.rcParams["font.family"] = "Concourse T4"
+plt.rcParams["axes.linewidth"] = 1
+plt.rcParams["axes.edgecolor"] = mycol
+plt.rcParams["text.color"] = mycol
+plt.rcParams["xtick.color"] = mycol
+plt.rcParams["ytick.color"] = mycol
+plt.rcParams["ytick.minor.width"] = 0
+
 # Removes remaining white lines after xkcdifying the plot.
 # Changing the background didn't fix it.
 mpl.rcParams['path.effects'] = [patheffects.withStroke(linewidth=0)]
 
-fig = plt.figure()
+fig = plt.figure(figsize=(8, 5))
 ax = fig.add_subplot(1, 1, 1)
 
 def y_fmt(y, pos):
@@ -85,13 +95,21 @@ plt.annotate(
     'we are here',
     xy=(2020, 16800000), arrowprops=dict(arrowstyle='->'), xytext=(2025, 13100000))
 
-plt.plot(btc_years, btc_supply, '#f59332', label='Bitcoin')
-plt.plot(xmr_x, xmr_y, 'tab:blue', label='Monero')
+# http://ksrowell.com/blog-visualizing-data/2012/02/02/optimal-colors-for-graphs/
+#396AB1
+#DA7C30
+
+
+btc_col = '#DA7C30'
+monero_col = '#396AB1'
+#monero_col =  '#CC2529'
+plt.plot(btc_years, btc_supply, btc_col, label='Bitcoin')
+plt.plot(xmr_x, xmr_y, monero_col, label='Monero')
 
 plt.legend(loc='lower right')
 
 plt.figtext(0.03, 0.91, 'Circulating supply')
 
-plt.savefig('emission-rates.svg', format="svg", transparent=True)
+plt.savefig('emission-rates.svg', format="svg", transparent=True, bbox_inches='tight')
 print "done"
 

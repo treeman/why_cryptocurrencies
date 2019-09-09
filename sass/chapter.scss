@@ -256,9 +256,9 @@ pre {
     // Serves to take up space. Inline content from the chapter is floated on top.
     width: 420px;
     //background-color: antiquewhite;
-    display: none;
+    // Avoids swallowing clicks and interactions intended for wider images
+    visibility: hidden;
 }
-
 .sidenote, .marginnote {
     @extend %sans-serif;
     font-size: 0.8rem;
@@ -416,13 +416,25 @@ label.margin-toggle:not(.sidenote-number) {
 
 
 /*
+ * Images
+ */
+a.img-wrapper:link {
+    background: none;
+    text-shadow: none;
+}
+a.img-wrapper:hover {
+    @include a-background(#333);
+}
+
+
+/*
  * Figures
  */
 figure {
     margin-bottom: 1rem;
     text-align: center;
 
-    > img {
+    img {
         max-width: 100%;
     }
     > figcaption {
@@ -431,7 +443,7 @@ figure {
     }
 }
 figure.articlewidth, figure.fullwidth {
-    > img {
+    img {
         width: 100%;
     }
 }
@@ -663,6 +675,10 @@ table.crypto-eval {
     > .txt {
 
     }
+}
+
+h3.economic-problem > a {
+    color: $body-font-color;
 }
 
 

@@ -171,7 +171,7 @@ We've looked at the properties---but how well do they function as money, today?
 
         The valuation is highly speculation driven and has been notoriously volatile.◊sn{sov}
 
-        ◊img[#:src "images/btc-valuation.svg"]{
+        ◊img[#:src "images/btc-valuation.svg" #:link #t]{
             ◊link[btc-valuation]{Bitcoin closing price per month}.  It doesn't do the peak in December 2017 justice, as it peaked at an all time high of $19,870 (some exchanges had it even higher).
         }
     }
@@ -277,7 +277,7 @@ There are others who've ruled in favor of Bitcoin as a currency. For example ◊
 ◊(define prev-chapter "/what_is_money.html")
 
 
-◊subhead{Conclusion}
+◊subhead{So, are cryptocurrencies money?}
 
 Cryptocurrencies fulfil the properties of money very well---in fact they fulfil them better than any alternative. Unlike fiat they can also be considered sound money as the valuation is entirely market driven.
 
