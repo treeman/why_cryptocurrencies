@@ -77,7 +77,7 @@ The ◊link[findex-report]{Global Findex database} also tried examine why people
 The most commonly cited barrier was not having enough money. Around 60% said they had too little money to use a bank account, with almost 20% citing it as the sole reason.◊sn{too-little-money}
 
 ◊ndef["too-little-money"]{
-    I assume it might mean poor people who might not have any savings but live day to day. But it's not clear where to draw the line between having too little money, accounts being to expensive and not having a use for an account. It feels these issues should go together to some extent.
+    I assume it might mean poor people who might not have any savings but live day to day. But it's not clear where to draw the line between having too little money, accounts being too expensive and not having a use for an account. It feels these issues should go together to some extent.
 }
 
 Most cite several different reasons, making it hard to rank the issues in importance. For example many say they don't need an account, but if the other barriers were to disappear they might find accounts useful if only they had access to them. At least this gives a sense of what issues are present.
@@ -202,7 +202,7 @@ In China mobile payments are growing like mad. If you're a tourist you should ge
 
 ◊subhead{What might cryptocurrencies help the unbanked with?}
 
-Of course "just use cryptocurrencies" isn't the answer to all problems for the unbanked. Cryptocurrencies won't magically give poor people money, make them educated and they can't even completely replace banks◊sn{banking-the-unbanked}. But it is a helpful tool which, as adoption grow, might be helpful for many without bank access.
+Of course "just use cryptocurrencies" isn't the answer to all problems for the unbanked. Cryptocurrencies won't magically give poor people money, make them educated and they can't even completely replace banks.◊sn{banking-the-unbanked} But it is a helpful tool which, as adoption grow, might be helpful for many without bank access.
 
 There are a number of benefits cryptocurrencies have:
 
@@ -236,7 +236,7 @@ There are a number of benefits cryptocurrencies have:
     }
 }
 
-These are directly related to the ◊link[rel-why-unbanked?]{reasons why people stay unbanked}, many which cryptocurrencies might help solve. For example, the 30% who say bank accounts are too expensive and the 20% who say they lack documentation, may find cryptocurrencies a viable alternative as it is much cheaper than bank accounts and don't require any documentation. Cryptocurrencies also does away with the requirement of having to trust a bank, which 15% of the unbanked cited as a reason for not having an account.
+These are directly related to the ◊link[rel-why-unbanked?]{reasons why people stay unbanked}, many which cryptocurrencies might help solve. For example, the 30% who say bank accounts are too expensive and the 20% who say they lack documentation, may find cryptocurrencies a viable alternative as it is much cheaper than bank accounts and don't require any documentation. Cryptocurrencies also remove the requirement of having to trust a bank, which 15% of the unbanked cited as a reason for not having an account.
 
 These benefits makes it possible for the 420 million unbanked who have internet access to use cryptocurrencies and gain ◊link[global-currency]{access to the global economy}.
 
