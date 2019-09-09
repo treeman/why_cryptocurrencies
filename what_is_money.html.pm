@@ -266,7 +266,7 @@ As seen from historical examples I think it's safe to conclude that yes, basical
 ◊ndef["gold-sov"]{
     Gold is the classical example of a store of value. But it has also seen large up and down movements in valuation. ◊link[gold-valuation]{This is the yearly closing price of gold}:
 
-    ◊raw-img[#:src "images/gold-valuation.svg"]{}
+    ◊raw-img[#:src "images/gold-valuation.svg" #:link #t]{}
 
     For example in 2010 it increased 27.74% and in 2013 it decreased 27.79%.
 }

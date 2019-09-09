@@ -33,7 +33,7 @@ There are ◊strong{◊link[findex-report]{1.7 billion adults}} without a bank a
 ◊; #df65b0  36-60
 ◊; #dd1c77  61-80
 ◊; #980043  81-100
-◊img[#:src "images/unbanked-map.png" #:class "fullwidth"]{
+◊img[#:src "images/unbanked-map.png" #:class "fullwidth" #:link #t]{
     Adults without a bank account, 2017.
     Source ◊link[findex-report]{Global Findex database}.
 }
@@ -49,7 +49,7 @@ While this map helps us identify countries with a high fraction of unbanked, it 
 ◊;#43a2ca   50 - 100 mil
 ◊;          100 - 150 mil (no country!)
 ◊;#0868ac   > 150 mil
-◊img[#:src "images/unbanked-count-map.png" #:class "fullwidth"]{
+◊img[#:src "images/unbanked-count-map.png" #:class "fullwidth" #:link #t]{
     The number of adults without a bank account, 2017.
     Source ◊link[findex-report]{Global Findex database} (◊link[findex-interactive]{interactive}).
 }
@@ -69,7 +69,7 @@ The ◊link[findex-report]{Global Findex database} also tried examine why people
     If this is interesting to you I suggest you ◊link[findex-report]{give the report a read}. There are tons of different statistics and I only refer to a fraction of the data available.
 }
 
-◊img[#:src "images/why-unbanked.svg"]{
+◊img[#:src "images/why-unbanked.svg" #:link #t]{
     Reported reason for adults not having a bank account, 2017. More than one reason could be given.
     Source ◊link[findex-report]{Global Findex database}.
 }
