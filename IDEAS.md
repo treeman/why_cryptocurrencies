@@ -234,6 +234,15 @@ A peer-to-peer voting algorithm, without blockchain
 <http://vixra.org/pdf/1905.0239v1.pdf>
 
 
+# Appendix
+
+## Do everyone need to run a full node?
+
+## Who is Satoshi Nakamoto?
+
+## Is Facebook's Libra a cryptocurrency?
+
+
 # Bitcoin documentaries
 
 <https://coinsutra.com/bitcoin-documentaries/>
