@@ -28,35 +28,30 @@ It's about laws meant to fight crime end up hurting innocent people and how they
 
 ◊subhead{Limiting cash}
 
-In their ever-increasing attempts to counter money-laundering governments all over the world have implemented limits to cash deposits to banks, cash purchases and even how much cash you can carry. Know-your-customer (KYC) laws for example require banks in the U.S. to report any cash deposits of $10,000, or multiple transactions adding up to that amount, to the IRS. They then have to be ready to provide extensive documentation to prove where the money is coming from.◊sn{structuring}
+In their ever-increasing attempts to counter money-laundering governments all over the world have implemented limits to cash deposits to banks, cash purchases and even how much cash you can carry. ◊link[kyc]{Know-your-customer} (KYC) laws for example require banks in the United States to ◊link[ctr]{report any cash deposits of $10,000}, or multiple transactions adding up to that amount, to the IRS. They then have to be ready to provide extensive documentation to prove where the money is coming from.◊sn{structuring}
 
 ◊ndef["structuring"]{
-    The act of managing your deposits in a way to avoid triggering the report is called ◊link[structuring]{◊em{structuring}} and is---you guessed it---illegal. Of course this might also affect innocent people or legitimate businesses who just happen to deposit using a suspicious pattern.
+    The act of managing your deposits in a way to avoid triggering the report is called ◊link[structuring]{◊em{structuring}} and is---you guessed it---◊link[structuring-illegal]{illegal}. Of course this might also affect ◊link[structuring-innocent]{innocent people} or legitimate businesses who just happen to deposit using a suspicious pattern.
 }
 
-◊(define structuring "https://en.wikipedia.org/wiki/Structuring")
+In the U.S. you also have to declare cash amounts over $10,000 you want to leave or enter the country with, otherwise you'll face a high risk of ◊link[travel-forfeiture]{having it all confiscated}. Many countries have similar restrictions but North Macedonia takes it a step further: to prevent "money laundering and terrorism financing" cash payments above 30,000 MKD (around €500) ◊link[macedonia-limits-cash]{are banned}.
 
-In the U.S. you also have to declare cash amounts over $10,000 you want to leave or enter the country with, otherwise you'll face a high risk of having it all confiscated. Many countries have similar restrictions but North Macedonia takes it a step further: to prevent "money laundering and terrorism financing" cash payments above 30,000 MKD (around €500) are banned.
+Instead we're encouraged to use digital payments (ignoring the ◊link[rel-unbanked]{unfortunate without the ability} to do so). Cryptocurrencies also don't have any kind of restriction for how much you can send, receive or transport and even if similar limits are placed on them there's no practical way to enforce them.◊sn{privacy}
 
-Instead we're encouraged to use digital payments (ignoring the ◊link[rel-unbanked]{unfortunate without the ability} to do so). Cryptocurrencies also don't have any kind of restriction for how much you can send, receive or transport and even if similar limits are placed on them there's no practical way to enforce them.
+◊ndef["privacy"]{
+    In contrast to other digital payments cryptocurrencies can give you very good privacy and it's in practice impossible for anyone to know how much you have. We'll explore this more in the chapter ◊link[rel-swiss-bank]{A swiss bank account in your pocket}.
+}
 
 ◊(define rel-unbanked "/for_the_unbanked.html")
-
-◊em{North Macedonia limits payment in cash up to 500 euros}
-
+◊(define rel-swiss-bank "/swiss-bank-account-in-your-pocket.html")
+◊(define structuring "https://en.wikipedia.org/wiki/Structuring")
 ◊; https://www.reddit.com/r/btc/comments/bvx83n/macedonia_bans_fiat_cash_payments_above_560/
-◊; http://www.china.org.cn/world/Off_the_Wire/2019-06/01/content_74845553.htm
-
-◊em{Man walks through Boston Logan Airport with $50K in a backpack; government wants to keep it}
-
-◊; https://www.masslive.com//boston/2019/02/man-walks-through-boston-logan-airport-with-50k-in-a-backpack-government-wants-to-keep-it.html
-
-
-◊em{91-year old Swedish woman couldn't deposit her old bills, because she couldn't prove where she got them.}
-◊; https://www.svt.se/nyheter/lokalt/skane/91-arig-kvinna-vagras-losa-in-sina-sedlar
-
-◊em{Gunnar löste in 311 500 kronor – Riksbanken behöll pengarna}
-◊; https://www.svt.se/nyheter/konsument/han-loste-in-311-500-kronor-riksbanken-beholl-pengarna
+◊(define macedonia-limits-cash "http://www.china.org.cn/world/Off_the_Wire/2019-06/01/content_74845553.htm")
+◊(define structuring-illegal "https://www.law.cornell.edu/uscode/text/31/5324")
+◊(define ctr "https://en.wikipedia.org/wiki/Currency_transaction_report")
+◊(define kyc "https://en.wikipedia.org/wiki/Know_your_customer")
+◊(define structuring-innocent "https://ij.org/case/connecticut-forfeiture/")
+◊(define travel-forfeiture "https://ij.org/case/kentucky-civil-forfeiture/")
 
 
 ◊subhead{Civil asset forfeiture}
@@ -107,19 +102,24 @@ Maybe there were some good intentions◊sn{banks-laundering} when these laws mer
 
 ◊qt[#:author "Columbia's Police Chief Ken Burton"
     #:url "https://www.themaneater.com/stories/outlook/police-chief-ken-burton-calls-forfeiture-funds-pen"
-    #:date "2012"]{
+    #:date "2012"
+    #:emphasis #t]{
     It’s usually based on a need---well, I take that back, There’s some limitations on it. ... Actually, there’s not really on the forfeiture stuff. We just usually base it on ◊strong{something that would be nice to have} that we can’t get in the budget, for instance. We try not to use it for things that we need to depend on because we need to have those purchased. It’s kind of like pennies from heaven---◊strong{it gets you a toy} or something that you need is the way that we typically look at it to be perfectly honest.
-
-    (Emphasis mine)
 }
 
-Most of the money goes to funding the police◊sn{police-funding}. But the money has gone to ◊link[steak-forfeiture]{extravagant Christmas parties, sirloin beef and a $8,200 security system} for the district attorney's private home. And of course some managed to spend it on ◊link[forfeiture-alcohol]{alcohol, prostitutes and marijuana}(!). Then there's the case where another district attorney ◊link[forfeiture-hawaii]{spent $27,000 to take his whole office to Hawaii}, including the approving district judge.
+Most of the money goes to funding the police.◊sn{police-funding} But the money has gone to ◊link[steak-forfeiture]{extravagant Christmas parties, sirloin beef and a $8,200 security system} for the district attorney's private home. And of course some managed to spend it on ◊link[forfeiture-alcohol]{alcohol, prostitutes and marijuana}(!). Then there's the case where another district attorney ◊link[forfeiture-hawaii]{spent $27,000 to take his whole office to Hawaii}, including the approving district judge.
 
 ◊ndef["police-funding"]{
     If you're a cynic, like I tend to be, you have to love the incentives at play here. If the police seize money they directly help themselves yet there appears to be no negative consequences if they do.
 }
 
 In practice civil asset forfeiture is state-sanctioned theft where the police are acting like ◊link[highway-robbers]{highway robbers}.
+
+What can cryptocurrencies do for you here? While they naturally can't prevent the police from seizing your house or your car, they allow you to easily store and travel with as much money as you can---without anyone noticing. Even if they know you have them there's nothing they can physically steal---they would need your password.◊sn{how-to-store}
+
+◊ndef["how-to-store"]{
+    An app on your phone can hold an unlimited amount of value in cryptocurrencies. Or if you want to be more secure you can encrypt your private key with a strong password and store it on your computer or online. Even the government cannot break strong encryption (assuming they don't have amazing quantum computers hidden somewhere).
+}
 
 ◊(define highway-robbers "https://www.aclu.org/press-releases/aclu-announces-settlement-highway-robbery-cases-texas")
 ◊(define forfeiture-hawaii "https://www.npr.org/templates/story/story.php?storyId=104065589&t=1567527486222")
@@ -155,7 +155,7 @@ In practice civil asset forfeiture is state-sanctioned theft where the police ar
 
 ◊subhead{Safe deposit boxes aren't safe}
 
-Okay we now know the dangers of walking around with a bunch of cash and we've decided to find a safe way to store them.  What about storing them or gold or jewelries in a safe deposit box? Surely they're called safe deposit boxes because they're safe?
+Okay we now know the dangers of walking around with a bunch of cash. Forget about moving it around, how about just finding a secure way to store them. What about storing them (or gold or jewelries) in a safe deposit box? Surely they're called safe deposit boxes because they're ◊em{safe}?
 
 ◊; https://news.ycombinator.com/item?id=20545276
 
@@ -165,6 +165,8 @@ Okay we now know the dangers of walking around with a bunch of cash and we've de
 ◊subhead{Confiscating money from your bank accounts}
 
 Alright, so if having physical goods isn't good enough how about storing money digitally in a bank account?
+
+◊todo{Image of a "trustworthy" banker gremling/monster dude}
 
 ◊; Cyprus everyone with more than €100,000 confiscated
 ◊; https://www.theguardian.com/world/2013/mar/25/cyprus-bailout-deal-eu-closes-bank
@@ -193,6 +195,17 @@ Many turned to gold, jewelry and anything that could reasonably hold value to pr
 ◊; https://www.vox.com/world/2016/11/29/13763070/india-modi-cash-demonetization-protests
 ◊; https://www.theguardian.com/world/2016/nov/10/rupee-note-cancellation-panic-in-india-banks-500-1000
 
+
+
+◊;em{Man walks through Boston Logan Airport with $50K in a backpack; government wants to keep it}
+◊; https://www.masslive.com//boston/2019/02/man-walks-through-boston-logan-airport-with-50k-in-a-backpack-government-wants-to-keep-it.html
+
+
+◊;em{91-year old Swedish woman couldn't deposit her old bills, because she couldn't prove where she got them.}
+◊; https://www.svt.se/nyheter/lokalt/skane/91-arig-kvinna-vagras-losa-in-sina-sedlar
+
+◊;em{Gunnar löste in 311 500 kronor – Riksbanken behöll pengarna}
+◊; https://www.svt.se/nyheter/konsument/han-loste-in-311-500-kronor-riksbanken-beholl-pengarna
 
 ◊subhead{Inflation}
 
