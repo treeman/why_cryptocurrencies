@@ -36,7 +36,14 @@ In their ever-increasing attempts to counter money-laundering governments all ov
 
 In the U.S. you also have to declare cash amounts over $10,000 you want to leave or enter the country with, otherwise you'll face a high risk of ◊link[travel-forfeiture]{having it all confiscated}. Many countries have similar restrictions but North Macedonia takes it a step further: to prevent "money laundering and terrorism financing" cash payments above 30,000 MKD (around €500) ◊link[macedonia-limits-cash]{are banned}.
 
-Instead we're encouraged to use digital payments (ignoring the ◊link[rel-unbanked]{unfortunate without the ability} to do so). Cryptocurrencies also don't have any kind of restriction for how much you can send, receive or transport and even if similar limits are placed on them there's no practical way to enforce them.◊sn{privacy}
+Instead we're encouraged to use digital payments (ignoring the ◊link[rel-unbanked]{unfortunate without the ability} to do so), where banks are able to block large payments if they deem them suspicious---presumably to make it harder to do money laundering.◊sn{laundering}
+
+◊ndef["laundering"]{
+    It sounds hypocritical to me when a major U.S. bank laundered ◊strong{$378 billions} ◊link[us-banks-mexico-drug-gangs]{for Mexico's drug gangs}, the kind of gangs that leaves behind ◊link[gang-mass-grave]{enormous mass-graves}.
+}
+
+
+Cryptocurrencies don't have any kind of restriction for how much you can send, receive or transport and even if similar limits are placed on them there's no practical way to enforce them.◊sn{privacy}
 
 ◊ndef["privacy"]{
     In contrast to other digital payments cryptocurrencies can give you very good privacy and it's in practice impossible for anyone to know how much you have. We'll explore this more in the chapter ◊link[rel-swiss-bank]{A swiss bank account in your pocket}.
@@ -63,7 +70,11 @@ If it was the other way around, "guilty until proven innocent", then it would op
 ◊(define presumption-of-innocence "https://en.wikipedia.org/wiki/Presumption_of_innocence")
 ◊(define un-universal-human-rights "https://www.un.org/en/universal-declaration-human-rights/")
 
-However in the United States there's something called ◊link[civil-forfeiture]{◊em{civial asset forfeiture}}. It's a legal tool which allows the police to seize your car, home, money or other assets without ever charging you with a crime. You read that right, they can seize your assets ◊strong{without charging you with a crime}. There are ◊link[10-cases-forfeiture]{tons of stories} of ◊link[7-cases-forfeiture]{innocent people} having their ◊link[ef-cases]{money or property confiscated}, for example:
+However in the United States there's something called ◊link[civil-forfeiture]{◊em{civial asset forfeiture}}. It's a legal tool which allows the police to seize your car, home, money or other assets without ever charging you with a crime. You read that right, they can seize your assets ◊strong{without charging you with a crime}.◊sn{cash-limits} There are ◊link[10-cases-forfeiture]{tons of stories} of ◊link[7-cases-forfeiture]{innocent people} having their ◊link[ef-cases]{money or property confiscated}, for example:
+
+◊ndef["cash-limits"]{
+    To be fair, the limits placed on cash I referenced before are also examples of the presumption of innocent being turned on it's head. For example if you transfer €50,000 in a European bank it's up to you to prove where you got the money, not the bank or the government.
+}
 
 ◊ul{
     ◊li{NYPD officers ◊link[nypd-civil-forfeiture]{stole $4,800} in a warrantless search.
@@ -80,21 +91,15 @@ However in the United States there's something called ◊link[civil-forfeiture]{
     }
 }
 
-On a technical level it's not the owner that's charge with a crime, but the property itself. That's why it's legal for the police to seize a house because someone sold drugs in the house, even if the owners don't know about it.
+On a technical level it's not the owner that's charge with a crime, but the property itself. That's why it's legal for the police to seize a house because someone sold drugs in the house, even if the owners didn't know about it.
 
 This really flips the "innocent until proven guilty" mantra on it's head. You're often---but not always!---able to contest the seizure to get back your assets. If you're lucky you'll get them back, but more likely you'll get locked down in a year long legal battle with expensive lawyer fees. Unfortunately it's often more expensive to contest the seizure so many are forced to accept the loss.
 
 Maybe there were some good intentions◊sn{banks-laundering} when these laws mere made, but today they simply don't work as intended. I'll leave it to Columbia's former police chief to explain:
 
 ◊ndef["banks-laundering"]{
-    They say the laws are supposed to confiscate assets from criminals. For example from drug dealers who sells large amounts of drugs for cash. (Because only criminals use large amounts of cash---that's the claim anyway...)
-
-    It sounds hypocritical to me when a major U.S. bank laundered ◊strong{$378 billions} ◊link[us-banks-mexico-drug-gangs]{for Mexico's drug gangs}, the kind of gangs that leaves behind ◊link[gang-mass-grave]{enormous mass-graves}.
+    They say the laws are supposed to confiscate assets from criminals. For example from drug dealers who sells large amounts of drugs for cash. Because only criminals use large amounts of cash... that's the claim anyway.
 }
-
-
-
-
 
 ◊(define us-banks-mexico-drug-gangs "https://www.theguardian.com/world/2011/apr/03/us-bank-mexico-drug-gangs")
 ◊(define gang-mass-grave "https://www.theguardian.com/world/2017/mar/14/mexico-skulls-mass-grave-drug-cartel-veracruz")
@@ -115,7 +120,7 @@ Most of the money goes to funding the police.◊sn{police-funding} But the money
 
 In practice civil asset forfeiture is state-sanctioned theft where the police are acting like ◊link[highway-robbers]{highway robbers}.
 
-What can cryptocurrencies do for you here? While they naturally can't prevent the police from seizing your house or your car, they allow you to easily store and travel with as much money as you can---without anyone noticing. Even if they know you have them there's nothing they can physically steal---they would need your password.◊sn{how-to-store}
+So how can cryptocurrencies protect you against the forfeiture laws? While they naturally can't prevent the police from seizing your house or your car, they allow you to easily store and travel with as much money as you can---without anyone noticing. Even if they know you have them there's nothing they can physically steal---they would need your password.◊sn{how-to-store}
 
 ◊ndef["how-to-store"]{
     An app on your phone can hold an unlimited amount of value in cryptocurrencies. Or if you want to be more secure you can encrypt your private key with a strong password and store it on your computer or online. Even the government cannot break strong encryption (assuming they don't have amazing quantum computers hidden somewhere).
@@ -155,18 +160,38 @@ What can cryptocurrencies do for you here? While they naturally can't prevent th
 
 ◊subhead{Safe deposit boxes aren't safe}
 
-Okay we now know the dangers of walking around with a bunch of cash. Forget about moving it around, how about just finding a secure way to store them. What about storing them (or gold or jewelries) in a safe deposit box? Surely they're called safe deposit boxes because they're ◊em{safe}?
+Okay we now know the dangers of walking around with a bunch of cash. Forget about moving it around, how about just finding a secure way to store them? What about storing them (or gold or jewelries) in a safe deposit box, surely they're called safe deposit boxes because they're ◊em{safe}?
 
+◊todo{Image of a "trustworthy" banker gremling/monster dude in front of deposit boxes with the same numbers}
+
+Unfortunately ◊link[safe-deposit-boxes-not-safe]{safe deposit boxes aren't safe}.
+
+◊qt{
+    There are an estimated 25 million safe deposit boxes in America, and they operate in a legal gray zone within the highly regulated banking industry. There are no federal laws governing the boxes; no rules require banks to compensate customers if their property is stolen or destroyed.
+}
+
+The contents of safety deposit boxes disappear all the time, and there's not a whole lot you can do if it happens to you. There are no hard laws to protect you, even if the bank's own records clearly show items vanishing. The banks instead cap their liability in the lease contract:
+
+◊qt[#:url "https://int.nyt.com/data/documenthelper/1425-wells-fargo-safe-deposit-box-l/a4a2ec35134500f23c01/optimized/full.pdf#page=1"
+    #:author "The New York Times"
+    #:src "Wells Fargo's safe-deposit-box-contract"]{
+    If a loss results from our negligence or willful misconduct, our total liability will be the lesser of your actual uninsured loss or $500.
+}
+
+And they really are negligent. Did you know that the safe deposit box numbers aren't unique? So it may happen that a bank tries to evict another customer for not keeping up with payments, and they remove another box with the same number.
+
+Deposit boxes won't keep you safe from creditors, who may ◊link[creditors-open]{ask the bank for your deposit box}, and of course they won't be safe ◊link[governments-deposit-boxes]{from the government}---or even the banks themselves---in bad economic times.
+
+◊(define governments-deposit-boxes "https://internationalman.com/articles/say-goodbye-to-your-safe-deposit-box/")
+◊(define creditors-open "https://calebjonesblog.com/bank-safety-deposit-boxes-no-longer-safe/")
+◊(define safe-deposit-boxes-not-safe "https://www.nytimes.com/2019/07/19/business/safe-deposit-box-theft.html")
 ◊; https://news.ycombinator.com/item?id=20545276
-
-◊todo{Image with deposit boxes with the same numbers}
 
 
 ◊subhead{Confiscating money from your bank accounts}
 
 Alright, so if having physical goods isn't good enough how about storing money digitally in a bank account?
 
-◊todo{Image of a "trustworthy" banker gremling/monster dude}
 
 ◊; Cyprus everyone with more than €100,000 confiscated
 ◊; https://www.theguardian.com/world/2013/mar/25/cyprus-bailout-deal-eu-closes-bank
@@ -201,11 +226,23 @@ Many turned to gold, jewelry and anything that could reasonably hold value to pr
 ◊; https://www.masslive.com//boston/2019/02/man-walks-through-boston-logan-airport-with-50k-in-a-backpack-government-wants-to-keep-it.html
 
 
+◊subhead{Falling through the cracks when cash is renewed}
+
+I like cash. I like the feel of it and I like that I can store it at home and be reasonably sure that I can keep it. The government outright invalidating it---like in India---is the exception and it's extremely unlikely the Swedish government would do so without the ability to exchange the old for new. For instance when Sweden ◊link[nyasedlar]{upgraded to new bills} the old ones were valid in stores for about a year, and you could exchange them at banks long after that too.
+
+But the system isn't perfect. If you miss your window and have to go to a bank with your old, and now technically invalid bills, you have to prove where the cash came from. This can be quite hard if you've been saving some money here and there for many years, and if you don't your money is now lost.
+
+Exactly this happened to a 91-year old Swedish woman ◊link[91-woman]{couldn't deposit her old bills} (worth around €10,000), because she couldn't prove where she got them. There isn't anything necessarily evil going on here---there are rules which have to be followed and cash do have to get replaced from time to time. It's just unfortunate that some people may fall through the cracks.
+
+◊(define 91-woman "https://www.svt.se/nyheter/lokalt/skane/91-arig-kvinna-vagras-losa-in-sina-sedlar")
+◊(define nyasedlar "http://nyasedlar.nu/")
+
 ◊;em{91-year old Swedish woman couldn't deposit her old bills, because she couldn't prove where she got them.}
 ◊; https://www.svt.se/nyheter/lokalt/skane/91-arig-kvinna-vagras-losa-in-sina-sedlar
 
 ◊;em{Gunnar löste in 311 500 kronor – Riksbanken behöll pengarna}
 ◊; https://www.svt.se/nyheter/konsument/han-loste-in-311-500-kronor-riksbanken-beholl-pengarna
+
 
 ◊subhead{Inflation}
 
