@@ -37,7 +37,7 @@
     ("Extensions"
      "Timestamping service"
      "Provably fair gambling"
-     "Uncensorable Twitter"
+     uncensorable_twitter.html
      "Verifiable voting"
      "Tokens")
     (appendix.html
