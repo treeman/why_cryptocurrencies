@@ -1,7 +1,7 @@
 #lang pollen
 
 ◊(define-meta title "Protection against government seizures")
-◊;(define-meta subtitle "Donations governments cannot stop")
+◊(define-meta subtitle "It's harder for governments to take cryptocurrencies from you")
 ◊(define-meta updated "2019-09-02T07:00:09+02:00")
 ◊(define-meta uuid "01795fb4-c99a-4168-8685-73ad86ed7c0c")
 
@@ -192,6 +192,15 @@ Deposit boxes won't keep you safe from creditors, who may ◊link[creditors-open
 
 Alright, so if having physical goods isn't good enough how about storing money digitally in a bank account?
 
+Similar to how safe deposit boxes aren't safe during a financial crisis, neither is your bank account. For example during ◊link[cyprus-crisis]{financial crisis in Cyprus} in 2013 deposits over €100,000 had ◊link[cyprus-47.5%]{47.5%} of the value forcefully taken away. The banks closed overnight and withdrawals were blocked. When banks were reopened capital control limits were in place to prevent a ◊link[bank-run]{bank run}.◊sn{bank-IOU}
+
+◊ndef["bank-IOU"]{
+    I think this exemplifies our relationship with banks well. When we have our money at a bank, it's not really ours anymore. It's now the bank's money and we only have their promise to return our money when we ask for it. Which generally works well---until it doesn't.
+}
+
+◊(define bank-run "https://www.investopedia.com/terms/b/bankrun.asp")
+◊(define cyprus-crisis "https://en.wikipedia.org/wiki/2012%E2%80%9313_Cypriot_financial_crisis")
+◊(define cyprus-47.5% "https://eu.usatoday.com/story/money/business/2013/07/29/bank-of-cyprus-depositors-lose-savings/2595837/")
 
 ◊; Cyprus everyone with more than €100,000 confiscated
 ◊; https://www.theguardian.com/world/2013/mar/25/cyprus-bailout-deal-eu-closes-bank
@@ -204,7 +213,16 @@ Alright, so if having physical goods isn't good enough how about storing money d
 
 ◊subhead{Invalidating money}
 
-Fine. Let's say you know about all these ways someone can take your money and you've decided to hide your money somewhere really safe, maybe buried in your yard or in a hidden safe somewhere in your house. Perhaps nobody even knows you have it so the risk of someone ◊link[xkcd-security]{hitting you with a wrench until you give it} up is minimized. That should do it, right?
+Fine. Let's say you know about all these ways someone can take your money and you've decided to hide your money somewhere really safe, maybe buried in your yard or in a hidden safe somewhere in your house.◊sn{safe-tips} Perhaps nobody even knows you have it so the risk of someone ◊link[xkcd-security]{hitting you with a wrench until you give it} up is minimized. That should do it, right?
+
+◊ndef["safe-tips"]{
+    Here are some tips if you want to install a safe:
+
+    1. Bolt it to the floor.
+    2. Hide it (not your master bedroom).
+    3. Make sure as few people as possible know about it and what you have inside, but do tell someone.
+    4. Consider another safe to act as a dummy.
+}
 
 ◊(define xkcd-security "https://www.xkcd.com/538/")
 
@@ -228,11 +246,15 @@ Many turned to gold, jewelry and anything that could reasonably hold value to pr
 
 ◊subhead{Falling through the cracks when cash is renewed}
 
-I like cash. I like the feel of it and I like that I can store it at home and be reasonably sure that I can keep it. The government outright invalidating it---like in India---is the exception and it's extremely unlikely the Swedish government would do so without the ability to exchange the old for new. For instance when Sweden ◊link[nyasedlar]{upgraded to new bills} the old ones were valid in stores for about a year, and you could exchange them at banks long after that too.
+I like cash. I like the feel of it and I like that I can store it at home and be reasonably sure that I can keep it. The government outright invalidating it---like in India---is the exception and it's extremely unlikely for example the Swedish government would do so without the ability to exchange the old for new. For instance when Sweden ◊link[nyasedlar]{upgraded to new bills} the old ones were valid in stores for about a year, and you could exchange them at banks long after that too.
 
 But the system isn't perfect. If you miss your window and have to go to a bank with your old, and now technically invalid bills, you have to prove where the cash came from. This can be quite hard if you've been saving some money here and there for many years, and if you don't your money is now lost.
 
-Exactly this happened to a 91-year old Swedish woman ◊link[91-woman]{couldn't deposit her old bills} (worth around €10,000), because she couldn't prove where she got them. There isn't anything necessarily evil going on here---there are rules which have to be followed and cash do have to get replaced from time to time. It's just unfortunate that some people may fall through the cracks.
+Exactly this happened to a 91-year old Swedish woman ◊link[91-woman]{couldn't deposit her old bills} (worth around €10,000), because she couldn't prove where she got them. There isn't anything outright evil going on here (maybe a little unintended evil?): there are rules which have to be followed and cash do have to get replaced from time to time. It's just unfortunate that some people may fall through the cracks.◊sn{old-people}
+
+◊ndef["old-people"]{
+    It's not surprising that it was an old woman who got in trouble. When you're over 90 years old you probably didn't even know about the new bills and that the old ones were becoming invalid. She probably wasn't up-to-date with the ever-more strict KYC laws either. When she was younger she didn't have to track every single income-source, just to not lose her money.
+}
 
 ◊(define 91-woman "https://www.svt.se/nyheter/lokalt/skane/91-arig-kvinna-vagras-losa-in-sina-sedlar")
 ◊(define nyasedlar "http://nyasedlar.nu/")
@@ -246,7 +268,17 @@ Exactly this happened to a 91-year old Swedish woman ◊link[91-woman]{couldn't 
 
 ◊subhead{Inflation}
 
-There is another way governments can take money from you: by inflating the money supply and using the excess money for themselves. It's a more indirect---and perhaps sinister---way to take money from you as you probably won't notice it. After all they aren't taking something physically from you, you still have your cash in your mattress and numbers in your bank account are unchanged, but they now buy you less stuff.
+There is another way governments can take money from you: by inflating the money supply and using the excess money for themselves. It's a more indirect---and perhaps sinister---way to take money from you as you probably won't notice it. After all they aren't taking something physically from you, you still have your cash in your mattress and numbers in your bank account are unchanged, but they now get you less stuff.◊sn{inflation-sad}
+
+◊ndef["inflation-sad"]{
+    Here's a sad story I heard about what inflation can do to your savings:
+
+    These two persons were quite frugal and they saved a lot of their income. They were planning to give it all to their son when he got older, so he could live a good life and not having to worry so much. After having saved a lot over many decades they gave it all to him as a lump sum.
+
+    After a few years they asked him what he did with the money and they were horrified by his answer---he had bought skiing equipment for all the money! But this money was supposed to buy a house or a car, how could he be this irresponsible?
+
+    Turns out the money wasn't worth that much anymore. They had just left the money alone letting inflation eat up most of the value.
+}
 
 ◊todo{Inflation chart}
 
@@ -254,7 +286,7 @@ Have you asked your grandmother or your great-grandmother what they used to buy 
 
 ◊todo{Some cute image here}
 
-We'll go into the more extreme version of inflation, which can destabilize the whole country, in a ◊link[hyperinflation-rel]{later chapter}.
+We'll go into the more extreme version of inflation called hyperinflation, which can destabilize whole countries, in a ◊link[hyperinflation-rel]{later chapter}.
 
 ◊(define hyperinflation-rel "/hyperinflation.html")
 
