@@ -15,7 +15,22 @@
 
 Another use for embeddable data in a cryptocurrency is a Twitter clone. A type of Twitter where messages are embedded into transactions and therefore cannot be blocked and cannot be erased.
 
-One example is ◊link[memo-cash]{memo.cash} which embeds data into the Bitcoin Cash blockchain.◊sn{embed-in-any}
+One example is ◊link[memo-cash]{memo.cash} which embeds data into the Bitcoin Cash blockchain.◊sn{embed-in-any} Like Twitter it only supports shorter messages, for example:
+
+◊qt[#:src "Blockchair"
+    #:url "https://blockchair.com/bitcoin-cash/transaction/9649592301c43b168db94b66a110f8b5aa4a8fad2ff5752aec9d963a8c4a2849"]{
+    memo hitting over 1k regularly last days - ◊link{https://memo.cash/charts}
+}
+◊qt[#:src "Blockchair"
+    #:url "https://blockchair.com/bitcoin-cash/transaction/c2503a1aecb55e2584b41ea183c3c355c527790a1ef9cb0dc3f90d8d7ae654bd"]{
+    ◊link{https://youtu.be/5q3kDx1USPM}
+}
+◊qt[#:src "Blockchair"
+    #:url "https://blockchair.com/bitcoin-cash/transaction/5e614e32e679df162cc04582769b09fd88e7f0ea32f537dcc72cae38efcb7fe9"]{
+    I can feel the anticipation rising...
+}
+
+Images or videos aren't actually embedded but referenced to outside services.
 
 ◊(define memo-cash "https://memo.cash/")
 
@@ -49,7 +64,12 @@ At the same time there's something compelling about the idea of having a forum w
     Another big issue, which I foresee as one of the biggest unsolved challenges of the internet age, is "intellectual DDOS". It basically tries to throw so much disinformation at you so cannot tell what's right and what's wrong. It's a denial-of-service attack which works by the fact that it's much easier to produce bullshit than to counter it.
 }
 
-◊todo{Proof of reddit censorship}
+We've seen examples of censorship in the chapter ◊link[censorship-is-real]{uncensorable donations}, so we're not going to repeat ourselves too much. One example is that Twitter is completely censored in China, and you might get arrested if you bypass their internet wide block of it.
+
+Well here we have a Twitter-like service that's uncensorable and there's no company or service that China could put pressure on to remove inconvenient messages. We're free to discuss China's human rights abuses (like their ◊link[forced-organ-harvesting]{forced organ harvesting}) and the information can never be removed.
+
+◊(define forced-organ-harvesting "https://chinatribunal.com/final-judgement-report/")
+◊(define censorship-is-real "/uncensorable_donations.html#censorship-is-real")
 
 
 ◊subhead{Uncorrupted history}
@@ -64,7 +84,11 @@ Have you heard about the ◊link[barbarians]{barbarians}? They're primitive and 
 
 Except those are exaggerated rumors, twisted by the passage of time. The Romans for example often liked to spread these kinds of rumors for propaganda purposes. For example if a Roman general came back from a successful campaign he might want to play up his opponent to make his feat bigger. As the saying goes "history is written by the victors".◊sn{ceasar-celts}
 
-You can also actively rewrite the history, which is one of the main themes of the book "1984" (which I quote often, because I love it so much). The idea is that you can get away with anything, because you erase it in hindsight. Sometimes you might even deny events because they don't fit your world-view or your bias. There are ◊link[rewriting-history]{many historic examples}, some more crazy than others. Maybe we know about the holocaust denials or the moon landing skeptics, but ◊todo{how USA declares they "won" the Vietnam war, the Iraqi War or the Afghan war}
+You can also actively rewrite the history, which is one of the main themes of the book "1984" (which I quote often, because I love it so much). The idea is that you can get away with anything, because you erase it in hindsight. Sometimes you might even deny events because they don't fit your world-view or your bias. There are ◊link[rewriting-history]{many historic examples}, some more crazy than others. Maybe we know about the holocaust denials or the moon landing skeptics? Even closer in time is how ◊link[bush-victory-iraq]{Bush declares victory in Iraq}, despite there's no real victory there.
+
+I wonder what history would look like if we had an uncorrupted version of it? If we had access to several different unaltered versions of a story? What if we had access to an easily searchable Twitter-style feed, both permanent and uncensorable, available to all?
+
+With cryptocurrencies we just might have that.
 
 ◊ndef["ceasar-celts"]{
     A nice example of the one-sided history is the Roman war against the Celts. We have a great recounting from the Roman general Julius Caesar---but nothing else.
@@ -72,6 +96,7 @@ You can also actively rewrite the history, which is one of the main themes of th
     Julius Caesar's "The Gallic Wars" is supposedly very good, but I'm content with Hardcore History's 6 hour episode ◊link[hc-celtic-holocaust]{The Celtic Holocaust} which is ◊strong{fantastic}.
 }
 
+◊(define bush-victory-iraq "http://news.bbc.co.uk/2/hi/middle_east/2989459.stm")
 ◊(define rewriting-history "https://listverse.com/2016/01/05/10-insane-attempts-at-rewriting-history/")
 ◊(define barbarians "https://en.wikipedia.org/wiki/Barbarian")
 ◊(define hc-celtic-holocaust "https://www.dancarlin.com/hardcore-history-60-the-celtic-holocaust/")
