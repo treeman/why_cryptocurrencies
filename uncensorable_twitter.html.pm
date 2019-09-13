@@ -13,7 +13,7 @@
     }
 }
 
-Another use for embeddable data in a cryptocurrency is a Twitter clone. A type of Twitter where messages are embedded into transactions and therefore cannot be blocked and cannot be erased.
+One use for embedding data in a cryptocurrency is a Twitter clone. A type of Twitter where messages are embedded into transactions and therefore cannot be blocked and cannot be erased.
 
 One example is ◊link[memo-cash]{memo.cash} which embeds data into the Bitcoin Cash blockchain.◊sn{embed-in-any} Like Twitter it only supports shorter messages, for example:
 
@@ -35,7 +35,7 @@ Images or videos aren't actually embedded but referenced to outside services.
 ◊(define memo-cash "https://memo.cash/")
 
 ◊ndef["embed-in-any"]{
-    You can theoretically create this on almost any cryptocurrency, as long as you have some way to add user specified data. For example if you can choose the beginning letter(s) of your public address, you can use a chain of addresses to insert your message. Some cryptocurrencies just makes it easier to embed data.
+    You can theoretically create this on almost any cryptocurrency, as long as you have some way to add user specified data. For example if you can choose the beginning letter(s) of your public address, you can use a chain of addresses to insert your message. Some cryptocurrencies just makes it easier to embed data than others.
 }
 
 
@@ -47,7 +47,7 @@ If this kind of social network becomes popular you may end up in a position wher
 
 And what if someone posts something about you? I sometimes feel lucky I didn't grow up in the modern age, with the horrible cyber-bullying you hear about, but imagine if someone posts a degrading video of you? Today we might be able to get Facebook or someone to remove it, but if you base your social network on a cryptocurrency... No such luck.
 
-All isn't doom-and-gloom, you still have websites or apps which display this information. So it's still possible to sort-of hide the information for many people, if you get these services to agree, but you cannot erase it completely. But I still don't think Facebook on a blockchain is a good idea.
+But everything is not that bad, you still need websites or apps to display this information. So it's still possible to sort-of hide the information for many people---if you get these services to agree, but you cannot erase it completely. That said I still don't think Facebook on a blockchain is a good idea.
 
 ◊ndef["fired-social-media"]{
     It does happens that people get fired for things they post on social media---and they're not always drunk. Turns out employers, both current and potential future ones, do routinely check out social media and use it to decide if they will fire or hire you.
@@ -66,7 +66,7 @@ At the same time there's something compelling about the idea of having a forum w
 
 We've seen examples of censorship in the chapter ◊link[censorship-is-real]{uncensorable donations}, so we're not going to repeat ourselves too much. One example is that Twitter is completely censored in China, and you might get arrested if you bypass their internet wide block of it.
 
-Well here we have a Twitter-like service that's uncensorable and there's no company or service that China could put pressure on to remove inconvenient messages. We're free to discuss China's human rights abuses (like their ◊link[forced-organ-harvesting]{forced organ harvesting}) and the information can never be removed.
+Well here we have a Twitter-like service that's uncensorable and there's no company or service that China could put pressure on to remove inconvenient messages. We're free to discuss China's human rights abuses (like their ◊link[forced-organ-harvesting]{forced organ harvesting}) and the information can never truly be removed.
 
 ◊(define forced-organ-harvesting "https://chinatribunal.com/final-judgement-report/")
 ◊(define censorship-is-real "/uncensorable_donations.html#censorship-is-real")
@@ -80,11 +80,11 @@ Well here we have a Twitter-like service that's uncensorable and there's no comp
     Who controls the past controls the future. Who controls the present controls the past.
 }
 
-Have you heard about the ◊link[barbarians]{barbarians}? They're primitive and uncivilized humans who more resembled beast than man. Some say they're too stupid to farm but they live to fight. There's nobody more savage and if they catch you they will bathe in your blood...
+Have you heard about the ◊link[barbarians]{barbarians}? They're primitive and uncivilized humans who were more beast than man. Some say they're too stupid to farm and they live to fight. There's nobody more savage and if they catch you they will bathe in your blood...
 
-Except those are exaggerated rumors, twisted by the passage of time. The Romans for example often liked to spread these kinds of rumors for propaganda purposes. For example if a Roman general came back from a successful campaign he might want to play up his opponent to make his feat bigger. As the saying goes "history is written by the victors".◊sn{ceasar-celts}
+Except those are exaggerated rumors, twisted by the passage of time. The Romans for example often liked to spread these kinds of rumors for propaganda purposes. If a Roman general came back from a successful campaign he might want to play up his opponent to make his feat bigger. As the saying goes "history is written by the victors".◊sn{ceasar-celts}
 
-You can also actively rewrite the history, which is one of the main themes of the book "1984" (which I quote often, because I love it so much). The idea is that you can get away with anything, because you erase it in hindsight. Sometimes you might even deny events because they don't fit your world-view or your bias. There are ◊link[rewriting-history]{many historic examples}, some more crazy than others. Maybe we know about the holocaust denials or the moon landing skeptics? Even closer in time is how ◊link[bush-victory-iraq]{Bush declares victory in Iraq}, despite there's no real victory there.
+You can also actively rewrite the history, which is one of the main themes of the book "1984" (which I quote often, because I love it so much). The idea is that you can get away with anything, because you erase it in hindsight. Sometimes you might deny events because they just don't fit your world-view or your bias. There are ◊link[rewriting-history]{many historic examples}, some more crazy than others. Maybe we know about the holocaust denials or the moon landing skeptics? Even closer in time is how ◊link[bush-victory-iraq]{Bush declares victory in Iraq}, despite there's no real victory there.
 
 I wonder what history would look like if we had an uncorrupted version of it? If we had access to several different unaltered versions of a story? What if we had access to an easily searchable Twitter-style feed, both permanent and uncensorable, available to all?
 
@@ -93,7 +93,7 @@ With cryptocurrencies we just might have that.
 ◊ndef["ceasar-celts"]{
     A nice example of the one-sided history is the Roman war against the Celts. We have a great recounting from the Roman general Julius Caesar---but nothing else.
 
-    Julius Caesar's "The Gallic Wars" is supposedly very good, but I'm content with Hardcore History's 6 hour episode ◊link[hc-celtic-holocaust]{The Celtic Holocaust} which is ◊strong{fantastic}.
+    Julius Caesar's "The Gallic Wars" is supposedly very good, but I'm content with Hardcore History's ◊strong{fantastic} 6 hour episode ◊link[hc-celtic-holocaust]{The Celtic Holocaust}.
 }
 
 ◊(define bush-victory-iraq "http://news.bbc.co.uk/2/hi/middle_east/2989459.stm")
