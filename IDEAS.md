@@ -83,6 +83,14 @@ Also the "magic money tree"
 https://www.svd.se/professor-riksbanken-har-inget-mirakelmedel
 https://www.svd.se/experter-oeniga-om-rantan-fruktar-sankning
 
+
+See the case against the FED.
+
+How the FED can be a government agency, completely outside government control:
+
+    The temptetion is to step on the monetary accelerator or at least to avoid the monetary break until after the next election... Giving in to such temptations is likely to impart an inflationary bias to the economy and could lead to instability, recession and economic stagnation. - Alan Greenspan, Chairmain of the FED
+
+
 ## Protection against government seizures
 
 India voids 500 and 1000 rupee bills
@@ -392,6 +400,9 @@ Lot's of economic books:
 
 JPMorgan: We Believe The Dollar Could Lose Its Status As World's Reserve Currency
 <https://www.zerohedge.com/news/2019-07-23/jpmorgan-we-believe-dollar-could-lose-its-status-worlds-reserve-currency>
+
+France and Germany Agree to Block Facebook's Libra
+<https://news.ycombinator.com/item?id=20970774>
 
 # Unsorted
 
