@@ -35,7 +35,7 @@
      "The cashless dystopia"
      "New asset class?")
     ("Extensions"
-     "Timestamping service"
+     timestamping_service.html
      "Provably fair gambling"
      "Uncensorable Twitter"
      "Verifiable voting"

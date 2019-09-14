@@ -397,6 +397,20 @@ Here's some quick napkin math to estimate the cost to achieve 51% of mining powe
     ◊tr{◊td{◊link[btc-hashrate]{Total Bitcoin hash rate}}   ◊td{44,078,986 TH/s}}
     ◊tr{◊td{◊link[s9-hashrate]{Antminer S9i hash rate}}     ◊td{14 TH/s (+-5%)}}
     ◊tr{◊td{◊link[s9-cost]{Antminer S9i cost}}              ◊td{$400}}
+
+Core destruction program TRX:
+* Suspended Crunch (first knees to chest then pike)
+Pendulum (first regular, then knees to elbows)
+Standing body crunch ?
+Standing oblique twist ?
+Oblique Suspended crunch ?
+Suspended alternating crunch ?
+Suspended plan
+Good for back:
+* Low ro
+Extra:
+Hamstring runner
+Biceps/triceps
     ◊tr{◊td{Number of S9i to cover the whole network}       ◊td{3,148,499}}
     ◊tr{◊td{Total network miner cost}                       ◊td{$1,259,399,600}}
 }
