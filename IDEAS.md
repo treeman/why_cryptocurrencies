@@ -246,9 +246,21 @@ A peer-to-peer voting algorithm, without blockchain
 
 ## Do everyone need to run a full node?
 
+(Maybe not?)
+
 ## Who is Satoshi Nakamoto?
 
 ## Is Facebook's Libra a cryptocurrency?
+
+<https://foreignpolicy.com/2019/06/24/971554-facebook-bitcoin-libra-crypto-bad/>
+
+“Can’t wait for a cryptocurrency with the ethics of Uber, the censorship resistance of Paypal, and the centralization of Visa, all tied together under the proven privacy of Facebook.”
+
+## Explaining cryptography
+
+1. sha256 and one-way hash functions
+2. public/private-key crypto
+3. public, private keys in Bitcoin and seeds
 
 
 # Bitcoin documentaries
