@@ -237,6 +237,9 @@
           ,img)
       img))
 
+(define (decoded-figcaption . args)
+  `(figcaption ,@(std-decode args)))
+
 
 ;;; Margin-notes and side-notes
 (define note-defs (make-hash))

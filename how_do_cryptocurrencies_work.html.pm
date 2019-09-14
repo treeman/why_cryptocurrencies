@@ -1,6 +1,5 @@
 #lang pollen
 
-
 ◊(define-meta title "How do cryptocurrencies work?")
 ◊(define-meta subtitle "Decentralized consensus")
 ◊(define-meta updated "2019-04-03T20:05:00+02:00")

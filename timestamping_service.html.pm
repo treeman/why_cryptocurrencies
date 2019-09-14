@@ -23,7 +23,13 @@ In ◊link[how-do-cryptos-work]{How do cryptocurrencies work?} we saw that crypt
 
 A timestamping service offers proof that a message or document existed at a certain time with certain contents. The idea of timestamping information is ◊link[trusted-timestamping]{according to Wikipedia} centuries old, dating back to at least the 17th century.
 
-A modern example is the ◊link[wayback-machine]{Wayback Machine}, a service which allows you to see how a certain website looked at a certain time. A bit like traveling back in time, but with your web-browser instead of a ◊link[delorean]{DeLorean}.
+A modern example is the ◊link[wayback-machine]{Wayback Machine}, a service which allows you to see how a certain website looked at a certain time. A bit like traveling back in time, but with your web-browser instead of a ◊link[delorean]{DeLorean}.◊sn{back-to-the-future}
+
+◊ndef["back-to-the-future"]{
+    The DeLorean is the time machine in the ◊em{Back To The Future} movies. They're amazing movies but unfortunately the ◊link[back-to-the-future-timetravel]{time travel theory isn't really sound}.
+}
+
+◊(define back-to-the-future-timetravel "https://www.overthinkingit.com/2009/01/16/how-time-travel-works-in-back-to-the-future/")
 
 ◊todo{Image of a DeLorean?}
 
@@ -42,50 +48,6 @@ As long as we can trust the Wayback Machine (and I do consider them generally tr
 ◊(define wayback-machine "https://web.archive.org/")
 ◊(define trusted-timestamping "https://en.wikipedia.org/wiki/Trusted_timestamping")
 ◊(define hn-wayback "https://web.archive.org/web/20110301181127/http://news.ycombinator.com/")
-
-
-◊subhead{Decentralized timestamping}
-
-With cryptocurrencies it's possible to do away with the trusted party requirement and offer a decentralized timestamping service. We know that there's ◊link[how-do-cryptos-work]{no single trusted party} that manages a cryptocurrency, but many who cooperate and reach consensus together. Therefore we only need to do two things:
-
-◊ol{
-  ◊li{Insert data to check against.
-
-      ◊todo{Explain one-way hashes}
-
-      This is possible as most cryptocurrencies supports additional data on transactions. We insert a hash of the data on the blockchain (which is as good as storing the whole document for security).
-  }
-  ◊li{Retrieve timestamps.
-
-    ◊todo{Explain how timestamping works}
-
-    Transactions in an older block are older, transactions in a newer block are newer and transactions in the same block occur at the same time.◊sn{partial-order} You can also observe, in a decentralized way, when blocks are created and use that as your timestamp.
-
-    So for example if we have different block explorers 
-
-    ◊ndef["partial-order"]{
-        A blockchain creates a partial order between transactions.
-    }
-
-    ◊figure{
-      ◊stable{
-      Block number      Node #1                 Node #2
-      #1001             2019-09-14 10:01        2019-09-14 10:01
-      #1002             2019-09-14 10:15        2019-09-14 10:27
-      ...
-      #1007             2019-09-14 11:07        2019-09-14 11:08
-      }
-      ◊figcaption{Nodes may receive blocks on different timestamps.}
-    }
-  }
-}
-
-This way we have the basis for a decentralized timestamping service. It's far superior to trusted timestamping because it gives you a mathematical proof instead of having to trust the reputation of whatever service you use. The solution is fully opaque and you can verify it yourself (as long as you know how). Basing your timestamp on a major cryptocurrency is also much more robust. The risk that for example Bitcoin completely disappear is much lower than the risk of your trusted local lawyer goes bankrupt or dies.
-
-◊(define blockchair-ex "https://blockchair.com/bitcoin/block/594760")
-◊(define btc-ex "https://btc.com/0000000000000000001350917aa3ff6afb6900fc6a00f3f208a2dea4e7608ad0")
-◊(define viabtc-ex "https://explorer.viabtc.com/btc/block/0000000000000000001350917aa3ff6afb6900fc6a00f3f208a2dea4e7608ad0")
-
 
 
 ◊subhead{Usage examples}
@@ -115,36 +77,63 @@ What is a timestamping service useful for? Here are some examples:
     }
     ◊li{Proving discovery of software bugs.
 
-        One of the most catastrophic bugs in recent years, ◊link[inflation-bug]{CVE-2018–17144}, which if left unpatched would allow an attacker to print an unlimited amount of Bitcoin. It was found and disclosed by someone who at least initially wanted to stay anonymous, but he wanted the ability to prove he was the one who found it.
-
-        Therefore he decided to create this message:
-
-        ◊code{
-            BitcoinABC does not check for duplicate inputs when processing a block,
-            only when inserting a transaction into the mempool.
-
-            This is dangerous as blocks can be generated with duplicate transactions
-            and then sent through e.g. compact block missing transactions and avoid
-            hitting the mempool, creating money out of thin air.
-
-            /u/awemany
-        }
-
-        Which has the sha256 hash:
-
-        ◊code{5c45a1ba957362a2ba97c9f8c48d4d59d4fa990945b7094a8d2a98c3a91ed9b6}
-
-        And inserted it ◊link[inflation-bug-timestamp]{into the BTC blockchain} using a timestamping service. See "Advanced Verification" to find the hash.
-
-        This proves that reddit user awemany had knowledge of the inflation bug before it was disclosed and therefore that he was the one who found it.◊sn{sufficient}
-
-        ◊ndef["sufficient"]{
-            Technically it doesn't conclusively proves he was the one who found it, only that he knew about the bug before everyone else. In this case it was also an afterthought and he only created the timestamp after having disclosed the bug.
-        }
-
-        Please read ◊link[600-microseconds]{his writeup} of how he found the bug and the related ◊link[inflation-bug-reddit]{discussion on reddit} for more info.
+        What if you've discovered a major software bug and want to disclose it anonymously, but still want the ability to prove you were the one who found it? ◊link[rel-bug]{Later in the chapter} we'll go into details of how the discoverer of one of the most catastrophic bugs in Bitcoin ever accomplished this using timestamping.
     }
 }
+
+◊(define rel-bug "#a-real-life-example")
+
+
+◊subhead{Decentralized timestamping}
+
+With cryptocurrencies it's possible to do away with the trusted party requirement and offer a decentralized timestamping service. We know that there's ◊link[how-do-cryptos-work]{no single trusted party} that manages a cryptocurrency and instead many cooperate and reach consensus together. Therefore we only need to prepare
+
+◊ol{
+  ◊li{Prepare data.
+
+      Because we might want to reveal our message at a later date we don't want to store the message in the clear. We can use an anagram like Robert Hook used or some kind of encryption with a key. Perhaps the easiest is to use a one-way hash function such as SHA-256 which can transform a long text document into a short message, but you cannot go the reverse way from a SHA-256 result and find what text it was created from.
+
+      After we have the message we can add it to a transaction, this is pretty straightforward on most cryptocurrencies.
+  }
+  ◊li{Retrieve timestamps.
+
+    Transactions in an older block are older, transactions in a newer block are newer and transactions in the same block occur at the same time.◊sn{partial-order} You can observe, in a decentralized way, when a block with your transaction is created and use that as your message timestamp.
+
+    The blocks themselves don't contain a trustworthy timestamp, but we can use the many different nodes observing the network to create an estimation. This could for example be the timestamps recorded by two nodes:
+
+    ◊ndef["partial-order"]{
+        A blockchain creates a ◊link[partial-order]{partial order} between transactions where there is no order between transactions in the same block.
+    }
+
+    ◊figure{
+      ◊stable{
+      Block number      Node #1                 Node #2
+      #1001             2019-09-14 10:01        2019-09-14 10:01
+      #1002             2019-09-14 10:15        2019-09-14 10:27
+      ...
+      #1007             2019-09-14 11:07        2019-09-14 11:08
+      }
+      ◊decoded-figcaption{
+        A couple of blocks and their observed timestamps by two different nodes.  
+        Blocks 1003--1006 are omitted.
+      }
+    }
+
+    Here we see that the timestamps differ, at most by 12 minutes. Although not visible in the table the nodes tell us that blocks 1003--1006 happened some time between 10:15 and 11:08. We cannot be sure down to seconds, and maybe not even minutes, but it gives a good estimate if we're only interested in an hourly or daily timestamp.
+
+    In practice well connected nodes (with up to date clocks) will display a small a small time difference because blocks travel quickly through the network. Each block also contains a timestamp themselves, but it's only an approximation and not a guarantee.
+  }
+}
+
+This way we have the basis for a decentralized timestamping service. Insert an obfuscated message in a transaction and afterwards you can reveal the message and use the creation time of the block the transaction is included in as your timestamp.
+
+It's far superior to trusted timestamping because it gives you a mathematical proof instead of having to trust the reputation of whatever service you use. The solution is fully opaque and you can verify it yourself (as long as you know how). Basing your timestamp on a major cryptocurrency is also much more robust. The risk that for example Bitcoin completely disappear is much lower than the risk of your trusted local lawyer goes bankrupt or dies.
+
+◊(define partial-order "https://en.wikipedia.org/wiki/Partially_ordered_set")
+
+◊(define blockchair-ex "https://blockchair.com/bitcoin/block/594760")
+◊(define btc-ex "https://btc.com/0000000000000000001350917aa3ff6afb6900fc6a00f3f208a2dea4e7608ad0")
+◊(define viabtc-ex "https://explorer.viabtc.com/btc/block/0000000000000000001350917aa3ff6afb6900fc6a00f3f208a2dea4e7608ad0")
 
 ◊(define ceiiinosssttuv "https://www.stem.org.uk/system/files/elibrary-resources/legacy_files_migrated/8469-catalyst_20_2_438.pdf")
 ◊(define hookes-law "https://en.wikipedia.org/wiki/Hooke%27s_law")
@@ -160,9 +149,42 @@ What is a timestamping service useful for? Here are some examples:
 ◊(define gpg-sign "https://www.digitalocean.com/community/tutorials/how-to-use-gpg-to-encrypt-and-sign-messages")
 
 
-◊subhead{A hands-on example}
+◊subhead{A real-life example}
 
-◊; TODO use electron cash and make a custom OP_RETURN message
+One of the most catastrophic bugs in recent years, ◊link[inflation-bug]{CVE-2018–17144}, which if left unpatched would allow an attacker to print an unlimited amount of Bitcoin. It was found and disclosed by someone who at least initially wanted to stay anonymous, but he wanted the ability to prove he was the one who found it.
+
+Therefore he decided to create this message:
+
+◊code{
+    BitcoinABC does not check for duplicate inputs when processing a block,
+    only when inserting a transaction into the mempool.
+
+    This is dangerous as blocks can be generated with duplicate transactions
+    and then sent through e.g. compact block missing transactions and avoid
+    hitting the mempool, creating money out of thin air.
+
+    /u/awemany
+}
+
+Which has the SHA-256 hash:
+
+◊code{5c45a1ba957362a2ba97c9f8c48d4d59d4fa990945b7094a8d2a98c3a91ed9b6}
+
+And inserted it ◊link[inflation-bug-timestamp]{into the BTC blockchain} using a timestamping service. See "Advanced Verification" to find the hash.
+
+This proves that reddit user awemany had knowledge of the inflation bug before it was disclosed and therefore that he was the one who found it.◊sn{sufficient}
+
+◊ndef["sufficient"]{
+    Technically it doesn't conclusively prove he was the one who found it, only that he knew about the bug before everyone else. In this case it was also an afterthought and he only created the timestamp after having disclosed the bug.
+}
+
+Please read ◊link[600-microseconds]{his writeup} of how he found the bug and the related ◊link[inflation-bug-reddit]{discussion on reddit} for more info.
+
+
+◊subhead{We can do it ourselves}
+
+◊todo{use electron cash and make a custom OP_RETURN message}
+
 ◊(define opentimestamps "https://opentimestamps.org/")
 ◊(define timestamping-tech "https://news.bitcoin.com/the-tech-to-timestamp-data-in-bitcoins-blockchain-has-evolved-far-past-single-file-uploads/")
 
