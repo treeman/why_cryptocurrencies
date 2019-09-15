@@ -34,7 +34,7 @@
      "Black markets"
      "The cashless dystopia"
      "New asset class?")
-    ("Extensions"
+    (extensions.html
      "Timestamping service"
      "Provably fair gambling"
      "Uncensorable Twitter"
