@@ -13,7 +13,7 @@
   }
 }
 
-In ◊link[how-do-cryptos-work]{How do cryptocurrencies work?} we saw that cryptocurrencies work by preventing ◊link[double-spending]{double spending} coins, and the system chooses one of two potentially valid transactions. But it also create an order between blocks and transactions, which can be used to as the basis for a decentralized timestamping service.
+In ◊link[how-do-cryptos-work]{How do cryptocurrencies work?} we saw that cryptocurrencies work by preventing ◊link[double-spending]{double spending} coins, and the system chooses one of two potentially valid transactions. While doing so it also creates an order between blocks and transactions, which can be used to as the basis for a decentralized timestamping service.
 
 ◊(define how-do-cryptos-work "/how_do_cryptocurrencies_work.html")
 ◊(define double-spending "/how_do_cryptocurrencies_work.html#copying-a-coin-&-double-spending")
@@ -21,7 +21,7 @@ In ◊link[how-do-cryptos-work]{How do cryptocurrencies work?} we saw that crypt
 
 ◊subhead{What is a timestamping service?}
 
-A timestamping service offers proof that a message or document existed at a certain time with certain contents. The idea of timestamping information is ◊link[trusted-timestamping]{according to Wikipedia} centuries old, dating back to at least the 17th century.
+A timestamping service offers proof that a message or document existed at a certain time with certain contents. The idea of timestamping information is ◊link[trusted-timestamping]{according to Wikipedia} centuries old, dating back to ◊em{at least} the 17th century.
 
 A modern example is the ◊link[wayback-machine]{Wayback Machine}, a service which allows you to see how a certain website looked at a certain time. A bit like traveling back in time, but with your web-browser instead of a ◊link[delorean]{DeLorean}.◊sn{back-to-the-future}
 
@@ -35,7 +35,13 @@ A modern example is the ◊link[wayback-machine]{Wayback Machine}, a service whi
 
 ◊(define delorean "https://en.wikipedia.org/wiki/DeLorean_time_machine")
 
-Let's travel back in time and look at the site Hacker News. It's a tech oriented site where you can vote and comment on stories and I've lost a lot of time reading the (sometimes) insightful comments or getting upset at other less insightful comments.  ◊link[hn-wayback]{This is a how Hacker News} looked Mars 1st, 2011 according to the Wayback Machine and here are the top three stories:
+Let's travel back in time and look at the site Hacker News. It's a tech oriented site where you can vote and comment on stories and I've lost a lot of time reading the (sometimes) insightful comments or getting upset at other less insightful comments.  ◊link[hn-wayback]{This is a how Hacker News} looked Mars 1st, 2011 according to the Wayback Machine and here are the top three stories:◊sn{hn-bitcoin}
+
+◊ndef["hn-bitcoin"]{
+    I wanted to use a story of Bitcoin as an example, but they never got any traction that early on.
+
+    Interestingly enough Hacker News is full of people extremely skeptical of cryptocurrencies, who often comment that cryptocurrencies don't have a single legal use-case. This skepticism and misunderstanding, even from highly technical people, was one of the reasons I started writing this book.
+}
 
 ◊ol{
     ◊li{Natalie Portman - Scientist (nytimes.com)}
@@ -139,7 +145,9 @@ With cryptocurrencies it's possible to do away with the trusted party requiremen
 
 This way we have the basis for a decentralized timestamping service. Insert an obfuscated message in a transaction and afterwards you can reveal the message and use the creation time of the block the transaction is included in as your timestamp.
 
-It's far superior to trusted timestamping because it gives you a mathematical proof instead of having to trust the reputation of whatever service you use. The solution is fully opaque and you can verify it yourself (as long as you know how). Basing your timestamp on a major cryptocurrency is also much more robust. The risk that for example Bitcoin completely disappear is much lower than the risk of your trusted local lawyer goes bankrupt or dies.
+It's much easier to use (I'll go through an example ◊link[rel-easy-example]{step-by-step} at the end of the chapter) compared to getting your message included in a publication like Hook did. You also don't have to trust a timestamping service---the solution is fully opaque and you can verify it yourself.
+
+◊(define rel-easy-example "#we-can-do-it-ourselves")
 
 ◊(define partial-order "https://en.wikipedia.org/wiki/Partially_ordered_set")
 
@@ -195,8 +203,63 @@ Please read ◊link[600-microseconds]{his writeup} of how he found the bug and t
 
 ◊subhead{We can do it ourselves}
 
-◊todo{use electron cash and make a custom OP_RETURN message}
+The previous example used a timestamping service which did the conversions for us, but it's actually easy to do everything ourselves.
+
+Let's say we want to obscure and timestamp the message Hook used:
+
+◊code{as is the extension, so is the force}
+
+Let's now encode and timestamp it using the Bitcoin Cash blockchain:
+
+◊ol{
+    ◊li{Encode the message using SHA-256.
+
+        On linux we can run the command:◊sn{others-command}
+
+        ◊ndef["others-command"]{
+            I'm sure you can find a tool for Windows if you search for it. Be sure to exclude the newline (which the -n flag is for). You can also find websites for it, but don't use them if the message is sensitive.
+        }
+
+        ◊code{
+            echo -n "as is the extension, so is the force" | sha256sum
+        }
+
+        Giving us the SHA-256 hash:
+
+        ◊code{
+            dab965bb19823669b8481846b9672c694a9af1b808314956b43154a0472942d8
+        }
+    }
+    ◊li{Insert it in a transaction using OP_RETURN.
+
+        For this step you need a wallet capable of creating a transaction with a custom OP_RETURN field, I used ◊link[electroncash]{Electron Cash}. We can double-check the transaction on blockexplorer, ◊link[blockexplorer-ex]{such as this one}, to see that the OP_RETURN value matches our SHA-256 hash.
+
+        ◊todo{use electron cash and make a custom OP_RETURN message}
+    }
+}
+
+With that our timestamp is prepared and nobody can see our original message, only the SHA-256 hash. When we're ready to reveal our message to the world all we have to do is show everyone the message and how to verify the timestamp:
+
+◊(define blockexplorer-ex "#")
+◊(define electroncash "https://electroncash.org/")
+
+◊ol{
+    ◊li{Locate the hash in the blockchain.
+
+        It's probably easiest if we point out which transaction we've included our hash in.
+    }
+    ◊li{Verify the SHA-256 hash.
+
+        The message should encode to the the same hash that's included in the blockchain.
+    }
+    ◊li{Lookup the timestamp.
+
+        According to this blockexplorer...
+    }
+}
 
 ◊(define opentimestamps "https://opentimestamps.org/")
 ◊(define timestamping-tech "https://news.bitcoin.com/the-tech-to-timestamp-data-in-bitcoins-blockchain-has-evolved-far-past-single-file-uploads/")
+
+We now have a trusted timestamp for our message, backed by math instead of trust.
 
