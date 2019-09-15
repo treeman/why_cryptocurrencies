@@ -121,9 +121,15 @@ With cryptocurrencies it's possible to do away with the trusted party requiremen
 
     Here we see that the timestamps differ, at most by 12 minutes. Although not visible in the table the nodes tell us that blocks 1003--1006 happened some time between 10:15 and 11:08. We cannot be sure down to seconds, and maybe not even minutes, but it gives a good estimate if we're only interested in an hourly or daily timestamp.
 
-    In practice well connected nodes (with up to date clocks) will display a small a small time difference because blocks travel quickly through the network. Each block also contains a timestamp themselves, but it's only an approximation and not a guarantee.
+    In practice well connected nodes (with up to date clocks) will display a small time difference because blocks usually travel quickly through the network. Each block also contains a timestamp, but it's only an approximation and not a guarantee.◊sn{miners-timestamp}
+
+    ◊ndef["miners-timestamp"]{
+        The miner who creates the block can set the timestamp themselves, with ◊link[block-timestamp]{some constraints}. If we blindly trust that timestamp we essentially trust that one miner. Using the time different nodes received the block is a more decentralized approach.
+    }
   }
 }
+
+◊(define block-timestamp "https://en.bitcoin.it/wiki/Block_timestamp")
 
 This way we have the basis for a decentralized timestamping service. Insert an obfuscated message in a transaction and afterwards you can reveal the message and use the creation time of the block the transaction is included in as your timestamp.
 
