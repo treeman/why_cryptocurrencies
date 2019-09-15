@@ -86,23 +86,27 @@ What is a timestamping service useful for? Here are some examples:
 
 ◊subhead{Decentralized timestamping}
 
-With cryptocurrencies it's possible to do away with the trusted party requirement and offer a decentralized timestamping service. We know that there's ◊link[how-do-cryptos-work]{no single trusted party} that manages a cryptocurrency and instead many cooperate and reach consensus together. Therefore we only need to prepare
+With cryptocurrencies it's possible to do away with the trusted party requirement and offer a decentralized timestamping service. We know that there's ◊link[how-do-cryptos-work]{no single trusted party} that manages a cryptocurrency and instead many cooperate and reach consensus together. Therefore we only need to decide how to embed verifiable data and timestamps into a cryptocurrency:
 
 ◊ol{
   ◊li{Prepare data.
 
-      Because we might want to reveal our message at a later date we don't want to store the message in the clear. We can use an anagram like Robert Hook used or some kind of encryption with a key. Perhaps the easiest is to use a one-way hash function such as SHA-256 which can transform a long text document into a short message, but you cannot go the reverse way from a SHA-256 result and find what text it was created from.
+      Because we might want to reveal our message at a later date we don't want to store the message in the clear. We can use an anagram like Robert Hook used, some kind of encryption with a key or a one-way hash function.
 
-      After we have the message we can add it to a transaction, this is pretty straightforward on most cryptocurrencies.
+      After we have the message we want to verify we can ◊link[embed-data-how]{embed it into a cryptocurrency}.
   }
   ◊li{Retrieve timestamps.
 
     Transactions in an older block are older, transactions in a newer block are newer and transactions in the same block occur at the same time.◊sn{partial-order} You can observe, in a decentralized way, when a block with your transaction is created and use that as your message timestamp.
 
-    The blocks themselves don't contain a trustworthy timestamp, but we can use the many different nodes observing the network to create an estimation. This could for example be the timestamps recorded by two nodes:
-
     ◊ndef["partial-order"]{
         A blockchain creates a ◊link[partial-order]{partial order} between transactions where there is no order between transactions in the same block.
+    }
+
+    The blocks themselves don't contain a trustworthy timestamp,◊sn{miners-timestamp} but we can use the many different nodes observing the network to create an estimation. This could for example be the timestamps recorded by two nodes:
+
+    ◊ndef["miners-timestamp"]{
+        The miner who creates the block can set the timestamp themselves, with ◊link[block-timestamp]{some constraints}. If we blindly trust that timestamp we essentially trust that one miner. Using the time different nodes received the block is a more decentralized approach, but trusting the miner is probably good enough for most practical examples.
     }
 
     ◊figure{
@@ -119,16 +123,18 @@ With cryptocurrencies it's possible to do away with the trusted party requiremen
       }
     }
 
-    Here we see that the timestamps differ, at most by 12 minutes. Although not visible in the table the nodes tell us that blocks 1003--1006 happened some time between 10:15 and 11:08. We cannot be sure down to seconds, and maybe not even minutes, but it gives a good estimate if we're only interested in an hourly or daily timestamp.
+    Here we see that the timestamps differ, at most by ◊nbsp{12 minutes}. Although not visible in the table the nodes tell us that blocks 1003--1006 happened some time between 10:15 and 11:08. We cannot be sure down to seconds, and maybe not even minutes, but it gives a good estimate if we're only interested in an hourly or daily timestamp.◊sn{small-difference}
 
-    In practice well connected nodes (with up to date clocks) will display a small time difference because blocks usually travel quickly through the network. Each block also contains a timestamp, but it's only an approximation and not a guarantee.◊sn{miners-timestamp}
+    ◊ndef["small-difference"]{
+        In practice well connected nodes (with up to date clocks) will display a small time difference because blocks usually travel quickly through the network.  A ◊nbsp{12 minute} time difference is extremely unlikely and unwanted, I only used it as an illustrative example.
 
-    ◊ndef["miners-timestamp"]{
-        The miner who creates the block can set the timestamp themselves, with ◊link[block-timestamp]{some constraints}. If we blindly trust that timestamp we essentially trust that one miner. Using the time different nodes received the block is a more decentralized approach.
+        The network requires that blocks travel between miners quickly otherwise it increases the risk for ◊link[forks?]{forks} or hurt smaller miners disproportionally.
     }
   }
 }
 
+◊(define forks? "/how_do_cryptocurrencies_work.html#forks")
+◊(define embed-data-how "/extensions.html#embedding-data")
 ◊(define block-timestamp "https://en.bitcoin.it/wiki/Block_timestamp")
 
 This way we have the basis for a decentralized timestamping service. Insert an obfuscated message in a transaction and afterwards you can reveal the message and use the creation time of the block the transaction is included in as your timestamp.
