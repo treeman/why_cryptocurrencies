@@ -13,15 +13,20 @@
     }
 }
 
-Another use for embeddable data in a cryptocurrency is a Twitter clone. A type of Twitter where messages are embedded into transactions and therefore cannot be blocked and cannot be erased.
+Another use for ◊link[embedding-data]{embeddable data} in a cryptocurrency is a Twitter clone. A type of Twitter where messages are included into transactions and therefore cannot be blocked or erased.
 
-One example is ◊link[memo-cash]{memo.cash} which embeds data into the Bitcoin Cash blockchain.◊sn{embed-in-any}
+◊(define embedding-data "/extensions.html#embedding-data")
 
+One example is ◊link[memo-cash]{memo.cash} which embeds data into the Bitcoin Cash blockchain, ◊link[memo-cash-protocol]{see their protocol} if you're interested in details.◊sn{why-bch}
+
+◊(define memo-cash-protocol "https://memo.cash/protocol")
 ◊(define memo-cash "https://memo.cash/")
 
-◊ndef["embed-in-any"]{
-    You can theoretically create this on almost any cryptocurrency, as long as you have some way to add user specified data. For example if you can choose the beginning letter(s) of your public address, you can use a chain of addresses to insert your message. Some cryptocurrencies just makes it easier to embed data.
+◊ndef["why-bch"]{
+    Bitcoin Cash is a good option because it has ◊link[bch-low-fees]{low fees} and a larger OP_RETURN limit, making it a cheap and easy base for a messaging platform.
 }
+
+◊(define bch-low-fees "https://bitcoinfees.cash/")
 
 
 ◊subhead{Not a purely good thing}
