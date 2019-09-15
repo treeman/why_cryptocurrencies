@@ -232,21 +232,24 @@ Let's now encode and timestamp it using the Bitcoin Cash blockchain:
     }
     ◊li{Insert it in a transaction using OP_RETURN.
 
-        For this step you need a wallet capable of creating a transaction with a custom OP_RETURN field, I used ◊link[electroncash]{Electron Cash}. We can double-check the transaction on blockexplorer, ◊link[blockexplorer-ex]{such as this one}, to see that the OP_RETURN value matches our SHA-256 hash.
-
-        ◊todo{use electron cash and make a custom OP_RETURN message}
+        For this step you need a wallet capable of creating a transaction with a custom OP_RETURN field, I used ◊link[electroncash]{Electron Cash}. We can double-check the transaction on blockexplorer, ◊link[transaction-ex]{such as this one}, to see that the OP_RETURN value matches our SHA-256 hash (look for the decoded OP_RETURN field).◊sn{j@}
     }
 }
 
 With that our timestamp is prepared and nobody can see our original message, only the SHA-256 hash. When we're ready to reveal our message to the world all we have to do is show everyone the message and how to verify the timestamp:
 
-◊(define blockexplorer-ex "#")
+◊(define transaction-ex "https://blockchair.com/bitcoin-cash/transaction/586783e17fadace136365490fd83ba59390ca55e7205ee74fbc7db2daa012ad3")
+◊(define transaction-ex2 "https://bch.btc.com/586783e17fadace136365490fd83ba59390ca55e7205ee74fbc7db2daa012ad3")
 ◊(define electroncash "https://electroncash.org/")
 
 ◊ol{
     ◊li{Locate the hash in the blockchain.
 
-        It's probably easiest if we point out which transaction we've included our hash in.
+        It's probably easiest if we point out ◊link[transaction-ex]{which transaction} we've included our hash in. ◊link[transaction-ex2]{Here's the same transaction} using another blockexplorer.
+
+        ◊ndef["j@"]{
+            Blockchair includes the prefix "j@" in the decoded OP_RETURN field while other blockexplorers I checked don't. It's the encoding (64) Electron Cash inserted into the transaction and isn't part of our hash.
+        }
     }
     ◊li{Verify the SHA-256 hash.
 
@@ -254,7 +257,7 @@ With that our timestamp is prepared and nobody can see our original message, onl
     }
     ◊li{Lookup the timestamp.
 
-        According to this blockexplorer...
+        According to ◊link[transaction-ex]{blockchair} the transaction was included in a block mined 20:17 September 15th, 2019 (UTC). Verifying the timestamp with other blockexplorers or full nodes is left as an exercise to the reader, just be cautious of timezone differences.
     }
 }
 
