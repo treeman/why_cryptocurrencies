@@ -36,10 +36,10 @@
      "New asset class?")
     (extensions.html
      "Timestamping service"
-     "Provably fair gambling"
      "Uncensorable Twitter"
-     "Verifiable voting"
-     "Tokens")
+     "Provably fair gambling"
+     "Tokens"
+     "Verifiable voting")
     (appendix.html
      bitcoin_whitepaper.html
      "Who is Satoshi Nakamoto?"

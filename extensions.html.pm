@@ -10,7 +10,7 @@ Money is perhaps the most obvious usage of decentralized byzantine fault toleran
 ◊ndef["blockchain-hype"]{
     Always be mindful when people use the word ◊em{blockchain}. Chances are they're referring to private blockchains or blockchains which use a consensus model with known and trusted actors. ◊link[libra]{Facebook's Libra} is such an example and ◊link[ibm-blockchain]{IBM's blockchain} is another.
 
-    Don't let the similar names fool you: consensus algorithms with known participants and those with unknown participants are ◊strong{very} different.
+    Don't let the similar names fool you: consensus algorithms with known participants and those with unknown participants are ◊strong{very} different. I only consider those using the latter to be cryptocurrencies.
 }
 
 ◊(define ibm-blockchain "https://www.ibm.com/blockchain")
@@ -40,7 +40,7 @@ The first thing we can observe is that it's possible to insert data into cryptoc
     }
     ◊li{Addresses are user controlled.
 
-        Even if it's not intended you can always insert arbitrary data as long as you can control your address.◊sn{control-address} For example you could chain transactions to addresses and treat the second character of the receiving address as your message:
+        Even if it's not intended you can always insert arbitrary data as long as you can control your address.◊sn{control-address} For example you could chain transactions and treat the second character of the receiving address as your message:
 
         ◊(gen-message "Hello")
 
