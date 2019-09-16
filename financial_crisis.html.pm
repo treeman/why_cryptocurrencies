@@ -93,6 +93,11 @@ Which, according to Bloomberg News, is just another name for a CDO.
 ◊subhead{Reclaiming the power to print money}
 
 
+◊subhead{A new hope}
+
+I'm not going to say cryptocurrencies magically solve all problem---they won't---but they do present a new option to the economy: They reclaim the power to print money.
+
+
 ◊; Cashing In: How to Make Negative Interest Rates Work 
 ◊; <https://news.ycombinator.com/item?id=20079686>
 

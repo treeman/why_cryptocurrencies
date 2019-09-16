@@ -318,8 +318,12 @@ A peer-to-peer voting algorithm, without blockchain
         https://bitcointalk.org/index.php?topic=48.msg329#msg329
 * Banking On Bitcoin (2016)
     "If privacy is outlawed, only outlaws will have privacy"
+* The Bitcoin Gospel (2015)
+    Focus on Bitcoin being a replacement for banks. Focus on Roger Ver, and we get to see him do some BJJ!
+    It's always best if the leader is aloof or distant. Mythology around him.
+    "Governments are murdering children!"
+
 * Bitcoin-Shape The Future
-* The Bitcoin Gospel
 * The Blockchain and Us
 * Bitcoin in Uganda – Empowering People
 * Bitcoin Full Documentary
@@ -330,7 +334,14 @@ A peer-to-peer voting algorithm, without blockchain
 
 1. On writing well
 2. After the Music Stopped: The Financial Crisis, the Response, and the Work Ahead 
+    "When the music stops, in terms of liquidity, things will be complicated. But as long as the music is playing, you’ve got to get up and dance. We’re still dancing,"
+        - Citigroup CEO Chuck Prince, 2007
+    Merely months before the financial meltdown
+
+    12 million jobs lost
+    The Lehman bancruptcy signifies the start of the financial crisis. The U.S. economy was already in a rocky state
 3. The case against the FED
+4. The Big Short: Inside the Doomsday Machine
 
 # Videos
 
