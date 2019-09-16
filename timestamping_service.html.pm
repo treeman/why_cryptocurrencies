@@ -68,7 +68,7 @@ What is a timestamping service useful for? Here are some examples:
         You would use timestamping. For example Robert Hook ◊link[ceiiinosssttuv]{used it in 1660} when discovering Hooke's law by publishing the anagram ◊em{ceiiinosssttuv} and later published the translation ◊em{ut tensio sic vis} (latin for "as is the extension, so is the force").◊sn{wiki-tensio}
 
         ◊ndef["wiki-tensio"]{
-            Interestingly if you search for "ceiiinosssttuv" on Wikipedia you'll be redirected to Hooke's law, but without explaining why.
+            Interestingly if you search for "ceiiinosssttuv" on Wikipedia you'll be redirected to Hooke's law, without an explanation why.
         }
     }
     ◊li{Testaments.
@@ -232,7 +232,7 @@ Let's now encode and timestamp it using the Bitcoin Cash blockchain:
     }
     ◊li{Insert it in a transaction using OP_RETURN.
 
-        For this step you need a wallet capable of creating a transaction with a custom OP_RETURN field, I used ◊link[electroncash]{Electron Cash}. We can double-check the transaction on blockexplorer, ◊link[transaction-ex]{such as this one}, to see that the OP_RETURN value matches our SHA-256 hash (look for the decoded OP_RETURN field).◊sn{j@}
+        For this step you need a wallet capable of creating a transaction with a custom OP_RETURN field, I used the desktop version of ◊link[electroncash]{Electron Cash} and enabled the OP_RETURN field in settings. We can double-check the transaction on blockexplorer, ◊link[transaction-ex]{such as this one}, to see that the OP_RETURN value matches our SHA-256 hash (look for the decoded OP_RETURN field).◊sn{j@}
     }
 }
 

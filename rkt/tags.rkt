@@ -237,6 +237,7 @@
           ,img)
       img))
 
+;; FIXME rename to figcaption
 (define (decoded-figcaption . args)
   `(figcaption ,@(std-decode args)))
 
