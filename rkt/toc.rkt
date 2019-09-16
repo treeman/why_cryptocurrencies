@@ -34,14 +34,17 @@
      "Black markets"
      "The cashless dystopia"
      "New asset class?")
-    ("Extensions"
+    (extensions.html
      timestamping_service.html
-     "Provably fair gambling"
      "Uncensorable Twitter"
-     "Verifiable voting"
-     "Tokens")
+     "Provably fair gambling"
+     "Tokens"
+     "Verifiable voting")
     (appendix.html
      bitcoin_whitepaper.html
+     "Who is Satoshi Nakamoto?"
+     "Is Facebook's Libra a cryptocurrency?"
+     "An intro to cryptography"
      "Further research")))
 
 (define (in-toc? page)

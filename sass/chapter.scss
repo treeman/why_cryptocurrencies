@@ -717,3 +717,14 @@ ul > li.neg:before {
 .qt-tab {
     padding-left: 1.2rem;
 }
+
+table.address-message {
+    font-family: $code-font-family;
+    font-size: 0.71rem;
+    line-height: 1.45;
+    //font-style: italic;
+    .msg-char {
+        padding: 0 0.2em;
+        font-weight: bold;
+    }
+}
