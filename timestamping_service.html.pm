@@ -31,8 +31,6 @@ A modern example is the ◊link[wayback-machine]{Wayback Machine}, a service whi
 
 ◊(define back-to-the-future-timetravel "https://www.overthinkingit.com/2009/01/16/how-time-travel-works-in-back-to-the-future/")
 
-◊todo{Image of a DeLorean?}
-
 ◊(define delorean "https://en.wikipedia.org/wiki/DeLorean_time_machine")
 
 Let's travel back in time and look at the site Hacker News. It's a tech oriented site where you can vote and comment on stories and I've lost a lot of time reading the (sometimes) insightful comments or getting upset at other less insightful comments.  ◊link[hn-wayback]{This is a how Hacker News} looked Mars 1st, 2011 according to the Wayback Machine and here are the top three stories:◊sn{hn-bitcoin}
