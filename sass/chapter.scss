@@ -1027,3 +1027,26 @@ table.address-message {
     //color: $btc-orange;
 }
 */
+
+.hidden-label {
+    @include a-background(#333);
+    cursor: pointer;
+}
+.hidden-label:hover {
+    color: $body-link-hover-color;
+    background: none;
+    shadow: none;
+}
+.hidden-toggle {
+    display: none;
+}
+.hidden-content {
+    display: none;
+    @extend %sans-serif;
+    font-size: 0.8rem;
+}
+.hidden-toggle:checked + .hidden-content {
+    display: block;
+    text-align: center;
+    padding-top: 0.2rem;
+}

@@ -5,6 +5,7 @@
 (require racket/format)
 (require racket/runtime-path)
 (require racket/port)
+(require libuuid)
 (require "decode.rkt")
 (require "links.rkt")
 (require "post-process.rkt")
@@ -367,6 +368,15 @@
                   (frameborder "0")
                   (allow "fullscreen")))))
      (figcaption ,@decoded-caption)))
+
+; Creates a hidden toggle inline in text.
+(define (toggle hidden-txt . link-txt)
+  (define id (uuid-generate))
+  `(span ((class "hidden-link"))
+     (label ((class "hidden-label") (for ,id)) ,@link-txt)
+     (input ((id ,id) (class "hidden-toggle") (type "checkbox")))
+     (span ((class "hidden-content"))
+       ,hidden-txt)))
 
 ;;; Root transformations
 

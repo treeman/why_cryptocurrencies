@@ -43,7 +43,7 @@
     (appendix.html
      bitcoin_whitepaper.html
      challenges.html
-     "An introduction to cryptography"
+     intro_to_cryptography.html
      ;"Who is Satoshi Nakamoto?"
      ;"Is Facebook's Libra a cryptocurrency?"
      "Further research")))
