@@ -25,13 +25,14 @@
     ("A better currency"
      "The financial crisis, bad loans and bail-outs"
      "The blind leading the blind"
-     "Protection against government seizures"
+     anonymous_money.html
      "A global currency"
      "Avoids hyperinflation")
     ("Brave new world"
      "Separation of money and state"
-     "A swiss bank account in your pocket"
-     "Black markets"
+     swiss_bank_account_in_your_pocket.html
+     "Protection against government seizures"
+     "Darknet markets"
      "The cashless dystopia"
      "New asset class?")
     ("Extensions"
