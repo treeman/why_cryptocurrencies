@@ -190,6 +190,14 @@ China bans 23M from buying travel tickets as part of 'social credit' system
 Sweden's cashless society is no longer a utopia
 <https://news.ycombinator.com/item?id=18422422>
 
+
+## Reshaping the economics of the web
+
+Cash for the internet, help content producers get paid as an alternative for ads.
+
+<https://news.ycombinator.com/item?id=20987628>
+
+
 # Other use
 
 ##  New asset class
