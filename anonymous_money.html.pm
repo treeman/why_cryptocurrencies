@@ -1,7 +1,7 @@
 #lang pollen
 
 ◊(define-meta title "Anonymous money")
-◊;(define-meta subtitle "The ones payment processors don't want to do business with")
+◊(define-meta subtitle "Reclaim your financial privacy with cryptocurrencies")
 ◊(define-meta updated "2019-09-17T07:19:33+02:00")
 ◊(define-meta uuid "9f90581c-24f1-4653-9b4a-d86a9ec9e365")
 
@@ -13,19 +13,50 @@
   }
 }
 
-◊subhead{We're living in the Stasi's wet dream}
+Privacy and anonymity is an important issue in the modern world and there are countless examples of privacy violations everywhere. Before we get to some of them we first need to address why privacy matter, because today government officials, company owners, the news and regular people all ask the same questions:
 
-◊ol{
-  ◊li{Snowden showed...}
-  ◊li{Google, Facebook, everyone are selling our data}
-  ◊li{Credit card companies know everything about us and are selling our data}
+But why privacy? Why would you want to stay anonymous? What are you hiding? Are you criminal?◊sn{summary-discussion}
+
+◊ndef["summary-discussion"]{
+    Privacy discussions can often be summarized to:
+
+    ◊span[#:class "talking"]{
+      ◊trow{Why do I need privacy? I have nothing to hide.}
+      ◊trow{Then pull your pants down, give me a dickpick, your email password and your credit card numbers.}
+    }
+
+    I can't promise I'll do better but I'll try. At least I don't have anyone except myself to argue with, if that makes a difference...
 }
+
+◊(define (trow . args)
+  `(span ((class "row")) ,@args))
 
 
 ◊subhead{You do have something to hide}
 
-◊; from TED talk
-Dancing at home... And you realize somebody is watching you. You immediately stop your behaviour and you're embarrassed.
+When people are alone and relaxed they do things they otherwise wouldn't. Maybe you like to dance when you're alone, sing in the shower or scratch yourself somewhere... nice. If you're caught in the act you immediately stop what we're doing and feel embarrassed.
+
+If you don't recognize the situation please watch the scene where Hugh Grant plays the ◊link[love-actually-dance]{dancing prime minister in Love Actually}. Even if you do know what I'm talking about the scene's so good you should watch it anyway.
+
+◊todo{IMG of a dancing dude embarrassing himself}
+
+◊(define love-actually-dance "https://www.youtube.com/watch?v=zcgxBHBsl-4")
+
+People may say privacy don't matter yet their actions tell a different story. For example Facebook's founder Mark Zuckerberg has said that privacy is ◊link[zuckerberg-privacy-not-norm]{no longer a social norm}, and then he buys up four homes surrounding his home ◊link[zuckerberg-buy-privacy]{because he wants privacy}.
+
+Caring about privacy is a natural instinct---for good reason. It's not just about avoiding embarrassment, it's also for your own personal safety. In fact privacy is closely related to security:
+
+◊ol{
+  ◊li{Identity theft can ruin your life.}
+  ◊li{Criminals target rich people.}
+  ◊li{Crime of opportunity.}
+}
+
+Administration Using the Full Power of the Surveillance State on Whistleblowers
+<https://news.ycombinator.com/item?id=20615084>
+
+◊(define identity-theft "https://www.forbes.com/sites/laurashin/2014/11/18/someone-had-taken-over-my-life-an-identity-theft-victims-story/")
+
 
 "Fear" to force people to be as unassuming as possible, to avoid interest. We change our behavior when being watched.
 
@@ -33,18 +64,8 @@ Dancing at home... And you realize somebody is watching you. You immediately sto
     There was of course no way of knowing whether you were being watched at any given moment. How often, or on what system, the Thought Police plugged in on any individual wire was guesswork. It was even conceivable that they watched everybody all the time.
 }
 
-
-
-Often when people argue about the importance of privacy we can summarize the discussion like this:
-
-◊ul[#:class "talking"]{
-  ◊li{Why do I need privacy? I have nothing to hide.}
-  ◊li{Then pull your pants down, give me a dick pick, your email password and your credit card numbers.}
-}
-
 While crude it cuts right to the chase: you do in fact have things which are best to hide. Your passwords and credit card numbers◊sn{cc-numbers} is a good example: you should hide them because of security reasons. We lock our door for both privacy and security reasons.
 
-People may say privacy don't matter yet their actions tell a different story. For example Facebook's founder Mark Zuckerberg has said that privacy is ◊link[zuckerberg-privacy-not-norm]{no longer a social norm}, and then he buys up four homes surrounding his home ◊link[zuckerberg-buy-privacy]{because he wants privacy}.
 
 ◊(define zuckerberg-buy-privacy "https://www.inquisitr.com/989057/facebooks-zuckerberg-buys-his-neighborhood-because-get-this-he-wants-privacy/")
 ◊(define zuckerberg-privacy-not-norm "https://www.theguardian.com/technology/2010/jan/11/facebook-privacy")
@@ -66,7 +87,7 @@ After all we don't have curtains or blinders on our windows because we do someth
 
 Now even if you still don't think you have anything to hide, remember that others do. If we give up our right to privacy then everyone have to give up theirs as well.
 
-Here are some examples where a lack of economic privacy is directly harmful for certain individuals:
+Here are some examples where lack of economic privacy is directly harmful for certain individuals:
 
 ◊ol{
   ◊li{Unwanted pregnancies.
@@ -102,11 +123,26 @@ Here are some examples where a lack of economic privacy is directly harmful for 
 ◊(define gay-illegal "https://www.theguardian.com/world/2016/jun/21/gay-lgbt-muslim-countries-middle-east")
 ◊(define china-social-credit "https://www.inkstonenews.com/china/chinas-13-million-discredited-individuals-face-discrimination-thanks-social-credit-system/article/3003319")
 
-As Snowden's quote in the beginning of the chapter says: just because you choose not to exercise your right, why should that mean we remove the right for others? Privacy should be a ◊em{choice}, not something that's chosen for you.
+As Snowden's quote in the beginning of the chapter says: just because you choose not to exercise your right, why should that mean we remove the right for others? Privacy should be a ◊em{choice}---not something that's chosen for you.
 
 
-◊; Target predicts teenage pregnancy before her father knew:
-◊; https://www.nytimes.com/2012/02/19/magazine/shopping-habits.html?pagewanted=all&_r=0
+◊subhead{We're living in the Stasi's wet dream}
+
+◊ol{
+  ◊li{Snowden showed...}
+  ◊li{Google, Facebook, everyone are selling our data}
+  ◊li{Credit card companies know everything about us and are selling our data}
+}
+
+Credit cards have a privacy problem
+◊link{https://news.ycombinator.com/item?id=20800115}
+
+Administration Using the Full Power of the Surveillance State on Whistleblowers
+◊link{https://news.ycombinator.com/item?id=20615084}
+
+◊link{https://www.cbc.ca/news/business/banking-information-shared-with-third-parties-1.5102931}
+
+
 
 ◊subhead{Boiling a frog}
 

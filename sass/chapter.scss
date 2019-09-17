@@ -720,3 +720,11 @@ ul.talking > li:before {
 .qt-tab {
     padding-left: 1.2rem;
 }
+
+.sidenote .talking {
+    .row:before {
+        content: "–";
+        padding-right: 0.3rem;
+    }
+}
+

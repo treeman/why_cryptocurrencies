@@ -260,7 +260,7 @@ https://news.ycombinator.com/item?id=11421352
     While the rich don't pay taxes the middle- and lowclass are stuck paying for all services.
     "Just beacuse it's legal doesn't mean it's moral"
     FIFA officials, Lionel Messi is in the papers (might be those who manage him)
-    Links to Putin, Iceland's Prime Minister, drug cartels etc
+    Links to Putin, Iceland's Prime Minister, drug cartels, David Cameron etc
     Lot's of other people who we don't recognize
     Trump also had business there (he was "smart" as to not pay taxes)
         at least 3,450 times by name
