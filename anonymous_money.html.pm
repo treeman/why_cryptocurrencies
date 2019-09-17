@@ -24,6 +24,17 @@
 
 ◊subhead{You do have something to hide}
 
+◊; from TED talk
+Dancing at home... And you realize somebody is watching you. You immediately stop your behaviour and you're embarrassed.
+
+"Fear" to force people to be as unassuming as possible, to avoid interest. We change our behavior when being watched.
+
+◊qt[#:author "George Orwell" #:src "1984" #:quote-src #t]{
+    There was of course no way of knowing whether you were being watched at any given moment. How often, or on what system, the Thought Police plugged in on any individual wire was guesswork. It was even conceivable that they watched everybody all the time.
+}
+
+
+
 Often when people argue about the importance of privacy we can summarize the discussion like this:
 
 ◊ul[#:class "talking"]{
@@ -31,7 +42,12 @@ Often when people argue about the importance of privacy we can summarize the dis
   ◊li{Then pull your pants down, give me a dick pick, your email password and your credit card numbers.}
 }
 
-While crude it cuts right to the chase: you do in fact have things which are best to hide. Your passwords and credit card numbers◊sn{cc-numbers} is a good example: you should hide them because of security reasons.
+While crude it cuts right to the chase: you do in fact have things which are best to hide. Your passwords and credit card numbers◊sn{cc-numbers} is a good example: you should hide them because of security reasons. We lock our door for both privacy and security reasons.
+
+People may say privacy don't matter yet their actions tell a different story. For example Facebook's founder Mark Zuckerberg has said that privacy is ◊link[zuckerberg-privacy-not-norm]{no longer a social norm}, and then he buys up four homes surrounding his home ◊link[zuckerberg-buy-privacy]{because he wants privacy}.
+
+◊(define zuckerberg-buy-privacy "https://www.inquisitr.com/989057/facebooks-zuckerberg-buys-his-neighborhood-because-get-this-he-wants-privacy/")
+◊(define zuckerberg-privacy-not-norm "https://www.theguardian.com/technology/2010/jan/11/facebook-privacy")
 
 ◊ndef["cc-numbers"]{
 
@@ -86,7 +102,7 @@ Here are some examples where a lack of economic privacy is directly harmful for 
 ◊(define gay-illegal "https://www.theguardian.com/world/2016/jun/21/gay-lgbt-muslim-countries-middle-east")
 ◊(define china-social-credit "https://www.inkstonenews.com/china/chinas-13-million-discredited-individuals-face-discrimination-thanks-social-credit-system/article/3003319")
 
-As Snowden's quote in the beginning of the chapter says: just because you choose not to exercise your right, why should that mean we remove the right for others?
+As Snowden's quote in the beginning of the chapter says: just because you choose not to exercise your right, why should that mean we remove the right for others? Privacy should be a ◊em{choice}, not something that's chosen for you.
 
 
 ◊; Target predicts teenage pregnancy before her father knew:
@@ -107,4 +123,7 @@ Where has this slippery slope lead us?
 
 ◊; I have I don't have anything to hide
 ◊; https://www.privacytools.io/
+
+◊; TED talk, very good
+◊; https://www.ted.com/talks/glenn_greenwald_why_privacy_matters
 
