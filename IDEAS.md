@@ -190,6 +190,14 @@ China bans 23M from buying travel tickets as part of 'social credit' system
 Sweden's cashless society is no longer a utopia
 <https://news.ycombinator.com/item?id=18422422>
 
+
+## Reshaping the economics of the web
+
+Cash for the internet, help content producers get paid as an alternative for ads.
+
+<https://news.ycombinator.com/item?id=20987628>
+
+
 # Other use
 
 ##  New asset class
@@ -240,6 +248,31 @@ A peer-to-peer voting algorithm, without blockchain
 * Banking On Bitcoin (2016)
     "If privacy is outlawed, only outlaws will have privacy"
     Start up again at 50 min
+
+# Other documentaries
+
+The Panama Papers (2018)
+    How World leaders and billionaires hide their money
+    Tens of trillions of dollars hidden in offshore accounts
+    Economic inequality is an important issue in the world. And the very rich and powerful do tax fraud, etc.
+https://news.ycombinator.com/item?id=11416928
+https://news.ycombinator.com/item?id=11421352
+    While the rich don't pay taxes the middle- and lowclass are stuck paying for all services.
+    "Just beacuse it's legal doesn't mean it's moral"
+    FIFA officials, Lionel Messi is in the papers (might be those who manage him)
+    Links to Putin, Iceland's Prime Minister, drug cartels etc
+    Lot's of other people who we don't recognize
+    Trump also had business there (he was "smart" as to not pay taxes)
+        at least 3,450 times by name
+        laundered money for Russia, drug lords etc
+    Banks and law firms make a lot of money
+    Massive bribes to politicians
+
+    Clinton: "He didn't pay any federal income tax"
+    Trump: "That makes me smart"
+
+    There are no Cayman Island deals for you
+    Then there's another set of tax rules for the really rich
 
 # Books
 
