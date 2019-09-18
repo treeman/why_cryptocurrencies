@@ -179,6 +179,8 @@
   `(code ,@args))
 (define (code . args)
   `(pre (code ,@args)))
+(define (scode . args)
+  `(span ((class "sidenote-code")) ,@args))
 
 (define (sans . args)
   `(span ((class "sans")) ,@args))
@@ -237,6 +239,7 @@
           ,img)
       img))
 
+;; FIXME rename to figcaption
 (define (decoded-figcaption . args)
   `(figcaption ,@(std-decode args)))
 

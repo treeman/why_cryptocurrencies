@@ -23,15 +23,13 @@ In ◊link[how-do-cryptos-work]{How do cryptocurrencies work?} we saw that crypt
 
 A timestamping service offers proof that a message or document existed at a certain time with certain contents. The idea of timestamping information is ◊link[trusted-timestamping]{according to Wikipedia} centuries old, dating back to ◊em{at least} the 17th century.
 
-A modern example is the ◊link[wayback-machine]{Wayback Machine}, a service which allows you to see how a certain website looked at a certain time. A bit like traveling back in time, but with your web-browser instead of a ◊link[delorean]{DeLorean}.◊sn{back-to-the-future}
+A modern example is the ◊link[wayback-machine]{Wayback Machine}, a service which allows you to see how a certain website looked at a certain time. A bit like traveling back in time, but with your web-browser instead of a ◊link[delorean]{DeLorean}.◊mn{back-to-the-future}
 
 ◊ndef["back-to-the-future"]{
     The DeLorean is the time machine in the ◊em{Back To The Future} movies. They're amazing movies but unfortunately the ◊link[back-to-the-future-timetravel]{time travel theory isn't really sound}.
 }
 
 ◊(define back-to-the-future-timetravel "https://www.overthinkingit.com/2009/01/16/how-time-travel-works-in-back-to-the-future/")
-
-◊todo{Image of a DeLorean?}
 
 ◊(define delorean "https://en.wikipedia.org/wiki/DeLorean_time_machine")
 
@@ -68,7 +66,7 @@ What is a timestamping service useful for? Here are some examples:
         You would use timestamping. For example Robert Hook ◊link[ceiiinosssttuv]{used it in 1660} when discovering Hooke's law by publishing the anagram ◊em{ceiiinosssttuv} and later published the translation ◊em{ut tensio sic vis} (latin for "as is the extension, so is the force").◊sn{wiki-tensio}
 
         ◊ndef["wiki-tensio"]{
-            Interestingly if you search for "ceiiinosssttuv" on Wikipedia you'll be redirected to Hooke's law, but without explaining why.
+            Interestingly if you search for "ceiiinosssttuv" on Wikipedia you'll be redirected to Hooke's law, without an explanation why.
         }
     }
     ◊li{Testaments.
@@ -232,7 +230,7 @@ Let's now encode and timestamp it using the Bitcoin Cash blockchain:
     }
     ◊li{Insert it in a transaction using OP_RETURN.
 
-        For this step you need a wallet capable of creating a transaction with a custom OP_RETURN field, I used ◊link[electroncash]{Electron Cash}. We can double-check the transaction on blockexplorer, ◊link[transaction-ex]{such as this one}, to see that the OP_RETURN value matches our SHA-256 hash (look for the decoded OP_RETURN field).◊sn{j@}
+        For this step you need a wallet capable of creating a transaction with a custom OP_RETURN field, I used the desktop version of ◊link[electroncash]{Electron Cash} and enabled the OP_RETURN field in settings. We can double-check the transaction on a blockexplorer, ◊link[transaction-ex]{such as this one}, to see that the OP_RETURN value matches our SHA-256 hash (look for the decoded OP_RETURN field).◊sn{j@}
     }
 }
 

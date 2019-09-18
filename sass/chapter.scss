@@ -242,6 +242,18 @@ pre {
     margin-bottom: 1em;
     padding: 0.4em 0.6em;
 }
+.sidenote-code {
+    font-family: $code-font-family;
+    font-size: 0.6rem;
+    line-height: 1.4;
+    display: inline-block;
+    white-space: nowrap;
+
+    overflow-wrap: normal;
+    overflow: auto;
+
+    padding: 0.4em 0.6em;
+}
 
 
 /*
@@ -298,13 +310,15 @@ pre {
 .sidenote:before {
     content: counter(sidenote-counter);
     float: left;
-    padding-right: 0.2em;
+    padding-right: 0.2rem;
     display: inline;
 }
 .margin-symbol, .sidenote-number:after, .sidenote:before {
     font-family: $sans-serif-font-family;
     vertical-align: super;
     font-size: 0.7em;
+    display: inline-block;
+    //background-color: tomato;
 }
 
 input.margin-toggle {
@@ -322,12 +336,20 @@ label.margin-toggle:not(.sidenote-number) {
         display: inline;
     }
     .margin-symbol, .sidenote-number:after, .sidenote:before {
+    }
+    .margin-symbol, .sidenote-number:after {
+        font-weight: bold;
         color: $sidenote-clickable-color;
+        // Make them a little easier to click on.
+        padding: 0 0.25rem 0.3rem 0;
+        margin-right: -0.25rem;
+        position: relative;
     }
     label.margin-toggle {
         cursor: pointer;
+        z-index: 100;
     }
-    label:hover {
+    .margin-symbol:hover, .sidenote-number:hover:after {
         color: $body-link-hover-color;
     }
     // Notes hidden by default
@@ -351,6 +373,9 @@ label.margin-toggle:not(.sidenote-number) {
             display: block;
         }
     }
+    .sidenote-code {
+        max-width: 101%;
+    }
     //.sidenote { background-color: lightblue; }
     //.marginnote { background-color: aqua; }
 }
@@ -370,6 +395,9 @@ label.margin-toggle:not(.sidenote-number) {
     }
     blockquote .marginnote, blockquote .sidenote {
         margin-right: -462px;
+    }
+    .sidenote-code {
+        max-width: 380px;
     }
     //.sidenote { background-color: pink; }
     //.marginnote { background-color: plum; }
@@ -716,4 +744,15 @@ ul > li.neg:before {
 
 .qt-tab {
     padding-left: 1.2rem;
+}
+
+table.address-message {
+    font-family: $code-font-family;
+    font-size: 0.71rem;
+    line-height: 1.45;
+    //font-style: italic;
+    .msg-char {
+        padding: 0 0.2em;
+        font-weight: bold;
+    }
 }
