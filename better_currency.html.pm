@@ -33,3 +33,6 @@ In this section we'll focus on benefits of using cryptocurrencies as money. Cryp
 
 ◊; https://www.youtube.com/watch?v=lbarjpJhSLw
 ◊; <https://www.bloomberg.com/opinion/articles/2019-05-06/banks-look-safer-with-deposits>
+
+◊; FED cut rates with 7-3 vote
+◊; https://news.ycombinator.com/item?id=21008239
