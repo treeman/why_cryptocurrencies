@@ -36,8 +36,8 @@
      "New asset class?")
     ("Extensions"
      "Timestamping service"
-     "Provably fair gambling"
      uncensorable_twitter.html
+     "Provably fair gambling"
      "Verifiable voting"
      "Tokens")
     (appendix.html
