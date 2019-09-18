@@ -142,6 +142,7 @@ Administration Using the Full Power of the Surveillance State on Whistleblowers
 
 ◊link{https://www.cbc.ca/news/business/banking-information-shared-with-third-parties-1.5102931}
 
+◊; https://news.bitcoin.com/snowden-us-seizing-my-book-revenue-is-good-for-bitcoin/
 
 
 ◊subhead{Boiling a frog}
