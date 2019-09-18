@@ -106,3 +106,13 @@ I'm not going to say cryptocurrencies magically solve all problem---they won't--
 
 ◊; More money than anyone imagined: an explanation for why the bubble never burst 
 ◊; <https://news.ycombinator.com/item?id=20535390>
+
+◊; !!!
+◊; https://www.wsj.com/articles/banks-warm-to-mortgage-bonds-that-burned-them-in-2008-11568626202?mod=rsswn
+
+◊; 33 AD example
+◊; https://www.businessinsider.com/qe-in-the-financial-crisis-of-33-ad-2013-10?r=US&IR=T&IR=T
+
+◊; Americans lost $12.8 trillion
+◊; https://finance.yahoo.com/blogs/daily-ticker/2008-financial-crisis-cost-americans-12-8-trillion-145432501.html
+
