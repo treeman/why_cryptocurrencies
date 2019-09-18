@@ -47,6 +47,9 @@ Let's travel back in time and look at the site Hacker News. It's a tech oriented
     ◊li{The Redis Manifesto (antirez.com)}
 }
 
+◊(hn-html)
+
+
 As long as we can trust the Wayback Machine (and I do consider them generally trustworthy) we can be fairly sure this is correct. ◊link[trusted-timestamping]{◊em{Trusted timestamping}} is a solved problem with different kinds of standards but---as the name implies---there's always the caveat of requiring a trusted party to verify the timestamps.
 
 ◊(define wayback-machine "https://web.archive.org/")
@@ -110,7 +113,7 @@ With cryptocurrencies it's possible to do away with the trusted party requiremen
     The blocks themselves don't contain a trustworthy timestamp,◊sn{miners-timestamp} but we can use the many different nodes observing the network to create an estimation. This could for example be the timestamps recorded by two nodes:
 
     ◊ndef["miners-timestamp"]{
-        The miner who creates the block can set the timestamp themselves, with ◊link[block-timestamp]{some constraints}. If we blindly trust that timestamp we essentially trust that one miner. Using the time different nodes received the block is a more decentralized approach, but trusting the miner is probably good enough for most practical examples.
+        There is actually a timestamp in a block which the miner who creates the block can set themselves, with ◊link[block-timestamp]{some constraints}. If we blindly trust that timestamp we essentially trust that one miner. Using the time different nodes received the block is a more decentralized approach, but trusting the miner is probably good enough for most practical examples. As more blocks are built on top by other miners we can be sure that the timestamp is reasonably correct.
     }
 
     ◊figure{
@@ -264,3 +267,75 @@ With that our timestamp is prepared and nobody can see our original message, onl
 
 We now have a trusted timestamp for our message, backed by math instead of trust.
 
+
+◊; TODO
+◊; Layout functions and generate them instead of manually converting each entry
+◊; Save grayarrow.gif locally
+◊; Copy style information from HN as well
+◊(define (hn-html)
+  (define base-url hn-wayback)
+  (define (post n title post-url domain points usr comments comments-url)
+    `((tr
+         (td ((class "title") (valign "top") (align "right")) ,n ".")
+         (td (span ((class "arrow")) "▲"))
+         (td ((class "title"))
+            (a ((href ,post-url))
+               ,title)
+            " "
+            (span ((class "comhead")) ,(string-append "(" domain ")"))))
+      (tr
+         (td ((colspan "2")))
+         (td ((class "subtext"))
+           ,points " points by "
+           (a ((href ,(string-append base-url "user?id=" usr))) ,usr)
+           " 2 hours ago | "
+           (a ((href ,(string-append base-url comments-url))) ,comments " comments")))
+      (tr ((style "height:5px")))))
+
+
+  `(table ((cellspacing "0") (cellpadding "0") (border "0") (class "hn"))
+    (tbody
+      (tr (td ((colspan "3"))
+        (table ((class "hn-header") (cellspacing "0") (cellpadding "0") (border "0"))
+          (tbody (tr
+            (td ((class "logo"))
+               (a ((href ,base-url))
+                 (img ((src "https://web.archive.org/web/20110301181127im_/http://ycombinator.com/images/y18.gif")))))
+            (td ((class "links"))
+              (span ((class "pagetop"))
+                (b (a ((href "news")) "Hacker News"))
+                (a ((href "newest")) "new")
+                " | "
+                (a ((href "newcomments")) "comments")
+                " | "
+                (a ((href "ask")) "ask")
+                " | "
+                (a ((href "jobs")) "jobs")
+                " | "
+                (a ((href "submit")) "submit"))))))))
+      (tr ((style "height:10px")))
+
+      ,@(post "1"
+              "Natalie Portman - Scientist"
+              "https://web.archive.org/web/20110301181127/http://www.nytimes.com/2011/03/01/science/01angier.html?ref=natalieportman"
+              "nytimes.com"
+              "100"
+              "mhb"
+              "43"
+              "item?id=2275844")
+      ,@(post "2"
+              "Matt Blaze: How ACM and IEEE Shake Down Science"
+              "https://web.archive.org/web/20110301181127/http://www.crypto.com/blog/copywrongs"
+              "crypto.com"
+              "50"
+              "alterego"
+              "9"
+              "item?id=2276033")
+      ,@(post "3"
+              "The Redis Manifesto"
+              "https://web.archive.org/web/20110301181127/http://antirez.com/post/redis-manifesto.html"
+              "antirez.com"
+              "116"
+              "tednaleid"
+              "14"
+              "item?id=2275413"))))
