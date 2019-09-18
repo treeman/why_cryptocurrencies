@@ -64,7 +64,9 @@ The first thing we can observe is that it's possible to insert data into cryptoc
     (string-ref letters (random (string-length letters))))
 
   (define (gen-address c)
-     `("⤹ 1"
+     ;`("⤹ 1"
+     `("↳ 1"
+     ;`("1"
        (span ((class "msg-char")) ,(string c))
        ,(apply string
           (for/list ([_ (in-range 5)])
@@ -83,14 +85,16 @@ The first thing we can observe is that it's possible to insert data into cryptoc
 
 ◊subhead{Scripts}
 
-Bitcoin does more than just transfer coins from one address to another. What it actually does is execute a ◊link[bitcoin-script]{small scripting language} which is responsible for unlocking funds and transferring them to new addresses. You can for example send funds from several addresses to many addresses or lock funds and ◊link[multisig]{require more than one key} to spend them.
+Bitcoin does more than just transfer coins from one address to another. What it actually does is execute a ◊link[bitcoin-script]{small scripting language} which is responsible for unlocking funds and transferring them to new addresses. You can for example send funds from several addresses to many addresses or lock funds and ◊link[multisig]{require more than one key} to spend them.◊sn{bitcoin-script}
 
 ◊(define bitcoin-script "https://en.bitcoin.it/wiki/Script")
 
-This is for example the script of a standard Bitcoin transaction (amount, destination and other data is specified elsewhere):
+◊ndef["bitcoin-script"]{
+    This is the script of a standard Bitcoin transaction (amount, destination and other data is specified elsewhere):
 
-◊code{
-    OP_DUP OP_HASH160 <pubKeyHash> OP_EQUALVERIFY OP_CHECKSIG
+    ◊scode{
+        OP_DUP OP_HASH160 <pubKeyHash> OP_EQUALVERIFY OP_CHECKSIG
+    }
 }
 
 The scripting language in Bitcoin is fairly limited but the ◊link[solidity]{scripting language in Ethereum} is much more powerful and can do more things. You can for example create games where you ◊link[cryptokitties]{buy and sell cats} on Ethereum.◊sn{tradeoffs}
@@ -101,7 +105,7 @@ The scripting language in Bitcoin is fairly limited but the ◊link[solidity]{sc
     The scripting language in Ethereum is also ◊link[turing-complete]{Turing Complete}, meaning it's impossible to know if a script terminates. This means a new concept ◊link[ether-gas]{◊em{gas}} has to be introduced, drastically increasing the complexity of the system. Bitcoin avoids this problem by not having a Turing Complete scripting language.
 }
 
-Now it doesn't matter if you know what a script is or how it works, just remember this: cryptocurrencies can do more than just transfer coins. We'll go into some of the examples in the following chapters.
+Now it doesn't matter if you know what a script is or how it works, just remember this: cryptocurrencies can do more than just transfer coins from one address to another. We'll go into some of the examples in the following chapters.
 
 ◊(define cryptokitties "https://www.cryptokitties.co/")
 ◊(define turing-complete "https://en.wikipedia.org/wiki/Turing_completeness")

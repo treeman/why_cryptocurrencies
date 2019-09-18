@@ -179,6 +179,8 @@
   `(code ,@args))
 (define (code . args)
   `(pre (code ,@args)))
+(define (scode . args)
+  `(span ((class "sidenote-code")) ,@args))
 
 (define (sans . args)
   `(span ((class "sans")) ,@args))
