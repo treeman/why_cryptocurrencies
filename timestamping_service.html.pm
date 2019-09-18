@@ -33,7 +33,7 @@ A modern example is the ◊link[wayback-machine]{Wayback Machine}, a service whi
 
 ◊(define delorean "https://en.wikipedia.org/wiki/DeLorean_time_machine")
 
-Let's travel back in time and look at the site Hacker News. It's a tech oriented site where you can vote and comment on stories and I've lost a lot of time reading the (sometimes) insightful comments or getting upset at other less insightful comments.  ◊link[hn-wayback]{This is a how Hacker News} looked Mars 1st, 2011 according to the Wayback Machine and here are the top three stories:◊sn{hn-bitcoin}
+Let's travel back in time and look at the site ◊link[hn]{Hacker News}. It's a tech oriented site where you can discuss stories and I've lost a lot of time reading the (sometimes) insightful comments or getting upset at other less insightful comments.◊sn{hn-bitcoin}
 
 ◊ndef["hn-bitcoin"]{
     I wanted to use a story of Bitcoin as an example, but they never got any traction that early on.
@@ -41,20 +41,17 @@ Let's travel back in time and look at the site Hacker News. It's a tech oriented
     Interestingly enough Hacker News is full of people extremely skeptical of cryptocurrencies, who often comment that cryptocurrencies don't have a single legal use-case. This skepticism and misunderstanding, even from highly technical people, was one of the reasons I started writing this book.
 }
 
-◊ol{
-    ◊li{Natalie Portman - Scientist (nytimes.com)}
-    ◊li{Matt Blaze: How ACM and IEEE Shake Down Science (crypto.com)}
-    ◊li{The Redis Manifesto (antirez.com)}
+◊hn-html{
+    The top three stories on ◊link[hn-wayback]{Hacker News on Mars 1st, 2011} according to the Wayback Machine.  
+    I tried to reproduce the site styling, but it's not pixel perfect.
 }
-
-◊(hn-html)
-
 
 As long as we can trust the Wayback Machine (and I do consider them generally trustworthy) we can be fairly sure this is correct. ◊link[trusted-timestamping]{◊em{Trusted timestamping}} is a solved problem with different kinds of standards but---as the name implies---there's always the caveat of requiring a trusted party to verify the timestamps.
 
 ◊(define wayback-machine "https://web.archive.org/")
 ◊(define trusted-timestamping "https://en.wikipedia.org/wiki/Trusted_timestamping")
 ◊(define hn-wayback "https://web.archive.org/web/20110301181127/http://news.ycombinator.com/")
+◊(define hn "http://news.ycombinator.com/")
 
 
 ◊subhead{Usage examples}
@@ -268,11 +265,8 @@ With that our timestamp is prepared and nobody can see our original message, onl
 We now have a trusted timestamp for our message, backed by math instead of trust.
 
 
-◊; TODO
-◊; Layout functions and generate them instead of manually converting each entry
-◊; Save grayarrow.gif locally
-◊; Copy style information from HN as well
-◊(define (hn-html)
+◊; Generate HN-like html
+◊(define (hn-html . caption)
   (define base-url hn-wayback)
   (define (post n title post-url domain points usr comments comments-url)
     `((tr
@@ -292,50 +286,49 @@ We now have a trusted timestamp for our message, backed by math instead of trust
            (a ((href ,(string-append base-url comments-url))) ,comments " comments")))
       (tr ((style "height:5px")))))
 
+  `(figure ((class "hn-fig"))
+    (div ((class "hn"))
+     (div ((class "header"))
+       (span ((class "logo"))
+         (a ((href ,base-url))
+           (img ((src "/images/y18.gif")))))
+       (span ((class "pagetop"))
+         (a ((href ,(string-append base-url "news")) (class "hn-title")) "Hacker News")
+         (a ((href ,(string-append base-url "newest"))) "new")
+         " | "
+         (a ((href ,(string-append base-url "newcomments"))) "comments")
+         " | "
+         (a ((href ,(string-append base-url "ask"))) "ask")
+         " | "
+         (a ((href ,(string-append base-url "jobs"))) "jobs")
+         " | "
+         (a ((href ,(string-append base-url "submit"))) "submit")))
 
-  `(table ((cellspacing "0") (cellpadding "0") (border "0") (class "hn"))
-    (tbody
-      (tr (td ((colspan "3"))
-        (table ((class "hn-header") (cellspacing "0") (cellpadding "0") (border "0"))
-          (tbody (tr
-            (td ((class "logo"))
-               (a ((href ,base-url))
-                 (img ((src "https://web.archive.org/web/20110301181127im_/http://ycombinator.com/images/y18.gif")))))
-            (td ((class "links"))
-              (span ((class "pagetop"))
-                (b (a ((href "news")) "Hacker News"))
-                (a ((href "newest")) "new")
-                " | "
-                (a ((href "newcomments")) "comments")
-                " | "
-                (a ((href "ask")) "ask")
-                " | "
-                (a ((href "jobs")) "jobs")
-                " | "
-                (a ((href "submit")) "submit"))))))))
-      (tr ((style "height:10px")))
+     (table ((cellspacing "0") (cellpadding "0") (border "0"))
+       (tbody
+        ,@(post "1"
+                "Natalie Portman - Scientist"
+                "https://web.archive.org/web/20110301181127/http://www.nytimes.com/2011/03/01/science/01angier.html?ref=natalieportman"
+                "nytimes.com"
+                "100"
+                "mhb"
+                "43"
+                "item?id=2275844")
+        ,@(post "2"
+                "Matt Blaze: How ACM and IEEE Shake Down Science"
+                "https://web.archive.org/web/20110301181127/http://www.crypto.com/blog/copywrongs"
+                "crypto.com"
+                "50"
+                "alterego"
+                "9"
+                "item?id=2276033")
+        ,@(post "3"
+                "The Redis Manifesto"
+                "https://web.archive.org/web/20110301181127/http://antirez.com/post/redis-manifesto.html"
+                "antirez.com"
+                "116"
+                "tednaleid"
+                "14"
+                "item?id=2275413"))))
+     (figcaption ,@(std-decode caption))))
 
-      ,@(post "1"
-              "Natalie Portman - Scientist"
-              "https://web.archive.org/web/20110301181127/http://www.nytimes.com/2011/03/01/science/01angier.html?ref=natalieportman"
-              "nytimes.com"
-              "100"
-              "mhb"
-              "43"
-              "item?id=2275844")
-      ,@(post "2"
-              "Matt Blaze: How ACM and IEEE Shake Down Science"
-              "https://web.archive.org/web/20110301181127/http://www.crypto.com/blog/copywrongs"
-              "crypto.com"
-              "50"
-              "alterego"
-              "9"
-              "item?id=2276033")
-      ,@(post "3"
-              "The Redis Manifesto"
-              "https://web.archive.org/web/20110301181127/http://antirez.com/post/redis-manifesto.html"
-              "antirez.com"
-              "116"
-              "tednaleid"
-              "14"
-              "item?id=2275413"))))
