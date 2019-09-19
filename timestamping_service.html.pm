@@ -13,7 +13,7 @@
   }
 }
 
-In ◊link[how-do-cryptos-work]{How do cryptocurrencies work?} we saw that cryptocurrencies work by preventing ◊link[double-spending]{double spending} coins, and the system chooses one of two potentially valid transactions. While doing so it also creates an order between blocks and transactions, which can be used to as the basis for a decentralized timestamping service.
+In ◊link[how-do-cryptos-work]{How do cryptocurrencies work?} we saw that cryptocurrencies work by preventing ◊link[double-spending]{double spending} coins, and the system chooses one of two potentially valid transactions. While doing so it also creates an order between blocks and transactions, which can be used as the basis for a decentralized timestamping service.
 
 ◊(define how-do-cryptos-work "/how_do_cryptocurrencies_work.html")
 ◊(define double-spending "/how_do_cryptocurrencies_work.html#copying-a-coin-&-double-spending")
@@ -33,7 +33,7 @@ A modern example is the ◊link[wayback-machine]{Wayback Machine}, a service whi
 
 ◊(define delorean "https://en.wikipedia.org/wiki/DeLorean_time_machine")
 
-Let's travel back in time and look at the site ◊link[hn]{Hacker News}. It's a tech oriented site where you can discuss stories and I've lost a lot of time reading the (sometimes) insightful comments or getting upset at other less insightful comments.◊sn{hn-bitcoin}
+Let's travel back in time and look at the site ◊link[hn]{Hacker News}. It's a tech oriented site where you can discuss news stories and I've lost a lot of time reading insightful comments or getting upset at other less insightful comments.◊sn{hn-bitcoin}
 
 ◊ndef["hn-bitcoin"]{
     I wanted to use a story of Bitcoin as an example, but they never got any traction that early on.
@@ -46,7 +46,7 @@ Let's travel back in time and look at the site ◊link[hn]{Hacker News}. It's a 
     I tried to reproduce the site styling, but it's not pixel perfect.
 }
 
-As long as we can trust the Wayback Machine (and I do consider them generally trustworthy) we can be fairly sure this is correct. ◊link[trusted-timestamping]{◊em{Trusted timestamping}} is a solved problem with different kinds of standards but---as the name implies---there's always the caveat of requiring a trusted party to verify the timestamps.
+As long as we can trust the Wayback Machine (and I do consider them generally trustworthy) we can be fairly sure this is correct. Letting a trusted party like the Wayback Machine handle timestamping, called ◊link[trusted-timestamping]{◊em{trusted timestamping}}, is a solved problem with different kinds of standards but---as the name implies---there's always the caveat of requiring a trusted party to verify the timestamps.
 
 ◊(define wayback-machine "https://web.archive.org/")
 ◊(define trusted-timestamping "https://en.wikipedia.org/wiki/Trusted_timestamping")
@@ -95,9 +95,9 @@ With cryptocurrencies it's possible to do away with the trusted party requiremen
 ◊ol{
   ◊li{Prepare data.
 
-      Because we might want to reveal our message at a later date we don't want to store the message in the clear. We can use an anagram like Robert Hook used, some kind of encryption with a key or a one-way hash function.
+      Because we might want to reveal our message at a later date we don't want to store the message in the clear. We can use an anagram like Robert Hook used, some kind of encryption with a key or a one-way hash function to obfuscate the message.
 
-      After we have the message we want to verify we can ◊link[embed-data-how]{embed it into a cryptocurrency}.
+      After we have the obfuscated message we want to verify we can ◊link[embed-data-how]{embed it into a cryptocurrency}.
   }
   ◊li{Retrieve timestamps.
 
@@ -212,7 +212,7 @@ Let's now encode and timestamp it using the Bitcoin Cash blockchain:
 ◊ol{
     ◊li{Encode the message using SHA-256.
 
-        On linux we can run the command:◊sn{others-command}
+        On Linux we can run the command:◊sn{others-command}
 
         ◊ndef["others-command"]{
             I'm sure you can find a tool for Windows if you search for it. Be sure to exclude the newline (which the -n flag is for). You can also find websites for it, but don't use them if the message is sensitive.
@@ -230,11 +230,17 @@ Let's now encode and timestamp it using the Bitcoin Cash blockchain:
     }
     ◊li{Insert it in a transaction using OP_RETURN.
 
-        For this step you need a wallet capable of creating a transaction with a custom OP_RETURN field, I used the desktop version of ◊link[electroncash]{Electron Cash} and enabled the OP_RETURN field in settings. We can double-check the transaction on a blockexplorer, ◊link[transaction-ex]{such as this one}, to see that the OP_RETURN value matches our SHA-256 hash (look for the decoded OP_RETURN field).◊sn{j@}
+        For this step you need a wallet capable of creating a transaction with a custom OP_RETURN field, I used the desktop version of ◊link[electroncash]{Electron Cash} and enabled the OP_RETURN field in settings. You need to have enough money to pay a small fee and use a small amount to transfer.◊sn{tx-value}
+
+        ◊ndef["tx-value"]{
+            My transaction transferred around $0.05 with a $0.0008 fee. It might even be possible to transfer zero coins---as long as you pay the transaction fee---but the wallets I used had a minimum transaction limit.
+        }
+
+        We can double-check the transaction on a blockexplorer, ◊link[transaction-ex]{such as this one}, to see that the OP_RETURN value matches our SHA-256 hash (look for the decoded OP_RETURN field).◊sn{j@}
     }
 }
 
-With that our timestamp is prepared and nobody can see our original message, only the SHA-256 hash. When we're ready to reveal our message to the world all we have to do is show everyone the message and how to verify the timestamp:
+With that our timestamp is prepared and nobody can see our original message, only the SHA-256 hash. When we're ready to reveal our message to the world, all we have to do is show everyone the message and how to verify the timestamp:
 
 ◊(define transaction-ex "https://blockchair.com/bitcoin-cash/transaction/586783e17fadace136365490fd83ba59390ca55e7205ee74fbc7db2daa012ad3")
 ◊(define transaction-ex2 "https://bch.btc.com/586783e17fadace136365490fd83ba59390ca55e7205ee74fbc7db2daa012ad3")

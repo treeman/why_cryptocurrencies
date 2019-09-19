@@ -5,26 +5,33 @@
 ◊(define-meta updated "2019-09-15T11:07:31+02:00")
 ◊(define-meta uuid "c83f3bb3-7277-43b0-ad8d-ee5ea4592a87")
 
-Money is perhaps the most obvious usage of decentralized byzantine fault tolerance, which is the core making cryptocurrencies work, but there are other usages. In this section I'll highlight some of the them and we'll see that we can build other functionality on top of existing cryptocurrencies.◊sn{blockchain-hype}
+Money is perhaps the most obvious usage of cryptocurrencies but there are other ways to use them. In this section I'll highlight some of the alternative usages and we'll see that we can build other functionality on top of existing cryptocurrencies.◊sn{blockchain-hype}
 
 ◊ndef["blockchain-hype"]{
-    Always be mindful when people use the word ◊em{blockchain}. Chances are they're referring to private blockchains or blockchains which use a consensus model with known and trusted actors. ◊link[libra]{Facebook's Libra} is such an example and ◊link[ibm-blockchain]{IBM's blockchain} is another.
+    I generally try to avoid the word ◊em{blockchain} which sometimes refer to private blockchains or blockchains which use a consensus model with known and trusted actors. ◊link[libra]{Facebook's Libra} is such an example and ◊link[ibm-blockchain]{IBM's blockchain} is another.
 
     Don't let the similar names fool you: consensus algorithms with known participants and those with unknown participants are ◊strong{very} different. I only consider those using the latter to be cryptocurrencies.
 }
 
+◊(define bft "https://en.wikipedia.org/wiki/Byzantine_fault")
 ◊(define ibm-blockchain "https://www.ibm.com/blockchain")
 ◊(define libra "/facebooks_libra.html")
 
 
 ◊subhead{Embedding data}
 
-The first thing we can observe is that it's possible to insert data into cryptocurrencies, essentially making the data immutable. It's not important exactly how, but if you're curious here are some ways:
+The first thing we can observe is that it's possible to insert data into the ledgers of cryptocurrencies, essentially making the data immutable. It's not important exactly how, but if you're curious here are some ways:
 
 ◊ol{
-    ◊li{Miners can add coinbase data to blocks.
+    ◊li{Miners can add data to blocks.
 
-        For example Satoshi ◊link[block-0]{left a message} in the first ever Bitcoin block:
+        For example Satoshi ◊link[block-0]{left a message} in the first ever Bitcoin block:◊sn{coinbase-data}
+
+        ◊ndef["coinbase-data"]{
+            Satoshi embedded his message in the "Coinbase data" entry of the block. Other miners usually include the name of their mining pool. Such as in ◊link[coinbase-ex]{this block} the coinbase data says "Mined by AntPool48".
+
+            ◊link[coinbase-txs]{Read this} for more info about coinbase transactions.
+        }
 
         ◊code{
             The Times 03/Jan/2009 Chancellor on brink of second bailout for banks
@@ -40,7 +47,7 @@ The first thing we can observe is that it's possible to insert data into cryptoc
     }
     ◊li{Addresses are user controlled.
 
-        Even if it's not intended you can always insert arbitrary data as long as you can control your address.◊sn{control-address} For example you could chain transactions and treat the second character of the receiving address as your message:
+        Even if it's not intended you can always insert arbitrary data as long as you can control your address.◊sn{control-address} For example you could chain transactions, by sending from address to address, and treat the second character of the receiving address as your message:
 
         ◊(gen-message "Hello")
 
@@ -81,6 +88,8 @@ The first thing we can observe is that it's possible to insert data into cryptoc
 ◊(define block-0 "https://blockchair.com/bitcoin/block/0")
 ◊(define memo-blockchair "https://blockchair.com/bitcoin-cash/transaction/786816d4f92e9b8e78bf281e2b498daa526c93dc69a5e6b493c901928ee3f51d")
 ◊(define vanitygen "https://en.bitcoin.it/wiki/Vanitygen")
+◊(define coinbase-ex "https://blockchair.com/bitcoin/block/595563")
+◊(define coinbase-txs "https://learnmeabitcoin.com/glossary/coinbase-transaction")
 
 
 ◊subhead{Scripts}
@@ -95,6 +104,8 @@ Bitcoin does more than just transfer coins from one address to another. What it 
     ◊scode{
         OP_DUP OP_HASH160 <pubKeyHash> OP_EQUALVERIFY OP_CHECKSIG
     }
+
+    OP_RETURN is another type of opcode which marks the output as invalid. It's commonly used to add data to transactions and is the preferred way to embed data because nodes concerned with storage can remove it and still be able to fully validate new transactions.
 }
 
 The scripting language in Bitcoin is fairly limited but the ◊link[solidity]{scripting language in Ethereum} is much more powerful and can do more things. You can for example create games where you ◊link[cryptokitties]{buy and sell cats} on Ethereum.◊sn{tradeoffs}
