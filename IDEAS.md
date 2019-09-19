@@ -317,6 +317,15 @@ Lot's of economic books:
 JPMorgan: We Believe The Dollar Could Lose Its Status As World's Reserve Currency
 <https://www.zerohedge.com/news/2019-07-23/jpmorgan-we-believe-dollar-could-lose-its-status-worlds-reserve-currency>
 
+Fed cuts rates on 7-3 vote, gives mixed signals on next move
+https://news.ycombinator.com/item?id=21008239
+
+Snowden: US Seizing My Book Revenue is 'Good for Bitcoin' 
+https://news.bitcoin.com/snowden-us-seizing-my-book-revenue-is-good-for-bitcoin/
+
+Hyperinflation and Trust in Ancient Rome 
+https://news.ycombinator.com/item?id=21010309
+
 # Unsorted
 
 
