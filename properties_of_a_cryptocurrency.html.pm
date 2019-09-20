@@ -105,7 +105,7 @@ As there is no trusted third party there isn't a single entity who controls the 
 
 
 
-◊img[#:src "/images/emission-rates.svg"]{
+◊img[#:src "/images/emission-rates.svg" #:link #t]{
     Bitcoin has a hard limit of 21 million bitcoins while in Monero new coins will always be created.◊sn{bitcoin-supply}
 }
 

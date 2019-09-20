@@ -42,6 +42,9 @@
      "Tokens")
     (appendix.html
      bitcoin_whitepaper.html
+     "Who is Satoshi Nakamoto?"
+     "Is Facebook's Libra a cryptocurrency?"
+     "An intro to cryptography"
      "Further research")))
 
 (define (in-toc? page)

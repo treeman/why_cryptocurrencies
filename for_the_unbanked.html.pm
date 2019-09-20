@@ -2,7 +2,7 @@
 
 ◊(define-meta title "For the unbanked")
 ◊(define-meta subtitle "Digital payments for those without a bank account")
-◊(define-meta updated "2019-09-07T12:01:33+02:00")
+◊(define-meta updated "2019-09-09T08:15:02+02:00")
 ◊(define-meta uuid "875332fd-f5ad-4275-8254-008a2e74a4a0")
 
 ◊epigraph{
@@ -33,7 +33,7 @@ There are ◊strong{◊link[findex-report]{1.7 billion adults}} without a bank a
 ◊; #df65b0  36-60
 ◊; #dd1c77  61-80
 ◊; #980043  81-100
-◊img[#:src "images/unbanked-map.png" #:class "fullwidth"]{
+◊img[#:src "images/unbanked-map.png" #:class "fullwidth" #:link #t]{
     Adults without a bank account, 2017.
     Source ◊link[findex-report]{Global Findex database}.
 }
@@ -49,7 +49,7 @@ While this map helps us identify countries with a high fraction of unbanked, it 
 ◊;#43a2ca   50 - 100 mil
 ◊;          100 - 150 mil (no country!)
 ◊;#0868ac   > 150 mil
-◊img[#:src "images/unbanked-count-map.png" #:class "fullwidth"]{
+◊img[#:src "images/unbanked-count-map.png" #:class "fullwidth" #:link #t]{
     The number of adults without a bank account, 2017.
     Source ◊link[findex-report]{Global Findex database} (◊link[findex-interactive]{interactive}).
 }
@@ -69,7 +69,7 @@ The ◊link[findex-report]{Global Findex database} also tried examine why people
     If this is interesting to you I suggest you ◊link[findex-report]{give the report a read}. There are tons of different statistics and I only refer to a fraction of the data available.
 }
 
-◊img[#:src "images/why-unbanked.svg"]{
+◊img[#:src "images/why-unbanked.svg" #:link #t]{
     Reported reason for adults not having a bank account, 2017. More than one reason could be given.
     Source ◊link[findex-report]{Global Findex database}.
 }
@@ -77,7 +77,7 @@ The ◊link[findex-report]{Global Findex database} also tried examine why people
 The most commonly cited barrier was not having enough money. Around 60% said they had too little money to use a bank account, with almost 20% citing it as the sole reason.◊sn{too-little-money}
 
 ◊ndef["too-little-money"]{
-    I assume it might mean poor people who might not have any savings but live day to day. But it's not clear where to draw the line between having too little money, accounts being to expensive and not having a use for an account. It feels these issues should go together to some extent.
+    I assume it might mean poor people who might not have any savings but live day to day. But it's not clear where to draw the line between having too little money, accounts being too expensive and not having a use for an account. It feels these issues should go together to some extent.
 }
 
 Most cite several different reasons, making it hard to rank the issues in importance. For example many say they don't need an account, but if the other barriers were to disappear they might find accounts useful if only they had access to them. At least this gives a sense of what issues are present.
@@ -202,7 +202,7 @@ In China mobile payments are growing like mad. If you're a tourist you should ge
 
 ◊subhead{What might cryptocurrencies help the unbanked with?}
 
-Of course "just use cryptocurrencies" isn't the answer to all problems for the unbanked. Cryptocurrencies won't magically give poor people money, make them educated and they can't even completely replace banks◊sn{banking-the-unbanked}. But it is a helpful tool which, as adoption grow, might be helpful for many without bank access.
+Of course "just use cryptocurrencies" isn't the answer to all problems for the unbanked. Cryptocurrencies won't magically give poor people money, make them educated and they can't even completely replace banks.◊sn{banking-the-unbanked} But it is a helpful tool which, as adoption grow, might be helpful for many without bank access.
 
 There are a number of benefits cryptocurrencies have:
 
@@ -236,7 +236,7 @@ There are a number of benefits cryptocurrencies have:
     }
 }
 
-These are directly related to the ◊link[rel-why-unbanked?]{reasons why people stay unbanked}, many which cryptocurrencies might help solve. For example, the 30% who say bank accounts are too expensive and the 20% who say they lack documentation, may find cryptocurrencies a viable alternative as it is much cheaper than bank accounts and don't require any documentation. Cryptocurrencies also does away with the requirement of having to trust a bank, which 15% of the unbanked cited as a reason for not having an account.
+These are directly related to the ◊link[rel-why-unbanked?]{reasons why people stay unbanked}, many which cryptocurrencies might help solve. For example, the 30% who say bank accounts are too expensive and the 20% who say they lack documentation, may find cryptocurrencies a viable alternative as it is much cheaper than bank accounts and don't require any documentation. Cryptocurrencies also remove the requirement of having to trust a bank, which 15% of the unbanked cited as a reason for not having an account.
 
 These benefits makes it possible for the 420 million unbanked who have internet access to use cryptocurrencies and gain ◊link[global-currency]{access to the global economy}.
 

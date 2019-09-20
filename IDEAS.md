@@ -213,6 +213,12 @@ Sweden's cashless society is no longer a utopia
 Debate rages in Austria over enshrining use of cash in the constitution
 <https://www.euractiv.com/section/data-protection/news/debate-rages-in-austria-over-enshrining-use-of-cash-in-the-constitution/>
 
+## Reshaping the economics of the web (?!?!)
+
+Cash for the internet, help content producers get paid as an alternative for ads.
+
+<https://news.ycombinator.com/item?id=20987628>
+
 # Other use
 
 ##  New asset class
@@ -330,6 +336,31 @@ A peer-to-peer voting algorithm, without blockchain
 * Bitcoin Documentary By Discovery Channel
 * The Bitcoin Phenomenon
 
+# Other documentaries
+
+The Panama Papers (2018)
+    How World leaders and billionaires hide their money
+    Tens of trillions of dollars hidden in offshore accounts
+    Economic inequality is an important issue in the world. And the very rich and powerful do tax fraud, etc.
+https://news.ycombinator.com/item?id=11416928
+https://news.ycombinator.com/item?id=11421352
+    While the rich don't pay taxes the middle- and lowclass are stuck paying for all services.
+    "Just beacuse it's legal doesn't mean it's moral"
+    FIFA officials, Lionel Messi is in the papers (might be those who manage him)
+    Links to Putin, Iceland's Prime Minister, drug cartels etc
+    Lot's of other people who we don't recognize
+    Trump also had business there (he was "smart" as to not pay taxes)
+        at least 3,450 times by name
+        laundered money for Russia, drug lords etc
+    Banks and law firms make a lot of money
+    Massive bribes to politicians
+
+    Clinton: "He didn't pay any federal income tax"
+    Trump: "That makes me smart"
+
+    There are no Cayman Island deals for you
+    Then there's another set of tax rules for the really rich
+
 # Books
 
 1. On writing well
@@ -417,7 +448,6 @@ China forced organ harvesting
 Hong Kong ISP Association’s Statement on Selective Blocking of Internet Services
 <https://news.ycombinator.com/item?id=20824759>
 
-
 Lot's of economic books:
 <https://www.reddit.com/r/btc/comments/cp9ows/just_a_few_of_the_books_i_read_cover_to_cover/>
 
@@ -426,6 +456,15 @@ JPMorgan: We Believe The Dollar Could Lose Its Status As World's Reserve Currenc
 
 France and Germany Agree to Block Facebook's Libra
 <https://news.ycombinator.com/item?id=20970774>
+
+Fed cuts rates on 7-3 vote, gives mixed signals on next move
+<https://news.ycombinator.com/item?id=21008239>
+
+Snowden: US Seizing My Book Revenue is 'Good for Bitcoin' 
+<https://news.bitcoin.com/snowden-us-seizing-my-book-revenue-is-good-for-bitcoin/>
+
+Hyperinflation and Trust in Ancient Rome 
+<https://news.ycombinator.com/item?id=21010309>
 
 # Unsorted
 

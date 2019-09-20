@@ -206,7 +206,7 @@
                      args)))
 
 (define (img #:src src #:title [title #f] #:alt [alt #f] #:class [c #f]
-             #:margin [margin #f] . caption)
+             #:margin [margin #f] #:link [link #f] . caption)
   (define attrs `())
   (when c
     (set! attrs (cons `(class ,c) attrs)))
@@ -215,18 +215,27 @@
   (when alt
     (set! attrs (cons `(alt alt) attrs)))
 
+  ; We ignore root transformation on <figure>, to avoid paragraph insertion
+  ; around img. So we need to decode them manually.
+  (define decoded-caption (std-decode caption))
+
   (define figcaption
     (if margin
-      `(figcaption ((class "margin")) ,@caption)
-      `(figcaption ,@caption)))
+      `(figcaption ((class "margin")) ,@decoded-caption)
+      `(figcaption ,@decoded-caption)))
 
   `(figure
      ,attrs
-     (img ((src ,(~a src))))
+     ,(raw-img #:src src #:link link)
      ,figcaption))
 
-(define (raw-img #:src src)
-  `(img ((src ,(~a src)))))
+(define (raw-img #:src src #:link [link #f])
+  (define img
+     `(img ((src ,(~a src)))))
+  (if link
+      `(a ((href ,src) (target "_blank") (class "img-wrapper"))
+          ,img)
+      img))
 
 
 ;;; Margin-notes and side-notes
@@ -284,13 +293,19 @@
             #:ref ref-in))
 
 
+(define (std-decode args)
+  (decode-elements args
+    #:txexpr-elements-proc decode-paragraphs
+    #:string-proc string-proc
+    #:exclude-tags `(figure)))
+
 ;;; Root transformations
 
 (define (root . args)
-  (define decoded (decode-elements args
-    #:txexpr-elements-proc decode-paragraphs
-    #:entity-proc replace-stubs
-    #:string-proc string-proc))
+  (define decoded
+    ; Replace in all tags, even figures. To allow ndef to be placed after figure caption.
+    (decode-elements (std-decode args)
+                     #:entity-proc replace-stubs))
 
   ;; Expand splices afterwards
   ;; 'splice-me is consired inline so doesn't break paragraph calculations
