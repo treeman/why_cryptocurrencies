@@ -13,6 +13,80 @@
   }
 }
 
+◊subhead{The financial crisis, bad loans and bail-outs}
+
+◊ol{
+    ◊li{Background on the financial crisis}
+    ◊li{How the banks were bailed out}
+    ◊li{The aftermath, nothing really changed
+
+        But at least we're going to see some of them go to jail.
+        Except they took the money the American people gave them and gave themselves huge bonuses.
+
+        In 2015, several banks began selling billions in something called a "bespoke tranche opportunity."
+        Which, according to Bloomberg News, is just another name for a CDO.
+
+        Banks Warm to Mortgage Bonds That Burned Them in 2008
+        https://www.wsj.com/articles/banks-warm-to-mortgage-bonds-that-burned-them-in-2008-11568626202
+    }
+    ◊li{What can cryptocurrencies do?}
+}
+
+
+"When the music stops, in terms of liquidity, things will be complicated. But as long as the music is playing, you’ve got to get up and dance. We’re still dancing,"
+    - Citigroup CEO Chuck Prince, 2007
+Merely months before the financial meltdown
+
+
+Cashing In: How to Make Negative Interest Rates Work 
+<https://news.ycombinator.com/item?id=20079686>
+
+Germany in Uproar as Negative Rates Threaten Saving Obsession 
+<https://news.ycombinator.com/item?id=20792765>
+
+More money than anyone imagined: an explanation for why the bubble never burst 
+<https://news.ycombinator.com/item?id=20535390>
+
+Iceland jails bankers:
+<https://www.bloomberg.com/news/features/2016-03-31/welcome-to-iceland-where-bad-bankers-go-to-prison>
+
+
+◊subhead{Dangers of inflation}
+
+◊ol{
+    ◊li{Counterfeiting and how it redistributes money.}
+    ◊li{Inflation is legal counterfeiting.}
+    ◊li{Hyperinflation.}
+    ◊li{With cryptocurrencies you don't play with the money supply.}
+}
+
+Hyperinflation and Trust in Ancient Rome 
+https://news.ycombinator.com/item?id=21010309
+
+◊subhead{The blind leading the blind}
+
+“It's almost been worth this depression to find out how little our big men know.”
+― Will Rogers 
+1930s
+https://books.google.co.uk/books?id=6Mdh5yuHavgC&pg=PA86&lpg=PA86&ots=vJ319cMgdc&focus=viewport&dq=%E2%80%9CIt%27s+almost+been+worth+this+depression+to+find+out+how+little+our+big+men+know.%E2%80%9D++%E2%80%95+Will+Rogers
+
+How the FED fanned the flames by focusing on inflation
+
+    Bernanke: Inflation main worry, housing a risk
+    https://www.reuters.com/article/us-usa-fed-bernanke-idUSWAT00786720070718
+    July 2007
+
+    Fed says inflation main worry, but cites risks
+    https://www.reuters.com/article/us-usa-fed-rates-idUSN0722343620070808
+    August 2007
+
+Saved Bears but let Lehmann fail
+
+
+◊subhead{OLD}
+
+
+
 ◊ol{
     ◊li{What banking actually does, fractional banking & the financial system}
     ◊li{Background on the financial crisis}
