@@ -50,7 +50,6 @@ More money than anyone imagined: an explanation for why the bubble never burst
 Iceland jails bankers:
 <https://www.bloomberg.com/news/features/2016-03-31/welcome-to-iceland-where-bad-bankers-go-to-prison>
 
-
 ◊subhead{Dangers of inflation}
 
 ◊ol{
@@ -81,6 +80,8 @@ How the FED fanned the flames by focusing on inflation
     August 2007
 
 Saved Bears but let Lehmann fail
+
+https://news.ycombinator.com/item?id=21028770
 
 
 ◊subhead{OLD}
