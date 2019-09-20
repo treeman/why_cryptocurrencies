@@ -466,6 +466,11 @@ Snowden: US Seizing My Book Revenue is 'Good for Bitcoin'
 Hyperinflation and Trust in Ancient Rome 
 <https://news.ycombinator.com/item?id=21010309>
 
-# Unsorted
+How r/bitcoin got rid of old mods
+<https://www.youtube.com/watch?v=HAL3y80PA5I>
 
+U.S. drone strike kills 30 pine nut farm workers in Afghanistan 
+<https://news.ycombinator.com/item?id=21018041>
+
+# Unsorted
 
