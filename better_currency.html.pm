@@ -21,9 +21,7 @@ Our focus during the last section was on the use of cryptocurrencies as a paymen
 
 We previously asked ourself ◊link[what-is-money]{what money is} and we found that money is a tool to make trade more efficient. There are a number of properties good money should have, such as being durable and divisible, and there's a case to be made that cryptocurrencies can be ◊link[are-cryptos-money]{considered a form of money}---with some beneficial and unique properties.
 
-In this section we'll focus on benefits of using cryptocurrencies as money. Cryptocurrencies have ◊link[crypto-properties]{several good properties}, but for this section the most important one is the lack of central control over the money supply. It's similar to gold in this respect, except that cryptocurrencies can be validated instantly which is much more ◊link[fake-gold]{difficult with gold}.
-
-
+In this section we'll focus on benefits of using cryptocurrencies as money and comparisons with what we use today. You might want to review the ◊link[crypto-properties]{properties cryptocurrencies have}, but for this section the most important one is the lack of central control over the money supply. It's similar to gold in this respect, except that ◊link[fake-gold]{gold can be counterfeit}.
 
 ◊(define crypto-properties "/properties_of_a_cryptocurrency.html")
 ◊(define what-is-money "/what_is_money.html")
@@ -36,3 +34,7 @@ In this section we'll focus on benefits of using cryptocurrencies as money. Cryp
 
 ◊; FED cut rates with 7-3 vote
 ◊; https://news.ycombinator.com/item?id=21008239
+
+◊; Why the Federal Reserve is pouring money into the financial system
+◊;https://news.ycombinator.com/item?id=21004068
+
