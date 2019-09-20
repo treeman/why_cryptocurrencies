@@ -24,14 +24,15 @@
      for_the_unbanked.html)
     ("A better currency"
      "The financial crisis, bad loans and bail-outs"
+     "Dangers of inflation"
      "The blind leading the blind"
-     "Protection against government seizures"
-     "A global currency"
-     "Avoids hyperinflation")
+     "Anonymous Money"
+     "A global currency")
     ("Brave new world"
      "Separation of money and state"
      "A swiss bank account in your pocket"
-     "Black markets"
+     "Darknet markets"
+     "Protection against government seizures"
      "The cashless dystopia"
      "New asset class?")
     ("Extensions"
@@ -42,9 +43,9 @@
      "Tokens")
     (appendix.html
      bitcoin_whitepaper.html
+     "An intro to cryptography"
      "Who is Satoshi Nakamoto?"
      "Is Facebook's Libra a cryptocurrency?"
-     "An intro to cryptography"
      "Further research")))
 
 (define (in-toc? page)
