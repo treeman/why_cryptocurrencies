@@ -1,6 +1,5 @@
 #lang pollen
 
-
 ◊(define-meta title "How do cryptocurrencies work?")
 ◊(define-meta subtitle "Decentralized consensus")
 ◊(define-meta updated "2019-04-03T20:05:00+02:00")
@@ -129,9 +128,14 @@ This would be very easy if they could trust each other. Unfortunately they canno
     In this simple example three of the generals now believe they will attack while two are preparing to retreat. In a more complex scenario they might receive conflicting messages and notice something is amiss, but they don't know what's real and what's not.
 }
 
-To relate it back to cryptocurrencies the choice between "attack" and "retreat" is similar to choosing between two transactions in a double spend. You know there are bad actors---like Sneaky Steve---but who can you trust?
+To relate it back to cryptocurrencies the choice between "attack" and "retreat" is similar to choosing between two transactions in a double spend. You know there are bad actors---like Sneaky Steve---but who can you trust?◊sn{bft}
+
+◊ndef["bft"]{
+    The resistance to this kind of problem is called ◊link[bft]{◊em{Byzantine fault tolerance (BFT)}}. There's a big difference between systems with known actors and systems with unknown actors, like with cryptocurrencies, but they both fall under the BFT umbrella.
+}
 
 
+◊(define bft "https://en.wikipedia.org/wiki/Byzantine_fault")
 ◊(define ceasar-cipher "http://practicalcryptography.com/ciphers/caesar-cipher/")
 ◊(define byzantine-generals "https://www.microsoft.com/en-us/research/publication/byzantine-generals-problem/")
 
@@ -397,6 +401,20 @@ Here's some quick napkin math to estimate the cost to achieve 51% of mining powe
     ◊tr{◊td{◊link[btc-hashrate]{Total Bitcoin hash rate}}   ◊td{44,078,986 TH/s}}
     ◊tr{◊td{◊link[s9-hashrate]{Antminer S9i hash rate}}     ◊td{14 TH/s (+-5%)}}
     ◊tr{◊td{◊link[s9-cost]{Antminer S9i cost}}              ◊td{$400}}
+
+Core destruction program TRX:
+* Suspended Crunch (first knees to chest then pike)
+Pendulum (first regular, then knees to elbows)
+Standing body crunch ?
+Standing oblique twist ?
+Oblique Suspended crunch ?
+Suspended alternating crunch ?
+Suspended plan
+Good for back:
+* Low ro
+Extra:
+Hamstring runner
+Biceps/triceps
     ◊tr{◊td{Number of S9i to cover the whole network}       ◊td{3,148,499}}
     ◊tr{◊td{Total network miner cost}                       ◊td{$1,259,399,600}}
 }
@@ -526,7 +544,6 @@ The chapter became very long despite skipping out on details here and there. If 
 ◊(define chargeback-fraud "https://en.wikipedia.org/wiki/Chargeback_fraud")
 ◊(define public-key-cryptography "https://en.wikipedia.org/wiki/Public-key_cryptography")
 ◊(define next-chapter "/look_out_for_snake_oil.html")
-◊(define byzantine "https://en.wikipedia.org/wiki/Byzantine_fault_tolerance")
 
 ◊; Table format
 ◊(define (tf . args)

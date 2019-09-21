@@ -234,16 +234,17 @@ A peer-to-peer voting algorithm, without blockchain
     "The idea was to create money whose value couldn't be manipulated by a central authority."
     Cyprus, stole money from the people's bank accounts
     Good for understanding the beginning history of Bitcoin
+* The Bitcoin Gospel (2015)
+* Banking On Bitcoin (2016)
+    "If privacy is outlawed, only outlaws will have privacy"
+    Start up again at 50 min
+
 * Bitcoin-Shape The Future
-* The Bitcoin Gospel
 * The Blockchain and Us
 * Bitcoin in Uganda – Empowering People
 * Bitcoin Full Documentary
 * Bitcoin Documentary By Discovery Channel
 * The Bitcoin Phenomenon
-* Banking On Bitcoin (2016)
-    "If privacy is outlawed, only outlaws will have privacy"
-    Start up again at 50 min
 
 # Other documentaries
 
