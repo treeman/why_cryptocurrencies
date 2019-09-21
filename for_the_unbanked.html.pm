@@ -2,7 +2,7 @@
 
 ◊(define-meta title "For the unbanked")
 ◊(define-meta subtitle "Digital payments for those without a bank account")
-◊(define-meta updated "2019-09-07T12:01:33+02:00")
+◊(define-meta updated "2019-09-09T08:15:02+02:00")
 ◊(define-meta uuid "875332fd-f5ad-4275-8254-008a2e74a4a0")
 
 ◊epigraph{
