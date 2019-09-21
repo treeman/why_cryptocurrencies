@@ -35,12 +35,12 @@
      "Protection against government seizures"
      "The cashless dystopia"
      "New asset class?")
-    ("Extensions"
-     "Timestamping service"
-     "Provably fair gambling"
+    (extensions.html
+     timestamping_service.html
      "Uncensorable Twitter"
-     "Verifiable voting"
-     "Tokens")
+     "Provably fair gambling"
+     "Tokens"
+     "Verifiable voting")
     (appendix.html
      bitcoin_whitepaper.html
      "An intro to cryptography"

@@ -179,6 +179,8 @@
   `(code ,@args))
 (define (code . args)
   `(pre (code ,@args)))
+(define (scode . args)
+  `(span ((class "sidenote-code")) ,@args))
 
 (define (sans . args)
   `(span ((class "sans")) ,@args))
@@ -236,6 +238,10 @@
       `(a ((href ,src) (target "_blank") (class "img-wrapper"))
           ,img)
       img))
+
+;; FIXME rename to figcaption
+(define (decoded-figcaption . args)
+  `(figcaption ,@(std-decode args)))
 
 
 ;;; Margin-notes and side-notes
