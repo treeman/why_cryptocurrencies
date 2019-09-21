@@ -33,7 +33,7 @@ A modern example is the ◊link[wayback-machine]{Wayback Machine}, a service whi
 
 ◊(define delorean "https://en.wikipedia.org/wiki/DeLorean_time_machine")
 
-Let's travel back in time and look at the site ◊link[hn]{Hacker News}. It's a tech oriented site where you can discuss news stories and I've lost a lot of time reading insightful comments or getting upset at other less insightful comments.◊sn{hn-bitcoin}
+Let's travel back in time and look at the site ◊link[hn]{Hacker News}, a tech oriented site where you can discuss news stores. I've lost a lot of time on the site reading insightful comments or getting upset at other less insightful comments.◊sn{hn-bitcoin}
 
 ◊ndef["hn-bitcoin"]{
     I wanted to use a story of Bitcoin as an example, but they never got any traction that early on.
@@ -141,7 +141,7 @@ With cryptocurrencies it's possible to do away with the trusted party requiremen
 ◊(define embed-data-how "/extensions.html#embedding-data")
 ◊(define block-timestamp "https://en.bitcoin.it/wiki/Block_timestamp")
 
-This way we have the basis for a decentralized timestamping service. Insert an obfuscated message in a transaction and afterwards you can reveal the message and use the creation time of the block the transaction is included in as your timestamp.
+This way we have the basis for a decentralized timestamping service. Insert an obfuscated message in a transaction and afterwards you can reveal the message and use the creation time of the block the transaction is included in as your timestamp. Also comparing two messages to find which the oldest is very simple: just check which block came first, there's no need to look at a timestamp.
 
 It's much easier to use (I'll go through an example ◊link[rel-easy-example]{step-by-step} at the end of the chapter) compared to getting your message included in a publication like Hook did. You also don't have to trust a timestamping service---the solution is fully opaque and you can verify it yourself.
 
