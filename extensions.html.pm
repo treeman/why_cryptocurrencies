@@ -2,7 +2,7 @@
 
 ◊(define-meta title "Extensions")
 ◊(define-meta subtitle "Non-currency usage of a blockchain")
-◊(define-meta updated "2019-09-15T11:07:31+02:00")
+◊(define-meta updated "2019-09-21T10:25:38+02:00")
 ◊(define-meta uuid "c83f3bb3-7277-43b0-ad8d-ee5ea4592a87")
 
 Money is perhaps the most obvious usage of cryptocurrencies but there are other ways to use them. In this section I'll highlight some of the alternative usages and we'll see that we can build other functionality on top of existing cryptocurrencies.◊sn{blockchain-hype}
