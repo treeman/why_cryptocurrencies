@@ -13,26 +13,35 @@
     }
 }
 
-Another use for ◊link[embedding-data]{embeddable data} in a cryptocurrency is a Twitter clone. A type of Twitter where messages are included into transactions and therefore cannot be blocked or erased.
+Another use for ◊link[embedding-data]{embeddable data} in a cryptocurrency is a Twitter clone where messages are included into transactions, and thereby uncensorable. One example is ◊link[memo-cash]{memo.cash} which embeds data into the Bitcoin Cash blockchain.◊sn{why-bch} Like Twitter it only supports fairly short messages, for example:◊sn{memo-length}
 
 ◊(define embedding-data "/extensions.html#embedding-data")
 
-One example is ◊link[memo-cash]{memo.cash} which embeds data into the Bitcoin Cash blockchain.◊sn{why-bch} Like Twitter it only supports shorter messages, for example:
 
-◊qt[#:src "Blockchair"
+◊qt[#:src "(transaction on the blockchain)"
+    #:author "homopit"
+    #:author-url "https://memo.cash/post/9649592301c43b168db94b66a110f8b5aa4a8fad2ff5752aec9d963a8c4a2849"
     #:url "https://blockchair.com/bitcoin-cash/transaction/9649592301c43b168db94b66a110f8b5aa4a8fad2ff5752aec9d963a8c4a2849"]{
     memo hitting over 1k regularly last days - ◊link{https://memo.cash/charts}
 }
-◊qt[#:src "Blockchair"
+◊qt[#:src "(transaction on the blockchain)"
+    #:author "CashBack"
+    #:author-url "https://memo.cash/post/c2503a1aecb55e2584b41ea183c3c355c527790a1ef9cb0dc3f90d8d7ae654bd"
     #:url "https://blockchair.com/bitcoin-cash/transaction/c2503a1aecb55e2584b41ea183c3c355c527790a1ef9cb0dc3f90d8d7ae654bd"]{
     ◊link{https://youtu.be/5q3kDx1USPM}
 }
-◊qt[#:src "Blockchair"
+◊qt[#:src "(transaction on the blockchain)"
+    #:author "Vidteks"
+    #:author-url "https://memo.cash/post/5e614e32e679df162cc04582769b09fd88e7f0ea32f537dcc72cae38efcb7fe9"
     #:url "https://blockchair.com/bitcoin-cash/transaction/5e614e32e679df162cc04582769b09fd88e7f0ea32f537dcc72cae38efcb7fe9"]{
     I can feel the anticipation rising...
 }
 
 Images or videos aren't actually embedded but references outside services. ◊link[memo-cash-protocol]{See their protocol} if you want more details.
+
+◊ndef["memo-length"]{
+    Memo could potentially extend their message length from the current 217 character limit by ◊link[embedding-data]{chaining transactions} as described before.
+}
 
 
 ◊(define memo-cash-protocol "https://memo.cash/protocol")
@@ -47,13 +56,17 @@ Images or videos aren't actually embedded but references outside services. ◊li
 
 ◊subhead{Not a purely good thing}
 
-For someone who's a big privacy supporter and who thinks the ◊link[right-to-be-forgotten]{Right to be forgotten} (the ability to remove yourself from the internet) is really important I'm quite conflicted. On the one hand this tech can be used for good---as we'll get into later---but it's also not a good idea for other reasons.
+For someone who's a big privacy supporter and who thinks the ◊link[right-to-be-forgotten]{Right to be forgotten} (the ability to remove yourself from the internet) is really important I'm quite conflicted. On the one hand this tech can be used for good---as we'll get into later---but it might also be a bad idea for other reasons.
 
 If this kind of social network becomes popular you may end up in a position where you cannot delete your posts and really embarrass yourself. For example if you drunkenly post really negative opinions about your boss, there's no way to take that back.◊sn{fired-social-media}
 
 And what if someone posts something about you? I sometimes feel lucky I didn't grow up in the modern age, with the horrible cyber-bullying you hear about, but imagine if someone posts a degrading video of you? Today we might be able to get Facebook or someone to remove it, but if you base your social network on a cryptocurrency... No such luck.
 
-But everything is not that bad, you still need websites or apps to display this information. So it's still possible to sort-of hide the information for many people---if you get these services to agree, but you cannot erase it completely. That said I still don't think Facebook on a blockchain is a good idea.
+But everything isn't lost! As you still need websites or apps to display the information, it's still possible to sort-of hide the information for many people---assuming you get all of them to agree. But you cannot erase the data completely.◊sn{erase-data} That said I still don't think Facebook on a blockchain is a good idea.
+
+◊ndef["erase-data"]{
+    If the data is embedded in OP_RETURN (as is the case for ◊link[memo-cash]{memo.cash}) it's actually easier to get it removed, because nodes can remove it and still be able to validate the blockchain. It's extra data that isn't actually needed anywhere.
+}
 
 ◊ndef["fired-social-media"]{
     It does happens that people get fired for things they post on social media---and they're not always drunk. Turns out employers, both current and potential future ones, do routinely check out social media and use it to decide if they will fire or hire you.
@@ -64,18 +77,21 @@ But everything is not that bad, you still need websites or apps to display this 
 
 ◊subhead{An uncensorable forum}
 
-At the same time there's something compelling about the idea of having a forum where your message cannot be censored.◊sn{intellectual-ddos}
+At the same time there's something compelling about the idea of having a forum where your messages cannot be censored.◊sn{intellectual-ddos}
 
 ◊ndef["intellectual-ddos"]{
-    Another big issue, which I foresee as one of the biggest unsolved challenges of the internet age, is "intellectual DDOS". It basically tries to throw so much disinformation at you so cannot tell what's right and what's wrong. It's a denial-of-service attack which works by the fact that it's much easier to produce bullshit than to counter it.
+    Another big issue, which I foresee as one of the biggest unsolved challenges of the internet age, is "intellectual DDOS". It basically tries to throw so much disinformation at you so cannot tell what's right and what's wrong. It's a denial-of-service attack which works by the fact that it's much easier to produce ◊link[pen-teller-bullshit]{bullshit} than to counter it.
 }
+
+◊(define pen-teller-bullshit "https://www.imdb.com/title/tt0346369/")
 
 We've seen examples of censorship in the chapter ◊link[censorship-is-real]{uncensorable donations}, so let's not repeat ourselves too much. One example is that Twitter is completely censored in China, and you might get arrested if you bypass their internet wide block of it.
 
-Well here we have a Twitter-like service that's uncensorable and there's no company or service that China could put pressure on to remove inconvenient messages. We're free to discuss China's human rights abuses (like their ◊link[forced-organ-harvesting]{forced organ harvesting}) and the information can never truly be removed.
+A Twitter-like service based on a cryptocurrency does not have these problems. ◊link[uncensorable-donations]{As we saw before}, this kind of service is uncensorable, and there is no company or service China could put pressure on to get inconvenient content removed. Therefore we're free to discuss China's human rights abuses (like their ◊link[forced-organ-harvesting]{forced organ harvesting}) and the information can never truly be removed.
 
 ◊(define forced-organ-harvesting "https://chinatribunal.com/final-judgement-report/")
 ◊(define censorship-is-real "/uncensorable_donations.html#censorship-is-real")
+◊(define uncensorable-donations "/uncensorable_donations.html")
 
 
 ◊subhead{Uncorrupted history}
@@ -94,7 +110,7 @@ You can also actively rewrite the history, which is one of the main themes of th
 
 I wonder what history would look like if we had an uncorrupted version of it? If we had access to several different unaltered versions of a story? What if we had access to an easily searchable Twitter-style feed---permanent and uncensorable---available to all?
 
-With cryptocurrencies we just might have that.
+With cryptocurrencies we just might have that, for better or worse...
 
 ◊ndef["ceasar-celts"]{
     A nice example of the one-sided history is the Roman war against the Celts. We have a great recounting from the Roman general Julius Caesar---but nothing else.
