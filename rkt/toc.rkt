@@ -37,7 +37,7 @@
      "New asset class?")
     (extensions.html
      timestamping_service.html
-     "Uncensorable Twitter"
+     uncensorable_twitter.html
      "Provably fair gambling"
      "Tokens"
      "Verifiable voting")
