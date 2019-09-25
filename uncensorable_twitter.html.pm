@@ -87,7 +87,7 @@ At the same time there's something compelling about the idea of having a forum w
 
 We've seen examples of censorship in the chapter ◊link[censorship-is-real]{uncensorable donations}, so let's not repeat ourselves too much. One example is that Twitter is completely censored in China, and you might get arrested if you bypass their internet wide block of it.
 
-A Twitter-like service based on a cryptocurrency does not have these problems. ◊link[uncensorable-donations]{As we saw before}, this kind of service is uncensorable, and there is no company or service China could put pressure on to get inconvenient content removed. Therefore we're free to discuss China's human rights abuses (like their ◊link[forced-organ-harvesting]{forced organ harvesting}) and the information can never truly be removed.
+A Twitter-like service based on a cryptocurrency does not have these problems. ◊link[uncensorable-donations]{◊nbsp{As we saw before}}, this kind of service is uncensorable, and there is no company or service China could put pressure on to get inconvenient content removed. Therefore we're free to discuss China's human rights abuses (like their ◊link[forced-organ-harvesting]{forced organ harvesting}) and the information can never truly be removed.
 
 ◊(define forced-organ-harvesting "https://chinatribunal.com/final-judgement-report/")
 ◊(define censorship-is-real "/uncensorable_donations.html#censorship-is-real")

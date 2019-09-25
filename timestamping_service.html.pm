@@ -43,7 +43,7 @@ Let's travel back in time and look at the site ◊link[hn]{Hacker News}, a tech 
 
 ◊hn-html{
     The top three stories on ◊link[hn-wayback]{Hacker News on Mars 1st, 2011} according to the Wayback Machine.  
-    I tried to reproduce the site styling, but it's not pixel perfect.
+    I tried to reproduce the site appearance, but it's not pixel perfect.
 }
 
 As long as we can trust the Wayback Machine (and I do consider them generally trustworthy) we can be fairly sure this is correct. Letting a trusted party like the Wayback Machine handle timestamping, called ◊link[trusted-timestamping]{◊em{trusted timestamping}}, is a solved problem with different kinds of standards but---as the name implies---there's always the caveat of requiring a trusted party to verify the timestamps.
@@ -241,7 +241,7 @@ Let's now encode and timestamp it using the Bitcoin Cash blockchain:
             My transaction transferred around $0.05 with a $0.0008 fee. It might even be possible to transfer zero coins---as long as you pay the transaction fee---but the wallets I used had a minimum transaction limit.
         }
 
-        We can double-check the transaction on a blockexplorer, ◊link[transaction-ex]{such as this one}, to see that the OP_RETURN value matches our SHA-256 hash (look for the decoded OP_RETURN field).◊sn{j@}
+        We can double-check the transaction on a blockexplorer, ◊link[transaction-ex]{such as Blockchair}, to see that the OP_RETURN value matches our SHA-256 hash (look for the decoded OP_RETURN field).◊sn{j@}
     }
 }
 
@@ -266,7 +266,7 @@ With that our timestamp is prepared and nobody can see our original message, onl
     }
     ◊li{Lookup the timestamp.
 
-        According to ◊link[transaction-ex]{blockchair} the transaction was included in a block mined 20:17 September 15th, 2019 (UTC). Verifying the timestamp with other blockexplorers or full nodes is left as an exercise to the reader, just be cautious of timezone differences.
+        According to ◊link[transaction-ex]{Blockchair} the transaction was included in a block mined 20:17 September 15th, 2019 (UTC). Verifying the timestamp with other blockexplorers or full nodes is left as an exercise to the reader, just be cautious of timezone differences.
     }
 }
 
