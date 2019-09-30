@@ -50,19 +50,31 @@ More money than anyone imagined: an explanation for why the bubble never burst
 Iceland jails bankers:
 <https://www.bloomberg.com/news/features/2016-03-31/welcome-to-iceland-where-bad-bankers-go-to-prison>
 
-◊subhead{Dangers of inflation}
+◊subhead{A broken system}
+
+(Start with an image of a dude on a stick, to represent an unstable system. And a bunch of dudes running around to make it not fall over.)
 
 ◊ol{
     ◊li{Counterfeiting and how it redistributes money.}
     ◊li{Inflation is legal counterfeiting.}
+    ◊li{Fractional banking.}
+    ◊li{Booms and busts.}
     ◊li{Hyperinflation.}
+    ◊li{How the FED tried to increase the rates, and the market crashed.}
     ◊li{With cryptocurrencies you don't play with the money supply.}
 }
 
 Hyperinflation and Trust in Ancient Rome 
 https://news.ycombinator.com/item?id=21010309
 
+Booms and busts:
+https://www.alt-m.org/2018/08/16/fractional-reserve-banking-and-austrian-business-cycles-part-i/
+https://www.infowars.com/does-the-boom-bust-cycle-ever-result-from-commodity-money/
+https://mises.org/library/boom-and-bust-0
+
 ◊subhead{The blind leading the blind}
+
+(Image of a blindfolded dude leading masses of blindfolded dudes heading towards a cliff.)
 
 “It's almost been worth this depression to find out how little our big men know.”
 ― Will Rogers 
@@ -82,6 +94,8 @@ How the FED fanned the flames by focusing on inflation
 Saved Bears but let Lehmann fail
 
 https://news.ycombinator.com/item?id=21028770
+
+Negative rents.
 
 
 ◊subhead{OLD}
