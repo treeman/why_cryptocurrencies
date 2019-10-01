@@ -108,5 +108,5 @@ Do the people really know that the least accountable operation in the U.S. gover
       He who controls the spice controls the universe.
 }
 
-The FED, the "controller of the universe", makes us all blind. We can't even tell how many dollar bills really exist.
+It's worse than us not understanding how the system works. The FED, the "controller of the universe", makes us all blind. We can't even tell how many dollar bills really exist.
 
