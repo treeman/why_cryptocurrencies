@@ -23,6 +23,9 @@
 }
 
 ◊subhead{How the banks were bailed out}
+
+https://www.thebalance.com/aig-bailout-cost-timeline-bonuses-causes-effects-3305693
+
 ◊subhead{The aftermath, nothing really changed}
 
 But at least we're going to see some of them go to jail.

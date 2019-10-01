@@ -8,14 +8,15 @@
 ◊epigraph{
   ◊qt[#:author "Will Rogers"
       #:date "1930s"]{
-    It's almost been worth this depression to find out how little our big men know.
+    It's almost been worth ◊link[great-depression]{this depression} to find out how little our big men know.
   }
 }
 ◊;https://books.google.co.uk/books?id=6Mdh5yuHavgC&pg=PA86&lpg=PA86&ots=vJ319cMgdc&focus=viewport&dq=%E2%80%9CIt%27s+almost+been+worth+this+depression+to+find+out+how+little+our+big+men+know.%E2%80%9D++%E2%80%95+Will+Rogers
+◊(define great-depression "https://en.wikipedia.org/wiki/Great_Depression")
 
 ◊todo{IMG of a blindfolded dude leading masses of blindfolded dudes heading towards a cliff.}
 
-One of the most common arguments against sound money---like cryptocurrencies or money backed by gold---is that you lose the ability to react to the market. For example during a depression you could try to stimulate the economy to avoid the bad effects. ◊sn{elaciticity}
+One of the most common arguments against sound money---like cryptocurrencies or money backed by gold---is that you lose the ability to react to the market. For example during a depression you could try to stimulate the economy to avoid the bad effects. This lies at the heart of Keynesian economic theory where you're supposed to push on the gas pedal during harsh economic times and pull on the breaks during good times. ◊sn{elaciticity}
 
 ◊ndef["elaciticity"]{
     ◊em{Elaciticity} is a nice word fractional banking proponents have used to describe this ability. In plain English it means the ability to inflate and deflate the money supply freely.
@@ -68,10 +69,12 @@ Because the economy on a global scale is so incredibly complex it's extremely ha
 
 Here are some quotes from some of the leading experts of the world, merely months before the financial meltdown:
 
-◊qt[#:author "FED"
+◊qt[#:author "The Federal Reserve"
     #:date "August, 2007"
     #:url "https://www.reuters.com/article/us-usa-fed-rates-idUSN0722343620070808"]{
-  Fed says inflation main worry, but cites risks
+  Financial markets have been volatile in recent weeks, credit conditions have become tighter for some households and businesses, and the housing correction is ongoing.
+
+  Nevertheless, the economy seems likely to continue to expand at a moderate pace over coming quarters, supported by solid growth in employment and incomes and a robust global economy.
 }
 
 ◊qt[#:author "Citigroup CEO Chuck Prince"
@@ -79,18 +82,20 @@ Here are some quotes from some of the leading experts of the world, merely month
   When the music stops, in terms of liquidity, things will be complicated. But as long as the music is playing, you’ve got to get up and dance. We’re still dancing.
 }
 
-The FED fanned the flames of the housing bubble by focusing on inflation and keeping the rent low, all the way up to the crash.
+The Federal Reserve fanned the flames of the housing bubble by focusing on inflation and keeping the rent low, all the way up to the crash. During the crisis the FED bailed-out Bear Stearns but let Lehman Brothers fail, which has been widely criticized afterwards.◊sn{music-stops}
 
-    Bernanke: Inflation main worry, housing a risk
-    https://www.reuters.com/article/us-usa-fed-bernanke-idUSWAT00786720070718
-    July 2007
-
-
-Saved Bears but let Lehmann fail
+◊ndef["music-stops"]{
+    Alan S. Blinder "After the Music Stopped".
+}
 
 https://news.ycombinator.com/item?id=21028770
 
 Negative rents.
+
+◊qt[#:author "IMF:s finansiella rådgivare Jose Viñals"
+    #:url "https://www.svd.se/imf-stottar-stefan-ingves-minusranta"]{
+    Även om erfarenheten med negativa räntor är begränsade drar vi slutsatsen att det har bidragit till ytterligare penningpolitiska stimulanser och enklare ekonomiska villkor
+}
 
 ◊subhead{We are blind}
 
@@ -108,5 +113,5 @@ Do the people really know that the least accountable operation in the U.S. gover
       He who controls the spice controls the universe.
 }
 
-It's worse than us not understanding how the system works. The FED, the "controller of the universe", makes us all blind. We can't even tell how many dollar bills really exist.
+It's worse than us not understanding how the system works because the FED, the "controller of the universe", makes us all blind. We can't even tell how many dollar bills really exist.
 
