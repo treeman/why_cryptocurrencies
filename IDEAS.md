@@ -47,6 +47,13 @@ Ignorance is strength.”
 
 <https://www.reddit.com/r/btc/comments/cuqqe5/let_me_issue_and_control_a_nations_money_and_i/>
 
+◊qt[#:author "John Tuld"
+    #:quote-src #t
+    #:src "Margin Call"]{
+  There are three ways to make a living in this business: be first, be smarter or cheat.
+}
+
+
 # Better digital payments
 
 # A better currency

@@ -13,14 +13,50 @@
   }
 }
 
+During 2007--2008 the world experienced the biggest financial crisis since the 1930s ◊link[great-depression]{Great Depression}, often simply referred to as the ◊link[2008-crisis]{2008 financial crisis}. This is an extremely condensed version of the causes and effects of the crisis and how it relates to sound money.
 
-◊subhead{Background on the financial crisis}
+◊(define great-depression "https://en.wikipedia.org/wiki/Great_Depression")
+◊(define 2008-crisis "https://en.wikipedia.org/wiki/Financial_crisis_of_2007%E2%80%932008")
 
-◊qt[#:author "John Tuld"
-    #:quote-src #t
-    #:src "Margin Call"]{
-  There are three ways to make a living in this business: be first, be smarter or cheat.
+
+◊subhead{Background on the 2008 financial crisis}
+
+The financial crisis was caused by too many people with very little money borrowing a lot of money they could never repay. The banks gladly helped them and repackaged the bad loans and sold them to someone else, for a nice profit. This eventually blew up and brought the global economy to it's knees.
+
+Of course this explanation is too simplified. There were for example two bubbles that popped; the housing bubble and the much bigger bond bubble. The complex financial products which appeared to be low-risk but were very high-risk. And of course the "heads I win, tails you lose" incentives at play all the way from top to bottom in the system.◊sn{villains}
+
+A lot of ink has been spent on articles, books and even movies explaining the events better and in far more detail than I could hope to do. I particularly like the explanations given in the Oscar-winning movie ◊link[the-big-short]{The Big Short (2015)}:
+
+◊youtube[margot-robbie]{
+    Margot Robbie describes subrime mortgages.
 }
+
+◊youtube[anthony-bourdain]{
+    Anthony Bourdain explains what a CDO is.
+}
+
+Seriously if you want an approachable explanation of the crisis, watch the movie.
+
+
+◊(define the-big-short "https://www.imdb.com/title/tt1596363/")
+◊(define margot-robbie "https://www.youtube.com/watch?v=anSPG0TPf84")
+◊(define anthony-bourdain "https://www.youtube.com/watch?v=Vrv9odqUvlw")
+
+
+◊ndef["villains"]{
+    In "After the Music Stopped" Alan S. Blinder identifies seven villains responsible for the crisis:
+
+    1. Housing bubble
+    2. Bond bubble
+    3. Regulatory shortfalls
+    4. Subprime lending disgraceful practices
+    5. Complexity run amok
+    6. Overrated rating agencies
+    7. Crazy compensation schemes
+
+    He does a very good job in the book in describing the background of the crisis, although he's been criticised as being too positive towards the FED and the politicians in his conclusion.
+}
+
 
 ◊subhead{How the banks were bailed out}
 
