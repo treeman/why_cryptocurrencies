@@ -27,6 +27,11 @@ Counterfeiting and how it redistributes money. Inflation, or printing money, is 
     The temptetion is to step on the monetary accelerator or at least to avoid the monetary break until after the next election... Giving in to such temptations is likely to impart an inflationary bias to the economy and could lead to instability, recession and economic stagnation.
 }
 
+The FED is not a government agency. It's a private entity and its shareholders are banks which earn a dividend. As much as 80 billion dollars per year, total.  (Which banks? It's a secret)
+
+Nobody really knows how many dollars exist.  Nobody knows how much banks are printing to pad their own pockets.
+
+
 ◊subhead{A mountain of debt}
 
 ◊subhead{Booms and busts}
