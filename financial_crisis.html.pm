@@ -30,7 +30,7 @@ A lot of ink has been spent on articles, books and movies explaining the events 
 ◊qt[#:author "Margot Robbie"
     #:src "The Big Short"
     #:quote-src #t
-    #:url "https://www.youtube.com/watch?v=anSPG0TPf84"]{
+    #:url margot-robbie]{
   Basically, Lewis Ranieri's mortgage bonds were amazingly profitable for the big banks. They made billions and billions on their 2% fee they got for selling each of these bonds. But then, they started running out of mortgages to put in them. After all, there are only so many homes and so many people with good enough jobs to buy them, right?
 
   So, the banks started filling these bonds with riskier and riskier mortgages. That way, they can keep that profit machine churning, alright? By the way, these risky mortgages are called "subprime." So, whenever you hear the word "subprime," think "shit."
@@ -39,18 +39,16 @@ A lot of ink has been spent on articles, books and movies explaining the events 
 ◊qt[#:author "Anthony Bourdain"
     #:src "The Big Short"
     #:quote-src #t
-    #:url "https://www.youtube.com/watch?v=Vrv9odqUvlw"]{
+    #:url anthony-bourdain]{
   OK, I'm a chef on a Sunday afternoon, setting the menu at a big restaurant. I ordered my fish on Friday, which is the mortgage bond that Michael Burry shorted. But some of the fresh fish doesn't sell. I don't know why. Maybe it just came out halibut has the intelligence of a dolphin.
 
   So, what am I going to do? Throw all this unsold fish, which is the BBB level of the bond, in the garbage, and take the loss? No way. Being the crafty and morally onerous chef that I am, whatever crappy levels of the bond I don't sell, I throw into a seafood stew. See, it's not old fish. It's a whole new thing! And the best part is, they're eating 3-day-old halibut. ◊em{That} is a CDO.
 }
 
 ◊;youtube[margot-robbie]{ Margot Robbie describes subrime mortgages.  }
-
 ◊;youtube[anthony-bourdain]{Anthony Bourdain explains what a CDO is.}
 
 If you want an approachable explanation of the crisis, watch the movie. If it's too much Hollywood for your taste I can recommend "The Big Short: Inside the Doomsday Machine" by Michael Lewis, which the movie is based on.
-
 
 ◊(define the-big-short "https://www.imdb.com/title/tt1596363/")
 ◊(define margot-robbie "https://www.youtube.com/watch?v=anSPG0TPf84")
@@ -89,12 +87,24 @@ The crisis spread globally and for example in only the first quarter of 2009 the
 
 ◊subhead{The bail-outs}
 
+But the crisis could've been much worse. The U.S. came close to a complete financial meltdown, but without crossing the line.
+
 https://www.thebalance.com/aig-bailout-cost-timeline-bonuses-causes-effects-3305693
 
 
 ◊subhead{A message from Satoshi}
 
-Right in the middle of the recession Satoshi released 
+After having released the ◊link[wp]{Bitcoin whitepaper} in 2008 Satoshi mined the first bitcoins and launched the Bitcoin network January 2009, just after the financial crisis.
+
+In 2008 Satoshi released 
+
+Right in the middle of the recession Satoshi released the ◊link[wp]{Bitcoin whitepaper}
+
+◊qt[#:author "Satoshi"
+    #:src "Coinbase parameter for block 0"
+    #:url "https://blockchair.com/bitcoin/block/0"]{
+  The Times 03/Jan/2009 Chancellor on brink of second bailout for banks
+}
 
 
 ◊subhead{Nothing really changed}
