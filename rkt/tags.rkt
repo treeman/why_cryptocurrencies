@@ -144,7 +144,9 @@
   `(div ((class "epigraph"))
        ,@txt))
 
-(define (qt #:author [author #f] #:src [src #f] #:url [url #f] #:date [date #f] #:quote-src [quote-src #f] . txt)
+(define (qt #:author [author #f] #:src [src #f] #:url [url #f]
+            #:author-url [author-url #f]
+            #:date [date #f] #:quote-src [quote-src #f] . txt)
   (define cite `())
 
   ; Convert date to string, for ease of use later.
@@ -157,6 +159,10 @@
       [date (set! date (link url date))]
       [author (set! author (link url author))]
       [else (error "Quote with url but without ref")]))
+
+  ; Extra link for author
+  (when (and author author-url)
+    (set! author (link author-url author)))
 
   (when author
     (set! cite (append cite
@@ -179,6 +185,8 @@
   `(code ,@args))
 (define (code . args)
   `(pre (code ,@args)))
+(define (scode . args)
+  `(span ((class "sidenote-code")) ,@args))
 
 (define (sans . args)
   `(span ((class "sans")) ,@args))
@@ -236,6 +244,10 @@
       `(a ((href ,src) (target "_blank") (class "img-wrapper"))
           ,img)
       img))
+
+;; FIXME rename to figcaption
+(define (decoded-figcaption . args)
+  `(figcaption ,@(std-decode args)))
 
 (define (youtube url . caption)
   (define id

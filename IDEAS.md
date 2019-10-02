@@ -332,6 +332,7 @@ A peer-to-peer voting algorithm, without blockchain
 * Banking On Bitcoin (2016)
     "If privacy is outlawed, only outlaws will have privacy"
 * The Bitcoin Gospel (2015)
+    "If privacy is outlawed, only outlaws will have privacy"
     Focus on Bitcoin being a replacement for banks. Focus on Roger Ver, and we get to see him do some BJJ!
     It's always best if the leader is aloof or distant. Mythology around him.
     "Governments are murdering children!"
