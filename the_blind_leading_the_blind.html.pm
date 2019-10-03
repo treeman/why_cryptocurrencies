@@ -88,7 +88,7 @@ The Federal Reserve fanned the flames of the housing bubble by focusing on infla
     Alan S. Blinder "After the Music Stopped".
 }
 
-https://news.ycombinator.com/item?id=21028770
+◊;https://news.ycombinator.com/item?id=21028770
 
 Negative rents.
 

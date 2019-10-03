@@ -13,7 +13,7 @@
   }
 }
 
-During 2007--2008 the world experienced the biggest financial crisis since the 1930s ◊link[great-depression]{Great Depression}, often referred to as the ◊link[2008-crisis]{2008 financial crisis}. This chapter has an extremely condensed version of the causes and effects of the crisis and how it relates to sound money.
+During 2007--2008 the world experienced the biggest financial crisis since the 1930s ◊link[great-depression]{Great Depression}, often referred to as the ◊link[2008-crisis]{2008 financial crisis}. In this chapter I'll try to give an condensed version of the causes and effects of the crisis and how it relates to sound money.
 
 ◊(define great-depression "https://en.wikipedia.org/wiki/Great_Depression")
 ◊(define 2008-crisis "https://en.wikipedia.org/wiki/Financial_crisis_of_2007%E2%80%932008")
@@ -87,9 +87,31 @@ The crisis spread globally and for example in only the first quarter of 2009 the
 
 ◊subhead{The bail-outs}
 
-But the crisis could've been much worse. The U.S. came close to a complete financial meltdown, but without crossing the line.
+But the crisis could've been much worse. The U.S. came close to a complete financial meltdown, but without crossing the line. Partly thanks to the bail-outs, where the Federal Reserve bailed out banks and other private companies. The extremely risky assets, which were too risky for anyone else to touch, were bought up to rescue the banks which were "too big to fail".◊sn{interconnected}
 
-https://www.thebalance.com/aig-bailout-cost-timeline-bonuses-causes-effects-3305693
+◊ndef["interconnected"]{
+    Or perhaps a better term would be "too interconnected to fail". The biggest fear of a big bank going bankrupt is if it brings down the rest of the economy with it, which happened when Lehman Brothers failed.
+}
+
+◊ol{
+    ◊li{Investment bank Bear Stearns for $27 billion}
+    ◊li{Mortgage lenders Fannie Mae and Freddie Mac for $200 billion}
+    ◊li{Insurance giant American Investment Group (AIG) for $182 billion}
+}
+
+Notably Bear Stearns was bailed out while Lehman Brothers wasn't, a decision which is easy to criticise in hindsight. Furthermore the FED, for the first time in history, took control over a private company.◊sn{fed-political}
+
+◊ndef["fed-political"]{
+    The FED is supposed to be completely politically independent. But with their actions during the crisis, can they still claim to be independent?
+}
+
+In practice this meant that the tax payers were stuck paying for risky assets and, if things went sideways, would end up eating a huge loss. It's like betting all on red on a roulette wheel---you can win big or lose a lot. In this case American taxpayers got a good outcome, they even made money on the bailouts. The Irish taxpayers ◊link[irish-bailout]{weren't so lucky}.
+
+◊(define irish-bailout "https://www.irishtimes.com/business/financial-services/was-it-worth-paying-41-7bn-to-bail-out-irish-banks-1.4036792?mode=amp")
+
+◊; https://www.thebalance.com/aig-bailout-cost-timeline-bonuses-causes-effects-3305693
+
+◊; https://fortune.com/2019/09/26/the-feds-repo-market-bailout-is-a-sign-of-deeper-problems-that-are-getting-worse-over-time/
 
 
 ◊subhead{A message from Satoshi}
@@ -113,21 +135,24 @@ Which you might see as a sign that Satoshi wasn't a fan of bailing out the banks
 
 ◊subhead{Nothing really changed}
 
-"In medieval Europe, a banker who couldn't pay depositors was hanged. Today, that same banker would get bailed out, paid bonuses and enjoy some tax benefits, too."
+◊qt[#:src "Bitcoin the end of money as we know it"
+    #:url "https://www.imdb.com/title/tt4654844/"
+    #:quote-src #t]{
+    In medieval Europe, a banker who couldn't pay depositors was hanged. Today, that same banker would get bailed out, paid bonuses and enjoy some tax benefits, too.
+}
 
-But at least we're going to see some of them go to jail.
-Except they took the money the American people gave them and gave themselves huge bonuses.
+After the dust settled it's easy to think that the guilty got punished---after all the U.S. loves to dish out harsh punishments---and that the system was reworked to prevent a similar crisis from ever happening again. But reality isn't a fairy tail.
 
-A single banker went to jail.
+The bankers weren't punished for their unregulated gambling, in fact only a single U.S. banker went to jail. Instead they got bonuses and in 2010 the banks were enjoying massive profits---while regular people were still struggling without jobs and houses.
 
-In 2015, several banks began selling billions in something called a "bespoke tranche opportunity."
-Which, according to Bloomberg News, is just another name for a CDO.
+Remember the $182 billion bailout of AIG? Shortly after accepting the bailout they paid out ◊strong{$165 million in bonuses} to their executives, those responsible for ◊link[aig-record-loss]{the biggest corporate loss in history}, and bonuses for the entire company could reach as high as $1.2 billion. As ◊link[obama-aig-bonuses]{president Obama asks}: "how do they justify this outrage to the taxpayers who are keeping the company afloat?". One can't help but wonder...
 
-Banks Warm to Mortgage Bonds That Burned Them in 2008
-https://www.wsj.com/articles/banks-warm-to-mortgage-bonds-that-burned-them-in-2008-11568626202
+◊(define aig-record-loss "https://www.nytimes.com/2009/03/03/business/03aig.html")
+◊(define obama-aig-bonuses "http://edition.cnn.com/2009/POLITICS/03/16/AIG.bonuses/")
 
-In 2015, several banks began selling billions in something called a "bespoke tranche opportunity."
-Which, according to Bloomberg News, is just another name for a CDO.
+In 2015, several banks began selling billions in something called a "bespoke tranche opportunity" which, ◊link[bespoke-tranche-opportunity]{according to Bloomberg News}, is just another name for a CDO. The banks are also ◊link[warming-up-mortgage-bonds]{warming up} to the same mortgage bonds that burned them in 2008. History doesn't repeat itself, but it does rhyme awfully well.
+
+◊(define warming-up-mortgage-bonds "https://www.wsj.com/articles/banks-warm-to-mortgage-bonds-that-burned-them-in-2008-11568626202")
 
 ◊(define bespoke-tranche-opportunity "https://www.bloomberg.com/news/articles/2015-02-04/goldman-sachs-hawks-cdos-tainted-by-credit-crisis-under-new-name")
 
