@@ -13,7 +13,7 @@
   }
 }
 
-During 2007--2008 the world experienced the biggest financial crisis since the 1930s ◊link[great-depression]{Great Depression}, often referred to as the ◊link[2008-crisis]{2008 financial crisis}. In this chapter I'll try to give an condensed version of the causes and effects of the crisis and how it relates to sound money.
+During 2007--2008 the world experienced the biggest financial crisis since the 1930s ◊link[great-depression]{Great Depression}, often referred to as the ◊link[2008-crisis]{2008 financial crisis}. I'll try to give an condensed version of the crisis and how it relates to sound money.
 
 ◊(define great-depression "https://en.wikipedia.org/wiki/Great_Depression")
 ◊(define 2008-crisis "https://en.wikipedia.org/wiki/Financial_crisis_of_2007%E2%80%932008")
@@ -48,7 +48,7 @@ A lot of ink has been spent on articles, books and movies explaining the events 
 ◊;youtube[margot-robbie]{ Margot Robbie describes subrime mortgages.  }
 ◊;youtube[anthony-bourdain]{Anthony Bourdain explains what a CDO is.}
 
-If you want an approachable explanation of the crisis, watch the movie. If it's too much Hollywood for your taste I can recommend "The Big Short: Inside the Doomsday Machine" by Michael Lewis, which the movie is based on.
+If you want an approachable explanation of the crisis, watch the movie. If it's too much Hollywood for your taste I recommend "The Big Short: Inside the Doomsday Machine" by Michael Lewis, which the movie is based on.
 
 ◊(define the-big-short "https://www.imdb.com/title/tt1596363/")
 ◊(define margot-robbie "https://www.youtube.com/watch?v=anSPG0TPf84")
@@ -105,7 +105,11 @@ Notably Bear Stearns was bailed out while Lehman Brothers wasn't, a decision whi
     The FED is supposed to be completely politically independent. But with their actions during the crisis, can they still claim to be independent?
 }
 
-In practice this meant that the tax payers were stuck paying for risky assets and, if things went sideways, would end up eating a huge loss. It's like betting all on red on a roulette wheel---you can win big or lose a lot. In this case American taxpayers got a good outcome, they even made money on the bailouts. The Irish taxpayers ◊link[irish-bailout]{weren't so lucky}.
+In practice this meant that the tax payers were stuck paying for risky assets and, if things went sideways, would end up eating a huge loss. It's like betting all on red on a roulette wheel---you can win big or lose a lot. In this case American taxpayers got a good outcome, they even made money on the bailouts. The Irish taxpayers ◊link[irish-bailout]{weren't so lucky}.◊sn{managing-risk}
+
+◊ndef["managing-risk"]{
+    Investments come with a risk--reward trade-off. If you want the potential for higher return then you need to take a larger risk and if you want lower risk you'll sacrifice potential gains. In this case the bailouts forced a very large risk on the taxpayers.
+}
 
 ◊(define irish-bailout "https://www.irishtimes.com/business/financial-services/was-it-worth-paying-41-7bn-to-bail-out-irish-banks-1.4036792?mode=amp")
 
@@ -124,9 +128,13 @@ After having released the ◊link[wp]{Bitcoin whitepaper} in 2008 Satoshi mined 
   The Times 03/Jan/2009 Chancellor on brink of second bailout for banks
 }
 
-Satoshi refers to ◊link[times-img]{The Times issued the 3rd of January, 2009} with the title "Chancellor on brink of second bailout for banks" and the subtitle "Billions may be needed as lending squeeze tightens". You can ◊link[times-20090103]{read it online} (although the title is different compared to the printed copy).
+Satoshi refers to ◊link[times-img]{The Times issued the 3rd of January, 2009} with the title "Chancellor on brink of second bailout for banks" and the subtitle "Billions may be needed as lending squeeze tightens".◊sn{times-online}
 
-Which you might see as a sign that Satoshi wasn't a fan of bailing out the banks.
+◊ndef["times-online"]{
+    You can ◊link[times-20090103]{read the issue online}, although the title is different compared to the printed copy.
+}
+
+Which you might see as a sign that Satoshi wasn't a fan of bailing out the banks (if developing an alternative to the banking system wasn't sign enough).
 
 ◊(define embedding-data "/extensions.html#embedding-data")
 ◊(define times-img "https://imgur.com/pGYXHJh")
@@ -141,21 +149,27 @@ Which you might see as a sign that Satoshi wasn't a fan of bailing out the banks
     In medieval Europe, a banker who couldn't pay depositors was hanged. Today, that same banker would get bailed out, paid bonuses and enjoy some tax benefits, too.
 }
 
-After the dust settled it's easy to think that the guilty got punished---after all the U.S. loves to dish out harsh punishments---and that the system was reworked to prevent a similar crisis from ever happening again. But reality isn't a fairy tail.
+After the dust settled it's easy to think the guilty got punished---after all the U.S. loves to dish out harsh punishments---and the system was reworked to prevent a similar crisis from ever happening again. But reality isn't a fairy tail.
 
 The bankers weren't punished for their unregulated gambling, in fact only a single U.S. banker went to jail. Instead they got bonuses and in 2010 the banks were enjoying massive profits---while regular people were still struggling without jobs and houses.
 
 Remember the $182 billion bailout of AIG? Shortly after accepting the bailout they paid out ◊strong{$165 million in bonuses} to their executives, those responsible for ◊link[aig-record-loss]{the biggest corporate loss in history}, and bonuses for the entire company could reach as high as $1.2 billion. As ◊link[obama-aig-bonuses]{president Obama asks}: "how do they justify this outrage to the taxpayers who are keeping the company afloat?". One can't help but wonder...
 
+Of course there were changes made to the financial system, but the fundamental problems remain unsolved. The incentive for the banks is still to flip a coin, because if they win they win big and if they lose they get bailed out (with fat severance bonuses for the responsible).
+
+
+◊qt[#:author "Michael Lewis"
+    #:src "The Big Short: Inside the Doomsday Machine"
+    #:quote-src #t]{
+  What are the odds that people will make smart decisions about money if they don’t need to make smart decisions—if they can get rich making dumb decisions?
+}
+
+In 2015, several banks began selling billions in something called a "bespoke tranche opportunity" which ◊link[bespoke-tranche-opportunity]{is just another name for a CDO}. The banks are also ◊link[warming-up-mortgage-bonds]{warming up} to the same mortgage bonds that burned them in 2008, while housing prices are going through the roof and people are borrowing like mad. History doesn't repeat itself, but it rhymes awfully well.
+
 ◊(define aig-record-loss "https://www.nytimes.com/2009/03/03/business/03aig.html")
 ◊(define obama-aig-bonuses "http://edition.cnn.com/2009/POLITICS/03/16/AIG.bonuses/")
-
-In 2015, several banks began selling billions in something called a "bespoke tranche opportunity" which, ◊link[bespoke-tranche-opportunity]{according to Bloomberg News}, is just another name for a CDO. The banks are also ◊link[warming-up-mortgage-bonds]{warming up} to the same mortgage bonds that burned them in 2008. History doesn't repeat itself, but it does rhyme awfully well.
-
 ◊(define warming-up-mortgage-bonds "https://www.wsj.com/articles/banks-warm-to-mortgage-bonds-that-burned-them-in-2008-11568626202")
-
 ◊(define bespoke-tranche-opportunity "https://www.bloomberg.com/news/articles/2015-02-04/goldman-sachs-hawks-cdos-tainted-by-credit-crisis-under-new-name")
-
 
 ◊;Iceland jails bankers:
 ◊;<https://www.bloomberg.com/news/features/2016-03-31/welcome-to-iceland-where-bad-bankers-go-to-prison>
