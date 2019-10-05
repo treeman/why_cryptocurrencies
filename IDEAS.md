@@ -269,6 +269,8 @@ A peer-to-peer voting algorithm, without blockchain
 
 “Can’t wait for a cryptocurrency with the ethics of Uber, the censorship resistance of Paypal, and the centralization of Visa, all tied together under the proven privacy of Facebook.”
 
+https://news.ycombinator.com/item?id=21161233
+
 ## Explaining cryptography
 
 1. sha256 and one-way hash functions
