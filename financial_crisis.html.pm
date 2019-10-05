@@ -97,6 +97,14 @@ But the crisis could've been much worse. The U.S. came close to a complete finan
     ◊li{Investment bank Bear Stearns for $27 billion}
     ◊li{Mortgage lenders Fannie Mae and Freddie Mac for $200 billion}
     ◊li{Insurance giant American Investment Group (AIG) for $182 billion}
+    ◊li{Bank of America Corp}
+    ◊li{Citigroup Inc.}
+}
+
+In total the U.S. government injected $700 billion dollars into the economy, using the taxpayers money.◊sn{where-money?}
+
+◊ndef["where-money?"]{
+    There are many important problems a nation need to handle; health care, poverty, education, infrastructure, security and immigration; but with too little money to solve them. Yet there's almost infinity money to bail-out banks. I find it fascinating and incredibly frustrating.
 }
 
 Notably Bear Stearns was bailed out while Lehman Brothers wasn't, a decision which is easy to criticise in hindsight. Furthermore the FED, for the first time in history, took control over a private company.◊sn{fed-political}
@@ -153,16 +161,25 @@ After the dust settled it's easy to think the guilty got punished---after all th
 
 The bankers weren't punished for their unregulated gambling, in fact only a single U.S. banker went to jail. Instead they got bonuses and in 2010 the banks were enjoying massive profits---while regular people were still struggling without jobs and houses.
 
-Remember the $182 billion bailout of AIG? Shortly after accepting the bailout they paid out ◊strong{$165 million in bonuses} to their executives, those responsible for ◊link[aig-record-loss]{the biggest corporate loss in history}, and bonuses for the entire company could reach as high as $1.2 billion. As ◊link[obama-aig-bonuses]{president Obama asks}: "how do they justify this outrage to the taxpayers who are keeping the company afloat?". One can't help but wonder...
+Remember the $182 billion bailout of AIG? Shortly after accepting the bailout they paid out ◊strong{$165 million in bonuses} to their executives, those responsible for ◊link[aig-record-loss]{the biggest corporate loss in history}. As ◊link[obama-aig-bonuses]{president Obama asks}: "how do they justify this outrage to the taxpayers who are keeping the company afloat?". One can't help but wonder...
 
-Of course there were changes made to the financial system, but the fundamental problems remain unsolved. The incentive for the banks is still to flip a coin, because if they win they win big and if they lose they get bailed out (with fat severance bonuses for the responsible).
-
+Of course there were changes made to the financial system, but the fundamental problem remain unsolved. The incentive for the banks is still to flip a coin, because if they win they win big and if they lose they get bailed out (with fat severance bonuses for the responsible).
 
 ◊qt[#:author "Michael Lewis"
     #:src "The Big Short: Inside the Doomsday Machine"
     #:quote-src #t]{
   What are the odds that people will make smart decisions about money if they don’t need to make smart decisions—if they can get rich making dumb decisions?
 }
+
+In fact they even made it worse after the crisis by passing laws to make it even easier for the FED to step in and bailout whatever they deem "too big to fail", without the ◊em{unnecessary} overhead of going through congress.◊sn{bail-in}
+
+◊ndef["bail-in"]{
+    Instead of bailouts banks can be rescued by ◊link[bail-in]{◊em{bail-ins}}. Instead of using money from taxpayers it uses the money from unsecured creditors, depositors and bondholders. In English it means the banks can take money from their customers to save themselves. The banks can also be placed under direct federal control.
+
+    This should protect taxpayers, which is great, but it doesn't change the incentives. The banks can still play fast and lose and be saved by someone else.
+}
+
+◊(define bail-in "https://www.investopedia.com/articles/markets-economy/090716/why-bank-bailins-will-be-new-bailouts.asp")
 
 In 2015, several banks began selling billions in something called a "bespoke tranche opportunity" which ◊link[bespoke-tranche-opportunity]{is just another name for a CDO}. The banks are also ◊link[warming-up-mortgage-bonds]{warming up} to the same mortgage bonds that burned them in 2008, while housing prices are going through the roof and people are borrowing like mad. History doesn't repeat itself, but it rhymes awfully well.
 
@@ -176,6 +193,22 @@ In 2015, several banks began selling billions in something called a "bespoke tra
 
 
 ◊subhead{What if we used sound money?}
+
+With ◊em{sound money} nobody can manipulate the money supply. For example fiat backed by gold, actual gold coins or cryptocurrencies. If we used sound money could the financial crisis have been prevented?
+
+Honestly, probably not. The housing and bond bubble might still have happened as the banks can still create mortgage backed securities, CDOs and other complex derivatives. Sound money cannot prevent anyone from creating and selling shit.
+
+But the incentives would be different. Banks can still use fractional banking (create IOUs and inflate the money supply) but if they fail there's nobody to print money for them to bail them out. The bailouts in 2008--2009 were only possible because the FED has the ability to print as much money as they want.◊sn{print-digital} There's no upper limit to the size of the bailout---they can always conjure enough. Not so with sound money.
+
+◊ndef["print-digital"]{
+    Of course they don't actually print physical bills worth billions of dollars, they just move digital numbers in some spreadsheets. The effect is the same.
+}
+
+Therefore the "heads I win, tails I get bailed-out" incentives would change to the healthy "heads I win, tails I lose". This would force banks to be more careful with their risk-taking, and if they overstep their bounds they fail. This might have bad short-term effects but would be more robust and healthy long-term.
+
+Now you might say that we can solve this problem in another way---and you might be right. But as I'll go into in the ◊link[broken-system]{next chapter} there are more systematic problems.
+
+◊(define broken-system "/a_broken_system.html")
 
 
 ◊;https://news.bitcoin.com/10-years-ago-bitcoins-genesis-block-changed-the-course-of-history/
