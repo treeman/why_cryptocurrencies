@@ -66,7 +66,7 @@ If you want an approachable explanation of the crisis, watch the movie. If it's 
     6. Overrated rating agencies
     7. Crazy compensation schemes
 
-    He does a good job describing the background of the crisis, although he's been criticised as being too positive towards the actions of the FED and the politicians.
+    He does a good job describing the background of the crisis, although he's been criticised as being too positive towards the actions of the Fed and the politicians.
 }
 
 
@@ -107,10 +107,10 @@ In total the U.S. government injected $700 billion dollars into the economy, usi
     There are many important problems a nation need to handle; health care, poverty, education, infrastructure, security and immigration; but with too little money to solve them. Yet there's almost infinity money to bail-out banks. I find it fascinating and incredibly frustrating.
 }
 
-Notably Bear Stearns was bailed out while Lehman Brothers wasn't, a decision which is easy to criticise in hindsight. Furthermore the FED, for the first time in history, took control over a private company.◊sn{fed-political}
+Notably Bear Stearns was bailed out while Lehman Brothers wasn't, a decision which is easy to criticise in hindsight. Furthermore the Fed, for the first time in history, took control over a private company.◊sn{fed-political}
 
 ◊ndef["fed-political"]{
-    The FED is supposed to be completely politically independent. But with their actions during the crisis, can they still claim to be independent?
+    The Fed is supposed to be completely politically independent. But with their actions during the crisis, can they still claim to be independent?
 }
 
 In practice this meant that the tax payers were stuck paying for risky assets and, if things went sideways, would end up eating a huge loss. It's like betting all on red on a roulette wheel---you can win big or lose a lot. In this case American taxpayers got a good outcome, they even made money on the bailouts. The Irish taxpayers ◊link[irish-bailout]{weren't so lucky}.◊sn{managing-risk}
@@ -171,7 +171,7 @@ Of course there were changes made to the financial system, but the fundamental p
   What are the odds that people will make smart decisions about money if they don’t need to make smart decisions—if they can get rich making dumb decisions?
 }
 
-In fact they even made it worse after the crisis by passing laws to make it even easier for the FED to step in and bailout whatever they deem "too big to fail", without the ◊em{unnecessary} overhead of going through congress.◊sn{bail-in}
+In fact they even made it worse after the crisis by passing laws to make it even easier for the Fed to step in and bailout whatever they deem "too big to fail", without the ◊em{unnecessary} overhead of going through congress.◊sn{bail-in}
 
 ◊ndef["bail-in"]{
     Instead of bailouts banks can be rescued by ◊link[bail-in]{◊em{bail-ins}}. Instead of using money from taxpayers it uses the money from unsecured creditors, depositors and bondholders. In English it means the banks can take money from their customers to save themselves. The banks can also be placed under direct federal control.
@@ -198,7 +198,7 @@ With ◊em{sound money} nobody can manipulate the money supply. For example fiat
 
 Honestly, probably not. The housing and bond bubble might still have happened as the banks can still create mortgage backed securities, CDOs and other complex derivatives. Sound money cannot prevent anyone from creating and selling shit.
 
-But the incentives would be different. Banks can still use fractional banking (create IOUs and inflate the money supply) but if they fail there's nobody to print money for them to bail them out. The bailouts in 2008--2009 were only possible because the FED has the ability to print as much money as they want.◊sn{print-digital} There's no upper limit to the size of the bailout---they can always conjure enough. Not so with sound money.
+But the incentives would be different. Banks can still use fractional banking (create IOUs and inflate the money supply) but if they fail there's nobody to print money for them to bail them out. The bailouts in 2008--2009 were only possible because the Fed has the ability to print as much money as they want.◊sn{print-digital} There's no upper limit to the size of the bailout---they can always conjure enough. Not so with sound money.
 
 ◊ndef["print-digital"]{
     Of course they don't actually print physical bills worth billions of dollars, they just move digital numbers in some spreadsheets. The effect is the same.

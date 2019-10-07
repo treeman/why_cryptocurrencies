@@ -32,9 +32,11 @@ In this section we'll focus on benefits of using cryptocurrencies as money and c
 ◊; https://www.youtube.com/watch?v=lbarjpJhSLw
 ◊; <https://www.bloomberg.com/opinion/articles/2019-05-06/banks-look-safer-with-deposits>
 
-◊; FED cut rates with 7-3 vote
+◊; Fed cut rates with 7-3 vote
 ◊; https://news.ycombinator.com/item?id=21008239
 
 ◊; Why the Federal Reserve is pouring money into the financial system
 ◊;https://news.ycombinator.com/item?id=21004068
 
+◊; Modern Monetary Theory (MMT)
+◊; https://www.taxjustice.net/2019/03/05/the-magic-money-tree-from-modern-monetary-theory-to-modern-tax-theory/

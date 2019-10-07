@@ -82,7 +82,7 @@ Here are some quotes from some of the leading experts of the world, merely month
   When the music stops, in terms of liquidity, things will be complicated. But as long as the music is playing, you’ve got to get up and dance. We’re still dancing.
 }
 
-The Federal Reserve fanned the flames of the housing bubble by focusing on inflation and keeping the rent low, all the way up to the crash. During the crisis the FED bailed-out Bear Stearns but let Lehman Brothers fail, which has been widely criticized afterwards.◊sn{music-stops}
+The Federal Reserve fanned the flames of the housing bubble by focusing on inflation and keeping the rent low, all the way up to the crash. During the crisis the Fed bailed-out Bear Stearns but let Lehman Brothers fail, which has been widely criticized afterwards.◊sn{music-stops}
 
 ◊ndef["music-stops"]{
     Alan S. Blinder "After the Music Stopped".
@@ -105,7 +105,7 @@ Negative rents.
 
 One might argue that we're blind because we don't understand how the banking system work, what consequences printing money out of thin air have and how we're ignorant of how the modern monetary system work.
 
-Do the people really know that the least accountable operation in the U.S. government isn't the FBI, CIA or the NSA---which are all accountable to congressional supervision---but it's the FED? The Federal Reserve System, the U.S. central bank, is not accountable to anyone, has no budget and nobody has insight into it's operations.
+Do the people really know that the least accountable operation in the U.S. government isn't the FBI, CIA or the NSA---which are all accountable to congressional supervision---but it's the Fed? The Federal Reserve System, the U.S. central bank, is not accountable to anyone, has no budget and nobody has insight into it's operations.
 
 ◊qt[#:author "Frank Herbert"
     #:quote-src #t
@@ -113,5 +113,5 @@ Do the people really know that the least accountable operation in the U.S. gover
       He who controls the spice controls the universe.
 }
 
-It's worse than us not understanding how the system works because the FED, the "controller of the universe", makes us all blind. We can't even tell how many dollar bills really exist.
+It's worse than us not understanding how the system works because the Fed, the "controller of the universe", makes us all blind. We can't even tell how many dollar bills really exist.
 
