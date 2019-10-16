@@ -21,9 +21,9 @@ During 2007--2008 the world experienced the biggest financial crisis since the 1
 
 ◊subhead{What caused the 2008 financial crisis?}
 
-The financial crisis was caused by too many people with very little money borrowing  money they could never repay. The banks gladly helped them and repackaged the bad loans and sold them to someone else, for a nice profit. This eventually blew up and brought the global economy to it's knees.
+The financial crisis was caused by too many people borrowing too much money. The banks gladly helped them and repackaged the bad loans and sold them to someone else, for a nice profit. When there weren't enough loans the banks conjured new ones. This eventually blew up and brought the global economy to it's knees.
 
-Of course this explanation is too simplified. There were for example two bubbles that popped; the housing bubble and the much bigger bond bubble. The complex financial products which appeared to be low-risk but were very high-risk. And of course the "heads I win, tails you lose" incentives at play all the way from top to bottom in the system.◊sn{villains}
+Of course this explanation is too simplified. There were for example two bubbles that popped: the housing bubble and the much bigger bond bubble. The complex financial products (that nobody really understood) appeared to be low-risk but were high-risk. And of course the "heads I win, tails you lose" incentives at play all the way from top to bottom in the system.◊sn{villains}
 
 A lot of ink has been spent on articles, books and movies explaining the events better and in far more detail than I could hope to do. I particularly like the explanations given in the Oscar-winning movie ◊link[the-big-short]{The Big Short (2015)}:
 
@@ -48,8 +48,10 @@ A lot of ink has been spent on articles, books and movies explaining the events 
 ◊;youtube[margot-robbie]{ Margot Robbie describes subrime mortgages.  }
 ◊;youtube[anthony-bourdain]{Anthony Bourdain explains what a CDO is.}
 
-If you want an approachable explanation of the crisis, watch the movie. If it's too much Hollywood for your taste I recommend "The Big Short: Inside the Doomsday Machine" by Michael Lewis, which the movie is based on.
+If it's too much Hollywood for your taste I recommend the book ◊link[the-big-short-book]{"The Big Short: Inside the Doomsday Machine"} by Michael Lewis, which the movie is based on. Or if you're short on time maybe ◊link[11-min]{this 11 minute video} might suffice.
 
+◊(define 11-min "https://www.youtube.com/watch?v=bx_LWm6_6tA")
+◊(define the-big-short-book "https://www.goodreads.com/book/show/26889576-the-big-short")
 ◊(define the-big-short "https://www.imdb.com/title/tt1596363/")
 ◊(define margot-robbie "https://www.youtube.com/watch?v=anSPG0TPf84")
 ◊(define anthony-bourdain "https://www.youtube.com/watch?v=kxN_qPuefrM")
@@ -87,7 +89,7 @@ The crisis spread globally and for example in only the first quarter of 2009 the
 
 ◊subhead{The bail-outs}
 
-But the crisis could've been much worse. The U.S. came close to a complete financial meltdown, but without crossing the line. Partly thanks to the bail-outs, where the Federal Reserve bailed out banks and other private companies. The extremely risky assets, which were too risky for anyone else to touch, were bought up to rescue the banks which were "too big to fail".◊sn{interconnected}
+But the crisis could've been much worse. The U.S. came close to a complete financial meltdown, but without crossing the line. Partly thanks to the bail-outs, where the Federal Reserve bailed out banks and other private companies. The extremely risky assets---too risky for anyone else to touch---were bought up to rescue the banks which were "too big to fail".◊sn{interconnected}
 
 ◊ndef["interconnected"]{
     Or perhaps a better term would be "too interconnected to fail". The biggest fear of a big bank going bankrupt is if it brings down the rest of the economy with it, which happened when Lehman Brothers failed.
@@ -96,10 +98,21 @@ But the crisis could've been much worse. The U.S. came close to a complete finan
 ◊ol{
     ◊li{Investment bank Bear Stearns for $27 billion}
     ◊li{Mortgage lenders Fannie Mae and Freddie Mac for $200 billion}
+    ◊li{Lehman Brothers were allowed to go bankrupt.
+    
+        At first the Treasury and Federal Reserve claimed they allowed Lehman to fail to send the signal that recklessly managed Wall Street firms did not all come with government guarantees. But then they changed their motives and claimed they lacked the legal authority to do so.}
     ◊li{Insurance giant American Investment Group (AIG) for $182 billion}
+    ◊li{Washington Mutual}
+    ◊li{Wachovia failed, encouraged Citigroup to buy it}
     ◊li{Bank of America Corp}
     ◊li{Citigroup Inc.}
 }
+
+In September 2008 $700 billion to buy subprime mortgage assets from banks, called TARP (Troubled Asset Relief Program). Once handed the money they abandoned the promised strategy and instead essentially gave away billions of dollars to Citigroup, Morgan Stanley, Goldman Sachs and others. For instance the $13 billion AIG owed to Goldman Sachs was paid off in full by the U.S. government.
+
+The government guaranteed $306 billion of Citigroup's assets. They didn't ask for a piece of the action, change in management or anything of importance. The $306 billion guarantee---nearly 2% of U.S. GDP, and roughly the combined budgets of the departments of Agriculture, Education, Energy, Homeland Security, Housing and Urban Development and Transportation---was presented undisguised, as a gift. No explanation was given, just that the action was taking in response to Citigroup's "declining stock price."
+
+When it was clear the TARP money wasn't enough the Fed started buying bad subprime mortgages directly from the banks. By early 2009 the risks and losses associated with more than a trillion dollars' worth of bad investments were transferred from big Wall Street firms to the U.S. taxpayer.
 
 In total the U.S. government injected $700 billion dollars into the economy, using the taxpayers money.◊sn{where-money?}
 
@@ -149,7 +162,7 @@ Which you might see as a sign that Satoshi wasn't a fan of bailing out the banks
 ◊(define times-20090103 "https://www.thetimes.co.uk/article/chancellor-alistair-darling-on-brink-of-second-bailout-for-banks-n9l382mn62h")
 
 
-◊subhead{Nothing really changed}
+◊subhead{Life is unfair}
 
 ◊qt[#:src "Bitcoin the end of money as we know it"
     #:url "https://www.imdb.com/title/tt4654844/"
@@ -159,9 +172,24 @@ Which you might see as a sign that Satoshi wasn't a fan of bailing out the banks
 
 After the dust settled it's easy to think the guilty got punished---after all the U.S. loves to dish out harsh punishments---and the system was reworked to prevent a similar crisis from ever happening again. But reality isn't a fairy tail.
 
-The bankers weren't punished for their unregulated gambling, in fact only a single U.S. banker went to jail. Instead they got bonuses and in 2010 the banks were enjoying massive profits---while regular people were still struggling without jobs and houses.
+The bankers weren't punished for their unregulated gambling or outright fraud. In fact ◊link[us-banker-jail]{only a single U.S. banker went to jail}.◊sn{iceland-jail} Instead they got bonuses and in 2010 the banks were enjoying massive profits---while regular people were still struggling without jobs and houses.
 
-Remember the $182 billion bailout of AIG? Shortly after accepting the bailout they paid out ◊strong{$165 million in bonuses} to their executives, those responsible for ◊link[aig-record-loss]{the biggest corporate loss in history}. As ◊link[obama-aig-bonuses]{president Obama asks}: "how do they justify this outrage to the taxpayers who are keeping the company afloat?". One can't help but wonder...
+◊ndef["iceland-jail"]{
+    Iceland is the only nation that actually ◊link[iceland-jail]{put top finance executives behind bars} after the 2008 crisis.
+}
+
+Remember the $182 billion AIG bailout? Shortly after accepting the bailout they paid out ◊strong{$165 million in bonuses} to their executives, those responsible for ◊link[aig-record-loss]{the biggest corporate loss in history}. As ◊link[obama-aig-bonuses]{president Obama asks}: "how do they justify this outrage to the taxpayers who are keeping the company afloat?". One can't help but wonder...
+
+I don't think there's a better example of the mindbogglingly stupid bonuses than the case of Howie Hubler, responsible for the biggest loss of a single trade in history---a staggering $9 billion. Yet when asked to resign (fired) he received $10 million.
+
+How about the other traders and the "CDO managers" who literally sold shit to their customers? They became rich too.
+
+◊(define iceland-jail "https://www.bloomberg.com/news/features/2016-03-31/welcome-to-iceland-where-bad-bankers-go-to-prison")
+◊(define us-banker-jail "https://www.nytimes.com/2014/05/04/magazine/only-one-top-banker-jail-financial-crisis.html")
+
+
+◊subhead{Nothing really changed}
+
 
 Of course there were changes made to the financial system, but the fundamental problem remain unsolved. The incentive for the banks is still to flip a coin, because if they win they win big and if they lose they get bailed out (with fat severance bonuses for the responsible).
 
