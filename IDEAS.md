@@ -383,6 +383,9 @@ https://news.ycombinator.com/item?id=11421352
     The Lehman bancruptcy signifies the start of the financial crisis. The U.S. economy was already in a rocky state
 3. The case against the FED
 4. The Big Short: Inside the Doomsday Machine
+    "How do you make poor people feel wealthy when wages are stagnant? You give them cheap loans"
+    "This wasn't just another company---this was the biggest company by far making subprime loans. And it was engaged in just blatant fraud. They should have taken the CEO out and hung him up by his fucking testicles. Instead they sold the company and the CEO made a hundred million dollars." --- Eisman
+        Comment about Household, years before the crisis
 
 # Videos
 

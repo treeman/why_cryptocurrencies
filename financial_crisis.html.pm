@@ -188,8 +188,20 @@ How about the other traders and the "CDO managers" who literally sold shit to th
 ◊(define us-banker-jail "https://www.nytimes.com/2014/05/04/magazine/only-one-top-banker-jail-financial-crisis.html")
 
 
-◊subhead{Nothing really changed}
+◊subhead{It's all about incentives}
 
+◊qt[#:src "Charlie Munger"
+    #:date "1995"]{
+    Never, ever, think about something else when you should be thinking about the power of incentives.
+}
+
+◊todo{Compare the incentives that the banks have to that of Bitcoin.}
+
+◊;If you wanted to predict how people would behave, you only have to look at their incentives.
+◊(define charlie-munger "https://www.youtube.com/watch?v=pqzcCfUglws")
+
+
+◊subhead{Nothing really changed}
 
 Of course there were changes made to the financial system, but the fundamental problem remain unsolved. The incentive for the banks is still to flip a coin, because if they win they win big and if they lose they get bailed out (with fat severance bonuses for the responsible).
 
