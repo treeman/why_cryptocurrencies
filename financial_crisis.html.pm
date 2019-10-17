@@ -1,6 +1,6 @@
 #lang pollen
 
-◊(define-meta title "The financial crisis, bad loans and bail-outs")
+◊(define-meta title "The financial crisis, bad loans and bailouts")
 ◊;(define-meta subtitle "Benefits over existing payment systems")
 ◊(define-meta updated "2019-08-30T15:47:12+02:00")
 ◊(define-meta uuid "0da3165e-e470-4143-a658-4b2858f3a148")
@@ -87,9 +87,9 @@ The crisis, which began with the collapse of the bank Lehman Brothers, issued in
 The crisis spread globally and for example in only the first quarter of 2009 the GDP declined by 14.4% in Germany, 15.2% in Japan and 9.8% in the Euro area. (TODO source)
 
 
-◊subhead{The bail-outs}
+◊subhead{The bailouts}
 
-But the crisis could've been much worse. The U.S. came close to a complete financial meltdown, but without crossing the line. Partly thanks to the bail-outs, where the Federal Reserve bailed out banks and other private companies. The extremely risky assets---too risky for anyone else to touch---were bought up to rescue the banks which were "too big to fail".◊sn{interconnected}
+But the crisis could've been much worse. The U.S. came close to a complete financial meltdown, but without crossing the line. Partly thanks to the bailouts, where the Federal Reserve bailed out banks and other private companies. The extremely risky assets---too risky for anyone else to touch---were bought up to rescue the banks which were "too big to fail".◊sn{interconnected}
 
 ◊ndef["interconnected"]{
     Or perhaps a better term would be "too interconnected to fail". The biggest fear of a big bank going bankrupt is if it brings down the rest of the economy with it, which happened when Lehman Brothers failed.
@@ -117,7 +117,7 @@ When it was clear the TARP money wasn't enough the Fed started buying bad subpri
 In total the U.S. government injected $700 billion dollars into the economy, using the taxpayers money.◊sn{where-money?}
 
 ◊ndef["where-money?"]{
-    There are many important problems a nation need to handle; health care, poverty, education, infrastructure, security and immigration; but with too little money to solve them. Yet there's almost infinity money to bail-out banks. I find it fascinating and incredibly frustrating.
+    There are many important problems a nation need to handle; health care, poverty, education, infrastructure, security and immigration; but with too little money to solve them. Yet there's almost infinity money to bailout banks. I find it fascinating and incredibly frustrating.
 }
 
 Notably Bear Stearns was bailed out while Lehman Brothers wasn't, a decision which is easy to criticise in hindsight. Furthermore the Fed, for the first time in history, took control over a private company.◊sn{fed-political}
@@ -180,7 +180,7 @@ The bankers weren't punished for their unregulated gambling or outright fraud. I
 
 Remember the $182 billion AIG bailout? Shortly after accepting the bailout they paid out ◊strong{$165 million in bonuses} to their executives, those responsible for ◊link[aig-record-loss]{the biggest corporate loss in history}. As ◊link[obama-aig-bonuses]{president Obama asks}: "how do they justify this outrage to the taxpayers who are keeping the company afloat?". One can't help but wonder...
 
-I don't think there's a better example of the mindbogglingly stupid bonuses than the case of Howie Hubler, responsible for the biggest loss of a single trade in history---a staggering $9 billion. Yet when asked to resign (fired) he received $10 million.
+Then there's the case of Howie Hubler, which to me exemplifies the mindbogglingly stupid bonuses oh so well. He was responsible for the biggest loss of a single trade in history---a staggering $9 billion---yet when asked to resign (a friendly way to get fired) he received $10 million.
 
 How about the other traders and the "CDO managers" who literally sold shit to their customers? They became rich too.
 
@@ -195,15 +195,17 @@ How about the other traders and the "CDO managers" who literally sold shit to th
     Never, ever, think about something else when you should be thinking about the power of incentives.
 }
 
-◊todo{Compare the incentives that the banks have to that of Bitcoin.}
-
 ◊;If you wanted to predict how people would behave, you only have to look at their incentives.
+◊; "The Psychology of Human Misjudegement" speech by Charlie Munger Jun 1995
 ◊(define charlie-munger "https://www.youtube.com/watch?v=pqzcCfUglws")
 
+What ◊em{really} caused the financial crisis, and made the crisis so large? It's easy to point the finger at people who borrowed money they couldn't afford, at the bankers who helped them (or tricked them) and at the ratings agencies who didn't really know what they were rating. But the greed of Wall Street shouldn't be surprising---it should instead be expected.
 
-◊subhead{Nothing really changed}
+The blame should be placed on the incentives that enabled the greed to flourish. The incentives made the ratings agencies not look too closely at the assets they were rating, otherwise the bankers would go to the other rating agency and take their money with them. The people taking loans were incentivized to loan more, since the house prices kept rising making them more money. The people giving out loans were encouraged to give out as many loans as possible, because they would get a cut for every loan they gave out.◊sn{pets}
 
-Of course there were changes made to the financial system, but the fundamental problem remain unsolved. The incentive for the banks is still to flip a coin, because if they win they win big and if they lose they get bailed out (with fat severance bonuses for the responsible).
+◊ndef["pets"]{
+    Strawberry pickers were given out million dollar loans despite having a tiny income, and without posting any collateral. Las Vegas strippers owned multiple houses and people were getting loans by writing their pet's name on the loan.
+}
 
 ◊qt[#:author "Michael Lewis"
     #:src "The Big Short: Inside the Doomsday Machine"
@@ -211,15 +213,33 @@ Of course there were changes made to the financial system, but the fundamental p
   What are the odds that people will make smart decisions about money if they don’t need to make smart decisions—if they can get rich making dumb decisions?
 }
 
-In fact they even made it worse after the crisis by passing laws to make it even easier for the Fed to step in and bailout whatever they deem "too big to fail", without the ◊em{unnecessary} overhead of going through congress.◊sn{bail-in}
+If you exploit and gamble, but instead of a prison sentence you're rewarded with a fat bonus check, you will not change your actions. In fact you'll be more likely to continue. It's exactly like a child who wants candy: if he screams and cries until he gets candy what will he learn? He'll learn that you get candy when you cry---so now he will cry to get the candy.◊sn{moral-hazard}
+
+This is why the bailouts, while helpful in the short run (the child stopped crying), made the fundamental problem that enabled the crisis worse (the child will cry more in the future). Bad behaviour by banks and the people working at banks are even more likely now since they have learned that if they fail they will just get bailed-out, and keep their bonuses. They even passed laws to make it even easier for the Federal Reserve to step in and whatever they deem "too big to fail", without the ◊em{unnecessary} overhead of going through congress.◊sn{bail-in}
+
+I find it interesting to compare the incentives for banks with the ◊link[crypto-incentives]{incentives for cryptocurrency miners}. While banks are incentivized to gamble, exploit and cheat as much they can get away with the incentives for miners are to work in the network's best interest. While incentives makes the financial industry unstable, it's what makes cryptocurrencies secure and it's really Bitcoin's big innovation.
+
+
+◊(define crypto-incentives "/how_do_cryptocurrencies_work.html#the-50%-security-assumption")
+
+◊ndef["moral-hazard"]{
+    The term ◊link[moral-hazard]{◊em{moral hazard}} is often used to describe the bailouts. It refers to someone taking risks that others will pay for. 
+
+    "Heads I win, tails I get bailed-out."
+}
+
+◊(define moral-hazard "https://www.thebalance.com/moral-hazard-what-it-is-and-how-it-works-315515")
+
 
 ◊ndef["bail-in"]{
     Instead of bailouts banks can be rescued by ◊link[bail-in]{◊em{bail-ins}}. Instead of using money from taxpayers it uses the money from unsecured creditors, depositors and bondholders. In English it means the banks can take money from their customers to save themselves. The banks can also be placed under direct federal control.
 
     This should protect taxpayers, which is great, but it doesn't change the incentives. The banks can still play fast and lose and be saved by someone else.
 }
-
 ◊(define bail-in "https://www.investopedia.com/articles/markets-economy/090716/why-bank-bailins-will-be-new-bailouts.asp")
+
+
+◊subhead{Will history repeat itself?}
 
 In 2015, several banks began selling billions in something called a "bespoke tranche opportunity" which ◊link[bespoke-tranche-opportunity]{is just another name for a CDO}. The banks are also ◊link[warming-up-mortgage-bonds]{warming up} to the same mortgage bonds that burned them in 2008, while housing prices are going through the roof and people are borrowing like mad. History doesn't repeat itself, but it rhymes awfully well.
 
