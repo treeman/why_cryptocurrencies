@@ -2,7 +2,7 @@
 
 ◊(define-meta title "How do cryptocurrencies work?")
 ◊(define-meta subtitle "Decentralized consensus")
-◊(define-meta updated "2019-04-03T20:05:00+02:00")
+◊(define-meta updated "2019-10-17T08:47:36+02:00")
 ◊(define-meta uuid "320751d9-9a28-4e91-9469-b44b83e12475")
 
 As stated in the introduction the focus isn't on technical details, but it's a hard balance to make between keeping it simple and explaining how cryptocurrencies work. If this chapter is too technical you can safely skip to the ◊link[next-chapter]{next chapter} or just read ◊link[summary]{the summary}, it's not required knowledge.
@@ -394,27 +394,17 @@ This touches on the immutability of the blockchain. As long as more than 50% of 
 
 How secure is Bitcoin, really? What do we need to pull off a 51% attack?
 
-Here's some quick napkin math to estimate the cost to achieve 51% of mining power:
+Here's some quick napkin math to estimate the cost for 51% mining power:◊sn{date}
+
+◊ndef["date"]{
+    I made the estimation in April 2019 but the math changes quickly. In October the same year the hash rate has more than doubled and new more efficient miners have been released.
+}
 
 ◊; Couldn't really be bothered to update the existing string to table to support x-expressions...
 ◊table-body{
     ◊tr{◊td{◊link[btc-hashrate]{Total Bitcoin hash rate}}   ◊td{44,078,986 TH/s}}
     ◊tr{◊td{◊link[s9-hashrate]{Antminer S9i hash rate}}     ◊td{14 TH/s (+-5%)}}
     ◊tr{◊td{◊link[s9-cost]{Antminer S9i cost}}              ◊td{$400}}
-
-Core destruction program TRX:
-* Suspended Crunch (first knees to chest then pike)
-Pendulum (first regular, then knees to elbows)
-Standing body crunch ?
-Standing oblique twist ?
-Oblique Suspended crunch ?
-Suspended alternating crunch ?
-Suspended plan
-Good for back:
-* Low ro
-Extra:
-Hamstring runner
-Biceps/triceps
     ◊tr{◊td{Number of S9i to cover the whole network}       ◊td{3,148,499}}
     ◊tr{◊td{Total network miner cost}                       ◊td{$1,259,399,600}}
 }
