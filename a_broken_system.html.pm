@@ -5,6 +5,11 @@
 ◊(define-meta updated "2019-10-01T08:35:32+02:00")
 ◊(define-meta uuid "b09419e3-0f3d-4473-b458-d0dad01ed4b8")
 
+◊;More money than anyone imagined: an explanation for why the bubble never burst 
+◊; See the comments for some discussion about the Fed
+◊;<https://news.ycombinator.com/item?id=20535390>
+
+
 "So you think that money is the root of all evil. Have you ever asked what is the root of all money?" - Ayn Rand
 
 "It doesn't matter if you're black or white... the only color that really matters is green." - Family Guy

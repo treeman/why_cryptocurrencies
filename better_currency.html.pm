@@ -40,3 +40,14 @@ In this section we'll focus on benefits of using cryptocurrencies as money and c
 
 ◊; Modern Monetary Theory (MMT)
 ◊; https://www.taxjustice.net/2019/03/05/the-magic-money-tree-from-modern-monetary-theory-to-modern-tax-theory/
+
+◊; Cashing In: How to Make Negative Interest Rates Work 
+◊; <https://news.ycombinator.com/item?id=20079686>
+
+◊; Germany in Uproar as Negative Rates Threaten Saving Obsession 
+◊; <https://news.ycombinator.com/item?id=20792765>
+
+◊; 33 AD example
+◊; https://www.businessinsider.com/qe-in-the-financial-crisis-of-33-ad-2013-10?r=US&IR=T&IR=T
+
+◊; https://fortune.com/2019/09/26/the-feds-repo-market-bailout-is-a-sign-of-deeper-problems-that-are-getting-worse-over-time/
