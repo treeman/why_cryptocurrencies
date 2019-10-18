@@ -245,7 +245,17 @@ I find it interesting to compare the incentives for banks with the ◊link[crypt
 
 ◊subhead{Will history repeat itself?}
 
-In 2015, several banks began selling billions in something called a "bespoke tranche opportunity" which ◊link[bespoke-tranche-opportunity]{is just another name for a CDO}. The banks are also ◊link[warming-up-mortgage-bonds]{warming up} to the same mortgage bonds that burned them in 2008, while housing prices are going through the roof and people are borrowing like mad. History doesn't repeat itself, but it rhymes awfully well.
+The 2008 financial crisis was a combination of a number of different factors working together. If only one were removed, for example if bankers didn't give out loans to anyone and their pets or if the ratings agencies would rate the assets correctly, then the crisis would never have grown so big. And there were changes to the financial system after crisis which should prevent a repeat of the crisis.
+
+But as I said previously, the core incentives problem is unsolved and even made worse. There won't be an exact repeat of the 2008 crisis, but we might see similar problems resurface in the future.
+
+For example in 2015, several banks began selling billions in something called a "bespoke tranche opportunity", which ◊link[bespoke-tranche-opportunity]{is just another name for a CDO}. The banks are also ◊link[warming-up-mortgage-bonds]{warming up to the same mortgage bonds} that burned them in 2008, while housing prices are going through the roof and people are borrowing like mad.◊sn{house-prices}
+
+◊ndef["house-prices"]{
+    With a feeling of déjà vu the house prices have been rising globally, especially in cities, for many years now. In Sweden it's almost impossible for kids to buy their first house or apartment in a city unless they get help from their parents.
+}
+
+History doesn't repeat itself, but it rhymes awfully well.
 
 ◊(define aig-record-loss "https://www.nytimes.com/2009/03/03/business/03aig.html")
 ◊(define obama-aig-bonuses "http://edition.cnn.com/2009/POLITICS/03/16/AIG.bonuses/")
