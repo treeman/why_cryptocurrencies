@@ -100,38 +100,31 @@ But the crisis could've been much worse. The U.S. came close to a complete finan
     Or perhaps a better term would be "too interconnected to fail". The biggest fear of a big bank going bankrupt is if it brings down the rest of the economy with it, which happened when Lehman Brothers failed.
 }
 
-◊ol{
-    ◊li{Investment bank Bear Stearns for $27 billion}
-    ◊li{Mortgage lenders Fannie Mae and Freddie Mac for $200 billion}
-    ◊li{Lehman Brothers were allowed to go bankrupt.
-    
-        At first the Treasury and Federal Reserve claimed they allowed Lehman to fail to send the signal that recklessly managed Wall Street firms did not all come with government guarantees. But then they changed their motives and claimed they lacked the legal authority to do so.}
-    ◊li{Insurance giant American Investment Group (AIG) for $182 billion}
-    ◊li{Washington Mutual}
-    ◊li{Wachovia failed, encouraged Citigroup to buy it}
-    ◊li{Bank of America Corp}
-    ◊li{Citigroup Inc.}
+The bailouts started when the government guaranteed assets of the investment bank Bear Stearns and encouraged J.P. Morgan to buy for a knockdown price. Then the mortgage lenders Fannie Mae and Freddie Mac collapsed, and rescued by being nationalized receiving a $200 billion government investment.
+
+While the investment bank Bear Stearns was saved, the investment bank Lehman Brothers was allowed to go bankrupt. At first the Treasury and Federal Reserve claimed they allowed Lehman to fail to send the signal that recklessly managed Wall Street firms did not all come with government guarantees. But when they saw the fatal effects the bank's collapse had on the economy they changed their tune and claimed they lacked the legal authority to do so.
+
+What followed was massive new efforts to bailout banks and others. For example the Federal Reserve, for the first time in history, took control over the private company American Investment Group (AIG) coupled with a $182 billion loan. I could never understand how they were allowed to do this, but not bailout Lehman Brothers.◊sn{fed-political}
+
+In September 2008 U.S. Treasury Secretary Henry Paulson persuaded the U.S. Congress for $700 billion to buy subprime mortgage assets from banks.◊sn{tarp} But once handed the money they abandoned the promised strategy and instead essentially gave away billions of dollars to Citigroup, Morgan Stanley, Goldman Sachs and others. For instance the $13 billion AIG owed to Goldman Sachs was paid off in full by the U.S. government.
+
+◊ndef["tarp"]{
+    This is known as the Troubled Asset Relief Program, or TARP.
 }
 
-In September 2008 $700 billion to buy subprime mortgage assets from banks, called TARP (Troubled Asset Relief Program). Once handed the money they abandoned the promised strategy and instead essentially gave away billions of dollars to Citigroup, Morgan Stanley, Goldman Sachs and others. For instance the $13 billion AIG owed to Goldman Sachs was paid off in full by the U.S. government.
+The government guaranteed $306 billion of Citigroup's assets. They didn't ask for a piece of the action, change in management or anything of importance. The $306 billion guarantee---nearly 2% of U.S. GDP, and roughly the combined budgets of the departments of Agriculture, Education, Energy, Homeland Security, Housing and Urban Development and Transportation---was presented undisguised, as a gift. No explanation was given, just that the action was taking in response to Citigroup's "declining stock price."◊sn{where-money?}
 
-The government guaranteed $306 billion of Citigroup's assets. They didn't ask for a piece of the action, change in management or anything of importance. The $306 billion guarantee---nearly 2% of U.S. GDP, and roughly the combined budgets of the departments of Agriculture, Education, Energy, Homeland Security, Housing and Urban Development and Transportation---was presented undisguised, as a gift. No explanation was given, just that the action was taking in response to Citigroup's "declining stock price."
-
-When it was clear the TARP money wasn't enough the Federal Reserve started buying bad subprime mortgages directly from the banks. By early 2009 the risks and losses associated with more than a trillion dollars' worth of bad investments were transferred from big Wall Street firms to the U.S. taxpayer.
-
-In total the U.S. government injected $700 billion dollars into the economy, using the taxpayers money.◊sn{where-money?}
+When it was clear the money wasn't enough the Federal Reserve started buying bad subprime mortgages directly from the banks. By early 2009 the tax payers were stuck with more than a trillion dollars' risky assets and, if things went sideways, would end up eating a huge loss while the banks were in the clear.
 
 ◊ndef["where-money?"]{
-    There are many important problems a nation need to handle; health care, poverty, education, infrastructure, security and immigration; but with too little money to solve them. Yet there's almost infinity money to bailout banks. I find it fascinating and incredibly frustrating.
+    There are many important problems a nation need to handle; health care, poverty, education, infrastructure, security and immigration; but with too little money to solve them. Yet there's almost infinity money for the banks. I find it fascinating and incredibly frustrating.
 }
-
-Notably Bear Stearns was bailed out while Lehman Brothers wasn't, a decision which is easy to criticise in hindsight. Furthermore the Federal Reserve for the first time in history, took control over a private company.◊sn{fed-political}
 
 ◊ndef["fed-political"]{
     The Federal Reserve is supposed to be completely politically independent. But with their actions during the crisis, can they still claim to be independent?
 }
 
-In practice this meant that the tax payers were stuck paying for risky assets and, if things went sideways, would end up eating a huge loss. It's like betting all on red on a roulette wheel---you can win big or lose a lot. In this case American taxpayers got a good outcome, they even made money on the bailouts. The Irish taxpayers ◊link[irish-bailout]{weren't so lucky}.◊sn{managing-risk}
+For the taxpayers it's like betting all on red on a roulette wheel---you either win big or lose big. In this case American taxpayers got a good outcome, they even made money on the bailouts. The Irish taxpayers for example ◊link[irish-bailout]{weren't so lucky}.◊sn{managing-risk}
 
 ◊ndef["managing-risk"]{
     Investments come with a risk--reward trade-off. If you want the potential for higher return then you need to take a larger risk and if you want lower risk you'll sacrifice potential gains. In this case the bailouts forced a very large risk on the taxpayers.
@@ -160,7 +153,7 @@ Satoshi refers to ◊link[times-img]{The Times issued the 3rd of January, 2009} 
     You can ◊link[times-20090103]{read the issue online}, although the title is different compared to the printed copy.
 }
 
-Which you might see as a sign that Satoshi wasn't a fan of bailing out the banks (if developing an alternative to the banking system wasn't sign enough).
+Which you might see as a sign that Satoshi wasn't a fan of bailing out the banks (if developing an alternative to the banking system wasn't enough of a hint).
 
 ◊(define embedding-data "/extensions.html#embedding-data")
 ◊(define times-img "https://imgur.com/pGYXHJh")
@@ -175,7 +168,7 @@ Which you might see as a sign that Satoshi wasn't a fan of bailing out the banks
     In medieval Europe, a banker who couldn't pay depositors was hanged. Today, that same banker would get bailed out, paid bonuses and enjoy some tax benefits, too.
 }
 
-After the dust settled it's easy to think the guilty got punished---after all the U.S. loves to dish out harsh punishments---and the system was reworked to prevent a similar crisis from ever happening again. But reality isn't a fairy tail.
+After the dust settled it's easy to think the guilty got punished---after all the U.S. loves to dish out harsh punishments---and the system was reworked to prevent a similar crisis from ever happening again. But reality is often disappointing.
 
 The bankers weren't punished for their unregulated gambling or outright fraud. In fact ◊link[us-banker-jail]{only a single U.S. banker went to jail}.◊sn{iceland-jail} Instead they got bonuses and in 2010 the banks were enjoying massive profits---while regular people were still struggling without jobs and houses.
 
@@ -275,7 +268,7 @@ But the incentives would be different. Banks can still use fractional banking (c
     Of course they don't actually print physical bills worth billions of dollars, they just move digital numbers in some spreadsheets. The effect is the same.
 }
 
-Therefore the "heads I win, tails I get bailed-out" incentives would change to the healthy "heads I win, tails I lose". This would force banks to be more careful with their risk-taking, and if they overstep their bounds they fail. This might have bad short-term effects but would be more robust and healthy long-term.
+Therefore the "heads I win, tails I get bailed-out" incentives would change to "heads I win, tails I lose". This would force banks to be more careful with their risk-taking, and if they overstep their bounds they fail. This might have bad short-term effects but would be more robust and healthy long-term.
 
 Now you might say that we can solve this problem in another way---and you might be right. But as I'll go into in the ◊link[broken-system]{next chapter} there are more systematic problems.
 
