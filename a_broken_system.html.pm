@@ -5,20 +5,22 @@
 ◊(define-meta updated "2019-10-01T08:35:32+02:00")
 ◊(define-meta uuid "b09419e3-0f3d-4473-b458-d0dad01ed4b8")
 
+◊epigraph{
+  ◊qt[#:author "Ayn Rand"]{
+    So you think that money is the root of all evil. Have you ever asked what is the root of all money?
+  }
+}
+
 ◊;More money than anyone imagined: an explanation for why the bubble never burst 
 ◊; See the comments for some discussion about the Fed
 ◊;<https://news.ycombinator.com/item?id=20535390>
 
 
-"So you think that money is the root of all evil. Have you ever asked what is the root of all money?" - Ayn Rand
-
-"It doesn't matter if you're black or white... the only color that really matters is green." - Family Guy
-
 ◊todo{IMG a dude on a stick, to represent an unstable system. And a bunch of dudes running around to make it not fall over.}
 
 In the chapter ◊link[what-is-money]{What is money?} I tried to give some historical examples of money and list some properties that good money should have. Unfortunately it's not enough to understand the current economic system, which is a completely different beast.
 
-It's a system that based on money that isn't sound---which doesn't fulfill the properties good money should have. I'll even argue there's something fundamentally broken with the economic system we use today.
+It's a system that based on money that isn't sound---the money doesn't fulfill the properties good money should have. I'll even argue there's something fundamentally broken with the economic system we use today.
 
 ◊(define what-is-money "/what_is_money.html")
 
@@ -70,15 +72,17 @@ Counterfeiting means everyones savings, the "old" money, will be worth less. Thi
 
 ◊todo{GRAPH of inflation}
 
-Counterfeiting also means redistributing wealth from everyone to the counterfeiter, and to a lesser extent people the counterfeiter buys from. Even though nobody's stealing your money, the effect is the same: your wealth will decrease.
+Counterfeiting also means redistributing wealth from everyone to the counterfeiter, and to a lesser extent people the counterfeiter buys from. Even though nobody's stealing your money, the effect is the same: your wealth relative to others will decrease.
 
 
 ◊ndef["magic-printer"]{
-    Maybe he's got a magic printer which can print perfect copies of a dollar bill. Normally printers even refuse to print images looking like a dollar.
+    Maybe he's got a magic printer which can print perfect copies of a dollar bill. Normally printers even ◊link[print-money]{refuse to print images} looking like a dollar or other major currencies.
 }
 
+◊(define print-money "https://murdoch.is/projects/currency/")
+
 ◊ndef["case-against-fed"]{
-    This example was given by Murray N. Rothbard in "The Case Against the Fed", which I liked so much I reused it here using my own words.
+    This example was given by Murray N. Rothbard in “◊link[case-against-fed-book]{The Case Against the Fed}”, which I liked so much I reused it here using my own words.
 }
 
 
@@ -143,13 +147,8 @@ The system works as long as people just keep their money at the bank, and only o
 ◊(define capital-req-sweden "https://www.fi.se/contentassets/67c0bdcc4ddf4d1dbea616cb48fb1f01/kapitalkrav-sv-banker-2019-kv2_eng.pdf")
 
 
-◊subhead{Broken incentives}
+◊subhead{Lender of last resort}
 
-◊qt[#:author "Michael Lewis"
-    #:src "The Big Short: Inside the Doomsday Machine "
-    #:quote-src #t]{
-    What are the odds that people will make smart decisions about money if they don’t need to make smart decisions---if they can get rich making dumb decisions?
-}
 
 ◊subhead{A private entity at the root}
 
@@ -162,6 +161,13 @@ The Fed is not a government agency. It's a private entity and its shareholders a
 Nobody really knows how many dollars exist.  Nobody knows how much banks are printing to pad their own pockets.
 
 
+◊subhead{Growing inequality}
+
+◊qt[#:src "Family Guy"]{
+    It doesn't matter if you're black or white... the only color that really matters is green.
+}
+
+
 ◊subhead{A mountain of debt}
 
 ◊subhead{Booms and busts}
@@ -170,15 +176,6 @@ Nobody really knows how many dollars exist.  Nobody knows how much banks are pri
 
 ◊subhead{The case for sound money}
 
-◊ol{
-    ◊li{Counterfeiting and how it redistributes money.}
-    ◊li{Inflation is legal counterfeiting.}
-    ◊li{Fractional banking.}
-    ◊li{Booms and busts.}
-    ◊li{Hyperinflation.}
-    ◊li{How the Fed tried to increase the rates, and the market crashed.}
-    ◊li{With cryptocurrencies you don't play with the money supply.}
-}
 
 Hyperinflation and Trust in Ancient Rome 
 https://news.ycombinator.com/item?id=21010309
@@ -189,3 +186,4 @@ https://www.infowars.com/does-the-boom-bust-cycle-ever-result-from-commodity-mon
 https://mises.org/library/boom-and-bust-0
 
 
+◊(define case-against-fed-book "https://www.goodreads.com/book/show/81976.The_Case_Against_the_Fed")
