@@ -25,20 +25,18 @@ The financial crisis was caused by too many people borrowing too much money. The
 
 Of course this explanation is too simplified. There were for example two bubbles that popped: the housing bubble and the much bigger bond bubble. The complex financial products (that nobody really understood) appeared to be low-risk but were high-risk. And of course the "heads I win, tails you lose" incentives at play all the way from top to bottom in the system.◊sn{villains}
 
-A lot of ink has been spent on articles, books and movies explaining the events better and in far more detail than I could hope to do. I particularly like the explanations given in the Oscar-winning movie ◊link[the-big-short]{The Big Short (2015)}:
+A lot of ink has been spent on articles, books and movies explaining the events better and in far more detail than I could hope to do. I particularly like the explanations given in the Oscar-winning movie ◊link[the-big-short]{The Big Short (2015)}. Just look at how they describe subprime mortgages and CDOs:
 
-◊qt[#:author "Margot Robbie"
-    #:src "The Big Short"
-    #:quote-src #t
+◊qt[#:author "Margot Robbie, “The Big Short”"
+    #:src "(youtube)"
     #:url margot-robbie]{
   Basically, Lewis Ranieri's mortgage bonds were amazingly profitable for the big banks. They made billions and billions on their 2% fee they got for selling each of these bonds. But then, they started running out of mortgages to put in them. After all, there are only so many homes and so many people with good enough jobs to buy them, right?
 
   So, the banks started filling these bonds with riskier and riskier mortgages. That way, they can keep that profit machine churning, alright? By the way, these risky mortgages are called "subprime." So, whenever you hear the word "subprime," think "shit."
 }
 
-◊qt[#:author "Anthony Bourdain"
-    #:src "The Big Short"
-    #:quote-src #t
+◊qt[#:author "Anthony Bourdain, “The Big Short”"
+    #:src "(youtube)"
     #:url anthony-bourdain]{
   OK, I'm a chef on a Sunday afternoon, setting the menu at a big restaurant. I ordered my fish on Friday, which is the mortgage bond that Michael Burry shorted. But some of the fresh fish doesn't sell. I don't know why. Maybe it just came out halibut has the intelligence of a dolphin.
 
@@ -48,7 +46,7 @@ A lot of ink has been spent on articles, books and movies explaining the events 
 ◊;youtube[margot-robbie]{ Margot Robbie describes subrime mortgages.  }
 ◊;youtube[anthony-bourdain]{Anthony Bourdain explains what a CDO is.}
 
-If it's too much Hollywood for your taste I recommend the book ◊link[the-big-short-book]{"The Big Short: Inside the Doomsday Machine"} by Michael Lewis, which the movie is based on. Or if you're short on time maybe ◊link[11-min]{this 11 minute video} might suffice.
+If it's too much Hollywood for your taste I recommend the book the movie is based on: ◊link[the-big-short-book]{"The Big Short: Inside the Doomsday Machine"} by Michael Lewis. Or if you're short on time maybe ◊link[11-min]{this 11 minute video} might suffice.
 
 ◊(define 11-min "https://www.youtube.com/watch?v=bx_LWm6_6tA")
 ◊(define the-big-short-book "https://www.goodreads.com/book/show/26889576-the-big-short")
@@ -68,13 +66,13 @@ If it's too much Hollywood for your taste I recommend the book ◊link[the-big-s
     6. Overrated rating agencies
     7. Crazy compensation schemes
 
-    He does a good job describing the background of the crisis, although he's been criticised as being too positive towards the actions of the Fed and the politicians.
+    He does a good job describing the background of the crisis, although he's been criticised as being too positive towards the actions of the Federal Reserve and the politicians.
 }
 
 
 ◊subhead{The effects of the crisis}
 
-The crisis, which began with the collapse of the bank Lehman Brothers, issued in the ◊link[great-recession]{Great Recession}. In the U.S. alone the crisis meant $18 trillion dollars disappeared, millions of jobs were lost and more than a million people lost their homes.◊sn{music-stopped}
+According to Alan S. Blinder the crisis began with the collapse of the bank Lehman Brothers and issued in the ◊link[great-recession]{Great Recession}. In the U.S. alone the crisis meant ◊nbsp{$18 trillion} dollars disappeared, millions of jobs were lost and more than a million people lost their homes.
 
 ◊ndef["music-stopped"]{
     "After the Music Stopped" Alan S. Blinder
@@ -83,8 +81,15 @@ The crisis, which began with the collapse of the bank Lehman Brothers, issued in
 ◊(define great-recession "https://en.wikipedia.org/wiki/Great_Recession")
 
 ◊todo{IMG of the GDP growth rates}
+◊; https://tradingeconomics.com/united-states/gdp-growth
 
-The crisis spread globally and for example in only the first quarter of 2009 the GDP declined by 14.4% in Germany, 15.2% in Japan and 9.8% in the Euro area. (TODO source)
+Although the crisis originated in the U.S. the crisis spread globally.◊sn{global-buys} For example in only the first quarter of 2009 the GDP declined by 14.4% in Germany, 15.2% in Japan and 9.8% in the Euro area. There are many details to dig in to here, but I'm content with just noting that the crisis was indeed a global disaster.
+
+◊ndef["global-buys"]{
+    The crisis was able to spread because bankers all over the world bought these shitty assets that later collapsed to nothing. Banks were simply too interconnected and had to much risk, and when some banks started having trouble they all were in trouble.
+}
+
+◊todo{Source for GDP claims}
 
 
 ◊subhead{The bailouts}
@@ -112,7 +117,7 @@ In September 2008 $700 billion to buy subprime mortgage assets from banks, calle
 
 The government guaranteed $306 billion of Citigroup's assets. They didn't ask for a piece of the action, change in management or anything of importance. The $306 billion guarantee---nearly 2% of U.S. GDP, and roughly the combined budgets of the departments of Agriculture, Education, Energy, Homeland Security, Housing and Urban Development and Transportation---was presented undisguised, as a gift. No explanation was given, just that the action was taking in response to Citigroup's "declining stock price."
 
-When it was clear the TARP money wasn't enough the Fed started buying bad subprime mortgages directly from the banks. By early 2009 the risks and losses associated with more than a trillion dollars' worth of bad investments were transferred from big Wall Street firms to the U.S. taxpayer.
+When it was clear the TARP money wasn't enough the Federal Reserve started buying bad subprime mortgages directly from the banks. By early 2009 the risks and losses associated with more than a trillion dollars' worth of bad investments were transferred from big Wall Street firms to the U.S. taxpayer.
 
 In total the U.S. government injected $700 billion dollars into the economy, using the taxpayers money.◊sn{where-money?}
 
@@ -120,10 +125,10 @@ In total the U.S. government injected $700 billion dollars into the economy, usi
     There are many important problems a nation need to handle; health care, poverty, education, infrastructure, security and immigration; but with too little money to solve them. Yet there's almost infinity money to bailout banks. I find it fascinating and incredibly frustrating.
 }
 
-Notably Bear Stearns was bailed out while Lehman Brothers wasn't, a decision which is easy to criticise in hindsight. Furthermore the Fed, for the first time in history, took control over a private company.◊sn{fed-political}
+Notably Bear Stearns was bailed out while Lehman Brothers wasn't, a decision which is easy to criticise in hindsight. Furthermore the Federal Reserve for the first time in history, took control over a private company.◊sn{fed-political}
 
 ◊ndef["fed-political"]{
-    The Fed is supposed to be completely politically independent. But with their actions during the crisis, can they still claim to be independent?
+    The Federal Reserve is supposed to be completely politically independent. But with their actions during the crisis, can they still claim to be independent?
 }
 
 In practice this meant that the tax payers were stuck paying for risky assets and, if things went sideways, would end up eating a huge loss. It's like betting all on red on a roulette wheel---you can win big or lose a lot. In this case American taxpayers got a good outcome, they even made money on the bailouts. The Irish taxpayers ◊link[irish-bailout]{weren't so lucky}.◊sn{managing-risk}
@@ -178,11 +183,17 @@ The bankers weren't punished for their unregulated gambling or outright fraud. I
     Iceland is the only nation that actually ◊link[iceland-jail]{put top finance executives behind bars} after the 2008 crisis.
 }
 
-Remember the $182 billion AIG bailout? Shortly after accepting the bailout they paid out ◊strong{$165 million in bonuses} to their executives, those responsible for ◊link[aig-record-loss]{the biggest corporate loss in history}. As ◊link[obama-aig-bonuses]{president Obama asks}: "how do they justify this outrage to the taxpayers who are keeping the company afloat?". One can't help but wonder...
+Remember the $182 billion AIG bailout? Shortly after accepting the bailout they paid out ◊strong{$165 million in bonuses} to their executives, those responsible for ◊link[aig-record-loss]{the biggest corporate loss in history}. As ◊link[obama-aig-bonuses]{president Obama asks}: “how do they justify this outrage to the taxpayers who are keeping the company afloat?”. One can't help but wonder...
 
 Then there's the case of Howie Hubler, which to me exemplifies the mindbogglingly stupid bonuses oh so well. He was responsible for the biggest loss of a single trade in history---a staggering $9 billion---yet when asked to resign (a friendly way to get fired) he received $10 million.
 
-How about the other traders and the "CDO managers" who literally sold shit to their customers? They became rich too.
+How about the other traders and the "CDO managers" who literally sold shit to their customers? They became rich too.◊sn{be-banker?}
+
+◊ndef["be-banker?"]{
+    I can't help but regret my life choices here. Bankers seem to have a pretty sweet deal---you'll get rich even if you have no idea what you're doing!
+
+    Well, I can try to take comfort that I didn't sell out my morality.
+}
 
 ◊(define iceland-jail "https://www.bloomberg.com/news/features/2016-03-31/welcome-to-iceland-where-bad-bankers-go-to-prison")
 ◊(define us-banker-jail "https://www.nytimes.com/2014/05/04/magazine/only-one-top-banker-jail-financial-crisis.html")
@@ -217,7 +228,7 @@ If you exploit and gamble, but instead of a prison sentence you're rewarded with
 
 This is why the bailouts, while helpful in the short run (the child stopped crying), made the fundamental problem that enabled the crisis worse (the child will cry more in the future). Bad behaviour by banks and the people working at banks are even more likely now since they have learned that if they fail they will just get bailed-out, and keep their bonuses. They even passed laws to make it even easier for the Federal Reserve to step in and whatever they deem "too big to fail", without the ◊em{unnecessary} overhead of going through congress.◊sn{bail-in}
 
-I find it interesting to compare the incentives for banks with the ◊link[crypto-incentives]{incentives for cryptocurrency miners}. While banks are incentivized to gamble, exploit and cheat as much they can get away with the incentives for miners are to work in the network's best interest. While incentives makes the financial industry unstable, it's what makes cryptocurrencies secure and it's really Bitcoin's big innovation.
+I find it interesting to compare the incentives for banks with the ◊link[crypto-incentives]{incentives for cryptocurrency miners}. While banks are incentivized to gamble, exploit and cheat as much they can get away with the incentives for miners are to work in the network's best interest. While incentives makes the financial industry unstable, it's what makes cryptocurrencies secure and that's Bitcoin's real innovation.
 
 
 ◊(define crypto-incentives "/how_do_cryptocurrencies_work.html#the-50%-security-assumption")
@@ -258,7 +269,7 @@ With ◊em{sound money} nobody can manipulate the money supply. For example fiat
 
 Honestly, probably not. The housing and bond bubble might still have happened as the banks can still create mortgage backed securities, CDOs and other complex derivatives. Sound money cannot prevent anyone from creating and selling shit.
 
-But the incentives would be different. Banks can still use fractional banking (create IOUs and inflate the money supply) but if they fail there's nobody to print money for them to bail them out. The bailouts in 2008--2009 were only possible because the Fed has the ability to print as much money as they want.◊sn{print-digital} There's no upper limit to the size of the bailout---they can always conjure enough. Not so with sound money.
+But the incentives would be different. Banks can still use fractional banking (create IOUs and inflate the money supply) but if they fail there's nobody to print money for them to bail them out. The bailouts in 2008--2009 were only possible because the Federal Reserve has the ability to print as much money as they want.◊sn{print-digital} There's no upper limit to the size of the bailout---they can always conjure enough. Not so with sound money.
 
 ◊ndef["print-digital"]{
     Of course they don't actually print physical bills worth billions of dollars, they just move digital numbers in some spreadsheets. The effect is the same.
