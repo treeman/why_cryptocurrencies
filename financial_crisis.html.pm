@@ -13,7 +13,7 @@
   }
 }
 
-During 2007--2008 the world experienced the biggest financial crisis since the 1930s ◊link[great-depression]{Great Depression}, often referred to as the ◊link[2008-crisis]{2008 financial crisis}. I'll try to give an condensed version of the crisis and how it relates to sound money.
+During 2007--2008 the world experienced the biggest financial crisis since the 1930s ◊link[great-depression]{Great Depression}, often referred to as the ◊link[2008-crisis]{2008 financial crisis}. I'll try to give an condensed version of the crisis and how it may relate to sound money.
 
 ◊(define great-depression "https://en.wikipedia.org/wiki/Great_Depression")
 ◊(define 2008-crisis "https://en.wikipedia.org/wiki/Financial_crisis_of_2007%E2%80%932008")
@@ -21,11 +21,11 @@ During 2007--2008 the world experienced the biggest financial crisis since the 1
 
 ◊subhead{What caused the 2008 financial crisis?}
 
-The financial crisis was caused by too many people borrowing too much money. The banks gladly helped them and repackaged the bad loans and sold them to someone else, for a nice profit. When there weren't enough loans the banks conjured new ones. This eventually blew up and brought the global economy to it's knees.
+The financial crisis was caused by too many people borrowing too much money. The banks were happy to help and repackaged the bad loans and sold them to someone else, for a nice profit. When there weren't enough loans the clever banks conjured new ones, keeping the money machine rolling. This eventually blew up and brought the global economy to it's knees.
 
-Of course this explanation is too simplified. There were for example two bubbles that popped: the housing bubble and the much bigger bond bubble. The complex financial products (that nobody really understood) appeared to be low-risk but were high-risk. And of course the "heads I win, tails you lose" incentives at play all the way from top to bottom in the system.◊sn{villains}
+This explanation is naturally very simplified. There were for example two bubbles that popped: the housing bubble and the much bigger bond bubble. The complex financial products (that nobody really understood) appeared to be low-risk but were high-risk. And of course the "heads I win, tails you lose" incentives at play all the way from top to bottom in the system.◊sn{villains}
 
-A lot of ink has been spent on articles, books and movies explaining the events better and in far more detail than I could hope to do. I particularly like the explanations given in the Oscar-winning movie ◊link[the-big-short]{The Big Short (2015)}. Just look at how they describe subprime mortgages and CDOs:
+A lot of ink has been spent on articles, books and movies explaining the events better and in far more detail than I could hope to do. I particularly like the explanations given in the Oscar-winning movie ◊link[the-big-short]{The Big Short (2016)}. Just look at how they describe subprime mortgages and CDOs:
 
 ◊qt[#:author "Margot Robbie, “The Big Short”"
     #:src "(youtube)"
@@ -46,7 +46,7 @@ A lot of ink has been spent on articles, books and movies explaining the events 
 ◊;youtube[margot-robbie]{ Margot Robbie describes subrime mortgages.  }
 ◊;youtube[anthony-bourdain]{Anthony Bourdain explains what a CDO is.}
 
-If it's too much Hollywood for your taste I recommend the book the movie is based on:  “◊link[the-big-short-book]{The Big Short: Inside the Doomsday Machine}” by Michael Lewis. Or if you're short on time maybe ◊link[11-min]{this 11 minute video} might suffice.
+A pitch of humor sure makes for memorable explanations. But if it's too much Hollywood for your taste I recommend the book the movie is based on:  “◊link[the-big-short-book]{The Big Short: Inside the Doomsday Machine}” by Michael Lewis. Or if you're short on time maybe ◊link[11-min]{this 11 minute video} might suffice.
 
 ◊(define 11-min "https://www.youtube.com/watch?v=bx_LWm6_6tA")
 ◊(define the-big-short "https://www.imdb.com/title/tt1596363/")
@@ -75,11 +75,14 @@ The crisis began with the collapse of the bank Lehman Brothers and issued in the
 
 ◊(define great-recession "https://en.wikipedia.org/wiki/Great_Recession")
 
-◊todo{IMG of the GDP growth rates}
-◊; https://tradingeconomics.com/united-states/gdp-growth
+◊img[#:src "images/us-gdp.svg" #:link #t]{
+    ◊link[us-gdp]{United States GDP growth rate} surrounding the years of the financial crisis.  
+    It bottomed out at -8.4% the fourth quarter of 2008.
+}
 
-Although the crisis originated in the U.S. the crisis spread globally.◊sn{global-buys} For example in only the first quarter of 2009 the GDP rate was ◊link[germany-gdp]{-4.7% in Germany}, ◊link[japan-gdp]{-4.8% in Japan} and ◊link[euro-gdp]{-3% in the Euro area}. There are many details to dig into here, such as unemployment rate or stock markets, but I'm content with just noting that the crisis was indeed a global disaster.
+Although the crisis originated in the U.S. the crisis spread globally.◊sn{global-buys} For example in only the first quarter of 2009 the GDP rate was -4.7% ◊link[germany-gdp]{in Germany}, -4.8% ◊link[japan-gdp]{in Japan} and -3% ◊link[euro-gdp]{in the Euro area}. There are many details to dig into here, such as unemployment rate or stock market valuations, but I'm content with just noting that the crisis was indeed a global disaster.
 
+◊(define us-gdp "https://tradingeconomics.com/united-states/gdp-growth")
 ◊(define germany-gdp "https://tradingeconomics.com/germany/gdp-growth")
 ◊(define japan-gdp "https://tradingeconomics.com/japan/gdp-growth")
 ◊(define euro-gdp "https://tradingeconomics.com/euro-area/gdp-growth")
@@ -94,16 +97,16 @@ Although the crisis originated in the U.S. the crisis spread globally.◊sn{glob
 But the crisis could've been much worse. The U.S. came close to a complete financial meltdown, but without crossing the line.◊mn{music-stopped} Partly thanks to the bailouts, where the Federal Reserve bailed out banks and other private companies. The extremely risky assets---too risky for anyone else to touch---were bought up to rescue the banks which were "too big to fail".◊sn{interconnected}
 
 ◊ndef["interconnected"]{
-    Or perhaps a better term would be "too interconnected to fail". The biggest fear of a big bank going bankrupt is if it brings down the rest of the economy with it, which happened when Lehman Brothers failed.
+    Or perhaps a better term would be "too interconnected to fail". The biggest fear of a big bank going bankrupt is if it brings down the rest of the economy with it, which to an extent happened when Lehman Brothers failed.
 }
 
-The bailouts started when the government guaranteed assets of the investment bank Bear Stearns and encouraged J.P. Morgan to buy for a knockdown price. Then the mortgage lenders Fannie Mae and Freddie Mac collapsed, and rescued by being nationalized receiving a $200 billion government investment.
+The bailouts started when the government guaranteed assets of the investment bank Bear Stearns and encouraged J.P. Morgan to buy for a knockdown price. Then the mortgage lenders Fannie Mae and Freddie Mac collapsed, promptly rescued by being nationalized coupled with a $200 billion government investment.
 
 While the investment bank Bear Stearns was saved, the investment bank Lehman Brothers was allowed to go bankrupt. At first the Treasury and Federal Reserve claimed they allowed Lehman to fail to send the signal that recklessly managed Wall Street firms did not all come with government guarantees. But when they saw the fatal effects the bank's collapse had on the economy they changed their tune and claimed they lacked the legal authority to do so.◊mn{big-short}
 
-What followed was massive new efforts to bailout banks and others. For example the Federal Reserve, for the first time in history, took control over the private company American Investment Group (AIG) coupled with a $182 billion loan. I could never understand how they were allowed to do this, but not bailout Lehman Brothers.◊sn{fed-political}
+Then followed massive new efforts to bailout banks and others. For example the Federal Reserve, for the first time in history, took control over the private company American Investment Group (AIG) while giving them a $182 billion loan. There must be some interesting laws if they were allowed to do this, and save Bear Stearns, but not bailout Lehman Brothers.◊sn{fed-political}
 
-In September 2008 U.S. Treasury Secretary Henry Paulson persuaded the U.S. Congress for $700 billion to buy subprime mortgage assets from banks.◊sn{tarp} But once handed the money they abandoned the promised strategy and instead essentially gave away billions of dollars to Citigroup, Morgan Stanley, Goldman Sachs and others. For instance the $13 billion AIG owed to Goldman Sachs was paid off in full by the U.S. government.
+In September 2008 U.S. Treasury Secretary Henry Paulson persuaded the U.S. Congress for $700 billion to buy subprime mortgage assets from banks.◊sn{tarp} But once handed the money they abandoned the promised strategy and instead essentially gave away billions of dollars to Citigroup, Morgan Stanley, Goldman Sachs and others. For instance the $13 billion AIG owed to Goldman Sachs was paid off in full by the U.S. government.◊mn{big-short}
 
 ◊ndef["tarp"]{
     This is known as the Troubled Asset Relief Program, or TARP.
@@ -121,10 +124,12 @@ When it was clear the money wasn't enough the Federal Reserve started buying bad
     The Federal Reserve is supposed to be completely politically independent. But with their actions during the crisis, can they still claim to be independent?
 }
 
-For the taxpayers it's like betting all on red on a roulette wheel---you either win big or lose big. In this case American taxpayers got a good outcome, they even made money on the bailouts. The Irish taxpayers for example ◊link[irish-bailout]{weren't so lucky}.◊sn{managing-risk}
+For the taxpayers it's like betting all on red on a roulette wheel---you risk a very big loss. In this case American taxpayers got a good outcome, they even ◊link[money-tarp]{made money} on the bailouts, but the Irish taxpayers for example ◊link[irish-bailout]{weren't so lucky}.◊sn{managing-risk}
+
+◊(define money-tarp "https://www.washingtonpost.com/business/economy/tarp-moves-into-the-black-as-some-loans-are-repaid/2011/03/30/AFDrEc6B_story.html")
 
 ◊ndef["managing-risk"]{
-    Investments come with a risk--reward trade-off. If you want the potential for higher return then you need to take a larger risk and if you want lower risk you'll sacrifice potential gains. In this case the bailouts forced a very large risk on the taxpayers.
+    Investments come with a risk--reward trade-off. If you want the potential for higher return then you need to take a larger risk and if you want lower risk you'll sacrifice potential gains. In this case the bailouts forced a very large risk on the taxpayers, with questionable upside.
 }
 
 ◊(define irish-bailout "https://www.irishtimes.com/business/financial-services/was-it-worth-paying-41-7bn-to-bail-out-irish-banks-1.4036792?mode=amp")
@@ -163,7 +168,7 @@ Which you might see as a sign that Satoshi wasn't a fan of bailing out the banks
 
 After the dust settled it's easy to think the guilty got punished---after all the U.S. loves to dish out harsh punishments---and the system was reworked to prevent a similar crisis from ever happening again. But reality is often disappointing.
 
-The bankers weren't punished for their unregulated gambling or outright fraud. In fact ◊link[us-banker-jail]{only a single U.S. banker went to jail}.◊sn{iceland-jail} Instead they got bonuses and in 2010 the banks were enjoying massive profits---while regular people were still struggling without jobs and houses.
+The bankers weren't punished for their unregulated gambling or outright fraud. In fact ◊link[us-banker-jail]{only a single U.S. banker went to jail}.◊sn{iceland-jail} Instead they got bonuses and in 2010 the banks were enjoying massive profits---while regular people were still struggling without jobs and houses.◊mn{big-short}
 
 ◊ndef["iceland-jail"]{
     Iceland is the only nation that actually ◊link[iceland-jail]{put top finance executives behind bars} after the 2008 crisis.
@@ -171,7 +176,11 @@ The bankers weren't punished for their unregulated gambling or outright fraud. I
 
 Remember the $182 billion AIG bailout? Shortly after accepting the bailout they paid out ◊strong{$165 million in bonuses} to their executives, those responsible for ◊link[aig-record-loss]{the biggest corporate loss in history}. As ◊link[obama-aig-bonuses]{president Obama asks}: “how do they justify this outrage to the taxpayers who are keeping the company afloat?”. One can't help but wonder...
 
-Then there's the case of ◊link[hubler]{Howie Hubler}, which to me exemplifies the mindbogglingly stupid bonuses oh so well. He was responsible for the biggest loss of a single trade in history---a staggering $9 billion---yet when asked to resign (a friendly way to get fired) he received $10 million.
+Then there's the case of ◊link[hubler]{Howie Hubler}, which to me exemplifies the mindbogglingly stupid bonuses oh so well. He was responsible for the biggest loss of a single trade in history---a staggering ◊em{$9 billion}---yet when asked to resign (a friendly way to get fired) he received $10 million.◊sn{financial-independent}
+
+◊ndef["financial-independent"]{
+    Just for context, $10 million is many times more than enough for me and my family to live on for the rest of our lives. Even we start going on vacation several times a year.
+}
 
 ◊(define hubler "https://en.wikipedia.org/wiki/Howie_Hubler")
 
@@ -203,7 +212,7 @@ How about the other traders and the "CDO managers" who literally sold shit to th
 
 What ◊em{really} caused the financial crisis, and made the crisis so large? It's easy to point the finger at people who borrowed money they couldn't afford, at the bankers who helped them (or tricked them) and at the ratings agencies who didn't really know what they were rating. But the greed of Wall Street shouldn't be surprising---it should instead be expected.
 
-The blame should be placed on the incentives that enabled the greed to flourish. The incentives made the ratings agencies not look too closely at the assets they were rating, otherwise the bankers would go to the other rating agency and take their money with them. The people taking loans were incentivized to loan more, since the house prices kept rising making them more money. The people giving out loans were encouraged to give out as many loans as possible, because they would get a cut for every loan they gave out.◊sn{pets}
+The blame should be placed on the incentives that enabled the greed to flourish. The incentives made the ratings agencies not look too closely at the assets they were rating---otherwise the bankers would go to the other rating agency and take their money with them. The people taking loans were incentivized to loan more, since the house prices kept rising making them more money. The people giving out loans were encouraged to give out as many loans as possible, because they would get a cut for every loan they gave out.◊sn{pets}
 
 ◊ndef["pets"]{
     Strawberry pickers were given out million dollar loans despite having a tiny income, and without posting any collateral. Las Vegas strippers owned multiple houses and people were getting loans by writing their pet's name on the loan.
@@ -218,11 +227,9 @@ The blame should be placed on the incentives that enabled the greed to flourish.
 
 If you exploit and gamble, but instead of a prison sentence you're rewarded with a fat bonus check, you will not change your actions. In fact you'll be more likely to continue. It's exactly like a child who wants candy: if he screams and cries until he gets candy what will he learn? He'll learn that you get candy when you cry---so now he will cry to get the candy.◊sn{moral-hazard}
 
-Indeed as investor extraordinaire Charlie Munger ◊link[human-misjudgement]{says}: if you want to predict how people will behave, you only have to look at their incentives.
+Indeed as investor extraordinaire Charlie Munger ◊link[human-misjudgement]{says}: if you want to predict how people will behave, you only have to look at their incentives.  This is why the bailouts, while helpful in the short run (the child stopped crying), made the fundamental problem that enabled the crisis worse (the child will cry more in the future). Bad behaviour by banks and the people working at banks are even more likely now since they have learned that if they fail they will just get bailed-out, and keep their bonuses. They even passed laws to make it even easier for the Federal Reserve to step in and whatever they deem "too big to fail", without the ◊em{unnecessary} overhead of going through congress.◊sn{bail-in}
 
-This is why the bailouts, while helpful in the short run (the child stopped crying), made the fundamental problem that enabled the crisis worse (the child will cry more in the future). Bad behaviour by banks and the people working at banks are even more likely now since they have learned that if they fail they will just get bailed-out, and keep their bonuses. They even passed laws to make it even easier for the Federal Reserve to step in and whatever they deem "too big to fail", without the ◊em{unnecessary} overhead of going through congress.◊sn{bail-in}
-
-I find it interesting to compare the incentives for banks with the ◊link[crypto-incentives]{incentives for cryptocurrency miners}. While banks are incentivized to gamble, exploit and cheat as much they can get away with the incentives for miners are to work in the network's best interest. While incentives makes the financial industry unstable, it's what makes cryptocurrencies secure and that's Bitcoin's real innovation.
+I find it interesting to compare the incentives for banks with the ◊link[crypto-incentives]{incentives for cryptocurrency miners}. While banks are incentivized to gamble, exploit and cheat as much they can get away with the incentives for miners are to work in the network's best interest. While incentives makes the financial industry unstable, it's what makes cryptocurrencies secure.
 
 
 ◊(define crypto-incentives "/how_do_cryptocurrencies_work.html#the-50%-security-assumption")
@@ -248,7 +255,7 @@ I find it interesting to compare the incentives for banks with the ◊link[crypt
 
 The 2008 financial crisis was a combination of a number of different factors working together. If only one were removed, for example if bankers didn't give out loans to anyone and their pets or if the ratings agencies would rate the assets correctly, then the crisis would never have grown so big. And there were changes to the financial system after crisis which should prevent a repeat of the crisis.
 
-But as I wrote previously, the core incentives problem is unsolved and even made worse. There won't be an exact repeat of the 2008 crisis, but we might see similar problems resurface in the future.
+But as I wrote previously, the core incentives problem is unsolved and even made worse. There won't be an exact repeat of the 2008 crisis, but we might see similar problems resurface in the future. It's like "curing" fever by lowering your body temperature, but leaving the virus infection intact.
 
 For example in 2015, several banks began selling billions in something called a "bespoke tranche opportunity"---which ◊link[bespoke-tranche-opportunity]{is just another name for a CDO}. The banks are also ◊link[warming-up-mortgage-bonds]{warming up to the same mortgage bonds} that burned them in 2008, while housing prices are going through the roof and people are borrowing like mad.◊sn{house-prices}
 
@@ -268,7 +275,7 @@ History doesn't repeat itself, but it rhymes awfully well.
 
 With ◊em{sound money} nobody can manipulate the money supply. For example fiat backed by gold, actual gold coins or cryptocurrencies. If we used sound money could the financial crisis have been prevented?
 
-Honestly, probably not. The housing and bond bubble might still have happened as the banks can still create mortgage backed securities, CDOs and other complex derivatives. Sound money cannot prevent anyone from creating and selling shit.
+Unfortunately, probably not. The housing and bond bubble might still have happened as the banks can still create mortgage backed securities, CDOs and other complex derivatives. Sound money cannot prevent anyone from creating and selling shit.
 
 But the incentives would be different. Banks can still use fractional banking (create IOUs and inflate the money supply) but if they fail there's nobody to print money for them to bail them out. The bailouts in 2008--2009 were only possible because the Federal Reserve has the ability to print as much money as they want.◊sn{print-digital} There's no upper limit to the size of the bailout---they can always conjure enough. Not so with sound money.
 
@@ -278,7 +285,7 @@ But the incentives would be different. Banks can still use fractional banking (c
 
 Therefore the "heads I win, tails I get bailed-out" incentives would change to "heads I win, tails I lose". This would force banks to be more careful with their risk-taking, and if they overstep their bounds they fail. This might have bad short-term effects but would be more robust and healthy long-term.
 
-Now you might say that we can solve this problem in another way---and maybe you're right. But as I'll go into in the ◊link[broken-system]{next chapter} there are more systematic problems with the modern financial system.
+Now you might say that we can solve this problem another way---for example with better regulation---and in this case maybe you're right. But as I'll go into in the ◊link[broken-system]{next chapter} there are more systematic problems with the modern financial system.
 
 ◊(define broken-system "/a_broken_system.html")
 
@@ -291,3 +298,4 @@ Now you might say that we can solve this problem in another way---and maybe you'
 
 ◊(define the-big-short-book "https://www.goodreads.com/book/show/26889576-the-big-short")
 ◊(define after-the-music-stopped-book "https://www.goodreads.com/book/show/15811560-after-the-music-stopped")
+
