@@ -509,3 +509,6 @@ Secret FBI Subpoenas Scoop Up Personal Data from Scores of Companies
 
 # Unsorted
 
+Anonymous bearer shares
+    Anonymous control of money
+
