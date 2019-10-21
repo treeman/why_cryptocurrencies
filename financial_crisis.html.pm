@@ -75,11 +75,14 @@ The crisis began with the collapse of the bank Lehman Brothers and issued in the
 
 ◊(define great-recession "https://en.wikipedia.org/wiki/Great_Recession")
 
-◊todo{IMG of the GDP growth rates}
-◊; https://tradingeconomics.com/united-states/gdp-growth
+◊img[#:src "images/us-gdp.svg" #:link #t]{
+    ◊link[us-gdp]{United States GDP growth rate} surrounding the years of the financial crisis.  
+    It bottomed out at -8.4% the fourth quarter of 2008.
+}
 
 Although the crisis originated in the U.S. the crisis spread globally.◊sn{global-buys} For example in only the first quarter of 2009 the GDP rate was -4.7% ◊link[germany-gdp]{in Germany}, -4.8% ◊link[japan-gdp]{in Japan} and -3% ◊link[euro-gdp]{in the Euro area}. There are many details to dig into here, such as unemployment rate or stock market valuations, but I'm content with just noting that the crisis was indeed a global disaster.
 
+◊(define us-gdp "https://tradingeconomics.com/united-states/gdp-growth")
 ◊(define germany-gdp "https://tradingeconomics.com/germany/gdp-growth")
 ◊(define japan-gdp "https://tradingeconomics.com/japan/gdp-growth")
 ◊(define euro-gdp "https://tradingeconomics.com/euro-area/gdp-growth")
