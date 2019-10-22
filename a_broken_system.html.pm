@@ -20,16 +20,16 @@
 
 In the chapter ◊link[what-is-money]{What is money?} I tried to give some historical examples of money and list some properties that good money should have. Unfortunately it's not enough to understand the current economic system, which is a completely different beast.
 
-It's a system that based on money that isn't sound---the money doesn't fulfill the properties good money should have. I'll even argue there's something fundamentally broken with the economic system we use today.
+It's a system that based on money that isn't sound---the money doesn't fulfill the properties good money should have. I'll even go so far to say there's something fundamentally broken with the economic system we use today.
 
 ◊(define what-is-money "/what_is_money.html")
 
 
 ◊subhead{Economic effects of counterfeiting}
 
-Imagine a counterfeiter, who has the ability to print money from thin air.◊sn{magic-printer} What would he do with all the money? What would you do?
+Imagine a counterfeiter, who has the ability to print money from thin air.◊sn{magic-printer} What would he do with all the money? What would ◊em{you} do?
 
-Personally I would probably pay off my loans, renovate our house, go on vacation and buy some LEGO®. If I was smart I would also invest it; buy some stocks, some gold maybe a house or two and rent them out. In short I would buy a bunch of stuff---and I think most would do the same.
+Personally I would probably pay off my loans, renovate our house, go on vacation and buy some LEGO®. If I was smart I would also invest it; buy some stocks, some gold, maybe a house or two and rent them out. In short I would buy a bunch of stuff---and I think most would do the same.
 
 If I did print money, a ◊strong{lot} of money, and spent it like this---what would the effect on the economy be?◊sn{case-against-fed}
 
@@ -57,7 +57,7 @@ Who in turn will use it to buy other stuff, and in this way the counterfeited mo
     }
     ◊li{Redistribution of wealth.
 
-        Notice how in our previous example the counterfeited money isn't divided equally. The counterfeiter suddenly became much richer than everyone else. While the poor guy, who didn't have much to begin with, didn't receive any of the new money and became even poorer.
+        Notice how in our previous example the counterfeited money isn't divided equally. The counterfeiter suddenly became much richer than everyone else, and some received a bit more than others. The poor guy, who didn't have much to begin with, didn't receive any of the new money and became even poorer.
     }
 }
 
@@ -70,7 +70,11 @@ Who in turn will use it to buy other stuff, and in this way the counterfeited mo
 
 Counterfeiting means everyones savings, the "old" money, will be worth less. This is why you shouldn't just store all your money under the mattress or in a bank account---the value will be eaten up by inflation.
 
-◊todo{GRAPH of inflation}
+◊img[#:src "images/inflation.svg" #:link #t]{
+    ◊link[consumer-price-index]{Consumer price index}, with 2010 = 100, for the United States and Sweden between 1960 and 2018.
+}
+
+◊(define consumer-price-index "https://data.worldbank.org/indicator/FP.CPI.TOTL?locations=US-SE-XC")
 
 Counterfeiting also means redistributing wealth from everyone to the counterfeiter, and to a lesser extent people the counterfeiter buys from. Even though nobody's stealing your money, the effect is the same: your wealth relative to others will decrease.
 
@@ -82,7 +86,7 @@ Counterfeiting also means redistributing wealth from everyone to the counterfeit
 ◊(define print-money "https://murdoch.is/projects/currency/")
 
 ◊ndef["case-against-fed"]{
-    This example was given by Murray N. Rothbard in “◊link[case-against-fed-book]{The Case Against the Fed}”, which I liked so much I reused it here using my own words.
+    A similar example was given by Murray N. Rothbard in “◊link[case-against-fed-book]{The Case Against the Fed}”.
 }
 
 
