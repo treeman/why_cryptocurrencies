@@ -159,6 +159,22 @@ The system works as long as people just keep their money at the bank, and only o
 
 ◊subhead{Lender of last resort}
 
+As money printers the central banks play an important roll---as the "lender of last resort". This means if all else fails, for example if the banks are about to fail because they have too little reserves or if the economy is going bad, then central banks can step in and save them. This is exactly what happened during ◊link[financial-crisis]{the 2008 financial crisis}, where banks and other institutions messed up in a major way but were bailed-out and made whole again.
+
+This means the real check against fractional banking (the risk of going bankrupt) is thrown away and replaced with regulation that's supposed to keep the banks in check but make the banks more robust against failure. While fine in theory, in practice it means banks are now incentivized to push the limits any way they can.
+
+I don't think there's a better example of the hazards the lender of last resort creates than the 2008 financial crisis, which I wrote about in the ◊link[financial-crisis]{previous chapter}. I feel the term ◊link[moral-hazard]{◊em{moral hazard}}, to describe someone taking risks others will pay for, is too soft to describe what happened there.◊sn{crisis-terms}
+
+◊ndef["crisis-terms"]{
+    Perhaps the words ◊em{deceit}, ◊em{scam}, ◊em{fraud} or ◊em{swindle} comes closer to describe my feelings.
+}
+
+◊(define financial-crisis "/financial_crisis.html")
+◊(define moral-hazard "https://www.thebalance.com/moral-hazard-what-it-is-and-how-it-works-315515")
+
+
+◊subhead{A mountain of debt}
+
 
 ◊subhead{Growing inequality}
 
@@ -166,8 +182,6 @@ The system works as long as people just keep their money at the bank, and only o
     It doesn't matter if you're black or white... the only color that really matters is green.
 }
 
-
-◊subhead{A mountain of debt}
 
 ◊subhead{Booms and busts}
 
