@@ -877,3 +877,24 @@ table.address-message {
     }
 }
 
+.fractional-table-ex {
+    @extend %sans-serif-tnum;
+    font-size: 0.95rem;
+    margin: 1em 0 1.2em 0;
+
+    .row {
+        width: 100%;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
+    .header {
+        font-weight: bold;
+    }
+    .cell {
+        width: 5em;
+        text-align: center;
+        margin-right: 1.5em;
+    }
+}
+

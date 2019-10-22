@@ -117,26 +117,31 @@ Although the central banks are ultimately responsible, it's the regular banks wh
 ◊ol{
   ◊li{In the beginning John has ◊sans-tnum{1000 SEK}, with nothing strange going on. This is the balance sheet for John and the bank:
 
-    ◊stable{
-        John            Bank
-        1 000 SEK
-    }
+    ◊(table "1 000 SEK" "" "")
   }
   ◊li{John lends the money to the bank, and receives money promises from the bank (let's call them IOUs):
 
-    ◊stable{
-        John            Bank
-        1 000 IOU        1 000 SEK
-    }
+    ◊(table "1 000 IOU" "1 000 SEK" "")
   }
   ◊li{The bank can issue more IOUs if they want, here they lend out IOUs to Jane:
 
-    ◊stable{
-        John            Bank            Jane
-        1 000 IOU       1 000 SEK       9 000 IOU
-    }
+    ◊(table "1 000 IOU" "1 000 SEK" "9 000 IOU")
   }
 }
+
+
+◊(define (table john bank jane)
+   `(div ((class "fractional-table-ex"))
+      (div ((class "header row"))
+        (div ((class "cell")) "John")
+        (div ((class "cell")) "Bank")
+        (div ((class "cell")) ,(if (string=? jane "")
+                                   ""
+                                   "Jane")))
+      (div ((class "row"))
+        (div ((class "cell")) ,john)
+        (div ((class "cell")) ,bank)
+        (div ((class "cell")) ,jane))))
 
 There is now ◊sans-tnum{11 000} money circulating the system. Because an IOU is treated like a SEK for all intents and purposes we can even say that there is ◊sans-tnum{11 000 SEK} now after we started with only ◊sans-tnum{1 000 SEK}. The bank printed ◊sans-tnum{10 000 SEK} from thin air and has only ◊sans-tnum{1 000 SEK} to back them up.  The ratio of SEK to IOU, in this example 10%, is called the reserve.
 
