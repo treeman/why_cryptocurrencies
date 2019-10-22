@@ -167,8 +167,9 @@ Credit cards have a privacy problem
 Administration Using the Full Power of the Surveillance State on Whistleblowers
 <https://news.ycombinator.com/item?id=20615084>
 
-
 <https://www.cbc.ca/news/business/banking-information-shared-with-third-parties-1.5102931>
+
+In 2018, 60 of the largest companies in the USA paid no taxes on pre-tax income of 79 billion dollars. (The Laundromat)
 
 ## Black markets
 

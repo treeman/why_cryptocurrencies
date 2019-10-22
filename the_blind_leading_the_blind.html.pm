@@ -123,3 +123,9 @@ The Fed is not a government agency. It's a private entity and its shareholders a
 ◊qt[#:author "Alan Greenspan, Chairmain of the Fed"]{
     The temptetion is to step on the monetary accelerator or at least to avoid the monetary break until after the next election... Giving in to such temptations is likely to impart an inflationary bias to the economy and could lead to instability, recession and economic stagnation.
 }
+
+◊qt[#:src "The Laundromat"
+    #:author "Meryl Streep"]{
+    In this system, our system, the slaves are unaware, both of their status and of their masters, who exist in a world apart and where the shackles are hidden amidst reams of unreachable legalese.
+}
+

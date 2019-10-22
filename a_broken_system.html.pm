@@ -76,7 +76,7 @@ Counterfeiting means everyones savings---the "old" money---will be worth less. T
 }
 
 ◊ndef["why-sweden?"]{
-    Why pick out Sweden as an example? No particular reason really, the graph would look similar if I picked the United States or some other country. At first I was going to exemplify both Sweden and the United States, but the differences were so small I didn't see the point.
+    Why pick out Sweden as an example? No particular reason really, the graph would look similar if I picked the United States or some other well-functioning country. At first I was going to exemplify both Sweden and the United States, but the differences were so small I didn't see the point.
 }
 
 ◊(define consumer-price-index "https://data.worldbank.org/indicator/FP.CPI.TOTL?locations=US-SE-XC")
@@ -171,18 +171,21 @@ The system works as long as people just keep their money at the bank, and only o
 
 ◊subhead{Booms and busts}
 
+◊;https://www.alt-m.org/2018/08/16/fractional-reserve-banking-and-austrian-business-cycles-part-i/
+◊;https://www.infowars.com/does-the-boom-bust-cycle-ever-result-from-commodity-money/
+◊;https://mises.org/library/boom-and-bust-0
+
+◊subhead{Stuck between a rock and a hard place}
+
+◊; McKinsey: Half the World’s Banks Too Weak to Survive Downturn 
+◊; https://news.ycombinator.com/item?id=21320977
+
 ◊subhead{Hyperinflation}
+
+◊;Hyperinflation and Trust in Ancient Rome 
+◊;https://news.ycombinator.com/item?id=21010309
 
 ◊subhead{The case for sound money}
 
-
-Hyperinflation and Trust in Ancient Rome 
-https://news.ycombinator.com/item?id=21010309
-
-Booms and busts:
-https://www.alt-m.org/2018/08/16/fractional-reserve-banking-and-austrian-business-cycles-part-i/
-https://www.infowars.com/does-the-boom-bust-cycle-ever-result-from-commodity-money/
-https://mises.org/library/boom-and-bust-0
-
-
 ◊(define case-against-fed-book "https://www.goodreads.com/book/show/81976.The_Case_Against_the_Fed")
+
