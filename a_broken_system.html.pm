@@ -68,15 +68,21 @@ Who in turn will use it to buy other stuff, and in this way the counterfeited mo
     While it may sound strange, technology has been deflating in price forever. When computers were just introduced they were ◊em{extremely} expensive, but now everyone and their mother literally has one in their pocket. And probably several at home. Some even have one on their wrist.
 }
 
-Counterfeiting means everyones savings, the "old" money, will be worth less. This is why you shouldn't just store all your money under the mattress or in a bank account---the value will be eaten up by inflation.
+Counterfeiting means everyones savings---the "old" money---will be worth less. This is why you shouldn't just store all your money under the mattress or in a bank account---the value will be eaten up by inflation.
 
 ◊img[#:src "images/inflation.svg" #:link #t]{
-    ◊link[consumer-price-index]{Consumer price index}, with 2010 = 100, for the United States and Sweden between 1960 and 2018.
+    How the ◊link[swe-inflation]{inflation in Sweden} has caused the actual value of money to decrease.◊sn{why-sweden?}  
+    The graph shows what ◊sans-tnum{100 SEK} in 1960 would really be worth, adjusted by inflation. For example in 2018 it would only be worth around ◊sans-tnum{7 SEK}---a 93% drop in value.
+}
+
+◊ndef["why-sweden?"]{
+    Why pick out Sweden as an example? No particular reason really, the graph would look similar if I picked the United States or some other country. At first I was going to exemplify both Sweden and the United States, but the differences were so small I didn't see the point.
 }
 
 ◊(define consumer-price-index "https://data.worldbank.org/indicator/FP.CPI.TOTL?locations=US-SE-XC")
+◊(define swe-inflation "https://data.worldbank.org/indicator/FP.CPI.TOTL.ZG?locations=SE")
 
-Counterfeiting also means redistributing wealth from everyone to the counterfeiter, and to a lesser extent people the counterfeiter buys from. Even though nobody's stealing your money, the effect is the same: your wealth relative to others will decrease.
+Counterfeiting also means redistributing wealth from everyone to the counterfeiter (and to a lesser extent people the counterfeiter buys from) at the same rate as the inflation eats up the value of money. Even though nobody's stealing your money, the effect is the same: your wealth relative to others will decrease.
 
 
 ◊ndef["magic-printer"]{
@@ -101,7 +107,7 @@ The central banks, the Federal Reserve (Fed) in the U.S. or the European Central
 }
 
 ◊ndef["inflation-growth?"]{
-    I always found the argument of inflation pushing people to spend weird. Most people I know don't even know about the effects inflation has, even less so when the inflation is so low you don't really notice it (1-2%).
+    I always found the argument of inflation pushing people to spend weird. Most people I know don't even know about the effects inflation has, even less so when the inflation and the rising prices are so small you don't really notice them.
 }
 
 ◊(define quantitive-easing "https://www.investopedia.com/terms/q/quantitative-easing.asp")
