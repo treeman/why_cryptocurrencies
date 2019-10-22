@@ -115,3 +115,11 @@ Do the people really know that the least accountable operation in the U.S. gover
 
 It's worse than us not understanding how the system works because the Fed, the "controller of the universe", makes us all blind. We can't even tell how many dollar bills really exist.
 
+◊subhead{unsorted}
+
+The Fed is not a government agency. It's a private entity and its shareholders are banks which earn a dividend. As much as 80 billion dollars per year, total. (Which banks? It's a secret.) Nobody really knows how many dollars exist.  Nobody knows how much banks are printing to pad their own pockets.
+
+
+◊qt[#:author "Alan Greenspan, Chairmain of the Fed"]{
+    The temptetion is to step on the monetary accelerator or at least to avoid the monetary break until after the next election... Giving in to such temptations is likely to impart an inflationary bias to the economy and could lead to instability, recession and economic stagnation.
+}

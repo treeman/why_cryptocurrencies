@@ -160,17 +160,6 @@ The system works as long as people just keep their money at the bank, and only o
 ◊subhead{Lender of last resort}
 
 
-◊subhead{A private entity at the root}
-
-◊qt[#:author "Alan Greenspan, Chairmain of the Fed"]{
-    The temptetion is to step on the monetary accelerator or at least to avoid the monetary break until after the next election... Giving in to such temptations is likely to impart an inflationary bias to the economy and could lead to instability, recession and economic stagnation.
-}
-
-The Fed is not a government agency. It's a private entity and its shareholders are banks which earn a dividend. As much as 80 billion dollars per year, total.  (Which banks? It's a secret)
-
-Nobody really knows how many dollars exist.  Nobody knows how much banks are printing to pad their own pockets.
-
-
 ◊subhead{Growing inequality}
 
 ◊qt[#:src "Family Guy"]{
