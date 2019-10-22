@@ -1,7 +1,7 @@
 #lang pollen
 
 ◊(define-meta title "The financial crisis, bad loans and bailouts")
-◊;(define-meta subtitle "Benefits over existing payment systems")
+◊(define-meta subtitle "The doomsday, broken incentives and moral hazard")
 ◊(define-meta updated "2019-08-30T15:47:12+02:00")
 ◊(define-meta uuid "0da3165e-e470-4143-a658-4b2858f3a148")
 
@@ -235,7 +235,7 @@ I find it interesting to compare the incentives for banks with the ◊link[crypt
 ◊(define crypto-incentives "/how_do_cryptocurrencies_work.html#the-50%-security-assumption")
 
 ◊ndef["moral-hazard"]{
-    The term ◊link[moral-hazard]{◊em{moral hazard}} is often used to describe the bailouts. It refers to someone taking risks that others will pay for. 
+    The term ◊link[moral-hazard]{◊em{moral hazard}} is often used to describe the bailouts. It refers to someone taking risks that others will pay for.
 
     "Heads I win, tails I get bailed-out."
 }
