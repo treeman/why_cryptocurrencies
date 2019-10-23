@@ -219,5 +219,3 @@ I don't think there's a better example of the hazards the lender of last resort 
 
 ◊subhead{The case for sound money}
 
-◊(define case-against-fed-book "https://www.goodreads.com/book/show/81976.The_Case_Against_the_Fed")
-

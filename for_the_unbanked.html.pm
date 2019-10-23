@@ -154,7 +154,7 @@ One of the best ways to fight poverty is ◊link[economic-growth-poverty]{econom
 ◊(define globalization-economic-growth "https://www.thebalance.com/globalization-and-its-impact-on-economic-growth-1978843")
 
 ◊ndef["containers"]{
-    For an interesting angle on how globalization effected the world economy I recommend ◊link[the-box]{The Box: How the Shipping Container Made the World Smaller and the World Economy Bigger}.
+    For an interesting angle on how globalization effected the world economy I recommend “◊link[the-box-book]{The Box: How the Shipping Container Made the World Smaller and the World Economy Bigger}” by Marc Levinson.
 }
 
 ◊ndef["china-isolation"]{
@@ -163,7 +163,6 @@ One of the best ways to fight poverty is ◊link[economic-growth-poverty]{econom
 
 ◊(define china-isolation "https://en.wikipedia.org/wiki/Haijin")
 ◊(define economic-growth-poverty "https://www.cato.org/publications/commentary/ending-mass-poverty")
-◊(define the-box "https://www.amazon.com/Box-Shipping-Container-Smaller-Economy/dp/0691136408")
 ◊(define what-is-money "/what_is_money.html")
 
 

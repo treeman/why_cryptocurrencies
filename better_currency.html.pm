@@ -11,7 +11,7 @@
   }
 }
 
-Our focus during the last section was on the use of cryptocurrencies as a payment system. But in fact Bitcoin wasn't invented to be just an improved PayPal, it was made to be something more, with much larger consequences: a completely new form of money.◊mn{currency-money}
+Our focus during the last section was on the use of cryptocurrencies as a payment system. But in fact Bitcoin wasn't invented to be just an improved PayPal---it was made to be something more, with much larger consequences: a completely new form of money.◊mn{currency-money}
 
 ◊ndef["currency-money"]{
     The term ◊em{money} refers to an intangible concept and ◊em{currency} is the actual thing used as money.
@@ -19,14 +19,20 @@ Our focus during the last section was on the use of cryptocurrencies as a paymen
     For example cryptocurrencies is money---you cannot pay me with "3 cryptocurrency". And Bitcoin (BTC) is a currency because you can send 3 BTC to me.
 }
 
-We previously asked ourself ◊link[what-is-money]{what money is} and we found that money is a tool to make trade more efficient. There are a number of properties good money should have, such as being durable and divisible, and there's a case to be made that cryptocurrencies can be ◊link[are-cryptos-money]{considered a form of money}---with some beneficial and unique properties.
+We previously asked ourself ◊link[what-is-money]{what money is} and found that money is a tool to make trade more efficient. There are a number of properties good money should have, such as being durable and divisible, and cryptocurrencies fulfill these very well and should be ◊link[are-cryptos-money]{considered a form of money}. I would even go so far to say they have better properties for money than anything else in history, but they're held back by adoption and volatility.
 
-In this section we'll focus on benefits of using cryptocurrencies as money and comparisons with what we use today. You might want to review the ◊link[crypto-properties]{properties cryptocurrencies have}, but for this section the most important one is the lack of central control over the money supply. It's similar to gold in this respect, except that ◊link[fake-gold]{gold can be counterfeit}.
+In this section we'll focus on benefits of using cryptocurrencies as money and comparisons with what we use today. You might want to review the ◊link[crypto-properties]{properties cryptocurrencies have}, but for this section the most important one is the lack of central control over the money supply. It's similar to gold in this respect, except that ◊link[fake-gold]{gold can be counterfeit}.◊sn{why-not-gold?}
+
+◊ndef["why-not-gold?"]{
+    Many of my arguments in this section will apply to gold, or gold-backed fiat, as well as cryptocurrencies. See ◊link[comparing-props]{this comparision of properties between different forms of money}.
+}
+
 
 ◊(define crypto-properties "/properties_of_a_cryptocurrency.html")
 ◊(define what-is-money "/what_is_money.html")
 ◊(define are-cryptos-money "/are_cryptocurrencies_money.html")
 ◊(define fake-gold "https://www.reuters.com/article/us-gold-swiss-fakes-exclusive/exclusive-fake-branded-bars-slip-dirty-gold-into-world-markets-idUSKCN1VI0DD?utm_source=reddit.com")
+◊(define comparing-props "/are_cryptocurrencies_money.html#comparing-properties-with-other-forms-of-money")
 
 
 ◊; https://www.youtube.com/watch?v=lbarjpJhSLw

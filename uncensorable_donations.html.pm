@@ -543,7 +543,8 @@ Unfortunately it seems like a human thing to try to hide your misdeeds instead o
 
 ◊qt[#:author "George Orwell"
     #:quote-src #t
-    #:src "1984"]{
+    #:src "1984"
+    #:url 1984-book]{
     ... if all records told the same tale---then the lie passed into history and became truth. 'Who controls the past,' ran the Party slogan, 'controls the future: who controls the present controls the past.' ... 'Reality control', they called it: in Newspeak, 'doublethink'.
 }
 

@@ -23,7 +23,7 @@ During 2007--2008 the world experienced the biggest financial crisis since the 1
 
 The financial crisis was caused by too many people borrowing too much money. The banks were happy to help and repackaged the bad loans and sold them to someone else, for a nice profit. When there weren't enough loans the clever banks conjured new ones, keeping the money machine rolling. This eventually blew up and brought the global economy to it's knees.
 
-This explanation is naturally very simplified. There were for example two bubbles that popped: the housing bubble and the much bigger bond bubble. The complex financial products (that nobody really understood) appeared to be low-risk but were high-risk. And of course the "heads I win, tails you lose" incentives at play all the way from top to bottom in the system.◊sn{villains}
+This explanation is naturally very simplified. There were for example two bubbles that popped: the housing bubble and the much bigger bond bubble. The complex financial products appeared to be low-risk but were high-risk.  And of course the "heads I win, tails you lose" incentives at play all the way from top to bottom in the system.◊sn{villains}
 
 A lot of ink has been spent on articles, books and movies explaining the events better and in far more detail than I could hope to do. I particularly like the explanations given in the Oscar-winning movie ◊link[the-big-short]{The Big Short (2016)}. Just look at how they describe subprime mortgages and CDOs:
 
@@ -46,7 +46,11 @@ A lot of ink has been spent on articles, books and movies explaining the events 
 ◊;youtube[margot-robbie]{ Margot Robbie describes subrime mortgages.  }
 ◊;youtube[anthony-bourdain]{Anthony Bourdain explains what a CDO is.}
 
-A pitch of humor sure makes for memorable explanations. But if it's too much Hollywood for your taste I recommend the book the movie is based on:  “◊link[the-big-short-book]{The Big Short: Inside the Doomsday Machine}” by Michael Lewis. Or if you're short on time maybe ◊link[11-min]{this 11 minute video} might suffice.
+A pitch of humor sure makes for memorable explanations. But if it's too much Hollywood for your taste I recommend the book the movie is based on:  “◊link[the-big-short-book]{The Big Short: Inside the Doomsday Machine}” by Michael Lewis. Or if you're short on time maybe ◊link[11-min]{this 11 minute video} might suffice.◊sn{important-to-know}
+
+◊ndef["important-to-know"]{
+    It's not important to understand exactly how the complex financial products, such as subprime mortgages or CDOs, work---the important part to know is experts didn't understand them either.
+}
 
 ◊(define 11-min "https://www.youtube.com/watch?v=bx_LWm6_6tA")
 ◊(define the-big-short "https://www.imdb.com/title/tt1596363/")
@@ -255,9 +259,9 @@ I find it interesting to compare the incentives for banks with the ◊link[crypt
 
 The 2008 financial crisis was a combination of a number of different factors working together. If only one were removed, for example if bankers didn't give out loans to anyone and their pets or if the ratings agencies would rate the assets correctly, then the crisis would never have grown so big. And there were changes to the financial system after crisis which should prevent a repeat of the crisis.
 
-But as I wrote previously, the core incentives problem is unsolved and even made worse. There won't be an exact repeat of the 2008 crisis, but we might see similar problems resurface in the future. It's like "curing" fever by lowering your body temperature, but leaving the virus infection intact.
+But as I wrote previously, the core incentives problem is unsolved and even made worse. There won't be an exact repeat of the 2008 crisis, but we might see similar problems resurface in the future. It's like "curing" fever by lowering your body temperature, while leaving the virus infection intact.
 
-For example in 2015, several banks began selling billions in something called a "bespoke tranche opportunity"---which ◊link[bespoke-tranche-opportunity]{is just another name for a CDO}. The banks are also ◊link[warming-up-mortgage-bonds]{warming up to the same mortgage bonds} that burned them in 2008, while housing prices are going through the roof and people are borrowing like mad.◊sn{house-prices}
+For example in 2015, several banks began selling billions in something called a "bespoke tranche opportunity"---which ◊link[bespoke-tranche-opportunity]{is just another name for a CDO} (the 3-day old halibut). The banks are also ◊link[warming-up-mortgage-bonds]{warming up to the same mortgage bonds} that burned them in 2008, while housing prices are going through the roof and people are borrowing like mad.◊sn{house-prices}
 
 ◊ndef["house-prices"]{
     With a feeling of déjà vu the house prices have been rising globally, especially in cities, for many years now. Here In Sweden it's almost impossible for young adults to buy their first house or apartment in a city unless they get help from their parents or work for years saving up for the down-payment.
@@ -295,7 +299,4 @@ Now you might say that we can solve this problem another way---for example with 
 ◊ndef["big-short"]{
     “◊link[the-big-short-book]{The Big Short: Inside the Doomsday Machine}” Michael Lewis
 }
-
-◊(define the-big-short-book "https://www.goodreads.com/book/show/26889576-the-big-short")
-◊(define after-the-music-stopped-book "https://www.goodreads.com/book/show/15811560-after-the-music-stopped")
 
