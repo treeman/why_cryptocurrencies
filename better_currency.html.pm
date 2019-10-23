@@ -24,7 +24,7 @@ We previously asked ourself ◊link[what-is-money]{what money is} and found that
 In this section we'll focus on benefits of using cryptocurrencies as money and comparisons with what we use today. You might want to review the ◊link[crypto-properties]{properties cryptocurrencies have}, but for this section the most important one is the lack of central control over the money supply. It's similar to gold in this respect, except that ◊link[fake-gold]{gold can be counterfeit}.◊sn{why-not-gold?}
 
 ◊ndef["why-not-gold?"]{
-    Many of my arguments in this section will apply to gold, or gold-backed fiat, as well as cryptocurrencies. See ◊link[comparing-props]{this comparision of properties between different forms of money}.
+    Many of my arguments in this section will apply to gold, or gold-backed fiat, as well as cryptocurrencies. See the ◊link[comparing-props]{comparision of properties between different forms of money} for more details on the pros and cons of different forms of money.
 }
 
 

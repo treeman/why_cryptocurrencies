@@ -13,7 +13,13 @@
   }
 }
 
-During 2007--2008 the world experienced the biggest financial crisis since the 1930s ◊link[great-depression]{Great Depression}, often referred to as the ◊link[2008-crisis]{2008 financial crisis}. I'll try to give an condensed version of the crisis and how it may relate to sound money.
+During 2007--2008 the world experienced the biggest financial crisis since the 1930s ◊link[great-depression]{Great Depression}, often referred to as the ◊link[2008-crisis]{2008 financial crisis}. I'll try to give an condensed version of the crisis and how it may relate to ◊link[sound-money]{◊em{sound money}}.◊sn{sound-money}
+
+◊ndef["sound-money"]{
+    Sound money is not prone to sudden changes in long term purchasing power, and the value is determined by the free-market.
+}
+
+◊(define sound-money "https://www.soundmoneydefense.org/sound-money-explained")
 
 ◊(define great-depression "https://en.wikipedia.org/wiki/Great_Depression")
 ◊(define 2008-crisis "https://en.wikipedia.org/wiki/Financial_crisis_of_2007%E2%80%932008")
@@ -21,9 +27,13 @@ During 2007--2008 the world experienced the biggest financial crisis since the 1
 
 ◊subhead{What caused the 2008 financial crisis?}
 
-The financial crisis was caused by too many people borrowing too much money. The banks were happy to help and repackaged the bad loans and sold them to someone else, for a nice profit. When there weren't enough loans the clever banks conjured new ones, keeping the money machine rolling. This eventually blew up and brought the global economy to it's knees.
+The financial crisis was caused by too many people borrowing too much money. The banks were happy to help and repackaged the bad loans and sold them to someone else, for a nice profit.◊sn{resell-loans} When there weren't enough loans the clever banks conjured new ones, keeping the money machine rolling. This eventually blew up and brought the global economy to it's knees.
 
-This explanation is naturally very simplified. There were for example two bubbles that popped: the housing bubble and the much bigger bond bubble. The complex financial products appeared to be low-risk but were high-risk.  And of course the "heads I win, tails you lose" incentives at play all the way from top to bottom in the system.◊sn{villains}
+◊ndef["resell-loans"]{
+    It might sound strange, but you can resell loans. For example when you take a loan at the bank, the bank now earns a small fee for the loan in return for the risk that you might not pay them back. The bank can decide to sell this loan to others, so they take the risk but earn the fees. Many such loans can be combined into bonds and sold or even insured.
+}
+
+This explanation is naturally very simplified. There were for example two bubbles that popped: the housing bubble and the much bigger bond bubble (based in large part on mortgage loans). The complex financial products (for example the mortgage bonds or the CDOs nobody really understood) appeared to be low-risk but were high-risk.  And of course the "heads I win, tails you lose" incentives at play all the way from top to bottom in the system.◊sn{villains}
 
 A lot of ink has been spent on articles, books and movies explaining the events better and in far more detail than I could hope to do. I particularly like the explanations given in the Oscar-winning movie ◊link[the-big-short]{The Big Short (2016)}. Just look at how they describe subprime mortgages and CDOs:
 
@@ -75,7 +85,7 @@ A pitch of humor sure makes for memorable explanations. But if it's too much Hol
 
 ◊subhead{The effects of the crisis}
 
-The crisis began with the collapse of the bank Lehman Brothers and issued in the ◊link[great-recession]{Great Recession}. In the U.S. alone the crisis meant ◊nbsp{$18 trillion} dollars disappeared, millions of jobs were lost and more than a million people lost their homes.◊mn{music-stopped}
+The crisis began with the collapse of the bank Lehman Brothers, marking the start of the ◊link[great-recession]{Great Recession}. In the U.S. alone the crisis meant ◊nbsp{$18 trillion} disappeared, millions of jobs were lost and more than a million people lost their homes.◊mn{music-stopped}
 
 ◊(define great-recession "https://en.wikipedia.org/wiki/Great_Recession")
 
@@ -98,17 +108,17 @@ Although the crisis originated in the U.S. the crisis spread globally.◊sn{glob
 
 ◊subhead{The bailouts}
 
-But the crisis could've been much worse. The U.S. came close to a complete financial meltdown, but without crossing the line.◊mn{music-stopped} Partly thanks to the bailouts, where the Federal Reserve bailed out banks and other private companies. The extremely risky assets---too risky for anyone else to touch---were bought up to rescue the banks which were "too big to fail".◊sn{interconnected}
+Although bad, the crisis could've been much worse. The U.S. came close to a complete financial meltdown, but without crossing the line.◊mn{music-stopped} Partly thanks to the bailouts, where the Federal Reserve bailed out banks and other private companies. The extremely risky assets---too risky for anyone else to touch---were bought up to rescue the banks which were "too big to fail".◊sn{interconnected}
 
 ◊ndef["interconnected"]{
     Or perhaps a better term would be "too interconnected to fail". The biggest fear of a big bank going bankrupt is if it brings down the rest of the economy with it, which to an extent happened when Lehman Brothers failed.
 }
 
-The bailouts started when the government guaranteed assets of the investment bank Bear Stearns and encouraged J.P. Morgan to buy for a knockdown price. Then the mortgage lenders Fannie Mae and Freddie Mac collapsed, promptly rescued by being nationalized coupled with a $200 billion government investment.
+The bailouts started when the government guaranteed assets of the investment bank Bear Stearns and encouraged J.P. Morgan to buy them for a knockdown price. Then the mortgage lenders Fannie Mae and Freddie Mac collapsed, promptly rescued by being nationalized coupled with a $200 billion government investment.
 
 While the investment bank Bear Stearns was saved, the investment bank Lehman Brothers was allowed to go bankrupt. At first the Treasury and Federal Reserve claimed they allowed Lehman to fail to send the signal that recklessly managed Wall Street firms did not all come with government guarantees. But when they saw the fatal effects the bank's collapse had on the economy they changed their tune and claimed they lacked the legal authority to do so.◊mn{big-short}
 
-Then followed massive new efforts to bailout banks and others. For example the Federal Reserve, for the first time in history, took control over the private company American Investment Group (AIG) while giving them a $182 billion loan. There must be some interesting laws if they were allowed to do this, but not bailout Lehman Brothers. (Lehman Brothers was an ◊em{investment} bank, which isn't a real bank. Other investment banks later converted to "commercial banks" in order to receive bailouts.) ◊sn{fed-political}
+Then followed massive new efforts to bailout banks and other private companies. For example the Federal Reserve, for the first time in history, took control over the private company American Investment Group (AIG) while giving them a $182 billion loan. The laws allowing them to do this, but not bailout Lehman Brothers, must be very interesting.  (Lehman Brothers was an ◊em{investment} bank, which isn't a real bank. Other investment banks later converted to "commercial banks" in order to receive bailouts.) ◊sn{fed-political}
 
 In September 2008 U.S. Treasury Secretary Henry Paulson persuaded the U.S. Congress for $700 billion to buy subprime mortgage assets from banks.◊sn{tarp} But once handed the money they abandoned the promised strategy and instead essentially gave away billions of dollars to Citigroup, Morgan Stanley, Goldman Sachs and others. For instance the $13 billion AIG owed to Goldman Sachs was paid off in full by the U.S. government.◊mn{big-short}
 
@@ -183,12 +193,12 @@ Remember the $182 billion AIG bailout? Shortly after accepting the bailout they 
 Then there's the case of ◊link[hubler]{Howie Hubler}, which to me exemplifies the mindbogglingly stupid bonuses oh so well. He was responsible for the biggest loss of a single trade in history---a staggering ◊em{$9 billion}---yet when asked to resign (a friendly way to get fired) he received $10 million.◊sn{financial-independent}
 
 ◊ndef["financial-independent"]{
-    Just for context, $10 million is many times more than enough for me and my family to live on for the rest of our lives. Even we start going on vacation several times a year.
+    Just for context, $10 million is many times more than enough for me and my family to live on for the rest of our lives. Even if we start going on vacation several times a year.
 }
 
 ◊(define hubler "https://en.wikipedia.org/wiki/Howie_Hubler")
 
-How about the other traders and the "CDO managers" who literally sold shit to their customers? They became rich too.◊sn{be-banker?}
+How about the other traders and the "CDO managers" who sold junk disguised as safe assets to their customers? They became rich too.◊sn{be-banker?}
 
 ◊ndef["be-banker?"]{
     I can't help but regret my life choices here. Bankers seem to have a pretty sweet deal---you'll get rich even if you have no idea what you're doing!
@@ -214,9 +224,9 @@ How about the other traders and the "CDO managers" who literally sold shit to th
 ◊;If you wanted to predict how people would behave, you only have to look at their incentives.
 ◊; "The Psychology of Human Misjudegement" speech by Charlie Munger Jun 1995
 
-What ◊em{really} caused the financial crisis, and made the crisis so large? It's easy to point the finger at people who borrowed money they couldn't afford, at the bankers who helped them (or tricked them) and at the ratings agencies who didn't really know what they were rating. But the greed of Wall Street shouldn't be surprising---it should instead be expected.
+What ◊em{really} caused the financial crisis, and made the crisis so large? It's easy to point the finger at people who borrowed money they couldn't afford, at the bankers who helped them (or tricked them) and at the rating agencies who didn't really know what they were rating. But the greed of Wall Street shouldn't be surprising---it should instead be expected.
 
-The blame should be placed on the incentives that enabled the greed to flourish. The incentives made the ratings agencies not look too closely at the assets they were rating---otherwise the bankers would go to the other rating agency and take their money with them. The people taking loans were incentivized to loan more, since the house prices kept rising making them more money. The people giving out loans were encouraged to give out as many loans as possible, because they would get a cut for every loan they gave out.◊sn{pets}
+The blame should be placed on the incentives that enabled the greed to flourish. The incentives made the rating agencies not look too closely at the assets they were rating---otherwise the bankers would go to the other rating agency and take their money with them. The people taking loans were incentivized to loan more, since the house prices kept rising making them more money. The people giving out loans were encouraged to give out as many loans as possible, because they would get a cut for every loan they gave out.◊sn{pets}
 
 ◊ndef["pets"]{
     Strawberry pickers were given out million dollar loans despite having a tiny income, and without posting any collateral. Las Vegas strippers owned multiple houses and people were getting loans by writing their pet's name on the loan.
@@ -257,7 +267,7 @@ I find it interesting to compare the incentives for banks with the ◊link[crypt
 
 ◊subhead{Will history repeat itself?}
 
-The 2008 financial crisis was a combination of a number of different factors working together. If only one were removed, for example if bankers didn't give out loans to anyone and their pets or if the ratings agencies would rate the assets correctly, then the crisis would never have grown so big. And there were changes to the financial system after crisis which should prevent a repeat of the crisis.
+The 2008 financial crisis was a combination of a number of different factors working together. If only one were removed, for example if bankers didn't give out loans to anyone and their pets or if the rating agencies would rate the assets correctly, then the crisis would never have grown so big. And there were changes to the financial system after crisis which should prevent a repeat of the crisis.
 
 But as I wrote previously, the core incentives problem is unsolved and even made worse. There won't be an exact repeat of the 2008 crisis, but we might see similar problems resurface in the future. It's like "curing" fever by lowering your body temperature, while leaving the virus infection intact.
 
@@ -277,9 +287,9 @@ History doesn't repeat itself, but it rhymes awfully well.
 
 ◊subhead{What if we used sound money?}
 
-With ◊em{sound money} nobody can manipulate the money supply. For example fiat backed by gold, actual gold coins or cryptocurrencies. If we used sound money could the financial crisis have been prevented?
+With ◊em{sound money} nobody can manipulate the money supply. For example fiat backed by gold (as long as we trust the backers), actual gold coins or cryptocurrencies. If we used sound money could the financial crisis have been prevented?
 
-Unfortunately, probably not. The housing and bond bubble might still have happened as the banks can still create mortgage backed securities, CDOs and other complex derivatives. Sound money cannot prevent anyone from creating and selling shit.
+Unfortunately, probably not. The housing and bond bubble might still have happened as the banks can still create mortgage backed securities, CDOs and other complex derivatives. Sound money cannot prevent anyone from creating and selling junk.
 
 But the incentives would be different. Banks can still use fractional banking (create IOUs and inflate the money supply) but if they fail there's nobody to print money for them to bail them out. The bailouts in 2008--2009 were only possible because the Federal Reserve has the ability to print as much money as they want.◊sn{print-digital} There's no upper limit to the size of the bailout---they can always conjure enough. Not so with sound money.
 
