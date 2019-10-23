@@ -226,7 +226,7 @@ How about the other traders and the "CDO managers" who sold junk disguised as sa
 
 What ◊em{really} caused the financial crisis, and made the crisis so large? It's easy to point the finger at people who borrowed money they couldn't afford, at the bankers who helped them (or tricked them) and at the rating agencies who didn't really know what they were rating. But the greed of Wall Street shouldn't be surprising---it should instead be expected.
 
-The blame should be placed on the incentives that enabled the greed to flourish. The incentives made the rating agencies not look too closely at the assets they were rating---otherwise the bankers would go to the other rating agency and take their money with them. The people taking loans were incentivized to loan more, since the house prices kept rising making them more money. The people giving out loans were encouraged to give out as many loans as possible, because they would get a cut for every loan they gave out.◊sn{pets}
+The blame should be placed on the incentives that enabled the greed to flourish. They made the rating agencies not look too closely at the assets they were rating---otherwise the bankers would go to another rating agency and take their money with them. The people taking loans were incentivized to loan more since the house prices kept rising, making them more money. The people giving out loans were encouraged to give out as many loans as possible, because they would get a cut of every loan they gave out.◊sn{pets}
 
 ◊ndef["pets"]{
     Strawberry pickers were given out million dollar loans despite having a tiny income, and without posting any collateral. Las Vegas strippers owned multiple houses and people were getting loans by writing their pet's name on the loan.
@@ -239,11 +239,11 @@ The blame should be placed on the incentives that enabled the greed to flourish.
   What are the odds that people will make smart decisions about money if they don’t need to make smart decisions—if they can get rich making dumb decisions?
 }
 
-If you exploit and gamble, but instead of a prison sentence you're rewarded with a fat bonus check, you will not change your actions. In fact you'll be more likely to continue. It's exactly like a child who wants candy: if he screams and cries until he gets candy what will he learn? He'll learn that you get candy when you cry---so now he will cry to get the candy.◊sn{moral-hazard}
+If you exploit and gamble, but instead of a prison sentence you're rewarded with a fat bonus check, you will not change your actions. In fact you'll be more likely to continue. It's exactly like a child who wants candy: if he screams and cries until he gets candy, what will he learn? He'll learn that you get candy when you cry---so now he'll cry to get the candy.◊sn{moral-hazard}
 
-Indeed as investor extraordinaire Charlie Munger ◊link[human-misjudgement]{says}: if you want to predict how people will behave, you only have to look at their incentives.  This is why the bailouts, while helpful in the short run (the child stopped crying), made the fundamental problem that enabled the crisis worse (the child will cry more in the future). Bad behaviour by banks and the people working at banks are even more likely now since they have learned that if they fail they will just get bailed-out, and keep their bonuses. They even passed laws to make it even easier for the Federal Reserve to step in and whatever they deem "too big to fail", without the ◊em{unnecessary} overhead of going through congress.◊sn{bail-in}
+Indeed, as investor extraordinaire Charlie Munger ◊link[human-misjudgement]{says}: if you want to predict how people will behave, you only have to look at their incentives.  This is why the bailouts, while helpful in the short run (the child stopped crying), made the fundamental problem that enabled the crisis worse (the child will cry more in the future). Bad behaviour by banks and the people working at banks are even more likely now since they've learned that if they fail they will just get bailed-out, and keep their bonuses. They even passed laws to make it even easier for the Federal Reserve to step in and rescue whatever they deem "too big to fail", without the ◊em{unnecessary} overhead of going through congress.◊sn{bail-in}
 
-I find it interesting to compare the incentives for banks with the ◊link[crypto-incentives]{incentives for cryptocurrency miners}. While banks are incentivized to gamble, exploit and cheat as much they can get away with the incentives for miners are to work in the network's best interest. While incentives makes the financial industry unstable, it's what makes cryptocurrencies secure.
+I find it interesting to compare the incentives for banks with the ◊link[crypto-incentives]{incentives for cryptocurrency miners}. While banks are incentivized to gamble, exploit and cheat as much they can get away with, the incentives for miners are to work in the network's best interest. While incentives makes the financial industry unstable, it's what makes cryptocurrencies secure.
 
 
 ◊(define crypto-incentives "/how_do_cryptocurrencies_work.html#the-50%-security-assumption")
@@ -267,7 +267,7 @@ I find it interesting to compare the incentives for banks with the ◊link[crypt
 
 ◊subhead{Will history repeat itself?}
 
-The 2008 financial crisis was a combination of a number of different factors working together. If only one were removed, for example if bankers didn't give out loans to anyone and their pets or if the rating agencies would rate the assets correctly, then the crisis would never have grown so big. And there were changes to the financial system after crisis which should prevent a repeat of the crisis.
+The 2008 financial crisis was a combination of a number of different factors working together. If only one were removed, for example if bankers didn't give out loans to everyone and their pets or if the rating agencies would rate the assets correctly, then the crisis would never have grown so big. And there were changes to the financial system after the crisis which should prevent a repeat of the crisis.
 
 But as I wrote previously, the core incentives problem is unsolved and even made worse. There won't be an exact repeat of the 2008 crisis, but we might see similar problems resurface in the future. It's like "curing" fever by lowering your body temperature, while leaving the virus infection intact.
 
@@ -287,7 +287,7 @@ History doesn't repeat itself, but it rhymes awfully well.
 
 ◊subhead{What if we used sound money?}
 
-With ◊em{sound money} nobody can manipulate the money supply. For example fiat backed by gold (as long as we trust the backers), actual gold coins or cryptocurrencies. If we used sound money could the financial crisis have been prevented?
+With ◊em{sound money} nobody can manipulate the money supply. For example fiat backed by gold (as long as we trust the backers), actual gold coins or cryptocurrencies are sound money. The question is: could the financial crisis have been prevented if we used sound money?
 
 Unfortunately, probably not. The housing and bond bubble might still have happened as the banks can still create mortgage backed securities, CDOs and other complex derivatives. Sound money cannot prevent anyone from creating and selling junk.
 
@@ -297,9 +297,9 @@ But the incentives would be different. Banks can still use fractional banking (c
     Of course they don't actually print physical bills worth billions of dollars, they just move digital numbers in some spreadsheets. The effect is the same.
 }
 
-Therefore the "heads I win, tails I get bailed-out" incentives would change to "heads I win, tails I lose". This would force banks to be more careful with their risk-taking, and if they overstep their bounds they fail. This might have bad short-term effects but would be more robust and healthy long-term.
+Therefore the "heads I win, tails I get bailed-out" incentives would change to "heads I win, tails I lose". This would force banks to be more careful with their risk-taking, and if they overstep their bounds they fail. This might have bad short-term effects but would be more robust and healthy in the long-term.
 
-Now you might say that we can solve this problem another way---for example with better regulation---and in this case maybe you're right. But as I'll go into in the ◊link[broken-system]{next chapter} there are more systematic problems with the modern financial system.
+Now you might say that we can solve this problem another way---for example with better regulation---and in this case maybe you're right. But as I'll go into in the ◊link[broken-system]{next chapter} there are more fundamental problems with the modern financial system.
 
 ◊(define broken-system "/a_broken_system.html")
 
