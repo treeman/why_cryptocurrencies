@@ -68,7 +68,13 @@ Who in turn will use it to buy other stuff, and in this way the counterfeited mo
     While it may sound strange, technology has been deflating in price forever. When computers were just introduced they were ◊em{extremely} expensive, but now everyone and their mother literally has one in their pocket. And probably several at home. Some even have one on their wrist.
 }
 
-Counterfeiting means everyones savings---the "old" money---will be worth less. This is why you shouldn't just store all your money under the mattress or in a bank account---the value will be eaten up by inflation.
+Counterfeiting means everyones savings---the "old" money---will be worth less. This is why you shouldn't just store all your money under the mattress or in a bank account---the value will be eaten up by inflation.◊sn{inflation-visualization}
+
+◊ndef["inflation-visualization"]{
+    ◊link[inflation-dollar-visualization]{Here's a cool visualization} of the expanding money supply and what $1 could buy.
+}
+
+◊(define inflation-dollar-visualization "http://money.visualcapitalist.com/buying-power-us-dollar-century/")
 
 ◊img[#:src "images/inflation.svg" #:link #t]{
     How the ◊link[swe-inflation]{inflation in Sweden} has caused the actual value of money to decrease.◊sn{why-sweden?}  
@@ -180,6 +186,13 @@ I don't think there's a better example of the hazards the lender of last resort 
 
 ◊subhead{A mountain of debt}
 
+◊; Very good
+◊; https://www.investopedia.com/updates/usa-national-debt/
+
+◊; For other countries as well, back to 1995
+◊; https://data.oecd.org/gga/general-government-debt.htm
+
+◊; China has an extreme amount of debt
 
 ◊subhead{Growing inequality}
 
