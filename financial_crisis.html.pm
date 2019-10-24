@@ -16,7 +16,7 @@
 During 2007--2008 the world experienced the biggest financial crisis since the 1930s ◊link[great-depression]{Great Depression}, often referred to as the ◊link[2008-crisis]{2008 financial crisis}. I'll try to give an condensed version of the crisis and how it may relate to ◊link[sound-money]{◊em{sound money}}.◊sn{sound-money}
 
 ◊ndef["sound-money"]{
-    Sound money is not prone to sudden changes in long term purchasing power, and the value is determined by the free-market.
+    Sound money is not prone to sudden changes in long term purchasing power, and the value is determined by the free market.
 }
 
 ◊(define sound-money "https://www.soundmoneydefense.org/sound-money-explained")
@@ -33,9 +33,15 @@ The financial crisis was caused by too many people borrowing too much money. The
     It might sound strange, but you can resell loans. For example when you take a loan at the bank, the bank now earns a small fee for the loan in return for the risk that you might not pay them back. The bank can decide to sell this loan to others, so they take the risk but earn the fees. Many such loans can be combined into bonds and sold or even insured.
 }
 
-This explanation is naturally very simplified. There were for example two bubbles that popped: the housing bubble and the much bigger bond bubble (based in large part on mortgage loans). The complex financial products (for example the mortgage bonds or the CDOs nobody really understood) appeared to be low-risk but were high-risk.  And of course the "heads I win, tails you lose" incentives at play all the way from top to bottom in the system.◊sn{villains}
+This explanation is naturally very simplified. There were for example two bubbles that popped: the housing bubble and the much bigger bond bubble (based in large part on mortgage loans). The complex financial products (for example the ◊link[mortgage-bonds]{mortgage bonds} or the ◊link[cdo]{CDOs} nobody really understood) appeared to be low-risk but were high-risk.  And of course the "heads I win, tails you lose" incentives at play all the way from top to bottom in the system.◊sn{villains}
 
-A lot of ink has been spent on articles, books and movies explaining the events better and in far more detail than I could hope to do. I particularly like the explanations given in the Oscar-winning movie ◊link[the-big-short]{The Big Short (2016)}. Just look at how they describe subprime mortgages and CDOs:
+It's not important to understand exactly how the complex financial products, such as CDOs, work; the important thing to know is experts didn't understand them either.
+
+◊(define mortgage-bonds "https://www.investopedia.com/terms/m/mortgage_bond.asp")
+◊(define cdo "https://www.investopedia.com/terms/c/cdo.asp")
+◊(define subprime-mortgage "https://www.investopedia.com/terms/s/subprime_mortgage.asp")
+
+A lot of ink has been spent on articles, books and movies explaining the events better and in far more detail than I could hope to do. I particularly like the explanations given in the Oscar-winning movie ◊link[the-big-short]{The Big Short (2016)}. Just look at how they describe ◊link[subprime-mortgage]{subprime mortgages} and CDOs:
 
 ◊qt[#:author "Margot Robbie, “The Big Short”"
     #:src "(youtube)"
@@ -56,11 +62,7 @@ A lot of ink has been spent on articles, books and movies explaining the events 
 ◊;youtube[margot-robbie]{ Margot Robbie describes subrime mortgages.  }
 ◊;youtube[anthony-bourdain]{Anthony Bourdain explains what a CDO is.}
 
-A pitch of humor sure makes for memorable explanations. But if it's too much Hollywood for your taste I recommend the book the movie is based on:  “◊link[the-big-short-book]{The Big Short: Inside the Doomsday Machine}” by Michael Lewis. Or if you're short on time maybe ◊link[11-min]{this 11 minute video} might suffice.◊sn{important-to-know}
-
-◊ndef["important-to-know"]{
-    It's not important to understand exactly how the complex financial products, such as subprime mortgages or CDOs, work---the important part to know is experts didn't understand them either.
-}
+A pitch of humor sure makes for memorable explanations. But if it's too much Hollywood for your taste I recommend the book the movie is based on:  “◊link[the-big-short-book]{The Big Short: Inside the Doomsday Machine}” by Michael Lewis. Or if you're short on time maybe ◊link[11-min]{this 11 minute video} might suffice.
 
 ◊(define 11-min "https://www.youtube.com/watch?v=bx_LWm6_6tA")
 ◊(define the-big-short "https://www.imdb.com/title/tt1596363/")
@@ -201,7 +203,7 @@ Then there's the case of ◊link[hubler]{Howie Hubler}, which to me exemplifies 
 How about the other traders and the "CDO managers" who sold junk disguised as safe assets to their customers? They became rich too.◊sn{be-banker?}
 
 ◊ndef["be-banker?"]{
-    I can't help but regret my life choices here. Bankers seem to have a pretty sweet deal---you'll get rich even if you have no idea what you're doing!
+    I can't help but regret my life choices here. Bankers seem to have a pretty sweet deal---you'll get rich even if you have no idea what you're doing! As long as you can sell shit to unsuspecting customers with a straight face...
 
     Well, I can try to take comfort that I didn't sell out my morality.
 }
@@ -293,13 +295,13 @@ Unfortunately, probably not. The housing and bond bubble might still have happen
 
 But the incentives would be different. Banks can still use fractional banking (create IOUs and inflate the money supply) but if they fail there's nobody to print money for them to bail them out. The bailouts in 2008--2009 were only possible because the Federal Reserve has the ability to print as much money as they want.◊sn{print-digital} There's no upper limit to the size of the bailout---they can always conjure enough. Not so with sound money.
 
+Therefore the unhealthy "heads I win, tails I get bailed-out" incentives would return to the normal "heads I win, tails I lose" incentives we see in any healthy gamble. This seemingly small but important change would force banks to be more careful with their risk-taking, and if they overstep their bounds they will fail. This might have bad effects in the short-term, but would lead to a more robust and healthy risk management in the long-term. The virus infection would be cured, but the fever might worsen temporarily.
+
+Now you might say that we can solve this problem another way---for example with better regulation---and in this case maybe you're right. But as I'll go into in the ◊link[broken-system]{next chapter} there are more fundamental problems with the modern financial system.
+
 ◊ndef["print-digital"]{
     Of course they don't actually print physical bills worth billions of dollars, they just move digital numbers in some spreadsheets. The effect is the same.
 }
-
-Therefore the "heads I win, tails I get bailed-out" incentives would change to "heads I win, tails I lose". This would force banks to be more careful with their risk-taking, and if they overstep their bounds they fail. This might have bad short-term effects but would be more robust and healthy in the long-term.
-
-Now you might say that we can solve this problem another way---for example with better regulation---and in this case maybe you're right. But as I'll go into in the ◊link[broken-system]{next chapter} there are more fundamental problems with the modern financial system.
 
 ◊(define broken-system "/a_broken_system.html")
 
