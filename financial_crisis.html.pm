@@ -13,7 +13,7 @@
   }
 }
 
-During 2007--2008 the world experienced the biggest financial crisis since the 1930s ◊link[great-depression]{Great Depression}, often referred to as the ◊link[2008-crisis]{2008 financial crisis}. I'll try to give an condensed version of the crisis and how it may relate to ◊link[sound-money]{◊em{sound money}}.◊sn{sound-money}
+During 2007--2008 the world experienced the biggest financial crisis since the 1930s ◊link[great-depression]{Great Depression}, often referred to as the ◊link[2008-crisis]{2008 financial crisis}. What was so crazy about the crisis? And is there a relationship to ◊link[sound-money]{◊em{sound money}}?◊sn{sound-money}
 
 ◊ndef["sound-money"]{
     Sound money is not prone to sudden changes in long term purchasing power, and the value is determined by the free market.
@@ -297,7 +297,7 @@ But the incentives would be different. Banks can still use fractional banking (c
 
 Therefore the unhealthy "heads I win, tails I get bailed-out" incentives would return to the normal "heads I win, tails I lose" incentives we see in any healthy gamble. This seemingly small but important change would force banks to be more careful with their risk-taking, and if they overstep their bounds they will fail. This might have bad effects in the short-term, but would lead to a more robust and healthy risk management in the long-term. The virus infection would be cured, but the fever might worsen temporarily.
 
-Now you might say that we can solve this problem another way---for example with better regulation---and in this case maybe you're right. But as I'll go into in the ◊link[broken-system]{next chapter} there are more fundamental problems with the modern financial system.
+◊;Now you might say that we can solve this problem another way---for example with better regulation---and in this case maybe you're right. But as I'll go into in the ◊link[broken-system]{next chapter} there are more fundamental problems with the modern financial system.
 
 ◊ndef["print-digital"]{
     Of course they don't actually print physical bills worth billions of dollars, they just move digital numbers in some spreadsheets. The effect is the same.
