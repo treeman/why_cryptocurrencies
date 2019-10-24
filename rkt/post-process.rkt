@@ -35,7 +35,6 @@
                 (cons (expand-splices x) acc)))
            '()
            in)
-
     in))
 
 ;; Remove all elements with matching class.
