@@ -24,8 +24,8 @@
      for_the_unbanked.html)
     (better_currency.html
      financial_crisis.html
-     a_broken_system.html
-     the_blind_leading_the_blind.html
+     "A broken system"
+     "The blind leading the blind"
      "Anonymous Money"
      "A global currency")
     ("Brave new world"
