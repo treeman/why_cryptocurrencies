@@ -2,7 +2,7 @@
 
 ◊(define-meta title "A better currency")
 ◊(define-meta subtitle "Magic internet money")
-◊(define-meta updated "2019-08-30T14:47:12+02:00")
+◊(define-meta updated "2019-10-25T07:05:45+02:00")
 ◊(define-meta uuid "10e625f0-2470-49a9-ae74-36f0c78d943b")
 
 ◊epigraph{
