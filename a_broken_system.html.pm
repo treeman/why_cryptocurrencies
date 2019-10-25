@@ -20,8 +20,9 @@
 
 In the chapter ◊link[what-is-money]{What is money?} I tried to give some historical examples of money and list some properties that good money should have. Unfortunately it's not enough to understand the current economic system, which is a completely different beast.
 
-It's a system that based on money that isn't sound---the money doesn't fulfill the properties good money should have. I'll even go so far to say there's something fundamentally broken with the economic system we use today.
+The system is based on money that ◊link[sound-money]{isn't sound}---the money supply can be manipulated freely---which have several far-reaching negative consequences. I'll even go so far to say there's something fundamentally broken with the economic system we use today.
 
+◊(define sound-money "https://www.soundmoneydefense.org/sound-money-explained")
 ◊(define what-is-money "/what_is_money.html")
 
 
@@ -104,7 +105,7 @@ Counterfeiting also means redistributing wealth from everyone to the counterfeit
 
 ◊subhead{Legal counterfeiting}
 
-While I think most can agree that counterfeiting shouldn't be allowed, the economic system is built upon legal counterfeiting. There are entities that have the legal right to print money, which has the same negative consequences on the economy that counterfeiting has. They're the central banks and regular banks too.
+While I think most can agree that counterfeiting shouldn't be allowed, the economic system is built upon legal counterfeiting. There are entities that have the legal right to print money---with the same negative consequences on the economy that counterfeiting has. They're the central banks and regular banks too.
 
 The central banks, the Federal Reserve (Fed) in the U.S. or the European Central Bank (ECB) in the EU, are the only ones allowed to print physical money. Which they have to do, if only to replace old bills.◊sn{quantitive-easing} They also have an inflation target, usually 2% or 3%, meaning the goal is to devalue the money. The rationale is it drives economic growth because ◊link[inflation-rational]{shoppers will buy now to avoid higher prices later}.◊sn{inflation-growth?}
 
@@ -170,9 +171,9 @@ The system works as long as people just keep their money at the bank, and only o
 
 ◊subhead{Lender of last resort}
 
-As money printers the central banks play an important roll---as the "lender of last resort". This means if all else fails, for example if the banks are about to fail because they have too little reserves or if the economy is going bad, then central banks can step in and save them. This is exactly what happened during ◊link[financial-crisis]{the 2008 financial crisis}, where banks and other institutions messed up in a major way but were bailed-out and made whole again.
+As money printers the central banks play an important roll---as the "lender of last resort". This means when all else fails, for example if the banks are about to go bankrupt because they have too little reserves or if the economy is going bad, then central banks can step in and save them. This is exactly what happened during ◊link[financial-crisis]{the 2008 financial crisis}, where banks and other institutions messed up in a major way but were bailed-out and made whole again.
 
-This means the real check against fractional banking (the risk of going bankrupt) is thrown away and replaced with regulation that's supposed to keep the banks in check but make the banks more robust against failure. While fine in theory, in practice it means banks are now incentivized to push the limits any way they can.
+This means the real check against fractional banking (the risk of going bankrupt) is thrown away and replaced with regulation that's supposed to keep the banks in check, while making the banks more robust against failure. While fine in theory, in practice it means banks are now incentivized to push the limits any way they can.
 
 I don't think there's a better example of the hazards the lender of last resort creates than the 2008 financial crisis, which I wrote about in the ◊link[financial-crisis]{previous chapter}. I feel the term ◊link[moral-hazard]{◊em{moral hazard}}, to describe someone taking risks others will pay for, is too soft to describe what happened there.◊sn{crisis-terms}
 
@@ -184,6 +185,15 @@ I don't think there's a better example of the hazards the lender of last resort 
 ◊(define moral-hazard "https://www.thebalance.com/moral-hazard-what-it-is-and-how-it-works-315515")
 
 
+◊subhead{The gas and the break}
+
+The economic theories that almost all modern governments and central banks says that they should create demand and drive the economy during tough times, and try to slow it down during booms
+
+◊;Governments and central banks follow ◊link[keynesian-economics]{Keynesian economics}, which basically says the government should create demand
+
+◊(define keynesian-economics "https://www.thebalance.com/keynesian-economics-theory-definition-4159776")
+
+
 ◊subhead{A mountain of debt}
 
 ◊; Very good
@@ -193,6 +203,7 @@ I don't think there's a better example of the hazards the lender of last resort 
 ◊; https://data.oecd.org/gga/general-government-debt.htm
 
 ◊; China has an extreme amount of debt
+
 
 ◊subhead{Growing inequality}
 
