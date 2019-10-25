@@ -2,7 +2,7 @@
 
 ◊(define-meta title "The financial crisis, bad loans and bailouts")
 ◊(define-meta subtitle "The doomsday, broken incentives and moral hazard")
-◊(define-meta updated "2019-08-30T15:47:12+02:00")
+◊(define-meta updated "2019-10-25T07:06:14+02:00")
 ◊(define-meta uuid "0da3165e-e470-4143-a658-4b2858f3a148")
 
 ◊epigraph{
