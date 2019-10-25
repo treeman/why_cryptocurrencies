@@ -249,6 +249,23 @@
 (define (decoded-figcaption . args)
   `(figcaption ,@(std-decode args)))
 
+(define (youtube url . caption)
+  (define id
+    (match (regexp-match #rx"https?://www\\.youtube\\.com/watch\\?v=([A-Za-z0-9_-]+)" url)
+      [(list _ id) id]
+      [else (error "Bad youtube url: " url)]))
+  (define embedded-url
+    (string-append "//www.youtube.com/embed/" id))
+
+  (define decoded-caption (std-decode caption))
+  `(figure
+     (div ((class "video-wrapper"))
+       (div ((class "video-container"))
+         (iframe ((src ,embedded-url)
+                  (frameborder "0")
+                  (allow "fullscreen")))))
+     (figcaption ,@decoded-caption)))
+
 
 ;;; Margin-notes and side-notes
 (define note-defs (make-hash))
@@ -281,17 +298,32 @@
                   #:ref ref-in)
   (define id (format "nd-~a" ref-in))
   (define ref (string->symbol id))
-  (define (replace ref)
+  (define (replace uid)
     (define def (hash-ref note-defs ref #f))
     (unless def (error (format "missing ref '~s'" ref)))
+    (define uid-s (symbol->string uid))
     ;; Use splice-me to be able to return multiple elements inline.
     `(splice-me
-      (label ((class ,label-class) (for ,id)) ,label-content)
-      (input ((id ,id) (class "margin-toggle") (type "checkbox")))
+      (label ((class ,label-class) (for ,uid-s)) ,label-content)
+      (input ((id ,uid-s) (class "margin-toggle") (type "checkbox")))
       (span ((class ,span-class)) ,@def)))
 
-  (register-replacement ref replace)
-  ref)
+  ;; Generate a unique id for each note, so we can fold multiple references
+  ;; correctly.
+  (define uid (gen-note-uid id))
+  (register-replacement uid replace)
+  uid)
+
+(define note-uids (make-hash))
+(define (gen-note-uid id)
+  (define (find-note-uid c)
+    (define uid (string->symbol (format "~a~a" id c)))
+    (if (hash-ref note-uids uid #f)
+      (find-note-uid (+ c 1))
+      (begin
+        (hash-set! note-uids uid #t)
+        uid)))
+  (find-note-uid 0))
 
 (define (mn ref-in)
   (note-ref #:label-class "margin-toggle margin-symbol"

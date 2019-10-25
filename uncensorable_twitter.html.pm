@@ -98,7 +98,8 @@ A Twitter-like service based on a cryptocurrency does not have these problems. â
 
 â—Šqt[#:src "1984"
     #:quote-src #t
-    #:author "George Orwell"]{
+    #:author "George Orwell"
+    #:url 1984-book]{
     Who controls the past controls the future. Who controls the present controls the past.
 }
 

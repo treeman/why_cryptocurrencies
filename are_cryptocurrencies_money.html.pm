@@ -2,7 +2,7 @@
 
 ◊(define-meta title "Are cryptocurrencies money?")
 ◊(define-meta subtitle "How well do they work as money?")
-◊(define-meta updated "2019-05-23T07:24:21+02:00")
+◊(define-meta updated "2019-10-25T07:05:26+02:00")
 ◊(define-meta uuid "f04af7c8-5fee-45c4-a5a4-80a3f6fbd31b")
 
 As we saw in the ◊link[prev-chapter]{previous chapter}, practically anything can be used as money. Therefore it's more useful to ask:
@@ -208,10 +208,14 @@ There are mainly two things holding it back today:
 
 Both of these are functions of how new cryptocurrencies are. When the market matures, the volatility will naturally decrease. Barring any large weaknesses the network effect will only grow larger---cryptocurrencies do provide some very good benefits, as we shall see.
 
-Perhaps it's to be expected that cryptocurrencies aren't global money yet---they're only a decade old after all.
+Perhaps it's to be expected that cryptocurrencies aren't global money yet---they're only a decade old after all.◊sn{lightbulb}
+
+◊ndef["lightbulb"]{
+    Marc Levinson writes in “◊link[the-box-book]{The Box}” that 20 years after the invention of the light bulb, arguably one of the most important inventions of all time, only 3% in the U.S. were using it. Cryptocurrencies are still in their infancy.
+}
 
 ◊ndef["shock-of-the-old"]{
-    For a different perspective of how technology gets adopted I recommend "The Shock of the Old" by David Edgerton. He argues that technology must be significantly better than the previous to see use, and even then the adoption is not as swift as one might think.
+    For a different perspective of how technology gets adopted I recommend “◊link[shock-of-the-old-book]{The Shock of the Old}” by David Edgerton. He argues that technology must be significantly better than the previous to see use, and even then the adoption is not as swift as one might think.
 
     Another perspective on network effects is given by Kevin Simler in his blog post ◊link[going-critical]{Going Critical}.
 }

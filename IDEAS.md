@@ -41,7 +41,20 @@ Ignorance is strength.”
       He who controls the spice controls the universe.
   }
 
+“Compound interest is the eighth wonder of the world. He who understands it, earns it ... he who doesn't ... pays it.”
+
+― Albert Einstein 
+
 <https://www.reddit.com/r/btc/comments/cuqqe5/let_me_issue_and_control_a_nations_money_and_i/>
+
+◊qt[#:author "John Tuld"
+    #:quote-src #t
+    #:src "Margin Call"]{
+  There are three ways to make a living in this business: be first, be smarter or cheat.
+}
+
+
+# Better digital payments
 
 # A better currency
 
@@ -60,6 +73,9 @@ Germany in Uproar as Negative Rates Threaten Saving Obsession
 More money than anyone imagined: an explanation for why the bubble never burst 
 <https://news.ycombinator.com/item?id=20535390>
 
+Iceland jails bankers:
+<https://www.bloomberg.com/news/features/2016-03-31/welcome-to-iceland-where-bad-bankers-go-to-prison>
+
 ## Blind leading the blind
 
 ”Även om erfarenheten med negativa räntor är begränsade drar vi slutsatsen att det har bidragit till ytterligare penningpolitiska stimulanser och enklare ekonomiska villkor”, skriver IMF:s finansiella rådgivare Jose Viñals.
@@ -70,6 +86,17 @@ Ekonomen och mottagaren av ekonomipriset till Nobels minne Paul Krugman om hur S
 https://www.svd.se/har-ar-arets-citat-fran-naringslivet
 
 Also the "magic money tree"
+
+https://www.svd.se/professor-riksbanken-har-inget-mirakelmedel
+https://www.svd.se/experter-oeniga-om-rantan-fruktar-sankning
+
+
+See the case against the FED.
+
+How the FED can be a government agency, completely outside government control:
+
+    The temptetion is to step on the monetary accelerator or at least to avoid the monetary break until after the next election... Giving in to such temptations is likely to impart an inflationary bias to the economy and could lead to instability, recession and economic stagnation. - Alan Greenspan, Chairmain of the FED
+
 
 ## Protection against government seizures
 
@@ -140,8 +167,9 @@ Credit cards have a privacy problem
 Administration Using the Full Power of the Surveillance State on Whistleblowers
 <https://news.ycombinator.com/item?id=20615084>
 
-
 <https://www.cbc.ca/news/business/banking-information-shared-with-third-parties-1.5102931>
+
+In 2018, 60 of the largest companies in the USA paid no taxes on pre-tax income of 79 billion dollars. (The Laundromat)
 
 ## Black markets
 
@@ -190,13 +218,14 @@ China bans 23M from buying travel tickets as part of 'social credit' system
 Sweden's cashless society is no longer a utopia
 <https://news.ycombinator.com/item?id=18422422>
 
+Debate rages in Austria over enshrining use of cash in the constitution
+<https://www.euractiv.com/section/data-protection/news/debate-rages-in-austria-over-enshrining-use-of-cash-in-the-constitution/>
 
-## Reshaping the economics of the web
+## Reshaping the economics of the web (?!?!)
 
 Cash for the internet, help content producers get paid as an alternative for ads.
 
 <https://news.ycombinator.com/item?id=20987628>
-
 
 # Other use
 
@@ -227,6 +256,29 @@ A peer-to-peer voting algorithm, without blockchain
 <http://vixra.org/pdf/1905.0239v1.pdf>
 
 
+# Appendix
+
+## Do everyone need to run a full node?
+
+(Maybe not?)
+
+## Who is Satoshi Nakamoto?
+
+## Is Facebook's Libra a cryptocurrency?
+
+<https://foreignpolicy.com/2019/06/24/971554-facebook-bitcoin-libra-crypto-bad/>
+
+“Can’t wait for a cryptocurrency with the ethics of Uber, the censorship resistance of Paypal, and the centralization of Visa, all tied together under the proven privacy of Facebook.”
+
+https://news.ycombinator.com/item?id=21161233
+
+## Explaining cryptography
+
+1. sha256 and one-way hash functions
+2. public/private-key crypto
+3. public, private keys in Bitcoin and seeds
+
+
 # Bitcoin documentaries
 
 <https://coinsutra.com/bitcoin-documentaries/>
@@ -234,10 +286,59 @@ A peer-to-peer voting algorithm, without blockchain
     "The idea was to create money whose value couldn't be manipulated by a central authority."
     Cyprus, stole money from the people's bank accounts
     Good for understanding the beginning history of Bitcoin
-* The Bitcoin Gospel (2015)
+* Bitcoin the end of money as we know it (2015)
+    Magic internet money
+    "Politicians credit the strong economy to their wise decisions
+     Businesses junmped into new profitable markets, ignoring risk.
+     In fact the experts said there was no risk."
+    Rome 33 AD, the first government bailout. Emperor Tiberius.
+    New kind of money: IOUs, trading debt and trusting the word of people
+    Excellent history of money
+    1929, the great depression
+        forcing all citizens to sell their gold because they couldn't print enough money
+    1971 Nixon severed the convertibility of the dollar into gold or other reserve assets...
+    Now the dollar is only based on one thing: trust
+    The U.S. spends 400 billion in interest every year
+        When a government spends more to pay interest than it collect in taxes... It prints more money
+    "The magic money machine" - money isn't created, it just magically appears in the bank's balance
+    The FED is not a government agency. It's a private entity and its shareholders are banks which earn a dividend. As much as 80 billion dollars per year, total.
+        (Which banks? It's a secret)
+    The magic money machine answers to no one.
+    The FED is practicing planning economy. It is bound to make mistakes even with the best of intentions.
+    Inflation is a far bigger tax than income tax. Income tax you pay it once, inflation you pay every single year!
+    $1 at 1913 invested would be $7, +624%
+    $1 at 1913 held would be a near-total loss -96%
+
+    Our financial crisis had everything to do with virtual dollars. Too many people with very little income borrowed a lot of money they could never repay.
+    But the banks didn't care. They didn't have to. They quickly made and sold shaky loans to someone else, for a profit.
+    Selling bad loans was a good business, until the whole thing blew up in a global financial crisis.
+
+    The magic money machine destroyed 30 million real jobs.
+    Ex-barclays bankers charged with Libor rigging (CNN Money)
+    "In medieval Europe, a banker who couldn't pay depositors was hanged. Today, that same banker would get bailed out, paid bonuses and enjoy some tax benefits, too."
+    2014 allows bankers to once again make risky derivatives bets with bank deposits.
+
+    Old car laws
+    http://mentalfloss.com/article/71555/ridiculous-uk-traffic-laws-yore
+
+    U.S. has laws to prevent people from creating their own money
+        See the Liberty Dollar
+    Nobody really knows how many dollars exist
+        Nobody knows how much banks are printing to pad their own pockets
+    Each credit card purchase require personal information and credit card databases are regularly hacked
+    15 - 30% remittance to remote areas
+    5% for competitors, 10% western union
+    "Bitcoin is a mirage" - Warren Buffet
+
+    "I 'm sure that in 20 years there will either be very large transaction volume or no volume." -- Satoshi Nakamoto
+        https://bitcointalk.org/index.php?topic=48.msg329#msg329
 * Banking On Bitcoin (2016)
     "If privacy is outlawed, only outlaws will have privacy"
-    Start up again at 50 min
+* The Bitcoin Gospel (2015)
+    "If privacy is outlawed, only outlaws will have privacy"
+    Focus on Bitcoin being a replacement for banks. Focus on Roger Ver, and we get to see him do some BJJ!
+    It's always best if the leader is aloof or distant. Mythology around him.
+    "Governments are murdering children!"
 
 * Bitcoin-Shape The Future
 * The Blockchain and Us
@@ -275,12 +376,62 @@ https://news.ycombinator.com/item?id=11421352
 
 1. On writing well
 2. After the Music Stopped: The Financial Crisis, the Response, and the Work Ahead 
+    "When the music stops, in terms of liquidity, things will be complicated. But as long as the music is playing, you’ve got to get up and dance. We’re still dancing,"
+        - Citigroup CEO Chuck Prince, 2007
+    Merely months before the financial meltdown
+
+    12 million jobs lost
+    The Lehman bancruptcy signifies the start of the financial crisis. The U.S. economy was already in a rocky state
 3. The case against the FED
+4. The Big Short: Inside the Doomsday Machine
+    "How do you make poor people feel wealthy when wages are stagnant? You give them cheap loans"
+    "This wasn't just another company---this was the biggest company by far making subprime loans. And it was engaged in just blatant fraud. They should have taken the CEO out and hung him up by his fucking testicles. Instead they sold the company and the CEO made a hundred million dollars." --- Eisman
+        Comment about Household, years before the crisis
 
 # Videos
 
 The Money Masters
 <https://www.youtube.com/watch?v=lbarjpJhSLw>
+
+
+## The Big Short
+
+    It ain't what you don't know that gets you into trouble.
+    It's what you know for sure that just ain't so.
+            Mark Twain
+
+
+https://www.youtube.com/watch?v=anSPG0TPf84
+Margot Robbie: [In a bubble bath with a glass of champagne] Basically, Lewis Ranieri's mortgage bonds were amazingly profitable for the big banks. They made billions and billions on their 2% fee they got for selling each of these bonds. But then, they started running out of mortgages to put in them. After all, there are only so many homes and so many people with good enough jobs to buy them, right? So, the banks started filling these bonds with riskier and riskier mortgages. [Butler pours more champagne into her glass] (Thank you, Benjamin) That way, they can keep that profit machine churning, alright? By the way, these risky mortgages are called "subprime." So, whenever you hear the word "subprime," think "shit." Our friend, Michael Burry, found out that these mortgage bonds that were supposedly 65% AAA, were actually just, mostly, full of shit, so now, he's going to "short" the bonds, which means "to bet against." Got it? Good...[Takes a sip of champagne] Now, fuck off.
+
+
+Mortgage backed securities (mortgage bonds)
+But ran out of mortgages. The banks started filling these bonds with riskier and riskier mortgages (subprime).
+Supposeduly safe securities are mostly shit.
+
+    bad loans, it's a time bomb
+
+https://www.youtube.com/watch?v=Vrv9odqUvlw
+OK, I'm a chef on a Sunday afternoon, setting the menu at a big restaurant. I ordered my fish on Friday, which is the mortgage bond that Michael Burry shorted. But some of the fresh fish doesn't sell. I don't know why. Maybe it just came out halibut has the intelligence of a dolphin. So, what am I going to do? Throw all this unsold fish, which is the BBB level of the bond, in the garbage, and take the loss? No way. Being the crafty and morally onerous chef that I am, whatever crappy levels of the bond I don't sell, I throw into a seafood stew. See, it's not old fish. It's a whole new thing! And the best part is, they're eating 3-day-old halibut. *That* is a CDO. 
+
+
+But at least we're going to see some of them go to jail.
+Except they took the money the American people gave them and gave themselves huge bonuses.
+
+A single banker went to jail.
+
+In 2015, several banks began selling billions in something called a "bespoke tranche opportunity."
+Which, according to Bloomberg News, is just another name for a CDO.
+
+
+https://www.goodreads.com/work/quotes/6654434-the-big-short-inside-the-doomsday-machine
+https://www.bustle.com/articles/136540-9-big-short-quotes-thatll-remind-you-how-tragic-this-comedy-really-is
+
+## The Big Short: Inside the Doomsday Machine, Michael Lewis
+
+ “What are the odds that people will make smart decisions about money if they don’t need to make smart decisions—if they can get rich making dumb decisions?”
+― Michael Lewis, The Big Short: Inside the Doomsday Machine 
+
 
 # Research/misc links
 
@@ -311,12 +462,14 @@ China forced organ harvesting
 Hong Kong ISP Association’s Statement on Selective Blocking of Internet Services
 <https://news.ycombinator.com/item?id=20824759>
 
-
 Lot's of economic books:
 <https://www.reddit.com/r/btc/comments/cp9ows/just_a_few_of_the_books_i_read_cover_to_cover/>
 
 JPMorgan: We Believe The Dollar Could Lose Its Status As World's Reserve Currency
 <https://www.zerohedge.com/news/2019-07-23/jpmorgan-we-believe-dollar-could-lose-its-status-worlds-reserve-currency>
+
+France and Germany Agree to Block Facebook's Libra
+<https://news.ycombinator.com/item?id=20970774>
 
 Fed cuts rates on 7-3 vote, gives mixed signals on next move
 <https://news.ycombinator.com/item?id=21008239>
@@ -333,5 +486,30 @@ How r/bitcoin got rid of old mods
 U.S. drone strike kills 30 pine nut farm workers in Afghanistan 
 <https://news.ycombinator.com/item?id=21018041>
 
+Secret FBI Subpoenas Scoop Up Personal Data from Scores of Companies
+<https://news.ycombinator.com/item?id=21025262>
+
+"Lender of last resort"
+
+# Videos
+
+◊qt[#:author "Margot Robbie"
+    #:src "The Big Short"
+    #:quote-src #t
+    #:url "https://www.youtube.com/watch?v=anSPG0TPf84"]{
+    Margot Robbie: [In a bubble bath with a glass of champagne] Basically, Lewis Ranieri's mortgage bonds were amazingly profitable for the big banks. They made billions and billions on their 2% fee they got for selling each of these bonds. But then, they started running out of mortgages to put in them. After all, there are only so many homes and so many people with good enough jobs to buy them, right? So, the banks started filling these bonds with riskier and riskier mortgages. [Butler pours more champagne into her glass] (Thank you, Benjamin) That way, they can keep that profit machine churning, alright? By the way, these risky mortgages are called "subprime." So, whenever you hear the word "subprime," think "shit." Our friend, Michael Burry, found out that these mortgage bonds that were supposedly 65% AAA, were actually just, mostly, full of shit, so now, he's going to "short" the bonds, which means "to bet against." Got it? Good...[Takes a sip of champagne] Now, fuck off.
+}
+
+
+◊qt[#:author "Anthony Bourdain"
+    #:src "The Big Short"
+    #:quote-src #t
+    #:url "https://www.youtube.com/watch?v=Vrv9odqUvlw"]{
+    OK, I'm a chef on a Sunday afternoon, setting the menu at a big restaurant. I ordered my fish on Friday, which is the mortgage bond that Michael Burry shorted. But some of the fresh fish doesn't sell. I don't know why. Maybe it just came out halibut has the intelligence of a dolphin. So, what am I going to do? Throw all this unsold fish, which is the BBB level of the bond, in the garbage, and take the loss? No way. Being the crafty and morally onerous chef that I am, whatever crappy levels of the bond I don't sell, I throw into a seafood stew. See, it's not old fish. It's a whole new thing! And the best part is, they're eating 3-day-old halibut. *That* is a CDO. 
+}
+
 # Unsorted
+
+Anonymous bearer shares
+    Anonymous control of money
 

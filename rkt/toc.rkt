@@ -22,9 +22,9 @@
      freezing_of_merchant_accounts.html
      uncensorable_donations.html
      for_the_unbanked.html)
-    ("A better currency"
-     "The financial crisis, bad loans and bail-outs"
-     "Dangers of inflation"
+    (better_currency.html
+     financial_crisis.html
+     "A broken system"
      "The blind leading the blind"
      "Anonymous Money"
      "A global currency")

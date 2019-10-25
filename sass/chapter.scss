@@ -180,7 +180,12 @@ blockquote > footer {
 blockquote > footer > cite {
     font-style: italic;
 }
-
+// Should we shut it down for small text?
+//blockquote > footer a:link {
+    //text-decoration: underline;
+    //background: none;
+    //text-shadow: none;
+//}
 
 .epigraph {
     margin: 2em 0;
@@ -740,6 +745,29 @@ ul > li.neg:before {
     padding-left: 1.2rem;
 }
 
+/*
+ * Pretty video embedding
+ */
+.video-wrapper {
+    //@extend %media-offset-wrapper;
+    //margin: 1em 0;
+}
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+}
+
+.video-container iframe, .video-container object, .video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
 table.address-message {
     font-family: $code-font-family;
     font-size: 0.71rem;
@@ -846,6 +874,27 @@ table.address-message {
     .hn-title {
         font-weight: bold;
         margin-right: 0.8em;
+    }
+}
+
+.fractional-table-ex {
+    @extend %sans-serif-tnum;
+    font-size: 0.95rem;
+    margin: 1em 0 1.2em 0;
+
+    .row {
+        width: 100%;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
+    .header {
+        font-weight: bold;
+    }
+    .cell {
+        width: 5em;
+        text-align: center;
+        margin-right: 1.5em;
     }
 }
 

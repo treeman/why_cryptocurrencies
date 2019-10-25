@@ -2,7 +2,7 @@
 
 ◊(define-meta title "Properties of a cryptocurrency")
 ◊(define-meta subtitle "Trustless and permissionless")
-◊(define-meta updated "2019-04-03T20:04:00+02:00")
+◊(define-meta updated "2019-10-25T07:07:05+02:00")
 ◊(define-meta uuid "176f3433-baba-49d6-ab43-9c08061f0682")
 
 ◊epigraph{
@@ -116,17 +116,15 @@ I sure don't know who's right. It's probably best to be skeptical of both camps-
 ◊(define inflation-good "http://inflationmatters.com/keynesian-inflation-theory/")
 ◊(define inflation-bad "https://austrianeconomics.fandom.com/wiki/Inflation")
 
-◊qt[#:author "Daniel Kahneman" #:src "\"Thinking, Fast and Slow\""]{
+◊qt[#:author "Daniel Kahneman" #:src "Thinking, Fast and Slow" #:quote-src #t #:url thinking-fast-and-slow-book]{
     acquisition of skills requires a regular environment, an adequate opportunity to practice, and rapid and unequivocal feedback about the correctness of thoughts and actions. ◊mn{tfas}
 }
 
 Either way it's not an argument against cryptocurrencies in general as they can be made either inflationary or deflationary.
 
 ◊ndef["tfas"]{
-    The book ◊link[thinking-fast-and-slow]{"Thinking, Fast and Slow"} is fantastically thought provoking.
+    The book “◊link[thinking-fast-and-slow-book]{Thinking, Fast and Slow}” is fantastically thought provoking.
 }
-
-◊(define thinking-fast-and-slow "https://www.amazon.com/Thinking-Fast-Slow-Daniel-Kahneman/dp/0374533555")
 
 ◊ndef["bitcoin-supply"]{
      The emission rate in Bitcoin approximates the rate gold is mined. In Monero the tail emission is there to replace lost coins and to make sure rewards for miners don't run out.
@@ -143,17 +141,13 @@ Either way it's not an argument against cryptocurrencies in general as they can 
 
 Bitcoin uses a public ledger where all transactions are public, so it isn't anonymous. It's pseudo-anonymous---while you can see transactions and addresses you don't know who owns an address. But you know someones address and can then trace all past and future transactions moving through that address. You can use a ◊link[blockchair]{blockchain explorer} to see for yourself.
 
-There are cryptocurrencies that tries to hide all transactions.◊sn{monero} On them you cannot trace transactions on the blockchain and it makes blacklisting addresses impossible.
-
-Since these projects exists I will call cryptocurrencies anonymous, just keep in mind not all are.
+There are cryptocurrencies that tries to hide all transactions.◊sn{monero} On them you cannot trace transactions on the blockchain and it makes blacklisting addresses impossible. Since these projects exists I will call cryptocurrencies anonymous, just keep in mind not all are.
 
 ◊ndef["monero"]{
     Monero is perhaps the most well known cryptocurrency that hides transactions' details by default.
 
     There are others where you can opt-in to hide some transactions but otherwise they can be traced. This also exists as a service on top of Bitcoin, see for example ◊link[coinjoin]{CoinJoin}.
 }
-
-
 
 
 ◊subhead{Large and small amounts behave the same}
@@ -169,9 +163,7 @@ It's also easy to split coins into small parts.◊sn{satoshis} In fact you don't
 
 ◊subhead{Borderless}
 
-Cryptocurrencies are inherently global. They are usable wherever you are as long as you have an internet connection. You can even send to wallets which are offline◊sn{cold-storage} but to retrieve them you need to access the internet.
-
-Technically you could do transfers completely offline---on paper---but they would be unconfirmed and might not be valid when you do want to use them.
+Cryptocurrencies are inherently global. They are usable wherever you are as long as you have an internet connection. You can even send to wallets which are offline◊sn{cold-storage} but to retrieve them you need to access the internet. Technically you could do transfers completely offline---on paper---but they would be unconfirmed and might not be valid when you do want to use them.
 
 ◊ndef["cold-storage"]{
     Offline wallets with no computer contact is called cold storage. It's an excellent way to store large amounts you're not planning to use for some time.
