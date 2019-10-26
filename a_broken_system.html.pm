@@ -22,6 +22,8 @@ In the chapter ◊link[what-is-money]{What is money?} I tried to give some histo
 
 The system is based on money that ◊link[sound-money]{isn't sound}---the money supply can be manipulated freely---which have several far-reaching negative consequences. I'll even go so far to say there's something fundamentally broken with the economic system we use today.
 
+◊todo{Reformulate}
+
 ◊(define sound-money "https://www.soundmoneydefense.org/sound-money-explained")
 ◊(define what-is-money "/what_is_money.html")
 
@@ -30,7 +32,7 @@ The system is based on money that ◊link[sound-money]{isn't sound}---the money 
 
 Imagine a counterfeiter, who has the ability to print money from thin air.◊sn{magic-printer} What would he do with all the money? What would ◊em{you} do?
 
-Personally I would probably pay off my loans, renovate our house, go on vacation and buy some LEGO®. If I was smart I would also invest it; buy some stocks, some gold, maybe a house or two and rent them out. In short I would buy a bunch of stuff---and I think most would do the same.
+Personally I would probably pay off my loans, renovate our house, go on vacation and buy a bunch of LEGO®. If I was smart I would also invest it; buy some stocks, some gold, maybe a house or two and rent them out. In short I would buy a bunch of stuff---and I think most would do the same.
 
 If I did print money, a ◊strong{lot} of money, and spent it like this---what would the effect on the economy be?◊sn{case-against-fed}
 
@@ -51,9 +53,9 @@ Who in turn will use it to buy other stuff, and in this way the counterfeited mo
 ◊ol{
     ◊li{Higher prices.
 
-        Because there is more money going around, with the same amount of goods, the prices will rise. When prices rise and the same amount of money buys you less stuff, we call it ◊em{inflation}.◊sn{deflation}
+        Because there is more money going around, with the same amount of goods, the prices will rise. For instance if all the money in the world would double overnight, then naturally all prices would double too. Yesterday's $100 bill would today only get you $50 worth of stuff today.
 
-        For example if all the money in the world would double overnight, then naturally all prices would double too. Yesterday's $100 bill would today only get you $50 worth of stuff today. Or how my grandmother told us how she used to buy candy for one cent (◊sans-tnum{0.01 SEK}). Today our smallest coin is ◊sans-tnum{1 SEK}.
+        When prices rise and the same amount of money buys you less stuff, we call it ◊em{inflation}.◊sn{deflation} It's how my grandmother could buy candy for one cent (◊sans-tnum{0.01 SEK}) when she was a child, while today our smallest coin is ◊sans-tnum{1 SEK}.
 
     }
     ◊li{Redistribution of wealth.
@@ -105,7 +107,7 @@ Counterfeiting also means redistributing wealth from everyone to the counterfeit
 
 ◊subhead{Legal counterfeiting}
 
-While I think most can agree that counterfeiting shouldn't be allowed, the economic system is built upon legal counterfeiting. There are entities that have the legal right to print money---with the same negative consequences on the economy that counterfeiting has. They're the central banks and regular banks too.
+While I think most can agree that counterfeiting shouldn't be allowed, the modern economic system is built upon legal counterfeiting. There are entities that have the legal right to print money---with the same negative consequences on the economy that counterfeiting has. They're the central banks and regular banks too.
 
 The central banks, the Federal Reserve (Fed) in the U.S. or the European Central Bank (ECB) in the EU, are the only ones allowed to print physical money. Which they have to do, if only to replace old bills.◊sn{quantitive-easing} They also have an inflation target, usually 2% or 3%, meaning the goal is to devalue the money. The rationale is it drives economic growth because ◊link[inflation-rational]{shoppers will buy now to avoid higher prices later}.◊sn{inflation-growth?}
 
@@ -185,6 +187,37 @@ I don't think there's a better example of the hazards the lender of last resort 
 ◊(define moral-hazard "https://www.thebalance.com/moral-hazard-what-it-is-and-how-it-works-315515")
 
 
+◊subhead{The reasoning behind the madness}
+
+If you've followed along this far, you might get the feeling that the economic system is completely corrupt and wonder why anyone would ever get along with it? But not so fast---there's a reason things are the way the are, and a big part can be traced the ◊link[great-depression]{Great Depression} in the 1930s.
+
+The Great Depression was a huge economic crisis, the worst in modern history, which dwarfed the 2008 financial crisis. Experts debate the causes of this decade long crisis to this day, with explanations ranging from governments spending too little, printing too little money, printing too much money or the gold standard.◊sn{depression-crisis}
+
+◊ndef["depression-crisis"]{
+    There's more to these theories than my attempt to simplify them suggests, and there's probably not a single cause. For instance it's widely acknowledged that the global gold standard helped the crisis to spread, even if it might not have caused the crisis. There are also more theories than I list here.
+}
+
+While it's difficult to point out causes, and it's even debatable why we got out of it, it's fairly easy to point out some big changes which were introduced when combating the crisis:
+
+◊ol{
+    ◊li{Abonding the gold standard
+
+        After briefly dropping the gold standard to pay for the First World War, all countries left the gold standard during the depression.◊sn{gold-standard-ww2}
+
+        ◊ndef["gold-standard-ww2"]{
+            After the Second World War
+        }
+    }
+    ◊li{Debt fueled investments
+    }
+    ◊li{Following the ideas of ◊link[keynesian-economics]{Keynesian Economics} (also developed in the 1930s)
+    }
+}
+
+◊; While it would feel good if I condemned the state of affairs completely, and say that 
+
+◊; On April 5, 1933, President Roosevelt signed Executive Order 6102 making the private ownership of gold certificates, coins and bullion illegal, reducing the pressure on Federal Reserve gold.
+
 ◊subhead{The gas and the break}
 
 The economic theories that almost all modern governments and central banks says that they should create demand and drive the economy during tough times, and try to slow it down during booms
@@ -192,6 +225,7 @@ The economic theories that almost all modern governments and central banks says 
 ◊;Governments and central banks follow ◊link[keynesian-economics]{Keynesian economics}, which basically says the government should create demand
 
 ◊(define keynesian-economics "https://www.thebalance.com/keynesian-economics-theory-definition-4159776")
+◊(define great-depression "https://en.wikipedia.org/wiki/Great_Depression")
 
 
 ◊subhead{A mountain of debt}
