@@ -187,7 +187,7 @@ I don't think there's a better example of the hazards the lender of last resort 
 ◊(define moral-hazard "https://www.thebalance.com/moral-hazard-what-it-is-and-how-it-works-315515")
 
 
-◊subhead{The reasoning behind the madness}
+◊subhead{Reason behind the madness}
 
 If you've followed along this far, you might get the feeling that the economic system is completely corrupt and wonder why anyone would ever get along with it? But not so fast---there's a reason things are the way the are, and a big part can be traced the ◊link[great-depression]{Great Depression} in the 1930s.
 
@@ -202,25 +202,39 @@ While it's difficult to point out causes, and it's even debatable why we got out
 ◊ol{
     ◊li{Abonding the gold standard
 
-        After briefly dropping the gold standard to pay for the First World War, all countries left the gold standard during the depression.◊sn{gold-standard-ww2}
+        After briefly dropping the gold standard to pay for the First World War, all countries left the gold standard during the depression.◊sn{forbade-gold}
 
-        ◊ndef["gold-standard-ww2"]{
-            After the Second World War
+        ◊ndef["forbade-gold"]{
+            Because the government ran out of gold, in 1933 private ownership of larger amounts of gold ◊link[gold-illegal]{was made illegal}. It was forbidden until 1974.
         }
     }
-    ◊li{Debt fueled investments
+    ◊li{Proactive governments
+
+        In the ◊link[new-deal]{New Deal} the United States tried to stimulate the economy by for example building infrastructure, building houses, paying farmers to plant crops, producing power and insuring loans.
     }
-    ◊li{Following the ideas of ◊link[keynesian-economics]{Keynesian Economics} (also developed in the 1930s)
+    ◊li{Debt fueled investments
+
+        To pay for these investments the United States greatly increased their debt from just below 20% of GNP to slightly over 40%.
     }
 }
+
+◊(define gold-illegal "https://www.moneymetals.com/resources/executive-order-6102")
+
+These align with the ideas of ◊link[keynesian-economics]{Keynesian Economics} (also developed in the 1930s) where governments should stimulate the economy during recessions, and compensate by pulling back when the economy's expanding. The rationale is that the ◊link[velocity-money]{◊em{velocity of money}} (how fast companies and people spend money) will slow down during a recession, making it worse. Therefore the government should increase their spending---increasing the velocity of money---to help dampen the recession.
+
+Seen through this lens, it all makes sense. To help the government spend money it doesn't have, being able to print money is a huge help. When the government goes deeper into debt, again it helps to be able to print money. And the interaction between central banks and banks is a fairly efficient way to setup a money-printing machine.◊sn{gold-standard-ww2}
+
+    ◊ndef["gold-standard-ww2"]{
+        After the Second World War the United States went back to the gold standard, a little half-heartedly. They only allowed foreign nations to redeem dollars for gold, which took an ◊link[nixon-shock]{abrupt end in 1971}.
+    }
+
+◊(define velocity-money "https://www.investopedia.com/terms/v/velocity.asp")
+◊(define nixon-shock "https://www.investopedia.com/terms/n/nixon-shock.asp")
+◊(define new-deal "https://www.thebalance.com/fdr-and-the-new-deal-programs-timeline-did-it-work-3305598")
 
 ◊; While it would feel good if I condemned the state of affairs completely, and say that 
 
 ◊; On April 5, 1933, President Roosevelt signed Executive Order 6102 making the private ownership of gold certificates, coins and bullion illegal, reducing the pressure on Federal Reserve gold.
-
-◊subhead{The gas and the break}
-
-The economic theories that almost all modern governments and central banks says that they should create demand and drive the economy during tough times, and try to slow it down during booms
 
 ◊;Governments and central banks follow ◊link[keynesian-economics]{Keynesian economics}, which basically says the government should create demand
 
