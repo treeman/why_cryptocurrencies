@@ -22,6 +22,8 @@ In the chapter ◊link[what-is-money]{What is money?} we saw some historical exa
 
 The modern system is based on money that ◊link[sound-money]{isn't sound}---the money supply can be manipulated freely---which have several far-reaching negative consequences. I'll even go so far to say there's something fundamentally broken with the economic system we use today.
 
+◊todo{Reformulate}
+
 ◊(define sound-money "https://www.soundmoneydefense.org/sound-money-explained")
 ◊(define what-is-money "/what_is_money.html")
 
@@ -30,7 +32,7 @@ The modern system is based on money that ◊link[sound-money]{isn't sound}---the
 
 Imagine a counterfeiter, who has the ability to print money from thin air.◊sn{magic-printer} What would he do with all the money? What would ◊em{you} do?
 
-Personally I would probably pay off my loans, renovate our house, go on vacation and buy some LEGO®. If I was smart I would also invest it; buy some stocks, some gold, maybe a house or two and rent them out. In short I would buy a bunch of stuff---and I think most would do the same.
+Personally I would probably pay off my loans, renovate our house, go on vacation and buy a bunch of LEGO®. If I was smart I would also invest it; buy some stocks, some gold, maybe a house or two and rent them out. In short I would buy a bunch of stuff---and I think most would do the same.
 
 If I did print money, a ◊strong{lot} of money, and spent it like this---what would the effect on the economy be?◊sn{case-against-fed}
 
@@ -51,9 +53,9 @@ Who in turn will use it to buy other stuff, and in this way the counterfeited mo
 ◊ol{
     ◊li{Higher prices.
 
-        Because there is more money going around, with the same amount of goods, the prices will rise. When prices rise and the same amount of money buys you less stuff, we call it ◊em{inflation}.◊sn{deflation}
+        Because there is more money going around, with the same amount of goods, the prices will rise. For instance if all the money in the world would double overnight, then naturally all prices would double too. Yesterday's $100 bill would today only get you $50 worth of stuff today.
 
-        For example if all the money in the world would double overnight, then naturally all prices would double too. Yesterday's $100 bill would today only get you $50 worth of stuff today. Or how my grandmother told us how she used to buy candy for one cent (◊sans-tnum{0.01 SEK}). Today our smallest coin is ◊sans-tnum{1 SEK}.
+        When prices rise and the same amount of money buys you less stuff, we call it ◊em{inflation}.◊sn{deflation} It's how my grandmother could buy candy for one cent (◊sans-tnum{0.01 SEK}) when she was a child, while today our smallest coin is ◊sans-tnum{1 SEK}.
 
     }
     ◊li{Redistribution of wealth.
@@ -105,7 +107,7 @@ Counterfeiting also means redistributing wealth from everyone to the counterfeit
 
 ◊subhead{Legal counterfeiting}
 
-While I think most can agree that counterfeiting shouldn't be allowed, the economic system is built upon legal counterfeiting. There are entities that have the legal right to print money---with the same negative consequences on the economy that counterfeiting has. They're the central banks and regular banks too.
+While I think most can agree that counterfeiting shouldn't be allowed, the modern economic system is built upon legal counterfeiting. There are entities that have the legal right to print money---with the same negative consequences on the economy that counterfeiting has. They're the central banks and regular banks too.
 
 The central banks, the Federal Reserve (Fed) in the U.S. or the European Central Bank (ECB) in the EU, are the only ones allowed to print physical money. Which they have to do, if only to replace old bills.◊sn{quantitive-easing} They also have an inflation target, usually 2% or 3%, meaning the goal is to devalue the money. The rationale is it drives economic growth because ◊link[inflation-rational]{shoppers will buy now to avoid higher prices later}.◊sn{inflation-growth?}
 
@@ -185,11 +187,92 @@ I don't think there's a better example of the hazards the lender of last resort 
 ◊(define moral-hazard "https://www.thebalance.com/moral-hazard-what-it-is-and-how-it-works-315515")
 
 
+◊subhead{Reason behind the madness}
+
+If you've followed along this far, you might get the feeling that the economic system is completely corrupt and wonder why anyone would ever get along with it? But not so fast---there's a reason things are the way the are, and a big part can be traced the ◊link[great-depression]{Great Depression} in the 1930s.
+
+The Great Depression was a huge economic crisis, the worst in modern history, which dwarfed the 2008 financial crisis. Experts debate the causes of this decade long crisis to this day, with explanations ranging from governments spending too little, printing too little money, printing too much money or the gold standard.◊sn{depression-crisis}
+
+◊ndef["depression-crisis"]{
+    There's more to these theories than my attempt to simplify them suggests, and there's probably not a single cause. For instance it's widely acknowledged that the global gold standard helped the crisis to spread, even if it might not have caused the crisis. There are also more theories than I list here.
+}
+
+While it's difficult to point out causes, and it's even debatable why we got out of it, it's fairly easy to point out some big changes which were introduced when combating the crisis:
+
+◊ol{
+    ◊li{Abonding the gold standard
+
+        After briefly dropping the gold standard to pay for the World War I, all countries left the gold standard during the depression.◊sn{forbade-gold}
+
+        ◊ndef["forbade-gold"]{
+            Because the government ran out of gold, in 1933 private ownership of larger amounts of gold ◊link[gold-illegal]{was made illegal}. It was forbidden until 1974.
+        }
+    }
+    ◊li{Proactive governments
+
+        In the ◊link[new-deal]{New Deal} the United States tried to stimulate the economy by for example building infrastructure, building houses, paying farmers to plant crops, producing power and insuring loans.
+    }
+    ◊li{Debt fueled investments
+
+        To pay for these investments the United States greatly ◊link[debt-us]{increased their debt} from $22 billion to $40 billion.◊sn{debt-ww2}
+
+        ◊ndef["debt-ww2"]{
+            Still, they were comparatively ◊link[new-deal-conservative]{conservative with increasing the debt}. To pay for World War II the debt ◊link[debt-us]{rose to $241 billion in 1946}.
+        }
+
+
+    }
+}
+
+◊(define debt-us "https://www.theatlantic.com/business/archive/2012/11/the-long-story-of-us-debt-from-1790-to-2011-in-1-little-chart/265185/")
+◊(define new-deal-conservative "https://www.nytimes.com/2008/11/23/business/23view.html?_r=0")
+◊(define gold-illegal "https://www.moneymetals.com/resources/executive-order-6102")
+
+These align with the ideas of ◊link[keynesian-economics]{Keynesian Economics} (also developed in the 1930s) where governments should stimulate the economy during recessions, and compensate by pulling back when the economy's expanding. The rationale is that the ◊link[velocity-money]{◊em{velocity of money}} (how fast companies and people spend money) will slow down during a recession, making it worse. Therefore the government should increase their spending---increasing the velocity of money---to help dampen the recession.
+
+Seen through this lens, it all makes sense. To help the government spend money it doesn't have, being able to print money is a huge help. When the government goes deeper into debt, again it helps to be able to print money. And the interaction between central banks and banks is a fairly efficient way to setup a money-printing machine.◊sn{gold-standard-ww2}
+
+    ◊ndef["gold-standard-ww2"]{
+        After World War II the United States went back to the gold standard, a little half-heartedly. They only allowed foreign nations to redeem dollars for gold, which took an ◊link[nixon-shock]{abrupt end in 1971}.
+    }
+
+◊(define velocity-money "https://www.investopedia.com/terms/v/velocity.asp")
+◊(define nixon-shock "https://www.investopedia.com/terms/n/nixon-shock.asp")
+◊(define new-deal "https://www.thebalance.com/fdr-and-the-new-deal-programs-timeline-did-it-work-3305598")
+
+◊; While it would feel good if I condemned the state of affairs completely, and say that 
+
+◊; On April 5, 1933, President Roosevelt signed Executive Order 6102 making the private ownership of gold certificates, coins and bullion illegal, reducing the pressure on Federal Reserve gold.
+
+◊;Governments and central banks follow ◊link[keynesian-economics]{Keynesian economics}, which basically says the government should create demand
+
+◊(define keynesian-economics "https://www.thebalance.com/keynesian-economics-theory-definition-4159776")
+◊(define great-depression "https://en.wikipedia.org/wiki/Great_Depression")
+
+
 ◊subhead{A mountain of debt}
 
-Keynesian economics, which theories almost all modern governments and central banks follow, was created in response to the Great Depression.
+While taking out debt to fuel investments was only supposed to be a temporary measure, to help the economy during downturns, today we massively increase the debt all the time. For example we've seen a ◊link[record-bull-run]{record bull run} in 2009--2019, yet the U.S. debt doubled from $11 trillion to $22 trillion.◊sn{trump-debt}
 
-The economic theories that almost all modern governments and central banks says that they should create demand and drive the economy during tough times, and try to slow it down during booms
+◊ndef["trump-debt"]{
+    Donald Trump promised to ◊link[trump-eliminate-debt]{eliminate the nation's debt in eight years}, and instead he greatly increased it. Let's just add that to the list of president Trump's list of broken promises.
+}
+
+◊img[#:src "images/usa-debt.svg"]{
+    The ◊link[usa-national-debt]{federal debt of the United States}, measure in trillions of dollars, since 1966.
+}
+
+Taking out a loan essentially borrows money from the future you, since you have to pay it back with interest. And the U.S. is paying paying for that now: in the 2020 budget 10.1% is spent on only the interest rate, and it's expected to ◊link[interest-us-debt]{take up 12.9% in 2026}.  Most of the debt is ◊link[public-debt]{public debt} (debt to people, companies or other governments), so refusing to pay would have disastrous consequences.
+
+It's not only the 
+
+◊(define interest-us-debt "https://www.thebalance.com/interest-on-the-national-debt-4119024")
+◊(define us-budget-2020 "https://www.thebalance.com/u-s-federal-budget-breakdown-3305789")
+◊(define public-debt "https://www.thebalance.com/what-is-the-public-debt-3306294")
+◊(define usa-national-debt "https://www.investopedia.com/updates/usa-national-debt/")
+◊(define trump-eliminate-debt "https://www.washingtonpost.com/politics/in-turmoil-or-triumph-donald-trump-stands-alone/2016/04/02/8c0619b6-f8d6-11e5-a3ce-f06b5ba21f33_story.html?utm_term=.d6b42cbf9b8c")
+◊(define trump-debt "https://www.thebalance.com/trump-plans-to-reduce-national-debt-4114401")
+◊(define record-bull-run "https://www.theguardian.com/business/2018/aug/22/wall-street-record-longest-rally-history-bull-market")
 
 ◊; Very good
 ◊; https://www.investopedia.com/updates/usa-national-debt/
@@ -198,8 +281,6 @@ The economic theories that almost all modern governments and central banks says 
 ◊; https://data.oecd.org/gga/general-government-debt.htm
 
 ◊; China has an extreme amount of debt
-
-◊(define keynesian-economics "https://www.thebalance.com/keynesian-economics-theory-definition-4159776")
 
 
 ◊subhead{Growing inequality}
