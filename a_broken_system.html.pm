@@ -18,9 +18,9 @@
 
 ◊todo{IMG a dude on a stick, to represent an unstable system. And a bunch of dudes running around to make it not fall over.}
 
-In the chapter ◊link[what-is-money]{What is money?} I tried to give some historical examples of money and list some properties that good money should have. Unfortunately it's not enough to understand the current economic system, which is a completely different beast.
+In the chapter ◊link[what-is-money]{What is money?} we saw some historical examples of money and some properties that good money should have. Unfortunately it's not enough to understand the current economic system, which is a completely different beast.
 
-The system is based on money that ◊link[sound-money]{isn't sound}---the money supply can be manipulated freely---which have several far-reaching negative consequences. I'll even go so far to say there's something fundamentally broken with the economic system we use today.
+The modern system is based on money that ◊link[sound-money]{isn't sound}---the money supply can be manipulated freely---which have several far-reaching negative consequences. I'll even go so far to say there's something fundamentally broken with the economic system we use today.
 
 ◊(define sound-money "https://www.soundmoneydefense.org/sound-money-explained")
 ◊(define what-is-money "/what_is_money.html")
@@ -185,16 +185,11 @@ I don't think there's a better example of the hazards the lender of last resort 
 ◊(define moral-hazard "https://www.thebalance.com/moral-hazard-what-it-is-and-how-it-works-315515")
 
 
-◊subhead{The gas and the break}
+◊subhead{A mountain of debt}
+
+Keynesian economics, which theories almost all modern governments and central banks follow, was created in response to the Great Depression.
 
 The economic theories that almost all modern governments and central banks says that they should create demand and drive the economy during tough times, and try to slow it down during booms
-
-◊;Governments and central banks follow ◊link[keynesian-economics]{Keynesian economics}, which basically says the government should create demand
-
-◊(define keynesian-economics "https://www.thebalance.com/keynesian-economics-theory-definition-4159776")
-
-
-◊subhead{A mountain of debt}
 
 ◊; Very good
 ◊; https://www.investopedia.com/updates/usa-national-debt/
@@ -203,6 +198,8 @@ The economic theories that almost all modern governments and central banks says 
 ◊; https://data.oecd.org/gga/general-government-debt.htm
 
 ◊; China has an extreme amount of debt
+
+◊(define keynesian-economics "https://www.thebalance.com/keynesian-economics-theory-definition-4159776")
 
 
 ◊subhead{Growing inequality}
@@ -230,3 +227,6 @@ The economic theories that almost all modern governments and central banks says 
 
 ◊subhead{The case for sound money}
 
+
+◊; Possibly in the blind leading the blind?
+◊; https://www.svd.se/experter-flera-dolda-skal-till-slopad-minusranta
