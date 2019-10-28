@@ -33,8 +33,8 @@
      "A swiss bank account in your pocket"
      "Darknet markets"
      "Protection against government seizures"
-     "The cashless dystopia"
-     "New asset class?")
+     "The cashless dystopia")
+     ;"New asset class?")
     (extensions.html
      timestamping_service.html
      uncensorable_twitter.html
@@ -43,8 +43,8 @@
      "Verifiable voting")
     (appendix.html
      bitcoin_whitepaper.html
-     "An intro to cryptography"
-     "Who is Satoshi Nakamoto?"
+     "An introduction to cryptography"
+     ;"Who is Satoshi Nakamoto?"
      "Is Facebook's Libra a cryptocurrency?"
      "Further research")))
 

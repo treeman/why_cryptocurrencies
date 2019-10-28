@@ -258,14 +258,28 @@ While taking out debt to fuel investments was only supposed to be a temporary me
     Donald Trump promised to ◊link[trump-eliminate-debt]{eliminate the nation's debt in eight years}, and instead he greatly increased it. Let's just add that to the list of president Trump's list of broken promises.
 }
 
-◊img[#:src "images/usa-debt.svg"]{
+◊img[#:src "images/usa-debt.svg" #:link #t]{
     The ◊link[usa-national-debt]{federal debt of the United States}, measure in trillions of dollars, since 1966.
 }
 
 Taking out a loan essentially borrows money from the future you, since you have to pay it back with interest. And the U.S. is paying paying for that now: in the 2020 budget 10.1% is spent on only the interest rate, and it's expected to ◊link[interest-us-debt]{take up 12.9% in 2026}.  Most of the debt is ◊link[public-debt]{public debt} (debt to people, companies or other governments), so refusing to pay would have disastrous consequences.
 
-It's not only the 
 
+◊qt[#:author "Albert Einstein"]{
+    Compound interest is the eighth wonder of the world. He who understands it, earns it ... he who doesn't ... pays it.
+}
+
+This isn't a situation unique to the United States, but ◊link[national-debt-list]{a global phenomena}. While the U.S. has a national debt at 104% of ◊link[gdp]{GDP} (a way to compare relative debts between countries), Sweden has a debt of 38%, Germany 61%, Italy 132%, Greece 181% and Japan a staggering 235%.◊sn{how-to-measure-debt}
+
+◊ndef["how-to-measure-debt"]{
+    There are different ways to measure national debt, each with pros and cons. ◊link[gdp%]{Percentage of GDP} seems to be the common way to do it.
+}
+
+It seems like we're moving away from the original Keynesian ideas to something else, where paying off national debt matters less as we can just print more money.
+
+◊(define gdp% "https://www.investopedia.com/terms/d/debtgdpratio.asp")
+◊(define gdp "https://www.investopedia.com/terms/g/gdp.asp")
+◊(define national-debt-list "https://countryeconomy.com/national-debt")
 ◊(define interest-us-debt "https://www.thebalance.com/interest-on-the-national-debt-4119024")
 ◊(define us-budget-2020 "https://www.thebalance.com/u-s-federal-budget-breakdown-3305789")
 ◊(define public-debt "https://www.thebalance.com/what-is-the-public-debt-3306294")
@@ -273,14 +287,6 @@ It's not only the
 ◊(define trump-eliminate-debt "https://www.washingtonpost.com/politics/in-turmoil-or-triumph-donald-trump-stands-alone/2016/04/02/8c0619b6-f8d6-11e5-a3ce-f06b5ba21f33_story.html?utm_term=.d6b42cbf9b8c")
 ◊(define trump-debt "https://www.thebalance.com/trump-plans-to-reduce-national-debt-4114401")
 ◊(define record-bull-run "https://www.theguardian.com/business/2018/aug/22/wall-street-record-longest-rally-history-bull-market")
-
-◊; Very good
-◊; https://www.investopedia.com/updates/usa-national-debt/
-
-◊; For other countries as well, back to 1995
-◊; https://data.oecd.org/gga/general-government-debt.htm
-
-◊; China has an extreme amount of debt
 
 
 ◊subhead{Growing inequality}
@@ -298,11 +304,16 @@ It's not only the
 
 ◊subhead{Stuck between a rock and a hard place}
 
+◊ol{
+    ◊li{Negative rates}
+    ◊li{Raising the rate broke the stock market}
+    ◊li{The inflation danger}
+}
+
 ◊; McKinsey: Half the World’s Banks Too Weak to Survive Downturn 
 ◊; https://news.ycombinator.com/item?id=21320977
 
-◊subhead{Hyperinflation}
-
+◊; Inflation and hyperinflation
 ◊;Hyperinflation and Trust in Ancient Rome 
 ◊;https://news.ycombinator.com/item?id=21010309
 
@@ -311,3 +322,4 @@ It's not only the
 
 ◊; Possibly in the blind leading the blind?
 ◊; https://www.svd.se/experter-flera-dolda-skal-till-slopad-minusranta
+
