@@ -303,7 +303,11 @@ There's a worrying trend in the world: ◊link[global-inequality]{global inequal
     Source ◊link[inequality-data]{World Inequality Database}.
 }
 
-The inequality is on the rise in nearly every country. If we take a closer look at the United States it paints a gloomy picture:
+The inequality is on the rise in nearly every country. If we take a closer look at the United States it paints a gloomy picture:◊sn{report}
+
+◊ndef["report"]{
+    There's many more ways to look at inequality data, for more I recommend the ◊link[wid-report]{World Inequality Report}.
+}
 
 ◊img[#:src "images/income-inequality.svg" #:link #t]{
     Income share in the United States between 1962 and 2014.  
@@ -314,24 +318,21 @@ The inequality is on the rise in nearly every country. If we take a closer look 
     Source ◊link[inequality-data]{World Inequality Database}.
 }
 
-The top 1% gets richer while the bottom and middle-class gets poorer. There's a bunch more data on this, for more I recommend the ◊link[wid-report]{World Inequality Report}.
-
-While the money-making machine isn't the cause of the inequality, printing money will only fan the flames and make the situation worse.◊sn{trickle-down}
+While the money-making machine isn't the cause of the inequality, it's a pretty difficult situation to reverse when even the national economy works against you. Printing money to solve problems will, in line with ◊link[rel-counterfeiting]{the previous counterfeiting example}, only fan the flames and make the situation worse.◊sn{trickle-down}
 
 ◊ndef["trickle-down"]{
     Some will argue that the trickle-down effect will ensure inflation affects everyone equally. Unfortunately that's not the case, as the rich will both receive the money first (via the banks) and they have better access to financial tools to hedge against inflation (investing in gold, real estate or offshore banking).
 }
 
 ◊;https://inequality.org/facts/global-inequality/
+◊(define rel-counterfeiting "#economic-effects-of-counterfeiting")
 ◊(define global-inequality "https://wir2018.wid.world/")
 ◊(define inequality-data "https://wid.world/data/")
 ◊(define wid-report "https://wir2018.wid.world/files/download/wir2018-full-report-english.pdf")
 
-◊; https://wid.world/data/
 
-
-
-◊subhead{Booms and busts}
+◊; Move to the blind leading the blind
+◊;◊subhead{Booms and busts}
 
 ◊;https://www.alt-m.org/2018/08/16/fractional-reserve-banking-and-austrian-business-cycles-part-i/
 ◊;https://www.infowars.com/does-the-boom-bust-cycle-ever-result-from-commodity-money/
