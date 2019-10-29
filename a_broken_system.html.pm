@@ -1,6 +1,6 @@
 #lang pollen
 
-◊(define-meta title "A broken system")
+◊(define-meta title "A defective system")
 ◊;(define-meta subtitle "Magic internet money")
 ◊(define-meta updated "2019-10-01T08:35:32+02:00")
 ◊(define-meta uuid "b09419e3-0f3d-4473-b458-d0dad01ed4b8")
@@ -331,36 +331,62 @@ While the money-making machine isn't the cause of the inequality, it's a pretty 
 ◊(define wid-report "https://wir2018.wid.world/files/download/wir2018-full-report-english.pdf")
 
 
-◊subhead{Stuck between a rock and a hard place}
+◊subhead{Painted into a corner}
 
-With the knowledge that we want to ...
+We want to pull back on stimulation when the economy is booming, so we're prepared with all our tools when the economy is crashing. Unfortunately after a decade of economic boom, we've done the opposite:
 
 ◊ol{
-    ◊li{The national debt has skyrocketed}
-    ◊li{We're continually printing money}
-    ◊li{The central bank interest rates are historically low}
+    ◊li{The national debt has skyrocketed
+
+        The larger the debt, the more expenses must be devoted to repaying the debt, leaving less for other more useful things.}
+    ◊li{The central bank interest rates are already low
+
+        A low rate means banks, and in extension we, can get cheaper loans which stimulates the economy. It's difficult to lower it more when it's almost zero, or even negative, already.◊sn{negative-interest}
+
+        ◊ndef["negative-interest"]{
+            In Sweden we've had a ◊link[swe-neg-rate]{negative repo rate since 2015}. Denmark's Jyske Bank also ◊link[denmark-neg-rate]{give depositors a negative rate}, meaning you have to pay to store money. These are strange times.
+        }
+    }
+    ◊li{We're continually printing money
+
+        The Federal Reserve is ◊link[fed-pouring]{pouring money into the financial system}. Printing an unlimited amount of money isn't great, not only because of the erosion of wealth, but rampant inflation can quickly destroy the economy.◊sn{hyperinflation-rome}
+
+        ◊ndef["hyperinflation-rome"]{
+            An interesting case is how ◊link[hyperinflation-rome]{hyperinflation took hold in ancient Rome}. Centuries of debasing the currency was followed by a sudden lose of trust and the collapse into hyperinflation. A lesson here is that rapid inflation can rapidly throw the economy into chaos.
+        }
+    }
 }
 
-The Federal Reserve's interest rate, which is the rate banks pay for their loans that fuels fractional banking, is one of the tools that can manipulate the economy.
+To be fair, the Federal Reserve knows this isn't an ideal situation, so they tried to raise interest rates. Unfortunately the stock market reacted poorly---many people got angry---and now they've backtracked and lowered them again.
+
+So we're stuck in a situation where we don't have the tools to defend against a recession---tools the economic theory the system is built on needs. It seems to me if a recession comes we'll get caught with our pants down.
+
+◊;https://markets.businessinsider.com/news/stocks/federal-reserve-meeting-september-interest-rate-decision-2019-9-1028535360
+◊(define swe-neg-rate "https://www.riksbank.se/en-gb/about-the-riksbank/history/2000-2018/negative-repo-rate-is-introduced/")
+◊(define denmark-neg-rate "https://www.reuters.com/article/denmark-rates-jyske-bank/update-1-denmarks-jyske-bank-lowers-its-negative-rates-on-deposits-idUSL5N26B1AA")
+◊(define hyperinflation-rome "https://notesonliberty.com/2019/09/16/hyperinflation-and-trust-in-ancient-rome/")
+◊(define fed-pouring "http://archive.is/PbCtz")
 
 ◊; https://www.thebalance.com/current-federal-reserve-interest-rates-4770718
-
-◊ol{
-    ◊li{Negative rates}
-    ◊li{Raising the rate broke the stock market}
-    ◊li{The inflation danger}
-}
 
 ◊; McKinsey: Half the World’s Banks Too Weak to Survive Downturn 
 ◊; https://news.ycombinator.com/item?id=21320977
 
-◊; Inflation and hyperinflation
-◊;Hyperinflation and Trust in Ancient Rome 
-◊;https://news.ycombinator.com/item?id=21010309
 
-◊subhead{The case for sound money}
+◊subhead{Where do we go from here?}
+
+◊ol{
+    ◊li{The blind leading the blind}
+    ◊li{Modern Money Theory}
+    ◊li{Sound money}
+}
 
 
 ◊; Possibly in the blind leading the blind?
 ◊; https://www.svd.se/experter-flera-dolda-skal-till-slopad-minusranta
 
+
+◊; https://nypost.com/2019/07/29/trump-fails-to-see-rate-cut-would-hurt-savers/
+◊; https://www.forbes.com/sites/nathanlewis/2019/02/21/the-problem-with-modern-monetary-theory-is-that-its-true/
+
+◊; https://news.ycombinator.com/item?id=21004068
