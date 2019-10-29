@@ -259,10 +259,11 @@ While taking out debt to fuel investments was only supposed to be a temporary me
 }
 
 ◊img[#:src "images/usa-debt.svg" #:link #t]{
-    The ◊link[usa-national-debt]{federal debt of the United States}, measure in trillions of dollars, since 1966.
+    The ◊link[usa-national-debt]{federal debt of the United States}, measure in trillions of dollars, since 1966.  
+    After the ◊link[financial-crisis]{2008 financial crisis} the amount of debt skyrocketed, signifying a shift in economic policy.
 }
 
-Taking out a loan essentially borrows money from the future you, since you have to pay it back with interest. And the U.S. is paying paying for that now: in the 2020 budget 10.1% is spent on only the interest rate, and it's expected to ◊link[interest-us-debt]{take up 12.9% in 2026}.  Most of the debt is ◊link[public-debt]{public debt} (debt to people, companies or other governments), so refusing to pay would have disastrous consequences.
+Taking out a loan essentially borrows money from the future you, since you have to pay it back with interest. And the U.S. is paying paying for that now: in the 2020 budget 10.1% is spent on only the interest rate, and it's expected to ◊link[interest-us-debt]{take up 12.9% in 2026}, making it the fastest rising expense in the budget. Most of the debt is ◊link[public-debt]{public debt} (debt to people, companies or other governments), so refusing to pay would have disastrous consequences.
 
 
 ◊qt[#:author "Albert Einstein"]{
@@ -294,6 +295,40 @@ It seems like we're moving away from the original Keynesian ideas to something e
 ◊qt[#:src "Family Guy"]{
     It doesn't matter if you're black or white... the only color that really matters is green.
 }
+
+There's a worrying trend in the world: ◊link[global-inequality]{global inequality is rising}. The rich gets richer and the poor gets... poorer.
+
+◊img[#:src "images/income-inequality-world.svg" #:link #t]{
+    Top 10% income share between 1980 and 2015.  
+    Source ◊link[inequality-data]{World Inequality Database}.
+}
+
+The inequality is on the rise in nearly every country. If we take a closer look at the United States it paints a gloomy picture:
+
+◊img[#:src "images/income-inequality.svg" #:link #t]{
+    Income share in the United States between 1962 and 2014.  
+    Source ◊link[inequality-data]{World Inequality Database}.
+}
+◊img[#:src "images/wealth-inequality.svg" #:link #t]{
+    Net personal wealth in the United States between 1962 and 2014.  
+    Source ◊link[inequality-data]{World Inequality Database}.
+}
+
+The top 1% gets richer while the bottom and middle-class gets poorer. There's a bunch more data on this, for more I recommend the ◊link[wid-report]{World Inequality Report}.
+
+While the money-making machine isn't the cause of the inequality, printing money will only fan the flames and make the situation worse.◊sn{trickle-down}
+
+◊ndef["trickle-down"]{
+    Some will argue that the trickle-down effect will ensure inflation affects everyone equally. Unfortunately that's not the case, as the rich will both receive the money first (via the banks) and they have better access to financial tools to hedge against inflation (investing in gold, real estate or offshore banking).
+}
+
+◊;https://inequality.org/facts/global-inequality/
+◊(define global-inequality "https://wir2018.wid.world/")
+◊(define inequality-data "https://wid.world/data/")
+◊(define wid-report "https://wir2018.wid.world/files/download/wir2018-full-report-english.pdf")
+
+◊; https://wid.world/data/
+
 
 
 ◊subhead{Booms and busts}
