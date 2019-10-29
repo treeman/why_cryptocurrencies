@@ -321,7 +321,7 @@ The inequality is on the rise in nearly every country. If we take a closer look 
 While the money-making machine isn't the cause of the inequality, it's a pretty difficult situation to reverse when even the national economy works against you. Printing money to solve problems will, in line with ◊link[rel-counterfeiting]{the previous counterfeiting example}, only fan the flames and make the situation worse.◊sn{trickle-down}
 
 ◊ndef["trickle-down"]{
-    Some will argue that the trickle-down effect will ensure inflation affects everyone equally. Unfortunately that's not the case, as the rich will both receive the money first (via the banks) and they have better access to financial tools to hedge against inflation (investing in gold, real estate or offshore banking).
+    Some will argue that the trickle-down effect makes inflation affect everyone equally. Unfortunately that's not the case, as the rich will both receive the money first (via the banks) and they have better access to financial tools to hedge against inflation (investing in gold, real estate or offshore banking).
 }
 
 ◊;https://inequality.org/facts/global-inequality/
@@ -331,14 +331,19 @@ While the money-making machine isn't the cause of the inequality, it's a pretty 
 ◊(define wid-report "https://wir2018.wid.world/files/download/wir2018-full-report-english.pdf")
 
 
-◊; Move to the blind leading the blind
-◊;◊subhead{Booms and busts}
-
-◊;https://www.alt-m.org/2018/08/16/fractional-reserve-banking-and-austrian-business-cycles-part-i/
-◊;https://www.infowars.com/does-the-boom-bust-cycle-ever-result-from-commodity-money/
-◊;https://mises.org/library/boom-and-bust-0
-
 ◊subhead{Stuck between a rock and a hard place}
+
+With the knowledge that we want to ...
+
+◊ol{
+    ◊li{The national debt has skyrocketed}
+    ◊li{We're continually printing money}
+    ◊li{The central bank interest rates are historically low}
+}
+
+The Federal Reserve's interest rate, which is the rate banks pay for their loans that fuels fractional banking, is one of the tools that can manipulate the economy.
+
+◊; https://www.thebalance.com/current-federal-reserve-interest-rates-4770718
 
 ◊ol{
     ◊li{Negative rates}
