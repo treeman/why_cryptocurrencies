@@ -22,7 +22,7 @@ One of the most common arguments against sound money---like cryptocurrencies or 
     ◊em{Elaciticity} is a nice word fractional banking proponents have used to describe this ability. In plain English it means the ability to inflate and deflate the money supply freely.
 }
 
-But there is a fatal flaw with this argument: it relies on being able to predict the market and to know what actions to take to move it in the direction you want. I'll argue that these assumptions don't hold up well.
+But there is a fatal flaw with this argument: it relies on being able to predict the market and to know what actions to take to move it in the direction you want. With how intricate and complex the economy is, it's absurd to think you can.
 
 
 ◊subhead{How to become an expert}
@@ -114,6 +114,14 @@ Do the people really know that the least accountable operation in the U.S. gover
 }
 
 It's worse than us not understanding how the system works because the Fed, the "controller of the universe", makes us all blind. We can't even tell how many dollar bills really exist.
+
+
+◊subhead{Booms and busts}
+
+◊;https://www.alt-m.org/2018/08/16/fractional-reserve-banking-and-austrian-business-cycles-part-i/
+◊;https://www.infowars.com/does-the-boom-bust-cycle-ever-result-from-commodity-money/
+◊;https://mises.org/library/boom-and-bust-0
+
 
 ◊subhead{unsorted}
 
