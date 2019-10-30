@@ -53,6 +53,10 @@ Ignorance is strength.”
   There are three ways to make a living in this business: be first, be smarter or cheat.
 }
 
+◊qt[#:src "The Laundromat"
+    #:author "Meryl Streep"]{
+    In this system, our system, the slaves are unaware, both of their status and of their masters, who exist in a world apart and where the shackles are hidden amidst reams of unreachable legalese.
+}
 
 # Better digital payments
 

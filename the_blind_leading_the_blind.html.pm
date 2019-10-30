@@ -77,7 +77,7 @@ It's not just the planning economy of the Soviet Union that has problems predict
 
 The Federal Reserve, calling the global economy "robust", fanned the flames of the housing bubble by focusing on inflation and keeping the rent low, all the way up to the crash. They also let Lehman Brothers fail, not realizing the realizing the disaster it would create.◊sn{music-stops}
 
-Maybe you feel like I'm focusing too much on the ◊link[financial-crisis]{2008 financial crisis}? Then how about their actions during the ◊link[great-depression]{Great Depression}, of which the Federal Reserve chairman had this to say:
+Maybe you feel like I'm focusing too much on the ◊link[financial-crisis]{2008 financial crisis}? Then how about their actions around the ◊link[great-depression]{Great Depression}, of which the Federal Reserve chairman had this to say:
 
 ◊qt[#:author "Ben S. Bernanke, chairman of the Federal Reserve"
     #:date "2002"
@@ -85,6 +85,7 @@ Maybe you feel like I'm focusing too much on the ◊link[financial-crisis]{2008 
     Let me end my talk by abusing slightly my status as an official representative of the Federal Reserve. I would like to say to Milton and Anna: Regarding the Great Depression, you're right. We did it. We're very sorry. But thanks to you, we won't do it again.
 }
 
+Oops!... you did it again.
 
 ◊(define financial-crisis "/financial_crisis.html")
 
@@ -92,16 +93,29 @@ Maybe you feel like I'm focusing too much on the ◊link[financial-crisis]{2008 
     “◊link[after-the-music-stopped-book]{After the Music Stopped}” Alan S. Blinder
 }
 
-This shouldn't be that surprising when you consider that the national and global economy is too irregular to be predictable, and the feedback loop is extremely long, if it at all exists. If you for example want to lower the central bank's interest rate, how long do you have to wait to see the result? Days, months maybe even years. And how do you know the economy reacted because of your changes to the interest rate, and not because of the trade war between the U.S. and China, brexit or a million other reasons?
+This shouldn't be that surprising when you consider that the national and global economy is too irregular to be predictable, and the feedback loop is extremely long---if it even exists. If you for example want to lower the central bank's interest rate, how long do you have to wait to see the result? Days, months maybe even years. And how do you know the economy reacted because of your changes to the interest rate, and not because of the trade war between the U.S. and China, brexit or a million other reasons?◊sn{models}
+
+◊ndef["models"]{
+    What do you do then? You use complicated models, based on historical data, to predict the effects on the economy.
+
+    How do you know the models are correct? You don't.
+}
+
+These people aren't experts, simply because the environment doesn't lend itself to creating experts. The worst thing isn't that they're clueless, the worst thing is that they don't know their limitations:◊sn{actually-worst}
+
+◊ndef["actually-worst"]{
+    Well, the actually worst thing is that the economic system is built upon these "experts" predicting and reacting to events.
+}
+
+◊qt[#:author "IMF:s financial advisor Jose Viñals"
+    #:date "2016"
+    #:url "https://blogs.imf.org/2016/04/10/the-broader-view-the-positive-effects-of-negative-nominal-interest-rates/"]{
+  Although the experience with negative nominal interest rates is limited, we tentatively conclude that overall, they help deliver additional monetary stimulus and easier financial conditions, which support demand and price stability.
+}
+
+While the article itself is more nuanced, you can't conclude anything with such a small sample size, with such a short timespan and in an irregular environment.
 
 ◊;https://news.ycombinator.com/item?id=21028770
-
-Negative rents.
-
-◊qt[#:author "IMF:s finansiella rådgivare Jose Viñals"
-    #:url "https://www.svd.se/imf-stottar-stefan-ingves-minusranta"]{
-    Även om erfarenheten med negativa räntor är begränsade drar vi slutsatsen att det har bidragit till ytterligare penningpolitiska stimulanser och enklare ekonomiska villkor
-}
 
 ◊subhead{We are blind}
 
@@ -109,30 +123,36 @@ Negative rents.
     It is well enough that people of the nation do not understand our banking and monetary system, for if they did, I believe there would be a revolution before tomorrow morning.
 }
 
-One might argue that we're blind because we don't understand how the banking system work, what consequences printing money out of thin air have and how we're ignorant of how the modern monetary system work.
+I could argue that we're blind because we collectively don't understand how the banking system work, the modern monetary system or the financial system---which would largely be true. But there's another, more sinister, cause of our blindness: the Federal Reserve.
 
-Do the people really know that the least accountable operation in the U.S. government isn't the FBI, CIA or the NSA---which are all accountable to congressional supervision---but it's the Fed? The Federal Reserve System, the U.S. central bank, is not accountable to anyone, has no budget and nobody has insight into it's operations.
+Do the people know that the least accountable operation in the U.S. government isn't the FBI, CIA or the NSA---which are all accountable to congressional supervision---but the Federal Reserve? The U.S. central bank, is not accountable to anyone, has no budget and nobody has insight into it's operations.◊mn{case-against-fed}
 
-◊qt[#:author "Frank Herbert"
-    #:quote-src #t
-    #:src "Dune"]{
-      He who controls the spice controls the universe.
+◊ndef["case-against-fed"]{
+    “◊link[case-against-fed-book]{The Case Against the Fed}” Murray N. Rothbard
 }
 
-It's worse than us not understanding how the system works because the Fed, the "controller of the universe", makes us all blind. We can't even tell how many dollar bills really exist.
+The Fed isn't a government agency. It's a private entity and its shareholders are banks which ◊link[fed-dividends]{earn a dividend}---at 6%, often tax-free. (Which banks? It's a secret.) Nobody knows how much banks are printing to pad their own pockets and nobody knows how many dollars exist.
 
-◊subhead{unsorted}
+It's worse than us not understanding how the system works. We simply don't have the ability to understand because the Federal Reserve makes us all blind. But this is often promoted as a benefit, not a drawback:
 
-The Fed is not a government agency. It's a private entity and its shareholders are banks which earn a dividend. As much as 80 billion dollars per year, total. (Which banks? It's a secret.) Nobody really knows how many dollars exist.  Nobody knows how much banks are printing to pad their own pockets.
-
-
-◊qt[#:author "Alan Greenspan, Chairmain of the Fed"]{
+◊qt[#:author "Alan Greenspan, Chairmain of the Federal Reserve"]{
     The temptetion is to step on the monetary accelerator or at least to avoid the monetary break until after the next election... Giving in to such temptations is likely to impart an inflationary bias to the economy and could lead to instability, recession and economic stagnation.
 }
 
-◊qt[#:src "The Laundromat"
-    #:author "Meryl Streep"]{
-    In this system, our system, the slaves are unaware, both of their status and of their masters, who exist in a world apart and where the shackles are hidden amidst reams of unreachable legalese.
+This argument could be made against almost everything. For example ◊link[mega-projects]{mega projects often fail} (vastly overruns their cost or timetable) because politicians make them their pet project, pushing them through against all odds... And leave it to other people to pick up the pieces after the next election.
+
+Proponents will of course say that money is much too important to leave it to the whims of the politicians, and therefore the Fed must remain independent. Which is exactly why I believe it should ◊strong{not} be handled in the dark, by a private entity.
+
+
+◊subhead{An open alternative}
+
+◊ol{
+    ◊li{The problem with gold coins is debasement}
+    ◊li{The problem with fiat backed by gold is trusting the backers}
+    ◊li{Cryptocurrencies have a verifiable coin supply, and cannot be counterfeit}
 }
 
+
+◊(define mega-projects "http://omegataupodcast.net/181-why-megaprojects-fail-and-what-to-do-about-it/")
+◊(define fed-dividends "https://newrepublic.com/article/116913/federal-reserve-dividends-most-outrageous-handout-banks")
 ◊(define sound-money "https://www.soundmoneydefense.org/sound-money-explained")
