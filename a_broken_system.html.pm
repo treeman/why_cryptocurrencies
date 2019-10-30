@@ -16,6 +16,9 @@
 ◊;<https://news.ycombinator.com/item?id=20535390>
 
 
+◊; Read this for Fed actions
+◊; https://news.ycombinator.com/item?id=21028770
+
 ◊todo{IMG a dude on a stick, to represent an unstable system. And a bunch of dudes running around to make it not fall over.}
 
 In the chapter ◊link[what-is-money]{What is money?} we saw some historical examples of money and some properties that good money should have. Unfortunately it's not enough to understand the current economic system, which is a completely different beast.
