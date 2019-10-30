@@ -24,7 +24,6 @@ The modern system is based on money that ◊link[sound-money]{isn't sound}---the
 
 ◊todo{Reformulate}
 
-◊(define sound-money "https://www.soundmoneydefense.org/sound-money-explained")
 ◊(define what-is-money "/what_is_money.html")
 
 
@@ -359,7 +358,15 @@ We want to pull back on stimulation when the economy is booming, so we're prepar
 
 To be fair, the Federal Reserve knows this isn't an ideal situation, so they tried to raise interest rates. Unfortunately the stock market reacted poorly---many people got angry---and now they've backtracked and lowered them again.
 
-So we're stuck in a situation where we don't have the tools to defend against a recession---tools the economic theory the system is built on needs. It seems to me if a recession comes we'll get caught with our pants down.
+So we're stuck in a situation where we don't have the tools to defend against a recession---tools the economic theory the system is built on needs. Tools that has been used up, because that's what the theory says we should do.◊sn{winging-it}
+
+◊ndef["winging-it"]{
+    It may sound like I'm referring to a single economic theory, which all governments and central banks follow. But that's not the case---there are many different theories, with slight differences, but I think it's a fair generalization to say that they mostly follow Keynesian ideas.
+
+    Maybe a more correct thing to say is that many are just winging it, and making up rules as they go.
+}
+
+It seems to me if (or when) a recession comes we'll get caught with our pants down. And things have been looking pretty shaky a while now.
 
 ◊;https://markets.businessinsider.com/news/stocks/federal-reserve-meeting-september-interest-rate-decision-2019-9-1028535360
 ◊(define swe-neg-rate "https://www.riksbank.se/en-gb/about-the-riksbank/history/2000-2018/negative-repo-rate-is-introduced/")
@@ -375,18 +382,30 @@ So we're stuck in a situation where we don't have the tools to defend against a 
 
 ◊subhead{Where do we go from here?}
 
-◊ol{
-    ◊li{The blind leading the blind}
-    ◊li{Modern Money Theory}
-    ◊li{Sound money}
+Since the financial crisis in 2008 we're in uncharted territory, and we actually don't know what we should do (I'll explore this subtheme in the chapter: ◊link[blind-leading-the-blind]{The blind leading the blind}). Therefore new economic theories, like the ◊link[mmt]{Modern Money Theory} (MMT), are developed. MMT basically says that the government can pay it's bills by just printing all money it needs, checked only by inflation. It's reasonable to ask if MMT is a sound economic theory, or if it's just describing ◊link[mmt-true]{what's already happening}.
+
+While "printing more money" is a popular solution, for critics of the modern economic policies ◊link[sound-money]{◊em{sound money}}, where nobody can manipulate the money supply, might represent a compelling alternative. For example fiat backed by gold, actual gold coins or cryptocurrencies.◊sn{debasement}
+
+◊ndef["debasement"]{
+    The state that creates gold coins can still inflate the money supply by decreasing the amount of gold in the coins. This is called ◊link[debasement]{◊em{debasement}} and has been quite common historically.
+
+    With cryptocurrencies debasement isn't possible, which is one reason they're ◊link[are-cryptos-money]{better money} than gold.
 }
 
 
+It's not easy to see how a switch to sound money would occur, but if the economy was based on sound money then manipulation of the money supply would largely disappear. We wouldn't build a mountain of debt, only repayable by the printing machines, and we wouldn't devalue our savings while increasing the wealth inequality.
+
+◊;And we wouldn't leave the faith of the economy in the hands our blind leaders, who manage to fan the flames of our recessions, but that's the topic of the ◊link[blind-leading-the-blind]{next chapter}.
+
+◊(define debasement "https://www.investopedia.com/terms/d/debasement.asp")
+◊(define mmt "https://www.bloomberg.com/news/features/2019-03-21/modern-monetary-theory-beginner-s-guide")
+◊(define blind-leading-the-blind "/the_blind_leading_the_blind.html")
+◊(define mmt-true "https://www.forbes.com/sites/nathanlewis/2019/02/21/the-problem-with-modern-monetary-theory-is-that-its-true/")
+◊(define sound-money "https://www.soundmoneydefense.org/sound-money-explained")
+◊(define are-cryptos-money "/are_cryptocurrencies_money.html")
+
 ◊; Possibly in the blind leading the blind?
 ◊; https://www.svd.se/experter-flera-dolda-skal-till-slopad-minusranta
-
-
 ◊; https://nypost.com/2019/07/29/trump-fails-to-see-rate-cut-would-hurt-savers/
-◊; https://www.forbes.com/sites/nathanlewis/2019/02/21/the-problem-with-modern-monetary-theory-is-that-its-true/
-
 ◊; https://news.ycombinator.com/item?id=21004068
+
