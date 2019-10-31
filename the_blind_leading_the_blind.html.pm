@@ -144,7 +144,13 @@ This argument could be made against almost everything. For example ◊link[mega-
 Proponents will of course say that money is more important than other issues, too important to leave it to the whims of the politicians, and therefore the Fed must remain independent. I believe it's much to important to be handled in the dark, by a private entity.
 
 
-◊subhead{An open alternative}
+◊subhead{A new hope}
+
+Cryptocurrencies are interesting because they allow anyone to verify the number of coins in circulation---with certainty. No money in history has had this valuable property. You've always had to trust the word of someone, that the amount of money is what they say it is. Even with gold coins there's trust involved, you have to trust the issuer to include the right amount of gold otherwise the trust---and the currency---will collapse in value.
+
+You can also predict how many coins will created, it's coded into the rules of the cryptocurrency after all. While Bitcoin mimics the rate that gold is mined, there is no risk of counterfeit gold or a meteor of gold crashing on earth to disrupt the supply.
+
+Finally there are no "experts" in control of a cryptocurrency, 
 
 ◊ol{
     ◊li{The problem with gold coins is debasement}
@@ -156,3 +162,4 @@ Proponents will of course say that money is more important than other issues, to
 ◊(define mega-projects "http://omegataupodcast.net/181-why-megaprojects-fail-and-what-to-do-about-it/")
 ◊(define fed-dividends "https://newrepublic.com/article/116913/federal-reserve-dividends-most-outrageous-handout-banks")
 ◊(define sound-money "https://www.soundmoneydefense.org/sound-money-explained")
+
