@@ -141,21 +141,19 @@ It's worse than us not understanding how the system works. We simply don't have 
 
 This argument could be made against almost everything. For example ◊link[mega-projects]{mega projects often fail} (vastly overruns their cost or timetable) because politicians make them their pet project, pushing them through against all odds... And leave it to other people to pick up the pieces after the next election.
 
-Proponents will of course say that money is more important than other issues, too important to leave it to the whims of the politicians, and therefore the Fed must remain independent. I believe it's much to important to be handled in the dark, by a private entity.
+Proponents will of course say that money is more important than other issues---too important to leave it to the whims of the politicians---and therefore the Fed must remain independent. I believe it's much to important to be handled in the dark, by a private entity.
 
 
 ◊subhead{A new hope}
 
-Cryptocurrencies are interesting because they allow anyone to verify the number of coins in circulation---with certainty. No money in history has had this valuable property. You've always had to trust the word of someone, that the amount of money is what they say it is. Even with gold coins there's trust involved, you have to trust the issuer to include the right amount of gold otherwise the trust---and the currency---will collapse in value.
+Cryptocurrencies are interesting because they allow anyone to verify the number of coins in circulation---with certainty. No money in history has had this valuable property.  There has always been the need to trust the word of someone, that the amount of money is what they say it is. Even with gold coins there's trust involved, you have to trust the issuer to include the right amount of gold otherwise the trust---and the currency---will collapse in value.
 
-You can also predict how many coins will created, it's coded into the rules of the cryptocurrency after all. While Bitcoin mimics the rate that gold is mined, there is no risk of counterfeit gold or a meteor of gold crashing on earth to disrupt the supply.
+You can also predict how many coins will be created and when, it's coded into the rules of the cryptocurrency after all. While Bitcoin mimics the rate that gold is mined, there is no risk of counterfeit bitcoin or a meteor made of bitcoin crashing on earth to disrupt the supply, which there is with gold or other precious materials.
 
-Finally there are no "experts" in control of a cryptocurrency, 
+Finally there are no "experts" in control of a cryptocurrency, who are supposed to predict what cannot be predicted. There's nobody who can push the wrong button or pull the wrong lever and cause chaos.◊sn{half-truth}
 
-◊ol{
-    ◊li{The problem with gold coins is debasement}
-    ◊li{The problem with fiat backed by gold is trusting the backers}
-    ◊li{Cryptocurrencies have a verifiable coin supply, and cannot be counterfeit}
+◊ndef["half-truth"]{
+    This is a half-truth. Yes there's nobody who can create coins out of thin air, but there are developers, miners, exchanges and users of a cryptocurrency who can influence it's development. It is after all "just code" (and a lot of people agreeing with the rules of the code).
 }
 
 
