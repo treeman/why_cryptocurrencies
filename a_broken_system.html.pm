@@ -1,7 +1,7 @@
 #lang pollen
 
 ◊(define-meta title "A defective system")
-◊;(define-meta subtitle "Magic internet money")
+◊(define-meta subtitle "We're painted into a corner, and there's no easy way out")
 ◊(define-meta updated "2019-10-01T08:35:32+02:00")
 ◊(define-meta uuid "b09419e3-0f3d-4473-b458-d0dad01ed4b8")
 
@@ -25,8 +25,6 @@ In the chapter ◊link[what-is-money]{What is money?} we saw some historical exa
 
 The modern system is based on money that ◊link[sound-money]{isn't sound}---the money supply can be manipulated freely---which have several far-reaching negative consequences. I'll even go so far to say there's something fundamentally broken with the economic system we use today.
 
-◊todo{Reformulate}
-
 ◊(define what-is-money "/what_is_money.html")
 
 
@@ -42,11 +40,11 @@ For starters if I just kept the money without spending it, nothing would change:
 
 ◊todo{IMG of a counterfeiter, LEGO dude, normal dude, homeless dude}
 
-Then if I decided to buy a bunch of LEGO, the store would get some of my money:
+Then if I decided to buy a bunch of LEGO®, the store would get some of my money:
 
 ◊todo{IMG of a counterfeiter, LEGO dude, normal dude, homeless dude}
 
-After a while the store would use the counterfeited money to pay their employee:
+After a while the store would use the counterfeited money to pay their supplier:
 
 ◊todo{IMG of a counterfeiter, LEGO dude, normal dude, homeless dude}
 
@@ -359,7 +357,9 @@ We want to pull back on stimulation when the economy is booming, so we're prepar
     }
 }
 
-To be fair, the Federal Reserve knows this isn't an ideal situation, so they tried to raise interest rates. Unfortunately the stock market reacted poorly---many people got angry---and now they've backtracked and lowered them again.
+To be fair, the Federal Reserve knows this isn't an ideal situation, so they tried to raise interest rates. Unfortunately the stock market reacted poorly---many people got angry---and now they've backtracked and lowered them again. When problems arise, they use the financial equivalent of ◊link[fed-sledgehammer]{taking a sledgehammer to squash a bug}.
+
+◊(define fed-sledgehammer "https://www.newyorkfed.org/markets/opolicy/operating_policy_190920")
 
 So we're stuck in a situation where we don't have the tools to defend against a recession---tools the economic theory the system is built on needs. Tools that has been used up, because that's what the theory says we should do.◊sn{winging-it}
 
@@ -395,8 +395,8 @@ While "printing more money" is a popular solution, for critics of the modern eco
     With cryptocurrencies debasement isn't possible, which is one reason they're ◊link[are-cryptos-money]{better money} than gold.
 }
 
+It's not easy to see how a switch to sound money would occur, and maybe it would introduce more problems than it solved. But it would mean manipulation of the money supply would disappear and we wouldn't build a mountain of debt, only repayable by the printing machines, and we wouldn't devalue our savings while increasing the wealth inequality. And we wouldn't cling on to the broken and defunct economic theories in use today.
 
-It's not easy to see how a switch to sound money would occur, but if the economy was based on sound money then manipulation of the money supply would largely disappear. We wouldn't build a mountain of debt, only repayable by the printing machines, and we wouldn't devalue our savings while increasing the wealth inequality.
 
 ◊;And we wouldn't leave the faith of the economy in the hands our blind leaders, who manage to fan the flames of our recessions, but that's the topic of the ◊link[blind-leading-the-blind]{next chapter}.
 
