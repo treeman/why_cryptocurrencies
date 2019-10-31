@@ -141,7 +141,7 @@ It's worse than us not understanding how the system works. We simply don't have 
 
 This argument could be made against almost everything. For example ◊link[mega-projects]{mega projects often fail} (vastly overruns their cost or timetable) because politicians make them their pet project, pushing them through against all odds... And leave it to other people to pick up the pieces after the next election.
 
-Proponents will of course say that money is much too important to leave it to the whims of the politicians, and therefore the Fed must remain independent. Which is exactly why I believe it should ◊strong{not} be handled in the dark, by a private entity.
+Proponents will of course say that money is more important than other issues, too important to leave it to the whims of the politicians, and therefore the Fed must remain independent. I believe it's much to important to be handled in the dark, by a private entity.
 
 
 ◊subhead{An open alternative}
