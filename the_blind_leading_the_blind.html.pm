@@ -16,7 +16,7 @@
 
 ◊todo{IMG of a blindfolded dude leading masses of blindfolded dudes heading towards a cliff.}
 
-One of the most common arguments against sound money---like cryptocurrencies or money backed by gold---is that you lose the ability to react to the market. For example during a depression you could try to stimulate the economy to avoid the bad effects. This lies at the heart of Keynesian economic theory where you're supposed to push on the gas pedal during harsh economic times and pull on the breaks during good times. ◊sn{elaciticity}
+One of the most common arguments against ◊link[sound-money]{◊em{sound money}}---like cryptocurrencies or money backed by gold---is you lose the ability to react to the market. For example during a depression you could try to stimulate the economy to avoid the bad effects. This lies at the heart of Keynesian economic theory where you're supposed to push on the gas pedal during harsh economic times and pull on the breaks during good times. ◊sn{elaciticity}
 
 ◊ndef["elaciticity"]{
     ◊em{Elaciticity} is a nice word fractional banking proponents have used to describe this ability. In plain English it means the ability to inflate and deflate the money supply freely.
@@ -27,13 +27,15 @@ But there is a fatal flaw with this argument: it relies on being able to predict
 
 ◊subhead{How to become an expert}
 
-To become an expert in a field of course you need a lot of dedication, effort and maybe a bit of talent.◊sn{10000h} But as Daniel Kahneman points out in his book "Thinking, Fast and Slow" you also need the right environment to develop expertise:
+To become an expert in a field you need a lot of dedication, effort and maybe a bit of talent,◊sn{10000h} but as Daniel Kahneman points out in his book “◊link[thinking-fast-and-slow-book]{Thinking, Fast and Slow}” you also need the right environment to develop expertise:
 
 ◊ndef["10000h"]{
-    There's a misunderstood myth that you only need 10,000 hours, or that you need at least 10,000 hours before you become an expert. But that's not the truth, with the right environment and ◊em{dedicated practice} you can become an expert much faster and if you use your time inefficiently you may never become one.
+    There's a misunderstood myth that you only need 10,000 hours, or that you need at least 10,000 hours before you become an expert. But that's not the truth, with the right environment and ◊link[deliberate-practice]{◊em{deliberate practice}} you can become an expert much faster and if you use your time inefficiently you may never become one.
 
     Think for example of the teenage golf prodigies who eclipse the middle-aged men---who've spent their entire lives playing golf---in no time at all.
 }
+
+◊(define deliberate-practice "https://expertenough.com/1423/deliberate-practice")
 
 ◊ul{
     ◊li{An environment that is sufficiently regular to be predictable.}
@@ -49,25 +51,21 @@ For example picking stock is notoriously difficult, so difficult that in general
 In contrast learning how to drive a car provides an ideal learning environment. You'll get instant feedback whenever you break or use the gas pedal, when you turn the steering-wheel the car turns and you'll quickly find out if you changed gears correctly. While similar learning how to maneuver a large ship is more difficult because of the delayed feedback.
 
 
-
-
-
 ◊subhead{Why planning economy doesn't work}
 
 ◊todo{IMG of a butterfly flapping it's wings causing a tornado on the other side}
 
 
+
+
 ◊subhead{Our leaders are blind}
 
-Because the economy on a global scale is so incredibly complex it's extremely hard, some would say impossible, to accurately predict how it'll behave. Just look at the ◊link[financial-crisis]{financial crisis in 2008} which in hindsight should've been obvious, but it took almost everyone by surprise.◊sn{black-swan}
-
-◊ndef["black-swan"]{
-    The 2008 crisis is an example of a ◊em{black swan} event. Impossible to predict before it happens but obvious in hindsight. Coincidentally the meteoric rise of Bitcoin can also be considered a black swan.
+◊qt[#:author "Citigroup CEO Chuck Prince"
+    #:date "2007"]{
+  When the music stops, in terms of liquidity, things will be complicated. But as long as the music is playing, you’ve got to get up and dance. We’re still dancing.
 }
 
-◊(define financial-crisis "/financial_crisis.html")
-
-Here are some quotes from some of the leading experts of the world, merely months before the financial meltdown:
+It's not just the planning economy of the Soviet Union that has problems predicting and adapting to the whims of the global economy. Look at the ◊link[financial-crisis]{financial crisis in 2008} which should've been obvious, but took almost everyone by surprise. Here's what the Federal Reserve had to say, merely months before the financial meltdown:
 
 ◊qt[#:author "The Federal Reserve"
     #:date "August, 2007"
@@ -77,25 +75,47 @@ Here are some quotes from some of the leading experts of the world, merely month
   Nevertheless, the economy seems likely to continue to expand at a moderate pace over coming quarters, supported by solid growth in employment and incomes and a robust global economy.
 }
 
-◊qt[#:author "Citigroup CEO Chuck Prince"
-    #:date "2007"]{
-  When the music stops, in terms of liquidity, things will be complicated. But as long as the music is playing, you’ve got to get up and dance. We’re still dancing.
+The Federal Reserve, calling the global economy "robust", fanned the flames of the housing bubble by focusing on inflation and keeping the rent low, all the way up to the crash. They also let Lehman Brothers fail, not realizing the realizing the disaster it would create.◊sn{music-stops}
+
+Maybe you feel like I'm focusing too much on the ◊link[financial-crisis]{2008 financial crisis}? Then how about their actions around the ◊link[great-depression]{Great Depression}, of which the Federal Reserve chairman had this to say:
+
+◊qt[#:author "Ben S. Bernanke, chairman of the Federal Reserve"
+    #:date "2002"
+    #:url "https://www.federalreserve.gov/boarddocs/speeches/2002/20021108/default.htm"]{
+    Let me end my talk by abusing slightly my status as an official representative of the Federal Reserve. I would like to say to Milton and Anna: Regarding the Great Depression, you're right. We did it. We're very sorry. But thanks to you, we won't do it again.
 }
 
-The Federal Reserve fanned the flames of the housing bubble by focusing on inflation and keeping the rent low, all the way up to the crash. During the crisis the Fed bailed-out Bear Stearns but let Lehman Brothers fail, which has been widely criticized afterwards.◊sn{music-stops}
+Oops!... you did it again.
+
+◊(define financial-crisis "/financial_crisis.html")
 
 ◊ndef["music-stops"]{
-    Alan S. Blinder "After the Music Stopped".
+    “◊link[after-the-music-stopped-book]{After the Music Stopped}” Alan S. Blinder
 }
+
+This shouldn't be that surprising when you consider that the national and global economy is too irregular to be predictable, and the feedback loop is extremely long---if it even exists. If you for example want to lower the central bank's interest rate, how long do you have to wait to see the result? Days, months maybe even years. And how do you know the economy reacted because of your changes to the interest rate, and not because of the trade war between the U.S. and China, brexit or a million other reasons?◊sn{models}
+
+◊ndef["models"]{
+    What do you do then? You use complicated models, based on historical data, to predict the effects on the economy.
+
+    How do you know the models are correct? You don't.
+}
+
+These people aren't experts, simply because the environment doesn't lend itself to creating experts. The worst thing isn't that they're clueless, the worst thing is that they don't know their limitations:◊sn{actually-worst}
+
+◊ndef["actually-worst"]{
+    Well, the actually worst thing is that the economic system is built upon these "experts" predicting and reacting to events.
+}
+
+◊qt[#:author "IMF:s financial advisor Jose Viñals"
+    #:date "2016"
+    #:url "https://blogs.imf.org/2016/04/10/the-broader-view-the-positive-effects-of-negative-nominal-interest-rates/"]{
+  Although the experience with negative nominal interest rates is limited, we tentatively conclude that overall, they help deliver additional monetary stimulus and easier financial conditions, which support demand and price stability.
+}
+
+While the article itself is more nuanced, you can't conclude anything with such a small sample size, with such a short timespan and in an irregular environment.
 
 ◊;https://news.ycombinator.com/item?id=21028770
-
-Negative rents.
-
-◊qt[#:author "IMF:s finansiella rådgivare Jose Viñals"
-    #:url "https://www.svd.se/imf-stottar-stefan-ingves-minusranta"]{
-    Även om erfarenheten med negativa räntor är begränsade drar vi slutsatsen att det har bidragit till ytterligare penningpolitiska stimulanser och enklare ekonomiska villkor
-}
 
 ◊subhead{We are blind}
 
@@ -103,37 +123,36 @@ Negative rents.
     It is well enough that people of the nation do not understand our banking and monetary system, for if they did, I believe there would be a revolution before tomorrow morning.
 }
 
-One might argue that we're blind because we don't understand how the banking system work, what consequences printing money out of thin air have and how we're ignorant of how the modern monetary system work.
+I could argue that we're blind because we collectively don't understand how the banking system work, the modern monetary system or the financial system---which would largely be true. But there's another, more sinister, cause of our blindness: the Federal Reserve.
 
-Do the people really know that the least accountable operation in the U.S. government isn't the FBI, CIA or the NSA---which are all accountable to congressional supervision---but it's the Fed? The Federal Reserve System, the U.S. central bank, is not accountable to anyone, has no budget and nobody has insight into it's operations.
+Do the people know that the least accountable operation in the U.S. government isn't the FBI, CIA or the NSA---which are all accountable to congressional supervision---but the Federal Reserve? The U.S. central bank, is not accountable to anyone, has no budget and nobody has insight into it's operations.◊mn{case-against-fed}
 
-◊qt[#:author "Frank Herbert"
-    #:quote-src #t
-    #:src "Dune"]{
-      He who controls the spice controls the universe.
+◊ndef["case-against-fed"]{
+    “◊link[case-against-fed-book]{The Case Against the Fed}” Murray N. Rothbard
 }
 
-It's worse than us not understanding how the system works because the Fed, the "controller of the universe", makes us all blind. We can't even tell how many dollar bills really exist.
+The Fed isn't a government agency. It's a private entity and its shareholders are banks which ◊link[fed-dividends]{earn a dividend}---at 6%, often tax-free. (Which banks? It's a secret.) Nobody knows how much banks are printing to pad their own pockets and nobody knows how many dollars exist.
 
+It's worse than us not understanding how the system works. We simply don't have the ability to understand because the Federal Reserve makes us all blind. But this is often promoted as a benefit, not a drawback:
 
-◊subhead{Booms and busts}
-
-◊;https://www.alt-m.org/2018/08/16/fractional-reserve-banking-and-austrian-business-cycles-part-i/
-◊;https://www.infowars.com/does-the-boom-bust-cycle-ever-result-from-commodity-money/
-◊;https://mises.org/library/boom-and-bust-0
-
-
-◊subhead{unsorted}
-
-The Fed is not a government agency. It's a private entity and its shareholders are banks which earn a dividend. As much as 80 billion dollars per year, total. (Which banks? It's a secret.) Nobody really knows how many dollars exist.  Nobody knows how much banks are printing to pad their own pockets.
-
-
-◊qt[#:author "Alan Greenspan, Chairmain of the Fed"]{
+◊qt[#:author "Alan Greenspan, Chairmain of the Federal Reserve"]{
     The temptetion is to step on the monetary accelerator or at least to avoid the monetary break until after the next election... Giving in to such temptations is likely to impart an inflationary bias to the economy and could lead to instability, recession and economic stagnation.
 }
 
-◊qt[#:src "The Laundromat"
-    #:author "Meryl Streep"]{
-    In this system, our system, the slaves are unaware, both of their status and of their masters, who exist in a world apart and where the shackles are hidden amidst reams of unreachable legalese.
+This argument could be made against almost everything. For example ◊link[mega-projects]{mega projects often fail} (vastly overruns their cost or timetable) because politicians make them their pet project, pushing them through against all odds... And leave it to other people to pick up the pieces after the next election.
+
+Proponents will of course say that money is much too important to leave it to the whims of the politicians, and therefore the Fed must remain independent. Which is exactly why I believe it should ◊strong{not} be handled in the dark, by a private entity.
+
+
+◊subhead{An open alternative}
+
+◊ol{
+    ◊li{The problem with gold coins is debasement}
+    ◊li{The problem with fiat backed by gold is trusting the backers}
+    ◊li{Cryptocurrencies have a verifiable coin supply, and cannot be counterfeit}
 }
 
+
+◊(define mega-projects "http://omegataupodcast.net/181-why-megaprojects-fail-and-what-to-do-about-it/")
+◊(define fed-dividends "https://newrepublic.com/article/116913/federal-reserve-dividends-most-outrageous-handout-banks")
+◊(define sound-money "https://www.soundmoneydefense.org/sound-money-explained")
