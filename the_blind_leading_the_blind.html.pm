@@ -1,7 +1,7 @@
 #lang pollen
 
 ◊(define-meta title "The blind leading the blind")
-◊;(define-meta subtitle "Magic internet money")
+◊(define-meta subtitle "We don't understand, and neither do the experts")
 ◊(define-meta updated "2019-10-01T08:34:55+02:00")
 ◊(define-meta uuid "4684c5b0-9f93-479b-a8ab-165601a430c9")
 
@@ -16,13 +16,13 @@
 
 ◊todo{IMG of a blindfolded dude leading masses of blindfolded dudes heading towards a cliff.}
 
-One of the most common arguments against ◊link[sound-money]{◊em{sound money}}---like cryptocurrencies or money backed by gold---is you lose the ability to react to the market. For example during a depression you could try to stimulate the economy to avoid the bad effects. This lies at the heart of Keynesian economic theory where you're supposed to push on the gas pedal during harsh economic times and pull on the breaks during good times. ◊sn{elaciticity}
+One of the most common arguments against ◊link[sound-money]{◊em{sound money}}---like cryptocurrencies or money backed by gold---is you lose the ability to influence and react to the market. For example if the economy crashes, or you think it will crash, the modern central banks might try to print money and buy things to soften the crash. This isn't possible with cryptocurrencies or gold, since they cannot be created freely. ◊sn{elaciticity}
 
 ◊ndef["elaciticity"]{
     ◊em{Elaciticity} is a nice word fractional banking proponents have used to describe this ability. In plain English it means the ability to inflate and deflate the money supply freely.
 }
 
-But there is a fatal flaw with this argument: it relies on being able to predict the market and to know what actions to take to move it in the direction you want. With how intricate and complex the economy is, it's absurd to think you can.
+But there is a fatal flaw with this argument: it relies on being able to predict the market and to know what actions to take to move it in the direction you want. With how intricate and complex the economy is, it's an absurd assumption.
 
 
 ◊subhead{How to become an expert}
@@ -42,13 +42,15 @@ To become an expert in a field you need a lot of dedication, effort and maybe a 
     ◊li{An opportunity to learn these regularities through prolonged practice.}
 }
 
-For example picking stock is notoriously difficult, so difficult that in general you'll be better off investing in a passive index fund than picking stock yourself. This may not be surprising but it also applies to professional investors, most of whom under-perform against the index! This is because the stock market isn't regular enough to be predictable.◊sn{wicked-env}
+For example picking stock is notoriously difficult, so difficult that in general you'll be ◊link[investing-index]{better off investing in a passive index fund than picking stock yourself}. This may not be surprising but it also applies to professional investors, most of whom under-perform against the index! This is because the stock market isn't regular enough to be predictable.◊sn{wicked-env}
 
 ◊ndef["wicked-env"]{
     There's also a "wicked" environment where you're likely to learn the wrong lesson from your experience. The example given is of a physician who tried to tried to confirm his a hypothesis for who might develop typhoid. Unfortunately he tested his hunch by palpating the patient's tongue, without washing his hands, making him draw the wrong conclusion.
 }
 
 In contrast learning how to drive a car provides an ideal learning environment. You'll get instant feedback whenever you break or use the gas pedal, when you turn the steering-wheel the car turns and you'll quickly find out if you changed gears correctly. While similar learning how to maneuver a large ship is more difficult because of the delayed feedback.
+
+◊(define investing-index "https://www.cnbc.com/2017/05/12/warren-buffett-says-index-funds-make-the-best-retirement-sense-practically-all-the-time.html")
 
 
 ◊subhead{Why planning economy doesn't work}
@@ -65,7 +67,7 @@ In contrast learning how to drive a car provides an ideal learning environment. 
   When the music stops, in terms of liquidity, things will be complicated. But as long as the music is playing, you’ve got to get up and dance. We’re still dancing.
 }
 
-It's not just the planning economy of the Soviet Union that has problems predicting and adapting to the whims of the global economy. Look at the ◊link[financial-crisis]{financial crisis in 2008} which should've been obvious, but took almost everyone by surprise. Here's what the Federal Reserve had to say, merely months before the financial meltdown:
+It's not just the planning economy of the Soviet Union that has problems predicting and adapting to the whims of the global economy. Look at the ◊link[financial-crisis]{financial crisis in 2008} which should've been obvious, but took almost everyone by surprise. Here's what the Federal Reserve had to say, a month before the financial meltdown:
 
 ◊qt[#:author "The Federal Reserve"
     #:date "August, 2007"
@@ -75,17 +77,19 @@ It's not just the planning economy of the Soviet Union that has problems predict
   Nevertheless, the economy seems likely to continue to expand at a moderate pace over coming quarters, supported by solid growth in employment and incomes and a robust global economy.
 }
 
-The Federal Reserve, calling the global economy "robust", fanned the flames of the housing bubble by focusing on inflation and keeping the rent low, all the way up to the crash. They also let Lehman Brothers fail, not realizing the realizing the disaster it would create.◊sn{music-stops}
+The Federal Reserve, calling the global economy "robust", fanned the flames of the housing bubble by focusing on inflation and keeping the rent low, all the way up to the crash. They also let Lehman Brothers fail, not realizing the realizing the disaster it would create.◊mn{music-stops}
 
-Maybe you feel like I'm focusing too much on the ◊link[financial-crisis]{2008 financial crisis}? Then how about their actions around the ◊link[great-depression]{Great Depression}, of which the Federal Reserve chairman had this to say:
+Maybe you feel like I'm focusing too much on the ◊link[financial-crisis]{2008 financial crisis}? Then how about their actions around the ◊link[great-depression]{Great Depression} (which were critiqued as worsening the crisis), of which the Federal Reserve chairman had this to say:
 
 ◊qt[#:author "Ben S. Bernanke, chairman of the Federal Reserve"
     #:date "2002"
     #:url "https://www.federalreserve.gov/boarddocs/speeches/2002/20021108/default.htm"]{
-    Let me end my talk by abusing slightly my status as an official representative of the Federal Reserve. I would like to say to Milton and Anna: Regarding the Great Depression, you're right. We did it. We're very sorry. But thanks to you, we won't do it again.
+    Let me end my talk by abusing slightly my status as an official representative of the Federal Reserve. I would like to say to Milton and Anna: Regarding the Great Depression, you're right. We did it. We're very sorry. But thanks to you, we won't do it again.◊sn{oops}
 }
 
-Oops!... you did it again.
+◊ndef["oops"]{
+    Oops!... you did it again.
+}
 
 ◊(define financial-crisis "/financial_crisis.html")
 
@@ -93,7 +97,7 @@ Oops!... you did it again.
     “◊link[after-the-music-stopped-book]{After the Music Stopped}” Alan S. Blinder
 }
 
-This shouldn't be that surprising when you consider that the national and global economy is too irregular to be predictable, and the feedback loop is extremely long---if it even exists. If you for example want to lower the central bank's interest rate, how long do you have to wait to see the result? Days, months maybe even years. And how do you know the economy reacted because of your changes to the interest rate, and not because of the trade war between the U.S. and China, brexit or a million other reasons?◊sn{models}
+This shouldn't be that surprising when you consider that the national and global economy is too irregular to be predictable, and the feedback loop is extremely long---if it even exists.  If for example the central bank lowers the interest rate, how long do we have to wait to see the effect? Days, months and maybe even years. And how do we know the economy reacted this way because of the changes to the interest rate, and not because of the trade war between the U.S. and China, brexit or a million other reasons?◊sn{models}
 
 ◊ndef["models"]{
     What do you do then? You use complicated models, based on historical data, to predict the effects on the economy.
@@ -125,32 +129,50 @@ While the article itself is more nuanced, you can't conclude anything with such 
 
 I could argue that we're blind because we collectively don't understand how the banking system work, the modern monetary system or the financial system---which would largely be true. But there's another, more sinister, cause of our blindness: the Federal Reserve.
 
-Do the people know that the least accountable operation in the U.S. government isn't the FBI, CIA or the NSA---which are all accountable to congressional supervision---but the Federal Reserve? The U.S. central bank, is not accountable to anyone, has no budget and nobody has insight into it's operations.◊mn{case-against-fed}
+Do the people know that the least accountable operation in the U.S. government isn't the FBI, CIA or the NSA---which are all accountable to congressional supervision---but the Federal Reserve? The central bank of the United States, the largest economy in the world, isn't accountable to anyone, has no budget and nobody has insight into it's operations.◊mn{case-against-fed}
 
 ◊ndef["case-against-fed"]{
     “◊link[case-against-fed-book]{The Case Against the Fed}” Murray N. Rothbard
 }
 
-The Fed isn't a government agency. It's a private entity and its shareholders are banks which ◊link[fed-dividends]{earn a dividend}---at 6%, often tax-free. (Which banks? It's a secret.) Nobody knows how much banks are printing to pad their own pockets and nobody knows how many dollars exist.
+The Fed isn't a government agency. It's a private entity and its shareholders are banks which ◊link[fed-dividends]{earn a dividend}---at 6%, often tax-free. (Which banks? It's a secret.) Nobody knows how much banks are printing to pad their own pockets and nobody knows how many dollars exist.◊sn{bonuses}
 
-It's worse than us not understanding how the system works. We simply don't have the ability to understand because the Federal Reserve makes us all blind. But this is often promoted as a benefit, not a drawback:
+◊ndef["bonuses"]{
+    An easy thing to criticise is how the ◊link[bailouts]{banks got bailed out} in the 2008 financial crisis, and were given money with almost no strings attached and paid out ridiculous salaries and bonuses. Conflict of interest much?
+}
+
+◊(define bailouts "/financial_crisis.html#the-bailouts")
+
+It's worse than us not understanding how the system works. We simply don't have the ability to understand because the Federal Reserve makes us all blind. But this is often promoted as a benefit, not a drawback:◊sn{oversight-control}
+
+◊ndef["oversight-control"]{
+    The resistance isn't just regarding control. It's also about transparency---they don't want us to see what's going on.
+}
 
 ◊qt[#:author "Alan Greenspan, Chairmain of the Federal Reserve"]{
     The temptetion is to step on the monetary accelerator or at least to avoid the monetary break until after the next election... Giving in to such temptations is likely to impart an inflationary bias to the economy and could lead to instability, recession and economic stagnation.
 }
 
-This argument could be made against almost everything. For example ◊link[mega-projects]{mega projects often fail} (vastly overruns their cost or timetable) because politicians make them their pet project, pushing them through against all odds... And leave it to other people to pick up the pieces after the next election.
+This argument could be made against almost everything. For example ◊link[mega-projects]{megaprojects often fail} (vastly overruns their cost or timetable) because politicians make them their pet project, pushing them through against all odds... And leave it to other people to pick up the pieces after the next election.◊sn{olympics}
+
+◊ndef["olympics"]{
+    My favorite example of failing megaprojects is the Olympics, which have vastly overrun their initial projected cost every single time.
+}
 
 Proponents will of course say that money is more important than other issues---too important to leave it to the whims of the politicians---and therefore the Fed must remain independent. I believe it's much to important to be handled in the dark, by a private entity.
 
 
 ◊subhead{A new hope}
 
-Cryptocurrencies are interesting because they allow anyone to verify the number of coins in circulation---with certainty. No money in history has had this valuable property.  There has always been the need to trust the word of someone, that the amount of money is what they say it is. Even with gold coins there's trust involved, you have to trust the issuer to include the right amount of gold otherwise the trust---and the currency---will collapse in value.
+Cryptocurrencies are interesting because they allow anyone to verify the number of coins in circulation---with certainty. No money in history has had this valuable property.  There has always been the need to trust the word of someone, that the amount of money is what they say it is. Even with gold coins there's trust involved, you have to trust the issuer to include the right amount of gold otherwise the trust---and the currency---◊link[rome-debasing]{will collapse in value}.
 
-You can also predict how many coins will be created and when, it's coded into the rules of the cryptocurrency after all. While Bitcoin mimics the rate that gold is mined, there is no risk of counterfeit bitcoin or a meteor made of bitcoin crashing on earth to disrupt the supply, which there is with gold or other precious materials.
+◊(define rome-debasing "https://money.visualcapitalist.com/currency-and-the-collapse-of-the-roman-empire/")
 
-Finally there are no "experts" in control of a cryptocurrency, who are supposed to predict what cannot be predicted. There's nobody who can push the wrong button or pull the wrong lever and cause chaos.◊sn{half-truth}
+You can also predict how many coins will be created and when, it's coded into the rules of the cryptocurrency after all. While Bitcoin ◊link[emission-rate]{mimics the rate that gold is mined}, there is no risk of counterfeit bitcoin or a meteor made of bitcoin crashing on earth to disrupt the supply, which there is with gold or other precious materials.
+
+◊(define emission-rate "/properties_of_a_cryptocurrency.html#predetermined-emission-rate")
+
+Finally there are no "experts" in control of a cryptocurrency, who are supposed to predict what cannot be predicted. There's nobody to push the wrong button or pull the wrong lever and cause economic chaos.◊sn{half-truth}
 
 ◊ndef["half-truth"]{
     This is a half-truth. Yes there's nobody who can create coins out of thin air, but there are developers, miners, exchanges and users of a cryptocurrency who can influence it's development. It is after all "just code" (and a lot of people agreeing with the rules of the code).
