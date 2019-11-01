@@ -164,25 +164,35 @@ Proponents will of course say that money is more important than other issues---t
 
 ◊subhead{A new hope}
 
-Cryptocurrencies are interesting because they allow anyone to verify the number of coins in circulation---with certainty. No money in history has had this valuable property.  There has always been the need to trust the word of someone, that the amount of money is what they say it is. Even with gold coins there's trust involved, you have to trust the issuer to include the right amount of gold otherwise the trust---and the currency---◊link[rome-debasing]{will collapse in value}.
+Cryptocurrencies are interesting because they allow anyone to verify the number of coins in circulation---with certainty. No money in history has had this valuable property.  There has always been the need to trust the word of someone, that the amount of money is what they say it is. Even with gold coins there's trust involved, you have to trust the issuer to include the right amount of gold otherwise the trust---and the currency---◊link[rome-debasing]{will collapse in value}.◊sn{portraits}
+
+◊ndef["portraits"]{
+    Ever wonder why there are portraits on coins? Because they make them recognizable so you can decide to trust them or not. "I'll gladly accept emperor Augustu's coins" or "we don't accept that usurpers coins here."
+}
 
 ◊(define rome-debasing "https://money.visualcapitalist.com/currency-and-the-collapse-of-the-roman-empire/")
 
 You can also predict how many coins will be created and when, it's coded into the rules of the cryptocurrency after all. While Bitcoin ◊link[emission-rate]{mimics the rate that gold is mined}, there is no risk of counterfeit bitcoin or a meteor made of bitcoin crashing on earth to disrupt the supply, which there is with gold or other precious materials.◊sn{inflation-bug}
 
 ◊ndef["inflation-bug"]{
-    There is a risk of ◊link[inflation-bug]{bugs in the code} which may allow hackers to print coins.
+    There is instead a risk of ◊link[inflation-bug]{bugs in the code} which may allow hackers to print coins.
 }
 
 ◊(define inflation-bug "https://medium.com/@awemany/600-microseconds-b70f87b0b2a6")
 ◊(define emission-rate "/properties_of_a_cryptocurrency.html#predetermined-emission-rate")
 
-Finally there are no "experts" in control of a cryptocurrency, who are supposed to predict what cannot be predicted. There's nobody to push the wrong button or pull the wrong lever and cause economic chaos.◊sn{half-truth}
+Finally cryptocurrencies doesn't rely on "experts", who are supposed to predict what cannot be predicted. There's nobody in control, so there's nobody to push the wrong button or pull the wrong lever and cause economic chaos.◊sn{half-truth}
 
 ◊ndef["half-truth"]{
-    This is a half-truth. Yes there's nobody who can create coins out of thin air, but there are developers, miners, exchanges and users of a cryptocurrency who can influence it's development. It is after all "just code" (and a lot of people agreeing with the rules of the code).
+    This is a half-truth. Yes there's nobody who can create coins out of thin air, but there are developers, miners, exchanges and users of a cryptocurrency who can influence its development. After all it's "just code" (and a lot of people agreeing with the rules of the code).
 }
 
+◊qt[#:author "Obi-Wan Kenobi"
+    #:src "Star Wars: Episode IV - A New Hope"
+    #:quote-src #t
+    #:url "https://www.imdb.com/title/tt0076759/"]{
+    An elegant weapon for a more civilized age.
+}
 
 ◊(define mega-projects "http://omegataupodcast.net/181-why-megaprojects-fail-and-what-to-do-about-it/")
 ◊(define fed-dividends "https://newrepublic.com/article/116913/federal-reserve-dividends-most-outrageous-handout-banks")
