@@ -132,7 +132,7 @@ Even if you disagree about certain choices, it's hard to disagree that cryptocur
 ◊ndef["bugs"]{
     A bug is a programming fault in the software. As a developer I can assure you, bugs will happen. The question is, how can you avoid the most severe ones and what do you do when they appear?
 
-    Both ◊link[monero-bug]{Monero} and ◊link[bitcoin-bug]{Bitcoin} has for example had major bugs that could've allowed an attacker to create coins for free. Neither were exploited, this time.
+    Both ◊link[monero-bug]{Monero} and ◊link[bitcoin-bug]{Bitcoin} has for example had major bugs that could have allowed an attacker to create coins for free. Neither were exploited, this time.
 }
 
 ◊(define avg-life-fiat "https://web.archive.org/web/20150801064652/http://dollardaze.org/blog/?page_id=00017")

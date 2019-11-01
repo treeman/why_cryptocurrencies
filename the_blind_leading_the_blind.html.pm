@@ -53,15 +53,23 @@ In contrast learning how to drive a car provides an ideal learning environment. 
 ◊(define investing-index "https://www.cnbc.com/2017/05/12/warren-buffett-says-index-funds-make-the-best-retirement-sense-practically-all-the-time.html")
 
 
-◊subhead{The problem with economic planning}
+◊subhead{The problem with planning the economy}
 
 ◊todo{IMG of a butterfly flapping it's wings causing a tornado on the other side}
 
-In a planning 
+In ◊link[economic-planning]{economic planning} central governments make, or influence, economic decisions. There is nothing inherently bad about this and all governments do it, for example large infrastructure projects are often created by the government.  The Soviet Union took this concept ◊link[command-economy]{further} and it was up to the government to decide what goods to produce, how much and when.
 
-◊; https://www.britannica.com/topic/economic-planning
+Because the economy is made up of millions or even billions of people, with different motivations and imperfect knowledge, it's ◊strong{extremely} hard to predict all the needs of the market. For example you need to predict larger demand for butter closer to Christmas, because people are more likely to bake.◊sn{milk} Or that the demand for fluffy toys will skyrocket, because a game called Pokémon will become unreasonable popular. You think picking stock is difficult? This is much harder.
 
+Predictably this didn't go so well, with huge queues outside almost empty stores and people having to resort to the black market for necessities. The inability to predict the market, and control the economy, is ◊link[ussr-collapse]{one of the reasons} the Soviet Union collapsed.
 
+◊ndef["milk"]{
+    You also need to predict a larger demand for milk, because there are people like me who only drink milk with gingerbread.
+}
+
+◊(define economic-planning "https://www.britannica.com/topic/economic-planning")
+◊(define command-economy "https://www.investopedia.com/terms/c/command-economy.asp")
+◊(define ussr-collapse "https://www.investopedia.com/articles/investing/021716/why-ussr-collapsed-economically.asp")
 
 
 ◊subhead{Our leaders are blind}
@@ -71,7 +79,7 @@ In a planning
   When the music stops, in terms of liquidity, things will be complicated. But as long as the music is playing, you’ve got to get up and dance. We’re still dancing.
 }
 
-It's not just the planning economy of the Soviet Union that has problems predicting and adapting to the whims of the global economy. Look at the ◊link[financial-crisis]{financial crisis in 2008} which should've been obvious, but took almost everyone by surprise. Here's what the Federal Reserve had to say, a month before the financial meltdown:
+It's not just the planning economy of the Soviet Union that has problems predicting and adapting to the whims of the global economy. Look at the ◊link[financial-crisis]{financial crisis in 2008} which should have been obvious, but took almost everyone by surprise. Here's what the Federal Reserve had to say, a month before the financial meltdown:
 
 ◊qt[#:author "The Federal Reserve"
     #:date "August, 2007"
