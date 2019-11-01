@@ -53,9 +53,13 @@ In contrast learning how to drive a car provides an ideal learning environment. 
 ◊(define investing-index "https://www.cnbc.com/2017/05/12/warren-buffett-says-index-funds-make-the-best-retirement-sense-practically-all-the-time.html")
 
 
-◊subhead{Why planning economy doesn't work}
+◊subhead{The problem with economic planning}
 
 ◊todo{IMG of a butterfly flapping it's wings causing a tornado on the other side}
+
+In a planning 
+
+◊; https://www.britannica.com/topic/economic-planning
 
 
 
@@ -181,7 +185,7 @@ You can also predict how many coins will be created and when, it's coded into th
 ◊(define inflation-bug "https://medium.com/@awemany/600-microseconds-b70f87b0b2a6")
 ◊(define emission-rate "/properties_of_a_cryptocurrency.html#predetermined-emission-rate")
 
-Finally cryptocurrencies doesn't rely on "experts", who are supposed to predict what cannot be predicted. There's nobody in control, so there's nobody to push the wrong button or pull the wrong lever and cause economic chaos.◊sn{half-truth}
+Finally cryptocurrencies don't rely on "experts", who are supposed to predict what cannot be predicted. There's nobody in control, so there's nobody to push the wrong button or pull the wrong lever and cause economic chaos.◊sn{half-truth}
 
 ◊ndef["half-truth"]{
     This is a half-truth. Yes there's nobody who can create coins out of thin air, but there are developers, miners, exchanges and users of a cryptocurrency who can influence its development. After all it's "just code" (and a lot of people agreeing with the rules of the code).
