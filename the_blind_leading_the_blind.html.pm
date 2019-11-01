@@ -168,8 +168,13 @@ Cryptocurrencies are interesting because they allow anyone to verify the number 
 
 ◊(define rome-debasing "https://money.visualcapitalist.com/currency-and-the-collapse-of-the-roman-empire/")
 
-You can also predict how many coins will be created and when, it's coded into the rules of the cryptocurrency after all. While Bitcoin ◊link[emission-rate]{mimics the rate that gold is mined}, there is no risk of counterfeit bitcoin or a meteor made of bitcoin crashing on earth to disrupt the supply, which there is with gold or other precious materials.
+You can also predict how many coins will be created and when, it's coded into the rules of the cryptocurrency after all. While Bitcoin ◊link[emission-rate]{mimics the rate that gold is mined}, there is no risk of counterfeit bitcoin or a meteor made of bitcoin crashing on earth to disrupt the supply, which there is with gold or other precious materials.◊sn{inflation-bug}
 
+◊ndef["inflation-bug"]{
+    There is a risk of ◊link[inflation-bug]{bugs in the code} which may allow hackers to print coins.
+}
+
+◊(define inflation-bug "https://medium.com/@awemany/600-microseconds-b70f87b0b2a6")
 ◊(define emission-rate "/properties_of_a_cryptocurrency.html#predetermined-emission-rate")
 
 Finally there are no "experts" in control of a cryptocurrency, who are supposed to predict what cannot be predicted. There's nobody to push the wrong button or pull the wrong lever and cause economic chaos.◊sn{half-truth}

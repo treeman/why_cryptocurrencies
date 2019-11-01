@@ -25,6 +25,8 @@ In the chapter ◊link[what-is-money]{What is money?} we saw some historical exa
 
 The modern system is based on money that ◊link[sound-money]{isn't sound}---the money supply can be manipulated freely---which have several far-reaching negative consequences. I'll even go so far to say there's something fundamentally broken with the economic system we use today.
 
+◊todo{rewrite}
+
 ◊(define what-is-money "/what_is_money.html")
 
 
@@ -34,7 +36,7 @@ Imagine a counterfeiter, who has the ability to print money from thin air.◊sn{
 
 Personally I would probably pay off my loans, renovate our house, go on vacation and buy a bunch of LEGO®. If I was smart I would also invest it; buy some stocks, some gold, maybe a house or two and rent them out. In short I would buy a bunch of stuff---and I think most would do the same.
 
-If I did print money, a ◊strong{lot} of money, and spent it like this---what would the effect on the economy be?◊sn{case-against-fed}
+If I did print money---a ◊strong{lot} of money---and spent it like this, what would the effect on the economy be?◊sn{case-against-fed}
 
 For starters if I just kept the money without spending it, nothing would change:
 
@@ -68,10 +70,10 @@ Who in turn will use it to buy other stuff, and in this way the counterfeited mo
 ◊ndef["deflation"]{
     The opposite is ◊em{deflation}, when money increases in value and buys you more stuff.
 
-    While it may sound strange, technology has been deflating in price forever. When computers were just introduced they were ◊em{extremely} expensive, but now everyone and their mother literally has one in their pocket. And probably several at home. Some even have one on their wrist.
+    While it may sound strange, technology has been deflating in price forever. When computers were just introduced they were ◊em{extremely} expensive, but now everyone and their mother literally has one in their pocket, and probably several at home. Some even have one on their wrist.
 }
 
-Counterfeiting means everyones savings---the "old" money---will be worth less. This is why you shouldn't just store all your money under the mattress or in a bank account---the value will be eaten up by inflation.◊sn{inflation-visualization}
+Counterfeiting means everyones savings---the "old" money---will lose value. This is why you shouldn't just store all your money as cash under the mattress or in a bank account---the value will be eaten up by inflation.◊sn{inflation-visualization}
 
 ◊ndef["inflation-visualization"]{
     ◊link[inflation-dollar-visualization]{Here's a cool visualization} of the expanding money supply and what $1 could buy.
@@ -107,7 +109,7 @@ Counterfeiting also means redistributing wealth from everyone to the counterfeit
 
 ◊subhead{Legal counterfeiting}
 
-While I think most can agree that counterfeiting shouldn't be allowed, the modern economic system is built upon legal counterfeiting. There are entities that have the legal right to print money---with the same negative consequences on the economy that counterfeiting has. They're the central banks and regular banks too.
+While I think most will agree counterfeiting shouldn't be allowed, the modern economic system is built upon legal counterfeiting. There are entities that have the legal right to print money---with the same negative consequences on the economy that counterfeiting has. They're the central banks and regular banks too.
 
 The central banks, the Federal Reserve (Fed) in the U.S. or the European Central Bank (ECB) in the EU, are the only ones allowed to print physical money. Which they have to do, if only to replace old bills.◊sn{quantitive-easing} They also have an inflation target, usually 2% or 3%, meaning the goal is to devalue the money. The rationale is it drives economic growth because ◊link[inflation-rational]{shoppers will buy now to avoid higher prices later}.◊sn{inflation-growth?}
 
@@ -175,9 +177,9 @@ The system works as long as people just keep their money at the bank, and only o
 
 As money printers the central banks play an important roll---as the "lender of last resort". This means when all else fails, for example if the banks are about to go bankrupt because they have too little reserves or if the economy is going bad, then central banks can step in and save them. This is exactly what happened during ◊link[financial-crisis]{the 2008 financial crisis}, where banks and other institutions messed up in a major way but were bailed-out and made whole again.
 
-This means the real check against fractional banking (the risk of going bankrupt) is thrown away and replaced with regulation that's supposed to keep the banks in check, while making the banks more robust against failure. While fine in theory, in practice it means banks are now incentivized to push the limits any way they can.
+This means the real check against fractional banking (the risk of going bankrupt) is thrown away and replaced with regulation that's supposed to keep the banks in check, while making the banks more robust against failure. While fine in theory, in practice it means banks are now incentivized to push the limits any way they can, to maximize their profits.
 
-I don't think there's a better example of the hazards the lender of last resort creates than the 2008 financial crisis, which I wrote about in the ◊link[financial-crisis]{previous chapter}. I feel the term ◊link[moral-hazard]{◊em{moral hazard}}, to describe someone taking risks others will pay for, is too soft to describe what happened there.◊sn{crisis-terms}
+I don't think there's a better example of the hazards the lender of last resort creates than ◊link[financial-crisis]{the 2008 financial crisis}. I feel the term ◊link[moral-hazard]{◊em{moral hazard}}, to describe someone taking risks others will pay for, is too soft to describe the situation.◊sn{crisis-terms}
 
 ◊ndef["crisis-terms"]{
     Perhaps the words ◊em{deceit}, ◊em{scam}, ◊em{fraud} or ◊em{swindle} comes closer to describe my feelings.
@@ -194,10 +196,10 @@ If you've followed along this far, you might get the feeling that the economic s
 The Great Depression was a huge economic crisis, the worst in modern history, which dwarfed the 2008 financial crisis. Experts debate the causes of this decade long crisis to this day, with explanations ranging from governments spending too little, printing too little money, printing too much money or the gold standard.◊sn{depression-crisis}
 
 ◊ndef["depression-crisis"]{
-    There's more to these theories than my attempt to simplify them suggests, and there's probably not a single cause. For instance it's widely acknowledged that the global gold standard helped the crisis to spread, even if it might not have caused the crisis. There are also more theories than I list here.
+    There's more to these theories than my attempt to simplify them suggests, and there's probably not a single cause. For instance the global gold standard probably helped the crisis to spread, even if it might not have caused the crisis. There are also more theories than I list here.
 }
 
-While it's difficult to point out causes, and it's even debatable why we got out of it, it's fairly easy to point out some big changes which were introduced when combating the crisis:
+While it's difficult to point out causes, and it's even debatable why we got out of it, it's fairly easy to point out some big changes introduced when combating the crisis:
 
 ◊ol{
     ◊li{Abonding the gold standard
@@ -270,7 +272,7 @@ Taking out a loan essentially borrows money from the future you, since you have 
     Compound interest is the eighth wonder of the world. He who understands it, earns it ... he who doesn't ... pays it.
 }
 
-This isn't a situation unique to the United States, but ◊link[national-debt-list]{a global phenomena}. While the U.S. has a national debt at 104% of ◊link[gdp]{GDP} (a way to compare relative debts between countries), Sweden has a debt of 38%, Germany 61%, Italy 132%, Greece 181% and Japan a staggering 235%.◊sn{how-to-measure-debt}
+This isn't a situation unique to the United States, but ◊link[national-debt-list]{a global phenomena}. While the U.S. has a national debt at 104% of ◊link[gdp]{GDP} (a way to compare relative debts between countries), Sweden has a debt of 38%, ◊nbsp{Germany 61%}, ◊nbsp{Italy 132%}, ◊nbsp{Greece 181%} and Japan a staggering 235%.◊sn{how-to-measure-debt}
 
 ◊ndef["how-to-measure-debt"]{
     There are different ways to measure national debt, each with pros and cons. ◊link[gdp%]{Percentage of GDP} seems to be the common way to do it.
@@ -331,7 +333,7 @@ While the money-making machine isn't the cause of the inequality, it's a pretty 
 ◊(define wid-report "https://wir2018.wid.world/files/download/wir2018-full-report-english.pdf")
 
 
-◊subhead{Painted into a corner}
+◊subhead{No tools left}
 
 We want to pull back on stimulation when the economy is booming, so we're prepared with all our tools when the economy is crashing. Unfortunately after a decade of economic boom, we've done the opposite:
 
@@ -352,7 +354,7 @@ We want to pull back on stimulation when the economy is booming, so we're prepar
         The Federal Reserve is ◊link[fed-pouring]{pouring money into the financial system}. Printing an unlimited amount of money isn't great, not only because of the erosion of wealth, but rampant inflation can quickly destroy the economy.◊sn{hyperinflation-rome}
 
         ◊ndef["hyperinflation-rome"]{
-            An interesting case is how ◊link[hyperinflation-rome]{hyperinflation took hold in ancient Rome}. Centuries of debasing the currency was followed by a sudden lose of trust and the collapse into hyperinflation. A lesson here is that rapid inflation can rapidly throw the economy into chaos.
+            An interesting case is how ◊link[hyperinflation-rome]{hyperinflation took hold in ancient Rome}. Centuries of debasing the currency was followed by a sudden lose of trust and the collapse into hyperinflation. A lesson here is that rapid inflation can quickly throw the economy into chaos.
         }
     }
 }
@@ -364,7 +366,7 @@ To be fair, the Federal Reserve knows this isn't an ideal situation, so they tri
 So we're stuck in a situation where we don't have the tools to defend against a recession---tools the economic theory the system is built on needs. Tools that has been used up, because that's what the theory says we should do.◊sn{winging-it}
 
 ◊ndef["winging-it"]{
-    It may sound like I'm referring to a single economic theory, which all governments and central banks follow. But that's not the case---there are many different theories, with slight differences, but I think it's a fair generalization to say that they mostly follow Keynesian ideas.
+    It may sound like I'm referring to a single economic theory, which all governments and central banks follow. But that's not the case---there are many different theories, with slight differences, but I think it's a fair generalization to say that they mostly follow the push-pull ideas of stimulating the economy.
 
     Maybe a more correct thing to say is that many are just winging it, and making up rules as they go.
 }
@@ -385,7 +387,7 @@ It seems to me if (or when) a recession comes we'll get caught with our pants do
 
 ◊subhead{Where do we go from here?}
 
-Since the financial crisis in 2008 we're in uncharted territory, and we actually don't know what we should do (I'll explore this subtheme in the chapter: ◊link[blind-leading-the-blind]{The blind leading the blind}). Therefore new economic theories, like the ◊link[mmt]{Modern Money Theory} (MMT), are developed. MMT basically says that the government can pay it's bills by just printing all money it needs, checked only by inflation. It's reasonable to ask if MMT is a sound economic theory, or if it's just describing ◊link[mmt-true]{what's already happening}.
+Since the financial crisis in 2008 we're in uncharted territory, and we actually don't know what we should do (more on this subtheme in the chapter: ◊link[blind-leading-the-blind]{The blind leading the blind}). Therefore new economic theories, like the ◊link[mmt]{Modern Money Theory} (MMT), are developed. MMT basically says the government can pay its bills by just printing all money it needs, checked only by inflation. It's reasonable to ask if MMT is a sound economic theory, or if it's just describing ◊link[mmt-true]{what's already happening}.
 
 While "printing more money" is a popular solution, for critics of the modern economic policies ◊link[sound-money]{◊em{sound money}}, where nobody can manipulate the money supply, might represent a compelling alternative. For example fiat backed by gold, actual gold coins or cryptocurrencies.◊sn{debasement}
 
