@@ -61,7 +61,7 @@ In ◊link[economic-planning]{economic planning} central governments make, or in
 
 Because the economy is made up of millions or even billions of people, with different motivations and imperfect knowledge, it's ◊strong{extremely} hard to predict all the needs of the market. For example you need to predict larger demand for butter closer to Christmas, because people are more likely to bake.◊sn{milk} Or that the demand for fluffy toys will skyrocket, because a game called Pokémon will become unreasonable popular. You think picking stock is difficult? This is much harder.
 
-Predictably this didn't go so well, with huge queues outside almost empty stores and people having to resort to the black market for necessities. The inability to predict the market, and control the economy, is ◊link[ussr-collapse]{one of the reasons} the Soviet Union collapsed.
+This didn't go so well, with huge queues outside almost empty stores and people having to resort to the black market for necessities. The inability to predict the market, and control the economy, is ◊link[ussr-collapse]{one of the reasons} the Soviet Union collapsed.
 
 ◊ndef["milk"]{
     You also need to predict a larger demand for milk, because there are people like me who only drink milk with gingerbread.
@@ -79,7 +79,7 @@ Predictably this didn't go so well, with huge queues outside almost empty stores
   When the music stops, in terms of liquidity, things will be complicated. But as long as the music is playing, you’ve got to get up and dance. We’re still dancing.
 }
 
-It's not just the planning economy of the Soviet Union that has problems predicting and adapting to the whims of the global economy. Look at the ◊link[financial-crisis]{financial crisis in 2008} which should have been obvious, but took almost everyone by surprise. Here's what the Federal Reserve had to say, a month before the financial meltdown:
+It's not just the Soviet Union that has problems predicting and adapting to the whims of the global economy. Look at the ◊link[financial-crisis]{financial crisis in 2008} which should have been obvious, but took almost everyone by surprise. Here's what the Federal Reserve had to say, a month before the financial meltdown:
 
 ◊qt[#:author "The Federal Reserve"
     #:date "August, 2007"
