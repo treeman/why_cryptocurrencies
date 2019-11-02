@@ -22,30 +22,29 @@
      freezing_of_merchant_accounts.html
      uncensorable_donations.html
      for_the_unbanked.html)
-    ("A better currency"
-     "The financial crisis, bad loans and bail-outs"
+    (better_currency.html
+     financial_crisis.html
+     "A broken system"
      "The blind leading the blind"
      anonymous_money.html
-     "A global currency"
-     "Avoids hyperinflation")
+     "A global currency")
     ("Brave new world"
      "Separation of money and state"
      swiss_bank_account_in_your_pocket.html
-     "Protection against government seizures"
      "Darknet markets"
-     "The cashless dystopia"
-     "New asset class?")
-    ("Extensions"
-     "Timestamping service"
+     "Protection against government seizures"
+     "The cashless dystopia")
+    (extensions.html
+     timestamping_service.html
+     uncensorable_twitter.html
      "Provably fair gambling"
-     "Uncensorable Twitter"
-     "Verifiable voting"
-     "Tokens")
+     "Tokens"
+     "Verifiable voting")
     (appendix.html
      bitcoin_whitepaper.html
+     "An intro to cryptography"
      "Who is Satoshi Nakamoto?"
      "Is Facebook's Libra a cryptocurrency?"
-     "An intro to cryptography"
      "Further research")))
 
 (define (in-toc? page)
