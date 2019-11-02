@@ -3,7 +3,6 @@
 ◊(define-meta title "Uncensorable donations")
 ◊(define-meta subtitle "Donations governments cannot stop")
 ◊(define-meta updated "2019-08-28T08:23:58+02:00")
-
 ◊(define-meta uuid "f35cab59-0629-4173-9de0-a07a0eef33dc")
 
 ◊; US efforts to jail Assange for espionage are a grave threat to a free media (theguardian.com)
@@ -543,7 +542,9 @@ Unfortunately it seems like a human thing to try to hide your misdeeds instead o
 ◊subhead{Burying the truth will allow it to continue}
 
 ◊qt[#:author "George Orwell"
-    #:src "1984"]{
+    #:quote-src #t
+    #:src "1984"
+    #:url 1984-book]{
     ... if all records told the same tale---then the lie passed into history and became truth. 'Who controls the past,' ran the Party slogan, 'controls the future: who controls the present controls the past.' ... 'Reality control', they called it: in Newspeak, 'doublethink'.
 }
 

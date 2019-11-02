@@ -2,7 +2,7 @@
 
 ◊(define-meta title "What is money?")
 ◊(define-meta subtitle "It's subjective")
-◊(define-meta updated "2019-05-17T11:58:43+02:00")
+◊(define-meta updated "2019-10-25T07:07:35+02:00")
 ◊(define-meta uuid "67cd34c5-058b-4908-a4a6-aed09aff22cc")
 
 ◊epigraph{
@@ -23,7 +23,7 @@ Before getting interested in cryptocurrencies I too had never asked these questi
 First let's look at some interesting historical examples of things that have been used as money. Some are predictable but others are quite perplexing.
 
 ◊ndef["money-or-currency"]{
-    The words money and currency are often used interchangeably. Although I might be sloppy in my usage there is a subtle difference. Money refers to an intangible concept---you cannot reach out and grab it. Currency instead refers to the physical coins themselves.
+    The terms ◊em{money} and ◊em{currency} are often used interchangeably. Although I might be sloppy in my usage there is a subtle difference. Money refers to an intangible concept---you cannot reach out and grab it. Currency instead refers to the physical coins themselves.
 
     If that's the definition then maybe cryptocurrencies should instead be called crypto-money?
 
@@ -266,7 +266,7 @@ As seen from historical examples I think it's safe to conclude that yes, basical
 ◊ndef["gold-sov"]{
     Gold is the classical example of a store of value. But it has also seen large up and down movements in valuation. ◊link[gold-valuation]{This is the yearly closing price of gold}:
 
-    ◊raw-img[#:src "images/gold-valuation.svg"]{}
+    ◊raw-img[#:src "images/gold-valuation.svg" #:link #t]{}
 
     For example in 2010 it increased 27.74% and in 2013 it decreased 27.79%.
 }
@@ -389,7 +389,7 @@ The money we usually use today is a little different from coins made of precious
 
 ◊(define intrinsic-value-fallacy "https://fee.org/articles/the-fallacy-of-intrinsic-value/")
 
-It's not really a requirement that the money must have an intrinsic value, the real problem is that the supply isn't actually limited.  Banks inflate the supply using ◊link[fractional-banking]{Fractional Banking} while central banks can print money, both physical and digital, without any limit.◊sn{fractional-banking-good}
+It's not really a requirement that the money must have an intrinsic value, the real problem is that the supply isn't actually limited.  Banks inflate the supply using ◊link[fractional-banking]{◊em{fractional banking}} while central banks can print money, both physical and digital, without any limit.◊sn{fractional-banking-good}
 
 ◊ndef["fractional-banking-good"]{
     The basic idea behind Fractional Banking is that the bank gives out more money than it really has. So for example if I deposit 1000 SEK into the bank, the bank can now also loan out 900 SEK to you (how much the bank is allowed to loan differs). It has increased the money supply with 900 SEK from "thin air".
@@ -397,7 +397,7 @@ It's not really a requirement that the money must have an intrinsic value, the r
     There are those who ◊link[fractional-banking-atlanta]{argue that Fractional Banking is a net positive for society}. And ◊link[fractional-banking-bad]{those who disagree}. Regardless, it is a negative with respect to the properties of money we use.
 }
 
-The term ◊link[sound-money]{◊em{sound money}} refers to money that is not prone to sudden changes in long term purchasing power. If the supply of money differs from the demand, which will happen with fiat due to the disconnect between banks and the market, then there will be changes. While fiat has many positive properties, after the move away from the gold standard, it's now considered unsound money.
+The term ◊link[sound-money]{◊em{sound money}} refers to money that is not prone to sudden changes in long term purchasing power, and the value is determined by the free market. If the supply of money differs from the demand, which will happen with fiat due to the disconnect between banks and the market, then there will be changes. While fiat has many positive properties, after the move away from the gold standard, it's now considered unsound money.
 
 ◊(define sound-money "https://www.soundmoneydefense.org/sound-money-explained")
 
