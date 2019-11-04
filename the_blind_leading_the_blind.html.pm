@@ -135,8 +135,6 @@ These people aren't experts, simply because the environment doesn't lend itself 
 
 While the article itself is more nuanced, you can't conclude anything with such a small sample size, with such a short timespan and in an irregular environment.
 
-◊;https://news.ycombinator.com/item?id=21028770
-
 ◊subhead{We are blind}
 
 ◊qt[#:author "Henry Ford"]{
