@@ -14,8 +14,6 @@
 ◊;https://books.google.co.uk/books?id=6Mdh5yuHavgC&pg=PA86&lpg=PA86&ots=vJ319cMgdc&focus=viewport&dq=%E2%80%9CIt%27s+almost+been+worth+this+depression+to+find+out+how+little+our+big+men+know.%E2%80%9D++%E2%80%95+Will+Rogers
 ◊(define great-depression "https://en.wikipedia.org/wiki/Great_Depression")
 
-◊todo{IMG of a blindfolded dude leading masses of blindfolded dudes heading towards a cliff.}
-
 One of the most common arguments against ◊link[sound-money]{◊em{sound money}}---like cryptocurrencies or money backed by gold---is you lose the ability to influence and react to the market. For example if the economy crashes, or you think it will crash, the modern central banks might try to print money and buy things to soften the crash. This isn't possible with cryptocurrencies or gold, since they cannot be created freely. ◊sn{elaciticity}
 
 ◊ndef["elaciticity"]{
@@ -55,18 +53,24 @@ In contrast learning how to drive a car provides an ideal learning environment. 
 
 ◊subhead{The problem with planning the economy}
 
-◊todo{IMG of a butterfly flapping it's wings causing a tornado on the other side}
-
 In ◊link[economic-planning]{economic planning} central governments make, or influence, economic decisions. There is nothing inherently bad about this and all governments do it, for example large infrastructure projects are often created by the government.  The Soviet Union took this concept ◊link[command-economy]{further} and it was up to the government to decide what goods to produce, how much and when.
 
-Because the economy is made up of millions or even billions of people, with different motivations and imperfect knowledge, it's ◊strong{extremely} hard to predict all the needs of the market. For example you need to predict larger demand for butter closer to Christmas, because people are more likely to bake.◊sn{milk} Or that the demand for fluffy toys will skyrocket, because a game called Pokémon will become unreasonable popular. You think picking stock is difficult? This is much harder.
-
-This didn't go so well, with huge queues outside almost empty stores and people having to resort to the black market for necessities. The inability to predict the market, and control the economy, is ◊link[ussr-collapse]{one of the reasons} the Soviet Union collapsed.
+Because the economy is made up of millions or even billions of people, with different motivations and imperfect knowledge, it's ◊strong{extremely} hard to predict all the needs of the market. For example you need to predict larger demand for butter closer to Christmas, because people are more likely to bake.◊sn{milk} Or that the demand for fluffy toys will skyrocket, because a game called Pokémon will become unreasonable popular. You think picking stock is difficult? This is much harder.◊sn{impossible?}
 
 ◊ndef["milk"]{
     You also need to predict a larger demand for milk, because there are people like me who only drink milk with gingerbread.
 }
 
+◊ndef["impossible?"]{
+    I do think it's an impossible task. You need to accurately predict small events that can have large effects, known as the ◊link[butterfly-effect]{◊em{Butterfly effect}}.
+
+    Not to mention ◊link[black-swan]{◊em{Black Swan}} events which are by definition unpredictable. The rise of Bitcoin is one example (currently valued at around $9,000).
+}
+
+This didn't go so well, with huge queues outside almost empty stores and people having to resort to the black market for necessities. The inability to predict the market, and control the economy, is ◊link[ussr-collapse]{one of the reasons} the Soviet Union collapsed.
+
+◊(define black-swan "https://www.investopedia.com/terms/b/blackswan.asp")
+◊(define butterfly-effect "https://en.wikipedia.org/wiki/Butterfly_effect")
 ◊(define economic-planning "https://www.britannica.com/topic/economic-planning")
 ◊(define command-economy "https://www.investopedia.com/terms/c/command-economy.asp")
 ◊(define ussr-collapse "https://www.investopedia.com/articles/investing/021716/why-ussr-collapsed-economically.asp")

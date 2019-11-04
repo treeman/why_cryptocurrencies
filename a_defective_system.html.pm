@@ -11,15 +11,6 @@
   }
 }
 
-◊;More money than anyone imagined: an explanation for why the bubble never burst 
-◊; See the comments for some discussion about the Fed
-◊;<https://news.ycombinator.com/item?id=20535390>
-
-
-◊; Read this for Fed actions
-◊; https://news.ycombinator.com/item?id=21028770
-
-◊todo{IMG a dude on a stick, to represent an unstable system. And a bunch of dudes running around to make it not fall over.}
 
 In the chapter ◊link[what-is-money]{What is money?} we saw some historical examples of money and some properties that good money should have. Unfortunately it's not enough to understand the current economic system, which is a completely different beast.
 
@@ -62,7 +53,7 @@ Who in turn will use it to buy other stuff, and in this way the counterfeited mo
     }
     ◊li{Redistribution of wealth.
 
-        Notice how in our previous example the counterfeited money isn't divided equally. The counterfeiter suddenly became much richer than everyone else, and some received a bit more than others. The poor guy, who didn't have much to begin with, didn't receive any of the new money and became even poorer.
+        Notice how in our previous example the counterfeited money isn't divided equally. The counterfeiter suddenly became much richer than everyone else, and some received a bit more than others. Notice the poor guy to the right in the example---who had very little to start with---didn't receive any money and became even poorer.
     }
 }
 
@@ -326,7 +317,6 @@ While the money-making machine isn't the cause of the inequality, it's a pretty 
     Some will argue that the trickle-down effect makes inflation affect everyone equally. Unfortunately that's not the case, as the rich will both receive the money first (via the banks) and they have better access to financial tools to hedge against inflation (investing in gold, real estate or offshore banking).
 }
 
-◊;https://inequality.org/facts/global-inequality/
 ◊(define rel-counterfeiting "#economic-effects-of-counterfeiting")
 ◊(define global-inequality "https://wir2018.wid.world/")
 ◊(define inequality-data "https://wid.world/data/")
@@ -373,16 +363,10 @@ So we're stuck in a situation where we don't have the tools to defend against a 
 
 It seems to me if (or when) a recession comes we'll get caught with our pants down. And things have been looking pretty shaky a while now.
 
-◊;https://markets.businessinsider.com/news/stocks/federal-reserve-meeting-september-interest-rate-decision-2019-9-1028535360
 ◊(define swe-neg-rate "https://www.riksbank.se/en-gb/about-the-riksbank/history/2000-2018/negative-repo-rate-is-introduced/")
 ◊(define denmark-neg-rate "https://www.reuters.com/article/denmark-rates-jyske-bank/update-1-denmarks-jyske-bank-lowers-its-negative-rates-on-deposits-idUSL5N26B1AA")
 ◊(define hyperinflation-rome "https://notesonliberty.com/2019/09/16/hyperinflation-and-trust-in-ancient-rome/")
 ◊(define fed-pouring "http://archive.is/PbCtz")
-
-◊; https://www.thebalance.com/current-federal-reserve-interest-rates-4770718
-
-◊; McKinsey: Half the World’s Banks Too Weak to Survive Downturn 
-◊; https://news.ycombinator.com/item?id=21320977
 
 
 ◊subhead{Where do we go from here?}
@@ -400,17 +384,10 @@ While "printing more money" is a popular solution, for critics of the modern eco
 It's not easy to see how a switch to sound money would occur, and maybe it would introduce more problems than it solved. But it would mean manipulation of the money supply would disappear and we wouldn't build a mountain of debt, only repayable by the printing machines, and we wouldn't devalue our savings while increasing the wealth inequality. And we wouldn't cling on to the broken and defective economic theories in use today.
 
 
-◊;And we wouldn't leave the faith of the economy in the hands our blind leaders, who manage to fan the flames of our recessions, but that's the topic of the ◊link[blind-leading-the-blind]{next chapter}.
-
 ◊(define debasement "https://www.investopedia.com/terms/d/debasement.asp")
 ◊(define mmt "https://www.bloomberg.com/news/features/2019-03-21/modern-monetary-theory-beginner-s-guide")
 ◊(define blind-leading-the-blind "/the_blind_leading_the_blind.html")
 ◊(define mmt-true "https://www.forbes.com/sites/nathanlewis/2019/02/21/the-problem-with-modern-monetary-theory-is-that-its-true/")
 ◊(define sound-money "https://www.soundmoneydefense.org/sound-money-explained")
 ◊(define are-cryptos-money "/are_cryptocurrencies_money.html")
-
-◊; Possibly in the blind leading the blind?
-◊; https://www.svd.se/experter-flera-dolda-skal-till-slopad-minusranta
-◊; https://nypost.com/2019/07/29/trump-fails-to-see-rate-cut-would-hurt-savers/
-◊; https://news.ycombinator.com/item?id=21004068
 
