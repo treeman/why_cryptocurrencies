@@ -38,15 +38,17 @@ If I did print money---a ◊strong{lot} of money---and spent it like this, what 
 
 For starters if I just kept the money without spending it, nothing would change:
 
-◊todo{IMG of a counterfeiter, LEGO dude, normal dude, homeless dude}
+◊img[#:src "/images/counterfeiting1.png"]{
+    The counterfeit money is colored yellow and the real money is green.
+}
 
 Then if I decided to buy a bunch of LEGO®, the store would get some of my money:
 
-◊todo{IMG of a counterfeiter, LEGO dude, normal dude, homeless dude}
+◊img[#:src "/images/counterfeiting2.png"]{}
 
 After a while the store would use the counterfeited money to pay their supplier:
 
-◊todo{IMG of a counterfeiter, LEGO dude, normal dude, homeless dude}
+◊img[#:src "/images/counterfeiting3.png"]{}
 
 Who in turn will use it to buy other stuff, and in this way the counterfeited money slowly trickles out into the rest of the economy. This extra money has two important effects:
 
