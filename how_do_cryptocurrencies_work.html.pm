@@ -37,6 +37,12 @@ When Sneaky Steve wants to send ◊tf{500 SEK} to Honest Harry the bank simply u
 
 Cryptocurrencies work this way as well. In fact the ledger in a cryptocurrency, often referred to as the ◊em{blockchain}, contains the balance of all addresses. ◊sn{stores-transactions}
 
+◊ndef["stores-transactions"]{
+    It's a slight simplification to say the blockchain stores balances.  It actually stores all transactions from which you can calculate all balances.
+
+    To lighten the load you can run your software in a pruned mode which discards the transactions after validation and only keeps the balances.
+}
+
 
 ◊subhead{Your keys, your coins}
 
@@ -482,7 +488,7 @@ There is another situation where forks can arise: when consensus rules are chang
 Some cryptocurrencies, for example Monero and Bitcoin Cash, have regular network upgrades where consensus rules are changed.◊sn{hard-soft}
 
 ◊ndef["hard-soft"]{
-    I have deliberatly simplified my usage of fork terminology. On a technical level it's useful to distinguish between two types of forks: ◊em{hard-forks} and ◊em{soft-forks}.
+    I've deliberatly simplified my usage of fork terminology. On a technical level it's useful to distinguish between two types of forks: ◊em{hard-forks} and ◊em{soft-forks}.
 
     A hard-fork is a backwards incompatible change and all nodes must upgrade to avoid ending up on the old chain. Bitcoin Cash forked off from Bitcoin using a hard-fork for example.
 
@@ -522,22 +528,10 @@ The chapter became very long despite skipping out on details here and there. If 
 
 ◊subhead{Summary}
 
-The ◊em{blockchain} is a ledger that stores balances. The crucial problem is deciding between double spends (copying a coin and using it twice). Cryptocurrencies like Bitcoin use ◊em{proof-of-work} which makes miners expend energy and compete for rewards. This competition between miners is used to resolve double spends and to secure the chain, with the winner extending the blockchain with new transactions.
+The ◊em{blockchain} is a ledger that stores balances. The crucial problem is deciding between double spends (using a coin twice). Cryptocurrencies like Bitcoin use ◊em{proof-of-work} which makes miners expend energy and compete for rewards. This competition between miners is used to resolve double spends and to secure the chain, with the winner extending the blockchain with new transactions.
 
-◊ol{
-    ◊li{The blockchain is like a ledger that stores balances}
-    ◊li{The crucial problem is deciding between double spends (using a coin twice)}
-    ◊li{Proof-of-work makes miners expend energy and compete for rewards}
-    ◊li{Miners are used to resolve double spends and secure the chain}
-    ◊li{The security assumption is that most miners work for profit}
-}
+What makes it all work is the incentives for the miners to work in the best interest of the network---it's the most profitable option. The security assumption is that most of miners are honest and work for profit, otherwise the security model fails and transactions can be reversed.
 
-
-◊ndef["stores-transactions"]{
-    It's a slight simplification to say the blockchain stores balances.  It actually stores all transactions from which you can calculate all balances.
-
-    To lighten the load you can run your software in a pruned mode which discards the transactions after validation and only keeps the balances.
-}
 
 ◊(define chargeback-fraud "https://en.wikipedia.org/wiki/Chargeback_fraud")
 ◊(define public-key-cryptography "https://en.wikipedia.org/wiki/Public-key_cryptography")
