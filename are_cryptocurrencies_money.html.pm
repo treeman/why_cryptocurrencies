@@ -88,7 +88,7 @@ I know this might be controversial, so let me motivate some of the entries:
 
     ◊li{I see no major problems with ◊strong{fungibility} or ◊strong{uniformity}.◊sn{again-monero}}
 
-    ◊li{Both digital and physical fiat gets a poor score on ◊strong{limited supply}. Per the discussion in ◊link[prev-chapter]{the previous chapter}---fiat money is unsound. You might argue that cryptocurrencies should score higher than gold, because they're impossible to counterfeit, but I feel---perhaps wrongly---that it's not that big of a problem with gold, even if it ◊link[gold-counterfeit]{does exist}.
+    ◊li{Both digital and physical fiat gets a poor score on ◊strong{limited supply}. Per the discussion in ◊link[prev-chapter]{the previous chapter}---fiat money is unsound. You might argue that cryptocurrencies should score higher than gold, because they're impossible to counterfeit, yet I feel---perhaps wrongly---that it's not that big of a problem with gold, even if it ◊link[gold-counterfeit]{does exist}.
     }
 
     ◊li{Cryptocurrencies are simply much more ◊strong{portable} than the other options. Carrying large amounts in cash or gold is cumbersome and digital fiat isn't easy to move across borders.◊sn{borders}}
