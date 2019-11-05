@@ -522,6 +522,8 @@ The chapter became very long despite skipping out on details here and there. If 
 
 ◊subhead{Summary}
 
+The ◊em{blockchain} is a ledger that stores balances. The crucial problem is deciding between double spends (copying a coin and using it twice). Cryptocurrencies like Bitcoin use ◊em{proof-of-work} which makes miners expend energy and compete for rewards. This competition between miners is used to resolve double spends and to secure the chain, with the winner extending the blockchain with new transactions.
+
 ◊ol{
     ◊li{The blockchain is like a ledger that stores balances}
     ◊li{The crucial problem is deciding between double spends (using a coin twice)}
