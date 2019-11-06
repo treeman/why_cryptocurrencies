@@ -345,12 +345,11 @@ It works like this:
     After Sneaky Steve has walked away he releases his hidden chain of length four, which ◊strong{doesn't contain his payment to Honest Harry}.  Since the new chain is longer the old chain will get discarded and the payment to Honest Harry will also disappear. It will seem like the payment never happened.
 }
 
-This is a different type of double spend and it's the primary attack vector ◊link[wp]{the white paper} is concerned about. It's called a ◊link[51-attack]{51% attack}, for reasons we'll soon explain.
+This is a different type of double spend and it's the primary attack vector ◊link[wp]{the white paper} is concerned about. It's called a ◊link[51-attack]{◊em{51% attack}}, for reasons we'll soon explain.
 
 ◊ndef["chargeback"]{
     In the credit card world this type of fraud is called ◊link[chargeback-fraud]{chargeback fraud} or friendly fraud.
 }
-
 
 ◊(define 51-attack "https://www.investopedia.com/terms/1/51-attack.asp")
 
