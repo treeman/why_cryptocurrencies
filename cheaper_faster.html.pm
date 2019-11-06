@@ -5,14 +5,7 @@
 ◊(define-meta updated "2019-05-29T06:35:29+02:00")
 ◊(define-meta uuid "ac14d4a1-3796-4f5b-9350-b56e796625a1")
 
-Cryptocurrencies provide two major advantages compared to other digital payments:
-
-◊ul{
-    ◊li{◊link[rel-fees]{Lower fees}}
-    ◊li{◊link[rel-speed]{Faster}}
-}
-
-It does this by cutting out the middleman. But there is a ◊link[rel-risk-tradeoff]{trade-off}---it shifts the risk management from the merchant to the customer. Merchants no longer have to worry about ◊link[rel-charge-back-fraud]{charge back fraud} but instead customers lose the ability to do charge backs.
+Cryptocurrencies provide two major advantages compared to other digital payments: they have ◊link[rel-fees]{lower fees} and they ◊link[rel-speed]{settle faster}, made possible by cutting out the middleman. But there's a ◊link[rel-risk-tradeoff]{trade-off}---it shifts the risk management from the merchant to the customer. Merchants no longer have to worry about ◊link[rel-charge-back-fraud]{charge back fraud}, but instead customers lose the ability to do charge backs.
 
 
 ◊subhead{Cryptocurrency fees}

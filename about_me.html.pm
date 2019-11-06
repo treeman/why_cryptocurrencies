@@ -29,13 +29,16 @@ The free time I do have has been taken up by my 2 year old boy, my girlfriend an
     My current hobbies include ◊link[bjj]{Brazilian Jiu-Jitsu}, boardgames and standard low-effort ones such as reading books or watching videos.
 
     I do have a very on-and-off relationship with my hobbies, which I pick up and do intensely for a short period of time. For instance I've been into ◊link[lockpicking]{lockpicking}, ◊link[go]{Go} and learning Korean, which I would like to pick up again some day.
+
+    I have a ◊link[blog]{blog} where I write about random stuff, mostly for myself. It's also, as you might imagine, not updated regularly.
 }
 
-After my parental leave we decided that I should work part time to avoid long days at pre-school.  Working less has also opened up time and energy for me to work on a side project, and writing a book has been on my bucket-list so why not do it now? My girlfriend has always been super supportive of my silly ideas.
+After my parental leave we decided that I should work part time to avoid long days at pre-school.  Working less has also opened up time and energy for me to work on a side project, and writing a book has been on my bucket-list so why not do it now? My girlfriend, wonderful as she is, has always been super supportive of my silly ideas.
 
-I have a ◊link[blog]{blog} where I write about random stuff, mostly for myself.
+Am I qualified to write about cryptocurrencies? Am I a cryptocurrency expert? Hardly. I'm just an enthusiast who's trying to write down and share my thoughts.
 
 ◊(define blog `("http://www.jonashietala.se/" "My personal blog"))
 ◊(define bjj "https://www.grapplearts.com/japanese-jiujitsu-vs-bjj/")
 ◊(define lockpicking "https://www.reddit.com/r/lockpicking/")
 ◊(define go "https://en.wikipedia.org/wiki/Go_(game)")
+
