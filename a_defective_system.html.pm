@@ -74,7 +74,7 @@ Counterfeiting means everyones savings---the "old" money---will lose value. This
 
 ◊img[#:src "images/inflation.svg" #:link #t]{
     How the ◊link[swe-inflation]{inflation in Sweden} has caused the actual value of money to decrease.◊sn{why-sweden?}  
-    The graph shows what ◊sans-tnum{100 SEK} in 1960 would really be worth, adjusted by inflation. For example in 2018 it would only be worth around ◊sans-tnum{7 SEK}---a 93% drop in value.
+    The graph shows what ◊sans-tnum{100 SEK} in 1960 would really be worth, adjusted by inflation. For example it would only be worth around ◊sans-tnum{7 SEK} in 2018's money---a 93% drop in value.
 }
 
 ◊ndef["why-sweden?"]{
@@ -100,12 +100,12 @@ Counterfeiting also means redistributing wealth from everyone to the counterfeit
 
 ◊subhead{Legal counterfeiting}
 
-While I think most will agree counterfeiting shouldn't be allowed, the modern economic system is built upon legal counterfeiting. There are entities that have the legal right to print money---with the same negative consequences on the economy that counterfeiting has. They're the central banks and regular banks too.
+While I think most will agree counterfeiting shouldn't be allowed, the modern economic system is built upon legal counterfeiting. There are entities who have the legal right to print money---with the same negative consequences on the economy that counterfeiting has. As noted earlier the central banks have this right, but regular banks can increase the money supply as well.
 
 The central banks, the Federal Reserve (Fed) in the U.S. or the European Central Bank (ECB) in the EU, are the only ones allowed to print physical money. Which they have to do, if only to replace old bills.◊sn{quantitive-easing} They also have an inflation target, usually 2% or 3%, meaning the goal is to devalue the money. The rationale is it drives economic growth because ◊link[inflation-rational]{shoppers will buy now to avoid higher prices later}.◊sn{inflation-growth?}
 
 ◊ndef["quantitive-easing"]{
-    If the central banks want to increase the money supply it's inefficient to print physical money. Instead they buy assets from banks who in turn can use the money as reserve to print more money. This is called ◊link[quantitive-easing]{◊em{quantitive easing}}, but it's unknown how well it actually works.
+    If the central banks want to increase the money supply it's inefficient to print physical money. Instead they buy assets from banks who in turn can use the money as reserves while increasing the money supply. This is called ◊link[quantitive-easing]{◊em{quantitive easing}}, but it's unknown how well it actually works.
 }
 
 ◊ndef["inflation-growth?"]{
@@ -166,7 +166,7 @@ The system works as long as people just keep their money at the bank, and only o
 
 ◊subhead{Lender of last resort}
 
-As money printers the central banks play an important roll---as the "lender of last resort". This means when all else fails, for example if the banks are about to go bankrupt because they have too little reserves or if the economy is going bad, then central banks can step in and save them. This is exactly what happened during ◊link[financial-crisis]{the 2008 financial crisis}, where banks and other institutions messed up in a major way but were bailed-out and made whole again.
+As money printers the central banks play an important roll---as the "lender of last resort". This means when all else fails, for example if the banks are about to go bankrupt because they have too little reserves or if the economy is going bad, then central banks can step in and save them. As we saw in an ◊link[financial-crisis]{earlier chapter} this is exactly what happened during the 2008 financial crisis, where banks and other institutions messed up in a major way but were bailed-out and made whole again.
 
 This means the real check against fractional banking (the risk of going bankrupt) is thrown away and replaced with regulation that's supposed to keep the banks in check, while making the banks more robust against failure. While fine in theory, in practice it means banks are now incentivized to push the limits any way they can, to maximize their profits.
 
@@ -344,7 +344,7 @@ We want to pull back on stimulation when the economy is booming, so we're prepar
         The Federal Reserve is ◊link[fed-pouring]{pouring money into the financial system}. Printing an unlimited amount of money isn't great, not only because of the erosion of wealth, but rampant inflation can quickly destroy the economy.◊sn{hyperinflation-rome}
 
         ◊ndef["hyperinflation-rome"]{
-            An interesting case is how ◊link[hyperinflation-rome]{hyperinflation took hold in ancient Rome}. Centuries of debasing the currency was followed by a sudden lose of trust and the collapse into hyperinflation. A lesson here is that rapid inflation can quickly throw the economy into chaos.
+            An interesting case is how ◊link[hyperinflation-rome]{hyperinflation took hold in ancient Rome}. Centuries of debasing the currency was followed by a sudden loss of trust and the collapse into hyperinflation. A lesson here is that rapid inflation can quickly throw the economy into chaos.
         }
     }
 }

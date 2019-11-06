@@ -40,20 +40,20 @@ To become an expert in a field you need a lot of dedication, effort and maybe a 
     ◊li{An opportunity to learn these regularities through prolonged practice.}
 }
 
-For example picking stock is notoriously difficult, so difficult that in general you'll be ◊link[investing-index]{better off investing in a passive index fund than picking stock yourself}. This may not be surprising but it also applies to professional investors, most of whom under-perform against the index! This is because the stock market isn't regular enough to be predictable.◊sn{wicked-env}
+For example picking stock is notoriously difficult, so difficult that in general you'll be ◊link[investing-index]{better off investing in a passive index fund than picking stock yourself}. This may not be surprising but it also applies to professional investors, most of whom under-perform compared to the index! This is because the stock market isn't regular enough to be predictable.◊sn{wicked-env}
 
 ◊ndef["wicked-env"]{
     There's also a "wicked" environment where you're likely to learn the wrong lesson from your experience. The example given is of a physician who tried to tried to confirm his a hypothesis for who might develop typhoid. Unfortunately he tested his hunch by palpating the patient's tongue, without washing his hands, making him draw the wrong conclusion.
 }
 
-In contrast learning how to drive a car provides an ideal learning environment. You'll get instant feedback whenever you break or use the gas pedal, when you turn the steering-wheel the car turns and you'll quickly find out if you changed gears correctly. While similar learning how to maneuver a large ship is more difficult because of the delayed feedback.
+In contrast learning how to drive a car provides an ideal learning environment. You'll get instant feedback whenever you break or use the gas pedal, when you turn the steering-wheel the car turns and you'll quickly find out if you changed gears correctly. While similar, learning how to maneuver a large ship is more difficult because of the delayed feedback.
 
 ◊(define investing-index "https://www.cnbc.com/2017/05/12/warren-buffett-says-index-funds-make-the-best-retirement-sense-practically-all-the-time.html")
 
 
 ◊subhead{The problem with planning the economy}
 
-In ◊link[economic-planning]{economic planning} central governments make, or influence, economic decisions. There is nothing inherently bad about this and all governments do it, for example large infrastructure projects are often created by the government.  The Soviet Union took this concept ◊link[command-economy]{further} and it was up to the government to decide what goods to produce, how much and when.
+In ◊link[economic-planning]{economic planning} central governments make, or influence, economic decisions. There is nothing inherently bad about this and all governments do it, for example large infrastructure projects are often created by the government.  The Soviet Union took this concept ◊link[command-economy]{further} by letting the government decide what goods to produce, how much and when.
 
 Because the economy is made up of millions or even billions of people, with different motivations and imperfect knowledge, it's ◊strong{extremely} hard to predict all the needs of the market. For example you need to predict larger demand for butter closer to Christmas, because people are more likely to bake.◊sn{milk} Or that the demand for fluffy toys will skyrocket, because a game called Pokémon will become unreasonable popular. You think picking stock is difficult? This is much harder.◊sn{impossible?}
 
@@ -113,7 +113,7 @@ Maybe you feel like I'm focusing too much on the ◊link[financial-crisis]{2008 
     “◊link[after-the-music-stopped-book]{After the Music Stopped}” Alan S. Blinder
 }
 
-This shouldn't be that surprising when you consider that the national and global economy is too irregular to be predictable, and the feedback loop is extremely long---if it even exists.  If for example the central bank lowers the interest rate, how long do we have to wait to see the effect? Days, months and maybe even years. And how do we know the economy reacted this way because of the changes to the interest rate, and not because of the trade war between the U.S. and China, brexit or a million other reasons?◊sn{models}
+This shouldn't be that surprising when you consider that the national and global economy is too irregular to be predictable, and the feedback loop is extremely long---if it even exists.  If for example the central bank lowers the interest rate, how long do we have to wait to see the effect? Days, months and maybe even years. And how do we know the economy reacted this way because of the changes to the interest rate, and not because of the trade war between the U.S. and China, Brexit or a million other reasons?◊sn{models}
 
 ◊ndef["models"]{
     What do you do then? You use complicated models, based on historical data, to predict the effects on the economy.
@@ -124,7 +124,7 @@ This shouldn't be that surprising when you consider that the national and global
 These people aren't experts, simply because the environment doesn't lend itself to creating experts. The worst thing isn't that they're clueless, the worst thing is that they don't know their limitations:◊sn{actually-worst}
 
 ◊ndef["actually-worst"]{
-    Well, the actually worst thing is that the economic system is built upon these "experts" predicting and reacting to events.
+    Well, the actual worst thing is that the economic system is built upon these "experts" predicting and reacting to events.
 }
 
 ◊qt[#:author "IMF:s financial advisor Jose Viñals"
@@ -164,7 +164,7 @@ It's worse than us not understanding how the system works. We simply don't have 
 }
 
 ◊qt[#:author "Alan Greenspan, Chairmain of the Federal Reserve"]{
-    The temptetion is to step on the monetary accelerator or at least to avoid the monetary break until after the next election... Giving in to such temptations is likely to impart an inflationary bias to the economy and could lead to instability, recession and economic stagnation.
+    The temptation is to step on the monetary accelerator or at least to avoid the monetary break until after the next election... Giving in to such temptations is likely to impart an inflationary bias to the economy and could lead to instability, recession and economic stagnation.
 }
 
 This argument could be made against almost everything. For example ◊link[mega-projects]{megaprojects often fail} (vastly overruns their cost or timetable) because politicians make them their pet project, pushing them through against all odds... And leave it to other people to pick up the pieces after the next election.◊sn{olympics}
@@ -173,12 +173,12 @@ This argument could be made against almost everything. For example ◊link[mega-
     My favorite example of failing megaprojects is the Olympics, which have vastly overrun their initial projected cost every single time.
 }
 
-Proponents will of course say that money is more important than other issues---too important to leave it to the whims of the politicians---and therefore the Fed must remain independent. I believe it's much to important to be handled in the dark, by a private entity.
+Proponents will of course say that money is more important than other issues---too important to leave it to the whims of the politicians---and therefore the Federal Reserve must remain independent. I believe it's much to important to be handled in the dark, by a private entity.
 
 
 ◊subhead{A new hope}
 
-Cryptocurrencies are interesting because they allow anyone to verify the number of coins in circulation---with certainty. No money in history has had this valuable property.  There has always been the need to trust the word of someone, that the amount of money is what they say it is. Even with gold coins there's trust involved, you have to trust the issuer to include the right amount of gold otherwise the trust---and the currency---◊link[rome-debasing]{will collapse in value}.◊sn{portraits}
+Cryptocurrencies are interesting because they allow anyone to verify the number of coins in circulation---with certainty. No money in history has had this valuable property.  There has always been the need to trust the word of someone, that the amount of money is what they say it is. Even with gold coins there's trust involved, you have to trust the issuer to include the right amount of gold, otherwise the trust---and the currency---◊link[rome-debasing]{will collapse in value}.◊sn{portraits}
 
 ◊ndef["portraits"]{
     Ever wonder why there are portraits on coins? Because they make them recognizable so you can decide to trust them or not. "I'll gladly accept emperor Augustu's coins" or "we don't accept that usurpers coins here."
