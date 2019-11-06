@@ -2,7 +2,7 @@
 
 ◊(define-meta title "For the unbanked")
 ◊(define-meta subtitle "Digital payments for those without a bank account")
-◊(define-meta updated "2019-11-05T22:13:47+01:00")
+◊(define-meta updated "2019-11-06T21:42:36+01:00")
 ◊(define-meta uuid "875332fd-f5ad-4275-8254-008a2e74a4a0")
 
 ◊epigraph{
@@ -63,7 +63,7 @@ The unbanked are in general less educated, where 62% of unbanked have a primary 
 
 ◊subhead{Why are they unbanked?}
 
-The ◊link[findex-report]{Global Findex database} also tried examine why people stay unbanked:
+The ◊link[findex-report]{Global Findex database} also tried to examine why people stay unbanked:
 
 ◊ndef["read-it"]{
     If this is interesting to you I suggest you ◊link[findex-report]{give the report a read}. There are tons of different statistics and I only refer to a fraction of the data available.
@@ -77,7 +77,7 @@ The ◊link[findex-report]{Global Findex database} also tried examine why people
 The most commonly cited barrier was not having enough money. Around 60% said they had too little money to use a bank account, with almost 20% citing it as the sole reason.◊sn{too-little-money}
 
 ◊ndef["too-little-money"]{
-    I assume it might mean poor people who might not have any savings but live day to day. But it's not clear where to draw the line between having too little money, accounts being too expensive and not having a use for an account. It feels these issues should go together to some extent.
+    I assume it might mean poor people who might not have any savings but live day to day. But it's not clear where to draw the line between having too little money, accounts being too expensive and not having a use for an account. I feel these issues would go together to some extent.
 }
 
 Most cite several different reasons, making it hard to rank the issues in importance. For example many say they don't need an account, but if the other barriers were to disappear they might find accounts useful if only they had access to them. At least this gives a sense of what issues are present.
@@ -169,7 +169,7 @@ One of the best ways to fight poverty is ◊link[economic-growth-poverty]{econom
 
 ◊problem-header{Shut-out from society}
 
-It might be relatively fine for you to live in a country without using a bank account---as long as others don't use one either. But what if you live in a country where digital payments are an integral part of society?
+It might be relatively fine for you to live in a country without a bank account---as long as others don't use one either. But what if you live in a country where digital payments are an integral part of society?
 
 For example here in Sweden almost everyone and everything uses digital payments. It would be ◊strong{extremely} difficult for you to live here without a credit card or a bank to pay your bills.
 
