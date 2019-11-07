@@ -735,9 +735,11 @@ h3.economic-problem > a {
     }
 }
 ul > li.plus:before {
+    font-family: $code-font-family;
     content: "+";
 }
 ul > li.neg:before {
+    font-family: $code-font-family;
     content: "-";
 }
 

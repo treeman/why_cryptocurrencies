@@ -110,7 +110,7 @@ Although the crisis originated in the U.S. the crisis spread globally.◊sn{glob
 
 ◊subhead{The bailouts}
 
-Although bad, the crisis could've been much worse. The U.S. came close to a complete financial meltdown, but without crossing the line.◊mn{music-stopped} Partly thanks to the bailouts, where the Federal Reserve bailed out banks and other private companies. The extremely risky assets---too risky for anyone else to touch---were bought up to rescue the banks which were "too big to fail".◊sn{interconnected}
+Although bad, the crisis could have been much worse. The U.S. came close to a complete financial meltdown, but without crossing the line.◊mn{music-stopped} Partly thanks to the bailouts, where the Federal Reserve bailed out banks and other private companies. The extremely risky assets---too risky for anyone else to touch---were bought up to rescue the banks which were "too big to fail".◊sn{interconnected}
 
 ◊ndef["interconnected"]{
     Or perhaps a better term would be "too interconnected to fail". The biggest fear of a big bank going bankrupt is if it brings down the rest of the economy with it, which to an extent happened when Lehman Brothers failed.

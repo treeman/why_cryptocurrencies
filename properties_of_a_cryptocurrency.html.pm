@@ -2,7 +2,7 @@
 
 ◊(define-meta title "Properties of a cryptocurrency")
 ◊(define-meta subtitle "Trustless and permissionless")
-◊(define-meta updated "2019-10-25T07:07:05+02:00")
+◊(define-meta updated "2019-11-05T08:20:50+01:00")
 ◊(define-meta uuid "176f3433-baba-49d6-ab43-9c08061f0682")
 
 ◊epigraph{
@@ -14,12 +14,12 @@
   }
 }
 
-These are the most important inherent properties of cryptocurrencies as I see it:
+These are the most important properties of cryptocurrencies as I see it:
 
 ◊ul{
     ◊li{No trusted third party}
-    ◊li{Avoid fake coins}
-    ◊li{Irreversible}
+    ◊li{No counterfeiting}
+    ◊li{Transactions are irreversible}
     ◊li{Predetermined emission rate}
     ◊li{Anonymous}
     ◊li{Large and small amounts behave the same}
@@ -58,7 +58,10 @@ Transfers are therefore ◊em{trustless}◊sn{pundits} and ◊em{permissionless}
     Some will be quick to point out that transfers aren't trustless. You need to trust your wallet, the OS, the hardware etc. Which is true. The context here is not having to trust a third party to handle transfers for you, not eliminating trust of all kinds---which is impossible.
 }
 
-Trustless means you don't have to rely on a third party to make or confirm the transfer for you and permissionless means you don't have to worry about your transactions being blocked. Nobody can freeze your account or prevent you from opening one. Cryptocurrencies are ◊em{uncensorable}.
+Trustless means you don't have to rely on a third party to make or confirm the transfer for you and permissionless means you don't have to worry about your transactions being blocked. Nobody can ◊link[freeze]{freeze your account} or ◊link[undesirable]{prevent you from opening one}. Cryptocurrencies are ◊em{uncensorable}.
+
+◊(define freeze "/freezing_of_merchant_accounts.html")
+◊(define undesirable "/undesirable_businesses.html")
 
 You also don't have to trust a third party to hold your money like you do when you have money in a bank.◊sn{in-banks} What you really have is an IOU from the bank where they promise to give you your money when you ask for it. With cryptocurrencies you can write down the keys to your wallet and you alone have access to it.◊sn{keys}
 
@@ -67,31 +70,27 @@ You also don't have to trust a third party to hold your money like you do when y
 }
 
 
-◊subhead{Avoid fake coins}
+◊subhead{No counterfeiting}
 
 Problems with counterfeit coins and bills go far back. From biting coins to test their hardness to today's advanced techniques, counterfeit prevention has always been an important feature for cash.
 
-With cryptocurrencies anyone can independently verify the integrity of the coins you send and receive. Details on how is in the ◊link[next-chapter]{next chapter} but I assure you no biting is needed.
-
-You cannot counterfeit coins and you cannot send the same coin to multiple people ◊em{(double-spend)}. This is what allows cryptocurrencies to operate without a trusted third party.
+With cryptocurrencies anyone can independently verify the integrity of the coins you send and receive. Details on how is in the ◊link[next-chapter]{next chapter} but I assure you no biting is needed. You cannot counterfeit coins and you cannot send the same coin to multiple people ◊em{(double-spend)}. This is what allows cryptocurrencies to operate without a trusted third party.
 
 ◊img[#:src "/images/double-spend.png"]{
     A double spending occurs when someone sends the same coin both to a merchant and back to himself.
 }
 
 
-◊subhead{Irreversible}
+◊subhead{Transactions are irreversible}
 
-Just like cash cryptocurrency transfers are irreversible.◊sn{DAO}
+Just like with cash cryptocurrency transfers are irreversible.◊sn{DAO} This means if you've sent someone coins you can only get them back if they agree to give them back. It prevents ◊link[charge-back-fraud]{◊em{charge back fraud}} but it makes theft worse.
 
-This means if you've sent someone coins you can only get them back if they agree to give them back. It prevents credit card charge back fraud but it makes theft worse.
+◊(define charge-back-fraud "/cheaper_faster.html#charge-back-fraud")
 
-Transactions might also hold extra data so you can treat it as an effectively immutable data storage. It's very inefficient but could still be useful. The Bitcoin white paper is for example stored ◊link[wp-blockchain]{on the Bitcoin blockchain}.
+◊;Transactions might also hold extra data so you can treat it as an effectively immutable data storage. It's very inefficient but could still be useful. The Bitcoin white paper is for example stored ◊link[wp-blockchain]{on the Bitcoin blockchain}.
 
 ◊ndef["DAO"]{
-    It is possible to reverse transfers... If everyone agrees.
-
-    Ethereum famously altered their rules in ◊link[dao]{the DAO hard fork}. Many agreed but not everyone, so Ethereum split into two coins where Ethereum Classic kept the old rules.
+    It's possible to reverse transfers... If everyone agrees.  Ethereum famously altered their rules in ◊link[dao]{the DAO hard fork}. Many agreed but not everyone, so Ethereum split into two coins where Ethereum Classic kept the old rules.
 }
 
 
@@ -109,7 +108,7 @@ As there is no trusted third party there isn't a single entity who controls the 
     Bitcoin has a hard limit of 21 million bitcoins while in Monero new coins will always be created.◊sn{bitcoin-supply}
 }
 
-If deflation in a currency is good or bad depends on who you ask. Keynesian economists ◊link[inflation-good]{argues inflation is good} while the Austrian school ◊link[inflation-bad]{argues inflation is bad}.◊sn{austrian-podcast}
+If inflation is good or bad depends on who you ask. Keynesian economists ◊link[inflation-good]{argues inflation is good} while the Austrian school ◊link[inflation-bad]{argues inflation is bad}.◊sn{austrian-podcast}
 
 I sure don't know who's right. It's probably best to be skeptical of both camps---economics operate in an extremely complex and irregular environment. Economic theories are difficult, or impossible, to verify.
 
@@ -120,7 +119,7 @@ I sure don't know who's right. It's probably best to be skeptical of both camps-
     acquisition of skills requires a regular environment, an adequate opportunity to practice, and rapid and unequivocal feedback about the correctness of thoughts and actions. ◊mn{tfas}
 }
 
-Either way it's not an argument against cryptocurrencies in general as they can be made either inflationary or deflationary.
+Either way it's not an argument against cryptocurrencies in general as they can be made either inflationary or deflationary (although all I know of becomes deflationary).
 
 ◊ndef["tfas"]{
     The book “◊link[thinking-fast-and-slow-book]{Thinking, Fast and Slow}” is fantastically thought provoking.
@@ -139,20 +138,20 @@ Either way it's not an argument against cryptocurrencies in general as they can 
 
 ◊subhead{Anonymous}
 
-Bitcoin uses a public ledger where all transactions are public, so it isn't anonymous. It's pseudo-anonymous---while you can see transactions and addresses you don't know who owns an address. But you know someones address and can then trace all past and future transactions moving through that address. You can use a ◊link[blockchair]{blockchain explorer} to see for yourself.
+Bitcoin uses a public ledger where all transactions are public---it isn't anonymous. It's ◊em{pseudo-anonymous}, while you can see transactions and addresses you don't know who owns an address. But you know someones address and can then trace all past and future transactions moving through that address. You can use a ◊link[blockchair]{blockchain explorer} to see for yourself.
 
-There are cryptocurrencies that tries to hide all transactions.◊sn{monero} On them you cannot trace transactions on the blockchain and it makes blacklisting addresses impossible. Since these projects exists I will call cryptocurrencies anonymous, just keep in mind not all are.
+There are cryptocurrencies that tries to hide this information.◊sn{monero} On them you cannot trace transactions on the blockchain and since these projects exists I will call cryptocurrencies anonymous, just keep in mind not all are.
 
 ◊ndef["monero"]{
-    Monero is perhaps the most well known cryptocurrency that hides transactions' details by default.
+    ◊link[Monero]{Monero} is perhaps the most well known cryptocurrency that hides inputs, outputs and amounts for all transactions by default.
 
-    There are others where you can opt-in to hide some transactions but otherwise they can be traced. This also exists as a service on top of Bitcoin, see for example ◊link[coinjoin]{CoinJoin}.
+    There are others where you can opt-in to hide some transactions but otherwise they can be traced (like the shielded transactions of ◊link[zcash]{ZCash}). This also exists as a service on top of Bitcoin, see for example ◊link[coinjoin]{CoinJoin}, although they're not as good.
 }
 
 
 ◊subhead{Large and small amounts behave the same}
 
-In contrast to cash or gold where large amounts can be very cumbersome to handle there is no difference between large or small transfers in a cryptocurrency. Transaction costs are the same for small transfers as for large transfers and they are just as secure. Wallets can store as much as you're comfortable with.
+In contrast to cash or gold where large amounts can be cumbersome to handle there's no difference between large or small transfers in a cryptocurrency. Transaction costs are the same for small transfers as for large transfers and they are just as secure. Wallets can store as much as you're comfortable with.
 
 It's also easy to split coins into small parts.◊sn{satoshis} In fact you don't have to think about dividing at all---you use a wallet just like a credit card---a transfer is always exact.
 
@@ -179,4 +178,6 @@ Cryptocurrencies are inherently global. They are usable wherever you are as long
 
 ◊(define blockchair "https://blockchair.com/")
 ◊(define dao "https://fullstacks.org/materials/ethereumbook/16_appdx-forks-history.html")
+◊(define Monero "https://www.getmonero.org/")
+◊(define zcash "https://z.cash/technology/")
 

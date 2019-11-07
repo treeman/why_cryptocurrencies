@@ -33,8 +33,8 @@
      "A swiss bank account in your pocket"
      "Darknet markets"
      "Protection against government seizures"
-     "The cashless dystopia"
-     "New asset class?")
+     "The cashless dystopia")
+     ;"New asset class?")
     (extensions.html
      timestamping_service.html
      uncensorable_twitter.html
