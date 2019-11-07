@@ -75,9 +75,9 @@ Counterfeiting means everyones savings---the "old" money---will lose value. This
 ◊img[#:src "images/inflation.svg" #:link #t]{
     How the ◊link[swe-inflation]{inflation in Sweden} has caused the actual value of money to decrease.◊sn{why-sweden?}  
 
-    The graph shows an inflation adjusted index, starting from 1960. You can think of it what ◊sans-tnum{100 SEK} of goods in a given year would be worth in 1960's money. For example ◊sans-tnum{100 SEK} in 2018 would only buy ◊sans-tnum{7 SEK} worth of stuff in 1960---a 93% drop in value.
+    The graph shows an inflation adjusted index, starting from 1960. You can think of it what ◊sans-tnum{100 SEK} of goods in a given year would be worth in 1960's money. For example ◊sans-tnum{100 SEK} from 2018 would only buy ◊sans-tnum{7 SEK} worth of stuff in 1960---a 93% drop in value.
 
-    You can also compare two years with each other. For example the index in 1976 was around 40, and in 1982 around 20, which means money lost 50% of it's value between 1976 and 1982.
+    You can also compare two years with each other. For example the index in 1976 was around 40, and in 1982 around 20, which means money lost 50% of its value between 1976 and 1982.
 }
 
 ◊ndef["why-sweden?"]{
