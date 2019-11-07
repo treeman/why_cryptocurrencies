@@ -36,7 +36,10 @@ def parse_row(row, years):
     return (infl, value)
 
 # https://data.worldbank.org/indicator/FP.CPI.TOTL?locations=US-SE-XC
-(inflation, value, years) = parse('API_FP.CPI.TOTL.ZG_DS2_en_csv_v2_316099.csv')
+(inflation, value, years) = parse('data/API_FP.CPI.TOTL.ZG_DS2_en_csv_v2_316099.csv')
+
+for x, y in zip(years, value):
+    print(x, y)
 
 # It's just for the high level understanding. Plus xkcd style is pretty
 plt.xkcd()
@@ -97,7 +100,7 @@ par1.yaxis.set_tick_params(width=2)
 
 ax.set_ylabel("Value")
 
-print(value)
+#print(value)
 
 # For different y-axis:
 # https://stackoverflow.com/questions/9103166/multiple-axis-in-matplotlib-with-different-scales

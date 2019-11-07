@@ -192,7 +192,7 @@
   `(span ((class "sans")) ,@args))
 
 (define (sans-tnum . args)
-  `(span ((class "sans-tnum")) ,@args))
+  `(span ((class "sans-tnum")) ,(apply nbsp args)))
 
 (define (todo . args)
   `(span ((class "todo"))
