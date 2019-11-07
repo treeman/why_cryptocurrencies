@@ -2,12 +2,12 @@
 
 ◊(define-meta title "How to use this book")
 ◊(define-meta subtitle "Just some minor things to keep in mind")
-◊(define-meta updated "2019-04-03T19:58:53+02:00")
+◊(define-meta updated "2019-11-05T07:28:15+01:00")
 ◊(define-meta uuid "a69e0036-a749-4f7c-b02e-dbcfa2776540")
 
-Each chapter is supposed to be standalone so you can jump around and read it however you want. The only prerequisite is to have a basic understanding of what a cryptocurrency does, which is described in ◊link[the-first-chapter]{the first chapter}. But if you really want to you can skip that as well and go back later if you need to.
+Each chapter is supposed to be standalone so you can jump around and read it however you want. The only prerequisite is to have a basic understanding of what a cryptocurrency does, which is described in ◊link[the-first-chapter]{the first section}, but if you want you can skip that as well and go back later if needed.
 
-This book is a work in progress and if you want to keep up to date you have three options:
+This book is a work in progress, so I will add and rework chapters as I go. If you want to keep up to date you have three options:
 
 ◊ul{
   ◊li{Subscribe to the ◊link[feed-url]{feed}}
@@ -17,7 +17,11 @@ This book is a work in progress and if you want to keep up to date you have thre
       ◊|subscription-form|}
 }
 
-I use ◊link[mbtype]{custom fonts} hosted locally on this site. While fonts are subjective the styling assumes you have these fonts and if you block them---like noscript does---it might look slightly off.
+I use ◊link[mbtype]{custom fonts} hosted locally on this site. While fonts are subjective the styling assumes you have these fonts and if you block them---like ◊link[noscript]{noscript} does---it might look slightly off.◊sn{good-idea}
+
+◊ndef["good-idea"]{
+    If you don't use noscript or ad-blockers, I ◊strong{highly} recommend you do. uBlock Origin is an excellent ad-blocker (works on Firefox on mobile as well).
+}
 
 External links are highlighted green on hover and internal links are highlighted bright orange. For example compare the external link to ◊link[source-code]{Github} with the link to the ◊link["/"]{home page}. There is no tracking on this site but there may very well be on external sites, this serves as a small signifier for those who cares. It also makes it easier to download the site and read it offline.
 
@@ -34,6 +38,7 @@ Sidenotes use numbers in the text◊sn{sn} and marginnotes◊mn{mn} are notes wi
 
 While I do my very best to avoid errors I don't have an editor, only some close friends who help out. Therefore I would be most grateful for any feedback, ideas or error corrections you the reader may find. You can ◊link[mailto]{email me} or create a pull request or an issue ◊link[source-code]{on Github}.
 
+◊(define noscript "https://noscript.net/")
 ◊(define the-first-chapter "/what_is_a_cryptocurrency.html")
 ◊(define tufte "https://edwardtufte.github.io/tufte-css/")
 ◊(define mbtype "https://mbtype.com/")

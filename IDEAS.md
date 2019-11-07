@@ -127,6 +127,9 @@ How the FED can be a government agency, completely outside government control:
 
 ## Protection against government seizures
 
+https://news.ycombinator.com/item?id=21464572
+
+
 India voids 500 and 1000 rupee bills
 
 Macedonia bans fiat cash payments above 560
