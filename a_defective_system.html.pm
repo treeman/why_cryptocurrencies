@@ -14,7 +14,7 @@
 
 In the chapter ◊link[what-is-money]{What is money?} we saw some historical examples of money and some properties that good money should have. Unfortunately it's not enough to understand the current economic system, which is a completely different beast.
 
-The modern system is based on money that ◊link[sound-money]{isn't sound}---the money supply can be manipulated freely---which doesn't fulfill the properties of good money. This has far-reaching negative consequences and it means the economic system we use today is broken, on a fundamental level.
+There are more problems than our ◊link[blind-leading-the-blind]{leaders being blind}. The modern system is based on ◊link[sound-money]{unsound money}, where the supply can be manipulated freely and doesn't fulfill the properties of good money. This has far-reaching negative consequences and it means the economic system we use today is broken, on a fundamental level.
 
 ◊(define what-is-money "/what_is_money.html")
 
@@ -374,7 +374,7 @@ It seems to me if (or when) a recession comes we'll get caught with our pants do
 
 ◊subhead{Where do we go from here?}
 
-Since the financial crisis in 2008 we're in uncharted territory, and we actually don't know what we should do (more on this subtheme in the chapter: ◊link[blind-leading-the-blind]{The blind leading the blind}). Therefore new economic theories, like the ◊link[mmt]{Modern Money Theory} (MMT), are developed. MMT basically says the government can pay its bills by just printing all money it needs, checked only by inflation. It's reasonable to ask if MMT is a sound economic theory, or if it's just describing ◊link[mmt-true]{what's already happening}.
+Since the financial crisis in 2008 we're in uncharted territory, and we actually don't know what we should do. Therefore new economic theories, like the ◊link[mmt]{Modern Money Theory} (MMT), are developed. MMT basically says the government can pay its bills by just printing all money it needs, checked only by inflation. It's reasonable to ask if MMT is a sound economic theory, or if it's just describing ◊link[mmt-true]{what's already happening}.
 
 While "printing more money" is a popular solution, for critics of the modern economic policies ◊link[sound-money]{◊em{sound money}}, where nobody can manipulate the money supply, might represent a compelling alternative. For example fiat backed by gold, actual gold coins or cryptocurrencies.◊sn{debasement}
 

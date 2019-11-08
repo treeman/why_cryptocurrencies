@@ -14,13 +14,13 @@
 ◊;https://books.google.co.uk/books?id=6Mdh5yuHavgC&pg=PA86&lpg=PA86&ots=vJ319cMgdc&focus=viewport&dq=%E2%80%9CIt%27s+almost+been+worth+this+depression+to+find+out+how+little+our+big+men+know.%E2%80%9D++%E2%80%95+Will+Rogers
 ◊(define great-depression "https://en.wikipedia.org/wiki/Great_Depression")
 
-One of the most common arguments against ◊link[sound-money]{◊em{sound money}}---like cryptocurrencies or money backed by gold---is you lose the ability to influence and react to the market. For example if the economy crashes, or you think it will crash, the modern central banks might try to print money and buy things to soften the crash. This isn't possible with cryptocurrencies or gold, since they cannot be created freely. ◊sn{elaciticity}
+Even though ◊link[sound-money]{◊em{sound money}}---like cryptocurrencies or money backed by gold---might fix the bad incentives at the heart of the ◊link[financial-crisis]{2008 finanical crisis}, there are many arguments against it. One of the most common is we lose the ability to influence and react to the market. For example if the economy crashes, or we think it will crash, the modern central banks might try to print money and buy things to soften the crash. This isn't possible with cryptocurrencies or gold, since they cannot be created freely.◊sn{elaciticity}
 
 ◊ndef["elaciticity"]{
     ◊em{Elaciticity} is a nice word fractional banking proponents have used to describe this ability. In plain English it means the ability to inflate and deflate the money supply freely.
 }
 
-But there is a fatal flaw with this argument: it relies on being able to predict the market and to know what actions to take to move it in the direction you want. With how intricate and complex the economy is, it's an absurd assumption.
+But there's a fatal flaw with this argument: it relies on being able to predict the market and to know what actions to take to move it in the direction you want. With how intricate and complex the economy is, it's an absurd assumption.
 
 
 ◊subhead{How to become an expert}
@@ -53,7 +53,9 @@ In contrast learning how to drive a car provides an ideal learning environment. 
 
 ◊subhead{The problem with planning the economy}
 
-In ◊link[economic-planning]{economic planning} central governments make, or influence, economic decisions. There is nothing inherently bad about this and all governments do it, for example large infrastructure projects are often created by the government.  The Soviet Union took this concept ◊link[command-economy]{further} by letting the government decide what goods to produce, how much and when.
+In ◊link[economic-planning]{economic planning} central governments make, or influence, economic decisions. There's nothing inherently bad about this and all governments do it, for example large infrastructure projects are often created by the government.  The Soviet Union ◊link[command-economy]{took this concept further} by letting the government decide what goods to produce, how much and when.
+
+This didn't go so well, with huge queues outside almost empty stores and people having to resort to the black market for necessities. The inability to predict the market, and control the economy, is ◊link[ussr-collapse]{one of the reasons} the Soviet Union collapsed.
 
 Because the economy is made up of millions or even billions of people, with different motivations and imperfect knowledge, it's ◊strong{extremely} hard to predict all the needs of the market. For example you need to predict larger demand for butter closer to Christmas, because people are more likely to bake.◊sn{milk} Or that the demand for fluffy toys will skyrocket, because a game called Pokémon will become unreasonable popular. You think picking stock is difficult? This is much harder.◊sn{impossible?}
 
@@ -66,8 +68,6 @@ Because the economy is made up of millions or even billions of people, with diff
 
     Not to mention ◊link[black-swan]{◊em{Black Swan}} events which are by definition unpredictable. The rise of Bitcoin is one example (currently valued at around $9,000).
 }
-
-This didn't go so well, with huge queues outside almost empty stores and people having to resort to the black market for necessities. The inability to predict the market, and control the economy, is ◊link[ussr-collapse]{one of the reasons} the Soviet Union collapsed.
 
 ◊(define black-swan "https://www.investopedia.com/terms/b/blackswan.asp")
 ◊(define butterfly-effect "https://en.wikipedia.org/wiki/Butterfly_effect")
@@ -83,7 +83,7 @@ This didn't go so well, with huge queues outside almost empty stores and people 
   When the music stops, in terms of liquidity, things will be complicated. But as long as the music is playing, you’ve got to get up and dance. We’re still dancing.
 }
 
-It's not just the Soviet Union that has problems predicting and adapting to the whims of the global economy. Look at the ◊link[financial-crisis]{financial crisis in 2008} which should have been obvious, but took almost everyone by surprise. Here's what the Federal Reserve had to say, a month before the financial meltdown:
+It's not just the Soviet Union that has problems predicting and adapting to the whims of the global economy. The financial crisis in 2008, as we discussed in the ◊link[financial-crisis]{previous chapter}, should have been obvious yet took almost everyone by surprise. Here's what the Federal Reserve had to say, merely a month before the financial meltdown:
 
 ◊qt[#:author "The Federal Reserve"
     #:date "August, 2007"
@@ -93,7 +93,7 @@ It's not just the Soviet Union that has problems predicting and adapting to the 
   Nevertheless, the economy seems likely to continue to expand at a moderate pace over coming quarters, supported by solid growth in employment and incomes and a robust global economy.
 }
 
-The Federal Reserve, calling the global economy "robust", fanned the flames of the housing bubble by focusing on inflation and keeping the rent low, all the way up to the crash. They also let Lehman Brothers fail, not realizing the realizing the disaster it would create.◊mn{music-stops}
+The Federal Reserve, calling the global economy "robust", fanned the flames of the housing bubble by focusing on inflation and keeping the rate low, all the way up to the crash. They also let Lehman Brothers fail, not realizing the disaster it would create.◊mn{music-stops}
 
 Maybe you feel like I'm focusing too much on the ◊link[financial-crisis]{2008 financial crisis}? Then how about their actions around the ◊link[great-depression]{Great Depression} (which were critiqued as worsening the crisis), of which the Federal Reserve chairman had this to say:
 
@@ -141,7 +141,7 @@ While the article itself is more nuanced, you can't conclude anything with such 
     It is well enough that people of the nation do not understand our banking and monetary system, for if they did, I believe there would be a revolution before tomorrow morning.
 }
 
-I could argue that we're blind because we collectively don't understand how the banking system work, the modern monetary system or the financial system---which would largely be true. But there's another, more sinister, cause of our blindness: the Federal Reserve.
+I could argue that we're blind because we collectively don't understand the banking system, the modern monetary system or the financial system---which would largely be true. But there's another, more sinister, cause of our blindness: the Federal Reserve.
 
 Do the people know that the least accountable operation in the U.S. government isn't the FBI, CIA or the NSA---which are all accountable to congressional supervision---but the Federal Reserve? The central bank of the United States, the largest economy in the world, isn't accountable to anyone, has no budget and nobody has insight into it's operations.◊mn{case-against-fed}
 
@@ -178,7 +178,7 @@ Proponents will of course say that money is more important than other issues---t
 
 ◊subhead{A new hope}
 
-Cryptocurrencies are interesting because they allow anyone to verify the number of coins in circulation---with certainty. No money in history has had this valuable property.  There has always been the need to trust the word of someone, that the amount of money is what they say it is. Even with gold coins there's trust involved, you have to trust the issuer to include the right amount of gold, otherwise the trust---and the currency---◊link[rome-debasing]{will collapse in value}.◊sn{portraits}
+Cryptocurrencies are interesting because they allow anyone to verify the number of coins in circulation---with certainty. No money in history has had this valuable property.  There's always been the need to trust the word of someone, that the amount of money is what they say it is. Even with gold coins there's trust involved, you have to trust the issuer to include the right amount of gold, otherwise the trust---and the currency---◊link[rome-debasing]{will collapse in value}.◊sn{portraits}
 
 ◊ndef["portraits"]{
     Ever wonder why there are portraits on coins? Because they make them recognizable so you can decide to trust them or not. "I'll gladly accept emperor Augustu's coins" or "we don't accept that usurpers coins here."
@@ -186,16 +186,18 @@ Cryptocurrencies are interesting because they allow anyone to verify the number 
 
 ◊(define rome-debasing "https://money.visualcapitalist.com/currency-and-the-collapse-of-the-roman-empire/")
 
-You can also predict how many coins will be created and when, it's coded into the rules of the cryptocurrency after all. While Bitcoin ◊link[emission-rate]{mimics the rate that gold is mined}, there is no risk of counterfeit bitcoin or a meteor made of bitcoin crashing on earth to disrupt the supply, which there is with gold or other precious materials.◊sn{inflation-bug}
+You can also predict how many coins will be created and when, it's coded into the rules of the cryptocurrency after all. While Bitcoin ◊link[emission-rate]{mimics the rate that gold is mined}, there's no risk of counterfeit bitcoin or a meteor made of bitcoin crashing on earth to disrupt the supply, which there is with gold or other precious materials.◊sn{inflation-bug}
 
 ◊ndef["inflation-bug"]{
-    There is instead a risk of ◊link[inflation-bug]{bugs in the code} which may allow hackers to print coins.
+    There's instead a risk of ◊link[inflation-bug]{bugs in the code} which may allow hackers to print coins.
 }
 
 ◊(define inflation-bug "https://medium.com/@awemany/600-microseconds-b70f87b0b2a6")
 ◊(define emission-rate "/properties_of_a_cryptocurrency.html#predetermined-emission-rate")
 
 Finally cryptocurrencies don't rely on "experts", who are supposed to predict what cannot be predicted. There's nobody in control, so there's nobody to push the wrong button or pull the wrong lever and cause economic chaos.◊sn{half-truth}
+
+Therefore cryptocurrencies are a more transparent and robust alternative, which avoids many of the problems inherent to the modern financial system.
 
 ◊ndef["half-truth"]{
     This is a half-truth. Yes there's nobody who can create coins out of thin air, but there are developers, miners, exchanges and users of a cryptocurrency who can influence its development. After all it's "just code" (and a lot of people agreeing with the rules of the code).

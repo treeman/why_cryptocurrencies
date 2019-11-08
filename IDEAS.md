@@ -86,6 +86,9 @@ https://news.ycombinator.com/item?id=21028770
 
 ◊;https://news.ycombinator.com/item?id=21028770
 
+Spain outrageous laws etc
+<https://www.reddit.com/r/Monero/comments/dslnta/shoutout_to_use_monero_and_digital_privacy_from/>
+
 
 ## Financial crisis
 
