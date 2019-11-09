@@ -14,7 +14,7 @@
 ◊;https://books.google.co.uk/books?id=6Mdh5yuHavgC&pg=PA86&lpg=PA86&ots=vJ319cMgdc&focus=viewport&dq=%E2%80%9CIt%27s+almost+been+worth+this+depression+to+find+out+how+little+our+big+men+know.%E2%80%9D++%E2%80%95+Will+Rogers
 ◊(define great-depression "https://en.wikipedia.org/wiki/Great_Depression")
 
-Even though ◊link[sound-money]{◊em{sound money}}---like cryptocurrencies or money backed by gold---might fix the bad incentives at the heart of the ◊link[financial-crisis]{2008 finanical crisis}, there are many arguments against it. One of the most common is we lose the ability to influence and react to the market. For example if the economy crashes, or we think it will crash, the modern central banks might try to print money and buy things to soften the crash. This isn't possible with cryptocurrencies or gold, since they cannot be created freely.◊sn{elaciticity}
+Even though ◊link[sound-money]{◊em{sound money}}---like cryptocurrencies or money backed by gold---might fix the bad incentives at the heart of the ◊link[financial-crisis]{2008 finanical crisis}, there are many arguments against it. One of the most common is we that lose the ability to influence and react to the market. For example if the economy crashes, or we think it will crash, the modern central banks might try to print money and buy things to soften the crash. This isn't possible with cryptocurrencies or gold, since they cannot be created freely.◊sn{elaciticity}
 
 ◊ndef["elaciticity"]{
     ◊em{Elaciticity} is a nice word fractional banking proponents have used to describe this ability. In plain English it means the ability to inflate and deflate the money supply freely.
@@ -195,7 +195,7 @@ You can also predict how many coins will be created and when, it's coded into th
 ◊(define inflation-bug "https://medium.com/@awemany/600-microseconds-b70f87b0b2a6")
 ◊(define emission-rate "/properties_of_a_cryptocurrency.html#predetermined-emission-rate")
 
-Finally cryptocurrencies don't rely on "experts", who are supposed to predict what cannot be predicted. There's nobody in control, so there's nobody to push the wrong button or pull the wrong lever and cause economic chaos.◊sn{half-truth}
+Finally cryptocurrencies don't rely on "experts", who are supposed to avoid crashes by predict what cannot be predicted. There's nobody in control, so there's nobody to push the wrong button or pull the wrong lever and cause economic chaos.◊sn{half-truth}
 
 Therefore cryptocurrencies are a more transparent and robust alternative, which avoids many of the problems inherent to the modern financial system.
 
