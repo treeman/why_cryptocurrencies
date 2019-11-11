@@ -13,81 +13,63 @@
   }
 }
 
+
+
+◊subhead{Why privacy matters}
+
 Privacy and anonymity is an important issue in the modern world and there are countless examples of privacy violations everywhere. Before we get to some of them we first need to address why privacy matter, because today government officials, company owners, the news and regular people all ask the same questions:
 
-But why privacy? Why would you want to stay anonymous? What are you hiding? Are you criminal?◊sn{summary-discussion}
+Why would you want to stay anonymous? What are you hiding? Are you criminal?◊sn{summary-discussion}
 
 ◊ndef["summary-discussion"]{
     Privacy discussions can often be summarized to:
 
     ◊span[#:class "talking"]{
       ◊trow{Why do I need privacy? I have nothing to hide.}
-      ◊trow{Then pull your pants down, give me a dickpick, your email password and your credit card numbers.}
+      ◊trow{Then pull your pants down, give me a dickpick, your email password and your credit card number.}
     }
 
-    I can't promise I'll do better but I'll try. At least I don't have anyone except myself to argue with, if that makes a difference...
+    I can't promise I'll do better, but I'll try. At least I don't have anyone except myself to argue with, if that makes a difference...
 }
 
 ◊(define (trow . args)
   `(span ((class "row")) ,@args))
 
 
-◊subhead{You do have something to hide}
+◊subhead3{It's natural to seek privacy}
 
 When people are alone and relaxed they do things they otherwise wouldn't. Maybe you like to dance when you're alone, sing in the shower or scratch yourself somewhere... nice. If you're caught in the act you immediately stop what we're doing and feel embarrassed.
 
 If you don't recognize the situation please watch the scene where Hugh Grant plays the ◊link[love-actually-dance]{dancing prime minister in Love Actually}. Even if you do know what I'm talking about the scene's so good you should watch it anyway.
 
-◊todo{IMG of a dancing dude embarrassing himself}
+◊todo{IMG of a dude singing in the shower, or Huge Grant pose}
 
 ◊(define love-actually-dance "https://www.youtube.com/watch?v=zcgxBHBsl-4")
 
-People may say privacy don't matter yet their actions tell a different story. For example Facebook's founder Mark Zuckerberg has said that privacy is ◊link[zuckerberg-privacy-not-norm]{no longer a social norm}, and then he buys up four homes surrounding his home ◊link[zuckerberg-buy-privacy]{because he wants privacy}.
+I have a child who's two years old, and even he wants privacy sometimes. He likes to build and hide in a cabin made of pillows, and if I disturb him he pushes me and shouts “Go away!”. After we recently renovated his room he was ◊em{so happy} that he had a room of his own again, which he likes to hide out in when he's pooping.◊sn{children-privacy}
 
-Caring about privacy is a natural instinct---for good reason. It's not just about avoiding embarrassment, it's also for your own personal safety. In fact privacy is closely related to security:
-
-◊ol{
-  ◊li{Identity theft can ruin your life.}
-  ◊li{Criminals target rich people.}
-  ◊li{Crime of opportunity.}
+◊ndef["children-privacy"]{
+    It's really quite fascinating. Sometimes I can hug him while he's playing, but sometimes I'm not even allowed to be in the same room. I guess he just wants to be alone from time to time.
 }
 
-Administration Using the Full Power of the Surveillance State on Whistleblowers
-<https://news.ycombinator.com/item?id=20615084>
+People may say privacy don't matter yet their actions tell a different story. For example Facebook's founder Mark Zuckerberg has said that privacy is ◊link[zuckerberg-privacy-not-norm]{no longer a social norm}, but then he buys up four homes surrounding his home ◊link[zuckerberg-buy-privacy]{because he wants privacy}.
+
+After all we don't have curtains or blinders on our windows because we do something illegal, it's because we want privacy.
 
 ◊(define identity-theft "https://www.forbes.com/sites/laurashin/2014/11/18/someone-had-taken-over-my-life-an-identity-theft-victims-story/")
-
-
-"Fear" to force people to be as unassuming as possible, to avoid interest. We change our behavior when being watched.
-
-◊qt[#:author "George Orwell" #:src "1984" #:quote-src #t]{
-    There was of course no way of knowing whether you were being watched at any given moment. How often, or on what system, the Thought Police plugged in on any individual wire was guesswork. It was even conceivable that they watched everybody all the time.
-}
-
-While crude it cuts right to the chase: you do in fact have things which are best to hide. Your passwords and credit card numbers◊sn{cc-numbers} is a good example: you should hide them because of security reasons. We lock our door for both privacy and security reasons.
-
-
 ◊(define zuckerberg-buy-privacy "https://www.inquisitr.com/989057/facebooks-zuckerberg-buys-his-neighborhood-because-get-this-he-wants-privacy/")
 ◊(define zuckerberg-privacy-not-norm "https://www.theguardian.com/technology/2010/jan/11/facebook-privacy")
 
-◊ndef["cc-numbers"]{
 
+◊subhead3{Others have important things to hide}
+
+Even if you still don't think you have anything to hide, note that others do. If we give up our right to privacy then everyone have to give up theirs as well.
+
+Here are some examples where lack of economic privacy is directly harmful for certain individuals:◊sn{focus-economic}
+
+◊ndef["focus-economic"]{
+    I focus on the economic side of privacy here, because that's related to cryptocurrencies, but it should be easy to find examples in other areas.
 }
-
-After all we don't have curtains or blinders on our windows because we do something illegal, it's because we like 
-
-◊ol{
-  ◊li{You do in fact have something to hide.}
-  ◊li{Security and privacy are related.}
-  ◊li{The right to privacy means you have a ◊em{choice}.}
-}
-
-
-◊subhead{Others have very important things to hide}
-
-Now even if you still don't think you have anything to hide, remember that others do. If we give up our right to privacy then everyone have to give up theirs as well.
-
-Here are some examples where lack of economic privacy is directly harmful for certain individuals:
 
 ◊ol{
   ◊li{Unwanted pregnancies.
@@ -103,11 +85,11 @@ Here are some examples where lack of economic privacy is directly harmful for ce
     ◊ndef["porn-story"]{
         I read a story long ago, but I can't remember if it was real or made up.
 
-        It was about a couple and their son who liked to play with their neighbours. They were happy to let him, the neighbours were really friendly, and they liked to spend time with them too. But one day they found an amateur porn DVD---the neighbours apparently liked to create homemade porn.
+        It was about a couple and their son who liked to play with their neighbours. They were happy to let him, the neighbours were really friendly, and they liked to spend time with them too. But one day they found an amateur porn DVD---the neighbours apparently liked to create porn.
 
-        The DVD never harmed them, and their son didn't know about it, but they never allowed their son to visit the neighbours anymore and the couple stopped spending time with them because it "felt weird".
+        The DVD never harmed them, and their son didn't know about it, but they never allowed their son to visit the neighbours anymore, and the couple stopped spending time with them because it "felt weird".
 
-        I guess the point of the story is some things are best left unknown.
+        I guess the point of the story is that some things are best left unknown.
     }
   }
   ◊li{A cause for oppression.
@@ -116,6 +98,7 @@ Here are some examples where lack of economic privacy is directly harmful for ce
   }
 }
 
+As Snowden's quote in the beginning of the chapter says: just because you choose not to exercise your right, why should you remove the right for others? Privacy should be a ◊em{choice}---not something that's chosen for you.
 
 ◊(define teenage-pregnancy "https://www.nytimes.com/2012/02/19/magazine/shopping-habits.html?pagewanted=all&_r=0")
 ◊(define murder-family-honor "https://www.nationalgeographic.com/culture/2002/02/thousands-of-women-killed-for-family-honor/")
@@ -123,7 +106,45 @@ Here are some examples where lack of economic privacy is directly harmful for ce
 ◊(define gay-illegal "https://www.theguardian.com/world/2016/jun/21/gay-lgbt-muslim-countries-middle-east")
 ◊(define china-social-credit "https://www.inkstonenews.com/china/chinas-13-million-discredited-individuals-face-discrimination-thanks-social-credit-system/article/3003319")
 
-As Snowden's quote in the beginning of the chapter says: just because you choose not to exercise your right, why should that mean we remove the right for others? Privacy should be a ◊em{choice}---not something that's chosen for you.
+
+◊subhead{Privacy is a human right}
+
+◊qt[#:src "Convention on the Rights of the Child"
+    #:url "https://www.unicef.org/child-rights-convention/convention-text"]{
+  1. No child shall be subjected to arbitrary or unlawful interference with his or her privacy, family, home or correspondence, nor to unlawful attacks on his or her honour and reputation.
+
+  2. The child has the right to the protection of the law against such interference or attacks.
+}
+
+◊qt[#:src "Convention on the Rights of the Child: The children's version"
+    #:url "https://www.unicef.org/child-rights-convention/convention-text-childrens-version"]{
+  Every child has the right to privacy. The law must protect children’s privacy, family, home, communications and reputation (or good name) from any attack.
+}
+
+◊qt[#:src "Universal Declaration of Human Rights"
+    #:url "https://www.un.org/en/universal-declaration-human-rights/"]{
+  No one shall be subjected to arbitrary interference with his privacy, family, home or correspondence, nor to attacks upon his honour and reputation. Everyone has the right to the protection of the law against such interference or attacks.
+}
+
+
+◊subhead{The security trade-off}
+
+Caring about privacy is a natural instinct---for good reason. It's not just about avoiding embarrassment, it's also for your own personal safety. In fact privacy is closely related to security:
+
+◊ol{
+  ◊li{Identity theft can ruin your life.}
+  ◊li{Criminals target rich people.}
+  ◊li{Crime of opportunity.}
+}
+
+
+◊subhead{A tool for oppression}
+
+"Fear" to force people to be as unassuming as possible, to avoid interest. We change our behavior when being watched.
+
+◊qt[#:author "George Orwell" #:src "1984" #:quote-src #t]{
+    There was of course no way of knowing whether you were being watched at any given moment. How often, or on what system, the Thought Police plugged in on any individual wire was guesswork. It was even conceivable that they watched everybody all the time.
+}
 
 
 ◊subhead{We're living in the Stasi's wet dream}
@@ -152,8 +173,6 @@ Where has this slippery slope lead us?
 
 ◊subhead{Cryptocurrencies are anonymous}
 
-◊; Credit cards have a privacy problem
-◊; https://news.ycombinator.com/item?id=20800115
 
 ◊; Supporting finanical privacy makes me an extremist
 ◊; https://www.coingecko.com/buzz/erik-voorhees-supporting-financial-privacy-extremist
@@ -164,3 +183,6 @@ Where has this slippery slope lead us?
 ◊; TED talk, very good
 ◊; https://www.ted.com/talks/glenn_greenwald_why_privacy_matters
 
+The ◊link[great-man]{great man theory} of history is the idea that most of history can be explained by the impact of great men. Julius Caesar, Genghis Khan and Hitler are examples of "great men". (They don't have to be good, just that they caused large changes.) If Edward Snowden will be considered a great man depends on the effects of his leaks---they might mark a turning point for government surveillance, and change the course of history, or they might just be forgotten.
+
+◊(define great-man "https://en.wikipedia.org/wiki/Great_man_theory")

@@ -123,7 +123,7 @@ There are two big problems with being unbanked related to digital payments as I 
     ◊li{Individuals may be shut-out from society.}
 }
 
-◊problem-header{Economic growth}
+◊subhead3{Economic growth}
 
 Continuing the quote from the beginning of the chapter:
 
@@ -167,7 +167,7 @@ One of the best ways to fight poverty is ◊link[economic-growth-poverty]{econom
 
 
 
-◊problem-header{Shut-out from society}
+◊subhead3{Shut-out from society}
 
 It might be relatively fine for you to live in a country without a bank account---as long as others don't use one either. But what if you live in a country where digital payments are an integral part of society?
 
@@ -189,12 +189,6 @@ In China mobile payments are growing like mad. If you're a tourist you should ge
 
 ◊(define rel-economic-growth "#economic-growth")
 ◊(define rel-shut-out "#shut-out-from-society")
-
-◊(define (problem-header x)
-   `(h3 [[class "economic-problem"]]
-     (a [[name ,(to-name x)]] ,x)))
-
-
 ◊(define findex-report "https://globalfindex.worldbank.org/sites/globalfindex/files/2018-04/2017%20Findex%20full%20report_0.pdf")
 ◊(define findex-interactive "http://datawrapper.dwcdn.net/AmFVU/2/")
 

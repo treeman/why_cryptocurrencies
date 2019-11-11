@@ -64,6 +64,9 @@ $sidenote-float-width: 1280px;
 .chapter h2 > a:hover {
     color: $body-font-color;
 }
+.chapter h3 > a:hover {
+    color: $body-font-color;
+}
 
 
 /*
@@ -704,9 +707,6 @@ table.crypto-eval {
     }
 }
 
-h3.economic-problem > a {
-    color: $body-font-color;
-}
 
 
 @media only screen and (min-width: 521px) {
