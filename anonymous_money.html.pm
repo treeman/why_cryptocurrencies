@@ -171,7 +171,7 @@ Administration Using the Full Power of the Surveillance State on Whistleblowers
 Where has this slippery slope lead us?
 
 
-◊subhead{Cryptocurrencies are anonymous}
+◊subhead{Reclaiming our financial privacy}
 
 
 ◊; Supporting finanical privacy makes me an extremist
@@ -183,6 +183,29 @@ Where has this slippery slope lead us?
 ◊; TED talk, very good
 ◊; https://www.ted.com/talks/glenn_greenwald_why_privacy_matters
 
-The ◊link[great-man]{great man theory} of history is the idea that most of history can be explained by the impact of great men. Julius Caesar, Genghis Khan and Hitler are examples of "great men". (They don't have to be good, just that they caused large changes.) If Edward Snowden will be considered a great man depends on the effects of his leaks---they might mark a turning point for government surveillance, and change the course of history, or they might just be forgotten.
+
+The ◊link[great-man]{◊em{great man theory}} of history is the idea that most of history can be explained by the impact of great men. Julius Caesar, Genghis Khan and Hitler are examples of "great men". (They don't have to be good, just cause large changes.) If Edward Snowden will be considered a great man depends on the effects of his leaks---they might mark a turning point for government surveillance, and change the course of history, or they might be forgotten as a sidenote in the history books.◊sn{nothing-changed}
+
+◊ndef["nothing-changed"]{
+    Unfortunately it doesn't seem like anything has really changed.
+}
+
+While the great man theory is interesting, wouldn't it be better to describe modern history using a ◊em{great technology theory}? For example the printing press, the internal combustion engine, the atomic bomb, the transistor and the internet have had great impact on history---greater than any single man I can think of.◊sn{invention}
+
+◊ndef["invention"]{
+    Proponents of the great man theory might say that these are inventions of a great man (or woman). To which I'd say that they weren't the result of a single person, but of many small improvements over existing tech, made by countless of people.
+}
+
+So instead of looking for someone to solve our privacy problems, maybe technology is our solution? With strong encryption we can keep our messages private and our data safe, and with the great innovation called tape we can prevent our webcams from spying on us.
+
+But so far we've had to surrender our privacy to gain access to digital payments and even to our own money. Because ◊link[anon]{cryptocurrencies are anonymous}---nobody can see the transactions◊sn{bitcoin-worse} we do or know how much money we have---with cryptocurrencies we might claw back some of that privacy, and isn't that pretty great?
+
+◊ndef["bitcoin-worse"]{
+    Note that Bitcoin is sometimes even worse for privacy than regular payments. In Bitcoin anyone you send money will see where your money came from, and might be able to trace all your money that way. Mixing services or cryptocurrencies like Monero tries to fix this problem.
+}
 
 ◊(define great-man "https://en.wikipedia.org/wiki/Great_man_theory")
+◊(define shoulders-of-giants "https://en.wikipedia.org/wiki/Standing_on_the_shoulders_of_giants")
+◊(define signal "https://www.signal.org/")
+◊(define anon "/properties_of_a_cryptocurrency.html#anonymous")
+
