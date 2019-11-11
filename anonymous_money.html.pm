@@ -85,10 +85,18 @@ Caring about privacy is a natural instinct---for good reason. It's not just abou
   ◊li{Identity theft can ruin your life.}
   ◊li{Criminals target rich people.
 
-      A very common advice to people who want to invest in physical gold is to not tell anyone they have it. Same with windfalls.
+      The most important advice if you win the lottery is to ◊link[windfall]{not tell anyone}---people will ◊link[windfall-happy]{target you like vultures}. The same advice is given to people who want to invest in physical gold, for similar reasons.
+
+      The best way to get targeted by criminals is to let them know how rich you are.
   }
-  ◊li{Crime of opportunity.}
+  ◊li{Crime of opportunity.
+
+      Many crimes aren't carried out by super-criminals with a master plan. Often they're done in the heat of the moment, because an opportunity was there. For example if everyone knows you're away for a week, the risk for a burglary rises. Or if you tell everyone that you're carrying $10,000 in your wallet, the risk of getting mugged increases.
+  }
 }
+
+◊(define windfall "https://www.reddit.com/r/personalfinance/wiki/windfall")
+◊(define windfall-happy "https://www.reddit.com/r/AskReddit/comments/24vo34/whats_the_happiest_5word_sentence_you_could_hear/chb4v05/?context=1")
 
 
 ◊subhead3{Others have important things to hide}
