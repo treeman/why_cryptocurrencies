@@ -2,7 +2,7 @@
 
 ◊(define-meta title "“Undesirable” businesses")
 ◊(define-meta subtitle "The ones payment processors don't want to do business with")
-◊(define-meta updated "2019-06-12T06:45:06+02:00")
+◊(define-meta updated "2019-11-06T20:35:22+01:00")
 ◊(define-meta uuid "ac14d4a1-3796-4f5b-9350-b56e796625a1")
 
 If you want to accept digital payments today you need to partner with a payment processor, for example Stripe or PayPal. Usually that's not a problem---but what if they say no?◊mn{banks}
@@ -13,7 +13,7 @@ If you want to accept digital payments today you need to partner with a payment 
     For example ◊link[chase-porn]{Chase closed hundreds of porn stars' accounts} and Wells Fargo ◊link[wells-fargo-supporter]{closed the bank account} of a supporter of medical marijuana.
 }
 
-This is the reality for certain businesses with high ◊link[chargeback-fraud]{chargebacks} rate or that exists in a legal and ◊link[porn-bank-moral]{moral} gray area. If you view it from the payment processor's point-of-view it might make sense---they're just minimizing their risk. But that's of little comfort to the ones being rejected.
+This is the reality for certain businesses with high ◊link[chargeback-fraud]{charge back} rate or that exists in a legal and ◊link[porn-bank-moral]{moral} gray area. If you view it from the payment processor's point-of-view it might make sense---they're just minimizing their risk. But that's of little comfort to those being rejected.
 
 Here are some examples of affected businesses:
 
@@ -21,7 +21,7 @@ Here are some examples of affected businesses:
     ◊li{Adult entertainment (anything remotely related to porn)}
     ◊li{Auctions}
     ◊li{Cannabis}
-    ◊li{Cryptocurrencies (ironic, don't you think?)◊sn{crypto-banks}}
+    ◊li{Cryptocurrencies (how ironic)◊sn{crypto-banks}}
     ◊li{Gambling}
 }
 
@@ -44,18 +44,18 @@ Because banks in the US are regulated ◊link[us-bank-regulations]{both on a sta
 ◊(define us-bank-regulations "https://en.wikipedia.org/wiki/Bank_regulation_in_the_United_States")
 
 ◊ndef["pot-banks"]{
-    Not having access to banks means they also have to store the cash themselves and they have trouble getting loans.
+    Not having access to banks means they also have to store the cash themselves and have trouble getting loans.
 }
 
-We're talking large amounts of money here, for example ◊link[pot-banks-no]{two businesses in Denver} generated $250,000 to $350,000 in monthly sales---all in cash. This all needs to be counted, recounted, transported and stored. Large amounts of cash needs large amounts of secure storage; which means renting warehouses and hiring armored trucks and armored guards.
+We're talking large amounts of money here, for example ◊link[pot-banks-no]{two businesses in Denver} generated $250,000 to $350,000 in monthly sales---all in cash. This all needs to be counted, recounted, transported and stored. Large amounts of cash needs large amounts of secure storage, which means renting warehouses and hiring armored trucks and armored guards.
 
-They are absolutely dependent on nearby ATMs, because the move towards cashless payments means people don't usually carry that much cash. In fact many stores have an ATM inside the store itself, to sort-of allow people to pay with credit cards.◊sn{atms}
+They are absolutely dependent on nearby ATMs, because the move towards cashless payments mean people don't usually carry that much cash. In fact many stores have an ATM inside the store itself, to sort-of allow people to pay with credit cards.◊sn{atms}
 
 ◊ndef["atms"]{
     The ATMs are run by separate businesses and usually don't have any problems with banks.
 }
 
-Not having access to digital payments hurts, but it's not all doom and gloom. Cash does work---in physical stores. There might also be (uncertain) ◊link[state-payment-cannabis]{ways to accept digital payments}, a basic requirement for online stores.
+Not having access to digital payments hurts, but there are workarounds. Cash does work---in physical stores. There might also be (uncertain) ◊link[state-payment-cannabis]{ways to accept digital payments}, a basic requirement for online stores.
 
 ◊(define pot-banks-no "https://www.nytimes.com/2018/01/04/magazine/where-pot-entrepreneurs-go-when-the-banks-just-say-no.html")
 ◊(define scat "https://en.wikipedia.org/wiki/Schr%C3%B6dinger%27s_cat")
@@ -69,13 +69,13 @@ Not having access to digital payments hurts, but it's not all doom and gloom. Ca
 
 ◊subhead{Expensive and dubious workarounds}
 
-But wait a minute, some "undesirable" companies do accept credit cards? Has the problem been solved? Unfortunately, not really.◊sn{programming-adult}
+But some "undesirable" companies do accept credit cards? Does that mean the problem has been solved? Unfortunately, not really.◊sn{programming-adult}
 
 ◊ndef["programming-adult"]{
-    There was a ◊link[programming-adult-blog]{popular blog post} detailing the struggles of porn sites accepting digital payments. The post itself has been deleted because of people ◊link[programming-adult-hn]{accusing him} of admitting to fraud (the workarounds are of dubious legality). If you're savvy you might be able to find the original post on the ◊link[wayback-machine]{Wayback machine}.
+    There was a ◊link[programming-adult-blog]{popular blog post} detailing the struggles for porn sites to accept digital payments. The post itself has been deleted because of people ◊link[programming-adult-hn]{accusing him} of admitting to fraud (the workarounds are of dubious legality). If you're savvy you might be able to find the original post on the ◊link[wayback-machine]{Wayback machine}.
 }
 
-For example porn is a business with very high rates of ◊link[chargeback-fraud]{charge backs}. Just think about it: what happens if your significant other would come across a charge to "XXX-Teens" or similar? Of course you'd exclaim "my card must've been compromised!" and you quickly call your bank and issue a charge back.
+For example porn is a business with very high rate of ◊link[chargeback-fraud]{charge backs}. Just think about it: what happens if your significant other would come across a charge to "XXX-Teens" or similar? Of course you'd exclaim "my card must've been compromised!" and quickly call your bank to freeze your card and issue a charge back.
 
 Therefore most payment processors ◊link[stripe-restricted]{explicitly forbid} porn sites, making it very difficult to accept credit cards directly.
 
@@ -92,7 +92,7 @@ Instead they have a third party request the payment on their behalf and do some 
 
 ◊(define stripe-restricted "https://stripe.com/restricted-businesses")
 
-These things are on the gray area legal wise◊sn{legal?}, so the companies that does this have high fees---VERY high fees. While regular payment processors may have ~3-4% fees, these intermediary fees can be as high as ◊strong{30%}. That's ludicrously expensive for low margin businesses.
+These things are on the gray area legal wise,◊sn{legal?} so the companies that does this have high fees---VERY high fees. While regular payment processors may have ~3-4% fees, these intermediary fees can be as high as ◊strong{30%}. That's ludicrously expensive for low margin businesses.
 
 ◊ndef["legal?"]{
     I don't know if this practice is legal or not, I just want to note they don't really have many options.
@@ -143,7 +143,7 @@ You might wonder what does it matter if these businesses disappear. Maybe you do
 
 The cannabis business is experiencing ◊link[cannabis-growth]{explosive growth}, hinting at how many people do care. Porn is another thing that is very popular---but very few would admit they watch it. I can see why some people object against them... But what's the problem with auctions? (Other than being an easy target for ◊link[rel-charge-back-fraud]{charge back fraud}.)
 
-Why should people running and using ◊strong{legal} businesses be punished for arbitrary reasons? A society that punishes people for doing something legal seems insane to me. (Yes legality is different from morality, a topic we'll revisit in the chapter about ◊link[black-markets]{black markets}.)
+Why should people running and using ◊strong{legal} businesses be punished for arbitrary reasons? A society that punishes people for doing something legal seems insane to me. (Yes, legality is different from morality, a topic we'll revisit in the chapter about ◊link[black-markets]{black markets}.)
 
 ◊(define re-education "https://www.amnesty.org/en/latest/news/2018/09/china-up-to-one-million-detained/")
 ◊(define cannabis-growth "https://www.marijuanaseo.com/cannabis-industry-statistics/")
@@ -161,7 +161,7 @@ While cryptocurrencies improves the situation today, we would really need to byp
 But there are related problems cryptocurrencies can't solve. Banks serve a very important function: they lend businesses money, and there's no good solution if they say no. It can also be more secure to let banks store large sums of money than keeping it yourself.
 
 ◊ndef["localbitcoins"]{
-    It's not as big of a problem if an exchange blocks you compared to being able to accept money in the first place, it's easier to move to another exchange. There are also ◊link[localbitcoins]{peer-to-peer} ◊link[local.bitcoin.com]{variants} where you can trade cryptocurrencies in person, bypassing the problem.
+    It's not as big of a problem if an exchange blocks you compared to being able to accept money in the first place---it's easier to move to another exchange. There are also ◊link[localbitcoins]{peer-to-peer} ◊link[local.bitcoin.com]{variants} where you can trade cryptocurrencies in person, bypassing the problem.
 }
 
 

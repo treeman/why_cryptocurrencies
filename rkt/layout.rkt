@@ -37,3 +37,7 @@
 
 (define (abs-url url)
   (format "~a/~a" root-url url))
+
+(define keywords
+  "Cryptocurrency,Bitcoin,Bitcoin Cash,Monero,Ethereum,BTC,BCH,XMR,ETH,ICO,Crypto")
+

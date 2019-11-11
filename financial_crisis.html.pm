@@ -110,7 +110,7 @@ Although the crisis originated in the U.S. the crisis spread globally.◊sn{glob
 
 ◊subhead{The bailouts}
 
-Although bad, the crisis could've been much worse. The U.S. came close to a complete financial meltdown, but without crossing the line.◊mn{music-stopped} Partly thanks to the bailouts, where the Federal Reserve bailed out banks and other private companies. The extremely risky assets---too risky for anyone else to touch---were bought up to rescue the banks which were "too big to fail".◊sn{interconnected}
+Although bad, the crisis could have been much worse. The U.S. came close to a complete financial meltdown, but without crossing the line.◊mn{music-stopped} Partly thanks to the bailouts, where the Federal Reserve bailed out banks and other private companies. The extremely risky assets---too risky for anyone else to touch---were bought up to rescue the banks which were "too big to fail".◊sn{interconnected}
 
 ◊ndef["interconnected"]{
     Or perhaps a better term would be "too interconnected to fail". The biggest fear of a big bank going bankrupt is if it brings down the rest of the economy with it, which to an extent happened when Lehman Brothers failed.
@@ -228,7 +228,7 @@ How about the other traders and the "CDO managers" who sold junk disguised as sa
 
 What ◊em{really} caused the financial crisis, and made the crisis so large? It's easy to point the finger at people who borrowed money they couldn't afford, at the bankers who helped them (or tricked them) and at the rating agencies who didn't really know what they were rating. But the greed of Wall Street shouldn't be surprising---it should instead be expected.
 
-The blame should be placed on the incentives that enabled the greed to flourish. They made the rating agencies not look too closely at the assets they were rating---otherwise the bankers would go to another rating agency and take their money with them. The people taking loans were incentivized to loan more since the house prices kept rising, making them more money. The people giving out loans were encouraged to give out as many loans as possible, because they would get a cut of every loan they gave out.◊sn{pets}
+The blame should be placed on the incentives that enabled the greed to flourish. They made the rating agencies not look too closely at the assets they were rating---otherwise the bankers would go to another rating agency and take their money with them. The people taking loans were incentivized to loan more since the house prices kept rising, making them more money. And the people giving out loans were encouraged to give out as many loans as possible, because they would get a cut of every loan they gave out.◊sn{pets}
 
 ◊ndef["pets"]{
     Strawberry pickers were given out million dollar loans despite having a tiny income, and without posting any collateral. Las Vegas strippers owned multiple houses and people were getting loans by writing their pet's name on the loan.
@@ -276,7 +276,7 @@ But as I wrote previously, the core incentives problem is unsolved and even made
 For example in 2015, several banks began selling billions in something called a "bespoke tranche opportunity"---which ◊link[bespoke-tranche-opportunity]{is just another name for a CDO} (the 3-day old halibut). The banks are also ◊link[warming-up-mortgage-bonds]{warming up to the same mortgage bonds} that burned them in 2008, while housing prices are going through the roof and people are borrowing like mad.◊sn{house-prices}
 
 ◊ndef["house-prices"]{
-    With a feeling of déjà vu the house prices have been rising globally, especially in cities, for many years now. Here In Sweden it's almost impossible for young adults to buy their first house or apartment in a city unless they get help from their parents or work for years saving up for the down-payment.
+    With a feeling of déjà vu the house prices have been rising globally, especially in cities, for many years now. Here in Sweden it's almost impossible for young adults to buy their first house or apartment in a city unless they get help from their parents or work for years saving up for the down-payment.
 }
 
 History doesn't repeat itself, but it rhymes awfully well.
@@ -289,7 +289,7 @@ History doesn't repeat itself, but it rhymes awfully well.
 
 ◊subhead{What if we used sound money?}
 
-With ◊em{sound money} nobody can manipulate the money supply. For example fiat backed by gold (as long as we trust the backers), actual gold coins or cryptocurrencies are sound money. The question is: could the financial crisis have been prevented if we used sound money?
+With ◊link[sound-money]{◊em{sound money}} nobody can manipulate the money supply. For example fiat backed by gold (as long as we trust the backers), actual gold coins or cryptocurrencies are sound money. The question is: could the financial crisis have been prevented if we used sound money?
 
 Unfortunately, probably not. The housing and bond bubble might still have happened as the banks can still create mortgage backed securities, CDOs and other complex derivatives. Sound money cannot prevent anyone from creating and selling junk.
 

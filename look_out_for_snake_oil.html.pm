@@ -2,7 +2,7 @@
 
 ◊(define-meta title "Look out for snake oil")
 ◊(define-meta subtitle "The space is new, hyped and full of misleading information")
-◊(define-meta updated "2019-04-03T19:59:58+02:00")
+◊(define-meta updated "2019-11-05T20:14:38+01:00")
 ◊(define-meta uuid "635e169f-885a-4d29-a266-4c9ef4981f47")
 
 ◊epigraph{
@@ -19,19 +19,20 @@ A snake oil salesperson sells, or promotes, a valueless or fraudulent solution. 
 
 ◊subhead{Not really cryptocurrencies}
 
-There are many projects in the cryptocurrency space which, curiously enough, aren't actually cryptocurrencies. Some even go so far as to call them cryptocurrencies even though they don't fulfil the criteria. For example I don't consider these real cryptocurrencies:
+There are many projects in the cryptocurrency space that, curiously enough, aren't actually cryptocurrencies. Some even go so far as to call them cryptocurrencies even though they don't fulfil the criteria. For example I don't consider these real cryptocurrencies:
 
 ◊ul{
-  ◊li{OneCoin and Bitconnect---they're plain pyramid schemes.◊sn{pyramid-schemes}}
-  ◊li{Ripple.}
-  ◊li{Stablecoins like ◊link[tether]{Tether}◊sn{tether} or JP Morgan's ◊link[JPM-coin]{JPM coin}.}
-  ◊li{Sidechains, for example the Lightning Network.}
-  ◊li{Smart tokens like the ERC20 tokens running on top of Ethereum.◊sn{ICOs}}
+  ◊li{OneCoin and Bitconnect---they're plain pyramid schemes◊sn{pyramid-schemes}}
+  ◊li{Ripple}
+  ◊li{Stablecoins like ◊link[tether]{Tether}◊sn{tether} or JP Morgan's ◊link[JPM-coin]{JPM coin}}
+  ◊li{Sidechains, for example the Lightning Network}
+  ◊li{Smart tokens like the ERC20 tokens running on top of Ethereum◊sn{ICOs}}
+  ◊li{Facebook's Libra}
 }
 
 Some might be useful but they don't have the same properties as cryptocurrencies like Bitcoin, and they don't work the same way.
 
-For example stablecoins depend on a third party issuer and redeemer---the very thing cryptocurrencies are meant to remove. Sidechains have fundamentally different security trade-offs and they work differently. They are built on top of---but they are not---a cryptocurrency.
+For example stablecoins depend on a third party issuer and redeemer---the very thing cryptocurrencies are meant to remove. Sidechains have fundamentally different security trade-offs and they work differently, they're built on top of---but they are not---cryptocurrencies.
 
 ◊(define tether "https://tether.to/")
 ◊(define JPM-coin "https://decryptmedia.com/5173/jp-morgan-coin-cryptocurrency")
@@ -46,7 +47,13 @@ For example stablecoins depend on a third party issuer and redeemer---the very t
 
 There's the phenomena where a technology gets hyped up and businesses all over rush to adopt it in any way they can, even if it's totally the wrong solution for their problems.
 
-Removing the consensus mechanism from a cryptocurrency, so they can just use the blockchain, removes what makes cryptocurrencies useful. The blockchain data-structure by itself is neither new nor interesting.
+Removing the consensus mechanism from a cryptocurrency, so they can just use the blockchain, removes what makes cryptocurrencies useful. The blockchain data-structure by itself is neither new nor interesting.◊sn{git}
+
+◊ndef["git"]{
+    You could say the popular version control system ◊link[git]{git} uses a blockchain, but it has nothing to do with cryptocurrencies.
+}
+
+◊(define git "https://git-scm.com/")
 
 Be aware of "the blockchain" being used only as a buzzword.
 
@@ -61,11 +68,11 @@ When evaluating cryptocurrencies here are some red flags to look out for:
     ◊li{Bad consensus algorithms or centralized governance protocols.}
     ◊li{Promises that sound too good to be true.
 
-        For example promising instant transactions and infinite scalability. While they're really compromising the decentralization and security of the network. Proof-of-stake coins are usually guilty of this.
+        For example promising instant transactions and infinite scalability, while compromising the decentralization and security of the network. ◊em{Proof-of-stake} coins are usually guilty of this.
     }
     ◊li{Propaganda.
 
-        Social media is shock-full of people---or trolls---who tries to sell snake oil to you. Slander, lies and censorship◊sn{censorship} is a daily occurrence.
+        Social media is shock-full of people---or trolls---who tries to sell snake oil to you. Slander, lies and censorship is a daily occurrence.◊sn{censorship}
     }
     ◊li{Large drawbacks.
 

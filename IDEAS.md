@@ -53,12 +53,42 @@ Ignorance is strength.”
   There are three ways to make a living in this business: be first, be smarter or cheat.
 }
 
+◊qt[#:src "The Laundromat"
+    #:author "Meryl Streep"]{
+    In this system, our system, the slaves are unaware, both of their status and of their masters, who exist in a world apart and where the shackles are hidden amidst reams of unreachable legalese.
+}
 
 # Better digital payments
 
 # A better currency
 
 <https://www.bloomberg.com/opinion/articles/2019-05-06/banks-look-safer-with-deposits>
+
+More money than anyone imagined: an explanation for why the bubble never burst 
+ See the comments for some discussion about the Fed
+<https://news.ycombinator.com/item?id=20535390>
+
+
+Read this for Fed actions
+https://news.ycombinator.com/item?id=21028770
+
+◊;https://markets.businessinsider.com/news/stocks/federal-reserve-meeting-september-interest-rate-decision-2019-9-1028535360
+
+◊; https://www.thebalance.com/current-federal-reserve-interest-rates-4770718
+
+◊; McKinsey: Half the World’s Banks Too Weak to Survive Downturn 
+◊; https://news.ycombinator.com/item?id=21320977
+
+◊; Possibly in the blind leading the blind?
+◊; https://www.svd.se/experter-flera-dolda-skal-till-slopad-minusranta
+◊; https://nypost.com/2019/07/29/trump-fails-to-see-rate-cut-would-hurt-savers/
+◊; https://news.ycombinator.com/item?id=21004068
+
+◊;https://news.ycombinator.com/item?id=21028770
+
+Spain outrageous laws etc
+<https://www.reddit.com/r/Monero/comments/dslnta/shoutout_to_use_monero_and_digital_privacy_from/>
+
 
 ## Financial crisis
 
@@ -99,6 +129,9 @@ How the FED can be a government agency, completely outside government control:
 
 
 ## Protection against government seizures
+
+https://news.ycombinator.com/item?id=21464572
+
 
 India voids 500 and 1000 rupee bills
 
