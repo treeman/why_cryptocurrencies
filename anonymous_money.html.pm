@@ -77,6 +77,20 @@ After all we don't have curtains or blinders on our windows because we do someth
 ◊(define zuckerberg-privacy-not-norm "https://www.theguardian.com/technology/2010/jan/11/facebook-privacy")
 
 
+◊subhead3{Personal security}
+
+Caring about privacy is a natural instinct---for good reason. It's not just about avoiding embarrassment, it's also for your own personal safety. In fact privacy is closely related to security:
+
+◊ol{
+  ◊li{Identity theft can ruin your life.}
+  ◊li{Criminals target rich people.
+
+      A very common advice to people who want to invest in physical gold is to not tell anyone they have it. Same with windfalls.
+  }
+  ◊li{Crime of opportunity.}
+}
+
+
 ◊subhead3{Others have important things to hide}
 
 Even if you don't think you have anything to hide, note that others do. If we give up our right to privacy then everyone have to give up theirs as well.
@@ -90,13 +104,13 @@ Here are some examples where lack of economic privacy is directly harmful for ce
 ◊ol{
   ◊li{Unwanted pregnancies.
 
-      There was a story that went viral years ago on how Target ◊link[teenage-pregnancy]{predicted a teenage pregnancy and exposed it to her father}. In a normal western household it might not be that big of a deal, but remember that ◊link[murder-family-honor]{thousands of women are killed each year} for family "honor". Often for much less than a teenage pregnancy, such as ◊link[dowry-murder]{not getting paid enough for marrying the bride}.
+      There was a story that went viral years ago on how Target ◊link[teenage-pregnancy]{predicted a teenage pregnancy and exposed it to her father}. In a normal western household it might not be that big of a deal, but ◊link[murder-family-honor]{thousands of women are killed each year} for family "honor". Often for much less than a teenage pregnancy, such as ◊link[dowry-murder]{not getting paid enough for marrying the bride}.
   }
   ◊li{Sexual preferences.
 
     While homosexuality is becoming more accepted it's still ◊link[gay-illegal]{illegal in some countries} where you might face execution. Similar to the story of the girl's pregnancy above, having a history of your purchases might expose you.
 
-    There is also nothing wrong with having a fetish and engaging in strange sexual fantasies in your own home, but maybe you don't want your neighbourhood to know you bought a vibrating horse dildo.◊sn{porn-story}
+    There's also nothing wrong with having a fetish and engaging in strange sexual fantasies in your own home, but maybe you don't want your neighbourhood to know you bought a vibrating horse dildo.◊sn{porn-story}
 
     ◊ndef["porn-story"]{
         I read a story long ago, but I can't remember if it was real or made up.
@@ -110,7 +124,9 @@ Here are some examples where lack of economic privacy is directly harmful for ce
   }
   ◊li{A cause for oppression.
 
-    In China if you're end up on the ◊link[china-social-credit]{wrong side of their social credit system}, you're banned from spending on "luxuries". If prospective business partners or customers discovers your status as a "deadbeat" you might get shunned and your hope of climbing out of your situation disappear. Keeping your economy private to outsiders would be a great help.
+    In China if you're end up on the ◊link[china-social-credit]{wrong side of their social credit system}, you're banned from spending on "luxuries". If prospective business partners or customers discovers your status as a "deadbeat" you might get shunned and your hope of climbing out of your situation disappear.
+
+    ◊;Keeping your economy private to outsiders would be a great help.
   }
 }
 
@@ -165,18 +181,6 @@ Administration Using the Full Power of the Surveillance State on Whistleblowers
 ◊link{https://news.bitcoin.com/snowden-us-seizing-my-book-revenue-is-good-for-bitcoin/}
 
 
-◊subhead{A security trade-off?}
-
-Caring about privacy is a natural instinct---for good reason. It's not just about avoiding embarrassment, it's also for your own personal safety. In fact privacy is closely related to security:
-
-◊ol{
-  ◊li{Identity theft can ruin your life.}
-  ◊li{Criminals target rich people.
-
-      A very common advice to people who want to invest in physical gold is to not tell anyone they have it. Same with windfalls.
-  }
-  ◊li{Crime of opportunity.}
-}
 
 Here people perceive a trade-off: they reason that they can sacrifice their own privacy, if that means we'll increase the national security, for the greater good. Because if nobody has any privacy, surely it's easier to catch more terrorists?
 
@@ -190,10 +194,19 @@ This reasoning, while admirable, is flawed. Removing everyones privacy will jeop
   If privacy is outlawed, only outlaws will have privacy.
 }
 
+◊;Where has this slippery slope lead us?
+
+Supporting finanical privacy makes me an extremist
+◊link{https://www.coingecko.com/buzz/erik-voorhees-supporting-financial-privacy-extremist}
+
 
 ◊subhead{Fear is the mind-killer}
 
-I think people give up their privacy in large because of ◊strong{fear}. Since the ◊link[9-11]{September 11 attacks} we've been showered with fear-inducing news and propaganda, making our minds numb. This fear of terrorism (and murderers, pedophiles and other Bogeymen) has made us go to war, consent to torture and made us give up our privacy and freedom.
+◊qt{
+    The road to hell is paved with good intentions.
+}
+
+I think people often give up their privacy because of ◊strong{fear}. Since the ◊link[9-11]{September 11 attacks} we've been showered with fear-inducing news and propaganda, making our minds numb. This fear of terrorism (and murderers, pedophiles and other Bogeymen) has made us go to war, consent to torture and made us give up our human rights.
 
 Terrorism is real and scary, there's no denying that. But our level of fear is irrational and would be better placed worrying about cars or unhealthy food---both of which kill many more people than terrorism do. Above all we should not throw out all our rights in a desperate attempt to calm our fears.
 
@@ -206,17 +219,7 @@ Fear also forces people to be as unassuming as possible---to avoid trouble. When
 ◊(define 9-11 "https://en.wikipedia.org/wiki/September_11_attacks")
 
 
-◊subhead{Boiling a frog}
-
-Where has this slippery slope lead us?
-
-Supporting finanical privacy makes me an extremist
-◊link{https://www.coingecko.com/buzz/erik-voorhees-supporting-financial-privacy-extremist}
-
-
 ◊subhead{Reclaiming our financial privacy}
-
-
 
 ◊; I don't have anything to hide
 ◊; https://www.privacytools.io/
