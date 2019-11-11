@@ -13,6 +13,22 @@
   }
 }
 
+The erosion of personal privacy is one of the many important issues in today's society. Everything we do digitally is tracked---what sites we visit, how long and what we do there. This data is then packaged and stored, waiting to be used to convince us to buy stuff or used to attack us. Even what we do with our own money is tracked and used to figure out how to separate it from us.
+
+One of the very good things about cash---regular coins or bills---is that there's very little tracking on them. You can buy things with them, or give them to someone, and nobody else needs to know about it. Unfortunately people aren't using cash as much anymore, some have even stopped accepting cash, and all the regular alternatives come with the privacy trade-off.
+
+Cryptocurrencies can help us with this---they're both digital ◊link[anon]{and anonymous}. Just like cash they're a tool to keep your privacy.◊sn{vpn}
+
+◊ndef["vpn"]{
+    For instance if you want to purchase a VPN, a domain or a VPS anonymously it's probably a good idea to use cryptocurrencies.
+}
+
+◊(define properties "/what_is_money.html#what-properties-does-good-money-have?")
+
+
+◊subhead{What is privacy and anonymity?}
+
+◊;https://invisibler.com/privacy-and-anonymity/
 
 
 ◊subhead{Why privacy matters}
@@ -63,7 +79,7 @@ After all we don't have curtains or blinders on our windows because we do someth
 
 ◊subhead3{Others have important things to hide}
 
-Even if you still don't think you have anything to hide, note that others do. If we give up our right to privacy then everyone have to give up theirs as well.
+Even if you don't think you have anything to hide, note that others do. If we give up our right to privacy then everyone have to give up theirs as well.
 
 Here are some examples where lack of economic privacy is directly harmful for certain individuals:◊sn{focus-economic}
 
@@ -107,47 +123,30 @@ As Snowden's quote in the beginning of the chapter says: just because you choose
 ◊(define china-social-credit "https://www.inkstonenews.com/china/chinas-13-million-discredited-individuals-face-discrimination-thanks-social-credit-system/article/3003319")
 
 
-◊subhead{Privacy is a human right}
+◊subhead3{Privacy is a human right}
 
-◊qt[#:src "Convention on the Rights of the Child"
-    #:url "https://www.unicef.org/child-rights-convention/convention-text"]{
-  1. No child shall be subjected to arbitrary or unlawful interference with his or her privacy, family, home or correspondence, nor to unlawful attacks on his or her honour and reputation.
-
-  2. The child has the right to the protection of the law against such interference or attacks.
-}
-
-◊qt[#:src "Convention on the Rights of the Child: The children's version"
-    #:url "https://www.unicef.org/child-rights-convention/convention-text-childrens-version"]{
-  Every child has the right to privacy. The law must protect children’s privacy, family, home, communications and reputation (or good name) from any attack.
-}
+That privacy is important is widely acknowledged. It is for example recognized as a human right by the United Nations, along with the right to food, clothing and medical care:
 
 ◊qt[#:src "Universal Declaration of Human Rights"
     #:url "https://www.un.org/en/universal-declaration-human-rights/"]{
   No one shall be subjected to arbitrary interference with his privacy, family, home or correspondence, nor to attacks upon his honour and reputation. Everyone has the right to the protection of the law against such interference or attacks.
 }
 
+Children's right to privacy is also acknowledged by UNICEF:◊sn{adult-version}
 
-◊subhead{The security trade-off}
+◊ndef["adult-version"]{
+    I was going to quote the ◊link[child-rights-adult]{grown-up version} of the children's rights, but they use a muddy language that's difficult to read.
+}
 
-Caring about privacy is a natural instinct---for good reason. It's not just about avoiding embarrassment, it's also for your own personal safety. In fact privacy is closely related to security:
+◊(define child-rights-adult "https://www.unicef.org/child-rights-convention/convention-text")
 
-◊ol{
-  ◊li{Identity theft can ruin your life.}
-  ◊li{Criminals target rich people.}
-  ◊li{Crime of opportunity.}
+◊qt[#:src "Convention on the Rights of the Child: The children's version"
+    #:url "https://www.unicef.org/child-rights-convention/convention-text-childrens-version"]{
+  Every child has the right to privacy. The law must protect children’s privacy, family, home, communications and reputation (or good name) from any attack.
 }
 
 
-◊subhead{A tool for oppression}
-
-"Fear" to force people to be as unassuming as possible, to avoid interest. We change our behavior when being watched.
-
-◊qt[#:author "George Orwell" #:src "1984" #:quote-src #t]{
-    There was of course no way of knowing whether you were being watched at any given moment. How often, or on what system, the Thought Police plugged in on any individual wire was guesswork. It was even conceivable that they watched everybody all the time.
-}
-
-
-◊subhead{We're living in the Stasi's wet dream}
+◊subhead{We're living in Stasi's wet dream}
 
 ◊ol{
   ◊li{Snowden showed...}
@@ -163,21 +162,63 @@ Administration Using the Full Power of the Surveillance State on Whistleblowers
 
 ◊link{https://www.cbc.ca/news/business/banking-information-shared-with-third-parties-1.5102931}
 
-◊; https://news.bitcoin.com/snowden-us-seizing-my-book-revenue-is-good-for-bitcoin/
+◊link{https://news.bitcoin.com/snowden-us-seizing-my-book-revenue-is-good-for-bitcoin/}
+
+
+◊subhead{A security trade-off?}
+
+Caring about privacy is a natural instinct---for good reason. It's not just about avoiding embarrassment, it's also for your own personal safety. In fact privacy is closely related to security:
+
+◊ol{
+  ◊li{Identity theft can ruin your life.}
+  ◊li{Criminals target rich people.
+
+      A very common advice to people who want to invest in physical gold is to not tell anyone they have it. Same with windfalls.
+  }
+  ◊li{Crime of opportunity.}
+}
+
+Here people perceive a trade-off: they reason that they can sacrifice their own privacy, if that means we'll increase the national security, for the greater good. Because if nobody has any privacy, surely it's easier to catch more terrorists?
+
+This reasoning, while admirable, is flawed. Removing everyones privacy will jeopardize their personal security, yet the bad guys will still have access to privacy through strong encryption.◊sn{strong-encryption}
+
+◊ndef["strong-encryption"]{
+    With strong encryption it's impossible to read what you write or access your data.
+}
+
+◊qt[#:author "Philip R. Zimmermann"]{
+  If privacy is outlawed, only outlaws will have privacy.
+}
+
+
+◊subhead{Fear is the mind-killer}
+
+I think people give up their privacy in large because of ◊strong{fear}. Since the ◊link[9-11]{September 11 attacks} we've been showered with fear-inducing news and propaganda, making our minds numb. This fear of terrorism (and murderers, pedophiles and other Bogeymen) has made us go to war, consent to torture and made us give up our privacy and freedom.
+
+Terrorism is real and scary, there's no denying that. But our level of fear is irrational and would be better placed worrying about cars or unhealthy food---both of which kill many more people than terrorism do. Above all we should not throw out all our rights in a desperate attempt to calm our fears.
+
+Fear also forces people to be as unassuming as possible---to avoid trouble. When ◊em{everything} you do is recorded, you must assume that you're always being watched.
+
+◊qt[#:author "George Orwell" #:src "1984" #:quote-src #t]{
+    There was of course no way of knowing whether you were being watched at any given moment. How often, or on what system, the Thought Police plugged in on any individual wire was guesswork. It was even conceivable that they watched everybody all the time.
+}
+
+◊(define 9-11 "https://en.wikipedia.org/wiki/September_11_attacks")
 
 
 ◊subhead{Boiling a frog}
 
 Where has this slippery slope lead us?
 
+Supporting finanical privacy makes me an extremist
+◊link{https://www.coingecko.com/buzz/erik-voorhees-supporting-financial-privacy-extremist}
+
 
 ◊subhead{Reclaiming our financial privacy}
 
 
-◊; Supporting finanical privacy makes me an extremist
-◊; https://www.coingecko.com/buzz/erik-voorhees-supporting-financial-privacy-extremist
 
-◊; I have I don't have anything to hide
+◊; I don't have anything to hide
 ◊; https://www.privacytools.io/
 
 ◊; TED talk, very good
@@ -190,7 +231,7 @@ The ◊link[great-man]{◊em{great man theory}} of history is the idea that most
     Unfortunately it doesn't seem like anything has really changed.
 }
 
-While the great man theory is interesting, wouldn't it be better to describe modern history using a ◊em{great technology theory}? For example the printing press, the internal combustion engine, the atomic bomb, the transistor and the internet have had great impact on history---greater than any single man I can think of.◊sn{invention}
+While the great man theory is interesting, wouldn't it be better to describe modern history using a ◊em{great technology theory}? For example the printing press, the internal combustion engine, the atomic bomb, the transistor and the internet have had great impact on history---greater than any single person I can think of.◊sn{invention}
 
 ◊ndef["invention"]{
     Proponents of the great man theory might say that these are inventions of a great man (or woman). To which I'd say that they weren't the result of a single person, but of many small improvements over existing tech, made by countless of people.
@@ -201,7 +242,7 @@ So instead of looking for someone to solve our privacy problems, maybe technolog
 But so far we've had to surrender our privacy to gain access to digital payments and even to our own money. Because ◊link[anon]{cryptocurrencies are anonymous}---nobody can see the transactions◊sn{bitcoin-worse} we do or know how much money we have---with cryptocurrencies we might claw back some of that privacy, and isn't that pretty great?
 
 ◊ndef["bitcoin-worse"]{
-    Note that Bitcoin is sometimes even worse for privacy than regular payments. In Bitcoin anyone you send money will see where your money came from, and might be able to trace all your money that way. Mixing services or cryptocurrencies like Monero tries to fix this problem.
+    Note that Bitcoin is sometimes even worse for privacy than regular payments. In Bitcoin anyone you send money to will see where your money came from, and might be able to trace all your money that way. Mixing services or cryptocurrencies like Monero tries to fix this problem.
 }
 
 ◊(define great-man "https://en.wikipedia.org/wiki/Great_man_theory")
