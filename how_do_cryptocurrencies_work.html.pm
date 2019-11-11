@@ -27,7 +27,7 @@ If you want to create a digital currency you only really need to keep track of h
   Honest Harry         1 000 SEK
 }
 
-When Sneaky Steve wants to send ◊tf{500 SEK} to Honest Harry the bank simply updates the ledger:
+When Sneaky Steve wants to send ◊sans-tnum{500 SEK} to Honest Harry the bank simply updates the ledger:
 
 ◊stable{
   Person      Swedish krona
@@ -65,7 +65,7 @@ It uses ◊link[public-key-cryptography]{◊em{public-key cryptography}} which a
 
 So far cryptocurrencies don't do anything new. The hard problem is how do you prevent someone from copying a coin and sending the copies the different receivers? Couldn't you just copy the hard drive to copy your coins?
 
-For example Sneaky Steve wants to buy a computer from Honest Harry and wants to pay with Bitcoin. The computer costs ◊tf{1 BTC} and the Bitcoin ledger looks like this:
+For example Sneaky Steve wants to buy a computer from Honest Harry and wants to pay with Bitcoin. The computer costs ◊sans-tnum{1 BTC} and the Bitcoin ledger looks like this:
 
 ◊stable{
   Address     Bitcoin
@@ -74,7 +74,7 @@ For example Sneaky Steve wants to buy a computer from Honest Harry and wants to 
   Honese Harry         0 BTC
 }
 
-What Sneaky Steve tries to do is send ◊tf{1 BTC} to the merchant Honest Harry and then send a copy of ◊tf{1 BTC} to his other address ◊tf{Sneaky Steve 2}. It's possible to have as many addresses as you want---a consequence of the permissionless nature of Bitcoin.
+What Sneaky Steve tries to do is send ◊sans-tnum{1 BTC} to the merchant Honest Harry and then send a copy of ◊sans-tnum{1 BTC} to his other address ◊sans-tnum{Sneaky Steve 2}. It's possible to have as many addresses as you want---a consequence of the permissionless nature of Bitcoin.
 
 ◊img[#:src "/images/double-spend.png"]{Sneaky Steve sends a digital coin both to Honest Harry and himself.}
 
@@ -87,7 +87,7 @@ If we didn't prevent this the ledger might look like this:
   Honest Harry         1 BTC     (+1 BTC)
 }
 
-We copied our coin and printed ◊tf{1 BTC} out of thin air, so now the ledger contains a negative balance. This is a form of ◊em{double spending}---spending the same coin twice.
+We copied our coin and printed ◊sans-tnum{1 BTC} out of thin air, so now the ledger contains a negative balance. This is a form of ◊em{double spending}---spending the same coin twice.
 
 This isn't really a problem with physical cash since you can't just copy gold coins or paper notes. It's not a problem for banks either since the bank can just deny one or both of the transactions.  But this is a hard problem for a digital currency that tries to remove the central authority. This is why before Bitcoin no ◊em{decentralized}◊sn{decentralized} digital currency existed.
 
@@ -535,8 +535,4 @@ What makes it all work is the incentives for the miners to work in the best inte
 ◊(define chargeback-fraud "https://en.wikipedia.org/wiki/Chargeback_fraud")
 ◊(define public-key-cryptography "https://en.wikipedia.org/wiki/Public-key_cryptography")
 ◊(define next-chapter "/look_out_for_snake_oil.html")
-
-◊; Table format
-◊(define (tf . args)
-    (sans-tnum (apply nbsp args)))
 

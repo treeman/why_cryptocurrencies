@@ -24,8 +24,8 @@
      for_the_unbanked.html)
     (better_currency.html
      financial_crisis.html
-     "A broken system"
-     "The blind leading the blind"
+     the_blind_leading_the_blind.html
+     "A defective system"
      "Anonymous Money"
      "A global currency")
     ("Brave new world"
@@ -43,8 +43,8 @@
      "Verifiable voting")
     (appendix.html
      bitcoin_whitepaper.html
-     "An intro to cryptography"
-     "Who is Satoshi Nakamoto?"
+     "An introduction to cryptography"
+     ;"Who is Satoshi Nakamoto?"
      "Is Facebook's Libra a cryptocurrency?"
      "Further research")))
 

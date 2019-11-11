@@ -15,31 +15,15 @@ def parse(url):
     with open(url, 'r') as infile:
         reader = csv.DictReader(infile)
 
-        inflation = []
         value = []
-        years = range(1960, 2019)
+        date = []
         for row in reader:
-            country = row['Country Code']
-            if country == "SWE":
-                (inflation, value) = parse_row(row, years)
-        return (inflation, value, years)
+            date.append(dt.datetime.strptime(row['Date'], '%b %Y'))
+            value.append(float(row['Federal debt']))
+        return (date, value)
 
-def parse_row(row, years):
-    val = 100.0
-    infl = []
-    value = []
-    for x in years:
-        value.append(val)
-        inflation = float(row[str(x)])
-        infl.append(inflation)
-        val -= val * inflation/100.0
-    return (infl, value)
-
-# https://data.worldbank.org/indicator/FP.CPI.TOTL?locations=US-SE-XC
-(inflation, value, years) = parse('data/API_FP.CPI.TOTL.ZG_DS2_en_csv_v2_316099.csv')
-
-for x, y in zip(years, value):
-    print(x, y)
+# https://www.investopedia.com/updates/usa-national-debt/
+(date, value) = parse('usa-debt.csv')
 
 # It's just for the high level understanding. Plus xkcd style is pretty
 plt.xkcd()
@@ -66,6 +50,12 @@ ax = fig.add_subplot(1, 1, 1)
 # ax.get_yaxis().set_major_formatter(FuncFormatter(y_fmt))
 # ax.get_xaxis().set_major_formatter(mdates.DateFormatter('%Y'))
 
+def y_fmt(y, pos):
+    return '${:,.0f}'.format(int(y/1000000))
+ax.get_yaxis().set_major_formatter(FuncFormatter(y_fmt))
+ax.get_xaxis().set_major_formatter(mdates.DateFormatter('%Y'))
+ax.set_ylabel("Debt in trillions")
+
 ax.spines['right'].set_color('none')
 ax.spines['top'].set_color('none')
 
@@ -74,10 +64,12 @@ ax.yaxis.set_tick_params(width=2)
 
 # ax.set_xticks([dt.date(y, 1, 1) for y in [1970, 1980, 1990, 2000, 2010, 2018]])
 #ax.set_yticks((0, 25, 50, 75, 100, 125))
-ax.set_xlim(1960, 2020)
-ax.set_xticks((1960, 1970, 1980, 1990, 2000, 2010, 2018))
-ax.set_ylim(0, 105)
-ax.set_yticks((0, 20, 40, 60, 80, 100))
+ax.set_xlim(dt.datetime(1965, 01, 01), dt.datetime(2019, 01, 31))
+#ax.set_xticks([dt.datetime(y, 01, 01) for y in [1966, 1970, 1975, 1980, 1985, 1990, 1995, 2000, 2005, 2010, 2015, 2019]])
+ax.set_xticks([dt.datetime(y, 01, 01) for y in [1966, 1980, 1990, 2000, 2010, 2019]])
+ax.set_xticks([dt.datetime(y, 01, 01) for y in [1970, 1980, 1990, 2000, 2010, 2019]])
+ax.set_ylim(0, 25000000)
+#ax.set_yticks((0, 20, 40, 60, 80, 100))
 
 # #396AB1
 # #DA7C30
@@ -88,30 +80,10 @@ ax.set_yticks((0, 20, 40, 60, 80, 100))
 # #922428
 # #948B3D
 
-par1 = ax.twinx()
-par1.set_ylim(-2, 15)
-par1.set_ylabel("Inflation rate")
-def y_fmt(y, pos):
-    return '{:,.1f}%'.format(y)
-par1.get_yaxis().set_major_formatter(FuncFormatter(y_fmt))
-
-par1.spines['top'].set_color('none')
-par1.yaxis.set_tick_params(width=2)
-
-ax.set_ylabel("Value")
-
-#print(value)
-
 # For different y-axis:
 # https://stackoverflow.com/questions/9103166/multiple-axis-in-matplotlib-with-different-scales
-p1, = ax.plot(years, value, '#CC2529', label='Value')
-p2, = par1.plot(years, inflation, '#6B4C9A', label='Inflation rate')
+ax.plot(date, value, mycol, label='Value')
 
-ax.yaxis.label.set_color(p1.get_color())
-par1.yaxis.label.set_color(p2.get_color())
-
-ax.legend(handles=[p1, p2], loc='best')
-
-plt.savefig('inflation.svg', format="svg", transparent=True, bbox_inches='tight')
+plt.savefig('usa-debt.svg', format="svg", transparent=True, bbox_inches='tight')
 print "done"
 
