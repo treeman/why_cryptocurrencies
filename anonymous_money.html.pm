@@ -21,12 +21,14 @@ Cryptocurrencies can help us with this---they're both digital ◊link[anon]{and 
 
 ◊ndef["vpn"]{
     For instance if you want to purchase a VPN, a domain or a VPS anonymously it's probably a good idea to use cryptocurrencies.
-}
 
-◊(define properties "/what_is_money.html#what-properties-does-good-money-have?")
+    But remember that most cryptocurrencies, Bitcoin included, are ◊link[anon]{only pseudo-anonymous} and can be traced.
+}
 
 
 ◊subhead{What is privacy and anonymity?}
+
+◊strong{Privacy} concerns content, for example text messages you send to your friends. Anonymity refers to 
 
 ◊;https://invisibler.com/privacy-and-anonymity/
 
@@ -38,14 +40,14 @@ Privacy and anonymity is an important issue in the modern world and there are co
 Why would you want to stay anonymous? What are you hiding? Are you criminal?◊sn{summary-discussion}
 
 ◊ndef["summary-discussion"]{
-    Privacy discussions can often be summarized to:
+    Privacy discussions can often be summarized as:
 
     ◊span[#:class "talking"]{
       ◊trow{Why do I need privacy? I have nothing to hide.}
       ◊trow{Then pull your pants down, give me a dickpick, your email password and your credit card number.}
     }
 
-    I can't promise I'll do better, but I'll try. At least I don't have anyone except myself to argue with, if that makes a difference...
+    I can't promise I'll do better, but I'll try.
 }
 
 ◊(define (trow . args)
@@ -79,10 +81,13 @@ After all we don't have curtains or blinders on our windows because we do someth
 
 ◊subhead3{Personal security}
 
-Caring about privacy is a natural instinct---for good reason. It's not just about avoiding embarrassment, it's also for your own personal safety. In fact privacy is closely related to security:
+Caring about privacy is a natural instinct---for good reason. It's not just about avoiding embarrassment, it's also for your own personal safety. In fact privacy is closely related to security, your password and your credit card number are obvious examples, but there are more:
 
 ◊ol{
-  ◊li{Identity theft can ruin your life.}
+  ◊li{Identity theft can ruin your life.
+
+      When someone assumes your identity, and use it to issue credit cards or promote scams, it can ruin your credit score, cost you millions, and force you to abandon your job and your house. Using only your private information people can literally ◊link[identity-theft-story]{take over your life}.
+  }
   ◊li{Criminals target rich people.
 
       The most important advice if you win the lottery is to ◊link[windfall]{not tell anyone}---people will ◊link[windfall-happy]{target you like vultures}. The same advice is given to people who want to invest in physical gold, for similar reasons.
@@ -95,13 +100,14 @@ Caring about privacy is a natural instinct---for good reason. It's not just abou
   }
 }
 
+◊(define identity-theft-story "https://www.forbes.com/sites/laurashin/2014/11/18/someone-had-taken-over-my-life-an-identity-theft-victims-story/")
 ◊(define windfall "https://www.reddit.com/r/personalfinance/wiki/windfall")
 ◊(define windfall-happy "https://www.reddit.com/r/AskReddit/comments/24vo34/whats_the_happiest_5word_sentence_you_could_hear/chb4v05/?context=1")
 
 
 ◊subhead3{Others have important things to hide}
 
-Even if you don't think you have anything to hide, note that others do. If we give up our right to privacy then everyone have to give up theirs as well.
+Even if you don't think you have anything to hide, others do. If we give up our right to privacy then everyone have to give up theirs as well.
 
 Here are some examples where lack of economic privacy is directly harmful for certain individuals:◊sn{focus-economic}
 
@@ -260,4 +266,5 @@ But so far we've had to surrender our privacy to gain access to digital payments
 ◊(define shoulders-of-giants "https://en.wikipedia.org/wiki/Standing_on_the_shoulders_of_giants")
 ◊(define signal "https://www.signal.org/")
 ◊(define anon "/properties_of_a_cryptocurrency.html#anonymous")
+◊(define properties "/what_is_money.html#what-properties-does-good-money-have?")
 
