@@ -25,7 +25,7 @@
     (better_currency.html
      financial_crisis.html
      the_blind_leading_the_blind.html
-     "A defective system"
+     a_defective_system.html
      anonymous_money.html
      "A global currency")
     ("Brave new world"
