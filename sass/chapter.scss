@@ -119,6 +119,21 @@ $list-p-margin: 0.6em;
         margin-left: -2em;
         padding-right: 1.5em;
     }
+
+    // Description lists
+    dl {
+        font-size: 95%;
+        line-height: 1.35;
+        margin-bottom: 1rem;
+    }
+    dl > dt {
+        font-weight: bold;
+        margin-left: 1em;
+    }
+    dl > dd {
+        margin-left: 2em;
+        margin-bottom: $list-p-margin;
+    }
 }
 
 .chapter > .subnav {

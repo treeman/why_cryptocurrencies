@@ -28,7 +28,17 @@ Cryptocurrencies can help us with this---they're both digital ◊link[anon]{and 
 
 ◊subhead{What is privacy and anonymity?}
 
-◊strong{Privacy} concerns content, for example text messages you send to your friends. Anonymity refers to 
+It's easy to mix-up the terms "privacy" and "anonymity". They're related, but different:
+
+◊dl{
+  ◊dt{Privacy}
+  ◊dd{Concerns content, for example text messages you send to your friends.}
+
+  ◊dt{Anonymity}
+  ◊dd{Refers to your identity, for example that I, Jonas, received the text messages.}
+}
+
+In practice they often overlap. For example if the contents of all of my email were known, it would be a breach of my privacy. But it would also affect my anonymity, since my name is included everywhere.
 
 ◊;https://invisibler.com/privacy-and-anonymity/
 
