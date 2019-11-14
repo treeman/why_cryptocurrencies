@@ -34,27 +34,3 @@ In this section we'll focus on benefits of using cryptocurrencies as money and c
 ◊(define fake-gold "https://www.reuters.com/article/us-gold-swiss-fakes-exclusive/exclusive-fake-branded-bars-slip-dirty-gold-into-world-markets-idUSKCN1VI0DD?utm_source=reddit.com")
 ◊(define comparing-props "/are_cryptocurrencies_money.html#comparing-properties-with-other-forms-of-money")
 
-
-◊; https://www.youtube.com/watch?v=lbarjpJhSLw
-◊; <https://www.bloomberg.com/opinion/articles/2019-05-06/banks-look-safer-with-deposits>
-
-◊; Fed cut rates with 7-3 vote
-◊; https://news.ycombinator.com/item?id=21008239
-
-◊; Why the Federal Reserve is pouring money into the financial system
-◊;https://news.ycombinator.com/item?id=21004068
-
-◊; Modern Monetary Theory (MMT)
-◊; https://www.taxjustice.net/2019/03/05/the-magic-money-tree-from-modern-monetary-theory-to-modern-tax-theory/
-
-◊; Cashing In: How to Make Negative Interest Rates Work 
-◊; <https://news.ycombinator.com/item?id=20079686>
-
-◊; Germany in Uproar as Negative Rates Threaten Saving Obsession 
-◊; <https://news.ycombinator.com/item?id=20792765>
-
-◊; 33 AD example
-◊; https://www.businessinsider.com/qe-in-the-financial-crisis-of-33-ad-2013-10?r=US&IR=T&IR=T
-
-◊; https://fortune.com/2019/09/26/the-feds-repo-market-bailout-is-a-sign-of-deeper-problems-that-are-getting-worse-over-time/
-
