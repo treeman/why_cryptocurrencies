@@ -30,7 +30,7 @@
      "A global currency")
     ("Brave new world"
      "Separation of money and state"
-     swiss_bank_account_in_your_pocket.html
+     "A swiss bank account in your pocket"
      "Darknet markets"
      "Protection against government seizures"
      "The cashless dystopia")
