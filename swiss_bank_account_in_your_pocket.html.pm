@@ -7,13 +7,15 @@
 
 ◊subhead{The myth of a swiss bank account}
 
-
-◊subhead{An actual swiss bank account in your pocket}
-
-Maybe you'll say this is extremely unwanted as it would enable tax-fraud on a global scale. And you'd have a point, there's just one issue: it's already possible.
+◊ol{
+    ◊li{Describe the myth}
+    ◊li{Cryptocurrencies is an actual swiss bank account in your pocket}
+}
 
 
 ◊subhead{The Panama Papers}
+
+Maybe you'll say this is extremely unwanted as it would enable tax-fraud on a global scale. And you'd have a point, there's just one issue: it's already possible.
 
 Let's see what the president of the United States has to say about tax evasion:
 
@@ -26,9 +28,11 @@ Let's see what the president of the United States has to say about tax evasion:
 ◊(define panama-papers "https://www.icij.org/investigations/panama-papers/")
 ◊(define panama-papers-doc "https://www.panamapapersdoc.com/")
 
+◊; https://en.wikipedia.org/wiki/Panama_Papers
+
 
 ◊subhead{Inequality}
 
-◊; https://en.wikipedia.org/wiki/Panama_Papers
+This tax evasion is only available for the very rich.
 
 
