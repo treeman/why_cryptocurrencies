@@ -2,7 +2,7 @@
 
 ◊(define-meta title "Freezing of merchant accounts")
 ◊(define-meta subtitle "The account your business relies on can be frozen at any time")
-◊(define-meta updated "2019-05-29T06:35:29+02:00")
+◊(define-meta updated "2019-11-06T20:49:28+01:00")
 ◊(define-meta uuid "ac14d4a1-3796-4f5b-9350-b56e796625a1")
 
 ◊epigraph{
@@ -45,16 +45,14 @@ Don't worry if you don't know what a TPS report is, the point is you got your sa
 ◊ndef["6-months"]{
     You think 6 months is too long? PayPal freezes your account for 180 days by default. There are also several stories of PayPal ◊strong{never} releasing the funds.
 
-    This is possible because PayPal isn't really a bank (in most countries) and can get away with more than regulated banks can.
+    This is possible because PayPal isn't really a bank (in many countries) and can get away with more than regulated banks can.
 }
 
 Now imagine the consequences.
 
-Would you be able to pay your rent? Buy food for yourself and your kids? Repair your fridge if it breaks? Given that ◊link[american-savings]{only 39% of Americans have enough savings to cover a $1,000 emergency} you should be very glad if you can honestly answer yes to these questions. Many would panic if their salary is just a little bit late, let alone half a year.
+Would you be able to pay your rent? Buy food for yourself and your kids? Repair your fridge if it breaks? Given that ◊link[american-savings]{only 39% of Americans have enough savings to cover a $1,000 emergency} you should be glad if you can honestly answer yes to these questions. Many would panic if their salary is just a little bit late, let alone half a year.
 
-Yet this has played out ◊link[rel-examples]{again and again} for businesses all over the world who have gotten their account frozen for an unknown amount of time for arbitrary or unknown reasons.
-
-Actually, let me take that back. What happens is actually much worse---businesses also get ◊strong{funds} frozen. It's like if your employer would freeze your credit card, your savings account and hold off your salary.
+Yet this has played out ◊link[rel-examples]{again and again} for businesses all over the world who have gotten their account frozen for an unknown amount of time for arbitrary or unknown reasons.  Actually, let me take that back. What happens is actually much worse---businesses also get ◊strong{funds} frozen. It's like if your employer would freeze your credit card, your savings account and hold off your salary.
 
 Imagine what you would do now, without a salary and without your savings...
 
@@ -75,12 +73,12 @@ Just to be a little gratuitous and to drive home my point on how bad this can be
     #:date "Sep 2010"]{
     There’s over 600000 euro in there. Money I was planning on investing in the new company.
 
-    ...
+    [...]
 
     I withdraw everything from paypal every week. They limited my account just as sales started spiking, so this money has accumulated since they limited the account.
 }
 
-They didn't just freeze your account, they're actively making it worse by confiscating future payments as well!◊sn{lawsuits}
+They didn't just freeze the account, they're making it worse by confiscating future payments as well!◊sn{lawsuits}
 
 ◊ndef["lawsuits"]{
     Even if you get all your money back eventually, you still have to deal with ruined reputation, missed opportunities and costumers suing you for delayed deliveries.

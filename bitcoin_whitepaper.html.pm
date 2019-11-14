@@ -1,6 +1,6 @@
 #lang pollen
 
-◊(define-meta title "The Bitcoin White paper")
+◊(define-meta title "The Bitcoin white paper")
 ◊(define-meta subtitle "What started it all")
 ◊(define-meta updated "2019-04-03T19:59:59+02:00")
 ◊(define-meta uuid "581c4917-d862-49cb-9d01-495a9106081b")
@@ -18,7 +18,7 @@ Note that the white paper was created in 2008 and some terminology and implement
 
 I'm sad I have to include this but there have been suggestions to ◊link[alter-wp]{alter the white paper hosted on bitcoin.org}. Rewriting an academic paper and rewriting Bitcoin's history for personal business interests is of course completely unacceptable, but here we are.
 
-Therefore you might want to make sure you're reading the original unaltered white paper. There are those who ◊link[track-alterations]{try to keep track} of the different versions found online but it's always best to do it yourself. You can compare the pdf's sha256 hash with this:
+Therefore you might want to make sure you're reading the original unaltered white paper. There are those who ◊link[track-alterations]{try to keep track} of the different versions found online but it's always best to do it yourself. You can compare the pdf's SHA-256 hash with this:
 
 ◊code{b1674191a88ec5cdd733e4240a81803105dc412d6c6708d53ab94fc248f4f553}
 

@@ -2,7 +2,7 @@
 
 ◊(define-meta title "About the book")
 ◊(define-meta subtitle "A perspective beyond the hype")
-◊(define-meta updated "2019-04-03T20:19:29+02:00")
+◊(define-meta updated "2019-11-05T07:21:04+01:00")
 ◊(define-meta uuid "7ea80c78-aff2-46a1-8d05-1253d7033dc6")
 
 Whenever the topic of cryptocurrencies---where Bitcoin and Ethereum are the most known---come up in conversations they're almost always misunderstood or dismissed.
@@ -62,16 +62,16 @@ Of course everything new brings positive and negative aspects with it. It's up t
 
 ◊subhead{What this book isn't}
 
-There are many problems with cryptocurrencies as they exist today. This isn't an attempt to explain them away or to look at work being done to address them. For completeness here are some of the biggest problems as I see it:
+There are many problems with cryptocurrencies as they exist today. This isn't an attempt to dismiss them or look at work being done to address them. For the interested here are some of the biggest problems as I see it:
 
 ◊ul{
   ◊li{How can a cryptocurrency scale globally?}
   ◊li{How can payments be made secure enough for retail, in a couple of seconds?}
-  ◊li{Bitcoin uses a public ledger where all payments are visible, what about privacy? ◊sn{monero}}
+  ◊li{Bitcoin uses a public ledger where all payments are visible---what about privacy? ◊sn{monero}}
   ◊li{User experience is far from the level of VISA or Apple Pay.}
 }
 
-A problem centric view is excellent for an engineer or a problem solver but it also limit foresight. For example the computer had many problems and drawbacks when first introduced but today we ridicule statements like:
+A problem-centric view is great for an engineer or a problem solver but it also limits foresight. For example the computer had many problems and drawbacks when first introduced, but today we ridicule statements like these:
 
 ◊qt[#:author "Thomas Watson, president of IBM" #:date 1943]{
     I think there is a world market for maybe five computers
@@ -83,7 +83,7 @@ A problem centric view is excellent for an engineer or a problem solver but it a
 
 Instead of putting on blinders and getting stuck at these problems, which I believe can be addressed, we'll focus on the potential cryptocurrencies have. Only with this vantage point can we see if the problems are worth working on, or if we instead should scrap the whole idea.
 
-This is not a deep dive on a technical level. Neither will we focus on a single implementation---Bitcoin is the first cryptocurrency but there are hundreds more.◊sn{cryptos}
+This isn't a deep dive on a technical level. Neither will we focus on a single implementation---Bitcoin is the first cryptocurrency but there are hundreds more.◊sn{cryptos}
 
 ◊center{
   ◊strong[#:style "font-size: 1.1rem"]{And of course none of this is investment advice.}
@@ -110,7 +110,7 @@ This is not a deep dive on a technical level. Neither will we focus on a single 
 
 
 ◊ndef["monero"]{
-    Bitcoin, like almost all cryptocurrencies, use a public ledger where you can lookup how many coins any address has and you can also trace all coins to the beginning of time.
+    Bitcoin, like almost all cryptocurrencies, uses a public ledger where you can lookup how many coins any address has and you can also trace all coins to the beginning of time.
 
     There are cryptocurrencies like ◊link[Monero]{Monero} which hides inputs, outputs and amounts for all transactions making this impossible.
 }

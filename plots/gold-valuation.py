@@ -41,11 +41,21 @@ closing_price = [1281.65, 1296.50, 1151.70, 1060.20, 1199.25, 1201.50, 1664.00, 
 # It's just for the high level understanding. Plus xkcd style is pretty
 plt.xkcd()
 
+mycol = '#343535'
+
+plt.rcParams["font.family"] = "Concourse T4"
+plt.rcParams["axes.linewidth"] = 2
+plt.rcParams["axes.edgecolor"] = mycol
+plt.rcParams["text.color"] = mycol
+plt.rcParams["xtick.color"] = mycol
+plt.rcParams["ytick.color"] = mycol
+plt.rcParams["ytick.minor.width"] = 0
+
 # Removes remaining white lines after xkcdifying the plot.
 # Changing the background didn't fix it.
 mpl.rcParams['path.effects'] = [patheffects.withStroke(linewidth=0)]
 
-fig = plt.figure()
+fig = plt.figure(figsize=(7, 5))
 ax = fig.add_subplot(1, 1, 1)
 
 def y_fmt(y, pos):
@@ -56,6 +66,9 @@ ax.get_yaxis().set_major_formatter(FuncFormatter(y_fmt))
 ax.spines['right'].set_color('none')
 ax.spines['top'].set_color('none')
 
+ax.xaxis.set_tick_params(width=2)
+ax.yaxis.set_tick_params(width=2)
+
 # ax.set_xticks([dt.date(y, 1, 1) for y in [1970, 1980, 1990, 2000, 2010, 2018]])
 ax.set_xticks([1970, 1980, 1990, 2000, 2010, 2018])
 ax.set_yticks((0, 500, 1000, 1500, 2000))
@@ -63,6 +76,6 @@ ax.set_yticks((0, 500, 1000, 1500, 2000))
 plt.plot(years, closing_price, '#343535')
 # plt.plot(date, price, '#343535')
 
-plt.savefig('gold-valuation.svg', format="svg", transparent=True)
+plt.savefig('gold-valuation.svg', format="svg", transparent=True, bbox_inches='tight')
 print "done"
 
