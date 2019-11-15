@@ -236,8 +236,11 @@ Terrorism is real and scary, there's no denying that. But our level of fear is i
 
 Fear also forces people to be as unassuming as possible---to avoid trouble. When ◊em{everything} you do is recorded, you must assume that you're always being watched.
 
-◊qt[#:author "George Orwell" #:src "1984" #:quote-src #t]{
-    There was of course no way of knowing whether you were being watched at any given moment. How often, or on what system, the Thought Police plugged in on any individual wire was guesswork. It was even conceivable that they watched everybody all the time.
+◊qt[#:author "George Orwell"
+    #:src "1984"
+    #:quote-src #t
+    #:url 1984-book]{
+  There was of course no way of knowing whether you were being watched at any given moment. How often, or on what system, the Thought Police plugged in on any individual wire was guesswork. It was even conceivable that they watched everybody all the time.
 }
 
 ◊(define 9-11 "https://en.wikipedia.org/wiki/September_11_attacks")
