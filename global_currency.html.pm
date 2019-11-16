@@ -155,6 +155,8 @@ You don't have to physically leave the country to benefit from storing your weal
 
 ◊subhead{Hyperinflation is real}
 
+Cryptocurrency skeptics often ask why anyone would ever want to use money such high volatility. Daily swings of 5% in Bitcoin are almost expected and larger changes are common.
+
 Some examples of hyperinflation:
 
 ◊ol{
