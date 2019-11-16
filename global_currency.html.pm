@@ -155,23 +155,45 @@ You don't have to physically leave the country to benefit from storing your weal
 
 ◊subhead{Hyperinflation is real}
 
-Cryptocurrency skeptics often ask why anyone would ever want to use money such high volatility. Daily swings of 5% in Bitcoin are almost expected and larger changes are common.
+Cryptocurrency skeptics often ask why anyone would ever want to use money such high volatility. They have a point---daily swings of 5% in Bitcoin are almost expected and larger changes are common---but that's nothing in the face of ◊link[hyperinflation]{◊em{hyperinflation}}.
 
-Some examples of hyperinflation:
+Venezuela had a monthly inflation of 815,194%, in May 2019 alone. It's a huge number that means price would double in less than two days---every day. For those living through it they would prefer ◊em{anything} else; be it gold, U.S. dollar, Bitcoin, clothes, food---you name it.
 
-◊ol{
-    ◊li{Germany 1920s}
-    ◊li{Hungary 1946}
-    ◊li{Yugoslavia 1990s}
-    ◊li{Zimbabwe 2004--2009}
-    ◊li{Venezuela 2016--now}
+It's easy to think that hyperinflation is a thing of the past, or that it only affects poor countries far away. But according to the ◊link[hanke-krus]{Hanke-Krus hyperinflation table} we've had 55 cases of hyperinflation since 1920, with 31 of them after 1990 (roughly half related to the collapase of the Soviet Union).◊sn{line-inflation} Some famous examples include:
+
+
+◊section[#:class "inflation-examples"]{
+    ◊inflation["Germany"
+               #:date "1920s"]{
+        In Germany after the first world war, when inflation was at its height prices doubled in less than four days. It's not the worst case of hyperinflation, but it might be the most well-known, maybe because it happened to a powerful western nation and it's related to the world wars.
+    }
+    ◊inflation["Hungary"
+               #:date "1945--1946"]{
+        The worst hyperinflation in history ◊link[hungary-inflation]{happened in Hungary}, when they had to repay the cost of the second world war. There prices doubled in only 15 hours.◊sn{inflation-fascination}
+    }
+    ◊inflation["Zimbabwe"
+               #:date "2004--2009"]{
+        The other example of hyperinflation in the 21th century is in Zimbabwe. At its worst prices doubled in just over 24 hours. While things settled down, Zimbabwe is ◊link[zimbabwe-trouble]{once again in trouble} and the ◊link[imf-inflation]{International Monetary Fund projects} an inflation of 161% for 2019.
+    }
 }
 
-◊; Inflation of the world.
-◊; https://www.imf.org/external/datamapper/PCPIPCH@WEO/WEOWORLD/VEN/ARG/SDN/IRN
+◊ndef["inflation-fascination"]{
+    I'm always fascinated of the hyperinflation stories.
+}
 
-◊; Made in 2013, a list of countries which have had hyperinflation.
-◊; https://www.cato.org/sites/cato.org/files/pubs/pdf/hanke-krus-hyperinflation-table-may-2013.pdf
+◊(define (inflation title #:date date . text)
+   `(div ((class "example"))
+      (div ((class "header"))
+        (h3 ,title)
+        (div ((class "date")) ,date))
+      (div ((class "txt")) ,@text)))
+
+
+◊(define zimbabwe-trouble "https://nypost.com/2019/10/10/zimbabwe-struggles-with-hyperinflation-its-a-nightmare/")
+◊(define hanke-krus "https://www.cato.org/sites/cato.org/files/pubs/pdf/hanke-krus-hyperinflation-table-may-2013.pdf")
+◊(define venezuela-inflation "https://tradingeconomics.com/venezuela/inflation-cpi")
+◊(define imf-inflation "https://www.imf.org/external/datamapper/PCPIPCH@WEO/WEOWORLD/VEN/ARG/SDN/ZWE")
+◊(define hungary-inflation "https://www.amusingplanet.com/2018/08/hungarys-hyperinflation-worst-case-of.html")
 
 Why are Venezuelans seeking refuge in cryptos?
 ◊link{https://www.bbc.com/news/business-47553048}
@@ -182,4 +204,21 @@ Historically how many currencies have gone under to hyperinflation?
 
 ◊link{https://cryptoslate.com/venezuelan-crisis-cryptocurrency-privacy/}
 ◊link{https://www.nytimes.com/2019/02/23/opinion/sunday/venezuela-bitcoin-inflation-cryptocurrencies.html}
+
+Although hyperinflation is the extreme case, high inflation rate can still be problematic. ◊link[imf-inflation]{According to the International Monetary Fund} Argentina has an inflation rate of 54.4% and Sudan has 50.4%.
+
+◊ndef["line-inflation"]{
+    Hyperinflation is defined as a monthly inflation exceeding 50%.
+}
+
+For example ◊link[imf-inflation]{according to the International Monetary Fund} the 
+
+◊; Zimbabwe still has an inflation of 161.8%!
+◊;Although hyperinflation is the extreme case, high inflation rate can still be problematic. ◊link[imf-inflation]{According to the International Monetary Fund}, Argentina has the second highest inflation in 2019 with 54.4% and Sudan the third highest with 50.4%. That's still a very high inflation which will eat away wealth quickly with certainty, while the cryptocurrency volatility goes both up and down.
+
+◊(define hyperinflation "https://www.thebalance.com/what-is-hyperinflation-definition-causes-and-examples-3306097")
+
+
+◊subhead{Cryptocurrency benefits are available to all}
+
 

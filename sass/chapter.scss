@@ -626,6 +626,27 @@ table.crypto-eval {
     }
 }
 
+.inflation-examples .example {
+    //margin: 0 0.5em 1em 0.5em;
+    margin: 1em 0;
+
+    h3 {
+        margin-top: 0;
+    }
+    .header {
+        font-size: 1.1rem;
+        @extend %sans-serif;
+        line-height: 1;
+        display: flex;
+    }
+    .date {
+        margin-left: 0.5rem;
+    }
+    .txt {
+        margin-left: 0.5rem;
+    }
+}
+
 .wikileaks {
     padding-top: 1em;
     margin-bottom: 1em;
