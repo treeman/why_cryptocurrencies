@@ -18,6 +18,7 @@ JPMorgan: We Believe The Dollar Could Lose Its Status As World's Reserve Currenc
 
 ◊qt[#:author "Chris Troutner"
     #:src "Twitter"
+    #:date "21 Jun 2019"
     #:url "https://twitter.com/christroutner/status/1142080363981709313"]{
   I wanted to help someone in #Venezuela , so I'm tutoring a novice #JavaScript developer as he writes #opensource software. I pay him $100 per week. It's making a huge difference in his life. With #BitcoinCash we don't have to consider what governments or banks think about it.
 }
@@ -188,7 +189,11 @@ It's easy to think that hyperinflation is a thing of the past, or that it only a
         (div ((class "date")) ,date))
       (div ((class "txt")) ,@text)))
 
-In each case, hyperinflation is an economic disaster. Hoarding causes shortages, with even basic goods like food becoming hard to find. Importing goods become impossible and companies go out of business, causing mass unemployment. Tax revenue falls, causing government services to fail.
+In each case, hyperinflation is an economic disaster. Hoarding causes shortages, with even basic goods like food becoming hard to find. Importing goods become impossible and companies go out of business, causing mass unemployment. When tax revenue falls, government services fall with them.◊sn{regular-inflation-too}
+
+◊ndef["regular-inflation-too"]{
+    Although hyperinflation is the extreme case, high inflation rate can still be problematic. ◊link[imf-inflation]{According to the International Monetary Fund} Argentina has an inflation rate of 54.4% and Sudan has 50.4%.
+}
 
 
 ◊(define zimbabwe-trouble "https://nypost.com/2019/10/10/zimbabwe-struggles-with-hyperinflation-its-a-nightmare/")
@@ -202,20 +207,35 @@ In each case, hyperinflation is an economic disaster. Hoarding causes shortages,
 ◊link{https://cryptoslate.com/venezuelan-crisis-cryptocurrency-privacy/}
 ◊link{https://www.nytimes.com/2019/02/23/opinion/sunday/venezuela-bitcoin-inflation-cryptocurrencies.html}
 
-Although hyperinflation is the extreme case, high inflation rate can still be problematic. ◊link[imf-inflation]{According to the International Monetary Fund} Argentina has an inflation rate of 54.4% and Sudan has 50.4%.
 
 ◊ndef["line-inflation"]{
     Hyperinflation is defined as a monthly inflation exceeding 50%.
 }
 
-For example ◊link[imf-inflation]{according to the International Monetary Fund} the 
-
-◊; Zimbabwe still has an inflation of 161.8%!
-◊;Although hyperinflation is the extreme case, high inflation rate can still be problematic. ◊link[imf-inflation]{According to the International Monetary Fund}, Argentina has the second highest inflation in 2019 with 54.4% and Sudan the third highest with 50.4%. That's still a very high inflation which will eat away wealth quickly with certainty, while the cryptocurrency volatility goes both up and down.
-
 ◊(define hyperinflation "https://www.thebalance.com/what-is-hyperinflation-definition-causes-and-examples-3306097")
+
 
 
 ◊subhead{Cryptocurrency benefits are available to all}
 
+Perhaps the best feature of cryptocurrencies is that they can be used by anyone, anywhere in the world and they're always available.◊sn{uptime}
+
+◊ndef["uptime"]{
+    According to ◊link[bitcoinuptime]{bitcoinuptime} the Bitcoin network has been down less than 15 hours since it's creation in 2009. That's an uptime of more than 99.98%.
+}
+
+For example the banks in Lebanon closed down during heavy protests.
+
+
+◊qt[#:author "Nassim Nicholas Taleb"
+    #:src "Twitter"
+    #:date "24 Oct 2019"
+    #:url "https://twitter.com/nntaleb/status/1187467132646199300"]{
+The most potent case for cryptocurrencies: banks are never there when you need them. And they are trying to bully the public so they avoid accountability and profit disbursements.
+Bankers are legal crooks.
+#bottomup #bitcoin
+#Lebanon
+}
+
+◊(define bitcoinuptime "http://bitcoinuptime.com/")
 
