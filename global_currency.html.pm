@@ -157,7 +157,7 @@ You don't have to physically leave the country to benefit from storing your weal
 
 Cryptocurrency skeptics often ask why anyone would ever want to use money such high volatility. They have a point---daily swings of 5% in Bitcoin are almost expected and larger changes are common---but that's nothing in the face of ◊link[hyperinflation]{◊em{hyperinflation}}.
 
-Venezuela had a monthly inflation of 815,194%, in May 2019 alone. It's a huge number that means price would double in less than two days---every day. For those living through it they would prefer ◊em{anything} else; be it gold, U.S. dollar, Bitcoin, clothes, food---you name it.
+Venezuela had a monthly inflation of 815,194%, in May 2019 alone. It's a huge number that means price would double in less than two days---every day. For those living through it they would prefer ◊em{anything} else; be it gold, U.S. dollar, ◊link[venezuela-bitcoin]{Bitcoin}, clothes, food---you name it.
 
 It's easy to think that hyperinflation is a thing of the past, or that it only affects poor countries far away. But according to the ◊link[hanke-krus]{Hanke-Krus hyperinflation table} we've had 55 cases of hyperinflation since 1920, with 31 of them after 1990 (roughly half related to the collapase of the Soviet Union).◊sn{line-inflation} Some famous examples include:
 
@@ -178,7 +178,7 @@ It's easy to think that hyperinflation is a thing of the past, or that it only a
 }
 
 ◊ndef["inflation-fascination"]{
-    I'm always fascinated of the hyperinflation stories.
+    I'm always fascinated by the hyperinflation stories. In Hungary for example the government ran out of good paper to print the new money on.
 }
 
 ◊(define (inflation title #:date date . text)
@@ -188,19 +188,16 @@ It's easy to think that hyperinflation is a thing of the past, or that it only a
         (div ((class "date")) ,date))
       (div ((class "txt")) ,@text)))
 
+In each case, hyperinflation is an economic disaster. Hoarding causes shortages, with even basic goods like food becoming hard to find. Importing goods become impossible and companies go out of business, causing mass unemployment. Tax revenue falls, causing government services to fail.
+
 
 ◊(define zimbabwe-trouble "https://nypost.com/2019/10/10/zimbabwe-struggles-with-hyperinflation-its-a-nightmare/")
 ◊(define hanke-krus "https://www.cato.org/sites/cato.org/files/pubs/pdf/hanke-krus-hyperinflation-table-may-2013.pdf")
 ◊(define venezuela-inflation "https://tradingeconomics.com/venezuela/inflation-cpi")
 ◊(define imf-inflation "https://www.imf.org/external/datamapper/PCPIPCH@WEO/WEOWORLD/VEN/ARG/SDN/ZWE")
 ◊(define hungary-inflation "https://www.amusingplanet.com/2018/08/hungarys-hyperinflation-worst-case-of.html")
+◊(define venezuela-bitcoin "https://www.bbc.com/news/business-47553048")
 
-Why are Venezuelans seeking refuge in cryptos?
-◊link{https://www.bbc.com/news/business-47553048}
-
-Protection against hyperinflation, see for example Venezuela and Zimbabwe.
-
-Historically how many currencies have gone under to hyperinflation?
 
 ◊link{https://cryptoslate.com/venezuelan-crisis-cryptocurrency-privacy/}
 ◊link{https://www.nytimes.com/2019/02/23/opinion/sunday/venezuela-bitcoin-inflation-cryptocurrencies.html}
