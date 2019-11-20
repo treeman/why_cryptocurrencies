@@ -125,9 +125,7 @@ Caring about privacy is a natural instinct---for good reason. It's not just abou
 
 ◊subhead3{Others have important things to hide}
 
-Even if you don't think you have anything to hide, others do. If we give up our right to privacy then everyone have to give up theirs as well.
-
-Here are some examples where lack of economic privacy is directly harmful for certain individuals:◊sn{focus-economic}
+Even if you don't think you have anything to hide, others do. Here are some examples where lack of economic privacy is harmful for some individuals:◊sn{focus-economic}
 
 ◊ndef["focus-economic"]{
     I focus on the economic side of privacy here, because that's related to cryptocurrencies, but it should be easy to find examples in other areas.
@@ -140,7 +138,7 @@ Here are some examples where lack of economic privacy is directly harmful for ce
   }
   ◊li{Sexual preferences
 
-    While homosexuality is becoming more accepted it's still ◊link[gay-illegal]{illegal in some countries} where you might face execution. Similar to the story of the girl's pregnancy above, having a history of your purchases might expose you.
+    While homosexuality is becoming more accepted it's still ◊link[gay-illegal]{illegal in some countries} where you might face execution. Similar to the story of the girl's pregnancy above, having a history of your purchases might expose you. (Why did you visit this gay bar?)
 
     There's also nothing wrong with having a fetish and engaging in strange sexual fantasies in your own home, but maybe you don't want your neighbourhood to know you bought a vibrating horse dildo.◊sn{porn-story}
 
