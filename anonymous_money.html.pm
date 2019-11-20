@@ -70,7 +70,9 @@ When people are alone and relaxed they do things they otherwise wouldn't. Maybe 
 
 If you don't recognize the situation please watch the scene where Hugh Grant plays the ◊link[love-actually-dance]{dancing prime minister in Love Actually}. Even if you do know what I'm talking about the scene's so good you should watch it anyway.
 
-◊todo{IMG of a dude singing in the shower, or Huge Grant pose}
+◊img[#:src "/images/dancing.png"]{
+    What's better than dancing naked, singing your favorite song, without a care in the world?
+}
 
 ◊(define love-actually-dance "https://www.youtube.com/watch?v=zcgxBHBsl-4")
 
@@ -82,7 +84,7 @@ I have a child who's two years old, and even he wants privacy sometimes. He like
 
 People may say privacy don't matter yet their actions tell a different story. For example Facebook's founder Mark Zuckerberg has said that privacy is ◊link[zuckerberg-privacy-not-norm]{no longer a social norm}, but then he buys up four homes surrounding his home ◊link[zuckerberg-buy-privacy]{because he wants privacy}.
 
-After all we don't have curtains or blinders on our windows because we do something illegal, it's because we want privacy.
+After all we don't have curtains or blinders on our windows because we do something illegal, it's because we want control over our privacy.
 
 ◊(define identity-theft "https://www.forbes.com/sites/laurashin/2014/11/18/someone-had-taken-over-my-life-an-identity-theft-victims-story/")
 ◊(define zuckerberg-buy-privacy "https://www.inquisitr.com/989057/facebooks-zuckerberg-buys-his-neighborhood-because-get-this-he-wants-privacy/")
@@ -91,23 +93,29 @@ After all we don't have curtains or blinders on our windows because we do someth
 
 ◊subhead3{Personal security}
 
-Caring about privacy is a natural instinct---for good reason. It's not just about avoiding embarrassment, it's also for your own personal safety. In fact privacy is closely related to security, your password and your credit card number are obvious examples, but there are more:
+Caring about privacy is a natural instinct---for good reason. It's not just about avoiding embarrassment, it's also for your own personal safety. In fact privacy is closely related to security. Your passwords and credit card numbers are obvious examples, but there are more:
 
 ◊ol{
-  ◊li{Identity theft can ruin your life.
+  ◊li{Identity theft can ruin your life
 
-      When someone assumes your identity, and use it to issue credit cards or promote scams, it can ruin your credit score, cost you millions, and force you to abandon your job and your house. Using only your private information people can literally ◊link[identity-theft-story]{take over your life}.
+      When someone assumes your identity, and use it to issue credit cards or promote scams, it can ruin your credit score, cost you millions, and force you to abandon your job and your house. Using only your private information people can literally ◊link[identity-theft-story]{take over your life}.◊sn{how-to-destroy-someones-life}
   }
-  ◊li{Criminals target rich people.
+  ◊li{Criminals target rich people
 
       The most important advice if you win the lottery is to ◊link[windfall]{not tell anyone}---people will ◊link[windfall-happy]{target you like vultures}. The same advice is given to people who want to invest in physical gold, for similar reasons.
 
       The best way to get targeted by criminals is to let them know how rich you are.
   }
-  ◊li{Crime of opportunity.
+  ◊li{Crime of opportunity
 
-      Many crimes aren't carried out by super-criminals with a master plan. Often they're done in the heat of the moment, because an opportunity was there. For example if everyone knows you're away for a week, the risk for a burglary rises. Or if you tell everyone that you're carrying $10,000 in your wallet, the risk of getting mugged increases.
+      Many crimes aren't carried out by super-criminals with a master plan. Often they're done in the heat of the moment, when an opportunity arose. For example if everyone knows you're away for a week, the risk for a burglary rises. Or if you tell everyone that you're carrying $10,000 in your wallet, the risk of getting mugged increases.
   }
+}
+
+◊ndef["how-to-destroy-someones-life"]{
+    I'm a problem solver, and I do wonder how everyday problems are solved. For example how milk ends up in the milk packages or how you paint a heart in the sky with an airplane. Not because I need to solve them---and I don't even want to know the right answer---I just need to let my mind work on something.
+
+    Sometimes the questions are darker, like what's the most effective way to destroy someones life (if we rule out physical harm). And identity theft is the tool I would use.
 }
 
 ◊(define identity-theft-story "https://www.forbes.com/sites/laurashin/2014/11/18/someone-had-taken-over-my-life-an-identity-theft-victims-story/")
@@ -126,11 +134,11 @@ Here are some examples where lack of economic privacy is directly harmful for ce
 }
 
 ◊ol{
-  ◊li{Unwanted pregnancies.
+  ◊li{Unwanted pregnancies
 
       There was a story that went viral years ago on how Target ◊link[teenage-pregnancy]{predicted a teenage pregnancy and exposed it to her father}. In a normal western household it might not be that big of a deal, but ◊link[murder-family-honor]{thousands of women are killed each year} for family "honor". Often for much less than a teenage pregnancy, such as ◊link[dowry-murder]{not getting paid enough for marrying the bride}.
   }
-  ◊li{Sexual preferences.
+  ◊li{Sexual preferences
 
     While homosexuality is becoming more accepted it's still ◊link[gay-illegal]{illegal in some countries} where you might face execution. Similar to the story of the girl's pregnancy above, having a history of your purchases might expose you.
 
@@ -146,7 +154,7 @@ Here are some examples where lack of economic privacy is directly harmful for ce
         I guess the point of the story is that some things are best left unknown.
     }
   }
-  ◊li{A cause for oppression.
+  ◊li{A cause for oppression
 
     In China if you're end up on the ◊link[china-social-credit]{wrong side of their social credit system}, you're banned from spending on "luxuries". If prospective business partners or customers discovers your status as a "deadbeat" you might get shunned and your hope of climbing out of your situation disappear.
 
@@ -194,6 +202,13 @@ Children's right to privacy is also acknowledged by UNICEF:◊sn{adult-version}
   ◊li{Credit card companies know everything about us and are selling our data}
 }
 
+◊qt[#:author "Edward Snowden"
+    #:src "Permanent Record"
+    #:quote-src #t
+    #:url permanent-record-book]{
+    Once the ubiquity of collection was combined with the permanency of storage, all any government had to do was select a person or a group to scapegoat and go searching---as I'd gone searching through the agency's files---for evidence of a suitable crime.
+}
+
 Credit cards have a privacy problem
 ◊link{https://news.ycombinator.com/item?id=20800115}
 
@@ -223,14 +238,20 @@ This reasoning, while admirable, is flawed. Removing everyones privacy will jeop
 Supporting finanical privacy makes me an extremist
 ◊link{https://www.coingecko.com/buzz/erik-voorhees-supporting-financial-privacy-extremist}
 
-
 ◊subhead{Fear is the mind-killer}
 
 ◊qt{
     The road to hell is paved with good intentions.
 }
 
-I think people often give up their privacy because of ◊strong{fear}. Since the ◊link[9-11]{September 11 attacks} we've been showered with fear-inducing news and propaganda, making our minds numb. This fear of terrorism (and murderers, pedophiles and other Bogeymen) has made us go to war, consent to torture and made us give up our human rights.
+I think people often give up their privacy because of ◊strong{fear}. Since the ◊link[9-11]{September 11 attacks} we've been showered with fear-inducing news and propaganda, making our minds numb. This fear of terrorism (and murderers, pedophiles and other Bogeymen) has made us go to war, consent to torture and made us give up our human rights.◊sn{retaliation}
+
+◊ndef["retaliation"]{
+    Just to put the overreaction in perspective: 2,977 people died in the 9/11 terrorist attacks, but one million died because of the American retaliation.  
+    (Edward Snowden, “◊link[permanent-record-book]{Permanent Record}”)
+
+    That's like sentencing a shoplifter to death---a completely disproportionate response.
+}
 
 Terrorism is real and scary, there's no denying that. But our level of fear is irrational and would be better placed worrying about cars or unhealthy food---both of which kill many more people than terrorism do. Above all we should not throw out all our rights in a desperate attempt to calm our fears.
 
