@@ -150,7 +150,7 @@ There are cryptocurrencies that tries to hide this information.◊sn{monero} On 
     There are others where you can opt-in to hide some transactions but otherwise they can be traced (like the shielded transactions of ◊link[zcash]{ZCash}). This also exists as a service on top of Bitcoin, see for example ◊link[coinjoin]{CoinJoin}, although they're not as good.
 }
 
-◊todo{Caveat that nothing is perfect}
+As with all privacy tools, it won't ◊em{guarantee} to keep you anonymous. There are always trade-offs and weaknesses and nothing is perfect.
 
 
 ◊subhead{Large and small amounts behave the same}

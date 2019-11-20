@@ -32,13 +32,13 @@ It's easy to mix-up the terms "privacy" and "anonymity". They're related, but di
 
 ◊dl{
   ◊dt{Privacy}
-  ◊dd{Concerns content, for example text messages you send to your friends.}
+  ◊dd{Concerns content, for example text in messages you send to your friends.}
 
   ◊dt{Anonymity}
-  ◊dd{Refers to your identity, for example that I, Jonas, received the text messages.}
+  ◊dd{Refers to identity, for example that I, Jonas, received the text messages.}
 }
 
-In practice they often overlap. For example if the contents of all of my email were known, it would be a breach of my privacy. But it would also affect my anonymity, since my name is included everywhere.
+In practice they often overlap. For instance if everyone could read all my emails,it would be a breach of my privacy. But it would also affect my anonymity, since my name is included everywhere.
 
 ◊;https://invisibler.com/privacy-and-anonymity/
 
@@ -66,7 +66,7 @@ Why would you want to stay anonymous? What are you hiding? Are you criminal?◊s
 
 ◊subhead3{It's natural to seek privacy}
 
-When people are alone and relaxed they do things they otherwise wouldn't. Maybe you like to dance when you're alone, sing in the shower or scratch yourself somewhere... nice. If you're caught in the act you immediately stop what we're doing and feel embarrassed.
+When people are alone and relaxed they do things they otherwise wouldn't. Maybe you like to dance when you're alone, sing in the shower or scratch yourself somewhere... nice. If you're caught in the act you immediately stop what you're doing and feel embarrassed.
 
 If you don't recognize the situation please watch the scene where Hugh Grant plays the ◊link[love-actually-dance]{dancing prime minister in Love Actually}. Even if you do know what I'm talking about the scene's so good you should watch it anyway.
 
@@ -76,7 +76,7 @@ If you don't recognize the situation please watch the scene where Hugh Grant pla
 
 ◊(define love-actually-dance "https://www.youtube.com/watch?v=zcgxBHBsl-4")
 
-I have a child who's two years old, and even he wants privacy sometimes. He likes to build and hide in a cabin made of pillows, and if I disturb him he pushes me and shouts “Go away!”. After we recently renovated his room he was ◊em{so happy} that he had a room of his own again, which he likes to hide out in when he's pooping.◊sn{children-privacy}
+I have a child who's two years old, and even he wants privacy sometimes. He likes to build a cabin made of pillows and hide in it, and if I disturb him he pushes me and shouts “Go away!”. After we recently renovated his room he was ◊em{so happy} that he had a room of his own again, which he likes to be alone in when he's pooping (yes he uses diapers).◊sn{children-privacy}
 
 ◊ndef["children-privacy"]{
     It's really quite fascinating. Sometimes I can hug him while he's playing, but sometimes I'm not even allowed to be in the same room. I guess he just wants to be alone from time to time.
@@ -274,21 +274,21 @@ Fear also forces people to be as unassuming as possible---to avoid trouble. When
 ◊; https://www.ted.com/talks/glenn_greenwald_why_privacy_matters
 
 
-The ◊link[great-man]{◊em{great man theory}} of history is the idea that most of history can be explained by the impact of great men. Julius Caesar, Genghis Khan and Hitler are examples of "great men". (They don't have to be good, just cause large changes.) If Edward Snowden will be considered a great man depends on the effects of his leaks---they might mark a turning point for government surveillance, and change the course of history, or they might be forgotten as a sidenote in the history books.◊sn{nothing-changed}
+The ◊link[great-man]{◊em{great man theory}} of history is the idea that most of history can be explained by the impact of great men. Julius Caesar, Genghis Khan and Hitler are examples of "great men". (They don't have to be good, just cause large changes.) If Edward Snowden will be considered a great man depends on the effects of his leaks---they might mark a turning point for government surveillance, and change the course of history, or they might be forgotten as a side note in the history books.◊sn{nothing-changed}
 
 ◊ndef["nothing-changed"]{
-    Unfortunately it doesn't seem like anything has really changed.
+    Unfortunately it doesn't seem like anything has really changed. Either way I think Snowden is a hero.
 }
 
 While the great man theory is interesting, wouldn't it be better to describe modern history using a ◊em{great technology theory}? For example the printing press, the internal combustion engine, the atomic bomb, the transistor and the internet have had great impact on history---greater than any single person I can think of.◊sn{invention}
 
 ◊ndef["invention"]{
-    Proponents of the great man theory might say that these are inventions of a great man (or woman). To which I'd say that they weren't the result of a single person, but of many small improvements over existing tech, made by countless of people.
+    Proponents of the great man theory might say that these are inventions of a great person. To which I'd say that they weren't the result of a single person, but of many small improvements over existing tech, made by countless of people.
 }
 
-So instead of looking for someone to solve our privacy problems, maybe technology is our solution? With strong encryption we can keep our messages private and our data safe, and with the great innovation called tape we can prevent our webcams from spying on us.
+So instead of looking for a great man to solve our privacy problems, maybe technology is our solution? With strong encryption we can keep our messages private and our data safe, and with the great innovation called tape we can prevent our webcams from spying on us.
 
-But so far we've had to surrender our privacy to gain access to digital payments and even to our own money. Because ◊link[anon]{cryptocurrencies are anonymous}---nobody can see the transactions◊sn{bitcoin-worse} we do or know how much money we have---with cryptocurrencies we might claw back some of that privacy, and isn't that pretty great?
+But so far we've had to surrender our privacy to gain access to digital payments and even to our own money. But because because ◊link[anon]{cryptocurrencies are anonymous} (nobody can see the transactions we do or know how much money we have)◊sn{bitcoin-worse} they might help us claw back some of that privacy, and isn't that pretty great?
 
 ◊ndef["bitcoin-worse"]{
     Note that Bitcoin is sometimes even worse for privacy than regular payments. In Bitcoin anyone you send money to will see where your money came from, and might be able to trace all your money that way. Mixing services or cryptocurrencies like Monero tries to fix this problem.
