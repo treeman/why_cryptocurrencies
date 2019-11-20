@@ -140,6 +140,8 @@ Either way it's not an argument against cryptocurrencies in general as they can 
 
 Bitcoin uses a public ledger where all transactions are public---it isn't anonymous. It's ◊em{pseudo-anonymous}, while you can see transactions and addresses you don't know who owns an address. But you know someones address and can then trace all past and future transactions moving through that address. You can use a ◊link[blockchair]{blockchain explorer} to see for yourself.
 
+◊todo{Rewrite and use an image which explains this}
+
 There are cryptocurrencies that tries to hide this information.◊sn{monero} On them you cannot trace transactions on the blockchain and since these projects exists I will call cryptocurrencies anonymous, just keep in mind not all are.
 
 ◊ndef["monero"]{
@@ -147,6 +149,8 @@ There are cryptocurrencies that tries to hide this information.◊sn{monero} On 
 
     There are others where you can opt-in to hide some transactions but otherwise they can be traced (like the shielded transactions of ◊link[zcash]{ZCash}). This also exists as a service on top of Bitcoin, see for example ◊link[coinjoin]{CoinJoin}, although they're not as good.
 }
+
+◊todo{Caveat that nothing is perfect}
 
 
 ◊subhead{Large and small amounts behave the same}
