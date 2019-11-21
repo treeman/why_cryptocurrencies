@@ -5,7 +5,7 @@
 ◊(define-meta updated "2019-09-02T07:02:25+02:00")
 ◊(define-meta uuid "bec2e177-8ccd-4f8d-a90e-a3d0b4269e43")
 
-◊todo{IMG of sending coins across the world}
+◊img[#:src "/images/global.png"]{}
 
 ◊subhead{A currency for the world}
 
