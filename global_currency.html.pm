@@ -7,35 +7,6 @@
 
 ◊img[#:src "/images/global.png"]{}
 
-◊subhead{A currency for the world}
-
-The U.S. dollar is the ◊link[world-currency]{closest we have to a world currency}. More than half of all U.S. dollar bills are used outside of the U.S.---often as hard currency. Almost 40% of all debt in the world is issued in U.S. dollars and the central banks of other countries hold a large part of their reserves in U.S. dollars (making it the most widely used ◊link[reserve-currency]{◊em{reserve currency}}).◊sn{jp-morgan}
-
-◊ndef["jp-morgan"]{
-    According to Craig Cohen of J.P. Morgan the U.S. dollar dominance could be coming to an end, and says it “◊link[jp-morgan-dollar]{could lose its status as world’s reserve currency}”.
-}
-
-◊(define world-currency "https://www.thebalance.com/world-currency-3305931")
-◊(define countries-us-dollars "https://www.worlddata.info/currencies/usd-us-dollar.php")
-◊(define jp-morgan-dollar "https://privatebank.jpmorgan.com/gl/en/insights/investing/is-the-dollar-s-exorbitant-privilege-coming-to-an-end")
-◊(define reserve-currency "https://www.investopedia.com/terms/r/reservecurrency.asp")
-
-But the U.S. dollar isn't truly a world currency, it's just one country's currency that happen to be widely used. The U.S. government and the Federal Reserve still has full control of the currency---they can dabble with the money supply however they want---and the rest of the world can only hope they won't get shafted.
-
-In contrast cryptocurrencies exist outside the control of any country. They're instead controlled by people all over the world, who come together and agree to the rules governing the currency.
-
-What's more, cryptocurrencies are also much easier to use on a global scale. It's hard to send U.S. dollars across the world---you'd have to rely on others to do so---but cryptocurrencies can be sent as easily to your neighbour as to someone on the other side of the world.
-
-◊qt[#:author "Chris Troutner"
-    #:src "Twitter"
-    #:date "21 Jun 2019"
-    #:url "https://twitter.com/christroutner/status/1142080363981709313"]{
-  I wanted to help someone in #Venezuela , so I'm tutoring a novice #JavaScript developer as he writes #opensource software. I pay him $100 per week. It's making a huge difference in his life. With #BitcoinCash we don't have to consider what governments or banks think about it.
-}
-◊; https://www.reddit.com/r/btc/comments/c3brvi/chris_troutner_i_wanted_to_help_someone_in/
-
-
-Instead of being just a currency used throughout the world, a cryptocurrency is a currency ◊strong{for} the world.
 
 
 ◊subhead{Remittance}
@@ -129,7 +100,7 @@ There's an opportunity here for cryptocurrencies, which is demonstrated by the c
 }
 
 ◊img[#:src "https://eatbch.org/_assets/img/venezuela-hero-wide.jpg"]{
-    ◊link[eatbch]{eatBCH} converts donations from all over the world to food for kids in Venezuela.
+    ◊link[eatbch]{eatBCH} converts donations from all over the world to food for people in Venezuela.
 }
 
 This kind of charity is only possible if you can cheaply transfer money to the heart of a very unstable and closed off country, bypassing sanctions and border control.
@@ -241,9 +212,13 @@ Bankers are legal crooks.
 #Lebanon
 }
 
-◊;Cryptocurrencies are available to everyone, anywhere, any time and no matter the reason.
+Because of the decentralized nature of cryptocurrencies it's very difficult for them to "shut down". It doesn't matter if the computers of some people---or even whole countries---break down, the cryptocurrency network is unaffected.◊sn{antifragile}
 
-Perhaps the best feature of cryptocurrencies is that they can be used by anyone, anywhere in the world and they're always available.◊sn{uptime}
+Cryptocurrencies are so robust we might as well say they're always available, for anyone and anywhere (as long as they have internet access).◊sn{uptime}
+
+◊ndef["antifragile"]{
+    Taleb has minted the term ◊link[antifragile-book]{◊em{antifragile}}, meaning the more you break something the stronger it becomes. Cryptocurrencies are antifragile.
+}
 
 ◊ndef["uptime"]{
     According to ◊link[bitcoinuptime]{bitcoinuptime} the Bitcoin network has been down less than 15 hours since it's creation in 2009. That's an uptime of more than 99.98%.
@@ -252,3 +227,33 @@ Perhaps the best feature of cryptocurrencies is that they can be used by anyone,
 ◊(define lebanon-bank-shutdown "http://www.dailystar.com.lb/News/Lebanon-News/2019/Oct-24/494282-top-banking-official-operations-to-fully-resume-when-lebanon-crisis-ends.ashx")
 ◊(define bitcoinuptime "http://bitcoinuptime.com/")
 
+
+◊subhead{A currency for the world}
+
+The U.S. dollar is the ◊link[world-currency]{closest we have to a world currency}. More than half of all U.S. dollar bills are used outside of the U.S.---often as hard currency. Almost 40% of all debt in the world is issued in U.S. dollars and the central banks of other countries hold a large part of their reserves in U.S. dollars (making it the most widely used ◊link[reserve-currency]{◊em{reserve currency}}).◊sn{jp-morgan}
+
+◊ndef["jp-morgan"]{
+    According to Craig Cohen of J.P. Morgan, the U.S. dollar dominance could be coming to an end, and says it “◊link[jp-morgan-dollar]{could lose its status as world’s reserve currency}”.
+}
+
+◊(define world-currency "https://www.thebalance.com/world-currency-3305931")
+◊(define countries-us-dollars "https://www.worlddata.info/currencies/usd-us-dollar.php")
+◊(define jp-morgan-dollar "https://privatebank.jpmorgan.com/gl/en/insights/investing/is-the-dollar-s-exorbitant-privilege-coming-to-an-end")
+◊(define reserve-currency "https://www.investopedia.com/terms/r/reservecurrency.asp")
+
+But the U.S. dollar isn't truly a world currency, it's just one country's currency that happen to be widely used. The U.S. government and the Federal Reserve still has full control of the currency---they can dabble with the money supply however they want---and the rest of the world can only hope they won't get shafted.
+
+In contrast cryptocurrencies exist outside the control of any country. They're instead controlled by people all over the world, who come together and agree to the rules governing the currency.
+
+What's more, cryptocurrencies are also easier to use on a global scale. It's hard to send U.S. dollars across the world---you'd have to rely on others to do so---but cryptocurrencies can be sent as easily to your neighbour as to someone on the other side of the world.
+
+◊qt[#:author "Chris Troutner"
+    #:src "Twitter"
+    #:date "21 Jun 2019"
+    #:url "https://twitter.com/christroutner/status/1142080363981709313"]{
+  I wanted to help someone in #Venezuela , so I'm tutoring a novice #JavaScript developer as he writes #opensource software. I pay him $100 per week. It's making a huge difference in his life. With #BitcoinCash we don't have to consider what governments or banks think about it.
+}
+◊; https://www.reddit.com/r/btc/comments/c3brvi/chris_troutner_i_wanted_to_help_someone_in/
+
+
+Instead of being just a currency used throughout the world, a cryptocurrency is a currency ◊strong{for} the world.
