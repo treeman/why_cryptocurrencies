@@ -35,10 +35,10 @@ It's easy to mix-up the terms "privacy" and "anonymity". They're related, but di
   ◊dd{Concerns content, for example text in messages you send to your friends.}
 
   ◊dt{Anonymity}
-  ◊dd{Refers to identity, for example that I, Jonas, received the text messages.}
+  ◊dd{Refers to identity, for example that I, Jonas, received a text message.}
 }
 
-In practice they often overlap. For instance if everyone could read all my emails,it would be a breach of my privacy. But it would also affect my anonymity, since my name is included everywhere.
+In practice they often overlap. For instance if everyone could read all my emails, it would be a breach of my privacy. But it would also affect my anonymity, since my name is included everywhere.
 
 ◊;https://invisibler.com/privacy-and-anonymity/
 
