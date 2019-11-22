@@ -142,9 +142,13 @@ Bitcoin, and most cryptocurrencies, use a public ledger where all transactions a
 
 ◊;But you know someones address and can then trace all past and future transactions moving through that address. You can use a ◊link[blockchair]{blockchain explorer} to see for yourself.
 
-◊todo{Rewrite and use an image which explains this}
+◊img[#:src "/images/coin-tracing.png"]{
+    After the merchant receives a payment from John, the merchant can see that John has sent 13 BTC to another address and that John still has 26 BTC on the original address.
+}
 
-There are cryptocurrencies that tries to hide this information meaning you cannot trace transactions on the blockchain.◊sn{monero} Therefore I'll call cryptocurrencies anonymous, just keep in mind not all are.
+You can explore the Bitcoin blockchain, and see all transactions and addresses, on a ◊link[blockchair]{blockchain explorer}.
+
+There are cryptocurrencies that tries to hide this information so you cannot trace transactions like this.◊sn{monero} Meaning just like cash, you don't know where the coins have been before. Please remember that most cryptocurrencies don't do this, and can be traced just like Bitcoin.
 
 ◊ndef["monero"]{
     ◊link[Monero]{Monero} is perhaps the most well known cryptocurrency that hides inputs, outputs and amounts for all transactions by default.
@@ -152,7 +156,7 @@ There are cryptocurrencies that tries to hide this information meaning you canno
     There are others where you can opt-in to hide some transactions but otherwise they can be traced (like the shielded transactions of ◊link[zcash]{ZCash}). This also exists as services on top of Bitcoin, see for example ◊link[coinjoin]{CoinJoin}, although they're not as good.
 }
 
-As with all privacy tools, using cryptocurrencies won't ◊em{guarantee} your anonymity. There are always trade-offs and weaknesses---nothing is perfect.
+Cryptocurrencies can be used anonymously---your identity isn't tied to your addresses. But as with all tools, cryptocurrencies won't ◊em{guarantee} your anonymity. For example if you try to buy a VPN anonymously with Bitcoin, your identity might still be revealed if the coins can be traced back to an exchange that have your name.
 
 
 ◊subhead{Large and small amounts behave the same}

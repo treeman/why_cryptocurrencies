@@ -17,12 +17,12 @@ The erosion of personal privacy is one of the many important issues in today's s
 
 One of the very good things about cash---regular coins or bills---is that there's very little tracking on them. You can buy things with them, or give them to someone, and nobody else needs to know about it. Unfortunately people aren't using cash as much anymore, some have even stopped accepting cash, and all the regular alternatives come with the privacy trade-off.
 
-Cryptocurrencies can help us with this---they're both digital ◊link[anon]{and anonymous}. Just like cash they're a tool to keep your privacy.◊sn{vpn}
+Cryptocurrencies can help us with this---they're digital and just like cash they can be ◊link[anon]{used anonymously}.◊sn{vpn}
 
 ◊ndef["vpn"]{
     For instance if you want to purchase a VPN, a domain or a VPS anonymously it's probably a good idea to use cryptocurrencies.
 
-    But remember that most cryptocurrencies, Bitcoin included, are ◊link[anon]{only pseudo-anonymous} and can be traced.
+    But remember that most cryptocurrencies, Bitcoin included, are ◊link[anon]{only pseudo-anonymous} and it's easy to make a mistake and break your anonymity.
 }
 
 
