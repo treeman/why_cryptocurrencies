@@ -72,6 +72,7 @@ If you don't recognize the situation please watch the scene where Hugh Grant pla
 
 ◊img[#:src "/images/dancing.png"]{
     What's better than dancing naked, singing your favorite song, without a care in the world?
+    And what's worse than having someone catching you in the act?
 }
 
 ◊(define love-actually-dance "https://www.youtube.com/watch?v=zcgxBHBsl-4")
@@ -201,12 +202,6 @@ Even the constitution of the United States---written more than a hundred years b
 
 ◊subhead{We're living in Stasi's wet dream}
 
-◊ol{
-  ◊li{Snowden showed...}
-  ◊li{Google, Facebook, everyone are selling our data}
-  ◊li{Credit card companies know everything about us and are selling our data}
-}
-
 ◊qt[#:author "Edward Snowden"
     #:src "Permanent Record"
     #:quote-src #t
@@ -268,17 +263,27 @@ Alphabet Inc. (company name of Google) and Facebook are two of the most valuable
 
 The product they're selling is you.
 
-They're selling knowledge about you. What you're searching for, what sites you visit, what products you buy, what places you visit, what friends you have and what you're talking about with your friends. With the combination of massive data collection and clever computer algorithms it's scary what they know about you.
+They're selling knowledge about you. What you're searching for, what sites you visit, what products you buy, what places you visit, what friends you have and what you're talking about with your friends. With the combination of massive data collection and clever computer algorithms it's scary what they know about you.◊sn{predictions}
 
-For example they probably know if you're gay, if you're pregnant (if it was an accident or not, if your parents know and who's the father), if you're religious and who you voted for in the last election. They can even predict who you're going to vote for in the ◊em{next} election with high probability.
+◊ndef["predictions"]{
+    It might be hard to come to terms with how the algorithms can predict your behavior. But it's really not that different from how Youtube, Netflix or Spotify recommends videos and songs to you.
 
-And it's not just a problem with Google and Facebook.
-
-◊ul{
-    ◊li{Credit card companies ◊link[google-mastercard]{sell your data}}
-    ◊li{◊link[bank-shares]{Banks sell data} to third parties too}
-    ◊li{Smart TVs listen to you, and ◊link[vizo-surveillance]{sell it to the highest bidder}}
+    Oh? He watched a video of a Japanese rock band? And he's listened to Raubtier? Then let's recommend Band-Maid, he's sure to love them! (I assume this is how Youtube decided to recommend me Band-Maid---the best rock band in the world---to me.)
 }
+
+
+For example they probably know if you're gay, if you're pregnant (also if it was an accident, if your parents know about it or who's the father). They might also predict, with high confidence, if you're religious---even if you've never admitted it. Or who you're going to vote for in the ◊em{next} election or how likely you are to commit a crime.◊sn{thoughtcrime}
+
+◊ndef["thoughtcrime"]{
+    Pre-crime, or thought crime is a common theme in dystopian fantasies, which I have a morbid fascination for.
+
+    Robocop, (Tom Cruise film), 1984
+}
+
+And it's not just a problem with Google and Facebook. An increasing number of companies are discovering how lucrative your data is. If you buy a Coca-Cola, the information that you bought it at this place and at this specific time might even be worth more than the Coca-Cola itself!
+
+For example smart TVs come with a microphone that listens to everything you do, and the TV company then ◊link[vizo-surveillance]{sell the recordings to the highest bidder}. Credit card companies have full records of all purchases you do---◊link[google-mastercard]{which they sell to someone else}. Even the banks, who we might think should work for us, ◊link[bank-shares]{sell our data to third parties}.
+
 
 ◊(define bank-shares "https://www.cbc.ca/news/business/banking-information-shared-with-third-parties-1.5102931")
 ◊(define google-mastercard "https://www.bloomberg.com/news/articles/2018-08-30/google-and-mastercard-cut-a-secret-ad-deal-to-track-retail-sales")
@@ -318,7 +323,7 @@ So far we've had to surrender our privacy to gain access to digital payments and
 
 
 ◊ndef["bitcoin-worse"]{
-    Unfortunately Bitcoin is sometimes ◊link[anon]{even worse for privacy regular payments}, because you have a permanent record of all transactions open for all to see. Cryptocurrencies like Monero tries to fix this problem.
+    Unfortunately Bitcoin is sometimes ◊link[anon]{even worse for privacy than regular payments}, because you have a permanent record of all transactions open for all to see. Cryptocurrencies like Monero tries to fix this problem.
 }
 
 ◊(define great-man "https://en.wikipedia.org/wiki/Great_man_theory")
