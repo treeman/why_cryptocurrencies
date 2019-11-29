@@ -99,9 +99,9 @@ There's an opportunity here for cryptocurrencies, which is demonstrated by the c
     But adoption is growing and enough merchants accept Bitcoin Cash directly to support eatBCH for example.
 }
 
-◊img[#:src "https://eatbch.org/_assets/img/venezuela-hero-wide.jpg"]{
-    ◊link[eatbch]{eatBCH} converts donations from all over the world to food for people in Venezuela.
-}
+◊;◊img[#:src "https://eatbch.org/_assets/img/venezuela-hero-wide.jpg"]{
+    ◊;◊link[eatbch]{eatBCH} converts donations from all over the world to food for people in Venezuela.
+◊;}
 
 This kind of charity is only possible if you can cheaply transfer money to the heart of a very unstable and closed off country, bypassing sanctions and border control.
 
@@ -111,14 +111,14 @@ This kind of charity is only possible if you can cheaply transfer money to the h
 
 ◊subhead{Capital flight}
 
-◊qt[#:src "WSJ: Worried Hong Kong Residents Are Moving Money Out as Protests Escalate"
+◊qt[#:src "Worried Hong Kong Residents Are Moving Money Out as Protests Escalate"
     #:url "https://www.wsj.com/articles/worried-hong-kong-residents-are-moving-money-out-as-protests-escalate-11566120603"]{
     “It’s very unsettling here,” said Ms. Fairhurst, who has lived in Hong Kong for 12 years. She said seeing videos of police using tear gas near her office have made her particularly nervous. “I don’t know what’s going to happen, but I know that I don’t want my money trapped here.”
 }
 
 If you decided to leave Venezuela, but wanted to bring your wealth with you, what would you do? Sell your bolívar for U.S. dollars and cross the border? You might get searched and lose it all. Same with gold, jewelry or other valuable items you can think off---it's not easy to hide them from the search at the border. You also cannot send the money abroad digitally, because there are no banks and no Western Union to help you.
 
-Fortunately cryptocurrencies may aid you here. You can store any amount on a piece of paper in your pocket, an encrypted address online or even on a dozen memorized words in your head, and there's not much the border search will reveal.
+Fortunately cryptocurrencies may aid you here. You can store any amount on a piece of paper in your pocket, an encrypted key online or even on a dozen memorized words in your head, and there's not much the border search will reveal.
 
 You don't have to physically leave the country to benefit from storing your wealth in a global currency. China is ◊link[china-capital-flight]{struggling with capital leaving the country} and it's one reason they've been trying to ban cryptocurrencies for years.◊sn{cannot-stop}
 
@@ -145,7 +145,7 @@ You don't have to physically leave the country to benefit from storing your weal
 
 Cryptocurrency skeptics often ask why anyone would ever want to use money with so large volatility. They have a point---daily swings of 5% in Bitcoin are almost expected and larger changes are common---but that's nothing in the face of ◊link[hyperinflation]{◊em{hyperinflation}}.
 
-Venezuela had a monthly inflation of 815,194%, in May 2019 alone. It's a huge number that means price would double in less than two days---every day. This means if you could afford two chickens today, in two days you can only afford one. For those living through it they would prefer ◊em{anything} else over the local currency; be it gold, U.S. dollar, ◊link[venezuela-bitcoin]{Bitcoin}, clothes, food---you name it.
+Venezuela had a monthly inflation of 815,194%, in May 2019 alone. It's a huge number that means prices double in less than two days---all the time. This means if you could afford two chickens today, in two days you can only afford one. For those living through it they would prefer ◊em{anything} else over the local currency; be it gold, U.S. dollar, ◊link[venezuela-bitcoin]{Bitcoin}, clothes, food---you name it.
 
 It's easy to think that hyperinflation is a thing of the past, or that it only affects poor countries far away. But according to the ◊link[hanke-krus]{Hanke-Krus hyperinflation table} we've had 55 cases of hyperinflation since 1920, with 31 of them after 1990 (roughly half related to the collapase of the Soviet Union).◊sn{line-inflation} Some famous examples include:
 
