@@ -21,7 +21,7 @@ These are the most important properties of cryptocurrencies as I see it:
     ◊li{No counterfeiting}
     ◊li{Transactions are irreversible}
     ◊li{Predetermined emission rate}
-    ◊li{Anonymous}
+    ◊li{Private}
     ◊li{Large and small amounts behave the same}
     ◊li{Borderless}
 }
@@ -136,27 +136,15 @@ Either way it's not an argument against cryptocurrencies in general as they can 
 ◊(define aus-link "https://podcast.bitcoin.com/e799-Austrian-Economics-for-Bitcoiners-with-Jeffrey-Tucker-part-1")
 
 
-◊subhead{Anonymous}
+◊subhead{Private}
 
-Bitcoin, and most cryptocurrencies, use a public ledger where all transactions are public. They're not anonymous---they're ◊em{pseudo-anonymous}: while you can see all transactions and addresses you don't know who owns an address. But if you know someone's address, for example they sent money to you, you can then trace all past and future transactions moving through that address.
+To use other digital payment systems, like credit cards for example, you need to tie your identity to them. All payments you do are also recorded, meaning they don't offer very good privacy. But cryptocurrencies can be used privately---your identity isn't tied to them. They're similar to cash in this respect.◊sn{bitcoin-privacy}
 
-◊;But you know someones address and can then trace all past and future transactions moving through that address. You can use a ◊link[blockchair]{blockchain explorer} to see for yourself.
-
-◊img[#:src "/images/coin-tracing.png"]{
-    After the merchant receives a payment from John, the merchant can see that John has sent 13 BTC to another address and that John still has 40 - 1 - 13 = 26 BTC on the original address.
+◊ndef["bitcoin-privacy"]{
+    Bitcoin, like most cryptocurrencies, do record all transactions in a public ledger. But cryptocurrencies like ◊link[Monero]{Monero} ◊link[privacy-challenge]{tries to solve this problem}.
 }
 
-You can explore the Bitcoin blockchain, and see all transactions and addresses, on a ◊link[blockchair]{blockchain explorer}.
-
-There are cryptocurrencies that tries to hide this information so you cannot trace transactions like this.◊sn{monero} Meaning just like cash, you don't know where the coins have been before. But please remember that most cryptocurrencies don't do this, and can be traced just like Bitcoin.
-
-◊ndef["monero"]{
-    ◊link[Monero]{Monero} is perhaps the most well known cryptocurrency that hides inputs, outputs and amounts for all transactions by default.
-
-    There are others where you can opt-in to hide some transactions but otherwise they can be traced (like the shielded transactions of ◊link[zcash]{ZCash}). This also exists as services on top of Bitcoin, see for example ◊link[coinjoin]{CoinJoin}, although they're not as good.
-}
-
-Cryptocurrencies can be used anonymously---your identity isn't tied to your addresses. But as with all tools, cryptocurrencies won't ◊em{guarantee} your anonymity. For example if you try to buy a VPN anonymously with Bitcoin, your identity might still be revealed if the coins can be traced back to an exchange that have your name. Or they might trace your IP you purchased it with, or track browser cookies or you might just make a silly mistake like associate your name with the email you sign up with.
+◊(define privacy-challenge "/challenges.html#privacy")
 
 
 ◊subhead{Large and small amounts behave the same}
@@ -186,8 +174,6 @@ Cryptocurrencies are inherently global. They are usable wherever you are as long
     But please make sure to encrypt your ◊em{seed} (a human-readable representation of your keys) otherwise a thief can easily steal your coins if he finds it.
 }
 
-◊(define blockchair "https://blockchair.com/")
 ◊(define dao "https://fullstacks.org/materials/ethereumbook/16_appdx-forks-history.html")
 ◊(define Monero "https://www.getmonero.org/")
-◊(define zcash "https://z.cash/technology/")
 
