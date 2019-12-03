@@ -17,18 +17,18 @@ The erosion of personal privacy is one of the many important issues in today's s
 
 One of the very good things about cash---regular coins or bills---is that there's very little tracking on them. You can buy things with them, or give them to someone, and nobody else needs to know about it. Unfortunately people aren't using cash as much anymore, some have even stopped accepting cash, and all the regular alternatives come with the privacy trade-off.
 
-Cryptocurrencies can help us with this---they're digital and just like cash they can be ◊link[anon]{used anonymously}.◊sn{vpn}
+Cryptocurrencies can help us with this---they're digital and just like cash they can be ◊link[private]{used privately}.◊sn{vpn}
 
 ◊ndef["vpn"]{
     For instance if you want to purchase a VPN, a domain or a VPS anonymously it's probably a good idea to use cryptocurrencies.
 
-    But remember that most cryptocurrencies, Bitcoin included, are ◊link[anon]{only pseudo-anonymous} and it's easy to make a mistake and break your anonymity.
+    But remember that most cryptocurrencies, Bitcoin included, are ◊link[privacy-problem]{only pseudo-anonymous} and it's easy to make a mistake and break your anonymity.
 }
 
 
 ◊subhead{What is privacy and anonymity?}
 
-It's easy to mix-up the terms "privacy" and "anonymity". They're related, but different:
+It's easy to mix-up the terms "privacy" and "anonymity" (which I've done many times myself writing this chapter). They're related, but different:
 
 ◊dl{
   ◊dt{Privacy}
@@ -47,7 +47,7 @@ In practice they often overlap. For instance if everyone could read all my email
 
 Privacy and anonymity is an important issue in the modern world and there are countless examples of privacy violations everywhere. Before we get to some of them we first need to address why privacy matter, because today government officials, company owners, the news and regular people all ask the same questions:
 
-Why would you want to stay anonymous? What are you hiding? Are you criminal?◊sn{summary-discussion}
+Why would you want privacy? What are you hiding? Are you criminal?◊sn{summary-discussion}
 
 ◊ndef["summary-discussion"]{
     Privacy discussions can often be summarized as:
@@ -392,12 +392,13 @@ So far we've had to surrender our privacy to gain access to digital payments and
 
 
 ◊ndef["bitcoin-worse"]{
-    Unfortunately Bitcoin is sometimes ◊link[anon]{even worse for privacy than regular payments}, because you have a permanent record of all transactions open for all to see. Cryptocurrencies like Monero tries to fix this problem.
+    Unfortunately Bitcoin is sometimes ◊link[privacy-problem]{even worse for privacy than regular payments}, because you have a permanent record of all transactions open for all to see. There are other cryptocurrencies that tries to solve this problem.
 }
 
 ◊(define great-man "https://en.wikipedia.org/wiki/Great_man_theory")
 ◊(define shoulders-of-giants "https://en.wikipedia.org/wiki/Standing_on_the_shoulders_of_giants")
 ◊(define signal "https://www.signal.org/")
-◊(define anon "/properties_of_a_cryptocurrency.html#anonymous")
+◊(define private "/properties_of_a_cryptocurrency.html#private")
+◊(define privacy-problem "/challenges.html#privacy-and-fungibility")
 ◊(define properties "/what_is_money.html#what-properties-does-good-money-have?")
 

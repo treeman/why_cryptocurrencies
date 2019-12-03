@@ -138,7 +138,7 @@ Either way it's not an argument against cryptocurrencies in general as they can 
 
 ◊subhead{Private}
 
-To use other digital payment systems, like credit cards for example, you need to tie your identity to them. All payments you do are also recorded, meaning they don't offer very good privacy. But cryptocurrencies can be used privately---your identity isn't tied to them. They're similar to cash in this respect.◊sn{bitcoin-privacy}
+Commonly used digital payment systems, like credit cards for example, asks you to give up your privacy. All payments are recorded and they require you to tie your identity to them. But cryptocurrencies can be used privately---there's no need to disclose your identity or your transaction history. They're similar to cash in this respect.◊sn{bitcoin-privacy}
 
 ◊ndef["bitcoin-privacy"]{
     Bitcoin, like most cryptocurrencies, do record all transactions in a public ledger. But cryptocurrencies like ◊link[Monero]{Monero} ◊link[privacy-challenge]{tries to solve this problem}.
