@@ -683,6 +683,12 @@ table.crypto-eval {
     }
 }
 
+.snowden-leaks > li.leak > .title {
+    margin-top: $first-list-offset;
+    margin-bottom: $list-p-margin;
+    font-weight: bold;
+}
+
 .wikileaks li.leak {
     margin-bottom: 2em;
 

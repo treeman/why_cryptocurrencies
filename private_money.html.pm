@@ -38,14 +38,14 @@ It's easy to mix-up the terms "privacy" and "anonymity" (which I've done many ti
   ◊dd{Refers to identity, for example that I, Jonas, received a text message.}
 }
 
-In practice they often overlap. For instance if everyone could read all my emails, it would be a breach of my privacy. But it would also affect my anonymity, since my name is included everywhere.
+In practice they often overlap. For example if all my emails were available online for anyone to read, it would be a breach of my privacy. But it would also affect my anonymity, since my name is included in the emails.
 
 ◊;https://invisibler.com/privacy-and-anonymity/
 
 
 ◊subhead{Why privacy matters}
 
-Privacy and anonymity is an important issue in the modern world and there are countless examples of privacy violations everywhere. Before we get to some of them we first need to address why privacy matter, because today government officials, company owners, the news and regular people all ask the same questions:
+Privacy and anonymity is an important issue in the modern world and there are examples of privacy violations everywhere. Before we get to some of them we first need to address why privacy matter, because today government officials, company owners, the news and regular people all ask the same questions:
 
 Why would you want privacy? What are you hiding? Are you criminal?◊sn{summary-discussion}
 
@@ -68,7 +68,7 @@ Why would you want privacy? What are you hiding? Are you criminal?◊sn{summary-
 
 When people are alone and relaxed they do things they otherwise wouldn't. Maybe you like to dance when you're alone, sing in the shower or scratch yourself somewhere... nice. If you're caught in the act you immediately stop what you're doing and feel embarrassed.
 
-If you don't recognize the situation please watch the scene where Hugh Grant plays the ◊link[love-actually-dance]{dancing prime minister in Love Actually}. Even if you do know what I'm talking about the scene's so good you should watch it anyway.
+If you don't recognize the situation please watch the scene where Hugh Grant plays the ◊link[love-actually-dance]{dancing prime minister in Love Actually}. Even if you do recognize the situation, the scene's so good you should watch it anyway.
 
 ◊img[#:src "/images/dancing.png"]{
     What's better than dancing naked, singing your favorite song, without a care in the world?
@@ -105,7 +105,7 @@ Caring about privacy is a natural instinct---for good reason. It's not just abou
 
       The most important advice if you win the lottery is to ◊link[windfall]{not tell anyone}---people will ◊link[windfall-happy]{target you like vultures}. The same advice is given to people who want to invest in physical gold, for similar reasons.
 
-      The best way to get targeted by criminals is to let them know how rich you are.
+      The best way to get targeted by criminals is to let them know how rich you are. And conversely the best way to avoid getting targeted is to hide your wealth.
   }
   ◊li{Crime of opportunity
 
@@ -116,7 +116,7 @@ Caring about privacy is a natural instinct---for good reason. It's not just abou
 ◊ndef["how-to-destroy-someones-life"]{
     I'm a problem solver, and I do wonder how everyday problems are solved. For example how milk ends up in the milk packages or how you paint a heart in the sky with an airplane. Not because I need to solve them---and I don't even want to know the right answer---I just need to let my mind work on something.
 
-    Sometimes the questions are darker, like what's the most effective way to destroy someones life (if we rule out physical harm). And identity theft is the tool I would use.
+    Sometimes the questions are darker, like what's the most effective way to destroy someones life. Stealing their identity have to be one of the top candidates.
 }
 
 ◊(define identity-theft-story "https://www.forbes.com/sites/laurashin/2014/11/18/someone-had-taken-over-my-life-an-identity-theft-victims-story/")
@@ -126,7 +126,7 @@ Caring about privacy is a natural instinct---for good reason. It's not just abou
 
 ◊subhead3{Others have important things to hide}
 
-Even if you don't think you have anything to hide, others do. Here are some examples where lack of economic privacy is harmful for some individuals:◊sn{focus-economic}
+Even if you don't think you have anything to hide, others do. Here are some examples where lack of economic privacy is harmful:◊sn{focus-economic}
 
 ◊ndef["focus-economic"]{
     I focus on the economic side of privacy here, because that's related to cryptocurrencies, but it should be easy to find examples in other areas.
@@ -155,7 +155,7 @@ Even if you don't think you have anything to hide, others do. Here are some exam
   }
   ◊li{A cause for oppression
 
-    In China if you're end up on the ◊link[china-social-credit]{wrong side of their social credit system}, you're banned from spending on "luxuries". If prospective business partners or customers discovers your status as a "deadbeat" you might get shunned and your hope of climbing out of your situation disappear.
+    In China if you're end up on the ◊link[china-social-credit]{wrong side of their social credit system}, you're banned from spending on "luxuries". If prospective business partners or customers discovers your status as a "deadbeat", you might get shunned and your hope of climbing out of your situation disappear.
 
     ◊;Keeping your economy private to outsiders would be a great help.
   }
@@ -219,24 +219,31 @@ They used 100,000 employees and between 500,000 to 2,000,000 snitches to maintai
 
 The goal of the Stasi was to imprison everyone critical of the regime. To do that they tried to map out the lives of everyone---where they went, what they did, what they said and who they talked to. This was painstakingly difficult and required tremendous resources.
 
-But today we live in a society the Stasi couldn't ever hope for. There's no need for a shady person to follow us around, because we already have a surveillance device in our pocket. All information they could ever want is already available, they just have reach out and grab it.
+But today we live in a society the Stasi couldn't ever hope for. There's no need for a shady person to follow us around, because we already have a surveillance device in our pocket. All information they could ever want is already available, they just have reach out and grab it.◊sn{phone-surveillance}
+
+◊ndef["phone-surveillance"]{
+    Our smartphone really do everything the Stasi spies tried to do. It tracks your location, it listens to your conversations and it follows you everywhere. And it always keep a perfect record.
+}
 
 Back in 2013 Edward Snowden revealed that governments were doing just this.
 
 Here are just ◊link[snowden-leaks]{some of the things} he leaked:
 
-◊ol{
-    ◊li{Listen to all phone calls
+◊ol[#:class "snowden-leaks"]{
+    ◊leak["All phone calls are recorded"
+          #:url "https://www.newyorker.com/news/amy-davidson/the-n-s-a-verizon-scandal"]{
 
-        The N.S.A. (the U.S. intelligence service) collect all U.S. phone calls and text messages. They also collect foreign phone calls, including those of foreign leaders such as Angela Merkel.
+        The N.S.A. (the U.S. intelligence service) collect all U.S. phone calls and text messages. They also collect foreign phone calls, including those of foreign leaders such as ◊link[hack-merkel]{Angela Merkel}.
     }
-    ◊li{Remotely controlled phones
+    ◊leak["Remotely controlled phones"
+          #:url "https://www.theregister.co.uk/2015/10/06/gchqs_smurf_army_can_hack_smartphones_says_ed_snowden/"]{
 
         The GCHQ (the british intelligence service) can remotely control your phone. They can for example turn it on remotely and use the microphone to record you.
     }
-    ◊li{Big tech data
+    ◊leak["Big tech data isn't private"
+          #:url "https://www.washingtonpost.com/investigations/us-intelligence-mining-data-from-nine-us-internet-companies-in-broad-secret-program/2013/06/06/3a0c0da8-cebf-11e2-8845-d970ccb04497_story.html"]{
 
-        The government can ask for (or rather demand) data from the big tech companies like Facebook, Google or Apple. If they refuse they can just hack them and steal the data anyway.◊sn{nsa-legality}
+        The government can ask for (or rather demand) data from the big tech companies like Facebook, Google or Apple. If they refuse they can ◊link[hack-big-tech]{just hack them} and steal the data anyway.◊sn{nsa-legality}
 
         ◊ndef["nsa-legality"]{
             The N.S.A. has proved again and again that they stand above such trivial things as legality. For example James Clapper, the Director of National Intelligence, ◊link[clapper]{lied under oath to the Senate}, without any consequence.
@@ -244,17 +251,29 @@ Here are just ◊link[snowden-leaks]{some of the things} he leaked:
             If I did that I'd be in prison for years.
         }
     }
-    ◊li{A search of you
+    ◊leak["A search for you"]{
 
         There's an internal search engine where N.S.A. employees can search through your emails, pictures, medical records and private Facebook messages. Like Google, but with the contents of your online life.
 
-        Snowden writes that it was common for N.S.A. employees to abuse this to spy on their girlfriends, ex-girlfriends or girls they were interested in. This includes sharing nude photos with their co-workers, which the girls either took themselves or photos the N.S.A. took by hacking their webcam. (Quite literally a stalker's wet dream.)◊sn{no-good-guys}
+        Snowden writes in “◊link[permanent-record-book]{Permanent Record}” that it was common for N.S.A. employees to abuse this to spy on their girlfriends, ex-girlfriends or girls they were interested in. This includes sharing nude photos with their co-workers, which the girls either took themselves or photos the N.S.A. took by hacking their webcam. (Quite literally a stalker's wet dream.)◊sn{no-good-guys}
 
         ◊ndef["no-good-guys"]{
             This is a counterpoint to the argument that it's fine for the government or the police to have this data. The government or the police aren't full of only good people---there will always be bad ones somewhere.
         }
     }
 }
+
+◊(define hack-big-tech "https://www.washingtonpost.com/world/national-security/nsa-infiltrates-links-to-yahoo-google-data-centers-worldwide-snowden-documents-say/2013/10/30/e51d661e-4166-11e3-8b74-d89d714ca4dd_story.html")
+◊(define hack-merkel "https://www.spiegel.de/international/germany/cover-story-how-nsa-spied-on-merkel-cell-phone-from-berlin-embassy-a-930205.html")
+
+
+◊(define (leak title #:url [url #f] . text)
+   (define xtitle (if url
+                      (link url title)
+                      title))
+   `(li ((class "leak"))
+      (div [[class "title"]] ,xtitle)
+      ,@text))
 
 As is praxis for authoritative regimes, this capability isn't used to protect the people of the state, but the state itself. Snowden's leaks were to the benefit of the people, yet he and other whistleblowers like him are ◊link[full-power]{facing the full power of the U.S. aimed at them}.
 
@@ -269,7 +288,7 @@ As is praxis for authoritative regimes, this capability isn't used to protect th
 ◊(define clapper "https://www.youtube.com/watch?v=AGYn7ER5U_0")
 ◊(define stasi "https://www.britannica.com/topic/Stasi")
 ◊(define stasi-repression "https://www.reuters.com/article/us-germany-wall-stasi/no-remorse-from-stasi-as-berlin-marks-fall-of-wall-idUSL118487020091104")
-◊(define snowden-leaks "https://prefuse.org/edward-snowden-leaks#the-nsa-can-demand-call-records-and-data-from-telephone-companies")
+◊(define snowden-leaks "https://prefuse.org/edward-snowden-leaks")
 
 ◊qt[#:author "Edward Snowden"
     #:src "Permanent Record"
@@ -310,7 +329,7 @@ I think people often give up their privacy because of ◊strong{fear}. Since the
     That's like sentencing a shoplifter to death---a completely disproportionate response.
 }
 
-Terrorism is real and scary, there's no denying that. But our level of fear is irrational and would be better placed worrying about cars or unhealthy food---both of which kill many more people than terrorism do. Yet fear is such a powerful emotion that it prevents us from thinking logically.
+Terrorism is real and scary, there's no denying that. But our level of fear is irrational and would be better placed worrying about cars or unhealthy food---both of which kill more people than terrorism do. Yet fear is such a powerful emotion that it prevents us from thinking logically.
 
 For example people may be willing to give up their privacy, because it might make it easier to catch terrorists. But if we try to compromise everyones' privacy, we'll jeopardize the personal security of the innocent, while the terrorists will still have access to privacy through strong encryption.◊sn{strong-encryption}
 
@@ -338,25 +357,32 @@ They're selling knowledge about you. What you're searching for, what sites you v
 ◊ndef["predictions"]{
     It might be hard to come to terms with how the algorithms can predict your behavior. But it's really not that different from how Youtube, Netflix or Spotify recommends videos and songs to you.
 
-    Oh? He watched a video of a Japanese rock band? And he's listened to Raubtier? Then let's recommend Band-Maid, he's sure to love them! (I assume this is how Youtube decided to recommend me Band-Maid---the best rock band in the world---to me.)
+    Oh? He watched a video of a Japanese rock band? And he's listened to Raubtier? Then let's recommend ◊link[band-maid]{Band-Maid}, he's sure to love them! (I assume this is how YouTube decided to recommend me ◊link[band-maid]{Band-Maid}---the best rock band in the world.)
 }
+
+◊(define band-maid "https://www.youtube.com/user/BANDMAID")
 
 
 For example they probably know if you're gay or if you're pregnant (and if you are, they'll know if it was an accident, if your parents know about it and who's the father). They might also predict---with high confidence---if you're religious, even if you don't want anyone to know. Or who you're going to vote for in the ◊em{next} election or how likely you are to commit a crime.◊sn{thoughtcrime}
 
 ◊ndef["thoughtcrime"]{
-    ◊em{Pre-crime}, like in the movie Minority Report, is the idea that you can predict someone committing a crime and catching them before they do.
+    ◊em{Pre-crime}, like in the movie ◊link[minority-report]{Minority Report}, is the idea that you can predict someone committing a crime and catching them before they do.
 
-    ◊em{Thoughtcrime}, as explored in the book 1984, says that thoughts are criminal. Like entertaining a politically unacceptable thought.
+    ◊em{Thoughtcrime}, as explored in the book “◊link[1984-book]{1984}”, says that thoughts are criminal. Like entertaining a politically unacceptable thought.
 
-    While fiction, our technology is edging ever closer. Soon we might have killer robots going around streets enforcing laws on our predicted behaviour. (The U.S. already deploys killing drones, which cause civilian casualties.)
+    While fiction, our technology is edging ever closer. Soon we might have killer robots going around streets enforcing laws on our predicted behaviour. (The U.S. already deploys killing drones, which kill civilians.)
 }
+
+◊(define minority-report "https://www.imdb.com/title/tt0181689/")
 
 And it's not just a problem with Google and Facebook. An increasing number of companies are discovering how lucrative your data is. If you buy a Coca-Cola, the information that you bought it at this place and at this specific time might even be worth more than the Coca-Cola itself!
 
-For example smart TVs come with a microphone that listens to everything you do, and the TV company then ◊link[vizo-surveillance]{sell the recordings to the highest bidder}. Credit card companies have full records of all purchases you do---◊link[google-mastercard]{which they sell to someone else}. Even the banks, who we might think should work for us, ◊link[bank-shares]{sell our data to third parties}.
+For example smart TVs come with a microphone ◊link[smart-tvs]{that listens to everything you do}, and the TV company then ◊link[vizo-surveillance]{sell the recordings to the highest bidder}. Credit card companies have full records of all purchases you do---◊link[google-mastercard]{which they sell to someone else}. Even the banks, who we might think should work for us, ◊link[bank-shares]{sell our data to third parties}.
+
+What about your privacy? That's not something they care about, because they can sell it to the highest bidder.
 
 
+◊(define smart-tvs "https://www.washingtonpost.com/technology/2019/09/18/you-watch-tv-your-tv-watches-back/")
 ◊(define bank-shares "https://www.cbc.ca/news/business/banking-information-shared-with-third-parties-1.5102931")
 ◊(define google-mastercard "https://www.bloomberg.com/news/articles/2018-08-30/google-and-mastercard-cut-a-secret-ad-deal-to-track-retail-sales")
 ◊(define vizo-surveillance "https://www.techdirt.com/articles/20190114/08084341384/vizio-admits-modern-tv-sets-are-cheaper-because-theyre-spying-you.shtml")
@@ -374,7 +400,7 @@ For example smart TVs come with a microphone that listens to everything you do, 
 ◊; https://www.ted.com/talks/glenn_greenwald_why_privacy_matters
 
 
-The ◊link[great-man]{◊em{great man theory}} of history is the idea that most of history can be explained by the impact of great men. Julius Caesar, Genghis Khan and Hitler are examples of "great men". (They don't have to be good, just cause large changes.) If Edward Snowden will be considered a great man depends on the effects of his leaks---they might mark a turning point for government surveillance, and change the course of history, or they might be forgotten as a side note in the history books.◊sn{nothing-changed}
+The ◊link[great-man]{◊em{great man theory}} of history says that most of history can be explained by the impact of great men. Julius Caesar, Genghis Khan and Hitler are examples of "great men". (They don't have to be good, just cause large changes.) If Edward Snowden will be considered a great man depends on the effects of his leaks---they might mark a turning point for government surveillance, and change the course of history, or they might be forgotten as a side note in the history books.◊sn{nothing-changed}
 
 ◊ndef["nothing-changed"]{
     It's still uncertain how much will really change, but either way Snowden is my hero.
