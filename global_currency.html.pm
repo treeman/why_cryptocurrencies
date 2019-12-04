@@ -44,7 +44,7 @@ Sending money to other countries, called ◊em{remittance}, is one of the first 
             }
         }
 
-        Compared with the ◊link[rel-crypto-fees]{cryptocurrency fees}, which are ◊strong{less than a cent}.
+        This is expensive compared to ◊link[rel-crypto-fees]{cryptocurrency fees}, which are ◊strong{less than a cent}.
 
 ◊;https://www.westernunion.com/us/en/web/send-money/start
     }
@@ -64,7 +64,7 @@ Sending money to other countries, called ◊em{remittance}, is one of the first 
     }
 }
 
-The big drawback with cryptocurrencies is that you're sending cryptocurrency coins, and if you wanted fiat money you need to find a way to exchange the coins for fiat.
+The big drawback with cryptocurrencies is that you're sending cryptocurrency coins, and if you wanted fiat money you need to find a way to exchange the coins for fiat, which might be difficult, slow or expensive.
 
 ◊(define western-union-fees "https://www.westernunion.com/us/en/web/send-money/start")
 ◊(define large-BTC-tx "https://blockchair.com/bitcoin/transaction/4410c8d14ff9f87ceeed1d65cb58e7c7b2422b2d7529afc675208ce2ce09ed7d")
@@ -123,7 +123,7 @@ Fortunately cryptocurrencies may aid you here. You can store any amount on a pie
 You don't have to physically leave the country to benefit from storing your wealth in a global currency. China is ◊link[china-capital-flight]{struggling with capital leaving the country} and it's one reason they've been trying to ban cryptocurrencies for years.◊sn{cannot-stop}
 
 ◊ndef["cannot-stop"]{
-    China banning cryptocurrencies has become a joke in the community. One week they're legal, the next they're illegal and then they make it illegal again. Last I checked ◊link[china-bans-anti-crypto]{they made it all legal}, but I'm sure they'll change their mind again.
+    China banning cryptocurrencies has become a joke in the community. One week they're legal, the next they're illegal and then they make it legal again. Last I checked ◊link[china-bans-anti-crypto]{they made it all legal}, but I'm sure they'll change their mind again.
 
     I think this is what happens:
 
