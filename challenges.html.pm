@@ -36,11 +36,15 @@ You can explore the Bitcoin blockchain, and see all transactions and addresses, 
 
 In an attempt to make Bitcoin more private "mixing" services can be used. They work by mixing together your coins with the coins of others, in an attempt to obscure where the coins are coming from.
 
-◊todo{IMG of a coinjoin-style shuffle}
+◊img[#:src "/images/coinjoin.png"]{
+    A mixing service makes several addresses send to each other, in order to obfuscate the history. Although not shown here, because it would be messy, all addresses and amounts are still visible.
+}
 
 They're not perfect because you can still have a transaction graph, and you might be able to figure out where the coins originated from anyway. Another approach is used by ◊link[zcash]{the shielded transactions of ZCash}, where all information is hidden.
 
-◊todo{IMG of a ZCash shielded transaction}
+◊img[#:src "/images/zcash-shielded.png"]{
+    Shielded transactions hide both addresses and amount of transactions, but normal transactions still have their details visible.
+}
 
 Both mixing and the shielded transactions in ZCash has a major problem: people need to actively choose to use them. This is annoying for users but it's also ◊link[zcash-problem]{bad for privacy} (you can always try to match inputs and outputs even with a perfect black box mixer). It also raises suspicion and people might ask why you're trying to hide your coins.
 
@@ -52,17 +56,17 @@ With this privacy scheme governments can still ◊link[blacklisting]{blacklist c
 
 ◊link[Monero]{Monero} tries to solve this by hiding amounts and obscuring addresses for all transactions.
 
-◊todo{IMG of a Monero transaction}
+◊img[#:src "/images/monero-transactions.png"]{
+    This is how the Monero blockchain appears to an observer. Each input is hidden among other transactions, but we cannot tell which one is real and which are fake. Receiving addresses are protected by stealth addresses and all amounts are also hidden.
+}
+
+◊img[#:src "/images/monero-transactions2.png"]{
+    The merchant who receives the transaction can see which of the inputs is the correct one, the amount and a tag saying who the payment is from. (Alternatively the merchant could've given John a unique address and skip the transcation tagging.)
+}
 
 You can still verify the proof-of-work and even the coin supply on Monero, although verifying the coin supply isn't as simple as on a transparent blockchain. For more technical details on Monero I recommend “◊link[mastering-monero]{Mastering Monero}” written by SerHack.
 
-While there's been good development in this space, you cannot say privacy and fungibility have been solved yet.◊sn{privacy-solved?} There are weaknesses to the solutions we've seen so far and they also come with disadvantages. For example transactions in Monero are larger than transactions in Bitcoin, making Monero even more difficult to scale. But research is ongoing and I'm hopeful.
-
-◊ndef["privacy-solved?"]{
-    It's difficult to imagine that privacy can every be perfectly solved, by any technology. There are just so many ways information can leak.
-}
-
-◊;Research on how to improve things further is ongoing. But I'm hopeful this will be 
+There are other ideas of how to improve privacy and fungibility for cryptocurrencies, and cryptocurrencies of the future might work differently to what I've described here. There are weaknesses to the solutions we've seen so far and they also come with disadvantages. For example transactions in Monero are larger than transactions in Bitcoin, making Monero even more difficult to scale. But research is ongoing and I'm hopeful.
 
 
 ◊;Cryptocurrencies can be used anonymously---your identity isn't tied to your addresses. But as with all tools, cryptocurrencies won't ◊em{guarantee} your anonymity. For example if you try to buy a VPN anonymously with Bitcoin, your identity might still be revealed if the coins can be traced back to an exchange that have your name. Or they might trace your IP you purchased it with, or track browser cookies or you might just make a silly mistake like associate your name with the email you sign up with.
