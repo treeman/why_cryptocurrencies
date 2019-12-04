@@ -15,7 +15,7 @@
 
 The erosion of personal privacy is one of the many important issues in today's society. Everything we do digitally is tracked---what sites we visit, how long and what we do there. This data is then packaged and stored, waiting to be used to convince us to buy stuff or used to attack us. Even what we do with our own money is tracked and used to figure out how to separate it from us.
 
-One of the very good things about cash---regular coins or bills---is that there's very little tracking on them. You can buy things with them, or give them to someone, and nobody else needs to know about it. Unfortunately people aren't using cash as much anymore, some have even stopped accepting cash, and all the regular alternatives come with the privacy trade-off.
+One of the very good things about cash---physical coins or bills---is that there's very little tracking on them. You can buy things with them, or give them to someone, and nobody else needs to know about it. Unfortunately people aren't using cash as much anymore, some have even stopped accepting cash, and all commonly used alternatives come with the privacy trade-off.
 
 Cryptocurrencies can help us with this---they're digital and just like cash they can be ◊link[private]{used privately}.◊sn{vpn}
 
@@ -83,7 +83,7 @@ I have a child who's two years old, and even he wants privacy sometimes. He like
     It's really quite fascinating. Sometimes I can hug him while he's playing, but sometimes I'm not even allowed to be in the same room. I guess he just wants to be alone from time to time.
 }
 
-People may say privacy don't matter yet their actions tell a different story. For example Facebook's founder Mark Zuckerberg has said that privacy is ◊link[zuckerberg-privacy-not-norm]{no longer a social norm}, but then he buys up four homes surrounding his home ◊link[zuckerberg-buy-privacy]{because he wants privacy}.
+People may say privacy don't matter, yet their actions tell a different story. For example Facebook's founder Mark Zuckerberg has said that privacy is ◊link[zuckerberg-privacy-not-norm]{no longer a social norm}, but then he buys up four homes surrounding his home ◊link[zuckerberg-buy-privacy]{because he wants privacy}.
 
 After all we don't have curtains or blinders on our windows because we do something illegal, it's because we want control over our privacy.
 
@@ -135,7 +135,7 @@ Even if you don't think you have anything to hide, others do. Here are some exam
 ◊ol{
   ◊li{Unwanted pregnancies
 
-      There was a story that went viral years ago on how Target ◊link[teenage-pregnancy]{predicted a teenage pregnancy and exposed it to her father}. In a normal western household it might not be that big of a deal, but ◊link[murder-family-honor]{thousands of women are killed each year} for family "honor". Often for much less than a teenage pregnancy, such as ◊link[dowry-murder]{not getting paid enough for marrying the bride}.
+      There was a story that went viral years ago on how Target ◊link[teenage-pregnancy]{predicted a teenage pregnancy and exposed it to her father}. In a normal western household it might not be that big of a deal, but ◊link[murder-family-honor]{thousands of women are killed each year} for family "honor"---often for much less than a teenage pregnancy, such as ◊link[dowry-murder]{not getting paid enough for marrying the bride}.
   }
   ◊li{Sexual preferences
 
@@ -219,10 +219,10 @@ They used 100,000 employees and between 500,000 to 2,000,000 snitches to maintai
 
 The goal of the Stasi was to imprison everyone critical of the regime. To do that they tried to map out the lives of everyone---where they went, what they did, what they said and who they talked to. This was painstakingly difficult and required tremendous resources.
 
-But today we live in a society the Stasi couldn't ever hope for. There's no need for a shady person to follow us around, because we already have a surveillance device in our pocket. All information they could ever want is already available, they just have reach out and grab it.◊sn{phone-surveillance}
+But today we live in a society the Stasi couldn't even dream of. There's no need for a shady person to follow us around, because we already have a surveillance device in our pocket. All information they could ever want is already available, they just have reach out and grab it.◊sn{phone-surveillance}
 
 ◊ndef["phone-surveillance"]{
-    Our smartphone really do everything the Stasi spies tried to do. It tracks your location, it listens to your conversations and it follows you everywhere. And it always keep a perfect record.
+    Our smartphone really do everything the Stasi spies tried to do. It tracks your location, it listens to your conversations and it follows you everywhere. And it always keeps a perfect record.
 }
 
 Back in 2013 Edward Snowden revealed that governments were doing just this.
@@ -277,9 +277,18 @@ Here are just ◊link[snowden-leaks]{some of the things} he leaked:
 
 As is praxis for authoritative regimes, this capability isn't used to protect the people of the state, but the state itself. Snowden's leaks were to the benefit of the people, yet he and other whistleblowers like him are ◊link[full-power]{facing the full power of the U.S. aimed at them}.
 
+You see, all this data is stored ◊em{forever}, just waiting to be used to nail you for a crime. And let's be clear: everyone has committed a crime. For example how many have ever illegally downloaded a movie or music? Or how many have driven too fast? Not to mention ◊link[uk-stupid-laws]{old ridiculous laws} that are still in effect, such as the ◊link[metropolitan-police-act]{Metropolitan Police Act of 1839}, which makes carrying a plank along a pavement illegal in the U.K. (section 54).◊sn{jews}
+
+◊ndef["jews"]{
+    It's not something wrong with being a Jew, so why would a record of all Jews living in a country be problematic?
+
+    The problem is when a group like the Nazis take control over the country (which happened in only a few years).
+}
 
 ◊(define snowden-lawsuit "https://news.bitcoin.com/snowden-us-seizing-my-book-revenue-is-good-for-bitcoin/")
 ◊(define full-power "https://theintercept.com/2019/08/04/whistleblowers-surveillance-fbi-trump/")
+◊(define uk-stupid-laws "https://www.lawcom.gov.uk/app/uploads/2015/03/Legal_Oddities.pdf")
+◊(define metropolitan-police-act "https://www.legislation.gov.uk/ukpga/Vict/2-3/47/section/54")
 
 
 ◊;link{https://mashable.com/2014/06/05/edward-snowden-revelations/?europe=true}
@@ -331,7 +340,12 @@ I think people often give up their privacy because of ◊strong{fear}. Since the
 
 Terrorism is real and scary, there's no denying that. But our level of fear is irrational and would be better placed worrying about cars or unhealthy food---both of which kill more people than terrorism do. Yet fear is such a powerful emotion that it prevents us from thinking logically.
 
-For example people may be willing to give up their privacy, because it might make it easier to catch terrorists. But if we try to compromise everyones' privacy, we'll jeopardize the personal security of the innocent, while the terrorists will still have access to privacy through strong encryption.◊sn{strong-encryption}
+For example people may be willing to give up their privacy, because it might make it easier to catch terrorists. But if we try to compromise everyones' privacy, we'll jeopardize the personal security of the innocent, while the terrorists will still have access to privacy through strong encryption (with strong encryption it's impossible for ◊em{anyone} to read what you write or access your data). We may think we're more secure, but we're really not.◊sn{tsa}
+
+◊ndef["tsa"]{
+    The security checks at airports are annoying, ◊link[tsa-security-theater]{expensive and ineffective}. It's ◊em{security theater}.
+}
+
 
 ◊ndef["strong-encryption"]{
     With strong encryption it's impossible for ◊em{anyone} to read what you write or access your data.
@@ -342,6 +356,7 @@ For example people may be willing to give up their privacy, because it might mak
 }
 
 ◊(define 9-11 "https://en.wikipedia.org/wiki/September_11_attacks")
+◊(define tsa-security-theater "https://www.aclu.org/sites/default/files/field_document/dem17-tsa_detection_report-v02.pdf")
 
 
 ◊subhead{You're the product}
@@ -379,7 +394,7 @@ And it's not just a problem with Google and Facebook. An increasing number of co
 
 For example smart TVs come with a microphone ◊link[smart-tvs]{that listens to everything you do}, and the TV company then ◊link[vizo-surveillance]{sell the recordings to the highest bidder}. Credit card companies have full records of all purchases you do---◊link[google-mastercard]{which they sell to someone else}. Even the banks, who we might think should work for us, ◊link[bank-shares]{sell our data to third parties}.
 
-What about your privacy? That's not something they care about, because they can sell it to the highest bidder.
+What about your privacy? That's not something they care about, because they can sell it and make lot's of money.
 
 
 ◊(define smart-tvs "https://www.washingtonpost.com/technology/2019/09/18/you-watch-tv-your-tv-watches-back/")
@@ -400,7 +415,7 @@ What about your privacy? That's not something they care about, because they can 
 ◊; https://www.ted.com/talks/glenn_greenwald_why_privacy_matters
 
 
-The ◊link[great-man]{◊em{great man theory}} of history says that most of history can be explained by the impact of great men. Julius Caesar, Genghis Khan and Hitler are examples of "great men". (They don't have to be good, just cause large changes.) If Edward Snowden will be considered a great man depends on the effects of his leaks---they might mark a turning point for government surveillance, and change the course of history, or they might be forgotten as a side note in the history books.◊sn{nothing-changed}
+The ◊link[great-man]{◊em{great man theory}} of history says that most of history can be explained by the impact of great men. Julius Caesar, Genghis Khan and Hitler are examples of "great men". (They don't have to be good or even be men, just people who cause large changes.) If Edward Snowden will be considered a great man depends on the effects of his leaks---they might mark a turning point for government surveillance, and change the course of history, or they might be forgotten as a side note in the history books.◊sn{nothing-changed}
 
 ◊ndef["nothing-changed"]{
     It's still uncertain how much will really change, but either way Snowden is my hero.

@@ -19,6 +19,11 @@ Bitcoin, like most cryptocurrencies, uses a public ledger where all transactions
 
 ◊img[#:src "/images/coin-tracing.png"]{
     After the merchant receives a payment from John, the merchant can see that John has sent 13 BTC to another address and that John still has 40 - 1 - 13 = 26 BTC on the original address.
+    John appears to be quite rich.
+}
+
+◊img[#:src "/images/coin-tracing2.png"]{
+    It's possible to trace coins further back in history. Here we see that John's coins come from a hacked exchange, whose address is known. It might mean John is the hacker or, more probably, that John has received ◊em{tainted} coins (coins associated with illegal behavior).
 }
 
 You can explore the Bitcoin blockchain, and see all transactions and addresses, on a ◊link[blockchair]{blockchain explorer}.◊sn{surveillance-coin}
@@ -51,7 +56,7 @@ With this privacy scheme governments can still ◊link[blacklisting]{blacklist c
 
 You can still verify the proof-of-work and even the coin supply on Monero, although verifying the coin supply isn't as simple as on a transparent blockchain. For more technical details on Monero I recommend “◊link[mastering-monero]{Mastering Monero}” written by SerHack.
 
-While there's been good development in this space, you cannot say privacy and fungibility have been solved yet.◊sn{privacy-solved?} There are weaknesses to the solutions we've seen so far and they also come with disadvantages. For example transactions in Monero are larger than transactions in Bitcoin, making Monero even more difficult to scale.
+While there's been good development in this space, you cannot say privacy and fungibility have been solved yet.◊sn{privacy-solved?} There are weaknesses to the solutions we've seen so far and they also come with disadvantages. For example transactions in Monero are larger than transactions in Bitcoin, making Monero even more difficult to scale. But research is ongoing and I'm hopeful.
 
 ◊ndef["privacy-solved?"]{
     It's difficult to imagine that privacy can every be perfectly solved, by any technology. There are just so many ways information can leak.
