@@ -34,7 +34,7 @@ You can explore the Bitcoin blockchain, and see all transactions and addresses, 
     I personally don't like either of them. They feel too tribal to me, like slurs used to belittle "the others".
 }
 
-In an attempt to make Bitcoin more private "mixing" services can be used. They work by mixing together your coins with the coins of others, in an attempt to obscure where the coins are coming from.
+In an attempt to make Bitcoin more private "mixing" services such as ◊link[coinjoin]{CoinJoin} can be used. They work by mixing together your coins with the coins of others, in an attempt to obscure where the coins are coming from.
 
 ◊img[#:src "/images/coinjoin.png"]{
     A mixing service makes several addresses send to each other, in order to obfuscate the history. Although not shown here, because it would be messy, all addresses and amounts are still visible.
