@@ -143,11 +143,11 @@ You might wonder what does it matter if these businesses disappear. Maybe you do
 
 The cannabis business is experiencing ◊link[cannabis-growth]{explosive growth}, hinting at how many people do care. Porn is another thing that is very popular---but very few would admit they watch it. I can see why some people object against them... But what's the problem with auctions? (Other than being an easy target for ◊link[rel-charge-back-fraud]{charge back fraud}.)
 
-Why should people running and using ◊strong{legal} businesses be punished for arbitrary reasons? A society that punishes people for doing something legal seems insane to me. (Yes, legality is different from morality, a topic we'll revisit in the chapter about ◊link[black-markets]{black markets}.)
+Why should people running and using ◊strong{legal} businesses be punished for arbitrary reasons? A society that punishes people for doing something legal seems insane to me. (Yes, legality is different from morality, a topic we'll revisit in the chapter about ◊link[darknet-markets]{darknet markets}.)
 
 ◊(define re-education "https://www.amnesty.org/en/latest/news/2018/09/china-up-to-one-million-detained/")
 ◊(define cannabis-growth "https://www.marijuanaseo.com/cannabis-industry-statistics/")
-◊(define black-markets "/black_markets.html")
+◊(define darknet-markets "/darknet_markets.html")
 
 
 ◊subhead{Are cryptocurrencies the solution?}

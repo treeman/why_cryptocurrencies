@@ -586,6 +586,43 @@ table.crypto-eval {
     }
 }
 
+.legal-moral {
+    //display: flex;
+    //justify-content: center;
+    //flex-wrap: nowrap;
+
+    @extend %sans-serif-tnum;
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+
+    .row {
+        display: flex;
+        justify-content: center;
+        flex-wrap: nowrap;
+    }
+    .head {
+        font-weight: bold;
+    }
+    .cell {
+        padding: 0.1em 1.0em 0.1em 0.5em;
+        width: 25%;
+        text-align: center;
+    }
+    .gray {
+        background-color: gray;
+    }
+    .bad {
+        background-color: red;
+    }
+    .good {
+        background-color: green;
+    }
+}
+
 .sans {
     @extend %sans-serif;
 }
