@@ -9,32 +9,53 @@
 
 ◊subhead{Legality isn't morality}
 
-◊;Legality isn't equivalent to morality
+There's a concept we need to have in mind while looking at darknet markets: something being illegal doesn't make it immoral, and that everything legal doesn't have to be moral. Legality isn't equivalent to morality.
 
-◊div[#:class "legal-moral"]{
-    ◊row{
-        ◊h{}            ◊h{Illegal}         ◊h{Legal}
-    }
-    ◊row{
-        ◊h{Moral}       ◊gray{gray
-                                more stuff
-                                arg}         ◊good{green}
-    }
-    ◊row{
-        ◊h{Immoral}     ◊bad{red}           ◊gray{gray}
-    }
+Here's a table to illustrate the problem:
+
+◊table-body[#:class "legal-moral"]{
+    ◊tr{◊td{}           ◊ths{Legal}                     ◊ths{Illegal}}
+    ◊tr{◊tds{Moral}     ◊good{Self defense
+                              Free speech}
+                                                        ◊mo-il{Starving child steals food}}
+    ◊tr{◊tds{Immoral}   ◊im-le{Mass surveillance
+                               Civil asset forfeiture}
+                                                        ◊bad{Slavery
+                                                             Murder & rape}}
 }
 
-◊(define (row . txt)
-   `(div ((class "row")) ,@txt))
-◊(define (h . txt)
-   `(div ((class "head cell")) ,@txt))
+It's actually quite hard to classify things as legal or illegal and moral or immoral; they both change depending on country, the time period and who you ask. For instance most would agree that slavery is immoral and should be illegal, but it was in fact legal and viewed as normal for thousands of years. Similarly today in the western world we take free speech for granted, but that's not the case in all countries.
+
+Mass surveillance, which we covered in the chapter Anonymous money, is immoral yet legal.◊sn{surveillance} Civil asset forfeiture, which allows the police to outright take your stuff, is another example of an immoral legal practice. (We'll explore civil asset forfeiture in a future chapter.)
+
+◊ndef["surveillance"]{
+    You can argue that mass surveillance is in fact illegal, but in practice it doesn't really matter as they rewrite the laws anyway.
+}
+
+It's easy to find examples of silly laws that make moral actions illegal (just search for "silly laws" or similar), but I think there are more interesting issues. For example stealing is illegal, but is it immoral for a starving child to steal food to survive? Or for the child to steal food to his starving little sister?
+
+The issue of "right or wrong" isn't so easy to answer, and we cannot just rely on what's legal and what's not.
+
+◊(define (ths txt)
+   `(td ((class "ths")) ,txt))
+◊(define (tds txt)
+   `(td ((class "tds")) ,txt))
 ◊(define (gray . txt)
-   `(div ((class "gray cell")) ,@txt))
+   `(td ((class "gray")) ,@txt))
+◊(define (mo-il . txt)
+   `(td ((class "moral-illegal")) ,@txt))
+◊(define (im-le . txt)
+   `(td ((class "immoral-legal")) ,@txt))
 ◊(define (bad . txt)
-   `(div ((class "bad cell")) ,@txt))
+   `(td ((class "bad")) ,@txt))
 ◊(define (good . txt)
-   `(div ((class "good cell")) ,@txt))
+   `(td ((class "good")) ,@txt))
+
+
+◊subhead{Black markets}
+
+
+◊subhead{Darknet markets}
 
 
 ◊subhead{Ideas}
