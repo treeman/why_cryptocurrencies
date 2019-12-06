@@ -2,8 +2,7 @@
 
 ◊(define-meta title "Uncensorable donations")
 ◊(define-meta subtitle "Donations governments cannot stop")
-◊(define-meta updated "2019-08-28T08:23:58+02:00")
-
+◊(define-meta updated "2019-11-06T21:26:01+01:00")
 ◊(define-meta uuid "f35cab59-0629-4173-9de0-a07a0eef33dc")
 
 ◊; US efforts to jail Assange for espionage are a grave threat to a free media (theguardian.com)
@@ -19,7 +18,7 @@
 In the ◊link[freezing-chapter]{last} two ◊link[undesirable-chapter]{chapters} we looked at the issues with digital payments, but when you think about donations you wouldn't assume they have the same problems as payments have. For example when donating money to a charity, like ◊link[charity-water]{Charity Water}, they don't have to be worried of ◊link[charge-back-fraud]{charge back fraud} because you're voluntarily giving them money.◊sn{voluntary} But the same problem with third-party censorship is relevant here as well.
 
 ◊ndef["voluntary"]{
-    However even charities can be prosecuted for not fulfilling their promises, it's an experience the founder of Charity Water writes in his book ◊link[thirst-book]{Thirst}. So charge backs isn't a completely irrelevant worry.
+    However even charities can be prosecuted for not fulfilling their promises, an experience the founder of Charity Water writes in his book ◊link[thirst-book]{Thirst}. So charge backs isn't a completely irrelevant worry.
 }
 
 ◊(define thirst-book "https://www.charitywater.org/thirst")
@@ -30,7 +29,7 @@ In the ◊link[freezing-chapter]{last} two ◊link[undesirable-chapter]{chapters
 
 ◊(define cheaper-faster "/cheaper_faster.html#cryptocurrency-fees")
 
-Imagine a country doing something really horrible, ◊link[killing-fields]{like purging intellectuals and political opponents}, that would put the government in a bad light. Journalists trying to report on this event may find it difficult or impossible to accept donations so they can continue their work. A payment processor (which are necessary for digital donations)---perhaps under pressure from the government---might block donations or break the journalistic anonymity◊sn{crypto-privacy}, making donations for truth-seeking journalists very difficult or outright dangerous.
+Imagine a country doing something really horrible, like ◊link[killing-fields]{purging intellectuals and political opponents}, that would put the government in a bad light. Journalists trying to report on this event may find it difficult or impossible to accept donations to continue their work. A payment processor (which are necessary for digital donations)---perhaps under pressure from the government---might block donations or break the journalistic anonymity,◊sn{crypto-privacy} making donations for truth-seeking journalists very difficult or outright dangerous.
 
 ◊ndef["crypto-privacy"]{
     Cryptocurrencies also ◊link[crypto-anonymous]{gives better privacy} than other digital payment systems.
@@ -202,7 +201,7 @@ This is ◊strong{not} a glorification of WikiLeaks---they have ◊link[wikileak
       ◊leak["Execution of children"
             #:url "https://www.mcclatchydc.com/news/special-reports/article24696685.html"]{
 
-        In 2006, a group of U.S. soldiers entered a house in Iraq where they executed at least 10 people (9 civilians). Including an infant and four other children---all five years or younger---and elderly women. They then called in an airstrike to cover up the evidence, but postmortems showed they had been handcuffed and shot in the head.◊sn{children-bodies}
+        In 2006, a group of U.S. soldiers entered a house in Iraq where they executed at least 10 people (9 civilians), including an infant and four other children---all five years or younger---and elderly women. They then called in an airstrike to cover up the evidence, but postmortems showed they had been handcuffed and shot in the head.◊sn{children-bodies}
 
         ◊ndef["children-bodies"]{
             Even the infant was shot in the head.
@@ -226,13 +225,13 @@ This is ◊strong{not} a glorification of WikiLeaks---they have ◊link[wikileak
       ◊leak["Civilian deaths in Iraq"
             #:url "https://abcnews.go.com/Politics/wikileaks-iraqi-civilian-deaths-higher-reported/story?id=11953723"]{
 
-        While U.S. officials had previously said no logs existed of civilian deaths in Iraq, leaked cables told another story. 66,081 civilian deaths had been logged out of a total of 109,000 deaths between 2004 and 2009, that's 60.6% innocent people---a horrifyingly bad ratio.◊sn{wtc}
+        While U.S. officials had previously said no logs existed of civilian deaths in Iraq, leaked cables told another story. 66,081 civilian deaths had been logged out of a total of 109,000 deaths between 2004 and 2009, that's 60.6% of all dead being innocent people---a horrifyingly bad ratio.◊sn{wtc}
 
         Leaked cables also indicated that U.S. authorities had failed to investigate hundreds of reports of torture, rape, abuse and murder by Iraqi security officials.
       }
 
       ◊ndef["wtc"]{
-          66 thousand innocent people dead in six years. That's like 22 World Trade center attacks (where 2,977 people died), more than three a year. Or 31 innocent people dead every day during the six years.
+          66 thousand innocent people dead in six years. That's like 22 World Trade center attacks (where 2,977 people died)---more than three a year. Or 31 innocent people dead every day during the six years.
       }
 
     }
@@ -281,7 +280,7 @@ This is ◊strong{not} a glorification of WikiLeaks---they have ◊link[wikileak
     Later ◊link[paypal-freezes-wikileaks]{PayPal freezes WikiLeaks donations} with the reason:◊sn{paypal}
 
     ◊ndef["paypal"]{
-        As far as reasons for shutting down services, PayPal ◊link[freezing-of-merchant-accounts]{doesn't have a good record}. This is at least believable.
+        As far as reasons for shutting down services, PayPal ◊link[freezing-of-merchant-accounts]{doesn't have a good record}. This excuse is at least believable on the surface.
     }
 
     ◊qt{
@@ -296,7 +295,7 @@ This is ◊strong{not} a glorification of WikiLeaks---they have ◊link[wikileak
 
   ◊entry["Banking blockade"
          #:date "Dec 7, 2010"]{
-    This further developed into a ◊link[banking-blockade]{Banking Blockade} which the Bank of America, VISA, MasterCard and Western Union also joined. WikiLeaks claim this destroyed 95% of their revenue and they had to resort to cash reserves.
+    This further developed into a ◊link[banking-blockade]{Banking Blockade} that the Bank of America, VISA, MasterCard and Western Union also joined. WikiLeaks claim this destroyed 95% of their revenue and they had to resort to cash reserves.
 
     The blockade was later ◊link[illegal-blockade]{found to be illegal} and today WikiLeaks again accept donations via PayPal and credit cards, but they suffered large damage at the crucial time when the world was in uproar over the leaks.◊sn{shutdown-successful}
 
@@ -487,7 +486,7 @@ This is ◊strong{not} a glorification of WikiLeaks---they have ◊link[wikileak
 
 There's a minor theme in the WikiLeaks story: How the U.S. government instead of admitting these horrible events, punishing the responsible and making sure they never happen again, seem to do everything to cover them up.
 
-This idea that American soldiers are unconditionally heroes, regardless of they've done, makes me both angry and sad. Donald Trump has for example expressed concerns over soldiers being prosecuted for war crimes, and ◊link[trump-pardons]{considers pardoning them}. This includes a ◊link[gallagher]{Navy Seals soldier} who (allegedly) killed a 15-year old defenseless kid with his hunting knife and shot unarmed civilians. Those aren't the actions of a hero.
+This idea that American soldiers are unconditionally heroes, regardless of what they've done, makes me both angry and sad. Donald Trump has for example expressed concerns over soldiers being prosecuted for war crimes, and ◊link[trump-pardons]{considers pardoning them}. This includes a ◊link[gallagher]{Navy Seals soldier} who (allegedly) killed a 15-year old defenseless kid with his hunting knife and shot unarmed civilians. Those aren't the actions of a hero.
 
 
 But of course covering up or rationalizing events isn't a U.S. only phenomena. Here are other examples:
@@ -498,9 +497,9 @@ But of course covering up or rationalizing events isn't a U.S. only phenomena. H
 
     Maybe you've heard that 1 of 200 people of all people alive today are related to Genghis Khan? That's because he raped young girls wherever he went.◊sn{dan-hitler}
   }
-  ◊li{In Scandinavian countries we talk about us being Vikings with pride.
+  ◊li{In Scandinavian countries we talk about Vikings with pride.
 
-    But the word Viking originally refers to actions of a group; "to viking", "to pirate" or "to pillage". And pillaging means killing, stealing, raping and taking people as slaves. Not unlike the actions of the U.S. soldiers who executed children---which we find so revolting.
+    But the word Viking originally refers to actions of a group: "to viking", "to pirate" or "to pillage". And pillaging means killing, stealing, raping and taking people as slaves. Not unlike the actions of the U.S. soldiers who executed children---which we find so revolting.
   }
   ◊li{How leaders like Ceasar and Kim Jong-il were glorified.
 
@@ -514,7 +513,7 @@ But of course covering up or rationalizing events isn't a U.S. only phenomena. H
 
     ◊em{How long will it take for people to celebrate Hitler?}
 
-    It seems absurd to us now, but remember that Genghis Khan did similarly awful things yet there's ◊link[khan-eurovision]{a song in the 1979 Eurovision Song Contest} about him and how "all women fell for him".
+    It seems absurd to us now, but Genghis Khan did similarly awful things yet there's ◊link[khan-eurovision]{a song in the 1979 Eurovision Song Contest} about him and how "all women fell for him".
 }
 
 ◊ndef["chernobyl-TV"]{
@@ -524,7 +523,7 @@ But of course covering up or rationalizing events isn't a U.S. only phenomena. H
 Unfortunately it seems like a human thing to try to hide your misdeeds instead of coming clean, even when they're exposed.
 
 ◊qt[#:author "A fidgeting child"]{
-    No mom, it was not me!
+    No mom, it wasn't me!
 }
 
 ◊(define chernobyl-accident "https://www.world-nuclear.org/information-library/safety-and-security/safety-of-plants/chernobyl-accident.aspx")
@@ -543,11 +542,13 @@ Unfortunately it seems like a human thing to try to hide your misdeeds instead o
 ◊subhead{Burying the truth will allow it to continue}
 
 ◊qt[#:author "George Orwell"
-    #:src "1984"]{
+    #:quote-src #t
+    #:src "1984"
+    #:url 1984-book]{
     ... if all records told the same tale---then the lie passed into history and became truth. 'Who controls the past,' ran the Party slogan, 'controls the future: who controls the present controls the past.' ... 'Reality control', they called it: in Newspeak, 'doublethink'.
 }
 
-I know what some of you might say and what we others might feel: "I don't want to know about these horrible things". It's true that you'll feel better if you're unaware and you'll probably personally be better off if you act like these never happened.
+I know what some of you might say and what we others might feel: you don't want to know about these horrible things. It's true that you'll feel better if you're unaware and you'll probably personally be better off if you act like these never happened.
 
 But if we practice collective 'forgettance', where we all pretend these never happened, they will continue to happen. This is why what Chelsea Manning and WikiLeaks revealed about the Iraq war is so important: we're forced to confront the truth.◊sn{prevent-future}
 
@@ -560,10 +561,10 @@ But if we practice collective 'forgettance', where we all pretend these never ha
 
 While the U.S. government was able to coerce payment processors and banks to drop WikiLeaks, they could never prevent Bitcoin donations. Even China, with the world's largest internet censorship, cannot censor cryptocurrency transactions.◊sn{china-mining} The best they can do is force some exchanges to cooperate---but that can be worked around, for example by selling bitcoins in person for cash or by avoiding fiat altogether.
 
-It doesn't matter who you are or where you are, you can always accept donations digitally via cryptocurrencies. Even the most powerful nations in the world cannot prevent them, this is something unique for cryptocurrencies.
+It doesn't matter who you are or where you are, you can always accept donations digitally via cryptocurrencies. Even the most powerful nations in the world cannot prevent them, which is something unique for cryptocurrencies.
 
 ◊ndef["china-mining"]{
-    China does have most of the Bitcoin hashrate inside their country. They could theoretically take majority control of Bitcoin's hashrate and censor transactions that way (this is the worst attack possible against a cryptocurrency, called a ◊em{51% attack}). If this happened the Bitcoin community would most likely recognize it as an attack and a chain split would happen, making existing miners worthless.
+    China does have most of the Bitcoin hashrate inside their country. They could theoretically take majority control of Bitcoin's hashrate and censor transactions that way (this is the worst attack possible against a cryptocurrency, called a ◊link[51-attack]{◊em{51% attack}}). If this happened the Bitcoin community would most likely recognize it as an attack and a chain split would happen, making existing miners worthless.
 }
 
 
@@ -571,6 +572,7 @@ It doesn't matter who you are or where you are, you can always accept donations 
 
 ◊(define freezing-chapter "/freezing_of_merchant_accounts.html")
 ◊(define undesirable-chapter "/undesirable_businesses.html")
+◊(define 51-attack "https://www.investopedia.com/terms/1/51-attack.asp")
 
 ◊;https://news.ycombinator.com/item?id=19632449
 ◊;https://www.lrb.co.uk/v36/n05/andrew-ohagan/ghosting

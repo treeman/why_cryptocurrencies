@@ -2,7 +2,7 @@
 
 ◊(define-meta title "For the unbanked")
 ◊(define-meta subtitle "Digital payments for those without a bank account")
-◊(define-meta updated "2019-09-09T08:15:02+02:00")
+◊(define-meta updated "2019-11-06T21:42:36+01:00")
 ◊(define-meta uuid "875332fd-f5ad-4275-8254-008a2e74a4a0")
 
 ◊epigraph{
@@ -63,7 +63,7 @@ The unbanked are in general less educated, where 62% of unbanked have a primary 
 
 ◊subhead{Why are they unbanked?}
 
-The ◊link[findex-report]{Global Findex database} also tried examine why people stay unbanked:
+The ◊link[findex-report]{Global Findex database} also tried to examine why people stay unbanked:
 
 ◊ndef["read-it"]{
     If this is interesting to you I suggest you ◊link[findex-report]{give the report a read}. There are tons of different statistics and I only refer to a fraction of the data available.
@@ -77,7 +77,7 @@ The ◊link[findex-report]{Global Findex database} also tried examine why people
 The most commonly cited barrier was not having enough money. Around 60% said they had too little money to use a bank account, with almost 20% citing it as the sole reason.◊sn{too-little-money}
 
 ◊ndef["too-little-money"]{
-    I assume it might mean poor people who might not have any savings but live day to day. But it's not clear where to draw the line between having too little money, accounts being too expensive and not having a use for an account. It feels these issues should go together to some extent.
+    I assume it might mean poor people who might not have any savings but live day to day. But it's not clear where to draw the line between having too little money, accounts being too expensive and not having a use for an account. I feel these issues would go together to some extent.
 }
 
 Most cite several different reasons, making it hard to rank the issues in importance. For example many say they don't need an account, but if the other barriers were to disappear they might find accounts useful if only they had access to them. At least this gives a sense of what issues are present.
@@ -93,7 +93,7 @@ The question "But how do the unbanked pay for internet?" is always asked when di
     Fewer unbanked adults have both a mobile phone and access to the internet in some form— whether through a smartphone, a home computer, an internet café, or some other way. Globally, the share is about a quarter.
 }
 
-So about ◊strong{420 million} do have access to internet while being unbanked. I don't know if that's true or not, but anecdotally it seems almost all homeless people I've seen owns a smartphone of some sort. You can even get internet in Venezuela◊sn{venezuela-internet}, despite an unreliable power grid. And ◊link[undesirable-chapter]{remember} that even rich and successful can become temporarily unbanked, for example if banks arbitrarily decide porn stars and marijuana supporters aren't something they want to be associated with.◊sn{handelsbanken}
+So about ◊strong{420 million} do have access to internet while being unbanked. I don't know if that's true or not, but anecdotally it seems almost all homeless people I've seen owns a smartphone of some sort. You can even get internet in Venezuela◊sn{venezuela-internet}, despite an unreliable power grid. And consider that even rich and successful ◊link[undesirable-chapter]{can become temporarily unbanked}, for example if banks arbitrarily decide porn stars and marijuana supporters aren't something they want to be associated with.◊sn{handelsbanken}
 
 ◊(define undesirable-chapter "/undesirable_businesses.html")
 
@@ -154,7 +154,7 @@ One of the best ways to fight poverty is ◊link[economic-growth-poverty]{econom
 ◊(define globalization-economic-growth "https://www.thebalance.com/globalization-and-its-impact-on-economic-growth-1978843")
 
 ◊ndef["containers"]{
-    For an interesting angle on how globalization effected the world economy I recommend ◊link[the-box]{The Box: How the Shipping Container Made the World Smaller and the World Economy Bigger}.
+    For an interesting angle on how globalization effected the world economy I recommend “◊link[the-box-book]{The Box: How the Shipping Container Made the World Smaller and the World Economy Bigger}” by Marc Levinson.
 }
 
 ◊ndef["china-isolation"]{
@@ -163,14 +163,13 @@ One of the best ways to fight poverty is ◊link[economic-growth-poverty]{econom
 
 ◊(define china-isolation "https://en.wikipedia.org/wiki/Haijin")
 ◊(define economic-growth-poverty "https://www.cato.org/publications/commentary/ending-mass-poverty")
-◊(define the-box "https://www.amazon.com/Box-Shipping-Container-Smaller-Economy/dp/0691136408")
 ◊(define what-is-money "/what_is_money.html")
 
 
 
 ◊problem-header{Shut-out from society}
 
-It might be relatively fine for you to live in a country without using a bank account---as long as others don't use one either. But what if you live in a country where digital payments are an integral part of society?
+It might be relatively fine for you to live in a country without a bank account---as long as others don't use one either. But what if you live in a country where digital payments are an integral part of society?
 
 For example here in Sweden almost everyone and everything uses digital payments. It would be ◊strong{extremely} difficult for you to live here without a credit card or a bank to pay your bills.
 
