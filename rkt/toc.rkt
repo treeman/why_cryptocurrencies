@@ -29,7 +29,7 @@
      "Anonymous Money"
      "A global currency")
     (brave_new_world.html
-     "Darknet markets"
+     darknet_markets.html
      "A swiss bank account in your pocket"
      "The cashless dystopia"
      "Protection against government seizures"
