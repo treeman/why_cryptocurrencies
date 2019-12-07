@@ -101,7 +101,7 @@ To see the positive side of darknet markets consider this example, which is base
 
 ◊div[#:class "story"]{
 
-    Tom met the love of his life five years ago, 
+    Tom met the love of his life five years ago, when he went to get some of his teeth removed. Hardly the most romantic meeting, with her drilling into his aching teeth, but it was love at first sight.
 
     xyz
 
@@ -109,7 +109,7 @@ To see the positive side of darknet markets consider this example, which is base
 
 While the story is made up, the situation is real. Medicine in the U.S. can be ◊strong{extremely} expensive, and the cost isn't something all families can bear (especially if they get screwed by the insurance company, which is all too common). The same medicine that will ruin you financially is often available for the fraction of the cost from India.
 
-Is it wrong to do what Tom did and them illegally? If it would save the love of your life, the mother of your children, would you be willing to do it? Especially as it would be easy and the risk of getting caught was very small?
+Is it wrong to do what Tom did and bought the medicine illegally? If it would save the love of your life, the mother of your children, would you be willing to do it? Especially as it would be easy and the risk of getting caught was very small?
 
 I'd imagine most would say yes, they would do anything for this. And this is what cryptocurrencies and darknet markets makes possible.
 
