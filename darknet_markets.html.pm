@@ -5,9 +5,17 @@
 ◊(define-meta updated "2019-12-06T07:39:44+01:00")
 ◊(define-meta uuid "4cf3ad81-1c7f-414f-a582-4b2897d27121")
 
+◊epigraph{
+  ◊qt[#:author "Ross Ulbricht, creator of Silk Road"]{
+    I wanted to empower people to be able to make choices in their lives, for themselves and to have privacy and anonymity.
+  }
+}
+
 There's one thing that cryptocurrency proponents and skeptics can agree with: cryptocurrencies are excellent for illegal purposes. In this chapter we'll look at darknet markets---websites where you can buy illegal goods and pay with cryptocurrencies.
 
-I know I wrote in ◊link[about-the-book]{an early chapter} that this book would describe legal use cases, but that's not really true. I try to describe ◊em{moral} use cases, which aren't always legal.  I hope you'll forgive me.◊sn{subjective}
+Before cryptocurrencies, such a site would have trouble existing because payment processors would shut them down quickly. But nobody can block cryptocurrency transactions, and in 2012 the first darknet market "Silk Road" was created using Bitcoin. Since then there's been a ◊link[darknet-markets-history]{bunch of different darknet markets}, much more popular than Silk Road.
+
+I know I wrote in ◊link[about-the-book]{an early chapter} that this book would describe legal use cases, but that's not really true. This book tries to describe ◊em{moral} use cases, which aren't always the same as legal ones. I hope you'll forgive me.◊sn{subjective}
 
 ◊ndef["subjective"]{
     As always where darknet markets fall on the universal scale of good and bad is subjective. But I hope to show that it's not a black-and-white issue.
@@ -15,6 +23,7 @@ I know I wrote in ◊link[about-the-book]{an early chapter} that this book would
 
 ◊(define darknet-markets-news "https://darknetmarkets.org/")
 ◊(define about-the-book "/about_the_book.html")
+◊(define darknet-markets-history "https://weeklyglobalresearch.wordpress.com/2018/05/12/darknet-markets-and-the-shadow-economy/")
 
 
 ◊subhead{Legality isn't morality}
@@ -37,7 +46,9 @@ Here's a table to illustrate the problem:
 
 It's actually quite hard to classify things as legal or illegal and moral or immoral; they both change depending on country, the time period and who you ask. For instance most would agree that slavery is immoral and should be illegal, but it was in fact legal and viewed as normal for thousands of years. Similarly today in the western world we take free speech for granted, but that's not the case in all countries.
 
-Mass surveillance, which we covered in the chapter Anonymous money, is immoral yet legal.◊sn{surveillance} Civil asset forfeiture, which allows the police to outright take your stuff, is another example of an immoral legal practice. (We'll explore civil asset forfeiture in a future chapter.)
+Mass surveillance, which we covered in the chapter ◊link[private-money]{Private money}, is immoral yet legal.◊sn{surveillance} Civil asset forfeiture, which allows the police to outright take your stuff, is another example of an immoral legal practice. (We'll explore civil asset forfeiture in a future chapter.)
+
+◊(define private-money "/private_money.html")
 
 ◊ndef["surveillance"]{
     You can argue that mass surveillance is in fact illegal, but in practice it doesn't really matter as they rewrite the laws anyway.
@@ -90,15 +101,15 @@ Black markets aren't inherently evil, sometimes they're even necessary for our s
 
 Contrary to popular belief you cannot buy ◊em{everything} on a darknet market. In theory it's possible, but in practice darknet markets operate with their own morality.
 
-For instance ◊link[darknet-murders]{you cannot find murder for hire} on a darknet market. This is a myth made popular by the false accusations against ◊link[freeross]{Ross Ulbricht}, the man behind the early darknet market Silk Road. The rumor was manufactured by corrupt federal agents (who got sentenced for it), yet their "evidence" was used by prosecutors and news media to make an example out of Ross.◊sn{theme-example}
+For instance ◊link[darknet-murders]{you cannot find murder for hire} on a darknet market. This is a myth made popular by the false accusations against ◊link[freeross]{Ross Ulbricht}, the creator of the first darknet market Silk Road. The rumor was manufactured by corrupt federal agents (who got sentenced), yet their "evidence" was used by prosecutors and news media to make an example out of Ross.◊sn{theme-example}
 
-Darknet market operators generally block things that are harmful to others. Murder harms others, so it's banned. Child porn is also harmful, so it's banned. Even very dangerous drugs, such as fentanyl, ◊link[ban-fentanyl]{might be unavailable}.
+Darknet market operators generally block things that are harmful to others. Murder harms others, so it's banned. Child porn is also harmful, so it's banned. Even very dangerous drugs, such as fentanyl, ◊link[ban-fentanyl]{might be unavailable}. (But of course the ban isn't 100% effective, just as everywhere else in society.)
 
 ◊ndef["theme-example"]{
     The sentence against Ross is yet another example of how the U.S. government try to make an example out of people. It's good to keep in mind that the criminal justice system is a ◊em{legal} system, not a ◊em{justice} system.
 }
 
-In theory you might be able to find books about banned topics that goes against the regime's propaganda, but usually you go to a darknet market to buy drugs or medicine.
+You might be able to find books about banned topics that goes against the regime's propaganda, but usually you go to a darknet market to buy drugs or medicine.
 
 ◊(define darknet-murders "https://www.wired.co.uk/article/kill-list-dark-web-hitmen")
 ◊(define freeross "https://freeross.org/")
