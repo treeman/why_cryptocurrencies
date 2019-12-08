@@ -5,7 +5,16 @@
 ◊(define-meta updated "2019-12-06T07:39:44+01:00")
 ◊(define-meta uuid "4cf3ad81-1c7f-414f-a582-4b2897d27121")
 
-◊todo{Words}
+There's one thing that cryptocurrency proponents and skeptics can agree with: cryptocurrencies are excellent for illegal purposes. In this chapter we'll look at darknet markets---websites where you can buy illegal goods and pay with cryptocurrencies.
+
+I know I wrote in ◊link[about-the-book]{an early chapter} that this book would describe legal use cases, but that's not really true. I try to describe ◊em{moral} use cases, which aren't always legal.  I hope you'll forgive me.◊sn{subjective}
+
+◊ndef["subjective"]{
+    As always where darknet markets fall on the universal scale of good and bad is subjective. But I hope to show that it's not a black-and-white issue.
+}
+
+◊(define darknet-markets-news "https://darknetmarkets.org/")
+◊(define about-the-book "/about_the_book.html")
 
 
 ◊subhead{Legality isn't morality}
@@ -18,7 +27,8 @@ Here's a table to illustrate the problem:
     ◊tr{◊td{}           ◊ths{Legal}                     ◊ths{Illegal}}
     ◊tr{◊tds{Moral}     ◊good{Self defense
                               Free speech}
-                                                        ◊mo-il{Starving child steals food}}
+                                                        ◊mo-il{Some types of sex
+                                                               Starving child steals food}}
     ◊tr{◊tds{Immoral}   ◊im-le{Mass surveillance
                                Civil asset forfeiture}
                                                         ◊bad{Slavery
@@ -33,9 +43,9 @@ Mass surveillance, which we covered in the chapter Anonymous money, is immoral y
     You can argue that mass surveillance is in fact illegal, but in practice it doesn't really matter as they rewrite the laws anyway.
 }
 
-It's easy to find examples of silly laws that make moral actions illegal (just search for "silly laws" or similar), but I think there are more interesting issues. For example stealing is illegal, but is it immoral for a starving child to steal food to survive? Or for the child to steal food to his starving little sister?
+It's easy to find examples of silly laws that make moral actions illegal (just search for "silly laws" or similar), but I think there are more interesting issues. For example stealing is illegal, but is it immoral for a starving child to steal food to survive? Or for the child to steal food to his starving little sister? And where on the moral scale would you place prostitution?
 
-The issue of "right or wrong" isn't so easy to answer, and we cannot just rely on what's legal and what's not.
+The issue of "right or wrong" isn't so easy to answer, and we cannot just rely on what's legal and what's not. Instead I think we should ask if it's moral or immoral.
 
 ◊(define (ths txt)
    `(td ((class "ths")) ,txt))
@@ -107,7 +117,7 @@ To see the positive side of darknet markets consider this example, which is base
 
 }
 
-While the story is made up, the situation is real. Medicine in the U.S. can be ◊strong{extremely} expensive, and the cost isn't something all families can bear (especially if they get screwed by the insurance company, which is all too common). The same medicine that will ruin you financially is often available for the fraction of the cost from India.
+While the story is made up, the situation is real. Medicine in the U.S. can be ◊strong{extremely} expensive, and the cost isn't something all families can bear (especially if they get screwed by the insurance company, which is all too common). The same medicine that will ruin you financially is often available for a fraction of the cost from darknet markets.
 
 Is it wrong to do what Tom did and bought the medicine illegally? If it would save the love of your life, the mother of your children, would you be willing to do it? Especially as it would be easy and the risk of getting caught was very small?
 
