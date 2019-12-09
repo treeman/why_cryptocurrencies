@@ -56,7 +56,7 @@ Mass surveillance, which we covered in the chapter ◊link[private-money]{Privat
 
 It's easy to find examples of silly laws that make moral actions illegal (just search for "silly laws" or similar), but I think there are more interesting issues. For example stealing is illegal, but is it immoral for a starving child to steal food to survive? Or for the child to steal food to his starving little sister? And where on the moral scale would you place prostitution?
 
-The issue of "right or wrong" isn't so easy to answer, and we cannot just rely on what's legal and what's not. Instead I think we should ask if it's moral or immoral.
+The issue of "right or wrong" isn't so easy to answer, and we cannot just rely on what's legal and what's not. Instead I think we should ask ourselves if it's moral or immoral (which is of course subjective).
 
 ◊(define (ths txt)
    `(td ((class "ths")) ,txt))
@@ -124,15 +124,22 @@ To see the positive side of darknet markets consider this example, which is base
 
     Tom met the love of his life five years ago, when he went to get some of his teeth removed. Hardly the most romantic meeting, with her drilling into his aching teeth, but it was love at first sight.
 
-    xyz
+    Only a year later, they were married with a child on the way. They say love that burns hot quickly runs out, but that wasn't the case for Tom and Melinda. They bought a nice house in a nice suburb and settled down. They were planning a second child, and life was good.
 
+    But then Melinda got sick.
 }
 
-While the story is made up, the situation is real. Medicine in the U.S. can be ◊strong{extremely} expensive, and the cost isn't something all families can bear (especially if they get screwed by the insurance company, which is all too common). The same medicine that will ruin you financially is often available for a fraction of the cost from darknet markets.
+While the story is made up, the situation is real. Medicine in the U.S. can be ◊strong{extremely} expensive, and the cost isn't something all families can bear.◊sn{insurance} The same medicine that will ruin you financially is often available for a fraction of the cost from darknet markets.
+
+◊ndef["insurance"]{
+    It can be extremely expensive, even if you have insurance. The insurance companies ◊link[insurance-screwed]{try really hard} to avoid paying the bills. For example they might only cover certain "approved" medicines, doctors or treatments. And even if they do cover it, sometimes it's still expensive.
+}
 
 Is it wrong to do what Tom did and bought the medicine illegally? If it would save the love of your life, the mother of your children, would you be willing to do it? Especially as it would be easy and the risk of getting caught was very small?
 
-I'd imagine most would say yes, they would do anything for this. And this is what cryptocurrencies and darknet markets makes possible.
+I'd imagine most would say yes, they would do anything to save her. And this is what cryptocurrencies and darknet markets makes possible.
+
+◊(define insurance-screwed "https://health.usnews.com/health-care/for-better/articles/2017-07-13/5-ways-insurance-companies-meddle-in-your-health-care")
 
 
 ◊; https://weeklyglobalresearch.wordpress.com/2018/05/12/darknet-markets-and-the-shadow-economy/
