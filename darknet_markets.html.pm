@@ -116,7 +116,7 @@ You might be able to find books about banned topics that goes against the regime
 ◊(define ban-fentanyl "https://www.theguardian.com/society/2018/dec/01/dark-web-dealers-voluntary-ban-deadly-fentanyl")
 
 
-◊subhead{A darknet story}
+◊subhead{The moral side of darknet markets}
 
 To see the positive side of darknet markets consider this example, which is based on a story I read a few years ago, and try to see yourself in it:
 
