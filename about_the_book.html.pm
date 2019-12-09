@@ -2,7 +2,7 @@
 
 ◊(define-meta title "About the book")
 ◊(define-meta subtitle "A perspective beyond the hype")
-◊(define-meta updated "2019-11-05T07:21:04+01:00")
+◊(define-meta updated "2019-12-02T07:27:35+01:00")
 ◊(define-meta uuid "7ea80c78-aff2-46a1-8d05-1253d7033dc6")
 
 Whenever the topic of cryptocurrencies---where Bitcoin and Ethereum are the most known---come up in conversations they're almost always misunderstood or dismissed.
@@ -67,9 +67,13 @@ There are many problems with cryptocurrencies as they exist today. This isn't an
 ◊ul{
   ◊li{How can a cryptocurrency scale globally?}
   ◊li{How can payments be made secure enough for retail, in a couple of seconds?}
-  ◊li{Bitcoin uses a public ledger where all payments are visible---what about privacy? ◊sn{monero}}
+  ◊li{Bitcoin uses a public ledger where all payments are visible---what about privacy?}
   ◊li{User experience is far from the level of VISA or Apple Pay.}
 }
+
+See the chapter ◊link[challenges]{Challenges for cryptocurrencies} for an explanation of the problems.
+
+◊(define challenges "/challenges.html")
 
 A problem-centric view is great for an engineer or a problem solver but it also limits foresight. For example the computer had many problems and drawbacks when first introduced, but today we ridicule statements like these:
 
@@ -108,12 +112,6 @@ This isn't a deep dive on a technical level. Neither will we focus on a single i
     ◊link[tulip-mania]{Tulip mania} is one of the first recorded speculative bubbles which occurred 1636--1637 in Netherlands. There people speculated on tulip bulbs which reached spectacular prices before crashing down abruptly.
 }
 
-
-◊ndef["monero"]{
-    Bitcoin, like almost all cryptocurrencies, uses a public ledger where you can lookup how many coins any address has and you can also trace all coins to the beginning of time.
-
-    There are cryptocurrencies like ◊link[Monero]{Monero} which hides inputs, outputs and amounts for all transactions making this impossible.
-}
 
 
 ◊ndef["cryptos"]{
