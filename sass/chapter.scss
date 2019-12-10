@@ -64,6 +64,9 @@ $sidenote-float-width: 1280px;
 .chapter h2 > a:hover {
     color: $body-font-color;
 }
+.chapter h3 > a:hover {
+    color: $body-font-color;
+}
 
 
 /*
@@ -115,6 +118,21 @@ $list-p-margin: 0.6em;
         // Avoid floats here as sidenotes may interfere
         margin-left: -2em;
         padding-right: 1.5em;
+    }
+
+    // Description lists
+    dl {
+        font-size: 95%;
+        line-height: 1.35;
+        margin-bottom: 1rem;
+    }
+    dl > dt {
+        font-weight: bold;
+        margin-left: 1em;
+    }
+    dl > dd {
+        margin-left: 2em;
+        margin-bottom: $list-p-margin;
     }
 }
 
@@ -475,7 +493,7 @@ figure {
         font-size: 0.9rem;
     }
 }
-figure.articlewidth, figure.fullwidth {
+figure.fullwidth {
     img {
         width: 100%;
     }
@@ -626,6 +644,27 @@ table.crypto-eval {
     }
 }
 
+.inflation-examples .example {
+    //margin: 0 0.5em 1em 0.5em;
+    margin: 1em 0;
+
+    h3 {
+        margin-top: 0;
+    }
+    .header {
+        font-size: 1.1rem;
+        @extend %sans-serif;
+        line-height: 1;
+        display: flex;
+    }
+    .date {
+        margin-left: 0.5rem;
+    }
+    .txt {
+        margin-left: 0.5rem;
+    }
+}
+
 .wikileaks {
     padding-top: 1em;
     margin-bottom: 1em;
@@ -663,6 +702,12 @@ table.crypto-eval {
         margin-left: 1em;
         font-size: 90%;
     }
+}
+
+.snowden-leaks > li.leak > .title {
+    margin-top: $first-list-offset;
+    margin-bottom: $list-p-margin;
+    font-weight: bold;
 }
 
 .wikileaks li.leak {
@@ -704,9 +749,6 @@ table.crypto-eval {
     }
 }
 
-h3.economic-problem > a {
-    color: $body-font-color;
-}
 
 
 @media only screen and (min-width: 521px) {
@@ -742,9 +784,19 @@ ul > li.neg:before {
     font-family: $code-font-family;
     content: "-";
 }
+ul.talking > li:before {
+    content: "–";
+}
 
 .qt-tab {
     padding-left: 1.2rem;
+}
+
+.sidenote .talking {
+    .row:before {
+        content: "–";
+        padding-right: 0.3rem;
+    }
 }
 
 /*

@@ -26,8 +26,8 @@
      financial_crisis.html
      the_blind_leading_the_blind.html
      a_defective_system.html
-     "Anonymous Money"
-     "A global currency")
+     private_money.html
+     global_currency.html)
     (brave_new_world.html
      "Darknet markets"
      swiss_bank_account_in_your_pocket.html
@@ -42,9 +42,10 @@
      "Verifiable voting")
     (appendix.html
      bitcoin_whitepaper.html
+     challenges.html
      "An introduction to cryptography"
      ;"Who is Satoshi Nakamoto?"
-     "Is Facebook's Libra a cryptocurrency?"
+     ;"Is Facebook's Libra a cryptocurrency?"
      "Further research")))
 
 (define (in-toc? page)
