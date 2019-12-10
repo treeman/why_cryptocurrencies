@@ -64,6 +64,9 @@ $sidenote-float-width: 1280px;
 .chapter h2 > a:hover {
     color: $body-font-color;
 }
+.chapter h3 > a:hover {
+    color: $body-font-color;
+}
 
 
 /*
@@ -115,6 +118,21 @@ $list-p-margin: 0.6em;
         // Avoid floats here as sidenotes may interfere
         margin-left: -2em;
         padding-right: 1.5em;
+    }
+
+    // Description lists
+    dl {
+        font-size: 95%;
+        line-height: 1.35;
+        margin-bottom: 1rem;
+    }
+    dl > dt {
+        font-weight: bold;
+        margin-left: 1em;
+    }
+    dl > dd {
+        margin-left: 2em;
+        margin-bottom: $list-p-margin;
     }
 }
 
@@ -695,6 +713,12 @@ table.legal-moral {
     }
 }
 
+.snowden-leaks > li.leak > .title {
+    margin-top: $first-list-offset;
+    margin-bottom: $list-p-margin;
+    font-weight: bold;
+}
+
 .wikileaks li.leak {
     margin-bottom: 2em;
 
@@ -734,9 +758,6 @@ table.legal-moral {
     }
 }
 
-h3.economic-problem > a {
-    color: $body-font-color;
-}
 
 
 @media only screen and (min-width: 521px) {
@@ -772,9 +793,19 @@ ul > li.neg:before {
     font-family: $code-font-family;
     content: "-";
 }
+ul.talking > li:before {
+    content: "–";
+}
 
 .qt-tab {
     padding-left: 1.2rem;
+}
+
+.sidenote .talking {
+    .row:before {
+        content: "–";
+        padding-right: 0.3rem;
+    }
 }
 
 /*
