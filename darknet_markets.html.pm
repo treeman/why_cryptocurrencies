@@ -148,12 +148,13 @@ To illustrate why darknet markets aren't purely evil, I give you this example, w
 }
 
 ◊ndef["opsec"]{
-    If you do go down this route, and you're worried about getting caught. Please ◊strong{don't} have the package delivered to your home address, and if you use Bitcoin make sure it can't be connected to your identity.
+    If you do go down this route, and you're worried about getting caught. Please ◊strong{don't} have the package delivered to your home address, and if you use Bitcoin make sure it can't be ◊link[privacy-challenge]{connected to your identity}.
 }
 
 
 ◊(define tor "https://www.torproject.org/")
 ◊(define kraken "https://www.kraken.com/")
+◊(define privacy-challenge "")
 
 While the story is made up, the situation is real. Medicine in the U.S. can be ◊strong{extremely} expensive, and the cost isn't something all families can bear.◊sn{insurance} The same medicine that will ruin you financially is often available for a fraction of the cost from darknet markets.
 
