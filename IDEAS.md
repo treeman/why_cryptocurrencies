@@ -3,49 +3,17 @@
  “If you want a picture of the future, imagine a boot stamping on a human face—for ever.”
 ― George Orwell, 1984 
 
-Give a man a gun and he can rob a bank, but give a man a bank, and he can rob the world
-- Tyrell Wellick, Mr. Robot
-
 “He who controls the spice controls the universe.”
 ― Frank Herbert, Dune 
-
-“Fear is the mind-killer.”
-― Frank Herbert , Dune 
-
-"Bitcoin is an extremely important innovation, but not in the way most people think. Bitcoin's real innovation is a globally verifiable proof publishing at a certain time. The whole system is built on that concept and many other systems can also be built on it. The blockchain nails down history, breaking Orwell's dictum of "He who controls the present controls the past and he who controls the past controls the future."
-- Julian Assange
-In the thread: <https://www.reddit.com/r/technology/comments/2ghp54/i_am_julian_assange_ama_about_my_new_book_when/>
-
 
  “War is peace.
 Freedom is slavery.
 Ignorance is strength.”
 ― George Orwell, 1984 
 
-“Who controls the past controls the future. Who controls the present controls the past.”
-
-― George Orwell, 1984 
-
-
 “All the perplexities, confusion and distress in America arise, not from defects in their Constitution or Confederation, not from want of honor or virtue, so much as from the downright ignorance of the nature of coin, credit and circulation.” — John Adams
 
-"It is well enough that people of the nation do not understand our banking and monetary system, for if they did, I believe there would be a revolution before tomorrow morning." — Henry Ford
-
-"Let me issue and control a nation's money and I care not who writes the laws." — Mayer Amschel Rothschild
-
 "I believe that banking institutions are more dangerous to our liberties than standing armies. Already they have raised up a monied aristocracy that has set the government at defiance. The issuing power (of money) should be taken away from the banks and restored to the people to whom it properly belongs.” — Thomas Jefferson
-
-
-  ◊qt[#:author "Frank Herbert"
-      #:src "Dune"]{
-      He who controls the spice controls the universe.
-  }
-
-“Compound interest is the eighth wonder of the world. He who understands it, earns it ... he who doesn't ... pays it.”
-
-― Albert Einstein 
-
-<https://www.reddit.com/r/btc/comments/cuqqe5/let_me_issue_and_control_a_nations_money_and_i/>
 
 ◊qt[#:author "John Tuld"
     #:quote-src #t
@@ -60,78 +28,9 @@ Ignorance is strength.”
 
 # Better digital payments
 
-# A better currency
-
-<https://www.bloomberg.com/opinion/articles/2019-05-06/banks-look-safer-with-deposits>
-
-More money than anyone imagined: an explanation for why the bubble never burst 
- See the comments for some discussion about the Fed
-<https://news.ycombinator.com/item?id=20535390>
-
-
-Read this for Fed actions
-https://news.ycombinator.com/item?id=21028770
-
-◊;https://markets.businessinsider.com/news/stocks/federal-reserve-meeting-september-interest-rate-decision-2019-9-1028535360
-
-◊; https://www.thebalance.com/current-federal-reserve-interest-rates-4770718
-
-◊; McKinsey: Half the World’s Banks Too Weak to Survive Downturn 
-◊; https://news.ycombinator.com/item?id=21320977
-
-◊; Possibly in the blind leading the blind?
-◊; https://www.svd.se/experter-flera-dolda-skal-till-slopad-minusranta
-◊; https://nypost.com/2019/07/29/trump-fails-to-see-rate-cut-would-hurt-savers/
-◊; https://news.ycombinator.com/item?id=21004068
-
-◊;https://news.ycombinator.com/item?id=21028770
-
-Spain outrageous laws etc
-<https://www.reddit.com/r/Monero/comments/dslnta/shoutout_to_use_monero_and_digital_privacy_from/>
-
-
-## Financial crisis
-
-Satoshi quote
-
-Cashing In: How to Make Negative Interest Rates Work 
-<https://news.ycombinator.com/item?id=20079686>
-
-Germany in Uproar as Negative Rates Threaten Saving Obsession 
-<https://news.ycombinator.com/item?id=20792765>
-
-More money than anyone imagined: an explanation for why the bubble never burst 
-<https://news.ycombinator.com/item?id=20535390>
-
-Iceland jails bankers:
-<https://www.bloomberg.com/news/features/2016-03-31/welcome-to-iceland-where-bad-bankers-go-to-prison>
-
-## Blind leading the blind
-
-”Även om erfarenheten med negativa räntor är begränsade drar vi slutsatsen att det har bidragit till ytterligare penningpolitiska stimulanser och enklare ekonomiska villkor”, skriver IMF:s finansiella rådgivare Jose Viñals.
-https://www.svd.se/imf-stottar-stefan-ingves-minusranta
-
-** ”På senare tid har Riksbanken fört en politik som kan vara den sämsta i västvärlden.” **
-Ekonomen och mottagaren av ekonomipriset till Nobels minne Paul Krugman om hur Stefan Ingves skött jobbet på Riksbanken. (Januari)
-https://www.svd.se/har-ar-arets-citat-fran-naringslivet
-
-Also the "magic money tree"
-
-https://www.svd.se/professor-riksbanken-har-inget-mirakelmedel
-https://www.svd.se/experter-oeniga-om-rantan-fruktar-sankning
-
-
-See the case against the FED.
-
-How the FED can be a government agency, completely outside government control:
-
-    The temptetion is to step on the monetary accelerator or at least to avoid the monetary break until after the next election... Giving in to such temptations is likely to impart an inflationary bias to the economy and could lead to instability, recession and economic stagnation. - Alan Greenspan, Chairmain of the FED
-
-
 ## Protection against government seizures
 
 https://news.ycombinator.com/item?id=21464572
-
 
 India voids 500 and 1000 rupee bills
 
@@ -148,43 +47,6 @@ Safe deposit boxes aren't safe
 <https://news.ycombinator.com/item?id=20545276>
 
 <https://www.reddit.com/r/btc/comments/c6cfbf/let_me_tell_you_a_tale_about_ecuador_that_abused/>
-
-## A global currency
-
-This chapter should focus on capital flight and further integration into the global economy.
-How Venezuelans are seeking refuge in cryptos?
-
-Also remittance.
-
-The charity EatBCH feeds Venezuelans.  Sending money to an inaccessible country using cryptocurrencies.
-<https://twitter.com/eatBCH>
-<https://news.bitcoin.com/meet-the-charity-eat-bch-the-p2p-electronic-cash-to-food-system/>
-
-https://cryptoslate.com/venezuelan-crisis-cryptocurrency-privacy/
-https://www.nytimes.com/2019/02/23/opinion/sunday/venezuela-bitcoin-inflation-cryptocurrencies.html
-
-I wanted to help someone in #Venezuela , so I'm tutoring a novice #JavaScript developer as he writes #opensource software. I pay him $100 per week. It's making a huge difference in his life. With #BitcoinCash we don't have to consider what governments or banks think about it.
-<https://mobile.twitter.com/christroutner/status/1142080363981709313>
-<https://www.reddit.com/r/btc/comments/c3brvi/chris_troutner_i_wanted_to_help_someone_in/>
-
-Why China has banned cryptocurrencies: capital flight from the country
-
-"I Don't Want My Money Trapped Here" - Hong Kong Hit By Capital Exodus As Protests Drag On
-<https://www.zerohedge.com/news/2019-08-18/i-dont-want-my-money-trapped-here-hong-kong-hit-capital-exodus-protests-drag>
-
-Why are Venezuelans seeking refuge in cryptos?
-<https://www.bbc.com/news/business-47553048>
-
-<https://www.reddit.com/r/btc/comments/cb7qw1/ama_destroying_myths_about_the_use_of/>
-
-Remittance (or move this to a chapter below a better payment system??)
-
-## Avoids hyperinflation
-
-Fixed setup, nobody can initiate hyperinflation
-Venezuela
-Zimbabwe
-
 
 # Brave new world
 
@@ -288,14 +150,12 @@ Cryptocurrencies have weak relationships with established asset classes, which c
 A peer-to-peer voting algorithm, without blockchain
 <http://vixra.org/pdf/1905.0239v1.pdf>
 
+## Who is Satoshi?
+
+<https://www.gwern.net/Death-Note-Anonymity>
+
 
 # Appendix
-
-## Do everyone need to run a full node?
-
-(Maybe not?)
-
-## Who is Satoshi Nakamoto?
 
 ## Is Facebook's Libra a cryptocurrency?
 
@@ -391,7 +251,7 @@ https://news.ycombinator.com/item?id=11421352
     While the rich don't pay taxes the middle- and lowclass are stuck paying for all services.
     "Just beacuse it's legal doesn't mean it's moral"
     FIFA officials, Lionel Messi is in the papers (might be those who manage him)
-    Links to Putin, Iceland's Prime Minister, drug cartels etc
+    Links to Putin, Iceland's Prime Minister, drug cartels, David Cameron etc
     Lot's of other people who we don't recognize
     Trump also had business there (he was "smart" as to not pay taxes)
         at least 3,450 times by name
@@ -523,6 +383,75 @@ Secret FBI Subpoenas Scoop Up Personal Data from Scores of Companies
 <https://news.ycombinator.com/item?id=21025262>
 
 "Lender of last resort"
+
+
+# Links to sort through
+
+## Better currency
+
+https://www.youtube.com/watch?v=lbarjpJhSLw
+<https://www.bloomberg.com/opinion/articles/2019-05-06/banks-look-safer-with-deposits>
+
+Fed cut rates with 7-3 vote
+https://news.ycombinator.com/item?id=21008239
+
+Why the Federal Reserve is pouring money into the financial system
+https://news.ycombinator.com/item?id=21004068
+
+Modern Monetary Theory (MMT)
+https://www.taxjustice.net/2019/03/05/the-magic-money-tree-from-modern-monetary-theory-to-modern-tax-theory/
+
+Cashing In: How to Make Negative Interest Rates Work 
+<https://news.ycombinator.com/item?id=20079686>
+
+Germany in Uproar as Negative Rates Threaten Saving Obsession 
+<https://news.ycombinator.com/item?id=20792765>
+
+33 AD example
+https://www.businessinsider.com/qe-in-the-financial-crisis-of-33-ad-2013-10?r=US&IR=T&IR=T
+
+https://fortune.com/2019/09/26/the-feds-repo-market-bailout-is-a-sign-of-deeper-problems-that-are-getting-worse-over-time/
+
+<https://www.bloomberg.com/opinion/articles/2019-05-06/banks-look-safer-with-deposits>
+
+More money than anyone imagined: an explanation for why the bubble never burst 
+ See the comments for some discussion about the Fed
+<https://news.ycombinator.com/item?id=20535390>
+
+
+Read this for Fed actions
+https://news.ycombinator.com/item?id=21028770
+
+◊;https://markets.businessinsider.com/news/stocks/federal-reserve-meeting-september-interest-rate-decision-2019-9-1028535360
+
+◊; https://www.thebalance.com/current-federal-reserve-interest-rates-4770718
+
+◊; McKinsey: Half the World’s Banks Too Weak to Survive Downturn 
+◊; https://news.ycombinator.com/item?id=21320977
+
+◊; Possibly in the blind leading the blind?
+◊; https://www.svd.se/experter-flera-dolda-skal-till-slopad-minusranta
+◊; https://nypost.com/2019/07/29/trump-fails-to-see-rate-cut-would-hurt-savers/
+◊; https://news.ycombinator.com/item?id=21004068
+
+◊;https://news.ycombinator.com/item?id=21028770
+
+Spain outrageous laws etc
+<https://www.reddit.com/r/Monero/comments/dslnta/shoutout_to_use_monero_and_digital_privacy_from/>
+
+Satoshi quote
+
+Cashing In: How to Make Negative Interest Rates Work 
+<https://news.ycombinator.com/item?id=20079686>
+
+Germany in Uproar as Negative Rates Threaten Saving Obsession 
+<https://news.ycombinator.com/item?id=20792765>
+
+More money than anyone imagined: an explanation for why the bubble never burst 
+<https://news.ycombinator.com/item?id=20535390>
+
+Iceland jails bankers:
+<https://www.bloomberg.com/news/features/2016-03-31/welcome-to-iceland-where-bad-bankers-go-to-prison>
 
 # Videos
 

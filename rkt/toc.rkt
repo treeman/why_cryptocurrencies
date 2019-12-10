@@ -26,7 +26,7 @@
      financial_crisis.html
      the_blind_leading_the_blind.html
      a_defective_system.html
-     "Anonymous Money"
+     private_money.html
      global_currency.html)
     ("Brave new world"
      "Separation of money and state"
@@ -34,7 +34,6 @@
      "Darknet markets"
      "Protection against government seizures"
      "The cashless dystopia")
-     ;"New asset class?")
     (extensions.html
      timestamping_service.html
      uncensorable_twitter.html
@@ -43,9 +42,10 @@
      "Verifiable voting")
     (appendix.html
      bitcoin_whitepaper.html
+     challenges.html
      "An introduction to cryptography"
      ;"Who is Satoshi Nakamoto?"
-     "Is Facebook's Libra a cryptocurrency?"
+     ;"Is Facebook's Libra a cryptocurrency?"
      "Further research")))
 
 (define (in-toc? page)
