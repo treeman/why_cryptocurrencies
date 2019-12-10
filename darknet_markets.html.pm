@@ -138,7 +138,7 @@ To illustrate why darknet markets aren't purely evil, I give you this example, w
 
     Tom was desperate and was willing to try anything. He'd heard from a friend about "the darknet" where he might find Melinda's medicine for cheap, and while he was skeptical it couldn't hurt to try? After all he was running out of options to try.
 
-    He visited the darknet market his friend had suggested and searched for Melinda's medicine. To his surprise he found several sellers, who could deliver them right to his doorstep in just a few days. He decided to test it out and transferred some Bitcoins to a seller. It was surprisingly easy, but he couldn't shake the feeling he had just been scammed.◊sn{opsec}
+    He visited the darknet market his friend had suggested and searched for Melinda's medicine. To his surprise he found several sellers, who could deliver them right to his doorstep in just a few days. He decided to test it out and transferred some bitcoins to a seller. It was surprisingly easy, but he couldn't shake the feeling he had just been scammed.◊sn{opsec}
 
     But three days later a small package arrived in the mailbox, neatly wrapped in an unassuming box. It was Melinda's medicine, in fact exactly the same brand with the same packaging they used to buy, only now one week of medicine had cost them $30 instead of $600.
 
@@ -148,21 +148,23 @@ To illustrate why darknet markets aren't purely evil, I give you this example, w
 }
 
 ◊ndef["opsec"]{
-    If you do go down this route, and you're worried about getting caught. Please ◊strong{don't} have the package delivered to your home address, and if you use Bitcoin make sure it can't be ◊link[privacy-challenge]{connected to your identity}.
+    If you do go down this route, and you're worried about getting caught, please ◊strong{don't} have the package delivered to your home address. And if you use Bitcoin make sure it can't be ◊link[privacy-challenge]{connected to your identity}.
 }
 
-
+◊(define expensive-cancer-drugs "https://edition.cnn.com/2018/05/11/health/most-expensive-prescription-drugs/index.html")
 ◊(define tor "https://www.torproject.org/")
 ◊(define kraken "https://www.kraken.com/")
-◊(define privacy-challenge "")
+◊(define privacy-challenge "/challenges.html#privacy-and-fungibility")
 
-While the story is made up, the situation is real. Medicine in the U.S. can be ◊strong{extremely} expensive, and the cost isn't something all families can bear.◊sn{insurance} The same medicine that will ruin you financially is often available for a fraction of the cost from darknet markets.
+While the story is made up, the situation is real. Medicine in the U.S. can be ◊link[expensive-cancer-drugs]{◊strong{extremely expensive}}, and the cost isn't something all families can bear.◊sn{insurance} The same medicine that will ruin you financially is often available for a fraction of the cost from darknet markets.
 
 ◊ndef["insurance"]{
-    It can be extremely expensive, even if you have insurance. The insurance companies ◊link[insurance-screwed]{try really hard} to avoid paying the bills. For example they might only cover certain "approved" medicines, doctors or treatments. And even if they do cover it, sometimes it's still expensive.
+    It can be extremely expensive, even if you have insurance. The insurance companies ◊link[insurance-screwed]{try really hard} to avoid paying the bills. For example they might only cover certain "approved" medicines, doctors or treatments. 
+
+    And even if they do cover it, sometimes it's still expensive. Even if you only pay 10% of the original cost, that's still $2,000 if the medicine was $20,000 originally.
 }
 
-Is it wrong to do what Tom did and bought the medicine illegally? If it would save the love of your life, the mother of your children, would you do it? Especially as it would be easy and the risk of getting caught was very small?
+Was it wrong to do what Tom did and bought the medicine illegally? If it would save the love of your life, the mother of your child, would you do it? What if it was easy and the risk of getting caught was very small?
 
 I'd imagine most would say yes, they would do anything to save her. And this is what cryptocurrencies and darknet markets makes possible.
 
