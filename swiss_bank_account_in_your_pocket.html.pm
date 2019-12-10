@@ -17,14 +17,6 @@
 
 Maybe you'll say this is extremely unwanted as it would enable tax-fraud on a global scale. And you'd have a point, there's just one issue: it's already possible.
 
-Let's see what the president of the United States has to say about tax evasion:
-
-◊qt[#:url "https://www.youtube.com/watch?v=uBZR1-onmAo"
-    #:src "Trump debates with Clinton"]{
-    Clinton: He didn't pay any federal income tax.
-    Trump: That makes me smart.
-}
-
 ◊(define panama-papers "https://www.icij.org/investigations/panama-papers/")
 ◊(define panama-papers-doc "https://www.panamapapersdoc.com/")
 
@@ -33,6 +25,17 @@ Let's see what the president of the United States has to say about tax evasion:
 
 ◊subhead{Inequality}
 
-This tax evasion is only available for the very rich.
+Let's see what the president of the United States has to say about tax evasion:
+
+◊qt[#:url "https://www.youtube.com/watch?v=uBZR1-onmAo"
+    #:src "Trump debates with Clinton"]{
+    Clinton: He didn't pay any federal income tax.
+    Trump: That makes me smart.
+}
+
+No Mr. President, that makes you rich. You see, this kind of tax evasion is only available for the very rich.
+
+
+◊subhead{The great leveler}
 
 
