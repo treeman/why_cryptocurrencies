@@ -116,9 +116,9 @@ You might be able to find books about banned topics that goes against the regime
 ◊(define ban-fentanyl "https://www.theguardian.com/society/2018/dec/01/dark-web-dealers-voluntary-ban-deadly-fentanyl")
 
 
-◊subhead{The moral side of darknet markets}
+◊subhead{A darknet story}
 
-To see the positive side of darknet markets consider this example, which is based on a story I read a few years ago, and try to see yourself in it:
+To illustrate why darknet markets aren't purely evil, I give you this example, which is based on real-life story I read a few years ago.
 
 ◊div[#:class "story"]{
 
@@ -126,8 +126,34 @@ To see the positive side of darknet markets consider this example, which is base
 
     Only a year later, they were married with a child on the way. They say love that burns hot quickly runs out, but that wasn't the case for Tom and Melinda. They bought a nice house in a nice suburb and settled down. They were planning a second child, and life was good.
 
-    But then Melinda got sick.
+    But then Melinda got sick. It started with clumsiness, then some vertigo and she became more tired than usual. The doctor gave her some pills, which seemed to help, but when she got worse and when she started vomiting they knew something else was going on.
+
+    Melinda had cancer.
+
+    They went to see specialists, and she started chemotherapy. As luck would have it, she responded well, and the doctors gave her a good chance of recovery. But she was still weak, and needed continuous treatment.
+
+    But Melinda's treatment was expensive, very expensive. Despite insurance, they would still have to come up with $600 a week---that's around $2,400 a month---just for her medicine.
+
+    While they both had decent jobs, and they were even a little frugal, it was very difficult to manage when their monthly expenses doubled, while their income dropped as Melinda couldn't work anymore. They took out a second mortgage, and a bunch of other loans, and starting selling the valuable stuff they had. But it wasn't enough, they were drowning.
+
+    Tom was desperate and was willing to try anything. He'd heard from a friend about "the darknet" where he might find Melinda's medicine for cheap, and while he was skeptical it couldn't hurt to try? After all he was running out of options to try.
+
+    He visited the darknet market his friend had suggested and searched for Melinda's medicine. To his surprise he found several sellers, who could deliver them right to his doorstep in just a few days. He decided to test it out and transferred some Bitcoins to a seller. It was surprisingly easy, but he couldn't shake the feeling he had just been scammed.◊sn{opsec}
+
+    But three days later a small package arrived in the mailbox, neatly wrapped in an unassuming box. It was Melinda's medicine, in fact exactly the same brand with the same packaging they used to buy, only now one week of medicine had cost them $30 instead of $600.
+
+    Tom couldn't understand how it could be so cheap. The medicine seemed real, it came in the same package and Tom even had it tested (can't be too careful, right?) Maybe it was stolen, and the thieves just wanted to sell it quickly? Or was it produced in India, for minimal cost?
+
+    But Tom didn't care. He had already placed his next order from the same seller. Tom only cared about Melinda.
 }
+
+◊ndef["opsec"]{
+    If you do go down this route, and you're worried about getting caught. Please ◊strong{don't} have the package delivered to your home address, and if you use Bitcoin make sure it can't be connected to your identity.
+}
+
+
+◊(define tor "https://www.torproject.org/")
+◊(define kraken "https://www.kraken.com/")
 
 While the story is made up, the situation is real. Medicine in the U.S. can be ◊strong{extremely} expensive, and the cost isn't something all families can bear.◊sn{insurance} The same medicine that will ruin you financially is often available for a fraction of the cost from darknet markets.
 
@@ -135,7 +161,7 @@ While the story is made up, the situation is real. Medicine in the U.S. can be �
     It can be extremely expensive, even if you have insurance. The insurance companies ◊link[insurance-screwed]{try really hard} to avoid paying the bills. For example they might only cover certain "approved" medicines, doctors or treatments. And even if they do cover it, sometimes it's still expensive.
 }
 
-Is it wrong to do what Tom did and bought the medicine illegally? If it would save the love of your life, the mother of your children, would you be willing to do it? Especially as it would be easy and the risk of getting caught was very small?
+Is it wrong to do what Tom did and bought the medicine illegally? If it would save the love of your life, the mother of your children, would you do it? Especially as it would be easy and the risk of getting caught was very small?
 
 I'd imagine most would say yes, they would do anything to save her. And this is what cryptocurrencies and darknet markets makes possible.
 
@@ -146,20 +172,5 @@ I'd imagine most would say yes, they would do anything to save her. And this is 
 
 ◊; Cannot be reached
 ◊;(define darknet-medicine "https://darkwebnews.com/news/high-costs-force-patients-to-dark-net-in-search-of-needed-medicine/")
-
-
-◊subhead{Ideas}
-
-Black markets have typically preferred physical cash because it's permissionless nature. With cryptocurrencies there's now a digital equivalent.  An additional to a digital variant is it's easier to store and move especially in larger amounts.
-
-In particular cryptocurrencies enable dark net markets where you can buy and sell stuff online. Contrary to popular belief these too operate with their own morality where they're mostly about subsets of drugs and medicine.
-
-To see the positive side of dark net markets consider this example and try to see yourself in it:
-
-> Your wife got diagnosed with cancer. Despite having insurance it only covers a part of the extremely high medical costs in the US and you're looking at a yearly expense of $20,000 just for the medicine she needs. This is just too much for you to afford but she needs the medicine otherwise she'll die.
-
-What if I told you the same medicine could be bought in India for a fraction of the cost? What if there was a way to easily order it online? Even if it was illegal would you do it? What if the risk of getting caught was very small? There are variations of the same story, [here's one with a bit more detail](https://darkwebnews.com/news/high-costs-force-patients-to-dark-net-in-search-of-needed-medicine/).
-
-This is exactly what cryptocurrencies and dark net markets gives you.
 
 ◊; <https://podcast.bitcoin.com/e219-Black-Markets-On-The-Blockchain>
