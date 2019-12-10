@@ -21,7 +21,10 @@ Cryptocurrencies won't make the world a better place in all respects. For exampl
 
 Other things skirt the lines between legality and morality, such as the darknet markets which makes it easy to trade any type of goods. Or how cryptocurrencies allows you to store any amount of money, hidden from the watchful eyes of the tax collectors.
 
-While cryptocurrencies in some ways forces the world to change, they can also help us protect ourselves from the changing world. (cashless, protection)
+While cryptocurrencies in some ways forces the world to change, they can also protect us from the changing world. For instance the move towards a cashless society will spell disaster for everyone without access to digital money. But cryptocurrencies are for everyone, and they can shield us from tracking and seizures from the government.
+
+And cryptocurrencies have the potential for something even bigger. For the first time in history there's the possibility to separate control of money from the state.
+
 
 (separation of money and state)
 
@@ -35,7 +38,7 @@ While cryptocurrencies in some ways forces the world to change, they can also he
 }
 
 
-The Pandora's Box has been opened, and for better or worse, the world will change.
+But one things seems clear to me. The Pandora's Box has been opened, and the world will never be the same again.
 
 ◊(define what-are-they? "/what_is_a_cryptocurrency.html")
 ◊(define digital-payments "/better_digital_payments.html")

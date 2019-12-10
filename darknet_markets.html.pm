@@ -11,11 +11,11 @@
   }
 }
 
-There's one thing that cryptocurrency proponents and skeptics can agree with: cryptocurrencies are excellent for illegal purposes. In this chapter we'll look at darknet markets---websites where you can buy illegal goods and pay with cryptocurrencies.
+There's one thing that cryptocurrency proponents and skeptics can agree with: cryptocurrencies are excellent for illegal purposes. And is there a better example than darknet markets---websites where you can buy illegal goods and pay with cryptocurrencies?
 
-Before cryptocurrencies, such a site would have trouble existing because payment processors would shut them down quickly. But nobody can block cryptocurrency transactions, and in 2012 the first darknet market "Silk Road" was created using Bitcoin. Since then there's been a ◊link[darknet-markets-history]{bunch of different darknet markets}, much more popular than Silk Road.
+Before cryptocurrencies, such a site would have trouble existing because payment processors would shut them down quickly. But nobody can block cryptocurrency transactions, and in 2012 the first darknet market "Silk Road" was created using Bitcoin. Since then there's been a ◊link[darknet-markets-history]{bunch of different darknet markets}, many much more popular than Silk Road.
 
-I know I wrote in ◊link[about-the-book]{an early chapter} that this book would describe legal use cases, but that's not really true. This book tries to describe ◊em{moral} use cases, which aren't always the same as legal ones. I hope you'll forgive me.◊sn{subjective}
+I know I wrote in ◊link[about-the-book]{an early chapter} that this book would describe legal use cases, but that's not really true. This book tries to describe ◊em{moral} use cases, which aren't always the same as legal ones. And darknet markets might not even be moral in the end. I hope you'll forgive me.◊sn{subjective}
 
 ◊ndef["subjective"]{
     As always where darknet markets fall on the universal scale of good and bad is subjective. But I hope to show that it's not a black-and-white issue.
