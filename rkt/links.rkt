@@ -33,5 +33,5 @@
 (define thinking-fast-and-slow-book "https://www.goodreads.com/book/show/11468377-thinking-fast-and-slow")
 (define case-against-fed-book "https://www.goodreads.com/book/show/81976.The_Case_Against_the_Fed")
 (define 1984-book "https://www.goodreads.com/book/show/40961427-1984")
+(define antifragile-book "https://www.goodreads.com/book/show/13530973-antifragile")
 (define permanent-record-book "https://www.goodreads.com/book/show/46223297-permanent-record")
-

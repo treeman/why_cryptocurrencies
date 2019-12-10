@@ -76,4 +76,5 @@ If you want to learn more and see more examples just continue reading, or go to 
 ◊(define anonymous "/properties_of_a_cryptocurrency.html#anonymous")
 ◊(define undesirable "/undesirable_businesses.html")
 ◊(define unbanked "/for_the_unbanked.html")
-◊(define borderless "/a_borderless_currency.html")
+◊(define borderless "/global_currency.html")
+

@@ -493,7 +493,7 @@ figure {
         font-size: 0.9rem;
     }
 }
-figure.articlewidth, figure.fullwidth {
+figure.fullwidth {
     img {
         width: 100%;
     }
@@ -670,6 +670,27 @@ table.legal-moral {
         display: flex;
     }
     .date {
+        margin-left: 0.5rem;
+    }
+}
+
+.inflation-examples .example {
+    //margin: 0 0.5em 1em 0.5em;
+    margin: 1em 0;
+
+    h3 {
+        margin-top: 0;
+    }
+    .header {
+        font-size: 1.1rem;
+        @extend %sans-serif;
+        line-height: 1;
+        display: flex;
+    }
+    .date {
+        margin-left: 0.5rem;
+    }
+    .txt {
         margin-left: 0.5rem;
     }
 }
