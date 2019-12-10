@@ -58,7 +58,7 @@ First let's look at some interesting historical examples of things that have bee
            #:img "images/german_notes.png"]{
         Bank notes---paper money---are easy to use but they do have problems of their own. Unless kept in check, by for example ◊link[rel-gold-standard]{the gold standard}, they can be mass produced to cause hyperinflation.
 
-        ◊link[germany-wallpaper]{This is what happened in Germany} after the first world war. They had massive debts after losing the war, so they tried to print enough money to pay off the debts.◊sn{germany-stories}
+        ◊link[germany-wallpaper]{This is what happened in Germany} after the first World war. They had massive debts after losing the war, so they tried to print enough money to pay off the debts.◊sn{germany-stories}
 
         While the inflation was slow at first it quickly ramped up. It culminated in 1924 with a ◊link[germany-notes]{100 billion mark note}, while only four years earlier 100 mark notes were used.
     }

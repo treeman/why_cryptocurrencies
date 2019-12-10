@@ -27,7 +27,7 @@
      the_blind_leading_the_blind.html
      a_defective_system.html
      private_money.html
-     "A global currency")
+     global_currency.html)
     (brave_new_world.html
      "Darknet markets"
      "A swiss bank account in your pocket"
