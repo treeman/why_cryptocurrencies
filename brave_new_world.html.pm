@@ -17,26 +17,17 @@ In previous sections we've looked at how cryptocurrencies provide ◊link[digita
 
 Even if we'd collectively agree that the world would be better off without cryptocurrencies, we cannot make them disappear. We cannot "uninvent" them and they're extremely difficult to shut down. Therefore, like with nuclear bombs, we're stuck with them and have to adapt to a new world.◊sn{destroyer-of-worlds}
 
+◊ndef["destroyer-of-worlds"]{
+    There's an excellent ◊link[hh-destroyer]{Hardcore History episode} on the topic of nuclear weapons and how humanity has been balancing on the edge of destruction ever since their invention.
+}
+
 Cryptocurrencies won't make the world a better place in all respects. For example untraceable digital money makes it easier for people to demand ransoms, such as ◊link[cryptolocker]{CryptoLocker} which locks down your computer and demands payment in order to unlock it.
 
 Other things skirt the lines between legality and morality, such as the darknet markets which makes it easy to trade any type of goods. Or how cryptocurrencies allows you to store any amount of money, hidden from the watchful eyes of the tax collectors.
 
 While cryptocurrencies in some ways forces the world to change, they can also protect us from the changing world. For instance the move towards a cashless society will spell disaster for everyone without access to digital money. But cryptocurrencies are for everyone, and they can shield us from tracking and seizures from the government.
 
-And cryptocurrencies have the potential for something even bigger. For the first time in history there's the possibility to separate control of money from the state.
-
-
-(separation of money and state)
-
-◊;They enable new attacks against your computer, such as ◊link[cryptojacking]{◊em{cryptojacking}}, where hackers use your computer to mine cryptocurrencies or ◊link[cryptolocker]{CryptoLocker} attacks which lock down your computer and 
-
-◊;We'll look at how darknet markets makes it easier than ever to trade goods, without government intervention.
-
-
-◊ndef["destroyer-of-worlds"]{
-    There's an excellent ◊link[hh-destroyer]{Hardcore History episode} on the topic of nuclear weapons and how humanity has been balancing on the edge of destruction ever since their invention.
-}
-
+And cryptocurrencies have the potential for something even bigger. For the first time in history there's the possibility to separate control of money from the state. This would be an historic shift that would cause massive change worldwide. Of course this is speculation on my part, and even if it were to happen it probably wouldn't be during our lifetime.
 
 But one things seems clear to me. The Pandora's Box has been opened, and the world will never be the same again.
 
