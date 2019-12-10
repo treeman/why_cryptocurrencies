@@ -27,7 +27,7 @@
      the_blind_leading_the_blind.html
      a_defective_system.html
      private_money.html
-     "A global currency")
+     global_currency.html)
     ("Brave new world"
      "Separation of money and state"
      "A swiss bank account in your pocket"
