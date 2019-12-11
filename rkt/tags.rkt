@@ -92,6 +92,10 @@
   `(h2
     (a [[name ,(to-name x)]] ,x)))
 
+(define (subhead3 x)
+   `(h3
+     (a [[name ,(to-name x)]] ,x)))
+
 (define (to-name x)
   (string-replace (string-downcase x) " " "-"))
 
