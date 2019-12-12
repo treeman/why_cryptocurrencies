@@ -23,9 +23,13 @@ Even if we'd collectively agree that the world would be better off without crypt
 
 Cryptocurrencies won't make the world a better place in all respects. For example untraceable digital money makes it easier for people to demand ransoms, such as ◊link[cryptolocker]{CryptoLocker} which locks down your computer and demands payment in order to unlock it.
 
-Other things skirt the lines between legality and morality, such as the darknet markets which makes it easy to trade any type of goods. Or how cryptocurrencies allows you to store any amount of money, hidden from the watchful eyes of the tax collectors.
+Other things skirt the lines between legality and morality, such as the darknet markets which make it easy to trade any type of goods. Or how cryptocurrencies allow you to store any amount of money, hidden from the watchful eyes of the tax collectors.
 
-While cryptocurrencies in some ways forces the world to change, they can also protect us from the changing world. For instance the move towards a cashless society will spell disaster for everyone without access to digital money. But cryptocurrencies are for everyone, and they can shield us from tracking and seizures from the government.
+While cryptocurrencies in some ways force the world to change, they can also protect us from the changing world. For instance the move towards a cashless society will spell disaster for everyone without access to digital money. But cryptocurrencies are for everyone, and they can shield us from tracking and seizures by the government.◊sn{friend-or-foe?}
+
+◊ndef["friend-or-foe?"]{
+    Governments can be our friend, but they can also be our foe as well.
+}
 
 And cryptocurrencies have the potential for something even bigger. For the first time in history there's the possibility to separate control of money from the state. This would be an historic shift that would cause massive change worldwide. Of course this is speculation on my part, and even if it were to happen it probably wouldn't be during our lifetime.
 

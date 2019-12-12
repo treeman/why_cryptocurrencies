@@ -13,9 +13,9 @@
 
 There's one thing that cryptocurrency proponents and skeptics can agree with: cryptocurrencies are excellent for illegal purposes. And is there a better example than darknet markets---websites where you can buy illegal goods and pay with cryptocurrencies?
 
-Before cryptocurrencies, such a site would have trouble existing because payment processors would shut them down quickly. But nobody can block cryptocurrency transactions, and in 2012 the first darknet market "Silk Road" was created using Bitcoin. Since then there's been a ◊link[darknet-markets-history]{bunch of different darknet markets}, many much more popular than Silk Road.
+Before cryptocurrencies, such sites would have trouble staying in business because payment processors would shut them down quickly. But nobody can block cryptocurrency transactions, and in 2012 the first darknet market "Silk Road" was created using Bitcoin. Since then there's been a ◊link[darknet-markets-history]{bunch of different darknet markets}, many with much larger volume than Silk Road.
 
-I know I wrote in ◊link[about-the-book]{an early chapter} that this book would describe legal use cases, but that's not really true. This book tries to describe ◊em{moral} use cases, which aren't always the same as legal ones. And darknet markets might not even be moral in the end. I hope you'll forgive me.◊sn{subjective}
+I know I wrote in ◊link[about-the-book]{an early chapter} that this book would describe legal use cases, but that's not really true. This book tries to describe ◊em{moral} use cases, which aren't always the same as legal ones. As we'll see in this chapter, darknet markets might not even be moral, so I hope you'll forgive me.◊sn{subjective}
 
 ◊ndef["subjective"]{
     As always where darknet markets fall on the universal scale of good and bad is subjective. But I hope to show that it's not a black-and-white issue.
@@ -54,7 +54,7 @@ Mass surveillance, which we covered in the chapter ◊link[private-money]{Privat
     You can argue that mass surveillance is in fact illegal, but in practice it doesn't really matter as they rewrite the laws anyway.
 }
 
-It's easy to find examples of silly laws that make moral actions illegal (just search for "silly laws" or similar), but I think there are more interesting issues. For example stealing is illegal, but is it immoral for a starving child to steal food to survive? Or for the child to steal food to his starving little sister? And where on the moral scale would you place prostitution?
+It's easy to find examples of silly laws that make moral actions illegal (just search for "silly laws" or similar), but I think there are more interesting issues. For example stealing is illegal, but is it immoral for a starving child to steal food to survive? Or for the child to steal food for his starving little sister? And where on the moral scale would you place prostitution?
 
 The issue of "right or wrong" isn't so easy to answer, and we cannot just rely on what's legal and what's not. Instead I think we should ask ourselves if it's moral or immoral (which is of course subjective).
 
@@ -78,7 +78,7 @@ The issue of "right or wrong" isn't so easy to answer, and we cannot just rely o
 
 ◊link[black-markets]{◊em{Black markets}} refers to transactions outside government control. They're usually related to illegal behaviour in some way, like tax avoidance or the trade of illegal goods.
 
-Black markets have existed as long as taxes have been collected, and it's not just for hardcore criminals. How many people do you know who've paid a craftsman of the book? Maybe paid a friend to paint the house, or paid a mechanic friend to fix the car? If it was paid in cash, and never officially registered the work, then they've engaged in a black market trade.◊sn{geothermal}
+Black markets have existed as long as taxes have been collected, and it's not just for hardcore criminals. How many people do you know who've paid a craftsman off the book? Maybe paid a friend to paint the house, or paid a mechanic friend to fix the car? If it was paid in cash, and never officially registered the work, then they've engaged in a black market trade.◊sn{geothermal}
 
 ◊ndef["geothermal"]{
     Warming houses with ◊link[geothermal]{geothermal heating} is popular where we live. It works by drilling a large hole in the ground and transport heat from the ground up into the house, and is a cost-effective way to heat houses. Many people drill the holes off the books, which can save you a lot of money.
@@ -91,7 +91,7 @@ Black markets have existed as long as taxes have been collected, and it's not ju
 
 In countries with corruption or dysfunctional governments black markets are huge. For example in the Soviet Union many people relied on black markets to get their food supply when the market economy failed them. Or in Greece during the economic breakdown in the 2010s, the black market was ◊link[greece-black-markets]{estimated at 20 to 25 percent of the GDP}.
 
-Black markets aren't inherently evil, sometimes they're even necessary for our survival. Instead they contain both good and bad things, which should be judged on a case-by-case basis.
+Black markets aren't inherently evil, sometimes they're even necessary for our survival. Instead they deal in both good and bad things, each of which should be considered on a case-by-case basis.
 
 ◊(define black-markets "https://www.investopedia.com/terms/b/blackmarket.asp")
 ◊(define greece-black-markets "https://www.nytimes.com/2017/02/18/world/europe/greece-bailout-black-market.html")
@@ -101,15 +101,15 @@ Black markets aren't inherently evil, sometimes they're even necessary for our s
 
 Contrary to popular belief you cannot buy ◊em{everything} on a darknet market. In theory it's possible, but in practice darknet markets operate with their own morality.
 
-For instance ◊link[darknet-murders]{you cannot find murder for hire} on a darknet market. This is a myth made popular by the false accusations against ◊link[freeross]{Ross Ulbricht}, the creator of the first darknet market Silk Road. The rumor was manufactured by corrupt federal agents (who got sentenced), yet their "evidence" was used by prosecutors and news media to make an example out of Ross.◊sn{theme-example}
+For instance ◊link[darknet-murders]{you cannot hire a hitman} on a darknet market. This is a myth made popular by the false accusations against ◊link[freeross]{Ross Ulbricht}, the creator of the first darknet market Silk Road. The rumor was manufactured by corrupt federal agents (who got sentenced), yet their "evidence" was used by prosecutors and news media to make an example out of Ross.◊sn{theme-example}
 
 Darknet market operators generally block things that are harmful to others. Murder harms others, so it's banned. Child porn is also harmful, so it's banned. Even very dangerous drugs, such as fentanyl, ◊link[ban-fentanyl]{might be unavailable}. (But of course the ban isn't 100% effective, just as everywhere else in society.)
 
 ◊ndef["theme-example"]{
-    The sentence against Ross is yet another example of how the U.S. government try to make an example out of people. It's good to keep in mind that the criminal justice system is a ◊em{legal} system, not a ◊em{justice} system.
+    The sentence against Ross is yet another example of how the U.S. government tries to make an example out of people. It's good to keep in mind that the criminal justice system is a ◊em{legal} system, not a ◊em{justice} system.
 }
 
-You might be able to find books about banned topics that goes against the regime's propaganda, but usually you go to a darknet market to buy drugs or medicine.
+So if none of those things are available, what can you buy on a darknet market? You might be able to find books about banned topics that goes against the regime's propaganda, but usually you go to a darknet market to buy drugs or medicine. You can buy the same medicine elsewhere, but they might be much more expensive due to patents and other taxes.
 
 ◊(define darknet-murders "https://www.wired.co.uk/article/kill-list-dark-web-hitmen")
 ◊(define freeross "https://freeross.org/")
@@ -118,7 +118,7 @@ You might be able to find books about banned topics that goes against the regime
 
 ◊subhead{A darknet story}
 
-To illustrate why darknet markets aren't purely evil, I give you this example, which is based on real-life story I read a few years ago.
+The following example, based on a real-life story I read a few years ago, illustrates why darknet markets aren't purely evil.
 
 ◊div[#:class "story"]{
 
@@ -166,7 +166,7 @@ While the story is made up, the situation is real. Medicine in the U.S. can be �
 
 Was it wrong to do what Tom did and bought the medicine illegally? If it would save the love of your life, the mother of your child, would you do it? What if it was easy and the risk of getting caught was very small?
 
-I'd imagine most would say yes, they would do anything to save her. And this is what cryptocurrencies and darknet markets makes possible.
+I'd imagine most would say yes, they would do anything to save her. While there are bad stuff on darknet markets, many of which are illegal, in this case cryptocurrencies and darknet markets helped save Tom's family, and I see that as a good thing.
 
 ◊(define insurance-screwed "https://health.usnews.com/health-care/for-better/articles/2017-07-13/5-ways-insurance-companies-meddle-in-your-health-care")
 
