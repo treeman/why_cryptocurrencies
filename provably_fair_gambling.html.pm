@@ -1,5 +1,7 @@
 #lang pollen
 
+◊(require pollen/unstable/pygments)
+
 ◊(define-meta title "Provably fair gambling")
 ◊(define-meta subtitle "Gambling where you cannot cheat the odds")
 ◊(define-meta updated "2019-12-12T16:36:17+01:00")
@@ -24,7 +26,7 @@ But it's hard to verify that a gamble is fair. With a coin you ◊em{might} be a
     There was a big poker scandal several years ago where it was discovered that ◊link[poker-scandal]{Ultimate Bet and Absolute Poker cheated in online poker}. They were discovered by people who noticed certain users who had "abnormally high winning statistics". Turns out they were using a superuser account that could see all cards.
 }
 
-With cryptocurrencies we can device a scheme where the gambling is provably fair. We can create a gambling site where users are sure the bets are fair, with mathematical certainty, and without a trusted third party facilitating the bets.
+With cryptocurrencies we can device a scheme where the gambling is provably fair. We can create a gambling site where users are sure the bets are fair---with mathematical certainty---and without a trusted third party facilitating the bets.
 
 ◊(define poker-scandal "https://upswingpoker.com/ultimate-bet-absolute-poker-scandal/")
 ◊(define oceans-11 "https://www.imdb.com/title/tt0240772/")
@@ -41,7 +43,7 @@ With cryptocurrencies we can device a scheme where the gambling is provably fair
 
 ◊subhead{A simple provably fair gambling scheme}
 
-Our scheme allows us to prove that a gamble was fair, and it also gives us proof that a gamble has happened and what the results were. It relies on ◊link[embedding-data]{embedding data} on a public blockchain and uses ◊link[timestamping-service]{timestamps as proof of existence}.
+Our scheme allows us to prove that a gamble was fair, and it also gives us proof that a gamble has happened and what the results were. It relies on ◊link[embedding-data]{embedding data} and ◊link[timestamping-service]{timestamping it} on a blockchain, where data cannot be erased.
 
 A prerequisite is that the casino has published their gambling algorithm. If you also want to be able to prove to a third party that the gamble happened, both the casino and the player needs to sign off on the bet before playing out the bet.◊sn{otherwise}
 
@@ -55,7 +57,19 @@ Our gambling algorithm is simple. We should concatenate the casino's seed with t
 ◊; Actually import the python script file instead
 ◊; Some simple syntax highlighting
 
-◊code{
+◊; Highlighting docs:
+◊; https://pygments.org/docs/formatters/
+◊;
+◊; Hacky pollen implementation is here:
+◊; /var/tmp/15509522741550952274721-mbutterick_pollen_master/pollen/unstable
+◊; /var/tmp/15509522741550952274721-mbutterick_pollen_master/pollen/private/external
+◊;
+◊; Better to create our own...?
+◊; We want to set the "wrapcode" option for instance.
+◊highlight['python]{
+           ◊;#:python-executable "python3"
+           ◊;#:line-numbers? #f
+           ◊;#:css-class #f]{
     import random
 
     casino_seed = input("Please enter the casino seed: ")
@@ -81,10 +95,24 @@ Concretely a game could play out like this:
         }
     }
     ◊li{The player sends their seed ◊icode{1} to the casino.}
-    ◊li{The Casino says they won, and reveals that their seed was ◊icode{4}.}
+    ◊li{The casino says they won, and reveals that their seed was ◊icode{4}.}
 }
 
-To prove that the bet was made, the above interactions should be recorded on the blockchain and signed by both parties.
+To prove that the bet was made, the above interactions should be recorded on the blockchain and signed by both parties.◊sn{pull-out}
+
+◊todo{Clarify that you can sign without a blockchain... REWRITE}
+
+◊ndef["pull-out"]{
+    Let's see what we can prove, if either party aborts the bet.
+
+    If the player stops at 1, after having received the encoded seed, the bet simply never happens.
+
+    If the casino stops at 2, after the player has sent their seed to the casino, the bet should be considered played out. Here the casino knows the outcome, but hasn't told the player yet. The player can now prove they entered a bet with the casino, and on what terms.
+
+    If the casino doesn't reveal their seed at step 3, then the casino has most likely lost, and we should treat it like the casino is trying to cheat.
+
+    After step 3, there's proof that they entered the bet and what the outcome was. If the casino refuses to pay a winner, there's irrefutable proof that they in fact won the bet.
+}
 
 Now the player would like to verify that they did in fact lose:
 
@@ -142,9 +170,22 @@ While this simple scheme work well for some types of gambling, there are limits:
 
         It's not possible to bet on real life event, like the outcome of an ice hockey game, without relying on a trusted third party to announce the result of the game (often called an Oracle).
 
-        Mind you, that can still be useful. For example if you want to place a bet with an acquaintance, and you both trust The New York Times to correctly announce the result of the game. But this might be overkill for such a use case, you can get far by having both of you sign a message where you describe the bet, and ◊link[timestamping-service]{timestamp it}.
+        Mind you, that can still be useful. For example if you want to place a bet with an acquaintance, and you both trust The New York Times to correctly announce the result of the game. But you don't need a complex scheme like the one I described for such a use case. Just have both of you sign a message where you describe the bet, and timestamp it before the game.◊sn{oracle-smart}
+
+        ◊ndef["oracle-smart"]{
+            A more interesting scheme would be to give control of the funds to the Oracle, but only allow it to send the funds back to either of you, to prevent the Oracle from stealing the money. (Maybe include a timeout to return the funds and cancel the bet if the Oracle doesn't take any action.)
+        }
     }
 }
 
+◊todo{Rewrite this, this is wrong}
+
+Maybe you'll say that you don't need a cryptocurrency for provably fair gambling, hashing and pseudo-random algorithms are much older after all. But there's no other way to store data in a tamper proof way, or to timestamp it without third party trust, than in the blockchain of a cryptocurrency.
+
+That's why, for the first time in history, you can gamble in a provably fair way.
+
 ◊(define embedding-data "/extensions.html#embedding-data")
 ◊(define timestamping-service "/timestamping_service.html")
+
+
+◊subhead{Why is a cryptocurrency necessary?}
