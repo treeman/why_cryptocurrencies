@@ -43,15 +43,40 @@ With cryptocurrencies we can device a scheme where the gambling is provably fair
 
 ◊subhead{A simple provably fair gambling scheme}
 
-Our scheme allows us to prove that a gamble was fair, and it also gives us proof that a gamble has happened and what the results were. It relies on ◊link[embedding-data]{embedding data} and ◊link[timestamping-service]{timestamping it} on a blockchain, where data cannot be erased.
+Here's a simple scheme that allows us to prove that a gamble has happened, what the results were and how to verify if it was fair.
 
-A prerequisite is that the casino has published their gambling algorithm. If you also want to be able to prove to a third party that the gamble happened, both the casino and the player needs to sign off on the bet before playing out the bet.◊sn{otherwise}
+Our gambling algorithm is simple. We should concatenate the casino's seed with the player's seed and use it to initialize a pseudo-random generator, which will flip a coin and pick the winner.
+
+To understand why it works, it's important to understand how a pseudo-random generator works. Take this random sequence for example:
+
+◊code{
+    1 2 2 9 0 3 3 8 5 9 …
+}
+
+The important part about it is that you cannot predict what number comes next. That's why it's ◊em{random}.
+
+But if we want to flip a coin, and verify how it was flipped without looking at it, how could we do that? It's simple---just flip it again in ◊strong{exactly} the same way as you did before, and it should land exactly like it did before. (I didn't say it was easy!)
+
+With a pseudo-random generator that's what we can do. We give it a ◊em{seed}, which will produce the sa
+
+◊code{
+    seed 13:
+    4 4 2 3 2 3 2 2 1 8 …
+}
+
+◊code{
+    seed 7:
+    5 2 6 0 1 8 1 5 9 0 …
+}
+
+Here's a simple Python 3 script that does the gamble for us:
+
+◊;Firstly the casino has to have published their gambling algorithm, and if you want to be able to prove to a third party that the gamble took place, both the casino and the player needs to sign off on the bet before playing out the bet.◊sn{otherwise}
 
 ◊ndef["otherwise"]{
     If you don't publically sign the bet, there's always the risk that the casino can say that it never happened, and you cannot prove otherwise.
 }
 
-Our gambling algorithm is simple. We should concatenate the casino's seed with the player's seed and use it to initialize Python 3's pseudo-random generator, which will pick the winner. Here's a simple script that does this:
 
 ◊; FIXME
 ◊; Actually import the python script file instead
@@ -66,10 +91,11 @@ Our gambling algorithm is simple. We should concatenate the casino's seed with t
 ◊;
 ◊; Better to create our own...?
 ◊; We want to set the "wrapcode" option for instance.
-◊highlight['python]{
+◊;◊highlight['python]{
            ◊;#:python-executable "python3"
            ◊;#:line-numbers? #f
            ◊;#:css-class #f]{
+◊code{
     import random
 
     casino_seed = input("Please enter the casino seed: ")
@@ -82,7 +108,9 @@ Our gambling algorithm is simple. We should concatenate the casino's seed with t
     print("The winner is:", random.choice(['casino', 'player']))
 }
 
-This code essentially flips a coin and announces the winner.
+This code essentially uses the seeds to flip a coin and decide the winner.
+
+◊todo{Describe what a seed and pseudo-randomness is}
 
 Importantly the casino should give out the seed hidden behind a one-way hash function, otherwise the player can just pick the winning seed and there would be no gamble. When the player has sent their seed to the casino, the bet has been made, and the casino reveals their seed (which we can verify with the hashed value) and we know who won and who lost.
 
@@ -98,9 +126,7 @@ Concretely a game could play out like this:
     ◊li{The casino says they won, and reveals that their seed was ◊icode{4}.}
 }
 
-To prove that the bet was made, the above interactions should be recorded on the blockchain and signed by both parties.◊sn{pull-out}
-
-◊todo{Clarify that you can sign without a blockchain... REWRITE}
+To prove that the bet was made, the above interactions should be signed by both parties, complete with timestamps. It doesn't even have to be on a blockchain, just having a public key connected to their identity is enough. As long as either party has the signed messages, it's all good.◊sn{pull-out}
 
 ◊ndef["pull-out"]{
     Let's see what we can prove, if either party aborts the bet.
@@ -131,7 +157,7 @@ Now the player would like to verify that they did in fact lose:
 
         Which matches the hash the casino gave out before the bet.
     }
-    ◊li{Then we can use the Python script to verify the bet:
+    ◊li{Then we can use the Python script to verify the gamble:
 
         ◊code{
             Please enter the casino seed: 4
@@ -142,50 +168,59 @@ Now the player would like to verify that they did in fact lose:
     }
 }
 
+It checks out, the casino won fair and square.
+
 ◊; https://bitcoinchaser.com/provably-fair-gambling/
 
 
 ◊subhead{Limits to this scheme}
 
-While this simple scheme work well for some types of gambling, there are limits:
+There are limits to the simple toy example I've described:
 
 ◊ol{
+    ◊li{Seeds need to be longer
+
+        A seed like ◊icode{4} is far too simple. We'd need a much longer seed for the game to be secure. Maybe something like ◊icode{65654687731080707945}?
+    }
     ◊li{Multiplayer games are more complex
 
-        This scheme works fine for simple single player games, like flipping a coin. But if we wanted to create a provable fair poker game the implementation would be more complex, but we could do it.◊sn{encrypt}
+        This scheme works fine for simple single player games, like flipping a coin. But if we wanted to create a provable fair poker game the implementation would be more complex, but it would be possible.◊sn{encrypt}
 
         ◊ndef["encrypt"]{
-            Here we would have to encrypt your cards and hide them from other players, but they still need to be able to verify that they were dealt out correctly after the fact.
+            Here we'd have to encrypt your cards and hide them from other players, but they still need to be able to verify that they were dealt out correctly after the fact.
 
             I leave the implementation details as an exercise for the reader.
         }
     }
-    ◊li{You might not get paid
-
-        Even if you have solid proof that you won a bet, the betting site might still refuse to pay out. With the scheme I've described here, we cannot eliminate that risk.
-
-        But with smart contracts, on a cryptocurrency with a powerful scripting language like Ethereum, we might enforce the payment as well. So when both parties accept the bet they lock up funds in the bet, and the smart contract will be responsible to pay it out to the winner.
-    }
-    ◊li{Only for digitally randomized bets
+    ◊li{Only for digitally randomized gambles
 
         It's not possible to bet on real life event, like the outcome of an ice hockey game, without relying on a trusted third party to announce the result of the game (often called an Oracle).
-
-        Mind you, that can still be useful. For example if you want to place a bet with an acquaintance, and you both trust The New York Times to correctly announce the result of the game. But you don't need a complex scheme like the one I described for such a use case. Just have both of you sign a message where you describe the bet, and timestamp it before the game.◊sn{oracle-smart}
-
-        ◊ndef["oracle-smart"]{
-            A more interesting scheme would be to give control of the funds to the Oracle, but only allow it to send the funds back to either of you, to prevent the Oracle from stealing the money. (Maybe include a timeout to return the funds and cancel the bet if the Oracle doesn't take any action.)
-        }
     }
 }
 
-◊todo{Rewrite this, this is wrong}
+◊subhead{How does this relate to cryptocurrencies?}
 
-Maybe you'll say that you don't need a cryptocurrency for provably fair gambling, hashing and pseudo-random algorithms are much older after all. But there's no other way to store data in a tamper proof way, or to timestamp it without third party trust, than in the blockchain of a cryptocurrency.
+Until now, nothing I've described requires a cryptocurrency (and if you don't need it, you shouldn't use it). So why bring it up in a book about cryptocurrencies?
 
-That's why, for the first time in history, you can gamble in a provably fair way.
+By embedding the messages between the casino and the player on the blockchain, we get a permanent record of all gambles that take place. It would be proof of dishonest behaviour and act as a reputation boost for honest casinos.
+
+But we can go further. The biggest issue with our simple scheme is that the casinos can still decide not to pay. There's nothing forcing them to pay the players if they win big---they could just take the money and run.
+
+With smart contracts, on a cryptocurrency with a powerful scripting language like Ethereum, we might enforce the payment as well. In our example when accepting the bet, both the casino and the player can lock up their funds in a smart contract that will play out the bet (like in the Python script) and send the funds to the winner. This removes the risk of the casino refusing to pay out if you manage to win.◊sn{programmable-money}
+
+You can also improve the state of sports betting. A smart contract can give an Oracle the power to transfer the money of a gamble to the winner---but it's only allowed to send it to either the player or the casino, so the Oracle cannot steal the money. This is good if you can trust the Oracle to call the result of a game, but you don't want to let them hold the money themselves.◊sn{timeout}
+
+◊ndef["programmable-money"]{
+    Smart contracts like these is why cryptocurrencies are sometimes called "programmable money".
+}
+
+◊ndef["timeout"]{
+    You can also include a timeout to return the funds and cancel the bet if the Oracle doesn't take any action. Or allow the player and casino to cancel the bet and return all funds, if they both agree.
+}
+
+This is why provably fair gambling, backed by cryptocurrencies, is a better way to place bets.
+
 
 ◊(define embedding-data "/extensions.html#embedding-data")
 ◊(define timestamping-service "/timestamping_service.html")
 
-
-◊subhead{Why is a cryptocurrency necessary?}
