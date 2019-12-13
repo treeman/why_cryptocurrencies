@@ -41,34 +41,47 @@ With cryptocurrencies we can device a scheme where the gambling is provably fair
 ◊;― Michael Cassius McDonald 
 
 
-◊subhead{A simple provably fair gambling scheme}
+◊subhead{Seeds and pseudo-random generators}
 
-Here's a simple scheme that allows us to prove that a gamble has happened, what the results were and how to verify if it was fair.
-
-Our gambling algorithm is simple. We should concatenate the casino's seed with the player's seed and use it to initialize a pseudo-random generator, which will flip a coin and pick the winner.
-
-To understand why it works, it's important to understand how a pseudo-random generator works. Take this random sequence for example:
+To understand how the gambling scheme I'll describe works, first it's important to understand ◊em{pseudo-random generators}. Take this random sequence for example:
 
 ◊code{
     1 2 2 9 0 3 3 8 5 9 …
 }
 
-The important part about it is that you cannot predict what number comes next. That's why it's ◊em{random}.
+The important thing about it is that you cannot predict what number comes next. That's why it's ◊em{random}.
 
 But if we want to flip a coin, and verify how it was flipped without looking at it, how could we do that? It's simple---just flip it again in ◊strong{exactly} the same way as you did before, and it should land exactly like it did before. (I didn't say it was easy!)
 
-With a pseudo-random generator that's what we can do. We give it a ◊em{seed}, which will produce the sa
-
-◊code{
-    seed 13:
-    4 4 2 3 2 3 2 2 1 8 …
-}
+With a pseudo-random generator that's what we can do. We give it a ◊em{seed}, which will produce a sequence that is also unpredictable, except that when given the same seed it will always produce the same sequence. For example:
 
 ◊code{
     seed 7:
     5 2 6 0 1 8 1 5 9 0 …
+
+    seed 13:
+    4 4 2 3 2 3 2 2 1 8 …
 }
 
+A pseudo-random generator can just as easily produce a sequence of numbers, as it can flip a coin or even generate the whole world in Minecraft.◊sn{minecraft-seed}
+
+◊ndef["minecraft-seed"]{
+    They even call it a seed in Minecraft. There are “◊link[minecraft-best-seeds]{Minecraft best seeds}” lists out there, which generates some pretty impressive worlds. You do need to take care which version of Minecraft you're using, as the world generation can differ between versions.
+
+    This is also true for pseudo-random generators, where different generators will produce different results.
+}
+
+◊(define minecraft-best-seeds "https://progameguides.com/minecraft/minecraft-best-seeds/")
+
+
+
+◊subhead{A simple provably fair gambling scheme}
+
+Here's a simple scheme that allows us to prove that a gamble has happened, what the results were and how to verify if it was fair.
+
+Our gambling algorithm is simple. We should concatenate the casino's seed with the player's seed and use it to initialize a pseudo-random generator, which will flip a coin to pick the winner.
+
+To understand why it works, it's important to understand how a pseudo-random generator works. 
 Here's a simple Python 3 script that does the gamble for us:
 
 ◊;Firstly the casino has to have published their gambling algorithm, and if you want to be able to prove to a third party that the gamble took place, both the casino and the player needs to sign off on the bet before playing out the bet.◊sn{otherwise}
