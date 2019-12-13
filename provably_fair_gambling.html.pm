@@ -26,7 +26,7 @@ But it's hard to verify that a gamble is fair. With a coin you ◊em{might} be a
     There was a big poker scandal several years ago where it was discovered that ◊link[poker-scandal]{Ultimate Bet and Absolute Poker cheated in online poker}. They were discovered by people who noticed certain users who had "abnormally high winning statistics". Turns out they were using a superuser account that could see all cards.
 }
 
-With cryptocurrencies we can device a scheme where the gambling is provably fair. We can create a gambling site where users are sure the bets are fair---with mathematical certainty---and without a trusted third party facilitating the bets.
+With cryptocurrencies we can device a scheme where gambling is provably fair. We can create a gambling site where users are sure the bets are fair---with mathematical certainty---and without a trusted third party facilitating the bets.
 
 ◊(define poker-scandal "https://upswingpoker.com/ultimate-bet-absolute-poker-scandal/")
 ◊(define oceans-11 "https://www.imdb.com/title/tt0240772/")
@@ -53,7 +53,7 @@ The important thing about it is that you cannot predict what number comes next. 
 
 But if we want to flip a coin, and verify how it was flipped without looking at it, how could we do that? It's simple---just flip it again in ◊strong{exactly} the same way as you did before, and it should land exactly like it did before. (I didn't say it was easy!)
 
-With a pseudo-random generator that's what we can do. We give it a ◊em{seed}, which will produce a sequence that is also unpredictable, except that when given the same seed it will always produce the same sequence. For example:
+With a pseudo-random generator that's what we can do. We give it a ◊em{seed}, which will produce a sequence that's unpredictable, except that when given the same seed it will always produce the same sequence. For example:
 
 ◊code{
     seed 7:
@@ -63,10 +63,10 @@ With a pseudo-random generator that's what we can do. We give it a ◊em{seed}, 
     4 4 2 3 2 3 2 2 1 8 …
 }
 
-A pseudo-random generator can just as easily produce a sequence of numbers, as it can flip a coin or even generate the whole world in Minecraft.◊sn{minecraft-seed}
+A pseudo-random generator can produce a sequence of numbers, a number of coin tosses or even generate the whole world in Minecraft.◊sn{minecraft-seed}
 
 ◊ndef["minecraft-seed"]{
-    They even call it a seed in Minecraft. There are “◊link[minecraft-best-seeds]{Minecraft best seeds}” lists out there, which generates some pretty impressive worlds. You do need to take care which version of Minecraft you're using, as the world generation can differ between versions.
+    They even call it a seed in Minecraft. There are many “◊link[minecraft-best-seeds]{Minecraft best seeds}” lists out there, with seeds that generate some pretty impressive worlds. You do need to take care which version of Minecraft you're using, as the world generation can differ between versions.
 
     This is also true for pseudo-random generators, where different generators will produce different results.
 }
@@ -74,15 +74,11 @@ A pseudo-random generator can just as easily produce a sequence of numbers, as i
 ◊(define minecraft-best-seeds "https://progameguides.com/minecraft/minecraft-best-seeds/")
 
 
-
 ◊subhead{A simple provably fair gambling scheme}
 
 Here's a simple scheme that allows us to prove that a gamble has happened, what the results were and how to verify if it was fair.
 
-Our gambling algorithm is simple. We should concatenate the casino's seed with the player's seed and use it to initialize a pseudo-random generator, which will flip a coin to pick the winner.
-
-To understand why it works, it's important to understand how a pseudo-random generator works. 
-Here's a simple Python 3 script that does the gamble for us:
+Our gambling algorithm is simple. We'll concatenate the casino's seed with the player's seed and use it to initialize a pseudo-random generator, which will flip a coin to pick the winner. Here's a simple Python 3 script that does this for us:
 
 ◊;Firstly the casino has to have published their gambling algorithm, and if you want to be able to prove to a third party that the gamble took place, both the casino and the player needs to sign off on the bet before playing out the bet.◊sn{otherwise}
 
@@ -121,11 +117,7 @@ Here's a simple Python 3 script that does the gamble for us:
     print("The winner is:", random.choice(['casino', 'player']))
 }
 
-This code essentially uses the seeds to flip a coin and decide the winner.
-
-◊todo{Describe what a seed and pseudo-randomness is}
-
-Importantly the casino should give out the seed hidden behind a one-way hash function, otherwise the player can just pick the winning seed and there would be no gamble. When the player has sent their seed to the casino, the bet has been made, and the casino reveals their seed (which we can verify with the hashed value) and we know who won and who lost.
+Importantly the casino should give out the seed encoded with a one-way hash function, otherwise the player can just pick the winning seed and there would be no gamble. When the player has sent their seed to the casino, the bet has been made, and the casino reveals their seed (which we can verify with the hashed value) and we know who won and who lost.
 
 Concretely a game could play out like this:
 
@@ -197,7 +189,7 @@ There are limits to the simple toy example I've described:
     }
     ◊li{Multiplayer games are more complex
 
-        This scheme works fine for simple single player games, like flipping a coin. But if we wanted to create a provable fair poker game the implementation would be more complex, but it would be possible.◊sn{encrypt}
+        This scheme works fine for simple single player games, like flipping a coin. But if we wanted to create a provable fair poker game the implementation would be more complex, but it would still be possible.◊sn{encrypt}
 
         ◊ndef["encrypt"]{
             Here we'd have to encrypt your cards and hide them from other players, but they still need to be able to verify that they were dealt out correctly after the fact.
@@ -215,13 +207,13 @@ There are limits to the simple toy example I've described:
 
 Until now, nothing I've described requires a cryptocurrency (and if you don't need it, you shouldn't use it). So why bring it up in a book about cryptocurrencies?
 
-By embedding the messages between the casino and the player on the blockchain, we get a permanent record of all gambles that take place. It would be proof of dishonest behaviour and act as a reputation boost for honest casinos.
+By ◊link[embedding-data]{embedding the messages} between the casino and the player on the blockchain, we get a permanent record of all gambles that take place. It would be proof of dishonest behaviour and act as a reputation boost for honest casinos.
 
 But we can go further. The biggest issue with our simple scheme is that the casinos can still decide not to pay. There's nothing forcing them to pay the players if they win big---they could just take the money and run.
 
-With smart contracts, on a cryptocurrency with a powerful scripting language like Ethereum, we might enforce the payment as well. In our example when accepting the bet, both the casino and the player can lock up their funds in a smart contract that will play out the bet (like in the Python script) and send the funds to the winner. This removes the risk of the casino refusing to pay out if you manage to win.◊sn{programmable-money}
+With smart contracts, on a cryptocurrency with a powerful scripting language like Ethereum, we might enforce the payment as well. In our example when accepting the bet, both the casino and the player must lock up their funds in a smart contract that will play out the bet (like in the Python script) and send the funds to the winner. This removes the risk of the casino refusing to pay out if you manage to win, as it's enforced by the smart contract.◊sn{programmable-money}
 
-You can also improve the state of sports betting. A smart contract can give an Oracle the power to transfer the money of a gamble to the winner---but it's only allowed to send it to either the player or the casino, so the Oracle cannot steal the money. This is good if you can trust the Oracle to call the result of a game, but you don't want to let them hold the money themselves.◊sn{timeout}
+You can also improve the state of sports betting. A smart contract can give an Oracle the power to transfer the money of a gamble to the winner---but it's only allowed to send it to either the player or the casino, so the Oracle cannot steal the money. This is good if you can trust the Oracle to call the result of a game, but you don't trust them to hold your money.◊sn{timeout}
 
 ◊ndef["programmable-money"]{
     Smart contracts like these is why cryptocurrencies are sometimes called "programmable money".
@@ -231,7 +223,7 @@ You can also improve the state of sports betting. A smart contract can give an O
     You can also include a timeout to return the funds and cancel the bet if the Oracle doesn't take any action. Or allow the player and casino to cancel the bet and return all funds, if they both agree.
 }
 
-This is why provably fair gambling, backed by cryptocurrencies, is a better way to place bets.
+This is how cryptocurrencies can improve the way we gamble.
 
 
 ◊(define embedding-data "/extensions.html#embedding-data")
