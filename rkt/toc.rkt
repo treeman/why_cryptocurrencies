@@ -28,12 +28,12 @@
      a_defective_system.html
      private_money.html
      global_currency.html)
-    ("Brave new world"
-     "Separation of money and state"
+    (brave_new_world.html
+     darknet_markets.html
      "A swiss bank account in your pocket"
-     "Darknet markets"
+     "The cashless dystopia"
      "Protection against government seizures"
-     "The cashless dystopia")
+     "Separation of money and state")
     (extensions.html
      timestamping_service.html
      uncensorable_twitter.html
