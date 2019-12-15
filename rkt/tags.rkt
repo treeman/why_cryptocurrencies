@@ -4,10 +4,12 @@
 (require racket/match racket/string racket/list)
 (require racket/format)
 (require racket/runtime-path)
+(require racket/port)
 (require "toc.rkt")
 (require "links.rkt")
 (require "post-process.rkt")
 (require "string-process.rkt")
+(require "pygments.rkt")
 
 (provide (all-defined-out))
 
@@ -191,6 +193,32 @@
   `(pre (code ,@args)))
 (define (scode . args)
   `(span ((class "sidenote-code")) ,@args))
+(define (code-hl #:line-numbers? [line-numbers? #f]
+                 #:css-class [css-class "highlight"]
+                 #:lines [hl-lines null]
+                 lang . codelines)
+  (define code (string-append* codelines))
+  `(div
+     ,@(pygmentize code lang
+                   #:python-executable "python3"
+                   #:line-numbers? line-numbers?
+                   #:css-class css-class
+                   #:hl-lines hl-lines)))
+
+(define (file2string path)
+  (port->string (open-input-file path)))
+
+(define (code-hl-file #:line-numbers? [line-numbers? #f]
+                      #:css-class [css-class "highlight"]
+                      #:lines [hl-lines null]
+                      lang path)
+  (define file (file2string path))
+  (code-hl
+         #:line-numbers? line-numbers?
+         #:css-class css-class
+         #:lines hl-lines
+         lang
+         file))
 
 (define (sans . args)
   `(span ((class "sans")) ,@args))

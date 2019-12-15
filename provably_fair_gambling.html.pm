@@ -86,36 +86,7 @@ Our gambling algorithm is simple. We'll concatenate the casino's seed with the p
     If you don't publically sign the bet, there's always the risk that the casino can say that it never happened, and you cannot prove otherwise.
 }
 
-
-◊; FIXME
-◊; Actually import the python script file instead
-◊; Some simple syntax highlighting
-
-◊; Highlighting docs:
-◊; https://pygments.org/docs/formatters/
-◊;
-◊; Hacky pollen implementation is here:
-◊; /var/tmp/15509522741550952274721-mbutterick_pollen_master/pollen/unstable
-◊; /var/tmp/15509522741550952274721-mbutterick_pollen_master/pollen/private/external
-◊;
-◊; Better to create our own...?
-◊; We want to set the "wrapcode" option for instance.
-◊;◊highlight['python]{
-           ◊;#:python-executable "python3"
-           ◊;#:line-numbers? #f
-           ◊;#:css-class #f]{
-◊code{
-    import random
-
-    casino_seed = input("Please enter the casino seed: ")
-    player_seed = input("Please enter the player seed: ")
-
-    our_seed = casino_seed + player_seed
-    print("Using seed:", our_seed)
-
-    random.seed(our_seed)
-    print("The winner is:", random.choice(['casino', 'player']))
-}
+◊(code-hl-file 'python3 "scripts/gambling.py")
 
 Importantly the casino should give out the seed encoded with a one-way hash function, otherwise the player can just pick the winning seed and there would be no gamble. When the player has sent their seed to the casino, the bet has been made, and the casino reveals their seed (which we can verify with the hashed value) and we know who won and who lost.
 
