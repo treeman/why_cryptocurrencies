@@ -607,6 +607,36 @@ table.crypto-eval {
     }
 }
 
+table.legal-moral {
+    th, td {
+        padding: 0.1em 1.0em 0.1em 0.5em;
+    }
+    td {
+        text-align: center;
+    }
+    td.ths {
+        font-weight: bold;
+        text-align: center;
+    }
+    td.tds {
+        font-weight: bold;
+        text-align: right;
+    }
+
+    .moral-illegal {
+        background-color: #b6ccbc;
+    }
+    .immoral-legal {
+        background-color: #fccdae;
+    }
+    .bad {
+        background-color: $xmr-orange;
+    }
+    .good {
+        background-color: $bch-green;
+    }
+}
+
 .sans {
     @extend %sans-serif;
 }
