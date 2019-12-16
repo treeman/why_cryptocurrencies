@@ -164,9 +164,11 @@ While the story is made up, the situation is real. Medicine in the U.S. can be �
     And even if they do cover it, sometimes it's still expensive. Even if you only pay 10% of the original cost, that's still $2,000 if the medicine was $20,000 originally.
 }
 
-Was it wrong to do what Tom did and bought the medicine illegally? If it would save the love of your life, the mother of your child, would you do it? What if it was easy and the risk of getting caught was very small?
+Yet we must always remember the dangers of buying medicine from darknet markets. It's entirely possible that you can get fake medicine, untested medicine or straight up dangerous medicine. You must be ◊strong{very careful} when you buy from a completely unregulated market. Instead of the medicine saving your life, it might kill you.
 
-I'd imagine most would say yes, they would do anything to save her. While there are bad stuff on darknet markets, many of which are illegal, in this case cryptocurrencies and darknet markets helped save Tom's family, and I see that as a good thing.
+Still, was it wrong to do what Tom did and got the medicine from a darknet market? If it might save the love of your life, the mother of your child, would you do it? What if it was easy and the risk of getting caught was very small?
+
+I'd imagine most would say yes, they would do anything to save her. While there are bad stuff on darknet markets, most of which are illegal, in this case cryptocurrencies and darknet markets helped save Tom's family, and I see that as a good thing.
 
 ◊(define insurance-screwed "https://health.usnews.com/health-care/for-better/articles/2017-07-13/5-ways-insurance-companies-meddle-in-your-health-care")
 
@@ -177,3 +179,4 @@ I'd imagine most would say yes, they would do anything to save her. While there 
 ◊;(define darknet-medicine "https://darkwebnews.com/news/high-costs-force-patients-to-dark-net-in-search-of-needed-medicine/")
 
 ◊; <https://podcast.bitcoin.com/e219-Black-Markets-On-The-Blockchain>
+
