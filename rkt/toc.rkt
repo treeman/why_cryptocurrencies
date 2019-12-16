@@ -29,7 +29,7 @@
      private_money.html
      global_currency.html)
     (brave_new_world.html
-     "Darknet markets"
+     darknet_markets.html
      swiss_bank_account_in_your_pocket.html
      "The cashless dystopia"
      "Protection against government seizures"
