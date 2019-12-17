@@ -1,23 +1,42 @@
 #lang pollen
 
-◊(define-meta title "A swiss bank account in your pocket")
+◊(define-meta title "A Swiss bank account in your pocket")
 ◊(define-meta subtitle "Unlimited and untraceable money on your smartphone")
 ◊(define-meta updated "2019-09-17T06:59:16+02:00")
 ◊(define-meta uuid "d1144eb3-b2ac-4c89-b2e0-4a03f377172c")
 
-◊subhead{The myth of a swiss bank account}
+If you've seen spy movies, or maybe read the Da Vinci Code, you might be familiar with a private bank account. It's one where you don't need any identification other than the bank account number and a password to access, and you have access to all your money safely, securely and most importantly privately.◊sn{gringotts}
 
-◊ol{
-    ◊li{Describe the myth}
-    ◊li{Cryptocurrencies is an actual swiss bank account in your pocket}
+This is actually a great description of how cryptocurrencies work. You just need the account number (an address) and the password (a private key) to access your money, which you can do from anywhere in the world using the smartphone in your pocket.
+
+◊ndef["gringotts"]{
+    Even the ◊link[gringotts]{Gringotts Wizarding Bank} in Harry Potter operates in a similar manner. But except for a password they use a physical key.
 }
 
-◊; https://www.swissinfo.ch/eng/automatic-exchange-_switzerland-grants-18-more-countries-access-to-bank-details/45424544
+◊(define gringotts "https://harrypotter.fandom.com/wiki/Gringotts_Wizarding_Bank")
+
+
+◊subhead{The myth of a Swiss bank account}
+
+Maybe you think that this is how a ◊link[swiss-bank-account]{Swiss bank account} operates. That they would offer highly private banking, but that's just a myth. Because they offer more privacy than other banks they also have tough anti-money-laundering laws that requires more identification than other banks and they require proof of where the money comes from.
+
+Recently Switzerland has ◊link[swiss-exchange]{begun sharing bank details} of foreign account holders automatically with other countries. When I write this they share data with ◊link[swiss-more-countries]{more than 60 countries}, and more will join. I think it's fair to say that Swiss bank accounts don't live up to the private bank account dream.
+
+Cryptocurrencies on the other hand can fulfill the dream.◊sn{private?}
+
+◊ndef["private?"]{
+    How private are cryptocurrencies really? Read the ◊link[privacy-challenge]{discussion of the privacy challenge} in the appendix.
+}
+
+◊(define privacy-challenge "/challenges.html#privacy-and-fungibility")
+◊(define swiss-bank-account "https://www.investopedia.com/ask/answers/08/swiss-bank-account.asp")
+◊(define swiss-exchange "https://www.swissinfo.ch/eng/financial-transparency_switzerland-in-the-age-of-automatic-exchange-of-banking-information/45234706")
+◊(define swiss-more-countries "https://www.swissinfo.ch/eng/automatic-exchange-_switzerland-grants-18-more-countries-access-to-bank-details/45424544")
 
 
 ◊subhead{Offshore bank accounts}
 
-Maybe you'll say this is extremely unwanted as it would enable tax-fraud on a global scale. And you'd have a point, but there's just one issue: it's already possible. And it's happening at a big scale.
+Maybe you'll say truly private bank accounts are really bad as it'd enable tax-fraud. And you'd have a point, but there's just one issue: it's already possible. And it's happening at a global scale.
 
 ◊(define panama-papers "https://www.icij.org/investigations/panama-papers/")
 ◊(define panama-papers-doc "https://www.panamapapersdoc.com/")
@@ -75,7 +94,7 @@ The world is just extremely unfair, and if anything it should be the other way a
 ◊(define putin-proxies "https://www.icij.org/investigations/panama-papers/20160403-putin-russia-offshore-network/")
 
 
-◊subhead{The great leveler}
+◊subhead{The great leveller}
 
 With cryptocurrencies everyone can
 
