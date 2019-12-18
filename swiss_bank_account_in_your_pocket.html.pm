@@ -34,22 +34,15 @@ Cryptocurrencies on the other hand can fulfill the dream.◊sn{private?}
 ◊(define swiss-more-countries "https://www.swissinfo.ch/eng/automatic-exchange-_switzerland-grants-18-more-countries-access-to-bank-details/45424544")
 
 
-◊subhead{Offshore bank accounts}
+◊subhead{Shell companies and offshore bank accounts}
 
-Maybe you'll say truly private bank accounts are really bad as it'd enable tax-fraud. And you'd have a point, but there's just one issue: it's already possible. And it's happening at a global scale.
+Maybe you'll say truly private bank accounts are really bad as they enable tax fraud and money laundering. And you'd have a point, but there's just one issue: it's already possible. And it's happening at a global scale.
 
-◊(define panama-papers "https://www.icij.org/investigations/panama-papers/")
-◊(define panama-papers-doc "https://www.panamapapersdoc.com/")
+The ◊link[panama-papers]{Panama Papers} was a gigantic leak that detailed the shady businesses of shell companies and how they're used to hide ownership of assets. It detailed how politicians, celebrities, drug dealers and the global elite obscured their wealth and in large part engaged in tax fraud and money laundering.
 
-◊ol{
-    ◊li{Panama papers}
-    ◊li{Paradise papers}
-    ◊li{Bahama's secrets}
-}
+There are other reports, such as the ◊link[offshore-leaks]{Offshore Leaks}, the ◊link[bahamas-leaks]{Bahamas Leaks} and the ◊link[paradise-papers]{Paradise Papers}, which all say that the use of shell companies and offshore bank accounts are used on a massive scale for tax fraud and money laundering.
 
-◊; https://en.wikipedia.org/wiki/Panama_Papers
-
-Offshore bank accounts aren't just for tax evasion though. Celebrities have tabloids dedicated to blow up any minor detail of their life into this huge scandal. It just makes sense for them to try to keep their finances hidden, which is exactly what a spokesman for Emma Watson, who got named in the Panama Papers, claimed:
+Offshore bank accounts aren't just for tax evasion though. For example celebrities have tabloids dedicated to blow up any minor detail of their life into this huge scandal. It just makes sense for them to try to keep their finances hidden, which is exactly what a spokesman for Emma Watson, who got named in the Panama Papers, claimed:
 
 ◊qt[#:url "https://www.telegraph.co.uk/news/2016/05/10/panama-papers-emma-watson-named-in-latest-data-release/"
     #:src "Spokesman for Emma Watson"]{
@@ -59,9 +52,14 @@ Offshore bank accounts aren't just for tax evasion though. Celebrities have tabl
 Do you believe them? I'm skeptical, but at the same time I sympathize with the privacy concern---I did after all dedicate ◊link[private-money]{an earlier chapter} to this very topic.
 
 ◊(define private-money "/private_money.html")
+◊(define panama-papers "https://www.icij.org/investigations/panama-papers/")
+◊(define paradise-papers "https://www.icij.org/investigations/paradise-papers/")
+◊(define offshore-leaks "https://www.icij.org/investigations/offshore/")
+◊(define bahamas-leaks "https://www.icij.org/investigations/offshore/former-eu-official-among-politicians-named-new-leak-offshore-files-bahamas/")
+◊(define panama-papers-doc "https://www.panamapapersdoc.com/")
 
 
-◊subhead{Inequality}
+◊subhead{Absurd inequality}
 
 Let's see what the president of the United States has to say about tax evasion:
 
@@ -83,7 +81,13 @@ This is why you don't see the names of normal people in the Panama Papers, no ma
     It's funny that you can find Trump's name in the Panama Papers 3,450 times, while ◊link[putin-proxies]{Putin uses proxies} to try and hide his involvement. I wonder, does that make Putin smarter than Trump?
 }
 
-While offshore banking might be problematic, it pales to the problem that only the very rich can abuse them in this way. They get away without paying taxes, while normal people have to pay the tax man or face prison. It's especially egregious since they have so much money they can't even spend it all, but normal people have to struggle to make ends meet.
+Here I use the term ◊em{tax evasion} instead ◊em{tax fraud} because, believe it or not, it's often legal! If you're rich enough you can hire tax experts who'll find the loopholes in the tax laws so you can avoid the taxes normal people have to pay.
+
+If you do happen step on the wrong side of the law, you can hire the very best lawyers to keep you out of prison. But you shouldn't worry about that too much, since the rich and powerful also lobbies the law makers to make the laws beneficial for them.
+
+While offshore banking might be problematic, it pales to the problem that there's another set of tax rules only for the very rich. It's especially egregious since they have so much money they can't even spend it all, but normal people have to struggle to make ends meet.
+
+◊todo{IMG of the ultra rich lopsidedness}
 
 The world is just extremely unfair, and if anything it should be the other way around. The poor should avoid taxes, while the ultra rich should pay up. At least this would have a semblance of fairness.
 
