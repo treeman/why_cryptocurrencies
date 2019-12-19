@@ -49,7 +49,7 @@ Offshore bank accounts aren't just for tax evasion though. For example celebriti
   Emma receives absolutely no tax or monetary advantages from this offshore company whatsoever, only privacy.
 }
 
-Do you believe them? I'm skeptical, but at the same time I sympathize with the privacy concern---I did after all dedicate ◊link[private-money]{an earlier chapter} to this very topic.
+Do you believe them? I'm skeptical, but at the same time I sympathize with the privacy concern---I did after all dedicate ◊link[private-money]{an earlier chapter} to the topic.
 
 ◊(define private-money "/private_money.html")
 ◊(define panama-papers "https://www.icij.org/investigations/panama-papers/")
@@ -69,27 +69,31 @@ Let's see what the president of the United States has to say about tax evasion:
     Trump: That makes me smart.
 }
 
-No Mr. President, that makes you rich. You see, this kind of tax evasion is only available for the very rich.◊sn{crap-smart-rich} And it's not the 1%, more like the 1% of the 1%. We're talking about people who can afford private chefs and travel the world in private jets and yachts.
+No Mr. President, that makes you rich. You see, this kind of tax evasion is only available for the very rich.◊sn{crap-smart-rich} And it's not the top 1% we're talking about, more like the top 0.001%. We're talking about people who can afford private chefs and travel the world in private jets and yachts.
 
 ◊ndef["crap-smart-rich"]{
-    And please don't gimme that crap about how all rich people are smart. It's just what rich people tell themselves, to make them feel smart. Most were born with a golden spoon in their mouth, and even the self-made ultra rich had a ton of luck helping them.
+    And please don't gimme that crap about how all rich people are smart. It's just what rich people tell themselves, to make them feel smart. Most were ◊link[self-made-myth]{born with a golden spoon} in their mouth, and even the self-made ultra rich had a ton of luck and help.
 }
 
-This is why you don't see the names of normal people in the Panama Papers, no matter how smart they may be, but instead we find names like Lionel Messi, Donald Trump and Vladimir Putin.◊sn{names}
+◊(define self-made-myth "https://edition.cnn.com/2018/10/04/opinions/trump-nyt-kavanaugh-yale-self-made-man-myth-collins/index.html")
+◊(define tax-evasion-and-inequality "http://gabriel-zucman.eu/files/AJZ2019.pdf")
+
+This is why you don't see the names of normal people in the Panama Papers---no matter how smart they may be---but instead we find names like Lionel Messi, Donald Trump and Vladimir Putin.◊sn{names}
 
 ◊ndef["names"]{
     It's funny that you can find Trump's name in the Panama Papers 3,450 times, while ◊link[putin-proxies]{Putin uses proxies} to try and hide his involvement. I wonder, does that make Putin smarter than Trump?
 }
 
-Here I use the term ◊em{tax evasion} instead ◊em{tax fraud} because, believe it or not, it's often legal! If you're rich enough you can hire tax experts who'll find the loopholes in the tax laws so you can avoid the taxes normal people have to pay.
+Here I use the term ◊em{tax evasion} instead ◊em{tax fraud} because, believe it or not, it's often legal! If you're rich enough you can hire tax experts who'll find the loopholes in the tax laws so you can ◊link[tax-evasion-and-inequality]{avoid the taxes normal people have to pay}.  And if you do happen step on the wrong side of the law, you can hire the very best lawyers to keep you out of prison. But you shouldn't worry about that too much, since the rich and powerful also lobbies the law makers to make the laws beneficial for them.
 
-If you do happen step on the wrong side of the law, you can hire the very best lawyers to keep you out of prison. But you shouldn't worry about that too much, since the rich and powerful also lobbies the law makers to make the laws beneficial for them.
+While offshore banking might be problematic, it pales to the problem that there's another set of tax rules only for the very rich. It's especially egregious since they have so much money they can't even spend it all, but normal people have to struggle to make ends meet. Yet they still use the public services that the normal people pay for.
 
-While offshore banking might be problematic, it pales to the problem that there's another set of tax rules only for the very rich. It's especially egregious since they have so much money they can't even spend it all, but normal people have to struggle to make ends meet.
+◊qt[#:src "Report: Billionaire Bonanza 2017"
+    #:url "https://ips-dc.org/report-billionaire-bonanza-2017/"]{
+  The three wealthiest people in the United States — Bill Gates, Jeff Bezos, and Warren Buffett — now own more wealth than the entire bottom half of the American population combined
+}
 
-◊todo{IMG of the ultra rich lopsidedness}
-
-The world is just extremely unfair, and if anything it should be the other way around. The poor should avoid taxes, while the ultra rich should pay up. At least this would have a semblance of fairness.
+The world is just extremely unfair, and if anything it should be the other way around. The poor should pay less taxes, while the rich should pay more. At least this would have a semblance of fairness.
 
 ◊;In 2018, 60 of the largest companies in the USA paid no taxes on pre-tax income of 79 billion dollars. (The Laundromat)
 
@@ -109,3 +113,4 @@ With cryptocurrencies everyone can
 ◊; https://www.icij.org/investigations/paradise-papers/
 ◊; https://www.icij.org/investigations/offshore/
 ◊; https://www.icij.org/investigations/offshore/former-eu-official-among-politicians-named-new-leak-offshore-files-bahamas/
+
