@@ -38,18 +38,24 @@ Cryptocurrencies on the other hand can fulfill the dream.◊sn{private?}
 
 Maybe you'll say truly private bank accounts are really bad as they enable tax fraud and money laundering. And you'd have a point, but there's just one issue: it's already possible. And it's happening at a global scale.
 
-The ◊link[panama-papers]{Panama Papers} was a gigantic leak that detailed the shady businesses of shell companies and how they're used to hide ownership of assets. It detailed how politicians, celebrities, drug dealers and the global elite obscured their wealth and in large part engaged in tax fraud and money laundering.
+The ◊link[panama-papers]{Panama Papers} was a gigantic leak that detailed the shady businesses of shell companies and how they're used to hide ownership of assets. It detailed how politicians, celebrities, drug dealers and the global elite obscured their wealth and in large part engaged in tax fraud and money laundering.◊sn{panama-links}
+
+◊ndef["panama-links"]{
+    There's an excellent ◊link[panama-papers-doc]{documentary about the Panama Papers} I can recommend.
+}
+
+◊;There's also a movie, “◊link[the-laundromat]{The Laundromat}”, related to the Panama Papers. It's not as good, but there were some good points made.
 
 There are other reports, such as the ◊link[offshore-leaks]{Offshore Leaks}, the ◊link[bahamas-leaks]{Bahamas Leaks} and the ◊link[paradise-papers]{Paradise Papers}, which all say that the use of shell companies and offshore bank accounts are used on a massive scale for tax fraud and money laundering.
 
-Offshore bank accounts aren't just for tax evasion though. For example celebrities have tabloids dedicated to blow up any minor detail of their life into this huge scandal. It just makes sense for them to try to keep their finances hidden, which is exactly what a spokesman for Emma Watson, who got named in the Panama Papers, claimed:
+But they're not just for tax evasion. Look at celebrities for instance, they have tabloids dedicated to blow up any minor detail of their life into this huge scandal. It makes sense for them to try to keep their finances hidden, which is exactly what a spokesman for Emma Watson, who got named in the Panama Papers, claimed:
 
 ◊qt[#:url "https://www.telegraph.co.uk/news/2016/05/10/panama-papers-emma-watson-named-in-latest-data-release/"
     #:src "Spokesman for Emma Watson"]{
   Emma receives absolutely no tax or monetary advantages from this offshore company whatsoever, only privacy.
 }
 
-Do you believe them? I'm skeptical, but at the same time I sympathize with the privacy concern---I did after all dedicate ◊link[private-money]{an earlier chapter} to the topic.
+Do you believe them? As the cynic that I am, I remain skeptical, but at the same time I sympathize with the privacy concern---I did after all dedicate ◊link[private-money]{an earlier chapter} to the topic.
 
 ◊(define private-money "/private_money.html")
 ◊(define panama-papers "https://www.icij.org/investigations/panama-papers/")
@@ -57,6 +63,7 @@ Do you believe them? I'm skeptical, but at the same time I sympathize with the p
 ◊(define offshore-leaks "https://www.icij.org/investigations/offshore/")
 ◊(define bahamas-leaks "https://www.icij.org/investigations/offshore/former-eu-official-among-politicians-named-new-leak-offshore-files-bahamas/")
 ◊(define panama-papers-doc "https://www.panamapapersdoc.com/")
+◊(define the-laundromat "https://www.imdb.com/title/tt5865326/?ref_=nv_sr_srsg_0")
 
 
 ◊subhead{Absurd inequality}
@@ -69,7 +76,7 @@ Let's see what the president of the United States has to say about tax evasion:
     Trump: That makes me smart.
 }
 
-No Mr. President, that makes you rich. You see, this kind of tax evasion is only available for the very rich.◊sn{crap-smart-rich} And it's not the top 1% we're talking about, more like the top 0.001%. We're talking about people who can afford private chefs and travel the world in private jets and yachts.
+No Mr. President, that makes you rich. You see, this kind of tax evasion is only available for the ultra rich.◊sn{crap-smart-rich} And it's not the top 1% we're talking about, more like the top 0.001%. We're talking about people who can afford private chefs and travel the world in private jets and yachts. (Alright, maybe it's not ◊em{only} for the ultra rich, you might be able to do it even if you're only very rich.)
 
 ◊ndef["crap-smart-rich"]{
     And please don't gimme that crap about how all rich people are smart. It's just what rich people tell themselves, to make them feel smart. Most were ◊link[self-made-myth]{born with a golden spoon} in their mouth, and even the self-made ultra rich had a ton of luck and help.
@@ -84,9 +91,15 @@ This is why you don't see the names of normal people in the Panama Papers---no m
     It's funny that you can find Trump's name in the Panama Papers 3,450 times, while ◊link[putin-proxies]{Putin uses proxies} to try and hide his involvement. I wonder, does that make Putin smarter than Trump?
 }
 
-Here I use the term ◊em{tax evasion} instead ◊em{tax fraud} because, believe it or not, it's often legal! If you're rich enough you can hire tax experts who'll find the loopholes in the tax laws so you can ◊link[tax-evasion-and-inequality]{avoid the taxes normal people have to pay}.  And if you do happen step on the wrong side of the law, you can hire the very best lawyers to keep you out of prison. But you shouldn't worry about that too much, since the rich and powerful also lobbies the law makers to make the laws beneficial for them.
+Here I use the term ◊em{tax evasion} instead ◊em{tax fraud} because, believe it or not, it's often legal! If you're rich enough you can hire tax experts who'll find the loopholes in the tax laws so you can ◊link[tax-evasion-and-inequality]{avoid the taxes normal people have to pay}.  And if you do happen step on the wrong side of the law, you can hire the very best (and very expensive) lawyers to keep you out of prison. But you shouldn't worry about that too much, since the rich and powerful also lobbies the law makers to make the laws beneficial for them.◊sn{companies-too}
 
-While offshore banking might be problematic, it pales to the problem that there's another set of tax rules only for the very rich. It's especially egregious since they have so much money they can't even spend it all, but normal people have to struggle to make ends meet. Yet they still use the public services that the normal people pay for.
+◊ndef["companies-too"]{
+    It's not just rich individuals that avoid taxes, it's big companies too. In 2018, 60 of the largest companies in the USA ◊link[no-corp-taxes]{paid no taxes} on pre-tax income of 79 billion dollars.
+}
+
+◊(define no-corp-taxes "https://www.cbsnews.com/news/2018-taxes-some-of-americas-biggest-companies-paid-little-to-no-federal-income-tax-last-year/")
+
+While offshore banking might be problematic, it pales to the problem that there's another set of tax rules only for the ultra rich. It's especially egregious since they have so much money they can't even spend it all, but normal people have to struggle to make ends meet. Yet the ultra rich still use the public services that the normal people pay for.
 
 ◊qt[#:src "Report: Billionaire Bonanza 2017"
     #:url "https://ips-dc.org/report-billionaire-bonanza-2017/"]{
@@ -95,22 +108,15 @@ While offshore banking might be problematic, it pales to the problem that there'
 
 The world is just extremely unfair, and if anything it should be the other way around. The poor should pay less taxes, while the rich should pay more. At least this would have a semblance of fairness.
 
-◊;In 2018, 60 of the largest companies in the USA paid no taxes on pre-tax income of 79 billion dollars. (The Laundromat)
-
-
 ◊(define db "https://offshoreleaks.icij.org/")
 ◊(define putin-proxies "https://www.icij.org/investigations/panama-papers/20160403-putin-russia-offshore-network/")
 
 
 ◊subhead{The great leveller}
 
-With cryptocurrencies everyone can
+Cryptocurrencies are available for anyone, regardless of how rich you are. They make it possible for anyone to store their wealth "offshore" and off the grid. They act as a financial equalizer by giving everyone access to similar tools that the ultra rich already have.
 
-◊; See db:
-◊; https://offshoreleaks.icij.org/
+I'm ◊strong{not} saying that 
 
-◊; More papers:
-◊; https://www.icij.org/investigations/paradise-papers/
-◊; https://www.icij.org/investigations/offshore/
-◊; https://www.icij.org/investigations/offshore/former-eu-official-among-politicians-named-new-leak-offshore-files-bahamas/
+You can argue that the solution to all this is better laws, or e
 
