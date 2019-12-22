@@ -114,7 +114,9 @@ The world is just extremely unfair, and if anything it should be the other way a
 
 ◊subhead{The great leveller}
 
-In an ideal world I think only the very poor should be able to avoid taxes like these rich people and companies do. But reality is often disappointing, and so far it doesn't seem like we can do anything about it. They inequality is increasing as they get richer and richer, while paying less taxes not more.
+In an ideal world I think only the very poor should be able to avoid taxes like these rich people and companies do. But reality is often disappointing, and so far it doesn't seem like we can do anything about it. The inequality is increasing as they get richer and richer, while paying less taxes not more.
+
+I'm not engouraging tax fraud, and I think the world would be a better place if everyone paid their taxes,
 
 
 I'm absolutely not encouraging tax fraud, but what if ◊em{everyone} would have access to similar tools that the ultra rich already have?
