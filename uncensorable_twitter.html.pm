@@ -69,7 +69,7 @@ But everything isn't lost! As you still need websites or apps to display the inf
 }
 
 ◊ndef["fired-social-media"]{
-    It does happens that people get fired for things they post on social media---and they're not always drunk. Turns out employers, both current and potential future ones, do routinely check out social media and use it to decide if they will fire or hire you.
+    People have gotten fired for things they post on social media---and they're not always drunk. Turns out employers, both current and potential future ones, do routinely check out social media and use it to decide if they will fire or hire you.
 }
 
 ◊(define right-to-be-forgotten "https://en.wikipedia.org/wiki/Right_to_be_forgotten")
