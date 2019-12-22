@@ -68,6 +68,8 @@ Do you believe them? As the cynic that I am, I remain skeptical, but at the same
 
 ◊subhead{Absurd inequality}
 
+◊todo{Don't focus so much on tax evasion}
+
 Let's see what the president of the United States has to say about tax evasion:
 
 ◊qt[#:url "https://www.youtube.com/watch?v=uBZR1-onmAo"
