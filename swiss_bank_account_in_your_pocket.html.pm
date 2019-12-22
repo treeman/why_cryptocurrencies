@@ -114,7 +114,14 @@ The world is just extremely unfair, and if anything it should be the other way a
 
 ◊subhead{The great leveller}
 
-Cryptocurrencies are available for anyone, regardless of how rich you are. They make it possible for anyone to store their wealth "offshore" and off the grid. They act as a financial equalizer by giving everyone access to similar tools that the ultra rich already have.
+In an ideal world I think only the very poor should be able to avoid taxes like these rich people and companies do. But reality is often disappointing, and so far it doesn't seem like we can do anything about it. They inequality is increasing as they get richer and richer, while paying less taxes not more.
+
+
+I'm absolutely not encouraging tax fraud, but what if ◊em{everyone} would have access to similar tools that the ultra rich already have?
+
+What if ◊em{everyone} could have access to something 
+
+Cryptocurrencies on the other hand are available for anyone, regardless of how rich you are. They make it possible for anyone to store their wealth "offshore" and off the grid. They act as a financial equalizer by giving everyone access to similar tools that the ultra rich already have.
 
 I'm ◊strong{not} saying that 
 
