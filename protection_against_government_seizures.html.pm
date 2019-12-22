@@ -23,7 +23,7 @@ It's about laws meant to fight crime end up hurting innocent people and how they
     We'll explore the idea that legality doesn't imply morality---meaning just because it's legal doesn't make it right---in the chapter about ◊link[rel-darknet]{darknet markets}.
 }
 
-◊(define rel-darknet "/darknet-markets")
+◊(define rel-darknet "/darknet_markets.html")
 
 
 ◊subhead{Limiting cash}
@@ -112,7 +112,7 @@ Maybe there were some good intentions◊sn{banks-laundering} when these laws mer
     It’s usually based on a need---well, I take that back, There’s some limitations on it. ... Actually, there’s not really on the forfeiture stuff. We just usually base it on ◊strong{something that would be nice to have} that we can’t get in the budget, for instance. We try not to use it for things that we need to depend on because we need to have those purchased. It’s kind of like pennies from heaven---◊strong{it gets you a toy} or something that you need is the way that we typically look at it to be perfectly honest.
 }
 
-Most of the money goes to funding the police.◊sn{police-funding} But the money has gone to ◊link[steak-forfeiture]{extravagant Christmas parties, sirloin beef and a $8,200 security system} for the district attorney's private home. And of course some managed to spend it on ◊link[forfeiture-alcohol]{alcohol, prostitutes and marijuana}(!). Then there's the case where another district attorney ◊link[forfeiture-hawaii]{spent $27,000 to take his whole office to Hawaii}, including the approving district judge.
+Most of the money goes to funding the police.◊sn{police-funding} But the money has gone to ◊link[steak-forfeiture]{extravagant Christmas parties, sirloin beef and a $8,200 security system} for the district attorney's private home. And of course some managed to spend it on ◊link[forfeiture-alcohol]{alcohol, prostitutes and marijuana}. Then there's the case where another district attorney ◊link[forfeiture-hawaii]{spent $27,000 to take his whole office to Hawaii}, including the approving district judge.
 
 ◊ndef["police-funding"]{
     If you're a cynic, like I tend to be, you have to love the incentives at play here. If the police seize money they directly help themselves yet there appears to be no negative consequences if they do.
@@ -120,7 +120,7 @@ Most of the money goes to funding the police.◊sn{police-funding} But the money
 
 In practice civil asset forfeiture is state-sanctioned theft where the police are acting like ◊link[highway-robbers]{highway robbers}.
 
-So how can cryptocurrencies protect you against the forfeiture laws? While they naturally can't prevent the police from seizing your house or your car, they allow you to easily store and travel with as much money as you can---without anyone noticing. Even if they know you have them there's nothing they can physically steal---they would need your password.◊sn{how-to-store}
+So how can cryptocurrencies protect you against the forfeiture laws? While they naturally can't prevent the police from seizing your house or your car, they allow you to easily store and travel with as much money as you can---without anyone noticing. Even if they know you have them there's nothing they can physically steal---they would need your password. (Of course they might be able to coerce you to unluck it for them.)◊sn{how-to-store}
 
 ◊ndef["how-to-store"]{
     An app on your phone can hold an unlimited amount of value in cryptocurrencies. Or if you want to be more secure you can encrypt your private key with a strong password and store it on your computer or online. Even the government cannot break strong encryption (assuming they don't have amazing quantum computers hidden somewhere).
@@ -268,7 +268,12 @@ Exactly this happened to a 91-year old Swedish woman ◊link[91-woman]{couldn't 
 
 ◊subhead{Inflation}
 
-There is another way governments can take money from you: by inflating the money supply and using the excess money for themselves. It's a more indirect---and perhaps sinister---way to take money from you as you probably won't notice it. After all they aren't taking something physically from you, you still have your cash in your mattress and numbers in your bank account are unchanged, but they now get you less stuff.◊sn{inflation-sad}
+There is another way governments can take money from you: by inflating the money supply and using the excess money for themselves. We explored inflation in the chapter ◊link[defective-system]{A defective system}, and the extreme hyperinflation in the chapter ◊link[global-currency]{A global currency}, so I won't repeat myself too much here.
+
+◊(define defective-system "/a_defective_system.html")
+◊(define global-currency "/global_currency.html")
+
+Just remember that inflation is a more indirect---and perhaps sinister---way to take money from you as you probably won't notice it. After all they aren't taking something physically from you, you still have your cash in your mattress and numbers in your bank account are unchanged, but they now get you less stuff.◊sn{inflation-sad}
 
 ◊ndef["inflation-sad"]{
     Here's a sad story I heard about what inflation can do to your savings:
@@ -280,15 +285,7 @@ There is another way governments can take money from you: by inflating the money
     Turns out the money wasn't worth that much anymore. They had just left the money alone letting inflation eat up most of the value.
 }
 
-◊todo{Inflation chart}
-
-Have you asked your grandmother or your great-grandmother what they used to buy when they were little?
-
-◊todo{Some cute image here}
-
-We'll go into the more extreme version of inflation called hyperinflation, which can destabilize whole countries, in a ◊link[hyperinflation-rel]{later chapter}.
-
-◊(define hyperinflation-rel "/hyperinflation.html")
+With cryptocurrencies nobody can "steal" money from you buy printing more of it.
 
 ◊; https://www.reddit.com/r/btc/comments/c6cfbf/let_me_tell_you_a_tale_about_ecuador_that_abused/
 
@@ -297,8 +294,8 @@ We'll go into the more extreme version of inflation called hyperinflation, which
 To summarize what cryptocurrencies can do for us if we want to protect ourselves against the different kinds of government seizures:
 
 ◊ol{
-    ◊li{It allows you to hold any amount of money}
-    ◊li{If you use strong encryption, nobody can confiscate it (unless they use force on you)}
+    ◊li{It allows you to hold---and hide---any amount of money}
+    ◊li{If you use strong encryption, nobody can confiscate it (unless they use force)}
     ◊li{You can bring your money everywhere}
     ◊li{The government cannot invalidate your money}
     ◊li{There is nobody who can inflate the money supply}
