@@ -28,26 +28,6 @@ Ignorance is strength.”
 
 # Better digital payments
 
-## Protection against government seizures
-
-https://news.ycombinator.com/item?id=21464572
-
-India voids 500 and 1000 rupee bills
-
-Macedonia bans fiat cash payments above 560
-<https://www.reddit.com/r/btc/comments/bvx83n/macedonia_bans_fiat_cash_payments_above_560/>
-
-North Macedonia limits payment in cash up to 500 euros:
-<http://www.china.org.cn/world/Off_the_Wire/2019-06/01/content_74845553.htm>
-
-Man walks through Boston Logan Airport with $50K in a backpack; government wants to keep it
-<https://www.masslive.com//boston/2019/02/man-walks-through-boston-logan-airport-with-50k-in-a-backpack-government-wants-to-keep-it.html>
-
-Safe deposit boxes aren't safe
-<https://news.ycombinator.com/item?id=20545276>
-
-<https://www.reddit.com/r/btc/comments/c6cfbf/let_me_tell_you_a_tale_about_ecuador_that_abused/>
-
 # Brave new world
 
 ## Separation of money and state
