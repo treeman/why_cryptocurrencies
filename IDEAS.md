@@ -66,23 +66,6 @@ Administration Using the Full Power of the Surveillance State on Whistleblowers
 
 In 2018, 60 of the largest companies in the USA paid no taxes on pre-tax income of 79 billion dollars. (The Laundromat)
 
-## Cashless dystopia
-
-WeChat is Watching: Living in China with the app that knows everything about me
-<https://news.ycombinator.com/item?id=20173549>
-
-China bans 23M from buying travel tickets as part of 'social credit' system
-<https://news.ycombinator.com/item?id=19281192>
-
-25M Brits would struggle in a cashless society
-<https://news.ycombinator.com/item?id=19407730>
-
-Sweden's cashless society is no longer a utopia
-<https://news.ycombinator.com/item?id=18422422>
-
-Debate rages in Austria over enshrining use of cash in the constitution
-<https://www.euractiv.com/section/data-protection/news/debate-rages-in-austria-over-enshrining-use-of-cash-in-the-constitution/>
-
 ## Reshaping the economics of the web (?!?!)
 
 Cash for the internet, help content producers get paid as an alternative for ads.
