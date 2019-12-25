@@ -106,7 +106,9 @@ Money should be ◊link[money-properties]{◊strong{acceptable}}, meaning that e
 
 When you look closer at an utopia, you'll often find that it's not such a good place after all. You might even argue that an utopia cannot exist, since a society contains people with different desires that cannot be fulfilled simultaneously. (Is the Nazi Arian society an utopia? Maybe for the Nazis, but certainly not for the Jews.)
 
-The cashless society isn't an utopia, but a dystopia that'll suppress the lowest class so hard it's like we've regressed thousands of years.◊sn{other-ex} And the lower class will be big, ◊link[brits-struggle]{millions of Brits} would struggle and China has already ◊link[china-bans-23m]{banned millions from buying travel tickets} via their “◊link[china-social-credit]{social credit}” system.
+The cashless society isn't an utopia, but a dystopia that'll suppress the lowest class so hard it's like we've regressed thousands of years.◊sn{other-ex}
+
+And the lower class will be big, ◊link[brits-struggle]{millions of Brits} would struggle in a cashless society and China has already ◊link[china-bans-23m]{banned millions from buying travel tickets} via their “◊link[china-social-credit]{social credit}” system. Globally there are around ◊link[rel-unbanked]{1.7 billion unbanked adults}, who curiously seem to be forgotten in this discussion.
 
 ◊ndef["other-ex"]{
     There are many examples of the utopia/dystopia theme, ranging from ◊link[demolition-man]{Demolition Man} and ◊link[hot-fuzz]{Hot Fuzz} to ◊link[hunger-games]{The Hunger Games} and ◊link[harry-potter]{Harry Potter}.
@@ -133,9 +135,9 @@ The lack of financial privacy and needing permission to use it's money are the b
     It might hubris to claim that cryptocurrencies makes privacy better, as Bitcoin is more traceable than any other form of money history. But there are other cryptocurrencies with much better privacy features, see the ◊link[privacy-challenge]{discussion about the privacy challenge} in the appendix
 }
 
-The cashless society does solve some problems well. It's more convenient to use digital money---just blip your card or your phone, instead of counting change---or how businesses don't have to store large amounts of cash in stores and risk break-ins.
+The cashless society does solve some problems well. It's more convenient to use digital money---just blip your card or your phone, instead of counting change---or how businesses don't have to store large amounts of cash in stores and risk break-ins. Cryptocurrencies can also solve these problems.
 
-I'd say that the only way a cashless society makes sense is if we use ...
+I'd say that the only way a cashless society makes sense is if we use ◊em{digital} cash, while only moving away from physical cash. And the only way to have a permissionless digital currency, is to use a cryptocurrency.
 
 ◊(define privacy-challenge "/challenges.html#privacy-and-fungibility")
 
