@@ -60,6 +60,8 @@ But they're not just for avoiding taxes. Look at celebrities for instance, they 
 
 Do you believe them? As the cynic that I am, I remain skeptical, but at the same time I sympathize with the privacy concern---I did after all dedicate ◊link[private-money]{an earlier chapter} to the topic. If you haven't read the chapter I suggest you do so now, as it tries to explain why financial privacy is important for everyone.
 
+◊;To be clear: I think tax evasion is ◊strong{bad}---do your taxes people.
+
 ◊(define private-money "/private_money.html")
 ◊(define panama-papers "https://www.icij.org/investigations/panama-papers/")
 ◊(define paradise-papers "https://www.icij.org/investigations/paradise-papers/")
@@ -128,7 +130,13 @@ Today financial privacy is only available for the ultra rich, which they abuse f
 
 But what if ◊em{everyone} would have access to similar tools that the ultra rich have? Would the world collapse as nobody would pay taxes anymore? Or would the world change to the better as the tax rules would have to be reworked to be more fair? At the very least the world would be more equal.
 
-For better or worse, cryptocurrencies brings us closer to that world. Cryptocurrencies give everyone the ability to store their wealth privately, regardless of how rich you are.  They make it possible for anyone to store their wealth "offshore" and off the grid---they act as a financial equalizer by giving everyone access to similar tools that the ultra rich already have.
+For better or worse, cryptocurrencies brings us closer to that world. Cryptocurrencies give everyone the ability to store their wealth privately, regardless of how rich you are.  They make it possible for anyone to store their wealth "offshore" and off the grid---they act as a financial equalizer by giving everyone access to similar tools that the ultra rich already have.◊sn{not-quite}
+
+◊ndef["not-quite"]{
+    While cryptocurrencies might make it easier to hide your money, it does not give you the ability to find the tax loopholes the ultra rich are exploiting.
+
+    And I'm absolutely ◊strong{not} trying to encourage tax evasion---do your taxes people.
+}
 
 Perfectly balanced, as all things should be.
 
