@@ -59,9 +59,6 @@ Instead we're encouraged to use digital payments (ignoring the ◊link[rel-unban
     It sounds hypocritical to me when a major U.S. bank laundered ◊strong{$378 billions} ◊link[us-banks-mexico-drug-gangs]{for Mexico's drug gangs}, the kind of gangs that leaves behind ◊link[gang-mass-grave]{enormous mass-graves}.
 }
 
-
-Cryptocurrencies don't have any kind of restriction for how much you can send, receive or transport and even if similar limits are placed on them there's no practical way to enforce them.◊sn{privacy}
-
 ◊ndef["privacy"]{
     In contrast to other digital payments cryptocurrencies can give you very good privacy and it's in practice impossible for anyone to know how much you have. We'll explore this more in the chapter ◊link[rel-swiss-bank]{A swiss bank account in your pocket}.
 }
@@ -101,7 +98,7 @@ Money should be ◊link[money-properties]{◊strong{acceptable}}, meaning that e
 }
 
 
-When you look closer at an utopia, you'll often find that it's not such a good place after all. You might even argue that an utopia cannot exist, since a society contains people with different desires that cannot be fulfilled simultaneously.
+When you look closer at an utopia, you'll often find that it's not such a good place after all. You might even argue that an utopia cannot exist, since a society contains people with different desires that cannot be fulfilled simultaneously. (Is the Nazis' Arian society an utopia? Maybe for the Nazis, but certainly not for the Jews.)
 
 The cashless society isn't an utopia, but a dystopia that'll suppress the lowest class so hard it's like we've regressed thousands of years.◊sn{other-ex}
 
