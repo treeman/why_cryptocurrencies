@@ -1,7 +1,7 @@
 #lang pollen
 
 ◊(define-meta title "The cashless dystopia")
-◊;(define-meta subtitle "Read it online for free without cost of any kind")
+◊(define-meta subtitle "The cashless society is nightmare")
 ◊(define-meta updated "2019-12-22T19:08:58+01:00")
 ◊(define-meta uuid "55993260-1c9a-4bcf-ace5-7773e65bf7b5")
 
@@ -30,6 +30,19 @@
     }
 }
 
+In Sweden, and in the world in general, we're moving closer to the utopian cashless society.◊sn{utopia} Businesses are safer from theft, as they don't have to store large amounts of cash in stores, and payments are faster and more convenient. Tax fraud and illegal transactions are also harder.
+
+◊ndef["utopia"]{
+    An ◊link[utopia]{◊em{utopia}} is a dreamlike societ that's perfect, or close to it. You might say that Heaven, the place some say you go to when you die, is an utopia.
+}
+
+But it's not all good. We've already touched on several problems in earlier chapters, for example how ◊link[rel-undesirable]{legitimate businesses might get banned} in our attempts to ban illegal goods and services, or how the cashless society ◊link[rel-privacy]{is a privacy nightmare} yet ◊link[rel-swiss-bank]{tax evasion is still a huge problem}.
+
+In this chapter I'll try to tie together some of these issues to show how the cashless society isn't a dream---it's a nightmare.
+
+
+◊subhead{Limits on cash}
+
 In their ever-increasing attempts to counter money-laundering, governments all over the world have implemented limits to cash deposits to banks, cash purchases and even how much cash you can carry.
 
 ◊link[kyc]{Know-your-customer} (KYC) laws for example require banks in the United States to ◊link[ctr]{report any cash deposits of $10,000}, or multiple transactions adding up to that amount, to the IRS. They then have to be ready to provide extensive documentation to prove where the money is coming from.◊sn{structuring}
@@ -53,8 +66,12 @@ Cryptocurrencies don't have any kind of restriction for how much you can send, r
     In contrast to other digital payments cryptocurrencies can give you very good privacy and it's in practice impossible for anyone to know how much you have. We'll explore this more in the chapter ◊link[rel-swiss-bank]{A swiss bank account in your pocket}.
 }
 
+◊(define rel-undesirable "/undesirable_businesses.html")
+◊(define rel-global "global_currency.html")
+◊(define better-payments "/better_digital_payments.html")
+◊(define rel-privacy "/private_money.html")
 ◊(define rel-unbanked "/for_the_unbanked.html")
-◊(define rel-swiss-bank "/swiss-bank-account-in-your-pocket.html")
+◊(define rel-swiss-bank "/swiss_bank_account_in_your_pocket.html")
 ◊(define structuring "https://en.wikipedia.org/wiki/Structuring")
 ◊; https://www.reddit.com/r/btc/comments/bvx83n/macedonia_bans_fiat_cash_payments_above_560/
 ◊(define macedonia-limits-cash "http://www.china.org.cn/world/Off_the_Wire/2019-06/01/content_74845553.htm")
@@ -83,11 +100,25 @@ Money should be ◊link[money-properties]{◊strong{acceptable}}, meaning that e
 
 }
 
-An utopia is a dreamlike society that's perfect, or close to it. The cashless society is an utopia, where businesses are safer from theft as they don't have to store cash and payments are faster and more convenient. Tax fraud and illegal transactions are also harder.
 
-But when you look closer at an utopia, you'll often find that it's not such a good place after all. The cashless society isn't an utopia, but a dystopia that'll suppress the lowest class so hard it's like we've regressed thousands of years.
+When you look closer at an utopia, you'll often find that it's not such a good place after all. You might even argue that an utopia cannot exist, since a society contains people with different desires that cannot be fulfilled simultaneously.
 
+The cashless society isn't an utopia, but a dystopia that'll suppress the lowest class so hard it's like we've regressed thousands of years.◊sn{other-ex}
+
+◊ndef["other-ex"]{
+    There are many examples of the utopia/dystopia theme, ranging from ◊link[demolition-man]{Demolition Man} and ◊link[hot-fuzz]{Hot Fuzz} to ◊link[hunger-games]{The Hunger Games} and ◊link[harry-potter]{Harry Potter}.
+}
+
+◊(define demolition-man "https://www.imdb.com/title/tt0106697/")
+◊(define hot-fuzz "https://www.imdb.com/title/tt0425112/")
+◊(define hunger-games "https://en.wikipedia.org/wiki/The_Hunger_Games")
+◊(define harry-potter "https://en.wikipedia.org/wiki/Harry_Potter")
 ◊(define money-properties "/what_is_money.html#what-properties-does-good-money-have?")
 ◊(define utopia "https://en.wikipedia.org/wiki/Utopia")
 ◊(define dystopia "https://en.wikipedia.org/wiki/Dystopia")
+
+
+◊subhead{A possible salvation}
+
+The problems with the cashless dystopia are the lack of financial privacy and you needing permission to use it's money. Cryptocurrencies solves these problems, while retaining the ease of use and allowing businesses to easily store their money safely, away from the shops.
 
