@@ -94,6 +94,19 @@ Money should be ◊link[money-properties]{◊strong{acceptable}}, meaning that e
 
 ◊div[#:class "story"]{
 
+    Kevin was walking home after yet another failure. It had only been two weeks since he was declared a leech, but it felt like an eternity. Those bastards were so scared of being associated with a leech, they'd cut him off quicker than if he'd been a leper. Maybe he was as contagious as one.
+
+    He'd been trying to find some work, but nobody would take him in. He couldn't even get a cleaning job---what if he'd steal? And that condescending look on their faces. How his previous employer had told him he would get his salary when he was fired, knowing that the bank had frozen his account and he couldn't use it anyway.
+
+    It would've felt so good to punch that ugly face in, but Kevin was glad he managed to hold back. As bad as the situation was, it surely would be worse in a prison cell.
+
+    How everyone knew about it, he couldn't be sure. It had taken a week for his previous employer to find out, but maybe they all had access to the same database. His phone still worked, but that was only a matter of time he supposed.
+
+    Turning the corner, Kevin felt a stab of hunger. Hardly surprising, as he hadn't eaten anything today. But he still had some food at the apartment, that Joe had been so kind to help him buy, bless his soul.
+
+
+    (One week ago his employer had discovered his status as a leech, and had promptly fired him. He would get his salary, but because his bank had frozen his account he wouldn't get access to it, possibly forever. The rent was due soon, and his only hope was to get another job and ask for an advance or he'd lose his apartment too.)
+
     ◊ol{
         ◊li{3 weeks after being declared ◊em{unwanted}}
         ◊li{Discover he's been thrown out of the department}
