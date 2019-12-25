@@ -35,3 +35,4 @@
 (define 1984-book "https://www.goodreads.com/book/show/40961427-1984")
 (define antifragile-book "https://www.goodreads.com/book/show/13530973-antifragile")
 (define permanent-record-book "https://www.goodreads.com/book/show/46223297-permanent-record")
+(define animal-farm-book "https://www.goodreads.com/book/show/170448.Animal_Farm")

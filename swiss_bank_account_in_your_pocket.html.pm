@@ -51,14 +51,14 @@ The ◊link[panama-papers]{Panama Papers} was a gigantic leak that detailed the 
 
 There are other reports, such as the ◊link[offshore-leaks]{Offshore Leaks}, the ◊link[bahamas-leaks]{Bahamas Leaks} and the ◊link[paradise-papers]{Paradise Papers}, which all say that the use of shell companies and offshore bank accounts are used on a massive scale for tax fraud and money laundering.
 
-But they're not just for tax evasion. Look at celebrities for instance, they have tabloids dedicated to blow up any minor detail of their life into this huge scandal. It makes sense for them to try to keep their finances hidden, which is exactly what a spokesman for Emma Watson, who got named in the Panama Papers, claimed:
+But they're not just for avoiding taxes. Look at celebrities for instance, they have tabloids dedicated to blow up any minor detail of their life into this huge scandal. It makes sense for them to try to keep their finances hidden, which is exactly what a spokesman for Emma Watson, who got named in the Panama Papers, claimed:
 
 ◊qt[#:url "https://www.telegraph.co.uk/news/2016/05/10/panama-papers-emma-watson-named-in-latest-data-release/"
     #:src "Spokesman for Emma Watson"]{
   Emma receives absolutely no tax or monetary advantages from this offshore company whatsoever, only privacy.
 }
 
-Do you believe them? As the cynic that I am, I remain skeptical, but at the same time I sympathize with the privacy concern---I did after all dedicate ◊link[private-money]{an earlier chapter} to the topic.
+Do you believe them? As the cynic that I am, I remain skeptical, but at the same time I sympathize with the privacy concern---I did after all dedicate ◊link[private-money]{an earlier chapter} to the topic. If you haven't read the chapter I suggest you do so now, as it tries to explain why financial privacy is important for everyone.
 
 ◊(define private-money "/private_money.html")
 ◊(define panama-papers "https://www.icij.org/investigations/panama-papers/")
@@ -71,9 +71,14 @@ Do you believe them? As the cynic that I am, I remain skeptical, but at the same
 
 ◊subhead{Absurd inequality}
 
-◊todo{Don't focus so much on tax evasion}
+◊qt[#:src "Animal Farm"
+    #:quote-src #t
+    #:author "George Orwell"
+    #:url animal-farm-book]{
+  All animals are equal, but some animals are more equal than others
+}
 
-Let's see what the president of the United States has to say about tax evasion:
+While tax evasion through offshore banking is problematic, it pales to the problem that there's another set of tax rules only for the ultra rich. Let's see what the president of the United States has to say about tax evasion:
 
 ◊qt[#:url "https://www.youtube.com/watch?v=uBZR1-onmAo"
     #:src "Trump debates with Clinton"]{
@@ -96,15 +101,13 @@ This is why you don't see the names of normal people in the Panama Papers---no m
     It's funny that you can find Trump's name in the Panama Papers 3,450 times, while ◊link[putin-proxies]{Putin uses proxies} to try and hide his involvement. I wonder, does that make Putin smarter than Trump?
 }
 
-Here I use the term ◊em{tax evasion} instead ◊em{tax fraud} because, believe it or not, it's often legal! If you're rich enough you can hire tax experts who'll find the loopholes in the tax laws so you can ◊link[tax-evasion-and-inequality]{avoid the taxes normal people have to pay}.  And if you do happen step on the wrong side of the law, you can hire the very best (and very expensive) lawyers to keep you out of prison. But you shouldn't worry about that too much, since the rich and powerful also lobbies the law makers to make the laws beneficial for them.◊sn{companies-too}
+Here I use the term ◊em{tax evasion} instead ◊em{tax fraud} because, believe it or not, it's often legal! If you're rich enough you can hire tax experts who'll find the loopholes in the tax laws so you can ◊link[tax-evasion-and-inequality]{avoid the taxes normal people have to pay}.  And if you do happen step on the wrong side of the law, you can hire the very best (and very expensive) lawyers to keep you out of prison. But you shouldn't worry about that too much, since the rich and powerful also lobbies the law makers to make the laws beneficial for them and to keep the ◊link[irs-gutted]{IRS starved for funds}.◊sn{companies-too}
 
 ◊ndef["companies-too"]{
     It's not just rich individuals that avoid taxes, it's big companies too. In 2018, 60 of the largest companies in the USA ◊link[no-corp-taxes]{paid no taxes} on pre-tax income of 79 billion dollars.
 }
 
 ◊(define no-corp-taxes "https://www.cbsnews.com/news/2018-taxes-some-of-americas-biggest-companies-paid-little-to-no-federal-income-tax-last-year/")
-
-While offshore banking might be problematic, it pales to the problem that there's another set of tax rules only for the ultra rich. It's especially egregious since they have so much money they can't even spend it all, but normal people have to struggle to make ends meet. Yet the ultra rich still use the public services that the normal people pay for.
 
 ◊qt[#:src "Report: Billionaire Bonanza 2017"
     #:url "https://ips-dc.org/report-billionaire-bonanza-2017/"]{
@@ -116,21 +119,18 @@ The world is just extremely unfair, and if anything it should be the other way a
 ◊(define db "https://offshoreleaks.icij.org/")
 ◊(define putin-proxies "https://www.icij.org/investigations/panama-papers/20160403-putin-russia-offshore-network/")
 
+◊(define irs-gutted "https://www.propublica.org/article/how-the-irs-was-gutted")
+
 
 ◊subhead{The great leveller}
 
-In an ideal world I think only the very poor should be able to avoid taxes like these rich people and companies do. But reality is often disappointing, and so far it doesn't seem like we can do anything about it. The inequality is increasing as they get richer and richer, while paying less taxes not more.
+Today financial privacy is only available for the ultra rich, which they abuse for tax evasion, while in an ideal world everyone would pay their taxes and everyone would have financial privacy. But this is just a dream of the naive.  The ◊link[inequality]{inequality is only increasing} as the rich gets richer, while paying less taxes and enjoying privileges normal people cannot have.
 
-I'm not engouraging tax fraud, and I think the world would be a better place if everyone paid their taxes,
+But what if ◊em{everyone} would have access to similar tools that the ultra rich have? Would the world collapse as nobody would pay taxes anymore? Or would the world change to the better as the tax rules would have to be reworked to be more fair? At the very least the world would be more equal.
+
+For better or worse, cryptocurrencies brings us closer to that world. Cryptocurrencies give everyone the ability to store their wealth privately, regardless of how rich you are.  They make it possible for anyone to store their wealth "offshore" and off the grid---they act as a financial equalizer by giving everyone access to similar tools that the ultra rich already have.
+
+Perfectly balanced, as all things should be.
 
 
-I'm absolutely not encouraging tax fraud, but what if ◊em{everyone} would have access to similar tools that the ultra rich already have?
-
-What if ◊em{everyone} could have access to something 
-
-Cryptocurrencies on the other hand are available for anyone, regardless of how rich you are. They make it possible for anyone to store their wealth "offshore" and off the grid. They act as a financial equalizer by giving everyone access to similar tools that the ultra rich already have.
-
-I'm ◊strong{not} saying that 
-
-You can argue that the solution to all this is better laws, or e
-
+◊(define inequality "https://inequality.org/facts/income-inequality/")
