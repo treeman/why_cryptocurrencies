@@ -100,12 +100,17 @@ Money should be ◊link[money-properties]{◊strong{acceptable}}, meaning that e
 
     It would've felt so good to punch that ugly face in, but Kevin was glad he managed to hold back. As bad as the situation was, it surely would be worse in a prison cell.
 
-    How everyone knew about it, he couldn't be sure. It had taken a week for his previous employer to find out, but maybe they all had access to the same database. His phone still worked, but that was only a matter of time he supposed.
+    ◊;How everyone knew about it, he couldn't be sure. It had taken a week for his previous employer to find out, but maybe they all had access to the same database. His phone still worked, but that was only a matter of time he supposed.
 
-    Turning the corner, Kevin felt a stab of hunger. Hardly surprising, as he hadn't eaten anything today. But he still had some food at the apartment, that Joe had been so kind to help him buy, bless his soul.
+    Turning the corner, Kevin felt a stab of hunger. Hardly surprising, as he hadn't eaten anything today. But he still had some food at the apartment that Joe, bless his soul, had been so kind to help him buy. Everything would be better after eating some food.
 
+    When he reached his apartment door, he was met with an EVICTED sign. Horrified, Kevin tried to open the door, but they had already changed the lock. Anger washed over him again---the rent wasn't due until a week! Those fucking bastards!
 
-    (One week ago his employer had discovered his status as a leech, and had promptly fired him. He would get his salary, but because his bank had frozen his account he wouldn't get access to it, possibly forever. The rent was due soon, and his only hope was to get another job and ask for an advance or he'd lose his apartment too.)
+    Trying to cool down, he tried to call the manager, but no answer. Maybe the bastard had blocked him. Instead he called Joe, who promised he could crash at his place, and that he'd call him back at 12 when he got off work.
+
+    That was still many hours away, and Kevin was still very hungry. So he decided to walk around downtown to search for something to eat. He'd never realize how reliant he was on the plastic cards, as now when they didn't work he was basically stranded, destined to starve in the middle of downtown, which had multiple restaurants at every corner.
+
+    Not finding anything, Kevin had to go pee. There were lot's of options---this was the civilized district after all. But again, 
 
     ◊ol{
         ◊li{3 weeks after being declared ◊em{unwanted}}
