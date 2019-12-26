@@ -100,27 +100,31 @@ Money should be ◊link[money-properties]{◊strong{acceptable}}, meaning that e
 
     It would've felt so good to punch that ugly face in, but Kevin was glad he managed to hold back. As bad as the situation was, it surely would be worse in a prison cell.
 
-    ◊;How everyone knew about it, he couldn't be sure. It had taken a week for his previous employer to find out, but maybe they all had access to the same database. His phone still worked, but that was only a matter of time he supposed.
-
     Turning the corner, Kevin felt a stab of hunger. Hardly surprising, as he hadn't eaten anything today. But he still had some food at the apartment that Joe, bless his soul, had been so kind to help him buy. Everything would be better after eating some food.
 
-    When he reached his apartment door, he was met with an EVICTED sign. Horrified, Kevin tried to open the door, but they had already changed the lock. Anger washed over him again---the rent wasn't due until a week! Those fucking bastards!
+    When he reached his apartment door, he was met with an EVICTED sign. Horrified, Kevin tried to open the door, but they had already changed the lock. Anger washed over him again---the rent wasn't due until a week! Those bastards!
 
     Trying to cool down, he tried to call the manager, but no answer. Maybe the bastard had blocked him. Instead he called Joe, who promised he could crash at his place, and that he'd call him back at 12 when he got off work.
 
-    That was still many hours away, and Kevin was still very hungry. So he decided to walk around downtown to search for something to eat. He'd never realize how reliant he was on the plastic cards, as now when they didn't work he was basically stranded, destined to starve in the middle of downtown, which had multiple restaurants at every corner.
+    That was still many hours away, and Kevin was still very hungry. So he decided to walk around downtown to search for something to eat. He asked around, but all he could find was a small coffee shop that would trade a gift card for a cup of coffee. He'd never realize how reliant he was on the plastic cards, and without them he was now risking to starve in the middle of downtown, which had multiple restaurants at every corner.
 
-    Not finding anything, Kevin had to go pee. There were lot's of options---this was the civilized district after all. But again, 
+    A little happier, Kevin continued exploring downtown. He's been here many times, but today it didn't quite look the same. He used to only see the fancy restaurants, the night clubs and the pretty girls. But now he noticed the people in the dark alleys, looking for cans or maybe even food in the trash. He saw some homeless trying to sleep, right next to the night clubs he used to visit. Maybe he would soon join them? Maybe they knew how to buy food?
 
-    ◊ol{
-        ◊li{3 weeks after being declared ◊em{unwanted}}
-        ◊li{Discover he's been thrown out of the department}
-        ◊li{Spend the day trying to find somewhere to crash}
-        ◊li{Cannot find it, nor something good to eat}
-        ◊li{The day ends with him not being able to visit a public bathroom, and taking a shit outside}
-    }
+    Having to go pee, Kevin searched for a restroom. There was a small queue today, but Kevin was patient. The coffee had really raised his spirit---maybe everything would work out tomorrow?
 
+    It was Kevin's turn, so he walked to the door to the toilet and stopped. You had to pay with a plastic card to open the door.
 }
+
+The worst part of this story is that it's not even that far-fetched. I ran into similar problems (but not as severe of course) when I'd forgotten my credit cards---many restaurants in Sweden don't accept cash. A girl in a coffee shop even helped me buy a warm chocolate drink (I don't drink coffee). And a "leech" is literally a synonym for "deadbeat", the name for Chinese people on the ◊link[china-social-credit2]{wrong side of their social credit system}, who have similar work related problems as Kevin.◊sn{house?}
+
+◊ndef["house?"]{
+    How about getting evicted from his apartment?
+
+    There are much worse examples. For example how a Michigan man ◊link[michigan-man-house]{underpaid his property taxes by $8.41, and the county seized his property, sold it and kept the profits}.
+}
+
+◊(define china-social-credit2 "https://www.inkstonenews.com/china/chinas-13-million-discredited-individuals-face-discrimination-thanks-social-credit-system/article/3003319")
+◊(define michigan-man-house "https://reason.com/2019/11/06/a-michigan-man-underpaid-his-property-taxes-by-8-41-the-county-seized-his-property-sold-it-and-kept-the-profits/")
 
 When you look closer at an utopia, you'll often find that it's not such a good place after all. You might even argue that an utopia cannot exist, since a society contains people with different desires that cannot be fulfilled simultaneously. (Is the Nazi Arian society an utopia? Maybe for the Nazis, but certainly not for the Jews.)
 
