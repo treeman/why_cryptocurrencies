@@ -115,7 +115,20 @@ Money should be ◊link[money-properties]{◊strong{acceptable}}, meaning that e
     It was Kevin's turn, so he walked to the door to the toilet and stopped. You had to pay with a plastic card to open the door.
 }
 
-The worst part of this story is that it's not even that far-fetched. I ran into similar problems (but not as severe of course) when I'd forgotten my credit cards---many restaurants in Sweden don't accept cash. A girl in a coffee shop even helped me buy a warm chocolate drink (I don't drink coffee). And a "leech" is literally a synonym for "deadbeat", the name for Chinese people on the ◊link[china-social-credit2]{wrong side of their social credit system}, who have similar work related problems as Kevin.◊sn{house?}
+The worst part of this story is that it's not even that far-fetched, and all examples are inspired by real life events:
+
+◊ol{
+    ◊li{
+        "Leech" is literally a synonym for "deadbeat", the name for Chinese people on the ◊link[china-social-credit2]{wrong side of their social credit system}. They also have trouble getting work and gets shunned if their status is discovered.
+    }
+    ◊li{
+        People have gotten thrown out of their homes for very minor things. For example a Michigan man ◊link[michigan-man-house]{underpaid his property taxes by $8.41, and the county seized his property, sold it and kept the profits}.
+    }
+}
+
+◊link2[`("url", "Title")]{x y z ◊strong{abc}}
+
+The worst part of this story is that it's not even that far-fetched. I ran into similar problems (but not as severe of course) when I'd forgotten my credit cards---many restaurants in Sweden don't accept cash. A girl in a coffee shop even helped me buy a warm chocolate drink (I don't drink coffee). "Leech" is literally a synonym for "deadbeat", the name for Chinese people on the ◊link[china-social-credit2]{wrong side of their social credit system}, who have similar work related problems as Kevin. And if you think his eviction is horrible, there are similar real life examples. For example how a Michigan man ◊link[michigan-man-house]{underpaid his property taxes by $8.41, and the county seized his property, sold it and kept the profits}.
 
 ◊ndef["house?"]{
     How about getting evicted from his apartment?
@@ -125,6 +138,9 @@ The worst part of this story is that it's not even that far-fetched. I ran into 
 
 ◊(define china-social-credit2 "https://www.inkstonenews.com/china/chinas-13-million-discredited-individuals-face-discrimination-thanks-social-credit-system/article/3003319")
 ◊(define michigan-man-house "https://reason.com/2019/11/06/a-michigan-man-underpaid-his-property-taxes-by-8-41-the-county-seized-his-property-sold-it-and-kept-the-profits/")
+
+
+◊subhead{A dystopia}
 
 When you look closer at an utopia, you'll often find that it's not such a good place after all. You might even argue that an utopia cannot exist, since a society contains people with different desires that cannot be fulfilled simultaneously. (Is the Nazi Arian society an utopia? Maybe for the Nazis, but certainly not for the Jews.)
 

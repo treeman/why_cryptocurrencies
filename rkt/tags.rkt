@@ -28,6 +28,38 @@
     [(list url)
      (make-link url url #:class c)]))
 
+(define (link2 #:class [c #f] . args)
+  (match args
+    [(list-rest (list url title) ... text)
+     ;(printf "url: ~v title: ~v args: ~v" (car url) (car title) args)]
+     (apply link3 #:title (car title) #:class c (car url) text)]
+    [_
+     (error (format "bad link2 arg: '~a'" args))]))
+
+(define (link3 #:class [c #f] #:title [title #f] url . text)
+  (define attrs `((href ,url)))
+  (when title
+    (set! attrs (cons `(title ,title) attrs)))
+  (define (add-class x)
+    (set! c (if c
+              (string-append c " " x)
+              x)))
+  (if (xref? url)
+    (add-class "xref")
+    (unless (valid-iref? url)
+      (add-class "invalid-iref")
+      (printf "INVALID IREF '~v'~n" url)))
+      ;(error (format "INVALID IREF '~v'~n" url))))
+  (when c
+    (set! attrs (cons `(class ,c) attrs)))
+  `(a ,attrs ,@text))
+
+
+(module+ test
+  (require rackunit)
+  (check-equal? (link2 `("https://abc.xyz", "mytitle") "my" "link")
+                `(a (class "xref") (href "https://abc.xyz") "my" "link")))
+
 (define (make-link url text #:title [title #f] #:class [c #f])
   (define attrs `((href ,url)))
   (when title
