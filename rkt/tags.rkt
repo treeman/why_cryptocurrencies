@@ -19,24 +19,33 @@
     ((regexp-match #rx"^https?://" url) #t)
     (else #f)))
 
-(define (link #:class [c #f] . args)
+(define (url? x)
+  (and
+    (string? x)
+    (or
+      (xref? x)
+      (regexp-match #rx"^#" x)
+      (regexp-match #rx"^/" x)
+      (regexp-match #rx"^mailto:" x))))
+
+(define (link #:class [c #f] #:quote [qt #f] . args)
   (match args
-    [(list (list url title) text)
-     (make-link url text #:title title #:class c)]
-    [(list url text)
-     (make-link url text #:class c)]
+    [(list (list url title) text ..1)
+     #:when (and (string? url)
+                 (string? title))
+     (apply make-link #:title title #:class c #:quote qt url text)]
+    [(list url text ..1)
+     #:when (string? url)
+     (apply make-link #:class c #:quote qt url text)]
     [(list url)
-     (make-link url url #:class c)]))
-
-(define (link2 #:class [c #f] . args)
-  (match args
-    [(list-rest (list url title) ... text)
-     ;(printf "url: ~v title: ~v args: ~v" (car url) (car title) args)]
-     (apply link3 #:title (car title) #:class c (car url) text)]
+     #:when (string? url)
+     (make-link #:class c #:quote qt url url)]
     [_
-     (error (format "bad link2 arg: '~a'" args))]))
+     (error (format "bad link args: '~a'" args))]))
 
-(define (link3 #:class [c #f] #:title [title #f] url . text)
+(define (make-link #:class [c #f] #:title [title #f] #:quote [qt #f] url . text)
+  (unless (url? url)
+    (error (format "bad link url: '~a'" url)))
   (define attrs `((href ,url)))
   (when title
     (set! attrs (cons `(title ,title) attrs)))
@@ -52,31 +61,30 @@
       ;(error (format "INVALID IREF '~v'~n" url))))
   (when c
     (set! attrs (cons `(class ,c) attrs)))
-  `(a ,attrs ,@text))
 
+  (define a `(a ,attrs ,@text))
+
+  (if qt
+    `(splice-me "“" ,a "”")
+    a))
 
 (module+ test
   (require rackunit)
-  (check-equal? (link2 `("https://abc.xyz", "mytitle") "my" "link")
-                `(a (class "xref") (href "https://abc.xyz") "my" "link")))
-
-(define (make-link url text #:title [title #f] #:class [c #f])
-  (define attrs `((href ,url)))
-  (when title
-    (set! attrs (cons `(title ,title) attrs)))
-  (define (add-class x)
-    (set! c (if c
-              (string-append c " " x)
-              x)))
-  (if (xref? url)
-    (add-class "xref")
-    (unless (valid-iref? url)
-      (add-class "invalid-iref")
-      (printf "INVALID IREF '~v'~n" url)))
-      ;(error (format "INVALID IREF '~v'~n" url))))
-  (when c
-    (set! attrs (cons `(class ,c) attrs)))
-  `(a ,attrs ,text))
+  (check-equal? (link "https://abc.xyz" "my" "link")
+                `(a ((class "xref") (href "https://abc.xyz"))
+                    "my" "link"))
+  (check-equal? (link `("https://abc.xyz", "mytitle") "my" "link")
+                `(a ((class "xref") (title "mytitle") (href "https://abc.xyz"))
+                    "my" "link"))
+  (check-equal? (link #:quote #t "https://abc.xyz" "my" "link")
+                `(splice-me
+                    "“"
+                    (a ((class "xref") (href "https://abc.xyz"))
+                        "my" "link")
+                    "”"))
+  (check-equal? (link "https://abc.xyz")
+                `(a ((class "xref") (href "https://abc.xyz"))
+                    "https://abc.xyz")))
 
 ;; Verify if an internal url is valid.
 (define (valid-iref? url)

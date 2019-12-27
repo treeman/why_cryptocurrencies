@@ -76,6 +76,7 @@ In many countries we're already close to the cashless society. In China for exam
 ◊(define rel-privacy "/private_money.html")
 ◊(define rel-unbanked "/for_the_unbanked.html")
 ◊(define rel-swiss-bank "/swiss_bank_account_in_your_pocket.html")
+◊(define rel-seizures "/government_seizures.html")
 ◊(define structuring "https://en.wikipedia.org/wiki/Structuring")
 ◊; https://www.reddit.com/r/btc/comments/bvx83n/macedonia_bans_fiat_cash_payments_above_560/
 ◊(define macedonia-limits-cash "http://www.china.org.cn/world/Off_the_Wire/2019-06/01/content_74845553.htm")
@@ -122,20 +123,35 @@ The worst part of this story is that it's not even that far-fetched, and all exa
         "Leech" is literally a synonym for "deadbeat", the name for Chinese people on the ◊link[china-social-credit2]{wrong side of their social credit system}. They also have trouble getting work and gets shunned if their status is discovered.
     }
     ◊li{
-        People have gotten thrown out of their homes for very minor things. For example a Michigan man ◊link[michigan-man-house]{underpaid his property taxes by $8.41, and the county seized his property, sold it and kept the profits}.
+        People have gotten thrown out of their homes for very minor things. For example a Michigan man underpaid his property taxes by ◊strong{$8.41}, and the county ◊link[michigan-man-house]{seized his property, sold it and kept the profits}.◊sn{asset-forfeiture}
+
+        ◊ndef["asset-forfeiture"]{
+            This is related to civil asset forfeiture, which we'll look at in the ◊link[rel-seizures]{next chapter}.
+        }
+    }
+    ◊li{
+        I too was in trouble when I'd forgotten my credit cards, because many restaurants in Sweden don't accept cash. A girl in a coffee shop even helped me buy a warm chocolate drink, when I had trouble finding food (I don't drink coffee).
+    }
+    ◊li{
+        Here in Sweden I've seen public bathrooms you unlock with digital payments:
+
+        ◊img[#:src "/images/digital_bathroom_lock.jpg"]{
+            It says "5 SEK fee". Instead of inserting a 5 SEK coin, you use your card. Very convenient, when it works. I wonder if it unlocks when power disappears.
+        }
     }
 }
 
-◊link2[`("url", "Title")]{x y z ◊strong{abc}}
+Perhaps the most unrealistic part of the story is how the potential employers knew about his status as a leech, and why he got marked in the first place. But a key problem with the cashless society, that's left implicit in the story, is the complete lack of financial privacy as everything you buy and do with your money is tracked.◊sn{no-privacy}
 
-The worst part of this story is that it's not even that far-fetched. I ran into similar problems (but not as severe of course) when I'd forgotten my credit cards---many restaurants in Sweden don't accept cash. A girl in a coffee shop even helped me buy a warm chocolate drink (I don't drink coffee). "Leech" is literally a synonym for "deadbeat", the name for Chinese people on the ◊link[china-social-credit2]{wrong side of their social credit system}, who have similar work related problems as Kevin. And if you think his eviction is horrible, there are similar real life examples. For example how a Michigan man ◊link[michigan-man-house]{underpaid his property taxes by $8.41, and the county seized his property, sold it and kept the profits}.
-
-◊ndef["house?"]{
-    How about getting evicted from his apartment?
-
-    There are much worse examples. For example how a Michigan man ◊link[michigan-man-house]{underpaid his property taxes by $8.41, and the county seized his property, sold it and kept the profits}.
+◊ndef["no-privacy"]{
+    
 }
 
+For instance Kevin's bank might have blocked him because they discovered he'd been buying weed or supporting its legalization (which ◊link[wells-fargo-closed]{Wells Fargo has done before}). Maybe Kevin's employer discovered this and reckoned he didn't want the risk that Kevin would start stealing, to solve his money problem, so he fired him.
+
+There are already companies that collect this kind of information, and sell it for profit. It's not unreasonable to think that employers would want this, to help them decide who to hire, and who to fire.
+
+◊(define wells-fargo-closed "https://www.cnbc.com/2018/08/22/wells-fargo-closes-bank-account-of-candidate-who-supports-marijuana.html")
 ◊(define china-social-credit2 "https://www.inkstonenews.com/china/chinas-13-million-discredited-individuals-face-discrimination-thanks-social-credit-system/article/3003319")
 ◊(define michigan-man-house "https://reason.com/2019/11/06/a-michigan-man-underpaid-his-property-taxes-by-8-41-the-county-seized-his-property-sold-it-and-kept-the-profits/")
 
