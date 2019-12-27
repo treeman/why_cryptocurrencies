@@ -97,7 +97,7 @@ Counterfeiting also means redistributing wealth from everyone to the counterfeit
 ◊(define print-money "https://murdoch.is/projects/currency/")
 
 ◊ndef["case-against-fed"]{
-    A similar example was given by Murray N. Rothbard in “◊link[case-against-fed-book]{The Case Against the Fed}”.
+    A similar example was given by Murray N. Rothbard in ◊link[case-against-fed-book #:quote #t]{The Case Against the Fed}.
 }
 
 

@@ -1,25 +1,9 @@
 #lang pollen
 
 ◊(define-meta title "The cashless dystopia")
-◊(define-meta subtitle "The cashless society is nightmare")
+◊(define-meta subtitle "The cashless society is a nightmare")
 ◊(define-meta updated "2019-12-22T19:08:58+01:00")
 ◊(define-meta uuid "55993260-1c9a-4bcf-ace5-7773e65bf7b5")
-
-
-◊; WeChat is Watching: Living in China with the app that knows everything about me
-◊; https://news.ycombinator.com/item?id=20173549
-
-◊; China bans 23M from buying travel tickets as part of 'social credit' system
-◊; https://news.ycombinator.com/item?id=19281192
-
-◊; 25M Brits would struggle in a cashless society
-◊; https://news.ycombinator.com/item?id=19407730
-
-◊; Sweden's cashless society is no longer a utopia
-◊; https://news.ycombinator.com/item?id=18422422
-
-◊; Debate rages in Austria over enshrining use of cash in the constitution
-◊; https://www.euractiv.com/section/data-protection/news/debate-rages-in-austria-over-enshrining-use-of-cash-in-the-constitution/
 
 ◊epigraph{
     ◊qt[#:src "1984"
@@ -193,4 +177,19 @@ The cashless society does solve some problems well. It's more convenient to use 
 I'd say that the only way a cashless society makes sense is if we use ◊em{digital} cash, while only moving away from physical cash. And cryptocurrencies are the only digital currencies that are permissionless and that preserves your privacy.
 
 ◊(define privacy-challenge "/challenges.html#privacy-and-fungibility")
+
+◊; WeChat is Watching: Living in China with the app that knows everything about me
+◊; https://news.ycombinator.com/item?id=20173549
+
+◊; China bans 23M from buying travel tickets as part of 'social credit' system
+◊; https://news.ycombinator.com/item?id=19281192
+
+◊; 25M Brits would struggle in a cashless society
+◊; https://news.ycombinator.com/item?id=19407730
+
+◊; Sweden's cashless society is no longer a utopia
+◊; https://news.ycombinator.com/item?id=18422422
+
+◊; Debate rages in Austria over enshrining use of cash in the constitution
+◊; https://www.euractiv.com/section/data-protection/news/debate-rages-in-austria-over-enshrining-use-of-cash-in-the-constitution/
 

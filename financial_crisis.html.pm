@@ -62,7 +62,7 @@ A lot of ink has been spent on articles, books and movies explaining the events 
 ◊;youtube[margot-robbie]{ Margot Robbie describes subrime mortgages.  }
 ◊;youtube[anthony-bourdain]{Anthony Bourdain explains what a CDO is.}
 
-A pitch of humor sure makes for memorable explanations. But if it's too much Hollywood for your taste I recommend the book the movie is based on:  “◊link[the-big-short-book]{The Big Short: Inside the Doomsday Machine}” by Michael Lewis. Or if you're short on time maybe ◊link[11-min]{this 11 minute video} might suffice.
+A pitch of humor sure makes for memorable explanations. But if it's too much Hollywood for your taste I recommend the book the movie is based on:  ◊link[the-big-short-book #:quote #t]{The Big Short: Inside the Doomsday Machine} by Michael Lewis. Or if you're short on time maybe ◊link[11-min]{this 11 minute video} might suffice.
 
 ◊(define 11-min "https://www.youtube.com/watch?v=bx_LWm6_6tA")
 ◊(define the-big-short "https://www.imdb.com/title/tt1596363/")
@@ -71,7 +71,7 @@ A pitch of humor sure makes for memorable explanations. But if it's too much Hol
 
 
 ◊ndef["villains"]{
-    In “◊link[after-the-music-stopped-book]{After the Music Stopped}” Alan S. Blinder identifies seven villains responsible for the crisis:
+    In ◊link[after-the-music-stopped-book #:quote #t]{After the Music Stopped} Alan S. Blinder identifies seven villains responsible for the crisis:
 
     1. Housing bubble
     2. Bond bubble
@@ -306,9 +306,9 @@ Therefore the unhealthy "heads I win, tails I get bailed-out" incentives would r
 ◊(define broken-system "/a_broken_system.html")
 
 ◊ndef["music-stopped"]{
-    “◊link[after-the-music-stopped-book]{After the Music Stopped}” Alan S. Blinder
+    ◊link[after-the-music-stopped-book #:quote #t]{After the Music Stopped} Alan S. Blinder
 }
 ◊ndef["big-short"]{
-    “◊link[the-big-short-book]{The Big Short: Inside the Doomsday Machine}” Michael Lewis
+    ◊link[the-big-short-book #:quote #t]{The Big Short: Inside the Doomsday Machine} Michael Lewis
 }
 

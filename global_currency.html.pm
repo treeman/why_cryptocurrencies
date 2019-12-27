@@ -94,7 +94,7 @@ There's an opportunity here for cryptocurrencies, which is demonstrated by the c
 
 
 ◊ndef["venezuela-adoption"]{
-    People often wonder how much cryptocurrencies are used in Venezuela. While there are heartwarming stories like how “◊link[venezuela-bitcoin-saved-my-family]{Bitcoin Has Saved My Family}”, it's still a niche.
+    People often wonder how much cryptocurrencies are used in Venezuela. While there are heartwarming stories like how ◊link[venezuela-bitcoin-saved-my-family #:quote #t]{Bitcoin Has Saved My Family}, it's still a niche.
 
     But adoption is growing and enough merchants accept Bitcoin Cash directly to support eatBCH for example.
 }
@@ -233,7 +233,7 @@ Cryptocurrencies are so robust we might as well say they're always available, fo
 The U.S. dollar is the ◊link[world-currency]{closest we have to a world currency}. More than half of all U.S. dollar bills are used outside of the U.S.---often as hard currency. Almost 40% of all debt in the world is issued in U.S. dollars and the central banks of other countries hold a large part of their reserves in U.S. dollars (making it the most widely used ◊link[reserve-currency]{◊em{reserve currency}}).◊sn{jp-morgan}
 
 ◊ndef["jp-morgan"]{
-    According to Craig Cohen of J.P. Morgan, the U.S. dollar dominance could be coming to an end, and says it “◊link[jp-morgan-dollar]{could lose its status as world’s reserve currency}”.
+    According to Craig Cohen of J.P. Morgan, the U.S. dollar dominance could be coming to an end, and says it ◊link[jp-morgan-dollar #:quote #t]{could lose its status as world’s reserve currency}.
 }
 
 ◊(define world-currency "https://www.thebalance.com/world-currency-3305931")
