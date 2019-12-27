@@ -5,24 +5,6 @@
 ◊(define-meta updated "2019-09-02T07:00:09+02:00")
 ◊(define-meta uuid "01795fb4-c99a-4168-8685-73ad86ed7c0c")
 
-◊; https://news.ycombinator.com/item?id=21464572
-
-◊; India voids 500 and 1000 rupee bills
-
-◊; Macedonia bans fiat cash payments above 560
-◊; <https://www.reddit.com/r/btc/comments/bvx83n/macedonia_bans_fiat_cash_payments_above_560/>
-
-◊; North Macedonia limits payment in cash up to 500 euros:
-◊; <http://www.china.org.cn/world/Off_the_Wire/2019-06/01/content_74845553.htm>
-
-◊; Man walks through Boston Logan Airport with $50K in a backpack; government wants to keep it
-◊; <https://www.masslive.com//boston/2019/02/man-walks-through-boston-logan-airport-with-50k-in-a-backpack-government-wants-to-keep-it.html>
-
-◊; Safe deposit boxes aren't safe
-◊; <https://news.ycombinator.com/item?id=20545276>
-
-◊; <https://www.reddit.com/r/btc/comments/c6cfbf/let_me_tell_you_a_tale_about_ecuador_that_abused/>
-
 ◊epigraph{
   ◊qt[#:author "Gollum"
       #:quote-src #t
@@ -35,38 +17,13 @@ In this chapter we'll see how governments around the world sometimes directly or
 
 No, this chapter is ◊strong{not} about tax evasion---do your taxes people.
 
-It's about laws meant to fight crime end up hurting innocent people and how they limit people's freedom.◊sn{legal-moral} We'll also see what inflation means for your savings and what might happen to them if your country ends up in an economic crisis. And of course, as this is about cryptocurrencies, how they might help.
+It's about laws meant to fight crime end up hurting innocent people and how they limit people's freedom.◊sn{legal-moral} It's also about how difficult it can be for you to keep your money safe and your wealth intact; and of course, as this is about cryptocurrencies, how they might help.
 
 ◊ndef["legal-moral"]{
-    We'll explore the idea that legality doesn't imply morality---meaning just because it's legal doesn't make it right---in the chapter about ◊link[rel-darknet]{darknet markets}.
+    Remember that legality doesn't imply moraly, meaning just because it's legal doesn't make it right, which we explored in the chapter about ◊link[rel-darknet]{darknet markets}.
 }
 
 ◊(define rel-darknet "/darknet_markets.html")
-
-
-◊subhead{Limiting cash}
-
-In their ever-increasing attempts to counter money-laundering governments all over the world have implemented limits to cash deposits to banks, cash purchases and even how much cash you can carry. ◊link[kyc]{Know-your-customer} (KYC) laws for example require banks in the United States to ◊link[ctr]{report any cash deposits of $10,000}, or multiple transactions adding up to that amount, to the IRS. They then have to be ready to provide extensive documentation to prove where the money is coming from.◊sn{structuring}
-
-◊ndef["structuring"]{
-    The act of managing your deposits in a way to avoid triggering the report is called ◊link[structuring]{◊em{structuring}} and is---you guessed it---◊link[structuring-illegal]{illegal}. Of course this might also affect ◊link[structuring-innocent]{innocent people} or legitimate businesses who just happen to deposit using a suspicious pattern.
-}
-
-In the U.S. you also have to declare cash amounts over $10,000 you want to leave or enter the country with, otherwise you'll face a high risk of ◊link[travel-forfeiture]{having it all confiscated}. Many countries have similar restrictions but North Macedonia takes it a step further: to prevent "money laundering and terrorism financing" cash payments above 30,000 MKD (around €500) ◊link[macedonia-limits-cash]{are banned}.
-
-Instead we're encouraged to use digital payments (ignoring the ◊link[rel-unbanked]{unfortunate without the ability} to do so), where banks are able to block large payments if they deem them suspicious---presumably to make it harder to do money laundering.◊sn{laundering}
-
-◊ndef["laundering"]{
-    It sounds hypocritical to me when a major U.S. bank laundered ◊strong{$378 billions} ◊link[us-banks-mexico-drug-gangs]{for Mexico's drug gangs}, the kind of gangs that leaves behind ◊link[gang-mass-grave]{enormous mass-graves}.
-}
-
-
-Cryptocurrencies don't have any kind of restriction for how much you can send, receive or transport and even if similar limits are placed on them there's no practical way to enforce them.◊sn{privacy}
-
-◊ndef["privacy"]{
-    In contrast to other digital payments cryptocurrencies can give you very good privacy and it's in practice impossible for anyone to know how much you have. We'll explore this more in the chapter ◊link[rel-swiss-bank]{A swiss bank account in your pocket}.
-}
-
 ◊(define rel-unbanked "/for_the_unbanked.html")
 ◊(define rel-swiss-bank "/swiss-bank-account-in-your-pocket.html")
 ◊(define structuring "https://en.wikipedia.org/wiki/Structuring")
@@ -81,7 +38,7 @@ Cryptocurrencies don't have any kind of restriction for how much you can send, r
 
 ◊subhead{Civil asset forfeiture}
 
-Perhaps you've heard the phrase "innocent until proven guilty"? It's called ◊link[presumption-of-innocence]{presumption of innocence} and it's a cornerstone in the modern justice system which says the default stance is that you're innocent of a crime and it's up to the prosecution to prove otherwise. It's an old legal principle that the United Nations has declared an ◊link[un-universal-human-rights]{universal human right} (see article 11).
+Perhaps you've heard the phrase "innocent until proven guilty"? It's called ◊link[presumption-of-innocence]{presumption of innocence} and it's a cornerstone in the modern justice system that says the default stance is that you're innocent of a crime and it's up to the prosecution to prove otherwise. It's an old legal principle that the United Nations has declared an ◊link[un-universal-human-rights]{universal human right} (see article 11).
 
 If it was the other way around, "guilty until proven innocent", then it would open up abuse from inside the justice system and innocent people would end up in jail. Only people who could afford the time and money to defend themselves could avoid jail. The presumption of innocence a necessary requirement to keep the justice system fair.
 
@@ -91,8 +48,10 @@ If it was the other way around, "guilty until proven innocent", then it would op
 However in the United States there's something called ◊link[civil-forfeiture]{◊em{civial asset forfeiture}}. It's a legal tool which allows the police to seize your car, home, money or other assets without ever charging you with a crime. You read that right, they can seize your assets ◊strong{without charging you with a crime}.◊sn{cash-limits} There are ◊link[10-cases-forfeiture]{tons of stories} of ◊link[7-cases-forfeiture]{innocent people} having their ◊link[ef-cases]{money or property confiscated}, for example:
 
 ◊ndef["cash-limits"]{
-    To be fair, the limits placed on cash I referenced before are also examples of the presumption of innocent being turned on it's head. For example if you transfer €50,000 in a European bank it's up to you to prove where you got the money, not the bank or the government.
+    The limits placed on cash I referenced in the ◊link[prev-chapter]{previous chapter} are also examples of the presumption of innocence being turned on it's head. For example if you transfer €50,000 in a European bank it's up to you to prove where you got the money, not the bank or the government.
 }
+
+◊(define prev-chapter "/cashless_dystopia.html")
 
 ◊ul{
     ◊li{NYPD officers ◊link[nypd-civil-forfeiture]{stole $4,800} in a warrantless search.
@@ -116,7 +75,7 @@ This really flips the "innocent until proven guilty" mantra on it's head. You're
 Maybe there were some good intentions◊sn{banks-laundering} when these laws mere made, but today they simply don't work as intended. I'll leave it to Columbia's former police chief to explain:
 
 ◊ndef["banks-laundering"]{
-    They say the laws are supposed to confiscate assets from criminals. For example from drug dealers who sells large amounts of drugs for cash. Because only criminals use large amounts of cash... that's the claim anyway.
+    They say the laws are supposed to confiscate assets from criminals. For example from drug dealers who sells large amounts of drugs for cash. Because only criminals use large amounts of cash... well, that's the claim anyway.
 }
 
 ◊(define us-banks-mexico-drug-gangs "https://www.theguardian.com/world/2011/apr/03/us-bank-mexico-drug-gangs")
@@ -127,7 +86,7 @@ Maybe there were some good intentions◊sn{banks-laundering} when these laws mer
     #:url "https://www.themaneater.com/stories/outlook/police-chief-ken-burton-calls-forfeiture-funds-pen"
     #:date "2012"
     #:emphasis #t]{
-    It’s usually based on a need---well, I take that back, There’s some limitations on it. ... Actually, there’s not really on the forfeiture stuff. We just usually base it on ◊strong{something that would be nice to have} that we can’t get in the budget, for instance. We try not to use it for things that we need to depend on because we need to have those purchased. It’s kind of like pennies from heaven---◊strong{it gets you a toy} or something that you need is the way that we typically look at it to be perfectly honest.
+    It’s usually based on a need---well, I take that back, there’s some limitations on it. ... Actually, there’s not really on the forfeiture stuff. We just usually base it on ◊strong{something that would be nice to have} that we can’t get in the budget, for instance. We try not to use it for things that we need to depend on because we need to have those purchased. It’s kind of like pennies from heaven---◊strong{it gets you a toy} or something that you need is the way that we typically look at it to be perfectly honest.
 }
 
 Most of the money goes to funding the police.◊sn{police-funding} But the money has gone to ◊link[steak-forfeiture]{extravagant Christmas parties, sirloin beef and a $8,200 security system} for the district attorney's private home. And of course some managed to spend it on ◊link[forfeiture-alcohol]{alcohol, prostitutes and marijuana}. Then there's the case where another district attorney ◊link[forfeiture-hawaii]{spent $27,000 to take his whole office to Hawaii}, including the approving district judge.
@@ -231,7 +190,7 @@ Similar to how safe deposit boxes aren't safe during a financial crisis, neither
 
 ◊subhead{Invalidating money}
 
-Fine. Let's say you know about all these ways someone can take your money and you've decided to hide your money somewhere really safe, maybe buried in your yard or in a hidden safe somewhere in your house.◊sn{safe-tips} Perhaps nobody even knows you have it so the risk of someone ◊link[xkcd-security]{hitting you with a wrench until you give it} up is minimized. That should do it, right?
+Fine. Let's say you know about all these ways someone can take your money and you've decided to hide your cash somewhere really safe, maybe buried in your yard or in a hidden safe somewhere in your house.◊sn{safe-tips} Perhaps nobody even knows you have it so the risk of someone ◊link[xkcd-security]{hitting you with a wrench until you give it} up is minimized. That should do it, right?
 
 ◊ndef["safe-tips"]{
     Here are some tips if you want to install a safe:
@@ -264,11 +223,15 @@ Many turned to gold, jewelry and anything that could reasonably hold value to pr
 
 ◊subhead{Falling through the cracks when cash is renewed}
 
-I like cash. I like the feel of it and I like that I can store it at home and be reasonably sure that I can keep it. The government outright invalidating it---like in India---is the exception and it's extremely unlikely for example the Swedish government would do so without the ability to exchange the old for new. For instance when Sweden ◊link[nyasedlar]{upgraded to new bills} the old ones were valid in stores for about a year, and you could exchange them at banks long after that too.
+I like cash. I like the feel of it and I like that I can store it at home and be reasonably sure that I can keep it. The government outright invalidating it---like in India---is the exception and it's extremely unlikely for example the Swedish government would do so without the ability to exchange the old for new. For instance when Sweden ◊link[nyasedlar]{upgraded to new bills} the old ones were valid in stores for about a year, and you could exchange them at banks long after that too.◊sn{dislike-cash}
+
+◊ndef["dislike-cash"]{
+    Even though I like the idea of cash, I don't use it much. Simply because I'm ◊em{lazy}, and paying with cards is much easier.
+}
 
 But the system isn't perfect. If you miss your window and have to go to a bank with your old, and now technically invalid bills, you have to prove where the cash came from. This can be quite hard if you've been saving some money here and there for many years, and if you don't your money is now lost.
 
-Exactly this happened to a 91-year old Swedish woman ◊link[91-woman]{couldn't deposit her old bills} (worth around €10,000), because she couldn't prove where she got them. There isn't anything outright evil going on here (maybe a little unintended evil?): there are rules which have to be followed and cash do have to get replaced from time to time. It's just unfortunate that some people may fall through the cracks.◊sn{old-people}
+Exactly this happened to a 91-year old Swedish woman ◊link[91-woman]{couldn't deposit her old bills} (worth around €10,000), because she couldn't prove where she got them. There isn't anything outright evil going on here (maybe a little unintended evil?), there are rules which have to be followed and cash do have to get replaced from time to time. It's just unfortunate that some people may fall through the cracks.◊sn{old-people}
 
 ◊ndef["old-people"]{
     It's not surprising that it was an old woman who got in trouble. When you're over 90 years old you probably didn't even know about the new bills and that the old ones were becoming invalid. She probably wasn't up-to-date with the ever-more strict KYC laws either. When she was younger she didn't have to track every single income-source, just to not lose her money.
@@ -291,12 +254,12 @@ There is another way governments can take money from you: by inflating the money
 ◊(define defective-system "/a_defective_system.html")
 ◊(define global-currency "/global_currency.html")
 
-Just remember that inflation is a more indirect---and perhaps sinister---way to take money from you as you probably won't notice it. After all they aren't taking something physically from you, you still have your cash in your mattress and numbers in your bank account are unchanged, but they now get you less stuff.◊sn{inflation-sad}
+Just remember that inflation is a more indirect---and perhaps sinister---way to take money from you as you probably won't notice it. After all they aren't taking something physically from you---you still have your cash in your mattress and numbers in your bank account are unchanged---but they now get you less stuff.◊sn{inflation-sad}
 
 ◊ndef["inflation-sad"]{
     Here's a sad story I heard about what inflation can do to your savings:
 
-    These two persons were quite frugal and they saved a lot of their income. They were planning to give it all to their son when he got older, so he could live a good life and not having to worry so much. After having saved a lot over many decades they gave it all to him as a lump sum.
+    This couple was quite frugal and saved a lot of their income. They were planning to give some of it to their son when he got older, so he could live a good life and not having to worry so much. After having saved a lot over many decades they gave a big gift to him as a lump sum.
 
     After a few years they asked him what he did with the money and they were horrified by his answer---he had bought skiing equipment for all the money! But this money was supposed to buy a house or a car, how could he be this irresponsible?
 
@@ -309,13 +272,15 @@ With cryptocurrencies nobody can "steal" money from you buy printing more of it.
 
 ◊subhead{What cryptocurrencies does}
 
-To summarize what cryptocurrencies can do for us if we want to protect ourselves against the different kinds of government seizures:
+Here's a short summary on how cryptocurrencies can help protect our money and our wealth:
 
 ◊ol{
-    ◊li{It allows you to hold---and hide---any amount of money}
+    ◊li{It allows you to hold, and hide, any amount of money}
     ◊li{If you use strong encryption, nobody can confiscate it (unless they use force)}
-    ◊li{You can bring your money everywhere}
+    ◊li{You can easily bring your money everywhere}
     ◊li{The government cannot invalidate your money}
-    ◊li{There is nobody who can inflate the money supply}
+    ◊li{Nobody can inflate the money supply and devalue your money}
 }
+
+Of course we must always remember that cryptocurrencies are extremely volatile, and storing your wealth in them might be less preferable than letting it slowly wither away from inflation. With time, and increased adoption, this might change.
 
