@@ -272,7 +272,7 @@ With cryptocurrencies nobody can "steal" money from you buy printing more of it.
 
 ◊; https://www.reddit.com/r/btc/comments/c6cfbf/let_me_tell_you_a_tale_about_ecuador_that_abused/
 
-◊subhead{What cryptocurrencies does}
+◊subhead{What cryptocurrencies do}
 
 Here's a short summary on how cryptocurrencies can help protect our money and our wealth:
 
