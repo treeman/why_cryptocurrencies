@@ -169,12 +169,12 @@ But you wouldn't be alone. ◊link[brits-struggle]{25 million Brits} would strug
 The lack of financial privacy and needing permission to use it's money are the big problems with the cashless society. As we've seen in previous chapters, cryptocurrencies solve these problems well.◊sn{privacy?}
 
 ◊ndef["privacy?"]{
-    It might hubris to claim that cryptocurrencies makes privacy better, as Bitcoin is more traceable than any other form of money in history. But there are other cryptocurrencies with much better privacy features, see the ◊link[privacy-challenge]{discussion about the privacy challenge} in the appendix
+    It might hubris to claim that cryptocurrencies makes privacy better, as Bitcoin is more traceable than any other form of money in history. But there are other cryptocurrencies with much better privacy features, see the ◊link[privacy-challenge]{discussion about the privacy challenge} in the appendix for more information.
 }
 
 The cashless society does solve some problems well. It's more convenient to use digital money---just blip your card or your phone, instead of counting change---or how businesses don't have to store large amounts of cash in stores and risk break-ins. Cryptocurrencies can also solve these problems.
 
-I'd say that the only way a cashless society makes sense is if we use ◊em{digital} cash, while only moving away from physical cash. And cryptocurrencies are the only digital currencies that are permissionless and that preserves your privacy.
+I'd say that the only way a cashless society makes sense is if we use ◊em{digital} cash, while only moving away from physical cash. And cryptocurrencies are the only digital currencies that are permissionless and preserves your privacy, and therefore they're only ones that can rightfully be called digital cash.
 
 ◊(define privacy-challenge "/challenges.html#privacy-and-fungibility")
 
