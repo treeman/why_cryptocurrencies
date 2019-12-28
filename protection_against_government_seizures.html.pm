@@ -40,7 +40,7 @@ It's about laws meant to fight crime end up hurting innocent people and how they
 
 Perhaps you've heard the phrase "innocent until proven guilty"? It's called ◊link[presumption-of-innocence]{presumption of innocence} and it's a cornerstone in the modern justice system that says the default stance is that you're innocent of a crime and it's up to the prosecution to prove otherwise. It's an old legal principle that the United Nations has declared an ◊link[un-universal-human-rights]{universal human right} (see article 11).
 
-If it was the other way around, "guilty until proven innocent", then it would open up abuse from inside the justice system and innocent people would end up in jail. Only people who could afford the time and money to defend themselves could avoid jail. The presumption of innocence a necessary requirement to keep the justice system fair.
+If it was the other way around, "guilty until proven innocent", then it would open up abuse from inside the justice system and innocent people would end up in jail, either by being unlucky---despite being innocent you lack convincing evidence that you are---or you simply cannot afford competent defense to protect yourself. Therefore the presumption of innocence a necessary requirement to keep the justice system fair.
 
 ◊(define presumption-of-innocence "https://en.wikipedia.org/wiki/Presumption_of_innocence")
 ◊(define un-universal-human-rights "https://www.un.org/en/universal-declaration-human-rights/")
@@ -48,7 +48,7 @@ If it was the other way around, "guilty until proven innocent", then it would op
 However in the United States there's something called ◊link[civil-forfeiture]{◊em{civial asset forfeiture}}. It's a legal tool which allows the police to seize your car, home, money or other assets without ever charging you with a crime. You read that right, they can seize your assets ◊strong{without charging you with a crime}.◊sn{cash-limits} There are ◊link[10-cases-forfeiture]{tons of stories} of ◊link[7-cases-forfeiture]{innocent people} having their ◊link[ef-cases]{money or property confiscated}, for example:
 
 ◊ndef["cash-limits"]{
-    The limits placed on cash I referenced in the ◊link[prev-chapter]{previous chapter} are also examples of the presumption of innocence being turned on it's head. For example if you transfer €50,000 in a European bank it's up to you to prove where you got the money, not the bank or the government.
+    The limits placed on cash I referenced in the ◊link[prev-chapter]{previous chapter} are also examples of the presumption of innocence being turned on it's head. For example if you transfer €50,000 to an European bank it's up to you to prove where you got the money, not the bank or the government.
 }
 
 ◊(define prev-chapter "/cashless_dystopia.html")
@@ -100,7 +100,7 @@ In practice civil asset forfeiture is state-sanctioned theft where the police ar
 So how can cryptocurrencies protect you against the forfeiture laws? While they naturally can't prevent the police from seizing your house or your car, they allow you to easily store and travel with as much money as you can---without anyone noticing. Even if they know you have them there's nothing they can physically steal---they would need your password. (Of course they might be able to coerce you to unluck it for them.)◊sn{how-to-store}
 
 ◊ndef["how-to-store"]{
-    An app on your phone can hold an unlimited amount of value in cryptocurrencies. Or if you want to be more secure you can encrypt your private key with a strong password and store it on your computer or online. Even the government cannot break strong encryption (assuming they don't have amazing quantum computers hidden somewhere).
+    An app on your phone can hold an unlimited amount of value in cryptocurrencies. Or if you want to be more secure you can encrypt your private key with a strong password and store it on your computer or online. Even the government cannot break strong encryption.
 }
 
 ◊(define highway-robbers "https://www.aclu.org/press-releases/aclu-announces-settlement-highway-robbery-cases-texas")
@@ -141,9 +141,11 @@ Okay we now know the dangers of walking around with a bunch of cash. Forget abou
 
 ◊todo{Image of a "trustworthy" banker gremling/monster dude in front of deposit boxes with the same numbers}
 
-Unfortunately ◊link[safe-deposit-boxes-not-safe]{safe deposit boxes aren't safe}.
+Unfortunately safe deposit boxes aren't safe:
 
-◊qt{
+◊qt[#:url safe-deposit-boxes-not-safe
+    #:author "The New York Times"
+    #:src "Safe deposit boxes aren't safe"]{
     There are an estimated 25 million safe deposit boxes in America, and they operate in a legal gray zone within the highly regulated banking industry. There are no federal laws governing the boxes; no rules require banks to compensate customers if their property is stolen or destroyed.
 }
 
@@ -155,7 +157,7 @@ The contents of safety deposit boxes disappear all the time, and there's not a w
     If a loss results from our negligence or willful misconduct, our total liability will be the lesser of your actual uninsured loss or $500.
 }
 
-And they really are negligent. Did you know that the safe deposit box numbers aren't unique? So it may happen that a bank tries to evict another customer for not keeping up with payments, and they remove another box with the same number.
+And they really are negligent. Did you know that the safe deposit box numbers aren't unique? So it may happen that a bank tries to evict another customer for not keeping up with payments, and they ◊link[safe-deposit-boxes-not-safe]{remove another box with the same number}.
 
 Deposit boxes won't keep you safe from creditors, who may ◊link[creditors-open]{ask the bank for your deposit box}, and of course they won't be safe ◊link[governments-deposit-boxes]{from the government}---or even the banks themselves---in bad economic times.
 
