@@ -28,7 +28,7 @@ Recently Switzerland has ◊link[swiss-exchange]{begun sharing bank details} of 
 Cryptocurrencies on the other hand can fulfill the dream.◊sn{private?}
 
 ◊ndef["private?"]{
-    How private are cryptocurrencies really? Read the ◊link[privacy-challenge]{discussion of the privacy challenge} in the appendix.
+    How private are cryptocurrencies really? Some are more private than others, see the ◊link[privacy-challenge]{discussion of the privacy challenge} in the appendix for more information.
 }
 
 ◊(define privacy-challenge "/challenges.html#privacy-and-fungibility")
@@ -39,7 +39,7 @@ Cryptocurrencies on the other hand can fulfill the dream.◊sn{private?}
 
 ◊subhead{Shell companies and offshore bank accounts}
 
-Maybe you'll say truly private bank accounts are really bad as they enable tax fraud and money laundering. And you'd have a point, but there's just one issue: it's already possible. And it's happening at a global scale.
+Maybe you'll say truly private bank accounts are really bad as they enable tax fraud and money laundering. And you'd have a point, but there's just one issue: it's already possible, and it's happening at a global scale.
 
 The ◊link[panama-papers]{Panama Papers} was a gigantic leak that detailed the shady businesses of shell companies and how they're used to hide ownership of assets. It detailed how politicians, celebrities, drug dealers and the global elite obscured their wealth and in large part engaged in tax fraud and money laundering.◊sn{panama-links}
 
@@ -130,7 +130,7 @@ Today financial privacy is only available for the ultra rich, which they abuse f
 
 But what if ◊em{everyone} would have access to similar tools that the ultra rich have? Would the world collapse as nobody would pay taxes anymore? Or would the world change to the better as the tax rules would have to be reworked to be more fair? At the very least the world would be more equal.
 
-For better or worse, cryptocurrencies brings us closer to that world. Cryptocurrencies give everyone the ability to store their wealth privately, regardless of how rich you are.  They make it possible for anyone to store their wealth "offshore" and off the grid---they act as a financial equalizer by giving everyone access to similar tools that the ultra rich already have.◊sn{not-quite}
+For better or worse, cryptocurrencies bring us closer to that world. Cryptocurrencies give everyone the ability to store their wealth privately, regardless of how rich you are.  They make it possible for anyone to store their wealth "offshore" and off the grid; they act as a financial equalizer by giving everyone access to similar tools that the ultra rich already have.◊sn{not-quite}
 
 ◊ndef["not-quite"]{
     While cryptocurrencies might make it easier to hide your money, it does not give you the ability to find the tax loopholes the ultra rich are exploiting.
