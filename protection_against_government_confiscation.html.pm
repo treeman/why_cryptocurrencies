@@ -1,6 +1,6 @@
 #lang pollen
 
-◊(define-meta title "Protection against government seizures")
+◊(define-meta title "Protection against government confiscation")
 ◊(define-meta subtitle "It's harder for governments to take cryptocurrencies from you")
 ◊(define-meta updated "2019-09-02T07:00:09+02:00")
 ◊(define-meta uuid "01795fb4-c99a-4168-8685-73ad86ed7c0c")
@@ -20,7 +20,7 @@ No, this chapter is ◊strong{not} about tax evasion---do your taxes people.
 It's about laws meant to fight crime end up hurting innocent people and how they limit people's freedom.◊sn{legal-moral} It's also about how difficult it can be for you to keep your money safe and your wealth intact; and of course, as this is about cryptocurrencies, how they might help.
 
 ◊ndef["legal-moral"]{
-    Remember that legality doesn't imply moraly, meaning just because it's legal doesn't make it right, which we explored in the chapter about ◊link[rel-darknet]{darknet markets}.
+    Remember that legality doesn't imply morality, meaning just because it's legal doesn't make it right, which we explored in the chapter about ◊link[rel-darknet]{darknet markets}.
 }
 
 ◊(define rel-darknet "/darknet_markets.html")
@@ -68,7 +68,7 @@ However in the United States there's something called ◊link[civil-forfeiture]{
     }
 }
 
-On a technical level it's not the owner that's charge with a crime, but the property itself. That's why it's legal for the police to seize a house because someone sold drugs in the house, even if the owners didn't know about it.
+On a technical level it's not the owner that's charged with a crime, but the property itself. That's why it's legal for the police to seize a house because someone sold drugs in the house, even if the owners didn't know about it.
 
 This really flips the "innocent until proven guilty" mantra on it's head. You're often---but not always!---able to contest the seizure to get back your assets. If you're lucky you'll get them back, but more likely you'll get locked down in a year long legal battle with expensive lawyer fees. Unfortunately it's often more expensive to contest the seizure so many are forced to accept the loss.
 
@@ -89,7 +89,7 @@ Maybe there were some good intentions◊sn{banks-laundering} when these laws mer
     It’s usually based on a need---well, I take that back, there’s some limitations on it. ... Actually, there’s not really on the forfeiture stuff. We just usually base it on ◊strong{something that would be nice to have} that we can’t get in the budget, for instance. We try not to use it for things that we need to depend on because we need to have those purchased. It’s kind of like pennies from heaven---◊strong{it gets you a toy} or something that you need is the way that we typically look at it to be perfectly honest.
 }
 
-Most of the money goes to funding the police.◊sn{police-funding} But the money has gone to ◊link[steak-forfeiture]{extravagant Christmas parties, sirloin beef and a $8,200 security system} for the district attorney's private home. And of course some managed to spend it on ◊link[forfeiture-alcohol]{alcohol, prostitutes and marijuana}. Then there's the case where another district attorney ◊link[forfeiture-hawaii]{spent $27,000 to take his whole office to Hawaii}, including the approving district judge.
+He's saying that the police can take whatever they want, and that they're motivated by what they want, not if there's a crime involved or not. Most of the money goes to funding the police,◊sn{police-funding} but the money has gone to ◊link[steak-forfeiture]{extravagant Christmas parties, sirloin beef and a $8,200 security system} for the district attorney's private home. And of course some managed to spend it on ◊link[forfeiture-alcohol]{alcohol, prostitutes and marijuana}. Then there's the case where another district attorney ◊link[forfeiture-hawaii]{spent $27,000 to take his whole office to Hawaii}, including the approving district judge.
 
 ◊ndef["police-funding"]{
     If you're a cynic, like I tend to be, you have to love the incentives at play here. If the police seize money they directly help themselves yet there appears to be no negative consequences if they do.
@@ -97,12 +97,13 @@ Most of the money goes to funding the police.◊sn{police-funding} But the money
 
 In practice civil asset forfeiture is state-sanctioned theft where the police are acting like ◊link[highway-robbers]{highway robbers}.
 
-So how can cryptocurrencies protect you against the forfeiture laws? While they naturally can't prevent the police from seizing your house or your car, they allow you to easily store and travel with as much money as you can---without anyone noticing. Even if they know you have them there's nothing they can physically steal---they would need your password. (Of course they might be able to coerce you to unluck it for them.)◊sn{how-to-store}
+So how can cryptocurrencies protect you against the forfeiture laws? While they naturally can't prevent the police from seizing your house or your car, they allow you to easily store and travel with as much money as you can---without anyone noticing. Even if they know you have them there's nothing they can physically steal---they would need ◊link[xkcd-pass]{your password}. (Of course they might be able to coerce you to unluck it for them.)◊sn{how-to-store}
 
 ◊ndef["how-to-store"]{
     An app on your phone can hold an unlimited amount of value in cryptocurrencies. Or if you want to be more secure you can encrypt your private key with a strong password and store it on your computer or online. Even the government cannot break strong encryption.
 }
 
+◊(define xkcd-pass "https://xkcd.com/792/")
 ◊(define highway-robbers "https://www.aclu.org/press-releases/aclu-announces-settlement-highway-robbery-cases-texas")
 ◊(define forfeiture-hawaii "https://www.npr.org/templates/story/story.php?storyId=104065589&t=1567527486222")
 ◊(define forfeiture-alcohol "https://www.policemag.com/348174/prosecutor-mich-cops-spent-forfeiture-funds-on-alcohol-prostitutes")
@@ -141,7 +142,7 @@ Okay we now know the dangers of walking around with a bunch of cash. Forget abou
 
 ◊todo{Image of a "trustworthy" banker gremling/monster dude in front of deposit boxes with the same numbers}
 
-Unfortunately safe deposit boxes aren't safe:
+Unfortunately, safe deposit boxes aren't safe:
 
 ◊qt[#:url safe-deposit-boxes-not-safe
     #:author "The New York Times"
@@ -225,7 +226,7 @@ Many turned to gold, jewelry and anything that could reasonably hold value to pr
 
 ◊subhead{Falling through the cracks when cash is renewed}
 
-I like cash. I like the feel of it and I like that I can store it at home and be reasonably sure that I can keep it. The government outright invalidating it---like in India---is the exception and it's extremely unlikely for example the Swedish government would do so without the ability to exchange the old for new. For instance when Sweden ◊link[nyasedlar]{upgraded to new bills} the old ones were valid in stores for about a year, and you could exchange them at banks long after that too.◊sn{dislike-cash}
+I like cash. I like the feel of it and I like that I can store it at home and be reasonably sure that I can keep it. The government outright invalidating it, like in India, is exceptionally rare, and it's extremely unlikely that for example the Swedish government would do so without the ability to exchange the old cash into the new. For instance when Sweden ◊link[nyasedlar]{upgraded to new bills} the old ones were valid in stores for about a year, and you could exchange them at banks long after that too.◊sn{dislike-cash}
 
 ◊ndef["dislike-cash"]{
     Even though I like the idea of cash, I don't use it much. Simply because I'm ◊em{lazy}, and paying with cards is much easier.
@@ -284,5 +285,5 @@ Here's a short summary on how cryptocurrencies can help protect our money and ou
     ◊li{Nobody can inflate the money supply and devalue your money}
 }
 
-Of course we must always remember that cryptocurrencies are extremely volatile, and storing your wealth in them might be less preferable than letting it slowly wither away from inflation. With time, and increased adoption, this might change.
+Currently, cryptocurrencies are extremely volatile, and storing your wealth in them might be less preferable than letting it slowly wither away from inflation. With time, and increased adoption, this might change.
 
