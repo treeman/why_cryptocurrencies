@@ -21,9 +21,9 @@ This is actually a great description of how cryptocurrencies work. You just need
 
 ◊subhead{The myth of a Swiss bank account}
 
-Maybe you think that this is how a ◊link[swiss-bank-account]{Swiss bank account} operates. That they would offer highly private banking, but that's just a myth. Because they offer more privacy than other banks they also have tough anti-money-laundering laws that requires more identification than other banks and they require proof of where the money comes from.
+This is how ◊link[swiss-bank-account]{Swiss bank accounts} are usually portrayed. While they can offer more privacy than other banks, it's just a myth that they offer truly private banking. Due to the additional privacy compared to the other banks, they also have tough anti-money-laundering laws that requires more identification than other banks and they require proof of where the money comes from.
 
-Recently Switzerland has ◊link[swiss-exchange]{begun sharing bank details} of foreign account holders automatically with other countries. When I write this they share data with ◊link[swiss-more-countries]{more than 60 countries}, and more will join. I think it's fair to say that Swiss bank accounts don't live up to the private bank account dream.
+Recently Switzerland has ◊link[swiss-exchange]{begun sharing bank details} of foreign account holders automatically with other countries. At the time of writing they share data with ◊link[swiss-more-countries]{more than 60 countries}, and more will join. I think it's fair to say that Swiss bank accounts don't live up to the private bank account dream.
 
 Cryptocurrencies on the other hand can fulfill the dream.◊sn{private?}
 
@@ -39,7 +39,7 @@ Cryptocurrencies on the other hand can fulfill the dream.◊sn{private?}
 
 ◊subhead{Shell companies and offshore bank accounts}
 
-Maybe you'll say truly private bank accounts are really bad as they enable tax fraud and money laundering. And you'd have a point, but there's just one issue: it's already possible, and it's happening at a global scale.
+A common argument against truly private bank accounts is that they enable tax fraud and money laundering. And it's a valid point, but there's just one issue: it's already possible, and it's happening at a global scale.
 
 The ◊link[panama-papers]{Panama Papers} was a gigantic leak that detailed the shady businesses of shell companies and how they're used to hide ownership of assets. It detailed how politicians, celebrities, drug dealers and the global elite obscured their wealth and in large part engaged in tax fraud and money laundering.◊sn{panama-links}
 
@@ -58,9 +58,7 @@ But they're not just for avoiding taxes. Look at celebrities for instance, they 
   Emma receives absolutely no tax or monetary advantages from this offshore company whatsoever, only privacy.
 }
 
-Do you believe them? As the cynic that I am, I remain skeptical, but at the same time I sympathize with the privacy concern---I did after all dedicate ◊link[private-money]{an earlier chapter} to the topic. If you haven't read the chapter I suggest you do so now, as it tries to explain why financial privacy is important for everyone.
-
-◊;To be clear: I think tax evasion is ◊strong{bad}---do your taxes people.
+It's up to you if you believe them or not. As the cynic that I am, I remain skeptical, but at the same time I sympathize with the privacy concern---I did after all dedicate ◊link[private-money]{an earlier chapter} to the topic. If you haven't read the chapter I suggest you do so now, as it tries to explain why it's important that financial privacy is available for everyone.
 
 ◊(define private-money "/private_money.html")
 ◊(define panama-papers "https://www.icij.org/investigations/panama-papers/")
@@ -80,7 +78,7 @@ Do you believe them? As the cynic that I am, I remain skeptical, but at the same
   All animals are equal, but some animals are more equal than others
 }
 
-While tax evasion through offshore banking is problematic, it pales to the problem that there's another set of tax rules only for the ultra rich. Let's see what the president of the United States has to say about tax evasion:
+While tax evasion through offshore banking is problematic, it pales to the problem that in practice there's another set of tax rules only for the ultra rich. Let's see what the president of the United States has to say about tax evasion:
 
 ◊qt[#:url "https://www.youtube.com/watch?v=uBZR1-onmAo"
     #:src "Trump debates with Clinton"]{
@@ -88,7 +86,7 @@ While tax evasion through offshore banking is problematic, it pales to the probl
     Trump: That makes me smart.
 }
 
-No Mr. President, that makes you rich. You see, this kind of tax evasion is only available for the ultra rich.◊sn{crap-smart-rich} And it's not the top 1% we're talking about, more like the top 0.001%. We're talking about people who can afford private chefs and travel the world in private jets and yachts. (Alright, maybe it's not ◊em{only} for the ultra rich, you might be able to do it even if you're only very rich.)
+No Mr. President, that makes you rich. You see, this kind of tax evasion is only available for the ultra rich.◊sn{crap-smart-rich} And it's not the top 1% we're talking about, more like the top 0.001%. We're talking about people who can afford private chefs and travel the world in private jets and yachts. (Alright, maybe it's not ◊em{only} for the ultra rich, you might be able to do it even if you're only very rich, but you have to have a very large amount of money to make tax evasion in this way feasible.)
 
 ◊ndef["crap-smart-rich"]{
     And please don't gimme that crap about how all rich people are smart. It's just what rich people tell themselves, to make them feel smart. Most were ◊link[self-made-myth]{born with a golden spoon} in their mouth, and even the self-made ultra rich had a ton of luck and help.
@@ -103,7 +101,7 @@ This is why you don't see the names of normal people in the Panama Papers---no m
     It's funny that you can find Trump's name in the Panama Papers 3,450 times, while ◊link[putin-proxies]{Putin uses proxies} to try and hide his involvement. I wonder, does that make Putin smarter than Trump?
 }
 
-Here I use the term ◊em{tax evasion} instead ◊em{tax fraud} because, believe it or not, it's often legal! If you're rich enough you can hire tax experts who'll find the loopholes in the tax laws so you can ◊link[tax-evasion-and-inequality]{avoid the taxes normal people have to pay}.  And if you do happen step on the wrong side of the law, you can hire the very best (and very expensive) lawyers to keep you out of prison. But you shouldn't worry about that too much, since the rich and powerful also lobbies the law makers to make the laws beneficial for them and to keep the ◊link[irs-gutted]{IRS starved for funds}.◊sn{companies-too}
+Here I use the term ◊em{tax evasion} instead ◊em{tax fraud} because, believe it or not, it's often legal! If you're rich enough you can hire tax experts who'll find the loopholes in the tax laws so you can ◊link[tax-evasion-and-inequality]{avoid the taxes normal people have to pay}.  And if you do happen to step on the wrong side of the law, you can hire the very best (and very expensive) lawyers to keep you out of prison. But you shouldn't worry about that too much, since the rich and powerful also lobbies the law makers to make the laws beneficial for them and to keep the ◊link[irs-gutted]{IRS starved for funds}.◊sn{companies-too}
 
 ◊ndef["companies-too"]{
     It's not just rich individuals that avoid taxes, it's big companies too. In 2018, 60 of the largest companies in the USA ◊link[no-corp-taxes]{paid no taxes} on pre-tax income of 79 billion dollars.
@@ -120,11 +118,40 @@ The world is just extremely unfair, and if anything it should be the other way a
 
 ◊(define db "https://offshoreleaks.icij.org/")
 ◊(define putin-proxies "https://www.icij.org/investigations/panama-papers/20160403-putin-russia-offshore-network/")
-
 ◊(define irs-gutted "https://www.propublica.org/article/how-the-irs-was-gutted")
 
 
 ◊subhead{The great leveller}
+
+In an ideal world everyone would pay their taxes as they should, while they would also have financial privacy. But this is sadly just a dream, and it's not possible in reality. So let's look at some hypothetical worlds, to find out what we'd like to move towards.
+
+◊ol{
+    ◊li{It's fine the way it is
+
+        I doubt anyone except the Trumps of the world, who are the ones who benefit the most, would say the ideal world is what we have today. The ◊link[inequality]{inequality is increasing} as the rich gets richer while paying less taxes, it's seems clear to me we have a serious problem that needs to be fixed.
+    }
+    ◊li{Everyone must use traceable money
+
+        What if we forced everyone to use traceable money, where we can see where the money's coming from? And completely removed the possibility to hide money via shell companies and offshore bank accounts?◊sn{bitcoin-traceable}
+
+        ◊ndef["bitcoin-traceable"]{
+            Curiously enough, if everyone started to use a cryptocurrency like Bitcoin we would be pretty close to this world because all coins in Bitcoin can be traced. The only thing missing is tying addresses to identities, in which case we should use something like Facebook's Libra, which completely abandons all privacy.
+        }
+
+        At first glance this fixes our problem, but remember that this kind of tax evasion is already legal, and we'd first have to fix our laws for this to have any effect. And besides, completely removing our financial privacy comes with serious drawbacks, some which we'll explore in the next chapter about the ◊link[rel-cashless]{cashless society}.
+    }
+    ◊li{Everyone can use untraceable money
+
+        It's only recently, during the last decades, we've used truly traceable money. The rest of the time money has always been largely untraceable, where you don't know where the money comes from.
+
+        If everyone would start using untraceable money, we would simply go back to how it used to be. With the upside that now everyone would have financial privacy, and not just the ultra rich as it is today.
+    }
+}
+
+◊(define rel-cashless "cashless_society.html")
+
+
+◊subhead{OLD The great leveller}
 
 Today financial privacy is only available for the ultra rich, which they abuse for tax evasion, while in an ideal world everyone would pay their taxes and everyone would have financial privacy. But this is just a dream of the naive.  The ◊link[inequality]{inequality is only increasing} as the rich gets richer, while paying less taxes and enjoying privileges normal people cannot have.
 
