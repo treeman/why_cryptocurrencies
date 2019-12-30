@@ -14,10 +14,10 @@
     }
 }
 
-In Sweden, and in the world in general, we're moving closer to the utopian cashless society.◊sn{utopia} Businesses are safer from theft, as they don't have to store large amounts of cash in stores, and payments are faster and more convenient. Tax fraud and illegal transactions are also harder.
+In Sweden, and in the world in general, we're moving closer to the utopian cashless society.◊sn{utopia} Businesses are safer from theft as they don't have to store large amounts of cash in stores, and payments are faster and more convenient. Tax fraud and illegal transactions are also harder.
 
 ◊ndef["utopia"]{
-    An ◊link[utopia]{◊em{utopia}} is a dreamlike societ that's perfect, or close to it. You might say that Heaven, the place some say you go to when you die, is an utopia.
+    An ◊link[utopia]{◊em{utopia}} is a dreamlike society that's perfect, or close to it. You might say that Heaven, the place some say you go to when you die, is an utopia.
 }
 
 But it's not all good. We've already touched on several problems in earlier chapters, for example how ◊link[rel-undesirable]{legitimate businesses might get banned} in our attempts to ban illegal goods and services, or how the cashless society ◊link[rel-privacy]{is a privacy nightmare} yet ◊link[rel-swiss-bank]{tax evasion is still a huge problem}.  In this chapter I'll try to tie together some of these issues to show how the cashless society isn't a dream---it's a nightmare.
@@ -25,7 +25,7 @@ But it's not all good. We've already touched on several problems in earlier chap
 
 ◊subhead{Road to hell}
 
-In their ever-increasingly invasive attempts to counter money-laundering, governments all over the world have implemented limits to cash deposits to banks, cash purchases and even how much cash you can carry.  ◊link[kyc]{Know-your-customer} (KYC) laws for example require banks in the United States to ◊link[ctr]{report any cash deposits of $10,000}, or multiple transactions adding up to that amount, to the IRS. They then have to be ready to provide extensive documentation to prove where the money is coming from.◊sn{structuring}
+In their ever-increasingly invasive attempts to counter money-laundering, governments all over the world have limited the amount of cash you can deposit or withdraw from banks, cash purchases and even how much cash you can carry.  ◊link[kyc]{Know-your-customer} (KYC) laws for example require banks in the United States to ◊link[ctr]{report any cash deposits of $10,000}, or multiple transactions adding up to that amount, to the IRS. The customer then have to be ready to provide extensive documentation to prove where the money is coming from.◊sn{structuring}
 
 ◊ndef["structuring"]{
     The act of managing your deposits in a way to avoid triggering the report is called ◊link[structuring]{◊em{structuring}} and is---you guessed it---◊link[structuring-illegal]{illegal}. Of course this might also affect ◊link[structuring-innocent]{innocent people} or legitimate businesses who just happen to deposit using a suspicious pattern.
@@ -48,7 +48,7 @@ Instead we're encouraged to use digital payments (ignoring the ◊link[rel-unban
   I use WeChat to pay my rent. I use it to pay for my utilities. I use it to top up my phone credit. I use WeChat to pay for the metro system. I use it to scan QR codes on the back of shared-bike schemes throughout the city. I use it to call cabs.
 }
 
-In many countries we're already close to the cashless society. In China for example WeChat is absolutely integral and here in Sweden using cash is very rare, and many stores, restaurants and even banks have dropped cash completely.
+In many countries we're already close to the cashless society. As we saw in the quote, WeChat is absolutely integral for many people in China and here in Sweden using cash is very rare, and many stores, restaurants and even banks have dropped cash completely.
 
 ◊(define rel-undesirable "/undesirable_businesses.html")
 ◊(define rel-global "global_currency.html")
@@ -71,6 +71,8 @@ In many countries we're already close to the cashless society. In China for exam
 
 ◊subhead{A short story}
 
+Money should be ◊link[money-properties]{◊strong{acceptable}}, meaning that it must be usable by everyone, which I'll try to exemplify using a short story:
+
 Money should be ◊link[money-properties]{◊strong{acceptable}}, meaning that everyone must be able to use it. A move towards a society where you need permission to use it's money is disastrous, which I'll try to exemplify using a short story:
 
 ◊div[#:class "story"]{
@@ -84,7 +86,7 @@ Money should be ◊link[money-properties]{◊strong{acceptable}}, meaning that e
 
     Trying to cool down, he tried to call the manager, but no answer. Maybe the bastard had blocked him. Instead he called Joe, who promised he could crash at his place, and that he'd call him back at 12 when he got off work.
 
-    That was still many hours away, and Kevin was still very hungry. So he decided to walk around downtown to search for something to eat. He asked around, but all he could find was a small coffee shop that would trade a gift card for a cup of coffee. He'd never realize how reliant he was on the plastic cards, and without them he was now risking to starve in the middle of downtown, which had multiple restaurants at every corner.
+    That was still many hours away, and Kevin was still very hungry. So he decided to walk around downtown to search for something to eat. He asked around, but all he could find was a small coffee shop that would trade a gift card for a cup of coffee. He'd never realize how reliant he was on the plastic cards, and without them he was now risking to starve in the middle of downtown, with multiple restaurants at every corner.
 
     A little happier, Kevin continued exploring downtown. He's been here many times, but today it didn't quite look the same. He used to only see the fancy restaurants, the night clubs and the pretty girls. But now he noticed the people in the dark alleys, looking for cans or maybe even food in the trash. He saw homeless people trying to sleep, right next to the night clubs he used to visit. Maybe he would soon join them? Maybe they knew how to buy food?
 
@@ -97,7 +99,7 @@ The worst part of this story is that it's not even that far-fetched, and all exa
 
 ◊ol{
     ◊li{
-        "Leech" is literally a synonym for "deadbeat", the name for Chinese people on the ◊link[china-social-credit2]{wrong side of their social credit system}. They also have trouble getting work and gets shunned if their status is discovered.
+        "Leech" is literally a synonym for "deadbeat", the name for Chinese people on the ◊link[china-social-credit2]{wrong side of their social credit system}. They also have trouble getting work and get shunned if their status is discovered.
     }
     ◊li{
         People have gotten thrown out of their homes for very minor things. For example a Michigan man underpaid his property taxes by ◊strong{$8.41}, and the county ◊link[michigan-man-house]{seized his property, sold it and kept the profits}.◊sn{asset-forfeiture}
@@ -124,9 +126,9 @@ Perhaps the most unrealistic part of the story is how the potential employers kn
     When you think about it, we've already given up our financial privacy. All that's left is to wait for us to be abused, like in the story.
 }
 
-For instance Kevin's bank might have blocked him because they discovered he'd been buying weed or supporting its legalization (which ◊link[wells-fargo-closed]{Wells Fargo has done before}). Maybe Kevin's employer discovered this and reckoned he didn't want the risk that Kevin would start stealing, to solve his money problem, so he fired him.
+For instance Kevin's bank might have blocked him because they discovered he'd been buying weed or supporting its legalization (which ◊link[wells-fargo-closed]{Wells Fargo has done before}). Maybe Kevin's employer discovered this and reckoned he didn't want the risk that Kevin would solve his money problem by stealing, so he fired him.
 
-There are already companies that collect this kind of information, and sell it for profit. It's not unreasonable to think that employers would want this, to help them decide who to hire, and who to fire.
+There are already companies that collect this kind of information, and sell it for profit. It's not unreasonable to think that employers would want this to help them decide who to hire, and who to fire.
 
 ◊(define wells-fargo-closed "https://www.cnbc.com/2018/08/22/wells-fargo-closes-bank-account-of-candidate-who-supports-marijuana.html")
 ◊(define china-social-credit2 "https://www.inkstonenews.com/china/chinas-13-million-discredited-individuals-face-discrimination-thanks-social-credit-system/article/3003319")
@@ -166,15 +168,16 @@ But you wouldn't be alone. ◊link[brits-struggle]{25 million Brits} would strug
 
 ◊subhead{A possible salvation}
 
-The lack of financial privacy and needing permission to use it's money are the big problems with the cashless society. As we've seen in previous chapters, cryptocurrencies solve these problems well.◊sn{privacy?}
+The lack of financial privacy and needing permission to use its money are the big problems with the cashless society. As we've seen in previous chapters, cryptocurrencies solve the permission problem very well, and some also give excellent privacy.◊sn{privacy?}
 
 ◊ndef["privacy?"]{
     It might hubris to claim that cryptocurrencies makes privacy better, as Bitcoin is more traceable than any other form of money in history. But there are other cryptocurrencies with much better privacy features, see the ◊link[privacy-challenge]{discussion about the privacy challenge} in the appendix for more information.
 }
 
-The cashless society does solve some problems well. It's more convenient to use digital money---just blip your card or your phone, instead of counting change---or how businesses don't have to store large amounts of cash in stores and risk break-ins. Cryptocurrencies can also solve these problems.
+The cashless society does indeed have its benefits.  It's more convenient to use digital money---just blip your card or your phone, instead of counting change---or how businesses don't have to store large amounts of cash in stores and risk break-ins. Cryptocurrencies can also solve these problems.
 
-I'd say that the only way a cashless society makes sense is if we use ◊em{digital} cash, while only moving away from physical cash. And cryptocurrencies are the only digital currencies that are permissionless and preserves your privacy, and therefore they're only ones that can rightfully be called digital cash.
+I'd say the only way a cashless society makes sense is if we use a digital alternative to cash that's permissionless and preserves your privacy. And cryptocurrencies are the only alternatives with these properties.
+
 
 ◊(define privacy-challenge "/challenges.html#privacy-and-fungibility")
 
