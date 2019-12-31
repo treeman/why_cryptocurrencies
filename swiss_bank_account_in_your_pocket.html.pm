@@ -148,6 +148,12 @@ In an ideal world everyone would pay their taxes as they should, while they woul
     }
 }
 
+If you view tax evasion as a problem, then making better laws is a necessary beginning. But we won't ever be able to get rid of tax fraud completely, and this is especially true if there's a privileged elite that has access to tools to obfuscate their money, which is out of reach of the rest of us.
+
+We might try to force everyone to use traceable money, and thereby making tax collection equally fair for everyone. This is largely what society is moving towards, with the ever-more strict ◊link[kyc]{Know Your Customer} and ◊link[aml]{Anti Money Laundering} laws. Besides the serious privacy and permission problems this creates, the problem is that if we outlaw privacy, only outlaws will have privacy, somewhat defeating the fairness we were trying to create.
+
+◊(define kyc "https://en.wikipedia.org/wiki/Know_your_customer")
+◊(define aml "https://www.investopedia.com/terms/a/aml.asp")
 ◊(define rel-cashless "cashless_society.html")
 
 
