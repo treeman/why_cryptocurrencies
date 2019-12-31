@@ -58,7 +58,13 @@ But they're not just for avoiding taxes. Look at celebrities for instance, they 
   Emma receives absolutely no tax or monetary advantages from this offshore company whatsoever, only privacy.
 }
 
-It's up to you if you believe them or not. As the cynic that I am, I remain skeptical, but at the same time I sympathize with the privacy concern---I did after all dedicate ◊link[private-money]{an earlier chapter} to the topic. If you haven't read the chapter I suggest you do so now, as it tries to explain why it's important that financial privacy is available for everyone.
+It's up to you if you believe them or not. As the cynic that I am, I remain skeptical, but at the same time I sympathize with the privacy concern---I did after all dedicate ◊link[private-money]{an earlier chapter} to the topic. If you haven't read the chapter I suggest you do so now, as it tries to explain why it's important that financial privacy is available for everyone.◊sn{small-community}
+
+◊ndef["small-community"]{
+    I'm personally worried about the potential problems that the lack of financial privacy may cause. In Sweden your tax records are public, and every year in the small community I live in there's discussion about the last years "rich list"---a list of the people who earned to most taxable income in a year.
+
+    What would happen ◊strong{if} cryptocurrencies skyrocketed to the moon, and I suddenly became very rich? Everyone would probably know about it, and people wouldn't look at me the same way. Maybe I wouldn't even feel safe here anymore, as a target would be painted on my back?
+}
 
 ◊(define private-money "/private_money.html")
 ◊(define panama-papers "https://www.icij.org/investigations/panama-papers/")
@@ -78,7 +84,7 @@ It's up to you if you believe them or not. As the cynic that I am, I remain skep
   All animals are equal, but some animals are more equal than others
 }
 
-While tax evasion through offshore banking is problematic, it pales to the problem that in practice there's another set of tax rules only for the ultra rich. Let's see what the president of the United States has to say about tax evasion:
+While tax evasion through offshore banking is problematic, it pales to the problem that in practice there's another set of tax rules only for the super rich. Let's see what the president of the United States has to say about tax evasion:
 
 ◊qt[#:url "https://www.youtube.com/watch?v=uBZR1-onmAo"
     #:src "Trump debates with Clinton"]{
@@ -86,10 +92,10 @@ While tax evasion through offshore banking is problematic, it pales to the probl
     Trump: That makes me smart.
 }
 
-No Mr. President, that makes you rich. You see, this kind of tax evasion is only available for the ultra rich.◊sn{crap-smart-rich} And it's not the top 1% we're talking about, more like the top 0.001%. We're talking about people who can afford private chefs and travel the world in private jets and yachts. (Alright, maybe it's not ◊em{only} for the ultra rich, you might be able to do it even if you're only very rich, but you have to have a very large amount of money to make tax evasion in this way feasible.)
+No Mr. President, that makes you rich. You see, this kind of tax evasion is only available for the super rich.◊sn{crap-smart-rich} And it's not the top 1% we're talking about, more like the top 0.001%. We're talking about people who can afford private chefs and travel the world in private jets and yachts. (Alright, maybe it's not ◊em{only} for the super rich, you might be able to do it even if you're only very rich, but you have to have a very large amount of money to make tax evasion in this way feasible.)
 
 ◊ndef["crap-smart-rich"]{
-    And please don't gimme that crap about how all rich people are smart. It's just what rich people tell themselves, to make them feel smart. Most were ◊link[self-made-myth]{born with a golden spoon} in their mouth, and even the self-made ultra rich had a ton of luck and help.
+    And please don't gimme that crap about how all rich people are smart. It's just what rich people tell themselves, to make them feel smart. Most were ◊link[self-made-myth]{born with a golden spoon} in their mouth, and even the self-made super rich had a ton of luck and help.
 }
 
 ◊(define self-made-myth "https://edition.cnn.com/2018/10/04/opinions/trump-nyt-kavanaugh-yale-self-made-man-myth-collins/index.html")
@@ -144,34 +150,31 @@ In an ideal world everyone would pay their taxes as they should, while they woul
 
         It's only recently, during the last decades, we've used truly traceable money. The rest of the time money has always been largely untraceable, where you don't know where the money comes from.
 
-        If everyone would start using untraceable money, we would simply go back to how it used to be. With the upside that now everyone would have financial privacy, and not just the ultra rich as it is today.
+        If everyone would start using untraceable money, we would simply go back to how it used to be. With the upside that now everyone would have financial privacy, and not just the super rich as it is today.
     }
 }
 
-If you view tax evasion as a problem, then making better laws is a necessary beginning. But we won't ever be able to get rid of tax fraud completely, and this is especially true if there's a privileged elite that has access to tools to obfuscate their money, which is out of reach of the rest of us.
+If you view tax evasion as a problem, then making better laws is a necessary beginning. But we won't ever be able to get rid of tax fraud completely, and this is especially true if there's a privileged elite that has access to tools to obfuscate their money, which is out of reach of the rest of us.◊sn{how?}
+
+◊ndef["how?"]{
+    One way the super rich can lander their money is to buy apartments, sit on them and then sell them making their money "clean". It's one reason why the apartment next door ◊link[empty-apartments]{might be completely empty}.
+}
+
+◊(define empty-apartments "https://www.nytimes.com/2017/07/21/upshot/when-the-empty-apartment-next-door-is-owned-by-an-oligarch.html")
 
 We might try to force everyone to use traceable money, and thereby making tax collection equally fair for everyone. This is largely what society is moving towards, with the ever-more strict ◊link[kyc]{Know Your Customer} and ◊link[aml]{Anti Money Laundering} laws. Besides the serious privacy and permission problems this creates, the problem is that if we outlaw privacy, only outlaws will have privacy, somewhat defeating the fairness we were trying to create.
 
-◊(define kyc "https://en.wikipedia.org/wiki/Know_your_customer")
-◊(define aml "https://www.investopedia.com/terms/a/aml.asp")
-◊(define rel-cashless "cashless_society.html")
+The only truly fair world would be if everyone had access to the same tools, and if financial privacy would be available for all, not just the privileged few. Everyone could enjoy the security and peace of mind ◊link[private-money]{that privacy gives you}, making it the more preferable choice for me.
 
-
-◊subhead{OLD The great leveller}
-
-Today financial privacy is only available for the ultra rich, which they abuse for tax evasion, while in an ideal world everyone would pay their taxes and everyone would have financial privacy. But this is just a dream of the naive.  The ◊link[inequality]{inequality is only increasing} as the rich gets richer, while paying less taxes and enjoying privileges normal people cannot have.
-
-But what if ◊em{everyone} would have access to similar tools that the ultra rich have? Would the world collapse as nobody would pay taxes anymore? Or would the world change to the better as the tax rules would have to be reworked to be more fair? At the very least the world would be more equal.
-
-For better or worse, cryptocurrencies bring us closer to that world. Cryptocurrencies give everyone the ability to store their wealth privately, regardless of how rich you are.  They make it possible for anyone to store their wealth "offshore" and off the grid; they act as a financial equalizer by giving everyone access to similar tools that the ultra rich already have.◊sn{not-quite}
+For better or worse, cryptocurrencies bring us closer to that world. Cryptocurrencies give everyone the ability to store their wealth privately, regardless of how rich you are.  They make it possible for anyone to store their wealth "offshore" and off the grid; they act as a financial equalizer by giving everyone access to similar tools that the super rich already have.◊sn{not-quite}
 
 ◊ndef["not-quite"]{
-    While cryptocurrencies might make it easier to hide your money, it does not give you the ability to find the tax loopholes the ultra rich are exploiting.
-
-    And I'm absolutely ◊strong{not} trying to encourage tax evasion---do your taxes people.
+    While cryptocurrencies might make it easier to hide your money, it does not give you the ability to find the tax loopholes the super rich are exploiting.
 }
 
 Perfectly balanced, as all things should be.
 
-
+◊(define kyc "https://en.wikipedia.org/wiki/Know_your_customer")
+◊(define aml "https://www.investopedia.com/terms/a/aml.asp")
+◊(define rel-cashless "cashless_society.html")
 ◊(define inequality "https://inequality.org/facts/income-inequality/")
