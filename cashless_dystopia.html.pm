@@ -56,7 +56,7 @@ In many countries we're already close to the cashless society. As we saw in the 
 ◊(define rel-privacy "/private_money.html")
 ◊(define rel-unbanked "/for_the_unbanked.html")
 ◊(define rel-swiss-bank "/swiss_bank_account_in_your_pocket.html")
-◊(define rel-seizures "/government_seizures.html")
+◊(define rel-seizures "/protection_against_government_confiscation.html")
 ◊(define structuring "https://en.wikipedia.org/wiki/Structuring")
 ◊; https://www.reddit.com/r/btc/comments/bvx83n/macedonia_bans_fiat_cash_payments_above_560/
 ◊(define macedonia-limits-cash "http://www.china.org.cn/world/Off_the_Wire/2019-06/01/content_74845553.htm")
