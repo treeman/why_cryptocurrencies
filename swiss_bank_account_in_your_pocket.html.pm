@@ -176,5 +176,5 @@ Perfectly balanced, as all things should be.
 
 ◊(define kyc "https://en.wikipedia.org/wiki/Know_your_customer")
 ◊(define aml "https://www.investopedia.com/terms/a/aml.asp")
-◊(define rel-cashless "cashless_society.html")
+◊(define rel-cashless "/cashless_dystopia.html")
 ◊(define inequality "https://inequality.org/facts/income-inequality/")
