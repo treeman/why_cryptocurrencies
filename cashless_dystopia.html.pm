@@ -126,7 +126,7 @@ Perhaps the most unrealistic part of the story is how the potential employers kn
     When you think about it, we've already given up our financial privacy. All that's left is to wait for us to be abused, like in the story.
 }
 
-For instance Kevin's bank might have blocked him because they discovered he'd been buying weed or supporting its legalization (which ◊link[wells-fargo-closed]{Wells Fargo has done before}). Maybe Kevin's employer discovered this and reckoned he didn't want the risk that Kevin would solve his money problem by stealing, so he fired him.
+For instance Kevin's bank might have blocked him because they discovered he'd been buying weed or supporting its legalization (which ◊link[wells-fargo-closed]{Wells Fargo has done before}). Maybe Kevin's employer then saw that the bank account was blocked and started worrying that Kevin, now unable to pay for things, would resort to stealing things from the company for a living, and decided to fire him.
 
 There are already companies that collect this kind of information, and sell it for profit. It's not unreasonable to think that employers would want this to help them decide who to hire, and who to fire.
 
@@ -174,9 +174,9 @@ The lack of financial privacy and needing permission to use its money are the bi
     It might hubris to claim that cryptocurrencies makes privacy better, as Bitcoin is more traceable than any other form of money in history. But there are other cryptocurrencies with much better privacy features, see the ◊link[privacy-challenge]{discussion about the privacy challenge} in the appendix for more information.
 }
 
-The cashless society does indeed have its benefits.  It's more convenient to use digital money---just blip your card or your phone, instead of counting change---or how businesses don't have to store large amounts of cash in stores and risk break-ins. Cryptocurrencies can also solve these problems.
+The cashless society does indeed have its benefits.  It's more convenient to use digital money---just blip your card or your phone, instead of counting change---or how businesses don't have to store large amounts of cash in stores and risk break-ins. Cryptocurrencies also have these benefits.
 
-I'd say the only way a cashless society makes sense is if we use a digital alternative to cash that's permissionless and preserves your privacy. And cryptocurrencies are the only alternatives with these properties.
+This is why cryptocurrencies are sometimes called "digital cash"; they combine the important permissionless and privacy properties of cash with the convenience of digital money, and it's the only way a cashless society would make sense.
 
 
 ◊(define privacy-challenge "/challenges.html#privacy-and-fungibility")
