@@ -89,7 +89,7 @@ Maybe there were some good intentions◊sn{banks-laundering} when these laws mer
     It’s usually based on a need---well, I take that back, there’s some limitations on it. ... Actually, there’s not really on the forfeiture stuff. We just usually base it on ◊strong{something that would be nice to have} that we can’t get in the budget, for instance. We try not to use it for things that we need to depend on because we need to have those purchased. It’s kind of like pennies from heaven---◊strong{it gets you a toy} or something that you need is the way that we typically look at it to be perfectly honest.
 }
 
-He's saying that the police can take whatever they want, and that they're motivated by what they want, not if there's a crime involved or not. Most of the money goes to funding the police,◊sn{police-funding} but the money has gone to ◊link[steak-forfeiture]{extravagant Christmas parties, sirloin beef and a $8,200 security system} for the district attorney's private home. And of course some managed to spend it on ◊link[forfeiture-alcohol]{alcohol, prostitutes and marijuana}. Then there's the case where another district attorney ◊link[forfeiture-hawaii]{spent $27,000 to take his whole office to Hawaii}, including the approving district judge.
+He's saying that the police can take whatever they want, and that they're motivated by what would be "nice to have", not if there's a crime involved or not. Most of the money goes to funding the police,◊sn{police-funding} but the money has gone to ◊link[steak-forfeiture]{extravagant Christmas parties, sirloin beef and a $8,200 security system} for the district attorney's private home. And of course some managed to spend it on ◊link[forfeiture-alcohol]{alcohol, prostitutes and marijuana}. Then there's the case where another district attorney ◊link[forfeiture-hawaii]{spent $27,000 to take his whole office to Hawaii}, including the approving district judge.
 
 ◊ndef["police-funding"]{
     If you're a cynic, like I tend to be, you have to love the incentives at play here. If the police seize money they directly help themselves yet there appears to be no negative consequences if they do.
@@ -100,7 +100,7 @@ In practice civil asset forfeiture is state-sanctioned theft where the police ar
 So how can cryptocurrencies protect you against the forfeiture laws? While they naturally can't prevent the police from seizing your house or your car, they allow you to easily store and travel with as much money as you can---without anyone noticing. Even if they know you have them there's nothing they can physically steal---they would need ◊link[xkcd-pass]{your password}. (Of course they might be able to coerce you to unluck it for them.)◊sn{how-to-store}
 
 ◊ndef["how-to-store"]{
-    An app on your phone can hold an unlimited amount of value in cryptocurrencies. Or if you want to be more secure you can encrypt your private key with a strong password and store it on your computer or online. Even the government cannot break strong encryption.
+    An app on your phone can hold a practically unlimited amount of value in cryptocurrencies. Or if you want to be more secure you can encrypt your private key with a strong password and store it on your computer or online. Even the government cannot break strong encryption.
 }
 
 ◊(define xkcd-pass "https://xkcd.com/792/")
