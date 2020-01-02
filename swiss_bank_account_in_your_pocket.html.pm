@@ -2,7 +2,7 @@
 
 ◊(define-meta title "A Swiss bank account in your pocket")
 ◊(define-meta subtitle "Unlimited and untraceable money on your smartphone")
-◊(define-meta updated "2019-09-17T06:59:16+02:00")
+◊(define-meta updated "2020-01-02T18:59:04+01:00")
 ◊(define-meta uuid "d1144eb3-b2ac-4c89-b2e0-4a03f377172c")
 
 ◊; To read:
