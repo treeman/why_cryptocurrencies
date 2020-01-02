@@ -30,7 +30,7 @@
      global_currency.html)
     (brave_new_world.html
      darknet_markets.html
-     "A swiss bank account in your pocket"
+     swiss_bank_account_in_your_pocket.html
      cashless_dystopia.html
      "Protection against government seizures"
      "Separation of money and state")
