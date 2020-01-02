@@ -2,7 +2,7 @@
 
 ◊(define-meta title "The cashless dystopia")
 ◊(define-meta subtitle "The cashless society is a nightmare")
-◊(define-meta updated "2019-12-22T19:08:58+01:00")
+◊(define-meta updated "2020-01-02T19:14:29+01:00")
 ◊(define-meta uuid "55993260-1c9a-4bcf-ace5-7773e65bf7b5")
 
 ◊epigraph{
