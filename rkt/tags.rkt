@@ -19,16 +19,33 @@
     ((regexp-match #rx"^https?://" url) #t)
     (else #f)))
 
-(define (link #:class [c #f] . args)
-  (match args
-    [(list (list url title) text)
-     (make-link url text #:title title #:class c)]
-    [(list url text)
-     (make-link url text #:class c)]
-    [(list url)
-     (make-link url url #:class c)]))
+(define (url? x)
+  (and
+    (string? x)
+    (or
+      (xref? x)
+      (regexp-match #rx"^#" x)
+      (regexp-match #rx"^/" x)
+      (regexp-match #rx"^mailto:" x))))
 
-(define (make-link url text #:title [title #f] #:class [c #f])
+(define (link #:class [c #f] #:quote [qt #f] . args)
+  (match args
+    [(list (list url title) text ..1)
+     #:when (and (string? url)
+                 (string? title))
+     (apply make-link #:title title #:class c #:quote qt url text)]
+    [(list url text ..1)
+     #:when (string? url)
+     (apply make-link #:class c #:quote qt url text)]
+    [(list url)
+     #:when (string? url)
+     (make-link #:class c #:quote qt url url)]
+    [_
+     (error (format "bad link args: '~a'" args))]))
+
+(define (make-link #:class [c #f] #:title [title #f] #:quote [qt #f] url . text)
+  (unless (url? url)
+    (error (format "bad link url: '~a'" url)))
   (define attrs `((href ,url)))
   (when title
     (set! attrs (cons `(title ,title) attrs)))
@@ -44,7 +61,30 @@
       ;(error (format "INVALID IREF '~v'~n" url))))
   (when c
     (set! attrs (cons `(class ,c) attrs)))
-  `(a ,attrs ,text))
+
+  (define a `(a ,attrs ,@text))
+
+  (if qt
+    `(splice-me "“" ,a "”")
+    a))
+
+(module+ test
+  (require rackunit)
+  (check-equal? (link "https://abc.xyz" "my" "link")
+                `(a ((class "xref") (href "https://abc.xyz"))
+                    "my" "link"))
+  (check-equal? (link `("https://abc.xyz", "mytitle") "my" "link")
+                `(a ((class "xref") (title "mytitle") (href "https://abc.xyz"))
+                    "my" "link"))
+  (check-equal? (link #:quote #t "https://abc.xyz" "my" "link")
+                `(splice-me
+                    "“"
+                    (a ((class "xref") (href "https://abc.xyz"))
+                        "my" "link")
+                    "”"))
+  (check-equal? (link "https://abc.xyz")
+                `(a ((class "xref") (href "https://abc.xyz"))
+                    "https://abc.xyz")))
 
 ;; Verify if an internal url is valid.
 (define (valid-iref? url)

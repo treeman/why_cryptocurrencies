@@ -2,7 +2,7 @@
 
 ◊(define-meta title "How do cryptocurrencies work?")
 ◊(define-meta subtitle "Decentralized consensus")
-◊(define-meta updated "2019-11-05T09:07:21+01:00")
+◊(define-meta updated "2020-01-02T19:17:48+01:00")
 ◊(define-meta uuid "320751d9-9a28-4e91-9469-b44b83e12475")
 
 This is my attempt to explain how a standard cryptocurrency like Bitcoin works. Other cryptocurrencies may diverge on various points but the fundamentals are the same.◊sn{others}
@@ -243,13 +243,9 @@ In return for adding the block you get to collect the rewards. One for finding a
 
 The blockchain is public and anyone can see all transactions. You can use a ◊link[blockchair]{blockchain explorer} to see for yourself, see for example the full history of ◊link[blockchair-addr]{this address} or ◊link[blockchair-tx]{this transaction} with one input and two outputs.◊sn{outputs}
 
-Cryptocurrencies like Monero also have a public blockchain---see ◊link[xmrchain]{this blockchain explorer}---but they hide transaction amounts, where the coins are coming from and where they're going. Exactly how this works is outside the scope of this book.◊sn{mastering-monero}
+Cryptocurrencies like Monero also have a public blockchain---see ◊link[xmrchain]{this blockchain explorer}---but they hide transaction amounts, where the coins are coming from and where they're going. I won't go into details on how this works, see the discussion about the ◊link[privacy-challenge]{privacy and fungibility challenge} in the appendix for more details.
 
-◊ndef["mastering-monero"]{
-    If you want to learn more I recommend the book “◊link[mastering-monero]{Mastering Monero}”.
-}
-
-◊(define mastering-monero "https://masteringmonero.com/")
+◊(define privacy-challenge "/challenges.html#privacy-and-fungibility")
 
 The blockchain is duplicated, stored and maintained by many different people, you might think of it as similar to how torrents work. When you send and receive transactions you're really interacting with the blockchain and not with each other directly.◊sn{node-types}
 

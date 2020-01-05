@@ -31,7 +31,7 @@
     (brave_new_world.html
      darknet_markets.html
      swiss_bank_account_in_your_pocket.html
-     "The cashless dystopia"
+     cashless_dystopia.html
      "Protection against government seizures"
      "Separation of money and state")
     (extensions.html
