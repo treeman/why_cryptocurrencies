@@ -71,7 +71,8 @@ In many countries we're already close to the cashless society. As we saw in the 
 
 ◊subhead{A short story}
 
-Money should be ◊link[money-properties]{◊strong{acceptable}}, meaning that it must be usable by everyone, which I'll try to exemplify using a short story:
+Money should be ◊link[money-properties]{◊strong{acceptable}}, meaning that it must be usable by everyone. A move towards a society where you need permission to use it's money is disastrous, which I'll try to exemplify using a short story:
+
 
 ◊div[#:class "story"]{
     Kevin was walking home after yet another failure. It had only been two weeks since he was declared a leech, but it felt like an eternity. Those bastards were so scared of being associated with a leech, they'd cut him off quicker than if he'd been a leper. Maybe he was as contagious as one.
