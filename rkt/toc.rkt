@@ -30,14 +30,14 @@
      global_currency.html)
     (brave_new_world.html
      darknet_markets.html
-     "A swiss bank account in your pocket"
-     "The cashless dystopia"
+     swiss_bank_account_in_your_pocket.html
+     cashless_dystopia.html
      protection_against_government_confiscation.html
      "Separation of money and state")
     (extensions.html
      timestamping_service.html
      uncensorable_twitter.html
-     "Provably fair gambling"
+     provably_fair_gambling.html
      "Tokens"
      "Verifiable voting")
     (appendix.html

@@ -63,11 +63,11 @@ A ◊link[bbc-tiananmen]{powerful example} of censorship is the ◊link[wikipedi
 China has gone to great lengths to cover up these events. Twitter is censored by default in China◊sn{china-censorship} and anyone caught tweeting about Tiananmen might ◊link[twitter-detained]{get arrested}.◊sn{reeducation} On the anniversary they have police escorts for the victim's families who wants to visit the graves---to keep them away from journalists.
 
 ◊ndef["reeducation"]{
-    You'll probably be placed in a “◊link[china-reeducation]{re-education camp}”, they're quite similar to camps in Stalin's Soviet or Hitler's Germany.
+    You'll probably be placed in a ◊link[china-reeducation #:quote #t]{re-education camp}, they're quite similar to camps in Stalin's Soviet or Hitler's Germany.
 }
 
 ◊ndef["china-censorship"]{
-    The ◊link[china-censorship]{censorship in China} is absolutely massive. They try to scan and filter all internet traffic in China, often called “◊link[great-firewall-of-china]{The Great Firewall of China}”, and they're doing a pretty good job. For example they completely ban Facebook, Twitter, Snapchat, Google, Youtube, Wikipedia, WikiLeaks, Netflix and ◊strong{many} others. It might be possible to work around the restrictions using a VPN, but many don't work in China either.
+    The ◊link[china-censorship]{censorship in China} is absolutely massive. They try to scan and filter all internet traffic in China, often called ◊link[great-firewall-of-china #:quote #t]{The Great Firewall of China}, and they're doing a pretty good job. For example they completely ban Facebook, Twitter, Snapchat, Google, Youtube, Wikipedia, WikiLeaks, Netflix and ◊strong{many} others. It might be possible to work around the restrictions using a VPN, but many don't work in China either.
 }
 
 Censorship is a ◊link[censorship-global]{global problem} and is a big problem in for example Eritrea, North Korea, Saudi Arabia and Ethiopia. A more modern problem is manipulation on social media, with the goal to control public opinion. One way is to use trolls (fake user accounts) and another is to ◊link[reddit-censorship]{censor opinions} that don't fit your narrative.

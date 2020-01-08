@@ -25,7 +25,7 @@ But there's a fatal flaw with this argument: it relies on being able to predict 
 
 ◊subhead{How to become an expert}
 
-To become an expert in a field you need a lot of dedication, effort and maybe a bit of talent,◊sn{10000h} but as Daniel Kahneman points out in his book “◊link[thinking-fast-and-slow-book]{Thinking, Fast and Slow}” you also need the right environment to develop expertise:
+To become an expert in a field you need a lot of dedication, effort and maybe a bit of talent,◊sn{10000h} but as Daniel Kahneman points out in his book ◊link[thinking-fast-and-slow-book #:quote #t]{Thinking, Fast and Slow} you also need the right environment to develop expertise:
 
 ◊ndef["10000h"]{
     There's a misunderstood myth that you only need 10,000 hours, or that you need at least 10,000 hours before you become an expert. But that's not the truth, with the right environment and ◊link[deliberate-practice]{◊em{deliberate practice}} you can become an expert much faster and if you use your time inefficiently you may never become one.
@@ -110,7 +110,7 @@ Maybe you feel like I'm focusing too much on the ◊link[financial-crisis]{2008 
 ◊(define financial-crisis "/financial_crisis.html")
 
 ◊ndef["music-stops"]{
-    “◊link[after-the-music-stopped-book]{After the Music Stopped}” Alan S. Blinder
+    ◊link[after-the-music-stopped-book #:quote #t]{After the Music Stopped} Alan S. Blinder
 }
 
 This shouldn't be that surprising when you consider that the national and global economy is too irregular to be predictable, and the feedback loop is extremely long---if it even exists.  If for example the central bank lowers the interest rate, how long do we have to wait to see the effect? Days, months and maybe even years. And how do we know the economy reacted this way because of the changes to the interest rate, and not because of the trade war between the U.S. and China, Brexit or a million other reasons?◊sn{models}
@@ -146,7 +146,7 @@ I could argue that we're blind because we collectively don't understand the bank
 Do the people know that the least accountable operation in the U.S. government isn't the FBI, CIA or the NSA---which are all accountable to congressional supervision---but the Federal Reserve? The central bank of the United States, the largest economy in the world, isn't accountable to anyone, has no budget and nobody has insight into it's operations.◊mn{case-against-fed}
 
 ◊ndef["case-against-fed"]{
-    “◊link[case-against-fed-book]{The Case Against the Fed}” Murray N. Rothbard
+    ◊link[case-against-fed-book #:quote #t]{The Case Against the Fed} Murray N. Rothbard
 }
 
 The Fed isn't a government agency. It's a private entity and its shareholders are banks which ◊link[fed-dividends]{earn a dividend}---at 6%, often tax-free. (Which banks? It's a secret.) Nobody knows how much banks are printing to pad their own pockets and nobody knows how many dollars exist.◊sn{bonuses}

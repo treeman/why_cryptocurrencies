@@ -255,7 +255,7 @@ Here are just ◊link[snowden-leaks]{some of the things} he leaked:
 
         There's an internal search engine where N.S.A. employees can search through your emails, pictures, medical records and private Facebook messages. Like Google, but with the contents of your online life.
 
-        Snowden writes in “◊link[permanent-record-book]{Permanent Record}” that it was common for N.S.A. employees to abuse this to spy on their girlfriends, ex-girlfriends or girls they were interested in. This includes sharing nude photos with their co-workers, which the girls either took themselves or photos the N.S.A. took by hacking their webcam. (Quite literally a stalker's wet dream.)◊sn{no-good-guys}
+        Snowden writes in ◊link[permanent-record-book #:quote #t]{Permanent Record} that it was common for N.S.A. employees to abuse this to spy on their girlfriends, ex-girlfriends or girls they were interested in. This includes sharing nude photos with their co-workers, which the girls either took themselves or photos the N.S.A. took by hacking their webcam. (Quite literally a stalker's wet dream.)◊sn{no-good-guys}
 
         ◊ndef["no-good-guys"]{
             This is a counterpoint to the argument that it's fine for the government or the police to have this data. The government or the police aren't full of only good people---there will always be bad ones somewhere.
@@ -306,10 +306,10 @@ You see, all this data is stored ◊em{forever}, just waiting to be used to nail
   Once the ubiquity of collection was combined with the permanency of storage, all any government had to do was select a person or a group to scapegoat and go searching---as I'd gone searching through the agency's files---for evidence of a suitable crime.
 }
 
-Snowden now lives in exile in Russia, where the black bags of the U.S. cannot reach. He recently released his memoir “◊link[permanent-record-book]{Permanent Record}” which details his life leading up to the leaks. It's a great book, but the U.S. doesn't want you to read it. They even ◊link[snowden-lawsuit]{filed a lawsuit against him} and seized the revenue of the book.◊sn{post-lawsuit}
+Snowden now lives in exile in Russia, where the black bags of the U.S. cannot reach. He recently released his memoir ◊link[permanent-record-book #:quote #t]{Permanent Record} which details his life leading up to the leaks. It's a great book, but the U.S. doesn't want you to read it. They even ◊link[snowden-lawsuit]{filed a lawsuit against him} and seized the revenue of the book.◊sn{post-lawsuit}
 
 ◊ndef["post-lawsuit"]{
-    As in response to the lawsuit his book shot up to the Amazon bestseller list. Snowden concluded that “◊link[snowden-good-for-bitcoin]{this is good for bitcoin}”.
+    As in response to the lawsuit his book shot up to the Amazon bestseller list. Snowden concluded that ◊link[snowden-good-for-bitcoin #:quote #t]{this is good for bitcoin}.
 }
 
 
@@ -333,7 +333,7 @@ I think people often give up their privacy because of ◊strong{fear}. Since the
 
 ◊ndef["retaliation"]{
     Just to put the overreaction in perspective: 2,977 people died in the 9/11 terrorist attacks, but one million died because of the American retaliation.  
-    (Edward Snowden, “◊link[permanent-record-book]{Permanent Record}”)
+    (Edward Snowden, ◊link[permanent-record-book #:quote #t]{Permanent Record})
 
     That's like sentencing a shoplifter to death---a completely disproportionate response.
 }
@@ -383,7 +383,7 @@ For example they probably know if you're gay or if you're pregnant (and if you a
 ◊ndef["thoughtcrime"]{
     ◊em{Pre-crime}, like in the movie ◊link[minority-report]{Minority Report}, is the idea that you can predict someone committing a crime and catching them before they do.
 
-    ◊em{Thoughtcrime}, as explored in the book “◊link[1984-book]{1984}”, says that thoughts are criminal. Like entertaining a politically unacceptable thought.
+    ◊em{Thoughtcrime}, as explored in the book ◊link[1984-book #:quote #t]{1984}, says that thoughts are criminal. Like entertaining a politically unacceptable thought.
 
     While fiction, our technology is edging ever closer. Soon we might have killer robots going around streets enforcing laws on our predicted behaviour. (The U.S. already deploys killing drones, which kill civilians.)
 }
