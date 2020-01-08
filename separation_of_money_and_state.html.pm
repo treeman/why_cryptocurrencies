@@ -17,6 +17,12 @@ But one idea made me go "Wow, that would be absolutely huge!" And that idea was 
 
 ◊subhead{Religion and state}
 
+◊;Sweden 1 Jan 2000 formally separated the church from the state.
+◊;https://www.dagen.se/dokument/sa-fri-ar-svenska-kyrkan-fran-staten-egentligen-1.1632522
+◊;https://popularhistoria.se/sveriges-historia/kyrkan-och-staten-en-historisk-separation
+◊;https://en.wikipedia.org/wiki/Gustav_I_of_Sweden
+◊;https://www.britannica.com/biography/Gustav-I-Vasa
+
 ◊subhead{Not that outrageous}
 
 ◊subhead{What does the future hold?}
