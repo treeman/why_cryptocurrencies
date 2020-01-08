@@ -66,7 +66,7 @@ With a pseudo-random generator that's what we can do. We give it a ◊em{seed}, 
 A pseudo-random generator can produce a sequence of numbers, a number of coin tosses or even generate the whole world in Minecraft.◊sn{minecraft-seed}
 
 ◊ndef["minecraft-seed"]{
-    They even call it a seed in Minecraft. There are many “◊link[minecraft-best-seeds]{Minecraft best seeds}” lists out there, with seeds that generate some pretty impressive worlds. You do need to take care which version of Minecraft you're using, as the world generation can differ between versions.
+    They even call it a seed in Minecraft. There are many ◊link[minecraft-best-seeds #:quote #t]{Minecraft best seeds} lists out there, with seeds that generate some pretty impressive worlds. You do need to take care which version of Minecraft you're using, as the world generation can differ between versions.
 
     This is also true for pseudo-random generators, where different generators will produce different results.
 }
