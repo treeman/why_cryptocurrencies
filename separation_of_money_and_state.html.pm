@@ -8,7 +8,15 @@
 When I first started thinking about cryptocurrencies I thought it was just useful for some people who couldn't use regular transactions, like buying weed or things on a darknet market. Or that it was a better payment system as there was no middleman to skim of large fees from all transactions. That's useful, but it didn't strike me as revolutionary.◊sn{fees}
 
 ◊ndef["fees"]{
-    I do think avoiding 1--3% fees on practically all digital payments is an under-appreciated benefit of cryptocurrencies. It might be overshadowed by the volatility, but the potential benefit to the global economy is absolutely huge.
+    I do think ◊link[cheaper-faster]{avoiding 1--3%} fees on practically all digital payments is an under-appreciated benefit of cryptocurrencies. It might be overshadowed by the volatility, but the potential benefit to the economy is absolutely huge.
 }
 
-But one idea
+But one idea made me go "Wow, that would be absolutely huge!" And that idea was how cryptocurrencies for the first time in history make it possible for money to be separated from the state.
+
+◊(define cheaper-faster "/cheaper_faster.html")
+
+◊subhead{Religion and state}
+
+◊subhead{Not that outrageous}
+
+◊subhead{What does the future hold?}
