@@ -198,6 +198,10 @@ blockquote > footer {
 blockquote > footer > cite {
     font-style: italic;
 }
+blockquote .emphasis {
+    font-size: 80%;
+}
+
 // Should we shut it down for small text?
 //blockquote > footer a:link {
     //text-decoration: underline;

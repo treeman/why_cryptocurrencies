@@ -190,9 +190,13 @@
   `(div ((class "epigraph"))
        ,@txt))
 
-(define (qt #:author [author #f] #:src [src #f] #:url [url #f]
+(define (qt #:author [author #f]
+            #:src [src #f]
+            #:quote-src [quote-src #f]
+            #:url [url #f]
             #:author-url [author-url #f]
-            #:date [date #f] #:quote-src [quote-src #f] . txt)
+            #:date [date #f]
+            #:emphasis [emphasis #f] . txt)
   (define cite `())
 
   ; Convert date to string, for ease of use later.
@@ -223,8 +227,14 @@
     (set! cite (append cite
                        `((span ((class "date")) ,date)))))
 
+  (define emphasis-text
+    (if emphasis
+      `(div ((class "emphasis")) "(Emphasis mine)")
+      ""))
+
   `(blockquote
      ,@txt
+     ,emphasis-text
      (footer ,@(add-between cite ", "))))
 
 (define (icode . args)

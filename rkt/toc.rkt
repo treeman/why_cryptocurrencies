@@ -32,7 +32,7 @@
      darknet_markets.html
      swiss_bank_account_in_your_pocket.html
      cashless_dystopia.html
-     "Protection against government seizures"
+     protection_against_government_confiscation.html
      "Separation of money and state")
     (extensions.html
      timestamping_service.html
