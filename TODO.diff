@@ -1,10 +1,61 @@
-+ Move summaries to the beginning of each chapter
-+ Better summary in chapters
-+ Rewrite cryptos in 5 minutes
-+ Alt-text for all links
-+ Setup links after all chapters are written
+Summarize better:
++ What is a cryptocurrency?
++ How do cryptocurrencies work?
+  Move summary to the beginning instead of at the end
++ What is money?
++ Are cryptocurrencies money?
+
++ Better digital payments
++ Cheaper & faster
+  Move conclusion to the beginning? Or just expand beginning?
+
++ Undesirable businesses
++ Freezing of merchant accounts
++ Uncensorable donations
++ For the unbanked
+  These chapters all don't mention cryptos in the beginning, but maybe we should?
+
++ A better currency
++ A global currency
+  Place a small summary before "Remittance"
+
+Rewrite:
++ Read through earlier chapters for more polish
+- Rewrite cryptos in 5 minutes
+
+Write:
++ Separation of money and state
++ Tokens
++ Verifiable voting
 + Fill up crypto challenges
++ Introduction to cryptography
++ (Further research)
 
 Additional image ideas:
-+ Schrödinger's marijuana
-+ A blind man leading a flock of blind men
++ An image of me in front of the computer (cartoon stick dude style) (about me)
++ Schrödinger's marijuana (undesirable businesses)
++ A blind man leading a flock of blind men (blind leading the blind)
++ An unstable system (a defective system)
+  Dude sitting on a stick, and other dudes trying to keep him from falling
++ Anonymous mask smoking a joint (darknet markets)
++ A medicine bottle (darknet markets)
++ Rich pigs (swiss bank account)
++ A DeLorean (timestamping service)
++ Graph of transaction fees, for visual comparison (cheaper faster)
++ Killing someone in the background, an official saying "nothing to see here"
++ EatBCH picture? But need to get in contact with someone first
+
++ An image for each section? To make it easier to remember?
+
+Code:
+- Better link handling
+
+Style:
+- Restyle conversation in freezing of merchant accounts
+
+Sanity:
++ Alt-text for all links
++ Setup cross chapter links after all chapters are written
+- Remove "there is" usage in favor of "there's"
+- while/that usage.
+
