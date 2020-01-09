@@ -385,7 +385,7 @@
     (unless def (error (format "missing ref '~s'" ref)))
     (define uid-s (symbol->string uid))
     ;; Use splice-me to be able to return multiple elements inline.
-    `(splice-me
+    `(@
       (label ((class ,label-class) (for ,uid-s)) ,label-content)
       (input ((id ,uid-s) (class "margin-toggle") (type "checkbox")))
       (span ((class ,span-class)) ,@def)))
@@ -425,15 +425,56 @@
     #:string-proc string-proc
     #:exclude-tags `(figure pre)))
 
+(define (my-test x)
+  (printf "Visit: '~v'~n" x)
+  x)
+
+(define (decode-sidenotes in)
+  (map (λ (x)
+          (car expand-sidenotes x))
+       in))
+
+; Expand sidenotes inside a paragraph, returns the transformed paragraph and
+; a list of sidenotes to be placed after it, if any.
+(define (expand-sidenotes in)
+  (if (txexpr? in)
+    (let* ((tag (get-tag in))
+           (p? (eq? tag 'p)))
+      (txexpr (get-attrs in)
+        (foldr (λ (x acc)
+                  (define expanded (expand-sidenotes x))
+                  (cons (append (car acc) (car expanded))
+                        (append (cdr acc) (cdr expanded))))
+               (get-elements in))))
+    (let ((ref (hash-ref note-defs in #f)))
+      (if ref
+        (begin
+          (printf "FOUND REF ~v~n" in)
+          (cons in (list ref)))
+        (cons in `())))))
+
+
 ;;; Root transformations
 
 (define (root . args)
-  (define decoded
+  (printf "Transforming~n")
+  (printf "~v~n" args)
+  (define decoded (std-decode args))
     ; Replace in all tags, even figures. To allow ndef to be placed after figure caption.
-    (decode-elements (std-decode args)
-                     #:entity-proc replace-stubs))
+    ;(decode-elements (std-decode args)
+                     ;#:txexpr-proc my-test
+                     ;#:entity-proc replace-stubs))
+  (printf "decoded~n")
+  (printf "~v~n" decoded)
+
+  ; Insert a widescreen note at the site
+  ; If a sidenote ref is found inside a p tag:
+  ;   insert it right after
+  ; else
+  ;   insert it at sidenote-pos or at the site
 
   ;; Expand splices afterwards
   ;; 'splice-me is consired inline so doesn't break paragraph calculations
-  (txexpr 'root empty (expand-splices decoded)))
+  ;(txexpr 'root empty (expand-splices decoded)))
+  (txexpr 'root empty decoded))
 
