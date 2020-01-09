@@ -97,6 +97,10 @@ He's saying that the police can take whatever they want, and that they're motiva
 
 In practice civil asset forfeiture is state-sanctioned theft where the police are acting like ◊link[highway-robbers]{highway robbers}.
 
+◊img[#:src "/images/gangster_cop.png"]{
+    "That's a nice car you have there, it would be a shame if anything happened to it."
+}
+
 So how can cryptocurrencies protect you against the forfeiture laws? While they naturally can't prevent the police from seizing your house or your car, they allow you to easily store and travel with as much money as you can---without anyone noticing. Even if they know you have them there's nothing they can physically steal---they would need ◊link[xkcd-pass]{your password}. (Of course they might be able to coerce you to unluck it for them.)◊sn{how-to-store}
 
 ◊ndef["how-to-store"]{
@@ -123,11 +127,6 @@ So how can cryptocurrencies protect you against the forfeiture laws? While they 
 ◊; https://www.washingtonpost.com/news/opinions/wp/2014/01/15/gawker-on-asset-forfeiture-abuse-at-nypd/
 
 ◊(define nypd-civil-forfeiture "https://gothamist.com/news/how-the-nypds-use-of-civil-forfeiture-robs-innocent-new-yorkers")
-
-
-
-
-
 ◊(define civil-forfeiture "http://endforfeiture.com/")
 
 ◊; https://www.heritage.org/research/reports/2014/03/civil-asset-forfeiture-7-things-you-should-know
@@ -139,8 +138,6 @@ So how can cryptocurrencies protect you against the forfeiture laws? While they 
 ◊subhead{Safe deposit boxes aren't safe}
 
 Okay we now know the dangers of walking around with a bunch of cash. Forget about moving it around, how about just finding a secure way to store them? What about storing them (or gold or jewelries) in a safe deposit box, surely they're called safe deposit boxes because they're ◊em{safe}?
-
-◊todo{Image of a "trustworthy" banker gremling/monster dude in front of deposit boxes with the same numbers}
 
 Unfortunately, safe deposit boxes aren't safe:
 
