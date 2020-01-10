@@ -247,6 +247,8 @@ https://www.bustle.com/articles/136540-9-big-short-quotes-thatll-remind-you-how-
 
 # Research/misc links
 
+<https://thegrayzone.com/2020/01/09/paypal-blocks-donations-iran/>
+
 <https://www.reddit.com/r/btc/comments/ca8l9c/devices_on_standby_in_the_us_alone_could_power/>
 <https://www.reddit.com/r/btc/comments/c7vshk/local_us_government_to_use_bitcoin_cash_slp_tokens/>
 <https://www.reddit.com/r/Bitcoin/comments/3ep1wa/varoufakis_reveals_cloak_and_dagger_plan_b_for/>
