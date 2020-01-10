@@ -59,7 +59,10 @@ Additional image ideas:
   Extensions:
 
 Code:
-- Better sidenote expansions, one for widescreen and one below for mobile (default to after paragraphs)
+- Remove .snp, we can use asides now!
+- Custom widescreen top offset?
+- Fix paragraph styling in sidenotes with numbers
+- How to handle marginnotes now? -Remove-??
 - splice-me already exists as @!
 - Better link handling
 
