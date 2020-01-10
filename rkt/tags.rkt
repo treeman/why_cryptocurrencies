@@ -407,16 +407,26 @@
         uid)))
   (find-note-uid 0))
 
+(define note-refs (make-hash))
+(define (note-ref2 ref-in)
+  (define id (format "nd-~a" ref-in))
+  (define ref (string->symbol id))
+  (define uid (gen-note-uid id))
+  (hash-set! note-refs uid #t)
+  uid)
+
+
 (define (mn ref-in)
   (note-ref #:label-class "margin-toggle margin-symbol"
             #:label-content "†"
             #:span-class "marginnote"
             #:ref ref-in))
 (define (sn ref-in)
-  (note-ref #:label-class "margin-toggle sidenote-number"
-            #:label-content ""
-            #:span-class "sidenote"
-            #:ref ref-in))
+  ;(note-ref #:label-class "margin-toggle sidenote-number"
+            ;#:label-content ""
+            ;#:span-class "sidenote"
+            ;#:ref ref-in))
+  (note-ref2 ref-in))
 
 
 (define (std-decode args)
@@ -429,36 +439,129 @@
   (printf "Visit: '~v'~n" x)
   x)
 
-(define (decode-sidenotes in)
-  (map (λ (x)
-          (car expand-sidenotes x))
-       in))
+;; FIXME this doesn't work, as we need to process paragraphs on the level above.
+(define (decode-sidenotes in #:entity-proc [entity-proc #f])
+  ;(printf "IN ~v ~v~n" in entity-proc)
+  (cond
+    [(txexpr? in)
+     (let* ((tag (get-tag in))
+            (attrs (get-attrs in))
+            (elements (get-elements in))
+            (p? (eq? tag 'p)))
+       ;(printf "txexpr ~v~n" p?)
 
-; Expand sidenotes inside a paragraph, returns the transformed paragraph and
-; a list of sidenotes to be placed after it, if any.
+       (if p?
+        `(@ ,(txexpr tag attrs
+                 (decode-sidenotes-p elements #:entity-proc entity-proc))
+            (second))
+        (txexpr tag attrs
+                 (decode-sidenotes elements #:entity-proc entity-proc))))]
+    [(list? in)
+     (map (λ (x) (decode-sidenotes x #:entity-proc entity-proc)) in)]
+    [(and (symbol? in)
+          entity-proc)
+     (entity-proc in)]
+    [else
+     in]))
+
+;; Decode elements of a paragraph txexpr
+(define (decode-sidenotes-p in #:entity-proc entity-proc)
+  (define notes `())
+  (define (find e)
+    (printf "LOCATING ~v~n" e)
+    (when (hash-ref note-refs e #f)
+      (set! notes (cons e notes))
+      (printf "FOUND REF ~v~n" e))
+    e)
+  (define decoded (decode-sidenotes in #:entity-proc find))
+  (printf "FOUND NOTES ~v~n" notes)
+  decoded)
+
+(define (paragraph? x)
+  (and (txexpr? x)
+       (eq? (get-tag x) 'p)))
+
 (define (expand-sidenotes in)
-  (if (txexpr? in)
-    (let* ((tag (get-tag in))
-           (p? (eq? tag 'p)))
-      (txexpr (get-attrs in)
-        (foldr (λ (x acc)
-                  (define expanded (expand-sidenotes x))
-                  (cons (append (car acc) (car expanded))
-                        (append (cdr acc) (cdr expanded))))
-               (get-elements in))))
-    (let ((ref (hash-ref note-defs in #f)))
-      (if ref
-        (begin
-          (printf "FOUND REF ~v~n" in)
-          (cons in (list ref)))
-        (cons in `())))))
+  (cond
+    [(list? in)
+     (foldr (λ (x acc)
+               (if (paragraph? x)
+                   ;; FIXME here we should place a list of sidenotes, extracted from inside the paragraph
+                   ;; And also recurse into the paragraph I guess?
+                   (cons x (cons "sidenote" acc))
+                   (cons (expand-sidenotes x) acc)))
+            `()
+            in)]
+    [else
+     in]))
+
+
+
+
+  ;(if (not (null? notes))
+    ;`(@ ,decoded ,notes)
+    ;decoded))
+  ;(append decoded (reverse notes)))
+
+
+  ;(match in
+    ;[(list tag attrs elements ..1)
+     ;#:when (eq? tag 'p)
+     ;(begin
+       ;(define found-sidenotes `())
+       ;(define (collect-sidenotes e)
+         ;(when (hash-ref note-defs e #f)
+           ;(printf "FOUND REF ~v~n" e))
+         ;e)
+       ;(define decoded-elements
+         ;(map collect-sidenotes elements))
+
+       ;`(,tag
+          ;,attrs
+          ;,@decoded-elements))]
+    ;[(list tag attrs elements ..1)
+     ;`(,tag
+       ;,attrs
+       ;,@(map (λ (x) decode-sidenotes x) elements))]
+    ;[entity
+     ;#:when (symbol? entity)
+     ;(if entity-proc
+       ;(entity-proc entity)
+       ;entity)]
+     ;[x
+      ;x]))
+
+
+;(define (decode-sidenotes in)
+  ;(map (λ (x)
+          ;(car expand-sidenotes x))
+       ;in))
+
+;; Expand sidenotes inside a paragraph, returns the transformed paragraph and
+;; a list of sidenotes to be placed after it, if any.
+;(define (expand-sidenotes in)
+  ;(if (txexpr? in)
+    ;(let* ((tag (get-tag in))
+           ;(p? (eq? tag 'p)))
+      ;(txexpr (get-attrs in)
+        ;(foldr (λ (x acc)
+                  ;(define expanded (expand-sidenotes x))
+                  ;(cons (append (car acc) (car expanded))
+                        ;(append (cdr acc) (cdr expanded))))
+               ;(get-elements in))))
+    ;(let ((ref (hash-ref note-defs in #f)))
+      ;(if ref
+        ;(begin
+          ;(printf "FOUND REF ~v~n" in)
+          ;(cons in (list ref)))
+        ;(cons in `())))))
 
 
 ;;; Root transformations
 
 (define (root . args)
-  (printf "Transforming~n")
-  (printf "~v~n" args)
+  ;(printf "Transforming~n")
+  ;(printf "~v~n" args)
   (define decoded (std-decode args))
     ; Replace in all tags, even figures. To allow ndef to be placed after figure caption.
     ;(decode-elements (std-decode args)
@@ -466,6 +569,11 @@
                      ;#:entity-proc replace-stubs))
   (printf "decoded~n")
   (printf "~v~n" decoded)
+
+  (define with-sidenotes (expand-sidenotes decoded))
+
+  (printf "sidenotes~n")
+  (printf "~v~n" with-sidenotes)
 
   ; Insert a widescreen note at the site
   ; If a sidenote ref is found inside a p tag:
