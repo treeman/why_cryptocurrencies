@@ -332,18 +332,29 @@ pre {
 
 
 .sidenote-number {
-    counter-increment: sidenote-counter;
+    //counter-increment: sidenote-counter;
 }
 .sidenote-number:after {
-    content: counter(sidenote-counter);
+    //content: counter(sidenote-counter);
 }
 .sidenote:before {
-    content: counter(sidenote-counter);
-    float: left;
-    padding-right: 0.2rem;
-    display: inline;
+    //content: counter(sidenote-counter);
+    //float: left;
+    //padding-right: 0.2rem;
+    //display: inline;
 }
-.margin-symbol, .sidenote-number:after, .sidenote:before {
+
+.sidenote {
+    position: relative;
+    top: -3em; // 
+    //margin-top: -2em;
+}
+
+.sidenote > .number {
+    padding-right: 0.2rem;
+    //display: inline;
+}
+.margin-symbol, .sidenote-number, .sidenote > .number {
     font-family: $sans-serif-font-family;
     vertical-align: super;
     font-size: 0.7em;
@@ -362,33 +373,37 @@ label.margin-toggle:not(.sidenote-number) {
 }
 
 @media (max-width: $sidenote-float-width - 1) {
-    label.margin-toggle:not(.sidenote-number) {
-        display: inline;
-    }
-    .margin-symbol, .sidenote-number:after, .sidenote:before {
-    }
-    .margin-symbol, .sidenote-number:after {
-        font-weight: bold;
-        color: $sidenote-clickable-color;
-        // Make them a little easier to click on.
-        padding: 0 0.25rem 0.3rem 0;
-        margin-right: -0.25rem;
-        position: relative;
-    }
-    label.margin-toggle {
-        cursor: pointer;
-        z-index: 100;
-    }
-    .margin-symbol:hover, .sidenote-number:hover:after {
-        color: $body-link-hover-color;
-    }
-    // Notes hidden by default
-    .sidenote, .marginnote {
-        display: none;
-    }
+    //label.margin-toggle:not(.sidenote-number) {
+        //display: inline;
+    //}
 
-    .margin-toggle:checked + .sidenote,
-    .margin-toggle:checked + .marginnote {
+    .sidenote {
+        position: static;
+    }
+    .margin-symbol, .sidenote-number, .sidenote > .number{
+    }
+    .margin-symbol, .sidenote-number {
+        //font-weight: bold;
+        //color: $sidenote-clickable-color;
+        //// Make them a little easier to click on.
+        //padding: 0 0.25rem 0.3rem 0;
+        //margin-right: -0.25rem;
+        //position: relative;
+    }
+    //label.margin-toggle {
+        //cursor: pointer;
+        //z-index: 100;
+    //}
+    //.margin-symbol:hover, .sidenote-number:hover:after {
+        //color: $body-link-hover-color;
+    //}
+    // Notes hidden by default
+    //.sidenote, .marginnote {
+        //display: none;
+    //}
+
+    .sidenote,
+    .marginnote {
         display: block;
         margin: 1rem;
 

@@ -54,9 +54,8 @@
 
 (define sidenote-counter 0)
 (define (assign-sidenote-counter)
-  (define counter sidenote-counter)
   (set! sidenote-counter (+ sidenote-counter 1))
-  counter)
+  sidenote-counter)
 
 (define (set-sidenote ref)
   (define note (get-note ref))
@@ -82,7 +81,8 @@
 ;; 4. Definition
 
 (define (mn ref-in)
-  (sn ref-in))
+  "")
+  ;(sn ref-in))
 (define (sn ref-in)
   (define ref (ref-symbol ref-in))
   (set-sidenote ref)
@@ -150,17 +150,19 @@
   (not (note-manual-pos note)))
 
 (define (inplace-sidenote note)
-  (define def (note-def note))
+  ;(define def (note-def note))
   (define counter (format "~a" (note-sign note))) ; FIXME handle marginnotes
   (define label-class "sidenote-number")
-  (define span-class "sidenote")
+  ;(define span-class "sidenote")
 
-  `((span ((class ,label-class)) ,counter)
-    (span ((class ,span-class)) ,@def)))
+  `((span ((class ,label-class)) ,counter)))
+
+  ;`((span ((class ,label-class)) ,counter)
+    ;(span ((class ,span-class)) ,@def)))
 
 (define (after-p-sidenote note)
   (define def (note-def note))
   (define counter (format "~a" (note-sign note))) ; FIXME handle marginnotes
-  (define span-class "sidenote-after")
+  (define span-class "sidenote")
   `(span ((class ,span-class)) (span ((class "number")) ,counter) ,@def))
 

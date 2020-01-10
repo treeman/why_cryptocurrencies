@@ -365,13 +365,13 @@
     ;(decode-elements (std-decode args)
                      ;#:txexpr-proc my-test
                      ;#:entity-proc replace-stubs))
-  (printf "decoded~n")
-  (printf "~v~n" decoded)
+  ;(printf "decoded~n")
+  ;(printf "~v~n" decoded)
 
   (define with-sidenotes (decode-sidenotes decoded))
 
-  (printf "sidenotes~n")
-  (printf "~v~n" with-sidenotes)
+  ;(printf "sidenotes~n")
+  ;(printf "~v~n" with-sidenotes)
 
   ; Insert a widescreen note at the site
   ; If a sidenote ref is found inside a p tag:
