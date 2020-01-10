@@ -5,11 +5,12 @@
 (require racket/format)
 (require racket/runtime-path)
 (require racket/port)
-(require "toc.rkt")
 (require "links.rkt")
 (require "post-process.rkt")
-(require "string-process.rkt")
 (require "pygments.rkt")
+(require "sidenotes.rkt")
+(require "string-process.rkt")
+(require "toc.rkt")
 
 (provide (all-defined-out))
 
@@ -348,216 +349,13 @@
                   (allow "fullscreen")))))
      (figcaption ,@decoded-caption)))
 
-
-;;; Margin-notes and side-notes
-(define note-defs (make-hash))
-
-(define (ndef ref-in . def)
-  (define id (format "nd-~a" ref-in))
-  (define ref (string->symbol id))
-
-  (when (hash-has-key? note-defs ref)
-    (error (format "duplicate ndef '~a'" ref-in)))
-
-  ;; Because p doesn't allow block elements
-  ;; and span doesn't allow p elements
-  ;; use a special span .snp element to emulate paragraphs.
-  ;; This is workaround is required as we want to inject a whole sidenote
-  ;; inline to use the checkbox css toggling to avoid javascript.
-  (define (wrap xs)
-    (list* 'span '((class "snp")) xs))
-  (define content
-    (decode-elements def
-                     #:txexpr-elements-proc (λ (x) (decode-paragraphs x wrap))
-                     #:string-proc string-proc))
-
-  (hash-set! note-defs ref content)
-  "")
-
-(define (note-ref #:label-class label-class
-                  #:label-content label-content
-                  #:span-class span-class
-                  #:ref ref-in)
-  (define id (format "nd-~a" ref-in))
-  (define ref (string->symbol id))
-  (define (replace uid)
-    (define def (hash-ref note-defs ref #f))
-    (unless def (error (format "missing ref '~s'" ref)))
-    (define uid-s (symbol->string uid))
-    ;; Use splice-me to be able to return multiple elements inline.
-    `(@
-      (label ((class ,label-class) (for ,uid-s)) ,label-content)
-      (input ((id ,uid-s) (class "margin-toggle") (type "checkbox")))
-      (span ((class ,span-class)) ,@def)))
-
-  ;; Generate a unique id for each note, so we can fold multiple references
-  ;; correctly.
-  (define uid (gen-note-uid id))
-  (register-replacement uid replace)
-  uid)
-
-(define note-uids (make-hash))
-(define (gen-note-uid id)
-  (define (find-note-uid c)
-    (define uid (string->symbol (format "~a~a" id c)))
-    (if (hash-ref note-uids uid #f)
-      (find-note-uid (+ c 1))
-      (begin
-        (hash-set! note-uids uid #t)
-        uid)))
-  (find-note-uid 0))
-
-(define note-refs (make-hash))
-(define (note-ref2 ref-in)
-  (define id (format "nd-~a" ref-in))
-  (define ref (string->symbol id))
-  (define uid (gen-note-uid id))
-  (hash-set! note-refs uid #t)
-  uid)
-
-
-(define (mn ref-in)
-  (note-ref #:label-class "margin-toggle margin-symbol"
-            #:label-content "†"
-            #:span-class "marginnote"
-            #:ref ref-in))
-(define (sn ref-in)
-  ;(note-ref #:label-class "margin-toggle sidenote-number"
-            ;#:label-content ""
-            ;#:span-class "sidenote"
-            ;#:ref ref-in))
-  (note-ref2 ref-in))
-
+;;; Root transformations
 
 (define (std-decode args)
   (decode-elements args
     #:txexpr-elements-proc decode-paragraphs
     #:string-proc string-proc
     #:exclude-tags `(figure pre)))
-
-(define (my-test x)
-  (printf "Visit: '~v'~n" x)
-  x)
-
-;; FIXME this doesn't work, as we need to process paragraphs on the level above.
-(define (decode-sidenotes in #:entity-proc [entity-proc #f])
-  ;(printf "IN ~v ~v~n" in entity-proc)
-  (cond
-    [(txexpr? in)
-     (let* ((tag (get-tag in))
-            (attrs (get-attrs in))
-            (elements (get-elements in))
-            (p? (eq? tag 'p)))
-       ;(printf "txexpr ~v~n" p?)
-
-       (if p?
-        `(@ ,(txexpr tag attrs
-                 (decode-sidenotes-p elements #:entity-proc entity-proc))
-            (second))
-        (txexpr tag attrs
-                 (decode-sidenotes elements #:entity-proc entity-proc))))]
-    [(list? in)
-     (map (λ (x) (decode-sidenotes x #:entity-proc entity-proc)) in)]
-    [(and (symbol? in)
-          entity-proc)
-     (entity-proc in)]
-    [else
-     in]))
-
-;; Decode elements of a paragraph txexpr
-(define (decode-sidenotes-p in #:entity-proc entity-proc)
-  (define notes `())
-  (define (find e)
-    (printf "LOCATING ~v~n" e)
-    (when (hash-ref note-refs e #f)
-      (set! notes (cons e notes))
-      (printf "FOUND REF ~v~n" e))
-    e)
-  (define decoded (decode-sidenotes in #:entity-proc find))
-  (printf "FOUND NOTES ~v~n" notes)
-  decoded)
-
-(define (paragraph? x)
-  (and (txexpr? x)
-       (eq? (get-tag x) 'p)))
-
-(define (expand-sidenotes in)
-  (cond
-    [(list? in)
-     (foldr (λ (x acc)
-               (if (paragraph? x)
-                   ;; FIXME here we should place a list of sidenotes, extracted from inside the paragraph
-                   ;; And also recurse into the paragraph I guess?
-                   (cons x (cons "sidenote" acc))
-                   (cons (expand-sidenotes x) acc)))
-            `()
-            in)]
-    [else
-     in]))
-
-
-
-
-  ;(if (not (null? notes))
-    ;`(@ ,decoded ,notes)
-    ;decoded))
-  ;(append decoded (reverse notes)))
-
-
-  ;(match in
-    ;[(list tag attrs elements ..1)
-     ;#:when (eq? tag 'p)
-     ;(begin
-       ;(define found-sidenotes `())
-       ;(define (collect-sidenotes e)
-         ;(when (hash-ref note-defs e #f)
-           ;(printf "FOUND REF ~v~n" e))
-         ;e)
-       ;(define decoded-elements
-         ;(map collect-sidenotes elements))
-
-       ;`(,tag
-          ;,attrs
-          ;,@decoded-elements))]
-    ;[(list tag attrs elements ..1)
-     ;`(,tag
-       ;,attrs
-       ;,@(map (λ (x) decode-sidenotes x) elements))]
-    ;[entity
-     ;#:when (symbol? entity)
-     ;(if entity-proc
-       ;(entity-proc entity)
-       ;entity)]
-     ;[x
-      ;x]))
-
-
-;(define (decode-sidenotes in)
-  ;(map (λ (x)
-          ;(car expand-sidenotes x))
-       ;in))
-
-;; Expand sidenotes inside a paragraph, returns the transformed paragraph and
-;; a list of sidenotes to be placed after it, if any.
-;(define (expand-sidenotes in)
-  ;(if (txexpr? in)
-    ;(let* ((tag (get-tag in))
-           ;(p? (eq? tag 'p)))
-      ;(txexpr (get-attrs in)
-        ;(foldr (λ (x acc)
-                  ;(define expanded (expand-sidenotes x))
-                  ;(cons (append (car acc) (car expanded))
-                        ;(append (cdr acc) (cdr expanded))))
-               ;(get-elements in))))
-    ;(let ((ref (hash-ref note-defs in #f)))
-      ;(if ref
-        ;(begin
-          ;(printf "FOUND REF ~v~n" in)
-          ;(cons in (list ref)))
-        ;(cons in `())))))
-
-
-;;; Root transformations
 
 (define (root . args)
   ;(printf "Transforming~n")
@@ -570,7 +368,7 @@
   (printf "decoded~n")
   (printf "~v~n" decoded)
 
-  (define with-sidenotes (expand-sidenotes decoded))
+  (define with-sidenotes (decode-sidenotes decoded))
 
   (printf "sidenotes~n")
   (printf "~v~n" with-sidenotes)
@@ -584,5 +382,6 @@
   ;; Expand splices afterwards
   ;; 'splice-me is consired inline so doesn't break paragraph calculations
   ;(txexpr 'root empty (expand-splices decoded)))
-  (txexpr 'root empty decoded))
+  ;(txexpr 'root empty decoded))
+  (txexpr 'root empty with-sidenotes))
 

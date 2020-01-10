@@ -5,7 +5,7 @@
 ◊(define-meta updated "2019-04-03T19:59:59+02:00")
 ◊(define-meta uuid "581c4917-d862-49cb-9d01-495a9106081b")
 
-First sentence.◊sn{sidenote} ◊em{Second} sentence.
+First sentence.◊sn{sidenote} ◊em{Second} sentence.◊sn{sidenote2}
 
 
 ◊ol{
@@ -13,9 +13,12 @@ First sentence.◊sn{sidenote} ◊em{Second} sentence.
   ◊li{Another}
 }
 
-◊sn-pos{sidenote}
+◊note-pos{sidenote}
 
 ◊ndef["sidenote"]{
     This is my sidenote, my sidenote's amazing.
+}
+◊ndef["sidenote2"]{
+    This is my OTHER sidenote, THIS is amazing.
 }
 
