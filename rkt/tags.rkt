@@ -5,6 +5,7 @@
 (require racket/format)
 (require racket/runtime-path)
 (require racket/port)
+(require "decode.rkt")
 (require "links.rkt")
 (require "post-process.rkt")
 (require "pygments.rkt")
@@ -66,7 +67,7 @@
   (define a `(a ,attrs ,@text))
 
   (if qt
-    `(splice-me "“" ,a "”")
+    `(@ "“" ,a "”")
     a))
 
 (module+ test
@@ -78,7 +79,7 @@
                 `(a ((class "xref") (title "mytitle") (href "https://abc.xyz"))
                     "my" "link"))
   (check-equal? (link #:quote #t "https://abc.xyz" "my" "link")
-                `(splice-me
+                `(@
                     "“"
                     (a ((class "xref") (href "https://abc.xyz"))
                         "my" "link")
@@ -287,10 +288,10 @@
 (define (nbsp . args)
   ;; Split a string and insert 'nbspc between
   (define (replace s)
-    `(splice-me ,@(add-between (string-split s " ")
+    `(@ ,@(add-between (string-split s " ")
                                'nbsp)))
-  ;; Use splice-me to flatten the result
-  `(splice-me ,@(map (λ (x)
+  ;; Use @ to flatten the result
+  `(@ ,@(map (λ (x)
                         (if (string? x)
                           (replace x)
                           x))
@@ -351,37 +352,6 @@
 
 ;;; Root transformations
 
-(define (std-decode args)
-  (decode-elements args
-    #:txexpr-elements-proc decode-paragraphs
-    #:string-proc string-proc
-    #:exclude-tags `(figure pre)))
-
 (define (root . args)
-  ;(printf "Transforming~n")
-  ;(printf "~v~n" args)
-  (define decoded (std-decode args))
-    ; Replace in all tags, even figures. To allow ndef to be placed after figure caption.
-    ;(decode-elements (std-decode args)
-                     ;#:txexpr-proc my-test
-                     ;#:entity-proc replace-stubs))
-  ;(printf "decoded~n")
-  ;(printf "~v~n" decoded)
-
-  (define with-sidenotes (decode-sidenotes decoded))
-
-  ;(printf "sidenotes~n")
-  ;(printf "~v~n" with-sidenotes)
-
-  ; Insert a widescreen note at the site
-  ; If a sidenote ref is found inside a p tag:
-  ;   insert it right after
-  ; else
-  ;   insert it at sidenote-pos or at the site
-
-  ;; Expand splices afterwards
-  ;; 'splice-me is consired inline so doesn't break paragraph calculations
-  ;(txexpr 'root empty (expand-splices decoded)))
-  ;(txexpr 'root empty decoded))
-  (txexpr 'root empty with-sidenotes))
+  (txexpr 'root empty (decode-sidenotes (std-decode args))))
 

@@ -3,6 +3,7 @@
 (require pollen/tag pollen/decode txexpr)
 (require racket/match racket/string racket/list)
 (require "string-process.rkt")
+(require "decode.rkt")
 
 (provide ndef sn mn note-pos decode-sidenotes)
 
@@ -20,29 +21,17 @@
   (when (hash-has-key? note-defs ref)
     (error (format "duplicate ndef '~a'" ref-in)))
 
-  ;; Because p doesn't allow block elements
-  ;; and span doesn't allow p elements
-  ;; use a special span .snp element to emulate paragraphs.
-  ;; This is workaround is required as we want to inject a whole sidenote
-  ;; inline to use the checkbox css toggling to avoid javascript.
-  (define (wrap xs)
-    (list* 'span '((class "snp")) xs))
-  (define content
-    (decode-elements def
-                     #:txexpr-elements-proc (λ (x) (decode-paragraphs x wrap))
-                     #:string-proc string-proc))
-
-  (hash-set! note-defs ref content)
+  (hash-set! note-defs ref def)
   "")
 
 
 ;; Notes
 
-(struct note (ref sign manual-pos) #:mutable)
+(struct note (ref sign top) #:mutable)
 (define (make-note ref
                    #:sign [sign #f]
-                   #:manual-pos [manual-pos #f])
-  (note ref sign manual-pos))
+                   #:top [top #f])
+  (note ref sign top))
 
 (define notes (make-hash))
 
@@ -73,13 +62,6 @@
   (unless def (error (format "missing ref '~s'" ref)))
   def)
 
-;; FIXME
-;; Should hold a note struct, where we can add various information.
-;; 1. Track which sidenote number we're at, or if it's a marginnote.
-;; 2. Manually placed sidenote position.
-;; 3. Sanity check that all definitions are used.
-;; 4. Definition
-
 (define (mn ref-in)
   "")
   ;(sn ref-in))
@@ -89,16 +71,15 @@
   ref)
 
 (define note-pos-refs (make-hash))
+
 (define (note-pos ref-in)
   (define ref (ref-symbol ref-in))
-  (define note (get-note ref))
-  (if note
-    (set-note-manual-pos! note #t)
-    (hash-set! notes ref (make-note ref #:manual-pos #t)))
-
-  (define pos-ref (string->symbol (format "~a-pos" (symbol->string ref))))
+  (define pos-ref (ref->pos-ref ref))
   (hash-set! note-pos-refs pos-ref ref)
   pos-ref)
+
+(define (ref->pos-ref ref)
+  (string->symbol (format "~a-pos" (symbol->string ref))))
 
 
 ;; Decoding
@@ -111,7 +92,7 @@
      (foldr (λ (x acc)
                (if (paragraph? x)
                  (let ((decodeed (decode-sidenotes-p x)))
-                   (cons (car decodeed)
+                   (append (car decodeed)
                          (append (cdr decodeed) acc)))
                  (cons (decode-sidenotes x) acc)))
             `()
@@ -119,50 +100,94 @@
     [else
       in]))
 
+(define (empty-p? p)
+  (define es (get-elements p))
+  (or (null? es)
+      (andmap (λ (x)
+                 (or (eq? x "")
+                     (eq? x 'br)
+                     (null? x)
+                     (equal? x '(br))))
+              es)))
+
 (define (decode-sidenotes-p in)
   (define notes-after-p `())
+  (define notes-manual-pos `())
   (define decoded-p
     (foldr
       (λ (x acc)
          (define note (get-note x))
          (define note-pos-ref (hash-ref note-pos-refs x #f))
          (cond
+           ;; Inline note expansion.
            [note
              (begin
-               (when (decode-sidenote-after-p? note)
-                 (set! notes-after-p (cons (after-p-sidenote note)
+               (unless (manual-pos? note)
+                 (set! notes-after-p (append (aside note)
                                              notes-after-p)))
-               (append (inplace-sidenote note)
+               (append (label note)
                        acc))]
+           ;; Explicit note def expansion.
            [note-pos-ref
              (define note (get-note note-pos-ref))
              (unless note
                (error (format "Missing note for pos: '~v'~n" note-pos-ref)))
-             (cons (after-p-sidenote note) acc)]
+             ;(append (aside note) acc)]
+             (set! notes-manual-pos (append (aside note)
+                                            notes-manual-pos))
+             acc]
            [else
              (cons x acc)]))
       `()
       in))
-  (cons decoded-p notes-after-p))
 
-(define (decode-sidenote-after-p? note)
-  ;; FIXME can just check note-pos-refs. And remove manual-pos flag from note struct.
-  (not (note-manual-pos note)))
+  (define non-empty-p-list
+    (if (empty-p? decoded-p)
+      `()
+      (list decoded-p)))
 
-(define (inplace-sidenote note)
-  ;(define def (note-def note))
+  (define decoded-list (append non-empty-p-list
+                               notes-manual-pos))
+
+  ;(printf "~v~n" decoded-p)
+  ; FIXME Sometimes when we're expanding note defs from manual positions,
+  ; we'll get an aside inside a paragraph. In this case we need to remove the
+  ; asides, and place them in a list, and possibly remove the paragraph completely as well.
+  ;(cons (append decoded-p notes-manual-pos) notes-after-p))
+  ;(printf "a: ~v~n" (list decoded-p))
+  ;(printf "b: ~v~n" (append (list decoded-p) notes-manual-pos))
+  ;(cons (append (list decoded-p) notes-manual-pos) notes-after-p))
+  (cons decoded-list notes-after-p))
+
+(define (manual-pos? note)
+  (define ref (note-ref note))
+  (define pos-ref (ref->pos-ref (note-ref note)))
+  (hash-has-key? note-pos-refs pos-ref))
+
+(define (label note)
   (define counter (format "~a" (note-sign note))) ; FIXME handle marginnotes
-  (define label-class "sidenote-number")
-  ;(define span-class "sidenote")
+  `((span ((class "sidenote-label")) ,counter)))
 
-  `((span ((class ,label-class)) ,counter)))
-
-  ;`((span ((class ,label-class)) ,counter)
-    ;(span ((class ,span-class)) ,@def)))
-
-(define (after-p-sidenote note)
+(define (aside note)
   (define def (note-def note))
   (define counter (format "~a" (note-sign note))) ; FIXME handle marginnotes
-  (define span-class "sidenote")
-  `(span ((class ,span-class)) (span ((class "number")) ,counter) ,@def))
+  (define content
+    `((aside ((class "sidenote")) (span ((class "sidenote-number")) ,counter) ,@def)))
+  (std-decode content))
+
+
+(module+ test
+  (require rackunit)
+
+  (check-equal? (empty-p? `(p))
+                #t)
+  (check-equal? (empty-p? `(p ""))
+                #t)
+  (check-equal? (empty-p? `(p "" br ""))
+                #t)
+  (check-equal? (empty-p? `(p "" (br) ""))
+                #t)
+  (check-equal? (empty-p? `(p "" (div) ""))
+                #f)
+  )
 

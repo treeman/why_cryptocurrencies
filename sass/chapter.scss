@@ -250,7 +250,7 @@ th, td {
  * Notes
  */
 body {
-    counter-reset: sidenote-counter;
+    //counter-reset: sidenote-counter;
 }
 
 
@@ -306,29 +306,30 @@ pre {
     font-size: 0.8rem;
 }
 
-// Ad-hoc paragraph styling
-.sidenote .snp:not(:first-child),
-.marginnote .snp:not(:first-child) {
-    margin-top: 0.8em;
-    display: inline-block;
-    clear: both;
-    width: 100%;
-}
-// No inline-block for the first in sidenotes to allow ref number
-// to live on the same line.
-.marginnote .snp {
-    clear: both;
-    width: 100%;
-    display: inline-block;
-}
-
 .sidenote img, .marginnote img {
     max-width: 100%;
 }
 
-.snp > code {
-    overflow-wrap: break-word;
-}
+// Ad-hoc paragraph styling
+//.sidenote .snp:not(:first-child),
+//.marginnote .snp:not(:first-child) {
+    //margin-top: 0.8em;
+    //display: inline-block;
+    //clear: both;
+    //width: 100%;
+//}
+// No inline-block for the first in sidenotes to allow ref number
+// to live on the same line.
+//.marginnote .snp {
+    //clear: both;
+    //width: 100%;
+    //display: inline-block;
+//}
+
+
+//.snp > code {
+    //overflow-wrap: break-word;
+//}
 
 
 .sidenote-number {
@@ -346,15 +347,14 @@ pre {
 
 .sidenote {
     position: relative;
-    top: -3em; // 
-    //margin-top: -2em;
+    top: -2em; // Approximate adjustment for notes at the last line of a paragraph.
 }
 
-.sidenote > .number {
+.sidenote .sidenote-number {
     padding-right: 0.2rem;
     //display: inline;
 }
-.margin-symbol, .sidenote-number, .sidenote > .number {
+.margin-symbol, .sidenote-number, .sidenote-label {
     font-family: $sans-serif-font-family;
     vertical-align: super;
     font-size: 0.7em;
@@ -362,15 +362,15 @@ pre {
     //background-color: tomato;
 }
 
-input.margin-toggle {
-    display: none;
-}
-label.sidenote-number {
-    display: inline;
-}
-label.margin-toggle:not(.sidenote-number) {
-    display: none;
-}
+//input.margin-toggle {
+    //display: none;
+//}
+//label.sidenote-number {
+    //display: inline;
+//}
+//label.margin-toggle:not(.sidenote-number) {
+    //display: none;
+//}
 
 @media (max-width: $sidenote-float-width - 1) {
     //label.margin-toggle:not(.sidenote-number) {
@@ -378,6 +378,7 @@ label.margin-toggle:not(.sidenote-number) {
     //}
 
     .sidenote {
+        // Allow a sidenote to be adjusted vertically.
         position: static;
     }
     .margin-symbol, .sidenote-number, .sidenote > .number{
@@ -402,8 +403,7 @@ label.margin-toggle:not(.sidenote-number) {
         //display: none;
     //}
 
-    .sidenote,
-    .marginnote {
+    .sidenote, .marginnote {
         display: block;
         margin: 1rem;
 
@@ -412,12 +412,12 @@ label.margin-toggle:not(.sidenote-number) {
             margin: 0 auto;
         }
     }
-    .sidenote, .marginnote {
-        .snp {
-            // Dsiplay as block to not be cut by images.
-            display: block;
-        }
-    }
+    //.sidenote, .marginnote {
+        //.snp {
+            //// Dsiplay as block to not be cut by images.
+            //display: block;
+        //}
+    //}
     .sidenote-code {
         max-width: 101%;
     }

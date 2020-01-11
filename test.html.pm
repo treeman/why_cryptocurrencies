@@ -14,11 +14,17 @@ First sentence.◊sn{sidenote} ◊em{Second} sentence.◊sn{sidenote2}
 }
 
 ◊note-pos{sidenote}
+◊note-pos{sidenote2}
 
 ◊ndef["sidenote"]{
-    This is my sidenote, my sidenote's amazing.
+    This is my sidenote---my sidenote's amazing.
+
+    Paragraphs are fun.
 }
 ◊ndef["sidenote2"]{
-    This is my OTHER sidenote, THIS is amazing.
+    This is my OTHER sidenote... THIS is amazing.
 }
 
+And some more text here.
+
+Just to make sure we're not inserting paragraphs or breaks unnecessarily.

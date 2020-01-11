@@ -29,7 +29,6 @@
   (provide (all-defined-out))
 
   (define template-prefix "chapter")
-  ;; splice-me needs to NOT be a block tag to allow us to inject
   (define block-tags (append '(img table tbody tr dt dd dl) default-block-tags))
 
   ;; Use our own publish script instead...
