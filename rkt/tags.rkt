@@ -243,8 +243,6 @@
   `(code ,@args))
 (define (code . args)
   `(pre (code ,@args)))
-(define (scode . args)
-  `(span ((class "sidenote-code")) ,@args))
 (define (code-hl #:line-numbers? [line-numbers? #f]
                  #:css-class [css-class "highlight"]
                  #:lines [hl-lines null]

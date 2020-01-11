@@ -200,7 +200,7 @@
 
 (define (expand-sidenote-defs #:sort [sort? #t] notes)
   (std-decode
-    (map aside
+    (map expand-sidenote
          (if sort?
            (sort notes note<)
            notes))))
@@ -270,7 +270,7 @@
       (format "~a" sign)))
   `((span ((class "sidenote-label")) ,label)))
 
-(define (aside note)
+(define (expand-sidenote note)
   (define def (note-def note))
   (define top (note-top note))
   (when (and top (not (number? top)))
@@ -287,7 +287,7 @@
       ""
       `(span ((class "sidenote-number")) ,(format "~a" sign))))
 
-  `(aside ,attrs
+  `(div ,attrs
           ,label
           ,@def))
 
@@ -322,16 +322,16 @@
          (span ((class "sidenote-label")) "1")
          " Two." (span ((class "sidenote-label")) "2")
          " Three." (span ((class "sidenote-label")) "3"))
-      (aside ((class "sidenote")) (span ((class "sidenote-number")) "1")
+      (div ((class "sidenote")) (span ((class "sidenote-number")) "1")
              "1st")
-      (aside ((class "sidenote")) (span ((class "sidenote-number")) "2")
+      (div ((class "sidenote")) (span ((class "sidenote-number")) "2")
              "2nd")
       (ol
         (li "a" (span ((class "sidenote-label")) "4"))
         (li "b"))
-      (aside ((class "sidenote")) (span ((class "sidenote-number")) "4")
+      (div ((class "sidenote")) (span ((class "sidenote-number")) "4")
              "In list.")
-      (aside ((class "sidenote")) (span ((class "sidenote-number")) "3")
+      (div ((class "sidenote")) (span ((class "sidenote-number")) "3")
              "3rd")))
 
   (check-equal? (decode-sidenotes input) expected)

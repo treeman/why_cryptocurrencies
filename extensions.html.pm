@@ -101,7 +101,7 @@ Bitcoin does more than just transfer coins from one address to another. What it 
 ◊ndef["bitcoin-script"]{
     This is the script of a standard Bitcoin transaction (amount, destination and other data is specified elsewhere):
 
-    ◊scode{
+    ◊code{
         OP_DUP OP_HASH160 <pubKeyHash> OP_EQUALVERIFY OP_CHECKSIG
     }
 

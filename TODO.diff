@@ -3,6 +3,8 @@ Sidenote rewrite:
 - Go through all existing chapters and adjust sidenotes
 - Styling for narrow sidenotes
 - Allow feed to display everything again
+- Code in sidenotes
+- Images in sidenotes?
 
 
 Summarize better:
@@ -70,6 +72,12 @@ Code:
 
 Style:
 - Restyle conversation in freezing of merchant accounts
+
+Markup
++ Use <cite> when refering to books, or things with titles
+  https://developer.mozilla.org/en-US/docs/Web/HTML/Element/cite
++ Use <time> in quotes (and other?)
++ Use <caption> for <table>? Instead of placing it in a figure with caption?
 
 Sanity:
 + Alt-text for all links
