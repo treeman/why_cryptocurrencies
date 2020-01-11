@@ -30,6 +30,10 @@ There are many projects in the cryptocurrency space that, curiously enough, aren
   ◊li{Facebook's Libra}
 }
 
+◊note-pos[#:top -12]{pyramid-schemes}
+◊note-pos[#:top -6]{tether}
+◊note-pos{ICOs}
+
 Some might be useful but they don't have the same properties as cryptocurrencies like Bitcoin, and they don't work the same way.
 
 For example stablecoins depend on a third party issuer and redeemer---the very thing cryptocurrencies are meant to remove. Sidechains have fundamentally different security trade-offs and they work differently, they're built on top of---but they are not---cryptocurrencies.
@@ -56,6 +60,8 @@ Removing the consensus mechanism from a cryptocurrency, so they can just use the
 ◊(define git "https://git-scm.com/")
 
 Be aware of "the blockchain" being used only as a buzzword.
+
+◊note-pos[#:top -4]{git}
 
 
 ◊subhead{Warning signs to look out for}
@@ -97,16 +103,17 @@ There are many traps to fall into in this space. I think the best antidote is to
     Many ICOs have been declared illegal as they're classified as securities and many more are very scammy. Bitconnect is for example an ICO.
 }
 
+◊note-pos[#:top -36]{supply}
+◊note-pos[#:top -17]{censorship}
+
 ◊ndef["supply"]{
-    These come in wide variety. It's common to assign large parts of the initial supply to the creators or to mine the chain in secret before releasing it to the public.
+    Slanting the coin supply come in wide variety. It's common to assign large parts of the initial supply to the creators or to mine the chain in secret before releasing it to the public.
 
     A more sinister tactic is ot introduce a bug in the code that allows miners to mine extremely fast---and only fix it after you've mined a big portion. This is what ◊link[dash]{Dash did} in a so-called ◊em{instamine}.
 }
 
 ◊ndef["censorship"]{
-    Imagine the irony of censorship being a problem in communities supporting censorship-free money.
-
-    Unfortunately ◊link[bitcoin-censorship]{examples} of ◊link[r/cryptocurrency-censorship]{censorship} on ◊link[bitcoin-censorship3]{Reddit} are ◊link[bitcoin-censorship2]{plentiful}.
+    Imagine the irony of censorship being a problem in communities supporting censorship-free money. Unfortunately ◊link[bitcoin-censorship]{examples} of ◊link[r/cryptocurrency-censorship]{censorship} on ◊link[bitcoin-censorship3]{Reddit} are ◊link[bitcoin-censorship2]{plentiful}.
 }
 
 ◊(define dash "https://bitcointalk.org/index.php?topic=999886.0")

@@ -24,6 +24,9 @@ Fees in cryptocurrencies are relatively straightforward: each transaction has a 
     ◊figcaption{The ◊link[median-tx-fee]{median transaction fee} for common cryptocurrencies 2019-05-25. (◊link[median-tx-fee-monero]{Link for Monero})◊sn{zero-fee-cryptos}}
 }
 
+◊note-pos[#:top -10]{crypto-fee}
+◊note-pos{zero-fee-cryptos}
+
 ◊ndef["zero-fee-cryptos"]{
     There are cryptocurrencies boasting zero fees, but they use unproven consensus algorithms or centralized governance. That's why I only include coins using proof-of-work.
 }
@@ -33,7 +36,7 @@ For the most part cryptocurrencies have very low fees---enough to call them negl
 In fact Bitcoin fees of $2-3 is still low compared the fees during the bull run in December 2017, which reached an average of $50(!!) per transaction. This is because transaction throughput in Bitcoin is maxed out, and to get your transaction accepted you need to pay more than others.◊sn{fee-market}
 
 ◊ndef["fee-market"]{
-    There are some Bitcoin developers who claims high fees are necessary for the survival of Bitcoin. Gregory Maxwell was famously "◊link[nullc-champaign]{pulling out the champaign}" when Bitcoin had $50 fees. He thought it was a sign that the market supported his ◊em{"fee market"} theory.
+    There are some Bitcoin developers who claims high fees are necessary for the survival of Bitcoin. Gregory Maxwell was famously "◊link[nullc-champaign]{pulling out the champaign}" when Bitcoin had $50 fees. He thought it was a sign that the market supported the ◊em{"fee market"} idea.
 
     The issue is that Bitcoin's block reward will eventually run out (after several decades), so who will pay the miners to secure the network? The "fee market" idea is that transactions must be very expensive for it to be worth it for miners to secure the chain.
 
@@ -47,11 +50,15 @@ In fact Bitcoin fees of $2-3 is still low compared the fees during the bull run 
 
 You may think the fees are so high because Bitcoin is much more popular than other cryptocurrencies, but that's not the whole story. In fact it would be easy to lower the fees---Bitcoin Cash can for example handle at least 20 times the transaction count of Bitcoin, while keeping the same low fees.◊sn{scaling}
 
+Bitcoin just doesn't work well as a currency with these high and unreliable fees, but it's not representative of cryptocurrencies in general.◊sn{bch-btc}
+
+◊note-pos[#:top -15]{fee-market}
+◊note-pos{scaling}
+◊note-pos{bch-btc}
+
 ◊ndef["scaling"]{
     How well cryptocurrencies can scale is an ongoing research, and supporting as many transactions as VISA does with the same fees might be difficult.
 }
-
-Bitcoin just doesn't work well as a currency with these high and unreliable fees, but it's not representative of cryptocurrencies in general.◊sn{bch-btc}
 
 ◊ndef["bch-btc"]{
     See ◊link[history-blocksize]{this timeline} for the history of the blocksize debate (it only goes up to Dec 2017, but as of May 2019 no significant development has happened). Because Bitcoin didn't raise the blocksize ◊link[bch]{Bitcoin Cash} was created in 2017, keeping fees low and transaction capacity high.
@@ -98,6 +105,9 @@ There are different types of cards; debit and credit cards, and different provid
 
 Mobile payments have become popular recently.◊sn{mobile-payments} As a representative I'll choose Swish, which is used everywhere here in Sweden. It's connected to your bank and have free person-to-person transactions, but unsurprisingly there are fees for businesses.
 
+◊note-pos[#:top -20]{comparisons}
+◊note-pos[#:top -8]{mobile-payments}
+
 ◊ndef["mobile-payments"]{
     The popularity of mobile payments is easy to understand. They're convenient, cheap and fast. In fact they work exactly like cryptocurrency wallets do---just pay with a simple app on your phone.
 
@@ -129,6 +139,9 @@ As we can see cryptocurrencies are decidedly cheaper than the other options. Eve
 
 As the ◊link[what-is-money]{purpose of money} is to increase economic efficiency, a 1--4% tax on nearly all digital payments is really counter-productive.◊sn{insurance} Therefore a move towards cheap payment solutions like Swish or cryptocurrencies would be beneficial economically.
 
+◊note-pos[#:top -17]{bank-fees}
+◊note-pos{insurance}
+
 ◊ndef["insurance"]{
     Yes, parts of the fees represents fraud protection. But that too comes ◊link[rel-charge-back-fraud]{with a cost}, and if viewed from a global economic perspective it might even be detrimental.
 }
@@ -156,6 +169,9 @@ Shifting focus a little, let's take a look at payment speed. We can identify dif
 }
 
 You'll get a ◊em{notification} a few seconds after your payment.◊sn{0-conf-notification} For a credit card this ensures the customer has a valid card and has entered the right PIN-code, but no money has been transferred yet. The money changes (virtual) hands during the ◊em{settlement}, which might be several days later. Finally a transaction might still be reversed much later, when this is no longer possible I call the transaction ◊em{irreversible}.
+
+◊note-pos[#:top -21]{visa-stages}
+◊note-pos[#:top -11]{0-conf-notification}
 
 ◊ndef["0-conf-notification"]{
     Accepting a cryptocurrency transaction which haven't any confirmation yet, called ◊em{0-conf}, is often criticised in the cryptocurrency community. But it's really no different than accepting a credit card payment instantly---they're both uncertain.
@@ -218,6 +234,9 @@ The speed that cryptocurrencies settle and become irreversible significantly red
     Because transaction security is probabilistic, there's ◊link[reversing]{always a risk} of having a transaction reversed even for confirmed transactions. In practice it's ◊strong{very} low.
 }
 
+◊note-pos[#:top -30]{wire-transfer}
+◊note-pos{0-conf}
+
 
 ◊(define reversing "/how_do_cryptocurrencies_work.html#transaction-security")
 ◊(define double-spending "/how_do_cryptocurrencies_work.html#copying-a-coin-&-double-spending")
@@ -246,6 +265,8 @@ While it's of course bad to not have customer protection, there might be other s
 }
 
 In addition it might make risk management more practical. While it's basically impossible for merchants to audit all their customers, it's plausible for customers to check out a merchant. In fact we do it all the time: "this website looks shady!" or "my friend uses them all the time". Merchants are known and have a reputation while customers are innumerable and anonymous.
+
+◊note-pos[#:top -12]{crypto-protection}
 
 
 ◊subhead{Conclusion}

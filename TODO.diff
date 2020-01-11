@@ -1,11 +1,9 @@
 Sidenote rewrite:
 - Update "how to use" with new sidenotes behaviour
 - Go through all existing chapters and adjust sidenotes
-- Styling for narrow sidenotes
-- Allow feed to display everything again
-- Code in sidenotes
-- Images in sidenotes?
-
+  Up to and including Undesirable businesses
+- Update date for -all- chapters
++ Allow feed to display everything again
 
 Summarize better:
 + What is a cryptocurrency?
@@ -84,4 +82,6 @@ Sanity:
 + Setup cross chapter links after all chapters are written
 - Remove "there is" usage in favor of "there's"
 - while/that usage.
+- Remove "I will" usage in favor of "I'll"
+
 

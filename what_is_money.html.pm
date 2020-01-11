@@ -17,6 +17,8 @@ Not just how the physical coins and pieces of paper are made, but why does money
 
 Before getting interested in cryptocurrencies I too had never asked these questions. I will try to provide some insight into this admittedly complex topic.
 
+◊note-pos[#:top -8]{money-or-currency}
+
 
 ◊subhead{Historical examples of money}
 
@@ -70,7 +72,7 @@ First let's look at some interesting historical examples of things that have bee
     ◊money["Euro bank notes"
            #:date "21th century"
            #:img "images/bank_notes.png"]{
-        There are many kinds of ◊em{fiat currencies},◊sn{fiat-commodity} for example the Euro. Modern coins are not made of valuable metal and paper notes are used for large denominations.
+        There are many kinds of ◊em{fiat currencies},◊sn[#:top -6]{fiat-commodity} for example the Euro. Modern coins are not made of valuable metal and paper notes are used for large denominations.
     }
     ◊money["Dogecoin"
            #:date "2013"
@@ -173,7 +175,7 @@ The basic thesis is that it's the state that gives value to money:
     ◊li{Fiat currency is declared by the state to be ◊link[legal-tender]{◊em{legal tender}}.
 
         Which, among other things, means merchants have to accept it by law.}
-    ◊li{The state is responsible to regulate inflation.◊sn{fed}}
+    ◊li{The state is responsible to regulate inflation.◊sn[#:top -6]{fed}}
     ◊li{Banks are insured by the state, increasing safety of the currency.}
     ◊li{Before dropping the gold standard, fiat currencies were backed up by gold.}
 }
@@ -243,6 +245,9 @@ If more or less anything can be used as money, it makes more sense to look at ho
         A piece of gold could for example buy clothes in both ancient Greece and today.
     }
 }
+
+◊note-pos[#:top -25]{4-fun-money}
+◊note-pos[#:top -9]{cars-south}
 
 ◊ndef["cars-south"]{
     Used cars are usually cheaper in the south of Sweden, for some reason unknown to me.
@@ -320,6 +325,10 @@ To function as money ◊link[money-props]{money should have these properties}:�
     }
 }
 
+◊note-pos[#:top -46]{money-props}
+◊note-pos[#:top -25]{fungible-uniform}
+◊note-pos[#:top -9]{limited-supply}
+
 We can summarize the properties as: money should be practical and efficient.
 
 It makes sense as the point of money is to increase efficiency. And if money isn't practical, it's not a good medium of exchange.
@@ -370,6 +379,11 @@ How well ◊strong{cryptocurrencies} work as money is a topic for the ◊link[ne
 ◊ndef["gold-counterfeit"]{
     Even gold coins have problems. For instance it's quite difficult to separate real from fake coins---it requires expertise and specialized tools.
 }
+
+◊note-pos[#:top -35]{really-bad}
+◊note-pos[#:top -28]{smaller-denominations}
+◊note-pos[#:top -22]{marble-coin}
+◊note-pos[#:top -2.5]{gold-counterfeit}
 
 
 ◊subhead{The problem with fiat currencies}

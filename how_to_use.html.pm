@@ -20,14 +20,14 @@ This book is a work in progress, so I will add and rework chapters as I go. If y
 I use ◊link[mbtype]{custom fonts} hosted locally on this site. While fonts are subjective the styling assumes you have these fonts and if you block them---like ◊link[noscript]{noscript} does---it might look slightly off.◊sn{good-idea}
 
 ◊ndef["good-idea"]{
-    If you don't use noscript or ad-blockers, I ◊strong{highly} recommend you do. uBlock Origin is an excellent ad-blocker (works on Firefox on mobile as well).
+    If you don't use noscript or ad-blockers, I ◊strong{highly} recommend you do. ◊em{uBlock Origin} is an excellent ad-blocker (works on Firefox on mobile as well).
 }
 
 External links are highlighted green on hover and internal links are highlighted bright orange. For example compare the external link to ◊link[source-code]{Github} with the link to the ◊link["/"]{home page}. There is no tracking on this site but there may very well be on external sites, this serves as a small signifier for those who cares. It also makes it easier to download the site and read it offline.
 
 Links to the previous and the next chapter can be found at the bottom as well as at the edge of the screen (hover on the edges to see).
 
-Sidenotes use numbers in the text◊sn{sn} and marginnotes◊mn{mn} are notes without numbered references. On small screens like mobile phones the notes are hidden and can be shown by clicking on the sidenote number or the marginnote symbol ◊sans{†}.
+I use sidenotes heavily throughout the text. Like footnotes they use numbered references in the text◊sn{sn} but are placed to the right or below the text instead of at the end of the chapters.
 
 ◊ndef["sn"]{
     This is a sidenote. They're inspired by ◊link[tufte]{Tufte CSS}, feel free to check out the ◊link[source-code]{source of this site} as well if you're curious.

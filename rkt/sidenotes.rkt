@@ -4,6 +4,7 @@
 (require racket/match racket/string racket/list)
 (require "string-process.rkt")
 (require "decode.rkt")
+(require racket/pretty)
 
 (provide ndef sn mn note-pos decode-sidenotes)
 
@@ -279,7 +280,7 @@
   (define attrs `((class "sidenote")))
   (when top
     (set! attrs (append attrs
-                        `((style ,(format "top:~aem" top))))))
+                        `((style ,(format "margin-top:~aem" top))))))
 
   (define sign (note-sign note))
   (define label

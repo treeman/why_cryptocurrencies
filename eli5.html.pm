@@ -45,6 +45,10 @@ While cryptocurrencies are mostly seen as speculative assets---get rich quick sc
     }
 }
 
+◊note-pos[#:top -67]{bitcoin-fees}
+◊note-pos[#:top -55]{chargeback-fraud}
+◊note-pos[#:top -16]{bitcoin-privacy}
+
 Of course cryptocurrencies don't solve everything perfectly, they're held back by adoption and price volatility in particular. And as with all new technology they will be associated with positive and negative change.
 
 If you want to learn more and see more examples just continue reading, or go to ◊link[what-chapter]{What is a cryptocurrency?} and continue from there. You can also ◊link[home]{jump} to whatever chapter interests you---they're supposed to be self-contained.

@@ -57,6 +57,9 @@ They are absolutely dependent on nearby ATMs, because the move towards cashless 
 
 Not having access to digital payments hurts, but there are workarounds. Cash does work---in physical stores. There might also be (uncertain) ◊link[state-payment-cannabis]{ways to accept digital payments}, a basic requirement for online stores.
 
+◊note-pos[#:top -26]{pot-banks}
+◊note-pos[#:top -9]{atms}
+
 ◊(define pot-banks-no "https://www.nytimes.com/2018/01/04/magazine/where-pot-entrepreneurs-go-when-the-banks-just-say-no.html")
 ◊(define scat "https://en.wikipedia.org/wiki/Schr%C3%B6dinger%27s_cat")
 ◊(define cannabis-legality "https://en.wikipedia.org/wiki/Legality_of_cannabis_by_U.S._jurisdiction")
@@ -92,7 +95,7 @@ Instead they have a third party request the payment on their behalf and do some 
 
 ◊(define stripe-restricted "https://stripe.com/restricted-businesses")
 
-These things are on the gray area legal wise,◊sn{legal?} so the companies that does this have high fees---VERY high fees. While regular payment processors may have ~3-4% fees, these intermediary fees can be as high as ◊strong{30%}. That's ludicrously expensive for low margin businesses.
+These things are on the gray area legal wise,◊sn[#:top -8]{legal?} so the companies that does this have high fees---VERY high fees. While regular payment processors may have ~3-4% fees, these intermediary fees can be as high as ◊strong{30%}. That's ludicrously expensive for low margin businesses.
 
 ◊ndef["legal?"]{
     I don't know if this practice is legal or not, I just want to note they don't really have many options.

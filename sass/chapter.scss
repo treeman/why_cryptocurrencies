@@ -294,9 +294,6 @@ pre {
 .sidenote img, {
     max-width: 100%;
 }
-.sidenote {
-    position: relative;
-}
 .sidenote .sidenote-number {
     padding-right: 0.2rem;
 }
@@ -317,17 +314,13 @@ pre {
 
 @media (max-width: $sidenote-float-width - 1) {
     .sidenote {
-        // Allow a sidenote to be adjusted vertically when to the side.
-        position: static;
-        top: -2em; // Approximate adjustment for notes at the last line of a paragraph.
         display: block;
-        margin: 1em 2em 2em 2em;
+        margin: 1em 4em 1.4em 4em !important;
 
         img {
             display: block;
             margin: 0 auto;
         }
-
         code {
             max-width: 101%;
         }
@@ -341,8 +334,11 @@ pre {
     .sidenote {
         float: right;
         clear: right;
+        // Approximate adjustment for notes at the last line of a paragraph.
+        // Will get overridden by local styles.
+        margin-top: -2em;
+        margin-bottom: 4em;
         margin-right: -420px;
-        margin-bottom: 2rem;
         width: 380px;
         position: relative;
         display: inline-block;

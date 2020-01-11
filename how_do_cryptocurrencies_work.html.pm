@@ -60,7 +60,7 @@ It uses ◊link[public-key-cryptography]{◊em{public-key cryptography}} which a
     If the history of cryptography interests you I can also recommend the book "The Code-Breakers" by David Kahn. You can enjoy it even without much math knowledge.
 }
 
-◊note-pos{private-key}
+◊note-pos[#:top -11.5]{private-key}
 ◊note-pos{pubkey}
 
 
@@ -177,6 +177,10 @@ If you've heard about cryptocurrencies then maybe you've also heard about crypto
 The core idea is: if you want to choose which transaction is valid◊sn{valid} you have to do work. The process is known as ◊em{proof-of-work}, shortened to POW.
 
 The work is to find a solution to a computing problem.◊sn{asics} The problem itself is not that important and it doesn't have any meaning outside of mining.◊sn{useful-pow} There some important properties it should have:
+
+◊note-pos[#:top -11]{valid}
+◊note-pos[#:top -5]{asics}
+◊note-pos{useful-pow}
 
 ◊ul{
     ◊li{◊strong{Hard enough}

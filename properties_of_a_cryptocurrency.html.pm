@@ -63,7 +63,7 @@ Trustless means you don't have to rely on a third party to make or confirm the t
 ◊(define freeze "/freezing_of_merchant_accounts.html")
 ◊(define undesirable "/undesirable_businesses.html")
 
-You also don't have to trust a third party to hold your money like you do when you have money in a bank.◊sn{in-banks} What you really have is an IOU from the bank where they promise to give you your money when you ask for it. With cryptocurrencies you can write down the keys to your wallet and you alone have access to it.◊sn{keys}
+You also don't have to trust a third party to hold your money like you do when you have money in a bank.◊sn[#:top -6]{in-banks} What you really have is an IOU from the bank where they promise to give you your money when you ask for it. With cryptocurrencies you can write down the keys to your wallet and you alone have access to it.◊sn{keys}
 
 ◊ndef["in-banks"]{
     You can let a third party hold them if you want and it's probably a good choice for many.
@@ -83,7 +83,7 @@ With cryptocurrencies anyone can independently verify the integrity of the coins
 
 ◊subhead{Transactions are irreversible}
 
-Just like with cash cryptocurrency transfers are irreversible.◊sn{DAO} This means if you've sent someone coins you can only get them back if they agree to give them back. It prevents ◊link[charge-back-fraud]{◊em{charge back fraud}} but it makes theft worse.
+Just like with cash cryptocurrency transfers are irreversible.◊sn[#:top -6]{DAO} This means if you've sent someone coins you can only get them back if they agree to give them back. It prevents ◊link[charge-back-fraud]{◊em{charge back fraud}} but it makes theft worse.
 
 ◊(define charge-back-fraud "/cheaper_faster.html#charge-back-fraud")
 
@@ -119,8 +119,6 @@ I sure don't know who's right. It's probably best to be skeptical of both camps-
     acquisition of skills requires a regular environment, an adequate opportunity to practice, and rapid and unequivocal feedback about the correctness of thoughts and actions. ◊mn{tfas}
 }
 
-◊;note-pos{tfas}
-
 Either way it's not an argument against cryptocurrencies in general as they can be made either inflationary or deflationary (although all I know of becomes deflationary).
 
 ◊ndef["tfas"]{
@@ -136,6 +134,10 @@ Either way it's not an argument against cryptocurrencies in general as they can 
 }
 
 ◊(define aus-link "https://podcast.bitcoin.com/e799-Austrian-Economics-for-Bitcoiners-with-Jeffrey-Tucker-part-1")
+
+◊note-pos[#:top -60]{miners}
+◊note-pos[#:top -32]{bitcoin-supply}
+◊note-pos[#:top -24]{austrian-podcast}
 
 
 ◊subhead{Private}
@@ -153,7 +155,7 @@ Commonly used payment systems, like credit cards for example, asks you to give u
 
 In contrast to cash or gold where large amounts can be cumbersome to handle there's no difference between large or small transfers in a cryptocurrency. Transaction costs are the same for small transfers as for large transfers and they are just as secure. Wallets can store as much as you're comfortable with.
 
-It's also easy to split coins into small parts.◊sn{satoshis} In fact you don't have to think about dividing at all, you use a wallet just like a credit card---a transfer is always exact.
+It's also easy to split coins into small parts.◊sn[#:top -4]{satoshis} In fact you don't have to think about dividing at all, you use a wallet just like a credit card---a transfer is always exact.
 
 ◊ndef["satoshis"]{
     For example one bitcoin can be divided into one hundred million parts---called satoshis. But there is no real technical limit, only a usability concern.
@@ -162,7 +164,7 @@ It's also easy to split coins into small parts.◊sn{satoshis} In fact you don't
 
 ◊subhead{Borderless}
 
-Cryptocurrencies are inherently global. They are usable wherever you are as long as you have an internet connection. You can even send to wallets which are offline◊sn[#:top -4]{cold-storage} but to retrieve them you need to access the internet. Technically you could do transfers completely offline---on paper---but they would be unconfirmed and might not be valid when you do want to use them.
+Cryptocurrencies are inherently global. They are usable wherever you are as long as you have an internet connection. You can even send to wallets which are offline◊sn[#:top -8]{cold-storage} but to retrieve them you need to access the internet. Technically you could do transfers completely offline---on paper---but they would be unconfirmed and might not be valid when you do want to use them.
 
 ◊ndef["cold-storage"]{
     Offline wallets with no computer contact is called cold storage. It's an excellent way to store large amounts you're not planning to use for some time.
