@@ -100,7 +100,7 @@
 
 
 ;; Decoding
-(define (decode-sidenotes in)
+(define (decode-sidenotes-old in)
   (define (paragraph? x)
     (and (txexpr? x)
          (eq? (get-tag x) 'p)))
@@ -117,6 +117,117 @@
     [else
       in]))
 
+(define (decode-sidenotes in)
+  (foldr (λ (x acc)
+            (if (txexpr? x)
+              (decode-and-append-txexpr x acc)
+              (cons x acc)))
+         `() in))
+
+(define (decode-and-append-txexpr x acc)
+  (let ((decoded (decode-txexpr x)))
+    (append (car decoded)
+            (append (cdr decoded) acc))))
+
+(define (allow-sidenotes-inside? tag)
+  ; Probably a better way to do this.
+  (match tag
+    ['p #f]
+    ['ol #f]
+    ['ul #f]
+    ['li #f]
+    [else #t]))
+
+;; Decode a txexpr into
+;; ((list decoded-txexpr) . (list notes-to-place-after))
+;; Which should be combined by the caller.
+(define (decode-txexpr x)
+  (define tag (get-tag x))
+  (define attrs (get-attrs x))
+  (define elems (get-elements x))
+
+  (define notes-after `())
+  (define notes-manual-pos `())
+
+  (define possibly-empty? #t)
+
+  (define decoded-elems
+    (foldr
+      (λ (x acc)
+         (define note (get-note x))
+         (define note-pos-ref (hash-ref note-pos-refs x #f))
+         (cond
+           ;; Recurse down through other txexprs.
+           [(txexpr? x)
+            (define decoded (decode-txexpr x))
+            (if (allow-sidenotes-inside? tag)
+              (begin
+                (set! possibly-empty? #f)
+                (append (car decoded)
+                        (append (cdr decoded) acc)))
+              (begin
+                (set! notes-after (append (cdr decoded)
+                                          notes-after))
+                (append (car decoded) acc)))]
+           ;; Inline note expansion.
+           [note
+             (begin
+               (unless (manual-pos? note)
+                 (set! notes-after (append (aside note)
+                                           notes-after)))
+               (append (label note)
+                       acc))]
+           ;; Explicit note def expansion.
+           [note-pos-ref
+             (define note (get-note note-pos-ref))
+             (unless note
+               (error (format "Missing note for pos: '~v'~n" note-pos-ref)))
+             (set! notes-manual-pos (append (aside note)
+                                            notes-manual-pos))
+             acc]
+           [else
+             (cons x acc)]))
+      `()
+      elems))
+
+  ; Often when we're expanding note defs from manual positions,
+  ; we'll get an aside inside a paragraph. In this case we need to remove the
+  ; asides, and place them in a list, and possibly remove the paragraph completely as well.
+  (define non-empty-txexpr
+    (if (and
+          possibly-empty?
+          (empty-elements? decoded-elems))
+      `()
+      (list (txexpr tag attrs decoded-elems))))
+
+  ;; FIXME
+  ;; Need to sort the note definitions we're inserting.
+
+  ;(define decoded-list
+    ;(append non-empty-txexpr
+            ;(sort notes-manual-pos (λ (a b)
+                                      ;a b))))
+
+
+
+  (cons decoded-list notes-after))
+
+(module+ test
+  (require rackunit)
+
+  (check-equal? (decode-sidenotes `((p "One") (p "Two")))
+                `((p "One") (p "Two")))
+  )
+
+(define (empty-elements? es)
+  (or (null? es)
+      (andmap (λ (x)
+                 (or (eq? x "")
+                     (eq? x 'br)
+                     (null? x)
+                     (equal? x '(br))))
+              es)))
+
 (define (empty-p? p)
   (define es (get-elements p))
   (or (null? es)
@@ -126,6 +237,22 @@
                      (null? x)
                      (equal? x '(br))))
               es)))
+
+(module+ test
+  (require rackunit)
+
+  (check-equal? (empty-p? `(p))
+                #t)
+  (check-equal? (empty-p? `(p ""))
+                #t)
+  (check-equal? (empty-p? `(p "" br ""))
+                #t)
+  (check-equal? (empty-p? `(p "" (br) ""))
+                #t)
+  (check-equal? (empty-p? `(p "" (div) ""))
+                #f)
+  )
+
 
 (define (decode-sidenotes-p in)
   (define notes-after-p `())
@@ -206,19 +333,4 @@
              ,@def)))
   (std-decode content))
 
-
-(module+ test
-  (require rackunit)
-
-  (check-equal? (empty-p? `(p))
-                #t)
-  (check-equal? (empty-p? `(p ""))
-                #t)
-  (check-equal? (empty-p? `(p "" br ""))
-                #t)
-  (check-equal? (empty-p? `(p "" (br) ""))
-                #t)
-  (check-equal? (empty-p? `(p "" (div) ""))
-                #f)
-  )
 

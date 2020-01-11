@@ -9,20 +9,24 @@ First sentence.◊sn{sidenote} ◊em{Second} sentence.◊sn{sidenote2}
 
 
 ◊ol{
-  ◊li{One thing}
+  ◊li{One thing◊sn{list-note}}
   ◊li{Another}
 }
 
-◊note-pos[#:top -8]{sidenote}
-◊note-pos[#:top -5]{sidenote2}
+◊note-pos[]{sidenote}
+◊note-pos[]{sidenote2}
 
 ◊ndef["sidenote"]{
-    This is my sidenote---my sidenote's amazing.
+    This is my sidenote---my sidenote's amazing. Scooby doobiy do where are yooou? There's an airplane sitting here, with a truck outside flashing it's things. Maybe he wants to go on a date?
 
     Paragraphs are fun.
 }
 ◊ndef["sidenote2"]{
     This is my OTHER sidenote... THIS is amazing.
+}
+
+◊ndef["list-note"]{
+    Sidenote in list.
 }
 
 And some more text here.
