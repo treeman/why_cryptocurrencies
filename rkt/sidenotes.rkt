@@ -38,9 +38,6 @@
 (define (get-note ref)
   (hash-ref notes ref #f))
 
-(define (is-marginnote note)
-  (eq? (note-sign note) 'marginnote))
-
 (define sidenote-counter 0)
 (define (assign-sidenote-counter)
   (set! sidenote-counter (+ sidenote-counter 1))
@@ -53,13 +50,30 @@
   (set-note ref 'marginnote))
 
 (define (set-note ref sign)
-  (define note (get-note ref))
+  (define uid (unique-note-uid ref))
+  (define note (get-note uid))
   (if note
     (begin
       (when (note-sign note)
-        (error (format "Duplicate sidenote ref '~v'~n" ref)))
+        ;; Should never happen... Hopefully.
+        (error (format "Failed to make sidenote refs unique! '~v'~n" ref)))
       (set-note-sign! note sign))
-    (hash-set! notes ref (make-note ref #:sign sign))))
+    (hash-set! notes uid (make-note ref #:sign sign))))
+
+;; Uniqueness allows multiple sidenote references for a single definition.
+(define (unique-note-uid ref #:postfix [postfix #f])
+  (define uid
+    (if postfix
+      (string->symbol (format "~a~a" ref postfix))
+      ref))
+  (define note (get-note uid))
+  (if (and note
+           (note-sign note))
+    (if postfix
+      (unique-note-uid ref #:postfix (+ postfix 1))
+      (unique-note-uid ref #:postfix 0))
+    uid))
+
 
 (define (note-def note)
   (define ref (note-ref note))
