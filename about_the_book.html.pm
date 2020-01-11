@@ -38,6 +38,8 @@ It's almost a universal phenomena. I've heard these arguments from students, co-
   ◊li{They don't do anything valuable.}
 }
 
+◊note-pos{beanies}◊note-pos{tulips}
+
 It seems everyone has an opinion but few are capable of explaining what they are or what they do differently.  Of course most aren't dismissive but simply don't understand what it's all about. Many are curious and want to learn more.
 
 With this book I hope to show how cryptocurrencies can be useful, what use cases exist and how they can help people. I'll briefly go over how they work in a more conceptual level and I might throw in some historical notes here and there. I'm not trying to make anyone a cryptocurrency fan, I just hope to bring some nuance and to help answer some common questions.

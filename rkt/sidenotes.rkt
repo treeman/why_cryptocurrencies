@@ -51,7 +51,7 @@
   (define counter (assign-sidenote-counter))
   (if note
     (begin
-      (when (note (note-sign note))
+      (when (note-sign note)
         (error (format "Duplicate sidenote ref '~v'~n" ref)))
       (set-note-sign! note counter))
     (hash-set! notes ref (make-note ref #:sign counter))))
@@ -72,10 +72,15 @@
 
 (define note-pos-refs (make-hash))
 
-(define (note-pos ref-in)
+(define (note-pos ref-in #:top [top #f])
   (define ref (ref-symbol ref-in))
   (define pos-ref (ref->pos-ref ref))
   (hash-set! note-pos-refs pos-ref ref)
+  (when top
+    (define note (get-note ref))
+    (if note
+      (set-note-top! note top)
+      (hash-set! notes ref (make-note ref #:top top))))
   pos-ref)
 
 (define (ref->pos-ref ref)
@@ -141,6 +146,9 @@
       `()
       in))
 
+  ; Often when we're expanding note defs from manual positions,
+  ; we'll get an aside inside a paragraph. In this case we need to remove the
+  ; asides, and place them in a list, and possibly remove the paragraph completely as well.
   (define non-empty-p-list
     (if (empty-p? decoded-p)
       `()
@@ -149,14 +157,6 @@
   (define decoded-list (append non-empty-p-list
                                notes-manual-pos))
 
-  ;(printf "~v~n" decoded-p)
-  ; FIXME Sometimes when we're expanding note defs from manual positions,
-  ; we'll get an aside inside a paragraph. In this case we need to remove the
-  ; asides, and place them in a list, and possibly remove the paragraph completely as well.
-  ;(cons (append decoded-p notes-manual-pos) notes-after-p))
-  ;(printf "a: ~v~n" (list decoded-p))
-  ;(printf "b: ~v~n" (append (list decoded-p) notes-manual-pos))
-  ;(cons (append (list decoded-p) notes-manual-pos) notes-after-p))
   (cons decoded-list notes-after-p))
 
 (define (manual-pos? note)
@@ -171,8 +171,19 @@
 (define (aside note)
   (define def (note-def note))
   (define counter (format "~a" (note-sign note))) ; FIXME handle marginnotes
+  (define top (note-top note))
+  (when (and top (not (number? top)))
+    (error (format "Not a number: '~a' for sidenote '~a'~n" top (note-ref note))))
+
+  (define attrs `((class "sidenote")))
+  (when top
+    (set! attrs (append attrs
+                        `((style ,(format "top:~aem" top))))))
+
   (define content
-    `((aside ((class "sidenote")) (span ((class "sidenote-number")) ,counter) ,@def)))
+    `((aside ,attrs
+             (span ((class "sidenote-number")) ,counter)
+             ,@def)))
   (std-decode content))
 
 

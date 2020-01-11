@@ -13,8 +13,8 @@ First sentence.◊sn{sidenote} ◊em{Second} sentence.◊sn{sidenote2}
   ◊li{Another}
 }
 
-◊note-pos{sidenote}
-◊note-pos{sidenote2}
+◊note-pos[#:top -8]{sidenote}
+◊note-pos[#:top -5]{sidenote2}
 
 ◊ndef["sidenote"]{
     This is my sidenote---my sidenote's amazing.
