@@ -127,7 +127,8 @@
 (define (decode-and-append-txexpr x acc)
   (let ((decoded (decode-txexpr x)))
     (append (car decoded)
-            (append (cdr decoded) acc))))
+            (append (expand-sidenote-defs (cdr decoded))
+                    acc))))
 
 (define (allow-sidenotes-inside? tag)
   ; Probably a better way to do this.
@@ -164,7 +165,8 @@
               (begin
                 (set! possibly-empty? #f)
                 (append (car decoded)
-                        (append (cdr decoded) acc)))
+                        (append (expand-sidenote-defs (cdr decoded))
+                                acc)))
               (begin
                 (set! notes-after (append (cdr decoded)
                                           notes-after))
@@ -173,8 +175,7 @@
            [note
              (begin
                (unless (manual-pos? note)
-                 (set! notes-after (append (aside note)
-                                           notes-after)))
+                 (set! notes-after (cons note notes-after)))
                (append (label note)
                        acc))]
            ;; Explicit note def expansion.
@@ -182,8 +183,7 @@
              (define note (get-note note-pos-ref))
              (unless note
                (error (format "Missing note for pos: '~v'~n" note-pos-ref)))
-             (set! notes-manual-pos (append (aside note)
-                                            notes-manual-pos))
+             (set! notes-manual-pos (cons note notes-manual-pos))
              acc]
            [else
              (cons x acc)]))
@@ -200,17 +200,21 @@
       `()
       (list (txexpr tag attrs decoded-elems))))
 
-  ;; FIXME
-  ;; Need to sort the note definitions we're inserting.
-
-  ;(define decoded-list
-    ;(append non-empty-txexpr
-            ;(sort notes-manual-pos (λ (a b)
-                                      ;a b))))
-
-
+  (define decoded-list (append non-empty-txexpr
+                               (expand-sidenote-defs notes-manual-pos)))
 
   (cons decoded-list notes-after))
+
+(define (expand-sidenote-defs notes)
+  ;; Sort as well
+  ;; FIXME do std-decode here instead?
+  (map
+    (λ (note) (aside note))
+    (sort notes
+          ;; FIXME sort for marginnote as well.
+          ;; FIXME this doesn't sort everything...?
+          (λ (a b) (< (note-sign a)
+                             (note-sign b))))))
 
 (module+ test
   (require rackunit)
@@ -331,6 +335,5 @@
     `((aside ,attrs
              ,label
              ,@def)))
-  (std-decode content))
-
+  (car (std-decode content)))
 
