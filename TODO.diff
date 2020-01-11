@@ -1,9 +1,4 @@
 Sidenote rewrite:
-- Sidenote expansion outside paragraphs doesn't work
-
-  For example in "snake oil chapter" sidenotes are placed inside list items
-  Could possibly exist inside figcaptions as well?
-
 - Update "how to use" with new sidenotes behaviour
 - Go through all existing chapters and adjust sidenotes
 - Styling for narrow sidenotes

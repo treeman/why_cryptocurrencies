@@ -5,35 +5,17 @@
 ◊(define-meta updated "2019-04-03T19:59:59+02:00")
 ◊(define-meta uuid "581c4917-d862-49cb-9d01-495a9106081b")
 
-First sentence.◊sn{sidenote} ◊em{Second} sentence.◊sn{sidenote2}
-
+One.◊sn{1st} Two.◊sn{2nd} Three.◊sn{3rd}
 
 ◊ol{
-  ◊li{One thing◊sn{list-note}}
-  ◊li{Another}
+  ◊li{a◊sn{list-note}}
+  ◊li{b}
 }
 
-◊note-pos[]{sidenote2}
-◊note-pos[]{sidenote}
+◊note-pos{3rd}
 
-◊ndef["sidenote"]{
-    This is my sidenote---my sidenote's amazing. Scooby doobiy do where are yooou? There's an airplane sitting here, with a truck outside flashing it's things. Maybe he wants to go on a date?
+◊ndef["1st"]{ 1st }
+◊ndef["2nd"]{ 2nd }
+◊ndef["3rd"]{ 3rd }
+◊ndef["list-note"]{ In list. }
 
-    Paragraphs are fun.
-}
-◊ndef["sidenote2"]{
-    This is my OTHER sidenote... THIS is amazing.
-}
-
-◊ndef["list-note"]{
-    Sidenote in list.
-}
-
-And some more text here.
-
-Just to make sure we're not inserting paragraphs or breaks unnecessarily.
-
-
-◊img[#:src "images/give_cash.png"]{
-    Cash is given directly from hand to hand.
-}

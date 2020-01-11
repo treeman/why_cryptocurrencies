@@ -98,40 +98,15 @@
 (define (ref->pos-ref ref)
   (string->symbol (format "~a-pos" (symbol->string ref))))
 
-
-;; Decoding
-(define (decode-sidenotes-old in)
-  (define (paragraph? x)
-    (and (txexpr? x)
-         (eq? (get-tag x) 'p)))
-  (cond
-    [(list? in)
-     (foldr (λ (x acc)
-               (if (paragraph? x)
-                 (let ((decodeed (decode-sidenotes-p x)))
-                   (append (car decodeed)
-                         (append (cdr decodeed) acc)))
-                 (cons (decode-sidenotes x) acc)))
-            `()
-            in)]
-    [else
-      in]))
-
 (define (decode-sidenotes in)
-  (printf "~v~n" in)
-  (define res
-    (foldr (λ (x acc)
-              (if (txexpr? x)
-                (decode-and-append-txexpr x acc)
-                (cons x acc)))
-           `() in))
-  ;(printf "~v~n" res)
-  res
-  )
+  (foldr (λ (x acc)
+            (if (txexpr? x)
+              (decode-and-append-txexpr x acc)
+              (cons x acc)))
+         `() in))
 
 (define (decode-and-append-txexpr x acc)
   (let ((decoded (decode-txexpr x)))
-    (printf "decoded: ~v~n" decoded)
     (append (car decoded)
             (append (expand-sidenote-defs (cdr decoded))
                     acc))))
@@ -153,14 +128,12 @@
   (define decoded-elems
     (foldr
       (λ (x acc)
-         (printf "x ~v~n" x)
          (define note (get-note x))
          (define note-pos-ref (hash-ref note-pos-refs x #f))
          (cond
            ;; Recurse down through other txexprs.
            [(txexpr? x)
             (define decoded (decode-txexpr x))
-            (printf "  decoded ~v~n" decoded)
             (if (allow-sidenotes-inside? tag)
               (begin
                 (append (car decoded)
@@ -185,7 +158,6 @@
              (set! notes-manual-pos (cons note notes-manual-pos))
              acc]
            [else
-             (printf "  regular ~n")
              (cons x acc)]))
       `()
       elems))
@@ -236,12 +208,12 @@
 (module+ test
   (require rackunit)
 
-  ;(check-equal? (decode-txexpr `(p "One")) `(((p "One"))))
-  ;(check-equal? (decode-txexpr `(img (src "/img.png")))
-                ;`(((img (src "/img.png")))))
+  (check-equal? (decode-txexpr `(p "One")) `(((p "One"))))
+  (check-equal? (decode-txexpr `(img (src "/img.png")))
+                `(((img (src "/img.png")))))
 
-  ;(check-equal? (decode-sidenotes `((p "One") (p "Two")))
-                ;`((p "One") (p "Two")))
+  (check-equal? (decode-sidenotes `((p "One") (p "Two")))
+                `((p "One") (p "Two")))
   (check-equal? (decode-sidenotes
                   '((figure (img ((src "/img.png"))) (figcaption "Cap"))))
                 '((figure (img ((src "/img.png"))) (figcaption "Cap"))))
@@ -256,74 +228,20 @@
                      (equal? x '(br))))
               es)))
 
-(define (empty-p? p)
-  (define es (get-elements p))
-  (or (null? es)
-      (andmap (λ (x)
-                 (or (eq? x "")
-                     (eq? x 'br)
-                     (null? x)
-                     (equal? x '(br))))
-              es)))
-
 (module+ test
   (require rackunit)
 
-  (check-equal? (empty-p? `(p))
+  (check-equal? (empty-elements? `())
                 #t)
-  (check-equal? (empty-p? `(p ""))
+  (check-equal? (empty-elements? `(""))
                 #t)
-  (check-equal? (empty-p? `(p "" br ""))
+  (check-equal? (empty-elements? `("" br ""))
                 #t)
-  (check-equal? (empty-p? `(p "" (br) ""))
+  (check-equal? (empty-elements? `("" (br) ""))
                 #t)
-  (check-equal? (empty-p? `(p "" (div) ""))
+  (check-equal? (empty-elements? `("" (div) ""))
                 #f)
   )
-
-
-(define (decode-sidenotes-p in)
-  (define notes-after-p `())
-  (define notes-manual-pos `())
-  (define decoded-p
-    (foldr
-      (λ (x acc)
-         (define note (get-note x))
-         (define note-pos-ref (hash-ref note-pos-refs x #f))
-         (cond
-           ;; Inline note expansion.
-           [note
-             (begin
-               (unless (manual-pos? note)
-                 (set! notes-after-p (append (aside note)
-                                             notes-after-p)))
-               (append (label note)
-                       acc))]
-           ;; Explicit note def expansion.
-           [note-pos-ref
-             (define note (get-note note-pos-ref))
-             (unless note
-               (error (format "Missing note for pos: '~v'~n" note-pos-ref)))
-             (set! notes-manual-pos (append (aside note)
-                                            notes-manual-pos))
-             acc]
-           [else
-             (cons x acc)]))
-      `()
-      in))
-
-  ; Often when we're expanding note defs from manual positions,
-  ; we'll get an aside inside a paragraph. In this case we need to remove the
-  ; asides, and place them in a list, and possibly remove the paragraph completely as well.
-  (define non-empty-p-list
-    (if (empty-p? decoded-p)
-      `()
-      (list decoded-p)))
-
-  (define decoded-list (append non-empty-p-list
-                               notes-manual-pos))
-
-  (cons decoded-list notes-after-p))
 
 (define (manual-pos? note)
   (define ref (note-ref note))
@@ -358,4 +276,50 @@
   `(aside ,attrs
           ,label
           ,@def))
+
+;; A larger test to test the sidenote placement.
+(module+ test
+  (require rackunit)
+
+  ;; These tags are called when the chapter is parsed, and references are inserted in-place.
+  (define 1st (sn "1st"))
+  (define 2nd (sn "2nd"))
+  (define 3rd (sn "3rd"))
+  (define 3rd-pos (note-pos "3rd"))
+  (define list-note (sn "list-note"))
+
+  (ndef "1st" "1st")
+  (ndef "2nd" "2nd")
+  (ndef "3rd" "3rd")
+  (ndef "list-note" "In list.")
+
+  (define input
+    `((p "One." ,1st " Two." ,2nd " Three." ,3rd)
+      (ol
+        (li "a" ,list-note)
+        (li "b"))
+      (p ,3rd-pos)))
+
+  ;; Maybe there could be a better way to do html matching.
+  ;; Like including an "ignore" tag to match only against the most important things,
+  ;; but that's too much work for me now. Meh.
+  (define expected
+    `((p "One."
+         (span ((class "sidenote-label")) "1")
+         " Two." (span ((class "sidenote-label")) "2")
+         " Three." (span ((class "sidenote-label")) "3"))
+      (aside ((class "sidenote")) (span ((class "sidenote-number")) "1")
+             "1st")
+      (aside ((class "sidenote")) (span ((class "sidenote-number")) "2")
+             "2nd")
+      (ol
+        (li "a" (span ((class "sidenote-label")) "4"))
+        (li "b"))
+      (aside ((class "sidenote")) (span ((class "sidenote-number")) "4")
+             "In list.")
+      (aside ((class "sidenote")) (span ((class "sidenote-number")) "3")
+             "3rd")))
+
+  (check-equal? (decode-sidenotes input) expected)
+  )
 
