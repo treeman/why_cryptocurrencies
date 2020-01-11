@@ -13,8 +13,8 @@ First sentence.◊sn{sidenote} ◊em{Second} sentence.◊sn{sidenote2}
   ◊li{Another}
 }
 
-◊note-pos[]{sidenote}
 ◊note-pos[]{sidenote2}
+◊note-pos[]{sidenote}
 
 ◊ndef["sidenote"]{
     This is my sidenote---my sidenote's amazing. Scooby doobiy do where are yooou? There's an airplane sitting here, with a truck outside flashing it's things. Maybe he wants to go on a date?
@@ -32,3 +32,8 @@ First sentence.◊sn{sidenote} ◊em{Second} sentence.◊sn{sidenote2}
 And some more text here.
 
 Just to make sure we're not inserting paragraphs or breaks unnecessarily.
+
+
+◊img[#:src "images/give_cash.png"]{
+    Cash is given directly from hand to hand.
+}

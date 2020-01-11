@@ -118,26 +118,23 @@
       in]))
 
 (define (decode-sidenotes in)
-  (foldr (λ (x acc)
-            (if (txexpr? x)
-              (decode-and-append-txexpr x acc)
-              (cons x acc)))
-         `() in))
+  (printf "~v~n" in)
+  (define res
+    (foldr (λ (x acc)
+              (if (txexpr? x)
+                (decode-and-append-txexpr x acc)
+                (cons x acc)))
+           `() in))
+  ;(printf "~v~n" res)
+  res
+  )
 
 (define (decode-and-append-txexpr x acc)
   (let ((decoded (decode-txexpr x)))
+    (printf "decoded: ~v~n" decoded)
     (append (car decoded)
             (append (expand-sidenote-defs (cdr decoded))
                     acc))))
-
-(define (allow-sidenotes-inside? tag)
-  ; Probably a better way to do this.
-  (match tag
-    ['p #f]
-    ['ol #f]
-    ['ul #f]
-    ['li #f]
-    [else #t]))
 
 ;; Decode a txexpr into
 ;; ((list decoded-txexpr) . (list notes-to-place-after))
@@ -147,23 +144,25 @@
   (define attrs (get-attrs x))
   (define elems (get-elements x))
 
+  (define (allow-sidenotes-inside? tag)
+    (not (member tag `(p ol ul li blockquote))))
+
   (define notes-after `())
   (define notes-manual-pos `())
-
-  (define possibly-empty? #t)
 
   (define decoded-elems
     (foldr
       (λ (x acc)
+         (printf "x ~v~n" x)
          (define note (get-note x))
          (define note-pos-ref (hash-ref note-pos-refs x #f))
          (cond
            ;; Recurse down through other txexprs.
            [(txexpr? x)
             (define decoded (decode-txexpr x))
+            (printf "  decoded ~v~n" decoded)
             (if (allow-sidenotes-inside? tag)
               (begin
-                (set! possibly-empty? #f)
                 (append (car decoded)
                         (append (expand-sidenote-defs (cdr decoded))
                                 acc)))
@@ -186,41 +185,66 @@
              (set! notes-manual-pos (cons note notes-manual-pos))
              acc]
            [else
+             (printf "  regular ~n")
              (cons x acc)]))
       `()
       elems))
 
-  ; Often when we're expanding note defs from manual positions,
-  ; we'll get an aside inside a paragraph. In this case we need to remove the
-  ; asides, and place them in a list, and possibly remove the paragraph completely as well.
+  ;; Often when we're expanding note defs from manual positions,
+  ;; we'll get an aside inside a paragraph. In this case we need to remove the
+  ;; asides, and place them in a list, and possibly remove the paragraph completely as well.
   (define non-empty-txexpr
     (if (and
-          possibly-empty?
+          ;; Technically I don't think we need all these checks,
+          ;; but I'm taking a better safe than sorry approach to not accidentally muck
+          ;; up some chapter somewhere.
+          (eq? tag 'p)
+          (not (null? notes-manual-pos))
           (empty-elements? decoded-elems))
       `()
       (list (txexpr tag attrs decoded-elems))))
 
   (define decoded-list (append non-empty-txexpr
-                               (expand-sidenote-defs notes-manual-pos)))
+                               ;; Manually positioned notes should be placed in our
+                               ;; order
+                               (expand-sidenote-defs #:sort #f
+                                                     notes-manual-pos)))
 
   (cons decoded-list notes-after))
 
-(define (expand-sidenote-defs notes)
-  ;; Sort as well
-  ;; FIXME do std-decode here instead?
-  (map
-    (λ (note) (aside note))
-    (sort notes
-          ;; FIXME sort for marginnote as well.
-          ;; FIXME this doesn't sort everything...?
-          (λ (a b) (< (note-sign a)
-                             (note-sign b))))))
+(define (expand-sidenote-defs #:sort [sort? #t] notes)
+  (std-decode
+    (map aside
+         (if sort?
+           (sort notes note<)
+           notes))))
+
+(define (note< a b)
+  (define a-sign (note-sign a))
+  (define b-sign (note-sign b))
+  (cond
+    [(eq? a-sign b-sign)
+     (string<? (symbol->string (note-ref a)
+                               (note-ref b)))]
+    [(eq? a-sign 'marginnote)
+     a-sign]
+    [(eq? b-sign 'marginnote)
+     b-sign]
+    [else
+      (< a-sign b-sign)]))
 
 (module+ test
   (require rackunit)
 
-  (check-equal? (decode-sidenotes `((p "One") (p "Two")))
-                `((p "One") (p "Two")))
+  ;(check-equal? (decode-txexpr `(p "One")) `(((p "One"))))
+  ;(check-equal? (decode-txexpr `(img (src "/img.png")))
+                ;`(((img (src "/img.png")))))
+
+  ;(check-equal? (decode-sidenotes `((p "One") (p "Two")))
+                ;`((p "One") (p "Two")))
+  (check-equal? (decode-sidenotes
+                  '((figure (img ((src "/img.png"))) (figcaption "Cap"))))
+                '((figure (img ((src "/img.png"))) (figcaption "Cap"))))
   )
 
 (define (empty-elements? es)
@@ -331,9 +355,7 @@
       ""
       `(span ((class "sidenote-number")) ,(format "~a" sign))))
 
-  (define content
-    `((aside ,attrs
-             ,label
-             ,@def)))
-  (car (std-decode content)))
+  `(aside ,attrs
+          ,label
+          ,@def))
 

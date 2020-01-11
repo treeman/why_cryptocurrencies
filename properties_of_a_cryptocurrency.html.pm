@@ -119,7 +119,7 @@ I sure don't know who's right. It's probably best to be skeptical of both camps-
     acquisition of skills requires a regular environment, an adequate opportunity to practice, and rapid and unequivocal feedback about the correctness of thoughts and actions. ◊mn{tfas}
 }
 
-◊note-pos{tfas}
+◊;note-pos{tfas}
 
 Either way it's not an argument against cryptocurrencies in general as they can be made either inflationary or deflationary (although all I know of becomes deflationary).
 
