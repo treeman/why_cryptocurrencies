@@ -60,6 +60,9 @@ It uses ◊link[public-key-cryptography]{◊em{public-key cryptography}} which a
     If the history of cryptography interests you I can also recommend the book "The Code-Breakers" by David Kahn. You can enjoy it even without much math knowledge.
 }
 
+◊note-pos{private-key}
+◊note-pos{pubkey}
+
 
 ◊subhead{Copying a coin & double spending}
 

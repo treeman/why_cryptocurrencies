@@ -1,3 +1,14 @@
+Sidenote rewrite:
+- Sidenote expansion outside paragraphs doesn't work
+
+  For example in "snake oil chapter" sidenotes are placed inside list items
+  Could possibly exist inside figcaptions as well?
+
+- Update "how to use" with new sidenotes behaviour
+- Go through all existing chapters and adjust sidenotes
+- Styling for narrow sidenotes
+
+
 Summarize better:
 + What is a cryptocurrency?
 + How do cryptocurrencies work?
@@ -59,11 +70,6 @@ Additional image ideas:
   Extensions:
 
 Code:
-- Remove .snp, we can use asides now!
-- Custom widescreen top offset?
-- Fix paragraph styling in sidenotes with numbers
-- How to handle marginnotes now? -Remove-??
-- splice-me already exists as @!
 - Better link handling
 
 Style:

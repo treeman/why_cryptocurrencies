@@ -38,7 +38,8 @@ It's almost a universal phenomena. I've heard these arguments from students, co-
   ◊li{They don't do anything valuable.}
 }
 
-◊note-pos{beanies}◊note-pos{tulips}
+◊note-pos[#:top -9]{beanies}
+◊note-pos[#:top -9]{tulips}
 
 It seems everyone has an opinion but few are capable of explaining what they are or what they do differently.  Of course most aren't dismissive but simply don't understand what it's all about. Many are curious and want to learn more.
 

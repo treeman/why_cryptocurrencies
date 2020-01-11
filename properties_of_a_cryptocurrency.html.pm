@@ -119,6 +119,8 @@ I sure don't know who's right. It's probably best to be skeptical of both camps-
     acquisition of skills requires a regular environment, an adequate opportunity to practice, and rapid and unequivocal feedback about the correctness of thoughts and actions. ◊mn{tfas}
 }
 
+◊note-pos{tfas}
+
 Either way it's not an argument against cryptocurrencies in general as they can be made either inflationary or deflationary (although all I know of becomes deflationary).
 
 ◊ndef["tfas"]{
@@ -160,7 +162,7 @@ It's also easy to split coins into small parts.◊sn{satoshis} In fact you don't
 
 ◊subhead{Borderless}
 
-Cryptocurrencies are inherently global. They are usable wherever you are as long as you have an internet connection. You can even send to wallets which are offline◊sn{cold-storage} but to retrieve them you need to access the internet. Technically you could do transfers completely offline---on paper---but they would be unconfirmed and might not be valid when you do want to use them.
+Cryptocurrencies are inherently global. They are usable wherever you are as long as you have an internet connection. You can even send to wallets which are offline◊sn[#:top -4]{cold-storage} but to retrieve them you need to access the internet. Technically you could do transfers completely offline---on paper---but they would be unconfirmed and might not be valid when you do want to use them.
 
 ◊ndef["cold-storage"]{
     Offline wallets with no computer contact is called cold storage. It's an excellent way to store large amounts you're not planning to use for some time.

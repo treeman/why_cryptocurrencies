@@ -47,14 +47,19 @@
   sidenote-counter)
 
 (define (set-sidenote ref)
+  (set-note ref (assign-sidenote-counter)))
+
+(define (set-marginnote ref)
+  (set-note ref 'marginnote))
+
+(define (set-note ref sign)
   (define note (get-note ref))
-  (define counter (assign-sidenote-counter))
   (if note
     (begin
       (when (note-sign note)
         (error (format "Duplicate sidenote ref '~v'~n" ref)))
-      (set-note-sign! note counter))
-    (hash-set! notes ref (make-note ref #:sign counter))))
+      (set-note-sign! note sign))
+    (hash-set! notes ref (make-note ref #:sign sign))))
 
 (define (note-def note)
   (define ref (note-ref note))
@@ -62,12 +67,16 @@
   (unless def (error (format "missing ref '~s'" ref)))
   def)
 
-(define (mn ref-in)
-  "")
-  ;(sn ref-in))
-(define (sn ref-in)
+(define (mn ref-in #:top [top #f])
+  (define ref (ref-symbol ref-in))
+  (set-marginnote ref)
+  (set-note-top ref top)
+  ref)
+
+(define (sn ref-in #:top [top #f])
   (define ref (ref-symbol ref-in))
   (set-sidenote ref)
+  (set-note-top ref top)
   ref)
 
 (define note-pos-refs (make-hash))
@@ -76,12 +85,15 @@
   (define ref (ref-symbol ref-in))
   (define pos-ref (ref->pos-ref ref))
   (hash-set! note-pos-refs pos-ref ref)
+  (set-note-top ref top)
+  pos-ref)
+
+(define (set-note-top ref top)
   (when top
     (define note (get-note ref))
     (if note
       (set-note-top! note top)
-      (hash-set! notes ref (make-note ref #:top top))))
-  pos-ref)
+      (hash-set! notes ref (make-note ref #:top top)))))
 
 (define (ref->pos-ref ref)
   (string->symbol (format "~a-pos" (symbol->string ref))))
@@ -137,7 +149,6 @@
              (define note (get-note note-pos-ref))
              (unless note
                (error (format "Missing note for pos: '~v'~n" note-pos-ref)))
-             ;(append (aside note) acc)]
              (set! notes-manual-pos (append (aside note)
                                             notes-manual-pos))
              acc]
@@ -165,12 +176,15 @@
   (hash-has-key? note-pos-refs pos-ref))
 
 (define (label note)
-  (define counter (format "~a" (note-sign note))) ; FIXME handle marginnotes
-  `((span ((class "sidenote-label")) ,counter)))
+  (define sign (note-sign note))
+  (define label
+    (if (eq? sign 'marginnote)
+      ""
+      (format "~a" sign)))
+  `((span ((class "sidenote-label")) ,label)))
 
 (define (aside note)
   (define def (note-def note))
-  (define counter (format "~a" (note-sign note))) ; FIXME handle marginnotes
   (define top (note-top note))
   (when (and top (not (number? top)))
     (error (format "Not a number: '~a' for sidenote '~a'~n" top (note-ref note))))
@@ -180,9 +194,15 @@
     (set! attrs (append attrs
                         `((style ,(format "top:~aem" top))))))
 
+  (define sign (note-sign note))
+  (define label
+    (if (eq? sign 'marginnote)
+      ""
+      `(span ((class "sidenote-number")) ,(format "~a" sign))))
+
   (define content
     `((aside ,attrs
-             (span ((class "sidenote-number")) ,counter)
+             ,label
              ,@def)))
   (std-decode content))
 
