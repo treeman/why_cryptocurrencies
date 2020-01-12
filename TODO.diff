@@ -4,6 +4,8 @@ Sidenote rewrite:
   Up to and including Undesirable businesses
 - Update date for -all- chapters
 + Allow feed to display everything again
+- Better way to refer to book sources for paragraphs
+- Use <sup> for note numbers?
 
 Summarize better:
 + What is a cryptocurrency?
@@ -74,6 +76,7 @@ Style:
 Markup
 + Use <cite> when refering to books, or things with titles
   https://developer.mozilla.org/en-US/docs/Web/HTML/Element/cite
+  See the financial crisis, where we refer to things inside text.
 + Use <time> in quotes (and other?)
 + Use <caption> for <table>? Instead of placing it in a figure with caption?
 

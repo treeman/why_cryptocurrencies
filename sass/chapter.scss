@@ -630,9 +630,12 @@ table.legal-moral {
     border-bottom: 1px dashed $body-hr-color;
 }
 
+.wikileaks .entry:not(:first-child) {
+    margin-top: 1.5em;
+}
+
 .wikileaks .entry {
     width: 100%;
-    margin-bottom: 1em;
 
     h3 {
         margin-top: 0;

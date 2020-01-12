@@ -15,28 +15,31 @@
     }
 }
 
-In the ◊link[freezing-chapter]{last} two ◊link[undesirable-chapter]{chapters} we looked at the issues with digital payments, but when you think about donations you wouldn't assume they have the same problems as payments have. For example when donating money to a charity, like ◊link[charity-water]{Charity Water}, they don't have to be worried of ◊link[charge-back-fraud]{charge back fraud} because you're voluntarily giving them money.◊sn{voluntary} But the same problem with third-party censorship is relevant here as well.
-
-◊ndef["voluntary"]{
-    However even charities can be prosecuted for not fulfilling their promises, an experience the founder of Charity Water writes in his book ◊link[thirst-book]{Thirst}. So charge backs isn't a completely irrelevant worry.
-}
+In the ◊link[freezing-chapter]{last} two ◊link[undesirable-chapter]{chapters} we looked at the issues with digital payments, but when you think about donations you wouldn't assume they have the same problems as payments have. For example when donating money to a charity, like ◊link[charity-water]{Charity Water}, they don't have to be worried of ◊link[charge-back-fraud]{charge back fraud} because you're voluntarily giving them money.◊sn{charity-fees} But the same problem with third-party censorship is relevant here as well.◊sn{voluntary}
 
 ◊(define thirst-book "https://www.charitywater.org/thirst")
-
-◊ndef["charity-fees"]{
-    Most payment processors have lower fees for charities, but they're still much more expensive than the ◊link[cheaper-faster]{low cryptocurrency fees}.
-}
-
 ◊(define cheaper-faster "/cheaper_faster.html#cryptocurrency-fees")
+
 
 Imagine a country doing something really horrible, like ◊link[killing-fields]{purging intellectuals and political opponents}, that would put the government in a bad light. Journalists trying to report on this event may find it difficult or impossible to accept donations to continue their work. A payment processor (which are necessary for digital donations)---perhaps under pressure from the government---might block donations or break the journalistic anonymity,◊sn{crypto-privacy} making donations for truth-seeking journalists very difficult or outright dangerous.
 
+◊note-pos[#:top -17]{charity-fees}
+◊note-pos[#:top -10]{voluntary}
+◊note-pos{crypto-privacy}
+
+◊ndef["voluntary"]{
+    However even charities can be prosecuted for not fulfilling their promises, an experience the founder of Charity Water writes in his book ◊link[thirst-book]{Thirst}. So charge back fraud isn't a completely irrelevant worry.
+}
+
+◊ndef["charity-fees"]{
+    Most payment processors have lower fees for charities, but they're still more expensive than the ◊link[cheaper-faster]{low cryptocurrency fees}.
+}
+
 ◊ndef["crypto-privacy"]{
-    Cryptocurrencies also ◊link[crypto-anonymous]{gives better privacy} than other digital payment systems.
+    Some cryptocurrencies also ◊link[crypto-anonymous]{give better privacy} than other digital payment systems.
 }
 
 ◊(define crypto-anonymous "/properties_of_a_cryptocurrency.html#anonymous")
-
 ◊(define killing-fields "https://allthatsinteresting.com/cambodian-genocide")
 
 ◊subhead{Censorship is real}
@@ -72,6 +75,10 @@ China has gone to great lengths to cover up these events. Twitter is censored by
 
 Censorship is a ◊link[censorship-global]{global problem} and is a big problem in for example Eritrea, North Korea, Saudi Arabia and Ethiopia. A more modern problem is manipulation on social media, with the goal to control public opinion. One way is to use trolls (fake user accounts) and another is to ◊link[reddit-censorship]{censor opinions} that don't fit your narrative.
 
+◊note-pos[#:top -33]{hong-kong}
+◊note-pos[#:top -14]{china-censorship}
+◊note-pos{reeducation}
+
 ◊(define reddit-censorship "https://www.breitbart.com/tech/2016/06/12/reddit-topics-censored-users-banned-linking-orlando-shootings-islam/")
 
 ◊(define censorship-global "https://cpj.org/2015/04/10-most-censored-countries.php")
@@ -99,6 +106,8 @@ Censorship is a ◊link[censorship-global]{global problem} and is a big problem 
 I will bring up the ◊link[assange-events]{events surrounding Julian Assange}, because they give context and might be relevant to the story of government abuse, but it's not about him or any other person in particular. Even if Julian Assange is guilty of rape it does not change the importance of the leaks or WikiLeaks as a concept, which goes above individuals.◊sn{association-fallacy}
 
 This is ◊strong{not} a glorification of WikiLeaks---they have ◊link[wikileaks-immoral]{endangered individuals} via their leaks. Instead I hope to show that uncensorable donations are important, because exposing government atrocities can lead to your donations being blocked (and government atrocities should be exposed).
+
+◊note-pos[#:top -10]{association-fallacy}
 
 ◊ndef["association-fallacy"]{
     Trying to discredit WikiLeaks by discrediting Assange is ◊em{◊link[association-fallacy]{guilt by association}}---a logical fallacy.
@@ -144,7 +153,7 @@ This is ◊strong{not} a glorification of WikiLeaks---they have ◊link[wikileak
 
         WikiLeaks uploaded a video of a Baghdad helicopter attack in July 12, 2007 with the title "Collateral murder". It's a video of how an attack helicopter kills a dozen (innocent) people, including two Reuters news staff.
 
-        Here are some ◊link[collateral-murder-transcripts]{transcripts}◊sn{timestamps} of the ◊link[collateral-murder-full]{full video}:
+        Here are some ◊link[collateral-murder-transcripts]{transcripts}◊mn{timestamps} of the ◊link[collateral-murder-full]{full video}:
 
         ◊ndef["timestamps"]{
             At 2019-08-28 the transcript timestamps are slightly off compared to the full video, I've tried to match them up better.
@@ -189,6 +198,8 @@ This is ◊strong{not} a glorification of WikiLeaks---they have ◊link[wikileak
 
         }
 
+        ◊note-pos[#:top -44]{timestamps}
+
 
 
         ◊; https://www.theguardian.com/world/2010/apr/05/wikileaks-us-army-iraq-attack
@@ -203,6 +214,16 @@ This is ◊strong{not} a glorification of WikiLeaks---they have ◊link[wikileak
 
         In 2006, a group of U.S. soldiers entered a house in Iraq where they executed at least 10 people (9 civilians), including an infant and four other children---all five years or younger---and elderly women. They then called in an airstrike to cover up the evidence, but postmortems showed they had been handcuffed and shot in the head.◊sn{children-bodies}
 
+        We're quick to call them terrorists, but viewed from another angle the U.S. soldiers are the terrorists. Just imagine foreign soldiers entering your neighbour's house and executing everyone there, including the children...
+
+        The soldiers were cleared of any wrongdoing by the U.S. military, after the military initially denied the events happened at all.
+
+        ◊qt[#:author "Unknown"]{
+            One man's terrorist is another man's freedom fighter
+        }
+
+        ◊note-pos[#:top -18]{children-bodies}
+
         ◊ndef["children-bodies"]{
             Even the infant was shot in the head.
 
@@ -210,14 +231,6 @@ This is ◊strong{not} a glorification of WikiLeaks---they have ◊link[wikileak
 
             ◊; Other:
             ◊; http://alexanderhiggins.com/wikileaks-cable-suggests-the-us-executed-handcuffed-women-and-children-under-5-including-an-infant/
-        }
-
-        We're quick to call them terrorists, but viewed from another angle the U.S. soldiers are the terrorists. Just imagine foreign soldiers entering your neighbour's house and executing everyone there, including the children...
-
-        The soldiers were cleared of any wrongdoing by the U.S. military, after the military initially denied the events happened at all.
-
-        ◊qt[#:author "Unknown"]{
-            One man's terrorist is another man's freedom fighter
         }
 
       }
@@ -234,6 +247,8 @@ This is ◊strong{not} a glorification of WikiLeaks---they have ◊link[wikileak
           66 thousand innocent people dead in six years. That's like 22 World Trade center attacks (where 2,977 people died)---more than three a year. Or 31 innocent people dead every day during the six years.
       }
 
+      ◊note-pos[#:top -7]{wtc}
+
     }
 
     Countless of civilians killed---while soldiers are laughing---and systematic cover-ups to hide it all.◊sn{purpose}
@@ -244,7 +259,9 @@ This is ◊strong{not} a glorification of WikiLeaks---they have ◊link[wikileak
         The value of non-American lives in this war is ridiculously low.
     }
 
-    To me Chelsea Manning is a hero for bringing this to light. Yet how was she thanked? Like all whistleblowers she was made an example of: she was court-martialed and sentenced to 35 years in prison.
+    To me Chelsea Manning is a hero for bringing this to light. Yet how was she thanked? Like all whistleblowers she was made an example of; she was court-martialed and sentenced to 35 years in prison.
+
+    ◊note-pos[#:top -8]{purpose}
 
 
 
@@ -271,6 +288,8 @@ This is ◊strong{not} a glorification of WikiLeaks---they have ◊link[wikileak
     }
 
     In November, when Assange had already traveled to London (the charges were dropped to be picked up again after he left Sweden), an ◊link[assange-international-arrest]{international arrest} warrant is issued by the Swedish police via Interpol.
+
+    ◊note-pos[#:top -10]{truth-fiction}
   }
 
 
@@ -288,6 +307,8 @@ This is ◊strong{not} a glorification of WikiLeaks---they have ◊link[wikileak
     }
 
     Even if you don't like conspiracy theories, it's not a stretch to say the U.S. government put pressure on PayPal in their effort to shut down WikiLeaks.
+
+    ◊note-pos[#:top -13]{paypal}
 
     ◊;https://wikileaks.org/PayPal-freezes-WikiLeaks-donations.html
     ◊;https://www.wired.com/2010/12/paypal-wikileaks/
@@ -360,6 +381,8 @@ This is ◊strong{not} a glorification of WikiLeaks---they have ◊link[wikileak
 
     Assange was ◊link[assange-asylum-granted]{granted asylum} August 16th and his stay at the embassy would be longer than anyone would have thought.
 
+    ◊note-pos[#:top -8]{sweden-extradition}
+
     ◊ndef["sweden-extradition"]{
         The fears of Sweden extraditing Assange to the U.S. might not be unfounded. In 2001 the ◊link[repatriation-sweden]{Swedish police watched CIA forcefully detain} two Egyptian refugees on Swedish soil, later facing torture in Eqyptian prison.
     }
@@ -389,6 +412,8 @@ This is ◊strong{not} a glorification of WikiLeaks---they have ◊link[wikileak
     While he was immediately ◊link[assange-indicted]{indicted on 17 counts of violating the Espionage Act} by the U.S. his release was news for the Swedish prosecutors. When Assange first sought asylum many people said it was only to avoid the Swedish charges and he used fears of the U.S. as a pretext, but in hindsight the fears might've been real.
 
     At the moment, the Swedish investigation is open once again and Assange is waiting for the U.K. to rule on extradition requests from both Sweden and the U.S.
+
+    ◊note-pos[#:top -16]{second-arrest}
 
     ◊ndef["second-arrest"]{
         Confusingly he was actually arrested twice. First for ◊link[assange-arrest-uk]{skipping a U.K. court warrant} and a second time at the ◊link[assange-arrest-us]{request of the U.S.} seeking his extradition.
@@ -526,6 +551,9 @@ Unfortunately it seems like a human thing to try to hide your misdeeds instead o
     No mom, it wasn't me!
 }
 
+◊note-pos[#:top -31]{dan-hitler}
+◊note-pos[#:top -15]{chernobyl-TV}
+
 ◊(define chernobyl-accident "https://www.world-nuclear.org/information-library/safety-and-security/safety-of-plants/chernobyl-accident.aspx")
 ◊(define chernobyl-TV "https://www.imdb.com/title/tt7366338/")
 ◊(define rel-tiananmen "#censorship-is-real")
@@ -562,6 +590,8 @@ But if we practice collective 'forgettance', where we all pretend these never ha
 While the U.S. government was able to coerce payment processors and banks to drop WikiLeaks, they could never prevent Bitcoin donations. Even China, with the world's largest internet censorship, cannot censor cryptocurrency transactions.◊sn{china-mining} The best they can do is force some exchanges to cooperate---but that can be worked around, for example by selling bitcoins in person for cash or by avoiding fiat altogether.
 
 It doesn't matter who you are or where you are, you can always accept donations digitally via cryptocurrencies. Even the most powerful nations in the world cannot prevent them, which is something unique for cryptocurrencies.
+
+◊note-pos[#:top -14]{china-mining}
 
 ◊ndef["china-mining"]{
     China does have most of the Bitcoin hashrate inside their country. They could theoretically take majority control of Bitcoin's hashrate and censor transactions that way (this is the worst attack possible against a cryptocurrency, called a ◊link[51-attack]{◊em{51% attack}}). If this happened the Bitcoin community would most likely recognize it as an attack and a chain split would happen, making existing miners worthless.
