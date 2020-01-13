@@ -27,6 +27,8 @@ The first thing we can observe is that it's possible to insert data into the led
 
         For example Satoshi ◊link[block-0]{left a message} in the first ever Bitcoin block:◊sn{coinbase-data}
 
+        ◊note-pos{coinbase-data}
+
         ◊ndef["coinbase-data"]{
             Satoshi embedded his message in the "Coinbase data" entry of the block. Other miners usually include the name of their mining pool. Such as in ◊link[coinbase-ex]{this block} the coinbase data says "Mined by AntPool48".
 
@@ -52,6 +54,8 @@ The first thing we can observe is that it's possible to insert data into the led
         ◊(gen-message "Hello")
 
         To produce the message "Hello".
+
+        ◊note-pos[#:top -16]{control-address}
 
         ◊ndef["control-address"]{
             To control your address you can keep generating a new until you find one you like. If you want a ◊em{vanity address} for personal use you can generate one, for example one starting with "1Crypto". Keep in mind that finding an address with 6 characters or more can ◊link[vanitygen]{take a long time}.
@@ -117,6 +121,9 @@ The scripting language in Bitcoin is fairly limited but the ◊link[solidity]{sc
 }
 
 Now it doesn't matter if you know what a script is or how it works, just remember this: cryptocurrencies can do more than just transfer coins from one address to another. We'll go into some of the examples in the following chapters.
+
+◊note-pos[#:top -16]{bitcoin-script}
+◊note-pos{tradeoffs}
 
 ◊(define cryptokitties "https://www.cryptokitties.co/")
 ◊(define turing-complete "https://en.wikipedia.org/wiki/Turing_completeness")

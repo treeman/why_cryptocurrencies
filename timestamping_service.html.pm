@@ -48,6 +48,9 @@ Let's travel back in time and look at the site ◊link[hn]{Hacker News}, a tech 
 
 As long as we can trust the Wayback Machine (and I do consider them generally trustworthy) we can be fairly sure this is correct. Letting a trusted party like the Wayback Machine handle timestamping, called ◊link[trusted-timestamping]{◊em{trusted timestamping}}, is a solved problem with different kinds of standards but---as the name implies---there's always the caveat of requiring a trusted party to verify the timestamps.
 
+◊note-pos[#:top -36]{back-to-the-future}
+◊note-pos[#:top -29]{hn-bitcoin}
+
 ◊(define wayback-machine "https://web.archive.org/")
 ◊(define trusted-timestamping "https://en.wikipedia.org/wiki/Trusted_timestamping")
 ◊(define hn-wayback "https://web.archive.org/web/20110301181127/http://news.ycombinator.com/")
@@ -84,6 +87,9 @@ What is a timestamping service useful for? Here are some examples:
         What if you've discovered a major software bug and want to disclose it anonymously, but still want the ability to prove you were the one who found it? ◊link[rel-bug]{Later in the chapter} we'll go into details of how the discoverer of one of the most catastrophic bugs in Bitcoin ever accomplished this using timestamping.
     }
 }
+
+◊note-pos[#:top -25]{wiki-tensio}
+◊note-pos[#:top -12]{wills}
 
 ◊(define rel-bug "#a-real-life-example")
 
@@ -127,7 +133,11 @@ With cryptocurrencies it's possible to do away with the trusted party requiremen
       }
     }
 
-    Here we see that the timestamps differ, at most by ◊nbsp{12 minutes}. Although not visible in the table the nodes tell us that blocks 1003--1006 happened some time between 10:15 and 11:08. We cannot be sure down to seconds, and maybe not even minutes, but it gives a good estimate if we're only interested in an hourly or daily timestamp.◊sn{small-difference}
+    Here we see that the timestamps differ, at most by ◊nbsp{12 minutes}. Although not visible in the table the nodes tell us that blocks 1003--1006 happened some time between 10:15 and 11:08. We cannot be sure down to seconds or minutes, but it gives a good estimate if we're only interested in an hourly or daily timestamp.◊sn{small-difference}
+
+    ◊note-pos[#:top -33]{partial-order}
+    ◊note-pos[#:top -26]{miners-timestamp}
+    ◊note-pos{small-difference}
 
     ◊ndef["small-difference"]{
         In practice well connected nodes (with up to date clocks) will display a small time difference because blocks usually travel quickly through the network.  A ◊nbsp{12 minute} time difference is extremely unlikely and unwanted, I only used it as an illustrative example.
@@ -192,11 +202,14 @@ And inserted it ◊link[inflation-bug-timestamp]{into the BTC blockchain} using 
 
 This proves that reddit user awemany had knowledge of the inflation bug before it was disclosed and therefore that he was the one who found it.◊sn{sufficient}
 
+Please read ◊link[600-microseconds]{his writeup} of how he found the bug and the related ◊link[inflation-bug-reddit]{discussion on reddit} for more info.
+
+◊note-pos[#:top -7]{sufficient}
+
 ◊ndef["sufficient"]{
     Technically it doesn't conclusively prove he was the one who found it, only that he knew about the bug before everyone else. In this case it was also an afterthought and he only created the timestamp after having disclosed the bug.
 }
 
-Please read ◊link[600-microseconds]{his writeup} of how he found the bug and the related ◊link[inflation-bug-reddit]{discussion on reddit} for more info.
 
 
 ◊subhead{We can do it ourselves}
@@ -227,6 +240,8 @@ Let's now encode and timestamp it using the Bitcoin Cash blockchain:
         ◊code{
             dab965bb19823669b8481846b9672c694a9af1b808314956b43154a0472942d8
         }
+
+        ◊note-pos[#:top -10]{others-command}
     }
     ◊li{Insert it in a transaction using OP_RETURN.
 
@@ -242,6 +257,9 @@ Let's now encode and timestamp it using the Bitcoin Cash blockchain:
         }
 
         We can double-check the transaction on a blockexplorer, ◊link[transaction-ex]{such as Blockchair}, to see that the OP_RETURN value matches our SHA-256 hash (look for the decoded OP_RETURN field).◊sn{j@}
+
+        ◊note-pos[#:top -29]{tx-value}
+        ◊note-pos{j@}
     }
 }
 
