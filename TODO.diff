@@ -1,11 +1,12 @@
 Sidenote rewrite:
 - Update "how to use" with new sidenotes behaviour
 - Go through all existing chapters and adjust sidenotes
-  Next is the blind leading the blind
+  Next is brave new world
 - Update date for -all- chapters
 + Allow feed to display everything again
 - Better way to refer to book sources for paragraphs
 - Use <sup> for note numbers? Might make it better for feed readers or reader view
+- Use <sup> for 21th (to raise up the "th")
 
 Summarize better:
 + What is a cryptocurrency?

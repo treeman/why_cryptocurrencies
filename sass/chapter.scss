@@ -568,6 +568,10 @@ table.legal-moral {
     @extend %sans-serif-tnum;
 }
 
+.strikethrough {
+    text-decoration: line-through;
+}
+
 .chapter .subscribe {
     max-width: 25em;
 }
