@@ -199,7 +199,7 @@ The work is to find a solution to a computing problem.◊sn{asics} The problem i
 
         It means knowing earlier outcomes to similar problems doesn't give any advantage. Finding a solution is essentially random.
 
-        It's similar to how you're just as likely---or unlikely---to get a ◊link[royal-flush]{Royal Flush} on your first hand as on your 1000th hand. Whatever you got the other 999 hands doesn't matter.
+        It's similar to how you're just as likely---or unlikely---to get a ◊link[royal-flush]{Royal Flush} on your first hand as on your 1000◊sup{th} hand. Whatever you got the other 999 hands doesn't matter.
     }
 }
 

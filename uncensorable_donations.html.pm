@@ -379,7 +379,7 @@ This is ◊strong{not} a glorification of WikiLeaks---they have ◊link[wikileak
 
     A couple of weeks after the Supreme Court's final ruling in U.K. that Assange ◊link[assange-loses-extradition-appeal]{should be extradited} to Sweden he walked into the Ecuadorean embassy in London and applied for political asylum. The stated reason was fears that Sweden would send him to the U.S. where he would risk the death penalty under espionage charges.◊sn{sweden-extradition}
 
-    Assange was ◊link[assange-asylum-granted]{granted asylum} August 16th and his stay at the embassy would be longer than anyone would have thought.
+    Assange was ◊link[assange-asylum-granted]{granted asylum} August 16◊sup{th} and his stay at the embassy would be longer than anyone would have thought.
 
     ◊note-pos[#:top -8]{sweden-extradition}
 

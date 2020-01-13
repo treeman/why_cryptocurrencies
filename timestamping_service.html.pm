@@ -21,7 +21,7 @@ In ◊link[how-do-cryptos-work]{How do cryptocurrencies work?} we saw that crypt
 
 ◊subhead{What is a timestamping service?}
 
-A timestamping service offers proof that a message or document existed at a certain time with certain contents. The idea of timestamping information is ◊link[trusted-timestamping]{according to Wikipedia} centuries old, dating back to ◊em{at least} the 17th century.
+A timestamping service offers proof that a message or document existed at a certain time with certain contents. The idea of timestamping information is ◊link[trusted-timestamping]{according to Wikipedia} centuries old, dating back to ◊em{at least} the 17◊sup{th} century.
 
 A modern example is the ◊link[wayback-machine]{Wayback Machine}, a service which allows you to see how a certain website looked at a certain time. A bit like traveling back in time, but with your web-browser instead of a ◊link[delorean]{DeLorean}.◊sn{back-to-the-future}
 
@@ -266,7 +266,7 @@ With that our timestamp is prepared and nobody can see our original message, onl
     }
     ◊li{Lookup the timestamp.
 
-        According to ◊link[transaction-ex]{Blockchair} the transaction was included in a block mined 20:17 September 15th, 2019 (UTC). Verifying the timestamp with other blockexplorers or full nodes is left as an exercise to the reader, just be cautious of timezone differences.
+        According to ◊link[transaction-ex]{Blockchair} the transaction was included in a block mined 20:17 September 15, 2019 (UTC). Verifying the timestamp with other blockexplorers or full nodes is left as an exercise to the reader, just be cautious of timezone differences.
     }
 }
 

@@ -65,12 +65,12 @@ First let's look at some interesting historical examples of things that have bee
         While the inflation was slow at first it quickly ramped up. It culminated in 1924 with a ◊link[germany-notes]{100 billion mark note}, while only four years earlier 100 mark notes were used.
     }
     ◊money["Cigarettes in prison"
-           #:date "20th century"
+           #:date `("20" (sup "th") " century")
            #:img "images/prison_money.png"]{
         Like depicted in the movie Shawshank Redemption cigarettes are used in some prisons ◊link[prison-cigarettes]{as a form of money}. Today some prisons have started to ban smoking, so they instead use things like ◊link[prison-stamps]{stamps} or ◊link[prison-ramen]{ramen}.
     }
     ◊money["Euro bank notes"
-           #:date "21th century"
+           #:date `("21" (sup "th") " century")
            #:img "images/bank_notes.png"]{
         There are many kinds of ◊em{fiat currencies},◊sn[#:top -6]{fiat-commodity} for example the Euro. Modern coins are not made of valuable metal and paper notes are used for large denominations.
     }
@@ -106,9 +106,14 @@ First let's look at some interesting historical examples of things that have bee
 
 
 ◊(define (money title #:img img #:date [date #f] . text)
-   (define xdate (if date
-                     `(div ((class "date")) ,date)
-                     ""))
+   (define xdate
+     (cond
+       [(and (list? date) (not (null? date)))
+        `(div ((class "date")) ,@date)]
+       [date
+        `(div ((class "date")) ,date)]
+       [else
+        ""]))
    `(div ((class "example"))
       (img ((src ,img)))
       (div ((class "txt"))
