@@ -95,7 +95,9 @@ Instead they have a third party request the payment on their behalf and do some 
 
 ◊(define stripe-restricted "https://stripe.com/restricted-businesses")
 
-These things are on the gray area legal wise,◊sn[#:top -8]{legal?} so the companies that does this have high fees---VERY high fees. While regular payment processors may have ~3-4% fees, these intermediary fees can be as high as ◊strong{30%}. That's ludicrously expensive for low margin businesses.
+These things are on the gray area legal wise,◊sn{legal?} so the companies that does this have high fees---VERY high fees. While regular payment processors may have ~3-4% fees, these intermediary fees can be as high as ◊strong{30%}. That's ludicrously expensive for low margin businesses.
+
+◊note-pos[#:top -8]{legal?}
 
 ◊ndef["legal?"]{
     I don't know if this practice is legal or not, I just want to note they don't really have many options.
@@ -147,6 +149,8 @@ You might wonder what does it matter if these businesses disappear. Maybe you do
 The cannabis business is experiencing ◊link[cannabis-growth]{explosive growth}, hinting at how many people do care. Porn is another thing that is very popular---but very few would admit they watch it. I can see why some people object against them... But what's the problem with auctions? (Other than being an easy target for ◊link[rel-charge-back-fraud]{charge back fraud}.)
 
 Why should people running and using ◊strong{legal} businesses be punished for arbitrary reasons? A society that punishes people for doing something legal seems insane to me. (Yes, legality is different from morality, a topic we'll revisit in the chapter about ◊link[darknet-markets]{darknet markets}.)
+
+◊note-pos[#:top -20]{privacy}
 
 ◊(define re-education "https://www.amnesty.org/en/latest/news/2018/09/china-up-to-one-million-detained/")
 ◊(define cannabis-growth "https://www.marijuanaseo.com/cannabis-industry-statistics/")

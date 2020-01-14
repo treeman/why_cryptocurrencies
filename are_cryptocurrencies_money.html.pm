@@ -184,11 +184,13 @@ We've looked at the properties---but how well do they function as money, today?
     }
     ◊li{◊strong{Store of value}
 
-        The valuation is highly speculation driven and has been notoriously volatile.◊sn[#:top -31]{sov}
+        The valuation is highly speculation driven and has been notoriously volatile.◊sn{sov}
 
         ◊img[#:src "images/btc-valuation.svg" #:link #t]{
             ◊link[btc-valuation]{Bitcoin closing price per month}.  It doesn't do the peak in December 2017 justice, as it peaked at an all time high of $19,870 (some exchanges had it even higher).
         }
+
+        ◊note-pos[#:top -31]{sov}
     }
 }
 
@@ -266,7 +268,7 @@ While cryptocurrencies match up poorly, there is no perfect alternative.
 Note that unlike the fundamental properties---which don't change that much---how well money function change with time. For example a few hundred years ago gold coins would be used everywhere.◊sn{bad-example?}
 
 ◊ndef["bad-example?"]{
-    Maybe a bad example---cryptocurrencies and modern fiat didn't exist so far back. But hopefully you get my point: gold was once an excellent medium of exchange and unit of account. It changes.
+    Maybe a bad example---cryptocurrencies and modern fiat didn't exist so far back. But hopefully you get my point; gold was once an excellent medium of exchange and unit of account, but not anymore. It changes.
 }
 
 

@@ -34,12 +34,6 @@ They highlight the difference between cryptocurrencies and other payment systems
 
 The important difference between a cryptocurrency and digital payments we have today is the removal of a third party. Payments are ◊em{peer-to-peer} just as if you gave someone a dollar bill or a gold coin.◊sn{p2p}
 
-◊ndef["p2p"]{
-    Technically you don't interact with each other directly but with a distributed ledger. You trust the system as a whole, not one particular entity.
-
-    ◊raw-img[#:src "images/sending_network.png"]{}
-}
-
 Sending money to people via your bank is not peer-to-peer as you rely on your bank to send it for you. VISA, PayPal, Swish, Apple Pay and other digital payments have the same problem, all except cryptocurrencies.
 
 ◊img[#:src "images/give_cash.png"]{
@@ -54,19 +48,34 @@ Sending money to people via your bank is not peer-to-peer as you rely on your ba
 
 Transfers are therefore ◊em{trustless}◊sn{pundits} and ◊em{permissionless}.
 
-◊ndef["pundits"]{
-    Some will be quick to point out that transfers aren't trustless. You need to trust your wallet, the OS, the hardware etc. Which is true. The context here is not having to trust a third party to handle transfers for you, not eliminating trust of all kinds---which is impossible.
-}
-
 Trustless means you don't have to rely on a third party to make or confirm the transfer for you and permissionless means you don't have to worry about your transactions being blocked. Nobody can ◊link[freeze]{freeze your account} or ◊link[undesirable]{prevent you from opening one}. Cryptocurrencies are ◊em{uncensorable}.
 
 ◊(define freeze "/freezing_of_merchant_accounts.html")
 ◊(define undesirable "/undesirable_businesses.html")
 
-You also don't have to trust a third party to hold your money like you do when you have money in a bank.◊sn[#:top -6]{in-banks} What you really have is an IOU from the bank where they promise to give you your money when you ask for it. With cryptocurrencies you can write down the keys to your wallet and you alone have access to it.◊sn{keys}
+You also don't have to trust a third party to hold your money like you do when you have money in a bank.◊sn{in-banks} What you really have is an IOU from the bank where they promise to give you your money when you ask for it. With cryptocurrencies you can write down the keys to your wallet and you alone have access to it.◊sn{keys}
+
+◊note-pos[#:top -73]{p2p}
+◊note-pos[#:top -19]{pundits}
+◊note-pos[#:top -6]{in-banks}
+◊note-pos{keys}
+
+◊ndef["p2p"]{
+    Technically you don't interact with each other directly but with a distributed ledger. You trust the system as a whole, not one particular entity.
+
+    ◊raw-img[#:src "images/sending_network.png"]{}
+}
+
+◊ndef["pundits"]{
+    Some will be quick to point out that transfers aren't trustless. You need to trust your wallet, the OS, the hardware etc. Which is true. The context here is not having to trust a third party to handle transfers for you, not eliminating trust of all kinds---which is impossible.
+}
 
 ◊ndef["in-banks"]{
     You can let a third party hold them if you want and it's probably a good choice for many.
+}
+
+◊ndef["keys"]{
+    But please make sure to encrypt your ◊em{seed} (a human-readable representation of your keys) otherwise a thief can easily steal your coins if he finds it.
 }
 
 
@@ -173,10 +182,6 @@ Cryptocurrencies are inherently global. They are usable wherever you are as long
 
 ◊(define coinjoin "https://en.bitcoin.it/wiki/CoinJoin")
 ◊(define next-chapter "/how_do_cryptocurrencies_work.html")
-
-◊ndef["keys"]{
-    But please make sure to encrypt your ◊em{seed} (a human-readable representation of your keys) otherwise a thief can easily steal your coins if he finds it.
-}
 
 ◊(define dao "https://fullstacks.org/materials/ethereumbook/16_appdx-forks-history.html")
 ◊(define Monero "https://www.getmonero.org/")

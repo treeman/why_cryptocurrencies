@@ -27,8 +27,6 @@ The first thing we can observe is that it's possible to insert data into the led
 
         For example Satoshi ◊link[block-0]{left a message} in the first ever Bitcoin block:◊sn{coinbase-data}
 
-        ◊note-pos{coinbase-data}
-
         ◊ndef["coinbase-data"]{
             Satoshi embedded his message in the "Coinbase data" entry of the block. Other miners usually include the name of their mining pool. Such as in ◊link[coinbase-ex]{this block} the coinbase data says "Mined by AntPool48".
 
@@ -38,6 +36,8 @@ The first thing we can observe is that it's possible to insert data into the led
         ◊code{
             The Times 03/Jan/2009 Chancellor on brink of second bailout for banks
         }
+
+        ◊note-pos{coinbase-data}
     }
     ◊li{Transactions can hold data.
 

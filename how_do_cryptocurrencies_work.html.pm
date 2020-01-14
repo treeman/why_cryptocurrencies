@@ -11,6 +11,7 @@ As stated in the introduction the focus isn't on technical details, but it's a h
 
 ◊(define summary "#summary")
 
+◊note-pos[#:top -11]{others}
 
 ◊ndef["others"]{
     For example Ethereum adds Turing complete smart contracts and CryptoNote protocols (like Monero) hides transaction details.
@@ -92,7 +93,7 @@ If we didn't prevent this the ledger might look like this:
 
 We copied our coin and printed ◊sans-tnum{1 BTC} out of thin air, so now the ledger contains a negative balance. This is a form of ◊em{double spending}---spending the same coin twice.
 
-This isn't really a problem with physical cash since you can't just copy gold coins or paper notes. It's not a problem for banks either since the bank can just deny one or both of the transactions.  But this is a hard problem for a digital currency that tries to remove the central authority. This is why before Bitcoin no ◊em{decentralized}◊sn{decentralized} digital currency existed.
+This isn't really a problem with physical cash since you can't just copy gold coins or paper notes. It's not a problem for banks either since the bank can just deny one or both of the transactions.  But this is a hard problem for a digital currency that tries to remove the central authority. This is why before Bitcoin no ◊em{decentralized}◊sn[#:top -4]{decentralized} digital currency existed.
 
 ◊ndef["decentralized"]{
     Decentralization is a common term used to refer to the lack of trusted third party. Instead multiple unrelated entities come together and decide as a group.
@@ -144,6 +145,9 @@ To relate it back to cryptocurrencies the choice between "attack" and "retreat" 
     The resistance to this kind of problem is called ◊link[bft]{◊em{Byzantine fault tolerance (BFT)}}. There's a big difference between systems with known actors and systems with unknown actors, like with cryptocurrencies, but they both fall under the BFT umbrella.
 }
 
+◊note-pos[#:top -58]{cryptography}
+◊note-pos{bft}
+
 
 ◊(define bft "https://en.wikipedia.org/wiki/Byzantine_fault")
 ◊(define ceasar-cipher "http://practicalcryptography.com/ciphers/caesar-cipher/")
@@ -178,10 +182,6 @@ The core idea is: if you want to choose which transaction is valid◊sn{valid} y
 
 The work is to find a solution to a computing problem.◊sn{asics} The problem itself is not that important and it doesn't have any meaning outside of mining.◊sn{useful-pow} There some important properties it should have:
 
-◊note-pos[#:top -11]{valid}
-◊note-pos[#:top -5]{asics}
-◊note-pos{useful-pow}
-
 ◊ul{
     ◊li{◊strong{Hard enough}
 
@@ -209,6 +209,10 @@ A solution is proof that you've done the work---it's proof that you've expended 
 
 Important to note is that everyone doesn't have to be a miner. The blockchain is open for anyone to read and validate, it's only writing that's exclusive to miners.
 
+◊note-pos[#:top -65]{valid}
+◊note-pos[#:top -60]{asics}
+◊note-pos[#:top -48]{useful-pow}
+
 ◊ndef["asics"]{
     In Bitcoin specialized hardware, ◊link[ASICs]{ASICs}, are used which are many magnitudes faster than regular computers at solving POW problems.
 
@@ -232,7 +236,7 @@ Important to note is that everyone doesn't have to be a miner. The blockchain is
 
 When a miner finds a solution she can then update the ledger by adding a block to the blockchain. A block is basically a collection of transactions.
 
-A blockchain is what it sounds like: a chain of blocks where a new block builds on previous blocks. When a miner searches for a solution she must target a block on a specific height---the POW problem includes a reference to the previous block and it only fits at a specific position in the chain.◊sn{specific-height} When a new block is added all miners need to work on a new problem targeting that block.
+A blockchain is what it sounds like: a chain of blocks where a new block builds on previous blocks. When a miner searches for a solution she must target a block on a specific height---the POW problem includes a reference to the previous block and it only fits at a specific position in the chain.◊sn[#:top -4]{specific-height} When a new block is added all miners need to work on a new problem targeting that block.
 
 ◊ndef["specific-height"]{
     This is why ◊link["#forks"]{◊em{forks}} naturally happen.
@@ -260,7 +264,7 @@ The blockchain is duplicated, stored and maintained by many different people, yo
     A payment is sent to the network and not directly to the receiver. The transaction then gets forwarded to miners who eventually add it to the blockchain. The receiver then confirms the payment in the blockchain, without trusting the payee.
 }
 
-
+◊note-pos[#:top -20]{node-types}
 
 ◊ndef["node-types"]{
     There are several differnet ways to interact with the blockchain. For the end user there are three main ways, with different trade-offs:
@@ -319,6 +323,9 @@ Because rewards on each chain can only be used on that particular chain any rewa
 
 In the example Honest Harry should wait until he knows which chain is longer and then decide from there.
 
+◊note-pos[#:top -43]{code-fork}
+◊note-pos[#:top -17]{orphan}
+
 
 ◊subhead{Reversing transactions}
 
@@ -354,6 +361,8 @@ This is a different type of double spend and it's the primary attack vector ◊l
     In the credit card world this type of fraud is called ◊link[chargeback-fraud]{chargeback fraud} or friendly fraud.
 }
 
+◊note-pos[#:top -70]{chargeback}
+
 ◊(define 51-attack "https://www.investopedia.com/terms/1/51-attack.asp")
 
 
@@ -373,6 +382,9 @@ Bitcoin's security isn't absolute but probabilistic. One way to think about it i
 A crucial mistake people make is to think more miners, or more energy used, means more transactions can be handled. This is not true. Miners ◊strong{only} care about securing the chain preventing transactions from being reversed.
 
 In fact we could spend 100x more energy on mining and process the same amount of transactions or we could spend 1% of the energy and process more transactions. Transaction throughput is a separate problem.◊sn{more-energy}
+
+◊note-pos[#:top -16]{0-conf}
+◊note-pos{more-energy}
 
 ◊ndef["0-conf"]{
     You can actually even accept transactions without any confirmation, called ◊em{0-conf}. They are much less secure than a confirmed transaction but since most miners respect the first seen rule it's fairly safe for small purchases.
@@ -395,6 +407,10 @@ Honest miners work for profit so they absolutely don’t want to risk their bloc
 
 This means for Sneaky Steve to successfully reverse a transaction he needs to control more than half of all mining power---otherwise his hidden chain can never become the longest.  It's called a 51% attack because you need to control at least 51% of all mining power to pull it off consistently.◊sn{51-attack-btg}
 
+This touches on the immutability of the blockchain. As long as more than 50% of miners don't want to change the chain it will always be longest and correct, but if they do then they can reverse transactions.
+
+◊note-pos[#:top -9]{51-attack-btg}
+
 ◊ndef["51-attack-btg"]{
     Bitcoin Gold ◊link[51-btg]{was successfully 51% attacked} and exchanges were double spent. The attacker managed to reverse transactions 22 blocks deep.
 
@@ -402,8 +418,6 @@ This means for Sneaky Steve to successfully reverse a transaction he needs to co
 }
 
 ◊(define 51-btg "https://forum.bitcoingold.org/t/double-spend-attacks-on-exchanges/1362")
-
-This touches on the immutability of the blockchain. As long as more than 50% of miners don't want to change the chain it will always be longest and correct, but if they do then they can reverse transactions.
 
 
 ◊subhead{Economics of a 51% attack}
@@ -425,6 +439,8 @@ Here's some quick napkin math to estimate the cost for 51% mining power:◊sn{da
     ◊tr{◊td{Total network miner cost}                       ◊td{$1,259,399,600}}
 }
 
+◊note-pos[#:top -14]{date}
+
 So about $650 million for just the miners themselves (assuming you could purchase that many). On top of that we need power supply, cooling, storage and maintenance for more than a million miners. We're looking at a massive warehouse, or several. Suffice to say it's a very large investment, but maybe not unreasonably large.
 
 If we manage to get enough miners it should allow us to double-spend and defraud exchanges and merchants. It almost sounds like we can get free money, but it's not that simple.
@@ -444,7 +460,18 @@ These risks needs to weighed against what profits a 51% attack could generate. M
 
 The economic incentives are so strong that it might be rational even for a 51% for-profit miner to be honest. In fact Bitcoin has ◊link[ghash]{had pools with 51% before} without incidents.
 
-The biggest security risk for Bitcoin might instead be actors of state levels who wants to destroy it no matter the costs. For example if the United States would spend billions on a "War on Bitcoin".
+The biggest security risk for Bitcoin might instead be state level actors  who wants to destroy it no matter the costs. For example if the United States would spend billions on a "War on Bitcoin".
+
+◊note-pos[#:top -35]{monero-POW}
+◊note-pos[#:top -16]{btg2}
+
+◊ndef["btg2"]{
+    The case is a little different for cryptocurrencies that share POW algorithm with others. The miners could attack the minority chain and jump back to the majority chain after executing the attack.
+}
+
+◊ndef["monero-POW"]{
+    As an example Monero has changed POW several times bricking existing ASICs. The expensive mining rigs used on Monero are now practically worthless.
+}
 
 
 ◊subhead{An economic innovation}
@@ -457,22 +484,10 @@ For example in a fork with two competing chains the most profitable move is to j
 
 It also doesn't make sense for a minority miner to try to double-spend, it will only cause them to lose money in the long run. Therefore only a miner with 51% can compromise the network security, and even then it might be more profitable to play by the rules.
 
-
-◊ndef["btg2"]{
-    The case is a little different for cryptocurrencies that share POW algorithm with others. The miners could attack the minority chain and jump back to the majority chain after executing the attack.
-}
-
 ◊(define ghash "https://www.coindesk.com/bitcoin-mining-detente-ghash-io-51-issue")
-
-
-◊ndef["monero-POW"]{
-    As an example Monero has changed POW several times bricking existing ASICs. The expensive mining rigs used on Monero are now practically worthless.
-}
-
 ◊(define btc-hashrate "https://www.blockchain.com/charts/hash-rate")
 ◊(define s9-hashrate "https://shop.bitmain.com/promote/antminer_s9i_asic_bitcoin_miner/specification")
 ◊(define s9-cost "https://www.cryptocompare.com/mining/blokforge/antminer-s9i-14-ths/")
-
 
 
 ◊subhead{Network upgrades and new cryptocurrencies}
@@ -503,9 +518,10 @@ Other times the fork is initiated by people who want to create a new cryptocurre
 
 You may then wonder, what decides which is the correct chain? There is no clear answer---social consensus decide which of the chains is called "Original Coin" and which is called "New Coin".
 
+◊note-pos[#:top -24]{hard-soft}
+
 
 ◊(define dao "https://fullstacks.org/materials/ethereumbook/16_appdx-forks-history.html")
-◊(define nb 'nbsp)
 
 ◊ndef["valid"]{
     Remember that to resolve double spending one transaction must be chosen, which one doesn't matter.

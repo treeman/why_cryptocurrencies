@@ -63,6 +63,8 @@ First let's look at some interesting historical examples of things that have bee
         ◊link[germany-wallpaper]{This is what happened in Germany} after the first World war. They had massive debts after losing the war, so they tried to print enough money to pay off the debts.◊sn{germany-stories}
 
         While the inflation was slow at first it quickly ramped up. It culminated in 1924 with a ◊link[germany-notes]{100 billion mark note}, while only four years earlier 100 mark notes were used.
+
+        ◊note-pos[#:top -9]{germany-stories}
     }
     ◊money["Cigarettes in prison"
            #:date `("20" (sup "th") " century")
@@ -72,7 +74,9 @@ First let's look at some interesting historical examples of things that have bee
     ◊money["Euro bank notes"
            #:date `("21" (sup "th") " century")
            #:img "images/bank_notes.png"]{
-        There are many kinds of ◊em{fiat currencies},◊sn[#:top -6]{fiat-commodity} for example the Euro. Modern coins are not made of valuable metal and paper notes are used for large denominations.
+        There are many kinds of ◊em{fiat currencies},◊sn{fiat-commodity} for example the Euro. Modern coins are not made of valuable metal and paper notes are used for large denominations.
+
+        ◊note-pos[#:top -6 #:bottom -20]{fiat-commodity}
     }
     ◊money["Dogecoin"
            #:date "2013"
@@ -83,6 +87,8 @@ First let's look at some interesting historical examples of things that have bee
            #:date "2017"
            #:img "images/marbles.png"]{
         Kids on the schoolyard often come up with interesting forms of money. For example collectible card games or game components. Like marbles used in a Swedish game where you win your opponents marbles. (And those with many marbles had higher status in class.)◊sn{pokemon}
+
+        ◊note-pos[#:bottom -20]{pokemon}
     }
 }
 
@@ -180,7 +186,7 @@ The basic thesis is that it's the state that gives value to money:
     ◊li{Fiat currency is declared by the state to be ◊link[legal-tender]{◊em{legal tender}}.
 
         Which, among other things, means merchants have to accept it by law.}
-    ◊li{The state is responsible to regulate inflation.◊sn[#:top -6]{fed}}
+    ◊li{The state is responsible to regulate inflation.◊sn{fed}}
     ◊li{Banks are insured by the state, increasing safety of the currency.}
     ◊li{Before dropping the gold standard, fiat currencies were backed up by gold.}
 }
@@ -190,6 +196,8 @@ While this might on the surface explain why fiat currencies are valuable, it fai
 ◊ndef["fed"]{
     In the US it's actually the ◊link[federal-reserve]{Federal Reserve System}, a central bank, that controls printing of money. Most other countries use a similar system. In the EU it's called the ◊link[ecb]{European Central Bank}.
 }
+
+◊note-pos[#:top -11]{fed}
 
 ◊(define legal-tender "https://en.wikipedia.org/wiki/Legal_tender")
 ◊(define federal-reserve "https://www.investopedia.com/terms/f/federalreservebank.asp")
@@ -412,6 +420,8 @@ It's not a requirement that the money must be backed by something, or have intri
 }
 
 The term ◊link[sound-money]{◊em{sound money}} refers to money that isn't prone to sudden changes in long term purchasing power, and the value is determined by the free market. If the supply of money differs from the demand, which will happen with fiat due to the disconnect between banks and the market, then there will be changes. While fiat has many positive properties, after the move away from the gold standard, it's now considered unsound money.
+
+◊note-pos[#:top -11.5]{fractional-banking-good}
 
 ◊(define sound-money "https://www.soundmoneydefense.org/sound-money-explained")
 

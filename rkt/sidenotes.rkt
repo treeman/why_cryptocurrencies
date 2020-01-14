@@ -28,11 +28,12 @@
 
 ;; Notes
 
-(struct note (ref sign top) #:mutable)
+(struct note (ref sign top bottom) #:mutable)
 (define (make-note ref
                    #:sign [sign #f]
-                   #:top [top #f])
-  (note ref sign top))
+                   #:top [top #f]
+                   #:bottom [bottom #f])
+  (note ref sign top bottom))
 
 (define notes (make-hash))
 
@@ -82,25 +83,30 @@
   (unless def (error (format "missing ref '~s'" ref)))
   def)
 
-(define (mn ref-in #:top [top #f])
+(define (mn ref-in #:top [top #f] #:bottom [bottom #f])
   (define ref (ref-symbol ref-in))
   (set-marginnote ref)
   (set-note-top ref top)
+  (set-note-bottom ref bottom)
   ref)
 
-(define (sn ref-in #:top [top #f])
+(define (sn ref-in #:top [top #f] #:bottom [bottom #f])
   (define ref (ref-symbol ref-in))
   (set-sidenote ref)
   (set-note-top ref top)
+  (set-note-bottom ref bottom)
   ref)
 
 (define note-pos-refs (make-hash))
 
-(define (note-pos ref-in #:top [top #f])
+(define (note-pos ref-in
+                  #:top [top #f]
+                  #:bottom [bottom #f])
   (define ref (ref-symbol ref-in))
   (define pos-ref (ref->pos-ref ref))
   (hash-set! note-pos-refs pos-ref ref)
   (set-note-top ref top)
+  (set-note-bottom ref bottom)
   pos-ref)
 
 (define (set-note-top ref top)
@@ -109,6 +115,13 @@
     (if note
       (set-note-top! note top)
       (hash-set! notes ref (make-note ref #:top top)))))
+
+(define (set-note-bottom ref bottom)
+  (when bottom
+    (define note (get-note ref))
+    (if note
+      (set-note-bottom! note bottom)
+      (hash-set! notes ref (make-note ref #:bottom bottom)))))
 
 (define (ref->pos-ref ref)
   (string->symbol (format "~a-pos" (symbol->string ref))))
@@ -274,13 +287,24 @@
 (define (expand-sidenote note)
   (define def (note-def note))
   (define top (note-top note))
+  (define bottom (note-bottom note))
   (when (and top (not (number? top)))
     (error (format "Not a number: '~a' for sidenote '~a'~n" top (note-ref note))))
+  (when (and bottom (not (number? bottom)))
+    (error (format "Not a number: '~a' for sidenote '~a'~n" bottom (note-ref note))))
+
+  (define styles
+    (let ((styles `()))
+      (when bottom (set! styles (cons (format "margin-bottom:~aem;" bottom)
+                                      styles)))
+      (when top (set! styles (cons (format "margin-top:~aem;" top)
+                                   styles)))
+      (string-join styles " ")))
 
   (define attrs `((class "sidenote")))
-  (when top
+  (when (non-empty-string? styles)
     (set! attrs (append attrs
-                        `((style ,(format "margin-top:~aem" top))))))
+                        `((style ,styles)))))
 
   (define sign (note-sign note))
   (define label
