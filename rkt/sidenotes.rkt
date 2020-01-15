@@ -278,11 +278,9 @@
 
 (define (label note)
   (define sign (note-sign note))
-  (define label
-    (if (eq? sign 'marginnote)
-      ""
-      (format "~a" sign)))
-  `((span ((class "sidenote-label")) ,label)))
+  (if (eq? sign 'marginnote)
+    `()
+    `((sup ((class "sidenote-number")) ,(format "~a" sign)))))
 
 (define (expand-sidenote note)
   (define def (note-def note))
@@ -306,15 +304,9 @@
     (set! attrs (append attrs
                         `((style ,styles)))))
 
-  (define sign (note-sign note))
-  (define label
-    (if (eq? sign 'marginnote)
-      ""
-      `(span ((class "sidenote-number")) ,(format "~a" sign))))
-
   `(div ,attrs
-          ,label
-          ,@def))
+        ,@(label note)
+        ,@def))
 
 ;; A larger test to test the sidenote placement.
 (module+ test

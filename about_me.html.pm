@@ -2,6 +2,7 @@
 
 ◊(define-meta title "About me, the author")
 ◊(define-meta subtitle "Hello, I'm Jonas")
+◊(define-meta published "2019-04-12T00:00:00+01:00")
 ◊(define-meta updated "2020-01-15T20:07:32+01:00")
 ◊(define-meta uuid "b1aaa891-a7c6-4bf4-a01c-4c43c0446abf")
 

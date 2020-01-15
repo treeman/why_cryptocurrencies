@@ -2,6 +2,7 @@
 
 ◊(define-meta title "Protection against government confiscation")
 ◊(define-meta subtitle "It's harder for governments to take cryptocurrencies from you")
+◊(define-meta published "2020-01-09T00:00:00+01:00")
 ◊(define-meta updated "2020-01-15T20:10:22+01:00")
 ◊(define-meta uuid "01795fb4-c99a-4168-8685-73ad86ed7c0c")
 

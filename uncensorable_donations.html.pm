@@ -2,6 +2,7 @@
 
 ◊(define-meta title "Uncensorable donations")
 ◊(define-meta subtitle "Donations governments cannot stop")
+◊(define-meta published "2019-08-28T00:00:00+01:00")
 ◊(define-meta updated "2020-01-15T20:10:58+01:00")
 ◊(define-meta uuid "f35cab59-0629-4173-9de0-a07a0eef33dc")
 

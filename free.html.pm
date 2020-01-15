@@ -2,6 +2,7 @@
 
 ◊(define-meta title "Completely free")
 ◊(define-meta subtitle "Read it online for free without cost of any kind")
+◊(define-meta published "2019-04-12T00:00:00+01:00")
 ◊(define-meta updated "2020-01-15T20:09:33+01:00")
 ◊(define-meta uuid "4ede8ca8-fd2e-4112-9d00-e383f94e1a01")
 

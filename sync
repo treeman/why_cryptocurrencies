@@ -70,7 +70,7 @@ sub sync_cmd {
 
     $option = "" unless $option;
 
-    return "s3cmd sync $option --acl-public $header $dir s3://$bucket/";
+    return "s3cmd sync -M $option --acl-public $header $dir s3://$bucket/";
 }
 
 sub help {
