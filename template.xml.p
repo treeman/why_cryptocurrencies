@@ -8,11 +8,14 @@
   (string-append
     "urn:uuid:"
     (select-from-metas 'uuid post)))
+◊(define (published post)
+  (select-from-metas 'published post))
 ◊(define (updated post)
   (select-from-metas 'updated post))
 ◊(define (validate post)
   (check-meta 'title post)
   (check-meta 'uuid post)
+  (check-meta 'published post)
   (check-meta 'updated post)
   post)
 ◊(define (check-meta sym post)
@@ -33,7 +36,7 @@
   (add-between
     (filter-entry-content
       `((title ,(title post))
-        ;(subtitle ,(subtitle post))
+        (published ,(published post))
         (updated ,(updated post))
         (id ,(uuid post))
         (link ((href ,(abs-url post))))

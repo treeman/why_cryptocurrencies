@@ -2,6 +2,7 @@
 
 ◊(define-meta title "What is a cryptocurrency?")
 ◊(define-meta subtitle "Peer-to-peer electronic cash")
+◊(define-meta published "2019-04-24T20:08:34+01:00")
 ◊(define-meta updated "2020-01-15T20:11:16+01:00")
 ◊(define-meta uuid "c3deb792-1d85-4a2b-a122-f11361487c82")
 

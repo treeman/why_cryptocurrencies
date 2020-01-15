@@ -4,6 +4,7 @@
 
 ◊(define-meta title "Provably fair gambling")
 ◊(define-meta subtitle "Gambling where you cannot cheat the odds")
+◊(define-meta published "2019-12-17T00:00:00+01:00")
 ◊(define-meta updated "2020-01-15T20:10:28+01:00")
 ◊(define-meta uuid "cf1cc907-4fda-4b98-81fd-b9c447cdadc5")
 

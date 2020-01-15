@@ -2,6 +2,7 @@
 
 ◊(define-meta title "Extensions")
 ◊(define-meta subtitle "Non-currency usage of a blockchain")
+◊(define-meta published "2019-09-21T00:00:00+01:00")
 ◊(define-meta updated "2020-01-15T20:09:14+01:00")
 ◊(define-meta uuid "c83f3bb3-7277-43b0-ad8d-ee5ea4592a87")
 
