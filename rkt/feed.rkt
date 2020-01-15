@@ -12,6 +12,7 @@
   (define html
     (->html (decode-elements
               (get-doc post)
+              #:txexpr-proc style-remover
               #:txexpr-elements-proc (elem-remover '("donations"
                                                      "subscribe")))
       #:splice? #t))

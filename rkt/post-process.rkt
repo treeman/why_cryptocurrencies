@@ -3,7 +3,7 @@
 (require txexpr pollen/decode)
 (require racket/match racket/list racket/string)
 
-(provide elem-remover)
+(provide elem-remover style-remover)
 
 
 ;; Remove all elements with matching class.
@@ -29,6 +29,17 @@
           cs))))
     #f))
 
+(define (remove-attr attrs attr-to-remove)
+  (filter (λ (x)
+             (not (eq? (car x) attr-to-remove)))
+          attrs))
+
+(define (style-remover tx)
+  (txexpr (get-tag tx)
+          (remove-attr (get-attrs tx) 'style)
+          (get-elements tx)))
+
+
 (module+ test
   (require rackunit)
   (define remover (elem-remover '("x" "y")))
@@ -44,5 +55,15 @@
   (check-equal? (remover
                   `("string"))
                 `("string"))
+
+  (check-equal? (remove-attr `((class "class")) 'style)
+                '((class "class")))
+  (check-equal? (remove-attr `((style "style") (class "class")) 'style)
+                '((class "class")))
+  (check-equal? (remove-attr `((style "style")) 'style)
+                '())
+
+  (check-equal? (style-remover `(div ((class "x") (style "style"))))
+                '(div ((class "x"))))
   )
 
