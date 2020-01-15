@@ -2,7 +2,7 @@
 
 ◊(define-meta title "Timestamping service")
 ◊(define-meta subtitle "Verifiable proof of knowledge at a certain time")
-◊(define-meta updated "2019-09-21T10:25:45+02:00")
+◊(define-meta updated "2020-01-15T20:10:53+01:00")
 ◊(define-meta uuid "b92733e8-9356-487e-abb9-510ac0cc5735")
 
 ◊epigraph{

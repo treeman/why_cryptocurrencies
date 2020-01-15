@@ -2,7 +2,7 @@
 
 ◊(define-meta title "Are cryptocurrencies money?")
 ◊(define-meta subtitle "How well do they work as money?")
-◊(define-meta updated "2019-11-05T22:11:30+01:00")
+◊(define-meta updated "2020-01-15T20:07:50+01:00")
 ◊(define-meta uuid "f04af7c8-5fee-45c4-a5a4-80a3f6fbd31b")
 
 As we saw in the ◊link[prev-chapter]{previous chapter}, practically anything can be used as money. Therefore it's more useful to ask if cryptocurrencies have the properties of good money, and how well do they function as money today.

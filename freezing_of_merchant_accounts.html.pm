@@ -2,7 +2,7 @@
 
 ◊(define-meta title "Freezing of merchant accounts")
 ◊(define-meta subtitle "The account your business relies on can be frozen at any time")
-◊(define-meta updated "2019-11-06T20:49:28+01:00")
+◊(define-meta updated "2020-01-15T20:09:37+01:00")
 ◊(define-meta uuid "ac14d4a1-3796-4f5b-9350-b56e796625a1")
 
 ◊epigraph{

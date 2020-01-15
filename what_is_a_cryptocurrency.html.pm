@@ -2,7 +2,7 @@
 
 ◊(define-meta title "What is a cryptocurrency?")
 ◊(define-meta subtitle "Peer-to-peer electronic cash")
-◊(define-meta updated "2019-11-05T07:58:27+01:00")
+◊(define-meta updated "2020-01-15T20:11:16+01:00")
 ◊(define-meta uuid "c3deb792-1d85-4a2b-a122-f11361487c82")
 
 If we're going to talk about cryptocurrencies we need to know what they are. Otherwise how can we tell what value---if any---they have? And I think the best description of what a cryptocurrency is can be found in the title of the original white paper: ◊link[wp]{Bitcoin: A Peer-to-Peer Electronic Cash System}. It's like cash, but in digital form.◊mn{read-wp}

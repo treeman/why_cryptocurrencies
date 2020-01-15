@@ -2,7 +2,7 @@
 
 ◊(define-meta title "How do cryptocurrencies work?")
 ◊(define-meta subtitle "Decentralized consensus")
-◊(define-meta updated "2020-01-02T19:17:48+01:00")
+◊(define-meta updated "2020-01-15T20:09:52+01:00")
 ◊(define-meta uuid "320751d9-9a28-4e91-9469-b44b83e12475")
 
 This is my attempt to explain how a standard cryptocurrency like Bitcoin works. Other cryptocurrencies may diverge on various points but the fundamentals are the same.◊sn{others}

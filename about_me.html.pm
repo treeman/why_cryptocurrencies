@@ -2,7 +2,7 @@
 
 ◊(define-meta title "About me, the author")
 ◊(define-meta subtitle "Hello, I'm Jonas")
-◊(define-meta updated "2019-11-05T07:54:33+01:00")
+◊(define-meta updated "2020-01-15T20:07:32+01:00")
 ◊(define-meta uuid "b1aaa891-a7c6-4bf4-a01c-4c43c0446abf")
 
 I wonder what you might think of someone who's writing a book about cryptocurrencies? Maybe you'll think of a teenage multi-millionaire or an old neckbeard raving about free software? Or perhaps an anarchist saying things like "governments are evil" and "taxation is theft"?◊sn{there-are}

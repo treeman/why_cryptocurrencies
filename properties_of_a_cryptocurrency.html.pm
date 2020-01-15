@@ -2,7 +2,7 @@
 
 ◊(define-meta title "Properties of a cryptocurrency")
 ◊(define-meta subtitle "Trustless and permissionless")
-◊(define-meta updated "2019-11-21T15:38:06+01:00")
+◊(define-meta updated "2020-01-15T20:10:17+01:00")
 ◊(define-meta uuid "176f3433-baba-49d6-ab43-9c08061f0682")
 
 ◊epigraph{

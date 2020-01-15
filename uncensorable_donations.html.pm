@@ -2,7 +2,7 @@
 
 ◊(define-meta title "Uncensorable donations")
 ◊(define-meta subtitle "Donations governments cannot stop")
-◊(define-meta updated "2019-11-06T21:26:01+01:00")
+◊(define-meta updated "2020-01-15T20:10:58+01:00")
 ◊(define-meta uuid "f35cab59-0629-4173-9de0-a07a0eef33dc")
 
 ◊; US efforts to jail Assange for espionage are a grave threat to a free media (theguardian.com)

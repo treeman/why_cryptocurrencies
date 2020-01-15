@@ -2,7 +2,7 @@
 
 ◊(define-meta title "The blind leading the blind")
 ◊(define-meta subtitle "We don't understand, and neither do the experts")
-◊(define-meta updated "2019-10-01T08:34:55+02:00")
+◊(define-meta updated "2020-01-15T20:10:48+01:00")
 ◊(define-meta uuid "4684c5b0-9f93-479b-a8ab-165601a430c9")
 
 ◊epigraph{

@@ -2,7 +2,7 @@
 
 ◊(define-meta title "What is money?")
 ◊(define-meta subtitle "It's subjective")
-◊(define-meta updated "2019-11-05T20:15:17+01:00")
+◊(define-meta updated "2020-01-15T20:11:22+01:00")
 ◊(define-meta uuid "67cd34c5-058b-4908-a4a6-aed09aff22cc")
 
 ◊epigraph{

@@ -2,7 +2,7 @@
 
 ◊(define-meta title "How to use this book")
 ◊(define-meta subtitle "Just some minor things to keep in mind")
-◊(define-meta updated "2019-11-05T07:28:15+01:00")
+◊(define-meta updated "2020-01-15T20:09:58+01:00")
 ◊(define-meta uuid "a69e0036-a749-4f7c-b02e-dbcfa2776540")
 
 Each chapter is supposed to be standalone so you can jump around and read it however you want. The only prerequisite is to have a basic understanding of what a cryptocurrency does, which is described in ◊link[the-first-chapter]{the first section}, but if you want you can skip that as well and go back later if needed.

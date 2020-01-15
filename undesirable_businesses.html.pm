@@ -2,7 +2,7 @@
 
 ◊(define-meta title "“Undesirable” businesses")
 ◊(define-meta subtitle "The ones payment processors don't want to do business with")
-◊(define-meta updated "2019-11-06T20:35:22+01:00")
+◊(define-meta updated "2020-01-15T20:11:11+01:00")
 ◊(define-meta uuid "ac14d4a1-3796-4f5b-9350-b56e796625a1")
 
 If you want to accept digital payments today you need to partner with a payment processor, for example Stripe or PayPal. Usually that's not a problem---but what if they say no?◊mn{banks}
