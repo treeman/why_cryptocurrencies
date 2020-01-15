@@ -2,7 +2,7 @@
 
 ◊(define-meta title "About the book")
 ◊(define-meta subtitle "A perspective beyond the hype")
-◊(define-meta updated "2019-12-02T07:27:35+01:00")
+◊(define-meta updated "2020-01-15T20:07:39+01:00")
 ◊(define-meta uuid "7ea80c78-aff2-46a1-8d05-1253d7033dc6")
 
 Whenever the topic of cryptocurrencies---where Bitcoin and Ethereum are the most known---come up in conversations they're almost always misunderstood or dismissed.
@@ -38,6 +38,9 @@ It's almost a universal phenomena. I've heard these arguments from students, co-
   ◊li{They don't do anything valuable.}
 }
 
+◊note-pos[#:top -9]{beanies}
+◊note-pos{tulips}
+
 It seems everyone has an opinion but few are capable of explaining what they are or what they do differently.  Of course most aren't dismissive but simply don't understand what it's all about. Many are curious and want to learn more.
 
 With this book I hope to show how cryptocurrencies can be useful, what use cases exist and how they can help people. I'll briefly go over how they work in a more conceptual level and I might throw in some historical notes here and there. I'm not trying to make anyone a cryptocurrency fan, I just hope to bring some nuance and to help answer some common questions.
@@ -50,7 +53,7 @@ And I must admit I'm also being selfish---writing a book is on my bucket list.
 This book tries to describe what value cryptocurrencies have using several examples. In particular I will argue that:
 
 ◊ol{
-  ◊li{Cryptocurrencies aren't just scams.◊sn{scams}}
+  ◊li{Cryptocurrencies aren't just scams.◊sn[#:top -10]{scams}}
   ◊li{It's more than just a speculative asset.}
   ◊li{They do many things better than any alternative.}
   ◊li{There are legal use cases.}

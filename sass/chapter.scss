@@ -247,14 +247,6 @@ th, td {
 
 
 /*
- * Notes
- */
-body {
-    counter-reset: sidenote-counter;
-}
-
-
-/*
  * Code
  */
 pre, code {
@@ -272,17 +264,10 @@ pre {
     margin-bottom: 1em;
     padding: 0.4em 0.6em;
 }
-.sidenote-code {
-    font-family: $code-font-family;
+.sidenote code {
     font-size: 0.6rem;
     line-height: 1.4;
-    display: inline-block;
-    white-space: nowrap;
-
-    overflow-wrap: normal;
-    overflow: auto;
-
-    padding: 0.4em 0.6em;
+    //white-space: nowrap;
 }
 
 
@@ -301,49 +286,18 @@ pre {
     // Avoids swallowing clicks and interactions intended for wider images
     visibility: hidden;
 }
-.sidenote, .marginnote {
+
+.sidenote {
     @extend %sans-serif;
     font-size: 0.8rem;
 }
-
-// Ad-hoc paragraph styling
-.sidenote .snp:not(:first-child),
-.marginnote .snp:not(:first-child) {
-    margin-top: 0.8em;
-    display: inline-block;
-    clear: both;
-    width: 100%;
-}
-// No inline-block for the first in sidenotes to allow ref number
-// to live on the same line.
-.marginnote .snp {
-    clear: both;
-    width: 100%;
-    display: inline-block;
-}
-
-.sidenote img, .marginnote img {
+.sidenote img, {
     max-width: 100%;
 }
-
-.snp > code {
-    overflow-wrap: break-word;
-}
-
-
-.sidenote-number {
-    counter-increment: sidenote-counter;
-}
-.sidenote-number:after {
-    content: counter(sidenote-counter);
-}
-.sidenote:before {
-    content: counter(sidenote-counter);
-    float: left;
+.sidenote .sidenote-number {
     padding-right: 0.2rem;
-    display: inline;
 }
-.margin-symbol, .sidenote-number:after, .sidenote:before {
+.sidenote-number, .sidenote-label {
     font-family: $sans-serif-font-family;
     vertical-align: super;
     font-size: 0.7em;
@@ -351,86 +305,52 @@ pre {
     //background-color: tomato;
 }
 
-input.margin-toggle {
-    display: none;
-}
-label.sidenote-number {
-    display: inline;
-}
-label.margin-toggle:not(.sidenote-number) {
-    display: none;
+.sidenote .talking {
+    .row:before {
+        content: "–";
+        padding-right: 0.3rem;
+    }
 }
 
 @media (max-width: $sidenote-float-width - 1) {
-    label.margin-toggle:not(.sidenote-number) {
-        display: inline;
-    }
-    .margin-symbol, .sidenote-number:after, .sidenote:before {
-    }
-    .margin-symbol, .sidenote-number:after {
-        font-weight: bold;
-        color: $sidenote-clickable-color;
-        // Make them a little easier to click on.
-        padding: 0 0.25rem 0.3rem 0;
-        margin-right: -0.25rem;
-        position: relative;
-    }
-    label.margin-toggle {
-        cursor: pointer;
-        z-index: 100;
-    }
-    .margin-symbol:hover, .sidenote-number:hover:after {
-        color: $body-link-hover-color;
-    }
-    // Notes hidden by default
-    .sidenote, .marginnote {
-        display: none;
-    }
-
-    .margin-toggle:checked + .sidenote,
-    .margin-toggle:checked + .marginnote {
+    .sidenote {
         display: block;
-        margin: 1rem;
+        margin: 1em 4em 1.4em 4em !important;
 
         img {
             display: block;
             margin: 0 auto;
         }
-    }
-    .sidenote, .marginnote {
-        .snp {
-            // Dsiplay as block to not be cut by images.
-            display: block;
+        code {
+            max-width: 101%;
         }
     }
-    .sidenote-code {
-        max-width: 101%;
-    }
     //.sidenote { background-color: lightblue; }
-    //.marginnote { background-color: aqua; }
 }
 @media (min-width: $sidenote-float-width) {
     .side-space {
         display: block;
     }
-    .sidenote, .marginnote {
+    .sidenote {
         float: right;
         clear: right;
+        // Approximate adjustment for notes at the last line of a paragraph.
+        // Will get overridden by local styles.
+        margin-top: -2em;
+        margin-bottom: 4em;
         margin-right: -420px;
-        margin-bottom: 2rem;
         width: 380px;
         position: relative;
         display: inline-block;
         //background-color: moccasin;
     }
-    blockquote .marginnote, blockquote .sidenote {
+    blockquote .sidenote {
         margin-right: -462px;
     }
-    .sidenote-code {
+    code {
         max-width: 380px;
     }
     //.sidenote { background-color: pink; }
-    //.marginnote { background-color: plum; }
 }
 
 
@@ -536,7 +456,7 @@ figcaption.margin {
     }
 }
 
-figure .sidenote, figure .marginnote {
+figure .sidenote {
     text-align: left;
 }
 
@@ -648,6 +568,10 @@ table.legal-moral {
     @extend %sans-serif-tnum;
 }
 
+.strikethrough {
+    text-decoration: line-through;
+}
+
 .chapter .subscribe {
     max-width: 25em;
 }
@@ -710,9 +634,12 @@ table.legal-moral {
     border-bottom: 1px dashed $body-hr-color;
 }
 
+.wikileaks .entry:not(:first-child) {
+    margin-top: 1.5em;
+}
+
 .wikileaks .entry {
     width: 100%;
-    margin-bottom: 1em;
 
     h3 {
         margin-top: 0;
@@ -827,13 +754,6 @@ ul.talking > li:before {
 
 .qt-tab {
     padding-left: 1.2rem;
-}
-
-.sidenote .talking {
-    .row:before {
-        content: "–";
-        padding-right: 0.3rem;
-    }
 }
 
 /*

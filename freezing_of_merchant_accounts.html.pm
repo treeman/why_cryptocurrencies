@@ -2,7 +2,7 @@
 
 ◊(define-meta title "Freezing of merchant accounts")
 ◊(define-meta subtitle "The account your business relies on can be frozen at any time")
-◊(define-meta updated "2019-11-06T20:49:28+01:00")
+◊(define-meta updated "2020-01-15T20:09:37+01:00")
 ◊(define-meta uuid "ac14d4a1-3796-4f5b-9350-b56e796625a1")
 
 ◊epigraph{
@@ -34,7 +34,10 @@ Imagine coming in to work one day and having this conversion with your boss:
     "You apparently didn't put one of the new coversheets on your TPS reports."◊sn{office-space}
 
     "TPS reports...??"
+
+    ◊note-pos[#:top -5]{office-space}
 }
+
 
 ◊ndef["office-space"]{
     This is a reference to movie ◊link[office-space]{Office Space}, a black comedy about working in an office. There a worker gets reprimanded for an extremely minor and unimportant issue.
@@ -58,6 +61,8 @@ Imagine what you would do now, without a salary and without your savings...
 
 ◊(define rel-examples "/freezing_of_merchant_accounts.html#other-examples")
 ◊(define american-savings "https://www.cnbc.com/2018/01/18/few-americans-have-enough-savings-to-cover-a-1000-emergency.html")
+
+◊note-pos[#:top -29]{6-months}
 
 
 ◊subhead{Confiscating future payments}
@@ -84,6 +89,9 @@ They didn't just freeze the account, they're making it worse by confiscating fut
     Even if you get all your money back eventually, you still have to deal with ruined reputation, missed opportunities and costumers suing you for delayed deliveries.
 }
 
+◊note-pos[#:top -25]{digital}
+◊note-pos{lawsuits}
+
 
 ◊subhead{Small businesses & projects may be ruined}
 
@@ -96,6 +104,8 @@ If you run a very popular business---like Minecraft---you'll probably get throug
 But what happens if you run a small business? If your startup gets their account frozen, with no new money coming in?  Obviously you'll be in a world of hurt. Maybe you'll take a hit and survive but it could also kill your business.
 
 The ◊link[neo900]{Neo900} project I quoted at the start of this chapter? They missed a bunch of supplier deadlines and the project is still crawling along---but as a shell of what it once was. It was indeed a disaster.
+
+◊note-pos[#:top -16]{attention}
 
 ◊(define neo900 "https://neo900.org/")
 ◊(define hackernews "https://news.ycombinator.com/")
@@ -142,6 +152,8 @@ This of course requires that you use a wallet which holds the coins itself, and 
 I'm not advocating either way, just realize there are trade-offs with controlling your own keys or not. If you want the ease of use of a custodial wallet then you'll sacrifice control of your account.
 
 With cryptocurrencies at least you have a choice and a possibility to avoid your account getting arbitrarily frozen.
+
+◊note-pos[#:top -20]{tradeoff-holding}
 
 
 ◊(define prev "/undesirable_businesses.html")

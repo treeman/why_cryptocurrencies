@@ -2,7 +2,7 @@
 
 ◊(define-meta title "Extensions")
 ◊(define-meta subtitle "Non-currency usage of a blockchain")
-◊(define-meta updated "2019-09-21T10:25:38+02:00")
+◊(define-meta updated "2020-01-15T20:09:14+01:00")
 ◊(define-meta uuid "c83f3bb3-7277-43b0-ad8d-ee5ea4592a87")
 
 Money is perhaps the most obvious usage of cryptocurrencies but there are other ways to use them. In this section I'll highlight some of the alternative usages and we'll see that we can build other functionality on top of existing cryptocurrencies.◊sn{blockchain-hype}
@@ -36,6 +36,8 @@ The first thing we can observe is that it's possible to insert data into the led
         ◊code{
             The Times 03/Jan/2009 Chancellor on brink of second bailout for banks
         }
+
+        ◊note-pos{coinbase-data}
     }
     ◊li{Transactions can hold data.
 
@@ -52,6 +54,8 @@ The first thing we can observe is that it's possible to insert data into the led
         ◊(gen-message "Hello")
 
         To produce the message "Hello".
+
+        ◊note-pos[#:top -16]{control-address}
 
         ◊ndef["control-address"]{
             To control your address you can keep generating a new until you find one you like. If you want a ◊em{vanity address} for personal use you can generate one, for example one starting with "1Crypto". Keep in mind that finding an address with 6 characters or more can ◊link[vanitygen]{take a long time}.
@@ -101,7 +105,7 @@ Bitcoin does more than just transfer coins from one address to another. What it 
 ◊ndef["bitcoin-script"]{
     This is the script of a standard Bitcoin transaction (amount, destination and other data is specified elsewhere):
 
-    ◊scode{
+    ◊code{
         OP_DUP OP_HASH160 <pubKeyHash> OP_EQUALVERIFY OP_CHECKSIG
     }
 
@@ -117,6 +121,9 @@ The scripting language in Bitcoin is fairly limited but the ◊link[solidity]{sc
 }
 
 Now it doesn't matter if you know what a script is or how it works, just remember this: cryptocurrencies can do more than just transfer coins from one address to another. We'll go into some of the examples in the following chapters.
+
+◊note-pos[#:top -16]{bitcoin-script}
+◊note-pos{tradeoffs}
 
 ◊(define cryptokitties "https://www.cryptokitties.co/")
 ◊(define turing-complete "https://en.wikipedia.org/wiki/Turing_completeness")

@@ -3,39 +3,8 @@
 (require txexpr pollen/decode)
 (require racket/match racket/list racket/string)
 
-(provide register-replacement replace-stubs)
-(provide expand-splices)
-(provide elem-remover)
+(provide elem-remover style-remover)
 
-;; Register symbols which gets inline replaced
-;; by function return values.
-(define replacements (make-hash))
-(define (register-replacement sym f)
-  (hash-set! replacements sym f))
-
-(define (replace-stubs x)
-  (let ((f (hash-ref replacements x #f)))
-    (if f
-      (f x)
-      x)))
-
-;; A splicing tag to support returning multiple inline
-;; values. So '((splice-me "a" "b")) becomes '("a" "b")
-(define (splice-me? x)
-  (match x
-    [(cons 'splice-me _) #t]
-    [else #f]))
-
-;; Expand '(splice-me ...) into surrounding list
-(define (expand-splices in)
-  (if (list? in)
-    (foldr (λ (x acc)
-              (if (splice-me? x)
-                (append (expand-splices (cdr x)) acc)
-                (cons (expand-splices x) acc)))
-           '()
-           in)
-    in))
 
 ;; Remove all elements with matching class.
 (define (elem-remover classes)
@@ -60,6 +29,17 @@
           cs))))
     #f))
 
+(define (remove-attr attrs attr-to-remove)
+  (filter (λ (x)
+             (not (eq? (car x) attr-to-remove)))
+          attrs))
+
+(define (style-remover tx)
+  (txexpr (get-tag tx)
+          (remove-attr (get-attrs tx) 'style)
+          (get-elements tx)))
+
+
 (module+ test
   (require rackunit)
   (define remover (elem-remover '("x" "y")))
@@ -75,5 +55,15 @@
   (check-equal? (remover
                   `("string"))
                 `("string"))
+
+  (check-equal? (remove-attr `((class "class")) 'style)
+                '((class "class")))
+  (check-equal? (remove-attr `((style "style") (class "class")) 'style)
+                '((class "class")))
+  (check-equal? (remove-attr `((style "style")) 'style)
+                '())
+
+  (check-equal? (style-remover `(div ((class "x") (style "style"))))
+                '(div ((class "x"))))
   )
 

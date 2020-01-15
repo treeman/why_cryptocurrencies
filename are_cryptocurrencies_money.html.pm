@@ -2,7 +2,7 @@
 
 ◊(define-meta title "Are cryptocurrencies money?")
 ◊(define-meta subtitle "How well do they work as money?")
-◊(define-meta updated "2019-11-05T22:11:30+01:00")
+◊(define-meta updated "2020-01-15T20:07:50+01:00")
 ◊(define-meta uuid "f04af7c8-5fee-45c4-a5a4-80a3f6fbd31b")
 
 As we saw in the ◊link[prev-chapter]{previous chapter}, practically anything can be used as money. Therefore it's more useful to ask if cryptocurrencies have the properties of good money, and how well do they function as money today.
@@ -44,6 +44,11 @@ All in all cryptocurrencies fulfil the properties excellently.
 Cryptocurrencies can also be considered to be ◊link[sound-money]{◊em{sound money}}---the value is entirely market driven and there is no manipulation of the supply.◊sn{backed}
 
 ◊(define sound-money "https://www.soundmoneydefense.org/sound-money-explained")
+
+◊note-pos[#:top -40]{crypto-acceptable}
+◊note-pos[#:top -27]{backups}
+◊note-pos[#:top -20]{fungibility}
+◊note-pos{backed}
 
 ◊ndef["backed"]{
     Traditionally sound money refers to money backed by precious material. Cryptocurrencies are instead backed by cryptography, and in Bitcoin's case the supply mimics the gold supply.
@@ -94,6 +99,11 @@ I know this might be controversial, so let me motivate some of the entries:
     ◊li{Cryptocurrencies are simply much more ◊strong{portable} than the other options. Carrying large amounts in cash or gold is cumbersome and digital fiat isn't easy to move across borders.◊sn{borders}}
 }
 
+◊note-pos[#:top -27]{acceptable}
+◊note-pos[#:top -18]{durability}
+◊note-pos[#:top -10]{again-monero}
+◊note-pos[#:top -2]{borders}
+
 ◊ndef["acceptable"]{
     You could argue that because you need a device with internet access, cryptocurrencies should get a lower score on ◊em{acceptable}. But you could also argue that having to transact in person is another drawback. To me they cancel out.
 }
@@ -110,6 +120,9 @@ Even if you disagree about certain choices, it's hard to disagree that cryptocur
     ◊li{The legitimacy of cryptocurrency coins can be verified very easily. It's possible check for fake cash and gold coins, but it requires expertise and certain tools.}
     ◊li{Gold has stood the test of time. It's been used as money for thousands of years, while cryptocurrencies are just more than 10 years old.◊sn{age-of-fiat}}
 }
+
+◊note-pos[#:top -13]{bugs}
+◊note-pos[#:top -3]{age-of-fiat}
 
 ◊ndef["age-of-fiat"]{
     I find it interesting that ◊link[avg-life-fiat]{the average life expectancy for a fiat currency is 27 years}.
@@ -176,6 +189,8 @@ We've looked at the properties---but how well do they function as money, today?
         ◊img[#:src "images/btc-valuation.svg" #:link #t]{
             ◊link[btc-valuation]{Bitcoin closing price per month}.  It doesn't do the peak in December 2017 justice, as it peaked at an all time high of $19,870 (some exchanges had it even higher).
         }
+
+        ◊note-pos[#:top -31]{sov}
     }
 }
 
@@ -210,7 +225,7 @@ There are mainly two things holding it back today:
 
 Both of these are functions of how new cryptocurrencies are. When the market matures, the volatility will naturally decrease. Barring any large weaknesses the network effect will only grow larger---cryptocurrencies do provide some very good benefits, as we shall see.
 
-Perhaps it's to be expected that cryptocurrencies aren't global money yet---they're only a decade old after all.◊sn{lightbulb}
+Perhaps it's to be expected that cryptocurrencies aren't global money yet---they're only a decade old after all.◊sn[#:top -3]{lightbulb}
 
 ◊ndef["lightbulb"]{
     Marc Levinson writes in ◊link[the-box-book #:quote #t]{The Box} that 20 years after the invention of the light bulb, arguably one of the most important inventions of all time, only 3% in the U.S. were using it. Cryptocurrencies are still in their infancy.
@@ -253,7 +268,7 @@ While cryptocurrencies match up poorly, there is no perfect alternative.
 Note that unlike the fundamental properties---which don't change that much---how well money function change with time. For example a few hundred years ago gold coins would be used everywhere.◊sn{bad-example?}
 
 ◊ndef["bad-example?"]{
-    Maybe a bad example---cryptocurrencies and modern fiat didn't exist so far back. But hopefully you get my point: gold was once an excellent medium of exchange and unit of account. It changes.
+    Maybe a bad example---cryptocurrencies and modern fiat didn't exist so far back. But hopefully you get my point; gold was once an excellent medium of exchange and unit of account, but not anymore. It changes.
 }
 
 
@@ -274,6 +289,9 @@ Cryptocurrencies just doesn't fit into existing rules of fiat currencies. This o
 }
 
 There are others who've ruled in favor of Bitcoin as a currency. For example ◊link[eu-ruled]{EU ruled} that VAT is not applicable to the conversion between fiat currency and Bitcoin, however VAT still applies when used for goods and services.
+
+◊note-pos[#:top -16]{legal-tender}
+◊note-pos[#:top -10]{patents}
 
 ◊(define software-patents "https://www.eff.org/deeplinks/2013/02/deep-dive-software-patents-and-rise-patent-trolls")
 ◊(define one-click "https://patents.google.com/patent/US5960411")

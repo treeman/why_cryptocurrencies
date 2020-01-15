@@ -5,11 +5,13 @@
 (require racket/format)
 (require racket/runtime-path)
 (require racket/port)
-(require "toc.rkt")
+(require "decode.rkt")
 (require "links.rkt")
 (require "post-process.rkt")
-(require "string-process.rkt")
 (require "pygments.rkt")
+(require "sidenotes.rkt")
+(require "string-process.rkt")
+(require "toc.rkt")
 
 (provide (all-defined-out))
 
@@ -65,7 +67,7 @@
   (define a `(a ,attrs ,@text))
 
   (if qt
-    `(splice-me "“" ,a "”")
+    `(@ "“" ,a "”")
     a))
 
 (module+ test
@@ -77,7 +79,7 @@
                 `(a ((class "xref") (title "mytitle") (href "https://abc.xyz"))
                     "my" "link"))
   (check-equal? (link #:quote #t "https://abc.xyz" "my" "link")
-                `(splice-me
+                `(@
                     "“"
                     (a ((class "xref") (href "https://abc.xyz"))
                         "my" "link")
@@ -241,8 +243,6 @@
   `(code ,@args))
 (define (code . args)
   `(pre (code ,@args)))
-(define (scode . args)
-  `(span ((class "sidenote-code")) ,@args))
 (define (code-hl #:line-numbers? [line-numbers? #f]
                  #:css-class [css-class "highlight"]
                  #:lines [hl-lines null]
@@ -281,15 +281,18 @@
     (span ((class "pre")) "TODO ")
     (span ((class "txt")) ,@args)))
 
+(define (strikethrough . args)
+  `(span ((class "strikethrough")) ,@args))
+
 ;; Replace spaces in strings found in args with 'nbsp
 ;; which will be escaped to &nbsp; a non-breaking space.
 (define (nbsp . args)
   ;; Split a string and insert 'nbspc between
   (define (replace s)
-    `(splice-me ,@(add-between (string-split s " ")
+    `(@ ,@(add-between (string-split s " ")
                                'nbsp)))
-  ;; Use splice-me to flatten the result
-  `(splice-me ,@(map (λ (x)
+  ;; Use @ to flatten the result
+  `(@ ,@(map (λ (x)
                         (if (string? x)
                           (replace x)
                           x))
@@ -348,92 +351,8 @@
                   (allow "fullscreen")))))
      (figcaption ,@decoded-caption)))
 
-
-;;; Margin-notes and side-notes
-(define note-defs (make-hash))
-
-(define (ndef ref-in . def)
-  (define id (format "nd-~a" ref-in))
-  (define ref (string->symbol id))
-
-  (when (hash-has-key? note-defs ref)
-    (error (format "duplicate ndef '~a'" ref-in)))
-
-  ;; Because p doesn't allow block elements
-  ;; and span doesn't allow p elements
-  ;; use a special span .snp element to emulate paragraphs.
-  ;; This is workaround is required as we want to inject a whole sidenote
-  ;; inline to use the checkbox css toggling to avoid javascript.
-  (define (wrap xs)
-    (list* 'span '((class "snp")) xs))
-  (define content
-    (decode-elements def
-                     #:txexpr-elements-proc (λ (x) (decode-paragraphs x wrap))
-                     #:string-proc string-proc))
-
-  (hash-set! note-defs ref content)
-  "")
-
-(define (note-ref #:label-class label-class
-                  #:label-content label-content
-                  #:span-class span-class
-                  #:ref ref-in)
-  (define id (format "nd-~a" ref-in))
-  (define ref (string->symbol id))
-  (define (replace uid)
-    (define def (hash-ref note-defs ref #f))
-    (unless def (error (format "missing ref '~s'" ref)))
-    (define uid-s (symbol->string uid))
-    ;; Use splice-me to be able to return multiple elements inline.
-    `(splice-me
-      (label ((class ,label-class) (for ,uid-s)) ,label-content)
-      (input ((id ,uid-s) (class "margin-toggle") (type "checkbox")))
-      (span ((class ,span-class)) ,@def)))
-
-  ;; Generate a unique id for each note, so we can fold multiple references
-  ;; correctly.
-  (define uid (gen-note-uid id))
-  (register-replacement uid replace)
-  uid)
-
-(define note-uids (make-hash))
-(define (gen-note-uid id)
-  (define (find-note-uid c)
-    (define uid (string->symbol (format "~a~a" id c)))
-    (if (hash-ref note-uids uid #f)
-      (find-note-uid (+ c 1))
-      (begin
-        (hash-set! note-uids uid #t)
-        uid)))
-  (find-note-uid 0))
-
-(define (mn ref-in)
-  (note-ref #:label-class "margin-toggle margin-symbol"
-            #:label-content "†"
-            #:span-class "marginnote"
-            #:ref ref-in))
-(define (sn ref-in)
-  (note-ref #:label-class "margin-toggle sidenote-number"
-            #:label-content ""
-            #:span-class "sidenote"
-            #:ref ref-in))
-
-
-(define (std-decode args)
-  (decode-elements args
-    #:txexpr-elements-proc decode-paragraphs
-    #:string-proc string-proc
-    #:exclude-tags `(figure pre)))
-
 ;;; Root transformations
 
 (define (root . args)
-  (define decoded
-    ; Replace in all tags, even figures. To allow ndef to be placed after figure caption.
-    (decode-elements (std-decode args)
-                     #:entity-proc replace-stubs))
-
-  ;; Expand splices afterwards
-  ;; 'splice-me is consired inline so doesn't break paragraph calculations
-  (txexpr 'root empty (expand-splices decoded)))
+  (txexpr 'root empty (decode-sidenotes (std-decode args))))
 

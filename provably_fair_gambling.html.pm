@@ -4,7 +4,7 @@
 
 ◊(define-meta title "Provably fair gambling")
 ◊(define-meta subtitle "Gambling where you cannot cheat the odds")
-◊(define-meta updated "2019-12-12T16:36:17+01:00")
+◊(define-meta updated "2020-01-15T20:10:28+01:00")
 ◊(define-meta uuid "cf1cc907-4fda-4b98-81fd-b9c447cdadc5")
 
 ◊; Bill the Betting man
@@ -27,6 +27,8 @@ But it's hard to verify that a gamble is fair. With a coin you ◊em{might} be a
 }
 
 With cryptocurrencies we can device a scheme where gambling is provably fair. We can create a gambling site where users are sure the bets are fair---with mathematical certainty---and without a trusted third party facilitating the bets.
+
+◊note-pos[#:top -9]{poker-cheating}
 
 ◊(define poker-scandal "https://upswingpoker.com/ultimate-bet-absolute-poker-scandal/")
 ◊(define oceans-11 "https://www.imdb.com/title/tt0240772/")
@@ -162,6 +164,8 @@ There are limits to the simple toy example I've described:
 
         This scheme works fine for simple single player games, like flipping a coin. But if we wanted to create a provable fair poker game the implementation would be more complex, but it would still be possible.◊sn{encrypt}
 
+        ◊note-pos{encrypt}
+
         ◊ndef["encrypt"]{
             Here we'd have to encrypt your cards and hide them from other players, but they still need to be able to verify that they were dealt out correctly after the fact.
 
@@ -195,6 +199,9 @@ You can also improve the state of sports betting. A smart contract can give an O
 }
 
 This is how cryptocurrencies can improve the way we gamble.
+
+◊note-pos[#:top -16]{programmable-money}
+◊note-pos[#:top -6]{timeout}
 
 
 ◊(define embedding-data "/extensions.html#embedding-data")

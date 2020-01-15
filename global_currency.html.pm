@@ -2,11 +2,10 @@
 
 ◊(define-meta title "A global currency")
 ◊(define-meta subtitle "Money without borders")
-◊(define-meta updated "2019-09-02T07:02:25+02:00")
+◊(define-meta updated "2020-01-15T20:09:43+01:00")
 ◊(define-meta uuid "bec2e177-8ccd-4f8d-a90e-a3d0b4269e43")
 
 ◊img[#:src "/images/global.png"]{}
-
 
 
 ◊subhead{Remittance}
@@ -66,6 +65,9 @@ Sending money to other countries, called ◊em{remittance}, is one of the first 
 
 The big drawback with cryptocurrencies is that you're sending cryptocurrency coins, and if you wanted fiat money you need to find a way to exchange the coins for fiat, which might be difficult, slow or expensive.
 
+◊note-pos[#:top -60]{compare-to-banks}
+◊note-pos[#:top -9]{large-BTC-tx}
+
 ◊(define western-union-fees "https://www.westernunion.com/us/en/web/send-money/start")
 ◊(define large-BTC-tx "https://blockchair.com/bitcoin/transaction/4410c8d14ff9f87ceeed1d65cb58e7c7b2422b2d7529afc675208ce2ce09ed7d")
 
@@ -104,6 +106,9 @@ There's an opportunity here for cryptocurrencies, which is demonstrated by the c
 ◊;}
 
 This kind of charity is only possible if you can cheaply transfer money to the heart of a very unstable and closed off country, bypassing sanctions and border control.
+
+◊note-pos[#:top -17]{petro}
+◊note-pos[#:top -7]{venezuela-adoption}
 
 ◊(define venezuela-crisis "https://www.worldvision.org/disaster-relief-news-stories/venezuela-crisis-facts")
 ◊(define great-depression "https://en.wikipedia.org/wiki/Great_Depression")
@@ -161,12 +166,8 @@ It's easy to think that hyperinflation is a thing of the past, or that it only a
     }
     ◊inflation["Zimbabwe"
                #:date "2004--2009"]{
-        The other example of hyperinflation in the 21th century is in Zimbabwe. At its worst prices doubled in just over 24 hours. While things settled down, Zimbabwe is ◊link[zimbabwe-trouble]{once again in trouble} and the ◊link[imf-inflation]{International Monetary Fund projects} an inflation of 161% for 2019.
+        The other example of hyperinflation in the 21◊sup{th} century is in Zimbabwe. At its worst prices doubled in just over 24 hours. While things settled down, Zimbabwe is ◊link[zimbabwe-trouble]{once again in trouble} and the ◊link[imf-inflation]{International Monetary Fund projects} an inflation of 161% for 2019.
     }
-}
-
-◊ndef["inflation-fascination"]{
-    I'm always fascinated by the hyperinflation stories. In Hungary for example the government ran out of good paper to print the new money on.
 }
 
 ◊(define (inflation title #:date date . text)
@@ -178,10 +179,6 @@ It's easy to think that hyperinflation is a thing of the past, or that it only a
 
 In each case, hyperinflation is an economic disaster. Hoarding causes shortages, with even basic goods like clothes or food becoming hard to find. Importing goods become impossible and companies go out of business, causing mass unemployment. When tax revenue falls, government services fall with them.◊sn{regular-inflation-too}
 
-◊ndef["regular-inflation-too"]{
-    Although hyperinflation is the extreme case, high inflation rate can still be problematic. ◊link[imf-inflation]{According to the International Monetary Fund} in 2019 Argentina has an inflation rate of 54.4% and Sudan 50.4%.
-}
-
 
 ◊(define zimbabwe-trouble "https://nypost.com/2019/10/10/zimbabwe-struggles-with-hyperinflation-its-a-nightmare/")
 ◊(define hanke-krus "https://www.cato.org/sites/cato.org/files/pubs/pdf/hanke-krus-hyperinflation-table-may-2013.pdf")
@@ -192,10 +189,21 @@ In each case, hyperinflation is an economic disaster. Hoarding causes shortages,
 ◊(define venezuela-bitcoin-saved-my-family "https://www.nytimes.com/2019/02/23/opinion/sunday/venezuela-bitcoin-inflation-cryptocurrencies.html")
 ◊(define hyperinflation "https://www.thebalance.com/what-is-hyperinflation-definition-causes-and-examples-3306097")
 
+◊note-pos[#:top -38]{line-inflation}
+◊note-pos[#:top -22]{inflation-fascination}
+◊note-pos{regular-inflation-too}
+
 ◊ndef["line-inflation"]{
     Hyperinflation is defined as a monthly inflation exceeding 50%.
 }
 
+◊ndef["inflation-fascination"]{
+    I'm always fascinated by the hyperinflation stories. In Hungary for example the government ran out of good paper to print the new money on.
+}
+
+◊ndef["regular-inflation-too"]{
+    Although hyperinflation is the extreme case, high inflation rate can still be problematic. ◊link[imf-inflation]{According to the International Monetary Fund} in 2019 Argentina has an inflation rate of 54.4% and Sudan 50.4%.
+}
 
 
 ◊subhead{Always available}
@@ -215,6 +223,9 @@ Bankers are legal crooks.
 Because of the decentralized nature of cryptocurrencies it's very difficult for them to "shut down". It doesn't matter if the computers of some people---or even whole countries---break down, the cryptocurrency network is unaffected.◊sn{antifragile}
 
 Cryptocurrencies are so robust we might as well say they're always available, for anyone and anywhere (as long as they have internet access).◊sn{uptime}
+
+◊note-pos[#:top -7.5]{antifragile}
+◊note-pos{uptime}
 
 ◊ndef["antifragile"]{
     Taleb has minted the term ◊link[antifragile-book]{◊em{antifragile}}, meaning the more you break something the stronger it becomes. Cryptocurrencies are antifragile.

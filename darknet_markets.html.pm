@@ -2,7 +2,7 @@
 
 ◊(define-meta title "Darknet markets")
 ◊(define-meta subtitle "Global and digital markets for illegal goods")
-◊(define-meta updated "2019-12-06T07:39:44+01:00")
+◊(define-meta updated "2020-01-15T20:08:59+01:00")
 ◊(define-meta uuid "4cf3ad81-1c7f-414f-a582-4b2897d27121")
 
 ◊epigraph{
@@ -46,8 +46,9 @@ Here's a table to illustrate the problem:
 
 It's actually quite hard to classify things as legal or illegal and moral or immoral; they both change depending on country, the time period and who you ask. For instance most would agree that slavery is immoral and should be illegal, but it was in fact legal and viewed as normal for thousands of years. Similarly today in the western world we take free speech for granted, but that's not the case in all countries.
 
-Mass surveillance, which we covered in the chapter ◊link[private-money]{Private money}, is immoral yet legal.◊sn{surveillance} Civil asset forfeiture, which allows the police to outright take your stuff, is another example of an immoral legal practice. (We'll explore civil asset forfeiture in a future chapter.)
+Mass surveillance, which we covered in the chapter ◊link[private-money]{Private money}, is immoral yet legal.◊sn{surveillance} Civil asset forfeiture, which allows the police to outright take your stuff, is another example of an immoral legal practice. (We'll explore civil asset forfeiture ◊link[government-confiscation]{in a future chapter}.)
 
+◊(define government-confiscation "/protection_against_government_confiscation.html")
 ◊(define private-money "/private_money.html")
 
 ◊ndef["surveillance"]{
@@ -57,6 +58,8 @@ Mass surveillance, which we covered in the chapter ◊link[private-money]{Privat
 It's easy to find examples of silly laws that make moral actions illegal (just search for "silly laws" or similar), but I think there are more interesting issues. For example stealing is illegal, but is it immoral for a starving child to steal food to survive? Or for the child to steal food for his starving little sister? And where on the moral scale would you place prostitution?
 
 The issue of "right or wrong" isn't so easy to answer, and we cannot just rely on what's legal and what's not. Instead I think we should ask ourselves if it's moral or immoral (which is of course subjective).
+
+◊note-pos[#:top -23]{surveillance}
 
 ◊(define (ths txt)
    `(td ((class "ths")) ,txt))
@@ -92,6 +95,8 @@ Black markets have existed as long as taxes have been collected, and it's not ju
 In countries with corruption or dysfunctional governments black markets are huge. For example in the Soviet Union many people relied on black markets to get their food supply when the market economy failed them. Or in Greece during the economic breakdown in the 2010s, the black market was ◊link[greece-black-markets]{estimated at 20 to 25 percent of the GDP}.
 
 Black markets aren't inherently evil, sometimes they're even necessary for our survival. Instead they deal in both good and bad things, each of which should be considered on a case-by-case basis.
+
+◊note-pos[#:top -20]{geothermal}
 
 ◊(define black-markets "https://www.investopedia.com/terms/b/blackmarket.asp")
 ◊(define greece-black-markets "https://www.nytimes.com/2017/02/18/world/europe/greece-bailout-black-market.html")
@@ -145,6 +150,8 @@ The following example, based on a real-life story I read a few years ago, illust
     Tom couldn't understand how it could be so cheap. The medicine seemed real, it came in the same package and Tom even had it tested (can't be too careful, right?) Maybe it was stolen, and the thieves just wanted to sell it quickly? Or was it produced in India, for minimal cost?
 
     But Tom didn't care. He had already placed his next order from the same seller. Tom only cared about Melinda.
+
+    ◊note-pos[#:top -25]{opsec}
 }
 
 ◊ndef["opsec"]{
@@ -157,6 +164,8 @@ The following example, based on a real-life story I read a few years ago, illust
 ◊(define privacy-challenge "/challenges.html#privacy-and-fungibility")
 
 While the story is made up, the situation is real. Medicine in the U.S. can be ◊link[expensive-cancer-drugs]{◊strong{extremely expensive}}, and the cost isn't something all families can bear.◊sn{insurance} The same medicine that will ruin you financially is often available for a fraction of the cost from darknet markets.
+
+◊note-pos[#:top -6]{insurance}
 
 ◊ndef["insurance"]{
     It can be extremely expensive, even if you have insurance. The insurance companies ◊link[insurance-screwed]{try really hard} to avoid paying the bills. For example they might only cover certain "approved" medicines, doctors or treatments. 

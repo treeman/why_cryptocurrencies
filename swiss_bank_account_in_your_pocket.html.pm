@@ -2,7 +2,7 @@
 
 ◊(define-meta title "A Swiss bank account in your pocket")
 ◊(define-meta subtitle "Unlimited and untraceable money on your smartphone")
-◊(define-meta updated "2020-01-02T18:59:04+01:00")
+◊(define-meta updated "2020-01-15T20:10:36+01:00")
 ◊(define-meta uuid "d1144eb3-b2ac-4c89-b2e0-4a03f377172c")
 
 ◊; To read:
@@ -15,6 +15,8 @@ This is actually a great description of how cryptocurrencies work. You just need
 ◊ndef["gringotts"]{
     Even the ◊link[gringotts]{Gringotts Wizarding Bank} in Harry Potter operates in a similar manner. But except for a password they use a physical key.
 }
+
+◊note-pos[#:top -9.5]{gringotts}
 
 ◊(define gringotts "https://harrypotter.fandom.com/wiki/Gringotts_Wizarding_Bank")
 
@@ -122,6 +124,10 @@ Here I use the term ◊em{tax evasion} instead ◊em{tax fraud} because, believe
 
 The world is just extremely unfair, and if anything it should be the other way around. The poor should pay less taxes, while the rich should pay more. At least this would have a semblance of fairness.
 
+◊note-pos[#:top -48]{crap-smart-rich}
+◊note-pos[#:top -34]{names}
+◊note-pos[#:top -20]{companies-too}
+
 ◊(define db "https://offshoreleaks.icij.org/")
 ◊(define putin-proxies "https://www.icij.org/investigations/panama-papers/20160403-putin-russia-offshore-network/")
 ◊(define irs-gutted "https://www.propublica.org/article/how-the-irs-was-gutted")
@@ -145,6 +151,8 @@ In an ideal world everyone would pay their taxes as they should, while they woul
         }
 
         At first glance this fixes our problem, but remember that this kind of tax evasion is already legal, and we'd first have to fix our laws for this to have any effect. And besides, completely removing our financial privacy comes with serious drawbacks, some which we'll explore in the next chapter about the ◊link[rel-cashless]{cashless society}.
+
+        ◊note-pos[#:top -9]{bitcoin-traceable}
     }
     ◊li{Everyone can use untraceable money
 
@@ -173,6 +181,9 @@ For better or worse, cryptocurrencies bring us closer to that world. Cryptocurre
 }
 
 Perfectly balanced, as all things should be.
+
+◊note-pos[#:top -37]{how?}
+◊note-pos[#:top -6]{not-quite}
 
 ◊(define kyc "https://en.wikipedia.org/wiki/Know_your_customer")
 ◊(define aml "https://www.investopedia.com/terms/a/aml.asp")

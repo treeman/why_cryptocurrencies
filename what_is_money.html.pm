@@ -2,7 +2,7 @@
 
 ◊(define-meta title "What is money?")
 ◊(define-meta subtitle "It's subjective")
-◊(define-meta updated "2019-11-05T20:15:17+01:00")
+◊(define-meta updated "2020-01-15T20:11:22+01:00")
 ◊(define-meta uuid "67cd34c5-058b-4908-a4a6-aed09aff22cc")
 
 ◊epigraph{
@@ -16,6 +16,8 @@ Money is something completely necessary in our society, most people probably com
 Not just how the physical coins and pieces of paper are made, but why does money exist? What makes it valuable? Are there different kinds of money? And are some forms of money better than others?◊mn{money-or-currency}
 
 Before getting interested in cryptocurrencies I too had never asked these questions. I will try to provide some insight into this admittedly complex topic.
+
+◊note-pos[#:top -8]{money-or-currency}
 
 
 ◊subhead{Historical examples of money}
@@ -61,16 +63,20 @@ First let's look at some interesting historical examples of things that have bee
         ◊link[germany-wallpaper]{This is what happened in Germany} after the first World war. They had massive debts after losing the war, so they tried to print enough money to pay off the debts.◊sn{germany-stories}
 
         While the inflation was slow at first it quickly ramped up. It culminated in 1924 with a ◊link[germany-notes]{100 billion mark note}, while only four years earlier 100 mark notes were used.
+
+        ◊note-pos[#:top -9]{germany-stories}
     }
     ◊money["Cigarettes in prison"
-           #:date "20th century"
+           #:date `("20" (sup "th") " century")
            #:img "images/prison_money.png"]{
         Like depicted in the movie Shawshank Redemption cigarettes are used in some prisons ◊link[prison-cigarettes]{as a form of money}. Today some prisons have started to ban smoking, so they instead use things like ◊link[prison-stamps]{stamps} or ◊link[prison-ramen]{ramen}.
     }
     ◊money["Euro bank notes"
-           #:date "21th century"
+           #:date `("21" (sup "th") " century")
            #:img "images/bank_notes.png"]{
         There are many kinds of ◊em{fiat currencies},◊sn{fiat-commodity} for example the Euro. Modern coins are not made of valuable metal and paper notes are used for large denominations.
+
+        ◊note-pos[#:top -6 #:bottom -20]{fiat-commodity}
     }
     ◊money["Dogecoin"
            #:date "2013"
@@ -81,6 +87,8 @@ First let's look at some interesting historical examples of things that have bee
            #:date "2017"
            #:img "images/marbles.png"]{
         Kids on the schoolyard often come up with interesting forms of money. For example collectible card games or game components. Like marbles used in a Swedish game where you win your opponents marbles. (And those with many marbles had higher status in class.)◊sn{pokemon}
+
+        ◊note-pos[#:bottom -20]{pokemon}
     }
 }
 
@@ -104,9 +112,14 @@ First let's look at some interesting historical examples of things that have bee
 
 
 ◊(define (money title #:img img #:date [date #f] . text)
-   (define xdate (if date
-                     `(div ((class "date")) ,date)
-                     ""))
+   (define xdate
+     (cond
+       [(and (list? date) (not (null? date)))
+        `(div ((class "date")) ,@date)]
+       [date
+        `(div ((class "date")) ,date)]
+       [else
+        ""]))
    `(div ((class "example"))
       (img ((src ,img)))
       (div ((class "txt"))
@@ -184,6 +197,8 @@ While this might on the surface explain why fiat currencies are valuable, it fai
     In the US it's actually the ◊link[federal-reserve]{Federal Reserve System}, a central bank, that controls printing of money. Most other countries use a similar system. In the EU it's called the ◊link[ecb]{European Central Bank}.
 }
 
+◊note-pos[#:top -11]{fed}
+
 ◊(define legal-tender "https://en.wikipedia.org/wiki/Legal_tender")
 ◊(define federal-reserve "https://www.investopedia.com/terms/f/federalreservebank.asp")
 ◊(define ecb "https://www.ecb.europa.eu/home/html/index.en.html")
@@ -243,6 +258,9 @@ If more or less anything can be used as money, it makes more sense to look at ho
         A piece of gold could for example buy clothes in both ancient Greece and today.
     }
 }
+
+◊note-pos[#:top -25]{4-fun-money}
+◊note-pos[#:top -9]{cars-south}
 
 ◊ndef["cars-south"]{
     Used cars are usually cheaper in the south of Sweden, for some reason unknown to me.
@@ -320,6 +338,10 @@ To function as money ◊link[money-props]{money should have these properties}:�
     }
 }
 
+◊note-pos[#:top -46]{money-props}
+◊note-pos[#:top -25]{fungible-uniform}
+◊note-pos[#:top -9]{limited-supply}
+
 We can summarize the properties as: money should be practical and efficient.
 
 It makes sense as the point of money is to increase efficiency. And if money isn't practical, it's not a good medium of exchange.
@@ -371,6 +393,11 @@ How well ◊strong{cryptocurrencies} work as money is a topic for the ◊link[ne
     Even gold coins have problems. For instance it's quite difficult to separate real from fake coins---it requires expertise and specialized tools.
 }
 
+◊note-pos[#:top -35]{really-bad}
+◊note-pos[#:top -28]{smaller-denominations}
+◊note-pos[#:top -22]{marble-coin}
+◊note-pos[#:top -2.5]{gold-counterfeit}
+
 
 ◊subhead{The problem with fiat currencies}
 
@@ -393,6 +420,8 @@ It's not a requirement that the money must be backed by something, or have intri
 }
 
 The term ◊link[sound-money]{◊em{sound money}} refers to money that isn't prone to sudden changes in long term purchasing power, and the value is determined by the free market. If the supply of money differs from the demand, which will happen with fiat due to the disconnect between banks and the market, then there will be changes. While fiat has many positive properties, after the move away from the gold standard, it's now considered unsound money.
+
+◊note-pos[#:top -11.5]{fractional-banking-good}
 
 ◊(define sound-money "https://www.soundmoneydefense.org/sound-money-explained")
 

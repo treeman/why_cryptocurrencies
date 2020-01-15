@@ -5,7 +5,22 @@
 (require racket/pretty)
 (require "post-process.rkt")
 
-(provide feed-summary)
+(provide feed-summary feed-content)
+
+(define (feed-content post)
+  ; Remove some elements that don't render so well in feed context.
+  (define html
+    (->html (decode-elements
+              (get-doc post)
+              #:txexpr-proc style-remover
+              #:txexpr-elements-proc (elem-remover '("donations"
+                                                     "subscribe")))
+      #:splice? #t))
+  ; Wrap html in CDATA tag as it might ge interpreted as XML tags.
+  (string-append
+    "<![CDATA["
+    html
+    "]]>"))
 
 (define (feed-summary post)
   ; Remove some elements that don't render so well in feed context.

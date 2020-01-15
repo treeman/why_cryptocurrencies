@@ -2,7 +2,7 @@
 
 ◊(define-meta title "A defective system")
 ◊(define-meta subtitle "There is something terribly wrong with this system, isn't there?")
-◊(define-meta updated "2019-11-13T07:07:37+01:00")
+◊(define-meta updated "2020-01-15T20:07:17+01:00")
 ◊(define-meta uuid "b09419e3-0f3d-4473-b458-d0dad01ed4b8")
 
 ◊epigraph{
@@ -57,6 +57,7 @@ Who in turn will use it to buy other stuff, and in this way the counterfeited mo
     }
 }
 
+◊note-pos[#:top -14]{deflation}
 
 ◊ndef["deflation"]{
     The opposite is ◊em{deflation}, when money increases in value and buys you more stuff.
@@ -89,6 +90,9 @@ Counterfeiting means everyones savings---the "old" money---will lose value. This
 
 Counterfeiting also means redistributing wealth from everyone to the counterfeiter (and to a lesser extent people the counterfeiter buys from) at the same rate as the inflation eats up the value of money. Even though nobody's stealing your money, the effect is the same: your wealth relative to others will decrease.
 
+◊note-pos[#:top -49]{inflation-visualization}
+◊note-pos[#:top -21]{why-sweden?}
+
 
 ◊ndef["magic-printer"]{
     Maybe he's got a magic printer which can print perfect copies of a dollar bill. Normally printers even ◊link[print-money]{refuse to print images} looking like a dollar or other major currencies.
@@ -106,6 +110,9 @@ Counterfeiting also means redistributing wealth from everyone to the counterfeit
 While I think most will agree counterfeiting shouldn't be allowed, the modern economic system is built upon legal counterfeiting. There are entities who have the legal right to print money---with the same negative consequences on the economy that counterfeiting has. As noted earlier the central banks have this right, but regular banks can increase the money supply as well.
 
 The central banks, the Federal Reserve (Fed) in the U.S. or the European Central Bank (ECB) in the EU, are the only ones allowed to print physical money. Which they have to do, if only to replace old bills.◊sn{quantitive-easing} They also have an inflation target, usually 2% or 3%, meaning the goal is to devalue the money. The rationale is it drives economic growth because ◊link[inflation-rational]{shoppers will buy now to avoid higher prices later}.◊sn{inflation-growth?}
+
+◊note-pos[#:top -6]{quantitive-easing}
+◊note-pos{inflation-growth?}
 
 ◊ndef["quantitive-easing"]{
     If the central banks want to increase the money supply it's inefficient to print physical money. Instead they buy assets from banks who in turn can use the money as reserves while increasing the money supply. This is called ◊link[quantitive-easing]{◊em{quantitive easing}}, but it's unknown how well it actually works.
@@ -215,10 +222,11 @@ While it's difficult to point out causes, and it's even debatable why we got out
         ◊ndef["debt-ww2"]{
             Still, they were comparatively ◊link[new-deal-conservative]{conservative with increasing the debt}. To pay for World War II the debt ◊link[debt-us]{rose to $241 billion in 1946}.
         }
-
-
     }
 }
+
+◊note-pos[#:top -16]{forbade-gold}
+◊note-pos{debt-ww2}
 
 ◊(define debt-us "https://www.theatlantic.com/business/archive/2012/11/the-long-story-of-us-debt-from-1790-to-2011-in-1-little-chart/265185/")
 ◊(define new-deal-conservative "https://www.nytimes.com/2008/11/23/business/23view.html?_r=0")
@@ -250,10 +258,6 @@ Seen through this lens, it all makes sense. To help the government spend money i
 
 While taking out debt to fuel investments was only supposed to be a temporary measure, to help the economy during downturns, today we massively increase the debt all the time. For example we've seen a ◊link[record-bull-run]{record bull run} in 2009--2019, yet the U.S. debt doubled from $11 trillion to $22 trillion.◊sn{trump-debt}
 
-◊ndef["trump-debt"]{
-    Donald Trump promised to ◊link[trump-eliminate-debt]{eliminate the nation's debt in eight years}, and instead he greatly increased it. Let's just add that to the list of president Trump's list of broken promises.
-}
-
 ◊img[#:src "images/usa-debt.svg" #:link #t]{
     The ◊link[usa-national-debt]{federal debt of the United States}, measure in trillions of dollars, since 1966.  
     After the ◊link[financial-crisis]{2008 financial crisis} the amount of debt skyrocketed, signifying a shift in economic policy.
@@ -268,11 +272,18 @@ Taking out a loan essentially borrows money from the future you, since you have 
 
 This isn't a situation unique to the United States, but ◊link[national-debt-list]{a global phenomena}. While the U.S. has a national debt at 104% of ◊link[gdp]{GDP} (a way to compare relative debts between countries), Sweden has a debt of 38%, ◊nbsp{Germany 61%}, ◊nbsp{Italy 132%}, ◊nbsp{Greece 181%} and Japan a staggering 235%.◊sn{how-to-measure-debt}
 
+It seems like we're moving away from the original Keynesian ideas to something else, where paying off national debt matters less as we can just print more money.
+
+◊note-pos[#:top -67]{trump-debt}
+◊note-pos[#:top -7]{how-to-measure-debt}
+
+◊ndef["trump-debt"]{
+    Donald Trump promised to ◊link[trump-eliminate-debt]{eliminate the nation's debt in eight years}, and instead he greatly increased it. Let's just add that to the list of president Trump's list of broken promises.
+}
+
 ◊ndef["how-to-measure-debt"]{
     There are different ways to measure national debt, each with pros and cons. ◊link[gdp%]{Percentage of GDP} seems to be the common way to do it.
 }
-
-It seems like we're moving away from the original Keynesian ideas to something else, where paying off national debt matters less as we can just print more money.
 
 ◊(define gdp% "https://www.investopedia.com/terms/d/debtgdpratio.asp")
 ◊(define gdp "https://www.investopedia.com/terms/g/gdp.asp")
@@ -301,10 +312,6 @@ There's a worrying trend in the world: ◊link[global-inequality]{global inequal
 
 The inequality is on the rise in nearly every country. If we take a closer look at the United States it paints a gloomy picture:◊sn{report}
 
-◊ndef["report"]{
-    There's many more ways to look at inequality data, for more I recommend the ◊link[wid-report]{World Inequality Report}.
-}
-
 ◊img[#:src "images/income-inequality.svg" #:link #t]{
     Income share in the United States between 1962 and 2014.  
     Source ◊link[inequality-data]{World Inequality Database}.
@@ -315,6 +322,13 @@ The inequality is on the rise in nearly every country. If we take a closer look 
 }
 
 While the money-making machine isn't the cause of the inequality, it's a pretty difficult situation to reverse when even the national economy works against you. Printing money to solve problems will, in line with ◊link[rel-counterfeiting]{the previous counterfeiting example}, only fan the flames and make the situation worse.◊sn{trickle-down}
+
+◊note-pos[#:top -70]{report}
+◊note-pos{trickle-down}
+
+◊ndef["report"]{
+    There's many more ways to look at inequality data, for more I recommend the ◊link[wid-report]{World Inequality Report}.
+}
 
 ◊ndef["trickle-down"]{
     Some will argue that the trickle-down effect makes inflation affect everyone equally. Unfortunately that's not the case, as the rich will both receive the money first (via the banks) and they have better access to financial tools to hedge against inflation (investing in gold, real estate or offshore banking).
@@ -346,11 +360,15 @@ We want to pull back on stimulation when the economy is booming, so we're prepar
 
         The Federal Reserve is ◊link[fed-pouring]{pouring money into the financial system}. Printing an unlimited amount of money isn't great, not only because of the erosion of wealth, but rampant inflation can quickly destroy the economy.◊sn{hyperinflation-rome}
 
+
         ◊ndef["hyperinflation-rome"]{
             An interesting case is how ◊link[hyperinflation-rome]{hyperinflation took hold in ancient Rome}. Centuries of debasing the currency was followed by a sudden loss of trust and the collapse into hyperinflation. A lesson here is that rapid inflation can quickly throw the economy into chaos.
         }
     }
 }
+
+◊note-pos[#:top -10]{negative-interest}
+◊note-pos{hyperinflation-rome}
 
 To be fair, the Federal Reserve knows this isn't an ideal situation, so they tried to raise interest rates. Unfortunately the stock market reacted poorly---many people got angry---and now they've backtracked and lowered them again. When problems arise, they use the financial equivalent of ◊link[fed-sledgehammer]{taking a sledgehammer to squash a bug}.
 
@@ -365,6 +383,8 @@ So we're stuck in a situation where we don't have the tools to defend against a 
 }
 
 It seems to me if (or when) a recession comes we'll get caught with our pants down. And things have been looking pretty shaky a while now.
+
+◊note-pos[#:top -7]{winging-it}
 
 ◊(define swe-neg-rate "https://www.riksbank.se/en-gb/about-the-riksbank/history/2000-2018/negative-repo-rate-is-introduced/")
 ◊(define denmark-neg-rate "https://www.reuters.com/article/denmark-rates-jyske-bank/update-1-denmarks-jyske-bank-lowers-its-negative-rates-on-deposits-idUSL5N26B1AA")
@@ -385,6 +405,8 @@ While "printing more money" is a popular solution, ◊link[sound-money]{◊em{so
 }
 
 It's not easy to see how a switch to sound money would occur, and maybe it would introduce more problems than it solved. But it would mean manipulation of the money supply would disappear and we wouldn't build a mountain of debt, only repayable by the printing machines, and we wouldn't devalue our savings while increasing the wealth inequality. And we wouldn't cling on to the broken and defective economic theories in use today.
+
+◊note-pos[#:top -15]{debasement}
 
 
 ◊(define debasement "https://www.investopedia.com/terms/d/debasement.asp")

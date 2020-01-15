@@ -2,10 +2,10 @@
 
 ◊(define-meta title "About me, the author")
 ◊(define-meta subtitle "Hello, I'm Jonas")
-◊(define-meta updated "2019-11-05T07:54:33+01:00")
+◊(define-meta updated "2020-01-15T20:07:32+01:00")
 ◊(define-meta uuid "b1aaa891-a7c6-4bf4-a01c-4c43c0446abf")
 
-I wonder what you might think of someone who's writing a book about cryptocurrencies? Maybe you'll think of a teenage multi-millionaire or an old neckbeard raving about free software? Or perhaps an anarchist saying things like "governments are evil" and "taxation is theft"?◊mn{there-are}
+I wonder what you might think of someone who's writing a book about cryptocurrencies? Maybe you'll think of a teenage multi-millionaire or an old neckbeard raving about free software? Or perhaps an anarchist saying things like "governments are evil" and "taxation is theft"?◊sn{there-are}
 
 ◊ndef["there-are"]{
     It's easy to see why cryptocurrencies might attract people like this. Cryptocurrencies are all about freedom, and the free software movement (saying that ◊strong{all} software should be free) and anarchism seek freedom to the extreme.

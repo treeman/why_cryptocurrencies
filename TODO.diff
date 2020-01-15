@@ -1,3 +1,12 @@
+Sidenote rewrite:
+- Update "how to use" with new sidenotes behaviour
+- Go through all existing chapters and adjust sidenotes
+  Next is brave new world
+- Update date for -all- chapters
++ Allow feed to display everything again
+- Better way to refer to book sources for paragraphs
+- Use <sup> for note numbers? Might make it better for feed readers or reader view
+
 Summarize better:
 + What is a cryptocurrency?
 + How do cryptocurrencies work?
@@ -32,6 +41,9 @@ Write:
 + (Further research)
 
 Additional image ideas:
++ Gangster cop
++ Monster bankster
+
 + An image of me in front of the computer (cartoon stick dude style) (about me)
 + Schrödinger's marijuana (undesirable businesses)
 + A blind man leading a flock of blind men (blind leading the blind)
@@ -46,6 +58,14 @@ Additional image ideas:
 + EatBCH picture? But need to get in contact with someone first
 
 + An image for each section? To make it easier to remember?
+  Maybe have it to the right of epigraphs?
+    For mobile phones have it directly below?
+
+  About the book:
+  What is a cryptocurrency?: A gold coin
+  Better digital payments:
+  Brave new world: A nuke or pandora's box
+  Extensions:
 
 Code:
 - Better link handling
@@ -53,9 +73,18 @@ Code:
 Style:
 - Restyle conversation in freezing of merchant accounts
 
+Markup
++ Use <cite> when refering to books, or things with titles
+  https://developer.mozilla.org/en-US/docs/Web/HTML/Element/cite
+  See the financial crisis, where we refer to things inside text.
++ Use <time> in quotes (and other?)
++ Use <caption> for <table>? Instead of placing it in a figure with caption?
+
 Sanity:
 + Alt-text for all links
 + Setup cross chapter links after all chapters are written
 - Remove "there is" usage in favor of "there's"
 - while/that usage.
+- Remove "I will" usage in favor of "I'll"
+
 

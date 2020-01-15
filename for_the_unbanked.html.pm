@@ -2,7 +2,7 @@
 
 ◊(define-meta title "For the unbanked")
 ◊(define-meta subtitle "Digital payments for those without a bank account")
-◊(define-meta updated "2019-11-06T21:42:36+01:00")
+◊(define-meta updated "2020-01-15T20:09:27+01:00")
 ◊(define-meta uuid "875332fd-f5ad-4275-8254-008a2e74a4a0")
 
 ◊epigraph{
@@ -16,6 +16,8 @@
 In the previous chapters we've looked at some problems with having to get permission to accept digital payments, and what happens when we don't. This time we'll look at the reverse problem: when you can't make digital payments.
 
 To make digital payments you typically need a bank account◊sn{banks-required} and those without one are often called ◊em{unbanked}. Paying bills digitally, using credit cards and even mobile payments all require a bank account. If you don't have a bank account, you're essentially shut-out from the digital economy.
+
+◊note-pos[#:top -8]{banks-required}
 
 ◊ndef["banks-required"]{
     Maybe there's a way to work around the bank requirement, possibly by using in-game currencies, but they're severely limited compared to the digital payments we usually think about. In practice you need a bank account for useful digital payments.
@@ -82,6 +84,8 @@ The most commonly cited barrier was not having enough money. Around 60% said the
 
 Most cite several different reasons, making it hard to rank the issues in importance. For example many say they don't need an account, but if the other barriers were to disappear they might find accounts useful if only they had access to them. At least this gives a sense of what issues are present.
 
+◊note-pos[#:top -11]{too-little-money}
+
 
 ◊subhead{Unbanked with internet}
 
@@ -96,6 +100,10 @@ The question "But how do the unbanked pay for internet?" is always asked when di
 So about ◊strong{420 million} do have access to internet while being unbanked. I don't know if that's true or not, but anecdotally it seems almost all homeless people I've seen owns a smartphone of some sort. You can even get internet in Venezuela◊sn{venezuela-internet}, despite an unreliable power grid. And consider that even rich and successful ◊link[undesirable-chapter]{can become temporarily unbanked}, for example if banks arbitrarily decide porn stars and marijuana supporters aren't something they want to be associated with.◊sn{handelsbanken}
 
 ◊(define undesirable-chapter "/undesirable_businesses.html")
+
+◊note-pos[#:top -8]{venezuela-internet}
+◊note-pos{handelsbanken}
+
 
 ◊ndef["venezuela-internet"]{
     Reportedly Venezuela has one of the worst internet speeds in the world. Yet they still ◊link[venezuela-social-media]{use social media actively} and interestingly they also ◊link[venezuela-mining]{mine Bitcoin}.
@@ -147,6 +155,9 @@ One of the best ways to fight poverty is ◊link[economic-growth-poverty]{econom
         Globalization, or how the world has become more interconnected, has been a theme in the last century or two. It has never been easier to travel to the other side of the world, to talk to them over the internet or have them ship goods to you for very low fees.◊sn{containers}
 
         If people don't have access to digital payments the country risks becoming more isolated◊sn{china-isolation} and might miss out on the economic growth ◊link[globalization-economic-growth]{caused by globalization}. (◊nbsp{Of course} there are downsides with globalization as well, just look at the ◊link[trump-trade-war]{trade war} between the U.S. and China).
+
+        ◊note-pos[#:top -8]{containers}
+        ◊note-pos{china-isolation}
     }
 }
 
@@ -187,6 +198,9 @@ I don't really know how people without a bank account manage in Sweden or what t
 
 In China mobile payments are growing like mad. If you're a tourist you should get them, otherwise you'll have a tough time. This in combination with China's ◊em{social credit}, which ranks people's behaviors to make sure they're in line with the party, is a recipe for disaster. If you score badly you might not be allowed to fly and maybe you'll lose the privilege of using digital payments.
 
+◊note-pos[#:top -19]{moved-to-sweden}
+◊note-pos[#:top -11]{public-bathroom}
+
 ◊(define rel-economic-growth "#economic-growth")
 ◊(define rel-shut-out "#shut-out-from-society")
 ◊(define findex-report "https://globalfindex.worldbank.org/sites/globalfindex/files/2018-04/2017%20Findex%20full%20report_0.pdf")
@@ -202,8 +216,8 @@ There are a number of benefits cryptocurrencies have:
 ◊ndef["banking-the-unbanked"]{
     "Banking the unbanked" is a term cryptocurrency advocates like to use, and I even used it as the title of this chapter during the initial planning phase. But it's misleading as banks do things cryptocurrencies don't, for instance:
 
-    1. Gives out loans.
-    2. Safeguards your money (while you can hold cryptocurrencies yourself, it makes sense for many to let others hold them for you).
+    1. Extend loans.
+    2. Safeguard your money (while you can hold cryptocurrencies yourself, it makes sense for many to let others hold them for you).
 }
 
 ◊ol{

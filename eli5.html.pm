@@ -2,7 +2,7 @@
 
 ◊(define-meta title "Why cryptocurrencies in five minutes")
 ◊(define-meta subtitle "ELI5 - what is the inherent values of cryptocurrencies?")
-◊(define-meta updated "2019-06-18T15:05:18+02:00")
+◊(define-meta updated "2020-01-15T20:09:07+01:00")
 ◊(define-meta uuid "cef34868-0317-4c6f-8b9f-cfb66464f2a8")
 
 While cryptocurrencies are mostly seen as speculative assets---get rich quick schemes---they have valuable properties and valuable use cases. For example:
@@ -12,11 +12,15 @@ While cryptocurrencies are mostly seen as speculative assets---get rich quick sc
 
         Merchants have to pay a 1--4% fee for every credit card transaction, cryptocurrency transactions only come with a ◊link[cheaper-fees]{small fixed fee.}◊sn{bitcoin-fees}}
 
+        ◊note-pos[#:top -2]{bitcoin-fees}
+
     ◊li{◊strong{Settles faster}
 
         You receive money ◊link[settlement-time]{under an hour}, while it takes days to receive other digital payments---which can also be reversed weeks or months later. (Of course payment notification is instant, like other payment systems.)
 
         This means merchants don't have to worry about having a purchase reversed, which usually means they have to swallow the loss.◊sn{chargeback-fraud}
+
+        ◊note-pos[#:top -2]{chargeback-fraud}
         }
 
     ◊li{◊strong{No risk of having your account frozen}
@@ -42,8 +46,11 @@ While cryptocurrencies are mostly seen as speculative assets---get rich quick sc
     ◊li{◊strong{Financial privacy}
 
         Banks, credit card companies and payment processors have all your financial transactions on record. Cryptocurrencies allows you to reclaim some of your privacy.◊sn{bitcoin-privacy}
+
+        ◊note-pos[#:top -2]{bitcoin-privacy}
     }
 }
+
 
 Of course cryptocurrencies don't solve everything perfectly, they're held back by adoption and price volatility in particular. And as with all new technology they will be associated with positive and negative change.
 
@@ -54,7 +61,7 @@ If you want to learn more and see more examples just continue reading, or go to 
 }
 
 ◊ndef["bitcoin-privacy"]{
-    Please note that Bitcoin (and most other cryptocurrencies) are only ◊em{pseudo-anonymous}. There are others---like Monero---that improves the situation. ◊link[anonymous]{Read this} for more info.
+    Please note that Bitcoin (and most other cryptocurrencies) are only ◊em{pseudo-anonymous}. There are others---like Monero---that improves the situation. Read the section of ◊link[privacy-challenge]{the privacy and fungibility challenge}.
 }
 
 ◊ndef["chargeback-fraud"]{
@@ -73,7 +80,7 @@ If you want to learn more and see more examples just continue reading, or go to 
 ◊(define freeze "/freezing_of_merchant_accounts.html")
 
 ◊(define properties-chapter "/properties_of_a_cryptocurrency.html")
-◊(define anonymous "/properties_of_a_cryptocurrency.html#anonymous")
+◊(define privacy-challenge "/challenges.html#privacy-and-fungibility")
 ◊(define undesirable "/undesirable_businesses.html")
 ◊(define unbanked "/for_the_unbanked.html")
 ◊(define borderless "/global_currency.html")

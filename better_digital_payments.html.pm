@@ -2,7 +2,7 @@
 
 ◊(define-meta title "Better digital payments")
 ◊(define-meta subtitle "Benefits over existing payment systems")
-◊(define-meta updated "2019-09-05T08:09:15+02:00")
+◊(define-meta updated "2020-01-15T20:08:14+01:00")
 ◊(define-meta uuid "011ff2b6-0e56-4501-a6ca-63e9ac6dcc65")
 
 ◊epigraph{

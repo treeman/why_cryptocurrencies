@@ -2,7 +2,7 @@
 
 ◊(define-meta title "The cashless dystopia")
 ◊(define-meta subtitle "The cashless society is a nightmare")
-◊(define-meta updated "2020-01-02T19:14:29+01:00")
+◊(define-meta updated "2020-01-15T20:08:34+01:00")
 ◊(define-meta uuid "55993260-1c9a-4bcf-ace5-7773e65bf7b5")
 
 ◊epigraph{
@@ -22,6 +22,8 @@ In Sweden, and in the world in general, we're moving closer to the utopian cashl
 
 But it's not all good. We've already touched on several problems in earlier chapters, for example how ◊link[rel-undesirable]{legitimate businesses might get banned} in our attempts to ban illegal goods and services, or how the cashless society ◊link[rel-privacy]{is a privacy nightmare} yet ◊link[rel-swiss-bank]{tax evasion is still a huge problem}.  In this chapter I'll try to tie together some of these issues and paint a picture of how the cashless society isn't a dream---it's a nightmare. But it's a nightmare cryptocurrencies might help us avoid.
 
+◊note-pos{utopia}
+
 
 ◊subhead{Road to hell}
 
@@ -39,16 +41,15 @@ Instead we're encouraged to use digital payments (ignoring the ◊link[rel-unban
     It sounds hypocritical to me when a major U.S. bank laundered ◊strong{$378 billions} ◊link[us-banks-mexico-drug-gangs]{for Mexico's drug gangs}, the kind of gangs that leaves behind ◊link[gang-mass-grave]{enormous mass-graves}.
 }
 
-◊ndef["privacy"]{
-    In contrast to other digital payments cryptocurrencies can give you very good privacy and it's in practice impossible for anyone to know how much you have. We'll explore this more in the chapter ◊link[rel-swiss-bank]{A swiss bank account in your pocket}.
-}
-
 ◊qt[#:author "Barclay Bram"
     #:url "http://nautil.us/issue/73/play/wechat-is-watching"]{
   I use WeChat to pay my rent. I use it to pay for my utilities. I use it to top up my phone credit. I use WeChat to pay for the metro system. I use it to scan QR codes on the back of shared-bike schemes throughout the city. I use it to call cabs.
 }
 
 In many countries we're already close to the cashless society. As we saw in the quote, WeChat is absolutely integral for many people in China and here in Sweden using cash is very rare, and many stores, restaurants and even banks have dropped cash completely.
+
+◊note-pos{structuring}
+◊note-pos{laundering}
 
 ◊(define rel-undesirable "/undesirable_businesses.html")
 ◊(define rel-global "global_currency.html")
@@ -106,6 +107,8 @@ The worst part of this story is that it's not even that far-fetched, and all exa
         ◊ndef["asset-forfeiture"]{
             This is related to civil asset forfeiture, which we'll look at in the ◊link[rel-seizures]{next chapter}.
         }
+
+        ◊note-pos{asset-forfeiture}
     }
     ◊li{
         I too was in trouble when I'd forgotten my credit cards, because many restaurants in Sweden don't accept cash. A girl in a coffee shop even helped me buy a warm chocolate drink, when I had trouble finding food (I don't drink coffee).
@@ -129,6 +132,8 @@ For instance Kevin's bank might have blocked him because they discovered he'd be
 
 There are already companies that collect this kind of information, and sell it for profit. It's not unreasonable to think that employers would want this to help them decide who to hire, and who to fire.
 
+◊note-pos{no-privacy}
+
 ◊(define wells-fargo-closed "https://www.cnbc.com/2018/08/22/wells-fargo-closes-bank-account-of-candidate-who-supports-marijuana.html")
 ◊(define china-social-credit2 "https://www.inkstonenews.com/china/chinas-13-million-discredited-individuals-face-discrimination-thanks-social-credit-system/article/3003319")
 ◊(define michigan-man-house "https://reason.com/2019/11/06/a-michigan-man-underpaid-his-property-taxes-by-8-41-the-county-seized-his-property-sold-it-and-kept-the-profits/")
@@ -140,16 +145,19 @@ When you look closer at an utopia, you'll often find that it's not such a good p
 
 The cashless society isn't an utopia, but a dystopia that'll suppress the lowest class harder than we can imagine. If you cannot use the same money as others, you cannot have a home, pay your bills or buy food. You cannot get a normal job or even beg for money, since you cannot use the money they give you. You'll be completely closed off from the rest of society.◊sn{what-then?}
 
+But you wouldn't be alone. ◊link[brits-struggle]{25 million Brits} would struggle in a cashless society and China has already ◊link[china-bans-23m]{banned millions from buying travel tickets} via their ◊link[china-social-credit #:quote #t]{social credit} system. And don't forget about the ◊link[rel-unbanked]{1.7 billion unbanked adults} in the world, who don't fit into a cashless society.
+
+◊note-pos{other-ex}
+◊note-pos{what-then?}
+
+◊ndef["other-ex"]{
+    There are many examples of the utopia/dystopia theme, ranging from ◊link[demolition-man]{Demolition Man} and ◊link[hot-fuzz]{Hot Fuzz} to ◊link[hunger-games]{The Hunger Games} and ◊link[harry-potter]{Harry Potter}.
+}
+
 ◊ndef["what-then?"]{
     What would happen to you then? My guess is you'd band together with others in the same situation, and you'll form a mini society where you'll use some other form of money. Maybe gift cards or "old" cash?
 
     You might be able to interact with the normal society by bartering, but you'll probably turn to illegal activities like theft or prostitution.
-}
-
-But you wouldn't be alone. ◊link[brits-struggle]{25 million Brits} would struggle in a cashless society and China has already ◊link[china-bans-23m]{banned millions from buying travel tickets} via their ◊link[china-social-credit #:quote #t]{social credit} system. And don't forget about the ◊link[rel-unbanked]{1.7 billion unbanked adults} in the world, who don't fit into a cashless society.
-
-◊ndef["other-ex"]{
-    There are many examples of the utopia/dystopia theme, ranging from ◊link[demolition-man]{Demolition Man} and ◊link[hot-fuzz]{Hot Fuzz} to ◊link[hunger-games]{The Hunger Games} and ◊link[harry-potter]{Harry Potter}.
 }
 
 ◊(define brits-struggle "https://www.which.co.uk/news/2018/12/25m-brits-would-struggle-in-a-cashless-society/")
@@ -176,6 +184,8 @@ The lack of financial privacy and needing permission to use its money are the bi
 The cashless society does indeed have its benefits.  It's more convenient to use digital money---just blip your card or your phone, instead of counting change---or how businesses don't have to store large amounts of cash in stores and risk break-ins. Cryptocurrencies also have these benefits.
 
 This is why cryptocurrencies are sometimes called "digital cash"; they combine the important permissionless and privacy properties of cash with the convenience of digital money, and it's the only way a cashless society would make sense.
+
+◊note-pos{privacy?}
 
 
 ◊(define privacy-challenge "/challenges.html#privacy-and-fungibility")

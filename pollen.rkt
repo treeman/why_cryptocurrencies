@@ -2,19 +2,23 @@
 
 (require txexpr pollen/decode pollen/misc/tutorial pollen/tag)
 (require racket/list racket/string)
-(require "rkt/tags.rkt")
-(require "rkt/links.rkt")
-(require "rkt/layout.rkt")
-(require "rkt/index.rkt")
+(require "rkt/decode.rkt")
 (require "rkt/feed.rkt")
+(require "rkt/index.rkt")
+(require "rkt/layout.rkt")
+(require "rkt/links.rkt")
+(require "rkt/sidenotes.rkt")
+(require "rkt/tags.rkt")
 (require "rkt/toc.rkt")
 
 (provide (all-from-out racket/list racket/string)) ; make util functions available
-(provide (all-from-out "rkt/tags.rkt"))
-(provide (all-from-out "rkt/links.rkt"))
-(provide (all-from-out "rkt/layout.rkt"))
-(provide (all-from-out "rkt/index.rkt"))
+(provide (all-from-out "rkt/decode.rkt"))
 (provide (all-from-out "rkt/feed.rkt"))
+(provide (all-from-out "rkt/index.rkt"))
+(provide (all-from-out "rkt/layout.rkt"))
+(provide (all-from-out "rkt/links.rkt"))
+(provide (all-from-out "rkt/sidenotes.rkt"))
+(provide (all-from-out "rkt/tags.rkt"))
 (provide (all-from-out "rkt/toc.rkt"))
 (provide (all-defined-out))
 
@@ -27,7 +31,6 @@
   (provide (all-defined-out))
 
   (define template-prefix "chapter")
-  ;; splice-me needs to NOT be a block tag to allow us to inject
   (define block-tags (append '(img table tbody tr dt dd dl) default-block-tags))
 
   ;; Use our own publish script instead...

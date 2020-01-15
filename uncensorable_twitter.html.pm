@@ -2,7 +2,7 @@
 
 ◊(define-meta title "Uncensorable Twitter")
 ◊(define-meta subtitle "Permanent and uncensorable messages")
-◊(define-meta updated "2019-09-12T19:37:10+02:00")
+◊(define-meta updated "2020-01-15T20:11:03+01:00")
 ◊(define-meta uuid "281185fa-996c-44fa-8ae1-f2323e080f6e")
 
 ◊epigraph{
@@ -51,6 +51,9 @@ Images or videos aren't actually embedded but references outside services. ◊li
     Bitcoin Cash is a good option because it has ◊link[bch-low-fees]{low fees} and a larger OP_RETURN limit, making it a cheap and easy base for a messaging platform.
 }
 
+◊note-pos[#:top -30]{why-bch}
+◊note-pos[#:top -23]{memo-length}
+
 ◊(define bch-low-fees "https://bitcoinfees.cash/")
 
 
@@ -63,6 +66,9 @@ If this kind of social network becomes popular you may end up in a position wher
 And what if someone posts something about you? I sometimes feel lucky I didn't grow up in the modern age, with the horrible cyber-bullying you hear about, but imagine if someone posts a degrading video of you? Today we might be able to get Facebook or someone to remove it, but if you base your social network on a cryptocurrency... No such luck.
 
 But everything isn't lost! As you still need websites or apps to display the information, it's still possible to sort-of hide the information for many people---assuming you get all of them to agree. But you cannot erase the data completely.◊sn{erase-data} That said I still don't think Facebook on a blockchain is a good idea.
+
+◊note-pos[#:top -22]{fired-social-media}
+◊note-pos[#:top -4]{erase-data}
 
 ◊ndef["erase-data"]{
     If the data is embedded in OP_RETURN (as is the case for ◊link[memo-cash]{memo.cash}) it's actually easier to get it removed, because nodes can remove it and still be able to validate the blockchain. It's extra data that isn't actually needed anywhere.
@@ -88,6 +94,8 @@ At the same time there's something compelling about the idea of having a forum w
 We've seen examples of censorship in the chapter ◊link[censorship-is-real]{uncensorable donations}, so let's not repeat ourselves too much. One example is that Twitter is completely censored in China, and you might get arrested if you bypass their internet wide block of it.
 
 A Twitter-like service based on a cryptocurrency does not have these problems. ◊link[uncensorable-donations]{◊nbsp{As we saw before}}, this kind of service is uncensorable, and there is no company or service China could put pressure on to get inconvenient content removed. Therefore we're free to discuss China's human rights abuses (like their ◊link[forced-organ-harvesting]{forced organ harvesting}) and the information can never truly be removed.
+
+◊note-pos[#:top -19]{intellectual-ddos}
 
 ◊(define forced-organ-harvesting "https://chinatribunal.com/final-judgement-report/")
 ◊(define censorship-is-real "/uncensorable_donations.html#censorship-is-real")

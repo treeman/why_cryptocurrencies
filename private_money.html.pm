@@ -2,7 +2,7 @@
 
 ◊(define-meta title "Private money")
 ◊(define-meta subtitle "Reclaim your financial privacy with cryptocurrencies")
-◊(define-meta updated "2019-09-17T07:19:33+02:00")
+◊(define-meta updated "2020-01-15T20:10:12+01:00")
 ◊(define-meta uuid "9f90581c-24f1-4653-9b4a-d86a9ec9e365")
 
 
@@ -100,6 +100,8 @@ Caring about privacy is a natural instinct---for good reason. It's not just abou
   ◊li{Identity theft can ruin your life
 
       When someone assumes your identity, and use it to issue credit cards or promote scams, it can ruin your credit score, cost you millions, and force you to abandon your job and your house. Using only your private information people can literally ◊link[identity-theft-story]{take over your life}.◊sn{how-to-destroy-someones-life}
+
+      ◊note-pos{how-to-destroy-someones-life}
   }
   ◊li{Criminals target rich people
 
@@ -163,6 +165,9 @@ Even if you don't think you have anything to hide, others do. Here are some exam
 
 As Snowden's quote in the beginning of the chapter says: just because you choose not to exercise your right, why should you remove the right for others? Privacy should be a ◊em{choice}---not something that's chosen for you.
 
+◊note-pos[#:top -45]{focus-economic}
+◊note-pos[#:top -18]{porn-story}
+
 ◊(define teenage-pregnancy "https://www.nytimes.com/2012/02/19/magazine/shopping-habits.html?pagewanted=all&_r=0")
 ◊(define murder-family-honor "https://www.nationalgeographic.com/culture/2002/02/thousands-of-women-killed-for-family-honor/")
 ◊(define dowry-murder "https://en.wikipedia.org/wiki/Dowry_system_in_India#Dowry_murder")
@@ -199,6 +204,8 @@ Even the constitution of the United States---written more than a hundred years b
     The right of the people to be secure in their persons, houses, papers, and effects, against unreasonable searches and seizures, shall not be violated, and no Warrants shall issue, but upon probable cause, supported by Oath or affirmation, and particularly describing the place to be searched, and the persons or things to be seized.
 }
 
+◊note-pos[#:top -30]{adult-version}
+
 
 ◊subhead{We're living in a Stasi fantasy}
 
@@ -217,6 +224,8 @@ They used 100,000 employees and between 500,000 to 2,000,000 snitches to maintai
   In an authoritative state, rights derive from the state and are granted to people. In a free state, rights derive form people and are granted to the state.
 }
 
+◊note-pos[#:top -12]{threats}
+
 The goal of the Stasi was to imprison everyone critical of the regime. To do that they tried to map out the lives of everyone---where they went, what they did, what they said and who they talked to. This was painstakingly difficult and required tremendous resources.
 
 But today we live in a society the Stasi couldn't even dream of. There's no need for a shady person to follow us around, because we already have a surveillance device in our pocket. All information they could ever want is already available, they just have reach out and grab it.◊sn{phone-surveillance}
@@ -226,6 +235,8 @@ But today we live in a society the Stasi couldn't even dream of. There's no need
 }
 
 Back in 2013 Edward Snowden revealed that governments were doing just this.
+
+◊note-pos[#:top -6]{phone-surveillance}
 
 Here are just ◊link[snowden-leaks]{some of the things} he leaked:
 
@@ -245,6 +256,8 @@ Here are just ◊link[snowden-leaks]{some of the things} he leaked:
 
         The government can ask for (or rather demand) data from the big tech companies like Facebook, Google or Apple. If they refuse they can ◊link[hack-big-tech]{just hack them} and steal the data anyway.◊sn{nsa-legality}
 
+        ◊note-pos{nsa-legality}
+
         ◊ndef["nsa-legality"]{
             The N.S.A. has proved again and again that they stand above such trivial things as legality. For example James Clapper, the Director of National Intelligence, ◊link[clapper]{lied under oath to the Senate}, without any consequence.
 
@@ -256,6 +269,8 @@ Here are just ◊link[snowden-leaks]{some of the things} he leaked:
         There's an internal search engine where N.S.A. employees can search through your emails, pictures, medical records and private Facebook messages. Like Google, but with the contents of your online life.
 
         Snowden writes in ◊link[permanent-record-book #:quote #t]{Permanent Record} that it was common for N.S.A. employees to abuse this to spy on their girlfriends, ex-girlfriends or girls they were interested in. This includes sharing nude photos with their co-workers, which the girls either took themselves or photos the N.S.A. took by hacking their webcam. (Quite literally a stalker's wet dream.)◊sn{no-good-guys}
+
+        ◊note-pos{no-good-guys}
 
         ◊ndef["no-good-guys"]{
             This is a counterpoint to the argument that it's fine for the government or the police to have this data. The government or the police aren't full of only good people---there will always be bad ones somewhere.
@@ -308,6 +323,9 @@ You see, all this data is stored ◊em{forever}, just waiting to be used to nail
 
 Snowden now lives in exile in Russia, where the black bags of the U.S. cannot reach. He recently released his memoir ◊link[permanent-record-book #:quote #t]{Permanent Record} which details his life leading up to the leaks. It's a great book, but the U.S. doesn't want you to read it. They even ◊link[snowden-lawsuit]{filed a lawsuit against him} and seized the revenue of the book.◊sn{post-lawsuit}
 
+◊note-pos[#:top -24]{jews}
+◊note-pos{post-lawsuit}
+
 ◊ndef["post-lawsuit"]{
     As in response to the lawsuit his book shot up to the Amazon bestseller list. Snowden concluded that ◊link[snowden-good-for-bitcoin #:quote #t]{this is good for bitcoin}.
 }
@@ -329,11 +347,14 @@ Snowden now lives in exile in Russia, where the black bags of the U.S. cannot re
     The road to hell is paved with good intentions.
 }
 
-I think people often give up their privacy because of ◊strong{fear}. Since the ◊link[9-11]{September 11 attacks} we've been showered with fear-inducing news and propaganda, making our minds numb. This fear of terrorism (and murderers, pedophiles and other Bogeymen) has made us go to war, consent to torture and give up our human rights.◊sn{retaliation}
+I think people often give up their privacy because of ◊strong{fear}. Since the ◊link[9-11]{September 11 attacks} we've been showered with fear-inducing news and propaganda, making our minds numb. This fear of terrorism (and murderers, pedophiles and other Bogeymen) has made us go to war, consent to torture (or "advanced interrogation") and give up our human rights.◊sn{retaliation}
+
+◊(define permanent-record-ref
+   `(cite ,(link permanent-record-book "Permanent Record")))
 
 ◊ndef["retaliation"]{
     Just to put the overreaction in perspective: 2,977 people died in the 9/11 terrorist attacks, but one million died because of the American retaliation.  
-    (Edward Snowden, ◊link[permanent-record-book #:quote #t]{Permanent Record})
+    (Edward Snowden, ◊|permanent-record-ref|)
 
     That's like sentencing a shoplifter to death---a completely disproportionate response.
 }
@@ -347,13 +368,12 @@ For example people may be willing to give up their privacy, because it might mak
 }
 
 
-◊ndef["strong-encryption"]{
-    With strong encryption it's impossible for ◊em{anyone} to read what you write or access your data.
-}
-
 ◊qt[#:author "Philip R. Zimmermann"]{
   If privacy is outlawed, only outlaws will have privacy.
 }
+
+◊note-pos[#:top -31]{retaliation}
+◊note-pos[#:top -10]{tsa}
 
 ◊(define 9-11 "https://en.wikipedia.org/wiki/September_11_attacks")
 ◊(define tsa-security-theater "https://www.aclu.org/sites/default/files/field_document/dem17-tsa_detection_report-v02.pdf")
@@ -430,6 +450,10 @@ While the great man theory is interesting, wouldn't it be better to describe mod
 So instead of looking for a great man to solve our privacy problems, maybe technology is our solution? With strong encryption we can keep our messages private and our data safe, and with the great innovation called tape we can prevent our webcams from spying on us.
 
 So far we've had to surrender our privacy to gain access to digital payments and even to our own money. But nobody needs to know how much cryptocurrencies we have or what we do with them.◊sn{bitcoin-worse} They can help us claw back some of that privacy---and isn't that pretty great?
+
+◊note-pos[#:top -28]{nothing-changed}
+◊note-pos[#:top -19]{invention}
+◊note-pos[#:top -5]{bitcoin-worse}
 
 
 ◊ndef["bitcoin-worse"]{

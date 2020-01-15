@@ -2,7 +2,7 @@
 
 ◊(define-meta title "Timestamping service")
 ◊(define-meta subtitle "Verifiable proof of knowledge at a certain time")
-◊(define-meta updated "2019-09-21T10:25:45+02:00")
+◊(define-meta updated "2020-01-15T20:10:53+01:00")
 ◊(define-meta uuid "b92733e8-9356-487e-abb9-510ac0cc5735")
 
 ◊epigraph{
@@ -21,7 +21,7 @@ In ◊link[how-do-cryptos-work]{How do cryptocurrencies work?} we saw that crypt
 
 ◊subhead{What is a timestamping service?}
 
-A timestamping service offers proof that a message or document existed at a certain time with certain contents. The idea of timestamping information is ◊link[trusted-timestamping]{according to Wikipedia} centuries old, dating back to ◊em{at least} the 17th century.
+A timestamping service offers proof that a message or document existed at a certain time with certain contents. The idea of timestamping information is ◊link[trusted-timestamping]{according to Wikipedia} centuries old, dating back to ◊em{at least} the 17◊sup{th} century.
 
 A modern example is the ◊link[wayback-machine]{Wayback Machine}, a service which allows you to see how a certain website looked at a certain time. A bit like traveling back in time, but with your web-browser instead of a ◊link[delorean]{DeLorean}.◊sn{back-to-the-future}
 
@@ -47,6 +47,9 @@ Let's travel back in time and look at the site ◊link[hn]{Hacker News}, a tech 
 }
 
 As long as we can trust the Wayback Machine (and I do consider them generally trustworthy) we can be fairly sure this is correct. Letting a trusted party like the Wayback Machine handle timestamping, called ◊link[trusted-timestamping]{◊em{trusted timestamping}}, is a solved problem with different kinds of standards but---as the name implies---there's always the caveat of requiring a trusted party to verify the timestamps.
+
+◊note-pos[#:top -36]{back-to-the-future}
+◊note-pos[#:top -29]{hn-bitcoin}
 
 ◊(define wayback-machine "https://web.archive.org/")
 ◊(define trusted-timestamping "https://en.wikipedia.org/wiki/Trusted_timestamping")
@@ -84,6 +87,9 @@ What is a timestamping service useful for? Here are some examples:
         What if you've discovered a major software bug and want to disclose it anonymously, but still want the ability to prove you were the one who found it? ◊link[rel-bug]{Later in the chapter} we'll go into details of how the discoverer of one of the most catastrophic bugs in Bitcoin ever accomplished this using timestamping.
     }
 }
+
+◊note-pos[#:top -25]{wiki-tensio}
+◊note-pos[#:top -12]{wills}
 
 ◊(define rel-bug "#a-real-life-example")
 
@@ -127,7 +133,11 @@ With cryptocurrencies it's possible to do away with the trusted party requiremen
       }
     }
 
-    Here we see that the timestamps differ, at most by ◊nbsp{12 minutes}. Although not visible in the table the nodes tell us that blocks 1003--1006 happened some time between 10:15 and 11:08. We cannot be sure down to seconds, and maybe not even minutes, but it gives a good estimate if we're only interested in an hourly or daily timestamp.◊sn{small-difference}
+    Here we see that the timestamps differ, at most by ◊nbsp{12 minutes}. Although not visible in the table the nodes tell us that blocks 1003--1006 happened some time between 10:15 and 11:08. We cannot be sure down to seconds or minutes, but it gives a good estimate if we're only interested in an hourly or daily timestamp.◊sn{small-difference}
+
+    ◊note-pos[#:top -33]{partial-order}
+    ◊note-pos[#:top -26]{miners-timestamp}
+    ◊note-pos{small-difference}
 
     ◊ndef["small-difference"]{
         In practice well connected nodes (with up to date clocks) will display a small time difference because blocks usually travel quickly through the network.  A ◊nbsp{12 minute} time difference is extremely unlikely and unwanted, I only used it as an illustrative example.
@@ -192,11 +202,14 @@ And inserted it ◊link[inflation-bug-timestamp]{into the BTC blockchain} using 
 
 This proves that reddit user awemany had knowledge of the inflation bug before it was disclosed and therefore that he was the one who found it.◊sn{sufficient}
 
+Please read ◊link[600-microseconds]{his writeup} of how he found the bug and the related ◊link[inflation-bug-reddit]{discussion on reddit} for more info.
+
+◊note-pos[#:top -7]{sufficient}
+
 ◊ndef["sufficient"]{
     Technically it doesn't conclusively prove he was the one who found it, only that he knew about the bug before everyone else. In this case it was also an afterthought and he only created the timestamp after having disclosed the bug.
 }
 
-Please read ◊link[600-microseconds]{his writeup} of how he found the bug and the related ◊link[inflation-bug-reddit]{discussion on reddit} for more info.
 
 
 ◊subhead{We can do it ourselves}
@@ -227,6 +240,8 @@ Let's now encode and timestamp it using the Bitcoin Cash blockchain:
         ◊code{
             dab965bb19823669b8481846b9672c694a9af1b808314956b43154a0472942d8
         }
+
+        ◊note-pos[#:top -10]{others-command}
     }
     ◊li{Insert it in a transaction using OP_RETURN.
 
@@ -242,6 +257,9 @@ Let's now encode and timestamp it using the Bitcoin Cash blockchain:
         }
 
         We can double-check the transaction on a blockexplorer, ◊link[transaction-ex]{such as Blockchair}, to see that the OP_RETURN value matches our SHA-256 hash (look for the decoded OP_RETURN field).◊sn{j@}
+
+        ◊note-pos[#:top -29]{tx-value}
+        ◊note-pos{j@}
     }
 }
 
@@ -266,7 +284,7 @@ With that our timestamp is prepared and nobody can see our original message, onl
     }
     ◊li{Lookup the timestamp.
 
-        According to ◊link[transaction-ex]{Blockchair} the transaction was included in a block mined 20:17 September 15th, 2019 (UTC). Verifying the timestamp with other blockexplorers or full nodes is left as an exercise to the reader, just be cautious of timezone differences.
+        According to ◊link[transaction-ex]{Blockchair} the transaction was included in a block mined 20:17 September 15, 2019 (UTC). Verifying the timestamp with other blockexplorers or full nodes is left as an exercise to the reader, just be cautious of timezone differences.
     }
 }
 

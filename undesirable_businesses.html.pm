@@ -2,8 +2,8 @@
 
 ◊(define-meta title "“Undesirable” businesses")
 ◊(define-meta subtitle "The ones payment processors don't want to do business with")
-◊(define-meta updated "2019-11-06T20:35:22+01:00")
-◊(define-meta uuid "ac14d4a1-3796-4f5b-9350-b56e796625a1")
+◊(define-meta updated "2020-01-15T20:11:11+01:00")
+◊(define-meta uuid "7f619868-39ff-43db-92b4-af452ee4c8ed")
 
 If you want to accept digital payments today you need to partner with a payment processor, for example Stripe or PayPal. Usually that's not a problem---but what if they say no?◊mn{banks}
 
@@ -57,6 +57,9 @@ They are absolutely dependent on nearby ATMs, because the move towards cashless 
 
 Not having access to digital payments hurts, but there are workarounds. Cash does work---in physical stores. There might also be (uncertain) ◊link[state-payment-cannabis]{ways to accept digital payments}, a basic requirement for online stores.
 
+◊note-pos[#:top -26]{pot-banks}
+◊note-pos[#:top -9]{atms}
+
 ◊(define pot-banks-no "https://www.nytimes.com/2018/01/04/magazine/where-pot-entrepreneurs-go-when-the-banks-just-say-no.html")
 ◊(define scat "https://en.wikipedia.org/wiki/Schr%C3%B6dinger%27s_cat")
 ◊(define cannabis-legality "https://en.wikipedia.org/wiki/Legality_of_cannabis_by_U.S._jurisdiction")
@@ -93,6 +96,8 @@ Instead they have a third party request the payment on their behalf and do some 
 ◊(define stripe-restricted "https://stripe.com/restricted-businesses")
 
 These things are on the gray area legal wise,◊sn{legal?} so the companies that does this have high fees---VERY high fees. While regular payment processors may have ~3-4% fees, these intermediary fees can be as high as ◊strong{30%}. That's ludicrously expensive for low margin businesses.
+
+◊note-pos[#:top -8]{legal?}
 
 ◊ndef["legal?"]{
     I don't know if this practice is legal or not, I just want to note they don't really have many options.
@@ -144,6 +149,8 @@ You might wonder what does it matter if these businesses disappear. Maybe you do
 The cannabis business is experiencing ◊link[cannabis-growth]{explosive growth}, hinting at how many people do care. Porn is another thing that is very popular---but very few would admit they watch it. I can see why some people object against them... But what's the problem with auctions? (Other than being an easy target for ◊link[rel-charge-back-fraud]{charge back fraud}.)
 
 Why should people running and using ◊strong{legal} businesses be punished for arbitrary reasons? A society that punishes people for doing something legal seems insane to me. (Yes, legality is different from morality, a topic we'll revisit in the chapter about ◊link[darknet-markets]{darknet markets}.)
+
+◊note-pos[#:top -20]{privacy}
 
 ◊(define re-education "https://www.amnesty.org/en/latest/news/2018/09/china-up-to-one-million-detained/")
 ◊(define cannabis-growth "https://www.marijuanaseo.com/cannabis-industry-statistics/")
