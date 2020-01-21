@@ -18,7 +18,7 @@
 These are the most important properties of cryptocurrencies as I see it:
 
 ◊ul{
-    ◊li{No trusted third party}
+    ◊li{No more third parties}
     ◊li{No counterfeiting}
     ◊li{Transactions are irreversible}
     ◊li{Predetermined emission rate}
@@ -31,7 +31,7 @@ They highlight the difference between cryptocurrencies and other payment systems
 
 
 
-◊subhead{No trusted third party}
+◊subhead{No more third parties}
 
 The important difference between a cryptocurrency and digital payments we have today is the removal of a third party. Payments are ◊em{peer-to-peer} just as if you gave someone a dollar bill or a gold coin.◊sn{p2p}
 
@@ -152,18 +152,19 @@ Either way it's not an argument against cryptocurrencies in general as they can 
 
 ◊subhead{Private}
 
-Commonly used payment systems, like credit cards for example, asks you to give up your privacy as all payments are recorded and they require you to tie your identity to them. But cryptocurrencies can be used privately---there's no need to disclose your identity or your transaction history. Making them similar to cash in this respect.◊sn{bitcoin-privacy}
+Commonly used payment systems, like credit cards for example, asks you to give up your privacy as all payments are recorded and they require you to tie your identity to them. But cryptocurrencies can be used privately---there's no need to disclose your identity or your transaction history---making them similar to cash in this respect.◊sn{bitcoin-privacy}
+
 
 ◊ndef["bitcoin-privacy"]{
-    Bitcoin, like most cryptocurrencies, do record all transactions in a public ledger. But cryptocurrencies like ◊link[Monero]{Monero} ◊link[privacy-challenge]{tries to solve this problem}.
+    Bitcoin, like most cryptocurrencies, do record all transactions in a public ledger. So it's a little misleading to say that cryptocurrencies are inherently private, but some cryptocurrencies like ◊link[Monero]{Monero} tries to ◊link[privacy-challenge]{solve this problem}.
 }
 
-◊(define privacy-challenge "/challenges.html#privacy")
+◊(define privacy-challenge "/challenges.html#privacy-and-fungibility")
 
 
 ◊subhead{Large and small amounts behave the same}
 
-In contrast to cash or gold where large amounts can be cumbersome to handle there's no difference between large or small transfers in a cryptocurrency. Transaction costs are the same for small transfers as for large transfers and they are just as secure. Wallets can store as much as you're comfortable with.
+In contrast to cash or gold where large amounts can be cumbersome to handle there's no difference between large or small transfers in a cryptocurrency. Transaction costs are the same for small transfers as for large transfers and they are just as secure and wallets can store as much as you're comfortable with.
 
 It's also easy to split coins into small parts.◊sn[#:top -4]{satoshis} In fact you don't have to think about dividing at all, you use a wallet just like a credit card---a transfer is always exact.
 

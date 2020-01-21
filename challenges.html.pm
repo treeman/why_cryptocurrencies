@@ -16,7 +16,11 @@ Bitcoin, like most cryptocurrencies, uses a public ledger where all transactions
 
 ◊ndef["rich-list"]{
     It's possible to for example build a ◊link[rich-list]{list of the Bitcoin addresses with the most coins} and to monitor them to see when they send or receive coins.
+
+    There are also companies like ◊link[chainalysis]{Chainalysis} that work to track your cryptocurrency assets and to analyze your financial activity.
 }
+
+◊(define chainalysis "https://www.chainalysis.com/")
 
 ◊img[#:src "/images/coin-tracing.png"]{
     After the merchant receives a payment from John, the merchant can see that John has sent 13 BTC to another address and that John still has 40 - 1 - 13 = 26 BTC on the original address.
