@@ -37,7 +37,7 @@ In practice some countries already have separated money from their state, as the
 
 Gold might also be an example of money outside of state control---there's nobody with exclusive access to gold after all. But in practice someone has to convert the gold to coins for it to be usable as money, and that includes a "government approved" stamp on them, which gives some sort of control over the money. After all, it's difficult to determine what a coin is made of so we just trust the stamp on it.
 
-Maybe a better example is shell money, or other money found in nature, where you just pick up them up and start using them.
+Maybe a better example is shell money, or other money found in nature, where you just pick up them up and start using them. Although they're lacking compared to coins or modern money, there's no one in charge of minting or stamping shells.
 
 So the idea that a state doesn't have to have control over their own money isn't really that strange, as there are many examples of the contrary.
 
