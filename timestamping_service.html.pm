@@ -111,7 +111,7 @@ With cryptocurrencies it's possible to do away with the trusted party requiremen
     Transactions in an older block are older, transactions in a newer block are newer and transactions in the same block occur at the same time.◊sn{partial-order} You can observe, in a decentralized way, when a block with your transaction is created and use that as your message timestamp.
 
     ◊ndef["partial-order"]{
-        A blockchain creates a ◊link[partial-order]{partial order} between transactions where there is no order between transactions in the same block.
+        A blockchain creates a ◊link[partial-order]{partial order} between transactions where there's no order between transactions in the same block.
     }
 
     The blocks themselves don't contain a trustworthy timestamp,◊sn{miners-timestamp} but we can use the many different nodes observing the network to create an estimation. This could for example be the timestamps recorded by two nodes:

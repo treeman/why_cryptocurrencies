@@ -42,7 +42,7 @@ To decide how well cryptocurrencies can function as money, we'll take a look at 
 
 All in all cryptocurrencies fulfil the properties excellently.
 
-Cryptocurrencies can also be considered to be ◊link[sound-money]{◊em{sound money}}---the value is entirely market driven and there is no manipulation of the supply.◊sn{backed}
+Cryptocurrencies can also be considered to be ◊link[sound-money]{◊em{sound money}}---the value is entirely market driven and there's no manipulation of the supply.◊sn{backed}
 
 ◊(define sound-money "https://www.soundmoneydefense.org/sound-money-explained")
 
@@ -264,7 +264,7 @@ With the motivations:
     ◊li{Fiat isn't a good ◊strong{store of value}. If you store money in your bank account or beneath your mattress inflation will eat away the value. Cryptocurrencies, despite the increase in price, are far too volatile.}
 }
 
-While cryptocurrencies match up poorly, there is no perfect alternative.
+While cryptocurrencies match up poorly, there's no perfect alternative.
 
 Note that unlike the fundamental properties---which don't change that much---how well money function change with time. For example a few hundred years ago gold coins would be used everywhere.◊sn{bad-example?}
 

@@ -51,7 +51,7 @@ And I must admit I'm also being selfish---writing a book is on my bucket list.
 
 ◊subhead{What this book is}
 
-This book tries to describe what value cryptocurrencies have using several examples. In particular I will argue that:
+This book tries to describe what value cryptocurrencies have using several examples. In particular I'll argue that:
 
 ◊ol{
   ◊li{Cryptocurrencies aren't just scams.◊sn[#:top -10]{scams}}
@@ -82,7 +82,7 @@ See the chapter ◊link[challenges]{Challenges for cryptocurrencies} for an expl
 A problem-centric view is great for an engineer or a problem solver but it also limits foresight. For example the computer had many problems and drawbacks when first introduced, but today we ridicule statements like these:
 
 ◊qt[#:author "Thomas Watson, president of IBM" #:date 1943]{
-    I think there is a world market for maybe five computers
+    I think there's a world market for maybe five computers
 }
 
 ◊qt[#:author "Ken Olsen, founder of Digital Equipment Corporation" #:date 1977]{
@@ -101,7 +101,7 @@ This isn't a deep dive on a technical level. Neither will we focus on a single i
 ◊ndef["schneier"]{
     Schneier brings an interesting perspective and he's right about one very important aspect: contrary to popular belief cryptocurrencies don't remove ◊strong{all} trust.
 
-    To counter his point that "cryptocurrencies are useless" all you have to do is provide one counterexample where they're useful. I will give several.
+    To counter his point that "cryptocurrencies are useless" all you have to do is provide one counterexample where they're useful. I'll give several.
 }
 
 

@@ -159,7 +159,7 @@ To relate it back to cryptocurrencies the choice between "attack" and "retreat" 
 
 You may think most in the network are honest so can't you just ask everyone?
 
-Unfortunately there's a serious problem here. As there is no barrier to participate in the network and no identity control a single person can have multiple identities:
+Unfortunately there's a serious problem here. As there's no barrier to participate in the network and no identity control a single person can have multiple identities:
 
 ◊img[#:src "/images/sybil-generals.png"]{
     This is what Honest Harry sees. A diverse group of honest individuals.

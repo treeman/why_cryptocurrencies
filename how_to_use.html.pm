@@ -8,7 +8,7 @@
 
 Each chapter is supposed to be standalone so you can jump around and read it however you want. The only prerequisite is to have a basic understanding of what a cryptocurrency does, which is described in ◊link[the-first-chapter]{the first section}, but if you want you can skip that as well and go back later if needed.
 
-This book is a work in progress, so I will add and rework chapters as I go. If you want to keep up to date you have three options:
+This book is a work in progress, so I'll add and rework chapters as I go. If you want to keep up to date you have three options:
 
 ◊ul{
   ◊li{Subscribe to the ◊link[feed-url]{feed}}

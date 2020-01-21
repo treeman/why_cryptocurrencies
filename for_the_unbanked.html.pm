@@ -228,7 +228,7 @@ There are a number of benefits cryptocurrencies have:
     }
     ◊li{There is no KYC process.
 
-        Because cryptocurrencies are permissionless there is no ◊link[kyc]{Know your customer} (KYC) process, which banks are required to perform. That's good for people who might not have proper documentation such as ID-cards or birth certificates.
+        Because cryptocurrencies are permissionless there's no ◊link[kyc]{Know your customer} (KYC) process, which banks are required to perform. That's good for people who might not have proper documentation such as ID-cards or birth certificates.
     }
     ◊li{The ◊link[cheaper-faster]{fees are low}.
 

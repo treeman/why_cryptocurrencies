@@ -16,7 +16,7 @@ Money is something completely necessary in our society, most people probably com
 
 Not just how the physical coins and pieces of paper are made, but why does money exist? What makes it valuable? Are there different kinds of money? And are some forms of money better than others?◊mn{money-or-currency}
 
-Before getting interested in cryptocurrencies I too had never asked these questions. I will try to provide some insight into this admittedly complex topic.
+Before getting interested in cryptocurrencies I too had never asked these questions. I'll try to provide some insight into this admittedly complex topic.
 
 ◊note-pos[#:top -8]{money-or-currency}
 
@@ -321,7 +321,7 @@ To function as money ◊link[money-props]{money should have these properties}:�
 
         Two items of the same type should always be considered equal.
 
-        The difference between ◊em{fungibility} and ◊em{uniformity} is confusing, so I will bundle them together.◊sn{fungible-uniform}
+        The difference between ◊em{fungibility} and ◊em{uniformity} is confusing, so I'll bundle them together.◊sn{fungible-uniform}
 
         It means shares in a company should be worth the same, even if bought at different times and at different prices. And all gold coins of the same denomination should contain the same amount of gold.
     }
@@ -402,7 +402,7 @@ How well ◊strong{cryptocurrencies} work as money is a topic for the ◊link[ne
 
 ◊subhead{The problem with fiat currencies}
 
-The money we usually use today is a little different from coins made of precious materials. We use coins made with cheap metal, paper notes and our money is often just stored digitally at a bank. After abandoning the gold standard there is nothing physically backing up the value of money.◊sn{intrinsic-value}
+The money we usually use today is a little different from coins made of precious materials. We use coins made with cheap metal, paper notes and our money is often just stored digitally at a bank. After abandoning the gold standard there's nothing physically backing up the value of money.◊sn{intrinsic-value}
 
 ◊ndef["intrinsic-value"]{
     Some say cryptocurrencies can't be money because it lacks intrinsic value---like gold has. But fiat currencies don't have intrinsic value either. The only value comes from the function as money.

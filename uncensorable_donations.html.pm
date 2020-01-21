@@ -104,7 +104,7 @@ Censorship is a ◊link[censorship-global]{global problem} and is a big problem 
 
 ◊link[wikileaks]{WikiLeaks} is a relevant example for illustrating the importance of uncensorable payments as it shows the influence powerful actors have over payment processors, and in turn the funding for WikiLeaks. We will focus on the Chelsea Manning leaks and the aftermath, where WikiLeaks got their donation channels shut down for exposing government atrocities.
 
-I will bring up the ◊link[assange-events]{events surrounding Julian Assange}, because they give context and might be relevant to the story of government abuse, but it's not about him or any other person in particular. Even if Julian Assange is guilty of rape it does not change the importance of the leaks or WikiLeaks as a concept, which goes above individuals.◊sn{association-fallacy}
+I'll bring up the ◊link[assange-events]{events surrounding Julian Assange}, because they give context and might be relevant to the story of government abuse, but it's not about him or any other person in particular. Even if Julian Assange is guilty of rape it does not change the importance of the leaks or WikiLeaks as a concept, which goes above individuals.◊sn{association-fallacy}
 
 This is ◊strong{not} a glorification of WikiLeaks---they have ◊link[wikileaks-immoral]{endangered individuals} via their leaks. Instead I hope to show that uncensorable donations are important, because exposing government atrocities can lead to your donations being blocked (and government atrocities should be exposed).
 
