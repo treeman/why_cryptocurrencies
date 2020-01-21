@@ -198,7 +198,9 @@
             #:url [url #f]
             #:author-url [author-url #f]
             #:date [date #f]
-            #:emphasis [emphasis #f] . txt)
+            #:emphasis [emphasis #f]
+            #:center [center #f]
+            . txt)
   (define cite `())
 
   ; Convert date to string, for ease of use later.
@@ -234,7 +236,13 @@
       `(div ((class "emphasis")) "(Emphasis mine)")
       ""))
 
+  (define attrs
+    (if center
+      `((class "center"))
+      `()))
+
   `(blockquote
+     ,attrs
      ,@txt
      ,emphasis-text
      (footer ,@(add-between cite ", "))))

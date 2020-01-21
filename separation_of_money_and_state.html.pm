@@ -23,9 +23,12 @@ But one idea made me go "Wow, that could be massive!" And that's how cryptocurre
 ◊qt[#:author "Sabaton"
     #:src "Carolus Rex"
     #:quote-src #t
-    #:url "https://www.youtube.com/watch?v=-yIZBUgKfuw"]{
-  No allegiance, I will swear no oath
-  Crowned by God not by the church as my power is divine
+    #:url "https://www.youtube.com/watch?v=-yIZBUgKfuw"
+    #:center #t]{
+ I was chosen by heaven
+Say my name when you pray
+To the skies
+See Carolus rise
 }
 
 I know it might be difficult to entertain the notion that a country shouldn't control their own money, and that the mere suggestion is outrageous. Here I find the parallel to the relationship between religion and state relevant.
@@ -35,13 +38,18 @@ For many centuries, millennia even, religion and the state were inseparable. I'm
 Countless rulers have based their legitimacy on religious grounds, that they should rule because God says so. This is useful, since you have to question God to question them, and who are you to question God? For example both the Roman emperors and the Japanese emperors used this to legitimise themselves. Even today it's very common that the church should be the one to crown the kings and queens, as if to say "we give you the right to rule".◊sn{carolus-rex}
 
 ◊ndef["carolus-rex"]{
-    Charles XII of Sweden, also called "Carolus Rex", acknowledged the power of God but rejected the church when he placed the crown upon his own head instead of letting someone from the church do it. It's what Sabaton meant with "crowned by God not by the church".
+    Charles XII of Sweden, also called "Carolus Rex", acknowledged the power of God but rejected the church when he placed the crown upon his own head instead of letting someone from the church do it.
 }
 
-This is why it was a big deal when the Swedish king ◊link[gustav-vasa]{Gustav Vasa} took steps towards the ◊link[reformation]{Protestant Reformation}, which weakened the political power of the church.
+This is why it was a big deal when the Swedish king ◊link[gustav-vasa]{Gustav Vasa} took steps towards the ◊link[reformation]{Protestant Reformation}. It wasn't motivated by religious reasons---he simply wanted control over the church's property. In a sense the Diet at Västerås in 1527 was the first step in separating the church from the Swedish state, a process that was completed in 2000 when they were formally separated.
+
+Separating church from the state would've been unthinkable, yet it's now a given that the church shouldn't dictate what the state should do. It's instead the opposite that's the exception.
+
+
+I don't think cryptocurrencies and religion have much in common.
 
 ◊(define gustav-vasa "https://www.britannica.com/biography/Gustav-I-Vasa")
-◊(define reformation "https://www.britannica.com/biography/Gustav-I-Vasa")
+◊(define reformation "https://www.britannica.com/event/Reformation")
 
 ◊;Sweden 1 Jan 2000 formally separated the church from the state.
 ◊;https://www.dagen.se/dokument/sa-fri-ar-svenska-kyrkan-fran-staten-egentligen-1.1632522
