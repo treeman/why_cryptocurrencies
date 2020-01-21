@@ -3,7 +3,7 @@
 ◊(define-meta title "The blind leading the blind")
 ◊(define-meta subtitle "We don't understand, and neither do the experts")
 ◊(define-meta published "2019-11-11T00:00:00+01:00")
-◊(define-meta updated "2020-01-15T20:10:48+01:00")
+◊(define-meta updated "2020-01-21T08:29:08+01:00")
 ◊(define-meta uuid "4684c5b0-9f93-479b-a8ab-165601a430c9")
 
 ◊epigraph{
@@ -210,7 +210,7 @@ Cryptocurrencies are interesting because they allow anyone to verify the number 
 
 ◊(define rome-debasing "https://money.visualcapitalist.com/currency-and-the-collapse-of-the-roman-empire/")
 
-You can also predict how many coins will be created and when, it's coded into the rules of the cryptocurrency after all. While Bitcoin ◊link[emission-rate]{mimics the rate that gold is mined}, there's no risk of counterfeit bitcoin or a meteor made of bitcoin crashing on earth to disrupt the supply, which there is with gold or other precious materials.◊sn{inflation-bug}
+You can also predict how many coins will be created and when, it's coded into the rules of the cryptocurrency after all. While Bitcoin ◊link[emission-rate]{mimics the rate that gold is mined}, there's no risk of counterfeit bitcoin or a meteor made of bitcoin crashing on earth to disrupt the supply, which there's with gold or other precious materials.◊sn{inflation-bug}
 
 ◊ndef["inflation-bug"]{
     There's instead a risk of ◊link[inflation-bug]{bugs in the code} which may allow hackers to print coins.

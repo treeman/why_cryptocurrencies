@@ -3,7 +3,7 @@
 ◊(define-meta title "Freezing of merchant accounts")
 ◊(define-meta subtitle "The account your business relies on can be frozen at any time")
 ◊(define-meta published "2019-06-14T00:00:00+01:00")
-◊(define-meta updated "2020-01-15T20:09:37+01:00")
+◊(define-meta updated "2020-01-21T08:28:23+01:00")
 ◊(define-meta uuid "ac14d4a1-3796-4f5b-9350-b56e796625a1")
 
 ◊epigraph{
@@ -23,21 +23,19 @@ This chapter continues on the same idea as the ◊link[prev]{previous one}, but 
 Imagine coming in to work one day and having this conversion with your boss:
 
 ◊div[#:class "story"]{
+    ◊trow{I'm sorry John, but we'll pay you in 6 months.}
+    ◊trow{What?}
+    ◊trow{Don't worry, you'll still get your full salary, but we'll pay it in 6 months.}
+    ◊trow{But why?}
+    ◊trow{You apparently didn't put one of the new coversheets on your TPS reports."◊sn{office-space}}
+    ◊trow{TPS reports...??}
 
-    "I'm sorry John, but we'll pay you in 6 months."
-
-    "What?"
-
-    "Don't worry, you'll still get your full salary but we'll pay it in 6 months."
-
-    "But why?"
-
-    "You apparently didn't put one of the new coversheets on your TPS reports."◊sn{office-space}
-
-    "TPS reports...??"
-
-    ◊note-pos[#:top -5]{office-space}
+    ◊note-pos[#:top -4]{office-space}
 }
+
+
+◊(define (trow . args)
+  `(div ((class "talk")) ,@args))
 
 
 ◊ndef["office-space"]{

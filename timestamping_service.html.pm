@@ -3,7 +3,7 @@
 ◊(define-meta title "Timestamping service")
 ◊(define-meta subtitle "Verifiable proof of knowledge at a certain time")
 ◊(define-meta published "2019-09-21T00:00:00+01:00")
-◊(define-meta updated "2020-01-15T20:10:53+01:00")
+◊(define-meta updated "2020-01-21T08:29:15+01:00")
 ◊(define-meta uuid "b92733e8-9356-487e-abb9-510ac0cc5735")
 
 ◊epigraph{
@@ -111,7 +111,7 @@ With cryptocurrencies it's possible to do away with the trusted party requiremen
     Transactions in an older block are older, transactions in a newer block are newer and transactions in the same block occur at the same time.◊sn{partial-order} You can observe, in a decentralized way, when a block with your transaction is created and use that as your message timestamp.
 
     ◊ndef["partial-order"]{
-        A blockchain creates a ◊link[partial-order]{partial order} between transactions where there is no order between transactions in the same block.
+        A blockchain creates a ◊link[partial-order]{partial order} between transactions where there's no order between transactions in the same block.
     }
 
     The blocks themselves don't contain a trustworthy timestamp,◊sn{miners-timestamp} but we can use the many different nodes observing the network to create an estimation. This could for example be the timestamps recorded by two nodes:

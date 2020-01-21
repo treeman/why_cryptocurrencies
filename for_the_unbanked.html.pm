@@ -3,7 +3,7 @@
 ◊(define-meta title "For the unbanked")
 ◊(define-meta subtitle "Digital payments for those without a bank account")
 ◊(define-meta published "2019-09-05T00:00:00+01:00")
-◊(define-meta updated "2020-01-15T20:09:27+01:00")
+◊(define-meta updated "2020-01-21T08:28:08+01:00")
 ◊(define-meta uuid "875332fd-f5ad-4275-8254-008a2e74a4a0")
 
 ◊epigraph{
@@ -228,7 +228,7 @@ There are a number of benefits cryptocurrencies have:
     }
     ◊li{There is no KYC process.
 
-        Because cryptocurrencies are permissionless there is no ◊link[kyc]{Know your customer} (KYC) process, which banks are required to perform. That's good for people who might not have proper documentation such as ID-cards or birth certificates.
+        Because cryptocurrencies are permissionless there's no ◊link[kyc]{Know your customer} (KYC) process, which banks are required to perform. That's good for people who might not have proper documentation such as ID-cards or birth certificates.
     }
     ◊li{The ◊link[cheaper-faster]{fees are low}.
 

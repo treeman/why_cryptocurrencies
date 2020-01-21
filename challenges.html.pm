@@ -3,7 +3,7 @@
 ◊(define-meta title "Challenges for cryptocurrencies")
 ◊(define-meta subtitle "Large unsolved problems with cryptocurrencies")
 ◊(define-meta published "2019-12-09T00:00:00+01:00")
-◊(define-meta updated "2020-01-15T20:08:41+01:00")
+◊(define-meta updated "2020-01-21T08:28:00+01:00")
 ◊(define-meta uuid "c13d8405-fb3e-411c-b035-aae08eedddf1")
 
 While cryptocurrencies do some things very well, there are several hard unsolved problems with cryptocurrencies. Here's a description of some of them.
@@ -16,7 +16,11 @@ Bitcoin, like most cryptocurrencies, uses a public ledger where all transactions
 
 ◊ndef["rich-list"]{
     It's possible to for example build a ◊link[rich-list]{list of the Bitcoin addresses with the most coins} and to monitor them to see when they send or receive coins.
+
+    There are also companies like ◊link[chainalysis]{Chainalysis} that work to track your cryptocurrency assets and to analyze your financial activity.
 }
+
+◊(define chainalysis "https://www.chainalysis.com/")
 
 ◊img[#:src "/images/coin-tracing.png"]{
     After the merchant receives a payment from John, the merchant can see that John has sent 13 BTC to another address and that John still has 40 - 1 - 13 = 26 BTC on the original address.

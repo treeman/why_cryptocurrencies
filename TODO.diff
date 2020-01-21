@@ -22,6 +22,7 @@ Summarize better:
 Rewrite:
 + Read through earlier chapters for more polish
 - Rewrite cryptos in 5 minutes
++ Rewrite in the beginning to say that it doesn't matter what conclusion you draw (if cryptos are good or bad). The important thing is to make an informed decision.
 
 Write:
 + Separation of money and state
@@ -63,7 +64,6 @@ Code:
 - Better link handling
 
 Style:
-- Restyle conversation in freezing of merchant accounts
 - Better way to refer to book sources for paragraphs
 
 Markup
@@ -76,8 +76,5 @@ Markup
 Sanity:
 + Alt-text for all links
 + Setup cross chapter links after all chapters are written
-- Remove "there is" usage in favor of "there's"
-- while/that usage.
-- Remove "I will" usage in favor of "I'll"
 
 
