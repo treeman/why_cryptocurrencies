@@ -3,7 +3,7 @@
 ◊(define-meta title "How do cryptocurrencies work?")
 ◊(define-meta subtitle "Decentralized consensus")
 ◊(define-meta published "2019-05-03T20:08:34+01:00")
-◊(define-meta updated "2020-01-15T20:09:52+01:00")
+◊(define-meta updated "2020-01-21T08:28:34+01:00")
 ◊(define-meta uuid "320751d9-9a28-4e91-9469-b44b83e12475")
 
 This is my attempt to explain how a standard cryptocurrency like Bitcoin works. Other cryptocurrencies may diverge on various points but the fundamentals are the same.◊sn{others}
@@ -159,7 +159,7 @@ To relate it back to cryptocurrencies the choice between "attack" and "retreat" 
 
 You may think most in the network are honest so can't you just ask everyone?
 
-Unfortunately there's a serious problem here. As there is no barrier to participate in the network and no identity control a single person can have multiple identities:
+Unfortunately there's a serious problem here. As there's no barrier to participate in the network and no identity control a single person can have multiple identities:
 
 ◊img[#:src "/images/sybil-generals.png"]{
     This is what Honest Harry sees. A diverse group of honest individuals.

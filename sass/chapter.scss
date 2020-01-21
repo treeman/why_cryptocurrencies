@@ -489,11 +489,32 @@ figure .sidenote {
 }
 
 .story {
-    padding-top: 1rem;
+    padding: 1rem 0;
     margin: 1.5rem 0;
     border-top: 1px dashed $body-hr-color;
     border-bottom: 1px dashed $body-hr-color;
+
+    .talk:before {
+        content: "–";
+        padding-right: 0.3rem;
+    }
+    .talk:not(:first-child) {
+        margin-top: 0.6rem;
+    }
+
+    // Avoid double spacing at the bottom.
+    p:last-of-type {
+        margin-bottom: 0;
+    }
+    // Avoid ugly spacing when sidenote is placed at the end.
+    .sidenote:last-child {
+        margin-bottom: 0 !important;
+    }
 }
+
+.story-talking {
+}
+
 
 .appendix, .error {
     max-width: 600px;

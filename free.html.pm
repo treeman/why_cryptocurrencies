@@ -3,7 +3,7 @@
 ◊(define-meta title "Completely free")
 ◊(define-meta subtitle "Read it online for free without cost of any kind")
 ◊(define-meta published "2019-04-12T00:00:00+01:00")
-◊(define-meta updated "2020-01-15T20:09:33+01:00")
+◊(define-meta updated "2020-01-21T08:28:15+01:00")
 ◊(define-meta uuid "4ede8ca8-fd2e-4112-9d00-e383f94e1a01")
 
 This book is completely free for you to read online and will be so forever. There will be no ads, no tracking and no crypto mining in the browser.◊sn{browser-mining}
@@ -31,7 +31,7 @@ You can also send donations from anywhere in the world ◊link[cheaper-faster]{n
     }
 }
 
-If you're missing a coin you ◊em{really} want to use please ◊link[mailto]{contact me}. If it's not too much hassle I will consider it, but please no ◊link[snake-oil]{snake oil}.
+If you're missing a coin you ◊em{really} want to use please ◊link[mailto]{contact me}. If it's not too much hassle I'll consider it, but please no ◊link[snake-oil]{snake oil}.
 
 ◊ndef["browser-mining"]{
     Some sites have replaced ads on their sites and instead use visitors' computers to mine for them. A novel way to use cryptocurrencies but with questionable efficiency. Some do this without asking or notifying you which is definitely scammy. Therefore many adblockers block them outright.

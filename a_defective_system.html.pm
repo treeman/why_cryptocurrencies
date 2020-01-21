@@ -3,7 +3,7 @@
 ◊(define-meta title "A defective system")
 ◊(define-meta subtitle "There is something terribly wrong with this system, isn't there?")
 ◊(define-meta published "2019-11-13T00:00:00+01:00")
-◊(define-meta updated "2020-01-15T20:07:17+01:00")
+◊(define-meta updated "2020-01-21T08:27:30+01:00")
 ◊(define-meta uuid "b09419e3-0f3d-4473-b458-d0dad01ed4b8")
 
 ◊epigraph{
@@ -47,7 +47,7 @@ Who in turn will use it to buy other stuff, and in this way the counterfeited mo
 ◊ol{
     ◊li{Higher prices.
 
-        Because there is more money going around, with the same amount of goods, the prices will rise. For instance if all the money in the world would double overnight, then naturally all prices would double too. Yesterday's $100 bill would today only get you $50 worth of stuff today.
+        Because there's more money going around, with the same amount of goods, the prices will rise. For instance if all the money in the world would double overnight, then naturally all prices would double too. Yesterday's $100 bill would today only get you $50 worth of stuff today.
 
         When prices rise and the same amount of money buys you less stuff, we call it ◊em{inflation}.◊sn{deflation} It's how my grandmother could buy candy for one cent (◊sans-tnum{0.01 SEK}) when she was a child, while today our smallest coin is ◊sans-tnum{1 SEK}.
 
@@ -156,7 +156,7 @@ Although the central banks are ultimately responsible, it's the regular banks wh
         (div ((class "cell")) ,bank)
         (div ((class "cell")) ,jane))))
 
-There is now ◊sans-tnum{11 000} money circulating the system. Because an IOU is treated like a SEK for all intents and purposes we can even say that there is ◊sans-tnum{11 000 SEK} now after we started with only ◊sans-tnum{1 000 SEK}. The bank printed ◊sans-tnum{10 000 SEK} from thin air and has only ◊sans-tnum{1 000 SEK} to back them up.  The ratio of SEK to IOU, in this example 10%, is called the reserve.
+There is now ◊sans-tnum{11 000} money circulating the system. Because an IOU is treated like a SEK for all intents and purposes we can even say that there's ◊sans-tnum{11 000 SEK} now after we started with only ◊sans-tnum{1 000 SEK}. The bank printed ◊sans-tnum{10 000 SEK} from thin air and has only ◊sans-tnum{1 000 SEK} to back them up.  The ratio of SEK to IOU, in this example 10%, is called the reserve.
 
 We might wonder why stop at only printing ◊sans-tnum{10 000 SEK}? Why not ◊sans-tnum{100 000 SEK}? Or more? When the bank gives out IOUs they do need to repay them, otherwise they'll fail and become bankrupt. In the example above if Jane would withdraw ◊sans-tnum{2 000 SEK} the bank would fail, because it can only repay ◊sans-tnum{1 000 SEK}.
 

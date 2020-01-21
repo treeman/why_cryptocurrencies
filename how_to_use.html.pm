@@ -3,12 +3,12 @@
 ◊(define-meta title "How to use this book")
 ◊(define-meta subtitle "Just some minor things to keep in mind")
 ◊(define-meta published "2019-04-12T00:00:00+01:00")
-◊(define-meta updated "2020-01-15T20:09:58+01:00")
+◊(define-meta updated "2020-01-21T08:28:42+01:00")
 ◊(define-meta uuid "a69e0036-a749-4f7c-b02e-dbcfa2776540")
 
 Each chapter is supposed to be standalone so you can jump around and read it however you want. The only prerequisite is to have a basic understanding of what a cryptocurrency does, which is described in ◊link[the-first-chapter]{the first section}, but if you want you can skip that as well and go back later if needed.
 
-This book is a work in progress, so I will add and rework chapters as I go. If you want to keep up to date you have three options:
+This book is a work in progress, so I'll add and rework chapters as I go. If you want to keep up to date you have three options:
 
 ◊ul{
   ◊li{Subscribe to the ◊link[feed-url]{feed}}
