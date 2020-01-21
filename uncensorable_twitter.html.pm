@@ -3,7 +3,7 @@
 ◊(define-meta title "Uncensorable Twitter")
 ◊(define-meta subtitle "Permanent and uncensorable messages")
 ◊(define-meta published "2019-09-25T00:00:00+01:00")
-◊(define-meta updated "2020-01-15T20:11:03+01:00")
+◊(define-meta updated "2020-01-21T08:29:35+01:00")
 ◊(define-meta uuid "281185fa-996c-44fa-8ae1-f2323e080f6e")
 
 ◊epigraph{
