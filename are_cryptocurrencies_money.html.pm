@@ -16,7 +16,7 @@ To decide how well cryptocurrencies can function as money, we'll take a look at 
 ◊ol{
     ◊li{◊strong{Acceptable}
 
-        Nobody is excluded from using cryptocurrencies---they're open to everyone by design.◊sn{crypto-acceptable}
+        Nobody's excluded from using cryptocurrencies---they're open to everyone by design. The drawback is that you need a device with internet connection.◊sn{crypto-acceptable}
     }
     ◊li{◊strong{Divisible}
 
@@ -28,7 +28,9 @@ To decide how well cryptocurrencies can function as money, we'll take a look at 
     }
     ◊li{◊strong{Fungible & Uniform}
 
-        One coin is like any other.◊sn{fungibility}
+        For most cryptocurrencies fungibility is problematic. If all transaction history is public, like it is in Bitcoin, it could be used to ◊link[us-blacklist]{blacklist certain addresses} and in the long run break fungibility, if coins having touched a blacklisted address becomes less valuable.
+
+        Cryptocurrencies like Monero tries to ◊link[privacy-challenge]{solve this problem}, so I'll say that cryptocurrencies are fungible.
     }
     ◊li{◊strong{Limited in supply}
 
@@ -44,11 +46,11 @@ All in all cryptocurrencies fulfil the properties excellently.
 
 Cryptocurrencies can also be considered to be ◊link[sound-money]{◊em{sound money}}---the value is entirely market driven and there's no manipulation of the supply.◊sn{backed}
 
+◊(define privacy-challenge "/challenges.html#privacy-and-fungibility")
 ◊(define sound-money "https://www.soundmoneydefense.org/sound-money-explained")
 
 ◊note-pos[#:top -40]{crypto-acceptable}
 ◊note-pos[#:top -27]{backups}
-◊note-pos[#:top -20]{fungibility}
 ◊note-pos{backed}
 
 ◊ndef["backed"]{
@@ -56,13 +58,7 @@ Cryptocurrencies can also be considered to be ◊link[sound-money]{◊em{sound m
 }
 
 ◊ndef["crypto-acceptable"]{
-    The only requirement is a mobile phone and an internet connection. A fairly small requirement given the stated purpose being ◊em{digital} cash.
-}
-
-◊ndef["fungibility"]{
-    Transaction history can be traced in Bitcoin. It could be used to ◊link[us-blacklist]{blacklist certain addresses} and it might in the long run break fungibility, where coins having touched a blacklisted address becomes less valuable.
-
-    Cryptocurrencies like Monero counteract this.
+    A fairly small requirement given the stated purpose being ◊em{digital} cash, but it's undoubtedly a drawback.
 }
 
 ◊(define us-blacklist "https://home.treasury.gov/news/press-releases/sm556")
