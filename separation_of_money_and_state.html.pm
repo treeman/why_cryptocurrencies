@@ -20,9 +20,28 @@ But one idea made me go "Wow, that could be massive!" And that's how cryptocurre
 
 ◊subhead{Religion and state}
 
+◊qt[#:author "Sabaton"
+    #:src "Carolus Rex"
+    #:quote-src #t
+    #:url "https://www.youtube.com/watch?v=-yIZBUgKfuw"]{
+  No allegiance, I will swear no oath
+  Crowned by God not by the church as my power is divine
+}
+
 I know it might be difficult to entertain the notion that a country shouldn't control their own money, and that the mere suggestion is outrageous. Here I find the parallel to the relationship between religion and state relevant.
 
 For many centuries, millennia even, religion and the state were inseparable. I'm not even sure it was a conscious decision, rather the mere idea that it could be any other way was simply unthinkable. For many that's just how it was, like how the sun rose every morning or that you got hungry without food.
+
+Countless rulers have based their legitimacy on religious grounds, that they should rule because God says so. This is useful, since you have to question God to question them, and who are you to question God? For example both the Roman emperors and the Japanese emperors used this to legitimise themselves. Even today it's very common that the church should be the one to crown the kings and queens, as if to say "we give you the right to rule".◊sn{carolus-rex}
+
+◊ndef["carolus-rex"]{
+    Charles XII of Sweden, also called "Carolus Rex", acknowledged the power of God but rejected the church when he placed the crown upon his own head instead of letting someone from the church do it. It's what Sabaton meant with "crowned by God not by the church".
+}
+
+This is why it was a big deal when the Swedish king ◊link[gustav-vasa]{Gustav Vasa} took steps towards the ◊link[reformation]{Protestant Reformation}, which weakened the political power of the church.
+
+◊(define gustav-vasa "https://www.britannica.com/biography/Gustav-I-Vasa")
+◊(define reformation "https://www.britannica.com/biography/Gustav-I-Vasa")
 
 ◊;Sweden 1 Jan 2000 formally separated the church from the state.
 ◊;https://www.dagen.se/dokument/sa-fri-ar-svenska-kyrkan-fran-staten-egentligen-1.1632522
