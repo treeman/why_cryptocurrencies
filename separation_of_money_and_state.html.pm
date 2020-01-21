@@ -11,9 +11,11 @@ When I first started thinking about cryptocurrencies I thought it was just usefu
     I do think ◊link[cheaper-faster]{avoiding 1--3%} fees on practically all digital payments is an under-appreciated benefit of cryptocurrencies. It might be overshadowed by the volatility, but the potential benefit to the economy is absolutely huge.
 }
 
-But one idea made me go "Wow, that could be massive!" And that's how cryptocurrencies for the first time in modern history make it possible for money to be completely separated from the state and other institutions.
+But the idea of separating money from state made me go "Wow, that could actually be huge." Here we have money with excellent monetary properties that's not controlled by any state, and if adopted on a large scale it would change the global economy forever.
 
-◊todo{This isn't really true}
+This isn't groundbreaking in itself, as ...
+
+
 
 ◊(define cheaper-faster "/cheaper_faster.html")
 
@@ -25,10 +27,10 @@ But one idea made me go "Wow, that could be massive!" And that's how cryptocurre
     #:quote-src #t
     #:url "https://www.youtube.com/watch?v=-yIZBUgKfuw"
     #:center #t]{
- I was chosen by heaven
-Say my name when you pray
-To the skies
-See Carolus rise
+  I was chosen by heaven
+  Say my name when you pray
+  To the skies
+  See Carolus rise
 }
 
 I know it might be difficult to entertain the notion that a country shouldn't control their own money, and that the mere suggestion is outrageous. Here I find the parallel to the relationship between religion and state relevant.
@@ -41,15 +43,14 @@ Countless rulers have based their legitimacy on religious grounds, that they sho
     Charles XII of Sweden, also called "Carolus Rex", acknowledged the power of God but rejected the church when he placed the crown upon his own head instead of letting someone from the church do it.
 }
 
-This is why it was a big deal when the Swedish king ◊link[gustav-vasa]{Gustav Vasa} took steps towards the ◊link[reformation]{Protestant Reformation}. It wasn't motivated by religious reasons---he simply wanted control over the church's property. In a sense the Diet at Västerås in 1527 was the first step in separating the church from the Swedish state, a process that was completed in 2000 when they were formally separated.
+This is why it was a big deal when the Swedish king ◊link[gustav-vasa]{Gustav Vasa} took steps towards the ◊link[reformation]{Protestant Reformation}. It wasn't motivated by religious reasons---he simply wanted control over the church's property. In a sense the Diet at Västerås in 1527 was the first step in separating the church from the Swedish state, a process that was ◊link[separation]{completed in 2000} when they were formally separated.
 
-Separating church from the state would've been unthinkable, yet it's now a given that the church shouldn't dictate what the state should do. It's instead the opposite that's the exception.
+Separating church from the state was once unthinkable, yet it's now a given that the church shouldn't dictate what the state should do. In a similar way the notion that money could be separated from the state is today largely considered unthinkable, but that doesn't mean it'll be that way forever.
 
-
-I don't think cryptocurrencies and religion have much in common.
 
 ◊(define gustav-vasa "https://www.britannica.com/biography/Gustav-I-Vasa")
 ◊(define reformation "https://www.britannica.com/event/Reformation")
+◊(define separation "https://popularhistoria.se/sveriges-historia/kyrkan-och-staten-en-historisk-separation")
 
 ◊;Sweden 1 Jan 2000 formally separated the church from the state.
 ◊;https://www.dagen.se/dokument/sa-fri-ar-svenska-kyrkan-fran-staten-egentligen-1.1632522
@@ -58,18 +59,18 @@ I don't think cryptocurrencies and religion have much in common.
 ◊;https://www.britannica.com/biography/Gustav-I-Vasa
 
 
-◊subhead{Not even that unusual}
+◊subhead{Not that unusual}
 
-In practice some countries already have separated money from their state, as they use money someone else control. For example the ◊link[euro]{Euro} is managed by the ◊link[ecb]{European Central Bank (ECB)}, and the countries that use the Euro have very little influence in the ECB's decision-making (well, most of them anyway). There are also countries that ◊link[countries-use-us]{use the U.S. dollar as their official currency}, while having no say in what the U.S. does with it.
+In practice some countries have already separated money from their state, as they use money someone else control. For example the ◊link[euro]{Euro} is managed by the ◊link[ecb]{European Central Bank (ECB)}, and the countries that use the Euro have very little influence in the ECB's decision-making (well, most of them anyway). There are also countries that ◊link[countries-use-us]{use the U.S. dollar as their official currency}, while having no say in what the U.S. does with it.
 
 Gold might also be an example of money outside of state control---there's nobody with exclusive access to gold after all. But in practice someone has to convert the gold to coins for it to be usable as money, and that includes a "government approved" stamp on them, which gives some sort of control over the money. After all, it's difficult to determine what a coin is made of so we just trust the stamp on it.
 
 Maybe a better example is shell money, or other money found in nature, where you just pick up them up and start using them. Although they're lacking compared to coins or modern money, there's no one in charge of minting or stamping shells.
 
-So the idea that a state doesn't have to have control over their own money isn't really that strange, as there are many examples of the contrary.
+So the idea that a state doesn't require control over their own money isn't really that strange, as there are many examples of the contrary.
 
 
-◊subhead{What does the future hold?}
+◊subhead{The difference with cryptocurrencies}
 
 
 
