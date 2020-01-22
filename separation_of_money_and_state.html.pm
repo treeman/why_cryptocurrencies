@@ -72,6 +72,19 @@ So the idea that a state doesn't require control over their own money isn't real
 
 ◊subhead{The difference with cryptocurrencies}
 
+With the various historical examples we might wonder what cryptocurrencies bring to the table. Why would they be different?
+
+For starters all modern examples where a state doesn't control their own money simply mean they'll use someone else's money. There's always a state in control of the money, it's just some other state. With cryptocurrencies there's no single entity in control, meaning it's money separate from any state.◊sn{indirect-control}
+
+◊ndef["indirect-control"]{
+    States can apply indirect control. For example if the U.S. passes anti-cryptocurrency laws, it would have a negative effect on the usefulness of cryptocurrencies. Similarly if they would pass beneficial laws, cryptocurrencies would become more useful, simply because the U.S. have such a large influence throughout the world.
+}
+
+Cryptocurrencies are also different from the "natural" forms of money, such as shells or stones, because they have better monetary properties. For instance the supply in a cryptocurrency is provably limited, while you always run the risk of someone discovering a mountain of shells on some remote island somewhere. Cryptocurrencies being digital means they're easier to transport and to send over larger distances, making global interaction much easier.
+
+(They're simply better money, that comes from the people and that's global...)
+
+There's one question I leave unanswered, and that's if completely separating money from state is altogether useful. I leave it up to you, the reader, to decide.
 
 
 ◊(define ecb "https://en.wikipedia.org/wiki/European_Central_Bank")
