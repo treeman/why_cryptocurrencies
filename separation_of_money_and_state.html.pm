@@ -5,6 +5,8 @@
 ◊(define-meta updated "2019-12-29T05:27:16+01:00")
 ◊(define-meta uuid "a5636cbf-bec1-4795-8c66-5725b0eec7bf")
 
+◊todo{IMG of a cryptocurrency priest wielding a sword and a bag of Bitcoin}
+
 When I first started thinking about cryptocurrencies I thought it was just useful for some people who couldn't use regular transactions, like buying weed or things on a darknet market. Or that it was a better payment system as there was no middleman to skim of large fees from all transactions. That's useful, but it didn't strike me as revolutionary.◊sn{fees}
 
 ◊ndef["fees"]{
@@ -84,10 +86,21 @@ Cryptocurrencies are also different from the "natural" forms of money, such as s
 
 (They're simply better money, that comes from the people and that's global...)
 
-There's one question I leave unanswered, and that's if completely separating money from state is altogether useful. I leave it up to you, the reader, to decide.
+◊;There's one question I leave unanswered, and that's if completely separating money from state is altogether useful. I leave it up to you, the reader, to decide.
+
+
+◊subhead{What does the future look like?}
+
+It's impossible to predict the future. For example the iPhone was released in 2007 and today almost everyone carry a smartphone in their pocket. This is particularly crazy because they're ◊link[apollo-smartphone]{millions of times more powerful} than all of the combined computing power of NASA that put man on the moon 50 years ago.
+
+Nobody could've predicted this explosive technological development, so how can we predict where cryptocurrencies will take us? We can't, but it's still fun to imagine the possibilities.
+
+For instance what if countries all over the world abandoned fiat and started using cryptocurrencies instead? And I don't mean fake cryptocurrencies like ◊link[e-krona]{E-krona} where the Swedish central bank would retain control, but money completely without a central authority. How would the world change?
 
 
 ◊(define ecb "https://en.wikipedia.org/wiki/European_Central_Bank")
 ◊(define euro "https://en.wikipedia.org/wiki/Euro")
 ◊(define countries-use-us "https://www.investopedia.com/articles/forex/040915/countries-use-us-dollar.asp")
+◊(define apollo-smartphone "https://www.zmescience.com/research/technology/smartphone-power-compared-to-apollo-432/")
+◊(define e-krona "https://www.riksbank.se/en-gb/payments--cash/e-krona/")
 
