@@ -89,13 +89,25 @@ Cryptocurrencies are also different from the "natural" forms of money, such as s
 ◊;There's one question I leave unanswered, and that's if completely separating money from state is altogether useful. I leave it up to you, the reader, to decide.
 
 
-◊subhead{What does the future look like?}
+◊subhead{What will the future hold?}
 
 It's impossible to predict the future. For example the iPhone was released in 2007 and today almost everyone carry a smartphone in their pocket. This is particularly crazy because they're ◊link[apollo-smartphone]{millions of times more powerful} than all of the combined computing power of NASA that put man on the moon 50 years ago.
 
-Nobody could've predicted this explosive technological development, so how can we predict where cryptocurrencies will take us? We can't, but it's still fun to imagine the possibilities.
+Nobody could've predicted this explosive technological development, so how can we predict where cryptocurrencies will take us? We can't, but the mere possibility that it could lead to the separation of money and state is interesting to think about.
 
-For instance what if countries all over the world abandoned fiat and started using cryptocurrencies instead? And I don't mean fake cryptocurrencies like ◊link[e-krona]{E-krona} where the Swedish central bank would retain control, but money completely without a central authority. How would the world change?
+For instance what if countries abandoned fiat and started using cryptocurrencies instead? And I don't mean fake cryptocurrencies like ◊link[e-krona]{E-krona} where the Swedish central bank would retain control, but money completely without a central authority. How would the world change?
+
+In the section ◊link[better-currency]{a better currency} I argued that several problems with the modern economy could be mitigated by such a move. That it would fix the moral hazard established after the ◊link[financial-crisis]{financial crisis in 2008}, which means that banks are incentivized to push the global economy to it's limits, disastrous consequences be damned. It would also reign in ◊link[defective-system]{the unchecked spending}, as governments lose their money printing "get out of jail free card", and would have to be more responsible in their decision-making.
+
+But it could also mean that countries have ...
+
+Whether that would be a good or bad thing, I leave up to you, the reader, to decide.
+
+◊;We can't, but it's still fun to imagine the possibilities. And whether you think it's a good or bad thing, the possibility 
+
+◊;For instance what if countries abandoned fiat and started using cryptocurrencies instead? And I don't mean fake cryptocurrencies like ◊link[e-krona]{E-krona} where the Swedish central bank would retain control, but money completely without a central authority. How would the world change?
+
+◊;In the section ◊link[better-currency]{a better currency} I argued that several problems with the modern economy could be mitigated by such a move. It would fix the bad incentives that were set after the ◊link[financial-crisis]{financial crisis in 2008}, 
 
 
 ◊(define ecb "https://en.wikipedia.org/wiki/European_Central_Bank")
@@ -103,4 +115,7 @@ For instance what if countries all over the world abandoned fiat and started usi
 ◊(define countries-use-us "https://www.investopedia.com/articles/forex/040915/countries-use-us-dollar.asp")
 ◊(define apollo-smartphone "https://www.zmescience.com/research/technology/smartphone-power-compared-to-apollo-432/")
 ◊(define e-krona "https://www.riksbank.se/en-gb/payments--cash/e-krona/")
+◊(define better-currency "/better_currency.html")
+◊(define financial-crisis "/financial_crisis.html")
+◊(define defective-system "/a_defective_system.html")
 
