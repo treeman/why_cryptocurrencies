@@ -47,7 +47,7 @@ Countless rulers have based their legitimacy on religious grounds, that they sho
 
 This is why it was a big deal when the Swedish king ◊link[gustav-vasa]{Gustav Vasa} took steps towards the ◊link[reformation]{Protestant Reformation}. It wasn't motivated by religious reasons---he simply wanted control over the church's property. In a sense the Diet at Västerås in 1527 was the first step in separating the church from the Swedish state, a process that was ◊link[separation]{completed in 2000} when they were formally separated.
 
-Separating church from the state was once unthinkable, yet it's now a given that the church shouldn't dictate what the state should do. In a similar way the notion that money could be separated from the state is today largely considered unthinkable, but that doesn't mean it'll be that way forever.
+Separating church from the state was once unthinkable, yet it's now a given that the church shouldn't dictate what the state should do. In a similar way the notion that money could be separated from the state is today largely considered unthinkable, but this might change too.
 
 
 ◊(define gustav-vasa "https://www.britannica.com/biography/Gustav-I-Vasa")
