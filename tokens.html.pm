@@ -1,18 +1,18 @@
 #lang pollen
 
 ◊(define-meta title "Tokens")
-◊;(define-meta subtitle "How well do they work as money?")
+◊(define-meta subtitle "Cryptocurrencies with centrally managed supply")
 ◊(define-meta published "2020-01-25T15:05:30+01:00")
 ◊(define-meta updated "2020-01-25T15:05:37+01:00")
 ◊(define-meta uuid "1cbc42c7-a81d-40ff-9620-1d89c13dee12")
 
 One of the most important properties that let cryptocurrencies function well as money is the limited supply. If instead someone was allowed to print money from thin air, it would be very poor money and would essentially be worthless.
 
-But would it really be completely useless? What if we had all the other good properties, such as being able to instantly verify if they're valid, what would we have then? We would have ◊em{tokens}, and they aren't completely useless.
+But would it really be completely useless? What if we had all the ◊link[props]{other good properties}, such as being able to instantly verify them or double spend protection, what would we have then? We would have ◊em{tokens}, and they aren't completely useless.
 
 The most popular class of tokens are probably the ERC20 tokens, implemented on top of Ethereum. For example ◊link[usdc]{USD Coin}, Coinbase's stablecoin backed 1-to-1 by USD, is an ERC20 token. The ◊link[bnb]{Binance Coin}, used for the bonus system on a cryptocurrency exchange, is another example.◊sn{other-coins}
 
-Tokens can be used to raise funds, track bonus points, as gift cards or even to underpin derivative trading. I don't think they'll revolutionize any of these, but they may provide marginal improvements over the existing solutions. In this chapter we'll take a look at some of them.
+Tokens can be used to raise funds, track bonus points, as gift cards or even to underpin derivative trading. They might not revolutionize any of these, but they can improve them.
 
 ◊ndef["other-coins"]{
     You could implement tokens on other cryptocurrencies as well. The ◊link[omni]{Omni Layer} is for example an extension network built on Bitcoin that supports tokens. The difference is that Ethereum's ERC20 tokens are miner validated, while Omni uses a different consensus mechanism.
@@ -20,6 +20,7 @@ Tokens can be used to raise funds, track bonus points, as gift cards or even to 
 
 ◊;Tether plans to launch as an ERC20 token.
 
+◊(define props "/properties_of_a_cryptocurrency.html")
 ◊(define brave "https://brave.com/")
 ◊(define usdc "https://www.coinbase.com/usdc")
 ◊(define bnb "https://coincentral.com/what-is-binance-coin-bnb/")
@@ -37,7 +38,7 @@ The most famous, or infamous, use of tokens is for an ◊link[ico]{Initial Coin 
     ICOs are classified as securities and the Securities and Exchange Commission (SEC) has intervened on a number of occasions.
 }
 
-One of the benefit of ICOs is that they're very easy to setup, and with the right tools it can be done in a few seconds. This is also a downside as there are countless of ICOs that function only as ◊link[pyramid-scheme]{pyramid schemes} (or other types of scams) with the only purpose of finding ◊link[greater-fools]{greater fools} to dump on.
+One of the benefit of ICOs is that they're very easy to setup, and with the right tools it can be done in a few seconds. This is also a downside as there are countless of ICOs that function only as ◊link[pyramid-scheme]{pyramid schemes} with the only purpose of finding ◊link[greater-fools]{greater fools} to dump on.
 
 Although ICOs are mostly associated with scams (and rightfully so I'd say) there might be some usefulness here. What you're really doing is donating money to a cause you believe in, and hope you'll get a good outcome.
 
@@ -49,7 +50,7 @@ Does it sound insane? That's really no different from how ◊link[kickstarter]{K
     You might still say it sounds insane, but just realize Kickstarter is very popular and it mostly works out well. (At least for board games, which I'm most familiar with.)
 }
 
-Why would you want a token for this? The benefit would be that anyone, anywhere, could participate and that participation could be done anonymously. And it all takes place on a platform where you have a guarantee that you can sell your token if you lose faith in the project (since not even the issuer can prevent token transactions).◊sn{anon}
+Why would you want a token for this? The benefit would be that anyone, anywhere, could participate and that participation could be done anonymously. And it all takes place on a platform where you have a guarantee that you can sell your token if you lose faith in the project (since properly implemented not even the issuer can prevent token transactions).◊sn{anon}
 
 ◊ndef["anon"]{
     It might be hard to claim anonymity if you want someone to send a board game to you, but it's relevant if you're expecting returns in cryptocurrencies or other digital goods.
@@ -62,34 +63,51 @@ Why would you want a token for this? The benefit would be that anyone, anywhere,
 ◊(define kickstarter "https://www.kickstarter.com/")
 
 
-◊subhead{Better gift cards}
+◊subhead{Gift cards}
 
 People use gift cards all the time, but they're not always that great. How do you verify that they're valid, and haven't already been used? How do you do that in stores, when you're choosing which one to buy, and how do you verify digital gift cards?
 
 For example let's say you walk into a store and want to buy a gift card. How do you know it's not fake, or haven't been used? Luckily there's a code on the gift card, which you can enter into a website to verify if it's still valid. Okay! It's valid, so you buy it and walk out the store.
 
-Unfortunately for you the store clerk has already written down the gift card code, and shortly after you leave the store he decides to use it up, making your gift card useless.
+Unfortunately for you the store clerk has already written down the gift card code, and shortly after you leave the store he decides to use it up, making your gift card useless. Physical gift cards, the one you hand in to a store when you use them up, don't really have this problem. But this is unsolved for digital gift cards.◊sn{verify}
 
-◊;If you're lucky the company provides a way to verify them, maybe you can write in your code on a website to see if it's been used yet. But how do you know someone else has already copied your gift card, but just haven't used it yet? For example all
-
-◊ul{
-    ◊li{Verification}
-    ◊li{Implementation}
+◊ndef["verify"]{
+    Physical gift cards can have a problem with conterfeiting, which is also something cryptocurrencies completely solve.
 }
 
+This problem, of how to transfer ownership of a code, is really the same double spending problem that cryptocurrencies ◊link[double-spend]{pioneered a solution} for. And tokens inherit this property, allowing you to buy a token based gift card and be absolutely sure that it's unspent and that you're the only one who can spend it.
 
-◊subhead{Derivates}
+◊(define double-spend "/how_do_cryptocurrencies_work.html#copying-a-coin-&-double-spending")
 
-Money supply is around $90 trillion.
 
-Low estimate is $544 trillion, and the high estimate is $1.2 quadrillion. Bitcoin has a marketcap of around $150 billion.
+◊subhead{Derivatives}
+
+It's quite difficult for us humans to truly understand very big numbers, because we don't have anything to relate them to. When I see that the richest person in the world, Amazon's founder Jeff Bezos, ◊link[richest-men]{is worth more than $117.5 billion} I understand that it's a hell of a lot of money, but I don't know ◊em{how} much. It's just too much money and to me there's no real difference between $1 billion or $1 trillion, even though the latter is 1000x more.◊sn{either-way}
+
+◊ndef["either-way"]{
+    I could probably do whatever I could ever want with either amount, and still be nowhere close to exhausting the money.
+}
+
+Therefore I'm not sure what to make of the fact that all the coins and notes in the world are worth around $7.6 trillion, or that all gold in the world is worth around $7.7 trillion. But I do know that's much less than all the money in the world, which is valued around $90.4 trillion. Surely nothing could be worth more than money?
+
+Interestingly both global debt ($215 trillion) and the value of global real estate ($217 trillion) is more than all the money in the world. But they're all dwarfed by ◊em{derivatives}, which has a low estimate of $544 trillion and a high estimate of $1.2 quadrillion. One quadrillion!◊sn{HUGE}
+
+These are numbers are taken from an excellent ◊link[money-visualization]{visualization by visualcapitalist}, which I highly recommend you to check out. It was made in 2017, so the numbers are a little old, but not significantly so.
+
+◊ndef["HUGE"]{
+    As a non-native English speaker I hadn't even encountered "quadrillion" before, and to me it sounds like a made-up number found in Donald Duck.
+}
+
+I bring this up just to say one thing: the value of derivatives is absolutely huge.
+
+But what are derivatives?
+
 
 Tokens allow you to create digital ◊link[bearer-share]{bearer shares}, where the share of a security is given to whoever controls a specific token. They would protect the owners' anonymity, since their identity is never recorded or required, and could be used to for example create a company controlled by anonymous people.
 
+◊(define richest-men "https://wealthygorilla.com/top-20-richest-people-world/")
 ◊(define bearer-share "https://www.investopedia.com/terms/b/bearer_share.asp")
 ◊(define money-visualization "https://money.visualcapitalist.com/worlds-money-markets-one-visualization-2017/")
 
-
-◊subhead{But we can do this already?}
 
 
