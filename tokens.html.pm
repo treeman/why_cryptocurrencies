@@ -80,44 +80,79 @@ This problem, of how to transfer ownership of a code, is really the same double 
 ◊(define double-spend "/how_do_cryptocurrencies_work.html#copying-a-coin-&-double-spending")
 
 
+
 ◊subhead{Derivatives}
 
-It's quite difficult for us humans to truly understand very big numbers, because we don't have anything to relate them to. When I see that the richest person in the world, Amazon's founder Jeff Bezos, ◊link[richest-men]{is worth more than $117.5 billion} I understand that it's a hell of a lot of money, but I don't know ◊em{how} much. It's just too much money and to me there's no real difference between $1 billion or $1 trillion, even though the latter is 1000x more.◊sn{either-way}
+It's quite difficult for us humans to truly understand very big numbers, because we don't have anything to relate them to. For example what's the difference between $1 billion and $1 trillion? I know that the latter is 1000 times more, but that's just a number and I have difficulties to truly understand how large the difference is.
 
-◊ndef["either-way"]{
-    I could probably do whatever I could ever want with either amount, and still be nowhere close to exhausting the money.
+I think visualizations can help us compare large amounts like these, so here's one where the small box ◊(inline-small-box) corresponds to $100 billion and the big box ◊(inline-big-box) corresponds to $1 trillion. (Although they may look small, the amounts are still ◊em{huge}.)
+
+◊div[#:class "money-visualization"]{
+
+    ◊gen[117.5 #:cols 10 #:type "person"]{Jeff Bezos}◊mn{bezos}
+
+    ◊ndef["bezos"]{
+        Jeff Bezos, the richest man in the world, is worth a staggering $117.5 billion.
+    }
+
+    ◊gen[9500 #:cols 3 #:type "gold"]{Gold}◊mn{gold}
+
+    ◊ndef["gold"]{
+        There's around 187,200 tons of gold in the world. At a spot price of $1,582.30/oz, or $50,872.09/kg, it sums up to around $9.5 trillion.
+    }
+
+    ◊;Stocks:
+    ◊;(gen 73000 #:cols 13)
+
+    ◊gen[90000 #:cols 14 #:type "money"]{All the money in the world}◊mn{money}
+
+    ◊ndef["money"]{
+        All the money in the world, both physical and digital locked up with banks, is worth around $90.4 trillion.
+    }
+
+    ◊gen[1200000 #:cols 38 #:type "derivatives"]{Derivatives}◊mn{derivatives}
+
+    ◊ndef["derivatives"]{
+        It's quite difficult to pinpoint the value of derivatives correctly. Visualcapitalist placed a low end estimate of derivatives at $544 trillion, and the high end at $1.2 quadrillion in 2017.
+
+        One quadrillion!  As a non-native English speaker I hadn't even encountered "quadrillion" before, and to me it sounds like a made-up number found in Donald Duck.
+    }
+
+    ◊gen[150 #:cols 10 #:type "bitcoin"]{Bitcoin}
+
 }
 
-Therefore I'm not sure what to make of the fact that all the coins and notes in the world are worth around $7.6 trillion, or that all gold in the world is worth around $7.7 trillion. But I do know that's much less than all the money in the world, which is valued around $90.4 trillion. Surely nothing could be worth more than money?
+◊;I highly recommend you to check out the excellent ◊link[money-visualization]{visualization by visualcapitalist}, which this visualization is inspired by.
 
-Interestingly both global debt ($215 trillion) and the value of global real estate ($217 trillion) is more than all the money in the world. But they're all dwarfed by ◊em{derivatives}, which has a low estimate of $544 trillion and a high estimate of $1.2 quadrillion. One quadrillion!◊sn{HUGE}
+I bring this up just to say one thing: the value of derivatives is absolutely huge. Money, which essentially makes the world go around, is dwarfed by the value of derivatives. But what are derivatives? 
 
-These are numbers are taken from an excellent ◊link[money-visualization]{visualization by visualcapitalist}, which I highly recommend you to check out. It was made in 2017, so the numbers are a little old, but not significantly so.
-
-◊ndef["HUGE"]{
-    As a non-native English speaker I hadn't even encountered "quadrillion" before, and to me it sounds like a made-up number found in Donald Duck.
-}
-
-I bring this up just to say one thing: the value of derivatives is absolutely huge.
-
-But what are derivatives? In short, they're a bet on the value of something. A derivative is a contract that derives its price from fluctuations of the underlying asset. For example stocks, bonds, commodities or currencies.
+In short, they're a bet on the value of something. A derivative is a contract that derives its price from fluctuations of the underlying asset. For example stocks, bonds, commodities or currencies.
 
 We've already seen how cryptocurrencies can improve currencies, but even stocks, bonds and bets on commodities might benefit from being based on cryptocurrency tokens.
 
 Take stock trading for example. They're done through a stock exchange and intermediaries that manage the exchange. This is required because, like the problem with gift cards, there's no way to transfer ownership in a secure way. But now there is; with tokens you could create a decentralized derivative market and trade them directly between two people, without the need for an intermediary to manage the trade.◊sn{save-money}
 
+If you wanted to, you could also create digital ◊link[bearer-share]{bearer shares}, where the share of a security is given to whoever controls a specific token. They would protect the owners' anonymity, since their identity is never recorded or required, and could be used to for example create a company controlled by anonymous people.
+
+I'm not suggesting that all derivatives should just use tokens, in many cases this wouldn't make sense and would only add inefficiencies to the system. But even if there's just a very small fraction of derivatives that could benefit, due to their sheer size tokens could still bring a lot of value.
+
+
+◊ndef["either-way"]{
+    I could probably do whatever I could ever want with either amount, and still be nowhere close to exhausting the money.
+}
+
+◊ndef["HUGE"]{
+    As a non-native English speaker I hadn't even encountered "quadrillion" before, and to me it sounds like a made-up number found in Donald Duck.
+}
+
 ◊ndef["save-money"]{
     Similar to how cryptocurrencies can save fees by cutting out payment processors from digital purchases, there's financial gain here too.
 }
-
-If you wanted to, you could also create digital ◊link[bearer-share]{bearer shares}, where the share of a security is given to whoever controls a specific token. They would protect the owners' anonymity, since their identity is never recorded or required, and could be used to for example create a company controlled by anonymous people.
 
 
 ◊ndef["bearer-shares"]{
     Tokens allow you to create digital ◊link[bearer-share]{bearer shares}, where the share of a security is given to whoever controls a specific token. They would protect the owners' anonymity, since their identity is never recorded or required, and could be used to for example create a company controlled by anonymous people.
 }
-
-I'm not suggesting that all derivatives should just use tokens, in many cases this wouldn't make sense and would only add inefficiencies to the system. But even if there's an extremely small fraction of derivatives that could benefit, due to their sheer size tokens could still bring a lot of value.
 
 
 ◊(define derivative "https://www.investopedia.com/terms/d/derivative.asp")
@@ -126,54 +161,39 @@ I'm not suggesting that all derivatives should just use tokens, in many cases th
 ◊(define money-visualization "https://money.visualcapitalist.com/worlds-money-markets-one-visualization-2017/")
 
 
-◊subhead{New visualization}
+◊;Jeff Bezos: $117.5 billion
+◊;Bitcoin marketcap: $150 billion
+◊;Currencies: $7.6 trillion (2017, visualcapitalist)
+◊;Gold: 187,200 tons, $1,582.30 USD spot price/oz ($50,872.09/kg) => $9.5 trillion
+◊;Stock markets: $73 trillion (2017, visualcapitalist)
+◊;All the money: $90.4 trillion (2017, visualcapitalist)
+◊;Derivatives: $544 trillion--$1.2 quadrillion (2017, visualcapitalist)
 
-Jeff Bezos: $117.5 billion
-Bitcoin marketcap: $150 billion
-Currencies: $7.6 trillion (2017, visualcapitalist)
-Gold: 187,200 tons, $1,582.30 USD spot price/oz ($50,872.09/kg) => $9.5 trillion
-Stock markets: $73 trillion (2017, visualcapitalist)
-All the money: $90.4 trillion (2017, visualcapitalist)
-Derivatives: $544 trillion--$1.2 quadrillion (2017, visualcapitalist)
+◊(define bigbox-char "■")
+◊(define smallbox-char "◾")
+◊;(define box-char "▣")
+◊;(define box-char "◼")
+◊;(define box-char "◾")
+◊(define bigbox-val 1000)
+◊(define smallbox-val 100)
 
-Bezos:
-◊(gen 117.5 #:cols 10)
+◊(define (big-box)
+  `(span ((class "money-vis big")) ,bigbox-char))
+◊(define (small-box)
+  `(span ((class "money-vis small")) ,smallbox-char))
+◊(define (inline-big-box)
+  `(span ((class "inline-ex"))
+     ,(big-box)))
+◊(define (inline-small-box)
+  `(span ((class "inline-ex"))
+     ,(small-box)))
 
-Gold:
-◊;(gen 9500 #:cols 3)
-◊(gen 9500 #:cols 3)
+◊(define (gen billions #:cols cols #:type type . args)
 
-◊;Stocks:
-◊;(gen 73000 #:cols 13)
-
-All the money:
-◊(gen 90400 #:cols 14)
-
-Derivatives:
-◊; 66 is ok
-◊(gen 1200000 #:cols 55)
-
-Bitcoin:
-◊(gen 150 #:cols 10)
-
-
-◊(define (gen billions #:cols cols)
-   (define bigbox-char "■")
-   (define smallbox-char "◾")
-   ;(define box-char "▣")
-   ;(define box-char "◼")
-   ;(define box-char "◾")
-   (define bigbox-val 1000)
-   (define smallbox-val 100)
-
-   ;(define cols 65)
    (define rows (round (/ billions (* bigbox-val cols))))
    (define extra (- billions (* cols rows bigbox-val)))
 
-   ;(printf "billions: ~a~n" billions)
-
    (define (gen-rows value)
-     ;(printf "gen-rows ~a~n" value)
      (if (<= value smallbox-val)
        `()
        (let* ((row-value (min value (* cols bigbox-val)))
@@ -184,48 +204,27 @@ Bitcoin:
          (gen-rows rest-value)))))
 
    (define (gen-row value)
-     ;(printf "  gen-row ~a~n" value)
      `(div ((class "row"))
         ,@(gen-boxes value)))
 
    (define (gen-boxes value)
-     ;(printf "  gen-boxes ~a~n" value)
-
      (cond
        [(>= value bigbox-val)
-        (cons `(span ((class "bigbox")) ,bigbox-char)
+        (cons (big-box)
           (gen-boxes (- value bigbox-val)))]
        [(>= value smallbox-val)
-        (cons `(span ((class "smallbox")) ,smallbox-char)
+        (cons (small-box)
           (gen-boxes (- value smallbox-val)))]
        [else
         `()]))
 
-     ;(cond
-       ;[(>= value bigbox-val)
-        ;(box-list "bigbox" bigbox-char bigbox-val value)]
-       ;[(>= value smallbox-val)
-        ;(box-list "smallbox" smallbox-char smallbox-val value)]
-       ;[else
-        ;`()]))
-
    (define (box-list span-class char box-val value)
-     ;(printf "  box-list ~a ~a ~a~n" char box-val value)
      (if (>= value box-val)
         (cons `(span ((class ,span-class)) ,char)
               (box-list span-class char box-val (- value box-val)))
         `()))
 
-   ;`(div ((class "visualization"))
-        ;; FIXME also do bigbox here
-        ;(div ((class "row"))
-            ;,@(for/list ([c (in-range 0 (round (/ extra smallbox-val)))])
-                 ;`(span ((class "smallbox")) ,smallbox-char)))
-       ;,@(for/list ([r (in-range 0 rows)])
-           ;`(div ((class "row"))
-               ;,@(for/list ([c (in-range 0 cols)])
-                    ;`(span ((class "bigbox")) ,bigbox-char))))))
-
-   `(div ((class "money-visualization"))
+   `(div ((class ,(string-append "block " type)))
+      (div ((class "title")) ,@args)
       ,@(reverse (gen-rows billions))))
 
