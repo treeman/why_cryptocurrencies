@@ -137,53 +137,95 @@ All the money: $90.4 trillion (2017, visualcapitalist)
 Derivatives: $544 trillion--$1.2 quadrillion (2017, visualcapitalist)
 
 Bezos:
-◊(gen 117.5)
+◊(gen 117.5 #:cols 10)
 
 Gold:
-◊(gen 9500)
+◊;(gen 9500 #:cols 3)
+◊(gen 9500 #:cols 3)
 
-Stocks:
-◊(gen 73000)
+◊;Stocks:
+◊;(gen 73000 #:cols 13)
 
 All the money:
-◊(gen 90400)
+◊(gen 90400 #:cols 14)
 
 Derivatives:
-◊(gen 1200000)
+◊; 66 is ok
+◊(gen 1200000 #:cols 55)
+
+Bitcoin:
+◊(gen 150 #:cols 10)
 
 
-◊(define (gen billions)
+◊(define (gen billions #:cols cols)
    (define bigbox-char "■")
    (define smallbox-char "◾")
    ;(define box-char "▣")
    ;(define box-char "◼")
    ;(define box-char "◾")
-   ;; Need to represent with small boxes too
-   ;; Maybe 100 billions?
    (define bigbox-val 1000)
    (define smallbox-val 100)
 
-   (define cols 65)
+   ;(define cols 65)
    (define rows (round (/ billions (* bigbox-val cols))))
    (define extra (- billions (* cols rows bigbox-val)))
 
-   ;(define (gen-list value)
+   ;(printf "billions: ~a~n" billions)
+
+   (define (gen-rows value)
+     ;(printf "gen-rows ~a~n" value)
+     (if (<= value smallbox-val)
+       `()
+       (let* ((row-value (min value (* cols bigbox-val)))
+              (rest-value (- value row-value)))
+       (cons
+         `(div ((class "row"))
+           ,@(gen-boxes row-value))
+         (gen-rows rest-value)))))
 
    (define (gen-row value)
-     (if (<= value 0)
-       `()
-       `(div ((class "row"))
-          
+     ;(printf "  gen-row ~a~n" value)
+     `(div ((class "row"))
+        ,@(gen-boxes value)))
 
+   (define (gen-boxes value)
+     ;(printf "  gen-boxes ~a~n" value)
 
+     (cond
+       [(>= value bigbox-val)
+        (cons `(span ((class "bigbox")) ,bigbox-char)
+          (gen-boxes (- value bigbox-val)))]
+       [(>= value smallbox-val)
+        (cons `(span ((class "smallbox")) ,smallbox-char)
+          (gen-boxes (- value smallbox-val)))]
+       [else
+        `()]))
 
-   `(div ((class "visualization"))
-        ; FIXME also do bigbox here
-        (div ((class "row"))
-            ,@(for/list ([c (in-range 0 (round (/ extra smallbox-val)))])
-                 `(span ((class "smallbox")) ,smallbox-char)))
-       ,@(for/list ([r (in-range 0 rows)])
-           `(div ((class "row"))
-               ,@(for/list ([c (in-range 0 cols)])
-                    `(span ((class "bigbox")) ,bigbox-char))))))
+     ;(cond
+       ;[(>= value bigbox-val)
+        ;(box-list "bigbox" bigbox-char bigbox-val value)]
+       ;[(>= value smallbox-val)
+        ;(box-list "smallbox" smallbox-char smallbox-val value)]
+       ;[else
+        ;`()]))
+
+   (define (box-list span-class char box-val value)
+     ;(printf "  box-list ~a ~a ~a~n" char box-val value)
+     (if (>= value box-val)
+        (cons `(span ((class ,span-class)) ,char)
+              (box-list span-class char box-val (- value box-val)))
+        `()))
+
+   ;`(div ((class "visualization"))
+        ;; FIXME also do bigbox here
+        ;(div ((class "row"))
+            ;,@(for/list ([c (in-range 0 (round (/ extra smallbox-val)))])
+                 ;`(span ((class "smallbox")) ,smallbox-char)))
+       ;,@(for/list ([r (in-range 0 rows)])
+           ;`(div ((class "row"))
+               ;,@(for/list ([c (in-range 0 cols)])
+                    ;`(span ((class "bigbox")) ,bigbox-char))))))
+
+   `(div ((class "money-visualization"))
+      ,@(reverse (gen-rows billions))))
 

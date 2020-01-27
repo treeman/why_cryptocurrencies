@@ -931,12 +931,12 @@ table.address-message {
 }
 
 
-.visualization {
+.money-visualization {
     font-size: 0.6rem;
     line-height: 1;
 
     .smallbox {
-        font-size: 0.2rem;
+        font-size: 0.3rem;
     }
     .bigbox {
         font-size: 0.6rem;
@@ -944,6 +944,8 @@ table.address-message {
 
     .row {
         //margin-top: -0.1rem;
+        display: flex;
+        justify-content: center;
     }
 }
 
