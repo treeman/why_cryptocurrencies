@@ -136,3 +136,54 @@ Stock markets: $73 trillion (2017, visualcapitalist)
 All the money: $90.4 trillion (2017, visualcapitalist)
 Derivatives: $544 trillion--$1.2 quadrillion (2017, visualcapitalist)
 
+Bezos:
+◊(gen 117.5)
+
+Gold:
+◊(gen 9500)
+
+Stocks:
+◊(gen 73000)
+
+All the money:
+◊(gen 90400)
+
+Derivatives:
+◊(gen 1200000)
+
+
+◊(define (gen billions)
+   (define bigbox-char "■")
+   (define smallbox-char "◾")
+   ;(define box-char "▣")
+   ;(define box-char "◼")
+   ;(define box-char "◾")
+   ;; Need to represent with small boxes too
+   ;; Maybe 100 billions?
+   (define bigbox-val 1000)
+   (define smallbox-val 100)
+
+   (define cols 65)
+   (define rows (round (/ billions (* bigbox-val cols))))
+   (define extra (- billions (* cols rows bigbox-val)))
+
+   ;(define (gen-list value)
+
+   (define (gen-row value)
+     (if (<= value 0)
+       `()
+       `(div ((class "row"))
+          
+
+
+
+   `(div ((class "visualization"))
+        ; FIXME also do bigbox here
+        (div ((class "row"))
+            ,@(for/list ([c (in-range 0 (round (/ extra smallbox-val)))])
+                 `(span ((class "smallbox")) ,smallbox-char)))
+       ,@(for/list ([r (in-range 0 rows)])
+           `(div ((class "row"))
+               ,@(for/list ([c (in-range 0 cols)])
+                    `(span ((class "bigbox")) ,bigbox-char))))))
+
