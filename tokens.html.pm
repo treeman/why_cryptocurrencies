@@ -12,7 +12,7 @@ But would it really be completely useless? What if we had all the ◊link[props]
 
 The most popular class of tokens are probably the ERC20 tokens, implemented on top of Ethereum. For example ◊link[usdc]{USD Coin}, Coinbase's stablecoin backed 1-to-1 by USD, is an ERC20 token. The ◊link[bnb]{Binance Coin}, used for the bonus system on a cryptocurrency exchange, is another example.◊sn{other-coins}
 
-Tokens can be used to raise funds, track bonus points, as gift cards or even to underpin derivative trading. They might not revolutionize any of these, but they can improve them.
+Tokens can for example be used to enable easier fund raising, create safer gift cards and for peer-to-peer derivative trading.
 
 ◊ndef["other-coins"]{
     You could implement tokens on other cryptocurrencies as well. The ◊link[omni]{Omni Layer} is for example an extension network built on Bitcoin that supports tokens. The difference is that Ethereum's ERC20 tokens are miner validated, while Omni uses a different consensus mechanism.
@@ -100,14 +100,39 @@ These are numbers are taken from an excellent ◊link[money-visualization]{visua
 
 I bring this up just to say one thing: the value of derivatives is absolutely huge.
 
-But what are derivatives?
+But what are derivatives? In short, they're a bet on the value of something. A derivative is a contract that derives its price from fluctuations of the underlying asset. For example stocks, bonds, commodities or currencies.
+
+We've already seen how cryptocurrencies can improve currencies, but even stocks, bonds and bets on commodities might benefit from being based on cryptocurrency tokens.
+
+Take stock trading for example. They're done through a stock exchange and intermediaries that manage the exchange. This is required because, like the problem with gift cards, there's no way to transfer ownership in a secure way. But now there is; with tokens you could create a decentralized derivative market and trade them directly between two people, without the need for an intermediary to manage the trade.◊sn{save-money}
+
+◊ndef["save-money"]{
+    Similar to how cryptocurrencies can save fees by cutting out payment processors from digital purchases, there's financial gain here too.
+}
+
+If you wanted to, you could also create digital ◊link[bearer-share]{bearer shares}, where the share of a security is given to whoever controls a specific token. They would protect the owners' anonymity, since their identity is never recorded or required, and could be used to for example create a company controlled by anonymous people.
 
 
-Tokens allow you to create digital ◊link[bearer-share]{bearer shares}, where the share of a security is given to whoever controls a specific token. They would protect the owners' anonymity, since their identity is never recorded or required, and could be used to for example create a company controlled by anonymous people.
+◊ndef["bearer-shares"]{
+    Tokens allow you to create digital ◊link[bearer-share]{bearer shares}, where the share of a security is given to whoever controls a specific token. They would protect the owners' anonymity, since their identity is never recorded or required, and could be used to for example create a company controlled by anonymous people.
+}
 
+I'm not suggesting that all derivatives should just use tokens, in many cases this wouldn't make sense and would only add inefficiencies to the system. But even if there's an extremely small fraction of derivatives that could benefit, due to their sheer size tokens could still bring a lot of value.
+
+
+◊(define derivative "https://www.investopedia.com/terms/d/derivative.asp")
 ◊(define richest-men "https://wealthygorilla.com/top-20-richest-people-world/")
 ◊(define bearer-share "https://www.investopedia.com/terms/b/bearer_share.asp")
 ◊(define money-visualization "https://money.visualcapitalist.com/worlds-money-markets-one-visualization-2017/")
 
 
+◊subhead{New visualization}
+
+Jeff Bezos: $117.5 billion
+Bitcoin marketcap: $150 billion
+Currencies: $7.6 trillion (2017, visualcapitalist)
+Gold: 187,200 tons, $1,582.30 USD spot price/oz ($50,872.09/kg) => $9.5 trillion
+Stock markets: $73 trillion (2017, visualcapitalist)
+All the money: $90.4 trillion (2017, visualcapitalist)
+Derivatives: $544 trillion--$1.2 quadrillion (2017, visualcapitalist)
 
