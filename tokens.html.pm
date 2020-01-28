@@ -14,6 +14,8 @@ The most popular class of tokens are probably the ERC20 tokens, implemented on t
 
 Tokens can for example be used to enable easier fund raising, create more secure gift cards and for peer-to-peer derivative trading.
 
+◊note-pos[#:top -7]{other-coins}
+
 ◊ndef["other-coins"]{
     You could implement tokens on other cryptocurrencies as well. The ◊link[omni]{Omni Layer} is for example an extension network built on Bitcoin that supports tokens. The difference is that Ethereum's ERC20 tokens are miner validated, while Omni uses a different consensus mechanism.
 }
@@ -41,6 +43,8 @@ The most famous, or infamous, use of tokens is for an ◊link[ico]{Initial Coin 
 One of the benefit of ICOs is that they're very easy to setup, and with the right tools it can be done in a few seconds. This is also a downside as there are countless of ICOs that function only as ◊link[pyramid-scheme]{pyramid schemes} with the only purpose of finding ◊link[greater-fools]{greater fools} to dump on.
 
 Although ICOs are mostly associated with scams (and rightfully so I'd say) there might be some usefulness here. What you're really doing is donating money to a cause you believe in, and hope you'll get a good outcome.
+
+◊note-pos[#:top -18]{security}
 
 ◊;I'd say the ICO of the ◊link[brave]{privacy focused browser Brave} is an example of a good ICO.
 
@@ -76,6 +80,8 @@ Unfortunately for you the store clerk has already written down the gift card cod
 }
 
 This problem, of how to transfer ownership of a code, is really the same double spending problem that cryptocurrencies ◊link[double-spend]{pioneered a solution} for. And tokens inherit this property, allowing you to buy a token based gift card and be absolutely sure that it's unspent and that you're the only one who can spend it.
+
+◊note-pos[#:top -11]{verify}
 
 ◊(define double-spend "/how_do_cryptocurrencies_work.html#copying-a-coin-&-double-spending")
 
