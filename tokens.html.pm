@@ -10,9 +10,9 @@ One of the most important properties that let cryptocurrencies function well as 
 
 But would it really be completely useless? What if we had all the ◊link[props]{other good properties}, such as being able to instantly verify them or double spend protection, what would we have then? We would have ◊em{tokens}, and they aren't completely useless.
 
-The most popular class of tokens are probably the ERC20 tokens, implemented on top of Ethereum. For example ◊link[usdc]{USD Coin}, Coinbase's stablecoin backed 1-to-1 by USD, is an ERC20 token. The ◊link[bnb]{Binance Coin}, used for the bonus system on a cryptocurrency exchange, is another example.◊sn{other-coins}
+The most popular class of tokens are probably the ERC20 tokens, implemented on top of Ethereum. For example ◊link[usdc]{USD Coin}, Coinbase's stablecoin backed 1-to-1 by USD, is an ERC20 token. The ◊link[bnb]{Binance Coin}, used for the bonus system on a cryptocurrency exchange, is another.◊sn{other-coins}
 
-Tokens can for example be used to enable easier fund raising, create more secure gift cards and for peer-to-peer derivative trading.
+Tokens can also be useful outside the cryptocurrency sphere. For example to enable more accessible fund raising, to improve gift cards or enable peer-to-peer derivative trading.
 
 ◊note-pos[#:top -7]{other-coins}
 
@@ -113,21 +113,21 @@ I think visualizations can help us compare large amounts like these, so here's o
     ◊gen[90000 #:cols 14 #:type "money"]{All the money in the world}◊mn[#:top -5]{money}
 
     ◊ndef["money"]{
-        All the money in the world, both physical and digital locked up with banks, is worth around ◊strong{$90.4 trillion}. ◊|visualcapitalist-ref|
+        All the money in the world, both physical and digital locked up with banks, is worth around ◊strong{$90 trillion}. ◊|visualcapitalist-ref|
     }
 
     ◊gen[1200000 #:cols 38 #:type "derivatives"]{Derivatives}◊mn[#:top -26]{derivatives}
 
     ◊ndef["derivatives"]{
-        It's quite difficult to pinpoint the value of derivatives correctly. I've found a low end estimate at ◊strong{$544 trillion} and a high end at ◊strong{$1.2 quadrillion}. ◊|visualcapitalist-ref|
+        It's quite difficult to pinpoint the value of derivatives correctly. I've found a low end estimate at ◊strong{$544 trillion} and a high end at ◊strong{$1.2 quadrillion} (that's $1200 trillion). ◊|visualcapitalist-ref|
 
         One quadrillion!  As a non-native English speaker I hadn't even encountered "quadrillion" before, and to me it sounds like a made-up number found in Donald Duck.
     }
 
-    ◊gen[164 #:cols 10 #:type "bitcoin"]{Bitcoin}◊mn[#:top -3]{bitcoin}
+    ◊gen[164 #:cols 10 #:type "bitcoin"]{Bitcoin}◊mn[#:top -5]{bitcoin}
 
     ◊ndef["bitcoin"]{
-        There's been a lot of excitement around Bitcoin's meteoric rise in valuation. But in the grand scheme of things ◊link[coinlib]{Bitcoin's marketcap} of ◊strong{$164 billion} isn't that much. (2020-01-28)
+        There's been a lot of excitement around Bitcoin's meteoric rise in valuation. But compared to the really big markets ◊link[coinlib]{Bitcoin's marketcap} of ◊strong{$164 billion} isn't that impressive. (2020-01-28)
     }
 }
 
