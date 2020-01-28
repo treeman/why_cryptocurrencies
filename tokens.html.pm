@@ -12,7 +12,7 @@ But would it really be completely useless? What if we had all the ◊link[props]
 
 The most popular class of tokens are probably the ERC20 tokens, implemented on top of Ethereum. For example ◊link[usdc]{USD Coin}, Coinbase's stablecoin backed 1-to-1 by USD, is an ERC20 token. The ◊link[bnb]{Binance Coin}, used for the bonus system on a cryptocurrency exchange, is another example.◊sn{other-coins}
 
-Tokens can for example be used to enable easier fund raising, create safer gift cards and for peer-to-peer derivative trading.
+Tokens can for example be used to enable easier fund raising, create more secure gift cards and for peer-to-peer derivative trading.
 
 ◊ndef["other-coins"]{
     You could implement tokens on other cryptocurrencies as well. The ◊link[omni]{Omni Layer} is for example an extension network built on Bitcoin that supports tokens. The difference is that Ethereum's ERC20 tokens are miner validated, while Omni uses a different consensus mechanism.
@@ -69,7 +69,7 @@ People use gift cards all the time, but they're not always that great. How do yo
 
 For example let's say you walk into a store and want to buy a gift card. How do you know it's not fake, or haven't been used? Luckily there's a code on the gift card, which you can enter into a website to verify if it's still valid. Okay! It's valid, so you buy it and walk out the store.
 
-Unfortunately for you the store clerk has already written down the gift card code, and shortly after you leave the store he decides to use it up, making your gift card useless. Physical gift cards, the one you hand in to a store when you use them up, don't really have this problem. But this is unsolved for digital gift cards.◊sn{verify}
+Unfortunately for you the store clerk has already written down the gift card code, and shortly after you leave the store he decides to use it up, making your gift card useless. Physical gift cards, the one you hand in to a store when you use them up, don't really have this problem, but this is unsolved for digital gift cards.◊sn{verify}
 
 ◊ndef["verify"]{
     Physical gift cards can have a problem with conterfeiting, which is also something cryptocurrencies completely solve.
@@ -89,61 +89,56 @@ I think visualizations can help us compare large amounts like these, so here's o
 
 ◊div[#:class "money-visualization"]{
 
-    ◊gen[117.5 #:cols 10 #:type "person"]{Jeff Bezos}◊mn{bezos}
+    ◊gen[117.5 #:cols 10 #:type "person"]{Jeff Bezos}◊mn[#:top -3]{bezos}
 
     ◊ndef["bezos"]{
-        Jeff Bezos, the richest man in the world, is worth a staggering $117.5 billion.
+        Jeff Bezos, ◊link[richest-men]{the richest man in the world}, is worth a staggering ◊strong{$117.5 billion}. (2019)
     }
 
-    ◊gen[9500 #:cols 3 #:type "gold"]{Gold}◊mn{gold}
+    ◊gen[9700 #:cols 3 #:type "gold"]{Gold}◊mn[#:top -4]{gold}
 
     ◊ndef["gold"]{
-        There's around 187,200 tons of gold in the world. At a spot price of $1,582.30/oz, or $50,872.09/kg, it sums up to around $9.5 trillion.
+        ◊link[mined-gold]{Around 190,040 tonnes of gold} has been mined in the world. At a ◊link[gold-price]{spot price} of $1,582.30/oz, or $50,872.09/kg, it would be worth around ◊strong{$9.7 trillion}. (2020-01-28)
     }
 
     ◊;Stocks:
     ◊;(gen 73000 #:cols 13)
 
-    ◊gen[90000 #:cols 14 #:type "money"]{All the money in the world}◊mn{money}
+    ◊gen[90000 #:cols 14 #:type "money"]{All the money in the world}◊mn[#:top -5]{money}
 
     ◊ndef["money"]{
-        All the money in the world, both physical and digital locked up with banks, is worth around $90.4 trillion.
+        All the money in the world, both physical and digital locked up with banks, is worth around ◊strong{$90.4 trillion}. ◊|visualcapitalist-ref|
     }
 
-    ◊gen[1200000 #:cols 38 #:type "derivatives"]{Derivatives}◊mn{derivatives}
+    ◊gen[1200000 #:cols 38 #:type "derivatives"]{Derivatives}◊mn[#:top -26]{derivatives}
 
     ◊ndef["derivatives"]{
-        It's quite difficult to pinpoint the value of derivatives correctly. Visualcapitalist placed a low end estimate of derivatives at $544 trillion, and the high end at $1.2 quadrillion in 2017.
+        It's quite difficult to pinpoint the value of derivatives correctly. I've found a low end estimate at ◊strong{$544 trillion} and a high end at ◊strong{$1.2 quadrillion}. ◊|visualcapitalist-ref|
 
         One quadrillion!  As a non-native English speaker I hadn't even encountered "quadrillion" before, and to me it sounds like a made-up number found in Donald Duck.
     }
 
-    ◊gen[150 #:cols 10 #:type "bitcoin"]{Bitcoin}
+    ◊gen[164 #:cols 10 #:type "bitcoin"]{Bitcoin}◊mn[#:top -3]{bitcoin}
 
+    ◊ndef["bitcoin"]{
+        There's been a lot of excitement around Bitcoin's meteoric rise in valuation. But in the grand scheme of things ◊link[coinlib]{Bitcoin's marketcap} of ◊strong{$164 billion} isn't that much. (2020-01-28)
+    }
 }
 
 ◊;I highly recommend you to check out the excellent ◊link[money-visualization]{visualization by visualcapitalist}, which this visualization is inspired by.
 
-I bring this up just to say one thing: the value of derivatives is absolutely huge. Money, which essentially makes the world go around, is dwarfed by the value of derivatives. But what are derivatives? 
+I bring this up just to say one thing: the value of derivatives is absolutely huge. Money, which essentially makes the world go around, is dwarfed by the value of derivatives. But ◊link[derivative]{what are derivatives}?
 
-In short, they're a bet on the value of something. A derivative is a contract that derives its price from fluctuations of the underlying asset. For example stocks, bonds, commodities or currencies.
+In short, they're a bet on the value of something. A derivative is a contract that derives its price from fluctuations of the underlying asset. This commonly include bets on stocks, bonds, currencies and commodities. Have you heard about futures, forwards, swaps and options? They're all different types of derivatives.
 
-We've already seen how cryptocurrencies can improve currencies, but even stocks, bonds and bets on commodities might benefit from being based on cryptocurrency tokens.
+We've already seen how cryptocurrencies can improve currencies, but other types of derivatives might also find some benefit from being based on cryptocurrency tokens.
 
-Take stock trading for example. They're done through a stock exchange and intermediaries that manage the exchange. This is required because, like the problem with gift cards, there's no way to transfer ownership in a secure way. But now there is; with tokens you could create a decentralized derivative market and trade them directly between two people, without the need for an intermediary to manage the trade.◊sn{save-money}
+Take stock trading for example. They're done through a stock exchange and intermediaries that manage the exchange. This is required because---like the problem with gift cards---there's no way to transfer ownership in a secure way. But now there is; with tokens you could create a decentralized derivative market and trade them directly between two people, without the need for an intermediary to manage the trade.◊sn{save-money}
 
-If you wanted to, you could also create digital ◊link[bearer-share]{bearer shares}, where the share of a security is given to whoever controls a specific token. They would protect the owners' anonymity, since their identity is never recorded or required, and could be used to for example create a company controlled by anonymous people.
+If you wanted to, you could also create digital ◊link[bearer-share]{bearer shares}, where the share of a security is given to whoever controls a specific token. (With typical bearer shares control is given to whoever holds a certain piece of paper.) They would protect the owners' anonymity, since their identity is never recorded or required, and could be used to for example create a company controlled by anonymous people.
 
-I'm not suggesting that all derivatives should just use tokens, in many cases this wouldn't make sense and would only add inefficiencies to the system. But even if there's just a very small fraction of derivatives that could benefit, due to their sheer size tokens could still bring a lot of value.
+I'm not suggesting that all derivatives should just use tokens, in many cases this wouldn't make sense and would only add inefficiencies to the system. But even if there's just a very small fraction of derivatives that could benefit, due to the sheer size of the derivative market, tokens could still bring a lot of value.
 
-
-◊ndef["either-way"]{
-    I could probably do whatever I could ever want with either amount, and still be nowhere close to exhausting the money.
-}
-
-◊ndef["HUGE"]{
-    As a non-native English speaker I hadn't even encountered "quadrillion" before, and to me it sounds like a made-up number found in Donald Duck.
-}
 
 ◊ndef["save-money"]{
     Similar to how cryptocurrencies can save fees by cutting out payment processors from digital purchases, there's financial gain here too.
@@ -159,10 +154,17 @@ I'm not suggesting that all derivatives should just use tokens, in many cases th
 ◊(define richest-men "https://wealthygorilla.com/top-20-richest-people-world/")
 ◊(define bearer-share "https://www.investopedia.com/terms/b/bearer_share.asp")
 ◊(define money-visualization "https://money.visualcapitalist.com/worlds-money-markets-one-visualization-2017/")
+◊(define biggest-companies "https://www.forbes.com/global2000/list/#header:marketValue_sortreverse:true")
+◊(define gold-price "https://www.apmex.com/gold-price")
+◊(define mined-gold "https://www.gold.org/about-gold/gold-supply/gold-mining/how-much-gold")
+◊(define coinlib "https://coinlib.io/")
 
+◊(define visualcapitalist-ref
+  (nbsp "(" (link money-visualization (nbsp "Visualcapitalist 2017") ")")))
 
 ◊;Jeff Bezos: $117.5 billion
 ◊;Bitcoin marketcap: $150 billion
+◊; Apple market value $961.3 B
 ◊;Currencies: $7.6 trillion (2017, visualcapitalist)
 ◊;Gold: 187,200 tons, $1,582.30 USD spot price/oz ($50,872.09/kg) => $9.5 trillion
 ◊;Stock markets: $73 trillion (2017, visualcapitalist)
