@@ -91,45 +91,71 @@ This problem, of how to transfer ownership of a code, is really the same double 
 
 It's quite difficult for us humans to truly understand very big numbers, because we don't have anything to relate them to. For example what's the difference between $1 billion and $1 trillion? I know that the latter is 1000 times more, but that's just a number and I have difficulties to truly understand how large the difference is.
 
-I think visualizations can help us compare large amounts like these, so here's one where the small box ◊(inline-small-box) corresponds to $100 billion and the big box ◊(inline-big-box) corresponds to $1 trillion. (Although they may look small, the amounts are still ◊em{huge}.)
+I think visualizations can help us compare large amounts like these, so here's one where the small box ◊|money-vis-small| corresponds to $100 billion and the big box ◊|money-vis-big| corresponds to $1 trillion. (Although they may look small, the amounts are still ◊em{huge}.)
 
 ◊div[#:class "money-visualization"]{
 
-    ◊gen[117.5 #:cols 10 #:type "person"]{Jeff Bezos}◊mn[#:top -3]{bezos}
+    ◊(small-img "Jeff Bezos" "/images/markets/small.png")◊mn[#:top -3]{bezos}
 
-    ◊ndef["bezos"]{
-        Jeff Bezos, ◊link[richest-men]{the richest man in the world}, is worth a staggering ◊strong{$117.5 billion}. (2019)
-    }
+    ◊(market-img "Gold" "/images/markets/gold.png")◊mn[#:top -4]{gold}
 
-    ◊gen[9700 #:cols 3 #:type "gold"]{Gold}◊mn[#:top -4]{gold}
+    ◊(market-img "Money" "/images/markets/money.png")◊mn[#:top -5]{money}
 
-    ◊ndef["gold"]{
-        ◊link[mined-gold]{Around 190,040 tonnes of gold} has been mined in the world. At a ◊link[gold-price]{spot price} of $1,582.30/oz, or $50,872.09/kg, it would be worth around ◊strong{$9.7 trillion}. (2020-01-28)
-    }
+    ◊(market-img "Derivatives" "/images/markets/derivatives.png")◊mn[#:top -26]{derivatives}
 
+    ◊(small-img "Bitcoin" "/images/markets/small.png")◊mn[#:top -5]{bitcoin}
+}
+
+◊ndef["bezos"]{
+    Jeff Bezos, ◊link[richest-men]{the richest man in the world}, is worth a staggering ◊strong{$117.5 billion}. (2019)
+}
+
+◊ndef["gold"]{
+    ◊link[mined-gold]{Around 190,040 tonnes of gold} has been mined in the world. At a ◊link[gold-price]{spot price} of $1,582.30/oz, or $50,872.09/kg, it would be worth around ◊strong{$9.7 trillion}. (2020-01-28)
+}
+
+◊ndef["money"]{
+    All the money in the world, both physical and digital locked up with banks, is worth around ◊strong{$90 trillion}. ◊|visualcapitalist-ref|
+}
+
+◊ndef["derivatives"]{
+    It's quite difficult to pinpoint the value of derivatives correctly. I've found a low end estimate at ◊strong{$544 trillion} and a high end at ◊strong{$1.2 quadrillion} (that's $1200 trillion). ◊|visualcapitalist-ref|
+
+    One quadrillion!  As a non-native English speaker I hadn't even encountered "quadrillion" before, and to me it sounds like a made-up number found in Donald Duck.
+}
+
+◊ndef["bitcoin"]{
+    There's been a lot of excitement around Bitcoin's meteoric rise in valuation. But compared to the really big markets ◊link[coinlib]{Bitcoin's marketcap} of ◊strong{$164 billion} isn't that impressive. (2020-01-28)
+}
+
+◊(define money-vis-small
+  `(span ((class "money-vis-small"))))
+◊(define money-vis-big
+  `(span ((class "money-vis-big"))))
+
+◊(define (market-img title src)
+   `(div ((class "block"))
+      (div ((class "title")) ,title)
+      (div ((class "wrapper"))
+        (img ((src ,src))))))
+◊(define (small-img title src)
+   `(div ((class "block"))
+      (div ((class "title")) ,title)
+      (div ((class "wrapper small"))
+        (img ((src ,src))))))
+
+
+◊; Extremely difficult to this with text, as fonts/sizes looks very different.
+◊; But it's easy to generate a template with code.
+◊;◊div[#:class "money-visualization"]{
+    ◊;◊gen[117.5 #:cols 10 #:type "person"]{Jeff Bezos}
+    ◊;◊gen[9700 #:cols 3 #:type "gold"]{Gold}
     ◊;Stocks:
     ◊;(gen 73000 #:cols 13)
-
-    ◊gen[90000 #:cols 14 #:type "money"]{All the money in the world}◊mn[#:top -5]{money}
-
-    ◊ndef["money"]{
-        All the money in the world, both physical and digital locked up with banks, is worth around ◊strong{$90 trillion}. ◊|visualcapitalist-ref|
-    }
-
-    ◊gen[1200000 #:cols 38 #:type "derivatives"]{Derivatives}◊mn[#:top -26]{derivatives}
-
-    ◊ndef["derivatives"]{
-        It's quite difficult to pinpoint the value of derivatives correctly. I've found a low end estimate at ◊strong{$544 trillion} and a high end at ◊strong{$1.2 quadrillion} (that's $1200 trillion). ◊|visualcapitalist-ref|
-
-        One quadrillion!  As a non-native English speaker I hadn't even encountered "quadrillion" before, and to me it sounds like a made-up number found in Donald Duck.
-    }
-
-    ◊gen[164 #:cols 10 #:type "bitcoin"]{Bitcoin}◊mn[#:top -5]{bitcoin}
-
-    ◊ndef["bitcoin"]{
-        There's been a lot of excitement around Bitcoin's meteoric rise in valuation. But compared to the really big markets ◊link[coinlib]{Bitcoin's marketcap} of ◊strong{$164 billion} isn't that impressive. (2020-01-28)
-    }
-}
+    ◊;◊gen[90000 #:cols 14 #:type "money"]{All the money in the world}
+    ◊;◊gen[1200000 #:cols 38 #:type "derivatives"]{Derivatives}
+    ◊;◊gen[164 #:cols 10 #:type "bitcoin"]{Bitcoin}
+◊;}
 
 ◊;I highly recommend you to check out the excellent ◊link[money-visualization]{visualization by visualcapitalist}, which this visualization is inspired by.
 

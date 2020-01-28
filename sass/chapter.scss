@@ -935,6 +935,43 @@ table.address-message {
 }
 
 .money-visualization .block {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    .title {
+        @extend %sans-serif;
+        font-size: 1rem;
+        width: 100%;
+        text-align: center;
+    }
+    .wrapper {
+        width: 100%;
+        text-align: center;
+        overflow-x: auto;
+    }
+    .wrapper.small {
+        margin-top: -0.4rem;
+        margin-bottom: -0.4rem;
+    }
+}
+
+.money-vis-small {
+    background: url(/images/markets/small.png) left top no-repeat;
+    width: 11px;
+    height: 10px;
+    display: inline-block;
+}
+.money-vis-big {
+    background: url(/images/markets/big.png) left top no-repeat;
+    width: 12px;
+    height: 13px;
+    display: inline-block;
+}
+
+/*
+.money-visualization .block {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -983,4 +1020,4 @@ table.address-message {
 .money-visualization .block.bitcoin .money-vis {
     //color: $btc-orange;
 }
-
+*/
