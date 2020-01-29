@@ -5,7 +5,7 @@
 ◊(define-meta updated "2019-12-29T05:27:16+01:00")
 ◊(define-meta uuid "a5636cbf-bec1-4795-8c66-5725b0eec7bf")
 
-◊todo{IMG of a cryptocurrency priest wielding a sword and a bag of Bitcoin}
+◊img[#:src "/images/bitcoin-priest.png"]{}
 
 When I first started thinking about cryptocurrencies I thought it was just useful for some people who couldn't use regular transactions, like buying weed or things on a darknet market. Or that it was a better payment system as there was no middleman to skim off large fees from all transactions. That's useful, but it didn't strike me as revolutionary.◊sn{fees}
 
