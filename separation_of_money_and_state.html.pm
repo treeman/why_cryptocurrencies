@@ -105,7 +105,7 @@ While historical examples of states without direct control over their money exis
     Assuming cryptocurrencies can solve their difficult ◊link[challenges]{challenges}, such as scaling and privacy concerns.
 }
 
-◊note-pos[#:top -19]{indirect-control}
+◊note-pos[#:top -21]{indirect-control}
 ◊note-pos{challenges}
 
 
