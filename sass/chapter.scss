@@ -428,6 +428,9 @@ figure.fullwidth {
         width: 100%;
     }
 }
+figure.slim {
+    margin: 0;
+}
 figcaption.margin {
     @extend %sans-serif;
 }

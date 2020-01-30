@@ -306,8 +306,12 @@
                           x))
                      args)))
 
-(define (img #:src src #:title [title #f] #:alt [alt #f] #:class [c #f]
-             #:margin [margin #f] #:link [link #f] . caption)
+(define (img #:src src
+             #:title [title #f]
+             #:alt [alt #f]
+             #:class [c #f]
+             #:margin [margin #f]
+             #:link [link #f] . caption)
   (define attrs `())
   (when c
     (set! attrs (cons `(class ,c) attrs)))
