@@ -13,9 +13,9 @@ When I first started thinking about cryptocurrencies I thought they were just us
     I do think ◊link[cheaper-faster]{avoiding 1--3%} fees on practically all digital payments is an under-appreciated benefit of cryptocurrencies. It might be overshadowed by the volatility, but the potential benefit to the economy is absolutely huge.
 }
 
-But the idea of separating money from state made me go "Wow, that could actually be huge." We're talking about money with ◊link[are-cryptos-money]{excellent monetary properties} that's not controlled by any state, and if adopted on a large scale it would change the global economy forever.
+But the idea of separating money from state made me go "Wow, that could actually have a huge impact." As we've seen earlier the financial system ◊link[defective-system]{relies heavily on manipulating the money supply} and on ◊link[blind-leading-the-blind]{predicting and reacting to the market}. This would, for better or worse, be largely impossible if states no longer controlled the money supply and if people used cryptocurrencies instead.
 
-◊note-pos[#:top -11]{fees}
+◊note-pos[#:top -13]{fees}
 
 
 ◊(define cheaper-faster "/cheaper_faster.html")
@@ -52,7 +52,7 @@ This is why it was a big deal when the Swedish king ◊link[gustav-vasa]{Gustav 
 
 Separating church from the state was once unthinkable, yet it's now a given that religion shouldn't dictate what the state should do. In a similar way the notion that money could be separated from the state is today largely considered unthinkable, but this might change too.
 
-◊note-pos[#:top -22]{carolus-rex}
+◊note-pos[#:top -23]{carolus-rex}
 ◊note-pos[#:top -11]{after-reformation}
 
 
@@ -99,7 +99,7 @@ For starters all modern examples where a state doesn't control their own money s
 
 Cryptocurrencies are also different from the "natural" forms of money, such as shells or stones, because they have better ◊link[what-is-money]{monetary properties}. For instance the supply in a cryptocurrency is provably limited, while you always run the risk of someone discovering a mountain of shells on some remote island somewhere. Cryptocurrencies being digital also means they're easier to transport and to send over larger distances, making global interaction much easier.
 
-While historical examples of states without direct control over their money exists, the unique properties make cryptocurrencies well suited to separate money from state for real.◊sn{challenges}
+While historical examples of states without direct control over their money exists, the ◊link[are-cryptos-money]{excellent monetary properties} make cryptocurrencies well suited to separate money from state for real.◊sn{challenges}
 
 ◊ndef["challenges"]{
     Assuming cryptocurrencies can solve their difficult ◊link[challenges]{challenges}, such as scaling and privacy concerns.
@@ -115,9 +115,11 @@ It's impossible to predict the future. For example the iPhone was released in 20
 
 Nobody could've predicted this explosive technological development, so how can we predict where cryptocurrencies will take us? I don't think they'll completely revolutionize the world in a decade, but it's impossible to say what will happen 50 or 100 years from now.
 
-Will countries drop fiat and instead adopt cryptocurrencies? Would this force them to make more responsible decisions and to steer clear of ◊link[financial-crisis]{moral hazard}? Or would they fail spectacularly, issuing a new ◊link[great-depression]{Great Depression}? Maybe cryptocurrencies will fail, but instead we adopt digital currencies issued and controlled by multinational corporations, truly fulfilling the cyberpunk dystopian nightmare?
+Will countries drop fiat and instead adopt cryptocurrencies? Would this force them to make more responsible decisions and to steer clear of moral hazard, which we saw during ◊link[financial-crisis]{the last financial crisis}? Or would they fail spectacularly, issuing a new ◊link[great-depression]{Great Depression}?
 
-Maybe cryptocurrencies will co-exist as an alternative to fiat, and help limit the ◊link[defective-system]{soaring debt and money printing machines}? Or will they instead hamstring countries who need to act, but now cannot?◊sn{ww1}
+It's possible cryptocurrencies will fail, but instead we adopt digital currencies issued and controlled by multinational corporations, truly fulfilling the cyberpunk dystopian nightmare that would make ◊link[cashless-dystopia]{the cashless dystopia} seem like a dream?
+
+Maybe cryptocurrencies will co-exist as an alternative to fiat, and as discussed in previous chapters provide payment options for ◊link[undesirable]{the undesirable} and ◊link[unbanked]{the unbanked}? Maybe they'll even slow down the money printing machines and limit ◊link[defective-system]{the soaring debt}? But maybe they'll instead hamstring countries who need to act, but now cannot?◊sn{ww1}
 
 ◊ndef["ww1"]{
     The Gold Standard was largely abandoned during the outbreak of World War I, so the countries could print money to pay for the war.
@@ -129,6 +131,9 @@ Which scenario is more likely? And what would the ideal scenario look like? That
 
 ◊note-pos[#:top -14]{ww1}
 
+◊(define undesirable "/undesirable_businesses.html")
+◊(define unbanked "/for_the_unbanked.html")
+◊(define cashless-dystopia "/cashless_dystopia.html")
 ◊(define great-depression "https://en.wikipedia.org/wiki/Great_Depression")
 ◊(define ecb "https://en.wikipedia.org/wiki/European_Central_Bank")
 ◊(define euro "https://en.wikipedia.org/wiki/Euro")
@@ -141,3 +146,5 @@ Which scenario is more likely? And what would the ideal scenario look like? That
 ◊(define what-is-money "/what_is_money.html")
 ◊(define challenges "/challenges.html")
 ◊(define are-cryptos-money "/are_cryptocurrencies_money.html")
+◊(define blind-leading-the-blind "/the_blind_leading_the_blind.html")
+◊(define better-payments "/better_digital_payments.html")
