@@ -127,7 +127,7 @@ I think visualizations can help us compare large amounts like these, so here's o
 }
 
 ◊ndef["derivatives"]{
-    It's quite difficult to pinpoint the value of derivatives correctly. I've found a low end estimate at ◊strong{$544 trillion} and a high end at ◊strong{$1.2 quadrillion} (that's $1200 trillion). ◊|visualcapitalist-ref|
+    It's quite difficult to pinpoint the value of derivatives correctly. I've found a low end estimate at ◊strong{$544 trillion} and a high end at ◊strong{$1.2 quadrillion} (or $1,200 trillion). ◊|visualcapitalist-ref|
 
     One quadrillion!  As a non-native English speaker I hadn't even encountered "quadrillion" before, and to me it sounds like a made-up number found in Donald Duck.
 }
