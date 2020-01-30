@@ -6,30 +6,38 @@
 ◊(define-meta updated "2020-01-25T15:05:37+01:00")
 ◊(define-meta uuid "1cbc42c7-a81d-40ff-9620-1d89c13dee12")
 
-One of the most important properties that let cryptocurrencies function well as money is the limited supply. If instead someone was allowed to print money from thin air, it would be very poor money and would essentially be worthless.
+One of the most important properties that let cryptocurrencies function well as money is the limited supply. If someone was allowed to print coins from thin air, it would be very poor money and would essentially be worthless.
 
-But would it really be completely useless? What if we had all the ◊link[props]{other good properties}, such as being able to instantly verify them or double spend protection, what would we have then? We would have ◊em{tokens}, and they aren't completely useless.
+But would they really be completely useless? These cryptocurrency-like things are called ◊em{tokens}, and they aren't that useless. In this chapter we'll look at how they can enable more accessible fund raising, improve gift cards or enable peer-to-peer derivative trading.
 
-The most popular class of tokens are probably the ERC20 tokens, implemented on top of Ethereum. For example ◊link[usdc]{USD Coin}, Coinbase's stablecoin backed 1-to-1 by USD, is an ERC20 token. The ◊link[bnb]{Binance Coin}, used for the bonus system on a cryptocurrency exchange, is another.◊sn{other-coins}
+◊subhead{What are tokens?}
 
-Tokens can also be useful outside the cryptocurrency sphere. For example to enable more accessible fund raising, to improve gift cards or enable peer-to-peer derivative trading.
+Tokens are essentially cryptocurrencies, except there's an entity with the power to create coins. Tokens retain the other useful ◊link[props]{properties of cryptocurrencies} such as counterfeit resistance, transaction irreversibility and ◊link[double-spend]{double spend protection}.◊sn{weak}
 
-◊note-pos[#:top -7]{other-coins}
+◊ndef["weak"]{
+    Some properties are weakened when the value of tokens come from a central party.
+
+    Consider a gift card token for example.  If the company backing the gift card goes bankrupt or if the company declares that the tokens cannot be redeemed, they're now useless.
+}
+
+They achieve this by operating on top of an existing cryptocurrency. You might think of it as the issuer marking some coins with additional information, specifying what kind of token they are. (Technically tokens can be implemented in many different ways, but this is the core idea.)
+
+The most popular class of tokens are probably the ◊link[erc20-standard]{ERC20 tokens}, implemented on top of Ethereum. For example ◊link[usdc]{USD Coin}, Coinbase's stablecoin backed 1-to-1 by USD, is an ERC20 token. The ◊link[bnb]{Binance Coin}, used for the bonus system on a cryptocurrency exchange, is another.◊sn{other-coins}
+
+◊note-pos[#:top -20]{weak}
+
+◊note-pos[#:top -2]{other-coins}
 
 ◊ndef["other-coins"]{
     You could implement tokens on other cryptocurrencies as well. The ◊link[omni]{Omni Layer} is for example an extension network built on Bitcoin that supports tokens. The difference is that Ethereum's ERC20 tokens are miner validated, while Omni uses a different consensus mechanism.
 }
-
-◊;Tether plans to launch as an ERC20 token.
 
 ◊(define props "/properties_of_a_cryptocurrency.html")
 ◊(define brave "https://brave.com/")
 ◊(define usdc "https://www.coinbase.com/usdc")
 ◊(define bnb "https://coincentral.com/what-is-binance-coin-bnb/")
 ◊(define omni "https://www.omnilayer.org/")
-◊(define tether "https://tether.to/")
-
-◊;https://www.investopedia.com/news/what-erc20-and-what-does-it-mean-ethereum/
+◊(define erc20-standard "https://eips.ethereum.org/EIPS/eip-20")
 
 
 ◊subhead{Initial coin offering}
