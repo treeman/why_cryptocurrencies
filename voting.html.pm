@@ -40,8 +40,9 @@ Voting electronically is becoming more popular. The benefits are easy to see; th
 ◊ol{
     ◊li{Hacking}
     ◊li{Corruption}
-    ◊li{Lack of auditing}
+    ◊li{Lack of auditing/Transparency}
     ◊li{Privacy concerns}
+    ◊li{Understandability}
 }
 
 ◊;https://en.wikipedia.org/wiki/Electronic_voting
