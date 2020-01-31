@@ -275,18 +275,13 @@ In addition it might make risk management more practical. While it's basically i
 We've seen large benefits to cryptocurrency payments, and one large drawback:
 
 ◊ul{
-    ◊plus{Cheaper}
-    ◊plus{Settles quickly}
-    ◊plus{Reduces or removes the risk for charge back fraud}
-    ◊neg{No inherent fraud protection for costumers}
+    ◊li-plus{Cheaper}
+    ◊li-plus{Settles quickly}
+    ◊li-plus{Reduces or removes the risk for charge back fraud}
+    ◊li-neg{No inherent fraud protection for costumers}
 }
 
 The drawback might be alleviated with optional systems in the future, giving us the best of both worlds.
-
-◊(define (plus . txt)
-   `(li ((class "plus")) ,@txt))
-◊(define (neg . txt)
-   `(li ((class "neg")) ,@txt))
 
 ◊(define what-is-money "/what_is_money.html")
 ◊;http://blog.unibulmerchantservices.com/how-visas-payment-system-works/
