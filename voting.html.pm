@@ -38,34 +38,81 @@ And frankly, I just find the topic interesting.
 Voting electronically is becoming more popular. The benefits are easy to see; they're more efficient, convenient and they can instantly count votes, avoiding the problem we saw in the 2000 U.S. presidential election. But there are significant drawbacks that might make them a very bad idea:
 
 ◊ol{
-    ◊li{Hacking}
-    ◊li{Corruption}
-    ◊li{Lack of auditing/Transparency}
-    ◊li{Privacy concerns}
-    ◊li{Understandability}
+    ◊li{Lack of transparency
+
+        How do you know that your vote has been counted correctly? And that the machine didn't switch it out for some other vote? An electronic voting machine is largely a black box, one we're not sure how it works so we just hope it does the right thing.
+    }
+    ◊li{Hacking
+
+        It's much easier to hack electronic voting machines---to ◊link[vote-flipping]{change votes from Clinton to Trump} for example---than to hack paper voting. With paper voting you'd have to have people on site to exchange paper votes for new paper votes, but hacking a computer can be done from the other side of the world.
+    }
+    ◊li{Corruption
+
+        In the same way hacking is a worry, so is corruption. If you want to influence votes all you'd have to do is switch out the voting machine, and after that nobody would notice. With paper voting it's harder since there are many more constantly watching what happens to the votes, so you'd have to bribe more people to get away with it.
+    }
+    ◊li{Privacy concerns
+
+        Paper voting preserves your privacy very well. You walk behind a screen, select a paper and put it a box with hundreds of other papers, making it basically impossible to trace that one vote back to you. Simple and very effective.
+
+        Not so with electronic voting. The voting machine needs to verify your identity some way and computers can, and therefore we must assume they will, record everything that happens on it. This is information that a hacker could gain access to, and would be able to see exactly who you voted for.◊sn{191-mil}
+
+        ◊ndef["191-mil"]{
+            In 2015 ◊link[191-mil-us-voters]{a database on the web had personal information} on registered U.S. voters, 191 million in total. It contained your full name, home address, mailing address, phone number, date of borth and whether or not you voted in any election back to 2000.
+
+            ◊link[191-reddit]{And it wasn't even a hack}. The database was just lying there, open for anyone to read. It's like if someone had left a paper in the middle of the library, available to anyone who happened to walk by.
+
+            With electronic voting this database might've also contained who you voted for.
+        }
+    }
+    ◊li{Understandability
+
+        It's easy to explain how paper voting works; you just count the pieces of paper and tally up which name occurs the most. It's much more difficult to explain how electronic voting works and what makes it trustworthy.
+
+        How does it for example prevent someone from voting twice? With paper voting there are people who checks that you're only placing a single vote in the box, but how does the computer do that? And how do you know the computer counted your vote correctly?
+
+        Understandability is important because people have to trust their election to be fair. If they don't trust their votes being counted correctly, then they can't trust the outcome of the election either.
+    }
 }
+
+◊(define vote-flipping "https://heavy.com/news/2016/10/vote-flipping-georgia-texas-north-carolina-nevada-hillary-clinton-machines-donald-trump-rigged-fraud/")
+◊(define 191-mil-us-voters "https://www.forbes.com/sites/thomasbrewster/2015/12/28/us-voter-database-leak/")
+◊(define 191-reddit "https://www.reddit.com/r/privacy/comments/3yinij/entire_us_voter_registration_record_leaks_191/")
 
 ◊;https://en.wikipedia.org/wiki/Electronic_voting
 
 
 ◊subhead{An auditable voting scheme}
 
+I'm going to present a high level description of a voting scheme that have some very good and beneficial properties:
 
-◊subhead3{Beneficial properties}
+
+◊;subhead3{Beneficial properties}
 
 ◊ul{
     ◊li-plus{Instant vote counting
 
-            No more waiting for results
+             Because it's a form of electronic voting, votes can be counted instantly.
     }
-    ◊li-plus{Verifiably fair
+    ◊li-plus{Vote anywhere
 
-            Did my vote get counted?
-
-            Did it get counted correctly?
+             It's possible to set it up so you can vote with your mobile phone, from the other side of the world. This would allow for ◊link[direct-democracy]{direct democracy} where people can vote on policy directly, with very minor overhead.
     }
-    ◊li-plus{Vote anywhere at any time}
+    ◊li-plus{Verifiable
+
+             The real difference with this voting scheme compared to others is that anyone can verify the integrity of the voting result. It can answer questions like:
+
+             ◊ul{
+                ◊li{Did my vote get counted?}
+                ◊li{Did it get counted correctly?}
+                ◊li{How many votes were given out in total?}
+                ◊li{How many votes were cast?}
+             }
+
+             If you happened used a corrupt voting machine that changed your vote from Hillary to Trump, you could see that's what happened. You can also be sure that your vote was counted correctly, or if you didn't vote that it wasn't included. Vote counting is alway verifiably correct.
+    }
 }
+
+◊(define direct-democracy "https://en.m.wikipedia.org/wiki/Direct_democracy")
 
 
 ◊subhead3{Unsolved problems}
@@ -74,6 +121,7 @@ Voting electronically is becoming more popular. The benefits are easy to see; th
     ◊li-neg{Privacy}
     ◊li-neg{Key delivery}
     ◊li-neg{Vote buying}
+    ◊li-neg{Understandability}
 }
 
 
