@@ -99,7 +99,7 @@ I'm going to present a high level description of a voting scheme that have some 
     }
     ◊li-plus{Verifiable
 
-             The real difference with this voting scheme compared to others is that anyone can verify the integrity of the voting result. It can answer questions like:
+             The real difference with this voting scheme compared to others is that anyone can verify the integrity of the voting result. It can with certainty answer questions like:
 
              ◊ul{
                 ◊li{Did my vote get counted?}
@@ -108,23 +108,40 @@ I'm going to present a high level description of a voting scheme that have some 
                 ◊li{How many votes were cast?}
              }
 
-             If you happened used a corrupt voting machine that changed your vote from Hillary to Trump, you could see that's what happened. You can also be sure that your vote was counted correctly, or if you didn't vote that it wasn't included. Vote counting is alway verifiably correct.
+             If you happened used a corrupt voting machine that changed your vote from Hillary to Trump, you could see that's what happened. You can also be sure that your vote was counted correctly, or if you didn't vote that it wasn't included. In this scheme vote counting is alway verifiably correct.
     }
 }
 
 ◊(define direct-democracy "https://en.m.wikipedia.org/wiki/Direct_democracy")
 
+The scheme is similar to tokens that we discussed in the ◊link[tokens]{previous chapter}. Here the issuer is the government, who still needs a way to verify voters and to give them a token (a single vote). The process would be similar to how it works today, where people get verified when they go to vote.
+
+With the tokens distributed you could cast a vote by sending them to predetermined addresses to cast your vote. For example if you want to vote for Trump, you send it to the Trump address. If you want to vote for Hillary, you send it to the Hillary address. And if you don't want to vote you don't do anything.
+
+◊todo{IMG of how it might happen}
+
+◊todo{Discuss how vote counting works}
+
+◊(define tokens "/tokens.html")
+
 
 ◊subhead3{Unsolved problems}
 
 ◊ul{
-    ◊li-neg{Privacy}
+    ◊li-neg{Privacy
+
+            The big flaw of this simple scheme is the poor privacy.  If you can connect token issuance with your identification---which the government will be able to---then they can see who you voted for. It has the same privacy problem that Bitcoin has, except it's even worse.
+
+            The solution would be to obscure the coin history between issuance of the token and when you cast your vote.  We could use the obfuscation techniques, described in the ◊link[priv-fung]{privacy and fungibility} part of the appendix, to accomplish this.
+    }
     ◊li-neg{Key delivery}
     ◊li-neg{Vote buying}
+    ◊li-neg{Stealing votes}
     ◊li-neg{Understandability}
 }
 
 
 ◊;subhead{An alternative approach}
 ◊(define shuffling-public-keys "http://vixra.org/pdf/1905.0239v1.pdf")
+◊(define priv-fung "/challenges.html#privacy-and-fungibility")
 
