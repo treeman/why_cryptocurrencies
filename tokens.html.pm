@@ -12,7 +12,7 @@ But would they really be completely useless? These cryptocurrency-like things ar
 
 ◊subhead{What are tokens?}
 
-Tokens are essentially cryptocurrencies, except there's an entity with the power to create coins. Tokens retain the other useful ◊link[props]{properties of cryptocurrencies} such as counterfeit resistance, transaction irreversibility and ◊link[double-spend]{double spend protection}.◊sn{weak}
+Tokens are essentially cryptocurrencies, except there's a single entity with the power to create coins. Tokens retain the other useful ◊link[props]{properties of cryptocurrencies} such as counterfeit resistance, transaction irreversibility and ◊link[double-spend]{double spend protection}.◊sn{weak}
 
 ◊ndef["weak"]{
     Some properties are weakened when the value of tokens come from a central party.
