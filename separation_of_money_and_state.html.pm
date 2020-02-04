@@ -1,7 +1,7 @@
 #lang pollen
 
 ◊(define-meta title "Separation of money and state")
-◊(define-meta subtitle "When countries don't manage their own money")
+◊(define-meta subtitle "Countries that don't manage their own money")
 ◊(define-meta updated "2019-12-29T05:27:16+01:00")
 ◊(define-meta uuid "a5636cbf-bec1-4795-8c66-5725b0eec7bf")
 
