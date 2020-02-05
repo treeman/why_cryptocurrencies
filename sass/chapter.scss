@@ -201,6 +201,9 @@ blockquote > footer > cite {
 blockquote .emphasis {
     font-size: 80%;
 }
+blockquote.center {
+    text-align: center;
+}
 
 // Should we shut it down for small text?
 //blockquote > footer a:link {
@@ -424,6 +427,9 @@ figure.fullwidth {
     img {
         width: 100%;
     }
+}
+figure.slim {
+    margin: 0;
 }
 figcaption.margin {
     @extend %sans-serif;

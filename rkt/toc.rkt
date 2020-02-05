@@ -33,7 +33,7 @@
      swiss_bank_account_in_your_pocket.html
      cashless_dystopia.html
      protection_against_government_confiscation.html
-     "Separation of money and state")
+     separation_of_money_and_state.html)
     (extensions.html
      timestamping_service.html
      uncensorable_twitter.html
