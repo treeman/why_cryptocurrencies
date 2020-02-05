@@ -40,9 +40,9 @@ sync ($site_bucket, "$site/images", "max-age=6048000");
 say "Syncing fonts";
 sync ($site_bucket, "$site/fonts", "max-age=6048000");
 
-# Sync css (cache: 1 hour)
+# Sync css (cache: 1 min)
 say "Syncing css";
-sync ($site_bucket, "$site/css", "max-age=3600", "-m text/css");
+sync ($site_bucket, "$site/css", "max-age=60", "-m text/css");
 
 # Sync rest (cache: 1 min)
 say "Syncing rest";
