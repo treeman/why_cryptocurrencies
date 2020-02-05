@@ -21,6 +21,9 @@
 ◊; Bruce Schneier on how insecure electronic voting could break the United States 
 ◊;https://news.ycombinator.com/item?id=21358238
 
+◊; App Used to Tabulate Votes Is Said to Have Been Inadequately Tested 
+◊;https://news.ycombinator.com/item?id=22234593
+
 In this chapter I'm going to speculate even more than I have in other chapters. Here I'll try to describe some problems with the current voting system and some possible improvements. The questionable part is that this system doesn't exist, it contains a number of unsolved problems and it's not even clear it should be based on a cryptocurrency or not.
 
 I still want to bring this up because even if voting on a cryptocurrency is fundamentally unsound, the innovation in consensus mechanisms that cryptocurrencies have made might spur more research into this topic, which might in the end result in a better voting system.
