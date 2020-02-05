@@ -113,17 +113,33 @@ I'm going to present a high level description of a voting scheme that have some 
 
              If you happened used a corrupt voting machine that changed your vote from Hillary to Trump, you could see that's what happened. You can also be sure that your vote was counted correctly, or if you didn't vote that it wasn't included. In this scheme vote counting is alway verifiably correct.
     }
+    ◊li-plus{Transparent
+
+             The system is public so anyone can verify that it works like it's supposed to. This is different from other electronic voting schemes where there's always a certain amount of trust involved. There are audits there too, but then you have to trust the competence and integrity of the auditors, but here anyone can audit the system.
+
+             ◊qt{
+                Don't trust, verify.
+            }
+    }
 }
 
 ◊(define direct-democracy "https://en.m.wikipedia.org/wiki/Direct_democracy")
 
 The scheme is similar to tokens that we discussed in the ◊link[tokens]{previous chapter}. Here the issuer is the government, who still needs a way to verify voters and to give them a token (a single vote). The process would be similar to how it works today, where people get verified when they go to vote.
 
-With the tokens distributed you could cast a vote by sending them to predetermined addresses to cast your vote. For example if you want to vote for Trump, you send it to the Trump address. If you want to vote for Hillary, you send it to the Hillary address. And if you don't want to vote you don't do anything.
+With the tokens distributed you could cast a vote by sending them to predetermined addresses to cast your vote. For example if you want to vote for Trump, you send it to the Trump address. If you want to vote for Hillary, you send it to the Hillary address. And if you don't want to vote you don't do anything.◊sn{blank}
 
-◊todo{IMG of how it might happen}
+◊ndef["blank"]{
+    It's easy to give multiple options. For example if you want to be able to differentiate between those who don't care, and those who want to vote but not any candidate, just have an additional "blank" address voters can send to.
+}
 
-◊todo{Discuss how vote counting works}
+◊img[#:src "/images/voting.png"]{
+    Each arrow corresponds to a token transaction and the "Hillary" and "Trump" boxes are addresses. The state is responsible for issuing the voting tokens to the voters and the voters in turn send them to the address they want to vote for. In this example Hillary got 1 vote and Trump got 2, and everyone voted.
+}
+
+These transactions work like cryptocurrency transactions, so you cannot counterfeit them and manufacture votes from thin air. Well, the state could do it, but everyone can see exactly how many votes they give out, so if they give out more votes than there's eligible voters in the country... You know something is shady.
+
+It's easy to count the votes---just check how much each address holds. It's also easy for you to see that your vote has arrived to the correct voting address, and if it did you know your vote will count.
 
 ◊(define tokens "/tokens.html")
 
