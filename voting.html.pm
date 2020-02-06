@@ -115,10 +115,10 @@ I'm going to present a high level description of a voting scheme that have some 
     }
     ◊li-plus{Transparent
 
-             The system is public so anyone can verify that it works like it's supposed to. This is different from other electronic voting schemes where there's always a certain amount of trust involved. There are audits there too, but then you have to trust the competence and integrity of the auditors, but here anyone can audit the system.
+             The system is public so anyone can verify that it works like it's supposed to. This is different from other electronic voting schemes where there's always a certain amount of trust involved. There are audits there too, but then you have to trust the competence and integrity of the auditors, but here anyone can audit the system.◊sn{dont-trust-verify}
 
-             ◊qt{
-                Don't trust, verify.
+             ◊ndef["dont-trust-verify"]{
+                "Don't trust, verify." is a popular saying in the cryptocurrency sphere. But first you need to have a transparent system you can verify, otherwise you have to trust.
             }
     }
 }
@@ -137,30 +137,70 @@ With the tokens distributed you could cast a vote by sending them to predetermin
     Each arrow corresponds to a token transaction and the "Hillary" and "Trump" boxes are addresses. The state is responsible for issuing the voting tokens to the voters and the voters in turn send them to the address they want to vote for. In this example Hillary got 1 vote and Trump got 2, and everyone voted.
 }
 
-These transactions work like cryptocurrency transactions, so you cannot counterfeit them and manufacture votes from thin air. Well, the state could do it, but everyone can see exactly how many votes they give out, so if they give out more votes than there's eligible voters in the country... You know something is shady.
+These transactions work like cryptocurrency transactions, so you cannot counterfeit them and manufacture votes from thin air. Well, the state could do it, but everyone can see exactly how many votes they give out, so if they give out more votes than there's eligible voters in the country... You know something is shady.◊sn{how-do-you-know?}
+
+◊ndef["how-do-you-know?"]{
+    Then how do you know that the votes are given out correctly and that the state distributes them fairly? The same we it works today---the voters are holding the state accountable.
+}
 
 It's easy to count the votes---just check how much each address holds. It's also easy for you to see that your vote has arrived to the correct voting address, and if it did you know your vote will count.
 
 ◊(define tokens "/tokens.html")
 
 
-◊subhead3{Unsolved problems}
+◊subhead{Unsolved problems}
+
+The scheme I've presented is simple---too simple. There are many problems with it, some that might be solvable but others are, to my knowledge, unsolved.
 
 ◊ul{
     ◊li-neg{Privacy
 
-            The big flaw of this simple scheme is the poor privacy.  If you can connect token issuance with your identification---which the government will be able to---then they can see who you voted for. It has the same privacy problem that Bitcoin has, except it's even worse.
+            The big flaw is the poor privacy.  If you can connect token issuance with your identification---which the government will be able to---then they can see who you voted for. It has the same privacy problem that Bitcoin has, except it's even worse as there's a direct link between you and your address.
 
-            The solution would be to obscure the coin history between issuance of the token and when you cast your vote.  We could use the obfuscation techniques, described in the ◊link[priv-fung]{privacy and fungibility} part of the appendix, to accomplish this.
+            The solution would be to obscure the coin history between issuance of the token and when you cast your vote.  We could use the obfuscation techniques, described in the ◊link[priv-fung]{privacy and fungibility} part of the appendix, to accomplish this.◊sn{mixing?}
+
+            ◊ndef["mixing?"]{
+                Imagine for example if all voters had to go through a mixing state, where people trade a vote for another vote. If done correctly the state can't connect the final votes to the identities, while still be sure the right people still had the ability to vote.
+            }
+
+            It's important to note that the privacy scheme has very high requirements. It's not enough that it seems to be good today, it has to hold up in 10, 20 or maybe even 100 years from now.
     }
-    ◊li-neg{Key delivery}
-    ◊li-neg{Vote buying}
-    ◊li-neg{Stealing votes}
-    ◊li-neg{Understandability}
+    ◊li-neg{Key delivery
+
+            This whole scheme rests on the ability and the trust that the state can somehow distribute votes fairly and correctly. I don't think the trust issue is different from how it works today, but there many details on how votes are distributed that needs to be ironed out.
+
+            I do think it's a problem that can be solved. For example in Sweden we have ◊link[bank-id]{BankID}, an electronic citizen identification solution, that we use to file our taxes, login to banks and many other things. It's really like an electronic identification card that could in theory be used to authenticate electronic votes as well.◊sn{bankid-banks}
+
+            ◊ndef["bankid-banks"]{
+                BankID is distributed by banks and not by the state, but in principle there's no reason why a simlar system couldn't.
+            }
+    }
+    ◊li-neg{Stealing votes
+
+            While the system itself could of course be hacked (anything could theoretically be broken), I see stealing individual votes as a bigger problem. For example if voting should be carried out on mobile phones, what if some ◊link[malware]{malware} has infected your phone and decides to change your vote? Or if a hacker can hack the voting app you use?
+
+            One possible solution might be for people to change their votes before the voting is over, so they could verify their vote on another phone or computer, and do something about it if something has gone wrong. But this is problematic in other ways. For example it allows you to change your vote if you see the vote isn't going your way and it's not clear how this should be implemented in the first place.
+    }
+    ◊li-neg{Vote buying
+
+
+            Another concern is that it might make buying and selling votes easier. With paper voting there's no easy way to prove you voted one way (other than bringing a camera with you and record your actions).
+
+            But with this scheme you can with 100% certainty prove who you voted for. If you wanted to you could also give your vote to someone else, or they might even try to coerce you to do so.
+    }
+    ◊li-neg{Understandability
+
+            If electronic voting was hard for people to understand and accept, this wouldn't be any easier. If anything "blockchain voting" might be even harder to understand, especially as many technologically proficient people still regard the blockchain as a panacea that can solve any problem.
+    }
 }
 
 
-◊;subhead{An alternative approach}
+◊(define bank-id "https://www.bankid.com/en/")
+◊(define malware "https://en.wikipedia.org/wiki/Malware")
+
+
+
+◊subhead{What now?}
+
 ◊(define shuffling-public-keys "http://vixra.org/pdf/1905.0239v1.pdf")
 ◊(define priv-fung "/challenges.html#privacy-and-fungibility")
-
