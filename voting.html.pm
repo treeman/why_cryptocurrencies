@@ -6,21 +6,29 @@
 ◊(define-meta updated "2020-01-31T07:22:31+01:00")
 ◊(define-meta uuid "5aaf6384-d377-485b-bfc2-2c4caaaa0fe0")
 
+◊epigraph{
+  ◊qt[#:author "Bruce Schneier"
+      #:src "80,000 Hours podcast"
+      #:url "https://80000hours.org/podcast/episodes/bruce-schneier-security-secrets-and-surveillance/"]{
+    Nobody is in favor of the power going down. Nobody is in favor of all cell phones not working. But an election? There are sides. Half of the country will want the result to stand and half the country will want the result overturned; they’ll decide on their course of action based on the result, not based on what’s right.
+  }
+}
+
+
 ◊; Votebook - a blockchain-based electronic voting system
 ◊;https://news.ycombinator.com/item?id=13142418
 
 ◊; In Georgia, a legal battle over electronic vs. paper voting
 ◊;https://news.ycombinator.com/item?id=18006211
 
-◊; An electronic voting firm exposes 1.8M Chicagoans
-◊;https://news.ycombinator.com/item?id=15045650
-
 ◊; America's electronic voting system is corrupt to the Core
 ◊;https://news.ycombinator.com/item?id=20919748
 
+◊; It's a podcast I should listen to
 ◊; Bruce Schneier on how insecure electronic voting could break the United States 
 ◊;https://news.ycombinator.com/item?id=21358238
 
+◊; Ref
 ◊; App Used to Tabulate Votes Is Said to Have Been Inadequately Tested 
 ◊;https://news.ycombinator.com/item?id=22234593
 
@@ -38,7 +46,7 @@ And frankly, I just find the topic interesting.
 
 ◊subhead{The problems with electronic voting}
 
-Voting electronically is becoming more popular. The benefits are easy to see; they're more efficient, convenient and they can instantly count votes, avoiding the problem we saw in the 2000 U.S. presidential election. But there are significant drawbacks that might make them a very bad idea:
+Voting electronically is becoming more popular. The benefits are easy to see; they're more efficient, convenient and they can instantly count votes, avoiding the problem we saw in the 2000 U.S. presidential election. But there are significant drawbacks that might make them ◊link[georgia-legal-battle]{a very bad idea}:
 
 ◊ol{
     ◊li{Lack of transparency
@@ -47,7 +55,11 @@ Voting electronically is becoming more popular. The benefits are easy to see; th
     }
     ◊li{Hacking
 
-        It's much easier to hack electronic voting machines---to ◊link[vote-flipping]{change votes from Clinton to Trump} for example---than to hack paper voting. With paper voting you'd have to have people on site to exchange paper votes for new paper votes, but hacking a computer can be done from the other side of the world.
+        It's much easier to hack electronic voting machines---to ◊link[vote-flipping]{change votes from Clinton to Trump} for example---than to hack paper voting. With paper voting you'd have to have people on site to exchange paper votes for new paper votes, but hacking a computer can be done from the other side of the world.◊sn{no-testing}
+
+        ◊ndef["no-testing"]{
+            There's a lot of focus on "hackers" being a problem, but there are less nefarious problems too. For instance the app used to tabulate votes during the Iowa caucuses in 2020 was ◊link[#:quote #t inadequately-tested]{inadequately tested}. It simply didn't work properly, which is always a risk with software.
+        }
     }
     ◊li{Corruption
 
@@ -57,7 +69,7 @@ Voting electronically is becoming more popular. The benefits are easy to see; th
 
         Paper voting preserves your privacy very well. You walk behind a screen, select a paper and put it a box with hundreds of other papers, making it basically impossible to trace that one vote back to you. Simple and very effective.
 
-        Not so with electronic voting. The voting machine needs to verify your identity some way and computers can, and therefore we must assume they will, record everything that happens on it. This is information that a hacker could gain access to, and would be able to see exactly who you voted for.◊sn{191-mil}
+        ◊link[chicago-privacy]{Not so with electronic voting}. The voting machine needs to verify your identity some way and computers can, and therefore we must assume they will, record everything that happens on it. This is information that a hacker could gain access to, and would be able to see exactly who you voted for.◊sn{191-mil}
 
         ◊ndef["191-mil"]{
             In 2015 ◊link[191-mil-us-voters]{a database on the web had personal information} on registered U.S. voters, 191 million in total. It contained your full name, home address, mailing address, phone number, date of borth and whether or not you voted in any election back to 2000.
@@ -77,6 +89,9 @@ Voting electronically is becoming more popular. The benefits are easy to see; th
     }
 }
 
+◊(define georgia-legal-battle "https://www.washingtonpost.com/world/national-security/in-georgia-a-legal-battle-over-electronic-vs-paper-voting/2018/09/16/d655c070-b76f-11e8-94eb-3bd52dfe917b_story.html")
+◊(define inadequately-tested "https://www.nytimes.com/2020/02/03/us/politics/iowa-caucus-app.html")
+◊(define chicago-privacy "https://www.upguard.com/breaches/cloud-leak-chicago-voters")
 ◊(define vote-flipping "https://heavy.com/news/2016/10/vote-flipping-georgia-texas-north-carolina-nevada-hillary-clinton-machines-donald-trump-rigged-fraud/")
 ◊(define 191-mil-us-voters "https://www.forbes.com/sites/thomasbrewster/2015/12/28/us-voter-database-leak/")
 ◊(define 191-reddit "https://www.reddit.com/r/privacy/comments/3yinij/entire_us_voter_registration_record_leaks_191/")
