@@ -183,7 +183,6 @@ The scheme I've presented is simple---too simple. There are many problems with i
     }
     ◊li-neg{Vote buying
 
-
             Another concern is that it might make buying and selling votes easier. With paper voting there's no easy way to prove you voted one way (other than bringing a camera with you and record your actions).
 
             But with this scheme you can with 100% certainty prove who you voted for. If you wanted to you could also give your vote to someone else, or they might even try to coerce you to do so.
@@ -199,8 +198,12 @@ The scheme I've presented is simple---too simple. There are many problems with i
 ◊(define malware "https://en.wikipedia.org/wiki/Malware")
 
 
+◊subhead{Why a blockchain?}
 
-◊subhead{What now?}
+The big question to ask is why would we want voting on a blockchain anyway? Why would we want to record our votes on a permanent database, when we might even want to allow people to reverse/change their votes? Why build a voting a scheme on an extremely inefficient system, that all cryptocurrencies/blockchain applications are?
+
+I'm not sure you do. Cryptocurrencies pioneered a consensus mechanism that allows...
 
 ◊(define shuffling-public-keys "http://vixra.org/pdf/1905.0239v1.pdf")
 ◊(define priv-fung "/challenges.html#privacy-and-fungibility")
+
