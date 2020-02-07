@@ -38,7 +38,7 @@
      timestamping_service.html
      uncensorable_twitter.html
      provably_fair_gambling.html
-     "Tokens"
+     tokens.html
      "Verifiable voting")
     (appendix.html
      bitcoin_whitepaper.html

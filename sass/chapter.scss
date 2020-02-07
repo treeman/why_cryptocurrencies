@@ -936,3 +936,94 @@ table.address-message {
     }
 }
 
+.money-visualization {
+    margin: 1em 0;
+}
+
+.money-visualization .block {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    .title {
+        @extend %sans-serif;
+        font-size: 1rem;
+        width: 100%;
+        text-align: center;
+    }
+    .wrapper {
+        width: 100%;
+        text-align: center;
+        overflow-x: auto;
+    }
+    .wrapper.small {
+        margin-top: -0.4rem;
+        margin-bottom: -0.4rem;
+    }
+}
+
+.money-vis-small {
+    background: url(/images/markets/small.png) left top no-repeat;
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+}
+.money-vis-big {
+    background: url(/images/markets/big.png) left top no-repeat;
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+}
+
+/*
+.money-visualization .block {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    .row {
+        width: 100%;
+        //flex: 0 0 auto;
+        display: flex;
+        justify-content: center;
+        //flex-wrap: nowrap;
+    }
+    .title {
+        @extend %sans-serif;
+        font-size: 1rem;
+    }
+}
+
+.money-vis.big {
+    font-size: 0.6em;
+    line-height: 1;
+}
+.money-vis.small {
+    font-size: 0.3em;
+    line-height: 1;
+}
+.inline-ex .money-vis {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+    padding-bottom: 0.1rem;
+}
+
+
+.money-visualization .block.person .money-vis {
+    //color: $xmr-orange;
+}
+.money-visualization .block.gold .money-vis {
+    color: #ffb900;
+}
+.money-visualization .block.money .money-vis {
+    color: #3E9651;
+}
+.money-visualization .block.derivatives .money-vis {
+    color: #535154;
+}
+.money-visualization .block.bitcoin .money-vis {
+    //color: $btc-orange;
+}
+*/
