@@ -18,19 +18,12 @@
 ◊; Votebook - a blockchain-based electronic voting system
 ◊;https://news.ycombinator.com/item?id=13142418
 
-◊; In Georgia, a legal battle over electronic vs. paper voting
-◊;https://news.ycombinator.com/item?id=18006211
-
 ◊; America's electronic voting system is corrupt to the Core
 ◊;https://news.ycombinator.com/item?id=20919748
 
 ◊; It's a podcast I should listen to
-◊; Bruce Schneier on how insecure electronic voting could break the United States 
+◊; Bruce Schneier on how insecure electronic voting could break the United States
 ◊;https://news.ycombinator.com/item?id=21358238
-
-◊; Ref
-◊; App Used to Tabulate Votes Is Said to Have Been Inadequately Tested 
-◊;https://news.ycombinator.com/item?id=22234593
 
 In this chapter I'm going to speculate even more than I have in other chapters. Here I'll try to describe some problems with the current voting system and some possible improvements. The questionable part is that this system doesn't exist, it contains a number of unsolved problems and it's not even clear it should be based on a cryptocurrency or not.
 
@@ -111,26 +104,19 @@ I'm going to present a high level description of a voting scheme that have some 
 ◊;subhead3{Beneficial properties}
 
 ◊ul{
-    ◊li-plus{Instant vote counting
-
-             Because it's a form of electronic voting, votes can be counted instantly.
-    }
-    ◊li-plus{Vote anywhere
-
-             It's possible to set it up so you can vote with your mobile phone, from the other side of the world. This would allow for ◊link[direct-democracy]{direct democracy} where people can vote on policy directly, with very minor overhead.
-    }
     ◊li-plus{Verifiable
 
-             The real difference with this voting scheme compared to others is that anyone can verify the integrity of the voting result. It can with certainty answer questions like:
+             The important difference with this voting scheme compared to others is that anyone can verify the integrity of the voting result. It can with certainty answer questions like:
 
              ◊ul{
                 ◊li{Did my vote get counted?}
                 ◊li{Did it get counted correctly?}
                 ◊li{How many votes were given out in total?}
                 ◊li{How many votes were cast?}
+                ◊li{What was the outcome?}
              }
 
-             If you happened used a corrupt voting machine that changed your vote from Hillary to Trump, you could see that's what happened. You can also be sure that your vote was counted correctly, or if you didn't vote that it wasn't included. In this scheme vote counting is alway verifiably correct.
+             If you happened used a corrupt voting machine that changed your vote from Hillary to Trump, you could use another device and see that's what happened. You can also be sure that your vote was counted correctly, or if you didn't vote that it wasn't included. In this scheme vote counting is alway verifiably correct.
     }
     ◊li-plus{Transparent
 
@@ -142,11 +128,29 @@ I'm going to present a high level description of a voting scheme that have some 
                 "Don't trust, verify." is a popular saying in the cryptocurrency sphere. But first you need to have a transparent system you can verify, otherwise you have to trust.
             }
     }
+    ◊li-plus{Instant vote counting
+
+             Because it's a form of electronic voting, votes can be counted instantly and you get real time updates as the votes come in.◊sn{benefit-or-curse?}
+
+             ◊note-pos{benefit-or-curse?}
+
+             ◊ndef["benefit-or-curse?"]{
+                Even if possible, is it desirable to get a real time update of voting? Couldn't that affect the election in a bad way? I don't know... Maybe?
+             }
+    }
+    ◊li-plus{Vote anywhere
+
+             It's possible to set it up so you can vote with your mobile phone, from the other side of the world. This would allow for ◊link[direct-democracy]{direct democracy} where people can vote on policy directly, with very minor overhead.
+    }
 }
 
 ◊(define direct-democracy "https://en.m.wikipedia.org/wiki/Direct_democracy")
 
-The scheme is similar to tokens that we discussed in the ◊link[tokens]{previous chapter}. Here the issuer is the government, who still needs a way to verify voters and to give them a token (a single vote). The process would be similar to how it works today, where people get verified when they go to vote.
+The scheme is similar to tokens that we discussed in the ◊link[tokens]{previous chapter}. Here the issuer is the government, who still needs a way to verify voters and to give them a token (a single vote). The process would be similar to how it works today, where people get verified when they go to vote.◊sn{government}
+
+◊ndef["government"]{
+    While I focus on government elections voting is useful in other contexts too. (In my head I see a bunch of people sitting around a table, shrouded in shadows, voting on who to kill.)
+}
 
 With the tokens distributed you could cast a vote by sending them to predetermined addresses to cast your vote. For example if you want to vote for Trump, you send it to the Trump address. If you want to vote for Hillary, you send it to the Hillary address. And if you don't want to vote you don't do anything.◊sn{blank}
 
@@ -207,7 +211,7 @@ The scheme I've presented is simple---too simple. There are many problems with i
 
             While the system itself could of course be hacked (anything could theoretically be broken), I see stealing individual votes as a bigger problem. For example if voting should be carried out on mobile phones, what if some ◊link[malware]{malware} has infected your phone and decides to change your vote? Or if a hacker can hack the voting app you use?
 
-            One possible solution might be for people to change their votes before the voting is over, so they could verify their vote on another phone or computer, and do something about it if something has gone wrong. But this is problematic in other ways. For example it allows you to change your vote if you see the vote isn't going your way and it's not clear how this should be implemented in the first place.
+            One possible solution might be for people to change their votes before the voting is over, so they could verify their vote on another phone or computer, and do something about it if something has gone wrong. But this is problematic in other ways, like it allows you to change your vote if you see the vote isn't going your way.
     }
     ◊li-neg{Vote buying
 
