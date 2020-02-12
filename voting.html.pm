@@ -6,21 +6,29 @@
 ◊(define-meta updated "2020-01-31T07:22:31+01:00")
 ◊(define-meta uuid "5aaf6384-d377-485b-bfc2-2c4caaaa0fe0")
 
+◊epigraph{
+  ◊qt[#:author "Bruce Schneier"
+      #:src "80,000 Hours podcast"
+      #:url "https://80000hours.org/podcast/episodes/bruce-schneier-security-secrets-and-surveillance/"]{
+    Nobody is in favor of the power going down. Nobody is in favor of all cell phones not working. But an election? There are sides. Half of the country will want the result to stand and half the country will want the result overturned; they’ll decide on their course of action based on the result, not based on what’s right.
+  }
+}
+
+
 ◊; Votebook - a blockchain-based electronic voting system
 ◊;https://news.ycombinator.com/item?id=13142418
 
 ◊; In Georgia, a legal battle over electronic vs. paper voting
 ◊;https://news.ycombinator.com/item?id=18006211
 
-◊; An electronic voting firm exposes 1.8M Chicagoans
-◊;https://news.ycombinator.com/item?id=15045650
-
 ◊; America's electronic voting system is corrupt to the Core
 ◊;https://news.ycombinator.com/item?id=20919748
 
+◊; It's a podcast I should listen to
 ◊; Bruce Schneier on how insecure electronic voting could break the United States 
 ◊;https://news.ycombinator.com/item?id=21358238
 
+◊; Ref
 ◊; App Used to Tabulate Votes Is Said to Have Been Inadequately Tested 
 ◊;https://news.ycombinator.com/item?id=22234593
 
@@ -38,7 +46,7 @@ And frankly, I just find the topic interesting.
 
 ◊subhead{The problems with electronic voting}
 
-Voting electronically is becoming more popular. The benefits are easy to see; they're more efficient, convenient and they can instantly count votes, avoiding the problem we saw in the 2000 U.S. presidential election. But there are significant drawbacks that might make them a very bad idea:
+Voting electronically is becoming more popular. The benefits are easy to see; they're more efficient, convenient and they can instantly count votes, avoiding the problem we saw in the 2000 U.S. presidential election. But there are significant drawbacks that might make them ◊link[georgia-legal-battle]{a very bad idea}:
 
 ◊ol{
     ◊li{Lack of transparency
@@ -47,7 +55,13 @@ Voting electronically is becoming more popular. The benefits are easy to see; th
     }
     ◊li{Hacking
 
-        It's much easier to hack electronic voting machines---to ◊link[vote-flipping]{change votes from Clinton to Trump} for example---than to hack paper voting. With paper voting you'd have to have people on site to exchange paper votes for new paper votes, but hacking a computer can be done from the other side of the world.
+        It's much easier to hack electronic voting machines---to ◊link[vote-flipping]{change votes from Clinton to Trump} for example---than to hack paper voting. With paper voting you'd have to have people on site to exchange paper votes for new paper votes, but hacking a computer can be done from the other side of the world.◊sn{no-testing}
+
+        ◊note-pos{no-testing}
+
+        ◊ndef["no-testing"]{
+            There's a lot of focus on "hackers" being a problem, but there are less nefarious problems too. For instance the app used to tabulate votes during the Iowa caucuses in 2020 was ◊link[#:quote #t inadequately-tested]{inadequately tested}. It simply didn't work properly, which is always a risk with software.
+        }
     }
     ◊li{Corruption
 
@@ -57,7 +71,9 @@ Voting electronically is becoming more popular. The benefits are easy to see; th
 
         Paper voting preserves your privacy very well. You walk behind a screen, select a paper and put it a box with hundreds of other papers, making it basically impossible to trace that one vote back to you. Simple and very effective.
 
-        Not so with electronic voting. The voting machine needs to verify your identity some way and computers can, and therefore we must assume they will, record everything that happens on it. This is information that a hacker could gain access to, and would be able to see exactly who you voted for.◊sn{191-mil}
+        ◊link[chicago-privacy]{Not so with electronic voting}. The voting machine needs to verify your identity some way and computers can, and therefore we must assume they will, record everything that happens on it. This is information that a hacker could gain access to, and would be able to see exactly who you voted for.◊sn{191-mil}
+
+        ◊note-pos{191-mil}
 
         ◊ndef["191-mil"]{
             In 2015 ◊link[191-mil-us-voters]{a database on the web had personal information} on registered U.S. voters, 191 million in total. It contained your full name, home address, mailing address, phone number, date of borth and whether or not you voted in any election back to 2000.
@@ -77,6 +93,9 @@ Voting electronically is becoming more popular. The benefits are easy to see; th
     }
 }
 
+◊(define georgia-legal-battle "https://www.washingtonpost.com/world/national-security/in-georgia-a-legal-battle-over-electronic-vs-paper-voting/2018/09/16/d655c070-b76f-11e8-94eb-3bd52dfe917b_story.html")
+◊(define inadequately-tested "https://www.nytimes.com/2020/02/03/us/politics/iowa-caucus-app.html")
+◊(define chicago-privacy "https://www.upguard.com/breaches/cloud-leak-chicago-voters")
 ◊(define vote-flipping "https://heavy.com/news/2016/10/vote-flipping-georgia-texas-north-carolina-nevada-hillary-clinton-machines-donald-trump-rigged-fraud/")
 ◊(define 191-mil-us-voters "https://www.forbes.com/sites/thomasbrewster/2015/12/28/us-voter-database-leak/")
 ◊(define 191-reddit "https://www.reddit.com/r/privacy/comments/3yinij/entire_us_voter_registration_record_leaks_191/")
@@ -117,6 +136,8 @@ I'm going to present a high level description of a voting scheme that have some 
 
              The system is public so anyone can verify that it works like it's supposed to. This is different from other electronic voting schemes where there's always a certain amount of trust involved. There are audits there too, but then you have to trust the competence and integrity of the auditors, but here anyone can audit the system.◊sn{dont-trust-verify}
 
+             ◊note-pos{dont-trust-verify}
+
              ◊ndef["dont-trust-verify"]{
                 "Don't trust, verify." is a popular saying in the cryptocurrency sphere. But first you need to have a transparent system you can verify, otherwise you have to trust.
             }
@@ -147,6 +168,9 @@ It's easy to count the votes---just check how much each address holds. It's also
 
 ◊(define tokens "/tokens.html")
 
+◊note-pos[#:top -47]{blank}
+◊note-pos[#:top -9]{how-do-you-know?}
+
 
 ◊subhead{Unsolved problems}
 
@@ -160,16 +184,20 @@ The scheme I've presented is simple---too simple. There are many problems with i
             The solution would be to obscure the coin history between issuance of the token and when you cast your vote.  We could use the obfuscation techniques, described in the ◊link[priv-fung]{privacy and fungibility} part of the appendix, to accomplish this.◊sn{mixing?}
 
             ◊ndef["mixing?"]{
-                Imagine for example if all voters had to go through a mixing state, where people trade a vote for another vote. If done correctly the state can't connect the final votes to the identities, while still be sure the right people still had the ability to vote.
+                Imagine for example if all voters had to go through a mixing state, where people trade a vote for another vote. If done correctly the state can't connect the final votes to the identities, while still be sure the right people had the ability to vote.
             }
 
             It's important to note that the privacy scheme has very high requirements. It's not enough that it seems to be good today, it has to hold up in 10, 20 or maybe even 100 years from now.
+
+            ◊note-pos[#:top -7]{mixing?}
     }
     ◊li-neg{Key delivery
 
             This whole scheme rests on the ability and the trust that the state can somehow distribute votes fairly and correctly. I don't think the trust issue is different from how it works today, but there many details on how votes are distributed that needs to be ironed out.
 
             I do think it's a problem that can be solved. For example in Sweden we have ◊link[bank-id]{BankID}, an electronic citizen identification solution, that we use to file our taxes, login to banks and many other things. It's really like an electronic identification card that could in theory be used to authenticate electronic votes as well.◊sn{bankid-banks}
+
+            ◊note-pos{bankid-banks}
 
             ◊ndef["bankid-banks"]{
                 BankID is distributed by banks and not by the state, but in principle there's no reason why a simlar system couldn't.
@@ -182,7 +210,6 @@ The scheme I've presented is simple---too simple. There are many problems with i
             One possible solution might be for people to change their votes before the voting is over, so they could verify their vote on another phone or computer, and do something about it if something has gone wrong. But this is problematic in other ways. For example it allows you to change your vote if you see the vote isn't going your way and it's not clear how this should be implemented in the first place.
     }
     ◊li-neg{Vote buying
-
 
             Another concern is that it might make buying and selling votes easier. With paper voting there's no easy way to prove you voted one way (other than bringing a camera with you and record your actions).
 
@@ -199,8 +226,30 @@ The scheme I've presented is simple---too simple. There are many problems with i
 ◊(define malware "https://en.wikipedia.org/wiki/Malware")
 
 
+◊subhead{Why a blockchain?}
 
-◊subhead{What now?}
+The big question to ask is why would we want voting on a blockchain anyway? Why would we want to record our votes on a permanent database, when we might even want to allow people to reverse/change their votes? Why build a voting a scheme on an extremely inefficient system, that all cryptocurrencies and blockchain applications are?
 
+I'm not sure you do. The big invention of cryptocurrencies is the consensus mechanism that makes it possible for people who don't trust each other to come to an agreement. This is what allows us to reduce the amount of trust in our proposed voting system, but you might not need to record your votes permanently in a blockchain to use it.◊sn{efficiency}
+
+◊ndef["efficiency"]{
+    Then again if we use a publicly verifiable voting scheme, we must assume all data will exist permanently. The only thing we might gain by skipping the blockchain is efficiency, which certainly shouldn't be discounted.
+}
+
+◊link[shuffling-public-keys]{Shuffling Public Keys} is for example a proposal for a peer-to-peer voting algorithm that doesn't use the blockchain, but it does use a consensus algorithm that's similar to ones you can find in the cryptocurrency space.◊sn{avalanche} I'm not qualified to comment on if it works or not, but I can say it doesn't solve all the problems that our proposed blockchain voting scheme have.
+
+◊ndef["avalanche"]{
+    It seems to me the ideas are similar to ideas presented in the ◊link[avalanche]{Avalanche consensus mechanism}.
+}
+
+We don't know what's the best way to improve our voting process is, and each proposal have their own pros and cons. It's likely recording votes on a blockchain is a bad idea, but there are some valuable ideas we might be able to use. In the end if cryptocurrencies' only contribution is to give the research a push forward, I think that's valuable.
+
+◊;In the end if cryptocurrencies only contribution is to give a little push for research into voting improvements, I consider it a win.
+
+◊note-pos[#:top -23]{efficiency}
+◊note-pos[#:top -14]{avalanche}
+
+◊(define avalanche "https://avalanchelabs.org/QmT1ry38PAmnhparPUmsUNHDEGHQusBLD6T5XJh4mUUn3v.pdf")
 ◊(define shuffling-public-keys "http://vixra.org/pdf/1905.0239v1.pdf")
 ◊(define priv-fung "/challenges.html#privacy-and-fungibility")
+
