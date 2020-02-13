@@ -46,12 +46,53 @@ And frankly, I just find the topic interesting.
 
 ◊subhead{Bush v. Gore}
 
-◊(define bush-v-gore "https://en.wikipedia.org/wiki/Bush_v._Gore")
+But why do we talk about improving voting? What's the problem with the way we vote? Hasn't voting on paper and having people count them worked great for us so far?
+
+Firstly we shouldn't avoid looking for improvements just because the "old way" worked well. If so then we wouldn't have faster cars, bigger TV-screens or more effective medicine---the previous versions already worked well enough. There's always value in making something ◊em{better}.
+
+But there are also serious problems with our voting system. A great example of some of them is the United States presidential election of 2000, where George W. Bush edged out Al Gore in a historically close election.◊sn{gore-won-popular}
+
+◊ndef["gore-won-popular"]{
+    I find it interesting that Gore got more total votes, but won fewer states, so he ended up losing the election.
+}
+
+(I used ◊link[bush-v-gore]{Britannica} as a source for my recounting of the events.)
+
+To say that the election was close does it a disservice. After a day full of uncertainty, where Gore had called Bush to concede the election just to withdraw it later, it was clear Florida would be the decider.
+
+Bush appeared to have won in Florida with a margin of roughly 0.01%, or a couple of hundred votes out of six million votes. This was so close that a machine recount was made, which showed that Bush had indeed won with only 327 votes!
+
+Here we need to realize that the machines aren't computers that just count the votes digitally. They're machines that take the ballots, examines them and tries to figure out what vote is marked (or punched) on the ballot.◊sn{butterfly}
+
+◊ndef["butterfly"]{
+    Then there's the infamous ◊link[butterfly-disaster]{Butterfly Ballot disaster}. Palm Beach County used ballot design that was so bad that perhaps more than 20,000 voters voted for the wrong candidate or mistakenly voted for multiple candidates.
+}
+
+The problem here is that some of the ballets weren't in good condition. Some ballets weren't punched through completely (so the machines couldn't detect the votes), others had voted for the same office multiple times or were incomplete in other ways. With the election being so close it's easy to see that these votes could very well change the outcome. Therefore the Florida Supreme Court ruled that these questionable ballots should be recounted by hand.
+
+Because the stakes were fairly high (an understatement I know) there were a ton of legal action, and charges of conflict of interest were pushed by both parties. At the end the U.S. Supreme Court overturned the Florida decision and put a stop to the recounting and awarded Florida's votes to Bush and that no recount could be held in time.
+
+
+◊subhead{The problems with paper voting}
+
+Here's a summary of the problems we've seen with the existing voting system:
+
+◊ol{
+    ◊li{Inexact vote counting}
+    ◊li{Counting votes is slow}
+    ◊li{Invalid ballots}
+    ◊li{Corruption}
+}
+
+◊;Now the problem here is that the machines scan the paper votes to see wha
+
+◊(define bush-v-gore "https://www.britannica.com/event/Bush-v-Gore")
+◊(define butterfly-disaster "https://www.asktog.com/columns/042ButterflyBallot.html")
 
 
 ◊subhead{The problems with electronic voting}
 
-Voting electronically is becoming more popular. The benefits are easy to see; they're more efficient, convenient and they can instantly count votes, avoiding the problem we saw in the 2000 U.S. presidential election. But there are significant drawbacks that make them ◊link[georgia-legal-battle]{a very bad idea}:
+Voting electronically is becoming more popular. The benefits are easy to see; they're more efficient, convenient and they can instantly count votes, avoiding many of the problem we see with traditional voting. But there are significant drawbacks that make them ◊link[georgia-legal-battle]{a very bad idea}:
 
 ◊ol{
     ◊li{Lack of transparency
@@ -144,6 +185,8 @@ I'm going to present a high level description of a voting scheme that have some 
     ◊li-plus{Instant vote counting
 
              Because it's a form of electronic voting, votes can be counted instantly and you get real time updates as the votes come in.◊sn{benefit-or-curse?}
+
+             ◊todo{No risk of invalid votes}
 
              ◊note-pos{benefit-or-curse?}
 
