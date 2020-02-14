@@ -10,9 +10,9 @@ While cryptocurrencies are mostly seen as speculative assets---get rich quick sc
 
 ◊ul{
     ◊li{◊strong{Excellent monetary properties}
-        Cryptocurrencies ◊link[are-cryptos-money]{have better monetary properties} than anything else in history. In contrast to the fiat money we use today, cryptocurrencies have a limited supply.
+        Cryptocurrencies ◊link[are-cryptos-money]{have better monetary properties} than anything else in history. In contrast to the fiat money we use today, cryptocurrencies have a limited supply and compared to gold cryptocurrencies are much more portable and it's easy to divide coins into very small parts.
 
-        Compared to gold, which has been successfully as money for centuries, cryptocurrencies are much more portable and it's easy to divide a coin into very small parts. You can send any amount of money to anywhere in the world practically instantly using your phone.
+        At first glance this may seem insignificant, but money affects everything and even small improvements can have a massive effect.
     }
     ◊li{◊strong{Cheaper payments}
 
@@ -22,7 +22,7 @@ While cryptocurrencies are mostly seen as speculative assets---get rich quick sc
     }
     ◊li{◊strong{Irreversible digital transactions}
 
-        You receive money in ◊link[settlement-time]{under an hour} and after that the money is yours, while it may take days to receive other digital payments that can also be reversed weeks or months later.
+        You receive money in ◊link[settlement-time]{under an hour} and after that the money is yours, while it may take days to receive other digital payments and they can also be reversed weeks or months later.
 
         This means merchants don't have to worry about having a purchase reversed, which usually means they have to swallow the loss.◊sn{chargeback-fraud}
 
