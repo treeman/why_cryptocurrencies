@@ -10,12 +10,9 @@ While cryptocurrencies are mostly seen as speculative assets---get rich quick sc
 
 ◊ul{
     ◊li{◊strong{Excellent monetary properties}
-        Cryptocurrencies have better monetary properties than anything else in history. They have, in contrast to the fiat money we use today, a limited s
+        Cryptocurrencies ◊link[are-cryptos-money]{have better monetary properties} than anything else in history. In contrast to the fiat money we use today, cryptocurrencies have a limited supply.
 
-        In contrast to fiat money that we use today, cryptocurrencies have a limited supply.
-
-
-        They have a limitied supply, are portable and they can be divided into tiny fractions easily.
+        Compared to gold, which has been successfully as money for centuries, cryptocurrencies are much more portable and it's easy to divide a coin into very small parts. You can send any amount of money to anywhere in the world practically instantly using your phone.
     }
     ◊li{◊strong{Cheaper payments}
 
@@ -38,11 +35,15 @@ While cryptocurrencies are mostly seen as speculative assets---get rich quick sc
         Nobody can prevent you from sending or receiving cryptocurrencies.
     }
     ◊li{◊strong{Financial privacy}
+
         Banks, credit card companies and payment processors have all your financial transactions on record. Cryptocurrencies allows you to ◊link[private-money]{reclaim some of your privacy} as they work like a ◊link[swiss-bank-account]{swiss bank account in your pocket}.◊sn{bitcoin-privacy}
 
         ◊note-pos[#:top -2]{bitcoin-privacy}
     }
     ◊li{◊strong{Separating money and state}
+
+        There's no central authority that controls the currency and can increase the supply as they like.
+
         Global, avoid the 2008 financial crisis, money without the state
 
         No central authority that can increase the supply as they like or 
@@ -55,11 +56,6 @@ While cryptocurrencies are mostly seen as speculative assets---get rich quick sc
 ◊subhead{OLD}
 
 ◊ul{
-    ◊li{◊strong{No risk of having your account frozen}
-
-        There's no third party who can freeze your account---and your funds. Merchants don't have to fear having their funds ◊link[freeze]{arbitrarily frozen} (possibly destroying their business) and there's no bank that can confiscate your money.
-    }
-
     ◊li{◊strong{Global money}
 
         As long as there's internet you can ◊link[borderless]{send money anywhere}, basically instantly and for free. They aren't tied to a government, country or region and can be used everywhere.
