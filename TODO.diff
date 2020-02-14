@@ -25,13 +25,9 @@ Rewrite:
 + Rewrite in the beginning to say that it doesn't matter what conclusion you draw (if cryptos are good or bad). The important thing is to make an informed decision.
 
 Write:
-+ Separation of money and state
-+ Tokens
-+ Verifiable voting
 + Fill up crypto challenges
 + Introduction to cryptography
 + (Further research)
-+ Generate links from toc
 
 Additional image ideas:
 + Monster bankster
@@ -64,6 +60,7 @@ Code:
 
 Style:
 - Better way to refer to book sources for paragraphs
++ A donation link in the footer
 
 Markup
 + Use <cite> when refering to books, or things with titles

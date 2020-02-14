@@ -75,7 +75,7 @@ There are many problems with cryptocurrencies as they exist today. This isn't an
   ◊li{User experience is far from the level of VISA or Apple Pay.}
 }
 
-See the chapter ◊link[challenges]{Challenges for cryptocurrencies} for an explanation of the problems.
+See the chapter ◊link[challenges]{Challenges for cryptocurrencies} in the appendix for a more in-depth discussion of the problems.
 
 ◊(define challenges "/challenges.html")
 
@@ -97,13 +97,11 @@ This isn't a deep dive on a technical level. Neither will we focus on a single i
   ◊strong[#:style "font-size: 1.1rem"]{And of course none of this is investment advice.}
 }
 
-
 ◊ndef["schneier"]{
     Schneier brings an interesting perspective and he's right about one very important aspect: contrary to popular belief cryptocurrencies don't remove ◊strong{all} trust.
 
     To counter his point that "cryptocurrencies are useless" all you have to do is provide one counterexample where they're useful. I'll give several.
 }
-
 
 ◊ndef["beanies"]{
     Beanie Babies is a type of toys which people used to speculate with. ◊link[beanie]{It become a mania} where people would sell---and buy---these toys at 10x, 100x or even 1000x their original price. The mania managed to make the creator, Ty Warner, one of the richest men in the world before it crashed (he's still insanely rich though).
@@ -111,12 +109,9 @@ This isn't a deep dive on a technical level. Neither will we focus on a single i
     If you're looking for the digital version of Beanie Babies then look no further than ◊link[cryptokitties]{CryptoKitties}, a blockchain game running on Ethereum. There someone spent $114,000 on a virtual kitten.
 }
 
-
 ◊ndef["tulips"]{
     ◊link[tulip-mania]{Tulip mania} is one of the first recorded speculative bubbles which occurred 1636--1637 in Netherlands. There people speculated on tulip bulbs which reached spectacular prices before crashing down abruptly.
 }
-
-
 
 ◊ndef["cryptos"]{
     Although there are hundreds and perhaps thousands most are just copies or outright scams.

@@ -16,6 +16,8 @@ When I some day finish the book and decide to release it in other formats I may 
 
 You can also send donations from anywhere in the world ◊link[cheaper-faster]{nearly instantly with small fees} and ◊link[donations]{no possibility of censorship}. This isn't possible with anything else.
 
+If you want you can try it out:
+
 ◊section[#:class "donations"]{
     ◊crypto["/images/donations/btc.svg"
             "1KDBPbyVhiqotSgnUJzFbdfjn3hUsSgq6W"]{
