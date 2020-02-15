@@ -17,6 +17,8 @@
 ◊; Votebook - a blockchain-based electronic voting system
 ◊;https://news.ycombinator.com/item?id=13142418
 
+◊todo{Rewrite?}
+
 In this chapter I'm going to go off track even more than I have in other chapters. Instead of focusing on value and use-cases cryptocurrencies can bring to the table today, here I'll speculate about how we might improve our voting system. The questionable part is that it's not clear it's an improvement as they contain a number of unsolved problems and it's not clear that voting should even be based on a cryptocurrency.
 
 I still want to bring this up because even if voting on a cryptocurrency is fundamentally unsound, the innovation in consensus mechanisms that cryptocurrencies have made is what's valuable. Wether or not the votes are actually embedded in a blockchain isn't important if it means the research has been pushed forward enough to result in a better voting system.◊sn{blockchain?}
@@ -160,9 +162,9 @@ For a convincing case against electronic voting I recommend Jennifer Cohn's arti
 
 ◊subhead{A blockchain voting system}
 
-Some of the problems with paper voting and electronic voting can be reduced by combining them; you register your vote both electronically and can recount the paper votes as a fallback.
+◊;Some of the problems with paper voting and electronic voting can be reduced by combining them; you register your vote both electronically and can recount the paper votes as a fallback.
 
-This is an improvement, but as an alternative I'll present a high level description of a blockchain voting scheme that have some very good and beneficial properties:
+◊;This is an improvement, but as an alternative I'll present a high level description of a blockchain voting scheme that have some very good and beneficial properties:
 
 ◊ul{
     ◊li-plus{Transparent
@@ -176,7 +178,7 @@ This is an improvement, but as an alternative I'll present a high level descript
     }
     ◊li-plus{Verifiable
 
-             The important difference with this voting scheme compared to others is that anyone can verify the integrity of the voting result. It can with certainty answer questions like:
+             Anyone can verify the integrity of the voting result. It can with certainty answer questions like:
 
              ◊ul{
                 ◊li{Did my vote get counted?}
@@ -186,7 +188,7 @@ This is an improvement, but as an alternative I'll present a high level descript
                 ◊li{What was the outcome?}
              }
 
-             If you happened used a corrupt voting machine that changed your vote from Hillary to Trump, you could use another device and see that's what happened. You can also be sure that your vote was counted correctly, or if you didn't vote that it wasn't included. In this scheme vote counting is alway verifiably correct.
+             If you happened used a corrupt voting machine that changed your vote from Hillary to Trump, you could use another device and see that's what happened. You can also be sure that your vote was counted correctly, or if you didn't vote that it wasn't included and you can verify yourself that all votes were tallied correctly. In this scheme vote counting is alway verifiably correct.
     }
     ◊li-plus{No questionable votes
 
@@ -197,24 +199,30 @@ This is an improvement, but as an alternative I'll present a high level descript
              Because it's a form of electronic voting, votes can be counted instantly and you get real time updates as the votes come in.◊sn{benefit-or-curse?}
 
              ◊ndef["benefit-or-curse?"]{
-                Even if possible, is it desirable to get a real time update of voting? Couldn't that affect the election in a bad way? I don't know... Maybe?
+                Even if possible, is it desirable to get a real time update of voting? Couldn't that affect the election in a bad way?
              }
     }
     ◊li-plus{Vote anywhere
 
              It's possible to set it up so you can vote with your mobile phone, from the other side of the world. This would allow for ◊link[direct-democracy]{direct democracy} where people can vote on policy directly, with very minor overhead.
     }
+    ◊li-plus{Robust
+
+             Because the system only relies on a central party for the initial vote setup and after that the voting is carried out by independent nodes in the network, it's more resilient against disruptions than a centralized scheme.
+    }
 }
 
-◊note-pos[#:top -52]{dont-trust-verify}
-◊note-pos[#:top -10]{benefit-or-curse?}
+◊(define dos "https://www.investopedia.com/terms/d/denial-service-attack-dos.asp")
+
+◊note-pos[#:top -64]{dont-trust-verify}
+◊note-pos[#:top -23]{benefit-or-curse?}
 
 ◊(define direct-democracy "https://en.m.wikipedia.org/wiki/Direct_democracy")
 
 The scheme is similar to tokens that we discussed in the ◊link[tokens]{previous chapter}. Here the issuer is the government, who still needs a way to identify voters and to give them a token (a single vote). The process would be similar to how it works today, where people have their identification verified by voting officials when they go to vote.◊sn{government}
 
 ◊ndef["government"]{
-    While I focus on government elections voting is useful in other contexts too. (In my head I see a bunch of people sitting around a table, shrouded in shadows, voting on who to kill.)
+    While I focus on government elections voting is useful in other contexts too, for example shareholder voting or votes in a leaderless organization. (In my head I see a bunch of people sitting around a table, shrouded in shadows, voting on who to kill.)
 }
 
 With the tokens distributed you could cast a vote by sending them to predetermined addresses to cast your vote. For example if you want to vote for Trump, you send it to the Trump address. If you want to vote for Hillary, you send it to the Hillary address. And if you don't want to vote you don't do anything.◊sn{blank}
@@ -232,7 +240,7 @@ These transactions work like cryptocurrency transactions, so you cannot counterf
 ◊ndef["how-do-you-know?"]{
     Then how do you know that the votes are given out correctly and that the state distributes them fairly? The same way it works today---the voters are holding the state accountable.
 
-    Of course this this means that this voting scheme cannot magically fix voting in highly corrupt countries.
+    Of course this this means that this voting scheme cannot fix voting in highly corrupt countries, only magic can do that.
 }
 
 It's easy to count the votes---just check how much each address holds. It's also easy for you to see that your vote has arrived to the correct voting address, and if it did you know your vote will count.
@@ -275,13 +283,19 @@ The scheme I've presented is simple---too simple. There are many problems with i
 
             While the system itself could of course be hacked (anything could theoretically be broken), I see stealing individual votes as a bigger problem. For example if voting should be carried out on mobile phones, what if some ◊link[malware]{malware} has infected your phone and decides to change your vote? Or if a hacker can hack the voting app you use?
 
-            One possible solution might be for people to change their votes before the voting is over, so they could verify their vote on another phone or computer, and do something about it if something has gone wrong. But this is problematic in other ways, like it allows you to change your vote if you see the vote isn't going your way.
+            One possible solution might be for people to change their votes before the voting is over, so they could verify their vote on another phone or computer, and do something about it if something has gone wrong. But this is problematic in other ways, like allowing you to change your vote if you see the vote isn't going your way.
     }
     ◊li-neg{Vote buying
 
             Another concern is that it might make buying and selling votes easier. With paper voting there's no easy way to prove you voted one way (other than bringing a camera with you and record your actions).
 
-            But with this scheme you can with 100% certainty prove who you voted for. If you wanted to you could also give your vote to someone else, or they might even try to coerce you to do so.
+            But with this scheme you can with 100% certainty prove who you voted for. If you wanted to you could also give your vote to someone else, or they might try to coerce you to do so.◊sn{unsolvable}
+
+            ◊ndef["unsolvable"]{
+                Vote buying, or vote coercion, is really an unsolvable problem. Even if you have on-site voting with perfect secrecy, it's still vulnerable to people bringing a hidden camera that records the voting process.
+
+                The best we can do is reduce the target surface, and for an electronic voting scheme you'd want the ability to verify that your vote was counted correctly, but without you being able to prove how you voted.
+            }
     }
     ◊li-neg{Understandability
 
@@ -291,6 +305,7 @@ The scheme I've presented is simple---too simple. There are many problems with i
 
 ◊note-pos[#:top -65]{mixing?}
 ◊note-pos[#:top -43]{bankid-banks}
+◊note-pos[#:top -12]{unsolvable}
 
 
 ◊(define bank-id "https://www.bankid.com/en/")
@@ -299,9 +314,16 @@ The scheme I've presented is simple---too simple. There are many problems with i
 
 ◊subhead{Why a blockchain?}
 
-The big question to ask is why would we want voting on a blockchain anyway? Why would we want to record our votes on a permanent database, when we might even want to allow people to change their votes before the voting is over? Why design a voting a scheme on an extremely inefficient system---that all cryptocurrencies and blockchain applications are?
+The big question to ask is why would we want voting on a blockchain anyway? Why would we want to record our votes on a permanent database, when we might even want to allow people to change their votes before the voting is over? Why design a voting a scheme on an extremely inefficient system---that all cryptocurrencies and blockchain applications are?◊sn{efficiency}
 
-I'm not sure we want to. The big invention of cryptocurrencies is the consensus mechanism that makes it possible for people who don't trust each other to come to an agreement. This is what allows us to reduce the amount of trust in our proposed voting system, but you might not need to record your votes permanently in a blockchain to use it.◊sn{efficiency}
+As pointed out in the paper ◊link[public-evidence-from-secret-ballots]{Public Evidence from Secret Ballots} it's possible to create an end-to-end verifiable electronic voting scheme even without the blockchain---which isn't surprising since the blockchain is just a database. They also say that because we already trust a central entity to give out the voting privileges, we can just trust them to publish a ledger of the events, making the blockchain obsolete. (They say a lot of other things too, and I recommend you read the paper as it goes through a lot of the difficulties and possible solutions with voting systems. It's not as simple as I may have led you to believe.)
+
+They're right that trust isn't an issue, since data will be independently verified for correctness anyway, but I don't agree that it makes a blockchain useless. A fault tolerant system--- such a blockchain---is inherently more difficult to disrupt. Because anyone can help collect, distribute and verify votes it doesn't matter if the government's servers gets overloaded in a ◊link[dos]{Denial of Service (DoS)} attack---as long as people have internet access the voting process will be uninterrupted.
+
+◊;We don't know what the best way to vote is, and each way have their pros and cons and there are many open problems left.
+
+◊;As they point out Estonia, which uses internet voting, has been subject to outage due to attacks.
+
 
 ◊ndef["efficiency"]{
     Then again if we want a publicly verifiable voting system, where all data is publically available, we must assume it will also exist forever. (On a related note this is the assumption we all should make when we interact with social media. The internet remembers.)
@@ -309,16 +331,10 @@ I'm not sure we want to. The big invention of cryptocurrencies is the consensus 
     The only thing we might gain by skipping the blockchain is efficiency, which certainly shouldn't be disregarded.
 }
 
-◊link[shuffling-public-keys]{Shuffling Public Keys} is for example a proposal for a peer-to-peer voting algorithm that doesn't use the blockchain, but it does use a consensus algorithm that's similar to ones you can find in the cryptocurrency space.◊sn{avalanche} I'm not qualified to comment on if it works or not, but I can say it doesn't solve the problems that our proposed blockchain voting system have.
+◊;We don't know what's the best way to vote is, and each way have their own pros and cons. To me having a transparent and verifiable voting system is extremely valuable, and I could live with some of the drawbacks that a blockchain voting system would introduce. If there's a way to retain the benefits and reduce the drawbacks by removing the blockchain, even better.
 
-◊ndef["avalanche"]{
-    It seems to me the ideas presented in the paper are similar to the ◊link[avalanche]{Avalanche consensus mechanism} that's an alternative to proof-of-work.
-}
-
-We don't know what's the best way to vote is, and each way have their own pros and cons. To me having a transparent and verifiable voting system is extremely valuable, and I could live with some of the drawbacks that a blockchain voting system would introduce. If there's a way to retain the benefits and reduce the drawbacks by removing the blockchain, even better.
-
-◊note-pos[#:top -23]{efficiency}
-◊note-pos[#:top -10]{avalanche}
+◊;note-pos[#:top -23]{efficiency}
+◊;note-pos[#:top -10]{avalanche}
 
 ◊(define avalanche "https://avalanchelabs.org/QmT1ry38PAmnhparPUmsUNHDEGHQusBLD6T5XJh4mUUn3v.pdf")
 ◊(define shuffling-public-keys "http://vixra.org/pdf/1905.0239v1.pdf")
