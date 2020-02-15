@@ -58,7 +58,7 @@ Here we need to realize that the machines aren't computers that just count the v
 
 The problem here is that some of the ballets weren't in good condition. Some ballets weren't punched through completely (so the machines couldn't detect the votes), others had voted for the same office multiple times or were incomplete in other ways. With the election being so close it's easy to see that these votes could very well change the outcome. Therefore the Florida Supreme Court ruled that these questionable ballots should be recounted by hand.
 
-Because the stakes were fairly high (an understatement I know) there were a ton of legal action, and charges of conflict of interest were pushed by both parties. At the end the U.S. Supreme Court overturned the Florida decision and put a stop to the recounting and awarded Florida's votes to Bush and that no recount could be held in time.
+Because the stakes were fairly high (an understatement I know) there were a ton of legal action, and charges of conflict of interest were pushed by both parties. At the end the U.S. Supreme Court overturned the Florida decision and put a stop to the recounting, awarded Florida's votes to Bush and that no recount could be held in time.
 
 ◊note-pos[#:top -46]{gore-won-popular}
 ◊note-pos[#:top -24]{butterfly}
