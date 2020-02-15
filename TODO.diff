@@ -21,8 +21,6 @@ Summarize better:
 
 Rewrite:
 + Read through earlier chapters for more polish
-- Rewrite cryptos in 5 minutes
-+ Rewrite in the beginning to say that it doesn't matter what conclusion you draw (if cryptos are good or bad). The important thing is to make an informed decision.
 
 Write:
 + Fill up crypto challenges
@@ -60,7 +58,6 @@ Code:
 
 Style:
 - Better way to refer to book sources for paragraphs
-+ A donation link in the footer
 
 Markup
 + Use <cite> when refering to books, or things with titles
@@ -72,5 +69,4 @@ Markup
 Sanity:
 + Alt-text for all links
 + Setup cross chapter links after all chapters are written
-
 
