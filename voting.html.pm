@@ -14,14 +14,20 @@
   }
 }
 
-◊; Votebook - a blockchain-based electronic voting system
-◊;https://news.ycombinator.com/item?id=13142418
+In this chapter we'll look at some of the problems with the way we vote and how we might use cryptocurrencies (or "the blockchain") to make an improved voting scheme.
 
-◊todo{Rewrite?}
+I say they ◊em{might} help because it's not a use-case where I know they can provide value, it's still unclear how much benefit it would bring and blockchain voting may even be a fundamentally bad idea. But as I'll argue there are some very good properties it can provide, so the idea isn't so bad it can be thrown out directly.◊sn{nearly-threw-it-away}
 
-In this chapter I'm going to go off track even more than I have in other chapters. Instead of focusing on value and use-cases cryptocurrencies can bring to the table today, here I'll speculate about how we might improve our voting system. The questionable part is that it's not clear it's an improvement as they contain a number of unsolved problems and it's not clear that voting should even be based on a cryptocurrency.
+◊ndef["nearly-threw-it-away"]{
+    I had actually written the chapter and was going to throw it away, but in the end I decided to keep it. If you're skeptical then don't worry---I'm not entirely convinced of this use-case either.
+}
 
-I still want to bring this up because even if voting on a cryptocurrency is fundamentally unsound, the innovation in consensus mechanisms that cryptocurrencies have made is what's valuable. Wether or not the votes are actually embedded in a blockchain isn't important if it means the research has been pushed forward enough to result in a better voting system.◊sn{blockchain?}
+
+◊;todo{Rewrite?}
+
+◊;In this chapter I'm going to go off track even more than I have in other chapters. Instead of focusing on value and use-cases cryptocurrencies can bring to the table today, here I'll speculate about how we might improve our voting system. The questionable part is that it's not clear it's an improvement as they contain a number of unsolved problems and it's not clear that voting should even be based on a cryptocurrency.
+
+◊;I still want to bring this up because even if voting on a cryptocurrency is fundamentally unsound, the innovation in consensus mechanisms that cryptocurrencies have made is what's valuable. Wether or not the votes are actually embedded in a blockchain isn't important if it means the research has been pushed forward enough to result in a better voting system.◊sn{blockchain?}
 
 ◊ndef["blockchain?"]{
     As discussed in the ◊link[extensions]{introduction to this section} when I refer to "a blockchain" I mean embedding votes in an existing cryptocurrency, not creating a new blockchain purely for voting purposes.
@@ -29,9 +35,9 @@ I still want to bring this up because even if voting on a cryptocurrency is fund
 
 ◊(define extensions "/extensions.html")
 
-And frankly, I just find the topic interesting.
+◊;And frankly, I just find the topic interesting.
 
-◊note-pos[#:top -5]{blockchain?}
+◊;note-pos[#:top -5]{blockchain?}
 
 
 ◊subhead{Bush v. Gore}
@@ -48,7 +54,7 @@ But there are also serious problems with our voting system. A great example of s
 
 (I used ◊link[bush-v-gore]{Britannica} as a source for my recounting of the events.)
 
-To say that the election was close does it a disservice. After a day full of uncertainty, where Gore had called Bush to concede the election just to withdraw it later, it was clear Florida would be the decider. Bush appeared to have won in Florida with a margin of roughly 0.01%, or a couple of hundred votes out of six million votes. This was so close that a machine recount was made, which showed that Bush had indeed won with only 327 votes!
+To say that the election was close does it a disservice. After a day full of uncertainty, where Gore had called Bush to concede the election just to withdraw it later, it was clear Florida would be the decider. Bush appeared to have won in Florida with a margin of roughly 0.01%---a couple of hundred votes out of six million votes. This was so close that a machine recount was made, which showed that Bush had indeed won with only 327 votes!
 
 Here we need to realize that the machines aren't computers that just count the votes digitally. They're machines that take the ballots, examines them and tries to figure out what vote is marked (or punched) on the ballot.◊sn{butterfly}
 
@@ -89,7 +95,7 @@ But we also saw some problems that are caused by using paper votes:◊sn{paper?}
     }
     ◊li{Corruption
 
-        Why was a human recount ordered and why was it thrown out? Who decides if a questionable ballot is invalid or not? These are all human decisions that are vulnerable to corruption.
+        Why was a human recount ordered and why was it thrown out? Who decides if a questionable ballot is invalid or not? These are all human decisions that are vulnerable to corruption (or incompetence).
     }
 }
 
@@ -103,7 +109,7 @@ But we also saw some problems that are caused by using paper votes:◊sn{paper?}
 
 ◊subhead{The problems with electronic voting}
 
-In order to address some of the problems with paper voting, voting electronically is growing in popularity. The benefits are clear; you avoid the problem with questionable ballots and vote counting is precise and instant. But there are significant drawbacks that make them ◊link[georgia-legal-battle]{a very bad idea}:
+In order to address some of the problems with paper voting, electronic voting is growing in popularity. The benefits are clear; you avoid the problem with questionable ballots and vote counting is precise and instant. But there are significant drawbacks that make them ◊link[georgia-legal-battle]{a very bad idea}:
 
 ◊ol{
     ◊li{Lack of transparency
@@ -148,6 +154,8 @@ In order to address some of the problems with paper voting, voting electronicall
 
 For a convincing case against electronic voting I recommend Jennifer Cohn's article ◊link[us-corruption]{America’s Electronic Voting System is Corrupted to the Core}.
 
+On the other hand many of these problems can be mitigated, see the paper ◊link[public-evidence-from-secret-ballots]{Public Evidence from Secret Ballots} for a good rundown.
+
 ◊note-pos[#:top -53]{no-testing}
 ◊note-pos[#:top -27]{191-mil}
 
@@ -162,14 +170,12 @@ For a convincing case against electronic voting I recommend Jennifer Cohn's arti
 
 ◊subhead{A blockchain voting system}
 
-◊;Some of the problems with paper voting and electronic voting can be reduced by combining them; you register your vote both electronically and can recount the paper votes as a fallback.
-
-◊;This is an improvement, but as an alternative I'll present a high level description of a blockchain voting scheme that have some very good and beneficial properties:
+As an alternative I'll try to present a high level description of a blockchain voting scheme, which have some very good and beneficial properties:
 
 ◊ul{
     ◊li-plus{Transparent
 
-             The system is public so anyone can verify that it works like it's supposed to, which obstructs corruption and hacking. There's still trust here, trust that ◊em{someone} will audit the scheme, but it's a big step up from the alternative black box voting systems where nobody can tell what's going on.◊sn{dont-trust-verify}
+             The system is public so anyone can verify that it works like it's supposed to, which obstructs corruption and hacking. There's still trust here, trust that ◊em{someone} will audit the scheme, but it's a big step up from other black box voting systems where nobody can tell what's going on.◊sn{dont-trust-verify}
 
              ◊ndef["dont-trust-verify"]{
                 "Don't trust, verify." is a popular saying in the cryptocurrency sphere. A prerequisite is to have an open system that you can verify.
@@ -206,9 +212,9 @@ For a convincing case against electronic voting I recommend Jennifer Cohn's arti
 
              It's possible to set it up so you can vote with your mobile phone, from the other side of the world. This would allow for ◊link[direct-democracy]{direct democracy} where people can vote on policy directly, with very minor overhead.
     }
-    ◊li-plus{Robust
+    ◊li-plus{Harder to disrupt
 
-             Because the system only relies on a central party for the initial vote setup and after that the voting is carried out by independent nodes in the network, it's more resilient against disruptions than a centralized scheme.
+             Because the system only relies on a central party for the initial vote setup, and after that the voting is carried out by independent nodes in the network, it's more resilient against disruptions than a centralized scheme.
     }
 }
 
@@ -316,7 +322,9 @@ The scheme I've presented is simple---too simple. There are many problems with i
 
 The big question to ask is why would we want voting on a blockchain anyway? Why would we want to record our votes on a permanent database, when we might even want to allow people to change their votes before the voting is over? Why design a voting a scheme on an extremely inefficient system---that all cryptocurrencies and blockchain applications are?◊sn{efficiency}
 
-As pointed out in the paper ◊link[public-evidence-from-secret-ballots]{Public Evidence from Secret Ballots} it's possible to create an end-to-end verifiable electronic voting scheme even without the blockchain---which isn't surprising since the blockchain is just a database. They also say that because we already trust a central entity to give out the voting privileges, we can just trust them to publish a ledger of the events, making the blockchain obsolete. (They say a lot of other things too, and I recommend you read the paper as it goes through a lot of the difficulties and possible solutions with voting systems. It's not as simple as I may have led you to believe.)
+As pointed out in the paper ◊link[public-evidence-from-secret-ballots]{Public Evidence from Secret Ballots} it's possible to create an end-to-end verifiable electronic voting scheme even without the blockchain---which isn't surprising since the blockchain is just a database. They also say that because we already trust a central entity to give out the voting privileges, we can just trust them to publish a ledger of the events, making the blockchain obsolete.
+
+They say a lot of other things too, and I recommend you read the paper as it goes through a lot of the difficulties and possible solutions with voting systems. It's not as simple as I may have led you to believe.
 
 They're right that trust isn't an issue, since data will be independently verified for correctness anyway, but I don't agree that it makes a blockchain useless. A fault tolerant system--- such a blockchain---is inherently more difficult to disrupt. Because anyone can help collect, distribute and verify votes it doesn't matter if the government's servers gets overloaded in a ◊link[dos]{Denial of Service (DoS)} attack---as long as people have internet access the voting process will be uninterrupted.
 
