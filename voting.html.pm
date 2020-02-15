@@ -1,7 +1,7 @@
 #lang pollen
 
-◊(define-meta title "Verifiable voting")
-◊(define-meta subtitle "An improved voting system")
+◊(define-meta title "Voting")
+◊(define-meta subtitle "A verifiable and resilient voting system")
 ◊(define-meta published "2020-01-31T07:22:26+01:00")
 ◊(define-meta updated "2020-01-31T07:22:31+01:00")
 ◊(define-meta uuid "5aaf6384-d377-485b-bfc2-2c4caaaa0fe0")
@@ -158,11 +158,11 @@ For a convincing case against electronic voting I recommend Jennifer Cohn's arti
 ◊(define 191-reddit "https://www.reddit.com/r/privacy/comments/3yinij/entire_us_voter_registration_record_leaks_191/")
 
 
-◊subhead{A transparent and verifiable voting system}
+◊subhead{A blockchain voting system}
 
 Some of the problems with paper voting and electronic voting can be reduced by combining them; you register your vote both electronically and can recount the paper votes as a fallback.
 
-This is good, but as an alternative I'll present a high level description of a voting scheme that have some very good and beneficial properties, that other voting schemes cannot match:
+This is an improvement, but as an alternative I'll present a high level description of a blockchain voting scheme that have some very good and beneficial properties:
 
 ◊ul{
     ◊li-plus{Transparent
@@ -176,7 +176,7 @@ This is good, but as an alternative I'll present a high level description of a v
     }
     ◊li-plus{Verifiable
 
-             The important difference with this voting scheme compared to others is that anyone can verify the integrity of the voting result. It can ◊strong{with certainty} answer questions like:
+             The important difference with this voting scheme compared to others is that anyone can verify the integrity of the voting result. It can with certainty answer questions like:
 
              ◊ul{
                 ◊li{Did my vote get counted?}
@@ -323,4 +323,7 @@ We don't know what's the best way to vote is, and each way have their own pros a
 ◊(define avalanche "https://avalanchelabs.org/QmT1ry38PAmnhparPUmsUNHDEGHQusBLD6T5XJh4mUUn3v.pdf")
 ◊(define shuffling-public-keys "http://vixra.org/pdf/1905.0239v1.pdf")
 ◊(define priv-fung "/challenges.html#privacy-and-fungibility")
+
+◊(define public-evidence-from-secret-ballots "https://arxiv.org/pdf/1707.08619.pdf")
+
 
