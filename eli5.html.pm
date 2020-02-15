@@ -3,13 +3,14 @@
 ◊(define-meta title "Why cryptocurrencies in five minutes")
 ◊(define-meta subtitle "ELI5 - what is the inherent values of cryptocurrencies?")
 ◊(define-meta published "2019-07-17T00:00:00+01:00")
-◊(define-meta updated "2020-01-15T20:09:07+01:00")
+◊(define-meta updated "2020-02-15T21:57:16+01:00")
 ◊(define-meta uuid "cef34868-0317-4c6f-8b9f-cfb66464f2a8")
 
 While cryptocurrencies are mostly seen as speculative assets---get rich quick schemes---they have valuable properties and valuable use cases. For example:
 
 ◊ul{
     ◊li{◊strong{Excellent monetary properties}
+
         Cryptocurrencies ◊link[are-cryptos-money]{have better monetary properties} than anything else in history. In contrast to the fiat money we use today, cryptocurrencies have a limited supply and compared to gold cryptocurrencies are much more portable and it's easy to divide coins into very small parts.
 
         At first glance this may seem insignificant, but money affects everything and even small improvements can have a massive effect.
@@ -40,37 +41,20 @@ While cryptocurrencies are mostly seen as speculative assets---get rich quick sc
 
         ◊note-pos[#:top -2]{bitcoin-privacy}
     }
-    ◊li{◊strong{Separating money and state}
+    ◊li{◊strong{An alternative financial system}
 
-        There's no central authority that controls the currency and can increase the supply as they like.
-
-        Global, avoid the 2008 financial crisis, money without the state
-
-        No central authority that can increase the supply as they like or 
+        Cryptocurrencies represent an alternative to the traditional financial system, which rewards behavior that caused the ◊link[financial-crisis]{2008 financial crisis} and relies on being able to ◊link[blind-leading-the-blind]{predict the unpredictable}.  There's no central authority that controls a cryptocurrency, and it can be used to truly ◊link[separate-money-state]{separate money from state}.
     }
     ◊li{◊strong{Extensions}
-        (timestamping service, provably fair gambling)
-    }
-}
 
-◊subhead{OLD}
-
-◊ul{
-    ◊li{◊strong{Global money}
-
-        As long as there's internet you can ◊link[borderless]{send money anywhere}, basically instantly and for free. They aren't tied to a government, country or region and can be used everywhere.
-    }
-
-    ◊li{◊strong{Reduced currency manipulation}
-
-        There's no central authority that can increase the supply as they like or invalidate the coins you have. It takes away the power over money from the state and gives it to the people.
+        You can build applications on top of cryptocurrencies, such as  ◊link[gambling]{provably fair gambling} or a ◊link[timestamp]{timestamping service} based on mathematics instead of social proof.
     }
 }
 
 
 Of course cryptocurrencies don't solve everything perfectly, they're held back by adoption and price volatility in particular. And as with all new technology they will be associated with positive and negative change.
 
-If you want to learn more and see more examples just continue reading, or go to ◊link[what-chapter]{What is a cryptocurrency?} and continue from there. You can also ◊link[home]{jump} to whatever chapter interests you---they're supposed to be self-contained.
+If you want to learn more and see more examples just continue reading. You can also ◊link[home]{jump} to whatever chapter interests you---they're supposed to be self-contained.
 
 ◊ndef["bitcoin-fees"]{
     If you've heard about the ridiculously high Bitcoin fees then don't worry---it's the exception not the rule. Please read the chapter ◊link[cheaper-chapter]{Cheaper & faster} for more info.
@@ -88,22 +72,27 @@ If you want to learn more and see more examples just continue reading, or go to 
 ◊(define book-chapter "/about_the_book.html")
 ◊(define what-chapter "/what_is_a_cryptocurrency.html")
 
+◊(define properties-chapter "/properties_of_a_cryptocurrency.html")
 ◊(define are-cryptos-money "/are_cryptocurrencies_money.html")
 
 ◊(define cheaper-chapter "/cheaper_faster.html")
 ◊(define chargeback "/cheaper_faster.html#charge-back-fraud")
 ◊(define cheaper-fees "/cheaper_faster.html#fee-comparisons")
 ◊(define settlement-time "/cheaper_faster.html#speed-comparisons")
-
 ◊(define donations "/uncensorable_donations.html")
+◊(define undesirable "/undesirable_businesses.html")
 ◊(define freeze "/freezing_of_merchant_accounts.html")
+◊(define unbanked "/for_the_unbanked.html")
+
 ◊(define private-money "/private_money.html")
+◊(define borderless "/global_currency.html")
+◊(define financial-crisis "/financial_crisis.html")
 
 ◊(define swiss-bank-account "/swiss_bank_account_in_your_pocket.html")
+◊(define separate-money-state "/separation_of_money_and_state.html")
 
-◊(define properties-chapter "/properties_of_a_cryptocurrency.html")
+◊(define blind-leading-the-blind "/the_blind_leading_the_blind.html")
+◊(define timestamp "/timestamping_service.html")
+◊(define gambling "/provably_fair_gambling.html")
+
 ◊(define privacy-challenge "/challenges.html#privacy-and-fungibility")
-◊(define undesirable "/undesirable_businesses.html")
-◊(define unbanked "/for_the_unbanked.html")
-◊(define borderless "/global_currency.html")
-
