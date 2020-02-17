@@ -35,13 +35,11 @@ But why do we talk about improving voting? What's the problem with the way we vo
 
 Firstly we shouldn't avoid looking for improvements just because the "old way" worked well. If so then we wouldn't have faster cars, bigger TV-screens or more effective medicine---the previous versions already worked well enough. There's always value in making something ◊em{better}.
 
-But there are also serious problems with our voting system. A great example of some of them is the United States presidential election of 2000, where George W. Bush edged out Al Gore in a historically close election.◊sn{gore-won-popular}
+But there are also serious problems with our voting system. A great example of some of them is the United States presidential election of 2000, where George W. Bush edged out Al Gore in a historically close election, at least according to ◊link[bush-v-gore]{Britannica}, which I use as a source for the events.◊sn{gore-won-popular}
 
 ◊ndef["gore-won-popular"]{
     I find it interesting that Gore got more total votes, but won fewer states, so he ended up losing the election.
 }
-
-(I used ◊link[bush-v-gore]{Britannica} as a source for my recounting of the events.)
 
 To say that the election was close does it a disservice. After a day full of uncertainty, where Gore had called Bush to concede the election just to withdraw it later, it was clear Florida would be the decider. Bush appeared to have won in Florida with a margin of roughly 0.01%---a couple of hundred votes out of six million votes. This was so close that a machine recount was made, which showed that Bush had indeed won with only 327 votes!
 
@@ -51,12 +49,14 @@ Here we need to realize that the machines aren't computers that just count the v
     Then there's the infamous ◊link[butterfly-disaster]{Butterfly Ballot disaster}. Palm Beach County used ballot design that was so bad that perhaps more than 20,000 voters voted for the wrong candidate or mistakenly voted for multiple candidates.
 }
 
-The problem here is that some of the ballets weren't in good condition. Some ballets weren't punched through completely (so the machines couldn't detect the votes), others had voted for the same office multiple times or were incomplete in other ways. With the election being so close it's easy to see that these votes could very well change the outcome. Therefore the Florida Supreme Court ruled that these questionable ballots should be recounted by hand.
+The problem here is that some of the ballots weren't in good condition. Some ballots weren't punched through completely (so the machines couldn't detect the votes), others had voted for the same office multiple times or were incomplete in other ways. With the election being so close it's easy to see that these votes could very well change the outcome. Therefore the Florida Supreme Court ruled that these questionable ballots should be recounted by hand.
 
 Because the stakes were fairly high (an understatement I know) there were a ton of legal action, and charges of conflict of interest were pushed by both parties. At the end the U.S. Supreme Court overturned the Florida decision and put a stop to the recounting, awarded Florida's votes to Bush and that no recount could be held in time.
 
-◊note-pos[#:top -46]{gore-won-popular}
-◊note-pos[#:top -25]{butterfly}
+So in the end the Supreme Court took decided to ended the election and might've in the process changed the outcome. That's a pretty big failure of the voting system right there.
+
+◊note-pos[#:top -50]{gore-won-popular}
+◊note-pos[#:top -31]{butterfly}
 
 
 ◊subhead{The problems with paper voting}
@@ -121,10 +121,12 @@ In order to address some of the problems with paper voting, electronic voting is
 
         Paper voting preserves your privacy very well. You walk behind a screen, select a paper and put it a box with hundreds of other papers, making it basically impossible to trace that one vote back to you. Simple and very effective.
 
-        ◊link[chicago-privacy]{Not so with electronic voting}. The voting machine needs to verify your identity some way and computers can, and therefore we must assume they will, record everything that happens on it. This is information that a hacker could gain access to, and would be able to see exactly who you voted for.◊sn{191-mil}
+        ◊link[chicago-privacy]{Not so with electronic voting}. The voting machine needs to verify your identity some way and computers can---and therefore we must assume they will---record everything that happens on it. This is information that a hacker or election worker could gain access to, and would be able to see exactly who you voted for.
+
+        Consider for example what would happen if the future government becomes corrupt. Like if a Nazi-like party comes to power and they decides to punish those who didn't vote for them in the election?◊sn{191-mil}
 
         ◊ndef["191-mil"]{
-            In 2015 ◊link[191-mil-us-voters]{a database on the web had personal information} on registered U.S. voters, 191 million in total. It contained your full name, home address, mailing address, phone number, date of borth and whether or not you voted in any election back to 2000.
+            In 2015 ◊link[191-mil-us-voters]{a database on the web had personal information} on registered U.S. voters, 191 million in total. It contained your full name, home address, mailing address, phone number, date of birth and whether or not you voted in any election back to 2000.
 
             ◊link[191-reddit]{And it wasn't even a hack}. The database was just lying there, open for anyone to read. It's like if someone had left a paper in the middle of the library, available to anyone who happened to walk by.
 
@@ -135,7 +137,9 @@ In order to address some of the problems with paper voting, electronic voting is
 
         It's easy to explain how paper voting works; you just count the pieces of paper and tally up which name occurs the most. It's much more difficult to explain how electronic voting works and what makes it trustworthy.
 
-        How does it for example prevent someone from voting twice? With paper voting there are people who checks that you're only placing a single vote in the box, but how does the computer do that? And how do you know the computer counted your vote correctly?
+        How does it for example prevent someone from voting twice? With paper voting there are people who checks that you're only placing a single vote in the box, but how does the computer do that? How do you know the computer counted your vote correctly? And how will the election worker know that connecting a USB memory stick into the voting machine opens it up for attacks?
+
+        This is a general problem with technology, as people are often too trusting of them. We think they always do the right thing, but we underestimate the risk for faults or vulnerabilities in them. Just take self-driving cars as an example; they're still very much unsafe---both for passangers and pedestrians---but people don't seem to realize it.
 
         Understandability is important because people have to trust their election to be fair. If they don't trust their votes being counted correctly, then they can't trust the outcome of the election either.
     }
@@ -145,8 +149,8 @@ For a convincing case against electronic voting I recommend Jennifer Cohn's arti
 
 On the other hand many of these problems can be mitigated, see the paper ◊link[public-evidence-from-secret-ballots]{Public Evidence from Secret Ballots} for a good rundown.
 
-◊note-pos[#:top -59]{no-testing}
-◊note-pos[#:top -32]{191-mil}
+◊note-pos[#:top -74]{no-testing}
+◊note-pos[#:top -42]{191-mil}
 
 ◊(define us-corruption "https://medium.com/@jennycohn1/americas-electronic-voting-system-is-corrupted-to-the-core-1f55f34f346e")
 ◊(define georgia-legal-battle "https://www.washingtonpost.com/world/national-security/in-georgia-a-legal-battle-over-electronic-vs-paper-voting/2018/09/16/d655c070-b76f-11e8-94eb-3bd52dfe917b_story.html")
@@ -191,10 +195,10 @@ As an alternative I'll try to present a high level description of a blockchain v
     }
     ◊li-plus{Instant vote counting
 
-             Because it's a form of electronic voting, votes can be counted instantly and you get real time updates as the votes come in.◊sn{benefit-or-curse?}
+             Because it's a form of electronic voting, votes can be counted instantly and you get real-time updates as the votes come in.◊sn{benefit-or-curse?}
 
              ◊ndef["benefit-or-curse?"]{
-                Even if possible, is it desirable to get a real time update of voting? Couldn't that affect the election in a bad way?
+                Even if possible, is it desirable to get a real-time update of voting? Couldn't that affect the election in a bad way?
              }
     }
     ◊li-plus{Vote anywhere
@@ -217,7 +221,7 @@ As an alternative I'll try to present a high level description of a blockchain v
 The scheme is similar to tokens that we discussed in the ◊link[tokens]{previous chapter}. Here the issuer is the government, who still needs a way to identify voters and to give them a token (a single vote). The process would be similar to how it works today, where people have their identification verified by voting officials when they go to vote.◊sn{government}
 
 ◊ndef["government"]{
-    While I focus on government elections voting is useful in other contexts too, for example shareholder voting or votes in a leaderless organization. (In my head I see a bunch of people sitting around a table, shrouded in shadows, voting on who to kill.)
+    While I focus on government elections, voting is useful in other contexts too, for example shareholder voting or votes in a leaderless organization. (In my head I see a bunch of people sitting around a table, shrouded in shadows, voting on who to kill.)
 }
 
 With the tokens distributed you could cast a vote by sending them to predetermined addresses to cast your vote. For example if you want to vote for Trump, you send it to the Trump address. If you want to vote for Hillary, you send it to the Hillary address. And if you don't want to vote you don't do anything.◊sn{blank}
@@ -230,7 +234,7 @@ With the tokens distributed you could cast a vote by sending them to predetermin
     Each arrow corresponds to a token transaction and the "Hillary" and "Trump" boxes are addresses. The state is responsible for issuing the voting tokens to the voters and the voters in turn send them to the address they want to vote for. In this example Hillary got 1 vote and Trump got 2, and everyone voted.
 }
 
-These transactions work like cryptocurrency transactions, so you cannot counterfeit them or manufacture votes from thin air. Well, the state could issue new votes, but everyone can see exactly how many votes they give out, so if they give out more votes than there's eligible voters in the country... You know something is wrong.◊sn{how-do-you-know?}
+These transactions work like cryptocurrency transactions, so you cannot counterfeit them or manufacture votes from thin air. Well, the state could issue new votes, but everyone can see exactly how many votes they give out, so if they give out more votes than eligible voters in the country... You know something is wrong.◊sn{how-do-you-know?}
 
 ◊ndef["how-do-you-know?"]{
     Then how do you know that the votes are given out correctly and that the state distributes them fairly? The same way it works today---the voters are holding the state accountable.
@@ -254,7 +258,7 @@ The scheme I've presented is simple---too simple. There are many problems with i
 ◊ul{
     ◊li-neg{Privacy
 
-            The big flaw is the poor privacy.  If you can connect token issuance with your identification---which the government will be able to---then they can see who you voted for. It has the same privacy problem that Bitcoin has, except it's even worse as there's always a direct link between you and your address.
+            The big flaw is the poor privacy.  If you can connect token issuance with your identification---which the government will be able to do---then they can see who you voted for. It has the same privacy problem that Bitcoin has, except it's even worse as there's always a direct link between you and your address.
 
             The solution would be to obscure the coin history between issuance of the token and when you cast your vote.  We could use the obfuscation techniques, described in the ◊link[priv-fung]{privacy and fungibility} part of the appendix, to accomplish this.◊sn{mixing?}
 
@@ -317,7 +321,9 @@ They say a lot of other things too, and I recommend you read the paper as it goe
 
 They're right that trust isn't an issue, since data will be independently verified for correctness anyway, but I don't agree that it makes a blockchain useless. A fault tolerant system--- such a blockchain---is inherently more difficult to disrupt. Because anyone can help collect, distribute and verify votes it doesn't matter if the government's servers gets overloaded in a ◊link[dos]{Denial of Service (DoS)} attack---as long as people have internet access the voting process will be uninterrupted.
 
-◊note-pos[#:top -33]{efficiency}
+While there are benefits to blockchain voting, there are many problems we need to solve first, with the privacy problem being the most important. And it's possible that when all things are considered, maybe paper voting is best after all.
+
+◊note-pos[#:top -40]{efficiency}
 
 ◊ndef["efficiency"]{
     Then again if we want a publicly verifiable voting system, where all data is publically available, we must assume it will also exist forever. (On a related note this is the assumption we all should make when we interact with social media. The internet remembers.)
@@ -330,5 +336,4 @@ They're right that trust isn't an issue, since data will be independently verifi
 ◊(define priv-fung "/challenges.html#privacy-and-fungibility")
 
 ◊(define public-evidence-from-secret-ballots "https://arxiv.org/pdf/1707.08619.pdf")
-
 
