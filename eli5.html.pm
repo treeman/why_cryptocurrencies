@@ -43,7 +43,7 @@ While cryptocurrencies are mostly seen as speculative assets---get rich quick sc
     }
     ◊li{◊strong{An alternative financial system}
 
-        Cryptocurrencies represent an alternative to the traditional financial system, which rewards behavior that caused the ◊link[financial-crisis]{2008 financial crisis} and relies on being able to ◊link[blind-leading-the-blind]{predict the unpredictable}.  There's no central authority that controls a cryptocurrency, and it can be used to truly ◊link[separate-money-state]{separate money from state}.
+        The traditional financial system rewards behavior that caused the ◊link[financial-crisis]{2008 financial crisis} and relies on being able to ◊link[blind-leading-the-blind]{predict the unpredictable}. Cryptocurrencies represent an alternative a there's no central authority that can manipulate the money supply, and they can be used to truly ◊link[separate-money-state]{separate money from state}.
     }
     ◊li{◊strong{Extensions}
 
@@ -61,7 +61,7 @@ If you want to learn more and see more examples just continue reading. You can a
 }
 
 ◊ndef["bitcoin-privacy"]{
-    Please note that Bitcoin (and most other cryptocurrencies) are only ◊em{pseudo-anonymous}. There are others---like Monero---that improves the situation. Read the section of ◊link[privacy-challenge]{the privacy and fungibility challenge}.
+    Please note that Bitcoin (and most other cryptocurrencies) are only ◊em{pseudo-anonymous}. There are others---like Monero---that improve the situation. Read the section of ◊link[privacy-challenge]{the privacy and fungibility challenge}.
 }
 
 ◊ndef["chargeback-fraud"]{
