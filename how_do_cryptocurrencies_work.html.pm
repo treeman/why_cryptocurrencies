@@ -204,7 +204,7 @@ The work is to find a solution to a computing problem.◊sn{asics} The problem i
     }
 }
 
-◊def[#:link cryptographic-hash-functions]{Cryptographic hash functions} are excellent choices, Bitcoin uses SHA-256 for example. See the ◊link[hashes]{introduction to hashes} in the appendix and for more details on Bitcoin's proof-of-work I recommend ◊link[mine-pen-paper]{this post (2014)}, which shows how to mine Bitcoin with pen and paper.
+◊def[#:src cryptographic-hash-functions]{Cryptographic hash functions} are excellent choices, Bitcoin uses SHA-256 for example. See the ◊link[hashes]{introduction to hashes} in the appendix and for more details on Bitcoin's proof-of-work I recommend ◊link[mine-pen-paper]{this post (2014)}, which shows how to mine Bitcoin with pen and paper.
 
 A solution is proof that you've done the work---it's proof that you've expended energy. It's like a lottery and you can get lucky, but in the long run it balances out.  Since you require a significant investment to find a block this can be used as sybil resistance. You can't just create thousands of fake identities for free.
 
@@ -555,6 +555,5 @@ What makes it all work is the incentives for the miners to work in the best inte
 
 
 ◊(define chargeback-fraud "https://en.wikipedia.org/wiki/Chargeback_fraud")
-◊(define public-key-cryptography "https://en.wikipedia.org/wiki/Public-key_cryptography")
 ◊(define next-chapter "/look_out_for_snake_oil.html")
 

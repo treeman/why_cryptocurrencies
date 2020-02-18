@@ -133,10 +133,10 @@
   )
 
 
-(define (def #:link [link #f] . txt)
-  (if link
+(define (def #:src [src #f] . txt)
+  (if src
     `(span ((class "def"))
-       ,(apply make-link link txt))
+       ,(apply make-link src txt))
     `(span ((class "def"))
        ,@txt)))
 
