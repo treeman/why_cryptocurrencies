@@ -133,6 +133,14 @@
   )
 
 
+(define (def #:link [link #f] . txt)
+  (if link
+    `(span ((class "def"))
+       ,(apply make-link link txt))
+    `(span ((class "def"))
+       ,@txt)))
+
+
 (define (subhead x)
   `(h2
     (a [[name ,(to-name x)]] ,x)))
@@ -148,6 +156,7 @@
    `(li ((class "plus")) ,@txt))
 (define (li-neg . txt)
    `(li ((class "neg")) ,@txt))
+
 
 (define (stable #:header [header #t]
                 #:centered [centered #t]

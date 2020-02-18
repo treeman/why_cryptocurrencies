@@ -1,24 +1,50 @@
 #lang pollen
 
-◊(define-meta title "An intro to cryptography")
-◊;(define-meta subtitle "Benefits over existing payment systems")
+◊(define-meta title "An introduction to cryptography")
+◊(define-meta subtitle "A reference for cryptographic references in the book")
 ◊(define-meta updated "2019-09-16T07:28:35+02:00")
 ◊(define-meta uuid "6a8759d6-2e0c-4224-b0b8-61009c5484d0")
 
+This chapter serves as a reference for cryptographic terms and constructs mentioned in the book. Again, this isn't a technical deep-dive, but to give a basic understanding of what they are. If this interests you I encourage you to research more on your own.
 
-◊subhead{Hashing}
 
-Describe ◊em{one-way hashes} and ◊em{cryptographic has functions}. Give SHA-256 as an example.
+◊subhead{Hashes}
 
-How difficult is it to break a hash? You would have to test...
+Hashes, or to be more precise ◊def[#:link cryptographic-hash-functions]{cryptographic hash functions}, are commonly used in the cryptocurrency space. They're commonly used as the basis of proof-of-work, to verify the integrity of downloaded files and we used them when we created ◊link[timestamping-service]{a timestamped message}.
 
-If you don't believe me then you can try to guess what message this SHA-256 output comes from:
+Hashes are ◊def{one-way functions}. As the name implies we can give data to a function to get a result, but we cannot go the other way to get back the original data if we only have the result. For example using the popular SHA-256 hash function:
+
+◊code{hello → 5891b5b522d5df086d0ff0b110fbd9d21bb4fc7163af34d08286a2e846f6be03}
+
+But there's no function to unwrap the hash directly:
+
+◊code{084c799cd551dd1d8d5c5f9a5d593b2e931f5e36122ee5c793c1d08a19839cc0 ↛ ???}
+
+To go the other way we have to try all possibilities:
+
+◊code{
+    1 → 4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865
+    2 → 53c234e5e8472b6ac51c1ae1cab3fe06fad053beb8ebfd8977b010655bfdd3c3
+    ...
+    42 → 084c799cd551dd1d8d5c5f9a5d593b2e931f5e36122ee5c793c1d08a19839cc0
+}
+
+Found it! The answer is "42". But we were lucky that we only had to test 42 possibilities, we could have continued a ◊strong{very} long time.
+
+Don't believe me? Then try to guess what message this SHA-256 output comes from, and I can even give you a hint that it's only spaces and upper or lower case letters:
 
 ◊code{b409d7f485033ac9f52a61750fb0c54331bfdd966338015db25efae50984f88f}
 
-When you give up ◊toggle[iron-man]{here's the answer.}
+When you give up ◊toggle[iron-man]{click here for the answer.}
+
+◊;This is known as ◊def{brute force} and it's a very
+
+
+
+
 
 ◊(define iron-man "Iron Man is my favorite superhero")
+
 
 ◊subhead{Public-key cryptography}
 
@@ -33,12 +59,15 @@ Image of elliptic curve?
 Also explain that you can ◊em{sign} messages to prove you were the one who sent them and ◊em{encrypt} messages so nobody but the receiver can read them.
 
 
-◊subhead{Addresses in Bitcoin}
+◊subhead{Bitcoin addresses}
 
 Create an example address with public/private keys. Show how you can sign and verify messages and encrypt/decrypt messages as well.
 
 
-◊subhead{Your wallet keys}
+◊subhead{Seeds}
 
 Explain ◊em{seeds} and different ways to store private keys from wallets.
+
+◊(define cryptographic-hash-functions "https://en.wikipedia.org/wiki/Cryptographic_hash_function")
+◊(define timestamping-service "/timestamping_service.html")
 
