@@ -3,7 +3,7 @@
 ◊(define-meta title "Improved voting")
 ◊(define-meta subtitle "A verifiable and resilient voting system")
 ◊(define-meta published "2020-01-31T07:22:26+01:00")
-◊(define-meta updated "2020-01-31T07:22:31+01:00")
+◊(define-meta updated "2020-02-18T07:29:08+01:00")
 ◊(define-meta uuid "5aaf6384-d377-485b-bfc2-2c4caaaa0fe0")
 
 ◊epigraph{
@@ -53,7 +53,7 @@ The problem here is that some of the ballots weren't in good condition. Some bal
 
 Because the stakes were fairly high (an understatement I know) there were a ton of legal action, and charges of conflict of interest were pushed by both parties. At the end the U.S. Supreme Court overturned the Florida decision and put a stop to the recounting, awarded Florida's votes to Bush and that no recount could be held in time.
 
-So in the end the Supreme Court took decided to ended the election and might've in the process changed the outcome. That's a pretty big failure of the voting system right there.
+So in the end the Supreme Court decided to end the election and might've changed the outcome in the process.  That's a pretty big failure of the voting system right there.
 
 ◊note-pos[#:top -50]{gore-won-popular}
 ◊note-pos[#:top -31]{butterfly}
@@ -123,7 +123,7 @@ In order to address some of the problems with paper voting, electronic voting is
 
         ◊link[chicago-privacy]{Not so with electronic voting}. The voting machine needs to verify your identity some way and computers can---and therefore we must assume they will---record everything that happens on it. This is information that a hacker or election worker could gain access to, and would be able to see exactly who you voted for.
 
-        Consider for example what would happen if the future government becomes corrupt. Like if a Nazi-like party comes to power and they decides to punish those who didn't vote for them in the election?◊sn{191-mil}
+        Consider for example what would happen if the future government becomes corrupt. Like if a Nazi-like party comes to power and they decide to punish those who didn't vote for them in the election?◊sn{191-mil}
 
         ◊ndef["191-mil"]{
             In 2015 ◊link[191-mil-us-voters]{a database on the web had personal information} on registered U.S. voters, 191 million in total. It contained your full name, home address, mailing address, phone number, date of birth and whether or not you voted in any election back to 2000.
