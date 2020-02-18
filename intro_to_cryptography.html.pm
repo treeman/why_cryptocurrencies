@@ -66,7 +66,11 @@ If you jump into the mathematical definitions of ◊def[#:src public-key-cryptog
 
 It's called public-key cryptography because you have two keys: the ◊def{public key}, which is the mailbox, and the ◊def{private key}, which is the key to the mailbox.  Anyone can give you mail---just slide it into the mailbox at the top---but you're the only one who can read them, because you're the only one with a key.
 
-You ◊em{encrypt} a message by placing it in the mailbox, this way nobody but the owner of the mailbox can read it. The owner of the mailbox can also prove they own it by placing their name on the mailbox, an action that requires you to open the mailbox and therefore you can prove that you own the mailbox. In digital terms this is how you ◊em{sign} a message.
+You ◊em{encrypt} a message by placing it in the mailbox, this way nobody but the owner of the mailbox can read it. The owner of the mailbox can also prove they own the mailbox by placing their name on it, an action that requires you to open the mailbox with the key. In digital terms this is how you ◊em{sign} a message.◊sn{mailbox-breakdown}
+
+◊ndef["mailbox-breakdown"]{
+    This is where our mailbox metaphor breaks down a bit. It may seem that it's more inconvenient to sign a message than to encrypt one, but digitally they're both straightforward.
+}
 
 ◊todo{Encrypt a message as it goes into the mailbox}
 
@@ -78,10 +82,9 @@ Large parts of the internet depends on public-key cryptography. For example when
     The lock icon or the "https" label means you're using public-key cryptography (among other things) to secure your connection to the website.
 }
 
+I won't go into details on how the mathematics behind this scheme work, as I'm not able to without making the explanation needlessly complicated, but if this interests you I encourage you to look it up---I personally find it fascinating. We will look at public-key cryptography in practice when we look at how Bitcoin addresses work.
 
-◊;Image of elliptic curve?
-
-◊;Also explain that you can ◊em{sign} messages to prove you were the one who sent them and ◊em{encrypt} messages so nobody but the receiver can read them.
+◊;If you're intrigued by the promise of public-key cryptography I encourage you to look it up, it's quite fascinating.
 
 
 ◊subhead{Bitcoin addresses}

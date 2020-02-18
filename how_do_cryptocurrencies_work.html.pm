@@ -54,11 +54,9 @@ To be able to create a transaction you need to have the ◊em{private keys} to t
     You typically don't use the private key directly. Instead you can interact with a ◊em{seed}, which encodes the private key hash into a human-readable format. It's commonly made of 12 or 24 words.
 }
 
-It uses ◊link[public-key-cryptography]{◊em{public-key cryptography}} which allows you to prove you control the private key without sharing the private key itself. Compare it to credit card numbers which act as both a private and public key.  Going into detail how the cryptography works is out of the scope of this book, and it's not required to understand how cryptocurrencies work on a higher level.◊sn{pubkey}
+It uses ◊link[public-key-cryptography]{◊em{public-key cryptography}} which allows you to prove you control the private key without sharing the private key itself. Compare it to credit card numbers which act as both a private and public key.  See the ◊link[intro-crypto]{introduction to cryptography chapter} in the appendix for more details, but it's not required to understand how cryptocurrencies work on a higher level.◊sn{pubkey}
 
 ◊ndef["pubkey"]{
-    If you're intrigued by the promise of public-key cryptography I encourage you to look it up, it's quite fascinating.
-
     If the history of cryptography interests you I can also recommend the book "The Code-Breakers" by David Kahn. You can enjoy it even without much math knowledge.
 }
 
@@ -76,7 +74,7 @@ For example Sneaky Steve wants to buy a computer from Honest Harry and wants to 
   Address     Bitcoin
   Sneaky Steve 1     1 BTC
   Sneaky Steve 2     0 BTC
-  Honese Harry         0 BTC
+  Honest Harry         0 BTC
 }
 
 What Sneaky Steve tries to do is send ◊sans-tnum{1 BTC} to the merchant Honest Harry and then send a copy of ◊sans-tnum{1 BTC} to his other address ◊sans-tnum{Sneaky Steve 2}. It's possible to have as many addresses as you want---a consequence of the permissionless nature of Bitcoin.
@@ -214,6 +212,8 @@ Important to note is that everyone doesn't have to be a miner. The blockchain is
 ◊note-pos[#:top -60]{asics}
 ◊note-pos[#:top -48]{useful-pow}
 
+◊(define intro-crypto "/intro_to_cryptography.html")
+◊(define public-key-cryptography "/intro_to_cryptography.html#public-key-cryptography")
 ◊(define hashes "/intro_to_cryptography.html#hashes")
 
 ◊ndef["asics"]{
