@@ -39,7 +39,7 @@
      uncensorable_twitter.html
      provably_fair_gambling.html
      tokens.html
-     "Verifiable voting")
+     voting.html)
     (appendix.html
      bitcoin_whitepaper.html
      challenges.html

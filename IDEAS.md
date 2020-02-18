@@ -64,11 +64,6 @@ Cryptocurrencies have weak relationships with established asset classes, which c
 <https://www.bloomberg.com/graphics/2018-bitcoin-investment/>
 
 
-## Voting
-
-A peer-to-peer voting algorithm, without blockchain
-<http://vixra.org/pdf/1905.0239v1.pdf>
-
 ## Who is Satoshi?
 
 <https://www.gwern.net/Death-Note-Anonymity>

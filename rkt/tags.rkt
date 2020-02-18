@@ -143,6 +143,11 @@
 (define (to-name x)
   (string-replace (string-downcase x) " " "-"))
 
+(define (li-plus . txt)
+   `(li ((class "plus")) ,@txt))
+(define (li-neg . txt)
+   `(li ((class "neg")) ,@txt))
+
 (define (stable #:header [header #t]
                 #:centered [centered #t]
                 #:fullwidth [fullwidth #f]
