@@ -93,5 +93,12 @@ There are other ideas of how to improve privacy and fungibility for cryptocurren
 
 ◊;subhead{Energy usage}
 
+◊;subhead{User experience}
+
 ◊;subhead{Adoption}
+
+◊; (Manipulated and irrational markets)
+◊; (Legislation)
+
+◊;subhead{Development organization}
 

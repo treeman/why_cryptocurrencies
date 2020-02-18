@@ -27,19 +27,24 @@
             ))
 
 (define follow-section
-  `(section ((class "follow"))
-            (div ((class "wip"))
-                "The book is a work in progress. If you want to keep up to date:")
-            ,subscription-form
-          (div ((class "links"))
-            "Subscribe to the " ,(link feed-url "feed")
-            ", see the source on " ,(link source-code "Github")
-            " or " ,(link mailto "contact me")
-            ".")))
+  `(section((class "follow"))
+     (div ((class "wip"))
+          "The book is a work in progress. If you want to keep up to date:")
+     ,subscription-form
+     (div ((class "links"))
+          "Subscribe to the " ,(link feed-url "feed")
+          ", see the source on " ,(link source-code "Github")
+          " or " ,(link mailto "contact me")
+          ".")
+     (div ((class "donate"))
+           "If you appreciate this free book please consider "
+           ,(link donations "donating")
+           ".")
+     ))
 
 (define (abs-url url)
   (format "~a/~a" root-url url))
 
 (define keywords
-  "Cryptocurrency,Bitcoin,Bitcoin Cash,Monero,Ethereum,BTC,BCH,XMR,ETH,ICO,Crypto")
+  "Cryptocurrency,Cryptocurrencies,Blockchain,Bitcoin,Bitcoin Cash,Monero,Ethereum,BTC,BCH,XMR,ETH,ICO,Crypto")
 

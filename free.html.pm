@@ -3,7 +3,7 @@
 ◊(define-meta title "Completely free")
 ◊(define-meta subtitle "Read it online for free without cost of any kind")
 ◊(define-meta published "2019-04-12T00:00:00+01:00")
-◊(define-meta updated "2020-01-21T08:28:15+01:00")
+◊(define-meta updated "2020-02-18T07:31:14+01:00")
 ◊(define-meta uuid "4ede8ca8-fd2e-4112-9d00-e383f94e1a01")
 
 This book is completely free for you to read online and will be so forever. There will be no ads, no tracking and no crypto mining in the browser.◊sn{browser-mining}
@@ -15,6 +15,8 @@ When I some day finish the book and decide to release it in other formats I may 
 ◊subhead{Donations is a perfect use for cryptocurrencies}
 
 You can also send donations from anywhere in the world ◊link[cheaper-faster]{nearly instantly with small fees} and ◊link[donations]{no possibility of censorship}. This isn't possible with anything else.
+
+If you want you can try it out:
 
 ◊section[#:class "donations"]{
     ◊crypto["/images/donations/btc.svg"
