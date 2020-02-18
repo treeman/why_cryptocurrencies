@@ -20,7 +20,7 @@ But there's no function to unwrap the hash directly:
 
 ◊code{084c799cd551dd1d8d5c5f9a5d593b2e931f5e36122ee5c793c1d08a19839cc0 ↛ ???}
 
-To go the other way we have to try all possibilities:
+To find out what's hidden behind the hash we have to try all possibilities:
 
 ◊code{
     1 → 4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865
@@ -29,13 +29,26 @@ To go the other way we have to try all possibilities:
     42 → 084c799cd551dd1d8d5c5f9a5d593b2e931f5e36122ee5c793c1d08a19839cc0
 }
 
-Found it! The answer is "42". But we were lucky that we only had to test 42 possibilities, we could have continued a ◊strong{very} long time.
+Found it! The answer is "42". But we were lucky that we only had to test 42 possibilities, we could have continued a ◊strong{very} long time depending on the input.
 
-Don't believe me? Then try to guess what message this SHA-256 output comes from, and I can even give you a hint that it's only spaces and upper or lower case letters:
+Don't believe me? Then try to guess what message this SHA-256 output comes from, and I can even give you a hint that it's only spaces and upper or lower case letters:◊sn{variation}
+
+◊ndef["variation"]{
+
+}
 
 ◊code{b409d7f485033ac9f52a61750fb0c54331bfdd966338015db25efae50984f88f}
 
 When you give up ◊toggle[iron-man]{click here for the answer.}
+
+To get a sense for how hard it can be to figure out the matching data for a hash, let's look at the mining in Bitcoin. Because that's really what miners do---they calculate hashes with different kinds of input again and again until they find a match. And they don't require an exact match either, they only want to find a hash with a certain number of leading zeroes.
+
+The current ◊link[bitcoin-hashrate]{hashrate for Bitcoin} is around 113 exahashes per second (2020-02-18). That's a staggering 113 x 10◊sup{18}, or 133 000 000 000 000 000 000, hashes per second. Yet they're still only expected to find a single solution every 10 minutes.
+
+Therefore it's practically impossible to reverse a hash if the content has sufficient variation in it.
+
+
+◊(define bitcoin-hashrate "https://bitinfocharts.com/comparison/bitcoin-hashrate.html")
 
 ◊;This is known as ◊def{brute force} and it's a very
 
@@ -68,6 +81,5 @@ Create an example address with public/private keys. Show how you can sign and ve
 
 Explain ◊em{seeds} and different ways to store private keys from wallets.
 
-◊(define cryptographic-hash-functions "https://en.wikipedia.org/wiki/Cryptographic_hash_function")
 ◊(define timestamping-service "/timestamping_service.html")
 

@@ -204,7 +204,7 @@ The work is to find a solution to a computing problem.◊sn{asics} The problem i
     }
 }
 
-Cryptographic hash functions are excellent choices, Bitcoin uses SHA-256 for example. For more details on the details of Bitcoin's computing problem I recommend ◊link[mine-pen-paper]{this post (2014)} which shows how to mine Bitcoin with pen and paper.
+◊def[#:link cryptographic-hash-functions]{Cryptographic hash functions} are excellent choices, Bitcoin uses SHA-256 for example. See the ◊link[hashes]{introduction to hashes} in the appendix and for more details on Bitcoin's proof-of-work I recommend ◊link[mine-pen-paper]{this post (2014)}, which shows how to mine Bitcoin with pen and paper.
 
 A solution is proof that you've done the work---it's proof that you've expended energy. It's like a lottery and you can get lucky, but in the long run it balances out.  Since you require a significant investment to find a block this can be used as sybil resistance. You can't just create thousands of fake identities for free.
 
@@ -213,6 +213,8 @@ Important to note is that everyone doesn't have to be a miner. The blockchain is
 ◊note-pos[#:top -65]{valid}
 ◊note-pos[#:top -60]{asics}
 ◊note-pos[#:top -48]{useful-pow}
+
+◊(define hashes "/intro_to_cryptography.html#hashes")
 
 ◊ndef["asics"]{
     In Bitcoin specialized hardware, ◊link[ASICs]{ASICs}, are used which are many magnitudes faster than regular computers at solving POW problems.
