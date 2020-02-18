@@ -91,6 +91,10 @@ I won't go into details on how the mathematics behind this scheme work, as I'm n
 
 Create an example address with public/private keys. Show how you can sign and verify messages and encrypt/decrypt messages as well.
 
+time layer today pencil buzz wing bird excess tone rebuild arrange size
+
+public key:  1Nx5czgPZiwBQghqcbVqkz8S1eTmdQo5D9	
+private key: L51avt2qoya13EpyKug8eM1UTg7jhSiuvtoUhLKkRZHMCbh9DJuk
 
 ◊subhead{Seeds}
 
@@ -101,3 +105,4 @@ Explain ◊em{seeds} and different ways to store private keys from wallets.
 ◊(define timestamping-service "/timestamping_service.html")
 ◊(define bitcoin-hashrate "https://bitinfocharts.com/comparison/bitcoin-hashrate.html")
 ◊(define public-key-cryptography "https://en.wikipedia.org/wiki/Public-key_cryptography")
+
