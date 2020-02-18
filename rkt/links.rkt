@@ -40,3 +40,5 @@
 (define animal-farm-book "https://www.goodreads.com/book/show/170448.Animal_Farm")
 
 (define cryptographic-hash-functions "https://en.wikipedia.org/wiki/Cryptographic_hash_function")
+
+(define electroncash "https://electroncash.org/")

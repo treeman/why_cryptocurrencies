@@ -89,12 +89,82 @@ I won't go into details on how the mathematics behind this scheme work, as I'm n
 
 ◊subhead{Bitcoin addresses}
 
-Create an example address with public/private keys. Show how you can sign and verify messages and encrypt/decrypt messages as well.
+The addresses in Bitcoin (and other cryptocurrencies) are directly using public-key cryptography. The address is a public key that everyone can send coins to, but to send coins from an address you need the private key.
 
-time layer today pencil buzz wing bird excess tone rebuild arrange size
+This is for example a standard ◊strong{Bitcoin address}:
 
-public key:  1Nx5czgPZiwBQghqcbVqkz8S1eTmdQo5D9	
-private key: L51avt2qoya13EpyKug8eM1UTg7jhSiuvtoUhLKkRZHMCbh9DJuk
+◊code{1Nx5czgPZiwBQghqcbVqkz8S1eTmdQo5D9}
+
+The address could be displayed in various different ways, Bitcoin just happened to do it this way.◊sn{bch-address}
+
+◊ndef["bch-address"]{
+    Bitcoin Cash is a fork of Bitcoin and they have an additional address format. The same Bitcoin address, with the same public key, could also be displayed as this Bitoin Cash address:
+
+    ◊code{qrcv2cz7z4rasm4xf2s6m4yrxacpl9f2c5vz268lry}
+}
+
+The ◊strong{private key} to this address looks like this:
+
+◊todo{Does it really look like this?}
+
+◊code{037bae943f5d94c7f80aba52a801c6ffbc2e6ce9241a8eebb8ba0d619b5cce99bf}
+
+Again, the actual private key is the binary data and it could be displayed in various ways as well. Here's the same key in the ◊link[wif]{Wallet Import Format}, which is shorter and includes error checking codes:
+
+◊(define wif "https://en.bitcoin.it/wiki/Wallet_import_format")
+
+◊code{L51avt2qoya13EpyKug8eM1UTg7jhSiuvtoUhLKkRZHMCbh9DJuk}
+
+It's important to note that you should ◊em{never} reveal your private key like this. Don't take a screenshot of it, email it or post it on social media. Because if someone sees your key, they can steal all the coins from your address. The private key really is the key to the castle, and if you lose it you'll lose all your funds forever. So please back up your private key somewhere safe (or the more user-friendly ◊em{seed}, but we'll get to that shortly).
+
+The reason Bitcoin uses public-key cryptography for the addresses is because you can ◊strong{sign} messages with it. For example if I sign the message:◊sn{electron-cash}
+
+◊ndef["electron-cash"]{
+    I used the desktop version of ◊link[electroncash]{Electron Cash} for these examples.
+}
+
+◊code{Jonas sent the money}
+
+With the address:
+
+◊code{1Nx5czgPZiwBQghqcbVqkz8S1eTmdQo5D9}
+
+I'll get this signature:
+
+◊code{H8rf3p7pfAIT+0LMeuE3iJkrms2K/5HwInES/drI9pCEcWhz3OitXZQ8bJZreP/h6E2Y2F/HTHduJfEaNBJiniU=}
+
+Which if you can verify you know that I control the private key to the address, even if I never showed it to you. This can be useful if we've sent money to someone and we want to prove who did it.◊sn{payments}
+
+◊ndef["payments"]{
+    Payment systems are usually smarter, so this is normally not needed.
+}
+
+This also happens in the background when you authorize a transaction; you sign it with your private key and your signature is validated before the transaction is accepted. If the signature doesn't validate then the transaction is invalid and gets discarded.◊sn{how-difficult?}
+
+◊ndef["how-difficult?"]{
+
+}
+
+
+◊strong{Encrypting} messages using your Bitcoin keys aren't used that much to my knowledge, they typically use protocols such as ◊link[pgp]{PGP}, but it's possible. I'll include a short example of it for completeness sake.
+
+For example if you want to send me the message:
+
+◊code{I secretly love your book!}
+
+But only want me to be able to read it, you can encrypt it with my Bitcoin address (the public key):
+
+◊code{1Nx5czgPZiwBQghqcbVqkz8S1eTmdQo5D9}
+
+And you'll get the encrypted message:
+
+
+◊(define pgp "https://en.wikipedia.org/wiki/Pretty_Good_Privacy")
+
+◊;time layer today pencil buzz wing bird excess tone rebuild arrange size
+
+◊;public key:  1Nx5czgPZiwBQghqcbVqkz8S1eTmdQo5D9	
+◊;private key: L51avt2qoya13EpyKug8eM1UTg7jhSiuvtoUhLKkRZHMCbh9DJuk
 
 ◊subhead{Seeds}
 

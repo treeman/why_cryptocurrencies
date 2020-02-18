@@ -268,7 +268,6 @@ With that our timestamp is prepared and nobody can see our original message, onl
 
 ◊(define transaction-ex "https://blockchair.com/bitcoin-cash/transaction/586783e17fadace136365490fd83ba59390ca55e7205ee74fbc7db2daa012ad3")
 ◊(define transaction-ex2 "https://bch.btc.com/586783e17fadace136365490fd83ba59390ca55e7205ee74fbc7db2daa012ad3")
-◊(define electroncash "https://electroncash.org/")
 
 ◊ol{
     ◊li{Locate the hash in the blockchain.
