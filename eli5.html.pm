@@ -43,7 +43,7 @@ While cryptocurrencies are mostly seen as speculative assets---get rich quick sc
     }
     ◊li{◊strong{An alternative financial system}
 
-        The traditional financial system rewards behavior that caused the ◊link[financial-crisis]{2008 financial crisis} and relies on being able to ◊link[blind-leading-the-blind]{predict the unpredictable}. Cryptocurrencies represent an alternative a there's no central authority that can manipulate the money supply, and they can be used to truly ◊link[separate-money-state]{separate money from state}.
+        The traditional financial system rewards behavior that caused the ◊link[financial-crisis]{2008 financial crisis} and relies on being able to ◊link[blind-leading-the-blind]{predict the unpredictable}. Cryptocurrencies represent an alternative where there's no central authority that can manipulate the money supply, and they can be used to truly ◊link[separate-money-state]{separate money from state}.
     }
     ◊li{◊strong{Extensions}
 
