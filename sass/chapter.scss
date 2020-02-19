@@ -591,6 +591,15 @@ table.legal-moral {
     }
 }
 
+table.address-examples {
+    td.ths {
+        font-weight: bold;
+    }
+    td.tdc {
+        //font-weight: bold;
+    }
+}
+
 .sans {
     @extend %sans-serif;
 }

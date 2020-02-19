@@ -93,29 +93,34 @@ The addresses in Bitcoin (and other cryptocurrencies) are directly using public-
 
 This is for example a standard ◊strong{Bitcoin address}:
 
-◊code{1Nx5czgPZiwBQghqcbVqkz8S1eTmdQo5D9}
+◊code{19WoNYNXnfNPmLteC8YmZFsTQoN9gBSbCG}
+
+Which corresponds to the ◊strong{public key}:
+
+◊code{049f6aad24669d180cfe4c974a677407cbf26f03242a09126ebf88621d31f01a218d40fcbcb769b44b014d502a1c9ce8c2ca629bc339fe14b4db56e27e80ac30a7}
 
 The address could be displayed in various different ways, Bitcoin just happened to do it this way.◊sn{bch-address}
+
 
 ◊ndef["bch-address"]{
     Bitcoin Cash is a fork of Bitcoin and they have an additional address format. The same Bitcoin address, with the same public key, could also be displayed as this Bitoin Cash address:
 
-    ◊code{qrcv2cz7z4rasm4xf2s6m4yrxacpl9f2c5vz268lry}
+    ◊code{qpwk83ew0xwpe87mmm9v43nvzj2y4d783cmv7ayctd}
 }
 
 The ◊strong{private key} to this address looks like this:
 
-◊todo{Does it really look like this?}
+◊code{5298e83a0c0884cdcf34294f663220bc73e3c6689e95b53158a9a89e95fd78bb}
 
-◊code{037bae943f5d94c7f80aba52a801c6ffbc2e6ce9241a8eebb8ba0d619b5cce99bf}
-
-Again, the actual private key is the binary data and it could be displayed in various ways as well. Here's the same key in the ◊link[wif]{Wallet Import Format}, which is shorter and includes error checking codes:
+Again, the actual private key is the binary data and it could be displayed in various ways. Here's the same key in the ◊link[wif]{Wallet Import Format}, which is shorter and includes error checking codes:
 
 ◊(define wif "https://en.bitcoin.it/wiki/Wallet_import_format")
 
-◊code{L51avt2qoya13EpyKug8eM1UTg7jhSiuvtoUhLKkRZHMCbh9DJuk}
+◊code{5JSfRE8qNQZTtdwuRx6pxVohC3C3VeAHvzKvLsZWHEGPdW2zF3o}
 
 It's important to note that you should ◊em{never} reveal your private key like this. Don't take a screenshot of it, email it or post it on social media. Because if someone sees your key, they can steal all the coins from your address. The private key really is the key to the castle, and if you lose it you'll lose all your funds forever. So please back up your private key somewhere safe (or the more user-friendly ◊em{seed}, but we'll get to that shortly).
+
+There are other types of addresses and other formats for the private and public keys, and other cryptocurrencies may handle them differently, but the concepts are the same.
 
 The reason Bitcoin uses public-key cryptography for the addresses is because you can ◊strong{sign} messages with it. For example if I sign the message:◊sn{electron-cash}
 
@@ -125,15 +130,15 @@ The reason Bitcoin uses public-key cryptography for the addresses is because you
 
 ◊code{Jonas sent the money}
 
-With the address:
+With the private key to the address:
 
-◊code{1Nx5czgPZiwBQghqcbVqkz8S1eTmdQo5D9}
+◊code{19WoNYNXnfNPmLteC8YmZFsTQoN9gBSbCG}
 
 I'll get this signature:
 
-◊code{H8rf3p7pfAIT+0LMeuE3iJkrms2K/5HwInES/drI9pCEcWhz3OitXZQ8bJZreP/h6E2Y2F/HTHduJfEaNBJiniU=}
+◊code{HCZl2+vEZboqXgaVYi1nLNgwoa/INLiEsA2yXe+87j5iFoo/G96m4AoA5dL5T+rTiFKpXHuS5w3rP1IWSPZZv0Q=}
 
-Which if you can verify you know that I control the private key to the address, even if I never showed it to you. This can be useful if we've sent money to someone and we want to prove who did it.◊sn{payments}
+Which if you can ◊strong{verify} you know that I control the private key to the address, even if I never showed it to you. This can be useful if we've sent money to someone and we want to prove who did it.◊sn{payments}
 
 ◊ndef["payments"]{
     Payment systems are usually smarter, so this is normally not needed.
@@ -152,27 +157,73 @@ For example if you want to send me the message:
 
 ◊code{I secretly love your book!}
 
-But only want me to be able to read it, you can encrypt it with my Bitcoin address (the public key):
+But only want me to be able to read it, you can encrypt it with my public key:
 
-◊code{1Nx5czgPZiwBQghqcbVqkz8S1eTmdQo5D9}
+◊code{049f6aad24669d180cfe4c974a677407cbf26f03242a09126ebf88621d31f01a218d40fcbcb769b44b014d502a1c9ce8c2ca629bc339fe14b4db56e27e80ac30a7}
 
 And you'll get the encrypted message:
+
+◊code{QklFMQJ+CTugTvsEmuB7owU3DvC5taXqC5DhsJ3Wq8EmUMHwgsE54GlY1PI9d1R/OoGfq1mG9dcThW5T9fpUtQTY+ogLLvKsrN6ngeulLMrfoyCxFtLTjH78PGSd8eROQ1yPq1k=}
+
+Which only I can ◊strong{decrypt} to the original message. (Since I've given out the private key, you can decrypt it as well.)
+
+◊; Private key:  5298e83a0c0884cdcf34294f663220bc73e3c6689e95b53158a9a89e95fd78bb
+◊; Public key:  049f6aad24669d180cfe4c974a677407cbf26f03242a09126ebf88621d31f01a218d40fcbcb769b44b014d502a1c9ce8c2ca629bc339fe14b4db56e27e80ac30a7
+◊; Wif:  5JSfRE8qNQZTtdwuRx6pxVohC3C3VeAHvzKvLsZWHEGPdW2zF3o
+◊; Address:  19WoNYNXnfNPmLteC8YmZFsTQoN9gBSbCG
+◊; bitcoincash address: bitcoincash:qpwk83ew0xwpe87mmm9v43nvzj2y4d783cmv7ayctd
 
 
 ◊(define pgp "https://en.wikipedia.org/wiki/Pretty_Good_Privacy")
 
-◊;time layer today pencil buzz wing bird excess tone rebuild arrange size
-
-◊;public key:  1Nx5czgPZiwBQghqcbVqkz8S1eTmdQo5D9	
-◊;private key: L51avt2qoya13EpyKug8eM1UTg7jhSiuvtoUhLKkRZHMCbh9DJuk
-
 ◊subhead{Seeds}
 
-Explain ◊em{seeds} and different ways to store private keys from wallets.
+Because private keys aren't very user-friendly Bitcoin wallets use seeds. The seed is made up of ◊link[bip-39]{a set of 2048 preselected words} and the order matters. Sometimes the seed can be 24 words instead of 12, but 12 is enough.
+
+This is for example a 12-word seed:◊sn{variations}
+
+◊ndef["variations"]{
+    Variations among cryptocurrencies exist. A Monero seed is for example 25 words long.
+}
+
+◊code{reward tip because lock general culture below strike frog fox chunk index}
+
+Which corresponds to the private key:
+
+◊code{KyRoQMYWAtfj5cGLThb1fznm5Utjq7Etmn9DLtdxYCiE3Vntcz3E}
+
+Much more user friendly right? You could even memorize the seed, while it's much more difficult to memorize the private key directly.
+
+In addition to being easy to use, seeds act as a starting point in deterministic wallets to generate multiple private and public key pairs. (See the discussion about ◊link[pseudo-random-generators]{pseudo-random generators} in the chapter about ◊link[gambling]{provably fair gambling} for some theory of how this can be accomplished.)
+
+Here are for example the first 10 addresses and their private keys of our seed:
+
+◊table-body[#:class "address-examples"]{
+    ◊tr{◊ths{Address} ◊ths{Private key}}
+    ◊tr{◊tdc{19oN2GWEH1uiPz11WyChkUp2che9Z11Q5A} ◊tdc{KyRoQMYWAtfj5cGLThb1fznm5Utjq7Etmn9DLtdxYCiE3Vntcz3E}}
+    ◊tr{◊tdc{1LverDkyaWMEyyFHiEWQaJt6UGxRjeBfQR} ◊tdc{L1NH4wpuKzafbq2PtVXaGCE8hjc7KGzRfyfYik73APu7kZvdJxUp}}
+    ◊tr{◊tdc{1QHQ8uFrEL29WAkMLQgkoDzHimEQNqubM1} ◊tdc{Kx3c9ZeS2pzYPuLa2NoA14SavnsWpkf1BJDLDu1N52oGoNWgv9KM}}
+    ◊tr{◊tdc{1HiohATeEm6BBeRCgWZ5vY3ZKFrCDsJnt9} ◊tdc{KyCWZEpJ3AYUmB7MGEVvZfr6eiwgag89jmZtHC1tEVv9XynSqmot}}
+    ◊tr{◊tdc{1KJ5oMUEJTyd3igAYjJGvpdVjGDvF1Brc6} ◊tdc{L4exrFikcfgSYm1ZZBkJrbwouLjzrrJB6VPyaH4vyK8cAkK2V2nt}}
+    ◊tr{◊tdc{1DzZJ6R1xXiQ3HJ3BsBAcviVdtUEeiu2UG} ◊tdc{Kx37aUKrHRVdinxzHWTK8ebXWeMtRSbtshzonTMTQBrssQ2ms1JV}}
+    ◊tr{◊tdc{134TjnZ8xiu4wxfyy4xQQtiMiKhhe6AVur} ◊tdc{KwPqA3XUaWCX2dhRRm4WXArm5DJKXko1ydgwwApJ3BC3dgnQ3Ydg}}
+    ◊tr{◊tdc{12XiJHvYT6TyaWcUhzdcBgqFZc3bNWpYdd} ◊tdc{L2WakaNFfBehyL17c13iQwJKR8H1hQtsVvR5jsdugFfj9si8DZm2}}
+    ◊tr{◊tdc{12MuxMtJb9jbrzMQrr7zDiLYcn6xwaXMkq} ◊tdc{L2ScmsyKJYzW2koEPjHmLKzjFMYNfR8UZMifP2yvggrRrJEBU4UJ}}
+    ◊tr{◊tdc{1MqBeJiVW6FqxKbrMq8mVUcukjXWMzuYew} ◊tdc{KypFcqzaJRHPwxQfGDiYyJMtAdyKNSQuR78yZPTU57baS42dp4tr}}
+}
+◊(define (ths txt)
+   `(td ((class "ths")) ,txt))
+◊(define (tdc txt)
+   `(td ((class "tdc")) ,(icode txt)))
+
+◊todo{Write on the importance of protecting the seed}
 
 ◊(define sha-2 "https://en.wikipedia.org/wiki/SHA-2")
 ◊(define sha-1 "https://en.wikipedia.org/wiki/SHA-1")
 ◊(define timestamping-service "/timestamping_service.html")
 ◊(define bitcoin-hashrate "https://bitinfocharts.com/comparison/bitcoin-hashrate.html")
 ◊(define public-key-cryptography "https://en.wikipedia.org/wiki/Public-key_cryptography")
+◊(define bip-39 "https://github.com/bitcoin/bips/blob/master/bip-0039/bip-0039-wordlists.md")
+◊(define pseudo-random-generators "/provably_fair_gambling.html#seeds-and-pseudo-random-generators")
+◊(define gambling "/provably_fair_gambling.html")
 
