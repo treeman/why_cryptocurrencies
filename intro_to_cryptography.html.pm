@@ -1,11 +1,11 @@
 #lang pollen
 
 ◊(define-meta title "An introduction to cryptography")
-◊(define-meta subtitle "A reference for cryptographic references in the book")
+◊(define-meta subtitle "An explanation of cryptographic terms in the book")
 ◊(define-meta updated "2019-09-16T07:28:35+02:00")
 ◊(define-meta uuid "6a8759d6-2e0c-4224-b0b8-61009c5484d0")
 
-This chapter serves as a reference for cryptographic terms and constructs mentioned in the book. Again, this isn't a technical deep-dive, but to give a basic understanding of what they are. If this interests you I encourage you to research more on your own.
+This chapter serves as a reference for cryptographic terms and constructs mentioned in the book. This aims to give you a basic understanding of what they are, and how they might be used in a cryptocurrency context, but it doesn't explain the details of how they work. If this interests you I encourage you to research more on your own.
 
 
 ◊subhead{Hashes}
@@ -16,7 +16,12 @@ Hashes, or to be more precise ◊def[#:src cryptographic-hash-functions]{cryptog
     The difference between a cryptographic hash function and a normal hash function is that a cryptographic hash function is created to make finding the reverse of it is difficult, and it should be infeasible to find two values with the same hash.
 }
 
-Hashes are ◊def{one-way functions}. As the name implies we can give data to a function to get a result, but we cannot go the other way to get back the original data if we only have the hashed result. For example using the popular ◊link[sha-2]{SHA-256 hash function}:
+Hashes are ◊def{one-way functions}. As the name implies we can give data to a function to get a result, but we cannot go the other way to get back the original data if we only have the hashed result.
+
+◊todo{Img of breaking an egg, and how we cannot go back}
+
+
+For example using the popular ◊link[sha-2]{SHA-256 hash function}:
 
 ◊code{hello → 5891b5b522d5df086d0ff0b110fbd9d21bb4fc7163af34d08286a2e846f6be03}
 
@@ -147,7 +152,11 @@ Which if you can ◊strong{verify} you know that I control the private key to th
 This also happens in the background when you authorize a transaction; you sign it with your private key and your signature is validated before the transaction is accepted. If the signature doesn't validate then the transaction is invalid and gets discarded.◊sn{how-difficult?}
 
 ◊ndef["how-difficult?"]{
+    How hard is it to fake a signature? Very hard, as there's no known attack that can do it. The biggest threat is quantum computers, who ◊em{if} they live up to the hype could break public-key cryptography.
 
+    Quantum computers wouldn't actually be able to steal all Bitcoins directly, since it can only discover the private key if there's a signature. And if you have coins in your address, but you've never sent any coins from it before, no signature exists.
+
+    If quantum computers can break public-key cryptography we as a society would have much bigger problems than the security of Bitcoin, as it would break the security of the internet itself. (There is quantum secure cryptography we could potentially move to, so everything isn't lost yet.)
 }
 
 
@@ -178,9 +187,9 @@ Which only I can ◊strong{decrypt} to the original message. (Since I've given o
 
 ◊subhead{Seeds}
 
-Because private keys aren't very user-friendly Bitcoin wallets use seeds. The seed is made up of ◊link[bip-39]{a set of 2048 preselected words} and the order matters. Sometimes the seed can be 24 words instead of 12, but 12 is enough.
+Because private keys aren't very user-friendly Bitcoin wallets use seeds. The seed is made up of ◊link[bip-39]{a set of 2048 preselected words} and the order matters. Sometimes the seed can be 24 words instead of 12, but 12 is enough.◊sn{variations}
 
-This is for example a 12-word seed:◊sn{variations}
+This is for example a 12-word seed:
 
 ◊ndef["variations"]{
     Variations among cryptocurrencies exist. A Monero seed is for example 25 words long.
@@ -216,7 +225,18 @@ Here are for example the first 10 addresses and their private keys of our seed:
 ◊(define (tdc txt)
    `(td ((class "tdc")) ,(icode txt)))
 
-◊todo{Write on the importance of protecting the seed}
+I reiterate the importance of backing up and protecting your seed. Here are just some ways you could lose your money:
+
+◊ol{
+    ◊li{You have a wallet on your phone but you lose it or it breaks down.}
+    ◊li{You've written down your seed on paper, but it burns up.}
+    ◊li{You forgot where you wrote down your seed.}
+    ◊li{Someone finds your seed, and steals your money.}
+}
+
+Therefore it's of utmost importance for you to backup and protect your seed. Ideally you should have multiple encrypted copies in different locations, protected from fire and theft.
+
+Does this sound too difficult? It's true, there are many pitfalls and it's easy to do a bad job. But in practice, for reasonably small amounts, it's enough just to write down your seed somewhere.
 
 ◊(define sha-2 "https://en.wikipedia.org/wiki/SHA-2")
 ◊(define sha-1 "https://en.wikipedia.org/wiki/SHA-1")
