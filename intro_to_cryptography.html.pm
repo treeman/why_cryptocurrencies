@@ -1,33 +1,59 @@
 #lang pollen
 
-◊(define-meta title "An introduction to cryptography")
-◊(define-meta subtitle "An explanation of cryptographic terms in the book")
+◊(define-meta title "The hitchhiker's guide to cryptography")
+◊(define-meta subtitle "An introduction to cryptography")
 ◊(define-meta updated "2019-09-16T07:28:35+02:00")
 ◊(define-meta uuid "6a8759d6-2e0c-4224-b0b8-61009c5484d0")
 
-This chapter serves as a reference for cryptographic terms and constructs mentioned in the book. This aims to give you a basic understanding of what they are, and how they might be used in a cryptocurrency context, but it doesn't explain the details of how they work. If this interests you I encourage you to research more on your own.
+This chapter serves as an introduction to the cryptographic terms and constructs mentioned in the book. The aim is to give you an idea of what they are and how they might be used in a cryptocurrency context. I won't go into low-level details of how they work, so you don't need to know any mathematics or programming to follow along. If this interests you, I hope this introduction will be helpful as a starting point when researching the topics on your own.
 
 
-◊subhead{Hashes}
+◊subhead{Hash functions}
 
-Hashes, or to be more precise ◊def[#:src cryptographic-hash-functions]{cryptographic hash functions}, are commonly used in the cryptocurrency space.◊mn{cryptographic?} They're commonly used as the basis of proof-of-work, to verify the integrity of downloaded files and we used them when we created ◊link[timestamping-service]{a timestamped message}.
+Hash functions, or to be more precise ◊def[#:src cryptographic-hash-functions]{cryptographic hash functions}, are commonly used in the cryptocurrency space.◊mn{cryptographic?} They're used as the basis of proof-of-work, to verify the integrity of downloaded files and we used them when we created ◊link[timestamping-service]{a timestamped message}.
 
 ◊ndef["cryptographic?"]{
-    The difference between a cryptographic hash function and a normal hash function is that a cryptographic hash function is created to make finding the reverse of it is difficult, and it should be infeasible to find two values with the same hash.
+    The difference between a cryptographic hash function and a normal hash function is that a cryptographic hash function is created to make finding the reverse of it difficult, and it should be infeasible to find two values with the same hash.
 }
 
 Hashes are ◊def{one-way functions}. As the name implies we can give data to a function to get a result, but we cannot go the other way to get back the original data if we only have the hashed result.
 
-◊todo{Img of breaking an egg, and how we cannot go back}
+It's similar to how we can break an egg, but there's no easy way to "unbreak" it.
 
+◊img[#:src "/images/break_egg.png"]{
+    It's easy to break an egg.
+}
 
-For example using the popular ◊link[sha-2]{SHA-256 hash function}:
+◊img[#:src "/images/merge_egg.png"]{
+    But it's very hard to piece it together again.
+}
 
-◊code{hello → 5891b5b522d5df086d0ff0b110fbd9d21bb4fc7163af34d08286a2e846f6be03}
+In the digital world we can use the popular ◊link[sha-2]{SHA-256 hash function} as an example:
+
+◊code{hello => 5891b5b522d5df086d0ff0b110fbd9d21bb4fc7163af34d08286a2e846f6be03}
 
 But there's no function to unwrap the hash directly:
 
+◊(define arrow `#x1F846)
+◊(define not-arrow `(@ #x1F846 #x0338))
+
+◊(define arrow2 '#x0338)
+◊(define arrow3 '#x1F846)
+
+◊(define arrow4 '#x1F80A)
+
 ◊code{084c799cd551dd1d8d5c5f9a5d593b2e931f5e36122ee5c793c1d08a19839cc0 ↛ ???}
+
+◊code{084c799cd551dd1d8d5c5f9a5d593b2e931f5e36122ee5c793c1d08a19839cc0 ⇏ ???}
+
+◊code{084c799cd551dd1d8d5c5f9a5d593b2e931f5e36122ee5c793c1d08a19839cc0 ◊|arrow4|◊|arrow2| ???}
+
+◊code{084c799cd551dd1d8d5c5f9a5d593b2e931f5e36122ee5c793c1d08a19839cc0 🙺 ???}
+
+◊|arrow3|◊|arrow2|
+
+◊|arrow|
+
 
 To find out what's hidden behind the hash we have to try all possibilities:
 
@@ -40,7 +66,7 @@ To find out what's hidden behind the hash we have to try all possibilities:
 
 Found it! The answer is "42". But we were lucky that we only had to test 42 possibilities, we could have continued a ◊strong{very} long time depending on the input.
 
-Don't believe me? Then try to guess what message this SHA-256 output comes from, and I can even give you a hint that it's only spaces and upper or lower case letters:◊sn{variation}
+Don't believe me? Then try to guess what message this SHA-256 output comes from, and I can even give you a hint that it's only spaces, upper- and lower case letters:◊sn{variation}
 
 ◊ndef["variation"]{
     For security it's important that the data you want to protect is sufficiently large and has enough variation to make it difficult to guess what it is.
@@ -50,24 +76,28 @@ Don't believe me? Then try to guess what message this SHA-256 output comes from,
 
 ◊code{b409d7f485033ac9f52a61750fb0c54331bfdd966338015db25efae50984f88f}
 
-When you give up ◊toggle[iron-man]{click here for the answer.}
+To get a sense for how hard it can be to figure out the matching data for a hash, let's look at the mining in Bitcoin. Because that's really what miners do---they calculate SHA-256 hashes with different kinds of input again and again until they find a match. And they don't require an exact match either, they only want to find a hash with a certain number of leading zeroes.
 
-To get a sense for how hard it can be to figure out the matching data for a hash, let's look at the mining in Bitcoin. Because that's really what miners do---they calculate hashes with different kinds of input again and again until they find a match. And they don't require an exact match either, they only want to find a hash with a certain number of leading zeroes.
+The current ◊link[bitcoin-hashrate]{hashrate for Bitcoin} is around 113 exahashes per second (2020-02-18). That's a staggering 113 x 10◊sup{18}, or 133 000 000 000 000 000 000, hashes per second, yet they're still only expected to find a single solution every 10 minutes.
 
-The current ◊link[bitcoin-hashrate]{hashrate for Bitcoin} is around 113 exahashes per second (2020-02-18). That's a staggering 113 x 10◊sup{18}, or 133 000 000 000 000 000 000, hashes per second, yet they're still only expected to find a single solution every 10 minutes. So we can conclude that it's so difficult that we can consider it impossible to reverse a hash.◊sn{secure}
+Even all of Bitcoin's hashrate, working for millions of years, are not expected to find a reverse of a single hash. Even though there's theoretically an infinite number of inputs that produce the same hash, it's computationally infeasible to ever find one, therefore we can consider it practically impossible to reverse a hash.◊sn{secure}
 
 ◊ndef["secure"]{
-    It's important to choose a secure hash. The ◊link[sha-1]{SHA-1 hash function} is for example not secure anymore, as weaknesses have been found that can be used to generate collisions.
+    We can say it's impossible to reverse a hash if we have to brute force the solution like this, but there could be weaknesses in the hash function that could allow us to find it much earlier. The ◊link[sha-1]{SHA-1 hash function} is for example not secure anymore, as weaknesses have been found that can be used to generate collisions.
 }
+
+If you want to give up and see what I encoded in the hash, ◊toggle[iron-man]{click here.}
 
 ◊(define iron-man "Iron Man is my favorite superhero")
 
 
 ◊subhead{Public-key cryptography}
 
-If you jump into the mathematical definitions of ◊def[#:src public-key-cryptography]{public-key cryptography} it might look very complicated. While some details are complicated, the cryptography is conceptually simple. It's a digital version of a locked mailbox.
+If you jump into the mathematical definitions of ◊def[#:src public-key-cryptography]{public-key cryptography} it might look very complicated. While some details are complicated, the cryptography is conceptually simple; it's a digital version of a locked mailbox.
 
-◊todo{Image of a locked mailbox}
+◊img[#:src "/images/mailbox.png"]{
+    A locked mailbox.
+}
 
 It's called public-key cryptography because you have two keys: the ◊def{public key}, which is the mailbox, and the ◊def{private key}, which is the key to the mailbox.  Anyone can give you mail---just slide it into the mailbox at the top---but you're the only one who can read them, because you're the only one with a key.
 
@@ -77,9 +107,13 @@ You ◊em{encrypt} a message by placing it in the mailbox, this way nobody but t
     This is where our mailbox metaphor breaks down a bit. It may seem that it's more inconvenient to sign a message than to encrypt one, but digitally they're both straightforward.
 }
 
-◊todo{Encrypt a message as it goes into the mailbox}
+◊img[#:src "/images/encrypted_mailbox.png"]{
+    Placing a message inside the mailbox ensures that only the one with the key can read it.
+}
 
-◊todo{Signing a message from a mailbox}
+◊img[#:src "/images/mailbox_signed.png"]{
+    The mailbox contains the label "Jonas", which you have to open the mailbox to change. By putting my name on the mailbox I prove that I own it.
+}
 
 Large parts of the internet depends on public-key cryptography. For example when you connect to your bank over the internet, this scheme helps secure it.
 
@@ -203,7 +237,11 @@ Which corresponds to the private key:
 
 Much more user friendly right? You could even memorize the seed, while it's much more difficult to memorize the private key directly.
 
-In addition to being easy to use, seeds act as a starting point in deterministic wallets to generate multiple private and public key pairs. (See the discussion about ◊link[pseudo-random-generators]{pseudo-random generators} in the chapter about ◊link[gambling]{provably fair gambling} for some theory of how this can be accomplished.)
+In addition to being easy to use, seeds act as a starting point in deterministic wallets to generate multiple private and public key pairs.◊sn{pseudo-random}
+
+◊ndef["pseudo-random"]{
+    See the discussion about ◊link[pseudo-random-generators]{pseudo-random generators} in the chapter about ◊link[gambling]{provably fair gambling} for some theory of how it might be possible to generate a set of random-looking outputs from a seed.
+}
 
 Here are for example the first 10 addresses and their private keys of our seed:
 
