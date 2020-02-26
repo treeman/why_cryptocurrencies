@@ -54,7 +54,7 @@ To be able to create a transaction you need to have the ◊em{private keys} to t
     You typically don't use the private key directly. Instead you can interact with a ◊em{seed}, which encodes the private key hash into a human-readable format. It's commonly made of 12 or 24 words.
 }
 
-It uses ◊link[public-key-cryptography]{◊em{public-key cryptography}} which allows you to prove you control the private key without sharing the private key itself. Compare it to credit card numbers which act as both a private and public key.  See the ◊link[intro-crypto]{introduction to cryptography chapter} in the appendix for more details, but it's not required to understand how cryptocurrencies work on a higher level.◊sn{pubkey}
+It uses ◊link[public-key-cryptography]{◊em{public-key cryptography}} which allows you to prove you control the private key without sharing the private key itself. Compare it to credit card numbers which act as both a private and public key.  See ◊link[intro-crypto]{the hitchhiker's guide to cryptography} in the appendix for more details, but it's not required to understand how cryptocurrencies work on a higher level.◊sn{pubkey}
 
 ◊ndef["pubkey"]{
     If the history of cryptography interests you I can also recommend the book "The Code-Breakers" by David Kahn. You can enjoy it even without much math knowledge.
@@ -212,9 +212,9 @@ Important to note is that everyone doesn't have to be a miner. The blockchain is
 ◊note-pos[#:top -60]{asics}
 ◊note-pos[#:top -48]{useful-pow}
 
-◊(define intro-crypto "/intro_to_cryptography.html")
-◊(define public-key-cryptography "/intro_to_cryptography.html#public-key-cryptography")
-◊(define hashes "/intro_to_cryptography.html#hashes")
+◊(define intro-crypto "/cryptography.html")
+◊(define public-key-cryptography "/cryptography.html#public-key-cryptography")
+◊(define hashes "/cryptography.html#hash-functions")
 
 ◊ndef["asics"]{
     In Bitcoin specialized hardware, ◊link[ASICs]{ASICs}, are used which are many magnitudes faster than regular computers at solving POW problems.

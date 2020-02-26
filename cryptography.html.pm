@@ -1,7 +1,7 @@
 #lang pollen
 
 ◊(define-meta title "The hitchhiker's guide to cryptography")
-◊(define-meta subtitle "An introduction to cryptography")
+◊(define-meta subtitle "A short introduction to cryptography")
 ◊(define-meta updated "2019-09-16T07:28:35+02:00")
 ◊(define-meta uuid "6a8759d6-2e0c-4224-b0b8-61009c5484d0")
 
@@ -13,7 +13,7 @@ This chapter serves as an introduction to the cryptographic terms and constructs
 Hash functions, or to be more precise ◊def[#:src cryptographic-hash-functions]{cryptographic hash functions}, are commonly used in the cryptocurrency space.◊mn{cryptographic?} They're used as the basis of proof-of-work, to verify the integrity of downloaded files and we used them when we created ◊link[timestamping-service]{a timestamped message}.
 
 ◊ndef["cryptographic?"]{
-    The difference between a cryptographic hash function and a normal hash function is that a cryptographic hash function is created to make finding the reverse of it difficult, and it should be infeasible to find two values with the same hash.
+    The difference between a cryptographic hash function and a normal hash function is that a cryptographic hash function is created to make finding the reverse of it difficult, and it should be infeasible to find two values with the same hash (called a ◊def{collision}).
 }
 
 Hashes are ◊def{one-way functions}. As the name implies we can give data to a function to get a result, but we cannot go the other way to get back the original data if we only have the hashed result.
@@ -30,30 +30,11 @@ It's similar to how we can break an egg, but there's no easy way to "unbreak" it
 
 In the digital world we can use the popular ◊link[sha-2]{SHA-256 hash function} as an example:
 
-◊code{hello => 5891b5b522d5df086d0ff0b110fbd9d21bb4fc7163af34d08286a2e846f6be03}
+◊code{hello → 5891b5b522d5df086d0ff0b110fbd9d21bb4fc7163af34d08286a2e846f6be03}
 
 But there's no function to unwrap the hash directly:
 
-◊(define arrow `#x1F846)
-◊(define not-arrow `(@ #x1F846 #x0338))
-
-◊(define arrow2 '#x0338)
-◊(define arrow3 '#x1F846)
-
-◊(define arrow4 '#x1F80A)
-
-◊code{084c799cd551dd1d8d5c5f9a5d593b2e931f5e36122ee5c793c1d08a19839cc0 ↛ ???}
-
-◊code{084c799cd551dd1d8d5c5f9a5d593b2e931f5e36122ee5c793c1d08a19839cc0 ⇏ ???}
-
-◊code{084c799cd551dd1d8d5c5f9a5d593b2e931f5e36122ee5c793c1d08a19839cc0 ◊|arrow4|◊|arrow2| ???}
-
-◊code{084c799cd551dd1d8d5c5f9a5d593b2e931f5e36122ee5c793c1d08a19839cc0 🙺 ???}
-
-◊|arrow3|◊|arrow2|
-
-◊|arrow|
-
+◊code{084c799cd551dd1d8d5c5f9a5d593b2e931f5e36122ee5c793c1d08a19839cc0 → ???}
 
 To find out what's hidden behind the hash we have to try all possibilities:
 
@@ -64,7 +45,11 @@ To find out what's hidden behind the hash we have to try all possibilities:
     42 → 084c799cd551dd1d8d5c5f9a5d593b2e931f5e36122ee5c793c1d08a19839cc0
 }
 
-Found it! The answer is "42". But we were lucky that we only had to test 42 possibilities, we could have continued a ◊strong{very} long time depending on the input.
+Found it! The answer is "42". But we were lucky that we only had to test 42 possibilities, we could have continued a ◊strong{very} long time depending on the input.◊sn{multiple}
+
+◊ndef["multiple"]{
+    I've simplified the explanation here a little. There's not a one-to-one correspondence between an input and a hash, as several inputs can result in the same hash.
+}
 
 Don't believe me? Then try to guess what message this SHA-256 output comes from, and I can even give you a hint that it's only spaces, upper- and lower case letters:◊sn{variation}
 
@@ -80,7 +65,7 @@ To get a sense for how hard it can be to figure out the matching data for a hash
 
 The current ◊link[bitcoin-hashrate]{hashrate for Bitcoin} is around 113 exahashes per second (2020-02-18). That's a staggering 113 x 10◊sup{18}, or 133 000 000 000 000 000 000, hashes per second, yet they're still only expected to find a single solution every 10 minutes.
 
-Even all of Bitcoin's hashrate, working for millions of years, are not expected to find a reverse of a single hash. Even though there's theoretically an infinite number of inputs that produce the same hash, it's computationally infeasible to ever find one, therefore we can consider it practically impossible to reverse a hash.◊sn{secure}
+Even all of Bitcoin's hashrate, working for millions of years, are not expected to find the reverse of a single hash. Even though there's theoretically an infinite number of inputs that produce the same hash, it's computationally infeasible to ever find one, therefore we can consider it practically impossible to reverse a hash.◊sn{secure}
 
 ◊ndef["secure"]{
     We can say it's impossible to reverse a hash if we have to brute force the solution like this, but there could be weaknesses in the hash function that could allow us to find it much earlier. The ◊link[sha-1]{SHA-1 hash function} is for example not secure anymore, as weaknesses have been found that can be used to generate collisions.
