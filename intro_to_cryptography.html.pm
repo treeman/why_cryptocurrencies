@@ -34,13 +34,23 @@ In the digital world we can use the popular ◊link[sha-2]{SHA-256 hash function
 
 But there's no function to unwrap the hash directly:
 
+◊(define arrow `#x1F846)
+◊(define not-arrow `(@ #x1F846 #x0338))
+
+◊(define arrow2 '#x0338)
+◊(define arrow3 '#x1F846)
+
+◊(define arrow4 '#x1F80A)
+
 ◊code{084c799cd551dd1d8d5c5f9a5d593b2e931f5e36122ee5c793c1d08a19839cc0 ↛ ???}
 
 ◊code{084c799cd551dd1d8d5c5f9a5d593b2e931f5e36122ee5c793c1d08a19839cc0 ⇏ ???}
 
-◊code{084c799cd551dd1d8d5c5f9a5d593b2e931f5e36122ee5c793c1d08a19839cc0 🡆 ???}
+◊code{084c799cd551dd1d8d5c5f9a5d593b2e931f5e36122ee5c793c1d08a19839cc0 ◊|arrow4|◊|arrow2| ???}
 
-◊(define arrow "#\x32")
+◊code{084c799cd551dd1d8d5c5f9a5d593b2e931f5e36122ee5c793c1d08a19839cc0 🙺 ???}
+
+◊|arrow3|◊|arrow2|
 
 ◊|arrow|
 
