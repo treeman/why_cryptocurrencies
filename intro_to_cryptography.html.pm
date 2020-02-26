@@ -1,24 +1,24 @@
 #lang pollen
 
-◊(define-meta title "Cryptographic reference")
-◊(define-meta subtitle "An explanation of cryptographic terms in the book")
+◊(define-meta title "The hitchhiker's guide to cryptography")
+◊(define-meta subtitle "An introduction to cryptography")
 ◊(define-meta updated "2019-09-16T07:28:35+02:00")
 ◊(define-meta uuid "6a8759d6-2e0c-4224-b0b8-61009c5484d0")
 
-This chapter serves as a reference for cryptographic terms and constructs mentioned in the book. This aims to give you a basic understanding of what they are, and how they might be used in a cryptocurrency context, but it doesn't explain the details of how they work. If this interests you I encourage you to research more on your own.
+This chapter serves as an introduction to the cryptographic terms and constructs mentioned in the book. The aim is to give you an idea of what they are and how they might be used in a cryptocurrency context. I won't go into low-level details of how they work, so you don't need to know any mathematics or programming to follow along. If this interests you, I hope this introduction will be helpful as a starting point when researching the topics on your own.
 
 
-◊subhead{Hashes}
+◊subhead{Hash functions}
 
-Hashes, or to be more precise ◊def[#:src cryptographic-hash-functions]{cryptographic hash functions}, are commonly used in the cryptocurrency space.◊mn{cryptographic?} They're used as the basis of proof-of-work, to verify the integrity of downloaded files and we used them when we created ◊link[timestamping-service]{a timestamped message}.
+Hash functions, or to be more precise ◊def[#:src cryptographic-hash-functions]{cryptographic hash functions}, are commonly used in the cryptocurrency space.◊mn{cryptographic?} They're used as the basis of proof-of-work, to verify the integrity of downloaded files and we used them when we created ◊link[timestamping-service]{a timestamped message}.
 
 ◊ndef["cryptographic?"]{
-    The difference between a cryptographic hash function and a normal hash function is that a cryptographic hash function is created to make finding the reverse of it is difficult, and it should be infeasible to find two values with the same hash.
+    The difference between a cryptographic hash function and a normal hash function is that a cryptographic hash function is created to make finding the reverse of it difficult, and it should be infeasible to find two values with the same hash.
 }
 
 Hashes are ◊def{one-way functions}. As the name implies we can give data to a function to get a result, but we cannot go the other way to get back the original data if we only have the hashed result.
 
-It's similar to how we can break an egg, but there's no way to "unbreak" it.
+It's similar to how we can break an egg, but there's no easy way to "unbreak" it.
 
 ◊img[#:src "/images/break_egg.png"]{
     It's easy to break an egg.
@@ -30,11 +30,20 @@ It's similar to how we can break an egg, but there's no way to "unbreak" it.
 
 In the digital world we can use the popular ◊link[sha-2]{SHA-256 hash function} as an example:
 
-◊code{hello → 5891b5b522d5df086d0ff0b110fbd9d21bb4fc7163af34d08286a2e846f6be03}
+◊code{hello => 5891b5b522d5df086d0ff0b110fbd9d21bb4fc7163af34d08286a2e846f6be03}
 
 But there's no function to unwrap the hash directly:
 
 ◊code{084c799cd551dd1d8d5c5f9a5d593b2e931f5e36122ee5c793c1d08a19839cc0 ↛ ???}
+
+◊code{084c799cd551dd1d8d5c5f9a5d593b2e931f5e36122ee5c793c1d08a19839cc0 ⇏ ???}
+
+◊code{084c799cd551dd1d8d5c5f9a5d593b2e931f5e36122ee5c793c1d08a19839cc0 🡆 ???}
+
+◊(define arrow "#\x32")
+
+◊|arrow|
+
 
 To find out what's hidden behind the hash we have to try all possibilities:
 
@@ -47,7 +56,7 @@ To find out what's hidden behind the hash we have to try all possibilities:
 
 Found it! The answer is "42". But we were lucky that we only had to test 42 possibilities, we could have continued a ◊strong{very} long time depending on the input.
 
-Don't believe me? Then try to guess what message this SHA-256 output comes from, and I can even give you a hint that it's only spaces and upper or lower case letters:◊sn{variation}
+Don't believe me? Then try to guess what message this SHA-256 output comes from, and I can even give you a hint that it's only spaces, upper- and lower case letters:◊sn{variation}
 
 ◊ndef["variation"]{
     For security it's important that the data you want to protect is sufficiently large and has enough variation to make it difficult to guess what it is.
