@@ -149,7 +149,7 @@ Which if you can ◊strong{verify} you know that I control the private key to th
     Payment systems are usually smarter, so this is normally not needed.
 }
 
-This also happens in the background when you authorize a transaction; you sign it with your private key and your signature is validated before the transaction is accepted. If the signature doesn't validate then the transaction is invalid and gets discarded.◊sn{how-difficult?}
+This is also what happens in the background when you authorize a transaction; you sign it with your private key and your signature is verified before the transaction is accepted. If the signature doesn't verify then the transaction is invalid and gets discarded, ensuring that coins can only be spent by the owner of the address.◊sn{how-difficult?}
 
 ◊ndef["how-difficult?"]{
     How hard is it to fake a signature? Very hard, as there's no known attack that can do it. The biggest threat is quantum computers, who ◊em{if} they live up to the hype could break public-key cryptography.
@@ -160,7 +160,7 @@ This also happens in the background when you authorize a transaction; you sign i
 }
 
 
-◊strong{Encrypting} messages using your Bitcoin keys aren't used that much to my knowledge, they typically use protocols such as ◊link[pgp]{PGP}, but it's possible. I'll include a short example of it for completeness sake.
+◊strong{Encrypting} messages using your Bitcoin keys aren't used that much to my knowledge---they typically use protocols such as ◊link[pgp]{PGP}---but it's possible. I'll include a short example for completeness sake.
 
 For example if you want to send me the message:
 
