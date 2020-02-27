@@ -84,9 +84,9 @@ If you jump into the mathematical definitions of ◊def[#:src public-key-cryptog
     A locked mailbox.
 }
 
-It's called public-key cryptography because you have two keys: the ◊def{public key}, which is the mailbox, and the ◊def{private key}, which is the key to the mailbox.  Anyone can give you mail---just slide it into the mailbox at the top---but you're the only one who can read them, because you're the only one with a key.
+Cryptographic schemes commonly use a single large number as their secret key, but public-key cryptography uses two keys: the ◊def{public key}, which is like the mailbox, and the ◊def{private key}, which is like the key to the mailbox. Anyone can give you mail---just slide it into the mailbox at the top---but you're the only one who can read them, because you're the only with the key to the mailbox.
 
-You ◊em{encrypt} a message by placing it in the mailbox, this way nobody but the owner of the mailbox can read it. The owner of the mailbox can also prove they own the mailbox by placing their name on it, an action that requires you to open the mailbox with the key. In digital terms this is how you ◊em{sign} a message.◊sn{mailbox-breakdown}
+You ◊em{encrypt} a message by placing it in the mailbox, this way nobody but the owner of the mailbox can ◊em{decrypt} and read it. The owner of the mailbox can also prove they own the mailbox by placing their name on it, an action that requires you to open the mailbox with the key. In digital terms this is how you ◊em{sign} a message.◊sn{mailbox-breakdown}
 
 ◊ndef["mailbox-breakdown"]{
     This is where our mailbox metaphor breaks down a bit. It may seem that it's more inconvenient to sign a message than to encrypt one, but digitally they're both straightforward.
@@ -100,20 +100,31 @@ You ◊em{encrypt} a message by placing it in the mailbox, this way nobody but t
     The mailbox contains the label "Jonas", which you have to open the mailbox to change. By putting my name on the mailbox I prove that I own it.
 }
 
-Large parts of the internet depends on public-key cryptography. For example when you connect to your bank over the internet, this scheme helps secure it.
+Large parts of the internet depends on public-key cryptography. For example when you connect to your bank over the internet, this scheme helps ensure that nobody can see how much money you have, who you pay and that you're the only one that can transfer your money.
 
 ◊img[#:src "/images/https.png"]{
     The lock icon or the "https" label means you're using public-key cryptography (among other things) to secure your connection to the website.
 }
 
-I won't go into details on how the mathematics behind this scheme work, as I'm not able to without making the explanation needlessly complicated, but if this interests you I encourage you to look it up---I personally find it fascinating. We will look at public-key cryptography in practice when we look at how Bitcoin addresses work.
+I won't go into details on how the mathematics behind this scheme work, as I'm not able to without making the explanation needlessly complicated, but if this interests you I encourage you to look it up---I personally find it fascinating.◊sn{further-public-key}
 
-◊;If you're intrigued by the promise of public-key cryptography I encourage you to look it up, it's quite fascinating.
+◊ndef["further-public-key"]{
+    ◊link[rsa]{RSA} is one of the first public-key cryptography schemes and it was also the first one I studied. It's fairly simple, so I think it's a good starting point to understand public-key cryptography.
+
+    Bitcoin uses another, arguably more secure, scheme called ◊link[ecdsa]{ECDSA}, which uses ◊link[elliptic-curve]{elliptic-curve cryptography}.
+}
+
+◊(define rsa "https://en.wikipedia.org/wiki/RSA_(cryptosystem)")
+◊(define elliptic-curve "https://en.wikipedia.org/wiki/Elliptic-curve_cryptography")
+◊(define ecdsa "https://en.wikipedia.org/wiki/Elliptic_Curve_Digital_Signature_Algorithm")
+
+
+We will look at public-key cryptography in practice when we look at how Bitcoin addresses work.
 
 
 ◊subhead{Bitcoin addresses}
 
-The addresses in Bitcoin (and other cryptocurrencies) are directly using public-key cryptography. The address is a public key that everyone can send coins to, but to send coins from an address you need the private key.
+The addresses in Bitcoin (and other cryptocurrencies) use public-key cryptography to protect your funds. The address is a public key that everyone can send coins to, but to send coins from an address you need the private key.
 
 This is for example a standard ◊strong{Bitcoin address}:
 
@@ -123,8 +134,7 @@ Which corresponds to the ◊strong{public key}:
 
 ◊code{049f6aad24669d180cfe4c974a677407cbf26f03242a09126ebf88621d31f01a218d40fcbcb769b44b014d502a1c9ce8c2ca629bc339fe14b4db56e27e80ac30a7}
 
-The address could be displayed in various different ways, Bitcoin just happened to do it this way.◊sn{bch-address}
-
+The address could be displayed in various different ways, Bitcoin just happened to do it this way. Using an address is more convenient as it's shorter and includes error checking codes.◊sn{bch-address}
 
 ◊ndef["bch-address"]{
     Bitcoin Cash is a fork of Bitcoin and they have an additional address format. The same Bitcoin address, with the same public key, could also be displayed as this Bitoin Cash address:
@@ -136,7 +146,7 @@ The ◊strong{private key} to this address looks like this:
 
 ◊code{5298e83a0c0884cdcf34294f663220bc73e3c6689e95b53158a9a89e95fd78bb}
 
-Again, the actual private key is the binary data and it could be displayed in various ways. Here's the same key in the ◊link[wif]{Wallet Import Format}, which is shorter and includes error checking codes:
+The private key is just a large number and can be be displayed in different ways. Here's the same key in the ◊link[wif]{Wallet Import Format}, which is shorter and includes error checking codes:
 
 ◊(define wif "https://en.bitcoin.it/wiki/Wallet_import_format")
 
@@ -162,7 +172,7 @@ I'll get this signature:
 
 ◊code{HCZl2+vEZboqXgaVYi1nLNgwoa/INLiEsA2yXe+87j5iFoo/G96m4AoA5dL5T+rTiFKpXHuS5w3rP1IWSPZZv0Q=}
 
-Which if you can ◊strong{verify} you know that I control the private key to the address, even if I never showed it to you. This can be useful if we've sent money to someone and we want to prove who did it.◊sn{payments}
+Which lets you ◊strong{verify} that I know the private key to the address, even if I never showed it to you.  This can be useful if we've sent money to someone and we want to prove who did it.◊sn{payments}
 
 ◊ndef["payments"]{
     Payment systems are usually smarter, so this is normally not needed.
@@ -171,15 +181,14 @@ Which if you can ◊strong{verify} you know that I control the private key to th
 This is also what happens in the background when you authorize a transaction; you sign it with your private key and your signature is verified before the transaction is accepted. If the signature doesn't verify then the transaction is invalid and gets discarded, ensuring that coins can only be spent by the owner of the address.◊sn{how-difficult?}
 
 ◊ndef["how-difficult?"]{
-    How hard is it to fake a signature? Very hard, as there's no known attack that can do it. The biggest threat is quantum computers, who ◊em{if} they live up to the hype could break public-key cryptography.
+    How hard is it to fake a signature? Very hard, as there's no known attack that can do it. The biggest threat is quantum computers, which ◊em{if} they live up to the hype could break public-key cryptography.
 
-    Quantum computers wouldn't actually be able to steal all Bitcoins directly, since it can only discover the private key if there's a signature. And if you have coins in your address, but you've never sent any coins from it before, no signature exists.
+    Quantum computers wouldn't actually be able to steal all Bitcoins directly, since they can only discover the private key if there's a signature. And if you have coins in your address, but you've never sent any coins from it before, no signature exists.
 
     If quantum computers can break public-key cryptography we as a society would have much bigger problems than the security of Bitcoin, as it would break the security of the internet itself. (There is quantum secure cryptography we could potentially move to, so everything isn't lost yet.)
 }
 
-
-◊strong{Encrypting} messages using your Bitcoin keys aren't used that much to my knowledge---they typically use protocols such as ◊link[pgp]{PGP}---but it's possible. I'll include a short example for completeness sake.
+◊strong{Encrypting} messages using your bitcoin keys isn't that common to my knowledge---they typically use protocols such as ◊link[pgp]{PGP}---but it's possible. I'll include a short example for completeness sake.
 
 For example if you want to send me the message:
 
@@ -206,7 +215,7 @@ Which only I can ◊strong{decrypt} to the original message. (Since I've given o
 
 ◊subhead{Seeds}
 
-Because private keys aren't very user-friendly Bitcoin wallets use seeds. The seed is made up of ◊link[bip-39]{a set of 2048 preselected words} and the order matters. Sometimes the seed can be 24 words instead of 12, but 12 is enough.◊sn{variations}
+Because private keys aren't very user-friendly Bitcoin wallets use seeds. The seed is made up of a sequence of 12, or sometimes 24, words selected from a ◊link[bip-39]{pre-determined set of 2048 possible words}.◊sn{variations}
 
 This is for example a 12-word seed:
 
@@ -220,9 +229,11 @@ Which corresponds to the private key:
 
 ◊code{KyRoQMYWAtfj5cGLThb1fznm5Utjq7Etmn9DLtdxYCiE3Vntcz3E}
 
-Much more user friendly right? You could even memorize the seed, while it's much more difficult to memorize the private key directly.
+Much more user friendly right?  Even though memorizing the public key directly is very difficult, you can see that it would not be too difficult to memorize the seed!
 
-In addition to being easy to use, seeds act as a starting point in deterministic wallets to generate multiple private and public key pairs.◊sn{pseudo-random}
+In addition to being easy to use, seeds act as a starting point in deterministic wallets to generate multiple private and public key pairs (giving you multiple addresses).◊sn{pseudo-random}
+
+Giving out a new address each time you receive money is useful for privacy purposes, as it makes it harder to connect your transactions with your identity. This is why all modern wallets generates a new address each time you press receive.
 
 ◊ndef["pseudo-random"]{
     See the discussion about ◊link[pseudo-random-generators]{pseudo-random generators} in the chapter about ◊link[gambling]{provably fair gambling} for some theory of how it might be possible to generate a set of random-looking outputs from a seed.
