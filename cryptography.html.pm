@@ -75,6 +75,10 @@ If you want to give up and see what I encoded in the hash, ◊toggle[iron-man]{c
 
 ◊(define iron-man "Iron Man is my favorite superhero")
 
+◊note-pos[#:top -42]{multiple}
+◊note-pos[#:top -35]{variation}
+◊note-pos[#:top -5]{secure}
+
 
 ◊subhead{Public-key cryptography}
 
@@ -100,6 +104,8 @@ You ◊em{encrypt} a message by placing it in the mailbox, this way nobody but t
     The mailbox contains the label "Jonas", which you have to open the mailbox to change. By putting my name on the mailbox I prove that I own it.
 }
 
+◊note-pos[#:top -45]{mailbox-breakdown}
+
 Large parts of the internet depends on public-key cryptography. For example when you connect to your bank over the internet, this scheme helps ensure that nobody can see how much money you have, who you pay and that you're the only one that can transfer your money.
 
 ◊img[#:src "/images/https.png"]{
@@ -120,6 +126,8 @@ I won't go into details on how the mathematics behind this scheme work, as I'm n
 
 
 We will look at public-key cryptography in practice when we look at how Bitcoin addresses work.
+
+◊note-pos[#:top -7]{further-public-key}
 
 
 ◊subhead{Bitcoin addresses}
@@ -156,6 +164,8 @@ It's important to note that you should ◊em{never} reveal your private key like
 
 There are other types of addresses and other formats for the private and public keys, and other cryptocurrencies may handle them differently, but the concepts are the same.
 
+◊note-pos[#:top -38]{bch-address}
+
 The reason Bitcoin uses public-key cryptography for the addresses is because you can ◊strong{sign} messages with it. For example if I sign the message:◊sn{electron-cash}
 
 ◊ndef["electron-cash"]{
@@ -188,6 +198,10 @@ This is also what happens in the background when you authorize a transaction; yo
     If quantum computers can break public-key cryptography we as a society would have much bigger problems than the security of Bitcoin, as it would break the security of the internet itself. (There is quantum secure cryptography we could potentially move to, so everything isn't lost yet.)
 }
 
+◊note-pos[#:top -35]{electron-cash}
+◊note-pos[#:top -11]{payments}
+◊note-pos{how-difficult?}
+
 ◊strong{Encrypting} messages using your bitcoin keys isn't that common to my knowledge---they typically use protocols such as ◊link[pgp]{PGP}---but it's possible. I'll include a short example for completeness sake.
 
 For example if you want to send me the message:
@@ -203,6 +217,7 @@ And you'll get the encrypted message:
 ◊code{QklFMQJ+CTugTvsEmuB7owU3DvC5taXqC5DhsJ3Wq8EmUMHwgsE54GlY1PI9d1R/OoGfq1mG9dcThW5T9fpUtQTY+ogLLvKsrN6ngeulLMrfoyCxFtLTjH78PGSd8eROQ1yPq1k=}
 
 Which only I can ◊strong{decrypt} to the original message. (Since I've given out the private key, you can decrypt it as well.)
+
 
 ◊; Private key:  5298e83a0c0884cdcf34294f663220bc73e3c6689e95b53158a9a89e95fd78bb
 ◊; Public key:  049f6aad24669d180cfe4c974a677407cbf26f03242a09126ebf88621d31f01a218d40fcbcb769b44b014d502a1c9ce8c2ca629bc339fe14b4db56e27e80ac30a7
@@ -231,6 +246,8 @@ Which corresponds to the private key:
 
 Much more user friendly right?  Even though memorizing the public key directly is very difficult, you can see that it would not be too difficult to memorize the seed!
 
+◊note-pos[#:top -20]{variations}
+
 In addition to being easy to use, seeds act as a starting point in deterministic wallets to generate multiple private and public key pairs (giving you multiple addresses).◊sn{pseudo-random}
 
 Giving out a new address each time you receive money is useful for privacy purposes, as it makes it harder to connect your transactions with your identity. This is why all modern wallets generates a new address each time you press receive.
@@ -238,6 +255,8 @@ Giving out a new address each time you receive money is useful for privacy purpo
 ◊ndef["pseudo-random"]{
     See the discussion about ◊link[pseudo-random-generators]{pseudo-random generators} in the chapter about ◊link[gambling]{provably fair gambling} for some theory of how it might be possible to generate a set of random-looking outputs from a seed.
 }
+
+◊note-pos[#:top -9]{pseudo-random}
 
 Here are for example the first 10 addresses and their private keys of our seed:
 
