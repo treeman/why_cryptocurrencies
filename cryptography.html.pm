@@ -2,7 +2,8 @@
 
 ◊(define-meta title "The hitchhiker's guide to cryptography")
 ◊(define-meta subtitle "A short introduction to cryptography")
-◊(define-meta updated "2019-09-16T07:28:35+02:00")
+◊(define-meta published "2020-02-27T13:33:40+01:00")
+◊(define-meta updated "2020-02-27T13:33:40+01:00")
 ◊(define-meta uuid "6a8759d6-2e0c-4224-b0b8-61009c5484d0")
 
 This chapter serves as an introduction to the cryptographic terms and constructs mentioned in the book. The aim is to give you an idea of what they are and how they might be used in a cryptocurrency context. I won't go into low-level details of how they work, so you don't need to know any mathematics or programming to follow along. If this interests you, I hope this introduction will be helpful as a starting point when researching the topics on your own.◊sn{history}
