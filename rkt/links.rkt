@@ -42,3 +42,10 @@
 (define cryptographic-hash-functions "https://en.wikipedia.org/wiki/Cryptographic_hash_function")
 
 (define electroncash "https://electroncash.org/")
+
+(define hash-functions "/cryptography.html#hash-functions")
+(define bitcoin-addresses "/cryptography.html#bitcoin-addresses")
+(define public-key-cryptography "/cryptography.html#public-key-cryptography")
+
+(define privacy-challenge "/challenges.html#privacy-and-fungibility")
+

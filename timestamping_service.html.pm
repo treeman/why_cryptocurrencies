@@ -102,7 +102,7 @@ With cryptocurrencies it's possible to do away with the trusted party requiremen
 ◊ol{
   ◊li{Prepare data.
 
-      Because we might want to reveal our message at a later date we don't want to store the message in the clear. We can use an anagram like Robert Hook used, some kind of encryption with a key or a one-way hash function to obfuscate the message.
+      Because we might want to reveal our message at a later date we don't want to store the message in the clear. We can use an anagram like Robert Hook used, some kind of encryption with a key or a ◊link[hash-functions]{hash function} to obfuscate the message.
 
       After we have the obfuscated message we want to verify we can ◊link[embed-data-how]{embed it into a cryptocurrency}.
   }
@@ -199,7 +199,7 @@ Which has the SHA-256 hash:
 
 ◊code{5c45a1ba957362a2ba97c9f8c48d4d59d4fa990945b7094a8d2a98c3a91ed9b6}
 
-And inserted it ◊link[inflation-bug-timestamp]{into the BTC blockchain} using a timestamping service. See "Advanced Verification" to find the hash.
+And inserted it ◊link[inflation-bug-timestamp]{into the BTC blockchain} using a timestamping service. See "Advanced Verification" on the website to find the hash and see the ◊link[hash-functions]{explanation of hash functions} in the appendix for why the hash is enough.
 
 This proves that reddit user awemany had knowledge of the inflation bug before it was disclosed and therefore that he was the one who found it.◊sn{sufficient}
 
