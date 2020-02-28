@@ -31,6 +31,9 @@ The problems the unbanked face are difficult to solve, and cryptocurrencies won'
 
 There are ◊strong{◊link[findex-report]{1.7 billion adults}} without a bank account in the world. To get a sense for what countries they come from, take a look at this world map:
 
+◊; Maybe remake this in SVG?
+◊; Maybe there are resources here: https://news.ycombinator.com/item?id=22427334
+
 ◊; http://colorbrewer2.org/#type=sequential&scheme=PuRd&n=5
 ◊; multi-hue
 ◊; #f1eef6  0-10
