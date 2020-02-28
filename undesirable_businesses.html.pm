@@ -33,7 +33,7 @@ Here are some examples of affected businesses:
 ◊(define banks-bitcoin "https://www.ccn.com/banks-still-closing-accounts-bitcoin-activity")
 ◊(define barclays-bitcoin "https://www.telegraph.co.uk/finance/personalfinance/investing/11537972/Barclays-closed-down-my-bank-account-after-Bitcoin-trade.html")
 
-For whatever reason, these businesses are deemed high risk and undesirable. Despite them being legal they might not be able to accept digital payments.
+For whatever reason, these businesses are deemed high risk and undesirable; despite them being legal they might not be able to accept digital payments. This is something that cryptocurrencies solve.
 
 
 ◊subhead{Pot stores are cash-only}

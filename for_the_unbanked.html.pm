@@ -18,7 +18,9 @@ In the previous chapters we've looked at some problems with having to get permis
 
 To make digital payments you typically need a bank account◊sn{banks-required} and those without one are often called ◊em{unbanked}. Paying bills digitally, using credit cards and even mobile payments all require a bank account. If you don't have a bank account, you're essentially shut-out from the digital economy.
 
-◊note-pos[#:top -8]{banks-required}
+The problems the unbanked face are difficult to solve, and cryptocurrencies won't magically solve them all, but if adopted they can be helpful.
+
+◊note-pos[#:top -12]{banks-required}
 
 ◊ndef["banks-required"]{
     Maybe there's a way to work around the bank requirement, possibly by using in-game currencies, but they're severely limited compared to the digital payments we usually think about. In practice you need a bank account for useful digital payments.

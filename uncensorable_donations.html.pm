@@ -24,9 +24,11 @@ In the ◊link[freezing-chapter]{last} two ◊link[undesirable-chapter]{chapters
 
 Imagine a country doing something really horrible, like ◊link[killing-fields]{purging intellectuals and political opponents}, that would put the government in a bad light. Journalists trying to report on this event may find it difficult or impossible to accept donations to continue their work. A payment processor (which are necessary for digital donations)---perhaps under pressure from the government---might block donations or break the journalistic anonymity,◊sn{crypto-privacy} making donations for truth-seeking journalists very difficult or outright dangerous.
 
-◊note-pos[#:top -17]{charity-fees}
-◊note-pos[#:top -10]{voluntary}
-◊note-pos{crypto-privacy}
+Donations is an excellent use case for cryptocurrencies, as they cannot be censored even by the most powerful nations in the world. And as I'll argue in this chapter, this is very valuable.
+
+◊note-pos[#:top -24]{charity-fees}
+◊note-pos[#:top -17]{voluntary}
+◊note-pos[#:top -8]{crypto-privacy}
 
 ◊ndef["voluntary"]{
     However even charities can be prosecuted for not fulfilling their promises, an experience the founder of Charity Water writes in his book ◊link[thirst-book]{Thirst}. So charge back fraud isn't a completely irrelevant worry.

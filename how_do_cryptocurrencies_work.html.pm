@@ -19,6 +19,13 @@ As stated in the introduction the focus isn't on technical details, but it's a h
 }
 
 
+◊subhead{Summary}
+
+The ◊em{blockchain} is a ledger that stores balances. The crucial problem is deciding between double spends (using a coin twice). Cryptocurrencies like Bitcoin use ◊em{proof-of-work} which makes miners expend energy and compete for rewards. This competition between miners is used to resolve double spends and to secure the chain, with the winner extending the blockchain with new transactions.
+
+What makes it all work is the incentives for the miners to work in the best interest of the network---it's the most profitable option. The security assumption is that most of miners are honest and work for profit, otherwise the security model fails and transactions can be reversed.
+
+
 ◊subhead{The ledger}
 
 If you want to create a digital currency you only really need to keep track of how many coins everyone have. For example your bank might have entries in a ledger like this:
@@ -543,13 +550,6 @@ One problem is the ◊link[nothing-at-stake]{nothing at stake problem} where a c
 The chapter became very long despite skipping out on details here and there. If you want to go deeper I encourage you to do more research on your own.
 
 ◊link[wp]{Bitcoin's white paper} is always a good place to begin and there are many good resources online. I've tried to include key concepts which you can use as starting points in your search.
-
-
-◊subhead{Summary}
-
-The ◊em{blockchain} is a ledger that stores balances. The crucial problem is deciding between double spends (using a coin twice). Cryptocurrencies like Bitcoin use ◊em{proof-of-work} which makes miners expend energy and compete for rewards. This competition between miners is used to resolve double spends and to secure the chain, with the winner extending the blockchain with new transactions.
-
-What makes it all work is the incentives for the miners to work in the best interest of the network---it's the most profitable option. The security assumption is that most of miners are honest and work for profit, otherwise the security model fails and transactions can be reversed.
 
 
 ◊(define chargeback-fraud "https://en.wikipedia.org/wiki/Chargeback_fraud")
