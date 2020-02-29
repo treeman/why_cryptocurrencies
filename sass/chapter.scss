@@ -264,8 +264,8 @@ pre {
     overflow-wrap: normal;
     overflow: auto;
 
-    margin-bottom: 1em;
-    padding: 0.4em 0.6em;
+    margin-bottom: 1rem;
+    padding: 0.4rem 0.6rem;
 }
 .sidenote code {
     font-size: 0.6rem;
@@ -277,6 +277,9 @@ pre {
 /*
  * Misc
  */
+.def {
+    font-style: italic;
+}
 
 
 /*
@@ -585,6 +588,15 @@ table.legal-moral {
     }
     .good {
         background-color: $bch-green;
+    }
+}
+
+table.address-examples {
+    td.ths {
+        font-weight: bold;
+    }
+    td.tdc {
+        //font-weight: bold;
     }
 }
 
@@ -1027,3 +1039,26 @@ table.address-message {
     //color: $btc-orange;
 }
 */
+
+.hidden-label {
+    @include a-background(#333);
+    cursor: pointer;
+}
+.hidden-label:hover {
+    color: $body-link-hover-color;
+    background: none;
+    shadow: none;
+}
+.hidden-toggle {
+    display: none;
+}
+.hidden-content {
+    display: none;
+    @extend %sans-serif;
+    font-size: 0.8rem;
+}
+.hidden-toggle:checked + .hidden-content {
+    display: block;
+    text-align: center;
+    padding-top: 0.2rem;
+}

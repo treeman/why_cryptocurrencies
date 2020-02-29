@@ -9,14 +9,13 @@
 Money is perhaps the most obvious usage of cryptocurrencies but there are other ways to use them. In this section I'll highlight some of the alternative usages and we'll see that we can build other functionality on top of existing cryptocurrencies.◊sn{blockchain-hype}
 
 ◊ndef["blockchain-hype"]{
-    I generally try to avoid the word ◊em{blockchain} which sometimes refer to private blockchains or blockchains which use a consensus model with known and trusted actors. ◊link[libra]{Facebook's Libra} is such an example and ◊link[ibm-blockchain]{IBM's blockchain} is another.
+    I generally try to avoid the word ◊em{blockchain} which sometimes refer to private blockchains or blockchains which use a consensus model with known and trusted actors. Facebook's Libra is such an example and ◊link[ibm-blockchain]{IBM's blockchain} is another.
 
     Don't let the similar names fool you: consensus algorithms with known participants and those with unknown participants are ◊strong{very} different. I only consider those using the latter to be cryptocurrencies.
 }
 
 ◊(define bft "https://en.wikipedia.org/wiki/Byzantine_fault")
 ◊(define ibm-blockchain "https://www.ibm.com/blockchain")
-◊(define libra "/facebooks_libra.html")
 
 
 ◊subhead{Embedding data}

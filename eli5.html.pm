@@ -95,4 +95,3 @@ If you want to learn more and see more examples just continue reading. You can a
 ◊(define timestamp "/timestamping_service.html")
 ◊(define gambling "/provably_fair_gambling.html")
 
-◊(define privacy-challenge "/challenges.html#privacy-and-fungibility")

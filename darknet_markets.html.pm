@@ -162,7 +162,6 @@ The following example, based on a real-life story I read a few years ago, illust
 ◊(define expensive-cancer-drugs "https://edition.cnn.com/2018/05/11/health/most-expensive-prescription-drugs/index.html")
 ◊(define tor "https://www.torproject.org/")
 ◊(define kraken "https://www.kraken.com/")
-◊(define privacy-challenge "/challenges.html#privacy-and-fungibility")
 
 While the story is made up, the situation is real. Medicine in the U.S. can be ◊link[expensive-cancer-drugs]{◊strong{extremely expensive}}, and the cost isn't something all families can bear.◊sn{insurance} The same medicine that will ruin you financially is often available for a fraction of the cost from darknet markets.
 

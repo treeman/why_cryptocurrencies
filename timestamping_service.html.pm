@@ -3,7 +3,7 @@
 ◊(define-meta title "Timestamping service")
 ◊(define-meta subtitle "Verifiable proof of knowledge at a certain time")
 ◊(define-meta published "2019-09-21T00:00:00+01:00")
-◊(define-meta updated "2020-01-21T08:29:15+01:00")
+◊(define-meta updated "2020-02-27T13:35:06+01:00")
 ◊(define-meta uuid "b92733e8-9356-487e-abb9-510ac0cc5735")
 
 ◊epigraph{
@@ -102,7 +102,7 @@ With cryptocurrencies it's possible to do away with the trusted party requiremen
 ◊ol{
   ◊li{Prepare data.
 
-      Because we might want to reveal our message at a later date we don't want to store the message in the clear. We can use an anagram like Robert Hook used, some kind of encryption with a key or a one-way hash function to obfuscate the message.
+      Because we might want to reveal our message at a later date we don't want to store the message in the clear. We can use an anagram like Robert Hook used, some kind of encryption with a key or a ◊link[hash-functions]{hash function} to obfuscate the message.
 
       After we have the obfuscated message we want to verify we can ◊link[embed-data-how]{embed it into a cryptocurrency}.
   }
@@ -199,7 +199,7 @@ Which has the SHA-256 hash:
 
 ◊code{5c45a1ba957362a2ba97c9f8c48d4d59d4fa990945b7094a8d2a98c3a91ed9b6}
 
-And inserted it ◊link[inflation-bug-timestamp]{into the BTC blockchain} using a timestamping service. See "Advanced Verification" to find the hash.
+And inserted it ◊link[inflation-bug-timestamp]{into the BTC blockchain} using a timestamping service. See "Advanced Verification" on the website to find the hash and see the ◊link[hash-functions]{explanation of hash functions} in the appendix for why the hash is enough.
 
 This proves that reddit user awemany had knowledge of the inflation bug before it was disclosed and therefore that he was the one who found it.◊sn{sufficient}
 
@@ -268,7 +268,6 @@ With that our timestamp is prepared and nobody can see our original message, onl
 
 ◊(define transaction-ex "https://blockchair.com/bitcoin-cash/transaction/586783e17fadace136365490fd83ba59390ca55e7205ee74fbc7db2daa012ad3")
 ◊(define transaction-ex2 "https://bch.btc.com/586783e17fadace136365490fd83ba59390ca55e7205ee74fbc7db2daa012ad3")
-◊(define electroncash "https://electroncash.org/")
 
 ◊ol{
     ◊li{Locate the hash in the blockchain.

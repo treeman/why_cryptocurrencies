@@ -23,7 +23,7 @@ Cryptocurrencies can help us with this---they're digital and just like cash they
 ◊ndef["vpn"]{
     For instance if you want to purchase a VPN, a domain or a VPS anonymously it's probably a good idea to use cryptocurrencies.
 
-    But remember that most cryptocurrencies, Bitcoin included, are ◊link[privacy-problem]{only pseudo-anonymous} and it's easy to make a mistake and break your anonymity.
+    But remember that most cryptocurrencies, Bitcoin included, are ◊link[privacy-challenge]{only pseudo-anonymous} and it's easy to make a mistake and break your anonymity.
 }
 
 
@@ -458,13 +458,12 @@ So far we've had to surrender our privacy to gain access to digital payments and
 
 
 ◊ndef["bitcoin-worse"]{
-    Unfortunately Bitcoin is sometimes ◊link[privacy-problem]{even worse for privacy than regular payments}, because you have a permanent record of all transactions open for all to see. There are other cryptocurrencies that tries to solve this problem.
+    Unfortunately Bitcoin is sometimes ◊link[privacy-challenge]{even worse for privacy than regular payments}, because you have a permanent record of all transactions open for all to see. There are other cryptocurrencies that tries to solve this problem.
 }
 
 ◊(define great-man "https://en.wikipedia.org/wiki/Great_man_theory")
 ◊(define shoulders-of-giants "https://en.wikipedia.org/wiki/Standing_on_the_shoulders_of_giants")
 ◊(define signal "https://www.signal.org/")
 ◊(define private "/properties_of_a_cryptocurrency.html#private")
-◊(define privacy-problem "/challenges.html#privacy-and-fungibility")
 ◊(define properties "/what_is_money.html#what-properties-does-good-money-have?")
 

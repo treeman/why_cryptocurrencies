@@ -43,10 +43,11 @@
     (appendix.html
      bitcoin_whitepaper.html
      challenges.html
-     "An introduction to cryptography"
+     cryptography.html
      ;"Who is Satoshi Nakamoto?"
      ;"Is Facebook's Libra a cryptocurrency?"
-     "Further research")))
+     ;"Further research"
+     )))
 
 (define (in-toc? page)
   (in-tree? page toc))

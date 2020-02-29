@@ -11,7 +11,7 @@
 
 If you've seen spy movies, or maybe read the Da Vinci Code, you might be familiar with a private bank account. It's one where you don't need any identification other than the bank account number and a password to access, and you have access to all your money safely, securely and most importantly privately.◊sn{gringotts}
 
-This is actually a great description of how cryptocurrencies work. You just need the account number (an address) and the password (a private key) to access your money, which you can do from anywhere in the world using the smartphone in your pocket.
+This is actually a great description of how cryptocurrencies work. You just need the account number (◊link[bitcoin-addresses]{an address}) and the password (◊link[public-key-cryptography]{a private key}) to access your money, which you can do from anywhere in the world using the smartphone in your pocket.
 
 ◊ndef["gringotts"]{
     Even the ◊link[gringotts]{Gringotts Wizarding Bank} in Harry Potter operates in a similar manner. But except for a password they use a physical key.
@@ -34,7 +34,6 @@ Cryptocurrencies on the other hand can fulfill the dream.◊sn{private?}
     How private are cryptocurrencies really? Some are more private than others, see the ◊link[privacy-challenge]{discussion of the privacy challenge} in the appendix for more information.
 }
 
-◊(define privacy-challenge "/challenges.html#privacy-and-fungibility")
 ◊(define swiss-bank-account "https://www.investopedia.com/ask/answers/08/swiss-bank-account.asp")
 ◊(define swiss-exchange "https://www.swissinfo.ch/eng/financial-transparency_switzerland-in-the-age-of-automatic-exchange-of-banking-information/45234706")
 ◊(define swiss-more-countries "https://www.swissinfo.ch/eng/automatic-exchange-_switzerland-grants-18-more-countries-access-to-bank-details/45424544")

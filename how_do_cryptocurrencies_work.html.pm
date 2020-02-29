@@ -3,7 +3,7 @@
 ◊(define-meta title "How do cryptocurrencies work?")
 ◊(define-meta subtitle "Decentralized consensus")
 ◊(define-meta published "2019-05-03T20:08:34+01:00")
-◊(define-meta updated "2020-01-21T08:28:34+01:00")
+◊(define-meta updated "2020-02-27T13:32:42+01:00")
 ◊(define-meta uuid "320751d9-9a28-4e91-9469-b44b83e12475")
 
 This is my attempt to explain how a standard cryptocurrency like Bitcoin works. Other cryptocurrencies may diverge on various points but the fundamentals are the same.◊sn{others}
@@ -15,7 +15,7 @@ As stated in the introduction the focus isn't on technical details, but it's a h
 ◊note-pos[#:top -11]{others}
 
 ◊ndef["others"]{
-    For example Ethereum adds Turing complete smart contracts and CryptoNote protocols (like Monero) hides transaction details.
+    For example Ethereum adds Turing complete smart contracts and CryptoNote protocols (like Monero) ◊link[privacy-challenge]{hides transaction details}.
 }
 
 
@@ -54,16 +54,9 @@ To be able to create a transaction you need to have the ◊em{private keys} to t
     You typically don't use the private key directly. Instead you can interact with a ◊em{seed}, which encodes the private key hash into a human-readable format. It's commonly made of 12 or 24 words.
 }
 
-It uses ◊link[public-key-cryptography]{◊em{public-key cryptography}} which allows you to prove you control the private key without sharing the private key itself. Compare it to credit card numbers which act as both a private and public key.  Going into detail how the cryptography works is out of the scope of this book, and it's not required to understand how cryptocurrencies work on a higher level.◊sn{pubkey}
-
-◊ndef["pubkey"]{
-    If you're intrigued by the promise of public-key cryptography I encourage you to look it up, it's quite fascinating.
-
-    If the history of cryptography interests you I can also recommend the book "The Code-Breakers" by David Kahn. You can enjoy it even without much math knowledge.
-}
+It uses ◊link[public-key-cryptography]{◊em{public-key cryptography}} which allows you to prove you control the private key without sharing the private key itself. Compare it to credit card numbers which act as both a private and public key.  See ◊link[intro-crypto]{the hitchhiker's guide to cryptography} in the appendix for more details, but it's not required to understand how cryptocurrencies work on a higher level.
 
 ◊note-pos[#:top -11.5]{private-key}
-◊note-pos{pubkey}
 
 
 ◊subhead{Copying a coin & double spending}
@@ -76,7 +69,7 @@ For example Sneaky Steve wants to buy a computer from Honest Harry and wants to 
   Address     Bitcoin
   Sneaky Steve 1     1 BTC
   Sneaky Steve 2     0 BTC
-  Honese Harry         0 BTC
+  Honest Harry         0 BTC
 }
 
 What Sneaky Steve tries to do is send ◊sans-tnum{1 BTC} to the merchant Honest Harry and then send a copy of ◊sans-tnum{1 BTC} to his other address ◊sans-tnum{Sneaky Steve 2}. It's possible to have as many addresses as you want---a consequence of the permissionless nature of Bitcoin.
@@ -129,7 +122,7 @@ If they try to act without a majority they will for sure get defeated, they must
 This would be very easy if they could trust each other. Unfortunately they cannot trust the messages---either the messenger or the message itself could be replaced---and even some of the generals could be traitors.◊sn{cryptography}
 
 ◊ndef["cryptography"]{
-    One countermeasure is to encrypt messages. Unfortunately it doesn't protect against a traitor who knows the code, like one of the generals. Also in ancient times encryption weren't very advanced and could possibly be broken, see the ◊link[ceasar-cipher]{Ceasar cipher} as an example.
+    One countermeasure is to ◊def[#:src public-key-cryptography]{encrypt} messages. Unfortunately it doesn't protect against a traitor who knows the code, like one of the generals. Also in ancient times encryption weren't very advanced and could possibly be broken, see the ◊link[ceasar-cipher]{Ceasar cipher} as an example.
 }
 
 
@@ -143,7 +136,7 @@ This would be very easy if they could trust each other. Unfortunately they canno
 To relate it back to cryptocurrencies the choice between "attack" and "retreat" is similar to choosing between two transactions in a double spend. You know there are bad actors (like Sneaky Steve) but who can you trust?◊sn{bft}
 
 ◊ndef["bft"]{
-    The resistance to this kind of problem is called ◊link[bft]{◊em{Byzantine fault tolerance (BFT)}}. There's a big difference between systems with known actors and systems with unknown actors, like with cryptocurrencies, but they both fall under the BFT umbrella.
+    The resistance to this kind of problem is called ◊def[#:src bft]{Byzantine fault tolerance (BFT)}. There's a big difference between systems with known actors and systems with unknown actors, like with cryptocurrencies, but they both fall under the BFT umbrella.
 }
 
 ◊note-pos[#:top -58]{cryptography}
@@ -204,7 +197,7 @@ The work is to find a solution to a computing problem.◊sn{asics} The problem i
     }
 }
 
-Cryptographic hash functions are excellent choices, Bitcoin uses SHA-256 for example. For more details on the details of Bitcoin's computing problem I recommend ◊link[mine-pen-paper]{this post (2014)} which shows how to mine Bitcoin with pen and paper.
+◊def[#:src cryptographic-hash-functions]{Cryptographic hash functions} are excellent choices, Bitcoin uses SHA-256 for example. See the ◊link[hash-functions]{introduction to hashes} in the appendix for more details. For an in-depth explanation of Bitcoin's proof-of-work I recommend ◊link[mine-pen-paper]{this post (2014)}, which shows how to mine Bitcoin with pen and paper.
 
 A solution is proof that you've done the work---it's proof that you've expended energy. It's like a lottery and you can get lucky, but in the long run it balances out.  Since you require a significant investment to find a block this can be used as sybil resistance. You can't just create thousands of fake identities for free.
 
@@ -213,6 +206,8 @@ Important to note is that everyone doesn't have to be a miner. The blockchain is
 ◊note-pos[#:top -65]{valid}
 ◊note-pos[#:top -60]{asics}
 ◊note-pos[#:top -48]{useful-pow}
+
+◊(define intro-crypto "/cryptography.html")
 
 ◊ndef["asics"]{
     In Bitcoin specialized hardware, ◊link[ASICs]{ASICs}, are used which are many magnitudes faster than regular computers at solving POW problems.
@@ -251,13 +246,11 @@ A blockchain is what it sounds like: a chain of blocks where a new block builds 
 
 The transactions must follow common rules, called ◊em{consensus rules}, otherwise other miners and users who use the blockchain will discard the block. For example a transaction cannot spend coins from an empty wallet or spend coins without having access to the private key of an address.
 
-In return for adding the block you get to collect the rewards. One for finding a block◊sn{blockreward} and you can also collect transaction fees for the transactions you include in the block.
+In return for adding the block you get to collect the rewards. One for finding a block and you can also collect transaction fees for the transactions you include in the block.◊sn{blockreward}
 
-The blockchain is public and anyone can see all transactions. You can use a ◊link[blockchair]{blockchain explorer} to see for yourself, see for example the full history of ◊link[blockchair-addr]{this address} or ◊link[blockchair-tx]{this transaction} with one input and two outputs.◊sn{outputs}
+The blockchain is public and anyone can see all transactions. You can use a ◊link[blockchair]{blockchain explorer} to see for yourself; see for example the full history of ◊link[blockchair-addr]{this address} or ◊link[blockchair-tx]{this transaction} with one input and two outputs.◊sn{outputs}
 
 Cryptocurrencies like Monero also have a public blockchain---see ◊link[xmrchain]{this blockchain explorer}---but they hide transaction amounts, where the coins are coming from and where they're going. I won't go into details on how this works, see the discussion about the ◊link[privacy-challenge]{privacy and fungibility challenge} in the appendix for more details.
-
-◊(define privacy-challenge "/challenges.html#privacy-and-fungibility")
 
 The blockchain is duplicated, stored and maintained by many different people, you might think of it as similar to how torrents work. When you send and receive transactions you're really interacting with the blockchain and not with each other directly.◊sn{node-types}
 
@@ -553,6 +546,5 @@ What makes it all work is the incentives for the miners to work in the best inte
 
 
 ◊(define chargeback-fraud "https://en.wikipedia.org/wiki/Chargeback_fraud")
-◊(define public-key-cryptography "https://en.wikipedia.org/wiki/Public-key_cryptography")
 ◊(define next-chapter "/look_out_for_snake_oil.html")
 

@@ -260,7 +260,7 @@ The scheme I've presented is simple---too simple. There are many problems with i
 
             The big flaw is the poor privacy.  If you can connect token issuance with your identification---which the government will be able to do---then they can see who you voted for. It has the same privacy problem that Bitcoin has, except it's even worse as there's always a direct link between you and your address.
 
-            The solution would be to obscure the coin history between issuance of the token and when you cast your vote.  We could use the obfuscation techniques, described in the ◊link[priv-fung]{privacy and fungibility} part of the appendix, to accomplish this.◊sn{mixing?}
+            The solution would be to obscure the coin history between issuance of the token and when you cast your vote.  We could use the obfuscation techniques, described in the ◊link[privacy-challenge]{privacy and fungibility} part of the appendix, to accomplish this.◊sn{mixing?}
 
             ◊ndef["mixing?"]{
                 Imagine for example if all voters had to go through a mixing state, where people trade a vote for another vote. If done correctly the state can't connect the final votes to the identities, while still be sure the right people had the ability to vote.
@@ -333,7 +333,6 @@ While there are benefits to blockchain voting, there are many problems we need t
 
 ◊(define avalanche "https://avalanchelabs.org/QmT1ry38PAmnhparPUmsUNHDEGHQusBLD6T5XJh4mUUn3v.pdf")
 ◊(define shuffling-public-keys "http://vixra.org/pdf/1905.0239v1.pdf")
-◊(define priv-fung "/challenges.html#privacy-and-fungibility")
 
 ◊(define public-evidence-from-secret-ballots "https://arxiv.org/pdf/1707.08619.pdf")
 

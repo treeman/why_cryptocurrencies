@@ -38,3 +38,14 @@
 (define antifragile-book "https://www.goodreads.com/book/show/13530973-antifragile")
 (define permanent-record-book "https://www.goodreads.com/book/show/46223297-permanent-record")
 (define animal-farm-book "https://www.goodreads.com/book/show/170448.Animal_Farm")
+
+(define cryptographic-hash-functions "https://en.wikipedia.org/wiki/Cryptographic_hash_function")
+
+(define electroncash "https://electroncash.org/")
+
+(define hash-functions "/cryptography.html#hash-functions")
+(define bitcoin-addresses "/cryptography.html#bitcoin-addresses")
+(define public-key-cryptography "/cryptography.html#public-key-cryptography")
+
+(define privacy-challenge "/challenges.html#privacy-and-fungibility")
+
