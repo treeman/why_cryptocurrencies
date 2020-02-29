@@ -1,7 +1,7 @@
 #lang pollen
 
-◊(define-meta title "The hitchhiker's guide to cryptography")
-◊(define-meta subtitle "A short introduction to cryptography")
+◊(define-meta title "A hitchhiker's guide to cryptography")
+◊(define-meta subtitle "An introduction to cryptography")
 ◊(define-meta published "2020-02-27T13:33:40+01:00")
 ◊(define-meta updated "2020-02-27T13:33:40+01:00")
 ◊(define-meta uuid "6a8759d6-2e0c-4224-b0b8-61009c5484d0")
