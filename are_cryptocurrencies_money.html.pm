@@ -42,6 +42,10 @@ To decide how well cryptocurrencies can function as money, we'll take a look at 
 
         You can carry any amount you want in your wallet. One billion worth of cryptocurrency is as easy to carry as one cent. There's no difference in transacting large amounts or small amounts.
     }
+    ◊li{◊strong{Recognizable}
+
+        Cryptocurrencies are easy to identify and impossible to counterfeit.
+    }
 }
 
 All in all cryptocurrencies fulfil the properties excellently.
@@ -70,13 +74,14 @@ Cryptocurrencies can also be considered to be ◊link[sound-money]{◊em{sound m
 This is a table of how I think cryptocurrencies compares to other forms of money. I differentiate between the two forms of fiat---digital and physical---because they have different properties. Gold can be either gold coins or gold bars---basically some suitable physical form of gold.
 
 ◊table-body[#:class "crypto-eval"]{
-    ◊tr{◊td{}               ◊ths{Fiat (digital)} ◊ths{Fiat (physical)} ◊ths{Gold} ◊ths{Cryptocurrencies}}
-    ◊tr{◊tds{1. Acceptable}            ◊en{poor}      ◊en{excellent} ◊en{excellent} ◊en{excellent}}
-    ◊tr{◊tds{2. Divisible}             ◊en{excellent} ◊en{good}      ◊en{good}      ◊en{excellent}}
-    ◊tr{◊tds{3. Durable}               ◊en{excellent} ◊en{good}      ◊en{excellent} ◊en{good}}
-    ◊tr{◊tds{4. Fungible & Uniform}    ◊en{excellent} ◊en{excellent} ◊en{excellent} ◊en{excellent}}
-    ◊tr{◊tds{5. Limited supply}        ◊en{poor}      ◊en{poor}      ◊en{excellent} ◊en{excellent}}
-    ◊tr{◊tds{6. Portable}              ◊en{good}      ◊en{good}      ◊en{good}      ◊en{excellent}}
+    ◊tr{◊td{}                       ◊ths{Fiat (digital)} ◊ths{Fiat (physical)} ◊ths{Gold}     ◊ths{Cryptocurrencies}}
+    ◊tr{◊tds{1. Acceptable}         ◊en{poor}            ◊en{excellent}        ◊en{excellent} ◊en{excellent}}
+    ◊tr{◊tds{2. Divisible}          ◊en{excellent}       ◊en{good}             ◊en{good}      ◊en{excellent}}
+    ◊tr{◊tds{3. Durable}            ◊en{excellent}       ◊en{good}             ◊en{excellent} ◊en{good}}
+    ◊tr{◊tds{4. Fungible & Uniform} ◊en{excellent}       ◊en{excellent}        ◊en{excellent} ◊en{excellent}}
+    ◊tr{◊tds{5. Limited supply}     ◊en{poor}            ◊en{poor}             ◊en{excellent} ◊en{excellent}}
+    ◊tr{◊tds{6. Portable}           ◊en{good}            ◊en{good}             ◊en{good}      ◊en{excellent}}
+    ◊tr{◊tds{7. Recognizable}       ◊en{excellent}       ◊en{good}             ◊en{good}      ◊en{excellent}}
 }
 
 I know this might be controversial, so let me motivate some of the entries:
@@ -87,20 +92,23 @@ I know this might be controversial, so let me motivate some of the entries:
 
     ◊li{Digital money is inherently easier to ◊strong{divide} than physical variants. You can always send an exact amount without having to mix and match change.}
 
-    ◊li{Paper notes can easily wear out or burn up. While cryptocurrencies cannot themselves burn up, the security backups and your phone can. Therefore they score lower than gold on ◊strong{durability}, which is near indestructible.◊sn{durability}}
+    ◊li{Paper notes can easily wear out or burn up. While cryptocurrencies cannot themselves burn up or deteriorate, the security backups and your phone can. Therefore they score lower than gold on ◊strong{durability}, which is near indestructible.◊sn{durability}}
 
     ◊li{I see no major problems with ◊strong{fungibility} or ◊strong{uniformity}.◊sn{again-monero}}
 
-    ◊li{Both digital and physical fiat gets a poor score on ◊strong{limited supply}. Per the discussion in ◊link[prev-chapter]{the previous chapter}---fiat money is unsound. You might argue that cryptocurrencies should score higher than gold, because they're impossible to counterfeit, yet I feel---perhaps wrongly---that it's not that big of a problem with gold, even if it ◊link[gold-counterfeit]{does exist}.
+    ◊li{Both digital and physical fiat gets a poor score on ◊strong{limited supply}. Per the discussion in ◊link[prev-chapter]{the previous chapter}---fiat money is unsound.
     }
 
     ◊li{Cryptocurrencies are simply much more ◊strong{portable} than the other options. Carrying large amounts in cash or gold is cumbersome and digital fiat isn't easy to move across borders.◊sn{borders}}
+
+    ◊li{While it's possible to check for fake cash and gold coins, it requires expertise and certain tools. Therefore they get a lower ◊strong{recognizable} score.
+    }
 }
 
-◊note-pos[#:top -27]{acceptable}
-◊note-pos[#:top -18]{durability}
-◊note-pos[#:top -10]{again-monero}
-◊note-pos[#:top -2]{borders}
+◊note-pos[#:top -26]{acceptable}
+◊note-pos[#:top -17]{durability}
+◊note-pos[#:top -9]{again-monero}
+◊note-pos[#:top -3.5]{borders}
 
 ◊ndef["acceptable"]{
     You could argue that because you need a device with internet access, cryptocurrencies should get a lower score on ◊em{acceptable}. But you could also argue that having to transact in person is another drawback. To me they cancel out.
@@ -110,17 +118,16 @@ I know this might be controversial, so let me motivate some of the entries:
     The definition of ◊em{durability} is only concerned with reuse, where cryptocurrencies score excellently. But I wanted to include the storage drawback which didn't fit anywhere else.
 }
 
-Even if you disagree about certain choices, it's hard to disagree that cryptocurrencies come out of the comparison pretty well. But of course this doesn't give the whole picture. There are other significant differences, for example:
+Even if you disagree about certain choices, it's hard to oppose that cryptocurrencies come out of the comparison pretty well. But of course this doesn't give the whole picture. There are other significant differences, for example:
 
 ◊ul{
     ◊li{A big difference between cryptocurrencies and gold is that cryptocurrencies are digital. This isn't only positive---cryptocurrency implementations can have bugs that might have severe negative consequences.◊sn{bugs}}
     ◊li{Digital fiat can get ◊link[freezing]{frozen any time by your bank}, while physical payments and cryptocurrencies are uncensorable.}
-    ◊li{The legitimacy of cryptocurrency coins can be verified very easily. It's possible check for fake cash and gold coins, but it requires expertise and certain tools.}
     ◊li{Gold has stood the test of time. It's been used as money for thousands of years, while cryptocurrencies are just more than 10 years old.◊sn{age-of-fiat}}
 }
 
-◊note-pos[#:top -13]{bugs}
-◊note-pos[#:top -3]{age-of-fiat}
+◊note-pos[#:top -9.5]{bugs}
+◊note-pos{age-of-fiat}
 
 ◊ndef["age-of-fiat"]{
     I find it interesting that ◊link[avg-life-fiat]{the average life expectancy for a fiat currency is 27 years}.
@@ -131,12 +138,14 @@ Even if you disagree about certain choices, it's hard to disagree that cryptocur
 }
 
 ◊ndef["again-monero"]{
-    I note again that there exists fungible cryptocurrencies.
+    I note again that ◊link[privacy-challenge]{there exists fungible cryptocurrencies}.
 }
 
 ◊ndef["borders"]{
-    Moving money across borders will be the topic of a future chapter. I'll just note that it's extremely difficult, or impossible, to send fiat digitally to countries like North Korea or Venezuela.
+    Moving money across borders will be handled in the chapter ◊link[global-currency]{A global currency}. I'll just note that it's extremely difficult, or impossible, to send fiat digitally to countries like North Korea or Venezuela.
 }
+
+◊(define global-currency "/global_currency.html")
 
 ◊ndef["bugs"]{
     A bug is a programming fault in the software. As a developer I can assure you, bugs will happen. The question is, how can you avoid the most severe ones and what do you do when they appear?
@@ -163,7 +172,6 @@ Even if you disagree about certain choices, it's hard to disagree that cryptocur
 ◊(define bitcoin-bug "https://bitcoincore.org/en/2018/09/20/notice/")
 ◊(define undesirable "/undesirable_businesses.html")
 ◊(define unbanked "/for_the_unbanked.html")
-◊(define gold-counterfeit "https://www.reuters.com/article/us-gold-swiss-fakes-exclusive/exclusive-fake-branded-bars-slip-dirty-gold-into-world-markets-idUSKCN1VI0DD?utm_source=reddit.com")
 ◊(define freezing "/freezing_of_merchant_accounts.html")
 
 
@@ -187,15 +195,13 @@ We've looked at the properties---but how well do they function as money, today?
         ◊img[#:src "images/btc-valuation.svg" #:link #t]{
             ◊link[btc-valuation]{Bitcoin closing price per month}.  It doesn't do the peak in December 2017 justice, as it peaked at an all time high of $19,870 (some exchanges had it even higher).
         }
-
-        ◊note-pos[#:top -31]{sov}
     }
 }
 
 ◊(define btc-valuation "https://finance.yahoo.com/quote/BTC-USD/history?period1=1279317600&period2=1557439200&interval=1mo&filter=history&frequency=1mo")
 
 ◊ndef["sov"]{
-    There is a clique of Bitcoin supporters who claim the primary, and sometimes even the only, function of Bitcoin is as a store of value. Unfortunately it's based on wishful thinking (from a short-term investment view) and not reality.
+    There's a clique of Bitcoin supporters who claim the primary, and sometimes even the only, function of Bitcoin is as a store of value. Unfortunately it's based on wishful thinking (from a short-term investment view) and not reality.
 }
 
 While cryptocurrencies are used as money in certain communities and for certain goods,◊sn{goods} it's not in widespread use. It doesn't function very well as money globally, today.
@@ -223,7 +229,12 @@ There are mainly two things holding it back today:
 
 Both of these are functions of how new cryptocurrencies are. When the market matures, the volatility will naturally decrease. Barring any large weaknesses the network effect will only grow larger---cryptocurrencies do provide some very good benefits, as we shall see.
 
-Perhaps it's to be expected that cryptocurrencies aren't global money yet---they're only a decade old after all.◊sn[#:top -3]{lightbulb}
+Perhaps it's to be expected that cryptocurrencies aren't global money yet---they're only a decade old after all.◊sn{lightbulb}
+
+◊note-pos[#:top -67]{sov}
+◊note-pos[#:top -33]{goods}
+◊note-pos[#:top -15]{shock-of-the-old}
+◊note-pos{lightbulb}
 
 ◊ndef["lightbulb"]{
     Marc Levinson writes in ◊link[the-box-book #:quote #t]{The Box} that 20 years after the invention of the light bulb, arguably one of the most important inventions of all time, only 3% in the U.S. were using it. Cryptocurrencies are still in their infancy.
