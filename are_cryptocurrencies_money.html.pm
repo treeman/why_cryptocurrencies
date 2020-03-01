@@ -54,8 +54,8 @@ Cryptocurrencies can also be considered to be ◊link[sound-money]{◊em{sound m
 
 ◊(define sound-money "https://www.soundmoneydefense.org/sound-money-explained")
 
-◊note-pos[#:top -40]{crypto-acceptable}
-◊note-pos[#:top -27]{backups}
+◊note-pos[#:top -53]{crypto-acceptable}
+◊note-pos[#:top -40]{backups}
 ◊note-pos{backed}
 
 ◊ndef["backed"]{
