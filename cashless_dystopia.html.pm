@@ -189,8 +189,6 @@ This is why cryptocurrencies are sometimes called "digital cash"; they combine t
 ◊note-pos{privacy?}
 
 
-◊(define privacy-challenge "/challenges.html#privacy-and-fungibility")
-
 ◊; WeChat is Watching: Living in China with the app that knows everything about me
 ◊; https://news.ycombinator.com/item?id=20173549
 

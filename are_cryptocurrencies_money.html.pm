@@ -48,7 +48,6 @@ All in all cryptocurrencies fulfil the properties excellently.
 
 Cryptocurrencies can also be considered to be ◊link[sound-money]{◊em{sound money}}---the value is entirely market driven and there's no manipulation of the supply.◊sn{backed}
 
-◊(define privacy-challenge "/challenges.html#privacy-and-fungibility")
 ◊(define sound-money "https://www.soundmoneydefense.org/sound-money-explained")
 
 ◊note-pos[#:top -40]{crypto-acceptable}

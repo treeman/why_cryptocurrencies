@@ -41,6 +41,7 @@ Code:
 
 Style:
 - Better way to refer to book sources for paragraphs
+- Use ◊def{} for all definitions and style them similarly
 
 Markup
 + Use <cite> when refering to books, or things with titles

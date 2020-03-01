@@ -159,8 +159,6 @@ Commonly used payment systems, like credit cards for example, asks you to give u
     Bitcoin, like most cryptocurrencies, do record all transactions in a public ledger. So it's a little misleading to say that cryptocurrencies are inherently private, but some cryptocurrencies like ◊link[Monero]{Monero} tries to ◊link[privacy-challenge]{solve this problem}.
 }
 
-◊(define privacy-challenge "/challenges.html#privacy-and-fungibility")
-
 
 ◊subhead{Large and small amounts behave the same}
 
