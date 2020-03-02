@@ -10,6 +10,16 @@ While cryptocurrencies do some things very well, there are several hard unsolved
 
 ◊em{This is a work in progress and I'll add more items as I go.}
 
+◊subhead{Adoption}
+
+◊ol{
+    ◊li{Medium of exchange}
+    ◊li{Store of value}
+    ◊li{Manipulated and irrational markets}
+    ◊li{Legislation}
+    ◊li{User experience?}
+}
+
 ◊subhead{Privacy and fungibility}
 
 Bitcoin, like most cryptocurrencies, uses a public ledger where all transactions and addresses are public. We might say that Bitcoin is ◊em{pseudo-anonymous}: while you can see all transactions and addresses you don't know who owns an address. But if you know someone's address, for example they sent money to you, you can then trace all past and future transactions moving through that address.◊sn{rich-list}
@@ -87,18 +97,27 @@ There are other ideas of how to improve privacy and fungibility for cryptocurren
 ◊(define mastering-monero "https://masteringmonero.com/")
 ◊(define what-is-money "/what_is_money.html")
 
-◊;subhead{Scalability}
 
-◊;subhead{Transaction delays}
+◊subhead{Scalability}
 
-◊;subhead{Energy usage}
+◊ol{
+    ◊li{Block propagation}
+    ◊li{Blockchain size}
+    ◊li{Initial sync}
+    ◊li{Validation speed}
+    ◊li{Bandwith usage}
+}
 
+Not ◊em{everyone} need to run a full node, but enough people need to run them.
+
+
+◊subhead{Transaction delays}
+
+◊subhead{Energy usage}
+
+
+
+◊; ??
 ◊;subhead{User experience}
-
-◊;subhead{Adoption}
-
-◊; (Manipulated and irrational markets)
-◊; (Legislation)
-
 ◊;subhead{Development organization}
 
