@@ -17,7 +17,7 @@ In this section we'll explore benefits cryptocurrencies have over other digital 
 
 The big benefit is cryptocurrencies being ◊link[no-trusted-third-party]{◊em{permissionless}}: anyone can pay and anyone can accept them---for any business. Certain types of businesses, like pot stores or gambling sites, have problems accepting credit cards. Small businesses are also always at risk of having their accounts frozen without warning or recourse.◊sn{minecraft} Similarly there are people who cannot get bank accounts---and are in effect frozen out of large parts of the society.
 
-But there are other benefits as well. Cryptocurrencies have lower fees and they drastically reduce and often eliminates the risk of charge back fraud---a big expense for merchants.
+But there are other benefits as well. Cryptocurrencies have lower fees and by becoming irreversible very quickly they reduce and often eliminates the risk of charge back fraud---a big expense for merchants.
 
 ◊ndef["minecraft"]{
     When I say small business I do mean it. If PayPal freezes the account of a large or popular business, like ◊link[minecraft-paypal]{freezing the account of Minecraft (2010)}, the social backlash will make sure they're unblocked quickly. Small businesses---who can't gather outrage on social media---will simply be ignored.

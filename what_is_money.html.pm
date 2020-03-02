@@ -290,7 +290,7 @@ As seen from historical examples I think it's safe to conclude that yes, basical
 
 ◊subhead{What properties does good money have?}
 
-To function as money ◊link[money-props]{money should have these properties}:◊sn{money-props}
+To function as money money should have these properties:◊sn{money-props}
 
 ◊ndef["money-props"]{
     What properties money should have also differs. Some list ◊em{stability in value} as a property, but I chose to go with ◊em{limited in supply} as I wanted to focus on intrinsic properties that don't change with time. Other ◊link[money-props]{popular descriptions} leave out ◊em{recognizable}, but I felt counterfeit-resistance is too important to leave out.
