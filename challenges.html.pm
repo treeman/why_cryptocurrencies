@@ -6,11 +6,11 @@
 ◊(define-meta updated "2020-01-21T08:28:00+01:00")
 ◊(define-meta uuid "c13d8405-fb3e-411c-b035-aae08eedddf1")
 
-While cryptocurrencies do some things very well, there are several hard unsolved problems with cryptocurrencies. Here's a description of some of them.
+While cryptocurrencies do some things very well, there are several hard unsolved problems with cryptocurrencies. Here's a description of some of them:
 
 ◊subhead{Adoption}
 
-While this analogy might sound strange, money has an important similarity with social networks like Facebook, Twitter or Reddit; almost all their value come from them being used by others.
+While this analogy might sound strange, money has an important similarity with social networks like Facebook, Twitter or Reddit: almost all their value come from them being used by others.
 
 This is called the ◊def[#:src network-effect]{network effect}, and Wikipedia has a succinct way to describe it:
 
@@ -19,7 +19,7 @@ This is called the ◊def[#:src network-effect]{network effect}, and Wikipedia h
 When a network effect is present, the value of a product or service increases according to the number of others using it.
 }
 
-You can have the best website in the world---beautiful, lightning fast and with all the features you could ever need---but if nobody's using it it's a worthless social network. Conversely you can have a shitty website, but it doesn't matter as long as many people use it. A beautiful example of such a site is Twitter, which has an absolutely atrocious user interface, but it's undoubtedly hugely valuable because so many people are invested in the platform.◊sn{twitter-bad}
+You can have the best website in the world---beautiful, lightning fast and with all the features you could ever need---but if nobody's using it it's a worthless social network. Conversely you can have a shitty website, but it doesn't matter as long as many people use it. A beautiful example of such a site is Twitter, which has an absolutely atrocious user interface, but it's hugely valuable because so many people are invested in the platform.◊sn{twitter-bad}
 
 ◊ndef["twitter-bad"]{
     I find Twitter's user experience so bad I can't stand to read yet alone use it.
@@ -28,26 +28,28 @@ You can have the best website in the world---beautiful, lightning fast and with 
 }
 
 
-The network effect is directly correlated to ◊link[money-functions]{the functions of money}: medium of exchange, unit of account and store of value. If more people use a currency, the better it'll function as money, and if very few use it as money the worse it'll be.
+The network effect is directly correlated to ◊link[money-functions]{the functions of money}: medium of exchange, unit of account and store of value. If more people use a currency, the better it'll function as money, and if very few use it the worse it'll be. Therefore I think the lack of adoption is the biggest problem cryptocurrencies face, much larger than the technical issues we'll discuss later in this chapter.◊sn{too-soon}
 
-It's my opinion that the lack of adoption is the biggest problem cryptocurrencies face and as we saw in ◊link[how-well-money-functions]{Are cryptocurrencies money?} this is what holds cryptocurrencies back from functioning well as money. No technical issue comes close to the importance of adoption.◊sn{too-soon}
+◊;It's my opinion that the lack of adoption is the biggest problem cryptocurrencies face and as we saw in ◊link[how-well-money-functions]{an earlier chapter} this is what holds cryptocurrencies back from functioning well as money.◊sn{too-soon}
+
+◊;No technical issue comes close to the importance of adoption.
 
 ◊ndef["too-soon"]{
     It's fair to say that we shouldn't focus on adoption before we've solved the fundamental technical issues, as if we push too hard too soon the push back could be enormous, but it doesn't change the fact that adoption is the most important issue.
 }
 
-The low adoption means it's difficult to use them as money as it's difficult to find stores that accept them, and it's difficult to accept them because you introduce an extra step of having to sell them at an exchange to pay your own bills. It compromises censorship-resistance, as you're forced through exchanges that can censor you. You might also attribute market immaturity partially to low adoption, as smaller markets are easier to manipulate and are more volatile.
+Low adoption means it's difficult to both accept and pay with cryptocurrencies. It even compromises censorship-resistance, as you're forced through exchanges that can censor you instead of being able to spend cryptocurrencies directly. You might also partially attribute market immaturity to low adoption, as smaller markets are easier to manipulate and are more volatile.
 
 As you might see, there's a circular reasoning here:
 
 ◊qt{
-    I don't accept cryptocurrencies because nobody pays with them.
+    I don't pay with cryptocurrencies because nobody accepts them.
 }
 
 and
 
 ◊qt{
-    I don't pay with cryptocurrencies because nobody accepts them.
+    I don't accept cryptocurrencies because nobody pays with them.
 }
 
 This is a tough cycle to break, which explains why cryptocurrencies---despite their many strengths---aren't used more than they are.
@@ -58,12 +60,9 @@ This is a tough cycle to break, which explains why cryptocurrencies---despite th
 ◊(define how-well-money-functions "/are_cryptocurrencies_money.html#how-well-do-other-forms-of-money-function?")
 
 
-    ◊;li{Legislation}
-◊;li{User experience?}
-
 ◊subhead{Privacy and fungibility}
 
-Bitcoin, like most cryptocurrencies, uses a public ledger where all transactions and addresses are public. We might say that Bitcoin is ◊em{pseudo-anonymous}: while you can see all transactions and addresses you don't know who owns an address. But if you know someone's address, for example they sent money to you, you can then trace all past and future transactions moving through that address.◊sn{rich-list}
+Bitcoin, like most cryptocurrencies, uses a public ledger where all transactions and addresses are public. We might say that Bitcoin is ◊em{pseudo-anonymous}: while you can see all transactions and addresses you don't know who owns an address. But if you know someone's address, for example if they sent money to you, you can then trace all past and future transactions moving through that address.◊sn{rich-list}
 
 ◊ndef["rich-list"]{
     It's possible to for example build a ◊link[rich-list]{list of the Bitcoin addresses with the most coins} and to monitor them to see when they send or receive coins.
@@ -140,6 +139,12 @@ There are other ideas of how to improve privacy and fungibility for cryptocurren
 
 
 ◊subhead{Scalability}
+
+Bitcoin can process 3--7 transactions per second.
+
+PayPal average of 193 tx/s
+
+VISA average of 1700 tx/s
 
 ◊ol{
     ◊li{Block propagation}
