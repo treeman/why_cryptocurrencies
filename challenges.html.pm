@@ -184,7 +184,7 @@ There are a number of technical pain points that needs to be improved to scale a
     }
     ◊li{Validation speed
 
-        When a node sees blocks and transactions they must also validate them.◊sn{validation-less-mining}
+        Whenever a node sees blocks and transactions they must also validate them.◊sn{validation-less-mining}
 
         ◊note-pos{validation-less-mining}
     }
@@ -214,12 +214,7 @@ Besides optimizing the standard basic structure defined by Bitcoin, there are ot
 
 Others suggest we should use a completely different system, maybe giving up ◊def{proof-of-work} for ◊def{delegated proof-of-stake} or base it on the ◊link[avalanche]{Avalanche protocol}.
 
-◊;I personally think we can come far by optimizing the base system, but whatever solutions we'll go with I'm confident we can make cryptocurrencies scale enough to be truly useful on a global scale.
-
 It may ultimately be impossible to scale a cryptocurrency so that ◊em{everyone} in the world uses it for their daily transactions, but I'm confident it's possible to scale it to be useful on a global scale.
-
-◊; PayPal average of 193 tx/s
-◊; VISA average of 1700 tx/s
 
 ◊note-pos[#:top -22]{light-wallets}
 ◊note-pos[#:top -14]{layer2}
@@ -239,9 +234,29 @@ It may ultimately be impossible to scale a cryptocurrency so that ◊em{everyone
 ◊(define history-blocksize "https://hackernoon.com/the-great-bitcoin-scaling-debate-a-timeline-6108081dbada")
 ◊(define luke-300kb "https://news.bitcoin.com/core-developers-300kb-block-proposal-bolstered-in-bid-to-push-lightning-adoption/")
 
-◊subhead{Transaction delays}
-
 ◊subhead{Energy usage}
+
+https://en.wikiquote.org/wiki/Cognitive_dissonance
+
+There's something 
+
+Blockchainanalytics.pro:
+https://www.blockchainanalytics.pro/btc/electricity-consumption/
+
+58.2 TWh
+
+(These numbers are off compared to https://www.worlddata.info/africa/nigeria/energy-consumption.php)
+Nigeria: 28 TWh
+New Zealand: 39 TWh
+Portugal: 49 TWh
+Kazakhstan: 81 TWh
+
+From worlddata:
+Sweden: 133 TWh
+USA: 3902 Twh
+
+
+◊; https://www.reddit.com/r/btc/comments/f9rhmv/researh_in_2017_bitcoin_network_consumed_5_twh_of/
 
 
 
