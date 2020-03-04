@@ -200,7 +200,7 @@ There are a number of technical pain points that needs to be improved to scale a
     Miners can delay transaction validation and only validate the POW of a block and start mining it directly. This is a fair assumption as it's very expensive to produce a valid POW for a block.
 }
 
-When we increase transaction throughput we also increase the burden of full nodes (those who validate and store the blockchain) and it might mean that fewer people can run nodes, harming the node decentralization of the network. It's not a problem as long as enough people can and want to run a node, and at the very least exchanges, researchers, developers, payment processors and enthusiasts will want to as long as it's not prohibitively expensive.◊sn{light-wallets}
+When we increase transaction throughput we also increase the burden of full nodes (those who validate and store the blockchain) and it might mean that fewer people can run nodes, harming the node decentralization of the network. It's not a problem as long as enough people can and want to run a node; and exchanges, researchers, developers, payment processors, mining pools and enthusiasts will want to as long as it's not extremely expensive.◊sn{light-wallets}
 
 ◊ndef["light-wallets"]{
     Most people won't run a full node anyway as they will use light wallets or SPV wallets on the mobile phone, which will ask other full nodes for the data they need.
