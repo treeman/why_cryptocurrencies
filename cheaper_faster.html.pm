@@ -39,7 +39,7 @@ In fact Bitcoin fees of $2-3 is still low compared the fees during the bull run 
 ◊ndef["fee-market"]{
     There are some Bitcoin developers who claims high fees are necessary for the survival of Bitcoin. Gregory Maxwell was famously "◊link[nullc-champaign]{pulling out the champaign}" when Bitcoin had $50 fees. He thought it was a sign that the market supported the ◊em{"fee market"} idea.
 
-    The issue is that Bitcoin's block reward will eventually run out (after several decades), so who will pay the miners to secure the network? The "fee market" idea is that transactions must be very expensive for it to be worth it for miners to secure the chain.
+    The issue is that Bitcoin's block reward will eventually run out (after several decades), so who will pay the miners to secure the network? The "fee market" idea says that transactions must be very expensive for it to be worth it for miners to secure the chain.
 
     There are other possible solutions:
 
@@ -49,32 +49,21 @@ In fact Bitcoin fees of $2-3 is still low compared the fees during the bull run 
     See ◊link[fee-market-myth]{the fee market myth} for more info (it was written a year before the ridiculous $50 fees).
 }
 
-You may think the fees are so high because Bitcoin is much more popular than other cryptocurrencies, but that's not the whole story. In fact it would be easy to lower the fees---Bitcoin Cash can for example handle at least 20 times the transaction count of Bitcoin, while keeping the same low fees.◊sn{scaling}
+You may think the fees are so high because Bitcoin is much more popular than other cryptocurrencies, but that's not the whole story. In fact it would be easy to lower the fees---Bitcoin Cash can for example handle at least 20 times the transaction count of Bitcoin, while keeping the same low fees. See the ◊link[scalability]{discussion of the scalability challenge} in the appendix for more details.
 
-Bitcoin just doesn't work well as a currency with these high and unreliable fees, but it's not representative of cryptocurrencies in general.◊sn{bch-btc}
+Bitcoin just doesn't work well as a currency with these high and unreliable fees, but it's not representative of cryptocurrencies in general.
 
-◊note-pos[#:top -15]{fee-market}
-◊note-pos{scaling}
-◊note-pos{bch-btc}
+◊note-pos[#:top -18]{fee-market}
 
 ◊ndef["scaling"]{
     How well cryptocurrencies can scale is an ongoing research, and supporting as many transactions as VISA does with the same fees might be difficult.
 }
 
-◊ndef["bch-btc"]{
-    See ◊link[history-blocksize]{this timeline} for the history of the blocksize debate (it only goes up to Dec 2017, but as of May 2019 no significant development has happened). Because Bitcoin didn't raise the blocksize ◊link[bch]{Bitcoin Cash} was created in 2017, keeping fees low and transaction capacity high.
-
-    There are ◊strong{◊link[hearn]{no valid}} reasons against a moderate blocksize increase, yet there are Bitcoin developers who to this day think we should ◊link[luke-300kb]{decrease it to 300kb}. Ideas like this is why Bitcoin no longer work as a currency.
-}
-
-◊(define hearn "https://blog.plan99.net/the-resolution-of-the-bitcoin-experiment-dabb30201f7?gi=c2a62f310034")
-◊(define bch "https://www.bitcoin.com/what-is-bitcoin-cash/")
 ◊(define fee-market-myth "https://medium.com/@johnblocke/the-fee-market-myth-b9d189e45096")
 ◊(define median-tx-fee "https://bitinfocharts.com/comparison/median_transaction_fee-btc-ltc-bch-xmr-doge.html")
 ◊(define median-tx-fee-monero "https://www.monero.how/monero-transaction-fees")
 ◊(define nullc-champaign "https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2017-December/015455.html")
-◊(define luke-300kb "https://news.bitcoin.com/core-developers-300kb-block-proposal-bolstered-in-bid-to-push-lightning-adoption/")
-◊(define history-blocksize "https://hackernoon.com/the-great-bitcoin-scaling-debate-a-timeline-6108081dbada")
+◊(define scalability "/challenges.html#scalability")
 
 
 ◊subhead{Who pays the fees?}

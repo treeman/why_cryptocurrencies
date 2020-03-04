@@ -54,6 +54,9 @@ and
 
 This is a tough cycle to break, which explains why cryptocurrencies---despite their many strengths---aren't used more than they are.
 
+◊note-pos[#:top -44]{twitter-bad}
+◊note-pos[#:top -32]{too-soon}
+
 
 ◊(define network-effect "https://en.wikipedia.org/wiki/Network_effect")
 ◊(define money-functions "/what_is_money.html#what-functions-does-money-serve?")
@@ -123,6 +126,10 @@ You can still verify the proof-of-work and even the coin supply on Monero, altho
 
 There are other ideas of how to improve privacy and fungibility for cryptocurrencies, and cryptocurrencies of the future might work differently to what I've described here. There are weaknesses to the solutions we've seen so far and they also come with disadvantages. For example transactions in Monero are larger than transactions in Bitcoin, making Monero even more difficult to scale. But research is ongoing and I'm hopeful.
 
+◊note-pos[#:top -157]{rich-list}
+◊note-pos[#:top -116]{surveillance-coin}
+◊note-pos[#:top -56]{fungibility}
+
 
 ◊;Cryptocurrencies can be used anonymously---your identity isn't tied to your addresses. But as with all tools, cryptocurrencies won't ◊em{guarantee} your anonymity. For example if you try to buy a VPN anonymously with Bitcoin, your identity might still be revealed if the coins can be traced back to an exchange that have your name. Or they might trace your IP you purchased it with, or track browser cookies or you might just make a silly mistake like associate your name with the email you sign up with.
 
@@ -142,7 +149,7 @@ There are other ideas of how to improve privacy and fungibility for cryptocurren
 
 Perhaps the most famous technical issue cryptocurrencies face is how to scale them and to increase transaction throughput. This is the big drawback with a decentralized system compared to a centralized system; they're just so much less efficient.
 
-Bitcoin can for example only process 3--7 transactions per second (tx/s) at max capacity, while PayPal processes ◊em{on average} ◊nbsp{200 tx/s} and VISA an average of ◊nbsp{2 000 tx/s}, with VISA's peak capacity being well over ◊nbsp{20 000 tx/s}. If cryptocurrencies should live up to their potential then there's lots of work to do here.
+Bitcoin can for example only process 3--7 transactions per second (tx/s) at max capacity, while ◊link[paypal-transactions]{PayPal processes on average ◊nbsp{400 tx/s}} and ◊link[visa-transactions]{VISA an average of ◊nbsp{1 700 tx/s}}, with VISA's peak capacity being over ◊nbsp{24 000 tx/s}. If cryptocurrencies should live up to their potential then there's lots of work to do here.
 
 But it's not quite as bad as the numbers seem to suggest. Bitcoin operates far from the technical limits because they didn't raise the blocksize limit, which essentially sets an artificial limit on transaction throughput. ◊link[bch]{Bitcoin Cash}, a fork of Bitcoin, has raised this limit and has more than 20 times the throughput of Bitcoin (around ◊nbsp{100 tx/s}). So cryptocurrencies can at least be in the same playing field as PayPal.◊sn{blocksize}
 
@@ -154,14 +161,43 @@ But it's not quite as bad as the numbers seem to suggest. Bitcoin operates far f
 
 But it's not as easy as "just increase the blocksize". Larger blocks have a centralizing effect, which compromises the core value proposition of a cryptocurrency, and if the network cannot handle them it may even break down.
 
-There are a number of technical pain points that needs to be improved to scale a cryptocurrency. Here's a list of some that I think are especially important:
+There are a number of technical pain points that needs to be improved to scale a cryptocurrency. Here's a list of some that I think are important:
 
 ◊ol{
-    ◊li{Block propagation}
-    ◊li{Validation speed}
-    ◊li{Blockchain size}
-    ◊li{Initial sync}
-    ◊li{Bandwith usage}
+    ◊li{Block propagation
+
+        When a miner finds a block it's important that it propagates around the world to all other miners, so they can continue building on it. This should be done quickly, otherwise it'll increase orphan rates (the risk that a block will get discarded as another one was found at the same time), which will have a centralizing effect as it harms smaller miners more than larger miners.
+    }
+    ◊li{Blockchain size
+
+        Because full nodes must store transactions ◊em{forever}, it's important that the blockchain size (containing all transactions) doesn't outgrow the storage capacity of nodes.◊sn{btc-size}
+
+        ◊note-pos{btc-size}
+    }
+    ◊li{Bandwith usage
+
+        It's important that nodes have internet connections enough bandwidth to share transactions with each other.
+    }
+    ◊li{Initial sync
+
+        When you first start up a node from scratch you need download and validate the whole blockchain. This must be fast enough so that nodes are able to catch up in a reasonable amount of time.
+    }
+    ◊li{Validation speed
+
+        When a node sees blocks and transactions they must also validate them.◊sn{validation-less-mining}
+
+        ◊note-pos{validation-less-mining}
+    }
+}
+
+◊ndef["btc-size"]{
+    As of 2020-03-04 the total ◊link[btc-blockchain-size]{blockchain size of Bitcoin} is 265 GB. That's not small, but a 1 TB SSD harddisk costs around $120 and can store the entire BTC blockchain for almost 15 more years (it grows around 50 GB/year).
+}
+
+◊(define btc-blockchain-size "https://www.blockchain.com/charts/blocks-size")
+
+◊ndef["validation-less-mining"]{
+    Miners can delay transaction validation and only validate the POW of a block and start mining it directly. This is a fair assumption as it's very expensive to produce a valid POW for a block.
 }
 
 When we increase transaction throughput we also increase the burden of full nodes (those who validate and store the blockchain) and it might mean that fewer people can run nodes, harming the node decentralization of the network. It's not a problem as long as enough people can and want to run a node, and at the very least exchanges, researchers, developers, payment processors and enthusiasts will want to as long as it's not prohibitively expensive.◊sn{light-wallets}
@@ -178,10 +214,23 @@ Besides optimizing the standard basic structure defined by Bitcoin, there are ot
 
 Others suggest we should use a completely different system, maybe giving up ◊def{proof-of-work} for ◊def{delegated proof-of-stake} or base it on the ◊link[avalanche]{Avalanche protocol}.
 
-I personally think we can come far by optimizing the base system, but whatever solutions we'll go with I'm confident we can make cryptocurrencies scale enough to be truly useful on a global scale.
+◊;I personally think we can come far by optimizing the base system, but whatever solutions we'll go with I'm confident we can make cryptocurrencies scale enough to be truly useful on a global scale.
+
+It may ultimately be impossible to scale a cryptocurrency so that ◊em{everyone} in the world uses it for their daily transactions, but I'm confident it's possible to scale it to be useful on a global scale.
 
 ◊; PayPal average of 193 tx/s
 ◊; VISA average of 1700 tx/s
+
+◊note-pos[#:top -22]{light-wallets}
+◊note-pos[#:top -14]{layer2}
+
+◊; 12362000000/(365 * 24 * 60 * 60)
+◊; 391.9964485032978
+◊(define paypal-transactions "https://www.statista.com/statistics/218495/paypals-net-number-of-payments-per-quarter/")
+◊; 150 million tx/day
+◊; 150000000/(24 *60*60)
+◊; 1736.111111111111
+◊(define visa-transactions "https://usa.visa.com/run-your-business/small-business-tools/retail.html")
 
 
 ◊(define avalanche "https://avalanchelabs.org/QmT1ry38PAmnhparPUmsUNHDEGHQusBLD6T5XJh4mUUn3v.pdf")
