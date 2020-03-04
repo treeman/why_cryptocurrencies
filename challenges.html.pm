@@ -140,22 +140,55 @@ There are other ideas of how to improve privacy and fungibility for cryptocurren
 
 ◊subhead{Scalability}
 
-Bitcoin can process 3--7 transactions per second.
+Perhaps the most famous technical issue cryptocurrencies face is how to scale them and to increase transaction throughput. This is the big drawback with a decentralized system compared to a centralized system; they're just so much less efficient.
 
-PayPal average of 193 tx/s
+Bitcoin can for example only process 3--7 transactions per second (tx/s) at max capacity, while PayPal processes ◊em{on average} ◊nbsp{200 tx/s} and VISA an average of ◊nbsp{2 000 tx/s}, with VISA's peak capacity being well over ◊nbsp{20 000 tx/s}. If cryptocurrencies should live up to their potential then there's lots of work to do here.
 
-VISA average of 1700 tx/s
+But it's not quite as bad as the numbers seem to suggest. Bitcoin operates far from the technical limits because they didn't raise the blocksize limit, which essentially sets an artificial limit on transaction throughput. ◊link[bch]{Bitcoin Cash}, a fork of Bitcoin, has raised this limit and has more than 20 times the throughput of Bitcoin (around ◊nbsp{100 tx/s}). So cryptocurrencies can at least be in the same playing field as PayPal.◊sn{blocksize}
+
+◊ndef["blocksize"]{
+    See ◊link[history-blocksize]{this timeline} for the history of the blocksize debate (it only goes up to Dec 2017, but as of May 2019 no significant development has happened). Because Bitcoin didn't raise the blocksize Bitcoin Cash was created in 2017, keeping fees low and transaction capacity high.
+
+    There are ◊strong{◊link[hearn]{no valid}} reasons against a moderate blocksize increase, yet there are Bitcoin developers who to this day think we should ◊link[luke-300kb]{decrease it to 300kb}.
+}
+
+But it's not as easy as "just increase the blocksize". Larger blocks have a centralizing effect, which compromises the core value proposition of a cryptocurrency, and if the network cannot handle them it may even break down.
+
+There are a number of technical pain points that needs to be improved to scale a cryptocurrency. Here's a list of some that I think are especially important:
 
 ◊ol{
     ◊li{Block propagation}
+    ◊li{Validation speed}
     ◊li{Blockchain size}
     ◊li{Initial sync}
-    ◊li{Validation speed}
     ◊li{Bandwith usage}
 }
 
-Not ◊em{everyone} need to run a full node, but enough people need to run them.
+When we increase transaction throughput we also increase the burden of full nodes (those who validate and store the blockchain) and it might mean that fewer people can run nodes, harming the node decentralization of the network. It's not a problem as long as enough people can and want to run a node, and at the very least exchanges, researchers, developers, payment processors and enthusiasts will want to as long as it's not prohibitively expensive.◊sn{light-wallets}
 
+◊ndef["light-wallets"]{
+    Most people won't run a full node anyway as they will use light wallets or SPV wallets on the mobile phone, which will ask other full nodes for the data they need.
+}
+
+Besides optimizing the standard basic structure defined by Bitcoin, there are other scaling proposals out there. Some say we should offload transactions to "layer two" networks, which will only occasionally settle back to a cryptocurrency thereby increasing transaction throughput.◊sn{layer2}
+
+◊ndef["layer2"]{
+    While I'm not against layer two solutions, I'm deeply skeptical of them being a solution to the scaling problem. Simply because if you transact on another network, you're not actually using a cryptocurrency, but you're using something else with different properties.
+}
+
+Others suggest we should use a completely different system, maybe giving up ◊def{proof-of-work} for ◊def{delegated proof-of-stake} or base it on the ◊link[avalanche]{Avalanche protocol}.
+
+I personally think we can come far by optimizing the base system, but whatever solutions we'll go with I'm confident we can make cryptocurrencies scale enough to be truly useful on a global scale.
+
+◊; PayPal average of 193 tx/s
+◊; VISA average of 1700 tx/s
+
+
+◊(define avalanche "https://avalanchelabs.org/QmT1ry38PAmnhparPUmsUNHDEGHQusBLD6T5XJh4mUUn3v.pdf")
+◊(define hearn "https://blog.plan99.net/the-resolution-of-the-bitcoin-experiment-dabb30201f7?gi=c2a62f310034")
+◊(define bch "https://www.bitcoin.com/what-is-bitcoin-cash/")
+◊(define history-blocksize "https://hackernoon.com/the-great-bitcoin-scaling-debate-a-timeline-6108081dbada")
+◊(define luke-300kb "https://news.bitcoin.com/core-developers-300kb-block-proposal-bolstered-in-bid-to-push-lightning-adoption/")
 
 ◊subhead{Transaction delays}
 
