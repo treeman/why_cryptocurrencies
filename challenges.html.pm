@@ -234,11 +234,18 @@ It may ultimately be impossible to scale a cryptocurrency so that ◊em{everyone
 ◊(define history-blocksize "https://hackernoon.com/the-great-bitcoin-scaling-debate-a-timeline-6108081dbada")
 ◊(define luke-300kb "https://news.bitcoin.com/core-developers-300kb-block-proposal-bolstered-in-bid-to-push-lightning-adoption/")
 
+
 ◊subhead{Energy usage}
 
-https://en.wikiquote.org/wiki/Cognitive_dissonance
+Do you know how you can have two conflicting beliefs at the same time? For example you might know for a fact that eating too much candy is very bad for your health---and you really would like to loose weight---but you still eat it. Or how you think that cheating for an exam is wrong, but you still do it because "you had to".
 
-There's something 
+This is called ◊def[#:src cognitive_dissonance]{cognitive disonance} and it can cause great discomfort when we have to face it. It's also something I, as a cryptocurrency supporter and an environmentalist, struggle with.◊sn{coping}
+
+◊ndef["coping"]{
+    When we experience the uncomfortable dissonance we try to reduce it in some way, which often happens unconsciously. We might for example downplay the importance on one side of the conflict ("it's just one chocolate bar"), we might rationalize it in some way ("I'll exercise harder later") or we might suppress the issue entirely (stop talking to anyone who reminds you that you're on a diet).
+}
+
+◊(define cognitive_dissonance "https://en.wikiquote.org/wiki/Cognitive_dissonance")
 
 Blockchainanalytics.pro:
 https://www.blockchainanalytics.pro/btc/electricity-consumption/
