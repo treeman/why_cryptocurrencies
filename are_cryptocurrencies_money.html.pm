@@ -44,7 +44,9 @@ To decide how well cryptocurrencies can function as money, we'll take a look at 
     }
     ◊li{◊strong{Recognizable}
 
-        Cryptocurrencies are easy to identify and impossible to counterfeit.
+        Cryptocurrencies are impossible to counterfeit and if implemented correctly they're easy to separate from each other.
+
+        While at a low level it may be difficult to tell which cryptocurrency a hash or a number belongs to, all necessary data is public so you can differentiate them. Wallet apps does this automatically, making them easy to identify.
     }
 }
 
@@ -54,8 +56,8 @@ Cryptocurrencies can also be considered to be ◊link[sound-money]{◊em{sound m
 
 ◊(define sound-money "https://www.soundmoneydefense.org/sound-money-explained")
 
-◊note-pos[#:top -53]{crypto-acceptable}
-◊note-pos[#:top -40]{backups}
+◊note-pos[#:top -60]{crypto-acceptable}
+◊note-pos[#:top -47]{backups}
 ◊note-pos{backed}
 
 ◊ndef["backed"]{

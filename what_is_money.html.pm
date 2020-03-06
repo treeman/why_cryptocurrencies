@@ -323,7 +323,7 @@ To function as money money should have these properties:◊sn{money-props}
 
         The difference between ◊em{fungibility} and ◊em{uniformity} is confusing, so I'll bundle them together.◊sn{fungible-uniform}
 
-        It means shares in a company should be worth the same, even if bought at different times and at different prices. And all gold coins of the same denomination should contain the same amount of gold.
+        For example, all shares in a company should be worth the same, even if bough at different times and at different prices, and all gold coins of the same denomination should contain the same amount of gold.
     }
     ◊li{◊strong{Limited in supply}
 
@@ -341,13 +341,13 @@ To function as money money should have these properties:◊sn{money-props}
 
         Money should be easy to identify and difficult to counterfeit.
 
-        You should be able to differentiate between different types of money, so you for example don't mistake Dollar notes for Euro or Monopoly notes. This is sometimes referred to as ◊em{cognizable}.
+        You should be able to differentiate between different types of money, so you for example don't mistake Dollar notes for Euro or Monopoly notes, and you should be able to separate real from fake notes. This is sometimes referred to as ◊em{cognizable}.
     }
 }
 
 ◊note-pos[#:top -50]{money-props}
-◊note-pos[#:top -29]{fungible-uniform}
-◊note-pos[#:top -13]{limited-supply}
+◊note-pos[#:top -32]{fungible-uniform}
+◊note-pos[#:top -16]{limited-supply}
 
 We can summarize the properties as: money should be practical and efficient.
 

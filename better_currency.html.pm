@@ -17,10 +17,8 @@ Our focus during the last section was on the use of cryptocurrencies as a paymen
 ◊ndef["currency-money"]{
     The term ◊em{money} refers to an intangible concept and ◊em{currency} is the actual thing used as money.
 
-    For example cryptocurrencies is money---you cannot pay me with "3 cryptocurrency". And Bitcoin (BTC) is a currency because you can send 3 BTC to me.
+    For example cryptocurrencies are money---you cannot pay me with "3 cryptocurrency". And Bitcoin (BTC) is a currency because you can send 3 BTC to me.
 }
-
-We previously asked ourself ◊link[what-is-money]{what money is} and found that money is a tool to make trade more efficient. There are a number of properties good money should have, such as being durable and divisible, and cryptocurrencies fulfill these very well and should be ◊link[are-cryptos-money]{considered a form of money}. I would even go so far to say they have better properties for money than anything else in history, but they're held back by adoption and volatility.
 
 In this section we'll focus on the benefits of using cryptocurrencies as money and compare it to what we use today. We'll begin by highlighting flaws with the current financial system, flaws that originate from our use of unsound money. It's a system full of broken incentives, that relies on being able to predict the unpredictable and that tries to solve all problems by printing more money, which has various negative side-effects.
 
