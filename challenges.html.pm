@@ -8,6 +8,7 @@
 
 While cryptocurrencies do some things very well, there are several hard unsolved problems with cryptocurrencies. Here's a description of some of them:
 
+
 ◊subhead{Adoption}
 
 While this analogy might sound strange, money has an important similarity with social networks like Facebook, Twitter or Reddit: almost all their value come from them being used by others.
@@ -245,6 +246,19 @@ This is called ◊def[#:src cognitive_dissonance]{cognitive disonance} and it ca
     When we experience the uncomfortable dissonance we try to reduce it in some way, which often happens unconsciously. We might for example downplay the importance on one side of the conflict ("it's just one chocolate bar"), we might rationalize it in some way ("I'll exercise harder later") or we might suppress the issue entirely (stop talking to anyone who reminds you that you're on a diet).
 }
 
+The issue is that cryptocurrencies with POW use a lot of energy. Bitcoin for example uses more energy than entire countries!
+
+This is absolutely a big problem, but this is also accompanied by some misunderstandings:
+
+◊ol{
+    ◊li{The energy isn't completely wasted
+
+        The energy is used to secure the chain, because to attack it you need to expend at least that amount of energy. It's similar to how you need protect gold with armored cars and vaults.
+
+        Of course if you believe that cryptocurrencies are completely worthless then yes, it's all a complete waste.
+    }
+}
+
 ◊(define cognitive_dissonance "https://en.wikiquote.org/wiki/Cognitive_dissonance")
 
 Blockchainanalytics.pro:
@@ -266,8 +280,39 @@ USA: 3902 Twh
 ◊; https://www.reddit.com/r/btc/comments/f9rhmv/researh_in_2017_bitcoin_network_consumed_5_twh_of/
 
 
+◊subhead{More problems}
+
+An exhaustive list and description of all problems would require much more than one book. Still I'd like to at least mention a couple of other problems:
+
+◊ol{
+    ◊li{User experience
+
+        The user experience of cryptocurrencies isn't that good. Wallets are hard to understand and if you mess up you can lose your funds forever.
+    }
+    ◊li{Scams everywhere
+
+        For every legitimate cryptocurrency there are thousands of scams, and it can be very difficult for outsiders to identify them.
+    }
+    ◊li{Regulation
+
+        Having to calculate and declare taxes for ◊em{every} cryptocurrency purchase you make is a clear hindrance to adoption. Not to mention them being illegal in some countries.
+    }
+    ◊li{Development organization
+
+        A cryptocurrency is supposed to remove third parties, but that raises the question how will you upgrade a cryptocurrency? In practice the development has been dictated by a single development team, which gives them a great deal of power and it's a source of centralization.
+    }
+    ◊li{Confirmation time
+
+        Even though I did write ◊link[cheaper-faster]{that cryptocurrencies are faster} than alternatives, the system isn't fool-proof. While 0-conf is often good enough, if you need more security then you sometimes need to wait up to an hour or two before your first confirmation.
+    }
+}
+
 
 ◊; ??
 ◊;subhead{User experience}
 ◊;subhead{Development organization}
+◊;subhead{Regulation}
+◊;subhead{Confirmation time}
 
+◊(define snake-oil "/look_out_for_snake_oil.html")
+◊(define cheaper-faster "/cheaper_faster.html")
