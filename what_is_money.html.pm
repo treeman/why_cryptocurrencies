@@ -3,7 +3,7 @@
 ◊(define-meta title "What is money?")
 ◊(define-meta subtitle "It's subjective")
 ◊(define-meta published "2019-05-16T00:00:00+01:00")
-◊(define-meta updated "2020-01-21T08:29:41+01:00")
+◊(define-meta updated "2020-03-09T21:09:54+01:00")
 ◊(define-meta uuid "67cd34c5-058b-4908-a4a6-aed09aff22cc")
 
 ◊epigraph{
@@ -290,10 +290,10 @@ As seen from historical examples I think it's safe to conclude that yes, basical
 
 ◊subhead{What properties does good money have?}
 
-To function as money ◊link[money-props]{money should have these properties}:◊sn{money-props}
+To function as money money should have these properties:◊sn{money-props}
 
 ◊ndef["money-props"]{
-    Which properties money should have also differs. Some list ◊em{recognisable} and others leave out ◊em{fungible} (keeping ◊em{uniform}). Again I chose to go with what appears to be the popular description.
+    What properties money should have also differs. Some list ◊em{stability in value} as a property, but I chose to go with ◊em{limited in supply} as I wanted to focus on intrinsic properties that don't change with time. Other ◊link[money-props]{popular descriptions} leave out ◊em{recognizable}, but I felt counterfeit-resistance is too important to leave out.
 }
 
 ◊(define money-props "http://money.visualcapitalist.com/tag/properties-of-money/")
@@ -323,13 +323,13 @@ To function as money ◊link[money-props]{money should have these properties}:�
 
         The difference between ◊em{fungibility} and ◊em{uniformity} is confusing, so I'll bundle them together.◊sn{fungible-uniform}
 
-        It means shares in a company should be worth the same, even if bought at different times and at different prices. And all gold coins of the same denomination should contain the same amount of gold.
+        For example, all shares in a company should be worth the same, even if bough at different times and at different prices, and all gold coins of the same denomination should contain the same amount of gold.
     }
     ◊li{◊strong{Limited in supply}
 
         There should be a limited and predictable amount of money.◊sn{limited-supply}
 
-        A limited amount is needed for the money to hold it's value. It's important that money can't be counterfeit, otherwise it would be possible to produce an unlimited amount of money.
+        A limited amount is needed for the money to hold it's value.
     }
     ◊li{◊strong{Portable}
 
@@ -337,11 +337,17 @@ To function as money ◊link[money-props]{money should have these properties}:�
 
         Money should be practical.
     }
+    ◊li{◊strong{Recognizable}
+
+        Money should be easy to identify and difficult to counterfeit.
+
+        You should be able to differentiate between different types of money, so you for example don't mistake Dollar notes for Euro or Monopoly notes, and you should be able to separate real from fake notes. This is sometimes referred to as ◊em{cognizable}.
+    }
 }
 
-◊note-pos[#:top -46]{money-props}
-◊note-pos[#:top -25]{fungible-uniform}
-◊note-pos[#:top -9]{limited-supply}
+◊note-pos[#:top -50]{money-props}
+◊note-pos[#:top -32]{fungible-uniform}
+◊note-pos[#:top -16]{limited-supply}
 
 We can summarize the properties as: money should be practical and efficient.
 
@@ -386,7 +392,7 @@ The large ◊strong{Rai stones} and the ◊strong{20kg copper coin} are great ex
 
 ◊strong{Sea shells} work well as money---assuming they're not too plentiful. If used in a local market---for example on an island---there's always a risk of the market being overrun by shells from other islands, where they're more common. But they're durable, lightweight and easy to use, which are great properties for money to have.
 
-◊strong{Metal coins} is a very good form of money, especially if made by scarce material. Gold is naturally very scarce, ensuring a limited supply, and coins are easy to use and very durable. This is the reason coins have been the dominating type of currency for over 2000 years.◊sn{gold-counterfeit}
+◊strong{Metal coins} is a very good form of money, especially if made by scarce material. Gold is naturally very scarce, ensuring a limited supply, and coins are easy to use and very durable. This is the reason coins have been the dominating type of currency for over 2000 years.
 
 How well ◊strong{cryptocurrencies} work as money is a topic for the ◊link[next-chapter]{next chapter}.
 
@@ -394,10 +400,9 @@ How well ◊strong{cryptocurrencies} work as money is a topic for the ◊link[ne
     Even gold coins have problems. For instance it's quite difficult to separate real from fake coins---it requires expertise and specialized tools.
 }
 
-◊note-pos[#:top -35]{really-bad}
-◊note-pos[#:top -28]{smaller-denominations}
-◊note-pos[#:top -22]{marble-coin}
-◊note-pos[#:top -2.5]{gold-counterfeit}
+◊note-pos[#:top -39]{really-bad}
+◊note-pos[#:top -32]{smaller-denominations}
+◊note-pos[#:top -26]{marble-coin}
 
 
 ◊subhead{The problem with fiat currencies}

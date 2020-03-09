@@ -3,7 +3,7 @@
 ◊(define-meta title "A better currency")
 ◊(define-meta subtitle "Magic internet money")
 ◊(define-meta published "2019-10-25T00:00:00+01:00")
-◊(define-meta updated "2020-01-15T20:08:02+01:00")
+◊(define-meta updated "2020-03-09T21:07:48+01:00")
 ◊(define-meta uuid "10e625f0-2470-49a9-ae74-36f0c78d943b")
 
 ◊epigraph{
@@ -17,12 +17,14 @@ Our focus during the last section was on the use of cryptocurrencies as a paymen
 ◊ndef["currency-money"]{
     The term ◊em{money} refers to an intangible concept and ◊em{currency} is the actual thing used as money.
 
-    For example cryptocurrencies is money---you cannot pay me with "3 cryptocurrency". And Bitcoin (BTC) is a currency because you can send 3 BTC to me.
+    For example cryptocurrencies are money---you cannot pay me with "3 cryptocurrency". And Bitcoin (BTC) is a currency because you can send 3 BTC to me.
 }
 
-We previously asked ourself ◊link[what-is-money]{what money is} and found that money is a tool to make trade more efficient. There are a number of properties good money should have, such as being durable and divisible, and cryptocurrencies fulfill these very well and should be ◊link[are-cryptos-money]{considered a form of money}. I would even go so far to say they have better properties for money than anything else in history, but they're held back by adoption and volatility.
+In this section we'll focus on the benefits of using cryptocurrencies as money and compare it to what we use today. We'll begin by highlighting flaws with the current financial system, flaws that originate from our use of unsound money. It's a system full of broken incentives, that relies on being able to predict the unpredictable and that tries to solve all problems by printing more money, which has various negative side-effects.
 
-In this section we'll focus on benefits of using cryptocurrencies as money and comparisons with what we use today. You might want to review the ◊link[crypto-properties]{properties cryptocurrencies have}, but for this section the most important one is the lack of central control over the money supply. It's similar to gold in this respect, except that ◊link[fake-gold]{gold can be counterfeit}.◊sn{why-not-gold?}
+Even though privacy is a human right, the digital money we use today is very bad for privacy as all our financial information is tracked, stored and sold to private companies. Privacy is important because it helps you stay who you are and it increases the personal security for yourself and others.
+
+Cryptocurrencies mitigates all these problems, and they're also truly global, unhampered by borders, disputes and local monetary policy.◊sn{why-not-gold?}
 
 ◊ndef["why-not-gold?"]{
     Many of my arguments in this section will apply to gold, or gold-backed fiat, as well as cryptocurrencies. See the ◊link[comparing-props]{comparision of properties between different forms of money} for more details on the pros and cons of different forms of money.
