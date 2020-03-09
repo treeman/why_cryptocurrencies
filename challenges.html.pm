@@ -287,7 +287,7 @@ An exhaustive list and description of all problems would require much more than 
 ◊ol{
     ◊li{User experience
 
-        The user experience of cryptocurrencies isn't that good. Wallets are hard to understand and if you mess up you can lose your funds forever.
+        The user experience of cryptocurrencies isn't that good. Wallets are hard to understand and if you mess up you might lose your funds forever.
     }
     ◊li{Scams everywhere
 
