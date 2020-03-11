@@ -246,35 +246,56 @@ This is called ◊def[#:src cognitive_dissonance]{cognitive disonance} and it ca
     When we experience the uncomfortable dissonance we try to reduce it in some way, which often happens unconsciously. We might for example downplay the importance on one side of the conflict ("it's just one chocolate bar"), we might rationalize it in some way ("I'll exercise harder later") or we might suppress the issue entirely (stop talking to anyone who reminds you that you're on a diet).
 }
 
-The issue is that cryptocurrencies with POW use a lot of energy. Bitcoin for example uses more energy than entire countries!
+The issue is that cryptocurrencies with proof-of-work use a lot of energy. Bitcoin for example uses more energy than entire countries!
 
-This is absolutely a big problem, but this is also accompanied by some misunderstandings:
+24.72 TWh Nigeria
+39.5 TWh New Zealand
+46.94 TWh Portugal
+58.2 TWh BTC
+94.23 TWh Kazakhstan
+133 TWh Sweden
+3902 Twh USA
+5564 Twh China
+
+
+◊(define energy-btc "https://www.blockchainanalytics.pro/btc/electricity-consumption/")
+◊(define worlddata "https://www.worlddata.info/")
+◊(define coinshares-mining "https://coinsharesgroup.com/research/bitcoin-mining-network-december-2019")
+
+This is absolutely a big problem, but there are some important points we need to keep in mind:
 
 ◊ol{
-    ◊li{The energy isn't completely wasted
+    ◊li{The energy isn't wasted
 
-        The energy is used to secure the chain, because to attack it you need to expend at least that amount of energy. It's similar to how you need protect gold with armored cars and vaults.
+        The energy is used to secure the chain, because to attack it you need to expend at least that amount of energy. If the energy usage was low, it would be easy to attack.
+    }
+    ◊li{Unrelated to transaction throughput
 
-        Of course if you believe that cryptocurrencies are completely worthless then yes, it's all a complete waste.
+        Critics like to look at how much energy is spent to process a single transaction---which makes Bitcoin look extremely bad---but it's a bit misleading since transaction throughput is an unrelated problem.
+    }
+    ◊li{Mostly cheap and renewable energy
+
+        According to ◊link[coinshares-mining]{CoinShares research} 73% of Bitcoin mining uses renewable energy, mostly in the form of cheap hydropower in China.◊sn{renewable-bad}
+    }
+    ◊li{Energy consumption follows mining profitability
+
+        Bitcoin mining is purely profit driven; when the price of Bitcoin goes up, it becomes more profitable to mine and when the price goes down, it's less profitable to mine. Similarly if the energy price would go up, then it's less profitable to mine and Bitcoin would use less energy.
+
+        In fact it's already difficult to run a profitable mining operation, which is why most mining is based in countries with cheap energy.
     }
 }
 
+◊ndef["renewable-bad"]{
+    Although hydropower is good from a CO◊sub{2} perspective, building large dams is very disruptive for the enviroment.
+}
+
+There's no other way to reduce the energy usage than to replace proof-of-work with another consensus mechanism. I think this is why proof-of-stake is so appealing, despite unsolved problems and drawbacks.
+
+◊;You can rationalize Bitcoin's energy usage by comparing it to alternatives---like the banking system or the military---and say "hey, it's not that bad!", but that comes too close to downplaying the issue for my taste.
+
+If we're stuck with proof-of-work then we just have to accept that it uses a lot of energy, and we have to decide if it's worth it. Are the use-cases valuable enough to warrant spending this much energy?
+
 ◊(define cognitive_dissonance "https://en.wikiquote.org/wiki/Cognitive_dissonance")
-
-Blockchainanalytics.pro:
-https://www.blockchainanalytics.pro/btc/electricity-consumption/
-
-58.2 TWh
-
-(These numbers are off compared to https://www.worlddata.info/africa/nigeria/energy-consumption.php)
-Nigeria: 28 TWh
-New Zealand: 39 TWh
-Portugal: 49 TWh
-Kazakhstan: 81 TWh
-
-From worlddata:
-Sweden: 133 TWh
-USA: 3902 Twh
 
 
 ◊; https://www.reddit.com/r/btc/comments/f9rhmv/researh_in_2017_bitcoin_network_consumed_5_twh_of/
