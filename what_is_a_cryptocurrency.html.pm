@@ -8,7 +8,9 @@
 
 If we're going to talk about cryptocurrencies we need to know what they are. Otherwise how can we tell what value---if any---they have? And I think the best description of what a cryptocurrency is can be found in the title of the original white paper: ◊link[wp]{Bitcoin: A Peer-to-Peer Electronic Cash System}. It's like cash, but in digital form.◊mn{read-wp}
 
-Technical understanding of how they work is beneficial, but it's not required to see how they can be useful. We can come quite far by just knowing what they do differently compared to alternatives, on a higher level.
+In this section we'll begin by looking at the properties cryptocurrencies have, which lay the foundation for the use-cases described in the book, and we'll take a closer look at how cryptocurrencies work. Technical understanding isn't required too see their usefulness, but it helps us navigate the cryptocurrency space and to see through misleading information.
+
+I'll try to back up my claims that cryptocurrencies are like cash by discussing what money is, the properties of money and if it's fair to classify cryptocurrencies as money. Not only will I say that cryptocurrencies are money, but that they're potentially the best money we've ever seen, although they're held back by volatility and low adoption.
 
 ◊ndef["read-wp"]{
     The white paper is a good read, I recommend you look it up. If you prefer an annotated version or a podcast there are those as well.

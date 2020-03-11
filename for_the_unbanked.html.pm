@@ -3,7 +3,7 @@
 ◊(define-meta title "For the unbanked")
 ◊(define-meta subtitle "Digital payments for those without a bank account")
 ◊(define-meta published "2019-09-05T00:00:00+01:00")
-◊(define-meta updated "2020-01-21T08:28:08+01:00")
+◊(define-meta updated "2020-03-09T21:08:42+01:00")
 ◊(define-meta uuid "875332fd-f5ad-4275-8254-008a2e74a4a0")
 
 ◊epigraph{
@@ -18,7 +18,9 @@ In the previous chapters we've looked at some problems with having to get permis
 
 To make digital payments you typically need a bank account◊sn{banks-required} and those without one are often called ◊em{unbanked}. Paying bills digitally, using credit cards and even mobile payments all require a bank account. If you don't have a bank account, you're essentially shut-out from the digital economy.
 
-◊note-pos[#:top -8]{banks-required}
+The problems the unbanked face are difficult to solve, and cryptocurrencies won't magically solve them all, but if adopted they can be helpful.
+
+◊note-pos[#:top -12]{banks-required}
 
 ◊ndef["banks-required"]{
     Maybe there's a way to work around the bank requirement, possibly by using in-game currencies, but they're severely limited compared to the digital payments we usually think about. In practice you need a bank account for useful digital payments.
@@ -28,6 +30,9 @@ To make digital payments you typically need a bank account◊sn{banks-required} 
 ◊subhead{Who are the unbanked?}
 
 There are ◊strong{◊link[findex-report]{1.7 billion adults}} without a bank account in the world. To get a sense for what countries they come from, take a look at this world map:
+
+◊; Maybe remake this in SVG?
+◊; Maybe there are resources here: https://news.ycombinator.com/item?id=22427334
 
 ◊; http://colorbrewer2.org/#type=sequential&scheme=PuRd&n=5
 ◊; multi-hue

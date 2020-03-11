@@ -3,7 +3,7 @@
 ◊(define-meta title "How do cryptocurrencies work?")
 ◊(define-meta subtitle "Decentralized consensus")
 ◊(define-meta published "2019-05-03T20:08:34+01:00")
-◊(define-meta updated "2020-02-27T13:32:42+01:00")
+◊(define-meta updated "2020-03-09T21:09:09+01:00")
 ◊(define-meta uuid "320751d9-9a28-4e91-9469-b44b83e12475")
 
 This is my attempt to explain how a standard cryptocurrency like Bitcoin works. Other cryptocurrencies may diverge on various points but the fundamentals are the same.◊sn{others}
@@ -17,6 +17,13 @@ As stated in the introduction the focus isn't on technical details, but it's a h
 ◊ndef["others"]{
     For example Ethereum adds Turing complete smart contracts and CryptoNote protocols (like Monero) ◊link[privacy-challenge]{hides transaction details}.
 }
+
+
+◊subhead{Summary}
+
+The ◊em{blockchain} is a ledger that stores balances. The crucial problem is deciding between double spends (using a coin twice). Cryptocurrencies like Bitcoin use ◊em{proof-of-work} which makes miners expend energy and compete for rewards. This competition between miners is used to resolve double spends and to secure the chain, with the winner extending the blockchain with new transactions.
+
+What makes it all work is the incentives for the miners to work in the best interest of the network---it's the most profitable option. The security assumption is that most of miners are honest and work for profit, otherwise the security model fails and transactions can be reversed.
 
 
 ◊subhead{The ledger}
@@ -536,13 +543,6 @@ One problem is the ◊link[nothing-at-stake]{nothing at stake problem} where a c
 The chapter became very long despite skipping out on details here and there. If you want to go deeper I encourage you to do more research on your own.
 
 ◊link[wp]{Bitcoin's white paper} is always a good place to begin and there are many good resources online. I've tried to include key concepts which you can use as starting points in your search.
-
-
-◊subhead{Summary}
-
-The ◊em{blockchain} is a ledger that stores balances. The crucial problem is deciding between double spends (using a coin twice). Cryptocurrencies like Bitcoin use ◊em{proof-of-work} which makes miners expend energy and compete for rewards. This competition between miners is used to resolve double spends and to secure the chain, with the winner extending the blockchain with new transactions.
-
-What makes it all work is the incentives for the miners to work in the best interest of the network---it's the most profitable option. The security assumption is that most of miners are honest and work for profit, otherwise the security model fails and transactions can be reversed.
 
 
 ◊(define chargeback-fraud "https://en.wikipedia.org/wiki/Chargeback_fraud")

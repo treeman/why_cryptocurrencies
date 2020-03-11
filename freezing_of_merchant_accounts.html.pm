@@ -3,7 +3,7 @@
 ◊(define-meta title "Freezing of merchant accounts")
 ◊(define-meta subtitle "The account your business relies on can be frozen at any time")
 ◊(define-meta published "2019-06-14T00:00:00+01:00")
-◊(define-meta updated "2020-01-21T08:28:23+01:00")
+◊(define-meta updated "2020-03-09T21:08:53+01:00")
 ◊(define-meta uuid "ac14d4a1-3796-4f5b-9350-b56e796625a1")
 
 ◊epigraph{
@@ -15,7 +15,7 @@
 }
 
 
-This chapter continues on the same idea as the ◊link[prev]{previous one}, but we'll view the issue from another angle. Instead of focusing on getting permission to accept payments at all we'll focus on the problem that accounts can be frozen at any time, for arbitrary reasons.
+This chapter continues on the same idea as the ◊link[prev]{previous one}, but we'll view the issue from another angle. Instead of focusing on getting permission to accept payments at all we'll focus on the problem that accounts can be frozen at any time, for arbitrary reasons. This isn't a problem with cryptocurrencies, as they cannot be frozen.
 
 
 ◊subhead{Freezing funds, not just payments}

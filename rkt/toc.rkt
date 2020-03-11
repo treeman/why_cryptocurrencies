@@ -7,6 +7,7 @@
   ;; String entries gets removed and are treated as planned chapters.
   `(eli5.html
     (about_the_book.html
+     acknowledgements.html
      how_to_use.html
      free.html
      about_me.html)

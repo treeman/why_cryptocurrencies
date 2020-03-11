@@ -3,7 +3,7 @@
 ◊(define-meta title "“Undesirable” businesses")
 ◊(define-meta subtitle "The ones payment processors don't want to do business with")
 ◊(define-meta published "2019-06-12T00:00:00+01:00")
-◊(define-meta updated "2020-01-15T20:11:11+01:00")
+◊(define-meta updated "2020-03-09T21:09:41+01:00")
 ◊(define-meta uuid "7f619868-39ff-43db-92b4-af452ee4c8ed")
 
 If you want to accept digital payments today you need to partner with a payment processor, for example Stripe or PayPal. Usually that's not a problem---but what if they say no?◊mn{banks}
@@ -33,7 +33,7 @@ Here are some examples of affected businesses:
 ◊(define banks-bitcoin "https://www.ccn.com/banks-still-closing-accounts-bitcoin-activity")
 ◊(define barclays-bitcoin "https://www.telegraph.co.uk/finance/personalfinance/investing/11537972/Barclays-closed-down-my-bank-account-after-Bitcoin-trade.html")
 
-For whatever reason, these businesses are deemed high risk and undesirable. Despite them being legal they might not be able to accept digital payments.
+For whatever reason, these businesses are deemed high risk and undesirable; despite them being legal they might not be able to accept digital payments. This is something that cryptocurrencies solve.
 
 
 ◊subhead{Pot stores are cash-only}
