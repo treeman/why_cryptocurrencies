@@ -248,14 +248,19 @@ This is called ◊def[#:src cognitive_dissonance]{cognitive disonance} and it ca
 
 The issue is that cryptocurrencies with proof-of-work use a lot of energy. Bitcoin for example uses more energy than entire countries!
 
-24.72 TWh Nigeria
-39.5 TWh New Zealand
-46.94 TWh Portugal
-58.2 TWh BTC
-94.23 TWh Kazakhstan
-133 TWh Sweden
-3902 Twh USA
-5564 Twh China
+◊img[#:src "images/energy-bars.svg"]{
+    Energy usage for Bitcoin and different countries. The consumption for all entries is still quite small if you compare to USA's 3902 TWh or China's 5564 TWh.
+    ◊link[energy-btc]{Blockchainanalytics} is used to estimate Bitcoin's energy consumption to 58.2 TWh, and ◊link[worlddata]{worlddata.info} is used to estimate energy consumption for the countries.
+}
+
+◊;24.72 TWh Nigeria
+◊;39.5 TWh New Zealand
+◊;46.94 TWh Portugal
+◊;58.2 TWh BTC
+◊;94.23 TWh Kazakhstan
+◊;133 TWh Sweden
+◊;3902 Twh USA
+◊;5564 Twh China
 
 
 ◊(define energy-btc "https://www.blockchainanalytics.pro/btc/electricity-consumption/")
@@ -289,11 +294,13 @@ This is absolutely a big problem, but there are some important points we need to
     Although hydropower is good from a CO◊sub{2} perspective, building large dams is very disruptive for the enviroment.
 }
 
-There's no other way to reduce the energy usage than to replace proof-of-work with another consensus mechanism. I think this is why proof-of-stake is so appealing, despite unsolved problems and drawbacks.
+◊note-pos[#:top -16]{renewable-bad}
+
+There's no other way to drastically reduce the energy usage than to replace proof-of-work with another consensus mechanism. I think this one reason why proof-of-stake appeals to so many people, despite unsolved problems and large drawbacks.
 
 ◊;You can rationalize Bitcoin's energy usage by comparing it to alternatives---like the banking system or the military---and say "hey, it's not that bad!", but that comes too close to downplaying the issue for my taste.
 
-If we're stuck with proof-of-work then we just have to accept that it uses a lot of energy, and we have to decide if it's worth it. Are the use-cases valuable enough to warrant spending this much energy?
+If we're stuck with proof-of-work then we just have to accept that it uses a lot of energy, and we have to decide if it's worth it. Are the use-cases valuable enough to warrant spending this much energy? Or are the skeptics right, and Bitcoin mining is just a terrible waste of energy?
 
 ◊(define cognitive_dissonance "https://en.wikiquote.org/wiki/Cognitive_dissonance")
 
@@ -312,7 +319,7 @@ An exhaustive list and description of all problems would require much more than 
     }
     ◊li{Scams everywhere
 
-        For every legitimate cryptocurrency there are thousands of scams, and it can be very difficult for outsiders to identify them.
+        For every legitimate cryptocurrency there are thousands of scams, and it can be very difficult for outsiders to identify them.◊sn{parents}
     }
     ◊li{Regulation
 
@@ -320,12 +327,25 @@ An exhaustive list and description of all problems would require much more than 
     }
     ◊li{Development organization
 
-        A cryptocurrency is supposed to remove third parties, but that raises the question how will you upgrade a cryptocurrency? In practice the development has been dictated by a single development team, which gives them a great deal of power and it's a source of centralization.
+        A cryptocurrency is supposed to remove third parties, but that raises the question how should you upgrade a cryptocurrency? In practice the development has been dictated by a single development team, which gives them a great deal of power and is a source of centralization.◊sn{easiest-way}
     }
     ◊li{Confirmation time
 
         Even though I did write ◊link[cheaper-faster]{that cryptocurrencies are faster} than alternatives, the system isn't fool-proof. While 0-conf is often good enough, if you need more security then you sometimes need to wait up to an hour or two before your first confirmation.
     }
+}
+
+◊note-pos[#:top -29]{parents}
+◊note-pos[#:top -11 #:bottom -8]{easiest-way}
+
+◊ndef["parents"]{
+    I don't trust my parents to be able to manage a cryptocurrency wallet themselves, and I certainly don't trust them to choose which cryptocurrency or cryptocurrency project to invest in.
+}
+
+◊ndef["easiest-way"]{
+    What's the easiest way to disrupt a cryptocurrency? Executing a 51% attack can be extremely expensive and so far cryptocurrencies have largely been impossible to hack.
+
+    But how about bribing or infiltrating a developer team? That's much easier and it could allow you to block important changes or even sneak in vulnerabilities.
 }
 
 
