@@ -2,8 +2,8 @@
 
 ◊(define-meta title "Challenges for cryptocurrencies")
 ◊(define-meta subtitle "Large unsolved problems with cryptocurrencies")
-◊(define-meta published "2019-12-09T00:00:00+01:00")
-◊(define-meta updated "2020-01-21T08:28:00+01:00")
+◊(define-meta published "2020-03-17T20:26:28+01:00")
+◊(define-meta updated "2020-03-17T20:26:28+01:00")
 ◊(define-meta uuid "c13d8405-fb3e-411c-b035-aae08eedddf1")
 
 While cryptocurrencies do some things very well, there are several hard unsolved problems with cryptocurrencies. Here's a description of some of them:
@@ -11,7 +11,7 @@ While cryptocurrencies do some things very well, there are several hard unsolved
 
 ◊subhead{Adoption}
 
-While this analogy might sound strange, money has an important similarity with social networks like Facebook, Twitter or Reddit: almost all their value come from them being used by others.
+While this analogy might sound strange, money has an important similarity to social networks like Facebook, Twitter or Reddit: almost all their value come from them being used by others.
 
 This is called the ◊def[#:src network-effect]{network effect}, and Wikipedia has a succinct way to describe it:
 
@@ -23,17 +23,13 @@ When a network effect is present, the value of a product or service increases ac
 You can have the best website in the world---beautiful, lightning fast and with all the features you could ever need---but if nobody's using it it's a worthless social network. Conversely you can have a shitty website, but it doesn't matter as long as many people use it. A beautiful example of such a site is Twitter, which has an absolutely atrocious user interface, but it's hugely valuable because so many people are invested in the platform.◊sn{twitter-bad}
 
 ◊ndef["twitter-bad"]{
-    I find Twitter's user experience so bad I can't stand to read yet alone use it.
+    I find Twitter's user experience so bad I can't stand to read, yet alone use it.
 
     Another bad example is Reddit's new design, but luckily you still access the old design att ◊link{https://old.reddit.com/}. I fear for the day when that option is removed.
 }
 
 
-The network effect is directly correlated to ◊link[money-functions]{the functions of money}: medium of exchange, unit of account and store of value. If more people use a currency, the better it'll function as money, and if very few use it the worse it'll be. Therefore I think the lack of adoption is the biggest problem cryptocurrencies face, much larger than the technical issues we'll discuss later in this chapter.◊sn{too-soon}
-
-◊;It's my opinion that the lack of adoption is the biggest problem cryptocurrencies face and as we saw in ◊link[how-well-money-functions]{an earlier chapter} this is what holds cryptocurrencies back from functioning well as money.◊sn{too-soon}
-
-◊;No technical issue comes close to the importance of adoption.
+The network effect is directly correlated to ◊link[money-functions]{the functions of money}: a medium of exchange, a unit of account and a store of value. If more people use a currency, the better it'll function as money, and if very few use it the worse it'll be.
 
 ◊ndef["too-soon"]{
     It's fair to say that we shouldn't focus on adoption before we've solved the fundamental technical issues, as if we push too hard too soon the push back could be enormous, but it doesn't change the fact that adoption is the most important issue.
@@ -55,8 +51,11 @@ and
 
 This is a tough cycle to break, which explains why cryptocurrencies---despite their many strengths---aren't used more than they are.
 
-◊note-pos[#:top -44]{twitter-bad}
-◊note-pos[#:top -32]{too-soon}
+For these reasons I think the lack of adoption is the biggest problem cryptocurrencies face---both in difficulty and in importance---and it's much larger than the other issues we'll see later in this chapter.◊sn{too-soon}
+
+
+◊note-pos[#:top -48]{twitter-bad}
+◊note-pos[#:top -2]{too-soon}
 
 
 ◊(define network-effect "https://en.wikipedia.org/wiki/Network_effect")
@@ -69,7 +68,7 @@ This is a tough cycle to break, which explains why cryptocurrencies---despite th
 Bitcoin, like most cryptocurrencies, uses a public ledger where all transactions and addresses are public. We might say that Bitcoin is ◊em{pseudo-anonymous}: while you can see all transactions and addresses you don't know who owns an address. But if you know someone's address, for example if they sent money to you, you can then trace all past and future transactions moving through that address.◊sn{rich-list}
 
 ◊ndef["rich-list"]{
-    It's possible to for example build a ◊link[rich-list]{list of the Bitcoin addresses with the most coins} and to monitor them to see when they send or receive coins.
+    For example, it's possible to build a ◊link[rich-list]{list of the Bitcoin addresses with the most coins} and to monitor them to see when they send or receive coins.
 
     There are also companies like ◊link[chainalysis]{Chainalysis} that work to track your cryptocurrency assets and to analyze your financial activity.
 }
@@ -88,7 +87,7 @@ Bitcoin, like most cryptocurrencies, uses a public ledger where all transactions
 You can explore the Bitcoin blockchain, and see all transactions and addresses, on a ◊link[blockchair]{blockchain explorer}.◊sn{surveillance-coin}
 
 ◊ndef["surveillance-coin"]{
-    Tired of the moniker "privacy coins" given to coins that protect your privacy, some have started referring to cryptocurrencies with a transparent blockchain as "surveillance coins".
+    Some who were tired of the moniker "privacy coins", given to coins that protect your privacy, have started referring to cryptocurrencies with a transparent blockchain as "surveillance coins".
 
     I personally don't like either of them. They feel too tribal to me, like slurs used to belittle "the others".
 }
@@ -152,7 +151,7 @@ Perhaps the most famous technical issue cryptocurrencies face is how to scale th
 
 Bitcoin can for example only process 3--7 transactions per second (tx/s) at max capacity, while ◊link[paypal-transactions]{PayPal processes on average ◊nbsp{400 tx/s}} and ◊link[visa-transactions]{VISA an average of ◊nbsp{1 700 tx/s}}, with VISA's peak capacity being over ◊nbsp{24 000 tx/s}. If cryptocurrencies should live up to their potential then there's lots of work to do here.
 
-But it's not quite as bad as the numbers seem to suggest. Bitcoin operates far from the technical limits because they didn't raise the blocksize limit, which essentially sets an artificial limit on transaction throughput. ◊link[bch]{Bitcoin Cash}, a fork of Bitcoin, has raised this limit and has more than 20 times the throughput of Bitcoin (around ◊nbsp{100 tx/s}). So cryptocurrencies can at least be in the same playing field as PayPal.◊sn{blocksize}
+But it's not quite as bad as the numbers seem to suggest. Bitcoin operates far from the technical limits because they didn't raise the blocksize limit, which controls how many transactions can fit in a block and essentially sets an artificial limit on transaction throughput. ◊link[bch]{Bitcoin Cash}, a fork of Bitcoin, has raised this limit and has more than 20 times the throughput of Bitcoin (around ◊nbsp{100 tx/s}). So cryptocurrencies can at least be in the same playing field as PayPal.◊sn{blocksize}
 
 ◊ndef["blocksize"]{
     See ◊link[history-blocksize]{this timeline} for the history of the blocksize debate (it only goes up to Dec 2017, but as of May 2019 no significant development has happened). Because Bitcoin didn't raise the blocksize Bitcoin Cash was created in 2017, keeping fees low and transaction capacity high.
@@ -177,7 +176,7 @@ There are a number of technical pain points that needs to be improved to scale a
     }
     ◊li{Bandwith usage
 
-        It's important that nodes have internet connections enough bandwidth to share transactions with each other.
+        It's important that nodes have internet connections with enough bandwidth to share transactions with each other.
     }
     ◊li{Initial sync
 
@@ -250,7 +249,7 @@ The issue is that cryptocurrencies with proof-of-work use a lot of energy. Bitco
 
 ◊img[#:src "images/energy-bars.svg"]{
     Energy usage for Bitcoin and different countries. The consumption for all entries is still quite small if you compare to USA's 3902 TWh or China's 5564 TWh.
-    ◊link[energy-btc]{Blockchainanalytics} is used to estimate Bitcoin's energy consumption to 58.2 TWh, and ◊link[worlddata]{worlddata.info} is used to estimate energy consumption for the countries.
+    ◊link[energy-btc]{Blockchainanalytics} is used to estimate Bitcoin's energy consumption to 58.2 TWh, and ◊link[worlddata]{worlddata.info} is used to estimate energy consumption for the countries. (2020-03-11)
 }
 
 ◊;24.72 TWh Nigeria
@@ -296,7 +295,7 @@ This is absolutely a big problem, but there are some important points we need to
 
 ◊note-pos[#:top -16]{renewable-bad}
 
-There's no other way to drastically reduce the energy usage than to replace proof-of-work with another consensus mechanism. I think this one reason why proof-of-stake appeals to so many people, despite unsolved problems and large drawbacks.
+There's no other way to drastically reduce the energy usage than to replace proof-of-work with another consensus mechanism. I think this is one reason why proof-of-stake appeals to so many people, despite unsolved problems and large drawbacks.
 
 ◊;You can rationalize Bitcoin's energy usage by comparing it to alternatives---like the banking system or the military---and say "hey, it's not that bad!", but that comes too close to downplaying the issue for my taste.
 
