@@ -66,16 +66,20 @@ Of course everything new brings positive and negative aspects with it. It's up t
 
 ◊subhead{What this book isn't}
 
-There are many problems with cryptocurrencies as they exist today. This isn't an attempt to dismiss them or look at work being done to address them. For the interested here are some of the biggest problems as I see it:
+This isn't a deep dive on a technical level and we won't focus on a single implementation, Bitcoin is the first cryptocurrency but there are hundreds more.◊sn{cryptos}
+
+There are many problems with cryptocurrencies as they exist today, for instance:
 
 ◊ul{
-  ◊li{How can a cryptocurrency scale globally?}
-  ◊li{How can payments be made secure enough for retail, in a couple of seconds?}
+  ◊li{Why aren't cryptocurrencies used more?}
   ◊li{Bitcoin uses a public ledger where all payments are visible---what about privacy?}
-  ◊li{User experience is far from the level of VISA or Apple Pay.}
+  ◊li{How can a cryptocurrency scale globally?}
+  ◊li{What about Bitcoin's energy usage?}
+  ◊;li{How can payments be made secure enough for retail, in a couple of seconds?}
+  ◊;li{User experience is far from the level of VISA or Apple Pay.}
 }
 
-See the chapter ◊link[challenges]{Challenges for cryptocurrencies} in the appendix for a more in-depth discussion of the problems.
+I don't dismiss these problems, and I discuss them in more detail in the chapter ◊link[challenges]{Challenges for cryptocurrencies} in the appendix, but the focus of this book isn't to explain them or to look at how we might address them.
 
 ◊(define challenges "/challenges.html")
 
@@ -89,9 +93,7 @@ A problem-centric view is great for an engineer or a problem solver but it also 
     There is no reason anyone would want a computer in their home
 }
 
-Instead of putting on blinders and getting stuck at these problems, which I believe can be addressed, we'll focus on the potential cryptocurrencies have. Only with this vantage point can we see if the problems are worth working on, or if we instead should scrap the whole idea.
-
-This isn't a deep dive on a technical level. Neither will we focus on a single implementation---Bitcoin is the first cryptocurrency but there are hundreds more.◊sn{cryptos}
+Instead of putting on blinders and getting stuck at these problems---which I believe can be addressed---we'll focus on the potential cryptocurrencies have. Only with this vantage point can we see if the problems are worth working on, or if we instead should scrap the whole idea.
 
 ◊center{
   ◊strong[#:style "font-size: 1.1rem"]{And of course none of this is investment advice.}
