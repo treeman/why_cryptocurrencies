@@ -1,6 +1,6 @@
 #lang racket/base
 
-(require pollen/tag pollen/decode txexpr)
+(require pollen/core pollen/tag pollen/decode txexpr)
 (require racket/match racket/string racket/list)
 (require racket/format)
 (require racket/runtime-path)
@@ -16,6 +16,40 @@
 
 (provide (all-defined-out))
 
+(struct a-ref (url c alt qt text))
+(struct book-ref (author title url))
+
+;ch['about_the_book.html #:ref "xyz"]{link1}
+;ch['about_the_book.html]{link1}
+;(ch 'about_the_book.html)
+(define (ch-link href #:ref [ref #f]. args)
+  (printf "CH ~a~a~n" href args)
+  (unless (symbol? href)
+    (error (format "bad ch href: '~a', expected symbol" href)))
+
+  (define title #f)
+  (define alt-text #f)
+  (if (in-toc? href)
+      (begin
+        (set! title (select-from-metas 'title href))
+        (set! alt-text (string-append "Why cryptocurrencies?: " title)))
+      (printf "INVALID CH '~a'~n" href))
+
+  (define text
+    (if (null? args)
+        (list title)
+        args))
+  (unless text
+    (error (format "no ch link text: '~a'" href)))
+
+  (set! href (string-append "/" (symbol->string href)))
+  (when ref
+    (set! href (string-append href "#" (to-name ref))))
+
+  (apply make-link
+         #:title alt-text
+         href
+         text))
 
 (define (xref? url)
   (cond
