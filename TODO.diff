@@ -1,5 +1,8 @@
 Completeness:
 + Rewrite link handling (automatically format books and signal missing alt-text)
+  Switch chapter links to 'ch-link'
+  Use structs a-ref and book-ref
+  Switch links to use a-ref and book-ref instead
 + Alt-text for all links
 
 Further:
