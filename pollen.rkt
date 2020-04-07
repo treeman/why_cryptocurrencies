@@ -10,6 +10,7 @@
 (require "rkt/sidenotes.rkt")
 (require "rkt/tags.rkt")
 (require "rkt/toc.rkt")
+(require "rkt/refs.rkt")
 
 (provide (all-from-out racket/list racket/string)) ; make util functions available
 (provide (all-from-out "rkt/decode.rkt"))
@@ -20,6 +21,7 @@
 (provide (all-from-out "rkt/sidenotes.rkt"))
 (provide (all-from-out "rkt/tags.rkt"))
 (provide (all-from-out "rkt/toc.rkt"))
+(provide (all-from-out "rkt/refs.rkt"))
 (provide (all-defined-out))
 
 (module setup racket/base

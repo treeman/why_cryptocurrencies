@@ -1,8 +1,110 @@
 #lang racket/base
 
+(require "refs.rkt")
+
 (provide (all-defined-out))
 
 (define root-url "https://whycryptocurrencies.com")
+(define toc-url `("/" "Table of contents"))
+
+;; Books
+
+
+;; Defs
+
+(define charge-back-fraud
+  (ch-ref
+    'cheaper_faster.html #:ref "charge-back-fraud"
+    "Cheaper & faster: Charge back fraud"))
+
+
+;; Chapters
+
+(define about-the-book
+  (ch-ref
+    'about_the_book.html
+    "About the book"))
+(define what_is_a_cryptocurrency
+  (ch-ref
+    'what_is_a_cryptocurrency.html
+    "What is a cryptocurrency?"))
+
+(define properties_of_a_cryptocurrency
+  (ch-ref
+    'properties_of_a_cryptocurrency.html
+    "Properties of a cryptocurrency"))
+(define are_cryptocurrencies_money
+  (ch-ref
+    'are_cryptocurrencies_money.html
+    "Are cryptocurrencies money?"))
+
+(define cheaper_faster
+  (ch-ref
+    'cheaper_faster.html
+    "Cheaper & faster"))
+(define fee-comparisons
+  (ch-ref
+    'cheaper_faster.html #:ref "fee-comparisons"
+    "Cheaper & faster: Fee comparisons"))
+(define speed-comparisons
+  (ch-ref
+    'cheaper_faster.html #:ref "speed-comparisons"
+    "Cheaper & faster: Speed comparisons"))
+(define uncensorable_donations
+  (ch-ref
+    'uncensorable_donations.html
+    "Uncensorable donations"))
+(define undesirable_businesses
+  (ch-ref
+    'undesirable_businesses.html
+    "Undesirable businesses"))
+(define freezing_of_merchant_accounts
+  (ch-ref
+    'freezing_of_merchant_accounts.html
+    "Freezing of merchant accounts"))
+(define for_the_unbanked
+  (ch-ref
+    'for_the_unbanked.html
+    "For the unbanked"))
+
+(define private_money
+  (ch-ref
+    'private_money.html
+    "Private money"))
+(define global_currency
+  (ch-ref
+    'global_currency.html
+    "A global currency"))
+(define financial_crisis
+  (ch-ref
+    'financial_crisis.html
+    "The financial crisis, bad loans and bailouts"))
+
+(define swiss_bank_account_in_your_pocket
+  (ch-ref
+    'swiss_bank_account_in_your_pocket.html
+    "A Swiss bank account in your pocket"))
+(define separation_of_money_and_state
+  (ch-ref
+    'separation_of_money_and_state.html
+    "Separation of money and state"))
+
+(define the_blind_leading_the_blind
+  (ch-ref
+    'the_blind_leading_the_blind.html
+    "The blind leading the blind"))
+(define timestamping_service
+  (ch-ref
+    'timestamping_service.html
+    "Timestamping service"))
+(define provably_fair_gambling
+  (ch-ref
+    'provably_fair_gambling.html
+    "Provably fair gambling"))
+
+;; Misc links
+
+
 
 (define feed-url
   `("/feed.xml"

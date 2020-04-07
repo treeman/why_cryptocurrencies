@@ -13,57 +13,9 @@
 (require "sidenotes.rkt")
 (require "string-process.rkt")
 (require "toc.rkt")
+(require "refs.rkt")
 
 (provide (all-defined-out))
-
-(struct a-ref (url c alt qt text))
-(struct book-ref (author title url))
-
-;ch['about_the_book.html #:ref "xyz"]{link1}
-;ch['about_the_book.html]{link1}
-;(ch 'about_the_book.html)
-(define (ch-link href #:ref [ref #f]. args)
-  (printf "CH ~a~a~n" href args)
-  (unless (symbol? href)
-    (error (format "bad ch href: '~a', expected symbol" href)))
-
-  (define title #f)
-  (define alt-text #f)
-  (if (in-toc? href)
-      (begin
-        (set! title (select-from-metas 'title href))
-        (set! alt-text (string-append "Why cryptocurrencies?: " title)))
-      (printf "INVALID CH '~a'~n" href))
-
-  (define text
-    (if (null? args)
-        (list title)
-        args))
-  (unless text
-    (error (format "no ch link text: '~a'" href)))
-
-  (set! href (string-append "/" (symbol->string href)))
-  (when ref
-    (set! href (string-append href "#" (to-name ref))))
-
-  (apply make-link
-         #:title alt-text
-         href
-         text))
-
-(define (xref? url)
-  (cond
-    ((regexp-match #rx"^https?://" url) #t)
-    (else #f)))
-
-(define (url? x)
-  (and
-    (string? x)
-    (or
-      (xref? x)
-      (regexp-match #rx"^#" x)
-      (regexp-match #rx"^/" x)
-      (regexp-match #rx"^mailto:" x))))
 
 (define (link #:class [c #f] #:quote [qt #f] . args)
   (match args
@@ -74,6 +26,12 @@
     [(list url text ..1)
      #:when (string? url)
      (apply make-link #:class c #:quote qt url text)]
+    [(list href text ..1)
+     #:when (href? href)
+     (apply make-link #:class (href-c href)
+                      #:title (href-title href)
+                      (href-url href)
+                      text)]
     [(list url)
      #:when (string? url)
      (make-link #:class c #:quote qt url url)]
@@ -182,9 +140,6 @@
 (define (subhead3 x)
    `(h3
      (a [[name ,(to-name x)]] ,x)))
-
-(define (to-name x)
-  (string-replace (string-downcase x) " " "-"))
 
 (define (li-plus . txt)
    `(li ((class "plus")) ,@txt))
