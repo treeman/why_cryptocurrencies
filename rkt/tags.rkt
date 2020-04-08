@@ -124,13 +124,22 @@
   (check-false (valid-iref? "blaha"))
   )
 
-
-(define (def #:src [src #f] . txt)
-  (if src
-    `(span ((class "def"))
-       ,(apply make-link src txt))
-    `(span ((class "def"))
-       ,@txt)))
+(define (def . args)
+  (match args
+    [(list url text ..1)
+     #:when (string? url)
+     `(em ((class "def"))
+        ,(apply link url text))]
+    [(list href text ..1)
+     #:when (href? href)
+     `(em ((class "def"))
+        ,(apply link href text))]
+    [_
+     #:when (list? args)
+     `(em ((class "def"))
+        ,@args)]
+    [_
+     (error (format "bad def args: '~a'" args))]))
 
 
 (define (subhead x)

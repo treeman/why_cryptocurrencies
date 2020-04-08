@@ -20,7 +20,10 @@ Maybe this is why most people --- even cryptocurrency fans --- only see cryptocu
 
 What hope does average Joe have when even the famous security technologist Bruce Schneier ◊link[blockchain-and-trust]{concludes that}:
 
-◊qt[#:author "Bruce Schneier" #:src "Blockchain and Trust" #:url blockchain-and-trust #:quote-src #t]{
+◊qt[#:author "Bruce Schneier"
+    #:src "Blockchain and Trust"
+    #:url blockchain-and-trust
+    #:quote-src #t]{
   Honestly, cryptocurrencies are useless ◊mn{schneier}
 }
 

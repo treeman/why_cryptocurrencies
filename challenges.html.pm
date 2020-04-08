@@ -13,7 +13,7 @@ While cryptocurrencies do some things very well, there are several hard unsolved
 
 While this analogy might sound strange, money has an important similarity to social networks like Facebook, Twitter or Reddit: almost all their value come from them being used by others.
 
-This is called the ◊def[#:src network-effect]{network effect}, and Wikipedia has a succinct way to describe it:
+This is called the ◊def[network-effect]{network effect}, and Wikipedia has a succinct way to describe it:
 
 ◊qt[#:src "Wikipedia"
     #:url network-effect]{
@@ -239,7 +239,7 @@ It may ultimately be impossible to scale a cryptocurrency so that ◊em{everyone
 
 Do you know how you can have two conflicting beliefs at the same time? For example you might know for a fact that eating too much candy is very bad for your health---and you really would like to loose weight---but you still eat it. Or how you think that cheating for an exam is wrong, but you still do it because "you had to".
 
-This is called ◊def[#:src cognitive_dissonance]{cognitive disonance} and it can cause great discomfort when we have to face it. It's also something I, as a cryptocurrency supporter and an environmentalist, struggle with.◊sn{coping}
+This is called ◊def[cognitive_dissonance]{cognitive disonance} and it can cause great discomfort when we have to face it. It's also something I, as a cryptocurrency supporter and an environmentalist, struggle with.◊sn{coping}
 
 ◊ndef["coping"]{
     When we experience the uncomfortable dissonance we try to reduce it in some way, which often happens unconsciously. We might for example downplay the importance on one side of the conflict ("it's just one chocolate bar"), we might rationalize it in some way ("I'll exercise harder later") or we might suppress the issue entirely (stop talking to anyone who reminds you that you're on a diet).

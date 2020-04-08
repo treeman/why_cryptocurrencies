@@ -4,11 +4,38 @@
 
 (provide (all-defined-out))
 
+;; Site links
+
 (define root-url "https://whycryptocurrencies.com")
 (define toc-url `("/" "Table of contents"))
 
+(define feed-url
+  `("/feed.xml"
+    "Feed to the site"))
+
+(define source-code
+  `("https://github.com/treeman/why_cryptocurrencies"
+    "Source code to this site"))
+
+(define email "contact@whycryptocurrencies.com")
+
+(define mailto
+  `(,(string-append "mailto:" email)
+    "Send me an email"))
+
 ;; Books
 
+(define the-box-book "https://www.goodreads.com/book/show/316767.The_Box")
+(define shock-of-the-old-book "https://www.goodreads.com/book/show/327488.The_Shock_of_the_Old")
+(define the-big-short-book "https://www.goodreads.com/book/show/26889576-the-big-short")
+(define after-the-music-stopped-book "https://www.goodreads.com/book/show/15811560-after-the-music-stopped")
+(define thinking-fast-and-slow-book "https://www.goodreads.com/book/show/11468377-thinking-fast-and-slow")
+(define case-against-fed-book "https://www.goodreads.com/book/show/81976.The_Case_Against_the_Fed")
+(define 1984-book "https://www.goodreads.com/book/show/40961427-1984")
+(define antifragile-book "https://www.goodreads.com/book/show/13530973-antifragile")
+(define permanent-record-book "https://www.goodreads.com/book/show/46223297-permanent-record")
+(define animal-farm-book "https://www.goodreads.com/book/show/170448.Animal_Farm")
+(define code-breakers-book "https://www.goodreads.com/book/show/29608.The_Codebreakers")
 
 ;; Defs
 
@@ -17,6 +44,24 @@
     'cheaper_faster.html #:ref "charge-back-fraud"
     "Cheaper & faster: Charge back fraud"))
 
+(define hash-functions
+  (ch-ref 
+    'cryptography.html #:ref "hash-functions"
+    "Hash functions"))
+(define bitcoin-addresses
+  (ch-ref
+    'cryptography.html #:ref "bitcoin-addresses"
+    "Bitcoin addresses"))
+(define public-key-cryptography
+  (ch-ref
+    'cryptography.html #:ref "public-key-cryptography"
+    "Public-key cryptography"))
+
+(define cryptographic-hash-functions
+  (x-ref
+    "2020-04-08"
+    "https://en.wikipedia.org/wiki/Cryptographic_hash_function"
+    "Wikipedia: Cryptographic hash functions"))
 
 ;; Chapters
 
@@ -28,7 +73,10 @@
   (ch-ref
     'what_is_a_cryptocurrency.html
     "What is a cryptocurrency?"))
-
+(define donations
+  (ch-ref
+    'free.html #:ref "donations-is-a-perfect-use-for-cryptocurrencies"
+    "Donations"))
 (define properties_of_a_cryptocurrency
   (ch-ref
     'properties_of_a_cryptocurrency.html
@@ -102,53 +150,26 @@
     'provably_fair_gambling.html
     "Provably fair gambling"))
 
-;; Misc links
-
-
-
-(define feed-url
-  `("/feed.xml"
-    "Feed to the site"))
-
-(define wp
-  `("/bitcoin_whitepaper.html"
+(define privacy-challenge
+  (ch-ref
+    'challenges.html #:ref "privacy-and-fungibility"
+    "Privacy and fungibility"))
+(define bitcoin_whitepaper
+  (ch-ref
+    'bitcoin_whitepaper.html
     "The Bitcoin Whitepaper"))
 
-(define source-code
-  `("https://github.com/treeman/why_cryptocurrencies"
-    "Source code to this site"))
-
-(define email "contact@whycryptocurrencies.com")
-
-(define mailto
-  `(,(string-append "mailto:" email)
-    "Send me an email"))
-
-(define donations "/free.html#donations-is-a-perfect-use-for-cryptocurrencies")
+;; Misc links
 
 (define wp-blockchain
-   `("https://bitcoin.stackexchange.com/questions/35959/how-is-the-whitepaper-decoded-from-the-blockchain-tx-with-1000x-m-of-n-multisi/35970"
-     "Stackexchange: How is the whitepaper decoded from the blockchain"))
+  (x-ref
+    "2020-04-08"
+    "https://bitcoin.stackexchange.com/questions/35959/how-is-the-whitepaper-decoded-from-the-blockchain-tx-with-1000x-m-of-n-multisi/35970"
+    "Stackexchange: How is the whitepaper decoded from the blockchain"))
 
-(define the-box-book "https://www.goodreads.com/book/show/316767.The_Box")
-(define shock-of-the-old-book "https://www.goodreads.com/book/show/327488.The_Shock_of_the_Old")
-(define the-big-short-book "https://www.goodreads.com/book/show/26889576-the-big-short")
-(define after-the-music-stopped-book "https://www.goodreads.com/book/show/15811560-after-the-music-stopped")
-(define thinking-fast-and-slow-book "https://www.goodreads.com/book/show/11468377-thinking-fast-and-slow")
-(define case-against-fed-book "https://www.goodreads.com/book/show/81976.The_Case_Against_the_Fed")
-(define 1984-book "https://www.goodreads.com/book/show/40961427-1984")
-(define antifragile-book "https://www.goodreads.com/book/show/13530973-antifragile")
-(define permanent-record-book "https://www.goodreads.com/book/show/46223297-permanent-record")
-(define animal-farm-book "https://www.goodreads.com/book/show/170448.Animal_Farm")
-(define code-breakers-book "https://www.goodreads.com/book/show/29608.The_Codebreakers")
-
-(define cryptographic-hash-functions "https://en.wikipedia.org/wiki/Cryptographic_hash_function")
-
-(define electroncash "https://electroncash.org/")
-
-(define hash-functions "/cryptography.html#hash-functions")
-(define bitcoin-addresses "/cryptography.html#bitcoin-addresses")
-(define public-key-cryptography "/cryptography.html#public-key-cryptography")
-
-(define privacy-challenge "/challenges.html#privacy-and-fungibility")
+(define electroncash
+  (x-ref
+    "2020-04-08"
+    "https://electroncash.org/"
+    "Electron Cash: A Bitcoin Cash SPV Wallet"))
 

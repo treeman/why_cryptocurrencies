@@ -9,14 +9,15 @@
 (struct book (author url title))
 (struct ch-href (href ref))
 
-; (a-ref "2020-01-01" "https://xyz.abc" "description")
-(define (a-ref #:class [c #f]
+; (x-ref "2020-01-01" "https://xyz.abc" "description")
+(define (x-ref #:class [c #f]
                #:ref [ref #f]
                date
                url
                title)
-  (unless (url? url)
-    (error (format "bad a-ref url: '~a'" url)))
+  (unless (and (url? url)
+               (xref? url))
+    (error (format "bad x-ref url: '~a'" url)))
   (define alt-text (string-append title "\nAccessed " date))
   (when ref
     (set! url (string-append url "#" (to-name ref))))

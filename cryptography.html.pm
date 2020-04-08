@@ -15,7 +15,7 @@ This chapter serves as an introduction to the cryptographic terms and constructs
 
 ◊subhead{Hash functions}
 
-Hash functions, or to be more precise ◊def[#:src cryptographic-hash-functions]{cryptographic hash functions}, are commonly used in the cryptocurrency space.◊mn{cryptographic?} They're used as the basis of proof-of-work, to verify the integrity of downloaded files and we used them when we created ◊link[timestamping-service]{a timestamped message}.
+Hash functions, or to be more precise ◊def[cryptographic-hash-functions]{cryptographic hash functions}, are commonly used in the cryptocurrency space.◊mn{cryptographic?} They're used as the basis of proof-of-work, to verify the integrity of downloaded files and we used them when we created ◊link[timestamping-service]{a timestamped message}.
 
 ◊ndef["cryptographic?"]{
     The difference between a cryptographic hash function and a normal hash function is that a cryptographic hash function is created to make finding the reverse of it difficult, and it should be infeasible to find two values with the same hash (called a ◊def{collision}).
@@ -87,7 +87,7 @@ If you want to give up and see what I encoded in the hash, ◊toggle[iron-man]{c
 
 ◊subhead{Public-key cryptography}
 
-If you jump into the mathematical definitions of ◊def[#:src public-key-cryptography]{public-key cryptography} it might look very complicated. While some details are complicated, the cryptography is conceptually simple; it's a digital version of a locked mailbox.
+If you jump into the mathematical definitions of ◊def[public-key-cryptography]{public-key cryptography} it might look very complicated. While some details are complicated, the cryptography is conceptually simple; it's a digital version of a locked mailbox.
 
 ◊img[#:src "/images/mailbox.png"]{
     A locked mailbox.

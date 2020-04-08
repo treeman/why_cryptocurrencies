@@ -7,9 +7,9 @@
 ◊(define-meta uuid "d33953be-5f6c-43b0-a700-eab1e1540447")
 
 ◊epigraph{
-    ◊qt[#:author "John Lennon"]{
+  ◊qt[#:author "John Lennon"]{
     As usual, there is a great woman behind every idiot.
-    }
+  }
 }
 
 I'm sometimes an idiot, but it's clear that I have a great woman in Veronica that supports me, and without her this book would've never seen the light of day.

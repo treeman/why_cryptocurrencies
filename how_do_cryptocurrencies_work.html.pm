@@ -129,7 +129,7 @@ If they try to act without a majority they will for sure get defeated, they must
 This would be very easy if they could trust each other. Unfortunately they cannot trust the messages---either the messenger or the message itself could be replaced---and even some of the generals could be traitors.◊sn{cryptography}
 
 ◊ndef["cryptography"]{
-    One countermeasure is to ◊def[#:src public-key-cryptography]{encrypt} messages. Unfortunately it doesn't protect against a traitor who knows the code, like one of the generals. Also in ancient times encryption weren't very advanced and could possibly be broken, see the ◊link[ceasar-cipher]{Ceasar cipher} as an example.
+    One countermeasure is to ◊def[public-key-cryptography]{encrypt} messages. Unfortunately it doesn't protect against a traitor who knows the code, like one of the generals. Also in ancient times encryption weren't very advanced and could possibly be broken, see the ◊link[ceasar-cipher]{Ceasar cipher} as an example.
 }
 
 
@@ -143,7 +143,7 @@ This would be very easy if they could trust each other. Unfortunately they canno
 To relate it back to cryptocurrencies the choice between "attack" and "retreat" is similar to choosing between two transactions in a double spend. You know there are bad actors (like Sneaky Steve) but who can you trust?◊sn{bft}
 
 ◊ndef["bft"]{
-    The resistance to this kind of problem is called ◊def[#:src bft]{Byzantine fault tolerance (BFT)}. There's a big difference between systems with known actors and systems with unknown actors, like with cryptocurrencies, but they both fall under the BFT umbrella.
+    The resistance to this kind of problem is called ◊def[bft]{Byzantine fault tolerance (BFT)}. There's a big difference between systems with known actors and systems with unknown actors, like with cryptocurrencies, but they both fall under the BFT umbrella.
 }
 
 ◊note-pos[#:top -58]{cryptography}
@@ -204,7 +204,7 @@ The work is to find a solution to a computing problem.◊sn{asics} The problem i
     }
 }
 
-◊def[#:src cryptographic-hash-functions]{Cryptographic hash functions} are excellent choices, Bitcoin uses SHA-256 for example. See the ◊link[hash-functions]{introduction to hashes} in the appendix for more details. For an in-depth explanation of Bitcoin's proof-of-work I recommend ◊link[mine-pen-paper]{this post (2014)}, which shows how to mine Bitcoin with pen and paper.
+◊def[cryptographic-hash-functions]{Cryptographic hash functions} are excellent choices, Bitcoin uses SHA-256 for example. See the ◊link[hash-functions]{introduction to hashes} in the appendix for more details. For an in-depth explanation of Bitcoin's proof-of-work I recommend ◊link[mine-pen-paper]{this post (2014)}, which shows how to mine Bitcoin with pen and paper.
 
 A solution is proof that you've done the work---it's proof that you've expended energy. It's like a lottery and you can get lucky, but in the long run it balances out.  Since you require a significant investment to find a block this can be used as sybil resistance. You can't just create thousands of fake identities for free.
 

@@ -61,11 +61,11 @@ If you want to learn more and see more examples just continue reading. You can a
 }
 
 ◊ndef["bitcoin-privacy"]{
-    Please note that Bitcoin (and most other cryptocurrencies) are only ◊em{pseudo-anonymous}. There are others---like Monero---that improve the situation. Read the section of ◊link[privacy-challenge]{the privacy and fungibility challenge}.
+    Please note that Bitcoin (and most other cryptocurrencies) are only ◊def{pseudo-anonymous}. There are others---like Monero---that improve the situation. Read the section of ◊link[privacy-challenge]{the privacy and fungibility challenge}.
 }
 
 ◊ndef["chargeback-fraud"]{
-    This is known as ◊em{◊link[charge-back-fraud]{charge back fraud}} or ◊def{friendly fraud} and is a big problem for merchants.
+    This is known as ◊def[charge-back-fraud]{charge back fraud} or ◊def{friendly fraud} and is a big problem for merchants.
 }
 
 
