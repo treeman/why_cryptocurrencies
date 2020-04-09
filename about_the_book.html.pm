@@ -27,8 +27,6 @@ What hope does average Joe have when even the famous security technologist Bruce
   Honestly, cryptocurrencies are useless ◊mn{schneier}
 }
 
-◊(define blockchain-and-trust "https://www.schneier.com/blog/archives/2019/02/blockchain_and_.html")
-
 It's almost a universal phenomena. I've heard these arguments from students, co-workers, friends, family and in highly technical online communities:
 
 ◊ol{
@@ -84,8 +82,6 @@ There are many problems with cryptocurrencies as they exist today, for instance:
 
 I don't dismiss these problems, and I discuss them in more detail in the chapter ◊link[challenges]{Challenges for cryptocurrencies} in the appendix, but the focus of this book isn't to explain them or to look at how we might address them.
 
-◊(define challenges "/challenges.html")
-
 A problem-centric view is great for an engineer or a problem solver but it also limits foresight. For example the computer had many problems and drawbacks when first introduced, but today we ridicule statements like these:
 
 ◊qt[#:author "Thomas Watson, president of IBM" #:date 1943]{
@@ -126,13 +122,44 @@ Instead of putting on blinders and getting stuck at these problems---which I bel
     But please take care and do your research, there are ◊strong{many} scams out there.
 }
 
-◊(define Monero "https://www.getmonero.org/")
+◊(define blockchain-and-trust
+   (x-ref
+     "2020-02-18"
+     "https://www.schneier.com/blog/archives/2019/02/blockchain_and_.html"
+     "Schneier on Security: Blockchain and trust"))
+◊(define cnn-bitcoin-rallies
+   (x-ref
+     "2020-02-18"
+     "https://money.cnn.com/2017/12/06/investing/bitcoin-rally-hits-12000/index.html"
+     "CNN Business: The bitcoin rally is back on: It just zoomed above $13,000 (2017)"))
+◊(define independent-worthless 
+   (x-ref
+     "2020-02-18"
+     "https://www.independent.co.uk/voices/bitcoin-cryptocurrency-price-crash-bank-of-england-agustin-carstens-a8645356.html"
+     "Independent: Cryptocurrencies are about to become worthless – and this is what will happen when they crash (2018)"))
+◊(define cnn-environment
+   (x-ref
+     "2020-02-18"
+     "https://money.cnn.com/2017/12/07/technology/bitcoin-energy-environment/index.html"
+     "CNN: Bitcoin boom may be a disaster for the environment"))
+◊(define independent-illegal
+   (x-ref
+     "2020-02-18"
+     "https://www.independent.co.uk/life-style/gadgets-and-tech/news/bitcoin-price-fall-criminals-blockchain-anonymous-cryptocurrency-zcash-monero-dash-a8174716.html"
+     "Independent: Bitcoin price is so high because criminals are using it for illegal trades, research suggests"))
+◊(define cryptokitties
+   (x-ref
+     "2020-02-18"
+     "https://www.cnbc.com/2017/12/06/meet-cryptokitties-the-new-digital-beanie-babies-selling-for-100k.html"
+     "Meet CryptoKitties, the $100,000 digital beanie babies epitomizing the cryptocurrency mania"))
+◊(define tulip-mania
+   (x-ref
+     "2020-02-18"
+     "https://www.britannica.com/event/Tulip-Mania"
+     "Tulip Mania"))
+◊(define beanie 
+   (x-ref
+     "2020-02-18"
+     "https://nypost.com/2015/02/22/how-the-beanie-baby-craze-was-concocted-then-crashed/"
+     "How the Beanie Baby craze was concocted — then crashed"))
 
-◊(define schneier "https://www.schneier.com/blog/archives/2019/02/blockchain_and_.html")
-◊(define cnn-bitcoin-rallies "https://money.cnn.com/2017/12/06/investing/bitcoin-rally-hits-12000/index.html")
-◊(define independent-worthless "https://www.independent.co.uk/voices/bitcoin-cryptocurrency-price-crash-bank-of-england-agustin-carstens-a8645356.html")
-◊(define cnn-environment "https://money.cnn.com/2017/12/07/technology/bitcoin-energy-environment/index.html")
-◊(define independent-illegal "https://www.independent.co.uk/life-style/gadgets-and-tech/news/bitcoin-price-fall-criminals-blockchain-anonymous-cryptocurrency-zcash-monero-dash-a8174716.html")
-◊(define cryptokitties "https://www.cnbc.com/2017/12/06/meet-cryptokitties-the-new-digital-beanie-babies-selling-for-100k.html")
-◊(define tulip-mania "https://www.britannica.com/event/Tulip-Mania")
-◊(define beanie "https://nypost.com/2015/02/22/how-the-beanie-baby-craze-was-concocted-then-crashed/")

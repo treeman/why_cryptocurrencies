@@ -77,10 +77,19 @@
   (ch-ref
     'free.html #:ref "donations-is-a-perfect-use-for-cryptocurrencies"
     "Donations"))
+
 (define properties_of_a_cryptocurrency
   (ch-ref
     'properties_of_a_cryptocurrency.html
     "Properties of a cryptocurrency"))
+(define how_do_cryptocurrencies_work
+  (ch-ref
+    'how_do_cryptocurrencies_work.html
+    "How do cryptocurrencies work?"))
+(define snake_oil
+  (ch-ref
+    'look_out_for_snake_oil.html
+    "Look out for snake oil"))
 (define are_cryptocurrencies_money
   (ch-ref
     'are_cryptocurrencies_money.html
@@ -150,6 +159,10 @@
     'provably_fair_gambling.html
     "Provably fair gambling"))
 
+(define challenges
+  (ch-ref
+    'challenges.html
+    "Challenges for cryptocurrencies"))
 (define privacy-challenge
   (ch-ref
     'challenges.html #:ref "privacy-and-fungibility"
@@ -158,6 +171,10 @@
   (ch-ref
     'bitcoin_whitepaper.html
     "The Bitcoin Whitepaper"))
+(define cryptography_intro
+  (ch-ref
+    'cryptography.html
+    "A hitchhiker’s guide to cryptography"))
 
 ;; Misc links
 
@@ -167,9 +184,29 @@
     "https://bitcoin.stackexchange.com/questions/35959/how-is-the-whitepaper-decoded-from-the-blockchain-tx-with-1000x-m-of-n-multisi/35970"
     "Stackexchange: How is the whitepaper decoded from the blockchain"))
 
+(define bitcoin-pdf
+  `("/files/bitcoin.pdf"
+    "Bitcoin: A Peer-to-Peer Electronic Cash System"))
+
 (define electroncash
   (x-ref
     "2020-04-08"
     "https://electroncash.org/"
     "Electron Cash: A Bitcoin Cash SPV Wallet"))
 
+(define mbtype
+  (x-ref
+    #f
+    "https://mbtype.com/"
+    "MB Type: Fonts designed by Matthew Butterick"))
+(define noscript
+  (x-ref
+    #f
+    "https://noscript.net/"
+    "NoScript"))
+
+(define dao
+  (x-ref
+    "2019-04-24"
+    "https://fullstacks.org/materials/ethereumbook/16_appdx-forks-history.html"
+    "Ethereum Fork History"))

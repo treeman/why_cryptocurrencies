@@ -38,8 +38,24 @@ After my parental leave we decided that I should work part time to avoid long da
 
 Am I qualified to write about cryptocurrencies? Am I a cryptocurrency expert? Hardly. I'm just an enthusiast who's trying to write down and share my thoughts.
 
-◊(define blog `("http://www.jonashietala.se/" "My personal blog"))
-◊(define bjj "https://www.grapplearts.com/japanese-jiujitsu-vs-bjj/")
-◊(define lockpicking "https://www.reddit.com/r/lockpicking/")
-◊(define go "https://en.wikipedia.org/wiki/Go_(game)")
+◊(define blog
+  (x-ref
+    #f
+    "http://www.jonashietala.se/"
+    "My personal blog"))
+◊(define bjj
+   (x-ref
+    "2019-04-12"
+    "https://www.grapplearts.com/japanese-jiujitsu-vs-bjj/"
+    "Japanese Jiujitsu vs BJJ"))
+◊(define lockpicking 
+   (x-ref
+    #f
+    "https://www.reddit.com/r/lockpicking/"
+    "Reddit: Lockpicking"))
+◊(define go 
+   (x-ref
+    "2019-04-12"
+    "https://en.wikipedia.org/wiki/Go_(game)"
+    "Wikipedia: Go (game)"))
 

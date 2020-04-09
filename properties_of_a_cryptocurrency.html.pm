@@ -9,7 +9,7 @@
 ◊epigraph{
   ◊qt[#:author "Satoshi Nakamoto"
       #:src "A Peer-to-Peer Electronic Cash System"
-      #:url "/files/bitcoin.pdf"
+      #:url bitcoin-pdf
       #:quote-src #t]{
      What is needed is an electronic payment system based on cryptographic proof instead of trust, allowing any two willing parties to transact directly with each other without the need for a trusted third party.
   }
@@ -30,7 +30,6 @@ These are the most important properties of cryptocurrencies as I see it:
 They highlight the difference between cryptocurrencies and other payment systems and ultimately they're what makes cryptocurrencies useful.
 
 
-
 ◊subhead{No more third parties}
 
 The important difference between a cryptocurrency and digital payments we have today is the removal of a third party. Payments are ◊em{peer-to-peer} just as if you gave someone a dollar bill or a gold coin.◊sn{p2p}
@@ -49,10 +48,7 @@ Sending money to people via your bank is not peer-to-peer as you rely on your ba
 
 Transfers are therefore ◊em{trustless}◊sn{pundits} and ◊em{permissionless}.
 
-Trustless means you don't have to rely on a third party to make or confirm the transfer for you and permissionless means you don't have to worry about your transactions being blocked. Nobody can ◊link[freeze]{freeze your account} or ◊link[undesirable]{prevent you from opening one}. Cryptocurrencies are ◊em{uncensorable}.
-
-◊(define freeze "/freezing_of_merchant_accounts.html")
-◊(define undesirable "/undesirable_businesses.html")
+Trustless means you don't have to rely on a third party to make or confirm the transfer for you and permissionless means you don't have to worry about your transactions being blocked. Nobody can ◊link[freezing_of_merchant_accounts]{freeze your account} or ◊link[undesirable_businesses]{prevent you from opening one}. Cryptocurrencies are ◊em{uncensorable}.
 
 You also don't have to trust a third party to hold your money like you do when you have money in a bank.◊sn{in-banks} What you really have is an IOU from the bank where they promise to give you your money when you ask for it. With cryptocurrencies you can write down the keys to your wallet and you alone have access to it.◊sn{keys}
 
@@ -95,8 +91,6 @@ With cryptocurrencies anyone can independently verify the integrity of the coins
 
 Just like with cash cryptocurrency transfers are irreversible.◊sn[#:top -6]{DAO} This means if you've sent someone coins you can only get them back if they agree to give them back. It prevents ◊link[charge-back-fraud]{◊em{charge back fraud}} but it makes theft worse.
 
-◊(define charge-back-fraud "/cheaper_faster.html#charge-back-fraud")
-
 ◊;Transactions might also hold extra data so you can treat it as an effectively immutable data storage. It's very inefficient but could still be useful. The Bitcoin white paper is for example stored ◊link[wp-blockchain]{on the Bitcoin blockchain}.
 
 ◊ndef["DAO"]{
@@ -112,8 +106,6 @@ As there's no trusted third party there'sn't a single entity who controls the cr
     The new coins are rewards for miners who secure the network, but more on that in the ◊link[next-chapter]{next chapter}.
 }
 
-
-
 ◊img[#:src "/images/emission-rates.svg" #:link #t]{
     Bitcoin has a hard limit of 21 million bitcoins while in Monero new coins will always be created.◊sn{bitcoin-supply}
 }
@@ -122,8 +114,6 @@ If inflation is good or bad depends on who you ask. Keynesian economists ◊link
 
 I sure don't know who's right. It's probably best to be skeptical of both camps---economics operate in an extremely complex and irregular environment. Economic theories are difficult, or impossible, to verify.
 
-◊(define inflation-good "http://inflationmatters.com/keynesian-inflation-theory/")
-◊(define inflation-bad "https://austrianeconomics.fandom.com/wiki/Inflation")
 
 ◊qt[#:author "Daniel Kahneman" #:src "Thinking, Fast and Slow" #:quote-src #t #:url thinking-fast-and-slow-book]{
     acquisition of skills requires a regular environment, an adequate opportunity to practice, and rapid and unequivocal feedback about the correctness of thoughts and actions. ◊mn{tfas}
@@ -142,8 +132,6 @@ Either way it's not an argument against cryptocurrencies in general as they can 
 ◊ndef["austrian-podcast"]{
     If you're curious about Austrian Economics, which most cryptocurrencies follow, I can recommend ◊link[aus-link]{this podcast episode}. It's not something you hear about often but it presents an interesting viewpoint and shouldn't be dismissed.
 }
-
-◊(define aus-link "https://podcast.bitcoin.com/e799-Austrian-Economics-for-Bitcoiners-with-Jeffrey-Tucker-part-1")
 
 ◊note-pos[#:top -60]{miners}
 ◊note-pos[#:top -32]{bitcoin-supply}
@@ -179,10 +167,38 @@ Cryptocurrencies are inherently global. They are usable wherever you are as long
     Offline wallets with no computer contact is called cold storage. It's an excellent way to store large amounts you're not planning to use for some time.
 }
 
+◊(define inflation-good
+  (x-ref
+    "2019-04-24"
+    "http://inflationmatters.com/keynesian-inflation-theory/"
+    "Keynesian Inflation Theory"))
+◊(define inflation-bad 
+  (x-ref
+    "2019-04-24"
+    "https://austrianeconomics.fandom.com/wiki/Inflation"
+    "Austrian Economics Wiki: Inflation"))
 
-◊(define coinjoin "https://en.bitcoin.it/wiki/CoinJoin")
-◊(define next-chapter "/how_do_cryptocurrencies_work.html")
+◊(define aus-link 
+  (x-ref
+    "2019-04-24"
+    "https://podcast.bitcoin.com/e799-Austrian-Economics-for-Bitcoiners-with-Jeffrey-Tucker-part-1"
+    "Austrian Economics for Bitcoiners with Jeffrey Tucker (part 1)"))
 
-◊(define dao "https://fullstacks.org/materials/ethereumbook/16_appdx-forks-history.html")
-◊(define Monero "https://www.getmonero.org/")
+◊(define coinjoin 
+  (x-ref
+    "2019-04-24"
+    "https://en.bitcoin.it/wiki/CoinJoin"
+    "CoinJoin"))
+◊(define next-chapter how_do_cryptocurrencies_work)
+
+◊(define dao
+  (x-ref
+    "2019-04-24"
+    "https://fullstacks.org/materials/ethereumbook/16_appdx-forks-history.html"
+    "Ethereum Fork History"))
+◊(define Monero
+  (x-ref
+    "2019-04-24"
+    "https://www.getmonero.org/"
+    "Monero: A Reasonably Private Digital Currency"))
 

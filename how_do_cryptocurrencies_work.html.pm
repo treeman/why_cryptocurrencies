@@ -10,7 +10,7 @@ This is my attempt to explain how a standard cryptocurrency like Bitcoin works. 
 
 As stated in the introduction the focus isn't on technical details, but it's a hard balance to make between keeping it simple and explaining how cryptocurrencies work. If this chapter is too technical you can safely skip to the ◊link[next-chapter]{next chapter} or just read ◊link[summary]{the summary}---it's not required knowledge.
 
-◊(define summary "#summary")
+◊(define summary `("#summary" "Summary"))
 
 ◊note-pos[#:top -11]{others}
 
@@ -61,7 +61,7 @@ To be able to create a transaction you need to have the ◊em{private keys} to t
     You typically don't use the private key directly. Instead you can interact with a ◊em{seed}, which encodes the private key hash into a human-readable format. It's commonly made of 12 or 24 words.
 }
 
-It uses ◊link[public-key-cryptography]{◊em{public-key cryptography}} which allows you to prove you control the private key without sharing the private key itself. Compare it to credit card numbers which act as both a private and public key.  See ◊link[intro-crypto]{a hitchhiker's guide to cryptography} in the appendix for more details, but it's not required to understand how cryptocurrencies work on a higher level.
+It uses ◊link[public-key-cryptography]{◊em{public-key cryptography}} which allows you to prove you control the private key without sharing the private key itself. Compare it to credit card numbers which act as both a private and public key.  See ◊link[cryptography_intro]{a hitchhiker's guide to cryptography} in the appendix for more details, but it's not required to understand how cryptocurrencies work on a higher level.
 
 ◊note-pos[#:top -11.5]{private-key}
 
@@ -113,7 +113,7 @@ This isn't really a problem with physical cash since you can't just copy gold co
 
 To resolve double spending it's enough to choose one of double spending transactions. But how do you do that when there are many unrelated people---some who wants to cheat?
 
-This is the same problem as the ◊link[byzantine-generals]{◊em{Byzantine Generals Problem}}. Here's my description of a simple variation:
+This is the same problem as the ◊def[byzantine-generals]{Byzantine Generals Problem}. Here's my description of a simple variation:
 
 ◊div[#:class "story"]{
 In the Eastern Roman Empire, also referred to as the Byzantine Empire, a couple of generals surround an enemy city:
@@ -150,9 +150,21 @@ To relate it back to cryptocurrencies the choice between "attack" and "retreat" 
 ◊note-pos{bft}
 
 
-◊(define bft "https://en.wikipedia.org/wiki/Byzantine_fault")
-◊(define ceasar-cipher "http://practicalcryptography.com/ciphers/caesar-cipher/")
-◊(define byzantine-generals "https://www.microsoft.com/en-us/research/publication/byzantine-generals-problem/")
+◊(define bft 
+  (x-ref
+    "2019-05-03"
+    "https://en.wikipedia.org/wiki/Byzantine_fault"
+    "Wikipedia: Byzatine Fault"))
+◊(define ceasar-cipher
+  (x-ref
+    "2019-05-03"
+    "http://practicalcryptography.com/ciphers/caesar-cipher/"
+    "Caesar Cipher"))
+◊(define byzantine-generals
+  (x-ref
+    "2019-05-03"
+    "https://www.microsoft.com/en-us/research/publication/byzantine-generals-problem/"
+    "The Byzantine Generals Problem"))
 
 
 ◊subhead{Sybil attack}
@@ -213,8 +225,6 @@ Important to note is that everyone doesn't have to be a miner. The blockchain is
 ◊note-pos[#:top -65]{valid}
 ◊note-pos[#:top -60]{asics}
 ◊note-pos[#:top -48]{useful-pow}
-
-◊(define intro-crypto "/cryptography.html")
 
 ◊ndef["asics"]{
     In Bitcoin specialized hardware, ◊link[ASICs]{ASICs}, are used which are many magnitudes faster than regular computers at solving POW problems.
@@ -359,7 +369,7 @@ It works like this:
 This is a different type of double spend and it's the primary attack vector ◊link[bitcoin_whitepaper]{the white paper} is concerned about. It's called a ◊def[51-attack]{51% attack}, for reasons we'll soon explain.
 
 ◊ndef["chargeback"]{
-    In the credit card world this type of fraud is called ◊link[chargeback-fraud]{chargeback fraud} or friendly fraud.
+    In the credit card world this type of fraud is called ◊link[charge-back-fraud]{chargeback fraud} or friendly fraud.
 }
 
 ◊note-pos[#:top -70]{chargeback}
@@ -522,8 +532,6 @@ You may then wonder, what decides which is the correct chain? There is no clear 
 ◊note-pos[#:top -24]{hard-soft}
 
 
-◊(define dao "https://fullstacks.org/materials/ethereumbook/16_appdx-forks-history.html")
-
 ◊ndef["valid"]{
     Remember that to resolve double spending one transaction must be chosen, which one doesn't matter.
 }
@@ -544,7 +552,5 @@ The chapter became very long despite skipping out on details here and there. If 
 
 ◊link[bitcoin_whitepaper]{Bitcoin's white paper} is always a good place to begin and there are many good resources online. I've tried to include key concepts which you can use as starting points in your search.
 
-
-◊(define chargeback-fraud "https://en.wikipedia.org/wiki/Chargeback_fraud")
-◊(define next-chapter "/look_out_for_snake_oil.html")
+◊(define next-chapter snake_oil)
 

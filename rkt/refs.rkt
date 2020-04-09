@@ -18,7 +18,10 @@
   (unless (and (url? url)
                (xref? url))
     (error (format "bad x-ref url: '~a'" url)))
-  (define alt-text (string-append title "\nAccessed " date))
+  (define alt-text
+    (if date
+      (string-append title "\nAccessed " date)
+      title))
   (when ref
     (set! url (string-append url "#" (to-name ref))))
   (href c url alt-text))
