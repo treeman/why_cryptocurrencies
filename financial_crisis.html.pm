@@ -175,7 +175,7 @@ For the taxpayers it's like betting all on red on a roulette wheel---you risk a 
 
 ◊subhead{A message from Satoshi}
 
-After having released the ◊link[wp]{Bitcoin whitepaper} in 2008 Satoshi mined the first bitcoins and launched the Bitcoin network January 2009, just after the financial crisis. Little is known of the ideals of Bitcoin's creator, but Satoshi did ◊link[embedding-data]{leave a message} in the first ever Bitcoin block:
+After having released the ◊link[bitcoin_whitepaper]{Bitcoin whitepaper} in 2008 Satoshi mined the first bitcoins and launched the Bitcoin network January 2009, just after the financial crisis. Little is known of the ideals of Bitcoin's creator, but Satoshi did ◊link[embedding-data]{leave a message} in the first ever Bitcoin block:
 
 ◊qt[#:author "Satoshi"
     #:src "Coinbase parameter for block 0"
