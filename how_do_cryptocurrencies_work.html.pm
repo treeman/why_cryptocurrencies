@@ -150,7 +150,7 @@ To relate it back to cryptocurrencies the choice between "attack" and "retreat" 
 ◊note-pos{bft}
 
 
-◊(define bft 
+◊(define bft
   (x-ref
     "2019-05-03"
     "https://en.wikipedia.org/wiki/Byzantine_fault"
@@ -238,11 +238,31 @@ Important to note is that everyone doesn't have to be a miner. The blockchain is
     Additionally if there was a useful side-effect it might alter the economic incentives of mining. If mining is purely done to secure a cryptocurrency then the miners investment rests on the success of the cryptocurrency. A secondary use for specialized mining hardware lessens the incentive to secure the chain.
 }
 
-◊(define protein-folding "https://en.wikibooks.org/wiki/Structural_Biochemistry/Proteins/Protein_Folding_Problem")
-◊(define ASICs "https://en.wikipedia.org/wiki/Application-specific_integrated_circuit")
-◊(define royal-flush "https://www.mathcelebrity.com/5cardbasic.php?hand=AAKQJ&pl=Royal+Flush")
-◊(define primes "https://whatis.techtarget.com/definition/prime-number")
-◊(define mine-pen-paper "http://www.righto.com/2014/09/mining-bitcoin-with-pencil-and-paper.html")
+◊(define protein-folding
+  (x-ref
+    "2019-05-03"
+    "https://en.wikibooks.org/wiki/Structural_Biochemistry/Proteins/Protein_Folding_Problem"
+    "Wikibooks: Structural Biochemistry/Proteins/Protein Folding Problem"))
+◊(define ASICs
+  (x-ref
+    "2019-05-03"
+    "https://en.wikipedia.org/wiki/Application-specific_integrated_circuit"
+    "Wikipedia: Application-specific integrated circuit"))
+◊(define royal-flush
+  (x-ref
+    "2019-05-03"
+    "https://www.mathcelebrity.com/5cardbasic.php?hand=AAKQJ&pl=Royal+Flush"
+    "Probability of Royal Flush"))
+◊(define primes
+  (x-ref
+    "2019-05-03"
+    "https://whatis.techtarget.com/definition/prime-number"
+    "Prime Number"))
+◊(define mine-pen-paper
+  (x-ref
+    "2019-05-03"
+    "http://www.righto.com/2014/09/mining-bitcoin-with-pencil-and-paper.html"
+    " Mining Bitcoin with pencil and paper: 0.67 hashes per day "))
 
 
 ◊subhead{The blockchain}
@@ -299,11 +319,31 @@ The blockchain is duplicated, stored and maintained by many different people, yo
     One output is usually a ◊em{change output} where you send change back to one of your own addresses.
 }
 
-◊(define spv-jonald "https://medium.com/@jonaldfyookball/why-every-bitcoin-user-should-understand-spv-security-520d1d45e0b9")
-◊(define blockchair "https://blockchair.com/")
-◊(define blockchair-tx "https://blockchair.com/bitcoin/transaction/0c4c723ea0b78722a79c3e34fb714b92e5aac355041f490cd56937c14458d44f")
-◊(define blockchair-addr "https://blockchair.com/bitcoin/address/33esJQRYoc5V98bGxJi3sAQxQj3iAAVXSx")
-◊(define xmrchain "https://xmrchain.net/")
+◊(define spv-jonald
+  (x-ref
+    "2019-05-03"
+    "https://medium.com/@jonaldfyookball/why-every-bitcoin-user-should-understand-spv-security-520d1d45e0b9"
+    "Why Every Bitcoin User Should Understand “SPV Security”"))
+◊(define blockchair
+  (x-ref
+    "2019-05-03"
+    "https://blockchair.com/"
+    "Blockchair"))
+◊(define blockchair-tx
+  (x-ref
+    "2019-05-03"
+    "https://blockchair.com/bitcoin/transaction/0c4c723ea0b78722a79c3e34fb714b92e5aac355041f490cd56937c14458d44f"
+    "Blockchair: Transaction 0c4c723ea0b78722a79c3e34fb714b92e5aac355041f490cd56937c14458d44f"))
+◊(define blockchair-addr
+  (x-ref
+    "2019-05-03"
+    "https://blockchair.com/bitcoin/address/33esJQRYoc5V98bGxJi3sAQxQj3iAAVXSx"
+    "Blockchair: Address 33esJQRYoc5V98bGxJi3sAQxQj3iAAVXSx"))
+◊(define xmrchain
+  (x-ref
+    "2019-05-03"
+    "https://xmrchain.net/"
+    "xmrchain.net"))
 
 
 ◊subhead{Forks}
@@ -369,12 +409,16 @@ It works like this:
 This is a different type of double spend and it's the primary attack vector ◊link[bitcoin_whitepaper]{the white paper} is concerned about. It's called a ◊def[51-attack]{51% attack}, for reasons we'll soon explain.
 
 ◊ndef["chargeback"]{
-    In the credit card world this type of fraud is called ◊link[charge-back-fraud]{chargeback fraud} or friendly fraud.
+    In the credit card world this type of fraud is called ◊link[charge-back-fraud]{charge back fraud} or friendly fraud.
 }
 
 ◊note-pos[#:top -70]{chargeback}
 
-◊(define 51-attack "https://www.investopedia.com/terms/1/51-attack.asp")
+◊(define 51-attack
+  (x-ref
+    "2019-05-03"
+    "https://www.investopedia.com/terms/1/51-attack.asp"
+    "Investopedia: 51% Attack"))
 
 
 ◊subhead{Transaction security}
@@ -382,7 +426,7 @@ This is a different type of double spend and it's the primary attack vector ◊l
 The deeper a transaction is in the blockchain---the more confirmations it has---the harder a transaction is to reverse.
 
 ◊img[#:src "/images/confirmations.png"]{
-    Confirmations for different blocks.  
+    Confirmations for different blocks.
     Each block added to the blockchain makes every existing block---and transactions---more secure.
 }
 
@@ -407,7 +451,11 @@ In fact we could spend 100x more energy on mining and process the same amount of
     There is some correlation here. Because each transaction contains a fee the miner can claim, more transactions means the reward is bigger which supports more miners. But the reverse is not true, more energy does not mean higher transaction throughput.
 }
 
-◊(define z-forfeits "https://gist.github.com/awemany/619a5722d129dec25abf5de211d971bd")
+◊(define z-forfeits
+  (x-ref
+    "2019-05-03"
+    "https://gist.github.com/awemany/619a5722d129dec25abf5de211d971bd"
+    "Solving the 0-conf problem using forfeits"))
 
 
 ◊subhead{The 50% security assumption}
@@ -416,7 +464,7 @@ The whole system relies on a majority of miners being honest---it's the core sec
 
 Honest miners work for profit so they absolutely don’t want to risk their blocks being rejected by the other miners and lose their reward. Therefore the rational thing to do is to work on the longest chain.
 
-This means for Sneaky Steve to successfully reverse a transaction he needs to control more than half of all mining power---otherwise his hidden chain can never become the longest.  It's called a 51% attack because you need to control at least 51% of all mining power to pull it off consistently.◊sn{51-attack-btg}
+This means for Sneaky Steve to successfully reverse a transaction he needs to control more than half of all mining power---otherwise his hidden chain can never become the longest.  It's called a ◊def[51-attack]{51% attack} because you need to control at least 51% of all mining power to pull it off consistently.◊sn{51-attack-btg}
 
 This touches on the immutability of the blockchain. As long as more than 50% of miners don't want to change the chain it will always be longest and correct, but if they do then they can reverse transactions.
 
@@ -428,7 +476,11 @@ This touches on the immutability of the blockchain. As long as more than 50% of 
     This is the danger for smaller cryptocurrencies that don't have much mining power securing the chain. 51% attacking Bitcoin would be ◊strong{much} harder.
 }
 
-◊(define 51-btg "https://forum.bitcoingold.org/t/double-spend-attacks-on-exchanges/1362")
+◊(define 51-btg
+  (x-ref
+    "2019-05-03"
+    "https://forum.bitcoingold.org/t/double-spend-attacks-on-exchanges/1362"
+    "Bitcoin Gold: Double Spend Attacks on Exchanges "))
 
 
 ◊subhead{Economics of a 51% attack}
@@ -495,10 +547,26 @@ For example in a fork with two competing chains the most profitable move is to j
 
 It also doesn't make sense for a minority miner to try to double-spend, it will only cause them to lose money in the long run. Therefore only a miner with 51% can compromise the network security, and even then it might be more profitable to play by the rules.
 
-◊(define ghash "https://www.coindesk.com/bitcoin-mining-detente-ghash-io-51-issue")
-◊(define btc-hashrate "https://www.blockchain.com/charts/hash-rate")
-◊(define s9-hashrate "https://shop.bitmain.com/promote/antminer_s9i_asic_bitcoin_miner/specification")
-◊(define s9-cost "https://www.cryptocompare.com/mining/blokforge/antminer-s9i-14-ths/")
+◊(define ghash
+  (x-ref
+    "2019-05-03"
+    "https://www.coindesk.com/bitcoin-mining-detente-ghash-io-51-issue"
+    "The Bitcoin Mining Arms Race: GHash.io and the 51% Issue"))
+◊(define btc-hashrate
+  (x-ref
+    "2020-04-20"
+    "https://www.blockchain.com/charts/hash-rate"
+    "blockchain.com: Total Hash Rate (TH/s)"))
+◊(define s9-hashrate
+  (x-ref
+    "2020-04-20"
+    "https://shop.bitmain.com/promote/antminer_s9i_asic_bitcoin_miner/specification"
+    "Bitmain: Antminer S9i"))
+◊(define s9-cost
+  (x-ref
+    "2020-04-20"
+    "https://www.cryptocompare.com/mining/blokforge/antminer-s9i-14-ths/"
+    "CryptoCompare: Antminer S9I"))
 
 
 ◊subhead{Network upgrades and new cryptocurrencies}
@@ -543,7 +611,11 @@ There are alternatives to proof-of-work but none have so far been proven to work
 
 One problem is the ◊link[nothing-at-stake]{nothing at stake problem} where a coin holder can vote on all forks while a proof-of-work miner can only vote on one of the forks.  It causes a situation where everyone are incentivized to vote on all forks. An attacker can abuse it to reverse a transaction by only mining on their fork, which is initially a block behind, to overtake the main chain and reverse their transaction. This only requires a small percentage of total voting power in contrast to proof-of-work where you need 50%.
 
-◊(define nothing-at-stake "https://ethereum.stackexchange.com/questions/2402/what-exactly-is-the-nothing-at-stake-problem")
+◊(define nothing-at-stake 
+  (x-ref
+    "2019-05-03"
+    "https://ethereum.stackexchange.com/questions/2402/what-exactly-is-the-nothing-at-stake-problem"
+    "Stackexchange: What exactly is the Nothing-At-Stake problem?"))
 
 
 ◊subhead{More details}

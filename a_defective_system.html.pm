@@ -397,7 +397,7 @@ It seems to me if (or when) a recession comes we'll get caught with our pants do
 
 Since the financial crisis in 2008 we're in uncharted territory, and we actually don't know what we should do. Therefore new economic theories, like the ◊link[mmt]{Modern Money Theory} (MMT), are developed. MMT basically says the government can pay its bills by just printing all money it needs, checked only by inflation. It's reasonable to ask if MMT is a sound economic theory, or if it's just describing ◊link[mmt-true]{what's already happening}.
 
-While "printing more money" is a popular solution, ◊link[sound-money]{◊em{sound money}} (with a stable money supply) might represent a compelling alternative for critics of the modern economic policies. For example fiat backed by gold, actual gold coins or cryptocurrencies.◊sn{debasement}
+While "printing more money" is a popular solution, ◊def[sound-money]{sound money} (with a stable money supply) might represent a compelling alternative for critics of the modern economic policies. For example fiat backed by gold, actual gold coins or cryptocurrencies.◊sn{debasement}
 
 ◊ndef["debasement"]{
     The state that creates gold coins can still inflate the money supply by decreasing the amount of gold in the coins. This is called ◊link[debasement]{◊em{debasement}} and has been quite common historically.
@@ -414,6 +414,5 @@ It's not easy to see how a switch to sound money would occur, and maybe it would
 ◊(define mmt "https://www.bloomberg.com/news/features/2019-03-21/modern-monetary-theory-beginner-s-guide")
 ◊(define blind-leading-the-blind "/the_blind_leading_the_blind.html")
 ◊(define mmt-true "https://www.forbes.com/sites/nathanlewis/2019/02/21/the-problem-with-modern-monetary-theory-is-that-its-true/")
-◊(define sound-money "https://www.soundmoneydefense.org/sound-money-explained")
 ◊(define are-cryptos-money "/are_cryptocurrencies_money.html")
 

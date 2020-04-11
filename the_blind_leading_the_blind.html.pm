@@ -26,7 +26,7 @@
       ,(link case-against-fed-book #:quote #f "The Case Against the Fed")
       ")"))
 
-Even though ◊link[sound-money]{◊em{sound money}}---like cryptocurrencies or money backed by gold---might fix the bad incentives at the heart of the ◊link[financial-crisis]{2008 finanical crisis}, there are many arguments against it. One of the most common is we that lose the ability to influence and react to the market. For example if the economy crashes, or we think it will crash, the modern central banks might try to print money and buy things to soften the crash. This isn't possible with cryptocurrencies or gold, since they cannot be created freely.◊sn{elaciticity}
+Even though ◊def[sound-money]{sound money}---like cryptocurrencies or money backed by gold---might fix the bad incentives at the heart of the ◊link[financial-crisis]{2008 finanical crisis}, there are many arguments against it. One of the most common is we that lose the ability to influence and react to the market. For example if the economy crashes, or we think it will crash, the modern central banks might try to print money and buy things to soften the crash. This isn't possible with cryptocurrencies or gold, since they cannot be created freely.◊sn{elaciticity}
 
 But there's a fatal flaw with this argument: it relies on being able to predict the market and to know what actions to take to move it in the direction you want. With how intricate and complex the economy is, it's an absurd assumption.
 
@@ -240,5 +240,4 @@ Therefore cryptocurrencies are a more transparent and robust alternative, which 
 
 ◊(define mega-projects "http://omegataupodcast.net/181-why-megaprojects-fail-and-what-to-do-about-it/")
 ◊(define fed-dividends "https://newrepublic.com/article/116913/federal-reserve-dividends-most-outrageous-handout-banks")
-◊(define sound-money "https://www.soundmoneydefense.org/sound-money-explained")
 

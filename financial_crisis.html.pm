@@ -14,13 +14,11 @@
   }
 }
 
-During 2007--2008 the world experienced the biggest financial crisis since the 1930s ◊link[great-depression]{Great Depression}, often referred to as the ◊link[2008-crisis]{2008 financial crisis}. What was so crazy about the crisis? And is there a relationship to ◊link[sound-money]{◊em{sound money}}?◊mn{sound-money}
+During 2007--2008 the world experienced the biggest financial crisis since the 1930s ◊link[great-depression]{Great Depression}, often referred to as the ◊link[2008-crisis]{2008 financial crisis}. What was so crazy about the crisis? And is there a relationship to ◊def[sound-money]{sound money}?◊mn{sound-money}
 
 ◊ndef["sound-money"]{
     Sound money is not prone to sudden changes in long term purchasing power, and the value is determined by the free market.
 }
-
-◊(define sound-money "https://www.soundmoneydefense.org/sound-money-explained")
 
 ◊(define great-depression "https://en.wikipedia.org/wiki/Great_Depression")
 ◊(define 2008-crisis "https://en.wikipedia.org/wiki/Financial_crisis_of_2007%E2%80%932008")
@@ -323,7 +321,7 @@ History doesn't repeat itself, but it rhymes awfully well.
 
 ◊subhead{What if we used sound money?}
 
-With ◊link[sound-money]{◊em{sound money}} nobody can manipulate the money supply. For example fiat backed by gold (as long as we trust the backers), actual gold coins or cryptocurrencies are sound money. The question is: could the financial crisis have been prevented if we used sound money?
+With ◊def[sound-money]{sound money} nobody can manipulate the money supply. For example fiat backed by gold (as long as we trust the backers), actual gold coins or cryptocurrencies are sound money. The question is: could the financial crisis have been prevented if we used sound money?
 
 Unfortunately, probably not. The housing and bond bubble might still have happened as the banks can still create mortgage backed securities, CDOs and other complex derivatives. Sound money cannot prevent anyone from creating and selling junk.
 

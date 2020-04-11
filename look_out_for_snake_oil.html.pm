@@ -7,13 +7,20 @@
 ◊(define-meta uuid "635e169f-885a-4d29-a266-4c9ef4981f47")
 
 ◊epigraph{
-  ◊qt[#:author "Adam Back" #:src "Baltic Honeybadger 2017 Bitcoin Conference"
-      #:url "https://www.youtube.com/watch?v=DHc81OL_hk4&feature=youtu.be&t=21235"]{
+  ◊qt[#:author "Adam Back"
+      #:src "Baltic Honeybadger 2017 Bitcoin Conference"
+      #:url baltic-honeybadger]{
     So I mean for today, you could have, some Bitcoin business have a tab, so you pay them and then you work your tab there and presumably you cash your tab out if you don't use it.
 
     If you have repeat custom... or maybe the shops in the local area could make a shared tab or something in anticipation of... you know somebody in the local area ... technology expert could make a local Bitcoin tab that's interoperable between the shops and some sort of app to do it.
   }
 }
+
+◊(define baltic-honeybadger
+  (x-ref
+    "2019-05-06"
+    "https://www.youtube.com/watch?v=DHc81OL_hk4&feature=youtu.be&t=21235"
+    "Baltic Honeybadger 2017 Bitcoin Conference"))
 
 A snake oil salesperson sells, or promotes, a valueless or fraudulent solution. The cryptocurrency space is full of such people and broken solutions.
 
@@ -39,10 +46,6 @@ Some might be useful but they don't have the same properties as cryptocurrencies
 
 For example stablecoins depend on a third party issuer and redeemer---the very thing cryptocurrencies are meant to remove. Sidechains have fundamentally different security trade-offs and they work differently, they're built on top of---but they are not---cryptocurrencies.
 
-◊(define tether "https://tether.to/")
-◊(define JPM-coin "https://decryptmedia.com/5173/jp-morgan-coin-cryptocurrency")
-◊(define tether-backed-74 "https://www.bloomberg.com/news/articles/2019-04-30/tether-says-stablecoin-is-only-backed-74-by-cash-securities")
-
 ◊ndef["tether"]{
     After years of suspicion Tether recently admitted ◊link[tether-backed-74]{it's only backed 74% by cash}.
 }
@@ -57,8 +60,6 @@ Removing the consensus mechanism from a cryptocurrency, so they can just use the
 ◊ndef["git"]{
     You could say the popular version control system ◊link[git]{git} uses a blockchain, but it has nothing to do with cryptocurrencies.
 }
-
-◊(define git "https://git-scm.com/")
 
 Be aware of "the blockchain" being used only as a buzzword.
 
@@ -117,13 +118,60 @@ There are many traps to fall into in this space. I think the best antidote is to
     Imagine the irony of censorship being a problem in communities supporting censorship-free money. Unfortunately ◊link[bitcoin-censorship]{examples} of ◊link[r/cryptocurrency-censorship]{censorship} on ◊link[bitcoin-censorship3]{Reddit} are ◊link[bitcoin-censorship2]{plentiful}.
 }
 
-◊(define dash "https://bitcointalk.org/index.php?topic=999886.0")
-
-◊(define onecoin "https://www.bloomberg.com/news/articles/2019-03-08/onecoin-leaders-charged-in-u-s-with-operating-pyramid-scheme")
-◊(define fbi-bitconnect "https://www.fbi.gov/resources/victim-services/seeking-victim-information/seeking-victims-in-bitconnect-investigation")
-◊(define bitcoin-censorship "https://medium.com/@johnblocke/a-brief-and-incomplete-history-of-censorship-in-r-bitcoin-c85a290fe43")
-◊(define bitcoin-censorship2 "https://www.reddit.com/r/btc/comments/83vgdm/a_collection_of_evidence_regarding_bitcoins/")
-◊(define bitcoin-censorship3 "https://www.reddit.com/r/noncensored_bitcoin/comments/7414nf/september_2017_stats_post/")
-◊(define r/cryptocurrency-censorship "https://www.trustnodes.com/2019/05/01/the-cryptocurrency-sub-tests-censorship-after-bitcoin-core-supporter-suddenly-becomes-top-mod")
+◊(define tether
+  (x-ref
+    "2019-05-06"
+    "https://tether.to/"
+    "Tether - Stale digital cash on the Blockchain"))
+◊(define JPM-coin
+  (x-ref
+    "2019-05-06"
+    "https://decryptmedia.com/5173/jp-morgan-coin-cryptocurrency"
+    "JP Morgan Coin: The next big cryptocurrency?"))
+◊(define tether-backed-74
+  (x-ref
+    "2019-05-06"
+    "https://www.bloomberg.com/news/articles/2019-04-30/tether-says-stablecoin-is-only-backed-74-by-cash-securities"
+    "Tether Says Stablecoin Is Only Backed 74% by Cash, Securities"))
+◊(define dash
+  (x-ref
+    "2019-05-06"
+    "https://bitcointalk.org/index.php?topic=999886.0"
+    "bitcointalk.org: Why the darkcoin/dash/dashpay instamine matters "))
+◊(define git
+  (x-ref
+    "2019-05-06"
+    "https://git-scm.com/"
+    "Git"))
+◊(define onecoin
+  (x-ref
+    "2019-05-06"
+    "https://www.bloomberg.com/news/articles/2019-03-08/onecoin-leaders-charged-in-u-s-with-operating-pyramid-scheme"
+    "OneCoin Leaders Charged in Multibillion-Dollar Pyramid Scam"))
+◊(define fbi-bitconnect
+  (x-ref
+    "2019-05-06"
+    "https://www.fbi.gov/resources/victim-services/seeking-victim-information/seeking-victims-in-bitconnect-investigation"
+    "Seeking Victims in Bitconnect Investigation"))
+◊(define bitcoin-censorship
+  (x-ref
+    "2019-05-06"
+    "https://medium.com/@johnblocke/a-brief-and-incomplete-history-of-censorship-in-r-bitcoin-c85a290fe43"
+    "A (brief and incomplete) history of censorship in /r/Bitcoin"))
+◊(define bitcoin-censorship2
+  (x-ref
+    "2019-05-06"
+    "https://www.reddit.com/r/btc/comments/83vgdm/a_collection_of_evidence_regarding_bitcoins/"
+    "A collection of evidence regarding Bitcoin's takeover and problems."))
+◊(define bitcoin-censorship3
+  (x-ref
+    "2019-05-06"
+    "https://www.reddit.com/r/noncensored_bitcoin/comments/7414nf/september_2017_stats_post/"
+    "r/noncensored_bitcoin: September 2017 Stats Post"))
+◊(define r/cryptocurrency-censorship
+  (x-ref
+    "2019-05-06"
+    "https://www.trustnodes.com/2019/05/01/the-cryptocurrency-sub-tests-censorship-after-bitcoin-core-supporter-suddenly-becomes-top-mod"
+    "The Cryptocurrency Sub Tests Censorship After Bitcoin Core Supporter Suddenly Becomes Top Mod"))
 
 

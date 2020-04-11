@@ -63,6 +63,22 @@
     "https://en.wikipedia.org/wiki/Cryptographic_hash_function"
     "Wikipedia: Cryptographic hash functions"))
 
+(define gold-standard
+  (x-ref
+    "2019-05-16"
+    "https://www.britannica.com/topic/gold-standard"
+    "Gold standard"))
+(define fractional-banking
+  (x-ref
+    "2019-05-16"
+    "https://corporatefinanceinstitute.com/resources/knowledge/finance/fractional-banking/"
+    "What is Fractional Banking?"))
+(define sound-money
+  (x-ref
+    "2019-05-16"
+    "https://www.soundmoneydefense.org/sound-money-explained"
+    "What is Sound Money? Sound Money Explained"))
+
 ;; Chapters
 
 (define about-the-book
@@ -82,6 +98,10 @@
   (ch-ref
     'properties_of_a_cryptocurrency.html
     "Properties of a cryptocurrency"))
+(define private_property
+  (ch-ref
+    'properties_of_a_cryptocurrency.html #:ref "private"
+    "Private"))
 (define how_do_cryptocurrencies_work
   (ch-ref
     'how_do_cryptocurrencies_work.html
@@ -90,6 +110,10 @@
   (ch-ref
     'look_out_for_snake_oil.html
     "Look out for snake oil"))
+(define what_is_money
+  (ch-ref
+    'what_is_money.html
+    "What is money?"))
 (define are_cryptocurrencies_money
   (ch-ref
     'are_cryptocurrencies_money.html
