@@ -94,6 +94,10 @@
     'free.html #:ref "donations-is-a-perfect-use-for-cryptocurrencies"
     "Donations"))
 
+(define no-more-third-parties
+  (ch-ref
+    'properties_of_a_cryptocurrency.html #:ref "no-more-third-parties"
+    "Properties of a cryptocurrency"))
 (define properties_of_a_cryptocurrency
   (ch-ref
     'properties_of_a_cryptocurrency.html
@@ -105,6 +109,14 @@
 (define how_do_cryptocurrencies_work
   (ch-ref
     'how_do_cryptocurrencies_work.html
+    "How do cryptocurrencies work?"))
+(define transaction-security
+  (ch-ref
+    'how_do_cryptocurrencies_work.html #:ref "transaction-security"
+    "How do cryptocurrencies work?"))
+(define double-spending
+  (ch-ref
+    'how_do_cryptocurrencies_work.html #:ref "copying-a-coin-&-double-spending"
     "How do cryptocurrencies work?"))
 (define snake_oil
   (ch-ref
@@ -161,6 +173,10 @@
     'financial_crisis.html
     "The financial crisis, bad loans and bailouts"))
 
+(define darknet_markets
+  (ch-ref
+    'darknet_markets.html
+    "Darknet markets"))
 (define swiss_bank_account_in_your_pocket
   (ch-ref
     'swiss_bank_account_in_your_pocket.html
@@ -187,10 +203,14 @@
   (ch-ref
     'challenges.html
     "Challenges for cryptocurrencies"))
+(define scalability-challenge
+  (ch-ref
+    'challenges.html #:ref "scalability"
+    "The scalability challenge"))
 (define privacy-challenge
   (ch-ref
     'challenges.html #:ref "privacy-and-fungibility"
-    "Privacy and fungibility"))
+    "The privacy and fungibility challenge"))
 (define bitcoin_whitepaper
   (ch-ref
     'bitcoin_whitepaper.html

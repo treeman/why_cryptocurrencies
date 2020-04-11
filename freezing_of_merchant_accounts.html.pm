@@ -58,7 +58,7 @@ Yet this has played out ◊link[rel-examples]{again and again} for businesses al
 
 Imagine what you would do now, without a salary and without your savings...
 
-◊(define rel-examples "/freezing_of_merchant_accounts.html#other-examples")
+◊(define rel-examples "#other-examples")
 ◊(define american-savings "https://www.cnbc.com/2018/01/18/few-americans-have-enough-savings-to-cover-a-1000-emergency.html")
 
 ◊note-pos[#:top -29]{6-months}
@@ -155,7 +155,7 @@ With cryptocurrencies at least you have a choice and a possibility to avoid your
 ◊note-pos[#:top -20]{tradeoff-holding}
 
 
-◊(define prev "/undesirable_businesses.html")
+◊(define prev undesirable_businesses)
 
 ◊; Comic
 ◊;https://paypalsucks.org/toon1.shtml

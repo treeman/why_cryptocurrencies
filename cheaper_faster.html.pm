@@ -49,7 +49,7 @@ In fact Bitcoin fees of $2-3 is still low compared the fees during the bull run 
     See ◊link[fee-market-myth]{the fee market myth} for more info (it was written a year before the ridiculous $50 fees).
 }
 
-You may think the fees are so high because Bitcoin is much more popular than other cryptocurrencies, but that's not the whole story. In fact it would be easy to lower the fees---Bitcoin Cash can for example handle at least 20 times the transaction count of Bitcoin, while keeping the same low fees. See the ◊link[scalability]{discussion of the scalability challenge} in the appendix for more details.
+You may think the fees are so high because Bitcoin is much more popular than other cryptocurrencies, but that's not the whole story. In fact it would be easy to lower the fees---Bitcoin Cash can for example handle at least 20 times the transaction count of Bitcoin, while keeping the same low fees. See the ◊link[scalability-challenge]{discussion of the scalability challenge} in the appendix for more details.
 
 Bitcoin just doesn't work well as a currency with these high and unreliable fees, but it's not representative of cryptocurrencies in general.
 
@@ -59,24 +59,45 @@ Bitcoin just doesn't work well as a currency with these high and unreliable fees
     How well cryptocurrencies can scale is an ongoing research, and supporting as many transactions as VISA does with the same fees might be difficult.
 }
 
-◊(define fee-market-myth "https://medium.com/@johnblocke/the-fee-market-myth-b9d189e45096")
-◊(define median-tx-fee "https://bitinfocharts.com/comparison/median_transaction_fee-btc-ltc-bch-xmr-doge.html")
-◊(define median-tx-fee-monero "https://www.monero.how/monero-transaction-fees")
-◊(define nullc-champaign "https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2017-December/015455.html")
-◊(define scalability "/challenges.html#scalability")
+◊(define fee-market-myth
+  (x-ref
+    "2019-06-03"
+    "https://medium.com/@johnblocke/the-fee-market-myth-b9d189e45096"
+    "The Fee Market Myth"))
+◊(define median-tx-fee
+  (x-ref
+    "2019-05-25"
+    "https://bitinfocharts.com/comparison/median_transaction_fee-btc-ltc-bch-xmr-doge.html"
+    "Bitcoin, Litecoin, Bitcoin Cash, Monero, Dogecoin Median Transaction Fee historical chart"))
+◊(define median-tx-fee-monero
+  (x-ref
+    "2019-05-25"
+    "https://www.monero.how/monero-transaction-fees"
+    "How much are Monero transaction fees?"))
+◊(define nullc-champaign
+  (x-ref
+    "2019-06-03"
+    "https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2017-December/015455.html"
+    "[bitcoin-dev] Total fees have almost crossed the block reward"))
 
 
 ◊subhead{Who pays the fees?}
 
 ◊qt[#:author "Mike Schlotman, Kroger's executive vice president and CFO"
     #:date "Mars 2019"
-    #:url "http://ir.kroger.com/file/Index?KeyFile=396935873"]{
+    #:url kroger]{
     Visa has been misusing its position and charging retailers excessive fees for a long time. They conceal from customers what Visa and its banks charge retailers to accept Visa credit cards.
 }
 
 Wait a minute, isn't paying with credit cards, debit cards, PayPal etc already free? I've never paid a fee---except maybe a yearly fee for having a card. Many credit cards even give you a bonus for every purchase, so what's the deal?
 
 That's because you as a customer don't see the high fees---but the merchant does. Fees of 1-4% per transaction can be very demanding, especially for low-margin businesses. To make up for the fees (and to compensate for ◊link[rel-charge-back-fraud]{charge back fraud}) merchants instead raise their prices. So you as a customer actually pay for the fees, they're just indirect and hidden from view.
+
+◊(define kroger
+  (x-ref
+    "2019-06-03"
+    "http://ir.kroger.com/file/Index?KeyFile=396935873"
+    "Kroger Announces Second Division to Stop Accepting Visa Credit Cards Due to Excessive Transaction Fees"))
 
 
 ◊subhead{Fee comparisons}
@@ -88,8 +109,6 @@ It's difficult to compare the fees of different digital payments in a complete a
 
     See ◊link[credit-card-processing-fees]{this} introduction to credit card processing fees.
 }
-
-◊(define credit-card-processing-fees "https://www.creditdonkey.com/credit-card-processing-fees.html")
 
 There are different types of cards; debit and credit cards, and different providers like VISA, Mastercard or American Express. I'll treat them as one category for simplicity, even though they have slightly different fees. Wire transfer fees also vary a lot and international transfers outside of ◊link[sepa]{SEPA} can be very expensive depending on your bank and country.
 
@@ -116,8 +135,6 @@ Mobile payments have become popular recently.◊sn{mobile-payments} As a represe
     ◊figcaption{A summary of transaction fees of various payment systems.}
 }
 
-◊(define card-fees "https://www.cardfellow.com/blog/average-fees-for-credit-card-processing/")
-◊(define wire-transfer-fees "https://www.nerdwallet.com/blog/banking/wire-transfers-what-banks-charge/")
 
 I've also left out any monthly and yearly fee, common for regular payment systems. For example merchants might rent credit card terminals and Swish---with comparatively low transaction fees---also has a $10--50 yearly fee (the fee varies depending on your bank).◊sn{bank-fees}
 
@@ -127,7 +144,7 @@ I've also left out any monthly and yearly fee, common for regular payment system
 
 As we can see cryptocurrencies are decidedly cheaper than the other options. Even Swish, which is much cheaper than PayPal or cards, is 100x more expensive than Bitcoin Cash. There are also no yearly fees of any kind just to receive payments in it (but there might be fees if you want to convert it to fiat).
 
-As the ◊link[what-is-money]{purpose of money} is to increase economic efficiency, a 1--4% tax on nearly all digital payments is really counter-productive.◊sn{insurance} Therefore a move towards cheap payment solutions like Swish or cryptocurrencies would be beneficial economically.
+As the ◊link[what_is_money]{purpose of money} is to increase economic efficiency, a 1--4% tax on nearly all digital payments is really counter-productive.◊sn{insurance} Therefore a move towards cheap payment solutions like Swish or cryptocurrencies would be beneficial economically.
 
 ◊note-pos[#:top -17]{bank-fees}
 ◊note-pos{insurance}
@@ -136,10 +153,31 @@ As the ◊link[what-is-money]{purpose of money} is to increase economic efficien
     Yes, parts of the fees represents fraud protection. But that too comes ◊link[rel-charge-back-fraud]{with a cost}, and if viewed from a global economic perspective it might even be detrimental.
 }
 
-◊(define paypal-fees "https://www.paypal.com/us/webapps/mpp/paypal-fees")
+◊(define credit-card-processing-fees
+  (x-ref
+    "2019-06-03"
+    "https://www.creditdonkey.com/credit-card-processing-fees.html"
+    "Credit Card Processing Fees: What You Need to Know"))
+◊(define card-fees
+  (x-ref
+    "2019-06-03"
+    "https://www.cardfellow.com/blog/average-fees-for-credit-card-processing/"
+    "We get this question a lot here at CardFellow: “What’s the average credit card processing fee for a [insert your business type here] business?” There are easy answers to this question, and then there are the right answers."))
+◊(define wire-transfer-fees
+  (x-ref
+    "2019-06-03"
+    "https://www.nerdwallet.com/blog/banking/wire-transfers-what-banks-charge/"
+    "Wire Transfers: What Banks Charge"))
+◊(define paypal-fees
+  (x-ref
+    "2019-06-03"
+    "https://www.paypal.com/us/webapps/mpp/paypal-fees"
+    "Credit Card Fees, Send Money Fees & Other Charges - PayPal US"))
 ◊(define swish
-    `("https://www.getswish.se/foretag/vara-erbjudanden/"
-      "Get started with Swish (Swedish), the fees are different depending on your bank"))
+  (x-ref
+    "2019-06-03"
+    "https://www.getswish.se/foretag/vara-erbjudanden/"
+    "Get started with Swish (Swedish), the fees are different depending on your bank"))
 
 
 ◊subhead{Payment speed}
@@ -150,7 +188,11 @@ Shifting focus a little, let's take a look at payment speed. We can identify dif
     Credit card payments are more complex. See ◊link[how-visas-payment-system-works]{this blog post} for an overview of VISA's payment system.
 }
 
-◊(define how-visas-payment-system-works "http://blog.unibulmerchantservices.com/how-visas-payment-system-works/")
+◊(define how-visas-payment-system-works
+  (x-ref
+    "2019-06-03"
+    "http://blog.unibulmerchantservices.com/how-visas-payment-system-works/"
+    "How Visa’s Payment System Works"))
 
 ◊ol{
     ◊li{Notification}
@@ -183,8 +225,21 @@ It goes something like this:
 
 This can be a big problem for some merchants, especially those ◊link[fraud-digital]{serving digital goods}, who often has to swallow it as a loss. To make matters worse merchants also have to pay non-negotiable and non-refundable ◊link[charge-back-fees]{charge back fees} even when disputing.◊sn{bank-chargeback}
 
-◊(define charge-back-fees "https://chargebacks911.com/knowledge-base/chargeback-fees/")
-◊(define fraud-digital "https://chargeback.com/growing-cost-of-fraud-for-digital-goods/")
+◊(define charge-back-fraud
+  (x-ref
+    "2019-06-03"
+    "https://en.wikipedia.org/wiki/Chargeback_fraud"
+    "Wikipedia: Chargeback fraud"))
+◊(define charge-back-fees
+  (x-ref
+    "2019-06-03"
+    "https://chargebacks911.com/knowledge-base/chargeback-fees/"
+    "Growing Cost of Fraud For Digital Goods"))
+◊(define fraud-digital
+  (x-ref
+    "2019-06-03"
+    "https://chargeback.com/growing-cost-of-fraud-for-digital-goods/"
+    "Chargeback Fees"))
 
 ◊ndef["bank-chargeback"]{
     It's also common that banks are the ones who have to eat the cost of the fraud.
@@ -203,7 +258,11 @@ Wire transfers aren't usually used for payments, but it's still a useful compari
 
 An unique property of cryptocurrencies is they ◊link[transaction-security]{become irreversible} very quickly. In Bitcoin it usually takes 10--60 min.
 
-◊(define mastercard-chargeback "https://chargeback.com/mastercard-chargeback-time-limits/")
+◊(define mastercard-chargeback
+  (x-ref
+    "2019-06-03"
+    "https://chargeback.com/mastercard-chargeback-time-limits/"
+    "MasterCard Chargeback Time Limits"))
 
 ◊figure{
     ◊table-body{
@@ -221,17 +280,11 @@ The speed that cryptocurrencies settle and become irreversible significantly red
 ◊ndef["0-conf"]{
     There's a risk of having transactions reversed (◊link[double-spending]{double-spent}) before they're confirmed.  This can happen when delivering goods immediately after payment notification.
 
-    Because transaction security is probabilistic, there's ◊link[reversing]{always a risk} of having a transaction reversed even for confirmed transactions. In practice it's ◊strong{very} low.
+    Because transaction security is probabilistic, there's ◊link[transaction-security]{always a risk} of having a transaction reversed even for confirmed transactions. In practice it's ◊strong{very} low.
 }
 
 ◊note-pos[#:top -30]{wire-transfer}
 ◊note-pos{0-conf}
-
-
-◊(define reversing "/how_do_cryptocurrencies_work.html#transaction-security")
-◊(define double-spending "/how_do_cryptocurrencies_work.html#copying-a-coin-&-double-spending")
-◊(define sepa "https://en.wikipedia.org/wiki/Single_Euro_Payments_Area")
-◊(define transaction-security "/how_do_cryptocurrencies_work.html#transaction-security")
 
 ◊(define (tds txt)
    `(td (strong ,txt)))
@@ -272,17 +325,35 @@ We've seen large benefits to cryptocurrency payments, and one large drawback:
 
 The drawback might be alleviated with optional systems in the future, giving us the best of both worlds.
 
-◊(define what-is-money "/what_is_money.html")
+◊(define rel-charge-back-fraud
+    `("#charge-back-fraud"
+      "Charge back fraud"))
+◊(define rel-fees
+    `("#fee-comparisons"
+      "Fee comparisons"))
+◊(define rel-speed
+    `("#speed-comparisons"
+      "Speed comparisons"))
+◊(define rel-crypto-fees
+    `("#cryptocurrency-fees"
+      "Cryptocurrency fees"))
+◊(define rel-risk-tradeoff
+    `("#the-risk-management-trade-off"
+      "The risk management trade-off"))
+
+◊(define sepa
+  (x-ref
+    "2019-06-03"
+    "https://en.wikipedia.org/wiki/Single_Euro_Payments_Area"
+    "Wikipedia: Single Euro Payments Area"))
+
+◊(define bitcoin-fees
+  (x-ref
+    "2019-06-03"
+    "https://bitcoinfees.cash/"
+    "Bitcoin Cash and Bitcoin fees"))
+
 ◊;http://blog.unibulmerchantservices.com/how-visas-payment-system-works/
 ◊;https://chargeback.com/chargeback-process/
 ◊;https://chargeback.com/mastercard-chargeback-time-limits/
-◊(define charge-back-fraud "https://en.wikipedia.org/wiki/Chargeback_fraud")
-◊(define rel-charge-back-fraud "#charge-back-fraud")
-◊(define rel-fees "#fee-comparisons")
-◊(define rel-speed "#speed-comparisons")
-◊(define rel-crypto-fees "#cryptocurrency-fees")
-◊(define rel-risk-tradeoff "#the-risk-management-trade-off")
 
-◊(define bitcoin-fees
-    `("https://bitcoinfees.cash/"
-      "Bitcoin Cash and Bitcoin fees"))
