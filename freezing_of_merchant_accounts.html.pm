@@ -9,11 +9,16 @@
 ◊epigraph{
     ◊qt[#:src "PayPal freezes Neo900 funds"
         #:date "Dec 2015"
-        #:url "https://neo900.org/news/paypal-trouble-delays-project"]{
-        Considering that the project operates with minimum margins, just having most of its assets frozen for an unknown amount of time would be disastrous.
+        #:url neo900-delay]{
+      Considering that the project operates with minimum margins, just having most of its assets frozen for an unknown amount of time would be disastrous.
     }
 }
 
+◊(define neo900-delay
+   (x-ref
+      "2019-06-14"
+      "https://neo900.org/news/paypal-trouble-delays-project"
+      "PayPal trouble delays project"))
 
 This chapter continues on the same idea as the ◊link[prev]{previous one}, but we'll view the issue from another angle. Instead of focusing on getting permission to accept payments at all we'll focus on the problem that accounts can be frozen at any time, for arbitrary reasons. This isn't a problem with cryptocurrencies, as they cannot be frozen.
 
@@ -58,8 +63,17 @@ Yet this has played out ◊link[rel-examples]{again and again} for businesses al
 
 Imagine what you would do now, without a salary and without your savings...
 
-◊(define rel-examples "#other-examples")
-◊(define american-savings "https://www.cnbc.com/2018/01/18/few-americans-have-enough-savings-to-cover-a-1000-emergency.html")
+◊(define rel-examples `("#other-examples" "Other examples"))
+◊(define american-savings
+  (x-ref
+    "2019-06-14"
+    "https://www.cnbc.com/2018/01/18/few-americans-have-enough-savings-to-cover-a-1000-emergency.html"
+    "Only 39% of Americans have enough savings to cover a $1,000 emergency"))
+◊(define office-space 
+  (x-ref
+    "2019-06-14"
+    "https://www.imdb.com/title/tt0151804/"
+    "Office Space (1999)"))
 
 ◊note-pos[#:top -29]{6-months}
 
@@ -106,8 +120,16 @@ The ◊link[neo900]{Neo900} project I quoted at the start of this chapter? They 
 
 ◊note-pos[#:top -16]{attention}
 
-◊(define neo900 "https://neo900.org/")
-◊(define hackernews "https://news.ycombinator.com/")
+◊(define neo900 
+  (x-ref
+    "2019-06-14"
+    "https://neo900.org/"
+    "Neo900"))
+◊(define hackernews 
+  (x-ref
+    #f
+    "https://news.ycombinator.com/"
+    "Hacker News"))
 
 
 ◊subhead{Other examples}
@@ -119,20 +141,42 @@ If you search for it online, there are thousands of stories like these. This is 
     ◊li{◊link[paypal-12years]{We got banned from PayPal after 12 years of business}}
     ◊li{◊link[paypal-70000]{PayPal just froze over $70,000 in my account}}
     ◊li{◊link[paypal-8years]{PayPal destroyed my business of 8 years in a day}}
-    ◊li{◊link[paypal-deletes-stream]{PayPal Deletes My Account Mid Stream}}
     ◊li{◊link[startups-stripe]{Why Should Startups Avoid Stripe?}}
     ◊li{◊link[keys4coins-stripe]{Why Stripe is the worst choice for your new startup business}}
 }
 
 Some of these had a happy ending but others did not.
 
-◊(define kyc-failure "https://www.cogini.com/blog/paypal-know-your-customer-failure/")
-◊(define paypal-12years "https://blog.niteo.co/paypal-ban-after-12-years/")
-◊(define paypal-70000 "https://www.reddit.com/r/Entrepreneur/comments/1rkkd7/paypal_just_froze_over_70000_in_my_account_say/")
-◊(define paypal-8years "http://www.aboutpaypal.org/paypal-destroyed-business-8-years-day/")
-◊(define startups-stripe "https://kinsta.com/blog/startups-avoid-stripe/")
-◊(define paypal-deletes-stream "https://www.youtube.com/watch?v=Js1kOPu0T4g")
-◊(define keys4coins-stripe "https://medium.com/@OlavOlsm/why-stripe-is-the-worst-choice-for-your-new-startup-business-e4d9f515e116")
+◊(define kyc-failure 
+  (x-ref
+    "2019-06-14"
+    "https://www.cogini.com/blog/paypal-know-your-customer-failure/"
+    "PayPal Know Your Customer failure"))
+◊(define paypal-12years 
+  (x-ref
+    "2019-06-14"
+    "https://blog.niteo.co/paypal-ban-after-12-years/"
+    "We got banned from PayPal after 12 years of business "))
+◊(define paypal-70000 
+  (x-ref
+    "2019-06-14"
+    "https://www.reddit.com/r/Entrepreneur/comments/1rkkd7/paypal_just_froze_over_70000_in_my_account_say/"
+    "PayPal just froze over $70,000 in my account - Say they won't return it for 180 days"))
+◊(define paypal-8years 
+  (x-ref
+    "2019-06-14"
+    "http://www.aboutpaypal.org/paypal-destroyed-business-8-years-day/"
+    "PayPal destroyed my business of 8 years in a day"))
+◊(define startups-stripe 
+  (x-ref
+    "2019-06-14"
+    "https://kinsta.com/blog/startups-avoid-stripe/"
+    "Should Startups Avoid Stripe? How We Got Our Account Back"))
+◊(define keys4coins-stripe 
+  (x-ref
+    "2019-06-14"
+    "https://medium.com/@OlavOlsm/why-stripe-is-the-worst-choice-for-your-new-startup-business-e4d9f515e116"
+    "Why Stripe is the worst choice for your new startup business"))
 
 
 ◊subhead{Money under your mattress}
@@ -160,4 +204,3 @@ With cryptocurrencies at least you have a choice and a possibility to avoid your
 ◊; Comic
 ◊;https://paypalsucks.org/toon1.shtml
 
-◊(define office-space "https://www.imdb.com/title/tt0151804/")

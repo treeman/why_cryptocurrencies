@@ -36,6 +36,7 @@
 (define permanent-record-book "https://www.goodreads.com/book/show/46223297-permanent-record")
 (define animal-farm-book "https://www.goodreads.com/book/show/170448.Animal_Farm")
 (define code-breakers-book "https://www.goodreads.com/book/show/29608.The_Codebreakers")
+(define thirst-book "https://www.charitywater.org/thirst")
 
 ;; Defs
 
@@ -56,6 +57,11 @@
   (ch-ref
     'cryptography.html #:ref "public-key-cryptography"
     "Public-key cryptography"))
+
+(define 51%-attack
+  (ch-ref
+    'how_do_cryptocurrencies_work.html #:ref "the-50%-security-assumption"
+    "How do cryptocurrencies work?: The 50% security assumption"))
 
 (define cryptographic-hash-functions
   (x-ref
@@ -92,7 +98,7 @@
 (define donations
   (ch-ref
     'free.html #:ref "donations-is-a-perfect-use-for-cryptocurrencies"
-    "Donations"))
+    "Donations is a perfect use for cryptocurrencies"))
 
 (define no-more-third-parties
   (ch-ref
@@ -105,7 +111,7 @@
 (define private_property
   (ch-ref
     'properties_of_a_cryptocurrency.html #:ref "private"
-    "Private"))
+    "Properties of a cryptocurrency: Private"))
 (define how_do_cryptocurrencies_work
   (ch-ref
     'how_do_cryptocurrencies_work.html
@@ -113,11 +119,11 @@
 (define transaction-security
   (ch-ref
     'how_do_cryptocurrencies_work.html #:ref "transaction-security"
-    "How do cryptocurrencies work?"))
+    "How do cryptocurrencies work?: Transaction security"))
 (define double-spending
   (ch-ref
     'how_do_cryptocurrencies_work.html #:ref "copying-a-coin-&-double-spending"
-    "How do cryptocurrencies work?"))
+    "How do cryptocurrencies work?: Copying a coin & double spending"))
 (define snake_oil
   (ch-ref
     'look_out_for_snake_oil.html
@@ -135,6 +141,10 @@
   (ch-ref
     'cheaper_faster.html
     "Cheaper & faster"))
+(define cryptocurrency-fees
+  (ch-ref
+    'cheaper_faster.html #:ref "cryptocurrency-fees"
+    "Cheaper & faster: Cryptocurrency fees"))
 (define fee-comparisons
   (ch-ref
     'cheaper_faster.html #:ref "fee-comparisons"

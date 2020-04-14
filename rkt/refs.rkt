@@ -18,6 +18,8 @@
   (unless (and (url? url)
                (xref? url))
     (error (format "bad x-ref url: '~a'" url)))
+  (when (and (string? date) (string=? date ""))
+    (error (format "empty date for url: '~a'" url)))
   (define alt-text
     (if date
       (string-append title "\nAccessed " date)
