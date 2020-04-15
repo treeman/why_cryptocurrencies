@@ -1,7 +1,5 @@
 #lang pollen
 
-◊(require pollen/unstable/pygments)
-
 ◊(define-meta title "Provably fair gambling")
 ◊(define-meta subtitle "Gambling where you cannot cheat the odds")
 ◊(define-meta published "2019-12-17T00:00:00+01:00")
@@ -89,7 +87,7 @@ Our gambling algorithm is simple. We'll concatenate the casino's seed with the p
     If you don't publically sign the bet, there's always the risk that the casino can say that it never happened, and you cannot prove otherwise.
 }
 
-◊(code-hl-file 'python3 "scripts/gambling.py")
+◊(import-code "code/gambling.py.html")
 
 Importantly the casino should give out the seed encoded with a ◊def[#:src hash-functions]{cryptographic hash function}, otherwise the player can just pick the winning seed and there would be no gamble. When the player has sent their seed to the casino, the bet has been made, and the casino reveals their seed (which we can verify with the hashed value) and we know who won and who lost.
 
