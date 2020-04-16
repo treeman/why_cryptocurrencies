@@ -1,5 +1,6 @@
 #lang racket/base
 
+(require xml)
 (require pollen/core pollen/tag pollen/decode txexpr)
 (require racket/match racket/string racket/list)
 (require racket/format)
@@ -9,7 +10,6 @@
 (require "decode.rkt")
 (require "links.rkt")
 (require "post-process.rkt")
-(require "pygments.rkt")
 (require "sidenotes.rkt")
 (require "string-process.rkt")
 (require "toc.rkt")
@@ -264,32 +264,13 @@
   `(code ,@args))
 (define (code . args)
   `(pre (code ,@args)))
-(define (code-hl #:line-numbers? [line-numbers? #f]
-                 #:css-class [css-class "highlight"]
-                 #:lines [hl-lines null]
-                 lang . codelines)
-  (define code (string-append* codelines))
-  `(div
-     ,@(pygmentize code lang
-                   #:python-executable "python3"
-                   #:line-numbers? line-numbers?
-                   #:css-class css-class
-                   #:hl-lines hl-lines)))
 
 (define (file2string path)
   (port->string (open-input-file path)))
 
-(define (code-hl-file #:line-numbers? [line-numbers? #f]
-                      #:css-class [css-class "highlight"]
-                      #:lines [hl-lines null]
-                      lang path)
-  (define file (file2string path))
-  (code-hl
-         #:line-numbers? line-numbers?
-         #:css-class css-class
-         #:lines hl-lines
-         lang
-         file))
+;; Just generate code manually, some strange error stream after updating linux
+(define (import-code path)
+  (string->xexpr (file2string path)))
 
 (define (sans . args)
   `(span ((class "sans")) ,@args))

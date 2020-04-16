@@ -1,6 +1,9 @@
 ◊(local-require pollen/tag)
 ◊(define title (select-from-metas 'title here))
-◊(define head-title (string-append main-title ": " title))
+◊(define head-title
+   (if title
+     (string-append main-title ": " title)
+     (error (format "unknown title for ~v~n" here))))
 ◊(define subtitle (select-from-metas 'subtitle here))
 ◊(define side-space? (not (select-from-metas 'no-side-space here)))
 ◊(define section-chapters-headers? (not (select-from-metas 'no-section-chapters-header here)))

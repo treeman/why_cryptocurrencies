@@ -1,3 +1,7 @@
+Strange cache error:
+(Sometimes it works... Ugh)
++ Call out to pygments anyway, cache error seems unrelated
+
 Completeness:
 + Rewrite link handling (automatically format books and signal missing alt-text)
   Book handling

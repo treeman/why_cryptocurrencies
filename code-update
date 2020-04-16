@@ -1,0 +1,3 @@
+#!/bin/bash
+
+pygmentize -f html -l python3 scripts/gambling.py >> code/gambling.py.html
