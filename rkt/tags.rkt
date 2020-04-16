@@ -1,5 +1,6 @@
 #lang racket/base
 
+(require racket/system)
 (require xml)
 (require pollen/core pollen/tag pollen/decode txexpr)
 (require racket/match racket/string racket/list)
@@ -268,9 +269,14 @@
 (define (file2string path)
   (port->string (open-input-file path)))
 
-;; Just generate code manually, some strange error stream after updating linux
-(define (import-code path)
-  (string->xexpr (file2string path)))
+(define (code-hl lang path)
+  (define cmd (string-append
+                "pygmentize -f html"
+                " -l " lang
+                " " path))
+  (string->xexpr
+    (with-output-to-string (λ () (system cmd)))))
+
 
 (define (sans . args)
   `(span ((class "sans")) ,@args))

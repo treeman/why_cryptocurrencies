@@ -87,7 +87,7 @@ Our gambling algorithm is simple. We'll concatenate the casino's seed with the p
     If you don't publically sign the bet, there's always the risk that the casino can say that it never happened, and you cannot prove otherwise.
 }
 
-◊(import-code "code/gambling.py.html")
+◊(code-hl "python3" "scripts/gambling.py")
 
 Importantly the casino should give out the seed encoded with a ◊def[hash-functions]{cryptographic hash function}, otherwise the player can just pick the winning seed and there would be no gamble. When the player has sent their seed to the casino, the bet has been made, and the casino reveals their seed (which we can verify with the hashed value) and we know who won and who lost.
 

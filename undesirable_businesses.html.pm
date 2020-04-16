@@ -224,12 +224,12 @@ Why should people running and using ◊strong{legal} businesses be punished for 
 
 ◊(define re-education 
   (x-ref
-    ""
+    "2019-06-12"
     "https://www.amnesty.org/en/latest/news/2018/09/china-up-to-one-million-detained/"
     "Up to one million detained in China’s mass “re-education” drive"))
 ◊(define cannabis-growth 
   (x-ref
-    ""
+    "2019-06-12"
     "https://www.marijuanaseo.com/cannabis-industry-statistics/"
     "32 Incredible Cannabis Industry Statistics 2020"))
 
