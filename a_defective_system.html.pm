@@ -13,11 +13,9 @@
 }
 
 
-In the chapter ◊link[what-is-money]{What is money?} we saw some historical examples of money and some properties that good money should have. Unfortunately looking at money through history, and what properties money have, is not enough to understand the current economic system, which is a completely different beast.
+In the chapter ◊link[what_is_money]{What is money?} we saw some historical examples of money and some properties that good money should have. Unfortunately looking at money through history, and what properties money have, is not enough to understand the current economic system, which is a completely different beast.
 
-As we saw in the ◊link[blind-leading-the-blind]{previous chapter}, a big problem is that our leaders don't know how to steer this financial beast. But there are more problems to the modern system, again related to being based on ◊link[sound-money]{unsound money} where a flexible money supply breaks the properties of good money. This has far-reaching negative consequences and it means the economic system we use today is broken, on a fundamental level.
-
-◊(define what-is-money "/what_is_money.html")
+As we saw in the ◊link[the_blind_leading_the_blind]{previous chapter}, a big problem is that our leaders don't know how to steer this financial beast. But there are more problems to the modern system, again related to being based on ◊link[sound-money]{unsound money} where a flexible money supply breaks the properties of good money. This has far-reaching negative consequences and it means the economic system we use today is broken, on a fundamental level.
 
 
 ◊subhead{Economic effects of counterfeiting}
@@ -86,8 +84,16 @@ Counterfeiting means everyones savings---the "old" money---will lose value. This
     Why pick out Sweden as an example? No particular reason really, the graph would look similar if I picked the United States or some other well-functioning country. At first I was going to exemplify both Sweden and the United States, but the differences were so small I didn't see the point.
 }
 
-◊(define consumer-price-index "https://data.worldbank.org/indicator/FP.CPI.TOTL?locations=US-SE-XC")
-◊(define swe-inflation "https://data.worldbank.org/indicator/FP.CPI.TOTL.ZG?locations=SE")
+◊(define consumer-price-index
+   (x-ref
+     "2019-11-13"
+     "https://data.worldbank.org/indicator/FP.CPI.TOTL?locations=US-SE-XC"
+     "Consumer price index (2010 = 100) - United States, Sweden, Euro area"))
+◊(define swe-inflation
+   (x-ref
+     "2019-11-13"
+     "https://data.worldbank.org/indicator/FP.CPI.TOTL.ZG?locations=SE"
+     "Inflation, consumer prices (annual %) - Sweden"))
 
 Counterfeiting also means redistributing wealth from everyone to the counterfeiter (and to a lesser extent people the counterfeiter buys from) at the same rate as the inflation eats up the value of money. Even though nobody's stealing your money, the effect is the same: your wealth relative to others will decrease.
 
@@ -99,7 +105,11 @@ Counterfeiting also means redistributing wealth from everyone to the counterfeit
     Maybe he's got a magic printer which can print perfect copies of a dollar bill. Normally printers even ◊link[print-money]{refuse to print images} looking like a dollar or other major currencies.
 }
 
-◊(define print-money "https://murdoch.is/projects/currency/")
+◊(define print-money
+   (x-ref
+     "2019-11-13"
+     "https://murdoch.is/projects/currency/"
+     "Software Detection of Currency"))
 
 ◊ndef["case-against-fed"]{
     A similar example was given by Murray N. Rothbard in ◊link[case-against-fed-book #:quote #t]{The Case Against the Fed}.
@@ -116,16 +126,20 @@ The central banks, the Federal Reserve (Fed) in the U.S. or the European Central
 ◊note-pos{inflation-growth?}
 
 ◊ndef["quantitive-easing"]{
-    If the central banks want to increase the money supply it's inefficient to print physical money. Instead they buy assets from banks who in turn can use the money as reserves while increasing the money supply. This is called ◊link[quantitive-easing]{◊em{quantitive easing}}, but it's unknown how well it actually works.
+    If the central banks want to increase the money supply it's inefficient to print physical money. Instead they buy assets from banks who in turn can use the money as reserves while increasing the money supply. This is called ◊def[quantitive-easing]{quantitive easing}, but it's unknown how well it actually works.
 }
 
 ◊ndef["inflation-growth?"]{
     I always found the argument of inflation pushing people to spend weird. Most people I know don't even know about the effects inflation has, even less so when the inflation and the rising prices are so small you don't really notice them.
 }
 
-◊(define quantitive-easing "https://www.investopedia.com/terms/q/quantitative-easing.asp")
+◊(define quantitive-easing
+   (x-ref
+     "2019-11-13"
+     "https://www.investopedia.com/terms/q/quantitative-easing.asp"
+     "Quantitative Easing (QE)"))
 
-Although the central banks are ultimately responsible, it's the regular banks who expand the money supply the most. It's done via ◊link[fractional-banking]{◊em{fractional banking}} which works like this:
+Although the central banks are ultimately responsible, it's the regular banks who expand the money supply the most. It's done via ◊def[fractional-banking]{fractional banking} which works like this:
 
 ◊ol{
   ◊li{In the beginning John has ◊sans-tnum{1000 SEK}, with nothing strange going on. This is the balance sheet for John and the bank:
@@ -165,31 +179,47 @@ The system works as long as people just keep their money at the bank, and only o
 ◊ndef["reserve-assets"]{
     My example is simplified and banks aren't always required to have the reserves in cash. They can have them in other assets, which they can convert to cash if needed. See for example the ◊link[capital-req-sweden]{Capital requirements for the Swedish banks, second quarter 2019}.
 
-    The reserve requirements can also be fluid, see the ECB's ◊link[minium-reserve-req]{◊em{minimum reserve requirements}} for example.
+    The reserve requirements can also be fluid, see the ECB's ◊def[minium-reserve-req]{minimum reserve requirements} for example.
 }
 
-◊(define inflation-rational "https://www.thebalance.com/inflation-targeting-definition-how-it-works-3305854")
-◊(define fractional-banking "https://corporatefinanceinstitute.com/resources/knowledge/finance/fractional-banking/")
-◊(define minium-reserve-req "https://www.ecb.europa.eu/explainers/tell-me/html/minimum_reserve_req.en.html")
-◊(define bank-run "https://en.wikipedia.org/wiki/Bank_run")
-◊(define capital-req-sweden "https://www.fi.se/contentassets/67c0bdcc4ddf4d1dbea616cb48fb1f01/kapitalkrav-sv-banker-2019-kv2_eng.pdf")
+◊(define inflation-rational
+   (x-ref
+     "2019-11-13"
+     "https://www.thebalance.com/inflation-targeting-definition-how-it-works-3305854"
+     "Inflation Targeting and How It Works"))
+◊(define fractional-banking
+   (x-ref
+     "2019-11-13"
+     "https://corporatefinanceinstitute.com/resources/knowledge/finance/fractional-banking/"
+     "Fractional Banking: Portion of total deposits held as reserves"))
+◊(define minium-reserve-req
+   (x-ref
+     "2019-11-13"
+     "https://www.ecb.europa.eu/explainers/tell-me/html/minimum_reserve_req.en.html"
+     "What are minimum reserve requirements?"))
+◊(define bank-run
+   (x-ref
+     "2019-11-13"
+     "https://en.wikipedia.org/wiki/Bank_run"
+     "Wikipedia: Bank run"))
+◊(define capital-req-sweden
+   (x-ref
+     "2019-11-13"
+     "https://www.fi.se/contentassets/67c0bdcc4ddf4d1dbea616cb48fb1f01/kapitalkrav-sv-banker-2019-kv2_eng.pdf"
+     "Capital requirements forthe Swedish banks,secondquarter 2019"))
 
 
 ◊subhead{Lender of last resort}
 
-As money printers the central banks play an important roll---as the "lender of last resort". This means when all else fails, for example if the banks are about to go bankrupt because they have too little reserves or if the economy is going bad, then central banks can step in and save them. As we saw in an ◊link[financial-crisis]{earlier chapter} this is exactly what happened during the 2008 financial crisis, where banks and other institutions messed up in a major way but were bailed-out and made whole again.
+As money printers the central banks play an important roll---as the "lender of last resort". This means when all else fails, for example if the banks are about to go bankrupt because they have too little reserves or if the economy is going bad, then central banks can step in and save them. As we saw in an ◊link[financial_crisis]{earlier chapter} this is exactly what happened during the 2008 financial crisis, where banks and other institutions messed up in a major way but were bailed-out and made whole again.
 
 This means the real check against fractional banking (the risk of going bankrupt) is thrown away and replaced with regulation that's supposed to keep the banks in check, while making the banks more robust against failure. While fine in theory, in practice it means banks are now incentivized to push the limits any way they can, to maximize their profits.
 
-I don't think there's a better example of the hazards the lender of last resort creates than ◊link[financial-crisis]{the 2008 financial crisis}. I feel the term ◊link[moral-hazard]{◊em{moral hazard}}, to describe someone taking risks others will pay for, is too soft to describe the situation.◊sn{crisis-terms}
+I don't think there's a better example of the hazards the lender of last resort creates than ◊link[financial_crisis]{the 2008 financial crisis}. I feel the term ◊def[moral-hazard]{moral hazard}, to describe someone taking risks others will pay for, is too soft to describe the situation.◊sn{crisis-terms}
 
 ◊ndef["crisis-terms"]{
     Perhaps the words ◊em{deceit}, ◊em{scam}, ◊em{fraud} or ◊em{swindle} comes closer to describe my feelings.
 }
-
-◊(define financial-crisis "/financial_crisis.html")
-◊(define moral-hazard "https://www.thebalance.com/moral-hazard-what-it-is-and-how-it-works-315515")
-
 
 ◊subhead{Reason behind the madness}
 
@@ -229,11 +259,23 @@ While it's difficult to point out causes, and it's even debatable why we got out
 ◊note-pos[#:top -16]{forbade-gold}
 ◊note-pos{debt-ww2}
 
-◊(define debt-us "https://www.theatlantic.com/business/archive/2012/11/the-long-story-of-us-debt-from-1790-to-2011-in-1-little-chart/265185/")
-◊(define new-deal-conservative "https://www.nytimes.com/2008/11/23/business/23view.html?_r=0")
-◊(define gold-illegal "https://www.moneymetals.com/resources/executive-order-6102")
+◊(define debt-us
+   (x-ref
+     "2019-11-13"
+     "https://www.theatlantic.com/business/archive/2012/11/the-long-story-of-us-debt-from-1790-to-2011-in-1-little-chart/265185/"
+     "The Long Story of U.S. Debt, From 1790 to 2011, in 1 Little Chart"))
+◊(define new-deal-conservative
+   (x-ref
+     "2019-11-13"
+     "https://www.nytimes.com/2008/11/23/business/23view.html?_r=0"
+     "The New Deal Didn’t Always Work, Either"))
+◊(define gold-illegal
+   (x-ref
+     "2019-11-13"
+     "https://www.moneymetals.com/resources/executive-order-6102"
+     "The Gold Confiscation Of April 5, 1933"))
 
-These align with the ideas of ◊link[keynesian-economics]{Keynesian Economics} (also developed in the 1930s) where governments should stimulate the economy during recessions, and compensate by pulling back when the economy's expanding. The rationale is that the ◊link[velocity-money]{◊em{velocity of money}} (how fast companies and people spend money) will slow down during a recession, making it worse. Therefore the government should increase their spending---increasing the velocity of money---to help dampen the recession.
+These align with the ideas of ◊link[keynesian-economics]{Keynesian Economics} (also developed in the 1930s) where governments should stimulate the economy during recessions, and compensate by pulling back when the economy's expanding. The rationale is that the ◊def[velocity-money]{velocity of money} (how fast companies and people spend money) will slow down during a recession, making it worse. Therefore the government should increase their spending---increasing the velocity of money---to help dampen the recession.
 
 Seen through this lens, it all makes sense. To help the government spend money it doesn't have, being able to print money is a huge help. When the government goes deeper into debt, again it helps to be able to print money. And the interaction between central banks and banks is a fairly efficient way to setup a money-printing machine.◊sn{gold-standard-ww2}
 
@@ -241,9 +283,21 @@ Seen through this lens, it all makes sense. To help the government spend money i
         After World War II the United States went back to the gold standard, a little half-heartedly. They only allowed foreign nations to redeem dollars for gold, which took an ◊link[nixon-shock]{abrupt end in 1971}.
     }
 
-◊(define velocity-money "https://www.investopedia.com/terms/v/velocity.asp")
-◊(define nixon-shock "https://www.investopedia.com/terms/n/nixon-shock.asp")
-◊(define new-deal "https://www.thebalance.com/fdr-and-the-new-deal-programs-timeline-did-it-work-3305598")
+◊(define velocity-money
+   (x-ref
+     "2019-11-13"
+     "https://www.investopedia.com/terms/v/velocity.asp"
+     "Velocity of Money"))
+◊(define nixon-shock
+   (x-ref
+     "2019-11-13"
+     "https://www.investopedia.com/terms/n/nixon-shock.asp"
+     "Nixon Shock"))
+◊(define new-deal
+   (x-ref
+     "2019-11-13"
+     "https://www.thebalance.com/fdr-and-the-new-deal-programs-timeline-did-it-work-3305598"
+     "New Deal Summary, Programs, Policies, and Its Success"))
 
 ◊; While it would feel good if I condemned the state of affairs completely, and say that 
 
@@ -251,8 +305,11 @@ Seen through this lens, it all makes sense. To help the government spend money i
 
 ◊;Governments and central banks follow ◊link[keynesian-economics]{Keynesian economics}, which basically says the government should create demand
 
-◊(define keynesian-economics "https://www.thebalance.com/keynesian-economics-theory-definition-4159776")
-◊(define great-depression "https://en.wikipedia.org/wiki/Great_Depression")
+◊(define keynesian-economics
+   (x-ref
+     "2019-11-13"
+     "https://www.thebalance.com/keynesian-economics-theory-definition-4159776"
+     "Keynesian Economics Theory"))
 
 
 ◊subhead{A mountain of debt}
@@ -261,7 +318,7 @@ While taking out debt to fuel investments was only supposed to be a temporary me
 
 ◊img[#:src "images/usa-debt.svg" #:link #t]{
     The ◊link[usa-national-debt]{federal debt of the United States}, measure in trillions of dollars, since 1966.  
-    After the ◊link[financial-crisis]{2008 financial crisis} the amount of debt skyrocketed, signifying a shift in economic policy.
+    After the ◊link[financial_crisis]{2008 financial crisis} the amount of debt skyrocketed, signifying a shift in economic policy.
 }
 
 Taking out a loan essentially borrows money from the future you, since you have to pay it back with interest. And the U.S. is paying paying for that now: in the 2020 budget 10.1% is spent on only the interest rate, and it's expected to ◊link[interest-us-debt]{take up 12.9% in 2026}, making it the fastest rising expense in the budget. Most of the debt is ◊link[public-debt]{public debt} (debt to people, companies or other governments), so refusing to pay would have disastrous consequences.
@@ -271,7 +328,7 @@ Taking out a loan essentially borrows money from the future you, since you have 
     Compound interest is the eighth wonder of the world. He who understands it, earns it ... he who doesn't ... pays it.
 }
 
-This isn't a situation unique to the United States, but ◊link[national-debt-list]{a global phenomena}. While the U.S. has a national debt at 104% of ◊link[gdp]{GDP} (a way to compare relative debts between countries), Sweden has a debt of 38%, ◊nbsp{Germany 61%}, ◊nbsp{Italy 132%}, ◊nbsp{Greece 181%} and Japan a staggering 235%.◊sn{how-to-measure-debt}
+This isn't a situation unique to the United States, but ◊link[national-debt-list]{a global phenomena}. While the U.S. has a national debt at 104% of ◊def[gdp]{GDP} (a way to compare relative debts between countries), Sweden has a debt of 38%, ◊nbsp{Germany 61%}, ◊nbsp{Italy 132%}, ◊nbsp{Greece 181%} and Japan a staggering 235%.◊sn{how-to-measure-debt}
 
 It seems like we're moving away from the original Keynesian ideas to something else, where paying off national debt matters less as we can just print more money.
 
@@ -286,16 +343,56 @@ It seems like we're moving away from the original Keynesian ideas to something e
     There are different ways to measure national debt, each with pros and cons. ◊link[gdp%]{Percentage of GDP} seems to be the common way to do it.
 }
 
-◊(define gdp% "https://www.investopedia.com/terms/d/debtgdpratio.asp")
-◊(define gdp "https://www.investopedia.com/terms/g/gdp.asp")
-◊(define national-debt-list "https://countryeconomy.com/national-debt")
-◊(define interest-us-debt "https://www.thebalance.com/interest-on-the-national-debt-4119024")
-◊(define us-budget-2020 "https://www.thebalance.com/u-s-federal-budget-breakdown-3305789")
-◊(define public-debt "https://www.thebalance.com/what-is-the-public-debt-3306294")
-◊(define usa-national-debt "https://www.investopedia.com/updates/usa-national-debt/")
-◊(define trump-eliminate-debt "https://www.washingtonpost.com/politics/in-turmoil-or-triumph-donald-trump-stands-alone/2016/04/02/8c0619b6-f8d6-11e5-a3ce-f06b5ba21f33_story.html?utm_term=.d6b42cbf9b8c")
-◊(define trump-debt "https://www.thebalance.com/trump-plans-to-reduce-national-debt-4114401")
-◊(define record-bull-run "https://www.theguardian.com/business/2018/aug/22/wall-street-record-longest-rally-history-bull-market")
+◊(define gdp%
+   (x-ref
+     "Debt-to-GDP Ratio Definition"
+     "https://www.investopedia.com/terms/d/debtgdpratio.asp"
+     ""))
+◊(define gdp
+   (x-ref
+     "Gross Domestic Product—GDP"
+     "https://www.investopedia.com/terms/g/gdp.asp"
+     ""))
+◊(define national-debt-list
+   (x-ref
+     ""
+     "https://countryeconomy.com/national-debt"
+     ""))
+◊(define interest-us-debt
+   (x-ref
+     ""
+     "https://www.thebalance.com/interest-on-the-national-debt-4119024"
+     ""))
+◊(define us-budget-2020
+   (x-ref
+     ""
+     "https://www.thebalance.com/u-s-federal-budget-breakdown-3305789"
+     ""))
+◊(define public-debt
+   (x-ref
+     ""
+     "https://www.thebalance.com/what-is-the-public-debt-3306294"
+     ""))
+◊(define usa-national-debt
+   (x-ref
+     ""
+     "https://www.investopedia.com/updates/usa-national-debt/"
+     ""))
+◊(define trump-eliminate-debt
+   (x-ref
+     ""
+     "https://www.washingtonpost.com/politics/in-turmoil-or-triumph-donald-trump-stands-alone/2016/04/02/8c0619b6-f8d6-11e5-a3ce-f06b5ba21f33_story.html?utm_term=.d6b42cbf9b8c"
+     ""))
+◊(define trump-debt
+   (x-ref
+     ""
+     "https://www.thebalance.com/trump-plans-to-reduce-national-debt-4114401"
+     ""))
+◊(define record-bull-run
+   (x-ref
+     ""
+     "https://www.theguardian.com/business/2018/aug/22/wall-street-record-longest-rally-history-bull-market"
+     ""))
 
 
 ◊subhead{Growing inequality}
@@ -402,7 +499,7 @@ While "printing more money" is a popular solution, ◊def[sound-money]{sound mon
 ◊ndef["debasement"]{
     The state that creates gold coins can still inflate the money supply by decreasing the amount of gold in the coins. This is called ◊link[debasement]{◊em{debasement}} and has been quite common historically.
 
-    With cryptocurrencies debasement isn't possible, which is one reason they're ◊link[are-cryptos-money]{better money} than gold.
+    With cryptocurrencies debasement isn't possible, which is one reason they're ◊link[are_cryptocurrencies_money]{better money} than gold.
 }
 
 It's not easy to see how a switch to sound money would occur, and maybe it would introduce more problems than it solved. But it would mean manipulation of the money supply would disappear and we wouldn't build a mountain of debt, only repayable by the printing machines, and we wouldn't devalue our savings while increasing the wealth inequality. And we wouldn't cling on to the broken and defective economic theories in use today.
@@ -412,7 +509,5 @@ It's not easy to see how a switch to sound money would occur, and maybe it would
 
 ◊(define debasement "https://www.investopedia.com/terms/d/debasement.asp")
 ◊(define mmt "https://www.bloomberg.com/news/features/2019-03-21/modern-monetary-theory-beginner-s-guide")
-◊(define blind-leading-the-blind "/the_blind_leading_the_blind.html")
 ◊(define mmt-true "https://www.forbes.com/sites/nathanlewis/2019/02/21/the-problem-with-modern-monetary-theory-is-that-its-true/")
-◊(define are-cryptos-money "/are_cryptocurrencies_money.html")
 

@@ -13,7 +13,6 @@
   }
 }
 ◊;https://books.google.co.uk/books?id=6Mdh5yuHavgC&pg=PA86&lpg=PA86&ots=vJ319cMgdc&focus=viewport&dq=%E2%80%9CIt%27s+almost+been+worth+this+depression+to+find+out+how+little+our+big+men+know.%E2%80%9D++%E2%80%95+Will+Rogers
-◊(define great-depression "https://en.wikipedia.org/wiki/Great_Depression")
 
 ◊(define music-stopped-ref
    `(cite
@@ -26,7 +25,7 @@
       ,(link case-against-fed-book #:quote #f "The Case Against the Fed")
       ")"))
 
-Even though ◊def[sound-money]{sound money}---like cryptocurrencies or money backed by gold---might fix the bad incentives at the heart of the ◊link[financial-crisis]{2008 finanical crisis}, there are many arguments against it. One of the most common is we that lose the ability to influence and react to the market. For example if the economy crashes, or we think it will crash, the modern central banks might try to print money and buy things to soften the crash. This isn't possible with cryptocurrencies or gold, since they cannot be created freely.◊sn{elaciticity}
+Even though ◊def[sound-money]{sound money}---like cryptocurrencies or money backed by gold---might fix the bad incentives at the heart of the ◊link[financial_crisis]{2008 finanical crisis}, there are many arguments against it. One of the most common is we that lose the ability to influence and react to the market. For example if the economy crashes, or we think it will crash, the modern central banks might try to print money and buy things to soften the crash. This isn't possible with cryptocurrencies or gold, since they cannot be created freely.◊sn{elaciticity}
 
 But there's a fatal flaw with this argument: it relies on being able to predict the market and to know what actions to take to move it in the direction you want. With how intricate and complex the economy is, it's an absurd assumption.
 
@@ -42,7 +41,11 @@ But there's a fatal flaw with this argument: it relies on being able to predict 
 To become an expert in a field you need a lot of dedication, effort and maybe a bit of talent,◊sn{10000h} but as Daniel Kahneman points out in his book ◊link[thinking-fast-and-slow-book #:quote #t]{Thinking, Fast and Slow} you also need the right environment to develop expertise:
 
 
-◊(define deliberate-practice "https://expertenough.com/1423/deliberate-practice")
+◊(define deliberate-practice
+   (x-ref
+     "2019-11-11"
+     "https://expertenough.com/1423/deliberate-practice"
+     "Deliberate Practice What It Is and Why You Need It"))
 
 ◊ul{
     ◊li{An environment that is sufficiently regular to be predictable.}
@@ -66,7 +69,11 @@ In contrast learning how to drive a car provides an ideal learning environment. 
     There's also a "wicked" environment where you're likely to learn the wrong lesson from your experience. The example given is of a physician who tried to tried to confirm his a hypothesis for who might develop typhoid. Unfortunately he tested his hunch by palpating the patient's tongue, without washing his hands, making him draw the wrong conclusion.
 }
 
-◊(define investing-index "https://www.cnbc.com/2017/05/12/warren-buffett-says-index-funds-make-the-best-retirement-sense-practically-all-the-time.html")
+◊(define investing-index
+   (x-ref
+     "2019-11-11"
+     "https://www.cnbc.com/2017/05/12/warren-buffett-says-index-funds-make-the-best-retirement-sense-practically-all-the-time.html"
+     "Warren Buffett says index funds make the best retirement sense 'practically all the time'"))
 
 
 ◊subhead{The problem with planning the economy}
@@ -85,16 +92,36 @@ Because the economy is made up of millions or even billions of people, with diff
 }
 
 ◊ndef["impossible?"]{
-    I do think it's an impossible task. You need to accurately predict small events that can have large effects, known as the ◊link[butterfly-effect]{◊em{Butterfly effect}}.
+    I do think it's an impossible task. You need to accurately predict small events that can have large effects, known as the ◊def[butterfly-effect]{Butterfly effect}.
 
-    Not to mention ◊link[black-swan]{◊em{Black Swan}} events which are by definition unpredictable. The rise of Bitcoin is one example (currently valued at around $9,000).
+    Not to mention ◊def[black-swan]{Black Swan} events which are by definition unpredictable. The rise of Bitcoin is one example (currently valued at around $9,000).
 }
 
-◊(define black-swan "https://www.investopedia.com/terms/b/blackswan.asp")
-◊(define butterfly-effect "https://en.wikipedia.org/wiki/Butterfly_effect")
-◊(define economic-planning "https://www.britannica.com/topic/economic-planning")
-◊(define command-economy "https://www.investopedia.com/terms/c/command-economy.asp")
-◊(define ussr-collapse "https://www.investopedia.com/articles/investing/021716/why-ussr-collapsed-economically.asp")
+◊(define black-swan
+   (x-ref
+     "2019-11-11"
+     "https://www.investopedia.com/terms/b/blackswan.asp"
+     "Black Swan"))
+◊(define butterfly-effect
+   (x-ref
+     "2019-11-11"
+     "https://en.wikipedia.org/wiki/Butterfly_effect"
+     "Wikipedia: Butterfly effect"))
+◊(define economic-planning
+   (x-ref
+     "2019-11-11"
+     "https://www.britannica.com/topic/economic-planning"
+     "Economic planning"))
+◊(define command-economy
+   (x-ref
+     "2019-11-11"
+     "https://www.investopedia.com/terms/c/command-economy.asp"
+     "Command Economy"))
+◊(define ussr-collapse
+   (x-ref
+     "2019-11-11"
+     "https://www.investopedia.com/articles/investing/021716/why-ussr-collapsed-economically.asp"
+     "Why the USSR Collapsed Economically"))
 
 
 ◊subhead{Our leaders are blind}
@@ -104,11 +131,11 @@ Because the economy is made up of millions or even billions of people, with diff
   When the music stops, in terms of liquidity, things will be complicated. But as long as the music is playing, you’ve got to get up and dance. We’re still dancing.
 }
 
-It's not just the Soviet Union that has problems predicting and adapting to the whims of the global economy. The financial crisis in 2008, as we discussed in the ◊link[financial-crisis]{previous chapter}, should have been obvious yet took almost everyone by surprise. Here's what the Federal Reserve had to say, merely a month before the financial meltdown:
+It's not just the Soviet Union that has problems predicting and adapting to the whims of the global economy. The financial crisis in 2008, as we discussed in the ◊link[financial_crisis]{previous chapter}, should have been obvious yet took almost everyone by surprise. Here's what the Federal Reserve had to say, merely a month before the financial meltdown:
 
 ◊qt[#:author "The Federal Reserve"
     #:date "August, 2007"
-    #:url "https://www.reuters.com/article/us-usa-fed-rates-idUSN0722343620070808"]{
+    #:url fed-rates]{
   Financial markets have been volatile in recent weeks, credit conditions have become tighter for some households and businesses, and the housing correction is ongoing.
 
   Nevertheless, the economy seems likely to continue to expand at a moderate pace over coming quarters, supported by solid growth in employment and incomes and a robust global economy.
@@ -116,11 +143,11 @@ It's not just the Soviet Union that has problems predicting and adapting to the 
 
 The Federal Reserve, calling the global economy "robust", fanned the flames of the housing bubble by focusing on inflation and keeping the rate low, all the way up to the crash. They also let Lehman Brothers fail, not realizing the disaster it would create. ◊|music-stopped-ref|
 
-Maybe you feel like I'm focusing too much on the ◊link[financial-crisis]{2008 financial crisis}? Then how about their actions around the ◊link[great-depression]{Great Depression} (which were critiqued as worsening the crisis), of which the Federal Reserve chairman had this to say:
+Maybe you feel like I'm focusing too much on the ◊link[financial_crisis]{2008 financial crisis}? Then how about their actions around the ◊link[great-depression]{Great Depression} (which were critiqued as worsening the crisis), of which the Federal Reserve chairman had this to say:
 
 ◊qt[#:author "Ben S. Bernanke, chairman of the Federal Reserve"
     #:date "2002"
-    #:url "https://www.federalreserve.gov/boarddocs/speeches/2002/20021108/default.htm"]{
+    #:url bernanke]{
     Let me end my talk by abusing slightly my status as an official representative of the Federal Reserve. I would like to say to Milton and Anna: Regarding the Great Depression, you're right. We did it. We're very sorry. But thanks to you, we won't do it again.◊sn{oops}
 }
 
@@ -130,8 +157,6 @@ Maybe you feel like I'm focusing too much on the ◊link[financial-crisis]{2008 
     Oops!... you did it again.
 }
 
-◊(define financial-crisis "/financial_crisis.html")
-
 This shouldn't be that surprising when you consider that the national and global economy is too irregular to be predictable, and the feedback loop is extremely long---if it even exists.  If for example the central bank lowers the interest rate, how long do we have to wait to see the effect? Days, months and maybe even years. And how do we know the economy reacted this way because of the changes to the interest rate, and not because of the trade war between the U.S. and China, Brexit or a million other reasons?◊sn{models}
 
 
@@ -139,7 +164,7 @@ These people aren't experts, simply because the environment doesn't lend itself 
 
 ◊qt[#:author "IMF:s financial advisor Jose Viñals"
     #:date "2016"
-    #:url "https://blogs.imf.org/2016/04/10/the-broader-view-the-positive-effects-of-negative-nominal-interest-rates/"]{
+    #:url imf-jose]{
   Although the experience with negative nominal interest rates is limited, we tentatively conclude that overall, they help deliver additional monetary stimulus and easier financial conditions, which support demand and price stability.
 }
 
@@ -158,6 +183,22 @@ While the article itself is more nuanced, you can't conclude anything with such 
     Well, the actual worst thing is that the economic system is built upon these "experts" predicting and reacting to events.
 }
 
+◊(define fed-rates
+   (x-ref
+     "2019-11-11"
+     "https://www.reuters.com/article/us-usa-fed-rates-idUSN0722343620070808"
+     "Fed says inflation main worry, but cites risks (August, 2007)"))
+◊(define bernanke
+   (x-ref
+     "2019-11-11"
+     "https://www.federalreserve.gov/boarddocs/speeches/2002/20021108/default.htm"
+     " Remarks by Governor Ben S. Bernanke (2002)"))
+◊(define imf-jose
+   (x-ref
+     "2019-11-11"
+     "https://blogs.imf.org/2016/04/10/the-broader-view-the-positive-effects-of-negative-nominal-interest-rates/"
+     "The Broader View: The Positive Effects of Negative Nominal Interest Rates (2016)"))
+
 
 ◊subhead{We are blind}
 
@@ -170,8 +211,6 @@ I could argue that we're blind because we collectively don't understand the bank
 Do the people know that the least accountable operation in the U.S. government isn't the FBI, CIA or the NSA---which are all accountable to congressional supervision---but the Federal Reserve? The central bank of the United States, the largest economy in the world, isn't accountable to anyone, has no budget and nobody has insight into it's operations. ◊|case-against-the-fed|
 
 The Fed isn't a government agency. It's a private entity and its shareholders are banks which ◊link[fed-dividends]{earn a dividend}---at 6%, often tax-free. (Which banks? It's a secret.) Nobody knows how much banks are printing to pad their own pockets and nobody knows how many dollars exist.◊sn{bonuses}
-
-◊(define bailouts "/financial_crisis.html#the-bailouts")
 
 It's worse than us not understanding how the system works. We simply don't have the ability to understand because the Federal Reserve makes us all blind. But this is often promoted as a benefit, not a drawback:◊sn{oversight-control}
 
@@ -188,7 +227,7 @@ Proponents will of course say that money is more important than other issues---t
 ◊note-pos[#:top -11]{olympics}
 
 ◊ndef["bonuses"]{
-    An easy thing to criticise is how the ◊link[bailouts]{banks got bailed out} in the 2008 financial crisis, and were given money with almost no strings attached and paid out ridiculous salaries and bonuses. Conflict of interest much?
+    An easy thing to criticise is how the ◊link[the-bailouts]{banks got bailed out} in the 2008 financial crisis, and were given money with almost no strings attached and paid out ridiculous salaries and bonuses. Conflict of interest much?
 }
 
 ◊ndef["oversight-control"]{
@@ -208,16 +247,23 @@ Cryptocurrencies are interesting because they allow anyone to verify the number 
     Ever wonder why there are portraits on coins? Because they make them recognizable so you can decide to trust them or not. "I'll gladly accept emperor Augustu's coins" or "we don't accept that usurpers coins here."
 }
 
-◊(define rome-debasing "https://money.visualcapitalist.com/currency-and-the-collapse-of-the-roman-empire/")
+◊(define rome-debasing
+   (x-ref
+     "2019-11-11"
+     "https://money.visualcapitalist.com/currency-and-the-collapse-of-the-roman-empire/"
+     "Currency and the Collapse of the Roman Empire"))
 
-You can also predict how many coins will be created and when, it's coded into the rules of the cryptocurrency after all. While Bitcoin ◊link[emission-rate]{mimics the rate that gold is mined}, there's no risk of counterfeit bitcoin or a meteor made of bitcoin crashing on earth to disrupt the supply, which there's with gold or other precious materials.◊sn{inflation-bug}
+You can also predict how many coins will be created and when, it's coded into the rules of the cryptocurrency after all. While Bitcoin ◊link[predetermined-emission-rate]{mimics the rate that gold is mined}, there's no risk of counterfeit bitcoin or a meteor made of bitcoin crashing on earth to disrupt the supply, which there's with gold or other precious materials.◊sn{inflation-bug}
 
 ◊ndef["inflation-bug"]{
     There's instead a risk of ◊link[inflation-bug]{bugs in the code} which may allow hackers to print coins.
 }
 
-◊(define inflation-bug "https://medium.com/@awemany/600-microseconds-b70f87b0b2a6")
-◊(define emission-rate "/properties_of_a_cryptocurrency.html#predetermined-emission-rate")
+◊(define inflation-bug
+   (x-ref
+     "2019-11-11"
+     "https://medium.com/@awemany/600-microseconds-b70f87b0b2a6"
+     "600 Microseconds: A perspective from the Bitcoin Cash and Bitcoin Unlimited developer who discovered CVE-2018–17144"))
 
 Finally cryptocurrencies don't rely on "experts", who are supposed to avoid crashes by predict what cannot be predicted. There's nobody in control, so there's nobody to push the wrong button or pull the wrong lever and cause economic chaos.◊sn{half-truth}
 
@@ -230,14 +276,28 @@ Therefore cryptocurrencies are a more transparent and robust alternative, which 
 ◊qt[#:author "Obi-Wan Kenobi"
     #:src "Star Wars: Episode IV - A New Hope"
     #:quote-src #t
-    #:url "https://www.imdb.com/title/tt0076759/"]{
-    An elegant weapon for a more civilized age.
+    #:url star-wars-iv]{
+  An elegant weapon for a more civilized age.
 }
+
+◊(define star-wars-iv
+   (x-ref
+      "2019-11-11"
+      "https://www.imdb.com/title/tt0076759/"
+      "Star Wars: Episode IV - A New Hope (1977)"))
 
 ◊note-pos[#:top -30]{portraits}
 ◊note-pos[#:top -20.5]{inflation-bug}
 ◊note-pos[#:top -15]{half-truth}
 
-◊(define mega-projects "http://omegataupodcast.net/181-why-megaprojects-fail-and-what-to-do-about-it/")
-◊(define fed-dividends "https://newrepublic.com/article/116913/federal-reserve-dividends-most-outrageous-handout-banks")
+◊(define mega-projects
+   (x-ref
+     "2019-11-11"
+     "http://omegataupodcast.net/181-why-megaprojects-fail-and-what-to-do-about-it/"
+     "181 – Why Megaprojects Fail (and what to do about it)"))
+◊(define fed-dividends
+   (x-ref
+     "2019-11-11"
+     "https://newrepublic.com/article/116913/federal-reserve-dividends-most-outrageous-handout-banks"
+     "This Is the Fed's Most Brazen and Least Known Handout to Private Banks "))
 

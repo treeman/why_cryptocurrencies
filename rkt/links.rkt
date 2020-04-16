@@ -85,6 +85,17 @@
     "https://www.soundmoneydefense.org/sound-money-explained"
     "What is Sound Money? Sound Money Explained"))
 
+(define kyc
+  (x-ref
+    "2019-09-05"
+    "https://en.wikipedia.org/wiki/Know_your_customer"
+    "Wikipedia: Know your customer"))
+(define moral-hazard
+   (x-ref
+     "2019-10-25"
+     "https://www.thebalance.com/moral-hazard-what-it-is-and-how-it-works-315515"
+     "Moral Hazard: Definition and Examples "))
+
 ;; Chapters
 
 (define about-the-book
@@ -100,18 +111,22 @@
     'free.html #:ref "donations-is-a-perfect-use-for-cryptocurrencies"
     "Donations is a perfect use for cryptocurrencies"))
 
-(define no-more-third-parties
-  (ch-ref
-    'properties_of_a_cryptocurrency.html #:ref "no-more-third-parties"
-    "Properties of a cryptocurrency"))
 (define properties_of_a_cryptocurrency
   (ch-ref
     'properties_of_a_cryptocurrency.html
+    "Properties of a cryptocurrency"))
+(define no-more-third-parties
+  (ch-ref
+    'properties_of_a_cryptocurrency.html #:ref "no-more-third-parties"
     "Properties of a cryptocurrency"))
 (define private_property
   (ch-ref
     'properties_of_a_cryptocurrency.html #:ref "private"
     "Properties of a cryptocurrency: Private"))
+(define predetermined-emission-rate
+  (ch-ref
+    'properties_of_a_cryptocurrency.html #:ref "predetermined-emission-rate"
+    "Properties of a cryptocurrency: Predetermined emission rate"))
 (define how_do_cryptocurrencies_work
   (ch-ref
     'how_do_cryptocurrencies_work.html
@@ -136,6 +151,10 @@
   (ch-ref
     'are_cryptocurrencies_money.html
     "Are cryptocurrencies money?"))
+(define comparing-properties
+  (ch-ref
+    'are_cryptocurrencies_money.html #:ref "comparing-properties-with-other-forms-of-money"
+    "Are cryptocurrencies money?: Comparing properties with other forms of money"))
 
 (define cheaper_faster
   (ch-ref
@@ -182,6 +201,10 @@
   (ch-ref
     'financial_crisis.html
     "The financial crisis, bad loans and bailouts"))
+(define the-bailouts
+  (ch-ref
+    'financial_crisis.html #:ref "The bailouts"
+    "The financial crisis, bad loans and bailouts: The bailouts"))
 
 (define darknet_markets
   (ch-ref
@@ -196,6 +219,15 @@
     'separation_of_money_and_state.html
     "Separation of money and state"))
 
+(define a_defective_system
+  (ch-ref
+    'a_defective_system.html
+    "A defective system"))
+
+(define embedding-data
+  (ch-ref
+    'extensions.html #:ref "embedding-data"
+    "Extensions: Embedding data"))
 (define the_blind_leading_the_blind
   (ch-ref
     'the_blind_leading_the_blind.html
@@ -264,3 +296,15 @@
     "2019-04-24"
     "https://fullstacks.org/materials/ethereumbook/16_appdx-forks-history.html"
     "Ethereum Fork History"))
+
+(define block-0
+  (x-ref
+    "2019-10-25"
+    "https://blockchair.com/bitcoin/block/0"
+    "Bitcoin block 0"))
+
+(define great-depression
+   (x-ref
+     "2019-10-25"
+     "https://en.wikipedia.org/wiki/Great_Depression"
+     "Wikipedia: Great Depression"))

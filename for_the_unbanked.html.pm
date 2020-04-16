@@ -103,9 +103,7 @@ The question "But how do the unbanked pay for internet?" is always asked when di
     Fewer unbanked adults have both a mobile phone and access to the internet in some form— whether through a smartphone, a home computer, an internet café, or some other way. Globally, the share is about a quarter.
 }
 
-So about ◊strong{420 million} do have access to internet while being unbanked. I don't know if that's true or not, but anecdotally it seems almost all homeless people I've seen owns a smartphone of some sort. You can even get internet in Venezuela◊sn{venezuela-internet}, despite an unreliable power grid. And consider that even rich and successful ◊link[undesirable-chapter]{can become temporarily unbanked}, for example if banks arbitrarily decide porn stars and marijuana supporters aren't something they want to be associated with.◊sn{handelsbanken}
-
-◊(define undesirable-chapter "/undesirable_businesses.html")
+So about ◊strong{420 million} do have access to internet while being unbanked. I don't know if that's true or not, but anecdotally it seems almost all homeless people I've seen owns a smartphone of some sort. You can even get internet in Venezuela◊sn{venezuela-internet}, despite an unreliable power grid. And consider that even rich and successful ◊link[undesirable_businesses]{can become temporarily unbanked}, for example if banks arbitrarily decide porn stars and marijuana supporters aren't something they want to be associated with.◊sn{handelsbanken}
 
 ◊note-pos[#:top -8]{venezuela-internet}
 ◊note-pos{handelsbanken}
@@ -121,8 +119,16 @@ So about ◊strong{420 million} do have access to internet while being unbanked.
     I did finally get an account there when we took a mortgage with them, but I still don't use them as my main bank.
 }
 
-◊(define venezuela-mining "https://news.bitcoin.com/venezuelan-bitcoin-saves-family/")
-◊(define venezuela-social-media "https://news.abs-cbn.com/overseas/02/01/19/venezuela-opposition-clings-to-social-media-lifeline")
+◊(define venezuela-social-media
+   (x-ref
+     "2019-09-05"
+     "https://news.abs-cbn.com/overseas/02/01/19/venezuela-opposition-clings-to-social-media-lifeline"
+     "Venezuela opposition clings to social media lifeline"))
+◊(define venezuela-mining
+   (x-ref
+     "2019-09-05"
+     "https://news.bitcoin.com/venezuelan-bitcoin-saves-family/"
+     "Venezuelan Explains How Bitcoin Saves His Family"))
 
 
 ◊;I've only touched on some statistics, please see the ◊link[findex-report]{full report} for more.
@@ -167,8 +173,16 @@ One of the best ways to fight poverty is ◊link[economic-growth-poverty]{econom
     }
 }
 
-◊(define trump-trade-war "https://www.bbc.com/news/world-43512098")
-◊(define globalization-economic-growth "https://www.thebalance.com/globalization-and-its-impact-on-economic-growth-1978843")
+◊(define trump-trade-war
+   (x-ref
+     "2019-09-05"
+     "https://www.bbc.com/news/world-43512098"
+     "BBC: Trade wars, Trump tariffs and protectionism explained"))
+◊(define globalization-economic-growth
+   (x-ref
+     "2019-09-05"
+     "https://www.thebalance.com/globalization-and-its-impact-on-economic-growth-1978843"
+     "The Impact of Globalization on Economic Growth"))
 
 ◊ndef["containers"]{
     For an interesting angle on how globalization effected the world economy I recommend ◊link[the-box-book #:quote #t]{The Box: How the Shipping Container Made the World Smaller and the World Economy Bigger} by Marc Levinson.
@@ -178,10 +192,16 @@ One of the best ways to fight poverty is ◊link[economic-growth-poverty]{econom
     An historical example is when China decided to ◊link[china-isolation]{isolate itself} from the rest of the world. They had all they needed and were ahead the rest of the world in many areas, but after they isolated themselves the rest of the world caught up.
 }
 
-◊(define china-isolation "https://en.wikipedia.org/wiki/Haijin")
-◊(define economic-growth-poverty "https://www.cato.org/publications/commentary/ending-mass-poverty")
-◊(define what-is-money "/what_is_money.html")
-
+◊(define china-isolation
+   (x-ref
+     "2019-09-05"
+     "https://en.wikipedia.org/wiki/Haijin"
+     "Wikipedia: Haijin"))
+◊(define economic-growth-poverty
+   (x-ref
+     "2019-09-05"
+     "https://www.cato.org/publications/commentary/ending-mass-poverty"
+     "Ending Mass Poverty "))
 
 
 ◊subhead3{Shut-out from society}
@@ -207,10 +227,16 @@ In China mobile payments are growing like mad. If you're a tourist you should ge
 ◊note-pos[#:top -19]{moved-to-sweden}
 ◊note-pos[#:top -11]{public-bathroom}
 
-◊(define rel-economic-growth "#economic-growth")
-◊(define rel-shut-out "#shut-out-from-society")
-◊(define findex-report "https://globalfindex.worldbank.org/sites/globalfindex/files/2018-04/2017%20Findex%20full%20report_0.pdf")
-◊(define findex-interactive "http://datawrapper.dwcdn.net/AmFVU/2/")
+◊(define findex-report
+   (x-ref
+     "2019-09-05"
+     "https://globalfindex.worldbank.org/sites/globalfindex/files/2018-04/2017%20Findex%20full%20report_0.pdf"
+     "The Global Findex Database 2017: Measuring Financial Inclusion and the Fintech Revolution"))
+◊(define findex-interactive
+   (x-ref
+     "2019-09-05"
+     "http://datawrapper.dwcdn.net/AmFVU/2/"
+     "Globally, 1.7 Billion Adults Lack an Account"))
 
 
 ◊subhead{What might cryptocurrencies help the unbanked with?}
@@ -229,17 +255,17 @@ There are a number of benefits cryptocurrencies have:
 ◊ol{
     ◊li{Cryptocurrencies are for everyone.
 
-        Cryptocurrencies are ◊em{permissionless}: ◊link[no-third-party]{you don't need permission} from anyone to use them. It doesn't matter if you're homeless, a porn star or a tourist---you can always have access to digital payments and you cannot be shut-out.
+        Cryptocurrencies are ◊em{permissionless}: ◊link[no-more-third-parties]{you don't need permission} from anyone to use them. It doesn't matter if you're homeless, a porn star or a tourist---you can always have access to digital payments and you cannot be shut-out.
     }
     ◊li{There is no KYC process.
 
-        Because cryptocurrencies are permissionless there's no ◊link[kyc]{Know your customer} (KYC) process, which banks are required to perform. That's good for people who might not have proper documentation such as ID-cards or birth certificates.
+        Because cryptocurrencies are permissionless there's no ◊def[kyc]{Know your customer (KYC)} process, which banks are required to perform. That's good for people who might not have proper documentation such as ID-cards or birth certificates.
     }
-    ◊li{The ◊link[cheaper-faster]{fees are low}.
+    ◊li{The ◊link[cryptocurrency-fees]{fees are low}.
 
         There are no fees for opening or having an account---like with traditional banks---and there are no KYC associated costs. There is only a small transaction cost you pay when using a cryptocurrency.
     }
-    ◊li{You ◊link[no-third-party]{don't need to trust a third party} with your money.
+    ◊li{You ◊link[no-more-third-parties]{don't need to trust a third party} with your money.
 
         In countries with high corruption you might not trust your local bank enough to handle your money. With cryptocurrencies you can hold your money yourself and there's no need for a third party to use it (such as a bank making the payment for you).
     }
@@ -251,13 +277,9 @@ There are a number of benefits cryptocurrencies have:
 
 These are directly related to the ◊link[rel-why-unbanked?]{reasons why people stay unbanked}, many which cryptocurrencies might help solve. For example, the 30% who say bank accounts are too expensive and the 20% who say they lack documentation, may find cryptocurrencies a viable alternative as it is much cheaper than bank accounts and don't require any documentation. Cryptocurrencies also remove the requirement of having to trust a bank, which 15% of the unbanked cited as a reason for not having an account.
 
-These benefits makes it possible for the 420 million unbanked who have internet access to use cryptocurrencies and gain ◊link[global-currency]{access to the global economy}.
+These benefits makes it possible for the 420 million unbanked who have internet access to use cryptocurrencies and gain ◊link[global_currency]{access to the global economy}.
 
-◊(define rel-why-unbanked? "#why-are-they-unbanked?")
+◊(define rel-why-unbanked? `("#why-are-they-unbanked?" "Why are they unbanked?"))
 
-◊(define kyc "https://en.wikipedia.org/wiki/Know_your_customer")
-◊(define cheaper-faster "/cheaper_faster.html")
-◊(define no-third-party "/properties_of_a_cryptocurrency.html#no-trusted-third-party")
-◊(define global-currency "/global_currency.html")
 
 
