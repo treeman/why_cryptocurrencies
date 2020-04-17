@@ -9,12 +9,18 @@
 ◊epigraph{
   ◊qt[#:author "J. Robert Oppenheimer"
       #:src "1965 TV Broadcast"
-      #:url "https://www.youtube.com/watch?v=xYPXIfwVyts"]{
+      #:url oppenheimer]{
     We knew the world would not be the same. A few people laughed, a few people cried. Most people were silent. I remembered the line from the Hindu scripture, the Bhagavad Gita; Vishnu is trying to persuade the Prince that he should do his duty and, to impress him, takes on his multi-armed form and says, "Now I am become Death, the destroyer of worlds." I suppose we all thought that, one way or another.
   }
 }
 
-In previous sections we've looked at how cryptocurrencies provide ◊link[digital-payments]{better digital payments} and why they might be ◊link[currency]{better currencies}. This section focuses on some ways the world is changing, and what part cryptocurrencies play.
+◊(define oppenheimer
+   (x-ref
+     "2019-12-15"
+     "https://www.youtube.com/watch?v=xYPXIfwVyts"
+     "I am become Death (1 min)"))
+
+In previous sections we've looked at how cryptocurrencies provide ◊link[better_digital_payments]{better digital payments} and why they might be ◊link[better_currency]{better currencies}. This section focuses on some ways the world is changing, and what part cryptocurrencies play.
 
 Even if we'd collectively agree that the world would be better off without cryptocurrencies, we cannot make them disappear. We cannot "uninvent" them and they're extremely difficult to shut down. Therefore, like with nuclear bombs, we're stuck with them and have to adapt to a new world.◊sn{destroyer-of-worlds}
 
@@ -36,10 +42,14 @@ And cryptocurrencies have the potential for something even bigger. For the first
 
 But one things seems clear to me. The Pandora's Box has been opened, and the world will never be the same again.
 
-◊(define what-are-they? "/what_is_a_cryptocurrency.html")
-◊(define digital-payments "/better_digital_payments.html")
-◊(define currency "/better_currency.html")
-◊(define hh-destroyer "https://www.dancarlin.com/hardcore-history-59-the-destroyer-of-worlds/")
-◊(define cryptojacking "https://hackerbits.com/programming/what-is-cryptojacking/")
-◊(define cryptolocker "https://en.wikipedia.org/wiki/CryptoLocker")
+◊(define hh-destroyer
+   (x-ref
+     "2019-12-15"
+     "https://www.dancarlin.com/hardcore-history-59-the-destroyer-of-worlds/"
+     "Dan Carlin's The Destroyer of Worlds"))
+◊(define cryptolocker
+   (x-ref
+     "2019-12-15"
+     "https://en.wikipedia.org/wiki/CryptoLocker"
+     "Wikipedia: Cryptolocker"))
 

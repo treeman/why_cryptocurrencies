@@ -219,11 +219,6 @@ As Snowden's quote in the beginning of the chapter says: just because you choose
      "2019-12-09"
      "https://www.theguardian.com/world/2016/jun/21/gay-lgbt-muslim-countries-middle-east"
      "Everything you need to know about being gay in Muslim countries"))
-◊(define china-social-credit
-   (x-ref
-     "2019-12-09"
-     "https://www.inkstonenews.com/china/chinas-13-million-discredited-individuals-face-discrimination-thanks-social-credit-system/article/3003319"
-     "‘Worse than doing time’: life on the wrong side of China’s social credit system"))
 
 
 ◊subhead3{Privacy is a human right}

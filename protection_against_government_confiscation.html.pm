@@ -293,5 +293,5 @@ Here's a short summary on how cryptocurrencies can help protect our money and ou
     ◊li{Nobody can inflate the money supply and devalue your money}
 }
 
-Currently, cryptocurrencies are extremely volatile, and storing your wealth in them might be less preferable than letting it slowly wither away from inflation. With time, and increased adoption, this might change.
+Currently, cryptocurrencies are extremely volatile, and storing your wealth in them might be less preferable than letting it slowly wither away from inflation. With time, and increased adoption, I think this would change.
 

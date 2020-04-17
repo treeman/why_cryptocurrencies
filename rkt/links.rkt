@@ -90,6 +90,11 @@
     "2019-09-05"
     "https://en.wikipedia.org/wiki/Know_your_customer"
     "Wikipedia: Know your customer"))
+(define aml
+  (x-ref
+    "2020-01-02"
+    "https://www.investopedia.com/terms/a/aml.asp"
+    "Anti Money Laundering (AML)"))
 (define moral-hazard
    (x-ref
      "2019-10-25"
@@ -147,6 +152,10 @@
   (ch-ref
     'what_is_money.html
     "What is money?"))
+(define money-properties
+  (ch-ref
+    'what_is_money.html #:ref "what-properties-does-good-money-have?"
+    "What is money?: What properties does good money have?"))
 (define are_cryptocurrencies_money
   (ch-ref
     'are_cryptocurrencies_money.html
@@ -156,6 +165,10 @@
     'are_cryptocurrencies_money.html #:ref "comparing-properties-with-other-forms-of-money"
     "Are cryptocurrencies money?: Comparing properties with other forms of money"))
 
+(define better_digital_payments
+  (ch-ref
+    'better_digital_payments.html
+    "Better digital payments"))
 (define cheaper_faster
   (ch-ref
     'cheaper_faster.html
@@ -189,6 +202,10 @@
     'for_the_unbanked.html
     "For the unbanked"))
 
+(define better_currency
+  (ch-ref
+    'better_currency.html
+    "A better currency"))
 (define private_money
   (ch-ref
     'private_money.html
@@ -214,10 +231,18 @@
   (ch-ref
     'swiss_bank_account_in_your_pocket.html
     "A Swiss bank account in your pocket"))
+(define cashless_dystopia
+  (ch-ref
+    'cashless_dystopia.html
+    "The cashless dystopia"))
 (define separation_of_money_and_state
   (ch-ref
     'separation_of_money_and_state.html
     "Separation of money and state"))
+(define protection_against_government_confiscation
+  (ch-ref
+    'protection_against_government_confiscation.html
+    "Protection against government confiscation"))
 
 (define a_defective_system
   (ch-ref
@@ -308,3 +333,9 @@
      "2019-10-25"
      "https://en.wikipedia.org/wiki/Great_Depression"
      "Wikipedia: Great Depression"))
+
+(define china-social-credit
+   (x-ref
+     "2019-12-09"
+     "https://www.inkstonenews.com/china/chinas-13-million-discredited-individuals-face-discrimination-thanks-social-credit-system/article/3003319"
+     "‘Worse than doing time’: life on the wrong side of China’s social credit system"))

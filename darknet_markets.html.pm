@@ -22,9 +22,11 @@ I know I wrote in ◊link[about-the-book]{an early chapter} that this book would
     As always where darknet markets fall on the universal scale of good and bad is subjective. But I hope to show that it's not a black-and-white issue.
 }
 
-◊(define darknet-markets-news "https://darknetmarkets.org/")
-◊(define about-the-book "/about_the_book.html")
-◊(define darknet-markets-history "https://weeklyglobalresearch.wordpress.com/2018/05/12/darknet-markets-and-the-shadow-economy/")
+◊(define darknet-markets-history
+   (x-ref
+     "2019-12-15"
+     "https://weeklyglobalresearch.wordpress.com/2018/05/12/darknet-markets-and-the-shadow-economy/"
+     "Darknet Markets and the Shadow Economy"))
 
 
 ◊subhead{Legality isn't morality}
@@ -47,10 +49,7 @@ Here's a table to illustrate the problem:
 
 It's actually quite hard to classify things as legal or illegal and moral or immoral; they both change depending on country, the time period and who you ask. For instance most would agree that slavery is immoral and should be illegal, but it was in fact legal and viewed as normal for thousands of years. Similarly today in the western world we take free speech for granted, but that's not the case in all countries.
 
-Mass surveillance, which we covered in the chapter ◊link[private-money]{Private money}, is immoral yet legal.◊sn{surveillance} Civil asset forfeiture, which allows the police to outright take your stuff, is another example of an immoral legal practice. (We'll explore civil asset forfeiture ◊link[government-confiscation]{in a future chapter}.)
-
-◊(define government-confiscation "/protection_against_government_confiscation.html")
-◊(define private-money "/private_money.html")
+Mass surveillance, which we covered in the chapter ◊link[private_money]{Private money}, is immoral yet legal.◊sn{surveillance} Civil asset forfeiture, which allows the police to outright take your stuff, is another example of an immoral legal practice. (We'll explore civil asset forfeiture ◊link[protection_against_government_confiscation]{in a future chapter}.)
 
 ◊ndef["surveillance"]{
     You can argue that mass surveillance is in fact illegal, but in practice it doesn't really matter as they rewrite the laws anyway.
@@ -91,7 +90,11 @@ Black markets have existed as long as taxes have been collected, and it's not ju
 }
 
 
-◊(define geothermal "https://en.wikipedia.org/wiki/Geothermal_heating")
+◊(define geothermal
+   (x-ref
+     "2019-12-15"
+     "https://en.wikipedia.org/wiki/Geothermal_heating"
+     "Wikipedia: Geothermal heating"))
 
 In countries with corruption or dysfunctional governments black markets are huge. For example in the Soviet Union many people relied on black markets to get their food supply when the market economy failed them. Or in Greece during the economic breakdown in the 2010s, the black market was ◊link[greece-black-markets]{estimated at 20 to 25 percent of the GDP}.
 
@@ -99,8 +102,16 @@ Black markets aren't inherently evil, sometimes they're even necessary for our s
 
 ◊note-pos[#:top -20]{geothermal}
 
-◊(define black-markets "https://www.investopedia.com/terms/b/blackmarket.asp")
-◊(define greece-black-markets "https://www.nytimes.com/2017/02/18/world/europe/greece-bailout-black-market.html")
+◊(define black-markets
+   (x-ref
+     "2019-12-15"
+     "https://www.investopedia.com/terms/b/blackmarket.asp"
+     "Black Market"))
+◊(define greece-black-markets
+   (x-ref
+     "2019-12-15"
+     "https://www.nytimes.com/2017/02/18/world/europe/greece-bailout-black-market.html"
+     "Greeks Turn to the Black Market as Another Bailout Showdown Looms"))
 
 
 ◊subhead{What can you buy on a darknet market?}
@@ -117,9 +128,21 @@ Darknet market operators generally block things that are harmful to others. Murd
 
 So if none of those things are available, what can you buy on a darknet market? You might be able to find books about banned topics that goes against the regime's propaganda, but usually you go to a darknet market to buy drugs or medicine. You can buy the same medicine elsewhere, but they might be much more expensive due to patents and other taxes.
 
-◊(define darknet-murders "https://www.wired.co.uk/article/kill-list-dark-web-hitmen")
-◊(define freeross "https://freeross.org/")
-◊(define ban-fentanyl "https://www.theguardian.com/society/2018/dec/01/dark-web-dealers-voluntary-ban-deadly-fentanyl")
+◊(define darknet-murders
+   (x-ref
+     "2019-12-15"
+     "https://www.wired.co.uk/article/kill-list-dark-web-hitmen"
+     "The unbelievable tale of a fake hitman, a kill list, a darknet vigilante... and a murder"))
+◊(define freeross
+   (x-ref
+     "2019-12-15"
+     "https://freeross.org/"
+     "Free Ross Ulbricht"))
+◊(define ban-fentanyl
+   (x-ref
+     "2019-12-15"
+     "https://www.theguardian.com/society/2018/dec/01/dark-web-dealers-voluntary-ban-deadly-fentanyl"
+     "Dark web dealers voluntarily ban deadly fentanyl"))
 
 
 ◊subhead{A darknet story}
@@ -159,9 +182,11 @@ The following example, based on a real-life story I read a few years ago, illust
     If you do go down this route, and you're worried about getting caught, please ◊strong{don't} have the package delivered to your home address. And if you use Bitcoin make sure it can't be ◊link[privacy-challenge]{connected to your identity}.
 }
 
-◊(define expensive-cancer-drugs "https://edition.cnn.com/2018/05/11/health/most-expensive-prescription-drugs/index.html")
-◊(define tor "https://www.torproject.org/")
-◊(define kraken "https://www.kraken.com/")
+◊(define expensive-cancer-drugs
+   (x-ref
+     "2019-12-15"
+     "https://edition.cnn.com/2018/05/11/health/most-expensive-prescription-drugs/index.html"
+     "The 5 most expensive drugs in the United States (2018)"))
 
 While the story is made up, the situation is real. Medicine in the U.S. can be ◊link[expensive-cancer-drugs]{◊strong{extremely expensive}}, and the cost isn't something all families can bear.◊sn{insurance} The same medicine that will ruin you financially is often available for a fraction of the cost from darknet markets.
 
@@ -179,7 +204,11 @@ Still, was it wrong to do what Tom did and got the medicine from a darknet marke
 
 I'd imagine most would say yes, they would do anything to save her. While there are bad stuff on darknet markets, most of which are illegal, in this case cryptocurrencies and darknet markets helped save Tom's family, and I see that as a good thing.
 
-◊(define insurance-screwed "https://health.usnews.com/health-care/for-better/articles/2017-07-13/5-ways-insurance-companies-meddle-in-your-health-care")
+◊(define insurance-screwed
+   (x-ref
+     "2019-12-15"
+     "https://health.usnews.com/health-care/for-better/articles/2017-07-13/5-ways-insurance-companies-meddle-in-your-health-care"
+     "5 Ways Insurance Companies Meddle in Your Health Care"))
 
 
 ◊; https://weeklyglobalresearch.wordpress.com/2018/05/12/darknet-markets-and-the-shadow-economy/
