@@ -597,7 +597,7 @@ What about your privacy? That's not something they care about, because they can 
 ◊; https://www.ted.com/talks/glenn_greenwald_why_privacy_matters
 
 
-The ◊link[great-man]{◊em{great man theory}} of history says that most of history can be explained by the impact of great men. Julius Caesar, Genghis Khan and Hitler are examples of "great men". (They don't have to be good or even be men, just people who cause large changes.) If Edward Snowden will be considered a great man depends on the effects of his leaks---they might mark a turning point for government surveillance, and change the course of history, or they might be forgotten as a side note in the history books.◊sn{nothing-changed}
+The ◊def[great-man]{great man theory} of history says that most of history can be explained by the impact of great men. Julius Caesar, Genghis Khan and Hitler are examples of "great men". (They don't have to be good or even be men, just people who cause large changes.) If Edward Snowden will be considered a great man depends on the effects of his leaks---they might mark a turning point for government surveillance, and change the course of history, or they might be forgotten as a side note in the history books.◊sn{nothing-changed}
 
 ◊ndef["nothing-changed"]{
     It's still uncertain how much will really change, but either way Snowden is my hero.

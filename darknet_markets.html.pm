@@ -80,7 +80,7 @@ The issue of "right or wrong" isn't so easy to answer, and we cannot just rely o
 
 ◊subhead{Black markets exist everywhere}
 
-◊link[black-markets]{◊em{Black markets}} refers to transactions outside government control. They're usually related to illegal behaviour in some way, like tax avoidance or the trade of illegal goods.
+◊def[black-markets]{Black markets} refers to transactions outside government control. They're usually related to illegal behaviour in some way, like tax avoidance or the trade of illegal goods.
 
 Black markets have existed as long as taxes have been collected, and it's not just for hardcore criminals. How many people do you know who've paid a craftsman off the book? Maybe paid a friend to paint the house, or paid a mechanic friend to fix the car? If it was paid in cash, and never officially registered the work, then they've engaged in a black market trade.◊sn{geothermal}
 

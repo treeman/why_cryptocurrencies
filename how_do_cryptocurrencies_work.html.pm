@@ -61,7 +61,7 @@ To be able to create a transaction you need to have the ◊em{private keys} to t
     You typically don't use the private key directly. Instead you can interact with a ◊em{seed}, which encodes the private key hash into a human-readable format. It's commonly made of 12 or 24 words.
 }
 
-It uses ◊link[public-key-cryptography]{◊em{public-key cryptography}} which allows you to prove you control the private key without sharing the private key itself. Compare it to credit card numbers which act as both a private and public key.  See ◊link[cryptography_intro]{a hitchhiker's guide to cryptography} in the appendix for more details, but it's not required to understand how cryptocurrencies work on a higher level.
+It uses ◊def[public-key-cryptography]{public-key cryptography} which allows you to prove you control the private key without sharing the private key itself. Compare it to credit card numbers which act as both a private and public key.  See ◊link[cryptography_intro]{a hitchhiker's guide to cryptography} in the appendix for more details, but it's not required to understand how cryptocurrencies work on a higher level.
 
 ◊note-pos[#:top -11.5]{private-key}
 
@@ -272,7 +272,7 @@ When a miner finds a solution she can then update the ledger by adding a block t
 A blockchain is what it sounds like: a chain of blocks where a new block builds on previous blocks. When a miner searches for a solution she must target a block on a specific height---the POW problem includes a reference to the previous block and it only fits at a specific position in the chain.◊sn[#:top -4]{specific-height} When a new block is added all miners need to work on a new problem targeting that block.
 
 ◊ndef["specific-height"]{
-    This is why ◊link["#forks"]{◊em{forks}} naturally happen.
+    This is why ◊def["#forks"]{forks} naturally happen.
 
     It's also a necessity to prevent miners from pooling blocks and using them to assemble a very long chain at a later date in an attempt to reverse transactions.
 }

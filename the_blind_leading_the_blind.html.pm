@@ -60,7 +60,7 @@ In contrast learning how to drive a car provides an ideal learning environment. 
 ◊note-pos[#:top -13]{wicked-env}
 
 ◊ndef["10000h"]{
-    There's a misunderstood myth that you only need 10,000 hours, or that you need at least 10,000 hours before you become an expert. But that's not the truth, with the right environment and ◊link[deliberate-practice]{◊em{deliberate practice}} you can become an expert much faster and if you use your time inefficiently you may never become one.
+    There's a misunderstood myth that you only need 10,000 hours, or that you need at least 10,000 hours before you become an expert. But that's not the truth, with the right environment and ◊def[deliberate-practice]{deliberate practice} you can become an expert much faster and if you use your time inefficiently you may never become one.
 
     Think for example of the teenage golf prodigies who eclipse the middle-aged men---who've spent their entire lives playing golf---in no time at all.
 }

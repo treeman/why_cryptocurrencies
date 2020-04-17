@@ -212,7 +212,7 @@ You'll get a ◊em{notification} a few seconds after your payment.◊sn{0-conf-n
 
 ◊subhead{Charge back fraud}
 
-For us costumers it's a feature that transactions can be reversed. For example if someone steals your credit card or a merchant is fraudulent, you can reverse the transactions by calling your issuer.  But this can also be abused, which is called ◊link[charge-back-fraud]{◊em{charge back fraud}} (or ◊em{friendly fraud}).
+For us costumers it's a feature that transactions can be reversed. For example if someone steals your credit card or a merchant is fraudulent, you can reverse the transactions by calling your issuer.  But this can also be abused, which is called ◊def[charge-back-fraud]{charge back fraud} (or ◊def{friendly fraud}).
 
 It goes something like this:
 

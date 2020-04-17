@@ -76,7 +76,7 @@ In practice some countries have already separated money from their state, as the
 Gold might also be an example of money outside of state control---there's nobody with exclusive access to gold after all. But in practice someone has to cast the gold to coins for it to be usable as money, including a "government approved" stamp on them, which gives some sort of control over the money. After all, it's difficult to determine what a coin is made of so we just trust the stamp on it.◊sn{debasement}
 
 ◊ndef["debasement"]{
-    Because people don't actually verify the amount of gold in the coins, they could for example slowly decrease the amount of gold in the coins. This would enable them to make more coins and effectively increase the money supply. This is called ◊link[debasement]{◊em{debasement}} and has been very common historically.
+    Because people don't actually verify the amount of gold in the coins, they could for example slowly decrease the amount of gold in the coins. This would enable them to make more coins and effectively increase the money supply. This is called ◊def[debasement]{debasement} and has been very common historically.
 }
 
 ◊(define debasement "https://www.investopedia.com/terms/d/debasement.asp")

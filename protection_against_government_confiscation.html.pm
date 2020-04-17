@@ -46,7 +46,7 @@ If it was the other way around, "guilty until proven innocent", then it would op
 ◊(define presumption-of-innocence "https://en.wikipedia.org/wiki/Presumption_of_innocence")
 ◊(define un-universal-human-rights "https://www.un.org/en/universal-declaration-human-rights/")
 
-However in the United States there's something called ◊link[civil-forfeiture]{◊em{civial asset forfeiture}}. It's a legal tool which allows the police to seize your car, home, money or other assets without ever charging you with a crime. You read that right, they can seize your assets ◊strong{without charging you with a crime}.◊sn{cash-limits} There are ◊link[10-cases-forfeiture]{tons of stories} of ◊link[7-cases-forfeiture]{innocent people} having their ◊link[ef-cases]{money or property confiscated}, for example:
+However in the United States there's something called ◊def[civil-forfeiture]{civial asset forfeiture}. It's a legal tool which allows the police to seize your car, home, money or other assets without ever charging you with a crime. You read that right, they can seize your assets ◊strong{without charging you with a crime}.◊sn{cash-limits} There are ◊link[10-cases-forfeiture]{tons of stories} of ◊link[7-cases-forfeiture]{innocent people} having their ◊link[ef-cases]{money or property confiscated}, for example:
 
 ◊ndef["cash-limits"]{
     The limits placed on cash I referenced in the ◊link[prev-chapter]{previous chapter} are also examples of the presumption of innocence being turned on it's head. For example if you transfer €50,000 to an European bank it's up to you to prove where you got the money, not the bank or the government.

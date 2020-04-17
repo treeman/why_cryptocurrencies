@@ -47,7 +47,7 @@ Let's travel back in time and look at the site ◊link[hn]{Hacker News}, a tech 
     I tried to reproduce the site appearance, but it's not pixel perfect.
 }
 
-As long as we can trust the Wayback Machine (and I do consider them generally trustworthy) we can be fairly sure this is correct. Letting a trusted party like the Wayback Machine handle timestamping, called ◊link[trusted-timestamping]{◊em{trusted timestamping}}, is a solved problem with different kinds of standards but---as the name implies---there's always the caveat of requiring a trusted party to verify the timestamps.
+As long as we can trust the Wayback Machine (and I do consider them generally trustworthy) we can be fairly sure this is correct. Letting a trusted party like the Wayback Machine handle timestamping, called ◊def[trusted-timestamping]{trusted timestamping}, is a solved problem with different kinds of standards but---as the name implies---there's always the caveat of requiring a trusted party to verify the timestamps.
 
 ◊note-pos[#:top -36]{back-to-the-future}
 ◊note-pos[#:top -29]{hn-bitcoin}

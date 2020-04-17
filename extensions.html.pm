@@ -117,7 +117,7 @@ The scripting language in Bitcoin is fairly limited but the ◊link[solidity]{sc
 ◊ndef["tradeoffs"]{
     Ethereum's powerful scripting language comes with all sorts of trade-offs. It makes it much more difficult to scale---which is already difficult with Bitcoin.
 
-    The scripting language in Ethereum is also ◊link[turing-complete]{Turing Complete}, meaning it's impossible to know if a script terminates. This means a new concept ◊link[ether-gas]{◊em{gas}} has to be introduced, drastically increasing the complexity of the system. Bitcoin avoids this problem by not having a Turing Complete scripting language.
+    The scripting language in Ethereum is also ◊link[turing-complete]{Turing Complete}, meaning it's impossible to know if a script terminates. This means a new concept ◊def[ether-gas]{gas} has to be introduced, drastically increasing the complexity of the system. Bitcoin avoids this problem by not having a Turing Complete scripting language.
 }
 
 Now it doesn't matter if you know what a script is or how it works, just remember this: cryptocurrencies can do more than just transfer coins from one address to another. We'll go into some of the examples in the following chapters.

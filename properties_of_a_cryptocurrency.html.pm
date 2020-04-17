@@ -89,7 +89,7 @@ With cryptocurrencies anyone can independently verify the integrity of the coins
 
 ◊subhead{Transactions are irreversible}
 
-Just like with cash cryptocurrency transfers are irreversible.◊sn[#:top -6]{DAO} This means if you've sent someone coins you can only get them back if they agree to give them back. It prevents ◊link[charge-back-fraud]{◊em{charge back fraud}} but it makes theft worse.
+Just like with cash cryptocurrency transfers are irreversible.◊sn[#:top -6]{DAO} This means if you've sent someone coins you can only get them back if they agree to give them back. It prevents ◊def[charge-back-fraud]{charge back fraud} but it makes theft worse.
 
 ◊;Transactions might also hold extra data so you can treat it as an effectively immutable data storage. It's very inefficient but could still be useful. The Bitcoin white paper is for example stored ◊link[wp-blockchain]{on the Bitcoin blockchain}.
 
