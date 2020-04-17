@@ -62,6 +62,10 @@
   (ch-ref
     'how_do_cryptocurrencies_work.html #:ref "the-50%-security-assumption"
     "How do cryptocurrencies work?: The 50% security assumption"))
+(define forks
+  (ch-ref
+    'how_do_cryptocurrencies_work.html #:ref "forks"
+    "How do cryptocurrencies work?: Forks"))
 
 (define cryptographic-hash-functions
   (x-ref
@@ -339,3 +343,8 @@
      "2019-12-09"
      "https://www.inkstonenews.com/china/chinas-13-million-discredited-individuals-face-discrimination-thanks-social-credit-system/article/3003319"
      "‘Worse than doing time’: life on the wrong side of China’s social credit system"))
+(define wayback-machine 
+  (x-ref
+    "2019-06-12"
+    "https://archive.org/"
+    "Internet Archive: Wayback Machine"))

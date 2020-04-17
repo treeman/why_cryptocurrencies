@@ -152,11 +152,6 @@ These things are on the gray area legal wise,◊sn{legal?} so the companies that
 }
 
 
-◊(define wayback-machine 
-  (x-ref
-    "2019-06-12"
-    "https://archive.org/web/web.php"
-    "Internet Archive: Wayback Machine"))
 ◊(define programming-adult-blog 
   (x-ref
     "2019-06-12"
