@@ -345,54 +345,54 @@ It seems like we're moving away from the original Keynesian ideas to something e
 
 ◊(define gdp%
    (x-ref
-     "Debt-to-GDP Ratio Definition"
+     "2019-11-13"
      "https://www.investopedia.com/terms/d/debtgdpratio.asp"
-     ""))
+     "Debt-to-GDP Ratio Definition"))
 ◊(define gdp
    (x-ref
-     "Gross Domestic Product—GDP"
+     "2019-11-13"
      "https://www.investopedia.com/terms/g/gdp.asp"
-     ""))
+     "Gross Domestic Product—GDP"))
 ◊(define national-debt-list
    (x-ref
-     ""
+     "2019-11-13"
      "https://countryeconomy.com/national-debt"
-     ""))
+     "General government gross debt"))
 ◊(define interest-us-debt
    (x-ref
-     ""
+     "2019-11-13"
      "https://www.thebalance.com/interest-on-the-national-debt-4119024"
-     ""))
+     " Interest on the National Debt and How It Affects You "))
 ◊(define us-budget-2020
    (x-ref
-     ""
+     "2019-11-13"
      "https://www.thebalance.com/u-s-federal-budget-breakdown-3305789"
-     ""))
+     " US Federal Budget Breakdown 2020"))
 ◊(define public-debt
    (x-ref
-     ""
+     "2019-11-13"
      "https://www.thebalance.com/what-is-the-public-debt-3306294"
-     ""))
+     "Public Debt With Its Pros and Cons"))
 ◊(define usa-national-debt
    (x-ref
-     ""
+     "2019-11-13"
      "https://www.investopedia.com/updates/usa-national-debt/"
-     ""))
+     "The National Debt Explained"))
 ◊(define trump-eliminate-debt
    (x-ref
-     ""
+     "2019-11-13"
      "https://www.washingtonpost.com/politics/in-turmoil-or-triumph-donald-trump-stands-alone/2016/04/02/8c0619b6-f8d6-11e5-a3ce-f06b5ba21f33_story.html?utm_term=.d6b42cbf9b8c"
-     ""))
+     "In a revealing interview, Trump predicts a ‘massive recession’ but intends to eliminate the national debt in 8 year"))
 ◊(define trump-debt
    (x-ref
-     ""
+     "2019-11-13"
      "https://www.thebalance.com/trump-plans-to-reduce-national-debt-4114401"
-     ""))
+     "Trump and the National Debt"))
 ◊(define record-bull-run
    (x-ref
-     ""
+     "2019-11-13"
      "https://www.theguardian.com/business/2018/aug/22/wall-street-record-longest-rally-history-bull-market"
-     ""))
+     "Wall Street sets record for longest bull run in history"))
 
 
 ◊subhead{Growing inequality}
@@ -432,10 +432,24 @@ While the money-making machine isn't the cause of the inequality, it's a pretty 
     Some will argue that the trickle-down effect makes inflation affect everyone equally. Unfortunately that's not the case, as the rich will both receive the money first (via the banks) and they have better access to financial tools to hedge against inflation (investing in gold, real estate or offshore banking).
 }
 
-◊(define rel-counterfeiting "#economic-effects-of-counterfeiting")
-◊(define global-inequality "https://wir2018.wid.world/")
-◊(define inequality-data "https://wid.world/data/")
-◊(define wid-report "https://wir2018.wid.world/files/download/wir2018-full-report-english.pdf")
+◊(define rel-counterfeiting
+  `("#economic-effects-of-counterfeiting"
+    "Economic effects of counterfeiting"))
+◊(define global-inequality
+   (x-ref
+     "2019-11-13"
+     "https://wir2018.wid.world/"
+     "World Inequality Report 2018"))
+◊(define inequality-data
+   (x-ref
+     "2019-11-13"
+     "https://wid.world/data/"
+     "World Inequality Database"))
+◊(define wid-report
+   (x-ref
+     "2019-11-13"
+     "https://wir2018.wid.world/files/download/wir2018-full-report-english.pdf"
+     "World Inequality Report 2018 (PDF)"))
 
 
 ◊subhead{No tools left}
@@ -470,7 +484,11 @@ We want to pull back on stimulation when the economy is booming, so we're prepar
 
 To be fair, the Federal Reserve knows this isn't an ideal situation, so they tried to raise interest rates. Unfortunately the stock market reacted poorly---many people got angry---and now they've backtracked and lowered them again. When problems arise, they use the financial equivalent of ◊link[fed-sledgehammer]{taking a sledgehammer to squash a bug}.
 
-◊(define fed-sledgehammer "https://www.newyorkfed.org/markets/opolicy/operating_policy_190920")
+◊(define fed-sledgehammer
+   (x-ref
+     "2019-11-13"
+     "https://www.newyorkfed.org/markets/opolicy/operating_policy_190920"
+     "Federal Reserve of New York: Statement Regarding Repurchase Operations, September 20, 2019"))
 
 So we're stuck in a situation where we don't have the tools to defend against a recession---tools the economic theory the system is built on needs. Tools that has been used up, because that's what the theory says we should do.◊sn{winging-it}
 
@@ -484,10 +502,26 @@ It seems to me if (or when) a recession comes we'll get caught with our pants do
 
 ◊note-pos[#:top -7]{winging-it}
 
-◊(define swe-neg-rate "https://www.riksbank.se/en-gb/about-the-riksbank/history/2000-2018/negative-repo-rate-is-introduced/")
-◊(define denmark-neg-rate "https://www.reuters.com/article/denmark-rates-jyske-bank/update-1-denmarks-jyske-bank-lowers-its-negative-rates-on-deposits-idUSL5N26B1AA")
-◊(define hyperinflation-rome "https://notesonliberty.com/2019/09/16/hyperinflation-and-trust-in-ancient-rome/")
-◊(define fed-pouring "http://archive.is/PbCtz")
+◊(define swe-neg-rate
+   (x-ref
+     "2019-11-13"
+     "https://www.riksbank.se/en-gb/about-the-riksbank/history/2000-2018/negative-repo-rate-is-introduced/"
+     "2015 - Negative repo rate is introduced"))
+◊(define denmark-neg-rate
+   (x-ref
+     "2019-11-13"
+     "https://www.reuters.com/article/denmark-rates-jyske-bank/update-1-denmarks-jyske-bank-lowers-its-negative-rates-on-deposits-idUSL5N26B1AA"
+     "1-Denmark's Jyske Bank lowers its negative rates on deposits"))
+◊(define hyperinflation-rome
+   (x-ref
+     "2019-11-13"
+     "https://notesonliberty.com/2019/09/16/hyperinflation-and-trust-in-ancient-rome/"
+     "Hyperinflation and trust in Ancient Rome"))
+◊(define fed-pouring
+   (x-ref
+     "2019-11-13"
+     "http://archive.is/PbCtz"
+     "archived: Why is the Federal Reserve pouring money into the financial system?"))
 
 
 ◊subhead{Where do we go from here?}
@@ -497,7 +531,7 @@ Since the financial crisis in 2008 we're in uncharted territory, and we actually
 While "printing more money" is a popular solution, ◊def[sound-money]{sound money} (with a stable money supply) might represent a compelling alternative for critics of the modern economic policies. For example fiat backed by gold, actual gold coins or cryptocurrencies.◊sn{debasement}
 
 ◊ndef["debasement"]{
-    The state that creates gold coins can still inflate the money supply by decreasing the amount of gold in the coins. This is called ◊link[debasement]{◊em{debasement}} and has been quite common historically.
+    The state that creates gold coins can still inflate the money supply by decreasing the amount of gold in the coins. This is called ◊def[debasement]{debasement} and has been quite common historically.
 
     With cryptocurrencies debasement isn't possible, which is one reason they're ◊link[are_cryptocurrencies_money]{better money} than gold.
 }
@@ -507,7 +541,19 @@ It's not easy to see how a switch to sound money would occur, and maybe it would
 ◊note-pos[#:top -15]{debasement}
 
 
-◊(define debasement "https://www.investopedia.com/terms/d/debasement.asp")
-◊(define mmt "https://www.bloomberg.com/news/features/2019-03-21/modern-monetary-theory-beginner-s-guide")
-◊(define mmt-true "https://www.forbes.com/sites/nathanlewis/2019/02/21/the-problem-with-modern-monetary-theory-is-that-its-true/")
+◊(define debasement
+   (x-ref
+     "2019-11-13"
+     "https://www.investopedia.com/terms/d/debasement.asp"
+     "Debasement"))
+◊(define mmt
+   (x-ref
+     "2019-11-13"
+     "https://www.bloomberg.com/news/features/2019-03-21/modern-monetary-theory-beginner-s-guide"
+     "Warren Buffett Hates It. AOC Is for It. A Beginner’s Guide to Modern Monetary Theory"))
+◊(define mmt-true
+   (x-ref
+     "2019-11-13"
+     "https://www.forbes.com/sites/nathanlewis/2019/02/21/the-problem-with-modern-monetary-theory-is-that-its-true/"
+     "The Problem With \"Modern Monetary Theory\" Is That It's True"))
 
