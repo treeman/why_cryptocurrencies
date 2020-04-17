@@ -21,20 +21,8 @@ No, this chapter is ◊strong{not} about tax evasion---do your taxes people.
 It's about laws meant to fight crime end up hurting innocent people and how they limit people's freedom.◊sn[#:top -6]{legal-moral} It's also about how difficult it can be for you to keep your money safe and your wealth intact; and of course, as this is about cryptocurrencies, how they might help.
 
 ◊ndef["legal-moral"]{
-    Remember that legality doesn't imply morality, meaning just because it's legal doesn't make it right, which we explored in the chapter about ◊link[rel-darknet]{darknet markets}.
+    Remember that legality doesn't imply morality, meaning just because it's legal doesn't make it right, which we explored in the chapter about ◊link[darknet_markets]{darknet markets}.
 }
-
-◊(define rel-darknet "/darknet_markets.html")
-◊(define rel-unbanked "/for_the_unbanked.html")
-◊(define rel-swiss-bank "/swiss-bank-account-in-your-pocket.html")
-◊(define structuring "https://en.wikipedia.org/wiki/Structuring")
-◊; https://www.reddit.com/r/btc/comments/bvx83n/macedonia_bans_fiat_cash_payments_above_560/
-◊(define macedonia-limits-cash "http://www.china.org.cn/world/Off_the_Wire/2019-06/01/content_74845553.htm")
-◊(define structuring-illegal "https://www.law.cornell.edu/uscode/text/31/5324")
-◊(define ctr "https://en.wikipedia.org/wiki/Currency_transaction_report")
-◊(define kyc "https://en.wikipedia.org/wiki/Know_your_customer")
-◊(define structuring-innocent "https://ij.org/case/connecticut-forfeiture/")
-◊(define travel-forfeiture "https://ij.org/case/kentucky-civil-forfeiture/")
 
 
 ◊subhead{Civil asset forfeiture}
@@ -43,8 +31,16 @@ Perhaps you've heard the phrase "innocent until proven guilty"? It's called ◊l
 
 If it was the other way around, "guilty until proven innocent", then it would open up abuse from inside the justice system and innocent people would end up in jail, either by being unlucky---despite being innocent you lack convincing evidence that you are---or you simply cannot afford competent defense to protect yourself. Therefore the presumption of innocence a necessary requirement to keep the justice system fair.
 
-◊(define presumption-of-innocence "https://en.wikipedia.org/wiki/Presumption_of_innocence")
-◊(define un-universal-human-rights "https://www.un.org/en/universal-declaration-human-rights/")
+◊(define presumption-of-innocence
+   (x-ref
+     "2020-01-09"
+     "https://en.wikipedia.org/wiki/Presumption_of_innocence"
+     "Wikipedia: Presumption of innocence"))
+◊(define un-universal-human-rights
+   (x-ref
+     "2020-01-09"
+     "https://www.un.org/en/universal-declaration-human-rights/"
+     "Universal Declaration of Human Rights"))
 
 However in the United States there's something called ◊def[civil-forfeiture]{civial asset forfeiture}. It's a legal tool which allows the police to seize your car, home, money or other assets without ever charging you with a crime. You read that right, they can seize your assets ◊strong{without charging you with a crime}.◊sn{cash-limits} There are ◊link[10-cases-forfeiture]{tons of stories} of ◊link[7-cases-forfeiture]{innocent people} having their ◊link[ef-cases]{money or property confiscated}, for example:
 
@@ -52,7 +48,7 @@ However in the United States there's something called ◊def[civil-forfeiture]{c
     The limits placed on cash I referenced in the ◊link[prev-chapter]{previous chapter} are also examples of the presumption of innocence being turned on it's head. For example if you transfer €50,000 to an European bank it's up to you to prove where you got the money, not the bank or the government.
 }
 
-◊(define prev-chapter "/cashless_dystopia.html")
+◊(define prev-chapter cashless_dystopia)
 
 ◊ul{
     ◊li{NYPD officers ◊link[nypd-civil-forfeiture]{stole $4,800} in a warrantless search.
@@ -79,16 +75,19 @@ Maybe there were some good intentions◊sn{banks-laundering} when these laws mer
     They say the laws are supposed to confiscate assets from criminals. For example from drug dealers who sells large amounts of drugs for cash. Because only criminals use large amounts of cash... well, that's the claim anyway.
 }
 
-◊(define us-banks-mexico-drug-gangs "https://www.theguardian.com/world/2011/apr/03/us-bank-mexico-drug-gangs")
-◊(define gang-mass-grave "https://www.theguardian.com/world/2017/mar/14/mexico-skulls-mass-grave-drug-cartel-veracruz")
-
 
 ◊qt[#:author "Columbia's Police Chief Ken Burton"
-    #:url "https://www.themaneater.com/stories/outlook/police-chief-ken-burton-calls-forfeiture-funds-pen"
+    #:url ken-burton
     #:date "2012"
     #:emphasis #t]{
     It’s usually based on a need---well, I take that back, there’s some limitations on it. ... Actually, there’s not really on the forfeiture stuff. We just usually base it on ◊strong{something that would be nice to have} that we can’t get in the budget, for instance. We try not to use it for things that we need to depend on because we need to have those purchased. It’s kind of like pennies from heaven---◊strong{it gets you a toy} or something that you need is the way that we typically look at it to be perfectly honest.
 }
+
+◊(define ken-burton
+   (x-ref
+     "2020-01-09"
+     "https://www.themaneater.com/stories/outlook/police-chief-ken-burton-calls-forfeiture-funds-pen"
+     "Police Chief Ken Burton calls forfeiture funds 'pennies from heaven'"))
 
 He's saying that the police can take whatever they want, and that they're motivated by what would be "nice to have", not if there's a crime involved or not. Most of the money goes to funding the police,◊sn{police-funding} but the money has gone to ◊link[steak-forfeiture]{extravagant Christmas parties, sirloin beef and a $8,200 security system} for the district attorney's private home. And of course some managed to spend it on ◊link[forfeiture-alcohol]{alcohol, prostitutes and marijuana}. Then there's the case where another district attorney ◊link[forfeiture-hawaii]{spent $27,000 to take his whole office to Hawaii}, including the approving district judge.
 
@@ -113,17 +112,67 @@ So how can cryptocurrencies protect you against the forfeiture laws? While they 
     An app on your phone can hold a practically unlimited amount of value in cryptocurrencies. Or if you want to be more secure you can encrypt your private key with a strong password and store it on your computer or online. Even the government cannot break strong encryption.
 }
 
-◊(define xkcd-pass "https://xkcd.com/792/")
-◊(define highway-robbers "https://www.aclu.org/press-releases/aclu-announces-settlement-highway-robbery-cases-texas")
-◊(define forfeiture-hawaii "https://www.npr.org/templates/story/story.php?storyId=104065589&t=1567527486222")
-◊(define forfeiture-alcohol "https://www.policemag.com/348174/prosecutor-mich-cops-spent-forfeiture-funds-on-alcohol-prostitutes")
-◊(define steak-forfeiture "https://www.economist.com/democracy-in-america/2013/10/15/fighting-crime-through-superior-steak")
+◊(define xkcd-pass
+   (x-ref
+     "2020-01-09"
+     "https://xkcd.com/792/"
+     "xkcd: Password Reuse"))
+◊(define highway-robbers
+   (x-ref
+     "2020-01-09"
+     "https://www.aclu.org/press-releases/aclu-announces-settlement-highway-robbery-cases-texas"
+     "ACLU Announces Settlement in “Highway Robbery” Cases in Texas"))
+◊(define forfeiture-hawaii
+   (x-ref
+     "2020-01-09"
+     "https://www.npr.org/templates/story/story.php?storyId=104065589&t=1567527486222"
+     "Texas Case May Spur Drug Money Rule Change"))
+◊(define forfeiture-alcohol
+   (x-ref
+     "2020-01-09"
+     "https://www.policemag.com/348174/prosecutor-mich-cops-spent-forfeiture-funds-on-alcohol-prostitutes"
+     "Prosecutor: Mich. Cops Spent Forfeiture Funds on Alcohol, Prostitutes"))
+◊(define steak-forfeiture
+   (x-ref
+     "2020-01-09"
+     "https://www.economist.com/democracy-in-america/2013/10/15/fighting-crime-through-superior-steak"
+     "Fighting crime through superior steak"))
 
-◊(define houston-forfeiture "https://ij.org/case/houston-forfeiture")
-◊(define parents-house-seized "https://edition.cnn.com/2014/09/03/us/philadelphia-drug-bust-house-seizure/")
-◊(define 10-cases-forfeiture "https://listverse.com/2015/06/29/10-egregious-abuses-of-civil-asset-forfeiture/")
-◊(define 7-cases-forfeiture "https://dailycaller.com/2015/01/30/the-7-most-egregious-examples-of-civil-asset-forfeiture/")
-◊(define ef-cases "http://endforfeiture.com/#cases")
+◊(define houston-forfeiture
+   (x-ref
+     "2020-01-09"
+     "https://ij.org/case/houston-forfeiture"
+     "Houston Forfeiture: Nurse Files Class Action Challenging CBP’s Abusive Civil Forfeiture Practices"))
+◊(define parents-house-seized
+   (x-ref
+     "2020-01-09"
+     "https://edition.cnn.com/2014/09/03/us/philadelphia-drug-bust-house-seizure/"
+     "Parents' house seized after son's drug bust"))
+◊(define 10-cases-forfeiture
+   (x-ref
+     "2020-01-09"
+     "https://listverse.com/2015/06/29/10-egregious-abuses-of-civil-asset-forfeiture/"
+     "10 Egregious Abuses Of Civil Asset Forfeiture"))
+◊(define 7-cases-forfeiture
+   (x-ref
+     "2020-01-09"
+     "https://dailycaller.com/2015/01/30/the-7-most-egregious-examples-of-civil-asset-forfeiture/"
+     "The 7 Most Egregious Examples Of Civil Asset Forfeiture"))
+◊(define ef-cases
+   (x-ref
+     "2020-01-09"
+     "http://endforfeiture.com/#cases"
+     "End Civil Forfeiture: Cases"))
+◊(define nypd-civil-forfeiture
+   (x-ref
+     "2020-01-09"
+     "https://gothamist.com/news/how-the-nypds-use-of-civil-forfeiture-robs-innocent-new-yorkers"
+     "How The NYPD's Use Of Civil Forfeiture Robs Innocent New Yorkers"))
+◊(define civil-forfeiture
+   (x-ref
+     "2020-01-09"
+     "http://endforfeiture.com/"
+     "End Civil Forfeiture"))
 
 ◊; https://listverse.com/2015/06/29/10-egregious-abuses-of-civil-asset-forfeiture/
 ◊; https://www.aclu.org/other/morrow-v-city-tenaha-et-al-plaintiff-biographies?redirect=morrow-v-city-tenaha-et-al-plaintiff-biographies
@@ -131,9 +180,6 @@ So how can cryptocurrencies protect you against the forfeiture laws? While they 
 
 ◊; Lot's of interesting examples of where the money is going...
 ◊; https://www.washingtonpost.com/news/opinions/wp/2014/01/15/gawker-on-asset-forfeiture-abuse-at-nypd/
-
-◊(define nypd-civil-forfeiture "https://gothamist.com/news/how-the-nypds-use-of-civil-forfeiture-robs-innocent-new-yorkers")
-◊(define civil-forfeiture "http://endforfeiture.com/")
 
 ◊; https://www.heritage.org/research/reports/2014/03/civil-asset-forfeiture-7-things-you-should-know
 
@@ -155,19 +201,37 @@ Unfortunately, safe deposit boxes aren't safe:
 
 The contents of safety deposit boxes disappear all the time, and there's not a whole lot you can do if it happens to you. There are no hard laws to protect you, even if the bank's own records clearly show items vanishing. The banks instead cap their liability in the lease contract:
 
-◊qt[#:url "https://int.nyt.com/data/documenthelper/1425-wells-fargo-safe-deposit-box-l/a4a2ec35134500f23c01/optimized/full.pdf#page=1"
+◊qt[#:url wells-fargo-safe-deposit
     #:author "The New York Times"
     #:src "Wells Fargo's safe-deposit-box-contract"]{
     If a loss results from our negligence or willful misconduct, our total liability will be the lesser of your actual uninsured loss or $500.
 }
 
+◊(define wells-fargo-safe-deposit
+   (x-ref
+     "2020-01-09"
+     "https://int.nyt.com/data/documenthelper/1425-wells-fargo-safe-deposit-box-l/a4a2ec35134500f23c01/optimized/full.pdf#page=1"
+     "Wells Fargo's safe-deposit-box-contract"))
+
 And they really are negligent. Did you know that the safe deposit box numbers aren't unique? So it may happen that a bank tries to evict another customer for not keeping up with payments, and they ◊link[safe-deposit-boxes-not-safe]{remove another box with the same number}.
 
 Deposit boxes won't keep you safe from creditors, who may ◊link[creditors-open]{ask the bank for your deposit box}, and of course they won't be safe ◊link[governments-deposit-boxes]{from the government}---or even the banks themselves---in bad economic times.
 
-◊(define governments-deposit-boxes "https://internationalman.com/articles/say-goodbye-to-your-safe-deposit-box/")
-◊(define creditors-open "https://calebjonesblog.com/bank-safety-deposit-boxes-no-longer-safe/")
-◊(define safe-deposit-boxes-not-safe "https://www.nytimes.com/2019/07/19/business/safe-deposit-box-theft.html")
+◊(define governments-deposit-boxes
+   (x-ref
+     "2020-01-09"
+     "https://internationalman.com/articles/say-goodbye-to-your-safe-deposit-box/"
+     "Say Goodbye to Your Safe Deposit Box"))
+◊(define creditors-open
+   (x-ref
+     "2020-01-09"
+     "https://calebjonesblog.com/bank-safety-deposit-boxes-no-longer-safe/"
+     "Bank Safety Deposit Boxes Are No Longer Safe"))
+◊(define safe-deposit-boxes-not-safe
+   (x-ref
+     "2020-01-09"
+     "https://www.nytimes.com/2019/07/19/business/safe-deposit-box-theft.html"
+     "Safe Deposit Boxes Aren’t Safe"))
 ◊; https://news.ycombinator.com/item?id=20545276
 
 
@@ -181,9 +245,21 @@ Similar to how safe deposit boxes aren't safe during a financial crisis, neither
     I think this exemplifies our relationship with banks well. When we have our money at a bank, it's not really ours anymore. It's now the bank's money and we only have their promise to return our money when we ask for it. Which generally works well---until it doesn't.
 }
 
-◊(define bank-run "https://www.investopedia.com/terms/b/bankrun.asp")
-◊(define cyprus-crisis "https://en.wikipedia.org/wiki/2012%E2%80%9313_Cypriot_financial_crisis")
-◊(define cyprus-47.5% "https://eu.usatoday.com/story/money/business/2013/07/29/bank-of-cyprus-depositors-lose-savings/2595837/")
+◊(define bank-run
+   (x-ref
+     "2020-01-09"
+     "https://www.investopedia.com/terms/b/bankrun.asp"
+     "Bank Run"))
+◊(define cyprus-crisis
+   (x-ref
+     "2020-01-09"
+     "https://en.wikipedia.org/wiki/2012%E2%80%9313_Cypriot_financial_crisis"
+     "Wikipedia: 2012–13 Cypriot financial crisis"))
+◊(define cyprus-47.5%
+   (x-ref
+     "2020-01-09"
+     "https://eu.usatoday.com/story/money/business/2013/07/29/bank-of-cyprus-depositors-lose-savings/2595837/"
+     "Bank of Cyprus depositors lose 47.5% of savings"))
 
 ◊; Cyprus everyone with more than €100,000 confiscated
 ◊; https://www.theguardian.com/world/2013/mar/25/cyprus-bailout-deal-eu-closes-bank
@@ -207,7 +283,11 @@ Fine. Let's say you know about all these ways someone can take your money and yo
     4. Consider another safe to act as a dummy.
 }
 
-◊(define xkcd-security "https://www.xkcd.com/538/")
+◊(define xkcd-security
+   (x-ref
+     "2020-01-09"
+     "https://www.xkcd.com/538/"
+     "xkcd: Security"))
 
 Tough luck. In India they found an innovative way to “◊link[india-fight-corruption]{fight corruption}” when they abolished the 500 and 1,000 rupee notes---that's ◊link[india-86%]{86%} of all cash in circulation made invalid in one stroke.
 
@@ -215,8 +295,16 @@ Many turned to gold, jewelry and anything that could reasonably hold value to pr
 
 ◊note-pos[#:top -20.5]{safe-tips}
 
-◊(define india-86% "https://www.bbc.com/news/world-asia-india-37974423")
-◊(define india-fight-corruption "https://www.bloomberg.com/news/articles/2016-11-08/india-abolishes-inr500-1-000-rupee-notes-to-fight-corruption")
+◊(define india-86%
+   (x-ref
+     "2020-01-09"
+     "https://www.bbc.com/news/world-asia-india-37974423"
+     "Why India wiped out 86% of its cash overnight"))
+◊(define india-fight-corruption
+   (x-ref
+     "2020-01-09"
+     "https://www.bloomberg.com/news/articles/2016-11-08/india-abolishes-inr500-1-000-rupee-notes-to-fight-corruption"
+     "India Abolishes 500 and 1,000 Rupee Notes to Fight Corruption"))
 ◊; https://www.bloomberg.com/news/articles/2016-11-08/india-abolishes-inr500-1-000-rupee-notes-to-fight-corruption
 ◊; https://www.cpr.org/2016/11/08/in-surprise-move-india-voids-500-and-1000-rupee-bills-to-fight-corruption/
 ◊; https://www.npr.org/sections/thetwo-way/2016/11/08/501199606/in-surprise-move-india-voids-500-and-1-000-rupee-bills-to-fight-corruption?t=1567402561294
@@ -248,8 +336,16 @@ Exactly this happened to a 91-year old Swedish woman ◊link[91-woman]{couldn't 
     It's not surprising that it was an old woman who got in trouble. When you're over 90 years old you probably didn't even know about the new bills and that the old ones were becoming invalid. She probably wasn't up-to-date with the ever-more strict KYC laws either. When she was younger she didn't have to track every single income-source, just to not lose her money.
 }
 
-◊(define 91-woman "https://www.svt.se/nyheter/lokalt/skane/91-arig-kvinna-vagras-losa-in-sina-sedlar")
-◊(define nyasedlar "http://nyasedlar.nu/")
+◊(define 91-woman
+   (x-ref
+     "2020-01-09"
+     "https://www.svt.se/nyheter/lokalt/skane/91-arig-kvinna-vagras-losa-in-sina-sedlar"
+     "91-årig kvinna vägras lösa in sedlar (Swedish)"))
+◊(define nyasedlar
+   (x-ref
+     "2020-01-09"
+     "http://nyasedlar.nu/"
+     "Nya Sedlar (Swedish)"))
 
 ◊;em{91-year old Swedish woman couldn't deposit her old bills, because she couldn't prove where she got them.}
 ◊; https://www.svt.se/nyheter/lokalt/skane/91-arig-kvinna-vagras-losa-in-sina-sedlar
@@ -260,10 +356,7 @@ Exactly this happened to a 91-year old Swedish woman ◊link[91-woman]{couldn't 
 
 ◊subhead{Inflation}
 
-There is another way governments can take money from you: by inflating the money supply and using the excess money for themselves. We explored inflation in the chapter ◊link[defective-system]{A defective system}, and the extreme hyperinflation in the chapter ◊link[global-currency]{A global currency}, so I won't repeat myself too much here.
-
-◊(define defective-system "/a_defective_system.html")
-◊(define global-currency "/global_currency.html")
+There is another way governments can take money from you: by inflating the money supply and using the excess money for themselves. We explored inflation in the chapter ◊link[a_defective_system]{A defective system}, and the extreme hyperinflation in the chapter ◊link[global_currency]{A global currency}, so I won't repeat myself too much here.
 
 Just remember that inflation is a more indirect---and perhaps sinister---way to take money from you as you probably won't notice it. After all they aren't taking something physically from you---you still have your cash in your mattress and numbers in your bank account are unchanged---but they now get you less stuff.◊sn{inflation-sad}
 
