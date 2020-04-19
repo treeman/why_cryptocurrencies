@@ -16,27 +16,65 @@
 
 Another use for ◊link[embedding-data]{embeddable data} in a cryptocurrency is a Twitter clone where messages are included into transactions, and thereby uncensorable. One example is ◊link[memo-cash]{memo.cash} which embeds data into the Bitcoin Cash blockchain.◊sn{why-bch} Like Twitter it only supports fairly short messages, for example:◊sn{memo-length}
 
-◊(define embedding-data "/extensions.html#embedding-data")
-
 
 ◊qt[#:src "(transaction on the blockchain)"
     #:author "homopit"
-    #:author-url "https://memo.cash/post/9649592301c43b168db94b66a110f8b5aa4a8fad2ff5752aec9d963a8c4a2849"
-    #:url "https://blockchair.com/bitcoin-cash/transaction/9649592301c43b168db94b66a110f8b5aa4a8fad2ff5752aec9d963a8c4a2849"]{
-    memo hitting over 1k regularly last days - ◊link{https://memo.cash/charts}
+    #:author-url homopit
+    #:url tx1]{
+    memo hitting over 1k regularly last days - ◊(link memo-charts)
 }
+◊(define homopit
+   (x-ref
+     "2019-09-25"
+     "https://memo.cash/post/9649592301c43b168db94b66a110f8b5aa4a8fad2ff5752aec9d963a8c4a2849"
+     "homopit"))
+◊(define tx1
+   (x-ref
+     "2019-09-25"
+     "https://blockchair.com/bitcoin-cash/transaction/9649592301c43b168db94b66a110f8b5aa4a8fad2ff5752aec9d963a8c4a2849"
+     "Bitcoin Cash transaction 9649592301c43b168db94b66a110f8b5aa4a8fad2ff5752aec9d963a8c4a2849"))
+◊(define memo-charts
+   (x-ref
+     "2019-09-25"
+     "https://memo.cash/charts"
+     "memo.cash charts"))
 ◊qt[#:src "(transaction on the blockchain)"
     #:author "CashBack"
-    #:author-url "https://memo.cash/post/c2503a1aecb55e2584b41ea183c3c355c527790a1ef9cb0dc3f90d8d7ae654bd"
-    #:url "https://blockchair.com/bitcoin-cash/transaction/c2503a1aecb55e2584b41ea183c3c355c527790a1ef9cb0dc3f90d8d7ae654bd"]{
-    ◊link{https://youtu.be/5q3kDx1USPM}
+    #:author-url cashback
+    #:url tx2]{
+    ◊(link cashback-yt)
 }
+◊(define cashback-yt
+   (x-ref
+     "2019-09-25"
+     "https://youtu.be/5q3kDx1USPM"
+     "Roger Ver's Business Story - EP04 - The Value Of Trade (9 min)"))
+◊(define cashback
+   (x-ref
+     "2019-09-25"
+     "https://memo.cash/post/c2503a1aecb55e2584b41ea183c3c355c527790a1ef9cb0dc3f90d8d7ae654bd"
+     "CashBack"))
+◊(define tx2
+   (x-ref
+     "2019-09-25"
+     "https://blockchair.com/bitcoin-cash/transaction/c2503a1aecb55e2584b41ea183c3c355c527790a1ef9cb0dc3f90d8d7ae654bd"
+     "Bitcoin Cash transaction c2503a1aecb55e2584b41ea183c3c355c527790a1ef9cb0dc3f90d8d7ae654bd"))
 ◊qt[#:src "(transaction on the blockchain)"
     #:author "Vidteks"
-    #:author-url "https://memo.cash/post/5e614e32e679df162cc04582769b09fd88e7f0ea32f537dcc72cae38efcb7fe9"
-    #:url "https://blockchair.com/bitcoin-cash/transaction/5e614e32e679df162cc04582769b09fd88e7f0ea32f537dcc72cae38efcb7fe9"]{
+    #:author-url vidteks
+    #:url tx3]{
     I can feel the anticipation rising...
 }
+◊(define vidteks
+   (x-ref
+     "2019-09-25"
+     "https://memo.cash/post/5e614e32e679df162cc04582769b09fd88e7f0ea32f537dcc72cae38efcb7fe9"
+     "Vidteks"))
+◊(define tx3
+   (x-ref
+     "2019-09-25"
+     "https://blockchair.com/bitcoin-cash/transaction/5e614e32e679df162cc04582769b09fd88e7f0ea32f537dcc72cae38efcb7fe9"
+     "Bitcoin Cash transaction 5e614e32e679df162cc04582769b09fd88e7f0ea32f537dcc72cae38efcb7fe9"))
 
 Images or videos aren't actually embedded but references outside services. ◊link[memo-cash-protocol]{See their protocol} if you want more details.
 
@@ -45,8 +83,16 @@ Images or videos aren't actually embedded but references outside services. ◊li
 }
 
 
-◊(define memo-cash-protocol "https://memo.cash/protocol")
-◊(define memo-cash "https://memo.cash/")
+◊(define memo-cash-protocol
+  (x-ref
+    "2019-09-25"
+    "https://memo.cash/protocol"
+    "memo.cash Protocol"))
+◊(define memo-cash
+  (x-ref
+    "2019-09-25"
+    "https://memo.cash/"
+    "memo.cash"))
 
 ◊ndef["why-bch"]{
     Bitcoin Cash is a good option because it has ◊link[bch-low-fees]{low fees} and a larger OP_RETURN limit, making it a cheap and easy base for a messaging platform.
@@ -55,7 +101,11 @@ Images or videos aren't actually embedded but references outside services. ◊li
 ◊note-pos[#:top -30]{why-bch}
 ◊note-pos[#:top -23]{memo-length}
 
-◊(define bch-low-fees "https://bitcoinfees.cash/")
+◊(define bch-low-fees
+  (x-ref
+    "2019-09-25"
+    "https://bitcoinfees.cash/"
+    "Bitcoin and Bitcoin Cash fees"))
 
 
 ◊subhead{Not a purely good thing}
@@ -79,7 +129,11 @@ But everything isn't lost! As you still need websites or apps to display the inf
     People have gotten fired for things they post on social media---and they're not always drunk. Turns out employers, both current and potential future ones, do routinely check out social media and use it to decide if they will fire or hire you.
 }
 
-◊(define right-to-be-forgotten "https://en.wikipedia.org/wiki/Right_to_be_forgotten")
+◊(define right-to-be-forgotten
+  (x-ref
+    "2019-09-25"
+    "https://en.wikipedia.org/wiki/Right_to_be_forgotten"
+    "Wikipedia: Right to be forgotten"))
 
 
 ◊subhead{An uncensorable forum}
@@ -90,7 +144,11 @@ At the same time there's something compelling about the idea of having a forum w
     Another big issue, which I foresee as one of the biggest unsolved challenges of the internet age, is "intellectual DDOS". It basically tries to throw so much disinformation at you so cannot tell what's right and what's wrong. It's a denial-of-service attack which works by the fact that it's much easier to produce ◊link[pen-teller-bullshit]{bullshit} than to counter it.
 }
 
-◊(define pen-teller-bullshit "https://www.imdb.com/title/tt0346369/")
+◊(define pen-teller-bullshit
+  (x-ref
+    "2019-09-25"
+    "https://www.imdb.com/title/tt0346369/"
+    "Penn & Teller: Bullshit! (TV Series 2003–2010)"))
 
 We've seen examples of censorship in the chapter ◊link[censorship-is-real]{uncensorable donations}, so let's not repeat ourselves too much. One example is that Twitter is completely censored in China, and you might get arrested if you bypass their internet wide block of it.
 
