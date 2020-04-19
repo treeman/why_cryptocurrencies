@@ -30,7 +30,7 @@
   (let ((href (href node))
         (title (title node)))
     (if href
-        (link href title)
+        (make-link #:title title href title)
         `(span ((class "planned"))
                ,title))))
 

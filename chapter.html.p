@@ -17,11 +17,23 @@
      (if (equal? p 'index.html)
          #f
          p)))
+◊(define prev-title
+   (if prev-page
+     (select-from-metas 'title prev-page)
+     #f))
 ◊(define next-page (next here))
+◊(define next-title
+   (if next-page
+     (select-from-metas 'title next-page)
+     #f))
 ◊(define parent-page (parent here))
-◊(define (ref page txt)
+◊(define parent-title
+   (if parent-page
+     (select-from-metas 'title parent-page)
+     #f))
+◊(define (ref page title txt)
   (->html
-    (link (string-append "/" (symbol->string page)) txt)))
+    (make-link #:title title (string-append "/" (symbol->string page)) txt)))
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -35,10 +47,10 @@
     <body>
       <article class="◊|article-class|">
         <nav class="where">
-          <a href="/" class="home">Why Cryptocurrencies?</a>
+          <a href="/" tilte="Table of contents" class="home">Why Cryptocurrencies?</a>
           ◊when/splice[parent-page]{
             <span class="divider">/</span>
-            ◊(ref parent-page (select-from-metas 'title parent-page))
+            ◊(ref parent-page parent-title parent-title)
           }
         </nav>
         <header>
@@ -56,12 +68,12 @@
 
       <nav class="edge-wrapper">
         ◊when/splice[prev-page]{
-          <a class="prev-pan" href="/◊(symbol->string prev-page)">
+          <a class="prev-pan" href="/◊(symbol->string prev-page)" title="◊|prev-title|">
             <span class="content"> ‹ </span>
           </a>
         }
         ◊when/splice[next-page]{
-          <a class="next-pan" href="/◊(symbol->string next-page)">
+          <a class="next-pan" href="/◊(symbol->string next-page)" title="◊|next-title|">
             <span class="content"> › </span>
           </a>
         }
@@ -71,7 +83,7 @@
         <nav class="movenav">
           ◊when/splice[prev-page]{
             <span class="prev">
-              ◊(ref prev-page (string-append  "← " (select-from-metas 'title prev-page)))
+              ◊(ref prev-page prev-title (string-append  "← " prev-title))
               ◊;(ref prev-page "← Previous page")
             </span>
           }
@@ -79,18 +91,18 @@
             ◊when/splice[parent-page]{
               <span class="parent">
                 ◊;(ref parent-page "Chapter")
-                ◊(ref parent-page "↑ Section")
+                ◊(ref parent-page parent-title "↑ Section")
               </span>
             }
             <span class="home">
-              <a href="/">~ Home</a>
+              <a href="/" title="Table of contents">~ Home</a>
             </span>
           </span>
 
           ◊when/splice[next-page]{
             <span class="next">
               ◊;(ref next-page "Next page →")
-              ◊(ref next-page (string-append (select-from-metas 'title next-page) " →"))
+              ◊(ref next-page next-title (string-append next-title " →"))
             </span>
           }
         </nav>
