@@ -37,6 +37,7 @@
 (define animal-farm-book "https://www.goodreads.com/book/show/170448.Animal_Farm")
 (define code-breakers-book "https://www.goodreads.com/book/show/29608.The_Codebreakers")
 (define thirst-book "https://www.charitywater.org/thirst")
+(define mastering-monero-book "https://masteringmonero.com/")
 
 ;; Defs
 
@@ -160,6 +161,10 @@
   (ch-ref
     'what_is_money.html #:ref "what-properties-does-good-money-have?"
     "What is money?: What properties does good money have?"))
+(define money-functions
+  (ch-ref
+    'what_is_money.html #:ref "what-functions-does-money-serve?"
+    "What is money?: What functions does money serve?"))
 (define are_cryptocurrencies_money
   (ch-ref
     'are_cryptocurrencies_money.html
@@ -193,6 +198,10 @@
   (ch-ref
     'uncensorable_donations.html
     "Uncensorable donations"))
+(define censorship-is-real
+  (ch-ref
+    'uncensorable_donations.html #:ref "Censorship is real"
+    "Uncensorable donations: Censorship is real"))
 (define undesirable_businesses
   (ch-ref
     'undesirable_businesses.html
@@ -253,6 +262,10 @@
     'a_defective_system.html
     "A defective system"))
 
+(define extensions
+  (ch-ref
+    'extensions.html
+    "Extensions"))
 (define embedding-data
   (ch-ref
     'extensions.html #:ref "embedding-data"
@@ -265,10 +278,18 @@
   (ch-ref
     'timestamping_service.html
     "Timestamping service"))
+(define seeds-and-pseudo-random-generators
+  (ch-ref
+    'provably_fair_gambling.html #:ref "seeds-and-pseudo-random-generators"
+    "Provably fair gambling"))
 (define provably_fair_gambling
   (ch-ref
     'provably_fair_gambling.html
     "Provably fair gambling"))
+(define tokens
+  (ch-ref
+    'tokens.html
+    "Tokens"))
 
 (define challenges
   (ch-ref
@@ -348,3 +369,16 @@
     "2019-06-12"
     "https://archive.org/"
     "Internet Archive: Wayback Machine"))
+
+(define Monero
+  (x-ref
+    "2019-04-24"
+    "https://www.getmonero.org/"
+    "Monero: A Reasonably Private Digital Currency"))
+
+(define blockchair
+  (x-ref
+    "2020-03-17"
+    "https://blockchair.com/"
+    "Blockchair"))
+

@@ -3,7 +3,7 @@
 ◊(define-meta title "The Bitcoin white paper")
 ◊(define-meta subtitle "What started it all")
 ◊(define-meta published "2019-04-12T00:00:00+01:00")
-◊(define-meta updated "2020-01-15T20:08:21+01:00")
+◊(define-meta updated "2020-04-19T10:06:55+02:00")
 ◊(define-meta uuid "581c4917-d862-49cb-9d01-495a9106081b")
 
 ◊div[#:class "whitepaper"]{
@@ -26,18 +26,24 @@ Therefore you might want to make sure you're reading the original unaltered whit
 If you want to go even further the white paper is also embedded in the blockchain which guarantees nobody can change it. Instructions available ◊link[wp-blockchain]{on stackexchange}.
 
 
-◊(define bitcoin-pdf
-  `("/files/bitcoin.pdf"
-    "Bitcoin: A Peer-to-Peer Electronic Cash System"))
-
 ◊(define ann-wp
-   "https://www.bitcoin.com/guides/bitcoin-white-paper-beginner-guide")
+   (x-ref
+     "2020-04-19"
+     "https://www.bitcoin.com/get-started/bitcoin-white-paper-beginner-guide/"
+     "Bitcoin Whitepaper: A Beginner's Guide"))
 ◊(define pod-wp
-   "https://bitcoinnews.com/bitcoinnews-com-daily-podcast-5th-november-2018-the-bitcoin-white-paper/")
+   (x-ref
+     "2020-04-19"
+     "https://bitcoinnews.com/news/bitcoinnews-com-daily-podcast-5th-november-2018-the-bitcoin-white-paper/"
+     "BitcoinNews.com Daily Podcast 5th November 2018: The Bitcoin White Paper"))
 ◊(define alter-wp
-   `("https://github.com/bitcoin-dot-org/bitcoin.org/issues/1325"
+   (x-ref
+     "2020-04-19"
+     "https://github.com/bitcoin-dot-org/bitcoin.org/issues/1325"
      "Amendments to the Bitcoin paper"))
 ◊(define track-alterations
-    `("https://blockchair.com/bitcoin/whitepaper/"
-      "Blockchair tracks white paper versions found online"))
+   (x-ref
+     "2020-04-19"
+     "https://blockchair.com/bitcoin/whitepaper/"
+     "Blockchair tracks white paper versions found online"))
 

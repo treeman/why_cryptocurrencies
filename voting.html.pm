@@ -9,10 +9,16 @@
 ◊epigraph{
   ◊qt[#:author "Bruce Schneier"
       #:src "80,000 Hours podcast"
-      #:url "https://80000hours.org/podcast/episodes/bruce-schneier-security-secrets-and-surveillance/"]{
+      #:url bruce]{
     Nobody is in favor of the power going down. Nobody is in favor of all cell phones not working. But an election? There are sides. Half of the country will want the result to stand and half the country will want the result overturned; they’ll decide on their course of action based on the result, not based on what’s right.
   }
 }
+
+◊(define bruce
+   (x-ref
+     "2020-01-31"
+     "https://80000hours.org/podcast/episodes/bruce-schneier-security-secrets-and-surveillance/"
+     "Bruce Schneier on how insecure electronic voting could break the United States — and surveillance without tyranny"))
 
 In this chapter we'll look at some of the problems with the way we vote and how we might use cryptocurrencies (or "the blockchain") to make an improved voting scheme.
 
@@ -25,8 +31,6 @@ I say they ◊em{might} help because it's not a use-case where I know they will 
 ◊ndef["blockchain?"]{
     As discussed in the ◊link[extensions]{introduction to this section} when I refer to "a blockchain" I mean embedding votes in an existing cryptocurrency, not creating a new blockchain purely for voting purposes.
 }
-
-◊(define extensions "/extensions.html")
 
 
 ◊subhead{Bush v. Gore}
@@ -92,8 +96,16 @@ But we also saw some problems that are caused by using paper votes:◊sn{paper?}
 
 ◊;Now the problem here is that the machines scan the paper votes to see wha
 
-◊(define bush-v-gore "https://www.britannica.com/event/Bush-v-Gore")
-◊(define butterfly-disaster "https://www.asktog.com/columns/042ButterflyBallot.html")
+◊(define bush-v-gore
+   (x-ref
+     "2020-01-31"
+     "https://www.britannica.com/event/Bush-v-Gore"
+     "Bush v. Gore, law case"))
+◊(define butterfly-disaster
+   (x-ref
+     "2020-01-31"
+     "https://www.asktog.com/columns/042ButterflyBallot.html"
+     "The Butterfly Ballot: Anatomy of a Disaster"))
 
 
 ◊subhead{The problems with electronic voting}
@@ -152,13 +164,41 @@ On the other hand many of these problems can be mitigated, see the paper ◊link
 ◊note-pos[#:top -74]{no-testing}
 ◊note-pos[#:top -42]{191-mil}
 
-◊(define us-corruption "https://medium.com/@jennycohn1/americas-electronic-voting-system-is-corrupted-to-the-core-1f55f34f346e")
-◊(define georgia-legal-battle "https://www.washingtonpost.com/world/national-security/in-georgia-a-legal-battle-over-electronic-vs-paper-voting/2018/09/16/d655c070-b76f-11e8-94eb-3bd52dfe917b_story.html")
-◊(define inadequately-tested "https://www.nytimes.com/2020/02/03/us/politics/iowa-caucus-app.html")
-◊(define chicago-privacy "https://www.upguard.com/breaches/cloud-leak-chicago-voters")
-◊(define vote-flipping "https://heavy.com/news/2016/10/vote-flipping-georgia-texas-north-carolina-nevada-hillary-clinton-machines-donald-trump-rigged-fraud/")
-◊(define 191-mil-us-voters "https://www.forbes.com/sites/thomasbrewster/2015/12/28/us-voter-database-leak/")
-◊(define 191-reddit "https://www.reddit.com/r/privacy/comments/3yinij/entire_us_voter_registration_record_leaks_191/")
+◊(define us-corruption
+   (x-ref
+     "2020-01-31"
+     "https://medium.com/@jennycohn1/americas-electronic-voting-system-is-corrupted-to-the-core-1f55f34f346e"
+     "America’s Electronic Voting System is Corrupted to the Core"))
+◊(define georgia-legal-battle
+   (x-ref
+     "2020-01-31"
+     "https://www.washingtonpost.com/world/national-security/in-georgia-a-legal-battle-over-electronic-vs-paper-voting/2018/09/16/d655c070-b76f-11e8-94eb-3bd52dfe917b_story.html"
+     "In Georgia, a legal battle over electronic vs. paper voting"))
+◊(define inadequately-tested
+   (x-ref
+     "2020-01-31"
+     "https://www.nytimes.com/2020/02/03/us/politics/iowa-caucus-app.html"
+     "App Used to Tabulate Votes Is Said to Have Been Inadequately Tested"))
+◊(define chicago-privacy
+   (x-ref
+     "2020-01-31"
+     "https://www.upguard.com/breaches/cloud-leak-chicago-voters"
+     "The Chicago Way: An Electronic Voting Firm Exposes 1.8M Chicagoans"))
+◊(define vote-flipping
+   (x-ref
+     "2020-01-31"
+     "https://heavy.com/news/2016/10/vote-flipping-georgia-texas-north-carolina-nevada-hillary-clinton-machines-donald-trump-rigged-fraud/"
+     "Vote Flipping: Were Clinton Votes Changed to Trump in Georgia?"))
+◊(define 191-mil-us-voters
+   (x-ref
+     "2020-01-31"
+     "https://www.forbes.com/sites/thomasbrewster/2015/12/28/us-voter-database-leak/"
+     "191 Million US Voter Registration Records Leaked In Mystery Database"))
+◊(define 191-reddit
+   (x-ref
+     "2020-01-31"
+     "https://www.reddit.com/r/privacy/comments/3yinij/entire_us_voter_registration_record_leaks_191/"
+     "Entire US voter registration record leaks (191 million)"))
 
 
 ◊subhead{A blockchain voting system}
@@ -211,12 +251,20 @@ As an alternative I'll try to present a high level description of a blockchain v
     }
 }
 
-◊(define dos "https://www.investopedia.com/terms/d/denial-service-attack-dos.asp")
+◊(define dos
+   (x-ref
+     "2020-01-31"
+     "https://www.investopedia.com/terms/d/denial-service-attack-dos.asp"
+     "Denial Of Service Attack (DoS)"))
 
 ◊note-pos[#:top -60]{dont-trust-verify}
 ◊note-pos[#:top -18]{benefit-or-curse?}
 
-◊(define direct-democracy "https://en.m.wikipedia.org/wiki/Direct_democracy")
+◊(define direct-democracy
+   (x-ref
+     "2020-01-31"
+     "https://en.m.wikipedia.org/wiki/Direct_democracy"
+     "Wikipedia: Direct democracy"))
 
 The scheme is similar to tokens that we discussed in the ◊link[tokens]{previous chapter}. Here the issuer is the government, who still needs a way to identify voters and to give them a token (a single vote). The process would be similar to how it works today, where people have their identification verified by voting officials when they go to vote.◊sn{government}
 
@@ -243,8 +291,6 @@ These transactions work like cryptocurrency transactions, so you cannot counterf
 }
 
 It's easy to count the votes---just check how much each address holds. It's also easy for you to see that your vote has arrived to the correct voting address, and if it did you know your vote will count.
-
-◊(define tokens "/tokens.html")
 
 ◊note-pos[#:top -55.5]{government}
 ◊note-pos[#:top -46]{blank}
@@ -307,8 +353,16 @@ The scheme I've presented is simple---too simple. There are many problems with i
 ◊note-pos[#:top -12]{unsolvable}
 
 
-◊(define bank-id "https://www.bankid.com/en/")
-◊(define malware "https://en.wikipedia.org/wiki/Malware")
+◊(define bank-id
+   (x-ref
+     "2020-01-31"
+     "https://www.bankid.com/en/"
+     "BankID"))
+◊(define malware
+   (x-ref
+     "2020-01-31"
+     "https://en.wikipedia.org/wiki/Malware"
+     "Wikipedia: Malware"))
 
 
 ◊subhead{Why a blockchain?}
@@ -319,7 +373,7 @@ As pointed out in the paper ◊link[public-evidence-from-secret-ballots]{Public 
 
 They say a lot of other things too, and I recommend you read the paper as it goes through a lot of the difficulties and possible solutions with voting systems. It's not as simple as I may have led you to believe.
 
-They're right that trust isn't an issue, since data will be independently verified for correctness anyway, but I don't agree that it makes a blockchain useless. A fault tolerant system--- such a blockchain---is inherently more difficult to disrupt. Because anyone can help collect, distribute and verify votes it doesn't matter if the government's servers gets overloaded in a ◊link[dos]{Denial of Service (DoS)} attack---as long as people have internet access the voting process will be uninterrupted.
+They're right that trust isn't an issue, since data will be independently verified for correctness anyway, but I don't agree that it makes a blockchain useless. A fault tolerant system--- such a blockchain---is inherently more difficult to disrupt. Because anyone can help collect, distribute and verify votes it doesn't matter if the government's servers gets overloaded in a ◊def[dos]{Denial of Service (DoS)} attack---as long as people have internet access the voting process will be uninterrupted.
 
 While there are benefits to blockchain voting, there are many problems we need to solve first, with the privacy problem being the most important. And it's possible that when all things are considered, maybe paper voting is best after all.
 
@@ -331,8 +385,9 @@ While there are benefits to blockchain voting, there are many problems we need t
     The only thing we might gain by skipping the blockchain is efficiency, which certainly shouldn't be disregarded.
 }
 
-◊(define avalanche "https://avalanchelabs.org/QmT1ry38PAmnhparPUmsUNHDEGHQusBLD6T5XJh4mUUn3v.pdf")
-◊(define shuffling-public-keys "http://vixra.org/pdf/1905.0239v1.pdf")
-
-◊(define public-evidence-from-secret-ballots "https://arxiv.org/pdf/1707.08619.pdf")
+◊(define public-evidence-from-secret-ballots
+   (x-ref
+     "2020-01-31"
+     "https://arxiv.org/pdf/1707.08619.pdf"
+     "Public Evidence from Secret Ballots (PDF)"))
 

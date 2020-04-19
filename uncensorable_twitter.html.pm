@@ -152,13 +152,15 @@ At the same time there's something compelling about the idea of having a forum w
 
 We've seen examples of censorship in the chapter ◊link[censorship-is-real]{uncensorable donations}, so let's not repeat ourselves too much. One example is that Twitter is completely censored in China, and you might get arrested if you bypass their internet wide block of it.
 
-A Twitter-like service based on a cryptocurrency does not have these problems. ◊link[uncensorable-donations]{◊nbsp{As we saw before}}, this kind of service is uncensorable, and there's no company or service China could put pressure on to get inconvenient content removed. Therefore we're free to discuss China's human rights abuses (like their ◊link[forced-organ-harvesting]{forced organ harvesting}) and the information can never truly be removed.
+A Twitter-like service based on a cryptocurrency does not have these problems. ◊link[uncensorable_donations]{◊nbsp{As we saw before}}, this kind of service is uncensorable, and there's no company or service China could put pressure on to get inconvenient content removed. Therefore we're free to discuss China's human rights abuses (like their ◊link[forced-organ-harvesting]{forced organ harvesting}) and the information can never truly be removed.
 
 ◊note-pos[#:top -19]{intellectual-ddos}
 
-◊(define forced-organ-harvesting "https://chinatribunal.com/final-judgement-report/")
-◊(define censorship-is-real "/uncensorable_donations.html#censorship-is-real")
-◊(define uncensorable-donations "/uncensorable_donations.html")
+◊(define forced-organ-harvesting
+   (x-ref
+     "2019-08-28"
+     "https://chinatribunal.com/final-judgement-report/"
+     "China Tribunal: Independent Tribunal into Forced Organ Harvesting from Prisoners of Conscience in China, Final Judgement Report"))
 
 
 ◊subhead{Uncorrupted history}
@@ -186,8 +188,24 @@ With cryptocurrencies we just might have that, for better or worse...
     Julius Caesar's "The Gallic Wars" is supposedly very good, but I'm content with Hardcore History's ◊strong{fantastic} 6 hour episode ◊link[hc-celtic-holocaust]{The Celtic Holocaust}.
 }
 
-◊(define bush-victory-iraq "http://news.bbc.co.uk/2/hi/middle_east/2989459.stm")
-◊(define rewriting-history "https://listverse.com/2016/01/05/10-insane-attempts-at-rewriting-history/")
-◊(define barbarians "https://en.wikipedia.org/wiki/Barbarian")
-◊(define hc-celtic-holocaust "https://www.dancarlin.com/hardcore-history-60-the-celtic-holocaust/")
+◊(define bush-victory-iraq
+   (x-ref
+     "2019-08-28"
+     "http://news.bbc.co.uk/2/hi/middle_east/2989459.stm"
+     "BBC: Bush declares victory in Iraq"))
+◊(define rewriting-history
+   (x-ref
+     "2019-08-28"
+     "https://listverse.com/2016/01/05/10-insane-attempts-at-rewriting-history/"
+     "10 Insane Attempts At Rewriting History"))
+◊(define barbarians
+   (x-ref
+     "2019-08-28"
+     "https://en.wikipedia.org/wiki/Barbarian"
+     "Wikipedia: Barbarian"))
+◊(define hc-celtic-holocaust
+   (x-ref
+     "2019-08-28"
+     "https://www.dancarlin.com/hardcore-history-60-the-celtic-holocaust/"
+     "Dan Carlin's The Celtic Holocaust"))
 

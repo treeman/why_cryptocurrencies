@@ -196,9 +196,4 @@ Cryptocurrencies are inherently global. They are usable wherever you are as long
     "2019-04-24"
     "https://fullstacks.org/materials/ethereumbook/16_appdx-forks-history.html"
     "Ethereum Fork History"))
-◊(define Monero
-  (x-ref
-    "2019-04-24"
-    "https://www.getmonero.org/"
-    "Monero: A Reasonably Private Digital Currency"))
 
