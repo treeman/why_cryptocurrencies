@@ -124,10 +124,7 @@ It's up to you if you believe them or not. As the cynic that I am, I remain skep
 
 ◊subhead{Absurd inequality}
 
-◊qt[#:src "Animal Farm"
-    #:quote-src #t
-    #:author "George Orwell"
-    #:url animal-farm-book]{
+◊book-qt[animal-farm-book]{
   All animals are equal, but some animals are more equal than others
 }
 

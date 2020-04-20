@@ -185,7 +185,7 @@ One of the best ways to fight poverty is ◊link[economic-growth-poverty]{econom
      "The Impact of Globalization on Economic Growth"))
 
 ◊ndef["containers"]{
-    For an interesting angle on how globalization effected the world economy I recommend ◊link[the-box-book #:quote #t]{The Box: How the Shipping Container Made the World Smaller and the World Economy Bigger} by Marc Levinson.
+    For an interesting angle on how globalization effected the world economy I recommend ◊(book-link the-box-book) by Marc Levinson.
 }
 
 ◊ndef["china-isolation"]{

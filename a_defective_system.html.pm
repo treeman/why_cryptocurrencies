@@ -112,7 +112,7 @@ Counterfeiting also means redistributing wealth from everyone to the counterfeit
      "Software Detection of Currency"))
 
 ◊ndef["case-against-fed"]{
-    A similar example was given by Murray N. Rothbard in ◊link[case-against-fed-book #:quote #t]{The Case Against the Fed}.
+    A similar example was given by Murray N. Rothbard in ◊(book-link case-against-fed-book).
 }
 
 

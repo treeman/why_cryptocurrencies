@@ -25,19 +25,71 @@
 
 ;; Books
 
-(define the-box-book "https://www.goodreads.com/book/show/316767.The_Box")
-(define shock-of-the-old-book "https://www.goodreads.com/book/show/327488.The_Shock_of_the_Old")
-(define the-big-short-book "https://www.goodreads.com/book/show/26889576-the-big-short")
-(define after-the-music-stopped-book "https://www.goodreads.com/book/show/15811560-after-the-music-stopped")
-(define thinking-fast-and-slow-book "https://www.goodreads.com/book/show/11468377-thinking-fast-and-slow")
-(define case-against-fed-book "https://www.goodreads.com/book/show/81976.The_Case_Against_the_Fed")
-(define 1984-book "https://www.goodreads.com/book/show/40961427-1984")
-(define antifragile-book "https://www.goodreads.com/book/show/13530973-antifragile")
-(define permanent-record-book "https://www.goodreads.com/book/show/46223297-permanent-record")
-(define animal-farm-book "https://www.goodreads.com/book/show/170448.Animal_Farm")
-(define code-breakers-book "https://www.goodreads.com/book/show/29608.The_Codebreakers")
-(define thirst-book "https://www.charitywater.org/thirst")
-(define mastering-monero-book "https://masteringmonero.com/")
+(define the-box-book
+  (book-ref
+    "https://www.goodreads.com/book/show/316767.The_Box"
+    "Marc Levinson"
+    "The Box"))
+(define shock-of-the-old-book
+  (book-ref
+    "https://www.goodreads.com/book/show/327488.The_Shock_of_the_Old"
+    "David Edgerton"
+    "The Shock of the Old"))
+(define the-big-short-book
+  (book-ref
+    "https://www.goodreads.com/book/show/26889576-the-big-short"
+    "Michael Lewis"
+    "The Big Short: Inside the Doomsday Machine"))
+(define after-the-music-stopped-book
+  (book-ref
+    "https://www.goodreads.com/book/show/15811560-after-the-music-stopped"
+    "Alan S. Blinder"
+    "After the Music Stopped"))
+(define thinking-fast-and-slow-book
+  (book-ref
+    "https://www.goodreads.com/book/show/11468377-thinking-fast-and-slow"
+    "Daniel Kahneman"
+    "Thinking, Fast and Slow"))
+(define case-against-fed-book
+  (book-ref
+    "https://www.goodreads.com/book/show/81976.The_Case_Against_the_Fed"
+    "The Case Against the Fed"
+    "Murray N. Rothbard"))
+(define 1984-book
+  (book-ref
+    "https://www.goodreads.com/book/show/40961427-1984"
+    "George Orwell"
+    "1984"))
+(define antifragile-book
+  (book-ref
+    "https://www.goodreads.com/book/show/13530973-antifragile"
+    "Nassim Nicholas Taleb"
+    "Antifragile: Things That Gain from Disorder"))
+(define permanent-record-book
+  (book-ref
+    "https://www.goodreads.com/book/show/46223297-permanent-record"
+    "Edward Snowden"
+    "Permanent Record"))
+(define animal-farm-book
+  (book-ref
+    "https://www.goodreads.com/book/show/170448.Animal_Farm"
+    "George Orwell"
+    "Animal Farm"))
+(define code-breakers-book
+  (book-ref
+    "https://www.goodreads.com/book/show/29608.The_Codebreakers"
+    "David Kahn"
+    "The Codebreakers"))
+(define thirst-book
+  (book-ref
+    "https://www.charitywater.org/thirst"
+    "Scott Harrison"
+    "Thirst"))
+(define mastering-monero-book
+  (book-ref
+    "https://masteringmonero.com/"
+    "SerHack"
+    "Mastering Monero"))
 
 ;; Defs
 

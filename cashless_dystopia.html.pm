@@ -7,10 +7,7 @@
 ◊(define-meta uuid "55993260-1c9a-4bcf-ace5-7773e65bf7b5")
 
 ◊epigraph{
-    ◊qt[#:src "1984"
-        #:quote-src #t
-        #:author "George Orwell"
-        #:url 1984-book]{
+    ◊book-qt[1984-book]{
  If you want a picture of the future, imagine a boot stamping on a human face—for ever.
     }
 }

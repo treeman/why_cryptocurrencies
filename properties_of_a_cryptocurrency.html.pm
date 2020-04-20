@@ -115,14 +115,14 @@ If inflation is good or bad depends on who you ask. Keynesian economists ◊link
 I sure don't know who's right. It's probably best to be skeptical of both camps---economics operate in an extremely complex and irregular environment. Economic theories are difficult, or impossible, to verify.
 
 
-◊qt[#:author "Daniel Kahneman" #:src "Thinking, Fast and Slow" #:quote-src #t #:url thinking-fast-and-slow-book]{
+◊book-qt[thinking-fast-and-slow-book]{
     acquisition of skills requires a regular environment, an adequate opportunity to practice, and rapid and unequivocal feedback about the correctness of thoughts and actions. ◊mn{tfas}
 }
 
 Either way it's not an argument against cryptocurrencies in general as they can be made either inflationary or deflationary (although all I know of becomes deflationary).
 
 ◊ndef["tfas"]{
-    The book ◊link[thinking-fast-and-slow-book #:quote #t]{Thinking, Fast and Slow} is fantastically thought provoking.
+    The book ◊(book-link thinking-fast-and-slow-book) is fantastically thought provoking.
 }
 
 ◊ndef["bitcoin-supply"]{

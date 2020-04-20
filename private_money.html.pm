@@ -285,10 +285,7 @@ They used 100,000 employees and between 500,000 to 2,000,000 snitches to maintai
     People could be placed in prison and tortured by isolation or sleep deprivation in the hopes of getting them to snitch on others.
 }
 
-◊qt[#:author "Edward Snowden"
-    #:src "Permanent Record"
-    #:quote-src #t
-    #:url permanent-record-book]{
+◊book-qt[permanent-record-book]{
   In an authoritative state, rights derive from the state and are granted to people. In a free state, rights derive form people and are granted to the state.
 }
 
@@ -336,7 +333,7 @@ Here are just ◊link[snowden-leaks]{some of the things} he leaked:
 
         There's an internal search engine where N.S.A. employees can search through your emails, pictures, medical records and private Facebook messages. Like Google, but with the contents of your online life.
 
-        Snowden writes in ◊link[permanent-record-book #:quote #t]{Permanent Record} that it was common for N.S.A. employees to abuse this to spy on their girlfriends, ex-girlfriends or girls they were interested in. This includes sharing nude photos with their co-workers, which the girls either took themselves or photos the N.S.A. took by hacking their webcam. (Quite literally a stalker's wet dream.)◊sn{no-good-guys}
+        Snowden writes in ◊(book-link permanent-record-book) that it was common for N.S.A. employees to abuse this to spy on their girlfriends, ex-girlfriends or girls they were interested in. This includes sharing nude photos with their co-workers, which the girls either took themselves or photos the N.S.A. took by hacking their webcam. (Quite literally a stalker's wet dream.)◊sn{no-good-guys}
 
         ◊note-pos{no-good-guys}
 
@@ -435,14 +432,11 @@ You see, all this data is stored ◊em{forever}, just waiting to be used to nail
 ◊;link{https://mashable.com/2014/06/05/edward-snowden-revelations/?europe=true}
 ◊;link{https://prefuse.org/edward-snowden-leaks#the-nsa-can-demand-call-records-and-data-from-telephone-companies}
 
-◊qt[#:author "Edward Snowden"
-    #:src "Permanent Record"
-    #:quote-src #t
-    #:url permanent-record-book]{
+◊book-qt[permanent-record-book]{
   Once the ubiquity of collection was combined with the permanency of storage, all any government had to do was select a person or a group to scapegoat and go searching---as I'd gone searching through the agency's files---for evidence of a suitable crime.
 }
 
-Snowden now lives in exile in Russia, where the black bags of the U.S. cannot reach. He recently released his memoir ◊link[permanent-record-book #:quote #t]{Permanent Record} which details his life leading up to the leaks. It's a great book, but the U.S. doesn't want you to read it. They even ◊link[snowden-lawsuit]{filed a lawsuit against him} and seized the revenue of the book.◊sn{post-lawsuit}
+Snowden now lives in exile in Russia, where the black bags of the U.S. cannot reach. He recently released his memoir ◊(book-link permanent-record-book) which details his life leading up to the leaks. It's a great book, but the U.S. doesn't want you to read it. They even ◊link[snowden-lawsuit]{filed a lawsuit against him} and seized the revenue of the book.◊sn{post-lawsuit}
 
 ◊note-pos[#:top -24]{jews}
 ◊note-pos{post-lawsuit}
@@ -474,12 +468,9 @@ Snowden now lives in exile in Russia, where the black bags of the U.S. cannot re
 
 I think people often give up their privacy because of ◊strong{fear}. Since the ◊link[9-11]{September 11 attacks} we've been showered with fear-inducing news and propaganda, making our minds numb. This fear of terrorism (and murderers, pedophiles and other Bogeymen) has made us go to war, consent to torture (or "advanced interrogation") and give up our human rights.◊sn{retaliation}
 
-◊(define permanent-record-ref
-   `(cite ,(link permanent-record-book "Permanent Record")))
-
 ◊ndef["retaliation"]{
     Just to put the overreaction in perspective: 2,977 people died in the 9/11 terrorist attacks, but one million died because of the American retaliation.  
-    (Edward Snowden, ◊|permanent-record-ref|)
+    ◊(cite-book permanent-record-book)
 
     That's like sentencing a shoplifter to death---a completely disproportionate response.
 }
@@ -540,7 +531,7 @@ For example they probably know if you're gay or if you're pregnant (and if you a
 ◊ndef["thoughtcrime"]{
     ◊em{Pre-crime}, like in the movie ◊link[minority-report]{Minority Report}, is the idea that you can predict someone committing a crime and catching them before they do.
 
-    ◊em{Thoughtcrime}, as explored in the book ◊link[1984-book #:quote #t]{1984}, says that thoughts are criminal. Like entertaining a politically unacceptable thought.
+    ◊em{Thoughtcrime}, as explored in the book ◊(book-link 1984-book), says that thoughts are criminal. Like entertaining a politically unacceptable thought.
 
     While fiction, our technology is edging ever closer. Soon we might have killer robots going around streets enforcing laws on our predicted behaviour. (The U.S. already deploys killing drones, which kill civilians.)
 }

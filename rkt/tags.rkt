@@ -142,6 +142,10 @@
      #:when (href? href)
      `(em ((class "def"))
         ,(apply link href text))]
+    [(list book text ..1)
+     #:when (book? book)
+     `(em ((class "def"))
+        ,(apply link (book-href book) text))]
     [_
      #:when (list? args)
      `(em ((class "def"))
@@ -267,6 +271,29 @@
      ,@txt
      ,emphasis-text
      (footer ,@(add-between cite ", "))))
+
+
+(define (book-link book)
+  (make-link #:title (book-alt-text book)
+             #:quote #t
+             (book-url book)
+             (book-title book)))
+
+(define (book-qt book . txt)
+  (apply qt
+         #:author (book-author book)
+         #:src (book-title book)
+         #:url (book-href book)
+         #:quote-src #t
+         txt))
+
+(define (cite-book book)
+  `(cite ((class "book"))
+         "("
+         ,(book-author book)
+         ", "
+         ,(book-link book)
+         ")"))
 
 (define (icode . args)
   `(code ,@args))

@@ -29,17 +29,6 @@ During 2007--2008 the world experienced the biggest financial crisis since the 1
 
 ◊subhead{What caused the 2008 financial crisis?}
 
-◊(define music-stopped-ref
-   `(cite
-      "("
-      ,(link after-the-music-stopped-book #:quote #f "After the Music Stopped")
-      ")"))
-◊(define big-short-ref
-   `(cite
-      "("
-      ,(link the-big-short-book #:quote #f "The Big Short: Inside the Doomsday Machine")
-      ")"))
-
 The financial crisis was caused by too many people borrowing too much money. The banks were happy to help and repackaged the bad loans and sold them to someone else, for a nice profit.◊sn[#:top -6]{resell-loans} When there weren't enough loans the clever banks conjured new ones, keeping the money machine rolling. This eventually blew up and brought the global economy to it's knees.
 
 This explanation is naturally very simplified. There were for example two bubbles that popped: the housing bubble and the much bigger bond bubble (based in large part on mortgage loans). The complex financial products (for example the ◊link[mortgage-bonds]{mortgage bonds} or the ◊link[cdo]{CDOs} nobody really understood) appeared to be low-risk but were high-risk.  And of course the "heads I win, tails you lose" incentives at play all the way from top to bottom in the system.◊sn{villains}
@@ -83,7 +72,7 @@ A lot of ink has been spent on articles, books and movies explaining the events 
 ◊;youtube[margot-robbie]{ Margot Robbie describes subrime mortgages.  }
 ◊;youtube[anthony-bourdain]{Anthony Bourdain explains what a CDO is.}
 
-A pitch of humor sure makes for memorable explanations. But if it's too much Hollywood for your taste I recommend the book the movie is based on:  ◊link[the-big-short-book #:quote #t]{The Big Short: Inside the Doomsday Machine} by Michael Lewis. Or if you're short on time maybe ◊link[11-min]{this 11 minute video} might suffice.
+A pitch of humor sure makes for memorable explanations. But if it's too much Hollywood for your taste I recommend the book the movie is based on:  ◊(book-link the-big-short-book) by Michael Lewis. Or if you're short on time maybe ◊link[11-min]{this 11 minute video} might suffice.
 
 ◊note-pos[#:top -84]{resell-loans}
 ◊note-pos[#:top -69]{villains}
@@ -115,7 +104,7 @@ A pitch of humor sure makes for memorable explanations. But if it's too much Hol
 
 
 ◊ndef["villains"]{
-    In ◊link[after-the-music-stopped-book #:quote #t]{After the Music Stopped} Alan S. Blinder identifies seven villains responsible for the crisis:
+    In ◊(book-link after-the-music-stopped-book) Alan S. Blinder identifies seven villains responsible for the crisis:
 
     1. Housing bubble
     2. Bond bubble
@@ -132,7 +121,7 @@ A pitch of humor sure makes for memorable explanations. But if it's too much Hol
 ◊subhead{The effects of the crisis}
 
 The crisis began with the collapse of the bank Lehman Brothers, marking the start of the ◊link[great-recession]{Great Recession}. In the U.S. alone the crisis meant ◊nbsp{$18 trillion} disappeared, millions of jobs were lost and more than a million people lost their homes.
-◊|music-stopped-ref|
+◊(cite-book after-the-music-stopped-book)
 
 ◊(define great-recession
    (x-ref
@@ -175,7 +164,8 @@ Although the crisis originated in the U.S. the crisis spread globally.◊sn[#:to
 
 ◊subhead{The bailouts}
 
-Although bad, the crisis could have been much worse. The U.S. came close to a complete financial meltdown, but without crossing the line. Partly thanks to the bailouts, where the Federal Reserve bailed out banks and other private companies. The extremely risky assets---too risky for anyone else to touch---were bought up to rescue the banks which were "too big to fail".◊sn{interconnected} ◊|music-stopped-ref|
+Although bad, the crisis could have been much worse. The U.S. came close to a complete financial meltdown, but without crossing the line. Partly thanks to the bailouts, where the Federal Reserve bailed out banks and other private companies. The extremely risky assets---too risky for anyone else to touch---were bought up to rescue the banks which were "too big to fail".◊sn{interconnected}
+◊(cite-book after-the-music-stopped-book)
 
 ◊ndef["interconnected"]{
     Or perhaps a better term would be "too interconnected to fail". The biggest fear of a big bank going bankrupt is if it brings down the rest of the economy with it, which to an extent happened when Lehman Brothers failed.
@@ -183,11 +173,14 @@ Although bad, the crisis could have been much worse. The U.S. came close to a co
 
 The bailouts started when the government guaranteed assets of the investment bank Bear Stearns and encouraged J.P. Morgan to buy them for a knockdown price. Then the mortgage lenders Fannie Mae and Freddie Mac collapsed, promptly rescued by being nationalized coupled with a $200 billion government investment.
 
-While the investment bank Bear Stearns was saved, the investment bank Lehman Brothers was allowed to go bankrupt. At first the Treasury and Federal Reserve claimed they allowed Lehman to fail to send the signal that recklessly managed Wall Street firms did not all come with government guarantees. But when they saw the fatal effects the bank's collapse had on the economy they changed their tune and claimed they lacked the legal authority to do so.  ◊|big-short-ref|
+While the investment bank Bear Stearns was saved, the investment bank Lehman Brothers was allowed to go bankrupt. At first the Treasury and Federal Reserve claimed they allowed Lehman to fail to send the signal that recklessly managed Wall Street firms did not all come with government guarantees. But when they saw the fatal effects the bank's collapse had on the economy they changed their tune and claimed they lacked the legal authority to do so.
+◊(cite-book the-big-short-book)
 
-Then followed massive new efforts to bailout banks and other private companies. For example the Federal Reserve, for the first time in history, took control over the private company American Investment Group (AIG) while giving them a $182 billion loan. The laws allowing them to do this, but not bailout Lehman Brothers, must be very interesting.  (Lehman Brothers was an ◊em{investment} bank, which isn't a real bank. Other investment banks later converted to "commercial banks" in order to receive bailouts.) ◊sn{fed-political} ◊|music-stopped-ref|
+Then followed massive new efforts to bailout banks and other private companies. For example the Federal Reserve, for the first time in history, took control over the private company American Investment Group (AIG) while giving them a $182 billion loan. The laws allowing them to do this, but not bailout Lehman Brothers, must be very interesting.  (Lehman Brothers was an ◊em{investment} bank, which isn't a real bank. Other investment banks later converted to "commercial banks" in order to receive bailouts.) ◊sn{fed-political}
+◊(cite-book after-the-music-stopped-book)
 
-In September 2008 U.S. Treasury Secretary Henry Paulson persuaded the U.S. Congress for $700 billion to buy subprime mortgage assets from banks.◊sn{tarp} But once handed the money they abandoned the promised strategy and instead essentially gave away billions of dollars to Citigroup, Morgan Stanley, Goldman Sachs and others. For instance the $13 billion AIG owed to Goldman Sachs was paid off in full by the U.S. government. ◊|big-short-ref|
+In September 2008 U.S. Treasury Secretary Henry Paulson persuaded the U.S. Congress for $700 billion to buy subprime mortgage assets from banks.◊sn{tarp} But once handed the money they abandoned the promised strategy and instead essentially gave away billions of dollars to Citigroup, Morgan Stanley, Goldman Sachs and others. For instance the $13 billion AIG owed to Goldman Sachs was paid off in full by the U.S. government.
+◊(cite-book the-big-short-book)
 
 ◊ndef["tarp"]{
     This is known as the Troubled Asset Relief Program, or TARP.
@@ -278,7 +271,8 @@ Which you might see as a sign that Satoshi wasn't a fan of bailing out the banks
 
 After the dust settled it's easy to think the guilty got punished---after all the U.S. loves to dish out harsh punishments---and the system was reworked to prevent a similar crisis from ever happening again. But reality is often disappointing.
 
-The bankers weren't punished for their unregulated gambling or outright fraud. In fact ◊link[us-banker-jail]{only a single U.S. banker went to jail}.◊sn{iceland-jail} Instead they got bonuses and in 2010 the banks were enjoying massive profits---while regular people were still struggling without jobs and houses. ◊|big-short-ref|
+The bankers weren't punished for their unregulated gambling or outright fraud. In fact ◊link[us-banker-jail]{only a single U.S. banker went to jail}.◊sn{iceland-jail} Instead they got bonuses and in 2010 the banks were enjoying massive profits---while regular people were still struggling without jobs and houses.
+◊(cite-book the-big-short-book)
 
 Remember the $182 billion AIG bailout? Shortly after accepting the bailout they paid out ◊strong{$165 million in bonuses} to their executives, those responsible for ◊link[aig-record-loss]{the biggest corporate loss in history}. As ◊link[obama-aig-bonuses]{president Obama asks}: “how do they justify this outrage to the taxpayers who are keeping the company afloat?”. One can't help but wonder...
 
@@ -344,10 +338,7 @@ What ◊em{really} caused the financial crisis, and made the crisis so large? It
 
 The blame should be placed on the incentives that enabled the greed to flourish. They made the rating agencies not look too closely at the assets they were rating---otherwise the bankers would go to another rating agency and take their money with them. The people taking loans were incentivized to loan more since the house prices kept rising, making them more money. And the people giving out loans were encouraged to give out as many loans as possible, because they would get a cut of every loan they gave out.◊sn{pets}
 
-◊qt[#:author "Michael Lewis"
-    #:src "The Big Short: Inside the Doomsday Machine"
-    #:url the-big-short-book
-    #:quote-src #t]{
+◊book-qt[the-big-short-book]{
   What are the odds that people will make smart decisions about money if they don’t need to make smart decisions—if they can get rich making dumb decisions?
 }
 
@@ -442,12 +433,5 @@ Therefore the unhealthy "heads I win, tails I get bailed-out" incentives would r
     Of course they don't actually print physical bills worth billions of dollars, they just move digital numbers in some spreadsheets. The effect is the same.
 }
 ◊note-pos[#:top -20]{print-digital}
-
-◊ndef["music-stopped"]{
-    ◊link[after-the-music-stopped-book #:quote #t]{After the Music Stopped} Alan S. Blinder
-}
-◊ndef["big-short"]{
-    ◊link[the-big-short-book #:quote #t]{The Big Short: Inside the Doomsday Machine} Michael Lewis
-}
 
 

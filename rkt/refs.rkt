@@ -5,6 +5,8 @@
 
 (provide (all-defined-out))
 
+; https://guides.libraries.psu.edu/apaquickguide/intext
+
 (struct href (c url title))
 (struct book (author url title))
 (struct ch-href (href ref))
@@ -28,12 +30,16 @@
     (set! url (string-append url "#" (to-name ref))))
   (href c url alt-text))
 
-(define (book-ref #:author author
-                  #:url [url #f]
-                  . title)
+(define (book-ref url author title)
   (unless (url? url)
     (error (format "bad book-ref url: '~a'" url)))
   (book author url title))
+
+(define (book-alt-text book)
+  (string-append (book-title book) " by " (book-author book)))
+
+(define (book-href book)
+  (href #f (book-url book) (book-alt-text book)))
 
 ; (ch-ref 'are_cryptocurrencies_money.html "Are cryptocurrencies money?")
 (define (ch-ref #:ref [ref #f]

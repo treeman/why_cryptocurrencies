@@ -33,7 +33,7 @@ Donations is an excellent use case for cryptocurrencies, as they cannot be censo
 ◊note-pos[#:top -8]{crypto-privacy}
 
 ◊ndef["voluntary"]{
-    However even charities can be prosecuted for not fulfilling their promises, an experience the founder of Charity Water writes in his book ◊link[thirst-book]{Thirst}. So charge back fraud isn't a completely irrelevant worry.
+    However even charities can be prosecuted for not fulfilling their promises, an experience the founder of Charity Water writes in his book ◊(book-link thirst-book). So charge back fraud isn't a completely irrelevant worry.
 }
 
 ◊ndef["charity-fees"]{
@@ -773,10 +773,7 @@ Unfortunately it seems like a human thing to try to hide your misdeeds instead o
 
 ◊subhead{Burying the truth will allow it to continue}
 
-◊qt[#:author "George Orwell"
-    #:quote-src #t
-    #:src "1984"
-    #:url 1984-book]{
+◊book-qt[1984-book]{
     ... if all records told the same tale---then the lie passed into history and became truth. 'Who controls the past,' ran the Party slogan, 'controls the future: who controls the present controls the past.' ... 'Reality control', they called it: in Newspeak, 'doublethink'.
 }
 

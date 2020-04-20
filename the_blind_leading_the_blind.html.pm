@@ -14,17 +14,6 @@
 }
 ◊;https://books.google.co.uk/books?id=6Mdh5yuHavgC&pg=PA86&lpg=PA86&ots=vJ319cMgdc&focus=viewport&dq=%E2%80%9CIt%27s+almost+been+worth+this+depression+to+find+out+how+little+our+big+men+know.%E2%80%9D++%E2%80%95+Will+Rogers
 
-◊(define music-stopped-ref
-   `(cite
-      "("
-      ,(link after-the-music-stopped-book #:quote #f "After the Music Stopped")
-      ")"))
-◊(define case-against-the-fed
-   `(cite
-      "("
-      ,(link case-against-fed-book #:quote #f "The Case Against the Fed")
-      ")"))
-
 Even though ◊def[sound-money]{sound money}---like cryptocurrencies or money backed by gold---might fix the bad incentives at the heart of the ◊link[financial_crisis]{2008 finanical crisis}, there are many arguments against it. One of the most common is we that lose the ability to influence and react to the market. For example if the economy crashes, or we think it will crash, the modern central banks might try to print money and buy things to soften the crash. This isn't possible with cryptocurrencies or gold, since they cannot be created freely.◊sn{elaciticity}
 
 But there's a fatal flaw with this argument: it relies on being able to predict the market and to know what actions to take to move it in the direction you want. With how intricate and complex the economy is, it's an absurd assumption.
@@ -38,7 +27,7 @@ But there's a fatal flaw with this argument: it relies on being able to predict 
 
 ◊subhead{How to become an expert}
 
-To become an expert in a field you need a lot of dedication, effort and maybe a bit of talent,◊sn{10000h} but as Daniel Kahneman points out in his book ◊link[thinking-fast-and-slow-book #:quote #t]{Thinking, Fast and Slow} you also need the right environment to develop expertise:
+To become an expert in a field you need a lot of dedication, effort and maybe a bit of talent,◊sn{10000h} but as Daniel Kahneman points out in his book ◊(book-link thinking-fast-and-slow-book) you also need the right environment to develop expertise:
 
 
 ◊(define deliberate-practice
@@ -141,7 +130,7 @@ It's not just the Soviet Union that has problems predicting and adapting to the 
   Nevertheless, the economy seems likely to continue to expand at a moderate pace over coming quarters, supported by solid growth in employment and incomes and a robust global economy.
 }
 
-The Federal Reserve, calling the global economy "robust", fanned the flames of the housing bubble by focusing on inflation and keeping the rate low, all the way up to the crash. They also let Lehman Brothers fail, not realizing the disaster it would create. ◊|music-stopped-ref|
+The Federal Reserve, calling the global economy "robust", fanned the flames of the housing bubble by focusing on inflation and keeping the rate low, all the way up to the crash. They also let Lehman Brothers fail, not realizing the disaster it would create. ◊(cite-book after-the-music-stopped-book)
 
 Maybe you feel like I'm focusing too much on the ◊link[financial_crisis]{2008 financial crisis}? Then how about their actions around the ◊link[great-depression]{Great Depression} (which were critiqued as worsening the crisis), of which the Federal Reserve chairman had this to say:
 
@@ -208,7 +197,8 @@ While the article itself is more nuanced, you can't conclude anything with such 
 
 I could argue that we're blind because we collectively don't understand the banking system, the modern monetary system or the financial system---which would largely be true. But there's another, more sinister, cause of our blindness: the Federal Reserve.
 
-Do the people know that the least accountable operation in the U.S. government isn't the FBI, CIA or the NSA---which are all accountable to congressional supervision---but the Federal Reserve? The central bank of the United States, the largest economy in the world, isn't accountable to anyone, has no budget and nobody has insight into it's operations. ◊|case-against-the-fed|
+Do the people know that the least accountable operation in the U.S. government isn't the FBI, CIA or the NSA---which are all accountable to congressional supervision---but the Federal Reserve? The central bank of the United States, the largest economy in the world, isn't accountable to anyone, has no budget and nobody has insight into it's operations.
+◊(cite-book case-against-fed-book)
 
 The Fed isn't a government agency. It's a private entity and its shareholders are banks which ◊link[fed-dividends]{earn a dividend}---at 6%, often tax-free. (Which banks? It's a secret.) Nobody knows how much banks are printing to pad their own pockets and nobody knows how many dollars exist.◊sn{bonuses}
 

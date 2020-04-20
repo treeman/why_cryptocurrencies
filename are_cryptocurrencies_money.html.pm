@@ -250,11 +250,11 @@ Perhaps it's to be expected that cryptocurrencies aren't global money yet---they
 ◊note-pos{lightbulb}
 
 ◊ndef["lightbulb"]{
-    Marc Levinson writes in ◊link[the-box-book #:quote #t]{The Box} that 20 years after the invention of the light bulb, arguably one of the most important inventions of all time, only 3% in the U.S. were using it. Cryptocurrencies are still in their infancy.
+    Marc Levinson writes in ◊(book-link the-box-book) that 20 years after the invention of the light bulb, arguably one of the most important inventions of all time, only 3% in the U.S. were using it. Cryptocurrencies are still in their infancy.
 }
 
 ◊ndef["shock-of-the-old"]{
-    For a different perspective of how technology gets adopted I recommend ◊link[shock-of-the-old-book #:quote #t]{The Shock of the Old} by David Edgerton. He argues that technology must be significantly better than the previous to see use, and even then the adoption is not as swift as one might think.
+    For a different perspective of how technology gets adopted I recommend ◊(book-link shock-of-the-old-book) by David Edgerton. He argues that technology must be significantly better than the previous to see use, and even then the adoption is not as swift as one might think.
 
     Another perspective on network effects is given by Kevin Simler in his blog post ◊link[going-critical]{Going Critical}.
 }
