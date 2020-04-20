@@ -27,13 +27,8 @@ Even though privacy is a human right, the digital money we use today is very bad
 Cryptocurrencies mitigates all these problems, and they're also truly global, unhampered by borders, disputes and local monetary policy.◊sn{why-not-gold?}
 
 ◊ndef["why-not-gold?"]{
-    Many of my arguments in this section will apply to gold, or gold-backed fiat, as well as cryptocurrencies. See the ◊link[comparing-props]{comparision of properties between different forms of money} for more details on the pros and cons of different forms of money.
+    Many of my arguments in this section will apply to gold, or gold-backed fiat, as well as cryptocurrencies. See the ◊link[comparing-properties]{comparision of properties between different forms of money} for more details on the pros and cons of different forms of money.
 }
 
 
-◊(define crypto-properties "/properties_of_a_cryptocurrency.html")
-◊(define what-is-money "/what_is_money.html")
-◊(define are-cryptos-money "/are_cryptocurrencies_money.html")
-◊(define fake-gold "https://www.reuters.com/article/us-gold-swiss-fakes-exclusive/exclusive-fake-branded-bars-slip-dirty-gold-into-world-markets-idUSKCN1VI0DD?utm_source=reddit.com")
-◊(define comparing-props "/are_cryptocurrencies_money.html#comparing-properties-with-other-forms-of-money")
 

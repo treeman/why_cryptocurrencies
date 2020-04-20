@@ -107,9 +107,6 @@ First let's look at some interesting historical examples of things that have bee
     ◊em{Commodity money} refers to money which derives its value from the commodity it's made of. For example coins made of gold. That the value comes from the commodity itself is questionable, see the discussion in ◊link[rel-subjective-theory-of-value]{subjective theory of value}.
 }
 
-◊(define rel-gold-standard "#the-gold-standard")
-◊(define rel-subjective-theory-of-value "#subjective-theory-of-value")
-◊(define germany-notes "https://en.wikipedia.org/wiki/German_Papiermark#Weimar_Republic_(1920%E2%80%9324)")
 
 
 ◊(define (money title #:img img #:date [date #f] . text)
@@ -179,12 +176,12 @@ This is why we as a society prefer to use money. Even if the thing we use as mon
 
 ◊subhead{State theory of money}
 
-One common answer to the question "what gives money value?" is ◊link[state-theory-of-money]{the State Theory of Money} (many refer to it unknowingly).
+One common answer to the question "what gives money value?" is ◊def[state-theory-of-money]{the State Theory of Money} (many refer to it unknowingly).
 
 The basic thesis is that it's the state that gives value to money:
 
 ◊ol{
-    ◊li{Fiat currency is declared by the state to be ◊link[legal-tender]{◊em{legal tender}}.
+    ◊li{Fiat currency is declared by the state to be ◊def[legal-tender]{legal tender}.
 
         Which, among other things, means merchants have to accept it by law.}
     ◊li{The state is responsible to regulate inflation.◊sn{fed}}
@@ -200,14 +197,26 @@ While this might on the surface explain why fiat currencies are valuable, it fai
 
 ◊note-pos[#:top -11]{fed}
 
-◊(define legal-tender "https://en.wikipedia.org/wiki/Legal_tender")
-◊(define federal-reserve "https://www.investopedia.com/terms/f/federalreservebank.asp")
-◊(define ecb "https://www.ecb.europa.eu/home/html/index.en.html")
+◊(define legal-tender 
+  (x-ref
+    "2019-05-16"
+    "https://en.wikipedia.org/wiki/Legal_tender"
+    "Wikipedia: Legal tender"))
+◊(define federal-reserve 
+  (x-ref
+    "2019-05-16"
+    "https://www.investopedia.com/terms/f/federalreservebank.asp"
+    "Federal Reserve System (FRS)"))
+◊(define ecb 
+  (x-ref
+    "2019-05-16"
+    "https://www.ecb.europa.eu/home/html/index.en.html"
+    "European Central Bank (ECB)"))
 
 
 ◊subhead{Subjective theory of value}
 
-Instead a better explanation is given by the ◊link[subjective-theory-of-value]{subjective theory of value}. It describes how goods are valued, but it serves just as well to explain why money is valuable.
+Instead a better explanation is given by the ◊def[subjective-theory-of-value]{subjective theory of value}. It describes how goods are valued, but it serves just as well to explain why money is valuable.
 
 In short it says ◊em{value is subjective}.
 
@@ -219,7 +228,11 @@ It might sound too simplistic or like a tautology. But what it means is there's 
     A related fact is that the material in US nickels ◊link[nickels-metal]{can be worth more than the value of the nickel itself}. (The melt value varies).
 }
 
-◊(define nickels-metal "https://www.thepennyhoarder.com/smart-money/hoarding-nickels-pocket-change-might-worth-think/")
+◊(define nickels-metal 
+  (x-ref
+    "2019-05-16"
+    "https://www.thepennyhoarder.com/smart-money/hoarding-nickels-pocket-change-might-worth-think/"
+    "Hoarding Nickels: Why Your Pocket Change Might Be Worth More Than You Think"))
 
 For instance medicine can be extremely valuable for those who needs it, but have little value to others. So if you have the medicine, but don't need it, you'll gladly sell. But someone who needs it would be reluctant to sell, unless for a very high price.
 
@@ -236,8 +249,16 @@ If more or less anything can be used as money, it makes more sense to look at ho
     ◊link[4-fun-money]{Some also use a fourth function}: ◊em{standard of deferred payment}. I chose to focus on the three functions, it seems to me it's the popular way.
 }
 
-◊(define 3-fun-money "https://www.khanacademy.org/economics-finance-domain/ap-macroeconomics/ap-financial-sector/definition-measurement-and-functions-of-money-ap/a/definition-measurement-and-functions-of-money")
-◊(define 4-fun-money "https://opentextbc.ca/principlesofeconomics/chapter/27-1-defining-money-by-its-functions/")
+◊(define 3-fun-money 
+  (x-ref
+    "2019-05-16"
+    "https://www.khanacademy.org/economics-finance-domain/ap-macroeconomics/ap-financial-sector/definition-measurement-and-functions-of-money-ap/a/definition-measurement-and-functions-of-money"
+    "Khan Academy: definition, measurement, and functions of money"))
+◊(define 4-fun-money 
+  (x-ref
+    "2019-05-16"
+    "https://opentextbc.ca/principlesofeconomics/chapter/27-1-defining-money-by-its-functions/"
+    "Principles of Economics: Defining Money by Its Functions"))
 
 ◊ol{
     ◊li{◊strong{Medium of exchange}
@@ -269,7 +290,11 @@ If more or less anything can be used as money, it makes more sense to look at ho
 
 Medium of exchange is the ◊link[most-important]{most important} defining property of money, the other properties follow.
 
-◊(define most-important "https://mises.org/library/mises-basics-money")
+◊(define most-important 
+  (x-ref
+    "2019-05-16"
+    "https://mises.org/library/mises-basics-money"
+    "Mises on the Basics of Money"))
 
 Note that these are functions of usage and adoption. For instance if something has been a store of value a period of time it doesn't mean it will continue to be a good store of value in the future.◊sn{gold-sov}
 
@@ -285,7 +310,11 @@ As seen from historical examples I think it's safe to conclude that yes, basical
     For example in 2010 it increased 27.74% and in 2013 it decreased 27.79%.
 }
 
-◊(define gold-valuation "https://www.macrotrends.net/1333/historical-gold-prices-100-year-chart")
+◊(define gold-valuation 
+  (x-ref
+    "2019-05-16"
+    "https://www.macrotrends.net/1333/historical-gold-prices-100-year-chart"
+    "Gold Prices - 100 Year Historical Chart"))
 
 
 ◊subhead{What properties does good money have?}
@@ -415,9 +444,7 @@ The money we usually use today is a little different from coins made of precious
     See ◊link[intrinsic-value-fallacy]{The Fallacy of "Intrinsic Value"}.
 }
 
-◊(define intrinsic-value-fallacy "https://fee.org/articles/the-fallacy-of-intrinsic-value/")
-
-It's not a requirement that the money must be backed by something, or have intrinsic value like commodity money, the real problem is that the supply isn't actually limited.  Banks inflate the supply using ◊link[fractional-banking]{◊em{fractional banking}} while central banks can print money, both physical and digital, without any limit.◊sn{fractional-banking-good}
+It's not a requirement that the money must be backed by something, or have intrinsic value like commodity money, the real problem is that the supply isn't actually limited.  Banks inflate the supply using ◊def[fractional-banking]{fractional banking} while central banks can print money, both physical and digital, without any limit.◊sn{fractional-banking-good}
 
 ◊ndef["fractional-banking-good"]{
     The basic idea behind Fractional Banking is that the bank gives out more money than it really has. So for example if I deposit 1000 SEK into the bank, the bank can now also loan out 900 SEK to you (how much the bank is allowed to loan differs). It has increased the money supply with 900 SEK from "thin air".
@@ -425,11 +452,10 @@ It's not a requirement that the money must be backed by something, or have intri
     There are those who ◊link[fractional-banking-atlanta]{argue that Fractional Banking is a net positive for society}. And ◊link[fractional-banking-bad]{those who disagree}. Regardless, it is a negative with respect to the properties of money we use.
 }
 
-The term ◊link[sound-money]{◊em{sound money}} refers to money that isn't prone to sudden changes in long term purchasing power, and the value is determined by the free market. If the supply of money differs from the demand, which will happen with fiat due to the disconnect between banks and the market, then there will be changes. While fiat has many positive properties, after the move away from the gold standard, it's now considered unsound money.
+The term ◊def[sound-money]{sound money} refers to money that isn't prone to sudden changes in long term purchasing power, and the value is determined by the free market. If the supply of money differs from the demand, which will happen with fiat due to the disconnect between banks and the market, then there will be changes. While fiat has many positive properties, after the move away from the gold standard, it's now considered unsound money.
 
 ◊note-pos[#:top -11.5]{fractional-banking-good}
 
-◊(define sound-money "https://www.soundmoneydefense.org/sound-money-explained")
 
 
 ◊subhead{Why do we need good money?}
@@ -449,27 +475,94 @@ I see two major reasons:
 
 In our context knowing what makes money perform well helps us reason about cryptocurrencies, and to see if it can live up to it's namesake.
 
-◊(define next-chapter "/are_cryptocurrencies_money.html")
+◊(define next-chapter are_cryptocurrencies_money)
+◊(define rel-gold-standard `("#the-gold-standard" "The gold standard"))
+◊(define rel-subjective-theory-of-value `("#subjective-theory-of-value" "Subjective theory of value"))
 
-◊(define sea-shells "https://www.nbbmuseum.be/en/2007/01/cowry-shells.htm")
-◊(define shells-slaves "https://www.culturesofwestafrica.com/cowrie-shell-monetary-symbolic-value/")
-◊(define ancient-greece-coinage "https://www.ancient.eu/Greek_Coinage/")
-◊(define rai-stones "http://www.bbc.com/travel/story/20180502-the-tiny-island-with-human-sized-money")
-◊(define rai-stones-pictures "https://www.thevintagenews.com/2017/12/28/rai-stones/")
-◊(define germany-wallpaper "https://mashable.com/2016/07/27/german-hyperinflation/")
-◊(define prison-stamps "https://www.therichest.com/business/economy/five-surprising-things-prisoners-use-as-currency/")
-◊(define prison-ramen "https://www.npr.org/sections/thesalt/2016/08/26/491236253/ramen-noodles-are-now-the-prison-currency-of-choice?t=1557205041822")
-◊(define prison-cigarettes "https://www.cengage.com/economics/tomlinson/transcripts/8520.pdf")
-◊(define fractional-banking "https://corporatefinanceinstitute.com/resources/knowledge/finance/fractional-banking/")
-◊(define fractional-banking-atlanta "https://www.frbatlanta.org/education/classroom-economist/fractional-reserve-banking/economists-perspective-transcript")
-◊(define fractional-banking-bad "https://mises.org/library/faults-fractional-reserve-banking")
-◊(define largest-coin "https://www.riksbank.se/en-gb/about-the-riksbank/history/1600-1699/the-worlds-largest-coin/")
-◊(define state-theory-of-money "https://socialsciences.mcmaster.ca/econ/ugcm/3ll3/knapp/StateTheoryMoney.pdf")
-◊(define subjective-theory-of-value "https://wiki.mises.org/wiki/Subjective_theory_of_value")
-◊(define gold-standard "https://www.britannica.com/topic/gold-standard")
+◊(define intrinsic-value-fallacy
+  (x-ref
+    "2019-05-16"
+    "https://fee.org/articles/the-fallacy-of-intrinsic-value/"
+    "The Fallacy of \"Intrinsic Value\"2019-05-16"))
+◊(define germany-notes
+  (x-ref
+    "2019-05-16"
+    "https://en.wikipedia.org/wiki/German_Papiermark#Weimar_Republic_(1920%E2%80%9324)"
+    "Wikipedia: Weimar Republic (1920–24)"))
+◊(define sea-shells
+  (x-ref
+    "2019-05-16"
+    "https://www.nbbmuseum.be/en/2007/01/cowry-shells.htm"
+    "Cowry Shells, a trade currency "))
+◊(define shells-slaves
+  (x-ref
+    "2019-05-16"
+    "https://www.culturesofwestafrica.com/cowrie-shell-monetary-symbolic-value/"
+    "The Cowrie Shell: Monetary and Symbolic Value"))
+◊(define ancient-greece-coinage
+  (x-ref
+    "2019-05-16"
+    "https://www.ancient.eu/Greek_Coinage/"
+    "Ancient Greek Coinage"))
+◊(define rai-stones
+  (x-ref
+    "2019-05-16"
+    "http://www.bbc.com/travel/story/20180502-the-tiny-island-with-human-sized-money"
+    "The tiny island with human-sized money"))
+◊(define rai-stones-pictures
+  (x-ref
+    "2019-05-16"
+    "https://www.thevintagenews.com/2017/12/28/rai-stones/"
+    "The Rai Stones are huge stone wheels used as currency on the island of Yap"))
+◊(define germany-wallpaper
+  (x-ref
+    "2019-05-16"
+    "https://mashable.com/2016/07/27/german-hyperinflation/"
+    "Hyperinflation in Germany"))
+◊(define prison-stamps
+  (x-ref
+    "2019-05-16"
+    "https://www.therichest.com/business/economy/five-surprising-things-prisoners-use-as-currency/"
+    "Five Suprising Things Prisoners Use As Currency"))
+◊(define prison-ramen
+  (x-ref
+    "2019-05-16"
+    "https://www.npr.org/sections/thesalt/2016/08/26/491236253/ramen-noodles-are-now-the-prison-currency-of-choice?t=1557205041822"
+    "Ramen Noodles Are Now The Prison Currency Of Choice"))
+◊(define prison-cigarettes
+  (x-ref
+    "2019-05-16"
+    "https://www.cengage.com/economics/tomlinson/transcripts/8520.pdf"
+    "Case Study: Cigarettes as Money"))
+◊(define fractional-banking-atlanta
+  (x-ref
+    "2019-05-16"
+    "https://www.frbatlanta.org/education/classroom-economist/fractional-reserve-banking/economists-perspective-transcript"
+    "Fractional Reserve Banking - An Economist's Perspective (Transcript)"))
+◊(define fractional-banking-bad
+  (x-ref
+    "2019-05-16"
+    "https://mises.org/library/faults-fractional-reserve-banking"
+    "The Faults of Fractional-Reserve Banking"))
+◊(define largest-coin
+  (x-ref
+    "2019-05-16"
+    "https://www.riksbank.se/en-gb/about-the-riksbank/history/1600-1699/the-worlds-largest-coin/"
+    "1644 - The world's largest coin"))
+◊(define state-theory-of-money
+  (x-ref
+    "2019-05-16"
+    "https://socialsciences.mcmaster.ca/econ/ugcm/3ll3/knapp/StateTheoryMoney.pdf"
+    "The State Theory of Money (1924)"))
+◊(define subjective-theory-of-value
+  (x-ref
+    "2019-05-16"
+    "https://wiki.mises.org/wiki/Subjective_theory_of_value"
+    "Subjective theory of value"))
 
 ◊; http://money.visualcapitalist.com/infographic-the-properties-of-money/
 ◊; https://www.aier.org/
 ◊; https://thesocietypages.org/socimages/2014/04/24/money-as-a-social-construction/
 ◊; https://hackernoon.com/money-is-a-social-construct-and-thats-why-you-should-run-a-bitcoin-full-node-ea0330cb69a5?gi=257add0b9b0b
 ◊; https://www.bbc.com/news/business-45523636
+

@@ -9,13 +9,21 @@
 Money is perhaps the most obvious usage of cryptocurrencies but there are other ways to use them. In this section I'll highlight some of the alternative usages and we'll see that we can build other functionality on top of existing cryptocurrencies.◊sn{blockchain-hype}
 
 ◊ndef["blockchain-hype"]{
-    I generally try to avoid the word ◊em{blockchain} which sometimes refer to private blockchains or blockchains which use a consensus model with known and trusted actors. Facebook's Libra is such an example and ◊link[ibm-blockchain]{IBM's blockchain} is another.
+    I generally try to avoid the word ◊def{blockchain} which sometimes refer to private blockchains or blockchains which use a consensus model with known and trusted actors. Facebook's Libra is such an example and ◊link[ibm-blockchain]{IBM's blockchain} is another.
 
     Don't let the similar names fool you: consensus algorithms with known participants and those with unknown participants are ◊strong{very} different. I only consider those using the latter to be cryptocurrencies.
 }
 
-◊(define bft "https://en.wikipedia.org/wiki/Byzantine_fault")
-◊(define ibm-blockchain "https://www.ibm.com/blockchain")
+◊(define bft
+   (x-ref
+     "2019-09-21"
+     "https://en.wikipedia.org/wiki/Byzantine_fault"
+     "Wikipedia: Byzantine fault"))
+◊(define ibm-blockchain
+   (x-ref
+     "2019-09-21"
+     "https://www.ibm.com/blockchain"
+     "IBM Blockchain is changing business, industries – and even the world"))
 
 
 ◊subhead{Embedding data}
@@ -89,18 +97,37 @@ The first thing we can observe is that it's possible to insert data into the led
     (for/list ([c (in-string msg)])
       `(tr (td ,@(gen-address c))))))
 
-◊(define block-0 "https://blockchair.com/bitcoin/block/0")
-◊(define memo-blockchair "https://blockchair.com/bitcoin-cash/transaction/786816d4f92e9b8e78bf281e2b498daa526c93dc69a5e6b493c901928ee3f51d")
-◊(define vanitygen "https://en.bitcoin.it/wiki/Vanitygen")
-◊(define coinbase-ex "https://blockchair.com/bitcoin/block/595563")
-◊(define coinbase-txs "https://learnmeabitcoin.com/glossary/coinbase-transaction")
+◊(define memo-blockchair
+   (x-ref
+     "2019-09-21"
+     "https://blockchair.com/bitcoin-cash/transaction/786816d4f92e9b8e78bf281e2b498daa526c93dc69a5e6b493c901928ee3f51d"
+     "Bitcoin transaction 786816d4f92e9b8e78bf281e2b498daa526c93dc69a5e6b493c901928ee3f51d"))
+◊(define vanitygen
+   (x-ref
+     "2019-09-21"
+     "https://en.bitcoin.it/wiki/Vanitygen"
+     "Vanitygen"))
+◊(define coinbase-ex
+   (x-ref
+     "2019-09-21"
+     "https://blockchair.com/bitcoin/block/595563"
+     "Bitcoin block 595563"))
+◊(define coinbase-txs
+   (x-ref
+     "2019-09-21"
+     "https://learnmeabitcoin.com/glossary/coinbase-transaction"
+     "Coinbase Transaction: A transaction used to claim a block reward."))
 
 
 ◊subhead{Scripts}
 
 Bitcoin does more than just transfer coins from one address to another. What it actually does is execute a ◊link[bitcoin-script]{small scripting language} which is responsible for unlocking funds and transferring them to new addresses. You can for example send funds from several addresses to many addresses or lock funds and ◊link[multisig]{require more than one key} to spend them.◊sn{bitcoin-script}
 
-◊(define bitcoin-script "https://en.bitcoin.it/wiki/Script")
+◊(define bitcoin-script
+   (x-ref
+     "2019-09-21"
+     "https://en.bitcoin.it/wiki/Script"
+     "Bitcoin Script"))
 
 ◊ndef["bitcoin-script"]{
     This is the script of a standard Bitcoin transaction (amount, destination and other data is specified elsewhere):
@@ -117,7 +144,7 @@ The scripting language in Bitcoin is fairly limited but the ◊link[solidity]{sc
 ◊ndef["tradeoffs"]{
     Ethereum's powerful scripting language comes with all sorts of trade-offs. It makes it much more difficult to scale---which is already difficult with Bitcoin.
 
-    The scripting language in Ethereum is also ◊link[turing-complete]{Turing Complete}, meaning it's impossible to know if a script terminates. This means a new concept ◊link[ether-gas]{◊em{gas}} has to be introduced, drastically increasing the complexity of the system. Bitcoin avoids this problem by not having a Turing Complete scripting language.
+    The scripting language in Ethereum is also ◊link[turing-complete]{Turing Complete}, meaning it's impossible to know if a script terminates. This means a new concept ◊def[ether-gas]{gas} has to be introduced, drastically increasing the complexity of the system. Bitcoin avoids this problem by not having a Turing Complete scripting language.
 }
 
 Now it doesn't matter if you know what a script is or how it works, just remember this: cryptocurrencies can do more than just transfer coins from one address to another. We'll go into some of the examples in the following chapters.
@@ -125,10 +152,34 @@ Now it doesn't matter if you know what a script is or how it works, just remembe
 ◊note-pos[#:top -16]{bitcoin-script}
 ◊note-pos{tradeoffs}
 
-◊(define cryptokitties "https://www.cryptokitties.co/")
-◊(define turing-complete "https://en.wikipedia.org/wiki/Turing_completeness")
-◊(define ether-gas "https://blockgeeks.com/guides/ethereum-gas/")
-◊(define multisig "https://en.bitcoin.it/wiki/Multisignature")
-◊(define bitcoin-script-tutorial "https://blockgeeks.com/guides/best-bitcoin-script-guide/")
-◊(define solidity "https://solidity.readthedocs.io/en/v0.5.11/")
+◊(define cryptokitties
+   (x-ref
+     "2019-09-21"
+     "https://www.cryptokitties.co/"
+     "CryptoKitties"))
+◊(define turing-complete
+   (x-ref
+     "2019-09-21"
+     "https://en.wikipedia.org/wiki/Turing_completeness"
+     "Wikipedia: Turing completeness"))
+◊(define ether-gas
+   (x-ref
+     "2019-09-21"
+     "https://blockgeeks.com/guides/ethereum-gas/"
+     "What is Ethereum Gas? [The Most Comprehensive Step-By-Step Guide Ever!]"))
+◊(define multisig
+   (x-ref
+     "2019-09-21"
+     "https://en.bitcoin.it/wiki/Multisignature"
+     "Bitcoin Multisignature"))
+◊(define bitcoin-script-tutorial
+   (x-ref
+     "2019-09-21"
+     "https://blockgeeks.com/guides/best-bitcoin-script-guide/"
+     "The Best Step-by-Step Bitcoin Script Guide Part 1"))
+◊(define solidity
+   (x-ref
+     "2019-09-21"
+     "https://solidity.readthedocs.io/en/v0.5.11/"
+     "Solidity"))
 

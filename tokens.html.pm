@@ -12,7 +12,7 @@ But would they really be completely useless? These cryptocurrency-like things ar
 
 ◊subhead{What are tokens?}
 
-Tokens are essentially cryptocurrencies, except there's a single entity with the power to create coins. Tokens retain the other useful ◊link[props]{properties of cryptocurrencies} such as counterfeit resistance, transaction irreversibility and ◊link[double-spend]{double spend protection}.◊sn{weak}
+Tokens are essentially cryptocurrencies, except there's a single entity with the power to create coins. Tokens retain the other useful ◊link[properties_of_a_cryptocurrency]{properties of cryptocurrencies} such as counterfeit resistance, transaction irreversibility and ◊link[double-spending]{double spend protection}.◊sn{weak}
 
 ◊ndef["weak"]{
     Some properties are weakened when the value of tokens come from a central party.
@@ -32,12 +32,31 @@ The most popular class of tokens are probably the ◊link[erc20-standard]{ERC20 
     You could implement tokens on other cryptocurrencies as well. The ◊link[omni]{Omni Layer} is for example an extension network built on Bitcoin that supports tokens. The difference is that Ethereum's ERC20 tokens are miner validated, while Omni uses a different consensus mechanism.
 }
 
-◊(define props "/properties_of_a_cryptocurrency.html")
-◊(define brave "https://brave.com/")
-◊(define usdc "https://www.coinbase.com/usdc")
-◊(define bnb "https://coincentral.com/what-is-binance-coin-bnb/")
-◊(define omni "https://www.omnilayer.org/")
-◊(define erc20-standard "https://eips.ethereum.org/EIPS/eip-20")
+◊(define brave
+   (x-ref
+     "2020-02-07"
+     "https://brave.com/"
+     "Brave Browser"))
+◊(define usdc
+   (x-ref
+     "2020-02-07"
+     "https://www.coinbase.com/usdc"
+     "USD Coin (USDC)"))
+◊(define bnb
+   (x-ref
+     "2020-02-07"
+     "https://coincentral.com/what-is-binance-coin-bnb/"
+     "What Is Binance Coin (BNB)? | A Guide to the Crypto of the Famous Exchange"))
+◊(define omni
+   (x-ref
+     "2020-02-07"
+     "https://www.omnilayer.org/"
+     "Omni Layer: An open-source, fully-decentralized asset platform on the Bitcoi Blockchain"))
+◊(define erc20-standard
+   (x-ref
+     "2020-02-07"
+     "https://eips.ethereum.org/EIPS/eip-20"
+     "EIP 20: ERC-20 Token Standard"))
 
 
 ◊subhead{Initial coin offering}
@@ -68,11 +87,31 @@ Why would you want a token for this? The benefit would be that anyone, anywhere,
     It might be hard to claim anonymity if you want someone to send a board game to you, but it's relevant if you're expecting returns in cryptocurrencies or other digital goods.
 }
 
-◊(define greater-fools "https://en.wikipedia.org/wiki/Greater_fool_theory")
-◊(define pyramid-scheme "https://en.m.wikipedia.org/wiki/Pyramid_scheme")
-◊(define ico "https://www.investopedia.com/terms/i/initial-coin-offering-ico.asp")
-◊(define ipo "https://www.investopedia.com/terms/i/ipo.asp")
-◊(define kickstarter "https://www.kickstarter.com/")
+◊(define greater-fools
+   (x-ref
+     "2020-02-07"
+     "https://en.wikipedia.org/wiki/Greater_fool_theory"
+     "Wikipedia: Greater fool theory"))
+◊(define pyramid-scheme
+   (x-ref
+     "2020-02-07"
+     "https://en.m.wikipedia.org/wiki/Pyramid_scheme"
+     "Wikipedia: Pyramid scheme"))
+◊(define ico
+   (x-ref
+     "2020-02-07"
+     "https://www.investopedia.com/terms/i/initial-coin-offering-ico.asp"
+     "Initial Coin Offering (ICO)"))
+◊(define ipo
+   (x-ref
+     "2020-02-07"
+     "https://www.investopedia.com/terms/i/ipo.asp"
+     "Initial Public Offering (IPO)"))
+◊(define kickstarter
+   (x-ref
+     "2020-02-07"
+     "https://www.kickstarter.com/"
+     "Kickstarter"))
 
 
 ◊subhead{Gift cards}
@@ -87,11 +126,9 @@ Unfortunately for you the store clerk has already written down the gift card cod
     Physical gift cards can have a problem with conterfeiting, which is also something cryptocurrencies completely solve.
 }
 
-This problem, of how to transfer ownership of a code, is really the same double spending problem that cryptocurrencies ◊link[double-spend]{pioneered a solution} for. And tokens inherit this property, allowing you to buy a token based gift card and be absolutely sure that it's unspent and that you're the only one who can spend it.
+This problem, of how to transfer ownership of a code, is really the same double spending problem that cryptocurrencies ◊link[double-spending]{pioneered a solution} for. And tokens inherit this property, allowing you to buy a token based gift card and be absolutely sure that it's unspent and that you're the only one who can spend it.
 
 ◊note-pos[#:top -11]{verify}
-
-◊(define double-spend "/how_do_cryptocurrencies_work.html#copying-a-coin-&-double-spending")
 
 
 
@@ -190,14 +227,46 @@ I'm not suggesting that all derivatives should just use tokens, in many cases th
 }
 
 
-◊(define derivative "https://www.investopedia.com/terms/d/derivative.asp")
-◊(define richest-men "https://wealthygorilla.com/top-20-richest-people-world/")
-◊(define bearer-share "https://www.investopedia.com/terms/b/bearer_share.asp")
-◊(define money-visualization "https://money.visualcapitalist.com/worlds-money-markets-one-visualization-2017/")
-◊(define biggest-companies "https://www.forbes.com/global2000/list/#header:marketValue_sortreverse:true")
-◊(define gold-price "https://www.apmex.com/gold-price")
-◊(define mined-gold "https://www.gold.org/about-gold/gold-supply/gold-mining/how-much-gold")
-◊(define coinlib "https://coinlib.io/")
+◊(define derivative
+   (x-ref
+     "2020-02-07"
+     "https://www.investopedia.com/terms/d/derivative.asp"
+     "Derivative"))
+◊(define richest-men
+   (x-ref
+     "2020-02-07"
+     "https://wealthygorilla.com/top-20-richest-people-world/"
+     "The 25 Richest People in the World 2020"))
+◊(define bearer-share
+   (x-ref
+     "2020-02-07"
+     "https://www.investopedia.com/terms/b/bearer_share.asp"
+     "Bearer Share"))
+◊(define money-visualization
+   (x-ref
+     "2020-02-07"
+     "https://money.visualcapitalist.com/worlds-money-markets-one-visualization-2017/"
+     "All of the World’s Money and Markets in One Visualization"))
+◊(define biggest-companies
+   (x-ref
+     "2020-02-07"
+     "https://www.forbes.com/global2000/list/#header:marketValue_sortreverse:true"
+     "The World’s Largest Public Companies"))
+◊(define gold-price
+   (x-ref
+     "2020-02-07"
+     "https://www.apmex.com/gold-price"
+     "Live Gold Price Charts & Historical Data"))
+◊(define mined-gold
+   (x-ref
+     "2020-02-07"
+     "https://www.gold.org/about-gold/gold-supply/gold-mining/how-much-gold"
+     "How much gold has been mined?"))
+◊(define coinlib
+   (x-ref
+     "2020-02-07"
+     "https://coinlib.io/"
+     "Coinlib - Crypto Prices, Charts, Lists & Crypto Market News"))
 
 ◊(define visualcapitalist-ref
   (nbsp "(" (link money-visualization (nbsp "Visualcapitalist 2017") ")")))

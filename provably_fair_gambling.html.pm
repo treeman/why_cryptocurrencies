@@ -1,7 +1,5 @@
 #lang pollen
 
-◊(require pollen/unstable/pygments)
-
 ◊(define-meta title "Provably fair gambling")
 ◊(define-meta subtitle "Gambling where you cannot cheat the odds")
 ◊(define-meta published "2019-12-17T00:00:00+01:00")
@@ -31,8 +29,16 @@ With cryptocurrencies we can device a scheme where gambling is provably fair. We
 
 ◊note-pos[#:top -9]{poker-cheating}
 
-◊(define poker-scandal "https://upswingpoker.com/ultimate-bet-absolute-poker-scandal/")
-◊(define oceans-11 "https://www.imdb.com/title/tt0240772/")
+◊(define poker-scandal
+   (x-ref
+     "2019-12-17"
+     "https://upswingpoker.com/ultimate-bet-absolute-poker-scandal/"
+     "Ultimate Bet and Absolute Poker: What Happened?"))
+◊(define oceans-11
+   (x-ref
+     "2019-12-17"
+     "https://www.imdb.com/title/tt0240772/"
+     "Ocean's Eleven (2001)"))
 
 ◊; Another poker cheating scandal:
 ◊; https://news.ycombinator.com/item?id=21161043
@@ -74,7 +80,11 @@ A pseudo-random generator can produce a sequence of numbers, a number of coin to
     This is also true for pseudo-random generators, where different generators will produce different results.
 }
 
-◊(define minecraft-best-seeds "https://progameguides.com/minecraft/minecraft-best-seeds/")
+◊(define minecraft-best-seeds
+   (x-ref
+     "2019-12-17"
+     "https://progameguides.com/minecraft/minecraft-best-seeds/"
+     "Best Minecraft Seeds for April 2020 (1.15+ & 1.14+)"))
 
 
 ◊subhead{A simple provably fair gambling scheme}
@@ -89,9 +99,9 @@ Our gambling algorithm is simple. We'll concatenate the casino's seed with the p
     If you don't publically sign the bet, there's always the risk that the casino can say that it never happened, and you cannot prove otherwise.
 }
 
-◊(code-hl-file 'python3 "scripts/gambling.py")
+◊(code-hl "python3" "scripts/gambling.py")
 
-Importantly the casino should give out the seed encoded with a ◊def[#:src hash-functions]{cryptographic hash function}, otherwise the player can just pick the winning seed and there would be no gamble. When the player has sent their seed to the casino, the bet has been made, and the casino reveals their seed (which we can verify with the hashed value) and we know who won and who lost.
+Importantly the casino should give out the seed encoded with a ◊def[hash-functions]{cryptographic hash function}, otherwise the player can just pick the winning seed and there would be no gamble. When the player has sent their seed to the casino, the bet has been made, and the casino reveals their seed (which we can verify with the hashed value) and we know who won and who lost.
 
 Concretely a game could play out like this:
 
@@ -204,7 +214,4 @@ This is how cryptocurrencies can improve the way we gamble.
 ◊note-pos[#:top -16]{programmable-money}
 ◊note-pos[#:top -6]{timeout}
 
-
-◊(define embedding-data "/extensions.html#embedding-data")
-◊(define timestamping-service "/timestamping_service.html")
 

@@ -9,13 +9,13 @@
 This chapter serves as an introduction to the cryptographic terms and constructs mentioned in the book. The aim is to give you an idea of what they are and how they might be used in a cryptocurrency context. I won't go into low-level details of how they work, so you don't need to know any mathematics or programming to follow along. If this interests you, I hope this introduction will be helpful as a starting point when researching the topics on your own.◊sn{history}
 
 ◊ndef["history"]{
-    If the history of cryptography interests you I can also recommend the book ◊link[code-breakers-book #:quote #t]{The Code-Breakers} by David Kahn. You can enjoy it even without much math knowledge.
+    If the history of cryptography interests you I can also recommend the book ◊(book-link code-breakers-book) by David Kahn. You can enjoy it even without much math knowledge.
 }
 
 
 ◊subhead{Hash functions}
 
-Hash functions, or to be more precise ◊def[#:src cryptographic-hash-functions]{cryptographic hash functions}, are commonly used in the cryptocurrency space.◊mn{cryptographic?} They're used as the basis of proof-of-work, to verify the integrity of downloaded files and we used them when we created ◊link[timestamping-service]{a timestamped message}.
+Hash functions, or to be more precise ◊def[cryptographic-hash-functions]{cryptographic hash functions}, are commonly used in the cryptocurrency space.◊mn{cryptographic?} They're used as the basis of proof-of-work, to verify the integrity of downloaded files and we used them when we created ◊link[timestamping_service]{a timestamped message}.
 
 ◊ndef["cryptographic?"]{
     The difference between a cryptographic hash function and a normal hash function is that a cryptographic hash function is created to make finding the reverse of it difficult, and it should be infeasible to find two values with the same hash (called a ◊def{collision}).
@@ -87,7 +87,7 @@ If you want to give up and see what I encoded in the hash, ◊toggle[iron-man]{c
 
 ◊subhead{Public-key cryptography}
 
-If you jump into the mathematical definitions of ◊def[#:src public-key-cryptography]{public-key cryptography} it might look very complicated. While some details are complicated, the cryptography is conceptually simple; it's a digital version of a locked mailbox.
+If you jump into the mathematical definitions of ◊def[public-key-cryptography]{public-key cryptography} it might look very complicated. While some details are complicated, the cryptography is conceptually simple; it's a digital version of a locked mailbox.
 
 ◊img[#:src "/images/mailbox.png"]{
     A locked mailbox.
@@ -125,9 +125,21 @@ I won't go into details on how the mathematics behind this scheme work, as I'm n
     Bitcoin uses another, arguably more secure, scheme called ◊link[ecdsa]{ECDSA}, which uses ◊link[elliptic-curve]{elliptic-curve cryptography}.
 }
 
-◊(define rsa "https://en.wikipedia.org/wiki/RSA_(cryptosystem)")
-◊(define elliptic-curve "https://en.wikipedia.org/wiki/Elliptic-curve_cryptography")
-◊(define ecdsa "https://en.wikipedia.org/wiki/Elliptic_Curve_Digital_Signature_Algorithm")
+◊(define rsa
+   (x-ref
+     "2020-02-27"
+     "https://en.wikipedia.org/wiki/RSA_(cryptosystem)"
+     "Wikipedia: RSA (cryptosystem)"))
+◊(define elliptic-curve
+   (x-ref
+     "2020-02-27"
+     "https://en.wikipedia.org/wiki/Elliptic-curve_cryptography"
+     "Wikipedia: Elliptic curve cryptography"))
+◊(define ecdsa
+   (x-ref
+     "2020-02-27"
+     "https://en.wikipedia.org/wiki/Elliptic_Curve_Digital_Signature_Algorithm"
+     "Wikipedia: Elliptic Curve Digital Signature Algorithm"))
 
 
 We will look at public-key cryptography in practice when we look at how Bitcoin addresses work.
@@ -161,7 +173,11 @@ The ◊strong{private key} to this address looks like this:
 
 The private key is just a large number and can be be displayed in different ways. Here's the same key in the ◊link[wif]{Wallet Import Format}, which is shorter and includes error checking codes:
 
-◊(define wif "https://en.bitcoin.it/wiki/Wallet_import_format")
+◊(define wif
+   (x-ref
+     "2020-02-27"
+     "https://en.bitcoin.it/wiki/Wallet_import_format"
+     "Wallet import format"))
 
 ◊code{5JSfRE8qNQZTtdwuRx6pxVohC3C3VeAHvzKvLsZWHEGPdW2zF3o}
 
@@ -231,7 +247,11 @@ Which only I can ◊strong{decrypt} to the original message. (Since I've given o
 ◊; bitcoincash address: bitcoincash:qpwk83ew0xwpe87mmm9v43nvzj2y4d783cmv7ayctd
 
 
-◊(define pgp "https://en.wikipedia.org/wiki/Pretty_Good_Privacy")
+◊(define pgp
+   (x-ref
+     "2020-02-27"
+     "https://en.wikipedia.org/wiki/Pretty_Good_Privacy"
+     "Wikipedia: Pretty Good Privacy"))
 
 ◊subhead{Seeds}
 
@@ -258,7 +278,7 @@ In addition to being easy to use, seeds act as a starting point in deterministic
 Giving out a new address each time you receive money is useful for privacy purposes, as it makes it harder to connect your transactions with your identity. This is why all modern wallets generates a new address each time you press receive.
 
 ◊ndef["pseudo-random"]{
-    See the discussion about ◊link[pseudo-random-generators]{pseudo-random generators} in the chapter about ◊link[gambling]{provably fair gambling} for some theory of how it might be possible to generate a set of random-looking outputs from a seed.
+    See the discussion about ◊link[seeds-and-pseudo-random-generators]{pseudo-random generators} in the chapter about ◊link[provably_fair_gambling]{provably fair gambling} for some theory of how it might be possible to generate a set of random-looking outputs from a seed.
 }
 
 ◊note-pos[#:top -9]{pseudo-random}
@@ -296,12 +316,29 @@ Therefore it's of utmost importance for you to backup and protect your seed. Ide
 
 Does this sound too difficult? It's true, there are many pitfalls and it's easy to do a bad job. But in practice, for reasonably small amounts, it's enough just to write down your seed somewhere.
 
-◊(define sha-2 "https://en.wikipedia.org/wiki/SHA-2")
-◊(define sha-1 "https://en.wikipedia.org/wiki/SHA-1")
-◊(define timestamping-service "/timestamping_service.html")
-◊(define bitcoin-hashrate "https://bitinfocharts.com/comparison/bitcoin-hashrate.html")
-◊(define public-key-cryptography "https://en.wikipedia.org/wiki/Public-key_cryptography")
-◊(define bip-39 "https://github.com/bitcoin/bips/blob/master/bip-0039/bip-0039-wordlists.md")
-◊(define pseudo-random-generators "/provably_fair_gambling.html#seeds-and-pseudo-random-generators")
-◊(define gambling "/provably_fair_gambling.html")
+◊(define sha-2
+   (x-ref
+     "2020-02-27"
+     "https://en.wikipedia.org/wiki/SHA-2"
+     "Wikipedia: SHA-2"))
+◊(define sha-1
+   (x-ref
+     "2020-02-27"
+     "https://en.wikipedia.org/wiki/SHA-1"
+     "Wikipedia: SHA-1"))
+◊(define bitcoin-hashrate
+   (x-ref
+     "2020-02-27"
+     "https://bitinfocharts.com/comparison/bitcoin-hashrate.html"
+     "Bitcoin Hashrate historical chart"))
+◊(define public-key-cryptography
+   (x-ref
+     "2020-02-27"
+     "https://en.wikipedia.org/wiki/Public-key_cryptography"
+     "Wikipedia: Public-key cryptography"))
+◊(define bip-39
+   (x-ref
+     "2020-02-27"
+     "https://github.com/bitcoin/bips/blob/master/bip-0039/bip-0039-wordlists.md"
+     "BIP-39 wordlists"))
 

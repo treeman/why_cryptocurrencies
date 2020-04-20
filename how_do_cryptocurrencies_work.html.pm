@@ -10,7 +10,7 @@ This is my attempt to explain how a standard cryptocurrency like Bitcoin works. 
 
 As stated in the introduction the focus isn't on technical details, but it's a hard balance to make between keeping it simple and explaining how cryptocurrencies work. If this chapter is too technical you can safely skip to the ◊link[next-chapter]{next chapter} or just read ◊link[summary]{the summary}---it's not required knowledge.
 
-◊(define summary "#summary")
+◊(define summary `("#summary" "Summary"))
 
 ◊note-pos[#:top -11]{others}
 
@@ -61,7 +61,7 @@ To be able to create a transaction you need to have the ◊em{private keys} to t
     You typically don't use the private key directly. Instead you can interact with a ◊em{seed}, which encodes the private key hash into a human-readable format. It's commonly made of 12 or 24 words.
 }
 
-It uses ◊link[public-key-cryptography]{◊em{public-key cryptography}} which allows you to prove you control the private key without sharing the private key itself. Compare it to credit card numbers which act as both a private and public key.  See ◊link[intro-crypto]{a hitchhiker's guide to cryptography} in the appendix for more details, but it's not required to understand how cryptocurrencies work on a higher level.
+It uses ◊def[public-key-cryptography]{public-key cryptography} which allows you to prove you control the private key without sharing the private key itself. Compare it to credit card numbers which act as both a private and public key.  See ◊link[cryptography_intro]{a hitchhiker's guide to cryptography} in the appendix for more details, but it's not required to understand how cryptocurrencies work on a higher level.
 
 ◊note-pos[#:top -11.5]{private-key}
 
@@ -113,7 +113,7 @@ This isn't really a problem with physical cash since you can't just copy gold co
 
 To resolve double spending it's enough to choose one of double spending transactions. But how do you do that when there are many unrelated people---some who wants to cheat?
 
-This is the same problem as the ◊link[byzantine-generals]{◊em{Byzantine Generals Problem}}. Here's my description of a simple variation:
+This is the same problem as the ◊def[byzantine-generals]{Byzantine Generals Problem}. Here's my description of a simple variation:
 
 ◊div[#:class "story"]{
 In the Eastern Roman Empire, also referred to as the Byzantine Empire, a couple of generals surround an enemy city:
@@ -129,7 +129,7 @@ If they try to act without a majority they will for sure get defeated, they must
 This would be very easy if they could trust each other. Unfortunately they cannot trust the messages---either the messenger or the message itself could be replaced---and even some of the generals could be traitors.◊sn{cryptography}
 
 ◊ndef["cryptography"]{
-    One countermeasure is to ◊def[#:src public-key-cryptography]{encrypt} messages. Unfortunately it doesn't protect against a traitor who knows the code, like one of the generals. Also in ancient times encryption weren't very advanced and could possibly be broken, see the ◊link[ceasar-cipher]{Ceasar cipher} as an example.
+    One countermeasure is to ◊def[public-key-cryptography]{encrypt} messages. Unfortunately it doesn't protect against a traitor who knows the code, like one of the generals. Also in ancient times encryption weren't very advanced and could possibly be broken, see the ◊link[ceasar-cipher]{Ceasar cipher} as an example.
 }
 
 
@@ -143,16 +143,28 @@ This would be very easy if they could trust each other. Unfortunately they canno
 To relate it back to cryptocurrencies the choice between "attack" and "retreat" is similar to choosing between two transactions in a double spend. You know there are bad actors (like Sneaky Steve) but who can you trust?◊sn{bft}
 
 ◊ndef["bft"]{
-    The resistance to this kind of problem is called ◊def[#:src bft]{Byzantine fault tolerance (BFT)}. There's a big difference between systems with known actors and systems with unknown actors, like with cryptocurrencies, but they both fall under the BFT umbrella.
+    The resistance to this kind of problem is called ◊def[bft]{Byzantine fault tolerance (BFT)}. There's a big difference between systems with known actors and systems with unknown actors, like with cryptocurrencies, but they both fall under the BFT umbrella.
 }
 
 ◊note-pos[#:top -58]{cryptography}
 ◊note-pos{bft}
 
 
-◊(define bft "https://en.wikipedia.org/wiki/Byzantine_fault")
-◊(define ceasar-cipher "http://practicalcryptography.com/ciphers/caesar-cipher/")
-◊(define byzantine-generals "https://www.microsoft.com/en-us/research/publication/byzantine-generals-problem/")
+◊(define bft
+  (x-ref
+    "2019-05-03"
+    "https://en.wikipedia.org/wiki/Byzantine_fault"
+    "Wikipedia: Byzatine Fault"))
+◊(define ceasar-cipher
+  (x-ref
+    "2019-05-03"
+    "http://practicalcryptography.com/ciphers/caesar-cipher/"
+    "Caesar Cipher"))
+◊(define byzantine-generals
+  (x-ref
+    "2019-05-03"
+    "https://www.microsoft.com/en-us/research/publication/byzantine-generals-problem/"
+    "The Byzantine Generals Problem"))
 
 
 ◊subhead{Sybil attack}
@@ -204,7 +216,7 @@ The work is to find a solution to a computing problem.◊sn{asics} The problem i
     }
 }
 
-◊def[#:src cryptographic-hash-functions]{Cryptographic hash functions} are excellent choices, Bitcoin uses SHA-256 for example. See the ◊link[hash-functions]{introduction to hashes} in the appendix for more details. For an in-depth explanation of Bitcoin's proof-of-work I recommend ◊link[mine-pen-paper]{this post (2014)}, which shows how to mine Bitcoin with pen and paper.
+◊def[cryptographic-hash-functions]{Cryptographic hash functions} are excellent choices, Bitcoin uses SHA-256 for example. See the ◊link[hash-functions]{introduction to hashes} in the appendix for more details. For an in-depth explanation of Bitcoin's proof-of-work I recommend ◊link[mine-pen-paper]{this post (2014)}, which shows how to mine Bitcoin with pen and paper.
 
 A solution is proof that you've done the work---it's proof that you've expended energy. It's like a lottery and you can get lucky, but in the long run it balances out.  Since you require a significant investment to find a block this can be used as sybil resistance. You can't just create thousands of fake identities for free.
 
@@ -213,8 +225,6 @@ Important to note is that everyone doesn't have to be a miner. The blockchain is
 ◊note-pos[#:top -65]{valid}
 ◊note-pos[#:top -60]{asics}
 ◊note-pos[#:top -48]{useful-pow}
-
-◊(define intro-crypto "/cryptography.html")
 
 ◊ndef["asics"]{
     In Bitcoin specialized hardware, ◊link[ASICs]{ASICs}, are used which are many magnitudes faster than regular computers at solving POW problems.
@@ -228,11 +238,31 @@ Important to note is that everyone doesn't have to be a miner. The blockchain is
     Additionally if there was a useful side-effect it might alter the economic incentives of mining. If mining is purely done to secure a cryptocurrency then the miners investment rests on the success of the cryptocurrency. A secondary use for specialized mining hardware lessens the incentive to secure the chain.
 }
 
-◊(define protein-folding "https://en.wikibooks.org/wiki/Structural_Biochemistry/Proteins/Protein_Folding_Problem")
-◊(define ASICs "https://en.wikipedia.org/wiki/Application-specific_integrated_circuit")
-◊(define royal-flush "https://www.mathcelebrity.com/5cardbasic.php?hand=AAKQJ&pl=Royal+Flush")
-◊(define primes "https://whatis.techtarget.com/definition/prime-number")
-◊(define mine-pen-paper "http://www.righto.com/2014/09/mining-bitcoin-with-pencil-and-paper.html")
+◊(define protein-folding
+  (x-ref
+    "2019-05-03"
+    "https://en.wikibooks.org/wiki/Structural_Biochemistry/Proteins/Protein_Folding_Problem"
+    "Wikibooks: Structural Biochemistry/Proteins/Protein Folding Problem"))
+◊(define ASICs
+  (x-ref
+    "2019-05-03"
+    "https://en.wikipedia.org/wiki/Application-specific_integrated_circuit"
+    "Wikipedia: Application-specific integrated circuit"))
+◊(define royal-flush
+  (x-ref
+    "2019-05-03"
+    "https://www.mathcelebrity.com/5cardbasic.php?hand=AAKQJ&pl=Royal+Flush"
+    "Probability of Royal Flush"))
+◊(define primes
+  (x-ref
+    "2019-05-03"
+    "https://whatis.techtarget.com/definition/prime-number"
+    "Prime Number"))
+◊(define mine-pen-paper
+  (x-ref
+    "2019-05-03"
+    "http://www.righto.com/2014/09/mining-bitcoin-with-pencil-and-paper.html"
+    " Mining Bitcoin with pencil and paper: 0.67 hashes per day "))
 
 
 ◊subhead{The blockchain}
@@ -242,7 +272,7 @@ When a miner finds a solution she can then update the ledger by adding a block t
 A blockchain is what it sounds like: a chain of blocks where a new block builds on previous blocks. When a miner searches for a solution she must target a block on a specific height---the POW problem includes a reference to the previous block and it only fits at a specific position in the chain.◊sn[#:top -4]{specific-height} When a new block is added all miners need to work on a new problem targeting that block.
 
 ◊ndef["specific-height"]{
-    This is why ◊link["#forks"]{◊em{forks}} naturally happen.
+    This is why ◊def["#forks"]{forks} naturally happen.
 
     It's also a necessity to prevent miners from pooling blocks and using them to assemble a very long chain at a later date in an attempt to reverse transactions.
 }
@@ -289,11 +319,31 @@ The blockchain is duplicated, stored and maintained by many different people, yo
     One output is usually a ◊em{change output} where you send change back to one of your own addresses.
 }
 
-◊(define spv-jonald "https://medium.com/@jonaldfyookball/why-every-bitcoin-user-should-understand-spv-security-520d1d45e0b9")
-◊(define blockchair "https://blockchair.com/")
-◊(define blockchair-tx "https://blockchair.com/bitcoin/transaction/0c4c723ea0b78722a79c3e34fb714b92e5aac355041f490cd56937c14458d44f")
-◊(define blockchair-addr "https://blockchair.com/bitcoin/address/33esJQRYoc5V98bGxJi3sAQxQj3iAAVXSx")
-◊(define xmrchain "https://xmrchain.net/")
+◊(define spv-jonald
+  (x-ref
+    "2019-05-03"
+    "https://medium.com/@jonaldfyookball/why-every-bitcoin-user-should-understand-spv-security-520d1d45e0b9"
+    "Why Every Bitcoin User Should Understand “SPV Security”"))
+◊(define blockchair
+  (x-ref
+    "2019-05-03"
+    "https://blockchair.com/"
+    "Blockchair"))
+◊(define blockchair-tx
+  (x-ref
+    "2019-05-03"
+    "https://blockchair.com/bitcoin/transaction/0c4c723ea0b78722a79c3e34fb714b92e5aac355041f490cd56937c14458d44f"
+    "Blockchair: Transaction 0c4c723ea0b78722a79c3e34fb714b92e5aac355041f490cd56937c14458d44f"))
+◊(define blockchair-addr
+  (x-ref
+    "2019-05-03"
+    "https://blockchair.com/bitcoin/address/33esJQRYoc5V98bGxJi3sAQxQj3iAAVXSx"
+    "Blockchair: Address 33esJQRYoc5V98bGxJi3sAQxQj3iAAVXSx"))
+◊(define xmrchain
+  (x-ref
+    "2019-05-03"
+    "https://xmrchain.net/"
+    "xmrchain.net"))
 
 
 ◊subhead{Forks}
@@ -356,15 +406,19 @@ It works like this:
     After Sneaky Steve has walked away he releases his hidden chain of length four, which ◊strong{doesn't contain his payment to Honest Harry}.  Since the new chain is longer the old chain will get discarded and the payment to Honest Harry will also disappear. It will seem like the payment never happened.
 }
 
-This is a different type of double spend and it's the primary attack vector ◊link[wp]{the white paper} is concerned about. It's called a ◊link[51-attack]{◊em{51% attack}}, for reasons we'll soon explain.
+This is a different type of double spend and it's the primary attack vector ◊link[bitcoin_whitepaper]{the white paper} is concerned about. It's called a ◊def[51-attack]{51% attack}, for reasons we'll soon explain.
 
 ◊ndef["chargeback"]{
-    In the credit card world this type of fraud is called ◊link[chargeback-fraud]{chargeback fraud} or friendly fraud.
+    In the credit card world this type of fraud is called ◊link[charge-back-fraud]{charge back fraud} or friendly fraud.
 }
 
 ◊note-pos[#:top -70]{chargeback}
 
-◊(define 51-attack "https://www.investopedia.com/terms/1/51-attack.asp")
+◊(define 51-attack
+  (x-ref
+    "2019-05-03"
+    "https://www.investopedia.com/terms/1/51-attack.asp"
+    "Investopedia: 51% Attack"))
 
 
 ◊subhead{Transaction security}
@@ -372,13 +426,13 @@ This is a different type of double spend and it's the primary attack vector ◊l
 The deeper a transaction is in the blockchain---the more confirmations it has---the harder a transaction is to reverse.
 
 ◊img[#:src "/images/confirmations.png"]{
-    Confirmations for different blocks.  
+    Confirmations for different blocks.
     Each block added to the blockchain makes every existing block---and transactions---more secure.
 }
 
 Bitcoin's security isn't absolute but probabilistic. One way to think about it is to find one block you need to get lucky. To find more blocks you need to get lucky several times, which you have to do if you want to reverse a transaction with more confirmations.
 
-◊link[wp]{Bitcoin's white paper} goes into more details and recommends 6 confirmations---roughly one hour---to be sure you don't get defrauded. Today for most normal payments a single confirmation is enough.◊sn{0-conf}
+◊link[bitcoin_whitepaper]{Bitcoin's white paper} goes into more details and recommends 6 confirmations---roughly one hour---to be sure you don't get defrauded. Today for most normal payments a single confirmation is enough.◊sn{0-conf}
 
 A crucial mistake people make is to think more miners, or more energy used, means more transactions can be handled. This is not true. Miners ◊strong{only} care about securing the chain preventing transactions from being reversed.
 
@@ -397,7 +451,11 @@ In fact we could spend 100x more energy on mining and process the same amount of
     There is some correlation here. Because each transaction contains a fee the miner can claim, more transactions means the reward is bigger which supports more miners. But the reverse is not true, more energy does not mean higher transaction throughput.
 }
 
-◊(define z-forfeits "https://gist.github.com/awemany/619a5722d129dec25abf5de211d971bd")
+◊(define z-forfeits
+  (x-ref
+    "2019-05-03"
+    "https://gist.github.com/awemany/619a5722d129dec25abf5de211d971bd"
+    "Solving the 0-conf problem using forfeits"))
 
 
 ◊subhead{The 50% security assumption}
@@ -406,7 +464,7 @@ The whole system relies on a majority of miners being honest---it's the core sec
 
 Honest miners work for profit so they absolutely don’t want to risk their blocks being rejected by the other miners and lose their reward. Therefore the rational thing to do is to work on the longest chain.
 
-This means for Sneaky Steve to successfully reverse a transaction he needs to control more than half of all mining power---otherwise his hidden chain can never become the longest.  It's called a 51% attack because you need to control at least 51% of all mining power to pull it off consistently.◊sn{51-attack-btg}
+This means for Sneaky Steve to successfully reverse a transaction he needs to control more than half of all mining power---otherwise his hidden chain can never become the longest.  It's called a ◊def[51-attack]{51% attack} because you need to control at least 51% of all mining power to pull it off consistently.◊sn{51-attack-btg}
 
 This touches on the immutability of the blockchain. As long as more than 50% of miners don't want to change the chain it will always be longest and correct, but if they do then they can reverse transactions.
 
@@ -418,7 +476,11 @@ This touches on the immutability of the blockchain. As long as more than 50% of 
     This is the danger for smaller cryptocurrencies that don't have much mining power securing the chain. 51% attacking Bitcoin would be ◊strong{much} harder.
 }
 
-◊(define 51-btg "https://forum.bitcoingold.org/t/double-spend-attacks-on-exchanges/1362")
+◊(define 51-btg
+  (x-ref
+    "2019-05-03"
+    "https://forum.bitcoingold.org/t/double-spend-attacks-on-exchanges/1362"
+    "Bitcoin Gold: Double Spend Attacks on Exchanges "))
 
 
 ◊subhead{Economics of a 51% attack}
@@ -485,10 +547,26 @@ For example in a fork with two competing chains the most profitable move is to j
 
 It also doesn't make sense for a minority miner to try to double-spend, it will only cause them to lose money in the long run. Therefore only a miner with 51% can compromise the network security, and even then it might be more profitable to play by the rules.
 
-◊(define ghash "https://www.coindesk.com/bitcoin-mining-detente-ghash-io-51-issue")
-◊(define btc-hashrate "https://www.blockchain.com/charts/hash-rate")
-◊(define s9-hashrate "https://shop.bitmain.com/promote/antminer_s9i_asic_bitcoin_miner/specification")
-◊(define s9-cost "https://www.cryptocompare.com/mining/blokforge/antminer-s9i-14-ths/")
+◊(define ghash
+  (x-ref
+    "2019-05-03"
+    "https://www.coindesk.com/bitcoin-mining-detente-ghash-io-51-issue"
+    "The Bitcoin Mining Arms Race: GHash.io and the 51% Issue"))
+◊(define btc-hashrate
+  (x-ref
+    "2020-04-20"
+    "https://www.blockchain.com/charts/hash-rate"
+    "blockchain.com: Total Hash Rate (TH/s)"))
+◊(define s9-hashrate
+  (x-ref
+    "2020-04-20"
+    "https://shop.bitmain.com/promote/antminer_s9i_asic_bitcoin_miner/specification"
+    "Bitmain: Antminer S9i"))
+◊(define s9-cost
+  (x-ref
+    "2020-04-20"
+    "https://www.cryptocompare.com/mining/blokforge/antminer-s9i-14-ths/"
+    "CryptoCompare: Antminer S9I"))
 
 
 ◊subhead{Network upgrades and new cryptocurrencies}
@@ -506,7 +584,7 @@ There is another situation where forks can arise: when consensus rules are chang
 Some cryptocurrencies, for example Monero and Bitcoin Cash, have regular network upgrades where consensus rules are changed.◊sn{hard-soft}
 
 ◊ndef["hard-soft"]{
-    I've deliberatly simplified my usage of fork terminology. On a technical level it's useful to distinguish between two types of forks: ◊em{hard-forks} and ◊em{soft-forks}.
+    I've deliberatly simplified my usage of fork terminology. On a technical level it's useful to distinguish between two types of forks: ◊def{hard-forks} and ◊def{soft-forks}.
 
     A hard-fork is a backwards incompatible change and all nodes must upgrade to avoid ending up on the old chain. Bitcoin Cash forked off from Bitcoin using a hard-fork for example.
 
@@ -522,8 +600,6 @@ You may then wonder, what decides which is the correct chain? There is no clear 
 ◊note-pos[#:top -24]{hard-soft}
 
 
-◊(define dao "https://fullstacks.org/materials/ethereumbook/16_appdx-forks-history.html")
-
 ◊ndef["valid"]{
     Remember that to resolve double spending one transaction must be chosen, which one doesn't matter.
 }
@@ -531,20 +607,22 @@ You may then wonder, what decides which is the correct chain? There is no clear 
 
 ◊subhead{Alternative consensus models}
 
-There are alternatives to proof-of-work but none have so far been proven to work well. The most popular is ◊em{proof-of-stake} where instead of miners expending energy you have coin holders who vote.
+There are alternatives to proof-of-work but none have so far been proven to work well. The most popular is ◊def{proof-of-stake} where instead of miners expending energy you have coin holders who vote.
 
 One problem is the ◊link[nothing-at-stake]{nothing at stake problem} where a coin holder can vote on all forks while a proof-of-work miner can only vote on one of the forks.  It causes a situation where everyone are incentivized to vote on all forks. An attacker can abuse it to reverse a transaction by only mining on their fork, which is initially a block behind, to overtake the main chain and reverse their transaction. This only requires a small percentage of total voting power in contrast to proof-of-work where you need 50%.
 
-◊(define nothing-at-stake "https://ethereum.stackexchange.com/questions/2402/what-exactly-is-the-nothing-at-stake-problem")
+◊(define nothing-at-stake 
+  (x-ref
+    "2019-05-03"
+    "https://ethereum.stackexchange.com/questions/2402/what-exactly-is-the-nothing-at-stake-problem"
+    "Stackexchange: What exactly is the Nothing-At-Stake problem?"))
 
 
 ◊subhead{More details}
 
 The chapter became very long despite skipping out on details here and there. If you want to go deeper I encourage you to do more research on your own.
 
-◊link[wp]{Bitcoin's white paper} is always a good place to begin and there are many good resources online. I've tried to include key concepts which you can use as starting points in your search.
+◊link[bitcoin_whitepaper]{Bitcoin's white paper} is always a good place to begin and there are many good resources online. I've tried to include key concepts which you can use as starting points in your search.
 
-
-◊(define chargeback-fraud "https://en.wikipedia.org/wiki/Chargeback_fraud")
-◊(define next-chapter "/look_out_for_snake_oil.html")
+◊(define next-chapter snake_oil)
 

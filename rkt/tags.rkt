@@ -1,6 +1,8 @@
 #lang racket/base
 
-(require pollen/tag pollen/decode txexpr)
+(require racket/system)
+(require xml)
+(require pollen/core pollen/tag pollen/decode txexpr)
 (require racket/match racket/string racket/list)
 (require racket/format)
 (require racket/runtime-path)
@@ -9,27 +11,12 @@
 (require "decode.rkt")
 (require "links.rkt")
 (require "post-process.rkt")
-(require "pygments.rkt")
 (require "sidenotes.rkt")
 (require "string-process.rkt")
 (require "toc.rkt")
+(require "refs.rkt")
 
 (provide (all-defined-out))
-
-
-(define (xref? url)
-  (cond
-    ((regexp-match #rx"^https?://" url) #t)
-    (else #f)))
-
-(define (url? x)
-  (and
-    (string? x)
-    (or
-      (xref? x)
-      (regexp-match #rx"^#" x)
-      (regexp-match #rx"^/" x)
-      (regexp-match #rx"^mailto:" x))))
 
 (define (link #:class [c #f] #:quote [qt #f] . args)
   (match args
@@ -40,6 +27,19 @@
     [(list url text ..1)
      #:when (string? url)
      (apply make-link #:class c #:quote qt url text)]
+    [(list href text ..1)
+     #:when (href? href)
+     (apply make-link #:class (href-c href)
+                      #:title (href-title href)
+                      (href-url href)
+                      text)]
+    [(list href)
+     #:when (href? href)
+     (define url (href-url href))
+     (make-link #:class (href-c href)
+                #:title (href-title href)
+                url
+                url)]
     [(list url)
      #:when (string? url)
      (make-link #:class c #:quote qt url url)]
@@ -132,13 +132,26 @@
   (check-false (valid-iref? "blaha"))
   )
 
-
-(define (def #:src [src #f] . txt)
-  (if src
-    `(span ((class "def"))
-       ,(apply make-link src txt))
-    `(span ((class "def"))
-       ,@txt)))
+(define (def . args)
+  (match args
+    [(list url text ..1)
+     #:when (string? url)
+     `(em ((class "def"))
+        ,(apply link url text))]
+    [(list href text ..1)
+     #:when (href? href)
+     `(em ((class "def"))
+        ,(apply link href text))]
+    [(list book text ..1)
+     #:when (book? book)
+     `(em ((class "def"))
+        ,(apply link (book-href book) text))]
+    [_
+     #:when (list? args)
+     `(em ((class "def"))
+        ,@args)]
+    [_
+     (error (format "bad def args: '~a'" args))]))
 
 
 (define (subhead x)
@@ -148,9 +161,6 @@
 (define (subhead3 x)
    `(h3
      (a [[name ,(to-name x)]] ,x)))
-
-(define (to-name x)
-  (string-replace (string-downcase x) " " "-"))
 
 (define (li-plus . txt)
    `(li ((class "plus")) ,@txt))
@@ -262,36 +272,45 @@
      ,emphasis-text
      (footer ,@(add-between cite ", "))))
 
+
+(define (book-link book)
+  (make-link #:title (book-alt-text book)
+             #:quote #t
+             (book-url book)
+             (book-title book)))
+
+(define (book-qt book . txt)
+  (apply qt
+         #:author (book-author book)
+         #:src (book-title book)
+         #:url (book-href book)
+         #:quote-src #t
+         txt))
+
+(define (cite-book book)
+  `(cite ((class "book"))
+         "("
+         ,(book-author book)
+         ", "
+         ,(book-link book)
+         ")"))
+
 (define (icode . args)
   `(code ,@args))
 (define (code . args)
   `(pre (code ,@args)))
-(define (code-hl #:line-numbers? [line-numbers? #f]
-                 #:css-class [css-class "highlight"]
-                 #:lines [hl-lines null]
-                 lang . codelines)
-  (define code (string-append* codelines))
-  `(div
-     ,@(pygmentize code lang
-                   #:python-executable "python3"
-                   #:line-numbers? line-numbers?
-                   #:css-class css-class
-                   #:hl-lines hl-lines)))
 
 (define (file2string path)
   (port->string (open-input-file path)))
 
-(define (code-hl-file #:line-numbers? [line-numbers? #f]
-                      #:css-class [css-class "highlight"]
-                      #:lines [hl-lines null]
-                      lang path)
-  (define file (file2string path))
-  (code-hl
-         #:line-numbers? line-numbers?
-         #:css-class css-class
-         #:lines hl-lines
-         lang
-         file))
+(define (code-hl lang path)
+  (define cmd (string-append
+                "pygmentize -f html"
+                " -l " lang
+                " " path))
+  (string->xexpr
+    (with-output-to-string (λ () (system cmd)))))
+
 
 (define (sans . args)
   `(span ((class "sans")) ,@args))

@@ -14,7 +14,7 @@ If you want to accept digital payments today you need to partner with a payment 
     For example ◊link[chase-porn]{Chase closed hundreds of porn stars' accounts} and Wells Fargo ◊link[wells-fargo-supporter]{closed the bank account} of a supporter of medical marijuana.
 }
 
-This is the reality for certain businesses with high ◊link[chargeback-fraud]{charge back} rate or that exists in a legal and ◊link[porn-bank-moral]{moral} gray area. If you view it from the payment processor's point-of-view it might make sense---they're just minimizing their risk. But that's of little comfort to those being rejected.
+This is the reality for certain businesses with high ◊link[charge-back-fraud]{charge back} rate or that exists in a legal and ◊link[porn-bank-moral]{moral} gray area. If you view it from the payment processor's point-of-view it might make sense---they're just minimizing their risk. But that's of little comfort to those being rejected.
 
 Here are some examples of affected businesses:
 
@@ -30,8 +30,31 @@ Here are some examples of affected businesses:
     There are ◊link[banks-bitcoin]{many} ◊link[barclays-bitcoin]{stories} of banks closing down your account if they find out you've traded cryptocurrencies. Naturally without warning, explanation or recourse.
 }
 
-◊(define banks-bitcoin "https://www.ccn.com/banks-still-closing-accounts-bitcoin-activity")
-◊(define barclays-bitcoin "https://www.telegraph.co.uk/finance/personalfinance/investing/11537972/Barclays-closed-down-my-bank-account-after-Bitcoin-trade.html")
+◊(define chase-porn 
+  (x-ref
+    "2019-06-12"
+    "https://nypost.com/2014/04/28/chase-closes-the-accounts-of-hundreds-of-porn-stars/"
+    "Chase closes hundreds of porn stars’ accounts"))
+◊(define porn-bank-moral 
+  (x-ref
+    "2019-06-12"
+    "https://www.cnbc.com/id/100746445"
+    "Porn and Banks: Drawing a Line on Loans"))
+◊(define wells-fargo-supporter 
+  (x-ref
+    "2019-06-12"
+    "https://www.cnbc.com/2018/08/22/wells-fargo-closes-bank-account-of-candidate-who-supports-marijuana.html"
+    "A candidate backed medical marijuana. Wells Fargo closed her bank account. "))
+◊(define banks-bitcoin
+  (x-ref
+    "2019-06-12"
+    "https://www.ccn.com/banks-still-closing-accounts-bitcoin-activity"
+    "Australian Commission Investigates Banks Closing Bitcoin Companies’ Accounts"))
+◊(define barclays-bitcoin
+  (x-ref
+    "2019-06-12"
+    "https://www.telegraph.co.uk/finance/personalfinance/investing/11537972/Barclays-closed-down-my-bank-account-after-Bitcoin-trade.html"
+    "'Barclays closed down my bank account after Bitcoin trade'"))
 
 For whatever reason, these businesses are deemed high risk and undesirable; despite them being legal they might not be able to accept digital payments. This is something that cryptocurrencies solve.
 
@@ -42,7 +65,11 @@ Pot stores in the United States are in a weird legal place. While they're legal-
 
 Because banks in the US are regulated ◊link[us-bank-regulations]{both on a state and federal level}, banks don't want anything to do with them. Payment processors take a similar stance, forcing the stores to be entirely cash-only.◊sn{pot-banks}
 
-◊(define us-bank-regulations "https://en.wikipedia.org/wiki/Bank_regulation_in_the_United_States")
+◊(define us-bank-regulations
+  (x-ref
+    "2019-06-12"
+    "https://en.wikipedia.org/wiki/Bank_regulation_in_the_United_States"
+    "Bank regulation in the United States"))
 
 ◊ndef["pot-banks"]{
     Not having access to banks means they also have to store the cash themselves and have trouble getting loans.
@@ -61,10 +88,26 @@ Not having access to digital payments hurts, but there are workarounds. Cash doe
 ◊note-pos[#:top -26]{pot-banks}
 ◊note-pos[#:top -9]{atms}
 
-◊(define pot-banks-no "https://www.nytimes.com/2018/01/04/magazine/where-pot-entrepreneurs-go-when-the-banks-just-say-no.html")
-◊(define scat "https://en.wikipedia.org/wiki/Schr%C3%B6dinger%27s_cat")
-◊(define cannabis-legality "https://en.wikipedia.org/wiki/Legality_of_cannabis_by_U.S._jurisdiction")
-◊(define state-payment-cannabis "http://stayregular.net/blog/the-state-of-payment-processing-for-cannabis-e-commerce")
+◊(define pot-banks-no
+  (x-ref
+    "2019-06-12"
+    "https://www.nytimes.com/2018/01/04/magazine/where-pot-entrepreneurs-go-when-the-banks-just-say-no.html"
+    "Where Pot Entrepreneurs Go When the Banks Just Say No"))
+◊(define scat
+  (x-ref
+    "2019-06-12"
+    "https://en.wikipedia.org/wiki/Schr%C3%B6dinger%27s_cat"
+    "Schrödinger's cat"))
+◊(define cannabis-legality
+  (x-ref
+    "2019-06-12"
+    "https://en.wikipedia.org/wiki/Legality_of_cannabis_by_U.S._jurisdiction"
+    "Legality of cannabis by U.S. jurisdiction"))
+◊(define state-payment-cannabis
+  (x-ref
+    "2019-06-12"
+    "http://stayregular.net/blog/the-state-of-payment-processing-for-cannabis-e-commerce"
+    "The State of Payment Processing for Cannabis E-Commerce"))
 
 ◊;http://stayregular.net/blog/the-state-of-payment-processing-for-cannabis-e-commerce
 ◊;https://www.cardfellow.com/blog/credit-card-processing-for-marijuana-businesses/
@@ -79,7 +122,7 @@ But some "undesirable" companies do accept credit cards? Does that mean the prob
     There was a ◊link[programming-adult-blog]{popular blog post} detailing the struggles for porn sites to accept digital payments. The post itself has been deleted because of people ◊link[programming-adult-hn]{accusing him} of admitting to fraud (the workarounds are of dubious legality). If you're savvy you might be able to find the original post on the ◊link[wayback-machine]{Wayback machine}.
 }
 
-For example porn is a business with very high rate of ◊link[chargeback-fraud]{charge backs}. Just think about it: what happens if your significant other would come across a charge to "XXX-Teens" or similar? Of course you'd exclaim "my card must've been compromised!" and quickly call your bank to freeze your card and issue a charge back.
+For example porn is a business with very high rate of ◊link[charge-back-fraud]{charge backs}. Just think about it: what happens if your significant other would come across a charge to "XXX-Teens" or similar? Of course you'd exclaim "my card must've been compromised!" and quickly call your bank to freeze your card and issue a charge back.
 
 Therefore most payment processors ◊link[stripe-restricted]{explicitly forbid} porn sites, making it very difficult to accept credit cards directly.
 
@@ -94,7 +137,11 @@ Instead they have a third party request the payment on their behalf and do some 
     Another party acting as an intermediary might get accepted by the payment processor, especially if they disguise themselves.
 }
 
-◊(define stripe-restricted "https://stripe.com/restricted-businesses")
+◊(define stripe-restricted 
+  (x-ref
+    "2019-06-12"
+    "https://stripe.com/restricted-businesses"
+    "Stripe: Restricted Businesses—Sweden"))
 
 These things are on the gray area legal wise,◊sn{legal?} so the companies that does this have high fees---VERY high fees. While regular payment processors may have ~3-4% fees, these intermediary fees can be as high as ◊strong{30%}. That's ludicrously expensive for low margin businesses.
 
@@ -105,17 +152,28 @@ These things are on the gray area legal wise,◊sn{legal?} so the companies that
 }
 
 
-◊(define wayback-machine "https://archive.org/web/web.php")
-◊(define programming-adult-blog "https://dev.to/jwoertink/programming-in-the-adult-entertainment-industry-is-broken-hgn")
-◊(define programming-adult-blog-wayback "https://web.archive.org/web/20180814120031/https://dev.to/jwoertink/programming-in-the-adult-entertainment-industry-is-broken-hgn")
-◊(define programming-adult-hn "https://news.ycombinator.com/item?id=17756219")
+◊(define programming-adult-blog 
+  (x-ref
+    "2019-06-12"
+    "https://dev.to/jwoertink/programming-in-the-adult-entertainment-industry-is-broken-hgn"
+    "Programming in the Adult Entertainment Industry is Broken"))
+◊(define programming-adult-blog-wayback 
+  (x-ref
+    "2019-06-12"
+    "https://web.archive.org/web/20180814120031/https://dev.to/jwoertink/programming-in-the-adult-entertainment-industry-is-broken-hgn"
+    "Programming in the Adult Entertainment Industry is Broken (Wayback Machine)"))
+◊(define programming-adult-hn 
+  (x-ref
+    "2019-06-12"
+    "https://news.ycombinator.com/item?id=17756219"
+    "Hacker News: Programming in the Adult Entertainment Industry Is Broken"))
 
 
 ◊subhead{Why does it matter?}
 
 ◊qt[#:author "Martin Niemöller"
     #:src "a poetic form of a post-war confession"
-    #:url "https://en.wikipedia.org/wiki/First_they_came%E2%80%A6"]{
+    #:url post-war]{
     First they came for the socialists, and I did not speak out---
         ◊tab{because I was not a socialist.}
 
@@ -128,6 +186,12 @@ These things are on the gray area legal wise,◊sn{legal?} so the companies that
     Then they came for me---
         ◊tab{and there was no one left to speak for me.}
 }
+
+◊(define post-war
+   (x-ref
+      "2019-06-12"
+      "https://en.wikipedia.org/wiki/First_they_came%E2%80%A6"
+      "Wikipedia: First they came ..."))
 
 ◊(define (tab . txt)
    `(span ((class "qt-tab")) ,@txt))
@@ -147,22 +211,29 @@ You might wonder what does it matter if these businesses disappear. Maybe you do
 }
 
 
-The cannabis business is experiencing ◊link[cannabis-growth]{explosive growth}, hinting at how many people do care. Porn is another thing that is very popular---but very few would admit they watch it. I can see why some people object against them... But what's the problem with auctions? (Other than being an easy target for ◊link[rel-charge-back-fraud]{charge back fraud}.)
+The cannabis business is experiencing ◊link[cannabis-growth]{explosive growth}, hinting at how many people do care. Porn is another thing that is very popular---but very few would admit they watch it. I can see why some people object against them... But what's the problem with auctions? (Other than being an easy target for ◊link[charge-back-fraud]{charge back fraud}.)
 
-Why should people running and using ◊strong{legal} businesses be punished for arbitrary reasons? A society that punishes people for doing something legal seems insane to me. (Yes, legality is different from morality, a topic we'll revisit in the chapter about ◊link[darknet-markets]{darknet markets}.)
+Why should people running and using ◊strong{legal} businesses be punished for arbitrary reasons? A society that punishes people for doing something legal seems insane to me. (Yes, legality is different from morality, a topic we'll revisit in the chapter about ◊link[darknet_markets]{darknet markets}.)
 
 ◊note-pos[#:top -20]{privacy}
 
-◊(define re-education "https://www.amnesty.org/en/latest/news/2018/09/china-up-to-one-million-detained/")
-◊(define cannabis-growth "https://www.marijuanaseo.com/cannabis-industry-statistics/")
-◊(define darknet-markets "/darknet_markets.html")
+◊(define re-education 
+  (x-ref
+    "2019-06-12"
+    "https://www.amnesty.org/en/latest/news/2018/09/china-up-to-one-million-detained/"
+    "Up to one million detained in China’s mass “re-education” drive"))
+◊(define cannabis-growth 
+  (x-ref
+    "2019-06-12"
+    "https://www.marijuanaseo.com/cannabis-industry-statistics/"
+    "32 Incredible Cannabis Industry Statistics 2020"))
 
 
 ◊subhead{Are cryptocurrencies the solution?}
 
 Cryptocurrencies give you permissionless digital payments---it solves the problem of accepting payments very well. But it's not a full solution, at least today.
 
-As we discussed in ◊link[are-cryptos-money]{Are cryptocurrencies money?} they're very volatile and not widely accepted. Businesses still need to convert cryptocurrencies to fiat to be able to pay their bills and salaries, and the workers in turn need to pay their bills. To sell them for fiat you still need to go through exchanges who---you guessed it---can ◊link[coinbase-close-accounts]{refuse to do business with you}.◊sn{localbitcoins}
+As we discussed in ◊link[are_cryptocurrencies_money]{Are cryptocurrencies money?} they're very volatile and not widely accepted. Businesses still need to convert cryptocurrencies to fiat to be able to pay their bills and salaries, and the workers in turn need to pay their bills. To sell them for fiat you still need to go through exchanges who---you guessed it---can ◊link[coinbase-close-accounts]{refuse to do business with you}.◊sn{localbitcoins}
 
 While cryptocurrencies improves the situation today, we would really need to bypass all third-parties for a great solution. This means you should be able to pay all expenses with cryptocurrencies---so you can't get blocked by a third party anywhere on the line.
 
@@ -173,15 +244,21 @@ But there are related problems cryptocurrencies can't solve. Banks serve a very 
 }
 
 
-◊(define chargeback-fraud "/cheaper_faster.html#charge-back-fraud")
-◊(define chase-porn "https://nypost.com/2014/04/28/chase-closes-the-accounts-of-hundreds-of-porn-stars/")
-◊(define porn-bank-moral "https://www.cnbc.com/id/100746445")
-◊(define wells-fargo-supporter "https://www.cnbc.com/2018/08/22/wells-fargo-closes-bank-account-of-candidate-who-supports-marijuana.html")
-◊(define are-cryptos-money "/are_cryptocurrencies_money.html")
-◊(define coinbase-close-accounts "https://news.bitcoin.com/coinbase-and-its-troubling-history-of-customer-account-closures/")
-◊(define localbitcoins "https://localbitcoins.com/")
-◊(define local.bitcoin.com "https://local.bitcoin.com/")
-◊(define rel-charge-back-fraud "#charge-back-fraud")
+◊(define coinbase-close-accounts 
+  (x-ref
+    "2019-06-12"
+    "https://news.bitcoin.com/coinbase-and-its-troubling-history-of-customer-account-closures/"
+    "Coinbase and Its Troubling History of Customer Account Closures"))
+◊(define localbitcoins 
+  (x-ref
+    "2019-06-12"
+    "https://localbitcoins.com/"
+    "LocalBitcoins.com: Buy and sell bitcoins near you"))
+◊(define local.bitcoin.com 
+  (x-ref
+    "2019-06-12"
+    "https://local.bitcoin.com/"
+    "Bitcoin.com Local:  Bitcoin Cash for everyone."))
 
 ◊;https://www.engadget.com/2015/12/02/paypal-square-and-big-bankings-war-on-the-sex-industry/?guccounter=1
 

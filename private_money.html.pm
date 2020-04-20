@@ -8,17 +8,24 @@
 
 
 ◊epigraph{
-  ◊qt[#:author "Edward Snowden" #:date "May 21, 2015"
-      #:url "https://www.reddit.com/r/IAmA/comments/36ru89/just_days_left_to_kill_mass_surveillance_under/crglgh2/"]{
+  ◊qt[#:author "Edward Snowden"
+      #:date "May 21, 2015"
+      #:url snowden-ama]{
     Arguing that you don't care about the right to privacy because you have nothing to hide is no different than saying you don't care about free speech because you have nothing to say.
   }
 }
+
+◊(define snowden-ama
+  (x-ref
+    "2019-12-09"
+    "https://www.reddit.com/r/IAmA/comments/36ru89/just_days_left_to_kill_mass_surveillance_under/crglgh2/"
+    "Edward Snowden on Reddit"))
 
 The erosion of personal privacy is one of the many important issues in today's society. Everything we do digitally is tracked---what sites we visit, how long and what we do there. This data is then packaged and stored, waiting to be used to convince us to buy stuff or used to attack us. Even what we do with our own money is tracked and used to figure out how to separate it from us.
 
 One of the very good things about cash---physical coins or bills---is that there's very little tracking on them. You can buy things with them, or give them to someone, and nobody else needs to know about it. Unfortunately people aren't using cash as much anymore, some have even stopped accepting cash, and all commonly used alternatives come with the privacy trade-off.
 
-Cryptocurrencies can help us with this---they're digital and just like cash they can be ◊link[private]{used privately}.◊sn{vpn}
+Cryptocurrencies can help us with this---they're digital and just like cash they can be ◊link[private_property]{used privately}.◊sn{vpn}
 
 ◊ndef["vpn"]{
     For instance if you want to purchase a VPN, a domain or a VPS anonymously it's probably a good idea to use cryptocurrencies.
@@ -76,7 +83,11 @@ If you don't recognize the situation please watch the scene where Hugh Grant pla
     And what's worse than having someone catching you in the act?
 }
 
-◊(define love-actually-dance "https://www.youtube.com/watch?v=aUm2K6eDuMU")
+◊(define love-actually-dance
+   (x-ref
+     "2019-12-09"
+     "https://www.youtube.com/watch?v=aUm2K6eDuMU"
+     "Love Actually - Hugh Grant dancing (1 min)"))
 
 I have a child who's two years old, and even he wants privacy sometimes. He likes to build a cabin made of pillows and hide in it, and if I disturb him he pushes me and shouts “Go away!”. After we recently renovated his room he was ◊em{so happy} that he had a room of his own again, which he likes to be alone in when he's pooping (yes he uses diapers).◊sn{children-privacy}
 
@@ -88,9 +99,16 @@ People may say privacy don't matter, yet their actions tell a different story. F
 
 After all we don't have curtains or blinders on our windows because we do something illegal, it's because we want control over our privacy.
 
-◊(define identity-theft "https://www.forbes.com/sites/laurashin/2014/11/18/someone-had-taken-over-my-life-an-identity-theft-victims-story/")
-◊(define zuckerberg-buy-privacy "https://www.inquisitr.com/989057/facebooks-zuckerberg-buys-his-neighborhood-because-get-this-he-wants-privacy/")
-◊(define zuckerberg-privacy-not-norm "https://www.theguardian.com/technology/2010/jan/11/facebook-privacy")
+◊(define zuckerberg-buy-privacy
+   (x-ref
+     "2019-12-09"
+     "https://www.inquisitr.com/989057/facebooks-zuckerberg-buys-his-neighborhood-because-get-this-he-wants-privacy/"
+     "Facebook’s Zuckerberg Buys His Neighborhood Because, Get This, He Wants Privacy"))
+◊(define zuckerberg-privacy-not-norm
+   (x-ref
+     "2019-12-09"
+     "https://www.theguardian.com/technology/2010/jan/11/facebook-privacy"
+     "Privacy no longer a social norm, says Facebook founder"))
 
 
 ◊subhead3{Personal security}
@@ -122,9 +140,21 @@ Caring about privacy is a natural instinct---for good reason. It's not just abou
     Sometimes the questions are darker, like what's the most effective way to destroy someones life. Stealing their identity have to be one of the top candidates.
 }
 
-◊(define identity-theft-story "https://www.forbes.com/sites/laurashin/2014/11/18/someone-had-taken-over-my-life-an-identity-theft-victims-story/")
-◊(define windfall "https://www.reddit.com/r/personalfinance/wiki/windfall")
-◊(define windfall-happy "https://www.reddit.com/r/AskReddit/comments/24vo34/whats_the_happiest_5word_sentence_you_could_hear/chb4v05/?context=1")
+◊(define identity-theft-story
+   (x-ref
+     "2019-12-09"
+     "https://www.forbes.com/sites/laurashin/2014/11/18/someone-had-taken-over-my-life-an-identity-theft-victims-story/"
+     "'Someone Had Taken Over My Life': An Identity Theft Victim's Story"))
+◊(define windfall
+   (x-ref
+     "2019-12-09"
+     "https://www.reddit.com/r/personalfinance/wiki/windfall"
+     "Windfall - r/personalfinance"))
+◊(define windfall-happy
+   (x-ref
+     "2019-12-09"
+     "https://www.reddit.com/r/AskReddit/comments/24vo34/whats_the_happiest_5word_sentence_you_could_hear/chb4v05/?context=1"
+     "Reddit: What's the happiest 5-word sentence you could hear?"))
 
 
 ◊subhead3{Others have important things to hide}
@@ -169,11 +199,26 @@ As Snowden's quote in the beginning of the chapter says: just because you choose
 ◊note-pos[#:top -45]{focus-economic}
 ◊note-pos[#:top -18]{porn-story}
 
-◊(define teenage-pregnancy "https://www.nytimes.com/2012/02/19/magazine/shopping-habits.html?pagewanted=all&_r=0")
-◊(define murder-family-honor "https://www.nationalgeographic.com/culture/2002/02/thousands-of-women-killed-for-family-honor/")
-◊(define dowry-murder "https://en.wikipedia.org/wiki/Dowry_system_in_India#Dowry_murder")
-◊(define gay-illegal "https://www.theguardian.com/world/2016/jun/21/gay-lgbt-muslim-countries-middle-east")
-◊(define china-social-credit "https://www.inkstonenews.com/china/chinas-13-million-discredited-individuals-face-discrimination-thanks-social-credit-system/article/3003319")
+◊(define teenage-pregnancy
+   (x-ref
+     "2019-12-09"
+     "https://www.nytimes.com/2012/02/19/magazine/shopping-habits.html?pagewanted=all&_r=0"
+     "How Companies Learn Your Secrets"))
+◊(define murder-family-honor
+   (x-ref
+     "2019-12-09"
+     "https://www.nationalgeographic.com/culture/2002/02/thousands-of-women-killed-for-family-honor/"
+     "Thousands of Women Killed for Family \"Honor\"2019-12-09"))
+◊(define dowry-murder
+   (x-ref
+     "2019-12-09"
+     "https://en.wikipedia.org/wiki/Dowry_system_in_India#Dowry_murder"
+     "Wikipedia: Dowry murder"))
+◊(define gay-illegal
+   (x-ref
+     "2019-12-09"
+     "https://www.theguardian.com/world/2016/jun/21/gay-lgbt-muslim-countries-middle-east"
+     "Everything you need to know about being gay in Muslim countries"))
 
 
 ◊subhead3{Privacy is a human right}
@@ -181,9 +226,15 @@ As Snowden's quote in the beginning of the chapter says: just because you choose
 That privacy is important is widely acknowledged. It is for example recognized as a human right by the United Nations, along with the right to food, clothing and medical care:
 
 ◊qt[#:src "Universal Declaration of Human Rights"
-    #:url "https://www.un.org/en/universal-declaration-human-rights/"]{
+    #:url un-human-rights]{
   No one shall be subjected to arbitrary interference with his privacy, family, home or correspondence, nor to attacks upon his honour and reputation. Everyone has the right to the protection of the law against such interference or attacks.
 }
+
+◊(define un-human-rights
+   (x-ref
+     "2019-12-09"
+     "https://www.un.org/en/universal-declaration-human-rights/"
+     "Universal Declaration of Human Rights"))
 
 Children's right to privacy is also acknowledged by UNICEF:◊sn{adult-version}
 
@@ -191,19 +242,35 @@ Children's right to privacy is also acknowledged by UNICEF:◊sn{adult-version}
     I was going to quote the ◊link[child-rights-adult]{grown-up version} of the children's rights, but they use a muddy language that's difficult to read.
 }
 
-◊(define child-rights-adult "https://www.unicef.org/child-rights-convention/convention-text")
-
 ◊qt[#:src "Convention on the Rights of the Child: The children's version"
-    #:url "https://www.unicef.org/child-rights-convention/convention-text-childrens-version"]{
+    #:url child-rights-children]{
   Every child has the right to privacy. The law must protect children’s privacy, family, home, communications and reputation (or good name) from any attack.
 }
+
+◊(define child-rights-children
+   (x-ref
+     "2019-12-09"
+     "https://www.unicef.org/child-rights-convention/convention-text-childrens-version"
+     "Convention on the Rights of the Child: The children's version"))
+◊(define child-rights-adult
+   (x-ref
+     "2019-12-09"
+     "https://www.unicef.org/child-rights-convention/convention-text"
+     "Convention on the Rights of the Child"))
+
 
 Even the constitution of the United States---written more than a hundred years before the first computer---intends to protect our privacy:
 
 ◊qt[#:src "Fourth Amendment"
-    #:url "https://www.britannica.com/topic/Fourth-Amendment"]{
+    #:url 4th-amendment]{
     The right of the people to be secure in their persons, houses, papers, and effects, against unreasonable searches and seizures, shall not be violated, and no Warrants shall issue, but upon probable cause, supported by Oath or affirmation, and particularly describing the place to be searched, and the persons or things to be seized.
 }
+
+◊(define 4th-amendment
+   (x-ref
+     "2019-12-09"
+     "https://www.britannica.com/topic/Fourth-Amendment"
+     "Fourth Amendment"))
 
 ◊note-pos[#:top -30]{adult-version}
 
@@ -218,10 +285,7 @@ They used 100,000 employees and between 500,000 to 2,000,000 snitches to maintai
     People could be placed in prison and tortured by isolation or sleep deprivation in the hopes of getting them to snitch on others.
 }
 
-◊qt[#:author "Edward Snowden"
-    #:src "Permanent Record"
-    #:quote-src #t
-    #:url permanent-record-book]{
+◊book-qt[permanent-record-book]{
   In an authoritative state, rights derive from the state and are granted to people. In a free state, rights derive form people and are granted to the state.
 }
 
@@ -243,17 +307,17 @@ Here are just ◊link[snowden-leaks]{some of the things} he leaked:
 
 ◊ol[#:class "snowden-leaks"]{
     ◊leak["All phone calls are recorded"
-          #:url "https://www.newyorker.com/news/amy-davidson/the-n-s-a-verizon-scandal"]{
+          #:url recorded-phone-calls]{
 
         The N.S.A. (the U.S. intelligence service) collect all U.S. phone calls and text messages. They also collect foreign phone calls, including those of foreign leaders such as ◊link[hack-merkel]{Angela Merkel}.
     }
     ◊leak["Remotely controlled phones"
-          #:url "https://www.theregister.co.uk/2015/10/06/gchqs_smurf_army_can_hack_smartphones_says_ed_snowden/"]{
+          #:url remotely-controlled-phones]{
 
         The GCHQ (the british intelligence service) can remotely control your phone. They can for example turn it on remotely and use the microphone to record you.
     }
     ◊leak["Big tech data isn't private"
-          #:url "https://www.washingtonpost.com/investigations/us-intelligence-mining-data-from-nine-us-internet-companies-in-broad-secret-program/2013/06/06/3a0c0da8-cebf-11e2-8845-d970ccb04497_story.html"]{
+          #:url big-tech-data]{
 
         The government can ask for (or rather demand) data from the big tech companies like Facebook, Google or Apple. If they refuse they can ◊link[hack-big-tech]{just hack them} and steal the data anyway.◊sn{nsa-legality}
 
@@ -269,7 +333,7 @@ Here are just ◊link[snowden-leaks]{some of the things} he leaked:
 
         There's an internal search engine where N.S.A. employees can search through your emails, pictures, medical records and private Facebook messages. Like Google, but with the contents of your online life.
 
-        Snowden writes in ◊link[permanent-record-book #:quote #t]{Permanent Record} that it was common for N.S.A. employees to abuse this to spy on their girlfriends, ex-girlfriends or girls they were interested in. This includes sharing nude photos with their co-workers, which the girls either took themselves or photos the N.S.A. took by hacking their webcam. (Quite literally a stalker's wet dream.)◊sn{no-good-guys}
+        Snowden writes in ◊(book-link permanent-record-book) that it was common for N.S.A. employees to abuse this to spy on their girlfriends, ex-girlfriends or girls they were interested in. This includes sharing nude photos with their co-workers, which the girls either took themselves or photos the N.S.A. took by hacking their webcam. (Quite literally a stalker's wet dream.)◊sn{no-good-guys}
 
         ◊note-pos{no-good-guys}
 
@@ -279,8 +343,31 @@ Here are just ◊link[snowden-leaks]{some of the things} he leaked:
     }
 }
 
-◊(define hack-big-tech "https://www.washingtonpost.com/world/national-security/nsa-infiltrates-links-to-yahoo-google-data-centers-worldwide-snowden-documents-say/2013/10/30/e51d661e-4166-11e3-8b74-d89d714ca4dd_story.html")
-◊(define hack-merkel "https://www.spiegel.de/international/germany/cover-story-how-nsa-spied-on-merkel-cell-phone-from-berlin-embassy-a-930205.html")
+◊(define recorded-phone-calls
+   (x-ref
+     "2019-12-09"
+     "https://www.newyorker.com/news/amy-davidson/the-n-s-a-verizon-scandal"
+     "The N.S.A.-Verizon Scandal"))
+◊(define remotely-controlled-phones
+   (x-ref
+     "2019-12-09"
+     "https://www.theregister.co.uk/2015/10/06/gchqs_smurf_army_can_hack_smartphones_says_ed_snowden/"
+     "GCHQ's SMURF ARMY can hack smartphones, says Snowden. Again."))
+◊(define big-tech-data
+   (x-ref
+     "2019-12-09"
+     "https://www.washingtonpost.com/investigations/us-intelligence-mining-data-from-nine-us-internet-companies-in-broad-secret-program/2013/06/06/3a0c0da8-cebf-11e2-8845-d970ccb04497_story.html"
+     "U.S., British intelligence mining data from nine U.S. Internet companies in broad secret program"))
+◊(define hack-big-tech
+   (x-ref
+     "2019-12-09"
+     "https://www.washingtonpost.com/world/national-security/nsa-infiltrates-links-to-yahoo-google-data-centers-worldwide-snowden-documents-say/2013/10/30/e51d661e-4166-11e3-8b74-d89d714ca4dd_story.html"
+     "NSA infiltrates links to Yahoo, Google data centers worldwide, Snowden documents say"))
+◊(define hack-merkel
+   (x-ref
+     "2019-12-09"
+     "https://www.spiegel.de/international/germany/cover-story-how-nsa-spied-on-merkel-cell-phone-from-berlin-embassy-a-930205.html"
+     "The NSA's Secret Spy Hub in Berlin"))
 
 
 ◊(define (leak title #:url [url #f] . text)
@@ -301,28 +388,55 @@ You see, all this data is stored ◊em{forever}, just waiting to be used to nail
     The problem is when a group like the Nazis take control over the country (which happened in only a few years).
 }
 
-◊(define snowden-lawsuit "https://news.bitcoin.com/snowden-us-seizing-my-book-revenue-is-good-for-bitcoin/")
-◊(define full-power "https://theintercept.com/2019/08/04/whistleblowers-surveillance-fbi-trump/")
-◊(define uk-stupid-laws "https://www.lawcom.gov.uk/app/uploads/2015/03/Legal_Oddities.pdf")
-◊(define metropolitan-police-act "https://www.legislation.gov.uk/ukpga/Vict/2-3/47/section/54")
-
+◊(define snowden-lawsuit
+   (x-ref
+     "2019-12-09"
+     "https://news.bitcoin.com/snowden-us-seizing-my-book-revenue-is-good-for-bitcoin/"
+     "Snowden: US Seizing My Book Revenue is 'Good for Bitcoin'"))
+◊(define full-power
+   (x-ref
+     "2019-12-09"
+     "https://theintercept.com/2019/08/04/whistleblowers-surveillance-fbi-trump/"
+     "The Metadata Trap: The Trump Administration Is Using the Full Power of the U.S. Surveillance State Against Whistleblowers"))
+◊(define uk-stupid-laws
+   (x-ref
+     "2019-12-09"
+     "https://www.lawcom.gov.uk/app/uploads/2015/03/Legal_Oddities.pdf"
+     "Legal Curiosities: Fact or Fable? (PDF)"))
+◊(define metropolitan-police-act
+   (x-ref
+     "2019-12-09"
+     "https://www.legislation.gov.uk/ukpga/Vict/2-3/47/section/54"
+     "Metropolitan Police Act 1839"))
+◊(define clapper
+   (x-ref
+     "2019-12-09"
+     "https://www.youtube.com/watch?v=AGYn7ER5U_0"
+     "James Clapper (DNI) Lies to the Senate About the NSA (30 sec)"))
+◊(define stasi
+   (x-ref
+     "2019-12-09"
+     "https://www.britannica.com/topic/Stasi"
+     "Stasi"))
+◊(define stasi-repression
+   (x-ref
+     "2019-12-09"
+     "https://www.reuters.com/article/us-germany-wall-stasi/no-remorse-from-stasi-as-berlin-marks-fall-of-wall-idUSL118487020091104"
+     "No remorse from Stasi as Berlin marks fall of Wall"))
+◊(define snowden-leaks
+   (x-ref
+     "2019-12-09"
+     "https://prefuse.org/edward-snowden-leaks"
+     "The Biggest Leaks Revealed by Edward Snowden"))
 
 ◊;link{https://mashable.com/2014/06/05/edward-snowden-revelations/?europe=true}
 ◊;link{https://prefuse.org/edward-snowden-leaks#the-nsa-can-demand-call-records-and-data-from-telephone-companies}
 
-◊(define clapper "https://www.youtube.com/watch?v=AGYn7ER5U_0")
-◊(define stasi "https://www.britannica.com/topic/Stasi")
-◊(define stasi-repression "https://www.reuters.com/article/us-germany-wall-stasi/no-remorse-from-stasi-as-berlin-marks-fall-of-wall-idUSL118487020091104")
-◊(define snowden-leaks "https://prefuse.org/edward-snowden-leaks")
-
-◊qt[#:author "Edward Snowden"
-    #:src "Permanent Record"
-    #:quote-src #t
-    #:url permanent-record-book]{
+◊book-qt[permanent-record-book]{
   Once the ubiquity of collection was combined with the permanency of storage, all any government had to do was select a person or a group to scapegoat and go searching---as I'd gone searching through the agency's files---for evidence of a suitable crime.
 }
 
-Snowden now lives in exile in Russia, where the black bags of the U.S. cannot reach. He recently released his memoir ◊link[permanent-record-book #:quote #t]{Permanent Record} which details his life leading up to the leaks. It's a great book, but the U.S. doesn't want you to read it. They even ◊link[snowden-lawsuit]{filed a lawsuit against him} and seized the revenue of the book.◊sn{post-lawsuit}
+Snowden now lives in exile in Russia, where the black bags of the U.S. cannot reach. He recently released his memoir ◊(book-link permanent-record-book) which details his life leading up to the leaks. It's a great book, but the U.S. doesn't want you to read it. They even ◊link[snowden-lawsuit]{filed a lawsuit against him} and seized the revenue of the book.◊sn{post-lawsuit}
 
 ◊note-pos[#:top -24]{jews}
 ◊note-pos{post-lawsuit}
@@ -340,7 +454,11 @@ Snowden now lives in exile in Russia, where the black bags of the U.S. cannot re
 ◊;Supporting finanical privacy makes me an extremist
 ◊;◊link{https://www.coingecko.com/buzz/erik-voorhees-supporting-financial-privacy-extremist}
 
-◊(define snowden-good-for-bitcoin "https://twitter.com/snowden/status/1174090027648868353?s=21")
+◊(define snowden-good-for-bitcoin
+   (x-ref
+     "2019-12-09"
+     "https://twitter.com/snowden/status/1174090027648868353?s=21"
+     "Edward Snowden on Twitter: in conclusion this is good for bitcoin"))
 
 ◊subhead{Fear is the mind-killer}
 
@@ -350,12 +468,9 @@ Snowden now lives in exile in Russia, where the black bags of the U.S. cannot re
 
 I think people often give up their privacy because of ◊strong{fear}. Since the ◊link[9-11]{September 11 attacks} we've been showered with fear-inducing news and propaganda, making our minds numb. This fear of terrorism (and murderers, pedophiles and other Bogeymen) has made us go to war, consent to torture (or "advanced interrogation") and give up our human rights.◊sn{retaliation}
 
-◊(define permanent-record-ref
-   `(cite ,(link permanent-record-book "Permanent Record")))
-
 ◊ndef["retaliation"]{
     Just to put the overreaction in perspective: 2,977 people died in the 9/11 terrorist attacks, but one million died because of the American retaliation.  
-    (Edward Snowden, ◊|permanent-record-ref|)
+    ◊(cite-book permanent-record-book)
 
     That's like sentencing a shoplifter to death---a completely disproportionate response.
 }
@@ -376,8 +491,16 @@ For example people may be willing to give up their privacy, because it might mak
 ◊note-pos[#:top -31]{retaliation}
 ◊note-pos[#:top -10]{tsa}
 
-◊(define 9-11 "https://en.wikipedia.org/wiki/September_11_attacks")
-◊(define tsa-security-theater "https://www.aclu.org/sites/default/files/field_document/dem17-tsa_detection_report-v02.pdf")
+◊(define 9-11
+   (x-ref
+     "2019-12-09"
+     "https://en.wikipedia.org/wiki/September_11_attacks"
+     "Wikipedia: September 11 attacks"))
+◊(define tsa-security-theater
+   (x-ref
+     "2019-12-09"
+     "https://www.aclu.org/sites/default/files/field_document/dem17-tsa_detection_report-v02.pdf"
+     "BAD TRIP Debunking the TSA’s ‘Behavior Detection’ Program (PDF)"))
 
 
 ◊subhead{You're the product}
@@ -396,7 +519,11 @@ They're selling knowledge about you. What you're searching for, what sites you v
     Oh? He watched a video of a Japanese rock band? And he's listened to Raubtier? Then let's recommend ◊link[band-maid]{Band-Maid}, he's sure to love them! (I assume this is how YouTube decided to recommend me ◊link[band-maid]{Band-Maid}---the best rock band in the world.)
 }
 
-◊(define band-maid "https://www.youtube.com/user/BANDMAID")
+◊(define band-maid
+   (x-ref
+     "2019-12-09"
+     "https://www.youtube.com/user/BANDMAID"
+     "BAND-MAID on YouTube"))
 
 
 For example they probably know if you're gay or if you're pregnant (and if you are, they'll know if it was an accident, if your parents know about it and who's the father). They might also predict---with high confidence---if you're religious, even if you don't want anyone to know. Or who you're going to vote for in the ◊em{next} election or how likely you are to commit a crime.◊sn{thoughtcrime}
@@ -404,12 +531,16 @@ For example they probably know if you're gay or if you're pregnant (and if you a
 ◊ndef["thoughtcrime"]{
     ◊em{Pre-crime}, like in the movie ◊link[minority-report]{Minority Report}, is the idea that you can predict someone committing a crime and catching them before they do.
 
-    ◊em{Thoughtcrime}, as explored in the book ◊link[1984-book #:quote #t]{1984}, says that thoughts are criminal. Like entertaining a politically unacceptable thought.
+    ◊em{Thoughtcrime}, as explored in the book ◊(book-link 1984-book), says that thoughts are criminal. Like entertaining a politically unacceptable thought.
 
     While fiction, our technology is edging ever closer. Soon we might have killer robots going around streets enforcing laws on our predicted behaviour. (The U.S. already deploys killing drones, which kill civilians.)
 }
 
-◊(define minority-report "https://www.imdb.com/title/tt0181689/")
+◊(define minority-report
+   (x-ref
+     "2019-12-09"
+     "https://www.imdb.com/title/tt0181689/"
+     "Minority Report (2002)"))
 
 And it's not just a problem with Google and Facebook. An increasing number of companies are discovering how lucrative your data is. If you buy a Coca-Cola, the information that you bought it at this place and at this specific time might even be worth more than the Coca-Cola itself!
 
@@ -418,10 +549,26 @@ For example smart TVs come with a microphone ◊link[smart-tvs]{that listens to 
 What about your privacy? That's not something they care about, because they can sell it and make lot's of money.
 
 
-◊(define smart-tvs "https://www.washingtonpost.com/technology/2019/09/18/you-watch-tv-your-tv-watches-back/")
-◊(define bank-shares "https://www.cbc.ca/news/business/banking-information-shared-with-third-parties-1.5102931")
-◊(define google-mastercard "https://www.bloomberg.com/news/articles/2018-08-30/google-and-mastercard-cut-a-secret-ad-deal-to-track-retail-sales")
-◊(define vizo-surveillance "https://www.techdirt.com/articles/20190114/08084341384/vizio-admits-modern-tv-sets-are-cheaper-because-theyre-spying-you.shtml")
+◊(define smart-tvs
+   (x-ref
+     "2019-12-09"
+     "https://www.washingtonpost.com/technology/2019/09/18/you-watch-tv-your-tv-watches-back/"
+     "You watch TV. Your TV watches back."))
+◊(define bank-shares
+   (x-ref
+     "2019-12-09"
+     "https://www.cbc.ca/news/business/banking-information-shared-with-third-parties-1.5102931"
+     "'Is that even legal?': Companies may be sharing new credit or debit card information without you knowing"))
+◊(define google-mastercard
+   (x-ref
+     "2019-12-09"
+     "https://www.bloomberg.com/news/articles/2018-08-30/google-and-mastercard-cut-a-secret-ad-deal-to-track-retail-sales"
+     "Google and Mastercard Cut a Secret Ad Deal to Track Retail Sales"))
+◊(define vizo-surveillance
+   (x-ref
+     "2019-12-09"
+     "https://www.techdirt.com/articles/20190114/08084341384/vizio-admits-modern-tv-sets-are-cheaper-because-theyre-spying-you.shtml"
+     "Vizio Admits Modern TV Sets Are Cheaper Because They're Spying On You"))
 
 ◊;Credit cards have a privacy problem
 ◊;link{https://news.ycombinator.com/item?id=20800115}
@@ -436,7 +583,7 @@ What about your privacy? That's not something they care about, because they can 
 ◊; https://www.ted.com/talks/glenn_greenwald_why_privacy_matters
 
 
-The ◊link[great-man]{◊em{great man theory}} of history says that most of history can be explained by the impact of great men. Julius Caesar, Genghis Khan and Hitler are examples of "great men". (They don't have to be good or even be men, just people who cause large changes.) If Edward Snowden will be considered a great man depends on the effects of his leaks---they might mark a turning point for government surveillance, and change the course of history, or they might be forgotten as a side note in the history books.◊sn{nothing-changed}
+The ◊def[great-man]{great man theory} of history says that most of history can be explained by the impact of great men. Julius Caesar, Genghis Khan and Hitler are examples of "great men". (They don't have to be good or even be men, just people who cause large changes.) If Edward Snowden will be considered a great man depends on the effects of his leaks---they might mark a turning point for government surveillance, and change the course of history, or they might be forgotten as a side note in the history books.◊sn{nothing-changed}
 
 ◊ndef["nothing-changed"]{
     It's still uncertain how much will really change, but either way Snowden is my hero.
@@ -461,9 +608,19 @@ So far we've had to surrender our privacy to gain access to digital payments and
     Unfortunately Bitcoin is sometimes ◊link[privacy-challenge]{even worse for privacy than regular payments}, because you have a permanent record of all transactions open for all to see. There are other cryptocurrencies that tries to solve this problem.
 }
 
-◊(define great-man "https://en.wikipedia.org/wiki/Great_man_theory")
-◊(define shoulders-of-giants "https://en.wikipedia.org/wiki/Standing_on_the_shoulders_of_giants")
-◊(define signal "https://www.signal.org/")
-◊(define private "/properties_of_a_cryptocurrency.html#private")
-◊(define properties "/what_is_money.html#what-properties-does-good-money-have?")
+◊(define great-man
+   (x-ref
+     "2019-12-09"
+     "https://en.wikipedia.org/wiki/Great_man_theory"
+     "Wikipedia: Great man theory"))
+◊(define shoulders-of-giants
+   (x-ref
+     "2019-12-09"
+     "https://en.wikipedia.org/wiki/Standing_on_the_shoulders_of_giants"
+     "Wikipedia: Standing on the shoulders of giants"))
+◊(define signal
+   (x-ref
+     "2019-12-09"
+     "https://www.signal.org/"
+     "Signal, a private messaging app"))
 

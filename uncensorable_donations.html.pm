@@ -11,16 +11,18 @@
 
 ◊epigraph{
     ◊qt[#:author "WikiLeaks"
-        #:url "https://wikileaks.org/wiki/Draft:About"]{
+        #:url wiki-about]{
         Open government is strongly correlated to quality of life. Open government is compelled to answer injustice rather than causing it. Plans by an open government which are corrupt, cause injustice or do not alleviate suffering are revealed and so opposed before implementation. If unjust plans cannot reach implementation then government will be a force for justice.
     }
 }
 
-In the ◊link[freezing-chapter]{last} two ◊link[undesirable-chapter]{chapters} we looked at the issues with digital payments, but when you think about donations you wouldn't assume they have the same problems as payments have. For example when donating money to a charity, like ◊link[charity-water]{Charity Water}, they don't have to be worried of ◊link[charge-back-fraud]{charge back fraud} because you're voluntarily giving them money.◊sn{charity-fees} But the same problem with third-party censorship is relevant here as well.◊sn{voluntary}
+◊(define wiki-about
+  (x-ref
+    "2019-08-28"
+    "https://wikileaks.org/wiki/Draft:About"
+    "WikiLeaks Drafts:About"))
 
-◊(define thirst-book "https://www.charitywater.org/thirst")
-◊(define cheaper-faster "/cheaper_faster.html#cryptocurrency-fees")
-
+In the ◊link[freezing_of_merchant_accounts]{last} two ◊link[undesirable_businesses]{chapters} we looked at the issues with digital payments, but when you think about donations you wouldn't assume they have the same problems as payments have. For example when donating money to a charity, like ◊link[charity-water]{Charity Water}, they don't have to be worried of ◊link[charge-back-fraud]{charge back fraud} because you're voluntarily giving them money.◊sn{charity-fees} But the same problem with third-party censorship is relevant here as well.◊sn{voluntary}
 
 Imagine a country doing something really horrible, like ◊link[killing-fields]{purging intellectuals and political opponents}, that would put the government in a bad light. Journalists trying to report on this event may find it difficult or impossible to accept donations to continue their work. A payment processor (which are necessary for digital donations)---perhaps under pressure from the government---might block donations or break the journalistic anonymity,◊sn{crypto-privacy} making donations for truth-seeking journalists very difficult or outright dangerous.
 
@@ -31,40 +33,48 @@ Donations is an excellent use case for cryptocurrencies, as they cannot be censo
 ◊note-pos[#:top -8]{crypto-privacy}
 
 ◊ndef["voluntary"]{
-    However even charities can be prosecuted for not fulfilling their promises, an experience the founder of Charity Water writes in his book ◊link[thirst-book]{Thirst}. So charge back fraud isn't a completely irrelevant worry.
+    However even charities can be prosecuted for not fulfilling their promises, an experience the founder of Charity Water writes in his book ◊(book-link thirst-book). So charge back fraud isn't a completely irrelevant worry.
 }
 
 ◊ndef["charity-fees"]{
-    Most payment processors have lower fees for charities, but they're still more expensive than the ◊link[cheaper-faster]{low cryptocurrency fees}.
+    Most payment processors have lower fees for charities, but they're still more expensive than the ◊link[cryptocurrency-fees]{low cryptocurrency fees}.
 }
 
 ◊ndef["crypto-privacy"]{
-    Some cryptocurrencies also ◊link[crypto-anonymous]{give better privacy} than other digital payment systems.
+    Some cryptocurrencies also ◊link[private_property]{give better privacy} than other digital payment systems.
 }
 
-◊(define crypto-anonymous "/properties_of_a_cryptocurrency.html#anonymous")
-◊(define killing-fields "https://allthatsinteresting.com/cambodian-genocide")
+◊(define killing-fields
+  (x-ref
+    "2019-08-28"
+    "https://allthatsinteresting.com/cambodian-genocide"
+    "33 Haunting Photos From The Killing Fields Of The Cambodian Genocide"))
+◊(define charity-water
+  (x-ref
+    "2019-08-28"
+    "https://www.charitywater.org/"
+    "Charity Water"))
+
 
 ◊subhead{Censorship is real}
 
-A ◊link[bbc-tiananmen]{powerful example} of censorship is the ◊link[wikipedia-tiananmen]{Tiananmen Square Massacre} in China 1989. It was a student led protest which was forcefully suppressed by hundreds of thousands military troops, killing large numbers of demonstrators and bystanders.◊sn{hong-kong}
+A ◊link[china-forgettance]{powerful example} of censorship is the ◊link[wikipedia-tiananmen]{Tiananmen Square Massacre} in China 1989. It was a student led protest which was forcefully suppressed by hundreds of thousands military troops, killing large numbers of demonstrators and bystanders.◊sn{hong-kong}
 
 ◊ndef["hong-kong"]{
-    Some have ◊link[hong-kong-protests]{drawn parallels} between then recent protests in Hong Kong and Tiananmen. But with smartphones everywhere it would be close to impossible to cover up a similar massacre.
+    Some have ◊link[hong-kong-protests]{drawn parallels} between then recent protests in Hong Kong and Tiananmen, but with smartphones everywhere it would be close to impossible to cover up a similar massacre.
 
     The Hong Kong Free Press, an independent news source in China, ◊link[hk-fp]{accepts Bitcoin donations}.
 }
 
-◊(define hk-fp "https://www.hongkongfp.com/support-hkfp/")
-
 
 ◊qt[#:author "Margaret Holt"
     #:src "BBC: Tiananmen 30 years on - China's great act of 'forgettance'"
-    #:url "https://www.bbc.com/news/blogs-china-blog-48455582"]{
+    #:url china-forgettance]{
     "This gun-happy soldier, he's firing indiscriminately into the crowd and three young girl students knelt down in front of him and begged him to stop firing," she says quietly, gesturing with her hands in a praying motion.
 
     "And he killed them."
 }
+
 
 China has gone to great lengths to cover up these events. Twitter is censored by default in China◊sn{china-censorship} and anyone caught tweeting about Tiananmen might ◊link[twitter-detained]{get arrested}.◊sn{reeducation} On the anniversary they have police escorts for the victim's families who wants to visit the graves---to keep them away from journalists.
 
@@ -82,24 +92,56 @@ Censorship is a ◊link[censorship-global]{global problem} and is a big problem 
 ◊note-pos[#:top -14]{china-censorship}
 ◊note-pos{reeducation}
 
-◊(define reddit-censorship "https://www.breitbart.com/tech/2016/06/12/reddit-topics-censored-users-banned-linking-orlando-shootings-islam/")
-
-◊(define censorship-global "https://cpj.org/2015/04/10-most-censored-countries.php")
-◊(define russia-censorship "https://www.washingtonpost.com/news/act-four/wp/2016/02/09/how-censorship-works-in-vladimir-putins-russia/")
-
-◊; Manipulation on social media, in order to control public opinion, is quickly becoming a big problem. In some subreddits on Reddit it's done by ruthlessly censoring any opposing opinions.
-◊; How much power does Facebook or Google have really have? What if they decide to censor a political party to sway elections?
-
-◊(define china-censorship "https://en.wikipedia.org/wiki/Censorship_in_China")
-◊(define great-firewall-of-china "https://www.howtogeek.com/162092/htg-explains-how-the-great-firewall-of-china-works/")
-◊(define hong-kong-protests "https://thefederalist.com/2019/07/25/hong-kong-protest-beijings-new-tiananmen-square/")
-◊(define bbc-tiananmen "https://www.bbc.com/news/blogs-china-blog-48455582")
-◊(define wikipedia-tiananmen "https://en.wikipedia.org/wiki/Tiananmen_Square_protests_of_1989")
-◊(define twitter-detained "https://pen.org/press-release/deng-chuanbin-arrest/")
-◊(define china-reeducation "https://www.amnesty.org/en/latest/news/2018/09/china-up-to-one-million-detained/")
-◊(define wikileaks "https://wikileaks.org/")
-◊(define charge-back-fraud "/cheaper_faster.html#charge-back-fraud")
-◊(define charity-water "https://www.charitywater.org/")
+◊(define reddit-censorship
+  (x-ref
+    "2019-08-28"
+    "https://www.breitbart.com/tech/2016/06/12/reddit-topics-censored-users-banned-linking-orlando-shootings-islam/"
+    "Reddit Mods Delete Orlando Shooting Posts Because Attacker Was Muslim"))
+◊(define censorship-global
+  (x-ref
+    "2019-08-28"
+    "https://cpj.org/2015/04/10-most-censored-countries.php"
+    "10 Most Censored Countries"))
+◊(define hk-fp
+  (x-ref
+    "2019-08-28"
+    "https://www.hongkongfp.com/support-hkfp/"
+    "Support Hong Kong Free Press"))
+◊(define china-censorship
+  (x-ref
+    "2019-08-28"
+    "https://en.wikipedia.org/wiki/Censorship_in_China"
+    "Wikipedia: Censorship in China"))
+◊(define great-firewall-of-china
+  (x-ref
+    "2019-08-28"
+    "https://www.howtogeek.com/162092/htg-explains-how-the-great-firewall-of-china-works/"
+    "How the “Great Firewall of China” Works to Censor China’s Internet"))
+◊(define hong-kong-protests
+  (x-ref
+    "2019-08-28"
+    "https://thefederalist.com/2019/07/25/hong-kong-protest-beijings-new-tiananmen-square/"
+    "The Hong Kong Protest Is Beijing’s New Tiananmen Square"))
+◊(define china-forgettance
+   (x-ref
+     "2019-08-28"
+     "https://www.bbc.com/news/blogs-china-blog-48455582"
+     "BBC: Tiananmen 30 years on - China's great act of 'forgettance'"))
+◊(define wikipedia-tiananmen
+  (x-ref
+    "2019-08-28"
+    "https://en.wikipedia.org/wiki/Tiananmen_Square_protests_of_1989"
+    "Wikipedia: 1989 Tiananmen Square protests"))
+◊(define twitter-detained
+  (x-ref
+    "2019-08-28"
+    "https://pen.org/press-release/deng-chuanbin-arrest/"
+    "Arrest of Chinese Filmmaker Deng Chuanbin Represents the Extreme Lengths of Chinese Authorities to Silence Artistic Voices"))
+◊(define china-reeducation
+  (x-ref
+    "2019-08-28"
+    "https://www.amnesty.org/en/latest/news/2018/09/china-up-to-one-million-detained/"
+    "Up to one million detained in China’s mass “re-education” drive"))
 
 
 ◊subhead{A short history of WikiLeaks}
@@ -113,14 +155,26 @@ This is ◊strong{not} a glorification of WikiLeaks---they have ◊link[wikileak
 ◊note-pos[#:top -10]{association-fallacy}
 
 ◊ndef["association-fallacy"]{
-    Trying to discredit WikiLeaks by discrediting Assange is ◊em{◊link[association-fallacy]{guilt by association}}---a logical fallacy.
+    Trying to discredit WikiLeaks by discrediting Assange is ◊def[association-fallacy]{guilt by association}---a logical fallacy.
 
     If we think that good deeds can only be done by perfectly good people then it follows that only Superman can do good. But in reality people are flawed like Iron Man, who's narcissistic and alcoholic but also a hero.
 }
 
-
-◊(define association-fallacy "https://en.wikipedia.org/wiki/Association_fallacy")
-◊(define wikileaks-immoral "https://www.wired.com/2016/07/wikileaks-officially-lost-moral-high-ground/")
+◊(define wikileaks
+  (x-ref
+    "2019-08-28"
+    "https://wikileaks.org/"
+    "WikiLeaks"))
+◊(define association-fallacy
+  (x-ref
+    "2019-08-28"
+    "https://en.wikipedia.org/wiki/Association_fallacy"
+    "Wikipedia: Association fallacy"))
+◊(define wikileaks-immoral
+  (x-ref
+    "2019-08-28"
+    "https://www.wired.com/2016/07/wikileaks-officially-lost-moral-high-ground/"
+    "WikiLeaks Has Officially Lost the Moral High Ground"))
 
 
 ◊section[#:class "wikileaks"]{
@@ -213,7 +267,7 @@ This is ◊strong{not} a glorification of WikiLeaks---they have ◊link[wikileak
       }
 
       ◊leak["Execution of children"
-            #:url "https://www.mcclatchydc.com/news/special-reports/article24696685.html"]{
+            #:url execution-of-children]{
 
         In 2006, a group of U.S. soldiers entered a house in Iraq where they executed at least 10 people (9 civilians), including an infant and four other children---all five years or younger---and elderly women. They then called in an airstrike to cover up the evidence, but postmortems showed they had been handcuffed and shot in the head.◊sn{children-bodies}
 
@@ -239,7 +293,7 @@ This is ◊strong{not} a glorification of WikiLeaks---they have ◊link[wikileak
       }
 
       ◊leak["Civilian deaths in Iraq"
-            #:url "https://abcnews.go.com/Politics/wikileaks-iraqi-civilian-deaths-higher-reported/story?id=11953723"]{
+            #:url civilian-deaths-iraq]{
 
         While U.S. officials had previously said no logs existed of civilian deaths in Iraq, leaked cables told another story. 66,081 civilian deaths had been logged out of a total of 109,000 deaths between 2004 and 2009, that's 60.6% of all dead being innocent people---a horrifyingly bad ratio.◊sn{wtc}
 
@@ -302,7 +356,7 @@ This is ◊strong{not} a glorification of WikiLeaks---they have ◊link[wikileak
     Later ◊link[paypal-freezes-wikileaks]{PayPal freezes WikiLeaks donations} with the reason:◊sn{paypal}
 
     ◊ndef["paypal"]{
-        As far as reasons for shutting down services, PayPal ◊link[freezing-of-merchant-accounts]{doesn't have a good record}. This excuse is at least believable on the surface.
+        As far as reasons for shutting down services, PayPal ◊link[freezing_of_merchant_accounts]{doesn't have a good record}. This excuse is at least believable on the surface.
     }
 
     ◊qt{
@@ -339,7 +393,7 @@ This is ◊strong{not} a glorification of WikiLeaks---they have ◊link[wikileak
     Why did it take almost a year before WikiLeaks started accepting Bitcoin? Satoshi made this appeal in the de-facto discussion forum at the time:
 
     ◊qt[#:author "Satoshi"
-        #:url "http://archive.fo/Gvonb#msg26999"
+        #:url satoshi-quote
         #:date "Dec 5, 2010"]{
         ◊qt{
             Basically, bring it on.  Let's encourage Wikileaks to use Bitcoins and I'm willing to face any risk or fallout from that act.
@@ -474,40 +528,161 @@ This is ◊strong{not} a glorification of WikiLeaks---they have ◊link[wikileak
    `(div ((class "transcript"))
       ,@(map make-row rows)))
 
-◊(define wikileaks-history "https://en.wikipedia.org/wiki/WikiLeaks#History")
-◊(define assange-timeline "https://www.bbc.com/news/world-europe-11949341")
-◊(define assange-loses-extradition-appeal "https://www.bbc.com/news/uk-18260914")
-◊(define assange-asylum-granted "https://www.bbc.com/news/uk-19281492")
-◊(define assange-indicted "https://www.nytimes.com/2019/05/23/us/politics/assange-indictment.html")
-◊(define assange-rape "https://www.bbc.com/news/world-11047025")
-◊(define assange-international-arrest "https://www.bbc.com/news/world-europe-11803703")
-◊(define assange-events "https://www.bbc.com/news/world-europe-11949341")
-◊(define obama-guantanamo "https://www.nbcnews.com/news/us-news/president-obama-expected-make-statement-guantanamo-n524131")
+◊(define execution-of-children
+  (x-ref
+    "2019-08-28"
+    "https://www.mcclatchydc.com/news/special-reports/article24696685.html"
+    "Iraqi children in U.S. raid shot in head, U.N. says"))
+◊(define civilian-deaths-iraq
+  (x-ref
+    "2019-08-28"
+    "https://abcnews.go.com/Politics/wikileaks-iraqi-civilian-deaths-higher-reported/story?id=11953723"
+    "WikiLeaks Documents Reveal Death Count, Torture"))
+◊(define satoshi-quote
+  (x-ref
+    "2019-08-28"
+    "http://archive.fo/Gvonb#msg26999"
+    "bitcointalk.org: Satoshi, Dec 5, 2010"))
 
-◊(define collateral-murder-wikileaks "https://collateralmurder.wikileaks.org/")
-◊(define collateral-murder-17 "https://www.youtube.com/watch?v=5rXPrfnU3G0")
-◊(define collateral-murder-full "https://www.youtube.com/watch?v=is9sxRfU-ik")
-◊(define collateral-murder-transcripts "https://collateralmurder.wikileaks.org/en/transcript.html")
+◊(define wikileaks-history
+  (x-ref
+    "2019-08-28"
+    "https://en.wikipedia.org/wiki/WikiLeaks#History"
+    "Wikipedia: History of WikiLeaks"))
+◊(define assange-loses-extradition-appeal
+  (x-ref
+    "2019-08-28"
+    "https://www.bbc.com/news/uk-18260914"
+    "BBC: Julian Assange loses extradition appeal at Supreme Court"))
+◊(define assange-asylum-granted
+  (x-ref
+    "2019-08-28"
+    "https://www.bbc.com/news/uk-19281492"
+    "BBC: Julian Assange: Ecuador grants Wikileaks founder asylum"))
+◊(define assange-indicted
+  (x-ref
+    "2019-08-28"
+    "https://www.nytimes.com/2019/05/23/us/politics/assange-indictment.html"
+    "The New York Times: Assange Indicted Under Espionage Act, Raising First Amendment Issues"))
+◊(define assange-rape
+  (x-ref
+    "2019-08-28"
+    "https://www.bbc.com/news/world-11047025"
+    "BBC: Wikileaks founder Julian Assange accused of rape"))
+◊(define assange-international-arrest
+  (x-ref
+    "2019-08-28"
+    "https://www.bbc.com/news/world-europe-11803703"
+    "BBC: Wikileaks' Assange faces international arrest warrant"))
+◊(define assange-events
+  (x-ref
+    "2019-08-28"
+    "https://www.bbc.com/news/world-europe-11949341"
+    "BBC: Julian Assange: A timeline of Wikileaks founder's case"))
+◊(define obama-guantanamo
+  (x-ref
+    "2019-08-28"
+    "https://www.nbcnews.com/news/us-news/president-obama-expected-make-statement-guantanamo-n524131"
+    "Guantanamo Bay: Obama Announces Plan to Close Controversial Detention Facility"))
 
-◊(define paypal-freezes-wikileaks "https://wikileaks.org/PayPal-freezes-WikiLeaks-donations.html")
-◊(define banking-blockade "https://wikileaks.org/Banking-Blockade.html")
-◊(define illegal-blockade "https://wikileaks.org/Protesters-against-WikiLeaks.html")
-◊(define assange-bitcoin-ama-msg "https://www.reddit.com/r/technology/comments/2ghp54/i_am_julian_assange_ama_about_my_new_book_when/ckjcmyw/")
-◊(define manning-commutes "https://www.nytimes.com/2017/01/17/us/politics/obama-commutes-bulk-of-chelsea-mannings-sentence.html")
-◊(define manning-jailed-again "https://www.theguardian.com/us-news/2019/mar/08/chelsea-manning-judge-jails-wikileaks-case")
+◊(define collateral-murder-wikileaks
+  (x-ref
+    "2019-08-28"
+    "https://collateralmurder.wikileaks.org/"
+    "WikiLeaks: Collateral Murder"))
+◊(define collateral-murder-17
+  (x-ref
+    "2019-08-28"
+    "https://www.youtube.com/watch?v=5rXPrfnU3G0"
+    "YouTube: Collateral Murder (17 min)"))
+◊(define collateral-murder-full
+  (x-ref
+    "2019-08-28"
+    "https://www.youtube.com/watch?v=is9sxRfU-ik"
+    "YouTube: Collateral Murder (39 min)"))
+◊(define collateral-murder-transcripts
+  (x-ref
+    "2019-08-28"
+    "https://collateralmurder.wikileaks.org/en/transcript.html"
+    "WikiLeaks: Collateral Murder Transcript"))
 
-◊(define uk-cluster-bomb-ban "https://www.theguardian.com/world/2010/dec/01/wikileaks-cables-cluster-bombs-britain")
-◊(define abu-omar "https://www.spiegel.de/international/europe/cia-rendition-case-us-pressured-italy-to-influence-judiciary-a-735268.html")
-◊(define saudi-urges-attack "https://www.reuters.com/article/us-wikileaks-usa-idUSTRE6AP06Z20101129")
-◊(define tunisian-revolution "https://en.wikipedia.org/wiki/Wikileaks_Revolution")
-◊(define guantanamo "https://www.theguardian.com/world/2011/apr/25/guantanamo-files-lift-lid-prison")
-◊(define children-bodies "https://web.archive.org/web/20150416062019/http://www.chris-floyd.com/march/")
-◊(define repatriation-sweden "https://en.wikipedia.org/wiki/Repatriation_of_Ahmed_Agiza_and_Muhammad_al-Zery")
+◊(define paypal-freezes-wikileaks
+  (x-ref
+    "2019-08-28"
+    "https://wikileaks.org/PayPal-freezes-WikiLeaks-donations.html"
+    "WikiLeaks: PayPal freezes WikiLeaks donations"))
+◊(define banking-blockade
+  (x-ref
+    "2019-08-28"
+    "https://wikileaks.org/Banking-Blockade.html"
+    "WkiLeaks: Banking Blockade"))
+◊(define illegal-blockade
+  (x-ref
+    "2019-08-28"
+    "https://wikileaks.org/Protesters-against-WikiLeaks.html"
+    "WikiLeaks: Protesters against WikiLeaks banking blockade, the \"PayPal 14\", largely victorious"))
+◊(define assange-bitcoin-ama-msg
+  (x-ref
+    "2019-08-28"
+    "https://www.reddit.com/r/technology/comments/2ghp54/i_am_julian_assange_ama_about_my_new_book_when/ckjcmyw/"
+    "AMA with Julian Assange on Reddit (Sep 2014)"))
+◊(define manning-commutes
+  (x-ref
+    "2019-08-28"
+    "https://www.nytimes.com/2017/01/17/us/politics/obama-commutes-bulk-of-chelsea-mannings-sentence.html"
+    "Chelsea Manning to Be Released Early as Obama Commutes Sentence"))
+◊(define manning-jailed-again
+  (x-ref
+    "2019-08-28"
+    "https://www.theguardian.com/us-news/2019/mar/08/chelsea-manning-judge-jails-wikileaks-case"
+    " Chelsea Manning jailed for refusing to testify to grand jury in WikiLeaks case "))
 
-◊(define assange-arrest-uk "https://www.bbc.com/news/uk-47891737")
-◊(define assange-arrest-us "https://www.theguardian.com/uk-news/2019/apr/11/julian-assange-arrested-at-ecuadorian-embassy-wikileaks")
+◊(define uk-cluster-bomb-ban
+  (x-ref
+    "2019-08-28"
+    "https://www.theguardian.com/world/2010/dec/01/wikileaks-cables-cluster-bombs-britain"
+    "WikiLeaks cables: Secret deal let Americans sidestep cluster bomb ban"))
+◊(define abu-omar
+  (x-ref
+    "2019-08-28"
+    "https://www.spiegel.de/international/europe/cia-rendition-case-us-pressured-italy-to-influence-judiciary-a-735268.html"
+    "US Pressured Italy to Influence Judiciary"))
+◊(define saudi-urges-attack
+  (x-ref
+    "2019-08-28"
+    "https://www.reuters.com/article/us-wikileaks-usa-idUSTRE6AP06Z20101129"
+    "Saudi king urged U.S. to attack Iran: WikiLeaks"))
+◊(define tunisian-revolution
+  (x-ref
+    "2019-08-28"
+    "https://en.wikipedia.org/wiki/Wikileaks_Revolution"
+    "Wikipedia: Tunisian Revolution"))
+◊(define guantanamo
+  (x-ref
+    "2019-08-28"
+    "https://www.theguardian.com/world/2011/apr/25/guantanamo-files-lift-lid-prison"
+    "Guantánamo leaks lift lid on world's most controversial prison"))
+◊(define children-bodies
+  (x-ref
+    "2019-08-28"
+    "https://web.archive.org/web/20150416062019/http://www.chris-floyd.com/march/"
+    "Children of Abraham: Death in the Desert (Wayback Machine)"))
+◊(define repatriation-sweden
+  (x-ref
+    "2019-08-28"
+    "https://en.wikipedia.org/wiki/Repatriation_of_Ahmed_Agiza_and_Muhammad_al-Zery"
+    "Wikipedia: Repatriation of Ahmed Agiza and Muhammad al-Zery"))
 
-◊(define freezing-of-merchant-accounts "/freezing_of_merchant_accounts.html#other-examples")
+◊(define assange-arrest-uk
+  (x-ref
+    "2019-08-28"
+    "https://www.bbc.com/news/uk-47891737"
+    "BBC: Julian Assange: Wikileaks co-founder arrested in London"))
+◊(define assange-arrest-us
+  (x-ref
+    "2019-08-28"
+    "https://www.theguardian.com/uk-news/2019/apr/11/julian-assange-arrested-at-ecuadorian-embassy-wikileaks"
+    "Julian Assange faces US extradition after arrest at Ecuadorian embassy"))
 
 
 ◊subhead{Hiding skeletons in the closet}
@@ -557,25 +732,48 @@ Unfortunately it seems like a human thing to try to hide your misdeeds instead o
 ◊note-pos[#:top -31]{dan-hitler}
 ◊note-pos[#:top -15]{chernobyl-TV}
 
-◊(define chernobyl-accident "https://www.world-nuclear.org/information-library/safety-and-security/safety-of-plants/chernobyl-accident.aspx")
-◊(define chernobyl-TV "https://www.imdb.com/title/tt7366338/")
-◊(define rel-tiananmen "#censorship-is-real")
-
-
-◊(define word-viking "https://norse-mythology.net/what-does-the-word-viking-mean/")
-◊(define khan-eurovision "https://www.youtube.com/watch?v=NvS351QKFV4")
-◊(define hardcore-history "https://www.dancarlin.com/hardcore-history-series/")
-
-◊(define trump-pardons "https://www.usnews.com/news/politics/articles/2019-05-24/trump-considers-pardons-for-soldiers-accused-of-war-crimes")
-◊(define gallagher "https://en.wikipedia.org/wiki/Eddie_Gallagher_(soldier)")
+◊(define rel-tiananmen
+  `("#censorship-is-real" "Censorship is real"))
+◊(define chernobyl-accident
+  (x-ref
+    "2019-08-28"
+    "https://www.world-nuclear.org/information-library/safety-and-security/safety-of-plants/chernobyl-accident.aspx"
+    "Chernobyl Accident 1986"))
+◊(define chernobyl-TV
+  (x-ref
+    "2019-08-28"
+    "https://www.imdb.com/title/tt7366338/"
+    "IMDB: Chernobyl"))
+◊(define word-viking
+  (x-ref
+    "2019-08-28"
+    "https://norse-mythology.net/what-does-the-word-viking-mean/"
+    "What does the word Viking mean?"))
+◊(define khan-eurovision
+  (x-ref
+    "2019-08-28"
+    "https://www.youtube.com/watch?v=NvS351QKFV4"
+    "YouTube: Dschinghis Khan - Moskau 1979"))
+◊(define hardcore-history
+  (x-ref
+    "2019-08-28"
+    "https://www.dancarlin.com/hardcore-history-series/"
+    "Hardcore History, a history podcast by Dan Carlin"))
+◊(define trump-pardons
+  (x-ref
+    "2019-08-28"
+    "https://www.usnews.com/news/politics/articles/2019-05-24/trump-considers-pardons-for-soldiers-accused-of-war-crimes"
+    "Trump Considers Pardons for Soldiers Accused of War Crimes"))
+◊(define gallagher
+  (x-ref
+    "2019-08-28"
+    "https://en.wikipedia.org/wiki/Eddie_Gallagher_(soldier)"
+    "Wikipedia: Eddie Gallagher (Navy SEAL)"))
 
 
 ◊subhead{Burying the truth will allow it to continue}
 
-◊qt[#:author "George Orwell"
-    #:quote-src #t
-    #:src "1984"
-    #:url 1984-book]{
+◊book-qt[1984-book]{
     ... if all records told the same tale---then the lie passed into history and became truth. 'Who controls the past,' ran the Party slogan, 'controls the future: who controls the present controls the past.' ... 'Reality control', they called it: in Newspeak, 'doublethink'.
 }
 
@@ -597,15 +795,8 @@ It doesn't matter who you are or where you are, you can always accept donations 
 ◊note-pos[#:top -14]{china-mining}
 
 ◊ndef["china-mining"]{
-    China does have most of the Bitcoin hashrate inside their country. They could theoretically take majority control of Bitcoin's hashrate and censor transactions that way (this is the worst attack possible against a cryptocurrency, called a ◊link[51-attack]{◊em{51% attack}}). If this happened the Bitcoin community would most likely recognize it as an attack and a chain split would happen, making existing miners worthless.
+    China does have most of the Bitcoin hashrate inside their country. They could theoretically take majority control of Bitcoin's hashrate and censor transactions that way (this is the worst attack possible against a cryptocurrency, called a ◊def[51%-attack]{51% attack}). If this happened the Bitcoin community would most likely recognize it as an attack and a chain split would happen, making existing miners worthless.
 }
-
-
-◊(define forks "/how_do_cryptocurrencies_work.html#network-upgrades-and-new-cryptocurrencies")
-
-◊(define freezing-chapter "/freezing_of_merchant_accounts.html")
-◊(define undesirable-chapter "/undesirable_businesses.html")
-◊(define 51-attack "https://www.investopedia.com/terms/1/51-attack.asp")
 
 ◊;https://news.ycombinator.com/item?id=19632449
 ◊;https://www.lrb.co.uk/v36/n05/andrew-ohagan/ghosting

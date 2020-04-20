@@ -7,10 +7,7 @@
 ◊(define-meta uuid "55993260-1c9a-4bcf-ace5-7773e65bf7b5")
 
 ◊epigraph{
-    ◊qt[#:src "1984"
-        #:quote-src #t
-        #:author "George Orwell"
-        #:url 1984-book]{
+    ◊book-qt[1984-book]{
  If you want a picture of the future, imagine a boot stamping on a human face—for ever.
     }
 }
@@ -18,10 +15,10 @@
 In Sweden, and in the world in general, we're moving closer to the utopian cashless society.◊sn{utopia} Businesses are safer from theft as they don't have to store large amounts of cash in stores, and payments are faster and more convenient. Tax fraud and illegal transactions are also harder.
 
 ◊ndef["utopia"]{
-    An ◊link[utopia]{◊em{utopia}} is a dreamlike society that's perfect, or close to it. You might say that Heaven, the place some say you go to when you die, is an utopia.
+    An ◊def[utopia]{utopia} is a dreamlike society that's perfect, or close to it. You might say that Heaven, the place some say you go to when you die, is an utopia.
 }
 
-But it's not all good. We've already touched on several problems in earlier chapters, for example how ◊link[rel-undesirable]{legitimate businesses might get banned} in our attempts to ban illegal goods and services, or how the cashless society ◊link[rel-privacy]{is a privacy nightmare} yet ◊link[rel-swiss-bank]{tax evasion is still a huge problem}.  In this chapter I'll try to tie together some of these issues and paint a picture of how the cashless society isn't a dream---it's a nightmare. But it's a nightmare cryptocurrencies might help us avoid.
+But it's not all good. We've already touched on several problems in earlier chapters, for example how ◊link[undesirable_businesses]{legitimate businesses might get banned} in our attempts to ban illegal goods and services, or how the cashless society ◊link[private_money]{is a privacy nightmare} yet ◊link[swiss_bank_account_in_your_pocket]{tax evasion is still a huge problem}.  In this chapter I'll try to tie together some of these issues and paint a picture of how the cashless society isn't a dream---it's a nightmare. But it's a nightmare cryptocurrencies might help us avoid.
 
 ◊note-pos{utopia}
 
@@ -31,12 +28,12 @@ But it's not all good. We've already touched on several problems in earlier chap
 In their ever-increasingly invasive attempts to counter money-laundering, governments all over the world have limited the amount of cash you can deposit or withdraw from banks, cash purchases and even how much cash you can carry.  ◊link[kyc]{Know-your-customer} (KYC) laws for example require banks in the United States to ◊link[ctr]{report any cash deposits of $10,000}, or multiple transactions adding up to that amount, to the IRS. The customer then have to be ready to provide extensive documentation to prove where the money is coming from.◊sn{structuring}
 
 ◊ndef["structuring"]{
-    The act of managing your deposits in a way to avoid triggering the report is called ◊link[structuring]{◊em{structuring}} and is---you guessed it---◊link[structuring-illegal]{illegal}. Of course this might also affect ◊link[structuring-innocent]{innocent people} or legitimate businesses who just happen to deposit using a suspicious pattern.
+    The act of managing your deposits in a way to avoid triggering the report is called ◊def[structuring]{structuring} and is---you guessed it---◊link[structuring-illegal]{illegal}. Of course this might also affect ◊link[structuring-innocent]{innocent people} or legitimate businesses who just happen to deposit using a suspicious pattern.
 }
 
 In the U.S. you also have to declare cash amounts over $10,000 you want to leave or enter the country with, otherwise you'll face a high risk of ◊link[travel-forfeiture]{having it all confiscated}. Many countries have similar restrictions but North Macedonia takes it a step further: to prevent "money laundering and terrorism financing" cash payments above 30,000 MKD (around €500) ◊link[macedonia-limits-cash]{are banned}.
 
-Instead we're encouraged to use digital payments (ignoring the ◊link[rel-unbanked]{unfortunate without the ability} to do so), where banks are able to block large payments if they deem them suspicious---presumably to make it harder to do money laundering.◊sn{laundering}
+Instead we're encouraged to use digital payments (ignoring the ◊link[for_the_unbanked]{unfortunate without the ability} to do so), where banks are able to block large payments if they deem them suspicious---presumably to make it harder to do money laundering.◊sn{laundering}
 
 ◊ndef["laundering"]{
     It sounds hypocritical to me when a major U.S. bank laundered ◊strong{$378 billions} ◊link[us-banks-mexico-drug-gangs]{for Mexico's drug gangs}, the kind of gangs that leaves behind ◊link[gang-mass-grave]{enormous mass-graves}.
@@ -52,23 +49,47 @@ In many countries we're already close to the cashless society. As we saw in the 
 ◊note-pos{structuring}
 ◊note-pos{laundering}
 
-◊(define rel-undesirable "/undesirable_businesses.html")
-◊(define rel-global "global_currency.html")
-◊(define better-payments "/better_digital_payments.html")
-◊(define rel-privacy "/private_money.html")
-◊(define rel-unbanked "/for_the_unbanked.html")
-◊(define rel-swiss-bank "/swiss_bank_account_in_your_pocket.html")
-◊(define rel-seizures "/protection_against_government_confiscation.html")
-◊(define structuring "https://en.wikipedia.org/wiki/Structuring")
+◊(define structuring
+   (x-ref
+     "2020-01-05"
+     "https://en.wikipedia.org/wiki/Structuring"
+     "Wikipedia: Structuring"))
+◊(define structuring-illegal
+   (x-ref
+     "2020-01-05"
+     "https://www.law.cornell.edu/uscode/text/31/5324"
+     "31 U.S. Code § 5324. Structuring transactions to evade reporting requirement prohibited"))
+◊(define structuring-innocent
+   (x-ref
+     "2020-01-05"
+     "https://ij.org/case/connecticut-forfeiture/"
+     "Connecticut Forfeiture - IRS Seizes First, Questions Later—Much Later"))
+◊(define macedonia-limits-cash
+   (x-ref
+     "2020-01-05"
+     "http://www.china.org.cn/world/Off_the_Wire/2019-06/01/content_74845553.htm"
+     "North Macedonia limits payment in cash up to 500 euros"))
+◊(define ctr
+   (x-ref
+     "2020-01-05"
+     "https://en.wikipedia.org/wiki/Currency_transaction_report"
+     "Currency transaction report"))
+◊(define travel-forfeiture
+   (x-ref
+     "2020-01-05"
+     "https://ij.org/case/kentucky-civil-forfeiture/"
+     "Ordinary Americans Are Victims of Policing for Profit in Our Nation’s Airports"))
+◊(define us-banks-mexico-drug-gangs
+   (x-ref
+     "2020-01-05"
+     "https://www.theguardian.com/world/2011/apr/03/us-bank-mexico-drug-gangs"
+     "How a big US bank laundered billions from Mexico's murderous drug gangs"))
+◊(define gang-mass-grave
+   (x-ref
+     "2020-01-05"
+     "https://www.theguardian.com/world/2017/mar/14/mexico-skulls-mass-grave-drug-cartel-veracruz"
+     "More than 250 skulls found in 'enormous mass grave' in Mexico"))
 ◊; https://www.reddit.com/r/btc/comments/bvx83n/macedonia_bans_fiat_cash_payments_above_560/
-◊(define macedonia-limits-cash "http://www.china.org.cn/world/Off_the_Wire/2019-06/01/content_74845553.htm")
-◊(define structuring-illegal "https://www.law.cornell.edu/uscode/text/31/5324")
-◊(define ctr "https://en.wikipedia.org/wiki/Currency_transaction_report")
-◊(define kyc "https://en.wikipedia.org/wiki/Know_your_customer")
-◊(define structuring-innocent "https://ij.org/case/connecticut-forfeiture/")
-◊(define travel-forfeiture "https://ij.org/case/kentucky-civil-forfeiture/")
-◊(define us-banks-mexico-drug-gangs "https://www.theguardian.com/world/2011/apr/03/us-bank-mexico-drug-gangs")
-◊(define gang-mass-grave "https://www.theguardian.com/world/2017/mar/14/mexico-skulls-mass-grave-drug-cartel-veracruz")
 
 
 ◊subhead{A short story}
@@ -100,13 +121,13 @@ The worst part of this story is that it's not even that far-fetched, and all exa
 
 ◊ol{
     ◊li{
-        "Leech" is literally a synonym for "deadbeat", the name for Chinese people on the ◊link[china-social-credit2]{wrong side of their social credit system}. They also have trouble getting work and get shunned if their status is discovered.
+        "Leech" is literally a synonym for "deadbeat", the name for Chinese people on the ◊link[china-social-credit]{wrong side of their social credit system}. They also have trouble getting work and get shunned if their status is discovered.
     }
     ◊li{
         People have gotten thrown out of their homes for very minor things. For example a Michigan man underpaid his property taxes by ◊strong{$8.41}, and the county ◊link[michigan-man-house]{seized his property, sold it and kept the profits}.◊sn{asset-forfeiture}
 
         ◊ndef["asset-forfeiture"]{
-            This is related to civil asset forfeiture, which we'll look at in the ◊link[rel-seizures]{next chapter}.
+            This is related to civil asset forfeiture, which we'll look at in the ◊link[protection_against_government_confiscation]{next chapter}.
         }
 
         ◊note-pos{asset-forfeiture}
@@ -135,18 +156,25 @@ There are already companies that collect this kind of information, and sell it f
 
 ◊note-pos{no-privacy}
 
-◊(define wells-fargo-closed "https://www.cnbc.com/2018/08/22/wells-fargo-closes-bank-account-of-candidate-who-supports-marijuana.html")
-◊(define china-social-credit2 "https://www.inkstonenews.com/china/chinas-13-million-discredited-individuals-face-discrimination-thanks-social-credit-system/article/3003319")
-◊(define michigan-man-house "https://reason.com/2019/11/06/a-michigan-man-underpaid-his-property-taxes-by-8-41-the-county-seized-his-property-sold-it-and-kept-the-profits/")
+◊(define wells-fargo-closed
+   (x-ref
+     "2020-01-05"
+     "https://www.cnbc.com/2018/08/22/wells-fargo-closes-bank-account-of-candidate-who-supports-marijuana.html"
+     "A candidate backed medical marijuana. Wells Fargo closed her bank account."))
+◊(define michigan-man-house
+   (x-ref
+     "2020-01-05"
+     "https://reason.com/2019/11/06/a-michigan-man-underpaid-his-property-taxes-by-8-41-the-county-seized-his-property-sold-it-and-kept-the-profits/"
+     "A Michigan Man Underpaid His Property Taxes By $8.41. The County Seized His Property, Sold It—and Kept the Profits."))
 
 
 ◊subhead{A dystopia}
 
-When you look closer at an utopia, you'll often find that it's not such a good place after all. You might even argue that an utopia cannot exist, since a society contains people with different desires that cannot be fulfilled simultaneously. (Is the Nazi Arian society an utopia? Maybe for the Nazis, but certainly not for the Jews.)◊sn{other-ex}
+When you look closer at an ◊def[utopia]{utopia}, you'll often find that it's not such a good place after all. You might even argue that an utopia cannot exist, since a society contains people with different desires that cannot be fulfilled simultaneously. (Is the Nazi Arian society an utopia? Maybe for the Nazis, but certainly not for the Jews.)◊sn{other-ex}
 
-The cashless society isn't an utopia, but a dystopia that'll suppress the lowest class harder than we can imagine. If you cannot use the same money as others, you cannot have a home, pay your bills or buy food. You cannot get a normal job or even beg for money, since you cannot use the money they give you. You'll be completely closed off from the rest of society.◊sn{what-then?}
+The cashless society isn't an utopia, but a ◊def[dystopia]{dystopia} that'll suppress the lowest class harder than we can imagine. If you cannot use the same money as others, you cannot have a home, pay your bills or buy food. You cannot get a normal job or even beg for money, since you cannot use the money they give you. You'll be completely closed off from the rest of society.◊sn{what-then?}
 
-But you wouldn't be alone. ◊link[brits-struggle]{25 million Brits} would struggle in a cashless society and China has already ◊link[china-bans-23m]{banned millions from buying travel tickets} via their ◊link[china-social-credit #:quote #t]{social credit} system. And don't forget about the ◊link[rel-unbanked]{1.7 billion unbanked adults} in the world, who don't fit into a cashless society.
+But you wouldn't be alone. ◊link[brits-struggle]{25 million Brits} would struggle in a cashless society and China has already ◊link[china-bans-23m]{banned millions from buying travel tickets} via their ◊link[china-social-credit2 #:quote #t]{social credit} system. And don't forget about the ◊link[for_the_unbanked]{1.7 billion unbanked adults} in the world, who don't fit into a cashless society.
 
 ◊note-pos{other-ex}
 ◊note-pos{what-then?}
@@ -161,17 +189,52 @@ But you wouldn't be alone. ◊link[brits-struggle]{25 million Brits} would strug
     You might be able to interact with the normal society by bartering, but you'll probably turn to illegal activities like theft or prostitution.
 }
 
-◊(define brits-struggle "https://www.which.co.uk/news/2018/12/25m-brits-would-struggle-in-a-cashless-society/")
-◊(define china-bans-23m "https://www.theguardian.com/world/2019/mar/01/china-bans-23m-discredited-citizens-from-buying-travel-tickets-social-credit-system")
-◊(define china-social-credit "https://www.npr.org/sections/money/2018/10/26/661163105/episode-871-blacklisted-in-china?t=1577261607993")
+◊(define brits-struggle
+   (x-ref
+     "2020-01-05"
+     "https://www.which.co.uk/news/2018/12/25m-brits-would-struggle-in-a-cashless-society/"
+     "25 million Brits would struggle in a cashless society"))
+◊(define china-bans-23m
+   (x-ref
+     "2020-01-05"
+     "https://www.theguardian.com/world/2019/mar/01/china-bans-23m-discredited-citizens-from-buying-travel-tickets-social-credit-system"
+     "China bans 23m from buying travel tickets as part of 'social credit' system"))
+◊(define china-social-credit2
+   (x-ref
+     "2020-01-05"
+     "https://www.npr.org/sections/money/2018/10/26/661163105/episode-871-blacklisted-in-china?t=1577261607993"
+     "Planet Money: Episode 871, Blacklisted In China"))
 
-◊(define demolition-man "https://www.imdb.com/title/tt0106697/")
-◊(define hot-fuzz "https://www.imdb.com/title/tt0425112/")
-◊(define hunger-games "https://en.wikipedia.org/wiki/The_Hunger_Games")
-◊(define harry-potter "https://en.wikipedia.org/wiki/Harry_Potter")
-◊(define money-properties "/what_is_money.html#what-properties-does-good-money-have?")
-◊(define utopia "https://en.wikipedia.org/wiki/Utopia")
-◊(define dystopia "https://en.wikipedia.org/wiki/Dystopia")
+◊(define demolition-man
+   (x-ref
+     "2020-01-05"
+     "https://www.imdb.com/title/tt0106697/"
+     "Demolition Man (1993)"))
+◊(define hot-fuzz
+   (x-ref
+     "2020-01-05"
+     "https://www.imdb.com/title/tt0425112/"
+     "Hot Fuzz (2007)"))
+◊(define hunger-games
+   (x-ref
+     "2020-01-05"
+     "https://en.wikipedia.org/wiki/The_Hunger_Games"
+     "Wikipedia: The Hunger Games"))
+◊(define harry-potter
+   (x-ref
+     "2020-01-05"
+     "https://en.wikipedia.org/wiki/Harry_Potter"
+     "Wikipedia: Harry Potter"))
+◊(define utopia
+   (x-ref
+     "2020-01-05"
+     "https://en.wikipedia.org/wiki/Utopia"
+     "Wikipedia: Utopia"))
+◊(define dystopia
+   (x-ref
+     "2020-01-05"
+     "https://en.wikipedia.org/wiki/Dystopia"
+     "Wikipedia: Dystopia"))
 
 
 ◊subhead{A possible salvation}

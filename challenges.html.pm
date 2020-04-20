@@ -3,7 +3,7 @@
 ◊(define-meta title "Challenges for cryptocurrencies")
 ◊(define-meta subtitle "Large unsolved problems with cryptocurrencies")
 ◊(define-meta published "2020-03-17T20:26:28+01:00")
-◊(define-meta updated "2020-03-17T20:26:28+01:00")
+◊(define-meta updated "2020-04-19T10:18:24+02:00")
 ◊(define-meta uuid "c13d8405-fb3e-411c-b035-aae08eedddf1")
 
 While cryptocurrencies do some things very well, there are several hard unsolved problems with cryptocurrencies. Here's a description of some of them:
@@ -13,7 +13,7 @@ While cryptocurrencies do some things very well, there are several hard unsolved
 
 While this analogy might sound strange, money has an important similarity to social networks like Facebook, Twitter or Reddit: almost all their value come from them being used by others.
 
-This is called the ◊def[#:src network-effect]{network effect}, and Wikipedia has a succinct way to describe it:
+This is called the ◊def[network-effect]{network effect}, and Wikipedia has a succinct way to describe it:
 
 ◊qt[#:src "Wikipedia"
     #:url network-effect]{
@@ -58,9 +58,11 @@ For these reasons I think the lack of adoption is the biggest problem cryptocurr
 ◊note-pos[#:top -2]{too-soon}
 
 
-◊(define network-effect "https://en.wikipedia.org/wiki/Network_effect")
-◊(define money-functions "/what_is_money.html#what-functions-does-money-serve?")
-◊(define how-well-money-functions "/are_cryptocurrencies_money.html#how-well-do-other-forms-of-money-function?")
+◊(define network-effect
+   (x-ref
+     "2020-03-17"
+     "https://en.wikipedia.org/wiki/Network_effect"
+     "Wikipedia: Network effect"))
 
 
 ◊subhead{Privacy and fungibility}
@@ -73,7 +75,11 @@ Bitcoin, like most cryptocurrencies, uses a public ledger where all transactions
     There are also companies like ◊link[chainalysis]{Chainalysis} that work to track your cryptocurrency assets and to analyze your financial activity.
 }
 
-◊(define chainalysis "https://www.chainalysis.com/")
+◊(define chainalysis
+   (x-ref
+     "2020-03-17"
+     "https://www.chainalysis.com/"
+     "The Blockchain Analysis Company - Chainalysis"))
 
 ◊img[#:src "/images/coin-tracing.png"]{
     After the merchant receives a payment from John, the merchant can see that John has sent 13 BTC to another address and that John still has 40 - 1 - 13 = 26 BTC on the original address.
@@ -106,10 +112,10 @@ They're not perfect because you can still have a transaction graph, and you migh
 
 Both mixing and the shielded transactions in ZCash has a major problem: people need to actively choose to use them. This is annoying for users but it's also ◊link[zcash-problem]{bad for privacy} (you can always try to match inputs and outputs even with a perfect black box mixer). It also raises suspicion and people might ask why you're trying to hide your coins.
 
-With this privacy scheme governments can still ◊link[blacklisting]{blacklist certain addresses}, which might in the long run break ◊em{fungibility} as coins associated with those addresses become worth less than others.◊sn{fungibility}
+With this privacy scheme governments can still ◊link[blacklisting]{blacklist certain addresses}, which might in the long run break ◊def{fungibility} as coins associated with those addresses become worth less than others.◊sn{fungibility}
 
 ◊ndef["fungibility"]{
-    As noted in the chapter ◊link[what-is-money]{What is money?} fungibility is a core property of money. This is why it's wrong to label cryptocurrencies trying to address this problem as "privacy coins"---the issue goes beyond privacy.
+    As noted in the chapter ◊link[what_is_money]{What is money?} fungibility is a core property of money. This is why it's wrong to label cryptocurrencies trying to address this problem as "privacy coins"---the issue goes beyond privacy.
 }
 
 ◊link[Monero]{Monero} tries to solve this by hiding amounts and obscuring addresses for all transactions.
@@ -122,7 +128,7 @@ With this privacy scheme governments can still ◊link[blacklisting]{blacklist c
     The merchant who receives the transaction can see which of the inputs is the correct one, the amount and a tag saying who the payment is from. (Alternatively the merchant could've given John a unique address and skip the transcation tagging.)
 }
 
-You can still verify the proof-of-work and even the coin supply on Monero, although verifying the coin supply isn't as simple as on a transparent blockchain. For more technical details on Monero I recommend ◊link[mastering-monero #:quote #t]{Mastering Monero} written by SerHack.
+You can still verify the proof-of-work and even the coin supply on Monero, although verifying the coin supply isn't as simple as on a transparent blockchain. For more technical details on Monero I recommend ◊(book-link mastering-monero-book) written by SerHack.
 
 There are other ideas of how to improve privacy and fungibility for cryptocurrencies, and cryptocurrencies of the future might work differently to what I've described here. There are weaknesses to the solutions we've seen so far and they also come with disadvantages. For example transactions in Monero are larger than transactions in Bitcoin, making Monero even more difficult to scale. But research is ongoing and I'm hopeful.
 
@@ -133,16 +139,31 @@ There are other ideas of how to improve privacy and fungibility for cryptocurren
 
 ◊;Cryptocurrencies can be used anonymously---your identity isn't tied to your addresses. But as with all tools, cryptocurrencies won't ◊em{guarantee} your anonymity. For example if you try to buy a VPN anonymously with Bitcoin, your identity might still be revealed if the coins can be traced back to an exchange that have your name. Or they might trace your IP you purchased it with, or track browser cookies or you might just make a silly mistake like associate your name with the email you sign up with.
 
-◊(define Monero "https://www.getmonero.org/")
-◊(define blockchair "https://blockchair.com/")
-◊(define zcash "https://z.cash/technology/")
-◊(define coinjoin "https://en.bitcoin.it/wiki/CoinJoin")
-◊(define rich-list "https://blockchair.com/bitcoin/addresses")
-◊(define zcash-problem "http://jeffq.com/blog/on-the-linkability-of-zcash-transactions/")
-◊(define blacklisting "https://home.treasury.gov/news/press-releases/sm556")
-◊(define fungibility "/what_is_money.html#what-properties-does-good-money-have?")
-◊(define mastering-monero "https://masteringmonero.com/")
-◊(define what-is-money "/what_is_money.html")
+◊(define zcash
+   (x-ref
+     "2020-03-17"
+     "https://z.cash/technology/"
+     "How it works | Zcash"))
+◊(define coinjoin
+   (x-ref
+     "2020-03-17"
+     "https://en.bitcoin.it/wiki/CoinJoin"
+     "CoinJoin"))
+◊(define rich-list
+   (x-ref
+     "2020-03-17"
+     "https://blockchair.com/bitcoin/addresses"
+     "Blockchair Bitcoin addresses"))
+◊(define zcash-problem
+   (x-ref
+     "2020-03-17"
+     "http://jeffq.com/blog/on-the-linkability-of-zcash-transactions/"
+     "On the linkability of Zcash transactions"))
+◊(define blacklisting
+   (x-ref
+     "2020-03-17"
+     "https://home.treasury.gov/news/press-releases/sm556"
+     "Treasury Designates Iran-Based Financial Facilitators of Malicious Cyber Activity and for the First Time Identifies Associated Digital Currency Addresses"))
 
 
 ◊subhead{Scalability}
@@ -194,7 +215,11 @@ There are a number of technical pain points that needs to be improved to scale a
     As of 2020-03-04 the total ◊link[btc-blockchain-size]{blockchain size of Bitcoin} is 265 GB. That's not small, but a 1 TB SSD harddisk costs around $120 and can store the entire BTC blockchain for almost 15 more years (it grows around 50 GB/year).
 }
 
-◊(define btc-blockchain-size "https://www.blockchain.com/charts/blocks-size")
+◊(define btc-blockchain-size
+   (x-ref
+     "2020-03-17"
+     "https://www.blockchain.com/charts/blocks-size"
+     "Size of the Bitcoin blockchain"))
 
 ◊ndef["validation-less-mining"]{
     Miners can delay transaction validation and only validate the POW of a block and start mining it directly. This is a fair assumption as it's very expensive to produce a valid POW for a block.
@@ -221,25 +246,52 @@ It may ultimately be impossible to scale a cryptocurrency so that ◊em{everyone
 
 ◊; 12362000000/(365 * 24 * 60 * 60)
 ◊; 391.9964485032978
-◊(define paypal-transactions "https://www.statista.com/statistics/218495/paypals-net-number-of-payments-per-quarter/")
+◊(define paypal-transactions
+   (x-ref
+     "2020-03-17"
+     "https://www.statista.com/statistics/218495/paypals-net-number-of-payments-per-quarter/"
+     "PayPal's net number of payments from 1st quarter 2014 to 4th quarter 2019"))
 ◊; 150 million tx/day
 ◊; 150000000/(24 *60*60)
 ◊; 1736.111111111111
-◊(define visa-transactions "https://usa.visa.com/run-your-business/small-business-tools/retail.html")
+◊(define visa-transactions
+   (x-ref
+     "2020-03-17"
+     "https://usa.visa.com/run-your-business/small-business-tools/retail.html"
+     "Small Business Retail | VISA"))
 
-
-◊(define avalanche "https://avalanchelabs.org/QmT1ry38PAmnhparPUmsUNHDEGHQusBLD6T5XJh4mUUn3v.pdf")
-◊(define hearn "https://blog.plan99.net/the-resolution-of-the-bitcoin-experiment-dabb30201f7?gi=c2a62f310034")
-◊(define bch "https://www.bitcoin.com/what-is-bitcoin-cash/")
-◊(define history-blocksize "https://hackernoon.com/the-great-bitcoin-scaling-debate-a-timeline-6108081dbada")
-◊(define luke-300kb "https://news.bitcoin.com/core-developers-300kb-block-proposal-bolstered-in-bid-to-push-lightning-adoption/")
+◊(define avalanche
+   (x-ref
+     "2020-03-17"
+     "https://avalanchelabs.org/QmT1ry38PAmnhparPUmsUNHDEGHQusBLD6T5XJh4mUUn3v.pdf"
+     "Avalanche Labs: Scalable and Probabilistic Leaderless BFTConsensus through Metastability"))
+◊(define hearn
+   (x-ref
+     "2020-03-17"
+     "https://blog.plan99.net/the-resolution-of-the-bitcoin-experiment-dabb30201f7?gi=c2a62f310034"
+     "The resolution of the Bitcoin experiment"))
+◊(define bch
+   (x-ref
+     "2020-04-19"
+     "https://www.bitcoin.com/get-started/what-is-bitcoin-cash/"
+     "What is Bitcoin Cash?"))
+◊(define history-blocksize
+   (x-ref
+     "2020-03-17"
+     "https://hackernoon.com/the-great-bitcoin-scaling-debate-a-timeline-6108081dbada"
+     "The Great Bitcoin Scaling Debate — A Timeline"))
+◊(define luke-300kb
+   (x-ref
+     "2020-03-17"
+     "https://news.bitcoin.com/core-developers-300kb-block-proposal-bolstered-in-bid-to-push-lightning-adoption/"
+     "Core Developer's 300kb Block Proposal Bolstered in Bid to Push Lightning Adoption"))
 
 
 ◊subhead{Energy usage}
 
 Do you know how you can have two conflicting beliefs at the same time? For example you might know for a fact that eating too much candy is very bad for your health---and you really would like to loose weight---but you still eat it. Or how you think that cheating for an exam is wrong, but you still do it because "you had to".
 
-This is called ◊def[#:src cognitive_dissonance]{cognitive disonance} and it can cause great discomfort when we have to face it. It's also something I, as a cryptocurrency supporter and an environmentalist, struggle with.◊sn{coping}
+This is called ◊def[cognitive_dissonance]{cognitive disonance} and it can cause great discomfort when we have to face it. It's also something I, as a cryptocurrency supporter and an environmentalist, struggle with.◊sn{coping}
 
 ◊ndef["coping"]{
     When we experience the uncomfortable dissonance we try to reduce it in some way, which often happens unconsciously. We might for example downplay the importance on one side of the conflict ("it's just one chocolate bar"), we might rationalize it in some way ("I'll exercise harder later") or we might suppress the issue entirely (stop talking to anyone who reminds you that you're on a diet).
@@ -262,9 +314,21 @@ The issue is that cryptocurrencies with proof-of-work use a lot of energy. Bitco
 ◊;5564 Twh China
 
 
-◊(define energy-btc "https://www.blockchainanalytics.pro/btc/electricity-consumption/")
-◊(define worlddata "https://www.worlddata.info/")
-◊(define coinshares-mining "https://coinsharesgroup.com/research/bitcoin-mining-network-december-2019")
+◊(define energy-btc
+   (x-ref
+     "2020-03-17"
+     "https://www.blockchainanalytics.pro/btc/electricity-consumption/"
+     "Bitcoin (BTC) network electricity consumption"))
+◊(define worlddata
+   (x-ref
+     "2020-03-17"
+     "https://www.worlddata.info/"
+     "WorldData: The world in numbers"))
+◊(define coinshares-mining
+   (x-ref
+     "2020-03-17"
+     "https://coinsharesgroup.com/research/bitcoin-mining-network-december-2019"
+     "Bitcoin Mining Network Report December 2019 | Research | CoinShares"))
 
 This is absolutely a big problem, but there are some important points we need to keep in mind:
 
@@ -301,7 +365,11 @@ There's no other way to drastically reduce the energy usage than to replace proo
 
 If we're stuck with proof-of-work then we just have to accept that it uses a lot of energy, and we have to decide if it's worth it. Are the use-cases valuable enough to warrant spending this much energy? Or are the skeptics right, and Bitcoin mining is just a terrible waste of energy?
 
-◊(define cognitive_dissonance "https://en.wikiquote.org/wiki/Cognitive_dissonance")
+◊(define cognitive_dissonance
+   (x-ref
+     "2020-03-17"
+     "https://en.wikiquote.org/wiki/Cognitive_dissonance"
+     "Wikipedia: Cognitive dissonance"))
 
 
 ◊; https://www.reddit.com/r/btc/comments/f9rhmv/researh_in_2017_bitcoin_network_consumed_5_twh_of/
@@ -330,7 +398,7 @@ An exhaustive list and description of all problems would require much more than 
     }
     ◊li{Confirmation time
 
-        Even though I did write ◊link[cheaper-faster]{that cryptocurrencies are faster} than alternatives, the system isn't fool-proof. While 0-conf is often good enough, if you need more security then you sometimes need to wait up to an hour or two before your first confirmation.
+        Even though I did write ◊link[cheaper_faster]{that cryptocurrencies are faster} than alternatives, the system isn't fool-proof. While 0-conf is often good enough, if you need more security then you sometimes need to wait up to an hour or two before your first confirmation.
     }
 }
 
@@ -354,5 +422,3 @@ An exhaustive list and description of all problems would require much more than 
 ◊;subhead{Regulation}
 ◊;subhead{Confirmation time}
 
-◊(define snake-oil "/look_out_for_snake_oil.html")
-◊(define cheaper-faster "/cheaper_faster.html")

@@ -8,16 +8,19 @@
 
 ◊epigraph{
   ◊qt[#:author "Julian Assange"
-      #:url "https://www.reddit.com/r/technology/comments/2ghp54/i_am_julian_assange_ama_about_my_new_book_when/ckjasj0/"
+      #:url julian
       #:date "Sep 16, 2014"]{
     Bitcoin is an extremely important innovation, but not in the way most people think. Bitcoin's real innovation is a globally verifiable proof publishing at a certain time. The whole system is built on that concept and many other systems can also be built on it. The blockchain nails down history, breaking Orwell's dictum of "He who controls the present controls the past and he who controls the past controls the future."
   }
 }
 
-In ◊link[how-do-cryptos-work]{How do cryptocurrencies work?} we saw that cryptocurrencies work by preventing ◊link[double-spending]{double spending} coins, and the system chooses one of two potentially valid transactions. While doing so it also creates an order between blocks and transactions, which can be used as the basis for a decentralized timestamping service.
+◊(define julian
+   (x-ref
+     "2019-09-21"
+     "https://www.reddit.com/r/technology/comments/2ghp54/i_am_julian_assange_ama_about_my_new_book_when/ckjasj0/"
+     "Julian Assange on Reddit"))
 
-◊(define how-do-cryptos-work "/how_do_cryptocurrencies_work.html")
-◊(define double-spending "/how_do_cryptocurrencies_work.html#copying-a-coin-&-double-spending")
+In ◊link[how_do_cryptocurrencies_work]{How do cryptocurrencies work?} we saw that cryptocurrencies work by preventing ◊link[double-spending]{double spending} coins, and the system chooses one of two potentially valid transactions. While doing so it also creates an order between blocks and transactions, which can be used as the basis for a decentralized timestamping service.
 
 
 ◊subhead{What is a timestamping service?}
@@ -30,9 +33,16 @@ A modern example is the ◊link[wayback-machine]{Wayback Machine}, a service whi
     The DeLorean is the time machine in the ◊em{Back To The Future} movies. They're amazing movies but unfortunately the ◊link[back-to-the-future-timetravel]{time travel theory isn't really sound}.
 }
 
-◊(define back-to-the-future-timetravel "https://www.overthinkingit.com/2009/01/16/how-time-travel-works-in-back-to-the-future/")
-
-◊(define delorean "https://en.wikipedia.org/wiki/DeLorean_time_machine")
+◊(define back-to-the-future-timetravel
+  (x-ref
+    "2019-09-21"
+    "https://www.overthinkingit.com/2009/01/16/how-time-travel-works-in-back-to-the-future/"
+    "How Time Travel Works (and doesn’t) in Back To The Future [BTTF Week]"))
+◊(define delorean
+  (x-ref
+    "2019-09-21"
+    "https://en.wikipedia.org/wiki/DeLorean_time_machine"
+    "Wikipedia: Deloran time machine"))
 
 Let's travel back in time and look at the site ◊link[hn]{Hacker News}, a tech oriented site where you can discuss news stores. I've lost a lot of time on the site reading insightful comments or getting upset at other less insightful comments.◊sn{hn-bitcoin}
 
@@ -43,19 +53,32 @@ Let's travel back in time and look at the site ◊link[hn]{Hacker News}, a tech 
 }
 
 ◊hn-html{
-    The top three stories on ◊link[hn-wayback]{Hacker News on Mars 1st, 2011} according to the Wayback Machine.  
+    The top three stories on ◊link[hn-wayback-ref]{Hacker News on Mars 1st, 2011} according to the Wayback Machine.  
     I tried to reproduce the site appearance, but it's not pixel perfect.
 }
 
-As long as we can trust the Wayback Machine (and I do consider them generally trustworthy) we can be fairly sure this is correct. Letting a trusted party like the Wayback Machine handle timestamping, called ◊link[trusted-timestamping]{◊em{trusted timestamping}}, is a solved problem with different kinds of standards but---as the name implies---there's always the caveat of requiring a trusted party to verify the timestamps.
+As long as we can trust the Wayback Machine (and I do consider them generally trustworthy) we can be fairly sure this is correct. Letting a trusted party like the Wayback Machine handle timestamping, called ◊def[trusted-timestamping]{trusted timestamping}, is a solved problem with different kinds of standards but---as the name implies---there's always the caveat of requiring a trusted party to verify the timestamps.
 
 ◊note-pos[#:top -36]{back-to-the-future}
 ◊note-pos[#:top -29]{hn-bitcoin}
 
-◊(define wayback-machine "https://web.archive.org/")
-◊(define trusted-timestamping "https://en.wikipedia.org/wiki/Trusted_timestamping")
-◊(define hn-wayback "https://web.archive.org/web/20110301181127/http://news.ycombinator.com/")
-◊(define hn "http://news.ycombinator.com/")
+◊(define trusted-timestamping
+  (x-ref
+    "2019-09-21"
+    "https://en.wikipedia.org/wiki/Trusted_timestamping"
+    "Wikipedia: Trusted timestamping"))
+◊(define hn-wayback
+    "https://web.archive.org/web/20110301181127/http://news.ycombinator.com/")
+◊(define hn-wayback-ref
+  (x-ref
+    "2019-09-21"
+    hn-wayback
+    "Hacker News (Wayback Machine, Mars 1st, 2011)"))
+◊(define hn
+  (x-ref
+    "2019-09-21"
+    "http://news.ycombinator.com/"
+    "Hacker News"))
 
 
 ◊subhead{Usage examples}
@@ -92,19 +115,19 @@ What is a timestamping service useful for? Here are some examples:
 ◊note-pos[#:top -25]{wiki-tensio}
 ◊note-pos[#:top -12]{wills}
 
-◊(define rel-bug "#a-real-life-example")
+◊(define rel-bug `("#a-real-life-example" "A real-life example"))
 
 
 ◊subhead{Decentralized timestamping}
 
-With cryptocurrencies it's possible to do away with the trusted party requirement and offer a decentralized timestamping service. We know that there's ◊link[how-do-cryptos-work]{no single trusted party} that manages a cryptocurrency and instead many cooperate and reach consensus together. Therefore we only need to decide how to embed verifiable data and timestamps into a cryptocurrency:
+With cryptocurrencies it's possible to do away with the trusted party requirement and offer a decentralized timestamping service. We know that there's ◊link[how_do_cryptocurrencies_work]{no single trusted party} that manages a cryptocurrency and instead many cooperate and reach consensus together. Therefore we only need to decide how to embed verifiable data and timestamps into a cryptocurrency:
 
 ◊ol{
   ◊li{Prepare data.
 
       Because we might want to reveal our message at a later date we don't want to store the message in the clear. We can use an anagram like Robert Hook used, some kind of encryption with a key or a ◊link[hash-functions]{hash function} to obfuscate the message.
 
-      After we have the obfuscated message we want to verify we can ◊link[embed-data-how]{embed it into a cryptocurrency}.
+      After we have the obfuscated message we want to verify we can ◊link[embedding-data]{embed it into a cryptocurrency}.
   }
   ◊li{Retrieve timestamps.
 
@@ -143,39 +166,64 @@ With cryptocurrencies it's possible to do away with the trusted party requiremen
     ◊ndef["small-difference"]{
         In practice well connected nodes (with up to date clocks) will display a small time difference because blocks usually travel quickly through the network.  A ◊nbsp{12 minute} time difference is extremely unlikely and unwanted, I only used it as an illustrative example.
 
-        The network requires that blocks travel between miners quickly otherwise it increases the risk for ◊link[forks?]{forks} or hurt smaller miners disproportionally.
+        The network requires that blocks travel between miners quickly otherwise it increases the risk for ◊link[forks]{forks} or hurt smaller miners disproportionally.
     }
   }
 }
 
-◊(define forks? "/how_do_cryptocurrencies_work.html#forks")
-◊(define embed-data-how "/extensions.html#embedding-data")
-◊(define block-timestamp "https://en.bitcoin.it/wiki/Block_timestamp")
+◊(define block-timestamp
+  (x-ref
+    "2019-09-21"
+    "https://en.bitcoin.it/wiki/Block_timestamp"
+    "Block timestamp"))
 
 This way we have the basis for a decentralized timestamping service. Insert an obfuscated message in a transaction and afterwards you can reveal the message and use the creation time of the block the transaction is included in as your timestamp. Also comparing two messages to find which the oldest is very simple: just check which block came first, there's no need to look at a timestamp.
 
 It's much easier to use (I'll go through an example ◊link[rel-easy-example]{step-by-step} at the end of the chapter) compared to getting your message included in a publication like Hook did. You also don't have to trust a timestamping service---the solution is fully opaque and you can verify it yourself.
 
-◊(define rel-easy-example "#we-can-do-it-ourselves")
+◊(define rel-easy-example
+  `("#we-can-do-it-ourselves" "We can do it ourselves"))
 
-◊(define partial-order "https://en.wikipedia.org/wiki/Partially_ordered_set")
-
-◊(define blockchair-ex "https://blockchair.com/bitcoin/block/594760")
-◊(define btc-ex "https://btc.com/0000000000000000001350917aa3ff6afb6900fc6a00f3f208a2dea4e7608ad0")
-◊(define viabtc-ex "https://explorer.viabtc.com/btc/block/0000000000000000001350917aa3ff6afb6900fc6a00f3f208a2dea4e7608ad0")
-
-◊(define ceiiinosssttuv "https://www.stem.org.uk/system/files/elibrary-resources/legacy_files_migrated/8469-catalyst_20_2_438.pdf")
-◊(define hookes-law "https://en.wikipedia.org/wiki/Hooke%27s_law")
-◊(define multiple-discoveries "https://en.wikipedia.org/wiki/List_of_multiple_discoveries")
-◊(define leibniz-newton "https://en.wikipedia.org/wiki/Leibniz%E2%80%93Newton_calculus_controversy")
-◊(define 600-microseconds "https://medium.com/@awemany/600-microseconds-b70f87b0b2a6")
-◊(define inflation-bug "https://nvd.nist.gov/vuln/detail/CVE-2018-17144")
-◊(define inflation-bug-reddit "https://www.reddit.com/r/btc/comments/9huu11/600_microseconds_how_cve201817144_was_discovered/")
-◊(define inflation-bug-timestamp "https://originstamp.org/s/5c45a1ba957362a2ba97c9f8c48d4d59d4fa990945b7094a8d2a98c3a91ed9b6")
-
-◊; Proof of invention legal in France.
-◊(define soleau-envelope "https://en.wikipedia.org/wiki/Soleau_envelope")
-◊(define gpg-sign "https://www.digitalocean.com/community/tutorials/how-to-use-gpg-to-encrypt-and-sign-messages")
+◊(define partial-order
+  (x-ref
+    "2019-09-21"
+    "https://en.wikipedia.org/wiki/Partially_ordered_set"
+    "Wikipedia: Partially ordered set"))
+◊(define ceiiinosssttuv
+  (x-ref
+    "2019-09-21"
+    "https://www.stem.org.uk/system/files/elibrary-resources/legacy_files_migrated/8469-catalyst_20_2_438.pdf"
+    "Hooke’s law of springs (PDF)"))
+◊(define multiple-discoveries
+  (x-ref
+    "2019-09-21"
+    "https://en.wikipedia.org/wiki/List_of_multiple_discoveries"
+    "Wikipedia: List of multiple discoveries"))
+◊(define 600-microseconds
+  (x-ref
+    "2019-09-21"
+    "https://medium.com/@awemany/600-microseconds-b70f87b0b2a6"
+    "600 Microseconds: A perspective from the Bitcoin Cash and Bitcoin Unlimited developer who discovered CVE-2018–17144"))
+◊(define inflation-bug
+  (x-ref
+    "2019-09-21"
+    "https://nvd.nist.gov/vuln/detail/CVE-2018-17144"
+    "CVE-2018-17144 Detail"))
+◊(define inflation-bug-reddit
+  (x-ref
+    "2019-09-21"
+    "https://www.reddit.com/r/btc/comments/9huu11/600_microseconds_how_cve201817144_was_discovered/"
+    "600 Microseconds discussion on Reddit"))
+◊(define inflation-bug-timestamp
+  (x-ref
+    "2019-09-21"
+    "https://originstamp.org/s/5c45a1ba957362a2ba97c9f8c48d4d59d4fa990945b7094a8d2a98c3a91ed9b6"
+    "Timestamp Information: 5c45a1ba957362a2ba97c9f8c48d4d59d4fa990945b7094a8d2a98c3a91ed9b6"))
+◊(define gpg-sign
+  (x-ref
+    "2019-09-21"
+    "https://www.digitalocean.com/community/tutorials/how-to-use-gpg-to-encrypt-and-sign-messages"
+    "How To Use GPG to Encrypt and Sign Messages"))
 
 
 ◊subhead{A real-life example}
@@ -266,8 +314,16 @@ Let's now encode and timestamp it using the Bitcoin Cash blockchain:
 
 With that our timestamp is prepared and nobody can see our original message, only the SHA-256 hash. When we're ready to reveal our message to the world, all we have to do is show everyone the message and how to verify the timestamp:
 
-◊(define transaction-ex "https://blockchair.com/bitcoin-cash/transaction/586783e17fadace136365490fd83ba59390ca55e7205ee74fbc7db2daa012ad3")
-◊(define transaction-ex2 "https://bch.btc.com/586783e17fadace136365490fd83ba59390ca55e7205ee74fbc7db2daa012ad3")
+◊(define transaction-ex
+  (x-ref
+    "2019-09-21"
+    "https://blockchair.com/bitcoin-cash/transaction/586783e17fadace136365490fd83ba59390ca55e7205ee74fbc7db2daa012ad3"
+    "Bitcoin Cash transaction 586783e17fadace136365490fd83ba59390ca55e7205ee74fbc7db2daa012ad3"))
+◊(define transaction-ex2
+  (x-ref
+    "2019-09-21"
+    "https://bch.btc.com/586783e17fadace136365490fd83ba59390ca55e7205ee74fbc7db2daa012ad3"
+    "Bitcoin Cash transaction 586783e17fadace136365490fd83ba59390ca55e7205ee74fbc7db2daa012ad3"))
 
 ◊ol{
     ◊li{Locate the hash in the blockchain.
@@ -287,9 +343,6 @@ With that our timestamp is prepared and nobody can see our original message, onl
         According to ◊link[transaction-ex]{Blockchair} the transaction was included in a block mined 20:17 September 15, 2019 (UTC). Verifying the timestamp with other blockexplorers or full nodes is left as an exercise to the reader, just be cautious of timezone differences.
     }
 }
-
-◊(define opentimestamps "https://opentimestamps.org/")
-◊(define timestamping-tech "https://news.bitcoin.com/the-tech-to-timestamp-data-in-bitcoins-blockchain-has-evolved-far-past-single-file-uploads/")
 
 We now have a trusted timestamp for our message, backed by math instead of trust.
 

@@ -1,6 +1,5 @@
 Completeness:
-+ Rewrite link handling (automatically format books and signal missing alt-text)
-+ Alt-text for all links
++ Book citations should include a page number
 
 Further:
 + Examine how to generate epub
@@ -41,6 +40,8 @@ Style:
 - Use ◊def{} for all definitions and style them similarly
 
 Markup
++ Published and modified dates should be visible in chapters
+
 + Use <cite> when refering to books, or things with titles
   https://developer.mozilla.org/en-US/docs/Web/HTML/Element/cite
   See the financial crisis, where we refer to things inside text.
