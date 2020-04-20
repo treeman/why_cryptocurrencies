@@ -56,6 +56,14 @@
         <header>
           <h1>◊|title|</h1>
           <h2>◊|subtitle|</h2>
+          <div class="date">
+            <span class="published">
+                Published December 25, 2019
+            </span
+            <span class="updated">
+                Updated January 1, 2020
+            </span
+          </div>
         </header>
 
         ◊(->html doc #:splice? #t)

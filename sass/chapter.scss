@@ -33,6 +33,14 @@ $sidenote-float-width: 1280px;
     }
 }
 
+.chapter > header > .date {
+    font-size: 0.8rem;
+    //text-align: right;
+    //display: inline-block;
+    margin-bottom: 0.8em;
+    @extend %sans-serif;
+}
+
 .where a {
     text-decoration: none;
     background: none;

@@ -7,7 +7,7 @@
 ◊(define-meta updated "2020-02-18T07:30:58+01:00")
 ◊(define-meta uuid "cef34868-0317-4c6f-8b9f-cfb66464f2a8")
 
-While cryptocurrencies are mostly seen as speculative assets---get rich quick schemes---they have valuable properties and valuable use cases. For example:
+While cryptocurrencies are mostly seen as speculative assets---get rich quick schemes---they have valuable properties and use cases. For example:
 
 ◊ul{
     ◊li{◊strong{Excellent monetary properties}
@@ -53,7 +53,7 @@ While cryptocurrencies are mostly seen as speculative assets---get rich quick sc
 }
 
 
-Of course cryptocurrencies don't solve everything perfectly, they're held back by adoption and price volatility in particular. And as with all new technology they will be associated with positive and negative change.
+Of course cryptocurrencies don't solve everything perfectly; they're held back by adoption and price volatility in particular. And as with all new technology they will be associated with positive and negative change.
 
 If you want to learn more and see more examples just continue reading. You can also ◊link[toc-url]{jump} to whatever chapter interests you---they're supposed to be self-contained.
 

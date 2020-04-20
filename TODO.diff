@@ -33,11 +33,10 @@ Additional image ideas:
   Extensions:
 
 Code:
-- Better link handling
 
 Style:
-- Better way to refer to book sources for paragraphs
 - Use ◊def{} for all definitions and style them similarly
++ Published and updated dates
 
 Markup
 + Published and modified dates should be visible in chapters
