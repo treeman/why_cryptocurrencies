@@ -3,7 +3,7 @@
 ◊(define-meta title "Look out for snake oil")
 ◊(define-meta subtitle "The space is new, hyped and full of misleading information")
 ◊(define-meta published "2019-05-06T00:00:00+01:00")
-◊(define-meta updated "2020-01-15T20:10:06+01:00")
+◊(define-meta updated "2020-04-23T12:10:03+02:00")
 ◊(define-meta uuid "635e169f-885a-4d29-a266-4c9ef4981f47")
 
 ◊epigraph{
@@ -33,7 +33,7 @@ There are many projects in the cryptocurrency space that, curiously enough, aren
   ◊li{OneCoin and Bitconnect---they're plain pyramid schemes◊sn{pyramid-schemes}}
   ◊li{Ripple}
   ◊li{Stablecoins like ◊link[tether]{Tether}◊sn{tether} or JP Morgan's ◊link[JPM-coin]{JPM coin}}
-  ◊li{Sidechains, for example the Lightning Network}
+  ◊li{"Second layer solutions" like the Lightning Network}
   ◊li{Smart tokens like the ERC20 tokens running on top of Ethereum◊sn{ICOs}}
   ◊li{Facebook's Libra}
 }
@@ -44,7 +44,7 @@ There are many projects in the cryptocurrency space that, curiously enough, aren
 
 Some might be useful but they don't have the same properties as cryptocurrencies like Bitcoin, and they don't work the same way.
 
-For example stablecoins depend on a third party issuer and redeemer---the very thing cryptocurrencies are meant to remove. Sidechains have fundamentally different security trade-offs and they work differently, they're built on top of---but they are not---cryptocurrencies.
+For example stablecoins depend on a third party issuer and redeemer---the very thing cryptocurrencies are meant to remove. Second layer solutions have fundamentally different security trade-offs and they work differently; they're built on top of---but they are not---cryptocurrencies.
 
 ◊ndef["tether"]{
     After years of suspicion Tether recently admitted ◊link[tether-backed-74]{it's only backed 74% by cash}.
@@ -80,7 +80,7 @@ When evaluating cryptocurrencies here are some red flags to look out for:
     }
     ◊li{Propaganda.
 
-        Social media is shock-full of people---or trolls---who tries to sell snake oil to you. Slander, lies and censorship is a daily occurrence.◊sn{censorship}
+        Social media is chock-full of people---or trolls---who tries to sell snake oil to you. Slander, lies and censorship is a daily occurrence.◊sn{censorship}
     }
     ◊li{Large drawbacks.
 
