@@ -1,3 +1,7 @@
+eBook
+http://journal.stuffwithstuff.com/2014/11/03/bringing-my-web-book-to-print-and-ebook/
+
+
 Completeness:
 + Book citations should include a page number
 
@@ -32,11 +36,7 @@ Additional image ideas:
   Brave new world: A nuke or pandora's box
   Extensions:
 
-Code:
-- Better link handling
-
 Style:
-- Better way to refer to book sources for paragraphs
 - Use ◊def{} for all definitions and style them similarly
 
 Markup
@@ -47,8 +47,4 @@ Markup
   See the financial crisis, where we refer to things inside text.
 + Use <time> in quotes (and other? but it's probably overkill to even bother.)
 + Use <caption> for <table>? Instead of placing it in a figure with caption?
-
-Sanity:
-+ Alt-text for all links
-+ Setup cross chapter links after all chapters are written
 
