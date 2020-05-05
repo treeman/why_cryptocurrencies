@@ -6,3 +6,7 @@ Made with [Pollen][].
 
 [Pollen]: https://docs.racket-lang.org/pollen/
 
+# Dependencies
+
+1. raco: pollen, libuuid
+2. sassc, inotify-tools
