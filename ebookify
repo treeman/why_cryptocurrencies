@@ -1,0 +1,42 @@
+#!/usr/bin/python3
+
+import subprocess
+import os.path
+
+def main():
+    dirname = os.path.dirname(__file__)
+    site_dir = os.path.join(dirname, "_site/")
+    ebook_dir = os.path.join(dirname, "_ebook/")
+
+    # See
+    # http://www.jedisaber.com/eBooks/Tutorial.shtml
+
+    # Clean destination directory.
+    subprocess.run(f"rm -r {site_dir}", shell=True)
+
+    # Create mimetype file
+    subprocess.run(f"mkdir -p {site_dir}", shell=True)
+    with open(os.path.join(ebook_dir, "mimetype"), 'w') as main:
+        main.write("application/epub+zip")
+
+    # Create container
+    subprocess.run(f"mkdir -p {site_dir}META_INF", shell=True)
+    # container.xml
+
+    subprocess.run(f"mkdir -p {site_dir}OEBPS", shell=True)
+    subprocess.run(f"mkdir -p {site_dir}OEBPS/images", shell=True)
+    # Inside OEBPS:
+    # FIXME
+    # move .html to .xhtml
+    # css in stylesheet.css
+
+    # title_page.xhtml
+    # toc.xml
+    # content.opf
+    # page-template1.xpgt
+
+    # subprocess.run(f"cp -r {site_dir}* {ebook_dir}", shell=True)
+
+if __name__ == '__main__':
+    main()
+

@@ -3,6 +3,7 @@
 *.xml
 compiled/
 _site/
+_ebook/
 fonts/*
 *-autosave.kra
 *~
