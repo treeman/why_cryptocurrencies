@@ -16,7 +16,7 @@ site_dir = os.path.join(dirname, "_site")
 ebook_files_dir = os.path.join(dirname, "ebook-files")
 
 ebook_dir = os.path.join(dirname, "_ebook")
-meta_dir = os.path.join(ebook_dir, "META_INF")
+meta_dir = os.path.join(ebook_dir, "META-INF")
 oebps_dir = os.path.join(ebook_dir, "OEBPS")
 image_dir = os.path.join(oebps_dir, "images")
 
@@ -106,15 +106,14 @@ titles = {
     "cryptography.html": "A hitchhiker’s guide to cryptography",
 }
 
+# {src: dst} of hrefs we need to replace
+link_replace = {}
 
 def main():
     clean()
     setup_basics()
 
-    # (src, dst) of hrefs we need to replace
-    link_replace = []
-
-    images = setup_images(link_replace)
+    images = setup_images()
 
     setup_content_opf(images)
     setup_toc_ncx()
@@ -123,11 +122,15 @@ def main():
     # FIXME Fonts:
     # https://www.oreilly.com/library/view/epub-3-best/9781449329129/ch04.html
 
+    setup_post_replacements()
     setup_posts()
+
+    create_zip()
 
 def clean():
     # Clean destination directory.
     subprocess.run(f"rm -r {ebook_dir}/", shell=True)
+    subprocess.run(f"rm why_cryptocurrencies.epub", shell=True)
 
 def setup_basics():
     # Create mimetype file
@@ -139,7 +142,7 @@ def setup_basics():
     subprocess.run(f"mkdir -p {meta_dir}", shell=True)
     subprocess.run(f"cp {ebook_files_dir}/container.xml {meta_dir}/", shell=True)
 
-def setup_images(link_replace):
+def setup_images():
     # Copy images
     subprocess.run(f"mkdir -p {image_dir}", shell=True)
 
@@ -156,7 +159,7 @@ def setup_images(link_replace):
             rel_link = f"images/{filename}"
             images.append(rel_link)
 
-            link_replace.append((src, rel_link))
+            link_replace[src] = rel_link
 
     for src in glob.glob("images/*"):
         src = os.path.join(dirname, src)
@@ -203,8 +206,8 @@ def manifest_img_tag(img):
     return f'<item id="{name}" href="{img}" media-type="image/{t}" />'
 
 def setup_content_opf(images):
-    with open(f"{ebook_files_dir}/Content.opf", 'r') as file:
-        data = file.read()
+    with open(f"{ebook_files_dir}/content.opf", 'r') as f:
+        data = f.read()
 
     data = data.replace("◊UUID", uuid)
 
@@ -223,7 +226,7 @@ def setup_content_opf(images):
     spine_toc = ('\n' + ' ' * 8).join([spine_toc_post(post) for post in toc])
     data = data.replace("◊SPINE_TOC", spine_toc)
 
-    with open(f"{oebps_dir}/Content.opf", 'w') as f:
+    with open(f"{oebps_dir}/content.opf", 'w') as f:
         f.write(data)
 
 def post_title(post):
@@ -270,8 +273,32 @@ def setup_css():
     # FIXME custom stylesheet for epub
     subprocess.run(f"sassc sass/main.scss --style compressed > {oebps_dir}/stylesheet.css", shell=True)
 
+def setup_post_replacements():
+    for post in toc:
+        (name, ext) = os.path.splitext(post)
+        dst = f'{oebps_dir}/{name}.xhtml'
+        link_replace[post] = dst
+
 def setup_posts():
-    # TODO
+    for post in toc:
+        setup_post(post)
+
+def setup_post(post):
+    (name, ext) = os.path.splitext(post)
+    dst = f'{oebps_dir}/{name}.xhtml'
+    with open(post, 'r') as f:
+        data = f.read()
+
+    # FIXME post transformations
+
+    with open(dst, 'w') as f:
+        f.write(data)
+
+def create_zip():
+    os.chdir(ebook_dir)
+    subprocess.run(f'zip -X0 why_cryptocurrencies.epub mimetype', shell=True)
+    subprocess.run(f'zip -Xur9D why_cryptocurrencies.epub *', shell=True)
 
 if __name__ == '__main__':
     main()
+
