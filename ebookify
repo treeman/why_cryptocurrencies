@@ -127,6 +127,10 @@ def main():
 
     create_zip()
 
+    for link, new_link in link_replace.items():
+        print(link, new_link)
+    return
+
 def clean():
     # Clean destination directory.
     subprocess.run(f"rm -r {ebook_dir}/", shell=True)
@@ -150,26 +154,28 @@ def setup_images():
 
     # Nested images need to get moved and renamed
     for src in glob.glob("images/*/*"):
-        src = os.path.join(dirname, src)
+        dir_src = os.path.join(dirname, src)
         if os.path.isfile(src):
-            filename = os.path.basename(src)
+            filename = os.path.basename(dir_src)
             dst = os.path.join(image_dir, filename)
-            subprocess.run(f"cp {src} {dst}", shell=True)
+            subprocess.run(f"cp {dir_src} {dst}", shell=True)
 
             rel_link = f"images/{filename}"
             images.append(rel_link)
 
-            link_replace[src] = rel_link
+            link_replace[f"/{src}"] = rel_link
 
     for src in glob.glob("images/*"):
-        src = os.path.join(dirname, src)
+        dir_src = os.path.join(dirname, src)
         if os.path.isfile(src):
-            filename = os.path.basename(src)
+            filename = os.path.basename(dir_src)
             dst = os.path.join(image_dir, filename)
-            subprocess.run(f"cp {src} {dst}", shell=True)
+            subprocess.run(f"cp {dir_src} {dst}", shell=True)
 
             rel_link = f"images/{filename}"
             images.append(rel_link)
+
+            link_replace[f"/{src}"] = rel_link
 
     return images
 
@@ -276,7 +282,7 @@ def setup_css():
 def setup_post_replacements():
     for post in toc:
         (name, ext) = os.path.splitext(post)
-        dst = f'{oebps_dir}/{name}.xhtml'
+        dst = f'{name}.xhtml'
         link_replace[post] = dst
 
 def setup_posts():
@@ -289,7 +295,8 @@ def setup_post(post):
     with open(post, 'r') as f:
         data = f.read()
 
-    # FIXME post transformations
+    for link, new_link in link_replace.items():
+        data = data.replace(link, new_link)
 
     with open(dst, 'w') as f:
         f.write(data)

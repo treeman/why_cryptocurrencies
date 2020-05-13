@@ -1,14 +1,12 @@
 ◊(local-require pollen/tag)
-<!DOCTYPE html>
-<html lang="en">
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
     <head>
-        <meta charset="utf-8" />
-        <title>◊|main-title|</title>
-        <link rel="stylesheet" type="text/css" href="/css/main.css" />
-        <link rel="alternate" type="application/atom+xml" title="Atom 0.3" href="/feed.xml" />
-        <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
-        <meta name="description" content="◊|description|">
-        <meta name="keywords" content="◊|keywords|">
+        <link rel="stylesheet" type="text/css" href="stylesheet.css" />
+        <title>◊|main|</title>
     </head>
     <body>
       <div class="homepage">
@@ -18,8 +16,6 @@
         </header>
 
         ◊(->html doc #:splice #t)
-
-        ◊(->html follow-section)
       </div>
     </body>
 </html>

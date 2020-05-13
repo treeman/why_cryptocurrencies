@@ -34,25 +34,18 @@
 ◊(define (ref page title txt)
   (->html
     (make-link #:title title (string-append "/" (symbol->string page)) txt)))
-<!DOCTYPE html>
-<html lang="en">
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
     <head>
-        <meta charset="utf-8" />
+        <link rel="stylesheet" type="text/css" href="stylesheet.css" />
         <title>◊|head-title|</title>
-        <link rel="stylesheet" type="text/css" href="/css/main.css" />
-        <link rel="alternate" type="application/atom+xml" title="Atom 0.3" href="/feed.xml" />
-        <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
-        <meta name="keywords" content="◊|keywords|">
     </head>
+
     <body>
       <article class="◊|article-class|">
-        <nav class="where">
-          <a href="/" tilte="Table of contents" class="home">Why Cryptocurrencies?</a>
-          ◊when/splice[parent-page]{
-            <span class="divider">/</span>
-            ◊(ref parent-page parent-title parent-title)
-          }
-        </nav>
         <header>
           <h1>◊|title|</h1>
           <h2>◊|subtitle|</h2>
@@ -65,54 +58,6 @@
       </article>
 
       ◊(when side-space? (->html `(div ((class "side-space")))))
-
-      <nav class="edge-wrapper">
-        ◊when/splice[prev-page]{
-          <a class="prev-pan" href="/◊(symbol->string prev-page)" title="◊|prev-title|">
-            <span class="content"> ‹ </span>
-          </a>
-        }
-        ◊when/splice[next-page]{
-          <a class="next-pan" href="/◊(symbol->string next-page)" title="◊|next-title|">
-            <span class="content"> › </span>
-          </a>
-        }
-      </nav>
-
-      <footer>
-        <nav class="movenav">
-          ◊when/splice[prev-page]{
-            <span class="prev">
-              ◊(ref prev-page prev-title (string-append  "← " prev-title))
-              ◊;(ref prev-page "← Previous page")
-            </span>
-          }
-          <span class="middle">
-            ◊when/splice[parent-page]{
-              <span class="parent">
-                ◊;(ref parent-page "Chapter")
-                ◊(ref parent-page parent-title "↑ Section")
-              </span>
-            }
-            <span class="home">
-              <a href="/" title="Table of contents">~ Home</a>
-            </span>
-          </span>
-
-          ◊when/splice[next-page]{
-            <span class="next">
-              ◊;(ref next-page "Next page →")
-              ◊(ref next-page next-title (string-append next-title " →"))
-            </span>
-          }
-        </nav>
-
-        <div class="follow-wrapper">
-          ◊(->html follow-section)
-        </div>
-
-      </footer>
-
     </body>
 </html>
 ◊;←
