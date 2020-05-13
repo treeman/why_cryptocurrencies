@@ -25,7 +25,6 @@ toc = [
     "about_the_book.html",
     "acknowledgements.html",
     "how_to_use.html",
-    "free.html",
     "about_me.html",
     "what_is_a_cryptocurrency.html",
     "properties_of_a_cryptocurrency.html",
@@ -68,7 +67,6 @@ titles = {
     "about_the_book.html": "About the book",
     "acknowledgements.html": "Acknowledgments",
     "how_to_use.html": "How to use this book",
-    "free.html": "Completely free",
     "about_me.html": "About me, the author",
     "what_is_a_cryptocurrency.html": "What is a cryptocurrency?",
     "properties_of_a_cryptocurrency.html": "Properties of a cryptocurrency",
@@ -127,9 +125,9 @@ def main():
 
     create_zip()
 
-    for link, new_link in link_replace.items():
-        print(link, new_link)
-    return
+    # for link, new_link in link_replace.items():
+        # print(link, new_link)
+    # return
 
 def clean():
     # Clean destination directory.
@@ -277,7 +275,7 @@ def setup_toc_ncx():
 
 def setup_css():
     # FIXME custom stylesheet for epub
-    subprocess.run(f"sassc sass/main.scss --style compressed > {oebps_dir}/stylesheet.css", shell=True)
+    subprocess.run(f"sassc sass/ebook.scss --style compressed > {oebps_dir}/stylesheet.css", shell=True)
 
 def setup_post_replacements():
     for post in toc:
