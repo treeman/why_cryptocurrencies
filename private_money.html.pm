@@ -78,7 +78,7 @@ When people are alone and relaxed they do things they otherwise wouldn't. Maybe 
 
 If you don't recognize the situation please watch the scene where Hugh Grant plays the ◊link[love-actually-dance]{dancing prime minister in Love Actually}. Even if you do recognize the situation, the scene's so good you should watch it anyway.
 
-◊img[#:src "/images/dancing.png"]{
+◊img[#:src "/images/dancing.png" #:alt "A dude dancing naked, singing his favorite song."]{
     What's better than dancing naked, singing your favorite song, without a care in the world?
     And what's worse than having someone catching you in the act?
 }

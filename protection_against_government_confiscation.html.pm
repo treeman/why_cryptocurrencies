@@ -97,7 +97,7 @@ He's saying that the police can take whatever they want, and that they're motiva
 
 In practice civil asset forfeiture is state-sanctioned theft where the police are acting like ◊link[highway-robbers]{highway robbers}.
 
-◊img[#:src "/images/gangster_cop.png"]{
+◊img[#:src "/images/gangster_cop.png" #:alt "A threatening cop."]{
     "That's a nice car you have there, it would be a shame if anything happened to it."
 }
 

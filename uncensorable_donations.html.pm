@@ -61,7 +61,7 @@ Donations is an excellent use case for cryptocurrencies, as they cannot be censo
 A ◊link[china-forgettance]{powerful example} of censorship is the ◊link[wikipedia-tiananmen]{Tiananmen Square Massacre} in China 1989. It was a student led protest which was forcefully suppressed by hundreds of thousands military troops, killing large numbers of demonstrators and bystanders.◊sn{hong-kong}
 
 ◊ndef["hong-kong"]{
-    Some have ◊link[hong-kong-protests]{drawn parallels} between then recent protests in Hong Kong and Tiananmen, but with smartphones everywhere it would be close to impossible to cover up a similar massacre.
+    Some have ◊link[hong-kong-protests]{drawn parallels} between the recent protests in Hong Kong and Tiananmen, but with smartphones everywhere it would be close to impossible to cover up a similar massacre.
 
     The Hong Kong Free Press, an independent news source in China, ◊link[hk-fp]{accepts Bitcoin donations}.
 }

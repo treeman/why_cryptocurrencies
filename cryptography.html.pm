@@ -25,11 +25,11 @@ Hashes are ◊def{one-way functions}. As the name implies we can give data to a 
 
 It's similar to how we can break an egg, but there's no easy way to "unbreak" it.
 
-◊img[#:src "/images/break_egg.png"]{
+◊img[#:src "/images/break_egg.png" #:alt "An egg going from an unbroken to a broken state."]{
     It's easy to break an egg.
 }
 
-◊img[#:src "/images/merge_egg.png"]{
+◊img[#:src "/images/merge_egg.png" #:alt "It's hard to go back if the egg is already broken."]{
     But it's very hard to piece it together again.
 }
 
@@ -89,7 +89,7 @@ If you want to give up and see what I encoded in the hash, ◊toggle[iron-man]{c
 
 If you jump into the mathematical definitions of ◊def[public-key-cryptography]{public-key cryptography} it might look very complicated. While some details are complicated, the cryptography is conceptually simple; it's a digital version of a locked mailbox.
 
-◊img[#:src "/images/mailbox.png"]{
+◊img[#:src "/images/mailbox.png" #:alt "A locked mailbox."]{
     A locked mailbox.
 }
 
@@ -101,11 +101,11 @@ You ◊em{encrypt} a message by placing it in the mailbox, this way nobody but t
     This is where our mailbox metaphor breaks down a bit. It may seem that it's more inconvenient to sign a message than to encrypt one, but digitally they're both straightforward.
 }
 
-◊img[#:src "/images/encrypted_mailbox.png"]{
+◊img[#:src "/images/encrypted_mailbox.png" #:alt "Placing a letter in the mailbox."]{
     Placing a message inside the mailbox ensures that only the one with the key can read it.
 }
 
-◊img[#:src "/images/mailbox_signed.png"]{
+◊img[#:src "/images/mailbox_signed.png" #:alt "A labeled mailbox."]{
     The mailbox contains the label "Jonas", which you have to open the mailbox to change. By putting my name on the mailbox I prove that I own it.
 }
 
@@ -113,7 +113,7 @@ You ◊em{encrypt} a message by placing it in the mailbox, this way nobody but t
 
 Large parts of the internet depends on public-key cryptography. For example when you connect to your bank over the internet, this scheme helps ensure that nobody can see how much money you have, who you pay and that you're the only one that can transfer your money.
 
-◊img[#:src "/images/https.png"]{
+◊img[#:src "/images/https.png" #:alt "A screenshot of a lock icon on a webbrowser."]{
     The lock icon or the "https" label means you're using public-key cryptography (among other things) to secure your connection to the website.
 }
 

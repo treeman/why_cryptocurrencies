@@ -203,7 +203,7 @@ We've looked at the properties---but how well do they function as money, today?
 
         The valuation is highly speculation driven and has been notoriously volatile.◊sn{sov}
 
-        ◊img[#:src "images/btc-valuation.svg" #:link #t]{
+        ◊img[#:src "images/btc-valuation.svg" #:link #t #:alt "Bitcoin closing price per month, between 2010 and 2019."]{
             ◊link[btc-valuation]{Bitcoin closing price per month}.  It doesn't do the peak in December 2017 justice, as it peaked at an all time high of $19,870 (some exchanges had it even higher).
         }
     }

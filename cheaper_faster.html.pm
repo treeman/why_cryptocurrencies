@@ -1,6 +1,6 @@
 #lang pollen
 
-◊(define-meta title "Cheaper & faster")
+◊(define-meta title "Cheaper &amp; faster")
 ◊(define-meta subtitle "Avoids middleman fees and settles quickly")
 ◊(define-meta published "2019-06-03T00:00:00+01:00")
 ◊(define-meta updated "2020-01-15T20:08:53+01:00")

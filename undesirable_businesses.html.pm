@@ -127,13 +127,15 @@ For example porn is a business with very high rate of ◊link[charge-back-fraud]
 Therefore most payment processors ◊link[stripe-restricted]{explicitly forbid} porn sites, making it very difficult to accept credit cards directly.
 
 
-◊img[#:src "/images/xxx-payments1.png"]{
+◊img[#:src "/images/xxx-payments1.png"
+     #:alt "Payment processor doesn't want to do business with porn."]{
     Payment processors usually don't want anything to do with porn sites.
 }
 
 Instead they have a third party request the payment on their behalf and do some shady stuff. They can for example claim the payment is for another type of business, which isn't banned by the payment processor.
 
-◊img[#:src "/images/xxx-payments2.png"]{
+◊img[#:src "/images/xxx-payments2.png"
+     #:alt "An intermediary makes it possible for the porn business to use a payment processor."]{
     Another party acting as an intermediary might get accepted by the payment processor, especially if they disguise themselves.
 }
 

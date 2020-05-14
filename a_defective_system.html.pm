@@ -28,17 +28,17 @@ If I did print money---a ◊strong{lot} of money---and spent it like this, what 
 
 For starters if I just kept the money without spending it, nothing would change:
 
-◊img[#:src "/images/counterfeiting1.png"]{
+◊img[#:src "/images/counterfeiting1.png" #:alt "The counterfeiter can print a large stash of cash."]{
     The counterfeit money is colored yellow and the real money is green.
 }
 
 Then if I decided to buy a bunch of LEGO®, the store would get some of my money:
 
-◊img[#:src "/images/counterfeiting2.png"]{}
+◊img[#:src "/images/counterfeiting2.png" #:alt "The counterfeiter buys LEGO."]{}
 
 After a while the store would use the counterfeited money to pay their supplier:
 
-◊img[#:src "/images/counterfeiting3.png"]{}
+◊img[#:src "/images/counterfeiting3.png" #:alt "Money further trickles down to the supplier, but not to everyone."]{}
 
 Who in turn will use it to buy other stuff, and in this way the counterfeited money slowly trickles out into the rest of the economy. This extra money has two important effects:
 
@@ -72,7 +72,7 @@ Counterfeiting means everyones savings---the "old" money---will lose value. This
 
 ◊(define inflation-dollar-visualization "http://money.visualcapitalist.com/buying-power-us-dollar-century/")
 
-◊img[#:src "images/inflation.svg" #:link #t]{
+◊img[#:src "images/inflation.svg" #:link #t #:alt "The inflation in Sweden between 1960 and 2018."]{
     How the ◊link[swe-inflation]{inflation in Sweden} has caused the actual value of money to decrease.◊sn{why-sweden?}  
 
     The graph shows an inflation adjusted index, starting from 1960. You can think of it what ◊sans-tnum{100 SEK} of goods in a given year would be worth in 1960's money. For example ◊sans-tnum{100 SEK} from 2018 would only buy ◊sans-tnum{7 SEK} worth of stuff in 1960---a 93% drop in value.
@@ -316,7 +316,7 @@ Seen through this lens, it all makes sense. To help the government spend money i
 
 While taking out debt to fuel investments was only supposed to be a temporary measure, to help the economy during downturns, today we massively increase the debt all the time. For example we've seen a ◊link[record-bull-run]{record bull run} in 2009--2019, yet the U.S. debt doubled from $11 trillion to $22 trillion.◊sn{trump-debt}
 
-◊img[#:src "images/usa-debt.svg" #:link #t]{
+◊img[#:src "images/usa-debt.svg" #:link #t #:alt "The federal debt of the United States, measure in trillions of dollars, since 1966."]{
     The ◊link[usa-national-debt]{federal debt of the United States}, measure in trillions of dollars, since 1966.  
     After the ◊link[financial_crisis]{2008 financial crisis} the amount of debt skyrocketed, signifying a shift in economic policy.
 }
@@ -403,18 +403,18 @@ It seems like we're moving away from the original Keynesian ideas to something e
 
 There's a worrying trend in the world: ◊link[global-inequality]{global inequality is rising}. The rich gets richer and the poor gets... poorer.
 
-◊img[#:src "images/income-inequality-world.svg" #:link #t]{
+◊img[#:src "images/income-inequality-world.svg" #:link #t #:alt "Top 10% income share between 1980 and 2015."]{
     Top 10% income share between 1980 and 2015.  
     Source ◊link[inequality-data]{World Inequality Database}.
 }
 
 The inequality is on the rise in nearly every country. If we take a closer look at the United States it paints a gloomy picture:◊sn{report}
 
-◊img[#:src "images/income-inequality.svg" #:link #t]{
+◊img[#:src "images/income-inequality.svg" #:link #t #:alt "Income share in the United States between 1962 and 2014."]{
     Income share in the United States between 1962 and 2014.  
     Source ◊link[inequality-data]{World Inequality Database}.
 }
-◊img[#:src "images/wealth-inequality.svg" #:link #t]{
+◊img[#:src "images/wealth-inequality.svg" #:link #t #:alt "Net personal wealth in the United States between 1962 and 2014."]{
     Net personal wealth in the United States between 1962 and 2014.  
     Source ◊link[inequality-data]{World Inequality Database}.
 }
