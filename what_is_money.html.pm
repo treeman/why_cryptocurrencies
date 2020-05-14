@@ -36,29 +36,34 @@ First let's look at some interesting historical examples of things that have bee
 ◊section[#:class "money-examples"]{
     ◊money["Shells"
            #:date "1200 B.C."
-           #:img "/images/cowry.png"]{
+           #:img "/images/cowry.png"
+           #:alt "Sea shells."]{
         Sea shells ◊link[sea-shells]{have been used as money for centuries}, it was commonly used in parts of Africa and Asia but also in other parts of the world. Even ◊link[shells-slaves]{during the slave trade} in Africa vast quantities exchanged hands.
     }
     ◊money["Coins in ancient Greece"
            #:date "500 B.C."
-           #:img "images/greek_coin.png"]{
+           #:img "images/greek_coin.png"
+           #:alt "A greek coin."]{
         The Greeks ◊link[ancient-greece-coinage]{used coins} made from precious metal like silver, bronze and gold. They also stamped the coins with beautiful portraits for a truly modern look.
     }
     ◊money["Rai stones"
            #:date "1000 - 1400 A.D."
-           #:img "images/rai_stones.png"]{
+           #:img "images/rai_stones.png"
+           #:alt "A huge rai stone"]{
         ◊link[rai-stones]{Rai stones} is a form of stone money on the Yap Islands. They can be up to 4 m in diameter but most are much smaller, down to around 3.5 cm in diameter. Instead of moving the big ones you simply tell people you've transferred them. ◊link[rai-stones-pictures]{Here are some great pictures}.
     }
     ◊money["A 20kg copper coin"
            #:date "1644"
-           #:img "images/20kg_copper.png"]{
+           #:img "images/20kg_copper.png"
+           #:alt "A 20kg copper coin in a wheelbarrow."]{
         Another example of---let's just say interesting---form of money is ◊link[largest-coin]{the world's largest coin.} It's a copper coin weighing 20kg, issued in Sweden.
 
         Since copper was worth much less than silver, very large coins had to be made to offset the difference. At that time coins did contain raw materials according to their value, which isn't the case today.
     }
     ◊money["A 100 billion mark note"
            #:date "1924"
-           #:img "images/german_notes.png"]{
+           #:img "images/german_notes.png"
+           #:alt "A large pyramid of paper money."]{
         Bank notes---paper money---are easy to use but they do have problems of their own. Unless kept in check, by for example ◊link[rel-gold-standard]{the gold standard}, they can be mass produced to cause hyperinflation.
 
         ◊link[germany-wallpaper]{This is what happened in Germany} after the first World war. They had massive debts after losing the war, so they tried to print enough money to pay off the debts.◊sn{germany-stories}
@@ -69,24 +74,28 @@ First let's look at some interesting historical examples of things that have bee
     }
     ◊money["Cigarettes in prison"
            #:date `("20" (sup "th") " century")
-           #:img "images/prison_money.png"]{
+           #:img "images/prison_money.png"
+           #:alt "A cigarette."]{
         Like depicted in the movie Shawshank Redemption cigarettes are used in some prisons ◊link[prison-cigarettes]{as a form of money}. Today some prisons have started to ban smoking, so they instead use things like ◊link[prison-stamps]{stamps} or ◊link[prison-ramen]{ramen}.
     }
     ◊money["Euro bank notes"
            #:date `("21" (sup "th") " century")
-           #:img "images/bank_notes.png"]{
+           #:img "images/bank_notes.png"
+           #:alt "Euro bank notes."]{
         There are many kinds of ◊em{fiat currencies},◊sn{fiat-commodity} for example the Euro. Modern coins are not made of valuable metal and paper notes are used for large denominations.
 
         ◊note-pos[#:top -6 #:bottom -20]{fiat-commodity}
     }
     ◊money["Dogecoin"
            #:date "2013"
-           #:img "images/doge.png"]{
+           #:img "images/doge.png"
+           #:alt "Doge."]{
         Dogecoin is a cryptocurrency, while created as a "joke currency", it quickly gained popularity as a tipping tool online. You can still find merchants who accept it today for things like domain names, web hosting, VPNs or games.
     }
     ◊money["Marbles on the school yard"
            #:date "2017"
-           #:img "images/marbles.png"]{
+           #:img "images/marbles.png"
+           #:alt "Two people playing with marbles."]{
         Kids on the schoolyard often come up with interesting forms of money. For example collectible card games or game components. Like marbles used in a Swedish game where you win your opponents marbles. (And those with many marbles had higher status in class.)◊sn{pokemon}
 
         ◊note-pos[#:bottom -20]{pokemon}
@@ -109,7 +118,7 @@ First let's look at some interesting historical examples of things that have bee
 
 
 
-◊(define (money title #:img img #:date [date #f] . text)
+◊(define (money title #:img img #:alt alt #:date [date #f] . text)
    (define xdate
      (cond
        [(and (list? date) (not (null? date)))
@@ -119,7 +128,7 @@ First let's look at some interesting historical examples of things that have bee
        [else
         ""]))
    `(div ((class "example"))
-      (img ((src ,img)))
+      (img ((src ,img) (alt ,alt)))
       (div ((class "txt"))
         (div ((class "header"))
           (h3 ,title)
@@ -142,7 +151,8 @@ There's an important historical point to make about fiat. First used 1821 in the
 
 What would life look like if we didn't have money? We would have to turn to bartering---trading goods or services directly.◊sn{bartering}
 
-◊img[#:src "images/pig_chair_exchange.png"]{
+◊img[#:src "images/pig_chair_exchange.png"
+     #:alt "Trading a chair for a pig."]{
     Imagine if you're a farmer and you have a bunch of pigs. To buy a new chair you need to trade with the carpenter, and maybe you can buy the chair for a single pig.
 }
 
@@ -153,7 +163,8 @@ But there are problems with this system:
 
         You would have to trade with others and find something the seller would accept.
 
-        ◊img[#:src "images/pig_chair_exchange_long.png"]{
+        ◊img[#:src "images/pig_chair_exchange_long.png"
+             #:alt "Trading a pig for a wheel, the wheel for a shovel, the shovel for a bottle and finally the bottle for a chair."]{
             It can sometimes be very cumbersome to trade for something the carpenter wants---in this case a bottle of rum. Each step in the process needs a matching buyer and seller.
         }
     }
@@ -305,7 +316,8 @@ As seen from historical examples I think it's safe to conclude that yes, basical
 ◊ndef["gold-sov"]{
     Gold is the classical example of a store of value. But it has also seen large up and down movements in valuation. ◊link[gold-valuation]{This is the yearly closing price of gold}:
 
-    ◊raw-img[#:src "images/gold-valuation.svg" #:link #t]{}
+    ◊raw-img[#:src "images/gold-valuation.svg" #:link #t
+             #:alt "The yearly closing price of gold from 1970 to 2019."]{}
 
     For example in 2010 it increased 27.74% and in 2013 it decreased 27.79%.
 }

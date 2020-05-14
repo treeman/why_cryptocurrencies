@@ -138,7 +138,7 @@ The worst part of this story is that it's not even that far-fetched, and all exa
     ◊li{
         Here in Sweden I've seen public bathrooms you unlock with digital payments:
 
-        ◊img[#:src "/images/digital_bathroom_lock.jpg"]{
+        ◊img[#:src "/images/digital_bathroom_lock.jpg" #:alt "A lock on a public bathroom door that only accepts digital payments."]{
             It says "5 SEK fee". Instead of inserting a 5 SEK coin, you use your card. Very convenient, when it works. I wonder if it unlocks when power disappears?
         }
     }

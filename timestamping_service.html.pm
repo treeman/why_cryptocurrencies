@@ -297,7 +297,8 @@ Let's now encode and timestamp it using the Bitcoin Cash blockchain:
         For this step you need a wallet capable of creating a transaction with a custom OP_RETURN field, I used the desktop version of ◊link[electroncash]{Electron Cash} and enabled the OP_RETURN field in settings. You need to have enough money to pay a small fee and use a small amount to transfer.◊sn{tx-value}
 
         ◊img[#:src "images/electroncash-opreturn.png"
-             #:title "Electron Cash custom OP_RETURN"]{
+             #:title "Electron Cash custom OP_RETURN"
+             #:alt "Electron Cash custom OP_RETURN."]{
           Custom OP_RETURN using ◊link[electroncash]{Electron Cash}.
         }
 

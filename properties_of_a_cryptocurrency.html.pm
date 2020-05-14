@@ -36,13 +36,13 @@ The important difference between a cryptocurrency and digital payments we have t
 
 Sending money to people via your bank is not peer-to-peer as you rely on your bank to send it for you. VISA, PayPal, Swish, Apple Pay and other digital payments have the same problem, all except cryptocurrencies.
 
-◊img[#:src "images/give_cash.png"]{
+◊img[#:src "images/give_cash.png" #:alt "Cash is given directly from hand to hand."]{
     Cash is given directly from hand to hand.
 }
-◊img[#:src "images/send_bank.png"]{
+◊img[#:src "images/send_bank.png" #:alt "Regular digital payments are sent through a bank or different payment processors."]{
     Regular digital payments are sent through a bank or different payment processors.
 }
-◊img[#:src "images/send_crypto.png"]{
+◊img[#:src "images/send_crypto.png" #:alt "Cryptocurrencies are sent directly from device to device."]{
     Cryptocurrencies are sent directly from device to device.
 }
 
@@ -60,7 +60,7 @@ You also don't have to trust a third party to hold your money like you do when y
 ◊ndef["p2p"]{
     Technically you don't interact with each other directly but with a distributed ledger. You trust the system as a whole, not one particular entity.
 
-    ◊raw-img[#:src "images/sending_network.png"]{}
+    ◊raw-img[#:src "images/sending_network.png" #:alt "Cryptocurrencies are really sent to a distributed ledger, and applications interact with it."]{}
 }
 
 ◊ndef["pundits"]{
@@ -82,7 +82,7 @@ Problems with counterfeit coins and bills go far back. From biting coins to test
 
 With cryptocurrencies anyone can independently verify the integrity of the coins you send and receive. Details on how is in the ◊link[next-chapter]{next chapter} but I assure you no biting is needed. You cannot counterfeit coins and you cannot send the same coin to multiple people ◊em{(double-spend)}. This is what allows cryptocurrencies to operate without a trusted third party.
 
-◊img[#:src "/images/double-spend.png"]{
+◊img[#:src "/images/double-spend.png" #:alt "Double spending by sending a coin to someone and back to himself."]{
     A double spending occurs when someone sends the same coin both to a merchant and back to himself.
 }
 
@@ -106,7 +106,7 @@ As there's no trusted third party there'sn't a single entity who controls the cr
     The new coins are rewards for miners who secure the network, but more on that in the ◊link[next-chapter]{next chapter}.
 }
 
-◊img[#:src "/images/emission-rates.svg" #:link #t]{
+◊img[#:src "/images/emission-rates.svg" #:link #t #:alt "Bitcoin's and Monero's emission schedule."]{
     Bitcoin has a hard limit of 21 million bitcoins while in Monero new coins will always be created.◊sn{bitcoin-supply}
 }
 

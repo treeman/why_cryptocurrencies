@@ -129,7 +129,8 @@ The crisis began with the collapse of the bank Lehman Brothers, marking the star
      "https://en.wikipedia.org/wiki/Great_Recession"
      "Wikipedia: Great Recession"))
 
-◊img[#:src "images/us-gdp.svg" #:link #t]{
+◊img[#:src "images/us-gdp.svg" #:link #t
+     #:alt "United States GDP growth rate between 2005 and 2012."]{
     ◊link[us-gdp]{United States GDP growth rate} surrounding the years of the financial crisis.  
     It bottomed out at -8.4% the fourth quarter of 2008.
 }
