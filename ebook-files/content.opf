@@ -8,27 +8,25 @@
     </metadata>
     <manifest>
         <item id="ncx" href="toc.ncx" media-type="application/x-dtbncx+xml" />
-        <item id="style" href="stylesheet.css" media-type="text/css" />
+        <item id="style" href="main.css" media-type="text/css" />
         <item id="titlepage" href="title_page.xhtml" media-type="application/xhtml+xml" />
         <item id="toc" href="toc.xhtml" media-type="application/xhtml+xml" />
         ◊MANIFEST_POSTS_TAG
         ◊MANIFEST_IMG_TAG
-        <item id="img-btc-fallback" href="images/img-btc-fallback.png" media-type="image/png" />
-        <item id="img-xmr-fallback" href="images/img-xmr-fallback.png" media-type="image/png" />
-        <item id="img-bch-fallback" href="images/img-bch-fallback.png" media-type="image/png" />
-        <item id="img-wealth-inequality-fallback" href="images/img-wealth-inequality-fallback.png" media-type="image/png" />
-        <item id="img-btc-valuation-fallback" href="images/img-btc-valuation-fallback.png" media-type="image/png" />
-        <item id="img-usa-debt-fallback" href="images/img-usa-debt-fallback.png" media-type="image/png" />
-        <item id="img-energy-bars-fallback" href="images/img-energy-bars-fallback.png" media-type="image/png" />
-        <item id="img-gold-valuation-fallback" href="images/img-gold-valuation-fallback.png" media-type="image/png" />
-        <item id="img-inflation-fallback" href="images/img-inflation-fallback.png" media-type="image/png" />
-        <item id="img-income-inequality-fallback" href="images/img-income-inequality-fallback.png" media-type="image/png" />
-        <item id="img-us-gdp-fallback" href="images/img-us-gdp-fallback.png" media-type="image/png" />
-        <item id="img-digital_bathroom_lock-fallback" href="images/img-digital_bathroom_lock-fallback.png" media-type="image/png" />
-        <item id="img-y18-fallback" href="images/img-y18-fallback.png" media-type="image/png" />
-        <item id="img-why-unbanked-fallback" href="images/img-why-unbanked-fallback.png" media-type="image/png" />
-        <item id="img-income-inequality-world-fallback" href="images/img-income-inequality-world-fallback.png" media-type="image/png" />
-        <item id="img-emission-rates-fallback" href="images/img-emission-rates-fallback.png" media-type="image/png" />
+        <item id="images-wealth-inequality-fallback" href="images/wealth-inequality-fallback.png" media-type="image/png" />
+        <item id="images-btc-valuation-fallback" href="images/btc-valuation-fallback.png" media-type="image/png" />
+        <item id="images-usa-debt-fallback" href="images/usa-debt-fallback.png" media-type="image/png" />
+        <item id="images-energy-bars-fallback" href="images/energy-bars-fallback.png" media-type="image/png" />
+        <item id="images-gold-valuation-fallback" href="images/gold-valuation-fallback.png" media-type="image/png" />
+        <item id="images-inflation-fallback" href="images/inflation-fallback.png" media-type="image/png" />
+        <item id="images-income-inequality-fallback" href="images/income-inequality-fallback.png" media-type="image/png" />
+        <item id="images-us-gdp-fallback" href="images/us-gdp-fallback.png" media-type="image/png" />
+        <item id="images-digital_bathroom_lock-fallback" href="images/digital_bathroom_lock-fallback.png" media-type="image/png" />
+        <item id="images-y18-fallback" href="images/y18-fallback.png" media-type="image/png" />
+        <item id="images-why-unbanked-fallback" href="images/why-unbanked-fallback.png" media-type="image/png" />
+        <item id="images-income-inequality-world-fallback" href="images/income-inequality-world-fallback.png" media-type="image/png" />
+        <item id="images-emission-rates-fallback" href="images/emission-rates-fallback.png" media-type="image/png" />
+        ◊MANIFEST_FONT_TAG
     </manifest>
     <spine toc="ncx">
         <itemref idref="titlepage" />

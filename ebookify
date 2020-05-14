@@ -19,6 +19,7 @@ ebook_dir = os.path.join(dirname, "_ebook")
 meta_dir = os.path.join(ebook_dir, "META-INF")
 oebps_dir = os.path.join(ebook_dir, "OEBPS")
 image_dir = os.path.join(oebps_dir, "images")
+font_dir = os.path.join(oebps_dir, "fonts")
 
 toc = [
     "eli5.html",
@@ -106,14 +107,17 @@ titles = {
 
 # {src: dst} of hrefs we need to replace
 link_replace = {}
+images = []
+fonts = []
 
 def main():
     clean()
     setup_basics()
 
-    images = setup_images()
+    setup_images()
+    setup_fonts()
 
-    setup_content_opf(images)
+    setup_content_opf()
     setup_toc_ncx()
     setup_css()
 
@@ -127,10 +131,6 @@ def main():
     setup_toc()
 
     create_zip()
-
-    # for link, new_link in link_replace.items():
-        # print(link, new_link)
-    # return
 
 def clean():
     # Clean destination directory.
@@ -148,39 +148,29 @@ def setup_basics():
     subprocess.run(f"cp {ebook_files_dir}/container.xml {meta_dir}/", shell=True)
 
 def setup_images():
-    # Copy images
     subprocess.run(f"mkdir -p {image_dir}", shell=True)
+    subprocess.run(f"mkdir -p {image_dir}/markets", shell=True)
 
-    images = []
+    # Manually added images
+    subprocess.run(f"cp {ebook_files_dir}/images/* {image_dir}/", shell=True)
 
-    # Nested images need to get moved and renamed
-    for src in glob.glob("images/*/*"):
-        dir_src = os.path.join(dirname, src)
-        if os.path.isfile(src):
-            filename = os.path.basename(dir_src)
-            dst = os.path.join(image_dir, filename)
-            subprocess.run(f"cp {dir_src} {dst}", shell=True)
+    for match in ["images/*", "images/*/*"]:
+        for src in glob.glob(match):
+            if os.path.isfile(src):
+                dst = os.path.join(oebps_dir, src)
+                subprocess.run(f"cp {src} {dst}", shell=True)
 
-            rel_link = f"images/{filename}"
-            images.append(rel_link)
-
-            link_replace[f"/{src}"] = rel_link
-
-    for src in glob.glob("images/*"):
-        dir_src = os.path.join(dirname, src)
-        if os.path.isfile(src):
-            filename = os.path.basename(dir_src)
-            dst = os.path.join(image_dir, filename)
-            subprocess.run(f"cp {dir_src} {dst}", shell=True)
-
-            rel_link = f"images/{filename}"
-            images.append(rel_link)
-
-            link_replace[f"/{src}"] = rel_link
-
-    subprocess.run(f"cp {ebook_files_dir}/*.png {image_dir}/", shell=True)
+                images.append(src)
 
     return images
+
+def setup_fonts():
+    subprocess.run(f"mkdir -p {font_dir}", shell=True)
+    for src in glob.glob("fonts/*.woff"):
+        dst = os.path.join(oebps_dir, src)
+        subprocess.run(f"cp {src} {dst}", shell=True)
+
+        fonts.append(src)
 
 def post_id(link):
     base = os.path.basename(link)
@@ -197,37 +187,39 @@ def spine_toc_post(post):
     return f'<itemref idref="{id}" />'
 
 def img_id(img):
-    base = os.path.basename(img)
-    (name, _) = os.path.splitext(base)
-    return "img-" + name
+    (name, _) = os.path.splitext(img)
+    return name.replace("/", "-")
 
 def manifest_img_tag(img):
-    base = os.path.basename(img)
-    (name, ext) = os.path.splitext(base)
+    (_, ext) = os.path.splitext(img)
     id = img_id(img)
 
     fallback = ""
     if ext == ".png":
         t = "png"
     elif ext == ".svg":
-        t = "svg"
+        t = "svg+xml"
         fallback = id + "-fallback"
     elif ext == ".jpg":
-        t = "jpg"
+        t = "jpeg"
         fallback = id + "-fallback"
     elif ext == ".gif":
         t = "gif"
         fallback = id + "-fallback"
     else:
-        sys.exit("unknown image: " + ext)
+        sys.exit("unknown image: " + ext + " " + img)
 
     if fallback:
-        print("fallback: ", fallback)
         fallback = f'fallback="{fallback}"'
 
     return f'<item id="{id}" href="{img}" media-type="image/{t}" {fallback}/>'
 
-def setup_content_opf(images):
+def manifest_font_tag(font):
+    base = os.path.basename(font)
+    (id, _) = os.path.splitext(base)
+    return f'<item id="{id}" href="{font}" media-type="application/font-woff" />'
+
+def setup_content_opf():
     with open(f"{ebook_files_dir}/content.opf", 'r') as f:
         data = f.read()
 
@@ -242,6 +234,10 @@ def setup_content_opf(images):
     # <item id="imgl" href="images/sample.png" media-type="image/png" />
     manifest_imgs = ('\n' + ' ' * 8).join([manifest_img_tag(img) for img in images])
     data = data.replace("◊MANIFEST_IMG_TAG", manifest_imgs)
+
+    # ◊MANIFEST_FONT_TAG
+    manifest_fonts = ('\n' + ' ' * 8).join([manifest_font_tag(font) for font in fonts])
+    data = data.replace("◊MANIFEST_FONT_TAG", manifest_fonts)
 
     # ◊SPINE_TOC
     # <itemref idref="chapter01" />
@@ -292,8 +288,7 @@ def setup_toc_ncx():
         f.write(data)
 
 def setup_css():
-    # FIXME custom stylesheet for epub
-    subprocess.run(f"sassc sass/ebook.scss --style compressed > {oebps_dir}/stylesheet.css", shell=True)
+    subprocess.run(f"sassc sass/main.scss --style compressed > {oebps_dir}/main.css", shell=True)
 
 
 def setup_toc():
@@ -336,9 +331,7 @@ def replace_post_data(data):
     return data
 
 def create_zip():
-    os.chdir(ebook_dir)
-    subprocess.run(f'zip -X0 why_cryptocurrencies.epub mimetype', shell=True)
-    subprocess.run(f'zip -Xur9D why_cryptocurrencies.epub *', shell=True)
+    subprocess.run('./zippify')
 
 if __name__ == '__main__':
     main()

@@ -5,7 +5,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
     <head>
-        <link rel="stylesheet" type="text/css" href="stylesheet.css" />
+        <link rel="stylesheet" type="text/css" href="main.css" />
         <title>◊|main|</title>
     </head>
     <body>

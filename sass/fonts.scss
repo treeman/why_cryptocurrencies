@@ -1,28 +1,24 @@
 $century-supra: 'Century Supra';
 @font-face {
     font-family: $century-supra;
-    src: url('/fonts/century_supra_t4_regular.woff2') format('woff2');
     src: url('/fonts/century_supra_t4_regular.woff') format('woff');
     font-style: normal;
     font-weight: normal;
 }
 @font-face {
     font-family: $century-supra;
-    src: url('/fonts/century_supra_t4_italic.woff2') format('woff2');
     src: url('/fonts/century_supra_t4_italic.woff') format('woff');
     font-style: italic;
     font-weight: normal;
 }
 @font-face {
     font-family: $century-supra;
-    src: url('/fonts/century_supra_t4_bold.woff2') format('woff2');
     src: url('/fonts/century_supra_t4_bold.woff') format('woff');
     font-style: normal;
     font-weight: bold;
 }
 @font-face {
     font-family: $century-supra;
-    src: url('/fonts/century_supra_t4_bold_italic.woff2') format('woff2');
     src: url('/fonts/century_supra_t4_bold_italic.woff') format('woff');
     font-style: italic;
     font-weight: bold;
@@ -31,28 +27,24 @@ $century-supra: 'Century Supra';
 $concourse: 'Concourse';
 @font-face {
     font-family: $concourse;
-    src: url('/fonts/concourse_t4_regular.woff2') format('woff2');
     src: url('/fonts/concourse_t4_regular.woff') format('woff');
     font-style: normal;
     font-weight: normal;
 }
 @font-face {
     font-family: $concourse;
-    src: url('/fonts/concourse_t4_italic.woff2') format('woff2');
     src: url('/fonts/concourse_t4_italic.woff') format('woff');
     font-style: italic;
     font-weight: normal;
 }
 @font-face {
     font-family: $concourse;
-    src: url('/fonts/concourse_t4_bold.woff2') format('woff2');
     src: url('/fonts/concourse_t4_bold.woff') format('woff');
     font-style: normal;
     font-weight: bold;
 }
 @font-face {
     font-family: $concourse;
-    src: url('/fonts/concourse_t4_bold_italic.woff2') format('woff2');
     src: url('/fonts/concourse_t4_bold_italic.woff') format('woff');
     font-style: italic;
     font-weight: bold;
@@ -61,14 +53,12 @@ $concourse: 'Concourse';
 $concourse-c: 'Concourse Caps';
 @font-face {
     font-family: $concourse-c;
-    src: url('/fonts/concourse_c4_regular.woff2') format('woff2');
     src: url('/fonts/concourse_c4_regular.woff') format('woff');
     font-style: normal;
     font-weight: normal;
 }
 @font-face {
     font-family: $concourse-c;
-    src: url('/fonts/concourse_c4_bold.woff2') format('woff2');
     src: url('/fonts/concourse_c4_bold.woff') format('woff');
     font-style: normal;
     font-weight: bold;
@@ -77,26 +67,22 @@ $concourse-c: 'Concourse Caps';
 $hack: 'Hack';
 @font-face {
     font-family: $hack;
-    src: url('/fonts/Hack-Regular.woff2') format('woff2');
     src: url('/fonts/Hack-Regular.woff') format('woff');
     font-style: normal;
 }
 @font-face {
     font-family: $hack;
-    src: url('/fonts/Hack-Italic.woff2') format('woff2');
     src: url('/fonts/Hack-Italic.woff') format('woff');
     font-style: italic;
 }
 @font-face {
     font-family: $hack;
-    src: url('/fonts/Hack-Bold.woff2') format('woff2');
     src: url('/fonts/Hack-Bold.woff') format('woff');
     font-style: normal;
     font-weight: bold;
 }
 @font-face {
     font-family: $hack;
-    src: url('/fonts/Hack-BoldItalic.woff2') format('woff2');
     src: url('/fonts/Hack-BoldItalic.woff') format('woff');
     font-style: italic;
     font-weight: bold;
@@ -104,8 +90,8 @@ $hack: 'Hack';
 
 
 $serif-font-family: $century-supra, Georgia, serif;
-$sans-serif-font-family: $concourse, Helvetica, sans-serif;
-$sans-serif-c-font-family: $concourse-c, $concourse, Verdana, Helvetica, sans-serif;
+$sans-serif-font-family: $concourse, Helvetica, Arial, sans-serif;
+$sans-serif-c-font-family: $concourse-c, $concourse, Verdana, Helvetica, Arial, sans-serif;
 $code-font-family: $hack, monospace;
 
 
