@@ -178,6 +178,8 @@ def setup_images():
 
             link_replace[f"/{src}"] = rel_link
 
+    subprocess.run(f"cp {ebook_files_dir}/*.png {image_dir}/", shell=True)
+
     return images
 
 def post_id(link):
