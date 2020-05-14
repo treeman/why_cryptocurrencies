@@ -99,7 +99,7 @@
     "Cheaper & faster: Charge back fraud"))
 
 (define hash-functions
-  (ch-ref 
+  (ch-ref
     'cryptography.html #:ref "hash-functions"
     "Hash functions"))
 (define bitcoin-addresses
@@ -168,10 +168,6 @@
   (ch-ref
     'what_is_a_cryptocurrency.html
     "What is a cryptocurrency?"))
-(define donations
-  (ch-ref
-    'free.html #:ref "donations-is-a-perfect-use-for-cryptocurrencies"
-    "Donations is a perfect use for cryptocurrencies"))
 
 (define properties_of_a_cryptocurrency
   (ch-ref
@@ -373,7 +369,7 @@
     "Stackexchange: How is the whitepaper decoded from the blockchain"))
 
 (define bitcoin-pdf
-  `("/files/bitcoin.pdf"
+  `("https://whycryptocurrencies.com/files/bitcoin.pdf"
     "Bitcoin: A Peer-to-Peer Electronic Cash System"))
 
 (define electroncash

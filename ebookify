@@ -177,23 +177,29 @@ def setup_images():
 
     return images
 
-def id_ref(link):
+def post_id(link):
     base = os.path.basename(link)
     (name, ext) = os.path.splitext(base)
     return name
 
 def manifest_post_tag(post):
-    id = id_ref(post)
+    id = post_id(post)
     href = id + ".xhtml"
     return f'<item id="{id}" href="{href}" media-type="application/xhtml+xml" />'
 
 def spine_toc_post(post):
-    id = id_ref(post)
+    id = post_id(post)
     return f'<itemref idref="{id}" />'
+
+def img_id(img):
+    base = os.path.basename(img)
+    (name, _) = os.path.splitext(base)
+    return "img-" + img
 
 def manifest_img_tag(img):
     base = os.path.basename(img)
     (name, ext) = os.path.splitext(base)
+    id = img_id(img)
 
     # FIXME only png is officially supported?
     if ext == ".png":
@@ -207,7 +213,7 @@ def manifest_img_tag(img):
     else:
         sys.exit("unknown image: " + ext)
 
-    return f'<item id="{name}" href="{img}" media-type="image/{t}" />'
+    return f'<item id="{id}" href="{img}" media-type="image/{t}" />'
 
 def setup_content_opf(images):
     with open(f"{ebook_files_dir}/content.opf", 'r') as f:
@@ -238,7 +244,7 @@ def post_title(post):
 
 def toc_ncx_post(i, post):
     order = i + 1
-    id = id_ref(post)
+    id = post_id(post)
     href = id + ".xhtml"
     title = post_title(post)
     return f"""<navPoint id="{id}" playOrder="{order}">

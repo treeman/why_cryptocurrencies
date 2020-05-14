@@ -10,10 +10,10 @@
     </head>
     <body>
       <div class="homepage">
-        <header>
+        <div class="header">
           <h1>◊|main-title|</h1>
           <h2>◊|subtitle|</h2>
-        </header>
+        </div>
 
         ◊(->html doc #:splice #t)
       </div>

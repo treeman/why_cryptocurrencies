@@ -45,17 +45,17 @@
     </head>
 
     <body>
-      <article class="◊|article-class|">
-        <header>
+      <div class="◊|article-class|">
+        <div class="header">
           <h1>◊|title|</h1>
           <h2>◊|subtitle|</h2>
-        </header>
+        </div>
 
         ◊(->html doc #:splice? #t)
 
         ◊(->html (make-section-nav #:section-header? section-chapters-headers?
                                     here))
-      </article>
+      </div>
 
       ◊(when side-space? (->html `(div ((class "side-space")))))
     </body>

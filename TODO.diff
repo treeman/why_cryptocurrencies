@@ -8,6 +8,14 @@ https://www.amazon.com/gp/feature.html/?docId=1000765261
 
 https://github.com/w3c/epubcheck
 
+Changed css classes:
+    article
+    figure
+    figcaption
+    quote footer
+    cite
+    header (titles n stuff)
+
 Test with:
 + okular
 + calibra

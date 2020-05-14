@@ -156,11 +156,11 @@
 
 (define (subhead x)
   `(h2
-    (a [[name ,(to-name x)]] ,x)))
+    (a [[id ,(to-name x)]] ,x)))
 
 (define (subhead3 x)
    `(h3
-     (a [[name ,(to-name x)]] ,x)))
+     (a [[id ,(to-name x)]] ,x)))
 
 (define (li-plus . txt)
    `(li ((class "plus")) ,@txt))
@@ -270,7 +270,7 @@
      ,attrs
      ,@txt
      ,emphasis-text
-     (footer ,@(add-between cite ", "))))
+     (div ((class "footer")) ,@(add-between cite ", "))))
 
 
 (define (book-link book)
@@ -288,7 +288,7 @@
          txt))
 
 (define (cite-book book)
-  `(cite ((class "book"))
+  `(div ((class "book"))
          "("
          ,(book-author book)
          ", "
@@ -347,8 +347,9 @@
              #:margin [margin #f]
              #:link [link #f] . caption)
   (define attrs `())
-  (when c
-    (set! attrs (cons `(class ,c) attrs)))
+  (if c
+    (set! attrs (cons `(class ,(string-append "img " c)) attrs))
+    (set! attrs (cons `(class "img") attrs)))
   (when title
     (set! attrs (cons `(title ,title) attrs)))
   (when alt
@@ -360,10 +361,10 @@
 
   (define figcaption
     (if margin
-      `(figcaption ((class "margin")) ,@decoded-caption)
-      `(figcaption ,@decoded-caption)))
+      `(div ((class "figcaption margin")) ,@decoded-caption)
+      `(div ((class "figcaption")) ,@decoded-caption)))
 
-  `(figure
+  `(div
      ,attrs
      ,(raw-img #:src src #:link link)
      ,figcaption))
@@ -378,24 +379,7 @@
 
 ;; FIXME rename to figcaption
 (define (decoded-figcaption . args)
-  `(figcaption ,@(std-decode args)))
-
-(define (youtube url . caption)
-  (define id
-    (match (regexp-match #rx"https?://www\\.youtube\\.com/watch\\?v=([A-Za-z0-9_-]+)" url)
-      [(list _ id) id]
-      [else (error "Bad youtube url: " url)]))
-  (define embedded-url
-    (string-append "//www.youtube.com/embed/" id))
-
-  (define decoded-caption (std-decode caption))
-  `(figure
-     (div ((class "video-wrapper"))
-       (div ((class "video-container"))
-         (iframe ((src ,embedded-url)
-                  (frameborder "0")
-                  (allow "fullscreen")))))
-     (figcaption ,@decoded-caption)))
+  `(div ((class "figcaption")) ,@(std-decode args)))
 
 ; Creates a hidden toggle inline in text.
 (define (toggle hidden-txt . link-txt)
