@@ -38,9 +38,9 @@ While cryptocurrencies are mostly seen as speculative assets---get rich quick sc
     }
     ◊li{◊strong{Financial privacy}
 
-        Banks, credit card companies and payment processors have all your financial transactions on record. Cryptocurrencies allows you to ◊link[private_money]{reclaim some of your privacy} as they work like a ◊link[swiss_bank_account_in_your_pocket]{swiss bank account in your pocket}.◊sn{bitcoin-privacy}
+        Banks, credit card companies and payment processors have all your financial transactions on record. Cryptocurrencies allows you to ◊link[private_money]{reclaim some of your privacy} as they work like a ◊link[swiss_bank_account_in_your_pocket]{swiss bank account in your pocket}.◊sn{bitcoin-priv}
 
-        ◊note-pos[#:top -2]{bitcoin-privacy}
+        ◊note-pos[#:top -2]{bitcoin-priv}
     }
     ◊li{◊strong{An alternative financial system}
 
@@ -55,13 +55,13 @@ While cryptocurrencies are mostly seen as speculative assets---get rich quick sc
 
 Of course cryptocurrencies don't solve everything perfectly, they're held back by adoption and price volatility in particular. And as with all new technology they will be associated with positive and negative change.
 
-If you want to learn more and see more examples just continue reading. You can also ◊link[toc-url]{jump} to whatever chapter interests you---they're supposed to be self-contained.
+If you want to learn more and see more examples just continue reading. You can also jump to whatever chapter interests you---they're supposed to be self-contained.
 
 ◊ndef["bitcoin-fees"]{
     If you've heard about the ridiculously high Bitcoin fees then don't worry---it's the exception not the rule. Please read the chapter ◊link[cheaper_faster]{Cheaper & faster} for more info.
 }
 
-◊ndef["bitcoin-privacy"]{
+◊ndef["bitcoin-priv"]{
     Please note that Bitcoin (and most other cryptocurrencies) are only ◊def{pseudo-anonymous}. There are others---like Monero---that improve the situation. Read the section of ◊link[privacy-challenge]{the privacy and fungibility challenge}.
 }
 

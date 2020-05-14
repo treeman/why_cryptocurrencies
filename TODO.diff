@@ -15,6 +15,13 @@ Changed css classes:
     quote footer
     cite
     header (titles n stuff)
+    center
+    toc
+    uncensorable donations entries
+        ol -> .leak-wrapper
+    "hidden" text in cryptography
+
+p in tabl
 
 Test with:
 + okular

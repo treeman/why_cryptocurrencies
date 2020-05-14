@@ -76,9 +76,9 @@ Even all of Bitcoin's hashrate, working for millions of years, are not expected 
     We can say it's impossible to reverse a hash if we have to brute force the solution like this, but there could be weaknesses in the hash function that could allow us to find it much earlier. The ◊link[sha-1]{SHA-1 hash function} is for example not secure anymore, as weaknesses have been found that can be used to generate collisions.
 }
 
-If you want to give up and see what I encoded in the hash, ◊toggle[iron-man]{click here.}
-
-◊(define iron-man "Iron Man is my favorite superhero")
+◊div[#:class "secret-hash"]{
+    The text I encoded in the was “◊span[#:class "secret"]{Iron Man is my favorite superhero}”
+}
 
 ◊note-pos[#:top -42]{multiple}
 ◊note-pos[#:top -35]{variation}

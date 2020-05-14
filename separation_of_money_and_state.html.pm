@@ -92,9 +92,9 @@ Separating church from the state was once unthinkable, yet it's now a given that
 
 In practice some countries have already separated money from their state, as they use money someone else control. For example the ◊link[euro]{Euro} is managed by the ◊link[ecb]{European Central Bank (ECB)}, and the countries that use the Euro have very little influence in the ECB's decision-making (well, most of them anyway). There are also countries that ◊link[countries-use-us]{use the U.S. dollar as their official currency}, while having no say in what the U.S. does with it.
 
-Gold might also be an example of money outside of state control---there's nobody with exclusive access to gold after all. But in practice someone has to cast the gold to coins for it to be usable as money, including a "government approved" stamp on them, which gives some sort of control over the money. After all, it's difficult to determine what a coin is made of so we just trust the stamp on it.◊sn{debasement}
+Gold might also be an example of money outside of state control---there's nobody with exclusive access to gold after all. But in practice someone has to cast the gold to coins for it to be usable as money, including a "government approved" stamp on them, which gives some sort of control over the money. After all, it's difficult to determine what a coin is made of so we just trust the stamp on it.◊sn{debasement_}
 
-◊ndef["debasement"]{
+◊ndef["debasement_"]{
     Because people don't actually verify the amount of gold in the coins, they could for example slowly decrease the amount of gold in the coins. This would enable them to make more coins and effectively increase the money supply. This is called ◊def[debasement]{debasement} and has been very common historically.
 }
 
@@ -108,7 +108,7 @@ Maybe a better example is shell money, or other money found in nature, where you
 
 So the idea that a state doesn't require control over their own money isn't really that strange, as there are many examples of the contrary.
 
-◊note-pos[#:top -14]{debasement}
+◊note-pos[#:top -14]{debasement_}
 
 
 ◊subhead{The difference with cryptocurrencies}

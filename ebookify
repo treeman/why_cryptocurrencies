@@ -9,7 +9,7 @@ import sys
 # See
 # http://www.jedisaber.com/eBooks/Tutorial.shtml
 
-uuid = "whycryptocurrencies.com-0.1"
+uuid = "0dfc44f6-9c27-42ea-b6a8-45334b6aeeff"
 
 dirname = os.path.dirname(__file__)
 site_dir = os.path.join(dirname, "_site")
@@ -75,7 +75,7 @@ titles = {
     "what_is_money.html": "What is money?",
     "are_cryptocurrencies_money.html": "Are cryptocurrencies money?",
     "better_digital_payments.html": "Better digital payments",
-    "cheaper_faster.html": "Cheaper & faster",
+    "cheaper_faster.html": "Cheaper &amp; faster",
     "undesirable_businesses.html": "“Undesirable” businesses",
     "freezing_of_merchant_accounts.html": "Freezing of merchant accounts",
     "uncensorable_donations.html": "Uncensorable donations",
@@ -122,6 +122,9 @@ def main():
 
     setup_post_replacements()
     setup_posts()
+
+    setup_static_pages()
+    setup_toc()
 
     create_zip()
 
@@ -194,26 +197,33 @@ def spine_toc_post(post):
 def img_id(img):
     base = os.path.basename(img)
     (name, _) = os.path.splitext(base)
-    return "img-" + img
+    return "img-" + name
 
 def manifest_img_tag(img):
     base = os.path.basename(img)
     (name, ext) = os.path.splitext(base)
     id = img_id(img)
 
-    # FIXME only png is officially supported?
+    fallback = ""
     if ext == ".png":
         t = "png"
     elif ext == ".svg":
         t = "svg"
+        fallback = id + "-fallback"
     elif ext == ".jpg":
         t = "jpg"
+        fallback = id + "-fallback"
     elif ext == ".gif":
         t = "gif"
+        fallback = id + "-fallback"
     else:
         sys.exit("unknown image: " + ext)
 
-    return f'<item id="{id}" href="{img}" media-type="image/{t}" />'
+    if fallback:
+        print("fallback: ", fallback)
+        fallback = f'fallback="{fallback}"'
+
+    return f'<item id="{id}" href="{img}" media-type="image/{t}" {fallback}/>'
 
 def setup_content_opf(images):
     with open(f"{ebook_files_dir}/content.opf", 'r') as f:
@@ -283,6 +293,20 @@ def setup_css():
     # FIXME custom stylesheet for epub
     subprocess.run(f"sassc sass/ebook.scss --style compressed > {oebps_dir}/stylesheet.css", shell=True)
 
+
+def setup_toc():
+    with open("index.html", 'r') as f:
+        data = f.read()
+
+    data = replace_post_data(data)
+
+    with open(f"{oebps_dir}/toc.xhtml", 'w') as f:
+        f.write(data)
+
+
+def setup_static_pages():
+    subprocess.run(f"cp {ebook_files_dir}/*.xhtml {oebps_dir}", shell=True)
+
 def setup_post_replacements():
     for post in toc:
         (name, ext) = os.path.splitext(post)
@@ -299,11 +323,15 @@ def setup_post(post):
     with open(post, 'r') as f:
         data = f.read()
 
-    for link, new_link in link_replace.items():
-        data = data.replace(link, new_link)
+    data = replace_post_data(data)
 
     with open(dst, 'w') as f:
         f.write(data)
+
+def replace_post_data(data):
+    for link, new_link in link_replace.items():
+        data = data.replace(link, new_link)
+    return data
 
 def create_zip():
     os.chdir(ebook_dir)

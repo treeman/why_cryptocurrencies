@@ -52,10 +52,16 @@ Let's travel back in time and look at the site ◊link[hn]{Hacker News}, a tech 
     Interestingly enough Hacker News is full of people extremely skeptical of cryptocurrencies, who often comment that cryptocurrencies don't have a single legal use-case. This skepticism and misunderstanding, even from highly technical people, was one of the reasons I started writing this book.
 }
 
-◊hn-html{
+◊img[#:src "/images/hn-html.png"
+     #:alt "Hacker News on Mars 1st, 2011."]{
     The top three stories on ◊link[hn-wayback-ref]{Hacker News on Mars 1st, 2011} according to the Wayback Machine.  
     I tried to reproduce the site appearance, but it's not pixel perfect.
 }
+
+◊;hn-html{
+    ◊;The top three stories on ◊link[hn-wayback-ref]{Hacker News on Mars 1st, 2011} according to the Wayback Machine.  
+    ◊;I tried to reproduce the site appearance, but it's not pixel perfect.
+◊;}
 
 As long as we can trust the Wayback Machine (and I do consider them generally trustworthy) we can be fairly sure this is correct. Letting a trusted party like the Wayback Machine handle timestamping, called ◊def[trusted-timestamping]{trusted timestamping}, is a solved problem with different kinds of standards but---as the name implies---there's always the caveat of requiring a trusted party to verify the timestamps.
 
@@ -143,18 +149,16 @@ With cryptocurrencies it's possible to do away with the trusted party requiremen
         There is actually a timestamp in a block which the miner who creates the block can set themselves, with ◊link[block-timestamp]{some constraints}. If we blindly trust that timestamp we essentially trust that one miner. Using the time different nodes received the block is a more decentralized approach, but trusting the miner is probably good enough for most practical examples. As more blocks are built on top by other miners we can be sure that the timestamp is reasonably correct.
     }
 
-    ◊figure{
-      ◊stable{
+    ◊stable{
       Block number      Node #1                 Node #2
       #1001             2019-09-14 10:01        2019-09-14 10:01
       #1002             2019-09-14 10:15        2019-09-14 10:27
       ...
       #1007             2019-09-14 11:07        2019-09-14 11:08
-      }
-      ◊decoded-figcaption{
+    }
+    ◊decoded-figcaption{
         A couple of blocks and their observed timestamps by two different nodes.  
         Blocks 1003--1006 are omitted.
-      }
     }
 
     Here we see that the timestamps differ, at most by ◊nbsp{12 minutes}. Although not visible in the table the nodes tell us that blocks 1003--1006 happened some time between 10:15 and 11:08. We cannot be sure down to seconds or minutes, but it gives a good estimate if we're only interested in an hourly or daily timestamp.◊sn{small-difference}

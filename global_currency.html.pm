@@ -30,18 +30,16 @@ Sending money to other countries, called ◊em{remittance}, is one of the first 
 
         The cost to use Western Union varies depending on the amount, the target country, your payment method and how the recipient should receive the money.
 
-        ◊figure{
-            ◊table-body{
-                ◊tr{◊td{}              ◊tds{United States (to bank)}  ◊tds{Zimbabwe (cash pick up)}}
-                ◊tr{◊tds{Credit Card}  ◊td{$27}                       ◊td{$56.50}}
-                ◊tr{◊tds{Debit Card}   ◊td{$15}                       ◊td{$42}}
-                ◊tr{◊tds{Bank Account} ◊td{$0.99}                     ◊td{$21}}
-            }
-            ◊figcaption{
-                Western Union fees to various countries, using different payment methods, measured in USD.◊br{}
-                You can either send it to a bank account or as a cash pick up. It's cheaper to send it to a bank account, but it's not always available. I could only choose the cash pick up option for Zimbabwe.◊br{}
-                Fees are calculated from sending $400 using ◊link[western-union-fees]{their homepage} in 2019-11-15.
-            }
+        ◊table-body[#:centered #f]{
+            ◊tr{◊td{}              ◊tds{United States (to bank)}  ◊tds{Zimbabwe (cash pick up)}}
+            ◊tr{◊tds{Credit Card}  ◊td{$27}                       ◊td{$56.50}}
+            ◊tr{◊tds{Debit Card}   ◊td{$15}                       ◊td{$42}}
+            ◊tr{◊tds{Bank Account} ◊td{$0.99}                     ◊td{$21}}
+        }
+        ◊span[#:class "figcaption"]{
+            Western Union fees to various countries, using different payment methods, measured in USD.◊br{}
+            You can either send it to a bank account or as a cash pick up. It's cheaper to send it to a bank account, but it's not always available. I could only choose the cash pick up option for Zimbabwe.◊br{}
+            Fees are calculated from sending $400 using ◊link[western-union-fees]{their homepage} in 2019-11-15.
         }
 
         This is expensive compared to ◊link[cryptocurrency-fees]{cryptocurrency fees}, which are ◊strong{less than a cent}.
@@ -193,7 +191,7 @@ Venezuela had a monthly inflation of 815,194%, in May 2019 alone. It's a huge nu
 It's easy to think that hyperinflation is a thing of the past, or that it only affects poor countries far away. But according to the ◊link[hanke-krus]{Hanke-Krus hyperinflation table} we've had 55 cases of hyperinflation since 1920, with 31 of them after 1990 (roughly half related to the collapase of the Soviet Union).◊sn{line-inflation} Some famous examples include:
 
 
-◊section[#:class "inflation-examples"]{
+◊div[#:class "inflation-examples"]{
     ◊inflation["Germany"
                #:date "1920s"]{
         In Germany after the first world war, when inflation was at its height prices doubled in less than four days. It's not the worst case of hyperinflation, but it might be the most well-known, maybe because it happened to a powerful western nation and it's related to the world wars.

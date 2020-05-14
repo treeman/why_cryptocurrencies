@@ -42,13 +42,13 @@
       ""))
 
 (define (page-toc page)
-  `(section
+  `(div ((class "page-toc"))
      (h1 ,(make-entry (node page)))
      ,(make-subnav (children page))))
 
 ;; Make a table of content, used on the homepage or dedicated toc page.
 (define (make-toc content)
-  `(nav ((class "toc"))
+  `(div ((class "toc"))
     ,@(map page-toc content)))
 
 ;; Locate entry in table of content.
@@ -67,7 +67,7 @@
         `(span ((class "chapters")) "Chapters in this section")
         ""))
   (if chapters
-    `(nav ((class "subnav"))
+    `(div ((class "subnav"))
         ,header
         ,(make-subnav chapters))
     ""))

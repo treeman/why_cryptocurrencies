@@ -73,5 +73,10 @@
       (regexp-match #rx"^mailto:" x))))
 
 (define (to-name x)
-  (string-replace (string-downcase x) " " "-"))
+  (string-replace
+    (regexp-replace* #rx"[',%?&;]+"
+                     (string-replace (string-downcase x) "&amp;" "")
+                     "")
+    " "
+    "-"))
 

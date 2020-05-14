@@ -439,16 +439,16 @@ The deeper a transaction is in the blockchain---the more confirmations it has---
 
 Bitcoin's security isn't absolute but probabilistic. One way to think about it is to find one block you need to get lucky. To find more blocks you need to get lucky several times, which you have to do if you want to reverse a transaction with more confirmations.
 
-◊link[bitcoin_whitepaper]{Bitcoin's white paper} goes into more details and recommends 6 confirmations---roughly one hour---to be sure you don't get defrauded. Today for most normal payments a single confirmation is enough.◊sn{0-conf}
+◊link[bitcoin_whitepaper]{Bitcoin's white paper} goes into more details and recommends 6 confirmations---roughly one hour---to be sure you don't get defrauded. Today for most normal payments a single confirmation is enough.◊sn{0-conf-ref}
 
 A crucial mistake people make is to think more miners, or more energy used, means more transactions can be handled. This is not true. Miners ◊strong{only} care about securing the chain preventing transactions from being reversed.
 
 In fact we could spend 100x more energy on mining and process the same amount of transactions or we could spend 1% of the energy and process more transactions. Transaction throughput is a separate problem.◊sn{more-energy}
 
-◊note-pos[#:top -16]{0-conf}
+◊note-pos[#:top -16]{0-conf-ref}
 ◊note-pos{more-energy}
 
-◊ndef["0-conf"]{
+◊ndef["0-conf-ref"]{
     You can actually even accept transactions without any confirmation, called ◊em{0-conf}. They are much less secure than a confirmed transaction but since most miners respect the first seen rule it's fairly safe for small purchases.
 
     There are investigations on how to make 0-conf more secure. One of the more interesting proposals is ◊link[z-forfeits]{0-conf forfeits} where you provide a larger sum as hostage and if you try to double spend you lose them.

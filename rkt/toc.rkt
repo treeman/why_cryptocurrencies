@@ -9,7 +9,6 @@
     (about_the_book.html
      acknowledgements.html
      how_to_use.html
-     free.html
      about_me.html)
     (what_is_a_cryptocurrency.html
      properties_of_a_cryptocurrency.html
@@ -67,7 +66,6 @@
 (module+ test
   (require rackunit)
   (check-equal? (in-toc? 'eli5.html) #t)
-  (check-equal? (in-toc? 'free.html) #t)
   (check-equal? (in-toc? 'cheaper_faster.html) #t)
   (check-equal? (in-toc? 'blaha) #f)
   )

@@ -33,7 +33,7 @@ First let's look at some interesting historical examples of things that have bee
     Even though we cannot reach out and grab them, the coins do exist. Similar to how digital pictures exist---they're not an abstract concept. Therefore I, as much of the community, will still call cryptocurrencies a type of currency.
 }
 
-◊section[#:class "money-examples"]{
+◊div[#:class "money-examples"]{
     ◊money["Shells"
            #:date "1200 B.C."
            #:img "/images/cowry.png"

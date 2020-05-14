@@ -33,7 +33,7 @@
   (provide (all-defined-out))
 
   (define template-prefix "chapter")
-  (define block-tags (append '(img table tbody tr dt dd dl) default-block-tags))
+  (define block-tags (append '(img table thead tbody tr dt dd dl) default-block-tags))
 
   ;; Use our own publish script instead...
   ;; Ignore stuff during 'raco pollen publish'

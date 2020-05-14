@@ -177,7 +177,7 @@ This is ◊strong{not} a glorification of WikiLeaks---they have ◊link[wikileak
     "WikiLeaks Has Officially Lost the Moral High Ground"))
 
 
-◊section[#:class "wikileaks"]{
+◊div[#:class "wikileaks"]{
 
   ◊entry["Beginning"
           #:date "Oct 4, 2006"]{
@@ -205,7 +205,7 @@ This is ◊strong{not} a glorification of WikiLeaks---they have ◊link[wikileak
         5. ◊link[saudi-urges-attack]{Saudi urged U.S. to attack Iran}
     }
 
-    ◊ol{
+    ◊div[#:class "leak-wrapper"]{
       ◊leak["Collateral murder" #:url collateral-murder-wikileaks]{
 
         WikiLeaks uploaded a video of a Baghdad helicopter attack in July 12, 2007 with the title "Collateral murder". It's a video of how an attack helicopter kills a dozen (innocent) people, including two Reuters news staff.
@@ -504,7 +504,7 @@ This is ◊strong{not} a glorification of WikiLeaks---they have ◊link[wikileak
                      ""))
    `(div ((class "entry"))
       (div ((class "header"))
-        (h3 ,title)
+        (span ((class "h3")) ,title)
         ,xdate)
       (div ((class "txt"))
         ,@text)))
@@ -513,8 +513,8 @@ This is ◊strong{not} a glorification of WikiLeaks---they have ◊link[wikileak
    (define xtitle (if url
                       (link url title)
                       title))
-   `(li ((class "leak"))
-      (div [[class "title"]] ,xtitle)
+   `(div ((class "leak"))
+      (span [[class "title"]] ,xtitle)
       ,@text))
 
 ◊(define (transcript . rows)
