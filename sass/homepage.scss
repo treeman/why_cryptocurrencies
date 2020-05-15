@@ -3,28 +3,37 @@
     margin: 0.5rem 1.2rem;
 }
 
-.homepage > header {
+.page-toc a {
+    font-size: 1rem !important;
+}
+
+.homepage > .header {
     margin-bottom: 1em;
     padding-bottom: 0.3em;
     border-bottom: 0.2em solid;
+    text-align: left;
 
     h1 {
         @extend %sans-serif-c;
-        font-size: 2rem;
         margin-bottom: 0.2rem;
+    }
+    h1, h1 a {
+        font-size: 2rem !important;
     }
     h2 {
         @extend %sans-serif;
-        font-size: 1rem;
         font-weight: normal;
         font-style: italic;
         margin: 0;
         margin-left: 0.3rem;
         margin-bottom: 0.2rem;
     }
+    h2, h2 a {
+        font-size: 1rem !important;
+    }
 }
 
-.toc section:not(:first-child) {
+.toc .page-toc:not(:first-child) {
     padding-top: 1.2rem;
 }
 
@@ -40,8 +49,8 @@
     }
 }
 
-.toc h1 {
-    font-size: 1.1rem;
+.toc h1, .toc h1 a {
+    font-size: 1.1rem !important;
 }
 .toc ul {
     margin-top: 0.5rem;
@@ -55,3 +64,4 @@
 .toc .planned {
     color: $planned-chapter-link;
 }
+

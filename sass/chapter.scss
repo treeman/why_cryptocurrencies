@@ -22,11 +22,12 @@ $sidenote-float-width: 1280px;
 /*
  * Header
  */
-.chapter > header {
+.chapter > .header {
+    text-align: left !important;
     h2 {
         font-weight: normal;
         font-style: italic;
-        font-size: 1rem;
+        font-size: 1rem !important;
 
         margin-top: 0.4em;
         margin-bottom: 0.8em;
@@ -43,7 +44,7 @@ $sidenote-float-width: 1280px;
 }
 
 .where {
-    font-size: 0.8rem;
+    font-size: 0.8rem !important;
     @extend %sans-serif;
     margin-bottom: 0.8rem;
     color: $eth-dark-gray;
@@ -54,7 +55,7 @@ $sidenote-float-width: 1280px;
 .where .up {
 }
 .where .divider {
-    font-size: 0.65rem;
+    font-size: 0.65rem !important;
     color: $eth-light-gray;
 }
 
@@ -88,7 +89,10 @@ $list-p-margin: 0.6em;
     }
     ol li, ul li {
         margin-bottom: 0.4em;
-        font-size: 95%;
+    }
+    ol div, ol span, ol li, ol a,
+    ul div, ul span, ul li, ul a {
+        font-size: 95% !important;
         line-height: 1.35;
     }
 
@@ -122,7 +126,7 @@ $list-p-margin: 0.6em;
 
     // Description lists
     dl {
-        font-size: 95%;
+        font-size: 95% !important;
         line-height: 1.35;
         margin-bottom: 1rem;
     }
@@ -141,7 +145,7 @@ $list-p-margin: 0.6em;
     @extend %sans-serif;
 
     .chapters {
-        font-size: 1.1rem;
+        font-size: 1.1rem !important;
         font-weight: bold;
     }
 
@@ -150,7 +154,7 @@ $list-p-margin: 0.6em;
         margin: 0;
     }
     ul > li {
-        font-size: 100%;
+        font-size: 100% !important;
         margin-left: 0.6rem;
         margin-top: 0.3rem;
     }
@@ -187,19 +191,21 @@ $list-p-margin: 0.6em;
  * Quotes
  */
 blockquote {
-    font-size: 95%;
     line-height: 1.4;
     margin: 2em;
 }
-blockquote > footer {
-    font-size: 80%;
+blockquote, blockquote div, blockquote span, blockquote p, blockquote a {
+    font-size: 95% !important;
+}
+blockquote > .footer {
+    font-size: 80% !important;
     text-align: right;
 }
-blockquote > footer > cite {
+blockquote > .footer > .cite {
     font-style: italic;
 }
 blockquote .emphasis {
-    font-size: 80%;
+    font-size: 80% !important;
 }
 blockquote.center {
     text-align: center;
@@ -216,7 +222,7 @@ blockquote.center {
     margin: 2em 0;
 
     blockquote {
-        font-size: 1rem;
+        font-size: 1rem !important;
         font-style: italic; // Regular shouldn't be italic?
     }
     blockquote > footer {
@@ -230,7 +236,7 @@ blockquote.center {
  */
 table {
     @extend %sans-serif-tnum;
-    font-size: 0.95rem;
+    font-size: 0.95rem !important;
     margin-bottom: 1rem;
 
     display: block;
@@ -254,7 +260,7 @@ th, td {
  */
 pre, code {
     font-family: $code-font-family;
-    font-size: 0.71rem;
+    font-size: 0.71rem !important;
     line-height: 1.45;
 }
 code {
@@ -268,7 +274,7 @@ pre {
     padding: 0.4rem 0.6rem;
 }
 .sidenote code {
-    font-size: 0.6rem;
+    font-size: 0.6rem !important;
     line-height: 1.4;
     //white-space: nowrap;
 }
@@ -280,7 +286,7 @@ pre {
 .def {
     font-style: italic;
 }
-cite.book {
+.cite.book {
     font-style: normal;
 }
 
@@ -298,7 +304,9 @@ cite.book {
 
 .sidenote {
     @extend %sans-serif;
-    font-size: 0.8rem;
+}
+.sidenote, .sidenote p, .sidenote div, .sidenote a {
+    font-size: 0.8rem !important;
 }
 .sidenote img, {
     max-width: 100%;
@@ -309,7 +317,7 @@ cite.book {
 .sidenote-number, .sidenote-label {
     font-family: $sans-serif-font-family;
     //vertical-align: super;
-    font-size: 0.7em;
+    font-size: 0.7em !important;
     display: inline-block;
     //background-color: tomato;
 }
@@ -372,7 +380,7 @@ cite.book {
 }
 .donation-label {
     @extend %sans-serif;
-    font-size: 0.9rem;
+    font-size: 0.9rem !important;
     font-weight: bold;
     color: $body-font-color;
     cursor: pointer;
@@ -397,7 +405,7 @@ cite.book {
 }
 .donation-content .address {
     font-family: $hack;
-    font-size: 0.8rem;
+    font-size: 0.8rem !important;
     word-wrap: break-word;
 }
 
@@ -406,11 +414,10 @@ cite.book {
  * Images
  */
 a.img-wrapper:link {
-    background: none;
-    text-shadow: none;
+    text-decoration: none;
 }
 a.img-wrapper:hover {
-    @include a-background(#333);
+    text-decoration: underline;
 }
 
 
@@ -426,7 +433,7 @@ figure {
     }
     > figcaption {
         @extend %sans-serif;
-        font-size: 0.9rem;
+        font-size: 0.9rem !important;
     }
 }
 figure.fullwidth {
@@ -446,7 +453,7 @@ figcaption.margin {
         width: $fullwidth;
     }
     figcaption.margin {
-        font-size: 0.8rem;
+        font-size: 0.8rem !important;
         float: right;
         clear: right;
         margin-right: -420px;
@@ -458,7 +465,7 @@ figcaption.margin {
     }
     // Override the above in a fullwidth image. Not sure how to avoid this?
     figure.fullwidth > figcaption.margin {
-        font-size: 0.9rem;
+        font-size: 0.9rem !important;
         float: none;
         margin: 0;
         position: static;
@@ -484,13 +491,13 @@ figure .sidenote {
 
     a {
         @extend %sans-serif;
-        font-size: 1.05rem;
+        font-size: 1.05rem !important;
     }
 }
 
 .todo {
     @extend %sans-serif;
-    font-size: 0.8rem;
+    font-size: 0.8rem !important;
     margin: 1rem 1rem;
 
     .pre {
@@ -637,7 +644,7 @@ table.address-examples {
         margin-top: 0;
     }
     .header {
-        font-size: 1.1rem;
+        font-size: 1.1rem !important;
         @extend %sans-serif;
         line-height: 1;
         display: flex;
@@ -655,7 +662,7 @@ table.address-examples {
         margin-top: 0;
     }
     .header {
-        font-size: 1.1rem;
+        font-size: 1.1rem !important;
         @extend %sans-serif;
         line-height: 1;
         display: flex;
@@ -687,7 +694,7 @@ table.address-examples {
         margin-top: 0;
     }
     > .header {
-        font-size: 1.1rem;
+        font-size: 1.1rem !important;
         @extend %sans-serif;
         line-height: 1;
         display: flex;
@@ -706,7 +713,7 @@ table.address-examples {
         margin-top: 0.5em;
         margin-bottom: 0.8em;
         margin-left: 1em;
-        font-size: 90%;
+        font-size: 90% !important;
     }
 }
 
@@ -728,7 +735,7 @@ table.address-examples {
     .transcript {
         margin: 1rem 0;
         padding-left: 1rem;
-        font-size: 95%;
+        font-size: 95% !important;
         line-height: 1.4;
         border-left: 1px solid $body-hr-color;
     }
@@ -823,7 +830,7 @@ ul.talking > li:before {
 
 table.address-message {
     font-family: $code-font-family;
-    font-size: 0.71rem;
+    font-size: 0.71rem !important;
     line-height: 1.45;
     //font-style: italic;
     .msg-char {
@@ -832,107 +839,9 @@ table.address-message {
     }
 }
 
-
-/*
- * Legacy HN
- */
-.hn {
-    font-size: 0.8rem;
-    font-family: Verdana;
-    color: #828282;
-    background-color: #f6f6ef;
-    margin: 1rem;
-    overflow-x: hidden;
-    white-space: nowrap;
-
-    a:link {
-        text-shadow: none;
-        background: none;
-        color: #000;
-    }
-    a:visited {
-        color:#828282;
-    }
-}
-.hn table {
-    font-size: 0.8rem;
-    font-family: Verdana;
-    padding: 0 0 0.2rem 0.4rem;
-    margin: 0;
-    overflow-x: hidden;
-    white-space: nowrap;
-
-    th, td {
-        margin: 0;
-        padding: 0;
-    }
-    .title {
-        font-size: 1em;
-    }
-    .comhead {
-        font-size: 0.8em;
-    }
-    .subtext {
-        font-size: 0.7em;
-    }
-    .comhead a:link, .subtext a:link, .subtext a:visited {
-        color:#828282;
-    }
-    .subtext a:hover, .comhead a:hover {
-        text-decoration: underline;
-    }
-    .arrow {
-        font-size: 0.65em;
-        color: #b3b3b3;
-        margin-left: 0.4em;
-        margin-right: 0.3em;
-        position: relative;
-        top: -0.12em;
-        cursor: pointer;
-    }
-}
-
-.hn .header {
-    font-size: 0.8rem;
-    font-family: Verdana;
-    background-color: #ff6600;
-    margin: 0;
-    padding: 0;
-    margin-bottom: 0.4rem;
-    height: 1.3rem;
-    text-align: left;
-
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-
-    .logo a {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .logo a img {
-        border: 1px #fff solid;
-        max-width: 20px;
-        max-height: 20px;
-        margin: 0 0.2rem;
-    }
-    .pagetop {
-        font-size: 1em;
-        color:#222222;
-    }
-    .pagetop a:visited {
-        color:#000000;
-    }
-    .hn-title {
-        font-weight: bold;
-        margin-right: 0.8em;
-    }
-}
-
 .fractional-table-ex {
     @extend %sans-serif-tnum;
-    font-size: 0.95rem;
+    font-size: 0.95rem !important;
     margin: 1em 0 1.2em 0;
 
     .row {
@@ -963,7 +872,7 @@ table.address-message {
 
     .title {
         @extend %sans-serif;
-        font-size: 1rem;
+        font-size: 1rem !important;
         width: 100%;
         text-align: center;
     }
@@ -991,77 +900,13 @@ table.address-message {
     display: inline-block;
 }
 
+
 /*
-.money-visualization .block {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-
-    .row {
-        width: 100%;
-        //flex: 0 0 auto;
-        display: flex;
-        justify-content: center;
-        //flex-wrap: nowrap;
+* FIXME this works for text, but fucks up other stuff
+* \cry
+.chapter {
+    div, span, p, ul, li, a {
+        font-size: 1rem !important;
     }
-    .title {
-        @extend %sans-serif;
-        font-size: 1rem;
-    }
-}
-
-.money-vis.big {
-    font-size: 0.6em;
-    line-height: 1;
-}
-.money-vis.small {
-    font-size: 0.3em;
-    line-height: 1;
-}
-.inline-ex .money-vis {
-    display: inline-block;
-    vertical-align: middle;
-    line-height: normal;
-    padding-bottom: 0.1rem;
-}
-
-
-.money-visualization .block.person .money-vis {
-    //color: $xmr-orange;
-}
-.money-visualization .block.gold .money-vis {
-    color: #ffb900;
-}
-.money-visualization .block.money .money-vis {
-    color: #3E9651;
-}
-.money-visualization .block.derivatives .money-vis {
-    color: #535154;
-}
-.money-visualization .block.bitcoin .money-vis {
-    //color: $btc-orange;
 }
 */
-
-.hidden-label {
-    @include a-background(#333);
-    cursor: pointer;
-}
-.hidden-label:hover {
-    color: $body-link-hover-color;
-    background: none;
-    shadow: none;
-}
-.hidden-toggle {
-    display: none;
-}
-.hidden-content {
-    display: none;
-    @extend %sans-serif;
-    font-size: 0.8rem;
-}
-.hidden-toggle:checked + .hidden-content {
-    display: block;
-    text-align: center;
-    padding-top: 0.2rem;
-}
