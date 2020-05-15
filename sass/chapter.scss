@@ -1,6 +1,36 @@
 $fullwidth: 1220px;
 $sidenote-float-width: 1280px;
 
+// FIXME this works for text, but fucks up other stuff
+// \cry
+
+.chapter {
+    div, span, p, ul, li, a {
+        font-size: 22px !important;
+    }
+}
+@media only screen and (max-width: 700px) {
+    .chapter {
+        div, span, p, ul, li, a {
+            font-size: 20px !important;
+        }
+    }
+}
+@media only screen and (max-width: 600px) {
+    .chapter {
+        div, span, p, ul, li, a {
+            font-size: 18px !important;
+        }
+    }
+}
+@media only screen and (max-width: 520px) {
+    .chapter {
+        div, span, p, ul, li, a {
+            font-size: 16px !important;
+        }
+    }
+}
+
 .chapter {
     max-width: 800px;
     //background-color: lightyellow;
@@ -92,7 +122,7 @@ $list-p-margin: 0.6em;
     }
     ol div, ol span, ol li, ol a,
     ul div, ul span, ul li, ul a {
-        font-size: 95% !important;
+        font-size: 0.95rem !important;
         line-height: 1.35;
     }
 
@@ -126,7 +156,7 @@ $list-p-margin: 0.6em;
 
     // Description lists
     dl {
-        font-size: 95% !important;
+        font-size: 0.95rem !important;
         line-height: 1.35;
         margin-bottom: 1rem;
     }
@@ -154,7 +184,7 @@ $list-p-margin: 0.6em;
         margin: 0;
     }
     ul > li {
-        font-size: 100% !important;
+        font-size: 1rem !important;
         margin-left: 0.6rem;
         margin-top: 0.3rem;
     }
@@ -194,18 +224,21 @@ blockquote {
     line-height: 1.4;
     margin: 2em;
 }
-blockquote, blockquote div, blockquote span, blockquote p, blockquote a {
-    font-size: 95% !important;
+.chapter {
+    blockquote, blockquote div, blockquote span, blockquote p, blockquote a, blockquote > p {
+        font-size: 0.95rem !important;
+    }
 }
-blockquote > .footer {
-    font-size: 80% !important;
+blockquote > .footer, blockquote > .footer .author, blockquote > .footer .src, blockquote > .footer .src a,
+blockquote > .footer span {
+    font-size: 0.8rem !important;
     text-align: right;
 }
 blockquote > .footer > .cite {
     font-style: italic;
 }
 blockquote .emphasis {
-    font-size: 80% !important;
+    font-size: 0.8rem !important;
 }
 blockquote.center {
     text-align: center;
@@ -713,7 +746,7 @@ table.address-examples {
         margin-top: 0.5em;
         margin-bottom: 0.8em;
         margin-left: 1em;
-        font-size: 90% !important;
+        font-size: 0.9rem !important;
     }
 }
 
@@ -735,7 +768,7 @@ table.address-examples {
     .transcript {
         margin: 1rem 0;
         padding-left: 1rem;
-        font-size: 95% !important;
+        font-size: 0.95rem !important;
         line-height: 1.4;
         border-left: 1px solid $body-hr-color;
     }
@@ -900,13 +933,3 @@ table.address-message {
     display: inline-block;
 }
 
-
-/*
-* FIXME this works for text, but fucks up other stuff
-* \cry
-.chapter {
-    div, span, p, ul, li, a {
-        font-size: 1rem !important;
-    }
-}
-*/

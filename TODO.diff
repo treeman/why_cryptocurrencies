@@ -21,7 +21,20 @@ Changed css classes:
         ol -> .leak-wrapper
     "hidden" text in cryptography
 
-p in tabl
+p in tables
+
+
+CSS TODO
+- Ensure font size is correct for all elements (sidenotes, lists, quotes...)
+- Style images
+- Style tables
+- Sometimes sidenotes negative margins are fucked up
+
+Hierarchical toc?
+    http://idpf.org/epub/20/spec/OPF_2.0.1_draft.htm#Section2.4.1
+    https://kb.daisy.org/publishing/docs/navigation/toc.html
+
+
 
 Test with:
 + okular
