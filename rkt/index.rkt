@@ -23,7 +23,7 @@
       node))
 (define (href node)
   (if (symbol? node)
-      (string-append "/" (symbol->string node))
+      (symbol->string node)
       #f))
 
 (define (make-entry node)

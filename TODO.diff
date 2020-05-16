@@ -1,3 +1,10 @@
+- & in title
+- nested toc
+- unloadable svgs
+- tabel formating
+- uncensorable donations formatting
+- better formatting for unbanked maps
+
 Need a designer for a cover
 + Find similar covers for the genre
 + Find covers similar to the one I want
@@ -32,14 +39,10 @@ Changed css classes:
 
 p in tables
 
-
-
-
 CSS TODO
 - Ensure font size is correct for all elements (sidenotes, lists, quotes...)
 - Style images
 - Style tables
-- Sometimes sidenotes negative margins are fucked up
 
 Hierarchical toc?
     http://idpf.org/epub/20/spec/OPF_2.0.1_draft.htm#Section2.4.1

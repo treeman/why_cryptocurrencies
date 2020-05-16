@@ -387,37 +387,39 @@ a.img-wrapper:hover {
 /*
  * Figures
  */
-figure {
+.img {
     margin-bottom: 1rem;
     text-align: center;
 
     img {
         max-width: 100%;
+        text-align: center;
+        margin: 0 auto;
     }
-    > figcaption {
+    > .figcaption {
         @extend %sans-serif;
         font-size: 0.9rem;
     }
 }
-figure.fullwidth {
+.img.fullwidth {
     img {
         width: 100%;
     }
 }
-figure.slim {
+.img.slim {
     margin: 0;
 }
-figcaption.margin {
+.figcaption.margin {
     @extend %sans-serif;
 }
 
 @media (min-width: $sidenote-float-width) {
-    figure.fullwidth {
+    .figcaption.fullwidth {
         width: $fullwidth;
     }
 }
 
-figure .sidenote {
+.figcaption .sidenote {
     text-align: left;
 }
 

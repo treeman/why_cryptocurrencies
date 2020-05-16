@@ -109,7 +109,7 @@
     [else
       #f]))
 (define (ch-ref? url)
-  (match (regexp-match #rx"^/([^#]+)" url)
+  (match (regexp-match #rx"^/?([^#]+)" url)
     [(list _ x)
       (in-toc? (string->symbol x))]
     [else

@@ -52,7 +52,7 @@
   (unless (in-toc? chapter)
     (printf "INVALID CH '~a'~n" chapter))
 
-  (define url (string-append "/" (symbol->string chapter)))
+  (define url (symbol->string chapter))
   (when ref
     (set! url (string-append url "#" (to-name ref))))
 
@@ -68,6 +68,8 @@
     (string? x)
     (or
       (xref? x)
+      (in-toc? (string->symbol x))
+      (regexp-match #rx"[^#]+.html#.+" x)
       (regexp-match #rx"^#" x)
       (regexp-match #rx"^/" x)
       (regexp-match #rx"^mailto:" x))))

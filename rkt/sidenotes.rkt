@@ -28,7 +28,8 @@
 (define (clear-sidenotes)
   (hash-clear! note-defs)
   (hash-clear! notes)
-  (hash-clear! note-pos-refs))
+  (hash-clear! note-pos-refs)
+  (set! sidenote-counter 0))
 
 ;; Notes
 
