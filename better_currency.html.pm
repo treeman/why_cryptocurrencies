@@ -6,6 +6,8 @@
 ◊(define-meta updated "2020-03-09T21:07:48+01:00")
 ◊(define-meta uuid "10e625f0-2470-49a9-ae74-36f0c78d943b")
 
+◊(clear-sidenotes)
+
 ◊epigraph{
   ◊qt[#:author "Mayer Amschel Rothschild"]{
     Let me issue and control a nation's money and I care not who writes the laws.

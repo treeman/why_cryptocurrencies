@@ -6,6 +6,8 @@
 ◊(define-meta updated "2020-01-15T20:08:34+01:00")
 ◊(define-meta uuid "55993260-1c9a-4bcf-ace5-7773e65bf7b5")
 
+◊(clear-sidenotes)
+
 ◊epigraph{
     ◊book-qt[1984-book]{
  If you want a picture of the future, imagine a boot stamping on a human face—for ever.
@@ -138,7 +140,7 @@ The worst part of this story is that it's not even that far-fetched, and all exa
     ◊li{
         Here in Sweden I've seen public bathrooms you unlock with digital payments:
 
-        ◊img[#:src "/images/digital_bathroom_lock.jpg" #:alt "A lock on a public bathroom door that only accepts digital payments."]{
+        ◊img[#:src "images/digital_bathroom_lock.jpg" #:alt "A lock on a public bathroom door that only accepts digital payments."]{
             It says "5 SEK fee". Instead of inserting a 5 SEK coin, you use your card. Very convenient, when it works. I wonder if it unlocks when power disappears?
         }
     }

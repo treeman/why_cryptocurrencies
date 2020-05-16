@@ -6,4 +6,6 @@
 ◊(define-meta updated "2020-01-21T08:28:42+01:00")
 ◊(define-meta uuid "a69e0036-a749-4f7c-b02e-dbcfa2776540")
 
+◊(clear-sidenotes)
+
 TODO rewrite this section

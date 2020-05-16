@@ -6,6 +6,8 @@
 ◊(define-meta updated "2020-01-21T08:27:30+01:00")
 ◊(define-meta uuid "b09419e3-0f3d-4473-b458-d0dad01ed4b8")
 
+◊(clear-sidenotes)
+
 ◊epigraph{
   ◊qt[#:author "Ayn Rand"]{
     So you think that money is the root of all evil. Have you ever asked what is the root of all money?
@@ -28,17 +30,17 @@ If I did print money---a ◊strong{lot} of money---and spent it like this, what 
 
 For starters if I just kept the money without spending it, nothing would change:
 
-◊img[#:src "/images/counterfeiting1.png" #:alt "The counterfeiter can print a large stash of cash."]{
+◊img[#:src "images/counterfeiting1.png" #:alt "The counterfeiter can print a large stash of cash."]{
     The counterfeit money is colored yellow and the real money is green.
 }
 
 Then if I decided to buy a bunch of LEGO®, the store would get some of my money:
 
-◊img[#:src "/images/counterfeiting2.png" #:alt "The counterfeiter buys LEGO."]{}
+◊img[#:src "images/counterfeiting2.png" #:alt "The counterfeiter buys LEGO."]{}
 
 After a while the store would use the counterfeited money to pay their supplier:
 
-◊img[#:src "/images/counterfeiting3.png" #:alt "Money further trickles down to the supplier, but not to everyone."]{}
+◊img[#:src "images/counterfeiting3.png" #:alt "Money further trickles down to the supplier, but not to everyone."]{}
 
 Who in turn will use it to buy other stuff, and in this way the counterfeited money slowly trickles out into the rest of the economy. This extra money has two important effects:
 

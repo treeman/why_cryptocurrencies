@@ -6,6 +6,8 @@
 ◊(define-meta updated "2020-01-15T20:08:28+01:00")
 ◊(define-meta uuid "dbc67487-8838-42cf-a8b8-fc982cf9142b")
 
+◊(clear-sidenotes)
+
 ◊epigraph{
   ◊qt[#:author "J. Robert Oppenheimer"
       #:src "1965 TV Broadcast"

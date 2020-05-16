@@ -6,6 +6,8 @@
 ◊(define-meta updated "2020-04-23T12:10:03+02:00")
 ◊(define-meta uuid "635e169f-885a-4d29-a266-4c9ef4981f47")
 
+◊(clear-sidenotes)
+
 ◊epigraph{
   ◊qt[#:author "Adam Back"
       #:src "Baltic Honeybadger 2017 Bitcoin Conference"

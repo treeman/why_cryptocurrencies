@@ -6,6 +6,8 @@
 ◊(define-meta updated "2020-03-09T21:08:42+01:00")
 ◊(define-meta uuid "875332fd-f5ad-4275-8254-008a2e74a4a0")
 
+◊(clear-sidenotes)
+
 ◊epigraph{
     ◊qt[#:src "Global Findex database"
         #:url findex-report

@@ -6,6 +6,8 @@
 ◊(define-meta updated "2020-03-09T21:08:26+01:00")
 ◊(define-meta uuid "011ff2b6-0e56-4501-a6ca-63e9ac6dcc65")
 
+◊(clear-sidenotes)
+
 ◊epigraph{
   ◊qt[#:author "Frank Underwood"
       #:src "House of Cards"]{

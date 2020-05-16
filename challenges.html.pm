@@ -6,6 +6,8 @@
 ◊(define-meta updated "2020-04-19T10:18:24+02:00")
 ◊(define-meta uuid "c13d8405-fb3e-411c-b035-aae08eedddf1")
 
+◊(clear-sidenotes)
+
 While cryptocurrencies do some things very well, there are several hard unsolved problems with cryptocurrencies. Here's a description of some of them:
 
 
@@ -81,12 +83,12 @@ Bitcoin, like most cryptocurrencies, uses a public ledger where all transactions
      "https://www.chainalysis.com/"
      "The Blockchain Analysis Company - Chainalysis"))
 
-◊img[#:src "/images/coin-tracing.png" #:alt "Paying someone with allows you to see their funds."]{
+◊img[#:src "images/coin-tracing.png" #:alt "Paying someone with allows you to see their funds."]{
     After the merchant receives a payment from John, the merchant can see that John has sent 13 BTC to another address and that John still has 40 - 1 - 13 = 26 BTC on the original address.
     John appears to be quite rich.
 }
 
-◊img[#:src "/images/coin-tracing2.png" #:alt "You can trace coins back in history."]{
+◊img[#:src "images/coin-tracing2.png" #:alt "You can trace coins back in history."]{
     It's possible to trace coins further back in history. Here we see that John's coins come from a hacked exchange, whose address is known. It might mean John is the hacker or, more probably, that John has received ◊em{tainted} coins (coins associated with illegal behavior).
 }
 
@@ -100,13 +102,13 @@ You can explore the Bitcoin blockchain, and see all transactions and addresses, 
 
 In an attempt to make Bitcoin more private "mixing" services such as ◊link[coinjoin]{CoinJoin} can be used. They work by mixing together your coins with the coins of others, in an attempt to obscure where the coins are coming from.
 
-◊img[#:src "/images/coinjoin.png" #:alt "Obfuscation by mixing coins with other addresses."]{
+◊img[#:src "images/coinjoin.png" #:alt "Obfuscation by mixing coins with other addresses."]{
     A mixing service makes several addresses send to each other, in order to obfuscate the history. Although not shown here, because it would be messy, all addresses and amounts are still visible.
 }
 
 They're not perfect because you can still have a transaction graph, and you might be able to figure out where the coins originated from anyway. Another approach is used by ◊link[zcash]{the shielded transactions of ZCash}, where all information is hidden.
 
-◊img[#:src "/images/zcash-shielded.png" #:alt "ZCash shielded transactions obfuscate everything."]{
+◊img[#:src "images/zcash-shielded.png" #:alt "ZCash shielded transactions obfuscate everything."]{
     Shielded transactions hide both addresses and amount of transactions, but normal transactions still have their details visible.
 }
 
@@ -120,11 +122,11 @@ With this privacy scheme governments can still ◊link[blacklisting]{blacklist c
 
 ◊link[Monero]{Monero} tries to solve this by hiding amounts and obscuring addresses for all transactions.
 
-◊img[#:src "/images/monero-transactions.png" #:alt "A Monero transaction comes from one of several possible addresses."]{
+◊img[#:src "images/monero-transactions.png" #:alt "A Monero transaction comes from one of several possible addresses."]{
     This is how the Monero blockchain appears to an observer. Each input is hidden among other transactions, but we cannot tell which one is real and which are fake. Receiving addresses are protected by stealth addresses and all amounts are also hidden.
 }
 
-◊img[#:src "/images/monero-transactions2.png" #:alt "The receiver of a transaction can see which is the correct one."]{
+◊img[#:src "images/monero-transactions2.png" #:alt "The receiver of a transaction can see which is the correct one."]{
     The merchant who receives the transaction can see which of the inputs is the correct one, the amount and a tag saying who the payment is from. (Alternatively the merchant could've given John a unique address and skip the transcation tagging.)
 }
 

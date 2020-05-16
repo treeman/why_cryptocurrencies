@@ -6,6 +6,8 @@
 ◊(define-meta updated "2020-02-27T13:35:06+01:00")
 ◊(define-meta uuid "b92733e8-9356-487e-abb9-510ac0cc5735")
 
+◊(clear-sidenotes)
+
 ◊epigraph{
   ◊qt[#:author "Julian Assange"
       #:url julian
@@ -52,7 +54,7 @@ Let's travel back in time and look at the site ◊link[hn]{Hacker News}, a tech 
     Interestingly enough Hacker News is full of people extremely skeptical of cryptocurrencies, who often comment that cryptocurrencies don't have a single legal use-case. This skepticism and misunderstanding, even from highly technical people, was one of the reasons I started writing this book.
 }
 
-◊img[#:src "/images/hn-html.png"
+◊img[#:src "images/hn-html.png"
      #:alt "Hacker News on Mars 1st, 2011."]{
     The top three stories on ◊link[hn-wayback-ref]{Hacker News on Mars 1st, 2011} according to the Wayback Machine.  
     I tried to reproduce the site appearance, but it's not pixel perfect.
@@ -378,7 +380,7 @@ We now have a trusted timestamp for our message, backed by math instead of trust
      (div ((class "header"))
        (span ((class "logo"))
          (a ((href ,base-url))
-           (img ((src "/images/y18.gif")))))
+           (img ((src "images/y18.gif")))))
        (span ((class "pagetop"))
          (a ((href ,(string-append base-url "news")) (class "hn-title")) "Hacker News")
          (a ((href ,(string-append base-url "newest"))) "new")

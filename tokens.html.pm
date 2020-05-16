@@ -6,6 +6,8 @@
 ◊(define-meta updated "2020-02-07T07:35:36+01:00")
 ◊(define-meta uuid "1cbc42c7-a81d-40ff-9620-1d89c13dee12")
 
+◊(clear-sidenotes)
+
 One of the most important properties that let cryptocurrencies function well as money is the limited supply. If someone was allowed to print coins from thin air, it would be very poor money and would essentially be worthless.
 
 But would they really be completely useless? These cryptocurrency-like things are called ◊em{tokens}, and they aren't that useless. In this chapter we'll look at how they can enable more accessible fund raising, improve gift cards or enable peer-to-peer derivative trading.
@@ -140,15 +142,15 @@ I think visualizations can help us compare large amounts like these, so here's o
 
 ◊div[#:class "money-visualization"]{
 
-    ◊(small-img "Jeff Bezos" "/images/markets/small.png")◊mn[#:top -3]{bezos}
+    ◊(small-img "Jeff Bezos" "images/markets/small.png")◊mn[#:top -3]{bezos}
 
-    ◊(market-img "Gold" "/images/markets/gold.png")◊mn[#:top -4]{gold}
+    ◊(market-img "Gold" "images/markets/gold.png")◊mn[#:top -4]{gold}
 
-    ◊(market-img "Money" "/images/markets/money.png")◊mn[#:top -5]{money}
+    ◊(market-img "Money" "images/markets/money.png")◊mn[#:top -5]{money}
 
-    ◊(market-img "Derivatives" "/images/markets/derivatives.png")◊mn[#:top -26]{derivatives}
+    ◊(market-img "Derivatives" "images/markets/derivatives.png")◊mn[#:top -26]{derivatives}
 
-    ◊(small-img "Bitcoin" "/images/markets/small.png")◊mn[#:top -5]{bitcoin}
+    ◊(small-img "Bitcoin" "images/markets/small.png")◊mn[#:top -5]{bitcoin}
 }
 
 ◊ndef["bezos"]{

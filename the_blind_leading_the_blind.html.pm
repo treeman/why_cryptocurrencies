@@ -6,6 +6,8 @@
 ◊(define-meta updated "2020-01-21T08:29:08+01:00")
 ◊(define-meta uuid "4684c5b0-9f93-479b-a8ab-165601a430c9")
 
+◊(clear-sidenotes)
+
 ◊epigraph{
   ◊qt[#:author "Will Rogers"
       #:date "1930s"]{

@@ -6,6 +6,8 @@
 ◊(define-meta updated "2020-03-09T21:09:54+01:00")
 ◊(define-meta uuid "67cd34c5-058b-4908-a4a6-aed09aff22cc")
 
+◊(clear-sidenotes)
+
 ◊epigraph{
   ◊qt[#:author "J.P. Morgan" #:date "1912"]{
      Money is gold, and nothing else.
@@ -36,7 +38,7 @@ First let's look at some interesting historical examples of things that have bee
 ◊div[#:class "money-examples"]{
     ◊money["Shells"
            #:date "1200 B.C."
-           #:img "/images/cowry.png"
+           #:img "images/cowry.png"
            #:alt "Sea shells."]{
         Sea shells ◊link[sea-shells]{have been used as money for centuries}, it was commonly used in parts of Africa and Asia but also in other parts of the world. Even ◊link[shells-slaves]{during the slave trade} in Africa vast quantities exchanged hands.
     }

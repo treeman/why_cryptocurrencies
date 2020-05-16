@@ -6,6 +6,8 @@
 ◊(define-meta updated "2020-01-15T20:10:22+01:00")
 ◊(define-meta uuid "01795fb4-c99a-4168-8685-73ad86ed7c0c")
 
+◊(clear-sidenotes)
+
 ◊epigraph{
   ◊qt[#:author "Gollum"
       #:quote-src #t
@@ -97,7 +99,7 @@ He's saying that the police can take whatever they want, and that they're motiva
 
 In practice civil asset forfeiture is state-sanctioned theft where the police are acting like ◊link[highway-robbers]{highway robbers}.
 
-◊img[#:src "/images/gangster_cop.png" #:alt "A threatening cop."]{
+◊img[#:src "images/gangster_cop.png" #:alt "A threatening cop."]{
     "That's a nice car you have there, it would be a shame if anything happened to it."
 }
 

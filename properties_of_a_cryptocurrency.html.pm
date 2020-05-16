@@ -6,6 +6,8 @@
 ◊(define-meta updated "2020-01-21T08:28:57+01:00")
 ◊(define-meta uuid "176f3433-baba-49d6-ab43-9c08061f0682")
 
+◊(clear-sidenotes)
+
 ◊epigraph{
   ◊qt[#:author "Satoshi Nakamoto"
       #:src "A Peer-to-Peer Electronic Cash System"
@@ -82,7 +84,7 @@ Problems with counterfeit coins and bills go far back. From biting coins to test
 
 With cryptocurrencies anyone can independently verify the integrity of the coins you send and receive. Details on how is in the ◊link[next-chapter]{next chapter} but I assure you no biting is needed. You cannot counterfeit coins and you cannot send the same coin to multiple people ◊em{(double-spend)}. This is what allows cryptocurrencies to operate without a trusted third party.
 
-◊img[#:src "/images/double-spend.png" #:alt "Double spending by sending a coin to someone and back to himself."]{
+◊img[#:src "images/double-spend.png" #:alt "Double spending by sending a coin to someone and back to himself."]{
     A double spending occurs when someone sends the same coin both to a merchant and back to himself.
 }
 
@@ -106,7 +108,7 @@ As there's no trusted third party there'sn't a single entity who controls the cr
     The new coins are rewards for miners who secure the network, but more on that in the ◊link[next-chapter]{next chapter}.
 }
 
-◊img[#:src "/images/emission-rates.svg" #:link #t #:alt "Bitcoin's and Monero's emission schedule."]{
+◊img[#:src "images/emission-rates.svg" #:link #t #:alt "Bitcoin's and Monero's emission schedule."]{
     Bitcoin has a hard limit of 21 million bitcoins while in Monero new coins will always be created.◊sn{bitcoin-supply}
 }
 

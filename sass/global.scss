@@ -14,6 +14,7 @@
 html {
     font-size: 22px;
     line-height: 1.45;
+    text-align: left;
 }
 
 @media only screen and (max-width: 700px) {
@@ -47,9 +48,11 @@ body {
 }
 
 
+/*
 div, span, p, ul, li, a {
-    font-size: 1rem !important;
+    font-size: 1rem;
 }
+*/
 
 
 p {
@@ -65,20 +68,20 @@ h1, h2, h3, h4 {
     line-height: 1;
 }
 h1 {
-    font-size: 1.45rem !important;
+    font-size: 1.45rem;
 }
 h2 {
-    font-size: 1.22rem !important;
+    font-size: 1.22rem;
     margin-top: 1.2em;
     margin-bottom: 0.3em;
 }
 h3 {
-    font-size: 1.1rem !important;
+    font-size: 1.1rem;
     margin-top: 1em;
     margin-bottom: 0.3em;
 }
 h4 {
-    font-size: 0.91rem !important;
+    font-size: 0.91rem;
     margin-top: 1em;
     margin-bottom: 0.3em;
 }
@@ -118,64 +121,6 @@ a:hover.invalid-iref {
 }
 
 
-/*
- * Prev/next nav panes
- */
-.edge-wrapper {
-    a {
-        text-decoration: none;
-        background: none;
-        text-shadow: none;
-        color: #ddd;
-    }
-    a:hover {
-        color: $body-font-color;
-        background-color: $btc-orange;
-        //background-color: $bch-green;
-        //background-color: $body-selection-color;
-    }
-}
-.prev-pan, .next-pan {
-    background-color: yellow;
-    font-size: 2.5rem !important;
-    text-align: center;
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    width: 1.2em;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    flex-direction: column;
-
-    .content {
-        display: inline-block;
-    }
-}
-.prev-pan {
-    left: 0;
-}
-.next-pan {
-    right: 0;
-}
-
-@media only screen and (max-width: 1340px) {
-    .prev-pan, .next-pan {
-        width: 1em;
-        font-size: 1.2rem !important;
-    }
-}
-@media only screen and (max-width: 900px) {
-    .prev-pan, .next-pan {
-        width: 1em;
-        font-size: 1rem !important;
-    }
-    .edge-wrapper a {
-        color: #ccc;
-    }
-}
-
-
 
 /*
  * Follow
@@ -188,19 +133,19 @@ a:hover.invalid-iref {
 
 .follow > .links {
     margin: 0.3rem;
-    font-size: 0.8rem !important;
+    font-size: 0.8rem;
 }
 .follow > .wip {
     margin: 0.3rem;
-    font-size: 0.8rem !important;
+    font-size: 0.8rem;
 }
 .follow > .donate {
     margin: 0.3rem;
-    font-size: 0.8rem !important;
+    font-size: 0.8rem;
 }
 .subscribe > .email, .subscribe > .submit {
     @extend %serif;
-    font-size: 0.75rem !important;
+    font-size: 0.75rem;
     border: 1px solid #ddd;
     background: $body-background-color;
     padding: 0.5em;
@@ -244,7 +189,7 @@ body > footer {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        font-size: 0.95rem !important;
+        font-size: 0.95rem;
 
         a:link {
             text-decoration: none;

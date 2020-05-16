@@ -6,6 +6,8 @@
 ◊(define-meta updated "2020-02-18T07:29:08+01:00")
 ◊(define-meta uuid "5aaf6384-d377-485b-bfc2-2c4caaaa0fe0")
 
+◊(clear-sidenotes)
+
 ◊epigraph{
   ◊qt[#:author "Bruce Schneier"
       #:src "80,000 Hours podcast"
@@ -278,7 +280,7 @@ With the tokens distributed you could cast a vote by sending them to predetermin
     It's easy to give multiple options. For example if you want to be able to differentiate between those who don't care, and those who want to vote but not any candidate, just have an additional "blank" address voters can send to.
 }
 
-◊img[#:src "/images/voting.png" #:alt "One vote is given out to each person, who then sends it to their voting address of choice."]{
+◊img[#:src "images/voting.png" #:alt "One vote is given out to each person, who then sends it to their voting address of choice."]{
     Each arrow corresponds to a token transaction and the "Hillary" and "Trump" boxes are addresses. The state is responsible for issuing the voting tokens to the voters and the voters in turn send them to the address they want to vote for. In this example Hillary got 1 vote and Trump got 2, and everyone voted.
 }
 

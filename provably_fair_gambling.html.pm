@@ -6,6 +6,8 @@
 ◊(define-meta updated "2020-02-27T13:34:37+01:00")
 ◊(define-meta uuid "cf1cc907-4fda-4b98-81fd-b9c447cdadc5")
 
+◊(clear-sidenotes)
+
 ◊; Bill the Betting man
 ◊; Sharon the betting Site
 

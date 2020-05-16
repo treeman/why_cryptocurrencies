@@ -6,6 +6,8 @@
 ◊(define-meta updated "2020-02-27T13:33:40+01:00")
 ◊(define-meta uuid "6a8759d6-2e0c-4224-b0b8-61009c5484d0")
 
+◊(clear-sidenotes)
+
 This chapter serves as an introduction to the cryptographic terms and constructs mentioned in the book. The aim is to give you an idea of what they are and how they might be used in a cryptocurrency context. I won't go into low-level details of how they work, so you don't need to know any mathematics or programming to follow along. If this interests you, I hope this introduction will be helpful as a starting point when researching the topics on your own.◊sn{history}
 
 ◊ndef["history"]{
@@ -25,11 +27,11 @@ Hashes are ◊def{one-way functions}. As the name implies we can give data to a 
 
 It's similar to how we can break an egg, but there's no easy way to "unbreak" it.
 
-◊img[#:src "/images/break_egg.png" #:alt "An egg going from an unbroken to a broken state."]{
+◊img[#:src "images/break_egg.png" #:alt "An egg going from an unbroken to a broken state."]{
     It's easy to break an egg.
 }
 
-◊img[#:src "/images/merge_egg.png" #:alt "It's hard to go back if the egg is already broken."]{
+◊img[#:src "images/merge_egg.png" #:alt "It's hard to go back if the egg is already broken."]{
     But it's very hard to piece it together again.
 }
 
@@ -89,7 +91,7 @@ Even all of Bitcoin's hashrate, working for millions of years, are not expected 
 
 If you jump into the mathematical definitions of ◊def[public-key-cryptography]{public-key cryptography} it might look very complicated. While some details are complicated, the cryptography is conceptually simple; it's a digital version of a locked mailbox.
 
-◊img[#:src "/images/mailbox.png" #:alt "A locked mailbox."]{
+◊img[#:src "images/mailbox.png" #:alt "A locked mailbox."]{
     A locked mailbox.
 }
 
@@ -101,11 +103,11 @@ You ◊em{encrypt} a message by placing it in the mailbox, this way nobody but t
     This is where our mailbox metaphor breaks down a bit. It may seem that it's more inconvenient to sign a message than to encrypt one, but digitally they're both straightforward.
 }
 
-◊img[#:src "/images/encrypted_mailbox.png" #:alt "Placing a letter in the mailbox."]{
+◊img[#:src "images/encrypted_mailbox.png" #:alt "Placing a letter in the mailbox."]{
     Placing a message inside the mailbox ensures that only the one with the key can read it.
 }
 
-◊img[#:src "/images/mailbox_signed.png" #:alt "A labeled mailbox."]{
+◊img[#:src "images/mailbox_signed.png" #:alt "A labeled mailbox."]{
     The mailbox contains the label "Jonas", which you have to open the mailbox to change. By putting my name on the mailbox I prove that I own it.
 }
 
@@ -113,7 +115,7 @@ You ◊em{encrypt} a message by placing it in the mailbox, this way nobody but t
 
 Large parts of the internet depends on public-key cryptography. For example when you connect to your bank over the internet, this scheme helps ensure that nobody can see how much money you have, who you pay and that you're the only one that can transfer your money.
 
-◊img[#:src "/images/https.png" #:alt "A screenshot of a lock icon on a webbrowser."]{
+◊img[#:src "images/https.png" #:alt "A screenshot of a lock icon on a webbrowser."]{
     The lock icon or the "https" label means you're using public-key cryptography (among other things) to secure your connection to the website.
 }
 

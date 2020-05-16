@@ -6,7 +6,9 @@
 ◊(define-meta updated "2020-03-09T21:09:01+01:00")
 ◊(define-meta uuid "bec2e177-8ccd-4f8d-a90e-a3d0b4269e43")
 
-◊img[#:src "/images/global.png" #:alt "You can send coins all over the world."]{}
+◊(clear-sidenotes)
+
+◊img[#:src "images/global.png" #:alt "You can send coins all over the world."]{}
 
 Cryptocurrencies don't have any borders. You can send and receive money from anywhere in the world, allowing you to bypass sanctions and border control, opt-out of local monetary policies and use a currency that's global to an extent we've never seen before.
 

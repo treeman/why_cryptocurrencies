@@ -1,36 +1,6 @@
 $fullwidth: 1220px;
 $sidenote-float-width: 1280px;
 
-// FIXME this works for text, but fucks up other stuff
-// \cry
-
-.chapter {
-    div, span, p, ul, li, a {
-        font-size: 22px !important;
-    }
-}
-@media only screen and (max-width: 700px) {
-    .chapter {
-        div, span, p, ul, li, a {
-            font-size: 20px !important;
-        }
-    }
-}
-@media only screen and (max-width: 600px) {
-    .chapter {
-        div, span, p, ul, li, a {
-            font-size: 18px !important;
-        }
-    }
-}
-@media only screen and (max-width: 520px) {
-    .chapter {
-        div, span, p, ul, li, a {
-            font-size: 16px !important;
-        }
-    }
-}
-
 .chapter {
     max-width: 800px;
     //background-color: lightyellow;
@@ -53,11 +23,11 @@ $sidenote-float-width: 1280px;
  * Header
  */
 .chapter > .header {
-    text-align: left !important;
+    text-align: left;
     h2 {
         font-weight: normal;
         font-style: italic;
-        font-size: 1rem !important;
+        font-size: 1rem;
 
         margin-top: 0.4em;
         margin-bottom: 0.8em;
@@ -74,7 +44,7 @@ $sidenote-float-width: 1280px;
 }
 
 .where {
-    font-size: 0.8rem !important;
+    font-size: 0.8rem;
     @extend %sans-serif;
     margin-bottom: 0.8rem;
     color: $eth-dark-gray;
@@ -85,7 +55,7 @@ $sidenote-float-width: 1280px;
 .where .up {
 }
 .where .divider {
-    font-size: 0.65rem !important;
+    font-size: 0.65rem;
     color: $eth-light-gray;
 }
 
@@ -122,7 +92,7 @@ $list-p-margin: 0.6em;
     }
     ol div, ol span, ol li, ol a,
     ul div, ul span, ul li, ul a {
-        font-size: 0.95rem !important;
+        font-size: 0.95rem;
         line-height: 1.35;
     }
 
@@ -156,7 +126,7 @@ $list-p-margin: 0.6em;
 
     // Description lists
     dl {
-        font-size: 0.95rem !important;
+        font-size: 0.95rem;
         line-height: 1.35;
         margin-bottom: 1rem;
     }
@@ -175,7 +145,7 @@ $list-p-margin: 0.6em;
     @extend %sans-serif;
 
     .chapters {
-        font-size: 1.1rem !important;
+        font-size: 1.1rem;
         font-weight: bold;
     }
 
@@ -184,7 +154,7 @@ $list-p-margin: 0.6em;
         margin: 0;
     }
     ul > li {
-        font-size: 1rem !important;
+        font-size: 1rem;
         margin-left: 0.6rem;
         margin-top: 0.3rem;
     }
@@ -226,19 +196,19 @@ blockquote {
 }
 .chapter {
     blockquote, blockquote div, blockquote span, blockquote p, blockquote a, blockquote > p {
-        font-size: 0.95rem !important;
+        font-size: 0.95rem;
     }
 }
 blockquote > .footer, blockquote > .footer .author, blockquote > .footer .src, blockquote > .footer .src a,
 blockquote > .footer span {
-    font-size: 0.8rem !important;
+    font-size: 0.8rem;
     text-align: right;
 }
 blockquote > .footer > .cite {
     font-style: italic;
 }
 blockquote .emphasis {
-    font-size: 0.8rem !important;
+    font-size: 0.8rem;
 }
 blockquote.center {
     text-align: center;
@@ -255,7 +225,7 @@ blockquote.center {
     margin: 2em 0;
 
     blockquote {
-        font-size: 1rem !important;
+        font-size: 1rem;
         font-style: italic; // Regular shouldn't be italic?
     }
     blockquote > footer {
@@ -269,7 +239,7 @@ blockquote.center {
  */
 table {
     @extend %sans-serif-tnum;
-    font-size: 0.95rem !important;
+    font-size: 0.95rem;
     margin-bottom: 1rem;
 
     display: block;
@@ -293,7 +263,7 @@ th, td {
  */
 pre, code {
     font-family: $code-font-family;
-    font-size: 0.71rem !important;
+    font-size: 0.71rem;
     line-height: 1.45;
 }
 code {
@@ -307,7 +277,7 @@ pre {
     padding: 0.4rem 0.6rem;
 }
 .sidenote code {
-    font-size: 0.6rem !important;
+    font-size: 0.6rem;
     line-height: 1.4;
     //white-space: nowrap;
 }
@@ -323,23 +293,11 @@ pre {
     font-style: normal;
 }
 
-
-/*
- * Side content
- */
-.side-space {
-    // Serves to take up space. Inline content from the chapter is floated on top.
-    width: 420px;
-    //background-color: antiquewhite;
-    // Avoids swallowing clicks and interactions intended for wider images
-    visibility: hidden;
-}
-
 .sidenote {
     @extend %sans-serif;
 }
 .sidenote, .sidenote p, .sidenote div, .sidenote a {
-    font-size: 0.8rem !important;
+    font-size: 0.8rem;
 }
 .sidenote img, {
     max-width: 100%;
@@ -350,7 +308,7 @@ pre {
 .sidenote-number, .sidenote-label {
     font-family: $sans-serif-font-family;
     //vertical-align: super;
-    font-size: 0.7em !important;
+    font-size: 0.7em;
     display: inline-block;
     //background-color: tomato;
 }
@@ -362,45 +320,17 @@ pre {
     }
 }
 
-@media (max-width: $sidenote-float-width - 1) {
-    .sidenote {
-        display: block;
-        margin: 1em 4em 1.4em 4em !important;
+.sidenote {
+    display: block;
+    margin: 1em 4em 1.4em 4em;
 
-        img {
-            display: block;
-            margin: 0 auto;
-        }
-        code {
-            max-width: 101%;
-        }
-    }
-    //.sidenote { background-color: lightblue; }
-}
-@media (min-width: $sidenote-float-width) {
-    .side-space {
+    img {
         display: block;
-    }
-    .sidenote {
-        float: right;
-        clear: right;
-        // Approximate adjustment for notes at the last line of a paragraph.
-        // Will get overridden by local styles.
-        margin-top: -2em;
-        margin-bottom: 4em;
-        margin-right: -420px;
-        width: 380px;
-        position: relative;
-        display: inline-block;
-        //background-color: moccasin;
-    }
-    blockquote .sidenote {
-        margin-right: -462px;
+        margin: 0 auto;
     }
     code {
-        max-width: 380px;
+        max-width: 101%;
     }
-    //.sidenote { background-color: pink; }
 }
 
 
@@ -413,7 +343,7 @@ pre {
 }
 .donation-label {
     @extend %sans-serif;
-    font-size: 0.9rem !important;
+    font-size: 0.9rem;
     font-weight: bold;
     color: $body-font-color;
     cursor: pointer;
@@ -438,7 +368,7 @@ pre {
 }
 .donation-content .address {
     font-family: $hack;
-    font-size: 0.8rem !important;
+    font-size: 0.8rem;
     word-wrap: break-word;
 }
 
@@ -466,7 +396,7 @@ figure {
     }
     > figcaption {
         @extend %sans-serif;
-        font-size: 0.9rem !important;
+        font-size: 0.9rem;
     }
 }
 figure.fullwidth {
@@ -484,27 +414,6 @@ figcaption.margin {
 @media (min-width: $sidenote-float-width) {
     figure.fullwidth {
         width: $fullwidth;
-    }
-    figcaption.margin {
-        font-size: 0.8rem !important;
-        float: right;
-        clear: right;
-        margin-right: -420px;
-        margin-bottom: 2rem;
-        width: 380px;
-        position: relative;
-        display: inline-block;
-        text-align: left;
-    }
-    // Override the above in a fullwidth image. Not sure how to avoid this?
-    figure.fullwidth > figcaption.margin {
-        font-size: 0.9rem !important;
-        float: none;
-        margin: 0;
-        position: static;
-        display: block;
-        text-align: center;
-        width: 100%;
     }
 }
 
@@ -524,13 +433,13 @@ figure .sidenote {
 
     a {
         @extend %sans-serif;
-        font-size: 1.05rem !important;
+        font-size: 1.05rem;
     }
 }
 
 .todo {
     @extend %sans-serif;
-    font-size: 0.8rem !important;
+    font-size: 0.8rem;
     margin: 1rem 1rem;
 
     .pre {
@@ -560,7 +469,7 @@ figure .sidenote {
     }
     // Avoid ugly spacing when sidenote is placed at the end.
     .sidenote:last-child {
-        margin-bottom: 0 !important;
+        margin-bottom: 0;
     }
 }
 
@@ -677,7 +586,7 @@ table.address-examples {
         margin-top: 0;
     }
     .header {
-        font-size: 1.1rem !important;
+        font-size: 1.1rem;
         @extend %sans-serif;
         line-height: 1;
         display: flex;
@@ -695,7 +604,7 @@ table.address-examples {
         margin-top: 0;
     }
     .header {
-        font-size: 1.1rem !important;
+        font-size: 1.1rem;
         @extend %sans-serif;
         line-height: 1;
         display: flex;
@@ -727,7 +636,7 @@ table.address-examples {
         margin-top: 0;
     }
     > .header {
-        font-size: 1.1rem !important;
+        font-size: 1.1rem;
         @extend %sans-serif;
         line-height: 1;
         display: flex;
@@ -746,7 +655,7 @@ table.address-examples {
         margin-top: 0.5em;
         margin-bottom: 0.8em;
         margin-left: 1em;
-        font-size: 0.9rem !important;
+        font-size: 0.9rem;
     }
 }
 
@@ -768,7 +677,7 @@ table.address-examples {
     .transcript {
         margin: 1rem 0;
         padding-left: 1rem;
-        font-size: 0.95rem !important;
+        font-size: 0.95rem;
         line-height: 1.4;
         border-left: 1px solid $body-hr-color;
     }
@@ -863,7 +772,7 @@ ul.talking > li:before {
 
 table.address-message {
     font-family: $code-font-family;
-    font-size: 0.71rem !important;
+    font-size: 0.71rem;
     line-height: 1.45;
     //font-style: italic;
     .msg-char {
@@ -874,7 +783,7 @@ table.address-message {
 
 .fractional-table-ex {
     @extend %sans-serif-tnum;
-    font-size: 0.95rem !important;
+    font-size: 0.95rem;
     margin: 1em 0 1.2em 0;
 
     .row {
@@ -905,7 +814,7 @@ table.address-message {
 
     .title {
         @extend %sans-serif;
-        font-size: 1rem !important;
+        font-size: 1rem;
         width: 100%;
         text-align: center;
     }

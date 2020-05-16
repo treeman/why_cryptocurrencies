@@ -6,7 +6,7 @@
 (require "decode.rkt")
 (require racket/pretty)
 
-(provide ndef sn mn note-pos decode-sidenotes)
+(provide ndef sn mn note-pos decode-sidenotes clear-sidenotes)
 
 (define (ref-symbol ref-in)
   (string->symbol (format "nd-~a" ref-in)))
@@ -25,6 +25,10 @@
   (hash-set! note-defs ref def)
   "")
 
+(define (clear-sidenotes)
+  (hash-clear! note-defs)
+  (hash-clear! notes)
+  (hash-clear! note-pos-refs))
 
 ;; Notes
 
@@ -284,25 +288,7 @@
 
 (define (expand-sidenote note)
   (define def (note-def note))
-  (define top (note-top note))
-  (define bottom (note-bottom note))
-  (when (and top (not (number? top)))
-    (error (format "Not a number: '~a' for sidenote '~a'~n" top (note-ref note))))
-  (when (and bottom (not (number? bottom)))
-    (error (format "Not a number: '~a' for sidenote '~a'~n" bottom (note-ref note))))
-
-  (define styles
-    (let ((styles `()))
-      (when bottom (set! styles (cons (format "margin-bottom:~aem;" bottom)
-                                      styles)))
-      (when top (set! styles (cons (format "margin-top:~aem;" top)
-                                   styles)))
-      (string-join styles " ")))
-
   (define attrs `((class "sidenote")))
-  (when (non-empty-string? styles)
-    (set! attrs (append attrs
-                        `((style ,styles)))))
 
   `(div ,attrs
         ,@(label note)

@@ -5,7 +5,6 @@
      (string-append main-title ": " title)
      (error (format "unknown title for ~v~n" here))))
 ◊(define subtitle (select-from-metas 'subtitle here))
-◊(define side-space? (not (select-from-metas 'no-side-space here)))
 ◊(define section-chapters-headers? (not (select-from-metas 'no-section-chapters-header here)))
 ◊(define article-class
    (let ((extra (select-from-metas 'extra-article-class here)))
@@ -56,8 +55,6 @@
         ◊(->html (make-section-nav #:section-header? section-chapters-headers?
                                     here))
       </div>
-
-      ◊(when side-space? (->html `(div ((class "side-space")))))
     </body>
 </html>
 ◊;←

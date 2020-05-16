@@ -6,6 +6,8 @@
 ◊(define-meta updated "2020-03-09T21:09:09+01:00")
 ◊(define-meta uuid "320751d9-9a28-4e91-9469-b44b83e12475")
 
+◊(clear-sidenotes)
+
 This is my attempt to explain how a standard cryptocurrency like Bitcoin works. Other cryptocurrencies may diverge on various points but the fundamentals are the same.◊sn{others}
 
 As stated in the introduction the focus isn't on technical details, but it's a hard balance to make between keeping it simple and explaining how cryptocurrencies work. If this chapter is too technical you can safely skip to the ◊link[next-chapter]{next chapter} or just read ◊link[summary]{the summary}---it's not required knowledge.
@@ -81,7 +83,7 @@ For example Sneaky Steve wants to buy a computer from Honest Harry and wants to 
 
 What Sneaky Steve tries to do is send ◊sans-tnum{1 BTC} to the merchant Honest Harry and then send a copy of ◊sans-tnum{1 BTC} to his other address ◊sans-tnum{Sneaky Steve 2}. It's possible to have as many addresses as you want---a consequence of the permissionless nature of Bitcoin.
 
-◊img[#:src "/images/double-spend.png"
+◊img[#:src "images/double-spend.png"
      #:alt "Double spending by sending a coin to someone and back to himself."]{Sneaky Steve sends a digital coin both to Honest Harry and himself.}
 
 If we didn't prevent this the ledger might look like this:
@@ -119,7 +121,7 @@ This is the same problem as the ◊def[byzantine-generals]{Byzantine Generals Pr
 ◊div[#:class "story"]{
 In the Eastern Roman Empire, also referred to as the Byzantine Empire, a couple of generals surround an enemy city:
 
-◊img[#:src "/images/generals.png" #:alt "Five generals surrounding an enemy city."]{
+◊img[#:src "images/generals.png" #:alt "Five generals surrounding an enemy city."]{
     The five generals surround a well defended enemy city. They don't have direct contact and instead need to communicate by sending messengers.
 }
 
@@ -134,7 +136,7 @@ This would be very easy if they could trust each other. Unfortunately they canno
 }
 
 
-◊img[#:src "/images/generals_decisions.png"
+◊img[#:src "images/generals_decisions.png"
      #:alt "Generals sending out messages trying to come to a decision, but two messages are changed preventing them from reaching the correct decision."]{
     One general sends out messengers declaring his intent to attack to the generals next to him, who then sends messengers of their own, and so on until all generals have received the message. However two of the messengers are traitors and change the message from "attack" to "retreat".
 }
@@ -175,10 +177,10 @@ You may think most in the network are honest so can't you just ask everyone?
 
 Unfortunately there's a serious problem here. As there's no barrier to participate in the network and no identity control a single person can have multiple identities:
 
-◊img[#:src "/images/sybil-generals.png" #:alt "Harry thinks he's connected to five different individuals."]{
+◊img[#:src "images/sybil-generals.png" #:alt "Harry thinks he's connected to five different individuals."]{
     This is what Honest Harry sees. A diverse group of honest individuals.
 }
-◊img[#:src "/images/sybil-steves.png" #:alt "But Harry is really connected to Sneaky Steve five times."]{
+◊img[#:src "images/sybil-steves.png" #:alt "But Harry is really connected to Sneaky Steve five times."]{
     But in reality they're all controlled by Sneaky Steve.
 }
 
@@ -279,7 +281,7 @@ A blockchain is what it sounds like: a chain of blocks where a new block builds 
     It's also a necessity to prevent miners from pooling blocks and using them to assemble a very long chain at a later date in an attempt to reverse transactions.
 }
 
-◊img[#:src "/images/add_block.png" #:alt "A new block is added by linking it with a POW solution."]{
+◊img[#:src "images/add_block.png" #:alt "A new block is added by linking it with a POW solution."]{
     The blocks in the blockchain are linked with a key obtained by solving the POW problem.
 }
 
@@ -353,7 +355,7 @@ The blockchain is duplicated, stored and maintained by many different people, yo
 
 But what happens if two miners find a block at the same height? For example one where Sneaky Steve sends money to Honest Harry and one where Sneaky Steve sends money to himself?
 
-◊img[#:src "/images/double_spend_fork.png"
+◊img[#:src "images/double_spend_fork.png"
      #:alt "Two blocks can be added at the same height."]{
     Two blocks at the same height with different transactions.
 }
@@ -364,7 +366,7 @@ The chain will split and there will be a ◊em{fork}.◊sn{code-fork} Each miner
     Forking a cryptocurrency is different from forking the code, although both are common.
 }
 
-◊img[#:src "/images/double_spend_fork_long.png"
+◊img[#:src "images/double_spend_fork_long.png"
      #:alt "Two different chains in the blockchain."]{
     Here there are two chains after a fork, one of height two and one of height four.
 }
@@ -398,16 +400,16 @@ It works like this:
     }
 }
 
-◊img[#:src "/images/reversal1.png" #:alt "Sneaky Steve pays Honest Harry."]{
+◊img[#:src "images/reversal1.png" #:alt "Sneaky Steve pays Honest Harry."]{
     Sneaky Steve pays Honest Harry and they wait until the transaction has two confirmations.
 }
-◊img[#:src "/images/reversal3.png" #:alt "Honest Harry gives Sneaky Steve jeans."]{
+◊img[#:src "images/reversal3.png" #:alt "Honest Harry gives Sneaky Steve jeans."]{
     Satisfied, Honest Harry gives Sneaky Steve a new pair of beautiful jeans.
 }
-◊img[#:src "/images/reversal4.png" #:alt "Sneaky Steve leaves with the jeans."]{
+◊img[#:src "images/reversal4.png" #:alt "Sneaky Steve leaves with the jeans."]{
     Sneaky Steve walks away with his jeans, all while secretly working on his own chain.
 }
-◊img[#:src "/images/reversal2.png"
+◊img[#:src "images/reversal2.png"
      #:alt "A second, longer, chain that does not include the payment to Honest Harry."]{
     After Sneaky Steve has walked away he releases his hidden chain of length four, which ◊strong{doesn't contain his payment to Honest Harry}.  Since the new chain is longer the old chain will get discarded and the payment to Honest Harry will also disappear. It will seem like the payment never happened.
 }
@@ -431,7 +433,7 @@ This is a different type of double spend and it's the primary attack vector ◊l
 
 The deeper a transaction is in the blockchain---the more confirmations it has---the harder a transaction is to reverse.
 
-◊img[#:src "/images/confirmations.png"
+◊img[#:src "images/confirmations.png"
      #:alt "Blocks with lower height have more confirmations."]{
     Confirmations for different blocks.
     Each block added to the blockchain makes every existing block---and transactions---more secure.
