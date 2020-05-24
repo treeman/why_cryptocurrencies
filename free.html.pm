@@ -6,6 +6,8 @@
 ◊(define-meta updated "2020-02-18T07:31:14+01:00")
 ◊(define-meta uuid "4ede8ca8-fd2e-4112-9d00-e383f94e1a01")
 
+◊(clear-sidenotes)
+
 This book is completely free for you to read online and will be so forever. There will be no ads, no tracking and no crypto mining in the browser.◊sn{browser-mining}
 
 For all you ◊link[noscript]{noscript} users the site will work perfectly well without javascript---in fact I aim to avoid it altogether. I do use ◊link[mbtype]{custom fonts} hosted on this site which noscript blocks by default.

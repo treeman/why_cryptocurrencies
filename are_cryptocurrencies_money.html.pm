@@ -6,6 +6,8 @@
 ◊(define-meta updated "2020-03-09T21:07:36+01:00")
 ◊(define-meta uuid "f04af7c8-5fee-45c4-a5a4-80a3f6fbd31b")
 
+◊(clear-sidenotes)
+
 As we saw in the ◊link[prev-chapter]{previous chapter}, practically anything can be used as money. Therefore it's more useful to ask if cryptocurrencies have the properties of good money, and how well do they function as money today.
 
 In this chapter we'll see that cryptocurrencies have excellent monetary properties, but their function as money is held back by volatility and adoption.

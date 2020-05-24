@@ -6,6 +6,8 @@
 ◊(define-meta updated "2020-01-21T08:27:30+01:00")
 ◊(define-meta uuid "b09419e3-0f3d-4473-b458-d0dad01ed4b8")
 
+◊(clear-sidenotes)
+
 ◊epigraph{
   ◊qt[#:author "Ayn Rand"]{
     So you think that money is the root of all evil. Have you ever asked what is the root of all money?

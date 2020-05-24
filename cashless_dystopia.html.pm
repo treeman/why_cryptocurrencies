@@ -6,6 +6,8 @@
 ◊(define-meta updated "2020-01-15T20:08:34+01:00")
 ◊(define-meta uuid "55993260-1c9a-4bcf-ace5-7773e65bf7b5")
 
+◊(clear-sidenotes)
+
 ◊epigraph{
     ◊book-qt[1984-book]{
  If you want a picture of the future, imagine a boot stamping on a human face—for ever.

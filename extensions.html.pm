@@ -6,6 +6,8 @@
 ◊(define-meta updated "2020-01-15T20:09:14+01:00")
 ◊(define-meta uuid "c83f3bb3-7277-43b0-ad8d-ee5ea4592a87")
 
+◊(clear-sidenotes)
+
 Money is perhaps the most obvious usage of cryptocurrencies but there are other ways to use them. In this section I'll highlight some of the alternative usages and we'll see that we can build other functionality on top of existing cryptocurrencies.◊sn{blockchain-hype}
 
 ◊ndef["blockchain-hype"]{

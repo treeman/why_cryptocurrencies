@@ -6,6 +6,8 @@
 ◊(define-meta updated "2020-03-09T21:09:41+01:00")
 ◊(define-meta uuid "7f619868-39ff-43db-92b4-af452ee4c8ed")
 
+◊(clear-sidenotes)
+
 If you want to accept digital payments today you need to partner with a payment processor, for example Stripe or PayPal. Usually that's not a problem---but what if they say no?◊mn{banks}
 
 ◊ndef["banks"]{

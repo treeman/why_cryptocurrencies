@@ -6,6 +6,8 @@
 ◊(define-meta updated "2020-01-21T08:29:35+01:00")
 ◊(define-meta uuid "281185fa-996c-44fa-8ae1-f2323e080f6e")
 
+◊(clear-sidenotes)
+
 ◊epigraph{
     ◊qt[#:author "Tyrion Lannister"
         #:src "A Clash of Kings"

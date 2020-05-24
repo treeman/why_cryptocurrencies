@@ -6,6 +6,8 @@
 ◊(define-meta updated "2020-02-27T13:35:06+01:00")
 ◊(define-meta uuid "b92733e8-9356-487e-abb9-510ac0cc5735")
 
+◊(clear-sidenotes)
+
 ◊epigraph{
   ◊qt[#:author "Julian Assange"
       #:url julian

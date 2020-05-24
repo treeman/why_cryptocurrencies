@@ -6,6 +6,8 @@
 ◊(define-meta updated "2020-03-09T21:09:54+01:00")
 ◊(define-meta uuid "67cd34c5-058b-4908-a4a6-aed09aff22cc")
 
+◊(clear-sidenotes)
+
 ◊epigraph{
   ◊qt[#:author "J.P. Morgan" #:date "1912"]{
      Money is gold, and nothing else.

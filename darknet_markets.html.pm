@@ -6,6 +6,8 @@
 ◊(define-meta updated "2020-01-15T20:08:59+01:00")
 ◊(define-meta uuid "4cf3ad81-1c7f-414f-a582-4b2897d27121")
 
+◊(clear-sidenotes)
+
 ◊epigraph{
   ◊qt[#:author "Ross Ulbricht, creator of Silk Road"]{
     I wanted to empower people to be able to make choices in their lives, for themselves and to have privacy and anonymity.

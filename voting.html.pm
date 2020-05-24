@@ -6,6 +6,8 @@
 ◊(define-meta updated "2020-02-18T07:29:08+01:00")
 ◊(define-meta uuid "5aaf6384-d377-485b-bfc2-2c4caaaa0fe0")
 
+◊(clear-sidenotes)
+
 ◊epigraph{
   ◊qt[#:author "Bruce Schneier"
       #:src "80,000 Hours podcast"

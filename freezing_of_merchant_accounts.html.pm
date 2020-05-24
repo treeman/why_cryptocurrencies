@@ -6,6 +6,8 @@
 ◊(define-meta updated "2020-03-09T21:08:53+01:00")
 ◊(define-meta uuid "ac14d4a1-3796-4f5b-9350-b56e796625a1")
 
+◊(clear-sidenotes)
+
 ◊epigraph{
     ◊qt[#:src "PayPal freezes Neo900 funds"
         #:date "Dec 2015"

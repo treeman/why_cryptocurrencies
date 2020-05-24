@@ -6,6 +6,8 @@
 ◊(define-meta updated "2020-01-15T20:09:21+01:00")
 ◊(define-meta uuid "0da3165e-e470-4143-a658-4b2858f3a148")
 
+◊(clear-sidenotes)
+
 ◊epigraph{
   ◊qt[#:author "Tyrell Wellick"
       #:quote-src #t

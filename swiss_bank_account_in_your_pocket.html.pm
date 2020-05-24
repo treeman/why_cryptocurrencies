@@ -6,6 +6,8 @@
 ◊(define-meta updated "2020-01-15T20:10:36+01:00")
 ◊(define-meta uuid "d1144eb3-b2ac-4c89-b2e0-4a03f377172c")
 
+◊(clear-sidenotes)
+
 ◊; To read:
 ◊; https://news.ycombinator.com/item?id=21872987
 

@@ -6,6 +6,8 @@
 ◊(define-meta updated "2020-03-09T21:09:01+01:00")
 ◊(define-meta uuid "bec2e177-8ccd-4f8d-a90e-a3d0b4269e43")
 
+◊(clear-sidenotes)
+
 ◊img[#:src "/images/global.png" #:alt "You can send coins all over the world."]{}
 
 Cryptocurrencies don't have any borders. You can send and receive money from anywhere in the world, allowing you to bypass sanctions and border control, opt-out of local monetary policies and use a currency that's global to an extent we've never seen before.
@@ -118,14 +120,16 @@ There's an opportunity here for cryptocurrencies, which is demonstrated by the c
     But adoption is growing and enough merchants accept Bitcoin Cash directly to support eatBCH for example.
 }
 
-◊;◊img[#:src "https://eatbch.org/_assets/img/venezuela-hero-wide.jpg"]{
-    ◊;◊link[eatbch]{eatBCH} converts donations from all over the world to food for people in Venezuela.
-◊;}
+◊img[#:src "/images/venezuela-hero-wide.jpg"
+     #:alt "Kids with food holding a sign with \"@eatBCH\"."]{
+    ◊link[eatbch]{eatBCH} converts donations from all over the world to food for people in Venezuela.  
+    Image used with permission from eatBCH.
+}
 
 This kind of charity is only possible if you can cheaply transfer money to the heart of a very unstable and closed off country, bypassing sanctions and border control.
 
-◊note-pos[#:top -17]{petro}
-◊note-pos[#:top -7]{venezuela-adoption}
+◊note-pos[#:top -48]{petro}
+◊note-pos[#:top -37]{venezuela-adoption}
 
 ◊(define venezuela-crisis
    (x-ref

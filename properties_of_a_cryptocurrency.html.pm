@@ -6,6 +6,8 @@
 ◊(define-meta updated "2020-01-21T08:28:57+01:00")
 ◊(define-meta uuid "176f3433-baba-49d6-ab43-9c08061f0682")
 
+◊(clear-sidenotes)
+
 ◊epigraph{
   ◊qt[#:author "Satoshi Nakamoto"
       #:src "A Peer-to-Peer Electronic Cash System"

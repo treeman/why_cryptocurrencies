@@ -6,6 +6,8 @@
 ◊(define-meta updated "2020-03-09T21:09:23+01:00")
 ◊(define-meta uuid "f35cab59-0629-4173-9de0-a07a0eef33dc")
 
+◊(clear-sidenotes)
+
 ◊; US efforts to jail Assange for espionage are a grave threat to a free media (theguardian.com)
 ◊; https://news.ycombinator.com/item?id=20173534
 

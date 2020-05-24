@@ -6,6 +6,8 @@
 ◊(define-meta updated "2020-01-15T20:08:53+01:00")
 ◊(define-meta uuid "eddfec3a-26e5-4736-a66f-a935aa9d67ae")
 
+◊(clear-sidenotes)
+
 Cryptocurrencies provide two major advantages compared to other digital payments: they have ◊link[rel-fees]{lower fees} and they ◊link[rel-speed]{settle faster}, made possible by cutting out the middleman. But there's a ◊link[rel-risk-tradeoff]{trade-off}---it shifts the risk management from the merchant to the customer. Merchants no longer have to worry about ◊link[rel-charge-back-fraud]{charge back fraud}, but instead customers lose the ability to do charge backs.
 
 

@@ -6,6 +6,8 @@
 ◊(define-meta updated "2020-04-19T10:18:24+02:00")
 ◊(define-meta uuid "c13d8405-fb3e-411c-b035-aae08eedddf1")
 
+◊(clear-sidenotes)
+
 While cryptocurrencies do some things very well, there are several hard unsolved problems with cryptocurrencies. Here's a description of some of them:
 
 

@@ -6,6 +6,8 @@
 ◊(define-meta updated "2020-04-19T10:06:55+02:00")
 ◊(define-meta uuid "581c4917-d862-49cb-9d01-495a9106081b")
 
+◊(clear-sidenotes)
+
 ◊div[#:class "whitepaper"]{
     ◊link[bitcoin-pdf]{Bitcoin: A Peer-to-Peer Electronic Cash System}
 }
