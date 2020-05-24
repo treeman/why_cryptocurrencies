@@ -3,7 +3,7 @@
 ◊(define-meta title "A global currency")
 ◊(define-meta subtitle "Money without borders")
 ◊(define-meta published "2019-12-10T00:00:00+01:00")
-◊(define-meta updated "2020-03-09T21:09:01+01:00")
+◊(define-meta updated "2020-05-24T21:32:51+02:00")
 ◊(define-meta uuid "bec2e177-8ccd-4f8d-a90e-a3d0b4269e43")
 
 ◊(clear-sidenotes)
