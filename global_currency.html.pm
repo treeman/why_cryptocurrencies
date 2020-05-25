@@ -3,7 +3,7 @@
 ◊(define-meta title "A global currency")
 ◊(define-meta subtitle "Money without borders")
 ◊(define-meta published "2019-12-10T00:00:00+01:00")
-◊(define-meta updated "2020-03-09T21:09:01+01:00")
+◊(define-meta updated "2020-05-24T21:32:51+02:00")
 ◊(define-meta uuid "bec2e177-8ccd-4f8d-a90e-a3d0b4269e43")
 
 ◊(clear-sidenotes)
@@ -118,14 +118,16 @@ There's an opportunity here for cryptocurrencies, which is demonstrated by the c
     But adoption is growing and enough merchants accept Bitcoin Cash directly to support eatBCH for example.
 }
 
-◊;◊img[#:src "https://eatbch.org/_assets/img/venezuela-hero-wide.jpg"]{
-    ◊;◊link[eatbch]{eatBCH} converts donations from all over the world to food for people in Venezuela.
-◊;}
+◊img[#:src "images/venezuela-hero-wide.jpg"
+     #:alt "Kids with food holding a sign with \"@eatBCH\"."]{
+    ◊link[eatbch]{eatBCH} converts donations from all over the world to food for people in Venezuela.  
+    Image used with permission from eatBCH.
+}
 
 This kind of charity is only possible if you can cheaply transfer money to the heart of a very unstable and closed off country, bypassing sanctions and border control.
 
-◊note-pos[#:top -17]{petro}
-◊note-pos[#:top -7]{venezuela-adoption}
+◊note-pos[#:top -48]{petro}
+◊note-pos[#:top -37]{venezuela-adoption}
 
 ◊(define venezuela-crisis
    (x-ref
