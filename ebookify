@@ -250,39 +250,12 @@ def setup_content_opf():
 def post_title(post):
     return titles[post]
 
-def toc_ncx_post(i, post):
-    order = i + 1
-    id = post_id(post)
-    href = id + ".xhtml"
-    title = post_title(post)
-    return f"""<navPoint id="{id}" playOrder="{order}">
-        <navLabel>
-            <text>{title}</text>
-        </navLabel>
-        <content src="{href}"/>
-    </navPoint>"""
 
 def setup_toc_ncx():
-    navpoints = ('\n' + ' ' * 4).join(
-            [toc_ncx_post(i, post) for (i, post) in enumerate(toc)])
-    data = f"""<?xml version="1.0" encoding="UTF-8"?>
-<ncx xmlns="http://www.daisy.org/z3986/2005/ncx/" version="2005-1">
+    with open(f"{ebook_files_dir}/toc.ncx", 'r') as f:
+        data = f.read()
 
-  <head>
-    <meta name="dtb:uid" content="{uuid}"/>
-    <meta name="dtb:depth" content="1"/>
-    <meta name="dtb:totalPageCount" content="0"/>
-    <meta name="dtb:maxPageNumber" content="0"/>
-  </head>
-
-  <docTitle>
-    <text>Why cryptocurrencies?</text>
-  </docTitle>
-
-  <navMap>
-    {navpoints}
-  </navMap>
-</ncx>"""
+    data = data.replace("◊UUID", uuid)
 
     with open(f"{oebps_dir}/toc.ncx", 'w') as f:
         f.write(data)

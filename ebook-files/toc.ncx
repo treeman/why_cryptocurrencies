@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ncx xmlns="http://www.daisy.org/z3986/2005/ncx/" version="2005-1">
+
+  <head>
+    <meta name="dtb:uid" content="◊UUID"/>
+    <meta name="dtb:depth" content="1"/>
+    <meta name="dtb:totalPageCount" content="0"/>
+    <meta name="dtb:maxPageNumber" content="0"/>
+  </head>
+
+  <docTitle>
+    <text>Why cryptocurrencies?</text>
+  </docTitle>
+
+  <navMap>
+    <navPoint id="eli5" playOrder="1" class="h1">
+        <navLabel>
+            <text>Why cryptocurrencies in five minutes</text>
+        </navLabel>
+        <content src="eli5.xhtml"/>
+    </navPoint>
+    <navPoint id="about_the_book" playOrder="2" class="h1">
+        <navLabel>
+            <text>About the book</text>
+        </navLabel>
+        <content src="about_the_book.xhtml"/>
+        <navPoint id="acknowledgements" playOrder="3" class="h2">
+            <navLabel>
+                <text>Acknowledgments</text>
+            </navLabel>
+            <content src="acknowledgements.xhtml"/>
+        </navPoint>
+        <navPoint id="how_to_use" playOrder="4" class="h2">
+            <navLabel>
+                <text>How to use this book</text>
+            </navLabel>
+            <content src="how_to_use.xhtml"/>
+        </navPoint>
+        <navPoint id="about_me" playOrder="5" class="h2">
+            <navLabel>
+                <text>About me, the author</text>
+            </navLabel>
+            <content src="about_me.xhtml"/>
+        </navPoint>
+    </navPoint>
+    <navPoint id="what_is_a_cryptocurrency" playOrder="6" class="h1">
+        <navLabel>
+            <text>What is a cryptocurrency?</text>
+        </navLabel>
+        <content src="what_is_a_cryptocurrency.xhtml"/>
+        <navPoint id="properties_of_a_cryptocurrency" playOrder="7" class="h2">
+            <navLabel>
+                <text>Properties of a cryptocurrency</text>
+            </navLabel>
+            <content src="properties_of_a_cryptocurrency.xhtml"/>
+        </navPoint>
+        <navPoint id="how_do_cryptocurrencies_work" playOrder="8" class="h2">
+            <navLabel>
+                <text>How do cryptocurrencies work?</text>
+            </navLabel>
+            <content src="how_do_cryptocurrencies_work.xhtml"/>
+        </navPoint>
+        <navPoint id="look_out_for_snake_oil" playOrder="9" class="h2">
+            <navLabel>
+                <text>Look out for snake oil</text>
+            </navLabel>
+            <content src="look_out_for_snake_oil.xhtml"/>
+        </navPoint>
+        <navPoint id="what_is_money" playOrder="10" class="h2">
+            <navLabel>
+                <text>What is money?</text>
+            </navLabel>
+            <content src="what_is_money.xhtml"/>
+        </navPoint>
+        <navPoint id="are_cryptocurrencies_money" playOrder="11" class="h2">
+            <navLabel>
+                <text>Are cryptocurrencies money?</text>
+            </navLabel>
+            <content src="are_cryptocurrencies_money.xhtml"/>
+        </navPoint>
+    </navPoint>
+    <navPoint id="better_digital_payments" playOrder="12" class="h1">
+        <navLabel>
+            <text>Better digital payments</text>
+        </navLabel>
+        <content src="better_digital_payments.xhtml"/>
+        <navPoint id="cheaper_faster" playOrder="13" class="h2">
+            <navLabel>
+                <text>Cheaper &amp; faster</text>
+            </navLabel>
+            <content src="cheaper_faster.xhtml"/>
+        </navPoint>
+        <navPoint id="undesirable_businesses" playOrder="14" class="h2">
+            <navLabel>
+                <text>“Undesirable” businesses</text>
+            </navLabel>
+            <content src="undesirable_businesses.xhtml"/>
+        </navPoint>
+        <navPoint id="freezing_of_merchant_accounts" playOrder="15" class="h2">
+            <navLabel>
+                <text>Freezing of merchant accounts</text>
+            </navLabel>
+            <content src="freezing_of_merchant_accounts.xhtml"/>
+        </navPoint>
+        <navPoint id="uncensorable_donations" playOrder="16" class="h2">
+            <navLabel>
+                <text>Uncensorable donations</text>
+            </navLabel>
+            <content src="uncensorable_donations.xhtml"/>
+        </navPoint>
+        <navPoint id="for_the_unbanked" playOrder="17" class="h2">
+            <navLabel>
+                <text>For the unbanked</text>
+            </navLabel>
+            <content src="for_the_unbanked.xhtml"/>
+        </navPoint>
+    </navPoint>
+    <navPoint id="better_currency" playOrder="18" class="h1">
+        <navLabel>
+            <text>A better currency</text>
+        </navLabel>
+        <content src="better_currency.xhtml"/>
+        <navPoint id="financial_crisis" playOrder="19" class="h2">
+            <navLabel>
+                <text>The financial crisis, bad loans and bailouts</text>
+            </navLabel>
+            <content src="financial_crisis.xhtml"/>
+        </navPoint>
+        <navPoint id="the_blind_leading_the_blind" playOrder="20" class="h2">
+            <navLabel>
+                <text>The blind leading the blind</text>
+            </navLabel>
+            <content src="the_blind_leading_the_blind.xhtml"/>
+        </navPoint>
+        <navPoint id="a_defective_system" playOrder="21" class="h2">
+            <navLabel>
+                <text>A defective system</text>
+            </navLabel>
+            <content src="a_defective_system.xhtml"/>
+        </navPoint>
+        <navPoint id="private_money" playOrder="22" class="h2">
+            <navLabel>
+                <text>Private money</text>
+            </navLabel>
+            <content src="private_money.xhtml"/>
+        </navPoint>
+        <navPoint id="global_currency" playOrder="23" class="h2">
+            <navLabel>
+                <text>A global currency</text>
+            </navLabel>
+            <content src="global_currency.xhtml"/>
+        </navPoint>
+    </navPoint>
+    <navPoint id="brave_new_world" playOrder="24" class="h1">
+        <navLabel>
+            <text>Brave new world</text>
+        </navLabel>
+        <content src="brave_new_world.xhtml"/>
+        <navPoint id="darknet_markets" playOrder="25" class="h2">
+            <navLabel>
+                <text>Darknet markets</text>
+            </navLabel>
+            <content src="darknet_markets.xhtml"/>
+        </navPoint>
+        <navPoint id="swiss_bank_account_in_your_pocket" playOrder="26" class="h2">
+            <navLabel>
+                <text>A Swiss bank account in your pocket</text>
+            </navLabel>
+            <content src="swiss_bank_account_in_your_pocket.xhtml"/>
+        </navPoint>
+        <navPoint id="cashless_dystopia" playOrder="27" class="h2">
+            <navLabel>
+                <text>The cashless dystopia</text>
+            </navLabel>
+            <content src="cashless_dystopia.xhtml"/>
+        </navPoint>
+        <navPoint id="protection_against_government_confiscation" playOrder="28" class="h2">
+            <navLabel>
+                <text>Protection against government confiscation</text>
+            </navLabel>
+            <content src="protection_against_government_confiscation.xhtml"/>
+        </navPoint>
+        <navPoint id="separation_of_money_and_state" playOrder="29" class="h2">
+            <navLabel>
+                <text>Separation of money and state</text>
+            </navLabel>
+            <content src="separation_of_money_and_state.xhtml"/>
+        </navPoint>
+    </navPoint>
+    <navPoint id="extensions" playOrder="30" class="h1">
+        <navLabel>
+            <text>Extensions</text>
+        </navLabel>
+        <content src="extensions.xhtml"/>
+        <navPoint id="timestamping_service" playOrder="31" class="h2">
+            <navLabel>
+                <text>Timestamping service</text>
+            </navLabel>
+            <content src="timestamping_service.xhtml"/>
+        </navPoint>
+        <navPoint id="uncensorable_twitter" playOrder="32" class="h2">
+            <navLabel>
+                <text>Uncensorable Twitter</text>
+            </navLabel>
+            <content src="uncensorable_twitter.xhtml"/>
+        </navPoint>
+        <navPoint id="provably_fair_gambling" playOrder="33" class="h2">
+            <navLabel>
+                <text>Provably fair gambling</text>
+            </navLabel>
+            <content src="provably_fair_gambling.xhtml"/>
+        </navPoint>
+        <navPoint id="tokens" playOrder="34" class="h2">
+            <navLabel>
+                <text>Tokens</text>
+            </navLabel>
+            <content src="tokens.xhtml"/>
+        </navPoint>
+        <navPoint id="voting" playOrder="35" class="h2">
+            <navLabel>
+                <text>Improved voting</text>
+            </navLabel>
+            <content src="voting.xhtml"/>
+        </navPoint>
+    </navPoint>
+    <navPoint id="appendix" playOrder="36" class="h1">
+        <navLabel>
+            <text>Appendix</text>
+        </navLabel>
+        <content src="appendix.xhtml"/>
+        <navPoint id="bitcoin_whitepaper" playOrder="37" class="h2">
+            <navLabel>
+                <text>The Bitcoin white paper</text>
+            </navLabel>
+            <content src="bitcoin_whitepaper.xhtml"/>
+        </navPoint>
+        <navPoint id="challenges" playOrder="38" class="h2">
+            <navLabel>
+                <text>Challenges for cryptocurrencies</text>
+            </navLabel>
+            <content src="challenges.xhtml"/>
+        </navPoint>
+        <navPoint id="cryptography" playOrder="39" class="h2">
+            <navLabel>
+                <text>A hitchhiker’s guide to cryptography</text>
+            </navLabel>
+            <content src="cryptography.xhtml"/>
+        </navPoint>
+    </navPoint>
+  </navMap>
+</ncx>
