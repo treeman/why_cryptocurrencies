@@ -328,6 +328,7 @@ def setup_post(post):
 def replace_post_data(data):
     for link, new_link in link_replace.items():
         data = data.replace(link, new_link)
+    data = data.replace('Cheaper & faster', 'Cheaper &amp; faster')
     return data
 
 def create_zip():

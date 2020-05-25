@@ -26,6 +26,7 @@
         <item id="images-why-unbanked-fallback" href="images/why-unbanked-fallback.png" media-type="image/png" />
         <item id="images-income-inequality-world-fallback" href="images/income-inequality-world-fallback.png" media-type="image/png" />
         <item id="images-emission-rates-fallback" href="images/emission-rates-fallback.png" media-type="image/png" />
+        <item id="images-venezuela-hero-wide-fallback" href="images/venezuela-hero-wide-fallback.png" media-type="image/png" />
         ◊MANIFEST_FONT_TAG
     </manifest>
     <spine toc="ncx">
