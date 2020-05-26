@@ -96,8 +96,8 @@ A problem-centric view is great for an engineer or a problem solver but it also 
 
 Instead of putting on blinders and getting stuck at these problems---which I believe can be addressed---we'll focus on the potential cryptocurrencies have. Only with this vantage point can we see if the problems are worth working on, or if we instead should scrap the whole idea.
 
-◊div[#:class "center"]{
-  ◊strong[#:style "font-size: 1.1rem"]{And of course none of this is investment advice.}
+◊div[#:class "not-investment"]{
+  ◊strong{And of course none of this is investment advice.}
 }
 
 ◊ndef["schneier"]{

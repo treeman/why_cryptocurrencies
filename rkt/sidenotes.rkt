@@ -218,11 +218,14 @@
   (cons decoded-list notes-after))
 
 (define (expand-sidenote-defs #:sort [sort? #t] notes)
-  (std-decode
-    (map expand-sidenote
-         (if sort?
-           (sort notes note<)
-           notes))))
+  (if (empty? notes)
+    `()
+    (std-decode
+      `((div ((class "sidenote-group"))
+          ,@(map expand-sidenote
+               (if sort?
+                 (sort notes note<)
+                 notes)))))))
 
 (define (note< a b)
   (define a-sign (note-sign a))

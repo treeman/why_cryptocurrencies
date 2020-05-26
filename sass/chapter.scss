@@ -6,6 +6,15 @@ $sidenote-float-width: 1280px;
     //background-color: lightyellow;
     flex: 1 1 auto;
     margin: 0.5rem 1.2rem;
+
+    page-break-inside: avoid;
+    break-inside: avoid;
+}
+
+@supports not ((page-break-inside: avoid) and (break-inside: avoid)) {
+  .chapter {
+    -webkit-column-break-inside: avoid;
+  }
 }
 
 %fullwidth {
@@ -22,8 +31,7 @@ $sidenote-float-width: 1280px;
 /*
  * Header
  */
-.chapter > .header {
-    text-align: left;
+.chapter .header {
     h2 {
         font-weight: normal;
         font-style: italic;
@@ -78,14 +86,14 @@ $list-p-margin: 0.6em;
 
 .chapter {
     ul, ol {
-        list-style: none;
-        margin: 1rem 0 1rem 2em;
+        margin: 1rem 0;
         p {
-            margin-bottom: $list-p-margin;
+            margin: $list-p-margin 0;
         }
-    }
-    ol {
-        counter-reset: foobar;
+        p:first-child {
+            margin-top: 0 !important;
+            padding: 0 !important;
+        }
     }
     ol li, ul li {
         margin-bottom: 0.4em;
@@ -94,34 +102,6 @@ $list-p-margin: 0.6em;
     ul div, ul span, ul li, ul a {
         font-size: 0.95rem;
         line-height: 1.35;
-    }
-
-    ol > li::before {
-        @extend %sans-serif;
-        counter-increment: foobar;
-        content: counter(foobar);
-        color: $body-list-sym-color;
-    }
-    ul > li::before {
-        @extend %sans-serif;
-        //content: "⭑";
-        //content: "~";
-        //content: "≈";
-        //content: "→";
-        //content: "»";
-        //content: "*";
-        content: "•";
-        //content: "†";
-        color: $body-list-sym-color;
-    }
-    ul > li > p:first-child, ol > li > p:first-child {
-        // To avoid li signifier on a line of it's own
-        margin-top: $first-list-offset;
-    }
-    ul > li::before, ol > li::before {
-        // Avoid floats here as sidenotes may interfere
-        margin-left: -2em;
-        padding-right: 1.5em;
     }
 
     // Description lists
@@ -192,20 +172,24 @@ $list-p-margin: 0.6em;
  */
 blockquote {
     line-height: 1.4;
-    margin: 2em;
+    margin: 2em 0;
+    padding-left: 2em;
+    //border-left: solid;
 }
-.chapter {
-    blockquote, blockquote div, blockquote span, blockquote p, blockquote a, blockquote > p {
-        font-size: 0.95rem;
-    }
+blockquote p {
+    padding: 0 !important;
 }
 blockquote > .footer, blockquote > .footer .author, blockquote > .footer .src, blockquote > .footer .src a,
 blockquote > .footer span {
     font-size: 0.8rem;
-    text-align: right;
+    text-align: right !important;
+}
+blockquote > .footer {
+    margin-top: 1em !important;
+    font-style: normal !important;
 }
 blockquote > .footer > .cite {
-    font-style: italic;
+    font-style: italic !important;
 }
 blockquote .emphasis {
     font-size: 0.8rem;
@@ -214,22 +198,15 @@ blockquote.center {
     text-align: center;
 }
 
-// Should we shut it down for small text?
-//blockquote > footer a:link {
-    //text-decoration: underline;
-    //background: none;
-    //text-shadow: none;
-//}
-
 .epigraph {
     margin: 2em 0;
 
     blockquote {
         font-size: 1rem;
-        font-style: italic; // Regular shouldn't be italic?
+        font-style: italic !important;
     }
-    blockquote > footer {
-        font-style: normal;
+    blockquote > .footer {
+        font-style: normal !important;
     }
 }
 
@@ -293,8 +270,26 @@ pre {
     font-style: normal;
 }
 
+.sidenote-group {
+    border-top: 1px dashed !important;
+    border-bottom: 1px dashed !important;
+    padding: 1em 0 !important;
+}
+
+.sidenote p:first-child {
+    margin-top: 0;
+}
+.sidenote:not(:first-child) {
+    margin-top: 1.4em;
+}
+.sidenote:not(:last-child) {
+    margin-bottom: 1.4em;
+}
 .sidenote {
+    margin-left: 4em;
+    margin-right: 4em;
     @extend %sans-serif;
+    display: block;
 }
 .sidenote, .sidenote p, .sidenote div, .sidenote a {
     font-size: 0.8rem;
@@ -321,9 +316,6 @@ pre {
 }
 
 .sidenote {
-    display: block;
-    margin: 1em 4em 1.4em 4em;
-
     img {
         display: block;
         margin: 0 auto;
@@ -331,6 +323,13 @@ pre {
     code {
         max-width: 101%;
     }
+}
+
+.not-investment {
+    margin: 1em 0 !important;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-align: center;
 }
 
 
@@ -376,6 +375,9 @@ pre {
 /*
  * Images
  */
+img {
+    object-fit: contain;
+}
 a.img-wrapper:link {
     text-decoration: none;
 }

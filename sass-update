@@ -1,10 +1,10 @@
 #!/bin/bash
 
-sassc sass/main.scss --style compressed > css/main.css
-echo "created: css/main.css"
+sassc sass/main.scss --style compressed > main.css
+echo "created: main.css"
 
 inotifywait -e close_write,moved_to,create -m sass/ |
 while read -r directory events filename; do
-    sassc sass/main.scss --style compressed > css/main.css
+    sassc sass/main.scss --style compressed > main.css
     echo "updated: css/main.css"
 done
