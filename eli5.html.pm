@@ -8,6 +8,8 @@
 
 ◊(clear-sidenotes)
 
+UUID_COPY
+
 While cryptocurrencies are mostly seen as speculative assets---get rich quick schemes---they have valuable properties and valuable use cases. For example:
 
 ◊ul{

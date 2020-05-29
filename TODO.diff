@@ -1,7 +1,13 @@
+epub3 tags:
+http://apex.infogridpacific.com/df/epub-type-epubpackaging8.html
+
 - unloadable svgs
 - tabel formating
 - uncensorable donations formatting
 - better formatting for unbanked maps
+
+- remove paragraph from beginning of list item
+- sidenotes could use epub3 tags? for styling?
 
 Need a designer for a cover
 + Find similar covers for the genre

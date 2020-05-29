@@ -1,6 +1,9 @@
 .homepage {
     max-width: 600px;
     margin: 0.5rem 1.2rem;
+
+    page-break-inside: avoid;
+    break-inside: avoid;
 }
 
 .page-toc a {

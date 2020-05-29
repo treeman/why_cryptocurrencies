@@ -5,11 +5,14 @@ import subprocess
 import os.path
 import re
 import sys
+import datetime
 
 # See
 # http://www.jedisaber.com/eBooks/Tutorial.shtml
 
-uuid = "0dfc44f6-9c27-42ea-b6a8-45334b6aeeff"
+now = datetime.datetime.now()
+# uuid = "0dfc44f6-9c27-42ea-b6a8-45334b6aeeff"
+uuid = "0dfc44f6-9c27-42ea-b6a8-45334b6aeeff" + datetime.datetime.now().strftime("%y-%m-%d:%H%M")
 
 dirname = os.path.dirname(__file__)
 site_dir = os.path.join(dirname, "_site")
@@ -302,6 +305,8 @@ def replace_post_data(data):
     for link, new_link in link_replace.items():
         data = data.replace(link, new_link)
     data = data.replace('Cheaper & faster', 'Cheaper &amp; faster')
+    data = data.replace('UUID_COPY', uuid)
+
     return data
 
 def create_zip():
