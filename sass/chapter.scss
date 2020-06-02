@@ -86,7 +86,7 @@ $list-p-margin: 0.6em;
 
 .chapter {
     ul, ol {
-        margin: 1rem 0;
+        margin: 1rem 0 1rem 1rem;
         p {
             margin: $list-p-margin 0;
         }
@@ -668,7 +668,6 @@ table.address-examples {
 }
 
 .snowden-leaks .leak .title {
-    margin-top: $first-list-offset;
     margin-bottom: $list-p-margin;
     font-weight: bold;
 }

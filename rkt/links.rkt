@@ -53,8 +53,8 @@
 (define case-against-fed-book
   (book-ref
     "https://www.goodreads.com/book/show/81976.The_Case_Against_the_Fed"
-    "The Case Against the Fed"
-    "Murray N. Rothbard"))
+    "Murray N. Rothbard"
+    "The Case Against the Fed"))
 (define 1984-book
   (book-ref
     "https://www.goodreads.com/book/show/40961427-1984"
