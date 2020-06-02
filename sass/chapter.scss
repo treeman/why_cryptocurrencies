@@ -91,8 +91,8 @@ $list-p-margin: 0.6em;
             margin: $list-p-margin 0;
         }
         p:first-child {
-            margin-top: 0 !important;
-            padding: 0 !important;
+            //margin-top: 0;
+            padding: 0;
         }
     }
     ol li, ul li {
@@ -174,7 +174,7 @@ blockquote {
     line-height: 1.4;
     margin: 2em 0;
     padding-left: 2em;
-    //border-left: solid;
+    border-left: solid;
 }
 blockquote p {
     padding: 0 !important;
@@ -204,6 +204,7 @@ blockquote.center {
     blockquote {
         font-size: 1rem;
         font-style: italic !important;
+        border-left: none;
     }
     blockquote > .footer {
         font-style: normal !important;
@@ -271,14 +272,15 @@ pre {
 }
 
 .sidenote-group {
-    border-top: 1px dashed !important;
-    border-bottom: 1px dashed !important;
-    padding: 1em 0 !important;
+    //border-top: 1px dashed;
+    //border-bottom: 1px dashed;
+    //padding: 1em 0;
+    margin: 1em 0;
 }
 
-.sidenote p:first-child {
-    margin-top: 0;
-}
+//.sidenote p:first-child {
+    //margin-top: 0;
+//}
 .sidenote:not(:first-child) {
     margin-top: 1.4em;
 }
@@ -291,7 +293,7 @@ pre {
     @extend %sans-serif;
     display: block;
 }
-.sidenote, .sidenote p, .sidenote div, .sidenote a {
+.sidenote, .sidenote p, .sidenote div, .sidenote a, .sidenote p a {
     font-size: 0.8rem;
 }
 .sidenote img, {
@@ -636,10 +638,7 @@ table.address-examples {
 .wikileaks .entry {
     width: 100%;
 
-    h3 {
-        margin-top: 0;
-    }
-    > .header {
+    .header {
         font-size: 1.1rem;
         @extend %sans-serif;
         line-height: 1;
@@ -647,11 +646,16 @@ table.address-examples {
         flex-wrap: wrap;
         //margin-bottom: 0.3rem;
     }
-    > .header > h3 {
+    .header .h3 {
+        font-weight: bold;
+        margin-top: 0;
         margin-right: 0.5rem;
         margin-bottom: 0.3rem;
     }
-    > .header > .date {
+    .txt p:first-child {
+        margin-top: 0;
+    }
+    .header .date {
         margin-bottom: 0.3rem;
     }
 
@@ -663,16 +667,16 @@ table.address-examples {
     }
 }
 
-.snowden-leaks > li.leak > .title {
+.snowden-leaks .leak .title {
     margin-top: $first-list-offset;
     margin-bottom: $list-p-margin;
     font-weight: bold;
 }
 
-.wikileaks li.leak {
+.wikileaks .leak {
     margin-bottom: 2em;
 
-    > .title {
+    .title {
         margin-top: $first-list-offset;
         margin-bottom: $list-p-margin;
         font-weight: bold;
