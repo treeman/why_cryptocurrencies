@@ -36,20 +36,23 @@
 
 (define (make-subnav sub)
   (if sub
-      `(ul
+      `(ol
         ,@(for/list ([child (in-list sub)])
           `(li ,(make-entry child))))
       ""))
 
 (define (page-toc page)
   `(div ((class "page-toc"))
-     (h1 ,(make-entry (node page)))
+     (span ((class "section")) ,(make-entry (node page)))
      ,(make-subnav (children page))))
 
 ;; Make a table of content, used on the homepage or dedicated toc page.
 (define (make-toc content)
-  `(div ((class "toc"))
-    ,@(map page-toc content)))
+  `(div ((class "toc") (epub:type "toc"))
+        (ol
+            ,@(map (λ (x)
+                      `(li ,(page-toc x)))
+                   content))))
 
 ;; Locate entry in table of content.
 (define (toc-entry page)

@@ -32,13 +32,24 @@ $sidenote-float-width: 1280px;
  * Header
  */
 .chapter .header {
-    h2 {
+    .subtitle {
         font-weight: normal;
         font-style: italic;
         font-size: 1rem;
 
         margin-top: 0.4em;
         margin-bottom: 0.8em;
+
+        @extend %sans-serif;
+        line-height: 1;
+        text-align: left !important;
+
+        adobe-hyphenate: none;
+        -webkit-hyphens: none;
+        -moz-hyphens: none;
+        -ms-hyphens: none;
+        -epub-hyphens: none;
+        hyphens: none;
     }
 }
 
@@ -129,22 +140,24 @@ $list-p-margin: 0.6em;
         font-weight: bold;
     }
 
-    ul {
-        list-style: none;
-        margin: 0;
+    ol {
+        //list-style: none;
+        //margin: 0;
+        margin: 1rem 0 1rem 1rem;
     }
-    ul > li {
+    ol > li {
         font-size: 1rem;
         margin-left: 0.6rem;
         margin-top: 0.3rem;
     }
-    ul > li::before {
-        display: none;
-    }
+    //ol > li::before {
+        //display: none;
+    //}
 
     a {
         background: none;
         text-shadow: none;
+        text-decoration: none;
     }
     a:hover {
         text-decoration: underline;
@@ -219,6 +232,7 @@ table {
     @extend %sans-serif-tnum;
     font-size: 0.95rem;
     margin-bottom: 1rem;
+    table-layout: fixed;
 
     display: block;
     overflow-x: auto;
@@ -227,6 +241,21 @@ table {
 th, td {
     text-align: left;
     padding: 0.1em 1.5em 0.1em 0em;
+}
+table.two {
+    th, td {
+        width: 50%;
+    }
+}
+table.three {
+    th, td {
+        width: 33%;
+    }
+}
+table.four {
+    th, td {
+        width: 25%;
+    }
 }
 // Had tons of trouble centering a table which could also
 // overflow on x.

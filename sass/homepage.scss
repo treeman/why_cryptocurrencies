@@ -55,13 +55,14 @@
 .toc h1, .toc h1 a {
     font-size: 1.1rem;
 }
-.toc ul {
-    margin-top: 0.5rem;
-    list-style: none;
+.toc ol {
+    //margin-top: 0.5rem;
+    margin: 1rem 0 1rem 1rem;
+    //list-style: none;
 
     li {
-        margin-left: 0.6rem;
-        margin-top: 0.3rem;
+        //margin-left: 0.6rem;
+        //margin-top: 0.3rem;
     }
 }
 .toc .planned {

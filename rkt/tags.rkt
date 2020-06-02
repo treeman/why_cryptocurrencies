@@ -166,6 +166,7 @@
 (define (stable #:header [header #t]
                 #:centered [centered #t]
                 #:fullwidth [fullwidth #f]
+                #:class [c #f]
                 . rows)
   (define cleaned-rows (filter-not whitespace? rows))
   (define header-row (car cleaned-rows))
@@ -180,7 +181,10 @@
                           ,@(map (λ (x) (make-row x 'td)) body-rows)))
                       `((tbody
                           ,@(map (λ (x) (make-row x 'td)) cleaned-rows)))))
-  (create-table centered fullwidth `() content))
+  (define classes (if c
+                    `(,c)
+                    `()))
+  (create-table centered fullwidth classes content))
 
 (define (table-body #:centered [centered #t]
                     #:fullwidth [fullwidth #f]
@@ -209,7 +213,7 @@
 
 
 (define (epigraph  . txt)
-  `(div ((class "epigraph"))
+  `(div ((class "epigraph") (epub:type "epigraph"))
        ,@txt))
 
 (define (qt #:author [author #f]

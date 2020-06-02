@@ -47,7 +47,7 @@
       <div class="◊|article-class|">
         <div class="header">
           <h1>◊|title|</h1>
-          <h2>◊|subtitle|</h2>
+          <span class="subtitle">◊|subtitle|</span>
         </div>
 
         ◊(->html doc #:splice? #t)
