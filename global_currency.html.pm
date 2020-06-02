@@ -15,7 +15,7 @@ Cryptocurrencies don't have any borders. You can send and receive money from any
 
 ◊subhead{Remittance}
 
-Sending money to other countries, called ◊em{remittance}, is one of the first promoted use-cases for cryptocurrencies. The benefits over existing solutions, such as Western Union, are numerous:◊sn{compare-to-banks}
+Sending money to other countries, called ◊em{remittance}, is one of the first promoted use-cases for cryptocurrencies. The benefits over existing solutions, such as Western Union, are numerous:◊mn{compare-to-banks}
 
 ◊ndef["compare-to-banks"]{
     Why not make a comparison to bank transfers? Because the problem with remittance is transfers to countries far away, often poorer countries. There's no problem with transferring money from Sweden to Finland for example---bank transfers work great there. 
@@ -56,7 +56,9 @@ Sending money to other countries, called ◊em{remittance}, is one of the first 
     }
     ◊li{Send any amount
 
-        Western Union also has limits on the amount you can send. I got a limit of $5,000 to Zimbabwe for example. It's a fairly high limit, but it cannot compare to cryptocurrencies where you can send any amount with a single transaction.◊sn{large-BTC-tx}
+        Western Union also has limits on the amount you can send. I got a limit of $5,000 to Zimbabwe for example. It's a fairly high limit, but it cannot compare to cryptocurrencies where you can send any amount with a single transaction.◊mn{large-BTC-tx}
+
+◊note-pos[#:top -9]{large-BTC-tx}
 
         ◊ndef["large-BTC-tx"]{
             Someone transferred 94,504 BTC---valued around ◊nbsp{1 billion USD} at the time---◊link[large-BTC-tx]{with a single transaction}.
@@ -65,9 +67,6 @@ Sending money to other countries, called ◊em{remittance}, is one of the first 
 }
 
 The big drawback with cryptocurrencies is that you're sending cryptocurrency coins, and if you wanted fiat money you need to find a way to exchange the coins for fiat, which might be difficult, slow or expensive.
-
-◊note-pos[#:top -60]{compare-to-banks}
-◊note-pos[#:top -9]{large-BTC-tx}
 
 ◊(define western-union-fees
    (x-ref
@@ -97,7 +96,7 @@ The big drawback with cryptocurrencies is that you're sending cryptocurrency coi
 
 ◊subhead{Borderless charity}
 
-Venezuela is currently going through ◊link[venezuela-crisis]{an economic crisis of extreme proportions}. It's much worse than for example the ◊link[great-depression]{Great Depression} in the 1930s and perhaps it's better to compare it to a country devastated by war. Millions of people have fled the country and those left struggle with unemployment, a collapsed health care system and starvation. Corruption and strict border control makes it difficult for Venezuelans to receive outside help.◊sn{petro}
+Venezuela is currently going through ◊link[venezuela-crisis]{an economic crisis of extreme proportions}. It's much worse than for example the ◊link[great-depression]{Great Depression} in the 1930s and perhaps it's better to compare it to a country devastated by war. Millions of people have fled the country and those left struggle with unemployment, a collapsed health care system and starvation. Corruption and strict border control makes it difficult for Venezuelans to receive outside help.◊mn{petro}
 
 ◊ndef["petro"]{
     Venezuela also has their own "cryptocurrency", called ◊link[petro]{Petro}. But it's not decentralized---it's ◊link[snake_oil]{snake oil}.
@@ -109,7 +108,7 @@ Venezuela is currently going through ◊link[venezuela-crisis]{an economic crisi
      "https://en.wikipedia.org/wiki/Petro_(cryptocurrency)"
      "Wikipedia: Petro (cryptocurrency)"))
 
-There's an opportunity here for cryptocurrencies, which is demonstrated by the charity ◊link[eatbch]{eatBCH}, who use cryptocurrencies to help feed people in Venezuela. They receive donations in Bitcoin Cash from all over the world, which goes directly to volunteers inside the country, who use them to buy food and water from local vendors and give them to people in need.◊sn{venezuela-adoption}
+There's an opportunity here for cryptocurrencies, which is demonstrated by the charity ◊link[eatbch]{eatBCH}, who use cryptocurrencies to help feed people in Venezuela. They receive donations in Bitcoin Cash from all over the world, which goes directly to volunteers inside the country, who use them to buy food and water from local vendors and give them to people in need.◊mn{venezuela-adoption}
 
 
 ◊ndef["venezuela-adoption"]{
@@ -125,9 +124,6 @@ There's an opportunity here for cryptocurrencies, which is demonstrated by the c
 }
 
 This kind of charity is only possible if you can cheaply transfer money to the heart of a very unstable and closed off country, bypassing sanctions and border control.
-
-◊note-pos[#:top -48]{petro}
-◊note-pos[#:top -37]{venezuela-adoption}
 
 ◊(define venezuela-crisis
    (x-ref
@@ -153,7 +149,7 @@ If you decided to leave Venezuela, but wanted to bring your wealth with you, wha
 
 Fortunately cryptocurrencies may aid you here. You can store any amount on a piece of paper in your pocket, an encrypted key online or even on a dozen memorized words in your head, and there's not much the border search will reveal.
 
-You don't have to physically leave the country to benefit from storing your wealth in a global currency. China is ◊link[china-capital-flight]{struggling with capital leaving the country} and it's one reason they've been trying to ban cryptocurrencies for years.◊sn{cannot-stop}
+You don't have to physically leave the country to benefit from storing your wealth in a global currency. China is ◊link[china-capital-flight]{struggling with capital leaving the country} and it's one reason they've been trying to ban cryptocurrencies for years.◊mn{cannot-stop}
 
 ◊ndef["cannot-stop"]{
     China banning cryptocurrencies has become a joke in the community. One week they're legal, the next they're illegal and then they make it legal again. Last I checked ◊link[china-bans-anti-crypto]{they made it all legal}, but I'm sure they'll change their mind again.
@@ -192,7 +188,9 @@ Cryptocurrency skeptics often ask why anyone would ever want to use money with s
 
 Venezuela had a monthly inflation of 815,194%, in May 2019 alone. It's a huge number that means prices double in less than two days---all the time. This means if you could afford two chickens today, in two days you can only afford one. For those living through it they would prefer ◊em{anything} else over the local currency; be it gold, U.S. dollar, ◊link[venezuela-bitcoin]{Bitcoin}, clothes, food---you name it.
 
-It's easy to think that hyperinflation is a thing of the past, or that it only affects poor countries far away. But according to the ◊link[hanke-krus]{Hanke-Krus hyperinflation table} we've had 55 cases of hyperinflation since 1920, with 31 of them after 1990 (roughly half related to the collapase of the Soviet Union).◊sn{line-inflation} Some famous examples include:
+It's easy to think that hyperinflation is a thing of the past, or that it only affects poor countries far away. But according to the ◊link[hanke-krus]{Hanke-Krus hyperinflation table} we've had 55 cases of hyperinflation since 1920, with 31 of them after 1990 (roughly half related to the collapase of the Soviet Union).◊mn{line-inflation} 
+
+Some famous examples include:
 
 
 ◊div[#:class "inflation-examples"]{
@@ -202,7 +200,10 @@ It's easy to think that hyperinflation is a thing of the past, or that it only a
     }
     ◊inflation["Hungary"
                #:date "1945--1946"]{
-        The worst hyperinflation in history ◊link[hungary-inflation]{happened in Hungary}, when they had to repay the cost of the second world war. There prices doubled in only 15 hours.◊sn{inflation-fascination}
+        The worst hyperinflation in history ◊link[hungary-inflation]{happened in Hungary}, when they had to repay the cost of the second world war. There prices doubled in only 15 hours.◊mn{inflation-fascination}
+
+
+    ◊note-pos[#:top -22]{inflation-fascination}
     }
     ◊inflation["Zimbabwe"
                #:date "2004--2009"]{
@@ -217,7 +218,9 @@ It's easy to think that hyperinflation is a thing of the past, or that it only a
         (div ((class "date")) ,date))
       (div ((class "txt")) ,@text)))
 
-In each case, hyperinflation is an economic disaster. Hoarding causes shortages, with even basic goods like clothes or food becoming hard to find. Importing goods become impossible and companies go out of business, causing mass unemployment. When tax revenue falls, government services fall with them.◊sn{regular-inflation-too}
+In each case, hyperinflation is an economic disaster. Hoarding causes shortages, with even basic goods like clothes or food becoming hard to find. Importing goods become impossible and companies go out of business, causing mass unemployment. When tax revenue falls, government services fall with them.◊mn{regular-inflation-too}
+
+◊note-pos{regular-inflation-too}
 
 
 ◊(define zimbabwe-trouble
@@ -261,9 +264,6 @@ In each case, hyperinflation is an economic disaster. Hoarding causes shortages,
      "https://www.thebalance.com/what-is-hyperinflation-definition-causes-and-examples-3306097"
      "Hyperinflation: Its Causes and Effects With Examples"))
 
-◊note-pos[#:top -38]{line-inflation}
-◊note-pos[#:top -22]{inflation-fascination}
-◊note-pos{regular-inflation-too}
 
 ◊ndef["line-inflation"]{
     Hyperinflation is defined as a monthly inflation exceeding 50%.
@@ -298,9 +298,9 @@ Bankers are legal crooks.
      "https://twitter.com/nntaleb/status/1187467132646199300"
      "Nassim Nicholas Taleb on Twitter"))
 
-Because of the decentralized nature of cryptocurrencies it's very difficult for them to "shut down". It doesn't matter if the computers of some people---or even whole countries---break down, the cryptocurrency network is unaffected.◊sn{antifragile}
+Because of the decentralized nature of cryptocurrencies it's very difficult for them to "shut down". It doesn't matter if the computers of some people---or even whole countries---break down, the cryptocurrency network is unaffected.◊mn{antifragile}
 
-Cryptocurrencies are so robust we might as well say they're always available, for anyone and anywhere (as long as they have internet access).◊sn{uptime}
+Cryptocurrencies are so robust we might as well say they're always available, for anyone and anywhere (as long as they have internet access).◊mn{uptime}
 
 ◊note-pos[#:top -7.5]{antifragile}
 ◊note-pos{uptime}
@@ -327,7 +327,7 @@ Cryptocurrencies are so robust we might as well say they're always available, fo
 
 ◊subhead{A currency for the world}
 
-The U.S. dollar is the ◊link[world-currency]{closest we have to a world currency}. More than half of all U.S. dollar bills are used outside of the U.S.---often as hard currency. Almost 40% of all debt in the world is issued in U.S. dollars and the central banks of other countries hold a large part of their reserves in U.S. dollars (making it the most widely used ◊def[reserve-currency]{reserve currency}).◊sn{jp-morgan}
+The U.S. dollar is the ◊link[world-currency]{closest we have to a world currency}. More than half of all U.S. dollar bills are used outside of the U.S.---often as hard currency. Almost 40% of all debt in the world is issued in U.S. dollars and the central banks of other countries hold a large part of their reserves in U.S. dollars (making it the most widely used ◊def[reserve-currency]{reserve currency}).◊mn{jp-morgan}
 
 ◊ndef["jp-morgan"]{
     According to Craig Cohen of J.P. Morgan, the U.S. dollar dominance could be coming to an end, and says it ◊link[jp-morgan-dollar #:quote #t]{could lose its status as world’s reserve currency}.

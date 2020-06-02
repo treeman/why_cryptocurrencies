@@ -14,7 +14,7 @@ But would they really be completely useless? These cryptocurrency-like things ar
 
 ◊subhead{What are tokens?}
 
-Tokens are essentially cryptocurrencies, except there's a single entity with the power to create coins. Tokens retain the other useful ◊link[properties_of_a_cryptocurrency]{properties of cryptocurrencies} such as counterfeit resistance, transaction irreversibility and ◊link[double-spending]{double spend protection}.◊sn{weak}
+Tokens are essentially cryptocurrencies, except there's a single entity with the power to create coins. Tokens retain the other useful ◊link[properties_of_a_cryptocurrency]{properties of cryptocurrencies} such as counterfeit resistance, transaction irreversibility and ◊link[double-spending]{double spend protection}.◊mn{weak}
 
 ◊ndef["weak"]{
     Some properties are weakened when the value of tokens come from a central party.
@@ -24,9 +24,7 @@ Tokens are essentially cryptocurrencies, except there's a single entity with the
 
 They achieve this by operating on top of an existing cryptocurrency. You might think of it as the issuer marking some coins with additional information, specifying what kind of token they are. (Technically tokens can be implemented in many different ways, but this is the core idea.)
 
-The most popular class of tokens are probably the ◊link[erc20-standard]{ERC20 tokens}, implemented on top of Ethereum. For example ◊link[usdc]{USD Coin}, Coinbase's stablecoin backed 1-to-1 by USD, is an ERC20 token. The ◊link[bnb]{Binance Coin}, used for the bonus system on a cryptocurrency exchange, is another.◊sn{other-coins}
-
-◊note-pos[#:top -20]{weak}
+The most popular class of tokens are probably the ◊link[erc20-standard]{ERC20 tokens}, implemented on top of Ethereum. For example ◊link[usdc]{USD Coin}, Coinbase's stablecoin backed 1-to-1 by USD, is an ERC20 token. The ◊link[bnb]{Binance Coin}, used for the bonus system on a cryptocurrency exchange, is another.◊mn{other-coins}
 
 ◊note-pos[#:top -2]{other-coins}
 
@@ -63,7 +61,7 @@ The most popular class of tokens are probably the ◊link[erc20-standard]{ERC20 
 
 ◊subhead{Initial coin offering}
 
-The most famous, or infamous, use of tokens is for an ◊link[ico]{Initial Coin Offering (ICO)}. It's similar to an ◊link[ipo]{Initial Public Offering (IPO)}, which aims to raise funds for companies or projects. In return for giving them money you'll receive a token as a sign of participation. ICOs are mostly unregulated and are easy for anyone to participate in.◊sn{security}
+The most famous, or infamous, use of tokens is for an ◊link[ico]{Initial Coin Offering (ICO)}. It's similar to an ◊link[ipo]{Initial Public Offering (IPO)}, which aims to raise funds for companies or projects. In return for giving them money you'll receive a token as a sign of participation. ICOs are mostly unregulated and are easy for anyone to participate in.◊mn{security}
 
 ◊ndef["security"]{
     ICOs are classified as securities and the Securities and Exchange Commission (SEC) has intervened on a number of occasions.
@@ -77,13 +75,13 @@ Although ICOs are mostly associated with scams (and rightfully so I'd say) there
 
 ◊;I'd say the ICO of the ◊link[brave]{privacy focused browser Brave} is an example of a good ICO.
 
-Does it sound insane? That's really no different from how ◊link[kickstarter]{Kickstarter} works, where it's very popular to pledge money for an interesting board game project and you wait for months or years and hope you'll get something in return.◊sn{insane?}
+Does it sound insane? That's really no different from how ◊link[kickstarter]{Kickstarter} works, where it's very popular to pledge money for an interesting board game project and you wait for months or years and hope you'll get something in return.◊mn{insane?}
 
 ◊ndef["insane?"]{
     You might still say it sounds insane, but just realize Kickstarter is very popular and it mostly works out well. (At least for board games, which I'm most familiar with.)
 }
 
-Why would you want a token for this? The benefit would be that anyone, anywhere, could participate and that participation could be done anonymously. And it all takes place on a platform where you have a guarantee that you can sell your token if you lose faith in the project (since properly implemented not even the issuer can prevent token transactions).◊sn{anon}
+Why would you want a token for this? The benefit would be that anyone, anywhere, could participate and that participation could be done anonymously. And it all takes place on a platform where you have a guarantee that you can sell your token if you lose faith in the project (since properly implemented not even the issuer can prevent token transactions).◊mn{anon}
 
 ◊ndef["anon"]{
     It might be hard to claim anonymity if you want someone to send a board game to you, but it's relevant if you're expecting returns in cryptocurrencies or other digital goods.
@@ -122,7 +120,7 @@ People use gift cards all the time, but they're not always that great. How do yo
 
 For example let's say you walk into a store and want to buy a gift card. How do you know it's not fake, or haven't been used? Luckily there's a code on the gift card, which you can enter into a website to verify if it's still valid. Okay! It's valid, so you buy it and walk out the store.
 
-Unfortunately for you the store clerk has already written down the gift card code, and shortly after you leave the store he decides to use it up, making your gift card useless. Physical gift cards, the one you hand in to a store when you use them up, don't really have this problem, but this is unsolved for digital gift cards.◊sn{verify}
+Unfortunately for you the store clerk has already written down the gift card code, and shortly after you leave the store he decides to use it up, making your gift card useless. Physical gift cards, the one you hand in to a store when you use them up, don't really have this problem, but this is unsolved for digital gift cards.◊mn{verify}
 
 ◊ndef["verify"]{
     Physical gift cards can have a problem with conterfeiting, which is also something cryptocurrencies completely solve.
@@ -212,7 +210,7 @@ In short, they're a bet on the value of something. A derivative is a contract th
 
 We've already seen how cryptocurrencies can improve currencies, but other types of derivatives might also find some benefit from being based on cryptocurrency tokens.
 
-Take stock trading for example. They're done through a stock exchange and intermediaries that manage the exchange. This is required because---like the problem with gift cards---there's no way to transfer ownership in a secure way. But now there is; with tokens you could create a decentralized derivative market and trade them directly between two people, without the need for an intermediary to manage the trade.◊sn{save-money}
+Take stock trading for example. They're done through a stock exchange and intermediaries that manage the exchange. This is required because---like the problem with gift cards---there's no way to transfer ownership in a secure way. But now there is; with tokens you could create a decentralized derivative market and trade them directly between two people, without the need for an intermediary to manage the trade.◊mn{save-money}
 
 If you wanted to, you could also create digital ◊link[bearer-share]{bearer shares}, where the share of a security is given to whoever controls a specific token. (With typical bearer shares control is given to whoever holds a certain piece of paper.) They would protect the owners' anonymity, since their identity is never recorded or required, and could be used to for example create a company controlled by anonymous people.
 

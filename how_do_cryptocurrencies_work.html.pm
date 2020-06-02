@@ -8,13 +8,11 @@
 
 ◊(clear-sidenotes)
 
-This is my attempt to explain how a standard cryptocurrency like Bitcoin works. Other cryptocurrencies may diverge on various points but the fundamentals are the same.◊sn{others}
+This is my attempt to explain how a standard cryptocurrency like Bitcoin works. Other cryptocurrencies may diverge on various points but the fundamentals are the same.◊mn{others}
 
 As stated in the introduction the focus isn't on technical details, but it's a hard balance to make between keeping it simple and explaining how cryptocurrencies work. If this chapter is too technical you can safely skip to the ◊link[next-chapter]{next chapter} or just read ◊link[summary]{the summary}---it's not required knowledge.
 
 ◊(define summary `("#summary" "Summary"))
-
-◊note-pos[#:top -11]{others}
 
 ◊ndef["others"]{
     For example Ethereum adds Turing complete smart contracts and CryptoNote protocols (like Monero) ◊link[privacy-challenge]{hides transaction details}.
@@ -46,7 +44,7 @@ When Sneaky Steve wants to send ◊sans-tnum{500 SEK} to Honest Harry the bank s
   Honest Harry         1 500 SEK (+500 SEK)
 }
 
-Cryptocurrencies work this way as well. In fact the ledger in a cryptocurrency, often referred to as the ◊em{blockchain}, contains the balance of all addresses. ◊sn{stores-transactions}
+Cryptocurrencies work this way as well. In fact the ledger in a cryptocurrency, often referred to as the ◊em{blockchain}, contains the balance of all addresses. ◊mn{stores-transactions}
 
 ◊ndef["stores-transactions"]{
     It's a slight simplification to say the blockchain stores balances.  It actually stores all transactions from which you can calculate all balances.
@@ -97,7 +95,7 @@ If we didn't prevent this the ledger might look like this:
 
 We copied our coin and printed ◊sans-tnum{1 BTC} out of thin air, so now the ledger contains a negative balance. This is a form of ◊em{double spending}---spending the same coin twice.
 
-This isn't really a problem with physical cash since you can't just copy gold coins or paper notes. It's not a problem for banks either since the bank can just deny one or both of the transactions.  But this is a hard problem for a digital currency that tries to remove the central authority. This is why before Bitcoin no ◊em{decentralized}◊sn[#:top -4]{decentralized} digital currency existed.
+This isn't really a problem with physical cash since you can't just copy gold coins or paper notes. It's not a problem for banks either since the bank can just deny one or both of the transactions.  But this is a hard problem for a digital currency that tries to remove the central authority. This is why before Bitcoin no ◊em{decentralized}◊mn[#:top -4]{decentralized} digital currency existed.
 
 ◊ndef["decentralized"]{
     Decentralization is a common term used to refer to the lack of trusted third party. Instead multiple unrelated entities come together and decide as a group.
@@ -184,7 +182,7 @@ Unfortunately there's a serious problem here. As there's no barrier to participa
     But in reality they're all controlled by Sneaky Steve.
 }
 
-This is called a ◊em{Sybil attack}. Think of how one person can use multiple online identities to troll or attack people online, it's hard to know who's real.◊sn{trolls}
+This is called a ◊em{Sybil attack}. Think of how one person can use multiple online identities to troll or attack people online, it's hard to know who's real.◊mn{trolls}
 
 ◊ndef["trolls"]{
     It's very common for cryptocurrency communites to be flooded with trolls pushing their own agenda.
@@ -273,7 +271,7 @@ Important to note is that everyone doesn't have to be a miner. The blockchain is
 
 When a miner finds a solution she can then update the ledger by adding a block to the blockchain. A block is basically a collection of transactions.
 
-A blockchain is what it sounds like: a chain of blocks where a new block builds on previous blocks. When a miner searches for a solution she must target a block on a specific height---the POW problem includes a reference to the previous block and it only fits at a specific position in the chain.◊sn[#:top -4]{specific-height} When a new block is added all miners need to work on a new problem targeting that block.
+A blockchain is what it sounds like: a chain of blocks where a new block builds on previous blocks. When a miner searches for a solution she must target a block on a specific height---the POW problem includes a reference to the previous block and it only fits at a specific position in the chain.◊mn[#:top -4]{specific-height} When a new block is added all miners need to work on a new problem targeting that block.
 
 ◊ndef["specific-height"]{
     This is why ◊def["#forks"]{forks} naturally happen.
@@ -289,11 +287,11 @@ The transactions must follow common rules, called ◊em{consensus rules}, otherw
 
 In return for adding the block you get to collect the rewards. One for finding a block and you can also collect transaction fees for the transactions you include in the block.◊sn{blockreward}
 
-The blockchain is public and anyone can see all transactions. You can use a ◊link[blockchair]{blockchain explorer} to see for yourself; see for example the full history of ◊link[blockchair-addr]{this address} or ◊link[blockchair-tx]{this transaction} with one input and two outputs.◊sn{outputs}
+The blockchain is public and anyone can see all transactions. You can use a ◊link[blockchair]{blockchain explorer} to see for yourself; see for example the full history of ◊link[blockchair-addr]{this address} or ◊link[blockchair-tx]{this transaction} with one input and two outputs.◊mn{outputs}
 
 Cryptocurrencies like Monero also have a public blockchain---see ◊link[xmrchain]{this blockchain explorer}---but they hide transaction amounts, where the coins are coming from and where they're going. I won't go into details on how this works, see the discussion about the ◊link[privacy-challenge]{privacy and fungibility challenge} in the appendix for more details.
 
-The blockchain is duplicated, stored and maintained by many different people, you might think of it as similar to how torrents work. When you send and receive transactions you're really interacting with the blockchain and not with each other directly.◊sn{node-types}
+The blockchain is duplicated, stored and maintained by many different people, you might think of it as similar to how torrents work. When you send and receive transactions you're really interacting with the blockchain and not with each other directly.◊mn{node-types}
 
 ◊img[#:src "images/sending_network.png"
      #:alt "Cryptocurrencies are really sent to a distributed ledger, and applications interact with it."]{
@@ -387,7 +385,7 @@ In the example Honest Harry should wait until he knows which chain is longer and
 
 ◊subhead{Reversing transactions}
 
-If Sneaky Steve can't trick Honest Harry by showing him a fake transaction he can try to reverse his payment after receiving goods from Honest Harry.◊sn{chargeback}
+If Sneaky Steve can't trick Honest Harry by showing him a fake transaction he can try to reverse his payment after receiving goods from Honest Harry.◊mn{chargeback}
 
 It works like this:
 
@@ -417,10 +415,10 @@ It works like this:
 This is a different type of double spend and it's the primary attack vector ◊link[bitcoin_whitepaper]{the white paper} is concerned about. It's called a ◊def[51-attack]{51% attack}, for reasons we'll soon explain.
 
 ◊ndef["chargeback"]{
-    In the credit card world this type of fraud is called ◊link[charge-back-fraud]{charge back fraud} or friendly fraud.
+    In the credit card world this type of fraud is called ◊def[charge-back-fraud]{charge back fraud} or ◊def{friendly fraud}.
 }
 
-◊note-pos[#:top -70]{chargeback}
+◊;note-pos[#:top -70]{chargeback}
 
 ◊(define 51-attack
   (x-ref
@@ -496,7 +494,7 @@ This touches on the immutability of the blockchain. As long as more than 50% of 
 
 How secure is Bitcoin, really? What do we need to pull off a 51% attack?
 
-Here's some quick napkin math to estimate the cost for 51% mining power:◊sn{date}
+Here's some quick napkin math to estimate the cost for 51% mining power:◊mn{date}
 
 ◊ndef["date"]{
     I made the estimation in April 2019 but the math changes quickly. In October the same year the hash rate has more than doubled and new more efficient miners have been released.

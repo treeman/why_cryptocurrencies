@@ -20,7 +20,9 @@ To decide how well cryptocurrencies can function as money, we'll take a look at 
 ◊ol{
     ◊li{◊strong{Acceptable}
 
-        Nobody's excluded from using cryptocurrencies---they're open to everyone by design. The drawback is that you need a device with internet connection.◊sn{crypto-acceptable}
+        Nobody's excluded from using cryptocurrencies---they're open to everyone by design. The drawback is that you need a device with internet connection.◊mn{crypto-acceptable}
+
+        ◊note-pos{crypto-acceptable}
     }
     ◊li{◊strong{Divisible}
 
@@ -28,7 +30,9 @@ To decide how well cryptocurrencies can function as money, we'll take a look at 
     }
     ◊li{◊strong{Durable}
 
-        Coins can be used an infinite amount of times. The only drawback is keeping your private key secure, so you don't lose your coins.◊sn{backups}
+        Coins can be used an infinite amount of times. The only drawback is keeping your private key secure, so you don't lose your coins.◊mn{backups}
+
+        ◊note-pos{backups}
     }
     ◊li{◊strong{Fungible & Uniform}
 
@@ -54,11 +58,7 @@ To decide how well cryptocurrencies can function as money, we'll take a look at 
 
 All in all cryptocurrencies fulfil the properties excellently.
 
-Cryptocurrencies can also be considered to be ◊def[sound-money]{sound money}---the value is entirely market driven and there's no manipulation of the supply.◊sn{backed}
-
-◊note-pos[#:top -60]{crypto-acceptable}
-◊note-pos[#:top -47]{backups}
-◊note-pos{backed}
+Cryptocurrencies can also be considered to be ◊def[sound-money]{sound money}---the value is entirely market driven and there's no manipulation of the supply.◊mn{backed}
 
 ◊ndef["backed"]{
     Traditionally sound money refers to money backed by precious material. Cryptocurrencies are instead backed by cryptography, and in Bitcoin's case the supply mimics the gold supply.
@@ -127,13 +127,18 @@ I know this might be controversial, so let me motivate some of the entries:
 Even if you disagree about certain choices, it's hard to oppose that cryptocurrencies come out of the comparison pretty well. But of course this doesn't give the whole picture. There are other significant differences, for example:
 
 ◊ul{
-    ◊li{A big difference between cryptocurrencies and gold is that cryptocurrencies are digital. This isn't only positive---cryptocurrency implementations can have bugs that might have severe negative consequences.◊sn{bugs}}
+    ◊li{A big difference between cryptocurrencies and gold is that cryptocurrencies are digital. This isn't only positive---cryptocurrency implementations can have bugs that might have severe negative consequences.◊mn{bugs}
+
+        ◊note-pos{bugs}
+    }
     ◊li{Digital fiat can get ◊link[freezing_of_merchant_accounts]{frozen any time by your bank}, while physical payments and cryptocurrencies are uncensorable.}
-    ◊li{Gold has stood the test of time. It's been used as money for thousands of years, while cryptocurrencies are just more than 10 years old.◊sn{age-of-fiat}}
+    ◊li{Gold has stood the test of time. It's been used as money for thousands of years, while cryptocurrencies are just more than 10 years old.◊mn{age-of-fiat}
+
+        ◊note-pos{age-of-fiat}}
 }
 
-◊note-pos[#:top -9.5]{bugs}
-◊note-pos{age-of-fiat}
+◊;note-pos[#:top -9.5]{bugs}
+◊;note-pos{age-of-fiat}
 
 ◊ndef["age-of-fiat"]{
     I find it interesting that ◊link[avg-life-fiat]{the average life expectancy for a fiat currency is 27 years}.
@@ -293,7 +298,7 @@ With the motivations:
 
 While cryptocurrencies match up poorly, there's no perfect alternative.
 
-Note that unlike the fundamental properties---which don't change that much---how well money function change with time. For example a few hundred years ago gold coins would be used everywhere.◊sn{bad-example?}
+Note that unlike the fundamental properties---which don't change that much---how well money function change with time. For example a few hundred years ago gold coins would be used everywhere.◊mn{bad-example?}
 
 ◊ndef["bad-example?"]{
     Maybe a bad example---cryptocurrencies and modern fiat didn't exist so far back. But hopefully you get my point; gold was once an excellent medium of exchange and unit of account, but not anymore. It changes.
@@ -302,13 +307,13 @@ Note that unlike the fundamental properties---which don't change that much---how
 
 ◊subhead{What do lawmakers say?}
 
-Several countries---◊link[skatt-bitcoin]{like Sweden}---have ruled that Bitcoin isn't a currency. The reason is there's no responsible issuer and it's not ◊em{legal tender}◊sn{legal-tender} in any country.
+Several countries---◊link[skatt-bitcoin]{like Sweden}---have ruled that Bitcoin isn't a currency. The reason is there's no responsible issuer and it's not ◊em{legal tender}◊mn{legal-tender} in any country.
 
 ◊ndef["legal-tender"]{
     Legal tender declares that you have to accept it as money by law.
 }
 
-Cryptocurrencies just doesn't fit into existing rules of fiat currencies. This often happens with new innovations that break the mold---laws cannot keep up.◊sn{patents} For instance cryptocurrencies removes the third party requirement, something previously thought impossible.
+Cryptocurrencies just doesn't fit into existing rules of fiat currencies. This often happens with new innovations that break the mold---laws cannot keep up.◊mn{patents} For instance cryptocurrencies removes the third party requirement, something previously thought impossible.
 
 ◊ndef["patents"]{
     Another beautiful example of laws not keeping up with technology is patents. ◊link[software-patents]{Software patents work horribly}, yet software is continuously pushed into the existing framework that doesn't really fit.
@@ -317,9 +322,6 @@ Cryptocurrencies just doesn't fit into existing rules of fiat currencies. This o
 }
 
 There are others who've ruled in favor of Bitcoin as a currency. For example ◊link[eu-ruled]{EU ruled} that VAT is not applicable to the conversion between fiat currency and Bitcoin, however VAT still applies when used for goods and services.
-
-◊note-pos[#:top -16]{legal-tender}
-◊note-pos[#:top -10]{patents}
 
 ◊(define software-patents 
   (x-ref

@@ -24,7 +24,7 @@ Here are some examples of affected businesses:
     ◊li{Adult entertainment (anything remotely related to porn)}
     ◊li{Auctions}
     ◊li{Cannabis}
-    ◊li{Cryptocurrencies (how ironic)◊sn{crypto-banks}}
+    ◊li{Cryptocurrencies (how ironic)◊mn{crypto-banks}}
     ◊li{Gambling}
 }
 
@@ -118,7 +118,7 @@ Not having access to digital payments hurts, but there are workarounds. Cash doe
 
 ◊subhead{Expensive and dubious workarounds}
 
-But some "undesirable" companies do accept credit cards? Does that mean the problem has been solved? Unfortunately, not really.◊sn{programming-adult}
+But some "undesirable" companies do accept credit cards? Does that mean the problem has been solved? Unfortunately, not really.◊mn{programming-adult}
 
 ◊ndef["programming-adult"]{
     There was a ◊link[programming-adult-blog]{popular blog post} detailing the struggles for porn sites to accept digital payments. The post itself has been deleted because of people ◊link[programming-adult-hn]{accusing him} of admitting to fraud (the workarounds are of dubious legality). If you're savvy you might be able to find the original post on the ◊link[wayback-machine]{Wayback machine}.
@@ -147,7 +147,7 @@ Instead they have a third party request the payment on their behalf and do some 
     "https://stripe.com/restricted-businesses"
     "Stripe: Restricted Businesses—Sweden"))
 
-These things are on the gray area legal wise,◊sn{legal?} so the companies that does this have high fees---VERY high fees. While regular payment processors may have ~3-4% fees, these intermediary fees can be as high as ◊strong{30%}. That's ludicrously expensive for low margin businesses.
+These things are on the gray area legal wise,◊mn{legal?} so the companies that does this have high fees---VERY high fees. While regular payment processors may have ~3-4% fees, these intermediary fees can be as high as ◊strong{30%}. That's ludicrously expensive for low margin businesses.
 
 ◊note-pos[#:top -8]{legal?}
 
@@ -237,7 +237,7 @@ Why should people running and using ◊strong{legal} businesses be punished for 
 
 Cryptocurrencies give you permissionless digital payments---it solves the problem of accepting payments very well. But it's not a full solution, at least today.
 
-As we discussed in ◊link[are_cryptocurrencies_money]{Are cryptocurrencies money?} they're very volatile and not widely accepted. Businesses still need to convert cryptocurrencies to fiat to be able to pay their bills and salaries, and the workers in turn need to pay their bills. To sell them for fiat you still need to go through exchanges who---you guessed it---can ◊link[coinbase-close-accounts]{refuse to do business with you}.◊sn{localbitcoins}
+As we discussed in ◊link[are_cryptocurrencies_money]{Are cryptocurrencies money?} they're very volatile and not widely accepted. Businesses still need to convert cryptocurrencies to fiat to be able to pay their bills and salaries, and the workers in turn need to pay their bills. To sell them for fiat you still need to go through exchanges who---you guessed it---can ◊link[coinbase-close-accounts]{refuse to do business with you}.◊mn{localbitcoins}
 
 While cryptocurrencies improves the situation today, we would really need to bypass all third-parties for a great solution. This means you should be able to pay all expenses with cryptocurrencies---so you can't get blocked by a third party anywhere on the line.
 

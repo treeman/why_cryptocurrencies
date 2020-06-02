@@ -27,7 +27,7 @@ But it's not all good. We've already touched on several problems in earlier chap
 
 ◊subhead{Road to hell}
 
-In their ever-increasingly invasive attempts to counter money-laundering, governments all over the world have limited the amount of cash you can deposit or withdraw from banks, cash purchases and even how much cash you can carry.  ◊link[kyc]{Know-your-customer} (KYC) laws for example require banks in the United States to ◊link[ctr]{report any cash deposits of $10,000}, or multiple transactions adding up to that amount, to the IRS. The customer then have to be ready to provide extensive documentation to prove where the money is coming from.◊sn{structuring}
+In their ever-increasingly invasive attempts to counter money-laundering, governments all over the world have limited the amount of cash you can deposit or withdraw from banks, cash purchases and even how much cash you can carry.  ◊link[kyc]{Know-your-customer} (KYC) laws for example require banks in the United States to ◊link[ctr]{report any cash deposits of $10,000}, or multiple transactions adding up to that amount, to the IRS. The customer then have to be ready to provide extensive documentation to prove where the money is coming from.◊mn{structuring}
 
 ◊ndef["structuring"]{
     The act of managing your deposits in a way to avoid triggering the report is called ◊def[structuring]{structuring} and is---you guessed it---◊link[structuring-illegal]{illegal}. Of course this might also affect ◊link[structuring-innocent]{innocent people} or legitimate businesses who just happen to deposit using a suspicious pattern.
@@ -35,7 +35,7 @@ In their ever-increasingly invasive attempts to counter money-laundering, govern
 
 In the U.S. you also have to declare cash amounts over $10,000 you want to leave or enter the country with, otherwise you'll face a high risk of ◊link[travel-forfeiture]{having it all confiscated}. Many countries have similar restrictions but North Macedonia takes it a step further: to prevent "money laundering and terrorism financing" cash payments above 30,000 MKD (around €500) ◊link[macedonia-limits-cash]{are banned}.
 
-Instead we're encouraged to use digital payments (ignoring the ◊link[for_the_unbanked]{unfortunate without the ability} to do so), where banks are able to block large payments if they deem them suspicious---presumably to make it harder to do money laundering.◊sn{laundering}
+Instead we're encouraged to use digital payments (ignoring the ◊link[for_the_unbanked]{unfortunate without the ability} to do so), where banks are able to block large payments if they deem them suspicious---presumably to make it harder to do money laundering.◊mn{laundering}
 
 ◊ndef["laundering"]{
     It sounds hypocritical to me when a major U.S. bank laundered ◊strong{$378 billions} ◊link[us-banks-mexico-drug-gangs]{for Mexico's drug gangs}, the kind of gangs that leaves behind ◊link[gang-mass-grave]{enormous mass-graves}.
@@ -48,8 +48,6 @@ Instead we're encouraged to use digital payments (ignoring the ◊link[for_the_u
 
 In many countries we're already close to the cashless society. As we saw in the quote, WeChat is absolutely integral for many people in China and here in Sweden using cash is very rare, and many stores, restaurants and even banks have dropped cash completely.
 
-◊note-pos{structuring}
-◊note-pos{laundering}
 
 ◊(define structuring
    (x-ref
@@ -126,7 +124,7 @@ The worst part of this story is that it's not even that far-fetched, and all exa
         "Leech" is literally a synonym for "deadbeat", the name for Chinese people on the ◊link[china-social-credit]{wrong side of their social credit system}. They also have trouble getting work and get shunned if their status is discovered.
     }
     ◊li{
-        People have gotten thrown out of their homes for very minor things. For example a Michigan man underpaid his property taxes by ◊strong{$8.41}, and the county ◊link[michigan-man-house]{seized his property, sold it and kept the profits}.◊sn{asset-forfeiture}
+        People have gotten thrown out of their homes for very minor things. For example a Michigan man underpaid his property taxes by ◊strong{$8.41}, and the county ◊link[michigan-man-house]{seized his property, sold it and kept the profits}.◊mn{asset-forfeiture}
 
         ◊ndef["asset-forfeiture"]{
             This is related to civil asset forfeiture, which we'll look at in the ◊link[protection_against_government_confiscation]{next chapter}.
@@ -146,7 +144,7 @@ The worst part of this story is that it's not even that far-fetched, and all exa
     }
 }
 
-Perhaps the most unrealistic part of the story is how the potential employers knew about his status as a leech, and why he got marked in the first place. But a key problem with the cashless society, that's left implicit in the story, is the complete lack of financial privacy as everything you buy and do with your money is tracked.◊sn{no-privacy}
+Perhaps the most unrealistic part of the story is how the potential employers knew about his status as a leech, and why he got marked in the first place. But a key problem with the cashless society, that's left implicit in the story, is the complete lack of financial privacy as everything you buy and do with your money is tracked.◊mn{no-privacy}
 
 ◊ndef["no-privacy"]{
     When you think about it, we've already given up our financial privacy. All that's left is to wait for us to be abused, like in the story.
@@ -241,7 +239,7 @@ But you wouldn't be alone. ◊link[brits-struggle]{25 million Brits} would strug
 
 ◊subhead{A possible salvation}
 
-The lack of financial privacy and needing permission to use its money are the big problems with the cashless society. As we've seen in previous chapters, cryptocurrencies solve the permission problem very well, and some also give excellent privacy.◊sn{privacy?}
+The lack of financial privacy and needing permission to use its money are the big problems with the cashless society. As we've seen in previous chapters, cryptocurrencies solve the permission problem very well, and some also give excellent privacy.◊mn{privacy?}
 
 ◊ndef["privacy?"]{
     It might hubris to claim that cryptocurrencies makes privacy better, as Bitcoin is more traceable than any other form of money in history. But there are other cryptocurrencies with much better privacy features, see the ◊link[privacy-challenge]{discussion about the privacy challenge} in the appendix for more information.

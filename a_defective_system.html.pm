@@ -22,11 +22,11 @@ As we saw in the ◊link[the_blind_leading_the_blind]{previous chapter}, a big p
 
 ◊subhead{Economic effects of counterfeiting}
 
-Imagine a counterfeiter, who has the ability to print money from thin air.◊sn{magic-printer} What would he do with all the money? What would ◊em{you} do?
+Imagine a counterfeiter, who has the ability to print money from thin air.◊mn{magic-printer} What would he do with all the money? What would ◊em{you} do?
 
 Personally I would probably pay off my loans, renovate our house, go on vacation and buy a bunch of LEGO®. If I was smart I would also invest it; buy some stocks, some gold, maybe a house or two and rent them out. In short I would buy a bunch of stuff---and I think most would do the same.
 
-If I did print money---a ◊strong{lot} of money---and spent it like this, what would the effect on the economy be?◊sn{case-against-fed}
+If I did print money---a ◊strong{lot} of money---and spent it like this, what would the effect on the economy be?◊mn{case-against-fed}
 
 For starters if I just kept the money without spending it, nothing would change:
 
@@ -49,7 +49,9 @@ Who in turn will use it to buy other stuff, and in this way the counterfeited mo
 
         Because there's more money going around, with the same amount of goods, the prices will rise. For instance if all the money in the world would double overnight, then naturally all prices would double too. Yesterday's $100 bill would today only get you $50 worth of stuff today.
 
-        When prices rise and the same amount of money buys you less stuff, we call it ◊em{inflation}.◊sn{deflation} It's how my grandmother could buy candy for one cent (◊sans-tnum{0.01 SEK}) when she was a child, while today our smallest coin is ◊sans-tnum{1 SEK}.
+        When prices rise and the same amount of money buys you less stuff, we call it ◊em{inflation}.◊mn{deflation} It's how my grandmother could buy candy for one cent (◊sans-tnum{0.01 SEK}) when she was a child, while today our smallest coin is ◊sans-tnum{1 SEK}.
+
+    ◊note-pos[#:top -14]{deflation}
 
     }
     ◊li{Redistribution of wealth.
@@ -58,15 +60,13 @@ Who in turn will use it to buy other stuff, and in this way the counterfeited mo
     }
 }
 
-◊note-pos[#:top -14]{deflation}
-
 ◊ndef["deflation"]{
     The opposite is ◊em{deflation}, when money increases in value and buys you more stuff.
 
     While it may sound strange, technology has been deflating in price forever. When computers were just introduced they were ◊em{extremely} expensive, but now everyone and their mother literally has one in their pocket, and probably several at home. Some even have one on their wrist.
 }
 
-Counterfeiting means everyones savings---the "old" money---will lose value. This is why you shouldn't just store all your money as cash under the mattress or in a bank account---the value will be eaten up by inflation.◊sn{inflation-visualization}
+Counterfeiting means everyones savings---the "old" money---will lose value. This is why you shouldn't just store all your money as cash under the mattress or in a bank account---the value will be eaten up by inflation.◊mn{inflation-visualization}
 
 ◊ndef["inflation-visualization"]{
     ◊link[inflation-dollar-visualization]{Here's a cool visualization} of the expanding money supply and what $1 could buy.
@@ -99,7 +99,6 @@ Counterfeiting means everyones savings---the "old" money---will lose value. This
 
 Counterfeiting also means redistributing wealth from everyone to the counterfeiter (and to a lesser extent people the counterfeiter buys from) at the same rate as the inflation eats up the value of money. Even though nobody's stealing your money, the effect is the same: your wealth relative to others will decrease.
 
-◊note-pos[#:top -49]{inflation-visualization}
 ◊note-pos[#:top -21]{why-sweden?}
 
 
@@ -176,7 +175,7 @@ There is now ◊sans-tnum{11 000} money circulating the system. Because an IOU i
 
 We might wonder why stop at only printing ◊sans-tnum{10 000 SEK}? Why not ◊sans-tnum{100 000 SEK}? Or more? When the bank gives out IOUs they do need to repay them, otherwise they'll fail and become bankrupt. In the example above if Jane would withdraw ◊sans-tnum{2 000 SEK} the bank would fail, because it can only repay ◊sans-tnum{1 000 SEK}.
 
-The system works as long as people just keep their money at the bank, and only occasionally withdraw their money. But if people start withdrawing a lot of money at the same time a ◊link[bank-run]{bank run} may cause the bank to fail. To reduce this risk banks have requirements on their reserves.◊sn{reserve-assets}
+The system works as long as people just keep their money at the bank, and only occasionally withdraw their money. But if people start withdrawing a lot of money at the same time a ◊link[bank-run]{bank run} may cause the bank to fail. To reduce this risk banks have requirements on their reserves.◊mn{reserve-assets}
 
 ◊ndef["reserve-assets"]{
     My example is simplified and banks aren't always required to have the reserves in cash. They can have them in other assets, which they can convert to cash if needed. See for example the ◊link[capital-req-sweden]{Capital requirements for the Swedish banks, second quarter 2019}.
@@ -217,7 +216,7 @@ As money printers the central banks play an important roll---as the "lender of l
 
 This means the real check against fractional banking (the risk of going bankrupt) is thrown away and replaced with regulation that's supposed to keep the banks in check, while making the banks more robust against failure. While fine in theory, in practice it means banks are now incentivized to push the limits any way they can, to maximize their profits.
 
-I don't think there's a better example of the hazards the lender of last resort creates than ◊link[financial_crisis]{the 2008 financial crisis}. I feel the term ◊def[moral-hazard]{moral hazard}, to describe someone taking risks others will pay for, is too soft to describe the situation.◊sn{crisis-terms}
+I don't think there's a better example of the hazards the lender of last resort creates than ◊link[financial_crisis]{the 2008 financial crisis}. I feel the term ◊def[moral-hazard]{moral hazard}, to describe someone taking risks others will pay for, is too soft to describe the situation.◊mn{crisis-terms}
 
 ◊ndef["crisis-terms"]{
     Perhaps the words ◊em{deceit}, ◊em{scam}, ◊em{fraud} or ◊em{swindle} comes closer to describe my feelings.
@@ -227,7 +226,7 @@ I don't think there's a better example of the hazards the lender of last resort 
 
 If you've followed along this far, you might get the feeling that the economic system is completely corrupt and wonder why anyone would ever get along with it? But not so fast---there's a reason things are the way the are, and a big part can be traced the ◊link[great-depression]{Great Depression} in the 1930s.
 
-The Great Depression was a huge economic crisis, the worst in modern history, which dwarfed the 2008 financial crisis. Experts debate the causes of this decade long crisis to this day, with explanations ranging from governments spending too little, printing too little money, printing too much money or the gold standard.◊sn{depression-crisis}
+The Great Depression was a huge economic crisis, the worst in modern history, which dwarfed the 2008 financial crisis. Experts debate the causes of this decade long crisis to this day, with explanations ranging from governments spending too little, printing too little money, printing too much money or the gold standard.◊mn{depression-crisis}
 
 ◊ndef["depression-crisis"]{
     There's more to these theories than my attempt to simplify them suggests, and there's probably not a single cause. For instance the global gold standard probably helped the crisis to spread, even if it might not have caused the crisis. There are also more theories than I list here.
@@ -238,11 +237,14 @@ While it's difficult to point out causes, and it's even debatable why we got out
 ◊ol{
     ◊li{Abonding the gold standard
 
-        After briefly dropping the gold standard to pay for the World War I, all countries left the gold standard during the depression.◊sn{forbade-gold}
+        After briefly dropping the gold standard to pay for the World War I, all countries left the gold standard during the depression.◊mn{forbade-gold}
 
         ◊ndef["forbade-gold"]{
             Because the government ran out of gold, in 1933 private ownership of larger amounts of gold ◊link[gold-illegal]{was made illegal}. It was forbidden until 1974.
         }
+
+
+        ◊note-pos[#:top -16]{forbade-gold}
     }
     ◊li{Proactive governments
 
@@ -250,7 +252,9 @@ While it's difficult to point out causes, and it's even debatable why we got out
     }
     ◊li{Debt fueled investments
 
-        To pay for these investments the United States greatly ◊link[debt-us]{increased their debt} from $22 billion to $40 billion.◊sn{debt-ww2}
+        To pay for these investments the United States greatly ◊link[debt-us]{increased their debt} from $22 billion to $40 billion.◊mn{debt-ww2}
+
+        ◊note-pos{debt-ww2}
 
         ◊ndef["debt-ww2"]{
             Still, they were comparatively ◊link[new-deal-conservative]{conservative with increasing the debt}. To pay for World War II the debt ◊link[debt-us]{rose to $241 billion in 1946}.
@@ -258,8 +262,6 @@ While it's difficult to point out causes, and it's even debatable why we got out
     }
 }
 
-◊note-pos[#:top -16]{forbade-gold}
-◊note-pos{debt-ww2}
 
 ◊(define debt-us
    (x-ref
@@ -279,7 +281,7 @@ While it's difficult to point out causes, and it's even debatable why we got out
 
 These align with the ideas of ◊link[keynesian-economics]{Keynesian Economics} (also developed in the 1930s) where governments should stimulate the economy during recessions, and compensate by pulling back when the economy's expanding. The rationale is that the ◊def[velocity-money]{velocity of money} (how fast companies and people spend money) will slow down during a recession, making it worse. Therefore the government should increase their spending---increasing the velocity of money---to help dampen the recession.
 
-Seen through this lens, it all makes sense. To help the government spend money it doesn't have, being able to print money is a huge help. When the government goes deeper into debt, again it helps to be able to print money. And the interaction between central banks and banks is a fairly efficient way to setup a money-printing machine.◊sn{gold-standard-ww2}
+Seen through this lens, it all makes sense. To help the government spend money it doesn't have, being able to print money is a huge help. When the government goes deeper into debt, again it helps to be able to print money. And the interaction between central banks and banks is a fairly efficient way to setup a money-printing machine.◊mn{gold-standard-ww2}
 
     ◊ndef["gold-standard-ww2"]{
         After World War II the United States went back to the gold standard, a little half-heartedly. They only allowed foreign nations to redeem dollars for gold, which took an ◊link[nixon-shock]{abrupt end in 1971}.
@@ -464,25 +466,25 @@ We want to pull back on stimulation when the economy is booming, so we're prepar
         The larger the debt, the more expenses must be devoted to repaying the debt, leaving less for other more useful things.}
     ◊li{The central bank interest rates are already low
 
-        A low rate means banks, and in extension we, can get cheaper loans which stimulates the economy. It's difficult to lower it more when it's almost zero, or even negative, already.◊sn{negative-interest}
+        A low rate means banks, and in extension we, can get cheaper loans which stimulates the economy. It's difficult to lower it more when it's almost zero, or even negative, already.◊mn{negative-interest}
 
         ◊ndef["negative-interest"]{
             In Sweden we've had a ◊link[swe-neg-rate]{negative repo rate since 2015}. Denmark's Jyske Bank also ◊link[denmark-neg-rate]{give depositors a negative rate}, meaning you have to pay to store money. These are strange times.
         }
+        ◊note-pos[#:top -10]{negative-interest}
     }
     ◊li{We're continually printing money
 
-        The Federal Reserve is ◊link[fed-pouring]{pouring money into the financial system}. Printing an unlimited amount of money isn't great, not only because of the erosion of wealth, but rampant inflation can quickly destroy the economy.◊sn{hyperinflation-rome}
+        The Federal Reserve is ◊link[fed-pouring]{pouring money into the financial system}. Printing an unlimited amount of money isn't great, not only because of the erosion of wealth, but rampant inflation can quickly destroy the economy.◊mn{hyperinflation-rome}
 
 
         ◊ndef["hyperinflation-rome"]{
             An interesting case is how ◊link[hyperinflation-rome]{hyperinflation took hold in ancient Rome}. Centuries of debasing the currency was followed by a sudden loss of trust and the collapse into hyperinflation. A lesson here is that rapid inflation can quickly throw the economy into chaos.
         }
+        ◊note-pos{hyperinflation-rome}
     }
 }
 
-◊note-pos[#:top -10]{negative-interest}
-◊note-pos{hyperinflation-rome}
 
 To be fair, the Federal Reserve knows this isn't an ideal situation, so they tried to raise interest rates. Unfortunately the stock market reacted poorly---many people got angry---and now they've backtracked and lowered them again. When problems arise, they use the financial equivalent of ◊link[fed-sledgehammer]{taking a sledgehammer to squash a bug}.
 
@@ -492,7 +494,7 @@ To be fair, the Federal Reserve knows this isn't an ideal situation, so they tri
      "https://www.newyorkfed.org/markets/opolicy/operating_policy_190920"
      "Federal Reserve of New York: Statement Regarding Repurchase Operations, September 20, 2019"))
 
-So we're stuck in a situation where we don't have the tools to defend against a recession---tools the economic theory the system is built on needs. Tools that has been used up, because that's what the theory says we should do.◊sn{winging-it}
+So we're stuck in a situation where we don't have the tools to defend against a recession---tools the economic theory the system is built on needs. Tools that has been used up, because that's what the theory says we should do.◊mn{winging-it}
 
 ◊ndef["winging-it"]{
     It may sound like I'm referring to a single economic theory, which all governments and central banks follow. But that's not the case---there are many different theories, with slight differences, but I think it's a fair generalization to say that they mostly follow the push-pull ideas of stimulating the economy.
@@ -530,7 +532,7 @@ It seems to me if (or when) a recession comes we'll get caught with our pants do
 
 Since the financial crisis in 2008 we're in uncharted territory, and we actually don't know what we should do. Therefore new economic theories, like the ◊link[mmt]{Modern Money Theory} (MMT), are developed. MMT basically says the government can pay its bills by just printing all money it needs, checked only by inflation. It's reasonable to ask if MMT is a sound economic theory, or if it's just describing ◊link[mmt-true]{what's already happening}.
 
-While "printing more money" is a popular solution, ◊def[sound-money]{sound money} (with a stable money supply) might represent a compelling alternative for critics of the modern economic policies. For example fiat backed by gold, actual gold coins or cryptocurrencies.◊sn{debasement}
+While "printing more money" is a popular solution, ◊def[sound-money]{sound money} (with a stable money supply) might represent a compelling alternative for critics of the modern economic policies. For example fiat backed by gold, actual gold coins or cryptocurrencies.◊mn{debasement}
 
 ◊ndef["debasement"]{
     The state that creates gold coins can still inflate the money supply by decreasing the amount of gold in the coins. This is called ◊def[debasement]{debasement} and has been quite common historically.
@@ -539,8 +541,6 @@ While "printing more money" is a popular solution, ◊def[sound-money]{sound mon
 }
 
 It's not easy to see how a switch to sound money would occur, and maybe it would introduce more problems than it solved. But it would mean manipulation of the money supply would disappear and we wouldn't build a mountain of debt, only repayable by the printing machines, and we wouldn't devalue our savings while increasing the wealth inequality. And we wouldn't cling on to the broken and defective economic theories in use today.
-
-◊note-pos[#:top -15]{debasement}
 
 
 ◊(define debasement

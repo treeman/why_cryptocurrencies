@@ -8,7 +8,7 @@
 
 ◊(clear-sidenotes)
 
-Money is perhaps the most obvious usage of cryptocurrencies but there are other ways to use them. In this section I'll highlight some of the alternative usages and we'll see that we can build other functionality on top of existing cryptocurrencies.◊sn{blockchain-hype}
+Money is perhaps the most obvious usage of cryptocurrencies but there are other ways to use them. In this section I'll highlight some of the alternative usages and we'll see that we can build other functionality on top of existing cryptocurrencies.◊mn{blockchain-hype}
 
 ◊ndef["blockchain-hype"]{
     I generally try to avoid the word ◊def{blockchain} which sometimes refer to private blockchains or blockchains which use a consensus model with known and trusted actors. Facebook's Libra is such an example and ◊link[ibm-blockchain]{IBM's blockchain} is another.
@@ -35,7 +35,7 @@ The first thing we can observe is that it's possible to insert data into the led
 ◊ol{
     ◊li{Miners can add data to blocks.
 
-        For example Satoshi ◊link[block-0]{left a message} in the first ever Bitcoin block:◊sn{coinbase-data}
+        For example Satoshi ◊link[block-0]{left a message} in the first ever Bitcoin block:◊mn{coinbase-data}
 
         ◊ndef["coinbase-data"]{
             Satoshi embedded his message in the "Coinbase data" entry of the block. Other miners usually include the name of their mining pool. Such as in ◊link[coinbase-ex]{this block} the coinbase data says "Mined by AntPool48".
@@ -123,7 +123,7 @@ The first thing we can observe is that it's possible to insert data into the led
 
 ◊subhead{Scripts}
 
-Bitcoin does more than just transfer coins from one address to another. What it actually does is execute a ◊link[bitcoin-script]{small scripting language} which is responsible for unlocking funds and transferring them to new addresses. You can for example send funds from several addresses to many addresses or lock funds and ◊link[multisig]{require more than one key} to spend them.◊sn{bitcoin-script}
+Bitcoin does more than just transfer coins from one address to another. What it actually does is execute a ◊link[bitcoin-script]{small scripting language} which is responsible for unlocking funds and transferring them to new addresses. You can for example send funds from several addresses to many addresses or lock funds and ◊link[multisig]{require more than one key} to spend them.◊mn{bitcoin-script}
 
 ◊(define bitcoin-script
    (x-ref
@@ -141,7 +141,7 @@ Bitcoin does more than just transfer coins from one address to another. What it 
     OP_RETURN is another type of opcode which marks the output as invalid. It's commonly used to add data to transactions and is the preferred way to embed data because nodes concerned with storage can remove it and still be able to fully validate new transactions.
 }
 
-The scripting language in Bitcoin is fairly limited but the ◊link[solidity]{scripting language in Ethereum} is much more powerful and can do more things. You can for example create games where you ◊link[cryptokitties]{buy and sell cats} on Ethereum.◊sn{tradeoffs}
+The scripting language in Bitcoin is fairly limited but the ◊link[solidity]{scripting language in Ethereum} is much more powerful and can do more things. You can for example create games where you ◊link[cryptokitties]{buy and sell cats} on Ethereum.◊mn{tradeoffs}
 
 ◊ndef["tradeoffs"]{
     Ethereum's powerful scripting language comes with all sorts of trade-offs. It makes it much more difficult to scale---which is already difficult with Bitcoin.
@@ -150,9 +150,6 @@ The scripting language in Bitcoin is fairly limited but the ◊link[solidity]{sc
 }
 
 Now it doesn't matter if you know what a script is or how it works, just remember this: cryptocurrencies can do more than just transfer coins from one address to another. We'll go into some of the examples in the following chapters.
-
-◊note-pos[#:top -16]{bitcoin-script}
-◊note-pos{tradeoffs}
 
 ◊(define cryptokitties
    (x-ref

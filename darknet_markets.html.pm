@@ -18,7 +18,7 @@ There's one thing that cryptocurrency proponents and skeptics can agree with: cr
 
 Before cryptocurrencies, such sites would have trouble staying in business because payment processors would shut them down quickly. But nobody can block cryptocurrency transactions, and in 2012 the first darknet market "Silk Road" was created using Bitcoin. Since then there's been a ◊link[darknet-markets-history]{bunch of different darknet markets}, many with much larger volume than Silk Road.
 
-I know I wrote in ◊link[about-the-book]{an early chapter} that this book would describe legal use cases, but that's not really true. This book tries to describe ◊em{moral} use cases, which aren't always the same as legal ones. As we'll see in this chapter, darknet markets might not even be moral, so I hope you'll forgive me.◊sn{subjective}
+I know I wrote in ◊link[about-the-book]{an early chapter} that this book would describe legal use cases, but that's not really true. This book tries to describe ◊em{moral} use cases, which aren't always the same as legal ones. As we'll see in this chapter, darknet markets might not even be moral, so I hope you'll forgive me.◊mn{subjective}
 
 ◊ndef["subjective"]{
     As always where darknet markets fall on the universal scale of good and bad is subjective. But I hope to show that it's not a black-and-white issue.
@@ -38,7 +38,7 @@ There's a concept we need to have in mind while looking at darknet markets: some
 Here's a table to illustrate the problem:
 
 ◊(define sbr
-   `(span ((class "br"))))
+   `(br))
 
 ◊table-body[#:class "legal-moral"]{
     ◊tr{◊td{}           ◊ths{Legal}                                             ◊ths{Illegal}}
@@ -48,7 +48,7 @@ Here's a table to illustrate the problem:
 
 It's actually quite hard to classify things as legal or illegal and moral or immoral; they both change depending on country, the time period and who you ask. For instance most would agree that slavery is immoral and should be illegal, but it was in fact legal and viewed as normal for thousands of years. Similarly today in the western world we take free speech for granted, but that's not the case in all countries.
 
-Mass surveillance, which we covered in the chapter ◊link[private_money]{Private money}, is immoral yet legal.◊sn{surveillance} Civil asset forfeiture, which allows the police to outright take your stuff, is another example of an immoral legal practice. (We'll explore civil asset forfeiture ◊link[protection_against_government_confiscation]{in a future chapter}.)
+Mass surveillance, which we covered in the chapter ◊link[private_money]{Private money}, is immoral yet legal.◊mn{surveillance} Civil asset forfeiture, which allows the police to outright take your stuff, is another example of an immoral legal practice. (We'll explore civil asset forfeiture ◊link[protection_against_government_confiscation]{in a future chapter}.)
 
 ◊ndef["surveillance"]{
     You can argue that mass surveillance is in fact illegal, but in practice it doesn't really matter as they rewrite the laws anyway.
@@ -57,8 +57,6 @@ Mass surveillance, which we covered in the chapter ◊link[private_money]{Privat
 It's easy to find examples of silly laws that make moral actions illegal (just search for "silly laws" or similar), but I think there are more interesting issues. For example stealing is illegal, but is it immoral for a starving child to steal food to survive? Or for the child to steal food for his starving little sister? And where on the moral scale would you place prostitution?
 
 The issue of "right or wrong" isn't so easy to answer, and we cannot just rely on what's legal and what's not. Instead I think we should ask ourselves if it's moral or immoral (which is of course subjective).
-
-◊note-pos[#:top -23]{surveillance}
 
 ◊(define (ths txt)
    `(td ((class "ths")) ,txt))
@@ -80,7 +78,7 @@ The issue of "right or wrong" isn't so easy to answer, and we cannot just rely o
 
 ◊def[black-markets]{Black markets} refers to transactions outside government control. They're usually related to illegal behaviour in some way, like tax avoidance or the trade of illegal goods.
 
-Black markets have existed as long as taxes have been collected, and it's not just for hardcore criminals. How many people do you know who've paid a craftsman off the book? Maybe paid a friend to paint the house, or paid a mechanic friend to fix the car? If it was paid in cash, and never officially registered the work, then they've engaged in a black market trade.◊sn{geothermal}
+Black markets have existed as long as taxes have been collected, and it's not just for hardcore criminals. How many people do you know who've paid a craftsman off the book? Maybe paid a friend to paint the house, or paid a mechanic friend to fix the car? If it was paid in cash, and never officially registered the work, then they've engaged in a black market trade.◊mn{geothermal}
 
 ◊ndef["geothermal"]{
     Warming houses with ◊link[geothermal]{geothermal heating} is popular where we live. It works by drilling a large hole in the ground and transport heat from the ground up into the house, and is a cost-effective way to heat houses. Many people drill the holes off the books, which can save you a lot of money.
@@ -99,8 +97,6 @@ In countries with corruption or dysfunctional governments black markets are huge
 
 Black markets aren't inherently evil, sometimes they're even necessary for our survival. Instead they deal in both good and bad things, each of which should be considered on a case-by-case basis.
 
-◊note-pos[#:top -20]{geothermal}
-
 ◊(define black-markets
    (x-ref
      "2019-12-15"
@@ -117,7 +113,7 @@ Black markets aren't inherently evil, sometimes they're even necessary for our s
 
 Contrary to popular belief you cannot buy ◊em{everything} on a darknet market. In theory it's possible, but in practice darknet markets operate with their own morality.
 
-For instance ◊link[darknet-murders]{you cannot hire a hitman} on a darknet market. This is a myth made popular by the false accusations against ◊link[freeross]{Ross Ulbricht}, the creator of the first darknet market Silk Road. The rumor was manufactured by corrupt federal agents (who got sentenced), yet their "evidence" was used by prosecutors and news media to make an example out of Ross.◊sn{theme-example}
+For instance ◊link[darknet-murders]{you cannot hire a hitman} on a darknet market. This is a myth made popular by the false accusations against ◊link[freeross]{Ross Ulbricht}, the creator of the first darknet market Silk Road. The rumor was manufactured by corrupt federal agents (who got sentenced), yet their "evidence" was used by prosecutors and news media to make an example out of Ross.◊mn{theme-example}
 
 Darknet market operators generally block things that are harmful to others. Murder harms others, so it's banned. Child porn is also harmful, so it's banned. Even very dangerous drugs, such as fentanyl, ◊link[ban-fentanyl]{might be unavailable}. (But of course the ban isn't 100% effective, just as everywhere else in society.)
 
@@ -166,7 +162,7 @@ The following example, based on a real-life story I read a few years ago, illust
 
     Tom was desperate and was willing to try anything. He'd heard from a friend about "the darknet" where he might find Melinda's medicine for cheap, and while he was skeptical it couldn't hurt to try? After all he was running out of options to try.
 
-    He visited the darknet market his friend had suggested and searched for Melinda's medicine. To his surprise he found several sellers, who could deliver them right to his doorstep in just a few days. He decided to test it out and transferred some bitcoins to a seller. It was surprisingly easy, but he couldn't shake the feeling he had just been scammed.◊sn{opsec}
+    He visited the darknet market his friend had suggested and searched for Melinda's medicine. To his surprise he found several sellers, who could deliver them right to his doorstep in just a few days. He decided to test it out and transferred some bitcoins to a seller. It was surprisingly easy, but he couldn't shake the feeling he had just been scammed.◊mn{opsec}
 
     But three days later a small package arrived in the mailbox, neatly wrapped in an unassuming box. It was Melinda's medicine, in fact exactly the same brand with the same packaging they used to buy, only now one week of medicine had cost them $30 instead of $600.
 
@@ -187,7 +183,7 @@ The following example, based on a real-life story I read a few years ago, illust
      "https://edition.cnn.com/2018/05/11/health/most-expensive-prescription-drugs/index.html"
      "The 5 most expensive drugs in the United States (2018)"))
 
-While the story is made up, the situation is real. Medicine in the U.S. can be ◊link[expensive-cancer-drugs]{◊strong{extremely expensive}}, and the cost isn't something all families can bear.◊sn{insurance} The same medicine that will ruin you financially is often available for a fraction of the cost from darknet markets.
+While the story is made up, the situation is real. Medicine in the U.S. can be ◊link[expensive-cancer-drugs]{◊strong{extremely expensive}}, and the cost isn't something all families can bear.◊mn{insurance} The same medicine that will ruin you financially is often available for a fraction of the cost from darknet markets.
 
 ◊note-pos[#:top -6]{insurance}
 

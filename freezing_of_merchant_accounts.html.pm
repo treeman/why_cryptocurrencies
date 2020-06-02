@@ -34,7 +34,7 @@ Imagine coming in to work one day and having this conversion with your boss:
     ◊trow{What?}
     ◊trow{Don't worry, you'll still get your full salary, but we'll pay it in 6 months.}
     ◊trow{But why?}
-    ◊trow{You apparently didn't put one of the new coversheets on your TPS reports."◊sn{office-space}}
+    ◊trow{You apparently didn't put one of the new coversheets on your TPS reports."◊mn{office-space}}
     ◊trow{TPS reports...??}
 
     ◊note-pos[#:top -4]{office-space}
@@ -46,10 +46,10 @@ Imagine coming in to work one day and having this conversion with your boss:
 
 
 ◊ndef["office-space"]{
-    This is a reference to movie ◊link[office-space]{Office Space}, a black comedy about working in an office. There a worker gets reprimanded for an extremely minor and unimportant issue.
+    TPS reports is a reference to movie ◊link[office-space]{Office Space}, a black comedy about working in an office. There a worker gets reprimanded for an extremely minor and unimportant issue.
 }
 
-Don't worry if you don't know what a TPS report is, the point is you got your salary ◊strong{frozen for 6 months} for an ◊strong{arbitrary} and ◊strong{unknown} reason.◊sn{6-months}
+Don't worry if you don't know what a TPS report is, the point is you got your salary ◊strong{frozen for 6 months} for an ◊strong{arbitrary} and ◊strong{unknown} reason.◊mn{6-months}
 
 ◊ndef["6-months"]{
     You think 6 months is too long? PayPal freezes your account for 180 days by default. There are also several stories of PayPal ◊strong{never} releasing the funds.
@@ -82,7 +82,7 @@ Imagine what you would do now, without a salary and without your savings...
 
 ◊subhead{Confiscating future payments}
 
-Just to be a little gratuitous and to drive home my point on how bad this can be---it doesn't end there. When PayPal freezes your account, they don't block incoming payments. People can continue paying for stuff---but you're not getting their money---yet you still have to give them the stuff they've paid for.◊sn{digital}
+Just to be a little gratuitous and to drive home my point on how bad this can be---it doesn't end there. When PayPal freezes your account, they don't block incoming payments. People can continue paying for stuff---but you're not getting their money---yet you still have to give them the stuff they've paid for.◊mn{digital}
 
 ◊ndef["digital"]{
     It might be easy to deliver digital goods, but physical goods may be created on demand. In addition salaries, rent and other expenses needs to be paid. Cash flow is a very important issue for most companies.
@@ -98,7 +98,7 @@ Just to be a little gratuitous and to drive home my point on how bad this can be
     I withdraw everything from paypal every week. They limited my account just as sales started spiking, so this money has accumulated since they limited the account.
 }
 
-They didn't just freeze the account, they're making it worse by confiscating future payments as well!◊sn{lawsuits}
+They didn't just freeze the account, they're making it worse by confiscating future payments as well!◊mn{lawsuits}
 
 ◊ndef["lawsuits"]{
     Even if you get all your money back eventually, you still have to deal with ruined reputation, missed opportunities and costumers suing you for delayed deliveries.
@@ -110,7 +110,7 @@ They didn't just freeze the account, they're making it worse by confiscating fut
 
 ◊subhead{Small businesses & projects may be ruined}
 
-If you run a very popular business---like Minecraft---you'll probably get through without much issue. You're already making enough money to cover expenses and the attention in news and social media will make sure the issue gets resolved quickly.◊sn{attention}
+If you run a very popular business---like Minecraft---you'll probably get through without much issue. You're already making enough money to cover expenses and the attention in news and social media will make sure the issue gets resolved quickly.◊mn{attention}
 
 ◊ndef["attention"]{
     Creating an uproar on social media is still the best way to resolve issues with companies that have very poor customer service. For example if you have an issue with Google hopefully your post on ◊link[hackernews]{Hacker News} gathers enough attention to catch the eye of someone working there.

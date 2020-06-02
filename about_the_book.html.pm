@@ -69,7 +69,7 @@ Of course everything new brings positive and negative aspects with it. It's up t
 
 ◊subhead{What this book isn't}
 
-This isn't a deep dive on a technical level and we won't focus on a single implementation, Bitcoin is the first cryptocurrency but there are hundreds more.◊sn{cryptos}
+This isn't a deep dive on a technical level and we won't focus on a single implementation, Bitcoin is the first cryptocurrency but there are hundreds more.◊mn{cryptos}
 
 There are many problems with cryptocurrencies as they exist today, for instance:
 

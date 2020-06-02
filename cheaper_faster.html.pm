@@ -104,7 +104,7 @@ That's because you as a customer don't see the high fees---but the merchant does
 
 ◊subhead{Fee comparisons}
 
-It's difficult to compare the fees of different digital payments in a complete and fair manner. This is my attempt, but please be aware it's a generalization.◊sn{comparisons}
+It's difficult to compare the fees of different digital payments in a complete and fair manner. This is my attempt, but please be aware it's a generalization.◊mn{comparisons}
 
 ◊ndef["comparisons"]{
     Fees can differ depending on the amount of transactions, the transaction value, the type of your business, your country and your chosen fee model. Not to mention different providers have different fee structures.
@@ -114,10 +114,7 @@ It's difficult to compare the fees of different digital payments in a complete a
 
 There are different types of cards; debit and credit cards, and different providers like VISA, Mastercard or American Express. I'll treat them as one category for simplicity, even though they have slightly different fees. Wire transfer fees also vary a lot and international transfers outside of ◊link[sepa]{SEPA} can be very expensive depending on your bank and country.
 
-Mobile payments have become popular recently.◊sn{mobile-payments} As a representative I'll choose Swish, which is used everywhere here in Sweden. It's connected to your bank and have free person-to-person transactions, but unsurprisingly there are fees for businesses.
-
-◊note-pos[#:top -20]{comparisons}
-◊note-pos[#:top -8]{mobile-payments}
+Mobile payments have become popular recently.◊mn{mobile-payments} As a representative I'll choose Swish, which is used everywhere here in Sweden. It's connected to your bank and have free person-to-person transactions, but unsurprisingly there are fees for businesses.
 
 ◊ndef["mobile-payments"]{
     The popularity of mobile payments is easy to understand. They're convenient, cheap and fast. In fact they work exactly like cryptocurrency wallets do---just pay with a simple app on your phone.
@@ -138,7 +135,7 @@ Mobile payments have become popular recently.◊sn{mobile-payments} As a represe
 }
 
 
-I've also left out any monthly and yearly fee, common for regular payment systems. For example merchants might rent credit card terminals and Swish---with comparatively low transaction fees---also has a $10--50 yearly fee (the fee varies depending on your bank).◊sn{bank-fees}
+I've also left out any monthly and yearly fee, common for regular payment systems. For example merchants might rent credit card terminals and Swish---with comparatively low transaction fees---also has a $10--50 yearly fee (the fee varies depending on your bank).◊mn{bank-fees}
 
 ◊ndef["bank-fees"]{
     Bank accounts also come with a fee. I pay for example a $30 yearly fee just to have my bank account, which includes a debit card and ability to do banking online.
@@ -146,10 +143,7 @@ I've also left out any monthly and yearly fee, common for regular payment system
 
 As we can see cryptocurrencies are decidedly cheaper than the other options. Even Swish, which is much cheaper than PayPal or cards, is 100x more expensive than Bitcoin Cash. There are also no yearly fees of any kind just to receive payments in it (but there might be fees if you want to convert it to fiat).
 
-As the ◊link[what_is_money]{purpose of money} is to increase economic efficiency, a 1--4% tax on nearly all digital payments is really counter-productive.◊sn{insurance_} Therefore a move towards cheap payment solutions like Swish or cryptocurrencies would be beneficial economically.
-
-◊note-pos[#:top -17]{bank-fees}
-◊note-pos{insurance_}
+As the ◊link[what_is_money]{purpose of money} is to increase economic efficiency, a 1--4% tax on nearly all digital payments is really counter-productive.◊mn{insurance_} Therefore a move towards cheap payment solutions like Swish or cryptocurrencies would be beneficial economically.
 
 ◊ndef["insurance_"]{
     Yes, parts of the fees represents fraud protection. But that too comes ◊link[rel-charge-back-fraud]{with a cost}, and if viewed from a global economic perspective it might even be detrimental.
@@ -225,7 +219,7 @@ It goes something like this:
     ◊li{Get your money back}
 }
 
-This can be a big problem for some merchants, especially those ◊link[fraud-digital]{serving digital goods}, who often has to swallow it as a loss. To make matters worse merchants also have to pay non-negotiable and non-refundable ◊link[charge-back-fees]{charge back fees} even when disputing.◊sn{bank-chargeback}
+This can be a big problem for some merchants, especially those ◊link[fraud-digital]{serving digital goods}, who often has to swallow it as a loss. To make matters worse merchants also have to pay non-negotiable and non-refundable ◊link[charge-back-fees]{charge back fees} even when disputing.◊mn{bank-chargeback}
 
 ◊(define charge-back-fraud
   (x-ref
@@ -316,13 +310,18 @@ In addition it might make risk management more practical. While it's basically i
 
 ◊subhead{Conclusion}
 
-We've seen large benefits to cryptocurrency payments, and one large drawback:
+We've seen large benefits to cryptocurrency payments:
 
 ◊ul{
-    ◊li-plus{Cheaper}
-    ◊li-plus{Settles quickly}
-    ◊li-plus{Reduces or removes the risk for charge back fraud}
-    ◊li-neg{No inherent fraud protection for costumers}
+    ◊li{Cheaper}
+    ◊li{Settles quickly}
+    ◊li{Reduces or removes the risk for charge back fraud}
+}
+
+And one large drawback:
+
+◊ul{
+    ◊li{No inherent fraud protection for costumers}
 }
 
 The drawback might be alleviated with optional systems in the future, giving us the best of both worlds.

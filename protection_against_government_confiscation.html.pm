@@ -20,7 +20,7 @@ In this chapter we'll see how governments around the world sometimes directly or
 
 No, this chapter is ◊strong{not} about tax evasion---do your taxes people.
 
-It's about laws meant to fight crime end up hurting innocent people and how they limit people's freedom.◊sn[#:top -6]{legal-moral} It's also about how difficult it can be for you to keep your money safe and your wealth intact; and of course, as this is about cryptocurrencies, how they might help.
+It's about laws meant to fight crime end up hurting innocent people and how they limit people's freedom.◊mn{legal-moral} It's also about how difficult it can be for you to keep your money safe and your wealth intact; and of course, as this is about cryptocurrencies, how they might help.
 
 ◊ndef["legal-moral"]{
     Remember that legality doesn't imply morality, meaning just because it's legal doesn't make it right, which we explored in the chapter about ◊link[darknet_markets]{darknet markets}.
@@ -44,7 +44,9 @@ If it was the other way around, "guilty until proven innocent", then it would op
      "https://www.un.org/en/universal-declaration-human-rights/"
      "Universal Declaration of Human Rights"))
 
-However in the United States there's something called ◊def[civil-forfeiture]{civial asset forfeiture}. It's a legal tool which allows the police to seize your car, home, money or other assets without ever charging you with a crime. You read that right, they can seize your assets ◊strong{without charging you with a crime}.◊sn{cash-limits} There are ◊link[10-cases-forfeiture]{tons of stories} of ◊link[7-cases-forfeiture]{innocent people} having their ◊link[ef-cases]{money or property confiscated}, for example:
+However in the United States there's something called ◊def[civil-forfeiture]{civial asset forfeiture}. It's a legal tool which allows the police to seize your car, home, money or other assets without ever charging you with a crime. You read that right, they can seize your assets ◊strong{without charging you with a crime}.◊mn{cash-limits}
+
+There are ◊link[10-cases-forfeiture]{tons of stories} of ◊link[7-cases-forfeiture]{innocent people} having their ◊link[ef-cases]{money or property confiscated}, for example:
 
 ◊ndef["cash-limits"]{
     The limits placed on cash I referenced in the ◊link[prev-chapter]{previous chapter} are also examples of the presumption of innocence being turned on it's head. For example if you transfer €50,000 to an European bank it's up to you to prove where you got the money, not the bank or the government.
@@ -99,15 +101,16 @@ He's saying that the police can take whatever they want, and that they're motiva
 
 In practice civil asset forfeiture is state-sanctioned theft where the police are acting like ◊link[highway-robbers]{highway robbers}.
 
+◊note-pos{banks-laundering}
+◊note-pos{police-funding}
+
+
 ◊img[#:src "images/gangster_cop.png" #:alt "A threatening cop."]{
     "That's a nice car you have there, it would be a shame if anything happened to it."
 }
 
-So how can cryptocurrencies protect you against the forfeiture laws? While they naturally can't prevent the police from seizing your house or your car, they allow you to easily store and travel with as much money as you can---without anyone noticing. Even if they know you have them there's nothing they can physically steal---they would need ◊link[xkcd-pass]{your password}. (Of course they might be able to coerce you to unluck it for them.)◊sn{how-to-store}
+So how can cryptocurrencies protect you against the forfeiture laws? While they naturally can't prevent the police from seizing your house or your car, they allow you to easily store and travel with as much money as you can---without anyone noticing. Even if they know you have them there's nothing they can physically steal---they would need ◊link[xkcd-pass]{your password}. (Of course they might be able to coerce you to unluck it for them.)◊mn{how-to-store}
 
-◊note-pos[#:top -115]{cash-limits}
-◊note-pos[#:top -69]{banks-laundering}
-◊note-pos[#:top -40]{police-funding}
 ◊note-pos{how-to-store}
 
 ◊ndef["how-to-store"]{
@@ -241,7 +244,7 @@ Deposit boxes won't keep you safe from creditors, who may ◊link[creditors-open
 
 Alright, so if having physical goods isn't good enough how about storing money digitally in a bank account?
 
-Similar to how safe deposit boxes aren't safe during a financial crisis, neither is your bank account. For example during ◊link[cyprus-crisis]{financial crisis in Cyprus} in 2013 deposits over €100,000 had ◊link[cyprus-47.5%]{47.5%} of the value forcefully taken away. The banks closed overnight and withdrawals were blocked. When banks were reopened capital control limits were in place to prevent a ◊link[bank-run]{bank run}.◊sn{bank-IOU}
+Similar to how safe deposit boxes aren't safe during a financial crisis, neither is your bank account. For example during ◊link[cyprus-crisis]{financial crisis in Cyprus} in 2013 deposits over €100,000 had ◊link[cyprus-47.5%]{47.5%} of the value forcefully taken away. The banks closed overnight and withdrawals were blocked. When banks were reopened capital control limits were in place to prevent a ◊link[bank-run]{bank run}.◊mn{bank-IOU}
 
 ◊ndef["bank-IOU"]{
     I think this exemplifies our relationship with banks well. When we have our money at a bank, it's not really ours anymore. It's now the bank's money and we only have their promise to return our money when we ask for it. Which generally works well---until it doesn't.
@@ -321,7 +324,7 @@ Many turned to gold, jewelry and anything that could reasonably hold value to pr
 
 ◊subhead{Falling through the cracks when cash is renewed}
 
-I like cash. I like the feel of it and I like that I can store it at home and be reasonably sure that I can keep it. The government outright invalidating it, like in India, is exceptionally rare, and it's extremely unlikely that for example the Swedish government would do so without the ability to exchange the old cash into the new. For instance when Sweden ◊link[nyasedlar]{upgraded to new bills} the old ones were valid in stores for about a year, and you could exchange them at banks long after that too.◊sn{dislike-cash}
+I like cash. I like the feel of it and I like that I can store it at home and be reasonably sure that I can keep it. The government outright invalidating it, like in India, is exceptionally rare, and it's extremely unlikely that for example the Swedish government would do so without the ability to exchange the old cash into the new. For instance when Sweden ◊link[nyasedlar]{upgraded to new bills} the old ones were valid in stores for about a year, and you could exchange them at banks long after that too.◊mn{dislike-cash}
 
 ◊ndef["dislike-cash"]{
     Even though I like the idea of cash, I don't use it much. Simply because I'm ◊em{lazy}, and paying with cards is much easier.
@@ -329,10 +332,7 @@ I like cash. I like the feel of it and I like that I can store it at home and be
 
 But the system isn't perfect. If you miss your window and have to go to a bank with your old, and now technically invalid bills, you have to prove where the cash came from. This can be quite hard if you've been saving some money here and there for many years, and if you don't your money is now lost.
 
-Exactly this happened to a 91-year old Swedish woman ◊link[91-woman]{couldn't deposit her old bills} (worth around €10,000), because she couldn't prove where she got them. There isn't anything outright evil going on here (maybe a little unintended evil?), there are rules which have to be followed and cash do have to get replaced from time to time. It's just unfortunate that some people may fall through the cracks.◊sn{old-people}
-
-◊note-pos[#:top -21]{dislike-cash}
-◊note-pos{old-people}
+Exactly this happened to a 91-year old Swedish woman ◊link[91-woman]{couldn't deposit her old bills} (worth around €10,000), because she couldn't prove where she got them. There isn't anything outright evil going on here (maybe a little unintended evil?), there are rules which have to be followed and cash do have to get replaced from time to time. It's just unfortunate that some people may fall through the cracks.◊mn{old-people}
 
 ◊ndef["old-people"]{
     It's not surprising that it was an old woman who got in trouble. When you're over 90 years old you probably didn't even know about the new bills and that the old ones were becoming invalid. She probably wasn't up-to-date with the ever-more strict KYC laws either. When she was younger she didn't have to track every single income-source, just to not lose her money.
@@ -360,7 +360,7 @@ Exactly this happened to a 91-year old Swedish woman ◊link[91-woman]{couldn't 
 
 There is another way governments can take money from you: by inflating the money supply and using the excess money for themselves. We explored inflation in the chapter ◊link[a_defective_system]{A defective system}, and the extreme hyperinflation in the chapter ◊link[global_currency]{A global currency}, so I won't repeat myself too much here.
 
-Just remember that inflation is a more indirect---and perhaps sinister---way to take money from you as you probably won't notice it. After all they aren't taking something physically from you---you still have your cash in your mattress and numbers in your bank account are unchanged---but they now get you less stuff.◊sn{inflation-sad}
+Just remember that inflation is a more indirect---and perhaps sinister---way to take money from you as you probably won't notice it. After all they aren't taking something physically from you---you still have your cash in your mattress and numbers in your bank account are unchanged---but they now get you less stuff.◊mn{inflation-sad}
 
 ◊ndef["inflation-sad"]{
     Here's a sad story I heard about what inflation can do to your savings:

@@ -84,7 +84,7 @@ First let's look at some interesting historical examples of things that have bee
            #:date `("21" (sup "th") " century")
            #:img "images/bank_notes.png"
            #:alt "Euro bank notes."]{
-        There are many kinds of ◊em{fiat currencies},◊sn{fiat-commodity} for example the Euro. Modern coins are not made of valuable metal and paper notes are used for large denominations.
+        There are many kinds of ◊em{fiat currencies},◊mn{fiat-commodity} for example the Euro. Modern coins are not made of valuable metal and paper notes are used for large denominations.
 
         ◊note-pos[#:top -6 #:bottom -20]{fiat-commodity}
     }
@@ -98,7 +98,7 @@ First let's look at some interesting historical examples of things that have bee
            #:date "2017"
            #:img "images/marbles.png"
            #:alt "Two people playing with marbles."]{
-        Kids on the schoolyard often come up with interesting forms of money. For example collectible card games or game components. Like marbles used in a Swedish game where you win your opponents marbles. (And those with many marbles had higher status in class.)◊sn{pokemon}
+        Kids on the schoolyard often come up with interesting forms of money. For example collectible card games or game components. Like marbles used in a Swedish game where you win your opponents marbles. (And those with many marbles had higher status in class.)◊mn{pokemon}
 
         ◊note-pos[#:bottom -20]{pokemon}
     }
@@ -140,7 +140,7 @@ First let's look at some interesting historical examples of things that have bee
 
 ◊subhead{The gold standard}
 
-There's an important historical point to make about fiat. First used 1821 in the United Kingdom, the ◊link[gold-standard]{gold standard} made sure to back each currency unit with gold.◊sn{gold-standard} So if you had $1,000 in bank notes you could exchange them to $1,000 worth of gold. This was used in various ways up until 1971, when it was finally abandoned completely.
+There's an important historical point to make about fiat. First used 1821 in the United Kingdom, the ◊link[gold-standard]{gold standard} made sure to back each currency unit with gold.◊mn{gold-standard} So if you had $1,000 in bank notes you could exchange them to $1,000 worth of gold. This was used in various ways up until 1971, when it was finally abandoned completely.
 
 ◊ndef["gold-standard"]{
     Like a lot of things we'll touch, whether the gold standard is preferable or not is ◊link[gold-debate]{hotly debated}.
@@ -151,7 +151,7 @@ There's an important historical point to make about fiat. First used 1821 in the
 
 ◊subhead{Bartering, and why do we need money?}
 
-What would life look like if we didn't have money? We would have to turn to bartering---trading goods or services directly.◊sn{bartering}
+What would life look like if we didn't have money? We would have to turn to bartering---trading goods or services directly.◊mn{bartering}
 
 ◊img[#:src "images/pig_chair_exchange.png"
      #:alt "Trading a chair for a pig."]{
@@ -233,7 +233,7 @@ Instead a better explanation is given by the ◊def[subjective-theory-of-value]{
 
 In short it says ◊em{value is subjective}.
 
-It might sound too simplistic or like a tautology. But what it means is there's no global deciding function that gives value. Instead each person independently assigns value.◊sn{subjective-commodity}
+It might sound too simplistic or like a tautology. But what it means is there's no global deciding function that gives value. Instead each person independently assigns value.◊mn{subjective-commodity}
 
 ◊ndef["subjective-commodity"]{
     In the context of commodity money it means they can be more valuable than what they're made of. Which can happen if their value as a medium of exchange is more than the value of the raw materials.
@@ -256,7 +256,7 @@ States don't give money value---but they can contribute. For example declaring f
 
 ◊subhead{What functions does money serve?}
 
-If more or less anything can be used as money, it makes more sense to look at how money is used. ◊link[3-fun-money]{Knowledgeable people} seem to agree money has three major functions:◊sn{4-fun-money}
+If more or less anything can be used as money, it makes more sense to look at how money is used. ◊link[3-fun-money]{Knowledgeable people} seem to agree money has three major functions:◊mn{4-fun-money}
 
 ◊ndef["4-fun-money"]{
     ◊link[4-fun-money]{Some also use a fourth function}: ◊em{standard of deferred payment}. I chose to focus on the three functions, it seems to me it's the popular way.
@@ -284,7 +284,10 @@ If more or less anything can be used as money, it makes more sense to look at ho
 
         A standard unit to measure the market value of goods and services.
 
-        For instance car prices in across Sweden can be compared in SEK.◊sn{cars-south}
+        For instance car prices in across Sweden can be compared in SEK.◊mn{cars-south}
+
+
+        ◊note-pos{cars-south}
     }
     ◊li{◊strong{Store of value}
 
@@ -294,8 +297,7 @@ If more or less anything can be used as money, it makes more sense to look at ho
     }
 }
 
-◊note-pos[#:top -25]{4-fun-money}
-◊note-pos[#:top -9]{cars-south}
+◊;note-pos[#:top -25]{4-fun-money}
 
 ◊ndef["cars-south"]{
     Used cars are usually cheaper in the south of Sweden, for some reason unknown to me.
@@ -309,7 +311,7 @@ Medium of exchange is the ◊link[most-important]{most important} defining prope
     "https://mises.org/library/mises-basics-money"
     "Mises on the Basics of Money"))
 
-Note that these are functions of usage and adoption. For instance if something has been a store of value a period of time it doesn't mean it will continue to be a good store of value in the future.◊sn{gold-sov}
+Note that these are functions of usage and adoption. For instance if something has been a store of value a period of time it doesn't mean it will continue to be a good store of value in the future.◊mn{gold-sov}
 
 Now we may wonder, can anything be used as money? And are there "good" and "bad" forms of money?
 
@@ -450,7 +452,7 @@ How well ◊strong{cryptocurrencies} work as money is a topic for the ◊link[ne
 
 ◊subhead{The problem with fiat currencies}
 
-The money we usually use today is a little different from coins made of precious materials. We use coins made with cheap metal, paper notes and our money is often just stored digitally at a bank. After abandoning the gold standard there's nothing physically backing up the value of money.◊sn{intrinsic-value}
+The money we usually use today is a little different from coins made of precious materials. We use coins made with cheap metal, paper notes and our money is often just stored digitally at a bank. After abandoning the gold standard there's nothing physically backing up the value of money.◊mn{intrinsic-value}
 
 ◊ndef["intrinsic-value"]{
     Some say cryptocurrencies can't be money because it lacks intrinsic value---like gold has. But fiat currencies don't have intrinsic value either. The only value comes from the function as money.
@@ -458,7 +460,7 @@ The money we usually use today is a little different from coins made of precious
     See ◊link[intrinsic-value-fallacy]{The Fallacy of "Intrinsic Value"}.
 }
 
-It's not a requirement that the money must be backed by something, or have intrinsic value like commodity money, the real problem is that the supply isn't actually limited.  Banks inflate the supply using ◊def[fractional-banking]{fractional banking} while central banks can print money, both physical and digital, without any limit.◊sn{fractional-banking-good}
+It's not a requirement that the money must be backed by something, or have intrinsic value like commodity money, the real problem is that the supply isn't actually limited.  Banks inflate the supply using ◊def[fractional-banking]{fractional banking} while central banks can print money, both physical and digital, without any limit.◊mn{fractional-banking-good}
 
 ◊ndef["fractional-banking-good"]{
     The basic idea behind Fractional Banking is that the bank gives out more money than it really has. So for example if I deposit 1000 SEK into the bank, the bank can now also loan out 900 SEK to you (how much the bank is allowed to loan differs). It has increased the money supply with 900 SEK from "thin air".
@@ -468,7 +470,7 @@ It's not a requirement that the money must be backed by something, or have intri
 
 The term ◊def[sound-money]{sound money} refers to money that isn't prone to sudden changes in long term purchasing power, and the value is determined by the free market. If the supply of money differs from the demand, which will happen with fiat due to the disconnect between banks and the market, then there will be changes. While fiat has many positive properties, after the move away from the gold standard, it's now considered unsound money.
 
-◊note-pos[#:top -11.5]{fractional-banking-good}
+◊;note-pos[#:top -11.5]{fractional-banking-good}
 
 
 

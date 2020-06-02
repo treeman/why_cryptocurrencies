@@ -150,11 +150,9 @@ Censorship is a ◊link[censorship-global]{global problem} and is a big problem 
 
 ◊link[wikileaks]{WikiLeaks} is a relevant example for illustrating the importance of uncensorable payments as it shows the influence powerful actors have over payment processors, and in turn the funding for WikiLeaks. We will focus on the Chelsea Manning leaks and the aftermath, where WikiLeaks got their donation channels shut down for exposing government atrocities.
 
-I'll bring up the ◊link[assange-events]{events surrounding Julian Assange}, because they give context and might be relevant to the story of government abuse, but it's not about him or any other person in particular. Even if Julian Assange is guilty of rape it does not change the importance of the leaks or WikiLeaks as a concept, which goes above individuals.◊sn{association-fallacy}
+I'll bring up the ◊link[assange-events]{events surrounding Julian Assange}, because they give context and might be relevant to the story of government abuse, but it's not about him or any other person in particular. Even if Julian Assange is guilty of rape it does not change the importance of the leaks or WikiLeaks as a concept, which goes above individuals.◊mn{association-fallacy}
 
 This is ◊strong{not} a glorification of WikiLeaks---they have ◊link[wikileaks-immoral]{endangered individuals} via their leaks. Instead I hope to show that uncensorable donations are important, because exposing government atrocities can lead to your donations being blocked (and government atrocities should be exposed).
-
-◊note-pos[#:top -10]{association-fallacy}
 
 ◊ndef["association-fallacy"]{
     Trying to discredit WikiLeaks by discrediting Assange is ◊def[association-fallacy]{guilt by association}---a logical fallacy.
@@ -195,7 +193,7 @@ This is ◊strong{not} a glorification of WikiLeaks---they have ◊link[wikileak
 
     ◊div[#:class "caution"]{First I must caution you: it's very easy to become numb when you read about these leaks. The sheer amount of horror is enough to overwhelm you and might cause your brain to suppress your emotions, maybe out of self-defense. But try to remember that this happened to real people---it's not just a mass of text and numbers. Please don't relegate this as just another forgettable statistic.}
 
-    Chelsea Manning (formerly Bradley Manning) is a former soldier of the United States who provided WikiLeaks with nearly 750,000 military and diplomatic documents. They were released in batches and spread out over a period of time. Some of the content was absolutely shocking and caused global outrage, I've tried to pick out some notable leaks◊sn{more-leaks}:
+    Chelsea Manning (formerly Bradley Manning) is a former soldier of the United States who provided WikiLeaks with nearly 750,000 military and diplomatic documents. They were released in batches and spread out over a period of time. Some of the content was absolutely shocking and caused global outrage, I've tried to pick out some notable leaks◊mn{more-leaks}:
 
     ◊ndef["more-leaks"]{
         It's hard to do justice as there are ◊strong{many} more leaks, I find it overwhelming. See for example:
@@ -271,7 +269,7 @@ This is ◊strong{not} a glorification of WikiLeaks---they have ◊link[wikileak
       ◊leak["Execution of children"
             #:url execution-of-children]{
 
-        In 2006, a group of U.S. soldiers entered a house in Iraq where they executed at least 10 people (9 civilians), including an infant and four other children---all five years or younger---and elderly women. They then called in an airstrike to cover up the evidence, but postmortems showed they had been handcuffed and shot in the head.◊sn{children-bodies}
+        In 2006, a group of U.S. soldiers entered a house in Iraq where they executed at least 10 people (9 civilians), including an infant and four other children---all five years or younger---and elderly women. They then called in an airstrike to cover up the evidence, but postmortems showed they had been handcuffed and shot in the head.◊mn{children-bodies}
 
         We're quick to call them terrorists, but viewed from another angle the U.S. soldiers are the terrorists. Just imagine foreign soldiers entering your neighbour's house and executing everyone there, including the children...
 
@@ -281,7 +279,7 @@ This is ◊strong{not} a glorification of WikiLeaks---they have ◊link[wikileak
             One man's terrorist is another man's freedom fighter
         }
 
-        ◊note-pos[#:top -18]{children-bodies}
+        ◊;note-pos[#:top -18]{children-bodies}
 
         ◊ndef["children-bodies"]{
             Even the infant was shot in the head.
@@ -297,7 +295,7 @@ This is ◊strong{not} a glorification of WikiLeaks---they have ◊link[wikileak
       ◊leak["Civilian deaths in Iraq"
             #:url civilian-deaths-iraq]{
 
-        While U.S. officials had previously said no logs existed of civilian deaths in Iraq, leaked cables told another story. 66,081 civilian deaths had been logged out of a total of 109,000 deaths between 2004 and 2009, that's 60.6% of all dead being innocent people---a horrifyingly bad ratio.◊sn{wtc}
+        While U.S. officials had previously said no logs existed of civilian deaths in Iraq, leaked cables told another story. 66,081 civilian deaths had been logged out of a total of 109,000 deaths between 2004 and 2009, that's 60.6% of all dead being innocent people---a horrifyingly bad ratio.◊mn{wtc}
 
         Leaked cables also indicated that U.S. authorities had failed to investigate hundreds of reports of torture, rape, abuse and murder by Iraqi security officials.
       }
@@ -306,11 +304,9 @@ This is ◊strong{not} a glorification of WikiLeaks---they have ◊link[wikileak
           66 thousand innocent people dead in six years. That's like 22 World Trade center attacks (where 2,977 people died)---more than three a year. Or 31 innocent people dead every day during the six years.
       }
 
-      ◊note-pos[#:top -7]{wtc}
-
     }
 
-    Countless of civilians killed---while soldiers are laughing---and systematic cover-ups to hide it all.◊sn{purpose}
+    Countless of civilians killed---while soldiers are laughing---and systematic cover-ups to hide it all.◊mn{purpose}
 
     ◊ndef["purpose"]{
         You just can't help but wonder---for what purpose? Imaginary nuclear weapons, bringing "democracy and peace" to Iraq, securing oil supply, helping U.S. allies or simply needing a purpose for their massive war machine?
@@ -340,22 +336,20 @@ This is ◊strong{not} a glorification of WikiLeaks---they have ◊link[wikileak
   ◊entry["Sexual assault allegations against Julian Assange"
           #:date "Aug 2010"]{
 
-    Shortly after the massive leaks Julian Assange was ◊link[assange-rape]{accused of sexual assault} in Sweden. The timing might be a coincidence◊sn{truth-fiction} or if you're a conspiracy theorist you might say they're manufactured by the U.S. government, in a way to reach Julian Assange.
+    Shortly after the massive leaks Julian Assange was ◊link[assange-rape]{accused of sexual assault} in Sweden. The timing might be a coincidence◊mn{truth-fiction} or if you're a conspiracy theorist you might say they're manufactured by the U.S. government, in a way to reach Julian Assange.
 
     ◊ndef["truth-fiction"]{
         Like the saying goes: "truth is stranger than fiction".
     }
 
     In November, when Assange had already traveled to London (the charges were dropped to be picked up again after he left Sweden), an ◊link[assange-international-arrest]{international arrest} warrant is issued by the Swedish police via Interpol.
-
-    ◊note-pos[#:top -10]{truth-fiction}
   }
 
 
   ◊entry["PayPal freezes WikiLeaks donations"
          #:date "Dec 4, 2010"]{
 
-    Later ◊link[paypal-freezes-wikileaks]{PayPal freezes WikiLeaks donations} with the reason:◊sn{paypal}
+    Later ◊link[paypal-freezes-wikileaks]{PayPal freezes WikiLeaks donations} with the reason:◊mn{paypal}
 
     ◊ndef["paypal"]{
         As far as reasons for shutting down services, PayPal ◊link[freezing_of_merchant_accounts]{doesn't have a good record}. This excuse is at least believable on the surface.
@@ -377,7 +371,7 @@ This is ◊strong{not} a glorification of WikiLeaks---they have ◊link[wikileak
          #:date "Dec 7, 2010"]{
     This further developed into a ◊link[banking-blockade]{Banking Blockade} that the Bank of America, VISA, MasterCard and Western Union also joined. WikiLeaks claim this destroyed 95% of their revenue and they had to resort to cash reserves.
 
-    The blockade was later ◊link[illegal-blockade]{found to be illegal} and today WikiLeaks again accept donations via PayPal and credit cards, but they suffered large damage at the crucial time when the world was in uproar over the leaks.◊sn{shutdown-successful}
+    The blockade was later ◊link[illegal-blockade]{found to be illegal} and today WikiLeaks again accept donations via PayPal and credit cards, but they suffered large damage at the crucial time when the world was in uproar over the leaks.◊mn{shutdown-successful}
 
     ◊ndef["shutdown-successful"]{
         If the goal was to divert attention and to put breaks on WikiLeaks until the whole thing blew over, you might say it was a success.
@@ -436,7 +430,7 @@ This is ◊strong{not} a glorification of WikiLeaks---they have ◊link[wikileak
 
 ◊;https://shadowproof.com/2012/05/30/uk-supreme-court-rejects-julian-assanges-extradition-appeal/
 
-    A couple of weeks after the Supreme Court's final ruling in U.K. that Assange ◊link[assange-loses-extradition-appeal]{should be extradited} to Sweden he walked into the Ecuadorean embassy in London and applied for political asylum. The stated reason was fears that Sweden would send him to the U.S. where he would risk the death penalty under espionage charges.◊sn{sweden-extradition}
+    A couple of weeks after the Supreme Court's final ruling in U.K. that Assange ◊link[assange-loses-extradition-appeal]{should be extradited} to Sweden he walked into the Ecuadorean embassy in London and applied for political asylum. The stated reason was fears that Sweden would send him to the U.S. where he would risk the death penalty under espionage charges.◊mn{sweden-extradition}
 
     Assange was ◊link[assange-asylum-granted]{granted asylum} August 16◊sup{th} and his stay at the embassy would be longer than anyone would have thought.
 
@@ -451,7 +445,7 @@ This is ◊strong{not} a glorification of WikiLeaks---they have ◊link[wikileak
   ◊entry["Chelsea Manning's sentence is commuted"
          #:date "Jan 17, 2017"]{
 
-    President Barack Obama ◊link[manning-commutes]{commutes Chelsea Manning's prison sentence}. Important to note it only reduces her sentence, it doesn't change the fact that she was convicted.◊sn{pardon} She spent almost 7 years of her original 35 year sentence in prison.
+    President Barack Obama ◊link[manning-commutes]{commutes Chelsea Manning's prison sentence}. Important to note it only reduces her sentence, it doesn't change the fact that she was convicted.◊mn{pardon} She spent almost 7 years of her original 35 year sentence in prison.
 
     ◊ndef["pardon"]{
         In contrast a ◊em{pardon} would completely absolve her of any wrongdoing.
@@ -502,7 +496,7 @@ This is ◊strong{not} a glorification of WikiLeaks---they have ◊link[wikileak
 
 ◊(define (entry title #:date [date #f] . text)
    (define xdate (if date
-                     `(div ((class "date")) ,date)
+                     `(span ((class "date")) ,date)
                      ""))
    `(div ((class "entry"))
       (div ((class "header"))
@@ -700,7 +694,9 @@ But of course covering up or rationalizing events isn't a U.S. only phenomena. H
   ◊li{◊link[rel-tiananmen]{As previously mentioned} the Chinese cover up of the Tiananmen Square Massacre.}
   ◊li{How Genghis Khan is looked up to.
 
-    Maybe you've heard that 1 of 200 people of all people alive today are related to Genghis Khan? That's because he raped young girls wherever he went.◊sn{dan-hitler}
+    Maybe you've heard that 1 of 200 people of all people alive today are related to Genghis Khan? That's because he raped young girls wherever he went.◊mn{dan-hitler}
+
+    ◊note-pos[#:top -31]{dan-hitler}
   }
   ◊li{In Scandinavian countries we talk about Vikings with pride.
 
@@ -710,7 +706,10 @@ But of course covering up or rationalizing events isn't a U.S. only phenomena. H
 
     It was even forbidden to talk about them negatively.
   }
-  ◊li{How Soviet tried to cover up the ◊link[chernobyl-accident]{Chernobyl nuclear disaster}.◊sn{chernobyl-TV}}
+  ◊li{How Soviet tried to cover up the ◊link[chernobyl-accident]{Chernobyl nuclear disaster}.◊mn{chernobyl-TV}
+
+    ◊note-pos[#:top -15]{chernobyl-TV}
+  }
 }
 
 ◊ndef["dan-hitler"]{
@@ -730,9 +729,6 @@ Unfortunately it seems like a human thing to try to hide your misdeeds instead o
 ◊qt[#:author "A fidgeting child"]{
     No mom, it wasn't me!
 }
-
-◊note-pos[#:top -31]{dan-hitler}
-◊note-pos[#:top -15]{chernobyl-TV}
 
 ◊(define rel-tiananmen
   `("#censorship-is-real" "Censorship is real"))
@@ -781,7 +777,7 @@ Unfortunately it seems like a human thing to try to hide your misdeeds instead o
 
 I know what some of you might say and what we others might feel: you don't want to know about these horrible things. It's true that you'll feel better if you're unaware and you'll probably personally be better off if you act like these never happened.
 
-But if we practice collective 'forgettance', where we all pretend these never happened, they will continue to happen. This is why what Chelsea Manning and WikiLeaks revealed about the Iraq war is so important: we're forced to confront the truth.◊sn{prevent-future}
+But if we practice collective 'forgettance', where we all pretend these never happened, they will continue to happen. This is why what Chelsea Manning and WikiLeaks revealed about the Iraq war is so important: we're forced to confront the truth.◊mn{prevent-future}
 
 ◊ndef["prevent-future"]{
     I'm not so naive to say the leaks will prevent future atrocities---they won't. But knowledge of what actually happens is a necessary first step for change to be possible at all.

@@ -24,7 +24,7 @@
 
 In previous sections we've looked at how cryptocurrencies provide ◊link[better_digital_payments]{better digital payments} and why they might be ◊link[better_currency]{better currencies}. This section focuses on some ways the world is changing, and what part cryptocurrencies play.
 
-Even if we'd collectively agree that the world would be better off without cryptocurrencies, we cannot make them disappear. We cannot "uninvent" them and they're extremely difficult to shut down. Therefore, like with nuclear bombs, we're stuck with them and have to adapt to a new world.◊sn{destroyer-of-worlds}
+Even if we'd collectively agree that the world would be better off without cryptocurrencies, we cannot make them disappear. We cannot "uninvent" them and they're extremely difficult to shut down. Therefore, like with nuclear bombs, we're stuck with them and have to adapt to a new world.◊mn{destroyer-of-worlds}
 
 ◊ndef["destroyer-of-worlds"]{
     There's an excellent ◊link[hh-destroyer]{Hardcore History episode} on the topic of nuclear weapons and how humanity has been balancing on the edge of destruction ever since their invention.
@@ -34,7 +34,7 @@ Cryptocurrencies won't make the world a better place in all respects. For exampl
 
 Other things skirt the lines between legality and morality, such as the darknet markets which make it easy to trade any type of goods. Or how cryptocurrencies allow you to store any amount of money, hidden from the watchful eyes of the tax collectors.
 
-While cryptocurrencies in some ways force the world to change, they can also protect us from the changing world. For instance the move towards a cashless society will spell disaster for everyone without access to digital money. But cryptocurrencies are for everyone, and they can shield us from tracking and seizures by the government.◊sn{friend-or-foe?}
+While cryptocurrencies in some ways force the world to change, they can also protect us from the changing world. For instance the move towards a cashless society will spell disaster for everyone without access to digital money. But cryptocurrencies are for everyone, and they can shield us from tracking and seizures by the government.◊mn{friend-or-foe?}
 
 ◊ndef["friend-or-foe?"]{
     Governments can be our friend, but they can also be our foe as well.

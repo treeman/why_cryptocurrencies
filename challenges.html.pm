@@ -22,7 +22,7 @@ This is called the ◊def[network-effect]{network effect}, and Wikipedia has a s
 When a network effect is present, the value of a product or service increases according to the number of others using it.
 }
 
-You can have the best website in the world---beautiful, lightning fast and with all the features you could ever need---but if nobody's using it it's a worthless social network. Conversely you can have a shitty website, but it doesn't matter as long as many people use it. A beautiful example of such a site is Twitter, which has an absolutely atrocious user interface, but it's hugely valuable because so many people are invested in the platform.◊sn{twitter-bad}
+You can have the best website in the world---beautiful, lightning fast and with all the features you could ever need---but if nobody's using it it's a worthless social network. Conversely you can have a shitty website, but it doesn't matter as long as many people use it. A beautiful example of such a site is Twitter, which has an absolutely atrocious user interface, but it's hugely valuable because so many people are invested in the platform.◊mn{twitter-bad}
 
 ◊ndef["twitter-bad"]{
     I find Twitter's user experience so bad I can't stand to read, yet alone use it.
@@ -53,11 +53,7 @@ and
 
 This is a tough cycle to break, which explains why cryptocurrencies---despite their many strengths---aren't used more than they are.
 
-For these reasons I think the lack of adoption is the biggest problem cryptocurrencies face---both in difficulty and in importance---and it's much larger than the other issues we'll see later in this chapter.◊sn{too-soon}
-
-
-◊note-pos[#:top -48]{twitter-bad}
-◊note-pos[#:top -2]{too-soon}
+For these reasons I think the lack of adoption is the biggest problem cryptocurrencies face---both in difficulty and in importance---and it's much larger than the other issues we'll see later in this chapter.◊mn{too-soon}
 
 
 ◊(define network-effect
@@ -69,7 +65,7 @@ For these reasons I think the lack of adoption is the biggest problem cryptocurr
 
 ◊subhead{Privacy and fungibility}
 
-Bitcoin, like most cryptocurrencies, uses a public ledger where all transactions and addresses are public. We might say that Bitcoin is ◊em{pseudo-anonymous}: while you can see all transactions and addresses you don't know who owns an address. But if you know someone's address, for example if they sent money to you, you can then trace all past and future transactions moving through that address.◊sn{rich-list}
+Bitcoin, like most cryptocurrencies, uses a public ledger where all transactions and addresses are public. We might say that Bitcoin is ◊em{pseudo-anonymous}: while you can see all transactions and addresses you don't know who owns an address. But if you know someone's address, for example if they sent money to you, you can then trace all past and future transactions moving through that address.◊mn{rich-list}
 
 ◊ndef["rich-list"]{
     For example, it's possible to build a ◊link[rich-list]{list of the Bitcoin addresses with the most coins} and to monitor them to see when they send or receive coins.
@@ -92,7 +88,7 @@ Bitcoin, like most cryptocurrencies, uses a public ledger where all transactions
     It's possible to trace coins further back in history. Here we see that John's coins come from a hacked exchange, whose address is known. It might mean John is the hacker or, more probably, that John has received ◊em{tainted} coins (coins associated with illegal behavior).
 }
 
-You can explore the Bitcoin blockchain, and see all transactions and addresses, on a ◊link[blockchair]{blockchain explorer}.◊sn{surveillance-coin}
+You can explore the Bitcoin blockchain, and see all transactions and addresses, on a ◊link[blockchair]{blockchain explorer}.◊mn{surveillance-coin}
 
 ◊ndef["surveillance-coin"]{
     Some who were tired of the moniker "privacy coins", given to coins that protect your privacy, have started referring to cryptocurrencies with a transparent blockchain as "surveillance coins".
@@ -114,7 +110,7 @@ They're not perfect because you can still have a transaction graph, and you migh
 
 Both mixing and the shielded transactions in ZCash has a major problem: people need to actively choose to use them. This is annoying for users but it's also ◊link[zcash-problem]{bad for privacy} (you can always try to match inputs and outputs even with a perfect black box mixer). It also raises suspicion and people might ask why you're trying to hide your coins.
 
-With this privacy scheme governments can still ◊link[blacklisting]{blacklist certain addresses}, which might in the long run break ◊def{fungibility} as coins associated with those addresses become worth less than others.◊sn{fungibility}
+With this privacy scheme governments can still ◊link[blacklisting]{blacklist certain addresses}, which might in the long run break ◊def{fungibility} as coins associated with those addresses become worth less than others.◊mn{fungibility}
 
 ◊ndef["fungibility"]{
     As noted in the chapter ◊link[what_is_money]{What is money?} fungibility is a core property of money. This is why it's wrong to label cryptocurrencies trying to address this problem as "privacy coins"---the issue goes beyond privacy.
@@ -133,10 +129,6 @@ With this privacy scheme governments can still ◊link[blacklisting]{blacklist c
 You can still verify the proof-of-work and even the coin supply on Monero, although verifying the coin supply isn't as simple as on a transparent blockchain. For more technical details on Monero I recommend ◊(book-link mastering-monero-book) written by SerHack.
 
 There are other ideas of how to improve privacy and fungibility for cryptocurrencies, and cryptocurrencies of the future might work differently to what I've described here. There are weaknesses to the solutions we've seen so far and they also come with disadvantages. For example transactions in Monero are larger than transactions in Bitcoin, making Monero even more difficult to scale. But research is ongoing and I'm hopeful.
-
-◊note-pos[#:top -157]{rich-list}
-◊note-pos[#:top -116]{surveillance-coin}
-◊note-pos[#:top -56]{fungibility}
 
 
 ◊;Cryptocurrencies can be used anonymously---your identity isn't tied to your addresses. But as with all tools, cryptocurrencies won't ◊em{guarantee} your anonymity. For example if you try to buy a VPN anonymously with Bitcoin, your identity might still be revealed if the coins can be traced back to an exchange that have your name. Or they might trace your IP you purchased it with, or track browser cookies or you might just make a silly mistake like associate your name with the email you sign up with.
@@ -174,7 +166,7 @@ Perhaps the most famous technical issue cryptocurrencies face is how to scale th
 
 Bitcoin can for example only process 3--7 transactions per second (tx/s) at max capacity, while ◊link[paypal-transactions]{PayPal processes on average ◊nbsp{400 tx/s}} and ◊link[visa-transactions]{VISA an average of ◊nbsp{1 700 tx/s}}, with VISA's peak capacity being over ◊nbsp{24 000 tx/s}. If cryptocurrencies should live up to their potential then there's lots of work to do here.
 
-But it's not quite as bad as the numbers seem to suggest. Bitcoin operates far from the technical limits because they didn't raise the blocksize limit, which controls how many transactions can fit in a block and essentially sets an artificial limit on transaction throughput. ◊link[bch]{Bitcoin Cash}, a fork of Bitcoin, has raised this limit and has more than 20 times the throughput of Bitcoin (around ◊nbsp{100 tx/s}). So cryptocurrencies can at least be in the same playing field as PayPal.◊sn{blocksize}
+But it's not quite as bad as the numbers seem to suggest. Bitcoin operates far from the technical limits because they didn't raise the blocksize limit, which controls how many transactions can fit in a block and essentially sets an artificial limit on transaction throughput. ◊link[bch]{Bitcoin Cash}, a fork of Bitcoin, has raised this limit and has more than 20 times the throughput of Bitcoin (around ◊nbsp{100 tx/s}). So cryptocurrencies can at least be in the same playing field as PayPal.◊mn{blocksize}
 
 ◊ndef["blocksize"]{
     See ◊link[history-blocksize]{this timeline} for the history of the blocksize debate (it only goes up to Dec 2017, but as of May 2019 no significant development has happened). Because Bitcoin didn't raise the blocksize Bitcoin Cash was created in 2017, keeping fees low and transaction capacity high.
@@ -193,7 +185,7 @@ There are a number of technical pain points that needs to be improved to scale a
     }
     ◊li{Blockchain size
 
-        Because full nodes must store transactions ◊em{forever}, it's important that the blockchain size (containing all transactions) doesn't outgrow the storage capacity of nodes.◊sn{btc-size}
+        Because full nodes must store transactions ◊em{forever}, it's important that the blockchain size (containing all transactions) doesn't outgrow the storage capacity of nodes.◊mn{btc-size}
 
         ◊note-pos{btc-size}
     }
@@ -207,7 +199,7 @@ There are a number of technical pain points that needs to be improved to scale a
     }
     ◊li{Validation speed
 
-        Whenever a node sees blocks and transactions they must also validate them.◊sn{validation-less-mining}
+        Whenever a node sees blocks and transactions they must also validate them.◊mn{validation-less-mining}
 
         ◊note-pos{validation-less-mining}
     }
@@ -227,13 +219,13 @@ There are a number of technical pain points that needs to be improved to scale a
     Miners can delay transaction validation and only validate the POW of a block and start mining it directly. This is a fair assumption as it's very expensive to produce a valid POW for a block.
 }
 
-When we increase transaction throughput we also increase the burden of full nodes (those who validate and store the blockchain) and it might mean that fewer people can run nodes, harming the node decentralization of the network. It's not a problem as long as enough people can and want to run a node; and exchanges, researchers, developers, payment processors, mining pools and enthusiasts will want to as long as it's not extremely expensive.◊sn{light-wallets}
+When we increase transaction throughput we also increase the burden of full nodes (those who validate and store the blockchain) and it might mean that fewer people can run nodes, harming the node decentralization of the network. It's not a problem as long as enough people can and want to run a node; and exchanges, researchers, developers, payment processors, mining pools and enthusiasts will want to as long as it's not extremely expensive.◊mn{light-wallets}
 
 ◊ndef["light-wallets"]{
     Most people won't run a full node anyway as they will use light wallets or SPV wallets on the mobile phone, which will ask other full nodes for the data they need.
 }
 
-Besides optimizing the standard basic structure defined by Bitcoin, there are other scaling proposals out there. Some say we should offload transactions to "layer two" networks, which will only occasionally settle back to a cryptocurrency thereby increasing transaction throughput.◊sn{layer2}
+Besides optimizing the standard basic structure defined by Bitcoin, there are other scaling proposals out there. Some say we should offload transactions to "layer two" networks, which will only occasionally settle back to a cryptocurrency thereby increasing transaction throughput.◊mn{layer2}
 
 ◊ndef["layer2"]{
     While I'm not against layer two solutions, I'm deeply skeptical of them being a solution to the scaling problem. Simply because if you transact on another network, you're not actually using a cryptocurrency, but you're using something else with different properties.
@@ -242,9 +234,6 @@ Besides optimizing the standard basic structure defined by Bitcoin, there are ot
 Others suggest we should use a completely different system, maybe giving up ◊def{proof-of-work} for ◊def{delegated proof-of-stake} or base it on the ◊link[avalanche]{Avalanche protocol}.
 
 It may ultimately be impossible to scale a cryptocurrency so that ◊em{everyone} in the world uses it for their daily transactions, but I'm confident it's possible to scale it to be useful on a global scale.
-
-◊note-pos[#:top -22]{light-wallets}
-◊note-pos[#:top -14]{layer2}
 
 ◊; 12362000000/(365 * 24 * 60 * 60)
 ◊; 391.9964485032978
@@ -293,7 +282,7 @@ It may ultimately be impossible to scale a cryptocurrency so that ◊em{everyone
 
 Do you know how you can have two conflicting beliefs at the same time? For example you might know for a fact that eating too much candy is very bad for your health---and you really would like to loose weight---but you still eat it. Or how you think that cheating for an exam is wrong, but you still do it because "you had to".
 
-This is called ◊def[cognitive_dissonance]{cognitive disonance} and it can cause great discomfort when we have to face it. It's also something I, as a cryptocurrency supporter and an environmentalist, struggle with.◊sn{coping}
+This is called ◊def[cognitive_dissonance]{cognitive disonance} and it can cause great discomfort when we have to face it. It's also something I, as a cryptocurrency supporter and an environmentalist, struggle with.◊mn{coping}
 
 ◊ndef["coping"]{
     When we experience the uncomfortable dissonance we try to reduce it in some way, which often happens unconsciously. We might for example downplay the importance on one side of the conflict ("it's just one chocolate bar"), we might rationalize it in some way ("I'll exercise harder later") or we might suppress the issue entirely (stop talking to anyone who reminds you that you're on a diet).
@@ -345,7 +334,9 @@ This is absolutely a big problem, but there are some important points we need to
     }
     ◊li{Mostly cheap and renewable energy
 
-        According to ◊link[coinshares-mining]{CoinShares research} 73% of Bitcoin mining uses renewable energy, mostly in the form of cheap hydropower in China.◊sn{renewable-bad}
+        According to ◊link[coinshares-mining]{CoinShares research} 73% of Bitcoin mining uses renewable energy, mostly in the form of cheap hydropower in China.◊mn{renewable-bad}
+
+        ◊note-pos{renewable-bad}
     }
     ◊li{Energy consumption follows mining profitability
 
@@ -358,8 +349,6 @@ This is absolutely a big problem, but there are some important points we need to
 ◊ndef["renewable-bad"]{
     Although hydropower is good from a CO◊sub{2} perspective, building large dams is very disruptive for the enviroment.
 }
-
-◊note-pos[#:top -16]{renewable-bad}
 
 There's no other way to drastically reduce the energy usage than to replace proof-of-work with another consensus mechanism. I think this is one reason why proof-of-stake appeals to so many people, despite unsolved problems and large drawbacks.
 
@@ -388,7 +377,9 @@ An exhaustive list and description of all problems would require much more than 
     }
     ◊li{Scams everywhere
 
-        For every legitimate cryptocurrency there are thousands of scams, and it can be very difficult for outsiders to identify them.◊sn{parents}
+        For every legitimate cryptocurrency there are thousands of scams, and it can be very difficult for outsiders to identify them.◊mn{parents}
+
+        ◊note-pos{parents}
     }
     ◊li{Regulation
 
@@ -396,16 +387,15 @@ An exhaustive list and description of all problems would require much more than 
     }
     ◊li{Development organization
 
-        A cryptocurrency is supposed to remove third parties, but that raises the question how should you upgrade a cryptocurrency? In practice the development has been dictated by a single development team, which gives them a great deal of power and is a source of centralization.◊sn{easiest-way}
+        A cryptocurrency is supposed to remove third parties, but that raises the question how should you upgrade a cryptocurrency? In practice the development has been dictated by a single development team, which gives them a great deal of power and is a source of centralization.◊mn{easiest-way}
+
+        ◊note-pos{easiest-way}
     }
     ◊li{Confirmation time
 
         Even though I did write ◊link[cheaper_faster]{that cryptocurrencies are faster} than alternatives, the system isn't fool-proof. While 0-conf is often good enough, if you need more security then you sometimes need to wait up to an hour or two before your first confirmation.
     }
 }
-
-◊note-pos[#:top -29]{parents}
-◊note-pos[#:top -11 #:bottom -8]{easiest-way}
 
 ◊ndef["parents"]{
     I don't trust my parents to be able to manage a cryptocurrency wallet themselves, and I certainly don't trust them to choose which cryptocurrency or cryptocurrency project to invest in.

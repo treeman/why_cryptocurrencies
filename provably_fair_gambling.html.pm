@@ -74,7 +74,7 @@ With a pseudo-random generator that's what we can do. We give it a ◊em{seed}, 
     4 4 2 3 2 3 2 2 1 8 …
 }
 
-A pseudo-random generator can produce a sequence of numbers, a number of coin tosses or even generate the whole world in Minecraft.◊sn{minecraft-seed}
+A pseudo-random generator can produce a sequence of numbers, a number of coin tosses or even generate the whole world in Minecraft.◊mn{minecraft-seed}
 
 ◊ndef["minecraft-seed"]{
     They even call it a seed in Minecraft. There are many ◊link[minecraft-best-seeds #:quote #t]{Minecraft best seeds} lists out there, with seeds that generate some pretty impressive worlds. You do need to take care which version of Minecraft you're using, as the world generation can differ between versions.
@@ -117,7 +117,7 @@ Concretely a game could play out like this:
     ◊li{The casino says they won, and reveals that their seed was ◊icode{4}.}
 }
 
-To prove that the bet was made, the above interactions should be signed by both parties, complete with timestamps. It doesn't even have to be on a blockchain, just having a public key connected to their identity is enough. As long as either party has the signed messages, it's all good.◊sn{pull-out}
+To prove that the bet was made, the above interactions should be signed by both parties, complete with timestamps. It doesn't even have to be on a blockchain, just having a public key connected to their identity is enough. As long as either party has the signed messages, it's all good.◊mn{pull-out}
 
 ◊ndef["pull-out"]{
     Let's see what we can prove, if either party aborts the bet.
@@ -175,7 +175,7 @@ There are limits to the simple toy example I've described:
     }
     ◊li{Multiplayer games are more complex
 
-        This scheme works fine for simple single player games, like flipping a coin. But if we wanted to create a provable fair poker game the implementation would be more complex, but it would still be possible.◊sn{encrypt}
+        This scheme works fine for simple single player games, like flipping a coin. But if we wanted to create a provable fair poker game the implementation would be more complex, but it would still be possible.◊mn{encrypt}
 
         ◊note-pos{encrypt}
 

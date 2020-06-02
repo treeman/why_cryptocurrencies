@@ -21,7 +21,7 @@ While cryptocurrencies are mostly seen as speculative assets---get rich quick sc
     }
     ◊li{◊strong{Cheaper payments}
 
-        Merchants have to pay a 1--4% fee for every credit card transaction, while cryptocurrency transactions only come with a ◊link[fee-comparisons]{small fixed fee.}◊sn{bitcoin-fees}
+        Merchants have to pay a 1--4% fee for every credit card transaction, while cryptocurrency transactions only come with a ◊link[fee-comparisons]{small fixed fee.}◊mn{bitcoin-fees}
 
         ◊note-pos[#:top -2]{bitcoin-fees}
     }
@@ -29,7 +29,7 @@ While cryptocurrencies are mostly seen as speculative assets---get rich quick sc
 
         You receive money in ◊link[speed-comparisons]{under an hour} and after that the money is yours, while it may take days to receive other digital payments and they can also be reversed weeks or months later.
 
-        This means merchants don't have to worry about having a purchase reversed, which usually means they have to swallow the loss.◊sn{chargeback-fraud}
+        This means merchants don't have to worry about having a purchase reversed, which usually means they have to swallow the loss.◊mn{chargeback-fraud}
 
         ◊note-pos[#:top -2]{chargeback-fraud}
     }
@@ -41,7 +41,7 @@ While cryptocurrencies are mostly seen as speculative assets---get rich quick sc
     }
     ◊li{◊strong{Financial privacy}
 
-        Banks, credit card companies and payment processors have all your financial transactions on record. Cryptocurrencies allows you to ◊link[private_money]{reclaim some of your privacy} as they work like a ◊link[swiss_bank_account_in_your_pocket]{swiss bank account in your pocket}.◊sn{bitcoin-priv}
+        Banks, credit card companies and payment processors have all your financial transactions on record. Cryptocurrencies allows you to ◊link[private_money]{reclaim some of your privacy} as they work like a ◊link[swiss_bank_account_in_your_pocket]{swiss bank account in your pocket}.◊mn{bitcoin-priv}
 
         ◊note-pos[#:top -2]{bitcoin-priv}
     }

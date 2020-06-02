@@ -29,7 +29,7 @@ In ◊link[how_do_cryptocurrencies_work]{How do cryptocurrencies work?} we saw t
 
 A timestamping service offers proof that a message or document existed at a certain time with certain contents. The idea of timestamping information is ◊link[trusted-timestamping]{according to Wikipedia} centuries old, dating back to ◊em{at least} the 17◊sup{th} century.
 
-A modern example is the ◊link[wayback-machine]{Wayback Machine}, a service which allows you to see how a certain website looked at a certain time. A bit like traveling back in time, but with your web-browser instead of a ◊link[delorean]{DeLorean}.◊sn{back-to-the-future}
+A modern example is the ◊link[wayback-machine]{Wayback Machine}, a service which allows you to see how a certain website looked at a certain time. A bit like traveling back in time, but with your web-browser instead of a ◊link[delorean]{DeLorean}.◊mn{back-to-the-future}
 
 ◊ndef["back-to-the-future"]{
     The DeLorean is the time machine in the ◊em{Back To The Future} movies. They're amazing movies but unfortunately the ◊link[back-to-the-future-timetravel]{time travel theory isn't really sound}.
@@ -65,10 +65,9 @@ Let's travel back in time and look at the site ◊link[hn]{Hacker News}, a tech 
     ◊;I tried to reproduce the site appearance, but it's not pixel perfect.
 ◊;}
 
-As long as we can trust the Wayback Machine (and I do consider them generally trustworthy) we can be fairly sure this is correct. Letting a trusted party like the Wayback Machine handle timestamping, called ◊def[trusted-timestamping]{trusted timestamping}, is a solved problem with different kinds of standards but---as the name implies---there's always the caveat of requiring a trusted party to verify the timestamps.
-
-◊note-pos[#:top -36]{back-to-the-future}
 ◊note-pos[#:top -29]{hn-bitcoin}
+
+As long as we can trust the Wayback Machine (and I do consider them generally trustworthy) we can be fairly sure this is correct. Letting a trusted party like the Wayback Machine handle timestamping, called ◊def[trusted-timestamping]{trusted timestamping}, is a solved problem with different kinds of standards but---as the name implies---there's always the caveat of requiring a trusted party to verify the timestamps.
 
 ◊(define trusted-timestamping
   (x-ref
@@ -98,7 +97,9 @@ What is a timestamping service useful for? Here are some examples:
 
         Surprisingly often history a discovery happens ◊link[multiple-discoveries]{independently and at around the same time}. What if you come up with an idea or an invention and you didn't want to reveal it yet but still wanted to claim priority?
 
-        You would use timestamping. For example Robert Hook ◊link[ceiiinosssttuv]{used it in 1660} when discovering Hooke's law by publishing the anagram ◊em{ceiiinosssttuv} and later published the translation ◊em{ut tensio sic vis} (latin for "as is the extension, so is the force").◊sn{wiki-tensio}
+        You would use timestamping. For example Robert Hook ◊link[ceiiinosssttuv]{used it in 1660} when discovering Hooke's law by publishing the anagram ◊em{ceiiinosssttuv} and later published the translation ◊em{ut tensio sic vis} (latin for "as is the extension, so is the force").◊mn{wiki-tensio}
+
+        ◊note-pos{wiki-tensio}
 
         ◊ndef["wiki-tensio"]{
             Interestingly if you search for "ceiiinosssttuv" on Wikipedia you'll be redirected to Hooke's law, without an explanation why.
@@ -108,7 +109,9 @@ What is a timestamping service useful for? Here are some examples:
 
         If you're someone who likes to write testaments maybe you want to update the one you have. But after you die, how will people tell which is the newest? Sure you can write a date on the paper, but that can be altered by people who want a more beneficial one to be valid.
 
-        The solution is to use a timestamping service. If you use one based on a cryptocurrency there's no possibility of altering the dates, not even by your lawyer.◊sn{wills}
+        The solution is to use a timestamping service. If you use one based on a cryptocurrency there's no possibility of altering the dates, not even by your lawyer.◊mn{wills}
+
+        ◊note-pos[#:top -12]{wills}
 
         ◊ndef["wills"]{
             Of course the lawyer might try to forge your testament completely. If that's a worry you might want to ◊link[gpg-sign]{sign your testament digitally}, and make sure everyone has your key so they can themselves verify the validity of the document (consider distributing an how-to document as well).
@@ -119,9 +122,6 @@ What is a timestamping service useful for? Here are some examples:
         What if you've discovered a major software bug and want to disclose it anonymously, but still want the ability to prove you were the one who found it? ◊link[rel-bug]{Later in the chapter} we'll go into details of how the discoverer of one of the most catastrophic bugs in Bitcoin ever accomplished this using timestamping.
     }
 }
-
-◊note-pos[#:top -25]{wiki-tensio}
-◊note-pos[#:top -12]{wills}
 
 ◊(define rel-bug `("#a-real-life-example" "A real-life example"))
 
@@ -280,7 +280,7 @@ Let's now encode and timestamp it using the Bitcoin Cash blockchain:
 ◊ol{
     ◊li{Encode the message using SHA-256.
 
-        On Linux we can run the command:◊sn{others-command}
+        On Linux we can run the command:◊mn{others-command}
 
         ◊ndef["others-command"]{
             I'm sure you can find a tool for Windows if you search for it. Be sure to exclude the newline (which the -n flag is for). You can also find websites for it, but don't use them if the message is sensitive.

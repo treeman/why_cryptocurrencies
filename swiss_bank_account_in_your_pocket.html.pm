@@ -11,7 +11,7 @@
 ◊; To read:
 ◊; https://news.ycombinator.com/item?id=21872987
 
-If you've seen spy movies, or maybe read the Da Vinci Code, you might be familiar with a private bank account. It's one where you don't need any identification other than the bank account number and a password to access, and you have access to all your money safely, securely and most importantly privately.◊sn{gringotts}
+If you've seen spy movies, or maybe read the Da Vinci Code, you might be familiar with a private bank account. It's one where you don't need any identification other than the bank account number and a password to access, and you have access to all your money safely, securely and most importantly privately.◊mn{gringotts}
 
 This is actually a great description of how cryptocurrencies work. You just need the account number (◊link[bitcoin-addresses]{an address}) and the password (◊link[public-key-cryptography]{a private key}) to access your money, which you can do from anywhere in the world using the smartphone in your pocket.
 
@@ -34,7 +34,7 @@ This is how ◊link[swiss-bank-account]{Swiss bank accounts} are usually portray
 
 Recently Switzerland has ◊link[swiss-exchange]{begun sharing bank details} of foreign account holders automatically with other countries. At the time of writing they share data with ◊link[swiss-more-countries]{more than 60 countries}, and more will join. I think it's fair to say that Swiss bank accounts don't live up to the private bank account dream.
 
-Cryptocurrencies on the other hand can fulfill the dream.◊sn{private?}
+Cryptocurrencies on the other hand can fulfill the dream.◊mn{private?}
 
 ◊ndef["private?"]{
     How private are cryptocurrencies really? Some are more private than others, see the ◊link[privacy-challenge]{discussion of the privacy challenge} in the appendix for more information.
@@ -61,7 +61,7 @@ Cryptocurrencies on the other hand can fulfill the dream.◊sn{private?}
 
 A common argument against truly private bank accounts is that they enable tax fraud and money laundering. And it's a valid point, but there's just one issue: it's already possible, and it's happening at a global scale.
 
-The ◊link[panama-papers]{Panama Papers} was a gigantic leak that detailed the shady businesses of shell companies and how they're used to hide ownership of assets. It detailed how politicians, celebrities, drug dealers and the global elite obscured their wealth and in large part engaged in tax fraud and money laundering.◊sn{panama-links}
+The ◊link[panama-papers]{Panama Papers} was a gigantic leak that detailed the shady businesses of shell companies and how they're used to hide ownership of assets. It detailed how politicians, celebrities, drug dealers and the global elite obscured their wealth and in large part engaged in tax fraud and money laundering.◊mn{panama-links}
 
 ◊ndef["panama-links"]{
     There's an excellent ◊link[panama-papers-doc]{documentary about the Panama Papers} I can recommend.
@@ -84,10 +84,10 @@ But they're not just for avoiding taxes. Look at celebrities for instance, they 
     "https://www.telegraph.co.uk/news/2016/05/10/panama-papers-emma-watson-named-in-latest-data-release/"
     "Panama Papers: Emma Watson named in latest offshore data release"))
 
-It's up to you if you believe them or not. As the cynic that I am, I remain skeptical, but at the same time I sympathize with the privacy concern---I did after all dedicate ◊link[private_money]{an earlier chapter} to the topic. If you haven't read the chapter I suggest you do so now, as it tries to explain why it's important that financial privacy is available for everyone.◊sn{small-community}
+It's up to you if you believe them or not. As the cynic that I am, I remain skeptical, but at the same time I sympathize with the privacy concern---I did after all dedicate ◊link[private_money]{an earlier chapter} to the topic. If you haven't read the chapter I suggest you do so now, as it tries to explain why it's important that financial privacy is available for everyone.◊mn{small-community}
 
 ◊ndef["small-community"]{
-    I'm personally worried about the potential problems that the lack of financial privacy may cause. In Sweden your tax records are public, and every year in the small community I live in there's discussion about the last years "rich list"---a list of the people who earned to most taxable income in a year.
+    I'm personally worried about the potential problems that the lack of financial privacy may cause. In Sweden your tax records are public, and every year in the small community I live in there's discussion about the last years "rich list"---a list of the people who earned the most taxable income in a year.
 
     What would happen ◊strong{if} cryptocurrencies skyrocketed to the moon, and I suddenly became very rich? Everyone would probably know about it, and people wouldn't look at me the same way. Maybe I wouldn't even feel safe here anymore, as a target would be painted on my back?
 }
@@ -218,7 +218,7 @@ In an ideal world everyone would pay their taxes as they should, while they woul
     }
     ◊li{Everyone must use traceable money
 
-        What if we forced everyone to use traceable money, where we can see where the money's coming from? And completely removed the possibility to hide money via shell companies and offshore bank accounts?◊sn{bitcoin-traceable}
+        What if we forced everyone to use traceable money, where we can see where the money's coming from? And completely removed the possibility to hide money via shell companies and offshore bank accounts?◊mn{bitcoin-traceable}
 
         ◊ndef["bitcoin-traceable"]{
             Curiously enough, if everyone started to use a cryptocurrency like Bitcoin we would be pretty close to this world because all coins in Bitcoin can be traced. The only thing missing is tying addresses to identities, in which case we should use something like Facebook's Libra, which completely abandons all privacy.
@@ -236,7 +236,7 @@ In an ideal world everyone would pay their taxes as they should, while they woul
     }
 }
 
-If you view tax evasion as a problem, then making better laws is a necessary beginning. But we won't ever be able to get rid of tax fraud completely. This is especially true if there's a privileged elite that has access to tools to obfuscate their money, essentially making their finances private, which is out of reach for the rest of us.◊sn{how?}
+If you view tax evasion as a problem, then making better laws is a necessary beginning. But we won't ever be able to get rid of tax fraud completely. This is especially true if there's a privileged elite that has access to tools to obfuscate their money, essentially making their finances private, which is out of reach for the rest of us.◊mn{how?}
 
 ◊ndef["how?"]{
     One way the super rich can lander their money is to buy apartments, sit on them and then sell them making their money "clean". It's one reason why the apartment next door ◊link[empty-apartments]{might be completely empty}.
@@ -247,7 +247,7 @@ We might try to force everyone to use traceable money, and thereby making tax co
 
 The only truly fair world would be if everyone had access to the same tools, and if financial privacy would be available for all, not just the privileged few. Everyone could enjoy the security and peace of mind ◊link[private_money]{that privacy gives you}, making it the more preferable choice for me.
 
-For better or worse, cryptocurrencies bring us closer to that world. Cryptocurrencies give everyone the ability to store their wealth privately, regardless of how rich you are.  They make it possible for anyone to store their wealth "offshore" and off the grid; they act as a financial equalizer by giving everyone access to similar tools that the super rich already have.◊sn{not-quite}
+For better or worse, cryptocurrencies bring us closer to that world. Cryptocurrencies give everyone the ability to store their wealth privately, regardless of how rich you are.  They make it possible for anyone to store their wealth "offshore" and off the grid; they act as a financial equalizer by giving everyone access to similar tools that the super rich already have.◊mn{not-quite}
 
 ◊ndef["not-quite"]{
     While cryptocurrencies might make it easier to hide your money, it does not give you the ability to find the tax loopholes the super rich are exploiting.
@@ -255,7 +255,6 @@ For better or worse, cryptocurrencies bring us closer to that world. Cryptocurre
 
 Perfectly balanced, as all things should be.
 
-◊note-pos[#:top -37]{how?}
 ◊note-pos[#:top -6]{not-quite}
 
 ◊(define empty-apartments

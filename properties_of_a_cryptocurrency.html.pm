@@ -142,7 +142,7 @@ Either way it's not an argument against cryptocurrencies in general as they can 
 
 ◊subhead{Private}
 
-Commonly used payment systems, like credit cards for example, asks you to give up your privacy as all payments are recorded and they require you to tie your identity to them. But cryptocurrencies can be used privately---there's no need to disclose your identity or your transaction history---making them similar to cash in this respect.◊sn{bitcoin-privacy}
+Commonly used payment systems, like credit cards for example, asks you to give up your privacy as all payments are recorded and they require you to tie your identity to them. But cryptocurrencies can be used privately---there's no need to disclose your identity or your transaction history---making them similar to cash in this respect.◊mn{bitcoin-privacy}
 
 
 ◊ndef["bitcoin-privacy"]{
@@ -154,7 +154,7 @@ Commonly used payment systems, like credit cards for example, asks you to give u
 
 In contrast to cash or gold where large amounts can be cumbersome to handle there's no difference between large or small transfers in a cryptocurrency. Transaction costs are the same for small transfers as for large transfers and they are just as secure and wallets can store as much as you're comfortable with.
 
-It's also easy to split coins into small parts.◊sn[#:top -4]{satoshis} In fact you don't have to think about dividing at all, you use a wallet just like a credit card---a transfer is always exact.
+It's also easy to split coins into small parts.◊mn[#:top -4]{satoshis} In fact you don't have to think about dividing at all, you use a wallet just like a credit card---a transfer is always exact.
 
 ◊ndef["satoshis"]{
     For example one bitcoin can be divided into one hundred million parts---called satoshis. But there's no real technical limit, only a usability concern.
@@ -163,7 +163,7 @@ It's also easy to split coins into small parts.◊sn[#:top -4]{satoshis} In fact
 
 ◊subhead{Borderless}
 
-Cryptocurrencies are inherently global. They are usable wherever you are as long as you have an internet connection. You can even send to wallets which are offline◊sn[#:top -8]{cold-storage} but to retrieve them you need to access the internet. Technically you could do transfers completely offline---on paper---but they would be unconfirmed and might not be valid when you do want to use them.
+Cryptocurrencies are inherently global. They are usable wherever you are as long as you have an internet connection. You can even send to wallets which are offline◊mn[#:top -8]{cold-storage} but to retrieve them you need to access the internet. Technically you could do transfers completely offline---on paper---but they would be unconfirmed and might not be valid when you do want to use them.
 
 ◊ndef["cold-storage"]{
     Offline wallets with no computer contact is called cold storage. It's an excellent way to store large amounts you're not planning to use for some time.

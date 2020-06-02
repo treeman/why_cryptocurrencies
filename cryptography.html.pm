@@ -8,7 +8,7 @@
 
 ◊(clear-sidenotes)
 
-This chapter serves as an introduction to the cryptographic terms and constructs mentioned in the book. The aim is to give you an idea of what they are and how they might be used in a cryptocurrency context. I won't go into low-level details of how they work, so you don't need to know any mathematics or programming to follow along. If this interests you, I hope this introduction will be helpful as a starting point when researching the topics on your own.◊sn{history}
+This chapter serves as an introduction to the cryptographic terms and constructs mentioned in the book. The aim is to give you an idea of what they are and how they might be used in a cryptocurrency context. I won't go into low-level details of how they work, so you don't need to know any mathematics or programming to follow along. If this interests you, I hope this introduction will be helpful as a starting point when researching the topics on your own.◊mn{history}
 
 ◊ndef["history"]{
     If the history of cryptography interests you I can also recommend the book ◊(book-link code-breakers-book) by David Kahn. You can enjoy it even without much math knowledge.
@@ -52,13 +52,13 @@ To find out what's hidden behind the hash we have to try all possibilities:
     42 → 084c799cd551dd1d8d5c5f9a5d593b2e931f5e36122ee5c793c1d08a19839cc0
 }
 
-Found it! The answer is "42". But we were lucky that we only had to test 42 possibilities, we could have continued a ◊strong{very} long time depending on the input.◊sn{multiple}
+Found it! The answer is "42". But we were lucky that we only had to test 42 possibilities, we could have continued a ◊strong{very} long time depending on the input.◊mn{multiple}
 
 ◊ndef["multiple"]{
     I've simplified the explanation here a little. There's not a one-to-one correspondence between an input and a hash, as several inputs can result in the same hash.
 }
 
-Don't believe me? Then try to guess what message this SHA-256 output comes from, and I can even give you a hint that it's only spaces, upper- and lower case letters:◊sn{variation}
+Don't believe me? Then try to guess what message this SHA-256 output comes from, and I can even give you a hint that it's only spaces, upper- and lower case letters:◊mn{variation}
 
 ◊ndef["variation"]{
     For security it's important that the data you want to protect is sufficiently large and has enough variation to make it difficult to guess what it is.
@@ -68,11 +68,13 @@ Don't believe me? Then try to guess what message this SHA-256 output comes from,
 
 ◊code{b409d7f485033ac9f52a61750fb0c54331bfdd966338015db25efae50984f88f}
 
+◊note-pos{variation}
+
 To get a sense for how hard it can be to figure out the matching data for a hash, let's look at the mining in Bitcoin. Because that's really what miners do---they calculate SHA-256 hashes with different kinds of input again and again until they find a match. And they don't require an exact match either, they only want to find a hash with a certain number of leading zeroes.
 
 The current ◊link[bitcoin-hashrate]{hashrate for Bitcoin} is around 113 exahashes per second (2020-02-18). That's a staggering 113 x 10◊sup{18}, or 133 000 000 000 000 000 000, hashes per second, yet they're still only expected to find a single solution every 10 minutes.
 
-Even all of Bitcoin's hashrate, working for millions of years, are not expected to find the reverse of a single hash. Even though there's theoretically an infinite number of inputs that produce the same hash, it's computationally infeasible to ever find one, therefore we can consider it practically impossible to reverse a hash.◊sn{secure}
+Even all of Bitcoin's hashrate, working for millions of years, are not expected to find the reverse of a single hash. Even though there's theoretically an infinite number of inputs that produce the same hash, it's computationally infeasible to ever find one, therefore we can consider it practically impossible to reverse a hash.◊mn{secure}
 
 ◊ndef["secure"]{
     We can say it's impossible to reverse a hash if we have to brute force the solution like this, but there could be weaknesses in the hash function that could allow us to find it much earlier. The ◊link[sha-1]{SHA-1 hash function} is for example not secure anymore, as weaknesses have been found that can be used to generate collisions.
@@ -81,10 +83,6 @@ Even all of Bitcoin's hashrate, working for millions of years, are not expected 
 ◊div[#:class "secret-hash"]{
     The text I encoded in the was “◊span[#:class "secret"]{Iron Man is my favorite superhero}”
 }
-
-◊note-pos[#:top -42]{multiple}
-◊note-pos[#:top -35]{variation}
-◊note-pos[#:top -5]{secure}
 
 
 ◊subhead{Public-key cryptography}
@@ -119,7 +117,7 @@ Large parts of the internet depends on public-key cryptography. For example when
     The lock icon or the "https" label means you're using public-key cryptography (among other things) to secure your connection to the website.
 }
 
-I won't go into details on how the mathematics behind this scheme work, as I'm not able to without making the explanation needlessly complicated, but if this interests you I encourage you to look it up---I personally find it fascinating.◊sn{further-public-key}
+I won't go into details on how the mathematics behind this scheme work, as I'm not able to without making the explanation needlessly complicated, but if this interests you I encourage you to look it up---I personally find it fascinating.◊mn{further-public-key}
 
 ◊ndef["further-public-key"]{
     ◊link[rsa]{RSA} is one of the first public-key cryptography schemes and it was also the first one I studied. It's fairly simple, so I think it's a good starting point to understand public-key cryptography.
@@ -161,7 +159,7 @@ Which corresponds to the ◊strong{public key}:
 
 ◊code{049f6aad24669d180cfe4c974a677407cbf26f03242a09126ebf88621d31f01a218d40fcbcb769b44b014d502a1c9ce8c2ca629bc339fe14b4db56e27e80ac30a7}
 
-The address could be displayed in various different ways, Bitcoin just happened to do it this way. Using an address is more convenient as it's shorter and includes error checking codes.◊sn{bch-address}
+The address could be displayed in various different ways, Bitcoin just happened to do it this way. Using an address is more convenient as it's shorter and includes error checking codes.◊mn{bch-address}
 
 ◊ndef["bch-address"]{
     Bitcoin Cash is a fork of Bitcoin and they have an additional address format. The same Bitcoin address, with the same public key, could also be displayed as this Bitoin Cash address:
