@@ -3,7 +3,7 @@
 (require txexpr pollen/decode)
 (require racket/match racket/list racket/string)
 
-(provide elem-remover style-remover)
+(provide elem-remover style-remover matches-class)
 
 
 ;; Remove all elements with matching class.

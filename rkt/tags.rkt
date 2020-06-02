@@ -162,11 +162,6 @@
    `(h3
      (a [[id ,(to-name x)]] ,x)))
 
-(define (li-plus . txt)
-   `(li ((class "plus")) ,@txt))
-(define (li-neg . txt)
-   `(li ((class "neg")) ,@txt))
-
 
 (define (stable #:header [header #t]
                 #:centered [centered #t]

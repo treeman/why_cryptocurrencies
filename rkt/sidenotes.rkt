@@ -4,7 +4,9 @@
 (require racket/match racket/string racket/list)
 (require "string-process.rkt")
 (require "decode.rkt")
+(require "post-process.rkt")
 (require racket/pretty)
+
 
 (provide ndef sn mn note-pos decode-sidenotes clear-sidenotes)
 
@@ -140,9 +142,10 @@
 
 (define (decode-and-append-txexpr x acc)
   (let ((decoded (decode-txexpr x)))
-    (append (car decoded)
-            (append (expand-sidenote-defs (cdr decoded))
-                    acc))))
+    (merge-sidenote-groups
+      (append (car decoded)
+              (append (expand-sidenote-defs (cdr decoded))
+                      acc)))))
 
 ;; Decode a txexpr into
 ;; ((list decoded-txexpr) . (list notes-to-place-after))
@@ -217,15 +220,36 @@
 
   (cons decoded-list notes-after))
 
+(define (sidenote-group? x)
+  (matches-class x `("sidenote-group")))
+
+(define (merge-sidenote-groups xs)
+  (reverse
+    (foldl (λ (x acc)
+              (if (sidenote-group? x)
+                (if (empty? acc)
+                  `(,x)
+                  (let ((prev (car acc)))
+                    (if (sidenote-group? prev)
+                      (cons
+                        `(div ((class "sidenote-group"))
+                              ,@(get-elements prev)
+                              ,@(get-elements x)
+                              )
+                        (cdr acc))
+                      (cons x acc))))
+                (cons x acc)))
+           `()
+           xs)))
+
 (define (expand-sidenote-defs #:sort [sort? #t] notes)
   (if (empty? notes)
     `()
-    (std-decode
-      `((div ((class "sidenote-group"))
-          ,@(map expand-sidenote
-               (if sort?
-                 (sort notes note<)
-                 notes)))))))
+    `((div ((class "sidenote-group"))
+        ,@(map expand-sidenote
+             (if sort?
+               (sort notes note<)
+               notes))))))
 
 (define (note< a b)
   (define a-sign (note-sign a))
@@ -294,9 +318,24 @@
   (define def (note-def note))
   (define attrs `((class "sidenote")))
 
+  (define decoded
+    (std-decode `(,@(label note) ,@def)))
+  (define expanded
+    (ensure-p decoded))
+
   `(div ,attrs
-        ,@(label note)
-        ,@def))
+        ,@expanded))
+
+(define (ensure-p xs)
+  (if (empty? xs)
+    xs
+    (if (and (pair? xs) (txexpr? (car xs)))
+      (let ((tag (get-tag (car xs))))
+        (if (equal? tag 'p)
+          xs
+          `((p ,@xs))))
+      `((p ,@xs)))))
+
 
 ;; A larger test to test the sidenote placement.
 (module+ test
@@ -326,21 +365,110 @@
   ;; but that's too much work for me now. Meh.
   (define expected
     `((p "One."
-         (span ((class "sidenote-label")) "1")
-         " Two." (span ((class "sidenote-label")) "2")
-         " Three." (span ((class "sidenote-label")) "3"))
-      (div ((class "sidenote")) (span ((class "sidenote-number")) "1")
-             "1st")
-      (div ((class "sidenote")) (span ((class "sidenote-number")) "2")
-             "2nd")
+         (sup ((class "sidenote-number")) "1")
+         " Two."
+         (sup ((class "sidenote-number")) "2")
+         " Three."
+         (sup ((class "sidenote-number")) "3"))
+      (div ((class "sidenote-group"))
+           (div ((class "sidenote"))
+                (p (sup ((class "sidenote-number")) "1")
+                   "1st"))
+           (div ((class "sidenote"))
+                (p (sup ((class "sidenote-number")) "2")
+                   "2nd")))
       (ol
-        (li "a" (span ((class "sidenote-label")) "4"))
+        (li "a" (sup ((class "sidenote-number")) "4"))
         (li "b"))
-      (div ((class "sidenote")) (span ((class "sidenote-number")) "4")
-             "In list.")
-      (div ((class "sidenote")) (span ((class "sidenote-number")) "3")
-             "3rd")))
+      (div ((class "sidenote-group"))
+           (div ((class "sidenote"))
+                (p (sup ((class "sidenote-number")) "4")
+                   "In list."))
+           (div ((class "sidenote")) 
+                (p (sup ((class "sidenote-number")) "3")
+                   "3rd")))))
 
   (check-equal? (decode-sidenotes input) expected)
+
+  ;; Another test
+  (clear-sidenotes)
+
+  (ndef "one" "one")
+  (ndef "two" "two")
+  (ndef "three" "one" "\n\n" "two" "\n\n" "three")
+
+  (define one (sn "one"))
+  (define two (mn "two"))
+  (define three (sn "three"))
+
+  (define input2
+    `((p "One." ,one " Two." ,two " Three." ,three)))
+
+  (define expected2
+    `((p "One."
+         (sup ((class "sidenote-number")) "1")
+         " Two."
+         " Three."
+         (sup ((class "sidenote-number")) "2"))
+      (div
+        ((class "sidenote-group"))
+        (div ((class "sidenote"))
+             (p (sup ((class "sidenote-number")) "2") "one")
+             (p "two")
+             (p "three"))
+        (div ((class "sidenote"))
+             (p "two"))
+        (div ((class "sidenote"))
+             (p (sup ((class "sidenote-number")) "1") "one")))
+      )
+      )
+
+  (check-equal? (decode-sidenotes input2) expected2)
+
+  (check-equal? (ensure-p
+                  `((p (sup ((class "sidenote-number")) "1")
+                       "one")
+                    (p "two")))
+                  `((p (sup ((class "sidenote-number")) "1")
+                       "one")
+                    (p "two")))
+  (check-equal? (ensure-p
+                  `((sup ((class "sidenote-number")) "1")
+                    "one"))
+                  `((p (sup ((class "sidenote-number")) "1")
+                       "one")))
+  (check-equal? (ensure-p `("two"))
+                  `((p "two")))
+  (check-equal? (ensure-p
+                  `())
+                  `())
+
+  (check-equal? (sidenote-group?
+                  `(div
+                      ((class "sidenote-group"))
+                      (div ((class "sidenote"))
+                           (p (sup ((class "sidenote-number")) "1") "one"))))
+                #t)
+  (check-equal? (sidenote-group?
+                  `(div
+                      ((class "sidenote"))
+                      "one"))
+                #f)
+
+  (check-equal? (merge-sidenote-groups
+                  `((div
+                      ((class "sidenote-group"))
+                      (div ((class "sidenote"))
+                           (p (sup ((class "sidenote-number")) "1") "one")))
+                    (div
+                      ((class "sidenote-group"))
+                      (div ((class "sidenote"))
+                           (p (sup ((class "sidenote-number")) "2") "two")))))
+                `((div
+                    ((class "sidenote-group"))
+                    (div ((class "sidenote"))
+                         (p (sup ((class "sidenote-number")) "1") "one"))
+                    (div ((class "sidenote"))
+                         (p (sup ((class "sidenote-number")) "2") "two")))))
   )
 
