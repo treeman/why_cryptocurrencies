@@ -34,17 +34,15 @@
   (->html
     (make-link #:title title (string-append "/" (symbol->string page)) txt)))
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
-  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
-
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xmlns:epub="http://www.idpf.org/2007/ops">
     <head>
         <link rel="stylesheet" type="text/css" href="main.css" />
         <title>◊|head-title|</title>
     </head>
 
     <body>
-      <div class="◊|article-class|">
+      <article class="◊|article-class|">
         <div class="header">
           <h1>◊|title|</h1>
           <span class="subtitle">◊|subtitle|</span>
@@ -54,7 +52,7 @@
 
         ◊(->html (make-section-nav #:section-header? section-chapters-headers?
                                     here))
-      </div>
+      </article>
     </body>
 </html>
 ◊;←

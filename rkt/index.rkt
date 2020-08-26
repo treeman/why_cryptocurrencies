@@ -43,16 +43,18 @@
 
 (define (page-toc page)
   `(div ((class "page-toc"))
-     (span ((class "section")) ,(make-entry (node page)))
-     ,(make-subnav (children page))))
+     ,@(page-section-toc page)))
+
+(define (page-section-toc page)
+  `((span ((class "section")) ,(make-entry (node page)))
+    ,(make-subnav (children page))))
 
 ;; Make a table of content, used on the homepage or dedicated toc page.
 (define (make-toc content)
-  `(div ((class "toc") (epub:type "toc"))
-        (ol
-            ,@(map (λ (x)
-                      `(li ,(page-toc x)))
-                   content))))
+  `(ol
+     ,@(map (λ (x)
+               `(li ,@(page-section-toc x)))
+            content)))
 
 ;; Locate entry in table of content.
 (define (toc-entry page)

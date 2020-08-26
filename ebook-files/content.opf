@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<package xmlns="http://www.idpf.org/2007/opf" unique-identifier="BookID" version="2.0" >
+<package xmlns="http://www.idpf.org/2007/opf" unique-identifier="BookID" version="3.0" xml:lang="en">
     <metadata xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:opf="http://www.idpf.org/2007/opf">
         <dc:title>Why cryptocurrencies?</dc:title>
-        <dc:creator opf:role="aut">Jonas Hietala</dc:creator>
+        <dc:creator>Jonas Hietala</dc:creator>
         <dc:language>en-US</dc:language>
-        <dc:identifier id="BookID" opf:scheme="UUID">◊UUID</dc:identifier>
+        <dc:identifier id="BookID">◊UUID</dc:identifier>
+        <meta property="dcterms:modified">◊DATE</meta>
     </metadata>
     <manifest>
         <item id="ncx" href="toc.ncx" media-type="application/x-dtbncx+xml" />
         <item id="style" href="main.css" media-type="text/css" />
         <item id="titlepage" href="title_page.xhtml" media-type="application/xhtml+xml" />
-        <item id="toc" href="toc.xhtml" media-type="application/xhtml+xml" />
+        <item id="toc" properties="nav" href="toc.xhtml" media-type="application/xhtml+xml" />
         ◊MANIFEST_POSTS_TAG
         ◊MANIFEST_IMG_TAG
         <item id="images-wealth-inequality-fallback" href="images/wealth-inequality-fallback.png" media-type="image/png" />

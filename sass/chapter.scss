@@ -420,7 +420,7 @@ a.img-wrapper:hover {
 /*
  * Figures
  */
-.img {
+figure {
     margin-bottom: 1rem;
     text-align: center;
 
@@ -429,30 +429,30 @@ a.img-wrapper:hover {
         text-align: center;
         margin: 0 auto;
     }
-    > .figcaption {
+    > figcaption {
         @extend %sans-serif;
         font-size: 0.9rem;
     }
 }
-.img.fullwidth {
+figure.fullwidth {
     img {
         width: 100%;
     }
 }
-.img.slim {
+figure.slim {
     margin: 0;
 }
-.figcaption.margin {
+figcaption.margin {
     @extend %sans-serif;
 }
 
 @media (min-width: $sidenote-float-width) {
-    .figcaption.fullwidth {
+    figcaption.fullwidth {
         width: $fullwidth;
     }
 }
 
-.figcaption .sidenote {
+figcaption .sidenote {
     text-align: left;
 }
 

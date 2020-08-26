@@ -11,8 +11,8 @@ import datetime
 # http://www.jedisaber.com/eBooks/Tutorial.shtml
 
 now = datetime.datetime.now()
-# uuid = "0dfc44f6-9c27-42ea-b6a8-45334b6aeeff"
-uuid = "0dfc44f6-9c27-42ea-b6a8-45334b6aeeff" + datetime.datetime.now().strftime("%y-%m-%d:%H%M")
+uuid = "0dfc44f6-9c27-42ea-b6a8-45334b6aeeff"
+# uuid = "0dfc44f6-9c27-42ea-b6a8-45334b6aeeff" + datetime.datetime.now().strftime("%y-%m-%d:%H%M")
 
 dirname = os.path.dirname(__file__)
 site_dir = os.path.join(dirname, "_site")
@@ -165,7 +165,22 @@ def setup_images():
 
                 images.append(src)
 
+                (_, ext) = os.path.splitext(dst)
+                if ext == ".svg":
+                    replace_svg_data(dst)
+
     return images
+
+svg_doc_re = re.compile(r"\w*<!DOCTYPE[^>]+>\w*")
+
+def replace_svg_data(img):
+    with open(img, 'r') as f:
+        data = f.read()
+
+    data = svg_doc_re.sub("", data)
+
+    with open(img, 'w') as f:
+        f.write(data)
 
 def setup_fonts():
     subprocess.run(f"mkdir -p {font_dir}", shell=True)
@@ -227,6 +242,7 @@ def setup_content_opf():
         data = f.read()
 
     data = data.replace("◊UUID", uuid)
+    data = data.replace("◊DATE", datetime.datetime.now().strftime("%Y-%m-%dT%H:%M:%SZ"))
 
     # ◊MANIFEST_POSTS_TAG
     # <item id="chapter02" href="chap02.xhtml" media-type="application/xhtml+xml" />
@@ -306,6 +322,8 @@ def replace_post_data(data):
         data = data.replace(link, new_link)
     data = data.replace('Cheaper & faster', 'Cheaper &amp; faster')
     data = data.replace('UUID_COPY', uuid)
+    # https://github.com/Scripler/scripler/issues/430
+    data = data.replace('&nbsp;', '&#160;')
 
     return data
 

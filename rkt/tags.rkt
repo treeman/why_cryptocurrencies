@@ -346,9 +346,8 @@
              #:margin [margin #f]
              #:link [link #f] . caption)
   (define attrs `())
-  (if c
-    (set! attrs (cons `(class ,(string-append "img " c)) attrs))
-    (set! attrs (cons `(class "img") attrs)))
+  (when c
+    (set! attrs (cons `(class ,c) attrs)))
   (when title
     (set! attrs (cons `(title ,title) attrs)))
 
@@ -358,25 +357,21 @@
 
   (define figcaption
     (if margin
-      `(div ((class "figcaption margin")) ,@decoded-caption)
-      `(div ((class "figcaption")) ,@decoded-caption)))
+      `(figcaption ((class "margin")) ,@decoded-caption)
+      `(figcaption ,@decoded-caption)))
 
-  `(div
+  `(figure
      ,attrs
      ,(raw-img #:src src #:link link #:alt alt)
      ,figcaption))
 
 (define (raw-img #:src src #:link [link #f] #:alt alt)
-  (define img
-     `(img ((src ,(~a src)) (alt ,alt))))
-  (if link
-      `(a ((href ,src) (target "_blank") (class "img-wrapper"))
-          ,img)
-      img))
+  ; Links aren't supporteed in epub 3
+  `(img ((src ,(~a src)) (alt ,alt))))
 
 ;; FIXME rename to figcaption
 (define (decoded-figcaption . args)
-  `(div ((class "figcaption")) ,@(std-decode args)))
+  `(figcaption ,@(std-decode args)))
 
 ; Creates a hidden toggle inline in text.
 (define (toggle hidden-txt . link-txt)

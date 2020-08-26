@@ -1,8 +1,30 @@
+Should create an epub 3.0 book instead!
+Can use original layout a lot... F
+https://www.ibm.com/developerworks/library/x-richlayoutepub/index.html
+
+epub3 samples:
+https://idpf.github.io/epub3-samples/30/samples.html
+
+see ebook.stackexchange
+
+
+Good epub3 ref:
+https://www.w3.org/publishing/epub3/epub-spec.html#sec-publication-resources
+
 epub3 tags:
 http://apex.infogridpacific.com/df/epub-type-epubpackaging8.html
 
+kindle:
+https://www.amazon.com/gp/feature.html?docId=1000729901
+
+https://ebooks.stackexchange.com/questions/4751/stretching-an-image-to-fit-the-screen/6515
+
+https://www.thebookdesigner.com/2018/03/fun-with-formats-part-i-epub2-vs-epub3/
+
 - Image formatting?
 - unloadable svgs
+    Should remove DOCTYPE from all svgs
+    Any post that references an svg should have a properties="svg" in manifest item
 - table formating (use png)
 
 - story in freezing of merchant accounts
@@ -16,6 +38,8 @@ Need a designer for a cover
 + Possibly include a couple of different use-cases?
 + Post about it on reddit, and "work for crypto"
 + Contact possible designers directly too
+
++ When selling, charge a higher price and offer to send back the difference in a cryptocurrency of your choice. If you pay with a credit card of course.
 
 eBook
 http://journal.stuffwithstuff.com/2014/11/03/bringing-my-web-book-to-print-and-ebook/

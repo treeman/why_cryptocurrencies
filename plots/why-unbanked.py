@@ -33,7 +33,7 @@ plt.rcParams["ytick.color"] = mycol
 plt.rcParams["ytick.minor.width"] = 0
 
 
-fig, ax = plt.subplots(figsize=(6, 4.5))
+fig, ax = plt.subplots(figsize=(4, 4.5))
 
 # http://ksrowell.com/blog-visualizing-data/2012/02/02/optimal-colors-for-graphs/
 other_col = '#7293CB'
