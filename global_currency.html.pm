@@ -32,16 +32,18 @@ Sending money to other countries, called ◊em{remittance}, is one of the first 
 
         The cost to use Western Union varies depending on the amount, the target country, your payment method and how the recipient should receive the money.
 
-        ◊table-body[#:centered #f]{
-            ◊tr{◊td{}              ◊tds{United States (to bank)}  ◊tds{Zimbabwe (cash pick up)}}
-            ◊tr{◊tds{Credit Card}  ◊td{$27}                       ◊td{$56.50}}
-            ◊tr{◊tds{Debit Card}   ◊td{$15}                       ◊td{$42}}
-            ◊tr{◊tds{Bank Account} ◊td{$0.99}                     ◊td{$21}}
-        }
-        ◊span[#:class "figcaption"]{
-            Western Union fees to various countries, using different payment methods, measured in USD.◊br{}
-            You can either send it to a bank account or as a cash pick up. It's cheaper to send it to a bank account, but it's not always available. I could only choose the cash pick up option for Zimbabwe.◊br{}
-            Fees are calculated from sending $400 using ◊link[western-union-fees]{their homepage} in 2019-11-15.
+        ◊figure{
+            ◊table-body{
+                ◊tr{◊td{}              ◊tds{United States (to bank)}  ◊tds{Zimbabwe (cash pick up)}}
+                ◊tr{◊tds{Credit Card}  ◊td{$27}                       ◊td{$56.50}}
+                ◊tr{◊tds{Debit Card}   ◊td{$15}                       ◊td{$42}}
+                ◊tr{◊tds{Bank Account} ◊td{$0.99}                     ◊td{$21}}
+            }
+            ◊figcaption{
+                Western Union fees to various countries, using different payment methods, measured in USD.◊br{}
+                You can either send it to a bank account or as a cash pick up. It's cheaper to send it to a bank account, but it's not always available. I could only choose the cash pick up option for Zimbabwe.◊br{}
+                Fees are calculated from sending $400 using ◊link[western-union-fees]{their homepage} in 2019-11-15.
+            }
         }
 
         This is expensive compared to ◊link[cryptocurrency-fees]{cryptocurrency fees}, which are ◊strong{less than a cent}.

@@ -323,7 +323,7 @@
   (define expanded
     (ensure-p decoded))
 
-  `(div ,attrs
+  `(aside ,attrs
         ,@expanded))
 
 (define (ensure-p xs)
@@ -371,20 +371,20 @@
          " Three."
          (sup ((class "sidenote-number")) "3"))
       (div ((class "sidenote-group"))
-           (div ((class "sidenote"))
+           (aside ((class "sidenote"))
                 (p (sup ((class "sidenote-number")) "1")
                    "1st"))
-           (div ((class "sidenote"))
+           (aside ((class "sidenote"))
                 (p (sup ((class "sidenote-number")) "2")
                    "2nd")))
       (ol
         (li "a" (sup ((class "sidenote-number")) "4"))
         (li "b"))
       (div ((class "sidenote-group"))
-           (div ((class "sidenote"))
+           (aside ((class "sidenote"))
                 (p (sup ((class "sidenote-number")) "4")
                    "In list."))
-           (div ((class "sidenote")) 
+           (aside ((class "sidenote")) 
                 (p (sup ((class "sidenote-number")) "3")
                    "3rd")))))
 
@@ -412,13 +412,13 @@
          (sup ((class "sidenote-number")) "2"))
       (div
         ((class "sidenote-group"))
-        (div ((class "sidenote"))
+        (aside ((class "sidenote"))
              (p (sup ((class "sidenote-number")) "2") "one")
              (p "two")
              (p "three"))
-        (div ((class "sidenote"))
+        (aside ((class "sidenote"))
              (p "two"))
-        (div ((class "sidenote"))
+        (aside ((class "sidenote"))
              (p (sup ((class "sidenote-number")) "1") "one")))
       )
       )
@@ -446,29 +446,29 @@
   (check-equal? (sidenote-group?
                   `(div
                       ((class "sidenote-group"))
-                      (div ((class "sidenote"))
+                      (aside ((class "sidenote"))
                            (p (sup ((class "sidenote-number")) "1") "one"))))
                 #t)
   (check-equal? (sidenote-group?
                   `(div
-                      ((class "sidenote"))
+                      ((aside "sidenote"))
                       "one"))
                 #f)
 
   (check-equal? (merge-sidenote-groups
                   `((div
                       ((class "sidenote-group"))
-                      (div ((class "sidenote"))
+                      (aside ((class "sidenote"))
                            (p (sup ((class "sidenote-number")) "1") "one")))
                     (div
                       ((class "sidenote-group"))
-                      (div ((class "sidenote"))
+                      (aside ((class "sidenote"))
                            (p (sup ((class "sidenote-number")) "2") "two")))))
                 `((div
                     ((class "sidenote-group"))
-                    (div ((class "sidenote"))
+                    (aside ((class "sidenote"))
                          (p (sup ((class "sidenote-number")) "1") "one"))
-                    (div ((class "sidenote"))
+                    (aside ((class "sidenote"))
                          (p (sup ((class "sidenote-number")) "2") "two")))))
   )
 

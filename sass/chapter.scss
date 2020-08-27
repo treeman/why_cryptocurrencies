@@ -24,6 +24,8 @@ $sidenote-float-width: 1280px;
 @media (min-width: $sidenote-float-width) {
     %fullwidth {
         width: $fullwidth;
+        position: relative;
+        left: -210px;
     }
 }
 
@@ -81,10 +83,14 @@ $sidenote-float-width: 1280px;
 /*
  * Headers
  */
+.chapter h2 {
+    page-break-after: avoid;
+}
 .chapter h2 > a:hover {
     color: $body-font-color;
 }
 .chapter h3 > a:hover {
+    page-break-after: avoid;
     color: $body-font-color;
 }
 
@@ -187,7 +193,8 @@ blockquote {
     line-height: 1.4;
     margin: 2em 0;
     padding-left: 2em;
-    border-left: solid;
+    //border-left: solid;
+    page-break-inside: avoid;
 }
 blockquote p {
     padding: 0 !important;
@@ -237,6 +244,7 @@ table {
     display: block;
     overflow-x: auto;
     white-space: nowrap;
+    page-break-inside: avoid;
 }
 th, td {
     text-align: left;
@@ -272,6 +280,7 @@ pre, code {
     font-family: $code-font-family;
     font-size: 0.71rem;
     line-height: 1.45;
+    page-break-inside: avoid;
 }
 code {
     //background-color: tomato;
@@ -321,6 +330,7 @@ pre {
     margin-right: 4em;
     @extend %sans-serif;
     display: block;
+    page-break-inside: avoid;
 }
 .sidenote, .sidenote p, .sidenote div, .sidenote a, .sidenote p a {
     font-size: 0.8rem;
@@ -423,6 +433,7 @@ a.img-wrapper:hover {
 figure {
     margin-bottom: 1rem;
     text-align: center;
+    page-break-inside: avoid;
 
     img {
         max-width: 100%;
@@ -446,11 +457,19 @@ figcaption.margin {
     @extend %sans-serif;
 }
 
+/*
 @media (min-width: $sidenote-float-width) {
     figcaption.fullwidth {
         width: $fullwidth;
+
+        position: relative;
+        left: -5%;
+        //width: 110%;
+
+        //$fullwidth: 1220px;
     }
 }
+*/
 
 figcaption .sidenote {
     text-align: left;

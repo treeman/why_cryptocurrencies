@@ -30,7 +30,7 @@
   (let ((href (href node))
         (title (title node)))
     (if href
-        (make-link #:title title href title)
+        (make-link #:title title #:class "section" href title)
         `(span ((class "planned"))
                ,title))))
 
@@ -46,7 +46,9 @@
      ,@(page-section-toc page)))
 
 (define (page-section-toc page)
-  `((span ((class "section")) ,(make-entry (node page)))
+  ;`((span ((class "section")) ,(make-entry (node page)))
+    ;,(make-subnav (children page))))
+  `(,(make-entry (node page))
     ,(make-subnav (children page))))
 
 ;; Make a table of content, used on the homepage or dedicated toc page.

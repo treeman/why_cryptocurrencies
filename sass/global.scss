@@ -56,7 +56,8 @@ div, span, p, ul, li, a {
 
 
 p {
-    margin: 1em 0;
+    margin: 0;
+    margin-bottom: 1em;
 }
 
 
@@ -97,9 +98,11 @@ h4 {
 a:link {
     text-decoration: underline;
 }
+/*
 a:link.xref {
     text-decoration: underline dashed;
 }
+*/
 
 a:link::selection, a:link::-moz-selection {
     text-decoration: none;

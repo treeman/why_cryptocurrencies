@@ -19,12 +19,12 @@ Fees in cryptocurrencies are relatively straightforward: each transaction has a 
     Because cryptocurrencies are so volatile, the expected fee converted to fiat varies. The fees are also set by demand, but most cryptocurrencies have ample space to keep the fees very low.
 }
 
-◊div[#:class "figure"]{
+◊figure{
     ◊table-body{
         ◊tr{◊tds{Bitcoin Cash}  ◊tds{Monero}    ◊tds{Dogecoin}  ◊tds{Litecoin}  ◊tds{Bitcoin}}
         ◊tr{◊td{$0.0012}        ◊td{$0.0028}    ◊td{$0.003}     ◊td{$0.0162}    ◊td{$2.46}}
     }
-    ◊div[#:class "figcaption"]{The ◊link[median-tx-fee]{median transaction fee} for common cryptocurrencies 2019-05-25. (◊link[median-tx-fee-monero]{Link for Monero})◊sn{zero-fee-cryptos}}
+    ◊figcaption{The ◊link[median-tx-fee]{median transaction fee} for common cryptocurrencies 2019-05-25. (◊link[median-tx-fee-monero]{Link for Monero})◊sn{zero-fee-cryptos}}
 }
 
 ◊note-pos[#:top -10]{crypto-fee}
@@ -122,7 +122,7 @@ Mobile payments have become popular recently.◊mn{mobile-payments} As a represe
     A definite advantage over cryptocurrencies is mobile payments are directly linked to your existing bank account.
 }
 
-◊div[#:class "figure"]{
+◊figure{
     ◊table-body{
         ◊tr{◊td{}                                           ◊tds{Transaction fee}}
         ◊tr{◊tds{◊link[wire-transfer-fees]{Wire transfer}}  ◊td{$0–50}}
@@ -131,7 +131,7 @@ Mobile payments have become popular recently.◊mn{mobile-payments} As a represe
         ◊tr{◊tds{◊link[swish]{Swish}}                       ◊td{$0.16–0.26}}
         ◊tr{◊tds{◊link[rel-crypto-fees]{Bitcoin Cash}}      ◊td{$0.0012}}
     }
-    ◊div[#:class "figcaption"]{A summary of transaction fees of various payment systems.}
+    ◊figcaption{A summary of transaction fees of various payment systems.}
 }
 
 
@@ -260,7 +260,7 @@ An unique property of cryptocurrencies is they ◊link[transaction-security]{bec
     "https://chargeback.com/mastercard-chargeback-time-limits/"
     "MasterCard Chargeback Time Limits"))
 
-◊div[#:class "figure"]{
+◊figure{
     ◊table-body{
         ◊tr{◊td{}                   ◊tds{Notification}  ◊tds{Settlement}    ◊tds{Irreversible}}
         ◊tr{◊tds{Wire transfer}     ◊td{days}           ◊td{days}           ◊td{days}}
@@ -268,7 +268,7 @@ An unique property of cryptocurrencies is they ◊link[transaction-security]{bec
         ◊tr{◊tds{Mobile payments}   ◊td{seconds}        ◊td{days}           ◊td{days–months}}
         ◊tr{◊tds{Cryptocurrencies}  ◊td{seconds}        ◊td{an hour}        ◊td{an hour}}
     }
-    ◊div[#:class "figcaption"]{A summary of the speed of various payment systems.}
+    ◊figcaption{A summary of the speed of various payment systems.}
 }
 
 The speed that cryptocurrencies settle and become irreversible significantly reduces the risk of charge back fraud and eliminates it for most use-cases.◊sn{0-conf}

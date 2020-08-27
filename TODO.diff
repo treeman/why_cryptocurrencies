@@ -1,3 +1,25 @@
++ Read through using calibre & write down things to fix
++ Read through on mobile & write down things to fix
+    Underlined links are ugly, especially inside quotes
+    Need to remake some images to be transparent
+    Other images needs to have a background to be legible
+        Dashed/dotted underlined links are ugly as well...
+    No breaking things inside tables and other stuff?
+    Tables look fine otherwise!
+    Sneaky Steve first image looks borked, in reversing transactions
+        Figcaption for tables/images in particular a global currency
+        Remove left hand bar from quotes
+    Provably fair gambling code is fucked up
+    Prevent headers from going to the next page?
++ Look at game programming patterns to see if there's a tag or something we should use
++ What epub: tags should we use?
+
++ Rewrite about section
+
+- story in freezing of merchant accounts
+- uncensorable donations formatting
+
+
 Should create an epub 3.0 book instead!
 Can use original layout a lot... F
 https://www.ibm.com/developerworks/library/x-richlayoutepub/index.html
@@ -21,14 +43,6 @@ https://ebooks.stackexchange.com/questions/4751/stretching-an-image-to-fit-the-s
 
 https://www.thebookdesigner.com/2018/03/fun-with-formats-part-i-epub2-vs-epub3/
 
-- Image formatting?
-- unloadable svgs
-    Should remove DOCTYPE from all svgs
-    Any post that references an svg should have a properties="svg" in manifest item
-- table formating (use png)
-
-- story in freezing of merchant accounts
-- uncensorable donations formatting
 
 Need a designer for a cover
 + Find similar covers for the genre
