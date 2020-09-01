@@ -86,11 +86,13 @@ $sidenote-float-width: 1280px;
 .chapter h2 {
     page-break-after: avoid;
 }
+.chapter h3 {
+    page-break-after: avoid;
+}
 .chapter h2 > a:hover {
     color: $body-font-color;
 }
 .chapter h3 > a:hover {
-    page-break-after: avoid;
     color: $body-font-color;
 }
 
@@ -286,8 +288,8 @@ code {
     //background-color: tomato;
 }
 pre {
-    overflow-wrap: normal;
-    overflow: auto;
+    //overflow-wrap: normal;
+    //overflow: auto;
 
     margin-bottom: 1rem;
     padding: 0.4rem 0.6rem;

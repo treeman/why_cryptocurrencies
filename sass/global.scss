@@ -58,6 +58,7 @@ div, span, p, ul, li, a {
 p {
     margin: 0;
     margin-bottom: 1em;
+    page-break-inside: avoid;
 }
 
 
