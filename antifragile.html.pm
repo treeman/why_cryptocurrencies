@@ -34,13 +34,15 @@ But that's exactly how the immune system works.
 ◊subhead{The hard fork}
 
 
-◊subhead{Specific examples}
+◊subhead{Concrete examples}
+
+Let's take a look at some real events and what the reaction to them might be:
 
 
 ◊ol{
     ◊li{◊strong{Marketplaces freeze your assets}
 
-        Decentralized marketplaces that allow for non-custodial trades are created. This means the marketplaces never control your funds and all trades are made directly with the other person.
+        Decentralized marketplaces that allow for non-custodial trades are created. This means the marketplaces never control your funds and all trades are made directly with the other person, making it impossible for anyone to freeze your funds.
     }
     ◊li{◊strong{Governments declare cryptocurrencies illegal}
 
@@ -54,11 +56,11 @@ But that's exactly how the immune system works.
 
         The worst thing that can happen to a cryptocurrency is a 51% attack, but even such an event can strengthen it.
 
-        For example an attacked chain could change the mining algorithm, making all existing mining rigs worthless. This would leave impervious to the same type of attack and if an attacker wants to make another attempt brand new mining rigs would have to be purchased or created.
+        For example an attacked chain could change the mining algorithm, making all existing mining rigs worthless. This would make it impervious to the same type of attack and if an attacker wants to make another attempt brand new mining rigs would have to be purchased or created.
 
-        As another example during the BCH/BSV split the BSV miners threatened to reorg the BCH chain with empty blocks. If successful this would've made it impossible to transact on the chain, as all transactions would be deleted, essentially killing the chain. This attack was never carried out, but a reorg protection was added to the BCH software that made it more difficult to carry out such an attack.
+        As another example during the BCH/BSV split the BSV miners threatened to reorg the BCH chain with empty blocks. If successful this would've made it impossible to transact on the chain, as all transactions would be deleted, essentially killing the chain. This attack was never carried out, but protection was added to the BCH software that made it more difficult to carry out such an attack.
     }
-    ◊li{◊strong{Developers cannot (decide/get together/komma överens) the best way forward}
+    ◊li{◊strong{Developers agree on the best way forward}
 
         The coin splits in two and both paths are explored.
 
