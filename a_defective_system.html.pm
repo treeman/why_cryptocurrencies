@@ -316,11 +316,14 @@ Seen through this lens, it all makes sense. To help the government spend money i
 
 ◊subhead{A mountain of debt}
 
-While taking out debt to fuel investments was only supposed to be a temporary measure, to help the economy during downturns, today we massively increase the debt all the time. For example we've seen a ◊link[record-bull-run]{record bull run} in 2009--2019, yet the U.S. debt doubled from $11 trillion to $22 trillion.◊sn{trump-debt}
+While taking out debt to fuel investments was only supposed to be a temporary measure, to help the economy during downturns, today we massively increase the debt all the time. For example we've seen a ◊link[record-bull-run]{record bull run} in 2009--2019, yet the U.S. debt doubled from $11 trillion to $22 trillion during the same period.◊sn{trump-debt}
 
+◊; Actual source
+◊; https://fred.stlouisfed.org/graph/?id=GFDEBTN,
 ◊img[#:src "images/usa-debt.svg" #:link #t #:alt "The federal debt of the United States, measure in trillions of dollars, since 1966."]{
     The ◊link[usa-national-debt]{federal debt of the United States}, measure in trillions of dollars, since 1966.  
-    After the ◊link[financial_crisis]{2008 financial crisis} the amount of debt skyrocketed, signifying a shift in economic policy.
+    After the ◊link[financial_crisis]{2008 financial crisis} the amount of debt skyrocketed, signifying a shift in economic policy.  
+    During the COVID-19 pandemic the debt explosively increased at a pace unseen before.
 }
 
 Taking out a loan essentially borrows money from the future you, since you have to pay it back with interest. And the U.S. is paying paying for that now: in the 2020 budget 10.1% is spent on only the interest rate, and it's expected to ◊link[interest-us-debt]{take up 12.9% in 2026}, making it the fastest rising expense in the budget. Most of the debt is ◊link[public-debt]{public debt} (debt to people, companies or other governments), so refusing to pay would have disastrous consequences.
@@ -377,9 +380,9 @@ It seems like we're moving away from the original Keynesian ideas to something e
      "Public Debt With Its Pros and Cons"))
 ◊(define usa-national-debt
    (x-ref
-     "2019-11-13"
-     "https://www.investopedia.com/updates/usa-national-debt/"
-     "The National Debt Explained"))
+     "2020-09-21"
+     "https://fred.stlouisfed.org/graph/?id=GFDEBTN,"
+     "Federal Reserve Bank of St. Louis: Federal Debt: Total Public Debt"))
 ◊(define trump-eliminate-debt
    (x-ref
      "2019-11-13"
@@ -524,6 +527,23 @@ It seems to me if (or when) a recession comes we'll get caught with our pants do
      "2019-11-13"
      "http://archive.is/PbCtz"
      "archived: Why is the Federal Reserve pouring money into the financial system?"))
+
+
+◊subhead{The stock market magic trick}
+
+When the world locked down during the COVID-19 pandemic the economy predictably crashed. Many people (including me) thought that the big recession was finally here and we'd be looking at several years of tough times.
+
+But then something weird happened. Despite entire cities and countries locking down, the number of unemployed reached record numbers and many smaller companies closed their doors for good, the recession didn't come. Instead the stock market recovered very quickly, as if closing down the world economy was just a minor speed bump.
+
+One might wonder, what the hell happened?
+
+The Federal Reserve followed the script and printed trillions of dollars and used it to prop up the stock market.
+
+The Federal Reserve did they only thing they could do: they printed trillions of dollars and used it to prop up the stock market.
+
+This didn't help the businesses that went out of business or the people who became unemployed because the money is funneled to the big companies use it to artificially increase their valuation with stock buybacks or to just sit on the money. The money didn't trickle down to the masses; it got stuck driving up the stock price.
+
+Yet nothing fundamentally changed. The deep-rooted economic problems are still there, only hidden from plain sight.
 
 
 ◊subhead{Where do we go from here?}

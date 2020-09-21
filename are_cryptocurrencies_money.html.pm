@@ -355,3 +355,6 @@ There are others who've ruled in favor of Bitcoin as a currency. For example ◊
 Cryptocurrencies fulfil the properties of money very well---in fact they fulfil them better than any alternative in history. Unlike fiat they can also be considered sound money as the valuation is entirely market driven.
 
 While they are used as money in certain communities, they do not function well as global money today. They're very volatile and adoption isn't there yet.
+
+I personally think cryptocurrencies is the best class of money we've ever seen, but they haven't lived up to their potential yet.
+
