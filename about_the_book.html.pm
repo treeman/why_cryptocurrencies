@@ -8,6 +8,15 @@
 
 ◊(clear-sidenotes)
 
+◊epigraph{
+  ◊qt[#:author "Bruce Schneier"
+      #:src "Blockchain and Trust"
+      #:url blockchain-and-trust
+      #:quote-src #t]{
+    Honestly, cryptocurrencies are useless ◊mn{schneier}
+  }
+}
+
 Whenever the topic of cryptocurrencies---where Bitcoin and Ethereum are the most known---come up in conversations they're almost always misunderstood or dismissed.
 
 If you're a cryptocurrency skeptic I honestly can't blame you. All you ever hear about it on the news is how ◊link[cnn-bitcoin-rallies]{Bitcoin rallies} and then how ◊link[independent-worthless]{Cryptocurrencies are about to become worthless}. Maybe you'll see claims that it's ◊link[cnn-environment]{an environmental disaster} or only used for ◊link[independent-illegal]{illegal purposes}.
@@ -20,14 +29,7 @@ Curiously enough they don't explain what cryptocurrencies are or what they can b
 
 Maybe this is why most people --- even cryptocurrency fans --- only see cryptocurrencies as a form of investment? After all there are few things as exciting as the possibility of becoming rich very quickly.
 
-What hope does average Joe have when even the famous security technologist Bruce Schneier ◊link[blockchain-and-trust]{concludes that}:
-
-◊qt[#:author "Bruce Schneier"
-    #:src "Blockchain and Trust"
-    #:url blockchain-and-trust
-    #:quote-src #t]{
-  Honestly, cryptocurrencies are useless ◊mn{schneier}
-}
+What hope does average Joe have when even the famous security technologist Bruce Schneier dismisses them as useless?
 
 It's almost a universal phenomena. I've heard these arguments from students, co-workers, friends, family and in highly technical online communities:
 

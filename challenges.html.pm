@@ -8,6 +8,12 @@
 
 ◊(clear-sidenotes)
 
+◊epigraph{
+  ◊qt[#:author "Thomas A. Edison "]{
+    I have not failed. I've just found 10,000 ways that won't work.
+  }
+}
+
 While cryptocurrencies do some things very well, there are several hard unsolved problems with cryptocurrencies. Here's a description of some of them:
 
 

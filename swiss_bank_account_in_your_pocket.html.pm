@@ -8,6 +8,12 @@
 
 ◊(clear-sidenotes)
 
+◊epigraph{
+  ◊qt[#:author "Gabriel Santiago" #:src "Android Netrunner" #:quote-src #t #:url "https://netrunnerdb.com/en/card/01017"]{
+    Of course I steal from the rich. They’re the ones with all the money.
+  }
+}
+
 ◊; To read:
 ◊; https://news.ycombinator.com/item?id=21872987
 

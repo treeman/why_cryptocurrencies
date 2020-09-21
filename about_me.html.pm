@@ -8,6 +8,12 @@
 
 ◊(clear-sidenotes)
 
+◊epigraph{
+  ◊qt[#:author "Albert Einstein "]{
+    I have no special talents. I am only passionately curious.
+  }
+}
+
 I wonder what you might think of someone who's writing a book about cryptocurrencies? Maybe you'll think of a teenage multi-millionaire or an old neckbeard raving about free software? Or perhaps an anarchist saying things like "governments are evil" and "taxation is theft"?◊sn{there-are}
 
 ◊ndef["there-are"]{
