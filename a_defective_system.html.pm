@@ -235,8 +235,8 @@ The Great Depression was a huge economic crisis, the worst in modern history, wh
 
 While it's difficult to point out causes, and it's even debatable why we got out of it, it's fairly easy to point out some big changes introduced when combating the crisis:
 
-◊ol{
-    ◊li{Abonding the gold standard
+◊ul{
+    ◊li{Abandoned the gold standard
 
         After briefly dropping the gold standard to pay for the World War I, all countries left the gold standard during the depression.◊sn{forbade-gold}
 
@@ -458,7 +458,7 @@ While the money-making machine isn't the cause of the inequality, it's a pretty 
 
 We want to pull back on stimulation when the economy is booming, so we're prepared with all our tools when the economy is crashing. Unfortunately after a decade of economic boom, we've done the opposite:
 
-◊ol{
+◊ul{
     ◊li{The national debt has skyrocketed
 
         The larger the debt, the more expenses must be devoted to repaying the debt, leaving less for other more useful things.}

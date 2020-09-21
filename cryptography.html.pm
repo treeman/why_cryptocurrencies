@@ -315,7 +315,7 @@ Here are for example the first 10 addresses and their private keys of our seed:
 
 I reiterate the importance of backing up and protecting your seed. Here are just some ways you could lose your money:
 
-◊ol{
+◊ul{
     ◊li{You have a wallet on your phone but you lose it or it breaks down.}
     ◊li{You've written down your seed on paper, but it burns up.}
     ◊li{You forgot where you wrote down your seed.}

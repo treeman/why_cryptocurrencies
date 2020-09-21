@@ -207,7 +207,7 @@ This is ◊strong{not} a glorification of WikiLeaks---they have ◊link[wikileak
         5. ◊link[saudi-urges-attack]{Saudi urged U.S. to attack Iran}
     }
 
-    ◊ol{
+    ◊ul{
       ◊leak["Collateral murder" #:url collateral-murder-wikileaks]{
 
         WikiLeaks uploaded a video of a Baghdad helicopter attack in July 12, 2007 with the title "Collateral murder". It's a video of how an attack helicopter kills a dozen (innocent) people, including two Reuters news staff.
@@ -696,7 +696,7 @@ This idea that American soldiers are unconditionally heroes, regardless of what 
 
 But of course covering up or rationalizing events isn't a U.S. only phenomena. Here are other examples:
 
-◊ol{
+◊ul{
   ◊li{◊link[rel-tiananmen]{As previously mentioned} the Chinese cover up of the Tiananmen Square Massacre.}
   ◊li{How Genghis Khan is looked up to.
 

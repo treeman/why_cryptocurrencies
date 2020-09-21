@@ -380,7 +380,7 @@ With cryptocurrencies nobody can "steal" money from you buy printing more of it.
 
 Here's a short summary on how cryptocurrencies can help protect our money and our wealth:
 
-◊ol{
+◊ul{
     ◊li{It allows you to hold, and hide, any amount of money}
     ◊li{If you use strong encryption, nobody can confiscate it (unless they use force)}
     ◊li{You can easily bring your money everywhere}

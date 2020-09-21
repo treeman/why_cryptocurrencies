@@ -192,7 +192,7 @@ But it's not as easy as "just increase the blocksize". Larger blocks have a cent
 
 There are a number of technical pain points that needs to be improved to scale a cryptocurrency. Here's a list of some that I think are important:
 
-◊ol{
+◊ul{
     ◊li{Block propagation
 
         When a miner finds a block it's important that it propagates around the world to all other miners, so they can continue building on it. This should be done quickly, otherwise it'll increase orphan rates (the risk that a block will get discarded as another one was found at the same time), which will have a centralizing effect as it harms smaller miners more than larger miners.
@@ -340,7 +340,7 @@ The issue is that cryptocurrencies with proof-of-work use a lot of energy. Bitco
 
 This is absolutely a big problem, but there are some important points we need to keep in mind:
 
-◊ol{
+◊ul{
     ◊li{The energy isn't wasted
 
         The energy is used to secure the chain, because to attack it you need to expend at least that amount of energy. If the energy usage was low, it would be easy to attack.

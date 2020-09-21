@@ -32,11 +32,11 @@ A snake oil salesperson sells, or promotes, a valueless or fraudulent solution. 
 There are many projects in the cryptocurrency space that, curiously enough, aren't actually cryptocurrencies. Some even go so far as to call them cryptocurrencies even though they don't fulfil the criteria. For example I don't consider these real cryptocurrencies:
 
 ◊ul{
-  ◊li{OneCoin and Bitconnect---they're plain pyramid schemes◊sn{pyramid-schemes}}
+  ◊li{OneCoin and Bitconnect---they're plain pyramid schemes.◊sn{pyramid-schemes}}
   ◊li{Ripple}
-  ◊li{Stablecoins like ◊link[tether]{Tether}◊sn{tether} or JP Morgan's ◊link[JPM-coin]{JPM coin}}
-  ◊li{"Second layer solutions" like the Lightning Network}
-  ◊li{Smart tokens like the ERC20 tokens running on top of Ethereum◊sn{ICOs}}
+  ◊li{Stablecoins like ◊link[tether]{Tether}◊sn{tether} or JP Morgan's ◊link[JPM-coin]{JPM coin}.}
+  ◊li{"Second layer solutions" like the Lightning Network.}
+  ◊li{Smart tokens like the ERC20 tokens running on top of Ethereum.◊sn{ICOs}}
   ◊li{Facebook's Libra}
 }
 

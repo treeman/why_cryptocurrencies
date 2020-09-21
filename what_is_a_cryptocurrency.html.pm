@@ -9,7 +9,7 @@
 ◊(clear-sidenotes)
 
 ◊epigraph{
-  ◊qt[#:author "Nassim Taleb"]{
+  ◊qt[#:author "Nassim Nicholas Taleb"]{
     Bitcoin is the beginning of something great: a currency without a government, something necessary and imperative.
   }
 }

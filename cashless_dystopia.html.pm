@@ -121,9 +121,9 @@ Money should be ◊link[money-properties]{◊strong{acceptable}}, meaning that i
 
 The worst part of this story is that it's not even that far-fetched, and all examples are inspired by real life events:
 
-◊ol{
+◊ul{
     ◊li{
-        "Leech" is literally a synonym for "deadbeat", the name for Chinese people on the ◊link[china-social-credit]{wrong side of their social credit system}. They also have trouble getting work and get shunned if their status is discovered.
+        "Leech" is literally a synonym for "deadbeat", the name for Chinese people on the ◊link[china-social-credit]{wrong side of their social credit system}. They also have trouble getting work and gets shunned if their status is discovered.
     }
     ◊li{
         People have gotten thrown out of their homes for very minor things. For example a Michigan man underpaid his property taxes by ◊strong{$8.41}, and the county ◊link[michigan-man-house]{seized his property, sold it and kept the profits}.◊sn{asset-forfeiture}

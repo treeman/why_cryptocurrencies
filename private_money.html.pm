@@ -8,6 +8,9 @@
 
 ◊(clear-sidenotes)
 
+◊; NSA spying is declared illegal, Sep 2, 2020
+◊; https://www.reuters.com/article/us-usa-nsa-spying-idUSKBN25T3CK
+
 
 ◊epigraph{
   ◊qt[#:author "Edward Snowden"
@@ -117,7 +120,7 @@ After all we don't have curtains or blinders on our windows because we do someth
 
 Caring about privacy is a natural instinct---for good reason. It's not just about avoiding embarrassment, it's also for your own personal safety. In fact privacy is closely related to security. Your passwords and credit card numbers are obvious examples, but there are more:
 
-◊ol{
+◊ul{
   ◊li{Identity theft can ruin your life
 
       When someone assumes your identity, and use it to issue credit cards or promote scams, it can ruin your credit score, cost you millions, and force you to abandon your job and your house. Using only your private information people can literally ◊link[identity-theft-story]{take over your life}.◊sn{how-to-destroy-someones-life}
@@ -167,7 +170,7 @@ Even if you don't think you have anything to hide, others do. Here are some exam
     I focus on the economic side of privacy here, because that's related to cryptocurrencies, but it should be easy to find examples in other areas.
 }
 
-◊ol{
+◊ul{
   ◊li{Unwanted pregnancies
 
       There was a story that went viral years ago on how Target ◊link[teenage-pregnancy]{predicted a teenage pregnancy and exposed it to her father}. In a normal western household it might not be that big of a deal, but ◊link[murder-family-honor]{thousands of women are killed each year} for family "honor"---often for much less than a teenage pregnancy, such as ◊link[dowry-murder]{not getting paid enough for marrying the bride}.
@@ -307,7 +310,7 @@ Back in 2013 Edward Snowden revealed that governments were doing just this.
 
 Here are just ◊link[snowden-leaks]{some of the things} he leaked:
 
-◊ol[#:class "snowden-leaks"]{
+◊ul[#:class "snowden-leaks"]{
     ◊leak["All phone calls are recorded"
           #:url recorded-phone-calls]{
 

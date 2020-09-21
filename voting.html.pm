@@ -75,7 +75,7 @@ But we also saw some problems that are caused by using paper votes:◊sn{paper?}
     I refer to voting with physical ballots as "paper voting", but the exact way we vote can differ. In the U.S. they used punchcards where you create a hole next to who you want to vote for, while in Sweden we select a piece of paper corresponding to the party we want to vote for. In other cases you might use a pen to leave a mark or write who you want to vote for.
 }
 
-◊ol{
+◊ul{
     ◊li{Inexact vote counting
 
         Humans counting votes will inevitably have a margin of error, but so will these voting machines that cannot see what we humans can.
@@ -114,7 +114,7 @@ But we also saw some problems that are caused by using paper votes:◊sn{paper?}
 
 In order to address some of the problems with paper voting, electronic voting is growing in popularity. The benefits are clear; you avoid the problem with questionable ballots and vote counting is precise and instant. But there are significant drawbacks that make them ◊link[georgia-legal-battle]{a very bad idea}:
 
-◊ol{
+◊ul{
     ◊li{Lack of transparency
 
         How do you know that your vote has been counted correctly? That the machine didn't switch it out for some other vote? An electronic voting machine is largely a black box, one we're not sure how it works so we just hope it does the right thing.

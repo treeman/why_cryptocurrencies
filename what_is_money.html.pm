@@ -160,7 +160,7 @@ What would life look like if we didn't have money? We would have to turn to bart
 
 But there are problems with this system:
 
-◊ol{
+◊ul{
     ◊li{What if the carpenter doesn't want your pig?
 
         You would have to trade with others and find something the seller would accept.
@@ -193,7 +193,7 @@ One common answer to the question "what gives money value?" is ◊def[state-theo
 
 The basic thesis is that it's the state that gives value to money:
 
-◊ol{
+◊ul{
     ◊li{Fiat currency is declared by the state to be ◊def[legal-tender]{legal tender}.
 
         Which, among other things, means merchants have to accept it by law.}
