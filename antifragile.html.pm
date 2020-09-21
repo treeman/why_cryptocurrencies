@@ -9,7 +9,10 @@
 ◊; https://unchained-capital.com/blog/bitcoin-is-antifragile/
 ◊; https://cryptofundamental.com/in-pursuit-of-lindycoin-212bacafc395?gi=416e2a7a461c
 
+◊; Reference to the Lindy Effect!
+
 ◊(clear-sidenotes)
+
 
 ◊subhead{Antifragility}
 
