@@ -86,7 +86,7 @@ def clean_up_xhtml(html):
 
     # InDesign only recognizes actual tags, not classes.
     html = re.sub(r'<span class="sans-tnum">([^<]+)</span>',
-                  r"<tnum>\1<tnum/>", html)
+                  r"<tnum>\1</tnum>", html)
 
     return html
 
