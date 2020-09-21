@@ -230,7 +230,7 @@ The work is to find a solution to a computing problem.◊sn{asics} The problem i
 
 A solution is proof that you've done the work---it's proof that you've expended energy. It's like a lottery and you can get lucky, but in the long run it balances out.  Since you require a significant investment to find a block this can be used as sybil resistance. You can't just create thousands of fake identities for free.
 
-Important to note is that everyone doesn't have to be a miner. The blockchain is open for anyone to read and validate, it's only writing that's exclusive to miners.
+Important to note is that the system is permissionless so anyone can become a miner, but you don't have to be. The blockchain is open for anyone to read and validate, it's only writing that's exclusive to miners.
 
 ◊note-pos[#:top -65]{valid}
 ◊note-pos[#:top -60]{asics}
