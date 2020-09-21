@@ -5,7 +5,7 @@
 
 (provide (all-defined-out))
 
-(define main-title "Why cryptocurrencies?")
+(define main-title "Why Cryptocurrencies?")
 (define subtitle "Why they exist, what they do and why they matter")
 (define description "An explanation on why cryptocurrencies were created, what they do differently and why they matter. Instead of focusing on the speculative side, we focus on actual use cases of cryptocurrencies and what they can do for us.")
 

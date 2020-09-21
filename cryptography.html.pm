@@ -8,6 +8,14 @@
 
 ◊(clear-sidenotes)
 
+◊epigraph{
+  ◊qt[#:author "Douglas Adams"
+      #:src "The Hitchhiker's Guide to the Galaxy"
+      #:quote-src #t]{
+    Don't Panic.
+  }
+}
+
 This chapter serves as an introduction to the cryptographic terms and constructs mentioned in the book. The aim is to give you an idea of what they are and how they might be used in a cryptocurrency context. I won't go into low-level details of how they work, so you don't need to know any mathematics or programming to follow along. If this interests you, I hope this introduction will be helpful as a starting point when researching the topics on your own.◊sn{history}
 
 ◊ndef["history"]{

@@ -8,6 +8,12 @@
 
 ◊(clear-sidenotes)
 
+◊epigraph{
+  ◊qt[#:author "Marc Kenigsberg"]{
+    Blockchain is the tech. Bitcoin is merely the first mainstream manifestation of its potential.
+  }
+}
+
 Money is perhaps the most obvious usage of cryptocurrencies but there are other ways to use them. In this section I'll highlight some of the alternative usages and we'll see that we can build other functionality on top of existing cryptocurrencies.◊sn{blockchain-hype}
 
 ◊ndef["blockchain-hype"]{

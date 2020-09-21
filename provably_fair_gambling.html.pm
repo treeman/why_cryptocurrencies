@@ -13,7 +13,7 @@
 
 ◊epigraph{
   ◊qt[#:author "Attributed to Michael Cassius McDonald"]{
-    There's a sucker born every minute
+    There's a sucker born every minute.
   }
 }
 

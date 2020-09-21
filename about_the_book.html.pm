@@ -9,11 +9,8 @@
 ◊(clear-sidenotes)
 
 ◊epigraph{
-  ◊qt[#:author "Bruce Schneier"
-      #:src "Blockchain and Trust"
-      #:url blockchain-and-trust
-      #:quote-src #t]{
-    Honestly, cryptocurrencies are useless ◊mn{schneier}
+  ◊qt[#:author "Steve Eisman"]{
+    What value does cryptocurrency add? No one’s been able to answer that question to me.
   }
 }
 
@@ -29,7 +26,14 @@ Curiously enough they don't explain what cryptocurrencies are or what they can b
 
 Maybe this is why most people --- even cryptocurrency fans --- only see cryptocurrencies as a form of investment? After all there are few things as exciting as the possibility of becoming rich very quickly.
 
-What hope does average Joe have when even the famous security technologist Bruce Schneier dismisses them as useless?
+What hope does average Joe have when even the famous security technologist Bruce Schneier ◊link[blockchain-and-trust]{concludes that}:
+
+◊qt[#:author "Bruce Schneier"
+    #:src "Blockchain and Trust"
+    #:url blockchain-and-trust
+    #:quote-src #t]{
+  Honestly, cryptocurrencies are useless ◊mn{schneier}
+}
 
 It's almost a universal phenomena. I've heard these arguments from students, co-workers, friends, family and in highly technical online communities:
 
