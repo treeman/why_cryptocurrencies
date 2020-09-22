@@ -468,7 +468,9 @@ This is ◊strong{not} a glorification of WikiLeaks---they have ◊link[wikileak
 
     After almost 7 years at the Ecuadorien embassy, Julian Assange finally leaves the embassy and is arrested.◊sn{second-arrest}
 
-    While he was immediately ◊link[assange-indicted]{indicted on 17 counts of violating the Espionage Act} by the U.S. his release was news for the Swedish prosecutors. When Assange first sought asylum many people said it was only to avoid the Swedish charges and he used fears of the U.S. as a pretext, but in hindsight the fears might've been real.
+    While he was immediately ◊link[assange-indicted]{indicted on 17 counts of violating the Espionage Act} by the U.S. his release was news for the Swedish prosecutors. Nevertheless the Swedish investigation ◊link[assange-rape-reopen-19]{was soon reopened} as well.
+
+    While he was immediately ◊link[assange-indicted]{indicted on 17 counts of violating the Espionage Act} by the U.S. his release was news for the Swedish prosecutors. 
 
     At the moment, the Swedish investigation is open once again and Assange is waiting for the U.K. to rule on extradition requests from both Sweden and the U.S.
 
@@ -488,9 +490,32 @@ This is ◊strong{not} a glorification of WikiLeaks---they have ◊link[wikileak
 ◊; https://news.ycombinator.com/item?id=19995363
 
 ◊;https://www.theguardian.com/media/live/2019/apr/11/wikileaks-founder-julian-assange-arrested-at-the-ecuadorean-embassy-live-updates
+  }
 
+  ◊entry["The rape investigation is dropped"
+         #:date "November 2019"]{
+    A few months later the Swedish prosecutor once again ◊link[assange-rape-closed-19]{dropped their investigation against Assange}, citing the long period of time since the alleged crime as the reason.
+
+    When Assange first sought asylum many people said it was only to avoid the Swedish charges and he used fears of the U.S. as a pretext, but in hindsight the fears might have been real.
 
   }
+
+  ◊entry["Observers are denied entry to the Assange hearings"
+         #:date "September 2020"]{
+
+    During Assange's extradition hearing, where the U.K. will rule on extradition to the U.S., Amnesty International were ◊link[amnesty-hearings]{blocked from observing the hearings}. They claim the hearings were intentionally locked down:
+
+    ◊qt{
+        The judge wrote back expressing her "regret" at her decision and saying: “I fully recognise that justice should be administered in public". Despite her regret and her recognition that scrutiny is a vital component of open justice, the judge did not change her mind.
+
+        [...]
+
+        Amnesty International have monitored trials from Guantanamo Bay to Bahrain, Ecuador to Turkey. For our observer to be denied access profoundly undermines open justice.
+    }
+
+    As I'm writing this in late September it's not yet decided what will happen to Assange, but I can't shake the feeling that there's something fishy about all this.
+  }
+
 }
 
 ◊; UN panel 'rules in Assange's favour'
@@ -685,13 +710,46 @@ This is ◊strong{not} a glorification of WikiLeaks---they have ◊link[wikileak
     "2019-08-28"
     "https://www.theguardian.com/uk-news/2019/apr/11/julian-assange-arrested-at-ecuadorian-embassy-wikileaks"
     "Julian Assange faces US extradition after arrest at Ecuadorian embassy"))
+◊(define assange-rape-reopen-19
+  (x-ref
+    "2020-09-22"
+    "https://www.bbc.com/news/world-europe-48253343"
+    "The Swedish rape investigation against Assange is reopened"))
+◊(define assange-rape-closed-19
+  (x-ref
+    "2020-09-22"
+    "https://www.bbc.com/news/world-europe-50473792"
+    "The Swedish rape investigation against Assange is closed once again"))
+◊(define amnesty-hearings
+  (x-ref
+    "2020-09-22"
+    "https://www.amnesty.org/en/latest/news/2020/09/why-are-amnesty-international-monitors-not-able-to-observe-the-assange-hearing/"
+    "Why are Amnesty International monitors not able to observe the Assange hearing?"))
+◊(define gallagher-dismissed
+  (x-ref
+    "2020-09-22"
+    "https://fox5sandiego.com/news/navy-dismisses-case-against-seal-accused-of-covering-up-war-crimes/"
+    "Navy dismisses case against SEAL accused of covering up war crimes"))
+◊(define gallagher-chief
+  (x-ref
+    "2020-09-22"
+    "https://www.navytimes.com/news/your-navy/2019/11/04/report-trump-makes-seal-gallagher-a-chief-again/"
+    "Report: Trump makes SEAL Gallagher a chief again"))
 
 
 ◊subhead{Hiding skeletons in the closet}
 
 There's a minor theme in the WikiLeaks story: How the U.S. government instead of admitting these horrible events, punishing the responsible and making sure they never happen again, seem to do everything to cover them up.
 
-This idea that American soldiers are unconditionally heroes, regardless of what they've done, makes me both angry and sad. Donald Trump has for example expressed concerns over soldiers being prosecuted for war crimes, and ◊link[trump-pardons]{considers pardoning them}. This includes a ◊link[gallagher]{Navy Seals soldier} who (allegedly) killed a 15-year old defenseless kid with his hunting knife and shot unarmed civilians. Those aren't the actions of a hero.
+This idea that American soldiers are unconditionally heroes, regardless of what they've done, makes me both angry and sad. Donald Trump has for example expressed concerns over soldiers being prosecuted for war crimes, and ◊link[trump-pardons]{considers pardoning them}. This includes a ◊link[gallagher]{Navy Seals soldier} who (allegedly) killed a 15-year old defenseless kid with his hunting knife and shot unarmed civilians.◊sn{gallagher}
+
+Those aren't the actions of a hero.
+
+◊ndef["gallagher"]{
+    The serious charges against the Navy Seal solder ◊link[gallagher-dismissed]{were later dismissed} and he was "only" convicted for posing for a picture with the dead body of the 15-year old.
+
+    Trump continued his support as he announced he was rescinding awards given to some of the Navy prosecutors who brought up the case.
+}
 
 
 But of course covering up or rationalizing events isn't a U.S. only phenomena. Here are other examples:
