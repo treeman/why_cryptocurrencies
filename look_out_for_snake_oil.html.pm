@@ -81,13 +81,13 @@ When evaluating cryptocurrencies here are some red flags to look out for:
     }
     ◊li{Central authorities.
 
-        If someone can freeze your coins, prevent them from being used in a particular country or generate them from thin air then it's not a cryptocurrency.
+        A "centralized cryptocurrency" is an oxymoron because it's not trustless or permissionless and it doesn't prevent a single entity from manipulating the supply, the very things that define a cryptocurrency.
 
-        A "centralized cryptocurrency" is an oxymoron.
+        If someone can freeze your coins, prevent them from being used in a particular country or generate them from thin air then it's not a cryptocurrency.
     }
     ◊li{Bad consensus algorithms or centralized governance protocols.
 
-        If a cryptocurrency isn't working like I describe in ◊(link how_do_cryptocurrencies_work), then chances are it's not actually decentralized.
+        If a cryptocurrency isn't working like I describe in ◊(link how_do_cryptocurrencies_work), then chances are it's not actually decentralized and calling it a cryptocurrency might be a stretch.
     }
     ◊li{Promises that sound too good to be true.
 
@@ -111,7 +111,7 @@ There are many traps to fall into in this space. I think the best antidote is to
 
 
 ◊ndef["pyramid-schemes"]{
-    Leaders of OneCoin got charged for ◊link[onecoin]{operating it as a pyramid scheme} and I'll heavily recommend BBC's podcast series ◊link[missing-crypto-queen]{The Missing Cryptoqueen} for a fascinating account of the scam. Meanwhile the FBI is seeking ◊link[fbi-bitconnect]{victims who invested in Bitconnect}.
+    Leaders of OneCoin got charged for ◊link[onecoin]{operating it as a pyramid scheme} and I'll recommend BBC's podcast series ◊link[missing-crypto-queen]{The Missing Cryptoqueen} for a fascinating account of the scam. Meanwhile the FBI is seeking ◊link[fbi-bitconnect]{victims who invested in Bitconnect}.
 }
 
 ◊ndef["ICOs"]{

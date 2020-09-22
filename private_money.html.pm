@@ -8,9 +8,6 @@
 
 ◊(clear-sidenotes)
 
-◊; NSA spying is declared illegal, Sep 2, 2020
-◊; https://www.reuters.com/article/us-usa-nsa-spying-idUSKBN25T3CK
-
 
 ◊epigraph{
   ◊qt[#:author "Edward Snowden"
@@ -383,7 +380,7 @@ Here are just ◊link[snowden-leaks]{some of the things} he leaked:
       (div [[class "title"]] ,xtitle)
       ,@text))
 
-As is praxis for authoritative regimes, this capability isn't used to protect the people of the state, but the state itself. Snowden's leaks were to the benefit of the people, yet he and other whistleblowers like him are ◊link[full-power]{facing the full power of the U.S. aimed at them}.
+As is praxis for authoritative regimes, this capability isn't used to protect the people of the state, but the state itself. Snowden's leaks were to the benefit of the people, yet he and other whistleblowers like him are ◊link[full-power]{facing the full power of the U.S. aimed at them}. This despite the U.S. court finding that ◊link[surveillance-illegal]{the mass surveillance program was illegal}.
 
 You see, all this data is stored ◊em{forever}, just waiting to be used to nail you for a crime. And let's be clear: everyone has committed a crime. For example how many have ever illegally downloaded a movie or music? Or how many have driven too fast? Not to mention ◊link[uk-stupid-laws]{old ridiculous laws} that are still in effect, such as the ◊link[metropolitan-police-act]{Metropolitan Police Act of 1839}, which makes carrying a plank along a pavement illegal in the U.K. (section 54).◊sn{jews}
 
@@ -433,6 +430,7 @@ You see, all this data is stored ◊em{forever}, just waiting to be used to nail
      "2019-12-09"
      "https://prefuse.org/edward-snowden-leaks"
      "The Biggest Leaks Revealed by Edward Snowden"))
+
 
 ◊;link{https://mashable.com/2014/06/05/edward-snowden-revelations/?europe=true}
 ◊;link{https://prefuse.org/edward-snowden-leaks#the-nsa-can-demand-call-records-and-data-from-telephone-companies}
