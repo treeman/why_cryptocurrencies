@@ -434,3 +434,8 @@
     "https://blockchair.com/"
     "Blockchair"))
 
+(define surveillance-illegal
+   (x-ref
+     "2020-09-22"
+     "https://www.reuters.com/article/us-usa-nsa-spying-idUSKBN25T3CK"
+     "U.S. court: Mass surveillance program exposed by Snowden was illegal"))

@@ -54,12 +54,12 @@ It's actually quite hard to classify things as legal or illegal and moral or imm
 Mass surveillance, which we covered in the chapter ◊link[private_money]{Private money}, is immoral yet legal.◊sn{surveillance} Civil asset forfeiture, which allows the police to outright take your stuff, is another example of an immoral legal practice. (We'll explore civil asset forfeiture ◊link[protection_against_government_confiscation]{in a future chapter}.)
 
 ◊ndef["surveillance"]{
-    You can argue that mass surveillance is in fact illegal, but in practice it doesn't really matter as they rewrite the laws anyway.
+    You can argue that mass surveillance is in fact illegal and the U.S. court did rule that the program that Snowden revealed ◊link[surveillance-illegal]{was illegal}.
 }
 
 It's easy to find examples of silly laws that make moral actions illegal (just search for "silly laws" or similar), but I think there are more interesting issues. For example stealing is illegal, but is it immoral for a starving child to steal food to survive? Or for the child to steal food for his starving little sister? And where on the moral scale would you place prostitution?
 
-The issue of "right or wrong" isn't so easy to answer, and we cannot just rely on what's legal and what's not. Instead I think we should ask ourselves if it's moral or immoral (which is of course subjective).
+The issue of "right or wrong" isn't so easy to answer, and we cannot just rely on what's legal and what's not. Instead I think we should ask ourselves if it's moral or immoral (which is also subjective).
 
 ◊note-pos[#:top -23]{surveillance}
 
