@@ -8,6 +8,12 @@
 
 ◊(clear-sidenotes)
 
+◊epigraph{
+  ◊qt[#:author "Roger Ver"]{
+    Price is the least interesting thing about bitcoin.
+  }
+}
+
 This is my attempt to explain how a standard cryptocurrency like Bitcoin works. Other cryptocurrencies may diverge on various points but the fundamentals are the same.◊mn{others}
 
 As stated in the introduction the focus isn't on technical details, but it's a hard balance to make between keeping it simple and explaining how cryptocurrencies work. If this chapter is too technical you can safely skip to the ◊link[next-chapter]{next chapter} or just read ◊link[summary]{the summary}---it's not required knowledge.
@@ -222,7 +228,7 @@ The work is to find a solution to a computing problem.◊sn{asics} The problem i
 
 A solution is proof that you've done the work---it's proof that you've expended energy. It's like a lottery and you can get lucky, but in the long run it balances out.  Since you require a significant investment to find a block this can be used as sybil resistance. You can't just create thousands of fake identities for free.
 
-Important to note is that everyone doesn't have to be a miner. The blockchain is open for anyone to read and validate, it's only writing that's exclusive to miners.
+Important to note is that the system is permissionless so anyone can become a miner, but you don't have to be. The blockchain is open for anyone to read and validate, it's only writing that's exclusive to miners.
 
 ◊note-pos[#:top -65]{valid}
 ◊note-pos[#:top -60]{asics}

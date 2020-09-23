@@ -109,7 +109,7 @@ In practice civil asset forfeiture is state-sanctioned theft where the police ar
     "That's a nice car you have there, it would be a shame if anything happened to it."
 }
 
-So how can cryptocurrencies protect you against the forfeiture laws? While they naturally can't prevent the police from seizing your house or your car, they allow you to easily store and travel with as much money as you can---without anyone noticing. Even if they know you have them there's nothing they can physically steal---they would need ◊link[xkcd-pass]{your password}. (Of course they might be able to coerce you to unluck it for them.)◊mn{how-to-store}
+So how can cryptocurrencies protect you against the forfeiture laws? While they naturally can't prevent the police from seizing your house or your car, they allow you to easily store and travel with as much money as you can---without anyone noticing. Even if they know you have them there's nothing they can physically steal---they would need ◊link[xkcd-pass]{your password}. (Of course they might be able to coerce you to unlock it for them.)◊mn{how-to-store}
 
 ◊note-pos{how-to-store}
 
@@ -380,7 +380,7 @@ With cryptocurrencies nobody can "steal" money from you buy printing more of it.
 
 Here's a short summary on how cryptocurrencies can help protect our money and our wealth:
 
-◊ol{
+◊ul{
     ◊li{It allows you to hold, and hide, any amount of money}
     ◊li{If you use strong encryption, nobody can confiscate it (unless they use force)}
     ◊li{You can easily bring your money everywhere}

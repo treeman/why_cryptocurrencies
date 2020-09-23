@@ -8,6 +8,12 @@
 
 ◊(clear-sidenotes)
 
+◊epigraph{
+  ◊qt[#:author "Dakota Skye" #:url "https://mobile.twitter.com/dakota_skyexxx/status/458517153323712513" #:date "April 22, 2014"]{
+    @DirectorJoshua something has to be done. #chase has fucked with people before with other issues. Should not get away with shit like this.
+  }
+}
+
 If you want to accept digital payments today you need to partner with a payment processor, for example Stripe or PayPal. Usually that's not a problem---but what if they say no?◊mn{banks}
 
 ◊ndef["banks"]{

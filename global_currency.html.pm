@@ -190,9 +190,7 @@ Cryptocurrency skeptics often ask why anyone would ever want to use money with s
 
 Venezuela had a monthly inflation of 815,194%, in May 2019 alone. It's a huge number that means prices double in less than two days---all the time. This means if you could afford two chickens today, in two days you can only afford one. For those living through it they would prefer ◊em{anything} else over the local currency; be it gold, U.S. dollar, ◊link[venezuela-bitcoin]{Bitcoin}, clothes, food---you name it.
 
-It's easy to think that hyperinflation is a thing of the past, or that it only affects poor countries far away. But according to the ◊link[hanke-krus]{Hanke-Krus hyperinflation table} we've had 55 cases of hyperinflation since 1920, with 31 of them after 1990 (roughly half related to the collapase of the Soviet Union).◊mn{line-inflation} 
-
-Some famous examples include:
+It's easy to think that hyperinflation is a thing of the past, or that it only affects poor countries far away. But according to the ◊link[hanke-krus]{Hanke-Krus hyperinflation table} we've had 55 cases of hyperinflation since 1920, with 31 of them after 1990 (roughly half related to the collapase of the Soviet Union).◊sn{line-inflation} For example:
 
 
 ◊div[#:class "inflation-examples"]{
@@ -209,7 +207,11 @@ Some famous examples include:
     }
     ◊inflation["Zimbabwe"
                #:date "2004--2009"]{
-        The other example of hyperinflation in the 21◊sup{th} century is in Zimbabwe. At its worst prices doubled in just over 24 hours. While things settled down, Zimbabwe is ◊link[zimbabwe-trouble]{once again in trouble} and the ◊link[imf-inflation]{International Monetary Fund projects} an inflation of 161% for 2019.
+        The first example of hyperinflation in the 21◊sup{th} century is Zimbabwe. At its worst prices doubled in just over 24 hours. While things settled down, Zimbabwe is ◊link[zimbabwe-trouble]{once again in trouble} and the ◊link[imf-inflation]{International Monetary Fund projects} an inflation of 161% for 2019.
+    }
+    ◊inflation["Lebanon"
+               #:date "2020--"]{
+        After an ◊link[libanon-inflation]{inflation of 56.53% in May}, Lebanon became the second country after Venezuela to experience hyperinflation in 2020.
     }
 }
 
@@ -378,4 +380,10 @@ Instead of being just a currency used throughout the world, a cryptocurrency is 
      "2019-12-10"
      "https://twitter.com/christroutner/status/1142080363981709313"
      "Chris Troutner on Twitter"))
+
+◊(define libanon-inflation
+   (x-ref
+     "2020-09-21"
+     "https://tradingeconomics.com/lebanon/inflation-cpi"
+     "Lebanon Inflation Rate"))
 

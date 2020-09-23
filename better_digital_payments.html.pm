@@ -10,7 +10,8 @@
 
 ◊epigraph{
   ◊qt[#:author "Frank Underwood"
-      #:src "House of Cards"]{
+      #:src "House of Cards"
+      #:quote-src #t]{
     When money is coming your way, you don't ask questions
   }
 }

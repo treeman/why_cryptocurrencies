@@ -8,6 +8,12 @@
 
 ◊(clear-sidenotes)
 
+◊epigraph{
+  ◊qt[#:author "Gabriel Santiago" #:src "Android Netrunner" #:quote-src #t #:url "https://netrunnerdb.com/en/card/01017"]{
+    Of course I steal from the rich. They’re the ones with all the money.
+  }
+}
+
 ◊; To read:
 ◊; https://news.ycombinator.com/item?id=21872987
 
@@ -211,7 +217,7 @@ The world is just extremely unfair, and if anything it should be the other way a
 
 In an ideal world everyone would pay their taxes as they should, while they would also have financial privacy. But this is sadly just a dream, and it's not possible in reality. So let's look at some hypothetical worlds, to find out what we'd like to move towards.
 
-◊ol{
+◊ul{
     ◊li{It's fine the way it is
 
         I doubt anyone except the Trumps of the world, who are the ones who benefit the most, would say the ideal world is what we have today. The ◊link[inequality]{inequality is increasing} as the rich gets richer while paying less taxes, it's seems clear to me we have a serious problem that needs to be fixed.

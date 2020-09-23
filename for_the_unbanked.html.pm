@@ -249,7 +249,7 @@ There are a number of benefits cryptocurrencies have:
     2. Safeguard your money (while you can hold cryptocurrencies yourself, it makes sense for many to let others hold them for you).
 }
 
-◊ol{
+◊ul{
     ◊li{Cryptocurrencies are for everyone.
 
         Cryptocurrencies are ◊em{permissionless}: ◊link[no-more-third-parties]{you don't need permission} from anyone to use them. It doesn't matter if you're homeless, a porn star or a tourist---you can always have access to digital payments and you cannot be shut-out.

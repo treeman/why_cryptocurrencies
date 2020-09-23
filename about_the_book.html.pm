@@ -8,11 +8,17 @@
 
 ◊(clear-sidenotes)
 
+◊epigraph{
+  ◊qt[#:author "Steve Eisman"]{
+    What value does cryptocurrency add? No one’s been able to answer that question to me.
+  }
+}
+
 Whenever the topic of cryptocurrencies---where Bitcoin and Ethereum are the most known---come up in conversations they're almost always misunderstood or dismissed.
 
 If you're a cryptocurrency skeptic I honestly can't blame you. All you ever hear about it on the news is how ◊link[cnn-bitcoin-rallies]{Bitcoin rallies} and then how ◊link[independent-worthless]{Cryptocurrencies are about to become worthless}. Maybe you'll see claims that it's ◊link[cnn-environment]{an environmental disaster} or only used for ◊link[independent-illegal]{illegal purposes}.
 
-Curiously enough they don't explain what cryptocurrencies are or what they can be useful for. But it's to be expected as news today focuses on eye-catching stories, ◊mn{news} it's why unsettling events like murder gets a disproportional amount of focus.
+Curiously enough they don't explain what cryptocurrencies are or what they can be useful for. But it's to be expected as news today focuses on eye-catching stories; ◊mn{news} it's why unsettling events like murder gets a disproportional amount of focus.
 
 ◊ndef["news"]{
     It's interesting when the news handles something you have a good understanding of---they're often completely wrong. Makes you wonder, how wrong are they about things you're not familiar with?
@@ -99,6 +105,8 @@ Instead of putting on blinders and getting stuck at these problems---which I bel
 ◊div[#:class "not-investment"]{
   ◊strong{And of course none of this is investment advice.}
 }
+
+Well, the only advice I'll give in that area is to understand what you're investing in, and my hope is that this book can help with that.
 
 ◊ndef["schneier"]{
     Schneier brings an interesting perspective and he's right about one very important aspect: contrary to popular belief cryptocurrencies don't remove ◊strong{all} trust.

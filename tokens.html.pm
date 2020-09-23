@@ -8,6 +8,14 @@
 
 ◊(clear-sidenotes)
 
+
+◊epigraph{
+  ◊qt[#:src "Shooter (2007)" #:quote-src #t
+      #:url "https://www.imdb.com/title/tt0822854/"]{
+    The moment you think you got it figured, you’re wrong.
+  }
+}
+
 One of the most important properties that let cryptocurrencies function well as money is the limited supply. If someone was allowed to print coins from thin air, it would be very poor money and would essentially be worthless.
 
 But would they really be completely useless? These cryptocurrency-like things are called ◊em{tokens}, and they aren't that useless. In this chapter we'll look at how they can enable more accessible fund raising, improve gift cards or enable peer-to-peer derivative trading.

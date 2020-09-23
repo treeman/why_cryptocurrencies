@@ -13,7 +13,7 @@
 
 ◊epigraph{
   ◊qt[#:author "Attributed to Michael Cassius McDonald"]{
-    There's a sucker born every minute
+    There's a sucker born every minute.
   }
 }
 
@@ -168,7 +168,7 @@ It checks out, the casino won fair and square.
 
 There are limits to the simple toy example I've described:
 
-◊ol{
+◊ul{
     ◊li{Seeds need to be longer
 
         A seed like ◊icode{4} is far too simple. We'd need a much longer seed for the game to be secure. Maybe something like ◊icode{65654687731080707945}?

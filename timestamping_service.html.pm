@@ -92,7 +92,7 @@ As long as we can trust the Wayback Machine (and I do consider them generally tr
 
 What is a timestamping service useful for? Here are some examples:
 
-◊ol{
+◊ul{
     ◊li{Proof of invention.
 
         Surprisingly often history a discovery happens ◊link[multiple-discoveries]{independently and at around the same time}. What if you come up with an idea or an invention and you didn't want to reveal it yet but still wanted to claim priority?

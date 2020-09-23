@@ -116,7 +116,7 @@ After all we don't have curtains or blinders on our windows because we do someth
 
 Caring about privacy is a natural instinct---for good reason. It's not just about avoiding embarrassment, it's also for your own personal safety. In fact privacy is closely related to security. Your passwords and credit card numbers are obvious examples, but there are more:
 
-◊ol{
+◊ul{
   ◊li{Identity theft can ruin your life
 
       When someone assumes your identity, and use it to issue credit cards or promote scams, it can ruin your credit score, cost you millions, and force you to abandon your job and your house. Using only your private information people can literally ◊link[identity-theft-story]{take over your life}.◊mn{how-to-destroy-someones-life}
@@ -166,7 +166,7 @@ Even if you don't think you have anything to hide, others do. Here are some exam
     I focus on the economic side of privacy here, because that's related to cryptocurrencies, but it should be easy to find examples in other areas.
 }
 
-◊ol{
+◊ul{
   ◊li{Unwanted pregnancies
 
       There was a story that went viral years ago on how Target ◊link[teenage-pregnancy]{predicted a teenage pregnancy and exposed it to her father}. In a normal western household it might not be that big of a deal, but ◊link[murder-family-honor]{thousands of women are killed each year} for family "honor"---often for much less than a teenage pregnancy, such as ◊link[dowry-murder]{not getting paid enough for marrying the bride}.
@@ -306,7 +306,7 @@ Back in 2013 Edward Snowden revealed that governments were doing just this.
 
 Here are just ◊link[snowden-leaks]{some of the things} he leaked:
 
-◊ol[#:class "snowden-leaks"]{
+◊ul[#:class "snowden-leaks"]{
     ◊leak["All phone calls are recorded"
           #:url recorded-phone-calls]{
 
@@ -379,7 +379,7 @@ Here are just ◊link[snowden-leaks]{some of the things} he leaked:
       (div [[class "title"]] ,xtitle)
       ,@text))
 
-As is praxis for authoritative regimes, this capability isn't used to protect the people of the state, but the state itself. Snowden's leaks were to the benefit of the people, yet he and other whistleblowers like him are ◊link[full-power]{facing the full power of the U.S. aimed at them}.
+As is praxis for authoritative regimes, this capability isn't used to protect the people of the state, but the state itself. Snowden's leaks were to the benefit of the people, yet he and other whistleblowers like him are ◊link[full-power]{facing the full power of the U.S. aimed at them}. This despite the U.S. court finding that ◊link[surveillance-illegal]{the mass surveillance program was illegal}.
 
 You see, all this data is stored ◊em{forever}, just waiting to be used to nail you for a crime. And let's be clear: everyone has committed a crime. For example how many have ever illegally downloaded a movie or music? Or how many have driven too fast? Not to mention ◊link[uk-stupid-laws]{old ridiculous laws} that are still in effect, such as the ◊link[metropolitan-police-act]{Metropolitan Police Act of 1839}, which makes carrying a plank along a pavement illegal in the U.K. (section 54).◊sn{jews}
 
@@ -429,6 +429,7 @@ You see, all this data is stored ◊em{forever}, just waiting to be used to nail
      "2019-12-09"
      "https://prefuse.org/edward-snowden-leaks"
      "The Biggest Leaks Revealed by Edward Snowden"))
+
 
 ◊;link{https://mashable.com/2014/06/05/edward-snowden-revelations/?europe=true}
 ◊;link{https://prefuse.org/edward-snowden-leaks#the-nsa-can-demand-call-records-and-data-from-telephone-companies}
