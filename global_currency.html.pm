@@ -212,7 +212,7 @@ It's easy to think that hyperinflation is a thing of the past, or that it only a
     }
     ◊inflation["Lebanon"
                #:date "2020--"]{
-        After an ◊link[libanon-inflation]{inflation of 56.53% in May}, Lebanon became the second country after Venezuela that's experiencing hyperinflation in 2020.
+        After an ◊link[libanon-inflation]{inflation of 56.53% in May}, Lebanon became the second country after Venezuela to experience hyperinflation in 2020.
     }
 }
 

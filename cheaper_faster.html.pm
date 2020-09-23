@@ -322,12 +322,17 @@ In addition it might make risk management more practical. While it's basically i
 
 ◊subhead{Conclusion}
 
-We've seen large benefits to cryptocurrency payments, and one large drawback:
+We've seen three large benefits to cryptocurrency payments:
 
 ◊ul{
     ◊li-plus{Cheaper}
-    ◊li-plus{Settles quickly}
+    ◊li-plus{Settles faster}
     ◊li-plus{Reduces or removes the risk for charge back fraud}
+}
+
+And one large drawback:
+
+◊ul{
     ◊li-neg{No inherent fraud protection for costumers}
 }
 
