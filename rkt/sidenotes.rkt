@@ -336,7 +336,6 @@
           `((p ,@xs))))
       `((p ,@xs)))))
 
-
 ;; A larger test to test the sidenote placement.
 (module+ test
   (require rackunit)

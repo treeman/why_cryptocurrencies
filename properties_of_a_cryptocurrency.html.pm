@@ -102,7 +102,7 @@ Just like with cash cryptocurrency transfers are irreversible.◊sn[#:top -6]{DA
 
 ◊subhead{Predetermined emission rate}
 
-As there's no trusted third party there'sn't a single entity who controls the creation of new money and the inflation.  Instead new coins are minted following predetermined rules.◊sn{miners}
+As there's no trusted third party there's no single entity who controls the creation of new money and the inflation.  Instead new coins are minted following predetermined rules.◊sn{miners}
 
 ◊ndef["miners"]{
     The new coins are rewards for miners who secure the network, but more on that in the ◊link[next-chapter]{next chapter}.
