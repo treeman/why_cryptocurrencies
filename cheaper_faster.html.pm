@@ -57,7 +57,7 @@ In fact Bitcoin fees of $2-3 is still low compared the fees during the bull run 
     See ◊link[fee-market-myth]{the fee market myth} for more info (it was written a year before the ridiculous $50 fees).
 }
 
-You may think the fees are so high because Bitcoin is much more popular than other cryptocurrencies, but that's not the whole story. In fact it would be easy to lower the fees---Bitcoin Cash can for example handle at least 20 times the transaction count of Bitcoin, while keeping the same low fees. See the ◊link[scalability-challenge]{discussion of the scalability challenge} in the appendix for more details.
+You may think the fees are so high because Bitcoin is much more popular than other cryptocurrencies, but that's not the whole story. In fact it would be easy to lower the fees---Bitcoin Cash can for example handle at least 20 times the transaction count of Bitcoin, while keeping the same low fees. See the ◊link[scalability-challenge]{discussion of the scalability challenge} for more details.
 
 Bitcoin just doesn't work well as a currency with these high and unreliable fees, but it's not representative of cryptocurrencies in general.
 

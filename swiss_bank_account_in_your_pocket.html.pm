@@ -43,7 +43,7 @@ Recently Switzerland has ◊link[swiss-exchange]{begun sharing bank details} of 
 Cryptocurrencies on the other hand can fulfill the dream.◊sn{private?}
 
 ◊ndef["private?"]{
-    How private are cryptocurrencies really? Some are more private than others, see the ◊link[privacy-challenge]{discussion of the privacy challenge} in the appendix for more information.
+    How private are cryptocurrencies really? Some are more private than others, see the ◊link[privacy-challenge]{discussion of the privacy challenge} for more information.
 }
 
 ◊(define swiss-bank-account

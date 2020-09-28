@@ -32,7 +32,7 @@ What hope does average Joe have when even the famous security technologist Bruce
     #:src "Blockchain and Trust"
     #:url blockchain-and-trust
     #:quote-src #t]{
-  Honestly, cryptocurrencies are useless ◊mn{schneier}
+  Honestly, cryptocurrencies are useless ◊mn[#:top -6]{schneier}
 }
 
 It's almost a universal phenomena. I've heard these arguments from students, co-workers, friends, family and in highly technical online communities:
@@ -63,7 +63,7 @@ And I must admit I'm also being selfish---writing a book is on my bucket list.
 This book tries to describe what value cryptocurrencies have using several examples. In particular I'll argue that:
 
 ◊ol{
-  ◊li{Cryptocurrencies aren't just scams.◊sn[#:top -10]{scams}}
+  ◊li{Cryptocurrencies aren't just scams.◊mn{scams} ◊note-pos{scams}}
   ◊li{It's more than just a speculative asset.}
   ◊li{They do many things better than any alternative.}
   ◊li{There are legal use cases.}
@@ -75,7 +75,7 @@ Of course everything new brings positive and negative aspects with it. It's up t
 
 ◊subhead{What this book isn't}
 
-This isn't a deep dive on a technical level and we won't focus on a single implementation, Bitcoin is the first cryptocurrency but there are hundreds more.◊sn{cryptos}
+This isn't a deep dive on a technical level and we won't focus on a single implementation, Bitcoin is the first cryptocurrency but there are hundreds more.◊mn{cryptos}
 
 There are many problems with cryptocurrencies as they exist today, for instance:
 
@@ -88,7 +88,7 @@ There are many problems with cryptocurrencies as they exist today, for instance:
   ◊;li{User experience is far from the level of VISA or Apple Pay.}
 }
 
-I don't dismiss these problems, and I discuss them in more detail in the chapter ◊link[challenges]{Challenges for cryptocurrencies} in the appendix, but the focus of this book isn't to explain them or to look at how we might address them.
+I don't dismiss these problems, and I discuss them in more detail in the chapter ◊link[challenges]{Challenges for cryptocurrencies}, but the focus of this book isn't to explain them or to look at how we might address them.
 
 A problem-centric view is great for an engineer or a problem solver but it also limits foresight. For example the computer had many problems and drawbacks when first introduced, but today we ridicule statements like these:
 
@@ -106,16 +106,16 @@ Instead of putting on blinders and getting stuck at these problems---which I bel
   ◊strong[#:style "font-size: 1.1rem"]{And of course none of this is investment advice.}
 }
 
-Well, the only advice I'll give in that area is to understand what you're investing in, and my hope is that this book can help with that.
+Well, the only advice I'll give is to understand what you're investing in, and my hope is that this book can help with that.
 
 ◊ndef["schneier"]{
     Schneier brings an interesting perspective and he's right about one very important aspect: contrary to popular belief cryptocurrencies don't remove ◊strong{all} trust.
 
-    To counter his point that "cryptocurrencies are useless" all you have to do is provide one counterexample where they're useful. I'll give several.
+    To counter his point that "cryptocurrencies are useless" all you have to do is provide one counterexample where they're useful. This book is full of them.
 }
 
 ◊ndef["beanies"]{
-    Beanie Babies is a type of toys which people used to speculate with. ◊link[beanie]{It become a mania} where people would sell---and buy---these toys at 10x, 100x or even 1000x their original price. The mania managed to make the creator, Ty Warner, one of the richest men in the world before it crashed (he's still insanely rich though).
+    Beanie Babies is a type of fluffy toy that people used to speculate with. ◊link[beanie]{It become a mania} where people would sell---and buy---these toys at 10x, 100x or even 1000x their original price. The mania managed to make the creator, Ty Warner, one of the richest men in the world before it crashed (he's still insanely rich though).
 
     If you're looking for the digital version of Beanie Babies then look no further than ◊link[cryptokitties]{CryptoKitties}, a blockchain game running on Ethereum. There someone spent $114,000 on a virtual kitten.
 }
