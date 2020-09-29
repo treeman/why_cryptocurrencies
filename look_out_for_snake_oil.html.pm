@@ -33,11 +33,11 @@ There are many projects in the cryptocurrency space that, curiously enough, aren
 
 ◊ul{
   ◊li{OneCoin and Bitconnect---they're plain pyramid schemes.◊sn{pyramid-schemes}}
-  ◊li{Ripple}
+  ◊li{Ripple.}
   ◊li{Stablecoins like ◊link[tether]{Tether}◊sn{tether} or JP Morgan's ◊link[JPM-coin]{JPM coin}.}
   ◊li{"Second layer solutions" like the Lightning Network.}
   ◊li{Smart tokens like the ERC20 tokens running on top of Ethereum.◊sn{ICOs}}
-  ◊li{Facebook's Libra}
+  ◊li{Facebook's Libra.}
 }
 
 ◊note-pos[#:top -14]{pyramid-schemes}
@@ -59,7 +59,7 @@ Be very skeptical of sites like ◊link[coinmarketcap]{CoinMarketCap} that says 
 
 There's the phenomena where a technology gets hyped up and businesses all over rush to adopt it in any way they can, even if it's totally the wrong solution for their problems.
 
-Removing the consensus mechanism from a cryptocurrency, so they can just use the blockchain, removes what makes cryptocurrencies useful. The blockchain data-structure by itself is neither new nor interesting, yet that's all people seem to focus on.◊sn{git}
+Removing the consensus mechanism from a cryptocurrency, so they can just use the blockchain, removes what makes cryptocurrencies useful. The blockchain data-structure by itself is neither new nor interesting, yet that's all people seem to focus on.◊mn{git}
 
 ◊ndef["git"]{
     You could say the popular version control system ◊link[git]{git} uses a blockchain, but it has nothing to do with cryptocurrencies.
@@ -75,13 +75,13 @@ Be aware of "the blockchain" being used only as a buzzword.
 When evaluating cryptocurrencies here are some red flags to look out for:
 
 ◊ul{
-    ◊li{Heavily slanted initial coin supply.◊sn{supply}
+    ◊li{Heavily slanted initial coin supply.◊mn{supply}
 
-        Like only creating 21 million coins, but keeping 20 million for yourself.
+        Like only creating 21 million coins, but keeping 20 million for yourself.◊note-pos{supply}
     }
     ◊li{Central authorities.
 
-        A "centralized cryptocurrency" is an oxymoron because it's not trustless or permissionless and it doesn't prevent a single entity from manipulating the supply, the very things that define a cryptocurrency.
+        A "centralized cryptocurrency" is an oxymoron because it's not trustless or permissionless and it doesn't prevent a single entity from manipulating the supply, the very things that define a cryptocurrency. A "private blockchain" has the same fatal flaws.
 
         If someone can freeze your coins, prevent them from being used in a particular country or generate them from thin air then it's not a cryptocurrency.
     }
@@ -95,7 +95,7 @@ When evaluating cryptocurrencies here are some red flags to look out for:
     }
     ◊li{Propaganda.
 
-        Social media is chock-full of people---or trolls---who tries to sell snake oil to you. Slander, lies and censorship is a daily occurrence.◊sn{censorship}
+        Social media is chock-full of users who tries to sell snake oil to you. Slander, lies and censorship is a daily occurrence.◊mn{censorship} ◊note-pos{censorship}
     }
     ◊li{Large drawbacks.
 
@@ -120,11 +120,8 @@ There are many traps to fall into in this space. I think the best antidote is to
     Many ICOs have been declared illegal as they're classified as securities and many more are very scammy. Bitconnect is for example an ICO.
 }
 
-◊note-pos[#:top -36]{supply}
-◊note-pos[#:top -17]{censorship}
-
 ◊ndef["supply"]{
-    Slanting the coin supply come in wide variety. It's common to assign large parts of the initial supply to the creators or to mine the chain in secret before releasing it to the public.
+    Slanting the coin supply come in many variants. It's common to assign large parts of the initial supply to the creators or to mine the chain in secret before releasing it to the public.
 
     A more sinister tactic is ot introduce a bug in the code that allows miners to mine extremely fast---and only fix it after you've mined a big portion. This is what ◊link[dash]{Dash did} in a so-called ◊em{instamine}.
 }
