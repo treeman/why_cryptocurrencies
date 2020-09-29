@@ -313,6 +313,10 @@
   (ch-ref
     'a_defective_system.html
     "A defective system"))
+(define legal_counterfeiting
+  (ch-ref
+    'a_defective_system.html #:ref "legal-counterfeiting"
+    "A defective system: Legal counterfeiting"))
 
 (define extensions
   (ch-ref

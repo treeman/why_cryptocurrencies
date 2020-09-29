@@ -23,7 +23,7 @@ But there's a fatal flaw with this argument: it relies on being able to predict 
 ◊note-pos[#:top -9]{elaciticity}
 
 ◊ndef["elaciticity"]{
-    ◊em{Elaciticity} is a nice word fractional banking proponents have used to describe this ability. In plain English it means the ability to inflate and deflate the money supply freely.
+    ◊em{Elaciticity} is a nice word ◊def[legal_counterfeiting]{fractional banking} proponents have used to describe this ability. In plain English it means the ability to inflate and deflate the money supply freely.
 }
 
 
