@@ -19,7 +19,7 @@ Cryptocurrencies provide two major advantages compared to other digital payments
 
 ◊subhead{Cryptocurrency fees}
 
-Fees in cryptocurrencies are relatively straightforward: each transaction has a fixed fee, independent of the transaction value. The one who sends the transaction pays the fee.◊sn{crypto-fee}
+Fees in cryptocurrencies are relatively straightforward: each transaction has a fixed fee, independent of the transaction value. The one who sends the transaction pays the fee.◊mn{crypto-fee}
 
 ◊ndef["crypto-fee"]{
     Because cryptocurrencies are so volatile, the expected fee converted to fiat varies. The fees are also set by demand, but most cryptocurrencies have ample space to keep the fees very low.
@@ -30,7 +30,7 @@ Fees in cryptocurrencies are relatively straightforward: each transaction has a 
         ◊tr{◊tds{Bitcoin Cash}  ◊tds{Monero}    ◊tds{Dogecoin}  ◊tds{Litecoin}  ◊tds{Bitcoin}}
         ◊tr{◊td{$0.0012}        ◊td{$0.0028}    ◊td{$0.003}     ◊td{$0.0162}    ◊td{$2.46}}
     }
-    ◊figcaption{The ◊link[median-tx-fee]{median transaction fee} for common cryptocurrencies 2019-05-25. (◊link[median-tx-fee-monero]{Link for Monero})◊sn{zero-fee-cryptos}}
+    ◊figcaption{The ◊link[median-tx-fee]{median transaction fee} for common cryptocurrencies 2019-05-25. (◊link[median-tx-fee-monero]{Link for Monero})◊mn{zero-fee-cryptos}}
 }
 
 ◊note-pos[#:top -10]{crypto-fee}
@@ -42,10 +42,10 @@ Fees in cryptocurrencies are relatively straightforward: each transaction has a 
 
 For the most part cryptocurrencies have very low fees---enough to call them negligible. But there's an elephant in the room: Bitcoin has large and unpredictable fees.
 
-In fact Bitcoin fees of $2-3 is still low compared the fees during the bull run in December 2017, which reached an average of $50(!!) per transaction. This is because transaction throughput in Bitcoin is maxed out, and to get your transaction accepted you need to pay more than others.◊sn{fee-market}
+In fact Bitcoin fees of $2-3 is still low compared the fees during the bull run in December 2017, which reached an average of $50(!!) per transaction. This is because transaction throughput in Bitcoin is maxed out, and to get your transaction accepted you need to pay more than others.◊mn{fee-market}
 
 ◊ndef["fee-market"]{
-    There are some Bitcoin developers who claims high fees are necessary for the survival of Bitcoin. Gregory Maxwell was famously "◊link[nullc-champaign]{pulling out the champaign}" when Bitcoin had $50 fees. He thought it was a sign that the market supported the ◊em{"fee market"} idea.
+    There are some Bitcoin developers who claims high fees are necessary for the survival of Bitcoin. Gregory Maxwell was famously "◊link[nullc-champaign]{pulling out the champaign}" when Bitcoin had $50 fees. He thought it was a sign that the market supported the ◊def{"fee market"} idea (which is more a blockspace market).
 
     The issue is that Bitcoin's block reward will eventually run out (after several decades), so who will pay the miners to secure the network? The "fee market" idea says that transactions must be very expensive for it to be worth it for miners to secure the chain.
 
@@ -97,7 +97,7 @@ Bitcoin just doesn't work well as a currency with these high and unreliable fees
     Visa has been misusing its position and charging retailers excessive fees for a long time. They conceal from customers what Visa and its banks charge retailers to accept Visa credit cards.
 }
 
-Wait a minute, isn't paying with credit cards, debit cards, PayPal etc already free? I've never paid a fee---except maybe a yearly fee for having a card. Many credit cards even give you a bonus for every purchase, so what's the deal?
+Wait a minute, isn't paying with credit cards, debit cards, PayPal etc already free? I've never paid a fee except for a yearly fee for having a card. Many credit cards even give you a bonus for every purchase, so what's the deal?
 
 That's because you as a customer don't see the high fees---but the merchant does. Fees of 1-4% per transaction can be very demanding, especially for low-margin businesses. To make up for the fees (and to compensate for ◊link[rel-charge-back-fraud]{charge back fraud}) merchants instead raise their prices. So you as a customer actually pay for the fees, they're just indirect and hidden from view.
 
@@ -150,7 +150,7 @@ I've also left out any monthly and yearly fee, common for regular payment system
     Bank accounts also come with a fee. I pay for example a $30 yearly fee just to have my bank account, which includes a debit card and ability to do banking online.
 }
 
-As we can see cryptocurrencies are decidedly cheaper than the other options. Even Swish, which is much cheaper than PayPal or cards, is 100x more expensive than Bitcoin Cash. There are also no yearly fees of any kind just to receive payments in it (but there might be fees if you want to convert it to fiat).
+As we can see cryptocurrencies are decidedly cheaper than the other options. Even Swish, which is much cheaper than PayPal or cards, is 100 times more expensive than Bitcoin Cash. There are also no yearly fees of any kind just to receive payments in it (but there might be fees if you want to convert it to fiat).
 
 As the ◊link[what_is_money]{purpose of money} is to increase economic efficiency, a 1--4% tax on nearly all digital payments is really counter-productive.◊sn{insurance} Therefore a move towards cheap payment solutions like Swish or cryptocurrencies would be beneficial economically.
 
@@ -208,13 +208,13 @@ Shifting focus a little, let's take a look at payment speed. We can identify dif
     ◊li{Irreversible}
 }
 
-You'll get a ◊em{notification} a few seconds after your payment.◊sn{0-conf-notification} For a credit card this ensures the customer has a valid card and has entered the right PIN-code, but no money has been transferred yet. The money changes (virtual) hands during the ◊em{settlement}, which might be several days later. Finally a transaction might still be reversed much later, when this is no longer possible I call the transaction ◊em{irreversible}.
+You'll get a ◊def{notification} a few seconds after your payment.◊sn{0-conf-notification} For a credit card this ensures the customer has a valid card and has entered the right PIN-code, but no money has been transferred yet. The money changes (virtual) hands during the ◊def{settlement}, which might be several days later. Finally a transaction might still be reversed much later, when this is no longer possible I call the transaction ◊def{irreversible}.
 
 ◊note-pos[#:top -21]{visa-stages}
 ◊note-pos[#:top -11]{0-conf-notification}
 
 ◊ndef["0-conf-notification"]{
-    Accepting a cryptocurrency transaction which haven't any confirmation yet, called ◊em{0-conf}, is often criticised in the cryptocurrency community. But it's really no different than accepting a credit card payment instantly---they're both uncertain.
+    Accepting a cryptocurrency transaction which haven't any confirmation yet, called ◊def{0-conf}, is often criticised in the cryptocurrency community. But it's really no different than accepting a credit card payment instantly---they're both uncertain.
 }
 
 
@@ -225,13 +225,13 @@ For us costumers it's a feature that transactions can be reversed. For example i
 It goes something like this:
 
 ◊ol{
-    ◊li{Place an order}
-    ◊li{Receive item}
-    ◊li{Claim your card was stolen}
-    ◊li{Get your money back}
+    ◊li{Place an order.}
+    ◊li{Receive item.}
+    ◊li{Claim your card was stolen.}
+    ◊li{Get your money back.}
 }
 
-This can be a big problem for some merchants, especially those ◊link[fraud-digital]{serving digital goods}, who often has to swallow it as a loss. To make matters worse merchants also have to pay non-negotiable and non-refundable ◊link[charge-back-fees]{charge back fees} even when disputing.◊sn{bank-chargeback}
+This can be a big problem for some merchants, especially those ◊link[fraud-digital]{serving digital goods}, who often has to swallow it as a loss. To make matters worse merchants also have to pay non-negotiable and non-refundable ◊link[charge-back-fees]{charge back fees} even when disputing.◊mn{bank-chargeback}
 
 ◊(define charge-back-fraud
   (x-ref
@@ -258,13 +258,13 @@ This can be a big problem for some merchants, especially those ◊link[fraud-dig
 
 Credit card transactions can take days to settle, and they can be ◊link[mastercard-chargeback]{reversed several months after} via charge backs. Mobile payments---via Apple Pay and similar---are often tied to credit cards and share their properties while others---like Swish---instead connect to your bank account directly.
 
-Wire transfers aren't usually used for payments, but it's still a useful comparison to make.◊sn{wire-transfer} They are typically much slower than other payment systems but they're generally harder to reverse as they don't offer the same charge back protection as credit cards do.
+Wire transfers aren't usually used for payments, but it's still a useful comparison to make. They are typically much slower than other payment systems but they're generally harder to reverse as they don't offer the same charge back protection as credit cards do.◊sn{wire-transfer}
 
 ◊ndef["wire-transfer"]{
     Inside the EU ◊link[sepa]{SEPA} has massively improved the state of wire transfers across borders. Transactions often go through the same day and they're cheaper than other types of wire transfers.
 }
 
-An unique property of cryptocurrencies is they ◊link[transaction-security]{become irreversible} very quickly. In Bitcoin it usually takes 10--60 min.
+A unique property of cryptocurrencies is they ◊link[transaction-security]{become irreversible} very quickly. In Bitcoin it usually takes 10--60 min.
 
 ◊(define mastercard-chargeback
   (x-ref
@@ -288,7 +288,7 @@ The speed that cryptocurrencies settle and become irreversible significantly red
 ◊ndef["0-conf"]{
     There's a risk of having transactions reversed (◊link[double-spending]{double-spent}) before they're confirmed.  This can happen when delivering goods immediately after payment notification.
 
-    Because transaction security is probabilistic, there's ◊link[transaction-security]{always a risk} of having a transaction reversed even for confirmed transactions. In practice it's ◊strong{very} low.
+    Because transaction security is probabilistic, there's ◊link[transaction-security]{always a risk} of having a transaction reversed even for confirmed transactions, but in practice it's ◊strong{very} low.
 }
 
 ◊note-pos[#:top -30]{wire-transfer}
@@ -309,7 +309,7 @@ It seems payment systems needs to choose between these two options:
 
 Traditional payment systems have chosen to protect costumers (or maybe that's the only option they can realistically choose---for social and technical reasons). Cryptocurrencies instead try to prevent transaction reversal and charge back fraud.
 
-While it's of course bad to not have customer protection, there might be other solutions. For example offering optional fraud insurance or offering ◊em{custodial wallets} with extra protection. (A custodial wallet is managed by a third party, similar to a bank account.)◊sn{crypto-protection}
+While it's of course bad to not have customer protection, there might be other solutions. For example offering optional fraud insurance or offering ◊def{custodial wallets} with extra protection. (A custodial wallet is managed by a third party, similar to a bank account.)◊mn{crypto-protection}
 
 ◊ndef["crypto-protection"]{
     I haven't seen any "fraud insurance" yet, but don't see a reason why it can't be created if there's a need for it. Especially when combined with a custodial wallet.
@@ -325,15 +325,15 @@ In addition it might make risk management more practical. While it's basically i
 We've seen three large benefits to cryptocurrency payments:
 
 ◊ul{
-    ◊li-plus{Cheaper}
-    ◊li-plus{Settles faster}
-    ◊li-plus{Reduces or removes the risk for charge back fraud}
+    ◊li-plus{Cheaper.}
+    ◊li-plus{Settles faster.}
+    ◊li-plus{Reduces or removes the risk for charge back fraud.}
 }
 
 And one large drawback:
 
 ◊ul{
-    ◊li-neg{No inherent fraud protection for costumers}
+    ◊li-neg{No inherent fraud protection for costumers.}
 }
 
 The drawback might be alleviated with optional systems in the future, giving us the best of both worlds.

@@ -31,6 +31,7 @@
      #:when (href? href)
      (apply make-link #:class (href-c href)
                       #:title (href-title href)
+                      #:quote qt
                       (href-url href)
                       text)]
     [(list href)

@@ -8,7 +8,6 @@
 
 ◊(clear-sidenotes)
 
-
 ◊epigraph{
   ◊qt[#:author "Edward Snowden"
       #:date "May 21, 2015"
