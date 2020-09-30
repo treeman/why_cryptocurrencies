@@ -16,14 +16,14 @@
 }
 ◊;https://books.google.co.uk/books?id=6Mdh5yuHavgC&pg=PA86&lpg=PA86&ots=vJ319cMgdc&focus=viewport&dq=%E2%80%9CIt%27s+almost+been+worth+this+depression+to+find+out+how+little+our+big+men+know.%E2%80%9D++%E2%80%95+Will+Rogers
 
-Even though ◊def[sound-money]{sound money}---like cryptocurrencies or money backed by gold---might fix the bad incentives at the heart of the ◊link[financial_crisis]{2008 finanical crisis}, there are many arguments against it. One of the most common is we that lose the ability to influence and react to the market. For example if the economy crashes, or we think it will crash, the modern central banks might try to print money and buy things to soften the crash. This isn't possible with cryptocurrencies or gold, since they cannot be created freely.◊sn{elaciticity}
+Even though ◊def[sound-money]{sound money}---like cryptocurrencies or money backed by gold---might fix the bad incentives at the heart of the ◊link[financial_crisis]{2008 finanical crisis}, there are many arguments against it. One of the most common is we that lose the ability to influence and react to the market. For example if the economy crashes, or we think it will crash, the modern central banks might try to print money and buy things to soften the crash. This isn't possible with cryptocurrencies or gold, since they cannot be created freely.◊mn{elaciticity}
 
 But there's a fatal flaw with this argument: it relies on being able to predict the market and to know what actions to take to move it in the direction you want. With how intricate and complex the economy is, it's an absurd assumption.
 
 ◊note-pos[#:top -9]{elaciticity}
 
 ◊ndef["elaciticity"]{
-    ◊em{Elaciticity} is a nice word ◊def[legal_counterfeiting]{fractional banking} proponents have used to describe this ability. In plain English it means the ability to inflate and deflate the money supply freely.
+    ◊def{Elaciticity} is a nice word ◊def[legal_counterfeiting]{fractional banking} proponents have used to describe this ability. In plain English it means the ability to inflate and deflate the money supply freely.
 }
 
 
@@ -57,7 +57,7 @@ In contrast learning how to drive a car provides an ideal learning environment. 
 }
 
 ◊ndef["wicked-env"]{
-    There's also a "wicked" environment where you're likely to learn the wrong lesson from your experience. The example given is of a physician who tried to tried to confirm his a hypothesis for who might develop typhoid. Unfortunately he tested his hunch by palpating the patient's tongue, without washing his hands, making him draw the wrong conclusion.
+    There's also a "wicked" environment where you're likely to learn the wrong lesson from your experience. The example given is of a physician who tried to tried to confirm his a hypothesis for who might develop typhoid. Unfortunately he tested his hunch by palpating the patient's tongue without washing his hands, making him draw the wrong conclusion.
 }
 
 ◊(define investing-index
@@ -85,7 +85,7 @@ Because the economy is made up of millions or even billions of people, with diff
 ◊ndef["impossible?"]{
     I do think it's an impossible task. You need to accurately predict small events that can have large effects, known as the ◊def[butterfly-effect]{Butterfly effect}.
 
-    Not to mention ◊def[black-swan]{Black Swan} events which are by definition unpredictable. The rise of Bitcoin is one example (currently valued at around $9,000).
+    Not to mention ◊def[black-swan]{Black Swan} events which are by definition unpredictable. The rise of Bitcoin is one example (currently valued at above $10,000).
 }
 
 ◊(define black-swan
@@ -139,7 +139,7 @@ Maybe you feel like I'm focusing too much on the ◊link[financial_crisis]{2008 
 ◊qt[#:author "Ben S. Bernanke, chairman of the Federal Reserve"
     #:date "2002"
     #:url bernanke]{
-    Let me end my talk by abusing slightly my status as an official representative of the Federal Reserve. I would like to say to Milton and Anna: Regarding the Great Depression, you're right. We did it. We're very sorry. But thanks to you, we won't do it again.◊sn{oops}
+    Let me end my talk by abusing slightly my status as an official representative of the Federal Reserve. I would like to say to Milton and Anna: Regarding the Great Depression, you're right. We did it. We're very sorry. But thanks to you, we won't do it again.◊mn{oops}
 }
 
 ◊note-pos[#:top -6]{oops}
@@ -148,10 +148,9 @@ Maybe you feel like I'm focusing too much on the ◊link[financial_crisis]{2008 
     Oops!... you did it again.
 }
 
-This shouldn't be that surprising when you consider that the national and global economy is too irregular to be predictable, and the feedback loop is extremely long---if it even exists.  If for example the central bank lowers the interest rate, how long do we have to wait to see the effect? Days, months and maybe even years. And how do we know the economy reacted this way because of the changes to the interest rate, and not because of the trade war between the U.S. and China, Brexit or a million other reasons?◊sn{models}
+This shouldn't be that surprising when you consider that the national and global economy is too irregular to be predictable, and the feedback loop is extremely long---if it even exists.  If for example the central bank lowers the interest rate, how long do we have to wait to see the effect? Days, months and maybe even years. And how do we know the economy reacted this way because of the changes to the interest rate, and not because of the trade war between the U.S. and China, Brexit or a million other reasons?◊mn{models}
 
-
-These people aren't experts, simply because the environment doesn't lend itself to creating experts. The worst thing isn't that they're clueless, the worst thing is that they don't know their limitations:◊sn{actually-worst}
+These people aren't experts, simply because the environment doesn't lend itself to creating experts. The worst thing isn't that they're clueless, the worst thing is that they don't know their limitations:◊mn{actually-worst}
 
 ◊qt[#:author "IMF:s financial advisor Jose Viñals"
     #:date "2016"
@@ -159,10 +158,9 @@ These people aren't experts, simply because the environment doesn't lend itself 
   Although the experience with negative nominal interest rates is limited, we tentatively conclude that overall, they help deliver additional monetary stimulus and easier financial conditions, which support demand and price stability.
 }
 
-While the article itself is more nuanced, you can't conclude anything with such a small sample size, with such a short timespan and in an irregular environment.
+◊note-pos[#:top -12]{actually-worst}
 
-◊note-pos[#:top -27]{models}
-◊note-pos[#:top -18]{actually-worst}
+While the article itself is more nuanced, you can't conclude anything with such a small sample size, with such a short timespan and in an irregular environment.
 
 ◊ndef["models"]{
     What do you do then? You use complicated models, based on historical data, to predict the effects on the economy.
@@ -202,20 +200,20 @@ I could argue that we're blind because we collectively don't understand the bank
 Do the people know that the least accountable operation in the U.S. government isn't the FBI, CIA or the NSA---which are all accountable to congressional supervision---but the Federal Reserve? The central bank of the United States, the largest economy in the world, isn't accountable to anyone, has no budget and nobody has insight into it's operations.
 ◊(cite-book case-against-fed-book)
 
-The Fed isn't a government agency. It's a private entity and its shareholders are banks which ◊link[fed-dividends]{earn a dividend}---at 6%, often tax-free. (Which banks? It's a secret.) Nobody knows how much banks are printing to pad their own pockets and nobody knows how many dollars exist.◊sn{bonuses}
+The Fed isn't a government agency. It's a private entity and its shareholders are banks which ◊link[fed-dividends]{earn a dividend}---at 6%, often tax-free. (Which banks? It's a secret.) Nobody knows how much banks are printing to pad their own pockets and nobody knows how many dollars exist.◊mn{bonuses}
 
-It's worse than us not understanding how the system works. We simply don't have the ability to understand because the Federal Reserve makes us all blind. But this is often promoted as a benefit, not a drawback:◊sn{oversight-control}
+It's worse than us not understanding how the system works. We simply don't have the ability to understand because the Federal Reserve makes us all blind. But this is often promoted as a benefit, not a drawback:◊mn{oversight-control}
 
 ◊qt[#:author "Alan Greenspan, Chairmain of the Federal Reserve"]{
     The temptation is to step on the monetary accelerator or at least to avoid the monetary break until after the next election... Giving in to such temptations is likely to impart an inflationary bias to the economy and could lead to instability, recession and economic stagnation.
 }
 
-This argument could be made against almost everything. For example ◊link[mega-projects]{megaprojects often fail} (vastly overruns their cost or timetable) because politicians make them their pet project, pushing them through against all odds... And leave it to other people to pick up the pieces after the next election.◊sn{olympics}
+◊note-pos[#:top -6]{oversight-control}
+
+This argument could be made against almost everything. For example ◊link[mega-projects]{megaprojects often fail} (vastly overruns their cost or timetable) because politicians make them their pet project, pushing them through against all odds... And leave it to other people to pick up the pieces after the next election.◊mn{olympics}
 
 Proponents will of course say that money is more important than other issues---too important to leave it to the whims of the politicians---and therefore the Federal Reserve must remain independent. I believe it's much to important to be handled in the dark, by a private entity.
 
-◊;note-pos{bonuses}
-◊note-pos[#:top -30]{oversight-control}
 ◊note-pos[#:top -11]{olympics}
 
 ◊ndef["bonuses"]{
@@ -233,7 +231,7 @@ Proponents will of course say that money is more important than other issues---t
 
 ◊subhead{A new hope}
 
-Cryptocurrencies are interesting because they allow anyone to verify the number of coins in circulation---with certainty. No money in history has had this valuable property.  There's always been the need to trust the word of someone, that the amount of money is what they say it is. Even with gold coins there's trust involved, you have to trust the issuer to include the right amount of gold, otherwise the trust---and the currency---◊link[rome-debasing]{will collapse in value}.◊sn{portraits}
+Cryptocurrencies are interesting because they allow anyone to verify the number of coins in circulation---with certainty. No money in history has had this valuable property.  There's always been the need to trust the word of someone, that the amount of money is what they say it is. Even with gold coins there's trust involved, you have to trust the issuer to include the right amount of gold, otherwise the trust---and the currency---◊link[rome-debasing]{will collapse in value}.◊mn{portraits}
 
 ◊ndef["portraits"]{
     Ever wonder why there are portraits on coins? Because they make them recognizable so you can decide to trust them or not. "I'll gladly accept emperor Augustu's coins" or "we don't accept that usurpers coins here."
@@ -245,10 +243,10 @@ Cryptocurrencies are interesting because they allow anyone to verify the number 
      "https://money.visualcapitalist.com/currency-and-the-collapse-of-the-roman-empire/"
      "Currency and the Collapse of the Roman Empire"))
 
-You can also predict how many coins will be created and when, it's coded into the rules of the cryptocurrency after all. While Bitcoin ◊link[predetermined-emission-rate]{mimics the rate that gold is mined}, there's no risk of counterfeit bitcoin or a meteor made of bitcoin crashing on earth to disrupt the supply, which there's with gold or other precious materials.◊sn{inflation-bug}
+You can also predict how many coins will be created and when, it's coded into the rules of the cryptocurrency after all. While Bitcoin ◊link[predetermined-emission-rate]{mimics the rate that gold is mined}, there's no risk of counterfeit bitcoin or a meteor made of bitcoin crashing on earth to disrupt the supply, like with gold or other precious materials.◊sn{inflation-bug}
 
 ◊ndef["inflation-bug"]{
-    There's instead a risk of ◊link[inflation-bug]{bugs in the code} which may allow hackers to print coins.
+    With cryptocurrencies there's instead a risk of ◊link[inflation-bug]{bugs in the code} which may allow hackers to print coins.
 }
 
 ◊(define inflation-bug
@@ -257,7 +255,7 @@ You can also predict how many coins will be created and when, it's coded into th
      "https://medium.com/@awemany/600-microseconds-b70f87b0b2a6"
      "600 Microseconds: A perspective from the Bitcoin Cash and Bitcoin Unlimited developer who discovered CVE-2018–17144"))
 
-Finally cryptocurrencies don't rely on "experts", who are supposed to avoid crashes by predict what cannot be predicted. There's nobody in control, so there's nobody to push the wrong button or pull the wrong lever and cause economic chaos.◊sn{half-truth}
+Finally cryptocurrencies don't rely on "experts", who are supposed to avoid crashes by predicting what cannot be predicted. There's nobody in control so nobody can push the wrong button or pull the wrong lever to cause economic chaos.◊sn{half-truth}
 
 Therefore cryptocurrencies are a more transparent and robust alternative, which avoids many of the problems inherent to the modern financial system.
 
@@ -278,7 +276,6 @@ Therefore cryptocurrencies are a more transparent and robust alternative, which 
       "https://www.imdb.com/title/tt0076759/"
       "Star Wars: Episode IV - A New Hope (1977)"))
 
-◊note-pos[#:top -30]{portraits}
 ◊note-pos[#:top -20.5]{inflation-bug}
 ◊note-pos[#:top -15]{half-truth}
 
