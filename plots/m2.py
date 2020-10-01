@@ -58,7 +58,8 @@ ax.xaxis.set_tick_params(width=2)
 ax.yaxis.set_tick_params(width=2)
 
 # ax.set_xlim(dt.datetime(1965, 01, 01), dt.datetime(2020, 04, 01))
-ax.set_xticks([dt.datetime(y, 01, 01) for y in range(2010, 2021)])
+# ax.set_xticks([dt.datetime(y, 01, 01) for y in range(2010, 2021)])
+ax.set_xticks([dt.datetime(y, 01, 01) for y in range(2010, 2021, 2)])
 # ax.set_ylim(0, 27000000)
 
 # plt.annotate(
@@ -67,11 +68,11 @@ ax.set_xticks([dt.datetime(y, 01, 01) for y in range(2010, 2021)])
 #         arrowprops=dict(arrowstyle='->'),
 #         xytext=(dt.datetime(1990, 1, 1), 12500000))
 #
-# plt.annotate(
-#     'COVID-19 pandemic',
-#     xy=(dt.datetime(2018, 1, 1), 22000000),
-#         arrowprops=dict(arrowstyle='->'),
-#         xytext=(dt.datetime(2000, 1, 1), 24000000))
+plt.annotate(
+    'COVID-19 pandemic',
+    xy=(dt.datetime(2019, 10, 1), 15500),
+        arrowprops=dict(arrowstyle='->'),
+        xytext=(dt.datetime(2014, 1, 1), 16000))
 
 # #396AB1
 # #DA7C30

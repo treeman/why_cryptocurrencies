@@ -545,22 +545,22 @@ But then something weird happened. Despite entire cities and countries locking d
 
 One might wonder, what the hell happened?
 
-The Federal Reserve followed the script and printed trillions of dollars and used it to prop up the stock market. As seen in the M2 graph this is an extreme amount of money in a very short period of time:
+The Federal Reserve followed the script and printed trillions of dollars and used it to prop up the stock market. As seen in the M2 graph this was an extreme amount of money in a very short period of time:
 
 ◊img[#:src "images/m2.svg"
      #:link #t
-     #:alt "x"]{
-  ◊link[m2]{The M2 money stock of the United States} between 2010 and 2020.  
+     #:alt "The M2 money supply of the United States has been flat since 2010 until 2020 when it spiked from $15 trillion to $18 trillion in just a few months."]{
+  ◊link[m2]{The M2 money stock of the United States} between 2010 and mid 2020.  
   ◊link[m2-def]{M2 is a measure of money supply} that includes cash, checking deposits, savings deposits, money market securities, mutual funds and other time deposits.  
 }
 
-Unfortunately this didn't help the businesses that went out of business or the people who became unemployed. The money was instead funneled to the big companies who used it to artificially increase their valuation with ◊def[stock-buybacks]{stock buybacks} or just placed the money in their reserves. This is also why the inflation hasn't shot up (at least not yet).
+Unfortunately the money printing didn't help the businesses that went out of business or the people who became unemployed. The money was instead funneled to the big companies who used it to artificially increase their valuation with ◊def[stock-buybacks]{stock buybacks} or just placed the money in their reserves. The money didn't trickle down to the masses; it got stuck driving up the stock price.◊mn{no-inflation}
 
-The money didn't trickle down to the masses; it got stuck driving up the stock price.
+◊ndef["no-inflation"]{
+    This is also why the inflation hasn't shot up (yet).
+}
 
-
-
-Nothing fundamentally changed. The deep-rooted economic problems are still there, only hidden from plain sight.
+Nothing fundamentally changed. The deep-rooted economic problems are still there, festering.
 
 ◊(define stock-buybacks
    (x-ref
