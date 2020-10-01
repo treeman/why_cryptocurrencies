@@ -545,16 +545,20 @@ But then something weird happened. Despite entire cities and countries locking d
 
 One might wonder, what the hell happened?
 
-The Federal Reserve followed the script and printed trillions of dollars and used it to prop up the stock market.
+The Federal Reserve followed the script and printed trillions of dollars and used it to prop up the stock market. As seen in the M2 graph this is an extreme amount of money in a very short period of time:
 
 ◊img[#:src "images/m2.svg"
      #:link #t
      #:alt "x"]{
   ◊link[m2]{The M2 money stock of the United States} between 2010 and 2020.  
-  M2 is a measure of money supply that includes cash, checking deposits and easily convertible near money.
+  ◊link[m2-def]{M2 is a measure of money supply} that includes cash, checking deposits, savings deposits, money market securities, mutual funds and other time deposits.  
 }
 
-This didn't help the businesses that went out of business or the people who became unemployed because the money is funneled to the big companies who use it to artificially increase their valuation with ◊def[stock-buybacks]{stock buybacks} or to just sit on the money. The money didn't trickle down to the masses; it got stuck driving up the stock price.
+Unfortunately this didn't help the businesses that went out of business or the people who became unemployed. The money was instead funneled to the big companies who used it to artificially increase their valuation with ◊def[stock-buybacks]{stock buybacks} or just placed the money in their reserves. This is also why the inflation hasn't shot up (at least not yet).
+
+The money didn't trickle down to the masses; it got stuck driving up the stock price.
+
+
 
 Nothing fundamentally changed. The deep-rooted economic problems are still there, only hidden from plain sight.
 
@@ -568,6 +572,13 @@ Nothing fundamentally changed. The deep-rooted economic problems are still there
      "2020-10-01"
      "https://fred.stlouisfed.org/series/M2"
      "M2 Money Stock"))
+◊(define m2-def
+   (x-ref
+     "2020-10-01"
+     "https://www.investopedia.com/terms/m/m2.asp"
+     "M2 Definition"))
+
+
 
 
 
