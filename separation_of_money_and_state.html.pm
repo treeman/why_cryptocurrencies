@@ -10,10 +10,10 @@
 
 ◊img[#:src "/images/bitcoin-priest.png" #:class "slim" #:alt "A priest with a crown, holding a sword and a bag of Bitcoin."]{}
 
-When I first started thinking about cryptocurrencies I thought they were just useful for some people who couldn't use regular transactions, like buying weed or things on a darknet market. Or that it was a better payment system as there was no middleman to skim off large fees from all transactions. That's useful, but it didn't strike me as revolutionary.◊sn{fees}
+When I first started thinking about cryptocurrencies I thought they were just useful for some people who couldn't use regular transactions, like buying weed or things on a darknet market. Or that it was a better payment system as there was no middleman to skim off large fees from all transactions. That's useful, but it didn't strike me as revolutionary.◊mn{fees}
 
 ◊ndef["fees"]{
-    I do think ◊link[cheaper_faster]{avoiding 1--3%} fees on practically all digital payments is an under-appreciated benefit of cryptocurrencies. It might be overshadowed by the volatility, but the potential benefit to the economy is absolutely huge.
+    I do think ◊link[cheaper_faster]{avoiding up to 5%} fees on practically all digital payments is an under-appreciated benefit of cryptocurrencies. It might be overshadowed by the volatility, but the potential benefit to the economy is absolutely huge.
 }
 
 But the idea of separating money from state made me go "Wow, that could actually have a huge impact." As we've seen earlier the financial system ◊link[a_defective_system]{relies heavily on manipulating the money supply} and on ◊link[the_blind_leading_the_blind]{predicting and reacting to the market}. This would, for better or worse, be largely impossible if states no longer controlled the money supply and if people used cryptocurrencies instead.
@@ -44,10 +44,10 @@ I know it might be difficult to entertain the notion that a country shouldn't co
 
 For many centuries, millennia even, religion and the state were inseparable. I'm not even sure it was a conscious decision, rather the mere idea that it could be any other way was simply unthinkable. For many that's just how it was, like how the sun rose every morning or that you got hungry without food.
 
-Countless rulers have based their legitimacy on religious grounds, that they should rule because God says so. This is useful since you have to question God to question them, and who are you to question God? For example both the Roman emperors and the Japanese emperors used this to legitimise themselves. Even today it's very common that the church should be the one to crown the kings and queens, as if to say "we give you the right to rule".◊sn{carolus-rex}
+Countless rulers have based their legitimacy on religious grounds; that they should rule because God says so. This is useful since you have to question God to question them, and who are you to question God? For example both the Roman and Japanese emperors used this to legitimise themselves. Even today it's very common that the church should be the one to crown the kings and queens, as if to say "we give you the right to rule".◊sn{carolus-rex}
 
 ◊ndef["carolus-rex"]{
-    Charles XII of Sweden, also called "Carolus Rex", acknowledged the power of God but rejected the church when he placed the crown upon his own head instead of letting someone from the church do it.
+    Charles XII of Sweden, also called "Carolus Rex", acknowledged the power of God but rejected the church when he placed the crown upon his own head, instead of letting someone from the church do it.
 }
 
 This is why it was a big deal when the Swedish king ◊link[gustav-vasa]{Gustav Vasa} took steps towards the ◊link[reformation]{Protestant Reformation}. It wasn't motivated by religious reasons---he simply wanted control over the Catholic Church's property, which was the dominating religion at the time. In a sense the Diet at Västerås in 1527 was the first step in separating the church from the Swedish state, a process that was ◊link[separation]{completed in 2000} when they were formally separated.◊sn{after-reformation}
@@ -94,7 +94,7 @@ Separating church from the state was once unthinkable, yet it's now a given that
 
 In practice some countries have already separated money from their state, as they use money someone else control. For example the ◊link[euro]{Euro} is managed by the ◊link[ecb]{European Central Bank (ECB)}, and the countries that use the Euro have very little influence in the ECB's decision-making (well, most of them anyway). There are also countries that ◊link[countries-use-us]{use the U.S. dollar as their official currency}, while having no say in what the U.S. does with it.
 
-Gold might also be an example of money outside of state control---there's nobody with exclusive access to gold after all. But in practice someone has to cast the gold to coins for it to be usable as money, including a "government approved" stamp on them, which gives some sort of control over the money. After all, it's difficult to determine what a coin is made of so we just trust the stamp on it.◊sn{debasement}
+Gold might also be an example of money outside of state control---there's nobody with exclusive access to gold after all. But in practice someone has to cast the gold to coins for it to be usable as money, including a "government approved" stamp on them, which gives some sort of control over the money. After all, it's difficult to determine what a coin is made of so we just trust the stamp on it.◊mn{debasement}
 
 ◊ndef["debasement"]{
     Because people don't actually verify the amount of gold in the coins, they could for example slowly decrease the amount of gold in the coins. This would enable them to make more coins and effectively increase the money supply. This is called ◊def[debasement]{debasement} and has been very common historically.
@@ -110,14 +110,12 @@ Maybe a better example is shell money, or other money found in nature, where you
 
 So the idea that a state doesn't require control over their own money isn't really that strange, as there are many examples of the contrary.
 
-◊note-pos[#:top -14]{debasement}
-
 
 ◊subhead{The difference with cryptocurrencies}
 
 With the various historical examples of how money can exist without state backing we might wonder what cryptocurrencies bring to the table. Why would they be different?
 
-For starters all modern examples where a state doesn't control their own money simply mean they're using someone else's money. There's always someone in control of the money, in this case it's just some other country or institution. With cryptocurrencies there's no single entity in control, meaning it's money truly separate from state.◊sn{indirect-control}
+For starters all modern examples where a state doesn't control their own money simply mean they're using someone else's money. There's always someone in control of the money, in this case it's just some other country or institution. With cryptocurrencies there's no single entity in control, meaning it's money truly separate from state.◊mn{indirect-control}
 
 ◊ndef["indirect-control"]{
     States can apply indirect control. For example if the U.S. passes anti-cryptocurrency laws, it would have a negative effect on the usefulness of cryptocurrencies. Similarly if they would pass beneficial laws, cryptocurrencies would become more useful, simply because the U.S. have such a large influence throughout the world.
@@ -125,13 +123,12 @@ For starters all modern examples where a state doesn't control their own money s
 
 Cryptocurrencies are also different from the "natural" forms of money, such as shells or stones, because they have better ◊link[what_is_money]{monetary properties}. For instance the supply in a cryptocurrency is provably limited, while you always run the risk of someone discovering a mountain of shells on some remote island somewhere. Cryptocurrencies being digital also means they're easier to transport and to send over larger distances, making global interaction much easier.
 
-While historical examples of states without direct control over their money exists, the ◊link[are_cryptocurrencies_money]{excellent monetary properties} make cryptocurrencies well suited to separate money from state for real.◊sn{challenges}
+While historical examples of states without direct control over their money exists, the ◊link[are_cryptocurrencies_money]{excellent monetary properties} make cryptocurrencies well suited to separate money from state for real.◊mn{challenges}
 
 ◊ndef["challenges"]{
     Assuming cryptocurrencies can solve their difficult ◊link[challenges]{challenges}, such as scaling and privacy concerns.
 }
 
-◊note-pos[#:top -21]{indirect-control}
 ◊note-pos{challenges}
 
 
@@ -145,7 +142,7 @@ Will countries drop fiat and instead adopt cryptocurrencies? Would this force th
 
 It's possible cryptocurrencies will fail, but instead we adopt digital currencies issued and controlled by multinational corporations, truly fulfilling the cyberpunk dystopian nightmare that would make ◊link[cashless_dystopia]{the cashless dystopia} seem like a dream?
 
-Maybe cryptocurrencies will co-exist as an alternative to fiat, and as discussed in previous chapters provide payment options for ◊link[undesirable_businesses]{the undesirable} and ◊link[for_the_unbanked]{the unbanked}? Maybe they'll even slow down the money printing machines and limit ◊link[a_defective_system]{the soaring debt}? But maybe they'll instead hamstring countries who need to act, but now cannot?◊sn{ww1}
+Maybe cryptocurrencies will co-exist as an alternative to fiat, and as discussed in previous chapters provide payment options for ◊link[undesirable_businesses]{the undesirable} and ◊link[for_the_unbanked]{the unbanked}? Maybe they'll even slow down the money printing machines and limit ◊link[a_defective_system]{the soaring debt}? But maybe they'll instead hamstring countries who need to act, but now cannot?◊mn{ww1}
 
 ◊ndef["ww1"]{
     The Gold Standard was largely abandoned during the outbreak of World War I, so the countries could print money to pay for the war.
@@ -154,8 +151,6 @@ Maybe cryptocurrencies will co-exist as an alternative to fiat, and as discussed
 Of course cryptocurrencies might just be a fad that will be forgotten when people realize they don't provide any real value. (This would be quite unfortunate for me, since I've just written an entire book on how I think they do provide value.)
 
 Which scenario is more likely? And what would the ideal scenario look like? That's something I'll leave up to you, the reader, to decide.
-
-◊note-pos[#:top -14]{ww1}
 
 ◊(define ecb
    (x-ref
