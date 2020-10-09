@@ -15,7 +15,7 @@
 }
 
 
-In the chapter ◊link[what_is_money]{What is money?} we saw some historical examples of money and some properties that good money should have. Unfortunately looking at money through history, and what properties money have, is not enough to understand the current economic system, which is a completely different beast.
+In the chapter ◊link[what_is_money]{What is money?} we saw some historical examples of money and some properties that good money should have. Unfortunately looking at money through history, and what properties money should have, is not enough to understand the current economic system, which is a completely different beast.
 
 As we saw in the ◊link[the_blind_leading_the_blind]{previous chapter}, a big problem is that our leaders don't know how to steer this financial beast. But there are more problems to the modern system, again related to being based on ◊link[sound-money]{unsound money} where a flexible money supply breaks the properties of good money. This has far-reaching negative consequences and it means the economic system we use today is broken, on a fundamental level.
 
@@ -181,9 +181,9 @@ There is now ◊sans-tnum{11 000} money circulating the system. Because an IOU i
     That’s as good as money, sir. Those are I.O.U.s.
 }
 
-We might wonder why stop at only printing ◊sans-tnum{10 000 SEK}? Why not ◊sans-tnum{100 000 SEK}? Or more? When the bank gives out IOUs they do need to repay them, otherwise they'll fail and become bankrupt. In the example above if Jane would withdraw ◊sans-tnum{2 000 SEK} the bank would fail, because it can only repay ◊sans-tnum{1 000 SEK}.
+We might wonder, why stop at only printing ◊sans-tnum{10 000 SEK}? Why not ◊sans-tnum{100 000 SEK}? Or more? When the bank gives out IOUs they do need to repay them, otherwise they'll fail and become bankrupt. In the example above if Jane would withdraw ◊sans-tnum{2 000 SEK} the bank would fail, because it can only repay ◊sans-tnum{1 000 SEK}.
 
-The system works as long as people just keep their money at the bank, and only occasionally withdraw their money. But if people start withdrawing a lot of money at the same time a ◊link[bank-run]{bank run} may cause the bank to fail. To reduce this risk banks have requirements on their reserves.◊mn{reserve-assets}
+The system works as long as people just keep their money at the bank, and only occasionally withdraw their money. But if people start withdrawing a lot of money at the same time, a ◊link[bank-run]{bank run} may cause the bank to fail. To reduce this risk, banks have requirements on their reserves.◊mn{reserve-assets}
 
 ◊ndef["reserve-assets"]{
     My example is simplified and banks aren't always required to have the reserves in cash. They can have them in other assets, which they can convert to cash if needed. See for example the ◊link[capital-req-sweden]{Capital requirements for the Swedish banks, second quarter 2019}.
@@ -220,7 +220,7 @@ The system works as long as people just keep their money at the bank, and only o
 
 ◊subhead{Lender of last resort}
 
-As money printers the central banks play an important roll---as the "lender of last resort". This means when all else fails, for example if the banks are about to go bankrupt because they have too little reserves or if the economy is going bad, then central banks can step in and save them. As we saw in an ◊link[financial_crisis]{earlier chapter} this is exactly what happened during the 2008 financial crisis, where banks and other institutions messed up in a major way but were bailed-out and made whole again.
+As money printers, the central banks play an important roll---as the "lender of last resort". This means when all else fails, for example if the banks are about to go bankrupt because they have too little reserves or if the economy is going bad, then central banks can step in and save them. As we saw in an ◊link[financial_crisis]{earlier chapter} this is exactly what happened during the 2008 financial crisis, where banks and other institutions messed up in a major way but were bailed-out and made whole again.
 
 This means the real check against fractional banking (the risk of going bankrupt) is thrown away and replaced with regulation that's supposed to keep the banks in check, while making the banks more robust against failure. While fine in theory, in practice it means banks are now incentivized to push the limits any way they can, to maximize their profits.
 
@@ -245,7 +245,7 @@ While it's difficult to point out causes, and it's even debatable why we got out
 ◊ol{
     ◊li{Abandoned the gold standard
 
-        After briefly dropping the gold standard to pay for the World War I, all countries left the gold standard during the depression.◊mn{forbade-gold}
+        After briefly dropping the gold standard to pay for World War I, all countries left the gold standard during the depression.◊mn{forbade-gold}
 
         ◊note-pos{forbade-gold}
 
@@ -324,7 +324,7 @@ Seen through this lens, it all makes sense. To help the government spend money i
 
 ◊subhead{A mountain of debt}
 
-While taking out debt to fuel investments was only supposed to be a temporary measure, to help the economy during downturns, today we massively increase the debt all the time. For example we've seen a ◊link[record-bull-run]{record bull run} in 2009--2019, yet the U.S. debt doubled from $11 trillion to $22 trillion during the same period.◊mn{trump-debt}
+While taking out debt to fuel investments was only supposed to be a temporary measure to help the economy during downturns, today we massively increase the debt all the time. For example we've seen a ◊link[record-bull-run]{record bull run} in 2009--2019, yet the U.S. debt doubled from $11 trillion to $22 trillion during the same period.◊mn{trump-debt}
 
 ◊; Actual source
 ◊; https://fred.stlouisfed.org/graph/?id=GFDEBTN,
@@ -334,7 +334,7 @@ While taking out debt to fuel investments was only supposed to be a temporary me
     During the COVID-19 pandemic the debt explosively increased at a pace unseen before.
 }
 
-Taking out a loan essentially borrows money from the future you, since you have to pay it back with interest. And the U.S. is paying paying for that now: in the 2020 budget 10.1% is spent on only the interest rate, and it's expected to ◊link[interest-us-debt]{take up 12.9% in 2026}, making it the fastest rising expense in the budget. Most of the debt is ◊link[public-debt]{public debt} (debt to people, companies or other governments), so refusing to pay would have disastrous consequences.
+Taking out a loan essentially borrows money from the future you, since you have to pay it back with interest. And the U.S. is paying for that now: in the 2020 budget 10.1% is spent on only the interest rate, and it's expected to ◊link[interest-us-debt]{take up 12.9% in 2026}, making it the fastest rising expense in the budget. Most of the debt is ◊link[public-debt]{public debt} (debt to people, companies or other governments), so refusing to pay would have disastrous consequences.
 
 
 ◊qt[#:author "Albert Einstein"]{
@@ -414,7 +414,7 @@ It seems like we're moving away from the original Keynesian ideas to something e
     It doesn't matter if you're black or white... the only color that really matters is green.
 }
 
-There's a worrying trend in the world: ◊link[global-inequality]{global inequality is rising}. The rich gets richer and the poor gets... poorer.
+There's a worrying trend in the world: ◊link[global-inequality]{global inequality is rising}. The rich gets richer and the poor get... poorer.
 
 ◊img[#:src "images/income-inequality-world.svg" #:link #t #:alt "Top 10% income share between 1980 and 2015."]{
     Top 10% income share between 1980 and 2015.  
@@ -503,7 +503,7 @@ To be fair, the Federal Reserve knows this isn't an ideal situation, so they tri
      "https://www.newyorkfed.org/markets/opolicy/operating_policy_190920"
      "Federal Reserve of New York: Statement Regarding Repurchase Operations, September 20, 2019"))
 
-So we're stuck in a situation where we don't have the tools to defend against a recession---tools the economic theory the system is built on needs. Tools that has been used up, because that's what the theory says we should do.◊mn{winging-it}
+So we're stuck in a situation where we don't have the tools to defend against a recession---tools the economic theory the system is built on needs. Tools that have been used up, because that's what the theory says we should do.◊mn{winging-it}
 
 ◊ndef["winging-it"]{
     It may sound like I'm referring to a single economic theory, which all governments and central banks follow. But that's not the case---there are many different theories, with slight differences, but I think it's a fair generalization to say that they mostly follow the push-pull ideas of stimulating the economy.
@@ -594,7 +594,7 @@ While "printing more money" is a popular solution, ◊def[sound-money]{sound mon
     With cryptocurrencies debasement isn't possible, which is one reason they're ◊link[are_cryptocurrencies_money]{better money} than gold.
 }
 
-It's not easy to see how a switch to sound money would occur, and maybe it would introduce more problems than it solves. But it would mean manipulation of the money supply would disappear and we wouldn't build a mountain of debt, only repayable by the printing machines, and we wouldn't devalue our savings while increasing the wealth inequality. And we wouldn't cling on to the broken and defective economic theories in use today.
+It’s not easy to see how a switch to sound money would occur and such a switch may likely introduce more problems than it solved. It would mean however, that manipulation of the money supply would disappear, that we wouldn’t accumulate a mountain of debt, that we wouldn’t devalue our savings while increasing the wealth inequality, and that we wouldn’t cling to the broken and defective economic theories in use today.
 
 ◊note-pos[#:top -15]{debasement}
 

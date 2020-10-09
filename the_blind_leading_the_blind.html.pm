@@ -73,7 +73,7 @@ In ◊link[economic-planning]{economic planning} central governments make, or in
 
 This didn't go so well, with huge queues outside almost empty stores and people having to resort to the black market for necessities. The inability to predict the market, and control the economy, is ◊link[ussr-collapse]{one of the reasons} the Soviet Union collapsed.
 
-Because the economy is made up of millions or even billions of people, with different motivations and imperfect knowledge, it's ◊strong{extremely} hard to predict all the needs of the market. For example you need to predict larger demand for butter closer to Christmas, because people are more likely to bake.◊sn{milk} Or that the demand for fluffy toys will skyrocket, because a game called Pokémon will become unreasonable popular. You think picking stock is difficult? This is much harder.◊sn{impossible?}
+Because the economy is made up of millions or even billions of people, with different motivations and imperfect knowledge, it's ◊strong{extremely} hard to predict all the needs of the market. For example you need to predict larger demand for butter closer to Christmas, because people are more likely to bake.◊sn{milk} Or that the demand for fluffy toys will skyrocket, because a game called Pokémon will become unreasonably popular. You think picking stock is difficult? This is much harder.◊sn{impossible?}
 
 ◊note-pos[#:top -6]{milk}
 ◊note-pos[#:top -2]{impossible?}
@@ -212,7 +212,7 @@ It's worse than us not understanding how the system works. We simply don't have 
 
 This argument could be made against almost everything. For example ◊link[mega-projects]{megaprojects often fail} (vastly overruns their cost or timetable) because politicians make them their pet project, pushing them through against all odds... And leave it to other people to pick up the pieces after the next election.◊mn{olympics}
 
-Proponents will of course say that money is more important than other issues---too important to leave it to the whims of the politicians---and therefore the Federal Reserve must remain independent. I believe it's much to important to be handled in the dark, by a private entity.
+Proponents will of course say that money is more important than other issues---too important to leave it to the whims of the politicians---and therefore the Federal Reserve must remain independent. I believe it's much too important to be handled in the dark, by a private entity.
 
 ◊note-pos[#:top -11]{olympics}
 
