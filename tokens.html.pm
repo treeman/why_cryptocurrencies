@@ -3,7 +3,7 @@
 ◊(define-meta title "Tokens")
 ◊(define-meta subtitle "Cryptocurrencies with centrally managed supply")
 ◊(define-meta published "2020-02-07T07:35:36+01:00")
-◊(define-meta updated "2020-02-07T07:35:36+01:00")
+◊(define-meta updated "2020-10-09T19:48:54+02:00")
 ◊(define-meta uuid "1cbc42c7-a81d-40ff-9620-1d89c13dee12")
 
 ◊(clear-sidenotes)

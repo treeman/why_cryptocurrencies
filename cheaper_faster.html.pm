@@ -3,7 +3,7 @@
 ◊(define-meta title "Cheaper & faster")
 ◊(define-meta subtitle "Avoids middleman fees and settles quickly")
 ◊(define-meta published "2019-06-03T00:00:00+01:00")
-◊(define-meta updated "2020-01-15T20:08:53+01:00")
+◊(define-meta updated "2020-10-09T19:51:18+02:00")
 ◊(define-meta uuid "eddfec3a-26e5-4736-a66f-a935aa9d67ae")
 
 ◊(clear-sidenotes)

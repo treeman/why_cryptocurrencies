@@ -3,7 +3,7 @@
 ◊(define-meta title "Private money")
 ◊(define-meta subtitle "Reclaim your financial privacy with cryptocurrencies")
 ◊(define-meta published "2019-12-09T00:00:00+01:00")
-◊(define-meta updated "2020-01-15T20:10:12+01:00")
+◊(define-meta updated "2020-10-09T19:49:39+02:00")
 ◊(define-meta uuid "9f90581c-24f1-4653-9b4a-d86a9ec9e365")
 
 ◊(clear-sidenotes)

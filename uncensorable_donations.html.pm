@@ -3,7 +3,7 @@
 ◊(define-meta title "Uncensorable donations")
 ◊(define-meta subtitle "Donations governments cannot stop")
 ◊(define-meta published "2019-08-28T00:00:00+01:00")
-◊(define-meta updated "2020-03-09T21:09:23+01:00")
+◊(define-meta updated "2020-10-09T19:48:48+02:00")
 ◊(define-meta uuid "f35cab59-0629-4173-9de0-a07a0eef33dc")
 
 ◊(clear-sidenotes)

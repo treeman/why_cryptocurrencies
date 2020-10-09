@@ -3,7 +3,7 @@
 ◊(define-meta title "Challenges for cryptocurrencies")
 ◊(define-meta subtitle "Large unsolved problems with cryptocurrencies")
 ◊(define-meta published "2020-03-17T20:26:28+01:00")
-◊(define-meta updated "2020-04-19T10:18:24+02:00")
+◊(define-meta updated "2020-10-09T19:51:23+02:00")
 ◊(define-meta uuid "c13d8405-fb3e-411c-b035-aae08eedddf1")
 
 ◊(clear-sidenotes)

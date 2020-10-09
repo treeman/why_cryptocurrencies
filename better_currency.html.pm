@@ -3,7 +3,7 @@
 ◊(define-meta title "A better currency")
 ◊(define-meta subtitle "Magic internet money")
 ◊(define-meta published "2019-10-25T00:00:00+01:00")
-◊(define-meta updated "2020-03-09T21:07:48+01:00")
+◊(define-meta updated "2020-10-09T19:52:02+02:00")
 ◊(define-meta uuid "10e625f0-2470-49a9-ae74-36f0c78d943b")
 
 ◊(clear-sidenotes)
