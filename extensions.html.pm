@@ -3,12 +3,20 @@
 ◊(define-meta title "Extensions")
 ◊(define-meta subtitle "Non-currency usage of a blockchain")
 ◊(define-meta published "2019-09-21T00:00:00+01:00")
-◊(define-meta updated "2020-01-15T20:09:14+01:00")
+◊(define-meta updated "2020-10-09T19:50:51+02:00")
 ◊(define-meta uuid "c83f3bb3-7277-43b0-ad8d-ee5ea4592a87")
 
 ◊(clear-sidenotes)
 
-Money is perhaps the most obvious usage of cryptocurrencies but there are other ways to use them. In this section I'll highlight some of the alternative usages and we'll see that we can build other functionality on top of existing cryptocurrencies.◊sn{blockchain-hype}
+◊epigraph{
+  ◊qt[#:author "Marc Kenigsberg"]{
+    Blockchain is the tech. Bitcoin is merely the first mainstream manifestation of its potential.
+  }
+}
+
+Money is perhaps the most obvious usage of cryptocurrencies but they support other use cases too. With embedded data and scripts cryptocurrencies can truly become "programmable money", where we use cryptocurrencies as a base and build new functionality on top.◊mn{blockchain-hype}
+
+There are many different ways this could be useful and I've selected some examples that I think have potential. I'll show how it's possible to tag a message with an unforgeable timestamp, create an uncensorable social media platform and make gambles provably fair. We'll finish with the usefulness of tracking assets with ◊def{tokens} and how a cryptocurrency based voting system have some surprisingly attractive properties.
 
 ◊ndef["blockchain-hype"]{
     I generally try to avoid the word ◊def{blockchain} which sometimes refer to private blockchains or blockchains which use a consensus model with known and trusted actors. Facebook's Libra is such an example and ◊link[ibm-blockchain]{IBM's blockchain} is another.
@@ -35,7 +43,7 @@ The first thing we can observe is that it's possible to insert data into the led
 ◊ol{
     ◊li{Miners can add data to blocks.
 
-        For example Satoshi ◊link[block-0]{left a message} in the first ever Bitcoin block:◊sn{coinbase-data}
+        For example Satoshi ◊link[block-0]{left a message} in the first ever Bitcoin block:◊mn{coinbase-data}
 
         ◊ndef["coinbase-data"]{
             Satoshi embedded his message in the "Coinbase data" entry of the block. Other miners usually include the name of their mining pool. Such as in ◊link[coinbase-ex]{this block} the coinbase data says "Mined by AntPool48".
@@ -59,7 +67,7 @@ The first thing we can observe is that it's possible to insert data into the led
     }
     ◊li{Addresses are user controlled.
 
-        Even if it's not intended you can always insert arbitrary data as long as you can control your address.◊sn{control-address} For example you could chain transactions, by sending from address to address, and treat the second character of the receiving address as your message:
+        Even if it's not intended you can always insert arbitrary data as long as you can control your address.◊mn{control-address} For example you could chain transactions, by sending from address to address, and treat the second character of the receiving address as your message:
 
         ◊(gen-message "Hello")
 
@@ -123,7 +131,7 @@ The first thing we can observe is that it's possible to insert data into the led
 
 ◊subhead{Scripts}
 
-Bitcoin does more than just transfer coins from one address to another. What it actually does is execute a ◊link[bitcoin-script]{small scripting language} which is responsible for unlocking funds and transferring them to new addresses. You can for example send funds from several addresses to many addresses or lock funds and ◊link[multisig]{require more than one key} to spend them.◊sn{bitcoin-script}
+Bitcoin does more than just transfer coins from one address to another. What it actually does is execute a ◊link[bitcoin-script]{small scripting language} which is responsible for unlocking funds and transferring them to new addresses. You can for example send funds from several addresses to many addresses or lock funds and ◊link[multisig]{require more than one key} to spend them (which is commonly called ◊def{multisig}).◊mn{bitcoin-script}
 
 ◊(define bitcoin-script
    (x-ref
@@ -138,18 +146,18 @@ Bitcoin does more than just transfer coins from one address to another. What it 
         OP_DUP OP_HASH160 <pubKeyHash> OP_EQUALVERIFY OP_CHECKSIG
     }
 
-    OP_RETURN is another type of opcode which marks the output as invalid. It's commonly used to add data to transactions and is the preferred way to embed data because nodes concerned with storage can remove it and still be able to fully validate new transactions.
+    OP_RETURN is another type of opcode that marks the output as invalid. It's usually used to add data to transactions and is the preferred way to embed data because nodes concerned with storage can remove it and still be able to fully validate new transactions.
 }
 
-The scripting language in Bitcoin is fairly limited but the ◊link[solidity]{scripting language in Ethereum} is much more powerful and can do more things. You can for example create games where you ◊link[cryptokitties]{buy and sell cats} on Ethereum.◊sn{tradeoffs}
+The scripting language in Bitcoin is fairly limited but the ◊link[solidity]{scripting language in Ethereum} is much more powerful and can do more things. You can for example create games where you ◊link[cryptokitties]{buy and sell cats} on Ethereum.◊mn{tradeoffs}
 
 ◊ndef["tradeoffs"]{
     Ethereum's powerful scripting language comes with all sorts of trade-offs. It makes it much more difficult to scale---which is already difficult with Bitcoin.
 
-    The scripting language in Ethereum is also ◊link[turing-complete]{Turing Complete}, meaning it's impossible to know if a script terminates. This means a new concept ◊def[ether-gas]{gas} has to be introduced, drastically increasing the complexity of the system. Bitcoin avoids this problem by not having a Turing Complete scripting language.
+    The scripting language in Ethereum is ◊link[turing-complete]{Turing Complete}, meaning it's impossible to know if a script terminates. To avoid the problem of an infinite loop in the script every operation requires a fee (called ◊def[ether-gas]{gas}), in contrast to a fee based on the script size as in Bitcoin.
 }
 
-Now it doesn't matter if you know what a script is or how it works, just remember this: cryptocurrencies can do more than just transfer coins from one address to another. We'll go into some of the examples in the following chapters.
+Now it doesn't matter if you know what a script is or how it works, just remember this: cryptocurrencies can do more than transfer coins from one address to another. We'll go into some of the examples in the following chapters.
 
 ◊note-pos[#:top -16]{bitcoin-script}
 ◊note-pos{tradeoffs}

@@ -3,7 +3,7 @@
 ◊(define-meta title "Freezing of merchant accounts")
 ◊(define-meta subtitle "The account your business relies on can be frozen at any time")
 ◊(define-meta published "2019-06-14T00:00:00+01:00")
-◊(define-meta updated "2020-03-09T21:08:53+01:00")
+◊(define-meta updated "2020-10-09T19:50:13+02:00")
 ◊(define-meta uuid "ac14d4a1-3796-4f5b-9350-b56e796625a1")
 
 ◊(clear-sidenotes)
@@ -34,7 +34,7 @@ Imagine coming in to work one day and having this conversion with your boss:
     ◊trow{What?}
     ◊trow{Don't worry, you'll still get your full salary, but we'll pay it in 6 months.}
     ◊trow{But why?}
-    ◊trow{You apparently didn't put one of the new coversheets on your TPS reports."◊sn{office-space}}
+    ◊trow{You apparently didn't put one of the new coversheets on your TPS reports."◊mn{office-space}}
     ◊trow{TPS reports...??}
 
     ◊note-pos[#:top -4]{office-space}
@@ -46,10 +46,10 @@ Imagine coming in to work one day and having this conversion with your boss:
 
 
 ◊ndef["office-space"]{
-    This is a reference to movie ◊link[office-space]{Office Space}, a black comedy about working in an office. There a worker gets reprimanded for an extremely minor and unimportant issue.
+    The TPS reports is is a reference to movie ◊link[office-space]{Office Space}, a black comedy about working in an office. There a worker gets reprimanded for an extremely minor and unimportant issue.
 }
 
-Don't worry if you don't know what a TPS report is, the point is you got your salary ◊strong{frozen for 6 months} for an ◊strong{arbitrary} and ◊strong{unknown} reason.◊sn{6-months}
+Don't worry if you don't know what a TPS report is, the point is you got your salary ◊strong{frozen for 6 months} for an ◊strong{arbitrary} and ◊strong{unknown} reason.◊mn{6-months}
 
 ◊ndef["6-months"]{
     You think 6 months is too long? PayPal freezes your account for 180 days by default. There are also several stories of PayPal ◊strong{never} releasing the funds.
@@ -59,7 +59,7 @@ Don't worry if you don't know what a TPS report is, the point is you got your sa
 
 Now imagine the consequences.
 
-Would you be able to pay your rent? Buy food for yourself and your kids? Repair your fridge if it breaks? Given that ◊link[american-savings]{only 39% of Americans have enough savings to cover a $1,000 emergency} you should be glad if you can honestly answer yes to these questions. Many would panic if their salary is just a little bit late, let alone half a year.
+Would you be able to pay your rent? Buy food for yourself and your kids? Repair your fridge if it breaks? Given that ◊link[american-savings]{only 39% of Americans have enough savings to cover a $1,000 emergency} you should be glad if you can honestly answer yes to these questions. Many would panic if their salary was just a little bit late, let alone half a year.
 
 Yet this has played out ◊link[rel-examples]{again and again} for businesses all over the world who have gotten their account frozen for an unknown amount of time for arbitrary or unknown reasons.  Actually, let me take that back. What happens is actually much worse---businesses also get ◊strong{funds} frozen. It's like if your employer would freeze your credit card, your savings account and hold off your salary.
 
@@ -82,7 +82,7 @@ Imagine what you would do now, without a salary and without your savings...
 
 ◊subhead{Confiscating future payments}
 
-Just to be a little gratuitous and to drive home my point on how bad this can be---it doesn't end there. When PayPal freezes your account, they don't block incoming payments. People can continue paying for stuff---but you're not getting their money---yet you still have to give them the stuff they've paid for.◊sn{digital}
+Just to be a little gratuitous and to drive home my point on how bad this can be---it doesn't end there. When PayPal freezes your account, they don't block incoming payments. People can continue paying for stuff, but you're not getting their money and you still have to give them the stuff they've paid for.◊mn{digital}
 
 ◊ndef["digital"]{
     It might be easy to deliver digital goods, but physical goods may be created on demand. In addition salaries, rent and other expenses needs to be paid. Cash flow is a very important issue for most companies.
@@ -98,10 +98,10 @@ Just to be a little gratuitous and to drive home my point on how bad this can be
     I withdraw everything from paypal every week. They limited my account just as sales started spiking, so this money has accumulated since they limited the account.
 }
 
-They didn't just freeze the account, they're making it worse by confiscating future payments as well!◊sn{lawsuits}
+They didn't just freeze the account, they're making it worse by confiscating future payments as well!◊mn{lawsuits}
 
 ◊ndef["lawsuits"]{
-    Even if you get all your money back eventually, you still have to deal with ruined reputation, missed opportunities and costumers suing you for delayed deliveries.
+    And even if you get all your money back eventually, you still have to deal with ruined reputation, missed opportunities and costumers suing you for delayed deliveries.
 }
 
 ◊note-pos[#:top -25]{digital}
@@ -110,7 +110,7 @@ They didn't just freeze the account, they're making it worse by confiscating fut
 
 ◊subhead{Small businesses & projects may be ruined}
 
-If you run a very popular business---like Minecraft---you'll probably get through without much issue. You're already making enough money to cover expenses and the attention in news and social media will make sure the issue gets resolved quickly.◊sn{attention}
+If you run a very popular business like Minecraft you'll probably get through without much issue. You're already making enough money to cover expenses and the attention in news and social media will make sure the issue gets resolved quickly.◊mn{attention}
 
 ◊ndef["attention"]{
     Creating an uproar on social media is still the best way to resolve issues with companies that have very poor customer service. For example if you have an issue with Google hopefully your post on ◊link[hackernews]{Hacker News} gathers enough attention to catch the eye of someone working there.
@@ -136,7 +136,7 @@ The ◊link[neo900]{Neo900} project I quoted at the start of this chapter? They 
 
 ◊subhead{Other examples}
 
-If you search for it online, there are thousands of stories like these. This is just a few examples to get the curious started:
+If you search for it online, there are thousands of stories like these. Here a few examples to get the curious started:
 
 ◊ul{
     ◊li{◊link[kyc-failure]{PayPal Know Your Customer failure}}
@@ -183,7 +183,7 @@ Some of these had a happy ending but others did not.
 
 ◊subhead{Money under your mattress}
 
-With cryptocurrencies you can accept digital payments that go directly into a wallet you control yourself. Then it's impossible to get your cryptocurrency account frozen: it's really like storing them under your own (digital) mattress.◊sn{tradeoff-holding}
+With cryptocurrencies you can accept digital payments that go directly into a wallet you control yourself. Then it's impossible to get your cryptocurrency account frozen; it's really like storing them under your own (digital) mattress.◊mn{tradeoff-holding}
 
 ◊ndef["tradeoff-holding"]{
     As always, there are trade-offs. Storing money at home drastically increases the risk of theft so keeping it at a trustworthy bank might be a wise choice.
@@ -192,7 +192,7 @@ With cryptocurrencies you can accept digital payments that go directly into a wa
 }
 
 
-This of course requires that you use a wallet which holds the coins itself, and not a custodial wallet---which a third party manages for you. It's why so much emphasis is placed on controlling your own keys---otherwise you won't get all benefits.
+This of course requires that you use a wallet which holds the coins itself, and not a custodial wallet---which a third party manages for you. It's why so much emphasis is placed on controlling your own keys, otherwise you won't get all benefits.
 
 I'm not advocating either way, just realize there are trade-offs with controlling your own keys or not. If you want the ease of use of a custodial wallet then you'll sacrifice control of your account.
 

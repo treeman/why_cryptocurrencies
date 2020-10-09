@@ -313,6 +313,10 @@
   (ch-ref
     'a_defective_system.html
     "A defective system"))
+(define legal_counterfeiting
+  (ch-ref
+    'a_defective_system.html #:ref "legal-counterfeiting"
+    "A defective system: Legal counterfeiting"))
 
 (define extensions
   (ch-ref
@@ -434,3 +438,8 @@
     "https://blockchair.com/"
     "Blockchair"))
 
+(define surveillance-illegal
+   (x-ref
+     "2020-09-22"
+     "https://www.reuters.com/article/us-usa-nsa-spying-idUSKBN25T3CK"
+     "U.S. court: Mass surveillance program exposed by Snowden was illegal"))

@@ -91,7 +91,7 @@
             ◊when/splice[parent-page]{
               <span class="parent">
                 ◊;(ref parent-page "Chapter")
-                ◊(ref parent-page parent-title "↑ Section")
+                ◊(ref parent-page parent-title "↑ Part")
               </span>
             }
             <span class="home">
