@@ -3,7 +3,7 @@
 ◊(define-meta title "Protection against government confiscation")
 ◊(define-meta subtitle "It's harder for governments to take cryptocurrencies from you")
 ◊(define-meta published "2020-01-09T00:00:00+01:00")
-◊(define-meta updated "2020-01-15T20:10:22+01:00")
+◊(define-meta updated "2020-10-09T19:49:25+02:00")
 ◊(define-meta uuid "01795fb4-c99a-4168-8685-73ad86ed7c0c")
 
 ◊(clear-sidenotes)
@@ -20,7 +20,7 @@ In this chapter we'll see how governments around the world sometimes directly or
 
 No, this chapter is ◊strong{not} about tax evasion---do your taxes people.
 
-It's about laws meant to fight crime end up hurting innocent people and how they limit people's freedom.◊mn{legal-moral} It's also about how difficult it can be for you to keep your money safe and your wealth intact; and of course, as this is about cryptocurrencies, how they might help.
+It's about laws meant to fight crime end up hurting innocent people and how they limit people's freedom.◊mn[#:top -6]{legal-moral} It's also about how difficult it can be for you to keep your money safe and your wealth intact; and of course, as this is about cryptocurrencies, how they might help.
 
 ◊ndef["legal-moral"]{
     Remember that legality doesn't imply morality, meaning just because it's legal doesn't make it right, which we explored in the chapter about ◊link[darknet_markets]{darknet markets}.
@@ -44,9 +44,7 @@ If it was the other way around, "guilty until proven innocent", then it would op
      "https://www.un.org/en/universal-declaration-human-rights/"
      "Universal Declaration of Human Rights"))
 
-However in the United States there's something called ◊def[civil-forfeiture]{civial asset forfeiture}. It's a legal tool which allows the police to seize your car, home, money or other assets without ever charging you with a crime. You read that right, they can seize your assets ◊strong{without charging you with a crime}.◊mn{cash-limits}
-
-There are ◊link[10-cases-forfeiture]{tons of stories} of ◊link[7-cases-forfeiture]{innocent people} having their ◊link[ef-cases]{money or property confiscated}, for example:
+However in the United States there's something called ◊def[civil-forfeiture]{civial asset forfeiture}. It's a legal tool that allows the police to seize your car, home, money or other assets without ever charging you with a crime. You read that right, they can seize your assets ◊strong{without charging you with a crime}. There are ◊link[10-cases-forfeiture]{tons of stories} of ◊link[7-cases-forfeiture]{innocent people} having their ◊link[ef-cases]{money or property confiscated}, for example:
 
 ◊ndef["cash-limits"]{
     The limits placed on cash I referenced in the ◊link[prev-chapter]{previous chapter} are also examples of the presumption of innocence being turned on it's head. For example if you transfer €50,000 to an European bank it's up to you to prove where you got the money, not the bank or the government.
@@ -68,6 +66,8 @@ There are ◊link[10-cases-forfeiture]{tons of stories} of ◊link[7-cases-forfe
         She was planning to start a medical clinic for women and children. She was never charged with a crime and was pressured to sign an unconstitutional agreement waiving important rights, including right to interest on the cash and her right to sue back.
     }
 }
+
+◊mn{cash-limits}
 
 On a technical level it's not the owner that's charged with a crime, but the property itself. That's why it's legal for the police to seize a house because someone sold drugs in the house, even if the owners didn't know about it.
 
@@ -98,6 +98,9 @@ He's saying that the police can take whatever they want, and that they're motiva
 ◊ndef["police-funding"]{
     If you're a cynic, like I tend to be, you have to love the incentives at play here. If the police seize money they directly help themselves yet there appears to be no negative consequences if they do.
 }
+
+◊note-pos[#:top -41]{banks-laundering}
+◊note-pos[#:top -11]{police-funding}
 
 In practice civil asset forfeiture is state-sanctioned theft where the police are acting like ◊link[highway-robbers]{highway robbers}.
 
@@ -277,7 +280,7 @@ Similar to how safe deposit boxes aren't safe during a financial crisis, neither
 
 ◊subhead{Invalidating money}
 
-Fine. Let's say you know about all these ways someone can take your money and you've decided to hide your cash somewhere really safe, maybe buried in your yard or in a hidden safe somewhere in your house.◊sn{safe-tips} Perhaps nobody even knows you have it so the risk of someone ◊link[xkcd-security]{hitting you with a wrench until you give it} up is minimized. That should do it, right?
+Fine. Let's say you know about all these ways someone can take your money and you've decided to hide your cash somewhere really safe, maybe buried in your yard or in a hidden safe somewhere in your house.◊mn{safe-tips} Perhaps nobody even knows you have it so the risk of someone ◊link[xkcd-security]{hitting you with a wrench until you give it} up is minimized. That should do it, right?
 
 ◊ndef["safe-tips"]{
     Here are some tips if you want to install a safe:
@@ -330,9 +333,9 @@ I like cash. I like the feel of it and I like that I can store it at home and be
     Even though I like the idea of cash, I don't use it much. Simply because I'm ◊em{lazy}, and paying with cards is much easier.
 }
 
-But the system isn't perfect. If you miss your window and have to go to a bank with your old, and now technically invalid bills, you have to prove where the cash came from. This can be quite hard if you've been saving some money here and there for many years, and if you don't your money is now lost.
+But the system isn't perfect. If you miss your window and have to go to a bank with your old, and now technically invalid bills, you have to prove where the cash came from. This can be quite hard if you've been saving some money here and there for many years, and if you can't your money is now lost.
 
-Exactly this happened to a 91-year old Swedish woman ◊link[91-woman]{couldn't deposit her old bills} (worth around €10,000), because she couldn't prove where she got them. There isn't anything outright evil going on here (maybe a little unintended evil?), there are rules which have to be followed and cash do have to get replaced from time to time. It's just unfortunate that some people may fall through the cracks.◊mn{old-people}
+Exactly this happened to a 91-year old Swedish woman ◊link[91-woman]{couldn't deposit her old bills} (worth around €10,000), because she couldn't prove where she got them. There isn't anything outright evil going on here (maybe a little unintended evil?); there are rules which have to be followed and cash do have to get replaced from time to time. It's just unfortunate that some people may fall through the cracks.◊mn{old-people}
 
 ◊ndef["old-people"]{
     It's not surprising that it was an old woman who got in trouble. When you're over 90 years old you probably didn't even know about the new bills and that the old ones were becoming invalid. She probably wasn't up-to-date with the ever-more strict KYC laws either. When she was younger she didn't have to track every single income-source, just to not lose her money.
@@ -374,6 +377,8 @@ Just remember that inflation is a more indirect---and perhaps sinister---way to 
 
 With cryptocurrencies nobody can "steal" money from you buy printing more of it.
 
+◊note-pos{inflation-sad}
+
 ◊; https://www.reddit.com/r/btc/comments/c6cfbf/let_me_tell_you_a_tale_about_ecuador_that_abused/
 
 ◊subhead{What cryptocurrencies do}
@@ -381,11 +386,11 @@ With cryptocurrencies nobody can "steal" money from you buy printing more of it.
 Here's a short summary on how cryptocurrencies can help protect our money and our wealth:
 
 ◊ul{
-    ◊li{It allows you to hold, and hide, any amount of money}
-    ◊li{If you use strong encryption, nobody can confiscate it (unless they use force)}
-    ◊li{You can easily bring your money everywhere}
-    ◊li{The government cannot invalidate your money}
-    ◊li{Nobody can inflate the money supply and devalue your money}
+    ◊li{It allows you to hold, and hide, any amount of money.}
+    ◊li{If you use strong encryption, nobody can confiscate it (unless they use force).}
+    ◊li{You can easily bring your money anywhere.}
+    ◊li{The government cannot invalidate your money.}
+    ◊li{Nobody can inflate the money supply and devalue your money.}
 }
 
 Currently, cryptocurrencies are extremely volatile, and storing your wealth in them might be less preferable than letting it slowly wither away from inflation. With time, and increased adoption, I think this would change.

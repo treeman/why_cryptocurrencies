@@ -3,7 +3,7 @@
 ◊(define-meta title "Properties of a cryptocurrency")
 ◊(define-meta subtitle "Trustless and permissionless")
 ◊(define-meta published "2019-04-24T20:08:34+01:00")
-◊(define-meta updated "2020-01-21T08:28:57+01:00")
+◊(define-meta updated "2020-10-09T19:49:32+02:00")
 ◊(define-meta uuid "176f3433-baba-49d6-ab43-9c08061f0682")
 
 ◊(clear-sidenotes)
@@ -22,21 +22,23 @@ These are the most important properties of cryptocurrencies as I see it:
 ◊ul{
     ◊li{No more third parties}
     ◊li{No counterfeiting}
-    ◊li{Transactions are irreversible}
+    ◊li{Irreversible transactions}
     ◊li{Predetermined emission rate}
     ◊li{Private}
     ◊li{Large and small amounts behave the same}
     ◊li{Borderless}
 }
 
+
+
 They highlight the difference between cryptocurrencies and other payment systems and ultimately they're what makes cryptocurrencies useful.
 
 
 ◊subhead{No more third parties}
 
-The important difference between a cryptocurrency and digital payments we have today is the removal of a third party. Payments are ◊em{peer-to-peer} just as if you gave someone a dollar bill or a gold coin.◊sn{p2p}
+The important difference between a cryptocurrency and digital payments we have today is the removal of a third party. Payments are ◊em{peer-to-peer} just as if you gave someone a dollar bill or a gold coin.◊mn{p2p}
 
-Sending money to people via your bank is not peer-to-peer as you rely on your bank to send it for you. VISA, PayPal, Swish, Apple Pay and other digital payments have the same problem, all except cryptocurrencies.
+Sending money to people via your bank isn't peer-to-peer as you rely on your bank to send it for you. VISA, PayPal, Swish, Apple Pay and other digital payments have the same problem, all except cryptocurrencies.
 
 ◊img[#:src "images/give_cash.png" #:alt "Cash is given directly from hand to hand."]{
     Cash is given directly from hand to hand.
@@ -48,14 +50,14 @@ Sending money to people via your bank is not peer-to-peer as you rely on your ba
     Cryptocurrencies are sent directly from device to device.
 }
 
-Transfers are therefore ◊em{trustless}◊sn{pundits} and ◊em{permissionless}.
+Transfers are therefore ◊em{trustless}◊mn{pundits} and ◊em{permissionless}.
 
 Trustless means you don't have to rely on a third party to make or confirm the transfer for you and permissionless means you don't have to worry about your transactions being blocked. Nobody can ◊link[freezing_of_merchant_accounts]{freeze your account} or ◊link[undesirable_businesses]{prevent you from opening one}. Cryptocurrencies are ◊em{uncensorable}.
 
+◊note-pos[#:top -11]{pundits}
+
 You also don't have to trust a third party to hold your money like you do when you have money in a bank.◊sn{in-banks} What you really have is an IOU from the bank where they promise to give you your money when you ask for it. With cryptocurrencies you can write down the keys to your wallet and you alone have access to it.◊sn{keys}
 
-◊note-pos[#:top -73]{p2p}
-◊note-pos[#:top -19]{pundits}
 ◊note-pos[#:top -6]{in-banks}
 ◊note-pos{keys}
 
@@ -89,9 +91,9 @@ With cryptocurrencies anyone can independently verify the integrity of the coins
 }
 
 
-◊subhead{Transactions are irreversible}
+◊subhead{Irreversible transactions}
 
-Just like with cash cryptocurrency transfers are irreversible.◊sn[#:top -6]{DAO} This means if you've sent someone coins you can only get them back if they agree to give them back. It prevents ◊def[charge-back-fraud]{charge back fraud} but it makes theft worse.
+Just like with cash cryptocurrency transfers are irreversible.◊mn[#:top -6]{DAO} This means if you've sent someone coins you can only get them back if they agree to give them back. It prevents ◊def[charge-back-fraud]{charge back fraud} but it makes theft worse.
 
 ◊;Transactions might also hold extra data so you can treat it as an effectively immutable data storage. It's very inefficient but could still be useful. The Bitcoin white paper is for example stored ◊link[wp-blockchain]{on the Bitcoin blockchain}.
 
@@ -102,17 +104,19 @@ Just like with cash cryptocurrency transfers are irreversible.◊sn[#:top -6]{DA
 
 ◊subhead{Predetermined emission rate}
 
-As there's no trusted third party there's no single entity who controls the creation of new money and the inflation.  Instead new coins are minted following predetermined rules.◊sn{miners}
+As there's no trusted third party there's no single entity who controls the creation of new money and the inflation.  Instead new coins are minted following predetermined rules.◊mn{miners}
 
 ◊ndef["miners"]{
     The new coins are rewards for miners who secure the network, but more on that in the ◊link[next-chapter]{next chapter}.
 }
 
-◊img[#:src "images/emission-rates.svg" #:link #t #:alt "Bitcoin's and Monero's emission schedule."]{
-    Bitcoin has a hard limit of 21 million bitcoins while in Monero new coins will always be created.◊sn{bitcoin-supply}
+◊img[#:src "/images/emission-rates.svg" #:link #t #:alt "Bitcoin's and Monero's emission schedule."]{
+    Bitcoin has a hard limit of 21 million bitcoins while in Monero new coins will always be created.◊mn{bitcoin-supply}
 }
 
-If inflation is good or bad depends on who you ask. Keynesian economists ◊link[inflation-good]{argues inflation is good} while the Austrian school ◊link[inflation-bad]{argues inflation is bad}.◊sn{austrian-podcast}
+◊note-pos{bitcoin-supply}
+
+If inflation is good or bad depends on who you ask. Keynesian economists ◊link[inflation-good]{argues inflation is good} while the Austrian school ◊link[inflation-bad]{argues inflation is bad}.◊mn{austrian-podcast}
 
 I sure don't know who's right. It's probably best to be skeptical of both camps---economics operate in an extremely complex and irregular environment. Economic theories are difficult, or impossible, to verify.
 
@@ -134,10 +138,6 @@ Either way it's not an argument against cryptocurrencies in general as they can 
 ◊ndef["austrian-podcast"]{
     If you're curious about Austrian Economics, which most cryptocurrencies follow, I can recommend ◊link[aus-link]{this podcast episode}. It's not something you hear about often but it presents an interesting viewpoint and shouldn't be dismissed.
 }
-
-◊note-pos[#:top -60]{miners}
-◊note-pos[#:top -32]{bitcoin-supply}
-◊note-pos[#:top -24]{austrian-podcast}
 
 
 ◊subhead{Private}
@@ -163,10 +163,10 @@ It's also easy to split coins into small parts.◊mn[#:top -4]{satoshis} In fact
 
 ◊subhead{Borderless}
 
-Cryptocurrencies are inherently global. They are usable wherever you are as long as you have an internet connection. You can even send to wallets which are offline◊mn[#:top -8]{cold-storage} but to retrieve them you need to access the internet. Technically you could do transfers completely offline---on paper---but they would be unconfirmed and might not be valid when you do want to use them.
+Cryptocurrencies are inherently global. They're usable wherever you are as long as you have an internet connection. You can even send to wallets which are offline◊mn[#:top -8]{cold-storage} but to retrieve them you need to access the internet. Technically you could do transfers completely offline---on paper---but they would be unconfirmed and might not be valid when you do want to use them.
 
 ◊ndef["cold-storage"]{
-    Offline wallets with no computer contact is called cold storage. It's an excellent way to store large amounts you're not planning to use for some time.
+    An offline wallet with no computer contact like a ◊def{paper wallet} is called ◊def{cold storage}. It's an excellent way to store large amounts you're not planning to use for some time.
 }
 
 ◊(define inflation-good

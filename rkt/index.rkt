@@ -71,7 +71,7 @@
   (define chapters (children (toc-entry page)))
   (define header
     (if section-header?
-        `(span ((class "chapters")) "Chapters in this section")
+        `(span ((class "chapters")) "Chapters in this part")
         ""))
   (if chapters
     `(div ((class "subnav"))

@@ -3,7 +3,7 @@
 ◊(define-meta title "Tokens")
 ◊(define-meta subtitle "Cryptocurrencies with centrally managed supply")
 ◊(define-meta published "2020-02-07T07:35:36+01:00")
-◊(define-meta updated "2020-02-07T07:35:36+01:00")
+◊(define-meta updated "2020-10-09T19:48:54+02:00")
 ◊(define-meta uuid "1cbc42c7-a81d-40ff-9620-1d89c13dee12")
 
 ◊(clear-sidenotes)
@@ -32,9 +32,7 @@ Tokens are essentially cryptocurrencies, except there's a single entity with the
 
 They achieve this by operating on top of an existing cryptocurrency. You might think of it as the issuer marking some coins with additional information, specifying what kind of token they are. (Technically tokens can be implemented in many different ways, but this is the core idea.)
 
-The most popular class of tokens are probably the ◊link[erc20-standard]{ERC20 tokens}, implemented on top of Ethereum. For example ◊link[usdc]{USD Coin}, Coinbase's stablecoin backed 1-to-1 by USD, is an ERC20 token. The ◊link[bnb]{Binance Coin}, used for the bonus system on a cryptocurrency exchange, is another.◊mn{other-coins}
-
-◊note-pos[#:top -2]{other-coins}
+The most popular class of tokens are probably the ◊link[erc20-standard]{ERC20 tokens}, implemented on top of Ethereum. ◊link[usdc]{USD Coin}, Coinbase's stablecoin backed 1-to-1 by USD, is for example an ERC20 token. ◊link[bnb]{Binance Coin}, used for the bonus system on a cryptocurrency exchange, is another.◊mn{other-coins}
 
 ◊ndef["other-coins"]{
     You could implement tokens on other cryptocurrencies as well. The ◊link[omni]{Omni Layer} is for example an extension network built on Bitcoin that supports tokens. The difference is that Ethereum's ERC20 tokens are miner validated, while Omni uses a different consensus mechanism.
@@ -69,7 +67,7 @@ The most popular class of tokens are probably the ◊link[erc20-standard]{ERC20 
 
 ◊subhead{Initial coin offering}
 
-The most famous, or infamous, use of tokens is for an ◊link[ico]{Initial Coin Offering (ICO)}. It's similar to an ◊link[ipo]{Initial Public Offering (IPO)}, which aims to raise funds for companies or projects. In return for giving them money you'll receive a token as a sign of participation. ICOs are mostly unregulated and are easy for anyone to participate in.◊mn{security}
+The most famous---or infamous---use of tokens is for an ◊link[ico]{Initial Coin Offering (ICO)}. It's similar to an ◊link[ipo]{Initial Public Offering (IPO)}, which aims to raise funds for companies or projects. In return for giving them money you'll receive a token as a sign of participation. ICOs are mostly unregulated and are easy for anyone to participate in.◊mn{security}
 
 ◊ndef["security"]{
     ICOs are classified as securities and the Securities and Exchange Commission (SEC) has intervened on a number of occasions.
@@ -154,7 +152,7 @@ I think visualizations can help us compare large amounts like these, so here's o
 
     ◊(market-img "Money" "images/markets/money.png")◊mn[#:top -5]{money}
 
-    ◊(market-img "Derivatives" "images/markets/derivatives.png")◊mn[#:top -26]{derivatives}
+    ◊(market-img "Derivatives" "images/markets/derivatives.png")◊mn[#:top -22]{derivatives}
 
     ◊(small-img "Bitcoin" "images/markets/small.png")◊mn[#:top -5]{bitcoin}
 }
@@ -212,7 +210,9 @@ I think visualizations can help us compare large amounts like these, so here's o
 
 ◊;I highly recommend you to check out the excellent ◊link[money-visualization]{visualization by visualcapitalist}, which this visualization is inspired by.
 
-I bring this up just to say one thing: the value of derivatives is absolutely huge. Money, which essentially makes the world go around, is dwarfed by the value of derivatives. But ◊link[derivative]{what are derivatives}?
+I bring this up just to say one thing: the value of derivatives is absolutely huge. Money, which essentially makes the world go around, is dwarfed by the value of derivatives.
+
+But ◊link[derivative]{what are derivatives}?
 
 In short, they're a bet on the value of something. A derivative is a contract that derives its price from fluctuations of the underlying asset. This commonly include bets on stocks, bonds, currencies and commodities. Have you heard about futures, forwards, swaps and options? They're all different types of derivatives.
 

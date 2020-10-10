@@ -294,6 +294,9 @@ pre {
     margin-bottom: 1rem;
     padding: 0.4rem 0.6rem;
 }
+li pre {
+    margin-bottom: $list-p-margin;
+}
 .sidenote code {
     font-size: 0.6rem;
     line-height: 1.4;

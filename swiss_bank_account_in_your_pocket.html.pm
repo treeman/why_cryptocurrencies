@@ -3,7 +3,7 @@
 ◊(define-meta title "A Swiss bank account in your pocket")
 ◊(define-meta subtitle "Unlimited and untraceable money on your smartphone")
 ◊(define-meta published "2020-01-02T00:00:00+01:00")
-◊(define-meta updated "2020-01-15T20:10:36+01:00")
+◊(define-meta updated "2020-10-09T19:49:09+02:00")
 ◊(define-meta uuid "d1144eb3-b2ac-4c89-b2e0-4a03f377172c")
 
 ◊(clear-sidenotes)
@@ -36,14 +36,14 @@ This is actually a great description of how cryptocurrencies work. You just need
 
 ◊subhead{The myth of a Swiss bank account}
 
-This is how ◊link[swiss-bank-account]{Swiss bank accounts} are usually portrayed. While they can offer more privacy than other banks, it's just a myth that they offer truly private banking. Due to the additional privacy compared to the other banks, they also have tough anti-money-laundering laws that requires more identification than other banks and they require proof of where the money comes from.
+This is how ◊link[swiss-bank-account]{Swiss bank accounts} are usually portrayed. While they can offer more privacy than other banks, it's just a myth that they offer truly private banking. Due to the additional privacy compared to the other banks, they also have tough anti-money-laundering laws that require more identification than other banks and they also require proof of where the money comes from.
 
 Recently Switzerland has ◊link[swiss-exchange]{begun sharing bank details} of foreign account holders automatically with other countries. At the time of writing they share data with ◊link[swiss-more-countries]{more than 60 countries}, and more will join. I think it's fair to say that Swiss bank accounts don't live up to the private bank account dream.
 
 Cryptocurrencies on the other hand can fulfill the dream.◊mn{private?}
 
 ◊ndef["private?"]{
-    How private are cryptocurrencies really? Some are more private than others, see the ◊link[privacy-challenge]{discussion of the privacy challenge} in the appendix for more information.
+    How private are cryptocurrencies really? Some are more private than others, see the ◊link[privacy-challenge]{discussion of the privacy challenge} for more information.
 }
 
 ◊(define swiss-bank-account
@@ -215,7 +215,7 @@ The world is just extremely unfair, and if anything it should be the other way a
 
 ◊subhead{The great leveller}
 
-In an ideal world everyone would pay their taxes as they should, while they would also have financial privacy. But this is sadly just a dream, and it's not possible in reality. So let's look at some hypothetical worlds, to find out what we'd like to move towards.
+In an ideal world everyone would pay their taxes as they should, while preserving their financial privacy. But this is sadly just a dream, and it's not possible in reality. So let's look at some hypothetical worlds, to find out what we'd like to move towards.
 
 ◊ul{
     ◊li{It's fine the way it is
@@ -249,9 +249,9 @@ If you view tax evasion as a problem, then making better laws is a necessary beg
 }
 
 
-We might try to force everyone to use traceable money, and thereby making tax collection equally fair for everyone. This is largely what society is moving towards, with the ever-more strict ◊link[kyc]{Know Your Customer} and ◊link[aml]{Anti Money Laundering} laws. Besides the serious privacy and permission problems this creates, the problem is that if we outlaw privacy, only outlaws will have privacy, somewhat defeating the fairness we were trying to create.
+We might try to force everyone to use traceable money, and thereby making tax collection equally fair for everyone. This is largely what society is moving towards, with the ever-more strict ◊link[kyc]{Know Your Customer} and ◊link[aml]{Anti Money Laundering} laws. Besides the serious privacy and permission problems this creates, the problem is that if we outlaw privacy, only outlaws will have privacy, defeating the fairness we we're trying to create.
 
-The only truly fair world would be if everyone had access to the same tools, and if financial privacy would be available for all, not just the privileged few. Everyone could enjoy the security and peace of mind ◊link[private_money]{that privacy gives you}, making it the more preferable choice for me.
+The only truly fair world would be if everyone had access to the same tools, and if financial privacy would be available for all, not just the privileged few. Everyone could enjoy the security and peace of mind ◊link[private_money]{that privacy gives you}, making it the preferable choice for me.
 
 For better or worse, cryptocurrencies bring us closer to that world. Cryptocurrencies give everyone the ability to store their wealth privately, regardless of how rich you are.  They make it possible for anyone to store their wealth "offshore" and off the grid; they act as a financial equalizer by giving everyone access to similar tools that the super rich already have.◊mn{not-quite}
 

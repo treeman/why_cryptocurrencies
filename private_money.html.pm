@@ -3,7 +3,7 @@
 ◊(define-meta title "Private money")
 ◊(define-meta subtitle "Reclaim your financial privacy with cryptocurrencies")
 ◊(define-meta published "2019-12-09T00:00:00+01:00")
-◊(define-meta updated "2020-01-15T20:10:12+01:00")
+◊(define-meta updated "2020-10-09T19:49:39+02:00")
 ◊(define-meta uuid "9f90581c-24f1-4653-9b4a-d86a9ec9e365")
 
 ◊(clear-sidenotes)
@@ -90,7 +90,7 @@ If you don't recognize the situation please watch the scene where Hugh Grant pla
      "https://www.youtube.com/watch?v=aUm2K6eDuMU"
      "Love Actually - Hugh Grant dancing (1 min)"))
 
-I have a child who's two years old, and even he wants privacy sometimes. He likes to build a cabin made of pillows and hide in it, and if I disturb him he pushes me and shouts “Go away!”. After we recently renovated his room he was ◊em{so happy} that he had a room of his own again, which he likes to be alone in when he's pooping (yes he uses diapers).◊mn{children-privacy}
+I have a child who's two years old, and even he wants privacy sometimes. He likes to build a cabin made of pillows and hide in it, and if I disturb him he pushes me and shouts “Go away!”. After we recently renovated his room he was ◊em{so happy} that he had a room of his own again, which he likes to be alone in when he's pooping (in his diaper thank god).◊mn{children-privacy}
 
 ◊ndef["children-privacy"]{
     It's really quite fascinating. Sometimes I can hug him while he's playing, but sometimes I'm not even allowed to be in the same room. I guess he just wants to be alone from time to time.
@@ -138,7 +138,7 @@ Caring about privacy is a natural instinct---for good reason. It's not just abou
 ◊ndef["how-to-destroy-someones-life"]{
     I'm a problem solver, and I do wonder how everyday problems are solved. For example how milk ends up in the milk packages or how you paint a heart in the sky with an airplane. Not because I need to solve them---and I don't even want to know the right answer---I just need to let my mind work on something.
 
-    Sometimes the questions are darker, like what's the most effective way to destroy someones life. Stealing their identity have to be one of the top candidates.
+    Sometimes the questions are darker, like what's the most effective way to destroy someone's life. Stealing their identity have to be one of the top candidates.
 }
 
 ◊(define identity-theft-story
@@ -177,7 +177,7 @@ Even if you don't think you have anything to hide, others do. Here are some exam
 
     There's also nothing wrong with having a fetish and engaging in strange sexual fantasies in your own home, but maybe you don't want your neighbourhood to know you bought a vibrating horse dildo.◊mn{porn-story}
 
-    ◊note-pos[#:top -18]{porn-story}
+    ◊note-pos{porn-story}
 
     ◊ndef["porn-story"]{
         I read a story long ago, but I can't remember if it was real or made up.
@@ -198,7 +198,6 @@ Even if you don't think you have anything to hide, others do. Here are some exam
 }
 
 As Snowden's quote in the beginning of the chapter says: just because you choose not to exercise your right, why should you remove the right for others? Privacy should be a ◊em{choice}---not something that's chosen for you.
-
 
 ◊(define teenage-pregnancy
    (x-ref
@@ -224,7 +223,7 @@ As Snowden's quote in the beginning of the chapter says: just because you choose
 
 ◊subhead3{Privacy is a human right}
 
-That privacy is important is widely acknowledged. It is for example recognized as a human right by the United Nations, along with the right to food, clothing and medical care:
+That privacy is important is widely acknowledged. It's for example recognized as a human right by the United Nations, along with the right to food, clothing and medical care:
 
 ◊qt[#:src "Universal Declaration of Human Rights"
     #:url un-human-rights]{
@@ -248,7 +247,7 @@ Children's right to privacy is also acknowledged by UNICEF:◊mn{adult-version}
   Every child has the right to privacy. The law must protect children’s privacy, family, home, communications and reputation (or good name) from any attack.
 }
 
-◊note-pos[#:top -30]{adult-version}
+◊note-pos[#:top -3]{adult-version}
 
 ◊(define child-rights-children
    (x-ref
@@ -280,7 +279,7 @@ Even the constitution of the United States---written more than a hundred years b
 
 The ◊link[stasi]{Stasi}, the secret police of East Germany, has ◊link[stasi-repression]{been described} as one of the most repressive organizations in the world. One of their purposes was to find and imprison political enemies, which basically meant anyone critical of the government.
 
-They used 100,000 employees and between 500,000 to 2,000,000 snitches to maintain files on more than one-third of the population. There were always spies in the bars and libraries who listened to your conversations and they encouraged (or threatened) people to snitch on their co-workers, neighbours and family.◊sn{threats}
+They used 100,000 employees and between 500,000 to 2,000,000 snitches to maintain files on more than one-third of the population. There were always spies in the bars and libraries who listened to your conversations and they encouraged (or threatened) people to snitch on their co-workers, neighbours and family.◊mn{threats}
 
 ◊ndef["threats"]{
     People could be placed in prison and tortured by isolation or sleep deprivation in the hopes of getting them to snitch on others.
@@ -381,12 +380,12 @@ Here are just ◊link[snowden-leaks]{some of the things} he leaked:
 
 As is praxis for authoritative regimes, this capability isn't used to protect the people of the state, but the state itself. Snowden's leaks were to the benefit of the people, yet he and other whistleblowers like him are ◊link[full-power]{facing the full power of the U.S. aimed at them}. This despite the U.S. court finding that ◊link[surveillance-illegal]{the mass surveillance program was illegal}.
 
-You see, all this data is stored ◊em{forever}, just waiting to be used to nail you for a crime. And let's be clear: everyone has committed a crime. For example how many have ever illegally downloaded a movie or music? Or how many have driven too fast? Not to mention ◊link[uk-stupid-laws]{old ridiculous laws} that are still in effect, such as the ◊link[metropolitan-police-act]{Metropolitan Police Act of 1839}, which makes carrying a plank along a pavement illegal in the U.K. (section 54).◊sn{jews}
+You see, all this data is stored ◊em{forever}, just waiting to be used to nail you for a crime. And let's be clear: everyone has committed a crime. For example how many have ever illegally downloaded a movie or music? Or driven too fast? Not to mention ◊link[uk-stupid-laws]{old ridiculous laws} that are still in effect, such as the ◊link[metropolitan-police-act]{Metropolitan Police Act of 1839}, which makes carrying a plank along a pavement illegal in the U.K. (section 54).◊mn{jews}
 
 ◊ndef["jews"]{
     It's not something wrong with being a Jew, so why would a record of all Jews living in a country be problematic?
 
-    The problem is when a group like the Nazis take control over the country (which happened in only a few years).
+    The problem is when a group like the Nazis take control over the country (which only took a few years).
 }
 
 ◊(define snowden-lawsuit
@@ -438,10 +437,7 @@ You see, all this data is stored ◊em{forever}, just waiting to be used to nail
   Once the ubiquity of collection was combined with the permanency of storage, all any government had to do was select a person or a group to scapegoat and go searching---as I'd gone searching through the agency's files---for evidence of a suitable crime.
 }
 
-Snowden now lives in exile in Russia, where the black bags of the U.S. cannot reach. He recently released his memoir ◊(book-link permanent-record-book) which details his life leading up to the leaks. It's a great book, but the U.S. doesn't want you to read it. They even ◊link[snowden-lawsuit]{filed a lawsuit against him} and seized the revenue of the book.◊sn{post-lawsuit}
-
-◊note-pos[#:top -24]{jews}
-◊note-pos{post-lawsuit}
+Snowden now lives in exile in Russia, where the black bags of the U.S. cannot reach. He recently released his memoir ◊(book-link permanent-record-book) that details his life leading up to the leaks. It's a great book, but the U.S. doesn't want you to read it. They even ◊link[snowden-lawsuit]{filed a lawsuit against him} and seized the revenue of the book.◊mn{post-lawsuit}
 
 ◊ndef["post-lawsuit"]{
     As in response to the lawsuit his book shot up to the Amazon bestseller list. Snowden concluded that ◊link[snowden-good-for-bitcoin #:quote #t]{this is good for bitcoin}.
@@ -464,7 +460,7 @@ Snowden now lives in exile in Russia, where the black bags of the U.S. cannot re
 
 ◊subhead{Fear is the mind-killer}
 
-◊qt{
+◊qt[#:author "Proverb"]{
     The road to hell is paved with good intentions.
 }
 
@@ -479,16 +475,17 @@ I think people often give up their privacy because of ◊strong{fear}. Since the
 
 Terrorism is real and scary, there's no denying that. But our level of fear is irrational and would be better placed worrying about cars or unhealthy food---both of which kill more people than terrorism do. Yet fear is such a powerful emotion that it prevents us from thinking logically.
 
-For example people may be willing to give up their privacy, because it might make it easier to catch terrorists. But if we try to compromise everyones' privacy, we'll jeopardize the personal security of the innocent, while the terrorists will still have access to privacy through strong encryption (with strong encryption it's impossible for ◊em{anyone} to read what you write or access your data). We may think we're more secure, but we're really not.◊mn{tsa}
+For example people may be willing to give up their privacy, because it might make it easier to catch terrorists. But if we try to compromise everyones' privacy, we'll jeopardize the personal security of the innocent, but the terrorists will still have access to privacy through strong encryption (with strong encryption it's impossible for ◊em{anyone} to read what you write or access your data). We may think we're more secure, but we're really not.◊mn{tsa}
 
 ◊ndef["tsa"]{
-    The security checks at airports are annoying, ◊link[tsa-security-theater]{expensive and ineffective}. It's ◊em{security theater}.
+    The security checks at airports are annoying, ◊link[tsa-security-theater]{expensive and ineffective}. It's ◊def{security theater}.
 }
 
 
 ◊qt[#:author "Philip R. Zimmermann"]{
   If privacy is outlawed, only outlaws will have privacy.
 }
+
 ◊note-pos[#:top -10]{tsa}
 
 ◊(define 9-11
@@ -516,7 +513,7 @@ They're selling knowledge about you. What you're searching for, what sites you v
 ◊ndef["predictions"]{
     It might be hard to come to terms with how the algorithms can predict your behavior. But it's really not that different from how Youtube, Netflix or Spotify recommends videos and songs to you.
 
-    Oh? He watched a video of a Japanese rock band? And he's listened to Raubtier? Then let's recommend ◊link[band-maid]{Band-Maid}, he's sure to love them! (I assume this is how YouTube decided to recommend me ◊link[band-maid]{Band-Maid}---the best rock band in the world.)
+    Oh? He watched a video of a Japanese rock band? And he's listened to Raubtier? Then let's recommend ◊link[band-maid]{Band-Maid}, he'll love them! (I assume this is how YouTube decided to recommend me ◊link[band-maid]{Band-Maid}---the best rock band in the world.)
 }
 
 ◊(define band-maid
@@ -529,11 +526,11 @@ They're selling knowledge about you. What you're searching for, what sites you v
 For example they probably know if you're gay or if you're pregnant (and if you are, they'll know if it was an accident, if your parents know about it and who's the father). They might also predict---with high confidence---if you're religious, even if you don't want anyone to know. Or who you're going to vote for in the ◊em{next} election or how likely you are to commit a crime.◊mn{thoughtcrime}
 
 ◊ndef["thoughtcrime"]{
-    ◊em{Pre-crime}, like in the movie ◊link[minority-report]{Minority Report}, is the idea that you can predict someone committing a crime and catching them before they do.
+    ◊def{Pre-crime}, like in the movie ◊link[minority-report]{Minority Report (2002)}, is the idea that you can predict someone committing a crime and catching them before they do.
 
-    ◊em{Thoughtcrime}, as explored in the book ◊(book-link 1984-book), says that thoughts are criminal. Like entertaining a politically unacceptable thought.
+    ◊def{Thoughtcrime}, as explored in the book ◊(book-link 1984-book), says that thoughts are criminal. Like entertaining a politically unacceptable thought.
 
-    While fiction, our technology is edging ever closer. Soon we might have killer robots going around streets enforcing laws on our predicted behaviour. (The U.S. already deploys killing drones, which kill civilians.)
+    While this is fiction, our technology is edging ever closer. Soon we might have killer robots going around streets enforcing laws on our predicted behaviour. (The U.S. already deploys killing drones, which kill civilians.)
 }
 
 ◊(define minority-report
@@ -583,7 +580,7 @@ What about your privacy? That's not something they care about, because they can 
 ◊; https://www.ted.com/talks/glenn_greenwald_why_privacy_matters
 
 
-The ◊def[great-man]{great man theory} of history says that most of history can be explained by the impact of great men. Julius Caesar, Genghis Khan and Hitler are examples of "great men". (They don't have to be good or even be men, just people who cause large changes.) If Edward Snowden will be considered a great man depends on the effects of his leaks---they might mark a turning point for government surveillance, and change the course of history, or they might be forgotten as a side note in the history books.◊mn{nothing-changed}
+The ◊def[great-man]{great man theory} of history says that most of history can be explained by the impact of great men. Julius Caesar, Genghis Khan and Hitler are examples of "great men". (They don't have to be good or even be men, just people who cause large changes.) If Edward Snowden will be considered a great man depends on the effects of his leaks; they might mark a turning point for government surveillance, and change the course of history, or they might be forgotten as a side note in the history books.◊mn{nothing-changed}
 
 ◊ndef["nothing-changed"]{
     It's still uncertain how much will really change, but either way Snowden is my hero.
@@ -597,11 +594,11 @@ While the great man theory is interesting, wouldn't it be better to describe mod
 
 So instead of looking for a great man to solve our privacy problems, maybe technology is our solution? With strong encryption we can keep our messages private and our data safe, and with the great innovation called tape we can prevent our webcams from spying on us.
 
-So far we've had to surrender our privacy to gain access to digital payments and even to our own money. But nobody needs to know how much cryptocurrencies we have or what we do with them.◊mn{bitcoin-worse} They can help us claw back some of that privacy---and isn't that pretty great?
+So far we've had to surrender our privacy to gain access to digital payments and even to our own money. But nobody needs to know how much cryptocurrencies we have or what we do with them.◊mn[#:top -6]{bitcoin-worse} They can help us claw back some of that privacy---and isn't that pretty great?
 
 
 ◊ndef["bitcoin-worse"]{
-    Unfortunately Bitcoin is sometimes ◊link[privacy-challenge]{even worse for privacy than regular payments}, because you have a permanent record of all transactions open for all to see. There are other cryptocurrencies that tries to solve this problem.
+    Unfortunately Bitcoin is sometimes ◊link[privacy-challenge]{even worse for privacy than regular payments}, because you have a permanent record of all transactions open for all to see. There are other cryptocurrencies that hides the transaction details.
 }
 
 ◊(define great-man

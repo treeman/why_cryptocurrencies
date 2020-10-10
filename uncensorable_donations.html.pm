@@ -3,7 +3,7 @@
 ◊(define-meta title "Uncensorable donations")
 ◊(define-meta subtitle "Donations governments cannot stop")
 ◊(define-meta published "2019-08-28T00:00:00+01:00")
-◊(define-meta updated "2020-03-09T21:09:23+01:00")
+◊(define-meta updated "2020-10-09T19:48:48+02:00")
 ◊(define-meta uuid "f35cab59-0629-4173-9de0-a07a0eef33dc")
 
 ◊(clear-sidenotes)
@@ -28,7 +28,7 @@ In the ◊link[freezing_of_merchant_accounts]{last} two ◊link[undesirable_busi
 
 Imagine a country doing something really horrible, like ◊link[killing-fields]{purging intellectuals and political opponents}, that would put the government in a bad light. Journalists trying to report on this event may find it difficult or impossible to accept donations to continue their work. A payment processor (which are necessary for digital donations)---perhaps under pressure from the government---might block donations or break the journalistic anonymity,◊sn{crypto-privacy} making donations for truth-seeking journalists very difficult or outright dangerous.
 
-Donations is an excellent use case for cryptocurrencies, as they cannot be censored even by the most powerful nations in the world. And as I'll argue in this chapter, this is very valuable.
+Donations is an excellent use case for cryptocurrencies, as they cannot be censored even by the most powerful nations in the world. And as I'll argue in this chapter, this is a real concern.
 
 ◊note-pos[#:top -24]{charity-fees}
 ◊note-pos[#:top -17]{voluntary}
@@ -60,7 +60,7 @@ Donations is an excellent use case for cryptocurrencies, as they cannot be censo
 
 ◊subhead{Censorship is real}
 
-A ◊link[china-forgettance]{powerful example} of censorship is the ◊link[wikipedia-tiananmen]{Tiananmen Square Massacre} in China 1989. It was a student led protest which was forcefully suppressed by hundreds of thousands military troops, killing large numbers of demonstrators and bystanders.◊sn{hong-kong}
+A ◊link[china-forgettance]{powerful example} of censorship is the ◊link[wikipedia-tiananmen]{Tiananmen Square Massacre} in China 1989. It was a student led protest which was forcefully suppressed by hundreds of thousands military troops, killing large numbers of demonstrators and bystanders.◊mn{hong-kong}
 
 ◊ndef["hong-kong"]{
     Some have ◊link[hong-kong-protests]{drawn parallels} between the recent protests in Hong Kong and Tiananmen, but with smartphones everywhere it would be close to impossible to cover up a similar massacre.
@@ -77,22 +77,23 @@ A ◊link[china-forgettance]{powerful example} of censorship is the ◊link[wiki
     "And he killed them."
 }
 
+◊note-pos[#:top -17]{hong-kong}
 
-China has gone to great lengths to cover up these events. Twitter is censored by default in China◊sn{china-censorship} and anyone caught tweeting about Tiananmen might ◊link[twitter-detained]{get arrested}.◊sn{reeducation} On the anniversary they have police escorts for the victim's families who wants to visit the graves---to keep them away from journalists.
+
+China has gone to great lengths to cover up these events. Twitter is censored by default in China◊mn{china-censorship} and anyone caught tweeting about Tiananmen might ◊link[twitter-detained]{get arrested}.◊mn{reeducation} On the anniversary they have police escorts for the victim's families who wants to visit the graves---to keep them away from journalists.
 
 ◊ndef["reeducation"]{
-    You'll probably be placed in a ◊link[china-reeducation #:quote #t]{re-education camp}, they're quite similar to camps in Stalin's Soviet or Hitler's Germany.
+    If caught you'll probably be placed in a ◊link[china-reeducation #:quote #t]{re-education camp}, which are quite similar to camps in Stalin's Soviet or Hitler's Germany.
 }
 
 ◊ndef["china-censorship"]{
     The ◊link[china-censorship]{censorship in China} is absolutely massive. They try to scan and filter all internet traffic in China, often called ◊link[great-firewall-of-china #:quote #t]{The Great Firewall of China}, and they're doing a pretty good job. For example they completely ban Facebook, Twitter, Snapchat, Google, Youtube, Wikipedia, WikiLeaks, Netflix and ◊strong{many} others. It might be possible to work around the restrictions using a VPN, but many don't work in China either.
 }
 
-Censorship is a ◊link[censorship-global]{global problem} and is a big problem in for example Eritrea, North Korea, Saudi Arabia and Ethiopia. A more modern problem is manipulation on social media, with the goal to control public opinion. One way is to use trolls (fake user accounts) and another is to ◊link[reddit-censorship]{censor opinions} that don't fit your narrative.
-
-◊note-pos[#:top -33]{hong-kong}
-◊note-pos[#:top -14]{china-censorship}
+◊note-pos[#:top -8]{china-censorship}
 ◊note-pos{reeducation}
+
+Censorship is a ◊link[censorship-global]{global problem} and is a big problem in for example Eritrea, North Korea, Saudi Arabia and Ethiopia. A more modern problem is manipulation on social media, with the goal to control public opinion. One way is to use trolls (fake user accounts) and another is to ◊link[reddit-censorship]{censor opinions} that don't fit your narrative.
 
 ◊(define reddit-censorship
   (x-ref
@@ -198,19 +199,19 @@ This is ◊strong{not} a glorification of WikiLeaks---they have ◊link[wikileak
     ◊ndef["more-leaks"]{
         It's hard to do justice as there are ◊strong{many} more leaks, I find it overwhelming. See for example:
 
-        1. ◊link[guantanamo]{Torture and abuse} in the Guantánamo naval base
-        2. How the ◊link[uk-cluster-bomb-ban]{U.S. avoided the U.K. cluster bomb ban}
-        3. The ◊link[abu-omar]{Abu Omar abduction}
-        4. ◊link[tunisian-revolution]{Political corruption} in Tunisia
-        5. ◊link[saudi-urges-attack]{Saudi urged U.S. to attack Iran}
+        1. ◊link[guantanamo]{Torture and abuse} in the Guantánamo naval base.
+        2. How the ◊link[uk-cluster-bomb-ban]{U.S. avoided the U.K. cluster bomb ban}.
+        3. The ◊link[abu-omar]{Abu Omar abduction}.
+        4. ◊link[tunisian-revolution]{Political corruption} in Tunisia.
+        5. ◊link[saudi-urges-attack]{Saudi urged U.S. to attack Iran}.
     }
 
     ◊div[#:class "leak-wrapper"]{
       ◊leak["Collateral murder" #:url collateral-murder-wikileaks]{
 
-        WikiLeaks uploaded a video of a Baghdad helicopter attack in July 12, 2007 with the title "Collateral murder". It's a video of how an attack helicopter kills a dozen (innocent) people, including two Reuters news staff.
+        WikiLeaks uploaded a video of a Baghdad helicopter attack in July 12, 2007 with the title "Collateral murder". It's a video of how an attack helicopter kills a dozen innocent people, including two Reuters news staff.
 
-        Here are some ◊link[collateral-murder-transcripts]{transcripts}◊mn{timestamps} of the ◊link[collateral-murder-full]{full video}:
+        Here are some ◊link[collateral-murder-transcripts]{transcripts}◊mn{timestamps} of the ◊link[collateral-murder-full]{full video} with my comments on the events:
 
         ◊ndef["timestamps"]{
             At 2019-08-28 the transcript timestamps are slightly off compared to the full video, I've tried to match them up better.
@@ -255,7 +256,7 @@ This is ◊strong{not} a glorification of WikiLeaks---they have ◊link[wikileak
 
         }
 
-        ◊note-pos[#:top -44]{timestamps}
+        ◊note-pos[#:top -48]{timestamps}
 
 
 
@@ -273,7 +274,7 @@ This is ◊strong{not} a glorification of WikiLeaks---they have ◊link[wikileak
 
         We're quick to call them terrorists, but viewed from another angle the U.S. soldiers are the terrorists. Just imagine foreign soldiers entering your neighbour's house and executing everyone there, including the children...
 
-        The soldiers were cleared of any wrongdoing by the U.S. military, after the military initially denied the events happened at all.
+        The soldiers were cleared of any wrongdoing by the U.S. military, after the military initially denied that the events happened at all.
 
         ◊qt[#:author "Unknown"]{
             One man's terrorist is another man's freedom fighter
@@ -376,7 +377,7 @@ This is ◊strong{not} a glorification of WikiLeaks---they have ◊link[wikileak
     ◊ndef["shutdown-successful"]{
         If the goal was to divert attention and to put breaks on WikiLeaks until the whole thing blew over, you might say it was a success.
 
-        For instance today, in 2019, the torture and abuse still continues in Guantánamo, despite ex-president ◊link[obama-guantanamo]{Barack Obama's promise} to close it.
+        For instance today, in 2020 the torture and abuse still continues in Guantánamo, despite ex-president ◊link[obama-guantanamo]{Barack Obama's promise} to close it.
     }
   }
 
@@ -437,7 +438,7 @@ This is ◊strong{not} a glorification of WikiLeaks---they have ◊link[wikileak
     ◊note-pos[#:top -8]{sweden-extradition}
 
     ◊ndef["sweden-extradition"]{
-        The fears of Sweden extraditing Assange to the U.S. might not be unfounded. In 2001 the ◊link[repatriation-sweden]{Swedish police watched CIA forcefully detain} two Egyptian refugees on Swedish soil, later facing torture in Eqyptian prison.
+        The fears of Sweden extraditing Assange to the U.S. might not be unfounded. In 2001 the ◊link[repatriation-sweden]{Swedish police watched CIA forcefully detain} two Egyptian refugees on Swedish soil, who later faced torture in Eqyptian prisons.
     }
   }
 
@@ -448,7 +449,7 @@ This is ◊strong{not} a glorification of WikiLeaks---they have ◊link[wikileak
     President Barack Obama ◊link[manning-commutes]{commutes Chelsea Manning's prison sentence}. Important to note it only reduces her sentence, it doesn't change the fact that she was convicted.◊mn{pardon} She spent almost 7 years of her original 35 year sentence in prison.
 
     ◊ndef["pardon"]{
-        In contrast a ◊em{pardon} would completely absolve her of any wrongdoing.
+        In contrast a ◊def{pardon} would completely absolve her of any wrongdoing.
     }
   }
 
@@ -460,13 +461,13 @@ This is ◊strong{not} a glorification of WikiLeaks---they have ◊link[wikileak
   ◊entry["Assange arrested at the embassy"
          #:date "April, 2019"]{
 
-    After almost 7 years at the Ecuadorien embassy, Julian Assange finally leaves the embassy and is arrested.◊sn{second-arrest}
+    After almost 7 years at the Ecuadorien embassy, Julian Assange finally leaves the embassy and is arrested.◊mn{second-arrest}
 
     While he was immediately ◊link[assange-indicted]{indicted on 17 counts of violating the Espionage Act} by the U.S. his release was news for the Swedish prosecutors. Nevertheless the Swedish investigation ◊link[assange-rape-reopen-19]{was soon reopened} as well.
 
     While he was immediately ◊link[assange-indicted]{indicted on 17 counts of violating the Espionage Act} by the U.S. his release was news for the Swedish prosecutors. 
 
-    At the moment, the Swedish investigation is open once again and Assange is waiting for the U.K. to rule on extradition requests from both Sweden and the U.S.
+    ◊;At the moment, the Swedish investigation is open once again and Assange is waiting for the U.K. to rule on extradition requests from both Sweden and the U.S.
 
     ◊note-pos[#:top -16]{second-arrest}
 
@@ -507,7 +508,41 @@ This is ◊strong{not} a glorification of WikiLeaks---they have ◊link[wikileak
         Amnesty International have monitored trials from Guantanamo Bay to Bahrain, Ecuador to Turkey. For our observer to be denied access profoundly undermines open justice.
     }
 
-    As I'm writing this in late September it's not yet decided what will happen to Assange, but I can't shake the feeling that there's something fishy about all this.
+  }
+
+  ◊entry["A farcical extradition hearing"
+         #:date "September 2020"]{
+
+    The human rights activist Craig Murray was allowed to observe and he's been documenting the hearing ◊link[craig-murray]{on his blog}. And it's not an exaggeration to call the hearing a farce.
+
+    Witnesses were for example prevented from taking the stand because the U.S. managed to block any reference to the torture at Guantanamo (which we know is true):
+
+    ◊qt[#:author "Craig Murray"
+        #:url day-14
+        #:src "Assange Hearing Day 14"]{
+        The next witness, Andy Worthington, was at court and ready to give evidence, but was prevented from doing so. The United States government objected to his evidence, about his work on the Guantanamo Detainee files, being heard because it contained allegations of inmates being tortured at Guantanamo.
+    }
+
+    In another instance the prosecution---with the cooperation of the judge---tries to hide the fact that Assange was caught with a razor in the cell, which would imply that Assange is thinking of suicide:
+
+    ◊qt[#:author "Craig Murray"
+        #:url day-17
+        #:src "Assange Hearing Day 17"
+        #:emphasis #t]{
+        For Baraitser [the judge] to try to protect both Lewis and the prosecution by pretending the existence of the blade is dependent on the outcome of the subsequent charge, when all three people in the cell at the time of the search agreed to its existence, including Assange, is perhaps Baraitser’s most remarkable abuse of legal procedure yet.
+
+        [...]
+
+        The existence of the blade was not in doubt. Julian Assange had attested to it and two prison warders had attested to it. ◊em{Baraitser said that she could only base her view on the decision of the Prison Governor}.
+
+        [...]
+
+        The Governor’s decision was at paragraph 19. Baraitser told Fitzgerald she could not accept the document as it was new evidence. Fitzgerald told her ◊em{she had herself asked for the outcome of the charge}. He said the document contained very interesting information. Baraitser said that the Governor’s decision was at paragraph 19, that was all she had asked for, and ◊em{she would refuse to take the rest of the document into consideration}.
+    }
+
+    The hearing is full of problems like these. For example that the prosecution changed their accusations hours before and the defense not getting enough time to prepare, that the defense is prevented from questioning key witnesses and that there will be no closing speeches in the hearing.
+
+    As I'm writing this in late September it's not yet decided what will happen to Assange, but it seems clear that the judge already made up her mind before the hearing even began.
   }
 
 }
@@ -729,13 +764,28 @@ This is ◊strong{not} a glorification of WikiLeaks---they have ◊link[wikileak
     "2020-09-22"
     "https://www.navytimes.com/news/your-navy/2019/11/04/report-trump-makes-seal-gallagher-a-chief-again/"
     "Report: Trump makes SEAL Gallagher a chief again"))
+◊(define craig-murray
+  (x-ref
+    "2020-09-30"
+    "https://www.craigmurray.org.uk/"
+    "Craig Murray - Historian, Former Ambassador, Human Rights Activist"))
+◊(define day-14
+  (x-ref
+    "2020-09-30"
+    "https://www.craigmurray.org.uk/archives/2020/09/your-man-in-the-public-gallery-assange-hearing-day-14/"
+    "Your Man in the Public Gallery: Assange Hearing Day 14"))
+◊(define day-17
+  (x-ref
+    "2020-09-30"
+    "https://www.craigmurray.org.uk/archives/2020/09/your-man-in-the-public-gallery-assange-hearing-day-17/"
+    "Your Man in the Public Gallery: Assange Hearing Day 17"))
 
 
 ◊subhead{Hiding skeletons in the closet}
 
-There's a minor theme in the WikiLeaks story: How the U.S. government instead of admitting these horrible events, punishing the responsible and making sure they never happen again, seem to do everything to cover them up.
+There's another theme in the WikiLeaks story: How the U.S. government instead of admitting these horrible events, punishing the responsible and making sure they never happen again, seem to do everything to cover them up.
 
-This idea that American soldiers are unconditionally heroes, regardless of what they've done, makes me both angry and sad. Donald Trump has for example expressed concerns over soldiers being prosecuted for war crimes, and ◊link[trump-pardons]{considers pardoning them}. This includes a ◊link[gallagher]{Navy Seals soldier} who (allegedly) killed a 15-year old defenseless kid with his hunting knife and shot unarmed civilians.◊sn{gallagher}
+This idea that American soldiers are unconditionally heroes, regardless of what they've done, makes me both angry and sad. Donald Trump has for example expressed concerns over soldiers being prosecuted for war crimes, and ◊link[trump-pardons]{considers pardoning them}. This includes a ◊link[gallagher]{Navy Seals soldier} who (allegedly) killed a 15-year old defenseless kid with his hunting knife and shot unarmed civilians.◊mn{gallagher}
 
 Those aren't the actions of a hero.
 
@@ -752,9 +802,7 @@ But of course covering up or rationalizing events isn't a U.S. only phenomena. H
   ◊li{◊link[rel-tiananmen]{As previously mentioned} the Chinese cover up of the Tiananmen Square Massacre.}
   ◊li{How Genghis Khan is looked up to.
 
-    Maybe you've heard that 1 of 200 people of all people alive today are related to Genghis Khan? That's because he raped young girls wherever he went.◊mn{dan-hitler}
-
-    ◊note-pos[#:top -31]{dan-hitler}
+    Maybe you've heard that 1 of 200 people of all people alive today are related to Genghis Khan? That's because he raped young girls wherever he went.◊sn{dan-hitler}
   }
   ◊li{In Scandinavian countries we talk about Vikings with pride.
 
@@ -764,11 +812,11 @@ But of course covering up or rationalizing events isn't a U.S. only phenomena. H
 
     It was even forbidden to talk about them negatively.
   }
-  ◊li{How Soviet tried to cover up the ◊link[chernobyl-accident]{Chernobyl nuclear disaster}.◊mn{chernobyl-TV}
-
-    ◊note-pos[#:top -15]{chernobyl-TV}
-  }
+  ◊li{How Soviet tried to cover up the ◊link[chernobyl-accident]{Chernobyl nuclear disaster}.◊sn{chernobyl-TV}}
 }
+
+◊note-pos{dan-hitler}
+◊note-pos{chernobyl-TV}
 
 ◊ndef["dan-hitler"]{
     Dan Carlin, creator of the excellent ◊link[hardcore-history]{Hardcore History} podcast, brought up an interesting question:
@@ -844,14 +892,16 @@ But if we practice collective 'forgettance', where we all pretend these never ha
 
 ◊subhead{Cryptocurrency donations cannot be prevented}
 
-While the U.S. government was able to coerce payment processors and banks to drop WikiLeaks, they could never prevent Bitcoin donations. Even China, with the world's largest internet censorship, cannot censor cryptocurrency transactions.◊sn{china-mining} The best they can do is force some exchanges to cooperate---but that can be worked around, for example by selling bitcoins in person for cash or by avoiding fiat altogether.
+While the U.S. government was able to coerce payment processors and banks to drop WikiLeaks, they could never prevent Bitcoin donations. Even China, with the world's largest internet censorship, cannot censor cryptocurrency transactions.◊mn{china-mining} The best they can do is force some exchanges to cooperate---but that can be worked around, for example by selling bitcoins in person for cash or by avoiding fiat altogether.
 
 It doesn't matter who you are or where you are, you can always accept donations digitally via cryptocurrencies. Even the most powerful nations in the world cannot prevent them, which is something unique for cryptocurrencies.
 
 ◊note-pos[#:top -14]{china-mining}
 
 ◊ndef["china-mining"]{
-    China does have most of the Bitcoin hashrate inside their country. They could theoretically take majority control of Bitcoin's hashrate and censor transactions that way (this is the worst attack possible against a cryptocurrency, called a ◊def[51%-attack]{51% attack}). If this happened the Bitcoin community would most likely recognize it as an attack and a chain split would happen, making existing miners worthless.
+    China does have most of the Bitcoin hashrate inside their country. They could theoretically take majority control of Bitcoin's hashrate and censor transactions that way (this is the worst attack possible against a cryptocurrency, called a ◊def[51%-attack]{51% attack}). If successful this would also completely break Bitcoin's security, making it pointless.
+
+    In this scenario the Bitcoin community would most likely recognize it as an attack and a chain split would happen, making existing miners worthless.
 }
 
 ◊;https://news.ycombinator.com/item?id=19632449

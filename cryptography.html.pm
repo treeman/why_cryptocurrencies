@@ -3,7 +3,7 @@
 ◊(define-meta title "A hitchhiker's guide to cryptography")
 ◊(define-meta subtitle "An introduction to cryptography")
 ◊(define-meta published "2020-02-27T13:33:40+01:00")
-◊(define-meta updated "2020-02-27T13:33:40+01:00")
+◊(define-meta updated "2020-10-09T19:51:14+02:00")
 ◊(define-meta uuid "6a8759d6-2e0c-4224-b0b8-61009c5484d0")
 
 ◊(clear-sidenotes)
@@ -47,7 +47,7 @@ In the digital world we can use the popular ◊link[sha-2]{SHA-256 hash function
 
 ◊code{hello → 5891b5b522d5df086d0ff0b110fbd9d21bb4fc7163af34d08286a2e846f6be03}
 
-But there's no function to unwrap the hash directly:
+But there's no function to unwrap a hash directly:
 
 ◊code{084c799cd551dd1d8d5c5f9a5d593b2e931f5e36122ee5c793c1d08a19839cc0 → ???}
 
@@ -66,7 +66,7 @@ Found it! The answer is "42". But we were lucky that we only had to test 42 poss
     I've simplified the explanation here a little. There's not a one-to-one correspondence between an input and a hash, as several inputs can result in the same hash.
 }
 
-Don't believe me? Then try to guess what message this SHA-256 output comes from, and I can even give you a hint that it's only spaces, upper- and lower case letters:◊mn{variation}
+Don't believe me? Then try to guess what message this SHA-256 output comes from, and I can even give you a hint that it's only spaces, upper- and lower case letters:
 
 ◊ndef["variation"]{
     For security it's important that the data you want to protect is sufficiently large and has enough variation to make it difficult to guess what it is.
@@ -76,7 +76,7 @@ Don't believe me? Then try to guess what message this SHA-256 output comes from,
 
 ◊code{b409d7f485033ac9f52a61750fb0c54331bfdd966338015db25efae50984f88f}
 
-◊note-pos{variation}
+◊mn{variation}
 
 To get a sense for how hard it can be to figure out the matching data for a hash, let's look at the mining in Bitcoin. Because that's really what miners do---they calculate SHA-256 hashes with different kinds of input again and again until they find a match. And they don't require an exact match either, they only want to find a hash with a certain number of leading zeroes.
 
@@ -103,7 +103,7 @@ If you jump into the mathematical definitions of ◊def[public-key-cryptography]
 
 Cryptographic schemes commonly use a single large number as their secret key, but public-key cryptography uses two keys: the ◊def{public key}, which is like the mailbox, and the ◊def{private key}, which is like the key to the mailbox. Anyone can give you mail---just slide it into the mailbox at the top---but you're the only one who can read them, because you're the only with the key to the mailbox.
 
-You ◊em{encrypt} a message by placing it in the mailbox, this way nobody but the owner of the mailbox can ◊em{decrypt} and read it. The owner of the mailbox can also prove they own the mailbox by placing their name on it, an action that requires you to open the mailbox with the key. In digital terms this is how you ◊em{sign} a message.◊sn{mailbox-breakdown}
+You ◊em{encrypt} a message by placing it in the mailbox, this way nobody but the owner of the mailbox can ◊em{decrypt} and read it. The owner of the mailbox can also prove they own the mailbox by placing their name on it, an action that requires you to open the mailbox with the key. In digital terms this is how you ◊em{sign} a message.◊mn{mailbox-breakdown}
 
 ◊ndef["mailbox-breakdown"]{
     This is where our mailbox metaphor breaks down a bit. It may seem that it's more inconvenient to sign a message than to encrypt one, but digitally they're both straightforward.
@@ -125,12 +125,12 @@ Large parts of the internet depends on public-key cryptography. For example when
     The lock icon or the "https" label means you're using public-key cryptography (among other things) to secure your connection to the website.
 }
 
-I won't go into details on how the mathematics behind this scheme work, as I'm not able to without making the explanation needlessly complicated, but if this interests you I encourage you to look it up---I personally find it fascinating.◊mn{further-public-key}
+I won't go into details on how the mathematics behind public-key cryptography, as I'm not able to without making the explanation needlessly complicated, but if this interests you I encourage you to look it up---I personally find it fascinating.◊mn{further-public-key}
 
 ◊ndef["further-public-key"]{
     ◊link[rsa]{RSA} is one of the first public-key cryptography schemes and it was also the first one I studied. It's fairly simple, so I think it's a good starting point to understand public-key cryptography.
 
-    Bitcoin uses another, arguably more secure, scheme called ◊link[ecdsa]{ECDSA}, which uses ◊link[elliptic-curve]{elliptic-curve cryptography}.
+    Bitcoin uses another, more secure, scheme called ◊link[ecdsa]{ECDSA}, which uses ◊link[elliptic-curve]{elliptic-curve cryptography}.
 }
 
 ◊(define rsa
@@ -157,7 +157,7 @@ We will look at public-key cryptography in practice when we look at how Bitcoin 
 
 ◊subhead{Bitcoin addresses}
 
-The addresses in Bitcoin (and other cryptocurrencies) use public-key cryptography to protect your funds. The address is a public key that everyone can send coins to, but to send coins from an address you need the private key.
+The addresses in Bitcoin (and other cryptocurrencies) uses public-key cryptography to protect your funds. The address is a public key that everyone can send coins to, but to send coins from an address you need the private key.
 
 This is for example a standard ◊strong{Bitcoin address}:
 
@@ -195,11 +195,7 @@ There are other types of addresses and other formats for the private and public 
 
 ◊note-pos[#:top -38]{bch-address}
 
-The reason Bitcoin uses public-key cryptography for the addresses is because you can ◊strong{sign} messages with it. For example if I sign the message:◊sn{electron-cash}
-
-◊ndef["electron-cash"]{
-    I used the desktop version of ◊link[electroncash]{Electron Cash} for these examples.
-}
+The reason Bitcoin uses public-key cryptography for the addresses is because you can ◊strong{sign} messages with it. For example if I sign the message:
 
 ◊code{Jonas sent the money}
 
@@ -214,7 +210,7 @@ I'll get this signature:
 Which lets you ◊strong{verify} that I know the private key to the address, even if I never showed it to you.  This can be useful if we've sent money to someone and we want to prove who did it.◊sn{payments}
 
 ◊ndef["payments"]{
-    Payment systems are usually smarter, so this is normally not needed.
+    Payment systems are usually smarter, so it's normally not needed to sign a message to prove you sent them a payment.
 }
 
 This is also what happens in the background when you authorize a transaction; you sign it with your private key and your signature is verified before the transaction is accepted. If the signature doesn't verify then the transaction is invalid and gets discarded, ensuring that coins can only be spent by the owner of the address.◊sn{how-difficult?}
@@ -227,7 +223,6 @@ This is also what happens in the background when you authorize a transaction; yo
     If quantum computers can break public-key cryptography we as a society would have much bigger problems than the security of Bitcoin, as it would break the security of the internet itself. (There is quantum secure cryptography we could potentially move to, so everything isn't lost yet.)
 }
 
-◊note-pos[#:top -35]{electron-cash}
 ◊note-pos[#:top -11]{payments}
 ◊note-pos{how-difficult?}
 
@@ -263,7 +258,7 @@ Which only I can ◊strong{decrypt} to the original message. (Since I've given o
 
 ◊subhead{Seeds}
 
-Because private keys aren't very user-friendly Bitcoin wallets use seeds. The seed is made up of a sequence of 12, or sometimes 24, words selected from a ◊link[bip-39]{pre-determined set of 2048 possible words}.◊sn{variations}
+Because private keys aren't very user-friendly Bitcoin wallets use seeds. The seed is made up of a sequence of 12, or sometimes 24, words selected from a ◊link[bip-39]{pre-determined set of 2048 possible words}.◊mn{variations}
 
 This is for example a 12-word seed:
 
@@ -281,7 +276,7 @@ Much more user friendly right?  Even though memorizing the public key directly i
 
 ◊note-pos[#:top -20]{variations}
 
-In addition to being easy to use, seeds act as a starting point in deterministic wallets to generate multiple private and public key pairs (giving you multiple addresses).◊sn{pseudo-random}
+In addition to being easy to use, seeds act as a starting point in deterministic wallets to generate multiple private and public key pairs (giving you multiple addresses).◊mn{pseudo-random}
 
 Giving out a new address each time you receive money is useful for privacy purposes, as it makes it harder to connect your transactions with your identity. This is why all modern wallets generates a new address each time you press receive.
 

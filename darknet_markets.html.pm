@@ -3,7 +3,7 @@
 ◊(define-meta title "Darknet markets")
 ◊(define-meta subtitle "Global and digital markets for illegal goods")
 ◊(define-meta published "2019-12-15T00:00:00+01:00")
-◊(define-meta updated "2020-01-15T20:08:59+01:00")
+◊(define-meta updated "2020-10-09T19:51:08+02:00")
 ◊(define-meta uuid "4cf3ad81-1c7f-414f-a582-4b2897d27121")
 
 ◊(clear-sidenotes)
@@ -18,7 +18,7 @@ There's one thing that cryptocurrency proponents and skeptics can agree with: cr
 
 Before cryptocurrencies, such sites would have trouble staying in business because payment processors would shut them down quickly. But nobody can block cryptocurrency transactions, and in 2012 the first darknet market "Silk Road" was created using Bitcoin. Since then there's been a ◊link[darknet-markets-history]{bunch of different darknet markets}, many with much larger volume than Silk Road.
 
-I know I wrote in ◊link[about-the-book]{an early chapter} that this book would describe legal use cases, but that's not really true. This book tries to describe ◊em{moral} use cases, which aren't always the same as legal ones. As we'll see in this chapter, darknet markets might not even be moral, so I hope you'll forgive me.◊mn{subjective}
+I know I wrote in ◊link[about-the-book]{an early chapter} that this book would describe legal use cases, but that's not really true. This book tries to describe ◊def{moral} use cases, which aren't always the same as legal ones. As we'll see later in this chapter, darknet markets might not even be moral, so I hope you'll forgive me.◊mn{subjective}
 
 ◊ndef["subjective"]{
     As always where darknet markets fall on the universal scale of good and bad is subjective. But I hope to show that it's not a black-and-white issue.
@@ -46,12 +46,12 @@ Here's a table to illustrate the problem:
     ◊tr{◊tds{Immoral}   ◊im-le{Mass surveillance◊|sbr|Civil asset forfeiture}   ◊bad{Slavery◊|sbr|Murder}}
 }
 
-It's actually quite hard to classify things as legal or illegal and moral or immoral; they both change depending on country, the time period and who you ask. For instance most would agree that slavery is immoral and should be illegal, but it was in fact legal and viewed as normal for thousands of years. Similarly today in the western world we take free speech for granted, but that's not the case in all countries.
+It's actually quite hard to classify things as legal or illegal and moral or immoral; they both change depending on country, the time period and who you ask. For instance most would agree that slavery is immoral and should be illegal, but it was legal and viewed as normal for thousands of years. Similarly today in the western world we take free speech for granted, but that's not the case in all countries.
 
 Mass surveillance, which we covered in the chapter ◊link[private_money]{Private money}, is immoral yet legal.◊mn{surveillance} Civil asset forfeiture, which allows the police to outright take your stuff, is another example of an immoral legal practice. (We'll explore civil asset forfeiture ◊link[protection_against_government_confiscation]{in a future chapter}.)
 
 ◊ndef["surveillance"]{
-    You can argue that mass surveillance is in fact illegal and the U.S. court did rule that the program that Snowden revealed ◊link[surveillance-illegal]{was illegal}.
+    You can argue that mass surveillance is illegal and the U.S. court did rule that the program that Snowden revealed ◊link[surveillance-illegal]{was illegal}.
 }
 
 It's easy to find examples of silly laws that make moral actions illegal (just search for "silly laws" or similar), but I think there are more interesting issues. For example stealing is illegal, but is it immoral for a starving child to steal food to survive? Or for the child to steal food for his starving little sister? And where on the moral scale would you place prostitution?
@@ -95,7 +95,7 @@ Black markets have existed as long as taxes have been collected, and it's not ju
 
 In countries with corruption or dysfunctional governments black markets are huge. For example in the Soviet Union many people relied on black markets to get their food supply when the market economy failed them. Or in Greece during the economic breakdown in the 2010s, the black market was ◊link[greece-black-markets]{estimated at 20 to 25 percent of the GDP}.
 
-Black markets aren't inherently evil, sometimes they're even necessary for our survival. Instead they deal in both good and bad things, each of which should be considered on a case-by-case basis.
+Black markets aren't inherently evil and sometimes they're even necessary for our survival. Instead they deal in both good and bad things, each of which should be considered on a case-by-case basis.
 
 ◊(define black-markets
    (x-ref
@@ -156,21 +156,19 @@ The following example, based on a real-life story I read a few years ago, illust
 
     They went to see specialists, and she started chemotherapy. As luck would have it, she responded well, and the doctors gave her a good chance of recovery. But she was still weak, and needed continuous treatment.
 
-    But Melinda's treatment was expensive, very expensive. Despite insurance, they would still have to come up with $600 a week---that's around $2,400 a month---just for her medicine.
+    But Melinda's treatment was expensive---very expensive. Despite insurance, they would still have to come up with $600 a week---that's around $2,400 a month---just for her medicine.
 
     While they both had decent jobs, and they were even a little frugal, it was very difficult to manage when their monthly expenses doubled, while their income dropped as Melinda couldn't work anymore. They took out a second mortgage, and a bunch of other loans, and starting selling the valuable stuff they had. But it wasn't enough, they were drowning.
 
-    Tom was desperate and was willing to try anything. He'd heard from a friend about "the darknet" where he might find Melinda's medicine for cheap, and while he was skeptical it couldn't hurt to try? After all he was running out of options to try.
+    Tom was desperate and was willing to try anything. He'd heard from a friend about "the darknet" where he might find Melinda's medicine for cheap, and while he was skeptical it couldn't hurt to try? After all he was running out of options.
 
-    He visited the darknet market his friend had suggested and searched for Melinda's medicine. To his surprise he found several sellers, who could deliver them right to his doorstep in just a few days. He decided to test it out and transferred some bitcoins to a seller. It was surprisingly easy, but he couldn't shake the feeling he had just been scammed.◊mn{opsec}
+    He visited the darknet market his friend had suggested and searched for Melinda's medicine. To his surprise he found several sellers, who could deliver them right to his doorstep in just a few days. He decided to test it out and transferred some bitcoins to a seller. It was surprisingly easy, but he couldn't shake the feeling he had just been scammed.
 
     But three days later a small package arrived in the mailbox, neatly wrapped in an unassuming box. It was Melinda's medicine, in fact exactly the same brand with the same packaging they used to buy, only now one week of medicine had cost them $30 instead of $600.
 
     Tom couldn't understand how it could be so cheap. The medicine seemed real, it came in the same package and Tom even had it tested (can't be too careful, right?) Maybe it was stolen, and the thieves just wanted to sell it quickly? Or was it produced in India, for minimal cost?
 
     But Tom didn't care. He had already placed his next order from the same seller. Tom only cared about Melinda.
-
-    ◊note-pos[#:top -25]{opsec}
 }
 
 ◊ndef["opsec"]{
@@ -195,9 +193,9 @@ While the story is made up, the situation is real. Medicine in the U.S. can be �
 
 Yet we must always remember the dangers of buying medicine from darknet markets. It's entirely possible that you can get fake medicine, untested medicine or straight up dangerous medicine. You must be ◊strong{very careful} when you buy from a completely unregulated market. Instead of the medicine saving your life, it might kill you.
 
-Still, was it wrong to do what Tom did and got the medicine from a darknet market? If it might save the love of your life, the mother of your child, would you do it? What if it was easy and the risk of getting caught was very small?
+Still, was it wrong to do what Tom did and buy the medicine from a darknet market? If it might save the love of your life, the mother of your child, would you do it? What if it was easy and the risk of getting caught was very small?
 
-I'd imagine most would say yes, they would do anything to save her. While there are bad stuff on darknet markets, most of which are illegal, in this case cryptocurrencies and darknet markets helped save Tom's family, and I see that as a good thing.
+I'd imagine most would say yes, they would do anything to save her. While there are bad stuff on darknet markets---most of which are illegal---in this case cryptocurrencies and darknet markets helped save Tom's family, and I see that as a good thing.
 
 ◊(define insurance-screwed
    (x-ref

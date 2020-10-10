@@ -3,7 +3,7 @@
 ◊(define-meta title "Separation of money and state")
 ◊(define-meta subtitle "Countries that don't manage their own money")
 ◊(define-meta published "2020-02-05T06:24:16+01:00")
-◊(define-meta updated "2020-02-05T06:24:16+01:00")
+◊(define-meta updated "2020-10-09T19:49:14+02:00")
 ◊(define-meta uuid "a5636cbf-bec1-4795-8c66-5725b0eec7bf")
 
 ◊(clear-sidenotes)
@@ -13,7 +13,7 @@
 When I first started thinking about cryptocurrencies I thought they were just useful for some people who couldn't use regular transactions, like buying weed or things on a darknet market. Or that it was a better payment system as there was no middleman to skim off large fees from all transactions. That's useful, but it didn't strike me as revolutionary.◊mn{fees}
 
 ◊ndef["fees"]{
-    I do think ◊link[cheaper_faster]{avoiding 1--3%} fees on practically all digital payments is an under-appreciated benefit of cryptocurrencies. It might be overshadowed by the volatility, but the potential benefit to the economy is absolutely huge.
+    I do think ◊link[cheaper_faster]{avoiding up to 5%} fees on practically all digital payments is an under-appreciated benefit of cryptocurrencies. It might be overshadowed by the volatility, but the potential benefit to the economy is absolutely huge.
 }
 
 But the idea of separating money from state made me go "Wow, that could actually have a huge impact." As we've seen earlier the financial system ◊link[a_defective_system]{relies heavily on manipulating the money supply} and on ◊link[the_blind_leading_the_blind]{predicting and reacting to the market}. This would, for better or worse, be largely impossible if states no longer controlled the money supply and if people used cryptocurrencies instead.
@@ -42,10 +42,10 @@ I know it might be difficult to entertain the notion that a country shouldn't co
 
 For many centuries, millennia even, religion and the state were inseparable. I'm not even sure it was a conscious decision, rather the mere idea that it could be any other way was simply unthinkable. For many that's just how it was, like how the sun rose every morning or that you got hungry without food.
 
-Countless rulers have based their legitimacy on religious grounds, that they should rule because God says so. This is useful since you have to question God to question them, and who are you to question God? For example both the Roman emperors and the Japanese emperors used this to legitimise themselves. Even today it's very common that the church should be the one to crown the kings and queens, as if to say "we give you the right to rule".◊mn{carolus-rex}
+Countless rulers have based their legitimacy on religious grounds; that they should rule because God says so. This is useful since you have to question God to question them, and who are you to question God? For example both the Roman and Japanese emperors used this to legitimise themselves. Even today it's very common that the church should be the one to crown the kings and queens, as if to say "we give you the right to rule".◊mn{carolus-rex}
 
 ◊ndef["carolus-rex"]{
-    Charles XII of Sweden, also called "Carolus Rex", acknowledged the power of God but rejected the church when he placed the crown upon his own head instead of letting someone from the church do it.
+    Charles XII of Sweden, also called "Carolus Rex", acknowledged the power of God but rejected the church when he placed the crown upon his own head, instead of letting someone from the church do it.
 }
 
 This is why it was a big deal when the Swedish king ◊link[gustav-vasa]{Gustav Vasa} took steps towards the ◊link[reformation]{Protestant Reformation}. It wasn't motivated by religious reasons---he simply wanted control over the Catholic Church's property, which was the dominating religion at the time. In a sense the Diet at Västerås in 1527 was the first step in separating the church from the Swedish state, a process that was ◊link[separation]{completed in 2000} when they were formally separated.◊mn{after-reformation}
@@ -90,9 +90,9 @@ Separating church from the state was once unthinkable, yet it's now a given that
 
 In practice some countries have already separated money from their state, as they use money someone else control. For example the ◊link[euro]{Euro} is managed by the ◊link[ecb]{European Central Bank (ECB)}, and the countries that use the Euro have very little influence in the ECB's decision-making (well, most of them anyway). There are also countries that ◊link[countries-use-us]{use the U.S. dollar as their official currency}, while having no say in what the U.S. does with it.
 
-Gold might also be an example of money outside of state control---there's nobody with exclusive access to gold after all. But in practice someone has to cast the gold to coins for it to be usable as money, including a "government approved" stamp on them, which gives some sort of control over the money. After all, it's difficult to determine what a coin is made of so we just trust the stamp on it.◊mn{debasement_}
+Gold might also be an example of money outside of state control---there's nobody with exclusive access to gold after all. But in practice someone has to cast the gold to coins for it to be usable as money, including a "government approved" stamp on them, which gives some sort of control over the money. After all, it's difficult to determine what a coin is made of so we just trust the stamp on it.◊mn{debasement}
 
-◊ndef["debasement_"]{
+◊ndef["debasement"]{
     Because people don't actually verify the amount of gold in the coins, they could for example slowly decrease the amount of gold in the coins. This would enable them to make more coins and effectively increase the money supply. This is called ◊def[debasement]{debasement} and has been very common historically.
 }
 
