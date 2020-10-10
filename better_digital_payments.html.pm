@@ -16,7 +16,7 @@
   }
 }
 
-In this section we'll explore benefits cryptocurrencies have over other digital payment systems, such as VISA, Mastercard, PayPal or Apple Pay.
+In this part we'll explore benefits cryptocurrencies have over other digital payment systems, such as VISA, Mastercard, PayPal or Apple Pay.
 
 The big benefit is cryptocurrencies being ◊def[no-more-third-parties]{permissionless}: anyone can pay and anyone can accept them---for any business. Certain types of businesses, like pot stores or gambling sites, have problems accepting credit cards. Small businesses are also always at risk of having their accounts frozen without warning or recourse.◊mn{minecraft} Similarly there are people who cannot get bank accounts and are in effect frozen out of large parts of the society.
 

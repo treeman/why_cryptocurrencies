@@ -22,7 +22,7 @@
      "https://www.youtube.com/watch?v=xYPXIfwVyts"
      "I am become Death (1 min)"))
 
-In previous sections we've looked at how cryptocurrencies provide ◊link[better_digital_payments]{better digital payments} and why they might be ◊link[better_currency]{better currencies}. This section focuses on some ways the world is changing, and what part cryptocurrencies may play.
+In previous parts we've looked at how cryptocurrencies provide ◊link[better_digital_payments]{better digital payments} and why they might be ◊link[better_currency]{better currencies}. This section focuses on some ways the world is changing, and what part cryptocurrencies may play.
 
 Even if we'd collectively agree that the world would be better off without cryptocurrencies, we cannot make them disappear. We cannot "uninvent" them and they're extremely difficult to shut down. Therefore, like with nuclear bombs, we're stuck with them and have to adapt to a new world.◊mn{destroyer-of-worlds}
 

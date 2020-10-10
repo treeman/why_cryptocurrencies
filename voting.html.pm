@@ -31,7 +31,7 @@ I say they ◊em{might} help because it's not a use-case where I know they will 
 }
 
 ◊ndef["blockchain?"]{
-    As discussed in the ◊link[extensions]{introduction to this section} when I refer to "a blockchain" I mean embedding votes in an existing cryptocurrency, not creating a new blockchain purely for voting purposes.
+    As discussed in the ◊link[extensions]{introduction to this part} when I refer to "a blockchain" I mean embedding votes in an existing cryptocurrency, not creating a new blockchain purely for voting purposes.
 }
 
 
