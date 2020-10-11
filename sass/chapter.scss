@@ -554,15 +554,15 @@ table.crypto-eval {
         font-weight: bold;
     }
     td.poor {
-        background-color: $xmr-orange;
+        background-color: $poor;
         text-align: center;
     }
     td.good {
-        background-color: #5db0cc;
+        background-color: $good;
         text-align: center;
     }
     td.excellent {
-        background-color: $bch-green;
+        background-color: $excellent;
         text-align: center;
     }
 }
@@ -583,17 +583,17 @@ table.legal-moral {
         text-align: right;
     }
 
+    .good {
+        background-color: $legal-moral;
+    }
     .moral-illegal {
-        background-color: #b6ccbc;
+        background-color: $illegal-moral;
     }
     .immoral-legal {
-        background-color: #fccdae;
+        background-color: $legal-immoral;
     }
     .bad {
-        background-color: $xmr-orange;
-    }
-    .good {
-        background-color: $bch-green;
+        background-color: $illegal-immoral;
     }
 }
 
