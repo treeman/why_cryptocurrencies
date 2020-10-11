@@ -3,8 +3,10 @@
 ◊(define-meta title "Brave new world")
 ◊(define-meta subtitle "The world is changing")
 ◊(define-meta published "2019-12-15T00:00:00+01:00")
-◊(define-meta updated "2020-01-15T20:08:28+01:00")
+◊(define-meta updated "2020-10-09T19:51:35+02:00")
 ◊(define-meta uuid "dbc67487-8838-42cf-a8b8-fc982cf9142b")
+
+◊(clear-sidenotes)
 
 ◊epigraph{
   ◊qt[#:author "J. Robert Oppenheimer"
@@ -20,9 +22,9 @@
      "https://www.youtube.com/watch?v=xYPXIfwVyts"
      "I am become Death (1 min)"))
 
-In previous sections we've looked at how cryptocurrencies provide ◊link[better_digital_payments]{better digital payments} and why they might be ◊link[better_currency]{better currencies}. This section focuses on some ways the world is changing, and what part cryptocurrencies play.
+In previous parts we've looked at how cryptocurrencies provide ◊link[better_digital_payments]{better digital payments} and why they might be ◊link[better_currency]{better currencies}. This section focuses on some ways the world is changing, and what part cryptocurrencies may play.
 
-Even if we'd collectively agree that the world would be better off without cryptocurrencies, we cannot make them disappear. We cannot "uninvent" them and they're extremely difficult to shut down. Therefore, like with nuclear bombs, we're stuck with them and have to adapt to a new world.◊sn{destroyer-of-worlds}
+Even if we'd collectively agree that the world would be better off without cryptocurrencies, we cannot make them disappear. We cannot "uninvent" them and they're extremely difficult to shut down. Therefore, like with nuclear bombs, we're stuck with them and have to adapt to a new world.◊mn{destroyer-of-worlds}
 
 ◊ndef["destroyer-of-worlds"]{
     There's an excellent ◊link[hh-destroyer]{Hardcore History episode} on the topic of nuclear weapons and how humanity has been balancing on the edge of destruction ever since their invention.
@@ -30,9 +32,9 @@ Even if we'd collectively agree that the world would be better off without crypt
 
 Cryptocurrencies won't make the world a better place in all respects. For example untraceable digital money makes it easier for people to demand ransoms, such as ◊link[cryptolocker]{CryptoLocker} which locks down your computer and demands payment in order to unlock it.
 
-Other things skirt the lines between legality and morality, such as the darknet markets which make it easy to trade any type of goods. Or how cryptocurrencies allow you to store any amount of money, hidden from the watchful eyes of the tax collectors.
+Other things skirt the lines between legality and morality, such as the darknet markets that makes it easy to trade any type of goods. Or how cryptocurrencies allow you to store any amount of money, hidden from the watchful eyes of the tax collectors.
 
-While cryptocurrencies in some ways force the world to change, they can also protect us from the changing world. For instance the move towards a cashless society will spell disaster for everyone without access to digital money. But cryptocurrencies are for everyone, and they can shield us from tracking and seizures by the government.◊sn{friend-or-foe?}
+While cryptocurrencies in some ways force the world to change, they can also protect us from the changing world. For instance the move towards a cashless society will spell disaster for everyone without access to digital money. But cryptocurrencies are for everyone, and they can shield us from tracking and seizures by the government.◊mn{friend-or-foe?}
 
 ◊ndef["friend-or-foe?"]{
     Governments can be our friend, but they can also be our foe as well.

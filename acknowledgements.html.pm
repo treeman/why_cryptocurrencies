@@ -6,6 +6,8 @@
 ◊(define-meta updated "2020-03-09T21:07:17+01:00")
 ◊(define-meta uuid "d33953be-5f6c-43b0-a700-eab1e1540447")
 
+◊(clear-sidenotes)
+
 ◊epigraph{
   ◊qt[#:author "John Lennon"]{
     As usual, there is a great woman behind every idiot.

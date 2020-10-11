@@ -1,0 +1,95 @@
+#!/usr/bin/python3
+
+import glob
+import subprocess
+import os.path
+import re
+import sys
+import datetime
+
+dirname = os.path.dirname(__file__)
+site_dir = os.path.join(dirname, "_site")
+
+clean_dir = os.path.join(dirname, "_cleaned")
+
+def main():
+    clean()
+    setup_posts()
+
+def clean():
+    subprocess.run(f"rm -r {clean_dir}/", shell=True)
+    subprocess.run(f"mkdir -p {clean_dir}/", shell=True)
+
+def setup_static_pages():
+    subprocess.run(f"cp {ebook_files_dir}/*.xhtml {oebps_dir}", shell=True)
+
+def setup_posts():
+    for f in glob.glob(f"{site_dir}/**.html"):
+        if os.path.isfile(f):
+            setup_post(f)
+
+def setup_post(post):
+    name = os.path.basename(post)
+    (name, ext) = os.path.splitext(name)
+    dst = f'{clean_dir}/{name}.xml'
+    with open(post, 'r') as f:
+        data = f.read()
+
+    data = replace_post_data(data)
+
+    with open(dst, 'w') as f:
+        f.write(data)
+
+def replace_post_data(data):
+    data = clean_up_xhtml(data)
+    return data
+
+# From stuffwithstuff
+# https://journal.stuffwithstuff.com/2014/11/03/bringing-my-web-book-to-print-and-ebook/
+def clean_up_code_xml(code):
+    # Ditch most code formatting tags.
+    code = re.sub(r'<span class="(k|kt|mi|n|nb|nc|nf)">([^<]+)</span>',
+                  r"\2", code)
+
+    # Turn comments into something InDesign can map to a style.
+    code = re.sub(r'<span class="(c1|cn)">([^<]+)</span>',
+                  r"<comment>\2</comment>", code)
+
+def clean_up_xhtml(html):
+    # Ditch newlines in the middle of blocks of text. Out of sheer malice,
+    # even though they are meaningless in actual XML, InDesign treats them
+    # as significant.
+    html = re.sub(r"\n(?<!<)", " ", html)
+
+    # Also collapse redundant whitespace.
+    html = re.sub(r" +", " ", html)
+    html = html.replace("> <", "><")
+
+    # Re-add newlines after closing paragraph-level tags.
+    html = html.replace("</p>", "</p>\n")
+    html = html.replace("</h2>", "</h2>\n")
+    html = html.replace("</h3>", "</h3>\n")
+    html = html.replace("</li>", "</li>\n")
+    html = html.replace("</ol>", "</ol>\n")
+    html = html.replace("</ul>", "</ul>\n")
+    html = html.replace("</pre>", "</pre>\n")
+    html = html.replace("</aside>", "</aside>\n")
+    html = html.replace("</blockquote>", "</blockquote>\n")
+    html = html.replace("</figcaption>", "</figcaption>\n")
+    html = html.replace("</figure>", "</figure>\n")
+    html = html.replace("</table>", "</table>\n")
+
+    # Nuke unsupported entities.
+    html = html.replace("&nbsp;", " ")
+    html = re.sub(r'<sup class="sidenote-number">[^<]+</sup>', r"", html)
+    html = html.replace("Cheaper & faster", "Cheaper &amp; faster")
+
+    # InDesign only recognizes actual tags, not classes.
+    html = re.sub(r'<span class="sans-tnum">([^<]+)</span>',
+                  r"<tnum>\1</tnum>", html)
+
+    return html
+
+if __name__ == '__main__':
+    main()
+

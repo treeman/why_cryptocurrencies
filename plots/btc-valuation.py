@@ -19,16 +19,19 @@ def prices(url):
         price = []
         prev_year = 0
         for row in reader:
-            d = dt.datetime.strptime(row['Date'], '%Y-%m-%d')
+            #d = dt.datetime.strptime(row['Date'], '%Y-%m-%d')
+            d = dt.datetime.strptime(row['\ufeffDate'], '%b %d, %Y')
             # if d.year == prev_year:
                 # continue
             # prev_year = d.year
             date.append(d)
-            price.append(float(row['Close']))
+            price.append(float(row['Price'].replace(',', '')))
         return (date, price)
 
 # https://finance.yahoo.com/quote/BTC-USD/history?period1=1279317600&period2=1557439200&interval=1mo&filter=history&frequency=1mo
-(date, price) = prices('BTC-USD.csv')
+# (date, price) = prices('BTC-USD.csv')
+# https://www.investing.com/crypto/bitcoin/historical-data
+(date, price) = prices('data/Bitcoin Historical Data - Investing.com2.csv')
 
 # It's just for the high level understanding. Plus xkcd style is pretty
 plt.xkcd()
@@ -62,11 +65,11 @@ ax.spines['top'].set_color('none')
 ax.xaxis.set_tick_params(width=2)
 ax.yaxis.set_tick_params(width=2)
 
-# ax.set_xticks([dt.date(y, 1, 1) for y in [1970, 1980, 1990, 2000, 2010, 2018]])
+ax.set_xticks([dt.date(y, 1, 1) for y in [2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020]])
 # ax.set_yticks((0, 500, 1000, 1500, 2000))
 
-plt.plot(date, price, mycol)
+plt.plot(date, price, mycol, linewidth=1.5)
 
 plt.savefig('btc-valuation.svg', format="svg", transparent=True, bbox_inches='tight')
-print "done"
+print("done")
 

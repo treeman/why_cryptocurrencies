@@ -1,0 +1,22 @@
+#!/usr/bin/python3
+
+import glob
+import os
+import subprocess
+
+def main():
+    total = 0
+    outputs = []
+    for f in glob.glob('*.html'):
+        res = subprocess.run(f'sed "s/<[^>]*>//g" {f} | wc -c',
+                shell=True, capture_output=True)
+        wordcount = int(res.stdout.decode('utf-8'))
+        total += wordcount
+        outputs.append('{:6} {}'.format(wordcount, f))
+    outputs.sort()
+    for x in reversed(outputs):
+        print(x)
+    print('{:6}'.format(total))
+
+if __name__ == '__main__':
+    main()

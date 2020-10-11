@@ -3,8 +3,10 @@
 *.xml
 compiled/
 _site/
+_ebook/
 fonts/*
 *-autosave.kra
 *~
 img-src/*.png
 img-src/*.svg
+_cleaned

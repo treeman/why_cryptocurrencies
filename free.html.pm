@@ -6,7 +6,9 @@
 ◊(define-meta updated "2020-02-18T07:31:14+01:00")
 ◊(define-meta uuid "4ede8ca8-fd2e-4112-9d00-e383f94e1a01")
 
-This book is completely free for you to read online and will be so forever. There will be no ads, no tracking and no crypto mining in the browser.◊sn{browser-mining}
+◊(clear-sidenotes)
+
+This book is completely free for you to read online and will be so forever. There will be no ads, no tracking and no crypto mining in the browser.◊mn{browser-mining}
 
 For all you ◊link[noscript]{noscript} users the site will work perfectly well without javascript---in fact I aim to avoid it altogether. I do use ◊link[mbtype]{custom fonts} hosted on this site which noscript blocks by default.
 
@@ -32,8 +34,6 @@ If you want you can try it out:
         Monero (XMR)
     }
 }
-
-If you're missing a coin you ◊em{really} want to use please ◊link[mailto]{contact me}. If it's not too much hassle I'll consider it, but please no ◊link[snake_oil]{snake oil}.
 
 ◊ndef["browser-mining"]{
     Some sites have replaced ads on their sites and instead use visitors' computers to mine for them. A novel way to use cryptocurrencies but with questionable efficiency. Some do this without asking or notifying you which is definitely scammy. Therefore many adblockers block them outright.

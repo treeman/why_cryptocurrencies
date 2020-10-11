@@ -6,6 +6,18 @@
 ◊(define-meta updated "2020-04-19T10:06:55+02:00")
 ◊(define-meta uuid "581c4917-d862-49cb-9d01-495a9106081b")
 
+◊(clear-sidenotes)
+
+◊epigraph{
+  ◊qt[#:author "Satoshi Nakamoto"
+      #:src "Bitcoin: A Peer-to-Peer Electronic Cash System"
+      #:url bitcoin-pdf
+      #:quote-src #t]{
+    A purely peer-to-peer version of electronic cash would allow onlinepayments to be sent directly from one party to another without going through a financial institution. Digital signatures provide part of the solution, but the mainbenefits are lost if a trusted third party is still required to prevent double-spending.
+  }
+}
+
+
 ◊div[#:class "whitepaper"]{
     ◊link[bitcoin-pdf]{Bitcoin: A Peer-to-Peer Electronic Cash System}
 }

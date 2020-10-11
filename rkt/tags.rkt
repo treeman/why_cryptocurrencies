@@ -31,15 +31,17 @@
      #:when (href? href)
      (apply make-link #:class (href-c href)
                       #:title (href-title href)
+                      #:quote qt
                       (href-url href)
                       text)]
     [(list href)
      #:when (href? href)
      (define url (href-url href))
+     (define title (href-title href))
      (make-link #:class (href-c href)
-                #:title (href-title href)
+                #:title title
                 url
-                url)]
+                title)]
     [(list url)
      #:when (string? url)
      (make-link #:class c #:quote qt url url)]
@@ -341,8 +343,8 @@
                      args)))
 
 (define (img #:src src
+             #:alt alt
              #:title [title #f]
-             #:alt [alt #f]
              #:class [c #f]
              #:margin [margin #f]
              #:link [link #f] . caption)
@@ -351,8 +353,6 @@
     (set! attrs (cons `(class ,c) attrs)))
   (when title
     (set! attrs (cons `(title ,title) attrs)))
-  (when alt
-    (set! attrs (cons `(alt alt) attrs)))
 
   ; We ignore root transformation on <figure>, to avoid paragraph insertion
   ; around img. So we need to decode them manually.
@@ -365,12 +365,12 @@
 
   `(figure
      ,attrs
-     ,(raw-img #:src src #:link link)
+     ,(raw-img #:src src #:link link #:alt alt)
      ,figcaption))
 
-(define (raw-img #:src src #:link [link #f])
+(define (raw-img #:src src #:link [link #f] #:alt alt)
   (define img
-     `(img ((src ,(~a src)))))
+     `(img ((src ,(~a src)) (alt ,alt))))
   (if link
       `(a ((href ,src) (target "_blank") (class "img-wrapper"))
           ,img)
