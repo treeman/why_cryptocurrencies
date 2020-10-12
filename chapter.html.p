@@ -5,7 +5,9 @@
      (string-append main-title ": " title)
      (error (format "unknown title for ~v~n" here))))
 ◊(define (str->date-display x)
-   (~t (iso8601->date x) "MMMM d, y"))
+  (if x
+    (~t (iso8601->date x) "MMMM d, y")
+    ""))
 ◊(define subtitle (select-from-metas 'subtitle here))
 ◊(define published (str->date-display (select-from-metas 'published here)))
 ◊(define updated (str->date-display (select-from-metas 'updated here)))
@@ -60,13 +62,10 @@
         <header>
           <h1>◊|title|</h1>
           <h2>◊|subtitle|</h2>
-          <div class="date">
-            <span class="published">
-                Published ◊|published|
-            </span>
-            <span class="update">
-                Updated ◊|updated|
-            </span>
+          ◊(when side-space? (->html
+             `(div ((class "date"))
+                 (span ((class "published")) ,published)
+                 (span ((class "updated")) ,updated))))
           </div>
         </header>
 
