@@ -33,6 +33,31 @@ $sidenote-float-width: 1280px;
     }
 }
 
+.chapter > header > .date {
+    text-align: right;
+    font-size: 0.7rem;
+    margin-top: -0.4rem;
+    @extend %sans-serif;
+
+    .published {
+        display: block;
+    }
+    .update {
+        display: block;
+    }
+}
+
+@media (min-width: $sidenote-float-width) {
+    .chapter > header > .date {
+        text-align: left;
+
+        float: right;
+        margin-top: -3rem;
+        margin-right: -420px;
+        width: 380px;
+    }
+}
+
 .where a {
     text-decoration: none;
     background: none;
