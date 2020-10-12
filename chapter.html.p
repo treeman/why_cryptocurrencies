@@ -59,10 +59,10 @@
           <div class="date">
             <span class="published">
                 Published December 25, 2019
-            </span
-            <span class="updated">
+            </span>
+            <span class="update">
                 Updated January 1, 2020
-            </span
+            </span>
           </div>
         </header>
 
