@@ -2,6 +2,7 @@
 
 (require txexpr pollen/decode pollen/misc/tutorial pollen/tag)
 (require racket/list racket/string)
+(require gregor)
 (require "rkt/decode.rkt")
 (require "rkt/feed.rkt")
 (require "rkt/index.rkt")
@@ -13,6 +14,7 @@
 (require "rkt/refs.rkt")
 
 (provide (all-from-out racket/list racket/string)) ; make util functions available
+(provide (all-from-out gregor))
 (provide (all-from-out "rkt/decode.rkt"))
 (provide (all-from-out "rkt/feed.rkt"))
 (provide (all-from-out "rkt/index.rkt"))
