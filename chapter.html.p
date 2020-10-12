@@ -4,7 +4,11 @@
    (if title
      (string-append main-title ": " title)
      (error (format "unknown title for ~v~n" here))))
+◊(define (str->date-display x)
+   (~t (iso8601->date x) "MMMM d, y"))
 ◊(define subtitle (select-from-metas 'subtitle here))
+◊(define published (str->date-display (select-from-metas 'published here)))
+◊(define updated (str->date-display (select-from-metas 'updated here)))
 ◊(define side-space? (not (select-from-metas 'no-side-space here)))
 ◊(define section-chapters-headers? (not (select-from-metas 'no-section-chapters-header here)))
 ◊(define article-class
@@ -58,10 +62,10 @@
           <h2>◊|subtitle|</h2>
           <div class="date">
             <span class="published">
-                Published December 25, 2019
+                Published ◊|published|
             </span>
             <span class="update">
-                Updated January 1, 2020
+                Updated ◊|updated|
             </span>
           </div>
         </header>
