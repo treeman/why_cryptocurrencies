@@ -48,8 +48,11 @@ There are ◊strong{◊link[findex-report]{1.7 billion adults}} without a bank a
     Source ◊link[findex-report]{Global Findex database}.
 }
 
+This map helps us identify countries with a high fraction of unbanked and we can for example see that it's common to be unbanked in Africa and in South America but it's uncommon in western Europe and the Nordic countries.
 
-While this map helps us identify countries with a high fraction of unbanked, it doesn't really tell us where the large number of unbanked come from. Instead here's a map visualizing the number of unbanked in the world:
+The unbanked are in general less educated, where 62% of unbanked only have a primary education or less, compared to around half overall in developing economies. Twice as many unbanked live in the poorest households as in the richest ones and 56% of all unbanked are women.
+
+Another way to look at the world is to visualize the raw number of unbanked in every country, which shows us where the 1.7 billion unbanked come from:
 
 ◊; http://colorbrewer2.org/#type=sequential&scheme=PuRd&n=5
 ◊; multi-hue
@@ -66,9 +69,7 @@ While this map helps us identify countries with a high fraction of unbanked, it 
 
 Almost half of all unbanked live in just seven countries: China, India, Indonesia, Mexico, Nigeria, Pakistan and Bangladesh. In fact China (224 million) and India (191 million) alone make up nearly a quarter of all unbanked in the world.
 
-While the fraction of unbanked adults are high in the developing countries with poor access to electricity and internet, a surprisingly large number of unbanked also live in developed countries. For example the USA has 18 million unbanked and in France there are 3 million unbanked.
-
-The unbanked are in general less educated, where 62% of unbanked have a primary education or less, compared to around half overall in developing economies. Twice as many unbanked live in the poorest households as in the richest ones and 56% of all unbanked are women.◊mn{read-it}
+While the fraction of unbanked adults are high in the developing countries with poor access to electricity and internet, a surprisingly large number of unbanked also live in developed countries. For example the USA has 18 million unbanked and in France there are 3 million unbanked.◊mn{read-it}
 
 
 ◊subhead{Why are they unbanked?}
@@ -273,7 +274,7 @@ There are a number of benefits cryptocurrencies have:
     }
 }
 
-These are directly related to the ◊link[rel-why-unbanked?]{reasons why people stay unbanked}, many which cryptocurrencies might help solve. For example, the 30% who say bank accounts are too expensive and the 20% who say they lack documentation, may find cryptocurrencies a viable alternative as it is much cheaper than bank accounts and don't require any documentation. Cryptocurrencies also remove the requirement of having to trust a bank, which 15% of the unbanked cited as a reason for not having an account.
+These are directly related to the ◊link[rel-why-unbanked?]{reasons why people stay unbanked}, many which cryptocurrencies might help solve. For example, the 30% who say bank accounts are too expensive and the 20% who say they lack documentation, may find cryptocurrencies a viable alternative as it is much cheaper than bank accounts and they don't require any documentation. Cryptocurrencies also remove the requirement of having to trust a bank, which 15% of the unbanked cited as a reason for not having an account.
 
 These benefits makes it possible for the 420 million unbanked who have internet access to use cryptocurrencies and gain ◊link[global_currency]{access to the global economy}.
 
