@@ -88,7 +88,7 @@ As long as we can trust the Wayback Machine (and I do consider them generally tr
 What is a timestamping service useful for? Here are some examples:
 
 ◊ul{
-    ◊li{Proof of invention.
+    ◊li{Proof of invention
 
         Surprisingly often history a discovery happens ◊link[multiple-discoveries]{independently and at around the same time}. What if you come up with an idea or an invention and you didn't want to reveal it yet but still wanted to claim priority?
 
@@ -100,7 +100,7 @@ What is a timestamping service useful for? Here are some examples:
 
         ◊note-pos{wiki-tensio}
     }
-    ◊li{Testaments.
+    ◊li{Testaments
 
         If you're someone who likes to write testaments maybe you want to update the one you have. But after you die, how will people tell which is the newest? Sure you can write a date on the paper, but that can be altered by people who want the more beneficial one to be valid.
 
@@ -112,7 +112,7 @@ What is a timestamping service useful for? Here are some examples:
 
         ◊note-pos{wills}
     }
-    ◊li{Proving discovery of software bugs.
+    ◊li{Proving discovery of software bugs
 
         What if you've discovered a major software bug and want to disclose it anonymously, but still want the ability to prove you were the one who found it? ◊link[rel-bug]{Later in the chapter} we'll go into details of how the discoverer of one of the most catastrophic bugs in Bitcoin ever accomplished this using timestamping.
     }
@@ -127,13 +127,13 @@ What is a timestamping service useful for? Here are some examples:
 With cryptocurrencies it's possible to do away with the trusted party requirement and offer a decentralized timestamping service. We know that there's ◊link[how_do_cryptocurrencies_work]{no single trusted party} that manages a cryptocurrency and instead many cooperate and reach consensus together. Therefore we only need to decide how to embed verifiable data and timestamps into a cryptocurrency:
 
 ◊ol{
-  ◊li{Prepare data.
+  ◊li{Prepare data
 
       Because we might want to reveal our message at a later date we don't want to store the message in the clear. We can use an anagram like Robert Hook used, some kind of encryption with a key or a ◊link[hash-functions]{hash function} to obfuscate the message.
 
       After we have the obfuscated message we want to verify we can ◊link[embedding-data]{embed it into a cryptocurrency}.
   }
-  ◊li{Retrieve timestamps.
+  ◊li{Retrieve timestamps
 
     Transactions in an older block are older, transactions in a newer block are newer and transactions in the same block occur at the same time.◊sn{partial-order} You can observe, in a decentralized way, when a block with your transaction is created and use that as your message timestamp.
 
@@ -333,7 +333,7 @@ With that our timestamp is prepared and nobody can see our original message, onl
     "Bitcoin Cash transaction 586783e17fadace136365490fd83ba59390ca55e7205ee74fbc7db2daa012ad3"))
 
 ◊ol{
-    ◊li{Locate the hash in the blockchain.
+    ◊li{Locate the hash in the blockchain
 
         It's probably easiest if we point out ◊link[transaction-ex]{which transaction} we've included our hash in. This is the txid:
 
@@ -345,11 +345,11 @@ With that our timestamp is prepared and nobody can see our original message, onl
             Blockchair includes the prefix "j@" in the decoded OP_RETURN field while other blockexplorers I checked don't. It's the encoding (64) Electron Cash inserted into the transaction and isn't part of our hash.
         }
     }
-    ◊li{Verify the SHA-256 hash.
+    ◊li{Verify the SHA-256 hash
 
         The message should encode to the the same hash that's included in the blockchain.
     }
-    ◊li{Lookup the timestamp.
+    ◊li{Lookup the timestamp
 
         According to ◊link[transaction-ex]{Blockchair} the transaction was included in a block mined 20:17 September 15, 2019 (UTC). Verifying the timestamp with other blockexplorers or full nodes is left as an exercise to the reader, just be cautious of timezone differences.
     }

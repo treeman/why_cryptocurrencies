@@ -225,10 +225,10 @@ For us costumers it's a feature that transactions can be reversed. For example i
 It goes something like this:
 
 ◊ol{
-    ◊li{Place an order.}
-    ◊li{Receive item.}
-    ◊li{Claim your card was stolen.}
-    ◊li{Get your money back.}
+    ◊li{Place an order}
+    ◊li{Receive item}
+    ◊li{Claim your card was stolen}
+    ◊li{Get your money back}
 }
 
 This can be a big problem for some merchants, especially those ◊link[fraud-digital]{serving digital goods}, who often has to swallow it as a loss. To make matters worse merchants also have to pay non-negotiable and non-refundable ◊link[charge-back-fees]{charge back fees} even when disputing.◊mn{bank-chargeback}
@@ -325,15 +325,15 @@ In addition it might make risk management more practical. While it's basically i
 We've seen three large benefits to cryptocurrency payments:
 
 ◊ul{
-    ◊li-plus{Cheaper.}
-    ◊li-plus{Settles faster.}
-    ◊li-plus{Reduces or removes the risk for charge back fraud.}
+    ◊li-plus{Cheaper}
+    ◊li-plus{Settles faster}
+    ◊li-plus{Reduces or removes the risk for charge back fraud}
 }
 
 And one large drawback:
 
 ◊ul{
-    ◊li-neg{No inherent fraud protection for costumers.}
+    ◊li-neg{No inherent fraud protection for costumers}
 }
 
 The drawback might be alleviated with optional systems in the future, giving us the best of both worlds.

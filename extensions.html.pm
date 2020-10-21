@@ -41,7 +41,7 @@ There are many different ways this could be useful and I've selected some exampl
 The first thing we can observe is that it's possible to insert data into the ledgers of cryptocurrencies, essentially making the data immutable. It's not important exactly how, but if you're curious here are some ways:
 
 ◊ol{
-    ◊li{Miners can add data to blocks.
+    ◊li{Miners can add data to blocks
 
         For example Satoshi ◊link[block-0]{left a message} in the first ever Bitcoin block:◊mn{coinbase-data}
 
@@ -57,7 +57,7 @@ The first thing we can observe is that it's possible to insert data into the led
 
         ◊note-pos{coinbase-data}
     }
-    ◊li{Transactions can hold data.
+    ◊li{Transactions can hold data
 
         See the OP_RETURN field in ◊link[memo-blockchair]{this Bitcoin Cash transaction} which says:
 
@@ -65,7 +65,7 @@ The first thing we can observe is that it's possible to insert data into the led
             Memo has reached 500,000 on-chain actions!
         }
     }
-    ◊li{Addresses are user controlled.
+    ◊li{Addresses are user controlled
 
         Even if it's not intended you can always insert arbitrary data as long as you can control your address.◊mn{control-address} For example you could chain transactions, by sending from address to address, and treat the second character of the receiving address as your message:
 

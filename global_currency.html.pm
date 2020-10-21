@@ -10,7 +10,7 @@
 
 ◊img[#:src "/images/global.png" #:alt "You can send coins all over the world."]{}
 
-Cryptocurrencies don't have any borders. They allow you send and receive money from anywhere in the world, to bypass sanctions and border control, opt-out of local monetary policies and use a currency that's global to an extent we've never seen before.
+Cryptocurrencies don't have any borders. They allow you to send and receive money from anywhere in the world, to bypass sanctions and border control, opt-out of local monetary policies and use a currency that's global to an extent we've never seen before.
 
 
 ◊subhead{Remittance}

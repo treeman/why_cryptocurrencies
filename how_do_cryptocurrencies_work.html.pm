@@ -21,7 +21,7 @@ As stated in the introduction the focus isn't on technical details, but it's a h
 ◊(define summary `("#summary" "Summary"))
 
 ◊ndef["others"]{
-    For example Ethereum adds Turing complete smart contracts and CryptoNote protocols (like Monero) ◊link[privacy-challenge]{hides transaction details}.
+    For example Ethereum adds Turing complete smart contracts and CryptoNote protocols like Monero ◊link[privacy-challenge]{hides transaction details}.
 }
 
 
@@ -29,7 +29,7 @@ As stated in the introduction the focus isn't on technical details, but it's a h
 
 The ◊def{blockchain} is a ledger that stores balances. The crucial problem is deciding between double spends (using a coin twice). Cryptocurrencies like Bitcoin use ◊def{proof-of-work} which makes miners expend energy and compete for rewards. This competition between miners is used to resolve double spends and to secure the chain, allowing the winner to extend the blockchain with new transactions that don't double spend.
 
-What makes it all work is the incentives for the miners to work in the best interest of the network as it's the most profitable option. The security assumption is that most of miners are honest and work for profit, otherwise the security model fails and transactions can be reversed making the cryptocurrency unfit to function as money.
+What makes it all work is the incentives for the miners to work in the best interest of the network as it's the most profitable option. The security assumption is that most of miners are honest and work for profit, otherwise the security model fails and transactions can be reversed.
 
 
 ◊subhead{The ledger}
