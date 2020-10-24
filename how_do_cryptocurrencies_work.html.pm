@@ -3,7 +3,7 @@
 ◊(define-meta title "How do cryptocurrencies work?")
 ◊(define-meta subtitle "Decentralized consensus")
 ◊(define-meta published "2019-05-03T20:08:34+01:00")
-◊(define-meta updated "2020-10-09T19:50:01+02:00")
+◊(define-meta updated "2020-10-24T11:39:04+02:00")
 ◊(define-meta uuid "320751d9-9a28-4e91-9469-b44b83e12475")
 
 ◊(clear-sidenotes)

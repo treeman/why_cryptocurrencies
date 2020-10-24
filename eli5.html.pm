@@ -3,7 +3,7 @@
 ◊(define-meta title "Why cryptocurrencies in five minutes")
 ◊(define-meta subtitle "ELI5 - what is the inherent values of cryptocurrencies?")
 ◊(define-meta published "2019-07-17T00:00:00+01:00")
-◊(define-meta updated "2020-10-09T19:51:01+02:00")
+◊(define-meta updated "2020-10-24T11:38:22+02:00")
 ◊(define-meta uuid "cef34868-0317-4c6f-8b9f-cfb66464f2a8")
 
 ◊(clear-sidenotes)
