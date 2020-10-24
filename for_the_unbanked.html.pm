@@ -48,7 +48,7 @@ There are ◊strong{◊link[findex-report]{1.7 billion adults}} without a bank a
     Source ◊link[findex-report]{Global Findex database}.
 }
 
-This map helps us identify countries with a high fraction of unbanked and we can for example see that it's common to be unbanked in Africa and in South America but it's uncommon in western Europe and the Nordic countries.
+This map helps us identify countries with a high fraction of unbanked and we can for example see that it's common to be unbanked in Africa and in South America but uncommon in western Europe and the Nordic countries.
 
 The unbanked are in general less educated, where 62% of unbanked only have a primary education or less, compared to around half overall in developing economies. Twice as many unbanked live in the poorest households as in the richest ones and 56% of all unbanked are women.
 
