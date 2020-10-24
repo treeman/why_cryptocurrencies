@@ -278,7 +278,7 @@ Let's say we want to obscure and timestamp the message Hook used:
 Let's now encode and timestamp it using the Bitcoin Cash blockchain:
 
 ◊ol{
-    ◊li{Encode the message using SHA-256.
+    ◊li{Encode the message using SHA-256
 
         On Linux we can run the command:◊mn{others-command}
 
@@ -298,7 +298,7 @@ Let's now encode and timestamp it using the Bitcoin Cash blockchain:
 
         ◊note-pos[#:top -10]{others-command}
     }
-    ◊li{Insert it in a transaction using OP_RETURN.
+    ◊li{Insert it in a transaction using OP_RETURN
 
         For this step you need a wallet capable of creating a transaction with a custom OP_RETURN field, I used the desktop version of ◊link[electroncash]{Electron Cash 4.0.14} and enabled the OP_RETURN field in settings. You need to have enough money to pay a small fee and use a small amount to transfer.◊mn{tx-value}
 
