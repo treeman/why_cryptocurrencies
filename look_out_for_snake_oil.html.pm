@@ -3,7 +3,7 @@
 ◊(define-meta title "Look out for snake oil")
 ◊(define-meta subtitle "The space is new, hyped and full of misleading information")
 ◊(define-meta published "2019-05-06T00:00:00+01:00")
-◊(define-meta updated "2020-10-09T19:49:44+02:00")
+◊(define-meta updated "2020-10-24T11:39:12+02:00")
 ◊(define-meta uuid "635e169f-885a-4d29-a266-4c9ef4981f47")
 
 ◊(clear-sidenotes)
@@ -32,12 +32,12 @@ A snake oil salesperson sells, or promotes, a valueless or fraudulent solution. 
 There are many projects in the cryptocurrency space that, curiously enough, aren't actually cryptocurrencies. Some even go so far as to call them cryptocurrencies even though they don't fulfil the criteria. For example I don't consider these real cryptocurrencies:
 
 ◊ul{
-  ◊li{OneCoin and Bitconnect---they're plain pyramid schemes.◊sn{pyramid-schemes}}
-  ◊li{Ripple.}
-  ◊li{Stablecoins like ◊link[tether]{Tether}◊sn{tether} or JP Morgan's ◊link[JPM-coin]{JPM coin}.}
-  ◊li{"Second layer solutions" like the Lightning Network.}
-  ◊li{Smart tokens like the ERC20 tokens running on top of Ethereum.◊sn{ICOs}}
-  ◊li{Facebook's Libra.}
+  ◊li{OneCoin and Bitconnect---they're plain pyramid schemes◊sn{pyramid-schemes}}
+  ◊li{Ripple}
+  ◊li{Stablecoins like ◊link[tether]{Tether}◊sn{tether} or JP Morgan's ◊link[JPM-coin]{JPM coin}}
+  ◊li{"Second layer solutions" like the Lightning Network}
+  ◊li{Smart tokens like the ERC20 tokens running on top of Ethereum◊sn{ICOs}}
+  ◊li{Facebook's Libra}
 }
 
 ◊note-pos[#:top -14]{pyramid-schemes}
@@ -75,33 +75,33 @@ Be aware of "the blockchain" being used only as a buzzword.
 When evaluating cryptocurrencies here are some red flags to look out for:
 
 ◊ul{
-    ◊li{Heavily slanted initial coin supply.◊mn{supply}
+    ◊li{Heavily slanted initial coin supply◊mn{supply}
 
         Like only creating 21 million coins, but keeping 20 million for yourself.◊note-pos{supply}
     }
-    ◊li{Central authorities.
+    ◊li{Central authorities
 
         A "centralized cryptocurrency" is an oxymoron because it's not trustless or permissionless and it doesn't prevent a single entity from manipulating the supply, the very things that define a cryptocurrency. A "private blockchain" has the same fatal flaws.
 
         If someone can freeze your coins, prevent them from being used in a particular country or generate them from thin air then it's not a cryptocurrency.
     }
-    ◊li{Bad consensus algorithms or centralized governance protocols.
+    ◊li{Bad consensus algorithms or centralized governance protocols
 
         If a cryptocurrency isn't working like I describe in ◊(link how_do_cryptocurrencies_work), then chances are it's not actually decentralized and calling it a cryptocurrency might be a stretch.
     }
-    ◊li{Promises that sound too good to be true.
+    ◊li{Promises that sound too good to be true
 
         For example promising instant transactions and infinite scalability, while compromising the decentralization and security of the network. ◊em{Proof-of-stake} coins are usually guilty of this.
     }
-    ◊li{Propaganda.
+    ◊li{Propaganda
 
         Social media is chock-full of users who tries to sell snake oil to you. Slander, lies and censorship is a daily occurrence.◊mn{censorship} ◊note-pos{censorship}
     }
-    ◊li{Large drawbacks.
+    ◊li{Large drawbacks
 
         Like having expensive and unreliable transactions or having to be online to receive payments.
     }
-    ◊li{Problems are hand-waved away.
+    ◊li{Problems are hand-waved away
 
         “We'll figure it out” or “It'll be ready in 18 months” (forever).
     }

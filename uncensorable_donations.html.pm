@@ -3,7 +3,7 @@
 ◊(define-meta title "Uncensorable donations")
 ◊(define-meta subtitle "Donations governments cannot stop")
 ◊(define-meta published "2019-08-28T00:00:00+01:00")
-◊(define-meta updated "2020-10-09T19:48:48+02:00")
+◊(define-meta updated "2020-10-24T11:40:04+02:00")
 ◊(define-meta uuid "f35cab59-0629-4173-9de0-a07a0eef33dc")
 
 ◊(clear-sidenotes)
@@ -471,11 +471,7 @@ This is ◊strong{not} a glorification of WikiLeaks---they have ◊link[wikileak
 
     While he was immediately ◊link[assange-indicted]{indicted on 17 counts of violating the Espionage Act} by the U.S. his release was news for the Swedish prosecutors. Nevertheless the Swedish investigation ◊link[assange-rape-reopen-19]{was soon reopened} as well.
 
-    While he was immediately ◊link[assange-indicted]{indicted on 17 counts of violating the Espionage Act} by the U.S. his release was news for the Swedish prosecutors. 
-
-    ◊;At the moment, the Swedish investigation is open once again and Assange is waiting for the U.K. to rule on extradition requests from both Sweden and the U.S.
-
-    ◊note-pos[#:top -16]{second-arrest}
+    ◊note-pos[#:top -9]{second-arrest}
 
     ◊ndef["second-arrest"]{
         Confusingly he was actually arrested twice. First for ◊link[assange-arrest-uk]{skipping a U.K. court warrant} and a second time at the ◊link[assange-arrest-us]{request of the U.S.} seeking his extradition.
@@ -494,7 +490,7 @@ This is ◊strong{not} a glorification of WikiLeaks---they have ◊link[wikileak
   }
 
   ◊entry["The rape investigation is dropped"
-         #:date "November 2019"]{
+         #:date "November, 2019"]{
     A few months later the Swedish prosecutor once again ◊link[assange-rape-closed-19]{dropped their investigation against Assange}, citing the long period of time since the alleged crime as the reason.
 
     When Assange first sought asylum many people said it was only to avoid the Swedish charges and he used fears of the U.S. as a pretext, but in hindsight the fears might have been real.
@@ -502,7 +498,7 @@ This is ◊strong{not} a glorification of WikiLeaks---they have ◊link[wikileak
   }
 
   ◊entry["Observers are denied entry to the Assange hearings"
-         #:date "September 2020"]{
+         #:date "September, 2020"]{
 
     During Assange's extradition hearing, where the U.K. will rule on extradition to the U.S., Amnesty International were ◊link[amnesty-hearings]{blocked from observing the hearings}. They claim the hearings were intentionally locked down:
 
@@ -517,9 +513,9 @@ This is ◊strong{not} a glorification of WikiLeaks---they have ◊link[wikileak
   }
 
   ◊entry["A farcical extradition hearing"
-         #:date "September 2020"]{
+         #:date "September, 2020"]{
 
-    The human rights activist Craig Murray was allowed to observe and he's been documenting the hearing ◊link[craig-murray]{on his blog}. And it's not an exaggeration to call the hearing a farce.
+    The human rights activist Craig Murray was allowed to observe and he's been documenting the hearing ◊link[craig-murray]{on his blog}, and it's not an exaggeration to call the hearing a farce.
 
     Witnesses were for example prevented from taking the stand because the U.S. managed to block any reference to the torture at Guantanamo (which we know is true):
 
@@ -546,7 +542,7 @@ This is ◊strong{not} a glorification of WikiLeaks---they have ◊link[wikileak
         The Governor’s decision was at paragraph 19. Baraitser told Fitzgerald she could not accept the document as it was new evidence. Fitzgerald told her ◊em{she had herself asked for the outcome of the charge}. He said the document contained very interesting information. Baraitser said that the Governor’s decision was at paragraph 19, that was all she had asked for, and ◊em{she would refuse to take the rest of the document into consideration}.
     }
 
-    The hearing is full of problems like these. For example that the prosecution changed their accusations hours before and the defense not getting enough time to prepare, that the defense is prevented from questioning key witnesses and that there will be no closing speeches in the hearing.
+    The hearing is full of problems like these. For example that the prosecution changed their accusations hours before and the defense not getting enough time to prepare, that the defense was prevented from questioning key witnesses and that there will be no closing speeches in the hearing.
 
     As I'm writing this in late September it's not yet decided what will happen to Assange, but it seems clear that the judge already made up her mind before the hearing even began.
   }

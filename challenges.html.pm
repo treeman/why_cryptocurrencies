@@ -3,7 +3,7 @@
 ◊(define-meta title "Challenges for cryptocurrencies")
 ◊(define-meta subtitle "Large unsolved problems with cryptocurrencies")
 ◊(define-meta published "2020-03-17T20:26:28+01:00")
-◊(define-meta updated "2020-10-09T19:51:23+02:00")
+◊(define-meta updated "2020-10-24T11:37:50+02:00")
 ◊(define-meta uuid "c13d8405-fb3e-411c-b035-aae08eedddf1")
 
 ◊(clear-sidenotes)
@@ -122,7 +122,7 @@ In an attempt to make Bitcoin more private "mixing" services such as ◊link[coi
 
 They're not perfect because you can still have a transaction graph, and you might be able to figure out where the coins originated from anyway.
 
-Another approach is used by ◊link[zcash]{the shielded transactions of ZCash}, where all information is hidden:
+Another approach is used by ◊link[zcash]{the shielded transactions of ZCash}, where all information is hidden by ◊def{zero-knowledge-proofs}:
 
 ◊img[#:src "/images/zcash-shielded.png" #:alt "ZCash shielded transactions obfuscate everything."]{
     Shielded transactions hide both addresses and amount of transactions, but normal transactions still have their details visible.
@@ -200,25 +200,25 @@ But it's not as easy as "just increase the blocksize". Larger blocks have a cent
 There are a number of technical pain points that needs to be improved to scale a cryptocurrency. Here's a list of some that I think are important:
 
 ◊ul{
-    ◊li{Block propagation.
+    ◊li{Block propagation
 
-        When a miner finds a block it's important that it propagates around the world to all other miners, so they can continue building on it. This should be done quickly, otherwise it'll increase ◊def{orphan} rates (the risk that a block will get discarded as another one was found at the same time), which will have a centralizing effect as it harms smaller miners more than larger miners.
+        When a miner finds a block it's important that it propagates around the world to all other miners, so they can continue building on it. This should be done quickly, otherwise it'll increase ◊def{orphan rates} (the risk that a block will get discarded as another one was found at the same time), which will have a centralizing effect as it harms smaller miners more than larger miners.
     }
-    ◊li{Blockchain size.
+    ◊li{Blockchain size
 
         Because full nodes must store transactions ◊em{forever}, it's important that the blockchain size (containing all transactions) doesn't outgrow the storage capacity of nodes.◊mn{btc-size}
 
         ◊note-pos{btc-size}
     }
-    ◊li{Bandwith usage.
+    ◊li{Bandwith usage
 
         It's important that nodes have internet connections with enough bandwidth to share transactions with each other.
     }
-    ◊li{Initial sync.
+    ◊li{Initial sync
 
         When you first start up a node from scratch you need download and validate the whole blockchain. This must be fast enough so that nodes are able to catch up in a reasonable amount of time.
     }
-    ◊li{Validation speed.
+    ◊li{Validation speed
 
         Whenever a node sees blocks and transactions they must also validate them.◊mn{validation-less-mining}
 
@@ -348,19 +348,19 @@ The issue is that cryptocurrencies with proof-of-work use a lot of energy. Bitco
 This is absolutely a big problem, but there are some important points we need to keep in mind:
 
 ◊ul{
-    ◊li{The energy isn't wasted.
+    ◊li{The energy isn't wasted
 
         The energy is used to secure the chain, because to attack it you need to expend at least that amount of energy. If the energy usage was low, it would be easy to attack.
     }
-    ◊li{Unrelated to transaction throughput.
+    ◊li{Unrelated to transaction throughput
 
         Critics like to look at how much energy is spent to process a single transaction---which makes Bitcoin look extremely bad---but it's a bit misleading since transaction throughput is an unrelated problem.
     }
-    ◊li{Mostly cheap and renewable energy.
+    ◊li{Mostly cheap and renewable energy
 
         According to ◊link[coinshares-mining]{CoinShare's research} 73% of Bitcoin mining uses renewable energy, mostly in the form of cheap hydropower in China.◊mn{renewable-bad}
     }
-    ◊li{Energy consumption follows mining profitability.
+    ◊li{Energy consumption follows mining profitability
 
         Bitcoin mining is purely profit driven; when the price of Bitcoin goes up, it becomes more profitable to mine and when the price goes down, it's less profitable to mine. Similarly if the energy price would go up, then it's less profitable to mine and Bitcoin would use less energy.
 
@@ -395,27 +395,27 @@ If we're stuck with proof-of-work then we just have to accept that it uses a lot
 An exhaustive list and description of all problems would require much more than one book. Still I'd like to at least mention a couple of other problems:
 
 ◊ol{
-    ◊li{User experience.
+    ◊li{User experience
 
         The user experience of cryptocurrencies isn't that good. Wallets are hard to understand and if you mess up you might lose your funds forever.
     }
-    ◊li{Scams everywhere.
+    ◊li{Scams everywhere
 
         For every legitimate cryptocurrency there are thousands of scams, and it can be very difficult for outsiders to identify them.◊mn{parents}
 
         ◊note-pos{parents}
     }
-    ◊li{Regulation.
+    ◊li{Regulation
 
         Having to calculate and declare taxes for ◊em{every} cryptocurrency purchase you make is a clear hindrance to adoption. Not to mention them being illegal in some countries.
     }
-    ◊li{Development organization.
+    ◊li{Development organization
 
         A cryptocurrency is supposed to remove third parties, but that raises the question how should you upgrade a cryptocurrency? In practice the development has been dictated by a single development team, which gives them a great deal of power and is a source of centralization.◊mn{easiest-way}
 
         ◊note-pos{easiest-way}
     }
-    ◊li{Confirmation time.
+    ◊li{Confirmation time
 
         Even though I did write ◊link[cheaper_faster]{that cryptocurrencies are faster} than alternatives, the system isn't fool-proof. While 0-conf is often good enough, if you need more security then you sometimes need to wait up to an hour or two before your first confirmation.
     }

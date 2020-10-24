@@ -3,7 +3,7 @@
 ◊(define-meta title "A hitchhiker's guide to cryptography")
 ◊(define-meta subtitle "An introduction to cryptography")
 ◊(define-meta published "2020-02-27T13:33:40+01:00")
-◊(define-meta updated "2020-10-09T19:51:14+02:00")
+◊(define-meta updated "2020-10-24T11:38:11+02:00")
 ◊(define-meta uuid "6a8759d6-2e0c-4224-b0b8-61009c5484d0")
 
 ◊(clear-sidenotes)
@@ -125,7 +125,7 @@ Large parts of the internet depends on public-key cryptography. For example when
     The lock icon or the "https" label means you're using public-key cryptography (among other things) to secure your connection to the website.
 }
 
-I won't go into details on how the mathematics behind public-key cryptography, as I'm not able to without making the explanation needlessly complicated, but if this interests you I encourage you to look it up---I personally find it fascinating.◊mn{further-public-key}
+I won't go into details the mathematics behind public-key cryptography, as I'm not able to without making the explanation needlessly complicated, but if this interests you I encourage you to look it up---I personally find it fascinating.◊mn{further-public-key}
 
 ◊ndef["further-public-key"]{
     ◊link[rsa]{RSA} is one of the first public-key cryptography schemes and it was also the first one I studied. It's fairly simple, so I think it's a good starting point to understand public-key cryptography.

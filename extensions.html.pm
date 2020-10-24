@@ -3,7 +3,7 @@
 ◊(define-meta title "Extensions")
 ◊(define-meta subtitle "Non-currency usage of a blockchain")
 ◊(define-meta published "2019-09-21T00:00:00+01:00")
-◊(define-meta updated "2020-10-09T19:50:51+02:00")
+◊(define-meta updated "2020-10-24T11:38:30+02:00")
 ◊(define-meta uuid "c83f3bb3-7277-43b0-ad8d-ee5ea4592a87")
 
 ◊(clear-sidenotes)
@@ -41,7 +41,7 @@ There are many different ways this could be useful and I've selected some exampl
 The first thing we can observe is that it's possible to insert data into the ledgers of cryptocurrencies, essentially making the data immutable. It's not important exactly how, but if you're curious here are some ways:
 
 ◊ol{
-    ◊li{Miners can add data to blocks.
+    ◊li{Miners can add data to blocks
 
         For example Satoshi ◊link[block-0]{left a message} in the first ever Bitcoin block:◊mn{coinbase-data}
 
@@ -57,7 +57,7 @@ The first thing we can observe is that it's possible to insert data into the led
 
         ◊note-pos{coinbase-data}
     }
-    ◊li{Transactions can hold data.
+    ◊li{Transactions can hold data
 
         See the OP_RETURN field in ◊link[memo-blockchair]{this Bitcoin Cash transaction} which says:
 
@@ -65,7 +65,7 @@ The first thing we can observe is that it's possible to insert data into the led
             Memo has reached 500,000 on-chain actions!
         }
     }
-    ◊li{Addresses are user controlled.
+    ◊li{Addresses are user controlled
 
         Even if it's not intended you can always insert arbitrary data as long as you can control your address.◊mn{control-address} For example you could chain transactions, by sending from address to address, and treat the second character of the receiving address as your message:
 

@@ -3,7 +3,7 @@
 ◊(define-meta title "Why cryptocurrencies in five minutes")
 ◊(define-meta subtitle "ELI5 - what is the inherent values of cryptocurrencies?")
 ◊(define-meta published "2019-07-17T00:00:00+01:00")
-◊(define-meta updated "2020-10-09T19:51:01+02:00")
+◊(define-meta updated "2020-10-24T11:38:22+02:00")
 ◊(define-meta uuid "cef34868-0317-4c6f-8b9f-cfb66464f2a8")
 
 ◊(clear-sidenotes)
@@ -13,7 +13,7 @@ While cryptocurrencies are mostly seen as speculative assets or get rich quick s
 ◊ul{
     ◊li{◊strong{Excellent monetary properties}
 
-        Cryptocurrencies ◊link[are_cryptocurrencies_money]{have better monetary properties} than anything else in history. In contrast to the fiat money we use today, cryptocurrencies have a limited supply and compared to gold cryptocurrencies are much more portable and it's easy to divide coins into very small parts.
+        Cryptocurrencies ◊link[are_cryptocurrencies_money]{have better monetary properties} than anything else in history. In contrast to the fiat money we use today, cryptocurrencies have a limited supply and compared to gold cryptocurrencies are much more portable, are easier to divide into small parts and cannot be counterfeit.
 
         At first glance this may seem insignificant, but money affects everything and even small improvements can have a massive effect.
     }
@@ -25,7 +25,7 @@ While cryptocurrencies are mostly seen as speculative assets or get rich quick s
     }
     ◊li{◊strong{Irreversible digital transactions}
 
-        You receive money in ◊link[speed-comparisons]{under an hour} and after that the money is yours, while it may take days to receive other digital payments which can also be reversed weeks or months later.
+        You receive money in ◊link[speed-comparisons]{under an hour} and after that the money is yours, while it may take days to receive other digital payments that can also be reversed weeks or months later.
 
         This means merchants don't have to worry about having a purchase reversed, which usually means they have to swallow the loss.◊mn{chargeback-fraud}
 

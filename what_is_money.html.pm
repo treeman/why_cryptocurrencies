@@ -3,7 +3,7 @@
 ◊(define-meta title "What is money?")
 ◊(define-meta subtitle "It's subjective")
 ◊(define-meta published "2019-05-16T00:00:00+01:00")
-◊(define-meta updated "2020-10-09T19:47:35+02:00")
+◊(define-meta updated "2020-10-24T11:40:30+02:00")
 ◊(define-meta uuid "67cd34c5-058b-4908-a4a6-aed09aff22cc")
 
 ◊(clear-sidenotes)
@@ -249,7 +249,7 @@ It might sound too simplistic or like a tautology. But what it means is there's 
 
 For instance medicine can be extremely valuable for those who needs it, but have little value to others. So if you have the medicine, but don't need it, you'll gladly sell. But someone who needs it would be reluctant to sell, unless for a very high price.
 
-What does it mean for money? That ◊strong{the value of money is emergent from a group of individuals}. If for example everyone in your social group declares that tomorrow they'll use Pokémon trading cards as money, then they suddenly become very valuable to you. The more people use a form of money, the better it works and the more value it will have.
+What does it mean for money? That ◊strong{the value of money is emergent from a group of individuals}. If for example everyone in your social group declares that tomorrow they'll use Pokémon trading cards as money, then they suddenly become very valuable to you. The more people that use a form of money, the better it works and the more value it will have.
 
 States don't give money value, but they can contribute. For example declaring fiat legal tender makes more people accept it, which in turn increases its value.
 

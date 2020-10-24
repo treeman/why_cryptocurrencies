@@ -3,7 +3,7 @@
 ◊(define-meta title "Freezing of merchant accounts")
 ◊(define-meta subtitle "The account your business relies on can be frozen at any time")
 ◊(define-meta published "2019-06-14T00:00:00+01:00")
-◊(define-meta updated "2020-10-09T19:50:13+02:00")
+◊(define-meta updated "2020-10-24T11:38:47+02:00")
 ◊(define-meta uuid "ac14d4a1-3796-4f5b-9350-b56e796625a1")
 
 ◊(clear-sidenotes)
@@ -46,7 +46,7 @@ Imagine coming in to work one day and having this conversion with your boss:
 
 
 ◊ndef["office-space"]{
-    The TPS reports is is a reference to movie ◊link[office-space]{Office Space}, a black comedy about working in an office. There a worker gets reprimanded for an extremely minor and unimportant issue.
+    The TPS report is is a reference to movie ◊link[office-space]{Office Space}, a black comedy about working in an office. There a worker gets reprimanded for an extremely minor and unimportant issue.
 }
 
 Don't worry if you don't know what a TPS report is, the point is you got your salary ◊strong{frozen for 6 months} for an ◊strong{arbitrary} and ◊strong{unknown} reason.◊mn{6-months}
@@ -136,7 +136,7 @@ The ◊link[neo900]{Neo900} project I quoted at the start of this chapter? They 
 
 ◊subhead{Other examples}
 
-If you search for it online, there are thousands of stories like these. Here a few examples to get the curious started:
+If you search for it online, there are thousands of stories like these. Here's a few examples to get the curious started:
 
 ◊ul{
     ◊li{◊link[kyc-failure]{PayPal Know Your Customer failure}}

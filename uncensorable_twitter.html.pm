@@ -3,7 +3,7 @@
 ◊(define-meta title "Uncensorable Twitter")
 ◊(define-meta subtitle "Permanent and uncensorable messages")
 ◊(define-meta published "2019-09-25T00:00:00+01:00")
-◊(define-meta updated "2020-10-09T19:48:43+02:00")
+◊(define-meta updated "2020-10-24T11:40:14+02:00")
 ◊(define-meta uuid "281185fa-996c-44fa-8ae1-f2323e080f6e")
 
 ◊(clear-sidenotes)
@@ -16,7 +16,7 @@
     }
 }
 
-Another use for ◊link[embedding-data]{embeddable data} in a cryptocurrency is a Twitter clone where messages are included into transactions, and thereby uncensorable. One example is ◊link[memo-cash]{memo.cash} that embeds data into the Bitcoin Cash blockchain.◊sn{why-bch} Like Twitter it only supports fairly short messages, for example:◊sn{memo-length}
+Another use for ◊link[embedding-data]{embeddable data} in a cryptocurrency is a Twitter clone where messages are included into transactions, and are therefore uncensorable. One example is ◊link[memo-cash]{memo.cash} that embeds data into the Bitcoin Cash blockchain.◊sn{why-bch} Like Twitter it only supports fairly short messages, for example:◊sn{memo-length}
 
 ◊qt[#:src "(transaction on the blockchain)"
     #:author "homopit"
@@ -77,7 +77,7 @@ Another use for ◊link[embedding-data]{embeddable data} in a cryptocurrency is 
      "https://blockchair.com/bitcoin-cash/transaction/5e614e32e679df162cc04582769b09fd88e7f0ea32f537dcc72cae38efcb7fe9"
      "Bitcoin Cash transaction 5e614e32e679df162cc04582769b09fd88e7f0ea32f537dcc72cae38efcb7fe9"))
 
-Images or videos aren't actually embedded but references outside services. ◊link[memo-cash-protocol]{See their protocol} if you want more details.
+Images or videos aren't actually embedded but reference outside services. ◊link[memo-cash-protocol]{See their protocol} if you want more details.
 
 ◊ndef["memo-length"]{
     Memo could potentially extend their message length from the current 217 character limit by ◊link[embedding-data]{chaining transactions} as described before.
@@ -99,8 +99,8 @@ Images or videos aren't actually embedded but references outside services. ◊li
     Bitcoin Cash is a good option because it has ◊link[bch-low-fees]{low fees} and a larger OP_RETURN limit, making it a cheap and easy base for a messaging platform.
 }
 
-◊note-pos[#:top -30]{why-bch}
-◊note-pos[#:top -23]{memo-length}
+◊note-pos[#:top -33]{why-bch}
+◊note-pos[#:top -26]{memo-length}
 
 ◊(define bch-low-fees
   (x-ref

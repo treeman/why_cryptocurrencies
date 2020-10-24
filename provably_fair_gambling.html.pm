@@ -3,7 +3,7 @@
 ◊(define-meta title "Provably fair gambling")
 ◊(define-meta subtitle "Gambling where you cannot cheat the odds")
 ◊(define-meta published "2019-12-17T00:00:00+01:00")
-◊(define-meta updated "2020-10-09T19:49:20+02:00")
+◊(define-meta updated "2020-10-24T11:39:33+02:00")
 ◊(define-meta uuid "cf1cc907-4fda-4b98-81fd-b9c447cdadc5")
 
 ◊(clear-sidenotes)
@@ -113,8 +113,8 @@ Concretely a game could play out like this:
             4b227777d4dd1fc61c6f884f48641d02b4d121d3fd328cb08b5531fcacdabf8a
         }
     }
-    ◊li{The player sends their seed ◊icode{1} to the casino.}
-    ◊li{The casino says they won, and reveals that their seed was ◊icode{4}.}
+    ◊li{The player sends their seed ◊icode{1} to the casino}
+    ◊li{The casino says they won, and reveals that their seed was ◊icode{4}}
 }
 
 To prove that the bet was made, the above interactions should be signed by both parties, complete with timestamps. It doesn't even have to be on a blockchain, just having a public key connected to their identity is enough. As long as either party has the signed messages, it's all good.◊mn{pull-out}
@@ -134,7 +134,7 @@ To prove that the bet was made, the above interactions should be signed by both 
 Now the player would like to verify that they did in fact lose:
 
 ◊ol{
-    ◊li{First we verify that the casino indeed used the seed ◊icode{4}.
+    ◊li{First we verify that the casino indeed used the seed ◊icode{4}
 
         ◊code{
             echo -n "4" | sha256sum
@@ -169,11 +169,11 @@ It checks out, the casino won fair and square.
 There are limits to the simple toy example I've described:
 
 ◊ul{
-    ◊li{Seeds need to be longer.
+    ◊li{Seeds need to be longer
 
         A seed like ◊icode{4} is far too simple. We'd need a much longer seed for the game to be secure. Maybe something like ◊icode{65654687731080707945}?
     }
-    ◊li{Multiplayer games are more complex.
+    ◊li{Multiplayer games are more complex
 
         This scheme works fine for simple single player games, like flipping a coin. But if we wanted to create a provable fair poker game the implementation would be more complex, but it would still be possible.◊mn{encrypt}
 
@@ -185,7 +185,7 @@ There are limits to the simple toy example I've described:
             I leave the implementation details as an exercise for the reader.
         }
     }
-    ◊li{Only for digitally randomized gambles.
+    ◊li{Only for digitally randomized gambles
 
         It's not possible to bet on real life events, like the outcome of an ice hockey game, without relying on a trusted third party to announce the result of the game (often called an Oracle).
     }

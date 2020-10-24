@@ -3,7 +3,7 @@
 ◊(define-meta title "Private money")
 ◊(define-meta subtitle "Reclaim your financial privacy with cryptocurrencies")
 ◊(define-meta published "2019-12-09T00:00:00+01:00")
-◊(define-meta updated "2020-10-09T19:49:39+02:00")
+◊(define-meta updated "2020-10-24T11:39:24+02:00")
 ◊(define-meta uuid "9f90581c-24f1-4653-9b4a-d86a9ec9e365")
 
 ◊(clear-sidenotes)
@@ -475,7 +475,7 @@ I think people often give up their privacy because of ◊strong{fear}. Since the
 
 Terrorism is real and scary, there's no denying that. But our level of fear is irrational and would be better placed worrying about cars or unhealthy food---both of which kill more people than terrorism do. Yet fear is such a powerful emotion that it prevents us from thinking logically.
 
-For example people may be willing to give up their privacy, because it might make it easier to catch terrorists. But if we try to compromise everyones' privacy, we'll jeopardize the personal security of the innocent, but the terrorists will still have access to privacy through strong encryption (with strong encryption it's impossible for ◊em{anyone} to read what you write or access your data). We may think we're more secure, but we're really not.◊mn{tsa}
+For example people may be willing to give up their privacy, because it might make it easier to catch terrorists. But if we try to compromise everyones' privacy, we'll jeopardize the personal security of the innocent, yet the terrorists will still have access to privacy through strong encryption (with strong encryption it's impossible for ◊em{anyone} to read what you write or access your data). We may think we're more secure, but we're really not.◊mn{tsa}
 
 ◊ndef["tsa"]{
     The security checks at airports are annoying, ◊link[tsa-security-theater]{expensive and ineffective}. It's ◊def{security theater}.
