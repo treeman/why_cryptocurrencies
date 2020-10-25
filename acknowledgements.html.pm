@@ -20,3 +20,4 @@ A big thanks to Filip Strömbäck, who proof-read everything and provided me wit
 
 And thanks to all others who gave me supportive comments, feedback, pull requests and donations. I'm forever grateful.
 
+◊(list-xrefs)

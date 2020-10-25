@@ -394,3 +394,4 @@ While there are benefits to blockchain voting, there are many problems we need t
      "https://arxiv.org/pdf/1707.08619.pdf"
      "Public Evidence from Secret Ballots (PDF)"))
 
+◊(list-xrefs)

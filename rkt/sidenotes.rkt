@@ -6,7 +6,7 @@
 (require "decode.rkt")
 (require racket/pretty)
 
-(provide ndef sn mn note-pos decode-sidenotes clear-sidenotes)
+(provide ndef sn mn note-pos decode-sidenotes clear-sidenotes-impl)
 
 (define (ref-symbol ref-in)
   (string->symbol (format "nd-~a" ref-in)))
@@ -25,7 +25,7 @@
   (hash-set! note-defs ref def)
   "")
 
-(define (clear-sidenotes)
+(define (clear-sidenotes-impl)
   (hash-clear! note-defs)
   (hash-clear! notes)
   (hash-clear! note-pos-refs)

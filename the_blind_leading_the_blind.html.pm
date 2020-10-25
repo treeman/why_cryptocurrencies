@@ -290,3 +290,4 @@ Therefore cryptocurrencies are a more transparent and robust alternative, which 
      "https://newrepublic.com/article/116913/federal-reserve-dividends-most-outrageous-handout-banks"
      "This Is the Fed's Most Brazen and Least Known Handout to Private Banks "))
 
+◊(list-xrefs)

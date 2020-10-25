@@ -67,3 +67,4 @@ Am I qualified to write about cryptocurrencies? Am I a cryptocurrency expert? I 
     "https://en.wikipedia.org/wiki/Go_(game)"
     "Wikipedia: Go (game)"))
 
+◊(list-xrefs)

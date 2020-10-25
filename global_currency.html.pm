@@ -387,3 +387,4 @@ Instead of being just a currency used throughout the world, a cryptocurrency is 
      "https://tradingeconomics.com/lebanon/inflation-cpi"
      "Lebanon Inflation Rate"))
 
+◊(list-xrefs)

@@ -7,3 +7,4 @@
 ◊(define-meta extra-article-class "appendix")
 ◊(define-meta skip-feed #t)
 
+◊(list-xrefs)

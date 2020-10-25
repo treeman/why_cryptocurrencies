@@ -196,6 +196,12 @@ $list-p-margin: 0.6em;
     }
 }
 
+.chapter {
+    .title {
+        margin-left: 0.6rem;
+    }
+}
+
 
 /*
  * Horizontal rules
@@ -1092,4 +1098,12 @@ table.address-message {
     display: block;
     text-align: center;
     padding-top: 0.2rem;
+}
+
+.xrefs > .xref {
+    .text {
+        display: block;
+        font-weight: bold;
+    }
+    margin-bottom: 0.6rem;
 }

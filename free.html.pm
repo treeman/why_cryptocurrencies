@@ -50,3 +50,4 @@ If you want you can try it out:
             (div ((class "address")) ,address)
             (img ((class "qr") (src ,qr))))))
 
+◊(list-xrefs)

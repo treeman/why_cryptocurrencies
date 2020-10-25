@@ -173,3 +173,4 @@ Well, the only advice I'll give is to understand what you're investing in, and m
      "https://nypost.com/2015/02/22/how-the-beanie-baby-craze-was-concocted-then-crashed/"
      "How the Beanie Baby craze was concocted — then crashed"))
 
+◊(list-xrefs)

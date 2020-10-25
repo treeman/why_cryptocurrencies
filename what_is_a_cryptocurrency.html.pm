@@ -23,3 +23,4 @@ Then I'll try to back up my claims that cryptocurrencies are like cash by discus
 ◊ndef["read-wp"]{
     The white paper is a good read, I recommend you look it up. If you prefer an annotated version or a podcast there are those as well.
 }
+◊(list-xrefs)

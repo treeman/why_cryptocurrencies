@@ -906,3 +906,4 @@ It doesn't matter who you are or where you are, you can always accept donations 
 ◊;https://news.ycombinator.com/item?id=19632449
 ◊;https://www.lrb.co.uk/v36/n05/andrew-ohagan/ghosting
 
+◊(list-xrefs)

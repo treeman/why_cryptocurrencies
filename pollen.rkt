@@ -30,6 +30,7 @@
   (require file/glob)
   (require pollen/setup)
   (require racket/runtime-path racket/path racket/set)
+  (require racket/pretty)
   (require "rkt/index.rkt")
 
   (provide (all-defined-out))

@@ -370,3 +370,4 @@ The drawback might be alleviated with optional systems in the future, giving us 
 ◊;https://chargeback.com/chargeback-process/
 ◊;https://chargeback.com/mastercard-chargeback-time-limits/
 
+◊(list-xrefs)

@@ -4,7 +4,7 @@
 (require xml)
 (require pollen/core pollen/tag pollen/decode txexpr)
 (require racket/match racket/string racket/list)
-(require racket/format)
+(require racket/format racket/pretty)
 (require racket/runtime-path)
 (require racket/port)
 (require libuuid)
@@ -48,6 +48,52 @@
     [_
      (error (format "bad link args: '~a'" args))]))
 
+(struct xref-s (url title qt text) #:mutable)
+(define ch-xrefs `())
+
+(define (clear-ch-xrefs)
+  ;(printf "clearing ch-xrefs: ~a~n" (length ch-xrefs))
+  (set! ch-xrefs `()))
+
+(define (clear-sidenotes)
+  (clear-sidenotes-impl)
+  (clear-ch-xrefs))
+
+(define (list-xrefs)
+  ;(printf "xrefs: ~a~n" (length ch-xrefs))
+  (define res
+    (if (= (length ch-xrefs) 0)
+      ""
+      `(div ((class "xrefs"))
+            ,@(map (λ (x)
+                      (define split (split-xref-title (xref-s-title x)))
+                      (define title (car split))
+                      (define accessed (cdr split))
+                      `(div ((class "xref"))
+                            (div ((class "text")) ,@(xref-s-text x))
+                            (div ((class "tit")) ,title)
+                            (div ((class "url")) ,(xref-s-url x))
+                            (div ((class "accessed")) ,accessed)
+                            ))
+                   ch-xrefs))))
+  ;(pretty-print res)
+  res)
+
+(define (split-xref-title title)
+  (if title
+    (match (regexp-match #rx"^(.+) (\\(Accessed:.+\\))$" title)
+      [(list _ x accessed)
+       (cons x accessed)]
+      [else
+        (cons title "")])
+    (cons "" "")))
+
+(module+ test
+  (require rackunit)
+
+  (check-equal? (split-xref-title "xyz abc (Accessed: 2012-01-01)")
+                (cons "xyz abc" "(Accessed: 2012-01-01)")))
+
 (define (make-link #:class [c #f] #:title [title #f] #:quote [qt #f] url . text)
   (unless (url? url)
     (error (format "bad link url: '~a'" url)))
@@ -59,7 +105,10 @@
               (string-append c " " x)
               x)))
   (if (xref? url)
-    (add-class "xref")
+    (begin
+      (add-class "xref")
+      ;(printf "xref ~v '~v' '~v' ~n" url title text)
+      (set! ch-xrefs (cons (xref-s url title qt text) ch-xrefs)))
     (unless (valid-iref? url)
       (add-class "invalid-iref")
       (printf "INVALID IREF '~v'~n" url)))

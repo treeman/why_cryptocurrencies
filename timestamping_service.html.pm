@@ -425,3 +425,4 @@ We now have a trusted timestamp for our message, backed by math instead of trust
                 "item?id=2275413"))))
      (figcaption ,@(std-decode caption))))
 
+◊(list-xrefs)

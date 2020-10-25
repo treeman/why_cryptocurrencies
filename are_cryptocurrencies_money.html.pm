@@ -342,3 +342,4 @@ While they are used as money in certain communities, they do not function well a
 
 I personally think cryptocurrencies is the best form of money we've ever seen, but they haven't reached their potential yet.
 
+◊(list-xrefs)

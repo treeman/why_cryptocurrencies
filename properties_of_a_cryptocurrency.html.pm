@@ -199,3 +199,4 @@ Cryptocurrencies are inherently global. They're usable wherever you are as long 
     "https://fullstacks.org/materials/ethereumbook/16_appdx-forks-history.html"
     "Ethereum Fork History"))
 
+◊(list-xrefs)

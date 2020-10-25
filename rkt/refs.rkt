@@ -24,7 +24,7 @@
     (error (format "empty date for url: '~a'" url)))
   (define alt-text
     (if date
-      (string-append title "\nAccessed " date)
+      (string-append title " (Accessed: " date ")")
       title))
   (when ref
     (set! url (string-append url "#" (to-name ref))))

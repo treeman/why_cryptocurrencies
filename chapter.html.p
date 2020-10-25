@@ -73,6 +73,7 @@
 
         ◊(->html (make-section-nav #:section-header? section-chapters-headers?
                                     here))
+
       </article>
 
       ◊(when side-space? (->html `(div ((class "side-space")))))

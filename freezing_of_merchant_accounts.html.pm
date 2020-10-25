@@ -206,3 +206,4 @@ With cryptocurrencies at least you have a choice and a possibility to avoid your
 ◊; Comic
 ◊;https://paypalsucks.org/toon1.shtml
 
+◊(list-xrefs)

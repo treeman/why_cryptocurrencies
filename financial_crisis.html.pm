@@ -426,3 +426,4 @@ Therefore the unhealthy "heads I win, tails I get bailed-out" incentives would r
 ◊note-pos[#:top -20]{print-digital}
 
 
+◊(list-xrefs)

@@ -273,3 +273,4 @@ Perfectly balanced, as all things should be.
      "2020-01-02"
      "https://inequality.org/facts/income-inequality/"
      "Income Inequality"))
+◊(list-xrefs)

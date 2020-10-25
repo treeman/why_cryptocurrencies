@@ -146,7 +146,11 @@ There's an important historical point to make about fiat. First used 1821 in the
     Like a lot of things we'll touch, whether the gold standard is preferable or not is ◊link[gold-debate]{hotly debated}.
 }
 
-◊(define gold-debate "https://www.thebalance.com/what-is-the-gold-standard-3306137")
+◊(define gold-debate
+  (x-ref
+    "2019-05-16"
+    "https://www.thebalance.com/what-is-the-gold-standard-3306137"
+    "What is the gold standard"))
 
 
 ◊subhead{Bartering, and why do we need money?}
@@ -338,7 +342,11 @@ To function as money money should have these properties:◊mn{money-props}
     What properties money should have also differs. Some list ◊em{stability in value} as a property, but I chose to go with ◊em{limited in supply} as I wanted to focus on intrinsic properties that don't change with time. Other ◊link[money-props]{popular descriptions} leave out ◊em{recognizable}, but I felt counterfeit-resistance is too important to leave out.
 }
 
-◊(define money-props "http://money.visualcapitalist.com/tag/properties-of-money/")
+◊(define money-props
+  (x-ref
+    "2019-05-16"
+    "http://money.visualcapitalist.com/tag/properties-of-money/"
+    "Properties of money"))
 
 ◊ol{
     ◊li{◊strong{Acceptable}
@@ -485,6 +493,8 @@ I see two major reasons:
 }
 
 In our context knowing what makes money perform well helps us reason about cryptocurrencies, and to see if they can live up to their namesake.
+
+◊(list-xrefs)
 
 ◊(define next-chapter are_cryptocurrencies_money)
 ◊(define rel-gold-standard `("#the-gold-standard" "The gold standard"))

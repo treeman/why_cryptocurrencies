@@ -59,3 +59,4 @@ If you want to go even further the white paper is also embedded in the blockchai
      "https://blockchair.com/bitcoin/whitepaper/"
      "Blockchair tracks white paper versions found online"))
 
+◊(list-xrefs)

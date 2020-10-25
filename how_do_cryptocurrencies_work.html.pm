@@ -612,3 +612,4 @@ In this chapter I've focused on high level understanding and I've skipped out on
 
 ◊(define next-chapter snake_oil)
 
+◊(list-xrefs)

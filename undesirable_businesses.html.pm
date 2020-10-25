@@ -260,3 +260,4 @@ But there are related problems cryptocurrencies can't solve. Banks serve a very 
 
 ◊;https://www.engadget.com/2015/12/02/paypal-square-and-big-bankings-war-on-the-sex-industry/?guccounter=1
 
+◊(list-xrefs)

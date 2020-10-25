@@ -178,3 +178,4 @@ Which scenario is more likely? And what would the ideal scenario look like? That
      "https://www.riksbank.se/en-gb/payments--cash/e-krona/"
      "E-krona"))
 
+◊(list-xrefs)

@@ -109,18 +109,23 @@ h4 {
 }
 
 a:link {
-    text-decoration: none;
-    @include a-background(#333);
+    text-decoration: solid;
+    background-color: $body-link-hover-color;
+}
+a:link.xref {
+    background-color: $body-xref-hover-color;
+}
+a:link.invalid-iref {
+    background-color: $body-link-hover-color;
 }
 
-@media screen and (-webkit-min-device-pixel-ratio: 0) {
-    a:link { background-position-y: 89%, 89%, 89%; }
-}
+// @media screen and (-webkit-min-device-pixel-ratio: 0) {
+//     a:link { background-position-y: 89%, 89%, 89%; }
+// }
 
-a:link::selection, a:link::-moz-selection {
-    @include a-text-shadow($body-selection-color);
-    background: $body-selection-color;
-}
+// a:link::selection, a:link::-moz-selection {
+//     background: $body-selection-color;
+// }
 
 a:link, a:visited {
     color: inherit;
@@ -128,14 +133,17 @@ a:link, a:visited {
 a:hover {
     //@include a-background($body-link-hover-color);
     background: none;
+    background-color: none;
     shadow: none;
     color: $body-link-hover-color;
 }
 a:hover.xref {
     color: $body-xref-hover-color;
+    background: none;
 }
 a:hover.invalid-iref {
     color: $body-invalid-iref-hover-color;
+    background: none;
 }
 
 

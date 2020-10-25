@@ -206,3 +206,4 @@ With cryptocurrencies we just might have that, for better or worse...
      "https://www.dancarlin.com/hardcore-history-60-the-celtic-holocaust/"
      "Dan Carlin's The Celtic Holocaust"))
 
+◊(list-xrefs)

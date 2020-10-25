@@ -5,3 +5,4 @@
 ◊(make-toc toc)
 
 
+◊(list-xrefs)

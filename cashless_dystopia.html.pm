@@ -266,3 +266,4 @@ This is why cryptocurrencies are sometimes called "digital cash"; they combine t
 ◊; Debate rages in Austria over enshrining use of cash in the constitution
 ◊; https://www.euractiv.com/section/data-protection/news/debate-rages-in-austria-over-enshrining-use-of-cash-in-the-constitution/
 
+◊(list-xrefs)
