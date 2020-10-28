@@ -29,67 +29,67 @@
   (book-ref
     "https://www.goodreads.com/book/show/316767.The_Box"
     "Marc Levinson"
-    "Goodreads: The Box"))
+    "The Box"))
 (define shock-of-the-old-book
   (book-ref
     "https://www.goodreads.com/book/show/327488.The_Shock_of_the_Old"
     "David Edgerton"
-    "Goodreads: The Shock of the Old"))
+    "The Shock of the Old"))
 (define the-big-short-book
   (book-ref
     "https://www.goodreads.com/book/show/26889576-the-big-short"
     "Michael Lewis"
-    "Goodreads: The Big Short: Inside the Doomsday Machine"))
+    "The Big Short: Inside the Doomsday Machine"))
 (define after-the-music-stopped-book
   (book-ref
     "https://www.goodreads.com/book/show/15811560-after-the-music-stopped"
     "Alan S. Blinder"
-    "Goodreads: After the Music Stopped"))
+    "After the Music Stopped"))
 (define thinking-fast-and-slow-book
   (book-ref
     "https://www.goodreads.com/book/show/11468377-thinking-fast-and-slow"
     "Daniel Kahneman"
-    "Goodreads: Thinking, Fast and Slow"))
+    "Thinking, Fast and Slow"))
 (define case-against-fed-book
   (book-ref
     "https://www.goodreads.com/book/show/81976.The_Case_Against_the_Fed"
-    "The Case Against the Fed"
-    "Goodreads: Murray N. Rothbard"))
+    "Murray N. Rothbard"
+    "The Case Against the Fed"))
 (define 1984-book
   (book-ref
     "https://www.goodreads.com/book/show/40961427-1984"
     "George Orwell"
-    "Goodreads: 1984"))
+    "1984"))
 (define antifragile-book
   (book-ref
     "https://www.goodreads.com/book/show/13530973-antifragile"
     "Nassim Nicholas Taleb"
-    "Goodreads: Antifragile: Things That Gain from Disorder"))
+    "Antifragile: Things That Gain from Disorder"))
 (define permanent-record-book
   (book-ref
     "https://www.goodreads.com/book/show/46223297-permanent-record"
     "Edward Snowden"
-    "Goodreads: Permanent Record"))
+    "Permanent Record"))
 (define animal-farm-book
   (book-ref
     "https://www.goodreads.com/book/show/170448.Animal_Farm"
     "George Orwell"
-    "Goodreads: Animal Farm"))
+    "Animal Farm"))
 (define code-breakers-book
   (book-ref
     "https://www.goodreads.com/book/show/29608.The_Codebreakers"
     "David Kahn"
-    "Goodreads: The Codebreakers"))
+    "The Codebreakers"))
 (define thirst-book
   (book-ref
     "https://www.charitywater.org/thirst"
     "Scott Harrison"
-    "Scott Harrison () Thirst"))
+    "Thirst"))
 (define mastering-monero-book
   (book-ref
     "https://masteringmonero.com/"
     "SerHack"
-    "SerHack: Mastering Monero"))
+    "Mastering Monero"))
 
 ;; Defs
 
