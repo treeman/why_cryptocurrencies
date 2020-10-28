@@ -28,7 +28,7 @@ I know I wrote in ◊link[about-the-book]{an early chapter} that this book would
    (x-ref
      "2019-12-15"
      "https://weeklyglobalresearch.wordpress.com/2018/05/12/darknet-markets-and-the-shadow-economy/"
-     "Darknet Markets and the Shadow Economy"))
+     "Lee Banfield (2018) Darknet Markets and the Shadow Economy"))
 
 
 ◊subhead{Legality isn't morality}
@@ -108,12 +108,12 @@ Black markets aren't inherently evil and sometimes they're even necessary for ou
    (x-ref
      "2019-12-15"
      "https://www.investopedia.com/terms/b/blackmarket.asp"
-     "Black Market"))
+     "Will Kenton: Black Market"))
 ◊(define greece-black-markets
    (x-ref
      "2019-12-15"
      "https://www.nytimes.com/2017/02/18/world/europe/greece-bailout-black-market.html"
-     "Greeks Turn to the Black Market as Another Bailout Showdown Looms"))
+     "Liz Alderman (2017) Greeks Turn to the Black Market as Another Bailout Showdown Looms"))
 
 
 ◊subhead{What can you buy on a darknet market?}
@@ -134,7 +134,7 @@ So if none of those things are available, what can you buy on a darknet market? 
    (x-ref
      "2019-12-15"
      "https://www.wired.co.uk/article/kill-list-dark-web-hitmen"
-     "The unbelievable tale of a fake hitman, a kill list, a darknet vigilante... and a murder"))
+     "Gian Volpicelli (2018) The unbelievable tale of a fake hitman, a kill list, a darknet vigilante... and a murder"))
 ◊(define freeross
    (x-ref
      "2019-12-15"
@@ -144,7 +144,7 @@ So if none of those things are available, what can you buy on a darknet market? 
    (x-ref
      "2019-12-15"
      "https://www.theguardian.com/society/2018/dec/01/dark-web-dealers-voluntary-ban-deadly-fentanyl"
-     "Dark web dealers voluntarily ban deadly fentanyl"))
+     "Mark Townsend (2018) Dark web dealers voluntarily ban deadly fentanyl"))
 
 
 ◊subhead{A darknet story}
@@ -186,7 +186,7 @@ The following example, based on a real-life story I read a few years ago, illust
    (x-ref
      "2019-12-15"
      "https://edition.cnn.com/2018/05/11/health/most-expensive-prescription-drugs/index.html"
-     "The 5 most expensive drugs in the United States (2018)"))
+     "Jen Christensen (2018) The 5 most expensive drugs in the United States"))
 
 While the story is made up, the situation is real. Medicine in the U.S. can be ◊link[expensive-cancer-drugs]{◊strong{extremely expensive}}, and the cost isn't something all families can bear.◊mn{insurance} The same medicine that will ruin you financially is often available for a fraction of the cost from darknet markets.
 
@@ -208,7 +208,7 @@ I'd imagine most would say yes, they would do anything to save her. While there 
    (x-ref
      "2019-12-15"
      "https://health.usnews.com/health-care/for-better/articles/2017-07-13/5-ways-insurance-companies-meddle-in-your-health-care"
-     "5 Ways Insurance Companies Meddle in Your Health Care"))
+     "Seth D. Ginsberg (2017) 5 Ways Insurance Companies Meddle in Your Health Care"))
 
 
 ◊; https://weeklyglobalresearch.wordpress.com/2018/05/12/darknet-markets-and-the-shadow-economy/

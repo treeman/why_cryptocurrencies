@@ -71,22 +71,22 @@ Bitcoin just doesn't work well as a currency with these high and unreliable fees
   (x-ref
     "2019-06-03"
     "https://medium.com/@johnblocke/the-fee-market-myth-b9d189e45096"
-    "The Fee Market Myth"))
+    "John Blocke (2016) The Fee Market Myth"))
 ◊(define median-tx-fee
   (x-ref
     "2019-05-25"
     "https://bitinfocharts.com/comparison/median_transaction_fee-btc-ltc-bch-xmr-doge.html"
-    "Bitcoin, Litecoin, Bitcoin Cash, Monero, Dogecoin Median Transaction Fee historical chart"))
+    "BitInfoCharts: Bitcoin, Litecoin, Bitcoin Cash, Monero, Dogecoin Median Transaction Fee historical chart"))
 ◊(define median-tx-fee-monero
   (x-ref
     "2019-05-25"
     "https://www.monero.how/monero-transaction-fees"
-    "How much are Monero transaction fees?"))
+    "Monero.how: How much are Monero transaction fees?"))
 ◊(define nullc-champaign
   (x-ref
     "2019-06-03"
     "https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2017-December/015455.html"
-    "[bitcoin-dev] Total fees have almost crossed the block reward"))
+    "Gregory Maxwell (2017) Total fees have almost crossed the block reward"))
 
 
 ◊subhead{Who pays the fees?}
@@ -105,7 +105,7 @@ That's because you as a customer don't see the high fees---but the merchant does
   (x-ref
     "2019-06-03"
     "http://ir.kroger.com/file/Index?KeyFile=396935873"
-    "Kroger Announces Second Division to Stop Accepting Visa Credit Cards Due to Excessive Transaction Fees"))
+    "Kroger (2019) Kroger Announces Second Division to Stop Accepting Visa Credit Cards Due to Excessive Transaction Fees"))
 
 
 ◊subhead{Fee comparisons}
@@ -165,27 +165,27 @@ As the ◊link[what_is_money]{purpose of money} is to increase economic efficien
   (x-ref
     "2019-06-03"
     "https://www.creditdonkey.com/credit-card-processing-fees.html"
-    "Credit Card Processing Fees: What You Need to Know"))
+    "Kim P, personal finance expert at CreditDonkey: Credit Card Processing Fees: What You Need to Know"))
 ◊(define card-fees
   (x-ref
     "2019-06-03"
     "https://www.cardfellow.com/blog/average-fees-for-credit-card-processing/"
-    "We get this question a lot here at CardFellow: “What’s the average credit card processing fee for a [insert your business type here] business?” There are easy answers to this question, and then there are the right answers."))
+    "Ben Dwyer: Average Credit Card Processing Fees"))
 ◊(define wire-transfer-fees
   (x-ref
     "2019-06-03"
     "https://www.nerdwallet.com/blog/banking/wire-transfers-what-banks-charge/"
-    "Wire Transfers: What Banks Charge"))
+    "Spencer Tierney (2019) Wire Transfers: What Banks Charge"))
 ◊(define paypal-fees
   (x-ref
     "2019-06-03"
     "https://www.paypal.com/us/webapps/mpp/paypal-fees"
-    "Credit Card Fees, Send Money Fees & Other Charges - PayPal US"))
+    "PayPal: Credit Card Fees, Send Money Fees & Other Charges - PayPal US"))
 ◊(define swish
   (x-ref
     "2019-06-03"
     "https://www.getswish.se/foretag/vara-erbjudanden/"
-    "Get started with Swish (Swedish), the fees are different depending on your bank"))
+    "Swish: Get started with Swish"))
 
 
 ◊subhead{Payment speed}
@@ -200,7 +200,7 @@ Shifting focus a little, let's take a look at payment speed. We can identify dif
   (x-ref
     "2019-06-03"
     "http://blog.unibulmerchantservices.com/how-visas-payment-system-works/"
-    "How Visa’s Payment System Works"))
+    "UniBul: How Visa’s Payment System Works"))
 
 ◊ol{
     ◊li{Notification}
@@ -242,12 +242,12 @@ This can be a big problem for some merchants, especially those ◊link[fraud-dig
   (x-ref
     "2019-06-03"
     "https://chargebacks911.com/knowledge-base/chargeback-fees/"
-    "Growing Cost of Fraud For Digital Goods"))
+    "Chargebacks 911: Chargeback Fees"))
 ◊(define fraud-digital
   (x-ref
     "2019-06-03"
     "https://chargeback.com/growing-cost-of-fraud-for-digital-goods/"
-    "Chargeback Fees"))
+    "Sydney Vaccaro (2018) Growing Cost of Fraud For Digital Goods"))
 
 ◊ndef["bank-chargeback"]{
     It's also common that banks are the ones who have to eat the cost of the fraud.
@@ -270,7 +270,7 @@ A unique property of cryptocurrencies is they ◊link[transaction-security]{beco
   (x-ref
     "2019-06-03"
     "https://chargeback.com/mastercard-chargeback-time-limits/"
-    "MasterCard Chargeback Time Limits"))
+    "Emily Vuitton (2016) MasterCard Chargeback Time Limits"))
 
 ◊figure{
     ◊table-body{

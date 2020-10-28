@@ -72,7 +72,11 @@ Counterfeiting means everyones savings---the "old" money---will lose value. This
     ◊link[inflation-dollar-visualization]{Here's a cool visualization} of the expanding money supply and what $1 could buy.
 }
 
-◊(define inflation-dollar-visualization "http://money.visualcapitalist.com/buying-power-us-dollar-century/")
+◊(define inflation-dollar-visualization 
+   (x-ref
+     "2019-11-13"
+     "http://money.visualcapitalist.com/buying-power-us-dollar-century/"
+     "The Money Project: The Buying Power of the U.S. Dollar Over the Last Century"))
 
 ◊img[#:src "images/inflation.svg" #:link #t #:alt "The inflation in Sweden between 1960 and 2018."]{
     How the ◊link[swe-inflation]{inflation in Sweden} has caused the actual value of money to decrease.◊mn{why-sweden?}  
@@ -90,12 +94,12 @@ Counterfeiting means everyones savings---the "old" money---will lose value. This
    (x-ref
      "2019-11-13"
      "https://data.worldbank.org/indicator/FP.CPI.TOTL?locations=US-SE-XC"
-     "Consumer price index (2010 = 100) - United States, Sweden, Euro area"))
+     "The World Bank: Consumer price index (2010 = 100) - United States, Sweden, Euro area"))
 ◊(define swe-inflation
    (x-ref
      "2019-11-13"
      "https://data.worldbank.org/indicator/FP.CPI.TOTL.ZG?locations=SE"
-     "Inflation, consumer prices (annual %) - Sweden"))
+     "The World Bank: Inflation, consumer prices (annual %) - Sweden"))
 
 Counterfeiting also means redistributing wealth from everyone to the counterfeiter (and to a lesser extent people the counterfeiter buys from) at the same rate as the inflation eats up the value of money. Even though nobody's stealing your money, the effect is the same: your wealth relative to others will decrease.
 
@@ -111,7 +115,7 @@ Counterfeiting also means redistributing wealth from everyone to the counterfeit
    (x-ref
      "2019-11-13"
      "https://murdoch.is/projects/currency/"
-     "Software Detection of Currency"))
+     "Steven J. Murdoch (2004) Software Detection of Currency"))
 
 ◊ndef["case-against-fed"]{
     A similar example was given by Murray N. Rothbard in ◊(book-link case-against-fed-book).
@@ -139,7 +143,7 @@ The central banks---the Federal Reserve (Fed) in the U.S. or the European Centra
    (x-ref
      "2019-11-13"
      "https://www.investopedia.com/terms/q/quantitative-easing.asp"
-     "Quantitative Easing (QE)"))
+     "Gordon Scott: Quantitative Easing (QE)"))
 
 Although the central banks are ultimately responsible, it's the regular banks who expand the money supply the most. It's done via ◊def[fractional-banking]{fractional banking} which works like this:
 
@@ -177,9 +181,15 @@ There is now ◊sans-tnum{11 000} money circulating the system. Because an IOU i
 ◊qt[#:author "Lloyd"
     #:src "Dumb and Dumber (1994)"
     #:quote-src #t
-    #:url "https://www.imdb.com/title/tt0109686/"]{
+    #:url dumb-n-dumber]{
     That’s as good as money, sir. Those are I.O.U.s.
 }
+
+◊(define dumb-n-dumber
+   (x-ref
+     "2019-11-13"
+     "https://www.imdb.com/title/tt0109686/"
+     "IMDb: Dumb and Dumber (1994)"))
 
 We might wonder, why stop at only printing ◊sans-tnum{10 000 SEK}? Why not ◊sans-tnum{100 000 SEK}? Or more? When the bank gives out IOUs they do need to repay them, otherwise they'll fail and become bankrupt. In the example above if Jane would withdraw ◊sans-tnum{2 000 SEK} the bank would fail, because it can only repay ◊sans-tnum{1 000 SEK}.
 
@@ -195,17 +205,17 @@ The system works as long as people just keep their money at the bank, and only o
    (x-ref
      "2019-11-13"
      "https://www.thebalance.com/inflation-targeting-definition-how-it-works-3305854"
-     "Inflation Targeting and How It Works"))
+     "Kimberly Amadeo: Inflation Targeting and How It Works"))
 ◊(define fractional-banking
    (x-ref
      "2019-11-13"
      "https://corporatefinanceinstitute.com/resources/knowledge/finance/fractional-banking/"
-     "Fractional Banking: Portion of total deposits held as reserves"))
+     "Corporate Finance Institute: Fractional Banking: Portion of total deposits held as reserves"))
 ◊(define minium-reserve-req
    (x-ref
      "2019-11-13"
      "https://www.ecb.europa.eu/explainers/tell-me/html/minimum_reserve_req.en.html"
-     "What are minimum reserve requirements?"))
+     "European Central Bank (2016) What are minimum reserve requirements?"))
 ◊(define bank-run
    (x-ref
      "2019-11-13"
@@ -215,7 +225,7 @@ The system works as long as people just keep their money at the bank, and only o
    (x-ref
      "2019-11-13"
      "https://www.fi.se/contentassets/67c0bdcc4ddf4d1dbea616cb48fb1f01/kapitalkrav-sv-banker-2019-kv2_eng.pdf"
-     "Capital requirements forthe Swedish banks,secondquarter 2019"))
+     "Finansinspektionen (2019) Capital requirements forthe Swedish banks,secondquarter 2019"))
 
 
 ◊subhead{Lender of last resort}
@@ -273,17 +283,17 @@ While it's difficult to point out causes, and it's even debatable why we got out
    (x-ref
      "2019-11-13"
      "https://www.theatlantic.com/business/archive/2012/11/the-long-story-of-us-debt-from-1790-to-2011-in-1-little-chart/265185/"
-     "The Long Story of U.S. Debt, From 1790 to 2011, in 1 Little Chart"))
+     "Matt Phillips (2012) The Long Story of U.S. Debt, From 1790 to 2011, in 1 Little Chart"))
 ◊(define new-deal-conservative
    (x-ref
      "2019-11-13"
      "https://www.nytimes.com/2008/11/23/business/23view.html?_r=0"
-     "The New Deal Didn’t Always Work, Either"))
+     "Tyler Cowen (2008) The New Deal Didn’t Always Work, Either"))
 ◊(define gold-illegal
    (x-ref
      "2019-11-13"
      "https://www.moneymetals.com/resources/executive-order-6102"
-     "The Gold Confiscation Of April 5, 1933"))
+     "Money Metals Exchange: The Gold Confiscation Of April 5, 1933"))
 
 These align with the ideas of ◊link[keynesian-economics]{Keynesian Economics} (also developed in the 1930s) where governments should stimulate the economy during recessions, and compensate by pulling back when the economy's expanding. The rationale is that the ◊def[velocity-money]{velocity of money} (how fast companies and people spend money) will slow down during a recession, making it worse. Therefore the government should increase their spending---increasing the velocity of money---to help dampen the recession.
 
@@ -297,17 +307,18 @@ Seen through this lens, it all makes sense. To help the government spend money i
    (x-ref
      "2019-11-13"
      "https://www.investopedia.com/terms/v/velocity.asp"
-     "Velocity of Money"))
+     "James Chen: Velocity of Money"))
 ◊(define nixon-shock
    (x-ref
      "2019-11-13"
      "https://www.investopedia.com/terms/n/nixon-shock.asp"
-     "Nixon Shock"))
+     "Will Kenton: Nixon Shock"))
 ◊(define new-deal
    (x-ref
      "2019-11-13"
      "https://www.thebalance.com/fdr-and-the-new-deal-programs-timeline-did-it-work-3305598"
-     "New Deal Summary, Programs, Policies, and Its Success"))
+     "Kimberly Amadeo, Michael J Boyle: New Deal Summary, Programs, Policies, and Its Success"))
+
 
 ◊; While it would feel good if I condemned the state of affairs completely, and say that 
 
@@ -319,7 +330,7 @@ Seen through this lens, it all makes sense. To help the government spend money i
    (x-ref
      "2019-11-13"
      "https://www.thebalance.com/keynesian-economics-theory-definition-4159776"
-     "Keynesian Economics Theory"))
+     "Kimberly Amadeo, Thomas J. Brock: Keynesian Economics Theory"))
 
 
 ◊subhead{A mountain of debt}
@@ -360,32 +371,32 @@ It seems like we're moving away from the original Keynesian ideas to something e
    (x-ref
      "2019-11-13"
      "https://www.investopedia.com/terms/d/debtgdpratio.asp"
-     "Debt-to-GDP Ratio Definition"))
+     "Will Kenton: Debt-to-GDP Ratio Definition"))
 ◊(define gdp
    (x-ref
      "2019-11-13"
      "https://www.investopedia.com/terms/g/gdp.asp"
-     "Gross Domestic Product—GDP"))
+     "Investopedia: Gross Domestic Product—GDP"))
 ◊(define national-debt-list
    (x-ref
      "2019-11-13"
      "https://countryeconomy.com/national-debt"
-     "General government gross debt"))
+     "countryeconomy.com: General government gross debt"))
 ◊(define interest-us-debt
    (x-ref
      "2019-11-13"
      "https://www.thebalance.com/interest-on-the-national-debt-4119024"
-     " Interest on the National Debt and How It Affects You "))
+     "Kimberly Amadeo: Interest on the National Debt and How It Affects You "))
 ◊(define us-budget-2020
    (x-ref
      "2019-11-13"
      "https://www.thebalance.com/u-s-federal-budget-breakdown-3305789"
-     " US Federal Budget Breakdown 2020"))
+     "US Federal Budget Breakdown 2020"))
 ◊(define public-debt
    (x-ref
      "2019-11-13"
      "https://www.thebalance.com/what-is-the-public-debt-3306294"
-     "Public Debt With Its Pros and Cons"))
+     "Kimberly Amadeo: What Is the Public Debt, and When Is It Too High?"))
 ◊(define usa-national-debt
    (x-ref
      "2020-09-21"
@@ -395,7 +406,7 @@ It seems like we're moving away from the original Keynesian ideas to something e
    (x-ref
      "2019-11-13"
      "https://www.washingtonpost.com/politics/in-turmoil-or-triumph-donald-trump-stands-alone/2016/04/02/8c0619b6-f8d6-11e5-a3ce-f06b5ba21f33_story.html?utm_term=.d6b42cbf9b8c"
-     "In a revealing interview, Trump predicts a ‘massive recession’ but intends to eliminate the national debt in 8 year"))
+     "Bob Woodward, Robert Costa (2016) In a revealing interview, Trump predicts a ‘massive recession’ but intends to eliminate the national debt in 8 year"))
 ◊(define trump-debt
    (x-ref
      "2019-11-13"
@@ -405,7 +416,7 @@ It seems like we're moving away from the original Keynesian ideas to something e
    (x-ref
      "2019-11-13"
      "https://www.theguardian.com/business/2018/aug/22/wall-street-record-longest-rally-history-bull-market"
-     "Wall Street sets record for longest bull run in history"))
+     "Richard Partington (2018) Wall Street sets record for longest bull run in history"))
 
 
 ◊subhead{Growing inequality}
@@ -501,7 +512,7 @@ To be fair, the Federal Reserve knows this isn't an ideal situation, so they tri
    (x-ref
      "2019-11-13"
      "https://www.newyorkfed.org/markets/opolicy/operating_policy_190920"
-     "Federal Reserve of New York: Statement Regarding Repurchase Operations, September 20, 2019"))
+     "Federal Reserve of New York (2019) Statement Regarding Repurchase Operations"))
 
 So we're stuck in a situation where we don't have the tools to defend against a recession---tools the economic theory the system is built on needs. Tools that have been used up, because that's what the theory says we should do.◊mn{winging-it}
 
@@ -519,22 +530,22 @@ It seems to me if (or when) a recession comes we'll get caught with our pants do
    (x-ref
      "2019-11-13"
      "https://www.riksbank.se/en-gb/about-the-riksbank/history/2000-2018/negative-repo-rate-is-introduced/"
-     "2015 - Negative repo rate is introduced"))
+     "Sveriges Riksbank (2015) Negative repo rate is introduced"))
 ◊(define denmark-neg-rate
    (x-ref
      "2019-11-13"
      "https://www.reuters.com/article/denmark-rates-jyske-bank/update-1-denmarks-jyske-bank-lowers-its-negative-rates-on-deposits-idUSL5N26B1AA"
-     "1-Denmark's Jyske Bank lowers its negative rates on deposits"))
+     "Reuters (2019) 1-Denmark's Jyske Bank lowers its negative rates on deposits"))
 ◊(define hyperinflation-rome
    (x-ref
      "2019-11-13"
      "https://notesonliberty.com/2019/09/16/hyperinflation-and-trust-in-ancient-rome/"
-     "Hyperinflation and trust in Ancient Rome"))
+     "Kevin Kallmes (2019) Hyperinflation and trust in Ancient Rome"))
 ◊(define fed-pouring
    (x-ref
      "2019-11-13"
      "http://archive.is/PbCtz"
-     "archived: Why is the Federal Reserve pouring money into the financial system?"))
+     "Joe Rennison (2019) Why is the Federal Reserve pouring money into the financial system?"))
 
 
 ◊subhead{The stock market magic trick}
@@ -566,17 +577,17 @@ Nothing fundamentally changed. The deep-rooted economic problems are still there
    (x-ref
      "2020-10-01"
      "https://www.investopedia.com/articles/02/041702.asp"
-     "Stock Buybacks: A Breakdown"))
+     "Investopedia: Stock Buybacks: A Breakdown"))
 ◊(define m2
    (x-ref
      "2020-10-01"
      "https://fred.stlouisfed.org/series/M2"
-     "M2 Money Stock"))
+     "Federal Reserve Bank of St. Louis: M2 Money Stock"))
 ◊(define m2-def
    (x-ref
      "2020-10-01"
      "https://www.investopedia.com/terms/m/m2.asp"
-     "M2 Definition"))
+     "Investopedia: M2 Definition"))
 
 
 
@@ -603,15 +614,15 @@ It’s not easy to see how a switch to sound money would occur and such a switch
    (x-ref
      "2019-11-13"
      "https://www.investopedia.com/terms/d/debasement.asp"
-     "Debasement"))
+     "Clay Halton (2019) Debasement"))
 ◊(define mmt
    (x-ref
      "2019-11-13"
      "https://www.bloomberg.com/news/features/2019-03-21/modern-monetary-theory-beginner-s-guide"
-     "Warren Buffett Hates It. AOC Is for It. A Beginner’s Guide to Modern Monetary Theory"))
+     "Peter Coy, Katia Dmitrieva, Matthew Boesler (2019) Warren Buffett Hates It. AOC Is for It. A Beginner’s Guide to Modern Monetary Theory"))
 ◊(define mmt-true
    (x-ref
      "2019-11-13"
      "https://www.forbes.com/sites/nathanlewis/2019/02/21/the-problem-with-modern-monetary-theory-is-that-its-true/"
-     "The Problem With \"Modern Monetary Theory\" Is That It's True"))
+     "Nathan Lewis (2019) The Problem With \"Modern Monetary Theory\" Is That It's True"))
 

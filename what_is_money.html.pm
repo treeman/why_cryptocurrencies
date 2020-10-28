@@ -146,7 +146,11 @@ There's an important historical point to make about fiat. First used 1821 in the
     Like a lot of things we'll touch, whether the gold standard is preferable or not is ◊link[gold-debate]{hotly debated}.
 }
 
-◊(define gold-debate "https://www.thebalance.com/what-is-the-gold-standard-3306137")
+◊(define gold-debate
+  (x-ref
+    "2019-05-16"
+    "https://www.thebalance.com/what-is-the-gold-standard-3306137"
+    "Kimberley Amadeo: History of the Gold Standard"))
 
 
 ◊subhead{Bartering, and why do we need money?}
@@ -219,8 +223,8 @@ While this might on the surface explain why fiat currencies are valuable, it fai
   (x-ref
     "2019-05-16"
     "https://www.investopedia.com/terms/f/federalreservebank.asp"
-    "Federal Reserve System (FRS)"))
-◊(define ecb 
+    "James Chen: Federal Reserve System (FRS)"))
+◊(define ecb
   (x-ref
     "2019-05-16"
     "https://www.ecb.europa.eu/home/html/index.en.html"
@@ -245,7 +249,7 @@ It might sound too simplistic or like a tautology. But what it means is there's 
   (x-ref
     "2019-05-16"
     "https://www.thepennyhoarder.com/smart-money/hoarding-nickels-pocket-change-might-worth-think/"
-    "Hoarding Nickels: Why Your Pocket Change Might Be Worth More Than You Think"))
+    "Owen Ferguson (2019) Hoarding Nickels: Why Your Pocket Change Might Be Worth More Than You Think"))
 
 For instance medicine can be extremely valuable for those who needs it, but have little value to others. So if you have the medicine, but don't need it, you'll gladly sell. But someone who needs it would be reluctant to sell, unless for a very high price.
 
@@ -306,7 +310,7 @@ Medium of exchange is the ◊link[most-important]{most important} defining prope
   (x-ref
     "2019-05-16"
     "https://mises.org/library/mises-basics-money"
-    "Mises on the Basics of Money"))
+    "Dan Sanchez (2012) Mises on the Basics of Money"))
 
 Note that these are functions of usage and adoption. For instance if something has been a store of value a period of time it doesn't mean it will continue to be a good store of value in the future.◊mn{gold-sov}
 
@@ -327,7 +331,7 @@ As seen from historical examples I think it's safe to conclude that yes, basical
   (x-ref
     "2019-05-16"
     "https://www.macrotrends.net/1333/historical-gold-prices-100-year-chart"
-    "Gold Prices - 100 Year Historical Chart"))
+    "Macrotrends: Gold Prices - 100 Year Historical Chart"))
 
 
 ◊subhead{What properties does good money have?}
@@ -338,7 +342,11 @@ To function as money money should have these properties:◊mn{money-props}
     What properties money should have also differs. Some list ◊em{stability in value} as a property, but I chose to go with ◊em{limited in supply} as I wanted to focus on intrinsic properties that don't change with time. Other ◊link[money-props]{popular descriptions} leave out ◊em{recognizable}, but I felt counterfeit-resistance is too important to leave out.
 }
 
-◊(define money-props "http://money.visualcapitalist.com/tag/properties-of-money/")
+◊(define money-props
+  (x-ref
+    "2019-05-16"
+    "http://money.visualcapitalist.com/tag/properties-of-money/"
+    "The Money Project: Properties of money"))
 
 ◊ol{
     ◊li{◊strong{Acceptable}
@@ -494,7 +502,7 @@ In our context knowing what makes money perform well helps us reason about crypt
   (x-ref
     "2019-05-16"
     "https://fee.org/articles/the-fallacy-of-intrinsic-value/"
-    "The Fallacy of \"Intrinsic Value\"2019-05-16"))
+    "Gary North (1969) The Fallacy of \"Intrinsic Value\""))
 ◊(define germany-notes
   (x-ref
     "2019-05-16"
@@ -504,72 +512,72 @@ In our context knowing what makes money perform well helps us reason about crypt
   (x-ref
     "2019-05-16"
     "https://www.nbbmuseum.be/en/2007/01/cowry-shells.htm"
-    "Cowry Shells, a trade currency "))
+    "Ingrid Van Damme (2007) Cowry Shells, a trade currency"))
 ◊(define shell-usage
   (x-ref
     "2019-05-16"
     "https://www.culturesofwestafrica.com/cowrie-shell-monetary-symbolic-value/"
-    "The Cowrie Shell: Monetary and Symbolic Value"))
+    "Mia Sogoba (2018) The Cowrie Shell: Monetary and Symbolic Value"))
 ◊(define ancient-greece-coinage
   (x-ref
     "2019-05-16"
     "https://www.ancient.eu/Greek_Coinage/"
-    "Ancient Greek Coinage"))
+    "Mark Cartwright (2016) Ancient Greek Coinage"))
 ◊(define rai-stones
   (x-ref
     "2019-05-16"
     "http://www.bbc.com/travel/story/20180502-the-tiny-island-with-human-sized-money"
-    "The tiny island with human-sized money"))
+    "Robert Michael Poole (2018) The tiny island with human-sized money"))
 ◊(define rai-stones-pictures
   (x-ref
     "2019-05-16"
     "https://www.thevintagenews.com/2017/12/28/rai-stones/"
-    "The Rai Stones are huge stone wheels used as currency on the island of Yap"))
+    "Boban Docevski (2017) The Rai Stones are huge stone wheels used as currency on the island of Yap"))
 ◊(define germany-wallpaper
   (x-ref
     "2019-05-16"
     "https://mashable.com/2016/07/27/german-hyperinflation/"
-    "Hyperinflation in Germany"))
+    "Alex Q. Arbuckle (2016) Hyperinflation in Germany"))
 ◊(define prison-stamps
   (x-ref
     "2019-05-16"
     "https://www.therichest.com/business/economy/five-surprising-things-prisoners-use-as-currency/"
-    "Five Suprising Things Prisoners Use As Currency"))
+    "Matt Davis (2014) Five Suprising Things Prisoners Use As Currency"))
 ◊(define prison-ramen
   (x-ref
     "2019-05-16"
     "https://www.npr.org/sections/thesalt/2016/08/26/491236253/ramen-noodles-are-now-the-prison-currency-of-choice?t=1557205041822"
-    "Ramen Noodles Are Now The Prison Currency Of Choice"))
+    "Maria Godoy (2016) Ramen Noodles Are Now The Prison Currency Of Choice"))
 ◊(define prison-cigarettes
   (x-ref
     "2019-05-16"
     "https://www.cengage.com/economics/tomlinson/transcripts/8520.pdf"
-    "Case Study: Cigarettes as Money"))
+    "Steven Tomlinson: Case Study: Cigarettes as Money"))
 ◊(define fractional-banking-atlanta
   (x-ref
     "2019-05-16"
     "https://www.frbatlanta.org/education/classroom-economist/fractional-reserve-banking/economists-perspective-transcript"
-    "Fractional Reserve Banking - An Economist's Perspective (Transcript)"))
+    "Federal Reserve Bank of Atlanda: Fractional Reserve Banking - An Economist's Perspective (Transcript)"))
 ◊(define fractional-banking-bad
   (x-ref
     "2019-05-16"
     "https://mises.org/library/faults-fractional-reserve-banking"
-    "The Faults of Fractional-Reserve Banking"))
+    "Thorsten Polleit (2010) The Faults of Fractional-Reserve Banking"))
 ◊(define largest-coin
   (x-ref
     "2019-05-16"
     "https://www.riksbank.se/en-gb/about-the-riksbank/history/1600-1699/the-worlds-largest-coin/"
-    "1644 - The world's largest coin"))
+    "Sveriges Riksbank: 1644 - The world's largest coin"))
 ◊(define state-theory-of-money
   (x-ref
     "2019-05-16"
     "https://socialsciences.mcmaster.ca/econ/ugcm/3ll3/knapp/StateTheoryMoney.pdf"
-    "The State Theory of Money (1924)"))
+    "Georg Friedrich Knapp (1924) The State Theory of Money"))
 ◊(define subjective-theory-of-value
   (x-ref
     "2019-05-16"
     "https://wiki.mises.org/wiki/Subjective_theory_of_value"
-    "Subjective theory of value"))
+    "Mises Wiki: Subjective theory of value"))
 
 ◊; http://money.visualcapitalist.com/infographic-the-properties-of-money/
 ◊; https://www.aier.org/

@@ -9,10 +9,18 @@
 ◊(clear-sidenotes)
 
 ◊epigraph{
-  ◊qt[#:author "Gabriel Santiago" #:src "Android Netrunner" #:quote-src #t #:url "https://netrunnerdb.com/en/card/01017"]{
+  ◊qt[#:author "Gabriel Santiago"
+      #:src "Android Netrunner" #:quote-src #t
+      #:url gabriel]{
     Of course I steal from the rich. They’re the ones with all the money.
   }
 }
+
+◊(define gabriel
+   (x-ref
+     "2020-10-27"
+     "https://netrunnerdb.com/en/card/01017"
+     "Android Netrunner (2012) Gabriel Santiago"))
 
 ◊; To read:
 ◊; https://news.ycombinator.com/item?id=21872987
@@ -31,7 +39,7 @@ This is actually a great description of how cryptocurrencies work. You just need
    (x-ref
      "2020-01-02"
      "https://harrypotter.fandom.com/wiki/Gringotts_Wizarding_Bank"
-     "Gringotts Wizarding Bank"))
+     "Harry Potter Wiki: Gringotts Wizarding Bank"))
 
 
 ◊subhead{The myth of a Swiss bank account}
@@ -50,17 +58,17 @@ Cryptocurrencies on the other hand can fulfill the dream.◊mn{private?}
    (x-ref
      "2020-01-02"
      "https://www.investopedia.com/ask/answers/08/swiss-bank-account.asp"
-     "Swiss Bank Account"))
+     "Albert Phung: Swiss Bank Account"))
 ◊(define swiss-exchange
    (x-ref
      "2020-01-02"
      "https://www.swissinfo.ch/eng/financial-transparency_switzerland-in-the-age-of-automatic-exchange-of-banking-information/45234706"
-     "Switzerland in the age of automatic exchange of banking information"))
+     "Armando Mombelli (2019) Switzerland in the age of automatic exchange of banking information"))
 ◊(define swiss-more-countries
    (x-ref
      "2020-01-02"
      "https://www.swissinfo.ch/eng/automatic-exchange-_switzerland-grants-18-more-countries-access-to-bank-details/45424544"
-     "Switzerland grants 18 more countries access to bank details"))
+     "SWI swissinfo.ch (2019) Switzerland grants 18 more countries access to bank details"))
 
 
 ◊subhead{Shell companies and offshore bank accounts}
@@ -88,7 +96,7 @@ But they're not just for avoiding taxes. Look at celebrities for instance, they 
   (x-ref
     "2020-01-02"
     "https://www.telegraph.co.uk/news/2016/05/10/panama-papers-emma-watson-named-in-latest-data-release/"
-    "Panama Papers: Emma Watson named in latest offshore data release"))
+    "Tom Morgan (2016) Panama Papers: Emma Watson named in latest offshore data release"))
 
 It's up to you if you believe them or not. As the cynic that I am, I remain skeptical, but at the same time I sympathize with the privacy concern---I did after all dedicate ◊link[private_money]{an earlier chapter} to the topic. If you haven't read the chapter I suggest you do so now, as it tries to explain why it's important that financial privacy is available for everyone.◊mn{small-community}
 
@@ -117,12 +125,12 @@ It's up to you if you believe them or not. As the cynic that I am, I remain skep
    (x-ref
      "2020-01-02"
      "https://www.icij.org/investigations/offshore/former-eu-official-among-politicians-named-new-leak-offshore-files-bahamas/"
-     "Former EU Official Among Politicians Named in New Leak of Offshore Files from The Bahamas"))
+     "ICIJ (2016) Former EU Official Among Politicians Named in New Leak of Offshore Files from The Bahamas"))
 ◊(define panama-papers-doc
    (x-ref
      "2020-01-02"
      "https://www.panamapapersdoc.com/"
-     "The Panama Papers"))
+     "The Panama Papers (2018)"))
 ◊(define the-laundromat
    (x-ref
      "2020-01-02"
@@ -148,7 +156,7 @@ While tax evasion through offshore banking is problematic, it pales to the probl
    (x-ref
      "2020-01-02"
      "https://www.youtube.com/watch?v=uBZR1-onmAo"
-     "Trump Brags About Not Paying Taxes: \"That Makes Me Smart\" (30 sec)"))
+     "YouTube (2016) Trump Brags About Not Paying Taxes: \"That Makes Me Smart\" (30 sec)"))
 
 No Mr. President, that makes you rich. You see, this kind of tax evasion is only available for the super rich.◊sn{crap-smart-rich} And it's not the top 1% we're talking about, more like the top 0.001%. We're talking about people who can afford private chefs and travel the world in private jets and yachts. (Alright, maybe it's not ◊em{only} for the super rich, you might be able to do it even if you're only very rich, but you have to have a very large amount of money to make tax evasion in this way feasible.)
 
@@ -160,12 +168,12 @@ No Mr. President, that makes you rich. You see, this kind of tax evasion is only
    (x-ref
      "2020-01-02"
      "https://edition.cnn.com/2018/10/04/opinions/trump-nyt-kavanaugh-yale-self-made-man-myth-collins/index.html"
-     "Trump, Kavanaugh and the myth of self-made success"))
+     "Chuck Collins (2018) Trump, Kavanaugh and the myth of self-made success"))
 ◊(define tax-evasion-and-inequality
    (x-ref
      "2020-01-02"
      "http://gabriel-zucman.eu/files/AJZ2019.pdf"
-     "Tax Evasion and Inequality (PDF)"))
+     "Annette Alstadsæter, Niels Johannesen, Gabriel Zucman (2019) Tax Evasion and Inequality"))
 
 This is why you don't see the names of normal people in the Panama Papers---no matter how smart they may be---but instead we find names like Lionel Messi, Donald Trump and Vladimir Putin.◊sn{names}
 
@@ -183,12 +191,18 @@ Here I use the term ◊em{tax evasion} instead ◊em{tax fraud} because, believe
    (x-ref
      "2020-01-02"
      "https://www.cbsnews.com/news/2018-taxes-some-of-americas-biggest-companies-paid-little-to-no-federal-income-tax-last-year/"
-     "60 of America's biggest companies paid no federal income tax in 2018"))
+     "Megan Cerullo (2019) 60 of America's biggest companies paid no federal income tax in 2018"))
 
 ◊qt[#:src "Report: Billionaire Bonanza 2017"
-    #:url "https://ips-dc.org/report-billionaire-bonanza-2017/"]{
+    #:url report-bonanza]{
   The three wealthiest people in the United States — Bill Gates, Jeff Bezos, and Warren Buffett — now own more wealth than the entire bottom half of the American population combined
 }
+
+◊(define report-bonanza
+   (x-ref
+     "2020-10-27"
+     "https://ips-dc.org/report-billionaire-bonanza-2017/"
+     "Institute for Policy Studies (2017) Offshore Leaks Database"))
 
 The world is just extremely unfair, and if anything it should be the other way around. The poor should pay less taxes, while the rich should pay more. At least this would have a semblance of fairness.
 
@@ -205,12 +219,12 @@ The world is just extremely unfair, and if anything it should be the other way a
    (x-ref
      "2020-01-02"
      "https://www.icij.org/investigations/panama-papers/20160403-putin-russia-offshore-network/"
-     "All Putin’s Men: Secret Records Reveal Money Network Tied to Russian Leader"))
+     "The Panama Papers (2016) All Putin’s Men: Secret Records Reveal Money Network Tied to Russian Leader"))
 ◊(define irs-gutted
    (x-ref
      "2020-01-02"
      "https://www.propublica.org/article/how-the-irs-was-gutted"
-     "How the IRS Was Gutted"))
+     "Paul Kiel, Jesse Eisinger (2018) How the IRS Was Gutted"))
 
 
 ◊subhead{The great leveller}
@@ -267,9 +281,9 @@ Perfectly balanced, as all things should be.
    (x-ref
      "2020-01-02"
      "https://www.nytimes.com/2017/07/21/upshot/when-the-empty-apartment-next-door-is-owned-by-an-oligarch.html"
-     "When the (Empty) Apartment Next Door Is Owned by an Oligarch"))
+     "Emily Badger (2017) When the (Empty) Apartment Next Door Is Owned by an Oligarch"))
 ◊(define inequality
    (x-ref
      "2020-01-02"
      "https://inequality.org/facts/income-inequality/"
-     "Income Inequality"))
+     "Inequality.org: Income Inequality"))

@@ -74,7 +74,7 @@ Cryptocurrencies can also be considered to be ◊def[sound-money]{sound money}--
   (x-ref
     "2019-05-23"
     "https://home.treasury.gov/news/press-releases/sm556"
-    "Treasury Designates Iran-Based Financial Facilitators of Malicious Cyber Activity and for the First Time Identifies Associated Digital Currency Addresses"))
+    "U.S. Department of the Treasury (2018) Treasury Designates Iran-Based Financial Facilitators of Malicious Cyber Activity and for the First Time Identifies Associated Digital Currency Addresses"))
 
 
 ◊subhead{Comparing properties with other forms of money}
@@ -158,7 +158,7 @@ Even if you disagree about certain choices, it's hard to deny that cryptocurrenc
   (x-ref
     "2019-05-23"
     "https://web.archive.org/web/20150801064652/http://dollardaze.org/blog/?page_id=00017"
-    "Demonetized Currencies"))
+    "DollarDaze: Demonetized Currencies"))
 
 ◊(define (ths txt)
    `(td ((class "ths")) ,txt))
@@ -177,12 +177,12 @@ Even if you disagree about certain choices, it's hard to deny that cryptocurrenc
   (x-ref
     "2019-05-23"
     "https://www.getmonero.org/2017/05/17/disclosure-of-a-major-bug-in-cryptonote-based-currencies.html"
-    "Disclosure of a Major Bug in CryptoNote Based Currencies"))
+    "luigi1111, Riccardo Spagni (2017) Disclosure of a Major Bug in CryptoNote Based Currencies"))
 ◊(define bitcoin-bug 
   (x-ref
     "2019-05-23"
     "https://bitcoincore.org/en/2018/09/20/notice/"
-    "CVE-2018-17144 Full Disclosure"))
+    "Bitcoin Core (2018) CVE-2018-17144 Full Disclosure"))
 
 
 ◊subhead{Do cryptocurrencies function as money?}
@@ -212,7 +212,7 @@ We've looked at the properties---but how well do they function as money, today?
   (x-ref
     "2020-09-29"
     "https://www.investing.com/crypto/bitcoin/historical-data"
-    "Investing.com Bitcoin historical price data"))
+    "Investing.com: Bitcoin historical price data"))
 
 ◊ndef["sov"]{
     There's a clique of Bitcoin supporters who claim the primary, and sometimes even the only, function of Bitcoin is as a store of value. Unfortunately it's based on wishful thinking (from a short-term investment view) and not reality.
@@ -255,7 +255,7 @@ Perhaps it's to be expected that cryptocurrencies aren't global money yet---they
   (x-ref
     "2019-05-23"
     "https://www.meltingasphalt.com/interactive/going-critical/"
-    "Going Critical"))
+    "Kevin Simler (2019) Going Critical"))
 
 
 ◊subhead{How well do other forms of money function?}
@@ -315,22 +315,22 @@ There are others who've ruled in favor of Bitcoin as a currency. For example ◊
   (x-ref
     "2019-05-23"
     "https://www.eff.org/deeplinks/2013/02/deep-dive-software-patents-and-rise-patent-trolls"
-    "Deep Dive: Software Patents and the Rise of Patent Trolls"))
+    "Electronic Frontier Foundation (2013) Deep Dive: Software Patents and the Rise of Patent Trolls"))
 ◊(define one-click 
   (x-ref
     "2019-05-23"
     "https://patents.google.com/patent/US5960411"
-    "Method and system for placing a purchase order via a communications network "))
+    "US5960411A United States (1999) Method and system for placing a purchase order via a communications network "))
 ◊(define skatt-bitcoin
   (x-ref
     "2018-12-17"
     "https://www4.skatteverket.se/rattsligvagledning/373946.html?date=2018-12-17"
-    "Swedish link: Skatteverket divestment of Bitcoin"))
+    "Skatteverket (2018) HFD, mål nr 2674-18. Avyttring av bitcoin "))
 ◊(define eu-ruled 
   (x-ref
     "2019-05-23"
     "http://curia.europa.eu/juris/document/document.jsf?text=&docid=170305&pageIndex=0&doclang=en&mode=req&dir=&occ=first&part=1&cid=604646"
-    "Judgement of the court (Fifth Chamber): Case C‑264/14"))
+    "CURIA (2015) Judgement of the court (Fifth Chamber): Case C‑264/14"))
 ◊(define prev-chapter what_is_money)
 
 

@@ -42,7 +42,7 @@ If it was the other way around, "guilty until proven innocent", then it would op
    (x-ref
      "2020-01-09"
      "https://www.un.org/en/universal-declaration-human-rights/"
-     "Universal Declaration of Human Rights"))
+     "United Nations: Universal Declaration of Human Rights"))
 
 However in the United States there's something called ◊def[civil-forfeiture]{civial asset forfeiture}. It's a legal tool that allows the police to seize your car, home, money or other assets without ever charging you with a crime. You read that right, they can seize your assets ◊strong{without charging you with a crime}. There are ◊link[10-cases-forfeiture]{tons of stories} of ◊link[7-cases-forfeiture]{innocent people} having their ◊link[ef-cases]{money or property confiscated}, for example:
 
@@ -91,7 +91,7 @@ Maybe there were some good intentions◊sn{banks-laundering} when these laws mer
    (x-ref
      "2020-01-09"
      "https://www.themaneater.com/stories/outlook/police-chief-ken-burton-calls-forfeiture-funds-pen"
-     "Police Chief Ken Burton calls forfeiture funds 'pennies from heaven'"))
+     "Laurien Rose (2012) Police Chief Ken Burton calls forfeiture funds 'pennies from heaven'"))
 
 He's saying that the police can take whatever they want, and that they're motivated by what would be "nice to have", not if there's a crime involved or not. Most of the money goes to funding the police,◊sn{police-funding} but the money has gone to ◊link[steak-forfeiture]{extravagant Christmas parties, sirloin beef and a $8,200 security system} for the district attorney's private home. And of course some managed to spend it on ◊link[forfeiture-alcohol]{alcohol, prostitutes and marijuana}. Then there's the case where another district attorney ◊link[forfeiture-hawaii]{spent $27,000 to take his whole office to Hawaii}, including the approving district judge.
 
@@ -125,43 +125,43 @@ So how can cryptocurrencies protect you against the forfeiture laws? While they 
    (x-ref
      "2020-01-09"
      "https://www.aclu.org/press-releases/aclu-announces-settlement-highway-robbery-cases-texas"
-     "ACLU Announces Settlement in “Highway Robbery” Cases in Texas"))
+     "ACLU (2012) ACLU Announces Settlement in “Highway Robbery” Cases in Texas"))
 ◊(define forfeiture-hawaii
    (x-ref
      "2020-01-09"
      "https://www.npr.org/templates/story/story.php?storyId=104065589&t=1567527486222"
-     "Texas Case May Spur Drug Money Rule Change"))
+     "John Burnett (2009) Texas Case May Spur Drug Money Rule Change"))
 ◊(define forfeiture-alcohol
    (x-ref
      "2020-01-09"
      "https://www.policemag.com/348174/prosecutor-mich-cops-spent-forfeiture-funds-on-alcohol-prostitutes"
-     "Prosecutor: Mich. Cops Spent Forfeiture Funds on Alcohol, Prostitutes"))
+     "POLICE Magazine (2011) Prosecutor: Mich. Cops Spent Forfeiture Funds on Alcohol, Prostitutes"))
 ◊(define steak-forfeiture
    (x-ref
      "2020-01-09"
      "https://www.economist.com/democracy-in-america/2013/10/15/fighting-crime-through-superior-steak"
-     "Fighting crime through superior steak"))
+     "J.F. (2013) Fighting crime through superior steak"))
 
 ◊(define houston-forfeiture
    (x-ref
      "2020-01-09"
      "https://ij.org/case/houston-forfeiture"
-     "Houston Forfeiture: Nurse Files Class Action Challenging CBP’s Abusive Civil Forfeiture Practices"))
+     "Institute of Justice: Houston Forfeiture: Nurse Files Class Action Challenging CBP’s Abusive Civil Forfeiture Practices"))
 ◊(define parents-house-seized
    (x-ref
      "2020-01-09"
      "https://edition.cnn.com/2014/09/03/us/philadelphia-drug-bust-house-seizure/"
-     "Parents' house seized after son's drug bust"))
+     "Pamela Brown (2014) Parents' house seized after son's drug bust"))
 ◊(define 10-cases-forfeiture
    (x-ref
      "2020-01-09"
      "https://listverse.com/2015/06/29/10-egregious-abuses-of-civil-asset-forfeiture/"
-     "10 Egregious Abuses Of Civil Asset Forfeiture"))
+     "J. Francis Wolfe (2015) 10 Egregious Abuses Of Civil Asset Forfeiture"))
 ◊(define 7-cases-forfeiture
    (x-ref
      "2020-01-09"
      "https://dailycaller.com/2015/01/30/the-7-most-egregious-examples-of-civil-asset-forfeiture/"
-     "The 7 Most Egregious Examples Of Civil Asset Forfeiture"))
+     "Casey Harper (2015) The 7 Most Egregious Examples Of Civil Asset Forfeiture"))
 ◊(define ef-cases
    (x-ref
      "2020-01-09"
@@ -171,7 +171,7 @@ So how can cryptocurrencies protect you against the forfeiture laws? While they 
    (x-ref
      "2020-01-09"
      "https://gothamist.com/news/how-the-nypds-use-of-civil-forfeiture-robs-innocent-new-yorkers"
-     "How The NYPD's Use Of Civil Forfeiture Robs Innocent New Yorkers"))
+     "Max Rivlin-Nadler (2014) How The NYPD's Use Of Civil Forfeiture Robs Innocent New Yorkers"))
 ◊(define civil-forfeiture
    (x-ref
      "2020-01-09"
@@ -215,7 +215,7 @@ The contents of safety deposit boxes disappear all the time, and there's not a w
    (x-ref
      "2020-01-09"
      "https://int.nyt.com/data/documenthelper/1425-wells-fargo-safe-deposit-box-l/a4a2ec35134500f23c01/optimized/full.pdf#page=1"
-     "Wells Fargo's safe-deposit-box-contract"))
+     "New York Times (2019) Wells Fargo's safe-deposit-box-contract"))
 
 And they really are negligent. Did you know that the safe deposit box numbers aren't unique? So it may happen that a bank tries to evict another customer for not keeping up with payments, and they ◊link[safe-deposit-boxes-not-safe]{remove another box with the same number}.
 
@@ -225,17 +225,17 @@ Deposit boxes won't keep you safe from creditors, who may ◊link[creditors-open
    (x-ref
      "2020-01-09"
      "https://internationalman.com/articles/say-goodbye-to-your-safe-deposit-box/"
-     "Say Goodbye to Your Safe Deposit Box"))
+     "Jeff Thomas (2017) Say Goodbye to Your Safe Deposit Box"))
 ◊(define creditors-open
    (x-ref
      "2020-01-09"
      "https://calebjonesblog.com/bank-safety-deposit-boxes-no-longer-safe/"
-     "Bank Safety Deposit Boxes Are No Longer Safe"))
+     "Caleb Jones (2017) Bank Safety Deposit Boxes Are No Longer Safe"))
 ◊(define safe-deposit-boxes-not-safe
    (x-ref
      "2020-01-09"
      "https://www.nytimes.com/2019/07/19/business/safe-deposit-box-theft.html"
-     "Safe Deposit Boxes Aren’t Safe"))
+     "Stacy Cowley (2019) Safe Deposit Boxes Aren’t Safe"))
 ◊; https://news.ycombinator.com/item?id=20545276
 
 
@@ -253,7 +253,7 @@ Similar to how safe deposit boxes aren't safe during a financial crisis, neither
    (x-ref
      "2020-01-09"
      "https://www.investopedia.com/terms/b/bankrun.asp"
-     "Bank Run"))
+     "Will Kenton: Bank Run"))
 ◊(define cyprus-crisis
    (x-ref
      "2020-01-09"
@@ -263,7 +263,7 @@ Similar to how safe deposit boxes aren't safe during a financial crisis, neither
    (x-ref
      "2020-01-09"
      "https://eu.usatoday.com/story/money/business/2013/07/29/bank-of-cyprus-depositors-lose-savings/2595837/"
-     "Bank of Cyprus depositors lose 47.5% of savings"))
+     "Menelaos Hadjicostis (2013) Bank of Cyprus depositors lose 47.5% of savings"))
 
 ◊; Cyprus everyone with more than €100,000 confiscated
 ◊; https://www.theguardian.com/world/2013/mar/25/cyprus-bailout-deal-eu-closes-bank
@@ -303,12 +303,12 @@ Many turned to gold, jewelry and anything that could reasonably hold value to pr
    (x-ref
      "2020-01-09"
      "https://www.bbc.com/news/world-asia-india-37974423"
-     "Why India wiped out 86% of its cash overnight"))
+     "Justin Rowlatt (2016) Why India wiped out 86% of its cash overnight"))
 ◊(define india-fight-corruption
    (x-ref
      "2020-01-09"
      "https://www.bloomberg.com/news/articles/2016-11-08/india-abolishes-inr500-1-000-rupee-notes-to-fight-corruption"
-     "India Abolishes 500 and 1,000 Rupee Notes to Fight Corruption"))
+     "Rajesh Kumar Singh, Iain Marlow (2016) India Abolishes 500 and 1,000 Rupee Notes to Fight Corruption"))
 ◊; https://www.bloomberg.com/news/articles/2016-11-08/india-abolishes-inr500-1-000-rupee-notes-to-fight-corruption
 ◊; https://www.cpr.org/2016/11/08/in-surprise-move-india-voids-500-and-1000-rupee-bills-to-fight-corruption/
 ◊; https://www.npr.org/sections/thetwo-way/2016/11/08/501199606/in-surprise-move-india-voids-500-and-1-000-rupee-bills-to-fight-corruption?t=1567402561294
@@ -341,12 +341,12 @@ Exactly this happened to a 91-year old Swedish woman ◊link[91-woman]{couldn't 
    (x-ref
      "2020-01-09"
      "https://www.svt.se/nyheter/lokalt/skane/91-arig-kvinna-vagras-losa-in-sina-sedlar"
-     "91-årig kvinna vägras lösa in sedlar (Swedish)"))
+     "Per Carlsson (2016) 91-årig kvinna vägras lösa in sedlar"))
 ◊(define nyasedlar
    (x-ref
      "2020-01-09"
      "http://nyasedlar.nu/"
-     "Nya Sedlar (Swedish)"))
+     "Nya Sedlar: New Swdish bills and coins for 2015 and 2016"))
 
 ◊;em{91-year old Swedish woman couldn't deposit her old bills, because she couldn't prove where she got them.}
 ◊; https://www.svt.se/nyheter/lokalt/skane/91-arig-kvinna-vagras-losa-in-sina-sedlar

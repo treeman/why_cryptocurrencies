@@ -30,4 +30,4 @@ But there are other benefits as well. Cryptocurrencies have lower fees and by be
   (x-ref
     "2019-06-03"
     "http://www.escapistmagazine.com/news/view/103385-PayPal-Freezes-750K-in-MineCraft-Devs-Account"
-    "PayPal Freezes $750K in MineCraft Dev's Account"))
+    "Andy Chalk (2010) PayPal Freezes $750K in MineCraft Dev's Account"))

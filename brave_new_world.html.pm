@@ -20,9 +20,9 @@
    (x-ref
      "2019-12-15"
      "https://www.youtube.com/watch?v=xYPXIfwVyts"
-     "I am become Death (1 min)"))
+     "YouTube (2008) I am become Death (1 min)"))
 
-In previous parts we've looked at how cryptocurrencies provide ◊link[better_digital_payments]{better digital payments} and why they might be ◊link[better_currency]{better currencies}. This section focuses on some ways the world is changing, and what part cryptocurrencies may play.
+In previous parts we've looked at how cryptocurrencies provide ◊link[better_digital_payments]{better digital payments} and why they might be ◊link[better_currency]{better currencies}. This part focuses on some ways the world is changing, and what role cryptocurrencies may play.
 
 Even if we'd collectively agree that the world would be better off without cryptocurrencies, we cannot make them disappear. We cannot "uninvent" them and they're extremely difficult to shut down. Therefore, like with nuclear bombs, we're stuck with them and have to adapt to a new world.◊mn{destroyer-of-worlds}
 
@@ -48,7 +48,7 @@ But one things seems clear to me. The Pandora's Box has been opened, and the wor
    (x-ref
      "2019-12-15"
      "https://www.dancarlin.com/hardcore-history-59-the-destroyer-of-worlds/"
-     "Dan Carlin's The Destroyer of Worlds"))
+     "Dan Carlin (2017) The Destroyer of Worlds"))
 ◊(define cryptolocker
    (x-ref
      "2019-12-15"

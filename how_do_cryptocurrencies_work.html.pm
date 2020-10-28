@@ -153,17 +153,17 @@ To relate it back to cryptocurrencies the choice between "attack" and "retreat" 
   (x-ref
     "2019-05-03"
     "https://en.wikipedia.org/wiki/Byzantine_fault"
-    "Wikipedia: Byzatine Fault"))
+    "Wikipedia: Byzatine fault"))
 ◊(define ceasar-cipher
   (x-ref
     "2019-05-03"
     "http://practicalcryptography.com/ciphers/caesar-cipher/"
-    "Caesar Cipher"))
+    "Practical Cryptography: Caesar Cipher"))
 ◊(define byzantine-generals
   (x-ref
     "2019-05-03"
     "https://www.microsoft.com/en-us/research/publication/byzantine-generals-problem/"
-    "The Byzantine Generals Problem"))
+    "Leslie Lamport, Robert Shostak, Marshall Pease (1982) The Byzantine Generals Problem"))
 
 
 ◊subhead{Sybil attack}
@@ -249,7 +249,7 @@ Important to note is that the system is permissionless so there's nobody to prev
   (x-ref
     "2019-05-03"
     "https://www.mathcelebrity.com/5cardbasic.php?hand=AAKQJ&pl=Royal+Flush"
-    "Probability of Royal Flush"))
+    "Math Celebrity: Probability of Royal Flush"))
 ◊(define primes
   (x-ref
     "2019-05-03"
@@ -259,7 +259,7 @@ Important to note is that the system is permissionless so there's nobody to prev
   (x-ref
     "2019-05-03"
     "http://www.righto.com/2014/09/mining-bitcoin-with-pencil-and-paper.html"
-    " Mining Bitcoin with pencil and paper: 0.67 hashes per day "))
+    "Ken Shirriff (2014) Mining Bitcoin with pencil and paper: 0.67 hashes per day"))
 
 
 ◊subhead{Updating the blockchain}
@@ -315,12 +315,12 @@ The blockchain is duplicated, stored and maintained by many different people, yo
   (x-ref
     "2019-05-03"
     "https://medium.com/@jonaldfyookball/why-every-bitcoin-user-should-understand-spv-security-520d1d45e0b9"
-    "Why Every Bitcoin User Should Understand “SPV Security”"))
+    "Jonald Fyookball (2017) Why Every Bitcoin User Should Understand “SPV Security”"))
 ◊(define blockchair
   (x-ref
     "2019-05-03"
     "https://blockchair.com/"
-    "Blockchair"))
+    "Blockchair: Universal blockchain explorer and search engine"))
 ◊(define blockchair-tx
   (x-ref
     "2019-05-03"
@@ -335,7 +335,7 @@ The blockchain is duplicated, stored and maintained by many different people, yo
   (x-ref
     "2019-05-03"
     "https://xmrchain.net/"
-    "xmrchain.net"))
+    "xmrchain.net: monero explorer"))
 
 
 ◊subhead{Forks}
@@ -446,7 +446,7 @@ In fact we could spend 100x more energy on mining and process the same amount of
   (x-ref
     "2019-05-03"
     "https://gist.github.com/awemany/619a5722d129dec25abf5de211d971bd"
-    "Solving the 0-conf problem using forfeits"))
+    "awemany (2018) Solving the 0-conf problem using forfeits"))
 
 
 ◊subhead{The 50% security assumption}
@@ -469,7 +469,7 @@ This touches on the immutability of the blockchain. As long as more than 50% of 
   (x-ref
     "2019-05-03"
     "https://forum.bitcoingold.org/t/double-spend-attacks-on-exchanges/1362"
-    "Bitcoin Gold: Double Spend Attacks on Exchanges "))
+    "Bitcoin Gold forum (2018) Double Spend Attacks on Exchanges "))
 
 
 ◊subhead{Economics of a 51% attack}
@@ -537,7 +537,7 @@ It also doesn't make sense for a minority miner to try to double-spend, it will 
   (x-ref
     "2019-05-03"
     "https://www.coindesk.com/bitcoin-mining-detente-ghash-io-51-issue"
-    "The Bitcoin Mining Arms Race: GHash.io and the 51% Issue"))
+    "coindesk (2017) The Bitcoin Mining Arms Race: GHash.io and the 51% Issue"))
 ◊(define btc-hashrate
   (x-ref
     "2020-04-20"
@@ -601,7 +601,7 @@ One problem is the ◊link[nothing-at-stake]{nothing at stake problem} where a c
   (x-ref
     "2019-05-03"
     "https://ethereum.stackexchange.com/questions/2402/what-exactly-is-the-nothing-at-stake-problem"
-    "Stackexchange: What exactly is the Nothing-At-Stake problem?"))
+    "Stackexchange (2016) What exactly is the Nothing-At-Stake problem?"))
 
 
 ◊subhead{More details}

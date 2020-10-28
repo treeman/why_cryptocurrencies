@@ -185,7 +185,7 @@ The private key is just a large number and can be be displayed in different ways
    (x-ref
      "2020-02-27"
      "https://en.bitcoin.it/wiki/Wallet_import_format"
-     "Wallet import format"))
+     "bitcoin.it wiki: Wallet import format"))
 
 ◊code{5JSfRE8qNQZTtdwuRx6pxVohC3C3VeAHvzKvLsZWHEGPdW2zF3o}
 
@@ -333,7 +333,7 @@ Does this sound too difficult? It's true, there are many pitfalls and it's easy 
    (x-ref
      "2020-02-27"
      "https://bitinfocharts.com/comparison/bitcoin-hashrate.html"
-     "Bitcoin Hashrate historical chart"))
+     "BitInfoCharts: Bitcoin Hashrate historical chart"))
 ◊(define public-key-cryptography
    (x-ref
      "2020-02-27"
@@ -343,5 +343,5 @@ Does this sound too difficult? It's true, there are many pitfalls and it's easy 
    (x-ref
      "2020-02-27"
      "https://github.com/bitcoin/bips/blob/master/bip-0039/bip-0039-wordlists.md"
-     "BIP-39 wordlists"))
+     "Bitcoin: BIP-39 wordlists"))
 

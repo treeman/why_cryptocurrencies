@@ -36,7 +36,7 @@ To become an expert in a field you need a lot of dedication, effort and maybe a 
    (x-ref
      "2019-11-11"
      "https://expertenough.com/1423/deliberate-practice"
-     "Deliberate Practice What It Is and Why You Need It"))
+     "Corbett Barr (2012) Deliberate Practice What It Is and Why You Need It"))
 
 ◊ul{
     ◊li{An environment that is sufficiently regular to be predictable.}
@@ -64,7 +64,7 @@ In contrast learning how to drive a car provides an ideal learning environment. 
    (x-ref
      "2019-11-11"
      "https://www.cnbc.com/2017/05/12/warren-buffett-says-index-funds-make-the-best-retirement-sense-practically-all-the-time.html"
-     "Warren Buffett says index funds make the best retirement sense 'practically all the time'"))
+     "Trent Gillies (2017) Warren Buffett says index funds make the best retirement sense 'practically all the time'"))
 
 
 ◊subhead{The problem with planning the economy}
@@ -92,7 +92,7 @@ Because the economy is made up of millions or even billions of people, with diff
    (x-ref
      "2019-11-11"
      "https://www.investopedia.com/terms/b/blackswan.asp"
-     "Black Swan"))
+     "Investopedia: Black Swan"))
 ◊(define butterfly-effect
    (x-ref
      "2019-11-11"
@@ -102,17 +102,17 @@ Because the economy is made up of millions or even billions of people, with diff
    (x-ref
      "2019-11-11"
      "https://www.britannica.com/topic/economic-planning"
-     "Economic planning"))
+     "John Hackett: Economic planning"))
 ◊(define command-economy
    (x-ref
      "2019-11-11"
      "https://www.investopedia.com/terms/c/command-economy.asp"
-     "Command Economy"))
+     "Jim Chappelow: Command Economy"))
 ◊(define ussr-collapse
    (x-ref
      "2019-11-11"
      "https://www.investopedia.com/articles/investing/021716/why-ussr-collapsed-economically.asp"
-     "Why the USSR Collapsed Economically"))
+     "Matthew Johnston: Why the USSR Collapsed Economically"))
 
 
 ◊subhead{Our leaders are blind}
@@ -176,17 +176,17 @@ While the article itself is more nuanced, you can't conclude anything with such 
    (x-ref
      "2019-11-11"
      "https://www.reuters.com/article/us-usa-fed-rates-idUSN0722343620070808"
-     "Fed says inflation main worry, but cites risks (August, 2007)"))
+     "Mark Felsenthal (2017) Fed says inflation main worry, but cites risks"))
 ◊(define bernanke
    (x-ref
      "2019-11-11"
      "https://www.federalreserve.gov/boarddocs/speeches/2002/20021108/default.htm"
-     " Remarks by Governor Ben S. Bernanke (2002)"))
+     "The Federal Reserve Board (2002) Remarks by Governor Ben S. Bernanke"))
 ◊(define imf-jose
    (x-ref
      "2019-11-11"
      "https://blogs.imf.org/2016/04/10/the-broader-view-the-positive-effects-of-negative-nominal-interest-rates/"
-     "The Broader View: The Positive Effects of Negative Nominal Interest Rates (2016)"))
+     "Jose Viñals, Simon Gray, Kelly Eckhold (2016) The Broader View The Positive Effects of Negative Nominal Interest Rates"))
 
 
 ◊subhead{We are blind}
@@ -241,7 +241,7 @@ Cryptocurrencies are interesting because they allow anyone to verify the number 
    (x-ref
      "2019-11-11"
      "https://money.visualcapitalist.com/currency-and-the-collapse-of-the-roman-empire/"
-     "Currency and the Collapse of the Roman Empire"))
+     "The Money Project: Currency and the Collapse of the Roman Empire"))
 
 You can also predict how many coins will be created and when, it's coded into the rules of the cryptocurrency after all. While Bitcoin ◊link[predetermined-emission-rate]{mimics the rate that gold is mined}, there's no risk of counterfeit bitcoin or a meteor made of bitcoin crashing on earth to disrupt the supply, like with gold or other precious materials.◊sn{inflation-bug}
 
@@ -253,7 +253,7 @@ You can also predict how many coins will be created and when, it's coded into th
    (x-ref
      "2019-11-11"
      "https://medium.com/@awemany/600-microseconds-b70f87b0b2a6"
-     "600 Microseconds: A perspective from the Bitcoin Cash and Bitcoin Unlimited developer who discovered CVE-2018–17144"))
+     "Awemany (2018) 600 Microseconds: A perspective from the Bitcoin Cash and Bitcoin Unlimited developer who discovered CVE-2018–17144"))
 
 Finally cryptocurrencies don't rely on "experts", who are supposed to avoid crashes by predicting what cannot be predicted. There's nobody in control so nobody can push the wrong button or pull the wrong lever to cause economic chaos.◊sn{half-truth}
 
@@ -274,7 +274,7 @@ Therefore cryptocurrencies are a more transparent and robust alternative, which 
    (x-ref
       "2019-11-11"
       "https://www.imdb.com/title/tt0076759/"
-      "Star Wars: Episode IV - A New Hope (1977)"))
+      "IMDb: Star Wars: Episode IV - A New Hope (1977)"))
 
 ◊note-pos[#:top -20.5]{inflation-bug}
 ◊note-pos[#:top -15]{half-truth}
@@ -283,10 +283,10 @@ Therefore cryptocurrencies are a more transparent and robust alternative, which 
    (x-ref
      "2019-11-11"
      "http://omegataupodcast.net/181-why-megaprojects-fail-and-what-to-do-about-it/"
-     "181 – Why Megaprojects Fail (and what to do about it)"))
+     "omega tau (2015) 181 – Why Megaprojects Fail (and what to do about it)"))
 ◊(define fed-dividends
    (x-ref
      "2019-11-11"
      "https://newrepublic.com/article/116913/federal-reserve-dividends-most-outrageous-handout-banks"
-     "This Is the Fed's Most Brazen and Least Known Handout to Private Banks "))
+     "David Dayen (2014) This Is the Fed's Most Brazen and Least Known Handout to Private Banks "))
 

@@ -41,17 +41,17 @@ It's not important to understand exactly how the complex financial products, suc
    (x-ref
      "2019-10-25"
      "https://www.investopedia.com/terms/m/mortgage_bond.asp"
-     "Mortgage Bond"))
+     "James Chen: Mortgage Bond"))
 ◊(define cdo
    (x-ref
      "2019-10-25"
      "https://www.investopedia.com/terms/c/cdo.asp"
-     "Collateralized Debt Obligation (CDO)"))
+     "Carla Tardi: Collateralized Debt Obligation (CDO)"))
 ◊(define subprime-mortgage
    (x-ref
      "2019-10-25"
      "https://www.investopedia.com/terms/s/subprime_mortgage.asp"
-     "Subprime Mortgage"))
+     "Carol M. Kopp: Subprime Mortgage"))
 
 A lot of ink has been spent on articles, books and movies explaining the events better and in far more detail than I could hope to do. I particularly like the explanations given in the Oscar-winning movie ◊link[the-big-short]{The Big Short (2016)}. Just look at how they describe ◊link[subprime-mortgage]{subprime mortgages} and CDOs:
 
@@ -84,22 +84,22 @@ A pitch of humor sure makes for memorable explanations. But if it's too much Hol
    (x-ref
      "2019-10-25"
      "https://www.youtube.com/watch?v=bx_LWm6_6tA"
-     "The Crisis of Credit Visualized - HD (11 min)"))
+     "YouTube (2011) The Crisis of Credit Visualized - HD (11 min)"))
 ◊(define the-big-short
    (x-ref
      "2019-10-25"
      "https://www.imdb.com/title/tt1596363/"
-     "The Big Short (2015)"))
+     "IMDb: The Big Short (2015)"))
 ◊(define margot-robbie
    (x-ref
      "2019-10-25"
      "https://www.youtube.com/watch?v=anSPG0TPf84"
-     "The Big Short scene - Margot Robbie explains finance terms (2 min)"))
+     "YouTube (2016) The Big Short scene - Margot Robbie explains finance terms (2 min)"))
 ◊(define anthony-bourdain
    (x-ref
      "2019-10-25"
      "https://www.youtube.com/watch?v=kxN_qPuefrM"
-     "The Big Short Anthony Bourdain explains CDO (1 min)"))
+     "YouTube (2019) The Big Short Anthony Bourdain explains CDO (1 min)"))
 
 
 ◊ndef["villains"]{
@@ -209,12 +209,12 @@ For the taxpayers it's like betting all on red on a roulette wheel---you risk a 
    (x-ref
      "2019-10-25"
      "https://www.washingtonpost.com/business/economy/tarp-moves-into-the-black-as-some-loans-are-repaid/2011/03/30/AFDrEc6B_story.html"
-     "TARP moves into the black as some loans are repaid"))
+     "Brady Dennis (2011) TARP moves into the black as some loans are repaid"))
 ◊(define irish-bailout
    (x-ref
      "2019-10-25"
      "https://www.irishtimes.com/business/financial-services/was-it-worth-paying-41-7bn-to-bail-out-irish-banks-1.4036792?mode=amp"
-     "Was it worth paying €41.7bn to bail out Irish banks? "))
+     "Ciarán Hancock (2019) Was it worth paying €41.7bn to bail out Irish banks? "))
 
 
 ◊subhead{A message from Satoshi}
@@ -239,12 +239,12 @@ Which you might see as a sign that Satoshi wasn't a fan of bailing out the banks
    (x-ref
      "2019-10-25"
      "https://imgur.com/pGYXHJh"
-     "Imgur: The Times | 1/3/2009 | Chancellor on Brink of Second Bailout for Banks | Satoshi Nakamoto"))
+     "Imgur (2014)  The Times | 1/3/2009 | Chancellor on Brink of Second Bailout for Banks | Satoshi Nakamoto"))
 ◊(define times-20090103
    (x-ref
      "2019-10-25"
      "https://www.thetimes.co.uk/article/chancellor-alistair-darling-on-brink-of-second-bailout-for-banks-n9l382mn62h"
-     "Chancellor Alistair Darling on brink of second bailout for banks"))
+     "Francis Elliott, Gary Duncan (2009) Chancellor Alistair Darling on brink of second bailout for banks"))
 
 ◊note-pos[#:top -6]{times-online}
 
@@ -261,7 +261,7 @@ Which you might see as a sign that Satoshi wasn't a fan of bailing out the banks
   (x-ref
     "2019-10-25"
     "https://www.imdb.com/title/tt4654844/"
-    "Bitcoin the end of money as we know it (2015)"))
+    "IMDb: Bitcoin the end of money as we know it (2015)"))
 
 After the dust settled it's easy to think the guilty got punished---after all the U.S. loves to dish out harsh punishments---and the system was reworked to prevent a similar crisis from ever happening again. But reality is often disappointing.
 
@@ -301,12 +301,12 @@ How about the other traders and the "CDO managers" who sold junk disguised as sa
    (x-ref
      "2019-10-25"
      "https://www.bloomberg.com/news/features/2016-03-31/welcome-to-iceland-where-bad-bankers-go-to-prison"
-     "This Is Where Bad Bankers Go to Prison"))
+     "Edward Robinson, Omar Valdimarsson (2016) This Is Where Bad Bankers Go to Prison"))
 ◊(define us-banker-jail
    (x-ref
      "2019-10-25"
      "https://www.nytimes.com/2014/05/04/magazine/only-one-top-banker-jail-financial-crisis.html"
-     "Why Only One Top Banker Went to Jail for the Financial Crisis"))
+     "Jesse Eisinger (2014) Why Only One Top Banker Went to Jail for the Financial Crisis"))
 
 
 ◊subhead{It's all about incentives}
@@ -322,7 +322,7 @@ How about the other traders and the "CDO managers" who sold junk disguised as sa
    (x-ref
      "2019-10-25"
      "https://www.youtube.com/watch?v=pqzcCfUglws"
-     "The Psychology of Human Misjudgement - Charlie Munger Full Speech (1 hour 16 min)"))
+     "YouTube (2013) The Psychology of Human Misjudgement - Charlie Munger Full Speech (1 hour 16 min)"))
 
 ◊;If you wanted to predict how people would behave, you only have to look at their incentives.
 ◊; "The Psychology of Human Misjudegement" speech by Charlie Munger Jun 1995
@@ -357,7 +357,7 @@ I find it interesting to compare the incentives for banks with the ◊link[51%-a
    (x-ref
      "2019-10-25"
      "https://www.thebalance.com/moral-hazard-what-it-is-and-how-it-works-315515"
-     "Moral Hazard: Definition and Examples "))
+     "The Balance: Moral Hazard: Definition and Examples "))
 
 
 ◊ndef["bail-in"]{
@@ -369,7 +369,7 @@ I find it interesting to compare the incentives for banks with the ◊link[51%-a
    (x-ref
      "2019-10-25"
      "https://www.investopedia.com/articles/markets-economy/090716/why-bank-bailins-will-be-new-bailouts.asp"
-     "Why Bank Bail-Ins Will Be the New Bailouts"))
+     "Richard Best (2019) Why Bank Bail-Ins Will Be the New Bailouts"))
 
 
 ◊subhead{Will history repeat itself?}
@@ -392,22 +392,22 @@ History doesn't repeat itself, but it rhymes awfully well.
    (x-ref
      "2019-10-25"
      "https://www.nytimes.com/2009/03/03/business/03aig.html"
-     "A.I.G. Reports Loss of $61.7 Billion as U.S. Gives More Aid"))
+     "Andrew Ross Sorkin, Mary Williams Walsh (2009) A.I.G. Reports Loss of $61.7 Billion as U.S. Gives More Aid"))
 ◊(define obama-aig-bonuses
    (x-ref
      "2019-10-25"
      "http://edition.cnn.com/2009/POLITICS/03/16/AIG.bonuses/"
-     "Obama tries to stop AIG bonuses: 'How do they justify this outrage?'"))
+     "CNN (2009) Obama tries to stop AIG bonuses: 'How do they justify this outrage?'"))
 ◊(define warming-up-mortgage-bonds
    (x-ref
      "2019-10-25"
      "https://www.wsj.com/articles/banks-warm-to-mortgage-bonds-that-burned-them-in-2008-11568626202"
-     "Banks Warm to Mortgage Bonds That Burned Them in 2008"))
+     "Ben Eisen, Telis Demos (2019) Banks Warm to Mortgage Bonds That Burned Them in 2008"))
 ◊(define bespoke-tranche-opportunity
    (x-ref
      "2019-10-25"
      "https://www.bloomberg.com/news/articles/2015-02-04/goldman-sachs-hawks-cdos-tainted-by-credit-crisis-under-new-name"
-     "Goldman Sachs Hawks CDOs Tainted by Credit Crisis Under New Name"))
+     "Lisa Abramowicz (2015) Goldman Sachs Hawks CDOs Tainted by Credit Crisis Under New Name"))
 
 
 ◊subhead{What if we used sound money?}
