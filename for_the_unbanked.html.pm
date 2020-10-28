@@ -124,12 +124,12 @@ So about ◊strong{420 million} do have access to internet while being unbanked.
    (x-ref
      "2019-09-05"
      "https://news.abs-cbn.com/overseas/02/01/19/venezuela-opposition-clings-to-social-media-lifeline"
-     "Venezuela opposition clings to social media lifeline"))
+     "Agence France-Presse (2019) Venezuela opposition clings to social media lifeline"))
 ◊(define venezuela-mining
    (x-ref
      "2019-09-05"
      "https://news.bitcoin.com/venezuelan-bitcoin-saves-family/"
-     "Venezuelan Explains How Bitcoin Saves His Family"))
+     "Kevin Helms (2019) Venezuelan Explains How Bitcoin Saves His Family"))
 
 
 ◊;I've only touched on some statistics, please see the ◊link[findex-report]{full report} for more.
@@ -179,12 +179,12 @@ One of the best ways to fight poverty is ◊link[economic-growth-poverty]{econom
    (x-ref
      "2019-09-05"
      "https://www.bbc.com/news/world-43512098"
-     "BBC: Trade wars, Trump tariffs and protectionism explained"))
+     "BBC (2019) Trade wars, Trump tariffs and protectionism explained"))
 ◊(define globalization-economic-growth
    (x-ref
      "2019-09-05"
      "https://www.thebalance.com/globalization-and-its-impact-on-economic-growth-1978843"
-     "The Impact of Globalization on Economic Growth"))
+     "The Balance: The Impact of Globalization on Economic Growth"))
 
 ◊ndef["containers"]{
     For an interesting angle on how globalization effected the world economy I recommend ◊(book-link the-box-book) by Marc Levinson.
@@ -203,7 +203,7 @@ One of the best ways to fight poverty is ◊link[economic-growth-poverty]{econom
    (x-ref
      "2019-09-05"
      "https://www.cato.org/publications/commentary/ending-mass-poverty"
-     "Ending Mass Poverty "))
+     "Ian Vásquez (2001) Ending Mass Poverty "))
 
 
 ◊subhead3{Shut-out from society}
@@ -230,12 +230,12 @@ In China mobile payments are growing like mad. If you're a tourist you should ge
    (x-ref
      "2019-09-05"
      "https://globalfindex.worldbank.org/sites/globalfindex/files/2018-04/2017%20Findex%20full%20report_0.pdf"
-     "The Global Findex Database 2017: Measuring Financial Inclusion and the Fintech Revolution"))
+     "The Global Findex Database (2017) Measuring Financial Inclusion and the Fintech Revolution"))
 ◊(define findex-interactive
    (x-ref
      "2019-09-05"
      "http://datawrapper.dwcdn.net/AmFVU/2/"
-     "Globally, 1.7 Billion Adults Lack an Account"))
+     "Datawrapper: Globally, 1.7 Billion Adults Lack an Account"))
 
 
 ◊subhead{What might cryptocurrencies help the unbanked with?}

@@ -10,11 +10,18 @@
 
 
 ◊epigraph{
-  ◊qt[#:src "Shooter (2007)" #:quote-src #t
-      #:url "https://www.imdb.com/title/tt0822854/"]{
+  ◊qt[#:src "Shooter (2007)"
+      #:quote-src #t
+      #:url shooter]{
     The moment you think you got it figured, you’re wrong.
   }
 }
+
+◊(define shooter
+   (x-ref
+     "2020-02-07"
+     "https://www.imdb.com/title/tt0822854/"
+     "Shooter (2007)"))
 
 One of the most important properties that let cryptocurrencies function well as money is the limited supply. If someone was allowed to print coins from thin air, it would be very poor money and would essentially be worthless.
 
@@ -51,12 +58,12 @@ The most popular class of tokens are probably the ◊link[erc20-standard]{ERC20 
    (x-ref
      "2020-02-07"
      "https://www.coinbase.com/usdc"
-     "USD Coin (USDC)"))
+     "Coinbase: USD Coin (USDC)"))
 ◊(define bnb
    (x-ref
      "2020-02-07"
      "https://coincentral.com/what-is-binance-coin-bnb/"
-     "What Is Binance Coin (BNB)? | A Guide to the Crypto of the Famous Exchange"))
+     "Bennett Garner (2018) What Is Binance Coin (BNB)? | A Guide to the Crypto of the Famous Exchange"))
 ◊(define omni
    (x-ref
      "2020-02-07"
@@ -66,7 +73,7 @@ The most popular class of tokens are probably the ◊link[erc20-standard]{ERC20 
    (x-ref
      "2020-02-07"
      "https://eips.ethereum.org/EIPS/eip-20"
-     "EIP 20: ERC-20 Token Standard"))
+     "Ethereum Improvement Proposals (2015) EIP 20: ERC-20 Token Standard"))
 
 
 ◊subhead{Initial coin offering}
@@ -111,12 +118,12 @@ Why would you want a token for this? The benefit would be that anyone, anywhere,
    (x-ref
      "2020-02-07"
      "https://www.investopedia.com/terms/i/initial-coin-offering-ico.asp"
-     "Initial Coin Offering (ICO)"))
+     "Jake Frankenfield: Initial Coin Offering (ICO)"))
 ◊(define ipo
    (x-ref
      "2020-02-07"
      "https://www.investopedia.com/terms/i/ipo.asp"
-     "Initial Public Offering (IPO)"))
+     "Adam Hayes: Initial Public Offering (IPO)"))
 ◊(define kickstarter
    (x-ref
      "2020-02-07"
@@ -243,17 +250,17 @@ I'm not suggesting that all derivatives should just use tokens, in many cases th
    (x-ref
      "2020-02-07"
      "https://www.investopedia.com/terms/d/derivative.asp"
-     "Derivative"))
+     "James Chen: Derivative"))
 ◊(define richest-men
    (x-ref
      "2020-02-07"
      "https://wealthygorilla.com/top-20-richest-people-world/"
-     "The 25 Richest People in the World 2020"))
+     "Dan Western (2020) The 25 Richest People in the World 2020"))
 ◊(define bearer-share
    (x-ref
      "2020-02-07"
      "https://www.investopedia.com/terms/b/bearer_share.asp"
-     "Bearer Share"))
+     "James Chen: Bearer Share"))
 ◊(define money-visualization
    (x-ref
      "2020-02-07"
@@ -268,12 +275,12 @@ I'm not suggesting that all derivatives should just use tokens, in many cases th
    (x-ref
      "2020-02-07"
      "https://www.apmex.com/gold-price"
-     "Live Gold Price Charts & Historical Data"))
+     "APMEX: Live USD Gold Price Charts & Historical Data"))
 ◊(define mined-gold
    (x-ref
      "2020-02-07"
      "https://www.gold.org/about-gold/gold-supply/gold-mining/how-much-gold"
-     "How much gold has been mined?"))
+     "World Gold Council: How much gold has been mined?"))
 ◊(define coinlib
    (x-ref
      "2020-02-07"

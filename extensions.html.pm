@@ -33,7 +33,7 @@ There are many different ways this could be useful and I've selected some exampl
    (x-ref
      "2019-09-21"
      "https://www.ibm.com/blockchain"
-     "IBM Blockchain is changing business, industries – and even the world"))
+     "IBM: IBM Blockchain is changing business, industries – and even the world"))
 
 
 ◊subhead{Embedding data}
@@ -111,22 +111,22 @@ The first thing we can observe is that it's possible to insert data into the led
    (x-ref
      "2019-09-21"
      "https://blockchair.com/bitcoin-cash/transaction/786816d4f92e9b8e78bf281e2b498daa526c93dc69a5e6b493c901928ee3f51d"
-     "Bitcoin transaction 786816d4f92e9b8e78bf281e2b498daa526c93dc69a5e6b493c901928ee3f51d"))
+     "Blockchair: Bitcoin transaction 786816d4f92e9b8e78bf281e2b498daa526c93dc69a5e6b493c901928ee3f51d"))
 ◊(define vanitygen
    (x-ref
      "2019-09-21"
      "https://en.bitcoin.it/wiki/Vanitygen"
-     "Vanitygen"))
+     "bitcoin.it wiki: Vanitygen"))
 ◊(define coinbase-ex
    (x-ref
      "2019-09-21"
      "https://blockchair.com/bitcoin/block/595563"
-     "Bitcoin block 595563"))
+     "Blockchair: Bitcoin block 595563"))
 ◊(define coinbase-txs
    (x-ref
      "2019-09-21"
      "https://learnmeabitcoin.com/glossary/coinbase-transaction"
-     "Coinbase Transaction: A transaction used to claim a block reward."))
+     "Greg Walker (2017) Coinbase Transaction: A transaction used to claim a block reward."))
 
 
 ◊subhead{Scripts}
@@ -137,7 +137,7 @@ Bitcoin does more than just transfer coins from one address to another. What it 
    (x-ref
      "2019-09-21"
      "https://en.bitcoin.it/wiki/Script"
-     "Bitcoin Script"))
+     "bitcoin.it wiki: Bitcoin Script"))
 
 ◊ndef["bitcoin-script"]{
     This is the script of a standard Bitcoin transaction (amount, destination and other data is specified elsewhere):
@@ -166,7 +166,7 @@ Now it doesn't matter if you know what a script is or how it works, just remembe
    (x-ref
      "2019-09-21"
      "https://www.cryptokitties.co/"
-     "CryptoKitties"))
+     "CryptoKitties: Collect and breed furrever friends!"))
 ◊(define turing-complete
    (x-ref
      "2019-09-21"
@@ -176,12 +176,12 @@ Now it doesn't matter if you know what a script is or how it works, just remembe
    (x-ref
      "2019-09-21"
      "https://blockgeeks.com/guides/ethereum-gas/"
-     "What is Ethereum Gas? [The Most Comprehensive Step-By-Step Guide Ever!]"))
+     "Blockgeeks: What is Ethereum Gas? [The Most Comprehensive Step-By-Step Guide Ever!]"))
 ◊(define multisig
    (x-ref
      "2019-09-21"
      "https://en.bitcoin.it/wiki/Multisignature"
-     "Bitcoin Multisignature"))
+     "bitcoin.it wiki: Bitcoin Multisignature"))
 ◊(define bitcoin-script-tutorial
    (x-ref
      "2019-09-21"
@@ -191,6 +191,6 @@ Now it doesn't matter if you know what a script is or how it works, just remembe
    (x-ref
      "2019-09-21"
      "https://solidity.readthedocs.io/en/v0.5.11/"
-     "Solidity"))
+     "Solidity docs v0.5.11"))
 
 ◊(list-xrefs)

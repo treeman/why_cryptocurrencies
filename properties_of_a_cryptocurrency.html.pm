@@ -173,7 +173,7 @@ Cryptocurrencies are inherently global. They're usable wherever you are as long 
   (x-ref
     "2019-04-24"
     "http://inflationmatters.com/keynesian-inflation-theory/"
-    "Keynesian Inflation Theory"))
+    "Inflation matters: Keynesian Inflation Theory"))
 ◊(define inflation-bad 
   (x-ref
     "2019-04-24"
@@ -184,7 +184,7 @@ Cryptocurrencies are inherently global. They're usable wherever you are as long 
   (x-ref
     "2019-04-24"
     "https://podcast.bitcoin.com/e799-Austrian-Economics-for-Bitcoiners-with-Jeffrey-Tucker-part-1"
-    "Austrian Economics for Bitcoiners with Jeffrey Tucker (part 1)"))
+    "The Bitcoin.com Podcast Network (2019) Austrian Economics for Bitcoiners with Jeffrey Tucker (part 1)"))
 
 ◊(define coinjoin 
   (x-ref
@@ -197,6 +197,6 @@ Cryptocurrencies are inherently global. They're usable wherever you are as long 
   (x-ref
     "2019-04-24"
     "https://fullstacks.org/materials/ethereumbook/16_appdx-forks-history.html"
-    "Ethereum Fork History"))
+    "fullstacks.org: Ethereum Fork History"))
 
 ◊(list-xrefs)

@@ -22,7 +22,7 @@
   (x-ref
     "2019-05-06"
     "https://www.youtube.com/watch?v=DHc81OL_hk4&feature=youtu.be&t=21235"
-    "Baltic Honeybadger 2017 Bitcoin Conference"))
+    "YouTube: Baltic Honeybadger 2017 Bitcoin Conference"))
 
 A snake oil salesperson sells, or promotes, a valueless or fraudulent solution. The cryptocurrency space is full of such people and broken solutions.
 
@@ -144,17 +144,17 @@ There are many traps to fall into in this space. I think the best antidote is to
   (x-ref
     "2019-05-06"
     "https://decryptmedia.com/5173/jp-morgan-coin-cryptocurrency"
-    "JP Morgan Coin: The next big cryptocurrency?"))
+    "Tim Copeland (2019) JP Morgan Coin: The next big cryptocurrency?"))
 ◊(define tether-backed-74
   (x-ref
     "2019-05-06"
     "https://www.bloomberg.com/news/articles/2019-04-30/tether-says-stablecoin-is-only-backed-74-by-cash-securities"
-    "Tether Says Stablecoin Is Only Backed 74% by Cash, Securities"))
+    "Olga Kharif (2019) Tether Says Stablecoin Is Only Backed 74% by Cash, Securities"))
 ◊(define dash
   (x-ref
     "2019-05-06"
     "https://bitcointalk.org/index.php?topic=999886.0"
-    "bitcointalk.org: Why the darkcoin/dash/dashpay instamine matters "))
+    "bitcointalk.org (2015) Why the darkcoin/dash/dashpay instamine matters "))
 ◊(define git
   (x-ref
     "2019-05-06"
@@ -164,32 +164,32 @@ There are many traps to fall into in this space. I think the best antidote is to
   (x-ref
     "2019-05-06"
     "https://www.bloomberg.com/news/articles/2019-03-08/onecoin-leaders-charged-in-u-s-with-operating-pyramid-scheme"
-    "OneCoin Leaders Charged in Multibillion-Dollar Pyramid Scam"))
+    "Chris Dolmetsch (2019) OneCoin Leaders Charged in Multibillion-Dollar Pyramid Scam"))
 ◊(define fbi-bitconnect
   (x-ref
     "2019-05-06"
     "https://www.fbi.gov/resources/victim-services/seeking-victim-information/seeking-victims-in-bitconnect-investigation"
-    "Seeking Victims in Bitconnect Investigation"))
+    "FBI (2019) Seeking Victims in Bitconnect Investigation"))
 ◊(define bitcoin-censorship
   (x-ref
     "2019-05-06"
     "https://medium.com/@johnblocke/a-brief-and-incomplete-history-of-censorship-in-r-bitcoin-c85a290fe43"
-    "A (brief and incomplete) history of censorship in /r/Bitcoin"))
+    "John Blocke (2016) A (brief and incomplete) history of censorship in /r/Bitcoin"))
 ◊(define bitcoin-censorship2
   (x-ref
     "2019-05-06"
     "https://www.reddit.com/r/btc/comments/83vgdm/a_collection_of_evidence_regarding_bitcoins/"
-    "A collection of evidence regarding Bitcoin's takeover and problems."))
+    "thepaip (2018) A collection of evidence regarding Bitcoin's takeover and problems."))
 ◊(define bitcoin-censorship3
   (x-ref
     "2019-05-06"
     "https://www.reddit.com/r/noncensored_bitcoin/comments/7414nf/september_2017_stats_post/"
-    "r/noncensored_bitcoin: September 2017 Stats Post"))
+    "Wezz (2017) September 2017 Stats Post"))
 ◊(define r/cryptocurrency-censorship
   (x-ref
     "2019-05-06"
     "https://www.trustnodes.com/2019/05/01/the-cryptocurrency-sub-tests-censorship-after-bitcoin-core-supporter-suddenly-becomes-top-mod"
-    "The Cryptocurrency Sub Tests Censorship After Bitcoin Core Supporter Suddenly Becomes Top Mod"))
+    "Trustnodes (2019) The Cryptocurrency Sub Tests Censorship After Bitcoin Core Supporter Suddenly Becomes Top Mod"))
 ◊(define coinmarketcap
   (x-ref
     "2020-09-21"

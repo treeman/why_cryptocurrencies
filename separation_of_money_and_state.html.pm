@@ -38,7 +38,7 @@ But the idea of separating money from state made me go "Wow, that could actually
   (x-ref
     "2020-02-05"
     "https://www.youtube.com/watch?v=-yIZBUgKfuw"
-    "Sabaton - Carolus Rex (English) (lyrics) HD (5 min)"))
+    "YouTube (2015) Sabaton - Carolus Rex (English) (lyrics) HD (5 min)"))
 
 I know it might be difficult to entertain the notion that a country shouldn't control their own money, and that the mere suggestion is outrageous.  If this is the case for you, consider the historically similar relationship between religion and state:
 
@@ -66,22 +66,22 @@ Separating church from the state was once unthinkable, yet it's now a given that
    (x-ref
      "2020-02-05"
      "https://www.britannica.com/biography/Gustav-I-Vasa"
-     "Gustav I Vasa"))
+     "Britannica: Gustav I Vasa"))
 ◊(define reformation
    (x-ref
      "2020-02-05"
      "https://www.britannica.com/event/Reformation"
-     "Reformation"))
+     "Britannica: Reformation"))
 ◊(define separation
    (x-ref
      "2020-02-05"
      "https://popularhistoria.se/sveriges-historia/kyrkan-och-staten-en-historisk-separation"
-     "Kyrkan och staten – en historisk separation"))
+     "Thorsten Sandberg (2002) Kyrkan och staten – en historisk separation"))
 ◊(define least-religious
    (x-ref
      "2020-02-05"
      "https://www.worldatlas.com/articles/least-religious-countries-in-the-world.html"
-     "The Least Religious Countries In The World"))
+     "Oishimaya Sen Nag (2018) The Least Religious Countries In The World"))
 
 ◊;Sweden 1 Jan 2000 formally separated the church from the state.
 ◊;https://www.dagen.se/dokument/sa-fri-ar-svenska-kyrkan-fran-staten-egentligen-1.1632522
@@ -104,7 +104,7 @@ Gold might also be an example of money outside of state control---there's nobody
    (x-ref
      "2020-02-05"
      "https://www.investopedia.com/terms/d/debasement.asp"
-     "Debasement"))
+     "Clay Halton: Debasement"))
 
 Maybe a better example is shell money, or other money found in nature, where you just pick them up and start using them. Although they're lacking compared to coins or modern money, there's no one in charge of minting or stamping shells.
 
@@ -166,12 +166,12 @@ Which scenario is more likely? And what would the ideal scenario look like? That
    (x-ref
      "2020-02-05"
      "https://www.investopedia.com/articles/forex/040915/countries-use-us-dollar.asp"
-     "Countries That Use The U.S. Dollar"))
+     "Troy Adkins: Countries That Use The U.S. Dollar"))
 ◊(define apollo-smartphone
    (x-ref
      "2020-02-05"
      "https://www.zmescience.com/research/technology/smartphone-power-compared-to-apollo-432/"
-     "Your smartphone is millions of times more powerful than the Apollo 11 guidance computers"))
+     "Tibi Puiu (2020) Your smartphone is millions of times more powerful than the Apollo 11 guidance computers"))
 ◊(define e-krona
    (x-ref
      "2020-02-05"

@@ -55,7 +55,7 @@ Am I qualified to write about cryptocurrencies? Am I a cryptocurrency expert? I 
    (x-ref
     "2019-04-12"
     "https://www.grapplearts.com/japanese-jiujitsu-vs-bjj/"
-    "Japanese Jiujitsu vs BJJ"))
+    "Stephan Kesting (2018) Japanese Jiujitsu vs BJJ"))
 ◊(define lockpicking 
    (x-ref
     #f

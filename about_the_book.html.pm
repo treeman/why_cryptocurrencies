@@ -136,41 +136,41 @@ Well, the only advice I'll give is to understand what you're investing in, and m
    (x-ref
      "2020-02-18"
      "https://www.schneier.com/blog/archives/2019/02/blockchain_and_.html"
-     "Schneier on Security: Blockchain and trust"))
+     "Bruce Schneier (2019) Blockchain and trust"))
 ◊(define cnn-bitcoin-rallies
    (x-ref
      "2020-02-18"
      "https://money.cnn.com/2017/12/06/investing/bitcoin-rally-hits-12000/index.html"
-     "CNN Business: The bitcoin rally is back on: It just zoomed above $13,000 (2017)"))
+     "CNN Business (2017) The bitcoin rally is back on: It just zoomed above $13,000"))
 ◊(define independent-worthless 
    (x-ref
      "2020-02-18"
      "https://www.independent.co.uk/voices/bitcoin-cryptocurrency-price-crash-bank-of-england-agustin-carstens-a8645356.html"
-     "Independent: Cryptocurrencies are about to become worthless – and this is what will happen when they crash (2018)"))
+     "Independent (2018) Cryptocurrencies are about to become worthless – and this is what will happen when they crash"))
 ◊(define cnn-environment
    (x-ref
      "2020-02-18"
      "https://money.cnn.com/2017/12/07/technology/bitcoin-energy-environment/index.html"
-     "CNN: Bitcoin boom may be a disaster for the environment"))
+     "CNN Business (2017) Bitcoin boom may be a disaster for the environment"))
 ◊(define independent-illegal
    (x-ref
      "2020-02-18"
      "https://www.independent.co.uk/life-style/gadgets-and-tech/news/bitcoin-price-fall-criminals-blockchain-anonymous-cryptocurrency-zcash-monero-dash-a8174716.html"
-     "Independent: Bitcoin price is so high because criminals are using it for illegal trades, research suggests"))
+     "Independent (2018) Bitcoin price is so high because criminals are using it for illegal trades, research suggests"))
 ◊(define cryptokitties
    (x-ref
      "2020-02-18"
      "https://www.cnbc.com/2017/12/06/meet-cryptokitties-the-new-digital-beanie-babies-selling-for-100k.html"
-     "Meet CryptoKitties, the $100,000 digital beanie babies epitomizing the cryptocurrency mania"))
+     "CNBC (2017) Meet CryptoKitties, the $100,000 digital beanie babies epitomizing the cryptocurrency mania"))
 ◊(define tulip-mania
    (x-ref
      "2020-02-18"
      "https://www.britannica.com/event/Tulip-Mania"
-     "Tulip Mania"))
+     "Britannica: Tulip Mania"))
 ◊(define beanie 
    (x-ref
      "2020-02-18"
      "https://nypost.com/2015/02/22/how-the-beanie-baby-craze-was-concocted-then-crashed/"
-     "How the Beanie Baby craze was concocted — then crashed"))
+     "New York Post (2015) How the Beanie Baby craze was concocted — then crashed"))
 
 ◊(list-xrefs)

@@ -20,7 +20,7 @@
    (x-ref
      "2020-01-31"
      "https://80000hours.org/podcast/episodes/bruce-schneier-security-secrets-and-surveillance/"
-     "Bruce Schneier on how insecure electronic voting could break the United States — and surveillance without tyranny"))
+     "80,000 hours (2019) Bruce Schneier on how insecure electronic voting could break the United States — and surveillance without tyranny"))
 
 In this chapter we'll look at some of the problems with the way we vote and how we might use cryptocurrencies (or "the blockchain") to make an improved voting scheme.
 
@@ -99,12 +99,12 @@ But we also saw some problems that are caused by using paper votes:◊mn{paper?}
    (x-ref
      "2020-01-31"
      "https://www.britannica.com/event/Bush-v-Gore"
-     "Bush v. Gore, law case"))
+     "Britannica: Bush v. Gore, law case"))
 ◊(define butterfly-disaster
    (x-ref
      "2020-01-31"
      "https://www.asktog.com/columns/042ButterflyBallot.html"
-     "The Butterfly Ballot: Anatomy of a Disaster"))
+     "Ask TOG (2001) The Butterfly Ballot: Anatomy of a Disaster"))
 
 
 ◊subhead{The problems with electronic voting}
@@ -160,45 +160,45 @@ In order to address some of the problems with paper voting, electronic voting is
     }
 }
 
-For a convincing case against electronic voting I recommend Jennifer Cohn's article ◊link[us-corruption]{America’s Electronic Voting System is Corrupted to the Core}.
+For a convincing case against electronic voting I recommend Jennifer Cohn's article ◊em{◊link[us-corruption]{America’s Electronic Voting System is Corrupted to the Core}}.
 
-On the other hand many of these problems can be mitigated, see the paper ◊link[public-evidence-from-secret-ballots]{Public Evidence from Secret Ballots} for a good rundown.
+On the other hand many of these problems can be mitigated, see the paper ◊em{◊link[public-evidence-from-secret-ballots]{Public Evidence from Secret Ballots}} for a good rundown.
 
 ◊(define us-corruption
    (x-ref
      "2020-01-31"
      "https://medium.com/@jennycohn1/americas-electronic-voting-system-is-corrupted-to-the-core-1f55f34f346e"
-     "America’s Electronic Voting System is Corrupted to the Core"))
+     "Jennifer Cohn (2019) America’s Electronic Voting System is Corrupted to the Core"))
 ◊(define georgia-legal-battle
    (x-ref
      "2020-01-31"
      "https://www.washingtonpost.com/world/national-security/in-georgia-a-legal-battle-over-electronic-vs-paper-voting/2018/09/16/d655c070-b76f-11e8-94eb-3bd52dfe917b_story.html"
-     "In Georgia, a legal battle over electronic vs. paper voting"))
+     "Ellen Nakashima (2018) In Georgia, a legal battle over electronic vs. paper voting"))
 ◊(define inadequately-tested
    (x-ref
      "2020-01-31"
      "https://www.nytimes.com/2020/02/03/us/politics/iowa-caucus-app.html"
-     "App Used to Tabulate Votes Is Said to Have Been Inadequately Tested"))
+     "Nick Corasaniti, Sheera Frenkel, Nicole Perlroth (2020) App Used to Tabulate Votes Is Said to Have Been Inadequately Tested"))
 ◊(define chicago-privacy
    (x-ref
      "2020-01-31"
      "https://www.upguard.com/breaches/cloud-leak-chicago-voters"
-     "The Chicago Way: An Electronic Voting Firm Exposes 1.8M Chicagoans"))
+     "UpGuard Team (2017) The Chicago Way: An Electronic Voting Firm Exposes 1.8M Chicagoans"))
 ◊(define vote-flipping
    (x-ref
      "2020-01-31"
      "https://heavy.com/news/2016/10/vote-flipping-georgia-texas-north-carolina-nevada-hillary-clinton-machines-donald-trump-rigged-fraud/"
-     "Vote Flipping: Were Clinton Votes Changed to Trump in Georgia?"))
+     "Jessica McBride (2016) Vote Flipping: Were Clinton Votes Changed to Trump in Georgia?"))
 ◊(define 191-mil-us-voters
    (x-ref
      "2020-01-31"
      "https://www.forbes.com/sites/thomasbrewster/2015/12/28/us-voter-database-leak/"
-     "191 Million US Voter Registration Records Leaked In Mystery Database"))
+     "Thomas Brewster (2015) 191 Million US Voter Registration Records Leaked In Mystery Database"))
 ◊(define 191-reddit
    (x-ref
      "2020-01-31"
      "https://www.reddit.com/r/privacy/comments/3yinij/entire_us_voter_registration_record_leaks_191/"
-     "Entire US voter registration record leaks (191 million)"))
+     "FoundTheStuff (2015) Entire US voter registration record leaks (191 million)"))
 
 
 ◊subhead{A blockchain voting system}
@@ -259,7 +259,7 @@ As an alternative I'll try to present a high level description of a blockchain v
    (x-ref
      "2020-01-31"
      "https://www.investopedia.com/terms/d/denial-service-attack-dos.asp"
-     "Denial Of Service Attack (DoS)"))
+     "Jake Frankenfield: Denial Of Service Attack (DoS)"))
 
 ◊(define direct-democracy
    (x-ref
@@ -374,7 +374,7 @@ The big question to ask is why would we want voting on a blockchain anyway? Why 
 
 ◊note-pos{efficiency}
 
-As pointed out in the paper ◊link[public-evidence-from-secret-ballots]{Public Evidence from Secret Ballots} it's possible to create an end-to-end verifiable electronic voting scheme even without the blockchain---which isn't surprising since the blockchain is just a database. They also say that because we already trust a central entity to give out the voting privileges, we can just trust them to publish a ledger of the events, making the blockchain obsolete.
+As pointed out in the paper ◊em{◊link[public-evidence-from-secret-ballots]{Public Evidence from Secret Ballots}} it's possible to create an end-to-end verifiable electronic voting scheme even without the blockchain---which isn't surprising since the blockchain is just a database. They also say that because we already trust a central entity to give out the voting privileges, we can just trust them to publish a ledger of the events, making the blockchain obsolete.
 
 They say a lot of other things too, and I recommend you read the paper as it goes through a lot of the difficulties and possible solutions with voting systems. It's not as simple as I may have led you to believe.
 
@@ -392,6 +392,6 @@ While there are benefits to blockchain voting, there are many problems we need t
    (x-ref
      "2020-01-31"
      "https://arxiv.org/pdf/1707.08619.pdf"
-     "Public Evidence from Secret Ballots (PDF)"))
+     "Matthew Bernhard et al (2017) Public Evidence from Secret Ballots"))
 
 ◊(list-xrefs)

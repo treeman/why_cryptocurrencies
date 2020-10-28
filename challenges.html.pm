@@ -42,8 +42,10 @@ You can have the best website in the world---beautiful, lightning fast and with 
 ◊ndef["twitter-bad"]{
     I find Twitter's user experience so bad I can't stand to read, yet alone use it.
 
-    Another bad example is Reddit's new design, but luckily you still access the old design at ◊link{https://old.reddit.com/}. I fear for the day when that option is removed.
+    Another bad example is Reddit's new design, but luckily you still access the old design at ◊(link old-reddit). I fear for the day when that option is removed.
 }
+
+◊(define old-reddit "https://old.reddit.com")
 
 
 The network effect is directly correlated to ◊link[money-functions]{the functions of money}: a medium of exchange, a unit of account and a store of value. If more people use a currency, the better it'll function as money, and if very few use it the worse it'll be.
@@ -92,7 +94,7 @@ Bitcoin, like most cryptocurrencies, uses a public ledger where all transactions
    (x-ref
      "2020-03-17"
      "https://www.chainalysis.com/"
-     "The Blockchain Analysis Company - Chainalysis"))
+     "Chainalysis: The Blockchain Analysis Company"))
 
 ◊img[#:src "/images/coin-tracing.png" #:alt "Paying someone with allows you to see their funds."]{
     After the merchant receives a payment from John, the merchant can see that John has sent 13 BTC to another address and that John still has 40 - 1 - 13 = 26 BTC on the original address.
@@ -139,7 +141,7 @@ With this privacy scheme governments can still ◊link[blacklisting]{blacklist c
 ◊link[Monero]{Monero} tries to solve this by hiding amounts and obscuring addresses for all transactions:
 
 ◊img[#:src "/images/monero-transactions.png" #:alt "A Monero transaction comes from one of several possible addresses."]{
-    This is how the Monero blockchain appears to an observer. Each input is hidden among other transactions, but we cannot tell which one is real and which are fake. Receiving addresses are protected by ◊def{stealth addresses} and all amounts are also hidden.
+    This is how the Monero blockchain appears to an observer. Each input is hidden among other transactions using ◊def{ring signatures}, but we cannot tell which one is real and which are fake. Receiving addresses are protected by ◊def{stealth addresses} and all amounts are also hidden.
 }
 
 ◊img[#:src "/images/monero-transactions2.png" #:alt "The receiver of a transaction can see which is the correct one."]{
@@ -158,27 +160,27 @@ There are other ideas of how to improve privacy and fungibility for cryptocurren
    (x-ref
      "2020-03-17"
      "https://z.cash/technology/"
-     "How it works | Zcash"))
+     "Zcash: How it works"))
 ◊(define coinjoin
    (x-ref
      "2020-03-17"
      "https://en.bitcoin.it/wiki/CoinJoin"
-     "CoinJoin"))
+     "bitcoin.it wiki: CoinJoin"))
 ◊(define rich-list
    (x-ref
      "2020-03-17"
      "https://blockchair.com/bitcoin/addresses"
-     "Blockchair Bitcoin addresses"))
+     "Blockchair: Bitcoin addresses"))
 ◊(define zcash-problem
    (x-ref
      "2020-03-17"
      "http://jeffq.com/blog/on-the-linkability-of-zcash-transactions/"
-     "On the linkability of Zcash transactions"))
+     "jeffq (2017) On the linkability of Zcash transactions"))
 ◊(define blacklisting
    (x-ref
      "2020-03-17"
      "https://home.treasury.gov/news/press-releases/sm556"
-     "Treasury Designates Iran-Based Financial Facilitators of Malicious Cyber Activity and for the First Time Identifies Associated Digital Currency Addresses"))
+     "U.S. Department of the Treasury (2018) Treasury Designates Iran-Based Financial Facilitators of Malicious Cyber Activity and for the First Time Identifies Associated Digital Currency Addresses"))
 
 
 ◊subhead{Scalability}
@@ -234,7 +236,7 @@ There are a number of technical pain points that needs to be improved to scale a
    (x-ref
      "2020-03-17"
      "https://www.blockchain.com/charts/blocks-size"
-     "Size of the Bitcoin blockchain"))
+     "Blockchain.com: Size of the Bitcoin blockchain"))
 
 ◊ndef["validation-less-mining"]{
     Miners can delay transaction validation and only validate the POW of a block and start mining it directly. This is a fair assumption as it's very expensive to produce a valid POW for a block.
@@ -265,7 +267,7 @@ It may ultimately be impossible to scale a cryptocurrency so that ◊em{everyone
    (x-ref
      "2020-03-17"
      "https://www.statista.com/statistics/218495/paypals-net-number-of-payments-per-quarter/"
-     "PayPal's net number of payments from 1st quarter 2014 to 4th quarter 2019"))
+     "statista: PayPal's net number of payments from 1st quarter 2014 to 4th quarter 2019"))
 ◊; 150 million tx/day
 ◊; 150000000/(24 *60*60)
 ◊; 1736.111111111111
@@ -273,7 +275,7 @@ It may ultimately be impossible to scale a cryptocurrency so that ◊em{everyone
    (x-ref
      "2020-03-17"
      "https://usa.visa.com/run-your-business/small-business-tools/retail.html"
-     "Small Business Retail | VISA"))
+     "Visa: Small Business Retail"))
 
 ◊(define avalanche
    (x-ref
@@ -284,22 +286,22 @@ It may ultimately be impossible to scale a cryptocurrency so that ◊em{everyone
    (x-ref
      "2020-03-17"
      "https://blog.plan99.net/the-resolution-of-the-bitcoin-experiment-dabb30201f7?gi=c2a62f310034"
-     "The resolution of the Bitcoin experiment"))
+     "Mike Hearn (2016) The resolution of the Bitcoin experiment"))
 ◊(define bch
    (x-ref
      "2020-04-19"
      "https://www.bitcoin.com/get-started/what-is-bitcoin-cash/"
-     "What is Bitcoin Cash?"))
+     "bitcoin.com: What is Bitcoin Cash?"))
 ◊(define history-blocksize
    (x-ref
      "2020-03-17"
      "https://hackernoon.com/the-great-bitcoin-scaling-debate-a-timeline-6108081dbada"
-     "The Great Bitcoin Scaling Debate — A Timeline"))
+     "Daniel Morgan (2017) The Great Bitcoin Scaling Debate — A Timeline"))
 ◊(define luke-300kb
    (x-ref
      "2020-03-17"
      "https://news.bitcoin.com/core-developers-300kb-block-proposal-bolstered-in-bid-to-push-lightning-adoption/"
-     "Core Developer's 300kb Block Proposal Bolstered in Bid to Push Lightning Adoption"))
+     "Jamie Redman (2019) Core Developer's 300kb Block Proposal Bolstered in Bid to Push Lightning Adoption"))
 
 
 ◊subhead{Energy usage}
@@ -333,7 +335,7 @@ The issue is that cryptocurrencies with proof-of-work use a lot of energy. Bitco
    (x-ref
      "2020-03-17"
      "https://www.blockchainanalytics.pro/btc/electricity-consumption/"
-     "Bitcoin (BTC) network electricity consumption"))
+     "Blockchain Analytics: Bitcoin (BTC) network electricity consumption"))
 ◊(define worlddata
    (x-ref
      "2020-03-17"
@@ -343,7 +345,7 @@ The issue is that cryptocurrencies with proof-of-work use a lot of energy. Bitco
    (x-ref
      "2020-03-17"
      "https://coinsharesgroup.com/research/bitcoin-mining-network-december-2019"
-     "Bitcoin Mining Network Report December 2019 | Research | CoinShares"))
+     "CoinShares Research (2019) Bitcoin Mining Network Report December 2019 | Research | CoinShares"))
 
 This is absolutely a big problem, but there are some important points we need to keep in mind:
 

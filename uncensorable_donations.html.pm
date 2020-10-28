@@ -22,7 +22,7 @@
   (x-ref
     "2019-08-28"
     "https://wikileaks.org/wiki/Draft:About"
-    "WikiLeaks Drafts:About"))
+    "WikiLeaks: Drafts:About"))
 
 In the ◊link[freezing_of_merchant_accounts]{last} two ◊link[undesirable_businesses]{chapters} we looked at the issues with digital payments, but when you think about donations you wouldn't assume they have the same problems as payments have. For example when donating money to a charity, like ◊link[charity-water]{Charity Water}, they don't have to be worried of ◊link[charge-back-fraud]{charge back fraud} because you're voluntarily giving them money.◊sn{charity-fees} But the same problem with third-party censorship is relevant here as well.◊sn{voluntary}
 
@@ -50,7 +50,7 @@ Donations is an excellent use case for cryptocurrencies, as they cannot be censo
   (x-ref
     "2019-08-28"
     "https://allthatsinteresting.com/cambodian-genocide"
-    "33 Haunting Photos From The Killing Fields Of The Cambodian Genocide"))
+    "Mark Oliver (2017) 33 Haunting Photos From The Killing Fields Of The Cambodian Genocide"))
 ◊(define charity-water
   (x-ref
     "2019-08-28"
@@ -99,12 +99,12 @@ Censorship is a ◊link[censorship-global]{global problem} and is a big problem 
   (x-ref
     "2019-08-28"
     "https://www.breitbart.com/tech/2016/06/12/reddit-topics-censored-users-banned-linking-orlando-shootings-islam/"
-    "Reddit Mods Delete Orlando Shooting Posts Because Attacker Was Muslim"))
+    "Allum Bokhari (2016) Reddit Mods Delete Orlando Shooting Posts Because Attacker Was Muslim"))
 ◊(define censorship-global
   (x-ref
     "2019-08-28"
     "https://cpj.org/2015/04/10-most-censored-countries.php"
-    "10 Most Censored Countries"))
+    "Committee to Protect Journalists (2015) 10 Most Censored Countries"))
 ◊(define hk-fp
   (x-ref
     "2019-08-28"
@@ -119,17 +119,17 @@ Censorship is a ◊link[censorship-global]{global problem} and is a big problem 
   (x-ref
     "2019-08-28"
     "https://www.howtogeek.com/162092/htg-explains-how-the-great-firewall-of-china-works/"
-    "How the “Great Firewall of China” Works to Censor China’s Internet"))
+    "Chris Hoffman (2017) How the “Great Firewall of China” Works to Censor China’s Internet"))
 ◊(define hong-kong-protests
   (x-ref
     "2019-08-28"
     "https://thefederalist.com/2019/07/25/hong-kong-protest-beijings-new-tiananmen-square/"
-    "The Hong Kong Protest Is Beijing’s New Tiananmen Square"))
+    "Helen Raleigh (2019) The Hong Kong Protest Is Beijing’s New Tiananmen Square"))
 ◊(define china-forgettance
    (x-ref
      "2019-08-28"
      "https://www.bbc.com/news/blogs-china-blog-48455582"
-     "BBC: Tiananmen 30 years on - China's great act of 'forgettance'"))
+     "John Sudworth (2019) Tiananmen 30 years on - China's great act of 'forgettance'"))
 ◊(define wikipedia-tiananmen
   (x-ref
     "2019-08-28"
@@ -139,12 +139,12 @@ Censorship is a ◊link[censorship-global]{global problem} and is a big problem 
   (x-ref
     "2019-08-28"
     "https://pen.org/press-release/deng-chuanbin-arrest/"
-    "Arrest of Chinese Filmmaker Deng Chuanbin Represents the Extreme Lengths of Chinese Authorities to Silence Artistic Voices"))
+    "PEN America (2019) Arrest of Chinese Filmmaker Deng Chuanbin Represents the Extreme Lengths of Chinese Authorities to Silence Artistic Voices"))
 ◊(define china-reeducation
   (x-ref
     "2019-08-28"
     "https://www.amnesty.org/en/latest/news/2018/09/china-up-to-one-million-detained/"
-    "Up to one million detained in China’s mass “re-education” drive"))
+    "Amnesty (2018) Up to one million detained in China’s mass “re-education” drive"))
 
 
 ◊subhead{A short history of WikiLeaks}
@@ -177,7 +177,7 @@ This is ◊strong{not} a glorification of WikiLeaks---they have ◊link[wikileak
   (x-ref
     "2019-08-28"
     "https://www.wired.com/2016/07/wikileaks-officially-lost-moral-high-ground/"
-    "WikiLeaks Has Officially Lost the Moral High Ground"))
+    "Emma Grey Ellis (2016) WikiLeaks Has Officially Lost the Moral High Ground"))
 
 
 ◊section[#:class "wikileaks"]{
@@ -590,17 +590,17 @@ This is ◊strong{not} a glorification of WikiLeaks---they have ◊link[wikileak
   (x-ref
     "2019-08-28"
     "https://www.mcclatchydc.com/news/special-reports/article24696685.html"
-    "Iraqi children in U.S. raid shot in head, U.N. says"))
+    "Matthew Schofield (2011) Iraqi children in U.S. raid shot in head, U.N. says"))
 ◊(define civilian-deaths-iraq
   (x-ref
     "2019-08-28"
     "https://abcnews.go.com/Politics/wikileaks-iraqi-civilian-deaths-higher-reported/story?id=11953723"
-    "WikiLeaks Documents Reveal Death Count, Torture"))
+    "Russell Goldman, Luis Martinez (2010) WikiLeaks Documents Reveal Death Count, Torture"))
 ◊(define satoshi-quote
   (x-ref
     "2019-08-28"
     "http://archive.fo/Gvonb#msg26999"
-    "bitcointalk.org: Satoshi, Dec 5, 2010"))
+    "bitcointalk.org (2010) Satoshi Re: Wikileaks contact info?"))
 
 ◊(define wikileaks-history
   (x-ref
@@ -611,53 +611,53 @@ This is ◊strong{not} a glorification of WikiLeaks---they have ◊link[wikileak
   (x-ref
     "2019-08-28"
     "https://www.bbc.com/news/uk-18260914"
-    "BBC: Julian Assange loses extradition appeal at Supreme Court"))
+    "BBC (2012) Julian Assange loses extradition appeal at Supreme Court"))
 ◊(define assange-asylum-granted
   (x-ref
     "2019-08-28"
     "https://www.bbc.com/news/uk-19281492"
-    "BBC: Julian Assange: Ecuador grants Wikileaks founder asylum"))
+    "BBC (2012) Julian Assange: Ecuador grants Wikileaks founder asylum"))
 ◊(define assange-indicted
   (x-ref
     "2019-08-28"
     "https://www.nytimes.com/2019/05/23/us/politics/assange-indictment.html"
-    "The New York Times: Assange Indicted Under Espionage Act, Raising First Amendment Issues"))
+    "Charlie Savage (2019) Assange Indicted Under Espionage Act, Raising First Amendment Issues"))
 ◊(define assange-rape
   (x-ref
     "2019-08-28"
     "https://www.bbc.com/news/world-11047025"
-    "BBC: Wikileaks founder Julian Assange accused of rape"))
+    "BBC (2010) Wikileaks founder Julian Assange accused of rape"))
 ◊(define assange-international-arrest
   (x-ref
     "2019-08-28"
     "https://www.bbc.com/news/world-europe-11803703"
-    "BBC: Wikileaks' Assange faces international arrest warrant"))
+    "BBC (2010) Wikileaks' Assange faces international arrest warrant"))
 ◊(define assange-events
   (x-ref
     "2019-08-28"
     "https://www.bbc.com/news/world-europe-11949341"
-    "BBC: Julian Assange: A timeline of Wikileaks founder's case"))
+    "BBC (2019) Julian Assange: A timeline of Wikileaks founder's case"))
 ◊(define obama-guantanamo
   (x-ref
     "2019-08-28"
     "https://www.nbcnews.com/news/us-news/president-obama-expected-make-statement-guantanamo-n524131"
-    "Guantanamo Bay: Obama Announces Plan to Close Controversial Detention Facility"))
+    "Halimah Abdullah (2016) Guantanamo Bay: Obama Announces Plan to Close Controversial Detention Facility"))
 
 ◊(define collateral-murder-wikileaks
   (x-ref
     "2019-08-28"
     "https://collateralmurder.wikileaks.org/"
-    "WikiLeaks: Collateral Murder"))
+    "WikiLeaks (2012) Collateral Murder"))
 ◊(define collateral-murder-17
   (x-ref
     "2019-08-28"
     "https://www.youtube.com/watch?v=5rXPrfnU3G0"
-    "YouTube: Collateral Murder (17 min)"))
+    "YouTube (2010) Collateral Murder (17 min)"))
 ◊(define collateral-murder-full
   (x-ref
     "2019-08-28"
     "https://www.youtube.com/watch?v=is9sxRfU-ik"
-    "YouTube: Collateral Murder (39 min)"))
+    "YouTube (2010) Collateral Murder (39 min)"))
 ◊(define collateral-murder-transcripts
   (x-ref
     "2019-08-28"
@@ -668,48 +668,48 @@ This is ◊strong{not} a glorification of WikiLeaks---they have ◊link[wikileak
   (x-ref
     "2019-08-28"
     "https://wikileaks.org/PayPal-freezes-WikiLeaks-donations.html"
-    "WikiLeaks: PayPal freezes WikiLeaks donations"))
+    "WikiLeaks (2010) PayPal freezes WikiLeaks donations"))
 ◊(define banking-blockade
   (x-ref
     "2019-08-28"
     "https://wikileaks.org/Banking-Blockade.html"
-    "WkiLeaks: Banking Blockade"))
+    "WkiLeaks (2011) Banking Blockade"))
 ◊(define illegal-blockade
   (x-ref
     "2019-08-28"
     "https://wikileaks.org/Protesters-against-WikiLeaks.html"
-    "WikiLeaks: Protesters against WikiLeaks banking blockade, the \"PayPal 14\", largely victorious"))
+    "WikiLeaks (2014) Protesters against WikiLeaks banking blockade, the \"PayPal 14\", largely victorious"))
 ◊(define assange-bitcoin-ama-msg
   (x-ref
     "2019-08-28"
     "https://www.reddit.com/r/technology/comments/2ghp54/i_am_julian_assange_ama_about_my_new_book_when/ckjcmyw/"
-    "AMA with Julian Assange on Reddit (Sep 2014)"))
+    "Julian Assange (2014) AMA with Julian Assange on Reddit"))
 ◊(define manning-commutes
   (x-ref
     "2019-08-28"
     "https://www.nytimes.com/2017/01/17/us/politics/obama-commutes-bulk-of-chelsea-mannings-sentence.html"
-    "Chelsea Manning to Be Released Early as Obama Commutes Sentence"))
+    "Charlie Savage (2017) Chelsea Manning to Be Released Early as Obama Commutes Sentence"))
 ◊(define manning-jailed-again
   (x-ref
     "2019-08-28"
     "https://www.theguardian.com/us-news/2019/mar/08/chelsea-manning-judge-jails-wikileaks-case"
-    " Chelsea Manning jailed for refusing to testify to grand jury in WikiLeaks case "))
+    "Erin Durkin (2019) Chelsea Manning jailed for refusing to testify to grand jury in WikiLeaks case "))
 
 ◊(define uk-cluster-bomb-ban
   (x-ref
     "2019-08-28"
     "https://www.theguardian.com/world/2010/dec/01/wikileaks-cables-cluster-bombs-britain"
-    "WikiLeaks cables: Secret deal let Americans sidestep cluster bomb ban"))
+    "Rob Evans and David Leigh (2010) WikiLeaks cables: Secret deal let Americans sidestep cluster bomb ban"))
 ◊(define abu-omar
   (x-ref
     "2019-08-28"
     "https://www.spiegel.de/international/europe/cia-rendition-case-us-pressured-italy-to-influence-judiciary-a-735268.html"
-    "US Pressured Italy to Influence Judiciary"))
+    "Von John Goetz, Matthias Gebauer (2010) US Pressured Italy to Influence Judiciary"))
 ◊(define saudi-urges-attack
   (x-ref
     "2019-08-28"
     "https://www.reuters.com/article/us-wikileaks-usa-idUSTRE6AP06Z20101129"
-    "Saudi king urged U.S. to attack Iran: WikiLeaks"))
+    "Arshad Mohammed, Ross Colvin (2010) Saudi king urged U.S. to attack Iran: WikiLeaks"))
 ◊(define tunisian-revolution
   (x-ref
     "2019-08-28"
@@ -719,12 +719,12 @@ This is ◊strong{not} a glorification of WikiLeaks---they have ◊link[wikileak
   (x-ref
     "2019-08-28"
     "https://www.theguardian.com/world/2011/apr/25/guantanamo-files-lift-lid-prison"
-    "Guantánamo leaks lift lid on world's most controversial prison"))
+    "David Leigh, James Ball, Ian Cobain and Jason Burke (2011) Guantánamo leaks lift lid on world's most controversial prison"))
 ◊(define children-bodies
   (x-ref
     "2019-08-28"
     "https://web.archive.org/web/20150416062019/http://www.chris-floyd.com/march/"
-    "Children of Abraham: Death in the Desert (Wayback Machine)"))
+    "Chris Floyd (2006) Children of Abraham: Death in the Desert (Wayback Machine)"))
 ◊(define repatriation-sweden
   (x-ref
     "2019-08-28"
@@ -735,32 +735,32 @@ This is ◊strong{not} a glorification of WikiLeaks---they have ◊link[wikileak
   (x-ref
     "2019-08-28"
     "https://www.bbc.com/news/uk-47891737"
-    "BBC: Julian Assange: Wikileaks co-founder arrested in London"))
+    "BBC (2019) Julian Assange: Wikileaks co-founder arrested in London"))
 ◊(define assange-arrest-us
   (x-ref
     "2019-08-28"
     "https://www.theguardian.com/uk-news/2019/apr/11/julian-assange-arrested-at-ecuadorian-embassy-wikileaks"
-    "Julian Assange faces US extradition after arrest at Ecuadorian embassy"))
+    "Caroline Davies, Simon Murphy and Damien Gayle (2019) Julian Assange faces US extradition after arrest at Ecuadorian embassy"))
 ◊(define assange-rape-reopen-19
   (x-ref
     "2020-09-22"
     "https://www.bbc.com/news/world-europe-48253343"
-    "The Swedish rape investigation against Assange is reopened"))
+    "BBC (2019) Julian Assange: Sweden reopens rape investigation"))
 ◊(define assange-rape-closed-19
   (x-ref
     "2020-09-22"
     "https://www.bbc.com/news/world-europe-50473792"
-    "The Swedish rape investigation against Assange is closed once again"))
+    "BBC (2019) Julian Assange: Sweden drops rape investigation"))
 ◊(define amnesty-hearings
   (x-ref
     "2020-09-22"
     "https://www.amnesty.org/en/latest/news/2020/09/why-are-amnesty-international-monitors-not-able-to-observe-the-assange-hearing/"
-    "Why are Amnesty International monitors not able to observe the Assange hearing?"))
+    "Stefan Simanowitz, Amnesty International (2020) Why are Amnesty International monitors not able to observe the Assange hearing?"))
 ◊(define gallagher-dismissed
   (x-ref
     "2020-09-22"
     "https://fox5sandiego.com/news/navy-dismisses-case-against-seal-accused-of-covering-up-war-crimes/"
-    "Navy dismisses case against SEAL accused of covering up war crimes"))
+    "City News Service (2019) Navy dismisses case against SEAL accused of covering up war crimes"))
 ◊(define gallagher-chief
   (x-ref
     "2020-09-22"
@@ -775,12 +775,12 @@ This is ◊strong{not} a glorification of WikiLeaks---they have ◊link[wikileak
   (x-ref
     "2020-09-30"
     "https://www.craigmurray.org.uk/archives/2020/09/your-man-in-the-public-gallery-assange-hearing-day-14/"
-    "Your Man in the Public Gallery: Assange Hearing Day 14"))
+    "Craig Murray (2020) Your Man in the Public Gallery: Assange Hearing Day 14"))
 ◊(define day-17
   (x-ref
     "2020-09-30"
     "https://www.craigmurray.org.uk/archives/2020/09/your-man-in-the-public-gallery-assange-hearing-day-17/"
-    "Your Man in the Public Gallery: Assange Hearing Day 17"))
+    "Craig Murray (2020) Your Man in the Public Gallery: Assange Hearing Day 17"))
 
 
 ◊subhead{Hiding skeletons in the closet}
@@ -841,12 +841,12 @@ Unfortunately it seems like a human thing to try to hide your misdeeds instead o
   (x-ref
     "2019-08-28"
     "https://www.world-nuclear.org/information-library/safety-and-security/safety-of-plants/chernobyl-accident.aspx"
-    "Chernobyl Accident 1986"))
+    "World Nuclear Association: Chernobyl Accident 1986"))
 ◊(define chernobyl-TV
   (x-ref
     "2019-08-28"
     "https://www.imdb.com/title/tt7366338/"
-    "IMDB: Chernobyl"))
+    "IMDb: Chernobyl"))
 ◊(define word-viking
   (x-ref
     "2019-08-28"
@@ -856,7 +856,7 @@ Unfortunately it seems like a human thing to try to hide your misdeeds instead o
   (x-ref
     "2019-08-28"
     "https://www.youtube.com/watch?v=NvS351QKFV4"
-    "YouTube: Dschinghis Khan - Moskau 1979"))
+    "YouTube (2012) Dschinghis Khan - Moskau 1979"))
 ◊(define hardcore-history
   (x-ref
     "2019-08-28"
@@ -866,7 +866,7 @@ Unfortunately it seems like a human thing to try to hide your misdeeds instead o
   (x-ref
     "2019-08-28"
     "https://www.usnews.com/news/politics/articles/2019-05-24/trump-considers-pardons-for-soldiers-accused-of-war-crimes"
-    "Trump Considers Pardons for Soldiers Accused of War Crimes"))
+    "Associated Press, Wire Service Content (2019) Trump Considers Pardons for Soldiers Accused of War Crimes"))
 ◊(define gallagher
   (x-ref
     "2019-08-28"

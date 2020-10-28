@@ -134,7 +134,7 @@ This kind of charity is only possible if you can cheaply transfer money to the h
    (x-ref
      "2019-12-10"
      "https://www.worldvision.org/disaster-relief-news-stories/venezuela-crisis-facts"
-     "Venezuela crisis: Facts, FAQs, and how to help"))
+     "Kathryn Reid Venezuela crisis: Facts, FAQs, and how to help"))
 
 
 ◊subhead{Capital flight}
@@ -149,7 +149,7 @@ This kind of charity is only possible if you can cheaply transfer money to the h
    (x-ref
      "2019-12-10"
      "https://www.wsj.com/articles/worried-hong-kong-residents-are-moving-money-out-as-protests-escalate-11566120603"
-     " Worried Hong Kong Residents Are Moving Money Out as Protests Escalate "))
+     "Steven Russolillo, Joanne Chiu, Eli Binder (2019) Worried Hong Kong Residents Are Moving Money Out as Protests Escalate "))
 
 If you decided to leave Venezuela, but wanted to bring your wealth with you, what would you do? Sell your bolívar for U.S. dollars and cross the border? You might get searched and lose it all. Same with gold, jewelry or other valuable items you can think off---it's not easy to hide them from the search at the border. You also cannot send the money abroad digitally, because there are no banks and no Western Union to help you.
 
@@ -175,17 +175,17 @@ You don't have to physically leave the country to benefit from storing your weal
    (x-ref
      "2019-12-10"
      "https://www.wsj.com/articles/how-china-copes-with-capital-flight-1542672901"
-     "How China Copes With Capital Flight"))
+     "John Greenwood, Steve H. Hanke (2018) How China Copes With Capital Flight"))
 ◊(define china-bans-anti-crypto
    (x-ref
      "2019-12-10"
      "https://www.ccn.com/china-unironically-bans-blockchain-slurs-as-crypto-launch-looms/"
-     "China Unironically Bans Blockchain Slurs as Crypto Launch Looms"))
+     "Will Heasman (2019) China Unironically Bans Blockchain Slurs as Crypto Launch Looms"))
 ◊(define chinacoin
    (x-ref
      "2019-12-10"
      "https://www.independent.co.uk/life-style/gadgets-and-tech/news/china-cryptocurrency-blockchain-bitcoin-a9176636.html"
-     "China bans anti-blockchain sentiment as it prepares for launch of state cryptocurrency"))
+     "Anthony Cuthbertson (2019) China bans anti-blockchain sentiment as it prepares for launch of state cryptocurrency"))
 
 
 ◊subhead{Hyperinflation is real}
@@ -232,12 +232,12 @@ In each case, hyperinflation is an economic disaster. Hoarding causes shortages,
    (x-ref
      "2019-12-10"
      "https://nypost.com/2019/10/10/zimbabwe-struggles-with-hyperinflation-its-a-nightmare/"
-     "Zimbabwe struggles with hyperinflation: ‘It’s a nightmare’"))
+     "New York Post (2019) Zimbabwe struggles with hyperinflation: ‘It’s a nightmare’"))
 ◊(define hanke-krus
    (x-ref
      "2019-12-10"
      "https://www.cato.org/sites/cato.org/files/pubs/pdf/hanke-krus-hyperinflation-table-may-2013.pdf"
-     "Hanke-Krus hyperinflation table (PDF)"))
+     "Hanke-Krus hyperinflation table (2013)"))
 ◊(define venezuela-inflation
    (x-ref
      "2019-12-10"
@@ -247,27 +247,27 @@ In each case, hyperinflation is an economic disaster. Hoarding causes shortages,
    (x-ref
      "2019-12-10"
      "https://www.imf.org/external/datamapper/PCPIPCH@WEO/WEOWORLD/VEN/ARG/SDN/ZWE"
-     "IMF: Inflation rate, average consumer prices"))
+     "International Monetary Fund: Inflation rate, average consumer prices"))
 ◊(define hungary-inflation
    (x-ref
      "2019-12-10"
      "https://www.amusingplanet.com/2018/08/hungarys-hyperinflation-worst-case-of.html"
-     "Hungary’s Hyperinflation: The Worst Case of Inflation in History"))
+     "Kaushik Patowary (2018) Hungary’s Hyperinflation: The Worst Case of Inflation in History"))
 ◊(define venezuela-bitcoin
    (x-ref
      "2019-12-10"
      "https://www.bbc.com/news/business-47553048"
-     "Why are Venezuelans seeking refuge in crypto-currencies?"))
+     "Mathew Di Salov (2019) Why are Venezuelans seeking refuge in crypto-currencies?"))
 ◊(define venezuela-bitcoin-saved-my-family
    (x-ref
      "2019-12-10"
      "https://www.nytimes.com/2019/02/23/opinion/sunday/venezuela-bitcoin-inflation-cryptocurrencies.html"
-     "Bitcoin Has Saved My Family: “Borderless money” is more than a buzzword when you live in a collapsing economy and a collapsing dictatorship."))
+     "Carlos Hernández (2019) Bitcoin Has Saved My Family: “Borderless money” is more than a buzzword when you live in a collapsing economy and a collapsing dictatorship."))
 ◊(define hyperinflation
    (x-ref
      "2019-12-10"
      "https://www.thebalance.com/what-is-hyperinflation-definition-causes-and-examples-3306097"
-     "Hyperinflation: Its Causes and Effects With Examples"))
+     "Kimberly Amadeo: Hyperinflation: Its Causes and Effects With Examples"))
 
 ◊ndef["line-inflation"]{
     Hyperinflation is defined as a monthly inflation exceeding 50%.
@@ -300,7 +300,7 @@ Bankers are legal crooks.
    (x-ref
      "2019-12-10"
      "https://twitter.com/nntaleb/status/1187467132646199300"
-     "Nassim Nicholas Taleb on Twitter"))
+     "Nassim Nicholas Taleb (2019) The most potent case for cryptocurrencies: banks are never there when you need them."))
 
 Because of the decentralized nature of cryptocurrencies it's very difficult for them to "shut down". It doesn't matter if the computers of some people---or even whole countries---break down, the cryptocurrency network is unaffected.◊sn{antifragile}
 
@@ -321,12 +321,12 @@ Cryptocurrencies are so robust we might as well say they're always available, fo
    (x-ref
      "2019-12-10"
      "http://www.dailystar.com.lb/News/Lebanon-News/2019/Oct-24/494282-top-banking-official-operations-to-fully-resume-when-lebanon-crisis-ends.ashx"
-     "Top banking official: operations to fully resume when Lebanon crisis ends"))
+     "The Daily Star (2019) Top banking official: operations to fully resume when Lebanon crisis ends"))
 ◊(define bitcoinuptime
    (x-ref
      "2019-12-10"
      "http://bitcoinuptime.com/"
-     "Bitcoin uptime"))
+     "Bitcoin Uptime Tracker"))
 
 
 ◊subhead{A currency for the world}
@@ -341,7 +341,7 @@ The U.S. dollar is the ◊link[world-currency]{closest we have to a world curren
    (x-ref
      "2019-12-10"
      "https://www.thebalance.com/world-currency-3305931"
-     " Why the US Dollar Is the Global Currency "))
+     "Kimberly Amadeo: Why the US Dollar Is the Global Currency "))
 ◊(define countries-us-dollars
    (x-ref
      "2019-12-10"
@@ -351,12 +351,12 @@ The U.S. dollar is the ◊link[world-currency]{closest we have to a world curren
    (x-ref
      "2019-12-10"
      "https://privatebank.jpmorgan.com/gl/en/insights/investing/is-the-dollar-s-exorbitant-privilege-coming-to-an-end"
-     "Is the dollar's \"exorbitant privilege\" coming to an end?"))
+     "Craig Cohen (2019) Is the dollar's \"exorbitant privilege\" coming to an end?"))
 ◊(define reserve-currency
    (x-ref
      "2019-12-10"
      "https://www.investopedia.com/terms/r/reservecurrency.asp"
-     "Reserve Currency"))
+     "James Chen: Reserve Currency"))
 
 But the U.S. dollar isn't truly a world currency, it's just one country's currency that happen to be widely used. The U.S. government and the Federal Reserve still has full control of the currency---they can dabble with the money supply however they want---and the rest of the world can only hope they won't get shafted.
 
@@ -379,12 +379,12 @@ Instead of being just a currency used throughout the world, a cryptocurrency is 
    (x-ref
      "2019-12-10"
      "https://twitter.com/christroutner/status/1142080363981709313"
-     "Chris Troutner on Twitter"))
+     "Chris Troutner (2019) I wanted to help someone in #Venezuela, so I'm tutoring a novice #JavaScript developer as he writes #opensource software."))
 
 ◊(define libanon-inflation
    (x-ref
      "2020-09-21"
      "https://tradingeconomics.com/lebanon/inflation-cpi"
-     "Lebanon Inflation Rate"))
+     "Trading Economics: Lebanon Inflation Rate"))
 
 ◊(list-xrefs)

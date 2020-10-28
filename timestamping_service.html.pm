@@ -20,7 +20,7 @@
    (x-ref
      "2019-09-21"
      "https://www.reddit.com/r/technology/comments/2ghp54/i_am_julian_assange_ama_about_my_new_book_when/ckjasj0/"
-     "Julian Assange on Reddit"))
+     "Julian Assange (2014) I am Julian Assange. AMA about my new book, \"When Google Met WikiLeaks.\""))
 
 In ◊link[how_do_cryptocurrencies_work]{How do cryptocurrencies work?} we saw that cryptocurrencies work by preventing ◊link[double-spending]{double spending} coins, and the system chooses one of two potentially valid transactions. While doing so it also creates an order between blocks and transactions, which can be used as the basis for a decentralized timestamping service.
 
@@ -39,7 +39,7 @@ A modern example is the ◊link[wayback-machine]{Wayback Machine}, a service whi
   (x-ref
     "2019-09-21"
     "https://www.overthinkingit.com/2009/01/16/how-time-travel-works-in-back-to-the-future/"
-    "How Time Travel Works (and doesn’t) in Back To The Future [BTTF Week]"))
+    "Overthinking it (2009) How Time Travel Works (and doesn’t) in Back To The Future [BTTF Week]"))
 ◊(define delorean
   (x-ref
     "2019-09-21"
@@ -181,7 +181,7 @@ With cryptocurrencies it's possible to do away with the trusted party requiremen
   (x-ref
     "2019-09-21"
     "https://en.bitcoin.it/wiki/Block_timestamp"
-    "Block timestamp"))
+    "bitcoin.it wiki: Block timestamp"))
 
 This way we have the basis for a decentralized timestamping service. Insert an obfuscated message in a transaction and afterwards you can reveal the message and use the creation time of the block the transaction is included in as your timestamp. Also comparing two messages to find which the oldest is very simple: just check which block came first---there's no need to look at a timestamp.
 
@@ -199,7 +199,7 @@ It's much easier to use (I'll go through an example ◊link[rel-easy-example]{st
   (x-ref
     "2019-09-21"
     "https://www.stem.org.uk/system/files/elibrary-resources/legacy_files_migrated/8469-catalyst_20_2_438.pdf"
-    "Hooke’s law of springs (PDF)"))
+    "Catalyst (2009) Hooke’s law of springs (PDF)"))
 ◊(define multiple-discoveries
   (x-ref
     "2019-09-21"
@@ -209,27 +209,27 @@ It's much easier to use (I'll go through an example ◊link[rel-easy-example]{st
   (x-ref
     "2019-09-21"
     "https://medium.com/@awemany/600-microseconds-b70f87b0b2a6"
-    "600 Microseconds: A perspective from the Bitcoin Cash and Bitcoin Unlimited developer who discovered CVE-2018–17144"))
+    "awemany (2018) 600 Microseconds: A perspective from the Bitcoin Cash and Bitcoin Unlimited developer who discovered CVE-2018–17144"))
 ◊(define inflation-bug
   (x-ref
     "2019-09-21"
     "https://nvd.nist.gov/vuln/detail/CVE-2018-17144"
-    "CVE-2018-17144 Detail"))
+    "National Vulnerability Database (2018) CVE-2018-17144 Detail"))
 ◊(define inflation-bug-reddit
   (x-ref
     "2019-09-21"
     "https://www.reddit.com/r/btc/comments/9huu11/600_microseconds_how_cve201817144_was_discovered/"
-    "600 Microseconds discussion on Reddit"))
+    "awemany (2018) 600 Microseconds - How CVE-2018-17144 was discovered"))
 ◊(define inflation-bug-timestamp
   (x-ref
     "2019-09-21"
     "https://originstamp.org/s/5c45a1ba957362a2ba97c9f8c48d4d59d4fa990945b7094a8d2a98c3a91ed9b6"
-    "Timestamp Information: 5c45a1ba957362a2ba97c9f8c48d4d59d4fa990945b7094a8d2a98c3a91ed9b6"))
+    "originstamp: Timestamp Information: 5c45a1ba957362a2ba97c9f8c48d4d59d4fa990945b7094a8d2a98c3a91ed9b6"))
 ◊(define gpg-sign
   (x-ref
     "2019-09-21"
     "https://www.digitalocean.com/community/tutorials/how-to-use-gpg-to-encrypt-and-sign-messages"
-    "How To Use GPG to Encrypt and Sign Messages"))
+    "Justin Ellingwood (2017) How To Use GPG to Encrypt and Sign Messages"))
 
 
 ◊subhead{A real-life example}

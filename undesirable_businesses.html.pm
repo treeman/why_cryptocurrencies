@@ -9,7 +9,9 @@
 ◊(clear-sidenotes)
 
 ◊epigraph{
-  ◊qt[#:author "Dakota Skye" #:url "https://mobile.twitter.com/dakota_skyexxx/status/458517153323712513" #:date "April 22, 2014"]{
+  ◊qt[#:author "Dakota Skye"
+      #:url dakota
+      #:date "April 22, 2014"]{
     @DirectorJoshua something has to be done. #chase has fucked with people before with other issues. Should not get away with shit like this.
   }
 }
@@ -38,31 +40,36 @@ Here are some examples of affected businesses:
     There are ◊link[banks-bitcoin]{many} ◊link[barclays-bitcoin]{stories} of banks closing down your account if they find out you've traded cryptocurrencies. Naturally without warning, explanation or recourse.
 }
 
+◊(define dakota
+  (x-ref
+    "2019-06-12"
+    "https://mobile.twitter.com/dakota_skyexxx/status/458517153323712513"
+    "Dakota Skye (2014) @DirectorJoshua something has to be done. #chase has fucked with people before with other issues. Should not get away with shit like this"))
 ◊(define chase-porn 
   (x-ref
     "2019-06-12"
     "https://nypost.com/2014/04/28/chase-closes-the-accounts-of-hundreds-of-porn-stars/"
-    "Chase closes hundreds of porn stars’ accounts"))
+    "New York Post (2014) Chase closes hundreds of porn stars’ accounts"))
 ◊(define porn-bank-moral 
   (x-ref
     "2019-06-12"
     "https://www.cnbc.com/id/100746445"
-    "Porn and Banks: Drawing a Line on Loans"))
+    "Chris Morris (2013) Porn and Banks: Drawing a Line on Loans"))
 ◊(define wells-fargo-supporter 
   (x-ref
     "2019-06-12"
     "https://www.cnbc.com/2018/08/22/wells-fargo-closes-bank-account-of-candidate-who-supports-marijuana.html"
-    "A candidate backed medical marijuana. Wells Fargo closed her bank account. "))
+    "Emily Flitter (2018) A candidate backed medical marijuana. Wells Fargo closed her bank account. "))
 ◊(define banks-bitcoin
   (x-ref
     "2019-06-12"
     "https://www.ccn.com/banks-still-closing-accounts-bitcoin-activity"
-    "Australian Commission Investigates Banks Closing Bitcoin Companies’ Accounts"))
+    " Lester Coleman (2015) Australian Commission Investigates Banks Closing Bitcoin Companies’ Accounts"))
 ◊(define barclays-bitcoin
   (x-ref
     "2019-06-12"
     "https://www.telegraph.co.uk/finance/personalfinance/investing/11537972/Barclays-closed-down-my-bank-account-after-Bitcoin-trade.html"
-    "'Barclays closed down my bank account after Bitcoin trade'"))
+    "Kyle Caldwell (2015) Barclays closed down my bank account after Bitcoin trade"))
 
 For whatever reason, these businesses are deemed high risk and undesirable; despite them being legal they might not be able to accept digital payments. This is something that cryptocurrencies solve.
 
@@ -77,7 +84,7 @@ Because banks in the US are regulated ◊link[us-bank-regulations]{both on a sta
   (x-ref
     "2019-06-12"
     "https://en.wikipedia.org/wiki/Bank_regulation_in_the_United_States"
-    "Bank regulation in the United States"))
+    "Wikipedia: Bank regulation in the United States"))
 
 ◊ndef["pot-banks"]{
     Not having access to banks means they also have to store the cash themselves and have trouble getting loans.
@@ -97,22 +104,22 @@ Not having access to digital payments hurts, but there are workarounds. Cash doe
   (x-ref
     "2019-06-12"
     "https://www.nytimes.com/2018/01/04/magazine/where-pot-entrepreneurs-go-when-the-banks-just-say-no.html"
-    "Where Pot Entrepreneurs Go When the Banks Just Say No"))
+    "Robb Mandelbaum (2016) Where Pot Entrepreneurs Go When the Banks Just Say No"))
 ◊(define scat
   (x-ref
     "2019-06-12"
     "https://en.wikipedia.org/wiki/Schr%C3%B6dinger%27s_cat"
-    "Schrödinger's cat"))
+    "Wikipedia: Schrödinger's cat"))
 ◊(define cannabis-legality
   (x-ref
     "2019-06-12"
     "https://en.wikipedia.org/wiki/Legality_of_cannabis_by_U.S._jurisdiction"
-    "Legality of cannabis by U.S. jurisdiction"))
+    "Wikipedia: Legality of cannabis by U.S. jurisdiction"))
 ◊(define state-payment-cannabis
   (x-ref
     "2019-06-12"
     "http://stayregular.net/blog/the-state-of-payment-processing-for-cannabis-e-commerce"
-    "The State of Payment Processing for Cannabis E-Commerce"))
+    "Oscar (2018) The State of Payment Processing for Cannabis E-Commerce"))
 
 ◊;http://stayregular.net/blog/the-state-of-payment-processing-for-cannabis-e-commerce
 ◊;https://www.cardfellow.com/blog/credit-card-processing-for-marijuana-businesses/
@@ -163,17 +170,17 @@ These things are on the gray area legal wise,◊mn{legal?} so the companies that
   (x-ref
     "2019-06-12"
     "https://dev.to/jwoertink/programming-in-the-adult-entertainment-industry-is-broken-hgn"
-    "Programming in the Adult Entertainment Industry is Broken"))
+    "Jeremy Woertink (2018) Programming in the Adult Entertainment Industry is Broken"))
 ◊(define programming-adult-blog-wayback 
   (x-ref
     "2019-06-12"
     "https://web.archive.org/web/20180814120031/https://dev.to/jwoertink/programming-in-the-adult-entertainment-industry-is-broken-hgn"
-    "Programming in the Adult Entertainment Industry is Broken (Wayback Machine)"))
+    "Jeremy Woertink (2018) Programming in the Adult Entertainment Industry is Broken (Wayback Machine)"))
 ◊(define programming-adult-hn 
   (x-ref
     "2019-06-12"
     "https://news.ycombinator.com/item?id=17756219"
-    "Hacker News: Programming in the Adult Entertainment Industry Is Broken"))
+    "Hacker News (2018) Programming in the Adult Entertainment Industry Is Broken"))
 
 
 ◊subhead{Why does it matter?}
@@ -224,7 +231,7 @@ Why should people running and using ◊strong{legal} businesses be punished for 
   (x-ref
     "2019-06-12"
     "https://www.marijuanaseo.com/cannabis-industry-statistics/"
-    "32 Incredible Cannabis Industry Statistics 2020"))
+    "Tyler (2019) 32 Incredible Cannabis Industry Statistics 2020"))
 
 
 ◊subhead{Are cryptocurrencies the solution?}
@@ -246,7 +253,7 @@ But there are related problems cryptocurrencies can't solve. Banks serve a very 
   (x-ref
     "2019-06-12"
     "https://news.bitcoin.com/coinbase-and-its-troubling-history-of-customer-account-closures/"
-    "Coinbase and Its Troubling History of Customer Account Closures"))
+    "Kai Sedgwick (2019) Coinbase and Its Troubling History of Customer Account Closures"))
 ◊(define localbitcoins 
   (x-ref
     "2019-06-12"
@@ -256,7 +263,7 @@ But there are related problems cryptocurrencies can't solve. Banks serve a very 
   (x-ref
     "2019-06-12"
     "https://local.bitcoin.com/"
-    "Bitcoin.com Local:  Bitcoin Cash for everyone."))
+    "Bitcoin.com Local: By and Sell BCH in a Peer-to-Peer Marketplace"))
 
 ◊;https://www.engadget.com/2015/12/02/paypal-square-and-big-bankings-war-on-the-sex-industry/?guccounter=1
 

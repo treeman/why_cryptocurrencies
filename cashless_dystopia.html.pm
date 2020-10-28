@@ -42,12 +42,17 @@ Instead we're encouraged to use digital payments (ignoring the ◊link[for_the_u
 }
 
 ◊qt[#:author "Barclay Bram"
-    #:url "http://nautil.us/issue/73/play/wechat-is-watching"]{
+    #:url wechat-is-watching]{
   I use WeChat to pay my rent. I use it to pay for my utilities. I use it to top up my phone credit. I use WeChat to pay for the metro system. I use it to scan QR codes on the back of shared-bike schemes throughout the city. I use it to call cabs.
 }
 
 In many countries we're already close to the cashless society. As we saw in the quote, WeChat is absolutely integral for many people in China and here in Sweden using cash is very rare, and many stores, restaurants and even banks have dropped cash completely.
 
+◊(define wechat-is-watching
+   (x-ref
+     "2020-01-05"
+     "http://nautil.us/issue/73/play/wechat-is-watching"
+     "Barclay Barm (2019) WeChat Is Watching: Living in China with the app that knows everything about me."))
 ◊(define structuring
    (x-ref
      "2020-01-05"
@@ -57,37 +62,37 @@ In many countries we're already close to the cashless society. As we saw in the 
    (x-ref
      "2020-01-05"
      "https://www.law.cornell.edu/uscode/text/31/5324"
-     "31 U.S. Code § 5324. Structuring transactions to evade reporting requirement prohibited"))
+     "Cornell Law School: 31 U.S. Code § 5324. Structuring transactions to evade reporting requirement prohibited"))
 ◊(define structuring-innocent
    (x-ref
      "2020-01-05"
      "https://ij.org/case/connecticut-forfeiture/"
-     "Connecticut Forfeiture - IRS Seizes First, Questions Later—Much Later"))
+     "Institute for Justice: Connecticut Forfeiture - IRS Seizes First, Questions Later—Much Later"))
 ◊(define macedonia-limits-cash
    (x-ref
      "2020-01-05"
      "http://www.china.org.cn/world/Off_the_Wire/2019-06/01/content_74845553.htm"
-     "North Macedonia limits payment in cash up to 500 euros"))
+     "Xinhua (2019) North Macedonia limits payment in cash up to 500 euros"))
 ◊(define ctr
    (x-ref
      "2020-01-05"
      "https://en.wikipedia.org/wiki/Currency_transaction_report"
-     "Currency transaction report"))
+     "Wikipedia: Currency transaction report"))
 ◊(define travel-forfeiture
    (x-ref
      "2020-01-05"
      "https://ij.org/case/kentucky-civil-forfeiture/"
-     "Ordinary Americans Are Victims of Policing for Profit in Our Nation’s Airports"))
+     "Institute for Justice: Ordinary Americans Are Victims of Policing for Profit in Our Nation’s Airports"))
 ◊(define us-banks-mexico-drug-gangs
    (x-ref
      "2020-01-05"
      "https://www.theguardian.com/world/2011/apr/03/us-bank-mexico-drug-gangs"
-     "How a big US bank laundered billions from Mexico's murderous drug gangs"))
+     "Ed Vulliamy (2011) How a big US bank laundered billions from Mexico's murderous drug gangs"))
 ◊(define gang-mass-grave
    (x-ref
      "2020-01-05"
      "https://www.theguardian.com/world/2017/mar/14/mexico-skulls-mass-grave-drug-cartel-veracruz"
-     "More than 250 skulls found in 'enormous mass grave' in Mexico"))
+     "Associated Press in Mexico City (2017) More than 250 skulls found in 'enormous mass grave' in Mexico"))
 ◊; https://www.reddit.com/r/btc/comments/bvx83n/macedonia_bans_fiat_cash_payments_above_560/
 
 
@@ -159,12 +164,12 @@ There are already companies that collect this kind of information, and sell it f
    (x-ref
      "2020-01-05"
      "https://www.cnbc.com/2018/08/22/wells-fargo-closes-bank-account-of-candidate-who-supports-marijuana.html"
-     "A candidate backed medical marijuana. Wells Fargo closed her bank account."))
+     "Emily Flitter (2018) A candidate backed medical marijuana. Wells Fargo closed her bank account."))
 ◊(define michigan-man-house
    (x-ref
      "2020-01-05"
      "https://reason.com/2019/11/06/a-michigan-man-underpaid-his-property-taxes-by-8-41-the-county-seized-his-property-sold-it-and-kept-the-profits/"
-     "A Michigan Man Underpaid His Property Taxes By $8.41. The County Seized His Property, Sold It—and Kept the Profits."))
+     "Eric Boehm (2019) A Michigan Man Underpaid His Property Taxes By $8.41. The County Seized His Property, Sold It—and Kept the Profits."))
 
 
 ◊subhead{A dystopia}
@@ -192,28 +197,28 @@ But you wouldn't be alone. ◊link[brits-struggle]{25 million Brits} would strug
    (x-ref
      "2020-01-05"
      "https://www.which.co.uk/news/2018/12/25m-brits-would-struggle-in-a-cashless-society/"
-     "25 million Brits would struggle in a cashless society"))
+     "Reena Sewraz (2018) 25 million Brits would struggle in a cashless society"))
 ◊(define china-bans-23m
    (x-ref
      "2020-01-05"
      "https://www.theguardian.com/world/2019/mar/01/china-bans-23m-discredited-citizens-from-buying-travel-tickets-social-credit-system"
-     "China bans 23m from buying travel tickets as part of 'social credit' system"))
+     "Lily Kuo (2019) China bans 23m from buying travel tickets as part of 'social credit' system"))
 ◊(define china-social-credit2
    (x-ref
      "2020-01-05"
      "https://www.npr.org/sections/money/2018/10/26/661163105/episode-871-blacklisted-in-china?t=1577261607993"
-     "Planet Money: Episode 871, Blacklisted In China"))
+     "Planet Money (2018) Episode 871, Blacklisted In China"))
 
 ◊(define demolition-man
    (x-ref
      "2020-01-05"
      "https://www.imdb.com/title/tt0106697/"
-     "Demolition Man (1993)"))
+     "IMDb: Demolition Man (1993)"))
 ◊(define hot-fuzz
    (x-ref
      "2020-01-05"
      "https://www.imdb.com/title/tt0425112/"
-     "Hot Fuzz (2007)"))
+     "IMDb: Hot Fuzz (2007)"))
 ◊(define hunger-games
    (x-ref
      "2020-01-05"

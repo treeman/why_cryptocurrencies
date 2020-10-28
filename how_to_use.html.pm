@@ -45,11 +45,11 @@ While I do my very best to avoid errors I don't have an editor, only some close 
    (x-ref
      "2019-04-12"
      "https://edwardtufte.github.io/tufte-css/"
-     "Tufte CSS"))
+     "Dave Liepmann: Tufte CSS"))
 ◊(define ublock
    (x-ref
      #f
      "https://github.com/gorhill/uBlock"
-     "uBlock Origin - An efficient blocker for Chromium and Firefox. Fast and lean."))
+     "uBlock Origin: An efficient blocker for Chromium and Firefox. Fast and lean."))
 
 ◊(list-xrefs)

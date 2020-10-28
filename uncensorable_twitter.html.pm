@@ -28,7 +28,7 @@ Another use for ◊link[embedding-data]{embeddable data} in a cryptocurrency is 
    (x-ref
      "2019-09-25"
      "https://memo.cash/post/9649592301c43b168db94b66a110f8b5aa4a8fad2ff5752aec9d963a8c4a2849"
-     "homopit"))
+     "homopit (2019) memo hitting over 1k regularly last days - https://memo.cash/charts"))
 ◊(define tx1
    (x-ref
      "2019-09-25"
@@ -36,9 +36,9 @@ Another use for ◊link[embedding-data]{embeddable data} in a cryptocurrency is 
      "Bitcoin Cash transaction 9649592301c43b168db94b66a110f8b5aa4a8fad2ff5752aec9d963a8c4a2849"))
 ◊(define memo-charts
    (x-ref
-     "2019-09-25"
+     #f
      "https://memo.cash/charts"
-     "memo.cash charts"))
+     "https://memo.cash/charts"))
 ◊qt[#:src "(transaction on the blockchain)"
     #:author "CashBack"
     #:author-url cashback
@@ -47,14 +47,14 @@ Another use for ◊link[embedding-data]{embeddable data} in a cryptocurrency is 
 }
 ◊(define cashback-yt
    (x-ref
-     "2019-09-25"
+      #f
      "https://youtu.be/5q3kDx1USPM"
-     "Roger Ver's Business Story - EP04 - The Value Of Trade (9 min)"))
+     "https://youtu.be/5q3kDx1USPM"))
 ◊(define cashback
    (x-ref
      "2019-09-25"
      "https://memo.cash/post/c2503a1aecb55e2584b41ea183c3c355c527790a1ef9cb0dc3f90d8d7ae654bd"
-     "CashBack"))
+     "CashBack (2019) https://youtu.be/5q3kDx1USPM"))
 ◊(define tx2
    (x-ref
      "2019-09-25"
@@ -70,7 +70,7 @@ Another use for ◊link[embedding-data]{embeddable data} in a cryptocurrency is 
    (x-ref
      "2019-09-25"
      "https://memo.cash/post/5e614e32e679df162cc04582769b09fd88e7f0ea32f537dcc72cae38efcb7fe9"
-     "Vidteks"))
+     "Vidteks (2019) I can feel the anticipation rising…"))
 ◊(define tx3
    (x-ref
      "2019-09-25"
@@ -160,7 +160,7 @@ A Twitter-like service based on a cryptocurrency does not have these problems. �
    (x-ref
      "2019-08-28"
      "https://chinatribunal.com/final-judgement-report/"
-     "China Tribunal: Independent Tribunal into Forced Organ Harvesting from Prisoners of Conscience in China, Final Judgement Report"))
+     "China Tribunal (2019) Independent Tribunal into Forced Organ Harvesting from Prisoners of Conscience in China, Final Judgement Report"))
 
 
 ◊subhead{Uncorrupted history}
@@ -189,12 +189,12 @@ With cryptocurrencies we just might have that, for better or worse...
    (x-ref
      "2019-08-28"
      "http://news.bbc.co.uk/2/hi/middle_east/2989459.stm"
-     "BBC: Bush declares victory in Iraq"))
+     "BBC News (2003) Bush declares victory in Iraq"))
 ◊(define rewriting-history
    (x-ref
      "2019-08-28"
      "https://listverse.com/2016/01/05/10-insane-attempts-at-rewriting-history/"
-     "10 Insane Attempts At Rewriting History"))
+     "Debra Kelly (2016) 10 Insane Attempts At Rewriting History"))
 ◊(define barbarians
    (x-ref
      "2019-08-28"
@@ -204,6 +204,6 @@ With cryptocurrencies we just might have that, for better or worse...
    (x-ref
      "2019-08-28"
      "https://www.dancarlin.com/hardcore-history-60-the-celtic-holocaust/"
-     "Dan Carlin's The Celtic Holocaust"))
+     "Dan Carlin (2017) The Celtic Holocaust"))
 
 ◊(list-xrefs)

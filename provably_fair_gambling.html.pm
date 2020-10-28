@@ -35,12 +35,12 @@ With cryptocurrencies we can device a scheme where gambling is provably fair. We
    (x-ref
      "2019-12-17"
      "https://upswingpoker.com/ultimate-bet-absolute-poker-scandal/"
-     "Ultimate Bet and Absolute Poker: What Happened?"))
+     "Natalie Faulk (2018) Ultimate Bet and Absolute Poker: What Happened?"))
 ◊(define oceans-11
    (x-ref
      "2019-12-17"
      "https://www.imdb.com/title/tt0240772/"
-     "Ocean's Eleven (2001)"))
+     "IMDb: Ocean's Eleven (2001)"))
 
 ◊; Another poker cheating scandal:
 ◊; https://news.ycombinator.com/item?id=21161043
@@ -84,9 +84,9 @@ A pseudo-random generator can produce a sequence of numbers, a number of coin to
 
 ◊(define minecraft-best-seeds
    (x-ref
-     "2019-12-17"
+     "2020-10-27"
      "https://progameguides.com/minecraft/minecraft-best-seeds/"
-     "Best Minecraft Seeds for April 2020 (1.15+ & 1.14+)"))
+     "Shaun Savage (2020) Best Minecraft Seeds for April 2020 (1.15+ & 1.14+)"))
 
 
 ◊subhead{A simple provably fair gambling scheme}

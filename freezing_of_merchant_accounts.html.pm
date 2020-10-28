@@ -20,7 +20,7 @@
    (x-ref
       "2019-06-14"
       "https://neo900.org/news/paypal-trouble-delays-project"
-      "PayPal trouble delays project"))
+      "Werner Almesberger (2015) PayPal trouble delays project"))
 
 This chapter continues on the same idea as the ◊link[prev]{previous one}, but we'll view the issue from another angle. Instead of focusing on getting permission to accept payments at all we'll focus on the problem that accounts can be frozen at any time, for arbitrary reasons. This isn't a problem with cryptocurrencies, as they cannot be frozen.
 
@@ -70,12 +70,12 @@ Imagine what you would do now, without a salary and without your savings...
   (x-ref
     "2019-06-14"
     "https://www.cnbc.com/2018/01/18/few-americans-have-enough-savings-to-cover-a-1000-emergency.html"
-    "Only 39% of Americans have enough savings to cover a $1,000 emergency"))
+    "Emmie Martin (2018) Only 39% of Americans have enough savings to cover a $1,000 emergency"))
 ◊(define office-space 
   (x-ref
     "2019-06-14"
     "https://www.imdb.com/title/tt0151804/"
-    "Office Space (1999)"))
+    "IMDb: Office Space (1999)"))
 
 ◊note-pos[#:top -29]{6-months}
 
@@ -88,7 +88,7 @@ Just to be a little gratuitous and to drive home my point on how bad this can be
     It might be easy to deliver digital goods, but physical goods may be created on demand. In addition salaries, rent and other expenses needs to be paid. Cash flow is a very important issue for most companies.
 }
 
-◊qt[#:url "https://notch.tumblr.com/post/1096322756/working-on-a-friday-update-crying-over-paypal"
+◊qt[#:url notch
     #:author "Notch, creator of Minecraft"
     #:date "Sep 2010"]{
     There’s over 600000 euro in there. Money I was planning on investing in the new company.
@@ -97,6 +97,12 @@ Just to be a little gratuitous and to drive home my point on how bad this can be
 
     I withdraw everything from paypal every week. They limited my account just as sales started spiking, so this money has accumulated since they limited the account.
 }
+
+◊(define notch
+  (x-ref
+    "2019-06-14"
+    "https://notch.tumblr.com/post/1096322756/working-on-a-friday-update-crying-over-paypal"
+    "Notch (2010) Working on a Friday update, crying over paypal"))
 
 They didn't just freeze the account, they're making it worse by confiscating future payments as well!◊mn{lawsuits}
 
@@ -153,32 +159,32 @@ Some of these had a happy ending but others did not.
   (x-ref
     "2019-06-14"
     "https://www.cogini.com/blog/paypal-know-your-customer-failure/"
-    "PayPal Know Your Customer failure"))
+    "Jake Morrison (2018) PayPal Know Your Customer failure"))
 ◊(define paypal-12years 
   (x-ref
     "2019-06-14"
     "https://blog.niteo.co/paypal-ban-after-12-years/"
-    "We got banned from PayPal after 12 years of business "))
+    "Dejan Murko (2019) We got banned from PayPal after 12 years of business "))
 ◊(define paypal-70000 
   (x-ref
     "2019-06-14"
     "https://www.reddit.com/r/Entrepreneur/comments/1rkkd7/paypal_just_froze_over_70000_in_my_account_say/"
-    "PayPal just froze over $70,000 in my account - Say they won't return it for 180 days"))
+    "schockergd (2013) PayPal just froze over $70,000 in my account - Say they won't return it for 180 days"))
 ◊(define paypal-8years 
   (x-ref
     "2019-06-14"
     "http://www.aboutpaypal.org/paypal-destroyed-business-8-years-day/"
-    "PayPal destroyed my business of 8 years in a day"))
+    "PayPal - Horror Stories, Lawsuits, Reviews PayPal Problems (2012) PayPal destroyed my business of 8 years in a day"))
 ◊(define startups-stripe 
   (x-ref
     "2019-06-14"
     "https://kinsta.com/blog/startups-avoid-stripe/"
-    "Should Startups Avoid Stripe? How We Got Our Account Back"))
+    "Mark Gavalda (2019) Should Startups Avoid Stripe? How We Got Our Account Back"))
 ◊(define keys4coins-stripe 
   (x-ref
     "2019-06-14"
     "https://medium.com/@OlavOlsm/why-stripe-is-the-worst-choice-for-your-new-startup-business-e4d9f515e116"
-    "Why Stripe is the worst choice for your new startup business"))
+    "Olav Småriset (2019) Why Stripe is the worst choice for your new startup business"))
 
 
 ◊subhead{Money under your mattress}
