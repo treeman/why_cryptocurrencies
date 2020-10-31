@@ -4,7 +4,13 @@
    (if title
      (string-append main-title ": " title)
      (error (format "unknown title for ~v~n" here))))
+◊(define (str->date-display text x)
+  (if x
+    (string-append text " " (~t (iso8601->date x) "MMMM d, y"))
+    ""))
 ◊(define subtitle (select-from-metas 'subtitle here))
+◊(define published (str->date-display "Published" (select-from-metas 'published here)))
+◊(define updated (str->date-display "Updated" (select-from-metas 'updated here)))
 ◊(define side-space? (not (select-from-metas 'no-side-space here)))
 ◊(define section-chapters-headers? (not (select-from-metas 'no-section-chapters-header here)))
 ◊(define article-class
@@ -42,7 +48,7 @@
         <link rel="stylesheet" type="text/css" href="/css/main.css" />
         <link rel="alternate" type="application/atom+xml" title="Atom 0.3" href="/feed.xml" />
         <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
-        <meta name="keywords" content="◊|keywords|">
+        <meta name="keywords" content="◊|keywords|" />
     </head>
     <body>
       <article class="◊|article-class|">
@@ -56,6 +62,11 @@
         <header>
           <h1>◊|title|</h1>
           <h2>◊|subtitle|</h2>
+          ◊(when side-space? (->html
+             `(div ((class "date"))
+                 (span ((class "published")) ,published)
+                 (span ((class "updated")) ,updated))))
+          </div>
         </header>
 
         ◊(->html doc #:splice? #t)
@@ -91,7 +102,7 @@
             ◊when/splice[parent-page]{
               <span class="parent">
                 ◊;(ref parent-page "Chapter")
-                ◊(ref parent-page parent-title "↑ Section")
+                ◊(ref parent-page parent-title "↑ Part")
               </span>
             }
             <span class="home">

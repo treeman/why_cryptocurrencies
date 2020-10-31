@@ -15,7 +15,7 @@
 
 (define source-code
   `("https://github.com/treeman/why_cryptocurrencies"
-    "Source code to this site"))
+    "GitHub: Source code to this site"))
 
 (define email "contact@whycryptocurrencies.com")
 
@@ -53,8 +53,8 @@
 (define case-against-fed-book
   (book-ref
     "https://www.goodreads.com/book/show/81976.The_Case_Against_the_Fed"
-    "The Case Against the Fed"
-    "Murray N. Rothbard"))
+    "Murray N. Rothbard"
+    "The Case Against the Fed"))
 (define 1984-book
   (book-ref
     "https://www.goodreads.com/book/show/40961427-1984"
@@ -130,7 +130,7 @@
   (x-ref
     "2019-05-16"
     "https://www.britannica.com/topic/gold-standard"
-    "Gold standard"))
+    "Britannica: Gold standard"))
 (define fractional-banking
   (x-ref
     "2019-05-16"
@@ -140,7 +140,7 @@
   (x-ref
     "2019-05-16"
     "https://www.soundmoneydefense.org/sound-money-explained"
-    "What is Sound Money? Sound Money Explained"))
+    "Sound Money Defense League: What is Sound Money? Sound Money Explained"))
 
 (define kyc
   (x-ref
@@ -151,12 +151,12 @@
   (x-ref
     "2020-01-02"
     "https://www.investopedia.com/terms/a/aml.asp"
-    "Anti Money Laundering (AML)"))
+    "Will Kenton (2020) Anti Money Laundering (AML)"))
 (define moral-hazard
    (x-ref
      "2019-10-25"
      "https://www.thebalance.com/moral-hazard-what-it-is-and-how-it-works-315515"
-     "Moral Hazard: Definition and Examples "))
+     "Justin Pritchard: Moral Hazard: Definition and Examples "))
 
 ;; Chapters
 
@@ -313,6 +313,10 @@
   (ch-ref
     'a_defective_system.html
     "A defective system"))
+(define legal_counterfeiting
+  (ch-ref
+    'a_defective_system.html #:ref "legal-counterfeiting"
+    "A defective system: Legal counterfeiting"))
 
 (define extensions
   (ch-ref
@@ -391,19 +395,19 @@
   (x-ref
     #f
     "https://noscript.net/"
-    "NoScript"))
+    "NoScript: JavaScript/Java/Flash blocker for a safer Firefox experience!"))
 
 (define dao
   (x-ref
     "2019-04-24"
     "https://fullstacks.org/materials/ethereumbook/16_appdx-forks-history.html"
-    "Ethereum Fork History"))
+    "Fullstacks (2018) Ethereum Fork History"))
 
 (define block-0
   (x-ref
     "2019-10-25"
     "https://blockchair.com/bitcoin/block/0"
-    "Bitcoin block 0"))
+    "Blockchair: Bitcoin block 0"))
 
 (define great-depression
    (x-ref
@@ -415,7 +419,7 @@
    (x-ref
      "2019-12-09"
      "https://www.inkstonenews.com/china/chinas-13-million-discredited-individuals-face-discrimination-thanks-social-credit-system/article/3003319"
-     "‘Worse than doing time’: life on the wrong side of China’s social credit system"))
+     "Sarah Dai (2019) ‘Worse than doing time’: life on the wrong side of China’s social credit system"))
 (define wayback-machine 
   (x-ref
     "2019-06-12"
@@ -434,3 +438,8 @@
     "https://blockchair.com/"
     "Blockchair"))
 
+(define surveillance-illegal
+   (x-ref
+     "2020-09-22"
+     "https://www.reuters.com/article/us-usa-nsa-spying-idUSKBN25T3CK"
+     "Raphael Satter (2020) U.S. court: Mass surveillance program exposed by Snowden was illegal"))

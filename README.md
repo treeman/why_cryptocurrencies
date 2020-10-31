@@ -8,5 +8,5 @@ Made with [Pollen][].
 
 # Dependencies
 
-1. raco: pollen, libuuid
+1. raco: pollen, libuuid, gregor-lib
 2. sassc, inotify-tools

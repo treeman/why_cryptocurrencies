@@ -3,7 +3,7 @@
 ◊(define-meta title "Provably fair gambling")
 ◊(define-meta subtitle "Gambling where you cannot cheat the odds")
 ◊(define-meta published "2019-12-17T00:00:00+01:00")
-◊(define-meta updated "2020-02-27T13:34:37+01:00")
+◊(define-meta updated "2020-10-24T11:39:33+02:00")
 ◊(define-meta uuid "cf1cc907-4fda-4b98-81fd-b9c447cdadc5")
 
 ◊(clear-sidenotes)
@@ -13,15 +13,15 @@
 
 ◊epigraph{
   ◊qt[#:author "Attributed to Michael Cassius McDonald"]{
-    There's a sucker born every minute
+    There's a sucker born every minute.
   }
 }
 
 I love the movie ◊link[oceans-11]{Ocean's Eleven (2011)}. I've a fascination for heists and how they in the movie win against the house in various gambles---by cheating of course. They hack the slot machines, they cheat in card games and they control the dice in craps like magicians. And they do it with style.
 
-Cheating is possible in the real world as well. For example you could do a coin toss, but with a coin with heads on both sides. Or a coin that's heavier on one side, making the odds 55% and 45%. This is a problem if you think it's a 50/50 gamble.
+Cheating is possible in the real world as well. For example you could do a coin toss, but with a coin with heads on both sides. Or a coin that's heavier on one side, making the odds 55% and 45%. Don't let the numbers fool you---this is a huge difference compared to a 50/50 gamble.
 
-But it's hard to verify that a gamble is fair. With a coin you ◊em{might} be able to feel it, and specialized anti-cheating machines might be able to measure dice, but you can never be sure. Gambling on the internet is a whole other can of worms, where you're often left trusting that the site isn't screwing you over.◊sn{poker-cheating}
+But it's hard to verify that a gamble is fair. With a coin you ◊em{might} be able to feel it, and specialized anti-cheating machines might be able to measure dice, but you can never be sure. Gambling on the internet is a whole other can of worms, where you're often left trusting that the site isn't screwing you over.◊mn{poker-cheating}
 
 ◊ndef["poker-cheating"]{
     There was a big poker scandal several years ago where it was discovered that ◊link[poker-scandal]{Ultimate Bet and Absolute Poker cheated in online poker}. They were discovered by people who noticed certain users who had "abnormally high winning statistics". Turns out they were using a superuser account that could see all cards.
@@ -35,12 +35,12 @@ With cryptocurrencies we can device a scheme where gambling is provably fair. We
    (x-ref
      "2019-12-17"
      "https://upswingpoker.com/ultimate-bet-absolute-poker-scandal/"
-     "Ultimate Bet and Absolute Poker: What Happened?"))
+     "Natalie Faulk (2018) Ultimate Bet and Absolute Poker: What Happened?"))
 ◊(define oceans-11
    (x-ref
      "2019-12-17"
      "https://www.imdb.com/title/tt0240772/"
-     "Ocean's Eleven (2001)"))
+     "IMDb: Ocean's Eleven (2001)"))
 
 ◊; Another poker cheating scandal:
 ◊; https://news.ycombinator.com/item?id=21161043
@@ -74,19 +74,19 @@ With a pseudo-random generator that's what we can do. We give it a ◊em{seed}, 
     4 4 2 3 2 3 2 2 1 8 …
 }
 
-A pseudo-random generator can produce a sequence of numbers, a number of coin tosses or even generate the whole world in Minecraft.◊sn{minecraft-seed}
+A pseudo-random generator can produce a sequence of numbers, a number of coin tosses or even generate the whole world in Minecraft.◊mn{minecraft-seed}
 
 ◊ndef["minecraft-seed"]{
-    They even call it a seed in Minecraft. There are many ◊link[minecraft-best-seeds #:quote #t]{Minecraft best seeds} lists out there, with seeds that generate some pretty impressive worlds. You do need to take care which version of Minecraft you're using, as the world generation can differ between versions.
+    They even call it a "seed" in Minecraft. There are many ◊link[minecraft-best-seeds #:quote #t]{Minecraft best seeds} lists out there, with seeds that generate some pretty impressive worlds. You do need to take care which version of Minecraft you're using, as the world generation can differ between versions.
 
     This is also true for pseudo-random generators, where different generators will produce different results.
 }
 
 ◊(define minecraft-best-seeds
    (x-ref
-     "2019-12-17"
+     "2020-10-27"
      "https://progameguides.com/minecraft/minecraft-best-seeds/"
-     "Best Minecraft Seeds for April 2020 (1.15+ & 1.14+)"))
+     "Shaun Savage (2020) Best Minecraft Seeds for April 2020 (1.15+ & 1.14+)"))
 
 
 ◊subhead{A simple provably fair gambling scheme}
@@ -113,11 +113,11 @@ Concretely a game could play out like this:
             4b227777d4dd1fc61c6f884f48641d02b4d121d3fd328cb08b5531fcacdabf8a
         }
     }
-    ◊li{The player sends their seed ◊icode{1} to the casino.}
-    ◊li{The casino says they won, and reveals that their seed was ◊icode{4}.}
+    ◊li{The player sends their seed ◊icode{1} to the casino}
+    ◊li{The casino says they won, and reveals that their seed was ◊icode{4}}
 }
 
-To prove that the bet was made, the above interactions should be signed by both parties, complete with timestamps. It doesn't even have to be on a blockchain, just having a public key connected to their identity is enough. As long as either party has the signed messages, it's all good.◊sn{pull-out}
+To prove that the bet was made, the above interactions should be signed by both parties, complete with timestamps. It doesn't even have to be on a blockchain, just having a public key connected to their identity is enough. As long as either party has the signed messages, it's all good.◊mn{pull-out}
 
 ◊ndef["pull-out"]{
     Let's see what we can prove, if either party aborts the bet.
@@ -134,7 +134,7 @@ To prove that the bet was made, the above interactions should be signed by both 
 Now the player would like to verify that they did in fact lose:
 
 ◊ol{
-    ◊li{First we verify that the casino indeed used the seed ◊icode{4}.
+    ◊li{First we verify that the casino indeed used the seed ◊icode{4}
 
         ◊code{
             echo -n "4" | sha256sum
@@ -168,14 +168,14 @@ It checks out, the casino won fair and square.
 
 There are limits to the simple toy example I've described:
 
-◊ol{
+◊ul{
     ◊li{Seeds need to be longer
 
         A seed like ◊icode{4} is far too simple. We'd need a much longer seed for the game to be secure. Maybe something like ◊icode{65654687731080707945}?
     }
     ◊li{Multiplayer games are more complex
 
-        This scheme works fine for simple single player games, like flipping a coin. But if we wanted to create a provable fair poker game the implementation would be more complex, but it would still be possible.◊sn{encrypt}
+        This scheme works fine for simple single player games, like flipping a coin. But if we wanted to create a provable fair poker game the implementation would be more complex, but it would still be possible.◊mn{encrypt}
 
         ◊note-pos{encrypt}
 
@@ -187,7 +187,7 @@ There are limits to the simple toy example I've described:
     }
     ◊li{Only for digitally randomized gambles
 
-        It's not possible to bet on real life event, like the outcome of an ice hockey game, without relying on a trusted third party to announce the result of the game (often called an Oracle).
+        It's not possible to bet on real life events, like the outcome of an ice hockey game, without relying on a trusted third party to announce the result of the game (often called an Oracle).
     }
 }
 
@@ -199,21 +199,16 @@ By ◊link[embedding-data]{embedding the messages} between the casino and the pl
 
 But we can go further. The biggest issue with our simple scheme is that the casinos can still decide not to pay. There's nothing forcing them to pay the players if they win big---they could just take the money and run.
 
-With smart contracts, on a cryptocurrency with a powerful scripting language like Ethereum, we might enforce the payment as well. In our example when accepting the bet, both the casino and the player must lock up their funds in a smart contract that will play out the bet (like in the Python script) and send the funds to the winner. This removes the risk of the casino refusing to pay out if you manage to win, as it's enforced by the smart contract.◊sn{programmable-money}
+With smart contracts, on a cryptocurrency with a powerful scripting language like Ethereum, we might enforce the payment as well. In our example when accepting the bet, both the casino and the player must lock up their funds in a smart contract that will play out the bet (like in the Python script) and send the funds to the winner. This removes the risk of the casino refusing to pay out if you manage to win, as it's enforced by the smart contract.
 
-You can also improve the state of sports betting. A smart contract can give an Oracle the power to transfer the money of a gamble to the winner---but it's only allowed to send it to either the player or the casino, so the Oracle cannot steal the money. This is good if you can trust the Oracle to call the result of a game, but you don't trust them to hold your money.◊sn{timeout}
-
-◊ndef["programmable-money"]{
-    Smart contracts like these is why cryptocurrencies are sometimes called "programmable money".
-}
+You can also improve the state of sports betting. A smart contract can give an Oracle the power to transfer the money of a gamble to the winner---but it's only allowed to send it to either the player or the casino, so the Oracle cannot steal the money. This is good if you can trust the Oracle to call the result of a game, but you don't trust them to hold your money.◊mn{timeout}
 
 ◊ndef["timeout"]{
     You can also include a timeout to return the funds and cancel the bet if the Oracle doesn't take any action. Or allow the player and casino to cancel the bet and return all funds, if they both agree.
 }
 
-This is how cryptocurrencies can improve the way we gamble.
+In this way cryptocurrencies can drastically reduce the risk of being cheated when we gamble.
 
-◊note-pos[#:top -16]{programmable-money}
-◊note-pos[#:top -6]{timeout}
+◊note-pos[#:top -8]{timeout}
 
 

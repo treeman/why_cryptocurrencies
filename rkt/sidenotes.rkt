@@ -310,7 +310,7 @@
     (set! attrs (append attrs
                         `((style ,styles)))))
 
-  `(div ,attrs
+  `(aside ,attrs
         ,@(label note)
         ,@def))
 

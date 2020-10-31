@@ -33,6 +33,31 @@ $sidenote-float-width: 1280px;
     }
 }
 
+.chapter > header > .date {
+    text-align: right;
+    font-size: 0.7rem;
+    margin-top: -0.4rem;
+    @extend %sans-serif;
+
+    .published {
+        display: block;
+    }
+    .update {
+        display: block;
+    }
+}
+
+@media (min-width: $sidenote-float-width) {
+    .chapter > header > .date {
+        text-align: left;
+
+        float: right;
+        margin-top: -3rem;
+        margin-right: -420px;
+        width: 380px;
+    }
+}
+
 .where a {
     text-decoration: none;
     background: none;
@@ -266,6 +291,9 @@ pre {
 
     margin-bottom: 1rem;
     padding: 0.4rem 0.6rem;
+}
+li pre {
+    margin-bottom: $list-p-margin;
 }
 .sidenote code {
     font-size: 0.6rem;
@@ -551,15 +579,15 @@ table.crypto-eval {
         font-weight: bold;
     }
     td.poor {
-        background-color: $xmr-orange;
+        background-color: $poor;
         text-align: center;
     }
     td.good {
-        background-color: #5db0cc;
+        background-color: $good;
         text-align: center;
     }
     td.excellent {
-        background-color: $bch-green;
+        background-color: $excellent;
         text-align: center;
     }
 }
@@ -580,17 +608,17 @@ table.legal-moral {
         text-align: right;
     }
 
+    .good {
+        background-color: $legal-moral;
+    }
     .moral-illegal {
-        background-color: #b6ccbc;
+        background-color: $illegal-moral;
     }
     .immoral-legal {
-        background-color: #fccdae;
+        background-color: $legal-immoral;
     }
     .bad {
-        background-color: $xmr-orange;
-    }
-    .good {
-        background-color: $bch-green;
+        background-color: $illegal-immoral;
     }
 }
 

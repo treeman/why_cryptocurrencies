@@ -3,12 +3,12 @@
 ◊(define-meta title "How to use this book")
 ◊(define-meta subtitle "Just some minor things to keep in mind")
 ◊(define-meta published "2019-04-12T00:00:00+01:00")
-◊(define-meta updated "2020-01-21T08:28:42+01:00")
+◊(define-meta updated "2020-10-09T19:49:52+02:00")
 ◊(define-meta uuid "a69e0036-a749-4f7c-b02e-dbcfa2776540")
 
 ◊(clear-sidenotes)
 
-Each chapter is supposed to be standalone so you can jump around and read it however you want. The only prerequisite is to have a basic understanding of what a cryptocurrency does, which is described in ◊link[what_is_a_cryptocurrency]{the first section}, but if you want you can skip that as well and go back later if needed.
+Each chapter is supposed to be standalone so you can jump around and read it however you want. The only prerequisite is to have a basic understanding of what a cryptocurrency does, which is described in ◊link[what_is_a_cryptocurrency]{the first part}, but if you want you can skip that as well and go back later if needed.
 
 This book is a work in progress, so I'll add and rework chapters as I go. If you want to keep up to date you have three options:
 
@@ -20,7 +20,7 @@ This book is a work in progress, so I'll add and rework chapters as I go. If you
       ◊|subscription-form|}
 }
 
-I use ◊link[mbtype]{custom fonts} hosted locally on this site. While fonts are subjective the styling assumes you have these fonts and if you block them---like ◊link[noscript]{noscript} does---it might look slightly off.◊sn{good-idea}
+I use ◊link[mbtype]{custom fonts} hosted locally on this site. While fonts are subjective the styling assumes you have these fonts and if you block them---like ◊link[noscript]{noscript} does---it might look slightly off.◊mn{good-idea}
 
 ◊ndef["good-idea"]{
     If you don't use noscript or ad-blockers, I ◊strong{highly} recommend you do. ◊link[ublock]{uBlock Origin} is an excellent ad-blocker (works on Firefox on mobile as well).
@@ -45,10 +45,10 @@ While I do my very best to avoid errors I don't have an editor, only some close 
    (x-ref
      "2019-04-12"
      "https://edwardtufte.github.io/tufte-css/"
-     "Tufte CSS"))
+     "Dave Liepmann: Tufte CSS"))
 ◊(define ublock
    (x-ref
      #f
      "https://github.com/gorhill/uBlock"
-     "uBlock Origin - An efficient blocker for Chromium and Firefox. Fast and lean."))
+     "uBlock Origin: An efficient blocker for Chromium and Firefox. Fast and lean."))
 
