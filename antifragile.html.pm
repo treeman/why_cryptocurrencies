@@ -1,7 +1,7 @@
 #lang pollen
 
-◊(define-meta title "Antifragility")
-◊(define-meta subtitle "Growing stronger with resistance")
+◊(define-meta title "Cryptocurrencies are antifragile")
+◊(define-meta subtitle "They grow stronger from resistance")
 ◊(define-meta published "2020-02-27T13:33:40+01:00")
 ◊(define-meta updated "2020-02-27T13:33:40+01:00")
 ◊(define-meta uuid "9ce74583-fbbd-42d4-940e-3a9e44ed0658")
@@ -13,26 +13,38 @@
 
 ◊(clear-sidenotes)
 
+It's common to separate things into two categories: those that are fragile and those that are robust. Regular glass is for example fragile as it breaks easily, often by accident, and bullet-proof glass is robust as as can withstand a significant amount of force before it breaks.
 
+But there's a third category that we often don't think about. It's called ◊def{antifragile} and it goes beyond robust as it grows even stronger when stressed.
 
-◊todo{IMG killing a monster with a Bitcoin symbol}
+At first it might sound impossible, how could something grow stronger when it's put under pressure? It would be like if we had armor that was self-healing but after getting shot also learned what type of bullet was used and it adapted to resist the same kind of bullet better. That's science-fiction.
 
-◊todo{IMG the monster sprouts two new heads! With the BCH and XMR logo}
+◊stable{
+  Fragile       Robust                  Antifragile
+  Glass         Bullet-proof glass      Adaptive armor
+}
 
-Bullet-proof armor isn't antifragile. It's true that it's very sturdy and can resist bullets, but it doesn't get stronger after getting in by one. It always gets a little weaker and if you shoot enough bullets you'll eventually penetrate.
+But that's exactly how the immune system works. It's why the human body might develop immunity against COVID-19 after getting exposed to it and it's the basic principle behind vaccines.
 
-How crazy would it be to have armor that's not only self-healing but after getting hit it becomes even stronger against that particular bullet? Like magic!
-
-But that's exactly how the immune system works.
-
-
-◊subhead{Decentralization is the name of the game}
+As I'll argue in this chapter cryptocurrencies are also antifragile.
 
 
 ◊subhead{The longer it lives the more robust it is}
 
+Lindy Effect
+
+
+◊subhead{Decentralization is the name of the game}
+
+Bittorrent
+
+
 
 ◊subhead{The hard fork}
+
+◊todo{IMG killing a monster with a Bitcoin symbol}
+
+◊todo{IMG the monster sprouts two new heads! With the BCH and XMR logo}
 
 
 ◊subhead{Concrete examples}
@@ -41,17 +53,19 @@ Let's take a look at some real events and what the reaction to them might be:
 
 
 ◊ol{
+    ◊li{◊strong{Bitcoin is the largest bug bounty in the world}
+
+        If Bitcoin couldn't prevent double-spends or had some other serious flaw then it could be exploited for literally billions of dollars.
+    }
     ◊li{◊strong{Marketplaces freeze your assets}
 
         Decentralized marketplaces that allow for non-custodial trades are created. This means the marketplaces never control your funds and all trades are made directly with the other person, making it impossible for anyone to freeze your funds.
     }
     ◊li{◊strong{Governments declare cryptocurrencies illegal}
 
-        People trade cryptocurrencies in person. ...
+        Governments have declared drugs and prostitution illegal for centuries, but they still manage to thrive. Making them legal would paradoxically make them easier to regulate and control, and I think it's the same with cryptocurrencies.
 
-        Governments have declared drugs and prostitution illegal for centuries, but they still manage to thrive.
-    }
-    ◊li{◊strong{Bitcoin is the largest bug bounty in the world}
+        If governments banned cryptocurrencies people could still trade them in person or move to decentralized marketplaces, which are inherently harder to disrupt.◊mn{global} ◊note-pos{global}
     }
     ◊li{◊strong{A 51% attack}
 
@@ -71,5 +85,9 @@ Let's take a look at some real events and what the reaction to them might be:
 
         The client gets replaced with new ones. For example in the BCH/ABC split...
     }
+}
+
+◊ndef["global"]{
+    Remember that cryptocurrencies are completely global. Even if they're illegal in your country, you can always find an exchange, service or marketplace online that operates in another country where they're legal.
 }
 
