@@ -24,7 +24,7 @@ At first it might sound impossible, how could something grow stronger when it's 
   Glass         Bullet-proof glass      Adaptive armor
 }
 
-But that's exactly how the immune system works. It's why the human body might develop immunity against COVID-19 after getting exposed to it and it's the basic principle behind vaccines.
+But that's exactly how the immune system works. It's why the human body might develop immunity against COVID-19 after getting exposed to it and it's the basic principle behind vaccines. Other examples include ...
 
 As I'll argue in this chapter cryptocurrencies are also antifragile.
 
@@ -54,6 +54,8 @@ Let's take a look at some real events and what the reaction to them might be:
 
 ◊ol{
     ◊li{◊strong{Bitcoin is the largest bug bounty in the world}
+
+        ...
 
         If Bitcoin couldn't prevent double-spends or had some other serious flaw then it could be exploited for literally billions of dollars.
     }
