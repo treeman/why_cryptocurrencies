@@ -1,7 +1,7 @@
 #lang pollen
 
-◊(define-meta title "Why are cryptocurrencies antifragile?")
-◊(define-meta subtitle "How cryptocurrencies grow stronger the more they're resisted")
+◊(define-meta title "Antifragility")
+◊(define-meta subtitle "Growing stronger with resistance")
 ◊(define-meta published "2020-02-27T13:33:40+01:00")
 ◊(define-meta updated "2020-02-27T13:33:40+01:00")
 ◊(define-meta uuid "9ce74583-fbbd-42d4-940e-3a9e44ed0658")
@@ -13,8 +13,6 @@
 
 ◊(clear-sidenotes)
 
-
-◊subhead{Antifragility}
 
 
 ◊todo{IMG killing a monster with a Bitcoin symbol}
