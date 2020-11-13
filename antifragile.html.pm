@@ -17,15 +17,15 @@
     }
 }
 
-It's common to separate things into two categories: those that are fragile and those that are robust. Regular glass is for example fragile as it breaks easily, often by accident, and bullet-proof glass is robust as as can withstand a significant amount of force before it breaks.
+It's common to separate things into two categories: those that are fragile and those that are robust. Regular glass is for example fragile as it breaks easily, often by accident, and bullet-proof glass is robust as they can withstand a significant amount of force before it breaks.
 
-But there's a third category that we often don't think about. It's called ◊def{antifragile} and it goes beyond robust as it grows even stronger when stressed. I think the phrase "what doesn't kill you makes you stronger" explains antifragility quite well.◊mn[#:top -5]{talib}
+But there's a third category that we often don't think about. It's called ◊def{antifragile} and it goes beyond robustness as it grows even stronger when stressed. I think the phrase "what doesn't kill you makes you stronger" explains antifragility quite well.◊mn[#:top -5]{talib}
 
 ◊ndef["talib"]{
     The concept of antifragility was minted by Nassim Taleb in his book series ◊link[incerto #:quote #t]{Incerto}. It includes the famous book ◊(book-link black-swan-book), but I think ◊(book-link antifragile-book) is the most important in the series.
 }
 
-At first it might sound impossible; how could something grow stronger from pressure? It would be like if we had armor that was self-healing but after getting shot also learned what type of bullet was used and it adapted to resist the same kind of bullet better. Clearly that's only possible in science-fiction.
+At first it might sound impossible; how could something grow stronger from pressure? It would be like if we had armor that was self-healing but after getting shot also learned what type of bullet was used and adapted to resist the same kind of bullet better. Clearly that's only possible in science-fiction.
 
 But that's exactly how our immune system works. After defeating a virus that might make us very sick, our body learns to recognize the virus so it can attack and kill it much earlier. This is how we might develop immunity against COVID-19 and it's the basic principle that makes vaccines work.
 
@@ -53,12 +53,19 @@ The Lindy Effect is only relevant to non-perishable goods. It applies to things 
     Week-old food isn't better than newly cooked food. I know, I've tried.
 }
 
-It's a heuristic, not a natural law, but the implications generally makes sense. For instance that Bitcoin will probably survive another decade, that a newly created cryptocurrency promising to solve all of Bitcoin's problems are expected to fail and that gold will outlive them all by a few millennia.
+It's a heuristic, not a natural law, but the implications generally makes sense. For instance that Bitcoin will survive another decade, that a newly created cryptocurrency promising to solve ◊link[challenges]{all of Bitcoin's problems} will fail and that gold will outlive them all by a few millennia.
 
 
 ◊subhead{The largest bug bounty in the world}
 
-In the software development world a ◊def{bug bounty} is a reward for someone who finds a vulnerability and reports it in a responsible manner. This is vastly preferable to them exploiting it or selling it on the black market, in particular if it's a serious one. For example it's easy to imagine the problem caused by a bug that allowed an attacker to view all private messages in Facebook, so Facebook might we willing to pay a hacker a lot of money if they help them patch this security issue.◊mn{not-paying}
+In the software development world a ◊def{bug bounty} is a reward for someone who finds a vulnerability and reports it in a responsible manner. This is vastly preferable to them exploiting it or selling it on the black market, in particular if it's a serious one. For example it's easy to imagine the problem caused by a bug that allowed an attacker to view all private messages in Facebook, so Facebook might we willing to ◊link[hacker-money]{pay a hacker a lot of money} if they help them patch this security issue.◊mn{not-paying}
+
+◊(define hacker-money
+  (x-ref
+    "2020-11-13"
+    "https://www.pcmag.com/news/7-huge-bug-bounty-payouts"
+    "PCMag (2019) 7 Huge Bug Bounty Payouts"))
+
 
 ◊ndef["not-paying"]{
     Note that not all companies have generous bounties and it's likely you can make more money on the black market by reselling the exploit. Some companies might even thank you by taking legal action against you!
@@ -68,12 +75,14 @@ In the software development world a ◊def{bug bounty} is a reward for someone w
 
 ◊; https://www.forbes.com/sites/jeanbaptiste/2019/08/15/hackers-stole-over-4-billion-from-crypto-crimes-in-2019-so-far-up-from-1-7-billion-in-all-of-2018/
 
-While a decentralized project like Bitcoin don't have an official bug bounty, Bitcoin itself functions like a very large bug bounty. Because if you find a way to break Bitcoin, and transfer coins to yourself, you could steal billions of dollars worth of Bitcoin and nobody would know who did it.
+While a decentralized project like Bitcoin doesn't have an official bug bounty, Bitcoin itself functions like a very large bug bounty. Because if you find a way to break Bitcoin, and transfer coins to yourself, you could steal billions of dollars worth of Bitcoin and nobody would know who did it.
 
 This is why I think the Lindy Effect applies to cryptocurrencies; with each day that pass without a fatal bug being found in a cryptocurrency, the probability that it will survive another day increases. Because the incentives are there for people to search for the bugs, that they haven't found anything fatal yet inspire confidence.◊mn{found-bugs}
 
 ◊ndef["found-bugs"]{
     People have found serious bugs. In ◊link[timestamping_bug_example]{Timestamping service} we saw how awemany found a bug in Bitcoin that would allow an attacker to print an unlimited amount of Bitcoin. While serious, even if exploited it wouldn't have been fatal.
+
+    As thanks for reporting it awemany received some substantial donations from the community.
 }
 
 
@@ -136,11 +145,23 @@ Let's look at some concrete examples of how antifragility might come into play:
     }
     ◊li{◊strong{Reference client abandons core values}
 
-        What would happen if the developers of a cryptocurrency decided to print coins from thin air and make themselves rich? Or make some other change that the community disagreed with?
+        What would happen if the developers of a cryptocurrency decided to print coins from thin air and make themselves rich? Or make some other change that would destroy the cryptocurrency?
 
         Then they would be replaced.
 
-        For example in the BCH/ABC split...
+        For example ◊link[monero-dev]{Monero replaced---or kicked out---the old developer team} early on in it's history when the developers pushed changes that the community disagreed with.
+
+        A more recent example is the BCH/ABC split. Since Bitcoin Cash split from Bitcoin in 2017 ABC has been the reference client that has dictated every change that went into the protocol. This ended in 2020 when ABC wanted to ◊link[abc-ifp]{reroute 8% of the block reward to an address under their control}. The change would have ◊link[doomed-to-centralization]{serious centralization concerns}, but the miners and the BCH community rejected them and they split away to their own minority fork.◊mn{problem-dev}
+
+        ◊note-pos{problem-dev}
+
+        Not only did BCH replace the reference client, they replaced it with a handful of cooperating developer teams, reducing the damage a rogue developer could cause.
+
+        ◊ndef["problem-dev"]{
+            I think the developers is the weak-link in a cryptocurrency. While proof-of-work ensures even state level actors will find it difficult to disrupt the network, influencing a few developers is much easier.
+
+            This is why I think these examples are so significant. It shows that the community can, and will, reject malicious developers.
+        }
     }
     ◊li{◊strong{Marketplaces freeze your assets}
 
@@ -150,15 +171,15 @@ Let's look at some concrete examples of how antifragility might come into play:
 
         Governments have declared drugs and prostitution illegal for centuries, but they still manage to thrive. Making them legal would paradoxically make them easier to control, and I think it's the same with cryptocurrencies.
 
-        If governments banned cryptocurrencies people could still trade them in person or move to decentralized marketplaces, which are inherently harder to disrupt.◊mn{global} ◊note-pos{global}
+        If governments banned cryptocurrencies people would still trade them in person and move to decentralized marketplaces, which are inherently harder to disrupt. We would move away from centralized payment services and move towards a peer-to-peer economy, like how Satoshi envisioned.◊mn{global} ◊note-pos{global}
     }
     ◊li{◊strong{A 51% attack}
 
-        One of the worst things that can happen to a cryptocurrency is a 51% attack, but even such an event can strengthen it.
+        One of the worst things that can happen to a cryptocurrency is a ◊link[51%-attack]{51% attack}, but even such an event can strengthen it.
 
         For example an attacked chain could change the mining algorithm, making all existing mining rigs worthless. This would make it impervious to the same type of attack and if an attacker wants to make another attempt brand new mining rigs would have to be purchased or created.
 
-        For example during the BCH/BSV split the BSV miners threatened to reorg the BCH chain with empty blocks. If successful this would've made it impossible to transact on the chain, as no new transactions would be added to the blockchain, essentially killing the chain. This attack was never carried out, but protection was added to the BCH software that made it more difficult to carry out such an attack.
+        As another example during the BCH/BSV split the BSV miners threatened to reorg the BCH chain with empty blocks. If successful this would've made it impossible to transact on the chain, as no new transactions would be added to the blockchain, essentially killing the chain. This attack was never carried out, but protection was added to the BCH software that made it more difficult to carry out such an attack.
     }
 }
 
@@ -166,8 +187,32 @@ Let's look at some concrete examples of how antifragility might come into play:
     Remember that cryptocurrencies are completely global. Even if they're illegal in your country, you can always find an exchange, service or marketplace online that operates in another country where they're legal.
 }
 
+
+◊subhead{Antifragility brings confidence}
+
+I've stopped worrying that governments will kill cryptocurrencies by making them illegal; that PayPal will co-opt Bitcoin and turn it into a corporate coin; that Facebook or governments will create a centralized digital currency that out-competes real cryptocurrencies; or that the adoption just isn't there yet.
+
+Because cryptocurrencies are antifragile these temporary setbacks will only make them stronger and I'm convinced that as long as internet exists, so will cryptocurrencies.
+
+
+◊(define abc-ifp
+   (x-ref
+    "2020-11-13"
+    "https://blog.bitcoinabc.org/2020/08/18/new-release-bitcoin-abc-0-22-0-is-available-to-download/"
+    "Bitcoin ABC (2020) New release: Bitcoin ABC 0.22.0 is available to download"))
+◊(define doomed-to-centralization
+   (x-ref
+    "2020-11-13"
+    "https://read.cash/@noise/if-the-ifp-in-bitcoin-cash-activates-it-suggests-that-cryptocurrencies-are-doomed-to-centralization-86ff8006"
+    "noise (2020) If the IFP in Bitcoin Cash activates, it suggests that cryptocurrencies are doomed to centralization"))
 ◊(define incerto
    (x-ref
     "2020-11-09"
     "https://www.goodreads.com/book/show/28185864-incerto-4-book-bundle?from_search=true&from_srp=true&qid=0FoB6DZfS4&rank=1"
     "Incerto 4-Book Bundle: Antifragile, The Black Swan, Fooled by Randomness, The Bed of Procrustes"))
+◊(define monero-dev
+   (x-ref
+    "2020-11-13"
+    "https://monero.stackexchange.com/questions/1011/monero-inception-how-did-bitmonero-become-monero"
+    "Monero Stack Exchange (2016) Monero inception - how did bitmonero become monero?"))
+
