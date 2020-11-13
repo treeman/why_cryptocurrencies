@@ -64,7 +64,12 @@
   (book-ref
     "https://www.goodreads.com/book/show/13530973-antifragile"
     "Nassim Nicholas Taleb"
-    "Antifragile: Things That Gain from Disorder"))
+    "Antifragile"))
+(define black-swan-book
+  (book-ref
+    "https://www.goodreads.com/book/show/242472.The_Black_Swan"
+    "Nassim Nicholas Taleb"
+    "The Black Swan"))
 (define permanent-record-book
   (book-ref
     "https://www.goodreads.com/book/show/46223297-permanent-record"
@@ -334,6 +339,10 @@
   (ch-ref
     'timestamping_service.html
     "Timestamping service"))
+(define timestamping_bug_example
+  (ch-ref
+    'timestamping_service.html #:ref "a-real-life-example"
+    "Timestamping service: A real-life example"))
 (define seeds-and-pseudo-random-generators
   (ch-ref
     'provably_fair_gambling.html #:ref "seeds-and-pseudo-random-generators"
