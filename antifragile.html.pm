@@ -190,10 +190,11 @@ Let's look at some concrete examples of how antifragility might come into play:
 
 ◊subhead{Antifragility brings confidence}
 
-I've stopped worrying that governments will kill cryptocurrencies by making them illegal; that PayPal will co-opt Bitcoin and turn it into a corporate coin; that Facebook or governments will create a centralized digital currency that out-competes real cryptocurrencies; or that the adoption just isn't there yet.
+There's a worry that governments will kill cryptocurrencies by making them illegal; that PayPal will co-opt Bitcoin and turn it into a corporate coin; that Facebook or governments will create a centralized digital currency that out-competes real cryptocurrencies; that developers will go rogue; or that a fatal bug will bring it all down.
 
-Because cryptocurrencies are antifragile these temporary setbacks will only make them stronger and I'm convinced that as long as internet exists, so will cryptocurrencies.
+I've gotta be honest, they don't worry me too much. I see them as temporary setbacks that can be harmful in the short-term, but will in the end make cryptocurrencies even stronger.
 
+I'm convinced that as long as internet exists, cryptocurrencies will thrive. If that's good or not is up to you to decide.
 
 ◊(define abc-ifp
    (x-ref
