@@ -98,10 +98,15 @@ This is how our muscles grow stronger. When we do strength training we break dow
 
 And it also holds true for the immune system. Vaccines give you a very small dose of the virus, just enough to activate your immune system and teach it how to kill the virus, but not so large to make you so sick you couldn't function as normal. And of course you don't want to die in the process.
 
-While you can argue that an individual cryptocurrency is antifragile, antifragility also applies to the cryptocurrency concept itself. People like to point at the thousands of cryptocurrencies as some sort of drawback, but it's actually the opposite. Cryptocurrencies being created and then dying off en mass is good as each time one fails we might learn something new and use that to improve the survivors.
+◊subhead{The resilience of a distributed system}
 
+A good way to see the antifragility of a distributed system is to look at the evolution of piracy. As in pirating music or movies, not killing people on boats piracy.
+
+...
 
 ◊subhead{Splitting ensures antifragility}
+
+While you can argue that an individual cryptocurrency is antifragile, antifragility also applies to the cryptocurrency concept itself. People like to point at the thousands of cryptocurrencies as some sort of drawback, but it's actually the opposite. Cryptocurrencies being created and then dying off en mass is good as each time one fails we might learn something new and use that to improve the survivors.
 
 Forking a cryptocurrency is a fundamental antifragility force. This means forking the ledger, where a cryptocurrency splits into several but all the addresses and coins are still there, or forking the code but restarting from an empty ledger.◊mn{reimplementing}
 
@@ -194,7 +199,7 @@ There's a worry that governments will kill cryptocurrencies by making them illeg
 
 I've gotta be honest, they don't worry me too much. I see them as temporary setbacks that can be harmful in the short-term, but will in the end make cryptocurrencies even stronger.
 
-I'm convinced that as long as internet exists, cryptocurrencies will thrive. If that's good or not is up to you to decide.
+I'm convinced that as long as internet exists, so will cryptocurrencies.
 
 ◊(define abc-ifp
    (x-ref
