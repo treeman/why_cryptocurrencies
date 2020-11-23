@@ -144,7 +144,7 @@ Let's look at some concrete examples of how antifragility might come into play:
             On-chain scaling and second layer solutions aren't mutually exclusive as you can explore both at the same time on the same chain.
         }
 
-        This lead to the BTC/BCH split where a part of the community created Bitcoin Cash that aims to prioritize on-chain scaling.
+        This lead to the BTC/BCH split where a part of the community left Bitcoin (BTC) to create Bitcoin Cash (BCH) that aims to prioritize on-chain scaling.
 
         You may wonder, which approach is the correct one? That's the best part: ◊em{it doesn't really matter} as the cryptocurrency idea will live on regardless. The only issue is if both approaches are a dead-end.
     }
@@ -156,11 +156,17 @@ Let's look at some concrete examples of how antifragility might come into play:
 
         For example ◊link[monero-dev]{Monero replaced---or kicked out---the old developer team} early on in it's history when the developers pushed changes that the community disagreed with.
 
-        A more recent example is the BCH/ABC split. Since Bitcoin Cash split from Bitcoin in 2017 ABC has been the reference client that has dictated every change that went into the protocol. This ended in 2020 when ABC wanted to ◊link[abc-ifp]{reroute 8% of the block reward to an address under their control}. The change would have ◊link[doomed-to-centralization]{serious centralization concerns}, but the miners and the BCH community rejected them and they split away to their own minority fork.◊mn{problem-dev}
+        A more recent example is the BCH/ABC split.◊mn{abc} Since Bitcoin Cash split from Bitcoin in 2017 ABC has been the reference client that has dictated every change that went into the protocol. This ended in 2020 when ABC wanted to ◊link[abc-ifp]{reroute 8% of the block reward to an address under their control}. The change would have ◊link[doomed-to-centralization]{serious centralization concerns}, but the miners and the BCH community rejected them and they split away to their own minority fork.
+
+        ◊note-pos[#:top -8]{abc}
+
+        ◊ndef["abc"]{
+            As of now it's not yet clear how viable the ABC chain will be. Some exchanges use the ticker BCHA, but most don't support it at all at this time.
+        }
+
+        Not only did BCH replace the reference client, they replaced it with a handful of cooperating developer teams, reducing the damage a rogue developer could cause.◊mn{problem-dev}
 
         ◊note-pos{problem-dev}
-
-        Not only did BCH replace the reference client, they replaced it with a handful of cooperating developer teams, reducing the damage a rogue developer could cause.
 
         ◊ndef["problem-dev"]{
             I think the developers is the weak-link in a cryptocurrency. While proof-of-work ensures even state level actors will find it difficult to disrupt the network, influencing a few developers is much easier.
@@ -177,6 +183,8 @@ Let's look at some concrete examples of how antifragility might come into play:
         Governments have declared drugs and prostitution illegal for centuries, but they still manage to thrive. Making them legal would paradoxically make them easier to control, and I think it's the same with cryptocurrencies.
 
         If governments banned cryptocurrencies people would still trade them in person and move to decentralized marketplaces, which are inherently harder to disrupt. We would move away from centralized payment services and move towards a peer-to-peer economy, like how Satoshi envisioned.◊mn{global} ◊note-pos{global}
+
+        For example Monero supporters worry that governments will declare cryptocurrencies with good privacy features illegal---not an unreasonable thing to worry about. This will soon be a smaller issue as work on a ◊link[farcaster]{Bitcoin-Monero atomic swap project} is underway, which would allow people to trade Bitcoin and Monero without any third party.
     }
     ◊li{◊strong{A 51% attack}
 
@@ -221,4 +229,9 @@ I'm convinced that as long as internet exists, so will cryptocurrencies.
     "2020-11-13"
     "https://monero.stackexchange.com/questions/1011/monero-inception-how-did-bitmonero-become-monero"
     "Monero Stack Exchange (2016) Monero inception - how did bitmonero become monero?"))
+◊(define farcaster
+   (x-ref
+     "2020-11-23"
+     "https://github.com/farcaster-project/rfcs"
+     "GitHub (no date) Farcaster RFCs"))
 
