@@ -16,14 +16,14 @@
 }
 ◊;https://books.google.co.uk/books?id=6Mdh5yuHavgC&pg=PA86&lpg=PA86&ots=vJ319cMgdc&focus=viewport&dq=%E2%80%9CIt%27s+almost+been+worth+this+depression+to+find+out+how+little+our+big+men+know.%E2%80%9D++%E2%80%95+Will+Rogers
 
-Even though ◊def[sound-money]{sound money}---like cryptocurrencies or money backed by gold---might fix the bad incentives at the heart of the ◊link[financial_crisis]{2008 finanical crisis}, there are many arguments against it. One of the most common is we that lose the ability to influence and react to the market. For example if the economy crashes, or we think it will crash, the modern central banks might try to print money and buy things to soften the crash. This isn't possible with cryptocurrencies or gold, since they cannot be created freely.◊mn{elaciticity}
+Even though ◊def[sound-money]{sound money}---like cryptocurrencies or money backed by gold---might fix the bad incentives at the heart of the ◊link[financial_crisis]{2008 finanical crisis}, there are many arguments against it. One of the most common is we that lose the ability to influence and react to the market. For example if the economy crashes, or we think it will crash, the modern central banks might try to print money and buy things to soften the crash. This isn't possible with cryptocurrencies or gold, since they cannot be created freely.◊mn{elasticity}
 
 But there's a fatal flaw with this argument: it relies on being able to predict the market and to know what actions to take to move it in the direction you want. With how intricate and complex the economy is, it's an absurd assumption.
 
-◊note-pos[#:top -9]{elaciticity}
+◊note-pos[#:top -9]{elasticity}
 
-◊ndef["elaciticity"]{
-    ◊def{Elaciticity} is a nice word ◊def[legal_counterfeiting]{fractional banking} proponents have used to describe this ability. In plain English it means the ability to inflate and deflate the money supply freely.
+◊ndef["elasticity"]{
+    ◊def{Elasticity} is a nice word ◊def[legal_counterfeiting]{fractional banking} proponents have used to describe this ability. In plain English it means the ability to inflate and deflate the money supply freely.
 }
 
 
