@@ -17,7 +17,7 @@
     }
 }
 
-It's common to separate things into two categories: those that are fragile and those that are robust. Regular glass is for example fragile as it breaks easily, often by accident, and bullet-proof glass is robust as they can withstand a significant amount of force before it breaks.
+It's common to separate things into two categories: those that are fragile and those that are robust. Regular glass is for example fragile as it breaks easily, often by accident, and bullet-proof glass is robust as it can withstand a significant amount of force before it breaks.
 
 But there's a third category that we often don't think about. It's called ◊def{antifragile} and it goes beyond robustness as it grows even stronger when stressed. I think the phrase "what doesn't kill you makes you stronger" explains antifragility quite well.◊mn[#:top -5]{talib}
 
@@ -25,7 +25,17 @@ But there's a third category that we often don't think about. It's called ◊def
     The concept of antifragility was minted by Nassim Taleb in his book series ◊link[incerto #:quote #t]{Incerto}. It includes the famous book ◊(book-link black-swan-book), but I think ◊(book-link antifragile-book) is the most important in the series.
 }
 
-At first it might sound impossible; how could something grow stronger from pressure? It would be like if we had armor that was self-healing but after getting shot also learned what type of bullet was used and adapted to resist the same kind of bullet better. Clearly that's only possible in science-fiction.
+At first it might sound impossible; how could something grow stronger from pressure? It would be like if we had armor that was self-healing but after getting shot it also learned from the bullet and adapted to resist the next shot better. Clearly that's only possible in science-fiction.◊mn{sentinels}
+
+◊ndef["sentinels"]{
+    If you're a comic reader you might recognize this ability from the ◊link[sentinels]{X-men villains The Sentinels} that in some variants learn to be immune against any kind of attack.
+}
+
+◊(define sentinels
+   (x-ref
+     "2020-12-08"
+     "https://en.wikipedia.org/wiki/Sentinel_%28comics%29"
+     "WikiPedia (no date) Sentinel (comics)"))
 
 But that's exactly how our immune system works. After defeating a virus that might make us very sick, our body learns to recognize the virus so it can attack and kill it much earlier. This is how we might develop immunity against COVID-19 and it's the basic principle that makes vaccines work.
 
@@ -34,7 +44,7 @@ But that's exactly how our immune system works. After defeating a virus that mig
   Glass         Bullet-proof glass      The immune system
 }
 
-Talib describes a myriad of things that are antifragile, for instance financial long options, street fights, love and religion. And as I'll argue in this chapter cryptocurrencies also belong to this group.
+Talib describes a myriad of things that are antifragile; for instance financial long options, street fights, love and religion. And as I'll argue in this chapter cryptocurrencies also belong to this group.
 
 
 ◊subhead{The longer it lives the more robust it is}
@@ -45,9 +55,7 @@ Talib describes a myriad of things that are antifragile, for instance financial 
     The old is expected to stay longer than the young in proportion to their age.
 }
 
-In other words the longer a technology lives, the longer it can be expected to live.
-
-The Lindy Effect is only relevant to non-perishable goods. It applies to things like inventions or money, but doesn't apply to individual humans or food.◊mn{old-food}
+In other words the longer something lives, the longer it can be expected to live.  The Lindy Effect is only relevant to non-perishable goods; it applies to things like inventions or money, but doesn't apply to humans or food.◊mn{old-food}
 
 ◊ndef["old-food"]{
     Week-old food isn't better than newly cooked food. I know, I've tried.
@@ -80,7 +88,7 @@ While a decentralized project like Bitcoin doesn't have an official bug bounty, 
 This is why I think the Lindy Effect applies to cryptocurrencies; with each day that pass without a fatal bug being found in a cryptocurrency, the probability that it will survive another day increases. Because the incentives are there for people to search for the bugs, that they haven't found anything fatal yet inspire confidence.◊mn{found-bugs}
 
 ◊ndef["found-bugs"]{
-    People have found serious bugs. In ◊link[timestamping_bug_example]{Timestamping service} we saw how awemany found a bug in Bitcoin that would allow an attacker to print an unlimited amount of Bitcoin. While serious, even if exploited it wouldn't have been fatal.
+    People have found very serious bugs. In the chapter about ◊link[timestamping_bug_example]{Timestamping service} we saw how awemany found a bug in Bitcoin that would allow an attacker to print an unlimited amount of Bitcoin. While serious, even if exploited it wouldn't have been fatal.
 
     As thanks for reporting it awemany received some substantial donations from the community.
 }
@@ -98,13 +106,15 @@ This is how our muscles grow stronger. When we do strength training we break dow
 
 And it also holds true for the immune system. Vaccines give you a very small dose of the virus, just enough to activate your immune system and teach it how to kill the virus, but not so large to make you so sick you couldn't function as normal. And of course you don't want to die in the process.
 
-◊subhead{The resilience of a distributed system}
+◊;◊subhead{The resilience of a distributed system}
 
-A good way to see the antifragility of a distributed system is to look at the evolution of piracy. As in pirating music or movies, not killing people on boats piracy.
+◊;A good way to see the antifragility of a distributed system is to look at the evolution of piracy. As in pirating music or movies, not killing people on boats piracy.
 
-https://www.britannica.com/topic/piracy-copyright-crime
+◊;Way back when people started sharing files online you shared files directly from your own computer. 
 
-...
+◊;https://www.britannica.com/topic/piracy-copyright-crime
+
+◊;...
 
 ◊subhead{Splitting ensures antifragility}
 
@@ -127,13 +137,13 @@ Forking a cryptocurrency is a fundamental antifragility force. This means forkin
 This process allows a community with different ideals to explore their own path, it allows us to explore different ways to solve a problem and it even allows a cryptocurrency to recover from a catastrophic bug. Forking is the ultimate fail-safe.
 
 ◊ndef["monero-no-fork"]{
-    Yes I know that Monero isn't a fork of Bitcoin, neither a fork of the ledger or the code. It's more a fork of the Bitcoin idea, reworked from the ground up to solve some of the problems with Bitcoin.
+    Monero isn't a fork of Bitcoin; neither a fork of the ledger or the code. It's a fork of the Bitcoin idea, reworked from the ground up to solve some of the problems with Bitcoin.
 }
 
 
 ◊subhead{Concrete examples}
 
-Let's look at some concrete examples of how antifragility might come into play:
+Let's look at some concrete examples of how antifragility might come into play for a cryptocurrency:
 
 ◊ol{
     ◊li{◊strong{Developers disagree on the best way forward}
@@ -148,7 +158,7 @@ Let's look at some concrete examples of how antifragility might come into play:
 
         This lead to the BTC/BCH split where a part of the community left Bitcoin (BTC) to create Bitcoin Cash (BCH) that aims to prioritize on-chain scaling.
 
-        You may wonder, which approach is the correct one? That's the best part: ◊em{it doesn't really matter} as the cryptocurrency idea will live on regardless. The only issue is if both approaches are a dead-end.
+        You may wonder, which approach is the correct one? That's the best part: ◊em{it doesn't matter} as the cryptocurrency idea will live on regardless. The only issue is if both approaches are a dead-end.
     }
     ◊li{◊strong{Reference client abandons core values}
 
@@ -158,7 +168,7 @@ Let's look at some concrete examples of how antifragility might come into play:
 
         For example ◊link[monero-dev]{Monero replaced---or kicked out---the old developer team} early on in it's history when the developers pushed changes that the community disagreed with.
 
-        A more recent example is the BCH/ABC split.◊mn{abc} Since Bitcoin Cash split from Bitcoin in 2017 ABC has been the reference client that has dictated every change that went into the protocol. This ended in 2020 when ABC wanted to ◊link[abc-ifp]{reroute 8% of the block reward to an address under their control}. The change would have ◊link[doomed-to-centralization]{serious centralization concerns}, but the miners and the BCH community rejected them and they split away to their own minority fork.
+        A more recent example is the BCH/ABC split.◊mn{abc} Since Bitcoin Cash split from Bitcoin in 2017 ABC has been the reference client that has dictated every change that went into the protocol. This ended in 2020 when ABC wanted to ◊link[abc-ifp]{reroute 8% of the block reward to an address under their control}. The change had ◊link[doomed-to-centralization]{serious centralization concerns}, and in the end the miners and the BCH community rejected them and they split away to their own minority fork.
 
         ◊note-pos[#:top -8]{abc}
 
@@ -171,7 +181,7 @@ Let's look at some concrete examples of how antifragility might come into play:
         ◊note-pos{problem-dev}
 
         ◊ndef["problem-dev"]{
-            I think the developers is the weak-link in a cryptocurrency. While proof-of-work ensures even state level actors will find it difficult to disrupt the network, influencing a few developers is much easier.
+            I think the developers is the weak-link in a cryptocurrency. While proof-of-work ensures that even state level actors will find it difficult to disrupt the network, influencing a few developers is much easier.
 
             This is why I think these examples are so significant. It shows that the community can, and will, reject malicious developers.
         }
@@ -194,14 +204,19 @@ Let's look at some concrete examples of how antifragility might come into play:
 
         For example an attacked chain could change the mining algorithm, making all existing mining rigs worthless. This would make it impervious to the same type of attack and if an attacker wants to make another attempt brand new mining rigs would have to be purchased or created.
 
-        As another example during the BCH/BSV split the BSV miners threatened to reorg the BCH chain with empty blocks. If successful this would've made it impossible to transact on the chain, as no new transactions would be added to the blockchain, essentially killing the chain. This attack was never carried out, but protection was added to the BCH software that made it more difficult to carry out such an attack.
+        As another example during the BCH/BSV split the BSV miners threatened to ◊def{reorg} the BCH chain with empty blocks. If successful this would've made it impossible to transact on the chain, as no new transactions would be added to the blockchain, essentially killing the chain. This attack was never carried out, but protection was added to the BCH software that made it more difficult to carry out such an attack.◊mn{finalization} ◊note-pos{finalization}
     }
 }
 
 ◊ndef["global"]{
-    Remember that cryptocurrencies are completely global. Even if they're illegal in your country, you can always find an exchange, service or marketplace online that operates in another country where they're legal.
+    Remember that cryptocurrencies are completely global. Even if they're illegal in your country, you can always find an exchange, service or marketplace online that operates in another country where they're legal.  The tricky part is to buy or sell cryptocurrencies for fiat.
 }
 
+◊ndef["finalization"]{
+    The ◊def{block finalization} of Bitcoin Cash is highly controversial. It ensures that whenever a block has 10 confirmations it will never be invalidated, even if a longer chain is found.
+
+    While it might make it harder to reorg, it's unsound in the sense that newly connected nodes may be unable to decide which chain is the correct, but without it the nodes would simply follow the longest chain.
+}
 
 ◊subhead{Antifragility brings confidence}
 
@@ -209,7 +224,7 @@ There's a worry that governments will kill cryptocurrencies by making them illeg
 
 I've gotta be honest, they don't worry me too much. I see them as temporary setbacks that can be harmful in the short-term, but will in the end make cryptocurrencies even stronger.
 
-I'm convinced that as long as internet exists, so will cryptocurrencies.
+Therefore I'm convinced that as long as internet exists, so will cryptocurrencies.
 
 ◊(define abc-ifp
    (x-ref
