@@ -37,7 +37,7 @@ There are many projects in the cryptocurrency space that, curiously enough, aren
   ◊li{Stablecoins like ◊link[tether]{Tether}◊sn{tether} or JP Morgan's ◊link[JPM-coin]{JPM coin}}
   ◊li{"Second layer solutions" like the Lightning Network}
   ◊li{Smart tokens like the ERC20 tokens running on top of Ethereum◊sn{ICOs}}
-  ◊li{Facebook's Libra}
+  ◊li{◊link[diem]{Facebook's Diem} (renamed from Libra due to bad publicity)}
 }
 
 ◊note-pos[#:top -14]{pyramid-schemes}
@@ -195,5 +195,9 @@ There are many traps to fall into in this space. I think the best antidote is to
     "2020-09-21"
     "https://coinmarketcap.com/"
     "CoinMarketCap: Cryptocurrency Market Capitalization"))
-
+◊(define diem
+  (x-ref
+    "2020-12-08"
+    "https://www.diem.com/en-us/"
+    "Diem Association "))
 

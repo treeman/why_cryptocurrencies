@@ -178,7 +178,7 @@ Although the central banks are ultimately responsible, it's the regular banks wh
 
 There is now ◊sans-tnum{11 000} money circulating the system. Because an IOU is treated like a SEK for all intents and purposes we can even say that there's ◊sans-tnum{11 000 SEK} now after we started with only ◊sans-tnum{1 000 SEK}. The bank printed ◊sans-tnum{10 000 SEK} from thin air and has only ◊sans-tnum{1 000 SEK} to back them up.  The ratio of SEK to IOU, in this example 10%, is called the reserve.
 
-◊qt[#:author "Lloyd"
+◊qt[#:author "Lloyd Christmas"
     #:src "Dumb and Dumber (1994)"
     #:quote-src #t
     #:url dumb-n-dumber]{
@@ -235,6 +235,22 @@ As money printers, the central banks play an important roll---as the "lender of 
 This means the real check against fractional banking (the risk of going bankrupt) is thrown away and replaced with regulation that's supposed to keep the banks in check, while making the banks more robust against failure. While fine in theory, in practice it means banks are now incentivized to push the limits any way they can, to maximize their profits.
 
 I don't think there's a better example of the hazards the lender of last resort creates than ◊link[financial_crisis]{the 2008 financial crisis}. I feel the term ◊def[moral-hazard]{moral hazard}, to describe someone taking risks others will pay for, is too soft to describe the situation.◊mn{crisis-terms}
+
+A crucial part of being the lender of last resort is to act as an overseer and to keep the banks in check. But as Fed-whistleblowers show, the Fed acts less like an enforcer and more like a kind grandpa, silencing examiners to help the banks look good:
+
+◊qt[#:author "Jake Bernstein"
+    #:src "Inside the New York Fed: Secret Recordings and a Culture Clash"
+    #:url fed-recordings]{
+  In a tense, 40-minute meeting recorded the week before she was fired, Segarra's boss repeatedly tries to persuade her to change her conclusion that Goldman was missing a policy to handle conflicts of interest. Segarra offered to review her evidence with higher-ups and told her boss she would accept being overruled once her findings were submitted. It wasn't enough.
+}
+
+◊(define fed-recordings
+   (x-ref
+     "2020-12-08"
+     "https://www.propublica.org/article/carmen-segarras-secret-recordings-from-inside-new-york-fed"
+     "ProPublica (2014) Inside the New York Fed: Secret Recordings and a Culture Clash"))
+
+◊;But as Carmen Segarra's 46 hours of audio recordings from inside the Fed show, the central bank helps 
 
 ◊ndef["crisis-terms"]{
     Perhaps the words ◊def{deceit}, ◊def{scam}, ◊def{fraud} or ◊def{swindle} comes closer to describe my feelings.
