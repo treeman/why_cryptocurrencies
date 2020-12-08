@@ -102,6 +102,8 @@ And it also holds true for the immune system. Vaccines give you a very small dos
 
 A good way to see the antifragility of a distributed system is to look at the evolution of piracy. As in pirating music or movies, not killing people on boats piracy.
 
+https://www.britannica.com/topic/piracy-copyright-crime
+
 ...
 
 ◊subhead{Splitting ensures antifragility}
