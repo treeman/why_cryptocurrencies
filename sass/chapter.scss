@@ -1098,3 +1098,28 @@ table.address-message {
     text-align: center;
     padding-top: 0.2rem;
 }
+
+.flex-20, .flex-25, .flex-50, .flex-33 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        padding: 0.2em;
+    }
+}
+
+.flex-20 img {
+    max-width: 20%;
+}
+.flex-25 img {
+    max-width: 25%;
+}
+.flex-33 img {
+    max-width: 33%;
+}
+.flex-50 img {
+    max-width: 50%;
+}
+
