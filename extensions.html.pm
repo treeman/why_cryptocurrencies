@@ -19,7 +19,7 @@ Money is perhaps the most obvious usage of cryptocurrencies but they support oth
 There are many different ways this could be useful and I've selected some examples that I think have potential. I'll show how it's possible to tag a message with an unforgeable timestamp, create an uncensorable social media platform and make gambles provably fair. We'll finish with the usefulness of tracking assets with ◊def{tokens} and how a cryptocurrency based voting system have some surprisingly attractive properties.
 
 ◊ndef["blockchain-hype"]{
-    I generally try to avoid the word ◊def{blockchain} which sometimes refer to private blockchains or blockchains which use a consensus model with known and trusted actors. Facebook's Libra is such an example and ◊link[ibm-blockchain]{IBM's blockchain} is another.
+    I generally try to avoid the word ◊def{blockchain} which sometimes refer to private blockchains or blockchains which use a consensus model with known and trusted actors. Facebook's Diem is such an example and ◊link[ibm-blockchain]{IBM's blockchain} is another.
 
     Don't let the similar names fool you: consensus algorithms with known participants and those with unknown participants are ◊strong{very} different. I only consider those using the latter to be cryptocurrencies.
 }
