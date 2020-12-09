@@ -16,11 +16,11 @@ My idea is to have a picture of a city street, with shops and signs on both side
 
 ◊img[#:src "/images/cover-help/cyberpunk-futuristic-city-science-fiction-concept-art-4k-nn-1920x1080.jpg" #:alt ""]{}
 
+And in the middle should be a person with a mobile phone that shows an image with a Bitcoin logo. The person is confused and doesn't know where to go and what the different things on the street are.
+
 I like the cyberpunk aesthetic, but the cover should of course be less messy.
 
 The different things you see should be connected to different topics in the book. For example people in a Guy Fawkes mask or a homeless person showing a QR code. See below for a list of other ideas.
-
-And in the middle should be a person with a mobile phone that shows an image with a Bitcoin logo. The person is confused and doesn't know where to go and what the different things on the street are.
 
 
 ◊subhead{The style I'm looking for}
@@ -171,6 +171,23 @@ There are a few images in the book, and it would be awesome if the cover could m
 ◊figure[#:class "flex-50"]{
     ◊raw-img[#:src "/images/coinjoin.png" #:alt ""]{}
     ◊raw-img[#:src "/images/monero-transactions2.png" #:alt ""]{}
+}
+
+
+◊subhead{Book covers in similar genres}
+
+I don't think we have to mimic the covers of others, but I'd like our cover to stand out.
+
+◊figure[#:class "flex-33"]{
+    ◊raw-img[#:src "/images/other-covers/2.jpg" #:alt ""]{}
+    ◊raw-img[#:src "/images/other-covers/3.jpg" #:alt ""]{}
+    ◊raw-img[#:src "/images/other-covers/4.jpg" #:alt ""]{}
+    ◊raw-img[#:src "/images/other-covers/5.jpg" #:alt ""]{}
+    ◊raw-img[#:src "/images/other-covers/6.jpg" #:alt ""]{}
+    ◊raw-img[#:src "/images/other-covers/8.jpg" #:alt ""]{}
+    ◊raw-img[#:src "/images/other-covers/9.jpg" #:alt ""]{}
+    ◊raw-img[#:src "/images/other-covers/7.jpg" #:alt ""]{}
+    ◊raw-img[#:src "/images/other-covers/1.jpg" #:alt ""]{}
 }
 
 
