@@ -47,7 +47,7 @@ But that's exactly how our immune system works. After defeating a virus that mig
 Talib describes a myriad of things that are antifragile; for instance financial long options, street fights, love and religion. And as I'll argue in this chapter cryptocurrencies also belong to this group.
 
 
-◊subhead{The longer it lives the more robust it is}
+◊subhead{The longer it lives the longer it's expected to live}
 
 ◊em{Time} is one of the things that break down the fragile and make the antifragile stronger. This is exemplified by the ◊def{Lindy Effect}:
 
@@ -88,7 +88,7 @@ While a decentralized project like Bitcoin doesn't have an official bug bounty, 
 This is why I think the Lindy Effect applies to cryptocurrencies; with each day that pass without a fatal bug being found in a cryptocurrency, the probability that it will survive another day increases. Because the incentives are there for people to search for the bugs, that they haven't found anything fatal yet inspire confidence.◊mn{found-bugs}
 
 ◊ndef["found-bugs"]{
-    People have found very serious bugs. In the chapter about ◊link[timestamping_bug_example]{Timestamping service} we saw how awemany found a bug in Bitcoin that would allow an attacker to print an unlimited amount of Bitcoin. While serious, even if exploited it wouldn't have been fatal.
+    People have found very serious bugs. In the chapter about ◊link[timestamping_bug_example]{Timestamping service} we mentioned that awemany found a bug in Bitcoin that would allow an attacker to print an unlimited amount of Bitcoin. While serious, even if exploited it wouldn't have been fatal.
 
     As thanks for reporting it awemany received some substantial donations from the community.
 }
@@ -158,7 +158,7 @@ Let's look at some concrete examples of how antifragility might come into play f
 
         This lead to the BTC/BCH split where a part of the community left Bitcoin (BTC) to create Bitcoin Cash (BCH) that aims to prioritize on-chain scaling.
 
-        You may wonder, which approach is the correct one? That's the best part: ◊em{it doesn't matter} as the cryptocurrency idea will live on regardless. The only issue is if both approaches are a dead-end.
+        You may wonder, which approach is the correct one? That's the best part: ◊em{it doesn't matter} as the cryptocurrency idea will live on regardless. The big issue is if both approaches are a dead-end.
     }
     ◊li{◊strong{Reference client abandons core values}
 
@@ -183,7 +183,7 @@ Let's look at some concrete examples of how antifragility might come into play f
         ◊ndef["problem-dev"]{
             I think the developers is the weak-link in a cryptocurrency. While proof-of-work ensures that even state level actors will find it difficult to disrupt the network, influencing a few developers is much easier.
 
-            This is why I think these examples are so significant. It shows that the community can, and will, reject malicious developers.
+            This is why I think these examples of replacing developer teams are so significant. It shows that the community can, and will, reject malicious developers.
         }
     }
     ◊li{◊strong{Marketplaces freeze your assets}
@@ -222,7 +222,7 @@ Let's look at some concrete examples of how antifragility might come into play f
 
 There's a worry that governments will kill cryptocurrencies by making them illegal; that PayPal will co-opt Bitcoin and turn it into a corporate coin; that Facebook or governments will create a centralized digital currency that out-competes real cryptocurrencies; that developers will go rogue; or that a fatal bug will bring it all down.
 
-I've gotta be honest, they don't worry me too much. I see them as temporary setbacks that can be harmful in the short-term, but will in the end make cryptocurrencies even stronger.
+I've gotta be honest, they don't worry me too much. I see them as temporary setbacks that are harmful in the short-term, but will in the end make cryptocurrencies even stronger.
 
 Therefore I'm convinced that as long as internet exists, so will cryptocurrencies.
 
