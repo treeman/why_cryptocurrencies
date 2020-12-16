@@ -23,6 +23,15 @@ I like the cyberpunk aesthetic, but the cover should of course be less messy.
 The different things you see should be connected to different topics in the book. For example people in a Guy Fawkes mask or a homeless person showing a QR code. See below for a list of other ideas.
 
 
+◊subhead{Target audience}
+
+I want to target people who may have heard about "Bitcoin" but don't know what it is. People who might want/need a simple explanation.
+
+◊subhead{The feeling}
+
+I want the cover to be eye-catching and to make people ◊strong{curious}. I want it to suggest what topics might be covered and I also want it to be ◊strong{◊em{fun}}.
+
+
 ◊subhead{The style I'm looking for}
 
 I'm looking for an original illustration, with a sort-of a cartoony feel that complements my own images inside the book.
