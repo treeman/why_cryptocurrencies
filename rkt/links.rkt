@@ -380,6 +380,10 @@
   (ch-ref
     'cryptography.html
     "A hitchhiker’s guide to cryptography"))
+(define antifragility
+  (ch-ref
+    'antifragile.html
+    "Cryptocurrencies are antifragile"))
 
 ;; Misc links
 

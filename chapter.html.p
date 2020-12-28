@@ -13,7 +13,7 @@
 ◊(define published (str->date-display "Published" published-date))
 ◊(define updated-date (select-from-metas 'published here))
 ◊(define updated
-   (if (string=? published-date updated-date)
+   (if (or (not published-date) (string=? published-date updated-date))
        #f
        (str->date-display "Updated" (select-from-metas 'updated here))))
 ◊(define side-space? (not (select-from-metas 'no-side-space here)))
