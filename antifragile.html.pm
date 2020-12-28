@@ -120,19 +120,19 @@ And it also holds true for the immune system. Vaccines give you a very small dos
 
 While you can argue that an individual cryptocurrency is antifragile, antifragility also applies to the cryptocurrency concept itself. People like to point at the thousands of cryptocurrencies as some sort of drawback, but it's actually the opposite. Cryptocurrencies being created and then dying off en mass is good as each time one fails we might learn something new and use that to improve the survivors.
 
+◊img[#:src "/images/btc-hydra.png" #:alt "A hydra with one Bitcoin head"]{
+    Cryptocurrencies are like a Hydra.
+}
+
+◊img[#:src "/images/bch-xmr-hydra.png" #:alt "A hydra with two heads, one Bitcoin Cash and one Monero"]{
+   If a head is cut off, two more shall take its place.
+}
+
 Forking a cryptocurrency is a fundamental antifragility force. This means forking the ledger, where a cryptocurrency splits into several but all the addresses and coins are still there, or forking the code but restarting from an empty ledger.◊mn{reimplementing}
 
 ◊ndef["reimplementing"]{
     Another way is to reimplement everything from scratch. This is also antifragility in action as it reuses the idea of ◊link[how_do_cryptocurrencies_work]{how cryptocurrencies work}.
 }
-
-◊todo{IMG killing a monster with a Bitcoin symbol}
-
-◊em{In the beginning it was only Bitcoin}
-
-◊todo{IMG the monster sprouts two new heads! With the BCH and XMR logo}
-
-◊em{As problems with Bitcoin start to appear, new cryptocurrencies that try to solve them are created}◊mn{monero-no-fork}
 
 This process allows a community with different ideals to explore their own path, it allows us to explore different ways to solve a problem and it even allows a cryptocurrency to recover from a catastrophic bug. Forking is the ultimate fail-safe.
 
