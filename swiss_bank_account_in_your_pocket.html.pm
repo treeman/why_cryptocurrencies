@@ -3,7 +3,7 @@
 ◊(define-meta title "A Swiss bank account in your pocket")
 ◊(define-meta subtitle "Unlimited and untraceable money on your smartphone")
 ◊(define-meta published "2020-01-02T00:00:00+01:00")
-◊(define-meta updated "2020-10-09T19:49:09+02:00")
+◊(define-meta updated "2020-12-09T06:42:02+01:00")
 ◊(define-meta uuid "d1144eb3-b2ac-4c89-b2e0-4a03f377172c")
 
 ◊(clear-sidenotes)
@@ -241,7 +241,7 @@ In an ideal world everyone would pay their taxes as they should, while preservin
         What if we forced everyone to use traceable money, where we can see where the money's coming from? And completely removed the possibility to hide money via shell companies and offshore bank accounts?◊mn{bitcoin-traceable}
 
         ◊ndef["bitcoin-traceable"]{
-            Curiously enough, if everyone started to use a cryptocurrency like Bitcoin we would be pretty close to this world because all coins in Bitcoin can be traced. The only thing missing is tying addresses to identities, in which case we should use something like Facebook's Libra, which completely abandons all privacy.
+            Curiously enough, if everyone started to use a cryptocurrency like Bitcoin we would be pretty close to this world because all coins in Bitcoin can be traced. The only thing missing is tying addresses to identities, in which case we should use something like Facebook's Diem which completely abandons all privacy.
         }
 
         At first glance this fixes our problem, but remember that this kind of tax evasion is already legal, and we'd first have to fix our laws for this to have any effect. And besides, completely removing our financial privacy comes with serious drawbacks, some which we'll explore in the next chapter about the ◊link[cashless_dystopia]{cashless society}.

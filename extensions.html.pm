@@ -3,7 +3,7 @@
 ◊(define-meta title "Extensions")
 ◊(define-meta subtitle "Non-currency usage of a blockchain")
 ◊(define-meta published "2019-09-21T00:00:00+01:00")
-◊(define-meta updated "2020-10-24T11:38:30+02:00")
+◊(define-meta updated "2020-12-09T06:41:15+01:00")
 ◊(define-meta uuid "c83f3bb3-7277-43b0-ad8d-ee5ea4592a87")
 
 ◊(clear-sidenotes)
@@ -19,7 +19,7 @@ Money is perhaps the most obvious usage of cryptocurrencies but they support oth
 There are many different ways this could be useful and I've selected some examples that I think have potential. I'll show how it's possible to tag a message with an unforgeable timestamp, create an uncensorable social media platform and make gambles provably fair. We'll finish with the usefulness of tracking assets with ◊def{tokens} and how a cryptocurrency based voting system have some surprisingly attractive properties.
 
 ◊ndef["blockchain-hype"]{
-    I generally try to avoid the word ◊def{blockchain} which sometimes refer to private blockchains or blockchains which use a consensus model with known and trusted actors. Facebook's Libra is such an example and ◊link[ibm-blockchain]{IBM's blockchain} is another.
+    I generally try to avoid the word ◊def{blockchain} which sometimes refer to private blockchains or blockchains which use a consensus model with known and trusted actors. Facebook's Diem is such an example and ◊link[ibm-blockchain]{IBM's blockchain} is another.
 
     Don't let the similar names fool you: consensus algorithms with known participants and those with unknown participants are ◊strong{very} different. I only consider those using the latter to be cryptocurrencies.
 }

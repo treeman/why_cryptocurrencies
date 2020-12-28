@@ -214,6 +214,10 @@
   (ch-ref
     'what_is_money.html
     "What is money?"))
+(define historical-examples-of-money
+  (ch-ref
+    'what_is_money.html #:ref "historical-examples-of-money"
+    "What is money?: Historical examples of money"))
 (define money-properties
   (ch-ref
     'what_is_money.html #:ref "what-properties-does-good-money-have?"

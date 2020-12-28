@@ -3,7 +3,7 @@
 ◊(define-meta title "Private money")
 ◊(define-meta subtitle "Reclaim your financial privacy with cryptocurrencies")
 ◊(define-meta published "2019-12-09T00:00:00+01:00")
-◊(define-meta updated "2020-10-24T11:39:24+02:00")
+◊(define-meta updated "2020-12-09T06:41:47+01:00")
 ◊(define-meta uuid "9f90581c-24f1-4653-9b4a-d86a9ec9e365")
 
 ◊(clear-sidenotes)
@@ -441,8 +441,9 @@ Snowden now lives in exile in Russia, where the black bags of the U.S. cannot re
 
 ◊ndef["post-lawsuit"]{
     As in response to the lawsuit his book shot up to the Amazon bestseller list. Snowden concluded that ◊link[snowden-good-for-bitcoin #:quote #t]{this is good for bitcoin}.
-}
 
+    The ◊link[streisand]{Streisand effect} strikes again.
+}
 
 ◊;Administration Using the Full Power of the Surveillance State on Whistleblowers
 ◊;◊link{https://news.ycombinator.com/item?id=20615084}
@@ -457,6 +458,11 @@ Snowden now lives in exile in Russia, where the black bags of the U.S. cannot re
      "2019-12-09"
      "https://twitter.com/snowden/status/1174090027648868353?s=21"
      "Edward Snowden (2019) in conclusion this is good for bitcoin"))
+◊(define streisand
+   (x-ref
+     "2020-12-08"
+     "https://en.m.wikipedia.org/wiki/Streisand_effect"
+     "Wikipedia: Streisand effect"))
 
 ◊subhead{Fear is the mind-killer}
 
