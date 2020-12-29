@@ -44,7 +44,7 @@ But that's exactly how our immune system works. After defeating a virus that mig
   Glass         Bullet-proof glass      The immune system
 }
 
-Talib describes a myriad of things that are antifragile; for instance financial long options, street fights, love and religion. And as I'll argue in this chapter cryptocurrencies also belong to this group.
+Taleb describes a myriad of things that are antifragile; for instance financial long options, street fights, love and religion. As I'll argue in this chapter cryptocurrencies also belong to this group.
 
 
 ◊subhead{The longer it lives the longer it's expected to live}
@@ -85,7 +85,7 @@ In the software development world a ◊def{bug bounty} is a reward for someone w
 
 While a decentralized project like Bitcoin doesn't have an official bug bounty, Bitcoin itself functions like a very large bug bounty. Because if you find a way to break Bitcoin, and transfer coins to yourself, you could steal billions of dollars worth of Bitcoin and nobody would know who did it.
 
-This is why I think the Lindy Effect applies to cryptocurrencies; with each day that pass without a fatal bug being found in a cryptocurrency, the probability that it will survive another day increases. Because the incentives are there for people to search for the bugs, that they haven't found anything fatal yet inspire confidence.◊mn{found-bugs}
+This is why I think the Lindy Effect applies to cryptocurrencies; with each day that pass without a fatal bug being found in a cryptocurrency, the probability that it will survive another day increases. With such a large sum of money to incentivize people to search for bugs, the fact that no fatal bugs have been found yet inspire confidence.◊mn{found-bugs}
 
 ◊ndef["found-bugs"]{
     People have found very serious bugs. In the chapter about ◊link[timestamping_bug_example]{Timestamping service} we mentioned that awemany found a bug in Bitcoin that would allow an attacker to print an unlimited amount of Bitcoin. While serious, even if exploited it wouldn't have been fatal.
@@ -106,6 +106,27 @@ This is how our muscles grow stronger. When we do strength training we break dow
 
 And it also holds true for the immune system. Vaccines give you a very small dose of the virus, just enough to activate your immune system and teach it how to kill the virus, but not so large to make you so sick you couldn't function as normal. And of course you don't want to die in the process.
 
+Cryptocurrencies work the same way. When a weakness is discovered developers will introduce a fix, eliminating the weakness. As long as the cryptocurrency doesn't completely die off weaknesses will only strengthen it, making it harder to disrupt.◊mn[#:top -6]{monero-attack}
+
+◊ndef["monero-attack"]{
+    As I'm proof-reading this chapter late December 2020, ◊link[monero-attack]{Monero is currently being attacked}, preventing some nodes from syncing.
+
+    It's a variation of the ◊def[sybil-attack]{sybil attack} we saw earlier in the chapter ◊link[how_do_cryptocurrencies_work]{How do cryptocurrencies work?} that exploits weaknesses in the p2p network implementation.
+
+    While this is disruptive, ◊link[monero-attack-workaround]{workarounds exists} and these attacks will ultimately make Monero more resistant to similar attacks in the future.
+}
+
+◊(define monero-attack
+   (x-ref
+     "2020-12-29"
+     "https://sethsimmons.me/posts/moneros-ongoing-network-attack/"
+     "A Brief Breakdown of Monero’s Ongoing Network Attacks"))
+◊(define monero-attack-workaround
+   (x-ref
+     "2020-12-29"
+     "https://www.reddit.com/r/Monero/comments/kjrub1/in_honor_of_people_who_work_on_christmas_eve/ggyiids/"
+     "seista: workaround for nodes being killed"))
+
 ◊;◊subhead{The resilience of a distributed system}
 
 ◊;A good way to see the antifragility of a distributed system is to look at the evolution of piracy. As in pirating music or movies, not killing people on boats piracy.
@@ -125,7 +146,7 @@ While you can argue that an individual cryptocurrency is antifragile, antifragil
 }
 
 ◊img[#:src "/images/bch-xmr-hydra.png" #:alt "A hydra with two heads, one Bitcoin Cash and one Monero"]{
-   If a head is cut off, two more shall take its place.
+   Cut off one head, two more shall take its place.
 }
 
 Forking a cryptocurrency is a fundamental antifragility force. This means forking the ledger, where a cryptocurrency splits into several but all the addresses and coins are still there, or forking the code but restarting from an empty ledger.◊mn{reimplementing}
@@ -162,13 +183,13 @@ Let's look at some concrete examples of how antifragility might come into play f
     }
     ◊li{◊strong{Reference client abandons core values}
 
-        What would happen if the developers of a cryptocurrency decided to print coins from thin air and make themselves rich? Or make some other change that would destroy the cryptocurrency?
+        What would happen if the developers of a cryptocurrency decided to print coins from thin air and make themselves rich? Or make some other change that would destroy the tcryptocurrency?
 
         Then they would be replaced.
 
         For example ◊link[monero-dev]{Monero replaced---or kicked out---the old developer team} early on in it's history when the developers pushed changes that the community disagreed with.
 
-        A more recent example is the BCH/ABC split.◊mn{abc} Since Bitcoin Cash split from Bitcoin in 2017 ABC has been the reference client that has dictated every change that went into the protocol. This ended in 2020 when ABC wanted to ◊link[abc-ifp]{reroute 8% of the block reward to an address under their control}. The change had ◊link[doomed-to-centralization]{serious centralization concerns}, and in the end the miners and the BCH community rejected them and they split away to their own minority fork.
+        A more recent example is the BCH/ABC split.◊mn{abc} Since Bitcoin Cash split from Bitcoin in 2017 Bitcoin ABC (Bitcoin Adjustable Blocksize Cap) has been the reference client that has dictated every change that went into the protocol. This ended in 2020 when ABC wanted to ◊link[abc-ifp]{reroute 8% of the block reward to an address under their control}. The change had ◊link[doomed-to-centralization]{serious centralization concerns}, and in the end the miners and the BCH community rejected them and they split away to their own minority fork.
 
         ◊note-pos[#:top -8]{abc}
 
@@ -176,7 +197,7 @@ Let's look at some concrete examples of how antifragility might come into play f
             As of now it's not yet clear how viable the ABC chain will be. Some exchanges use the ticker BCHA, but most don't support it at all at this time.
         }
 
-        Not only did BCH replace the reference client, they replaced it with a handful of cooperating developer teams, reducing the damage a rogue developer could cause.◊mn{problem-dev}
+        Not only did Bitcoin Cash replace the reference client, they replaced it with a handful of cooperating developer teams, reducing the damage a rogue developer could cause.◊mn{problem-dev}
 
         ◊note-pos{problem-dev}
 
@@ -186,7 +207,7 @@ Let's look at some concrete examples of how antifragility might come into play f
             This is why I think these examples of replacing developer teams are so significant. It shows that the community can, and will, reject malicious developers.
         }
     }
-    ◊li{◊strong{Marketplaces freeze your assets}
+n    ◊li{◊strong{Marketplaces freeze your assets}
 
         Decentralized marketplaces that allow for non-custodial trades are created. This means the marketplaces never control your funds and all trades are made directly with the other person, making it impossible for anyone to freeze your funds.
     }
@@ -204,7 +225,7 @@ Let's look at some concrete examples of how antifragility might come into play f
 
         For example an attacked chain could change the mining algorithm, making all existing mining rigs worthless. This would make it impervious to the same type of attack and if an attacker wants to make another attempt brand new mining rigs would have to be purchased or created.
 
-        As another example during the BCH/BSV split the BSV miners threatened to ◊def{reorg} the BCH chain with empty blocks. If successful this would've made it impossible to transact on the chain, as no new transactions would be added to the blockchain, essentially killing the chain. This attack was never carried out, but protection was added to the BCH software that made it more difficult to carry out such an attack.◊mn{finalization} ◊note-pos{finalization}
+        As another example during the BCH/BSV (Bitcoin Satoshi's Vision) split the BSV miners threatened to attack the BCH chain, and to not allow any transactions to be confirmed. This would essentially kill the chain, but this attack was never carried and protection was added to the BCH software that made it more difficult to carry out such an attack.◊mn{finalization} ◊note-pos{finalization}
     }
 }
 
@@ -215,7 +236,7 @@ Let's look at some concrete examples of how antifragility might come into play f
 ◊ndef["finalization"]{
     The ◊def{block finalization} of Bitcoin Cash is highly controversial. It ensures that whenever a block has 10 confirmations it will never be invalidated, even if a longer chain is found.
 
-    While it might make it harder to reorg, it's unsound in the sense that newly connected nodes may be unable to decide which chain is the correct, but without it the nodes would simply follow the longest chain.
+    While it might make it harder to ◊def{reorg}, it's unsound in the sense that newly connected nodes may be unable to decide which chain is the correct, but without it the nodes would simply follow the longest chain.
 }
 
 ◊subhead{Antifragility brings confidence}

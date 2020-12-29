@@ -202,6 +202,10 @@
   (ch-ref
     'how_do_cryptocurrencies_work.html #:ref "transaction-security"
     "How do cryptocurrencies work?: Transaction security"))
+(define sybil-attack
+  (ch-ref
+    'how_do_cryptocurrencies_work.html #:ref "sybil-attack"
+    "How do cryptocurrencies work?: Sybil attack"))
 (define double-spending
   (ch-ref
     'how_do_cryptocurrencies_work.html #:ref "copying-a-coin-&-double-spending"
