@@ -3,7 +3,7 @@
 ◊(define-meta title "“Undesirable” businesses")
 ◊(define-meta subtitle "The ones payment processors don't want to do business with")
 ◊(define-meta published "2019-06-12T00:00:00+01:00")
-◊(define-meta updated "2020-10-09T19:48:38+02:00")
+◊(define-meta updated "2020-12-30T14:21:44+01:00")
 ◊(define-meta uuid "7f619868-39ff-43db-92b4-af452ee4c8ed")
 
 ◊(clear-sidenotes)
@@ -136,7 +136,27 @@ But some "undesirable" companies do accept credit cards? Does that mean the prob
 
 For example porn is a business with very high rate of ◊link[charge-back-fraud]{charge backs}. Just think about it: what happens if your significant other would come across a charge to "XXX-Teens" or similar? Of course you'd exclaim "my card must've been compromised!" and quickly call your bank to freeze your card and issue a charge back.
 
-Therefore most payment processors ◊link[stripe-restricted]{explicitly forbid} porn sites, making it very difficult to accept credit cards directly.
+Therefore most payment processors ◊link[stripe-restricted]{explicitly forbid} porn sites, making it very difficult to accept credit cards directly.◊mn{pornhub}
+
+◊ndef["pornhub"]{
+    PornHub (according to Alexa ◊link[alexa-pornhub]{one of the top 100 websites in the world}) has been dropped by ◊link[paypal-pornhub]{PayPal}, ◊link[mastercard-pornhub]{MasterCard and Visa}, and now only accept payments in cryptocurrencies.
+}
+
+◊(define mastercard-pornhub
+  (x-ref
+    "2020-12-30"
+    "https://www.reuters.com/article/us-pornhub-mastercard/mastercard-to-stop-processing-payments-on-pornhub-cites-unlawful-content-idUSKBN28K30C"
+    "Noor Zainab Hussain, Munsif Vengattil (2020) Mastercard, Visa halt payments on Pornhub over allegations of child sex-abuse content"))
+◊(define paypal-pornhub
+  (x-ref
+    "2020-12-30"
+    "https://www.vice.com/en/article/d3abgv/paypal-pulls-out-of-pornhub-payments"
+    "Samantha Cole (2019) PayPal Pulls Out of Pornhub, Hurting 'Hundreds of Thousands' of Performers"))
+◊(define alexa-pornhub
+  (x-ref
+    "2020-12-30"
+    "https://www.alexa.com/siteinfo/pornhub.com"
+    "Alexa: pornhub.com ranking"))
 
 
 ◊img[#:src "/images/xxx-payments1.png"

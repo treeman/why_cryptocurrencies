@@ -95,6 +95,11 @@
     "https://masteringmonero.com/"
     "SerHack"
     "Mastering Monero"))
+(define zero-to-monero
+  (book-ref
+    "https://www.getmonero.org/library/Zero-to-Monero-1-0-0.pdf"
+    "Kurt M. Alanso and KOE"
+    "Zero to Monero"))
 
 ;; Defs
 
