@@ -2,8 +2,8 @@
 
 ◊(define-meta title "Cryptocurrencies are antifragile")
 ◊(define-meta subtitle "They grow stronger from resistance")
-◊(define-meta published "2020-02-27T13:33:40+01:00")
-◊(define-meta updated "2020-02-27T13:33:40+01:00")
+◊(define-meta published "2020-12-30T13:51:09+01:00")
+◊(define-meta updated "2020-12-30T13:51:13+01:00")
 ◊(define-meta uuid "9ce74583-fbbd-42d4-940e-3a9e44ed0658")
 
 ◊; https://unchained-capital.com/blog/bitcoin-is-antifragile/
