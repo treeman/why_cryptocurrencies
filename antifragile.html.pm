@@ -171,7 +171,7 @@ Let's look at some concrete examples of how antifragility might come into play f
 
         The coin splits in two and both paths are explored.
 
-        For example in Bitcoin there was a big argument of how best to scale. Some wanted to explore on-chain scaling to the limits and others wanted to move away from the blockchain to "second layer solutions" and depend on them to scale.◊mn{not-mutually-exclusive}◊note-pos{not-mutually-exclusive}
+        For example in Bitcoin there was a big argument of how best to scale. Some wanted to explore on-chain scaling to find the limits and others wanted to move away from the blockchain to "second layer solutions" and depend on them to scale.◊mn{not-mutually-exclusive}◊note-pos{not-mutually-exclusive}
 
         ◊ndef["not-mutually-exclusive"]{
             On-chain scaling and second layer solutions aren't mutually exclusive as you can explore both at the same time on the same chain.
@@ -225,7 +225,7 @@ Let's look at some concrete examples of how antifragility might come into play f
 
         For example an attacked chain could change the mining algorithm, making all existing mining rigs worthless. This would make it impervious to the same type of attack and if an attacker wants to make another attempt brand new mining rigs would have to be purchased or created.
 
-        As another example during the BCH/BSV (Bitcoin Satoshi's Vision) split the BSV miners threatened to attack the BCH chain, and to not allow any transactions to be confirmed. This would essentially kill the chain, but this attack was never carried out and protection was added to the BCH software that made it more difficult to carry out such an attack.◊mn{finalization} ◊note-pos{finalization}
+        As another example during the BCH/BSV split the BSV (Bitcoin Satoshi's Vision) miners threatened to attack the BCH chain, and to not allow any transactions to be confirmed. This would essentially kill the chain, but this attack was never carried out and protection was added to the BCH software that made it more difficult to carry out such an attack.◊mn{finalization} ◊note-pos{finalization}
     }
 }
 
