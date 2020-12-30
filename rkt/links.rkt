@@ -64,7 +64,12 @@
   (book-ref
     "https://www.goodreads.com/book/show/13530973-antifragile"
     "Nassim Nicholas Taleb"
-    "Antifragile: Things That Gain from Disorder"))
+    "Antifragile"))
+(define black-swan-book
+  (book-ref
+    "https://www.goodreads.com/book/show/242472.The_Black_Swan"
+    "Nassim Nicholas Taleb"
+    "The Black Swan"))
 (define permanent-record-book
   (book-ref
     "https://www.goodreads.com/book/show/46223297-permanent-record"
@@ -197,6 +202,10 @@
   (ch-ref
     'how_do_cryptocurrencies_work.html #:ref "transaction-security"
     "How do cryptocurrencies work?: Transaction security"))
+(define sybil-attack
+  (ch-ref
+    'how_do_cryptocurrencies_work.html #:ref "sybil-attack"
+    "How do cryptocurrencies work?: Sybil attack"))
 (define double-spending
   (ch-ref
     'how_do_cryptocurrencies_work.html #:ref "copying-a-coin-&-double-spending"
@@ -338,6 +347,10 @@
   (ch-ref
     'timestamping_service.html
     "Timestamping service"))
+(define timestamping_bug_example
+  (ch-ref
+    'timestamping_service.html #:ref "a-real-life-example"
+    "Timestamping service: A real-life example"))
 (define seeds-and-pseudo-random-generators
   (ch-ref
     'provably_fair_gambling.html #:ref "seeds-and-pseudo-random-generators"
@@ -371,6 +384,10 @@
   (ch-ref
     'cryptography.html
     "A hitchhiker’s guide to cryptography"))
+(define antifragility
+  (ch-ref
+    'antifragile.html
+    "Cryptocurrencies are antifragile"))
 
 ;; Misc links
 

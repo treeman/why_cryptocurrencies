@@ -45,6 +45,7 @@
      bitcoin_whitepaper.html
      challenges.html
      cryptography.html
+     antifragile.html
      ;"Who is Satoshi Nakamoto?"
      ;"Is Facebook's Libra a cryptocurrency?"
      ;"Further research"

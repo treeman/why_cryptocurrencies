@@ -310,7 +310,7 @@ Cryptocurrencies are so robust we might as well say they're always available, fo
 ◊note-pos{uptime}
 
 ◊ndef["antifragile"]{
-    Taleb has minted the term ◊def[antifragile-book]{antifragile}, meaning the more you break something the stronger it becomes. Cryptocurrencies are antifragile.
+    Taleb has minted the term ◊def[antifragile-book]{antifragile}, meaning the more you break something the stronger it becomes. ◊link[antifragility]{Cryptocurrencies are antifragile}.
 }
 
 ◊ndef["uptime"]{
