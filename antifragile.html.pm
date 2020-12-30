@@ -88,7 +88,7 @@ While a decentralized project like Bitcoin doesn't have an official bug bounty, 
 This is why I think the Lindy Effect applies to cryptocurrencies; with each day that pass without a fatal bug being found in a cryptocurrency, the probability that it will survive another day increases. With such a large sum of money to incentivize people to search for bugs, the fact that no fatal bugs have been found yet inspire confidence.◊mn{found-bugs}
 
 ◊ndef["found-bugs"]{
-    People have found very serious bugs. In the chapter about ◊link[timestamping_bug_example]{Timestamping service} we mentioned that awemany found a bug in Bitcoin that would allow an attacker to print an unlimited amount of Bitcoin. While serious, even if exploited it wouldn't have been fatal.
+    People have found very serious bugs. In the chapter about the ◊link[timestamping_bug_example]{timestamping service} we mentioned that awemany found a bug in Bitcoin that would allow an attacker to print an unlimited amount of Bitcoin. While serious, even if exploited it wouldn't have been fatal.
 
     As thanks for reporting it awemany received some substantial donations from the community.
 }
@@ -207,7 +207,7 @@ Let's look at some concrete examples of how antifragility might come into play f
             This is why I think these examples of replacing developer teams are so significant. It shows that the community can, and will, reject malicious developers.
         }
     }
-n    ◊li{◊strong{Marketplaces freeze your assets}
+    ◊li{◊strong{Marketplaces freeze your assets}
 
         Decentralized marketplaces that allow for non-custodial trades are created. This means the marketplaces never control your funds and all trades are made directly with the other person, making it impossible for anyone to freeze your funds.
     }
@@ -225,7 +225,7 @@ n    ◊li{◊strong{Marketplaces freeze your assets}
 
         For example an attacked chain could change the mining algorithm, making all existing mining rigs worthless. This would make it impervious to the same type of attack and if an attacker wants to make another attempt brand new mining rigs would have to be purchased or created.
 
-        As another example during the BCH/BSV (Bitcoin Satoshi's Vision) split the BSV miners threatened to attack the BCH chain, and to not allow any transactions to be confirmed. This would essentially kill the chain, but this attack was never carried and protection was added to the BCH software that made it more difficult to carry out such an attack.◊mn{finalization} ◊note-pos{finalization}
+        As another example during the BCH/BSV (Bitcoin Satoshi's Vision) split the BSV miners threatened to attack the BCH chain, and to not allow any transactions to be confirmed. This would essentially kill the chain, but this attack was never carried out and protection was added to the BCH software that made it more difficult to carry out such an attack.◊mn{finalization} ◊note-pos{finalization}
     }
 }
 
