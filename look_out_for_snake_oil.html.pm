@@ -3,7 +3,7 @@
 ◊(define-meta title "Look out for snake oil")
 ◊(define-meta subtitle "The space is new, hyped and full of misleading information")
 ◊(define-meta published "2019-05-06T00:00:00+01:00")
-◊(define-meta updated "2020-12-09T06:41:38+01:00")
+◊(define-meta updated "2021-01-04T08:19:42+01:00")
 ◊(define-meta uuid "635e169f-885a-4d29-a266-4c9ef4981f47")
 
 ◊(clear-sidenotes)
@@ -33,7 +33,7 @@ There are many projects in the cryptocurrency space that, curiously enough, aren
 
 ◊ul{
   ◊li{OneCoin and Bitconnect---they're plain pyramid schemes◊sn{pyramid-schemes}}
-  ◊li{Ripple}
+  ◊li{Ripple◊sn{ripple}}
   ◊li{Stablecoins like ◊link[tether]{Tether}◊sn{tether} or JP Morgan's ◊link[JPM-coin]{JPM coin}}
   ◊li{"Second layer solutions" like the Lightning Network}
   ◊li{Smart tokens like the ERC20 tokens running on top of Ethereum◊sn{ICOs}}
@@ -41,7 +41,8 @@ There are many projects in the cryptocurrency space that, curiously enough, aren
 }
 
 ◊note-pos[#:top -14]{pyramid-schemes}
-◊note-pos[#:top -5]{tether}
+◊note-pos[#:top -5]{ripple}
+◊note-pos[#:top -2]{tether}
 ◊note-pos{ICOs}
 
 Some might be useful but they don't have the same properties as cryptocurrencies like Bitcoin, and they don't work the same way.
@@ -50,9 +51,19 @@ For example stablecoins depend on a third party issuer and redeemer---the very t
 
 Be very skeptical of sites like ◊link[coinmarketcap]{CoinMarketCap} that says it lists the "Top 100 Cryptocurrencies by Market Capitalization" because most of the coins listed aren't real cryptocurrencies. Like how Tether is currently #3 on the list (2020-09-21), but that's meaningless since they can be printed out of thin air, significantly warping the market cap.
 
-◊ndef["tether"]{
-    After years of suspicion Tether recently admitted ◊link[tether-backed-74]{it's only backed 74% by cash}.
+◊ndef["ripple"]{
+    The SEC ◊link[ripple-sec]{charged Ripple and two executives with conducting an unregistered securities offering}.
 }
+
+◊ndef["tether"]{
+    After years of suspicion Tether finally admitted ◊link[tether-backed-74]{it's only backed 74% by cash}.
+}
+
+◊(define ripple-sec
+  (x-ref
+    "2020-01-04"
+    "https://www.sec.gov/news/press-release/2020-338"
+    "U.S. Securities and Exchange Commission (2020) SEC Charges Ripple and Two Executives with Conducting $1.3 Billion Unregistered Securities Offering"))
 
 
 ◊subhead{The blockchain hype}
