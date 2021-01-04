@@ -73,6 +73,7 @@ years = [2005.125,
 plt.xkcd()
 
 mycol = '#343535'
+background_col = '#fcfcfc'
 
 plt.rcParams["font.family"] = "Concourse T4"
 plt.rcParams["axes.linewidth"] = 2
@@ -81,6 +82,7 @@ plt.rcParams["text.color"] = mycol
 plt.rcParams["xtick.color"] = mycol
 plt.rcParams["ytick.color"] = mycol
 plt.rcParams["ytick.minor.width"] = 0
+plt.rcParams['figure.facecolor'] = background_col
 
 # Removes remaining white lines after xkcdifying the plot.
 # Changing the background didn't fix it.
@@ -88,6 +90,8 @@ mpl.rcParams['path.effects'] = [patheffects.withStroke(linewidth=0)]
 
 fig = plt.figure(figsize=(10, 5))
 ax = fig.add_subplot(1, 1, 1)
+fig.set_facecolor(background_col)
+ax.set_facecolor(background_col)
 
 def y_fmt(y, pos):
     return '{:,.1f}%'.format(y)
@@ -107,6 +111,6 @@ ax.set_xticks([2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012])
 plt.plot(years, gdp, '#343535')
 # plt.plot(date, price, '#343535')
 
-plt.savefig('us-gdp.svg', format="svg", transparent=True, bbox_inches='tight')
-print "done"
+plt.savefig('us-gdp.svg', format="svg", transparent=False, bbox_inches='tight')
+print("done")
 

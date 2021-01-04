@@ -43,6 +43,7 @@ def parse(url):
 plt.xkcd()
 
 mycol = '#343535'
+background_col = '#fcfcfc'
 
 plt.rcParams["font.family"] = "Concourse T4"
 plt.rcParams["axes.linewidth"] = 1
@@ -51,6 +52,7 @@ plt.rcParams["text.color"] = mycol
 plt.rcParams["xtick.color"] = mycol
 plt.rcParams["ytick.color"] = mycol
 plt.rcParams["ytick.minor.width"] = 0
+plt.rcParams['figure.facecolor'] = background_col
 
 # Removes remaining white lines after xkcdifying the plot.
 # Changing the background didn't fix it.
@@ -58,6 +60,8 @@ mpl.rcParams['path.effects'] = [patheffects.withStroke(linewidth=0)]
 
 fig = plt.figure(figsize=(8, 5))
 ax = fig.add_subplot(1, 1, 1)
+fig.set_facecolor(background_col)
+ax.set_facecolor(background_col)
 
 def y_fmt(y, pos):
     return ' {:,.0f}%'.format(y*100)
@@ -102,6 +106,6 @@ ax.plot(middle40_year, middle40, '#CC2529', label='Middle 40%')
 
 ax.legend(loc='best')
 
-plt.savefig('wealth-inequality.svg', format="svg", transparent=True, bbox_inches='tight')
-print "done"
+plt.savefig('wealth-inequality.svg', format="svg", transparent=False, bbox_inches='tight')
+print("done")
 

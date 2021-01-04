@@ -42,6 +42,7 @@ closing_price = [1281.65, 1296.50, 1151.70, 1060.20, 1199.25, 1201.50, 1664.00, 
 plt.xkcd()
 
 mycol = '#343535'
+background_col = '#fcfcfc'
 
 plt.rcParams["font.family"] = "Concourse T4"
 plt.rcParams["axes.linewidth"] = 2
@@ -50,6 +51,7 @@ plt.rcParams["text.color"] = mycol
 plt.rcParams["xtick.color"] = mycol
 plt.rcParams["ytick.color"] = mycol
 plt.rcParams["ytick.minor.width"] = 0
+plt.rcParams['figure.facecolor'] = background_col
 
 # Removes remaining white lines after xkcdifying the plot.
 # Changing the background didn't fix it.
@@ -57,6 +59,8 @@ mpl.rcParams['path.effects'] = [patheffects.withStroke(linewidth=0)]
 
 fig = plt.figure(figsize=(7, 5))
 ax = fig.add_subplot(1, 1, 1)
+fig.set_facecolor(background_col)
+ax.set_facecolor(background_col)
 
 def y_fmt(y, pos):
     return '${:,.0f}'.format(y)
@@ -76,6 +80,6 @@ ax.set_yticks((0, 500, 1000, 1500, 2000))
 plt.plot(years, closing_price, '#343535')
 # plt.plot(date, price, '#343535')
 
-plt.savefig('gold-valuation.svg', format="svg", transparent=True, bbox_inches='tight')
-print "done"
+plt.savefig('gold-valuation.svg', format="svg", transparent=False, bbox_inches='tight')
+print("done")
 
