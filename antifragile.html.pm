@@ -3,7 +3,7 @@
 ◊(define-meta title "Cryptocurrencies are antifragile")
 ◊(define-meta subtitle "They grow stronger from resistance")
 ◊(define-meta published "2020-12-30T13:51:09+01:00")
-◊(define-meta updated "2020-12-30T13:51:09+01:00")
+◊(define-meta updated "2021-01-01T20:31:29+01:00")
 ◊(define-meta uuid "9ce74583-fbbd-42d4-940e-3a9e44ed0658")
 
 ◊; https://unchained-capital.com/blog/bitcoin-is-antifragile/
@@ -37,7 +37,7 @@ At first it might sound impossible; how could something grow stronger from press
      "https://en.wikipedia.org/wiki/Sentinel_%28comics%29"
      "WikiPedia (no date) Sentinel (comics)"))
 
-But that's exactly how our immune system works. After defeating a virus that might make us very sick, our body learns to recognize the virus so it can attack and kill it much earlier. This is how we might develop immunity against COVID-19 and it's the basic principle that makes vaccines work.
+But that's exactly how our immune system works. After defeating a virus that might make us very sick, our body learns to recognize the virus so it can attack and kill it much earlier. This is how we might develop immunity against COVID-19 and it's the basic principle that make vaccines work.
 
 ◊stable{
   Fragile       Robust                  Antifragile
@@ -61,7 +61,7 @@ In other words the longer something lives, the longer it can be expected to live
     Week-old food isn't better than newly cooked food. I know, I've tried.
 }
 
-It's a heuristic, not a natural law, but the implications generally makes sense. For instance that Bitcoin will survive another decade, that a newly created cryptocurrency promising to solve ◊link[challenges]{all of Bitcoin's problems} will fail and that gold will outlive them all by a few millennia.
+It's a heuristic, not a natural law, but the implications generally make sense. For instance that Bitcoin will survive another decade, that a newly created cryptocurrency promising to solve ◊link[challenges]{all of Bitcoin's problems} will fail and that gold will outlive them all by a few millennia.
 
 
 ◊subhead{The largest bug bounty in the world}
@@ -183,7 +183,7 @@ Let's look at some concrete examples of how antifragility might come into play f
     }
     ◊li{◊strong{Reference client abandons core values}
 
-        What would happen if the developers of a cryptocurrency decided to print coins from thin air and make themselves rich? Or make some other change that would destroy the tcryptocurrency?
+        What would happen if the developers of a cryptocurrency decided to print coins from thin air and make themselves rich? Or make some other change that would destroy the cryptocurrency?
 
         Then they would be replaced.
 
