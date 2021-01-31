@@ -415,7 +415,7 @@ It seems like we're moving away from the original Keynesian ideas to something e
      "Kimberly Amadeo: What Is the Public Debt, and When Is It Too High?"))
 ◊(define usa-national-debt
    (x-ref
-     "2020-09-21"
+     "2021-01-31"
      "https://fred.stlouisfed.org/graph/?id=GFDEBTN,"
      "Federal Reserve Bank of St. Louis: Federal Debt: Total Public Debt"))
 ◊(define trump-eliminate-debt
