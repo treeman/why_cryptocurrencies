@@ -329,7 +329,7 @@ As seen from historical examples I think it's safe to conclude that yes, basical
 
 ◊(define gold-valuation 
   (x-ref
-    "2019-05-16"
+    "2021-01-31"
     "https://www.macrotrends.net/1333/historical-gold-prices-100-year-chart"
     "Macrotrends: Gold Prices - 100 Year Historical Chart"))
 
