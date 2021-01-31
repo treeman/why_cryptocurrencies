@@ -3,7 +3,7 @@
 ◊(define-meta title "What is money?")
 ◊(define-meta subtitle "It's subjective")
 ◊(define-meta published "2019-05-16T00:00:00+01:00")
-◊(define-meta updated "2020-10-24T11:40:30+02:00")
+◊(define-meta updated "2021-01-31T19:55:06+01:00")
 ◊(define-meta uuid "67cd34c5-058b-4908-a4a6-aed09aff22cc")
 
 ◊(clear-sidenotes)
@@ -329,7 +329,7 @@ As seen from historical examples I think it's safe to conclude that yes, basical
 
 ◊(define gold-valuation 
   (x-ref
-    "2019-05-16"
+    "2021-01-31"
     "https://www.macrotrends.net/1333/historical-gold-prices-100-year-chart"
     "Macrotrends: Gold Prices - 100 Year Historical Chart"))
 

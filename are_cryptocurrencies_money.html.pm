@@ -3,7 +3,7 @@
 ◊(define-meta title "Are cryptocurrencies money?")
 ◊(define-meta subtitle "How well do they work as money?")
 ◊(define-meta published "2019-05-23T00:00:00+01:00")
-◊(define-meta updated "2020-10-09T19:52:08+02:00")
+◊(define-meta updated "2021-01-31T19:54:38+01:00")
 ◊(define-meta uuid "f04af7c8-5fee-45c4-a5a4-80a3f6fbd31b")
 
 ◊(clear-sidenotes)
@@ -203,7 +203,8 @@ We've looked at the properties---but how well do they function as money, today?
         The valuation is highly speculation driven and has been notoriously volatile.◊mn{sov} ◊note-pos{sov}
 
         ◊img[#:src "images/btc-valuation.svg" #:link #t #:alt "Bitcoin closing price per month, between 2010 and 2019."]{
-            ◊link[btc-valuation]{Bitcoin price per week}. The price peaked in December 2017 to $19,870, and some exchanges had it even higher. A year later the price had dropped to $3,177, a drop of over 84%.
+            ◊link[btc-valuation]{Bitcoin price per week up to the beginning of 2020}.  
+            The price peaked in December 2017 to $19,870, and some exchanges had it even higher. A year later the price had dropped to $3,177, a drop of over 84%.
         }
     }
 }
