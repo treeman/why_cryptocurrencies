@@ -3,7 +3,7 @@
 ◊(define-meta title "A defective system")
 ◊(define-meta subtitle "There is something terribly wrong with this system, isn't there?")
 ◊(define-meta published "2019-11-13T00:00:00+01:00")
-◊(define-meta updated "2020-12-09T06:41:00+01:00")
+◊(define-meta updated "2021-01-31T19:54:28+01:00")
 ◊(define-meta uuid "b09419e3-0f3d-4473-b458-d0dad01ed4b8")
 
 ◊(clear-sidenotes)
@@ -415,7 +415,7 @@ It seems like we're moving away from the original Keynesian ideas to something e
      "Kimberly Amadeo: What Is the Public Debt, and When Is It Too High?"))
 ◊(define usa-national-debt
    (x-ref
-     "2020-09-21"
+     "2021-01-31"
      "https://fred.stlouisfed.org/graph/?id=GFDEBTN,"
      "Federal Reserve Bank of St. Louis: Federal Debt: Total Public Debt"))
 ◊(define trump-eliminate-debt

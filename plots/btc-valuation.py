@@ -31,7 +31,7 @@ def prices(url):
 # https://finance.yahoo.com/quote/BTC-USD/history?period1=1279317600&period2=1557439200&interval=1mo&filter=history&frequency=1mo
 # (date, price) = prices('BTC-USD.csv')
 # https://www.investing.com/crypto/bitcoin/historical-data
-(date, price) = prices('data/Bitcoin Historical Data - Investing.com2.csv')
+(date, price) = prices('data/Bitcoin Historical Data - Investing.com.csv')
 
 # It's just for the high level understanding. Plus xkcd style is pretty
 plt.xkcd()
@@ -69,7 +69,7 @@ ax.spines['top'].set_color('none')
 ax.xaxis.set_tick_params(width=2)
 ax.yaxis.set_tick_params(width=2)
 
-ax.set_xticks([dt.date(y, 1, 1) for y in [2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020]])
+ax.set_xticks([dt.date(y, 1, 1) for y in [2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021]])
 # ax.set_yticks((0, 500, 1000, 1500, 2000))
 
 plt.plot(date, price, mycol, linewidth=1.5)

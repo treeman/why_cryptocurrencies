@@ -3,7 +3,7 @@
 ◊(define-meta title "How do cryptocurrencies work?")
 ◊(define-meta subtitle "Decentralized consensus")
 ◊(define-meta published "2019-05-03T20:08:34+01:00")
-◊(define-meta updated "2020-10-24T11:39:04+02:00")
+◊(define-meta updated "2021-01-31T19:54:47+01:00")
 ◊(define-meta uuid "320751d9-9a28-4e91-9469-b44b83e12475")
 
 ◊(clear-sidenotes)
@@ -479,21 +479,22 @@ How secure is Bitcoin, really? What do we need to pull off a 51% attack?
 Here's some quick napkin math to estimate the cost for 51% mining power:◊mn{date}
 
 ◊ndef["date"]{
-    I made the estimation in April 2019 but the math changes quickly. In October the same year the hash rate has more than doubled and new more efficient miners have been released.
+    I made the estimation in January 2021 but the math changes quickly. I encourage you to make an estimate on your own, with more up to date numbers.
 }
 
 ◊; Couldn't really be bothered to update the existing string to table to support x-expressions...
 ◊table-body{
-    ◊tr{◊td{◊link[btc-hashrate]{Total Bitcoin hash rate}}   ◊td{44,078,986 TH/s}}
+    ◊tr{◊td{◊link[btc-hashrate]{Total Bitcoin hash rate}}   ◊td{152,810,000 TH/s}}
     ◊tr{◊td{◊link[s9-hashrate]{Antminer S9i hash rate}}     ◊td{14 TH/s (+-5%)}}
     ◊tr{◊td{◊link[s9-cost]{Antminer S9i cost}}              ◊td{$400}}
-    ◊tr{◊td{Number of S9i to cover the whole network}       ◊td{3,148,499}}
-    ◊tr{◊td{Total network miner cost}                       ◊td{$1,259,399,600}}
+    ◊tr{◊td{Number of S9i to cover the whole network}       ◊td{10,915,000}}
+    ◊tr{◊td{Total network miner cost}                       ◊td{$4,366,000,000}}
+    ◊tr{◊td{Cost to reach 51%}                              ◊td{> $2,183,000,000}}
 }
 
 ◊note-pos[#:top -14]{date}
 
-So about $650 million for just the miners themselves (assuming you could purchase that many). On top of that we need power supply, cooling, storage and maintenance for more than a million miners. We're looking at a massive warehouse, or several. Suffice to say it's a very large investment, but maybe not impossibly large.
+So more than two billion for just the miners themselves (assuming you could purchase that many---a big task as all miners are sold out!) On top of that we need power supply, cooling, storage and maintenance for millions of miners. We're looking at a massive warehouse, or several. Suffice to say it's a very large investment, but maybe not impossibly large.
 
 If we manage to get enough miners it should allow us to double-spend and defraud exchanges and merchants. It almost sounds like we can get free money, but it's not that simple.
 
@@ -540,7 +541,7 @@ It also doesn't make sense for a minority miner to try to double-spend, it will 
     "coindesk (2017) The Bitcoin Mining Arms Race: GHash.io and the 51% Issue"))
 ◊(define btc-hashrate
   (x-ref
-    "2020-04-20"
+    "2021-01-31"
     "https://www.blockchain.com/charts/hash-rate"
     "blockchain.com: Total Hash Rate (TH/s)"))
 ◊(define s9-hashrate
@@ -550,7 +551,7 @@ It also doesn't make sense for a minority miner to try to double-spend, it will 
     "Bitmain: Antminer S9i"))
 ◊(define s9-cost
   (x-ref
-    "2020-04-20"
+    "2021-01-31"
     "https://www.cryptocompare.com/mining/blokforge/antminer-s9i-14-ths/"
     "CryptoCompare: Antminer S9I"))
 

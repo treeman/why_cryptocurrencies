@@ -23,6 +23,7 @@ def parse(url):
         return (date, value)
 
 # https://www.investopedia.com/updates/usa-national-debt/
+# https://fred.stlouisfed.org/graph/?id=GFDEBTN,
 (date, value) = parse('data/usa-debt.csv')
 
 # It's just for the high level understanding. Plus xkcd style is pretty
