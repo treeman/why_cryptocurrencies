@@ -114,6 +114,6 @@ plt.legend(loc='lower right')
 
 plt.figtext(0.03, 0.91, 'Circulating supply')
 
-plt.savefig('emission-rates.svg', format="svg", transparent=False, bbox_inches='tight')
+plt.savefig('emission-rates.svg', format="svg", transparent=True, bbox_inches='tight')
 print("done")
 

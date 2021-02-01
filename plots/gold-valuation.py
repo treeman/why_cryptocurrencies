@@ -80,6 +80,6 @@ ax.set_yticks((0, 500, 1000, 1500, 2000))
 plt.plot(years, closing_price, '#343535')
 # plt.plot(date, price, '#343535')
 
-plt.savefig('gold-valuation.svg', format="svg", transparent=False, bbox_inches='tight')
+plt.savefig('gold-valuation.svg', format="svg", transparent=True, bbox_inches='tight')
 print("done")
 

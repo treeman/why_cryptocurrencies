@@ -91,6 +91,6 @@ plt.annotate(
 # https://stackoverflow.com/questions/9103166/multiple-axis-in-matplotlib-with-different-scales
 plt.plot(date, value, mycol, label='Value')
 
-plt.savefig('usa-debt.svg', format="svg", transparent=False, bbox_inches='tight')
+plt.savefig('usa-debt.svg', format="svg", transparent=True, bbox_inches='tight')
 print("done")
 

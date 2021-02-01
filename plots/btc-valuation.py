@@ -74,6 +74,6 @@ ax.set_xticks([dt.date(y, 1, 1) for y in [2010, 2011, 2012, 2013, 2014, 2015, 20
 
 plt.plot(date, price, mycol, linewidth=1.5)
 
-plt.savefig('btc-valuation.svg', format="svg", transparent=False, bbox_inches='tight')
+plt.savefig('btc-valuation.svg', format="svg", transparent=True, bbox_inches='tight')
 print("done")
 

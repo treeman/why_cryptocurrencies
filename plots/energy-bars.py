@@ -70,7 +70,7 @@ ax.set_xlabel('TWh')
 
 #plt.legend( (p2[0], p1[0]), ('Cited as sole reason', 'Cited with other reasons') )
 
-plt.savefig('energy-bars.svg', format="svg", transparent=False, bbox_inches="tight")
+plt.savefig('energy-bars.svg', format="svg", transparent=True, bbox_inches="tight")
 print("done")
 
 #print plt.style.available

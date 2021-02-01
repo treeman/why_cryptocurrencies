@@ -116,6 +116,6 @@ par1.yaxis.label.set_color(p2.get_color())
 
 ax.legend(handles=[p1, p2], loc='best')
 
-plt.savefig('inflation.svg', format="svg", transparent=False, bbox_inches='tight')
+plt.savefig('inflation.svg', format="svg", transparent=True, bbox_inches='tight')
 print("done")
 

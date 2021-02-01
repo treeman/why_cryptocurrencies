@@ -111,6 +111,6 @@ ax.set_xticks([2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012])
 plt.plot(years, gdp, '#343535')
 # plt.plot(date, price, '#343535')
 
-plt.savefig('us-gdp.svg', format="svg", transparent=False, bbox_inches='tight')
+plt.savefig('us-gdp.svg', format="svg", transparent=True, bbox_inches='tight')
 print("done")
 

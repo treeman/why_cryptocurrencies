@@ -58,7 +58,7 @@ ax.spines['left'].set_color('none')
 
 plt.legend( (p2[0], p1[0]), ('Cited as sole reason', 'Cited with other reasons') )
 
-plt.savefig('why-unbanked.svg', format="svg", transparent=False, bbox_inches="tight")
+plt.savefig('why-unbanked.svg', format="svg", transparent=True, bbox_inches="tight")
 print("done")
 
 #print plt.style.available

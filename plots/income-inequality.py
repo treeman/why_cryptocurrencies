@@ -108,6 +108,6 @@ ax.plot(bottom50_year, bottom50, '#CC2529', label='Bottom 50%')
 
 ax.legend(loc='best')
 
-plt.savefig('income-inequality.svg', format="svg", transparent=False, bbox_inches='tight')
+plt.savefig('income-inequality.svg', format="svg", transparent=True, bbox_inches='tight')
 print("done")
 

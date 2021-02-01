@@ -146,6 +146,6 @@ ax.plot(swe_year, swe, '#948B3D', label='Sweden')
 
 ax.legend(loc='best')
 
-plt.savefig('income-inequality-world.svg', format="svg", transparent=False, bbox_inches='tight')
+plt.savefig('income-inequality-world.svg', format="svg", transparent=True, bbox_inches='tight')
 print("done")
 
