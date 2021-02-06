@@ -68,7 +68,7 @@ It uses ◊def[public-key-cryptography]{public-key cryptography} which allows yo
 
 ◊subhead{Copying a coin & double spending}
 
-So far cryptocurrencies don't do anything new. The hard problem is how do you prevent someone from copying a coin and sending the copies the different receivers? Couldn't you just copy the hard drive to copy your coins?
+So far cryptocurrencies don't do anything new. The hard problem is how do you prevent someone from copying a coin and sending the copies to two different receivers? Couldn't you just copy the hard drive to copy your coins?
 
 For example Sneaky Steve wants to buy a computer from Honest Harry and wants to pay with Bitcoin. The computer costs ◊sans-tnum{1 BTC} and the Bitcoin ledger looks like this:
 
