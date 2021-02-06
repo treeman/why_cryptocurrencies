@@ -30,7 +30,7 @@ I first heard about Bitcoin in 2010, about one year after its creation. I instal
 
 It wasn't until four years later I looked at Bitcoin again. I studied computer science and we had a course in cryptography---a very fun course I might add---with a part about cryptocurrencies. We went through the technical details and it made me curious about Bitcoin on a deeper level. I read the white paper and began following the news and development in the space.
 
-I'm still at the point where I'm not actively involved in cryptocurrencies. I hang out on Reddit, follow the development and I own a little but I'm not writing code or working on a project. While I work as a software developer I don't have a cryptocurrency project I burn for enough to work on it on my free time. Unfortunately ever since I started programming full-time it's been difficult to find energy for side-projects, like I had during my University years.
+I'm still at the point where I'm not actively involved in cryptocurrencies. I hang out on Reddit, follow the development and I own a little but I'm not writing code or working on a project. While I work as a software developer I don't have a cryptocurrency project I burn for enough to work on it in my free time. Unfortunately ever since I started programming full-time it's been difficult to find energy for side-projects, like I had during my University years.
 
 The free time I do have has been taken up by my two boys, my girlfriend and other hobbies. Saying no to something is saying yes to something else.◊mn{hobbies}
 
