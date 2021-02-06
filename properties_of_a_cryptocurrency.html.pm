@@ -116,7 +116,7 @@ As there's no trusted third party there's no single entity who controls the crea
 
 ◊note-pos{bitcoin-supply}
 
-If inflation is good or bad depends on who you ask. Keynesian economists ◊link[inflation-good]{argues inflation is good} while the Austrian school ◊link[inflation-bad]{argues inflation is bad}.◊mn{austrian-podcast}
+If inflation is good or bad depends on who you ask. Keynesian economists ◊link[inflation-good]{argue inflation is good} while the Austrian school ◊link[inflation-bad]{argues inflation is bad}.◊mn{austrian-podcast}
 
 I sure don't know who's right. It's probably best to be skeptical of both camps---economics operate in an extremely complex and irregular environment. Economic theories are difficult, or impossible, to verify.
 
