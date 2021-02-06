@@ -138,7 +138,7 @@ With this privacy scheme governments can still ◊link[blacklisting]{blacklist c
     As noted in the chapter ◊link[what_is_money]{What is money?} fungibility is a core property of money. This is why it's wrong to label cryptocurrencies trying to address this problem as "privacy coins"---the issue goes beyond privacy.
 }
 
-◊link[Monero]{Monero} tries to solve this by hiding amounts and obscuring addresses for all transactions:
+◊link[Monero]{Monero} try to solve this by hiding amounts and obscuring addresses for all transactions:
 
 ◊img[#:src "/images/monero-transactions.png" #:alt "A Monero transaction comes from one of several possible addresses."]{
     This is how the Monero blockchain appears to an observer. Each input is hidden among other transactions using ◊def{ring signatures}, but we cannot tell which one is real and which are fake. Receiving addresses are protected by ◊def{stealth addresses} and all amounts are also hidden.
