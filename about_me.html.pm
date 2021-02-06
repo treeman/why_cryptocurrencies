@@ -22,7 +22,7 @@ I wonder what you might think of someone who's writing a book about cryptocurren
 
 But I am none of those. I'm just a normal person, perhaps a bit introverted but still. I only have a short beard and I pay my taxes and enjoy the benefits we get here in Sweden. Unfortunately I'm neither a teenager nor a multi-millionaire.
 
-I first heard about Bitcoin in 2010, about one year after it's creation. I installed a Bitcoin wallet and played around with it a little. It was just another internet thing for me and like many others it failed to hold my attention. After about 10 or 15 minutes I removed it and promptly forgot about it.◊mn{had-some}
+I first heard about Bitcoin in 2010, about one year after its creation. I installed a Bitcoin wallet and played around with it a little. It was just another internet thing for me and like many others it failed to hold my attention. After about 10 or 15 minutes I removed it and promptly forgot about it.◊mn{had-some}
 
 ◊ndef["had-some"]{
     I did have a couple of Bitcoins at that time. It hurts to admit this as today a single Bitcoin is worth around $9,000, but sadly I've lost them. After all, back then they weren't worth anything.
