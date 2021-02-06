@@ -20,7 +20,7 @@ I wonder what you might think of someone who's writing a book about cryptocurren
     It's easy to see why cryptocurrencies might attract people like this. Cryptocurrencies are all about freedom, and the free software movement (saying that ◊strong{all} software should be free) and anarchism seek freedom to the extreme.
 }
 
-But I am none of that. I'm just a normal person, perhaps a bit introverted but still. I only have a short beard and I pay my taxes and enjoy the benefits we get here in Sweden. Unfortunately I'm neither a teenager nor a multi-millionaire.
+But I am none of those. I'm just a normal person, perhaps a bit introverted but still. I only have a short beard and I pay my taxes and enjoy the benefits we get here in Sweden. Unfortunately I'm neither a teenager nor a multi-millionaire.
 
 I first heard about Bitcoin in 2010, about one year after it's creation. I installed a Bitcoin wallet and played around with it a little. It was just another internet thing for me and like many others it failed to hold my attention. After about 10 or 15 minutes I removed it and promptly forgot about it.◊mn{had-some}
 
