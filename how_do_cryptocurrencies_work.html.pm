@@ -21,7 +21,7 @@ As stated in the introduction the focus isn't on technical details, but it's a h
 ◊(define summary `("#summary" "Summary"))
 
 ◊ndef["others"]{
-    For example Ethereum adds Turing complete smart contracts and CryptoNote protocols like Monero ◊link[privacy-challenge]{hides transaction details}.
+    For example Ethereum adds Turing complete smart contracts and CryptoNote protocols like Monero ◊link[privacy-challenge]{hide transaction details}.
 }
 
 
