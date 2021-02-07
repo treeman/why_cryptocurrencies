@@ -192,7 +192,7 @@ If you've heard about cryptocurrencies then maybe you've also heard about crypto
 
 The core idea is: if you want to choose which transaction is valid◊mn{valid} you have to do work. The process is known as ◊def{proof-of-work}, shortened to POW.
 
-The work is to find a solution to a computing problem.◊mn{asics} The problem itself is not that important and it doesn't have any meaning outside of mining. There some important properties it should have:
+The work is to find a solution to a computing problem.◊mn{asics} The problem itself is not that important and it doesn't have any meaning outside of mining. There's some important properties it should have:
 
 ◊ul{
     ◊li{◊strong{Hard enough}
@@ -226,7 +226,7 @@ Important to note is that the system is permissionless so there's nobody to prev
 ◊ndef["asics"]{
     In Bitcoin specialized hardware, called ◊link[ASICs]{ASICs}, are used which are many magnitudes faster than regular computers at solving POW problems.
 
-    They can only be used for a specific type of POW algorithm and cannot be used to mine on any cryptocurrency.
+    They can only be used for a specific type of POW algorithm and cannot be used to mine any other cryptocurrency unless that currency also uses the same POW algorithm.
 }
 
 ◊ndef["useful-pow"]{
