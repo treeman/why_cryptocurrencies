@@ -117,7 +117,7 @@ To resolve double spending it's enough to choose one of the double spending tran
 This is the same problem as the ◊def[byzantine-generals]{Byzantine Generals Problem}. Here's my description of a simple variation:
 
 ◊div[#:class "story"]{
-In the Eastern Roman Empire, also referred to as the Byzantine Empire, a couple of generals surround an enemy city:
+In the Eastern Roman Empire, also referred to as the Byzantine Empire, several generals surround an enemy city:
 
 ◊img[#:src "/images/generals.png" #:alt "Five generals surrounding an enemy city."]{
     The five generals surround a well defended enemy city. They don't have direct contact and instead need to communicate by sending messengers.
