@@ -112,7 +112,7 @@ This isn't really a problem with physical cash since you can't just copy gold co
 
 ◊subhead{The Byzantine Generals Problem}
 
-To resolve double spending it's enough to choose one of double spending transactions. But how do you do that when there are many unrelated people---some who wants to cheat?
+To resolve double spending it's enough to choose one of the double spending transactions. But how do you do that when there are many unrelated people---some who wants to cheat?
 
 This is the same problem as the ◊def[byzantine-generals]{Byzantine Generals Problem}. Here's my description of a simple variation:
 
