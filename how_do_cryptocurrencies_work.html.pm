@@ -102,9 +102,9 @@ This isn't really a problem with physical cash since you can't just copy gold co
 
     There are different types of decentralization in a cryptocurrency to consider. For example:
 
-    1. Mining centralization
-    2. Development centralization
-    3. Node centralization
+    1. Mining decentralization
+    2. Development decentralization
+    3. Node decentralization
 
     The one we're interested in here is who decides which transactions to approve, which is the miners' job.
 }
