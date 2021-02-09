@@ -379,7 +379,7 @@ To function as money money should have these properties:◊mn{money-props}
 
         There should be a limited and predictable amount of money.◊mn{limited-supply}
 
-        A limited amount is needed for the money to hold it's value.
+        A limited amount is needed for the money to hold its value.
 
         ◊note-pos{limited-supply}
     }
