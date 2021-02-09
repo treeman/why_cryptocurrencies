@@ -231,7 +231,7 @@ It goes something like this:
     ◊li{Get your money back}
 }
 
-This can be a big problem for some merchants, especially those ◊link[fraud-digital]{serving digital goods}, who often has to swallow it as a loss. To make matters worse merchants also have to pay non-negotiable and non-refundable ◊link[charge-back-fees]{charge back fees} even when disputing.◊mn{bank-chargeback}
+This can be a big problem for some merchants, especially those ◊link[fraud-digital]{serving digital goods}, who often have to swallow it as a loss. To make matters worse merchants also have to pay non-negotiable and non-refundable ◊link[charge-back-fees]{charge back fees} even when disputing.◊mn{bank-chargeback}
 
 ◊(define charge-back-fraud
   (x-ref
