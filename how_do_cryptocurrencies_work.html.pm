@@ -596,7 +596,7 @@ You may then wonder, what decides which is the correct chain? There's no clear a
 
 There are alternatives to proof-of-work but none have so far been proven to work well. The most popular is ◊def{proof-of-stake} where instead of miners expending energy you have coin holders who vote.
 
-One problem is the ◊link[nothing-at-stake]{nothing at stake problem} where a coin holder can vote on all forks while a proof-of-work miner can only vote on one of the forks.  It causes a situation where everyone are incentivized to vote on all forks and an attacker can abuse it to reverse a transaction by only mining on their fork, which is initially a block behind, to overtake the main chain and reverse their transaction. This only requires a small percentage of total voting power in contrast to proof-of-work where you need 50%.
+One problem is the ◊link[nothing-at-stake]{nothing at stake problem} where a coin holder can vote on all forks while a proof-of-work miner can only vote on one of the forks.  It causes a situation where everyone is incentivized to vote on all forks and an attacker can abuse it to reverse a transaction by only mining on their fork, which is initially a block behind, to overtake the main chain and reverse their transaction. This only requires a small percentage of total voting power in contrast to proof-of-work where you need 50%.
 
 ◊(define nothing-at-stake 
   (x-ref
