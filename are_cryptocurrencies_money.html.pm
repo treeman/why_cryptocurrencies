@@ -299,7 +299,7 @@ Several countries---◊link[skatt-bitcoin]{like Sweden}---have ruled that Bitcoi
     Legal tender declares that you have to accept it as money by law.
 }
 
-Cryptocurrencies just don't fit into existing rules of fiat currencies. This often happens with new innovations that break the mold---laws cannot keep up.◊sn{patents} For instance cryptocurrencies removes the third party requirement, something previously thought impossible.
+Cryptocurrencies just don't fit into existing rules of fiat currencies. This often happens with new innovations that break the mold---laws cannot keep up.◊sn{patents} For instance cryptocurrencies remove the third party requirement, something previously thought impossible.
 
 ◊ndef["patents"]{
     Another beautiful example of laws not keeping up with technology is patents. ◊link[software-patents]{Software patents work horribly}, yet software is continuously pushed into the existing framework that doesn't really fit.
@@ -307,7 +307,7 @@ Cryptocurrencies just don't fit into existing rules of fiat currencies. This oft
     One example is ◊link[one-click]{Amazon's one-click checkout patent}.
 }
 
-There are others who've ruled in favor of Bitcoin as a currency. For example ◊link[eu-ruled]{EU ruled} that VAT is not applicable to the conversion between fiat currency and Bitcoin, however VAT still applies when used for goods and services.
+There are others who've ruled in favor of Bitcoin as a currency. For example ◊link[eu-ruled]{the EU ruled} that VAT is not applicable to the conversion between fiat currency and Bitcoin, however VAT still applies when used for goods and services.
 
 ◊note-pos[#:top -16]{legal-tender}
 ◊note-pos[#:top -10]{patents}
