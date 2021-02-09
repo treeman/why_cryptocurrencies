@@ -571,7 +571,7 @@ There's another situation where forks can arise: when consensus rules are change
 Some cryptocurrencies, for example Monero and Bitcoin Cash, have regular network upgrades where consensus rules are changed.◊mn{hard-soft}
 
 ◊ndef["hard-soft"]{
-    I've deliberatly simplified my usage of fork terminology. On a technical level it's useful to distinguish between two types of forks: ◊def{hard-forks} and ◊def{soft-forks}.
+    I've deliberately simplified my usage of fork terminology. On a technical level it's useful to distinguish between two types of forks: ◊def{hard-forks} and ◊def{soft-forks}.
 
     A hard-fork is a backwards incompatible change and all nodes must upgrade to avoid ending up on the old chain. Bitcoin Cash forked off from Bitcoin using a hard-fork for example.
 
