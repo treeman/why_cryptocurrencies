@@ -528,7 +528,7 @@ The biggest security risk for Bitcoin might instead be state level actors  who w
 
 While cryptocurrencies combine several different technologies in an interesting way the real innovation is how they're secured by economic incentives; that the most profitable way for miners is to follow the network rules.
 
-As noted earlier the current block reward for Bitcoin is 12.5 BTC, or around $50,000. Losing out on just one block reward is a big loss in the cutthroat mining business, so miners are heavily incentivized to always work on the longest chain.
+As noted earlier the current block reward for Bitcoin is 6.25 BTC, or around $250,000 (as of February 2021). Losing out on just one block reward is a big loss in the cutthroat mining business, so miners are heavily incentivized to always work on the longest chain.
 
 For example in a fork with two competing chains the most profitable move is to jump to the longest chain as quickly as possible. This ensures that a double-spend gets resolved quickly.
 
