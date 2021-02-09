@@ -54,7 +54,7 @@ To decide how well cryptocurrencies can function as money, we'll take a look at 
 
         Cryptocurrencies are impossible to counterfeit and if implemented correctly they're easy to separate from each other.
 
-        While at a low level it may be difficult to tell which cryptocurrency a number belongs to, all necessary data is public so you can differentiate them. Wallet apps does this automatically, making them easy to identify.
+        While at a low level it may be difficult to tell which cryptocurrency a number belongs to, all necessary data is public so you can differentiate them. Wallet apps do this automatically, making them easy to identify.
     }
 }
 
