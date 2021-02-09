@@ -177,7 +177,7 @@ Instead they have a third party request the payment on their behalf and do some 
     "https://stripe.com/restricted-businesses"
     "Stripe: Restricted Businesses—Sweden"))
 
-These things are in the gray area legal wise,◊mn{legal?} so the companies that does this have high fees---VERY high fees. While regular payment processors may have ~3--4% fees, these intermediary fees can be as high as ◊strong{30%}. That's ludicrously expensive for low margin businesses.
+These things are in the gray area legal wise,◊mn{legal?} so the companies that do this have high fees---VERY high fees. While regular payment processors may have ~3--4% fees, these intermediary fees can be as high as ◊strong{30%}. That's ludicrously expensive for low margin businesses.
 
 ◊note-pos[#:top -8]{legal?}
 
