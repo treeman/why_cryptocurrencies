@@ -107,7 +107,7 @@ Just to be a little gratuitous and to drive home my point on how bad this can be
 They didn't just freeze the account, they're making it worse by confiscating future payments as well!◊mn{lawsuits}
 
 ◊ndef["lawsuits"]{
-    And even if you get all your money back eventually, you still have to deal with ruined reputation, missed opportunities and costumers suing you for delayed deliveries.
+    And even if you get all your money back eventually, you still have to deal with ruined reputation, missed opportunities and customers suing you for delayed deliveries.
 }
 
 ◊note-pos[#:top -25]{digital}
