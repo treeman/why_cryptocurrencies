@@ -79,7 +79,7 @@ Cryptocurrencies can also be considered to be ◊def[sound-money]{sound money}--
 
 ◊subhead{Comparing properties with other forms of money}
 
-This is a table of how I think cryptocurrencies compares to other forms of money. I differentiate between the two forms of fiat---digital and physical---because they have different properties. Gold can be either gold coins or gold bars---basically some suitable physical form of gold.
+This is a table of how I think cryptocurrencies compare to other forms of money. I differentiate between the two forms of fiat---digital and physical---because they have different properties. Gold can be either gold coins or gold bars---basically some suitable physical form of gold.
 
 ◊table-body[#:class "crypto-eval"]{
     ◊tr{◊td{}                       ◊ths{Fiat (digital)} ◊ths{Fiat (physical)} ◊ths{Gold}     ◊ths{Cryptocurrencies}}
