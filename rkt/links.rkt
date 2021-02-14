@@ -297,6 +297,10 @@
   (ch-ref
     'global_currency.html
     "A global currency"))
+(define hyperinflation
+  (ch-ref
+    'global_currency.html #:ref "Hyperinflation is real"
+    "A global currency: Hyperinflation is real"))
 (define financial_crisis
   (ch-ref
     'financial_crisis.html

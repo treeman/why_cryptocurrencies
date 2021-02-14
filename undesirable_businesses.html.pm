@@ -139,7 +139,7 @@ For example porn is a business with very high rate of ◊link[charge-back-fraud]
 Therefore most payment processors ◊link[stripe-restricted]{explicitly forbid} porn sites, making it very difficult to accept credit cards directly.◊mn{pornhub}
 
 ◊ndef["pornhub"]{
-    PornHub (according to Alexa ◊link[alexa-pornhub]{one of the top 100 websites in the world}) has been dropped by ◊link[paypal-pornhub]{PayPal}, ◊link[mastercard-pornhub]{MasterCard and Visa}, and now only accept payments in cryptocurrencies.
+    PornHub (according to Alexa ◊link[alexa-pornhub]{one of the top 100 websites in the world}) has been dropped by ◊link[paypal-pornhub]{PayPal}, ◊link[mastercard-pornhub]{MasterCard and VISA}, and now only accept payments in cryptocurrencies.
 }
 
 ◊(define mastercard-pornhub

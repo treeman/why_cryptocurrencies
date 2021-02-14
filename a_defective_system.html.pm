@@ -236,7 +236,7 @@ This means the real check against fractional banking (the risk of going bankrupt
 
 I don't think there's a better example of the hazards the lender of last resort creates than ◊link[financial_crisis]{the 2008 financial crisis}. I feel the term ◊def[moral-hazard]{moral hazard}, to describe someone taking risks others will pay for, is too soft to describe the situation.◊mn{crisis-terms}
 
-A crucial part of being the lender of last resort is to act as an overseer and to keep the banks in check. But as Fed-whistleblowers show, the Fed acts less like an enforcer and more like a kind grandpa, silencing examiners to help the banks look good:
+A crucial part of being the lender of last resort is to act as an overseer and to keep the banks in check. But as Fed whistleblowers show, the Fed acts less like an enforcer and more like a kind grandpa, silencing examiners to help the banks look good:
 
 ◊qt[#:author "Jake Bernstein"
     #:src "Inside the New York Fed: Secret Recordings and a Culture Clash"
