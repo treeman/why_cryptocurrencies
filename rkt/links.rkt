@@ -297,6 +297,10 @@
   (ch-ref
     'global_currency.html
     "A global currency"))
+(define hyperinflation
+  (ch-ref
+    'global_currency.html #:ref "Hyperinflation is real"
+    "A global currency: Hyperinflation is real"))
 (define financial_crisis
   (ch-ref
     'financial_crisis.html
@@ -469,3 +473,8 @@
      "2020-09-22"
      "https://www.reuters.com/article/us-usa-nsa-spying-idUSKBN25T3CK"
      "Raphael Satter (2020) U.S. court: Mass surveillance program exposed by Snowden was illegal"))
+(define debasement
+   (x-ref
+     "2020-02-05"
+     "https://www.investopedia.com/terms/d/debasement.asp"
+     "Clay Halton: Debasement"))
