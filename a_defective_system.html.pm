@@ -613,7 +613,7 @@ Nothing fundamentally changed. The deep-rooted economic problems are still there
 
 Since the financial crisis in 2008 we're in uncharted territory, and we actually don't know what we should do. Therefore new economic theories, like the ◊link[mmt]{Modern Money Theory} (MMT), are developed. MMT basically says the government can pay its bills by just printing all money it needs, checked only by inflation. It's reasonable to ask if MMT is a sound economic theory, or if it's just describing ◊link[mmt-true]{what's already happening}.
 
-While "printing more money" is a popular solution, ◊def[sound-money]{sound money} (with a stable money supply) might represent a compelling alternative for critics of the modern economic policies. For example fiat backed by gold, actual gold coins or cryptocurrencies.◊sn{debasement}
+While "printing more money" is a popular solution, ◊def[sound-money]{sound money} (with a stable money supply) might represent a compelling alternative for critics of the modern economic policies. For example fiat backed by gold, actual gold coins or cryptocurrencies.◊mn{debasement}
 
 ◊ndef["debasement"]{
     The state that creates gold coins can still inflate the money supply by decreasing the amount of gold in the coins. This is called ◊def[debasement]{debasement} and has been quite common historically.
@@ -626,11 +626,6 @@ It’s not easy to see how a switch to sound money would occur and such a switch
 ◊note-pos[#:top -15]{debasement}
 
 
-◊(define debasement
-   (x-ref
-     "2019-11-13"
-     "https://www.investopedia.com/terms/d/debasement.asp"
-     "Clay Halton (2019) Debasement"))
 ◊(define mmt
    (x-ref
      "2019-11-13"
