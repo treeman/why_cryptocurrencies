@@ -4,27 +4,26 @@
 
 ◊section[#:class "hero"]{
   ◊div[#:class "header"]{
-    ◊div[#:class "title"]{
-      ◊h1{◊|main-title|}
-      ◊h2{◊|subtitle|}
-
-      ◊div[#:class "sell-it"]{
-        Bitcoin is one of the most transformative technologies in history, but at the same time it's dismissed as useless or only seen as a speculative vehicle. This book will dispel that myth by exploring real use-cases and show how cryptocurrencies are uniquely positioned to revolutionize the way we use money today.
-
-        ◊span[#:class "afford"]{Can you afford to miss out?}
-      }
-
-      ◊div[#:class "buy"]{
-        BUY THE BOOK
-      }
-
-      ◊div[#:class "buy"]{
-        Read it online for free
-      }
-    }
-
     ◊div[#:class "book"]{
       ◊raw-img[#:src "/images/cover/front.png" #:alt "Why Cryptocurrencies? Book"]{}
+    }
+
+    ◊div[#:class "title"]{
+      ◊;h1{◊|main-title|}
+      ◊;h2{◊|subtitle|}
+
+      ◊div[#:class "sell-it"]{
+        Bitcoin is one of the most transformative technologies in history, but at the same time it's dismissed as useless or only seen as a speculative vehicle. ◊strong{Why Cryptocurrencies?} will dispel that myth by exploring real use-cases and show how cryptocurrencies are uniquely positioned to revolutionize the way we use money today.
+
+        ◊span[#:class "afford"]{Can you afford to miss out?}
+
+        ◊;abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz
+      }
+
+      ◊nav[#:class "buttons"]{
+        ◊link[rel-buy]{Buy the book}
+        ◊link[read-now]{Read it online for free}
+      }
     }
   }
 }
@@ -61,12 +60,16 @@
   }
 }
 
+◊(define coming-soon
+   (div #:class "soon" "Coming Soon™"))
+
 ◊div[#:class "books"]{
 
-  ◊book-type["print" "Print"]{
-    ◊ul[#:class "buttons"]{
-      ◊li{Buy from Amazon}
-      ◊li{Download Sample PDF}
+  ◊book-type["print" `(a ((name "print")) "Print")]{
+    ◊nav[#:class "buttons"]{
+      ◊;◊li{Buy from Amazon}
+      ◊;◊li{Download Sample PDF}
+      ◊|coming-soon|
     }
 
     ◊ul[#:class "features"]{
@@ -78,13 +81,14 @@
   }
 
   ◊book-type["ebook" "eBook"]{
-    ◊ul[#:class "buttons"]{
-      ◊li{Buy directly from me with crypto}
-      ◊li{Kindle}
-      ◊li{iBooks}
-      ◊li{Play Books}
-      ◊li{Nook}
-      ◊li{EPUB}
+    ◊nav[#:class "buttons"]{
+      ◊|coming-soon|
+      ◊;◊li{Buy directly from me with crypto}
+      ◊;◊li{Kindle}
+      ◊;◊li{iBooks}
+      ◊;◊li{Play Books}
+      ◊;◊li{Nook}
+      ◊;◊li{EPUB}
     }
 
     ◊ul[#:class "features"]{
@@ -93,10 +97,11 @@
     }
   }
   ◊book-type["pdf" "PDF"]{
-    ◊ul[#:class "buttons"]{
-      ◊li{Buy directly from me with crypto}
-      ◊li{Buy from X}
-      ◊li{Download Free Sample}
+    ◊nav[#:class "buttons"]{
+      ◊|coming-soon|
+      ◊;◊li{Buy directly from me with crypto}
+      ◊;◊li{Buy from X}
+      ◊;◊li{Download Free Sample}
     }
 
     ◊ul[#:class "features"]{
@@ -106,14 +111,14 @@
     }
   }
   ◊book-type["web" "Web"]{
-    ◊ul[#:class "buttons"]{
-      ◊li{Read Now}
+    ◊nav[#:class "buttons"]{
+      ◊link[read-now]{Read Now}
     }
 
     ◊ul[#:class "features"]{
       ◊li{Designed to look great on every device}
       ◊li{Free!}
-      ◊li{Yes, the whole book is available to read online for free!}
+      ◊li{Yes, the whole book is available online for free!}
       ◊li{◊link[source-code]{The book is also open source}}
     }
   }
@@ -198,6 +203,10 @@
       Buying the digital versions directly from me with crypto removes all third-party fees, leaving me with the most amount of money in the end. It also allows you to set the amount to whatever you want, so if you want to shower me with money you can do that too!
     }
 
+    ◊faq["How can I buy the printed version with crypto?"]{
+      Unfortunately I haven't found a way for you to buy it with crypto directly. What you can do is buy Amazon gift cards with crypto and use them to buy the book from Amazon. I've used ◊link[coinsbee]{Coinsbee} and ◊link[keys4coins]{Keys4Coins}, but there are many other alternatives.
+    }
+
     ◊faq["Who made the amazing cover?"]{
       Brad Lark, ◊(blark-email)
     }
@@ -213,8 +222,24 @@
     ◊faq["What if I find an error in the book?"]{
       One of the benefits of an open-source book is that you can open an issue or send me a pull request ◊link[source-code]{on GitHub}. You can also contact me at ◊(link mailto email).
     }
+
+    ◊faq["What if I have any other questions?"]{
+      Just send me an email: ◊(link mailto email)
+    }
   }
 }
+
+◊(define coinsbee
+  (x-ref
+    #f
+    "https://www.coinsbee.com/"
+    "Coinsbee"))
+
+◊(define keys4coins
+  (x-ref
+    #f
+    "https://www.keys4coins.com/"
+    "Keys4Coins"))
 
 ◊section[#:class "ending"]{
   ◊(follow-section)
@@ -255,3 +280,6 @@
   (define email "blark@blark.com")
   `(a ((href ,(string-append "mailto:" email))) ,email))
 
+
+◊(define rel-buy "#print")
+◊(define read-now "#")

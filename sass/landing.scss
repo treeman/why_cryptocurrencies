@@ -131,13 +131,16 @@ $warm-grey-700: #504A40;
 $warm-grey-800: #423D33;
 $warm-grey-900: #27241D;
 
-$button-color: #C0D890;
 $button-hover-color: $bch-green;
 $button-color: $yellow-300;
 $button-hover-color: $yellow-500;
 $button-shadow-color: $yellow-400;
 
+$invalid-button-color: $warm-grey-100;
+$invalid-button-shadow-color: $warm-grey-200;
+
 $large-width: 1280px;
+$small-screen: 1067px;
 
 .landing {
     display: flex;
@@ -178,6 +181,7 @@ $large-width: 1280px;
 }
 
 .landing .hero {
+    width: 100%;
     background-color: $body-background-color;
     background-color: $warm-grey-050;
 }
@@ -185,10 +189,13 @@ $large-width: 1280px;
     padding: 8px;
     display: flex;
     flex-wrap: wrap;
-    margin-top: 64px;
+    // margin-top: 64px;
 }
 .landing .hero .title {
-    flex: 1;
+    margin-top: 24px;
+    max-width: 650px;
+    // background-color: red;
+    // flex: 1;
     h1 {
         font-size: 48px;
         margin: 0;
@@ -209,11 +216,48 @@ $large-width: 1280px;
     }
 
     .sell-it {
-        padding-right: 64px;
-        max-width: 800px;
+        // text-align: center;
+        // padding-right: 64px;
+        // max-width: 650px;
+    }
+    .afford {
+        font-weight: bold;
     }
 }
+.landing .hero .buttons {
+    width: 100%;
+    margin-top: 32px;
+    margin-bottom: 48px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.landing .hero .buttons a {
+    flex: 1;
+    text-decoration: none;
+    color: inherit;
+    text-align: center;
+    background-color: $button-color;
+    border: 0;
+    border-radius: 4px;
+    font-size: 1rem;
+    padding: 12px 16px;
+    margin: 8px;
+    cursor: pointer;
+    box-shadow: 1px 1px 0px $button-shadow-color;
+}
+.landing .hero .buttons a:hover {
+    text-decoration: none;
+    color: inherit;
+    background-color: $button-hover-color;
+}
+
 .landing .hero .book {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
     img {
         max-width: 600px;
     }
@@ -231,42 +275,17 @@ $large-width: 1280px;
     background-color: $warm-grey-800;
     padding: 48px 0;
 }
-
 .landing .format {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 16px;
+    padding: 0;
     border-radius: 8px;
-}
 
-.landing .format .left {
-    width: 520px;
-    margin-right: 32px;
-}
-.landing .format .img-wrapper {
-    width: 500px;
-    border-radius: 8px;
-    background-image: url("/images/cover/front.png");
-    padding: 8px;
-}
-.landing .pdf .img-wrapper {
-    background-image: url("/images/landing/pdf.png");
-}
-.landing .web .img-wrapper {
-    background-image: url("/images/landing/unbanked.png");
-}
-// .landing .format img {
-//     width: 500px;
-//     height: 500px;
-//     padding: 8px;
-//     border-radius: 4px;
-// }
-.landing .format {
     background-color: $yellow-050;
     // border: solid 1px $yellow-100;
     // border-radius: 8px;
-    margin-bottom: 24px;
+    margin-bottom: 48px;
 
     h1 {
         margin-bottom: 16px;
@@ -279,22 +298,35 @@ $large-width: 1280px;
         font-size: 95%;
         line-height: 1.35;
     }
-    ul.buttons > li {
+    nav.buttons {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    nav.buttons > a, nav.buttons > div.soon {
+        flex: 1;
         text-align: center;
         width: 100%;
         background-color: $button-color;
         border: 0;
         border-radius: 4px;
-        font-size: 20px;
+        font-size: 1rem;
         padding: 12px 16px;
         // margin: 8px;
         margin-bottom: 8px;
         cursor: pointer;
         box-shadow: 1px 1px 0px $button-shadow-color;
     }
-    ul.buttons > li:hover {
+    nav.buttons > a:hover {
         background-color: $button-hover-color;
+        cursor: pointer;
     }
+    nav.buttons > div.soon {
+        cursor: auto;
+        background-color: $invalid-button-color;
+        box-shadow: 1px 1px 0px $invalid-button-shadow-color;
+    }
+
     ul.features {
         margin-top: 24px;
     }
@@ -304,6 +336,32 @@ $large-width: 1280px;
         padding-right: 16px;
         color: $yellow-500;
     }
+}
+
+.landing .format .left {
+    width: 520px;
+    margin-right: 16px;
+    padding: 16px;
+
+    a, a:link, a:hover {
+        color: inherit;
+        text-decoration: none;
+        cursor: auto;
+    }
+}
+.landing .format .img-wrapper {
+    width: 500px;
+    border-radius: 8px;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    background-image: url("/images/cover/front.png");
+    // padding: 8px;
+}
+.landing .pdf .img-wrapper {
+    background-image: url("/images/landing/pdf.png");
+}
+.landing .web .img-wrapper {
+    background-image: url("/images/landing/unbanked.png");
 }
 
 .landing .praise {
@@ -375,8 +433,7 @@ $large-width: 1280px;
 .landing .faq {
     background-color: $warm-grey-900;
     // background-color: $cover-dark3;
-    padding-top: 32px;
-    padding-bottom: 32px;
+    padding: 32px 8px;
     // color: $warm-grey-100;
     background-color: $warm-grey-200;
 }
@@ -419,5 +476,42 @@ $large-width: 1280px;
     a:hover {
         color: $btc-orange;
         text-decoration: none;
+    }
+}
+
+@media only screen and (max-width: $small-screen) {
+    .landing .format {
+        width: 520px;
+        margin-left: 16px;
+        margin-right: 16px;
+        // padding: 16px;
+        border-radius: 8px;
+        padding: 0;
+    }
+    .landing .format .left {
+        order: 2;
+        width: 100%;
+        margin: 0;
+        padding: 16px;
+    }
+    .landing .format .img-wrapper {
+        order: 1;
+        width: 100%;
+        height: 300px;
+        border-radius: 8px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+    .landing .faq {
+        padding: 32px;
+    }
+    .landing .faq .questions .question-answer {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 520px) {
+    .landing .format {
+        width: 100%;
     }
 }
