@@ -336,6 +336,13 @@ $small-screen: 1067px;
         padding-right: 16px;
         color: $yellow-500;
     }
+    ul.features a, ul.features a:link {
+        text-decoration: underline;
+        cursor: pointer;
+    }
+    ul.features a:hover {
+        color: $btc-orange;
+    }
 }
 
 .landing .format .left {
