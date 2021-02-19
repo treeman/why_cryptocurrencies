@@ -29,14 +29,12 @@
 // 60px
 // 72px
 
-$cover-green-hl: #C0D890;
-
-// #000000
-// #180000
-// #181818
-// #181800
-// #303030
-// #606060
+$cover-dark0: #000000;
+$cover-dark1: #180000;
+$cover-dark2: #181818;
+$cover-dark3: #181800;
+$cover-dark4: #303030;
+$cover-dark5: #606060;
 //
 // #303048
 // #181830
@@ -85,6 +83,8 @@ $cover-green-hl: #C0D890;
 // #909090
 // #606030
 // #90A860
+
+$cover-green-hl: #C0D890;
 
 
 $pink-050: #FFE0F0;
@@ -144,7 +144,44 @@ $large-width: 1280px;
     flex-wrap: wrap;
     justify-content: center;
 }
+
+.landing {
+    a {
+        text-shadow: none;
+        background: none;
+        text-shadow: none;
+        text-decoration: underline;
+    }
+    a:link, a:visited, a:link:selection {
+        text-shadow: none;
+        background: none;
+        text-decoration: underline;
+    }
+    a:link {
+        color: #000;
+    }
+    a:hover {
+        color: $btc-orange;
+    }
+}
+
+.landing .books,
+.landing .user-comments,
+.landing .what,
+.landing .header,
+.landing .faq,
+.landing .ending {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 .landing .hero {
+    background-color: $body-background-color;
+    background-color: $warm-grey-050;
+}
+.landing .hero .header {
     padding: 8px;
     display: flex;
     flex-wrap: wrap;
@@ -182,18 +219,17 @@ $large-width: 1280px;
     }
 }
 
-.landing .books,
-.landing .user-comments,
-.landing .what {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+.landing .user-comments {
+    padding: 48px 0;
+    background-color: $warm-grey-050;
+}
+.landing .user-comments blockquote {
+    // background-color: $warm-grey-050;
 }
 
 .landing .books {
-    background-color: #303030;
     background-color: $warm-grey-800;
+    padding: 48px 0;
 }
 
 .landing .format {
@@ -277,14 +313,111 @@ $large-width: 1280px;
     grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
     grid-gap: 4px;
 }
+.landing .what {
+    background-color: $cover-dark3;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    color: $warm-grey-100;
+}
 .landing .what .head {
     width: 100%;
     text-align: center;
+    margin-bottom: 32px;
 }
 .landing .what .examples {
     max-width: $large-width;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
-    grid-gap: 4px;
+    grid-gap: 48px;
+}
+.landing .what .ex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.landing .what .ex h2 {
+    margin: 0;
+    margin-bottom: 0.3rem;
+}
+.landing .what .img-wrapper {
+    width: 130px;
+    height: 130px;
+    border-radius: 65px;
+    // border-radius: 8px;
+    // float: left;
+}
+.landing .what .utility .img-wrapper {
+    background-image: url("/images/landing/casino.png");
+}
+.landing .what .easy .img-wrapper {
+    background-image: url("/images/landing/huh.png");
+}
+.landing .what .concepts .img-wrapper {
+    background-image: url("/images/landing/miners.png");
+}
+.landing .what .order .img-wrapper {
+    background-image: url("/images/landing/heli.png");
+}
+.landing .what .general .img-wrapper {
+    background-image: url("/images/landing/bank.png");
+}
+.landing .what .variety .img-wrapper {
+    background-image: url("/images/landing/snowden.png");
+}
+.landing .what .right {
+    // float: left;
+    // width: 100px;
+    flex: 1;
+    margin-left: 16px;
+}
+
+.landing .faq {
+    background-color: $warm-grey-900;
+    // background-color: $cover-dark3;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    // color: $warm-grey-100;
+    background-color: $warm-grey-200;
+}
+.landing .faq .questions {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.landing .faq h1 {
+    margin-bottom: 24px;
+}
+.landing .faq a {
+    color: inherit;
+    text-decoration: underline;
+}
+.landing .faq a:hover {
+    color: $btc-orange;
+    text-decoration: none;
+}
+.landing .faq .questions .question-answer {
+    width: 800px;
+    margin-bottom: 32px;
+}
+.landing .faq .question {
+    font-weight: bold;
+}
+
+.landing .ending {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    background-color: $body-background-color;
+    // color: $warm-grey-050;
+}
+.landing .ending {
+    a:link {
+        color: inherit;
+        text-decoration: underline;
+    }
+    a:hover {
+        color: $btc-orange;
+        text-decoration: none;
+    }
 }
