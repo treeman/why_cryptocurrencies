@@ -267,6 +267,10 @@ $small-screen: 1067px;
     padding: 48px 0;
     background-color: $warm-grey-050;
 }
+.landing .user-comments h1 {
+    width: 100%;
+    text-align: center;
+}
 .landing .user-comments blockquote {
     // background-color: $warm-grey-050;
 }
@@ -446,9 +450,6 @@ $small-screen: 1067px;
 }
 .landing .faq .questions {
     width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
 }
 .landing .faq h1 {
     margin-bottom: 24px;
@@ -462,11 +463,17 @@ $small-screen: 1067px;
     text-decoration: none;
 }
 .landing .faq .questions .question-answer {
-    width: 800px;
+    width: 100%;
     margin-bottom: 32px;
 }
 .landing .faq .question {
+    width: 800px;
+    margin: 0 auto;
     font-weight: bold;
+}
+.landing .faq .answer {
+    margin: 0 auto;
+    width: 800px;
 }
 
 .landing .ending {
