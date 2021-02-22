@@ -60,7 +60,7 @@ Donations are an excellent use case for cryptocurrencies, as they cannot be cens
 
 ◊subhead{Censorship is real}
 
-A ◊link[china-forgettance]{powerful example} of censorship is the ◊link[wikipedia-tiananmen]{Tiananmen Square Massacre} in China 1989. It was a student led protest which was forcefully suppressed by hundreds of thousands military troops, killing large numbers of demonstrators and bystanders.◊mn{hong-kong}
+A ◊link[china-forgettance]{powerful example} of censorship is the ◊link[wikipedia-tiananmen]{Tiananmen Square Massacre} in China in 1989. It was a student led protest which was forcefully suppressed by hundreds of thousands military troops, killing large numbers of demonstrators and bystanders.◊mn{hong-kong}
 
 ◊ndef["hong-kong"]{
     Some have ◊link[hong-kong-protests]{drawn parallels} between the recent protests in Hong Kong and Tiananmen, but with smartphones everywhere it would be close to impossible to cover up a similar massacre.
@@ -80,7 +80,7 @@ A ◊link[china-forgettance]{powerful example} of censorship is the ◊link[wiki
 ◊note-pos[#:top -17]{hong-kong}
 
 
-China has gone to great lengths to cover up these events. Twitter is censored by default in China◊mn{china-censorship} and anyone caught tweeting about Tiananmen might ◊link[twitter-detained]{get arrested}.◊mn{reeducation} On the anniversary they have police escorts for the victim's families who wants to visit the graves---to keep them away from journalists.
+China has gone to great lengths to cover up these events. Twitter is censored by default in China◊mn{china-censorship} and anyone caught tweeting about Tiananmen might ◊link[twitter-detained]{get arrested}.◊mn{reeducation} On the anniversary they have police escorts for the victim's families who want to visit the graves---to keep them away from journalists.
 
 ◊ndef["reeducation"]{
     If caught you'll probably be placed in a ◊link[china-reeducation #:quote #t]{re-education camp}, which are quite similar to camps in Stalin's Soviet or Hitler's Germany.
@@ -211,7 +211,7 @@ This is ◊strong{not} a glorification of WikiLeaks---they have ◊link[wikileak
     ◊ul{
       ◊leak["Collateral murder" #:url collateral-murder-wikileaks]{
 
-        WikiLeaks uploaded a video of a Baghdad helicopter attack in July 12, 2007 with the title "Collateral murder". It's a video of how an attack helicopter kills a dozen innocent people, including two Reuters news staff.
+        WikiLeaks uploaded a video of a Baghdad helicopter attack in July 12, 2007 with the title "Collateral murder". It's a video of how an attack helicopter killed a dozen innocent people, including two Reuters news staff.
 
         Here are some ◊link[collateral-murder-transcripts]{transcripts}◊mn{timestamps} of the ◊link[collateral-murder-full]{full video} with my comments on the events:
 
@@ -311,7 +311,7 @@ This is ◊strong{not} a glorification of WikiLeaks---they have ◊link[wikileak
 
     }
 
-    Countless of civilians killed---while soldiers are laughing---and systematic cover-ups to hide it all.◊mn{purpose}
+    Countless numbers of civilians killed---while soldiers are laughing---and systematic cover-ups to hide it all.◊mn{purpose}
 
     ◊ndef["purpose"]{
         You just can't help but wonder---for what purpose? Imaginary nuclear weapons, bringing "democracy and peace" to Iraq, securing oil supply, helping U.S. allies or simply needing a purpose for their massive war machine?
@@ -347,7 +347,7 @@ This is ◊strong{not} a glorification of WikiLeaks---they have ◊link[wikileak
         Like the saying goes: "truth is stranger than fiction".
     }
 
-    In November, when Assange had already traveled to London (the charges were dropped to be picked up again after he left Sweden), an ◊link[assange-international-arrest]{international arrest} warrant is issued by the Swedish police via Interpol.
+    In November, when Assange had already traveled to London (the charges were dropped to be picked up again after he left Sweden), an ◊link[assange-international-arrest]{international arrest} warrant was issued by the Swedish police via Interpol.
 
     ◊note-pos[#:top -10]{truth-fiction}
   }
@@ -439,7 +439,7 @@ This is ◊strong{not} a glorification of WikiLeaks---they have ◊link[wikileak
 
     A couple of weeks after the Supreme Court's final ruling in U.K. that Assange ◊link[assange-loses-extradition-appeal]{should be extradited} to Sweden he walked into the Ecuadorean embassy in London and applied for political asylum. The stated reason was fears that Sweden would send him to the U.S. where he would risk the death penalty under espionage charges.◊mn{sweden-extradition}
 
-    Assange was ◊link[assange-asylum-granted]{granted asylum} August 16◊sup{th} and his stay at the embassy would be longer than anyone would have thought.
+    Assange was ◊link[assange-asylum-granted]{granted asylum} on August 16◊sup{th} and his stay at the embassy would be longer than anyone would have thought.
 
     ◊note-pos[#:top -8]{sweden-extradition}
 
@@ -452,7 +452,7 @@ This is ◊strong{not} a glorification of WikiLeaks---they have ◊link[wikileak
   ◊entry["Chelsea Manning's sentence is commuted"
          #:date "Jan 17, 2017"]{
 
-    President Barack Obama ◊link[manning-commutes]{commutes Chelsea Manning's prison sentence}. Important to note it only reduces her sentence, it doesn't change the fact that she was convicted.◊mn{pardon} She spent almost 7 years of her original 35 year sentence in prison.
+    President Barack Obama ◊link[manning-commutes]{commutes Chelsea Manning's prison sentence}. Important to note it only reduced her sentence, it doesn't change the fact that she was convicted.◊mn{pardon} She spent almost 7 years of her original 35 year sentence in prison.
 
     ◊ndef["pardon"]{
         In contrast a ◊def{pardon} would completely absolve her of any wrongdoing.
@@ -787,7 +787,7 @@ This is ◊strong{not} a glorification of WikiLeaks---they have ◊link[wikileak
 
 There's another theme in the WikiLeaks story: How the U.S. government instead of admitting these horrible events, punishing the responsible and making sure they never happen again, seem to do everything to cover them up.
 
-This idea that American soldiers are unconditionally heroes, regardless of what they've done, makes me both angry and sad. Donald Trump has for example expressed concerns over soldiers being prosecuted for war crimes, and ◊link[trump-pardons]{considers pardoning them}. This includes a ◊link[gallagher]{Navy Seals soldier} who (allegedly) killed a 15-year old defenseless kid with his hunting knife and shot unarmed civilians.◊mn{gallagher}
+This idea that American soldiers are unconditionally heroes, regardless of what they've done, makes me both angry and sad. Donald Trump has for example expressed concerns over soldiers being prosecuted for war crimes, and ◊link[trump-pardons]{considered pardoning them}. This includes a ◊link[gallagher]{Navy Seals soldier} who (allegedly) killed a 15-year old defenseless kid with his hunting knife and shot unarmed civilians.◊mn{gallagher}
 
 Those aren't the actions of a hero.
 
@@ -814,7 +814,7 @@ But of course covering up or rationalizing events isn't a U.S. only phenomena. H
 
     It was even forbidden to talk about them negatively.
   }
-  ◊li{How Soviet tried to cover up the ◊link[chernobyl-accident]{Chernobyl nuclear disaster}.◊mn{chernobyl-TV} ◊note-pos{chernobyl-TV}}
+  ◊li{How the Soviet Union tried to cover up the ◊link[chernobyl-accident]{Chernobyl nuclear disaster}.◊mn{chernobyl-TV} ◊note-pos{chernobyl-TV}}
 }
 
 ◊ndef["dan-hitler"]{
