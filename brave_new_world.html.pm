@@ -40,7 +40,7 @@ While cryptocurrencies in some ways force the world to change, they can also pro
     Governments can be our friend, but they can also be our foe as well.
 }
 
-And cryptocurrencies have the potential for something even bigger. For the first time in history there's the possibility to separate control of money from the state. This would be an historic shift that would cause massive change worldwide. Of course this is speculation on my part, and even if it were to happen it probably wouldn't be during our lifetime.
+And cryptocurrencies have the potential for something even bigger. For the first time in history there's the possibility to separate control of money from the state. This would be a historic shift that would cause massive change worldwide. Of course this is speculation on my part, and even if it were to happen it probably wouldn't be during our lifetime.
 
 But one things seems clear to me. The Pandora's Box has been opened, and the world will never be the same again.
 
