@@ -26,7 +26,7 @@ In this part we'll focus on the benefits of using cryptocurrencies as money and 
 
 Even though privacy is a human right, the digital money we use today is very bad for privacy as all our financial information is tracked, stored and sold to private companies. Privacy is important because it helps you stay who you are and it increases the personal security for yourself and others.
 
-Cryptocurrencies mitigates all these problems, and they're also truly global, unhampered by borders, disputes and local monetary policy.◊mn{why-not-gold?}
+Cryptocurrencies mitigate all these problems, and they're also truly global, unhampered by borders, disputes and local monetary policy.◊mn{why-not-gold?}
 
 ◊ndef["why-not-gold?"]{
     Many of my arguments in this part will apply to gold or gold-backed fiat, as well as cryptocurrencies. See the ◊link[comparing-properties]{comparision of properties between different forms of money} for more details on the pros and cons of different forms of money.
