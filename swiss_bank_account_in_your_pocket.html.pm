@@ -234,7 +234,7 @@ In an ideal world everyone would pay their taxes as they should, while preservin
 ◊ul{
     ◊li{It's fine the way it is
 
-        I doubt anyone except the Trumps of the world, who are the ones who benefit the most, would say the ideal world is what we have today. The ◊link[inequality]{inequality is increasing} as the rich gets richer while paying less taxes, it's seems clear to me we have a serious problem that needs to be fixed.
+        I doubt anyone except the Trumps of the world, who are the ones who benefit the most, would say the ideal world is what we have today. The ◊link[inequality]{inequality is increasing} as the rich get richer while paying less taxes, it seems clear to me we have a serious problem that needs to be fixed.
     }
     ◊li{Everyone must use traceable money
 
