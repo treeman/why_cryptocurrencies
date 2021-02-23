@@ -16,7 +16,7 @@
 }
 ◊;https://books.google.co.uk/books?id=6Mdh5yuHavgC&pg=PA86&lpg=PA86&ots=vJ319cMgdc&focus=viewport&dq=%E2%80%9CIt%27s+almost+been+worth+this+depression+to+find+out+how+little+our+big+men+know.%E2%80%9D++%E2%80%95+Will+Rogers
 
-Even though ◊def[sound-money]{sound money}---like cryptocurrencies or money backed by gold---might fix the bad incentives at the heart of the ◊link[financial_crisis]{2008 finanical crisis}, there are many arguments against it. One of the most common is we that lose the ability to influence and react to the market. For example if the economy crashes, or we think it will crash, the modern central banks might try to print money and buy things to soften the crash. This isn't possible with cryptocurrencies or gold, since they cannot be created freely.◊mn{elasticity}
+Even though ◊def[sound-money]{sound money}---like cryptocurrencies or money backed by gold---might fix the bad incentives at the heart of the ◊link[financial_crisis]{2008 finanical crisis}, there are many arguments against it. One of the most common is that we lose the ability to influence and react to the market. For example if the economy crashes, or we think it will crash, the modern central banks might try to print money and buy things to soften the crash. This isn't possible with cryptocurrencies or gold, since they cannot be created freely.◊mn{elasticity}
 
 But there's a fatal flaw with this argument: it relies on being able to predict the market and to know what actions to take to move it in the direction you want. With how intricate and complex the economy is, it's an absurd assumption.
 
@@ -57,7 +57,7 @@ In contrast learning how to drive a car provides an ideal learning environment. 
 }
 
 ◊ndef["wicked-env"]{
-    There's also a "wicked" environment where you're likely to learn the wrong lesson from your experience. The example given is of a physician who tried to tried to confirm his a hypothesis for who might develop typhoid. Unfortunately he tested his hunch by palpating the patient's tongue without washing his hands, making him draw the wrong conclusion.
+    There's also a "wicked" environment where you're likely to learn the wrong lesson from your experience. The example given is of a physician who tried to tried to confirm his hypothesis for who might develop typhoid. Unfortunately he tested his hunch by palpating the patient's tongue without washing his hands, making him draw the wrong conclusion.
 }
 
 ◊(define investing-index
@@ -152,7 +152,7 @@ This shouldn't be that surprising when you consider that the national and global
 
 These people aren't experts, simply because the environment doesn't lend itself to creating experts. The worst thing isn't that they're clueless, the worst thing is that they don't know their limitations:◊mn{actually-worst}
 
-◊qt[#:author "IMF:s financial advisor Jose Viñals"
+◊qt[#:author "IMF financial advisor Jose Viñals"
     #:date "2016"
     #:url imf-jose]{
   Although the experience with negative nominal interest rates is limited, we tentatively conclude that overall, they help deliver additional monetary stimulus and easier financial conditions, which support demand and price stability.
@@ -234,7 +234,7 @@ Proponents will of course say that money is more important than other issues---t
 Cryptocurrencies are interesting because they allow anyone to verify the number of coins in circulation---with certainty. No money in history has had this valuable property.  There's always been the need to trust the word of someone, that the amount of money is what they say it is. Even with gold coins there's trust involved, you have to trust the issuer to include the right amount of gold, otherwise the trust---and the currency---◊link[rome-debasing]{will collapse in value}.◊mn{portraits}
 
 ◊ndef["portraits"]{
-    Ever wonder why there are portraits on coins? Because they make them recognizable so you can decide to trust them or not. "I'll gladly accept emperor Augustu's coins" or "we don't accept that usurpers coins here."
+    Ever wonder why there are portraits on coins? Because they make them recognizable so you can decide to trust them or not. "I'll gladly accept emperor Augustus' coins" or "we don't accept that usurper's coins here."
 }
 
 ◊(define rome-debasing
