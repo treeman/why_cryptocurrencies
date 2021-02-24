@@ -246,6 +246,7 @@ $small-screen: 1067px;
     margin: 8px;
     cursor: pointer;
     box-shadow: 1px 1px 0px $button-shadow-color;
+    min-width: 160px;
 }
 .landing .hero .buttons a:hover {
     text-decoration: none;
@@ -378,7 +379,6 @@ $small-screen: 1067px;
 .landing .praise {
     max-width: $large-width;
     display: grid;
-    grid-template-columns: 1fr 1fr;
     grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
     grid-gap: 4px;
 }
@@ -396,7 +396,6 @@ $small-screen: 1067px;
 .landing .what .examples {
     max-width: $large-width;
     display: grid;
-    grid-template-columns: 1fr 1fr;
     grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
     grid-gap: 48px;
 }
@@ -516,10 +515,24 @@ $small-screen: 1067px;
         border-bottom-left-radius: 0;
         border-bottom-right-radius: 0;
     }
+    .landing .what .examples {
+        display: block;
+    }
+    .landing .what .ex {
+        margin-bottom: 48px;
+    }
     .landing .faq {
         padding: 32px;
     }
     .landing .faq .questions .question-answer {
+        width: 100%;
+    }
+    .landing .faq .question,
+    .landing .faq .answer {
+        width: 100%;
+    }
+    .landing .hero .buttons a {
+        flex: 0 1 auto;
         width: 100%;
     }
 }
@@ -527,5 +540,11 @@ $small-screen: 1067px;
 @media only screen and (max-width: 520px) {
     .landing .format {
         width: 100%;
+    }
+    .landing .praise {
+        display: block;
+    }
+    .landing .praise blockquote {
+        margin-bottom: 48px;
     }
 }
