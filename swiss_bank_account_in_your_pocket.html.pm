@@ -101,7 +101,7 @@ But they're not just for avoiding taxes. Look at celebrities for instance, they 
 It's up to you if you believe them or not. As the cynic that I am, I remain skeptical, but at the same time I sympathize with the privacy concern---I did after all dedicate ◊link[private_money]{an earlier chapter} to the topic. If you haven't read the chapter I suggest you do so now, as it tries to explain why it's important that financial privacy is available for everyone.◊mn{small-community}
 
 ◊ndef["small-community"]{
-    I'm personally worried about the potential problems that the lack of financial privacy may cause. In Sweden your tax records are public, and every year in the small community I live in there's discussion about the last years "rich list"---a list of the people who earned to most taxable income in a year.
+    I'm personally worried about the potential problems that the lack of financial privacy may cause. In Sweden your tax records are public, and every year in the small community I live in there's discussion about the last year's "rich list"---a list of the people who earned the most taxable income in a year.
 
     What would happen ◊strong{if} cryptocurrencies skyrocketed to the moon, and I suddenly became very rich? Everyone would probably know about it, and people wouldn't look at me the same way. Maybe I wouldn't even feel safe here anymore, as a target would be painted on my back?
 }
@@ -181,7 +181,7 @@ This is why you don't see the names of normal people in the Panama Papers---no m
     It's funny that you can find Trump's name in the Panama Papers 3,450 times, while ◊link[putin-proxies]{Putin uses proxies} to try and hide his involvement. I wonder, does that make Putin smarter than Trump?
 }
 
-Here I use the term ◊em{tax evasion} instead ◊em{tax fraud} because, believe it or not, it's often legal! If you're rich enough you can hire tax experts who'll find the loopholes in the tax laws so you can ◊link[tax-evasion-and-inequality]{avoid the taxes normal people have to pay}.  And if you do happen to step on the wrong side of the law, you can hire the very best (and very expensive) lawyers to keep you out of prison. But you shouldn't worry about that too much, since the rich and powerful also lobbies the law makers to make the laws beneficial for them and to keep the ◊link[irs-gutted]{IRS starved for funds}.◊sn{companies-too}
+Here I use the term ◊em{tax evasion} instead ◊em{tax fraud} because, believe it or not, it's often legal! If you're rich enough you can hire tax experts who'll find the loopholes in the tax laws so you can ◊link[tax-evasion-and-inequality]{avoid the taxes normal people have to pay}.  And if you do happen to step on the wrong side of the law, you can hire the very best (and very expensive) lawyers to keep you out of prison. But you shouldn't worry about that too much, since the rich and powerful also lobby the law makers to make the laws beneficial for them and to keep the ◊link[irs-gutted]{IRS starved for funds}.◊sn{companies-too}
 
 ◊ndef["companies-too"]{
     It's not just rich individuals that avoid taxes, it's big companies too. In 2018, 60 of the largest companies in the USA ◊link[no-corp-taxes]{paid no taxes} on pre-tax income of 79 billion dollars.
@@ -259,11 +259,11 @@ In an ideal world everyone would pay their taxes as they should, while preservin
 If you view tax evasion as a problem, then making better laws is a necessary beginning. But we won't ever be able to get rid of tax fraud completely. This is especially true if there's a privileged elite that has access to tools to obfuscate their money, essentially making their finances private, which is out of reach for the rest of us.◊mn{how?}
 
 ◊ndef["how?"]{
-    One way the super rich can lander their money is to buy apartments, sit on them and then sell them making their money "clean". It's one reason why the apartment next door ◊link[empty-apartments]{might be completely empty}.
+    One way the super rich can launder their money is to buy apartments, sit on them and then sell them making their money "clean". It's one reason why the apartment next door ◊link[empty-apartments]{might be completely empty}.
 }
 
 
-We might try to force everyone to use traceable money, and thereby making tax collection equally fair for everyone. This is largely what society is moving towards, with the ever-more strict ◊link[kyc]{Know Your Customer} and ◊link[aml]{Anti Money Laundering} laws. Besides the serious privacy and permission problems this creates, the problem is that if we outlaw privacy, only outlaws will have privacy, defeating the fairness we we're trying to create.
+We might try to force everyone to use traceable money, and thereby making tax collection equally fair for everyone. This is largely what society is moving towards, with the ever-more strict ◊link[kyc]{Know Your Customer} and ◊link[aml]{Anti Money Laundering} laws. Besides the serious privacy and permission problems this creates, the problem is that if we outlaw privacy, only outlaws will have privacy, defeating the fairness we were trying to create.
 
 The only truly fair world would be if everyone had access to the same tools, and if financial privacy would be available for all, not just the privileged few. Everyone could enjoy the security and peace of mind ◊link[private_money]{that privacy gives you}, making it the preferable choice for me.
 
