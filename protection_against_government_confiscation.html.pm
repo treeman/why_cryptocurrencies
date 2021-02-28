@@ -20,7 +20,7 @@ In this chapter we'll see how governments around the world sometimes directly or
 
 No, this chapter is ◊strong{not} about tax evasion---do your taxes people.
 
-It's about laws meant to fight crime end up hurting innocent people and how they limit people's freedom.◊mn[#:top -6]{legal-moral} It's also about how difficult it can be for you to keep your money safe and your wealth intact; and of course, as this is about cryptocurrencies, how they might help.
+It's about how laws meant to fight crime end up hurting innocent people and how they limit people's freedom.◊mn[#:top -6]{legal-moral} It's also about how difficult it can be for you to keep your money safe and your wealth intact; and of course, as this is about cryptocurrencies, how they might help.
 
 ◊ndef["legal-moral"]{
     Remember that legality doesn't imply morality, meaning just because it's legal doesn't make it right, which we explored in the chapter about ◊link[darknet_markets]{darknet markets}.
@@ -47,7 +47,7 @@ If it was the other way around, "guilty until proven innocent", then it would op
 However in the United States there's something called ◊def[civil-forfeiture]{civial asset forfeiture}. It's a legal tool that allows the police to seize your car, home, money or other assets without ever charging you with a crime. You read that right, they can seize your assets ◊strong{without charging you with a crime}. There are ◊link[10-cases-forfeiture]{tons of stories} of ◊link[7-cases-forfeiture]{innocent people} having their ◊link[ef-cases]{money or property confiscated}, for example:
 
 ◊ndef["cash-limits"]{
-    The limits placed on cash I referenced in the ◊link[prev-chapter]{previous chapter} are also examples of the presumption of innocence being turned on it's head. For example if you transfer €50,000 to an European bank it's up to you to prove where you got the money, not the bank or the government.
+    The limits placed on cash I referenced in the ◊link[prev-chapter]{previous chapter} are also examples of the presumption of innocence being turned on it's head. For example if you transfer €50,000 to a European bank it's up to you to prove where you got the money, not the bank or the government.
 }
 
 ◊(define prev-chapter cashless_dystopia)
@@ -63,7 +63,7 @@ However in the United States there's something called ◊def[civil-forfeiture]{c
     }
     ◊li{A nurse got $41,377 ◊link[houston-forfeiture]{confiscated before boarding a flight}.
 
-        She was planning to start a medical clinic for women and children. She was never charged with a crime and was pressured to sign an unconstitutional agreement waiving important rights, including right to interest on the cash and her right to sue back.
+        She was planning to start a medical clinic for women and children. She was never charged with a crime and was pressured to sign an unconstitutional agreement waiving important rights, including the right to interest on the cash and her right to sue back.
     }
 }
 
@@ -243,7 +243,7 @@ Deposit boxes won't keep you safe from creditors, who may ◊link[creditors-open
 
 Alright, so if having physical goods isn't good enough how about storing money digitally in a bank account?
 
-Similar to how safe deposit boxes aren't safe during a financial crisis, neither is your bank account. For example during ◊link[cyprus-crisis]{financial crisis in Cyprus} in 2013 deposits over €100,000 had ◊link[cyprus-47.5%]{47.5%} of the value forcefully taken away. The banks closed overnight and withdrawals were blocked. When banks were reopened capital control limits were in place to prevent a ◊link[bank-run]{bank run}.◊mn{bank-IOU}
+Similar to how safe deposit boxes aren't safe during a financial crisis, neither is your bank account. For example during ◊link[cyprus-crisis]{the financial crisis in Cyprus} in 2013 deposits over €100,000 had ◊link[cyprus-47.5%]{47.5%} of the value forcefully taken away. The banks closed overnight and withdrawals were blocked. When banks were reopened capital control limits were in place to prevent a ◊link[bank-run]{bank run}.◊mn{bank-IOU}
 
 ◊ndef["bank-IOU"]{
     I think this exemplifies our relationship with banks well. When we have our money at a bank, it's not really ours anymore. It's now the bank's money and we only have their promise to return our money when we ask for it. Which generally works well---until it doesn't.
