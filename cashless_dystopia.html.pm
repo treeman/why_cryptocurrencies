@@ -17,7 +17,7 @@
 In Sweden, and in the world in general, we're moving closer to the utopian cashless society.◊mn{utopia} Businesses are safer from theft as they don't have to store large amounts of cash in stores, and payments are faster and more convenient. Tax fraud and illegal transactions are also harder.
 
 ◊ndef["utopia"]{
-    An ◊def[utopia]{utopia} is a dreamlike society that's perfect, or close to it. You might say that Heaven, the place some say you go to when you die, is an utopia.
+    An ◊def[utopia]{utopia} is a dreamlike society that's perfect, or close to it. You might say that Heaven, the place some say you go to when you die, is a utopia.
 }
 
 But it's not all good. We've already touched on several problems in earlier chapters, for example how ◊link[undesirable_businesses]{legitimate businesses might get banned} in our attempts to ban illegal goods and services, or how the cashless society ◊link[private_money]{is a privacy nightmare} yet ◊link[swiss_bank_account_in_your_pocket]{tax evasion is still a huge problem}.  In this chapter I'll try to tie together some of these issues and paint a picture of how the cashless society isn't a dream---it's a nightmare. But it's a nightmare cryptocurrencies might help us avoid.
@@ -174,9 +174,9 @@ There are already companies that collect this kind of information, and sell it f
 
 ◊subhead{A dystopia}
 
-When you look closer at an ◊def[utopia]{utopia}, you'll often find that it's not such a good place after all. You might even argue that an utopia cannot exist, since a society contains people with different desires that cannot be fulfilled simultaneously. (Is the Nazi Arian society an utopia? Maybe for the Nazis, but certainly not for the Jews.)◊sn{other-ex}
+When you look closer at an ◊def[utopia]{utopia}, you'll often find that it's not such a good place after all. You might even argue that a utopia cannot exist, since a society contains people with different desires that cannot be fulfilled simultaneously. (Is the Nazi Arian society a utopia? Maybe for the Nazis, but certainly not for the Jews.)◊sn{other-ex}
 
-The cashless society isn't an utopia, but a ◊def[dystopia]{dystopia} that'll suppress the lowest class harder than we can imagine. If you cannot use the same money as others, you cannot have a home, pay your bills or buy food. You cannot get a normal job or even beg for money, since you cannot use the money they give you. You'll be completely closed off from the rest of society.◊sn{what-then?}
+The cashless society isn't a utopia, but a ◊def[dystopia]{dystopia} that'll suppress the lowest class harder than we can imagine. If you cannot use the same money as others, you cannot have a home, pay your bills or buy food. You cannot get a normal job or even beg for money, since you cannot use the money they give you. You'll be completely closed off from the rest of society.◊sn{what-then?}
 
 But you wouldn't be alone. ◊link[brits-struggle]{25 million Brits} would struggle in a cashless society and China has already ◊link[china-bans-23m]{banned millions from buying travel tickets} via their ◊link[china-social-credit2 #:quote #t]{social credit} system. And don't forget about the ◊link[for_the_unbanked]{1.7 billion unbanked adults} in the world, who don't fit into a cashless society.
 
