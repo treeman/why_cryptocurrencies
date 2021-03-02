@@ -24,10 +24,10 @@ Cheating is possible in the real world as well. For example you could do a coin 
 But it's hard to verify that a gamble is fair. With a coin you ◊em{might} be able to feel it, and specialized anti-cheating machines might be able to measure dice, but you can never be sure. Gambling on the internet is a whole other can of worms, where you're often left trusting that the site isn't screwing you over.◊mn{poker-cheating}
 
 ◊ndef["poker-cheating"]{
-    There was a big poker scandal several years ago where it was discovered that ◊link[poker-scandal]{Ultimate Bet and Absolute Poker cheated in online poker}. They were discovered by people who noticed certain users who had "abnormally high winning statistics". Turns out they were using a superuser account that could see all cards.
+    There was a big poker scandal several years ago where it was discovered that ◊link[poker-scandal]{Ultimate Bet and Absolute Poker cheated in online poker}. They were discovered by people who noticed certain users who had "abnormally high winning statistics". Turns out they were using a superuser account that could see all the cards.
 }
 
-With cryptocurrencies we can device a scheme where gambling is provably fair. We can create a gambling site where users are sure the bets are fair---with mathematical certainty---and without a trusted third party facilitating the bets.
+With cryptocurrencies we can devise a scheme where gambling is provably fair. We can create a gambling site where users are sure the bets are fair---with mathematical certainty---and without a trusted third party facilitating the bets.
 
 ◊note-pos[#:top -9]{poker-cheating}
 
