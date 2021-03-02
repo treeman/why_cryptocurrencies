@@ -90,7 +90,7 @@ What is a timestamping service useful for? Here are some examples:
 ◊ul{
     ◊li{Proof of invention
 
-        Surprisingly often history a discovery happens ◊link[multiple-discoveries]{independently and at around the same time}. What if you come up with an idea or an invention and you didn't want to reveal it yet but still wanted to claim priority?
+        Surprisingly often in history a discovery happens ◊link[multiple-discoveries]{independently and at around the same time}. What if you come up with an idea or an invention and you didn't want to reveal it yet but still wanted to claim priority?
 
         You would use timestamping. For example Robert Hook ◊link[ceiiinosssttuv]{used it in 1660} when discovering Hooke's law by publishing the anagram ◊em{ceiiinosssttuv} and later published the translation ◊em{ut tensio sic vis} (latin for "as is the extension, so is the force").◊mn{wiki-tensio}
 
@@ -107,7 +107,7 @@ What is a timestamping service useful for? Here are some examples:
         The solution is to use a timestamping service. If you use one based on a cryptocurrency there's no possibility of altering the dates, not even by your lawyer.◊mn{wills}
 
         ◊ndef["wills"]{
-            Of course the lawyer might try to forge your testament completely. If that's a worry you might want to ◊link[gpg-sign]{sign your testament digitally}, and make sure everyone has your key so they can themselves verify the validity of the document (strongly consider distributing an how-to document as well).
+            Of course the lawyer might try to forge your testament completely. If that's a worry you might want to ◊link[gpg-sign]{sign your testament digitally}, and make sure everyone has your key so they can themselves verify the validity of the document (strongly consider distributing a how-to document as well).
         }
 
         ◊note-pos{wills}
@@ -172,7 +172,7 @@ With cryptocurrencies it's possible to do away with the trusted party requiremen
     ◊ndef["small-difference"]{
         In practice well connected nodes (with up to date clocks) will display a small time difference because blocks usually travel quickly through the network.  A ◊nbsp{12 minute} time difference is extremely unlikely and unwanted, I only used it as an illustrative example.
 
-        The network requires that blocks travel between miners quickly otherwise it increases the risk for ◊link[forks]{forks} or hurt smaller miners disproportionally.
+        The network requires that blocks travel between miners quickly otherwise it increases the risk for ◊link[forks]{forks} or hurts smaller miners disproportionally.
     }
   }
 }
@@ -309,7 +309,7 @@ Let's now encode and timestamp it using the Bitcoin Cash blockchain:
         }
 
         ◊ndef["tx-value"]{
-            My transaction transferred around $0.05 with a $0.0008 fee. It might even be possible to transfer zero coins---as long as you pay the transaction fee---but the wallets I used had a minimum transaction limit.
+            My transaction transferred around $0.05 with a $0.0008 fee. It might even be possible to transfer zero coins---as long as you pay the transaction fee---but the wallet I used had a minimum transaction limit.
         }
 
         We can double-check the transaction on a blockexplorer, ◊link[transaction-ex]{such as Blockchair}, to see that the OP_RETURN value matches our SHA-256 hash (look for the decoded OP_RETURN field).◊mn{j@}
