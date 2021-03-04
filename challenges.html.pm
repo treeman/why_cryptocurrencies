@@ -218,7 +218,7 @@ There are a number of technical pain points that needs to be improved to scale a
     }
     ◊li{Initial sync
 
-        When you first start up a node from scratch you need download and validate the whole blockchain. This must be fast enough so that nodes are able to catch up in a reasonable amount of time.
+        When you first start up a node from scratch you need to download and validate the whole blockchain. This must be fast enough so that nodes are able to catch up in a reasonable amount of time.
     }
     ◊li{Validation speed
 
