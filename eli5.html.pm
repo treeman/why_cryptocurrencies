@@ -8,14 +8,14 @@
 
 ◊(clear-sidenotes)
 
-While cryptocurrencies are mostly seen as speculative assets or get rich quick schemes they have valuable properties and other valuable use cases. For example:
+While cryptocurrencies are mostly seen as speculative assets or get rich quick schemes, they have valuable properties and other valuable use cases. For example:
 
 ◊ul{
     ◊li{◊strong{Excellent monetary properties}
 
-        Cryptocurrencies ◊link[are_cryptocurrencies_money]{have better monetary properties} than anything else in history. In contrast to the fiat money we use today, cryptocurrencies have a limited supply and compared to gold cryptocurrencies are much more portable, are easier to divide into small parts and cannot be counterfeit.
+        Cryptocurrencies ◊link[are_cryptocurrencies_money]{have better monetary properties} than anything else in history. In contrast to the fiat money we use today, cryptocurrencies have a limited supply and compared to gold cryptocurrencies are much more portable, are easier to divide into small parts, and cannot be counterfeit.
 
-        At first glance this may seem insignificant, but money affects everything and even small improvements can have a massive effect.
+        At first glance, this may seem insignificant, but money affects everything and even small improvements can have a massive effect.
     }
     ◊li{◊strong{Cheaper payments}
 
@@ -25,7 +25,7 @@ While cryptocurrencies are mostly seen as speculative assets or get rich quick s
     }
     ◊li{◊strong{Irreversible digital transactions}
 
-        You receive money in ◊link[speed-comparisons]{under an hour} and after that the money is yours, while it may take days to receive other digital payments that can also be reversed weeks or months later.
+        You receive money in ◊link[speed-comparisons]{under an hour}, and after that the money is yours. In contrast, it may take days to receive other digital payments that can also be reversed weeks or months later.
 
         This means merchants don't have to worry about having a purchase reversed, which usually means they have to swallow the loss.◊mn{chargeback-fraud}
 
@@ -33,13 +33,13 @@ While cryptocurrencies are mostly seen as speculative assets or get rich quick s
     }
     ◊li{◊strong{For anyone and anything}
 
-        Cryptocurrencies can be used by anyone. It's for businesses ◊link[undesirable_businesses]{who cannot accept credit cards}, for people ◊link[for_the_unbanked]{without a bank account} and people in dysfunctional countries. You can use it for truly ◊link[uncensorable_donations]{uncensorable donations} and you don't have to worry that your payment processor or bank will ◊link[freezing_of_merchant_accounts]{freeze your account}.
+        Cryptocurrencies can be used by anyone. It's for businesses ◊link[undesirable_businesses]{who cannot accept credit cards}, for people ◊link[for_the_unbanked]{without a bank account}, and people in dysfunctional countries. You can use it for truly ◊link[uncensorable_donations]{uncensorable donations}, and you don't have to worry that your payment processor or bank will ◊link[freezing_of_merchant_accounts]{freeze your account}.
 
         Nobody can prevent you from sending or receiving cryptocurrencies.
     }
     ◊li{◊strong{Financial privacy}
 
-        Banks, credit card companies and payment processors have all your financial transactions on record. Cryptocurrencies allows you to ◊link[private_money]{reclaim some of your privacy} as they work like a ◊link[swiss_bank_account_in_your_pocket]{swiss bank account in your pocket}.◊mn{bitcoin-privacy}
+        Banks, credit card companies, and payment processors have all your financial transactions on record. Cryptocurrencies allows you to ◊link[private_money]{reclaim some of your privacy} as they work like a ◊link[swiss_bank_account_in_your_pocket]{swiss bank account in your pocket}.◊mn{bitcoin-privacy}
 
         ◊note-pos[#:top -2]{bitcoin-privacy}
     }
@@ -53,12 +53,12 @@ While cryptocurrencies are mostly seen as speculative assets or get rich quick s
     }
 }
 
-Of course cryptocurrencies don't solve everything perfectly and there are many difficulties---both technical and social---that need to be overcome. And as with all new technology they will be associated with positive and negative change.
+Of course cryptocurrencies don't perfectly solve everything, and there are many difficulties---both technical and social---that need to be resolved. As with all new technology, they will be associated with positive and negative change.
 
-If you want to learn more and see more examples just continue reading. You can also ◊link[toc-url]{jump} to whatever chapter interests you---they're supposed to be self-contained.
+If you want to learn more and see more examples, just continue reading. You can also ◊link[toc-url]{jump} to whatever chapter interests you---they're supposed to be self-contained.
 
 ◊ndef["bitcoin-fees"]{
-    If you've heard about the ridiculously high Bitcoin fees then don't worry---it's the exception not the rule. Please read the chapter ◊link[cheaper_faster]{Cheaper & faster} for more info.
+    If you've heard about the ridiculously high Bitcoin fees, then don't worry---it's the exception not the rule. Please read the chapter ◊link[cheaper_faster]{Cheaper & faster} for more info.
 }
 
 ◊ndef["bitcoin-privacy"]{

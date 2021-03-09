@@ -14,7 +14,7 @@
   }
 }
 
-I'm sometimes an idiot, but it's clear that I have a great woman in Veronica that supports me, and without her this book would've never seen the light of day.
+Sometimes, I'm an idiot, but it's clear that I have a great woman in Veronica that supports me, and without her this book would've never seen the light of day.
 
 A big thanks to Filip Strömbäck, who proof-read everything and provided me with tons of good feedback.
 
