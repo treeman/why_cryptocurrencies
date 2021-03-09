@@ -134,7 +134,7 @@ The crisis began with the collapse of the bank Lehman Brothers, marking the star
     It bottomed out at -8.4% the fourth quarter of 2008.
 }
 
-Although the crisis originated in the U.S. the crisis spread globally.◊mn[#:top -8]{global-buys} For example in only the first quarter of 2009 the GDP rate was -4.7% ◊link[germany-gdp]{in Germany}, -4.8% ◊link[japan-gdp]{in Japan} and -3% ◊link[euro-gdp]{in the Euro area}. There are many details to dig into here, such as unemployment rate or stock market valuations, but I'm content with just noting that the crisis was indeed a global disaster.
+Although the crisis originated in the U.S. the crisis spread globally.◊mn[#:top -8]{global-buys} For example in only the first quarter of 2009 the GDP rate was -4.7% ◊link[germany-gdp]{in Germany}, -4.8% ◊link[japan-gdp]{in Japan} and -3% ◊link[euro-gdp]{in the Euro area}. There are many details to dig into here, such as the unemployment rate or stock market valuations, but I'm content with just noting that the crisis was indeed a global disaster.
 
 ◊(define us-gdp
    (x-ref
@@ -158,7 +158,7 @@ Although the crisis originated in the U.S. the crisis spread globally.◊mn[#:to
      "Trading Economics: Euro Area GDP Growth Rate"))
 
 ◊ndef["global-buys"]{
-    The crisis was able to spread because bankers all over the world bought these shitty assets that later collapsed to nothing. Banks were simply too interconnected and had to much risk, and when some banks started having trouble they all were in trouble.
+    The crisis was able to spread because bankers all over the world bought these shitty assets that later collapsed to nothing. Banks were simply too interconnected and had too much risk, and when some banks started having trouble they all were in trouble.
 }
 
 
@@ -188,7 +188,7 @@ In September 2008 U.S. Treasury Secretary Henry Paulson persuaded the U.S. Congr
 
 The government guaranteed $306 billion of Citigroup's assets. They didn't ask for a piece of the action, change in management or anything of importance. The $306 billion guarantee---nearly 2% of U.S. GDP, and roughly the combined budgets of the departments of Agriculture, Education, Energy, Homeland Security, Housing and Urban Development and Transportation---was presented undisguised, as a gift. No explanation was given, just that the action was taking in response to Citigroup's "declining stock price."◊mn{where-money?}
 
-When it was clear the money wasn't enough the Federal Reserve started buying bad subprime mortgages directly from the banks. By early 2009 the tax payers were stuck with more than a trillion dollars' risky assets and, if things went sideways, would end up eating a huge loss while the banks were in the clear.
+When it was clear the money wasn't enough the Federal Reserve started buying bad subprime mortgages directly from the banks. By early 2009 the tax payers were stuck with more than a trillion dollars of risky assets and, if things went sideways, would end up eating a huge loss while the banks were in the clear.
 
 ◊ndef["where-money?"]{
     There are many important problems a nation need to handle; health care, poverty, education, infrastructure, security and immigration; but with too little money to solve them. Yet there's almost infinity money for the banks. I find it fascinating and incredibly frustrating.
@@ -363,7 +363,7 @@ I find it interesting to compare the incentives for banks with the ◊link[51%-a
 ◊ndef["bail-in"]{
     Instead of bailouts banks can be rescued by ◊def[bail-in]{bail-ins}. Instead of using money from taxpayers it uses the money from unsecured creditors, depositors and bondholders. In English it means the banks can take money from their customers to save themselves. The banks can also be placed under direct federal control.
 
-    This should in theory protect taxpayers, which is great, but it doesn't change the incentives. The banks can still play fast and lose and be saved by someone else.
+    This should in theory protect taxpayers, which is great, but it doesn't change the incentives. The banks can still play fast and loose and be saved by someone else.
 }
 ◊(define bail-in
    (x-ref

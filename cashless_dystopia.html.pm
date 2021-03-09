@@ -17,7 +17,7 @@
 In Sweden, and in the world in general, we're moving closer to the utopian cashless society.◊mn{utopia} Businesses are safer from theft as they don't have to store large amounts of cash in stores, and payments are faster and more convenient. Tax fraud and illegal transactions are also harder.
 
 ◊ndef["utopia"]{
-    An ◊def[utopia]{utopia} is a dreamlike society that's perfect, or close to it. You might say that Heaven, the place some say you go to when you die, is an utopia.
+    An ◊def[utopia]{utopia} is a dreamlike society that's perfect, or close to it. You might say that Heaven, the place some say you go to when you die, is a utopia.
 }
 
 But it's not all good. We've already touched on several problems in earlier chapters, for example how ◊link[undesirable_businesses]{legitimate businesses might get banned} in our attempts to ban illegal goods and services, or how the cashless society ◊link[private_money]{is a privacy nightmare} yet ◊link[swiss_bank_account_in_your_pocket]{tax evasion is still a huge problem}.  In this chapter I'll try to tie together some of these issues and paint a picture of how the cashless society isn't a dream---it's a nightmare. But it's a nightmare cryptocurrencies might help us avoid.
@@ -27,7 +27,7 @@ But it's not all good. We've already touched on several problems in earlier chap
 
 ◊subhead{Road to hell}
 
-In their ever-increasingly invasive attempts to counter money-laundering, governments all over the world have limited the amount of cash you can deposit or withdraw from banks, cash purchases and even how much cash you can carry.  ◊link[kyc]{Know-your-customer} laws for example require banks in the United States to ◊link[ctr]{report any cash deposits of $10,000}, or multiple transactions adding up to that amount, to the IRS. The customer then have to be ready to provide extensive documentation to prove where the money is coming from.◊mn{structuring}
+In their ever-increasingly invasive attempts to counter money-laundering, governments all over the world have limited the amount of cash you can deposit or withdraw from banks, cash purchases and even how much cash you can carry.  ◊link[kyc]{Know-your-customer} laws for example require banks in the United States to ◊link[ctr]{report any cash deposits of $10,000}, or multiple transactions adding up to that amount, to the IRS. The customers then have to be ready to provide extensive documentation to prove where the money is coming from.◊mn{structuring}
 
 ◊ndef["structuring"]{
     The act of managing your deposits in a way to avoid triggering the report is called ◊def[structuring]{structuring} and is---you guessed it---◊link[structuring-illegal]{illegal}. Of course this might also affect ◊link[structuring-innocent]{innocent people} or legitimate businesses who just happen to deposit using a suspicious pattern.
@@ -35,7 +35,7 @@ In their ever-increasingly invasive attempts to counter money-laundering, govern
 
 In the U.S. you also have to declare cash amounts over $10,000 you want to leave or enter the country with, otherwise you'll face a high risk of ◊link[travel-forfeiture]{having it all confiscated}. Many countries have similar restrictions but North Macedonia takes it a step further: to prevent "money laundering and terrorism financing" cash payments above 30,000 MKD (around €500) ◊link[macedonia-limits-cash]{are banned}.
 
-Instead we're encouraged to use digital payments (ignoring the ◊link[for_the_unbanked]{unfortunate without the ability} to do so), where banks are able to block large payments if they deem them suspicious---presumably to make it harder to do money laundering.◊mn{laundering}
+Instead we're encouraged to use digital payments (ignoring the ◊link[for_the_unbanked]{unfortunate people without the ability} to do so), where banks are able to block large payments if they deem them suspicious---presumably to make it harder to do money laundering.◊mn{laundering}
 
 ◊ndef["laundering"]{
     It sounds hypocritical to me when a major U.S. bank laundered ◊strong{$378 billions} ◊link[us-banks-mexico-drug-gangs]{for Mexico's drug gangs}, the kind of gangs that leaves behind ◊link[gang-mass-grave]{enormous mass-graves}.
@@ -98,7 +98,7 @@ In many countries we're already close to the cashless society. As we saw in the 
 
 ◊subhead{A short story}
 
-Money should be ◊link[money-properties]{◊strong{acceptable}}, meaning that it must be usable by everyone. A move towards a society where you need permission to use it's money is disastrous, which I'll try to exemplify using a short story:
+Money should be ◊link[money-properties]{◊strong{acceptable}}, meaning that it must be usable by everyone. A move towards a society where you need permission to use its money is disastrous, which I'll try to exemplify using a short story:
 
 
 ◊div[#:class "story"]{
@@ -108,13 +108,13 @@ Money should be ◊link[money-properties]{◊strong{acceptable}}, meaning that i
 
     Turning the corner, Kevin felt a stab of hunger. Hardly surprising, as he hadn't eaten anything today. But he still had some food at the apartment that Joe, bless his soul, had been so kind to help him buy. Everything would be better after eating some food.
 
-    When he reached his apartment door, he was met with an EVICTED sign. Horrified, Kevin tried to open the door, but they had already changed the lock. Anger washed over him again---the rent wasn't due until a week! Those bastards!
+    When he reached his apartment door, he was met with an EVICTED sign. Horrified, Kevin tried to open the door, but they had already changed the lock. Anger washed over him again---the rent wasn't due for another week! Those bastards!
 
     Trying to cool down, he tried to call the manager, but no answer. Maybe the bastard had blocked him. Instead he called Joe, who promised he could crash at his place, and that he'd call him back at 12 when he got off work.
 
     That was still many hours away, and Kevin was still very hungry. So he decided to walk around downtown to search for something to eat. He asked around, but all he could find was a small coffee shop that would trade a gift card for a cup of coffee. He'd never realized how reliant he was on the plastic cards, and without them he was now risking to starve in the middle of downtown, with multiple restaurants at every corner.
 
-    A little happier, Kevin continued exploring downtown. He's been here many times, but today it didn't quite look the same. He used to only see the fancy restaurants, the night clubs and the pretty girls. But now he noticed the people in the dark alleys, looking for cans or maybe even food in the trash. He saw homeless people trying to sleep, right next to the night clubs he used to visit. Maybe he would soon join them? Maybe they knew how to buy food?
+    A little happier, Kevin continued exploring downtown. He'd been here many times, but today it didn't quite look the same. He used to only see the fancy restaurants, the night clubs and the pretty girls. But now he noticed the people in the dark alleys, looking for cans or maybe even food in the trash. He saw homeless people trying to sleep, right next to the night clubs he used to visit. Maybe he would soon join them? Maybe they knew how to buy food?
 
     Having to go pee, Kevin searched for a restroom. There was a small queue today, but Kevin was patient. The coffee had really raised his spirit---maybe everything would work out tomorrow?
 
@@ -125,10 +125,10 @@ The worst part of this story is that it's not even that far-fetched, and all exa
 
 ◊ul{
     ◊li{
-        "Leech" is literally a synonym for "deadbeat", the name for Chinese people on the ◊link[china-social-credit]{wrong side of their social credit system}. They also have trouble getting work and gets shunned if their status is discovered.
+        "Leech" is literally a synonym for "deadbeat", the name for Chinese people on the ◊link[china-social-credit]{wrong side of their social credit system}. They also have trouble getting work and get shunned if their status is discovered.
     }
     ◊li{
-        People have gotten thrown out of their homes for very minor things. For example a Michigan man underpaid his property taxes by ◊strong{$8.41}, and the county ◊link[michigan-man-house]{seized his property, sold it and kept the profits}.◊mn{asset-forfeiture}
+        People have been thrown out of their homes for very minor things. For example a Michigan man underpaid his property taxes by ◊strong{$8.41}, and the county ◊link[michigan-man-house]{seized his property, sold it and kept the profits}.◊mn{asset-forfeiture}
 
         ◊note-pos{asset-forfeiture}
 
@@ -174,9 +174,9 @@ There are already companies that collect this kind of information, and sell it f
 
 ◊subhead{A dystopia}
 
-When you look closer at an ◊def[utopia]{utopia}, you'll often find that it's not such a good place after all. You might even argue that an utopia cannot exist, since a society contains people with different desires that cannot be fulfilled simultaneously. (Is the Nazi Arian society an utopia? Maybe for the Nazis, but certainly not for the Jews.)◊sn{other-ex}
+When you look closer at an ◊def[utopia]{utopia}, you'll often find that it's not such a good place after all. You might even argue that a utopia cannot exist, since a society contains people with different desires that cannot be fulfilled simultaneously. (Is the Nazi Arian society a utopia? Maybe for the Nazis, but certainly not for the Jews.)◊sn{other-ex}
 
-The cashless society isn't an utopia, but a ◊def[dystopia]{dystopia} that'll suppress the lowest class harder than we can imagine. If you cannot use the same money as others, you cannot have a home, pay your bills or buy food. You cannot get a normal job or even beg for money, since you cannot use the money they give you. You'll be completely closed off from the rest of society.◊sn{what-then?}
+The cashless society isn't a utopia, but a ◊def[dystopia]{dystopia} that'll suppress the lowest class harder than we can imagine. If you cannot use the same money as others, you cannot have a home, pay your bills or buy food. You cannot get a normal job or even beg for money, since you cannot use the money they give you. You'll be completely closed off from the rest of society.◊sn{what-then?}
 
 But you wouldn't be alone. ◊link[brits-struggle]{25 million Brits} would struggle in a cashless society and China has already ◊link[china-bans-23m]{banned millions from buying travel tickets} via their ◊link[china-social-credit2 #:quote #t]{social credit} system. And don't forget about the ◊link[for_the_unbanked]{1.7 billion unbanked adults} in the world, who don't fit into a cashless society.
 

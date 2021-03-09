@@ -190,9 +190,9 @@ You don't have to physically leave the country to benefit from storing your weal
 
 ◊subhead{Hyperinflation is real}
 
-Cryptocurrency skeptics often ask why anyone would ever want to use money with so large volatility. They have a point---daily swings of 5% are almost expected and larger changes are common---but that's nothing in the face of ◊def[hyperinflation]{hyperinflation}.
+Cryptocurrency skeptics often ask why anyone would ever want to use money with such large volatility. They have a point---daily swings of 5% are almost expected and larger changes are common---but that's nothing in the face of ◊def[hyperinflation]{hyperinflation}.
 
-Venezuela had a monthly inflation of 815,194%, in May 2019 alone. It's a huge number that causes prices double in less than two days---all the time. This means if you could afford two chickens today, in two days you can only afford one. For those living through it they would prefer ◊em{anything} else over the local currency; be it gold, U.S. dollars, ◊link[venezuela-bitcoin]{Bitcoin}, clothes, food---you name it.
+Venezuela had a monthly inflation of 815,194%, in May 2019 alone. It's a huge number that causes prices to double in less than two days---all the time. This means if you could afford two chickens today, in two days you can only afford one. For those living through it they would prefer ◊em{anything} else over the local currency; be it gold, U.S. dollars, ◊link[venezuela-bitcoin]{Bitcoin}, clothes, food---you name it.
 
 It's easy to think that hyperinflation is a thing of the past, or that it only affects poor countries far away. But according to the ◊link[hanke-krus]{Hanke-Krus hyperinflation table} we've had 55 cases of hyperinflation since 1920, with 31 of them after 1990 (roughly half related to the collapase of the Soviet Union).◊mn{line-inflation}
 
@@ -278,13 +278,13 @@ In each case, hyperinflation is an economic disaster. Hoarding causes shortages,
 }
 
 ◊ndef["regular-inflation-too"]{
-    Although hyperinflation is the extreme case, high inflation rate can still very be problematic with the same type of problems.
+    Although hyperinflation is the extreme case, high inflation rates can still very be problematic with the same type of problems.
 }
 
 
 ◊subhead{Always available}
 
-I used hyperinflation as an example of economic turmoil, but it could be anything really. Another good example is if banks in your country closes, which happened in Lebanon when banks ◊link[lebanon-bank-shutdown]{decided to shut down during heavy protests}. (This was before hyperinflation set in.)
+I used hyperinflation as an example of economic turmoil, but it could be anything really. Another good example is if banks in your country close, which happened in Lebanon when banks ◊link[lebanon-bank-shutdown]{decided to shut down during heavy protests}. (This was before hyperinflation set in.)
 
 ◊qt[#:author "Nassim Nicholas Taleb"
     #:src "Twitter"

@@ -220,7 +220,7 @@ You'll get a ◊def{notification} a few seconds after your payment.◊sn{0-conf-
 
 ◊subhead{Charge back fraud}
 
-For us costumers it's a feature that transactions can be reversed. For example if someone steals your credit card or a merchant is fraudulent, you can reverse the transactions by calling your issuer.  But this can also be abused, which is called ◊def[charge-back-fraud]{charge back fraud} (or ◊def{friendly fraud}).
+For us customers it's a feature that transactions can be reversed. For example if someone steals your credit card or a merchant is fraudulent, you can reverse the transactions by calling your issuer.  But this can also be abused, which is called ◊def[charge-back-fraud]{charge back fraud} (or ◊def{friendly fraud}).
 
 It goes something like this:
 
@@ -231,7 +231,7 @@ It goes something like this:
     ◊li{Get your money back}
 }
 
-This can be a big problem for some merchants, especially those ◊link[fraud-digital]{serving digital goods}, who often has to swallow it as a loss. To make matters worse merchants also have to pay non-negotiable and non-refundable ◊link[charge-back-fees]{charge back fees} even when disputing.◊mn{bank-chargeback}
+This can be a big problem for some merchants, especially those ◊link[fraud-digital]{serving digital goods}, who often have to swallow it as a loss. To make matters worse merchants also have to pay non-negotiable and non-refundable ◊link[charge-back-fees]{charge back fees} even when disputing.◊mn{bank-chargeback}
 
 ◊(define charge-back-fraud
   (x-ref
@@ -304,10 +304,10 @@ It seems payment systems needs to choose between these two options:
 
 ◊ol{
     ◊li{Provide costumer protection but merchants might suffer from charge back fraud.}
-    ◊li{Protect merchants from charge back fraud but don't provide protection for costumers.}
+    ◊li{Protect merchants from charge back fraud but don't provide protection for customers.}
 }
 
-Traditional payment systems have chosen to protect costumers (or maybe that's the only option they can realistically choose---for social and technical reasons). Cryptocurrencies instead try to prevent transaction reversal and charge back fraud.
+Traditional payment systems have chosen to protect customers (or maybe that's the only option they can realistically choose---for social and technical reasons). Cryptocurrencies instead try to prevent transaction reversal and charge back fraud.
 
 While it's of course bad to not have customer protection, there might be other solutions. For example offering optional fraud insurance or offering ◊def{custodial wallets} with extra protection. (A custodial wallet is managed by a third party, similar to a bank account.)◊mn{crypto-protection}
 
@@ -333,7 +333,7 @@ We've seen three large benefits to cryptocurrency payments:
 And one large drawback:
 
 ◊ul{
-    ◊li-neg{No inherent fraud protection for costumers}
+    ◊li-neg{No inherent fraud protection for customers}
 }
 
 The drawback might be alleviated with optional systems in the future, giving us the best of both worlds.

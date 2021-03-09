@@ -14,7 +14,7 @@
   }
 }
 
-There's one thing that cryptocurrency proponents and skeptics can agree with: cryptocurrencies are excellent for illegal purposes. And is there a better example than darknet markets---websites where you can buy illegal goods and pay with cryptocurrencies?
+There's one thing that cryptocurrency proponents and skeptics can agree on: cryptocurrencies are excellent for illegal purposes. And is there a better example than darknet markets---websites where you can buy illegal goods and pay with cryptocurrency?
 
 Before cryptocurrencies, such sites would have trouble staying in business because payment processors would shut them down quickly. But nobody can block cryptocurrency transactions, and in 2012 the first darknet market "Silk Road" was created using Bitcoin. Since then there's been a ◊link[darknet-markets-history]{bunch of different darknet markets}, many with much larger volume than Silk Road.
 
@@ -49,7 +49,7 @@ Here's a table to illustrate the problem:
                                                              Murder}}
 }
 
-It's actually quite hard to classify things as legal or illegal and moral or immoral; they both change depending on country, the time period and who you ask. For instance most would agree that slavery is immoral and should be illegal, but it was legal and viewed as normal for thousands of years. Similarly today in the western world we take free speech for granted, but that's not the case in all countries.
+It's actually quite hard to classify things as legal or illegal and moral or immoral; they both change depending on the country, the time period and who you ask. For instance most would agree that slavery is immoral and should be illegal, but it was legal and viewed as normal for thousands of years. Similarly today in the western world we take free speech for granted, but that's not the case in all countries.
 
 Mass surveillance, which we covered in the chapter ◊link[private_money]{Private money}, is immoral yet legal.◊mn{surveillance} Civil asset forfeiture, which allows the police to outright take your stuff, is another example of an immoral legal practice. (We'll explore civil asset forfeiture ◊link[protection_against_government_confiscation]{in a future chapter}.)
 
@@ -86,7 +86,7 @@ The issue of "right or wrong" isn't so easy to answer, and we cannot just rely o
 Black markets have existed as long as taxes have been collected, and it's not just for hardcore criminals. How many people do you know who've paid a craftsman off the book? Maybe paid a friend to paint the house, or paid a mechanic friend to fix the car? If it was paid in cash, and never officially registered the work, then they've engaged in a black market trade.◊mn{geothermal}
 
 ◊ndef["geothermal"]{
-    Warming houses with ◊link[geothermal]{geothermal heating} is popular where we live. It works by drilling a large hole in the ground and transport heat from the ground up into the house, and is a cost-effective way to heat houses. Many people drill the holes off the books, which can save you a lot of money.
+    Warming houses with ◊link[geothermal]{geothermal heating} is popular where we live. It works by drilling a large hole in the ground and transporting heat from the ground up into the house, and is a cost-effective way to heat houses. Many people drill the holes off the books, which can save you a lot of money.
 
     We were quite tempted, but in the end we opted not to.
 }
@@ -202,7 +202,7 @@ Yet we must always remember the dangers of buying medicine from darknet markets.
 
 Still, was it wrong to do what Tom did and buy the medicine from a darknet market? If it might save the love of your life, the mother of your child, would you do it? What if it was easy and the risk of getting caught was very small?
 
-I'd imagine most would say yes, they would do anything to save her. While there are bad stuff on darknet markets---most of which are illegal---in this case cryptocurrencies and darknet markets helped save Tom's family, and I see that as a good thing.
+I'd imagine most would say yes, they would do anything to save her. While there is bad stuff on darknet markets---most of which is illegal---in this case cryptocurrencies and darknet markets helped save Tom's family, and I see that as a good thing.
 
 ◊(define insurance-screwed
    (x-ref

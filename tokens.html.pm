@@ -140,7 +140,7 @@ For example let's say you walk into a store and want to buy a gift card. How do 
 Unfortunately for you the store clerk has already written down the gift card code, and shortly after you leave the store he decides to use it up, making your gift card useless. Physical gift cards, the one you hand in to a store when you use them up, don't really have this problem, but this is unsolved for digital gift cards.◊mn{verify}
 
 ◊ndef["verify"]{
-    Physical gift cards can have a problem with conterfeiting, which is also something cryptocurrencies completely solve.
+    Physical gift cards can have problems with counterfeiting, which is also something cryptocurrencies completely solve.
 }
 
 This problem, of how to transfer ownership of a code, is really the same double spending problem that cryptocurrencies ◊link[double-spending]{pioneered a solution} for. And tokens inherit this property, allowing you to buy a token based gift card and be absolutely sure that it's unspent and that you're the only one who can spend it.

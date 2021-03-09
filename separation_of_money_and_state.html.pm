@@ -92,7 +92,7 @@ Separating church from the state was once unthinkable, yet it's now a given that
 
 ◊subhead{Not that unusual}
 
-In practice some countries have already separated money from their state, as they use money someone else control. For example the ◊link[euro]{Euro} is managed by the ◊link[ecb]{European Central Bank (ECB)}, and the countries that use the Euro have very little influence in the ECB's decision-making (well, most of them anyway). There are also countries that ◊link[countries-use-us]{use the U.S. dollar as their official currency}, while having no say in what the U.S. does with it.
+In practice some countries have already separated money from their state, as they use money someone else controls. For example the ◊link[euro]{Euro} is managed by the ◊link[ecb]{European Central Bank (ECB)}, and the countries that use the Euro have very little influence in the ECB's decision-making (well, most of them anyway). There are also countries that ◊link[countries-use-us]{use the U.S. dollar as their official currency}, while having no say in what the U.S. does with it.
 
 Gold might also be an example of money outside of state control---there's nobody with exclusive access to gold after all. But in practice someone has to cast the gold to coins for it to be usable as money, including a "government approved" stamp on them, which gives some sort of control over the money. After all, it's difficult to determine what a coin is made of so we just trust the stamp on it.◊mn{debasement}
 
@@ -128,11 +128,11 @@ While historical examples of states without direct control over their money exis
 
 ◊subhead{What will the future hold?}
 
-It's impossible to predict the future. For example the iPhone was released in 2007 and today almost everyone carry a smartphone in their pocket. This is particularly crazy because each is ◊link[apollo-smartphone]{◊em{millions} of times more powerful} than all of the combined computing power of NASA that put man on the moon 50 years ago.
+It's impossible to predict the future. For example the iPhone was released in 2007 and today almost everyone carries a smartphone in their pocket. This is particularly crazy because each is ◊link[apollo-smartphone]{◊em{millions} of times more powerful} than all of the combined computing power of NASA that put man on the moon 50 years ago.
 
 Nobody could've predicted this explosive technological development, so how can we predict where cryptocurrencies will take us? I don't think they'll completely revolutionize the world in a decade, but it's impossible to say what will happen 50 or 100 years from now.
 
-Will countries drop fiat and instead adopt cryptocurrencies? Would this force them to make more responsible decisions and to steer clear of moral hazard, which we saw during ◊link[financial_crisis]{the last financial crisis}? Or would they fail spectacularly, issuing a new ◊link[great-depression]{Great Depression}?
+Will countries drop fiat and instead adopt cryptocurrencies? Would this force them to make more responsible decisions and to steer clear of moral hazards, which we saw during ◊link[financial_crisis]{the last financial crisis}? Or would they fail spectacularly, issuing a new ◊link[great-depression]{Great Depression}?
 
 It's possible cryptocurrencies will fail, but instead we adopt digital currencies issued and controlled by multinational corporations, truly fulfilling the cyberpunk dystopian nightmare that would make ◊link[cashless_dystopia]{the cashless dystopia} seem like a dream?
 

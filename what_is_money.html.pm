@@ -371,7 +371,7 @@ To function as money money should have these properties:◊mn{money-props}
 
         Two items of the same type should always be considered equal.
 
-        For example, all shares in a company should be worth the same, even if bough at different times and at different prices, and all gold coins of the same denomination should contain the same amount of gold.◊mn{fungible-uniform}
+        For example, all shares in a company should be worth the same, even if bought at different times and at different prices, and all gold coins of the same denomination should contain the same amount of gold.◊mn{fungible-uniform}
 
         ◊note-pos[#:top -9]{fungible-uniform}
     }
@@ -379,7 +379,7 @@ To function as money money should have these properties:◊mn{money-props}
 
         There should be a limited and predictable amount of money.◊mn{limited-supply}
 
-        A limited amount is needed for the money to hold it's value.
+        A limited amount is needed for the money to hold its value.
 
         ◊note-pos{limited-supply}
     }

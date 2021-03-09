@@ -21,7 +21,7 @@ As stated in the introduction the focus isn't on technical details, but it's a h
 ◊(define summary `("#summary" "Summary"))
 
 ◊ndef["others"]{
-    For example Ethereum adds Turing complete smart contracts and CryptoNote protocols like Monero ◊link[privacy-challenge]{hides transaction details}.
+    For example Ethereum adds Turing complete smart contracts and CryptoNote protocols like Monero ◊link[privacy-challenge]{hide transaction details}.
 }
 
 
@@ -29,7 +29,7 @@ As stated in the introduction the focus isn't on technical details, but it's a h
 
 The ◊def{blockchain} is a ledger that stores balances. The crucial problem is deciding between double spends (using a coin twice). Cryptocurrencies like Bitcoin use ◊def{proof-of-work} which makes miners expend energy and compete for rewards. This competition between miners is used to resolve double spends and to secure the chain, allowing the winner to extend the blockchain with new transactions that don't double spend.
 
-What makes it all work is the incentives for the miners to work in the best interest of the network as it's the most profitable option. The security assumption is that most of miners are honest and work for profit, otherwise the security model fails and transactions can be reversed.
+What makes it all work is the incentives for the miners to work in the best interest of the network as it's the most profitable option. The security assumption is that most of the miners are honest and work for profit, otherwise the security model fails and transactions can be reversed.
 
 
 ◊subhead{The ledger}
@@ -68,7 +68,7 @@ It uses ◊def[public-key-cryptography]{public-key cryptography} which allows yo
 
 ◊subhead{Copying a coin & double spending}
 
-So far cryptocurrencies don't do anything new. The hard problem is how do you prevent someone from copying a coin and sending the copies the different receivers? Couldn't you just copy the hard drive to copy your coins?
+So far cryptocurrencies don't do anything new. The hard problem is how do you prevent someone from copying a coin and sending the copies to two different receivers? Couldn't you just copy the hard drive to copy your coins?
 
 For example Sneaky Steve wants to buy a computer from Honest Harry and wants to pay with Bitcoin. The computer costs ◊sans-tnum{1 BTC} and the Bitcoin ledger looks like this:
 
@@ -102,9 +102,9 @@ This isn't really a problem with physical cash since you can't just copy gold co
 
     There are different types of decentralization in a cryptocurrency to consider. For example:
 
-    1. Mining centralization
-    2. Development centralization
-    3. Node centralization
+    1. Mining decentralization
+    2. Development decentralization
+    3. Node decentralization
 
     The one we're interested in here is who decides which transactions to approve, which is the miners' job.
 }
@@ -112,12 +112,12 @@ This isn't really a problem with physical cash since you can't just copy gold co
 
 ◊subhead{The Byzantine Generals Problem}
 
-To resolve double spending it's enough to choose one of double spending transactions. But how do you do that when there are many unrelated people---some who wants to cheat?
+To resolve double spending it's enough to choose one of the double spending transactions. But how do you do that when there are many unrelated people---some who wants to cheat?
 
 This is the same problem as the ◊def[byzantine-generals]{Byzantine Generals Problem}. Here's my description of a simple variation:
 
 ◊div[#:class "story"]{
-In the Eastern Roman Empire, also referred to as the Byzantine Empire, a couple of generals surround an enemy city:
+In the Eastern Roman Empire, also referred to as the Byzantine Empire, several generals surround an enemy city:
 
 ◊img[#:src "/images/generals.png" #:alt "Five generals surrounding an enemy city."]{
     The five generals surround a well defended enemy city. They don't have direct contact and instead need to communicate by sending messengers.
@@ -192,7 +192,7 @@ If you've heard about cryptocurrencies then maybe you've also heard about crypto
 
 The core idea is: if you want to choose which transaction is valid◊mn{valid} you have to do work. The process is known as ◊def{proof-of-work}, shortened to POW.
 
-The work is to find a solution to a computing problem.◊mn{asics} The problem itself is not that important and it doesn't have any meaning outside of mining. There some important properties it should have:
+The work is to find a solution to a computing problem.◊mn{asics} The problem itself is not that important and it doesn't have any meaning outside of mining. There's some important properties it should have:
 
 ◊ul{
     ◊li{◊strong{Hard enough}
@@ -226,7 +226,7 @@ Important to note is that the system is permissionless so there's nobody to prev
 ◊ndef["asics"]{
     In Bitcoin specialized hardware, called ◊link[ASICs]{ASICs}, are used which are many magnitudes faster than regular computers at solving POW problems.
 
-    They can only be used for a specific type of POW algorithm and cannot be used to mine on any cryptocurrency.
+    They can only be used for a specific type of POW algorithm and cannot be used to mine any other cryptocurrency unless that currency also uses the same POW algorithm.
 }
 
 ◊ndef["useful-pow"]{
@@ -528,7 +528,7 @@ The biggest security risk for Bitcoin might instead be state level actors  who w
 
 While cryptocurrencies combine several different technologies in an interesting way the real innovation is how they're secured by economic incentives; that the most profitable way for miners is to follow the network rules.
 
-As noted earlier the current block reward for Bitcoin is 12.5 BTC, or around $50,000. Losing out on just one block reward is a big loss in the cutthroat mining business, so miners are heavily incentivized to always work on the longest chain.
+As noted earlier the current block reward for Bitcoin is 6.25 BTC, or around $250,000 (as of February 2021). Losing out on just one block reward is a big loss in the cutthroat mining business, so miners are heavily incentivized to always work on the longest chain.
 
 For example in a fork with two competing chains the most profitable move is to jump to the longest chain as quickly as possible. This ensures that a double-spend gets resolved quickly.
 
@@ -571,7 +571,7 @@ There's another situation where forks can arise: when consensus rules are change
 Some cryptocurrencies, for example Monero and Bitcoin Cash, have regular network upgrades where consensus rules are changed.◊mn{hard-soft}
 
 ◊ndef["hard-soft"]{
-    I've deliberatly simplified my usage of fork terminology. On a technical level it's useful to distinguish between two types of forks: ◊def{hard-forks} and ◊def{soft-forks}.
+    I've deliberately simplified my usage of fork terminology. On a technical level it's useful to distinguish between two types of forks: ◊def{hard-forks} and ◊def{soft-forks}.
 
     A hard-fork is a backwards incompatible change and all nodes must upgrade to avoid ending up on the old chain. Bitcoin Cash forked off from Bitcoin using a hard-fork for example.
 
@@ -596,7 +596,7 @@ You may then wonder, what decides which is the correct chain? There's no clear a
 
 There are alternatives to proof-of-work but none have so far been proven to work well. The most popular is ◊def{proof-of-stake} where instead of miners expending energy you have coin holders who vote.
 
-One problem is the ◊link[nothing-at-stake]{nothing at stake problem} where a coin holder can vote on all forks while a proof-of-work miner can only vote on one of the forks.  It causes a situation where everyone are incentivized to vote on all forks and an attacker can abuse it to reverse a transaction by only mining on their fork, which is initially a block behind, to overtake the main chain and reverse their transaction. This only requires a small percentage of total voting power in contrast to proof-of-work where you need 50%.
+One problem is the ◊link[nothing-at-stake]{nothing at stake problem} where a coin holder can vote on all forks while a proof-of-work miner can only vote on one of the forks.  It causes a situation where everyone is incentivized to vote on all forks and an attacker can abuse it to reverse a transaction by only mining on their fork, which is initially a block behind, to overtake the main chain and reverse their transaction. This only requires a small percentage of total voting power in contrast to proof-of-work where you need 50%.
 
 ◊(define nothing-at-stake 
   (x-ref

@@ -57,7 +57,7 @@ Here we need to realize that the machines aren't computers that just count the v
 
 The problem here is that some of the ballots weren't in good condition. Some ballots weren't punched through completely (so the machines couldn't detect the votes), others had voted for the same office multiple times or were incomplete in other ways. With the election being so close it's easy to see that these votes could very well change the outcome. Therefore the Florida Supreme Court ruled that these questionable ballots should be recounted by hand.
 
-Because the stakes were fairly high (an understatement I know) there were a ton of legal action, and charges of conflict of interest were pushed by both parties. At the end the U.S. Supreme Court overturned the Florida decision and put a stop to the recounting, awarded Florida's votes to Bush and that no recount could be held in time.
+Because the stakes were fairly high (an understatement I know) there was a ton of legal action, and charges of conflict of interest were pushed by both parties. At the end the U.S. Supreme Court overturned the Florida decision and put a stop to the recounting, awarded Florida's votes to Bush and that no recount could be held in time.
 
 So in the end the Supreme Court decided to end the election and might've changed the outcome in the process.  That's a pretty big failure of the voting system right there.
 
@@ -152,7 +152,7 @@ In order to address some of the problems with paper voting, electronic voting is
 
         It's easy to explain how paper voting works; you just count the pieces of paper and tally up which name occurs the most. It's much more difficult to explain how electronic voting works and what makes it trustworthy.
 
-        How does it for example prevent someone from voting twice? With paper voting there are people who checks that you're only placing a single vote in the box, but how does the computer do that? How do you know the computer counted your vote correctly? And how will the election worker know that connecting a USB memory stick into the voting machine opens it up for attacks?
+        How does it for example prevent someone from voting twice? With paper voting there are people who check that you're only placing a single vote in the box, but how does the computer do that? How do you know the computer counted your vote correctly? And how will the election worker know that connecting a USB memory stick into the voting machine opens it up for attacks?
 
         This is a general problem with technology, as people are often too trusting of them. We think they always do the right thing, but we underestimate the risk for faults or vulnerabilities in them. Just take self-driving cars as an example; they're still very much unsafe---both for passangers and pedestrians---but people don't seem to realize it.
 
@@ -229,7 +229,7 @@ As an alternative I'll try to present a high level description of a blockchain v
                 ◊li{What was the outcome?}
              }
 
-             If you happened used a corrupt voting machine that changed your vote from Hillary to Trump, you could use another device and see that's what happened. You can also be sure that your vote was counted correctly, or if you didn't vote that it wasn't included and you can verify yourself that all votes were tallied correctly. In this scheme vote counting is alway verifiably correct.
+             If you happened to use a corrupt voting machine that changed your vote from Hillary to Trump, you could use another device and see that's what happened. You can also be sure that your vote was counted correctly, or if you didn't vote that it wasn't included and you can verify yourself that all votes were tallied correctly. In this scheme vote counting is alway verifiably correct.
     }
     ◊li-plus{No questionable votes
 
@@ -326,7 +326,7 @@ The scheme I've presented is simple---too simple. There are many problems with i
             ◊note-pos{bankid-banks}
 
             ◊ndef["bankid-banks"]{
-                BankID is distributed by banks and not by the state, but in principle there's no reason why a simlar system couldn't be.
+                BankID is distributed by banks and not by the state, but in principle there's no reason why a similar system couldn't be.
             }
     }
     ◊li-neg{Stealing votes

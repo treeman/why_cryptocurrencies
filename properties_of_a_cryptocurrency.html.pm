@@ -116,7 +116,7 @@ As there's no trusted third party there's no single entity who controls the crea
 
 ◊note-pos{bitcoin-supply}
 
-If inflation is good or bad depends on who you ask. Keynesian economists ◊link[inflation-good]{argues inflation is good} while the Austrian school ◊link[inflation-bad]{argues inflation is bad}.◊mn{austrian-podcast}
+If inflation is good or bad depends on who you ask. Keynesian economists ◊link[inflation-good]{argue inflation is good} while the Austrian school ◊link[inflation-bad]{argues inflation is bad}.◊mn{austrian-podcast}
 
 I sure don't know who's right. It's probably best to be skeptical of both camps---economics operate in an extremely complex and irregular environment. Economic theories are difficult, or impossible, to verify.
 
@@ -157,7 +157,7 @@ In contrast to cash or gold where large amounts can be cumbersome to handle ther
 It's also easy to split coins into small parts.◊mn[#:top -4]{satoshis} In fact you don't have to think about dividing at all, you use a wallet just like a credit card---a transfer is always exact.
 
 ◊ndef["satoshis"]{
-    For example one bitcoin can be divided into one hundred million parts---called satoshis. But there's no real technical limit, only a usability concern.
+    For example one bitcoin can be divided into one hundred million parts---called satoshis (named after Bitcoin's inventor Satoshi Nakamoto). But there's no real technical limit, only a usability concern.
 }
 
 

@@ -157,7 +157,7 @@ We will look at public-key cryptography in practice when we look at how Bitcoin 
 
 ◊subhead{Bitcoin addresses}
 
-The addresses in Bitcoin (and other cryptocurrencies) uses public-key cryptography to protect your funds. The address is a public key that everyone can send coins to, but to send coins from an address you need the private key.
+The addresses in Bitcoin (and other cryptocurrencies) use public-key cryptography to protect your funds. The address is a public key that everyone can send coins to, but to send coins from an address you need the private key.
 
 This is for example a standard ◊strong{Bitcoin address}:
 
@@ -170,7 +170,7 @@ Which corresponds to the ◊strong{public key}:
 The address could be displayed in various different ways, Bitcoin just happened to do it this way. Using an address is more convenient as it's shorter and includes error checking codes.◊mn{bch-address}
 
 ◊ndef["bch-address"]{
-    Bitcoin Cash is a fork of Bitcoin and they have an additional address format. The same Bitcoin address, with the same public key, could also be displayed as this Bitoin Cash address:
+    Bitcoin Cash is a fork of Bitcoin and it has an additional address format. The same Bitcoin address, with the same public key, could also be displayed as this Bitoin Cash address:
 
     ◊code{qpwk83ew0xwpe87mmm9v43nvzj2y4d783cmv7ayctd}
 }

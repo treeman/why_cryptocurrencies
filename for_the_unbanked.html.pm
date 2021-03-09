@@ -50,7 +50,7 @@ There are ◊strong{◊link[findex-report]{1.7 billion adults}} without a bank a
 
 This map helps us identify countries with a high fraction of unbanked and we can for example see that it's common to be unbanked in Africa and in South America but uncommon in western Europe and the Nordic countries.
 
-The unbanked are in general less educated, where 62% of unbanked only have a primary education or less, compared to around half overall in developing economies. Twice as many unbanked live in the poorest households as in the richest ones and 56% of all unbanked are women.
+The unbanked are in general less educated, where 62% of unbanked only have a primary education or less, compared to around half overall in developing economies. Twice as many unbanked people live in the poorest households as in the richest ones and 56% of all unbanked are women.
 
 Another way to look at the world is to visualize the raw number of unbanked in every country, which shows us where the 1.7 billion unbanked come from:
 
@@ -67,7 +67,7 @@ Another way to look at the world is to visualize the raw number of unbanked in e
     Source ◊link[findex-report]{Global Findex database} (◊link[findex-interactive]{interactive}).
 }
 
-Almost half of all unbanked live in just seven countries: China, India, Indonesia, Mexico, Nigeria, Pakistan and Bangladesh. In fact China (224 million) and India (191 million) alone make up nearly a quarter of all unbanked in the world.
+Almost half of all unbanked people live in just seven countries: China, India, Indonesia, Mexico, Nigeria, Pakistan and Bangladesh. In fact China (224 million) and India (191 million) alone make up nearly a quarter of all unbanked in the world.
 
 While the fraction of unbanked adults are high in the developing countries with poor access to electricity and internet, a surprisingly large number of unbanked also live in developed countries. For example the USA has 18 million unbanked and in France there are 3 million unbanked.◊mn{read-it}
 
@@ -104,7 +104,7 @@ The question "But how do the unbanked pay for internet?" is always asked when di
     Fewer unbanked adults have both a mobile phone and access to the internet in some form— whether through a smartphone, a home computer, an internet café, or some other way. Globally, the share is about a quarter.
 }
 
-So about ◊strong{420 million} do have access to internet while being unbanked. I don't know if that's true or not, but anecdotally it seems almost all homeless people I've seen owns a smartphone of some sort. You can even get internet in Venezuela◊mn{venezuela-internet}, despite an unreliable power grid. And consider that even rich and successful ◊link[undesirable_businesses]{can become temporarily unbanked}, for example if banks arbitrarily decide porn stars and marijuana supporters aren't something they want to be associated with.◊mn{handelsbanken}
+So about ◊strong{420 million} do have access to internet while being unbanked. I don't know if that's true or not, but anecdotally it seems almost all homeless people I've seen own a smartphone of some sort. You can even get internet in Venezuela◊mn{venezuela-internet}, despite an unreliable power grid. And consider that even rich and successful people ◊link[undesirable_businesses]{can become temporarily unbanked}, for example if banks arbitrarily decide porn stars and marijuana supporters aren't something they want to be associated with.◊mn{handelsbanken}
 
 ◊note-pos[#:top -8]{venezuela-internet}
 ◊note-pos{handelsbanken}
@@ -191,7 +191,7 @@ One of the best ways to fight poverty is ◊link[economic-growth-poverty]{econom
 }
 
 ◊ndef["china-isolation"]{
-    An historical example is when China decided to ◊link[china-isolation]{isolate itself} from the rest of the world. They had all they needed and were ahead the rest of the world in many areas, but after they isolated themselves the rest of the world caught up.
+    A historical example is when China decided to ◊link[china-isolation]{isolate itself} from the rest of the world. They had all they needed and were ahead the rest of the world in many areas, but after they isolated themselves the rest of the world caught up.
 }
 
 ◊(define china-isolation
@@ -274,7 +274,7 @@ There are a number of benefits cryptocurrencies have:
     }
 }
 
-These are directly related to the ◊link[rel-why-unbanked?]{reasons why people stay unbanked}, many which cryptocurrencies might help solve. For example, the 30% who say bank accounts are too expensive and the 20% who say they lack documentation, may find cryptocurrencies a viable alternative as it is much cheaper than bank accounts and they don't require any documentation. Cryptocurrencies also remove the requirement of having to trust a bank, which 15% of the unbanked cited as a reason for not having an account.
+These are directly related to the ◊link[rel-why-unbanked?]{reasons why people stay unbanked}, many of which cryptocurrencies might help solve. For example, the 30% who say bank accounts are too expensive and the 20% who say they lack documentation, may find cryptocurrencies a viable alternative as it is much cheaper than bank accounts and they don't require any documentation. Cryptocurrencies also remove the requirement of having to trust a bank, which 15% of the unbanked cited as a reason for not having an account.
 
 These benefits makes it possible for the 420 million unbanked who have internet access to use cryptocurrencies and gain ◊link[global_currency]{access to the global economy}.
 

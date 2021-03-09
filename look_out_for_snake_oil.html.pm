@@ -134,7 +134,7 @@ There are many traps to fall into in this space. I think the best antidote is to
 ◊ndef["supply"]{
     Slanting the coin supply come in many variants. It's common to assign large parts of the initial supply to the creators or to mine the chain in secret before releasing it to the public.
 
-    A more sinister tactic is ot introduce a bug in the code that allows miners to mine extremely fast---and only fix it after you've mined a big portion. This is what ◊link[dash]{Dash did} in a so-called ◊em{instamine}.
+    A more sinister tactic is to introduce a bug in the code that allows miners to mine extremely fast---and only fix it after you've mined a big portion. This is what ◊link[dash]{Dash did} in a so-called ◊em{instamine}.
 }
 
 ◊ndef["censorship"]{

@@ -66,7 +66,7 @@ Who in turn will use it to buy other stuff, and in this way the counterfeited mo
     While it may sound strange, technology has been deflating in price forever. When computers were just introduced they were ◊em{extremely} expensive, but now everyone and their mother literally has one in their pocket, and probably several at home. Some even have one on their wrist.
 }
 
-Counterfeiting means everyones savings---the "old" money---will lose value. This is why you shouldn't just store all your money as cash under the mattress or in a bank account---the value will be eaten up by inflation.◊mn{inflation-visualization}
+Counterfeiting means everyone's savings---the "old" money---will lose value. This is why you shouldn't just store all your money as cash under the mattress or in a bank account---the value will be eaten up by inflation.◊mn{inflation-visualization}
 
 ◊ndef["inflation-visualization"]{
     ◊link[inflation-dollar-visualization]{Here's a cool visualization} of the expanding money supply and what $1 could buy.
@@ -230,7 +230,7 @@ The system works as long as people just keep their money at the bank, and only o
 
 ◊subhead{Lender of last resort}
 
-As money printers, the central banks play an important roll---as the "lender of last resort". This means when all else fails, for example if the banks are about to go bankrupt because they have too little reserves or if the economy is going bad, then central banks can step in and save them. As we saw in an ◊link[financial_crisis]{earlier chapter} this is exactly what happened during the 2008 financial crisis, where banks and other institutions messed up in a major way but were bailed-out and made whole again.
+As money printers, the central banks play an important role---as the "lender of last resort". This means when all else fails, for example if the banks are about to go bankrupt because they have too little reserves or if the economy is going bad, then central banks can step in and save them. As we saw in an ◊link[financial_crisis]{earlier chapter} this is exactly what happened during the 2008 financial crisis, where banks and other institutions messed up in a major way but were bailed-out and made whole again.
 
 This means the real check against fractional banking (the risk of going bankrupt) is thrown away and replaced with regulation that's supposed to keep the banks in check, while making the banks more robust against failure. While fine in theory, in practice it means banks are now incentivized to push the limits any way they can, to maximize their profits.
 
@@ -441,7 +441,7 @@ It seems like we're moving away from the original Keynesian ideas to something e
     It doesn't matter if you're black or white... the only color that really matters is green.
 }
 
-There's a worrying trend in the world: ◊link[global-inequality]{global inequality is rising}. The rich gets richer and the poor get... poorer.
+There's a worrying trend in the world: ◊link[global-inequality]{global inequality is rising}. The rich get richer and the poor get... poorer.
 
 ◊img[#:src "images/income-inequality-world.svg" #:link #t #:alt "Top 10% income share between 1980 and 2015."]{
     Top 10% income share between 1980 and 2015.  
@@ -611,7 +611,7 @@ Nothing fundamentally changed. The deep-rooted economic problems are still there
 
 ◊subhead{Where do we go from here?}
 
-Since the financial crisis in 2008 we're in uncharted territory, and we actually don't know what we should do. Therefore new economic theories, like the ◊link[mmt]{Modern Money Theory} (MMT), are developed. MMT basically says the government can pay its bills by just printing all money it needs, checked only by inflation. It's reasonable to ask if MMT is a sound economic theory, or if it's just describing ◊link[mmt-true]{what's already happening}.
+Since the financial crisis in 2008 we're in uncharted territory, and we actually don't know what we should do. Therefore new economic theories, like the ◊link[mmt]{Modern Money Theory} (MMT), are developed. MMT basically says the government can pay its bills by just printing all the money it needs, checked only by inflation. It's reasonable to ask if MMT is a sound economic theory, or if it's just describing ◊link[mmt-true]{what's already happening}.
 
 While "printing more money" is a popular solution, ◊def[sound-money]{sound money} (with a stable money supply) might represent a compelling alternative for critics of the modern economic policies. For example fiat backed by gold, actual gold coins or cryptocurrencies.◊mn{debasement}
 

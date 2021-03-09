@@ -13,7 +13,7 @@
       #:src "Bitcoin: A Peer-to-Peer Electronic Cash System"
       #:url bitcoin-pdf
       #:quote-src #t]{
-    A purely peer-to-peer version of electronic cash would allow onlinepayments to be sent directly from one party to another without going through a financial institution. Digital signatures provide part of the solution, but the mainbenefits are lost if a trusted third party is still required to prevent double-spending.
+    A purely peer-to-peer version of electronic cash would allow online payments to be sent directly from one party to another without going through a financial institution. Digital signatures provide part of the solution, but the main benefits are lost if a trusted third party is still required to prevent double-spending.
   }
 }
 

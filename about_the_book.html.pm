@@ -121,7 +121,7 @@ Well, the only advice I'll give is to understand what you're investing in, and m
 }
 
 ◊ndef["tulips"]{
-    ◊link[tulip-mania]{Tulip mania} is one of the first recorded speculative bubbles which occurred 1636--1637 in Netherlands. There people speculated on tulip bulbs which reached spectacular prices before crashing down abruptly.
+    ◊link[tulip-mania]{Tulip mania} is one of the first recorded speculative bubbles which occurred 1636--1637 in the Netherlands. There people speculated on tulip bulbs which reached spectacular prices before crashing down abruptly.
 }
 
 ◊ndef["cryptos"]{
