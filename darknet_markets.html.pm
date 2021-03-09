@@ -14,7 +14,7 @@
   }
 }
 
-There's one thing that cryptocurrency proponents and skeptics can agree on: cryptocurrencies are excellent for illegal purposes. And is there a better example than darknet markets---websites where you can buy illegal goods and pay with cryptocurrency?
+There's one thing that cryptocurrency proponents and skeptics can agree on: cryptocurrencies are excellent for illegal purposes. And is there a better example than darknet markets---websites where you can buy illegal goods and pay with cryptocurrencies?
 
 Before cryptocurrencies, such sites would have trouble staying in business because payment processors would shut them down quickly. But nobody can block cryptocurrency transactions, and in 2012 the first darknet market "Silk Road" was created using Bitcoin. Since then there's been a ◊link[darknet-markets-history]{bunch of different darknet markets}, many with much larger volume than Silk Road.
 
