@@ -33,9 +33,9 @@ In their ever-increasingly invasive attempts to counter money-laundering, govern
     The act of managing your deposits in a way to avoid triggering the report is called ◊def[structuring]{structuring} and is---you guessed it---◊link[structuring-illegal]{illegal}. Of course this might also affect ◊link[structuring-innocent]{innocent people} or legitimate businesses who just happen to deposit using a suspicious pattern.
 }
 
-In the U.S. you also have to declare cash amounts over $10,000 you want to leave or enter the country with, otherwise you'll face a high risk of ◊link[travel-forfeiture]{having it all confiscated}. Many countries have similar restrictions but North Macedonia takes it a step further: to prevent "money laundering and terrorism financing" cash payments above 30,000 MKD (around €500) ◊link[macedonia-limits-cash]{are banned}.
+In the U.S., you also have to declare cash amounts over $10,000 you want to leave or enter the country with, otherwise you'll face a high risk of ◊link[travel-forfeiture]{having it all confiscated}. Many countries have similar restrictions but North Macedonia takes it a step further: to prevent "money laundering and terrorism financing" cash payments above 30,000 MKD (around €500) ◊link[macedonia-limits-cash]{are banned}.
 
-Instead we're encouraged to use digital payments (ignoring the ◊link[for_the_unbanked]{unfortunate people without the ability} to do so), where banks are able to block large payments if they deem them suspicious---presumably to make it harder to do money laundering.◊mn{laundering}
+Instead, we're encouraged to use digital payments (ignoring the ◊link[for_the_unbanked]{unfortunate people without the ability} to do so), where banks are able to block large payments if they deem them suspicious---presumably to make it harder to do money laundering.◊mn{laundering}
 
 ◊ndef["laundering"]{
     It sounds hypocritical to me when a major U.S. bank laundered ◊strong{$378 billions} ◊link[us-banks-mexico-drug-gangs]{for Mexico's drug gangs}, the kind of gangs that leaves behind ◊link[gang-mass-grave]{enormous mass-graves}.
@@ -46,7 +46,7 @@ Instead we're encouraged to use digital payments (ignoring the ◊link[for_the_u
   I use WeChat to pay my rent. I use it to pay for my utilities. I use it to top up my phone credit. I use WeChat to pay for the metro system. I use it to scan QR codes on the back of shared-bike schemes throughout the city. I use it to call cabs.
 }
 
-In many countries we're already close to the cashless society. As we saw in the quote, WeChat is absolutely integral for many people in China and here in Sweden using cash is very rare, and many stores, restaurants and even banks have dropped cash completely.
+In many countries, we're already close to the cashless society. As we saw in the quote, WeChat is absolutely integral for many people in China and here in Sweden using cash is very rare, and many stores, restaurants and even banks have dropped cash completely.
 
 ◊(define wechat-is-watching
    (x-ref
@@ -154,7 +154,7 @@ Perhaps the most unrealistic part of the story is how the potential employers kn
     When you think about it, we've already given up our financial privacy. All that's left is to wait for us to be abused, like in the story.
 }
 
-For instance Kevin's bank might have blocked him because they discovered he'd been buying weed or supporting its legalization (which ◊link[wells-fargo-closed]{Wells Fargo has done before}). Maybe Kevin's employer then saw that the bank account was blocked and started worrying that Kevin, now unable to pay for things, would resort to stealing things from the company for a living, and decided to fire him.
+For instance, Kevin's bank might have blocked him because they discovered he'd been buying weed or supporting its legalization (which ◊link[wells-fargo-closed]{Wells Fargo has done before}). Maybe Kevin's employer then saw that the bank account was blocked and started worrying that Kevin, now unable to pay for things, would resort to stealing things from the company for a living, and decided to fire him.
 
 There are already companies that collect this kind of information, and sell it for profit. It's not unreasonable to think that employers would want this to help them decide who to hire, and who to fire.
 

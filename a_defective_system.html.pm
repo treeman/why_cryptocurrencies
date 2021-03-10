@@ -15,7 +15,7 @@
 }
 
 
-In the chapter ◊link[what_is_money]{What is money?} we saw some historical examples of money and some properties that good money should have. Unfortunately looking at money through history, and what properties money should have, is not enough to understand the current economic system, which is a completely different beast.
+In the chapter ◊link[what_is_money]{What is money?}, we saw some historical examples of money and some properties that good money should have. Unfortunately looking at money through history, and what properties money should have, is not enough to understand the current economic system, which is a completely different beast.
 
 As we saw in the ◊link[the_blind_leading_the_blind]{previous chapter}, a big problem is that our leaders don't know how to steer this financial beast. But there are more problems to the modern system, again related to being based on ◊link[sound-money]{unsound money} where a flexible money supply breaks the properties of good money. This has far-reaching negative consequences and it means the economic system we use today is broken, on a fundamental level.
 
@@ -24,11 +24,11 @@ As we saw in the ◊link[the_blind_leading_the_blind]{previous chapter}, a big p
 
 Imagine a counterfeiter, who has the ability to print money from thin air.◊mn{magic-printer} What would he do with all the money? What would ◊em{you} do?
 
-Personally I would probably pay off my loans, renovate our house, go on vacation and buy a bunch of LEGO®. If I was smart I would also invest it; buy some stocks, some gold, maybe a house or two and rent them out. In short I would buy a bunch of stuff---and I think most would do the same.
+Personally, I would probably pay off my loans, renovate our house, go on vacation and buy a bunch of LEGO®. If I was smart I would also invest it; buy some stocks, some gold, maybe a house or two and rent them out. In short I would buy a bunch of stuff---and I think most would do the same.
 
 If I did print money---a ◊strong{lot} of money---and spent it like this, what would the effect on the economy be?◊mn{case-against-fed}
 
-For starters if I just kept the money without spending it, nothing would change:
+For starters, if I just kept the money without spending it, nothing would change:
 
 ◊img[#:src "/images/counterfeiting1.png" #:alt "The counterfeiter can print a large stash of cash."]{
     The counterfeit money is colored yellow and the real money is green.
@@ -132,7 +132,7 @@ The central banks---the Federal Reserve (Fed) in the U.S. or the European Centra
 ◊note-pos{inflation-growth?}
 
 ◊ndef["quantitive-easing"]{
-    If the central banks want to increase the money supply it's inefficient to print physical money. Instead they buy assets from banks who in turn can use the money as reserves while increasing the money supply. This is called ◊def[quantitive-easing]{quantitive easing}, but it's unknown how well it actually works.
+    If the central banks want to increase the money supply, it's inefficient to print physical money. Instead they buy assets from banks who in turn can use the money as reserves while increasing the money supply. This is called ◊def[quantitive-easing]{quantitive easing}, but it's unknown how well it actually works.
 }
 
 ◊ndef["inflation-growth?"]{
@@ -448,7 +448,7 @@ There's a worrying trend in the world: ◊link[global-inequality]{global inequal
     Source ◊link[inequality-data]{World Inequality Database}.
 }
 
-The inequality is on the rise in nearly every country. If we take a closer look at the United States it paints a gloomy picture:◊mn{report}
+The inequality is on the rise in nearly every country. If we take a closer look at the United States, it paints a gloomy picture:◊mn{report}
 
 ◊img[#:src "images/income-inequality.svg" #:link #t #:alt "Income share in the United States between 1962 and 2014."]{
     Income share in the United States between 1962 and 2014.  
@@ -522,7 +522,7 @@ We want to pull back on stimulation when the economy is booming, so we're prepar
     }
 }
 
-To be fair, the Federal Reserve knows this isn't an ideal situation, so they tried to raise interest rates. Unfortunately the stock market reacted poorly---many people got angry---and now they've backtracked and lowered them again. When problems arise, they use the financial equivalent of ◊link[fed-sledgehammer]{taking a sledgehammer to squash a bug}.
+To be fair, the Federal Reserve knows this isn't an ideal situation, so they tried to raise interest rates. Unfortunately, the stock market reacted poorly---many people got angry---and now they've backtracked and lowered them again. When problems arise, they use the financial equivalent of ◊link[fed-sledgehammer]{taking a sledgehammer to squash a bug}.
 
 ◊(define fed-sledgehammer
    (x-ref
@@ -530,7 +530,7 @@ To be fair, the Federal Reserve knows this isn't an ideal situation, so they tri
      "https://www.newyorkfed.org/markets/opolicy/operating_policy_190920"
      "Federal Reserve of New York (2019) Statement Regarding Repurchase Operations"))
 
-So we're stuck in a situation where we don't have the tools to defend against a recession---tools the economic theory the system is built on needs. Tools that have been used up, because that's what the theory says we should do.◊mn{winging-it}
+So, we're stuck in a situation where we don't have the tools to defend against a recession---tools the economic theory the system is built on needs. Tools that have been used up, because that's what the theory says we should do.◊mn{winging-it}
 
 ◊ndef["winging-it"]{
     It may sound like I'm referring to a single economic theory, which all governments and central banks follow. But that's not the case---there are many different theories, with slight differences, but I think it's a fair generalization to say that they mostly follow the push-pull ideas of stimulating the economy.

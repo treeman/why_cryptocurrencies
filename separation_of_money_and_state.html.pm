@@ -10,13 +10,13 @@
 
 ◊img[#:src "/images/bitcoin-priest.png" #:class "slim" #:alt "A priest with a crown, holding a sword and a bag of Bitcoin."]{}
 
-When I first started thinking about cryptocurrencies I thought they were just useful for some people who couldn't use regular transactions, like buying weed or things on a darknet market. Or that it was a better payment system as there was no middleman to skim off large fees from all transactions. That's useful, but it didn't strike me as revolutionary.◊mn{fees}
+When I first started thinking about cryptocurrencies, I thought they were just useful for some people who couldn't use regular transactions, like buying weed or things on a darknet market. Or that it was a better payment system as there was no middleman to skim off large fees from all transactions. That's useful, but it didn't strike me as revolutionary.◊mn{fees}
 
 ◊ndef["fees"]{
     I do think ◊link[cheaper_faster]{avoiding up to 5%} fees on practically all digital payments is an under-appreciated benefit of cryptocurrencies. It might be overshadowed by the volatility, but the potential benefit to the economy is absolutely huge.
 }
 
-But the idea of separating money from state made me go "Wow, that could actually have a huge impact." As we've seen earlier the financial system ◊link[a_defective_system]{relies heavily on manipulating the money supply} and on ◊link[the_blind_leading_the_blind]{predicting and reacting to the market}. This would, for better or worse, be largely impossible if states no longer controlled the money supply and if people used cryptocurrencies instead.
+But the idea of separating money from state made me go "Wow, that could actually have a huge impact." As we've seen earlier, the financial system ◊link[a_defective_system]{relies heavily on manipulating the money supply} and on ◊link[the_blind_leading_the_blind]{predicting and reacting to the market}. This would, for better or worse, be largely impossible if states no longer controlled the money supply and if people used cryptocurrencies instead.
 
 ◊note-pos[#:top -13]{fees}
 
