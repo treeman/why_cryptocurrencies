@@ -198,7 +198,7 @@ With cryptocurrencies you can accept digital payments that go directly into a wa
 }
 
 
-This of course requires that you use a wallet which holds the coins itself, and not a custodial wallet---which a third party manages for you. It's why so much emphasis is placed on controlling your own keys, otherwise you won't get all benefits.
+This of course requires that you use a wallet which holds the coins itself, and not a custodial wallet---which a third-party manages for you. It's why so much emphasis is placed on controlling your own keys, otherwise you won't get all benefits.
 
 I'm not advocating either way, just realize there are trade-offs with controlling your own keys or not. If you want the ease of use of a custodial wallet then you'll sacrifice control of your account.
 

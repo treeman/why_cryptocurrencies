@@ -164,7 +164,7 @@ Therefore most payment processors ◊link[stripe-restricted]{explicitly forbid} 
     Payment processors usually don't want anything to do with porn sites.
 }
 
-Instead they have a third party request the payment on their behalf and do some shady stuff. They can for example claim the payment is for another type of business, which isn't banned by the payment processor.
+Instead they have a third-party request the payment on their behalf and do some shady stuff. They can for example claim the payment is for another type of business, which isn't banned by the payment processor.
 
 ◊img[#:src "/images/xxx-payments2.png"
      #:alt "An intermediary makes it possible for the porn business to use a payment processor."]{
@@ -260,7 +260,7 @@ Cryptocurrencies give you permissionless digital payments; they solve the proble
 
 As we discussed in ◊link[are_cryptocurrencies_money]{Are cryptocurrencies money?} they're very volatile and not widely accepted. Businesses still need to convert cryptocurrencies to fiat to be able to pay their bills and salaries, and the workers in turn need to pay their bills. To sell them for fiat you still need to go through exchanges who---you guessed it---can ◊link[coinbase-close-accounts]{refuse to do business with you}.◊mn{localbitcoins}
 
-While cryptocurrencies improves the situation today, we would really need to bypass all third-parties for a great solution. This means you should be able to pay all expenses with cryptocurrencies so you can't get blocked by a third party anywhere on the line.
+While cryptocurrencies improves the situation today, we would really need to bypass all third-parties for a great solution. This means you should be able to pay all expenses with cryptocurrencies so you can't get blocked by a third-party anywhere on the line.
 
 But there are related problems cryptocurrencies can't solve. Banks serve a very important function: they lend businesses money, and there's no good solution if they say no. It can also be more secure to let banks store large sums of money than keeping it yourself.
 
