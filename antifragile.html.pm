@@ -3,7 +3,7 @@
 ◊(define-meta title "Cryptocurrencies are antifragile")
 ◊(define-meta subtitle "They grow stronger from resistance")
 ◊(define-meta published "2020-12-30T13:51:09+01:00")
-◊(define-meta updated "2021-01-01T20:31:29+01:00")
+◊(define-meta updated "2021-03-10T19:02:12+01:00")
 ◊(define-meta uuid "9ce74583-fbbd-42d4-940e-3a9e44ed0658")
 
 ◊; https://unchained-capital.com/blog/bitcoin-is-antifragile/
@@ -217,7 +217,7 @@ Let's look at some concrete examples of how antifragility might come into play f
 
         If governments banned cryptocurrencies people would still trade them in person and move to decentralized marketplaces, which are inherently harder to disrupt. We would move away from centralized payment services and move towards a peer-to-peer economy, like how Satoshi envisioned.◊mn{global} ◊note-pos{global}
 
-        For example Monero supporters worry that governments will declare cryptocurrencies with good privacy features illegal---not an unreasonable thing to worry about. This will soon be a smaller issue as work on a ◊link[farcaster]{Bitcoin-Monero atomic swap project} is underway, which would allow people to trade Bitcoin and Monero without any third party.
+        For example Monero supporters worry that governments will declare cryptocurrencies with good privacy features illegal---not an unreasonable thing to worry about. This will soon be a smaller issue as work on a ◊link[farcaster]{Bitcoin-Monero atomic swap project} is underway, which would allow people to trade Bitcoin and Monero without any third-party.
     }
     ◊li{◊strong{A 51% attack}
 

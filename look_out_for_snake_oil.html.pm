@@ -1,9 +1,9 @@
 #lang pollen
 
 ◊(define-meta title "Look out for snake oil")
-◊(define-meta subtitle "The space is new, hyped and full of misleading information")
+◊(define-meta subtitle "The space is new, hyped, and full of misleading information")
 ◊(define-meta published "2019-05-06T00:00:00+01:00")
-◊(define-meta updated "2021-01-04T08:19:42+01:00")
+◊(define-meta updated "2021-03-10T19:05:28+01:00")
 ◊(define-meta uuid "635e169f-885a-4d29-a266-4c9ef4981f47")
 
 ◊(clear-sidenotes)
@@ -29,10 +29,10 @@ A snake oil salesperson sells, or promotes, a valueless or fraudulent solution. 
 
 ◊subhead{Not really cryptocurrencies}
 
-There are many projects in the cryptocurrency space that, curiously enough, aren't actually cryptocurrencies. Some even go so far as to call them cryptocurrencies even though they don't fulfil the criteria. For example I don't consider these real cryptocurrencies:
+There are many projects in the cryptocurrency space that, curiously enough, aren't actually cryptocurrencies. Some even go so far as to call them cryptocurrencies even though they don't fulfil the criteria. For example, I don't consider these real cryptocurrencies:
 
 ◊ul{
-  ◊li{OneCoin and Bitconnect---they're plain pyramid schemes◊sn{pyramid-schemes}}
+  ◊li{OneCoin and Bitconnect---they're simple pyramid schemes◊sn{pyramid-schemes}}
   ◊li{Ripple◊sn{ripple}}
   ◊li{Stablecoins like ◊link[tether]{Tether}◊sn{tether} or JP Morgan's ◊link[JPM-coin]{JPM coin}}
   ◊li{"Second layer solutions" like the Lightning Network}
@@ -45,9 +45,9 @@ There are many projects in the cryptocurrency space that, curiously enough, aren
 ◊note-pos[#:top -2]{tether}
 ◊note-pos{ICOs}
 
-Some might be useful but they don't have the same properties as cryptocurrencies like Bitcoin, and they don't work the same way.
+Some might be useful, but they don't have the same properties as cryptocurrencies like Bitcoin, and they don't work the same way.
 
-For example stablecoins depend on a third party issuer and redeemer---the very thing cryptocurrencies are meant to remove. Second layer solutions have fundamentally different security trade-offs and they work differently; they're built on top of---but they are not---cryptocurrencies.
+For example, stablecoins depend on a third-party issuer and redeemer---the very thing cryptocurrencies are meant to remove. Second layer solutions have fundamentally different security trade-offs and they work differently; they're built on top of---but they are not---cryptocurrencies.
 
 Be very skeptical of sites like ◊link[coinmarketcap]{CoinMarketCap} that says it lists the "Top 100 Cryptocurrencies by Market Capitalization" because most of the coins listed aren't real cryptocurrencies. Like how Tether is currently #3 on the list (2020-09-21), but that's meaningless since they can be printed out of thin air, significantly warping the market cap.
 
@@ -83,7 +83,7 @@ Be aware of "the blockchain" being used only as a buzzword.
 
 ◊subhead{Warning signs to look out for}
 
-When evaluating cryptocurrencies here are some red flags to look out for:
+When evaluating cryptocurrencies, here are some red flags to look out for:
 
 ◊ul{
     ◊li{Heavily slanted initial coin supply◊mn{supply}
@@ -98,7 +98,7 @@ When evaluating cryptocurrencies here are some red flags to look out for:
     }
     ◊li{Bad consensus algorithms or centralized governance protocols
 
-        If a cryptocurrency isn't working like I describe in ◊(link how_do_cryptocurrencies_work), then chances are it's not actually decentralized and calling it a cryptocurrency might be a stretch.
+        If a cryptocurrency isn't working as I describe in ◊(link how_do_cryptocurrencies_work), then chances are it's not actually decentralized and calling it a cryptocurrency might be a stretch.
     }
     ◊li{Promises that sound too good to be true
 
@@ -106,7 +106,7 @@ When evaluating cryptocurrencies here are some red flags to look out for:
     }
     ◊li{Propaganda
 
-        Social media is chock-full of users who tries to sell snake oil to you. Slander, lies and censorship is a daily occurrence.◊mn{censorship} ◊note-pos{censorship}
+        Social media is chock-full of users who try to sell snake oil to you. Slander, lies, and censorship is a daily occurrence.◊mn{censorship} ◊note-pos{censorship}
     }
     ◊li{Large drawbacks
 
@@ -122,7 +122,7 @@ There are many traps to fall into in this space. I think the best antidote is to
 
 
 ◊ndef["pyramid-schemes"]{
-    Leaders of OneCoin got charged for ◊link[onecoin]{operating it as a pyramid scheme} and I'll recommend BBC's podcast series ◊link[missing-crypto-queen]{The Missing Cryptoqueen} for a fascinating account of the scam. Meanwhile the FBI is seeking ◊link[fbi-bitconnect]{victims who invested in Bitconnect}.
+    Leaders of OneCoin got charged for ◊link[onecoin]{operating it as a pyramid scheme} and I'll recommend BBC's podcast series ◊link[missing-crypto-queen]{The Missing Cryptoqueen} for a fascinating account of the scam. Meanwhile, the FBI is seeking ◊link[fbi-bitconnect]{victims who invested in Bitconnect}.
 }
 
 ◊ndef["ICOs"]{
@@ -132,13 +132,13 @@ There are many traps to fall into in this space. I think the best antidote is to
 }
 
 ◊ndef["supply"]{
-    Slanting the coin supply come in many variants. It's common to assign large parts of the initial supply to the creators or to mine the chain in secret before releasing it to the public.
+    Slanting the coin supply comes in many variants. It's common to assign large parts of the initial supply to the creators or to mine the chain in secret before releasing it to the public.
 
     A more sinister tactic is to introduce a bug in the code that allows miners to mine extremely fast---and only fix it after you've mined a big portion. This is what ◊link[dash]{Dash did} in a so-called ◊em{instamine}.
 }
 
 ◊ndef["censorship"]{
-    Imagine the irony of censorship being a problem in communities supporting censorship-free money. Unfortunately ◊link[bitcoin-censorship]{examples} of ◊link[r/cryptocurrency-censorship]{censorship} on ◊link[bitcoin-censorship3]{Reddit} are ◊link[bitcoin-censorship2]{plentiful}.
+    Imagine the irony of censorship being a problem in communities supporting censorship-free money. Unfortunately, ◊link[bitcoin-censorship]{examples} of ◊link[r/cryptocurrency-censorship]{censorship} on ◊link[bitcoin-censorship3]{Reddit} are ◊link[bitcoin-censorship2]{plentiful}.
 }
 
 ◊(define missing-crypto-queen

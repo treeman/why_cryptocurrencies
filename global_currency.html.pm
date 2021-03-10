@@ -3,14 +3,14 @@
 ◊(define-meta title "A global currency")
 ◊(define-meta subtitle "Money without borders")
 ◊(define-meta published "2019-12-10T00:00:00+01:00")
-◊(define-meta updated "2020-10-24T11:38:56+02:00")
+◊(define-meta updated "2021-03-10T19:05:04+01:00")
 ◊(define-meta uuid "bec2e177-8ccd-4f8d-a90e-a3d0b4269e43")
 
 ◊(clear-sidenotes)
 
 ◊img[#:src "/images/global.png" #:alt "You can send coins all over the world."]{}
 
-Cryptocurrencies don't have any borders. They allow you to send and receive money from anywhere in the world, to bypass sanctions and border control, opt-out of local monetary policies and use a currency that's global to an extent we've never seen before.
+Cryptocurrencies don't have any borders. They allow you to send and receive money from anywhere in the world, to bypass sanctions and border control, opt-out of local monetary policies, and use a currency that's global to an extent we've never seen before.
 
 
 ◊subhead{Remittance}

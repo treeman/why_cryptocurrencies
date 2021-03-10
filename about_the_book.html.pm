@@ -3,7 +3,7 @@
 ◊(define-meta title "About the book")
 ◊(define-meta subtitle "A perspective beyond the hype")
 ◊(define-meta published "2019-04-12T00:00:00+01:00")
-◊(define-meta updated "2020-10-09T19:52:31+02:00")
+◊(define-meta updated "2021-03-10T19:01:29+01:00")
 ◊(define-meta uuid "7ea80c78-aff2-46a1-8d05-1253d7033dc6")
 
 ◊(clear-sidenotes)
@@ -16,9 +16,9 @@
 
 Whenever the topic of cryptocurrencies---where Bitcoin and Ethereum are the most known---come up in conversations they're almost always misunderstood or dismissed.
 
-If you're a cryptocurrency skeptic I honestly can't blame you. All you ever hear about it on the news is how ◊link[cnn-bitcoin-rallies]{Bitcoin rallies} and then how ◊link[independent-worthless]{Cryptocurrencies are about to become worthless}. Maybe you'll see claims that it's ◊link[cnn-environment]{an environmental disaster} or only used for ◊link[independent-illegal]{illegal purposes}.
+If you're a cryptocurrency skeptic I honestly can't blame you. The only times you ever hear about it on the news is how ◊link[cnn-bitcoin-rallies]{Bitcoin rallies} and how ◊link[independent-worthless]{Cryptocurrencies are about to become worthless}. Maybe you'll see claims that cryptocurrencies will lead to ◊link[cnn-environment]{an environmental disaster} or how they're only used for ◊link[independent-illegal]{illegal purposes}.
 
-Curiously enough they don't explain what cryptocurrencies are or what they can be useful for. But it's to be expected as news today focuses on eye-catching stories; ◊mn{news} it's why unsettling events like murder gets a disproportional amount of focus.
+Curiously enough, the news doesn't explain what cryptocurrencies are or what they can be useful for. But it's to be expected as the news today focuses on dramatic stories; ◊mn{news} it's why unsettling events like murder gets a disproportional amount of focus.
 
 ◊ndef["news"]{
     It's interesting when the news handles something you have a good understanding of---they're often completely wrong. Makes you wonder, how wrong are they about things you're not familiar with?
@@ -41,7 +41,7 @@ It's almost a universal phenomena. I've heard these arguments from students, co-
   ◊li{It's a scam.}
   ◊li{It's just a speculative bubble and cryptocurrencies are really worthless.
 
-    Here many draw parallels to Beanie Babies◊sn{beanies} or the Tulip mania◊sn{tulips}. And to be fair cryptocurrencies have displayed bubble behavior---several times.
+    Here many draw parallels to Beanie Babies◊sn{beanies} or the Tulip mania◊sn{tulips}. To be fair, cryptocurrencies have displayed bubble behavior---several times.
   }
   ◊li{They don't do anything better than other payment systems like PayPal or VISA.}
   ◊li{There's no legal use case.}
@@ -51,11 +51,11 @@ It's almost a universal phenomena. I've heard these arguments from students, co-
 ◊note-pos[#:top -9]{beanies}
 ◊note-pos{tulips}
 
-It seems everyone has an opinion but few are capable of explaining what they are or what they do differently.  Of course most aren't dismissive but simply don't understand what it's all about. Many are curious and want to learn more.
+It seems everyone has an opinion but few are capable of explaining what they are or what they do differently.  Of course, most aren't dismissive but simply don't understand what it's all about. Many are curious and want to learn more.
 
-With this book I hope to show how cryptocurrencies can be useful, what use cases exist and how they can help people. I'll briefly go over how they work in a more conceptual level and I might throw in some historical notes here and there. I'm not trying to make anyone a cryptocurrency fan, I just hope to bring some nuance and to help answer some common questions.
+With this book, I hope to show how cryptocurrencies can be useful, what use cases exist, and how they can help people. I'll briefly go over how they work in a more conceptual level and I might throw in some historical notes here and there. I'm not trying to make anyone a cryptocurrency fan; I just hope to bring some nuance and help answer some common questions.
 
-And I must admit I'm also being selfish---writing a book is on my bucket list.
+I must admit I'm also being selfish---writing a book is on my bucket list.
 
 
 ◊subhead{What this book is}
@@ -70,12 +70,12 @@ This book tries to describe what value cryptocurrencies have using several examp
   ◊li{They have valuable use cases.}
 }
 
-Of course everything new brings positive and negative aspects with it. It's up to you to decide where on the global spectrum of good and bad cryptocurrencies lie.
+Of course, everything new brings positive and negative aspects with it. It's up to you to decide where on the global spectrum of good and bad cryptocurrencies lie.
 
 
 ◊subhead{What this book isn't}
 
-This isn't a deep dive on a technical level and we won't focus on a single implementation, Bitcoin is the first cryptocurrency but there are hundreds more.◊mn{cryptos}
+This isn't a deep dive on a technical level, and we won't focus on a single implementation. Bitcoin is the first cryptocurrency, but there are hundreds more.◊mn{cryptos}
 
 There are many problems with cryptocurrencies as they exist today, for instance:
 
@@ -90,7 +90,7 @@ There are many problems with cryptocurrencies as they exist today, for instance:
 
 I don't dismiss these problems, and I discuss them in more detail in the chapter ◊link[challenges]{Challenges for cryptocurrencies}, but the focus of this book isn't to explain them or to look at how we might address them.
 
-A problem-centric view is great for an engineer or a problem solver but it also limits foresight. For example the computer had many problems and drawbacks when first introduced, but today we ridicule statements like these:
+A problem-centric view is great for an engineer or a problem solver, but it also limits foresight. For example, the computer had many problems and drawbacks when first introduced, but today we ridicule statements like these:
 
 ◊qt[#:author "Thomas Watson, president of IBM" #:date 1943]{
     I think there's a world market for maybe five computers
@@ -103,7 +103,7 @@ A problem-centric view is great for an engineer or a problem solver but it also 
 Instead of putting on blinders and getting stuck at these problems---which I believe can be addressed---we'll focus on the potential cryptocurrencies have. Only with this vantage point can we see if the problems are worth working on, or if we instead should scrap the whole idea.
 
 ◊center{
-  ◊strong[#:style "font-size: 1.1rem"]{And of course none of this is investment advice.}
+  ◊strong[#:style "font-size: 1.1rem"]{And of course, none of this is investment advice.}
 }
 
 Well, the only advice I'll give is to understand what you're investing in, and my hope is that this book can help with that.
@@ -115,21 +115,21 @@ Well, the only advice I'll give is to understand what you're investing in, and m
 }
 
 ◊ndef["beanies"]{
-    Beanie Babies is a type of fluffy toy that people used to speculate with. ◊link[beanie]{It become a mania} where people would sell---and buy---these toys at 10x, 100x or even 1000x their original price. The mania managed to make the creator, Ty Warner, one of the richest men in the world before it crashed (he's still insanely rich though).
+    Beanie Babies is a type of fluffy toy that people used to speculate with. ◊link[beanie]{It became a mania} where people would sell---and buy---these toys at 10x, 100x, or even 1000x their original price. The mania managed to make the creator, Ty Warner, one of the richest men in the world before it crashed (he's still insanely rich though).
 
-    If you're looking for the digital version of Beanie Babies then look no further than ◊link[cryptokitties]{CryptoKitties}, a blockchain game running on Ethereum. There someone spent $114,000 on a virtual kitten.
+    If you're looking for the digital version of Beanie Babies then look no further than ◊link[cryptokitties]{CryptoKitties}, a blockchain game running on Ethereum. There, someone spent $114,000 on a virtual kitten.
 }
 
 ◊ndef["tulips"]{
-    ◊link[tulip-mania]{Tulip mania} is one of the first recorded speculative bubbles which occurred 1636--1637 in the Netherlands. There people speculated on tulip bulbs which reached spectacular prices before crashing down abruptly.
+    ◊link[tulip-mania]{Tulip mania} is one of the first recorded speculative bubbles, which occurred 1636--1637 in the Netherlands. There, people speculated on tulip bulbs, which reached spectacular prices before crashing down abruptly.
 }
 
 ◊ndef["cryptos"]{
-    Although there are hundreds and perhaps thousands most are just copies or outright scams.
+    Although there are hundreds and perhaps thousands, most are just copies or outright scams.
 }
 
 ◊ndef["scams"]{
-    But please take care and do your research, there are ◊strong{many} scams out there.
+    Please take care and do your research, there are ◊strong{many} scams out there.
 }
 
 ◊(define blockchain-and-trust

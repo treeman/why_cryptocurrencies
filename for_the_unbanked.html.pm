@@ -3,7 +3,7 @@
 ◊(define-meta title "For the unbanked")
 ◊(define-meta subtitle "Digital payments for those without a bank account")
 ◊(define-meta published "2019-09-05T00:00:00+01:00")
-◊(define-meta updated "2020-10-24T11:38:39+02:00")
+◊(define-meta updated "2021-03-10T19:04:46+01:00")
 ◊(define-meta uuid "875332fd-f5ad-4275-8254-008a2e74a4a0")
 
 ◊(clear-sidenotes)
@@ -18,7 +18,7 @@
 
 In the previous chapters we've looked at some problems with having to get permission to accept digital payments, and what happens when we don't. This time we'll look at the reverse problem: when you can't make digital payments.
 
-To make digital payments you typically need a bank account◊mn{banks-required} and those without one are often called ◊em{unbanked}. Paying bills digitally, using credit cards and even mobile payments all require a bank account. If you don't have a bank account, you're essentially shut-out from the digital economy.
+To make digital payments, you typically need a bank account◊mn{banks-required} and those without one are often called ◊em{unbanked}. Paying bills digitally, using credit cards and even mobile payments all require a bank account. If you don't have a bank account, you're essentially shut-out from the digital economy.
 
 The problems the unbanked face are difficult to solve, and cryptocurrencies won't magically solve them all, but if adopted they can be helpful.
 
@@ -212,19 +212,19 @@ It might be relatively fine for you to live in a country without a bank account-
 
 For example here in Sweden almost everyone and everything uses digital payments. It would be ◊strong{extremely} difficult for you to live here without a credit card or a bank to pay your bills.
 
-As I went on a small business trip just a couple of weeks ago to the middle parts of Sweden I accidentally forgot my wallet, including my credit cards and identification card. I borrowed some cash from a friend, thinking I could use them to pay for lunch and dinner, but surprisingly most restaurants didn't accept cash. So I still had to ask my co-workers to pay for me...◊mn{moved-to-sweden}
+As I went on a small business trip just a couple of weeks ago to the middle parts of Sweden, I accidentally forgot my wallet, including my credit cards and identification card. I borrowed some cash from a friend, thinking I could use them to pay for lunch and dinner, but surprisingly most restaurants didn't accept cash. So, I still had to ask my co-workers to pay for me...◊mn{moved-to-sweden}
 
 ◊ndef["moved-to-sweden"]{
     A similar story of a co-worker who moved to Sweden. There was a delay for him to get his social security number, and thus his bank account, so he had to be taken care of by people at work until it got sorted out.
 }
 
-I don't really know how people without a bank account manage in Sweden or what tourists will do if their credit card stops working? With the current development they might not even be able to use public bathrooms!◊mn{public-bathroom}
+I don't really know how people without a bank account manage in Sweden or what tourists will do if their credit card stops working? With the current development, they might not even be able to use public bathrooms!◊mn{public-bathroom}
 
 ◊ndef["public-bathroom"]{
-    In fact when I last visited a public bathroom in a shopping mall they had a new payment system there. Instead of inserting a coin to get the door open---you guessed it---you had to pay with a credit card or with Swish (a mobile payment app, connected to your bank account). I guess the kids or tourists, who don't have a credit card or Swish, has to hold it in.
+    In fact, when I last visited a public bathroom in a shopping mall they had a new payment system there. Instead of inserting a coin to get the door open---you guessed it---you had to pay with a credit card or with Swish (a mobile payment app, connected to your bank account). I guess the kids or tourists, who don't have a credit card or Swish, have to hold it in.
 }
 
-In China mobile payments are growing like mad. If you're a tourist you should get them, otherwise you'll have a tough time. This in combination with China's ◊em{social credit}, which ranks people's behaviors to make sure they're in line with the party, is a recipe for disaster. If you score badly you might not be allowed to fly and maybe you'll lose the privilege of using digital payments.
+In China, mobile payments are growing like mad. If you're a tourist, you should get them, otherwise you'll have a tough time. This in combination with China's ◊em{social credit}, which ranks people's behaviors to make sure they're in line with the party, is a recipe for disaster. If you score badly, you might not be allowed to fly and maybe you'll lose the privilege of using digital payments.
 
 ◊(define findex-report
    (x-ref

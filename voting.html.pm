@@ -3,7 +3,7 @@
 ◊(define-meta title "Improved voting")
 ◊(define-meta subtitle "A verifiable and resilient voting system")
 ◊(define-meta published "2020-01-31T07:22:26+01:00")
-◊(define-meta updated "2020-10-24T11:40:22+02:00")
+◊(define-meta updated "2021-03-10T19:07:23+01:00")
 ◊(define-meta uuid "5aaf6384-d377-485b-bfc2-2c4caaaa0fe0")
 
 ◊(clear-sidenotes)
@@ -22,7 +22,7 @@
      "https://80000hours.org/podcast/episodes/bruce-schneier-security-secrets-and-surveillance/"
      "80,000 hours (2019) Bruce Schneier on how insecure electronic voting could break the United States — and surveillance without tyranny"))
 
-In this chapter we'll look at some of the problems with the way we vote and how we might use cryptocurrencies (or "the blockchain") to make an improved voting scheme.
+In this chapter, we'll look at some of the problems with the way we vote and how we might use cryptocurrencies (or "the blockchain") to make an improved voting scheme.
 
 I say they ◊em{might} help because it's not a use-case where I know they will provide value, it's still unclear how much benefit it would bring and blockchain voting may even be a fundamentally bad idea. But as I'll argue there are some very good properties it can provide, so the idea isn't so bad it can be thrown out directly.◊mn{nearly-threw-it-away}
 
@@ -39,7 +39,7 @@ I say they ◊em{might} help because it's not a use-case where I know they will 
 
 But why do we talk about improving voting? What's the problem with the way we vote? Hasn't voting on paper and having people count them worked great for us so far?
 
-Firstly we shouldn't avoid looking for improvements just because the "old way" worked well. If so then we wouldn't have faster cars, bigger TV-screens or more effective medicine---the previous versions already worked well enough. There's always value in making something ◊em{better}.
+Firstly, we shouldn't avoid looking for improvements just because the "old way" worked well. If so then we wouldn't have faster cars, bigger TV-screens or more effective medicine---the previous versions already worked well enough. There's always value in making something ◊em{better}.
 
 But there are also serious problems with our voting system. A great example of some of them is the United States presidential election of 2000, where George W. Bush edged out Al Gore in a historically close election, at least according to ◊link[bush-v-gore]{Britannica}, which I use as a source for the events.◊mn{gore-won-popular}
 
@@ -160,7 +160,7 @@ In order to address some of the problems with paper voting, electronic voting is
     }
 }
 
-For a convincing case against electronic voting I recommend Jennifer Cohn's article ◊em{◊link[us-corruption]{America’s Electronic Voting System is Corrupted to the Core}}.
+For a convincing case against electronic voting, I recommend Jennifer Cohn's article ◊em{◊link[us-corruption]{America’s Electronic Voting System is Corrupted to the Core}}.
 
 On the other hand many of these problems can be mitigated, see the paper ◊em{◊link[public-evidence-from-secret-ballots]{Public Evidence from Secret Ballots}} for a good rundown.
 
@@ -273,7 +273,7 @@ The scheme is similar to tokens that we discussed in the ◊link[tokens]{previou
     While I focus on government elections, voting is useful in other contexts too, for example shareholder voting or votes in a leaderless organization. (In my head I see a bunch of people sitting around a table, shrouded in shadows, voting on who to kill.)
 }
 
-With the tokens distributed you could cast a vote by sending them to predetermined addresses to cast your vote. For example if you want to vote for Trump, you send it to the Trump address. If you want to vote for Hillary, you send it to the Hillary address. And if you don't want to vote you don't do anything.◊sn{blank}
+With the tokens distributed, you could cast a vote by sending them to predetermined addresses to cast your vote. For example if you want to vote for Trump, you send it to the Trump address. If you want to vote for Hillary, you send it to the Hillary address. And if you don't want to vote you don't do anything.◊sn{blank}
 
 ◊ndef["blank"]{
     It's easy to give multiple options. For example if you want to be able to differentiate between those who don't care, and those who want to vote but not any candidate, just have an additional "blank" address voters can send to.

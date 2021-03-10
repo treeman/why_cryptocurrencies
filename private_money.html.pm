@@ -3,7 +3,7 @@
 ◊(define-meta title "Private money")
 ◊(define-meta subtitle "Reclaim your financial privacy with cryptocurrencies")
 ◊(define-meta published "2019-12-09T00:00:00+01:00")
-◊(define-meta updated "2020-12-09T06:41:47+01:00")
+◊(define-meta updated "2021-03-10T19:05:36+01:00")
 ◊(define-meta uuid "9f90581c-24f1-4653-9b4a-d86a9ec9e365")
 
 ◊(clear-sidenotes)
@@ -75,7 +75,7 @@ Why would you want privacy? What are you hiding? Are you criminal?◊mn{summary-
 
 ◊subhead3{It's natural to seek privacy}
 
-When people are alone and relaxed they do things they otherwise wouldn't. Maybe you like to dance when you're alone, sing in the shower or scratch yourself somewhere... nice. If you're caught in the act you immediately stop what you're doing and feel embarrassed.
+When people are alone and relaxed, they do things they otherwise wouldn't. Maybe you like to dance when you're alone, sing in the shower or scratch yourself somewhere... nice. If you're caught in the act you immediately stop what you're doing and feel embarrassed.
 
 If you don't recognize the situation please watch the scene where Hugh Grant plays the ◊link[love-actually-dance]{dancing prime minister in Love Actually}. Even if you do recognize the situation, the scene's so good you should watch it anyway.
 
@@ -93,12 +93,12 @@ If you don't recognize the situation please watch the scene where Hugh Grant pla
 I have a child who's two years old, and even he wants privacy sometimes. He likes to build a cabin made of pillows and hide in it, and if I disturb him he pushes me and shouts “Go away!”. After we recently renovated his room he was ◊em{so happy} that he had a room of his own again, which he likes to be alone in when he's pooping (in his diaper thank god).◊mn{children-privacy}
 
 ◊ndef["children-privacy"]{
-    It's really quite fascinating. Sometimes I can hug him while he's playing, but sometimes I'm not even allowed to be in the same room. I guess he just wants to be alone from time to time.
+    It's really quite fascinating. Sometimes I can hug him while he's playing, but other times I'm not even allowed to be in the same room. I guess he just wants to be alone from time to time.
 }
 
 People may say privacy don't matter, yet their actions tell a different story. For example Facebook's founder Mark Zuckerberg has said that privacy is ◊link[zuckerberg-privacy-not-norm]{no longer a social norm}, but then he buys up four homes surrounding his home ◊link[zuckerberg-buy-privacy]{because he wants privacy}.
 
-After all we don't have curtains or blinders on our windows because we do something illegal, it's because we want control over our privacy.
+After all, we don't have curtains or blinders on our windows because we do something illegal, it's because we want control over our privacy.
 
 ◊(define zuckerberg-buy-privacy
    (x-ref
@@ -114,7 +114,7 @@ After all we don't have curtains or blinders on our windows because we do someth
 
 ◊subhead3{Personal security}
 
-Caring about privacy is a natural instinct---for good reason. It's not just about avoiding embarrassment, it's also for your own personal safety. In fact privacy is closely related to security. Your passwords and credit card numbers are obvious examples, but there are more:
+Caring about privacy is a natural instinct---for good reason. It's not just about avoiding embarrassment; it's also for your own personal safety. In fact privacy is closely related to security. Your passwords and credit card numbers are obvious examples, but there are more:
 
 ◊ul{
   ◊li{Identity theft can ruin your life
@@ -173,7 +173,7 @@ Even if you don't think you have anything to hide, others do. Here are some exam
   }
   ◊li{Sexual preferences
 
-    While homosexuality is becoming more accepted it's still ◊link[gay-illegal]{illegal in some countries} where you might face execution. Similar to the story of the girl's pregnancy above, having a history of your purchases might expose you. (Why did you visit this gay bar?)
+    While homosexuality is becoming more accepted, it's still ◊link[gay-illegal]{illegal in some countries} where you might face execution. Similar to the story of the girl's pregnancy above, having a history of your purchases might expose you. (Why did you visit this gay bar?)
 
     There's also nothing wrong with having a fetish and engaging in strange sexual fantasies in your own home, but maybe you don't want your neighbourhood to know you bought a vibrating horse dildo.◊mn{porn-story}
 
@@ -293,7 +293,7 @@ They used 100,000 employees and between 500,000 to 2,000,000 snitches to maintai
 
 The goal of the Stasi was to imprison everyone critical of the regime. To do that they tried to map out the lives of everyone---where they went, what they did, what they said and who they talked to. This was painstakingly difficult and required tremendous resources.
 
-But today we live in a society the Stasi couldn't even dream of. There's no need for a shady person to follow us around, because we already have a surveillance device in our pocket. All information they could ever want is already available, they just have reach out and grab it.◊mn{phone-surveillance}
+Today we live in a society the Stasi couldn't even dream of. There's no need for a shady person to follow us around, because we already have a surveillance device in our pocket. All information they could ever want is already available, they just have reach out and grab it.◊mn{phone-surveillance}
 
 ◊ndef["phone-surveillance"]{
     Our smartphone really do everything the Stasi spies tried to do. It tracks your location, it listens to your conversations and it follows you everywhere. And it always keeps a perfect record.
@@ -437,7 +437,7 @@ You see, all this data is stored ◊em{forever}, just waiting to be used to nail
   Once the ubiquity of collection was combined with the permanency of storage, all any government had to do was select a person or a group to scapegoat and go searching---as I'd gone searching through the agency's files---for evidence of a suitable crime.
 }
 
-Snowden now lives in exile in Russia, where the black bags of the U.S. cannot reach. He recently released his memoir ◊(book-link permanent-record-book) that details his life leading up to the leaks. It's a great book, but the U.S. doesn't want you to read it. They even ◊link[snowden-lawsuit]{filed a lawsuit against him} and seized the revenue of the book.◊mn{post-lawsuit}
+Now, Snowden lives in exile in Russia, where the black bags of the U.S. cannot reach. He recently released his memoir ◊(book-link permanent-record-book) that details his life leading up to the leaks. It's a great book, but the U.S. doesn't want you to read it. They even ◊link[snowden-lawsuit]{filed a lawsuit against him} and seized the revenue of the book.◊mn{post-lawsuit}
 
 ◊ndef["post-lawsuit"]{
     As in response to the lawsuit his book shot up to the Amazon bestseller list. Snowden concluded that ◊link[snowden-good-for-bitcoin #:quote #t]{this is good for bitcoin}.

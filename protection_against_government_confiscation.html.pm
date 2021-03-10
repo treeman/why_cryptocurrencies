@@ -3,7 +3,7 @@
 ◊(define-meta title "Protection against government confiscation")
 ◊(define-meta subtitle "It's harder for governments to take cryptocurrencies from you")
 ◊(define-meta published "2020-01-09T00:00:00+01:00")
-◊(define-meta updated "2020-10-09T19:49:25+02:00")
+◊(define-meta updated "2021-03-10T19:05:55+01:00")
 ◊(define-meta uuid "01795fb4-c99a-4168-8685-73ad86ed7c0c")
 
 ◊(clear-sidenotes)
@@ -29,7 +29,7 @@ It's about how laws meant to fight crime end up hurting innocent people and how 
 
 ◊subhead{Civil asset forfeiture}
 
-Perhaps you've heard the phrase "innocent until proven guilty"? It's called ◊link[presumption-of-innocence]{presumption of innocence} and it's a cornerstone in the modern justice system that says the default stance is that you're innocent of a crime and it's up to the prosecution to prove otherwise. It's an old legal principle that the United Nations has declared an ◊link[un-universal-human-rights]{universal human right} (see article 11).
+Perhaps, you've heard the phrase "innocent until proven guilty"? It's called ◊link[presumption-of-innocence]{presumption of innocence} and it's a cornerstone in the modern justice system that says the default stance is that you're innocent of a crime and it's up to the prosecution to prove otherwise. It's an old legal principle that the United Nations has declared an ◊link[un-universal-human-rights]{universal human right} (see article 11).
 
 If it was the other way around, "guilty until proven innocent", then it would open up abuse from inside the justice system and innocent people would end up in jail, either by being unlucky---despite being innocent you lack convincing evidence that you are---or you simply cannot afford competent defense to protect yourself. Therefore the presumption of innocence a necessary requirement to keep the justice system fair.
 
@@ -108,7 +108,7 @@ In practice civil asset forfeiture is state-sanctioned theft where the police ar
     "That's a nice car you have there, it would be a shame if anything happened to it."
 }
 
-So how can cryptocurrencies protect you against the forfeiture laws? While they naturally can't prevent the police from seizing your house or your car, they allow you to easily store and travel with as much money as you can---without anyone noticing. Even if they know you have them there's nothing they can physically steal---they would need ◊link[xkcd-pass]{your password}. (Of course they might be able to coerce you to unlock it for them.)◊mn{how-to-store}
+So, how can cryptocurrencies protect you against the forfeiture laws? While they naturally can't prevent the police from seizing your house or your car, they allow you to easily store and travel with as much money as you can---without anyone noticing. Even if they know you have them there's nothing they can physically steal---they would need ◊link[xkcd-pass]{your password}. (Of course they might be able to coerce you to unlock it for them.)◊mn{how-to-store}
 
 ◊note-pos{how-to-store}
 
@@ -193,7 +193,7 @@ So how can cryptocurrencies protect you against the forfeiture laws? While they 
 
 ◊subhead{Safe deposit boxes aren't safe}
 
-Okay we now know the dangers of walking around with a bunch of cash. Forget about moving it around, how about just finding a secure way to store them? What about storing them (or gold or jewelries) in a safe deposit box, surely they're called safe deposit boxes because they're ◊em{safe}?
+So, we now know the dangers of walking around with a bunch of cash. Forget about moving it around, how about just finding a secure way to store them? What about storing them (or gold or jewelries) in a safe deposit box, surely they're called safe deposit boxes because they're ◊em{safe}?
 
 Unfortunately, safe deposit boxes aren't safe:
 
@@ -371,7 +371,7 @@ Just remember that inflation is a more indirect---and perhaps sinister---way to 
     Turns out the money wasn't worth that much anymore. They had just left the money alone letting inflation eat up most of the value.
 }
 
-With cryptocurrencies nobody can "steal" money from you buy printing more of it.
+With cryptocurrencies, nobody can "steal" money from you buy printing more of it.
 
 ◊note-pos{inflation-sad}
 
