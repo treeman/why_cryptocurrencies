@@ -13,7 +13,7 @@
       #:src "Bitcoin: A Peer-to-Peer Electronic Cash System"
       #:url bitcoin-pdf
       #:quote-src #t]{
-     What is needed is an electronic payment system based on cryptographic proof instead of trust, allowing any two willing parties to transact directly with each other without the need for a trusted third party.
+     What is needed is an electronic payment system based on cryptographic proof instead of trust, allowing any two willing parties to transact directly with each other without the need for a trusted third-party.
   }
 }
 
@@ -36,7 +36,7 @@ They highlight the difference between cryptocurrencies and other payment systems
 
 ◊subhead{No more third parties}
 
-The important difference between a cryptocurrency and the digital payments we have today is the removal of a third party. Payments are ◊em{peer-to-peer} just as if you gave someone a dollar bill or a gold coin.◊mn{p2p}
+The important difference between a cryptocurrency and the digital payments we have today is the removal of a third-party. Payments are ◊em{peer-to-peer} just as if you gave someone a dollar bill or a gold coin.◊mn{p2p}
 
 Sending money to people via your bank isn't peer-to-peer as you rely on your bank to send it for you. VISA, PayPal, Swish, Apple Pay, and other digital payments have the same problem, all except cryptocurrencies.
 
@@ -52,11 +52,11 @@ Sending money to people via your bank isn't peer-to-peer as you rely on your ban
 
 Transfers are therefore ◊em{trustless}◊mn{pundits} and ◊em{permissionless}.
 
-Trustless means you don't have to rely on a third party to make or confirm the transfer for you, and permissionless means you don't have to worry about your transactions being blocked. Nobody can ◊link[freezing_of_merchant_accounts]{freeze your account} or ◊link[undesirable_businesses]{prevent you from opening one}. Cryptocurrencies are ◊em{uncensorable}.
+Trustless means you don't have to rely on a third-party to make or confirm the transfer for you, and permissionless means you don't have to worry about your transactions being blocked. Nobody can ◊link[freezing_of_merchant_accounts]{freeze your account} or ◊link[undesirable_businesses]{prevent you from opening one}. Cryptocurrencies are ◊em{uncensorable}.
 
 ◊note-pos[#:top -11]{pundits}
 
-You also don't have to trust a third party to hold your money like you do when you have money in a bank.◊sn{in-banks} What you really have is an IOU from the bank where they promise to give you your money when you ask for it. With cryptocurrencies, you can write down the keys to your wallet and you, alone, have access to it.◊sn{keys}
+You also don't have to trust a third-party to hold your money like you do when you have money in a bank.◊sn{in-banks} What you really have is an IOU from the bank where they promise to give you your money when you ask for it. With cryptocurrencies, you can write down the keys to your wallet and you, alone, have access to it.◊sn{keys}
 
 ◊note-pos[#:top -6]{in-banks}
 ◊note-pos{keys}
@@ -68,11 +68,11 @@ You also don't have to trust a third party to hold your money like you do when y
 }
 
 ◊ndef["pundits"]{
-    Some will be quick to point out that transfers aren't trustless. You need to trust your wallet, the OS, the hardware, etc. That is true. The context here is not having to trust a third party to handle transfers for you, not eliminating trust of all kinds---which is impossible.
+    Some will be quick to point out that transfers aren't trustless. You need to trust your wallet, the OS, the hardware, etc. That is true. The context here is not having to trust a third-party to handle transfers for you, not eliminating trust of all kinds---which is impossible.
 }
 
 ◊ndef["in-banks"]{
-    You can let a third party hold them if you want, and it's probably a good choice for many.
+    You can let a third-party hold them if you want, and it's probably a good choice for many.
 }
 
 ◊ndef["keys"]{
@@ -84,7 +84,7 @@ You also don't have to trust a third party to hold your money like you do when y
 
 Problems with counterfeit coins and bills go far back. From biting coins to test their hardness to today's advanced techniques, counterfeit prevention has always been an important feature for cash.
 
-With cryptocurrencies, anyone can independently verify the integrity of the coins you send and receive. Details on how is in the ◊link[next-chapter]{next chapter} but I assure you no biting is needed. You cannot counterfeit coins and you cannot send the same coin to multiple people ◊em{(double-spend)}. This is what allows cryptocurrencies to operate without a trusted third party.
+With cryptocurrencies, anyone can independently verify the integrity of the coins you send and receive. Details on how is in the ◊link[next-chapter]{next chapter} but I assure you no biting is needed. You cannot counterfeit coins and you cannot send the same coin to multiple people ◊em{(double-spend)}. This is what allows cryptocurrencies to operate without a trusted third-party.
 
 ◊img[#:src "/images/double-spend.png" #:alt "Double spending by sending a coin to someone and back to himself."]{
     A double spending occurs when someone sends the same coin both to a merchant and back to himself.
@@ -104,7 +104,7 @@ Just like with cash, cryptocurrency transfers are irreversible.◊mn[#:top -6]{D
 
 ◊subhead{Predetermined emission rate}
 
-As there's no trusted third party, there's no single entity who controls the creation of new money and the inflation.  Instead, new coins are minted following predetermined rules.◊mn{miners}
+As there's no trusted third-party, there's no single entity who controls the creation of new money and the inflation.  Instead, new coins are minted following predetermined rules.◊mn{miners}
 
 ◊ndef["miners"]{
     The new coins are rewards for miners who secure the network, but more on that in the ◊link[next-chapter]{next chapter}.

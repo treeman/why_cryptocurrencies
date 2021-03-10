@@ -264,9 +264,9 @@ There are a number of benefits cryptocurrencies have:
 
         There are no fees for opening or having an account---like with traditional banks---and there are no KYC associated costs. There is only a small transaction cost you pay when using a cryptocurrency.
     }
-    ◊li{You ◊link[no-more-third-parties]{don't need to trust a third party} with your money.
+    ◊li{You ◊link[no-more-third-parties]{don't need to trust a third-party} with your money.
 
-        In countries with high corruption you might not trust your local bank enough to handle your money. With cryptocurrencies you can hold your money yourself and there's no need for a third party to use it (such as a bank making the payment for you).
+        In countries with high corruption you might not trust your local bank enough to handle your money. With cryptocurrencies you can hold your money yourself and there's no need for a third-party to use it (such as a bank making the payment for you).
     }
     ◊li{There's no need to visit a financial institution.
 

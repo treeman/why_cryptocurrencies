@@ -27,7 +27,7 @@ But it's hard to verify that a gamble is fair. With a coin, you ◊em{might} be 
     There was a big poker scandal several years ago where it was discovered that ◊link[poker-scandal]{Ultimate Bet and Absolute Poker cheated in online poker}. They were discovered by people who noticed certain users who had "abnormally high winning statistics". Turns out they were using a superuser account that could see all the cards.
 }
 
-With cryptocurrencies, we can devise a scheme where gambling is provably fair. We can create a gambling site where users are sure the bets are fair---with mathematical certainty---and without a trusted third party facilitating the bets.
+With cryptocurrencies, we can devise a scheme where gambling is provably fair. We can create a gambling site where users are sure the bets are fair---with mathematical certainty---and without a trusted third-party facilitating the bets.
 
 ◊note-pos[#:top -9]{poker-cheating}
 
@@ -95,7 +95,7 @@ Here's a simple scheme that allows us to prove that a gamble has happened, what 
 
 Our gambling algorithm is simple. We'll concatenate the casino's seed with the player's seed and use it to initialize a pseudo-random generator, which will flip a coin to pick the winner. Here's a simple Python 3 script that does this for us:
 
-◊;Firstly the casino has to have published their gambling algorithm, and if you want to be able to prove to a third party that the gamble took place, both the casino and the player needs to sign off on the bet before playing out the bet.◊sn{otherwise}
+◊;Firstly the casino has to have published their gambling algorithm, and if you want to be able to prove to a third-party that the gamble took place, both the casino and the player needs to sign off on the bet before playing out the bet.◊sn{otherwise}
 
 ◊ndef["otherwise"]{
     If you don't publically sign the bet, there's always the risk that the casino can say that it never happened, and you cannot prove otherwise.
@@ -187,7 +187,7 @@ There are limits to the simple toy example I've described:
     }
     ◊li{Only for digitally randomized gambles
 
-        It's not possible to bet on real life events, like the outcome of an ice hockey game, without relying on a trusted third party to announce the result of the game (often called an Oracle).
+        It's not possible to bet on real life events, like the outcome of an ice hockey game, without relying on a trusted third-party to announce the result of the game (often called an Oracle).
     }
 }
 

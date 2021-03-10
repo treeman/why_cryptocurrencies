@@ -299,7 +299,7 @@ Several countries---◊link[skatt-bitcoin]{like Sweden}---have ruled that Bitcoi
     Legal tender declares that you have to accept it as money by law.
 }
 
-Cryptocurrencies just don't fit into existing rules of fiat currencies. This often happens with new innovations that break the mold---laws cannot keep up.◊sn{patents} For instance cryptocurrencies remove the third party requirement, something previously thought impossible.
+Cryptocurrencies just don't fit into existing rules of fiat currencies. This often happens with new innovations that break the mold---laws cannot keep up.◊sn{patents} For instance cryptocurrencies remove the third-party requirement, something previously thought impossible.
 
 ◊ndef["patents"]{
     Another beautiful example of laws not keeping up with technology is patents. ◊link[software-patents]{Software patents work horribly}, yet software is continuously pushed into the existing framework that doesn't really fit.

@@ -300,7 +300,7 @@ The blockchain is duplicated, stored, and maintained by many different people; y
 
     An ◊link[spv-jonald]{SPV wallet} confirms that the proof-of-work is valid and that your transaction is inside the block, but it does not validate the transactions. This means it's trusting that the longest chain is always valid---a reasonable assumption---and is much less resource intensive.
 
-    A light wallet interacts with a third party node but does not validate anything itself. It's the least resource intensive but you also need to trust a third party service.
+    A light wallet interacts with a third-party node but does not validate anything itself. It's the least resource intensive but you also need to trust a third-party service.
 }
 
 ◊ndef["blockreward"]{
