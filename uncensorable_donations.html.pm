@@ -24,7 +24,7 @@
     "https://wikileaks.org/wiki/Draft:About"
     "WikiLeaks: Drafts:About"))
 
-In the ◊link[freezing_of_merchant_accounts]{last} two ◊link[undesirable_businesses]{chapters} we looked at the issues with digital payments, but when you think about donations you wouldn't assume they have the same problems as payments have. For example when donating money to a charity, like ◊link[charity-water]{Charity Water}, they don't have to be worried about ◊link[charge-back-fraud]{charge back fraud} because you're voluntarily giving them money.◊sn{charity-fees} But the same problem with third-party censorship is relevant here as well.◊sn{voluntary}
+In the ◊link[freezing_of_merchant_accounts]{last} two ◊link[undesirable_businesses]{chapters}, we looked at the issues with digital payments, but when you think about donations you wouldn't assume they have the same problems as payments have. For example, when donating money to a charity, like ◊link[charity-water]{Charity Water}, they don't have to be worried about ◊link[charge-back-fraud]{charge back fraud} because you're voluntarily giving them money.◊sn{charity-fees} But the same problem with third-party censorship is relevant here as well.◊sn{voluntary}
 
 Imagine a country doing something really horrible, like ◊link[killing-fields]{purging intellectuals and political opponents}, that would put the government in a bad light. Journalists trying to report on this event may find it difficult or impossible to accept donations to continue their work. A payment processor (which is necessary for digital donations)---perhaps under pressure from the government---might block donations or break the journalist's anonymity,◊sn{crypto-privacy} making donations to truth-seeking journalists very difficult or outright dangerous.
 
@@ -60,7 +60,7 @@ Donations are an excellent use case for cryptocurrencies, as they cannot be cens
 
 ◊subhead{Censorship is real}
 
-A ◊link[china-forgettance]{powerful example} of censorship is the ◊link[wikipedia-tiananmen]{Tiananmen Square Massacre} in China in 1989. It was a student led protest which was forcefully suppressed by hundreds of thousands military troops, killing large numbers of demonstrators and bystanders.◊mn{hong-kong}
+A ◊link[china-forgettance]{powerful example} of censorship is the ◊link[wikipedia-tiananmen]{Tiananmen Square Massacre} in China in 1989. It was a student-led protest which was forcefully suppressed by hundreds of thousands military troops, killing large numbers of demonstrators and bystanders.◊mn{hong-kong}
 
 ◊ndef["hong-kong"]{
     Some have ◊link[hong-kong-protests]{drawn parallels} between the recent protests in Hong Kong and Tiananmen, but with smartphones everywhere it would be close to impossible to cover up a similar massacre.
@@ -83,7 +83,7 @@ A ◊link[china-forgettance]{powerful example} of censorship is the ◊link[wiki
 China has gone to great lengths to cover up these events. Twitter is censored by default in China◊mn{china-censorship} and anyone caught tweeting about Tiananmen might ◊link[twitter-detained]{get arrested}.◊mn{reeducation} On the anniversary they have police escorts for the victim's families who want to visit the graves---to keep them away from journalists.
 
 ◊ndef["reeducation"]{
-    If caught you'll probably be placed in a ◊link[china-reeducation #:quote #t]{re-education camp}, which are quite similar to camps in Stalin's Soviet or Hitler's Germany.
+    If caught, you'll probably be placed in a ◊link[china-reeducation #:quote #t]{re-education camp}, which are quite similar to camps in Stalin's Soviet or Hitler's Germany.
 }
 
 ◊ndef["china-censorship"]{
@@ -149,9 +149,9 @@ Censorship is a ◊link[censorship-global]{global problem} and is a big problem 
 
 ◊subhead{A short history of WikiLeaks}
 
-◊link[wikileaks]{WikiLeaks} is a relevant example for illustrating the importance of uncensorable payments as it shows the influence powerful actors have over payment processors, and in turn the funding for WikiLeaks. We will focus on the Chelsea Manning leaks and the aftermath, where WikiLeaks got their donation channels shut down for exposing government atrocities.
+◊link[wikileaks]{WikiLeaks} is a relevant example for illustrating the importance of uncensorable payments as it shows the influence powerful actors have over payment processors and, in turn, the funding for WikiLeaks. We will focus on the Chelsea Manning leaks and the aftermath, where WikiLeaks got their donation channels shut down for exposing government atrocities.
 
-I'll bring up the ◊link[assange-events]{events surrounding Julian Assange}, because they give context and might be relevant to the story of government abuse, but it's not about him or any other person in particular. Even if Julian Assange is guilty of rape it does not change the importance of the leaks or WikiLeaks as a concept, which goes above individuals.◊mn{association-fallacy}
+I'll bring up the ◊link[assange-events]{events surrounding Julian Assange}, because they give context and might be relevant to the story of government abuse, but it's not about him or any other person in particular. Even if Julian Assange is guilty of rape, it does not change the importance of the leaks or WikiLeaks as a concept, which goes above individuals.◊mn{association-fallacy}
 
 This is ◊strong{not} a glorification of WikiLeaks---they have ◊link[wikileaks-immoral]{endangered individuals} via their leaks. Instead I hope to show that uncensorable donations are important, because exposing government atrocities can lead to your donations being blocked (and government atrocities should be exposed).
 
@@ -187,7 +187,7 @@ This is ◊strong{not} a glorification of WikiLeaks---they have ◊link[wikileak
 
     WikiLeaks ◊link[wikileaks-history]{was launched} as a news site for collaborative editing, similar to how Wikipedia is edited by volunteers. Despite their similar names the sites aren't related. In 2010 WikiLeaks stopped being a wiki, but the name remained the same.
 
-    Today many equate WikiLeaks with Julian Assange, but he's only one of many people involved. Sometimes he's described as the founder, editor-in-chief or director.
+    Today many equate WikiLeaks with Julian Assange, but he's only one of many people involved. Sometimes he's described as the founder, editor-in-chief, or director.
   }
 
 
@@ -238,7 +238,7 @@ This is ◊strong{not} a glorification of WikiLeaks---they have ◊link[wikileak
               07:01  All you gotta do is pick up a weapon.
           }
 
-          After killing a bunch of people they're looking at an injured person crawling on the ground wanting him to pick up a weapon---so they're allowed to kill him.
+          After killing a bunch of people, they're looking at an injured person crawling on the ground wanting him to pick up a weapon---so they're allowed to kill him.
 
           ◊transcript{
               07:59  Picking up the wounded?
@@ -246,7 +246,7 @@ This is ◊strong{not} a glorification of WikiLeaks---they have ◊link[wikileak
               08:04  Come on, let us shoot!
           }
 
-          Then a van enters the scene and they're rushing in to help the wounded. But now the rules aren't that important anymore---they want to shoot!
+          Then, a van enters the scene and they're rushing in to help the wounded. But now the rules aren't that important anymore---they want to shoot!
 
           ◊transcript{
               10:35  Oh yeah, look at that. Right through the windshield!
@@ -264,15 +264,15 @@ This is ◊strong{not} a glorification of WikiLeaks---they have ◊link[wikileak
 
         ◊; https://www.theguardian.com/world/2010/apr/05/wikileaks-us-army-iraq-attack
 
-        When Reuters tried to get answers for how their reporters died the U.S. military claimed they didn't know how they got killed, and that all dead were insurgents. They also didn't know how the children got injured, despite them having the video footage.
+        When Reuters tried to get answers for how their reporters died, the U.S. military claimed they didn't know how they got killed, and that all dead were insurgents. They also didn't know how the children got injured, despite them having the video footage.
 
-        Afterwards the military investigated the issue and concluded that the actions of the soldiers where in accordance with the law of armed conflict and its own "Rules of Engagement".
+        Afterwards, the military investigated the issue and concluded that the actions of the soldiers where in accordance with the law of armed conflict and its own "Rules of Engagement".
       }
 
       ◊leak["Execution of children"
             #:url execution-of-children]{
 
-        In 2006, a group of U.S. soldiers entered a house in Iraq where they executed at least 10 people (9 civilians), including an infant and four other children---all five years or younger---and elderly women. They then called in an airstrike to cover up the evidence, but postmortems showed they had been handcuffed and shot in the head.◊mn{children-bodies}
+        In 2006, a group of U.S. soldiers entered a house in Iraq where they executed at least 10 people (9 civilians), including an infant and four other children---all five years or younger---and elderly women. They called in an airstrike to cover up the evidence, but postmortems showed they had been handcuffed and shot in the head.◊mn{children-bodies}
 
         We're quick to call them terrorists, but viewed from another angle the U.S. soldiers are the terrorists. Just imagine foreign soldiers entering your neighbour's house and executing everyone there, including the children...
 
@@ -319,7 +319,7 @@ This is ◊strong{not} a glorification of WikiLeaks---they have ◊link[wikileak
         The value of non-American lives in this war is ridiculously low.
     }
 
-    To me Chelsea Manning is a hero for bringing this to light. Yet how was she thanked? Like all whistleblowers she was made an example of; she was court-martialed and sentenced to 35 years in prison.
+    To me, Chelsea Manning is a hero for bringing this to light. Yet how was she thanked? Like all whistleblowers, she was made an example of; she was court-martialed and sentenced to 35 years in prison.
 
     ◊note-pos[#:top -8]{purpose}
 
@@ -341,7 +341,7 @@ This is ◊strong{not} a glorification of WikiLeaks---they have ◊link[wikileak
   ◊entry["Sexual assault allegations against Julian Assange"
           #:date "Aug 2010"]{
 
-    Shortly after the massive leaks Julian Assange was ◊link[assange-rape]{accused of sexual assault} in Sweden. The timing might be a coincidence◊mn{truth-fiction} or if you're a conspiracy theorist you might say they're manufactured by the U.S. government, in a way to reach Julian Assange.
+    Shortly after the massive leaks, Julian Assange was ◊link[assange-rape]{accused of sexual assault} in Sweden. The timing might be a coincidence◊mn{truth-fiction} or if you're a conspiracy theorist you might say they're manufactured by the U.S. government, in a way to reach Julian Assange.
 
     ◊ndef["truth-fiction"]{
         Like the saying goes: "truth is stranger than fiction".
@@ -356,7 +356,7 @@ This is ◊strong{not} a glorification of WikiLeaks---they have ◊link[wikileak
   ◊entry["PayPal freezes WikiLeaks donations"
          #:date "Dec 4, 2010"]{
 
-    Later ◊link[paypal-freezes-wikileaks]{PayPal freezes WikiLeaks donations} with the reason:◊mn{paypal}
+    Later, ◊link[paypal-freezes-wikileaks]{PayPal freezes WikiLeaks donations} with the reason:◊mn{paypal}
 
     ◊ndef["paypal"]{
         As far as reasons for shutting down services, PayPal ◊link[freezing_of_merchant_accounts]{doesn't have a good record}. This excuse is at least believable on the surface.
@@ -376,7 +376,7 @@ This is ◊strong{not} a glorification of WikiLeaks---they have ◊link[wikileak
 
   ◊entry["Banking blockade"
          #:date "Dec 7, 2010"]{
-    This further developed into a ◊link[banking-blockade]{Banking Blockade} that the Bank of America, VISA, MasterCard and Western Union also joined. WikiLeaks claim this destroyed 95% of their revenue and they had to resort to cash reserves.
+    This further developed into a ◊link[banking-blockade]{Banking Blockade} that the Bank of America, VISA, MasterCard and Western Union also joined. WikiLeaks claim this destroyed 95% of their revenue, and they had to resort to cash reserves.
 
     The blockade was later ◊link[illegal-blockade]{found to be illegal} and today WikiLeaks again accept donations via PayPal and credit cards, but they suffered large damage at the crucial time when the world was in uproar over the leaks.◊mn{shutdown-successful}
 
@@ -391,7 +391,7 @@ This is ◊strong{not} a glorification of WikiLeaks---they have ◊link[wikileak
   ◊entry["WikiLeaks accepts Bitcoin"
          #:date "Jun 14, 2011"]{
 
-    After being shunned by banks and payment processors WikiLeaks turned to Bitcoin, because nobody---not even the U.S. government---can block Bitcoin transactions.
+    After being shunned by banks and payment processors, WikiLeaks turned to Bitcoin, because nobody---not even the U.S. government---can block Bitcoin transactions.
 
     Why did it take almost a year before WikiLeaks started accepting Bitcoin? Satoshi made this appeal in the de-facto discussion forum at the time:
 
@@ -437,7 +437,7 @@ This is ◊strong{not} a glorification of WikiLeaks---they have ◊link[wikileak
 
 ◊;https://shadowproof.com/2012/05/30/uk-supreme-court-rejects-julian-assanges-extradition-appeal/
 
-    A couple of weeks after the Supreme Court's final ruling in U.K. that Assange ◊link[assange-loses-extradition-appeal]{should be extradited} to Sweden he walked into the Ecuadorean embassy in London and applied for political asylum. The stated reason was fears that Sweden would send him to the U.S. where he would risk the death penalty under espionage charges.◊mn{sweden-extradition}
+    A couple of weeks after the Supreme Court's final ruling in U.K. that Assange ◊link[assange-loses-extradition-appeal]{should be extradited} to Sweden, he walked into the Ecuadorean embassy in London and applied for political asylum. The stated reason was fears that Sweden would send him to the U.S. where he would risk the death penalty under espionage charges.◊mn{sweden-extradition}
 
     Assange was ◊link[assange-asylum-granted]{granted asylum} on August 16◊sup{th} and his stay at the embassy would be longer than anyone would have thought.
 
@@ -455,7 +455,7 @@ This is ◊strong{not} a glorification of WikiLeaks---they have ◊link[wikileak
     President Barack Obama ◊link[manning-commutes]{commutes Chelsea Manning's prison sentence}. Important to note it only reduced her sentence, it doesn't change the fact that she was convicted.◊mn{pardon} She spent almost 7 years of her original 35 year sentence in prison.
 
     ◊ndef["pardon"]{
-        In contrast a ◊def{pardon} would completely absolve her of any wrongdoing.
+        In contrast, a ◊def{pardon} would completely absolve her of any wrongdoing.
     }
   }
 
@@ -491,7 +491,7 @@ This is ◊strong{not} a glorification of WikiLeaks---they have ◊link[wikileak
 
   ◊entry["The rape investigation is dropped"
          #:date "November, 2019"]{
-    A few months later the Swedish prosecutor once again ◊link[assange-rape-closed-19]{dropped their investigation against Assange}, citing the long period of time since the alleged crime as the reason.
+    A few months later, the Swedish prosecutor once again ◊link[assange-rape-closed-19]{dropped their investigation against Assange}, citing the long period of time since the alleged crime as the reason.
 
     When Assange first sought asylum many people said it was only to avoid the Swedish charges and he used fears of the U.S. as a pretext, but in hindsight the fears might have been real.
 
@@ -515,9 +515,9 @@ This is ◊strong{not} a glorification of WikiLeaks---they have ◊link[wikileak
   ◊entry["A farcical extradition hearing"
          #:date "September, 2020"]{
 
-    The human rights activist Craig Murray was allowed to observe and he's been documenting the hearing ◊link[craig-murray]{on his blog}, and it's not an exaggeration to call the hearing a farce.
+    The human rights activist, Craig Murray, was allowed to observe and he's been documenting the hearing ◊link[craig-murray]{on his blog}, and it's not an exaggeration to call the hearing a farce.
 
-    Witnesses were for example prevented from taking the stand because the U.S. managed to block any reference to the torture at Guantanamo (which we know is true):
+    Witnesses were prevented from taking the stand because the U.S. managed to block any reference to the torture at Guantanamo (which we know is true):
 
     ◊qt[#:author "Craig Murray"
         #:url day-14
@@ -525,7 +525,7 @@ This is ◊strong{not} a glorification of WikiLeaks---they have ◊link[wikileak
         The next witness, Andy Worthington, was at court and ready to give evidence, but was prevented from doing so. The United States government objected to his evidence, about his work on the Guantanamo Detainee files, being heard because it contained allegations of inmates being tortured at Guantanamo.
     }
 
-    In another instance the prosecution---with the cooperation of the judge---tries to hide the fact that Assange was caught with a razor in the cell, which would imply that Assange is thinking of suicide:
+    In another instance, the prosecution---with the cooperation of the judge---tries to hide the fact that Assange was caught with a razor in the cell, which would imply that Assange is thinking of suicide:
 
     ◊qt[#:author "Craig Murray"
         #:url day-17
@@ -542,7 +542,7 @@ This is ◊strong{not} a glorification of WikiLeaks---they have ◊link[wikileak
         The Governor’s decision was at paragraph 19. Baraitser told Fitzgerald she could not accept the document as it was new evidence. Fitzgerald told her ◊em{she had herself asked for the outcome of the charge}. He said the document contained very interesting information. Baraitser said that the Governor’s decision was at paragraph 19, that was all she had asked for, and ◊em{she would refuse to take the rest of the document into consideration}.
     }
 
-    The hearing is full of problems like these. For example that the prosecution changed their accusations hours before and the defense not getting enough time to prepare, that the defense was prevented from questioning key witnesses and that there will be no closing speeches in the hearing.
+    The hearing is full of problems like these. The prosecution changed their accusations hours before and the defense not getting enough time to prepare, that the defense was prevented from questioning key witnesses and that there will be no closing speeches in the hearing.
 
     As I'm writing this in late September it's not yet decided what will happen to Assange, but it seems clear that the judge already made up her mind before the hearing even began.
   }
@@ -798,7 +798,7 @@ Those aren't the actions of a hero.
 }
 
 
-But of course covering up or rationalizing events isn't a U.S. only phenomena. Here are other examples:
+Of course covering up or rationalizing events isn't a U.S. only phenomena. Here are other examples:
 
 ◊ul{
   ◊li{◊link[rel-tiananmen]{As previously mentioned} the Chinese cover up of the Tiananmen Square Massacre.}

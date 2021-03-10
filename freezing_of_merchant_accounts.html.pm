@@ -22,7 +22,7 @@
       "https://neo900.org/news/paypal-trouble-delays-project"
       "Werner Almesberger (2015) PayPal trouble delays project"))
 
-This chapter continues on the same idea as the ◊link[prev]{previous one}, but we'll view the issue from another angle. Instead of focusing on getting permission to accept payments at all we'll focus on the problem that accounts can be frozen at any time, for arbitrary reasons. This isn't a problem with cryptocurrencies, as they cannot be frozen.
+This chapter continues on the same idea as the ◊link[prev]{previous one}, but we'll view the issue from another angle. Instead of focusing on getting permission to accept payments at all, we'll focus on the problem that accounts can be frozen at any time, for arbitrary reasons. This isn't a problem with cryptocurrencies, as they cannot be frozen.
 
 
 ◊subhead{Freezing funds, not just payments}
@@ -61,7 +61,7 @@ Now imagine the consequences.
 
 Would you be able to pay your rent? Buy food for yourself and your kids? Repair your fridge if it breaks? Given that ◊link[american-savings]{only 39% of Americans have enough savings to cover a $1,000 emergency} you should be glad if you can honestly answer yes to these questions. Many would panic if their salary was just a little bit late, let alone half a year.
 
-Yet this has played out ◊link[rel-examples]{again and again} for businesses all over the world who have gotten their account frozen for an unknown amount of time for arbitrary or unknown reasons.  Actually, let me take that back. What happens is actually much worse---businesses also get ◊strong{funds} frozen. It's like if your employer would freeze your credit card, your savings account and hold off your salary.
+Yet, this has played out ◊link[rel-examples]{again and again} for businesses all over the world who have gotten their account frozen for an unknown amount of time for arbitrary or unknown reasons.  Actually, let me take that back. What happens is actually much worse---businesses also get ◊strong{funds} frozen. It's like if your employer would freeze your credit card, your savings account and hold off your salary.
 
 Imagine what you would do now, without a salary and without your savings...
 
@@ -116,15 +116,15 @@ They didn't just freeze the account, they're making it worse by confiscating fut
 
 ◊subhead{Small businesses & projects may be ruined}
 
-If you run a very popular business like Minecraft you'll probably get through without much issue. You're already making enough money to cover expenses and the attention in news and social media will make sure the issue gets resolved quickly.◊mn{attention}
+If you run a very popular business like Minecraft, you'll probably get through without much issue. You're already making enough money to cover expenses and the attention in news and social media will make sure the issue gets resolved quickly.◊mn{attention}
 
 ◊ndef["attention"]{
     Creating an uproar on social media is still the best way to resolve issues with companies that have very poor customer service. For example if you have an issue with Google hopefully your post on ◊link[hackernews]{Hacker News} gathers enough attention to catch the eye of someone working there.
 }
 
-But what happens if you run a small business? If your startup gets their account frozen, with no new money coming in?  Obviously you'll be in a world of hurt. Maybe you'll take a hit and survive but it could also kill your business.
+But what happens if you run a small business? If your startup gets their account frozen, with no new money coming in?  Obviously, you'll be in a world of hurt. Maybe you'll take a hit and survive but it could also kill your business.
 
-The ◊link[neo900]{Neo900} project I quoted at the start of this chapter? They missed a bunch of supplier deadlines and the project is still crawling along---but as a shell of what it once was. It was indeed a disaster.
+What about the ◊link[neo900]{Neo900} project I quoted at the start of this chapter? They missed a bunch of supplier deadlines, and the project is still crawling along---but as a shell of what it once was. It was indeed a disaster.
 
 ◊note-pos[#:top -16]{attention}
 
@@ -189,20 +189,20 @@ Some of these had a happy ending but others did not.
 
 ◊subhead{Money under your mattress}
 
-With cryptocurrencies you can accept digital payments that go directly into a wallet you control yourself. Then it's impossible to get your cryptocurrency account frozen; it's really like storing them under your own (digital) mattress.◊mn{tradeoff-holding}
+With cryptocurrencies, you can accept digital payments that go directly into a wallet you control yourself. Then, it's impossible to get your cryptocurrency account frozen; it's really like storing them under your own (digital) mattress.◊mn{tradeoff-holding}
 
 ◊ndef["tradeoff-holding"]{
     As always, there are trade-offs. Storing money at home drastically increases the risk of theft so keeping it at a trustworthy bank might be a wise choice.
 
-    With cryptocurrencies a good compromise might be to receive payments to your own wallet and automatically transfer them to a more secure storage when the sum becomes too large.
+    With cryptocurrencies, a good compromise might be to receive payments to your own wallet and automatically transfer them to a more secure storage when the sum becomes too large.
 }
 
 
 This of course requires that you use a wallet which holds the coins itself, and not a custodial wallet---which a third party manages for you. It's why so much emphasis is placed on controlling your own keys, otherwise you won't get all benefits.
 
-I'm not advocating either way, just realize there are trade-offs with controlling your own keys or not. If you want the ease of use of a custodial wallet then you'll sacrifice control of your account.
+I'm not advocating either way; just realize there are trade-offs with controlling your own keys or not. If you want the ease of use of a custodial wallet, then you'll sacrifice control of your account.
 
-With cryptocurrencies at least you have a choice and a possibility to avoid your account getting arbitrarily frozen.
+With cryptocurrencies, at least you have a choice and a possibility to avoid your account getting arbitrarily frozen.
 
 ◊note-pos[#:top -20]{tradeoff-holding}
 

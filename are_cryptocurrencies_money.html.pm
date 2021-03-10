@@ -14,7 +14,7 @@
   }
 }
 
-As we saw in the ◊link[prev-chapter]{previous chapter}, practically anything can be used as money. Therefore it's more useful to ask if cryptocurrencies have the properties of good money, and how well do they function as money today.
+As we saw in the ◊link[prev-chapter]{previous chapter}, practically anything can be used as money. Therefore, it's more useful to ask if cryptocurrencies have the properties of good money, and how well do they function as money today.
 
 In this chapter we'll see that cryptocurrencies have excellent monetary properties, but their function as money is held back by volatility and adoption.
 
@@ -38,7 +38,7 @@ To decide how well cryptocurrencies can function as money, we'll take a look at 
     }
     ◊li{◊strong{Fungible & Uniform}
 
-        For most cryptocurrencies fungibility is problematic. If all transaction history is public, like it is in Bitcoin, it could be used to ◊link[us-blacklist]{blacklist certain addresses} and in the long run break fungibility if coins having touched a blacklisted address becomes less valuable.
+        For most cryptocurrencies, fungibility is problematic. If all transaction history is public, like it is in Bitcoin, it could be used to ◊link[us-blacklist]{blacklist certain addresses}, and in the long run break fungibility if coins having touched a blacklisted address become less valuable.
 
         Cryptocurrencies like Monero tries to ◊link[privacy-challenge]{solve this problem}, so I'll say that cryptocurrencies are fungible.
     }
@@ -52,7 +52,7 @@ To decide how well cryptocurrencies can function as money, we'll take a look at 
     }
     ◊li{◊strong{Recognizable}
 
-        Cryptocurrencies are impossible to counterfeit and if implemented correctly they're easy to separate from each other.
+        Cryptocurrencies are impossible to counterfeit and if implemented correctly, they're easy to separate from each other.
 
         While at a low level it may be difficult to tell which cryptocurrency a number belongs to, all necessary data is public so you can differentiate them. Wallet apps do this automatically, making them easy to identify.
     }
@@ -63,7 +63,7 @@ All in all cryptocurrencies fulfil the properties excellently.
 Cryptocurrencies can also be considered to be ◊def[sound-money]{sound money}---the value is entirely market driven and there's no manipulation of the supply.◊mn{backed}
 
 ◊ndef["backed"]{
-    Traditionally sound money refers to money backed by precious material. Cryptocurrencies are instead backed by cryptography, and in Bitcoin's case the supply mimics the gold supply.
+    Traditionally sound money refers to money backed by precious material. Cryptocurrencies are instead backed by cryptography, and in Bitcoin's case, the supply mimics the gold supply.
 }
 
 ◊ndef["crypto-acceptable"]{
@@ -114,14 +114,14 @@ I know this might be controversial, so let me motivate some of the entries:
 }
 
 ◊ndef["acceptable"]{
-    You could argue that because you need a device with internet access, cryptocurrencies should get a lower score on ◊em{acceptable}. But you could also argue that having to transact in person is another drawback. To me they cancel out.
+    You could argue that because you need a device with internet access, cryptocurrencies should get a lower score on ◊em{acceptable}. But you could also argue that having to transact in person is another drawback, and to me they cancel out.
 }
 
 ◊ndef["durability"]{
-    The definition of ◊em{durability} is only concerned with reuse, where cryptocurrencies score excellently. But I wanted to include the storage drawback that didn't fit anywhere else.
+    The definition of ◊em{durability} is only concerned with reuse, where cryptocurrencies score excellently. I wanted to include the storage drawback that didn't fit anywhere else.
 }
 
-Even if you disagree about certain choices, it's hard to deny that cryptocurrencies come out of the comparison pretty well. But of course this doesn't give the whole picture. There are other significant differences, for example:
+Even if you disagree about certain choices, it's hard to deny that cryptocurrencies come out of the comparison pretty well. Of course, this doesn't give the whole picture. There are other significant differences, for example:
 
 ◊ul{
     ◊li{A big difference between cryptocurrencies and gold is that cryptocurrencies are digital. This isn't only positive---cryptocurrency implementations can have bugs that might have severe negative consequences.◊sn{bugs}}
@@ -149,7 +149,7 @@ Even if you disagree about certain choices, it's hard to deny that cryptocurrenc
 }
 
 ◊ndef["bugs"]{
-    A bug is a programming fault in the software. As a developer I can assure you, bugs will happen. The question is, how can you avoid the most severe ones and what do you do when they appear?
+    A bug is a programming fault in the software. As a developer, I can assure you that bugs will happen. The question is, how can you avoid the most severe ones, and what do you do when they appear?
 
     Both ◊link[monero-bug]{Monero} and ◊link[bitcoin-bug]{Bitcoin} has for example had major bugs that could have allowed an attacker to create coins for free. Neither were exploited... this time.
 }
@@ -222,7 +222,7 @@ We've looked at the properties---but how well do they function as money, today?
 While cryptocurrencies are used as money in certain communities and for certain goods,◊mn{goods} they're not in widespread use. They don't function very well as money globally, today.
 
 ◊ndef["goods"]{
-    Cryptocurrencies are quite popular for privacy-concerned users. For example most serious sellers of VPNs, domain names and VPS hosting accept payments via cryptocurrencies.
+    Cryptocurrencies are quite popular for privacy-concerned users. For example, most serious sellers of VPNs, domain names and VPS hosting accept payments via cryptocurrencies.
 }
 
 There are mainly two things holding it back today:
@@ -247,7 +247,7 @@ Perhaps it's to be expected that cryptocurrencies aren't global money yet---they
 }
 
 ◊ndef["shock-of-the-old"]{
-    For a different perspective of how technology gets adopted I recommend ◊(book-link shock-of-the-old-book) by David Edgerton. He argues that technology must be significantly better than the previous to see use, and even then the adoption is not as swift as one might think.
+    For a different perspective of how technology gets adopted, I recommend ◊(book-link shock-of-the-old-book) by David Edgerton. He argues that technology must be significantly better than the previous to see use, and even then the adoption is not as swift as one might think.
 
     Another perspective on network effects is given by Kevin Simler in his blog post ◊link[going-critical]{Going Critical}.
 }
@@ -261,7 +261,7 @@ Perhaps it's to be expected that cryptocurrencies aren't global money yet---they
 
 ◊subhead{How well do other forms of money function?}
 
-Again let's try to compare cryptocurrencies with the other forms of money. This time I combine digital and physical fiat, since they function the same in practice.
+Again, let's try to compare cryptocurrencies with the other forms of money. This time I'll combine digital and physical fiat, since they function the same in practice.
 
 ◊table-body[#:class "crypto-eval"]{
     ◊tr{◊td{}                       ◊ths{Fiat}      ◊ths{Gold}     ◊ths{Cryptocurrencies}}
@@ -337,7 +337,7 @@ There are others who've ruled in favor of Bitcoin as a currency. For example ◊
 
 ◊subhead{So, are cryptocurrencies money?}
 
-Cryptocurrencies fulfil the properties of money very well---in fact they fulfil them better than any alternative in history. Unlike fiat they can also be considered sound money as the valuation is entirely market driven.
+Cryptocurrencies fulfil the properties of money very well---in fact, they fulfil them better than any alternative in history. Unlike fiat they can also be considered sound money as the valuation is entirely market driven.
 
 While they are used as money in certain communities, they do not function well as global money today. They're very volatile and adoption isn't there yet.
 
