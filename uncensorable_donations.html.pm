@@ -544,9 +544,17 @@ This is ◊strong{not} a glorification of WikiLeaks---they have ◊link[wikileak
 
     The hearing is full of problems like these. The prosecution changed their accusations hours before and the defense not getting enough time to prepare, that the defense was prevented from questioning key witnesses and that there will be no closing speeches in the hearing.
 
-    As I'm writing this in late September it's not yet decided what will happen to Assange, but it seems clear that the judge already made up her mind before the hearing even began.
-  }
+    Nevertheless, in January 2021 the judge ◊link[blocked]{blocked Assange's extradition to the U.S.}
 
+    Not because she disagreed with the prosecution, but because Assange would face barbaric prison treatment in the U.S., and thus it would be "unjust or oppressive to extradite him".
+
+    As of March 2021, the judgement may still be overturned by appeals.
+
+    ◊;As I'm writing this in late September it's not yet decided what will happen to Assange, but it seems clear that the judge already made up her mind before the hearing even began.◊mn{blocked}
+  }
+}
+
+◊ndef["blocked"]{
 }
 
 ◊; UN panel 'rules in Assange's favour'
@@ -781,6 +789,11 @@ This is ◊strong{not} a glorification of WikiLeaks---they have ◊link[wikileak
     "2020-09-30"
     "https://www.craigmurray.org.uk/archives/2020/09/your-man-in-the-public-gallery-assange-hearing-day-17/"
     "Craig Murray (2020) Your Man in the Public Gallery: Assange Hearing Day 17"))
+◊(define blocked
+  (x-ref
+    "2021-03-10"
+    "https://www.judiciary.uk/wp-content/uploads/2021/01/USA-v-Assange-judgment-040121.pdf"
+    "Judiciary of England and Wales (2021) USA vs. Julian Assange Judgment"))
 
 
 ◊subhead{Hiding skeletons in the closet}
