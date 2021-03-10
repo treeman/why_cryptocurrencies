@@ -3,7 +3,7 @@
 ◊(define-meta title "About me, the author")
 ◊(define-meta subtitle "Hello, I'm Jonas")
 ◊(define-meta published "2019-04-12T00:00:00+01:00")
-◊(define-meta updated "2020-10-09T19:52:38+02:00")
+◊(define-meta updated "2021-03-10T19:01:07+01:00")
 ◊(define-meta uuid "b1aaa891-a7c6-4bf4-a01c-4c43c0446abf")
 
 ◊(clear-sidenotes)

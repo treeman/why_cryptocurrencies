@@ -3,7 +3,7 @@
 ◊(define-meta title "Separation of money and state")
 ◊(define-meta subtitle "Countries that don't manage their own money")
 ◊(define-meta published "2020-02-05T06:24:16+01:00")
-◊(define-meta updated "2020-10-09T19:49:14+02:00")
+◊(define-meta updated "2021-03-10T19:06:14+01:00")
 ◊(define-meta uuid "a5636cbf-bec1-4795-8c66-5725b0eec7bf")
 
 ◊(clear-sidenotes)
