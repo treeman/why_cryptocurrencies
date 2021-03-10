@@ -98,7 +98,7 @@ Black markets have existed as long as taxes have been collected, and it's not ju
      "https://en.wikipedia.org/wiki/Geothermal_heating"
      "Wikipedia: Geothermal heating"))
 
-In countries with corruption or dysfunctional governments black markets are huge. For example in the Soviet Union many people relied on black markets to get their food supply when the market economy failed them. Or in Greece during the economic breakdown in the 2010s, the black market was ◊link[greece-black-markets]{estimated at 20 to 25 percent of the GDP}.
+In countries with corruption or dysfunctional governments, black markets are huge. For example in the Soviet Union many people relied on black markets to get their food supply when the market economy failed them. Or in Greece during the economic breakdown in the 2010s, the black market was ◊link[greece-black-markets]{estimated at 20 to 25 percent of the GDP}.
 
 Black markets aren't inherently evil and sometimes they're even necessary for our survival. Instead they deal in both good and bad things, each of which should be considered on a case-by-case basis.
 
@@ -118,7 +118,7 @@ Black markets aren't inherently evil and sometimes they're even necessary for ou
 
 ◊subhead{What can you buy on a darknet market?}
 
-Contrary to popular belief you cannot buy ◊em{everything} on a darknet market. In theory it's possible, but in practice darknet markets operate with their own morality.
+Contrary to popular belief, you cannot buy ◊em{everything} on a darknet market. In theory it's possible, but in practice darknet markets operate with their own morality.
 
 For instance ◊link[darknet-murders]{it's very difficult, if not impossible, to hire a hitman} on a darknet market. This is a myth made popular by the false accusations against ◊link[freeross]{Ross Ulbricht}, the creator of the first darknet market Silk Road. The rumor was manufactured by corrupt federal agents (who got sentenced), yet their "evidence" was used by prosecutors and news media to make an example out of Ross.◊mn{theme-example}
 

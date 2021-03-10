@@ -217,7 +217,7 @@ Let's look at some concrete examples of how antifragility might come into play f
 
         If governments banned cryptocurrencies people would still trade them in person and move to decentralized marketplaces, which are inherently harder to disrupt. We would move away from centralized payment services and move towards a peer-to-peer economy, like how Satoshi envisioned.◊mn{global} ◊note-pos{global}
 
-        For example Monero supporters worry that governments will declare cryptocurrencies with good privacy features illegal---not an unreasonable thing to worry about. This will soon be a smaller issue as work on a ◊link[farcaster]{Bitcoin-Monero atomic swap project} is underway, which would allow people to trade Bitcoin and Monero without any third party.
+        For example Monero supporters worry that governments will declare cryptocurrencies with good privacy features illegal---not an unreasonable thing to worry about. This will soon be a smaller issue as work on a ◊link[farcaster]{Bitcoin-Monero atomic swap project} is underway, which would allow people to trade Bitcoin and Monero without any third-party.
     }
     ◊li{◊strong{A 51% attack}
 

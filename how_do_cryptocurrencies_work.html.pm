@@ -98,7 +98,7 @@ We copied our coin and printed ◊sans-tnum{1 BTC} out of thin air, so now the l
 This isn't really a problem with physical cash since you can't just copy gold coins or paper notes. It's not a problem for banks either since the bank can just deny one or both of the transactions.  This is a hard problem for a digital currency that tries to remove the central authority, and this is why before Bitcoin no ◊def{decentralized}◊mn[#:top -4]{decentralized} digital currency existed.
 
 ◊ndef["decentralized"]{
-    Decentralization is a common term used to refer to the lack of trusted third party. Instead, multiple unrelated entities come together and decide as a group.
+    Decentralization is a common term used to refer to the lack of trusted third-party. Instead, multiple unrelated entities come together and decide as a group.
 
     There are different types of decentralization in a cryptocurrency to consider. For example:
 

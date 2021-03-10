@@ -25,7 +25,7 @@
 
 One of the most important properties that let cryptocurrencies function well as money is the limited supply. If someone was allowed to print coins from thin air, it would be very poor money and would essentially be worthless.
 
-But would they really be completely useless? These cryptocurrency-like things are called ◊em{tokens}, and they aren't that useless. In this chapter we'll look at how they can enable more accessible fund raising, improve gift cards or enable peer-to-peer derivative trading.
+But would they really be completely useless? These cryptocurrency-like things are called ◊em{tokens}, and they aren't that useless. In this chapter, we'll look at how they can enable more accessible fund raising, improve gift cards or enable peer-to-peer derivative trading.
 
 ◊subhead{What are tokens?}
 
@@ -135,9 +135,9 @@ Why would you want a token for this? The benefit would be that anyone, anywhere,
 
 People use gift cards all the time, but they're not always that great. How do you verify that they're valid, and haven't already been used? How do you do that in stores, when you're choosing which one to buy, and how do you verify digital gift cards?
 
-For example let's say you walk into a store and want to buy a gift card. How do you know it's not fake, or haven't been used? Luckily there's a code on the gift card, which you can enter into a website to verify if it's still valid. Okay! It's valid, so you buy it and walk out the store.
+For example, let's say you walk into a store and want to buy a gift card. How do you know it's not fake, or haven't been used? Luckily there's a code on the gift card, which you can enter into a website to verify if it's still valid. Okay! It's valid, so you buy it and walk out the store.
 
-Unfortunately for you the store clerk has already written down the gift card code, and shortly after you leave the store he decides to use it up, making your gift card useless. Physical gift cards, the one you hand in to a store when you use them up, don't really have this problem, but this is unsolved for digital gift cards.◊mn{verify}
+Unfortunately for you, the store clerk has already written down the gift card code, and shortly after you leave the store he decides to use it up, making your gift card useless. Physical gift cards, the one you hand in to a store when you use them up, don't really have this problem, but this is unsolved for digital gift cards.◊mn{verify}
 
 ◊ndef["verify"]{
     Physical gift cards can have problems with counterfeiting, which is also something cryptocurrencies completely solve.
@@ -229,7 +229,7 @@ In short, they're a bet on the value of something. A derivative is a contract th
 
 We've already seen how cryptocurrencies can improve currencies, but other types of derivatives might also find some benefit from being based on cryptocurrency tokens.
 
-Take stock trading for example. They're done through a stock exchange and intermediaries that manage the exchange. This is required because---like the problem with gift cards---there's no way to transfer ownership in a secure way. But now there is; with tokens you could create a decentralized derivative market and trade them directly between two people, without the need for an intermediary to manage the trade.◊mn{save-money}
+Take stock trading, for example. They're done through a stock exchange and intermediaries that manage the exchange. This is required because---like the problem with gift cards---there's no way to transfer ownership in a secure way. But now there is; with tokens you could create a decentralized derivative market and trade them directly between two people, without the need for an intermediary to manage the trade.◊mn{save-money}
 
 If you wanted to, you could also create digital ◊link[bearer-share]{bearer shares}, where the share of a security is given to whoever controls a specific token. (With typical bearer shares control is given to whoever holds a certain piece of paper.) They would protect the owners' anonymity, since their identity is never recorded or required, and could be used to for example create a company controlled by anonymous people.
 

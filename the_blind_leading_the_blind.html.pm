@@ -212,7 +212,7 @@ It's worse than us not understanding how the system works. We simply don't have 
 
 This argument could be made against almost everything. For example ◊link[mega-projects]{megaprojects often fail} (vastly overruns their cost or timetable) because politicians make them their pet project, pushing them through against all odds... And leave it to other people to pick up the pieces after the next election.◊mn{olympics}
 
-Proponents will of course say that money is more important than other issues---too important to leave it to the whims of the politicians---and therefore the Federal Reserve must remain independent. I believe it's much too important to be handled in the dark, by a private entity.
+Proponents will say that money is more important than other issues---too important to leave it to the whims of the politicians---and therefore the Federal Reserve must remain independent. I believe it's much too important to be handled in the dark, by a private entity.
 
 ◊note-pos[#:top -11]{olympics}
 
@@ -255,9 +255,9 @@ You can also predict how many coins will be created and when, it's coded into th
      "https://medium.com/@awemany/600-microseconds-b70f87b0b2a6"
      "Awemany (2018) 600 Microseconds: A perspective from the Bitcoin Cash and Bitcoin Unlimited developer who discovered CVE-2018–17144"))
 
-Finally cryptocurrencies don't rely on "experts", who are supposed to avoid crashes by predicting what cannot be predicted. There's nobody in control so nobody can push the wrong button or pull the wrong lever to cause economic chaos.◊sn{half-truth}
+Finally, cryptocurrencies don't rely on "experts", who are supposed to avoid crashes by predicting what cannot be predicted. There's nobody in control so nobody can push the wrong button or pull the wrong lever to cause economic chaos.◊sn{half-truth}
 
-Therefore cryptocurrencies are a more transparent and robust alternative, which avoids many of the problems inherent to the modern financial system.
+Therefore, cryptocurrencies are a more transparent and robust alternative, which avoids many of the problems inherent to the modern financial system.
 
 ◊ndef["half-truth"]{
     This is a half-truth. Yes there's nobody who can create coins out of thin air, but there are developers, miners, exchanges and users of a cryptocurrency who can influence its development. After all it's "just code" (and a lot of people agreeing with the rules of the code).

@@ -19,7 +19,7 @@
 This chapter serves as an introduction to the cryptographic terms and constructs mentioned in the book. The aim is to give you an idea of what they are and how they might be used in a cryptocurrency context. I won't go into low-level details of how they work, so you don't need to know any mathematics or programming to follow along. If this interests you, I hope this introduction will be helpful as a starting point when researching the topics on your own.◊mn{history}
 
 ◊ndef["history"]{
-    If the history of cryptography interests you I can also recommend the book ◊(book-link code-breakers-book) by David Kahn. You can enjoy it even without much math knowledge.
+    If the history of cryptography interests you, I can also recommend the book ◊(book-link code-breakers-book) by David Kahn. You can enjoy it even without much math knowledge.
 }
 
 

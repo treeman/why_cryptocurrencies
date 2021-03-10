@@ -150,7 +150,7 @@ With this privacy scheme governments can still ◊link[blacklisting]{blacklist c
 
 You can still verify the proof-of-work and even the coin supply on Monero, although verifying the coin supply isn't as simple as on a transparent blockchain. For more technical details on Monero I recommend ◊(book-link mastering-monero-book) or ◊(book-link zero-to-monero).
 
-There are other ideas of how to improve privacy and fungibility for cryptocurrencies, and cryptocurrencies of the future might work differently to what I've described here. There are weaknesses to the solutions we've seen so far and they also come with disadvantages. For example transactions in Monero are larger than transactions in Bitcoin, making Monero even more difficult to scale. But research is ongoing and I'm hopeful.
+There are other ideas of how to improve privacy and fungibility for cryptocurrencies, and cryptocurrencies of the future might work differently to what I've described here. There are weaknesses to the solutions we've seen so far, and they also come with disadvantages. For example, transactions in Monero are larger than transactions in Bitcoin, making Monero even more difficult to scale. But research is ongoing and I'm hopeful.
 
 
 
@@ -185,16 +185,16 @@ There are other ideas of how to improve privacy and fungibility for cryptocurren
 
 ◊subhead{Scalability}
 
-Perhaps the most famous technical issue cryptocurrencies face is how to scale them and to increase transaction throughput. This is the big drawback with a decentralized system compared to a centralized system; they're just so much less efficient.
+Perhaps, the most famous technical issue cryptocurrencies face is how to scale them and to increase transaction throughput. This is the big drawback with a decentralized system compared to a centralized system; they're just so much less efficient.
 
 Bitcoin can for example only process 3--7 transactions per second (tx/s) at max capacity, while ◊link[paypal-transactions]{PayPal processes on average ◊nbsp{400 tx/s}} and ◊link[visa-transactions]{VISA an average of ◊nbsp{1 700 tx/s}}, with VISA's peak capacity being over ◊nbsp{24 000 tx/s}. If cryptocurrencies hope to live up to their potential then there's lots of work to do here.
 
-But it's not quite as bad as the numbers seem to suggest. Bitcoin operates far from the technical limits because they didn't raise the ◊def{blocksize limit}, which controls how many transactions can fit in a block and essentially sets an artificial limit on transaction throughput. ◊link[bch]{Bitcoin Cash}, a fork of Bitcoin, has raised this limit and has more than 20 times the throughput of Bitcoin (around ◊nbsp{100 tx/s}). So cryptocurrencies can at least be in the same playing field as PayPal.◊mn{blocksize}
+But it's not quite as bad as the numbers seem to suggest. Bitcoin operates far from the technical limits because they didn't raise the ◊def{blocksize limit}, which controls how many transactions can fit in a block and essentially sets an artificial limit on transaction throughput. ◊link[bch]{Bitcoin Cash}, a fork of Bitcoin, has raised this limit and has more than 20 times the throughput of Bitcoin (around ◊nbsp{100 tx/s}). So, cryptocurrencies can at least be in the same playing field as PayPal.◊mn{blocksize}
 
 ◊ndef["blocksize"]{
-    See ◊link[history-blocksize]{this timeline} for the history of the blocksize debate (it only goes up to Dec 2017, but as of May 2019 no significant development has happened). Because Bitcoin didn't raise the blocksize Bitcoin Cash was created in 2017, keeping fees low and transaction capacity high.
+    See ◊link[history-blocksize]{this timeline} for the history of the blocksize debate (it only goes up to Dec 2017, but as of May 2019 no significant development has happened). Because Bitcoin didn't raise the blocksize, Bitcoin Cash was created in 2017, keeping fees low and transaction capacity high.
 
-    There are ◊strong{◊link[hearn]{no valid}} reasons against a moderate blocksize increase, yet there are Bitcoin developers who to this day think we should ◊link[luke-300kb]{decrease it to 300kb}.
+    There are ◊strong{◊link[hearn]{no valid}} reasons against a moderate blocksize increase, yet there are Bitcoin developers who to this day think we should ◊link[luke-300kb]{decrease it to 300 kB}.
 }
 
 But it's not as easy as "just increase the blocksize". Larger blocks have a centralizing effect, which compromises the core value proposition of a cryptocurrency, and if the network cannot handle them it may even break down.
@@ -229,7 +229,7 @@ There are a number of technical pain points that needs to be improved to scale a
 }
 
 ◊ndef["btc-size"]{
-    As of 2020-03-04 the total ◊link[btc-blockchain-size]{blockchain size of Bitcoin} is 265 GB. That's not small, but a 1 TB SSD harddisk costs around $120 and can at the current rate store the entire BTC blockchain for almost 15 more years (it grows around 50 GB/year).
+    As of 2020-03-04, the total ◊link[btc-blockchain-size]{blockchain size of Bitcoin} is 265 GB. That's not small, but a 1 TB SSD harddisk costs around $120 and can at the current rate store the entire BTC blockchain for almost 15 more years (it grows around 50 GB/year).
 }
 
 ◊(define btc-blockchain-size
@@ -242,7 +242,7 @@ There are a number of technical pain points that needs to be improved to scale a
     Miners can delay transaction validation and only validate the POW of a block and start mining it directly. This is a fair assumption as it's very expensive to produce a valid POW for a block.
 }
 
-When we increase transaction throughput we also increase the burden of full nodes (those who validate and store the blockchain) and it might mean that fewer people can run nodes, harming the node decentralization of the network. It's not a problem as long as enough people can and want to run a node; and exchanges, researchers, developers, payment processors, mining pools and enthusiasts will want to as long as it's not extremely expensive.◊sn{light-wallets}
+When we increase transaction throughput we also increase the burden of full nodes (those who validate and store the blockchain), it might mean that fewer people can run nodes, harming the node decentralization of the network. It's not a problem as long as enough people can and want to run a node; exchanges, researchers, developers, payment processors, mining pools, and enthusiasts will want to as long as it's not extremely expensive.◊sn{light-wallets}
 
 ◊ndef["light-wallets"]{
     Most people won't run a full node anyway as they will use light wallets or SPV wallets on the mobile phone, which will ask other full nodes for the data they need.
@@ -306,15 +306,15 @@ It may ultimately be impossible to scale a cryptocurrency so that ◊em{everyone
 
 ◊subhead{Energy usage}
 
-Do you know that it's common to have two conflicting beliefs at the same time? For example you might know for a fact that eating too much candy is very bad for your health---and you really would like to loose weight---but you still eat it. Or how you think that cheating for an exam is wrong, but you still do it because "you had to".
+Do you know that it's common to have two conflicting beliefs at the same time? You might know that eating too much candy is very bad for your health---and you really would like to lose weight---but you still eat it. Another example is how you think that cheating for an exam is wrong, but you still do it because "you had to".
 
 This is called ◊def[cognitive_dissonance]{cognitive disonance} and it can cause great discomfort when we have to face it. It's also something I, as a cryptocurrency supporter and an environmentalist, struggle with.◊mn{coping}
 
 ◊ndef["coping"]{
-    When we experience the uncomfortable dissonance we try to reduce it in some way, which often happens unconsciously. We might for example downplay the importance on one side of the conflict ("it's just one chocolate bar"), we might rationalize it in some way ("I'll exercise harder later") or we might suppress the issue entirely (stop talking to anyone who reminds you that you're on a diet).
+    When we experience cognitive dissonance we try to reduce it in some way, which often happens unconsciously. We might downplay the importance on one side of the conflict ("it's just one chocolate bar"), we might rationalize it in some way ("I'll exercise harder later") or we might suppress the issue entirely (stop talking to anyone who reminds you that you're on a diet).
 }
 
-The issue is that cryptocurrencies with proof-of-work use a lot of energy. Bitcoin for example uses more energy than entire countries!
+The issue is that cryptocurrencies with proof-of-work use a lot of energy. Bitcoin uses more energy than entire countries!
 
 ◊img[#:src "images/energy-bars.svg" #:alt "Energy usage for Bitcoin and different countries."]{
     Energy usage for Bitcoin and different countries. The consumption for all entries are still quite small if you compare to USA's 3902 TWh or China's 5564 TWh.
@@ -366,7 +366,7 @@ This is absolutely a big problem, but there are some important points we need to
 
         Bitcoin mining is purely profit driven; when the price of Bitcoin goes up, it becomes more profitable to mine and when the price goes down, it's less profitable to mine. Similarly if the energy price would go up, then it's less profitable to mine and Bitcoin would use less energy.
 
-        In fact it's already difficult to run a profitable mining operation, which is why most mining is based in countries with cheap energy.
+        In fact, it's already difficult to run a profitable mining operation, which is why most mining is based in countries with cheap energy.
     }
 }
 
@@ -380,7 +380,7 @@ There's no other way to drastically reduce the energy usage than to replace proo
 
 ◊;You can rationalize Bitcoin's energy usage by comparing it to alternatives---like the banking system or the military---and say "hey, it's not that bad!", but that comes too close to downplaying the issue for my taste.
 
-If we're stuck with proof-of-work then we just have to accept that it uses a lot of energy, and we have to decide if it's worth it. Are the use-cases valuable enough to warrant spending this much energy? Or are the skeptics right, and Bitcoin mining is just a terrible waste of energy?
+If we're stuck with proof-of-work, then we just have to accept that it uses a lot of energy, and we have to decide if it's worth it. Are the use-cases valuable enough to warrant spending this much energy? Or are the skeptics right, and Bitcoin mining is just a terrible waste of energy?
 
 ◊(define cognitive_dissonance
    (x-ref
@@ -403,17 +403,17 @@ An exhaustive list and description of all problems would require much more than 
     }
     ◊li{Scams everywhere
 
-        For every legitimate cryptocurrency there are thousands of scams, and it can be very difficult for outsiders to identify them.◊mn{parents}
+        For every legitimate cryptocurrency, there are thousands of scams, and it can be very difficult for outsiders to identify them.◊mn{parents}
 
         ◊note-pos{parents}
     }
     ◊li{Regulation
 
-        Having to calculate and declare taxes for ◊em{every} cryptocurrency purchase you make is a clear hindrance to adoption. Not to mention them being illegal in some countries.
+        Having to calculate and declare taxes for ◊em{every} cryptocurrency purchase you make is a clear hindrance to adoption. Not to mention cryptocurrencies are illegal in some countries.
     }
     ◊li{Development organization
 
-        A cryptocurrency is supposed to remove third parties, but that raises the question how should you upgrade a cryptocurrency? In practice the development has been dictated by a single development team, which gives them a great deal of power and is a source of centralization.◊mn{easiest-way}
+        A cryptocurrency is supposed to remove third parties, but that raises the question how should you upgrade a cryptocurrency? In practice, the development has been dictated by a single development team, which gives them a great deal of power and is a source of centralization.◊mn{easiest-way}
 
         ◊note-pos{easiest-way}
     }

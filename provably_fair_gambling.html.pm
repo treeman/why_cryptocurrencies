@@ -17,17 +17,17 @@
   }
 }
 
-I love the movie ◊link[oceans-11]{Ocean's Eleven (2011)}. I've a fascination for heists and how they in the movie win against the house in various gambles---by cheating of course. They hack the slot machines, they cheat in card games and they control the dice in craps like magicians. And they do it with style.
+I love the movie ◊link[oceans-11]{Ocean's Eleven (2011)}. I've a fascination for heists and how they in the movie win against the house in various gambles---by cheating, of course. They hack the slot machines, they cheat in card games and they control the dice in craps like magicians. And they do it with style.
 
-Cheating is possible in the real world as well. For example you could do a coin toss, but with a coin with heads on both sides. Or a coin that's heavier on one side, making the odds 55% and 45%. Don't let the numbers fool you---this is a huge difference compared to a 50/50 gamble.
+Cheating is possible in the real world, as well. For example you could do a coin toss, but with a coin with heads on both sides. Or a coin that's heavier on one side, making the odds 55% and 45%. Don't let the numbers fool you---this is a huge difference compared to a 50/50 gamble.
 
-But it's hard to verify that a gamble is fair. With a coin you ◊em{might} be able to feel it, and specialized anti-cheating machines might be able to measure dice, but you can never be sure. Gambling on the internet is a whole other can of worms, where you're often left trusting that the site isn't screwing you over.◊mn{poker-cheating}
+But it's hard to verify that a gamble is fair. With a coin, you ◊em{might} be able to feel it, and specialized anti-cheating machines might be able to measure dice, but you can never be sure. Gambling on the internet is a whole other can of worms, where you're often left trusting that the site isn't screwing you over.◊mn{poker-cheating}
 
 ◊ndef["poker-cheating"]{
     There was a big poker scandal several years ago where it was discovered that ◊link[poker-scandal]{Ultimate Bet and Absolute Poker cheated in online poker}. They were discovered by people who noticed certain users who had "abnormally high winning statistics". Turns out they were using a superuser account that could see all the cards.
 }
 
-With cryptocurrencies we can devise a scheme where gambling is provably fair. We can create a gambling site where users are sure the bets are fair---with mathematical certainty---and without a trusted third party facilitating the bets.
+With cryptocurrencies, we can devise a scheme where gambling is provably fair. We can create a gambling site where users are sure the bets are fair---with mathematical certainty---and without a trusted third party facilitating the bets.
 
 ◊note-pos[#:top -9]{poker-cheating}
 
@@ -64,7 +64,7 @@ The important thing about it is that you cannot predict what number comes next. 
 
 But if we want to flip a coin, and verify how it was flipped without looking at it, how could we do that? It's simple---just flip it again in ◊strong{exactly} the same way as you did before, and it should land exactly like it did before. (I didn't say it was easy!)
 
-With a pseudo-random generator that's what we can do. We give it a ◊em{seed}, which will produce a sequence that's unpredictable, except that when given the same seed it will always produce the same sequence. For example:
+With a pseudo-random generator, that's what we can do. We give it a ◊em{seed}, which will produce a sequence that's unpredictable, except that when given the same seed it will always produce the same sequence. For example:
 
 ◊code{
     seed 7:
@@ -103,7 +103,7 @@ Our gambling algorithm is simple. We'll concatenate the casino's seed with the p
 
 ◊(code-hl "python3" "scripts/gambling.py")
 
-Importantly the casino should give out the seed encoded with a ◊def[hash-functions]{cryptographic hash function}, otherwise the player can just pick the winning seed and there would be no gamble. When the player has sent their seed to the casino, the bet has been made, and the casino reveals their seed (which we can verify with the hashed value) and we know who won and who lost.
+Importantly, the casino should give out the seed encoded with a ◊def[hash-functions]{cryptographic hash function}, otherwise the player can just pick the winning seed and there would be no gamble. When the player has sent their seed to the casino, the bet has been made, and the casino reveals their seed (which we can verify with the hashed value) and we know who won and who lost.
 
 Concretely a game could play out like this:
 
@@ -159,7 +159,7 @@ Now the player would like to verify that they did in fact lose:
     }
 }
 
-It checks out, the casino won fair and square.
+It checks out; the casino won fair and square.
 
 ◊; https://bitcoinchaser.com/provably-fair-gambling/
 

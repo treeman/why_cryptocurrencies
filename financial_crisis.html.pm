@@ -16,7 +16,7 @@
   }
 }
 
-During 2007--2008 the world experienced the biggest financial crisis since the 1930s ◊link[great-depression]{Great Depression}, often referred to as the ◊link[2008-crisis]{2008 financial crisis}. What was so crazy about the crisis? And is there a relationship to ◊def[sound-money]{sound money}?◊mn{sound-money}
+During 2007--2008, the world experienced the biggest financial crisis since the 1930s ◊link[great-depression]{Great Depression}, often referred to as the ◊link[2008-crisis]{2008 financial crisis}. What was so crazy about the crisis? And is there a relationship to ◊def[sound-money]{sound money}?◊mn{sound-money}
 
 ◊ndef["sound-money"]{
     Sound money is not prone to sudden changes in long term purchasing power, and the value is determined by the free market.
@@ -134,7 +134,7 @@ The crisis began with the collapse of the bank Lehman Brothers, marking the star
     It bottomed out at -8.4% the fourth quarter of 2008.
 }
 
-Although the crisis originated in the U.S. the crisis spread globally.◊mn[#:top -8]{global-buys} For example in only the first quarter of 2009 the GDP rate was -4.7% ◊link[germany-gdp]{in Germany}, -4.8% ◊link[japan-gdp]{in Japan} and -3% ◊link[euro-gdp]{in the Euro area}. There are many details to dig into here, such as the unemployment rate or stock market valuations, but I'm content with just noting that the crisis was indeed a global disaster.
+Although the crisis originated in the U.S., the crisis spread globally.◊mn[#:top -8]{global-buys} For example, in only the first quarter of 2009 the GDP rate was -4.7% ◊link[germany-gdp]{in Germany}, -4.8% ◊link[japan-gdp]{in Japan} and -3% ◊link[euro-gdp]{in the Euro area}. There are many details to dig into here, such as the unemployment rate or stock market valuations, but I'm content with just noting that the crisis was indeed a global disaster.
 
 ◊(define us-gdp
    (x-ref
@@ -176,10 +176,10 @@ The bailouts started when the government guaranteed assets of the investment ban
 While the investment bank Bear Stearns was saved, the investment bank Lehman Brothers was allowed to go bankrupt. At first the Treasury and Federal Reserve claimed they allowed Lehman to fail to send the signal that recklessly managed Wall Street firms did not all come with government guarantees. But when they saw the fatal effects the bank's collapse had on the economy they changed their tune and claimed they lacked the legal authority to do so.
 ◊(cite-book the-big-short-book)
 
-Then followed massive new efforts to bailout banks and other private companies. For example the Federal Reserve, for the first time in history, took control over the private company American Investment Group (AIG) while giving them a $182 billion loan. The laws allowing them to do this, but not bailout Lehman Brothers, must be very interesting.  (Lehman Brothers was an ◊em{investment} bank, which isn't a real bank. Other investment banks later converted to "commercial banks" in order to receive bailouts.) ◊mn[#:top -4]{fed-political}
+Then followed massive new efforts to bailout banks and other private companies. The Federal Reserve, for the first time in history, took control over the private company American Investment Group (AIG) while giving them a $182 billion loan. The laws allowing them to do this, but not bailout Lehman Brothers, must be very interesting.  (Lehman Brothers was an ◊em{investment} bank, which isn't a real bank. Other investment banks later converted to "commercial banks" in order to receive bailouts.) ◊mn[#:top -4]{fed-political}
 ◊(cite-book after-the-music-stopped-book)
 
-In September 2008 U.S. Treasury Secretary Henry Paulson persuaded the U.S. Congress for $700 billion to buy subprime mortgage assets from banks.◊sn[#:top -11]{tarp} But once handed the money they abandoned the promised strategy and instead essentially gave away billions of dollars to Citigroup, Morgan Stanley, Goldman Sachs and others. For instance the $13 billion AIG owed to Goldman Sachs was paid off in full by the U.S. government.
+In September 2008, U.S. Treasury Secretary Henry Paulson persuaded the U.S. Congress for $700 billion to buy subprime mortgage assets from banks.◊sn[#:top -11]{tarp} Once handed the money they abandoned the promised strategy and instead essentially gave away billions of dollars to Citigroup, Morgan Stanley, Goldman Sachs and others. For instance, the $13 billion AIG owed to Goldman Sachs was paid off in full by the U.S. government.
 ◊(cite-book the-big-short-book)
 
 ◊ndef["tarp"]{
@@ -188,7 +188,7 @@ In September 2008 U.S. Treasury Secretary Henry Paulson persuaded the U.S. Congr
 
 The government guaranteed $306 billion of Citigroup's assets. They didn't ask for a piece of the action, change in management or anything of importance. The $306 billion guarantee---nearly 2% of U.S. GDP, and roughly the combined budgets of the departments of Agriculture, Education, Energy, Homeland Security, Housing and Urban Development and Transportation---was presented undisguised, as a gift. No explanation was given, just that the action was taking in response to Citigroup's "declining stock price."◊mn{where-money?}
 
-When it was clear the money wasn't enough the Federal Reserve started buying bad subprime mortgages directly from the banks. By early 2009 the tax payers were stuck with more than a trillion dollars of risky assets and, if things went sideways, would end up eating a huge loss while the banks were in the clear.
+When it was clear the money wasn't enough, the Federal Reserve started buying bad subprime mortgages directly from the banks. By early 2009 the tax payers were stuck with more than a trillion dollars of risky assets and, if things went sideways, would end up eating a huge loss while the banks were in the clear.
 
 ◊ndef["where-money?"]{
     There are many important problems a nation need to handle; health care, poverty, education, infrastructure, security and immigration; but with too little money to solve them. Yet there's almost infinity money for the banks. I find it fascinating and incredibly frustrating.
@@ -198,7 +198,7 @@ When it was clear the money wasn't enough the Federal Reserve started buying bad
     The Federal Reserve is supposed to be completely politically independent. But with their actions during the crisis, can they still claim to be independent?
 }
 
-For the taxpayers it's like betting all on red on a roulette wheel---you risk a very big loss. In this case American taxpayers got a good outcome, they even ◊link[money-tarp]{made money} on the bailouts, but the Irish taxpayers for example ◊link[irish-bailout]{weren't so lucky}.◊mn{managing-risk}
+For the taxpayers, it's like betting all on red on a roulette wheel---you risk a very big loss. In this case American taxpayers got a good outcome, they even ◊link[money-tarp]{made money} on the bailouts, but the Irish taxpayers for example ◊link[irish-bailout]{weren't so lucky}.◊mn{managing-risk}
 
 
 ◊ndef["managing-risk"]{
@@ -219,7 +219,7 @@ For the taxpayers it's like betting all on red on a roulette wheel---you risk a 
 
 ◊subhead{A message from Satoshi}
 
-After having released the ◊link[bitcoin_whitepaper]{Bitcoin whitepaper} in 2008 Satoshi mined the first bitcoins and launched the Bitcoin network January 2009, just after the financial crisis. Little is known of the ideals of Bitcoin's creator, but Satoshi did ◊link[embedding-data]{leave a message} in the first ever Bitcoin block:
+After having released the ◊link[bitcoin_whitepaper]{Bitcoin whitepaper} in 2008, Satoshi mined the first bitcoins and launched the Bitcoin network January 2009, just after the financial crisis. Little is known of the ideals of Bitcoin's creator, but Satoshi did ◊link[embedding-data]{leave a message} in the first ever Bitcoin block:
 
 ◊qt[#:author "Satoshi"
     #:src "Coinbase parameter for block 0"
@@ -263,14 +263,14 @@ Which you might see as a sign that Satoshi wasn't a fan of bailing out the banks
     "https://www.imdb.com/title/tt4654844/"
     "IMDb: Bitcoin the end of money as we know it (2015)"))
 
-After the dust settled it's easy to think the guilty got punished---after all the U.S. loves to dish out harsh punishments---and the system was reworked to prevent a similar crisis from ever happening again. But reality is often disappointing.
+After the dust, settled it's easy to think the guilty got punished---after all the U.S. loves to dish out harsh punishments---and the system was reworked to prevent a similar crisis from ever happening again. The reality is often disappointing.
 
 The bankers weren't punished for their unregulated gambling or outright fraud. In fact ◊link[us-banker-jail]{only a single U.S. banker went to jail}.◊mn[#:top -8]{iceland-jail} Instead they got bonuses and in 2010 the banks were enjoying massive profits---while regular people were still struggling without jobs and houses.
 ◊(cite-book the-big-short-book)
 
 Remember the $182 billion AIG bailout? Shortly after accepting the bailout they paid out ◊strong{$165 million in bonuses} to their executives, those responsible for ◊link[aig-record-loss]{the biggest corporate loss in history}. As ◊link[obama-aig-bonuses]{president Obama asks}: “how do they justify this outrage to the taxpayers who are keeping the company afloat?”. One can't help but wonder...
 
-Then there's the case of ◊link[hubler]{Howie Hubler}, which to me exemplifies the mindbogglingly stupid bonuses oh so well. He was responsible for the biggest loss of a single trade in history---a staggering ◊em{$9 billion}---yet when asked to resign (a friendly way to get fired) he received $10 million.◊mn{financial-independent}
+Then, there's the case of ◊link[hubler]{Howie Hubler}, which to me exemplifies the mindbogglingly stupid bonuses oh so well. He was responsible for the biggest loss of a single trade in history---a staggering ◊em{$9 billion}---yet when asked to resign (a friendly way to get fired) he received $10 million.◊mn{financial-independent}
 
 ◊(define hubler
    (x-ref
@@ -421,7 +421,7 @@ But the incentives would be different. Banks can still use ◊def[legal_counterf
 Therefore the unhealthy "heads I win, tails I get bailed-out" incentives would return to the normal "heads I win, tails I lose" incentives we see in any healthy gamble. This seemingly small but important change would force banks to be more careful with their risk-taking, and if they overstep their bounds they will fail. This might have bad effects in the short-term, but would lead to a more robust and healthy risk management in the long-term. The virus infection would be cured, but the fever might worsen temporarily.
 
 ◊ndef["print-digital"]{
-    Of course they don't actually print physical bills worth billions of dollars, they just move digital numbers in some spreadsheets. The effect is the same.
+    Of course, they don't actually print physical bills worth billions of dollars, they just move digital numbers in some spreadsheets. The effect is the same.
 }
 ◊note-pos[#:top -20]{print-digital}
 

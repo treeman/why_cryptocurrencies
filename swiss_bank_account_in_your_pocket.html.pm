@@ -48,7 +48,7 @@ This is how ◊link[swiss-bank-account]{Swiss bank accounts} are usually portray
 
 Recently Switzerland has ◊link[swiss-exchange]{begun sharing bank details} of foreign account holders automatically with other countries. At the time of writing they share data with ◊link[swiss-more-countries]{more than 60 countries}, and more will join. I think it's fair to say that Swiss bank accounts don't live up to the private bank account dream.
 
-Cryptocurrencies on the other hand can fulfill the dream.◊mn{private?}
+Cryptocurrencies can fulfill the dream.◊mn{private?}
 
 ◊ndef["private?"]{
     How private are cryptocurrencies really? Some are more private than others, see the ◊link[privacy-challenge]{discussion of the privacy challenge} for more information.
@@ -85,7 +85,7 @@ The ◊link[panama-papers]{Panama Papers} was a gigantic leak that detailed the 
 
 There are other reports, such as the ◊link[offshore-leaks]{Offshore Leaks}, the ◊link[bahamas-leaks]{Bahamas Leaks} and the ◊link[paradise-papers]{Paradise Papers}, which all say that the use of shell companies and offshore bank accounts are used on a massive scale for tax fraud and money laundering. (In practice they're pretty close to the mythical Swiss bank account.)
 
-But they're not just for avoiding taxes. Look at celebrities for instance, they have tabloids dedicated to blow up any minor detail of their life into this huge scandal. It makes sense for them to try to keep their finances hidden, which is exactly what a spokesman for Emma Watson, who got named in the Panama Papers, claimed:
+They're not just for avoiding taxes. Look at celebrities for instance, they have tabloids dedicated to blow up any minor detail of their life into this huge scandal. It makes sense for them to try to keep their finances hidden, which is exactly what a spokesman for Emma Watson, who got named in the Panama Papers, claimed:
 
 ◊qt[#:url emma-watson
     #:src "Spokesman for Emma Watson"]{
@@ -158,7 +158,7 @@ While tax evasion through offshore banking is problematic, it pales to the probl
      "https://www.youtube.com/watch?v=uBZR1-onmAo"
      "YouTube (2016) Trump Brags About Not Paying Taxes: \"That Makes Me Smart\" (30 sec)"))
 
-No Mr. President, that makes you rich. You see, this kind of tax evasion is only available for the super rich.◊sn{crap-smart-rich} And it's not the top 1% we're talking about, more like the top 0.001%. We're talking about people who can afford private chefs and travel the world in private jets and yachts. (Alright, maybe it's not ◊em{only} for the super rich, you might be able to do it even if you're only very rich, but you have to have a very large amount of money to make tax evasion in this way feasible.)
+No, Mr. President, that makes you rich. You see, this kind of tax evasion is only available for the super rich.◊sn{crap-smart-rich} And it's not the top 1% we're talking about, more like the top 0.001%. We're talking about people who can afford private chefs and travel the world in private jets and yachts. (Alright, maybe it's not ◊em{only} for the super rich, you might be able to do it even if you're only very rich, but you have to have a very large amount of money to make tax evasion in this way feasible.)
 
 ◊ndef["crap-smart-rich"]{
     And please don't gimme that crap about how all rich people are smart. It's just what rich people tell themselves, to make them feel smart. Most were ◊link[self-made-myth]{born with a golden spoon} in their mouth, and even the self-made super rich had a ton of luck and help.
@@ -181,7 +181,7 @@ This is why you don't see the names of normal people in the Panama Papers---no m
     It's funny that you can find Trump's name in the Panama Papers 3,450 times, while ◊link[putin-proxies]{Putin uses proxies} to try and hide his involvement. I wonder, does that make Putin smarter than Trump?
 }
 
-Here I use the term ◊em{tax evasion} instead ◊em{tax fraud} because, believe it or not, it's often legal! If you're rich enough you can hire tax experts who'll find the loopholes in the tax laws so you can ◊link[tax-evasion-and-inequality]{avoid the taxes normal people have to pay}.  And if you do happen to step on the wrong side of the law, you can hire the very best (and very expensive) lawyers to keep you out of prison. But you shouldn't worry about that too much, since the rich and powerful also lobby the law makers to make the laws beneficial for them and to keep the ◊link[irs-gutted]{IRS starved for funds}.◊sn{companies-too}
+Here, I use the term ◊em{tax evasion} instead ◊em{tax fraud} because, believe it or not, it's often legal! If you're rich enough you can hire tax experts who'll find the loopholes in the tax laws so you can ◊link[tax-evasion-and-inequality]{avoid the taxes normal people have to pay}.  And if you do happen to step on the wrong side of the law, you can hire the very best (and very expensive) lawyers to keep you out of prison. But you shouldn't worry about that too much, since the rich and powerful also lobby the law makers to make the laws beneficial for them and to keep the ◊link[irs-gutted]{IRS starved for funds}.◊sn{companies-too}
 
 ◊ndef["companies-too"]{
     It's not just rich individuals that avoid taxes, it's big companies too. In 2018, 60 of the largest companies in the USA ◊link[no-corp-taxes]{paid no taxes} on pre-tax income of 79 billion dollars.
