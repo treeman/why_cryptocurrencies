@@ -43,19 +43,19 @@
     }
 
     ◊ex["Focused on utility" "utility"]{
-      The focus is on concrete use-cases instead of the more seductive speculative approach.
+      The focus is on concrete use-cases, instead of the more seductive speculative approach.
     }
 
     ◊ex["It's bigger than Bitcoin" "general"]{
-      There are many more cryptocurrencies other than Bitcoin. The focus is on the general cryptocurrency concept and it's potential instead of on a single implementation. 
+      There are many more cryptocurrencies other than Bitcoin. The focus is on the general cryptocurrency concept and it's potential, instead of on a single implementation. 
     }
 
     ◊ex["Visits a wide variety of topics" "variety"]{
-      This isn't only about cryptocurrencies. It's also about money, censorship, our financial system and the dark secrets that Chelsea Manning and Edward Snowden revealed.
+      This isn't only about cryptocurrencies. It's also about money, censorship, our financial system, and the dark secrets that Chelsea Manning and Edward Snowden revealed.
     }
 
     ◊ex["The order doesn't matter" "order"]{
-      Chapters are self-contained so you can jump around and read the sections you're interested in.
+      Chapters are self-contained, so you can jump around and read the sections you're interested in.
     }
   }
 }
