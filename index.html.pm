@@ -282,4 +282,4 @@
 
 
 ◊(define rel-buy "#print")
-◊(define read-now "#")
+◊(define read-now "/toc.html")

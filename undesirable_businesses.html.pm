@@ -5,6 +5,7 @@
 ◊(define-meta published "2019-06-12T00:00:00+01:00")
 ◊(define-meta updated "2020-12-30T14:21:44+01:00")
 ◊(define-meta uuid "7f619868-39ff-43db-92b4-af452ee4c8ed")
+◊(define-meta template "chapter.html")
 
 ◊(clear-sidenotes)
 

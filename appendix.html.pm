@@ -6,4 +6,5 @@
 ◊(define-meta no-section-chapters-header #t)
 ◊(define-meta extra-article-class "appendix")
 ◊(define-meta skip-feed #t)
+◊(define-meta template "chapter.html")
 

@@ -58,7 +58,7 @@
     <body>
       <article class="◊|article-class|">
         <nav class="where">
-          <a href="/" tilte="Table of contents" class="home">Why Cryptocurrencies?</a>
+          <a href="/toc.html" tilte="Table of contents" class="home">Why Cryptocurrencies?</a>
           ◊when/splice[parent-page]{
             <span class="divider">/</span>
             ◊(ref parent-page parent-title parent-title)
@@ -123,6 +123,10 @@
               ◊(ref next-page next-title (string-append next-title " →"))
             </span>
           }
+        </nav>
+
+        <nav class="buy">
+          <a href="/" title="Buy the print or ebook">Buy the print or eBook</a>
         </nav>
 
         <div class="follow-wrapper">
