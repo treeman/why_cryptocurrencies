@@ -16,7 +16,7 @@
   }
 }
 
-In this chapter we'll see how governments around the world sometimes directly or indirectly take your money, and how cryptocurrencies might help you avoid it.
+In this chapter, we'll see how governments around the world sometimes directly or indirectly take your money, and how cryptocurrencies might help you avoid it.
 
 No, this chapter is ◊strong{not} about tax evasion---do your taxes people.
 

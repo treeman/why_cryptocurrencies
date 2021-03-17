@@ -221,7 +221,7 @@ The work is to find a solution to a computing problem.◊mn{asics} The problem i
 
 A solution is proof that you've done the work---it's proof that you've expended energy. It's like a lottery and you can get lucky, but in the long run it balances out.  Since you require a significant investment to find a block, this can be used as sybil resistance; you can't just create thousands of fake identities for free.
 
-It's important to note is that the system is permissionless so there's nobody to prevent you from becoming a miner, but you also don't have to be. The blockchain is open for anyone to read and validate, it's only writing that's exclusive to miners.
+It's important to note that the system is permissionless so there's nobody to prevent you from becoming a miner, but you also don't have to be. The blockchain is open for anyone to read and validate, it's only writing that's exclusive to miners.
 
 ◊ndef["asics"]{
     In Bitcoin, specialized hardware, called ◊link[ASICs]{ASICs}, are used which are many magnitudes faster than regular computers at solving POW problems.
@@ -304,7 +304,7 @@ The blockchain is duplicated, stored, and maintained by many different people; y
 }
 
 ◊ndef["blockreward"]{
-    As I'm writing this the current ◊def{block reward} for Bitcoin is 12.5 BTC, or around $50,000. With one block expected every 10 min that's about $7,200,000 per day. Bitcoin mining is big business.
+    As I'm writing this the current ◊def{block reward} for Bitcoin is 6.25 BTC, or around $250,000. With one block expected every 10 min that's about $36,000,000 per day. Bitcoin mining is big business.
 }
 
 ◊ndef["outputs"]{
@@ -509,7 +509,7 @@ A 51% can be detected and there can be severe negative consequences:
 
 Bitcoin miners are rewarded in bitcoin and they also can't be spent until after 100 blocks---roughly 16 hours. Executing a 51% attack that crashes the price would directly affect the rewards. If the community goes for the nuclear option and change POW, the massive initial investment into mining equipment might be lost.
 
-These risks needs to weighed against what profits a 51% attack could generate. Maybe exchanges could get defrauded for $50 million (roughly a 5% return on investment)? A 51% miner would make that back in about two weeks---risk-free.◊mn{btg2}
+These risks needs to weighed against what profits a 51% attack could generate. Maybe exchanges could get defrauded for $100 million (roughly a 5% return on investment)? A 51% miner would make that back in about one week---risk-free.◊mn{btg2}
 
 The economic incentives are so strong that it might be rational even for a 51% for-profit miner to be honest. In fact Bitcoin has ◊link[ghash]{had pools with 51% before} without incidents.
 

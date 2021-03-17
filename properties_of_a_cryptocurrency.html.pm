@@ -31,7 +31,7 @@ These are the most important properties of cryptocurrencies as I see it:
 
 
 
-They highlight the difference between cryptocurrencies and other payment systems and are ultimately they're what makes cryptocurrencies useful.
+They highlight the difference between cryptocurrencies and other payment systems and are ultimately what makes cryptocurrencies useful.
 
 
 ◊subhead{No more third parties}

@@ -52,7 +52,7 @@ First, let's look at some interesting historical examples of items that have bee
            #:date "1000 - 1400 A.D."
            #:img "images/rai_stones.png"
            #:alt "A huge rai stone"]{
-        ◊link[rai-stones]{Rai stones} is a form of stone money on the Yap Islands. They can be up to 4 m in diameter but most are much smaller, down to around 3.5 cm in diameter. Instead of moving the big ones,, you simply tell people you've transferred them, like a social ledger. ◊link[rai-stones-pictures]{Here are some great pictures}.
+        ◊link[rai-stones]{Rai stones} is a form of stone money on the Yap Islands. They can be up to 4 m in diameter but most are much smaller, down to around 3.5 cm in diameter. Instead of moving the big ones, you simply tell people you've transferred them, like a social ledger. ◊link[rai-stones-pictures]{Here are some great pictures}.
     }
     ◊money["A 20kg copper coin"
            #:date "1644"
@@ -98,7 +98,7 @@ First, let's look at some interesting historical examples of items that have bee
            #:date "2017"
            #:img "images/marbles.png"
            #:alt "Two people playing with marbles."]{
-        Kids on the schoolyard often come up with interesting forms of money. For example, collectible card games or game components. Another example is  marbles used in a Swedish game where you win your opponents marbles. (And those with many marbles had higher status in class.)◊mn{pokemon}
+        Kids on the school-yard often come up with interesting forms of money. For example, collectible card games or game components. Another example is  marbles used in a Swedish game where you win your opponents marbles. (And those with many marbles had higher status in class.)◊mn{pokemon}
 
         ◊note-pos[#:bottom -20]{pokemon}
     }
@@ -253,7 +253,7 @@ It might sound too simplistic or like a tautology. But what it means is there's 
 
 For instance, medicine can be extremely valuable for those who need it, but could have little value to others. So if you have the medicine, but don't need it, you'll gladly sell. But someone who needs it would be reluctant to sell, unless it's for a very high price.
 
-What does it mean for money? That ◊strong{the value of money is emergent from a group of individuals}. If, for example, everyone in your social group declares that tomorrow they'll use Pokémon trading cards as money, then the trading cards suddenly become very valuable to you. The more people that use a form of money, the better it works and the more value it will have.
+What does it mean for money? That ◊strong{the value of money is emergent from a group of individuals}. If, for example, everyone in your social group declare that tomorrow they'll use Pokémon trading cards as money, then the trading cards suddenly become very valuable to you. The more people that use a form of money, the better it works and the more value it will have.
 
 States don't give money value, but they can contribute. For example, declaring fiat legal tender makes more people accept it, which in turn increases its value.
 
@@ -428,7 +428,7 @@ The large ◊strong{Rai stones} and the ◊strong{20kg copper coin} are great ex
     Both Rai stones and the Swedish copper coins have smaller versions as well, making them more practical.
 }
 
-◊strong{Cigarettes}, ◊strong{marbles}, ◊strong{stamps} and other types of commodities are decent forms of money---on a small scale. They have some durability issues (wear and tear) and they're not perfectly uniform. Most importantly, they can be mass produced which prevents their use on a larger scale.◊sn{marble-coin}
+◊strong{Cigarettes}, ◊strong{marbles}, ◊strong{stamps} and other types of commodities are decent forms of money---on a small scale. They have some durability issues (wear and tear) and they're not perfectly uniform. But most importantly, they can be mass produced which prevents their use on a larger scale.◊sn{marble-coin}
 
 ◊ndef["marble-coin"]{
     Let's run a thought experiment: what if we wanted to use marbles as money on a global scale?

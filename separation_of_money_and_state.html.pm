@@ -132,7 +132,7 @@ It's impossible to predict the future. For example the iPhone was released in 20
 
 Nobody could've predicted this explosive technological development, so how can we predict where cryptocurrencies will take us? I don't think they'll completely revolutionize the world in a decade, but it's impossible to say what will happen 50 or 100 years from now.
 
-Will countries drop fiat and instead adopt cryptocurrencies? Would this force them to make more responsible decisions and to steer clear of moral hazards, which we saw during ◊link[financial_crisis]{the last financial crisis}? Or would they fail spectacularly, issuing a new ◊link[great-depression]{Great Depression}?
+Will countries drop fiat and instead adopt cryptocurrencies? Would this force them to make more responsible decisions and to steer clear of moral hazard, which we saw during ◊link[financial_crisis]{the last financial crisis}? Or would they fail spectacularly, issuing a new ◊link[great-depression]{Great Depression}?
 
 It's possible cryptocurrencies will fail, but instead we adopt digital currencies issued and controlled by multinational corporations, truly fulfilling the cyberpunk dystopian nightmare that would make ◊link[cashless_dystopia]{the cashless dystopia} seem like a dream?
 

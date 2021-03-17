@@ -263,7 +263,7 @@ Which you might see as a sign that Satoshi wasn't a fan of bailing out the banks
     "https://www.imdb.com/title/tt4654844/"
     "IMDb: Bitcoin the end of money as we know it (2015)"))
 
-After the dust, settled it's easy to think the guilty got punished---after all the U.S. loves to dish out harsh punishments---and the system was reworked to prevent a similar crisis from ever happening again. The reality is often disappointing.
+After the dust settled, it's easy to think the guilty got punished---after all the U.S. loves to dish out harsh punishments---and the system was reworked to prevent a similar crisis from ever happening again. The reality is often disappointing.
 
 The bankers weren't punished for their unregulated gambling or outright fraud. In fact ◊link[us-banker-jail]{only a single U.S. banker went to jail}.◊mn[#:top -8]{iceland-jail} Instead they got bonuses and in 2010 the banks were enjoying massive profits---while regular people were still struggling without jobs and houses.
 ◊(cite-book the-big-short-book)
@@ -416,7 +416,7 @@ With ◊def[sound-money]{sound money} nobody can manipulate the money supply. Fo
 
 Unfortunately, probably not. The housing and bond bubble might still have happened as the banks can still create mortgage backed securities, CDOs and other complex derivatives. Sound money cannot prevent anyone from creating and selling junk.
 
-But the incentives would be different. Banks can still use ◊def[legal_counterfeiting]{fractional banking} (create IOUs and inflate the money supply) but if they fail there's nobody to print money for them to bail them out. The bailouts in 2008--2009 were only possible because the Federal Reserve has the ability to print as much money as they want.◊sn{print-digital} There's no upper limit to the size of the bailout---they can always conjure enough. Not so with sound money.
+But the incentives would be different. Banks can still use ◊def[legal_counterfeiting]{fractional banking} (create IOUs and inflate the money supply), but if they fail there's nobody to print money for them to bail them out. The bailouts in 2008--2009 were only possible because the Federal Reserve has the ability to print as much money as they want.◊sn{print-digital} There's no upper limit to the size of the bailout---they can always conjure enough. Not so with sound money.
 
 Therefore the unhealthy "heads I win, tails I get bailed-out" incentives would return to the normal "heads I win, tails I lose" incentives we see in any healthy gamble. This seemingly small but important change would force banks to be more careful with their risk-taking, and if they overstep their bounds they will fail. This might have bad effects in the short-term, but would lead to a more robust and healthy risk management in the long-term. The virus infection would be cured, but the fever might worsen temporarily.
 
