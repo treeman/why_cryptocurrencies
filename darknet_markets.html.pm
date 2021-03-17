@@ -3,8 +3,9 @@
 ◊(define-meta title "Darknet markets")
 ◊(define-meta subtitle "Global and digital markets for illegal goods")
 ◊(define-meta published "2019-12-15T00:00:00+01:00")
-◊(define-meta updated "2020-10-09T19:51:08+02:00")
+◊(define-meta updated "2021-03-10T19:04:15+01:00")
 ◊(define-meta uuid "4cf3ad81-1c7f-414f-a582-4b2897d27121")
+◊(define-meta template "chapter.html")
 
 ◊(clear-sidenotes)
 
@@ -14,7 +15,7 @@
   }
 }
 
-There's one thing that cryptocurrency proponents and skeptics can agree with: cryptocurrencies are excellent for illegal purposes. And is there a better example than darknet markets---websites where you can buy illegal goods and pay with cryptocurrencies?
+There's one thing that cryptocurrency proponents and skeptics can agree on: cryptocurrencies are excellent for illegal purposes. And is there a better example than darknet markets---websites where you can buy illegal goods and pay with cryptocurrencies?
 
 Before cryptocurrencies, such sites would have trouble staying in business because payment processors would shut them down quickly. But nobody can block cryptocurrency transactions, and in 2012 the first darknet market "Silk Road" was created using Bitcoin. Since then there's been a ◊link[darknet-markets-history]{bunch of different darknet markets}, many with much larger volume than Silk Road.
 
@@ -28,7 +29,7 @@ I know I wrote in ◊link[about-the-book]{an early chapter} that this book would
    (x-ref
      "2019-12-15"
      "https://weeklyglobalresearch.wordpress.com/2018/05/12/darknet-markets-and-the-shadow-economy/"
-     "Darknet Markets and the Shadow Economy"))
+     "Lee Banfield (2018) Darknet Markets and the Shadow Economy"))
 
 
 ◊subhead{Legality isn't morality}
@@ -46,7 +47,7 @@ Here's a table to illustrate the problem:
     ◊tr{◊tds{Immoral}   ◊im-le{Mass surveillance◊|sbr|Civil asset forfeiture}   ◊bad{Slavery◊|sbr|Murder}}
 }
 
-It's actually quite hard to classify things as legal or illegal and moral or immoral; they both change depending on country, the time period and who you ask. For instance most would agree that slavery is immoral and should be illegal, but it was legal and viewed as normal for thousands of years. Similarly today in the western world we take free speech for granted, but that's not the case in all countries.
+It's actually quite hard to classify things as legal or illegal and moral or immoral; they both change depending on the country, the time period and who you ask. For instance most would agree that slavery is immoral and should be illegal, but it was legal and viewed as normal for thousands of years. Similarly today in the western world we take free speech for granted, but that's not the case in all countries.
 
 Mass surveillance, which we covered in the chapter ◊link[private_money]{Private money}, is immoral yet legal.◊mn{surveillance} Civil asset forfeiture, which allows the police to outright take your stuff, is another example of an immoral legal practice. (We'll explore civil asset forfeiture ◊link[protection_against_government_confiscation]{in a future chapter}.)
 
@@ -81,7 +82,7 @@ The issue of "right or wrong" isn't so easy to answer, and we cannot just rely o
 Black markets have existed as long as taxes have been collected, and it's not just for hardcore criminals. How many people do you know who've paid a craftsman off the book? Maybe paid a friend to paint the house, or paid a mechanic friend to fix the car? If it was paid in cash, and never officially registered the work, then they've engaged in a black market trade.◊mn{geothermal}
 
 ◊ndef["geothermal"]{
-    Warming houses with ◊link[geothermal]{geothermal heating} is popular where we live. It works by drilling a large hole in the ground and transport heat from the ground up into the house, and is a cost-effective way to heat houses. Many people drill the holes off the books, which can save you a lot of money.
+    Warming houses with ◊link[geothermal]{geothermal heating} is popular where we live. It works by drilling a large hole in the ground and transporting heat from the ground up into the house, and is a cost-effective way to heat houses. Many people drill the holes off the books, which can save you a lot of money.
 
     We were quite tempted, but in the end we opted not to.
 }
@@ -93,7 +94,7 @@ Black markets have existed as long as taxes have been collected, and it's not ju
      "https://en.wikipedia.org/wiki/Geothermal_heating"
      "Wikipedia: Geothermal heating"))
 
-In countries with corruption or dysfunctional governments black markets are huge. For example in the Soviet Union many people relied on black markets to get their food supply when the market economy failed them. Or in Greece during the economic breakdown in the 2010s, the black market was ◊link[greece-black-markets]{estimated at 20 to 25 percent of the GDP}.
+In countries with corruption or dysfunctional governments, black markets are huge. For example in the Soviet Union many people relied on black markets to get their food supply when the market economy failed them. Or in Greece during the economic breakdown in the 2010s, the black market was ◊link[greece-black-markets]{estimated at 20 to 25 percent of the GDP}.
 
 Black markets aren't inherently evil and sometimes they're even necessary for our survival. Instead they deal in both good and bad things, each of which should be considered on a case-by-case basis.
 
@@ -101,17 +102,17 @@ Black markets aren't inherently evil and sometimes they're even necessary for ou
    (x-ref
      "2019-12-15"
      "https://www.investopedia.com/terms/b/blackmarket.asp"
-     "Black Market"))
+     "Will Kenton: Black Market"))
 ◊(define greece-black-markets
    (x-ref
      "2019-12-15"
      "https://www.nytimes.com/2017/02/18/world/europe/greece-bailout-black-market.html"
-     "Greeks Turn to the Black Market as Another Bailout Showdown Looms"))
+     "Liz Alderman (2017) Greeks Turn to the Black Market as Another Bailout Showdown Looms"))
 
 
 ◊subhead{What can you buy on a darknet market?}
 
-Contrary to popular belief you cannot buy ◊em{everything} on a darknet market. In theory it's possible, but in practice darknet markets operate with their own morality.
+Contrary to popular belief, you cannot buy ◊em{everything} on a darknet market. In theory it's possible, but in practice darknet markets operate with their own morality.
 
 For instance ◊link[darknet-murders]{it's very difficult, if not impossible, to hire a hitman} on a darknet market. This is a myth made popular by the false accusations against ◊link[freeross]{Ross Ulbricht}, the creator of the first darknet market Silk Road. The rumor was manufactured by corrupt federal agents (who got sentenced), yet their "evidence" was used by prosecutors and news media to make an example out of Ross.◊mn{theme-example}
 
@@ -127,7 +128,7 @@ So if none of those things are available, what can you buy on a darknet market? 
    (x-ref
      "2019-12-15"
      "https://www.wired.co.uk/article/kill-list-dark-web-hitmen"
-     "The unbelievable tale of a fake hitman, a kill list, a darknet vigilante... and a murder"))
+     "Gian Volpicelli (2018) The unbelievable tale of a fake hitman, a kill list, a darknet vigilante... and a murder"))
 ◊(define freeross
    (x-ref
      "2019-12-15"
@@ -137,7 +138,7 @@ So if none of those things are available, what can you buy on a darknet market? 
    (x-ref
      "2019-12-15"
      "https://www.theguardian.com/society/2018/dec/01/dark-web-dealers-voluntary-ban-deadly-fentanyl"
-     "Dark web dealers voluntarily ban deadly fentanyl"))
+     "Mark Townsend (2018) Dark web dealers voluntarily ban deadly fentanyl"))
 
 
 ◊subhead{A darknet story}
@@ -179,7 +180,7 @@ The following example, based on a real-life story I read a few years ago, illust
    (x-ref
      "2019-12-15"
      "https://edition.cnn.com/2018/05/11/health/most-expensive-prescription-drugs/index.html"
-     "The 5 most expensive drugs in the United States (2018)"))
+     "Jen Christensen (2018) The 5 most expensive drugs in the United States"))
 
 While the story is made up, the situation is real. Medicine in the U.S. can be ◊link[expensive-cancer-drugs]{◊strong{extremely expensive}}, and the cost isn't something all families can bear.◊mn{insurance} The same medicine that will ruin you financially is often available for a fraction of the cost from darknet markets.
 
@@ -195,13 +196,13 @@ Yet we must always remember the dangers of buying medicine from darknet markets.
 
 Still, was it wrong to do what Tom did and buy the medicine from a darknet market? If it might save the love of your life, the mother of your child, would you do it? What if it was easy and the risk of getting caught was very small?
 
-I'd imagine most would say yes, they would do anything to save her. While there are bad stuff on darknet markets---most of which are illegal---in this case cryptocurrencies and darknet markets helped save Tom's family, and I see that as a good thing.
+I'd imagine most would say yes, they would do anything to save her. While there is bad stuff on darknet markets---most of which is illegal---in this case cryptocurrencies and darknet markets helped save Tom's family, and I see that as a good thing.
 
 ◊(define insurance-screwed
    (x-ref
      "2019-12-15"
      "https://health.usnews.com/health-care/for-better/articles/2017-07-13/5-ways-insurance-companies-meddle-in-your-health-care"
-     "5 Ways Insurance Companies Meddle in Your Health Care"))
+     "Seth D. Ginsberg (2017) 5 Ways Insurance Companies Meddle in Your Health Care"))
 
 
 ◊; https://weeklyglobalresearch.wordpress.com/2018/05/12/darknet-markets-and-the-shadow-economy/

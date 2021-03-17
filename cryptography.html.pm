@@ -3,8 +3,9 @@
 ◊(define-meta title "A hitchhiker's guide to cryptography")
 ◊(define-meta subtitle "An introduction to cryptography")
 ◊(define-meta published "2020-02-27T13:33:40+01:00")
-◊(define-meta updated "2020-10-09T19:51:14+02:00")
+◊(define-meta updated "2021-03-10T19:03:23+01:00")
 ◊(define-meta uuid "6a8759d6-2e0c-4224-b0b8-61009c5484d0")
+◊(define-meta template "chapter.html")
 
 ◊(clear-sidenotes)
 
@@ -19,7 +20,7 @@
 This chapter serves as an introduction to the cryptographic terms and constructs mentioned in the book. The aim is to give you an idea of what they are and how they might be used in a cryptocurrency context. I won't go into low-level details of how they work, so you don't need to know any mathematics or programming to follow along. If this interests you, I hope this introduction will be helpful as a starting point when researching the topics on your own.◊mn{history}
 
 ◊ndef["history"]{
-    If the history of cryptography interests you I can also recommend the book ◊(book-link code-breakers-book) by David Kahn. You can enjoy it even without much math knowledge.
+    If the history of cryptography interests you, I can also recommend the book ◊(book-link code-breakers-book) by David Kahn. You can enjoy it even without much math knowledge.
 }
 
 
@@ -125,7 +126,7 @@ Large parts of the internet depends on public-key cryptography. For example when
     The lock icon or the "https" label means you're using public-key cryptography (among other things) to secure your connection to the website.
 }
 
-I won't go into details on how the mathematics behind public-key cryptography, as I'm not able to without making the explanation needlessly complicated, but if this interests you I encourage you to look it up---I personally find it fascinating.◊mn{further-public-key}
+I won't go into details on the mathematics behind public-key cryptography, as I'm not able to without making the explanation needlessly complicated, but if this interests you I encourage you to look it up---I personally find it fascinating.◊mn{further-public-key}
 
 ◊ndef["further-public-key"]{
     ◊link[rsa]{RSA} is one of the first public-key cryptography schemes and it was also the first one I studied. It's fairly simple, so I think it's a good starting point to understand public-key cryptography.
@@ -157,7 +158,7 @@ We will look at public-key cryptography in practice when we look at how Bitcoin 
 
 ◊subhead{Bitcoin addresses}
 
-The addresses in Bitcoin (and other cryptocurrencies) uses public-key cryptography to protect your funds. The address is a public key that everyone can send coins to, but to send coins from an address you need the private key.
+The addresses in Bitcoin (and other cryptocurrencies) use public-key cryptography to protect your funds. The address is a public key that everyone can send coins to, but to send coins from an address you need the private key.
 
 This is for example a standard ◊strong{Bitcoin address}:
 
@@ -170,7 +171,7 @@ Which corresponds to the ◊strong{public key}:
 The address could be displayed in various different ways, Bitcoin just happened to do it this way. Using an address is more convenient as it's shorter and includes error checking codes.◊mn{bch-address}
 
 ◊ndef["bch-address"]{
-    Bitcoin Cash is a fork of Bitcoin and they have an additional address format. The same Bitcoin address, with the same public key, could also be displayed as this Bitoin Cash address:
+    Bitcoin Cash is a fork of Bitcoin and it has an additional address format. The same Bitcoin address, with the same public key, could also be displayed as this Bitoin Cash address:
 
     ◊code{qpwk83ew0xwpe87mmm9v43nvzj2y4d783cmv7ayctd}
 }
@@ -185,7 +186,7 @@ The private key is just a large number and can be be displayed in different ways
    (x-ref
      "2020-02-27"
      "https://en.bitcoin.it/wiki/Wallet_import_format"
-     "Wallet import format"))
+     "bitcoin.it wiki: Wallet import format"))
 
 ◊code{5JSfRE8qNQZTtdwuRx6pxVohC3C3VeAHvzKvLsZWHEGPdW2zF3o}
 
@@ -333,7 +334,7 @@ Does this sound too difficult? It's true, there are many pitfalls and it's easy 
    (x-ref
      "2020-02-27"
      "https://bitinfocharts.com/comparison/bitcoin-hashrate.html"
-     "Bitcoin Hashrate historical chart"))
+     "BitInfoCharts: Bitcoin Hashrate historical chart"))
 ◊(define public-key-cryptography
    (x-ref
      "2020-02-27"
@@ -343,5 +344,5 @@ Does this sound too difficult? It's true, there are many pitfalls and it's easy 
    (x-ref
      "2020-02-27"
      "https://github.com/bitcoin/bips/blob/master/bip-0039/bip-0039-wordlists.md"
-     "BIP-39 wordlists"))
+     "Bitcoin: BIP-39 wordlists"))
 

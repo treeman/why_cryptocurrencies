@@ -64,35 +64,35 @@ $concourse-c: 'Concourse Caps';
     font-weight: bold;
 }
 
-$hack: 'Hack';
+$triplicate: 'Triplicate';
 @font-face {
-    font-family: $hack;
-    src: url('fonts/Hack-Regular.woff') format('woff');
+    font-family: $triplicate;
+    src: url('/fonts/triplicate_t4_code_regular.woff') format('woff');
     font-style: normal;
 }
 @font-face {
-    font-family: $hack;
-    src: url('fonts/Hack-Italic.woff') format('woff');
+    font-family: $triplicate;
+    src: url('/fonts/triplicate_t4_code_italic.woff') format('woff');
     font-style: italic;
 }
 @font-face {
-    font-family: $hack;
-    src: url('fonts/Hack-Bold.woff') format('woff');
+    font-family: $triplicate;
+    src: url('/fonts/triplicate_t4_code_bold.woff') format('woff');
     font-style: normal;
     font-weight: bold;
 }
 @font-face {
-    font-family: $hack;
-    src: url('fonts/Hack-BoldItalic.woff') format('woff');
+    font-family: $triplicate;
+    src: url('/fonts/triplicate_t4_code_bold_italic.woff') format('woff');
     font-style: italic;
     font-weight: bold;
 }
 
 
-$serif-font-family: $century-supra, Georgia, serif;
-$sans-serif-font-family: $concourse, Helvetica, sans-serif;
-$sans-serif-c-font-family: $concourse-c, $concourse, Helvetica, sans-serif;
-$code-font-family: $hack, monospace;
+$serif-font-family: $century-supra, Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
+$sans-serif-font-family: $concourse, Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+$sans-serif-c-font-family: $concourse-c, $sans-serif-font-family;
+$code-font-family: $triplicate, Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
 
 
 %sans-serif {

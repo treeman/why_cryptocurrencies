@@ -4,9 +4,9 @@
    (if title
      (string-append main-title ": " title)
      (error (format "unknown title for ~v~n" here))))
-◊(define (str->date-display x)
+◊(define (str->date-display text x)
   (if x
-    (~t (iso8601->date x) "MMMM d, y")
+    (string-append text " " (~t (iso8601->date x) "MMMM d, y"))
     ""))
 ◊(define subtitle (select-from-metas 'subtitle here))
 ◊(define section-chapters-headers? (not (select-from-metas 'no-section-chapters-header here)))

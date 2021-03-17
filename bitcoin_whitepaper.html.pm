@@ -5,6 +5,7 @@
 ◊(define-meta published "2019-04-12T00:00:00+01:00")
 ◊(define-meta updated "2020-04-19T10:06:55+02:00")
 ◊(define-meta uuid "581c4917-d862-49cb-9d01-495a9106081b")
+◊(define-meta template "chapter.html")
 
 ◊(clear-sidenotes)
 
@@ -13,7 +14,7 @@
       #:src "Bitcoin: A Peer-to-Peer Electronic Cash System"
       #:url bitcoin-pdf
       #:quote-src #t]{
-    A purely peer-to-peer version of electronic cash would allow onlinepayments to be sent directly from one party to another without going through a financial institution. Digital signatures provide part of the solution, but the mainbenefits are lost if a trusted third party is still required to prevent double-spending.
+    A purely peer-to-peer version of electronic cash would allow online payments to be sent directly from one party to another without going through a financial institution. Digital signatures provide part of the solution, but the main benefits are lost if a trusted third party is still required to prevent double-spending.
   }
 }
 
@@ -42,20 +43,20 @@ If you want to go even further the white paper is also embedded in the blockchai
    (x-ref
      "2020-04-19"
      "https://www.bitcoin.com/get-started/bitcoin-white-paper-beginner-guide/"
-     "Bitcoin Whitepaper: A Beginner's Guide"))
+     "bitcoin.com: Bitcoin Whitepaper: A Beginner's Guide"))
 ◊(define pod-wp
    (x-ref
      "2020-04-19"
      "https://bitcoinnews.com/news/bitcoinnews-com-daily-podcast-5th-november-2018-the-bitcoin-white-paper/"
-     "BitcoinNews.com Daily Podcast 5th November 2018: The Bitcoin White Paper"))
+     "BitcoinNews.com (2018) BitcoinNews.com Daily Podcast 5th November 2018: The Bitcoin White Paper"))
 ◊(define alter-wp
    (x-ref
      "2020-04-19"
      "https://github.com/bitcoin-dot-org/bitcoin.org/issues/1325"
-     "Amendments to the Bitcoin paper"))
+     "Cobra-Bitcoin (2016) Amendments to the Bitcoin paper"))
 ◊(define track-alterations
    (x-ref
      "2020-04-19"
      "https://blockchair.com/bitcoin/whitepaper/"
-     "Blockchair tracks white paper versions found online"))
+     "Blockchair: Bitcoin / Whitepaper"))
 

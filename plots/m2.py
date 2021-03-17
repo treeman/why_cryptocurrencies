@@ -29,6 +29,7 @@ def parse(url):
 plt.xkcd()
 
 mycol = '#343535'
+background_col = '#fcfcfc'
 
 plt.rcParams["font.family"] = "Concourse T4"
 plt.rcParams["axes.linewidth"] = 1
@@ -37,6 +38,7 @@ plt.rcParams["text.color"] = mycol
 plt.rcParams["xtick.color"] = mycol
 plt.rcParams["ytick.color"] = mycol
 plt.rcParams["ytick.minor.width"] = 0
+plt.rcParams['figure.facecolor'] = background_col
 
 # Removes remaining white lines after xkcdifying the plot.
 # Changing the background didn't fix it.
@@ -44,6 +46,8 @@ mpl.rcParams['path.effects'] = [patheffects.withStroke(linewidth=0)]
 
 fig = plt.figure(figsize=(8, 5))
 ax = fig.add_subplot(1, 1, 1)
+fig.set_facecolor(background_col)
+ax.set_facecolor(background_col)
 
 def y_fmt(y, pos):
     return '${:,.0f}'.format(int(y/1000))
@@ -59,7 +63,7 @@ ax.yaxis.set_tick_params(width=2)
 
 # ax.set_xlim(dt.datetime(1965, 01, 01), dt.datetime(2020, 04, 01))
 # ax.set_xticks([dt.datetime(y, 01, 01) for y in range(2010, 2021)])
-ax.set_xticks([dt.datetime(y, 01, 01) for y in range(2010, 2021, 2)])
+ax.set_xticks([dt.datetime(y, 1, 1) for y in range(2010, 2021, 2)])
 # ax.set_ylim(0, 27000000)
 
 # plt.annotate(
@@ -87,6 +91,6 @@ plt.annotate(
 # https://stackoverflow.com/questions/9103166/multiple-axis-in-matplotlib-with-different-scales
 plt.plot(date, value, mycol, label='Value')
 
-plt.savefig('m2.svg', format="svg", transparent=True, bbox_inches='tight')
-print "done"
+plt.savefig('m2.svg', format="svg", transparent=False, bbox_inches='tight')
+print("done")
 

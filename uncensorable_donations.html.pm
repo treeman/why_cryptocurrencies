@@ -3,8 +3,9 @@
 ◊(define-meta title "Uncensorable donations")
 ◊(define-meta subtitle "Donations governments cannot stop")
 ◊(define-meta published "2019-08-28T00:00:00+01:00")
-◊(define-meta updated "2020-10-09T19:48:48+02:00")
+◊(define-meta updated "2021-03-10T19:06:54+01:00")
 ◊(define-meta uuid "f35cab59-0629-4173-9de0-a07a0eef33dc")
+◊(define-meta template "chapter.html")
 
 ◊(clear-sidenotes)
 
@@ -22,13 +23,13 @@
   (x-ref
     "2019-08-28"
     "https://wikileaks.org/wiki/Draft:About"
-    "WikiLeaks Drafts:About"))
+    "WikiLeaks: Drafts:About"))
 
-In the ◊link[freezing_of_merchant_accounts]{last} two ◊link[undesirable_businesses]{chapters} we looked at the issues with digital payments, but when you think about donations you wouldn't assume they have the same problems as payments have. For example when donating money to a charity, like ◊link[charity-water]{Charity Water}, they don't have to be worried of ◊link[charge-back-fraud]{charge back fraud} because you're voluntarily giving them money.◊sn{charity-fees} But the same problem with third-party censorship is relevant here as well.◊sn{voluntary}
+In the ◊link[freezing_of_merchant_accounts]{last} two ◊link[undesirable_businesses]{chapters}, we looked at the issues with digital payments, but when you think about donations you wouldn't assume they have the same problems as payments have. For example, when donating money to a charity, like ◊link[charity-water]{Charity Water}, they don't have to be worried about ◊link[charge-back-fraud]{charge back fraud} because you're voluntarily giving them money.◊sn{charity-fees} But the same problem with third-party censorship is relevant here as well.◊sn{voluntary}
 
-Imagine a country doing something really horrible, like ◊link[killing-fields]{purging intellectuals and political opponents}, that would put the government in a bad light. Journalists trying to report on this event may find it difficult or impossible to accept donations to continue their work. A payment processor (which are necessary for digital donations)---perhaps under pressure from the government---might block donations or break the journalistic anonymity,◊sn{crypto-privacy} making donations for truth-seeking journalists very difficult or outright dangerous.
+Imagine a country doing something really horrible, like ◊link[killing-fields]{purging intellectuals and political opponents}, that would put the government in a bad light. Journalists trying to report on this event may find it difficult or impossible to accept donations to continue their work. A payment processor (which is necessary for digital donations)---perhaps under pressure from the government---might block donations or break the journalist's anonymity,◊sn{crypto-privacy} making donations to truth-seeking journalists very difficult or outright dangerous.
 
-Donations is an excellent use case for cryptocurrencies, as they cannot be censored even by the most powerful nations in the world. And as I'll argue in this chapter, this is a real concern.
+Donations are an excellent use case for cryptocurrencies, as they cannot be censored even by the most powerful nations in the world. And as I'll argue in this chapter, this is a real concern.
 
 ◊note-pos[#:top -24]{charity-fees}
 ◊note-pos[#:top -17]{voluntary}
@@ -50,7 +51,7 @@ Donations is an excellent use case for cryptocurrencies, as they cannot be censo
   (x-ref
     "2019-08-28"
     "https://allthatsinteresting.com/cambodian-genocide"
-    "33 Haunting Photos From The Killing Fields Of The Cambodian Genocide"))
+    "Mark Oliver (2017) 33 Haunting Photos From The Killing Fields Of The Cambodian Genocide"))
 ◊(define charity-water
   (x-ref
     "2019-08-28"
@@ -60,7 +61,7 @@ Donations is an excellent use case for cryptocurrencies, as they cannot be censo
 
 ◊subhead{Censorship is real}
 
-A ◊link[china-forgettance]{powerful example} of censorship is the ◊link[wikipedia-tiananmen]{Tiananmen Square Massacre} in China 1989. It was a student led protest which was forcefully suppressed by hundreds of thousands military troops, killing large numbers of demonstrators and bystanders.◊mn{hong-kong}
+A ◊link[china-forgettance]{powerful example} of censorship is the ◊link[wikipedia-tiananmen]{Tiananmen Square Massacre} in China in 1989. It was a student-led protest which was forcefully suppressed by hundreds of thousands military troops, killing large numbers of demonstrators and bystanders.◊mn{hong-kong}
 
 ◊ndef["hong-kong"]{
     Some have ◊link[hong-kong-protests]{drawn parallels} between the recent protests in Hong Kong and Tiananmen, but with smartphones everywhere it would be close to impossible to cover up a similar massacre.
@@ -80,10 +81,10 @@ A ◊link[china-forgettance]{powerful example} of censorship is the ◊link[wiki
 ◊note-pos[#:top -17]{hong-kong}
 
 
-China has gone to great lengths to cover up these events. Twitter is censored by default in China◊mn{china-censorship} and anyone caught tweeting about Tiananmen might ◊link[twitter-detained]{get arrested}.◊mn{reeducation} On the anniversary they have police escorts for the victim's families who wants to visit the graves---to keep them away from journalists.
+China has gone to great lengths to cover up these events. Twitter is censored by default in China◊mn{china-censorship} and anyone caught tweeting about Tiananmen might ◊link[twitter-detained]{get arrested}.◊mn{reeducation} On the anniversary they have police escorts for the victim's families who want to visit the graves---to keep them away from journalists.
 
 ◊ndef["reeducation"]{
-    If caught you'll probably be placed in a ◊link[china-reeducation #:quote #t]{re-education camp}, which are quite similar to camps in Stalin's Soviet or Hitler's Germany.
+    If caught, you'll probably be placed in a ◊link[china-reeducation #:quote #t]{re-education camp}, which are quite similar to camps in Stalin's Soviet or Hitler's Germany.
 }
 
 ◊ndef["china-censorship"]{
@@ -99,12 +100,12 @@ Censorship is a ◊link[censorship-global]{global problem} and is a big problem 
   (x-ref
     "2019-08-28"
     "https://www.breitbart.com/tech/2016/06/12/reddit-topics-censored-users-banned-linking-orlando-shootings-islam/"
-    "Reddit Mods Delete Orlando Shooting Posts Because Attacker Was Muslim"))
+    "Allum Bokhari (2016) Reddit Mods Delete Orlando Shooting Posts Because Attacker Was Muslim"))
 ◊(define censorship-global
   (x-ref
     "2019-08-28"
     "https://cpj.org/2015/04/10-most-censored-countries.php"
-    "10 Most Censored Countries"))
+    "Committee to Protect Journalists (2015) 10 Most Censored Countries"))
 ◊(define hk-fp
   (x-ref
     "2019-08-28"
@@ -119,17 +120,17 @@ Censorship is a ◊link[censorship-global]{global problem} and is a big problem 
   (x-ref
     "2019-08-28"
     "https://www.howtogeek.com/162092/htg-explains-how-the-great-firewall-of-china-works/"
-    "How the “Great Firewall of China” Works to Censor China’s Internet"))
+    "Chris Hoffman (2017) How the “Great Firewall of China” Works to Censor China’s Internet"))
 ◊(define hong-kong-protests
   (x-ref
     "2019-08-28"
     "https://thefederalist.com/2019/07/25/hong-kong-protest-beijings-new-tiananmen-square/"
-    "The Hong Kong Protest Is Beijing’s New Tiananmen Square"))
+    "Helen Raleigh (2019) The Hong Kong Protest Is Beijing’s New Tiananmen Square"))
 ◊(define china-forgettance
    (x-ref
      "2019-08-28"
      "https://www.bbc.com/news/blogs-china-blog-48455582"
-     "BBC: Tiananmen 30 years on - China's great act of 'forgettance'"))
+     "John Sudworth (2019) Tiananmen 30 years on - China's great act of 'forgettance'"))
 ◊(define wikipedia-tiananmen
   (x-ref
     "2019-08-28"
@@ -139,19 +140,19 @@ Censorship is a ◊link[censorship-global]{global problem} and is a big problem 
   (x-ref
     "2019-08-28"
     "https://pen.org/press-release/deng-chuanbin-arrest/"
-    "Arrest of Chinese Filmmaker Deng Chuanbin Represents the Extreme Lengths of Chinese Authorities to Silence Artistic Voices"))
+    "PEN America (2019) Arrest of Chinese Filmmaker Deng Chuanbin Represents the Extreme Lengths of Chinese Authorities to Silence Artistic Voices"))
 ◊(define china-reeducation
   (x-ref
     "2019-08-28"
     "https://www.amnesty.org/en/latest/news/2018/09/china-up-to-one-million-detained/"
-    "Up to one million detained in China’s mass “re-education” drive"))
+    "Amnesty (2018) Up to one million detained in China’s mass “re-education” drive"))
 
 
 ◊subhead{A short history of WikiLeaks}
 
-◊link[wikileaks]{WikiLeaks} is a relevant example for illustrating the importance of uncensorable payments as it shows the influence powerful actors have over payment processors, and in turn the funding for WikiLeaks. We will focus on the Chelsea Manning leaks and the aftermath, where WikiLeaks got their donation channels shut down for exposing government atrocities.
+◊link[wikileaks]{WikiLeaks} is a relevant example for illustrating the importance of uncensorable payments as it shows the influence powerful actors have over payment processors and, in turn, the funding for WikiLeaks. We will focus on the Chelsea Manning leaks and the aftermath, where WikiLeaks got their donation channels shut down for exposing government atrocities.
 
-I'll bring up the ◊link[assange-events]{events surrounding Julian Assange}, because they give context and might be relevant to the story of government abuse, but it's not about him or any other person in particular. Even if Julian Assange is guilty of rape it does not change the importance of the leaks or WikiLeaks as a concept, which goes above individuals.◊mn{association-fallacy}
+I'll bring up the ◊link[assange-events]{events surrounding Julian Assange}, because they give context and might be relevant to the story of government abuse, but it's not about him or any other person in particular. Even if Julian Assange is guilty of rape, it does not change the importance of the leaks or WikiLeaks as a concept, which goes above individuals.◊mn{association-fallacy}
 
 This is ◊strong{not} a glorification of WikiLeaks---they have ◊link[wikileaks-immoral]{endangered individuals} via their leaks. Instead I hope to show that uncensorable donations are important, because exposing government atrocities can lead to your donations being blocked (and government atrocities should be exposed).
 
@@ -175,7 +176,7 @@ This is ◊strong{not} a glorification of WikiLeaks---they have ◊link[wikileak
   (x-ref
     "2019-08-28"
     "https://www.wired.com/2016/07/wikileaks-officially-lost-moral-high-ground/"
-    "WikiLeaks Has Officially Lost the Moral High Ground"))
+    "Emma Grey Ellis (2016) WikiLeaks Has Officially Lost the Moral High Ground"))
 
 
 ◊div[#:class "wikileaks"]{
@@ -185,7 +186,7 @@ This is ◊strong{not} a glorification of WikiLeaks---they have ◊link[wikileak
 
     WikiLeaks ◊link[wikileaks-history]{was launched} as a news site for collaborative editing, similar to how Wikipedia is edited by volunteers. Despite their similar names the sites aren't related. In 2010 WikiLeaks stopped being a wiki, but the name remained the same.
 
-    Today many equate WikiLeaks with Julian Assange, but he's only one of many people involved. Sometimes he's described as the founder, editor-in-chief or director.
+    Today many equate WikiLeaks with Julian Assange, but he's only one of many people involved. Sometimes he's described as the founder, editor-in-chief, or director.
   }
 
 
@@ -209,7 +210,7 @@ This is ◊strong{not} a glorification of WikiLeaks---they have ◊link[wikileak
     ◊div[#:class "leak-wrapper"]{
       ◊leak["Collateral murder" #:url collateral-murder-wikileaks]{
 
-        WikiLeaks uploaded a video of a Baghdad helicopter attack in July 12, 2007 with the title "Collateral murder". It's a video of how an attack helicopter kills a dozen innocent people, including two Reuters news staff.
+        WikiLeaks uploaded a video of a Baghdad helicopter attack in July 12, 2007 with the title "Collateral murder". It's a video of how an attack helicopter killed a dozen innocent people, including two Reuters news staff.
 
         Here are some ◊link[collateral-murder-transcripts]{transcripts}◊mn{timestamps} of the ◊link[collateral-murder-full]{full video} with my comments on the events:
 
@@ -236,7 +237,7 @@ This is ◊strong{not} a glorification of WikiLeaks---they have ◊link[wikileak
               07:01  All you gotta do is pick up a weapon.
           }
 
-          After killing a bunch of people they're looking at an injured person crawling on the ground wanting him to pick up a weapon---so they're allowed to kill him.
+          After killing a bunch of people, they're looking at an injured person crawling on the ground wanting him to pick up a weapon---so they're allowed to kill him.
 
           ◊transcript{
               07:59  Picking up the wounded?
@@ -244,7 +245,7 @@ This is ◊strong{not} a glorification of WikiLeaks---they have ◊link[wikileak
               08:04  Come on, let us shoot!
           }
 
-          Then a van enters the scene and they're rushing in to help the wounded. But now the rules aren't that important anymore---they want to shoot!
+          Then, a van enters the scene and they're rushing in to help the wounded. But now the rules aren't that important anymore---they want to shoot!
 
           ◊transcript{
               10:35  Oh yeah, look at that. Right through the windshield!
@@ -262,15 +263,15 @@ This is ◊strong{not} a glorification of WikiLeaks---they have ◊link[wikileak
 
         ◊; https://www.theguardian.com/world/2010/apr/05/wikileaks-us-army-iraq-attack
 
-        When Reuters tried to get answers for how their reporters died the U.S. military claimed they didn't know how they got killed, and that all dead were insurgents. They also didn't know how the children got injured, despite them having the video footage.
+        When Reuters tried to get answers for how their reporters died, the U.S. military claimed they didn't know how they got killed, and that all dead were insurgents. They also didn't know how the children got injured, despite them having the video footage.
 
-        Afterwards the military investigated the issue and concluded that the actions of the soldiers where in accordance with the law of armed conflict and its own "Rules of Engagement".
+        Afterwards, the military investigated the issue and concluded that the actions of the soldiers where in accordance with the law of armed conflict and its own "Rules of Engagement".
       }
 
       ◊leak["Execution of children"
             #:url execution-of-children]{
 
-        In 2006, a group of U.S. soldiers entered a house in Iraq where they executed at least 10 people (9 civilians), including an infant and four other children---all five years or younger---and elderly women. They then called in an airstrike to cover up the evidence, but postmortems showed they had been handcuffed and shot in the head.◊mn{children-bodies}
+        In 2006, a group of U.S. soldiers entered a house in Iraq where they executed at least 10 people (9 civilians), including an infant and four other children---all five years or younger---and elderly women. They called in an airstrike to cover up the evidence, but postmortems showed they had been handcuffed and shot in the head.◊mn{children-bodies}
 
         We're quick to call them terrorists, but viewed from another angle the U.S. soldiers are the terrorists. Just imagine foreign soldiers entering your neighbour's house and executing everyone there, including the children...
 
@@ -307,7 +308,7 @@ This is ◊strong{not} a glorification of WikiLeaks---they have ◊link[wikileak
 
     }
 
-    Countless of civilians killed---while soldiers are laughing---and systematic cover-ups to hide it all.◊mn{purpose}
+    Countless numbers of civilians killed---while soldiers are laughing---and systematic cover-ups to hide it all.◊mn{purpose}
 
     ◊ndef["purpose"]{
         You just can't help but wonder---for what purpose? Imaginary nuclear weapons, bringing "democracy and peace" to Iraq, securing oil supply, helping U.S. allies or simply needing a purpose for their massive war machine?
@@ -315,7 +316,7 @@ This is ◊strong{not} a glorification of WikiLeaks---they have ◊link[wikileak
         The value of non-American lives in this war is ridiculously low.
     }
 
-    To me Chelsea Manning is a hero for bringing this to light. Yet how was she thanked? Like all whistleblowers she was made an example of; she was court-martialed and sentenced to 35 years in prison.
+    To me, Chelsea Manning is a hero for bringing this to light. Yet how was she thanked? Like all whistleblowers, she was made an example of; she was court-martialed and sentenced to 35 years in prison.
 
     ◊note-pos[#:top -8]{purpose}
 
@@ -337,20 +338,22 @@ This is ◊strong{not} a glorification of WikiLeaks---they have ◊link[wikileak
   ◊entry["Sexual assault allegations against Julian Assange"
           #:date "Aug 2010"]{
 
-    Shortly after the massive leaks Julian Assange was ◊link[assange-rape]{accused of sexual assault} in Sweden. The timing might be a coincidence◊mn{truth-fiction} or if you're a conspiracy theorist you might say they're manufactured by the U.S. government, in a way to reach Julian Assange.
+    Shortly after the massive leaks, Julian Assange was ◊link[assange-rape]{accused of sexual assault} in Sweden. The timing might be a coincidence◊mn{truth-fiction} or if you're a conspiracy theorist you might say they're manufactured by the U.S. government, in a way to reach Julian Assange.
 
     ◊ndef["truth-fiction"]{
         Like the saying goes: "truth is stranger than fiction".
     }
 
-    In November, when Assange had already traveled to London (the charges were dropped to be picked up again after he left Sweden), an ◊link[assange-international-arrest]{international arrest} warrant is issued by the Swedish police via Interpol.
+    In November, when Assange had already traveled to London (the charges were dropped to be picked up again after he left Sweden), an ◊link[assange-international-arrest]{international arrest} warrant was issued by the Swedish police via Interpol.
+
+    ◊note-pos[#:top -10]{truth-fiction}
   }
 
 
   ◊entry["PayPal freezes WikiLeaks donations"
          #:date "Dec 4, 2010"]{
 
-    Later ◊link[paypal-freezes-wikileaks]{PayPal freezes WikiLeaks donations} with the reason:◊mn{paypal}
+    Later, ◊link[paypal-freezes-wikileaks]{PayPal freezes WikiLeaks donations} with the reason:◊mn{paypal}
 
     ◊ndef["paypal"]{
         As far as reasons for shutting down services, PayPal ◊link[freezing_of_merchant_accounts]{doesn't have a good record}. This excuse is at least believable on the surface.
@@ -370,7 +373,7 @@ This is ◊strong{not} a glorification of WikiLeaks---they have ◊link[wikileak
 
   ◊entry["Banking blockade"
          #:date "Dec 7, 2010"]{
-    This further developed into a ◊link[banking-blockade]{Banking Blockade} that the Bank of America, VISA, MasterCard and Western Union also joined. WikiLeaks claim this destroyed 95% of their revenue and they had to resort to cash reserves.
+    This further developed into a ◊link[banking-blockade]{Banking Blockade} that the Bank of America, VISA, MasterCard and Western Union also joined. WikiLeaks claim this destroyed 95% of their revenue, and they had to resort to cash reserves.
 
     The blockade was later ◊link[illegal-blockade]{found to be illegal} and today WikiLeaks again accept donations via PayPal and credit cards, but they suffered large damage at the crucial time when the world was in uproar over the leaks.◊mn{shutdown-successful}
 
@@ -385,7 +388,7 @@ This is ◊strong{not} a glorification of WikiLeaks---they have ◊link[wikileak
   ◊entry["WikiLeaks accepts Bitcoin"
          #:date "Jun 14, 2011"]{
 
-    After being shunned by banks and payment processors WikiLeaks turned to Bitcoin, because nobody---not even the U.S. government---can block Bitcoin transactions.
+    After being shunned by banks and payment processors, WikiLeaks turned to Bitcoin, because nobody---not even the U.S. government---can block Bitcoin transactions.
 
     Why did it take almost a year before WikiLeaks started accepting Bitcoin? Satoshi made this appeal in the de-facto discussion forum at the time:
 
@@ -431,9 +434,9 @@ This is ◊strong{not} a glorification of WikiLeaks---they have ◊link[wikileak
 
 ◊;https://shadowproof.com/2012/05/30/uk-supreme-court-rejects-julian-assanges-extradition-appeal/
 
-    A couple of weeks after the Supreme Court's final ruling in U.K. that Assange ◊link[assange-loses-extradition-appeal]{should be extradited} to Sweden he walked into the Ecuadorean embassy in London and applied for political asylum. The stated reason was fears that Sweden would send him to the U.S. where he would risk the death penalty under espionage charges.◊mn{sweden-extradition}
+    A couple of weeks after the Supreme Court's final ruling in U.K. that Assange ◊link[assange-loses-extradition-appeal]{should be extradited} to Sweden, he walked into the Ecuadorean embassy in London and applied for political asylum. The stated reason was fears that Sweden would send him to the U.S. where he would risk the death penalty under espionage charges.◊mn{sweden-extradition}
 
-    Assange was ◊link[assange-asylum-granted]{granted asylum} August 16◊sup{th} and his stay at the embassy would be longer than anyone would have thought.
+    Assange was ◊link[assange-asylum-granted]{granted asylum} on August 16◊sup{th} and his stay at the embassy would be longer than anyone would have thought.
 
     ◊note-pos[#:top -8]{sweden-extradition}
 
@@ -446,10 +449,10 @@ This is ◊strong{not} a glorification of WikiLeaks---they have ◊link[wikileak
   ◊entry["Chelsea Manning's sentence is commuted"
          #:date "Jan 17, 2017"]{
 
-    President Barack Obama ◊link[manning-commutes]{commutes Chelsea Manning's prison sentence}. Important to note it only reduces her sentence, it doesn't change the fact that she was convicted.◊mn{pardon} She spent almost 7 years of her original 35 year sentence in prison.
+    President Barack Obama ◊link[manning-commutes]{commutes Chelsea Manning's prison sentence}. Important to note it only reduced her sentence, it doesn't change the fact that she was convicted.◊mn{pardon} She spent almost 7 years of her original 35 year sentence in prison.
 
     ◊ndef["pardon"]{
-        In contrast a ◊def{pardon} would completely absolve her of any wrongdoing.
+        In contrast, a ◊def{pardon} would completely absolve her of any wrongdoing.
     }
   }
 
@@ -465,11 +468,7 @@ This is ◊strong{not} a glorification of WikiLeaks---they have ◊link[wikileak
 
     While he was immediately ◊link[assange-indicted]{indicted on 17 counts of violating the Espionage Act} by the U.S. his release was news for the Swedish prosecutors. Nevertheless the Swedish investigation ◊link[assange-rape-reopen-19]{was soon reopened} as well.
 
-    While he was immediately ◊link[assange-indicted]{indicted on 17 counts of violating the Espionage Act} by the U.S. his release was news for the Swedish prosecutors. 
-
-    ◊;At the moment, the Swedish investigation is open once again and Assange is waiting for the U.K. to rule on extradition requests from both Sweden and the U.S.
-
-    ◊note-pos[#:top -16]{second-arrest}
+    ◊note-pos[#:top -9]{second-arrest}
 
     ◊ndef["second-arrest"]{
         Confusingly he was actually arrested twice. First for ◊link[assange-arrest-uk]{skipping a U.K. court warrant} and a second time at the ◊link[assange-arrest-us]{request of the U.S.} seeking his extradition.
@@ -488,15 +487,15 @@ This is ◊strong{not} a glorification of WikiLeaks---they have ◊link[wikileak
   }
 
   ◊entry["The rape investigation is dropped"
-         #:date "November 2019"]{
-    A few months later the Swedish prosecutor once again ◊link[assange-rape-closed-19]{dropped their investigation against Assange}, citing the long period of time since the alleged crime as the reason.
+         #:date "November, 2019"]{
+    A few months later, the Swedish prosecutor once again ◊link[assange-rape-closed-19]{dropped their investigation against Assange}, citing the long period of time since the alleged crime as the reason.
 
     When Assange first sought asylum many people said it was only to avoid the Swedish charges and he used fears of the U.S. as a pretext, but in hindsight the fears might have been real.
 
   }
 
   ◊entry["Observers are denied entry to the Assange hearings"
-         #:date "September 2020"]{
+         #:date "September, 2020"]{
 
     During Assange's extradition hearing, where the U.K. will rule on extradition to the U.S., Amnesty International were ◊link[amnesty-hearings]{blocked from observing the hearings}. They claim the hearings were intentionally locked down:
 
@@ -511,11 +510,11 @@ This is ◊strong{not} a glorification of WikiLeaks---they have ◊link[wikileak
   }
 
   ◊entry["A farcical extradition hearing"
-         #:date "September 2020"]{
+         #:date "September, 2020"]{
 
-    The human rights activist Craig Murray was allowed to observe and he's been documenting the hearing ◊link[craig-murray]{on his blog}. And it's not an exaggeration to call the hearing a farce.
+    The human rights activist, Craig Murray, was allowed to observe and he's been documenting the hearing ◊link[craig-murray]{on his blog}, and it's not an exaggeration to call the hearing a farce.
 
-    Witnesses were for example prevented from taking the stand because the U.S. managed to block any reference to the torture at Guantanamo (which we know is true):
+    Witnesses were prevented from taking the stand because the U.S. managed to block any reference to the torture at Guantanamo (which we know is true):
 
     ◊qt[#:author "Craig Murray"
         #:url day-14
@@ -523,7 +522,7 @@ This is ◊strong{not} a glorification of WikiLeaks---they have ◊link[wikileak
         The next witness, Andy Worthington, was at court and ready to give evidence, but was prevented from doing so. The United States government objected to his evidence, about his work on the Guantanamo Detainee files, being heard because it contained allegations of inmates being tortured at Guantanamo.
     }
 
-    In another instance the prosecution---with the cooperation of the judge---tries to hide the fact that Assange was caught with a razor in the cell, which would imply that Assange is thinking of suicide:
+    In another instance, the prosecution---with the cooperation of the judge---tries to hide the fact that Assange was caught with a razor in the cell, which would imply that Assange is thinking of suicide:
 
     ◊qt[#:author "Craig Murray"
         #:url day-17
@@ -540,11 +539,19 @@ This is ◊strong{not} a glorification of WikiLeaks---they have ◊link[wikileak
         The Governor’s decision was at paragraph 19. Baraitser told Fitzgerald she could not accept the document as it was new evidence. Fitzgerald told her ◊em{she had herself asked for the outcome of the charge}. He said the document contained very interesting information. Baraitser said that the Governor’s decision was at paragraph 19, that was all she had asked for, and ◊em{she would refuse to take the rest of the document into consideration}.
     }
 
-    The hearing is full of problems like these. For example that the prosecution changed their accusations hours before and the defense not getting enough time to prepare, that the defense is prevented from questioning key witnesses and that there will be no closing speeches in the hearing.
+    The hearing is full of problems like these. The prosecution changed their accusations hours before and the defense not getting enough time to prepare, that the defense was prevented from questioning key witnesses and that there will be no closing speeches in the hearing.
 
-    As I'm writing this in late September it's not yet decided what will happen to Assange, but it seems clear that the judge already made up her mind before the hearing even began.
+    Nevertheless, in January 2021 the judge ◊link[blocked]{blocked Assange's extradition to the U.S.}
+
+    Not because she disagreed with the prosecution, but because Assange would face barbaric prison treatment in the U.S., and thus it would be "unjust or oppressive to extradite him".
+
+    As of March 2021, the judgement may still be overturned by appeals.
+
+    ◊;As I'm writing this in late September it's not yet decided what will happen to Assange, but it seems clear that the judge already made up her mind before the hearing even began.◊mn{blocked}
   }
+}
 
+◊ndef["blocked"]{
 }
 
 ◊; UN panel 'rules in Assange's favour'
@@ -588,17 +595,17 @@ This is ◊strong{not} a glorification of WikiLeaks---they have ◊link[wikileak
   (x-ref
     "2019-08-28"
     "https://www.mcclatchydc.com/news/special-reports/article24696685.html"
-    "Iraqi children in U.S. raid shot in head, U.N. says"))
+    "Matthew Schofield (2011) Iraqi children in U.S. raid shot in head, U.N. says"))
 ◊(define civilian-deaths-iraq
   (x-ref
     "2019-08-28"
     "https://abcnews.go.com/Politics/wikileaks-iraqi-civilian-deaths-higher-reported/story?id=11953723"
-    "WikiLeaks Documents Reveal Death Count, Torture"))
+    "Russell Goldman, Luis Martinez (2010) WikiLeaks Documents Reveal Death Count, Torture"))
 ◊(define satoshi-quote
   (x-ref
     "2019-08-28"
     "http://archive.fo/Gvonb#msg26999"
-    "bitcointalk.org: Satoshi, Dec 5, 2010"))
+    "bitcointalk.org (2010) Satoshi Re: Wikileaks contact info?"))
 
 ◊(define wikileaks-history
   (x-ref
@@ -609,53 +616,53 @@ This is ◊strong{not} a glorification of WikiLeaks---they have ◊link[wikileak
   (x-ref
     "2019-08-28"
     "https://www.bbc.com/news/uk-18260914"
-    "BBC: Julian Assange loses extradition appeal at Supreme Court"))
+    "BBC (2012) Julian Assange loses extradition appeal at Supreme Court"))
 ◊(define assange-asylum-granted
   (x-ref
     "2019-08-28"
     "https://www.bbc.com/news/uk-19281492"
-    "BBC: Julian Assange: Ecuador grants Wikileaks founder asylum"))
+    "BBC (2012) Julian Assange: Ecuador grants Wikileaks founder asylum"))
 ◊(define assange-indicted
   (x-ref
     "2019-08-28"
     "https://www.nytimes.com/2019/05/23/us/politics/assange-indictment.html"
-    "The New York Times: Assange Indicted Under Espionage Act, Raising First Amendment Issues"))
+    "Charlie Savage (2019) Assange Indicted Under Espionage Act, Raising First Amendment Issues"))
 ◊(define assange-rape
   (x-ref
     "2019-08-28"
     "https://www.bbc.com/news/world-11047025"
-    "BBC: Wikileaks founder Julian Assange accused of rape"))
+    "BBC (2010) Wikileaks founder Julian Assange accused of rape"))
 ◊(define assange-international-arrest
   (x-ref
     "2019-08-28"
     "https://www.bbc.com/news/world-europe-11803703"
-    "BBC: Wikileaks' Assange faces international arrest warrant"))
+    "BBC (2010) Wikileaks' Assange faces international arrest warrant"))
 ◊(define assange-events
   (x-ref
     "2019-08-28"
     "https://www.bbc.com/news/world-europe-11949341"
-    "BBC: Julian Assange: A timeline of Wikileaks founder's case"))
+    "BBC (2019) Julian Assange: A timeline of Wikileaks founder's case"))
 ◊(define obama-guantanamo
   (x-ref
     "2019-08-28"
     "https://www.nbcnews.com/news/us-news/president-obama-expected-make-statement-guantanamo-n524131"
-    "Guantanamo Bay: Obama Announces Plan to Close Controversial Detention Facility"))
+    "Halimah Abdullah (2016) Guantanamo Bay: Obama Announces Plan to Close Controversial Detention Facility"))
 
 ◊(define collateral-murder-wikileaks
   (x-ref
     "2019-08-28"
     "https://collateralmurder.wikileaks.org/"
-    "WikiLeaks: Collateral Murder"))
+    "WikiLeaks (2012) Collateral Murder"))
 ◊(define collateral-murder-17
   (x-ref
     "2019-08-28"
     "https://www.youtube.com/watch?v=5rXPrfnU3G0"
-    "YouTube: Collateral Murder (17 min)"))
+    "YouTube (2010) Collateral Murder (17 min)"))
 ◊(define collateral-murder-full
   (x-ref
     "2019-08-28"
     "https://www.youtube.com/watch?v=is9sxRfU-ik"
-    "YouTube: Collateral Murder (39 min)"))
+    "YouTube (2010) Collateral Murder (39 min)"))
 ◊(define collateral-murder-transcripts
   (x-ref
     "2019-08-28"
@@ -666,48 +673,48 @@ This is ◊strong{not} a glorification of WikiLeaks---they have ◊link[wikileak
   (x-ref
     "2019-08-28"
     "https://wikileaks.org/PayPal-freezes-WikiLeaks-donations.html"
-    "WikiLeaks: PayPal freezes WikiLeaks donations"))
+    "WikiLeaks (2010) PayPal freezes WikiLeaks donations"))
 ◊(define banking-blockade
   (x-ref
     "2019-08-28"
     "https://wikileaks.org/Banking-Blockade.html"
-    "WkiLeaks: Banking Blockade"))
+    "WkiLeaks (2011) Banking Blockade"))
 ◊(define illegal-blockade
   (x-ref
     "2019-08-28"
     "https://wikileaks.org/Protesters-against-WikiLeaks.html"
-    "WikiLeaks: Protesters against WikiLeaks banking blockade, the \"PayPal 14\", largely victorious"))
+    "WikiLeaks (2014) Protesters against WikiLeaks banking blockade, the \"PayPal 14\", largely victorious"))
 ◊(define assange-bitcoin-ama-msg
   (x-ref
     "2019-08-28"
     "https://www.reddit.com/r/technology/comments/2ghp54/i_am_julian_assange_ama_about_my_new_book_when/ckjcmyw/"
-    "AMA with Julian Assange on Reddit (Sep 2014)"))
+    "Julian Assange (2014) AMA with Julian Assange on Reddit"))
 ◊(define manning-commutes
   (x-ref
     "2019-08-28"
     "https://www.nytimes.com/2017/01/17/us/politics/obama-commutes-bulk-of-chelsea-mannings-sentence.html"
-    "Chelsea Manning to Be Released Early as Obama Commutes Sentence"))
+    "Charlie Savage (2017) Chelsea Manning to Be Released Early as Obama Commutes Sentence"))
 ◊(define manning-jailed-again
   (x-ref
     "2019-08-28"
     "https://www.theguardian.com/us-news/2019/mar/08/chelsea-manning-judge-jails-wikileaks-case"
-    " Chelsea Manning jailed for refusing to testify to grand jury in WikiLeaks case "))
+    "Erin Durkin (2019) Chelsea Manning jailed for refusing to testify to grand jury in WikiLeaks case "))
 
 ◊(define uk-cluster-bomb-ban
   (x-ref
     "2019-08-28"
     "https://www.theguardian.com/world/2010/dec/01/wikileaks-cables-cluster-bombs-britain"
-    "WikiLeaks cables: Secret deal let Americans sidestep cluster bomb ban"))
+    "Rob Evans and David Leigh (2010) WikiLeaks cables: Secret deal let Americans sidestep cluster bomb ban"))
 ◊(define abu-omar
   (x-ref
     "2019-08-28"
     "https://www.spiegel.de/international/europe/cia-rendition-case-us-pressured-italy-to-influence-judiciary-a-735268.html"
-    "US Pressured Italy to Influence Judiciary"))
+    "Von John Goetz, Matthias Gebauer (2010) US Pressured Italy to Influence Judiciary"))
 ◊(define saudi-urges-attack
   (x-ref
     "2019-08-28"
     "https://www.reuters.com/article/us-wikileaks-usa-idUSTRE6AP06Z20101129"
-    "Saudi king urged U.S. to attack Iran: WikiLeaks"))
+    "Arshad Mohammed, Ross Colvin (2010) Saudi king urged U.S. to attack Iran: WikiLeaks"))
 ◊(define tunisian-revolution
   (x-ref
     "2019-08-28"
@@ -717,12 +724,12 @@ This is ◊strong{not} a glorification of WikiLeaks---they have ◊link[wikileak
   (x-ref
     "2019-08-28"
     "https://www.theguardian.com/world/2011/apr/25/guantanamo-files-lift-lid-prison"
-    "Guantánamo leaks lift lid on world's most controversial prison"))
+    "David Leigh, James Ball, Ian Cobain and Jason Burke (2011) Guantánamo leaks lift lid on world's most controversial prison"))
 ◊(define children-bodies
   (x-ref
     "2019-08-28"
     "https://web.archive.org/web/20150416062019/http://www.chris-floyd.com/march/"
-    "Children of Abraham: Death in the Desert (Wayback Machine)"))
+    "Chris Floyd (2006) Children of Abraham: Death in the Desert (Wayback Machine)"))
 ◊(define repatriation-sweden
   (x-ref
     "2019-08-28"
@@ -733,32 +740,32 @@ This is ◊strong{not} a glorification of WikiLeaks---they have ◊link[wikileak
   (x-ref
     "2019-08-28"
     "https://www.bbc.com/news/uk-47891737"
-    "BBC: Julian Assange: Wikileaks co-founder arrested in London"))
+    "BBC (2019) Julian Assange: Wikileaks co-founder arrested in London"))
 ◊(define assange-arrest-us
   (x-ref
     "2019-08-28"
     "https://www.theguardian.com/uk-news/2019/apr/11/julian-assange-arrested-at-ecuadorian-embassy-wikileaks"
-    "Julian Assange faces US extradition after arrest at Ecuadorian embassy"))
+    "Caroline Davies, Simon Murphy and Damien Gayle (2019) Julian Assange faces US extradition after arrest at Ecuadorian embassy"))
 ◊(define assange-rape-reopen-19
   (x-ref
     "2020-09-22"
     "https://www.bbc.com/news/world-europe-48253343"
-    "The Swedish rape investigation against Assange is reopened"))
+    "BBC (2019) Julian Assange: Sweden reopens rape investigation"))
 ◊(define assange-rape-closed-19
   (x-ref
     "2020-09-22"
     "https://www.bbc.com/news/world-europe-50473792"
-    "The Swedish rape investigation against Assange is closed once again"))
+    "BBC (2019) Julian Assange: Sweden drops rape investigation"))
 ◊(define amnesty-hearings
   (x-ref
     "2020-09-22"
     "https://www.amnesty.org/en/latest/news/2020/09/why-are-amnesty-international-monitors-not-able-to-observe-the-assange-hearing/"
-    "Why are Amnesty International monitors not able to observe the Assange hearing?"))
+    "Stefan Simanowitz, Amnesty International (2020) Why are Amnesty International monitors not able to observe the Assange hearing?"))
 ◊(define gallagher-dismissed
   (x-ref
     "2020-09-22"
     "https://fox5sandiego.com/news/navy-dismisses-case-against-seal-accused-of-covering-up-war-crimes/"
-    "Navy dismisses case against SEAL accused of covering up war crimes"))
+    "City News Service (2019) Navy dismisses case against SEAL accused of covering up war crimes"))
 ◊(define gallagher-chief
   (x-ref
     "2020-09-22"
@@ -773,19 +780,24 @@ This is ◊strong{not} a glorification of WikiLeaks---they have ◊link[wikileak
   (x-ref
     "2020-09-30"
     "https://www.craigmurray.org.uk/archives/2020/09/your-man-in-the-public-gallery-assange-hearing-day-14/"
-    "Your Man in the Public Gallery: Assange Hearing Day 14"))
+    "Craig Murray (2020) Your Man in the Public Gallery: Assange Hearing Day 14"))
 ◊(define day-17
   (x-ref
     "2020-09-30"
     "https://www.craigmurray.org.uk/archives/2020/09/your-man-in-the-public-gallery-assange-hearing-day-17/"
-    "Your Man in the Public Gallery: Assange Hearing Day 17"))
+    "Craig Murray (2020) Your Man in the Public Gallery: Assange Hearing Day 17"))
+◊(define blocked
+  (x-ref
+    "2021-03-10"
+    "https://www.judiciary.uk/wp-content/uploads/2021/01/USA-v-Assange-judgment-040121.pdf"
+    "Judiciary of England and Wales (2021) USA vs. Julian Assange Judgment"))
 
 
 ◊subhead{Hiding skeletons in the closet}
 
 There's another theme in the WikiLeaks story: How the U.S. government instead of admitting these horrible events, punishing the responsible and making sure they never happen again, seem to do everything to cover them up.
 
-This idea that American soldiers are unconditionally heroes, regardless of what they've done, makes me both angry and sad. Donald Trump has for example expressed concerns over soldiers being prosecuted for war crimes, and ◊link[trump-pardons]{considers pardoning them}. This includes a ◊link[gallagher]{Navy Seals soldier} who (allegedly) killed a 15-year old defenseless kid with his hunting knife and shot unarmed civilians.◊mn{gallagher}
+This idea that American soldiers are unconditionally heroes, regardless of what they've done, makes me both angry and sad. Donald Trump has for example expressed concerns over soldiers being prosecuted for war crimes, and ◊link[trump-pardons]{considered pardoning them}. This includes a ◊link[gallagher]{Navy Seals soldier} who (allegedly) killed a 15-year old defenseless kid with his hunting knife and shot unarmed civilians.◊mn{gallagher}
 
 Those aren't the actions of a hero.
 
@@ -796,7 +808,7 @@ Those aren't the actions of a hero.
 }
 
 
-But of course covering up or rationalizing events isn't a U.S. only phenomena. Here are other examples:
+Of course covering up or rationalizing events isn't a U.S. only phenomena. Here are other examples:
 
 ◊ul{
   ◊li{◊link[rel-tiananmen]{As previously mentioned} the Chinese cover up of the Tiananmen Square Massacre.}
@@ -812,7 +824,8 @@ But of course covering up or rationalizing events isn't a U.S. only phenomena. H
 
     It was even forbidden to talk about them negatively.
   }
-  ◊li{How Soviet tried to cover up the ◊link[chernobyl-accident]{Chernobyl nuclear disaster}.◊sn{chernobyl-TV}}
+  ◊li{How the Soviet Union tried to cover up the ◊link[chernobyl-accident]{Chernobyl nuclear disaster}.◊sn{chernobyl-TV}
+  }
 }
 
 ◊note-pos{dan-hitler}
@@ -842,12 +855,12 @@ Unfortunately it seems like a human thing to try to hide your misdeeds instead o
   (x-ref
     "2019-08-28"
     "https://www.world-nuclear.org/information-library/safety-and-security/safety-of-plants/chernobyl-accident.aspx"
-    "Chernobyl Accident 1986"))
+    "World Nuclear Association: Chernobyl Accident 1986"))
 ◊(define chernobyl-TV
   (x-ref
     "2019-08-28"
     "https://www.imdb.com/title/tt7366338/"
-    "IMDB: Chernobyl"))
+    "IMDb: Chernobyl"))
 ◊(define word-viking
   (x-ref
     "2019-08-28"
@@ -857,7 +870,7 @@ Unfortunately it seems like a human thing to try to hide your misdeeds instead o
   (x-ref
     "2019-08-28"
     "https://www.youtube.com/watch?v=NvS351QKFV4"
-    "YouTube: Dschinghis Khan - Moskau 1979"))
+    "YouTube (2012) Dschinghis Khan - Moskau 1979"))
 ◊(define hardcore-history
   (x-ref
     "2019-08-28"
@@ -867,7 +880,7 @@ Unfortunately it seems like a human thing to try to hide your misdeeds instead o
   (x-ref
     "2019-08-28"
     "https://www.usnews.com/news/politics/articles/2019-05-24/trump-considers-pardons-for-soldiers-accused-of-war-crimes"
-    "Trump Considers Pardons for Soldiers Accused of War Crimes"))
+    "Associated Press, Wire Service Content (2019) Trump Considers Pardons for Soldiers Accused of War Crimes"))
 ◊(define gallagher
   (x-ref
     "2019-08-28"

@@ -15,7 +15,7 @@
 
 (define source-code
   `("https://github.com/treeman/why_cryptocurrencies"
-    "Source code to this site"))
+    "GitHub: Source code to this site"))
 
 (define email "contact@whycryptocurrencies.com")
 
@@ -64,7 +64,12 @@
   (book-ref
     "https://www.goodreads.com/book/show/13530973-antifragile"
     "Nassim Nicholas Taleb"
-    "Antifragile: Things That Gain from Disorder"))
+    "Antifragile"))
+(define black-swan-book
+  (book-ref
+    "https://www.goodreads.com/book/show/242472.The_Black_Swan"
+    "Nassim Nicholas Taleb"
+    "The Black Swan"))
 (define permanent-record-book
   (book-ref
     "https://www.goodreads.com/book/show/46223297-permanent-record"
@@ -90,6 +95,11 @@
     "https://masteringmonero.com/"
     "SerHack"
     "Mastering Monero"))
+(define zero-to-monero
+  (book-ref
+    "https://www.getmonero.org/library/Zero-to-Monero-1-0-0.pdf"
+    "Kurt M. Alanso and KOE"
+    "Zero to Monero"))
 
 ;; Defs
 
@@ -130,7 +140,7 @@
   (x-ref
     "2019-05-16"
     "https://www.britannica.com/topic/gold-standard"
-    "Gold standard"))
+    "Britannica: Gold standard"))
 (define fractional-banking
   (x-ref
     "2019-05-16"
@@ -140,7 +150,7 @@
   (x-ref
     "2019-05-16"
     "https://www.soundmoneydefense.org/sound-money-explained"
-    "What is Sound Money? Sound Money Explained"))
+    "Sound Money Defense League: What is Sound Money? Sound Money Explained"))
 
 (define kyc
   (x-ref
@@ -151,12 +161,12 @@
   (x-ref
     "2020-01-02"
     "https://www.investopedia.com/terms/a/aml.asp"
-    "Anti Money Laundering (AML)"))
+    "Will Kenton (2020) Anti Money Laundering (AML)"))
 (define moral-hazard
    (x-ref
      "2019-10-25"
      "https://www.thebalance.com/moral-hazard-what-it-is-and-how-it-works-315515"
-     "Moral Hazard: Definition and Examples "))
+     "Justin Pritchard: Moral Hazard: Definition and Examples "))
 
 ;; Chapters
 
@@ -193,6 +203,10 @@
   (ch-ref
     'how_do_cryptocurrencies_work.html #:ref "transaction-security"
     "How do cryptocurrencies work?: Transaction security"))
+(define sybil-attack
+  (ch-ref
+    'how_do_cryptocurrencies_work.html #:ref "sybil-attack"
+    "How do cryptocurrencies work?: Sybil attack"))
 (define double-spending
   (ch-ref
     'how_do_cryptocurrencies_work.html #:ref "copying-a-coin-&-double-spending"
@@ -205,6 +219,10 @@
   (ch-ref
     'what_is_money.html
     "What is money?"))
+(define historical-examples-of-money
+  (ch-ref
+    'what_is_money.html #:ref "historical-examples-of-money"
+    "What is money?: Historical examples of money"))
 (define money-properties
   (ch-ref
     'what_is_money.html #:ref "what-properties-does-good-money-have?"
@@ -275,6 +293,10 @@
   (ch-ref
     'global_currency.html
     "A global currency"))
+(define hyperinflation
+  (ch-ref
+    'global_currency.html #:ref "Hyperinflation is real"
+    "A global currency: Hyperinflation is real"))
 (define financial_crisis
   (ch-ref
     'financial_crisis.html
@@ -330,6 +352,10 @@
   (ch-ref
     'timestamping_service.html
     "Timestamping service"))
+(define timestamping_bug_example
+  (ch-ref
+    'timestamping_service.html #:ref "a-real-life-example"
+    "Timestamping service: A real-life example"))
 (define seeds-and-pseudo-random-generators
   (ch-ref
     'provably_fair_gambling.html #:ref "seeds-and-pseudo-random-generators"
@@ -363,6 +389,10 @@
   (ch-ref
     'cryptography.html
     "A hitchhiker’s guide to cryptography"))
+(define antifragility
+  (ch-ref
+    'antifragile.html
+    "Cryptocurrencies are antifragile"))
 
 ;; Misc links
 
@@ -391,19 +421,19 @@
   (x-ref
     #f
     "https://noscript.net/"
-    "NoScript"))
+    "NoScript: JavaScript/Java/Flash blocker for a safer Firefox experience!"))
 
 (define dao
   (x-ref
     "2019-04-24"
     "https://fullstacks.org/materials/ethereumbook/16_appdx-forks-history.html"
-    "Ethereum Fork History"))
+    "Fullstacks (2018) Ethereum Fork History"))
 
 (define block-0
   (x-ref
     "2019-10-25"
     "https://blockchair.com/bitcoin/block/0"
-    "Bitcoin block 0"))
+    "Blockchair: Bitcoin block 0"))
 
 (define great-depression
    (x-ref
@@ -415,7 +445,7 @@
    (x-ref
      "2019-12-09"
      "https://www.inkstonenews.com/china/chinas-13-million-discredited-individuals-face-discrimination-thanks-social-credit-system/article/3003319"
-     "‘Worse than doing time’: life on the wrong side of China’s social credit system"))
+     "Sarah Dai (2019) ‘Worse than doing time’: life on the wrong side of China’s social credit system"))
 (define wayback-machine 
   (x-ref
     "2019-06-12"
@@ -438,4 +468,9 @@
    (x-ref
      "2020-09-22"
      "https://www.reuters.com/article/us-usa-nsa-spying-idUSKBN25T3CK"
-     "U.S. court: Mass surveillance program exposed by Snowden was illegal"))
+     "Raphael Satter (2020) U.S. court: Mass surveillance program exposed by Snowden was illegal"))
+(define debasement
+   (x-ref
+     "2020-02-05"
+     "https://www.investopedia.com/terms/d/debasement.asp"
+     "Clay Halton: Debasement"))

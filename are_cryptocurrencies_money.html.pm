@@ -3,8 +3,9 @@
 ◊(define-meta title "Are cryptocurrencies money?")
 ◊(define-meta subtitle "How well do they work as money?")
 ◊(define-meta published "2019-05-23T00:00:00+01:00")
-◊(define-meta updated "2020-10-09T19:52:08+02:00")
+◊(define-meta updated "2021-03-10T19:02:23+01:00")
 ◊(define-meta uuid "f04af7c8-5fee-45c4-a5a4-80a3f6fbd31b")
+◊(define-meta template "chapter.html")
 
 ◊(clear-sidenotes)
 
@@ -14,9 +15,9 @@
   }
 }
 
-As we saw in the ◊link[prev-chapter]{previous chapter}, practically anything can be used as money. Therefore it's more useful to ask if cryptocurrencies have the properties of good money, and how well do they function as money today.
+As we saw in the ◊link[prev-chapter]{previous chapter}, practically anything can be used as money. Therefore, it's more useful to ask if cryptocurrencies have the properties of good money, and how well do they function as money today.
 
-In this chapter we'll see that cryptocurrencies have excellent monetary properties, but their function as money is held back by volatility and adoption.
+In this chapter, we'll see that cryptocurrencies have excellent monetary properties, but their function as money is held back by volatility and adoption.
 
 
 ◊subhead{Evaluating the properties of money}
@@ -38,7 +39,7 @@ To decide how well cryptocurrencies can function as money, we'll take a look at 
     }
     ◊li{◊strong{Fungible & Uniform}
 
-        For most cryptocurrencies fungibility is problematic. If all transaction history is public, like it is in Bitcoin, it could be used to ◊link[us-blacklist]{blacklist certain addresses} and in the long run break fungibility if coins having touched a blacklisted address becomes less valuable.
+        For most cryptocurrencies, fungibility is problematic. If all transaction history is public, like it is in Bitcoin, it could be used to ◊link[us-blacklist]{blacklist certain addresses}, and in the long run break fungibility if coins having touched a blacklisted address become less valuable.
 
         Cryptocurrencies like Monero tries to ◊link[privacy-challenge]{solve this problem}, so I'll say that cryptocurrencies are fungible.
     }
@@ -52,9 +53,9 @@ To decide how well cryptocurrencies can function as money, we'll take a look at 
     }
     ◊li{◊strong{Recognizable}
 
-        Cryptocurrencies are impossible to counterfeit and if implemented correctly they're easy to separate from each other.
+        Cryptocurrencies are impossible to counterfeit and if implemented correctly, they're easy to separate from each other.
 
-        While at a low level it may be difficult to tell which cryptocurrency a number belongs to, all necessary data is public so you can differentiate them. Wallet apps does this automatically, making them easy to identify.
+        While at a low level it may be difficult to tell which cryptocurrency a number belongs to, all necessary data is public so you can differentiate them. Wallet apps do this automatically, making them easy to identify.
     }
 }
 
@@ -66,7 +67,7 @@ All in all cryptocurrencies fulfil the properties excellently.
 Cryptocurrencies can also be considered to be ◊def[sound-money]{sound money}---the value is entirely market driven and there's no manipulation of the supply.◊mn{backed}
 
 ◊ndef["backed"]{
-    Traditionally sound money refers to money backed by precious material. Cryptocurrencies are instead backed by cryptography, and in Bitcoin's case the supply mimics the gold supply.
+    Traditionally sound money refers to money backed by precious material. Cryptocurrencies are instead backed by cryptography, and in Bitcoin's case, the supply mimics the gold supply.
 }
 
 ◊ndef["crypto-acceptable"]{
@@ -77,12 +78,12 @@ Cryptocurrencies can also be considered to be ◊def[sound-money]{sound money}--
   (x-ref
     "2019-05-23"
     "https://home.treasury.gov/news/press-releases/sm556"
-    "Treasury Designates Iran-Based Financial Facilitators of Malicious Cyber Activity and for the First Time Identifies Associated Digital Currency Addresses"))
+    "U.S. Department of the Treasury (2018) Treasury Designates Iran-Based Financial Facilitators of Malicious Cyber Activity and for the First Time Identifies Associated Digital Currency Addresses"))
 
 
 ◊subhead{Comparing properties with other forms of money}
 
-This is a table of how I think cryptocurrencies compares to other forms of money. I differentiate between the two forms of fiat---digital and physical---because they have different properties. Gold can be either gold coins or gold bars---basically some suitable physical form of gold.
+This is a table of how I think cryptocurrencies compare to other forms of money. I differentiate between the two forms of fiat---digital and physical---because they have different properties. Gold can be either gold coins or gold bars---basically some suitable physical form of gold.
 
 ◊table-body[#:class "crypto-eval"]{
     ◊tr{◊td{}                       ◊ths{Fiat (digital)} ◊ths{Fiat (physical)} ◊ths{Gold}     ◊ths{Cryptocurrencies}}
@@ -122,14 +123,14 @@ I know this might be controversial, so let me motivate some of the entries:
 ◊note-pos{borders}
 
 ◊ndef["acceptable"]{
-    You could argue that because you need a device with internet access, cryptocurrencies should get a lower score on ◊em{acceptable}. But you could also argue that having to transact in person is another drawback. To me they cancel out.
+    You could argue that because you need a device with internet access, cryptocurrencies should get a lower score on ◊em{acceptable}. But you could also argue that having to transact in person is another drawback, and to me they cancel out.
 }
 
 ◊ndef["durability"]{
-    The definition of ◊em{durability} is only concerned with reuse, where cryptocurrencies score excellently. But I wanted to include the storage drawback that didn't fit anywhere else.
+    The definition of ◊em{durability} is only concerned with reuse, where cryptocurrencies score excellently. I wanted to include the storage drawback that didn't fit anywhere else.
 }
 
-Even if you disagree about certain choices, it's hard to deny that cryptocurrencies come out of the comparison pretty well. But of course this doesn't give the whole picture. There are other significant differences, for example:
+Even if you disagree about certain choices, it's hard to deny that cryptocurrencies come out of the comparison pretty well. Of course, this doesn't give the whole picture. There are other significant differences, for example:
 
 ◊ul{
     ◊li{A big difference between cryptocurrencies and gold is that cryptocurrencies are digital. This isn't only positive---cryptocurrency implementations can have bugs that might have severe negative consequences.◊mn{bugs}}
@@ -159,7 +160,7 @@ Even if you disagree about certain choices, it's hard to deny that cryptocurrenc
 }
 
 ◊ndef["bugs"]{
-    A bug is a programming fault in the software. As a developer I can assure you, bugs will happen. The question is, how can you avoid the most severe ones and what do you do when they appear?
+    A bug is a programming fault in the software. As a developer, I can assure you that bugs will happen. The question is, how can you avoid the most severe ones, and what do you do when they appear?
 
     Both ◊link[monero-bug]{Monero} and ◊link[bitcoin-bug]{Bitcoin} has for example had major bugs that could have allowed an attacker to create coins for free. Neither were exploited... this time.
 }
@@ -168,7 +169,7 @@ Even if you disagree about certain choices, it's hard to deny that cryptocurrenc
   (x-ref
     "2019-05-23"
     "https://web.archive.org/web/20150801064652/http://dollardaze.org/blog/?page_id=00017"
-    "Demonetized Currencies"))
+    "DollarDaze: Demonetized Currencies"))
 
 ◊(define (ths txt)
    `(td ((class "ths")) ,txt))
@@ -187,12 +188,12 @@ Even if you disagree about certain choices, it's hard to deny that cryptocurrenc
   (x-ref
     "2019-05-23"
     "https://www.getmonero.org/2017/05/17/disclosure-of-a-major-bug-in-cryptonote-based-currencies.html"
-    "Disclosure of a Major Bug in CryptoNote Based Currencies"))
+    "luigi1111, Riccardo Spagni (2017) Disclosure of a Major Bug in CryptoNote Based Currencies"))
 ◊(define bitcoin-bug 
   (x-ref
     "2019-05-23"
     "https://bitcoincore.org/en/2018/09/20/notice/"
-    "CVE-2018-17144 Full Disclosure"))
+    "Bitcoin Core (2018) CVE-2018-17144 Full Disclosure"))
 
 
 ◊subhead{Do cryptocurrencies function as money?}
@@ -213,7 +214,8 @@ We've looked at the properties---but how well do they function as money, today?
         The valuation is highly speculation driven and has been notoriously volatile.◊mn{sov}
 
         ◊img[#:src "images/btc-valuation.svg" #:link #t #:alt "Bitcoin closing price per month, between 2010 and 2019."]{
-            ◊link[btc-valuation]{Bitcoin price per week}. The price peaked in December 2017 to $19,870, and some exchanges had it even higher. A year later the price had dropped to $3,177, a drop of over 84%.
+            ◊link[btc-valuation]{Bitcoin price per week up to the beginning of 2020}.  
+            The price peaked in December 2017 to $19,870, and some exchanges had it even higher. A year later the price had dropped to $3,177, a drop of over 84%.
         }
     }
 }
@@ -222,7 +224,7 @@ We've looked at the properties---but how well do they function as money, today?
   (x-ref
     "2020-09-29"
     "https://www.investing.com/crypto/bitcoin/historical-data"
-    "Investing.com Bitcoin historical price data"))
+    "Investing.com: Bitcoin historical price data"))
 
 ◊ndef["sov"]{
     There's a clique of Bitcoin supporters who claim the primary, and sometimes even the only, function of Bitcoin is as a store of value. Unfortunately it's based on wishful thinking (from a short-term investment view) and not reality.
@@ -231,7 +233,7 @@ We've looked at the properties---but how well do they function as money, today?
 While cryptocurrencies are used as money in certain communities and for certain goods,◊mn{goods} they're not in widespread use. They don't function very well as money globally, today.
 
 ◊ndef["goods"]{
-    Cryptocurrencies are quite popular for privacy-concerned users. For example most serious sellers of VPNs, domain names and VPS hosting accept payments via cryptocurrencies.
+    Cryptocurrencies are quite popular for privacy-concerned users. For example, most serious sellers of VPNs, domain names and VPS hosting accept payments via cryptocurrencies.
 }
 
 There are mainly two things holding it back today:
@@ -256,7 +258,7 @@ Perhaps it's to be expected that cryptocurrencies aren't global money yet---they
 }
 
 ◊ndef["shock-of-the-old"]{
-    For a different perspective of how technology gets adopted I recommend ◊(book-link shock-of-the-old-book) by David Edgerton. He argues that technology must be significantly better than the previous to see use, and even then the adoption is not as swift as one might think.
+    For a different perspective of how technology gets adopted, I recommend ◊(book-link shock-of-the-old-book) by David Edgerton. He argues that technology must be significantly better than the previous to see use, and even then the adoption is not as swift as one might think.
 
     Another perspective on network effects is given by Kevin Simler in his blog post ◊link[going-critical]{Going Critical}.
 }
@@ -265,12 +267,12 @@ Perhaps it's to be expected that cryptocurrencies aren't global money yet---they
   (x-ref
     "2019-05-23"
     "https://www.meltingasphalt.com/interactive/going-critical/"
-    "Going Critical"))
+    "Kevin Simler (2019) Going Critical"))
 
 
 ◊subhead{How well do other forms of money function?}
 
-Again let's try to compare cryptocurrencies with the other forms of money. This time I combine digital and physical fiat, since they function the same in practice.
+Again, let's try to compare cryptocurrencies with the other forms of money. This time I'll combine digital and physical fiat, since they function the same in practice.
 
 ◊table-body[#:class "crypto-eval"]{
     ◊tr{◊td{}                       ◊ths{Fiat}      ◊ths{Gold}     ◊ths{Cryptocurrencies}}
@@ -308,7 +310,7 @@ Several countries---◊link[skatt-bitcoin]{like Sweden}---have ruled that Bitcoi
     Legal tender declares that you have to accept it as money by law.
 }
 
-Cryptocurrencies just doesn't fit into existing rules of fiat currencies. This often happens with new innovations that break the mold---laws cannot keep up.◊mn{patents} For instance cryptocurrencies removes the third party requirement, something previously thought impossible.
+Cryptocurrencies just don't fit into existing rules of fiat currencies. This often happens with new innovations that break the mold---laws cannot keep up.◊mn{patents} For instance cryptocurrencies remove the third-party requirement, something previously thought impossible.
 
 ◊ndef["patents"]{
     Another beautiful example of laws not keeping up with technology is patents. ◊link[software-patents]{Software patents work horribly}, yet software is continuously pushed into the existing framework that doesn't really fit.
@@ -316,34 +318,34 @@ Cryptocurrencies just doesn't fit into existing rules of fiat currencies. This o
     One example is ◊link[one-click]{Amazon's one-click checkout patent}.
 }
 
-There are others who've ruled in favor of Bitcoin as a currency. For example ◊link[eu-ruled]{EU ruled} that VAT is not applicable to the conversion between fiat currency and Bitcoin, however VAT still applies when used for goods and services.
+There are others who've ruled in favor of Bitcoin as a currency. For example ◊link[eu-ruled]{the EU ruled} that VAT is not applicable to the conversion between fiat currency and Bitcoin, however VAT still applies when used for goods and services.
 
 ◊(define software-patents 
   (x-ref
     "2019-05-23"
     "https://www.eff.org/deeplinks/2013/02/deep-dive-software-patents-and-rise-patent-trolls"
-    "Deep Dive: Software Patents and the Rise of Patent Trolls"))
+    "Electronic Frontier Foundation (2013) Deep Dive: Software Patents and the Rise of Patent Trolls"))
 ◊(define one-click 
   (x-ref
     "2019-05-23"
     "https://patents.google.com/patent/US5960411"
-    "Method and system for placing a purchase order via a communications network "))
+    "US5960411A United States (1999) Method and system for placing a purchase order via a communications network "))
 ◊(define skatt-bitcoin
   (x-ref
     "2018-12-17"
     "https://www4.skatteverket.se/rattsligvagledning/373946.html?date=2018-12-17"
-    "Swedish link: Skatteverket divestment of Bitcoin"))
+    "Skatteverket (2018) HFD, mål nr 2674-18. Avyttring av bitcoin "))
 ◊(define eu-ruled 
   (x-ref
     "2019-05-23"
     "http://curia.europa.eu/juris/document/document.jsf?text=&docid=170305&pageIndex=0&doclang=en&mode=req&dir=&occ=first&part=1&cid=604646"
-    "Judgement of the court (Fifth Chamber): Case C‑264/14"))
+    "CURIA (2015) Judgement of the court (Fifth Chamber): Case C‑264/14"))
 ◊(define prev-chapter what_is_money)
 
 
 ◊subhead{So, are cryptocurrencies money?}
 
-Cryptocurrencies fulfil the properties of money very well---in fact they fulfil them better than any alternative in history. Unlike fiat they can also be considered sound money as the valuation is entirely market driven.
+Cryptocurrencies fulfil the properties of money very well---in fact, they fulfil them better than any alternative in history. Unlike fiat they can also be considered sound money as the valuation is entirely market driven.
 
 While they are used as money in certain communities, they do not function well as global money today. They're very volatile and adoption isn't there yet.
 

@@ -58,14 +58,13 @@ $sidenote-float-width: 1280px;
 .chapter > header > .date {
     text-align: right;
     font-size: 0.7rem;
-    margin-top: -0.4rem;
+    margin-top: -0.2rem;
+    margin-bottom: 0.4rem;
     @extend %sans-serif;
+    color: $body-font-color2;
 
     .published {
-        display: block;
-    }
-    .update {
-        display: block;
+        margin-right: 0.4rem;
     }
 }
 
@@ -77,6 +76,12 @@ $sidenote-float-width: 1280px;
         margin-top: -3rem;
         margin-right: -420px;
         width: 380px;
+        .published {
+            display: block;
+        }
+        .update {
+            display: block;
+        }
     }
 }
 
@@ -305,7 +310,7 @@ table.four {
  */
 pre, code {
     font-family: $code-font-family;
-    font-size: 0.71rem;
+    font-size: 0.83rem;
     line-height: 1.45;
     page-break-inside: avoid;
 }
@@ -437,8 +442,8 @@ li pre {
     margin-right: 0.5em;
 }
 .donation-content .address {
-    font-family: $hack;
-    font-size: 0.8rem;
+    font-family: $triplicate;
+    font-size: 0.9rem;
     word-wrap: break-word;
 }
 

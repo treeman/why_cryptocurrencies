@@ -5,6 +5,7 @@
 ◊(define-meta published "2019-12-15T00:00:00+01:00")
 ◊(define-meta updated "2020-10-09T19:51:35+02:00")
 ◊(define-meta uuid "dbc67487-8838-42cf-a8b8-fc982cf9142b")
+◊(define-meta template "chapter.html")
 
 ◊(clear-sidenotes)
 
@@ -20,9 +21,9 @@
    (x-ref
      "2019-12-15"
      "https://www.youtube.com/watch?v=xYPXIfwVyts"
-     "I am become Death (1 min)"))
+     "YouTube (2008) I am become Death (1 min)"))
 
-In previous parts we've looked at how cryptocurrencies provide ◊link[better_digital_payments]{better digital payments} and why they might be ◊link[better_currency]{better currencies}. This section focuses on some ways the world is changing, and what part cryptocurrencies may play.
+In previous parts we've looked at how cryptocurrencies provide ◊link[better_digital_payments]{better digital payments} and why they might be ◊link[better_currency]{better currencies}. This part focuses on some ways the world is changing, and what role cryptocurrencies may play.
 
 Even if we'd collectively agree that the world would be better off without cryptocurrencies, we cannot make them disappear. We cannot "uninvent" them and they're extremely difficult to shut down. Therefore, like with nuclear bombs, we're stuck with them and have to adapt to a new world.◊mn{destroyer-of-worlds}
 
@@ -40,7 +41,7 @@ While cryptocurrencies in some ways force the world to change, they can also pro
     Governments can be our friend, but they can also be our foe as well.
 }
 
-And cryptocurrencies have the potential for something even bigger. For the first time in history there's the possibility to separate control of money from the state. This would be an historic shift that would cause massive change worldwide. Of course this is speculation on my part, and even if it were to happen it probably wouldn't be during our lifetime.
+And cryptocurrencies have the potential for something even bigger. For the first time in history there's the possibility to separate control of money from the state. This would be a historic shift that would cause massive change worldwide. Of course this is speculation on my part, and even if it were to happen it probably wouldn't be during our lifetime.
 
 But one things seems clear to me. The Pandora's Box has been opened, and the world will never be the same again.
 
@@ -48,7 +49,7 @@ But one things seems clear to me. The Pandora's Box has been opened, and the wor
    (x-ref
      "2019-12-15"
      "https://www.dancarlin.com/hardcore-history-59-the-destroyer-of-worlds/"
-     "Dan Carlin's The Destroyer of Worlds"))
+     "Dan Carlin (2017) The Destroyer of Worlds"))
 ◊(define cryptolocker
    (x-ref
      "2019-12-15"

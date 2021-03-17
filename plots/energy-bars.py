@@ -31,6 +31,7 @@ energy = (24.72, 39.5, 46.94, 58.2, 94.23, 133)
 y_pos = np.arange(len(labels))
 
 mycol = '#343535'
+background_col = '#fcfcfc'
 
 plt.rcParams["font.family"] = "Concourse T4"
 plt.rcParams["axes.linewidth"] = 1
@@ -39,8 +40,11 @@ plt.rcParams["text.color"] = mycol
 plt.rcParams["xtick.color"] = mycol
 plt.rcParams["ytick.color"] = mycol
 plt.rcParams["ytick.minor.width"] = 0
+plt.rcParams['figure.facecolor'] = background_col
 
 fig, ax = plt.subplots(figsize=(6, 4.5))
+fig.set_facecolor(background_col)
+ax.set_facecolor(background_col)
 
 # http://ksrowell.com/blog-visualizing-data/2012/02/02/optimal-colors-for-graphs/
 energy_col = '#7293CB'
@@ -66,8 +70,8 @@ ax.set_xlabel('TWh')
 
 #plt.legend( (p2[0], p1[0]), ('Cited as sole reason', 'Cited with other reasons') )
 
-plt.savefig('energy-bars.svg', format="svg", transparent=True, bbox_inches="tight")
-print "done"
+plt.savefig('energy-bars.svg', format="svg", transparent=False, bbox_inches="tight")
+print("done")
 
 #print plt.style.available
 #print plt.rcParams.keys()

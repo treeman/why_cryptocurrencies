@@ -3,8 +3,9 @@
 ◊(define-meta title "Provably fair gambling")
 ◊(define-meta subtitle "Gambling where you cannot cheat the odds")
 ◊(define-meta published "2019-12-17T00:00:00+01:00")
-◊(define-meta updated "2020-10-09T19:49:20+02:00")
+◊(define-meta updated "2021-03-10T19:06:04+01:00")
 ◊(define-meta uuid "cf1cc907-4fda-4b98-81fd-b9c447cdadc5")
+◊(define-meta template "chapter.html")
 
 ◊(clear-sidenotes)
 
@@ -17,17 +18,17 @@
   }
 }
 
-I love the movie ◊link[oceans-11]{Ocean's Eleven (2011)}. I've a fascination for heists and how they in the movie win against the house in various gambles---by cheating of course. They hack the slot machines, they cheat in card games and they control the dice in craps like magicians. And they do it with style.
+I love the movie ◊link[oceans-11]{Ocean's Eleven (2011)}. I've a fascination for heists and how they in the movie win against the house in various gambles---by cheating, of course. They hack the slot machines, they cheat in card games and they control the dice in craps like magicians. And they do it with style.
 
-Cheating is possible in the real world as well. For example you could do a coin toss, but with a coin with heads on both sides. Or a coin that's heavier on one side, making the odds 55% and 45%. Don't let the numbers fool you---this is a huge difference compared to a 50/50 gamble.
+Cheating is possible in the real world, as well. For example you could do a coin toss, but with a coin with heads on both sides. Or a coin that's heavier on one side, making the odds 55% and 45%. Don't let the numbers fool you---this is a huge difference compared to a 50/50 gamble.
 
-But it's hard to verify that a gamble is fair. With a coin you ◊em{might} be able to feel it, and specialized anti-cheating machines might be able to measure dice, but you can never be sure. Gambling on the internet is a whole other can of worms, where you're often left trusting that the site isn't screwing you over.◊mn{poker-cheating}
+But it's hard to verify that a gamble is fair. With a coin, you ◊em{might} be able to feel it, and specialized anti-cheating machines might be able to measure dice, but you can never be sure. Gambling on the internet is a whole other can of worms, where you're often left trusting that the site isn't screwing you over.◊mn{poker-cheating}
 
 ◊ndef["poker-cheating"]{
-    There was a big poker scandal several years ago where it was discovered that ◊link[poker-scandal]{Ultimate Bet and Absolute Poker cheated in online poker}. They were discovered by people who noticed certain users who had "abnormally high winning statistics". Turns out they were using a superuser account that could see all cards.
+    There was a big poker scandal several years ago where it was discovered that ◊link[poker-scandal]{Ultimate Bet and Absolute Poker cheated in online poker}. They were discovered by people who noticed certain users who had "abnormally high winning statistics". Turns out they were using a superuser account that could see all the cards.
 }
 
-With cryptocurrencies we can device a scheme where gambling is provably fair. We can create a gambling site where users are sure the bets are fair---with mathematical certainty---and without a trusted third party facilitating the bets.
+With cryptocurrencies, we can devise a scheme where gambling is provably fair. We can create a gambling site where users are sure the bets are fair---with mathematical certainty---and without a trusted third-party facilitating the bets.
 
 ◊note-pos[#:top -9]{poker-cheating}
 
@@ -35,12 +36,12 @@ With cryptocurrencies we can device a scheme where gambling is provably fair. We
    (x-ref
      "2019-12-17"
      "https://upswingpoker.com/ultimate-bet-absolute-poker-scandal/"
-     "Ultimate Bet and Absolute Poker: What Happened?"))
+     "Natalie Faulk (2018) Ultimate Bet and Absolute Poker: What Happened?"))
 ◊(define oceans-11
    (x-ref
      "2019-12-17"
      "https://www.imdb.com/title/tt0240772/"
-     "Ocean's Eleven (2001)"))
+     "IMDb: Ocean's Eleven (2001)"))
 
 ◊; Another poker cheating scandal:
 ◊; https://news.ycombinator.com/item?id=21161043
@@ -64,7 +65,7 @@ The important thing about it is that you cannot predict what number comes next. 
 
 But if we want to flip a coin, and verify how it was flipped without looking at it, how could we do that? It's simple---just flip it again in ◊strong{exactly} the same way as you did before, and it should land exactly like it did before. (I didn't say it was easy!)
 
-With a pseudo-random generator that's what we can do. We give it a ◊em{seed}, which will produce a sequence that's unpredictable, except that when given the same seed it will always produce the same sequence. For example:
+With a pseudo-random generator, that's what we can do. We give it a ◊em{seed}, which will produce a sequence that's unpredictable, except that when given the same seed it will always produce the same sequence. For example:
 
 ◊code{
     seed 7:
@@ -84,9 +85,9 @@ A pseudo-random generator can produce a sequence of numbers, a number of coin to
 
 ◊(define minecraft-best-seeds
    (x-ref
-     "2019-12-17"
+     "2020-10-27"
      "https://progameguides.com/minecraft/minecraft-best-seeds/"
-     "Best Minecraft Seeds for April 2020 (1.15+ & 1.14+)"))
+     "Shaun Savage (2020) Best Minecraft Seeds for April 2020 (1.15+ & 1.14+)"))
 
 
 ◊subhead{A simple provably fair gambling scheme}
@@ -95,7 +96,7 @@ Here's a simple scheme that allows us to prove that a gamble has happened, what 
 
 Our gambling algorithm is simple. We'll concatenate the casino's seed with the player's seed and use it to initialize a pseudo-random generator, which will flip a coin to pick the winner. Here's a simple Python 3 script that does this for us:
 
-◊;Firstly the casino has to have published their gambling algorithm, and if you want to be able to prove to a third party that the gamble took place, both the casino and the player needs to sign off on the bet before playing out the bet.◊sn{otherwise}
+◊;Firstly the casino has to have published their gambling algorithm, and if you want to be able to prove to a third-party that the gamble took place, both the casino and the player needs to sign off on the bet before playing out the bet.◊sn{otherwise}
 
 ◊ndef["otherwise"]{
     If you don't publically sign the bet, there's always the risk that the casino can say that it never happened, and you cannot prove otherwise.
@@ -103,7 +104,7 @@ Our gambling algorithm is simple. We'll concatenate the casino's seed with the p
 
 ◊(code-hl "python3" "scripts/gambling.py")
 
-Importantly the casino should give out the seed encoded with a ◊def[hash-functions]{cryptographic hash function}, otherwise the player can just pick the winning seed and there would be no gamble. When the player has sent their seed to the casino, the bet has been made, and the casino reveals their seed (which we can verify with the hashed value) and we know who won and who lost.
+Importantly, the casino should give out the seed encoded with a ◊def[hash-functions]{cryptographic hash function}, otherwise the player can just pick the winning seed and there would be no gamble. When the player has sent their seed to the casino, the bet has been made, and the casino reveals their seed (which we can verify with the hashed value) and we know who won and who lost.
 
 Concretely a game could play out like this:
 
@@ -113,8 +114,8 @@ Concretely a game could play out like this:
             4b227777d4dd1fc61c6f884f48641d02b4d121d3fd328cb08b5531fcacdabf8a
         }
     }
-    ◊li{The player sends their seed ◊icode{1} to the casino.}
-    ◊li{The casino says they won, and reveals that their seed was ◊icode{4}.}
+    ◊li{The player sends their seed ◊icode{1} to the casino}
+    ◊li{The casino says they won, and reveals that their seed was ◊icode{4}}
 }
 
 To prove that the bet was made, the above interactions should be signed by both parties, complete with timestamps. It doesn't even have to be on a blockchain, just having a public key connected to their identity is enough. As long as either party has the signed messages, it's all good.◊mn{pull-out}
@@ -134,7 +135,7 @@ To prove that the bet was made, the above interactions should be signed by both 
 Now the player would like to verify that they did in fact lose:
 
 ◊ol{
-    ◊li{First we verify that the casino indeed used the seed ◊icode{4}.
+    ◊li{First we verify that the casino indeed used the seed ◊icode{4}
 
         ◊code{
             echo -n "4" | sha256sum
@@ -159,7 +160,7 @@ Now the player would like to verify that they did in fact lose:
     }
 }
 
-It checks out, the casino won fair and square.
+It checks out; the casino won fair and square.
 
 ◊; https://bitcoinchaser.com/provably-fair-gambling/
 
@@ -169,11 +170,11 @@ It checks out, the casino won fair and square.
 There are limits to the simple toy example I've described:
 
 ◊ul{
-    ◊li{Seeds need to be longer.
+    ◊li{Seeds need to be longer
 
         A seed like ◊icode{4} is far too simple. We'd need a much longer seed for the game to be secure. Maybe something like ◊icode{65654687731080707945}?
     }
-    ◊li{Multiplayer games are more complex.
+    ◊li{Multiplayer games are more complex
 
         This scheme works fine for simple single player games, like flipping a coin. But if we wanted to create a provable fair poker game the implementation would be more complex, but it would still be possible.◊mn{encrypt}
 
@@ -185,9 +186,9 @@ There are limits to the simple toy example I've described:
             I leave the implementation details as an exercise for the reader.
         }
     }
-    ◊li{Only for digitally randomized gambles.
+    ◊li{Only for digitally randomized gambles
 
-        It's not possible to bet on real life events, like the outcome of an ice hockey game, without relying on a trusted third party to announce the result of the game (often called an Oracle).
+        It's not possible to bet on real life events, like the outcome of an ice hockey game, without relying on a trusted third-party to announce the result of the game (often called an Oracle).
     }
 }
 

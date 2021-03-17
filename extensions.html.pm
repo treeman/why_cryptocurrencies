@@ -3,8 +3,9 @@
 ◊(define-meta title "Extensions")
 ◊(define-meta subtitle "Non-currency usage of a blockchain")
 ◊(define-meta published "2019-09-21T00:00:00+01:00")
-◊(define-meta updated "2020-10-09T19:50:51+02:00")
+◊(define-meta updated "2020-12-09T06:41:15+01:00")
 ◊(define-meta uuid "c83f3bb3-7277-43b0-ad8d-ee5ea4592a87")
+◊(define-meta template "chapter.html")
 
 ◊(clear-sidenotes)
 
@@ -16,10 +17,10 @@
 
 Money is perhaps the most obvious usage of cryptocurrencies but they support other use cases too. With embedded data and scripts cryptocurrencies can truly become "programmable money", where we use cryptocurrencies as a base and build new functionality on top.◊mn{blockchain-hype}
 
-There are many different ways this could be useful and I've selected some examples that I think have potential. I'll show how it's possible to tag a message with an unforgeable timestamp, create an uncensorable social media platform and make gambles provably fair. We'll finish with the usefulness of tracking assets with ◊def{tokens} and how a cryptocurrency based voting system have some surprisingly attractive properties.
+There are many different ways this could be useful and I've selected some examples that I think have potential. I'll show how it's possible to tag a message with an unforgeable timestamp, create an uncensorable social media platform and make gambles provably fair. We'll finish with the usefulness of tracking assets with ◊def{tokens} and how a cryptocurrency based voting system has some surprisingly attractive properties.
 
 ◊ndef["blockchain-hype"]{
-    I generally try to avoid the word ◊def{blockchain} which sometimes refer to private blockchains or blockchains which use a consensus model with known and trusted actors. Facebook's Libra is such an example and ◊link[ibm-blockchain]{IBM's blockchain} is another.
+    I generally try to avoid the word ◊def{blockchain} which sometimes refer to private blockchains or blockchains which use a consensus model with known and trusted actors. Facebook's Diem is such an example and ◊link[ibm-blockchain]{IBM's blockchain} is another.
 
     Don't let the similar names fool you: consensus algorithms with known participants and those with unknown participants are ◊strong{very} different. I only consider those using the latter to be cryptocurrencies.
 }
@@ -33,7 +34,7 @@ There are many different ways this could be useful and I've selected some exampl
    (x-ref
      "2019-09-21"
      "https://www.ibm.com/blockchain"
-     "IBM Blockchain is changing business, industries – and even the world"))
+     "IBM: IBM Blockchain is changing business, industries – and even the world"))
 
 
 ◊subhead{Embedding data}
@@ -41,7 +42,7 @@ There are many different ways this could be useful and I've selected some exampl
 The first thing we can observe is that it's possible to insert data into the ledgers of cryptocurrencies, essentially making the data immutable. It's not important exactly how, but if you're curious here are some ways:
 
 ◊ol{
-    ◊li{Miners can add data to blocks.
+    ◊li{Miners can add data to blocks
 
         For example Satoshi ◊link[block-0]{left a message} in the first ever Bitcoin block:◊mn{coinbase-data}
 
@@ -57,7 +58,7 @@ The first thing we can observe is that it's possible to insert data into the led
 
         ◊note-pos{coinbase-data}
     }
-    ◊li{Transactions can hold data.
+    ◊li{Transactions can hold data
 
         See the OP_RETURN field in ◊link[memo-blockchair]{this Bitcoin Cash transaction} which says:
 
@@ -65,7 +66,7 @@ The first thing we can observe is that it's possible to insert data into the led
             Memo has reached 500,000 on-chain actions!
         }
     }
-    ◊li{Addresses are user controlled.
+    ◊li{Addresses are user controlled
 
         Even if it's not intended you can always insert arbitrary data as long as you can control your address.◊mn{control-address} For example you could chain transactions, by sending from address to address, and treat the second character of the receiving address as your message:
 
@@ -111,22 +112,22 @@ The first thing we can observe is that it's possible to insert data into the led
    (x-ref
      "2019-09-21"
      "https://blockchair.com/bitcoin-cash/transaction/786816d4f92e9b8e78bf281e2b498daa526c93dc69a5e6b493c901928ee3f51d"
-     "Bitcoin transaction 786816d4f92e9b8e78bf281e2b498daa526c93dc69a5e6b493c901928ee3f51d"))
+     "Blockchair: Bitcoin transaction 786816d4f92e9b8e78bf281e2b498daa526c93dc69a5e6b493c901928ee3f51d"))
 ◊(define vanitygen
    (x-ref
      "2019-09-21"
      "https://en.bitcoin.it/wiki/Vanitygen"
-     "Vanitygen"))
+     "bitcoin.it wiki: Vanitygen"))
 ◊(define coinbase-ex
    (x-ref
      "2019-09-21"
      "https://blockchair.com/bitcoin/block/595563"
-     "Bitcoin block 595563"))
+     "Blockchair: Bitcoin block 595563"))
 ◊(define coinbase-txs
    (x-ref
      "2019-09-21"
      "https://learnmeabitcoin.com/glossary/coinbase-transaction"
-     "Coinbase Transaction: A transaction used to claim a block reward."))
+     "Greg Walker (2017) Coinbase Transaction: A transaction used to claim a block reward."))
 
 
 ◊subhead{Scripts}
@@ -137,7 +138,7 @@ Bitcoin does more than just transfer coins from one address to another. What it 
    (x-ref
      "2019-09-21"
      "https://en.bitcoin.it/wiki/Script"
-     "Bitcoin Script"))
+     "bitcoin.it wiki: Bitcoin Script"))
 
 ◊ndef["bitcoin-script"]{
     This is the script of a standard Bitcoin transaction (amount, destination and other data is specified elsewhere):
@@ -163,7 +164,7 @@ Now it doesn't matter if you know what a script is or how it works, just remembe
    (x-ref
      "2019-09-21"
      "https://www.cryptokitties.co/"
-     "CryptoKitties"))
+     "CryptoKitties: Collect and breed furrever friends!"))
 ◊(define turing-complete
    (x-ref
      "2019-09-21"
@@ -173,12 +174,12 @@ Now it doesn't matter if you know what a script is or how it works, just remembe
    (x-ref
      "2019-09-21"
      "https://blockgeeks.com/guides/ethereum-gas/"
-     "What is Ethereum Gas? [The Most Comprehensive Step-By-Step Guide Ever!]"))
+     "Blockgeeks: What is Ethereum Gas? [The Most Comprehensive Step-By-Step Guide Ever!]"))
 ◊(define multisig
    (x-ref
      "2019-09-21"
      "https://en.bitcoin.it/wiki/Multisignature"
-     "Bitcoin Multisignature"))
+     "bitcoin.it wiki: Bitcoin Multisignature"))
 ◊(define bitcoin-script-tutorial
    (x-ref
      "2019-09-21"
@@ -188,5 +189,5 @@ Now it doesn't matter if you know what a script is or how it works, just remembe
    (x-ref
      "2019-09-21"
      "https://solidity.readthedocs.io/en/v0.5.11/"
-     "Solidity"))
+     "Solidity docs v0.5.11"))
 

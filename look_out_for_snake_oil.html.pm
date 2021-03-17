@@ -1,10 +1,11 @@
 #lang pollen
 
 ◊(define-meta title "Look out for snake oil")
-◊(define-meta subtitle "The space is new, hyped and full of misleading information")
+◊(define-meta subtitle "The space is new, hyped, and full of misleading information")
 ◊(define-meta published "2019-05-06T00:00:00+01:00")
-◊(define-meta updated "2020-10-09T19:49:44+02:00")
+◊(define-meta updated "2021-03-10T19:05:28+01:00")
 ◊(define-meta uuid "635e169f-885a-4d29-a266-4c9ef4981f47")
+◊(define-meta template "chapter.html")
 
 ◊(clear-sidenotes)
 
@@ -22,37 +23,48 @@
   (x-ref
     "2019-05-06"
     "https://www.youtube.com/watch?v=DHc81OL_hk4&feature=youtu.be&t=21235"
-    "Baltic Honeybadger 2017 Bitcoin Conference"))
+    "YouTube: Baltic Honeybadger 2017 Bitcoin Conference"))
 
 A snake oil salesperson sells, or promotes, a valueless or fraudulent solution. The cryptocurrency space is full of such people and broken solutions.
 
 
 ◊subhead{Not really cryptocurrencies}
 
-There are many projects in the cryptocurrency space that, curiously enough, aren't actually cryptocurrencies. Some even go so far as to call them cryptocurrencies even though they don't fulfil the criteria. For example I don't consider these real cryptocurrencies:
+There are many projects in the cryptocurrency space that, curiously enough, aren't actually cryptocurrencies. Some even go so far as to call them cryptocurrencies even though they don't fulfil the criteria. For example, I don't consider these real cryptocurrencies:
 
 ◊ul{
-  ◊li{OneCoin and Bitconnect---they're plain pyramid schemes.◊sn{pyramid-schemes}}
-  ◊li{Ripple.}
-  ◊li{Stablecoins like ◊link[tether]{Tether}◊sn{tether} or JP Morgan's ◊link[JPM-coin]{JPM coin}.}
-  ◊li{"Second layer solutions" like the Lightning Network.}
-  ◊li{Smart tokens like the ERC20 tokens running on top of Ethereum.◊sn{ICOs}}
-  ◊li{Facebook's Libra.}
+  ◊li{OneCoin and Bitconnect---they're simple pyramid schemes◊sn{pyramid-schemes}}
+  ◊li{Ripple◊sn{ripple}}
+  ◊li{Stablecoins like ◊link[tether]{Tether}◊sn{tether} or JP Morgan's ◊link[JPM-coin]{JPM coin}}
+  ◊li{"Second layer solutions" like the Lightning Network}
+  ◊li{Smart tokens like the ERC20 tokens running on top of Ethereum◊sn{ICOs}}
+  ◊li{◊link[diem]{Facebook's Diem} (renamed from Libra due to bad publicity)}
 }
 
 ◊note-pos[#:top -14]{pyramid-schemes}
-◊note-pos[#:top -5]{tether}
+◊note-pos[#:top -5]{ripple}
+◊note-pos[#:top -2]{tether}
 ◊note-pos{ICOs}
 
-Some might be useful but they don't have the same properties as cryptocurrencies like Bitcoin, and they don't work the same way.
+Some might be useful, but they don't have the same properties as cryptocurrencies like Bitcoin, and they don't work the same way.
 
-For example stablecoins depend on a third party issuer and redeemer---the very thing cryptocurrencies are meant to remove. Second layer solutions have fundamentally different security trade-offs and they work differently; they're built on top of---but they are not---cryptocurrencies.
+For example, stablecoins depend on a third-party issuer and redeemer---the very thing cryptocurrencies are meant to remove. Second layer solutions have fundamentally different security trade-offs and they work differently; they're built on top of---but they are not---cryptocurrencies.
 
 Be very skeptical of sites like ◊link[coinmarketcap]{CoinMarketCap} that says it lists the "Top 100 Cryptocurrencies by Market Capitalization" because most of the coins listed aren't real cryptocurrencies. Like how Tether is currently #3 on the list (2020-09-21), but that's meaningless since they can be printed out of thin air, significantly warping the market cap.
 
-◊ndef["tether"]{
-    After years of suspicion Tether recently admitted ◊link[tether-backed-74]{it's only backed 74% by cash}.
+◊ndef["ripple"]{
+    The SEC ◊link[ripple-sec]{charged Ripple and two executives with conducting an unregistered securities offering}.
 }
+
+◊ndef["tether"]{
+    After years of suspicion Tether finally admitted ◊link[tether-backed-74]{it's only backed 74% by cash}.
+}
+
+◊(define ripple-sec
+  (x-ref
+    "2020-01-04"
+    "https://www.sec.gov/news/press-release/2020-338"
+    "U.S. Securities and Exchange Commission (2020) SEC Charges Ripple and Two Executives with Conducting $1.3 Billion Unregistered Securities Offering"))
 
 
 ◊subhead{The blockchain hype}
@@ -72,36 +84,36 @@ Be aware of "the blockchain" being used only as a buzzword.
 
 ◊subhead{Warning signs to look out for}
 
-When evaluating cryptocurrencies here are some red flags to look out for:
+When evaluating cryptocurrencies, here are some red flags to look out for:
 
 ◊ul{
-    ◊li{Heavily slanted initial coin supply.◊mn{supply}
+    ◊li{Heavily slanted initial coin supply◊mn{supply}
 
         Like only creating 21 million coins, but keeping 20 million for yourself.◊note-pos{supply}
     }
-    ◊li{Central authorities.
+    ◊li{Central authorities
 
         A "centralized cryptocurrency" is an oxymoron because it's not trustless or permissionless and it doesn't prevent a single entity from manipulating the supply, the very things that define a cryptocurrency. A "private blockchain" has the same fatal flaws.
 
         If someone can freeze your coins, prevent them from being used in a particular country or generate them from thin air then it's not a cryptocurrency.
     }
-    ◊li{Bad consensus algorithms or centralized governance protocols.
+    ◊li{Bad consensus algorithms or centralized governance protocols
 
-        If a cryptocurrency isn't working like I describe in ◊(link how_do_cryptocurrencies_work), then chances are it's not actually decentralized and calling it a cryptocurrency might be a stretch.
+        If a cryptocurrency isn't working as I describe in ◊(link how_do_cryptocurrencies_work), then chances are it's not actually decentralized and calling it a cryptocurrency might be a stretch.
     }
-    ◊li{Promises that sound too good to be true.
+    ◊li{Promises that sound too good to be true
 
         For example promising instant transactions and infinite scalability, while compromising the decentralization and security of the network. ◊em{Proof-of-stake} coins are usually guilty of this.
     }
-    ◊li{Propaganda.
+    ◊li{Propaganda
 
-        Social media is chock-full of users who tries to sell snake oil to you. Slander, lies and censorship is a daily occurrence.◊mn{censorship} ◊note-pos{censorship}
+        Social media is chock-full of users who try to sell snake oil to you. Slander, lies, and censorship is a daily occurrence.◊mn{censorship} ◊note-pos{censorship}
     }
-    ◊li{Large drawbacks.
+    ◊li{Large drawbacks
 
         Like having expensive and unreliable transactions or having to be online to receive payments.
     }
-    ◊li{Problems are hand-waved away.
+    ◊li{Problems are hand-waved away
 
         “We'll figure it out” or “It'll be ready in 18 months” (forever).
     }
@@ -111,7 +123,7 @@ There are many traps to fall into in this space. I think the best antidote is to
 
 
 ◊ndef["pyramid-schemes"]{
-    Leaders of OneCoin got charged for ◊link[onecoin]{operating it as a pyramid scheme} and I'll recommend BBC's podcast series ◊link[missing-crypto-queen]{The Missing Cryptoqueen} for a fascinating account of the scam. Meanwhile the FBI is seeking ◊link[fbi-bitconnect]{victims who invested in Bitconnect}.
+    Leaders of OneCoin got charged for ◊link[onecoin]{operating it as a pyramid scheme} and I'll recommend BBC's podcast series ◊link[missing-crypto-queen]{The Missing Cryptoqueen} for a fascinating account of the scam. Meanwhile, the FBI is seeking ◊link[fbi-bitconnect]{victims who invested in Bitconnect}.
 }
 
 ◊ndef["ICOs"]{
@@ -121,13 +133,13 @@ There are many traps to fall into in this space. I think the best antidote is to
 }
 
 ◊ndef["supply"]{
-    Slanting the coin supply come in many variants. It's common to assign large parts of the initial supply to the creators or to mine the chain in secret before releasing it to the public.
+    Slanting the coin supply comes in many variants. It's common to assign large parts of the initial supply to the creators or to mine the chain in secret before releasing it to the public.
 
-    A more sinister tactic is ot introduce a bug in the code that allows miners to mine extremely fast---and only fix it after you've mined a big portion. This is what ◊link[dash]{Dash did} in a so-called ◊em{instamine}.
+    A more sinister tactic is to introduce a bug in the code that allows miners to mine extremely fast---and only fix it after you've mined a big portion. This is what ◊link[dash]{Dash did} in a so-called ◊em{instamine}.
 }
 
 ◊ndef["censorship"]{
-    Imagine the irony of censorship being a problem in communities supporting censorship-free money. Unfortunately ◊link[bitcoin-censorship]{examples} of ◊link[r/cryptocurrency-censorship]{censorship} on ◊link[bitcoin-censorship3]{Reddit} are ◊link[bitcoin-censorship2]{plentiful}.
+    Imagine the irony of censorship being a problem in communities supporting censorship-free money. Unfortunately, ◊link[bitcoin-censorship]{examples} of ◊link[r/cryptocurrency-censorship]{censorship} on ◊link[bitcoin-censorship3]{Reddit} are ◊link[bitcoin-censorship2]{plentiful}.
 }
 
 ◊(define missing-crypto-queen
@@ -144,17 +156,17 @@ There are many traps to fall into in this space. I think the best antidote is to
   (x-ref
     "2019-05-06"
     "https://decryptmedia.com/5173/jp-morgan-coin-cryptocurrency"
-    "JP Morgan Coin: The next big cryptocurrency?"))
+    "Tim Copeland (2019) JP Morgan Coin: The next big cryptocurrency?"))
 ◊(define tether-backed-74
   (x-ref
     "2019-05-06"
     "https://www.bloomberg.com/news/articles/2019-04-30/tether-says-stablecoin-is-only-backed-74-by-cash-securities"
-    "Tether Says Stablecoin Is Only Backed 74% by Cash, Securities"))
+    "Olga Kharif (2019) Tether Says Stablecoin Is Only Backed 74% by Cash, Securities"))
 ◊(define dash
   (x-ref
     "2019-05-06"
     "https://bitcointalk.org/index.php?topic=999886.0"
-    "bitcointalk.org: Why the darkcoin/dash/dashpay instamine matters "))
+    "bitcointalk.org (2015) Why the darkcoin/dash/dashpay instamine matters "))
 ◊(define git
   (x-ref
     "2019-05-06"
@@ -164,36 +176,40 @@ There are many traps to fall into in this space. I think the best antidote is to
   (x-ref
     "2019-05-06"
     "https://www.bloomberg.com/news/articles/2019-03-08/onecoin-leaders-charged-in-u-s-with-operating-pyramid-scheme"
-    "OneCoin Leaders Charged in Multibillion-Dollar Pyramid Scam"))
+    "Chris Dolmetsch (2019) OneCoin Leaders Charged in Multibillion-Dollar Pyramid Scam"))
 ◊(define fbi-bitconnect
   (x-ref
     "2019-05-06"
     "https://www.fbi.gov/resources/victim-services/seeking-victim-information/seeking-victims-in-bitconnect-investigation"
-    "Seeking Victims in Bitconnect Investigation"))
+    "FBI (2019) Seeking Victims in Bitconnect Investigation"))
 ◊(define bitcoin-censorship
   (x-ref
     "2019-05-06"
     "https://medium.com/@johnblocke/a-brief-and-incomplete-history-of-censorship-in-r-bitcoin-c85a290fe43"
-    "A (brief and incomplete) history of censorship in /r/Bitcoin"))
+    "John Blocke (2016) A (brief and incomplete) history of censorship in /r/Bitcoin"))
 ◊(define bitcoin-censorship2
   (x-ref
     "2019-05-06"
     "https://www.reddit.com/r/btc/comments/83vgdm/a_collection_of_evidence_regarding_bitcoins/"
-    "A collection of evidence regarding Bitcoin's takeover and problems."))
+    "thepaip (2018) A collection of evidence regarding Bitcoin's takeover and problems."))
 ◊(define bitcoin-censorship3
   (x-ref
     "2019-05-06"
     "https://www.reddit.com/r/noncensored_bitcoin/comments/7414nf/september_2017_stats_post/"
-    "r/noncensored_bitcoin: September 2017 Stats Post"))
+    "Wezz (2017) September 2017 Stats Post"))
 ◊(define r/cryptocurrency-censorship
   (x-ref
     "2019-05-06"
     "https://www.trustnodes.com/2019/05/01/the-cryptocurrency-sub-tests-censorship-after-bitcoin-core-supporter-suddenly-becomes-top-mod"
-    "The Cryptocurrency Sub Tests Censorship After Bitcoin Core Supporter Suddenly Becomes Top Mod"))
+    "Trustnodes (2019) The Cryptocurrency Sub Tests Censorship After Bitcoin Core Supporter Suddenly Becomes Top Mod"))
 ◊(define coinmarketcap
   (x-ref
     "2020-09-21"
     "https://coinmarketcap.com/"
     "CoinMarketCap: Cryptocurrency Market Capitalization"))
-
+◊(define diem
+  (x-ref
+    "2020-12-08"
+    "https://www.diem.com/en-us/"
+    "Diem Association "))
 

@@ -64,6 +64,7 @@ toc = [
     "bitcoin_whitepaper.html",
     "challenges.html",
     "cryptography.html",
+    "antifragile.html",
 ]
 
 titles = {
@@ -106,6 +107,7 @@ titles = {
     "bitcoin_whitepaper.html": "The Bitcoin white paper",
     "challenges.html": "Challenges for cryptocurrencies",
     "cryptography.html": "A hitchhiker’s guide to cryptography",
+    "antifragile.html": "Cryptocurrencies are antifragile",
 }
 
 # {src: dst} of hrefs we need to replace
@@ -153,6 +155,7 @@ def setup_basics():
 def setup_images():
     subprocess.run(f"mkdir -p {image_dir}", shell=True)
     subprocess.run(f"mkdir -p {image_dir}/markets", shell=True)
+    subprocess.run(f"mkdir -p {image_dir}/cover", shell=True)
 
     # Manually added images
     subprocess.run(f"cp {ebook_files_dir}/images/* {image_dir}/", shell=True)

@@ -3,20 +3,21 @@
 ◊(define-meta title "Separation of money and state")
 ◊(define-meta subtitle "Countries that don't manage their own money")
 ◊(define-meta published "2020-02-05T06:24:16+01:00")
-◊(define-meta updated "2020-10-09T19:49:14+02:00")
+◊(define-meta updated "2021-03-10T19:06:14+01:00")
 ◊(define-meta uuid "a5636cbf-bec1-4795-8c66-5725b0eec7bf")
+◊(define-meta template "chapter.html")
 
 ◊(clear-sidenotes)
 
 ◊img[#:src "images/bitcoin-priest.png" #:class "slim" #:alt "A priest with a crown, holding a sword and a bag of Bitcoin."]{}
 
-When I first started thinking about cryptocurrencies I thought they were just useful for some people who couldn't use regular transactions, like buying weed or things on a darknet market. Or that it was a better payment system as there was no middleman to skim off large fees from all transactions. That's useful, but it didn't strike me as revolutionary.◊mn{fees}
+When I first started thinking about cryptocurrencies, I thought they were just useful for some people who couldn't use regular transactions, like buying weed or things on a darknet market. Or that it was a better payment system as there was no middleman to skim off large fees from all transactions. That's useful, but it didn't strike me as revolutionary.◊mn{fees}
 
 ◊ndef["fees"]{
     I do think ◊link[cheaper_faster]{avoiding up to 5%} fees on practically all digital payments is an under-appreciated benefit of cryptocurrencies. It might be overshadowed by the volatility, but the potential benefit to the economy is absolutely huge.
 }
 
-But the idea of separating money from state made me go "Wow, that could actually have a huge impact." As we've seen earlier the financial system ◊link[a_defective_system]{relies heavily on manipulating the money supply} and on ◊link[the_blind_leading_the_blind]{predicting and reacting to the market}. This would, for better or worse, be largely impossible if states no longer controlled the money supply and if people used cryptocurrencies instead.
+But the idea of separating money from state made me go "Wow, that could actually have a huge impact." As we've seen earlier, the financial system ◊link[a_defective_system]{relies heavily on manipulating the money supply} and on ◊link[the_blind_leading_the_blind]{predicting and reacting to the market}. This would, for better or worse, be largely impossible if states no longer controlled the money supply and if people used cryptocurrencies instead.
 
 
 ◊subhead{Religion and state}
@@ -36,7 +37,7 @@ But the idea of separating money from state made me go "Wow, that could actually
   (x-ref
     "2020-02-05"
     "https://www.youtube.com/watch?v=-yIZBUgKfuw"
-    "Sabaton - Carolus Rex (English) (lyrics) HD (5 min)"))
+    "YouTube (2015) Sabaton - Carolus Rex (English) (lyrics) HD (5 min)"))
 
 I know it might be difficult to entertain the notion that a country shouldn't control their own money, and that the mere suggestion is outrageous.  If this is the case for you, consider the historically similar relationship between religion and state:
 
@@ -62,22 +63,22 @@ Separating church from the state was once unthinkable, yet it's now a given that
    (x-ref
      "2020-02-05"
      "https://www.britannica.com/biography/Gustav-I-Vasa"
-     "Gustav I Vasa"))
+     "Britannica: Gustav I Vasa"))
 ◊(define reformation
    (x-ref
      "2020-02-05"
      "https://www.britannica.com/event/Reformation"
-     "Reformation"))
+     "Britannica: Reformation"))
 ◊(define separation
    (x-ref
      "2020-02-05"
      "https://popularhistoria.se/sveriges-historia/kyrkan-och-staten-en-historisk-separation"
-     "Kyrkan och staten – en historisk separation"))
+     "Thorsten Sandberg (2002) Kyrkan och staten – en historisk separation"))
 ◊(define least-religious
    (x-ref
      "2020-02-05"
      "https://www.worldatlas.com/articles/least-religious-countries-in-the-world.html"
-     "The Least Religious Countries In The World"))
+     "Oishimaya Sen Nag (2018) The Least Religious Countries In The World"))
 
 ◊;Sweden 1 Jan 2000 formally separated the church from the state.
 ◊;https://www.dagen.se/dokument/sa-fri-ar-svenska-kyrkan-fran-staten-egentligen-1.1632522
@@ -88,19 +89,13 @@ Separating church from the state was once unthinkable, yet it's now a given that
 
 ◊subhead{Not that unusual}
 
-In practice some countries have already separated money from their state, as they use money someone else control. For example the ◊link[euro]{Euro} is managed by the ◊link[ecb]{European Central Bank (ECB)}, and the countries that use the Euro have very little influence in the ECB's decision-making (well, most of them anyway). There are also countries that ◊link[countries-use-us]{use the U.S. dollar as their official currency}, while having no say in what the U.S. does with it.
+In practice some countries have already separated money from their state, as they use money someone else controls. For example the ◊link[euro]{Euro} is managed by the ◊link[ecb]{European Central Bank (ECB)}, and the countries that use the Euro have very little influence in the ECB's decision-making (well, most of them anyway). There are also countries that ◊link[countries-use-us]{use the U.S. dollar as their official currency}, while having no say in what the U.S. does with it.
 
 Gold might also be an example of money outside of state control---there's nobody with exclusive access to gold after all. But in practice someone has to cast the gold to coins for it to be usable as money, including a "government approved" stamp on them, which gives some sort of control over the money. After all, it's difficult to determine what a coin is made of so we just trust the stamp on it.◊mn{debasement}
 
 ◊ndef["debasement"]{
-    Because people don't actually verify the amount of gold in the coins, they could for example slowly decrease the amount of gold in the coins. This would enable them to make more coins and effectively increase the money supply. This is called ◊def[debasement]{debasement} and has been very common historically.
+    Because people don't actually verify the amount of gold in the coins, they could via ◊def[debasement]{debasement}  slowly decrease the amount of gold in the coins. This would enable them to make more coins and effectively increase the money supply.
 }
-
-◊(define debasement
-   (x-ref
-     "2020-02-05"
-     "https://www.investopedia.com/terms/d/debasement.asp"
-     "Debasement"))
 
 Maybe a better example is shell money, or other money found in nature, where you just pick them up and start using them. Although they're lacking compared to coins or modern money, there's no one in charge of minting or stamping shells.
 
@@ -128,7 +123,7 @@ While historical examples of states without direct control over their money exis
 
 ◊subhead{What will the future hold?}
 
-It's impossible to predict the future. For example the iPhone was released in 2007 and today almost everyone carry a smartphone in their pocket. This is particularly crazy because each is ◊link[apollo-smartphone]{◊em{millions} of times more powerful} than all of the combined computing power of NASA that put man on the moon 50 years ago.
+It's impossible to predict the future. For example the iPhone was released in 2007 and today almost everyone carries a smartphone in their pocket. This is particularly crazy because each is ◊link[apollo-smartphone]{◊em{millions} of times more powerful} than all of the combined computing power of NASA that put man on the moon 50 years ago.
 
 Nobody could've predicted this explosive technological development, so how can we predict where cryptocurrencies will take us? I don't think they'll completely revolutionize the world in a decade, but it's impossible to say what will happen 50 or 100 years from now.
 
@@ -160,12 +155,12 @@ Which scenario is more likely? And what would the ideal scenario look like? That
    (x-ref
      "2020-02-05"
      "https://www.investopedia.com/articles/forex/040915/countries-use-us-dollar.asp"
-     "Countries That Use The U.S. Dollar"))
+     "Troy Adkins: Countries That Use The U.S. Dollar"))
 ◊(define apollo-smartphone
    (x-ref
      "2020-02-05"
      "https://www.zmescience.com/research/technology/smartphone-power-compared-to-apollo-432/"
-     "Your smartphone is millions of times more powerful than the Apollo 11 guidance computers"))
+     "Tibi Puiu (2020) Your smartphone is millions of times more powerful than the Apollo 11 guidance computers"))
 ◊(define e-krona
    (x-ref
      "2020-02-05"
