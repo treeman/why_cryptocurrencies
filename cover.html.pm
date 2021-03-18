@@ -4,6 +4,7 @@
 ◊(define-meta no-side-space #t)
 ◊(define-meta no-section-chapters-header #t)
 ◊(define-meta skip-feed #t)
+◊(define-meta template "chapter.html")
 
 I'm looking for a cover page for my book. There is ◊link[toc-url]{an online version} that's free for all to read, but I want to convert it to a physical book and an eBook (PDF and epub) and I'd like to commission a cover page for it.
 

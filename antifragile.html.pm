@@ -5,6 +5,7 @@
 ◊(define-meta published "2020-12-30T13:51:09+01:00")
 ◊(define-meta updated "2021-03-10T19:02:12+01:00")
 ◊(define-meta uuid "9ce74583-fbbd-42d4-940e-3a9e44ed0658")
+◊(define-meta template "chapter.html")
 
 ◊; https://unchained-capital.com/blog/bitcoin-is-antifragile/
 ◊; https://cryptofundamental.com/in-pursuit-of-lindycoin-212bacafc395?gi=416e2a7a461c
