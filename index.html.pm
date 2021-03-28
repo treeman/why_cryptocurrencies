@@ -76,7 +76,7 @@
       ◊li{Beautiful design}
       ◊li{Each page laid out by hand with utmost precision}
       ◊li{Hand-drawn colored illustrations}
-      ◊li{ISBN: }
+      ◊li{ISBN: 978-91-986762-0-4}
     }
   }
 
@@ -93,7 +93,7 @@
 
     ◊ul[#:class "features"]{
       ◊li{Meticulously tuned CSS}
-      ◊li{ISBN: }
+      ◊li{ISBN: 978-91-986762-1-1}
     }
   }
   ◊book-type["pdf" "PDF"]{
@@ -107,7 +107,7 @@
     ◊ul[#:class "features"]{
       ◊li{Same hand-crafted layout as the printed version}
       ◊li{Looks the same on every reader and device}
-      ◊li{ISBN: }
+      ◊li{ISBN: 978-91-986762-2-8}
     }
   }
   ◊book-type["web" "Web"]{
