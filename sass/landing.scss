@@ -308,8 +308,8 @@ $small-screen: 1067px;
         flex-wrap: wrap;
         justify-content: center;
     }
-    nav.buttons > a, nav.buttons > div.soon {
-        flex: 1;
+    nav.buttons a, nav.buttons div.soon {
+        // flex: 1;
         text-align: center;
         width: 100%;
         background-color: $button-color;
@@ -322,11 +322,11 @@ $small-screen: 1067px;
         cursor: pointer;
         box-shadow: 1px 1px 0px $button-shadow-color;
     }
-    nav.buttons > a:hover {
+    nav.buttons a:hover {
         background-color: $button-hover-color;
         cursor: pointer;
     }
-    nav.buttons > div.soon {
+    nav.buttons div.soon {
         cursor: auto;
         background-color: $invalid-button-color;
         box-shadow: 1px 1px 0px $invalid-button-shadow-color;
@@ -335,7 +335,7 @@ $small-screen: 1067px;
     ul.features {
         margin-top: 24px;
     }
-    ul.features > li::before {
+    ul.features li::before {
         @extend %sans-serif;
         content: "•";
         padding-right: 16px;

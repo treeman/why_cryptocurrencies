@@ -67,9 +67,11 @@
 
   ◊book-type["print" `(a ((name "print")) "Print")]{
     ◊nav[#:class "buttons"]{
-      ◊;◊li{Buy from Amazon}
-      ◊;◊li{Download Sample PDF}
-      ◊|coming-soon|
+      ◊link[amazon.com-print]{Pre-order from Amazon}
+      ◊link[book-depository-print]{Book Depository}
+      ◊link[barnes-and-nobles-print]{Barnes & Nobles}
+      ◊link["#"]{Download Sample PDF}
+      ◊;◊|coming-soon|
     }
 
     ◊ul[#:class "features"]{
@@ -84,11 +86,11 @@
     ◊nav[#:class "buttons"]{
       ◊|coming-soon|
       ◊;◊li{Buy directly from me with crypto}
-      ◊;◊li{Kindle}
-      ◊;◊li{iBooks}
-      ◊;◊li{Play Books}
-      ◊;◊li{Nook}
-      ◊;◊li{EPUB}
+      ◊;◊li{Kindle Amazon}
+      ◊;◊li{iBooks Apple}
+      ◊;◊li{Play Books Google}
+      ◊;◊li{Nook B&N}
+      ◊;◊li{EPUB Smashwords}
     }
 
     ◊ul[#:class "features"]{
@@ -240,6 +242,23 @@
     #f
     "https://www.keys4coins.com/"
     "Keys4Coins"))
+
+◊(define amazon.com-print
+  (x-ref
+    #f
+    "https://www.amazon.com/Why-Cryptocurrencies-What-they-matter/dp/9198676202"
+    "Why Cryptocurrencies? on amazon.com"))
+◊(define book-depository-print
+  (x-ref
+    #f
+    "https://www.bookdepository.com/Why-Cryptocurrencies-Jonas-Hietala/9789198676204"
+    "Why Cryptocurrencies? on Book Depository"))
+◊(define barnes-and-nobles-print
+  (x-ref
+    #f
+    "https://www.barnesandnoble.com/w/why-cryptocurrencies-jonas-hietala/1139072236"
+    "Why Cryptocurrencies? on Barnes & Nobles"))
+
 
 ◊section[#:class "ending"]{
   ◊(follow-section)
