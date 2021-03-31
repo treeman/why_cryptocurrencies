@@ -68,15 +68,17 @@
   ◊book-type["print" `(a ((name "print")) "Print")]{
     ◊nav[#:class "buttons"]{
       ◊link[amazon.com-print]{Pre-order from Amazon}
-      ◊link[book-depository-print]{Book Depository}
-      ◊link[barnes-and-nobles-print]{Barnes & Nobles}
+      ◊span[#:class "spanner"]{
+        ◊link[book-depository-print]{Book Depository}
+        ◊link[barnes-and-nobles-print]{Barnes & Nobles}
+      }
       ◊link["#"]{Download Sample PDF}
       ◊;◊|coming-soon|
     }
 
     ◊ul[#:class "features"]{
       ◊li{Beautiful design}
-      ◊li{Each page laid out by hand with utmost precision}
+      ◊li{Each page carefully formated by hand}
       ◊li{Hand-drawn colored illustrations}
       ◊li{ISBN: 978-91-986762-0-4}
     }
@@ -84,30 +86,40 @@
 
   ◊book-type["ebook" "eBook"]{
     ◊nav[#:class "buttons"]{
-      ◊|coming-soon|
-      ◊;◊li{Buy directly from me with crypto}
-      ◊;◊li{Kindle Amazon}
-      ◊;◊li{iBooks Apple}
-      ◊;◊li{Play Books Google}
-      ◊;◊li{Nook B&N}
-      ◊;◊li{EPUB Smashwords}
+      ◊;◊|coming-soon|
+      ◊link["#"]{
+        Buy directly from me with crypto
+        ◊span[#:class "small-emph"]{Pay what you want!}
+      }
+      ◊span[#:class "spanner"]{
+        ◊link["#"]{Kindle ◊span[#:class "small-where"]{Amazon}}
+        ◊link["#"]{EPUB ◊span[#:class "small-where"]{Smashwords}}
+      }
+      ◊span[#:class "spanner"]{
+        ◊link["#"]{iBooks ◊span[#:class "small-where"]{Apple}}
+        ◊link["#"]{Play Books ◊span[#:class "small-where"]{Google}}
+      }
+      ◊link["#"]{Download Sample Chapter}
     }
 
     ◊ul[#:class "features"]{
-      ◊li{Meticulously tuned CSS}
+      ◊li{Hand-tuned CSS to look as good as I could make it, while adapting to whatever settings you prefer}
       ◊li{ISBN: 978-91-986762-1-1}
     }
   }
   ◊book-type["pdf" "PDF"]{
     ◊nav[#:class "buttons"]{
-      ◊|coming-soon|
-      ◊;◊li{Buy directly from me with crypto}
+      ◊;◊|coming-soon|
+      ◊link["#"]{
+        Buy directly from me with crypto
+        ◊span[#:class "small-emph"]{Pay what you want!}
+      }
       ◊;◊li{Buy from X}
-      ◊;◊li{Download Free Sample}
+      ◊link[pdf-sample]{Download Sample Chapter}
     }
 
     ◊ul[#:class "features"]{
-      ◊li{Same hand-crafted layout as the printed version}
+      ◊li{Same layout and design as the printed version}
       ◊li{Looks the same on every reader and device}
       ◊li{ISBN: 978-91-986762-2-8}
     }
@@ -121,7 +133,7 @@
       ◊li{Designed to look great on every device}
       ◊li{Free!}
       ◊li{Yes, the whole book is available online for free!}
-      ◊li{◊link[source-code]{The book is also open source}}
+      ◊li{◊link[source-code]{The book is also open source on GitHub}}
     }
   }
 }
@@ -206,7 +218,11 @@
     }
 
     ◊faq["How can I buy the printed version with crypto?"]{
-      Unfortunately I haven't found a way for you to buy it with crypto directly. What you can do is buy Amazon gift cards with crypto and use them to buy the book from Amazon. I've used ◊link[coinsbee]{Coinsbee} and ◊link[keys4coins]{Keys4Coins}, but there are many other alternatives.
+      Unfortunately I haven't found a way for you to buy it with crypto directly. What you can do is buy Amazon gift cards with crypto and use them to buy the book from Amazon. I've used ◊link[keys4coins]{Keys4Coins} and ◊link[coinsbee]{Coinsbee}, but there are many other alternatives. ◊link[purse]{Purse.io} is another service I've used before.
+    }
+
+    ◊faq["What about DRM?"]{
+      I hate DRM.
     }
 
     ◊faq["Who made the amazing cover?"]{
@@ -234,30 +250,37 @@
 ◊(define coinsbee
   (x-ref
     #f
-    "https://www.coinsbee.com/"
+    "https://www.coinsbee.com/en/Amazon-bitcoin"
     "Coinsbee"))
-
 ◊(define keys4coins
   (x-ref
     #f
-    "https://www.keys4coins.com/"
+    "https://www.keys4coins.com/product-category/amazon-gift-cards/?ref=78"
     "Keys4Coins"))
+◊(define purse
+  (x-ref
+    #f
+    "https://purse.io/"
+    "Purse.io"))
 
+◊(define pdf-sample
+  `("#"
+    "'Why Cryptocurrencies?' sample PDF"))
 ◊(define amazon.com-print
   (x-ref
     #f
-    "https://www.amazon.com/Why-Cryptocurrencies-What-they-matter/dp/9198676202"
-    "Why Cryptocurrencies? on amazon.com"))
+    "https://amzn.to/3fvjQ4M"
+    "'Why Cryptocurrencies?' on amazon.com"))
 ◊(define book-depository-print
   (x-ref
     #f
     "https://www.bookdepository.com/Why-Cryptocurrencies-Jonas-Hietala/9789198676204"
-    "Why Cryptocurrencies? on Book Depository"))
+    "'Why Cryptocurrencies?' on Book Depository"))
 ◊(define barnes-and-nobles-print
   (x-ref
     #f
     "https://www.barnesandnoble.com/w/why-cryptocurrencies-jonas-hietala/1139072236"
-    "Why Cryptocurrencies? on Barnes & Nobles"))
+    "'Why Cryptocurrencies?' on Barnes & Nobles"))
 
 
 ◊section[#:class "ending"]{

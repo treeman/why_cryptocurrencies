@@ -97,6 +97,7 @@
     (regexp-match #rx"^#" url)
     (string=? "/" url)
     (string=? "/feed.xml" url)
+    (string=? "/toc.html" url)
     (regexp-match #rx"^mailto:" url)
     (ch-ref? url)
     (file-ref? url)))
