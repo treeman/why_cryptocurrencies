@@ -72,7 +72,7 @@
         ◊link[book-depository-print]{Book Depository}
         ◊link[barnes-and-nobles-print]{Barnes & Nobles}
       }
-      ◊link["#"]{Download Sample PDF}
+      ◊link[pdf-sample]{Download Sample PDF}
       ◊;◊|coming-soon|
     }
 
@@ -264,7 +264,7 @@
     "Purse.io"))
 
 ◊(define pdf-sample
-  `("#"
+  `("/files/why_cryptocurrencies_sample.pdf"
     "'Why Cryptocurrencies?' sample PDF"))
 ◊(define amazon.com-print
   (x-ref
