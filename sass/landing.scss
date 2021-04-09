@@ -409,6 +409,12 @@ $small-screen: 1067px;
     background-image: url("/images/cover/front.png");
     // padding: 8px;
 }
+.landing .print .img-wrapper {
+    background-image: url("/images/landing/print.png");
+}
+.landing .ebook .img-wrapper {
+    background-image: url("/images/landing/ebook.png");
+}
 .landing .pdf .img-wrapper {
     background-image: url("/images/landing/pdf.png");
 }
