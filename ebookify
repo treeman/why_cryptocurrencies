@@ -25,11 +25,9 @@ image_dir = os.path.join(oebps_dir, "images")
 font_dir = os.path.join(oebps_dir, "fonts")
 
 toc = [
-    "eli5.html",
-    "about_the_book.html",
     "acknowledgements.html",
-    "how_to_use.html",
-    "about_me.html",
+    "about_the_book.html",
+    "eli5.html",
     "what_is_a_cryptocurrency.html",
     "properties_of_a_cryptocurrency.html",
     "how_do_cryptocurrencies_work.html",
@@ -65,14 +63,13 @@ toc = [
     "challenges.html",
     "cryptography.html",
     "antifragile.html",
+    "about_me.html",
 ]
 
 titles = {
-    "eli5.html": "Why cryptocurrencies in five minutes",
-    "about_the_book.html": "About the book",
     "acknowledgements.html": "Acknowledgments",
-    "how_to_use.html": "How to use this book",
-    "about_me.html": "About me, the author",
+    "about_the_book.html": "About the book",
+    "eli5.html": "Why cryptocurrencies in five minutes",
     "what_is_a_cryptocurrency.html": "What is a cryptocurrency?",
     "properties_of_a_cryptocurrency.html": "Properties of a cryptocurrency",
     "how_do_cryptocurrencies_work.html": "How do cryptocurrencies work?",
@@ -108,6 +105,7 @@ titles = {
     "challenges.html": "Challenges for cryptocurrencies",
     "cryptography.html": "A hitchhiker’s guide to cryptography",
     "antifragile.html": "Cryptocurrencies are antifragile",
+    "about_me.html": "About me, the author",
 }
 
 # {src: dst} of hrefs we need to replace
