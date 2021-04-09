@@ -128,7 +128,7 @@
         </nav>
 
         <nav class="buy">
-          <a href="/" title="Buy the print or ebook">Buy the print or eBook</a>
+          <a href="/" title=">Print or ebook">Check out the print or ebook!</a>
         </nav>
 
         <div class="follow-wrapper">

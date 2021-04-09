@@ -208,7 +208,6 @@ a:hover.invalid-iref {
 }
 
 
-
 /*
  * Follow
  */
@@ -261,6 +260,19 @@ a:hover.invalid-iref {
     flex: 1;
 }
 
+.buy {
+    @extend %sans-serif;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+
+    a:link {
+        text-decoration: underline;
+    }
+    a:hover {
+        text-decoration: none;
+    }
+}
+
 
 /*
  * Footer
@@ -287,9 +299,6 @@ body > footer {
             text-decoration: underline;
         }
     }
-    .buy {
-        margin-top: 1rem;
-    }
 
     .follow-wrapper {
         display: flex;
@@ -315,6 +324,19 @@ body > footer {
         width: 100%;
         display: flex;
         justify-content: center;
+    }
+}
+.homepage-footer {
+    width: 100%;
+    //background-color: lightyellow;
+    flex: 1 1 auto;
+    margin: 0.5rem 1.2rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    .buy {
+        width: 100%;
     }
 }
 
