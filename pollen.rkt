@@ -34,7 +34,6 @@
 
   (provide (all-defined-out))
 
-  (define template-prefix "chapter")
   (define block-tags (append '(img table tbody tr dt dd dl) default-block-tags))
 
   ;; Use our own publish script instead...

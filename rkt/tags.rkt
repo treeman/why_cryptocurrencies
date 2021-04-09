@@ -97,9 +97,11 @@
     (regexp-match #rx"^#" url)
     (string=? "/" url)
     (string=? "/feed.xml" url)
+    (string=? "/toc.html" url)
     (regexp-match #rx"^mailto:" url)
     (ch-ref? url)
-    (file-ref? url)))
+    (file-ref? url)
+    (img-ref? url)))
 
 (define-runtime-path files-path "../files/")
 (define-runtime-path images-path "../images/")
@@ -108,6 +110,12 @@
   (match (regexp-match #rx"^/files/(.+)" url)
     [(list _ x)
        (file-exists? (build-path files-path x))]
+    [else
+      #f]))
+(define (img-ref? url)
+  (match (regexp-match #rx"^/images/(.+)" url)
+    [(list _ x)
+       (file-exists? (build-path images-path x))]
     [else
       #f]))
 (define (ch-ref? url)

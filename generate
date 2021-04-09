@@ -46,7 +46,7 @@ def main():
 
     # Then copy all relevant files.
     for match in ["*.html", "*.xml", "css/", "files/",
-                  "images/", "fonts/"]:
+                  "images/", "fonts/", "favicon*"]:
         for src in glob.glob(match):
             dst = os.path.join(output_dir, src)
             src = os.path.join(dirname, src)

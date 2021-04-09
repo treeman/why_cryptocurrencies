@@ -9,17 +9,12 @@
         <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
         <meta name="description" content="◊|description|">
         <meta name="keywords" content="◊|keywords|">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     </head>
     <body>
-      <div class="homepage">
-        <header>
-          <h1>◊|main-title|</h1>
-          <h2>◊|subtitle|</h2>
-        </header>
-
+      <div class="landing">
         ◊(->html doc #:splice #t)
-
-        ◊(->html follow-section)
       </div>
     </body>
 </html>

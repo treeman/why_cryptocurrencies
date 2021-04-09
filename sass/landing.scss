@@ -1,0 +1,596 @@
+// Spacing scale
+// 4px
+// 8px
+// 12px
+// 16px
+// 24px
+// 32px
+// 48px
+// 64px
+// 96px
+// 128px
+// 192px
+// 256px
+// 384px
+// 512px
+// 640px
+// 768px
+
+// Font sizes
+// 12px
+// 14px
+// 16px
+// 18px
+// 20px
+// 24px
+// 30px
+// 36px
+// 48px
+// 60px
+// 72px
+
+$cover-dark0: #000000;
+$cover-dark1: #180000;
+$cover-dark2: #181818;
+$cover-dark3: #181800;
+$cover-dark4: #303030;
+$cover-dark5: #606060;
+//
+// #303048
+// #181830
+// #304860
+// #304878
+// #304890
+// #183048
+// #303060
+// #184878
+// #306090
+// #486090
+//
+// #183030
+// #303018
+// #484848
+// #484830
+// #304848
+// #304830
+// #183018
+// #486060
+// #304818
+// #306060
+// #486030
+// #607848
+//
+// #301830
+// #301818
+// #483048
+// #483030
+// #606078
+// #484860
+// #603060
+// #786078
+// #601830
+// #604860
+//
+// #604830
+// #907860
+// #604818
+// #C0D890
+// #787878
+// #483018
+// #C0D878
+// #606048
+// #786030
+// #909090
+// #606030
+// #90A860
+
+$cover-green-hl: #C0D890;
+
+
+$pink-050: #FFE0F0;
+$pink-100: #FAB8D9;
+$pink-200: #F191C1;
+$pink-300: #E668A7;
+$pink-400: #DA4A91;
+$pink-500: #C42D78;
+$pink-600: #AD2167;
+$pink-700: #9B1B5A;
+$pink-800: #781244;
+$pink-900: #5C0B33;
+
+$magenta-050: #F5E1F7;
+$magenta-100: #ECBDF2;
+$magenta-200: #CE80D9;
+$magenta-300: #BB61C7;
+$magenta-400: #AD4BB8;
+$magenta-500: #A23DAD;
+$magenta-600: #90279C;
+$magenta-700: #7C1A87;
+$magenta-800: #671270;
+$magenta-900: #4E0754;
+
+$yellow-050: #FFFAEB;
+$yellow-100: #FCEFC7;
+$yellow-200: #F8E3A3;
+$yellow-300: #F9DA8B;
+$yellow-400: #F7D070;
+$yellow-500: #E9B949;
+$yellow-600: #C99A2E;
+$yellow-700: #A27C1A;
+$yellow-800: #7C5E10;
+$yellow-900: #513C06;
+
+$warm-grey-050: #FAF9F7;
+$warm-grey-100: #E8E6E1;
+$warm-grey-200: #D3CEC4;
+$warm-grey-300: #B8B2A7;
+$warm-grey-400: #A39E93;
+$warm-grey-500: #857F72;
+$warm-grey-600: #625D52;
+$warm-grey-700: #504A40;
+$warm-grey-800: #423D33;
+$warm-grey-900: #27241D;
+
+$button-hover-color: $bch-green;
+$button-color: $yellow-300;
+$button-hover-color: $yellow-500;
+$button-shadow-color: $yellow-400;
+
+$invalid-button-color: $warm-grey-100;
+$invalid-button-shadow-color: $warm-grey-200;
+
+$large-width: 1280px;
+$small-screen: 1067px;
+
+.landing {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.landing {
+    a {
+        text-shadow: none;
+        background: none;
+        text-shadow: none;
+        text-decoration: underline;
+    }
+    a:link, a:visited, a:link:selection {
+        text-shadow: none;
+        background: none;
+        text-decoration: underline;
+    }
+    a:link {
+        color: #000;
+    }
+    a:hover {
+        color: $btc-orange;
+    }
+}
+
+.landing .books,
+.landing .user-comments,
+.landing .what,
+.landing .header,
+.landing .faq,
+.landing .ending {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.landing .hero {
+    width: 100%;
+    background-color: $body-background-color;
+    background-color: $warm-grey-050;
+}
+.landing .hero .header {
+    padding: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    // margin-top: 64px;
+}
+.landing .hero .title {
+    margin-top: 24px;
+    max-width: 650px;
+    // background-color: red;
+    // flex: 1;
+    h1 {
+        font-size: 48px;
+        margin: 0;
+        margin-bottom: 8px;
+        // margin-bottom: 24px;
+    }
+    h2 {
+        @extend %sans-serif;
+        font-size: 24px;
+        font-weight: normal;
+        font-style: italic;
+        margin: 0;
+        margin-bottom: 24px;
+        // margin: 0;
+        // margin-left: 0.3rem;
+        // margin-bottom: 0.2rem;
+        // display: none;
+    }
+
+    .sell-it {
+        // text-align: center;
+        // padding-right: 64px;
+        // max-width: 650px;
+    }
+    .afford {
+        font-weight: bold;
+    }
+}
+.landing .hero .buttons {
+    width: 100%;
+    margin-top: 32px;
+    margin-bottom: 48px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.landing .hero .buttons a {
+    flex: 1;
+    text-decoration: none;
+    color: inherit;
+    text-align: center;
+    background-color: $button-color;
+    border: 0;
+    border-radius: 4px;
+    font-size: 1rem;
+    padding: 12px 16px;
+    margin: 8px;
+    cursor: pointer;
+    box-shadow: 1px 1px 0px $button-shadow-color;
+    min-width: 160px;
+}
+.landing .hero .buttons a:hover {
+    text-decoration: none;
+    color: inherit;
+    background-color: $button-hover-color;
+}
+
+.landing .hero .book {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    img {
+        max-width: 600px;
+    }
+}
+
+.landing .user-comments {
+    padding: 48px 0;
+    background-color: $warm-grey-050;
+}
+.landing .user-comments h1 {
+    width: 100%;
+    text-align: center;
+}
+.landing .user-comments blockquote {
+    // background-color: $warm-grey-050;
+}
+
+.landing .books {
+    background-color: $warm-grey-800;
+    padding: 48px 0;
+}
+.landing .format {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+    border-radius: 8px;
+
+    background-color: $yellow-050;
+    // border: solid 1px $yellow-100;
+    // border-radius: 8px;
+    margin-bottom: 48px;
+
+    h1 {
+        margin-bottom: 16px;
+    }
+    ul {
+        list-style: none;
+    }
+    ol li, ul li {
+        margin-bottom: 0.4em;
+        font-size: 95%;
+        line-height: 1.35;
+    }
+    nav.buttons {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    nav.buttons a, nav.buttons div.soon {
+        // flex: 1;
+        text-align: center;
+        width: 100%;
+        background-color: $button-color;
+        border: 0;
+        border-radius: 4px;
+        font-size: 1rem;
+        padding: 12px 16px;
+        // margin: 8px;
+        margin-bottom: 8px;
+        cursor: pointer;
+        box-shadow: 1px 1px 0px $button-shadow-color;
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        span {
+            // flex: 0;
+            width: 100%;
+        }
+    }
+    nav.buttons a:hover {
+        background-color: $button-hover-color;
+        cursor: pointer;
+    }
+    nav.buttons div.soon {
+        cursor: auto;
+        background-color: $invalid-button-color;
+        box-shadow: 1px 1px 0px $invalid-button-shadow-color;
+    }
+    nav.buttons span.spanner {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    nav.buttons span.spanner a {
+        flex: 1;
+    }
+    nav.buttons span.spanner a:not(:first-child) {
+        margin-left: 8px;
+    }
+    .small-emph {
+        // flex: 0;
+        // width: 100%;
+        font-size: 0.9rem;
+        font-style: italic;
+    }
+    .coming {
+        font-size: 0.9rem;
+        //font-style: italic;
+    }
+
+    ul.features {
+        margin-top: 24px;
+    }
+    ul.features li::before {
+        @extend %sans-serif;
+        content: "•";
+        margin-left: -20px;
+        padding-right: 8px;
+        color: $yellow-500;
+    }
+    ul.features li {
+        margin-left: 32px;
+    }
+    ul.features a, ul.features a:link {
+        text-decoration: underline;
+        cursor: pointer;
+    }
+    ul.features a:hover {
+        color: $btc-orange;
+    }
+}
+
+.landing .background {
+    display: inline-block;
+    padding-left: 24px;
+}
+
+.landing .format .left {
+    width: 520px;
+    margin-right: 16px;
+    padding: 16px;
+
+    a, a:link, a:hover {
+        color: inherit;
+        text-decoration: none;
+        cursor: auto;
+    }
+}
+.landing .format .img-wrapper {
+    width: 500px;
+    border-radius: 8px;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    background-image: url("/images/cover/front.png");
+    // padding: 8px;
+}
+.landing .print .img-wrapper {
+    background-image: url("/images/landing/print.png");
+}
+.landing .ebook .img-wrapper {
+    background-image: url("/images/landing/ebook.png");
+}
+.landing .pdf .img-wrapper {
+    background-image: url("/images/landing/pdf.png");
+}
+.landing .web .img-wrapper {
+    background-image: url("/images/landing/unbanked.png");
+}
+
+.landing .praise {
+    max-width: $large-width;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    grid-gap: 4px;
+}
+.landing .what {
+    background-color: $cover-dark3;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    color: $warm-grey-100;
+}
+.landing .what .head {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 32px;
+}
+.landing .what .examples {
+    max-width: $large-width;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    grid-gap: 48px;
+}
+.landing .what .ex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.landing .what .ex h2 {
+    margin: 0;
+    margin-bottom: 0.3rem;
+}
+.landing .what .img-wrapper {
+    width: 130px;
+    height: 130px;
+    border-radius: 65px;
+    // border-radius: 8px;
+    // float: left;
+}
+.landing .what .utility .img-wrapper {
+    background-image: url("/images/landing/casino.png");
+}
+.landing .what .easy .img-wrapper {
+    background-image: url("/images/landing/huh.png");
+}
+.landing .what .concepts .img-wrapper {
+    background-image: url("/images/landing/miners.png");
+}
+.landing .what .order .img-wrapper {
+    background-image: url("/images/landing/heli.png");
+}
+.landing .what .general .img-wrapper {
+    background-image: url("/images/landing/bank.png");
+}
+.landing .what .variety .img-wrapper {
+    background-image: url("/images/landing/snowden.png");
+}
+.landing .what .right {
+    // float: left;
+    // width: 100px;
+    flex: 1;
+    margin-left: 16px;
+}
+
+.landing .faq {
+    background-color: $warm-grey-900;
+    // background-color: $cover-dark3;
+    padding: 32px 8px;
+    // color: $warm-grey-100;
+    background-color: $warm-grey-200;
+}
+.landing .faq .questions {
+    width: 100%;
+}
+.landing .faq h1 {
+    margin-bottom: 24px;
+}
+.landing .faq a {
+    color: inherit;
+    text-decoration: underline;
+}
+.landing .faq a:hover {
+    color: $btc-orange;
+    text-decoration: none;
+}
+.landing .faq .questions .question-answer {
+    width: 100%;
+    margin-bottom: 32px;
+}
+.landing .faq .question {
+    width: 800px;
+    margin: 0 auto;
+    font-weight: bold;
+}
+.landing .faq .answer {
+    margin: 0 auto;
+    width: 800px;
+}
+
+.landing .ending {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    background-color: $body-background-color;
+    // color: $warm-grey-050;
+}
+.landing .ending {
+    a:link {
+        color: inherit;
+        text-decoration: underline;
+    }
+    a:hover {
+        color: $btc-orange;
+        text-decoration: none;
+    }
+}
+
+@media only screen and (max-width: $small-screen) {
+    .landing .format {
+        width: 520px;
+        margin-left: 16px;
+        margin-right: 16px;
+        // padding: 16px;
+        border-radius: 8px;
+        padding: 0;
+    }
+    .landing .format .left {
+        order: 2;
+        width: 100%;
+        margin: 0;
+        padding: 16px;
+    }
+    .landing .format .img-wrapper {
+        order: 1;
+        width: 100%;
+        height: 300px;
+        border-radius: 8px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+    .landing .what .examples {
+        display: block;
+    }
+    .landing .what .ex {
+        margin-bottom: 48px;
+    }
+    .landing .faq {
+        padding: 32px;
+    }
+    .landing .faq .questions .question-answer {
+        width: 100%;
+    }
+    .landing .faq .question,
+    .landing .faq .answer {
+        width: 100%;
+    }
+    .landing .hero .buttons a {
+        flex: 0 1 auto;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 520px) {
+    .landing .format {
+        width: 100%;
+    }
+    .landing .praise {
+        display: block;
+    }
+    .landing .praise blockquote {
+        margin-bottom: 48px;
+    }
+}
