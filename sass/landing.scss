@@ -321,6 +321,15 @@ $small-screen: 1067px;
         margin-bottom: 8px;
         cursor: pointer;
         box-shadow: 1px 1px 0px $button-shadow-color;
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        span {
+            // flex: 0;
+            width: 100%;
+        }
     }
     nav.buttons a:hover {
         background-color: $button-hover-color;
@@ -344,14 +353,14 @@ $small-screen: 1067px;
         margin-left: 8px;
     }
     .small-emph {
-        flex: 0;
-        width: 100%;
+        // flex: 0;
+        // width: 100%;
         font-size: 0.9rem;
         font-style: italic;
     }
-    .small-where {
+    .coming {
         font-size: 0.9rem;
-        font-style: italic;
+        //font-style: italic;
     }
 
     ul.features {
@@ -374,6 +383,11 @@ $small-screen: 1067px;
     ul.features a:hover {
         color: $btc-orange;
     }
+}
+
+.landing .background {
+    display: inline-block;
+    padding-left: 24px;
 }
 
 .landing .format .left {

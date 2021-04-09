@@ -61,7 +61,10 @@
 }
 
 ◊(define coming-soon
-   (div #:class "soon" "Coming Soon™"))
+   (div #:class "soon"
+    ◊span{Buy directly from me with crypto}
+    ◊span[#:class "small-emph"]{Pay what you want!}
+    ◊span[#:class "coming"]{Coming Soon™}))
 
 ◊div[#:class "books"]{
 
@@ -86,20 +89,20 @@
 
   ◊book-type["ebook" "eBook"]{
     ◊nav[#:class "buttons"]{
-      ◊;◊|coming-soon|
-      ◊link["#"]{
-        Buy directly from me with crypto
-        ◊span[#:class "small-emph"]{Pay what you want!}
-      }
-      ◊span[#:class "spanner"]{
-        ◊link["#"]{Kindle ◊span[#:class "small-where"]{Amazon}}
-        ◊link["#"]{EPUB ◊span[#:class "small-where"]{Smashwords}}
-      }
-      ◊span[#:class "spanner"]{
-        ◊link["#"]{iBooks ◊span[#:class "small-where"]{Apple}}
-        ◊link["#"]{Play Books ◊span[#:class "small-where"]{Google}}
-      }
-      ◊link["#"]{Download Sample Chapter}
+      ◊|coming-soon|
+      ◊;◊link["#"]{
+        ◊;Buy directly from me with crypto
+        ◊;◊span[#:class "small-emph"]{Pay what you want!}
+      ◊;}
+      ◊;◊span[#:class "spanner"]{
+        ◊;◊link["#"]{Kindle ◊span[#:class "small-where"]{Amazon}}
+        ◊;◊link["#"]{EPUB ◊span[#:class "small-where"]{Smashwords}}
+      ◊;}
+      ◊;◊span[#:class "spanner"]{
+        ◊;◊link["#"]{iBooks ◊span[#:class "small-where"]{Apple}}
+        ◊;◊link["#"]{Play Books ◊span[#:class "small-where"]{Google}}
+      ◊;}
+      ◊;◊link["#"]{Download Sample Chapter}
     }
 
     ◊ul[#:class "features"]{
@@ -109,13 +112,13 @@
   }
   ◊book-type["pdf" "PDF"]{
     ◊nav[#:class "buttons"]{
-      ◊;◊|coming-soon|
-      ◊link["#"]{
-        Buy directly from me with crypto
-        ◊span[#:class "small-emph"]{Pay what you want!}
-      }
+      ◊|coming-soon|
+      ◊;◊link["#"]{
+        ◊;Buy directly from me with crypto
+        ◊;◊span[#:class "small-emph"]{Pay what you want!}
+      ◊;}
       ◊;◊li{Buy from X}
-      ◊link[pdf-sample]{Download Sample Chapter}
+      ◊;◊link[pdf-sample]{Download Sample Chapter}
     }
 
     ◊ul[#:class "features"]{
@@ -234,7 +237,8 @@
     }
 
     ◊faq["Can I get the cover as a background?"]{
-      Yes! ...
+      Yes! Check these out: ◊link[cover1615 #:class "background"]{1615 x 2045} ◊link[cover1883 #:class "background"]{1883 x 2045}
+      If they don't fit, feel free to crop and resize however you want.
     }
 
     ◊faq["What if I find an error in the book?"]{
@@ -281,7 +285,12 @@
     #f
     "https://www.barnesandnoble.com/w/why-cryptocurrencies-jonas-hietala/1139072236"
     "'Why Cryptocurrencies?' on Barnes & Nobles"))
-
+◊(define cover1883
+  `("/images/cover/1883x2045.png"
+    "1883x2045 cover"))
+◊(define cover1615
+  `("/images/cover/1615x2045.png"
+    "1615x2045 cover"))
 
 ◊section[#:class "ending"]{
   ◊(follow-section)
