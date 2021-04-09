@@ -233,7 +233,11 @@ def manifest_img_tag(img):
     if fallback:
         fallback = f'fallback="{fallback}"'
 
-    return f'<item id="{id}" href="{img}" media-type="image/{t}" {fallback}/>'
+    properties = ""
+    if id == "images-cover-front":
+        properties = 'properties="cover-image"'
+
+    return f'<item id="{id}" href="{img}" media-type="image/{t}" {fallback} {properties}/>'
 
 def manifest_font_tag(font):
     base = os.path.basename(font)

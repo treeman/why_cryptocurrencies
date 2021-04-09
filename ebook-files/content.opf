@@ -6,10 +6,12 @@
         <dc:language>en-US</dc:language>
         <dc:identifier id="BookID">◊UUID</dc:identifier>
         <meta property="dcterms:modified">◊DATE</meta>
+        <meta name="cover" content="images-cover-front" />
     </metadata>
     <manifest>
         <item id="ncx" href="toc.ncx" media-type="application/x-dtbncx+xml" />
         <item id="style" href="main.css" media-type="text/css" />
+        <item id="coverpage" href="cover_page.xhtml" media-type="application/xhtml+xml" />
         <item id="titlepage" href="title_page.xhtml" media-type="application/xhtml+xml" />
         <item id="toc" properties="nav" href="toc.xhtml" media-type="application/xhtml+xml" />
         ◊MANIFEST_POSTS_TAG
@@ -32,7 +34,8 @@
         ◊MANIFEST_FONT_TAG
     </manifest>
     <spine toc="ncx">
-        <itemref idref="titlepage" />
+        <itemref idref="coverpage" />
+        <itemref idref="titlepage" linear="yes" />
         <itemref idref="toc" />
         ◊SPINE_TOC
     </spine>
