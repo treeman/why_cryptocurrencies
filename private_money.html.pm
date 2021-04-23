@@ -172,7 +172,7 @@ Even if you don't think you have anything to hide, others do. Here are some exam
 
       There was a story that went viral years ago on how Target ◊link[teenage-pregnancy]{predicted a teenage pregnancy and exposed it to her father}. In a normal western household it might not be that big of a deal, but ◊link[murder-family-honor]{thousands of women are killed each year} for family "honor"---often for much less than a teenage pregnancy, such as ◊link[dowry-murder]{not getting paid enough for marrying the bride}.
   }
-  ◊li{Sexual preferences
+  ◊li{Sexual preference
 
     While homosexuality is becoming more accepted, it's still ◊link[gay-illegal]{illegal in some countries} where you might face execution. Similar to the story of the girl's pregnancy above, having a history of your purchases might expose you. (Why did you visit this gay bar?)
 
