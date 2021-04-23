@@ -64,7 +64,7 @@ Why would you want privacy? What are you hiding? Are you criminal?◊mn{summary-
 
     ◊span[#:class "talking"]{
       ◊trow{Why do I need privacy? I have nothing to hide.}
-      ◊trow{Then pull your pants down, give me a dickpick, your email password and your credit card number.}
+      ◊trow{Then pull your pants down, send me a nude-pic, your email password and your credit card number.}
     }
 
     I can't promise I'll do better, but I'll try.
