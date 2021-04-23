@@ -55,7 +55,7 @@ In practice they often overlap. For example if all my emails were available onli
 
 ◊subhead{Why privacy matters}
 
-Privacy and anonymity is an important issue in the modern world and there are examples of privacy violations everywhere. Before we get to some of them we first need to address why privacy matter, because today government officials, company owners, the news and regular people all ask the same questions:
+Privacy and anonymity are important issues in the modern world and there are examples of privacy violations everywhere. Before we get to some of them we first need to address why privacy matter, because today government officials, company owners, the news and regular people all ask the same questions:
 
 Why would you want privacy? What are you hiding? Are you criminal?◊mn{summary-discussion}
 
@@ -91,7 +91,7 @@ If you don't recognize the situation please watch the scene where Hugh Grant pla
      "https://www.youtube.com/watch?v=aUm2K6eDuMU"
      "YouTube (2010) Love Actually - Hugh Grant dancing (1 min)"))
 
-I have a child who's two years old, and even he wants privacy sometimes. He likes to build a cabin made of pillows and hide in it, and if I disturb him he pushes me and shouts “Go away!”. After we recently renovated his room he was ◊em{so happy} that he had a room of his own again, which he likes to be alone in when he's pooping (in his diaper thank god).◊mn{children-privacy}
+I have a two year old child, and even he wants privacy sometimes. He likes to build a cabin made of pillows and hide in it, and if I disturb him he pushes me and shouts “Go away!”. After we recently renovated his room he was ◊em{so happy} that he had a room of his own again, which he likes to be alone in when he's pooping (in his diaper thank god).◊mn{children-privacy}
 
 ◊ndef["children-privacy"]{
     It's really quite fascinating. Sometimes I can hug him while he's playing, but other times I'm not even allowed to be in the same room. I guess he just wants to be alone from time to time.
