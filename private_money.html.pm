@@ -530,7 +530,7 @@ They're selling knowledge about you. What you're searching for, what sites you v
      "YouTube: BAND-MAID on YouTube"))
 
 
-For example they probably know if you're gay or if you're pregnant (and if you are, they'll know if it was an accident, if your parents know about it and who's the father). They might also predict---with high confidence---if you're religious, even if you don't want anyone to know. Or who you're going to vote for in the ◊em{next} election or how likely you are to commit a crime.◊mn{thoughtcrime}
+For example they probably know if you're gay or if you're pregnant (and if you are, they'll know if it was an accident, if your parents know about it and who is the father). They might also predict---with high confidence---if you're religious, even if you don't want anyone to know. Or who you're going to vote for in the ◊em{next} election or how likely you are to commit a crime.◊mn{thoughtcrime}
 
 ◊ndef["thoughtcrime"]{
     ◊def{Pre-crime}, like in the movie ◊link[minority-report]{Minority Report (2002)}, is the idea that you can predict someone committing a crime and catching them before they do.

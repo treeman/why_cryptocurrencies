@@ -70,7 +70,7 @@ Another way to look at the world is to visualize the raw number of unbanked in e
 
 Almost half of all unbanked people live in just seven countries: China, India, Indonesia, Mexico, Nigeria, Pakistan and Bangladesh. In fact China (224 million) and India (191 million) alone make up nearly a quarter of all unbanked in the world.
 
-While the fraction of unbanked adults are high in the developing countries with poor access to electricity and internet, a surprisingly large number of unbanked also live in developed countries. For example the USA has 18 million unbanked and in France there are 3 million unbanked.◊mn{read-it}
+While the fraction of unbanked adults are high in the developing countries with poor access to electricity and internet, a surprisingly large number of unbanked also live in developed countries. For example USA has 18 million unbanked and in France there are 3 million unbanked.◊mn{read-it}
 
 
 ◊subhead{Why are they unbanked?}
@@ -213,7 +213,7 @@ It might be relatively fine for you to live in a country without a bank account-
 
 For example here in Sweden almost everyone and everything uses digital payments. It would be ◊strong{extremely} difficult for you to live here without a credit card or a bank to pay your bills.
 
-As I went on a small business trip just a couple of weeks ago to the middle parts of Sweden, I accidentally forgot my wallet, including my credit cards and identification card. I borrowed some cash from a friend, thinking I could use them to pay for lunch and dinner, but surprisingly most restaurants didn't accept cash. So, I still had to ask my co-workers to pay for me...◊mn{moved-to-sweden}
+One time when I went on a small business to the middle parts of Sweden, I accidentally forgot my wallet, including my credit cards and identification card. I borrowed some cash from a friend, thinking I could use them to pay for lunch and dinner, but surprisingly most restaurants didn't accept cash. So, I still had to ask my co-workers to pay for me...◊mn{moved-to-sweden}
 
 ◊ndef["moved-to-sweden"]{
     A similar story of a co-worker who moved to Sweden. There was a delay for him to get his social security number, and thus his bank account, so he had to be taken care of by people at work until it got sorted out.

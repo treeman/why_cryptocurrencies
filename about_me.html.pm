@@ -15,7 +15,7 @@
   }
 }
 
-I wonder what you might think of someone who's writing a book about cryptocurrencies? Maybe you'll think of a teenage multi-millionaire or an old neckbeard raving about free software? Or perhaps an anarchist who's trying to convince you that "governments are evil" and that "taxation is theft"?◊mn{there-are}
+I wonder what you might think of someone who is writing a book about cryptocurrencies? Maybe you'll think of a teenage multi-millionaire or an old neckbeard raving about free software? Or perhaps an anarchist who's trying to convince you that "governments are evil" and that "taxation is theft"?◊mn{there-are}
 
 ◊ndef["there-are"]{
     It's easy to see why cryptocurrencies might attract people like this. Cryptocurrencies are all about freedom, and the free software movement (saying that ◊strong{all} software should be free) and anarchism seek freedom to the extreme.
@@ -45,7 +45,7 @@ The free time I do have has been taken up by my two boys, my girlfriend and othe
 
 After my parental leave, we decided that I should work part time to avoid long days at pre-school.  Working less has also opened up time and energy for me to work on a side project, and writing a book has been on my bucket-list so I thought "why not do it now"? My girlfriend, wonderful as she is, has always been super supportive of my silly ideas.
 
-Am I qualified to write about cryptocurrencies? Am I a cryptocurrency expert? I don't know. I just see myself as an enthusiast who's trying to write down and share my thoughts. Please keep that in mind when you consider any claims I make---I may very well miss something important.
+Am I qualified to write about cryptocurrencies? Am I a cryptocurrency expert? I don't know. I just see myself as an enthusiast who is trying to write down and share my thoughts. Please keep that in mind when you consider any claims I make---I may very well miss something important.
 
 ◊(define blog
   (x-ref

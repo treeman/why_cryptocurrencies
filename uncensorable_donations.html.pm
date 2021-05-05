@@ -161,7 +161,7 @@ This is ◊strong{not} a glorification of WikiLeaks---they have ◊link[wikileak
 ◊ndef["association-fallacy"]{
     Trying to discredit WikiLeaks by discrediting Assange is ◊def[association-fallacy]{guilt by association}---a logical fallacy.
 
-    If we think that good deeds can only be done by perfectly good people then it follows that only Superman can do good. But in reality people are flawed like Iron Man, who's narcissistic and alcoholic but also a hero.
+    If we think that good deeds can only be done by perfectly good people then it follows that only Superman can do good. But in reality people are flawed like Iron Man, who is narcissistic and alcoholic, but also a hero.
 }
 
 ◊(define wikileaks
@@ -265,7 +265,7 @@ This is ◊strong{not} a glorification of WikiLeaks---they have ◊link[wikileak
 
         ◊; https://www.theguardian.com/world/2010/apr/05/wikileaks-us-army-iraq-attack
 
-        When Reuters tried to get answers for how their reporters died, the U.S. military claimed they didn't know how they got killed, and that all dead were insurgents. They also didn't know how the children got injured, despite them having the video footage.
+        When Reuters tried to get answers for how their reporters died, the U.S. military claimed they didn't know how they got killed, and that all dead were insurgents. They also didn't know how the children got injured, despite having the video footage.
 
         Afterwards, the military investigated the issue and concluded that the actions of the soldiers where in accordance with the law of armed conflict and its own "Rules of Engagement".
       }
@@ -299,7 +299,7 @@ This is ◊strong{not} a glorification of WikiLeaks---they have ◊link[wikileak
       ◊leak["Civilian deaths in Iraq"
             #:url civilian-deaths-iraq]{
 
-        While U.S. officials had previously said no logs existed of civilian deaths in Iraq, leaked cables told another story. 66,081 civilian deaths had been logged out of a total of 109,000 deaths between 2004 and 2009, that's 60.6% of all dead being innocent people---a horrifyingly bad ratio.◊mn{wtc}
+        While U.S. officials had previously said no logs existed of civilian deaths in Iraq, leaked cables told another story. 66,081 civilian deaths had been logged out of a total of 109,000 deaths between 2004 and 2009. That's 60.6% of all dead being innocent people---a horrifyingly bad ratio.◊mn{wtc}
 
         Leaked cables also indicated that U.S. authorities had failed to investigate hundreds of reports of torture, rape, abuse and murder by Iraqi security officials.
       }
@@ -342,7 +342,7 @@ This is ◊strong{not} a glorification of WikiLeaks---they have ◊link[wikileak
   ◊entry["Sexual assault allegations against Julian Assange"
           #:date "Aug 2010"]{
 
-    Shortly after the massive leaks, Julian Assange was ◊link[assange-rape]{accused of sexual assault} in Sweden. The timing might be a coincidence◊mn{truth-fiction} or if you're a conspiracy theorist you might say they're manufactured by the U.S. government, in a way to reach Julian Assange.
+    Shortly after the massive leaks, Julian Assange was ◊link[assange-rape]{accused of sexual assault} in Sweden. The timing might be a coincidence◊mn{truth-fiction}; or if you're a conspiracy theorist you might say they're manufactured by the U.S. government, in a way to reach Julian Assange.
 
     ◊ndef["truth-fiction"]{
         Like the saying goes: "truth is stranger than fiction".
@@ -384,7 +384,7 @@ This is ◊strong{not} a glorification of WikiLeaks---they have ◊link[wikileak
     ◊ndef["shutdown-successful"]{
         If the goal was to divert attention and to put breaks on WikiLeaks until the whole thing blew over, you might say it was a success.
 
-        For instance today, in 2020 the torture and abuse still continues in Guantánamo, despite ex-president ◊link[obama-guantanamo]{Barack Obama's promise} to close it.
+        For instance today, in 2021, the torture and abuse still continues in Guantánamo, despite ex-president ◊link[obama-guantanamo]{Barack Obama's promise} to close it.
     }
   }
 
@@ -812,7 +812,7 @@ Those aren't the actions of a hero.
 }
 
 
-Of course covering up or rationalizing events isn't a U.S. only phenomena. Here are other examples:
+Of course, covering up or rationalizing events isn't a U.S. only phenomena. Here are other examples:
 
 ◊ul{
   ◊li{◊link[rel-tiananmen]{As previously mentioned} the Chinese cover up of the Tiananmen Square Massacre.}
@@ -894,7 +894,7 @@ Unfortunately it seems like a human thing to try to hide your misdeeds instead o
     ... if all records told the same tale---then the lie passed into history and became truth. 'Who controls the past,' ran the Party slogan, 'controls the future: who controls the present controls the past.' ... 'Reality control', they called it: in Newspeak, 'doublethink'.
 }
 
-I know what some of you might say and what we others might feel: you don't want to know about these horrible things. It's true that you'll feel better if you're unaware and you'll probably personally be better off if you act like these never happened.
+I know what some of you might say and others might feel: you don't want to know about these horrible things. It's true that you'll feel better if you're unaware and you'll probably personally be better off if you act like these never happened.
 
 But if we practice collective 'forgettance', where we all pretend these never happened, they will continue to happen. This is why what Chelsea Manning and WikiLeaks revealed about the Iraq war is so important: we're forced to confront the truth.◊mn{prevent-future}
 

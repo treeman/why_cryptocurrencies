@@ -193,7 +193,7 @@ We've looked at the properties---but how well do they function as money, today?
 ◊ol{
     ◊li{◊strong{Medium of exchange}
 
-        Cryptocurrencies work well as a medium of exchange, but it's not commonly used.
+        Cryptocurrencies work well as a medium of exchange, but they're not commonly used.
     }
     ◊li{◊strong{Unit of account}
 
@@ -226,7 +226,7 @@ While cryptocurrencies are used as money in certain communities and for certain 
     Cryptocurrencies are quite popular for privacy-concerned users. For example, most serious sellers of VPNs, domain names and VPS hosting accept payments via cryptocurrencies.
 }
 
-There are mainly two things holding it back today:
+There are mainly two things holding cryptocurrencies back today:
 
 ◊ol{
     ◊li{◊strong{Large volatility}

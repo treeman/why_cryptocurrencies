@@ -135,7 +135,7 @@ The crisis began with the collapse of the bank Lehman Brothers, marking the star
     It bottomed out at -8.4% the fourth quarter of 2008.
 }
 
-Although the crisis originated in the U.S., the crisis spread globally.◊mn[#:top -8]{global-buys} For example, in only the first quarter of 2009 the GDP rate was -4.7% ◊link[germany-gdp]{in Germany}, -4.8% ◊link[japan-gdp]{in Japan} and -3% ◊link[euro-gdp]{in the Euro area}. There are many details to dig into here, such as the unemployment rate or stock market valuations, but I'm content with just noting that the crisis was indeed a global disaster.
+Although the crisis originated in the U.S., the crisis spread globally.◊mn[#:top -2]{global-buys} For example, in only the first quarter of 2009 the GDP rate was -4.7% ◊link[germany-gdp]{in Germany}, -4.8% ◊link[japan-gdp]{in Japan} and -3% ◊link[euro-gdp]{in the Euro area}. There are many details to dig into here, such as the unemployment rate or stock market valuations, but I'm content with just noting that the crisis was indeed a global disaster.
 
 ◊(define us-gdp
    (x-ref
@@ -187,12 +187,12 @@ In September 2008, U.S. Treasury Secretary Henry Paulson persuaded the U.S. Cong
     This is known as the Troubled Asset Relief Program, or TARP.
 }
 
-The government guaranteed $306 billion of Citigroup's assets. They didn't ask for a piece of the action, change in management or anything of importance. The $306 billion guarantee---nearly 2% of U.S. GDP, and roughly the combined budgets of the departments of Agriculture, Education, Energy, Homeland Security, Housing and Urban Development and Transportation---was presented undisguised, as a gift. No explanation was given, just that the action was taking in response to Citigroup's "declining stock price."◊mn{where-money?}
+The government guaranteed $306 billion of Citigroup's assets. They didn't ask for a piece of the action, change in management or anything of importance. The $306 billion guarantee---nearly 2% of U.S. GDP, and roughly the combined budgets of the departments of Agriculture, Education, Energy, Homeland Security, Housing and Urban Development and Transportation---was presented undisguised, as a gift. No explanation was given, just that the action was taken in response to Citigroup's "declining stock price."◊mn{where-money?}
 
 When it was clear the money wasn't enough, the Federal Reserve started buying bad subprime mortgages directly from the banks. By early 2009 the tax payers were stuck with more than a trillion dollars of risky assets and, if things went sideways, would end up eating a huge loss while the banks were in the clear.
 
 ◊ndef["where-money?"]{
-    There are many important problems a nation need to handle; health care, poverty, education, infrastructure, security and immigration; but with too little money to solve them. Yet there's almost infinity money for the banks. I find it fascinating and incredibly frustrating.
+    There are many important problems a nation need to handle; health care, poverty, education, infrastructure, security and immigration; but with too little money to solve them. Yet there's almost an infinite money for the banks. I find it fascinating and incredibly frustrating.
 }
 
 ◊ndef["fed-political"]{
@@ -328,7 +328,7 @@ How about the other traders and the "CDO managers" who sold junk disguised as sa
 ◊;If you wanted to predict how people would behave, you only have to look at their incentives.
 ◊; "The Psychology of Human Misjudegement" speech by Charlie Munger Jun 1995
 
-What ◊em{really} caused the financial crisis, and made the crisis so large? It's easy to point the finger at people who borrowed money they couldn't afford, at the bankers who helped them (or tricked them) and at the rating agencies who didn't really know what they were rating. But the greed of Wall Street shouldn't be surprising---it should instead be expected.
+What ◊em{really} caused the financial crisis, and made the crisis so large? It's easy to point the finger at people who borrowed money they couldn't afford, at the bankers who helped them (or tricked them) and at the rating agencies who didn't really know what they were rating. But the greed of Wall Street shouldn't be surprising---it should be expected.
 
 The blame should be placed on the incentives that enabled the greed to flourish. They made the rating agencies not look too closely at the assets they were rating---otherwise the bankers would go to another rating agency and take their money with them. The people taking loans were incentivized to loan more since the house prices kept rising, making them more money. And the people giving out loans were encouraged to give out as many loans as possible, because they would get a cut of every loan they gave out.◊mn{pets}
 
@@ -338,7 +338,7 @@ The blame should be placed on the incentives that enabled the greed to flourish.
 
 If you exploit and gamble, but instead of a prison sentence you're rewarded with a fat bonus check, you will not change your actions. In fact you'll be more likely to continue. It's exactly like a child who wants candy: if he screams and cries until he gets candy, what will he learn? He'll learn that you get candy when you cry---so now he'll cry to get the candy.◊mn{moral-hazard}
 
-Indeed, as investor extraordinaire Charlie Munger ◊link[human-misjudgement]{says}: if you want to predict how people will behave, you only have to look at their incentives.  This is why the bailouts, while helpful in the short run (the child stopped crying), made the fundamental problem that enabled the crisis worse (the child will cry more in the future). Bad behaviour by banks and the people working at banks are even more likely now since they've learned that if they fail they will just get bailed-out, and keep their bonuses. They even passed laws to make it even easier for the Federal Reserve to step in and rescue whatever they deem "too big to fail", without the ◊em{unnecessary} overhead of going through congress.◊mn{bail-in}
+Indeed, as investor extraordinaire Charlie Munger ◊link[human-misjudgement]{says}: if you want to predict how people will behave, you only have to look at their incentives.  This is why the bailouts, while helpful in the short run (the child stopped crying), made the fundamental problem that enabled the crisis worse (the child will cry more in the future). Bad behaviour by banks and the people working at banks are even more likely now since they've learned that if they fail they will just get bailed out, and keep their bonuses. They even passed laws to make it even easier for the Federal Reserve to step in and rescue whatever they deem "too big to fail", without the ◊em{unnecessary} overhead of going through congress.◊mn{bail-in}
 
 I find it interesting to compare the incentives for banks with the ◊link[51%-attack]{incentives for cryptocurrency miners}. While banks are incentivized to gamble, exploit and cheat as much they can get away with, the incentives for miners are to work in the network's best interest. While incentives makes the financial industry unstable, it's what makes cryptocurrencies secure.
 
@@ -351,7 +351,7 @@ I find it interesting to compare the incentives for banks with the ◊link[51%-a
 ◊ndef["moral-hazard"]{
     The term ◊def[moral-hazard]{moral hazard} is often used to describe the bailouts. It refers to someone taking risks that others will pay for.
 
-    "Heads I win, tails I get bailed-out."
+    "Heads I win, tails I get bailed out."
 }
 
 ◊(define moral-hazard
@@ -413,7 +413,7 @@ History doesn't repeat itself, but it rhymes awfully well.
 
 ◊subhead{What if we used sound money?}
 
-With ◊def[sound-money]{sound money} nobody can manipulate the money supply. For example fiat backed by gold (as long as we trust the backers), actual gold coins or cryptocurrencies are sound money. The question is: could the financial crisis have been prevented if we used sound money?
+With ◊def[sound-money]{sound money} nobody can manipulate the money supply. For example fiat backed by gold (as long as we trust the backers), actual gold coins or cryptocurrencies. The question is: could the financial crisis have been prevented if we used sound money?
 
 Unfortunately, probably not. The housing and bond bubble might still have happened as the banks can still create mortgage backed securities, CDOs and other complex derivatives. Sound money cannot prevent anyone from creating and selling junk.
 

@@ -52,9 +52,9 @@ In contrast learning how to drive a car provides an ideal learning environment. 
 ◊note-pos[#:top -13]{wicked-env}
 
 ◊ndef["10000h"]{
-    There's a misunderstood myth that you only need 10,000 hours, or that you need at least 10,000 hours before you become an expert. But that's not the truth, with the right environment and ◊def[deliberate-practice]{deliberate practice} you can become an expert much faster and if you use your time inefficiently you may never become one.
+    There's a misunderstood myth that you only need to put in 10,000 hours, and then you become an expert. But that's not the truth; with the right environment and ◊def[deliberate-practice]{deliberate practice} you can become an expert much faster, and if you don't use your time efficiently you may never become one.
 
-    Think for example of the teenage golf prodigies who eclipse the middle-aged men---who've spent their entire lives playing golf---in no time at all.
+    To learn more about this fascinating subject I highly recommend the book ◊(book-link peak-book).
 }
 
 ◊ndef["wicked-env"]{
@@ -86,7 +86,7 @@ Because the economy is made up of millions or even billions of people, with diff
 ◊ndef["impossible?"]{
     I do think it's an impossible task. You need to accurately predict small events that can have large effects, known as the ◊def[butterfly-effect]{Butterfly effect}.
 
-    Not to mention ◊def[black-swan]{Black Swan} events which are by definition unpredictable. The rise of Bitcoin is one example (currently valued at above $10,000).
+    Not to mention ◊def[black-swan]{Black Swan} events which are by definition unpredictable. The rise of Bitcoin is one example (currently valued at above $50,000).
 }
 
 ◊(define black-swan
@@ -151,7 +151,7 @@ Maybe you feel like I'm focusing too much on the ◊link[financial_crisis]{2008 
 
 This shouldn't be that surprising when you consider that the national and global economy is too irregular to be predictable, and the feedback loop is extremely long---if it even exists.  If for example the central bank lowers the interest rate, how long do we have to wait to see the effect? Days, months and maybe even years. And how do we know the economy reacted this way because of the changes to the interest rate, and not because of the trade war between the U.S. and China, Brexit or a million other reasons?◊mn{models}
 
-These people aren't experts, simply because the environment doesn't lend itself to creating experts. The worst thing isn't that they're clueless, the worst thing is that they don't know their limitations:◊mn{actually-worst}
+These people aren't experts, simply because the environment doesn't lend itself to creating experts. The worst thing isn't that they're clueless; the worst thing is that they don't know their limitations:◊mn{actually-worst}
 
 ◊qt[#:author "IMF financial advisor Jose Viñals"
     #:date "2016"
@@ -211,14 +211,14 @@ It's worse than us not understanding how the system works. We simply don't have 
 
 ◊note-pos[#:top -6]{oversight-control}
 
-This argument could be made against almost everything. For example ◊link[mega-projects]{megaprojects often fail} (vastly overruns their cost or timetable) because politicians make them their pet project, pushing them through against all odds... And leave it to other people to pick up the pieces after the next election.◊mn{olympics}
+This argument could be made against almost everything. For example ◊link[mega-projects]{mega projects often fail} (vastly overruns their cost or timetable) because politicians make them their pet project, pushing them through against all odds... And leave it to other people to pick up the pieces after the next election.◊mn{olympics}
 
 Proponents will say that money is more important than other issues---too important to leave it to the whims of the politicians---and therefore the Federal Reserve must remain independent. I believe it's much too important to be handled in the dark, by a private entity.
 
 ◊note-pos[#:top -11]{olympics}
 
 ◊ndef["bonuses"]{
-    An easy thing to criticise is how the ◊link[the-bailouts]{banks got bailed out} in the 2008 financial crisis, and were given money with almost no strings attached and paid out ridiculous salaries and bonuses. Conflict of interest much?
+    An easy thing to criticize is how the ◊link[the-bailouts]{banks got bailed out} in the 2008 financial crisis, and were given money with almost no strings attached and paid out ridiculous salaries and bonuses. Conflict of interest much?
 }
 
 ◊ndef["oversight-control"]{
@@ -226,13 +226,13 @@ Proponents will say that money is more important than other issues---too importa
 }
 
 ◊ndef["olympics"]{
-    My favorite example of failing megaprojects is the Olympics, which have vastly overrun their initial projected cost every single time.
+    My favorite example of failing mega projects is the Olympics, which have vastly overrun their initial projected cost every single time.
 }
 
 
 ◊subhead{A new hope}
 
-Cryptocurrencies are interesting because they allow anyone to verify the number of coins in circulation---with certainty. No money in history has had this valuable property.  There's always been the need to trust the word of someone, that the amount of money is what they say it is. Even with gold coins there's trust involved, you have to trust the issuer to include the right amount of gold, otherwise the trust---and the currency---◊link[rome-debasing]{will collapse in value}.◊mn{portraits}
+Cryptocurrencies are interesting because they allow anyone to verify the number of coins in circulation---with certainty. No money in history has had this valuable property.  There's always been the need to trust the word of someone, that the amount of money is what they say it is. Even with gold coins there's trust involved; you have to trust the issuer to include the right amount of gold, otherwise the trust---and the currency---◊link[rome-debasing]{will collapse in value}.◊mn{portraits}
 
 ◊ndef["portraits"]{
     Ever wonder why there are portraits on coins? Because they make them recognizable so you can decide to trust them or not. "I'll gladly accept emperor Augustus' coins" or "we don't accept that usurper's coins here."

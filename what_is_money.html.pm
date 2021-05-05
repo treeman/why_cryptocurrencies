@@ -15,7 +15,7 @@
   }
 }
 
-Money is something completely necessary in our society, and most people come in contact with money every day. We might use it to buy things, might worry about our expenses, that we don't have enough, or even be glad for how much we have. But we seldom stop and think of what money really is.
+Money is something completely necessary in our society, and most people come in contact with money every day. We might use it to buy things, worry about our expenses, that we don't have enough, or even be glad for how much we have. But we seldom stop and think of what money really is.
 
 Not just how the physical coins and pieces of paper are made, but why does money exist? What makes it valuable? Are there different kinds of money? And are some forms of money better than others?◊mn{money-or-currency}
 
@@ -69,7 +69,7 @@ First, let's look at some interesting historical examples of items that have bee
            #:alt "A large pyramid of paper money."]{
         Bank notes---paper money---are easy to use but they do have problems of their own. Unless kept in check, by for example ◊link[rel-gold-standard]{the gold standard}, they can be mass produced to cause ◊link[hyperinflation]{hyperinflation}.
 
-        ◊link[germany-wallpaper]{This is what happened in Germany} after the first World war. They had massive debts after losing the war, so they tried to print enough money to pay off the debts.◊mn{germany-stories}
+        ◊link[germany-wallpaper]{This is what happened in Germany} after the first World War. They had massive debts after losing the war, so they tried to print enough money to pay off the debts.◊mn{germany-stories}
 
         While the inflation was slow at first it quickly ramped up. It culminated in 1924 with a ◊link[germany-notes]{100 billion mark note}, while only four years earlier 100 mark notes were used.
 
@@ -340,7 +340,7 @@ As seen from historical examples, I think it's safe to conclude that yes, basica
 To function as money, money should have these properties:◊mn{money-props}
 
 ◊ndef["money-props"]{
-    What properties money should have also differs. Some list ◊em{stability in value} as a property, but I chose to go with ◊em{limited in supply} as I wanted to focus on intrinsic properties that don't change with time. Other ◊link[money-props]{popular descriptions} leave out ◊em{recognizable}, but I felt counterfeit-resistance is too important to leave out.
+    What properties money should have also differ. Some list ◊em{stability in value} as a property, but I chose to go with ◊em{limited in supply} as I wanted to focus on intrinsic properties that don't change with time. Other ◊link[money-props]{popular descriptions} leave out ◊em{recognizable}, but I felt counterfeit-resistance is too important to leave out.
 }
 
 ◊(define money-props
@@ -466,15 +466,15 @@ The money we usually use today is a little different from coins made of precious
     See ◊link[intrinsic-value-fallacy]{The Fallacy of "Intrinsic Value"}.
 }
 
-It's not a requirement that the money must be backed by something, or have intrinsic value like commodity money. The real problem is that the supply isn't actually limited.  Banks inflate the supply using ◊def[legal_counterfeiting]{fractional banking} while central banks can print money, both physical and digital, without any limit.◊mn{fractional-banking-good}
+It's not a requirement that the money must be backed by something, or have intrinsic value like commodity money. The real problem is that the supply isn't limited.  Banks inflate the supply using ◊def[legal_counterfeiting]{fractional banking} while central banks can print money, both physical and digital, without any limit.◊mn{fractional-banking-good}
 
 ◊ndef["fractional-banking-good"]{
-    There are those who ◊link[fractional-banking-atlanta]{argue that Fractional Banking is a net positive for society}. And ◊link[fractional-banking-bad]{those who disagree}. Regardless, it's a negative with respect to the properties of money we use.
+    There are those who ◊link[fractional-banking-atlanta]{argue that Fractional Banking is a net positive for society}. And ◊link[fractional-banking-bad]{those who disagree}. Regardless, it's a negative with respect to the properties of money I've chosen.
 }
 
 The term ◊def[sound-money]{sound money} refers to money that isn't prone to sudden changes in long term purchasing power, and the value is determined by the free market. If the supply of money differs from the demand, which will happen with fiat due to the disconnect between banks and the market, then there might be sudden changes to the purchasing power.
 
-While fiat has many positive properties, after the move away from the gold standard it's now considered unsound money.
+While fiat has many positive properties, after the move away from the gold standard, it's now considered unsound money.
 
 
 

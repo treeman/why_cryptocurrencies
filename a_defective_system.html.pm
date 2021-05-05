@@ -109,7 +109,7 @@ Counterfeiting also means redistributing wealth from everyone to the counterfeit
 
 
 ◊ndef["magic-printer"]{
-    Maybe he's got a magic printer which can print perfect copies of a dollar bill. Normally printers even ◊link[print-money]{refuse to print images} looking like a dollar or other major currencies.
+    Maybe he's got a magic printer which can print perfect copies of a dollar bill. To protect against counterfeiting normal printers ◊link[print-money]{refuse to print images} looking like a dollar or other major currencies.
 }
 
 ◊(define print-money

@@ -100,6 +100,11 @@
     "https://www.getmonero.org/library/Zero-to-Monero-1-0-0.pdf"
     "Kurt M. Alanso and KOE"
     "Zero to Monero"))
+(define peak-book
+  (book-ref
+    "https://www.goodreads.com/book/show/26312997-peak"
+    "K. Anders Ericsson, Robert Pool"
+    "Peak: Secrets from the New Science of Expertise"))
 
 ;; Defs
 

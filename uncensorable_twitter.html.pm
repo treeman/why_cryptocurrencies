@@ -112,7 +112,7 @@ Images or videos aren't actually embedded but reference outside services. ◊lin
 
 ◊subhead{Not a purely good thing}
 
-For someone who's a big privacy supporter and who thinks the ◊link[right-to-be-forgotten]{Right to be forgotten} (the ability to remove yourself from the internet) is really important I'm quite conflicted. On the one hand, this tech can be used for good---as we'll get into later---but it might also be a bad idea for other reasons.
+For someone who is a big privacy supporter and who thinks the ◊link[right-to-be-forgotten]{Right to be forgotten} (the ability to remove yourself from the internet) is really important I'm quite conflicted. On the one hand, this tech can be used for good---as we'll get into later---but it might also be a bad idea for other reasons.
 
 If this kind of social network becomes popular, you may end up in a position where you cannot delete your posts and really embarrass yourself. For example if you drunkenly post really negative opinions about your boss, there's no way to take that back.◊mn{fired-social-media}
 

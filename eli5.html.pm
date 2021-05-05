@@ -14,7 +14,7 @@ While cryptocurrencies are mostly seen as speculative assets or get rich quick s
 ◊ul{
     ◊li{◊strong{Excellent monetary properties}
 
-        Cryptocurrencies ◊link[are_cryptocurrencies_money]{have better monetary properties} than anything else in history. In contrast to the fiat money we use today, cryptocurrencies have a limited supply and compared to gold cryptocurrencies are much more portable, are easier to divide into small parts, and cannot be counterfeit.
+        Cryptocurrencies ◊link[are_cryptocurrencies_money]{have better monetary properties} than anything else in history. In contrast to the fiat money we use today, cryptocurrencies have a limited supply and compared to gold, cryptocurrencies are much more portable, are easier to divide into small parts, and cannot be counterfeit.
 
         At first glance, this may seem insignificant, but money affects everything and even small improvements can have a massive effect.
     }
@@ -28,7 +28,7 @@ While cryptocurrencies are mostly seen as speculative assets or get rich quick s
 
         You receive money in ◊link[speed-comparisons]{under an hour}, and after that the money is yours. In contrast, it may take days to receive other digital payments that can also be reversed weeks or months later.
 
-        This means merchants don't have to worry about having a purchase reversed, which usually means they have to swallow the loss.◊mn{chargeback-fraud}
+        Thus merchants don't have to worry about having a purchase reversed, which usually means they have to swallow the loss.◊mn{chargeback-fraud}
 
         ◊note-pos[#:top -2]{chargeback-fraud}
     }
@@ -40,7 +40,7 @@ While cryptocurrencies are mostly seen as speculative assets or get rich quick s
     }
     ◊li{◊strong{Financial privacy}
 
-        Banks, credit card companies, and payment processors have all your financial transactions on record. Cryptocurrencies allows you to ◊link[private_money]{reclaim some of your privacy} as they work like a ◊link[swiss_bank_account_in_your_pocket]{swiss bank account in your pocket}.◊mn{bitcoin-privacy}
+        Banks, credit card companies, and payment processors have all your financial transactions on record. Cryptocurrencies allow you to ◊link[private_money]{reclaim some of your privacy} as they work like a ◊link[swiss_bank_account_in_your_pocket]{swiss bank account in your pocket}.◊mn{bitcoin-privacy}
 
         ◊note-pos[#:top -2]{bitcoin-privacy}
     }
