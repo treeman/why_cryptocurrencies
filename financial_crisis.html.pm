@@ -3,7 +3,7 @@
 ◊(define-meta title "The financial crisis, bad loans and bailouts")
 ◊(define-meta subtitle "The doomsday, broken incentives and moral hazard")
 ◊(define-meta published "2019-10-25T00:00:00+01:00")
-◊(define-meta updated "2021-03-10T19:04:36+01:00")
+◊(define-meta updated "2021-05-07T19:11:00+01:00")
 ◊(define-meta uuid "0da3165e-e470-4143-a658-4b2858f3a148")
 ◊(define-meta template "chapter.html")
 

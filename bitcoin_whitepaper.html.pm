@@ -3,7 +3,7 @@
 ◊(define-meta title "The Bitcoin white paper")
 ◊(define-meta subtitle "What started it all")
 ◊(define-meta published "2019-04-12T00:00:00+01:00")
-◊(define-meta updated "2020-04-19T10:06:55+02:00")
+◊(define-meta updated "2021-05-07T19:11:00+01:00")
 ◊(define-meta uuid "581c4917-d862-49cb-9d01-495a9106081b")
 ◊(define-meta template "chapter.html")
 

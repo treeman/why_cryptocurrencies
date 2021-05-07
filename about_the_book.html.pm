@@ -3,7 +3,7 @@
 ◊(define-meta title "About the book")
 ◊(define-meta subtitle "A perspective beyond the hype")
 ◊(define-meta published "2019-04-12T00:00:00+01:00")
-◊(define-meta updated "2021-03-10T19:01:29+01:00")
+◊(define-meta updated "2021-05-07T19:11:00+01:00")
 ◊(define-meta uuid "7ea80c78-aff2-46a1-8d05-1253d7033dc6")
 ◊(define-meta template "chapter.html")
 

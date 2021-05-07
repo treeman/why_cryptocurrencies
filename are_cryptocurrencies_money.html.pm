@@ -3,7 +3,7 @@
 ◊(define-meta title "Are cryptocurrencies money?")
 ◊(define-meta subtitle "How well do they work as money?")
 ◊(define-meta published "2019-05-23T00:00:00+01:00")
-◊(define-meta updated "2021-03-10T19:02:23+01:00")
+◊(define-meta updated "2021-05-07T19:11:00+01:00")
 ◊(define-meta uuid "f04af7c8-5fee-45c4-a5a4-80a3f6fbd31b")
 ◊(define-meta template "chapter.html")
 
