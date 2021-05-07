@@ -34,6 +34,18 @@ If you want you can try it out (click to show address and QR code):
             "45T1KEsECksHE2ngx7m8FRFb8rEBcDz2w37vP7Jt7sNXZfQBZWmKn2pRKBuiefGGYvjQ7amk4gvFCamzisvdh9qhUZpjbeg"]{
         Monero (XMR)
     }
+    ◊crypto["/images/donations/dgc.svg"
+            "dogecoin:DRJXgnQi51Jt9SyyEjSGb3YCo5FNTDCdWd"]{
+        Dogecoin (DGC)
+    }
+    ◊crypto["/images/donations/ltc.svg"
+            "litecoin:ltc1q6vfj9emfnygeqdwmvr27pr7v8gjvq24f7s369f"]{
+        Litecoin (LTC)
+    }
+    ◊crypto["/images/donations/eth.svg"
+            "0xBb98A61EEbd3c7C3108d09228582a28C6297B87D"]{
+        Ethereum (ETH)
+    }
 }
 
 ◊ndef["browser-mining"]{
