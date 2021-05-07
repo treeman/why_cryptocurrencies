@@ -3,7 +3,7 @@
 ◊(define-meta title "Look out for snake oil")
 ◊(define-meta subtitle "The space is new, hyped, and full of misleading information")
 ◊(define-meta published "2019-05-06T00:00:00+01:00")
-◊(define-meta updated "2021-03-10T19:05:28+01:00")
+◊(define-meta updated "2021-05-07T19:11:00+01:00")
 ◊(define-meta uuid "635e169f-885a-4d29-a266-4c9ef4981f47")
 ◊(define-meta template "chapter.html")
 
@@ -127,7 +127,7 @@ There are many traps to fall into in this space. I think the best antidote is to
 }
 
 ◊ndef["ICOs"]{
-    Smart tokens are often used in for Initial Coin Offerings (ICOs) where you invest in a project by sending them money and in return get these tokens. The hope is they become valuable or the project buys them back so you get returns on your investment.
+    Smart tokens are often used for Initial Coin Offerings (ICOs) where you invest in a project by sending them money and in return get these tokens. The hope is they become valuable or the project buys them back so you get returns on your investment.
 
     Many ICOs have been declared illegal as they're classified as securities and many more are very scammy. Bitconnect is for example an ICO.
 }

@@ -3,7 +3,7 @@
 ◊(define-meta title "Freezing of merchant accounts")
 ◊(define-meta subtitle "The account your business relies on can be frozen at any time")
 ◊(define-meta published "2019-06-14T00:00:00+01:00")
-◊(define-meta updated "2021-03-10T19:04:55+01:00")
+◊(define-meta updated "2021-05-07T19:11:00+01:00")
 ◊(define-meta uuid "ac14d4a1-3796-4f5b-9350-b56e796625a1")
 ◊(define-meta template "chapter.html")
 
@@ -190,7 +190,7 @@ Some of these had a happy ending but others did not.
 
 ◊subhead{Money under your mattress}
 
-With cryptocurrencies, you can accept digital payments that go directly into a wallet you control yourself. Then, it's impossible to get your cryptocurrency account frozen; it's really like storing them under your own (digital) mattress.◊mn{tradeoff-holding}
+With cryptocurrencies, you can accept digital payments that go directly into a wallet that you---and you alone---control. Then, it's impossible to get your cryptocurrency account frozen; it's really like storing them under your own (digital) mattress.◊mn{tradeoff-holding}
 
 ◊ndef["tradeoff-holding"]{
     As always, there are trade-offs. Storing money at home drastically increases the risk of theft so keeping it at a trustworthy bank might be a wise choice.
@@ -199,7 +199,7 @@ With cryptocurrencies, you can accept digital payments that go directly into a w
 }
 
 
-This of course requires that you use a wallet which holds the coins itself, and not a custodial wallet---which a third-party manages for you. It's why so much emphasis is placed on controlling your own keys, otherwise you won't get all benefits.
+This of course requires that you use a wallet that holds the coins itself, and not a custodial wallet---which a third-party manages for you. It's why so much emphasis is placed on controlling your own keys, otherwise you won't get all benefits.
 
 I'm not advocating either way; just realize there are trade-offs with controlling your own keys or not. If you want the ease of use of a custodial wallet, then you'll sacrifice control of your account.
 

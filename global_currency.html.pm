@@ -3,7 +3,7 @@
 ◊(define-meta title "A global currency")
 ◊(define-meta subtitle "Money without borders")
 ◊(define-meta published "2019-12-10T00:00:00+01:00")
-◊(define-meta updated "2021-03-10T19:05:04+01:00")
+◊(define-meta updated "2021-05-07T19:11:00+01:00")
 ◊(define-meta uuid "bec2e177-8ccd-4f8d-a90e-a3d0b4269e43")
 ◊(define-meta template "chapter.html")
 
@@ -11,7 +11,7 @@
 
 ◊img[#:src "/images/global.png" #:alt "You can send coins all over the world."]{}
 
-Cryptocurrencies don't have any borders. They allow you to send and receive money from anywhere in the world, to bypass sanctions and border control, opt-out of local monetary policies, and use a currency that's global to an extent we've never seen before.
+Cryptocurrencies don't have any borders. They allow you to send and receive money from anywhere in the world; to bypass sanctions and border control; opt-out of local monetary policies; and use a currency that's global to an extent we've never seen before.
 
 
 ◊subhead{Remittance}
@@ -203,7 +203,7 @@ For example:
 ◊section[#:class "inflation-examples"]{
     ◊inflation["Germany"
                #:date "1920s"]{
-        In Germany after the first world war, when inflation was at its height prices doubled in less than four days. It's not the worst case of hyperinflation, but it might be the most well-known, maybe because it happened to a powerful western nation and it's related to the world wars.
+        In Germany after the first world war, when inflation was at its height, prices doubled in less than four days. It's not the worst case of hyperinflation, but it might be the most well-known, maybe because it happened to a powerful western nation and it's related to the world wars.
     }
     ◊inflation["Hungary"
                #:date "1945--1946"]{
@@ -359,7 +359,7 @@ The U.S. dollar is the ◊link[world-currency]{closest we have to a world curren
      "https://www.investopedia.com/terms/r/reservecurrency.asp"
      "James Chen: Reserve Currency"))
 
-But the U.S. dollar isn't truly a world currency, it's just one country's currency that happen to be widely used. The U.S. government and the Federal Reserve still has full control of the currency---they can dabble with the money supply however they want---and the rest of the world can only hope they won't get shafted.
+But the U.S. dollar isn't truly a world currency, it's just one country's currency that happen to be widely used. The U.S. government and the Federal Reserve still have full control of the currency---they can dabble with the money supply however they want---and the rest of the world can only hope they won't get shafted.
 
 In contrast cryptocurrencies exist outside the control of any country. They're instead controlled by people all over the world, who come together and agree to the rules governing the currency.
 

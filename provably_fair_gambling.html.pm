@@ -3,7 +3,7 @@
 ◊(define-meta title "Provably fair gambling")
 ◊(define-meta subtitle "Gambling where you cannot cheat the odds")
 ◊(define-meta published "2019-12-17T00:00:00+01:00")
-◊(define-meta updated "2021-03-10T19:06:04+01:00")
+◊(define-meta updated "2021-05-07T19:11:00+01:00")
 ◊(define-meta uuid "cf1cc907-4fda-4b98-81fd-b9c447cdadc5")
 ◊(define-meta template "chapter.html")
 
@@ -73,6 +73,9 @@ With a pseudo-random generator, that's what we can do. We give it a ◊em{seed},
 
     seed 13:
     4 4 2 3 2 3 2 2 1 8 …
+
+    seed 7:
+    5 2 6 0 1 8 1 5 9 0 …
 }
 
 A pseudo-random generator can produce a sequence of numbers, a number of coin tosses or even generate the whole world in Minecraft.◊mn{minecraft-seed}
@@ -176,7 +179,7 @@ There are limits to the simple toy example I've described:
     }
     ◊li{Multiplayer games are more complex
 
-        This scheme works fine for simple single player games, like flipping a coin. But if we wanted to create a provable fair poker game the implementation would be more complex, but it would still be possible.◊mn{encrypt}
+        This scheme works fine for simple single player games, like flipping a coin. But if we wanted to create a provably fair poker game the implementation would be more complex, but it would still be possible.◊mn{encrypt}
 
         ◊note-pos{encrypt}
 

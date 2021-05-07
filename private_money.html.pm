@@ -3,7 +3,7 @@
 ◊(define-meta title "Private money")
 ◊(define-meta subtitle "Reclaim your financial privacy with cryptocurrencies")
 ◊(define-meta published "2019-12-09T00:00:00+01:00")
-◊(define-meta updated "2021-03-10T19:05:36+01:00")
+◊(define-meta updated "2021-05-07T19:11:00+01:00")
 ◊(define-meta uuid "9f90581c-24f1-4653-9b4a-d86a9ec9e365")
 ◊(define-meta template "chapter.html")
 
@@ -55,7 +55,7 @@ In practice they often overlap. For example if all my emails were available onli
 
 ◊subhead{Why privacy matters}
 
-Privacy and anonymity is an important issue in the modern world and there are examples of privacy violations everywhere. Before we get to some of them we first need to address why privacy matter, because today government officials, company owners, the news and regular people all ask the same questions:
+Privacy and anonymity are important issues in the modern world and there are examples of privacy violations everywhere. Before we get to some of them we first need to address why privacy matter, because today government officials, company owners, the news and regular people all ask the same questions:
 
 Why would you want privacy? What are you hiding? Are you criminal?◊mn{summary-discussion}
 
@@ -64,7 +64,7 @@ Why would you want privacy? What are you hiding? Are you criminal?◊mn{summary-
 
     ◊span[#:class "talking"]{
       ◊trow{Why do I need privacy? I have nothing to hide.}
-      ◊trow{Then pull your pants down, give me a dickpick, your email password and your credit card number.}
+      ◊trow{Then pull your pants down, send me a dick pick, your email password and your credit card number.}
     }
 
     I can't promise I'll do better, but I'll try.
@@ -91,7 +91,7 @@ If you don't recognize the situation please watch the scene where Hugh Grant pla
      "https://www.youtube.com/watch?v=aUm2K6eDuMU"
      "YouTube (2010) Love Actually - Hugh Grant dancing (1 min)"))
 
-I have a child who's two years old, and even he wants privacy sometimes. He likes to build a cabin made of pillows and hide in it, and if I disturb him he pushes me and shouts “Go away!”. After we recently renovated his room he was ◊em{so happy} that he had a room of his own again, which he likes to be alone in when he's pooping (in his diaper thank god).◊mn{children-privacy}
+I have a two year old child, and even he wants privacy sometimes. He likes to build a cabin made of pillows and hide in it, and if I disturb him he pushes me and shouts “Go away!”. After we recently renovated his room he was ◊em{so happy} that he had a room of his own again, which he likes to be alone in when he's pooping (in his diaper thank god).◊mn{children-privacy}
 
 ◊ndef["children-privacy"]{
     It's really quite fascinating. Sometimes I can hug him while he's playing, but other times I'm not even allowed to be in the same room. I guess he just wants to be alone from time to time.
@@ -172,7 +172,7 @@ Even if you don't think you have anything to hide, others do. Here are some exam
 
       There was a story that went viral years ago on how Target ◊link[teenage-pregnancy]{predicted a teenage pregnancy and exposed it to her father}. In a normal western household it might not be that big of a deal, but ◊link[murder-family-honor]{thousands of women are killed each year} for family "honor"---often for much less than a teenage pregnancy, such as ◊link[dowry-murder]{not getting paid enough for marrying the bride}.
   }
-  ◊li{Sexual preferences
+  ◊li{Sexual preference
 
     While homosexuality is becoming more accepted, it's still ◊link[gay-illegal]{illegal in some countries} where you might face execution. Similar to the story of the girl's pregnancy above, having a history of your purchases might expose you. (Why did you visit this gay bar?)
 
@@ -509,7 +509,7 @@ For example people may be willing to give up their privacy, because it might mak
 
 ◊subhead{You're the product}
 
-It's not just the governments of the world who are collecting our data and violating our privacy. Companies of all sorts do this too, but they sell it for profit.
+It's not just the governments of the world who are collecting our data and violating our privacy. Companies of all sort do this too, but they sell it for profit.
 
 Alphabet Inc. (company name of Google) and Facebook are two of the most valuable, richest and powerful companies in the world. Yet their main services---search and social networking---are completely free for us to use. So where do they make their money? And where's the product they're selling?
 
@@ -520,7 +520,7 @@ They're selling knowledge about you. What you're searching for, what sites you v
 ◊ndef["predictions"]{
     It might be hard to come to terms with how the algorithms can predict your behavior. But it's really not that different from how Youtube, Netflix or Spotify recommends videos and songs to you.
 
-    Oh? He watched a video of a Japanese rock band? And he's listened to Raubtier? Then let's recommend ◊link[band-maid]{Band-Maid}, he'll love them! (I assume this is how YouTube decided to recommend me ◊link[band-maid]{Band-Maid}---the best rock band in the world.)
+    Oh? He watched a video of a Japanese rock band? And he has listened to Raubtier? Then let's recommend ◊link[band-maid]{Band-Maid}, he'll love them! (I assume this is how YouTube decided to recommend me ◊link[band-maid]{Band-Maid}---the best rock band in the world.)
 }
 
 ◊(define band-maid
@@ -530,7 +530,7 @@ They're selling knowledge about you. What you're searching for, what sites you v
      "YouTube: BAND-MAID on YouTube"))
 
 
-For example they probably know if you're gay or if you're pregnant (and if you are, they'll know if it was an accident, if your parents know about it and who's the father). They might also predict---with high confidence---if you're religious, even if you don't want anyone to know. Or who you're going to vote for in the ◊em{next} election or how likely you are to commit a crime.◊mn{thoughtcrime}
+For example they probably know if you're gay or if you're pregnant (and if you are, they'll know if it was an accident, if your parents know about it and who is the father). They might also predict---with high confidence---if you're religious, even if you don't want anyone to know. Or who you're going to vote for in the ◊em{next} election or how likely you are to commit a crime.◊mn{thoughtcrime}
 
 ◊ndef["thoughtcrime"]{
     ◊def{Pre-crime}, like in the movie ◊link[minority-report]{Minority Report (2002)}, is the idea that you can predict someone committing a crime and catching them before they do.
@@ -548,7 +548,7 @@ For example they probably know if you're gay or if you're pregnant (and if you a
 
 And it's not just a problem with Google and Facebook. An increasing number of companies are discovering how lucrative your data is. If you buy a Coca-Cola, the information that you bought it at this place and at this specific time might even be worth more than the Coca-Cola itself!
 
-For example smart TVs come with a microphone ◊link[smart-tvs]{that listens to everything you do}, and the TV company then ◊link[vizo-surveillance]{sell the recordings to the highest bidder}. Credit card companies have full records of all purchases you do---◊link[google-mastercard]{which they sell to someone else}. Even the banks, who we might think should work for us, ◊link[bank-shares]{sell our data to third parties}.
+For example smart TVs come with a microphone ◊link[smart-tvs]{that listens to everything you do}, and the TV company then ◊link[vizo-surveillance]{sell the recordings to the highest bidder}. Credit card companies have full records of all purchases you make---◊link[google-mastercard]{which they sell to someone else}. Even the banks, who we assume should work for us, ◊link[bank-shares]{sell our data to third parties}.
 
 What about your privacy? That's not something they care about, because they can sell it and make lot's of money.
 

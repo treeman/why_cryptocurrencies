@@ -3,7 +3,7 @@
 ◊(define-meta title "Darknet markets")
 ◊(define-meta subtitle "Global and digital markets for illegal goods")
 ◊(define-meta published "2019-12-15T00:00:00+01:00")
-◊(define-meta updated "2021-03-10T19:04:15+01:00")
+◊(define-meta updated "2021-05-07T19:11:00+01:00")
 ◊(define-meta uuid "4cf3ad81-1c7f-414f-a582-4b2897d27121")
 ◊(define-meta template "chapter.html")
 
@@ -60,7 +60,7 @@ Mass surveillance, which we covered in the chapter ◊link[private_money]{Privat
 
 It's easy to find examples of silly laws that make moral actions illegal (just search for "silly laws" or similar), but I think there are more interesting issues. For example stealing is illegal, but is it immoral for a starving child to steal food to survive? Or for the child to steal food for his starving little sister? And where on the moral scale would you place prostitution?
 
-The issue of "right or wrong" isn't so easy to answer, and we cannot just rely on what's legal and what's not. Instead I think we should ask ourselves if it's moral or immoral (which is also subjective).
+The issue of "right or wrong" isn't so easy to answer, and we cannot just rely on what's legal and what's not. Instead I think we should ask ourselves if it's moral or immoral, and let our internal moral compass guide us (morality is subjective as well).
 
 ◊note-pos[#:top -23]{surveillance}
 
@@ -162,7 +162,7 @@ The following example, based on a real-life story I read a few years ago, illust
 
     Melinda had cancer.
 
-    They went to see specialists, and she started chemotherapy. As luck would have it, she responded well, and the doctors gave her a good chance of recovery. But she was still weak, and needed continuous treatment.
+    They went to see specialists, and she started chemotherapy. As luck would have it, she responded well, and the doctors gave her a good chance of recovery. But she was weak, and needed continuous treatment.
 
     But Melinda's treatment was expensive---very expensive. Despite insurance, they would still have to come up with $600 a week---that's around $2,400 a month---just for her medicine.
 

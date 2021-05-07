@@ -3,7 +3,7 @@
 ◊(define-meta title "Separation of money and state")
 ◊(define-meta subtitle "Countries that don't manage their own money")
 ◊(define-meta published "2020-02-05T06:24:16+01:00")
-◊(define-meta updated "2021-03-10T19:06:14+01:00")
+◊(define-meta updated "2021-05-07T19:11:00+01:00")
 ◊(define-meta uuid "a5636cbf-bec1-4795-8c66-5725b0eec7bf")
 ◊(define-meta template "chapter.html")
 
@@ -11,7 +11,7 @@
 
 ◊img[#:src "/images/bitcoin-priest.png" #:class "slim" #:alt "A priest with a crown, holding a sword and a bag of Bitcoin."]{}
 
-When I first started thinking about cryptocurrencies, I thought they were just useful for some people who couldn't use regular transactions, like buying weed or things on a darknet market. Or that it was a better payment system as there was no middleman to skim off large fees from all transactions. That's useful, but it didn't strike me as revolutionary.◊mn{fees}
+When I first started thinking about cryptocurrencies, I thought they were just useful for some people who couldn't use regular transactions, like buying weed or things on a darknet market. Or that it was simply a better payment system as there was no middleman to skim off large fees from all transactions. That's useful, but it didn't strike me as revolutionary.◊mn{fees}
 
 ◊ndef["fees"]{
     I do think ◊link[cheaper_faster]{avoiding up to 5%} fees on practically all digital payments is an under-appreciated benefit of cryptocurrencies. It might be overshadowed by the volatility, but the potential benefit to the economy is absolutely huge.

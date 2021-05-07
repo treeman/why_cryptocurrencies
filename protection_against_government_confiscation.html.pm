@@ -3,7 +3,7 @@
 ◊(define-meta title "Protection against government confiscation")
 ◊(define-meta subtitle "It's harder for governments to take cryptocurrencies from you")
 ◊(define-meta published "2020-01-09T00:00:00+01:00")
-◊(define-meta updated "2021-03-10T19:05:55+01:00")
+◊(define-meta updated "2021-05-07T19:11:00+01:00")
 ◊(define-meta uuid "01795fb4-c99a-4168-8685-73ad86ed7c0c")
 ◊(define-meta template "chapter.html")
 
@@ -32,7 +32,7 @@ It's about how laws meant to fight crime end up hurting innocent people and how 
 
 Perhaps, you've heard the phrase "innocent until proven guilty"? It's called ◊link[presumption-of-innocence]{presumption of innocence} and it's a cornerstone in the modern justice system that says the default stance is that you're innocent of a crime and it's up to the prosecution to prove otherwise. It's an old legal principle that the United Nations has declared an ◊link[un-universal-human-rights]{universal human right} (see article 11).
 
-If it was the other way around, "guilty until proven innocent", then it would open up abuse from inside the justice system and innocent people would end up in jail, either by being unlucky---despite being innocent you lack convincing evidence that you are---or you simply cannot afford competent defense to protect yourself. Therefore the presumption of innocence a necessary requirement to keep the justice system fair.
+If it was the other way around, "guilty until proven innocent", then it would open up abuse from inside the justice system and innocent people would end up in jail, either by being unlucky---despite being innocent you lack convincing evidence that you are---or you simply cannot afford competent defense to protect yourself. Therefore the presumption of innocence is a necessary requirement to keep the justice system fair.
 
 ◊(define presumption-of-innocence
    (x-ref

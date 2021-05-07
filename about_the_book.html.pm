@@ -3,7 +3,7 @@
 ◊(define-meta title "About the book")
 ◊(define-meta subtitle "A perspective beyond the hype")
 ◊(define-meta published "2019-04-12T00:00:00+01:00")
-◊(define-meta updated "2021-03-10T19:01:29+01:00")
+◊(define-meta updated "2021-05-07T19:11:00+01:00")
 ◊(define-meta uuid "7ea80c78-aff2-46a1-8d05-1253d7033dc6")
 ◊(define-meta template "chapter.html")
 
@@ -25,7 +25,7 @@ Curiously enough, the news doesn't explain what cryptocurrencies are or what the
     It's interesting when the news handles something you have a good understanding of---they're often completely wrong. Makes you wonder, how wrong are they about things you're not familiar with?
 }
 
-Maybe this is why most people --- even cryptocurrency fans --- only see cryptocurrencies as a form of investment? After all there are few things as exciting as the possibility of becoming rich very quickly.
+Maybe this is why most people --- even cryptocurrency fans --- only see cryptocurrencies as a form of investment? After all, there are few things as exciting as the possibility of becoming rich very quickly.
 
 What hope does average Joe have when even the famous security technologist Bruce Schneier ◊link[blockchain-and-trust]{concludes that}:
 
@@ -42,7 +42,7 @@ It's almost a universal phenomena. I've heard these arguments from students, co-
   ◊li{It's a scam.}
   ◊li{It's just a speculative bubble and cryptocurrencies are really worthless.
 
-    Here many draw parallels to Beanie Babies◊sn{beanies} or the Tulip mania◊sn{tulips}. To be fair, cryptocurrencies have displayed bubble behavior---several times.
+    Here many draw parallels to Beanie Babies◊sn{beanies} or the Tulip mania◊sn{tulips}. And to be fair, cryptocurrencies have displayed bubble behavior---several times.
   }
   ◊li{They don't do anything better than other payment systems like PayPal or VISA.}
   ◊li{There's no legal use case.}

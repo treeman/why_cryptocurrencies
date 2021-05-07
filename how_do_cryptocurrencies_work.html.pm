@@ -3,7 +3,7 @@
 ◊(define-meta title "How do cryptocurrencies work?")
 ◊(define-meta subtitle "Decentralized consensus")
 ◊(define-meta published "2019-05-03T20:08:34+01:00")
-◊(define-meta updated "2021-03-10T19:05:19+01:00")
+◊(define-meta updated "2021-05-07T19:11:00+01:00")
 ◊(define-meta uuid "320751d9-9a28-4e91-9469-b44b83e12475")
 ◊(define-meta template "chapter.html")
 
@@ -99,7 +99,7 @@ We copied our coin and printed ◊sans-tnum{1 BTC} out of thin air, so now the l
 This isn't really a problem with physical cash since you can't just copy gold coins or paper notes. It's not a problem for banks either since the bank can just deny one or both of the transactions.  This is a hard problem for a digital currency that tries to remove the central authority, and this is why before Bitcoin no ◊def{decentralized}◊mn[#:top -4]{decentralized} digital currency existed.
 
 ◊ndef["decentralized"]{
-    Decentralization is a common term used to refer to the lack of trusted third-party. Instead, multiple unrelated entities come together and decide as a group.
+    Decentralization is a common term used to refer to the lack of a trusted third-party. Instead, multiple unrelated entities come together and decide as a group.
 
     There are different types of decentralization in a cryptocurrency to consider. For example:
 
@@ -124,14 +124,14 @@ In the Eastern Roman Empire, also referred to as the Byzantine Empire, several g
     The five generals surround a well defended enemy city. They don't have direct contact and instead need to communicate by sending messengers.
 }
 
-The city is very well-defended and if they attack individually, they will be defeated. So, they will have to work together and coordinate to attack at the same time or retreat as a unit. Doing nothing is not an option either as they have a limited food supply while the city is waiting for reinforcements.
+The city is very well-defended and if they attack individually, they will be defeated. So, they will have to work together and coordinate to attack at the same time, or retreat as a unit. Doing nothing is not an option either as they have a limited food supply while the city is waiting for reinforcements.
 
 If they try to act without a majority, they will surely face defeat---they must coordinate.
 
 This would be very easy if they could trust each other. Unfortunately, they cannot trust the messages---either the messenger or the message itself could be replaced---and even some of the generals could be traitors.◊mn{cryptography}
 
 ◊ndef["cryptography"]{
-    One countermeasure to corrupt messengers is to ◊def[public-key-cryptography]{encrypt} messages. Unfortunately, it doesn't protect against a traitor who knows the code, like one of the generals. Also, in ancient times, encryption weren't very advanced and could possibly be broken, see the ◊link[ceasar-cipher]{Ceasar cipher} as an example.
+    One countermeasure to corrupt messengers is to ◊def[public-key-cryptography]{encrypt} messages. Unfortunately, it doesn't protect against a traitor who knows the code, like one of the generals. Also, in ancient times, encryption wasn't very advanced and could possibly be broken, see the ◊link[ceasar-cipher]{Caesar cipher} as an example.
 }
 
 
@@ -177,10 +177,10 @@ Unfortunately, there's a serious problem here. As there's no barrier to particip
     This is what Honest Harry sees. A diverse group of honest individuals.
 }
 ◊img[#:src "/images/sybil-steves.png" #:alt "But Harry is really connected to Sneaky Steve five times."]{
-    In reality, they're all controlled by Sneaky Steve.
+    But in reality, they're all controlled by Sneaky Steve.
 }
 
-This is called a ◊def{Sybil attack}. Think of how one person can use multiple online identities to troll or attack people online; it's hard to know who's real.◊mn{trolls}
+This is called a ◊def{Sybil attack}. Think of how one person can use multiple online identities to troll or attack people online; it's hard to know who is real.◊mn{trolls}
 
 ◊ndef["trolls"]{
     It's very common for cryptocurrency communities to be flooded by trolls pushing their own agenda.
@@ -210,7 +210,7 @@ The work is to find a solution to a computing problem.◊mn{asics} The problem i
     }
     ◊li{◊strong{Memoryless}
 
-        It means knowing earlier outcomes to similar problems doesn't give any advantage. Finding a solution is essentially random.
+        Knowing earlier outcomes shouldn't give any advantage. Finding a solution should essentially be random.
 
         It's similar to how you're just as likely---or unlikely---to get a ◊link[royal-flush]{Royal Flush} on your first hand as on your 1000◊sup{th} hand. Whatever you got the other 999 hands doesn't matter.
     }
@@ -233,7 +233,7 @@ It's important to note that the system is permissionless so there's nobody to pr
 ◊ndef["useful-pow"]{
     It's difficult to create a problem that satisfy the POW properties while having a useful side-effect. For example, ◊link[protein-folding]{The Protein Folding Problem} is not easy to verify, and it's hard to adjust the problem difficulty.
 
-    Additionally if there was a useful side-effect, it might alter the economic incentives of mining. If mining is purely done to secure a cryptocurrency, then the miners' investment rests on the success of the cryptocurrency while a secondary use for specialized mining hardware lessens the incentive to secure the chain.
+    Additionally, if there was a useful side-effect, it might alter the economic incentives of mining. If mining is purely done to secure a cryptocurrency, then the miners' investment rests on the success of the cryptocurrency while a secondary use for specialized mining hardware lessens the incentive to secure the chain.
 }
 
 ◊(define protein-folding
@@ -273,9 +273,9 @@ A blockchain is what it sounds like: a chain of blocks where a new block builds 
     The blocks in the blockchain are linked with a key obtained by solving the POW problem.
 }
 
-The transactions must follow common rules, called ◊def{consensus rules}, otherwise other miners and users who use the blockchain will discard the block. For example, a transaction cannot send coins from an empty address or spend coins without having access to the private key of an address.
+The transactions must follow common rules, called ◊def{consensus rules}, otherwise other miners and users who use the blockchain will discard the block. For example, a transaction cannot send coins from an empty address or spend coins without having access to the private key of that address.
 
-In return for adding the block, you get to collect the rewards. One for finding a block, and you can also collect transaction fees for the transactions you include in the block.◊mn{blockreward}
+In return for adding the block, you get to collect the rewards. One for finding a block, and you can collect transaction fees for the transactions you include in the block.◊mn{blockreward}
 
 The blockchain is public and anyone can see all transactions. You can use a ◊link[blockchair]{blockchain explorer} to see for yourself; see for example the full history of ◊link[blockchair-addr]{this address} or ◊link[blockchair-tx]{this transaction} with one input and two outputs.◊mn{outputs}
 
@@ -305,7 +305,7 @@ The blockchain is duplicated, stored, and maintained by many different people; y
 }
 
 ◊ndef["blockreward"]{
-    As I'm writing this the current ◊def{block reward} for Bitcoin is 6.25 BTC, or around $250,000. With one block expected every 10 min that's about $36,000,000 per day. Bitcoin mining is big business.
+    As I'm writing this in February 2021, the current ◊def{block reward} for Bitcoin is 6.25 BTC, or around $250,000. With one block expected every 10 min that's about $36,000,000 per day. Bitcoin mining is big business.
 }
 
 ◊ndef["outputs"]{
@@ -356,7 +356,7 @@ The chain will split, and there will be a ◊def{fork}.◊mn{code-fork} Each min
 
 ◊img[#:src "/images/double_spend_fork_long.png"
      #:alt "Two different chains in the blockchain."]{
-    Here there are two chains after a fork, one of height two and one of height four.
+    Here there are two chains after a fork, one of length two and one of length four.
 }
 
 The longer chain is to be considered "the correct" chain and the shorter chain will be abandoned.◊mn{orphan} Coming to consensus by following the longest chain is often referred to as ◊def{Nakamoto consensus}.
@@ -434,9 +434,9 @@ A crucial mistake people make is to think more miners, or more energy used, mean
 In fact, we could spend 100x more energy on mining and process the same amount of transactions, or we could spend 1% of the energy and process more transactions. Transaction throughput is a separate problem.◊mn{more-energy}
 
 ◊ndef["0-conf"]{
-    You can actually even accept transactions without any confirmation, called ◊def{0-conf}. They are much less secure than a confirmed transaction, but since most miners respect the first seen rule it's fairly safe for small purchases.
+    You can even accept transactions without any confirmation, called ◊def{0-conf}. They are much less secure than a confirmed transaction, but since most miners respect the first-seen-rule it's fairly safe for small purchases.
 
-    There are investigations on how to make 0-conf more secure. One of the more interesting proposals is ◊link[z-forfeits]{0-conf forfeits} where you provide a larger sum as hostage and if you try to double spend you lose them.
+    There are investigations on how to make 0-conf more secure. One of the more interesting proposals is ◊link[z-forfeits]{0-conf forfeits} where you provide a larger sum as hostage and if you try to double spend, you lose them.
 }
 
 ◊ndef["more-energy"]{
@@ -505,7 +505,7 @@ A 51% can be detected and there can be severe negative consequences:
     ◊li{The Bitcoin price might crash.}
     ◊li{Exchanges might blacklist the stolen funds.}
     ◊li{The community might change POW and make all mining rigs worthless.◊mn{monero-POW} ◊note-pos{monero-POW}}
-    ◊li{It's hard to keep warehouses full of mining rigs of that scale a secret, there's a big risk to get caught.}
+    ◊li{It's hard to keep warehouses full of mining rigs of that scale a secret---there's a big risk to get caught.}
 }
 
 Bitcoin miners are rewarded in bitcoin and they also can't be spent until after 100 blocks---roughly 16 hours. Executing a 51% attack that crashes the price would directly affect the rewards. If the community goes for the nuclear option and change POW, the massive initial investment into mining equipment might be lost.
@@ -529,11 +529,11 @@ The biggest security risk for Bitcoin might instead be state-level actors  who w
 
 While cryptocurrencies combine several different technologies in an interesting way, the real innovation is how they're secured by economic incentives; that the most profitable way for miners is to follow the network rules.
 
-As noted earlier, the current block reward for Bitcoin is 6.25 BTC, or around $250,000 (as of February 2021). Losing out on just one block reward is a big loss in the cutthroat mining business, so miners are heavily incentivized to always work on the longest chain.
+As noted earlier, the current block reward for Bitcoin is 6.25 BTC, or around $250,000. Losing out on just one block reward is a big loss in the cutthroat mining business, so miners are heavily incentivized to always work on the longest chain.
 
 For example, in a fork with two competing chains, the most profitable move is to jump to the longest chain as quickly as possible. This ensures that a double-spend gets resolved quickly.
 
-It also doesn't make sense for a minority miner to try to double-spend, it will only cause them to lose money in the long run. Therefore, only a miner with 51% can compromise the network security, and even then it might be more profitable to play by the rules.
+It also doesn't make sense for a minority miner to try to double-spend, it will only cause them to lose money in the long run. Therefore, only a miner with 51% can compromise the network security, and even then it may even be more profitable to play by the rules.
 
 ◊(define ghash
   (x-ref
@@ -581,7 +581,7 @@ Some cryptocurrencies, like Monero and Bitcoin Cash, have regular network upgrad
 
 Because a network upgrade is a fork, there will be two chains (as long as someone mines them). Sometimes, the minority chain lives on as a new cryptocurrency; Ethereum Classic is the continuation of the old chain ◊link[dao]{after an Ethereum fork}.
 
-Other times, the fork is initiated by people who want to create a new cryptocurrency from another one, but the mechanism is exactly the same. This means you can fork Bitcoin at any point if you want. The tricky part is getting other people to join you.
+Other times, the fork is initiated by people who want to create a new cryptocurrency from another one, but the mechanism is exactly the same. This means you can fork Bitcoin at any point if you want, the tricky part is getting other people to join you.
 
 You may then wonder: what decides which is the correct chain? There's no clear answer and social consensus decides which of the chains is called "Original Coin" and which is called "New Coin". Social consensus may be very messy, and cryptocurrencies won't help us there.
 
