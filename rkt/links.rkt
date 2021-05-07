@@ -179,6 +179,10 @@
   (ch-ref
     'about_the_book.html
     "About the book"))
+(define about-me
+  (ch-ref
+    'about_me.html
+    "About me, the author"))
 (define what_is_a_cryptocurrency
   (ch-ref
     'what_is_a_cryptocurrency.html

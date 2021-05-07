@@ -237,8 +237,27 @@
     }
 
     ◊faq["Can I get the cover as a background?"]{
-      Yes! Check these out: ◊link[cover1615 #:class "background"]{1615 x 2045} ◊link[cover1883 #:class "background"]{1883 x 2045}
+      Yes! Check these out: 
+
+      ◊ul{
+        ◊li{◊link[cover1080x1612 #:class "background"]{1080 x 1612} (0.67 mobile)}
+        ◊li{◊link[cover1080x1920 #:class "background"]{1080 x 1920} (0.56 mobile)}
+        ◊li{◊link[cover1280x1024 #:class "background"]{1280 x 1024} (1.25 desktop)}
+        ◊li{◊link[cover1920x1080 #:class "background"]{1920 x 1080} (1.78 desktop)}
+        ◊li{◊link[cover1920x1200 #:class "background"]{1920 x 1200} (1.6 desktop)}
+        ◊li{◊link[cover1615 #:class "background"]{1615 x 2045} (0.79 original ratio without spine)}
+        ◊li{◊link[cover1883 #:class "background"]{1883 x 2045} (0.92 original ratio with spine)}
+      }
+
       If they don't fit, feel free to crop and resize however you want.
+    }
+
+    ◊faq["How did you create the book?"]{
+      The book is self-published and I plan to write ◊link[blog-series]{a series of on my blog detailing the process}.
+    }
+
+    ◊faq["Who are you?"]{
+      Please see ◊link[about-me]{About me, the author}.
     }
 
     ◊faq["What if I find an error in the book?"]{
@@ -285,12 +304,32 @@
     #f
     "https://www.barnesandnoble.com/w/why-cryptocurrencies-jonas-hietala/1139072236"
     "'Why Cryptocurrencies?' on Barnes & Nobles"))
-◊(define cover1883
-  `("/images/cover/1883x2045.png"
-    "1883x2045 cover"))
+◊(define blog-series
+  (x-ref
+    #f
+    "https://www.jonashietala.se/blog/tags/why_cryptocurrencies/"
+    "Jonas Hietala: Posts tagged 'Why Cryptocurrencies?'"))
 ◊(define cover1615
   `("/images/cover/1615x2045.png"
     "1615x2045 cover"))
+◊(define cover1883
+  `("/images/cover/1883x2045.png"
+    "1883x2045 cover"))
+◊(define cover1280x1024
+  `("/images/cover/1280x1024.png"
+    "1280x1024 cover"))
+◊(define cover1920x1080
+  `("/images/cover/1920x1080.png"
+    "1920x1080 cover"))
+◊(define cover1920x1200
+  `("/images/cover/1920x1200.png"
+    "1920x1200 cover"))
+◊(define cover1080x1612
+  `("/images/cover/1080x1612.png"
+    "1080x1612 cover"))
+◊(define cover1080x1920
+  `("/images/cover/1080x1920.png"
+    "1080x1920 cover"))
 
 ◊section[#:class "ending"]{
   ◊(follow-section)

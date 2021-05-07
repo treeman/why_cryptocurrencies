@@ -520,6 +520,23 @@ $small-screen: 1067px;
     margin: 0 auto;
     width: 800px;
 }
+.landing .faq .answer ul {
+    list-style: none;
+    margin: 1rem 0 1rem 0em;
+
+    > li::before {
+        @extend %sans-serif;
+        //content: "⭑";
+        //content: "~";
+        //content: "≈";
+        //content: "→";
+        //content: "»";
+        //content: "*";
+        content: "•";
+        //content: "†";
+        // color: $body-list-sym-color;
+    }
+}
 
 .landing .ending {
     padding-top: 8px;
