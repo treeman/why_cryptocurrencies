@@ -3,7 +3,7 @@
 ◊(define-meta title "Cheaper & faster")
 ◊(define-meta subtitle "Avoids middleman fees and settles quickly")
 ◊(define-meta published "2019-06-03T00:00:00+01:00")
-◊(define-meta updated "2021-03-10T19:03:13+01:00")
+◊(define-meta updated "2021-05-07T19:11:00+01:00")
 ◊(define-meta uuid "eddfec3a-26e5-4736-a66f-a935aa9d67ae")
 ◊(define-meta template "chapter.html")
 
@@ -23,7 +23,7 @@ Cryptocurrencies provide two major advantages compared to other digital payments
 Fees in cryptocurrencies are relatively straightforward: each transaction has a fixed fee, independent of the transaction value. The one who sends the transaction pays the fee.◊mn{crypto-fee}
 
 ◊ndef["crypto-fee"]{
-    Because cryptocurrencies are so volatile, the expected fee converted to fiat varies. The fees are also set by demand, but most cryptocurrencies have ample space to keep the fees very low.
+    Because cryptocurrencies are so volatile, the expected fee converted to fiat varies. The fees are also set by demand, but most cryptocurrencies have enough capacitR to keep the fees very low.
 }
 
 ◊figure{
@@ -46,7 +46,7 @@ For the most part, cryptocurrencies have very low fees---enough to call them neg
 In fact, Bitcoin fees of $2-3 is still low compared the fees during the bull run in December 2017, which reached an average of $50(!!) per transaction. This is because transaction throughput in Bitcoin is maxed out, and to get your transaction accepted you need to pay more than others.◊mn{fee-market}
 
 ◊ndef["fee-market"]{
-    There are some Bitcoin developers who claims high fees are necessary for the survival of Bitcoin. Gregory Maxwell was famously "◊link[nullc-champaign]{pulling out the champaign}" when Bitcoin had $50 fees. He thought it was a sign that the market supported the ◊def{"fee market"} idea (which is more a blockspace market).
+    There are some Bitcoin developers who claim high fees are necessary for the survival of Bitcoin. Gregory Maxwell was famously "◊link[nullc-champaign]{pulling out the champaign}" when Bitcoin had $50 fees. He thought it was a sign that the market supported the ◊def{"fee market"} idea (which is more a blockspace market).
 
     The issue is that Bitcoin's block reward will eventually run out (after several decades), so who will pay the miners to secure the network? The "fee market" idea says that transactions must be very expensive for it to be worth it for miners to secure the chain.
 
@@ -148,7 +148,7 @@ Mobile payments have become popular recently.◊sn{mobile-payments} As a represe
 I've also left out any monthly and yearly fee, common for regular payment systems. For example, merchants might rent credit card terminals and Swish---with comparatively low transaction fees---also has a $10--50 yearly fee (the fee varies depending on your bank).◊sn{bank-fees}
 
 ◊ndef["bank-fees"]{
-    Bank accounts also come with a fee. I pay for example a $30 yearly fee just to have my bank account, which includes a debit card and ability to do banking online.
+    Bank accounts also come with a fee. For example, I pay a $30 yearly fee just to have my bank account, which includes a debit card and the ability to do banking online.
 }
 
 As we can see, cryptocurrencies are decidedly cheaper than the other options. Even Swish, which is much cheaper than PayPal or cards, is 100 times more expensive than Bitcoin Cash. There are also no yearly fees of any kind just to receive payments in it (but there might be fees if you want to convert it to fiat).
@@ -287,7 +287,7 @@ A unique property of cryptocurrencies is they ◊link[transaction-security]{beco
 The speed that cryptocurrencies settle and become irreversible significantly reduces the risk of charge back fraud and eliminates it for most use-cases.◊sn{0-conf}
 
 ◊ndef["0-conf"]{
-    There's a risk of having transactions reversed (◊link[double-spending]{double-spent}) before they're confirmed.  This can happen when delivering goods immediately after payment notification.
+    There's a risk of having transactions reversed (◊link[double-spending]{double spend}) before they're confirmed.  This can happen when delivering goods immediately after payment notification.
 
     Because transaction security is probabilistic, there's ◊link[transaction-security]{always a risk} of having a transaction reversed even for confirmed transactions, but in practice it's ◊strong{very} low.
 }

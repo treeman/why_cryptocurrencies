@@ -79,7 +79,7 @@ $sidenote-float-width: 1280px;
     color: $eth-dark-gray;
 }
 .where .home {
-    @extend %sans-serif-c;
+    @extend %sans-serif;
 }
 .where .up {
 }
@@ -301,7 +301,7 @@ li pre {
     margin-bottom: $list-p-margin;
 }
 .sidenote code {
-    font-size: 0.6rem;
+    font-size: 0.65rem;
     line-height: 1.4;
     //white-space: nowrap;
 }

@@ -3,7 +3,7 @@
 ◊(define-meta title "Improved voting")
 ◊(define-meta subtitle "A verifiable and resilient voting system")
 ◊(define-meta published "2020-01-31T07:22:26+01:00")
-◊(define-meta updated "2021-03-10T19:07:23+01:00")
+◊(define-meta updated "2021-05-07T19:11:00+01:00")
 ◊(define-meta uuid "5aaf6384-d377-485b-bfc2-2c4caaaa0fe0")
 ◊(define-meta template "chapter.html")
 
@@ -25,7 +25,7 @@
 
 In this chapter, we'll look at some of the problems with the way we vote and how we might use cryptocurrencies (or "the blockchain") to make an improved voting scheme.
 
-I say they ◊em{might} help because it's not a use-case where I know they will provide value, it's still unclear how much benefit it would bring and blockchain voting may even be a fundamentally bad idea. But as I'll argue there are some very good properties it can provide, so the idea isn't so bad it can be thrown out directly.◊mn{nearly-threw-it-away}
+I say they ◊em{might} help because it's not a use-case where I know they will provide value; it's still unclear how much benefit it would bring and blockchain voting may even be a fundamentally bad idea. But as I'll argue, there are some very good properties it can provide, so the idea isn't so bad it can be thrown out directly.◊mn{nearly-threw-it-away}
 
 ◊ndef["nearly-threw-it-away"]{
     If you're skeptical then don't worry---I'm not entirely convinced of this use-case either.  I had written the chapter and was going to throw it away, but in the end I decided to keep it. If anything I hope the discussion is interesting.
@@ -42,7 +42,7 @@ But why do we talk about improving voting? What's the problem with the way we vo
 
 Firstly, we shouldn't avoid looking for improvements just because the "old way" worked well. If so then we wouldn't have faster cars, bigger TV-screens or more effective medicine---the previous versions already worked well enough. There's always value in making something ◊em{better}.
 
-But there are also serious problems with our voting system. A great example of some of them is the United States presidential election of 2000, where George W. Bush edged out Al Gore in a historically close election, at least according to ◊link[bush-v-gore]{Britannica}, which I use as a source for the events.◊mn{gore-won-popular}
+But there are also serious problems with our voting system. A great example of some of them is the United States presidential election of 2000, where George W. Bush edged out Al Gore in a historically close election---at least according to ◊link[bush-v-gore]{Britannica}, which I use as a source for the events.◊mn{gore-won-popular}
 
 ◊ndef["gore-won-popular"]{
     I find it interesting that Gore got more total votes, but won fewer states, so he ended up losing the election.
@@ -60,12 +60,12 @@ The problem here is that some of the ballots weren't in good condition. Some bal
 
 Because the stakes were fairly high (an understatement I know) there was a ton of legal action, and charges of conflict of interest were pushed by both parties. At the end the U.S. Supreme Court overturned the Florida decision and put a stop to the recounting, awarded Florida's votes to Bush and that no recount could be held in time.
 
-So in the end the Supreme Court decided to end the election and might've changed the outcome in the process.  That's a pretty big failure of the voting system right there.
+So in the end the Supreme Court decided to end the election and might have changed the outcome in the process.  That's a pretty big failure of the voting system right there.
 
 
 ◊subhead{The problems with paper voting}
 
-One of the issues with the U.S. election is that there are essentially only two parties and the winner of the election takes it all. Therefore such a small difference as a couple of hundred votes did have a huge impact. If Al Gore had won, our world might look completely different today.
+One of the issues with the U.S. election is that there are essentially only two parties and the winner of the election takes it all. Therefore such a small difference as a couple of hundred votes did have a huge impact. If Al Gore had won, our world might have looked completely different today.
 
 But we also saw some problems that are caused by using paper votes:◊mn{paper?}
 
@@ -352,7 +352,7 @@ The scheme I've presented is simple---too simple. There are many problems with i
     }
     ◊li-neg{Understandability
 
-            If electronic voting was hard for people to understand and accept, this wouldn't be any easier. If anything "blockchain voting" might be even harder to understand, especially as many technologically proficient people still regard the blockchain as a panacea that can solve any problem.
+            If electronic voting was hard for people to understand and accept, this wouldn't be any easier. If anything "blockchain voting" is even harder to understand, especially as many technologically proficient people still regard the blockchain as a panacea that can solve any problem.
     }
 }
 
@@ -384,9 +384,7 @@ They're right that trust isn't an issue, since data will be independently verifi
 While there are benefits to blockchain voting, there are many problems we need to solve first, with the privacy problem being the most important. And it's possible that when all things are considered, maybe paper voting is best after all.
 
 ◊ndef["efficiency"]{
-    Then again if we want a publicly verifiable voting system, where all data is publically available, we must assume it will also exist forever. (On a related note this is the assumption we all should make when we interact with social media. The internet remembers.)
-
-    The only thing we might gain by skipping the blockchain is efficiency, which certainly shouldn't be disregarded.
+    Then again if we want a publicly verifiable voting system, where all data is publicly available, we must assume it will also exist forever. (On a related note this is the assumption we all should make when we interact with social media. The internet remembers.)
 }
 
 ◊(define public-evidence-from-secret-ballots

@@ -3,7 +3,7 @@
 ◊(define-meta title "Are cryptocurrencies money?")
 ◊(define-meta subtitle "How well do they work as money?")
 ◊(define-meta published "2019-05-23T00:00:00+01:00")
-◊(define-meta updated "2021-03-10T19:02:23+01:00")
+◊(define-meta updated "2021-05-07T19:11:00+01:00")
 ◊(define-meta uuid "f04af7c8-5fee-45c4-a5a4-80a3f6fbd31b")
 ◊(define-meta template "chapter.html")
 
@@ -193,7 +193,7 @@ We've looked at the properties---but how well do they function as money, today?
 ◊ol{
     ◊li{◊strong{Medium of exchange}
 
-        Cryptocurrencies work well as a medium of exchange, but it's not commonly used.
+        Cryptocurrencies work well as a medium of exchange, but they're not commonly used.
     }
     ◊li{◊strong{Unit of account}
 
@@ -226,7 +226,7 @@ While cryptocurrencies are used as money in certain communities and for certain 
     Cryptocurrencies are quite popular for privacy-concerned users. For example, most serious sellers of VPNs, domain names and VPS hosting accept payments via cryptocurrencies.
 }
 
-There are mainly two things holding it back today:
+There are mainly two things holding cryptocurrencies back today:
 
 ◊ol{
     ◊li{◊strong{Large volatility}

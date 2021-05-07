@@ -3,7 +3,7 @@
 ◊(define-meta title "A Swiss bank account in your pocket")
 ◊(define-meta subtitle "Unlimited and untraceable money on your smartphone")
 ◊(define-meta published "2020-01-02T00:00:00+01:00")
-◊(define-meta updated "2021-03-10T19:06:25+01:00")
+◊(define-meta updated "2021-05-07T19:11:00+01:00")
 ◊(define-meta uuid "d1144eb3-b2ac-4c89-b2e0-4a03f377172c")
 ◊(define-meta template "chapter.html")
 
@@ -45,7 +45,7 @@ This is actually a great description of how cryptocurrencies work. You just need
 
 ◊subhead{The myth of a Swiss bank account}
 
-This is how ◊link[swiss-bank-account]{Swiss bank accounts} are usually portrayed. While they can offer more privacy than other banks, it's just a myth that they offer truly private banking. Due to the additional privacy compared to the other banks, they also have tough anti-money-laundering laws that require more identification than other banks and they also require proof of where the money comes from.
+This is how ◊link[swiss-bank-account]{Swiss bank accounts} are usually portrayed. While they can offer more privacy than other banks, it's just a myth that they offer truly private banking. Due to the additional privacy compared to the other banks, they also have tough anti-money-laundering laws that require more identification than other banks and they require proof of where the money comes from.
 
 Recently Switzerland has ◊link[swiss-exchange]{begun sharing bank details} of foreign account holders automatically with other countries. At the time of writing they share data with ◊link[swiss-more-countries]{more than 60 countries}, and more will join. I think it's fair to say that Swiss bank accounts don't live up to the private bank account dream.
 
@@ -145,7 +145,7 @@ It's up to you if you believe them or not. As the cynic that I am, I remain skep
   All animals are equal, but some animals are more equal than others
 }
 
-While tax evasion through offshore banking is problematic, it pales to the problem that in practice there's another set of tax rules only for the super rich. Let's see what the president of the United States has to say about tax evasion:
+While tax evasion through offshore banking is problematic, it pales to the problem that in practice there's another set of tax rules only for the super rich. Let's see what the previous president of the United States has to say about tax evasion:
 
 ◊qt[#:url trump-clinton
     #:src "Trump debates with Clinton"]{
@@ -235,7 +235,7 @@ In an ideal world everyone would pay their taxes as they should, while preservin
 ◊ul{
     ◊li{It's fine the way it is
 
-        I doubt anyone except the Trumps of the world, who are the ones who benefit the most, would say the ideal world is what we have today. The ◊link[inequality]{inequality is increasing} as the rich get richer while paying less taxes, it seems clear to me we have a serious problem that needs to be fixed.
+        I doubt anyone except the Trumps of the world, who are the ones who benefit the most, would say the ideal world is what we have today. The ◊link[inequality]{inequality is increasing} as the rich get richer while paying less taxes; it seems clear to me we have a serious problem that needs to be fixed.
     }
     ◊li{Everyone must use traceable money
 

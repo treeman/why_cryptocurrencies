@@ -3,7 +3,7 @@
 ◊(define-meta title "Tokens")
 ◊(define-meta subtitle "Cryptocurrencies with centrally managed supply")
 ◊(define-meta published "2020-02-07T07:35:36+01:00")
-◊(define-meta updated "2021-03-10T19:06:43+01:00")
+◊(define-meta updated "2021-05-07T19:11:00+01:00")
 ◊(define-meta uuid "1cbc42c7-a81d-40ff-9620-1d89c13dee12")
 ◊(define-meta template "chapter.html")
 
@@ -40,7 +40,7 @@ Tokens are essentially cryptocurrencies, except there's a single entity with the
 
 They achieve this by operating on top of an existing cryptocurrency. You might think of it as the issuer marking some coins with additional information, specifying what kind of token they are. (Technically tokens can be implemented in many different ways, but this is the core idea.)
 
-The most popular class of tokens are probably the ◊link[erc20-standard]{ERC20 tokens}, implemented on top of Ethereum. ◊link[usdc]{USD Coin}, Coinbase's stablecoin backed 1-to-1 by USD, is for example an ERC20 token. ◊link[bnb]{Binance Coin}, used for the bonus system on a cryptocurrency exchange, is another.◊sn{other-coins}
+The most popular class of tokens are probably the ◊link[erc20-standard]{ERC20 tokens}, implemented on top of Ethereum. ◊link[usdc]{USD Coin}, Coinbase's stablecoin backed 1-to-1 by USD, is example an ERC20 token. ◊link[bnb]{Binance Coin}, used for the bonus system on the cryptocurrency exchange Binance, is another.◊sn{other-coins}
 
 ◊note-pos[#:top -20]{weak}
 
@@ -93,10 +93,12 @@ Although ICOs are mostly associated with scams (and rightfully so I'd say) there
 
 ◊;I'd say the ICO of the ◊link[brave]{privacy focused browser Brave} is an example of a good ICO.
 
-Does it sound insane? That's really no different from how ◊link[kickstarter]{Kickstarter} works, where it's very popular to pledge money for an interesting board game project and you wait for months or years and hope you'll get something in return.◊mn{insane?}
+Does it sound insane? That's really no different from how ◊link[kickstarter]{Kickstarter} works, where it's very popular to pledge money for an interesting board game project and you wait for months or years and hope you'll get something in return.◊mn[#:top -3]{insane?}
 
 ◊ndef["insane?"]{
     You might still say it sounds insane, but just realize Kickstarter is very popular and it mostly works out well. (At least for board games, which I'm most familiar with.)
+
+  ◊link[flipstarter]{Flipstarter} is a platform that improves on Kickstarter by enforcing payments via smart contracts, cutting out the third-party from the picture. The money is automatically transferred when the funding goal has been reached, but otherwise it never leaves the pledger's wallet.
 }
 
 Why would you want a token for this? The benefit would be that anyone, anywhere, could participate and that participation could be done anonymously. And it all takes place on a platform where you have a guarantee that you can sell your token if you lose faith in the project (since properly implemented not even the issuer can prevent token transactions).◊mn{anon}
@@ -125,6 +127,11 @@ Why would you want a token for this? The benefit would be that anyone, anywhere,
      "2020-02-07"
      "https://www.investopedia.com/terms/i/ipo.asp"
      "Adam Hayes: Initial Public Offering (IPO)"))
+◊(define flipstarter
+   (x-ref
+     "2021-05-07"
+     "https://flipstarter.cash/"
+     "Flipstarter"))
 ◊(define kickstarter
    (x-ref
      "2020-02-07"
@@ -152,7 +159,7 @@ This problem, of how to transfer ownership of a code, is really the same double 
 
 ◊subhead{Derivatives}
 
-It's quite difficult for us humans to truly understand very big numbers, because we don't have anything to relate them to. For example what's the difference between $1 billion and $1 trillion? I know that the latter is 1000 times more, but that's just a number and I have difficulties to truly understand how large the difference is.
+It's quite difficult for us humans to truly understand very big numbers, because we don't have anything to relate them to. For example, what's the difference between $1 billion and $1 trillion? I know that the latter is 1000 times more, but that's just a number and I have difficulties to truly understand how large the difference is.
 
 I think visualizations can help us compare large amounts like these, so here's one where the small box ◊|money-vis-small| corresponds to $100 billion and the big box ◊|money-vis-big| corresponds to $1 trillion. (Although they may look small, the amounts are still ◊em{huge}.)
 
@@ -222,7 +229,7 @@ I think visualizations can help us compare large amounts like these, so here's o
 
 ◊;I highly recommend you to check out the excellent ◊link[money-visualization]{visualization by visualcapitalist}, which this visualization is inspired by.
 
-I bring this up just to say one thing: the value of derivatives is absolutely huge. Money, which essentially makes the world go around, is dwarfed by the value of derivatives.
+I bring this up just to say one thing: the value of derivatives is absolutely huge. Money, which makes the world go around, is dwarfed by the value of derivatives.
 
 But ◊link[derivative]{what are derivatives}?
 
