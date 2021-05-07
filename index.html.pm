@@ -257,7 +257,7 @@
     }
 
     ◊faq["Who are you?"]{
-      Please see ◊link[about-me]{About me, the author}.
+      See the chapter ◊link[about-me]{About me, the author}.
     }
 
     ◊faq["What if I find an error in the book?"]{
