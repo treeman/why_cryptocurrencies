@@ -115,7 +115,7 @@
               </span>
             }
             <span class="home">
-              <a href="/" title="Table of contents">~ Home</a>
+              <a href="/toc.html" title="Table of contents">~ Home</a>
             </span>
           </span>
 

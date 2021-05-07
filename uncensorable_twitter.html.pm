@@ -151,7 +151,7 @@ At the same time, there's something compelling about the idea of having a forum 
     "https://www.imdb.com/title/tt0346369/"
     "Penn & Teller: Bullshit! (TV Series 2003–2010)"))
 
-We've seen examples of censorship in the chapter ◊link[censorship-is-real]{uncensorable donations}, so let's not repeat ourselves too much. One example is that Twitter is completely censored in China, and you might get arrested if you bypass their internet wide block of it.
+We've seen examples of censorship in the chapter ◊link[censorship-is-real]{uncensorable donations}, so let's not repeat ourselves too much. A quick example is that Twitter is completely censored in China, and you might get arrested if you bypass their internet-wide block of it.
 
 A Twitter-like service based on a cryptocurrency does not have these problems. ◊link[uncensorable_donations]{◊nbsp{As we saw before}}, this kind of service is uncensorable, and there's no company or service China could put pressure on to get inconvenient content removed. Therefore we're free to discuss China's human rights abuses (like their ◊link[forced-organ-harvesting]{forced organ harvesting}) and the information can never be truly removed.
 
@@ -174,7 +174,7 @@ Have you heard about the ◊link[barbarians]{barbarians}? They're primitive and 
 
 Except those are exaggerated rumors, twisted by the passage of time. The Romans often liked to spread these kinds of rumors for propaganda purposes. If a Roman general came back from a successful campaign he might want to play up his opponent to make his feat bigger. As the saying goes: "history is written by the victors".◊mn{ceasar-celts}
 
-You can also actively rewrite the history, which is one of the main themes of the book ◊(book-link 1984-book) (which I quote often, because I love it so much). The idea is that you can get away with anything, because you erase it in hindsight. Other times, you might deny events because they don't fit your world-view or your bias, which can happen subconsciously. There are ◊link[rewriting-history]{many historic examples}---some crazier than others. Maybe we know about the holocaust denials or the moon landing skeptics? Even closer in time is how ◊link[bush-victory-iraq]{Bush declares victory in Iraq}, despite there being no real victory there.
+You can also actively rewrite the history, which is one of the main themes of the book ◊(book-link 1984-book) (which I quote often, because I love it so much). The idea is that you can get away with anything, because you erase it in hindsight. Other times, you might deny events because they don't fit your world-view or your bias, which can happen subconsciously. There are ◊link[rewriting-history]{many historic examples}---some crazier than others. Maybe you know about the holocaust denials or the moon landing skeptics? Even closer in time is how ◊link[bush-victory-iraq]{Bush declares victory in Iraq}, despite there being no real victory there.
 
 I wonder what history would look like if we had an uncorrupted version of it? If we had access to several different unaltered versions of a story? What if we had access to an easily searchable Twitter-style feed---permanent and uncensorable---available to all?
 

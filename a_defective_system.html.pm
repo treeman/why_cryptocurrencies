@@ -57,7 +57,7 @@ Who in turn will use it to buy other stuff, and in this way the counterfeited mo
     }
     ◊li{Redistribution of wealth.
 
-        Notice how in our previous example the counterfeited money isn't divided equally. The counterfeiter suddenly became much richer than everyone else, and some received a bit more than others. Notice that the poor guy to the right in the example---who had very little to start with---didn't receive any money and became even poorer.
+        Notice how in our previous example the counterfeited money isn't divided equally. The counterfeiter suddenly became much richer than everyone else, and some received a bit more than others. Notice that the poor guy to the right in the example---who had very little to start with---didn't receive any money and became even poorer, relatively speaking.
     }
 }
 
@@ -102,7 +102,7 @@ Counterfeiting means everyone's savings---the "old" money---will lose value. Thi
      "https://data.worldbank.org/indicator/FP.CPI.TOTL.ZG?locations=SE"
      "The World Bank: Inflation, consumer prices (annual %) - Sweden"))
 
-Counterfeiting also means redistributing wealth from everyone to the counterfeiter (and to a lesser extent people the counterfeiter buys from) at the same rate as the inflation eats up the value of money. Even though nobody's stealing your money, the effect is the same: your wealth relative to others will decrease.
+Counterfeiting redistributes wealth from everyone to the counterfeiter (and to a lesser extent people the counterfeiter buys from) at the same rate as the inflation eats up the value of money. Even though nobody's stealing your money, the effect is the same: your wealth relative to others will decrease.
 
 ◊note-pos[#:top -49]{inflation-visualization}
 ◊note-pos[#:top -21]{why-sweden?}
@@ -149,7 +149,7 @@ The central banks---the Federal Reserve (Fed) in the U.S. or the European Centra
 Although the central banks are ultimately responsible, it's the regular banks who expand the money supply the most. It's done via ◊def[fractional-banking]{fractional banking} which works like this:
 
 ◊ol{
-  ◊li{In the beginning John has ◊sans-tnum{1000 SEK}, with nothing strange going on. This is the balance sheet for John and the bank:
+  ◊li{In the beginning John has ◊sans-tnum{1 000 SEK}, with nothing strange going on. This is the balance sheet for John and the bank:
 
     ◊(table "1 000 SEK" "" "")
   }
@@ -231,7 +231,7 @@ The system works as long as people just keep their money at the bank, and only o
 
 ◊subhead{Lender of last resort}
 
-As money printers, the central banks play an important role---as the "lender of last resort". This means when all else fails, for example if the banks are about to go bankrupt because they have too little reserves or if the economy is going bad, then central banks can step in and save them. As we saw in an ◊link[financial_crisis]{earlier chapter} this is exactly what happened during the 2008 financial crisis, where banks and other institutions messed up in a major way but were bailed-out and made whole again.
+As money printers, the central banks play an important role---as the "lender of last resort". This means when all else fails, for example if the banks are about to go bankrupt because they have too little reserves or if the economy is going bad, then central banks can step in and save them. As we saw in an ◊link[financial_crisis]{earlier chapter} this is exactly what happened during the 2008 financial crisis, where banks and other institutions messed up in a major way but were bailed out and made whole again.
 
 This means the real check against fractional banking (the risk of going bankrupt) is thrown away and replaced with regulation that's supposed to keep the banks in check, while making the banks more robust against failure. While fine in theory, in practice it means banks are now incentivized to push the limits any way they can, to maximize their profits.
 
@@ -261,7 +261,7 @@ A crucial part of being the lender of last resort is to act as an overseer and t
 
 If you've followed along this far, you might get the feeling that the economic system is completely corrupt and wonder why anyone would ever get along with it? But not so fast---there's a reason things are the way the are, and a big part can be traced the ◊link[great-depression]{Great Depression} in the 1930s.
 
-The Great Depression was a huge economic crisis, the worst in modern history, which dwarfed the 2008 financial crisis. Experts debate the causes of this decade long crisis to this day, with explanations ranging from governments spending too little, printing too little money, printing too much money or the gold standard.◊mn{depression-crisis}
+The Great Depression was a huge economic crisis, the worst in modern history, that dwarfed the 2008 financial crisis. Experts debate the causes of this decade long crisis to this day, with explanations ranging from governments spending too little, printing too little money, printing too much money or the gold standard.◊mn{depression-crisis}
 
 ◊ndef["depression-crisis"]{
     There's more to these theories than my attempt to simplify them suggests, and there's probably not a single cause. For instance the global gold standard probably helped the crisis to spread, even if it might not have caused the crisis. There are also more theories than I list here.
@@ -534,7 +534,7 @@ To be fair, the Federal Reserve knows this isn't an ideal situation, so they tri
 So, we're stuck in a situation where we don't have the tools to defend against a recession---tools the economic theory the system is built on needs. Tools that have been used up, because that's what the theory says we should do.◊mn{winging-it}
 
 ◊ndef["winging-it"]{
-    It may sound like I'm referring to a single economic theory, which all governments and central banks follow. But that's not the case---there are many different theories, with slight differences, but I think it's a fair generalization to say that they mostly follow the push-pull ideas of stimulating the economy.
+    It may sound like I'm referring to a single economic theory, which all governments and central banks follow. But that's not the case---there are many different theories, with slight differences, but I think it's a fair generalization to say that they mostly follow the push-pull idea of stimulating the economy.
 
     Maybe a more correct thing to say is that many are just winging it, and making up rules as they go.
 }
@@ -569,7 +569,7 @@ It seems to me if (or when) a recession comes we'll get caught with our pants do
 
 When the world locked down during the COVID-19 pandemic the economy predictably crashed. Many people (including me) thought that the big recession was finally here and we'd be looking at several years of tough times.
 
-But then something weird happened. Despite entire cities and countries locking down, the number of unemployed reached record numbers and many smaller companies closed their doors for good, the recession didn't come. Instead the stock market recovered very quickly, as if closing down the world economy was just a minor speed bump.
+But then something weird happened. Despite entire cities and countries locking down; the number of unemployed reached record numbers and many smaller companies closed their doors for good, the recession didn't come. Instead the stock market recovered very quickly, as if closing down the world economy was just a minor speed bump.
 
 One might wonder, what the hell happened?
 
@@ -622,7 +622,7 @@ While "printing more money" is a popular solution, ◊def[sound-money]{sound mon
     With cryptocurrencies debasement isn't possible, which is one reason they're ◊link[are_cryptocurrencies_money]{better money} than gold.
 }
 
-It’s not easy to see how a switch to sound money would occur and such a switch may likely introduce more problems than it solved. It would mean however, that manipulation of the money supply would disappear, that we wouldn’t accumulate a mountain of debt, that we wouldn’t devalue our savings while increasing the wealth inequality, and that we wouldn’t cling to the broken and defective economic theories in use today.
+It’s not easy to see how a switch to sound money would occur and such a switch may likely introduce more problems than it solved. However, it would mean that manipulation of the money supply would disappear; that we wouldn’t accumulate a mountain of debt; that we wouldn’t devalue our savings while increasing the wealth inequality; and that we wouldn’t cling to the broken and defective economic theories in use today.
 
 ◊note-pos[#:top -15]{debasement}
 

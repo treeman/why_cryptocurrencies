@@ -64,7 +64,7 @@ Why would you want privacy? What are you hiding? Are you criminal?◊mn{summary-
 
     ◊span[#:class "talking"]{
       ◊trow{Why do I need privacy? I have nothing to hide.}
-      ◊trow{Then pull your pants down, give me a dickpick, your email password and your credit card number.}
+      ◊trow{Then pull your pants down, send me a dick pick, your email password and your credit card number.}
     }
 
     I can't promise I'll do better, but I'll try.
@@ -509,7 +509,7 @@ For example people may be willing to give up their privacy, because it might mak
 
 ◊subhead{You're the product}
 
-It's not just the governments of the world who are collecting our data and violating our privacy. Companies of all sorts do this too, but they sell it for profit.
+It's not just the governments of the world who are collecting our data and violating our privacy. Companies of all sort do this too, but they sell it for profit.
 
 Alphabet Inc. (company name of Google) and Facebook are two of the most valuable, richest and powerful companies in the world. Yet their main services---search and social networking---are completely free for us to use. So where do they make their money? And where's the product they're selling?
 
@@ -520,7 +520,7 @@ They're selling knowledge about you. What you're searching for, what sites you v
 ◊ndef["predictions"]{
     It might be hard to come to terms with how the algorithms can predict your behavior. But it's really not that different from how Youtube, Netflix or Spotify recommends videos and songs to you.
 
-    Oh? He watched a video of a Japanese rock band? And he's listened to Raubtier? Then let's recommend ◊link[band-maid]{Band-Maid}, he'll love them! (I assume this is how YouTube decided to recommend me ◊link[band-maid]{Band-Maid}---the best rock band in the world.)
+    Oh? He watched a video of a Japanese rock band? And he has listened to Raubtier? Then let's recommend ◊link[band-maid]{Band-Maid}, he'll love them! (I assume this is how YouTube decided to recommend me ◊link[band-maid]{Band-Maid}---the best rock band in the world.)
 }
 
 ◊(define band-maid
@@ -548,7 +548,7 @@ For example they probably know if you're gay or if you're pregnant (and if you a
 
 And it's not just a problem with Google and Facebook. An increasing number of companies are discovering how lucrative your data is. If you buy a Coca-Cola, the information that you bought it at this place and at this specific time might even be worth more than the Coca-Cola itself!
 
-For example smart TVs come with a microphone ◊link[smart-tvs]{that listens to everything you do}, and the TV company then ◊link[vizo-surveillance]{sell the recordings to the highest bidder}. Credit card companies have full records of all purchases you do---◊link[google-mastercard]{which they sell to someone else}. Even the banks, who we might think should work for us, ◊link[bank-shares]{sell our data to third parties}.
+For example smart TVs come with a microphone ◊link[smart-tvs]{that listens to everything you do}, and the TV company then ◊link[vizo-surveillance]{sell the recordings to the highest bidder}. Credit card companies have full records of all purchases you make---◊link[google-mastercard]{which they sell to someone else}. Even the banks, who we assume should work for us, ◊link[bank-shares]{sell our data to third parties}.
 
 What about your privacy? That's not something they care about, because they can sell it and make lot's of money.
 

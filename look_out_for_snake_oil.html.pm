@@ -127,7 +127,7 @@ There are many traps to fall into in this space. I think the best antidote is to
 }
 
 ◊ndef["ICOs"]{
-    Smart tokens are often used in for Initial Coin Offerings (ICOs) where you invest in a project by sending them money and in return get these tokens. The hope is they become valuable or the project buys them back so you get returns on your investment.
+    Smart tokens are often used for Initial Coin Offerings (ICOs) where you invest in a project by sending them money and in return get these tokens. The hope is they become valuable or the project buys them back so you get returns on your investment.
 
     Many ICOs have been declared illegal as they're classified as securities and many more are very scammy. Bitconnect is for example an ICO.
 }

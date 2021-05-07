@@ -105,9 +105,9 @@ Another property of the antifragile is that they like small errors, because afte
 
 This is how our muscles grow stronger. When we do strength training we break down our muscles by causing micro tears, and with rest they heal and make the muscles stronger. But we must be careful to not overdo it otherwise we'll break down, only becoming weaker.
 
-And it also holds true for the immune system. Vaccines give you a very small dose of the virus, just enough to activate your immune system and teach it how to kill the virus, but not so large to make you so sick you couldn't function as normal. And of course you don't want to die in the process.
+And it also holds true for the immune system. Some types of vaccines even give you a very small dose of the virus---just enough to activate your immune system and teach it how to kill the virus---but not so large to make you so sick you couldn't function as normal. And of course you don't want to die in the process.
 
-Cryptocurrencies work the same way. When a weakness is discovered developers will introduce a fix, eliminating the weakness. As long as the cryptocurrency doesn't completely die off weaknesses will only strengthen it, making it harder to disrupt.◊mn[#:top -6]{monero-attack}
+Cryptocurrencies work the same way. When a weakness is discovered developers will introduce a fix, eliminating the weakness. As long as the cryptocurrency doesn't completely die, weaknesses will only strengthen it, making it harder to disrupt.◊mn[#:top -6]{monero-attack}
 
 ◊ndef["monero-attack"]{
     As I'm proof-reading this chapter late December 2020, ◊link[monero-attack]{Monero is currently being attacked}, preventing some nodes from syncing.
@@ -190,7 +190,7 @@ Let's look at some concrete examples of how antifragility might come into play f
 
         For example ◊link[monero-dev]{Monero replaced---or kicked out---the old developer team} early on in it's history when the developers pushed changes that the community disagreed with.
 
-        A more recent example is the BCH/ABC split.◊mn{abc} Since Bitcoin Cash split from Bitcoin in 2017 Bitcoin ABC (Bitcoin Adjustable Blocksize Cap) has been the reference client that has dictated every change that went into the protocol. This ended in 2020 when ABC wanted to ◊link[abc-ifp]{reroute 8% of the block reward to an address under their control}. The change had ◊link[doomed-to-centralization]{serious centralization concerns}, and in the end the miners and the BCH community rejected them and they split away to their own minority fork.
+        A more recent example is the BCH/ABC split.◊mn{abc} Since Bitcoin Cash split from Bitcoin in 2017, Bitcoin ABC (Bitcoin Adjustable Blocksize Cap) has been the reference client that has dictated every change that went into the protocol. This ended in 2020 when ABC wanted to ◊link[abc-ifp]{reroute 8% of the block reward to an address under their control}. The change had ◊link[doomed-to-centralization]{serious centralization concerns}, and in the end the miners and the BCH community rejected them and they split away to their own minority fork.
 
         ◊note-pos[#:top -8]{abc}
 
@@ -218,7 +218,7 @@ Let's look at some concrete examples of how antifragility might come into play f
 
         If governments banned cryptocurrencies people would still trade them in person and move to decentralized marketplaces, which are inherently harder to disrupt. We would move away from centralized payment services and move towards a peer-to-peer economy, like how Satoshi envisioned.◊mn{global} ◊note-pos{global}
 
-        For example Monero supporters worry that governments will declare cryptocurrencies with good privacy features illegal---not an unreasonable thing to worry about. This will soon be a smaller issue as work on a ◊link[farcaster]{Bitcoin-Monero atomic swap project} is underway, which would allow people to trade Bitcoin and Monero without any third-party.
+        For example Monero supporters worry that governments will declare cryptocurrencies with good privacy features illegal (a reasonable thing to worry about). This will soon be a smaller issue as work on a ◊link[farcaster]{Bitcoin-Monero atomic swap project} is underway, which would allow people to trade Bitcoin and Monero without any third-party.
     }
     ◊li{◊strong{A 51% attack}
 

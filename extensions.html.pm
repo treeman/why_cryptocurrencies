@@ -17,7 +17,7 @@
 
 Money is perhaps the most obvious usage of cryptocurrencies but they support other use cases too. With embedded data and scripts cryptocurrencies can truly become "programmable money", where we use cryptocurrencies as a base and build new functionality on top.◊mn{blockchain-hype}
 
-There are many different ways this could be useful and I've selected some examples that I think have potential. I'll show how it's possible to tag a message with an unforgeable timestamp, create an uncensorable social media platform and make gambles provably fair. We'll finish with the usefulness of tracking assets with ◊def{tokens} and how a cryptocurrency based voting system has some surprisingly attractive properties.
+There are many different ways this could be useful and I've selected some examples that I think have potential. I'll show how it's possible to tag a message with an unforgeable timestamp, create an uncensorable social media platform, and make gambles provably fair. We'll finish with the usefulness of tracking assets with ◊def{tokens} and how a cryptocurrency based voting system has some surprisingly attractive properties.
 
 ◊ndef["blockchain-hype"]{
     I generally try to avoid the word ◊def{blockchain} which sometimes refer to private blockchains or blockchains which use a consensus model with known and trusted actors. Facebook's Diem is such an example and ◊link[ibm-blockchain]{IBM's blockchain} is another.
@@ -132,7 +132,7 @@ The first thing we can observe is that it's possible to insert data into the led
 
 ◊subhead{Scripts}
 
-Bitcoin does more than just transfer coins from one address to another. What it actually does is execute a ◊link[bitcoin-script]{small scripting language} which is responsible for unlocking funds and transferring them to new addresses. You can for example send funds from several addresses to many addresses or lock funds and ◊link[multisig]{require more than one key} to spend them (which is commonly called ◊def{multisig}).◊mn{bitcoin-script}
+Bitcoin does more than just transfer coins from one address to another. What it actually does is execute a ◊link[bitcoin-script]{small scripting language}, which is responsible for unlocking funds and transferring them to new addresses. You can for example send funds from several addresses to many addresses or lock funds and ◊link[multisig]{require more than one key} to spend them (which is commonly called ◊def{multisig}).◊mn{bitcoin-script}
 
 ◊(define bitcoin-script
    (x-ref

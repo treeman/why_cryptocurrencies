@@ -11,7 +11,7 @@
 
 ◊img[#:src "/images/bitcoin-priest.png" #:class "slim" #:alt "A priest with a crown, holding a sword and a bag of Bitcoin."]{}
 
-When I first started thinking about cryptocurrencies, I thought they were just useful for some people who couldn't use regular transactions, like buying weed or things on a darknet market. Or that it was a better payment system as there was no middleman to skim off large fees from all transactions. That's useful, but it didn't strike me as revolutionary.◊mn{fees}
+When I first started thinking about cryptocurrencies, I thought they were just useful for some people who couldn't use regular transactions, like buying weed or things on a darknet market. Or that it was simply a better payment system as there was no middleman to skim off large fees from all transactions. That's useful, but it didn't strike me as revolutionary.◊mn{fees}
 
 ◊ndef["fees"]{
     I do think ◊link[cheaper_faster]{avoiding up to 5%} fees on practically all digital payments is an under-appreciated benefit of cryptocurrencies. It might be overshadowed by the volatility, but the potential benefit to the economy is absolutely huge.

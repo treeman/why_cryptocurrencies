@@ -141,7 +141,7 @@ First, let's look at some interesting historical examples of items that have bee
 
 ◊subhead{The gold standard}
 
-There's an important historical point to make about fiat. First used 1821 in the United Kingdom, the ◊link[gold-standard]{gold standard} made sure to back each currency unit with gold.◊mn{gold-standard} So if you had $1,000 in bank notes, you could exchange them to $1,000 worth of gold. This was used in various ways up until 1971, when it was finally abandoned completely.
+There's an important historical point to make about fiat. First used 1821 in the United Kingdom, the ◊link[gold-standard]{gold standard} made sure to back each currency unit with gold.◊mn{gold-standard} So if you had 1,000 bank notes, you could exchange them for a specific weight in gold bullion. This was used in various ways up until 1971, when it was finally abandoned completely.
 
 ◊ndef["gold-standard"]{
     Like a lot of things we'll touch, whether the gold standard is preferable or not is ◊link[gold-debate]{hotly debated}.

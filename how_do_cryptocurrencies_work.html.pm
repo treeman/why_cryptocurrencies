@@ -126,12 +126,12 @@ In the Eastern Roman Empire, also referred to as the Byzantine Empire, several g
 
 The city is very well-defended and if they attack individually, they will be defeated. So, they will have to work together and coordinate to attack at the same time, or retreat as a unit. Doing nothing is not an option either as they have a limited food supply while the city is waiting for reinforcements.
 
-If they try to act without a majority, they will surely /ace defeat---they must coordinate.
+If they try to act without a majority, they will surely face defeat---they must coordinate.
 
 This would be very easy if they could trust each other. Unfortunately, they cannot trust the messages---either the messenger or the message itself could be replaced---and even some of the generals could be traitors.◊mn{cryptography}
 
 ◊ndef["cryptography"]{
-    One countermeasure to corrupt messengers is to ◊def[public-key-cryptography]{encrypt} messages. Unfortunately, it doesn't protect against a traitor who knows the code, like one of the generals. Also, in ancient times, encryption weren't very advanced and could possibly be broken, see the ◊link[ceasar-cipher]{Ceasar cipher} as an example.
+    One countermeasure to corrupt messengers is to ◊def[public-key-cryptography]{encrypt} messages. Unfortunately, it doesn't protect against a traitor who knows the code, like one of the generals. Also, in ancient times, encryption wasn't very advanced and could possibly be broken, see the ◊link[ceasar-cipher]{Caesar cipher} as an example.
 }
 
 

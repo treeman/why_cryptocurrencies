@@ -49,7 +49,7 @@ You can have the best website in the world---beautiful, lightning fast and with 
 ◊(define old-reddit "https://old.reddit.com")
 
 
-The network effect is directly correlated to ◊link[money-functions]{the functions of money}: a medium of exchange, a unit of account and a store of value. If more people use a currency, the better it'll function as money, and if very few use it the worse it'll be.
+The network effect is directly correlated to ◊link[money-functions]{the functions of money}: a medium of exchange, a unit of account and a store of value. If more people use a currency, the better it'll function as money, and the fewer that use it the worse it'll be.
 
 ◊ndef["too-soon"]{
     It's fair to say that we shouldn't focus on adoption before we've solved the fundamental technical issues, as if we push too hard too soon the push back could be enormous, but it doesn't change the fact that adoption is the most important issue.
@@ -83,7 +83,7 @@ For these reasons I think the lack of adoption is the biggest problem cryptocurr
 
 ◊subhead{Privacy and fungibility}
 
-Bitcoin, like most cryptocurrencies, uses a public ledger where all transactions and addresses are public. We might say that Bitcoin is ◊em{pseudo-anonymous}: while you can see all transactions and addresses you don't know who owns an address. But if you know someone's address, for example if they sent money to you, you can then trace all past and future transactions moving through that address:◊sn{rich-list}
+Bitcoin, like most cryptocurrencies, uses a public ledger where all transactions and addresses are public. We might say that Bitcoin is ◊em{pseudo-anonymous}: while you can see all transactions and addresses, you don't know who owns an address. But if you know someone's address, for example if they sent money to you, you can then trace all past and future transactions moving through that address:◊sn{rich-list}
 
 ◊ndef["rich-list"]{
     For example, it's possible to build a ◊link[rich-list]{list of the Bitcoin addresses with the most coins} and to monitor them to see when they send or receive coins.
@@ -98,7 +98,7 @@ Bitcoin, like most cryptocurrencies, uses a public ledger where all transactions
      "Chainalysis: The Blockchain Analysis Company"))
 
 ◊img[#:src "/images/coin-tracing.png" #:alt "Paying someone with allows you to see their funds."]{
-    After the merchant receives a payment from John, the merchant can see that John has sent 13 BTC to another address and that John still has 40 - 1 - 13 = 26 BTC on the original address.
+    After the merchant receives a payment from John, the merchant can see that John has sent 13 BTC to another address, out of an initial 40 BTC.
     John appears to be quite rich.
 }
 
@@ -188,9 +188,9 @@ There are other ideas of how to improve privacy and fungibility for cryptocurren
 
 Perhaps, the most famous technical issue cryptocurrencies face is how to scale them and to increase transaction throughput. This is the big drawback with a decentralized system compared to a centralized system; they're just so much less efficient.
 
-Bitcoin can for example only process 3--7 transactions per second (tx/s) at max capacity, while ◊link[paypal-transactions]{PayPal processes on average ◊nbsp{400 tx/s}} and ◊link[visa-transactions]{VISA an average of ◊nbsp{1 700 tx/s}}, with VISA's peak capacity being over ◊nbsp{24 000 tx/s}. If cryptocurrencies hope to live up to their potential then there's lots of work to do here.
+Bitcoin can for example only process around 3--7 transactions per second (tx/s) at max capacity, while ◊link[paypal-transactions]{PayPal processes on average ◊nbsp{400 tx/s}} and ◊link[visa-transactions]{VISA an average of ◊nbsp{1 700 tx/s}}, with VISA's peak capacity being over ◊nbsp{24 000 tx/s}. If cryptocurrencies hope to live up to their potential then there's lots of work to do here.
 
-But it's not quite as bad as the numbers seem to suggest. Bitcoin operates far from the technical limits because they didn't raise the ◊def{blocksize limit}, which controls how many transactions can fit in a block and essentially sets an artificial limit on transaction throughput. ◊link[bch]{Bitcoin Cash}, a fork of Bitcoin, has raised this limit and has more than 20 times the throughput of Bitcoin (around ◊nbsp{100 tx/s}). So, cryptocurrencies can at least be in the same playing field as PayPal.◊mn{blocksize}
+But it's not quite as bad as the numbers seem to suggest. Bitcoin operates far from the technical limits because they didn't raise the ◊def{blocksize limit}, which controls how many transactions can fit in a block and essentially sets an artificial limit on transaction throughput. ◊link[bch]{Bitcoin Cash}, a fork of Bitcoin, has raised this limit and has more than 20 times the throughput of Bitcoin (around ◊nbsp{150 tx/s}). So, cryptocurrencies can at least be in the same playing field as PayPal.◊mn{blocksize}
 
 ◊ndef["blocksize"]{
     See ◊link[history-blocksize]{this timeline} for the history of the blocksize debate (it only goes up to Dec 2017, but as of May 2019 no significant development has happened). Because Bitcoin didn't raise the blocksize, Bitcoin Cash was created in 2017, keeping fees low and transaction capacity high.
@@ -252,7 +252,7 @@ When we increase transaction throughput we also increase the burden of full node
 Besides optimizing the standard basic structure defined by Bitcoin, there are other scaling proposals out there. Some say we should offload transactions to "layer two" networks, which will only occasionally settle back to a cryptocurrency thereby increasing transaction throughput.◊sn{layer2}
 
 ◊ndef["layer2"]{
-    While I'm not against layer two solutions, I'm deeply skeptical of them being a solution to the scaling problem. Simply because if you transact on another network, you're not actually using a cryptocurrency, but you're using something else with different properties.
+    While I'm not against layer two solutions, I'm deeply skeptical of them being a solution to the scaling problem. Simply because if you transact on another network, you're not actually using a cryptocurrency, but something else with different properties.
 }
 
 Others suggest we should use a completely different system, maybe giving up ◊def{proof-of-work} for ◊def{delegated proof-of-stake} or base it on the ◊link[avalanche]{Avalanche protocol}.
@@ -309,7 +309,7 @@ It may ultimately be impossible to scale a cryptocurrency so that ◊em{everyone
 
 Do you know that it's common to have two conflicting beliefs at the same time? You might know that eating too much candy is very bad for your health---and you really would like to lose weight---but you still eat it. Another example is how you think that cheating for an exam is wrong, but you still do it because "you had to".
 
-This is called ◊def[cognitive_dissonance]{cognitive disonance} and it can cause great discomfort when we have to face it. It's also something I, as a cryptocurrency supporter and an environmentalist, struggle with.◊mn{coping}
+This is called ◊def[cognitive_dissonance]{cognitive dissonance} and it can cause great discomfort when we have to face it. It's also something I, as a cryptocurrency supporter and an environmentalist, struggle with.◊mn{coping}
 
 ◊ndef["coping"]{
     When we experience cognitive dissonance we try to reduce it in some way, which often happens unconsciously. We might downplay the importance on one side of the conflict ("it's just one chocolate bar"), we might rationalize it in some way ("I'll exercise harder later") or we might suppress the issue entirely (stop talking to anyone who reminds you that you're on a diet).
@@ -363,7 +363,7 @@ This is absolutely a big problem, but there are some important points we need to
 
         According to ◊link[coinshares-mining]{CoinShare's research} 73% of Bitcoin mining uses renewable energy, mostly in the form of cheap hydropower in China.◊mn{renewable-bad}
     }
-    ◊li{Energy consumption follows mining profitability
+    ◊li{Energy consumption follow mining profitability
 
         Bitcoin mining is purely profit driven; when the price of Bitcoin goes up, it becomes more profitable to mine and when the price goes down, it's less profitable to mine. Similarly if the energy price would go up, then it's less profitable to mine and Bitcoin would use less energy.
 
@@ -395,7 +395,7 @@ If we're stuck with proof-of-work, then we just have to accept that it uses a lo
 
 ◊subhead{More problems}
 
-An exhaustive list and description of all problems would require much more than one book. Still I'd like to at least mention a couple of other problems:
+An exhaustive list and description of all problems would require much more than one book. Still, I'd like to at least mention a couple of other problems:
 
 ◊ol{
     ◊li{User experience
@@ -420,7 +420,7 @@ An exhaustive list and description of all problems would require much more than 
     }
     ◊li{Confirmation time
 
-        Even though I did write ◊link[cheaper_faster]{that cryptocurrencies are faster} than alternatives, the system isn't fool-proof. While 0-conf is often good enough, if you need more security then you sometimes need to wait up to an hour or two before your first confirmation.
+        Even though I did write ◊link[cheaper_faster]{that cryptocurrencies are faster} than alternatives, the system isn't fool-proof. While 0-conf is often good enough, if you need more security then due to variance you sometimes need to wait up to an hour or two before your first confirmation.
     }
 }
 

@@ -17,7 +17,7 @@
   }
 }
 
-This chapter serves as an introduction to the cryptographic terms and constructs mentioned in the book. The aim is to give you an idea of what they are and how they might be used in a cryptocurrency context. I won't go into low-level details of how they work, so you don't need to know any mathematics or programming to follow along. If this interests you, I hope this introduction will be helpful as a starting point when researching the topics on your own.◊mn{history}
+This chapter serves as an introduction to the cryptographic terms and constructs mentioned in the book. The aim is to give you an idea of what they are and how they might be used in a cryptocurrency context. I won't go into low-level details of how they work, so you don't need to know any mathematics or programming to follow along. If this interests you, I hope this introduction will be helpful as a starting point when researching the topic on your own.◊mn{history}
 
 ◊ndef["history"]{
     If the history of cryptography interests you, I can also recommend the book ◊(book-link code-breakers-book) by David Kahn. You can enjoy it even without much math knowledge.
@@ -48,7 +48,7 @@ In the digital world we can use the popular ◊link[sha-2]{SHA-256 hash function
 
 ◊code{hello → 5891b5b522d5df086d0ff0b110fbd9d21bb4fc7163af34d08286a2e846f6be03}
 
-But there's no function to unwrap a hash directly:
+But there's no function to reverse a hash:
 
 ◊code{084c799cd551dd1d8d5c5f9a5d593b2e931f5e36122ee5c793c1d08a19839cc0 → ???}
 
@@ -67,7 +67,7 @@ Found it! The answer is "42". But we were lucky that we only had to test 42 poss
     I've simplified the explanation here a little. There's not a one-to-one correspondence between an input and a hash, as several inputs can result in the same hash.
 }
 
-Don't believe me? Then try to guess what message this SHA-256 output comes from, and I can even give you a hint that it's only spaces, upper- and lower case letters:
+Don't believe me? Then try to guess what message this SHA-256 output comes from, and I can even give you a hint that it's only spaces, upper- and lower-case letters:
 
 ◊ndef["variation"]{
     For security it's important that the data you want to protect is sufficiently large and has enough variation to make it difficult to guess what it is.
@@ -79,14 +79,14 @@ Don't believe me? Then try to guess what message this SHA-256 output comes from,
 
 ◊mn{variation}
 
-To get a sense for how hard it can be to figure out the matching data for a hash, let's look at the mining in Bitcoin. Because that's really what miners do---they calculate SHA-256 hashes with different kinds of input again and again until they find a match. And they don't require an exact match either, they only want to find a hash with a certain number of leading zeroes.
+To get a sense for how hard it can be to figure out the matching data for a hash, let's look at Bitcoin mining. Because that's really what miners do---they calculate SHA-256 hashes with different kinds of input again and again until they find a match. And they don't require an exact match either, they only want to find a hash with a certain number of leading zeroes.
 
 The current ◊link[bitcoin-hashrate]{hashrate for Bitcoin} is around 113 exahashes per second (2020-02-18). That's a staggering 113 x 10◊sup{18}, or 133 000 000 000 000 000 000, hashes per second, yet they're still only expected to find a single solution every 10 minutes.
 
 Even all of Bitcoin's hashrate, working for millions of years, are not expected to find the reverse of a single hash. Even though there's theoretically an infinite number of inputs that produce the same hash, it's computationally infeasible to ever find one, therefore we can consider it practically impossible to reverse a hash.◊mn{secure}
 
 ◊ndef["secure"]{
-    We can say it's impossible to reverse a hash if we have to brute force the solution like this, but there could be weaknesses in the hash function that could allow us to find it much earlier. The ◊link[sha-1]{SHA-1 hash function} is for example not secure anymore, as weaknesses have been found that can be used to generate collisions.
+    We can say it's impossible to reverse a hash if we have to brute force the solution like this, but there could be weaknesses in the hash function that could allow us to find it much faster. The ◊link[sha-1]{SHA-1 hash function} is for example not secure anymore, as weaknesses have been found that can be used to generate collisions.
 }
 
 If you want to give up and see what I encoded in the hash, ◊toggle[iron-man]{click here.}
@@ -151,7 +151,7 @@ I won't go into details on the mathematics behind public-key cryptography, as I'
      "Wikipedia: Elliptic Curve Digital Signature Algorithm"))
 
 
-We will look at public-key cryptography in practice when we look at how Bitcoin addresses work.
+We'll look at public-key cryptography in practice when we look at how Bitcoin addresses work.
 
 ◊note-pos[#:top -7]{further-public-key}
 
@@ -227,7 +227,7 @@ This is also what happens in the background when you authorize a transaction; yo
 ◊note-pos[#:top -11]{payments}
 ◊note-pos{how-difficult?}
 
-◊strong{Encrypting} messages using your bitcoin keys isn't that common to my knowledge---they typically use protocols such as ◊link[pgp]{PGP}---but it's possible. I'll include a short example for completeness sake.
+◊strong{Encrypting} messages using your bitcoin keys isn't that common to my knowledge---people typically use protocols such as ◊link[pgp]{PGP}---but it's possible. I'll include a short example for completeness sake.
 
 For example if you want to send me the message:
 
@@ -259,7 +259,7 @@ Which only I can ◊strong{decrypt} to the original message. (Since I've given o
 
 ◊subhead{Seeds}
 
-Because private keys aren't very user-friendly Bitcoin wallets use seeds. The seed is made up of a sequence of 12, or sometimes 24, words selected from a ◊link[bip-39]{pre-determined set of 2048 possible words}.◊mn{variations}
+Because private keys aren't very user-friendly, Bitcoin wallets use seeds. The seed is made up of a sequence of 12, or sometimes 24, words selected from a ◊link[bip-39]{pre-determined set of 2048 possible words}.◊mn{variations}
 
 This is for example a 12-word seed:
 
