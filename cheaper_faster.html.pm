@@ -304,7 +304,7 @@ The speed that cryptocurrencies settle and become irreversible significantly red
 It seems payment systems needs to choose between these two options:
 
 ◊ol{
-    ◊li{Provide costumer protection but merchants might suffer from charge back fraud.}
+    ◊li{Provide consumer protection but merchants might suffer from charge back fraud.}
     ◊li{Protect merchants from charge back fraud but don't provide protection for customers.}
 }
 
