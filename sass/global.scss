@@ -326,6 +326,20 @@ body > footer {
         justify-content: center;
     }
 }
+.buy-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 0.95rem;
+
+    .buy {
+        text-align: center;
+
+        p {
+            margin-bottom: 0.4em;
+        }
+    }
+}
 .homepage-footer {
     width: 100%;
     //background-color: lightyellow;

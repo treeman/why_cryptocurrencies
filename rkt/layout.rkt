@@ -29,7 +29,7 @@
 (define follow-section
   `(section((class "follow"))
      (div ((class "wip"))
-          "The book is a work in progress. If you want to keep up to date:")
+          "Here are some options f you want to keep up to date:")
      ,subscription-form
      (div ((class "links"))
           "Subscribe to the " ,(link feed-url "feed")

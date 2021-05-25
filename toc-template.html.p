@@ -24,7 +24,7 @@
 
       <footer class="homepage-footer">
         <nav class="buy">
-          <a href="/" title=">Print or ebook">Check out the print or ebook!</a>
+          <a href="/" title="Print or ebook">Check out the print or ebook!</a>
         </nav>
 
         ◊(->html follow-section)

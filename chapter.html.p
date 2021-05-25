@@ -127,9 +127,13 @@
           }
         </nav>
 
-        <nav class="buy">
-          <a href="/" title=">Print or ebook">Check out the print or ebook!</a>
-        </nav>
+        <div class="buy-wrapper">
+          <div class="buy">
+            <p>This is a book that tries to explain the utility of cryptocurrencies in a beginner-friendly manner.</p>
+
+            <p><a href="/" title="Print or ebook">Check out the print or ebook!</a></p>
+          </div>
+        </div>
 
         <div class="follow-wrapper">
           ◊(->html follow-section)
