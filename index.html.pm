@@ -70,7 +70,7 @@
 
   ◊book-type["print" `(a ((name "print")) "Print")]{
     ◊nav[#:class "buttons"]{
-      ◊link[amazon.com-print]{Pre-order from Amazon}
+      ◊link[amazon.com-print]{Order from Amazon}
       ◊span[#:class "spanner"]{
         ◊link[book-depository-print]{Book Depository}
         ◊link[barnes-and-nobles-print]{Barnes & Nobles}
