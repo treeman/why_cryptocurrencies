@@ -67,7 +67,7 @@ It's a heuristic, not a natural law, but the implications generally make sense. 
 
 ◊subhead{The largest bug bounty in the world}
 
-In the software development world a ◊def{bug bounty} is a reward for someone who finds a vulnerability and reports it in a responsible manner. This is vastly preferable to them exploiting it or selling it on the black market, in particular if it's a serious one. For example it's easy to imagine the problem caused by a bug that allowed an attacker to view all private messages in Facebook, so Facebook might we willing to ◊link[hacker-money]{pay a hacker a lot of money} if they help them patch this security issue.◊mn{not-paying}
+In the software development world a ◊def{bug bounty} is a reward for someone who finds a vulnerability and reports it in a responsible manner. This is vastly preferable to them exploiting it or selling it on the black market, in particular if it's a serious one. For example it's easy to imagine the problem caused by a bug that allowed an attacker to view all private messages in Facebook, so Facebook might be willing to ◊link[hacker-money]{pay a hacker a lot of money} if they help them patch this security issue.◊mn{not-paying}
 
 ◊(define hacker-money
   (x-ref
