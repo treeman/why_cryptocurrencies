@@ -280,6 +280,12 @@ $small-screen: 1067px;
     background-color: $warm-grey-800;
     padding: 48px 0;
 }
+.landing .format-wrapper {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 .landing .format {
     display: flex;
     flex-wrap: wrap;

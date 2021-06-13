@@ -343,12 +343,13 @@
      ))
 
 ◊(define (book-type c type . args)
-   `(section ((class ,(string-append c " format")))
+   `(section ((class "format-wrapper"))
+   (div ((class ,(string-append c " format")))
       (div ((class "left"))
         (h1 ,type)
         ,@args)
 
-      (div ((class "img-wrapper"))))
+      (div ((class "img-wrapper")))))
 )
 
 ◊(define (ex title c . args)
