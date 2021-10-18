@@ -567,7 +567,7 @@ In our context, knowing what makes money perform well helps us reason about cryp
 ◊(define largest-coin
   (x-ref
     "2019-05-16"
-    "https://www.riksbank.se/en-gb/about-the-riksbank/history/1600-1699/the-worlds-largest-coin/"
+    "https://www.riksbank.se/en-gb/about-the-riksbank/history/historical-timeline/1600-1699/the-worlds-largest-coin/"
     "Sveriges Riksbank: 1644 - The world's largest coin"))
 ◊(define state-theory-of-money
   (x-ref
