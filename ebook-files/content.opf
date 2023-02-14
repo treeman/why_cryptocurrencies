@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package xmlns="http://www.idpf.org/2007/opf" unique-identifier="BookID" version="3.0" xml:lang="en">
+    <metadata xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:opf="http://www.idpf.org/2007/opf">
+        <dc:title>Why cryptocurrencies?</dc:title>
+        <dc:creator>Jonas Hietala</dc:creator>
+        <dc:language>en-US</dc:language>
+        <dc:identifier id="BookID">◊UUID</dc:identifier>
+        <meta property="dcterms:modified">◊DATE</meta>
+        <meta name="cover" content="images-cover-front" />
+    </metadata>
+    <manifest>
+        <item id="ncx" href="toc.ncx" media-type="application/x-dtbncx+xml" />
+        <item id="style" href="main.css" media-type="text/css" />
+        <item id="coverpage" href="cover_page.xhtml" media-type="application/xhtml+xml" />
+        <item id="titlepage" href="title_page.xhtml" media-type="application/xhtml+xml" />
+        <item id="toc" properties="nav" href="toc.xhtml" media-type="application/xhtml+xml" />
+        ◊MANIFEST_POSTS_TAG
+        ◊MANIFEST_IMG_TAG
+        <item id="images-wealth-inequality-fallback" href="images/wealth-inequality-fallback.png" media-type="image/png" />
+        <item id="images-btc-valuation-fallback" href="images/btc-valuation-fallback.png" media-type="image/png" />
+        <item id="images-usa-debt-fallback" href="images/usa-debt-fallback.png" media-type="image/png" />
+        <item id="images-energy-bars-fallback" href="images/energy-bars-fallback.png" media-type="image/png" />
+        <item id="images-gold-valuation-fallback" href="images/gold-valuation-fallback.png" media-type="image/png" />
+        <item id="images-inflation-fallback" href="images/inflation-fallback.png" media-type="image/png" />
+        <item id="images-income-inequality-fallback" href="images/income-inequality-fallback.png" media-type="image/png" />
+        <item id="images-us-gdp-fallback" href="images/us-gdp-fallback.png" media-type="image/png" />
+        <item id="images-digital_bathroom_lock-fallback" href="images/digital_bathroom_lock-fallback.png" media-type="image/png" />
+        <item id="images-y18-fallback" href="images/y18-fallback.png" media-type="image/png" />
+        <item id="images-why-unbanked-fallback" href="images/why-unbanked-fallback.png" media-type="image/png" />
+        <item id="images-income-inequality-world-fallback" href="images/income-inequality-world-fallback.png" media-type="image/png" />
+        <item id="images-emission-rates-fallback" href="images/emission-rates-fallback.png" media-type="image/png" />
+        <item id="images-venezuela-hero-wide-fallback" href="images/venezuela-hero-wide-fallback.png" media-type="image/png" />
+        <item id="images-m2-fallback" href="images/m2-fallback.png" media-type="image/png" />
+        ◊MANIFEST_FONT_TAG
+    </manifest>
+    <spine toc="ncx">
+        <itemref idref="coverpage" />
+        <itemref idref="titlepage" linear="yes" />
+        <itemref idref="toc" />
+        ◊SPINE_TOC
+    </spine>
+</package>
