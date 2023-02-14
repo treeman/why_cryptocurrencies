@@ -222,6 +222,19 @@
       `()
       `((class ,(string-join classes)))))
 
+(module+ test
+  (require rackunit)
+  (check-equal? (stable
+                  "Person             Swedish krona" "\n" "Sneaky Steve       7 000 SEK" "\n" "Honest Harry       1 000 SEK")
+                '(div
+                   ((class "centered"))
+                   (table
+                     ()
+                     (thead (tr (th "Person") (th "Swedish krona")))
+                     (tbody
+                       (tr (td "Sneaky Steve") (td "7 000 SEK"))
+                       (tr (td "Honest Harry") (td "1 000 SEK")))))
+                ))
 
 (define (epigraph  . txt)
   `(div ((class "epigraph"))
