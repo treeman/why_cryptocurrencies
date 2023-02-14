@@ -1,0 +1,6 @@
+#!/bin/bash
+
+./rebuild
+./ebookify
+epub-check ./_ebook/why_cryptocurrencies.epub
+
