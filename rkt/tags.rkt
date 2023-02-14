@@ -166,12 +166,14 @@
 
 
 (define (subhead x)
+  (define id (to-name x))
   `(h2
-    (a [[name ,(to-name x)]] ,x)))
+    (a [[name ,id] [id ,id]] ,x)))
 
 (define (subhead3 x)
+  (define id (to-name x))
    `(h3
-     (a [[name ,(to-name x)]] ,x)))
+     (a [[name ,id] [id ,id]] ,x)))
 
 (define (li-plus . txt)
    `(li ((class "plus")) ,@txt))
