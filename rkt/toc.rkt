@@ -8,8 +8,8 @@
   `(eli5.html
     (about_the_book.html
      acknowledgements.html
-     how_to_use.html
-     free.html
+     ;how_to_use.html
+     ;free.html
      about_me.html)
     (what_is_a_cryptocurrency.html
      properties_of_a_cryptocurrency.html
@@ -97,4 +97,3 @@
     ,@(transform-list pt)))
 
 (define toc-pagetree (tree-to-pagetree toc))
-

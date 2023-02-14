@@ -10,5 +10,5 @@
   (decode-elements args
                    #:txexpr-elements-proc decode-paragraphs
                    #:string-proc string-proc
-                   #:exclude-tags `(figure pre)))
+                   #:exclude-tags `(figure pre nav)))
 

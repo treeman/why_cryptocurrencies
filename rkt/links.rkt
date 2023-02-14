@@ -7,7 +7,7 @@
 ;; Site links
 
 (define root-url "https://whycryptocurrencies.com")
-(define toc-url `("/" "Table of contents"))
+(define toc-url `("/toc.xhtml" "Table of contents"))
 
 (define feed-url
   `("/feed.xml"

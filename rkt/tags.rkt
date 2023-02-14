@@ -98,6 +98,7 @@
     (string=? "/" url)
     (string=? "/feed.xml" url)
     (string=? "/toc.html" url)
+    (string=? "/toc.xhtml" url)
     (regexp-match #rx"^mailto:" url)
     (ch-ref? url)
     (file-ref? url)
