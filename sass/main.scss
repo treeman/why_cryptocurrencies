@@ -1,13 +1,12 @@
 // Preparations
-@import 'fonts';
-@import 'colors';
+@import "fonts";
+@import "colors";
 
 // Site wide
-@import 'global';
-@import 'code-highlight';
+@import "global";
+@import "code-highlight";
 
 // Pages
-@import 'homepage';
-@import 'chapter';
-@import 'landing';
-
+@import "homepage";
+@import "chapter";
+//@import 'landing';
