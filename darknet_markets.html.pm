@@ -38,16 +38,13 @@ There's a concept we need to have in mind while looking at darknet markets: some
 
 Here's a table to illustrate the problem:
 
+◊(define sbr
+   `(br))
+
 ◊table-body[#:class "legal-moral"]{
-    ◊tr{◊td{}           ◊ths{Legal}                     ◊ths{Illegal}}
-    ◊tr{◊tds{Moral}     ◊good{Self defense
-                              Free speech}
-                                                        ◊mo-il{Some types of sex
-                                                               Starving child steals food}}
-    ◊tr{◊tds{Immoral}   ◊im-le{Mass surveillance
-                               Civil asset forfeiture}
-                                                        ◊bad{Slavery
-                                                             Murder}}
+    ◊tr{◊td{}           ◊ths{Legal}                                             ◊ths{Illegal}}
+    ◊tr{◊tds{Moral}     ◊good{Self defense◊|sbr|Free speech}                    ◊mo-il{Some types of sex◊|sbr|Starving child steals food}}
+    ◊tr{◊tds{Immoral}   ◊im-le{Mass surveillance◊|sbr|Civil asset forfeiture}   ◊bad{Slavery◊|sbr|Murder}}
 }
 
 It's actually quite hard to classify things as legal or illegal and moral or immoral; they both change depending on the country, the time period and who you ask. For instance most would agree that slavery is immoral and should be illegal, but it was legal and viewed as normal for thousands of years. Similarly today in the western world we take free speech for granted, but that's not the case in all countries.
