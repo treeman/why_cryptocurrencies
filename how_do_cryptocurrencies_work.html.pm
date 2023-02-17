@@ -504,9 +504,11 @@ A 51% can be detected and there can be severe negative consequences:
 ◊ul{
     ◊li{The Bitcoin price might crash.}
     ◊li{Exchanges might blacklist the stolen funds.}
-    ◊li{The community might change POW and make all mining rigs worthless.◊mn{monero-POW} ◊note-pos{monero-POW}}
+    ◊li{The community might change POW and make all mining rigs worthless.◊mn{monero-POW}}
     ◊li{It's hard to keep warehouses full of mining rigs of that scale a secret---there's a big risk to get caught.}
 }
+
+◊note-pos{monero-POW}
 
 Bitcoin miners are rewarded in bitcoin and they also can't be spent until after 100 blocks---roughly 16 hours. Executing a 51% attack that crashes the price would directly affect the rewards. If the community goes for the nuclear option and change POW, the massive initial investment into mining equipment might be lost.
 

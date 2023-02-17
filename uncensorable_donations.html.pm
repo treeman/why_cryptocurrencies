@@ -308,9 +308,9 @@ This is ◊strong{not} a glorification of WikiLeaks---they have ◊link[wikileak
           66 thousand innocent people dead in six years. That's like 22 World Trade center attacks (where 2,977 people died)---more than three a year. Or 31 innocent people dead every day during the six years.
       }
 
-      ◊note-pos[#:top -7]{wtc}
-
     }
+
+    ◊note-pos[#:top -7]{wtc}
 
     Countless numbers of civilians killed---while soldiers are laughing---and systematic cover-ups to hide it all.◊mn{purpose}
 
@@ -828,8 +828,10 @@ Of course, covering up or rationalizing events isn't a U.S. only phenomena. Here
 
     It was even forbidden to talk about them negatively.
   }
-  ◊li{How the Soviet Union tried to cover up the ◊link[chernobyl-accident]{Chernobyl nuclear disaster}.◊mn{chernobyl-TV} ◊note-pos{chernobyl-TV}}
+  ◊li{How the Soviet Union tried to cover up the ◊link[chernobyl-accident]{Chernobyl nuclear disaster}.◊mn{chernobyl-TV}}
 }
+
+◊note-pos{chernobyl-TV}
 
 ◊ndef["dan-hitler"]{
     Dan Carlin, creator of the excellent ◊link[hardcore-history]{Hardcore History} podcast, brought up an interesting question:

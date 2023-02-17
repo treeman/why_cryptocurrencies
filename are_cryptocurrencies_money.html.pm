@@ -27,7 +27,7 @@ To decide how well cryptocurrencies can function as money, we'll take a look at 
 ◊ol{
     ◊li{◊strong{Acceptable}
 
-        Nobody's excluded from using cryptocurrencies---they're open to everyone by design. The drawback is that you need a device with internet connection.◊mn{crypto-acceptable} ◊note-pos{crypto-acceptable}
+        Nobody's excluded from using cryptocurrencies---they're open to everyone by design. The drawback is that you need a device with internet connection.◊mn{crypto-acceptable}
     }
     ◊li{◊strong{Divisible}
 
@@ -35,7 +35,7 @@ To decide how well cryptocurrencies can function as money, we'll take a look at 
     }
     ◊li{◊strong{Durable}
 
-        Coins can be used an infinite amount of times. The only drawback is keeping your private key secure, so you don't lose your coins.◊mn{backups} ◊note-pos{backups}
+        Coins can be used an infinite amount of times. The only drawback is keeping your private key secure, so you don't lose your coins.◊mn{backups}
     }
     ◊li{◊strong{Fungible & Uniform}
 
@@ -58,6 +58,9 @@ To decide how well cryptocurrencies can function as money, we'll take a look at 
         While at a low level it may be difficult to tell which cryptocurrency a number belongs to, all necessary data is public so you can differentiate them. Wallet apps do this automatically, making them easy to identify.
     }
 }
+
+◊note-pos{crypto-acceptable}
+◊note-pos{backups}
 
 All in all cryptocurrencies fulfil the properties excellently.
 
@@ -96,19 +99,19 @@ This is a table of how I think cryptocurrencies compare to other forms of money.
 I know this might be controversial, so let me motivate some of the entries:
 
 ◊ol{
-    ◊li{Digital fiat gets a poor score on ◊strong{acceptable} because it requires a bank account to use. This ◊link[for_the_unbanked]{isn't something everyone can get} as banks have the right to ◊link[undesirable_businesses]{reject you if they want}.◊mn{acceptable} ◊note-pos{acceptable}
+    ◊li{Digital fiat gets a poor score on ◊strong{acceptable} because it requires a bank account to use. This ◊link[for_the_unbanked]{isn't something everyone can get} as banks have the right to ◊link[undesirable_businesses]{reject you if they want}.◊mn{acceptable}
     }
 
     ◊li{Digital money is inherently easier to ◊strong{divide} than physical variants. You can always send an exact amount without having to mix and match change.}
 
-    ◊li{Paper notes can easily wear out or burn up. While cryptocurrencies cannot themselves burn up or deteriorate, the security backups and your phone can. Therefore they score lower than gold on ◊strong{durability}, which is near indestructible.◊mn{durability} ◊note-pos{durability}}
+    ◊li{Paper notes can easily wear out or burn up. While cryptocurrencies cannot themselves burn up or deteriorate, the security backups and your phone can. Therefore they score lower than gold on ◊strong{durability}, which is near indestructible.◊mn{durability}}
 
-    ◊li{I see no major problems with ◊strong{fungibility} or ◊strong{uniformity}.◊mn{again-monero} ◊note-pos{again-monero}}
+    ◊li{I see no major problems with ◊strong{fungibility} or ◊strong{uniformity}.◊mn{again-monero}}
 
     ◊li{Both digital and physical fiat gets a poor score on ◊strong{limited supply}. Per the discussion in ◊link[prev-chapter]{the previous chapter} fiat money is unsound.
     }
 
-    ◊li{Cryptocurrencies are simply much more ◊strong{portable} than the other options. Carrying large amounts in cash or gold is cumbersome and digital fiat isn't easy to move across borders.◊mn{borders} ◊note-pos{borders}}
+    ◊li{Cryptocurrencies are simply much more ◊strong{portable} than the other options. Carrying large amounts in cash or gold is cumbersome and digital fiat isn't easy to move across borders.◊mn{borders}}
 
     ◊li{While it's possible to check for fake cash and gold coins, it requires expertise and certain tools. Therefore they get a lower ◊strong{recognizable} score.
     }
@@ -118,9 +121,15 @@ I know this might be controversial, so let me motivate some of the entries:
     You could argue that because you need a device with internet access, cryptocurrencies should get a lower score on ◊em{acceptable}. But you could also argue that having to transact in person is another drawback, and to me they cancel out.
 }
 
+◊note-pos{durability}
+
 ◊ndef["durability"]{
     The definition of ◊em{durability} is only concerned with reuse, where cryptocurrencies score excellently. I wanted to include the storage drawback that didn't fit anywhere else.
 }
+
+◊note-pos{again-monero}
+
+◊note-pos{borders}
 
 Even if you disagree about certain choices, it's hard to deny that cryptocurrencies come out of the comparison pretty well. Of course, this doesn't give the whole picture. There are other significant differences, for example:
 

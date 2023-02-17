@@ -64,12 +64,14 @@ I must admit I'm also being selfish---writing a book is on my bucket list.
 This book tries to describe what value cryptocurrencies have using several examples. In particular I'll argue that:
 
 ◊ol{
-  ◊li{Cryptocurrencies aren't just scams.◊mn{scams} ◊note-pos{scams}}
+  ◊li{Cryptocurrencies aren't just scams.◊mn{scams}}
   ◊li{It's more than just a speculative asset.}
   ◊li{They do many things better than any alternative.}
   ◊li{There are legal use cases.}
   ◊li{They have valuable use cases.}
 }
+
+◊note-pos{scams}
 
 Of course, everything new brings positive and negative aspects with it. It's up to you to decide where on the global spectrum of good and bad cryptocurrencies lie.
 
