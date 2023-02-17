@@ -395,10 +395,12 @@
 (define (raw-img #:src src #:link [link #f] #:alt alt)
   (define img
      `(img ((src ,(~a src)) (alt ,alt))))
-  (if link
-      `(a ((href ,src) (target "_blank") (class "img-wrapper"))
-          ,img)
-      img))
+  img)
+  ; Image links not supported in ebooks?
+  ; (if link
+  ;     `(a ((href ,src) (target "_blank") (class "img-wrapper"))
+  ;         ,img)
+  ;     img))
 
 ;; FIXME rename to figcaption
 (define (decoded-figcaption . args)
