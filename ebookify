@@ -371,6 +371,9 @@ def replace_post_data(data):
     data = data.replace('UUID_COPY', uuid)
     # https://github.com/Scripler/scripler/issues/430
     data = data.replace('&nbsp;', '&#160;')
+    # Use relative links to internal things, not absolute links
+    data = data.replace('href="/', 'href="')
+    data = data.replace('src="/', 'src="')
 
     return data
 
