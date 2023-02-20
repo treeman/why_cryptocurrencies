@@ -8,8 +8,6 @@
         <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
         <meta name="description" content="◊|description|" />
         <meta name="keywords" content="◊|keywords|" />
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"></link>
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"></link>
     </head>
     <body>
       ◊(->html doc #:splice #t)
