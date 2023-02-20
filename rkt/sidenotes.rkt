@@ -90,11 +90,14 @@
   def)
 
 (define (mn ref-in #:top [top #f] #:bottom [bottom #f])
-  (define ref (ref-symbol ref-in))
-  (set-marginnote ref)
-  (set-note-top ref top)
-  (set-note-bottom ref bottom)
-  ref)
+  ; Disable marginnotes in epub
+  ; Because we have less control over fonts, enforce sidenote refs on all notes.
+  (sn ref-in #:top top #:bottom bottom))
+  ; (define ref (ref-symbol ref-in))
+  ; (set-marginnote ref)
+  ; (set-note-top ref top)
+  ; (set-note-bottom ref bottom)
+  ; ref)
 
 (define (sn ref-in #:top [top #f] #:bottom [bottom #f])
   (define ref (ref-symbol ref-in))
