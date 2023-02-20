@@ -459,6 +459,7 @@ figure {
 
   img {
     max-width: 100%;
+    margin: 0 auto;
   }
   > figcaption {
     @extend %sans-serif;
@@ -1009,6 +1010,10 @@ table.address-message {
     width: 100%;
     text-align: center;
     overflow-x: auto;
+
+    img {
+      margin: 0 auto;
+    }
   }
   .wrapper.small {
     margin-top: -0.4rem;
