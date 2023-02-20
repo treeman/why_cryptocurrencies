@@ -1,9 +1,9 @@
-.homepage {
+.toc {
   max-width: 600px;
   margin: 0.5rem 1.2rem;
 }
 
-.homepage > header {
+.toc > hgroup {
   margin-bottom: 1em;
   padding-bottom: 0.3em;
   border-bottom: 0.2em solid;
@@ -24,7 +24,7 @@
   }
 }
 
-.toc section:not(:first-child) {
+.toc > ol > li:not(:first-child) {
   padding-top: 1.2rem;
 }
 
@@ -40,18 +40,22 @@
   }
 }
 
-.toc h1 {
-  font-size: 1.1rem;
-}
-.toc ul {
-  margin-top: 0.5rem;
+.toc ol {
   list-style: none;
+}
 
-  li {
+.toc > ol > li > a {
+  font-size: 1.1rem;
+  font-weight: bold;
+  @extend %sans-serif;
+  line-height: 1;
+}
+
+.toc > ol > li > ol {
+  margin-top: 0.5rem;
+
+  > li {
     margin-left: 0.6rem;
     margin-top: 0.3rem;
   }
-}
-.toc .planned {
-  color: $planned-chapter-link;
 }
