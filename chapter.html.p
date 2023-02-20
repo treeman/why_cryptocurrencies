@@ -68,12 +68,6 @@
         <header>
           <h1>◊|title|</h1>
           <h2>◊|subtitle|</h2>
-          ◊(when side-space? (->html
-             `(div ((class "date"))
-                 (span ((class "published")) ,published)
-                 ,(if updated
-                      `(span ((class "updated")) ,updated)
-                      ""))))
         </header>
 
         ◊(->html doc #:splice? #t)
