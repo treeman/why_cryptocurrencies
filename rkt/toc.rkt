@@ -5,12 +5,9 @@
 (define toc
   ;; This replaces the previously hand-made pagetree in index.ptree.
   ;; String entries gets removed and are treated as planned chapters.
-  `(eli5.html
-    (about_the_book.html
-     acknowledgements.html
-     ;how_to_use.html
-     ;free.html
-     about_me.html)
+  `(acknowledgements.html
+    about_the_book.html
+    eli5.html
     (what_is_a_cryptocurrency.html
      properties_of_a_cryptocurrency.html
      how_do_cryptocurrencies_work.html
@@ -49,7 +46,8 @@
      ;"Who is Satoshi Nakamoto?"
      ;"Is Facebook's Libra a cryptocurrency?"
      ;"Further research"
-     )))
+     )
+     about_me.html))
 
 (define (in-toc? page)
   (in-tree? page toc))
