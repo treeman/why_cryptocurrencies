@@ -44,8 +44,8 @@
     </manifest>
     <spine toc="ncx">
         <itemref idref="coverpage" />
-        <itemref idref="titlepage" linear="yes" />
-        <itemref idref="toc" />
+        <itemref idref="titlepage" linear="yes" properties="page-spread-left"/>
+        <itemref idref="toc"  properties="page-spread-right"/>
         ◊SPINE_TOC
     </spine>
 </package>

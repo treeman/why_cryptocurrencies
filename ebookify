@@ -228,7 +228,7 @@ def manifest_post_tag(post):
 
 def spine_toc_post(post):
     id = post_id(post)
-    return f'<itemref idref="{id}" />'
+    return f'<itemref idref="{id}" properties="page-spread-right"/>'
 
 
 def img_id(img):
