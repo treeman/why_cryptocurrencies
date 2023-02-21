@@ -309,9 +309,12 @@
       (string-join styles " ")))
 
   (define attrs `((class "sidenote")))
-  (when (non-empty-string? styles)
-    (set! attrs (append attrs
-                        `((style ,styles)))))
+  ; Remove bottom and top margins that are used for sidenote positioning.
+  ; If the reader overrides font or font size, then we will get overlap between
+  ; sidenotes. We really don't want that, so let's skip these.
+  ; (when (non-empty-string? styles)
+  ;   (set! attrs (append attrs
+  ;                       `((style ,styles)))))
 
   `(aside ,attrs
         ,@(label note)
