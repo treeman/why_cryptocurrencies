@@ -177,16 +177,16 @@ $list-p-margin: 0.6em;
     font-weight: bold;
   }
 
-  ul {
+  ol {
     list-style: none;
     margin: 0;
   }
-  ul > li {
+  ol > li {
     font-size: 100%;
     margin-left: 0.6rem;
     margin-top: 0.3rem;
   }
-  ul > li::before {
+  ol > li::before {
     display: none;
   }
 
