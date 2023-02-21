@@ -327,9 +327,10 @@ cite.book {
   visibility: hidden;
 }
 
-.sidenote {
+.sidenote,
+.sidenote > p {
   @extend %sans-serif;
-  font-size: 0.8rem;
+  font-size: 0.8rem !important;
 }
 .sidenote img {
   max-width: 100%;
