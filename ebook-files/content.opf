@@ -1,12 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<package xmlns="http://www.idpf.org/2007/opf" unique-identifier="BookID" version="3.0" xml:lang="en">
+<package xmlns="http://www.idpf.org/2007/opf" unique-identifier="pub-identifier" version="3.0" xml:lang="en">
     <metadata xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:opf="http://www.idpf.org/2007/opf">
-        <dc:title>Why cryptocurrencies?</dc:title>
-        <dc:creator>Jonas Hietala</dc:creator>
+        <dc:title id="title">Why Cryptocurrencies?</dc:title>
+        <meta refines="#title" property="title-type">main</meta>
+        <dc:title id="subtitle">What they are, what they do and why they matter</dc:title>
+        <meta refines="#subtitle" property="title-type">subtitle</meta>
+        <dc:creator id="author">Jonas Hietala</dc:creator>
+        <meta refines="#author" property="role" scheme="marc:relators">aut</meta>
+        <dc:publisher>Jonas Hietala</dc:publisher>
         <dc:language>en-US</dc:language>
-        <dc:identifier id="BookID">◊UUID</dc:identifier>
+        <dc:identifier id="pub-identifier">urn:isbn:978-91-986762-1-1</dc:identifier>
+        <dc:source id="src-id">urn:isbn:978-91-986762-0-4</dc:source>
+        <dc:date>◊DATE</dc:date>
         <meta property="dcterms:modified">◊DATE</meta>
         <meta name="cover" content="images-cover-front" />
+        <meta property="rendition:layout">reflowable</meta>
+        <meta property="rendition:flow">scrolled-doc</meta>
     </metadata>
     <manifest>
         <item id="ncx" href="toc.ncx" media-type="application/x-dtbncx+xml" />
