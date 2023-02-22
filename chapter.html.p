@@ -55,7 +55,7 @@
         <meta name="keywords" content="◊|keywords|" />
     </head>
     <body>
-      <article class="◊|article-class|">
+      <main class="◊|article-class|">
         <nav class="where">
           <a href="/toc.xhtml" title="Table of contents" class="home">Why Cryptocurrencies?</a>
           ◊when/splice[parent-page]{
@@ -63,16 +63,18 @@
             ◊(ref parent-page parent-title parent-title)
           }
         </nav>
-        <header>
-          <h1>◊|title|</h1>
-          <h2>◊|subtitle|</h2>
-        </header>
+        <article>
+          <header>
+            <h1>◊|title|</h1>
+            <h2>◊|subtitle|</h2>
+          </header>
 
-        ◊(->html doc #:splice? #t)
+          ◊(->html doc #:splice? #t)
+        </article>
 
         ◊(->html (make-section-nav #:section-header? section-chapters-headers?
                                     here))
-      </article>
+      </main>
 
       ◊(when side-space? (->html `(div ((class "side-space")))))
 

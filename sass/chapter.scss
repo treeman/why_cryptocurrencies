@@ -21,7 +21,7 @@ $sidenote-float-width: 1280px;
 /*
  * Header
  */
-.chapter > header {
+.chapter header {
   h2 {
     font-weight: normal;
     font-style: italic;
@@ -32,7 +32,7 @@ $sidenote-float-width: 1280px;
   }
 }
 
-.chapter > header > .date {
+.chapter header > .date {
   text-align: right;
   font-size: 0.7rem;
   margin-top: -0.2rem;
@@ -168,7 +168,7 @@ $list-p-margin: 0.6em;
   }
 }
 
-.chapter > .subnav {
+.chapter .subnav {
   margin-top: 1.5rem;
   @extend %sans-serif;
 
