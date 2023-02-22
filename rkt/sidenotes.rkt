@@ -308,7 +308,7 @@
                                    styles)))
       (string-join styles " ")))
 
-  (define attrs `((class "sidenote")))
+  (define attrs `((class "sidenote") (role "note")))
   ; Remove bottom and top margins that are used for sidenote positioning.
   ; If the reader overrides font or font size, then we will get overlap between
   ; sidenotes. We really don't want that, so let's skip these.
