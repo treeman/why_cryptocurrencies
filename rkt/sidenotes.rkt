@@ -305,7 +305,7 @@
                                    styles)))
       (string-join styles " ")))
 
-  (define attrs `((class "sidenote")))
+  (define attrs `((class "sidenote") (role "note")))
   (when (non-empty-string? styles)
     (set! attrs (append attrs
                         `((style ,styles)))))

@@ -195,7 +195,7 @@ This is ◊strong{not} a glorification of WikiLeaks---they have ◊link[wikileak
   ◊entry["The Chelsea Manning leaks"
          #:date "July 5, 2010"]{
 
-    ◊div[#:class "caution"]{First I must caution you: it's very easy to become numb when you read about these leaks. The sheer amount of horror is enough to overwhelm you and might cause your brain to suppress your emotions, maybe out of self-defense. But try to remember that this happened to real people---it's not just a mass of text and numbers. Please don't relegate this as just another forgettable statistic.}
+    ◊div[#:class "caution" #:role "note"]{First I must caution you: it's very easy to become numb when you read about these leaks. The sheer amount of horror is enough to overwhelm you and might cause your brain to suppress your emotions, maybe out of self-defense. But try to remember that this happened to real people---it's not just a mass of text and numbers. Please don't relegate this as just another forgettable statistic.}
 
     Chelsea Manning (formerly Bradley Manning) is a former soldier of the United States who provided WikiLeaks with nearly 750,000 military and diplomatic documents. They were released in batches and spread out over a period of time. Some of the content was absolutely shocking and caused global outrage, I've tried to pick out some notable leaks◊mn{more-leaks}:
 
