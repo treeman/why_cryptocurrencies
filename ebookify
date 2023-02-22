@@ -11,8 +11,6 @@ import datetime
 # http://www.jedisaber.com/eBooks/Tutorial.shtml
 
 now = datetime.datetime.now()
-uuid = "0dfc44f6-9c27-42ea-b6a8-45334b6aeeff"
-# uuid = "0dfc44f6-9c27-42ea-b6a8-45334b6aeeff" + datetime.datetime.now().strftime("%y-%m-%d:%H%M")
 
 dirname = os.path.dirname(__file__)
 site_dir = os.path.join(dirname, "_site")
@@ -24,6 +22,8 @@ oebps_dir = os.path.join(ebook_dir, "OEBPS")
 css_dir = oebps_dir
 image_dir = os.path.join(oebps_dir, "images")
 font_dir = os.path.join(oebps_dir, "fonts")
+short_commit = subprocess.run(['git', 'rev-parse', '--short', 'HEAD'],
+                              stdout=subprocess.PIPE).stdout.decode('utf-8')
 
 toc = [
     "acknowledgements.html",
@@ -275,7 +275,6 @@ def setup_content_opf():
     with open(f"{ebook_files_dir}/content.opf", 'r') as f:
         data = f.read()
 
-    data = data.replace("◊UUID", uuid)
     data = data.replace("◊DATE",
                         datetime.datetime.now().strftime("%Y-%m-%dT%H:%M:%SZ"))
 
@@ -313,8 +312,6 @@ def setup_toc_ncx():
     with open(f"{ebook_files_dir}/toc.ncx", 'r') as f:
         data = f.read()
 
-    data = data.replace("◊UUID", uuid)
-
     with open(f"{oebps_dir}/toc.ncx", 'w') as f:
         f.write(data)
 
@@ -337,7 +334,15 @@ def setup_toc():
 
 
 def setup_static_pages():
-    subprocess.run(f"cp {ebook_files_dir}/*.xhtml {oebps_dir}", shell=True)
+    for src in glob.glob(f"{ebook_files_dir}/*.xhtml"):
+        with open(src, 'r') as f:
+            data = f.read()
+
+        data = replace_post_data(data)
+
+        dst = os.path.join(oebps_dir, os.path.basename(src))
+        with open(dst, 'w') as f:
+            f.write(data)
 
 
 def setup_post_replacements():
@@ -368,12 +373,12 @@ def replace_post_data(data):
     for link, new_link in link_replace.items():
         data = data.replace(link, new_link)
     data = data.replace('Cheaper & faster', 'Cheaper &amp; faster')
-    data = data.replace('UUID_COPY', uuid)
     # https://github.com/Scripler/scripler/issues/430
     data = data.replace('&nbsp;', '&#160;')
     # Use relative links to internal things, not absolute links
     data = data.replace('href="/', 'href="')
     data = data.replace('src="/', 'src="')
+    data = data.replace("◊SHORT_COMMIT", short_commit)
 
     return data
 
