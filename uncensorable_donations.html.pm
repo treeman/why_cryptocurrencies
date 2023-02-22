@@ -220,7 +220,7 @@ This is ◊strong{not} a glorification of WikiLeaks---they have ◊link[wikileak
             At 2019-08-28 the transcript timestamps are slightly off compared to the full video, I've tried to match them up better.
         }
 
-        ◊div[#:class "transcript-wrapper"]{
+        ◊section[#:class "transcript-wrapper"]{
 
           ◊transcript{
               02:34  He's got an RPG [Rocket Propelled Grenade]?

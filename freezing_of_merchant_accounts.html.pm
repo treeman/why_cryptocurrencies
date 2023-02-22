@@ -30,7 +30,7 @@ This chapter continues on the same idea as the ◊link[prev]{previous one}, but 
 
 Imagine coming in to work one day and having this conversion with your boss:
 
-◊div[#:class "story"]{
+◊section[#:class "story"]{
     ◊trow{I'm sorry John, but we'll pay you in 6 months.}
     ◊trow{What?}
     ◊trow{Don't worry, you'll still get your full salary, but we'll pay it in 6 months.}

@@ -149,7 +149,7 @@ So if none of those things are available, what can you buy on a darknet market? 
 
 The following example, based on a real-life story I read a few years ago, illustrates why darknet markets aren't purely evil.
 
-◊div[#:class "story"]{
+◊section[#:class "story"]{
 
     Tom met the love of his life five years ago, when he went to get some of his teeth removed. Hardly the most romantic meeting, with her drilling into his aching teeth, but it was love at first sight.
 
