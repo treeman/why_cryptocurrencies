@@ -367,11 +367,12 @@
 
 (define (img #:src src
              #:alt alt
+             #:decorative [decorative #f]
              #:title [title #f]
              #:class [c #f]
              #:margin [margin #f]
              #:link [link #f] . caption)
-  (define attrs `())
+  (define attrs `((role "group")))
   (when c
     (set! attrs (cons `(class ,c) attrs)))
   (when title
@@ -388,16 +389,31 @@
 
   `(figure
      ,attrs
-     ,(raw-img #:src src #:link link #:alt alt)
+     ,(raw-img #:src src #:link link #:alt alt #:decorative decorative)
      ,figcaption))
 
-(define (raw-img #:src src #:link [link #f] #:alt alt)
+(define (raw-img #:src src #:link [link #f] #:alt alt #:decorative [decorative #f])
+  (define attrs `((src ,(~a src)) (alt ,alt)))
+  (when decorative
+    (set! attrs (cons `(role "presentation") attrs)))
   (define img
-     `(img ((src ,(~a src)) (alt ,alt))))
+     `(img ,attrs))
   (if link
       `(a ((href ,src) (target "_blank") (class "img-wrapper"))
           ,img)
       img))
+
+(module+ test
+  (require rackunit)
+  (check-equal? (raw-img #:src "/src.png" #:alt "alt")
+                `(img ((src "/src.png") (alt "alt"))))
+  (check-equal? (raw-img #:src "/src.png" #:alt "alt" #:decorative #t)
+                `(img ((role "presentation") (src "/src.png") (alt "alt"))))
+
+  (check-equal? (img #:src "/src.png" #:alt "alt" #:decorative #t)
+                `(figure ((role "group"))
+                         (img ((role "presentation") (src "/src.png") (alt "alt")))
+                         (figcaption))))
 
 ;; FIXME rename to figcaption
 (define (decoded-figcaption . args)

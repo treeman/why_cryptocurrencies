@@ -142,11 +142,11 @@ Cryptocurrencies work the same way. When a weakness is discovered developers wil
 
 While you can argue that an individual cryptocurrency is antifragile, antifragility also applies to the cryptocurrency concept itself. People like to point at the thousands of cryptocurrencies as some sort of drawback, but it's actually the opposite. Cryptocurrencies being created and then dying off en mass is good as each time one fails we might learn something new and use that to improve the survivors.
 
-◊img[#:src "/images/btc-hydra.png" #:alt "A hydra with one Bitcoin head"]{
+◊img[#:src "/images/btc-hydra.png" #:alt "A hydra with one head looking like the Bitcoin logo."]{
     Cryptocurrencies are like a Hydra.
 }
 
-◊img[#:src "/images/bch-xmr-hydra.png" #:alt "A hydra with two heads, one Bitcoin Cash and one Monero"]{
+◊img[#:src "/images/bch-xmr-hydra.png" #:alt "A hydra with three heads; one cut off, one like the Bitcoin Cash logo and one like the Monero logo."]{
    Cut off one head, two more shall take its place.
 }
 

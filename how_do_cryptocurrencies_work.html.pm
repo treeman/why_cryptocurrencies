@@ -83,7 +83,7 @@ For example, Sneaky Steve wants to buy a computer from Honest Harry and wants to
 What Sneaky Steve tries to do is send ◊sans-tnum{1 BTC} to the merchant, Honest Harry, and then send a copy of ◊sans-tnum{1 BTC} to his other address: ◊sans-tnum{Sneaky Steve 2}. (It's possible to have as many addresses as you want---a consequence of the permissionless nature of Bitcoin.)
 
 ◊img[#:src "/images/double-spend.png"
-     #:alt "Double spending by sending a coin to someone and back to himself."]{Sneaky Steve sends a digital coin both to Honest Harry and himself.}
+     #:alt "Double spending figure"]{Sneaky Steve sends a digital coin both to Honest Harry and himself.}
 
 If we didn't prevent this, the ledger might look like this:
 
@@ -269,7 +269,7 @@ When a miner finds a solution, she can update the ledger by adding a block to th
 
 A blockchain is what it sounds like: a chain of blocks where a new block builds on previous blocks. When a miner searches for a solution, she must target a block on a specific height---the POW problem includes a reference to the previous block and it only fits at a specific position in the chain. When a new block is added, all miners need to work on a new problem targeting that block.
 
-◊img[#:src "/images/add_block.png" #:alt "A new block is added by linking it with a POW solution."]{
+◊img[#:src "/images/add_block.png" #:alt "A new block is added by linking it to the previous block with a POW solution."]{
     The blocks in the blockchain are linked with a key obtained by solving the POW problem.
 }
 
@@ -344,7 +344,7 @@ The blockchain is duplicated, stored, and maintained by many different people; y
 What happens if two miners find a block at the same height? For example, one where Sneaky Steve sends money to Honest Harry and one where Sneaky Steve sends money to himself?
 
 ◊img[#:src "/images/double_spend_fork.png"
-     #:alt "Two blocks can be added at the same height."]{
+     #:alt "Two blocks can be added at the same height, even if they contain different transactions."]{
     Two blocks at the same height with different transactions.
 }
 
@@ -388,7 +388,7 @@ It works like this:
     }
 }
 
-◊img[#:src "/images/reversal1.png" #:alt "Sneaky Steve pays Honest Harry."]{
+◊img[#:src "/images/reversal1.png" #:alt "Sneaky Steve paying Honest Harry, and a block with two confirmations."]{
     Sneaky Steve pays Honest Harry and they wait until the transaction has two confirmations.
 }
 ◊img[#:src "/images/reversal3.png" #:alt "Honest Harry gives Sneaky Steve jeans."]{
