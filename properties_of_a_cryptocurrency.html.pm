@@ -41,13 +41,13 @@ The important difference between a cryptocurrency and the digital payments we ha
 
 Sending money to people via your bank isn't peer-to-peer as you rely on your bank to send it for you. VISA, PayPal, Swish, Apple Pay, and other digital payments have the same problem, all except cryptocurrencies.
 
-◊img[#:src "images/give_cash.png" #:alt "Cash is given directly from hand to hand."]{
+◊img[#:src "images/give_cash.png" #:alt "Giving cash figure"]{
     Cash is given directly from hand to hand.
 }
-◊img[#:src "images/send_bank.png" #:alt "Regular digital payments are sent through a bank or different payment processors."]{
+◊img[#:src "images/send_bank.png" #:alt "Payments through a bank figure"]{
     Regular digital payments are sent through a bank or different payment processors.
 }
-◊img[#:src "images/send_crypto.png" #:alt "Cryptocurrencies are sent directly from device to device."]{
+◊img[#:src "images/send_crypto.png" #:alt "Sent between devices figure"]{
     Cryptocurrencies are sent directly from device to device.
 }
 
@@ -87,7 +87,7 @@ Problems with counterfeit coins and bills go far back. From biting coins to test
 
 With cryptocurrencies, anyone can independently verify the integrity of the coins you send and receive. Details on how is in the ◊link[next-chapter]{next chapter} but I assure you no biting is needed. You cannot counterfeit coins and you cannot send the same coin to multiple people ◊em{(double-spend)}. This is what allows cryptocurrencies to operate without a trusted third-party.
 
-◊img[#:src "/images/double-spend.png" #:alt "Double spending by sending a coin to someone and back to himself."]{
+◊img[#:src "/images/double-spend.png" #:alt "Double spending figure"]{
     A double spending occurs when someone sends the same coin both to a merchant and back to himself.
 }
 

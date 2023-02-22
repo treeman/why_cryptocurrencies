@@ -31,17 +31,17 @@ If I did print money---a ◊strong{lot} of money---and spent it like this, what 
 
 For starters, if I just kept the money without spending it, nothing would change:
 
-◊img[#:src "/images/counterfeiting1.png" #:alt "The counterfeiter can print a large stash of cash."]{
+◊img[#:src "/images/counterfeiting1.png" #:alt "The counterfeiter can print a large stash of cash, but other people would not benefit."]{
     The counterfeit money is colored yellow and the real money is green.
 }
 
 Then if I decided to buy a bunch of LEGO®, the store would get some of my money:
 
-◊img[#:src "/images/counterfeiting2.png" #:alt "The counterfeiter buys LEGO."]{}
+◊img[#:src "/images/counterfeiting2.png" #:alt "The counterfeiter buys LEGO, sharing the wealth with the store."]{}
 
 After a while the store would use the counterfeited money to pay their supplier:
 
-◊img[#:src "/images/counterfeiting3.png" #:alt "Money further trickles down to the supplier, but not to everyone."]{}
+◊img[#:src "/images/counterfeiting3.png" #:alt "Money further trickles down to the supplier, but not to everyone. The poor people did not get more money than they had before, and now they're even poorer relative to the others."]{}
 
 Who in turn will use it to buy other stuff, and in this way the counterfeited money slowly trickles out into the rest of the economy. This extra money has two important effects:
 
@@ -356,7 +356,7 @@ While taking out debt to fuel investments was only supposed to be a temporary me
 
 ◊; Actual source
 ◊; https://fred.stlouisfed.org/graph/?id=GFDEBTN,
-◊img[#:src "images/usa-debt.svg" #:link #t #:alt "The federal debt of the United States, measure in trillions of dollars, since 1966."]{
+◊img[#:src "images/usa-debt.svg" #:link #t #:alt "The federal debt of the United States figure"]{
     The ◊link[usa-national-debt]{federal debt of the United States}, measure in trillions of dollars, since 1966.  
     After the ◊link[financial_crisis]{2008 financial crisis} the amount of debt skyrocketed, signifying a shift in economic policy.  
     During the COVID-19 pandemic the debt explosively increased at a pace unseen before.
@@ -444,18 +444,18 @@ It seems like we're moving away from the original Keynesian ideas to something e
 
 There's a worrying trend in the world: ◊link[global-inequality]{global inequality is rising}. The rich get richer and the poor get... poorer.
 
-◊img[#:src "images/income-inequality-world.svg" #:link #t #:alt "Top 10% income share between 1980 and 2015."]{
+◊img[#:src "images/income-inequality-world.svg" #:link #t #:alt "World income share figure"]{
     Top 10% income share between 1980 and 2015.  
     Source ◊link[inequality-data]{World Inequality Database}.
 }
 
 The inequality is on the rise in nearly every country. If we take a closer look at the United States, it paints a gloomy picture:◊mn{report}
 
-◊img[#:src "images/income-inequality.svg" #:link #t #:alt "Income share in the United States between 1962 and 2014."]{
+◊img[#:src "images/income-inequality.svg" #:link #t #:alt "United States income share figure"]{
     Income share in the United States between 1962 and 2014.  
     Source ◊link[inequality-data]{World Inequality Database}.
 }
-◊img[#:src "images/wealth-inequality.svg" #:link #t #:alt "Net personal wealth in the United States between 1962 and 2014."]{
+◊img[#:src "images/wealth-inequality.svg" #:link #t #:alt "Net personal wealth figure"]{
     Net personal wealth in the United States between 1962 and 2014.  
     Source ◊link[inequality-data]{World Inequality Database}.
 }
