@@ -58,7 +58,7 @@
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     </head>
     <body>
-      <article class="◊|article-class|">
+      <main class="◊|article-class|">
         <nav class="where">
           <a href="/toc.html" tilte="Table of contents" class="home">Why Cryptocurrencies?</a>
           ◊when/splice[parent-page]{
@@ -66,23 +66,24 @@
             ◊(ref parent-page parent-title parent-title)
           }
         </nav>
-        <header>
-          <h1>◊|title|</h1>
-          <h2>◊|subtitle|</h2>
-          ◊(when side-space? (->html
-             `(div ((class "date"))
-                 (span ((class "published")) ,published)
-                 ,(if updated
-                      `(span ((class "updated")) ,updated)
-                      ""))))
-          </div>
-        </header>
+        <article>
+          <header>
+            <h1>◊|title|</h1>
+            <h2>◊|subtitle|</h2>
+            ◊(when side-space? (->html
+              `(div ((class "date"))
+                  (span ((class "published")) ,published)
+                  ,(if updated
+                        `(span ((class "updated")) ,updated)
+                        ""))))
+          </header>
 
-        ◊(->html doc #:splice? #t)
+          ◊(->html doc #:splice? #t)
+        </article>
 
         ◊(->html (make-section-nav #:section-header? section-chapters-headers?
                                     here))
-      </article>
+      </main>
 
       ◊(when side-space? (->html `(div ((class "side-space")))))
 
