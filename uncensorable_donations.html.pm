@@ -589,10 +589,10 @@ This is ◊strong{not} a glorification of WikiLeaks---they have ◊link[wikileak
      (if (string=? row "\n")
        ""
        (let ((cols (string-split row "  ")))
-         `(div ((class "row"))
-            (span ((class "time")) ,(car cols))
-            (span ((class "txt")) ,@(cdr cols))))))
-   `(div ((class "transcript"))
+         `(div ((class "row") (role "row"))
+            (span ((class "time") (role "cell")) ,(car cols))
+            (span ((class "txt") (role "cell")) ,@(cdr cols))))))
+   `(div ((class "transcript") (role "grid"))
       ,@(map make-row rows)))
 
 ◊(define execution-of-children
