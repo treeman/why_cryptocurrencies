@@ -1,0 +1,391 @@
+#!/usr/bin/python3
+
+import glob
+import subprocess
+import os.path
+import re
+import sys
+import datetime
+
+# See
+# http://www.jedisaber.com/eBooks/Tutorial.shtml
+
+now = datetime.datetime.now()
+
+dirname = os.path.dirname(__file__)
+site_dir = os.path.join(dirname, "_site")
+ebook_files_dir = os.path.join(dirname, "ebook-files")
+
+ebook_dir = os.path.join(dirname, "_ebook")
+meta_dir = os.path.join(ebook_dir, "META-INF")
+oebps_dir = os.path.join(ebook_dir, "OEBPS")
+css_dir = oebps_dir
+image_dir = os.path.join(oebps_dir, "images")
+font_dir = os.path.join(oebps_dir, "fonts")
+short_commit = subprocess.run(['git', 'rev-parse', '--short', 'HEAD'],
+                              stdout=subprocess.PIPE).stdout.decode('utf-8')
+
+toc = [
+    "acknowledgements.html",
+    "about_the_book.html",
+    "eli5.html",
+    "what_is_a_cryptocurrency.html",
+    "properties_of_a_cryptocurrency.html",
+    "how_do_cryptocurrencies_work.html",
+    "look_out_for_snake_oil.html",
+    "what_is_money.html",
+    "are_cryptocurrencies_money.html",
+    "better_digital_payments.html",
+    "cheaper_faster.html",
+    "undesirable_businesses.html",
+    "freezing_of_merchant_accounts.html",
+    "uncensorable_donations.html",
+    "for_the_unbanked.html",
+    "better_currency.html",
+    "financial_crisis.html",
+    "the_blind_leading_the_blind.html",
+    "a_defective_system.html",
+    "private_money.html",
+    "global_currency.html",
+    "brave_new_world.html",
+    "darknet_markets.html",
+    "swiss_bank_account_in_your_pocket.html",
+    "cashless_dystopia.html",
+    "protection_against_government_confiscation.html",
+    "separation_of_money_and_state.html",
+    "extensions.html",
+    "timestamping_service.html",
+    "uncensorable_twitter.html",
+    "provably_fair_gambling.html",
+    "tokens.html",
+    "voting.html",
+    "appendix.html",
+    "bitcoin_whitepaper.html",
+    "challenges.html",
+    "cryptography.html",
+    "antifragile.html",
+    "about_me.html",
+]
+
+titles = {
+    "acknowledgements.html": "Acknowledgments",
+    "about_the_book.html": "About the book",
+    "eli5.html": "Why cryptocurrencies in five minutes",
+    "what_is_a_cryptocurrency.html": "What is a cryptocurrency?",
+    "properties_of_a_cryptocurrency.html": "Properties of a cryptocurrency",
+    "how_do_cryptocurrencies_work.html": "How do cryptocurrencies work?",
+    "look_out_for_snake_oil.html": "Look out for snake oil",
+    "what_is_money.html": "What is money?",
+    "are_cryptocurrencies_money.html": "Are cryptocurrencies money?",
+    "better_digital_payments.html": "Better digital payments",
+    "cheaper_faster.html": "Cheaper &amp; faster",
+    "undesirable_businesses.html": "“Undesirable” businesses",
+    "freezing_of_merchant_accounts.html": "Freezing of merchant accounts",
+    "uncensorable_donations.html": "Uncensorable donations",
+    "for_the_unbanked.html": "For the unbanked",
+    "better_currency.html": "A better currency",
+    "financial_crisis.html": "The financial crisis, bad loans and bailouts",
+    "the_blind_leading_the_blind.html": "The blind leading the blind",
+    "a_defective_system.html": "A defective system",
+    "private_money.html": "Private money",
+    "global_currency.html": "A global currency",
+    "brave_new_world.html": "Brave new world",
+    "darknet_markets.html": "Darknet markets",
+    "swiss_bank_account_in_your_pocket.html":
+    "A Swiss bank account in your pocket",
+    "cashless_dystopia.html": "The cashless dystopia",
+    "protection_against_government_confiscation.html":
+    "Protection against government confiscation",
+    "separation_of_money_and_state.html": "Separation of money and state",
+    "extensions.html": "Extensions",
+    "timestamping_service.html": "Timestamping service",
+    "uncensorable_twitter.html": "Uncensorable Twitter",
+    "provably_fair_gambling.html": "Provably fair gambling",
+    "tokens.html": "Tokens",
+    "voting.html": "Improved voting",
+    "appendix.html": "Appendix",
+    "bitcoin_whitepaper.html": "The Bitcoin white paper",
+    "challenges.html": "Challenges for cryptocurrencies",
+    "cryptography.html": "A hitchhiker’s guide to cryptography",
+    "antifragile.html": "Cryptocurrencies are antifragile",
+    "about_me.html": "About me, the author",
+}
+
+# {src: dst} of hrefs we need to replace
+link_replace = {}
+images = []
+fonts = []
+
+
+def main():
+    clean()
+    setup_basics()
+
+    setup_images()
+    setup_fonts()
+
+    setup_content_opf()
+    setup_toc_ncx()
+    setup_css()
+
+    # FIXME Fonts:
+    # https://www.oreilly.com/library/view/epub-3-best/9781449329129/ch04.html
+
+    setup_post_replacements()
+    setup_posts()
+
+    setup_static_pages()
+    setup_toc()
+
+    create_zip()
+
+
+def clean():
+    # Clean destination directory.
+    subprocess.run(f"rm -r {ebook_dir}/", shell=True)
+    subprocess.run("rm why_cryptocurrencies.epub", shell=True)
+
+
+def setup_basics():
+    # Create mimetype file
+    subprocess.run(f"mkdir -p {ebook_dir}/", shell=True)
+    with open(os.path.join(ebook_dir, "mimetype"), 'w') as f:
+        f.write("application/epub+zip")
+
+    # Create container
+    subprocess.run(f"mkdir -p {meta_dir}", shell=True)
+    subprocess.run(f"cp {ebook_files_dir}/container.xml {meta_dir}/",
+                   shell=True)
+
+
+def setup_images():
+    subprocess.run(f"mkdir -p {image_dir}", shell=True)
+    subprocess.run(f"mkdir -p {image_dir}/markets", shell=True)
+    subprocess.run(f"mkdir -p {image_dir}/cover", shell=True)
+    subprocess.run(f"mkdir -p {image_dir}/donations", shell=True)
+
+    # Manually added images
+    subprocess.run(f"cp {ebook_files_dir}/images/* {image_dir}/", shell=True)
+
+    for match in ["images/*", "images/*/*"]:
+        for src in glob.glob(match):
+            if src.startswith("images/landing"):
+                continue
+
+            if src.startswith("images/donations"):
+                continue
+
+            if src.startswith("images/cover"):
+                if src != "images/cover/front.png":
+                    continue
+
+            if os.path.isfile(src):
+                dst = os.path.join(oebps_dir, src)
+                subprocess.run(f"cp {src} {dst}", shell=True)
+
+                images.append(src)
+
+                (_, ext) = os.path.splitext(dst)
+                if ext == ".svg":
+                    replace_svg_data(dst)
+
+    return images
+
+
+svg_doc_re = re.compile(r"\w*<!DOCTYPE[^>]+>\w*")
+
+
+def replace_svg_data(img):
+    with open(img, 'r') as f:
+        data = f.read()
+
+    data = svg_doc_re.sub("", data)
+
+    with open(img, 'w') as f:
+        f.write(data)
+
+
+def setup_fonts():
+    subprocess.run(f"mkdir -p {font_dir}", shell=True)
+    for src in glob.glob("fonts/*.woff*"):
+        dst = os.path.join(oebps_dir, src)
+        subprocess.run(f"cp {src} {dst}", shell=True)
+
+        fonts.append(src)
+
+
+def post_id(link):
+    base = os.path.basename(link)
+    (name, ext) = os.path.splitext(base)
+    return name
+
+
+def manifest_post_tag(post):
+    id = post_id(post)
+    href = id + ".xhtml"
+    return f'<item id="{id}" href="{href}" media-type="application/xhtml+xml" />'
+
+
+def spine_toc_post(post):
+    id = post_id(post)
+    return f'<itemref idref="{id}" properties="page-spread-right"/>'
+
+
+def img_id(img):
+    (name, _) = os.path.splitext(img)
+    return name.replace("/", "-")
+
+
+def manifest_img_tag(img):
+    (_, ext) = os.path.splitext(img)
+    id = img_id(img)
+
+    fallback = ""
+    if ext == ".png":
+        t = "png"
+    elif ext == ".svg":
+        t = "svg+xml"
+        fallback = id + "-fallback"
+    elif ext == ".jpg":
+        t = "jpeg"
+        fallback = id + "-fallback"
+    elif ext == ".gif":
+        t = "gif"
+        fallback = id + "-fallback"
+    else:
+        sys.exit("unknown image: " + ext + " " + img)
+
+    if fallback:
+        fallback = f'fallback="{fallback}"'
+
+    properties = ""
+    if id == "images-cover-front":
+        properties = 'properties="cover-image"'
+
+    return f'<item id="{id}" href="{img}" media-type="image/{t}" {fallback} {properties}/>'
+
+
+def manifest_font_tag(font):
+    base = os.path.basename(font)
+    (id, _) = os.path.splitext(base)
+    return f'<item id="{id}" href="{font}" media-type="application/font-woff" />'
+
+
+def setup_content_opf():
+    with open(f"{ebook_files_dir}/content.opf", 'r') as f:
+        data = f.read()
+
+    data = data.replace("◊DATE",
+                        datetime.datetime.now().strftime("%Y-%m-%dT%H:%M:%SZ"))
+
+    # ◊MANIFEST_POSTS_TAG
+    # <item id="chapter02" href="chap02.xhtml" media-type="application/xhtml+xml" />
+    manifest_posts = ('\n' + ' ' * 8).join(
+        [manifest_post_tag(post) for post in toc])
+    data = data.replace("◊MANIFEST_POSTS_TAG", manifest_posts)
+
+    # ◊MANIFEST_IMG_TAG
+    # <item id="imgl" href="images/sample.png" media-type="image/png" />
+    manifest_imgs = ('\n' + ' ' * 8).join(
+        [manifest_img_tag(img) for img in images])
+    data = data.replace("◊MANIFEST_IMG_TAG", manifest_imgs)
+
+    # ◊MANIFEST_FONT_TAG
+    manifest_fonts = ('\n' + ' ' * 8).join(
+        [manifest_font_tag(font) for font in fonts])
+    data = data.replace("◊MANIFEST_FONT_TAG", manifest_fonts)
+
+    # ◊SPINE_TOC
+    # <itemref idref="chapter01" />
+    spine_toc = ('\n' + ' ' * 8).join([spine_toc_post(post) for post in toc])
+    data = data.replace("◊SPINE_TOC", spine_toc)
+
+    with open(f"{oebps_dir}/content.opf", 'w') as f:
+        f.write(data)
+
+
+def post_title(post):
+    return titles[post]
+
+
+def setup_toc_ncx():
+    with open(f"{ebook_files_dir}/toc.ncx", 'r') as f:
+        data = f.read()
+
+    with open(f"{oebps_dir}/toc.ncx", 'w') as f:
+        f.write(data)
+
+
+def setup_css():
+    subprocess.run(f"mkdir -p {css_dir}", shell=True)
+    subprocess.run(
+        f"sassc sass/main.scss --style compressed > {css_dir}/main.css",
+        shell=True)
+
+
+def setup_toc():
+    with open("toc.html", 'r') as f:
+        data = f.read()
+
+    data = replace_post_data(data)
+
+    with open(f"{oebps_dir}/toc.xhtml", 'w') as f:
+        f.write(data)
+
+
+def setup_static_pages():
+    for src in glob.glob(f"{ebook_files_dir}/*.xhtml"):
+        with open(src, 'r') as f:
+            data = f.read()
+
+        data = replace_post_data(data)
+
+        dst = os.path.join(oebps_dir, os.path.basename(src))
+        with open(dst, 'w') as f:
+            f.write(data)
+
+
+def setup_post_replacements():
+    for post in toc:
+        (name, ext) = os.path.splitext(post)
+        dst = f'{name}.xhtml'
+        link_replace[post] = dst
+
+
+def setup_posts():
+    for post in toc:
+        setup_post(post)
+
+
+def setup_post(post):
+    (name, ext) = os.path.splitext(post)
+    dst = f'{oebps_dir}/{name}.xhtml'
+    with open(post, 'r') as f:
+        data = f.read()
+
+    data = replace_post_data(data)
+
+    with open(dst, 'w') as f:
+        f.write(data)
+
+
+def replace_post_data(data):
+    for link, new_link in link_replace.items():
+        data = data.replace(link, new_link)
+    data = data.replace('Cheaper & faster', 'Cheaper &amp; faster')
+    # https://github.com/Scripler/scripler/issues/430
+    data = data.replace('&nbsp;', '&#160;')
+    # Use relative links to internal things, not absolute links
+    data = data.replace('href="/', 'href="')
+    data = data.replace('src="/', 'src="')
+    data = data.replace("◊SHORT_COMMIT", short_commit)
+
+    return data
+
+
+def create_zip():
+    subprocess.run('./zippify')
+
+
+if __name__ == '__main__':
+    main()

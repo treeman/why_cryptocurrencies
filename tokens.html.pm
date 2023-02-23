@@ -207,12 +207,12 @@ I think visualizations can help us compare large amounts like these, so here's o
    `(div ((class "block"))
       (div ((class "title")) ,title)
       (div ((class "wrapper"))
-        (img ((src ,src))))))
+        (img ((src ,src) (role "presentation") (alt ,title))))))
 ◊(define (small-img title src)
    `(div ((class "block"))
       (div ((class "title")) ,title)
       (div ((class "wrapper small"))
-        (img ((src ,src))))))
+        (img ((src ,src) (role "presentation") (alt ,title))))))
 
 
 ◊; Extremely difficult to this with text, as fonts/sizes looks very different.

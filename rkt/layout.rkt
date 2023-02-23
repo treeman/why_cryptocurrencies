@@ -26,21 +26,21 @@
                 (value "Subscribe")))
             ))
 
-(define follow-section
-  `(section((class "follow"))
-     (div ((class "wip"))
-          "Here are some options f you want to keep up to date:")
-     ,subscription-form
-     (div ((class "links"))
-          "Subscribe to the " ,(link feed-url "feed")
-          ", see the source on " ,(link source-code "Github")
-          " or " ,(link mailto "contact me")
-          ".")
-     (div ((class "donate"))
-           "If you appreciate this free book please consider "
-           ,(link donations "donating")
-           ".")
-     ))
+; (define follow-section
+;   `(section((class "follow"))
+;      (div ((class "wip"))
+;           "Here are some options f you want to keep up to date:")
+;      ,subscription-form
+;      (div ((class "links"))
+;           "Subscribe to the " ,(link feed-url "feed")
+;           ", see the source on " ,(link source-code "Github")
+;           " or " ,(link mailto "contact me")
+;           ".")
+;      (div ((class "donate"))
+;            "If you appreciate this free book please consider "
+;            ,(link donations "donating")
+;            ".")
+;      ))
 
 (define (abs-url url)
   (format "~a/~a" root-url url))

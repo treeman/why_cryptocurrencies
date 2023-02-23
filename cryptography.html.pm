@@ -110,7 +110,7 @@ You ◊em{encrypt} a message by placing it in the mailbox, this way nobody but t
     This is where our mailbox metaphor breaks down a bit. It may seem that it's more inconvenient to sign a message than to encrypt one, but digitally they're both straightforward.
 }
 
-◊img[#:src "/images/encrypted_mailbox.png" #:alt "Placing a letter in the mailbox."]{
+◊img[#:src "/images/encrypted_mailbox.png" #:alt "A letter is placed in the mailbox."]{
     Placing a message inside the mailbox ensures that only the one with the key can read it.
 }
 

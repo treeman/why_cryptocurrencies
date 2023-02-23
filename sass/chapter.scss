@@ -2,102 +2,100 @@ $fullwidth: 1220px;
 $sidenote-float-width: 1280px;
 
 .chapter {
-    max-width: 800px;
-    //background-color: lightyellow;
-    flex: 1 1 auto;
-    margin: 0.5rem 1.2rem;
+  max-width: 800px;
+  //background-color: lightyellow;
+  flex: 1 1 auto;
+  margin: 0.5rem 1.2rem;
 }
 
 %fullwidth {
-    width: 100%;
+  width: 100%;
 }
 
 @media (min-width: $sidenote-float-width) {
-    %fullwidth {
-        width: $fullwidth;
-    }
+  %fullwidth {
+    width: $fullwidth;
+  }
 }
-
 
 /*
  * Header
  */
-.chapter > header {
-    h2 {
-        font-weight: normal;
-        font-style: italic;
-        font-size: 1rem;
+.chapter header {
+  h2 {
+    font-weight: normal;
+    font-style: italic;
+    font-size: 1rem;
 
-        margin-top: 0.4em;
-        margin-bottom: 0.8em;
-    }
+    margin-top: 0.4em;
+    margin-bottom: 0.8em;
+  }
 }
 
-.chapter > header > .date {
-    text-align: right;
-    font-size: 0.7rem;
-    margin-top: -0.2rem;
-    margin-bottom: 0.4rem;
-    @extend %sans-serif;
-    color: $body-font-color2;
+.chapter header > .date {
+  text-align: right;
+  font-size: 0.7rem;
+  margin-top: -0.2rem;
+  margin-bottom: 0.4rem;
+  @extend %sans-serif;
+  color: $body-font-color2;
 
-    .published {
-        margin-right: 0.4rem;
-    }
+  .published {
+    margin-right: 0.4rem;
+  }
 }
 
 @media (min-width: $sidenote-float-width) {
-    .chapter > header > .date {
-        text-align: left;
+  .chapter > header > .date {
+    text-align: left;
 
-        float: right;
-        margin-top: -3rem;
-        margin-right: -420px;
-        width: 380px;
-        .published {
-            display: block;
-        }
-        .update {
-            display: block;
-        }
+    float: right;
+    margin-top: -3rem;
+    margin-right: -420px;
+    width: 380px;
+    .published {
+      display: block;
     }
+    .update {
+      display: block;
+    }
+  }
 }
 
 .where a {
-    text-decoration: none;
-    background: none;
-    text-shadow: none;
+  text-decoration: none;
+  background: none;
+  text-shadow: none;
 }
 .where a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .where {
-    font-size: 0.8rem;
-    @extend %sans-serif;
-    margin-bottom: 0.8rem;
-    color: $eth-dark-gray;
+  font-size: 0.8rem;
+  @extend %sans-serif;
+  margin-bottom: 0.8rem;
+  color: $eth-dark-gray;
 }
 .where .home {
-    @extend %sans-serif;
+  @extend %sans-serif;
 }
 .where .up {
 }
 .where .divider {
-    font-size: 0.65rem;
-    color: $eth-light-gray;
+  font-size: 0.65rem;
+  color: $eth-light-gray;
 }
 
 /*
  * Headers
  */
 .chapter h2 > a:hover {
-    color: $body-font-color;
+  color: $body-font-color;
 }
 .chapter h3 > a:hover {
-    color: $body-font-color;
+  color: $body-font-color;
 }
-
 
 /*
  * Lists
@@ -106,922 +104,937 @@ $first-list-offset: -1.3rem;
 $list-p-margin: 0.6em;
 
 .chapter {
-    ul, ol {
-        list-style: none;
-        margin: 1rem 0 1rem 2em;
-        p {
-            margin-bottom: $list-p-margin;
-        }
+  ul,
+  ol {
+    list-style: none;
+    margin: 1rem 0 1rem 2em;
+    p {
+      margin-bottom: $list-p-margin;
     }
-    ol {
-        counter-reset: foobar;
-    }
-    ol li, ul li {
-        margin-bottom: 0.4em;
-        font-size: 95%;
-        line-height: 1.35;
-    }
+  }
+  ol {
+    counter-reset: foobar;
+  }
+  ol li,
+  ul li {
+    margin-bottom: 0.4em;
+    font-size: 95%;
+    line-height: 1.35;
+  }
 
-    ol > li::before {
-        @extend %sans-serif;
-        counter-increment: foobar;
-        content: counter(foobar);
-        color: $body-list-sym-color;
-    }
-    ul > li::before {
-        @extend %sans-serif;
-        //content: "⭑";
-        //content: "~";
-        //content: "≈";
-        //content: "→";
-        //content: "»";
-        //content: "*";
-        content: "•";
-        //content: "†";
-        color: $body-list-sym-color;
-    }
-    ul > li > p:first-child, ol > li > p:first-child {
-        // To avoid li signifier on a line of it's own
-        margin-top: $first-list-offset;
-    }
-    ul > li::before, ol > li::before {
-        // Avoid floats here as sidenotes may interfere
-        margin-left: -2em;
-        padding-right: 1.5em;
-    }
-
-    // Description lists
-    dl {
-        font-size: 95%;
-        line-height: 1.35;
-        margin-bottom: 1rem;
-    }
-    dl > dt {
-        font-weight: bold;
-        margin-left: 1em;
-    }
-    dl > dd {
-        margin-left: 2em;
-        margin-bottom: $list-p-margin;
-    }
-}
-
-.chapter > .subnav {
-    margin-top: 1.5rem;
+  ol > li::before {
     @extend %sans-serif;
+    counter-increment: foobar;
+    content: counter(foobar);
+    color: $body-list-sym-color;
+  }
+  ul > li::before {
+    @extend %sans-serif;
+    //content: "⭑";
+    //content: "~";
+    //content: "≈";
+    //content: "→";
+    //content: "»";
+    //content: "*";
+    content: "•";
+    //content: "†";
+    color: $body-list-sym-color;
+  }
+  ul > li > p:first-child,
+  ol > li > p:first-child {
+    // To avoid li signifier on a line of it's own
+    margin-top: $first-list-offset;
+  }
+  ul > li::before,
+  ol > li::before {
+    // Avoid floats here as sidenotes may interfere
+    margin-left: -2em;
+    padding-right: 1.5em;
+  }
 
-    .chapters {
-        font-size: 1.1rem;
-        font-weight: bold;
-    }
-
-    ul {
-        list-style: none;
-        margin: 0;
-    }
-    ul > li {
-        font-size: 100%;
-        margin-left: 0.6rem;
-        margin-top: 0.3rem;
-    }
-    ul > li::before {
-        display: none;
-    }
-
-    a {
-        background: none;
-        text-shadow: none;
-    }
-    a:hover {
-        text-decoration: underline;
-    }
-
-    .planned {
-        color: $planned-chapter-link;
-    }
+  // Description lists
+  dl {
+    font-size: 95%;
+    line-height: 1.35;
+    margin-bottom: 1rem;
+  }
+  dl > dt {
+    font-weight: bold;
+    margin-left: 1em;
+  }
+  dl > dd {
+    margin-left: 2em;
+    margin-bottom: $list-p-margin;
+  }
 }
 
+.chapter .subnav {
+  margin-top: 1.5rem;
+  @extend %sans-serif;
+
+  .chapters {
+    font-size: 1.1rem;
+    font-weight: bold;
+  }
+
+  ol {
+    list-style: none;
+    margin: 0;
+  }
+  ol > li {
+    font-size: 100%;
+    margin-left: 0.6rem;
+    margin-top: 0.3rem;
+  }
+  ol > li::before {
+    display: none;
+  }
+
+  a {
+    background: none;
+    text-shadow: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+
+  .planned {
+    color: $planned-chapter-link;
+  }
+}
 
 /*
  * Horizontal rules
  */
 .chapter hr {
-    margin: 1em auto;
+  margin: 1em auto;
 
-    border: 0;
-    border-bottom: 1px solid $body-hr-color;
+  border: 0;
+  border-bottom: 1px solid $body-hr-color;
 }
-
 
 /*
  * Quotes
  */
 blockquote {
-    font-size: 95%;
-    line-height: 1.4;
-    margin: 2em;
+  font-size: 95%;
+  line-height: 1.4;
+  margin: 2em;
 }
 blockquote > footer {
-    font-size: 80%;
-    text-align: right;
+  font-size: 80%;
+  text-align: right;
 }
 blockquote > footer > cite {
-    font-style: italic;
+  font-style: italic;
 }
 blockquote .emphasis {
-    font-size: 80%;
+  font-size: 80%;
 }
 blockquote.center {
-    text-align: center;
+  text-align: center;
 }
 
 // Should we shut it down for small text?
 //blockquote > footer a:link {
-    //text-decoration: underline;
-    //background: none;
-    //text-shadow: none;
+//text-decoration: underline;
+//background: none;
+//text-shadow: none;
 //}
 
 .epigraph {
-    margin: 2em 0;
+  margin: 2em 0;
 
-    blockquote {
-        font-size: 1rem;
-        font-style: italic; // Regular shouldn't be italic?
-    }
-    blockquote > footer {
-        font-style: normal;
-    }
+  blockquote {
+    font-size: 1rem;
+    font-style: italic; // Regular shouldn't be italic?
+  }
+  blockquote > footer {
+    font-style: normal;
+  }
 }
-
 
 /*
  * Tables
  */
 table {
-    @extend %sans-serif-tnum;
-    font-size: 0.95rem;
-    margin-bottom: 1rem;
+  @extend %sans-serif-tnum;
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
 
-    display: block;
-    overflow-x: auto;
-    white-space: nowrap;
+  display: block;
+  overflow-x: auto;
+  white-space: nowrap;
 }
-th, td {
-    text-align: left;
-    padding: 0.1em 1.5em 0.1em 0em;
+th,
+td {
+  text-align: left;
+  padding: 0.1em 1.5em 0.1em 0em;
 }
 // Had tons of trouble centering a table which could also
 // overflow on x.
 .centered {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
-
 
 /*
  * Code
  */
-pre, code {
-    font-family: $code-font-family;
-    font-size: 0.83rem;
-    line-height: 1.45;
+pre,
+code {
+  font-family: $code-font-family;
+  font-size: 0.83rem;
+  line-height: 1.45;
 }
 code {
-    //background-color: tomato;
+  //background-color: tomato;
 }
 pre {
-    overflow-wrap: normal;
-    overflow: auto;
+  overflow-wrap: normal;
+  overflow: auto;
 
-    margin-bottom: 1rem;
-    padding: 0.4rem 0.6rem;
+  margin-bottom: 1rem;
+  padding: 0.4rem 0.6rem;
 }
 li pre {
-    margin-bottom: $list-p-margin;
+  margin-bottom: $list-p-margin;
 }
 .sidenote code {
-    font-size: 0.65rem;
-    line-height: 1.4;
-    //white-space: nowrap;
+  font-size: 0.65rem;
+  line-height: 1.4;
+  //white-space: nowrap;
 }
-
 
 /*
  * Misc
  */
 .def {
-    font-style: italic;
+  font-style: italic;
 }
 cite.book {
-    font-style: normal;
+  font-style: normal;
 }
-
 
 /*
  * Side content
  */
 .side-space {
-    // Serves to take up space. Inline content from the chapter is floated on top.
-    width: 420px;
-    //background-color: antiquewhite;
-    // Avoids swallowing clicks and interactions intended for wider images
-    visibility: hidden;
+  // Serves to take up space. Inline content from the chapter is floated on top.
+  width: 420px;
+  //background-color: antiquewhite;
+  // Avoids swallowing clicks and interactions intended for wider images
+  visibility: hidden;
 }
 
-.sidenote {
-    @extend %sans-serif;
-    font-size: 0.8rem;
+.sidenote,
+.sidenote > p,
+.sidenote a {
+  @extend %sans-serif;
+  font-size: 0.8rem !important;
 }
-.sidenote img, {
-    max-width: 100%;
+.sidenote img {
+  max-width: 100%;
 }
 .sidenote .sidenote-number {
-    padding-right: 0.2rem;
+  padding-right: 0.2rem;
 }
-.sidenote-number, .sidenote-label {
-    font-family: $sans-serif-font-family;
-    //vertical-align: super;
-    font-size: 0.7em;
-    display: inline-block;
-    //background-color: tomato;
+.sidenote-number,
+.sidenote-label,
+a.sidenote-number {
+  font-family: $sans-serif-font-family;
+  vertical-align: super;
+  font-size: 0.7em !important;
+  display: inline-block;
+  //background-color: tomato;
 }
 
 .sidenote .talking {
-    .row:before {
-        content: "–";
-        padding-right: 0.3rem;
-    }
+  .row:before {
+    content: "–";
+    padding-right: 0.3rem;
+  }
 }
 
 @media (max-width: $sidenote-float-width - 1) {
-    .sidenote {
-        display: block;
-        margin: 1em 4em 1.4em 4em !important;
+  .sidenote {
+    display: block;
+    margin: 1em 4em 1.4em 4em !important;
 
-        img {
-            display: block;
-            margin: 0 auto;
-        }
-        code {
-            max-width: 101%;
-        }
-    }
-    //.sidenote { background-color: lightblue; }
-}
-@media (min-width: $sidenote-float-width) {
-    .side-space {
-        display: block;
-    }
-    .sidenote {
-        float: right;
-        clear: right;
-        // Approximate adjustment for notes at the last line of a paragraph.
-        // Will get overridden by local styles.
-        margin-top: -2em;
-        margin-bottom: 4em;
-        margin-right: -420px;
-        width: 380px;
-        position: relative;
-        display: inline-block;
-        //background-color: moccasin;
-    }
-    blockquote .sidenote {
-        margin-right: -462px;
+    img {
+      display: block;
+      margin: 0 auto;
     }
     code {
-        max-width: 380px;
+      max-width: 101%;
     }
-    //.sidenote { background-color: pink; }
+  }
+  //.sidenote { background-color: lightblue; }
+}
+@media (min-width: $sidenote-float-width) {
+  .side-space {
+    display: block;
+  }
+  .sidenote {
+    float: right;
+    clear: right;
+    // Approximate adjustment for notes at the last line of a paragraph.
+    // Will get overridden by local styles.
+    margin-top: -2em;
+    margin-bottom: 4em;
+    margin-right: -420px;
+    width: 380px;
+    position: relative;
+    display: inline-block;
+    //background-color: moccasin;
+  }
+  blockquote .sidenote {
+    margin-right: -462px;
+  }
+  code {
+    max-width: 380px;
+  }
+  //.sidenote { background-color: pink; }
 }
 
+.not-investment {
+  margin: 1em 0 !important;
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-align: center;
+}
 
 /*
  * Donations
  */
 .donations {
-    margin: 1rem 0;
-    margin-left: 0.5rem;
+  margin: 1rem 0;
+  margin-left: 0.5rem;
 }
 .donation-label {
-    @extend %sans-serif;
-    font-size: 0.9rem;
-    font-weight: bold;
-    color: $body-font-color;
-    cursor: pointer;
-    text-decoration: underline;
+  @extend %sans-serif;
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: $body-font-color;
+  cursor: pointer;
+  text-decoration: underline;
 }
 .donation-label:hover {
-    color: $body-link-hover-color;
+  color: $body-link-hover-color;
 }
 .donation-toggle {
-    display: none;
+  display: none;
 }
 .donation-content {
-    display: none;
+  display: none;
 }
 .donation-toggle:checked + .donation-content {
-    display: block;
-    text-align: center;
-    padding-top: 0.2rem;
+  display: block;
+  text-align: center;
+  padding-top: 0.2rem;
 }
 .donation-content .qr {
-    margin-right: 0.5em;
+  margin-right: 0.5em;
 }
 .donation-content .address {
-    font-family: $triplicate;
-    font-size: 0.9rem;
-    word-wrap: break-word;
+  font-family: $triplicate;
+  font-size: 0.9rem;
+  word-wrap: break-word;
 }
-
 
 /*
  * Images
  */
 a.img-wrapper:link {
-    background: none;
-    text-shadow: none;
+  background: none;
+  text-shadow: none;
 }
 a.img-wrapper:hover {
-    @include a-background(#333);
+  @include a-background(#333);
 }
-
 
 /*
  * Figures
  */
 figure {
-    margin-bottom: 1rem;
-    text-align: center;
+  margin-bottom: 1rem;
+  text-align: center;
 
-    img {
-        max-width: 100%;
-    }
-    > figcaption {
-        @extend %sans-serif;
-        font-size: 0.9rem;
-    }
+  img {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  > figcaption {
+    @extend %sans-serif;
+    font-size: 0.9rem;
+  }
 }
 figure.fullwidth {
-    img {
-        width: 100%;
-    }
+  img {
+    width: 100%;
+  }
 }
 figure.slim {
-    margin: 0;
+  margin: 0;
 }
 figcaption.margin {
-    @extend %sans-serif;
+  @extend %sans-serif;
 }
 
 @media (min-width: $sidenote-float-width) {
-    figure.fullwidth {
-        width: $fullwidth;
-    }
-    figcaption.margin {
-        font-size: 0.8rem;
-        float: right;
-        clear: right;
-        margin-right: -420px;
-        margin-bottom: 2rem;
-        width: 380px;
-        position: relative;
-        display: inline-block;
-        text-align: left;
-    }
-    // Override the above in a fullwidth image. Not sure how to avoid this?
-    figure.fullwidth > figcaption.margin {
-        font-size: 0.9rem;
-        float: none;
-        margin: 0;
-        position: static;
-        display: block;
-        text-align: center;
-        width: 100%;
-    }
+  figure.fullwidth {
+    width: $fullwidth;
+  }
+  figcaption.margin {
+    font-size: 0.8rem;
+    float: right;
+    clear: right;
+    margin-right: -420px;
+    margin-bottom: 2rem;
+    width: 380px;
+    position: relative;
+    display: inline-block;
+    text-align: left;
+  }
+  // Override the above in a fullwidth image. Not sure how to avoid this?
+  figure.fullwidth > figcaption.margin {
+    font-size: 0.9rem;
+    float: none;
+    margin: 0;
+    position: static;
+    display: block;
+    text-align: center;
+    width: 100%;
+  }
 }
 
 figure .sidenote {
-    text-align: left;
+  text-align: left;
 }
-
 
 /*
  * Misc
  */
 .whitepaper {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 1rem;
 
-    a {
-        @extend %sans-serif;
-        font-size: 1.05rem;
-    }
+  a {
+    @extend %sans-serif;
+    font-size: 1.05rem;
+  }
 }
 
 .todo {
-    @extend %sans-serif;
-    font-size: 0.8rem;
-    margin: 1rem 1rem;
+  @extend %sans-serif;
+  font-size: 0.8rem;
+  margin: 1rem 1rem;
 
-    .pre {
-        font-weight: bold;
-    }
-    .txt {
-    }
+  .pre {
+    font-weight: bold;
+  }
+  .txt {
+  }
 }
 
 .story {
-    padding: 1rem 0;
-    margin: 1.5rem 0;
-    border-top: 1px dashed $body-hr-color;
-    border-bottom: 1px dashed $body-hr-color;
+  padding: 1rem 0;
+  margin: 1.5rem 0;
+  border-top: 1px dashed $body-hr-color;
+  border-bottom: 1px dashed $body-hr-color;
 
-    .talk:before {
-        content: "–";
-        padding-right: 0.3rem;
-    }
-    .talk:not(:first-child) {
-        margin-top: 0.6rem;
-    }
+  .talk:before {
+    content: "–";
+    padding-right: 0.3rem;
+  }
+  .talk:not(:first-child) {
+    margin-top: 0.6rem;
+  }
 
-    // Avoid double spacing at the bottom.
-    p:last-of-type {
-        margin-bottom: 0;
-    }
-    // Avoid ugly spacing when sidenote is placed at the end.
-    .sidenote:last-child {
-        margin-bottom: 0 !important;
-    }
+  // Avoid double spacing at the bottom.
+  p:last-of-type {
+    margin-bottom: 0;
+  }
+  // Avoid ugly spacing when sidenote is placed at the end.
+  .sidenote:last-child {
+    margin-bottom: 0 !important;
+  }
 }
 
 .story-talking {
 }
 
-
-.appendix, .error {
-    max-width: 600px;
+.appendix,
+.error {
+  max-width: 600px;
 }
 
 .fullwidth {
-    @extend %fullwidth;
+  @extend %fullwidth;
 }
 
 table.crypto-eval {
-    th, td {
-        padding: 0.1em 0.6em;
-    }
-    td {
-        text-align: left;
-    }
-    td.ths {
-        font-weight: bold;
-        text-align: center;
-    }
-    td.tds {
-        font-weight: bold;
-    }
-    td.poor {
-        background-color: $poor;
-        text-align: center;
-    }
-    td.good {
-        background-color: $good;
-        text-align: center;
-    }
-    td.excellent {
-        background-color: $excellent;
-        text-align: center;
-    }
+  th,
+  td {
+    padding: 0.1em 0.6em;
+  }
+  td {
+    text-align: left;
+  }
+  td.ths {
+    font-weight: bold;
+    text-align: center;
+  }
+  td.tds {
+    font-weight: bold;
+  }
+  td.poor {
+    background-color: $poor;
+    text-align: center;
+  }
+  td.good {
+    background-color: $good;
+    text-align: center;
+  }
+  td.excellent {
+    background-color: $excellent;
+    text-align: center;
+  }
 }
 
 table.legal-moral {
-    th, td {
-        padding: 0.1em 1.0em 0.1em 0.5em;
-    }
-    td {
-        text-align: center;
-    }
-    td.ths {
-        font-weight: bold;
-        text-align: center;
-    }
-    td.tds {
-        font-weight: bold;
-        text-align: right;
-    }
+  th,
+  td {
+    padding: 0.1em 1em 0.1em 0.5em;
+  }
+  td {
+    text-align: center;
+  }
+  td.ths {
+    font-weight: bold;
+    text-align: center;
+  }
+  td.tds {
+    font-weight: bold;
+    text-align: right;
+  }
 
-    .good {
-        background-color: $legal-moral;
-    }
-    .moral-illegal {
-        background-color: $illegal-moral;
-    }
-    .immoral-legal {
-        background-color: $legal-immoral;
-    }
-    .bad {
-        background-color: $illegal-immoral;
-    }
+  .good {
+    background-color: $legal-moral;
+  }
+  .moral-illegal {
+    background-color: $illegal-moral;
+  }
+  .immoral-legal {
+    background-color: $legal-immoral;
+  }
+  .bad {
+    background-color: $illegal-immoral;
+  }
 }
 
 table.address-examples {
-    td.ths {
-        font-weight: bold;
-    }
-    td.tdc {
-        //font-weight: bold;
-    }
+  td.ths {
+    font-weight: bold;
+  }
+  td.tdc {
+    //font-weight: bold;
+  }
 }
 
 .sans {
-    @extend %sans-serif;
+  @extend %sans-serif;
 }
 .sans-tnum {
-    @extend %sans-serif-tnum;
+  @extend %sans-serif-tnum;
 }
 
 .strikethrough {
-    text-decoration: line-through;
+  text-decoration: line-through;
 }
 
 .chapter .subscribe {
-    max-width: 25em;
+  max-width: 25em;
 }
 
 .money-examples .example {
-    width: 100%;
+  width: 100%;
+  margin-bottom: 1em;
+  display: flex;
+
+  .txt {
+    margin: 0 0.5em;
+  }
+
+  img {
+    flex-shrink: 0;
+    align-self: center;
+    max-width: 10em;
     margin-bottom: 1em;
+  }
+  h3 {
+    margin-top: 0;
+  }
+  .header {
+    font-size: 1.1rem;
+    @extend %sans-serif;
+    line-height: 1;
     display: flex;
-
-    .txt {
-        margin: 0 0.5em;
-    }
-
-    img {
-        flex-shrink: 0;
-        align-self: center;
-        max-width: 10em;
-        margin-bottom: 1em;
-    }
-    h3 {
-        margin-top: 0;
-    }
-    .header {
-        font-size: 1.1rem;
-        @extend %sans-serif;
-        line-height: 1;
-        display: flex;
-    }
-    .date {
-        margin-left: 0.5rem;
-    }
+  }
+  .date {
+    margin-left: 0.5rem;
+  }
 }
 
 .inflation-examples .example {
-    //margin: 0 0.5em 1em 0.5em;
-    margin: 1em 0;
+  //margin: 0 0.5em 1em 0.5em;
+  margin: 1em 0;
 
-    h3 {
-        margin-top: 0;
-    }
-    .header {
-        font-size: 1.1rem;
-        @extend %sans-serif;
-        line-height: 1;
-        display: flex;
-    }
-    .date {
-        margin-left: 0.5rem;
-    }
-    .txt {
-        margin-left: 0.5rem;
-    }
+  h3 {
+    margin-top: 0;
+  }
+  .header {
+    font-size: 1.1rem;
+    @extend %sans-serif;
+    line-height: 1;
+    display: flex;
+  }
+  .date {
+    margin-left: 0.5rem;
+  }
+  .txt {
+    margin-left: 0.5rem;
+  }
 }
 
 .wikileaks {
-    padding-top: 1em;
-    margin-bottom: 1em;
-    //margin: 1.5em 0;
-    border-top: 1px dashed $body-hr-color;
-    border-bottom: 1px dashed $body-hr-color;
+  padding-top: 1em;
+  margin-bottom: 1em;
+  //margin: 1.5em 0;
+  border-top: 1px dashed $body-hr-color;
+  border-bottom: 1px dashed $body-hr-color;
 }
 
 .wikileaks .entry:not(:first-child) {
-    margin-top: 1.5em;
+  margin-top: 1.5em;
 }
 
 .wikileaks .entry {
-    width: 100%;
+  width: 100%;
 
-    h3 {
-        margin-top: 0;
-    }
-    > .header {
-        font-size: 1.1rem;
-        @extend %sans-serif;
-        line-height: 1;
-        display: flex;
-        flex-wrap: wrap;
-        //margin-bottom: 0.3rem;
-    }
-    > .header > h3 {
-        margin-right: 0.5rem;
-        margin-bottom: 0.3rem;
-    }
-    > .header > .date {
-        margin-bottom: 0.3rem;
-    }
+  h3 {
+    margin-top: 0;
+  }
+  > .header {
+    font-size: 1.1rem;
+    @extend %sans-serif;
+    line-height: 1;
+    display: flex;
+    flex-wrap: wrap;
+    //margin-bottom: 0.3rem;
+  }
+  > .header > h3 {
+    margin-right: 0.5rem;
+    margin-bottom: 0.3rem;
+  }
+  > .header > .date {
+    margin-bottom: 0.3rem;
+  }
 
-    .caution {
-        margin-top: 0.5em;
-        margin-bottom: 0.8em;
-        margin-left: 1em;
-        font-size: 90%;
-    }
+  .caution {
+    margin-top: 0.5em;
+    margin-bottom: 0.8em;
+    margin-left: 1em;
+    font-size: 90%;
+  }
 }
 
 .snowden-leaks > li.leak > .title {
-    margin-top: $first-list-offset;
-    margin-bottom: $list-p-margin;
-    font-weight: bold;
+  margin-top: $first-list-offset;
+  margin-bottom: $list-p-margin;
+  font-weight: bold;
 }
 
 .wikileaks li.leak {
-    margin-bottom: 2em;
+  margin-bottom: 2em;
 
-    > .title {
-        margin-top: $first-list-offset;
-        margin-bottom: $list-p-margin;
-        font-weight: bold;
-    }
+  > .title {
+    margin-top: $first-list-offset;
+    margin-bottom: $list-p-margin;
+    font-weight: bold;
+  }
 
-    .transcript {
-        margin: 1rem 0;
-        padding-left: 1rem;
-        font-size: 95%;
-        line-height: 1.4;
-        border-left: 1px solid $body-hr-color;
-    }
+  .transcript {
+    margin: 1rem 0;
+    padding-left: 1rem;
+    font-size: 95%;
+    line-height: 1.4;
+    border-left: 1px solid $body-hr-color;
+  }
 }
 
 .wikileaks .transcript-wrapper {
-    margin: 1.5em 0;
-    border-top: 1px dashed $body-hr-color;
-    border-bottom: 1px dashed $body-hr-color;
+  margin: 1.5em 0;
+  border-top: 1px dashed $body-hr-color;
+  border-bottom: 1px dashed $body-hr-color;
 }
-
 
 .wikileaks .transcript > .row {
-    width: 100%;
-    display: flex;
-    justify-content: flex-start;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
 
-    > .time {
-        margin-right: 1.5rem;
-        flex: none;
-    }
-    > .txt {
-
-    }
+  > .time {
+    margin-right: 1.5rem;
+    flex: none;
+  }
+  > .txt {
+  }
 }
 
-
-
 @media only screen and (min-width: 521px) {
-    .money-examples .example:nth-child(even) {
-        justify-content: space-between;
-        img {
-            order: 9;
-            margin-right: 0;
-        }
+  .money-examples .example:nth-child(even) {
+    justify-content: space-between;
+    img {
+      order: 9;
+      margin-right: 0;
     }
+  }
 }
 
 @media only screen and (max-width: 520px) {
-    .money-examples .example {
-        flex-wrap: wrap;
-        justify-content: flex-start;
-        flex-direction: column;
+  .money-examples .example {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    flex-direction: column;
 
-        .txt {
-            width: 100%;
-            order: 1;
-        }
-        img {
-            order: 0;
-        }
+    .txt {
+      width: 100%;
+      order: 1;
     }
+    img {
+      order: 0;
+    }
+  }
 }
 ul > li.plus:before {
-    font-family: $code-font-family;
-    content: "+";
+  font-family: $code-font-family;
+  content: "+";
 }
 ul > li.neg:before {
-    font-family: $code-font-family;
-    content: "-";
+  font-family: $code-font-family;
+  content: "-";
 }
 ul.talking > li:before {
-    content: "–";
+  content: "–";
 }
 
 .qt-tab {
-    padding-left: 1.2rem;
+  padding-left: 1.2rem;
 }
 
 /*
  * Pretty video embedding
  */
 .video-wrapper {
-    //@extend %media-offset-wrapper;
-    //margin: 1em 0;
+  //@extend %media-offset-wrapper;
+  //margin: 1em 0;
 }
 .video-container {
-    position: relative;
-    padding-bottom: 56.25%;
-    padding-top: 30px;
-    height: 0;
-    overflow: hidden;
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
 }
 
-.video-container iframe, .video-container object, .video-container embed {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+.video-container iframe,
+.video-container object,
+.video-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 table.address-message {
-    font-family: $code-font-family;
-    font-size: 0.71rem;
-    line-height: 1.45;
-    //font-style: italic;
-    .msg-char {
-        padding: 0 0.2em;
-        font-weight: bold;
-    }
+  font-family: $code-font-family;
+  font-size: 0.71rem;
+  line-height: 1.45;
+  //font-style: italic;
+  .msg-char {
+    padding: 0 0.2em;
+    font-weight: bold;
+  }
 }
-
 
 /*
  * Legacy HN
  */
 .hn {
-    font-size: 0.8rem;
-    font-family: Verdana;
-    color: #828282;
-    background-color: #f6f6ef;
-    margin: 1rem;
-    overflow-x: hidden;
-    white-space: nowrap;
+  font-size: 0.8rem;
+  font-family: Verdana;
+  color: #828282;
+  background-color: #f6f6ef;
+  margin: 1rem;
+  overflow-x: hidden;
+  white-space: nowrap;
 
-    a:link {
-        text-shadow: none;
-        background: none;
-        color: #000;
-    }
-    a:visited {
-        color:#828282;
-    }
+  a:link {
+    text-shadow: none;
+    background: none;
+    color: #000;
+  }
+  a:visited {
+    color: #828282;
+  }
 }
 .hn table {
-    font-size: 0.8rem;
-    font-family: Verdana;
-    padding: 0 0 0.2rem 0.4rem;
-    margin: 0;
-    overflow-x: hidden;
-    white-space: nowrap;
+  font-size: 0.8rem;
+  font-family: Verdana;
+  padding: 0 0 0.2rem 0.4rem;
+  margin: 0;
+  overflow-x: hidden;
+  white-space: nowrap;
 
-    th, td {
-        margin: 0;
-        padding: 0;
-    }
-    .title {
-        font-size: 1em;
-    }
-    .comhead {
-        font-size: 0.8em;
-    }
-    .subtext {
-        font-size: 0.7em;
-    }
-    .comhead a:link, .subtext a:link, .subtext a:visited {
-        color:#828282;
-    }
-    .subtext a:hover, .comhead a:hover {
-        text-decoration: underline;
-    }
-    .arrow {
-        font-size: 0.65em;
-        color: #b3b3b3;
-        margin-left: 0.4em;
-        margin-right: 0.3em;
-        position: relative;
-        top: -0.12em;
-        cursor: pointer;
-    }
+  th,
+  td {
+    margin: 0;
+    padding: 0;
+  }
+  .title {
+    font-size: 1em;
+  }
+  .comhead {
+    font-size: 0.8em;
+  }
+  .subtext {
+    font-size: 0.7em;
+  }
+  .comhead a:link,
+  .subtext a:link,
+  .subtext a:visited {
+    color: #828282;
+  }
+  .subtext a:hover,
+  .comhead a:hover {
+    text-decoration: underline;
+  }
+  .arrow {
+    font-size: 0.65em;
+    color: #b3b3b3;
+    margin-left: 0.4em;
+    margin-right: 0.3em;
+    position: relative;
+    top: -0.12em;
+    cursor: pointer;
+  }
 }
 
 .hn .header {
-    font-size: 0.8rem;
-    font-family: Verdana;
-    background-color: #ff6600;
-    margin: 0;
-    padding: 0;
-    margin-bottom: 0.4rem;
-    height: 1.3rem;
-    text-align: left;
+  font-size: 0.8rem;
+  font-family: Verdana;
+  background-color: #ff6600;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 0.4rem;
+  height: 1.3rem;
+  text-align: left;
 
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  .logo a {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
-
-    .logo a {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .logo a img {
-        border: 1px #fff solid;
-        max-width: 20px;
-        max-height: 20px;
-        margin: 0 0.2rem;
-    }
-    .pagetop {
-        font-size: 1em;
-        color:#222222;
-    }
-    .pagetop a:visited {
-        color:#000000;
-    }
-    .hn-title {
-        font-weight: bold;
-        margin-right: 0.8em;
-    }
+  }
+  .logo a img {
+    border: 1px #fff solid;
+    max-width: 20px;
+    max-height: 20px;
+    margin: 0 0.2rem;
+  }
+  .pagetop {
+    font-size: 1em;
+    color: #222222;
+  }
+  .pagetop a:visited {
+    color: #000000;
+  }
+  .hn-title {
+    font-weight: bold;
+    margin-right: 0.8em;
+  }
 }
 
 .fractional-table-ex {
-    @extend %sans-serif-tnum;
-    font-size: 0.95rem;
-    margin: 1em 0 1.2em 0;
+  @extend %sans-serif-tnum;
+  font-size: 0.95rem;
+  margin: 1em 0 1.2em 0;
 
-    .row {
-        width: 100%;
-        display: flex;
-        flex-wrap: nowrap;
-        justify-content: center;
-    }
-    .header {
-        font-weight: bold;
-    }
-    .cell {
-        width: 5em;
-        text-align: center;
-        margin-right: 1.5em;
-    }
+  .row {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+  .header {
+    font-weight: bold;
+  }
+  .cell {
+    width: 5em;
+    text-align: center;
+    margin-right: 1.5em;
+  }
 }
 
 .money-visualization {
-    margin: 1em 0;
+  margin: 1em 0;
 }
 
 .money-visualization .block {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 
-    .title {
-        @extend %sans-serif;
-        font-size: 1rem;
-        width: 100%;
-        text-align: center;
+  .title {
+    @extend %sans-serif;
+    font-size: 1rem;
+    width: 100%;
+    text-align: center;
+  }
+  .wrapper {
+    width: 100%;
+    text-align: center;
+    overflow-x: auto;
+
+    img {
+      margin: 0 auto;
     }
-    .wrapper {
-        width: 100%;
-        text-align: center;
-        overflow-x: auto;
-    }
-    .wrapper.small {
-        margin-top: -0.4rem;
-        margin-bottom: -0.4rem;
-    }
+  }
+  .wrapper.small {
+    margin-top: -0.4rem;
+    margin-bottom: -0.4rem;
+  }
 }
 
 .money-vis-small {
-    background: url(/images/markets/small.png) left top no-repeat;
-    width: 10px;
-    height: 10px;
-    display: inline-block;
+  background: url(/images/markets/small.png) left top no-repeat;
+  width: 10px;
+  height: 10px;
+  display: inline-block;
 }
 .money-vis-big {
-    background: url(/images/markets/big.png) left top no-repeat;
-    width: 12px;
-    height: 12px;
-    display: inline-block;
+  background: url(/images/markets/big.png) left top no-repeat;
+  width: 12px;
+  height: 12px;
+  display: inline-block;
 }
 
 /*
@@ -1077,49 +1090,51 @@ table.address-message {
 */
 
 .hidden-label {
-    @include a-background(#333);
-    cursor: pointer;
+  @include a-background(#333);
+  cursor: pointer;
 }
 .hidden-label:hover {
-    color: $body-link-hover-color;
-    background: none;
-    shadow: none;
+  color: $body-link-hover-color;
+  background: none;
+  shadow: none;
 }
 .hidden-toggle {
-    display: none;
+  display: none;
 }
 .hidden-content {
-    display: none;
-    @extend %sans-serif;
-    font-size: 0.8rem;
+  display: none;
+  @extend %sans-serif;
+  font-size: 0.8rem;
 }
 .hidden-toggle:checked + .hidden-content {
-    display: block;
-    text-align: center;
-    padding-top: 0.2rem;
+  display: block;
+  text-align: center;
+  padding-top: 0.2rem;
 }
 
-.flex-20, .flex-25, .flex-50, .flex-33 {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+.flex-20,
+.flex-25,
+.flex-50,
+.flex-33 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 
-    img {
-        padding: 0.2em;
-    }
+  img {
+    padding: 0.2em;
+  }
 }
 
 .flex-20 img {
-    max-width: 20%;
+  max-width: 20%;
 }
 .flex-25 img {
-    max-width: 25%;
+  max-width: 25%;
 }
 .flex-33 img {
-    max-width: 33%;
+  max-width: 33%;
 }
 .flex-50 img {
-    max-width: 50%;
+  max-width: 50%;
 }
-

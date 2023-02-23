@@ -73,5 +73,13 @@
       (regexp-match #rx"^mailto:" x))))
 
 (define (to-name x)
-  (string-replace (string-downcase x) " " "-"))
+  (regexp-replace #rx"[?%#]"
+                  (string-replace (string-downcase x) " " "-")
+                  ""))
 
+(module+ test
+  (require rackunit)
+  (check-equal? (to-name "What is this?") "what-is-this")
+  (check-equal? (to-name "50%") "50")
+  (check-equal? (to-name "a#b") "ab")
+  )

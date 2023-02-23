@@ -36,7 +36,7 @@
 
 (define (make-subnav sub)
   (if sub
-      `(ul
+      `(ol
         ,@(for/list ([child (in-list sub)])
           `(li ,(make-entry child))))
       ""))
@@ -46,10 +46,23 @@
      (h1 ,(make-entry (node page)))
      ,(make-subnav (children page))))
 
+(define (page-section-toc page)
+  ;`((span ((class "section")) ,(make-entry (node page)))
+    ;,(make-subnav (children page))))
+  `(,(make-entry (node page))
+    ,(make-subnav (children page))))
+
 ;; Make a table of content, used on the homepage or dedicated toc page.
 (define (make-toc content)
-  `(nav ((class "toc"))
-    ,@(map page-toc content)))
+  `(nav ((class "toc") (epub:type "toc"))
+        (hgroup
+          (h1 "Why Cryptocurrencies?")
+          (h2 "What they are, what they do and why they matter")
+          )
+        (ol
+          ,@(map (λ (x)
+                    `(li ,@(page-section-toc x)))
+                 content))))
 
 ;; Locate entry in table of content.
 (define (toc-entry page)

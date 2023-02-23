@@ -4,6 +4,7 @@
 (require racket/match racket/string racket/list)
 (require "string-process.rkt")
 (require "decode.rkt")
+(require "refs.rkt")
 (require racket/pretty)
 
 (provide ndef sn mn note-pos decode-sidenotes clear-sidenotes)
@@ -90,11 +91,14 @@
   def)
 
 (define (mn ref-in #:top [top #f] #:bottom [bottom #f])
-  (define ref (ref-symbol ref-in))
-  (set-marginnote ref)
-  (set-note-top ref top)
-  (set-note-bottom ref bottom)
-  ref)
+  ; Disable marginnotes in epub
+  ; Because we have less control over fonts, enforce sidenote refs on all notes.
+  (sn ref-in #:top top #:bottom bottom))
+  ; (define ref (ref-symbol ref-in))
+  ; (set-marginnote ref)
+  ; (set-note-top ref top)
+  ; (set-note-bottom ref bottom)
+  ; ref)
 
 (define (sn ref-in #:top [top #f] #:bottom [bottom #f])
   (define ref (ref-symbol ref-in))
@@ -182,7 +186,7 @@
              (begin
                (unless (manual-pos? note)
                  (set! notes-after (cons note notes-after)))
-               (append (label note)
+               (append (ref-label note)
                        acc))]
            ;; Explicit note def expansion.
            [note-pos-ref
@@ -282,20 +286,32 @@
   (define pos-ref (ref->pos-ref (note-ref note)))
   (hash-has-key? note-pos-refs pos-ref))
 
-(define (label note)
-  (define sign (note-sign note))
+(define (note-id note)
+  (to-name (format "~a" (note-ref note))))
+
+(define (aside-label note)
+  (define sign (format "~a" (note-sign note)))
   (if (eq? sign 'marginnote)
     `()
-    `((sup ((class "sidenote-number")) ,(format "~a" sign)))))
+    `((sup ((class "sidenote-number")) ,sign))))
+
+(define (ref-label note)
+  (define sign (format "~a" (note-sign note)))
+  (define href (format "#~a"(note-id note)))
+  (if (eq? sign 'marginnote)
+    `()
+    `((a ((epub:type "noteref") (class "sidenote-number") (href ,href)) ,sign))))
 
 (define (expand-sidenote note)
+  (define ref (note-ref note))
+  (define id (note-id note))
   (define def (note-def note))
   (define top (note-top note))
   (define bottom (note-bottom note))
   (when (and top (not (number? top)))
-    (error (format "Not a number: '~a' for sidenote '~a'~n" top (note-ref note))))
+    (error (format "Not a number: '~a' for sidenote '~a'~n" top ref)))
   (when (and bottom (not (number? bottom)))
-    (error (format "Not a number: '~a' for sidenote '~a'~n" bottom (note-ref note))))
+    (error (format "Not a number: '~a' for sidenote '~a'~n" bottom ref)))
 
   (define styles
     (let ((styles `()))
@@ -305,13 +321,16 @@
                                    styles)))
       (string-join styles " ")))
 
-  (define attrs `((class "sidenote")))
-  (when (non-empty-string? styles)
-    (set! attrs (append attrs
-                        `((style ,styles)))))
+  (define attrs `((epub:type "endnote") (class "sidenote") (role "note") (id ,id)))
+  ; Remove bottom and top margins that are used for sidenote positioning.
+  ; If the reader overrides font or font size, then we will get overlap between
+  ; sidenotes. We really don't want that, so let's skip these.
+  ; (when (non-empty-string? styles)
+  ;   (set! attrs (append attrs
+  ;                       `((style ,styles)))))
 
   `(aside ,attrs
-        ,@(label note)
+        ,@(aside-label note)
         ,@def))
 
 ;; A larger test to test the sidenote placement.
@@ -321,7 +340,7 @@
   ;; These tags are called when the chapter is parsed, and references are inserted in-place.
   (define 1st (sn "1st"))
   (define 2nd (sn "2nd"))
-  (define 3rd (sn "3rd"))
+  (define 3rd (mn "3rd")) ; Turn marginnotes into sidenotes
   (define 3rd-pos (note-pos "3rd"))
   (define list-note (sn "list-note"))
 
@@ -341,21 +360,30 @@
   ;; Like including an "ignore" tag to match only against the most important things,
   ;; but that's too much work for me now. Meh.
   (define expected
-    `((p "One."
-         (span ((class "sidenote-label")) "1")
-         " Two." (span ((class "sidenote-label")) "2")
-         " Three." (span ((class "sidenote-label")) "3"))
-      (div ((class "sidenote")) (span ((class "sidenote-number")) "1")
-             "1st")
-      (div ((class "sidenote")) (span ((class "sidenote-number")) "2")
-             "2nd")
-      (ol
-        (li "a" (span ((class "sidenote-label")) "4"))
-        (li "b"))
-      (div ((class "sidenote")) (span ((class "sidenote-number")) "4")
-             "In list.")
-      (div ((class "sidenote")) (span ((class "sidenote-number")) "3")
-             "3rd")))
+  '((p
+      "One."
+      (sup ((class "sidenote-number")) "1")
+      " Two."
+      (sup ((class "sidenote-number")) "2")
+      " Three."
+      (sup ((class "sidenote-number")) "3"))
+    (aside
+      ((class "sidenote") (role "note"))
+      (sup ((class "sidenote-number")) "1")
+      "1st")
+    (aside
+      ((class "sidenote") (role "note"))
+      (sup ((class "sidenote-number")) "2")
+      "2nd")
+    (ol (li "a" (sup ((class "sidenote-number")) "4")) (li "b"))
+    (aside
+      ((class "sidenote") (role "note"))
+      (sup ((class "sidenote-number")) "4")
+      "In list.")
+    (aside
+      ((class "sidenote") (role "note"))
+      (sup ((class "sidenote-number")) "3")
+      "3rd")))
 
   (check-equal? (decode-sidenotes input) expected)
   )

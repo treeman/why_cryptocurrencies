@@ -64,12 +64,14 @@ I must admit I'm also being selfish---writing a book is on my bucket list.
 This book tries to describe what value cryptocurrencies have using several examples. In particular I'll argue that:
 
 ◊ol{
-  ◊li{Cryptocurrencies aren't just scams.◊mn{scams} ◊note-pos{scams}}
+  ◊li{Cryptocurrencies aren't just scams.◊mn{scams}}
   ◊li{It's more than just a speculative asset.}
   ◊li{They do many things better than any alternative.}
   ◊li{There are legal use cases.}
   ◊li{They have valuable use cases.}
 }
+
+◊note-pos{scams}
 
 Of course, everything new brings positive and negative aspects with it. It's up to you to decide where on the global spectrum of good and bad cryptocurrencies lie.
 
@@ -103,8 +105,8 @@ A problem-centric view is great for an engineer or a problem solver, but it also
 
 Instead of putting on blinders and getting stuck at these problems---which I believe can be addressed---we'll focus on the potential cryptocurrencies have. Only with this vantage point can we see if the problems are worth working on, or if we instead should scrap the whole idea.
 
-◊center{
-  ◊strong[#:style "font-size: 1.1rem"]{And of course, none of this is investment advice.}
+◊div[#:class "not-investment"]{
+  And of course, none of this is investment advice.
 }
 
 Well, the only advice I'll give is to understand what you're investing in, and my hope is that this book can help with that.

@@ -40,13 +40,13 @@ First, let's look at some interesting historical examples of items that have bee
     ◊money["Shells"
            #:date "1200 B.C."
            #:img "/images/cowry.png"
-           #:alt "Sea shells."]{
+           #:alt "Sea shells"]{
         Sea shells ◊link[sea-shells]{have been used as money for centuries} and were commonly used in parts of Africa and Asia but also in other parts of the world. In West Africa, they saw ◊link[shell-usage]{significant use until the 20◊sup{th} century}.
     }
     ◊money["Coins in ancient Greece"
            #:date "500 B.C."
            #:img "images/greek_coin.png"
-           #:alt "A greek coin."]{
+           #:alt "A greek coin"]{
         The Greeks ◊link[ancient-greece-coinage]{used coins} made from precious metal like silver, bronze, and gold. They also stamped the coins with beautiful portraits for a truly modern look.
     }
     ◊money["Rai stones"
@@ -58,7 +58,7 @@ First, let's look at some interesting historical examples of items that have bee
     ◊money["A 20kg copper coin"
            #:date "1644"
            #:img "images/20kg_copper.png"
-           #:alt "A 20kg copper coin in a wheelbarrow."]{
+           #:alt "A 20kg copper coin in a wheelbarrow"]{
         Another example of---let's say interesting---form of money is ◊link[largest-coin]{the world's largest coin.} It's a copper coin weighing 20kg, issued in Sweden.
 
         Since copper was worth much less than silver, very large coins had to be made to offset the difference. At that time, coins did contain raw materials according to their value, which isn't the case today.
@@ -66,7 +66,7 @@ First, let's look at some interesting historical examples of items that have bee
     ◊money["A 100 billion mark note"
            #:date "1924"
            #:img "images/german_notes.png"
-           #:alt "A large pyramid of paper money."]{
+           #:alt "A large pyramid of paper money"]{
         Bank notes---paper money---are easy to use but they do have problems of their own. Unless kept in check, by for example ◊link[rel-gold-standard]{the gold standard}, they can be mass produced to cause ◊link[hyperinflation]{hyperinflation}.
 
         ◊link[germany-wallpaper]{This is what happened in Germany} after the first World War. They had massive debts after losing the war, so they tried to print enough money to pay off the debts.◊mn{germany-stories}
@@ -78,13 +78,13 @@ First, let's look at some interesting historical examples of items that have bee
     ◊money["Cigarettes in prison"
            #:date `("20" (sup "th") " century")
            #:img "images/prison_money.png"
-           #:alt "A cigarette."]{
+           #:alt "A cigarette"]{
         Like depicted in the movie Shawshank Redemption cigarettes are used in some prisons ◊link[prison-cigarettes]{as a form of money}. Today, some prisons have started to ban smoking, so they instead use things like ◊link[prison-stamps]{stamps} or ◊link[prison-ramen]{ramen}.
     }
     ◊money["Euro bank notes"
            #:date `("21" (sup "th") " century")
            #:img "images/bank_notes.png"
-           #:alt "Euro bank notes."]{
+           #:alt "Euro bank notes"]{
         There are many kinds of ◊em{fiat currencies},◊mn{fiat-commodity} for example, the Euro. Modern coins aren't made of valuable metal and paper notes are used for large denominations.
 
         ◊note-pos[#:top -6 #:bottom -20]{fiat-commodity}
@@ -92,13 +92,13 @@ First, let's look at some interesting historical examples of items that have bee
     ◊money["Dogecoin"
            #:date "2013"
            #:img "images/doge.png"
-           #:alt "Doge."]{
+           #:alt "Doge"]{
         Dogecoin is a cryptocurrency and while created as a "joke currency" it quickly gained popularity as a tipping tool online. You can still find merchants who accept it today for things like domain names, web hosting, VPNs, or games.
     }
     ◊money["Marbles on the school yard"
            #:date "2017"
            #:img "images/marbles.png"
-           #:alt "Two people playing with marbles."]{
+           #:alt "Two people playing with marbles"]{
         Kids on the school-yard often come up with interesting forms of money. For example, collectible card games or game components. Another example is  marbles used in a Swedish game where you win your opponents marbles. (And those with many marbles had higher status in class.)◊mn{pokemon}
 
         ◊note-pos[#:bottom -20]{pokemon}
@@ -131,7 +131,7 @@ First, let's look at some interesting historical examples of items that have bee
        [else
         ""]))
    `(div ((class "example"))
-      (img ((src ,img) (alt ,alt)))
+      (img ((src ,img) (alt ,alt) (role "presentation")))
       (div ((class "txt"))
         (div ((class "header"))
           (h3 ,title)

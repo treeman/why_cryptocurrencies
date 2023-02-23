@@ -1,0 +1,5 @@
+#!/bin/bash
+
+cd _ebook/
+zip -X0 why_cryptocurrencies.epub mimetype
+zip -Xur9D why_cryptocurrencies.epub *

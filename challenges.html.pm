@@ -97,12 +97,12 @@ Bitcoin, like most cryptocurrencies, uses a public ledger where all transactions
      "https://www.chainalysis.com/"
      "Chainalysis: The Blockchain Analysis Company"))
 
-◊img[#:src "/images/coin-tracing.png" #:alt "Paying someone with allows you to see their funds."]{
+◊img[#:src "/images/coin-tracing.png" #:alt "Image of John's address that has sent 1 BTC to the merchant and 13 BTC to another address."]{
     After the merchant receives a payment from John, the merchant can see that John has sent 13 BTC to another address, out of an initial 40 BTC.
     John appears to be quite rich.
 }
 
-◊img[#:src "/images/coin-tracing2.png" #:alt "You can trace coins back in history."]{
+◊img[#:src "/images/coin-tracing2.png" #:alt "Image of how John's 40 BTC originates from a hacked exchange."]{
     It's possible to trace coins further back in history. Here we see that John's coins come from a hacked exchange, whose address is known. It might mean John is the hacker or, more probably, that John has received ◊em{tainted} coins (coins associated with illegal behavior).
 }
 
@@ -119,7 +119,7 @@ You can explore the Bitcoin blockchain, and see all transactions and addresses, 
 
 In an attempt to make Bitcoin more private "mixing" services such as ◊link[coinjoin]{CoinJoin} can be used. They work by mixing together your coins with the coins of others, in an attempt to obscure where the coins are coming from:
 
-◊img[#:src "/images/coinjoin.png" #:alt "Obfuscation by mixing coins with other addresses."]{
+◊img[#:src "/images/coinjoin.png" #:alt "Image of mixing coins by sending them to and from various addresses."]{
     A mixing service makes several addresses send to each other, in order to obfuscate the history. Although not shown here, because it would be too messy, all addresses and amounts are still visible.
 }
 

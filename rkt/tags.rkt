@@ -98,6 +98,7 @@
     (string=? "/" url)
     (string=? "/feed.xml" url)
     (string=? "/toc.html" url)
+    (string=? "/toc.xhtml" url)
     (regexp-match #rx"^mailto:" url)
     (ch-ref? url)
     (file-ref? url)
@@ -165,12 +166,14 @@
 
 
 (define (subhead x)
+  (define id (to-name x))
   `(h2
-    (a [[name ,(to-name x)]] ,x)))
+    (a [[name ,id] [id ,id]] ,x)))
 
 (define (subhead3 x)
+  (define id (to-name x))
    `(h3
-     (a [[name ,(to-name x)]] ,x)))
+     (a [[name ,id] [id ,id]] ,x)))
 
 (define (li-plus . txt)
    `(li ((class "plus")) ,@txt))
@@ -222,6 +225,19 @@
       `()
       `((class ,(string-join classes)))))
 
+(module+ test
+  (require rackunit)
+  (check-equal? (stable
+                  "Person             Swedish krona" "\n" "Sneaky Steve       7 000 SEK" "\n" "Honest Harry       1 000 SEK")
+                '(div
+                   ((class "centered"))
+                   (table
+                     ()
+                     (thead (tr (th "Person") (th "Swedish krona")))
+                     (tbody
+                       (tr (td "Sneaky Steve") (td "7 000 SEK"))
+                       (tr (td "Honest Harry") (td "1 000 SEK")))))
+                ))
 
 (define (epigraph  . txt)
   `(div ((class "epigraph"))
@@ -352,11 +368,12 @@
 
 (define (img #:src src
              #:alt alt
+             #:decorative [decorative #f]
              #:title [title #f]
              #:class [c #f]
              #:margin [margin #f]
              #:link [link #f] . caption)
-  (define attrs `())
+  (define attrs `((role "group")))
   (when c
     (set! attrs (cons `(class ,c) attrs)))
   (when title
@@ -373,16 +390,33 @@
 
   `(figure
      ,attrs
-     ,(raw-img #:src src #:link link #:alt alt)
+     ,(raw-img #:src src #:link link #:alt alt #:decorative decorative)
      ,figcaption))
 
-(define (raw-img #:src src #:link [link #f] #:alt alt)
+(define (raw-img #:src src #:link [link #f] #:alt alt #:decorative [decorative #f])
+  (define attrs `((src ,(~a src)) (alt ,alt)))
+  (when decorative
+    (set! attrs (cons `(role "presentation") attrs)))
   (define img
-     `(img ((src ,(~a src)) (alt ,alt))))
-  (if link
-      `(a ((href ,src) (target "_blank") (class "img-wrapper"))
-          ,img)
-      img))
+     `(img ,attrs))
+  img)
+  ; Image links not supported in ebooks?
+  ; (if link
+  ;     `(a ((href ,src) (target "_blank") (class "img-wrapper"))
+  ;         ,img)
+  ;     img))
+
+(module+ test
+  (require rackunit)
+  (check-equal? (raw-img #:src "/src.png" #:alt "alt")
+                `(img ((src "/src.png") (alt "alt"))))
+  (check-equal? (raw-img #:src "/src.png" #:alt "alt" #:decorative #t)
+                `(img ((role "presentation") (src "/src.png") (alt "alt"))))
+
+  (check-equal? (img #:src "/src.png" #:alt "alt" #:decorative #t)
+                `(figure ((role "group"))
+                         (img ((role "presentation") (src "/src.png") (alt "alt")))
+                         (figcaption))))
 
 ;; FIXME rename to figcaption
 (define (decoded-figcaption . args)

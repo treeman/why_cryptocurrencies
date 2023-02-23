@@ -55,9 +55,9 @@ Let's travel back in time and look at the site ◊link[hn]{Hacker News}, a tech 
     Interestingly enough Hacker News is full of people extremely skeptical of cryptocurrencies, who often comment that cryptocurrencies don't have a single legal use-case. This skepticism and misunderstanding, even from highly technical people, was one of the reasons I started writing this book.
 }
 
-◊hn-html{
-    The top three stories on ◊link[hn-wayback-ref]{Hacker News on Mars 1st, 2011} according to the Wayback Machine.  
-    I tried to reproduce the site appearance, but it's not pixel perfect.
+◊img[#:src "images/hn-html.png"
+     #:alt "Hacker News on Mars 1st, 2011. Any news of Bitcoin is absent."]{
+    The top three stories on ◊link[hn-wayback-ref]{Hacker News on Mars 1st, 2011} according to the Wayback Machine.
 }
 
 As long as we can trust the Wayback Machine (and I do consider them generally trustworthy) we can be fairly sure this is correct. Letting a trusted party like the Wayback Machine handle timestamping, called ◊def[trusted-timestamping]{trusted timestamping}, is a solved problem with different kinds of standards but---as the name implies---there's always the caveat of requiring a trusted party to verify the timestamps.
@@ -305,7 +305,7 @@ Let's now encode and timestamp it using the Bitcoin Cash blockchain:
 
         ◊img[#:src "images/electroncash-opreturn.png"
              #:title "Electron Cash custom OP_RETURN"
-             #:alt "Electron Cash custom OP_RETURN."]{
+             #:alt "Electron Cash OP_RETURN figure"]{
           Custom OP_RETURN using ◊link[electroncash]{Electron Cash}.
         }
 
