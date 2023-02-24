@@ -19,10 +19,17 @@
 ◊(define side-space? (not (select-from-metas 'no-side-space here)))
 ◊(define section-chapters-headers? (not (select-from-metas 'no-section-chapters-header here)))
 ◊(define article-class
+   ; This used to be on <article> but is now on main. Meh.
    (let ((extra (select-from-metas 'extra-article-class here)))
      (if extra
          (string-append "chapter " extra)
          "chapter")))
+◊(define article-type
+  (let ((type (select-from-metas 'article-type here)))
+    (if type
+      type
+      "chapter")))
+
 ◊(define prev-page
    (let ((p (previous here)))
      (if (equal? p 'index.html)
@@ -63,10 +70,10 @@
             ◊(ref parent-page parent-title parent-title)
           }
         </nav>
-        <article>
+        <article epub:type="◊|article-type|">
           <header>
-            <h1>◊|title|</h1>
-            <h2>◊|subtitle|</h2>
+            <h1 epub:type="title">◊|title|</h1>
+            <h2 epub:type="subtitle">◊|subtitle|</h2>
           </header>
 
           ◊(->html doc #:splice? #t)
@@ -77,19 +84,6 @@
       </main>
 
       ◊(when side-space? (->html `(div ((class "side-space")))))
-
-      <nav class="edge-wrapper">
-        ◊when/splice[prev-page]{
-          <a class="prev-pan" href="/◊(symbol->string prev-page)" title="◊|prev-title|">
-            <span class="content"> ‹ </span>
-          </a>
-        }
-        ◊when/splice[next-page]{
-          <a class="next-pan" href="/◊(symbol->string next-page)" title="◊|next-title|">
-            <span class="content"> › </span>
-          </a>
-        }
-      </nav>
 
       <footer>
         <nav class="movenav">

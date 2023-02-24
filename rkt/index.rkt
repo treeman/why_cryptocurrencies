@@ -55,9 +55,9 @@
 ;; Make a table of content, used on the homepage or dedicated toc page.
 (define (make-toc content)
   `(nav ((class "toc") (epub:type "toc"))
-        (hgroup
-          (h1 "Why Cryptocurrencies?")
-          (h2 "What they are, what they do and why they matter")
+        (hgroup ((epub:type "covertitle"))
+          (h1 ((epub:type "title")) "Why Cryptocurrencies?")
+          (h2 ((epub:type "subtitle")) "What they are, what they do and why they matter")
           )
         (ol
           ,@(map (λ (x)

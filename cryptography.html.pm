@@ -6,6 +6,7 @@
 ◊(define-meta updated "2021-05-07T19:11:00+01:00")
 ◊(define-meta uuid "6a8759d6-2e0c-4224-b0b8-61009c5484d0")
 ◊(define-meta template "chapter.html")
+◊(define-meta article-type "appendix")
 
 ◊(clear-sidenotes)
 
