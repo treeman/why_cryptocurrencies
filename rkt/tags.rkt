@@ -240,7 +240,7 @@
                 ))
 
 (define (epigraph  . txt)
-  `(div ((class "epigraph"))
+  `(div ((class "epigraph") (epub:type "epigraph"))
        ,@txt))
 
 (define (qt #:author [author #f]
