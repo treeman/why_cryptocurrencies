@@ -26,7 +26,8 @@ short_commit = subprocess.run(['git', 'rev-parse', '--short', 'HEAD'],
                               stdout=subprocess.PIPE).stdout.decode('utf-8')
 
 toc = [
-    "acknowledgements.html",
+    # Moved out of TOC
+    #"acknowledgements.html",
     "about_the_book.html",
     "eli5.html",
     "what_is_a_cryptocurrency.html",

@@ -5,8 +5,7 @@
 (define toc
   ;; This replaces the previously hand-made pagetree in index.ptree.
   ;; String entries gets removed and are treated as planned chapters.
-  `(acknowledgements.html
-    about_the_book.html
+  `(about_the_book.html
     eli5.html
     (what_is_a_cryptocurrency.html
      properties_of_a_cryptocurrency.html

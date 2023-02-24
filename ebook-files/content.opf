@@ -23,6 +23,7 @@
         <item id="coverpage" href="cover_page.xhtml" media-type="application/xhtml+xml" />
         <item id="titlepage" href="title_page.xhtml" media-type="application/xhtml+xml" />
         <item id="dedication" href="dedication.xhtml" media-type="application/xhtml+xml" />
+        <item id="acknowledgements" href="acknowledgements.xhtml" media-type="application/xhtml+xml" />
         <item id="toc" properties="nav" href="toc.xhtml" media-type="application/xhtml+xml" />
         ◊MANIFEST_POSTS_TAG
         ◊MANIFEST_IMG_TAG
@@ -47,6 +48,7 @@
         <itemref idref="coverpage" />
         <itemref idref="titlepage" linear="yes" properties="page-spread-left"/>
         <itemref idref="dedication" linear="yes" properties="page-spread-right"/>
+        <itemref idref="acknowledgements" linear="yes" properties="page-spread-right"/>
         <itemref idref="toc"  properties="page-spread-right"/>
         ◊SPINE_TOC
     </spine>
