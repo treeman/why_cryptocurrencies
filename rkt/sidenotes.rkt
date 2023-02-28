@@ -372,34 +372,40 @@
   ;; Like including an "ignore" tag to match only against the most important things,
   ;; but that's too much work for me now. Meh.
   (define expected
-  '((p
-      "One."
-      (sup ((class "sidenote-number")) "1")
-      " Two."
-      (sup ((class "sidenote-number")) "2")
-      " Three."
-      (sup ((class "sidenote-number")) "3"))
-      " Four."
-    (aside
-      ((class "sidenote") (role "note"))
-      "4th")
-    (aside
-      ((class "sidenote") (role "note"))
-      (sup ((class "sidenote-number")) "1")
-      "1st")
-    (aside
-      ((class "sidenote") (role "note"))
-      (sup ((class "sidenote-number")) "2")
-      "2nd")
-    (ol (li "a" (sup ((class "sidenote-number")) "4")) (li "b"))
-    (aside
-      ((class "sidenote") (role "note"))
-      (sup ((class "sidenote-number")) "4")
-      "In list.")
-    (aside
-      ((class "sidenote") (role "note"))
-      (sup ((class "sidenote-number")) "3")
-      "3rd")))
+    '((p
+        "One."
+        (a ((epub:type "noteref") (class "sidenote-number") (href "#nd-1st")) "1")
+        " Two."
+        (a ((epub:type "noteref") (class "sidenote-number") (href "#nd-2nd")) "2")
+        " Three."
+        (a ((epub:type "noteref") (class "sidenote-number") (href "#nd-3rd")) "3")
+        " Four.")
+      (aside
+        ((epub:type "endnote") (class "sidenote") (role "note") (id "nd-4th"))
+        "Margin")
+      (aside
+        ((epub:type "endnote") (class "sidenote") (role "note") (id "nd-1st"))
+        (sup ((class "sidenote-number")) "1")
+        "1st")
+      (aside
+        ((epub:type "endnote") (class "sidenote") (role "note") (id "nd-2nd"))
+        (sup ((class "sidenote-number")) "2")
+        "2nd")
+      (ol
+        (li
+          "a"
+          (a
+            ((epub:type "noteref") (class "sidenote-number") (href "#nd-list-note"))
+            "4"))
+        (li "b"))
+      (aside
+        ((epub:type "endnote") (class "sidenote") (role "note") (id "nd-list-note"))
+        (sup ((class "sidenote-number")) "4")
+        "In list.")
+      (aside
+        ((epub:type "endnote") (class "sidenote") (role "note") (id "nd-3rd"))
+        (sup ((class "sidenote-number")) "3")
+        "3rd")))
 
   (check-equal? (decode-sidenotes input) expected)
   )
