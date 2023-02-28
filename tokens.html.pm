@@ -165,15 +165,15 @@ I think visualizations can help us compare large amounts like these, so here's o
 
 ◊div[#:class "money-visualization"]{
 
-    ◊(small-img "Jeff Bezos" "/images/markets/small.png")◊mn[#:top -3]{bezos}
+    ◊(small-img "Jeff Bezos" "/images/markets/small.png")◊mn2[#:top -3]{bezos}
 
-    ◊(market-img "Gold" "/images/markets/gold.png")◊mn[#:top -4]{gold}
+    ◊(market-img "Gold" "/images/markets/gold.png")◊mn2[#:top -4]{gold}
 
-    ◊(market-img "Money" "/images/markets/money.png")◊mn[#:top -5]{money}
+    ◊(market-img "Money" "/images/markets/money.png")◊mn2[#:top -5]{money}
 
-    ◊(market-img "Derivatives" "/images/markets/derivatives.png")◊mn[#:top -22]{derivatives}
+    ◊(market-img "Derivatives" "/images/markets/derivatives.png")◊mn2[#:top -22]{derivatives}
 
-    ◊(small-img "Bitcoin" "/images/markets/small.png")◊mn[#:top -5]{bitcoin}
+    ◊(small-img "Bitcoin" "/images/markets/small.png")◊mn2[#:top -5]{bitcoin}
 }
 
 ◊ndef["bezos"]{

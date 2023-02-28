@@ -7,7 +7,7 @@
 (require "refs.rkt")
 (require racket/pretty)
 
-(provide ndef sn mn note-pos decode-sidenotes clear-sidenotes)
+(provide ndef sn mn mn2 note-pos decode-sidenotes clear-sidenotes)
 
 (define (ref-symbol ref-in)
   (string->symbol (format "nd-~a" ref-in)))
@@ -99,6 +99,14 @@
   ; (set-note-top ref top)
   ; (set-note-bottom ref bottom)
   ; ref)
+
+(define (mn2 ref-in #:top [top #f] #:bottom [bottom #f])
+  ; Actually, in some rare cases we should use marginnotes
+  (define ref (ref-symbol ref-in))
+  (set-marginnote ref)
+  (set-note-top ref top)
+  (set-note-bottom ref bottom)
+  ref)
 
 (define (sn ref-in #:top [top #f] #:bottom [bottom #f])
   (define ref (ref-symbol ref-in))
@@ -290,17 +298,19 @@
   (to-name (format "~a" (note-ref note))))
 
 (define (aside-label note)
-  (define sign (format "~a" (note-sign note)))
+  (define sign (note-sign note))
   (if (eq? sign 'marginnote)
     `()
-    `((sup ((class "sidenote-number")) ,sign))))
+    `((sup ((class "sidenote-number")) ,(format "~a" sign)))))
 
 (define (ref-label note)
-  (define sign (format "~a" (note-sign note)))
-  (define href (format "#~a"(note-id note)))
+  (define sign (note-sign note))
   (if (eq? sign 'marginnote)
     `()
-    `((a ((epub:type "noteref") (class "sidenote-number") (href ,href)) ,sign))))
+    `((a ((epub:type "noteref")
+          (class "sidenote-number")
+          (href ,(format "#~a"(note-id note))))
+         ,(format "~a" sign)))))
 
 (define (expand-sidenote note)
   (define ref (note-ref note))
@@ -343,14 +353,16 @@
   (define 3rd (mn "3rd")) ; Turn marginnotes into sidenotes
   (define 3rd-pos (note-pos "3rd"))
   (define list-note (sn "list-note"))
+  (define 4th (mn2 "4th"))
 
   (ndef "1st" "1st")
   (ndef "2nd" "2nd")
   (ndef "3rd" "3rd")
   (ndef "list-note" "In list.")
+  (ndef "4th" "Margin")
 
   (define input
-    `((p "One." ,1st " Two." ,2nd " Three." ,3rd)
+    `((p "One." ,1st " Two." ,2nd " Three." ,3rd " Four." ,4th)
       (ol
         (li "a" ,list-note)
         (li "b"))
@@ -367,6 +379,10 @@
       (sup ((class "sidenote-number")) "2")
       " Three."
       (sup ((class "sidenote-number")) "3"))
+      " Four."
+    (aside
+      ((class "sidenote") (role "note"))
+      "4th")
     (aside
       ((class "sidenote") (role "note"))
       (sup ((class "sidenote-number")) "1")
