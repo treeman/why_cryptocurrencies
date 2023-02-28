@@ -333,7 +333,8 @@ cite.book {
   @extend %sans-serif;
   font-size: 0.8rem !important;
 }
-.sidenote img {
+.sidenote img,
+.sidenote .svg-img {
   max-width: 100%;
 }
 .sidenote .sidenote-number {
@@ -361,7 +362,8 @@ a.sidenote-number {
     display: block;
     margin: 1em 4em 1.4em 4em !important;
 
-    img {
+    img,
+    .svg-img {
       display: block;
       margin: 0 auto;
     }
@@ -460,7 +462,8 @@ figure {
   margin-bottom: 1rem;
   text-align: center;
 
-  img {
+  img,
+  .svg-img {
     max-width: 100%;
     margin: 0 auto;
   }
@@ -470,7 +473,8 @@ figure {
   }
 }
 figure.fullwidth {
-  img {
+  img,
+  .svg-img {
     width: 100%;
   }
 }

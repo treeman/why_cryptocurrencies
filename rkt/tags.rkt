@@ -6,7 +6,9 @@
 (require racket/match racket/string racket/list)
 (require racket/format)
 (require racket/runtime-path)
+(require racket/path)
 (require racket/port)
+(require racket/file)
 (require libuuid)
 (require "decode.rkt")
 (require "links.rkt")
@@ -394,17 +396,29 @@
      ,figcaption))
 
 (define (raw-img #:src src #:link [link #f] #:alt alt #:decorative [decorative #f])
+  (if (path-has-extension? src #".svg")
+    (svg-img #:src src #:alt alt #:decorative decorative)
+    (regular-img #:src src #:alt alt #:decorative decorative)))
+
+(define (svg-img #:src src #:alt alt #:decorative decorative)
+  (define content (file->lines src))
+
+  (define fallback-src
+    (let ((path (path-only src))
+          (filename (path-replace-extension (file-name-from-path src) "")))
+        (build-path path (path-add-extension filename "-fallback.png"))))
+
+  `(object
+     ((data ,src)
+      (type "image/svg+xml")
+      (class "svg-img"))
+     ,(regular-img #:src fallback-src #:alt alt #:decorative decorative)))
+
+(define (regular-img #:src src #:alt alt #:decorative decorative)
   (define attrs `((src ,(~a src)) (alt ,alt)))
   (when decorative
     (set! attrs (cons `(role "presentation") attrs)))
-  (define img
-     `(img ,attrs))
-  img)
-  ; Image links not supported in ebooks?
-  ; (if link
-  ;     `(a ((href ,src) (target "_blank") (class "img-wrapper"))
-  ;         ,img)
-  ;     img))
+  `(img ,attrs))
 
 (module+ test
   (require rackunit)
@@ -416,7 +430,13 @@
   (check-equal? (img #:src "/src.png" #:alt "alt" #:decorative #t)
                 `(figure ((role "group"))
                          (img ((role "presentation") (src "/src.png") (alt "alt")))
-                         (figcaption))))
+                         (figcaption)))
+  (check-equal? (raw-img #:src "../images/btc-valuation.svg" #:alt "alt")
+                `(object ((data "../images/btc-valuation.svg")
+                          (type "image/svg+xml")
+                          (class "svg-img"))
+                         (img ((src "../images/btc-valuation-fallback.png") (alt "alt")))))
+  )
 
 ;; FIXME rename to figcaption
 (define (decoded-figcaption . args)
