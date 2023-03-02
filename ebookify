@@ -10,6 +10,8 @@ import datetime
 # See
 # http://www.jedisaber.com/eBooks/Tutorial.shtml
 
+uid = "urn:isbn:978-91-986762-1-1"
+
 now = datetime.datetime.now()
 
 dirname = os.path.dirname(__file__)
@@ -127,10 +129,8 @@ def main():
 
     setup_content_opf()
     setup_toc_ncx()
+    setup_encryption()
     setup_css()
-
-    # FIXME Fonts:
-    # https://www.oreilly.com/library/view/epub-3-best/9781449329129/ch04.html
 
     setup_post_replacements()
     setup_posts()
@@ -210,7 +210,10 @@ def setup_fonts():
     subprocess.run(f"mkdir -p {font_dir}", shell=True)
     for src in glob.glob("fonts/*.woff*"):
         dst = os.path.join(oebps_dir, src)
-        subprocess.run(f"cp {src} {dst}", shell=True)
+        subprocess.run(
+            f"epub-font-obfuscator --id {uid} --input {src} --output {dst}",
+            shell=True)
+        # subprocess.run(f"cp {src} {dst}", shell=True)
 
         fonts.append(src)
 
@@ -317,6 +320,28 @@ def setup_toc_ncx():
         f.write(data)
 
 
+def font_encryption_descr(font):
+    return f"""<EncryptedData xmlns="http://www.w3.org/2001/04/xmlenc#">
+        <EncryptionMethod Algorithm="http://www.idpf.org/2008/embedding"/>
+        <CipherData>
+             <CipherReference URI="OEBPS/{font}"/> 
+        </CipherData>
+    </EncryptedData>"""
+
+
+def setup_encryption():
+    with open(f"{ebook_files_dir}/encryption.xml", 'r') as f:
+        data = f.read()
+
+    font_encryption = ('\n' + ' ' * 4).join(
+        [font_encryption_descr(font) for font in fonts])
+
+    data = data.replace("◊FONTS_TAG", font_encryption)
+
+    with open(f"{meta_dir}/encryption.xml", 'w') as f:
+        f.write(data)
+
+
 def setup_css():
     subprocess.run(f"mkdir -p {css_dir}", shell=True)
     subprocess.run(
@@ -379,7 +404,12 @@ def replace_post_data(data):
     # Use relative links to internal things, not absolute links
     data = data.replace('href="/', 'href="')
     data = data.replace('src="/', 'src="')
-    data = data.replace("◊SHORT_COMMIT", short_commit)
+    data = data.replace(
+        "◊SHORT_COMMIT", short_commit)
+    # Can be used for debug purposes
+    # data = data.replace(
+    #     "◊SHORT_COMMIT", short_commit + ' ' +
+    #     datetime.datetime.now().strftime("%Y-%m-%dT%H:%M:%SZ"))
 
     return data
 
