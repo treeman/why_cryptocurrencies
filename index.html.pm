@@ -72,7 +72,7 @@
     ◊nav[#:class "buttons"]{
       ◊link[amazon.com-print]{Order from Amazon}
       ◊span[#:class "spanner"]{
-        ◊link[book-depository-print]{Book Depository}
+        ◊link[booksplease-print]{Books Please}
         ◊link[barnes-and-nobles-print]{Barnes & Nobles}
       }
       ◊link[pdf-sample]{Download Sample PDF}
@@ -299,6 +299,12 @@
     #f
     "https://www.bookdepository.com/Why-Cryptocurrencies-Jonas-Hietala/9789198676204"
     "'Why Cryptocurrencies?' on Book Depository"))
+◊(define booksplease-print
+  (x-ref
+   #f
+   "https://booksplea.se/index.php?route=product/product&product_id=2810004"
+    "'Why Cryptocurrencies?' on Books Please"))
+
 ◊(define barnes-and-nobles-print
   (x-ref
     #f
