@@ -10,12 +10,11 @@
 (define description "An explanation on why cryptocurrencies were created, what they do differently and why they matter. Instead of focusing on the speculative side, we focus on actual use cases of cryptocurrencies and what they can do for us.")
 
 (define subscription-form
-    `(form ((action "https://volleyy.com/s/470eafb/")
-            (method "post")
+  `(form ((action "https://buy.whycryptocurrencies.com/mail/signup")
+            (method "POST")
             (target "_blank")
             (class "subscribe"))
         (input ((placeholder "Enter your email to join the mailing list")
-                (id "_vly-email")
                 (class "email")
                 (value "")
                 (type "email")
