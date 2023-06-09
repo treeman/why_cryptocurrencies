@@ -89,11 +89,10 @@
 
   ◊book-type["ebook" "eBook"]{
     ◊nav[#:class "buttons"]{
-      ◊|coming-soon|
-      ◊;◊link["#"]{
-        ◊;Buy directly from me with crypto
-        ◊;◊span[#:class "small-emph"]{Pay what you want!}
-      ◊;}
+      ◊link[buy-ebook]{
+        Buy directly from me with crypto
+        ◊span[#:class "small-emph"]{Pay what you want!}
+      }
       ◊;◊span[#:class "spanner"]{
         ◊;◊link["#"]{Kindle ◊span[#:class "small-where"]{Amazon}}
         ◊;◊link["#"]{EPUB ◊span[#:class "small-where"]{Smashwords}}
@@ -112,11 +111,10 @@
   }
   ◊book-type["pdf" "PDF"]{
     ◊nav[#:class "buttons"]{
-      ◊|coming-soon|
-      ◊;◊link["#"]{
-        ◊;Buy directly from me with crypto
-        ◊;◊span[#:class "small-emph"]{Pay what you want!}
-      ◊;}
+      ◊link[buy-ebook]{
+        Buy directly from me with crypto
+        ◊span[#:class "small-emph"]{Pay what you want!}
+      }
       ◊;◊li{Buy from X}
       ◊;◊link[pdf-sample]{Download Sample Chapter}
     }
@@ -289,6 +287,9 @@
 ◊(define pdf-sample
   `("/files/why_cryptocurrencies_sample.pdf"
     "'Why Cryptocurrencies?' sample PDF"))
+◊(define buy-ebook
+  `("https://buy.whycryptocurrencies.com/"
+    "'Why Cryptocurrencies?': Buy ebook + PDF"))
 ◊(define amazon.com-print
   (x-ref
     #f
