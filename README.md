@@ -9,4 +9,5 @@ Made with [Pollen][].
 # Dependencies
 
 1. raco: pollen, libuuid, gregor-lib
-2. sassc, inotify-tools
+2. binaries: sassc, inotify-tools
+3. python lib: pygments

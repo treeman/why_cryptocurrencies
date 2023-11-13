@@ -89,10 +89,11 @@
 
   ◊book-type["ebook" "eBook"]{
     ◊nav[#:class "buttons"]{
-      ◊link[buy-ebook]{
-        Buy directly from me with crypto
-        ◊span[#:class "small-emph"]{Pay what you want!}
-      }
+      ◊|coming-soon|
+      ◊;◊link[buy-ebook]{
+        ◊;Buy directly from me with crypto
+        ◊;◊span[#:class "small-emph"]{Pay what you want!}
+      ◊;}
       ◊;◊span[#:class "spanner"]{
         ◊;◊link["#"]{Kindle ◊span[#:class "small-where"]{Amazon}}
         ◊;◊link["#"]{EPUB ◊span[#:class "small-where"]{Smashwords}}
@@ -111,10 +112,11 @@
   }
   ◊book-type["pdf" "PDF"]{
     ◊nav[#:class "buttons"]{
-      ◊link[buy-ebook]{
-        Buy directly from me with crypto
-        ◊span[#:class "small-emph"]{Pay what you want!}
-      }
+      ◊|coming-soon|
+      ◊;◊link[buy-ebook]{
+        ◊;Buy directly from me with crypto
+        ◊;◊span[#:class "small-emph"]{Pay what you want!}
+      ◊;}
       ◊;◊li{Buy from X}
       ◊;◊link[pdf-sample]{Download Sample Chapter}
     }
