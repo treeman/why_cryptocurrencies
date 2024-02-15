@@ -76,7 +76,6 @@
         ◊link[barnes-and-nobles-print]{Barnes & Nobles}
       }
       ◊link[pdf-sample]{Download Sample PDF}
-      ◊;◊|coming-soon|
     }
 
     ◊ul[#:class "features"]{
@@ -89,20 +88,9 @@
 
   ◊book-type["ebook" "eBook"]{
     ◊nav[#:class "buttons"]{
-      ◊|coming-soon|
-      ◊;◊link[buy-ebook]{
-        ◊;Buy directly from me with crypto
-        ◊;◊span[#:class "small-emph"]{Pay what you want!}
-      ◊;}
-      ◊;◊span[#:class "spanner"]{
-        ◊;◊link["#"]{Kindle ◊span[#:class "small-where"]{Amazon}}
-        ◊;◊link["#"]{EPUB ◊span[#:class "small-where"]{Smashwords}}
-      ◊;}
-      ◊;◊span[#:class "spanner"]{
-        ◊;◊link["#"]{iBooks ◊span[#:class "small-where"]{Apple}}
-        ◊;◊link["#"]{Play Books ◊span[#:class "small-where"]{Google}}
-      ◊;}
-      ◊;◊link["#"]{Download Sample Chapter}
+      ◊link[buy-ebook]{
+        Download for free
+      }
     }
 
     ◊ul[#:class "features"]{
@@ -112,13 +100,9 @@
   }
   ◊book-type["pdf" "PDF"]{
     ◊nav[#:class "buttons"]{
-      ◊|coming-soon|
-      ◊;◊link[buy-ebook]{
-        ◊;Buy directly from me with crypto
-        ◊;◊span[#:class "small-emph"]{Pay what you want!}
-      ◊;}
-      ◊;◊li{Buy from X}
-      ◊;◊link[pdf-sample]{Download Sample Chapter}
+      ◊link[buy-ebook]{
+        Download for free
+      }
     }
 
     ◊ul[#:class "features"]{
@@ -221,7 +205,7 @@
     }
 
     ◊faq["How can I buy the printed version with crypto?"]{
-      Unfortunately I haven't found a way for you to buy it with crypto directly. What you can do is buy Amazon gift cards with crypto and use them to buy the book from Amazon. I've used ◊link[keys4coins]{Keys4Coins} and ◊link[coinsbee]{Coinsbee}, but there are many other alternatives. ◊link[purse]{Purse.io} is another service I've used before.
+      Unfortunately I haven't found a way for you to buy it with crypto directly. Send me an email and we can work it out: ◊(link mailto email)
     }
 
     ◊faq["What about DRM?"]{
@@ -290,8 +274,8 @@
   `("/files/why_cryptocurrencies_sample.pdf"
     "'Why Cryptocurrencies?' sample PDF"))
 ◊(define buy-ebook
-  `("https://buy.whycryptocurrencies.com/"
-    "'Why Cryptocurrencies?': Buy ebook + PDF"))
+  `("https://buy.whycryptocurrencies.com/download"
+    "'Why Cryptocurrencies?': eBook + PDF"))
 ◊(define amazon.com-print
   (x-ref
     #f
