@@ -305,7 +305,7 @@
                                    styles)))
       (string-join styles " ")))
 
-  (define attrs `((class "sidenote")))
+  (define attrs `((class "sidenote") (role "note")))
   (when (non-empty-string? styles)
     (set! attrs (append attrs
                         `((style ,styles)))))
@@ -341,21 +341,30 @@
   ;; Like including an "ignore" tag to match only against the most important things,
   ;; but that's too much work for me now. Meh.
   (define expected
-    `((p "One."
-         (span ((class "sidenote-label")) "1")
-         " Two." (span ((class "sidenote-label")) "2")
-         " Three." (span ((class "sidenote-label")) "3"))
-      (div ((class "sidenote")) (span ((class "sidenote-number")) "1")
-             "1st")
-      (div ((class "sidenote")) (span ((class "sidenote-number")) "2")
-             "2nd")
-      (ol
-        (li "a" (span ((class "sidenote-label")) "4"))
-        (li "b"))
-      (div ((class "sidenote")) (span ((class "sidenote-number")) "4")
-             "In list.")
-      (div ((class "sidenote")) (span ((class "sidenote-number")) "3")
-             "3rd")))
+  '((p
+      "One."
+      (sup ((class "sidenote-number")) "1")
+      " Two."
+      (sup ((class "sidenote-number")) "2")
+      " Three."
+      (sup ((class "sidenote-number")) "3"))
+    (aside
+      ((class "sidenote") (role "note"))
+      (sup ((class "sidenote-number")) "1")
+      "1st")
+    (aside
+      ((class "sidenote") (role "note"))
+      (sup ((class "sidenote-number")) "2")
+      "2nd")
+    (ol (li "a" (sup ((class "sidenote-number")) "4")) (li "b"))
+    (aside
+      ((class "sidenote") (role "note"))
+      (sup ((class "sidenote-number")) "4")
+      "In list.")
+    (aside
+      ((class "sidenote") (role "note"))
+      (sup ((class "sidenote-number")) "3")
+      "3rd")))
 
   (check-equal? (decode-sidenotes input) expected)
   )

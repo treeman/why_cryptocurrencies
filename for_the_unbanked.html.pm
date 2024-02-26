@@ -44,7 +44,7 @@ There are ◊strong{◊link[findex-report]{1.7 billion adults}} without a bank a
 ◊; #df65b0  36-60
 ◊; #dd1c77  61-80
 ◊; #980043  81-100
-◊img[#:src "images/unbanked-map.png" #:class "fullwidth" #:link #t #:alt "Adults without a bank account, 2017."]{
+◊img[#:src "images/unbanked-map.png" #:class "fullwidth" #:link #t #:alt "A world map showing the fraction of adults without a bank account in each country, 2017."]{
     Adults without a bank account, 2017.
     Source ◊link[findex-report]{Global Findex database}.
 }
@@ -63,7 +63,7 @@ Another way to look at the world is to visualize the raw number of unbanked in e
 ◊;#43a2ca   50 - 100 mil
 ◊;          100 - 150 mil (no country!)
 ◊;#0868ac   > 150 mil
-◊img[#:src "images/unbanked-count-map.png" #:class "fullwidth" #:link #t #:alt "The number of adults without a bank account, 2017."]{
+◊img[#:src "images/unbanked-count-map.png" #:class "fullwidth" #:link #t #:alt "A world map showing the number of adults without a bank account in each country, 2017."]{
     The number of adults without a bank account, 2017.
     Source ◊link[findex-report]{Global Findex database} (◊link[findex-interactive]{interactive}).
 }
@@ -81,7 +81,7 @@ The ◊link[findex-report]{Global Findex database} also tried to examine why peo
     If this is interesting to you I suggest you ◊link[findex-report]{give the report a read}. There are tons of different statistics and I only refer to a fraction of the data available.
 }
 
-◊img[#:src "images/why-unbanked.svg" #:link #t #:alt "Reported reason for adults not having a bank account, 2017."]{
+◊img[#:src "images/why-unbanked.svg" #:link #t #:alt "Reported reasons table."]{
     Reported reason for adults not having a bank account, 2017. More than one reason could be given.
     Source ◊link[findex-report]{Global Findex database}.
 }

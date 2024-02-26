@@ -35,20 +35,36 @@ $gb-lm-light-orange: #af3a03;
 $gb-lm-light-gray: #7c6f64;
 
 .highlight {
-    margin: 1rem 0;
-    border-top: 1px dashed $body-hr-color;
-    border-bottom: 1px dashed $body-hr-color;
+  margin: 1rem 0;
+  border-top: 1px dashed $body-hr-color;
+  border-bottom: 1px dashed $body-hr-color;
 
-    > pre {
-        padding: 0 0.6em;
-        margin: 1em 0;
-    }
+  > pre {
+    padding: 0 0.6em;
+    margin: 1em 0;
+  }
 
-    // Builtin
-    .nb { color: $gb-lm-light-orange; }
-    //  Strings
-    .s, .s1, .s2, .sb, .sc, .sd, .sh { color: $gb-lm-light-green}
-    // Keywords
-    .k, .kc, .kd, .kn, .kp, .kr { color: $gb-lm-light-blue; }
+  // Builtin
+  .nb {
+    color: $gb-lm-light-orange;
+  }
+  //  Strings
+  .s,
+  .s1,
+  .s2,
+  .sb,
+  .sc,
+  .sd,
+  .sh {
+    color: $gb-lm-light-green;
+  }
+  // Keywords
+  .k,
+  .kc,
+  .kd,
+  .kn,
+  .kp,
+  .kr {
+    color: $gb-lm-light-blue;
+  }
 }
-

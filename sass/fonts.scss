@@ -1,126 +1,130 @@
-$century-supra: 'century_supra_a';
+$century-supra: "century_supra_a";
 @font-face {
-    font-family: $century-supra;
-    font-style: normal;
-    font-weight: normal;
-    font-stretch: normal;
-    font-display: auto;
-    src: url('/fonts/century_supra_a_regular.woff2') format('woff2');
+  font-family: $century-supra;
+  font-style: normal;
+  font-weight: normal;
+  font-stretch: normal;
+  font-display: auto;
+  src: url("/fonts/century_supra_a_regular.woff2") format("woff2");
 }
 @font-face {
-    font-family: $century-supra;
-    font-style: italic;
-    font-weight: normal;
-    font-stretch: normal;
-    font-display: auto;
-    src: url('/fonts/century_supra_a_italic.woff2') format('woff2');
+  font-family: $century-supra;
+  font-style: italic;
+  font-weight: normal;
+  font-stretch: normal;
+  font-display: auto;
+  src: url("/fonts/century_supra_a_italic.woff2") format("woff2");
 }
 @font-face {
-    font-family: $century-supra;
-    font-style: normal;
-    font-weight: bold;
-    font-stretch: normal;
-    font-display: auto;
-    src: url('/fonts/century_supra_a_bold.woff2') format('woff2');
+  font-family: $century-supra;
+  font-style: normal;
+  font-weight: bold;
+  font-stretch: normal;
+  font-display: auto;
+  src: url("/fonts/century_supra_a_bold.woff2") format("woff2");
 }
 @font-face {
-    font-family: $century-supra;
-    font-style: italic;
-    font-weight: bold;
-    font-stretch: normal;
-    font-display: auto;
-    src: url('/fonts/century_supra_a_bold_italic.woff2') format('woff2');
-}
-
-$concourse: 'concourse_4';
-@font-face {
-    font-family: $concourse;
-    font-style: normal;
-    font-weight: normal;
-    font-stretch: normal;
-    font-display: auto;
-    src: url('/fonts/concourse_4_regular.woff2') format('woff2');
-}
-@font-face {
-    font-family: $concourse;
-    font-style: italic;
-    font-weight: normal;
-    font-stretch: normal;
-    font-display: auto;
-    src: url('/fonts/concourse_4_italic.woff2') format('woff2');
-}
-@font-face {
-    font-family: $concourse;
-    font-style: normal;
-    font-weight: bold;
-    font-stretch: normal;
-    font-display: auto;
-    src: url('/fonts/concourse_4_bold.woff2') format('woff2');
-}
-@font-face {
-    font-family: $concourse;
-    font-style: italic;
-    font-weight: bold;
-    font-stretch: normal;
-    font-display: auto;
-    src: url('/fonts/concourse_4_bold_italic.woff2') format('woff2');
+  font-family: $century-supra;
+  font-style: italic;
+  font-weight: bold;
+  font-stretch: normal;
+  font-display: auto;
+  src: url("/fonts/century_supra_a_bold_italic.woff2") format("woff2");
 }
 
-$triplicate: 'Triplicate';
+$concourse: "concourse_4";
 @font-face {
-    font-family: $triplicate;
-    font-style: normal;
-    font-weight: normal;
-    font-stretch: normal;
-    font-display: auto;
-    src: url('/fonts/triplicate_a_code_regular.woff2') format('woff2');
+  font-family: $concourse;
+  font-style: normal;
+  font-weight: normal;
+  font-stretch: normal;
+  font-display: auto;
+  src: url("/fonts/concourse_4_regular.woff2") format("woff2");
 }
 @font-face {
-    font-family: $triplicate;
-    font-style: italic;
-    font-weight: normal;
-    font-stretch: normal;
-    font-display: auto;
-    src: url('/fonts/triplicate_a_code_italic.woff2') format('woff2');
+  font-family: $concourse;
+  font-style: italic;
+  font-weight: normal;
+  font-stretch: normal;
+  font-display: auto;
+  src: url("/fonts/concourse_4_italic.woff2") format("woff2");
 }
 @font-face {
-    font-family: $triplicate;
-    font-style: normal;
-    font-weight: bold;
-    font-stretch: normal;
-    font-display: auto;
-    src: url('/fonts/triplicate_a_code_bold.woff2') format('woff2');
+  font-family: $concourse;
+  font-style: normal;
+  font-weight: bold;
+  font-stretch: normal;
+  font-display: auto;
+  src: url("/fonts/concourse_4_bold.woff2") format("woff2");
 }
 @font-face {
-    font-family: $triplicate;
-    font-style: italic;
-    font-weight: bold;
-    font-stretch: normal;
-    font-display: auto;
-    src: url('/fonts/triplicate_a_code_bold_italic.woff2') format('woff2');
+  font-family: $concourse;
+  font-style: italic;
+  font-weight: bold;
+  font-stretch: normal;
+  font-display: auto;
+  src: url("/fonts/concourse_4_bold_italic.woff2") format("woff2");
 }
 
+$triplicate: "Triplicate";
+@font-face {
+  font-family: $triplicate;
+  font-style: normal;
+  font-weight: normal;
+  font-stretch: normal;
+  font-display: auto;
+  src: url("/fonts/triplicate_a_code_regular.woff2") format("woff2");
+}
+@font-face {
+  font-family: $triplicate;
+  font-style: italic;
+  font-weight: normal;
+  font-stretch: normal;
+  font-display: auto;
+  src: url("/fonts/triplicate_a_code_italic.woff2") format("woff2");
+}
+@font-face {
+  font-family: $triplicate;
+  font-style: normal;
+  font-weight: bold;
+  font-stretch: normal;
+  font-display: auto;
+  src: url("/fonts/triplicate_a_code_bold.woff2") format("woff2");
+}
+@font-face {
+  font-family: $triplicate;
+  font-style: italic;
+  font-weight: bold;
+  font-stretch: normal;
+  font-display: auto;
+  src: url("/fonts/triplicate_a_code_bold_italic.woff2") format("woff2");
+}
 
-$serif-font-family: $century-supra, Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
-$sans-serif-font-family: $concourse, Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
-$code-font-family: $triplicate, Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
-
+$serif-font-family: $century-supra, Constantia, "Lucida Bright", Lucidabright,
+  "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif",
+  "Liberation Serif", Georgia, serif;
+$sans-serif-font-family: $concourse, Frutiger, "Frutiger Linotype", Univers,
+  Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad,
+  "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva,
+  "Helvetica Neue", Helvetica, Arial, sans-serif;
+$code-font-family: $triplicate, Consolas, "Andale Mono WT", "Andale Mono",
+  "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono",
+  "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco,
+  "Courier New", Courier, monospace;
 
 %sans-serif {
-    text-rendering: optimizeLegibility;
-    font-family: $sans-serif-font-family;
-    font-feature-settings: "onum" off, "kern" on;
+  text-rendering: optimizeLegibility;
+  font-family: $sans-serif-font-family;
+  font-feature-settings: "onum" off, "kern" on;
 }
 %sans-serif-tnum {
-    text-rendering: optimizeLegibility;
-    @extend %sans-serif;
-    font-feature-settings: 'kern' on, 'tnum' on;
+  text-rendering: optimizeLegibility;
+  @extend %sans-serif;
+  font-feature-settings: "kern" on, "tnum" on;
 }
 
 %serif {
-    text-rendering: optimizeLegibility;
-    font-family: $serif-font-family;
-    font-feature-settings: "kern" on;
+  text-rendering: optimizeLegibility;
+  font-family: $serif-font-family;
+  font-feature-settings: "kern" on;
 }
-
-

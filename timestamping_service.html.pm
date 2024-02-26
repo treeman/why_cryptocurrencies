@@ -305,7 +305,7 @@ Let's now encode and timestamp it using the Bitcoin Cash blockchain:
 
         ◊img[#:src "images/electroncash-opreturn.png"
              #:title "Electron Cash custom OP_RETURN"
-             #:alt "Electron Cash custom OP_RETURN."]{
+             #:alt "Electron Cash OP_RETURN figure"]{
           Custom OP_RETURN using ◊link[electroncash]{Electron Cash}.
         }
 
