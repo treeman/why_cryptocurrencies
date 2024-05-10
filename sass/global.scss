@@ -1,83 +1,80 @@
 * {
-    // Predictable styling.
-    margin: 0;
-    padding: 0;
-    // Better box model, includes border in width calculations.
-    box-sizing: border-box;
-    // Flexbox overrides min-width which makes <pre> not overflow properly
-    // https://weblog.west-wind.com/posts/2016/Feb/15/Flexbox-Containers-PRE-tags-and-managing-Overflow
-    min-width: 0;
+  // Predictable styling.
+  margin: 0;
+  padding: 0;
+  // Better box model, includes border in width calculations.
+  box-sizing: border-box;
+  // Flexbox overrides min-width which makes <pre> not overflow properly
+  // https://weblog.west-wind.com/posts/2016/Feb/15/Flexbox-Containers-PRE-tags-and-managing-Overflow
+  min-width: 0;
 }
 
-
-
 html {
-    font-size: 22px;
-    line-height: 1.45;
+  font-size: 22px;
+  line-height: 1.45;
 }
 
 @media only screen and (max-width: 700px) {
-    html {
-        font-size: 20px;
-    }
+  html {
+    font-size: 20px;
+  }
 }
 @media only screen and (max-width: 600px) {
-    html {
-        font-size: 18px;
-    }
+  html {
+    font-size: 18px;
+  }
 }
 @media only screen and (max-width: 520px) {
-    html {
-        font-size: 16px;
-    }
+  html {
+    font-size: 16px;
+  }
 }
-
 
 /*
  * Main body
  */
 body {
-    @extend %serif;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+  @extend %serif;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 
-    color: $body-font-color;
-    background-color: $body-background-color;
+  color: $body-font-color;
+  background-color: $body-background-color;
 }
-
 
 p {
-    margin-bottom: 1em;
+  margin-bottom: 1em;
 }
-
 
 /*
  * Headers
  */
-h1, h2, h3, h4 {
-    @extend %sans-serif;
-    line-height: 1;
+h1,
+h2,
+h3,
+h4 {
+  @extend %sans-serif;
+  line-height: 1;
 }
 h1 {
-    font-size: 1.45rem;
+  font-size: 1.45rem;
 }
 h2 {
-    font-size: 1.22rem;
-    margin-top: 1.2em;
-    margin-bottom: 0.3em;
+  font-size: 1.22rem;
+  margin-top: 1.2em;
+  margin-bottom: 0.3em;
 }
 h3 {
-    font-size: 1.1rem;
-    margin-top: 1em;
-    margin-bottom: 0.3em;
+  font-size: 1.1rem;
+  margin-top: 1em;
+  margin-bottom: 0.3em;
 }
 h4 {
-    font-size: 0.91rem;
-    margin-top: 1em;
-    margin-bottom: 0.3em;
+  font-size: 0.91rem;
+  margin-top: 1em;
+  margin-bottom: 0.3em;
 }
-
 
 /*
  * Links: replicate underline that clears descenders
@@ -85,59 +82,79 @@ h4 {
  * who credits Adam Schwartz
  */
 @mixin a-text-shadow($col) {
-    text-shadow: 0.03em 0 $col, -0.03em 0 $col, 0 0.03em $col, 0 -0.03em $col,
-                 0.06em 0 $col, -0.06em 0 $col, 0.09em 0 $col, -0.09em 0 $col,
-                 0.12em 0 $col, -0.12em 0 $col, 0.15em 0 $col, -0.15em 0 $col;
+  text-shadow:
+    0.03em 0 $col,
+    -0.03em 0 $col,
+    0 0.03em $col,
+    0 -0.03em $col,
+    0.06em 0 $col,
+    -0.06em 0 $col,
+    0.09em 0 $col,
+    -0.09em 0 $col,
+    0.12em 0 $col,
+    -0.12em 0 $col,
+    0.15em 0 $col,
+    -0.15em 0 $col;
 }
 
 @mixin a-background($col) {
-    background: -webkit-linear-gradient($body-background-color, $body-background-color),
-        -webkit-linear-gradient($body-background-color, $body-background-color),
-        -webkit-linear-gradient($col, $col);
-    background: linear-gradient($body-background-color, $body-background-color),
-        linear-gradient($body-background-color, $body-background-color),
-        linear-gradient($col, $col);
+  background:
+    -webkit-linear-gradient($body-background-color, $body-background-color),
+    -webkit-linear-gradient($body-background-color, $body-background-color),
+    -webkit-linear-gradient($col, $col);
+  background: linear-gradient($body-background-color, $body-background-color),
+    linear-gradient($body-background-color, $body-background-color),
+    linear-gradient($col, $col);
 
-    $background-size: 0.05em 1px, 0.05em 1px, 1px 1px;
-    -webkit-background-size: $background-size;
-    -moz-background-size: $background-size;
-    background-size: $background-size;
+  $background-size:
+    0.05em 1px,
+    0.05em 1px,
+    1px 1px;
+  -webkit-background-size: $background-size;
+  -moz-background-size: $background-size;
+  background-size: $background-size;
 
-    background-repeat: no-repeat, no-repeat, repeat-x;
-    @include a-text-shadow($body-background-color);
-    background-position: 0% 93%, 100% 93%, 0% 93%;
+  background-repeat: no-repeat, no-repeat, repeat-x;
+  @include a-text-shadow($body-background-color);
+  background-position:
+    0% 93%,
+    100% 93%,
+    0% 93%;
 }
 
 a:link {
-    text-decoration: none;
-    @include a-background(#333);
+  text-decoration: none;
+  @include a-background(#333);
 }
 
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
-    a:link { background-position-y: 89%, 89%, 89%; }
+  a:link {
+    background-position-y: 89%, 89%, 89%;
+  }
 }
 
-a:link::selection, a:link::-moz-selection {
-    @include a-text-shadow($body-selection-color);
-    background: $body-selection-color;
+a:link::selection,
+a:link::-moz-selection {
+  @include a-text-shadow($body-selection-color);
+  background: $body-selection-color;
 }
 
-a:link, a:visited {
-    color: inherit;
+a:link,
+a:visited {
+  color: inherit;
 }
 a:hover {
-    //@include a-background($body-link-hover-color);
-    background: none;
-    shadow: none;
-    color: $body-link-hover-color;
+  //@include a-background($body-link-hover-color);
+  background: none;
+  shadow: none;
+  color: $body-link-hover-color;
 }
 a:hover.xref {
-    color: $body-xref-hover-color;
+  color: $body-xref-hover-color;
 }
 a:hover.invalid-iref {
-    color: $body-invalid-iref-hover-color;
+  color: $body-invalid-iref-hover-color;
 }
-
 
 /*
  * Selection
@@ -149,225 +166,237 @@ a:hover.invalid-iref {
   background: $body-selection-color; /* Gecko Browsers */
 }
 
-
 /*
  * Prev/next nav panes
  */
 .edge-wrapper {
-    a {
-        text-decoration: none;
-        background: none;
-        text-shadow: none;
-        color: #ddd;
-    }
-    a:hover {
-        color: $body-font-color;
-        background-color: $btc-orange;
-        //background-color: $bch-green;
-        //background-color: $body-selection-color;
-    }
+  a {
+    text-decoration: none;
+    background: none;
+    text-shadow: none;
+    color: #ddd;
+  }
+  a:hover {
+    color: $body-font-color;
+    background-color: $btc-orange;
+    //background-color: $bch-green;
+    //background-color: $body-selection-color;
+  }
 }
-.prev-pan, .next-pan {
-    background-color: yellow;
-    font-size: 2.5rem;
-    text-align: center;
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    width: 1.2em;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    flex-direction: column;
+.prev-pan,
+.next-pan {
+  background-color: yellow;
+  font-size: 2.5rem;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 1.2em;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
 
-    .content {
-        display: inline-block;
-    }
+  .content {
+    display: inline-block;
+  }
 }
 .prev-pan {
-    left: 0;
+  left: 0;
 }
 .next-pan {
-    right: 0;
+  right: 0;
 }
 
 @media only screen and (max-width: 1340px) {
-    .prev-pan, .next-pan {
-        width: 1em;
-        font-size: 1.2rem;
-    }
+  .prev-pan,
+  .next-pan {
+    width: 1em;
+    font-size: 1.2rem;
+  }
 }
 @media only screen and (max-width: 900px) {
-    .prev-pan, .next-pan {
-        width: 1em;
-        font-size: 1rem;
-    }
-    .edge-wrapper a {
-        color: #ccc;
-    }
+  .prev-pan,
+  .next-pan {
+    width: 1em;
+    font-size: 1rem;
+  }
+  .edge-wrapper a {
+    color: #ccc;
+  }
 }
-
 
 /*
  * Follow
  */
 .follow {
-    @extend %sans-serif;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+  @extend %sans-serif;
+  margin-top: 2rem;
+  padding-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
 }
 
 .follow > .links {
-    margin: 0.3rem;
-    font-size: 0.8rem;
+  margin: 0.3rem;
+  font-size: 0.8rem;
 }
 .follow > .wip {
-    margin: 0.3rem;
-    font-size: 0.8rem;
+  margin: 0.3rem;
+  font-size: 0.8rem;
 }
 .follow > .donate {
-    margin: 0.3rem;
-    font-size: 0.8rem;
+  margin: 0.3rem;
+  font-size: 0.8rem;
 }
-.subscribe > .email, .subscribe > .submit {
-    @extend %serif;
-    font-size: 0.75rem;
-    border: 1px solid #ddd;
-    background: $body-background-color;
-    padding: 0.5em;
+.subscribe > .email,
+.subscribe > .submit {
+  @extend %serif;
+  font-size: 0.75rem;
+  border: 1px solid #ddd;
+  background: $body-background-color;
+  padding: 0.5em;
 }
 
 .subscribe > .email:hover,
 .subscribe > .submit:hover {
-    border: 1px solid #aaa;
-    color: $body-font-color;
+  border: 1px solid #aaa;
+  color: $body-font-color;
 }
 .subscribe > .email:invalid {
-    color: $email-invalid-color;
+  color: $email-invalid-color;
 }
 .subscribe > .submit:hover {
-    color: $body-xref-hover-color;
-    cursor: pointer;
+  color: $body-xref-hover-color;
+  cursor: pointer;
 }
 .subscribe {
-    display: flex;
+  display: flex;
 }
 .subscribe > .email {
-    flex: 4;
-    margin-right: 0.2rem;
+  flex: 4;
+  margin-right: 0.2rem;
 }
 .subscribe > .submit {
-    flex: 1;
+  flex: 1;
 }
 
 .buy {
-    @extend %sans-serif;
-    margin-top: 1rem;
-    font-size: 0.9rem;
+  @extend %sans-serif;
+  margin-top: 1rem;
+  font-size: 0.9rem;
 
-    a:link {
-        text-decoration: underline;
-    }
-    a:hover {
-        text-decoration: none;
-    }
+  a:link {
+    text-decoration: underline;
+  }
+  a:hover {
+    text-decoration: none;
+  }
 }
-
 
 /*
  * Footer
  */
 body > footer {
-    @extend %sans-serif;
+  @extend %sans-serif;
 
-    width: 100%;
-    height: 3em;
-    margin-top: 1em;
+  width: 100%;
+  height: 3em;
+  margin-top: 1em;
 
-    nav {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        font-size: 0.95rem;
-
-        a:link {
-            text-decoration: none;
-            background: none;
-            text-shadow: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-    }
-
-    .follow-wrapper {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        margin-top: 1rem;
-    }
-    .follow-wrapper > .follow {
-        margin-top: 0;
-    }
-
-    .prev, .parent, .home, .next {
-        margin: 0 0.3em;
-    }
-    .prev {
-        order: 1;
-    }
-    .next {
-        order: 2;
-    }
-    .middle {
-        order: 0;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-    }
-}
-.buy-wrapper {
+  nav {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     font-size: 0.95rem;
 
-    .buy {
-        text-align: center;
-
-        p {
-            margin-bottom: 0.4em;
-        }
+    a:link {
+      text-decoration: none;
+      background: none;
+      text-shadow: none;
     }
-}
-.homepage-footer {
+    a:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .follow-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+  .follow-wrapper > .follow {
+    margin-top: 0;
+  }
+
+  .prev,
+  .parent,
+  .home,
+  .next {
+    margin: 0 0.3em;
+  }
+  .prev {
+    order: 1;
+  }
+  .next {
+    order: 2;
+  }
+  .middle {
+    order: 0;
     width: 100%;
-    //background-color: lightyellow;
-    flex: 1 1 auto;
-    margin: 0.5rem 1.2rem;
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
+  }
+}
+.buy-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-size: 0.95rem;
 
-    .buy {
-        width: 100%;
+  .buy {
+    text-align: center;
+
+    p {
+      margin-bottom: 0.4em;
     }
+  }
+}
+.homepage-footer {
+  width: 100%;
+  //background-color: lightyellow;
+  flex: 1 1 auto;
+  margin: 0.5rem 1.2rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  .buy {
+    width: 100%;
+  }
 }
 
 @media (min-width: 800px) {
-    body > footer {
-        .prev, .parent, .home, .next {
-            margin: 0 0.6em;
-        }
-        .prev {
-            order: 0;
-        }
-        .middle {
-            order: 1;
-            width: auto;
-        }
-        .next {
-            order: 2;
-        }
+  body > footer {
+    .prev,
+    .parent,
+    .home,
+    .next {
+      margin: 0 0.6em;
     }
+    .prev {
+      order: 0;
+    }
+    .middle {
+      order: 1;
+      width: auto;
+    }
+    .next {
+      order: 2;
+    }
+  }
 }

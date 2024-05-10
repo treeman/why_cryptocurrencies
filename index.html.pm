@@ -328,12 +328,17 @@
   ◊(follow-section)
 }
 
+◊(define blog-url
+  `("https://www.jonashietala.se/"
+    "My personal blog"))
+
 ◊(define (follow-section)
   `(section((class "follow"))
-     (div ((class "wip"))
-          "If you want to get updates on the book, consider subscribing:")
-     ,subscription-form
-     ))
+     (div ((class "links"))
+          "Subscribe to the " ,(link feed-url "feed")
+          ", see the source on " ,(link source-code "Github")
+          ", " ,(link mailto "contact me")
+          ", or check out my " ,(link blog-url "blog") ".")))
 
 ◊(define (book-type c type . args)
    `(section ((class "format-wrapper"))

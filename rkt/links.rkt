@@ -13,6 +13,10 @@
   `("/feed.xml"
     "Feed to the site"))
 
+(define blog-url
+  `("https://www.jonashietala.se/"
+    "My personal blog"))
+
 (define source-code
   `("https://github.com/treeman/why_cryptocurrencies"
     "GitHub: Source code to this site"))
