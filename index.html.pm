@@ -47,7 +47,7 @@
     }
 
     ◊ex["It's bigger than Bitcoin" "general"]{
-      There are many more cryptocurrencies other than Bitcoin. The focus is on the general cryptocurrency concept and it's potential, instead of on a single implementation. 
+      There are many more cryptocurrencies other than Bitcoin. The focus is on the general cryptocurrency concept and it's potential, instead of on a single implementation.
     }
 
     ◊ex["Visits a wide variety of topics" "variety"]{
@@ -70,10 +70,9 @@
 
   ◊book-type["print" `(a ((name "print")) "Print")]{
     ◊nav[#:class "buttons"]{
-      ◊link[amazon.com-print]{Order from Amazon}
       ◊span[#:class "spanner"]{
-        ◊link[booksplease-print]{Books Please}
-        ◊link[barnes-and-nobles-print]{Barnes & Nobles}
+        ◊link[amazon.com-print]{Amazon}
+        ◊link[adlibris-print]{Adlibris}
       }
       ◊link[pdf-sample]{Download Sample PDF}
     }
@@ -193,15 +192,7 @@
 
   ◊div[#:class "questions"]{
     ◊faq["Do the different versions have different content?"]{
-      No! They all have the same chapters, the same illustrations and the same text. Even the free web version.
-    }
-
-    ◊faq["The book is too expensive, how can I get it cheaply?"]{
-      I made the web version completely free to make it available for as many people as possible. And if you buy the digital version with crypto you can pay whatever you want! That's almost free!
-    }
-
-    ◊faq["Which version pays you the most?"]{
-      Buying the digital versions directly from me with crypto removes all third-party fees, leaving me with the most amount of money in the end. It also allows you to set the amount to whatever you want, so if you want to shower me with money you can do that too!
+      No! They all have the same chapters, the same illustrations and the same text.
     }
 
     ◊faq["How can I buy the printed version with crypto?"]{
@@ -221,7 +212,7 @@
     }
 
     ◊faq["Can I get the cover as a background?"]{
-      Yes! Check these out: 
+      Yes! Check these out:
 
       ◊ul{
         ◊li{◊link[cover1080x1612 #:class "background"]{1080 x 1612} (0.67 mobile)}
@@ -281,22 +272,12 @@
     #f
     "https://amzn.to/3fvjQ4M"
     "'Why Cryptocurrencies?' on amazon.com"))
-◊(define book-depository-print
-  (x-ref
-    #f
-    "https://www.bookdepository.com/Why-Cryptocurrencies-Jonas-Hietala/9789198676204"
-    "'Why Cryptocurrencies?' on Book Depository"))
-◊(define booksplease-print
+◊(define adlibris-print
   (x-ref
    #f
-   "https://booksplea.se/index.php?route=product/product&product_id=2810004"
-    "'Why Cryptocurrencies?' on Books Please"))
+   "https://www.adlibris.com/sv/bok/why-cryptocurrencies-9789198676204"
+    "'Why Cryptocurrencies?' on Adlibris"))
 
-◊(define barnes-and-nobles-print
-  (x-ref
-    #f
-    "https://www.barnesandnoble.com/w/why-cryptocurrencies-jonas-hietala/1139072236"
-    "'Why Cryptocurrencies?' on Barnes & Nobles"))
 ◊(define blog-series
   (x-ref
     #f
