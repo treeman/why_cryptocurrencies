@@ -275,7 +275,7 @@ It may ultimately be impossible to scale a cryptocurrency so that ◊em{everyone
 ◊(define visa-transactions
    (x-ref
      "2020-03-17"
-     "https://usa.visa.com/run-your-business/small-business-tools/retail.html"
+     "https://sharedcontacts.com/articles/run-your-business-small-business-tools"
      "Visa: Small Business Retail"))
 
 ◊(define avalanche
